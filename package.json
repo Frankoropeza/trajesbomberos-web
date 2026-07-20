@@ -1,0 +1,21 @@
+{
+  "name": "trajesbombero",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^6.1.1",
+    "@astrojs/mdx": "^6.0.0",
+    "@astrojs/sitemap": "^3.7.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,28 @@
+---
+import { SITE, NAV } from '@config/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-brand">{SITE.name}</p>
+      <p>{SITE.description}</p>
+      <p>Cobertura: {SITE.cobertura}</p>
+    </div>
+    <nav aria-label="Navegación de pie de página">
+      <ul>
+        {NAV.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div>
+      {SITE.telefono && <p>Tel: <a href={`tel:${SITE.telefono}`}>{SITE.telefono}</a></p>}
+      {SITE.email && <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>}
+      <p>{SITE.horario}</p>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <p>© {year} {SITE.legalName}. Todos los derechos reservados.</p>
+  </div>
+</footer>
