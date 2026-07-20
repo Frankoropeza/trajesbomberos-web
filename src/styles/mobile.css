@@ -27,13 +27,14 @@
   .cform input, .cform textarea, .cform select { font-size: 16px; min-height: 48px; }
   .cform__submit { width: 100%; min-height: 50px; }
   .topbar__extra { display: none !important; }   /* horario oculto en móvil */
-  .section-menu__list { flex-direction: column !important; }
-  .section-menu__list a { width: 100% !important; }
+  .section-menu__list { -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .section-menu__list::-webkit-scrollbar { display: none; }
 }
 
 @media (max-width: 560px) {
   .btn { width: 100%; }
   .hero-ctas { flex-direction: column; }
+  .section-menu__cta { width: auto; }
 }
 
 @media (max-width: 480px) {

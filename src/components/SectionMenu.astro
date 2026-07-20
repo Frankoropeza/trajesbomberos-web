@@ -6,49 +6,83 @@ import { NAV, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 ---
 <nav class="section-menu" aria-label="Secciones del sitio">
-  <div class="container">
+  <div class="container section-menu__inner">
     <ul class="section-menu__list">
       {NAV.map((item) => (
         <li><a href={item.href}>{item.label}</a></li>
       ))}
-      <li class="section-menu__cta">
-        <a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">
-          Cotizar por WhatsApp<small>Respuesta inmediata</small>
-        </a>
-      </li>
     </ul>
+    <a class="section-menu__cta" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.6.2-.8l.4-.5c.1-.2.1-.3.2-.5s0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.2 2-.8 3.2a11.4 11.4 0 0 0 4.3 5.2c1.6 1 2.8 1.4 3.8 1.2.8-.1 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3-.1-.2-.3-.2-.7-.4z"/></svg>
+      <span>
+        <strong>Cotizar por WhatsApp</strong>
+        <small>Respuesta inmediata</small>
+      </span>
+    </a>
   </div>
 </nav>
 
 <style>
-  .section-menu { background: var(--color-white); border-block: 1px solid var(--color-gray-light); }
+  .section-menu {
+    background: var(--color-white);
+    border-bottom: var(--border);
+    box-shadow: var(--shadow-sm);
+  }
+  .section-menu__inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 60px;
+  }
   .section-menu__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 0.9rem 0;
-    gap: 0.6rem;
+    padding: 0;
   }
-  .section-menu__list li { flex: 1 1 auto; display: flex; }
+  .section-menu__list li { display: flex; }
   .section-menu__list a {
-    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0.65rem 1rem;
-    border: 1px solid var(--color-gray-light);
-    border-radius: var(--radius);
+    padding: 0 1.35rem;
     text-decoration: none;
-    color: var(--color-dark);
-    font-weight: 600;
-    font-size: 0.92rem;
-    text-align: center;
+    color: var(--color-gray);
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.01em;
+    border-bottom: 3px solid transparent;
     min-height: 44px;
+    white-space: nowrap;
   }
-  .section-menu__list a:hover { border-color: var(--color-primary); color: var(--color-primary); }
-  .section-menu__cta a { background: var(--color-wa); border-color: var(--color-wa); color: #fff; }
-  .section-menu__cta a:hover { background: var(--color-wa-dark); border-color: var(--color-wa-dark); color: #fff; }
-  .section-menu__cta small { font-weight: 400; font-size: 0.72rem; }
+  .section-menu__list li:first-child a { padding-left: 0; }
+  .section-menu__list a:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+  }
+  .section-menu__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.7rem 1.5rem;
+    margin-block: 0.6rem;
+    background: var(--color-wa);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: background 0.18s ease;
+    flex-shrink: 0;
+  }
+  .section-menu__cta:hover { background: var(--color-wa-dark); }
+  .section-menu__cta span { display: flex; flex-direction: column; line-height: 1.2; }
+  .section-menu__cta strong { font-size: 0.9rem; }
+  .section-menu__cta small { font-size: 0.72rem; opacity: 0.9; }
+
+  @media (max-width: 1024px) {
+    .section-menu__inner { flex-direction: column; gap: 0; padding-block: 0.5rem; }
+    .section-menu__list { overflow-x: auto; flex-wrap: nowrap; }
+    .section-menu__list li:first-child a { padding-left: 0; }
+    .section-menu__cta { justify-content: center; }
+  }
 </style>

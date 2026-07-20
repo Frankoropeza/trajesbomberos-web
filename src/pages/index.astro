@@ -16,11 +16,13 @@ import RiskGuide from '@components/RiskGuide.astro';
 import NormsTable from '@components/NormsTable.astro';
 import ProcessSteps from '@components/ProcessSteps.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
+import FactList from '@components/FactList.astro';
 import { SITE, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 
 // --- Hero (H1 único con kw1; los CTAs viven en SectionMenu) ---
 const hero = {
+  eyebrow: 'Equipo de protección personal contra incendios',
   title: 'Trajes para bombero y equipo de protección',
   accent: 'para todo México',
   subtitle:
@@ -89,6 +91,14 @@ const beneficios = [
     imageAlt: 'Atención y cotización de equipo para bomberos por WhatsApp',
     chips: ['Cotización', 'Seguimiento', 'Directo'],
   },
+];
+
+// --- Hechos verificables (regla: cero cifras inventadas) ---
+const hechos = [
+  { label: 'Cobertura', value: 'Envíos a los 32 estados' },
+  { label: 'Líneas de producto', value: '8 categorías de EPP' },
+  { label: 'Comprobante', value: 'Factura CFDI en cada venta' },
+  { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
 ];
 
 // --- Guía de selección (SEO cola larga; califica al prospecto) ---
@@ -235,6 +245,7 @@ const spotlight = {
           'Trabajamos con asesoría directa: entendemos qué necesita tu corporación, te ayudamos con tallas y configuraciones, y formalizamos todo por escrito — cotización, ficha técnica y factura.',
         ]}
       />
+      <FactList facts={hechos} />
     </div>
   </section>
 

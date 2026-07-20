@@ -1,0 +1,49 @@
+---
+// FactList: bloque de HECHOS verificables — nunca cifras inventadas
+// (regla de oro: "hechos, no adjetivos"). Sustituye a los típicos
+// contadores de "+500 clientes" que no se pueden demostrar.
+interface Fact { label: string; value: string; }
+interface Props { facts: Fact[]; }
+const { facts } = Astro.props;
+---
+<dl class="factlist">
+  {facts.map((f) => (
+    <div class="factlist__item">
+      <dt>{f.label}</dt>
+      <dd>{f.value}</dd>
+    </div>
+  ))}
+</dl>
+
+<style>
+  .factlist {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    margin: 0;
+    border-top: 2px solid var(--color-primary);
+  }
+  .factlist__item {
+    padding: 1.25rem clamp(1rem, 2vw, 2rem);
+    border-bottom: var(--border);
+    border-left: var(--border);
+  }
+  .factlist__item:first-child { border-left: 0; padding-left: 0; }
+  @media (max-width: 900px) {
+    .factlist { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .factlist__item:nth-child(odd) { border-left: 0; padding-left: 0; }
+  }
+  dt {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+    margin-bottom: 0.25rem;
+  }
+  dd { margin: 0; font-weight: 800; font-size: 1.02rem; letter-spacing: var(--tracking-tight); }
+  @media (max-width: 520px) {
+    .factlist { grid-template-columns: 1fr; }
+    .factlist__item:nth-child(even) { padding-left: 0; border-left: 0; }
+  }
+</style>

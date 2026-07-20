@@ -36,12 +36,20 @@ const { columns, rows, note, ctaLabel = 'Cotizar por WhatsApp' } = Astro.props;
 </div>
 
 <style>
-  .riskguide__scroll { overflow-x: auto; margin-bottom: 1.2rem; }
-  table { width: 100%; border-collapse: collapse; min-width: 640px; background: var(--color-white); border-radius: var(--radius); overflow: hidden; }
-  th, td { padding: 0.9rem 1rem; text-align: left; border-bottom: 1px solid var(--color-gray-light); font-size: 0.92rem; }
-  thead th { background: var(--color-ink); color: var(--color-white); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
-  tbody th { color: var(--color-primary); font-weight: 700; white-space: nowrap; }
+  .riskguide__scroll { overflow-x: auto; margin-bottom: 1.4rem; border: var(--border); border-radius: var(--radius-lg); }
+  table { width: 100%; border-collapse: collapse; min-width: 720px; background: var(--color-white); }
+  th, td { padding: 1.05rem 1.3rem; text-align: left; border-bottom: var(--border); font-size: 0.92rem; vertical-align: top; }
+  thead th {
+    background: var(--color-ink);
+    color: var(--color-white);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    font-weight: 800;
+  }
+  tbody th { color: var(--color-primary); font-weight: 800; white-space: nowrap; font-size: 1rem; }
+  tbody tr:hover { background: var(--color-light); }
   td { color: var(--color-gray); }
   tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
-  .riskguide__note { color: var(--color-gray); font-size: 0.88rem; margin: 0 0 1.2rem; }
+  .riskguide__note { color: var(--color-gray); font-size: 0.88rem; margin: 0 0 1.4rem; max-width: 68ch; }
 </style>
