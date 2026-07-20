@@ -224,6 +224,17 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         ))}
       </div>
 
+      <!-- Spotlight de la primera familia: va pegado a las cards
+           porque explica justo la que lleva el badge "Más solicitado" -->
+      <div class="spotlight-wrap">
+        <CategoryFeature
+          {...spotlight}
+          ctaLabel="Que me asesoren antes de comprar"
+          ctaHref={waUrl(WA_MESSAGES.informacion)}
+          external
+        />
+      </div>
+
       <div class="complementos">
         <p class="complementos__intro">
           <strong>Complementos del conjunto.</strong> No son nuestra línea, pero los cotizamos junto al traje
@@ -250,20 +261,8 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- 3 · Brigadista vs estructural -->
-  <section class="section section--alt">
-    <div class="container">
-      <CategoryFeature
-        {...spotlight}
-        ctaLabel="Que me asesoren antes de comprar"
-        ctaHref={waUrl(WA_MESSAGES.informacion)}
-        external
-      />
-    </div>
-  </section>
-
-  <!-- 4 · Cómo se especifica -->
-  <section class="section" id="especificar">
+  <!-- 3 · Cómo se especifica -->
+  <section class="section section--alt" id="especificar">
     <div class="container">
       <SectionHeading
         eyebrow="Cómo especificar"
@@ -275,7 +274,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 5 · Errores de compra -->
-  <section class="section section--alt" id="errores">
+  <section class="section" id="errores">
     <div class="container">
       <SectionHeading
         eyebrow="Errores caros"
@@ -290,7 +289,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 6 · Marcas: referencia técnica, NO distribución -->
-  <section class="section" id="marcas">
+  <section class="section section--alt" id="marcas">
     <div class="container">
       <SectionHeading
         eyebrow="Marcas"
@@ -310,7 +309,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 7 · Guía de selección -->
-  <section class="section section--alt" id="guia">
+  <section class="section" id="guia">
     <div class="container">
       <SectionHeading
         eyebrow="Cómo elegir"
@@ -322,7 +321,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 8 · Normas -->
-  <section class="section" id="normas">
+  <section class="section section--alt" id="normas">
     <div class="container">
       <SectionHeading
         eyebrow="Normas"
@@ -334,7 +333,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 9 · Vida útil -->
-  <section class="section section--alt" id="vida-util">
+  <section class="section" id="vida-util">
     <div class="container">
       <SectionHeading
         eyebrow="Vida útil y servicio"
@@ -346,7 +345,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 10 · Quién compra -->
-  <section class="section" id="segmentos">
+  <section class="section section--alt" id="segmentos">
     <div class="container">
       <SectionHeading
         eyebrow="Quién compra"
@@ -358,7 +357,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- 11 · La empresa -->
-  <section class="section section--alt" id="nosotros">
+  <section class="section" id="nosotros">
     <div class="container">
       <SectionHeading
         eyebrow="La empresa"
@@ -397,6 +396,11 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
 </BaseLayout>
 
 <style>
+  .spotlight-wrap {
+    margin-top: clamp(2.5rem, 4vw, 4rem);
+    padding-top: clamp(2.2rem, 3.5vw, 3.5rem);
+    border-top: var(--border);
+  }
   .complementos {
     margin-top: 2.5rem;
     padding-top: 1.8rem;
