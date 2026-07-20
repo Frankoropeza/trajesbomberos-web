@@ -207,7 +207,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         title="Seis familias de traje para seis tipos de riesgo"
         description="Nos especializamos en ropa de protección para bombero. Cada familia responde a una operación distinta y no son intercambiables."
       />
-      <div class="grid-cards">
+      <div class="grid-cards grid-cards--3">
         {PRODUCT_CATEGORIES.map((cat, i) => (
           <CategoryCard
             href={waUrl(WA_MESSAGES.categoria(cat.nombre))}

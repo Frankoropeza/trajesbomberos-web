@@ -120,7 +120,12 @@ h1, h2, h3 { letter-spacing: var(--tracking-tight); line-height: 1.12; font-weig
   grid-template-columns: repeat(4, 1fr);
   gap: var(--gap-grid);
 }
-@media (min-width: 1800px) { .grid-cards { grid-template-columns: repeat(4, 1fr); } }
+/* 6 tarjetas → 3 columnas: dos filas completas, sin huecos */
+.grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 1200px) { .grid-cards { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 860px)  { .grid-cards { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px)  { .grid-cards { grid-template-columns: 1fr; } }
+@media (max-width: 860px)  {
+  .grid-cards, .grid-cards--3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px)  {
+  .grid-cards, .grid-cards--3 { grid-template-columns: 1fr; }
+}
