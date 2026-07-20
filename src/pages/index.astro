@@ -65,22 +65,24 @@ const hechos = [
   { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
 ];
 
+// Spotlight de la familia principal: amplía la card "Más solicitado"
 const spotlight = {
-  eyebrow: 'Antes de cotizar',
-  title: 'Brigadista y estructural no son lo mismo (y ahí está el error más caro)',
+  eyebrow: 'Más solicitado · Trajes estructurales',
+  title: 'Chaquetón y pantalonera de tres capas para ataque interior',
   description:
-    'Es la confusión más común y la más costosa del sector. Un equipo de brigadista está pensado para fuego incipiente en industria; un traje estructural certificado está pensado para entrar a una edificación en llamas. Se ven parecidos, cuestan muy distinto y no protegen igual.',
+    'Es la compra más importante del equipamiento y la que más se equivoca. El traje estructural está pensado para entrar a una edificación en llamas: chaquetón y pantalón construidos con capa exterior, barrera de humedad y barrera térmica. Si falta una capa, no es un traje estructural, aunque se le parezca.',
   features: [
-    'El estructural lleva las tres capas obligatorias; el de brigadista, no necesariamente',
-    'La certificación es del conjunto completo, no de la tela por separado',
-    'El alcance de uso lo define la operación, no el presupuesto disponible',
-    'Un traje de brigadista en ataque interior es una lesión esperando ocurrir',
+    'Las tres capas van declaradas por nombre comercial, no como "tela ignífuga" a secas',
+    'DRD integrado al chaquetón para arrastre de un elemento inconsciente',
+    'Largo de chaquetón de 28" a 35": cambia cobertura y movilidad según la operación',
+    'A medida o talla de stock — la interfaz chaquetón-pantalón es zona crítica',
+    'La certificación corresponde al conjunto completo, no a la tela por separado',
   ],
-  brands: ['Chaquetón', 'Pantalonera', 'Barrera térmica', 'Barrera de humedad', 'DRD'],
+  brands: ['Chaquetón', 'Pantalonera', 'Barrera térmica', 'Barrera de humedad', 'DRD', 'Tirantes'],
   images: [
-    { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural de bombero con chaquetón y pantalón' },
-    { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial' },
-    { src: '/images/productos/monja-capucha-barrera-particulas-bombero.svg', alt: 'Monja barrera de partículas' },
+    { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural de bombero con chaquetón y pantalón de tres capas' },
+    { src: '/images/productos/monja-capucha-barrera-particulas-bombero.svg', alt: 'Monja barrera de partículas para bombero' },
+    { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial, distinto del estructural' },
   ],
 };
 
@@ -229,8 +231,8 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
       <div class="spotlight-wrap">
         <CategoryFeature
           {...spotlight}
-          ctaLabel="Que me asesoren antes de comprar"
-          ctaHref={waUrl(WA_MESSAGES.informacion)}
+          ctaLabel="Cotizar trajes estructurales"
+          ctaHref={waUrl(WA_MESSAGES.categoria('Trajes estructurales'))}
           external
         />
       </div>
