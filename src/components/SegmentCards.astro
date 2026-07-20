@@ -1,0 +1,86 @@
+---
+// SegmentCards: las 3 rutas de comprador del mercado mexicano.
+// Data-driven desde SEGMENTOS en site.ts. Cada tarjeta cierra con
+// su propio CTA de WhatsApp contextualizado (regla D4: waUrl).
+import { SEGMENTOS, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+---
+<div class="seg-grid">
+  {SEGMENTOS.map((s) => (
+    <article class="seg-card">
+      <p class="seg-card__para">{s.para}</p>
+      <h3>{s.titulo}</h3>
+      <p class="seg-card__desc">{s.desc}</p>
+      <ul class="seg-card__list">
+        {s.puntos.map((p) => <li>{p}</li>)}
+      </ul>
+      <a
+        class="seg-card__cta"
+        href={waUrl(WA_MESSAGES.segmento(s.titulo))}
+        target="_blank"
+        rel="noopener"
+      >
+        {s.cta}
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </article>
+  ))}
+</div>
+
+<style>
+  .seg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-grid);
+  }
+  .seg-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: var(--border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: 1.7rem 1.6rem;
+  }
+  .seg-card__para {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  h3 { margin: 0 0 0.7rem; font-size: 1.25rem; }
+  .seg-card__desc { margin: 0 0 1.1rem; color: var(--color-gray); font-size: 0.92rem; }
+  .seg-card__list { list-style: none; margin: 0 0 1.4rem; padding: 0; display: grid; gap: 0.5rem; flex: 1; }
+  .seg-card__list li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+  }
+  .seg-card__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.52rem;
+    width: 7px;
+    height: 7px;
+    background: var(--color-accent);
+  }
+  .seg-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding-top: 1rem;
+    border-top: var(--border);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .seg-card__cta svg { transition: transform 0.22s ease; }
+  .seg-card__cta:hover svg { transform: translateX(4px); }
+
+  @media (max-width: 1024px) { .seg-grid { grid-template-columns: 1fr; } }
+</style>

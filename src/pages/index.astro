@@ -1,16 +1,21 @@
 ---
-// L1 · Home — orden canónico ejemplos.mx:
-// Hero → SectionMenu → TrustBar → Catálogo → Spotlight → Empresa →
-// Beneficios → Guía de selección → Respaldo → Proceso → FAQ+Contacto.
-// Reseñas: OMITIDAS a propósito (regla dura: solo reseñas REALES con
-// permiso; se agregan cuando Frank las tenga).
-// Los datos de página se editan AQUÍ; los globales en src/config/site.ts.
+// L1 · Home — contenido de experto basado en el estudio de mercado
+// jul-2026. Reglas duras aplicadas:
+//  · Normas VIGENTES: NFPA 1970 (absorbió 1971), NFPA 1950
+//    (absorbió 1977 y 1951), NFPA 1850 (absorbió 1851 y 1852),
+//    NOM-017-STPS-2024 (sustituyó a la de 2008).
+//  · NO se afirma que la Ley General de Protección Civil exija
+//    certificación NFPA: es FALSO (verificado en el texto vigente).
+//  · Marcas solo como referencia técnica, sin afirmar distribución.
+//  · Sin precios (decisión de negocio): la conversión es cotización.
+//  · Reseñas omitidas hasta tener reales con permiso.
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
 import SectionMenu from '@components/SectionMenu.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CategoryCard from '@components/CategoryCard.astro';
 import CategoryFeature from '@components/CategoryFeature.astro';
+import SegmentCards from '@components/SegmentCards.astro';
 import TrustBar from '@components/TrustBar.astro';
 import RiskGuide from '@components/RiskGuide.astro';
 import NormsTable from '@components/NormsTable.astro';
@@ -20,188 +25,185 @@ import FactList from '@components/FactList.astro';
 import { SITE, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 
-// --- Hero (H1 único con kw1; los CTAs viven en SectionMenu) ---
 const hero = {
   eyebrow: 'Equipo de protección personal contra incendios',
   title: 'Trajes para bombero y equipo de protección',
   accent: 'para todo México',
   subtitle:
-    'Trajes estructurales, forestales y de aproximación, cascos, botas, guantes y equipos de respiración. Cotiza por WhatsApp y recibe en tu estación.',
+    'Estructural, brigadista, forestal, aproximación y rescate. Chaquetón, pantalonera, casco, botas, guantes, monja y ERA. Cotiza por WhatsApp y recibe en tu estación.',
   descRight: [
-    'Equipamos cuerpos de bomberos, brigadas industriales y unidades de protección civil con equipo de protección personal para combate de incendios. Manejamos el traje completo o piezas sueltas, según lo que tu corporación necesite.',
-    'Cotizamos por escrito, con factura, y te asesoramos para elegir tallas y configuraciones correctas antes de comprar. Envíos a todo México.',
+    'Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos y unidades de protección civil que compran por licitación, y cuerpos voluntarios que reponen pieza por pieza.',
+    'Asesoramos antes de cotizar: qué familia de traje corresponde a tu operación, qué capas debe llevar, cómo tomar tallas y qué documentación necesita tu expediente de compra.',
   ],
 };
 
-// --- TrustBar: compromisos reales, NUNCA métricas inventadas ---
 const pilares = [
-  { icon: 'chat', title: 'Atención directa', desc: 'Hablas con una persona, no con un bot. Respuesta por WhatsApp.' },
-  { icon: 'doc', title: 'Todo por escrito', desc: 'Cotización formal y factura por cada compra.' },
-  { icon: 'shield', title: 'Equipo de protección', desc: 'Producto diseñado para uso en combate de incendios.' },
-  { icon: 'pin', title: 'Cobertura nacional', desc: 'Envíos a cualquier estado de la República.' },
-] as const;
-
-// --- Beneficios (reusa CategoryCard; badge = dato corto honesto) ---
-const beneficios = [
-  {
-    title: 'Asesoría antes de comprar',
-    badge: 'Sin costo',
-    desc: 'Te ayudamos a definir tallas, configuraciones y piezas según el uso real de tu corporación.',
-    image: '/images/showcase/asesoria-equipo-bombero.svg',
-    imageAlt: 'Asesoría para elegir equipo de protección para bomberos',
-    chips: ['Tallas', 'Configuración', 'Uso real'],
-  },
-  {
-    title: 'Cotización por escrito',
-    badge: 'Formal',
-    desc: 'Documento formal con partidas, precios y condiciones — útil para compras de gobierno y licitaciones.',
-    image: '/images/showcase/cotizacion-por-escrito.svg',
-    imageAlt: 'Cotización formal por escrito de equipo para bomberos',
-    chips: ['Partidas', 'Precios', 'Condiciones'],
-  },
-  {
-    title: 'Factura en cada compra',
-    badge: 'CFDI',
-    desc: 'Facturamos todas las ventas, a corporaciones, empresas y particulares.',
-    image: '/images/showcase/factura-cfdi.svg',
-    imageAlt: 'Factura CFDI por compra de equipo para bomberos',
-    chips: ['CFDI', 'Empresas', 'Gobierno'],
-  },
-  {
-    title: 'Envíos a todo México',
-    badge: 'Nacional',
-    desc: 'Enviamos a estaciones, bases y domicilios en cualquier estado de la República.',
-    image: '/images/showcase/envios-todo-mexico.svg',
-    imageAlt: 'Envíos de equipo para bomberos a todo México',
-    chips: ['Paquetería', 'Estaciones', 'Domicilio'],
-  },
-  {
-    title: 'Piezas sueltas o traje completo',
-    badge: 'Flexible',
-    desc: 'Compra el conjunto completo o solo la pieza que necesitas reponer.',
-    image: '/images/showcase/piezas-sueltas-traje.svg',
-    imageAlt: 'Venta de piezas sueltas o traje completo para bombero',
-    chips: ['Conjunto', 'Reposición', 'Por pieza'],
-  },
-  {
-    title: 'Trato directo por WhatsApp',
-    badge: 'Respuesta rápida',
-    desc: 'Cotiza, pregunta y da seguimiento a tu pedido desde el mismo chat.',
-    image: '/images/showcase/atencion-whatsapp.svg',
-    imageAlt: 'Atención y cotización de equipo para bomberos por WhatsApp',
-    chips: ['Cotización', 'Seguimiento', 'Directo'],
-  },
+  { icon: 'chat' as const, title: 'Asesoría técnica real', desc: 'Te decimos qué necesitas y qué no, aunque implique venderte menos.' },
+  { icon: 'doc' as const, title: 'Ficha técnica por partida', desc: 'Composite, TPP, THL y norma por escrito antes de que compres.' },
+  { icon: 'shield' as const, title: 'Norma vigente, no la de hace 8 años', desc: 'Trabajamos sobre NFPA 1970, que sustituyó a la NFPA 1971.' },
+  { icon: 'pin' as const, title: 'Cobertura nacional', desc: 'Envíos a estación, base o domicilio en cualquier estado.' },
 ];
 
-// --- Hechos verificables (regla: cero cifras inventadas) ---
 const hechos = [
-  { label: 'Cobertura', value: 'Envíos a los 32 estados' },
-  { label: 'Líneas de producto', value: '8 categorías de EPP' },
-  { label: 'Comprobante', value: 'Factura CFDI en cada venta' },
-  { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
+  { label: 'Familias de producto', value: '11 líneas de EPP' },
+  { label: 'Cobertura', value: 'Los 32 estados' },
+  { label: 'Comprobante', value: 'Factura CFDI 4.0' },
+  { label: 'Compra mínima', value: 'Sin mínimo: por pieza o combo' },
 ];
 
-// --- Guía de selección (SEO cola larga; califica al prospecto) ---
-const guiaColumns = ['Tipo de traje', 'Para quién', 'Protege contra', 'Complementos'];
+// --- Spotlight: el hueco #1 del mercado ---------------------
+const spotlight = {
+  eyebrow: 'Antes de cotizar',
+  title: 'Brigadista y estructural no son lo mismo (y ahí está el error más caro)',
+  description:
+    'Es la confusión más común y la más costosa del sector. Un equipo de brigadista está pensado para fuego incipiente en industria; un traje estructural certificado está pensado para entrar a una edificación en llamas. Se ven parecidos, cuestan muy distinto y no protegen igual.',
+  features: [
+    'El estructural lleva tres capas obligatorias: exterior, barrera de humedad y barrera térmica',
+    'Tela que cumple no es lo mismo que conjunto certificado: la certificación es del ensemble completo',
+    '"NFPA 2013" y "NFPA 91" no existen: son las ediciones 2013 y 1991 de la antigua NFPA 1971',
+    'Entre 70 y 80 % del desempeño térmico viene de las barreras, no del exterior que se ve',
+  ],
+  brands: ['Chaquetón', 'Pantalonera', 'Barrera térmica', 'Barrera de humedad', 'DRD'],
+  images: [
+    { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural de bombero con chaquetón y pantalón' },
+    { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial' },
+    { src: '/images/productos/monja-capucha-barrera-particulas-bombero.svg', alt: 'Monja barrera de partículas' },
+  ],
+};
+
+// --- Guía de selección (SEO de cola larga + califica) --------
+const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
 const guiaRows = [
-  ['Estructural', 'Combate de incendios en edificaciones', 'Calor, flama y humedad en interiores', 'Casco, botas, guantes, monja, SCBA'],
-  ['Forestal', 'Incendios de vegetación y trabajo en campo', 'Calor radiante y desgaste en jornadas largas', 'Casco forestal, goggles, guantes, botas'],
-  ['Aproximación', 'Trabajos cerca de calor radiante intenso', 'Radiación térmica extrema (aluminizado)', 'Capucha aluminizada, guantes, botas'],
+  ['Estructural', 'Incendio en edificaciones, ataque interior', 'Tres capas: exterior + barrera de humedad + barrera térmica', 'Casco, monja, botas, guantes, ERA'],
+  ['Brigadista', 'Fuego incipiente en industria, primera respuesta', 'Menor gramaje y alcance de protección que el estructural', 'Casco, guantes, botas, escafandra'],
+  ['Forestal', 'Incendio de vegetación, jornadas largas en campo', 'Una sola capa de tela ignífuga inherente, ligera y transpirable', 'Casco forestal, goggles, guantes, botas sin puntera'],
+  ['Aproximación', 'Trabajo cerca de calor radiante: ARFF, refinería, colada', 'Exterior aluminizado, uso prolongado, movilidad conservada', 'Capucha aluminizada, guantes, botas'],
+  ['Entrada', 'Ingreso breve a la flama: horno, incidente térmico severo', 'Aluminizado multicapa, pesado, uso corto de emergencia', 'Conjunto completo con ERA'],
+  ['Extricación', 'Rescate vehicular y técnico', 'Ligero, resistente a corte y punción, barrera contra patógenos', 'Guante de extricación, casco, goggles'],
 ];
 const guiaNote =
-  'Si no estás seguro de qué configuración necesita tu corporación, escríbenos: te asesoramos sin costo antes de cotizar.';
+  'Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar.';
 
-// --- Respaldo (regla: cero datos fabricados; TODO(Frank): completar
-// con las normas/certificaciones REALES de cada línea de producto) ---
-const normasColumns: [string, string, string] = ['Respaldo', 'Qué cubre', 'Aplica a'];
+// --- Normas: lo obligatorio vs lo que piden las licitaciones -
+const normasColumns: [string, string, string] = ['Referencia', 'Qué exige realmente', 'Estatus en México'];
 const normasRows: [string, string, string][] = [
-  ['Cotización por escrito', 'Partidas, precios y condiciones de entrega', 'Todas las compras'],
-  ['Factura CFDI', 'Comprobante fiscal de cada venta', 'Corporaciones, empresas y particulares'],
-  ['Especificaciones del fabricante', 'Ficha técnica y normas aplicables de cada producto', 'Se entrega por producto al cotizar'],
+  [
+    'NOM-017-STPS-2024',
+    'Obliga al patrón a analizar riesgos por puesto, proporcionar el EPP sin costo, capacitar y supervisar. No define desempeño del traje.',
+    'Obligatoria. Vigente desde el 28-sep-2025; sustituyó a la NOM-017-STPS-2008.',
+  ],
+  [
+    'NOM-002-STPS-2010',
+    'Cláusula 5.9: dotar de EPP a los integrantes de la brigada contra incendio, conforme a la NOM-017 vigente.',
+    'Obligatoria en centros de trabajo con brigada.',
+  ],
+  [
+    'NFPA 1970 (ed. 2025)',
+    'Desempeño del conjunto estructural y de proximidad. Absorbió a NFPA 1971, 1975, 1981 y 1982.',
+    'Referencia técnica voluntaria. Se vuelve exigible cuando un pliego de licitación la incorpora.',
+  ],
+  [
+    'NFPA 1950 (ed. 2025)',
+    'EPP forestal, rescate técnico y emergencias médicas. Absorbió a NFPA 1977, 1951 y 1999.',
+    'Referencia técnica voluntaria.',
+  ],
+  [
+    'NFPA 1850 (ed. 2026)',
+    'Selección, cuidado y mantenimiento: inspección, lavado y retiro del equipo. Absorbió a NFPA 1851 y 1852.',
+    'Referencia técnica voluntaria; define el ciclo de servicio del traje.',
+  ],
+  [
+    'EN 469:2020',
+    'Equivalente europeo para ropa de extinción, con Nivel 1 y Nivel 2.',
+    'Referencia para equipo de origen europeo.',
+  ],
 ];
 const normasNote =
-  'Las normas y certificaciones específicas (p. ej. NFPA) dependen de cada producto y marca: se indican en la ficha técnica que te compartimos al cotizar.';
+  'Precisión que conviene tener clara: en México no existe una NOM ni una NMX de producto para trajes de bombero, y la Ley General de Protección Civil no exige certificación NFPA. NFPA es referencia técnica voluntaria que se vuelve contractualmente exigible cuando la incorpora un pliego de licitación. Las licitaciones mexicanas todavía suelen redactar "NFPA 1971 Edición 2018": podemos documentar la correspondencia con NFPA 1970, capítulos 5 a 9.';
 
-// --- Proceso (describe el proceso REAL, sin tiempos garantizados) ---
+// --- Vida útil (NFPA 1850) ----------------------------------
+const vidaUtilColumns: [string, string, string] = ['Actividad', 'Frecuencia', 'Quién puede hacerlo'];
+const vidaUtilRows: [string, string, string][] = [
+  ['Inspección de rutina', 'Al inicio de turno y después de cada uso', 'El propio bombero'],
+  ['Inspección avanzada', 'Anual (y a los 3 años aunque el traje no se haya estrenado)', 'Fabricante, personal capacitado o proveedor de servicio verificado'],
+  ['Lavado avanzado', 'Dos veces cada 12 meses y tras exposición a productos de combustión', 'Con lavadora extractora; nunca lavadora de carga superior'],
+  ['Retiro de servicio', 'Máximo 10 años desde la fecha de fabricación', 'Aplica aunque el traje nunca se haya usado'],
+];
+const vidaUtilNote =
+  'El reloj corre desde la fecha de FABRICACIÓN impresa en la etiqueta, no desde la compra ni desde la puesta en servicio. Por eso conviene revisar esa fecha antes de aceptar inventario: comprar equipo viejo te come años de vida útil pagados.';
+
 const pasos = [
-  { title: 'Cuéntanos', desc: 'Escríbenos por WhatsApp qué equipo necesitas y para cuántos elementos.' },
-  { title: 'Asesoría', desc: 'Definimos juntos tallas, configuraciones y alternativas según tu presupuesto.' },
-  { title: 'Cotización', desc: 'Recibes cotización formal por escrito, con partidas y condiciones.' },
-  { title: 'Pedido', desc: 'Confirmas, facturamos y preparamos tu pedido.' },
-  { title: 'Entrega', desc: 'Enviamos a tu estación o domicilio en cualquier estado y damos seguimiento.' },
+  { title: 'Cuéntanos', desc: 'Qué operación cubres, cuántos elementos y con qué presupuesto trabajas.' },
+  { title: 'Definimos', desc: 'Qué familia de traje corresponde, qué capas necesita y qué complementos faltan.' },
+  { title: 'Tallas', desc: 'Guía de tallas del fabricante y toma de medidas antes de pedir, para evitar cambios.' },
+  { title: 'Cotización', desc: 'Documento formal con partidas, ficha técnica, norma y condiciones de entrega.' },
+  { title: 'Entrega', desc: 'Facturamos, enviamos a cualquier estado y damos seguimiento al pedido.' },
 ];
 
-// --- FAQ (respuestas honestas, sin promesas que no se cumplan) ---
 const faqs = [
   {
-    q: '¿Venden a particulares o solo a corporaciones?',
-    a: 'Vendemos a cuerpos de bomberos, protección civil, brigadas industriales, empresas y también a particulares. Facturamos todas las compras.',
+    q: '¿Cuál es la norma vigente para trajes de bombero?',
+    a: 'NFPA 1970, edición 2025. Absorbió a la NFPA 1971 junto con las normas 1975, 1981 y 1982; los requisitos del traje estructural son hoy sus capítulos 5 a 9. Muchas licitaciones todavía redactan "NFPA 1971 Edición 2018" y podemos documentar la correspondencia entre ambas.',
   },
   {
-    q: '¿Cuánto tarda la entrega?',
-    a: 'Depende del producto y de la existencia: hay piezas de entrega inmediata y otras que se fabrican o importan sobre pedido. El tiempo exacto te lo confirmamos por escrito en la cotización.',
+    q: '¿La ley mexicana obliga a comprar equipo certificado NFPA?',
+    a: 'No. En México no existe NOM ni NMX de producto para trajes de bombero, y la Ley General de Protección Civil no exige certificación NFPA. Lo que sí es obligatorio es la NOM-017-STPS-2024, que obliga a proporcionar EPP adecuado sin costo, y la NOM-002-STPS-2010 para brigadas. NFPA se vuelve exigible cuando un pliego de licitación la incorpora al contrato.',
   },
   {
-    q: '¿Cómo sé qué talla pedir?',
-    a: 'Antes de cotizar te compartimos la guía de tallas de cada fabricante y te asesoramos para tomar medidas correctamente. Así evitamos cambios y retrasos.',
+    q: '¿Qué diferencia hay entre un traje de brigadista y uno estructural?',
+    a: 'El alcance de protección. El estructural lleva tres capas obligatorias (exterior, barrera de humedad y barrera térmica) y está pensado para ataque interior en edificaciones. El de brigadista está pensado para fuego incipiente en industria. Se parecen a la vista y cuestan muy distinto. Te decimos cuál corresponde a tu operación antes de cotizar.',
   },
   {
-    q: '¿Los trajes cumplen normas como NFPA?',
-    a: 'Cada producto tiene sus propias certificaciones según marca y modelo. En la ficha técnica que te compartimos al cotizar vienen las normas específicas que cumple.',
+    q: '¿Qué son TPP y THL, y por qué importan?',
+    a: 'TPP mide la protección térmica y THL la capacidad de disipar calor del cuerpo. Los mínimos de referencia NFPA son TPP 35 y THL 205. Buscar el TPP más alto posible es un error: si el THL queda bajo, aumenta el estrés térmico, que es la principal causa de lesión no traumática en incendio. Las licitaciones más exigentes fijan ambos valores como criterio de descalificación.',
   },
   {
-    q: '¿Puedo comprar solo una pieza (casco, botas, guantes)?',
-    a: 'Sí. Manejamos el traje completo o piezas sueltas para reposición, sin mínimo de compra.',
+    q: '¿Cuánto dura un traje estructural?',
+    a: 'Bajo NFPA 1850, el retiro es a los 10 años desde la fecha de fabricación, incluso si el traje nunca se usó. Además requiere inspección avanzada anual y dos lavados avanzados por año. Revisa siempre la fecha de fabricación en la etiqueta antes de aceptar un pedido.',
   },
   {
-    q: '¿Participan en licitaciones y compras de gobierno?',
-    a: 'Sí. Entregamos cotización formal por escrito, ficha técnica y factura CFDI, con los requisitos que tu área de compras necesite.',
+    q: '¿Puedo comprar solo una pieza?',
+    a: 'Sí. Manejamos chaquetón, pantalonera, casco, botas, guantes, monja, tirantes y ERA por separado, o el combo completo. Sin compra mínima.',
+  },
+  {
+    q: '¿Qué necesito para una licitación o compra de gobierno?',
+    a: 'Normalmente ficha técnica en formato de licitación, certificado de laboratorio del conjunto, carta de distribuidor autorizado, CFDI 4.0 con las partidas correspondientes y acta de entrega-recepción. Preparamos el expediente y asistimos a junta de aclaraciones.',
+  },
+  {
+    q: '¿Manejan marcas específicas?',
+    a: 'Trabajamos con producto de fabricantes nacionales e importados. Dinos qué marca o especificación pide tu pliego o tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación.',
   },
 ];
 
-// ItemList del catálogo — lo emite BaseLayout (regla B3)
 const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   name: c.nombre,
   url: `${SITE.url}/#catalogo`,
 }));
-
-// --- Spotlight de categoría clave ---
-const spotlight = {
-  eyebrow: 'Categoría destacada',
-  title: 'Trajes estructurales: la protección principal de tu corporación',
-  description:
-    'El traje estructural es la compra más importante del equipamiento. Te ayudamos a configurarlo completo: chaquetón, pantalón y sus complementos, en las tallas correctas.',
-  features: [
-    'Chaquetón y pantalón con capas exterior, térmica y de humedad',
-    'Configuración por pieza o conjunto completo',
-    'Guía de tallas del fabricante antes de pedir',
-    'Ficha técnica con normas específicas al cotizar',
-  ],
-  brands: ['Estructural', 'Chaquetón', 'Pantalón', 'Monja', 'Complementos'],
-  images: [
-    { src: '/images/productos/traje-estructural-para-bombero.svg', alt: 'Traje estructural para bombero completo' },
-    { src: '/images/productos/casco-para-bombero.svg', alt: 'Casco para bombero estructural' },
-    { src: '/images/productos/guantes-para-bombero.svg', alt: 'Guantes estructurales para bombero' },
-  ],
-};
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
-  <!-- 1 · Hero: presenta -->
   <Hero {...hero} />
-
-  <!-- 2 · SectionMenu: convierte -->
   <SectionMenu />
-
-  <!-- 3 · TrustBar: pilares honestos -->
   <TrustBar pilares={[...pilares]} />
 
-  <!-- 4 · Catálogo (vitrina data-driven desde PRODUCT_CATEGORIES) -->
-  <section class="section" id="catalogo">
+  <!-- Segmentos: las 3 rutas de comprador -->
+  <section class="section" id="segmentos">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Quién compra"
+        title="Tres compradores, tres procesos distintos"
+        description="Una brigada industrial, un cuerpo de bomberos que licita y un voluntario que repone una pieza no compran igual. Entra por la ruta que te corresponde."
+      />
+      <SegmentCards />
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section class="section section--alt" id="catalogo">
     <div class="container">
       <SectionHeading
         eyebrow="Catálogo"
-        title="Equipo para bomberos por categoría"
-        description="Ocho líneas de producto para equipar a tu corporación de pies a cabeza. Entra a la que necesitas o cotiza directo por WhatsApp."
+        title="Once líneas de equipo de protección contra incendios"
+        description="De la cabeza a los pies, más el equipo de respiración y la herramienta. Cotiza la línea completa o la pieza que necesitas reponer."
       />
       <div class="grid-cards">
         {PRODUCT_CATEGORIES.map((cat, i) => (
@@ -222,84 +224,70 @@ const spotlight = {
     </div>
   </section>
 
-  <!-- 5 · Spotlight de categoría clave -->
-  <section class="section section--alt">
+  <!-- Spotlight: brigadista vs estructural -->
+  <section class="section">
     <div class="container">
       <CategoryFeature
         {...spotlight}
-        ctaLabel="Cotizar traje estructural"
-        ctaHref={waUrl(WA_MESSAGES.categoria('Trajes estructurales'))}
+        ctaLabel="Que me asesoren antes de comprar"
+        ctaHref={waUrl(WA_MESSAGES.informacion)}
         external
       />
     </div>
   </section>
 
-  <!-- 6 · La empresa (hechos, no adjetivos; sin cifras inventadas) -->
+  <!-- Guía de selección -->
+  <section class="section section--alt" id="guia">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Cómo elegir"
+        title="Qué familia de traje corresponde a tu operación"
+        description="Seis familias para seis tipos de riesgo. No son intercambiables y elegir mal cuesta caro, en dinero y en seguridad."
+      />
+      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
+    </div>
+  </section>
+
+  <!-- Normas -->
+  <section class="section" id="normas">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Normas"
+        title="Qué es obligatorio en México y qué es referencia técnica"
+        description="La confusión entre ambas cosas está en casi todos los sitios del sector. Aquí está la distinción, con la norma vigente en cada caso."
+      />
+      <NormsTable columns={normasColumns} rows={normasRows} note={normasNote} />
+    </div>
+  </section>
+
+  <!-- Vida útil -->
+  <section class="section section--alt" id="vida-util">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Vida útil y servicio"
+        title="El traje tiene fecha de retiro, aunque se vea nuevo"
+        description="NFPA 1850 define el ciclo de servicio del equipo estructural: inspección, lavado y retiro obligatorio. Presupuestarlo desde la compra evita sorpresas."
+      />
+      <NormsTable columns={vidaUtilColumns} rows={vidaUtilRows} note={vidaUtilNote} />
+    </div>
+  </section>
+
+  <!-- La empresa -->
   <section class="section" id="nosotros">
     <div class="container">
       <SectionHeading
         eyebrow="La empresa"
         title="Qué hacemos y cómo lo hacemos"
         duo={[
-          'Vendemos equipo de protección personal para combate de incendios: trajes estructurales, forestales y de aproximación, cascos, botas, guantes, equipos de respiración y accesorios, con envíos a todo México.',
-          'Trabajamos con asesoría directa: entendemos qué necesita tu corporación, te ayudamos con tallas y configuraciones, y formalizamos todo por escrito — cotización, ficha técnica y factura.',
+          'Vendemos equipo de protección personal contra incendios: trajes estructurales, de brigadista, forestales, de aproximación y de rescate, más cascos, botas, guantes, monjas, equipos de respiración y herramienta. Envíos a todo México.',
+          'Trabajamos con asesoría técnica antes de la venta: qué familia de traje corresponde, qué capas debe llevar, cómo tomar tallas y qué documentación necesita tu expediente de compra. Todo por escrito: cotización, ficha técnica y factura.',
         ]}
       />
       <FactList facts={hechos} />
     </div>
   </section>
 
-  <!-- 7 · Beneficios: di por qué elegirte -->
-  <section class="section section--alt" id="beneficios">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Por qué elegirnos"
-        title="Beneficios concretos, no adjetivos"
-        description="Seis razones prácticas para cotizar con nosotros."
-      />
-      <div class="grid-cards grid-cards--3">
-        {beneficios.map((b, i) => (
-          <CategoryCard
-            href={waUrl(WA_MESSAGES.informacion)}
-            external
-            image={b.image}
-            imageAlt={b.imageAlt}
-            title={b.title}
-            desc={b.desc}
-            badge={b.badge}
-            chips={b.chips}
-            ctaLabel="Saber más"
-            index={i + 8}
-          />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- 8 · Guía de selección -->
-  <section class="section" id="guia">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Guía de selección"
-        title="Elige el traje según tu operación"
-        description="Tres familias de trajes para tres tipos de riesgo. Compara y cotiza la que corresponde a tu corporación."
-      />
-      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} />
-    </div>
-  </section>
-
-  <!-- 9 · Respaldo -->
-  <section class="section section--alt">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Respaldo"
-        title="Lo que te respalda al comprar"
-      />
-      <NormsTable columns={normasColumns} rows={normasRows} note={normasNote} />
-    </div>
-  </section>
-
-  <!-- 10 · Proceso (fondo tinta) -->
+  <!-- Proceso -->
   <section class="section section--dark" id="proceso">
     <div class="container">
       <SectionHeading
@@ -311,20 +299,14 @@ const spotlight = {
     </div>
   </section>
 
-  <!-- 11 · FAQ + Contacto (sticky en desktop) -->
+  <!-- FAQ + contacto -->
   <section class="section" id="faq">
     <div class="container">
       <SectionHeading
         eyebrow="Preguntas frecuentes"
-        title="Resolvemos tus dudas antes de cotizar"
+        title="Lo que conviene saber antes de cotizar"
       />
       <FAQWithContact items={faqs} />
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
-  @media (max-width: 1024px) { .grid-cards--3 { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 640px) { .grid-cards--3 { grid-template-columns: 1fr; } }
-</style>
