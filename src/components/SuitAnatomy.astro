@@ -1,0 +1,150 @@
+---
+// SuitAnatomy: las tres capas obligatorias del traje estructural.
+// Es el bloque técnico central del sitio: explica dónde vive el
+// desempeño real (las barreras, no el exterior que se ve).
+// Cero marcas afirmadas como propias: son referencia de material.
+interface Capa {
+  n: string;
+  nombre: string;
+  ingles: string;
+  funcion: string;
+  materiales: string[];
+  dato: string;
+}
+
+const CAPAS: Capa[] = [
+  {
+    n: '01',
+    nombre: 'Capa exterior',
+    ingles: 'Outer shell',
+    funcion: 'Resiste flama, abrasión y desgarre. Es la que se ve y la que define el color, pero no es donde vive la mayor parte de la protección térmica.',
+    materiales: ['PBI Matrix', 'PBI Max', 'Nomex · Kevlar', 'Armor AP', 'Kombat Flex'],
+    dato: 'Se especifica en oz/yd²: a menor gramaje, menos peso y menos resistencia mecánica.',
+  },
+  {
+    n: '02',
+    nombre: 'Barrera de humedad',
+    ingles: 'Moisture barrier',
+    funcion: 'Impide el paso de agua, vapor a alta temperatura y contaminantes líquidos hacia adentro, dejando salir el sudor en forma de vapor.',
+    materiales: ['GORE CROSSTECH', 'CROSSTECH Black', 'STEDAIR 4000', 'STEDAIR 3000'],
+    dato: 'Es la capa que más se degrada con lavado incorrecto: la lavadora de carga superior está prohibida.',
+  },
+  {
+    n: '03',
+    nombre: 'Barrera térmica',
+    ingles: 'Thermal liner',
+    funcion: 'Aísla del calor por conducción y radiación. Aquí se define la mayor parte del TPP del conjunto.',
+    materiales: ['Caldura', 'Caldura Elite', 'Quantum3D', 'Glide Ice'],
+    dato: 'Entre 70 y 80 % del desempeño térmico del traje viene de esta capa y de la barrera de humedad.',
+  },
+];
+---
+<div class="anatomy">
+  <div class="anatomy__viz" aria-hidden="true">
+    <svg viewBox="0 0 260 300" xmlns="http://www.w3.org/2000/svg" role="presentation">
+      <!-- exterior -->
+      <path d="M60 40 L100 26 L130 40 L160 26 L200 40 L214 96 L188 104 L188 264 L72 264 L72 104 L46 96 Z" fill="#c8102e" opacity="0.92"/>
+      <!-- barrera de humedad -->
+      <path d="M78 62 L104 52 L130 62 L156 52 L182 62 L192 100 L176 106 L176 248 L84 248 L84 106 L68 100 Z" fill="#4b5563" opacity="0.95"/>
+      <!-- barrera térmica -->
+      <path d="M94 84 L112 76 L130 84 L148 76 L166 84 L172 106 L162 110 L162 232 L98 232 L98 110 L88 106 Z" fill="#ffc72c"/>
+      <!-- cinta reflejante -->
+      <rect x="72" y="196" width="116" height="9" fill="#ffc72c" opacity="0.9"/>
+      <rect x="72" y="210" width="116" height="5" fill="#e6e9ec" opacity="0.8"/>
+      <!-- etiquetas -->
+      <g font-family="system-ui,sans-serif" font-size="11" font-weight="700">
+        <line x1="214" y1="70" x2="242" y2="58" stroke="#c8102e" stroke-width="1.5"/>
+        <text x="246" y="61" fill="#c8102e">01</text>
+        <line x1="190" y1="88" x2="242" y2="112" stroke="#4b5563" stroke-width="1.5"/>
+        <text x="246" y="115" fill="#4b5563">02</text>
+        <line x1="170" y1="100" x2="242" y2="164" stroke="#b58500" stroke-width="1.5"/>
+        <text x="246" y="167" fill="#b58500">03</text>
+      </g>
+    </svg>
+    <p class="anatomy__caption">Corte del chaquetón estructural. Las tres capas son obligatorias: si falta una, no es un traje estructural.</p>
+  </div>
+
+  <ol class="anatomy__list">
+    {CAPAS.map((c) => (
+      <li class="layer">
+        <div class="layer__head">
+          <span class="layer__n">{c.n}</span>
+          <div>
+            <h3>{c.nombre}</h3>
+            <span class="layer__en">{c.ingles}</span>
+          </div>
+        </div>
+        <p class="layer__funcion">{c.funcion}</p>
+        <div class="layer__mats">
+          {c.materiales.map((m) => <span class="chip">{m}</span>)}
+        </div>
+        <p class="layer__dato">{c.dato}</p>
+      </li>
+    ))}
+  </ol>
+</div>
+
+<style>
+  .anatomy {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.6fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: start;
+  }
+  .anatomy__viz {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+    background: var(--color-white);
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+  }
+  .anatomy__viz svg { width: 100%; height: auto; max-height: 340px; }
+  .anatomy__caption {
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: var(--border);
+    font-size: 0.8rem;
+    color: var(--color-gray);
+  }
+
+  .anatomy__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .layer {
+    padding: 1.6rem 0;
+    border-bottom: var(--border);
+  }
+  .layer:first-child { padding-top: 0; }
+  .layer:last-child { border-bottom: 0; padding-bottom: 0; }
+  .layer__head { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.7rem; }
+  .layer__n {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--color-primary);
+    letter-spacing: var(--tracking-tight);
+  }
+  h3 { margin: 0; font-size: 1.15rem; }
+  .layer__en {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-gray-soft);
+    font-weight: 700;
+  }
+  .layer__funcion { margin: 0 0 0.8rem; color: var(--color-gray); max-width: 72ch; }
+  .layer__mats { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.8rem; }
+  .layer__dato {
+    margin: 0;
+    padding-left: 0.9rem;
+    border-left: 3px solid var(--color-accent);
+    font-size: 0.88rem;
+    color: var(--color-dark);
+    max-width: 72ch;
+  }
+
+  @media (max-width: 900px) {
+    .anatomy { grid-template-columns: 1fr; }
+    .anatomy__viz { position: static; }
+    .anatomy__viz svg { max-height: 260px; }
+  }
+</style>

@@ -1,0 +1,74 @@
+---
+// MistakeList: los errores más caros al comprar traje. Contenido
+// de autoridad: educa y desactiva ofertas malas de la competencia
+// sin nombrar a nadie.
+interface Error { error: string; realidad: string; }
+
+const ERRORES: Error[] = [
+  {
+    error: 'Comprar por el exterior e ignorar las barreras',
+    realidad: 'Entre 70 y 80 % del desempeño térmico viene de la barrera térmica y la de humedad. El exterior es lo que se ve, no lo que más protege.',
+  },
+  {
+    error: 'Confundir "tela que cumple" con "conjunto certificado"',
+    realidad: 'La certificación es del conjunto completo y está a nombre del fabricante que lo listó ante el organismo certificador. Que la tela cumpla no certifica el traje.',
+  },
+  {
+    error: 'Confundir la edición con el número de norma',
+    realidad: '"NFPA 2013" y "NFPA 91" no existen: son las ediciones 2013 y 1991 de la antigua NFPA 1971. Es un error real y frecuente en ofertas del mercado mexicano.',
+  },
+  {
+    error: 'Buscar el TPP más alto posible',
+    realidad: 'Un TPP muy alto con THL bajo produce estrés térmico, la principal causa de lesión no traumática en incendio. Los dos valores se leen juntos.',
+  },
+  {
+    error: 'Comprar talla de stock para toda la dotación',
+    realidad: 'Si el conjunto no ajusta se pierde la interfaz entre chaquetón y pantalón, que es justo por donde entra el calor.',
+  },
+  {
+    error: 'No revisar la fecha de fabricación',
+    realidad: 'El retiro obligatorio es a los 10 años desde que se fabricó, no desde que se compró. Inventario viejo te cobra años de vida útil que no vas a usar.',
+  },
+  {
+    error: 'No presupuestar el ciclo de servicio',
+    realidad: 'El traje requiere inspección avanzada anual y dos lavados avanzados por año. Si no está en el presupuesto, se deja de hacer y el equipo se degrada antes.',
+  },
+];
+---
+<ul class="mistakes">
+  {ERRORES.map((e, i) => (
+    <li class="mistake">
+      <div class="mistake__error">
+        <span class="mistake__n">{String(i + 1).padStart(2, '0')}</span>
+        <h3>{e.error}</h3>
+      </div>
+      <p class="mistake__realidad">{e.realidad}</p>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .mistakes { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-primary); }
+  .mistake {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: clamp(1.5rem, 4vw, 4rem);
+    padding: 1.4rem 0;
+    border-bottom: var(--border);
+    align-items: start;
+  }
+  .mistake__error { display: flex; gap: 0.9rem; align-items: baseline; }
+  .mistake__n {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+  h3 { margin: 0; font-size: 1.02rem; }
+  .mistake__realidad { margin: 0; color: var(--color-gray); font-size: 0.93rem; }
+
+  @media (max-width: 800px) {
+    .mistake { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+</style>

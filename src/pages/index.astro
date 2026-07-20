@@ -1,14 +1,17 @@
 ---
-// L1 · Home — contenido de experto basado en el estudio de mercado
-// jul-2026. Reglas duras aplicadas:
+// L1 · Home — arquitectura de asesor experto, no de catálogo.
+// Orden: qué vendemos → cómo está hecho → cómo se especifica →
+// qué se hace mal → quién lo fabrica → cómo elegir → qué exige la
+// ley → cuánto dura → quién compra → quiénes somos → proceso → FAQ.
+//
+// Reglas duras aplicadas (estudio de mercado jul-2026):
 //  · Normas VIGENTES: NFPA 1970 (absorbió 1971), NFPA 1950
-//    (absorbió 1977 y 1951), NFPA 1850 (absorbió 1851 y 1852),
+//    (absorbió 1977), NFPA 1850 (absorbió 1851 y 1852),
 //    NOM-017-STPS-2024 (sustituyó a la de 2008).
 //  · NO se afirma que la Ley General de Protección Civil exija
 //    certificación NFPA: es FALSO (verificado en el texto vigente).
-//  · Marcas solo como referencia técnica, sin afirmar distribución.
-//  · Sin precios (decisión de negocio): la conversión es cotización.
-//  · Reseñas omitidas hasta tener reales con permiso.
+//  · Marcas SOLO como referencia técnica, sin afirmar distribución.
+//  · Sin precios (decisión de negocio). Sin reseñas fabricadas.
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
 import SectionMenu from '@components/SectionMenu.astro';
@@ -16,14 +19,24 @@ import SectionHeading from '@components/SectionHeading.astro';
 import CategoryCard from '@components/CategoryCard.astro';
 import CategoryFeature from '@components/CategoryFeature.astro';
 import SegmentCards from '@components/SegmentCards.astro';
+import SuitAnatomy from '@components/SuitAnatomy.astro';
+import SpecChecklist from '@components/SpecChecklist.astro';
+import MistakeList from '@components/MistakeList.astro';
+import BrandGrid from '@components/BrandGrid.astro';
 import TrustBar from '@components/TrustBar.astro';
 import RiskGuide from '@components/RiskGuide.astro';
 import NormsTable from '@components/NormsTable.astro';
 import ProcessSteps from '@components/ProcessSteps.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import FactList from '@components/FactList.astro';
-import BrandGrid from '@components/BrandGrid.astro';
-import { SITE, PRODUCT_CATEGORIES, COMPLEMENTOS, MARCAS_TRAJE, MARCAS_MATERIAL, WA_MESSAGES } from '@config/site';
+import {
+  SITE,
+  PRODUCT_CATEGORIES,
+  COMPLEMENTOS,
+  MARCAS_TRAJE,
+  MARCAS_MATERIAL,
+  WA_MESSAGES,
+} from '@config/site';
 import { waUrl } from '@lib/wa';
 
 const hero = {
@@ -34,7 +47,7 @@ const hero = {
     'Estructural, brigadista, forestal, aproximación, entrada y extricación. Chaquetón y pantalonera con el composite que pide tu operación. Cotiza por WhatsApp y recibe en tu estación.',
   descRight: [
     'Nos dedicamos a una sola cosa: el traje. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos y unidades de protección civil que compran por licitación, y cuerpos voluntarios que reponen pieza por pieza.',
-    'Asesoramos antes de cotizar: qué familia de traje corresponde a tu operación, qué capas debe llevar el composite, cómo tomar tallas y qué documentación necesita tu expediente de compra.',
+    'Aquí abajo está, abierto, lo que un buen proveedor debería explicarte antes de venderte: cómo está hecho un traje, cómo se especifica y qué errores salen caros.',
   ],
 };
 
@@ -52,17 +65,16 @@ const hechos = [
   { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
 ];
 
-// --- Spotlight: el hueco #1 del mercado ---------------------
 const spotlight = {
   eyebrow: 'Antes de cotizar',
   title: 'Brigadista y estructural no son lo mismo (y ahí está el error más caro)',
   description:
     'Es la confusión más común y la más costosa del sector. Un equipo de brigadista está pensado para fuego incipiente en industria; un traje estructural certificado está pensado para entrar a una edificación en llamas. Se ven parecidos, cuestan muy distinto y no protegen igual.',
   features: [
-    'El estructural lleva tres capas obligatorias: exterior, barrera de humedad y barrera térmica',
-    'Tela que cumple no es lo mismo que conjunto certificado: la certificación es del ensemble completo',
-    '"NFPA 2013" y "NFPA 91" no existen: son las ediciones 2013 y 1991 de la antigua NFPA 1971',
-    'Entre 70 y 80 % del desempeño térmico viene de las barreras, no del exterior que se ve',
+    'El estructural lleva las tres capas obligatorias; el de brigadista, no necesariamente',
+    'La certificación es del conjunto completo, no de la tela por separado',
+    'El alcance de uso lo define la operación, no el presupuesto disponible',
+    'Un traje de brigadista en ataque interior es una lesión esperando ocurrir',
   ],
   brands: ['Chaquetón', 'Pantalonera', 'Barrera térmica', 'Barrera de humedad', 'DRD'],
   images: [
@@ -72,7 +84,6 @@ const spotlight = {
   ],
 };
 
-// --- Guía de selección (SEO de cola larga + califica) --------
 const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
 const guiaRows = [
   ['Estructural', 'Incendio en edificaciones, ataque interior', 'Tres capas: exterior + barrera de humedad + barrera térmica', 'Casco, monja, botas, guantes, ERA'],
@@ -85,7 +96,6 @@ const guiaRows = [
 const guiaNote =
   'Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar.';
 
-// --- Normas: lo obligatorio vs lo que piden las licitaciones -
 const normasColumns: [string, string, string] = ['Referencia', 'Qué exige realmente', 'Estatus en México'];
 const normasRows: [string, string, string][] = [
   [
@@ -122,7 +132,6 @@ const normasRows: [string, string, string][] = [
 const normasNote =
   'Precisión que conviene tener clara: en México no existe una NOM ni una NMX de producto para trajes de bombero, y la Ley General de Protección Civil no exige certificación NFPA. NFPA es referencia técnica voluntaria que se vuelve contractualmente exigible cuando la incorpora un pliego de licitación. Las licitaciones mexicanas todavía suelen redactar "NFPA 1971 Edición 2018": podemos documentar la correspondencia con NFPA 1970, capítulos 5 a 9.';
 
-// --- Vida útil (NFPA 1850) ----------------------------------
 const vidaUtilColumns: [string, string, string] = ['Actividad', 'Frecuencia', 'Quién puede hacerlo'];
 const vidaUtilRows: [string, string, string][] = [
   ['Inspección de rutina', 'Al inicio de turno y después de cada uso', 'El propio bombero'],
@@ -135,10 +144,10 @@ const vidaUtilNote =
 
 const pasos = [
   { title: 'Cuéntanos', desc: 'Qué operación cubres, cuántos elementos y con qué presupuesto trabajas.' },
-  { title: 'Definimos', desc: 'Qué familia de traje corresponde, qué capas necesita y qué complementos faltan.' },
-  { title: 'Tallas', desc: 'Guía de tallas del fabricante y toma de medidas antes de pedir, para evitar cambios.' },
-  { title: 'Cotización', desc: 'Documento formal con partidas, ficha técnica, norma y condiciones de entrega.' },
-  { title: 'Entrega', desc: 'Facturamos, enviamos a cualquier estado y damos seguimiento al pedido.' },
+  { title: 'Definimos', desc: 'Qué familia de traje corresponde y qué composite debe llevar.' },
+  { title: 'Tallas', desc: 'Guía de tallas del fabricante y toma de medidas antes de pedir.' },
+  { title: 'Cotización', desc: 'Documento formal con partidas, ficha técnica, norma y condiciones.' },
+  { title: 'Entrega', desc: 'Facturamos, enviamos a cualquier estado y damos seguimiento.' },
 ];
 
 const faqs = [
@@ -163,8 +172,12 @@ const faqs = [
     a: 'Bajo NFPA 1850, el retiro es a los 10 años desde la fecha de fabricación, incluso si el traje nunca se usó. Además requiere inspección avanzada anual y dos lavados avanzados por año. Revisa siempre la fecha de fabricación en la etiqueta antes de aceptar un pedido.',
   },
   {
-    q: '¿Puedo comprar solo una pieza?',
-    a: 'Sí. Manejamos chaquetón, pantalonera, casco, botas, guantes, monja, tirantes y ERA por separado, o el combo completo. Sin compra mínima.',
+    q: '¿Qué es el DRD y por qué debe traerlo el chaquetón?',
+    a: 'Drag Rescue Device: un arnés integrado que permite arrastrar a un elemento inconsciente sin improvisar. Forma parte de los requisitos del conjunto estructural desde la edición 2008 de la norma. Si una oferta no lo menciona, pregúntalo explícitamente.',
+  },
+  {
+    q: '¿Puedo comprar solo el chaquetón o solo la pantalonera?',
+    a: 'Sí. Vendemos por pieza o conjunto completo, sin compra mínima. Ten en cuenta que la interfaz entre chaquetón y pantalón es una zona crítica: si combinas piezas de distintos cortes o tallas, conviene revisarlo con nosotros antes.',
   },
   {
     q: '¿Qué necesito para una licitación o compra de gobierno?',
@@ -172,7 +185,7 @@ const faqs = [
   },
   {
     q: '¿Manejan marcas específicas?',
-    a: 'Trabajamos con producto de fabricantes nacionales e importados. Dinos qué marca o especificación pide tu pliego o tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación.',
+    a: 'Trabajamos con producto de fabricantes nacionales e importados. Dinos qué marca o qué composite pide tu pliego o tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación.',
   },
 ];
 
@@ -186,19 +199,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   <SectionMenu />
   <TrustBar pilares={[...pilares]} />
 
-  <!-- Segmentos: las 3 rutas de comprador -->
-  <section class="section" id="segmentos">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Quién compra"
-        title="Tres compradores, tres procesos distintos"
-        description="Una brigada industrial, un cuerpo de bomberos que licita y un voluntario que repone una pieza no compran igual. Entra por la ruta que te corresponde."
-      />
-      <SegmentCards />
-    </div>
-  </section>
-
-  <!-- Catálogo: SOLO trajes -->
+  <!-- 1 · Qué vendemos: 6 familias de traje -->
   <section class="section section--alt" id="catalogo">
     <div class="container">
       <SectionHeading
@@ -237,8 +238,20 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- Spotlight: brigadista vs estructural -->
-  <section class="section">
+  <!-- 2 · Cómo está hecho: las tres capas -->
+  <section class="section" id="anatomia">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Anatomía del traje"
+        title="Tres capas, y la que más protege no es la que se ve"
+        description="Un traje estructural es un composite de tres materiales distintos. Saber qué hace cada capa es lo que separa una compra informada de una compra por color y precio."
+      />
+      <SuitAnatomy />
+    </div>
+  </section>
+
+  <!-- 3 · Brigadista vs estructural -->
+  <section class="section section--alt">
     <div class="container">
       <CategoryFeature
         {...spotlight}
@@ -249,38 +262,67 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- Marcas: referencia técnica, NO afirmación de distribución -->
-  <section class="section section--alt" id="marcas">
+  <!-- 4 · Cómo se especifica -->
+  <section class="section" id="especificar">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Cómo especificar"
+        title="Los ocho datos que debe traer la ficha antes de que firmes"
+        description="Cópialos en tu requisición o en tu pliego. Si una oferta no puede darte los ocho, todavía no es una oferta comparable."
+      />
+      <SpecChecklist />
+    </div>
+  </section>
+
+  <!-- 5 · Errores de compra -->
+  <section class="section section--alt" id="errores">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Errores caros"
+        title="Lo que más se hace mal al comprar traje"
+        duo={[
+          'Siete errores que vemos repetirse en compras de gobierno, de industria y de cuerpos voluntarios. Ninguno tiene que ver con el presupuesto: todos tienen que ver con la información que faltó en el momento de decidir.',
+          'Están aquí abiertos aunque no nos compres. Si detectas alguno en una oferta que estás evaluando, ya te sirvió la visita.',
+        ]}
+      />
+      <MistakeList />
+    </div>
+  </section>
+
+  <!-- 6 · Marcas: referencia técnica, NO distribución -->
+  <section class="section" id="marcas">
     <div class="container">
       <SectionHeading
         eyebrow="Marcas"
-        title="Las marcas que se especifican en el mercado"
+        title="Quién fabrica y qué se especifica en el mercado"
         description="Referencia técnica para que redactes tu pliego o tu requisición. Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación."
       />
       <BrandGrid titulo="Fabricantes de traje" marcas={MARCAS_TRAJE} />
       <BrandGrid titulo="Materiales del composite" marcas={MARCAS_MATERIAL} />
       <p class="marcas__nota">
-        Esta lista es orientativa del mercado y no implica representación exclusiva. La certificación
-        de un traje corresponde al conjunto completo y al fabricante que lo lista ante el organismo
-        certificador, no a la tela por separado: es la distinción que conviene verificar en cualquier oferta.
+        Esta lista es orientativa del mercado y no implica representación exclusiva. Dos precisiones que
+        conviene tener a la mano al comparar ofertas: Globe, Cairns y Bristol pertenecen hoy a MSA Safety,
+        y Morning Pride dejó de ser de Honeywell en mayo de 2025, cuando el negocio pasó a PIP. La
+        certificación, en todos los casos, corresponde al conjunto terminado y al fabricante que lo lista
+        ante el organismo certificador — nunca a la tela por separado.
       </p>
     </div>
   </section>
 
-  <!-- Guía de selección -->
-  <section class="section" id="guia">
+  <!-- 7 · Guía de selección -->
+  <section class="section section--alt" id="guia">
     <div class="container">
       <SectionHeading
         eyebrow="Cómo elegir"
-        title="Qué familia de traje corresponde a tu operación"
+        title="Qué familia corresponde a tu operación"
         description="Seis familias para seis tipos de riesgo. No son intercambiables y elegir mal cuesta caro, en dinero y en seguridad."
       />
       <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
     </div>
   </section>
 
-  <!-- Normas -->
-  <section class="section section--alt" id="normas">
+  <!-- 8 · Normas -->
+  <section class="section" id="normas">
     <div class="container">
       <SectionHeading
         eyebrow="Normas"
@@ -291,8 +333,8 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- Vida útil -->
-  <section class="section" id="vida-util">
+  <!-- 9 · Vida útil -->
+  <section class="section section--alt" id="vida-util">
     <div class="container">
       <SectionHeading
         eyebrow="Vida útil y servicio"
@@ -303,7 +345,19 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- La empresa -->
+  <!-- 10 · Quién compra -->
+  <section class="section" id="segmentos">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Quién compra"
+        title="Tres compradores, tres procesos distintos"
+        description="Una brigada industrial, un cuerpo de bomberos que licita y un voluntario que repone una pieza no compran igual. Entra por la ruta que te corresponde."
+      />
+      <SegmentCards />
+    </div>
+  </section>
+
+  <!-- 11 · La empresa -->
   <section class="section section--alt" id="nosotros">
     <div class="container">
       <SectionHeading
@@ -318,7 +372,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- Proceso -->
+  <!-- 12 · Proceso -->
   <section class="section section--dark" id="proceso">
     <div class="container">
       <SectionHeading
@@ -330,7 +384,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- FAQ + contacto -->
+  <!-- 13 · FAQ + contacto -->
   <section class="section" id="faq">
     <div class="container">
       <SectionHeading

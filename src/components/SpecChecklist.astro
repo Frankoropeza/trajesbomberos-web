@@ -1,0 +1,113 @@
+---
+// SpecChecklist: los 8 puntos que debe traer la ficha de un traje
+// antes de comprarlo. Pensado para que el comprador lo copie en su
+// requisición o su pliego. Contenido de autoridad, no de venta.
+import { WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+interface Punto { titulo: string; desc: string; }
+
+const PUNTOS: Punto[] = [
+  {
+    titulo: 'Norma y edición',
+    desc: 'NFPA 1970 edición 2025 (que absorbió a NFPA 1971) o EN 469:2020 con su nivel. La edición importa tanto como el número.',
+  },
+  {
+    titulo: 'Composite completo',
+    desc: 'Los tres materiales por nombre comercial: exterior, barrera de humedad y barrera térmica. "Nomex" a secas no es una especificación.',
+  },
+  {
+    titulo: 'TPP y THL',
+    desc: 'Protección térmica y pérdida total de calor. Mínimos de referencia: TPP 35 y THL 205. Las licitaciones exigentes los fijan como criterio de descalificación.',
+  },
+  {
+    titulo: 'Peso y largo',
+    desc: 'Gramaje del exterior en oz/yd² y largo del chaquetón: 28", 30", 32" o 35". Cambia movilidad y cobertura.',
+  },
+  {
+    titulo: 'DRD',
+    desc: 'Drag Rescue Device integrado al chaquetón, para arrastrar a un elemento inconsciente. Requisito del conjunto estructural.',
+  },
+  {
+    titulo: 'Cinta reflejante y refuerzos',
+    desc: 'Configuración de la cinta, bolsas, refuerzos en rodilla y codo, y tipo de tirantes: H-back o Y-back.',
+  },
+  {
+    titulo: 'Tallas',
+    desc: 'A medida o talla de stock. Si el conjunto no ajusta, se pierde la interfaz entre chaquetón y pantalón, que es donde entra el calor.',
+  },
+  {
+    titulo: 'Etiqueta y fecha de fabricación',
+    desc: 'La etiqueta de certificación con la fecha arranca el reloj de los 10 años de vida útil. Inventario viejo te come años pagados.',
+  },
+];
+---
+<div class="specs">
+  <ol class="specs__grid">
+    {PUNTOS.map((p, i) => (
+      <li class="spec">
+        <span class="spec__n">{String(i + 1).padStart(2, '0')}</span>
+        <h3>{p.titulo}</h3>
+        <p>{p.desc}</p>
+      </li>
+    ))}
+  </ol>
+  <div class="specs__cta">
+    <p>
+      <strong>¿Tu proveedor no te dio estos ocho datos?</strong> Pídelos antes de firmar la orden de compra.
+      Nosotros los entregamos por escrito en cada cotización, sin que tengas que solicitarlos.
+    </p>
+    <a class="btn" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">Pedir ficha técnica completa</a>
+  </div>
+</div>
+
+<style>
+  .specs__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .spec {
+    padding: 1.5rem clamp(1rem, 1.8vw, 1.9rem);
+    border-left: var(--border);
+    border-bottom: var(--border);
+  }
+  .spec:nth-child(4n + 1) { border-left: 0; padding-left: 0; }
+  .spec__n {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+  }
+  h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+  p { margin: 0; font-size: 0.86rem; color: var(--color-gray); line-height: 1.55; }
+
+  .specs__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem 1.7rem;
+    background: var(--color-ink);
+    border-radius: var(--radius-lg);
+    flex-wrap: wrap;
+  }
+  .specs__cta p { margin: 0; color: #b9bec5; max-width: 68ch; font-size: 0.95rem; }
+  .specs__cta strong { color: var(--color-white); }
+
+  @media (max-width: 1100px) {
+    .specs__grid { grid-template-columns: repeat(2, 1fr); }
+    .spec:nth-child(4n + 1) { border-left: var(--border); padding-left: 1.4rem; }
+    .spec:nth-child(odd) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 560px) {
+    .specs__grid { grid-template-columns: 1fr; }
+    .spec { border-left: 0 !important; padding-left: 0 !important; }
+  }
+</style>

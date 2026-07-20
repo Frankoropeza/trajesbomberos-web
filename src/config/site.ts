@@ -45,10 +45,10 @@ export const WA_MESSAGES = {
 
 export const NAV = [
   { label: 'Trajes', href: '/#catalogo' },
+  { label: 'Anatomía', href: '/#anatomia' },
+  { label: 'Cómo especificar', href: '/#especificar' },
   { label: 'Marcas', href: '/#marcas' },
-  { label: 'Cómo elegir', href: '/#guia' },
   { label: 'Normas', href: '/#normas' },
-  { label: 'Vida útil', href: '/#vida-util' },
   { label: 'Preguntas', href: '/#faq' },
 ] as const;
 
@@ -239,11 +239,12 @@ export const FOOTER_COLUMNS = [
   {
     title: 'Técnico',
     links: [
+      { label: 'Anatomía del traje', href: '/#anatomia' },
+      { label: 'Cómo especificar', href: '/#especificar' },
+      { label: 'Errores de compra', href: '/#errores' },
       { label: 'Marcas de referencia', href: '/#marcas' },
-      { label: 'Cómo elegir traje', href: '/#guia' },
       { label: 'Normas aplicables', href: '/#normas' },
       { label: 'Vida útil y servicio', href: '/#vida-util' },
-      { label: 'Preguntas frecuentes', href: '/#faq' },
     ],
   },
 ] as const;
