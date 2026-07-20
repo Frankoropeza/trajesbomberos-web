@@ -1,0 +1,54 @@
+---
+// SectionMenu: franja de navegación bajo el hero. Data-driven desde
+// NAV (misma fuente del Header). El último botón es el CTA de
+// conversión (WhatsApp): "el hero presenta, la franja convierte".
+import { NAV, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+---
+<nav class="section-menu" aria-label="Secciones del sitio">
+  <div class="container">
+    <ul class="section-menu__list">
+      {NAV.map((item) => (
+        <li><a href={item.href}>{item.label}</a></li>
+      ))}
+      <li class="section-menu__cta">
+        <a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">
+          Cotizar por WhatsApp<small>Respuesta inmediata</small>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .section-menu { background: var(--color-white); border-block: 1px solid var(--color-gray-light); }
+  .section-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0.9rem 0;
+    gap: 0.6rem;
+  }
+  .section-menu__list li { flex: 1 1 auto; display: flex; }
+  .section-menu__list a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-align: center;
+    min-height: 44px;
+  }
+  .section-menu__list a:hover { border-color: var(--color-primary); color: var(--color-primary); }
+  .section-menu__cta a { background: var(--color-wa); border-color: var(--color-wa); color: #fff; }
+  .section-menu__cta a:hover { background: var(--color-wa-dark); border-color: var(--color-wa-dark); color: #fff; }
+  .section-menu__cta small { font-weight: 400; font-size: 0.72rem; }
+</style>

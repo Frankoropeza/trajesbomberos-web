@@ -1,0 +1,61 @@
+---
+// SectionHeading: eyebrow con barra de acento + título (H2) +
+// descripción. Un solo H1 en el hero; H2 en cada sección.
+// Variante "duo": título izquierda, 2 párrafos derecha.
+// Un solo componente para todos los títulos: cero diseño duplicado.
+interface Props {
+  eyebrow: string;
+  title: string;
+  description?: string;
+  duo?: string[];
+  dark?: boolean;
+}
+const { eyebrow, title, description, duo, dark = false } = Astro.props;
+---
+<div class:list={['sec-heading', { 'sec-heading--dark': dark, 'sec-heading--duo': !!duo }]}>
+  <div class="sec-heading__main">
+    <p class="sec-heading__eyebrow">{eyebrow}</p>
+    <h2>{title}</h2>
+    {description && <p class="sec-heading__desc">{description}</p>}
+  </div>
+  {duo && (
+    <div class="sec-heading__duo">
+      {duo.map((p) => <p>{p}</p>)}
+    </div>
+  )}
+</div>
+
+<style>
+  .sec-heading { margin-bottom: 2.5rem; }
+  .sec-heading--duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .sec-heading__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+  }
+  .sec-heading__eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--color-primary);
+  }
+  h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin: 0 0 0.6rem; line-height: 1.2; }
+  .sec-heading__desc, .sec-heading__duo p { color: var(--color-gray); margin: 0 0 0.8rem; }
+  .sec-heading--dark h2 { color: var(--color-white); }
+  .sec-heading--dark .sec-heading__eyebrow { color: var(--color-accent); }
+  .sec-heading--dark .sec-heading__eyebrow::before { background: var(--color-accent); }
+  .sec-heading--dark .sec-heading__desc, .sec-heading--dark .sec-heading__duo p { color: #c9ccd1; }
+  @media (max-width: 768px) { .sec-heading--duo { grid-template-columns: 1fr; gap: 0.5rem; } }
+</style>

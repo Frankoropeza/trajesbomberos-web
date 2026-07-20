@@ -1,28 +1,106 @@
 ---
-import { SITE, NAV } from '@config/site';
+// Footer: cinco zonas en orden estricto — 1) banda CTA pre-footer
+// (último intento de conversión), 2) cuerpo de marca + columnas
+// data-driven, 3) banda de cumplimiento (opcional), 4) barra
+// inferior con copyright dinámico + scroll-top, 5) barra de acento.
+// NO emite JSON-LD: el Organization vive en lib/seo.ts y lo emite
+// buildSchema desde BaseLayout (regla B3). NAP consistente (SSoT
+// en CONTACT, misma fuente que Topbar y schema).
+import { SITE, CONTACT, FOOTER_COLUMNS, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <p class="footer-brand">{SITE.name}</p>
-      <p>{SITE.description}</p>
-      <p>Cobertura: {SITE.cobertura}</p>
-    </div>
-    <nav aria-label="Navegación de pie de página">
-      <ul>
-        {NAV.map((item) => (
-          <li><a href={item.href}>{item.label}</a></li>
-        ))}
-      </ul>
-    </nav>
-    <div>
-      {SITE.telefono && <p>Tel: <a href={`tel:${SITE.telefono}`}>{SITE.telefono}</a></p>}
-      {SITE.email && <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>}
-      <p>{SITE.horario}</p>
+  <!-- Zona 1: banda CTA pre-footer -->
+  <div class="footer-cta">
+    <div class="container footer-cta__inner">
+      <p>¿Listo para equipar a tu equipo? Cotiza sin compromiso.</p>
+      <a class="btn btn--light" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">Cotizar por WhatsApp</a>
     </div>
   </div>
-  <div class="container footer-legal">
-    <p>© {year} {SITE.legalName}. Todos los derechos reservados.</p>
+
+  <!-- Zona 2: marca + columnas data-driven -->
+  <div class="container footer-body">
+    <div class="footer-brand">
+      <p class="footer-brand__name">{SITE.name}<span>.com</span></p>
+      <p>{CONTACT.posicionamiento}.</p>
+      <p>{CONTACT.cobertura} · {CONTACT.horario}</p>
+      <p>
+        <a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a><br />
+        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+      </p>
+    </div>
+    <div class="footer-cols">
+      {FOOTER_COLUMNS.map((col) => (
+        <nav aria-label={col.title}>
+          <h3>{col.title}</h3>
+          <ul>
+            {col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+          </ul>
+        </nav>
+      ))}
+    </div>
   </div>
+
+  <!-- Zona 4: barra inferior -->
+  <div class="footer-bottom">
+    <div class="container footer-bottom__inner">
+      <p>© {year} {SITE.legalName}. Todos los derechos reservados.</p>
+      <a href="#main-content" class="footer-top">Volver arriba ↑</a>
+    </div>
+  </div>
+
+  <!-- Zona 5: barra de acento -->
+  <div class="footer-accent" aria-hidden="true"></div>
 </footer>
+
+<style>
+  .site-footer { background: var(--color-ink); color: #c9ccd1; margin-top: 4rem; }
+  .footer-cta { background: var(--color-primary); color: var(--color-white); }
+  .footer-cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-block: 1.6rem;
+    flex-wrap: wrap;
+  }
+  .footer-cta__inner p { margin: 0; font-size: 1.15rem; font-weight: 700; }
+
+  .footer-body {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 3rem;
+    padding-block: 3rem;
+  }
+  .footer-brand__name { font-size: 1.25rem; font-weight: 800; color: var(--color-white); margin: 0 0 0.6rem; }
+  .footer-brand__name span { color: var(--color-accent); }
+  .footer-brand p { margin: 0 0 0.6rem; font-size: 0.9rem; }
+  .footer-brand a { color: var(--color-accent); text-decoration: none; }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .footer-cols h3 { color: var(--color-white); font-size: 0.95rem; margin: 0 0 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .footer-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+  .footer-cols a { color: #c9ccd1; text-decoration: none; font-size: 0.9rem; }
+  .footer-cols a:hover { color: var(--color-accent); }
+
+  .footer-bottom { border-top: 1px solid rgb(255 255 255 / 0.12); }
+  .footer-bottom__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+  }
+  .footer-bottom p { margin: 0; }
+  .footer-top { color: var(--color-accent); text-decoration: none; font-weight: 600; }
+  .footer-accent { height: 6px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); }
+
+  @media (max-width: 1024px) { .footer-body { grid-template-columns: 1fr; gap: 2rem; } }
+</style>

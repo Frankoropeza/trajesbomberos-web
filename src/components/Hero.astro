@@ -1,0 +1,39 @@
+---
+// Hero canónico: dos columnas. Izquierda: title + accent (H1 ÚNICO,
+// con la kw principal) + subtitle. Derecha: descRight[] (2 párrafos).
+// Los CTAs NO viven aquí: "el hero presenta, la franja convierte"
+// (van en SectionMenu, justo debajo).
+interface Props {
+  title: string;
+  accent: string;
+  subtitle: string;
+  descRight: string[];
+}
+const { title, accent, subtitle, descRight } = Astro.props;
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <h1>{title} <span class="hero-accent">{accent}</span></h1>
+      <p class="hero-subtitle">{subtitle}</p>
+    </div>
+    <div class="hero-right">
+      {descRight.map((p) => <p>{p}</p>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero { background: linear-gradient(180deg, var(--color-light) 0%, var(--color-white) 100%); padding-block: 4.5rem 3.5rem; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  h1 { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.15; margin: 0 0 1rem; }
+  .hero-accent { color: var(--color-primary); }
+  .hero-subtitle { font-size: 1.15rem; color: var(--color-gray); margin: 0; }
+  .hero-right p { color: var(--color-gray); margin: 0 0 1rem; }
+  .hero-right p:last-child { margin-bottom: 0; }
+</style>

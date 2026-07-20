@@ -1,0 +1,38 @@
+---
+// Topbar: izquierda frase de posicionamiento; derecha accesos de
+// contacto. El logotipo NO va aquí (vive en el Header, debajo).
+// El horario se oculta en móvil (mobile.css → .topbar__extra).
+import { CONTACT, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+---
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__claim">{CONTACT.posicionamiento}</p>
+    <div class="topbar__contact">
+      <span class="topbar__extra">{CONTACT.horario}</span>
+      <a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+      <a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .topbar {
+    background: var(--color-ink);
+    color: var(--color-light);
+    font-size: 0.82rem;
+    min-height: var(--topbar-height);
+    display: flex;
+    align-items: center;
+  }
+  .topbar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .topbar__claim { margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .topbar__contact { display: flex; gap: 1rem; align-items: center; flex-shrink: 0; }
+  .topbar__contact a { color: var(--color-accent); text-decoration: none; font-weight: 600; }
+</style>

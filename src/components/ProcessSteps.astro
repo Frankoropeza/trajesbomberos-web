@@ -1,0 +1,36 @@
+---
+// ProcessSteps: proceso de trabajo en 4–5 pasos numerados sobre
+// fondo tinta — contraste que rompe la página y da ritmo.
+// Describe el proceso REAL, sin tiempos garantizados que no se cumplan.
+interface Paso { title: string; desc: string; }
+interface Props { pasos: Paso[]; }
+const { pasos } = Astro.props;
+---
+<div class="steps-grid">
+  {pasos.map((p, i) => (
+    <div class="step">
+      <span class="step__num">{String(i + 1).padStart(2, '0')}</span>
+      <h3>{p.title}</h3>
+      <p>{p.desc}</p>
+    </div>
+  ))}
+</div>
+
+<style>
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+  }
+  .step__num {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    margin-bottom: 0.4rem;
+  }
+  h3 { margin: 0 0 0.3rem; font-size: 1.02rem; color: var(--color-white); }
+  p { margin: 0; font-size: 0.88rem; color: #c9ccd1; }
+  @media (max-width: 1024px) { .steps-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .steps-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>

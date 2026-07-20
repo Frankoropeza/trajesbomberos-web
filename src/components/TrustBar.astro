@@ -1,0 +1,60 @@
+---
+// TrustBar: tira de pilares HONESTOS — ícono + título + frase.
+// Compromisos reales del negocio, NUNCA métricas inventadas
+// (nada de "+500 clientes" ni reseñas falsas).
+// Ícono por clave: shield · doc · chat · pin · check · clock
+type IconKey = 'shield' | 'doc' | 'chat' | 'pin' | 'check' | 'clock';
+interface Pilar { icon: IconKey; title: string; desc: string; }
+interface Props { pilares: Pilar[]; }
+const { pilares } = Astro.props;
+
+const ICONS: Record<IconKey, string> = {
+  shield: 'M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z',
+  doc: 'M6 2h9l5 5v15H6V2zm8 1v5h5',
+  chat: 'M4 4h16v12H8l-4 4V4z',
+  pin: 'M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5z',
+  check: 'M20 6L9 17l-5-5',
+  clock: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 5v5l4 2',
+};
+---
+<div class="trustbar">
+  <div class="container trustbar-grid">
+    {pilares.map((p) => (
+      <div class="trustbar__item">
+        <span class="trustbar__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d={ICONS[p.icon]} />
+          </svg>
+        </span>
+        <div>
+          <h3>{p.title}</h3>
+          <p>{p.desc}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .trustbar { background: var(--color-light); border-block: 1px solid var(--color-gray-light); padding-block: 1.8rem; }
+  .trustbar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  .trustbar__item { display: flex; gap: 0.8rem; align-items: flex-start; }
+  .trustbar__icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  h3 { margin: 0 0 0.15rem; font-size: 0.98rem; }
+  p { margin: 0; font-size: 0.85rem; color: var(--color-gray); }
+  @media (max-width: 1024px) { .trustbar-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>

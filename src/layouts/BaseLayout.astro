@@ -1,41 +1,76 @@
 ---
+// BaseLayout: metas por la regla de las 3 keywords + ÚNICO emisor
+// de JSON-LD (regla B3, via buildSchema). mobile.css se importa AL
+// FINAL del cascade para vencer estilos scoped.
 import { SITE } from '@config/site';
-import { buildSeo, type SeoInput } from '@lib/seo';
+import {
+  buildKeywordTitle,
+  buildKeywordDescription,
+  buildSchema,
+  metaAudit,
+  type SchemaInput,
+} from '@lib/seo';
+import Topbar from '@components/Topbar.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
+import WhatsAppFloat from '@components/WhatsAppFloat.astro';
 import '@styles/global.css';
+import '@styles/mobile.css';
 
-interface Props extends SeoInput {}
+interface Props extends SchemaInput {
+  title?: string;
+  description?: string;
+  path?: string;
+}
 
-const seo = buildSeo(Astro.props);
+const {
+  pageType,
+  faqs,
+  directoryItems,
+  title = buildKeywordTitle(),
+  description = buildKeywordDescription(),
+  path = '/',
+} = Astro.props;
+
+const canonical = new URL(path, SITE.url).href;
+const ogImage = new URL('/images/showcase/og-trajes-para-bombero.svg', SITE.url).href;
+const schemas = buildSchema({ pageType, faqs, directoryItems });
+
+// metaAudit valida la regla en build; avisa en consola sin romper.
+const audit = metaAudit(title, description);
+if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
 ---
 <!doctype html>
 <html lang={SITE.lang}>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{seo.title}</title>
-    <meta name="description" content={seo.description} />
-    <link rel="canonical" href={seo.canonical} />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" content="#c8102e" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />
-    <meta property="og:title" content={seo.title} />
-    <meta property="og:description" content={seo.description} />
-    <meta property="og:url" content={seo.canonical} />
-    <meta property="og:image" content={seo.image} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:locale" content={SITE.locale} />
     <meta name="twitter:card" content="summary_large_image" />
-    {seo.jsonLd.map((schema) => (
-      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    {schemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
     ))}
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+    <Topbar />
     <Header />
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <Footer />
+    <WhatsAppFloat />
   </body>
 </html>

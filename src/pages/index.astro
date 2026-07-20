@@ -1,9 +1,319 @@
 ---
+// L1 · Home — orden canónico ejemplos.mx:
+// Hero → SectionMenu → TrustBar → Catálogo → Spotlight → Empresa →
+// Beneficios → Guía de selección → Respaldo → Proceso → FAQ+Contacto.
+// Reseñas: OMITIDAS a propósito (regla dura: solo reseñas REALES con
+// permiso; se agregan cuando Frank las tenga).
+// Los datos de página se editan AQUÍ; los globales en src/config/site.ts.
 import BaseLayout from '@layouts/BaseLayout.astro';
+import Hero from '@components/Hero.astro';
+import SectionMenu from '@components/SectionMenu.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import CategoryCard from '@components/CategoryCard.astro';
+import CategoryFeature from '@components/CategoryFeature.astro';
+import TrustBar from '@components/TrustBar.astro';
+import RiskGuide from '@components/RiskGuide.astro';
+import NormsTable from '@components/NormsTable.astro';
+import ProcessSteps from '@components/ProcessSteps.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import { SITE, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+// --- Hero (H1 único con kw1; los CTAs viven en SectionMenu) ---
+const hero = {
+  title: 'Trajes para bombero y equipo de protección',
+  accent: 'para todo México',
+  subtitle:
+    'Trajes estructurales, forestales y de aproximación, cascos, botas, guantes y equipos de respiración. Cotiza por WhatsApp y recibe en tu estación.',
+  descRight: [
+    'Equipamos cuerpos de bomberos, brigadas industriales y unidades de protección civil con equipo de protección personal para combate de incendios. Manejamos el traje completo o piezas sueltas, según lo que tu corporación necesite.',
+    'Cotizamos por escrito, con factura, y te asesoramos para elegir tallas y configuraciones correctas antes de comprar. Envíos a todo México.',
+  ],
+};
+
+// --- TrustBar: compromisos reales, NUNCA métricas inventadas ---
+const pilares = [
+  { icon: 'chat', title: 'Atención directa', desc: 'Hablas con una persona, no con un bot. Respuesta por WhatsApp.' },
+  { icon: 'doc', title: 'Todo por escrito', desc: 'Cotización formal y factura por cada compra.' },
+  { icon: 'shield', title: 'Equipo de protección', desc: 'Producto diseñado para uso en combate de incendios.' },
+  { icon: 'pin', title: 'Cobertura nacional', desc: 'Envíos a cualquier estado de la República.' },
+] as const;
+
+// --- Beneficios (reusa CategoryCard; badge = dato corto honesto) ---
+const beneficios = [
+  {
+    title: 'Asesoría antes de comprar',
+    badge: 'Sin costo',
+    desc: 'Te ayudamos a definir tallas, configuraciones y piezas según el uso real de tu corporación.',
+    image: '/images/showcase/asesoria-equipo-bombero.svg',
+    imageAlt: 'Asesoría para elegir equipo de protección para bomberos',
+    chips: ['Tallas', 'Configuración', 'Uso real'],
+  },
+  {
+    title: 'Cotización por escrito',
+    badge: 'Formal',
+    desc: 'Documento formal con partidas, precios y condiciones — útil para compras de gobierno y licitaciones.',
+    image: '/images/showcase/cotizacion-por-escrito.svg',
+    imageAlt: 'Cotización formal por escrito de equipo para bomberos',
+    chips: ['Partidas', 'Precios', 'Condiciones'],
+  },
+  {
+    title: 'Factura en cada compra',
+    badge: 'CFDI',
+    desc: 'Facturamos todas las ventas, a corporaciones, empresas y particulares.',
+    image: '/images/showcase/factura-cfdi.svg',
+    imageAlt: 'Factura CFDI por compra de equipo para bomberos',
+    chips: ['CFDI', 'Empresas', 'Gobierno'],
+  },
+  {
+    title: 'Envíos a todo México',
+    badge: 'Nacional',
+    desc: 'Enviamos a estaciones, bases y domicilios en cualquier estado de la República.',
+    image: '/images/showcase/envios-todo-mexico.svg',
+    imageAlt: 'Envíos de equipo para bomberos a todo México',
+    chips: ['Paquetería', 'Estaciones', 'Domicilio'],
+  },
+  {
+    title: 'Piezas sueltas o traje completo',
+    badge: 'Flexible',
+    desc: 'Compra el conjunto completo o solo la pieza que necesitas reponer.',
+    image: '/images/showcase/piezas-sueltas-traje.svg',
+    imageAlt: 'Venta de piezas sueltas o traje completo para bombero',
+    chips: ['Conjunto', 'Reposición', 'Por pieza'],
+  },
+  {
+    title: 'Trato directo por WhatsApp',
+    badge: 'Respuesta rápida',
+    desc: 'Cotiza, pregunta y da seguimiento a tu pedido desde el mismo chat.',
+    image: '/images/showcase/atencion-whatsapp.svg',
+    imageAlt: 'Atención y cotización de equipo para bomberos por WhatsApp',
+    chips: ['Cotización', 'Seguimiento', 'Directo'],
+  },
+];
+
+// --- Guía de selección (SEO cola larga; califica al prospecto) ---
+const guiaColumns = ['Tipo de traje', 'Para quién', 'Protege contra', 'Complementos'];
+const guiaRows = [
+  ['Estructural', 'Combate de incendios en edificaciones', 'Calor, flama y humedad en interiores', 'Casco, botas, guantes, monja, SCBA'],
+  ['Forestal', 'Incendios de vegetación y trabajo en campo', 'Calor radiante y desgaste en jornadas largas', 'Casco forestal, goggles, guantes, botas'],
+  ['Aproximación', 'Trabajos cerca de calor radiante intenso', 'Radiación térmica extrema (aluminizado)', 'Capucha aluminizada, guantes, botas'],
+];
+const guiaNote =
+  'Si no estás seguro de qué configuración necesita tu corporación, escríbenos: te asesoramos sin costo antes de cotizar.';
+
+// --- Respaldo (regla: cero datos fabricados; TODO(Frank): completar
+// con las normas/certificaciones REALES de cada línea de producto) ---
+const normasColumns: [string, string, string] = ['Respaldo', 'Qué cubre', 'Aplica a'];
+const normasRows: [string, string, string][] = [
+  ['Cotización por escrito', 'Partidas, precios y condiciones de entrega', 'Todas las compras'],
+  ['Factura CFDI', 'Comprobante fiscal de cada venta', 'Corporaciones, empresas y particulares'],
+  ['Especificaciones del fabricante', 'Ficha técnica y normas aplicables de cada producto', 'Se entrega por producto al cotizar'],
+];
+const normasNote =
+  'Las normas y certificaciones específicas (p. ej. NFPA) dependen de cada producto y marca: se indican en la ficha técnica que te compartimos al cotizar.';
+
+// --- Proceso (describe el proceso REAL, sin tiempos garantizados) ---
+const pasos = [
+  { title: 'Cuéntanos', desc: 'Escríbenos por WhatsApp qué equipo necesitas y para cuántos elementos.' },
+  { title: 'Asesoría', desc: 'Definimos juntos tallas, configuraciones y alternativas según tu presupuesto.' },
+  { title: 'Cotización', desc: 'Recibes cotización formal por escrito, con partidas y condiciones.' },
+  { title: 'Pedido', desc: 'Confirmas, facturamos y preparamos tu pedido.' },
+  { title: 'Entrega', desc: 'Enviamos a tu estación o domicilio en cualquier estado y damos seguimiento.' },
+];
+
+// --- FAQ (respuestas honestas, sin promesas que no se cumplan) ---
+const faqs = [
+  {
+    q: '¿Venden a particulares o solo a corporaciones?',
+    a: 'Vendemos a cuerpos de bomberos, protección civil, brigadas industriales, empresas y también a particulares. Facturamos todas las compras.',
+  },
+  {
+    q: '¿Cuánto tarda la entrega?',
+    a: 'Depende del producto y de la existencia: hay piezas de entrega inmediata y otras que se fabrican o importan sobre pedido. El tiempo exacto te lo confirmamos por escrito en la cotización.',
+  },
+  {
+    q: '¿Cómo sé qué talla pedir?',
+    a: 'Antes de cotizar te compartimos la guía de tallas de cada fabricante y te asesoramos para tomar medidas correctamente. Así evitamos cambios y retrasos.',
+  },
+  {
+    q: '¿Los trajes cumplen normas como NFPA?',
+    a: 'Cada producto tiene sus propias certificaciones según marca y modelo. En la ficha técnica que te compartimos al cotizar vienen las normas específicas que cumple.',
+  },
+  {
+    q: '¿Puedo comprar solo una pieza (casco, botas, guantes)?',
+    a: 'Sí. Manejamos el traje completo o piezas sueltas para reposición, sin mínimo de compra.',
+  },
+  {
+    q: '¿Participan en licitaciones y compras de gobierno?',
+    a: 'Sí. Entregamos cotización formal por escrito, ficha técnica y factura CFDI, con los requisitos que tu área de compras necesite.',
+  },
+];
+
+// ItemList del catálogo — lo emite BaseLayout (regla B3)
+const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
+  name: c.nombre,
+  url: `${SITE.url}/#catalogo`,
+}));
+
+// --- Spotlight de categoría clave ---
+const spotlight = {
+  eyebrow: 'Categoría destacada',
+  title: 'Trajes estructurales: la protección principal de tu corporación',
+  description:
+    'El traje estructural es la compra más importante del equipamiento. Te ayudamos a configurarlo completo: chaquetón, pantalón y sus complementos, en las tallas correctas.',
+  features: [
+    'Chaquetón y pantalón con capas exterior, térmica y de humedad',
+    'Configuración por pieza o conjunto completo',
+    'Guía de tallas del fabricante antes de pedir',
+    'Ficha técnica con normas específicas al cotizar',
+  ],
+  brands: ['Estructural', 'Chaquetón', 'Pantalón', 'Monja', 'Complementos'],
+  images: [
+    { src: '/images/productos/traje-estructural-para-bombero.svg', alt: 'Traje estructural para bombero completo' },
+    { src: '/images/productos/casco-para-bombero.svg', alt: 'Casco para bombero estructural' },
+    { src: '/images/productos/guantes-para-bombero.svg', alt: 'Guantes estructurales para bombero' },
+  ],
+};
 ---
-<BaseLayout pageType="home" path="/">
-  <section class="section container">
-    <h1>Trajes y Equipo para Bomberos en México</h1>
-    <p>Sitio en construcción — el index se desarrolla en la siguiente fase.</p>
+<BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
+  <!-- 1 · Hero: presenta -->
+  <Hero {...hero} />
+
+  <!-- 2 · SectionMenu: convierte -->
+  <SectionMenu />
+
+  <!-- 3 · TrustBar: pilares honestos -->
+  <TrustBar pilares={[...pilares]} />
+
+  <!-- 4 · Catálogo (vitrina data-driven desde PRODUCT_CATEGORIES) -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Catálogo"
+        title="Equipo para bomberos por categoría"
+        description="Ocho líneas de producto para equipar a tu corporación de pies a cabeza. Entra a la que necesitas o cotiza directo por WhatsApp."
+      />
+      <div class="grid-cards">
+        {PRODUCT_CATEGORIES.map((cat, i) => (
+          <CategoryCard
+            href={waUrl(WA_MESSAGES.categoria(cat.nombre))}
+            external
+            image={cat.image}
+            imageAlt={cat.imageAlt}
+            title={cat.nombre}
+            desc={cat.desc}
+            badge={cat.badge}
+            chips={[...cat.chips]}
+            ctaLabel="Cotizar"
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Spotlight de categoría clave -->
+  <section class="section section--alt">
+    <div class="container">
+      <CategoryFeature
+        {...spotlight}
+        ctaLabel="Cotizar traje estructural"
+        ctaHref={waUrl(WA_MESSAGES.categoria('Trajes estructurales'))}
+        external
+      />
+    </div>
+  </section>
+
+  <!-- 6 · La empresa (hechos, no adjetivos; sin cifras inventadas) -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <SectionHeading
+        eyebrow="La empresa"
+        title="Qué hacemos y cómo lo hacemos"
+        duo={[
+          'Vendemos equipo de protección personal para combate de incendios: trajes estructurales, forestales y de aproximación, cascos, botas, guantes, equipos de respiración y accesorios, con envíos a todo México.',
+          'Trabajamos con asesoría directa: entendemos qué necesita tu corporación, te ayudamos con tallas y configuraciones, y formalizamos todo por escrito — cotización, ficha técnica y factura.',
+        ]}
+      />
+    </div>
+  </section>
+
+  <!-- 7 · Beneficios: di por qué elegirte -->
+  <section class="section section--alt" id="beneficios">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Por qué elegirnos"
+        title="Beneficios concretos, no adjetivos"
+        description="Seis razones prácticas para cotizar con nosotros."
+      />
+      <div class="grid-cards grid-cards--3">
+        {beneficios.map((b, i) => (
+          <CategoryCard
+            href={waUrl(WA_MESSAGES.informacion)}
+            external
+            image={b.image}
+            imageAlt={b.imageAlt}
+            title={b.title}
+            desc={b.desc}
+            badge={b.badge}
+            chips={b.chips}
+            ctaLabel="Saber más"
+            index={i + 8}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Guía de selección -->
+  <section class="section" id="guia">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Guía de selección"
+        title="Elige el traje según tu operación"
+        description="Tres familias de trajes para tres tipos de riesgo. Compara y cotiza la que corresponde a tu corporación."
+      />
+      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} />
+    </div>
+  </section>
+
+  <!-- 9 · Respaldo -->
+  <section class="section section--alt">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Respaldo"
+        title="Lo que te respalda al comprar"
+      />
+      <NormsTable columns={normasColumns} rows={normasRows} note={normasNote} />
+    </div>
+  </section>
+
+  <!-- 10 · Proceso (fondo tinta) -->
+  <section class="section section--dark" id="proceso">
+    <div class="container">
+      <SectionHeading
+        dark
+        eyebrow="Cómo trabajamos"
+        title="De tu mensaje al equipo entregado"
+      />
+      <ProcessSteps pasos={pasos} />
+    </div>
+  </section>
+
+  <!-- 11 · FAQ + Contacto (sticky en desktop) -->
+  <section class="section" id="faq">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Preguntas frecuentes"
+        title="Resolvemos tus dudas antes de cotizar"
+      />
+      <FAQWithContact items={faqs} />
+    </div>
   </section>
 </BaseLayout>
+
+<style>
+  .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 1024px) { .grid-cards--3 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .grid-cards--3 { grid-template-columns: 1fr; } }
+</style>

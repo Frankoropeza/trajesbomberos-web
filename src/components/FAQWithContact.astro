@@ -1,0 +1,138 @@
+---
+// FAQWithContact: acordeón de preguntas + tarjeta de contacto
+// STICKY en desktop; en móvil sube al principio (order:-1, en
+// mobile.css). El formulario NO manda correos ni golpea backend:
+// arma un mensaje y abre WhatsApp con el texto pre-cargado.
+// Campos accesibles (for/id), inputs a 16px (no-zoom iOS, en
+// mobile.css), honeypot. NUNCA hardcodea un número (regla D4).
+// El schema FAQPage NO se emite aquí (regla B3: BaseLayout).
+import { CONTACT } from '@config/site';
+
+interface Props {
+  items: { q: string; a: string }[];
+}
+const { items } = Astro.props;
+
+const TIPOS = [
+  'Cuerpo de bomberos',
+  'Protección civil',
+  'Brigada industrial',
+  'Empresa privada',
+  'Gobierno / licitación',
+  'Particular',
+  'Otro',
+];
+---
+<div class="faqc-grid">
+  <div class="faqc-list">
+    {items.map((item, i) => (
+      <details class="faqc-item" open={i === 0}>
+        <summary><strong>{item.q}</strong></summary>
+        <p>{item.a}</p>
+      </details>
+    ))}
+  </div>
+
+  <aside class="faqc-card">
+    <h3>¿Tu duda no está aquí?</h3>
+    <p class="faqc-card__lead">Te respondemos por WhatsApp en minutos.</p>
+    <form class="cform" id="faq-contact-form">
+      <div class="cform__field">
+        <label for="cf-nombre">Nombre (opcional)</label>
+        <input type="text" id="cf-nombre" name="nombre" autocomplete="name" />
+      </div>
+      <div class="cform__field">
+        <label for="cf-tipo">Tipo de organización*</label>
+        <select id="cf-tipo" name="tipo" required>
+          <option value="" disabled selected>Elige una opción</option>
+          {TIPOS.map((t) => <option value={t}>{t}</option>)}
+        </select>
+      </div>
+      <div class="cform__field">
+        <label for="cf-mensaje">Tu pregunta o necesidad*</label>
+        <textarea id="cf-mensaje" name="mensaje" rows="4" maxlength="500" required></textarea>
+        <small class="cform__counter"><span id="cf-count">0</span>/500</small>
+      </div>
+      <!-- honeypot -->
+      <div class="cform__hp" aria-hidden="true">
+        <label for="cf-web">Sitio web</label>
+        <input type="text" id="cf-web" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+      <button type="submit" class="btn btn--wa cform__submit">Enviar por WhatsApp</button>
+      <p class="cform__note">Al pulsar el botón se abre WhatsApp con tu mensaje. No guardamos ningún dato.</p>
+      <a class="cform__tel" href={`tel:${CONTACT.telefonoHref}`}>Prefiero llamar directamente</a>
+    </form>
+  </aside>
+</div>
+
+<script>
+  import { CONTACT } from '@config/site';
+
+  const form = document.getElementById('faq-contact-form') as HTMLFormElement | null;
+  const msg = document.getElementById('cf-mensaje') as HTMLTextAreaElement | null;
+  const count = document.getElementById('cf-count');
+
+  msg?.addEventListener('input', () => {
+    if (count) count.textContent = String(msg.value.length);
+  });
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    if (data.get('website')) return; // honeypot
+    const nombre = String(data.get('nombre') || '').trim();
+    const tipo = String(data.get('tipo') || '').trim();
+    const mensaje = String(data.get('mensaje') || '').trim();
+    if (!tipo || !mensaje) return;
+    const text = [
+      nombre ? `Hola, soy ${nombre}.` : 'Hola.',
+      `Organización: ${tipo}.`,
+      mensaje,
+    ].join(' ');
+    window.open(`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  });
+</script>
+
+<style>
+  .faqc-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .faqc-item {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius);
+    margin-bottom: 0.8rem;
+    padding: 0 1.1rem;
+  }
+  .faqc-item summary { padding: 1rem 0; cursor: pointer; font-size: 1rem; }
+  .faqc-item p { margin: 0 0 1rem; color: var(--color-gray); }
+  .faqc-card {
+    position: sticky;
+    top: calc(var(--header-height) + 1rem);
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+  }
+  .faqc-card h3 { margin: 0 0 0.2rem; }
+  .faqc-card__lead { margin: 0 0 1.2rem; color: var(--color-gray); }
+  .cform__field { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.9rem; }
+  .cform__field label { font-weight: 600; font-size: 0.88rem; }
+  .cform input, .cform select, .cform textarea {
+    font: inherit;
+    font-size: 16px;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius);
+    background: var(--color-white);
+  }
+  .cform__counter { align-self: flex-end; color: var(--color-gray); font-size: 0.75rem; }
+  .cform__hp { position: absolute; left: -9999px; }
+  .cform__submit { width: 100%; }
+  .cform__note { font-size: 0.78rem; color: var(--color-gray); margin: 0.7rem 0; }
+  .cform__tel { display: block; text-align: center; font-size: 0.88rem; font-weight: 600; }
+</style>

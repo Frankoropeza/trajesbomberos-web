@@ -1,0 +1,47 @@
+---
+// RiskGuide: tabla de guía de selección (3–4 filas) con nota y CTA.
+// Encabezados configurables vía prop columns. Responsive con
+// scroll horizontal en móvil. Oro para SEO de cola larga y para
+// calificar al prospecto antes de cotizar.
+import { WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+interface Props {
+  columns: string[];
+  rows: string[][];
+  note?: string;
+  ctaLabel?: string;
+}
+const { columns, rows, note, ctaLabel = 'Cotizar por WhatsApp' } = Astro.props;
+---
+<div class="riskguide">
+  <div class="riskguide__scroll" tabindex="0" role="region" aria-label="Guía de selección">
+    <table>
+      <thead>
+        <tr>{columns.map((c) => <th scope="col">{c}</th>)}</tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr>
+            {row.map((cell, i) =>
+              i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>
+            )}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  {note && <p class="riskguide__note">{note}</p>}
+  <a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">{ctaLabel}</a>
+</div>
+
+<style>
+  .riskguide__scroll { overflow-x: auto; margin-bottom: 1.2rem; }
+  table { width: 100%; border-collapse: collapse; min-width: 640px; background: var(--color-white); border-radius: var(--radius); overflow: hidden; }
+  th, td { padding: 0.9rem 1rem; text-align: left; border-bottom: 1px solid var(--color-gray-light); font-size: 0.92rem; }
+  thead th { background: var(--color-ink); color: var(--color-white); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody th { color: var(--color-primary); font-weight: 700; white-space: nowrap; }
+  td { color: var(--color-gray); }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+  .riskguide__note { color: var(--color-gray); font-size: 0.88rem; margin: 0 0 1.2rem; }
+</style>

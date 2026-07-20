@@ -1,0 +1,63 @@
+/* ============================================================
+   mobile.css · TODO el comportamiento móvil vive en UNA sola
+   hoja, cargada AL FINAL del cascade (BaseLayout) para vencer
+   a los estilos scoped con !important quirúrgico.
+   Breakpoints unificados: 1024 · 768 · 640 · 480 · 380
+   ============================================================ */
+
+/* mobile.css · área táctil mínima 44px (Apple HIG · WCAG 2.5.5). */
+@media (max-width: 1024px) {
+  .mob-direct, .mob-item__trigger { min-height: 48px; }
+  .mob-item__link { min-height: 44px; display: flex; align-items: center; }
+  a, button, label { -webkit-tap-highlight-color: rgba(200, 16, 46, .15); }
+}
+
+@media (max-width: 768px) {
+  .section { padding-block: 2.75rem !important; }
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .feature-grid { grid-template-columns: 1fr !important; }
+  .detail-grid { grid-template-columns: 1fr !important; }
+  .faqc-grid { grid-template-columns: 1fr !important; }
+  .faqc-card { order: -1; position: static !important; }
+  .footer-cols { grid-template-columns: 1fr 1fr !important; }
+}
+
+/* mobile.css · formularios sin zoom en iOS. */
+@media (max-width: 640px) {
+  .cform input, .cform textarea, .cform select { font-size: 16px; min-height: 48px; }
+  .cform__submit { width: 100%; min-height: 50px; }
+  .topbar__extra { display: none !important; }   /* horario oculto en móvil */
+  .section-menu__list { flex-direction: column !important; }
+  .section-menu__list a { width: 100% !important; }
+}
+
+@media (max-width: 560px) {
+  .btn { width: 100%; }
+  .hero-ctas { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .footer-cols { grid-template-columns: 1fr !important; }
+  .trustbar-grid { grid-template-columns: 1fr !important; }
+  .steps-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 380px) {
+  h1 { font-size: 1.6rem !important; }
+  .container { padding-inline: 0.9rem; }
+}
+
+/* mobile.css · respeta el notch/gestos iOS y ancla el FAB. */
+@supports (padding: max(0px)) {
+  @media (max-width: 768px) {
+    .container {
+      padding-left:  max(var(--container-px), env(safe-area-inset-left));
+      padding-right: max(var(--container-px), env(safe-area-inset-right));
+    }
+  }
+}
+@media (max-width: 640px) {
+  .wa-float { width: 52px; height: 52px;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    right:  max(1rem, env(safe-area-inset-right)); }
+}
