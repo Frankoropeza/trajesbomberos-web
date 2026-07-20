@@ -19,7 +19,7 @@ a { color: var(--color-primary); }
 
 .container {
   max-width: var(--container-max);
-  width: 90%;
+  width: 100%;
   margin-inline: auto;
   padding-inline: var(--container-px);
 }
@@ -34,6 +34,14 @@ a { color: var(--color-primary); }
   z-index: 200;
 }
 .skip-link:focus { left: 0; }
+
+/* Full-width sin sacrificar legibilidad: el layout ocupa el 100%,
+   pero los bloques de texto largo respetan una medida de lectura. */
+.hero-subtitle,
+.hero-right p,
+.sec-heading__desc,
+.sec-heading__duo p,
+.feature-desc { max-width: 72ch; }
 
 .section { padding-block: 4rem; }
 .section--alt { background: var(--color-light); }

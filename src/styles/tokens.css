@@ -15,8 +15,10 @@
 
   --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  --container-max: 1160px;
-  --container-px: 1.25rem;
+  /* Sitio full-width: el contenido ocupa el 100% del viewport.
+     El aire lateral lo da --container-px (fluido con clamp). */
+  --container-max: 100%;
+  --container-px: clamp(1rem, 3vw, 3rem);
   --header-height: 68px;
   --topbar-height: 38px;
   --radius: 10px;
