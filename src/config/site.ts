@@ -17,11 +17,11 @@ export const SITE = {
   allowSelfReviews: false, // regla B4: sin reseñas propias
 } as const;
 
-// Regla de las 3 keywords
+// Regla de las 3 keywords · kw1 = principal, va primero y sin marca
 export const KEYWORDS = [
-  'trajes para bombero',
-  'equipo para bomberos',
-  'todo México',
+  'trajes para bomberos',      // kw1 · principal
+  'equipo contra incendios',   // kw2 · secundaria
+  'México',                    // kw3 · variante geográfica
 ] as const;
 
 export const CONTACT = {

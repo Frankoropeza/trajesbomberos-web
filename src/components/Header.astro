@@ -29,7 +29,7 @@ import { waUrl } from '@lib/wa';
         <span class="header-phone__label">Llámanos</span>
         <span class="header-phone__num">{CONTACT.telefono}</span>
       </a>
-      <a class="btn header-cta" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">Cotizar</a>
+      <a class="btn header-cta" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar</a>
     </div>
 
     <button class="nav-toggle" aria-expanded="false" aria-controls="mob-menu" aria-label="Abrir menú">
@@ -44,7 +44,7 @@ import { waUrl } from '@lib/wa';
       ))}
     </ul>
     <div class="mob-actions">
-      <a class="btn btn--wa mob-direct" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      <a class="btn btn--wa mob-direct" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
       <a class="btn btn--ghost mob-direct" href={`tel:${CONTACT.telefonoHref}`}>Llamar {CONTACT.telefono}</a>
       <p class="mob-horario">{CONTACT.horario}</p>
     </div>

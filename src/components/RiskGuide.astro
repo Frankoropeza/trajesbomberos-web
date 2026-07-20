@@ -32,7 +32,7 @@ const { columns, rows, note, ctaLabel = 'Cotizar por WhatsApp' } = Astro.props;
     </table>
   </div>
   {note && <p class="riskguide__note">{note}</p>}
-  <a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener">{ctaLabel}</a>
+  <a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">{ctaLabel}</a>
 </div>
 
 <style>

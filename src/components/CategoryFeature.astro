@@ -32,7 +32,7 @@ const { eyebrow, title, description, features, brands = [], ctaLabel, ctaHref, i
         {brands.map((b) => <span class="chip">{b}</span>)}
       </div>
     )}
-    <a class="btn" href={ctaHref} target={external ? '_blank' : undefined} rel={external ? 'noopener' : undefined}>{ctaLabel}</a>
+    <a class="btn" href={ctaHref} target={external ? '_blank' : undefined} rel={external ? 'noopener nofollow' : undefined}>{ctaLabel}</a>
   </div>
   <div class="feature-gallery">
     {images.slice(0, 3).map((img, i) => (

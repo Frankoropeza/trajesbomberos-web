@@ -19,7 +19,7 @@ export function buildKeywordTitle(kws: readonly string[] = KEYWORDS): string {
 
 // description abre con kw1 y teje las 3 sin sobreoptimizar, ≤160
 export function buildKeywordDescription(): string {
-  return 'Trajes para bombero estructurales, forestales y de aproximación. Equipo para bomberos: cascos, botas, guantes y SCBA con envíos a todo México. Cotiza hoy.';
+  return 'Trajes para bomberos: estructural, brigadista, forestal y de aproximación. Equipo contra incendios con ficha técnica, factura y envíos a todo México.';
 }
 
 export interface MetaAuditResult {
@@ -49,11 +49,23 @@ export function organizationSchema(): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${SITE.url}/#organization`,
     name: SITE.legalName,
+    alternateName: SITE.name,
     url: SITE.url,
+    description:
+      'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
     telephone: CONTACT.telefonoHref,
     email: CONTACT.email,
-    areaServed: 'MX',
+    areaServed: { '@type': 'Country', name: 'México' },
+    knowsAbout: [
+      'Trajes para bomberos',
+      'Equipo de protección personal contra incendios',
+      'NFPA 1970',
+      'NFPA 1850',
+      'NOM-017-STPS-2024',
+      'NOM-002-STPS-2010',
+    ],
   };
 }
 
@@ -61,9 +73,11 @@ function webSiteSchema(): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': `${SITE.url}/#website`,
     name: SITE.name,
     url: SITE.url,
     inLanguage: SITE.lang,
+    publisher: { '@id': `${SITE.url}/#organization` },
   };
 }
 
