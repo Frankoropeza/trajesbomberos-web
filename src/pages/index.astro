@@ -22,33 +22,34 @@ import NormsTable from '@components/NormsTable.astro';
 import ProcessSteps from '@components/ProcessSteps.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import FactList from '@components/FactList.astro';
-import { SITE, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
+import BrandGrid from '@components/BrandGrid.astro';
+import { SITE, PRODUCT_CATEGORIES, COMPLEMENTOS, MARCAS_TRAJE, MARCAS_MATERIAL, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 
 const hero = {
-  eyebrow: 'Equipo de protección personal contra incendios',
-  title: 'Trajes para bombero y equipo de protección',
-  accent: 'para todo México',
+  eyebrow: 'Especialistas en ropa de protección contra incendios',
+  title: 'Trajes para bombero',
+  accent: 'en todo México',
   subtitle:
-    'Estructural, brigadista, forestal, aproximación y rescate. Chaquetón, pantalonera, casco, botas, guantes, monja y ERA. Cotiza por WhatsApp y recibe en tu estación.',
+    'Estructural, brigadista, forestal, aproximación, entrada y extricación. Chaquetón y pantalonera con el composite que pide tu operación. Cotiza por WhatsApp y recibe en tu estación.',
   descRight: [
-    'Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos y unidades de protección civil que compran por licitación, y cuerpos voluntarios que reponen pieza por pieza.',
-    'Asesoramos antes de cotizar: qué familia de traje corresponde a tu operación, qué capas debe llevar, cómo tomar tallas y qué documentación necesita tu expediente de compra.',
+    'Nos dedicamos a una sola cosa: el traje. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos y unidades de protección civil que compran por licitación, y cuerpos voluntarios que reponen pieza por pieza.',
+    'Asesoramos antes de cotizar: qué familia de traje corresponde a tu operación, qué capas debe llevar el composite, cómo tomar tallas y qué documentación necesita tu expediente de compra.',
   ],
 };
 
 const pilares = [
-  { icon: 'chat' as const, title: 'Asesoría técnica real', desc: 'Te decimos qué necesitas y qué no, aunque implique venderte menos.' },
+  { icon: 'shield' as const, title: 'Solo trajes', desc: 'Una sola especialidad. No vendemos de todo un poco.' },
   { icon: 'doc' as const, title: 'Ficha técnica por partida', desc: 'Composite, TPP, THL y norma por escrito antes de que compres.' },
-  { icon: 'shield' as const, title: 'Norma vigente, no la de hace 8 años', desc: 'Trabajamos sobre NFPA 1970, que sustituyó a la NFPA 1971.' },
+  { icon: 'chat' as const, title: 'Norma vigente, no la de hace 8 años', desc: 'Trabajamos sobre NFPA 1970, que sustituyó a la NFPA 1971.' },
   { icon: 'pin' as const, title: 'Cobertura nacional', desc: 'Envíos a estación, base o domicilio en cualquier estado.' },
 ];
 
 const hechos = [
-  { label: 'Familias de producto', value: '11 líneas de EPP' },
+  { label: 'Especialidad', value: '6 familias de traje' },
   { label: 'Cobertura', value: 'Los 32 estados' },
   { label: 'Comprobante', value: 'Factura CFDI 4.0' },
-  { label: 'Compra mínima', value: 'Sin mínimo: por pieza o combo' },
+  { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
 ];
 
 // --- Spotlight: el hueco #1 del mercado ---------------------
@@ -197,13 +198,13 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
-  <!-- Catálogo -->
+  <!-- Catálogo: SOLO trajes -->
   <section class="section section--alt" id="catalogo">
     <div class="container">
       <SectionHeading
-        eyebrow="Catálogo"
-        title="Once líneas de equipo de protección contra incendios"
-        description="De la cabeza a los pies, más el equipo de respiración y la herramienta. Cotiza la línea completa o la pieza que necesitas reponer."
+        eyebrow="Trajes"
+        title="Seis familias de traje para seis tipos de riesgo"
+        description="Nos especializamos en ropa de protección para bombero. Cada familia responde a una operación distinta y no son intercambiables."
       />
       <div class="grid-cards">
         {PRODUCT_CATEGORIES.map((cat, i) => (
@@ -221,6 +222,18 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
           />
         ))}
       </div>
+
+      <div class="complementos">
+        <p class="complementos__intro">
+          <strong>Complementos del conjunto.</strong> No son nuestra línea, pero los cotizamos junto al traje
+          para cerrar el equipamiento del elemento:
+        </p>
+        <ul class="complementos__list">
+          {COMPLEMENTOS.map((c) => (
+            <li><strong>{c.nombre}</strong> — {c.nota}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -236,8 +249,26 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
+  <!-- Marcas: referencia técnica, NO afirmación de distribución -->
+  <section class="section section--alt" id="marcas">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Marcas"
+        title="Las marcas que se especifican en el mercado"
+        description="Referencia técnica para que redactes tu pliego o tu requisición. Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación."
+      />
+      <BrandGrid titulo="Fabricantes de traje" marcas={MARCAS_TRAJE} />
+      <BrandGrid titulo="Materiales del composite" marcas={MARCAS_MATERIAL} />
+      <p class="marcas__nota">
+        Esta lista es orientativa del mercado y no implica representación exclusiva. La certificación
+        de un traje corresponde al conjunto completo y al fabricante que lo lista ante el organismo
+        certificador, no a la tela por separado: es la distinción que conviene verificar en cualquier oferta.
+      </p>
+    </div>
+  </section>
+
   <!-- Guía de selección -->
-  <section class="section section--alt" id="guia">
+  <section class="section" id="guia">
     <div class="container">
       <SectionHeading
         eyebrow="Cómo elegir"
@@ -249,7 +280,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- Normas -->
-  <section class="section" id="normas">
+  <section class="section section--alt" id="normas">
     <div class="container">
       <SectionHeading
         eyebrow="Normas"
@@ -261,7 +292,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- Vida útil -->
-  <section class="section section--alt" id="vida-util">
+  <section class="section" id="vida-util">
     <div class="container">
       <SectionHeading
         eyebrow="Vida útil y servicio"
@@ -273,14 +304,14 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- La empresa -->
-  <section class="section" id="nosotros">
+  <section class="section section--alt" id="nosotros">
     <div class="container">
       <SectionHeading
         eyebrow="La empresa"
-        title="Qué hacemos y cómo lo hacemos"
+        title="Una sola especialidad: el traje"
         duo={[
-          'Vendemos equipo de protección personal contra incendios: trajes estructurales, de brigadista, forestales, de aproximación y de rescate, más cascos, botas, guantes, monjas, equipos de respiración y herramienta. Envíos a todo México.',
-          'Trabajamos con asesoría técnica antes de la venta: qué familia de traje corresponde, qué capas debe llevar, cómo tomar tallas y qué documentación necesita tu expediente de compra. Todo por escrito: cotización, ficha técnica y factura.',
+          'Vendemos ropa de protección para bombero: trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación. No intentamos venderte de todo un poco; los complementos los cotizamos para cerrar el conjunto, pero el traje es lo que dominamos. Envíos a todo México.',
+          'Asesoría técnica antes de la venta: qué familia corresponde a tu operación, qué capas debe llevar el composite, cómo tomar tallas y qué documentación necesita tu expediente de compra. Todo por escrito: cotización, ficha técnica y factura.',
         ]}
       />
       <FactList facts={hechos} />
@@ -310,3 +341,46 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .complementos {
+    margin-top: 2.5rem;
+    padding-top: 1.8rem;
+    border-top: var(--border);
+  }
+  .complementos__intro { margin: 0 0 1rem; color: var(--color-gray); max-width: 72ch; }
+  .complementos__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .complementos__list li {
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: 0.88rem;
+    color: var(--color-gray);
+  }
+  .complementos__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 5px;
+    height: 5px;
+    background: var(--color-primary);
+  }
+  .complementos__list strong { color: var(--color-dark); }
+  .marcas__nota {
+    margin: 2rem 0 0;
+    padding-top: 1.4rem;
+    border-top: var(--border);
+    font-size: 0.86rem;
+    color: var(--color-gray);
+    max-width: 92ch;
+  }
+  @media (max-width: 900px) { .complementos__list { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .complementos__list { grid-template-columns: 1fr; } }
+</style>

@@ -44,8 +44,8 @@ export const WA_MESSAGES = {
 } as const;
 
 export const NAV = [
-  { label: 'Catálogo', href: '/#catalogo' },
-  { label: 'Quién compra', href: '/#segmentos' },
+  { label: 'Trajes', href: '/#catalogo' },
+  { label: 'Marcas', href: '/#marcas' },
   { label: 'Cómo elegir', href: '/#guia' },
   { label: 'Normas', href: '/#normas' },
   { label: 'Vida útil', href: '/#vida-util' },
@@ -108,7 +108,10 @@ export const SEGMENTOS: Segmento[] = [
 ];
 
 // ============================================================
-// CATÁLOGO — 10 familias reales con terminología mexicana.
+// CATÁLOGO — SOLO TRAJES. El sitio se dedica exclusivamente a
+// ropa de protección para bombero; los complementos (casco,
+// monja, botas, guantes, ERA) se cotizan junto al conjunto pero
+// NO son línea propia. Ver COMPLEMENTOS más abajo.
 // ============================================================
 export interface ProductCategory {
   slug: string;
@@ -148,11 +151,19 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
   },
   {
     slug: 'traje-aproximacion',
-    nombre: 'Aproximación y entrada',
-    desc: 'Aluminizados. Aproximación protege del calor radiante cerca de la flama; entrada permite ingreso breve a la flama. No son intercambiables.',
+    nombre: 'Trajes de aproximación',
+    desc: 'Aluminizados para trabajo prolongado cerca de calor radiante intenso: ARFF, refinería y colada de metal. Conservan movilidad.',
     image: '/images/productos/traje-aproximacion-aluminizado-bombero.svg',
     imageAlt: 'Traje aluminizado de aproximación para calor radiante',
     chips: ['Aluminizado', 'ARFF', 'Metalúrgica'],
+  },
+  {
+    slug: 'traje-entrada',
+    nombre: 'Trajes de entrada',
+    desc: 'Aluminizado multicapa para ingreso breve a la flama en horno o incidente térmico severo. No se sustituye con uno de aproximación.',
+    image: '/images/productos/traje-entrada-penetracion-flama.svg',
+    imageAlt: 'Traje de entrada o penetración a la flama',
+    chips: ['Penetración', 'Multicapa', 'Uso corto'],
   },
   {
     slug: 'traje-extricacion',
@@ -162,61 +173,60 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     imageAlt: 'Traje de extricación para rescate vehicular y técnico',
     chips: ['Corte', 'Patógenos', 'Ligero'],
   },
-  {
-    slug: 'cascos',
-    nombre: 'Cascos',
-    desc: 'Americano tradicional, americano moderno y jet europeo. La compatibilidad con la máscara del ERA se verifica antes de comprar.',
-    image: '/images/productos/casco-bombero-tradicional-jet.svg',
-    imageAlt: 'Cascos para bombero estilo tradicional y jet',
-    chips: ['Tradicional', 'Jet', 'Visor'],
-  },
-  {
-    slug: 'botas',
-    nombre: 'Botas',
-    desc: 'Hule y piel. La estructural lleva membrana impermeable, puntera y plantilla; la forestal va sin puntera de acero por transmisión de calor.',
-    image: '/images/productos/botas-bombero-hule-piel.svg',
-    imageAlt: 'Botas para bombero de hule y de piel',
-    chips: ['Hule', 'Piel', 'Caña 14"'],
-  },
-  {
-    slug: 'guantes',
-    nombre: 'Guantes',
-    desc: 'Tres familias que no se sustituyen entre sí: estructural de tres capas, extricación con destreza y forestal ligero.',
-    image: '/images/productos/guantes-bombero-estructural-extricacion.svg',
-    imageAlt: 'Guantes de bombero estructural y de extricación',
-    chips: ['Estructural', 'Extricación', 'Forestal'],
-  },
-  {
-    slug: 'monjas',
-    nombre: 'Monjas y capuchas',
-    desc: 'Monja tradicional de Nomex y capucha barrera de partículas, que bloquea partículas submicrónicas del humo en cuello y mandíbula.',
-    image: '/images/productos/monja-capucha-barrera-particulas-bombero.svg',
-    imageAlt: 'Monja o capucha barrera de partículas para bombero',
-    badge: 'Salud ocupacional',
-    chips: ['Nomex', 'Partículas', 'Escafandra'],
-  },
-  {
-    slug: 'era-scba',
-    nombre: 'ERA (equipo de respiración)',
-    desc: 'Equipos de respiración autónoma, cilindros de 2216 y 4500 psi, máscaras, PASS y refacciones. El llenado de aire se resuelve junto con el equipo.',
-    image: '/images/productos/era-scba-equipo-respiracion-autonoma.svg',
-    imageAlt: 'Equipo de respiración autónoma ERA o SCBA para bombero',
-    chips: ['ERA', 'Cilindros', 'Máscaras'],
-  },
-  {
-    slug: 'accesorios',
-    nombre: 'Accesorios y herramienta',
-    desc: 'Tirantes, cinturones y arneses de escape, lámparas, hacha pico, halligan y herramienta forestal: pulaski, McLeod y batefuego.',
-    image: '/images/productos/accesorios-herramienta-bombero.svg',
-    imageAlt: 'Accesorios y herramienta para bombero',
-    chips: ['Tirantes', 'Arnés', 'Herramienta'],
-  },
+];
+
+// Complementos del conjunto. NO son línea de negocio: se cotizan
+// junto al traje para cerrar el equipamiento del elemento.
+export const COMPLEMENTOS = [
+  { nombre: 'Casco', nota: 'Se verifica compatibilidad con la máscara del ERA en uso' },
+  { nombre: 'Monja / escafandra', nota: 'Tradicional de Nomex o barrera de partículas' },
+  { nombre: 'Botas', nota: 'Hule o piel, según familia de traje' },
+  { nombre: 'Guantes', nota: 'Estructural, extricación o forestal: no se sustituyen entre sí' },
+  { nombre: 'Tirantes y cinturón', nota: 'H-back o Y-back, según corte del pantalón' },
+  { nombre: 'ERA / equipo de respiración', nota: 'Se cotiza por separado con su llenado de aire' },
+] as const;
+
+// ============================================================
+// MARCAS — referencia técnica del mercado, NO afirmación de
+// distribución. Sirve para que el comprador especifique y para
+// que el pliego se pueda atender. Al firmar carta de distribuidor
+// con alguna, mover a una sección propia y decirlo explícito.
+// Datos verificados jul-2026 (ver estudio de mercado).
+// ============================================================
+export interface Marca {
+  nombre: string;
+  origen: string;
+  nota: string;
+}
+
+export const MARCAS_TRAJE: Marca[] = [
+  { nombre: 'MSA Globe', origen: 'EE. UU.', nota: 'Globe es de MSA Safety desde 2017. Referencia de turnout estructural' },
+  { nombre: 'LION', origen: 'EE. UU.', nota: 'Fabricante independiente desde 1898. Línea Starfield' },
+  { nombre: 'Fire-Dex', origen: 'EE. UU.', nota: 'Líneas TECGEN71 y Chieftain' },
+  { nombre: 'Morning Pride', origen: 'EE. UU.', nota: 'Pasó de Honeywell a PIP en mayo de 2025' },
+  { nombre: 'MSA Bristol', origen: 'Reino Unido', nota: 'Adquirida por MSA en 2021' },
+  { nombre: 'Veridian', origen: 'EE. UU.', nota: 'Turnout estructural y forestal' },
+  { nombre: 'INNOTEX', origen: 'Canadá', nota: 'Traje estructural a medida' },
+  { nombre: 'Rosenbauer', origen: 'Austria', nota: 'Traje bajo referencia europea EN 469' },
+  { nombre: 'Texport', origen: 'Austria', nota: 'Línea X-TREME, referencia europea' },
+  { nombre: 'Fire Equipment de México', origen: 'México', nota: 'Fabricante nacional con certificación UL verificable' },
+];
+
+// Materiales del composite: lo que realmente se especifica en un
+// pliego. Son marcas de material, no de traje terminado.
+export const MARCAS_MATERIAL: Marca[] = [
+  { nombre: 'PBI', origen: 'Exterior', nota: 'PBI Matrix y PBI Max: referencia de gama alta' },
+  { nombre: 'Nomex · Kevlar (DuPont)', origen: 'Exterior', nota: 'Fibra ignífuga inherente, la más pedida en México' },
+  { nombre: 'GORE CROSSTECH', origen: 'Barrera de humedad', nota: 'Membrana impermeable y transpirable' },
+  { nombre: 'STEDAIR (Stedfast)', origen: 'Barrera de humedad', nota: 'Alternativa habitual a CROSSTECH' },
+  { nombre: 'Caldura · Quantum3D', origen: 'Barrera térmica', nota: 'Donde se define la mayor parte del TPP' },
+  { nombre: 'TenCate · Safety Components', origen: 'Exterior', nota: 'Tejedores de tela exterior certificada' },
 ];
 
 export const FOOTER_COLUMNS = [
   {
-    title: 'Catálogo',
-    links: PRODUCT_CATEGORIES.slice(0, 6).map((c) => ({ label: c.nombre, href: '/#catalogo' })),
+    title: 'Trajes',
+    links: PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: '/#catalogo' })),
   },
   {
     title: 'Quién compra',
@@ -229,6 +239,7 @@ export const FOOTER_COLUMNS = [
   {
     title: 'Técnico',
     links: [
+      { label: 'Marcas de referencia', href: '/#marcas' },
       { label: 'Cómo elegir traje', href: '/#guia' },
       { label: 'Normas aplicables', href: '/#normas' },
       { label: 'Vida útil y servicio', href: '/#vida-util' },

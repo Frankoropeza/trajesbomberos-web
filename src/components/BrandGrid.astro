@@ -1,0 +1,81 @@
+---
+// BrandGrid: marcas de REFERENCIA TÉCNICA del mercado.
+// Regla dura: NO afirma distribución ni representación. Sirve
+// para que el comprador especifique y para atender pliegos que
+// nombran marca. Sin logos ni SVG de terceros: solo texto.
+import type { Marca } from '@config/site';
+
+interface Props {
+  titulo: string;
+  marcas: Marca[];
+}
+const { titulo, marcas } = Astro.props;
+---
+<div class="brandgroup">
+  <h3 class="brandgroup__title">{titulo}</h3>
+  <ul class="brandgrid">
+    {marcas.map((m) => (
+      <li class="brand">
+        <div class="brand__head">
+          <span class="brand__name">{m.nombre}</span>
+          <span class="brand__origen">{m.origen}</span>
+        </div>
+        <p class="brand__nota">{m.nota}</p>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  .brandgroup { margin-bottom: 2.5rem; }
+  .brandgroup:last-child { margin-bottom: 0; }
+  .brandgroup__title {
+    font-size: 0.74rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+    margin: 0 0 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--color-primary);
+  }
+  .brandgrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .brand {
+    padding: 1.1rem clamp(0.9rem, 1.6vw, 1.6rem);
+    border-left: var(--border);
+    border-bottom: var(--border);
+  }
+  .brand:nth-child(5n + 1) { border-left: 0; padding-left: 0; }
+  .brand__head { display: flex; flex-direction: column; margin-bottom: 0.3rem; }
+  .brand__name { font-weight: 800; font-size: 0.98rem; letter-spacing: var(--tracking-tight); }
+  .brand__origen {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .brand__nota { margin: 0; font-size: 0.82rem; color: var(--color-gray); line-height: 1.5; }
+
+  @media (max-width: 1200px) {
+    .brandgrid { grid-template-columns: repeat(3, 1fr); }
+    .brand:nth-child(5n + 1) { border-left: var(--border); padding-left: clamp(0.9rem, 1.6vw, 1.6rem); }
+    .brand:nth-child(3n + 1) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 700px) {
+    .brandgrid { grid-template-columns: repeat(2, 1fr); }
+    .brand:nth-child(3n + 1) { border-left: var(--border); padding-left: 1rem; }
+    .brand:nth-child(odd) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 460px) {
+    .brandgrid { grid-template-columns: 1fr; }
+    .brand { border-left: 0 !important; padding-left: 0 !important; }
+  }
+</style>
