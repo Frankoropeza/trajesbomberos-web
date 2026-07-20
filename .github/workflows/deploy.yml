@@ -25,6 +25,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # Huella del commit DENTRO del artefacto publicado. El gate final se la
+      # pide al dominio: si no la devuelve, el deploy no llego a produccion.
+      - name: Sellar build-id
+        run: echo "${{ github.sha }}" > dist/build-id.txt
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
