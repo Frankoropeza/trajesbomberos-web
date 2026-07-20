@@ -31,7 +31,7 @@ export const CONTACT = {
   email: 'ventas@trajesbombero.com', // TODO(Frank): confirmar
   horario: 'Lun–Vie 9:00–18:00',
   cobertura: 'Envíos a todo México',
-  posicionamiento: 'Equipo de protección contra incendios · Envíos a todo México',
+  posicionamiento: 'Venta de trajes para bomberos · Envíos a todo México',
 } as const;
 
 export const WA_MESSAGES = {
