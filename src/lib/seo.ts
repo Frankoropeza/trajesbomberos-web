@@ -31,8 +31,8 @@ function buildJsonLd(input: SeoInput, canonical: string): object[] {
     '@type': 'Organization',
     name: SITE.legalName,
     url: SITE.url,
-    ...(SITE.telefono && { telephone: SITE.telefono }),
-    ...(SITE.email && { email: SITE.email }),
+    ...(SITE.telefono ? { telephone: SITE.telefono } : {}),
+    ...(SITE.email ? { email: SITE.email } : {}),
     areaServed: 'MX',
   };
 
