@@ -5,7 +5,7 @@ description: ''
 categoria: traje-estructural
 marca: ''
 modelo: ''
-certificaciones: []          # p.ej. ['NFPA 1971', 'CE EN 469']
+certificaciones: []          # p.ej. ['NFPA 1970', 'CE EN 469:2020']
 imagen: '/img/productos/'
 imagenAlt: ''
 destacado: false
