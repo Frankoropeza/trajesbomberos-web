@@ -6617,6 +6617,1679 @@ export const PIEZAS: Pieza[] = [
         "href": "/#normas"
       }
     ]
+  },
+  {
+    "slug": "conjunto-corta-duracion",
+    "familia": "entrada",
+    "nombreCard": "Conjunto de penetración de corta duración",
+    "nombre": "Conjunto de penetración de corta duración",
+    "seoTitle": "Traje de penetración a la flama | corta duración | México",
+    "seoDescription": "Traje de penetración a la flama de corta duración: aluminizado multicapa para entrar, resolver y salir en minutos. Siempre con equipo de respiración.",
+    "keywords": [
+      "traje de penetración a la flama",
+      "corta duración",
+      "México"
+    ],
+    "eyebrow": "Pieza · Ingreso a la flama",
+    "h1": "Traje de penetración a la flama",
+    "h1Accent": "de corta duración",
+    "lead": "Conjunto aluminizado fuertemente aislado para entrar, resolver y salir: el tiempo justo para un rescate o para cerrar una válvula en fuego declarado.",
+    "descRight": [
+      "Este equipo no está hecho para trabajar. Está hecho para meterse, hacer una cosa concreta y salir. Pesa, limita el movimiento y reduce la visión a propósito: todo lo que se sacrifica se convierte en aislamiento.",
+      "Es también el nivel del catálogo que menos gente necesita de verdad. Antes de cotizarlo conviene revisar si tu escenario real no se resuelve con un conjunto de aproximación, que permite operar de forma prolongada cerca de la fuente."
+    ],
+    "meta": [
+      "Aluminizado multicapa",
+      "Uso de minutos",
+      "Requiere ERA",
+      "ISO 11612"
+    ],
+    "resumen": [
+      "El conjunto de corta duración construye su protección por capas: una superficie aluminizada que refleja la radiación, capas intermedias de aislamiento y un forro que corta el paso de vapor, gas y humo. El resultado es un equipo de peso considerable que permite exposición directa a la flama por un lapso breve.",
+      "La diferencia con aproximación no es de grado sino de propósito: aproximación deja trabajar cerca; entrada permite estar dentro. Confundirlos es el error más peligroso de todo el catálogo y ocurre porque ambos se ven aluminizados."
+    ],
+    "puntosClave": [
+      "Permite ingreso breve con exposición directa a la flama",
+      "Construcción multicapa: reflejante, aislamiento y barrera de vapor",
+      "Peso y limitación de movilidad son parte del diseño",
+      "Se usa siempre con equipo de respiración autónoma",
+      "Requiere protocolo de entrada y salida definido antes",
+      "Se viste sobre ropa de trabajo de fibra no inflamable"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-de-penetracion-de-corta-duracion.svg",
+        "alt": "Traje de penetración a la flama de corta duración"
+      },
+      {
+        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "alt": "Traje de entrada aluminizado multicapa"
+      },
+      {
+        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "alt": "Capucha aluminizada de traje de entrada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "No existe norma NFPA de producto específica para entrada"
+          },
+          {
+            "campo": "Base de evaluación",
+            "valor": "Ficha técnica del fabricante",
+            "nota": "Por eso hay que leerla completa antes de comprar"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible cuando un pliego la incorpora"
+          },
+          {
+            "campo": "Qué NO es",
+            "valor": "Un traje de aproximación reforzado",
+            "nota": "Son productos distintos con propósitos distintos"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa reflejante",
+            "valor": "Superficie aluminizada exterior",
+            "nota": "Devuelve la radiación incidente"
+          },
+          {
+            "campo": "Aislamiento",
+            "valor": "Capas intermedias",
+            "nota": "Composición según fabricante"
+          },
+          {
+            "campo": "Barrera interior",
+            "valor": "Corta paso de vapor, gas y humo",
+            "nota": "Habitualmente de neopreno o similar"
+          },
+          {
+            "campo": "Peso",
+            "valor": "Considerable",
+            "nota": "Es consecuencia directa del nivel de aislamiento"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Talla única hasta extragrande en varios fabricantes",
+            "nota": "A medida en pedidos de volumen, con recargo"
+          },
+          {
+            "campo": "Contenido del conjunto",
+            "valor": "Chaquetón, pantalón, capucha, guantes y talega",
+            "nota": "La capucha viene incluida, no es opcional"
+          },
+          {
+            "campo": "Compatibilidad con ERA",
+            "valor": "Debe alojar el equipo de respiración",
+            "nota": "Verificar antes de comprar"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Almacenamiento",
+            "valor": "Colgado y en talega",
+            "nota": "El doblez daña la capa reflejante"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Antes y después de cada uso",
+            "nota": "Es equipo de vida"
+          },
+          {
+            "campo": "Entrenamiento",
+            "valor": "Indispensable antes de poner en servicio",
+            "nota": "Equipo sin práctica es equipo que no se usa bien"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaquetón y pantalón aluminizados multicapa",
+      "Capucha con casco duro y visor",
+      "Guantes tipo mitón",
+      "Talega de transporte y almacenamiento"
+    ],
+    "noIncluye": [
+      "Equipo de respiración autónoma",
+      "Ropa de trabajo de fibra no inflamable que va debajo",
+      "Capacitación de uso, que se cotiza como servicio"
+    ],
+    "errores": [
+      {
+        "error": "Comprarlo cuando el escenario es de aproximación",
+        "realidad": "Si la maniobra permite trabajar cerca sin entrar, un conjunto de aproximación protege igual y deja operar de verdad."
+      },
+      {
+        "error": "Ponerlo en servicio sin entrenamiento",
+        "realidad": "El ingreso a la flama se ejecuta bajo estrés extremo, con visión reducida y movilidad limitada. Sin práctica previa el equipo no se usa bien."
+      },
+      {
+        "error": "No definir el protocolo de entrada y salida",
+        "realidad": "El tiempo dentro se cuenta desde afuera. Sin protocolo y sin control de tiempo el equipo no habilita la maniobra."
+      },
+      {
+        "error": "Usarlo sin equipo de respiración",
+        "realidad": "El ingreso implica atmósfera no respirable. Sin aire no hay entrada, por bueno que sea el traje."
+      },
+      {
+        "error": "Guardarlo doblado en un locker",
+        "realidad": "El pliegue quiebra la capa reflejante. Va colgado y dentro de su talega."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Rescate industrial",
+        "desc": "Extracción de personal desde una zona con fuego declarado."
+      },
+      {
+        "titulo": "Cierre de válvula en emergencia",
+        "desc": "Maniobra puntual que corta la alimentación del incendio."
+      },
+      {
+        "titulo": "Incidente térmico severo",
+        "desc": "Escenarios donde la aproximación no alcanza."
+      },
+      {
+        "titulo": "Hornos industriales",
+        "desc": "Intervención breve con exposición directa."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Cuánto tiempo se puede estar dentro?",
+        "a": "Muy poco, y depende del modelo y de las condiciones reales. El fabricante declara el tiempo máximo de exposición en su ficha técnica, medido en condiciones de laboratorio. En operación ese número se administra con margen y con control de tiempo desde afuera."
+      },
+      {
+        "q": "¿Existe una norma NFPA para trajes de entrada?",
+        "a": "No hay una norma NFPA de producto específica para entrada, a diferencia del estructural o el forestal. Por eso la evaluación se hace contra la ficha técnica del fabricante y conviene revisarla con detenimiento antes de comprometer presupuesto."
+      },
+      {
+        "q": "¿En qué se diferencia de un traje de aproximación?",
+        "a": "En el propósito. Aproximación permite trabajar cerca de la fuente durante toda la maniobra, conservando movilidad. Entrada permite estar dentro de la flama por minutos. Ambos se ven aluminizados y ahí empieza la confusión, que es la más peligrosa del catálogo."
+      },
+      {
+        "q": "¿Se puede usar sin equipo de respiración?",
+        "a": "No. El ingreso a la flama implica atmósfera no respirable. Sin equipo de respiración autónoma y sin protocolo de entrada y salida, el traje no habilita la maniobra por bueno que sea."
+      },
+      {
+        "q": "¿Viene con capucha?",
+        "a": "Sí. A diferencia de los conjuntos ligeros de aproximación, donde la capucha suele ser opcional, en entrada viene incluida junto con guantes y talega. Es parte del conjunto por definición."
+      },
+      {
+        "q": "¿Qué llevo debajo?",
+        "a": "Ropa de trabajo de fibra no inflamable. El conjunto está diseñado para vestirse encima de ropa industrial, nunca sobre fibras sintéticas que se funden con el calor."
+      },
+      {
+        "q": "¿Se necesita capacitación?",
+        "a": "Sí, y es la parte que más se omite. Vestirse toma tiempo, la visión es reducida y la movilidad limitada. Un equipo sin práctica previa termina usado mal o no usado. Podemos cotizar la capacitación junto con el conjunto."
+      },
+      {
+        "q": "¿Cómo se almacena?",
+        "a": "Colgado y dentro de su talega, protegido de la abrasión. El doblez repetido quiebra la capa reflejante y la deja inservible en esa línea. Si tu estación no tiene espacio para colgarlo, conviene resolverlo antes de la compra."
+      }
+    ],
+    "sinonimos": [
+      "traje de penetración a la flama",
+      "traje de entrada a fuego",
+      "fire entry suit",
+      "traje de ingreso a la flama",
+      "traje aluminizado de entrada",
+      "traje de penetración"
+    ],
+    "sinonimosNota": "En México se pide como traje de penetración o de entrada. En catálogo de importación aparece como fire entry suit, que no debe confundirse con proximity suit.",
+    "comparativa": {
+      "titulo": "Corta duración o penetración avanzada",
+      "intro": "Los dos niveles de entrada. La diferencia es cuánto engullimiento tolera el conjunto.",
+      "columnas": [
+        "Criterio",
+        "Corta duración",
+        "Penetración avanzada"
+      ],
+      "filas": [
+        [
+          "Exposición",
+          "Ingreso breve",
+          "Engullimiento total"
+        ],
+        [
+          "Peso",
+          "Alto",
+          "Mayor"
+        ],
+        [
+          "Movilidad",
+          "Limitada",
+          "Muy limitada"
+        ],
+        [
+          "Cuándo conviene",
+          "Rescate puntual, cierre de válvula",
+          "Escenarios de exposición extrema"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de penetración avanzada: el nivel superior",
+        "href": "/trajes/entrada/conjunto-avanzado/"
+      },
+      {
+        "label": "Trajes de aproximación: cuándo bastan",
+        "href": "/trajes/aproximacion/"
+      },
+      {
+        "label": "Normas aplicables en México",
+        "href": "/#normas"
+      }
+    ]
+  },
+  {
+    "slug": "conjunto-avanzado",
+    "familia": "entrada",
+    "nombreCard": "Conjunto de penetración avanzada",
+    "nombre": "Conjunto de penetración avanzada",
+    "seoTitle": "Traje de entrada a fuego avanzado | engullimiento | México",
+    "seoDescription": "Traje de entrada a fuego avanzado con aislamiento reforzado para engullimiento total por flama: el nivel superior de la escala aluminizada.",
+    "keywords": [
+      "traje de entrada a fuego avanzado",
+      "engullimiento",
+      "México"
+    ],
+    "eyebrow": "Pieza · Ingreso a la flama",
+    "h1": "Traje de entrada a fuego avanzado",
+    "h1Accent": "para engullimiento total",
+    "lead": "El nivel superior de la escala aluminizada: aislamiento reforzado para exposición directa con engullimiento por flama, en maniobras de emergencia.",
+    "descRight": [
+      "Cuando el escenario implica quedar rodeado por fuego y no solo atravesarlo, el conjunto de corta duración se queda corto. Este nivel suma aislamiento adicional y con él suma peso: es la última línea del catálogo y la que menos operaciones justifican.",
+      "Antes de cotizarlo conviene revisar con seriedad el escenario. Si el análisis indica que la maniobra puede resolverse sin ingreso, el equipo correcto es otro. Este no se compra por si acaso: se compra porque el procedimiento lo exige."
+    ],
+    "meta": [
+      "Aislamiento reforzado",
+      "Engullimiento total",
+      "Requiere ERA",
+      "ISO 11612"
+    ],
+    "resumen": [
+      "El conjunto avanzado agrega capas de aislamiento sobre la construcción del nivel de corta duración. El objetivo es tolerar no solo la radiación intensa sino el contacto directo de la flama alrededor de todo el cuerpo, durante el lapso mínimo necesario para completar la maniobra.",
+      "El costo operativo es real: más peso, menos movilidad, más tiempo de vestido y una necesidad de entrenamiento mucho mayor. Un equipo de este nivel guardado sin práctica periódica es dinero inmovilizado que además da falsa seguridad."
+    ],
+    "puntosClave": [
+      "Aislamiento reforzado sobre la construcción de corta duración",
+      "Pensado para engullimiento total por flama",
+      "El peso y el tiempo de vestido son mayores",
+      "Requiere entrenamiento periódico, no solo inicial",
+      "Se usa siempre con equipo de respiración autónoma",
+      "Se compra porque el procedimiento lo exige, no por precaución"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-de-penetracion-avanzada.svg",
+        "alt": "Traje de entrada a fuego avanzado para engullimiento"
+      },
+      {
+        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "alt": "Traje de entrada aluminizado multicapa"
+      },
+      {
+        "src": "/images/productos/botas-aluminizadas-entrada.svg",
+        "alt": "Botas aluminizadas del conjunto de entrada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "No existe norma NFPA de producto para entrada"
+          },
+          {
+            "campo": "Base de evaluación",
+            "valor": "Ficha técnica del fabricante",
+            "nota": "Incluye tiempo máximo de exposición declarado"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa reflejante",
+            "valor": "Superficie aluminizada exterior",
+            "nota": "Igual que el nivel de corta duración"
+          },
+          {
+            "campo": "Aislamiento",
+            "valor": "Reforzado respecto al nivel anterior",
+            "nota": "Es lo que permite el engullimiento"
+          },
+          {
+            "campo": "Barrera interior",
+            "valor": "Corta paso de vapor, gas y humo",
+            "nota": "Composición según fabricante"
+          },
+          {
+            "campo": "Peso",
+            "valor": "El mayor del catálogo",
+            "nota": "Condiciona el tiempo de maniobra"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Talla única hasta extragrande",
+            "nota": "A medida en pedidos de volumen"
+          },
+          {
+            "campo": "Contenido",
+            "valor": "Conjunto completo con capucha, guantes y talega",
+            "nota": "La capucha viene incluida"
+          },
+          {
+            "campo": "Compatibilidad con ERA",
+            "valor": "Obligatoria",
+            "nota": "Verificar con el equipo de tu estación"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Entrenamiento",
+            "valor": "Periódico, no solo inicial",
+            "nota": "El vestido y la maniobra se olvidan"
+          },
+          {
+            "campo": "Almacenamiento",
+            "valor": "Colgado y en talega",
+            "nota": "Protegido de abrasión y luz"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Antes y después de cada uso",
+            "nota": "Equipo de vida"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaquetón y pantalón con aislamiento reforzado",
+      "Capucha con casco duro y visor de doble capa",
+      "Guantes tipo mitón",
+      "Talega de transporte y almacenamiento"
+    ],
+    "noIncluye": [
+      "Equipo de respiración autónoma",
+      "Ropa de trabajo de fibra no inflamable",
+      "Capacitación periódica, que se cotiza como servicio"
+    ],
+    "errores": [
+      {
+        "error": "Comprarlo por precaución sin escenario definido",
+        "realidad": "Es el equipo más caro y menos usado del catálogo. Si el procedimiento no lo exige, el dinero rinde más en dotación de uso diario."
+      },
+      {
+        "error": "Entrenar una sola vez",
+        "realidad": "El vestido y la maniobra se olvidan. Sin práctica periódica el equipo se usa mal justo cuando importa."
+      },
+      {
+        "error": "Suponer que reemplaza al de aproximación",
+        "realidad": "Con este conjunto no se puede trabajar de forma prolongada. Si la operación es sostenida, el correcto es aproximación."
+      },
+      {
+        "error": "No verificar compatibilidad con el ERA de la estación",
+        "realidad": "Un conjunto que no aloja bien tu equipo de respiración obliga a improvisar en el peor momento."
+      },
+      {
+        "error": "Guardarlo sin talega",
+        "realidad": "La abrasión y la luz degradan la superficie reflejante. La talega es parte del equipo, no un accesorio."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Rescate en horno",
+        "desc": "Extracción de personal desde el interior de un equipo en caliente."
+      },
+      {
+        "titulo": "Incidente térmico severo",
+        "desc": "Escenarios industriales con exposición envolvente."
+      },
+      {
+        "titulo": "Refinería y petroquímica",
+        "desc": "Maniobras críticas con fuego declarado."
+      },
+      {
+        "titulo": "Procedimiento que lo exige",
+        "desc": "Cuando el análisis de riesgo del sitio lo establece explícitamente."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Qué diferencia hay con el conjunto de corta duración?",
+        "a": "El aislamiento. El de corta duración permite entrar y salir atravesando fuego; el avanzado está construido para tolerar engullimiento total, es decir quedar rodeado por la flama. A cambio pesa más, limita más la movilidad y toma más tiempo vestirlo."
+      },
+      {
+        "q": "¿Cuánto tiempo permite dentro?",
+        "a": "El fabricante lo declara en su ficha técnica, y ese dato se mide en condiciones controladas. En operación real se administra con margen amplio y con control de tiempo desde afuera. No es un número para apurar."
+      },
+      {
+        "q": "¿Necesito este nivel?",
+        "a": "Probablemente no. Es la última línea del catálogo y la que menos operaciones justifican. Si tu escenario permite resolver sin ingresar, el equipo correcto es un conjunto de aproximación. Te decimos con franqueza si creemos que estás sobrecomprando."
+      },
+      {
+        "q": "¿Se puede trabajar con él puesto?",
+        "a": "No en el sentido normal. Está diseñado para una maniobra concreta y breve, no para operar. Si necesitas manipular herramienta o permanecer en la zona, el equipo adecuado es de aproximación."
+      },
+      {
+        "q": "¿Cada cuánto hay que entrenar?",
+        "a": "De forma periódica, no una sola vez al recibirlo. El vestido toma tiempo, la visión es reducida y la coordinación con el equipo de respiración requiere práctica. Un conjunto guardado sin entrenamiento da falsa seguridad."
+      },
+      {
+        "q": "¿Es compatible con cualquier equipo de respiración?",
+        "a": "No necesariamente. El conjunto debe alojar el ERA y permitir su revisión sin desarmar todo. Hay que verificarlo con el modelo específico que usa tu estación antes de comprar, no después."
+      },
+      {
+        "q": "¿Cómo se almacena?",
+        "a": "Colgado, dentro de su talega y protegido de la luz y la abrasión. La talega no es un accesorio: es parte del sistema de conservación de la superficie reflejante."
+      },
+      {
+        "q": "¿Cuándo se retira de servicio?",
+        "a": "Cuando la superficie perdió reflectancia, cuando hay perforación o quemadura, o cuando el fabricante lo indica tras una exposición real. Un conjunto que ya trabajó en un evento severo se evalúa antes de volver a considerarlo disponible."
+      }
+    ],
+    "sinonimos": [
+      "traje de entrada avanzado",
+      "traje de penetración total",
+      "fire entry suit avanzado",
+      "traje para engullimiento",
+      "traje aluminizado de máximo nivel",
+      "traje de ingreso total"
+    ],
+    "sinonimosNota": "Se pide como traje de entrada avanzado o de penetración total. En catálogo de importación aparece como advanced fire entry suit.",
+    "comparativa": {
+      "titulo": "Entrada avanzada o aproximación",
+      "intro": "La pregunta que hay que responder antes de gastar: ¿la maniobra exige entrar o basta con acercarse?",
+      "columnas": [
+        "Criterio",
+        "Entrada avanzada",
+        "Aproximación"
+      ],
+      "filas": [
+        [
+          "Qué permite",
+          "Quedar rodeado por la flama",
+          "Trabajar cerca de la fuente"
+        ],
+        [
+          "Duración",
+          "Minutos contados",
+          "Toda la maniobra"
+        ],
+        [
+          "Movilidad",
+          "Muy limitada",
+          "Conservada"
+        ],
+        [
+          "Frecuencia de uso real",
+          "Muy baja",
+          "Habitual en su industria"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de corta duración: el nivel anterior",
+        "href": "/trajes/entrada/conjunto-corta-duracion/"
+      },
+      {
+        "label": "Trajes de aproximación: para operar cerca",
+        "href": "/trajes/aproximacion/"
+      },
+      {
+        "label": "Comparar las seis familias de traje",
+        "href": "/trajes/"
+      }
+    ]
+  },
+  {
+    "slug": "capucha",
+    "familia": "entrada",
+    "nombreCard": "Capucha de penetración con visor doble",
+    "nombre": "Capucha de penetración con visor doble",
+    "seoTitle": "Capucha de entrada a la flama | visor doble | México",
+    "seoDescription": "Capucha de entrada a la flama con visor de doble capa y película dorada, casco duro de ajuste dentado y cobertor de hombro completo.",
+    "keywords": [
+      "capucha de entrada a la flama",
+      "visor doble",
+      "México"
+    ],
+    "eyebrow": "Pieza · Ingreso a la flama",
+    "h1": "Capucha de entrada a la flama",
+    "h1Accent": "con visor de doble capa",
+    "lead": "La pieza más expuesta del conjunto: casco duro integrado, visor de doble capa con película dorada y cobertor que abarca todo el hombro.",
+    "descRight": [
+      "En una maniobra de ingreso la cabeza recibe radiación desde todos los ángulos, no solo de frente. Por eso la capucha de entrada usa visor de doble capa y un cobertor que baja sobre hombros y parte del pecho, cerrando la unión con el chaquetón.",
+      "Viene incluida en el conjunto, a diferencia de lo que pasa en aproximación ligera. Se cotiza suelta solo para reposición, y en ese caso hay que verificar que corresponda al mismo nivel del conjunto en servicio."
+    ],
+    "meta": [
+      "Visor de doble capa",
+      "Película dorada",
+      "Casco integrado",
+      "Incluida en el conjunto"
+    ],
+    "resumen": [
+      "El visor de doble capa reduce la transmisión de calor hacia la cara y mantiene visión útil en condiciones de radiación extrema. La película dorada refleja parte del infrarrojo y controla el deslumbramiento, que en una maniobra de ingreso es tan limitante como el calor.",
+      "El casco duro con sistema de ajuste dentado sostiene el conjunto sobre la cabeza sin que se desplace al moverse, y las tiras reforzadas en axilas evitan que la capucha se levante al elevar los brazos, que es cuando queda expuesto el cuello."
+    ],
+    "puntosClave": [
+      "Visor de doble capa para exposición extrema",
+      "Película dorada que refleja infrarrojo y controla deslumbramiento",
+      "Casco duro con ajuste dentado que impide desplazamiento",
+      "Cobertor que abarca hombros y parte del pecho",
+      "Viene incluida en el conjunto de entrada",
+      "El visor es consumible: conviene tener repuesto"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/capucha-de-penetracion-con-visor-doble.svg",
+        "alt": "Capucha de entrada a la flama con visor de doble capa"
+      },
+      {
+        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "alt": "Capucha aluminizada de traje de entrada"
+      },
+      {
+        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "alt": "Traje de entrada aluminizado multicapa"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612 como parte del conjunto",
+            "nota": "Se evalúa junto con el traje"
+          },
+          {
+            "campo": "Base de evaluación",
+            "valor": "Ficha técnica del fabricante",
+            "nota": "Incluye tipo de visor y tiempo de exposición"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Visor",
+            "valor": "Doble capa con película dorada",
+            "nota": "Mayor protección que el de una capa"
+          },
+          {
+            "campo": "Casco",
+            "valor": "Duro con ajuste dentado",
+            "nota": "Evita desplazamiento durante la maniobra"
+          },
+          {
+            "campo": "Cobertor",
+            "valor": "Hombros y parte del pecho",
+            "nota": "Sella la unión con el chaquetón"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Tiras en axilas",
+            "nota": "Evitan que la capucha se levante al elevar los brazos"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Inclusión",
+            "valor": "Viene con el conjunto de entrada",
+            "nota": "Se cotiza suelta solo para reposición"
+          },
+          {
+            "campo": "Nivel",
+            "valor": "El mismo del conjunto",
+            "nota": "Verificar al reponer"
+          },
+          {
+            "campo": "Compatibilidad con ERA",
+            "valor": "Según modelo",
+            "nota": "Confirmar con el equipo en uso"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Visor",
+            "valor": "Consumible",
+            "nota": "Se reemplaza al rayarse u opacarse"
+          },
+          {
+            "campo": "Limpieza",
+            "valor": "Sin solventes ni abrasivos",
+            "nota": "Dañan la película dorada de forma permanente"
+          },
+          {
+            "campo": "Almacenamiento",
+            "valor": "Sin apoyar el visor",
+            "nota": "Se raya con el simple contacto"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Capucha con casco duro integrado",
+      "Visor de doble capa con película dorada",
+      "Cobertor de hombro y refuerzos en axilas"
+    ],
+    "noIncluye": [
+      "Visor de repuesto",
+      "Equipo de respiración autónoma",
+      "Chaquetón y pantalón del conjunto"
+    ],
+    "errores": [
+      {
+        "error": "Reponerla con un nivel distinto al del conjunto",
+        "realidad": "La cabeza es la zona más expuesta en ingreso. No es el lugar para bajar de nivel por disponibilidad."
+      },
+      {
+        "error": "Limpiar el visor con solvente",
+        "realidad": "La película dorada es una capa muy delgada. Un limpiador agresivo la retira y el visor queda inservible aunque el vidrio esté entero."
+      },
+      {
+        "error": "Guardar el conjunto apoyando el visor",
+        "realidad": "Se raya con el simple contacto y el rayado difracta la luz, reduciendo visión justo cuando es crítica."
+      },
+      {
+        "error": "No tener visor de repuesto",
+        "realidad": "Sin visor en condiciones el conjunto completo sale de servicio. Es un consumible, no una pieza permanente."
+      },
+      {
+        "error": "Descuidar el ajuste del casco",
+        "realidad": "Si el sistema dentado está flojo, la capucha se desplaza al moverse y deja descubierta la nuca en plena maniobra."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Rescate industrial",
+        "desc": "Ingreso breve con exposición envolvente."
+      },
+      {
+        "titulo": "Hornos",
+        "desc": "Maniobra en caliente con radiación desde todos los ángulos."
+      },
+      {
+        "titulo": "Reposición de conjunto",
+        "desc": "Cuando el visor o la capucha se dañan y el resto sigue en servicio."
+      },
+      {
+        "titulo": "Incidente térmico severo",
+        "desc": "Escenarios donde la protección facial define el margen de maniobra."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué visor de doble capa?",
+        "a": "Porque en ingreso la radiación llega desde todos los ángulos y de forma mucho más intensa que en aproximación. La doble capa reduce la transmisión de calor hacia la cara y mantiene visión útil, que es lo que permite completar la maniobra."
+      },
+      {
+        "q": "¿Viene incluida en el conjunto?",
+        "a": "Sí. A diferencia de los conjuntos ligeros de aproximación, donde suele ser opcional, en entrada la capucha forma parte del conjunto junto con guantes y talega. Se cotiza suelta únicamente para reposición."
+      },
+      {
+        "q": "¿El visor se reemplaza?",
+        "a": "Sí, es consumible. Se cambia cuando se raya, se opaca o presenta daño. Conviene tener repuesto en almacén, porque sin visor en condiciones el conjunto completo queda fuera de servicio."
+      },
+      {
+        "q": "¿Cómo se limpia?",
+        "a": "Solo con el método que indica el fabricante y jamás con solventes ni abrasivos. La película dorada se retira con facilidad y una vez perdida el visor deja de cumplir su función aunque el vidrio esté intacto."
+      },
+      {
+        "q": "¿Para qué sirven las tiras en axilas?",
+        "a": "Para que la capucha no se levante al elevar los brazos. Sin ellas, en el momento de estirar el cuerpo queda expuesta la nuca, que es una de las zonas más difíciles de proteger en esta operación."
+      },
+      {
+        "q": "¿Es compatible con equipo de respiración?",
+        "a": "Depende del modelo y del ERA. Los conjuntos de entrada suelen diseñarse para alojar el equipo bajo el chaquetón con la capucha encima, pero hay que confirmarlo con el modelo específico de tu estación antes de comprar."
+      },
+      {
+        "q": "¿Puedo usar la capucha de aproximación?",
+        "a": "No para ingreso. La de aproximación está pensada para radiación frontal en trabajo prolongado; la de entrada, para exposición envolvente breve. Cambian el visor, el cobertor y el nivel de aislamiento."
+      },
+      {
+        "q": "¿Cómo se guarda?",
+        "a": "Sin apoyar el visor sobre ninguna superficie y sin objetos encima. El visor se raya con el simple contacto y ese rayado no se quita. Lo ideal es guardarla en la talega del conjunto o colgada."
+      }
+    ],
+    "sinonimos": [
+      "capucha de entrada",
+      "escafandra de penetración",
+      "capucha con visor doble",
+      "fire entry hood",
+      "capucha aluminizada de ingreso",
+      "capucha de máximo nivel"
+    ],
+    "sinonimosNota": "Se pide como capucha o escafandra de entrada. En catálogo de importación aparece como fire entry hood.",
+    "comparativa": {
+      "titulo": "Capucha de entrada o de aproximación",
+      "intro": "Se parecen por fuera y protegen distinto.",
+      "columnas": [
+        "Criterio",
+        "Capucha de entrada",
+        "Capucha de aproximación"
+      ],
+      "filas": [
+        [
+          "Visor",
+          "Doble capa",
+          "Una capa en la mayoría de niveles"
+        ],
+        [
+          "Exposición",
+          "Envolvente y breve",
+          "Frontal y prolongada"
+        ],
+        [
+          "Cobertor",
+          "Hombros y pecho",
+          "Hombro"
+        ],
+        [
+          "Incluida en el conjunto",
+          "Sí",
+          "Opcional en niveles ligeros"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de penetración de corta duración",
+        "href": "/trajes/entrada/conjunto-corta-duracion/"
+      },
+      {
+        "label": "Capucha aluminizada de aproximación",
+        "href": "/trajes/aproximacion/capucha/"
+      },
+      {
+        "label": "Cómo especificar sin dejar huecos",
+        "href": "/#especificar"
+      }
+    ]
+  },
+  {
+    "slug": "guantes",
+    "familia": "entrada",
+    "nombreCard": "Guantes mitón de penetración",
+    "nombre": "Guantes mitón de penetración",
+    "seoTitle": "Guantes mitón para entrada a la flama | México",
+    "seoDescription": "Guantes mitón para entrada a la flama con palma de alto aislamiento: el máximo nivel de protección de manos del conjunto, a costa de destreza.",
+    "keywords": [
+      "guantes mitón para entrada a la flama",
+      "aislamiento",
+      "México"
+    ],
+    "eyebrow": "Pieza · Ingreso a la flama",
+    "h1": "Guantes mitón para entrada a la flama",
+    "h1Accent": "máximo aislamiento",
+    "lead": "Mitón aluminizado con palma de alto aislamiento: la protección de manos más alta del catálogo, con la destreza reducida al mínimo indispensable.",
+    "descRight": [
+      "En ingreso la mano es lo primero que entra y lo último que sale. Por eso aquí se usa mitón: sin dedos separados no hay costuras entre ellos, no hay puntos delgados y toda la masa aislante trabaja como una sola pieza.",
+      "Se pierde casi toda la destreza fina, y eso hay que asumirlo en el diseño de la maniobra. Lo que se hace dentro tiene que poder ejecutarse con la mano cerrada: si requiere precisión, la maniobra está mal planteada para este nivel."
+    ],
+    "meta": [
+      "Mitón aluminizado",
+      "Palma de alto aislamiento",
+      "Incluidos en conjunto",
+      "Sin destreza fina"
+    ],
+    "resumen": [
+      "El mitón de penetración lleva superficie aluminizada en el dorso y una palma de material de alto aislamiento pensada para contacto directo con superficies muy calientes. Debajo, el forro térmico es más grueso que en cualquier otro guante del catálogo.",
+      "Vienen incluidos en el conjunto de entrada. Se cotizan sueltos para reposición, que es frecuente: junto con el visor, son las piezas que más rápido se degradan porque concentran el contacto real con el entorno."
+    ],
+    "puntosClave": [
+      "Formato mitón: sin costuras entre dedos ni puntos delgados",
+      "Palma de material de alto aislamiento para contacto directo",
+      "Forro térmico más grueso que en cualquier otro guante",
+      "Vienen incluidos en el conjunto de entrada",
+      "La maniobra debe poder ejecutarse con la mano cerrada",
+      "Se reponen con frecuencia: son pieza de desgaste"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/guantes-miton-de-penetracion.svg",
+        "alt": "Guantes mitón para entrada a la flama"
+      },
+      {
+        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "alt": "Traje de entrada aluminizado multicapa"
+      },
+      {
+        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "alt": "Capucha aluminizada de traje de entrada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612 como parte del conjunto",
+            "nota": "Pueden tener referencia propia según fabricante"
+          },
+          {
+            "campo": "Base de evaluación",
+            "valor": "Ficha técnica del fabricante",
+            "nota": "Incluye tiempo de contacto admisible"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Formato",
+            "valor": "Mitón",
+            "nota": "Sin dedos separados: menos costuras y más masa aislante"
+          },
+          {
+            "campo": "Dorso",
+            "valor": "Aluminizado",
+            "nota": "Refleja radiación"
+          },
+          {
+            "campo": "Palma",
+            "valor": "Material de alto aislamiento",
+            "nota": "Para contacto con superficies muy calientes"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Térmico reforzado",
+            "nota": "El más grueso del catálogo"
+          },
+          {
+            "campo": "Puño",
+            "valor": "Largo, traslapa con la manga",
+            "nota": "No debe quedar muñeca expuesta"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Inclusión",
+            "valor": "Vienen con el conjunto",
+            "nota": "Se cotizan sueltos para reposición"
+          },
+          {
+            "campo": "Tallas",
+            "valor": "Según fabricante",
+            "nota": "Probar con la maniobra real"
+          },
+          {
+            "campo": "Nivel",
+            "valor": "El del conjunto",
+            "nota": "No mezclar con guantes de aproximación"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Inspección",
+            "valor": "Antes y después de cada uso",
+            "nota": "Costuras, palma y forro"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Frecuente",
+            "nota": "Junto con el visor, son lo que más se degrada"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Palma vitrificada, forro comprimido o costura abierta",
+            "nota": "No se reparan"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Par de mitones con dorso aluminizado y palma aislante",
+      "Forro térmico reforzado",
+      "Puño largo para traslape con la manga"
+    ],
+    "noIncluye": [
+      "Guante interior de contacto si el fabricante lo maneja aparte",
+      "Resto del conjunto de entrada"
+    ],
+    "errores": [
+      {
+        "error": "Sustituirlos por guantes de aproximación",
+        "realidad": "Un guante de tres o cinco dedos tiene más costuras y menos masa aislante. En ingreso eso se traduce en quemadura por contacto."
+      },
+      {
+        "error": "Planear una maniobra que exige destreza fina",
+        "realidad": "Con mitón no se manipulan piezas pequeñas. Si la tarea lo requiere, hay que replantear el procedimiento o preparar la herramienta antes de entrar."
+      },
+      {
+        "error": "Ignorar el traslape con la manga",
+        "realidad": "Una muñeca expuesta durante un ingreso es de las quemaduras más graves y más frecuentes."
+      },
+      {
+        "error": "Reutilizarlos con la palma vitrificada",
+        "realidad": "Una palma endurecida por calor perdió capacidad aislante aunque se vea entera. Es motivo de retiro."
+      },
+      {
+        "error": "No tener repuesto en almacén",
+        "realidad": "Junto con el visor son las piezas que más se degradan. Sin repuesto, un guante dañado saca de servicio el conjunto completo."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Rescate industrial",
+        "desc": "Contacto directo con superficies y estructuras calientes."
+      },
+      {
+        "titulo": "Hornos",
+        "desc": "Maniobra breve con manipulación de elementos en caliente."
+      },
+      {
+        "titulo": "Cierre de válvula en emergencia",
+        "desc": "Operación de un elemento concreto con la mano cerrada."
+      },
+      {
+        "titulo": "Reposición de conjunto",
+        "desc": "Pieza de desgaste que se cambia sin reemplazar el traje."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué mitón y no guante de dedos?",
+        "a": "Porque sin dedos separados no hay costuras entre ellos ni puntos delgados, y toda la masa aislante trabaja como una sola pieza. En ingreso, donde la mano entra primero, eso hace la diferencia entre completar la maniobra y salir con quemadura."
+      },
+      {
+        "q": "¿No pierdo demasiada destreza?",
+        "a": "Sí, se pierde casi toda la destreza fina, y hay que asumirlo al planear. Lo que se haga dentro tiene que poder ejecutarse con la mano cerrada. Si la tarea exige precisión, el procedimiento está mal planteado para este nivel de exposición."
+      },
+      {
+        "q": "¿Puedo usar guantes de aproximación?",
+        "a": "No para ingreso. Un guante de tres o cinco dedos tiene más costuras, menos masa aislante y está pensado para radiación, no para contacto directo prolongado. La mano es lo primero que entra."
+      },
+      {
+        "q": "¿Vienen incluidos en el conjunto?",
+        "a": "Sí, junto con la capucha y la talega. Se cotizan sueltos para reposición, que es frecuente porque son de las piezas que más se degradan del conjunto."
+      },
+      {
+        "q": "¿Cómo sé que ya no protegen?",
+        "a": "Palma vitrificada o endurecida, forro comprimido, costura abierta o dorso opaco. Cualquiera de esas condiciones es motivo de retiro aunque el guante se vea completo por fuera. No se reparan."
+      },
+      {
+        "q": "¿Por qué importa el largo del puño?",
+        "a": "Porque tiene que traslapar con la manga del chaquetón. Una muñeca expuesta en un ingreso produce quemaduras graves, y es una de las fallas de interfaz más comunes de todo el conjunto."
+      },
+      {
+        "q": "¿Se usan con guante interior?",
+        "a": "Algunos fabricantes lo manejan y otros integran un forro más grueso. Un guante interior facilita quitarse el mitón sin pelear con él y ayuda con la sudoración, que en este nivel es considerable."
+      },
+      {
+        "q": "¿Cada cuánto se reponen?",
+        "a": "Con más frecuencia que el traje. Junto con el visor son las piezas que concentran el contacto real con el entorno. Conviene tener al menos un par de repuesto por conjunto en servicio."
+      }
+    ],
+    "sinonimos": [
+      "guantes mitón",
+      "manopla de penetración",
+      "guantes de entrada a fuego",
+      "mitón aluminizado",
+      "fire entry mitts",
+      "guante de máximo aislamiento"
+    ],
+    "sinonimosNota": "Se piden como mitones o manoplas de entrada. En catálogo de importación aparecen como fire entry mitts.",
+    "comparativa": {
+      "titulo": "Mitón o guante de tres dedos",
+      "intro": "El cambio de destreza por aislamiento, llevado al extremo.",
+      "columnas": [
+        "Criterio",
+        "Mitón de entrada",
+        "Tres dedos de aproximación"
+      ],
+      "filas": [
+        [
+          "Aislamiento",
+          "El más alto del catálogo",
+          "Alto"
+        ],
+        [
+          "Destreza",
+          "Mínima",
+          "Limitada pero funcional"
+        ],
+        [
+          "Costuras expuestas",
+          "Casi ninguna",
+          "Algunas"
+        ],
+        [
+          "Escenario",
+          "Ingreso con contacto directo",
+          "Trabajo prolongado cerca de la fuente"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de penetración de corta duración",
+        "href": "/trajes/entrada/conjunto-corta-duracion/"
+      },
+      {
+        "label": "Guantes aluminizados de aproximación",
+        "href": "/trajes/aproximacion/guantes/"
+      },
+      {
+        "label": "Errores frecuentes al comprar traje",
+        "href": "/#errores"
+      }
+    ]
+  },
+  {
+    "slug": "hornos",
+    "familia": "entrada",
+    "nombreCard": "Conjunto para mantenimiento de hornos",
+    "nombre": "Conjunto para mantenimiento de hornos",
+    "seoTitle": "Traje para mantenimiento de hornos | en caliente | México",
+    "seoDescription": "Traje para mantenimiento de hornos con visor transparente de doble capa y parches de refuerzo en codos y rodillas: variante de entrada para trabajo en caliente.",
+    "keywords": [
+      "traje para mantenimiento de hornos",
+      "trabajo en caliente",
+      "México"
+    ],
+    "eyebrow": "Pieza · Ingreso a la flama",
+    "h1": "Traje para mantenimiento de hornos",
+    "h1Accent": "visor transparente",
+    "lead": "Variante del conjunto de entrada para trabajo en caliente: mismo aislamiento, visor transparente de doble capa y refuerzos donde se apoya el cuerpo.",
+    "descRight": [
+      "En mantenimiento de horno la tarea no es rescatar sino trabajar: revisar refractario, retirar material, hacer una reparación puntual. Eso cambia dos cosas respecto al conjunto de entrada estándar: hace falta ver con fidelidad de color y hace falta apoyarse.",
+      "Por eso el visor es transparente en vez de dorado, y por eso lleva parches de refuerzo en codos y rodillas. Es el mismo nivel de aislamiento, adaptado a una operación distinta."
+    ],
+    "meta": [
+      "Visor transparente",
+      "Parches en codos y rodillas",
+      "Trabajo en caliente",
+      "Suela especial"
+    ],
+    "resumen": [
+      "El conjunto para hornos parte del nivel de corta duración y le cambia tres cosas: el visor pasa de película dorada a doble capa transparente, se añaden parches de material resistente en codos y rodillas, y el calzado incorpora suela apta para superficie caliente.",
+      "La razón del visor transparente es práctica: en mantenimiento hay que distinguir el estado real del refractario y del material, y una película dorada altera la percepción de color. Se sacrifica algo de control del deslumbramiento a cambio de ver bien."
+    ],
+    "puntosClave": [
+      "Mismo aislamiento del conjunto de corta duración",
+      "Visor transparente de doble capa para ver color real",
+      "Parches de refuerzo en codos y rodillas para apoyarse",
+      "Suela apta para pisar superficie caliente",
+      "Pensado para trabajar, no solo para entrar y salir",
+      "Requiere igualmente equipo de respiración según la atmósfera"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-para-mantenimiento-de-hornos.svg",
+        "alt": "Traje para mantenimiento de hornos con visor transparente"
+      },
+      {
+        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "alt": "Traje de entrada aluminizado multicapa"
+      },
+      {
+        "src": "/images/productos/botas-aluminizadas-entrada.svg",
+        "alt": "Botas aluminizadas del conjunto de entrada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "No existe norma NFPA de producto para entrada"
+          },
+          {
+            "campo": "Base de evaluación",
+            "valor": "Ficha técnica del fabricante",
+            "nota": "Incluye tiempo de exposición y condiciones"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Aislamiento",
+            "valor": "El del conjunto de corta duración",
+            "nota": "No baja de nivel por ser de mantenimiento"
+          },
+          {
+            "campo": "Visor",
+            "valor": "Doble capa transparente",
+            "nota": "Permite distinguir color real del material"
+          },
+          {
+            "campo": "Parches de refuerzo",
+            "valor": "Codos y rodillas",
+            "nota": "Zonas de apoyo en trabajo dentro del equipo"
+          },
+          {
+            "campo": "Suela",
+            "valor": "Apta para superficie caliente",
+            "nota": "Materiales según fabricante"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Talla única hasta extragrande",
+            "nota": "A medida en pedidos de volumen"
+          },
+          {
+            "campo": "Contenido",
+            "valor": "Conjunto completo con capucha, guantes y talega",
+            "nota": "Igual que el de entrada"
+          },
+          {
+            "campo": "Atmósfera",
+            "valor": "Definir si requiere ERA",
+            "nota": "Depende del proceso y del confinamiento"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Visor",
+            "valor": "Consumible",
+            "nota": "El transparente se raya igual que el dorado"
+          },
+          {
+            "campo": "Parches",
+            "valor": "Se revisan en cada inspección",
+            "nota": "Son la primera zona de desgaste"
+          },
+          {
+            "campo": "Almacenamiento",
+            "valor": "Colgado y en talega",
+            "nota": "Protegido de abrasión"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Conjunto aluminizado con parches en codos y rodillas",
+      "Capucha con visor transparente de doble capa",
+      "Guantes tipo mitón",
+      "Talega de transporte"
+    ],
+    "noIncluye": [
+      "Equipo de respiración autónoma",
+      "Ropa de trabajo de fibra no inflamable",
+      "Herramienta de intervención"
+    ],
+    "errores": [
+      {
+        "error": "Usar el visor dorado para mantenimiento",
+        "realidad": "Altera la percepción de color y dificulta evaluar el estado del refractario o del material. Para esta tarea se usa transparente."
+      },
+      {
+        "error": "Comprar el conjunto estándar y suponer que sirve igual",
+        "realidad": "Sin parches en codos y rodillas, el conjunto se destruye rápido en un trabajo donde hay que apoyarse constantemente."
+      },
+      {
+        "error": "No definir si la atmósfera exige ERA",
+        "realidad": "El confinamiento y el proceso mandan. Un horno en enfriamiento no es lo mismo que uno con atmósfera de proceso activa."
+      },
+      {
+        "error": "Descuidar la suela",
+        "realidad": "Se camina sobre superficie caliente. Una suela común se degrada y transmite calor al pie en minutos."
+      },
+      {
+        "error": "Tratar el visor transparente como permanente",
+        "realidad": "Se raya igual que el dorado y la visión es el recurso central de esta tarea. Es consumible."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Mantenimiento de refractario",
+        "desc": "Inspección y reparación dentro del horno."
+      },
+      {
+        "titulo": "Retiro de material",
+        "desc": "Extracción de acumulaciones o piezas en caliente."
+      },
+      {
+        "titulo": "Inspección en caliente",
+        "desc": "Evaluación de estado sin esperar el enfriamiento total."
+      },
+      {
+        "titulo": "Vidrio y cerámica",
+        "desc": "Procesos con hornos de operación continua."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué visor transparente y no dorado?",
+        "a": "Porque en mantenimiento hay que ver el color real del refractario y del material para evaluar su estado. La película dorada altera la percepción de color, lo que en rescate no importa pero en inspección sí. Se cambia control de deslumbramiento por fidelidad de visión."
+      },
+      {
+        "q": "¿Tiene el mismo aislamiento que el conjunto de entrada?",
+        "a": "Sí, parte del mismo nivel de corta duración. Lo que cambia son el visor, los parches de refuerzo y la suela. No es una versión rebajada: es una adaptación a otra tarea."
+      },
+      {
+        "q": "¿Para qué sirven los parches en codos y rodillas?",
+        "a": "Porque en mantenimiento hay que apoyarse: arrodillarse frente al refractario, recargar el codo para trabajar con precisión. Sin refuerzo esas zonas se destruyen rápido, y en un conjunto de este costo eso es caro."
+      },
+      {
+        "q": "¿Necesita equipo de respiración?",
+        "a": "Depende del confinamiento y del proceso. Un horno en enfriamiento con ventilación no plantea el mismo escenario que uno con atmósfera de proceso. Es una definición del procedimiento de trabajo en caliente de tu planta, no del traje."
+      },
+      {
+        "q": "¿Por qué la suela es especial?",
+        "a": "Porque se camina sobre superficie caliente durante toda la intervención. Una suela común se degrada y transmite calor al pie en minutos, lo que acorta la maniobra por una razón evitable."
+      },
+      {
+        "q": "¿Se puede usar para rescate?",
+        "a": "Técnicamente el aislamiento es el mismo, pero el visor transparente controla menos el deslumbramiento frente a flama viva. Si tu operación incluye ambos escenarios, conviene revisarlo con nosotros antes de decidir un solo conjunto."
+      },
+      {
+        "q": "¿Cada cuánto se cambia el visor?",
+        "a": "Cuando se raya u opaca, igual que el dorado. En mantenimiento la visión es el recurso central de la tarea, así que conviene ser estricto con el criterio de reemplazo y tener repuesto."
+      },
+      {
+        "q": "¿Cómo se almacena?",
+        "a": "Colgado y dentro de su talega, sin apoyar el visor. El conjunto de mantenimiento se usa con más frecuencia que uno de rescate, así que la disciplina de guardado importa todavía más."
+      }
+    ],
+    "sinonimos": [
+      "traje para mantenimiento de hornos",
+      "traje de trabajo en caliente",
+      "traje aluminizado de horno",
+      "furnace maintenance suit",
+      "traje para reparación en caliente",
+      "conjunto de horno"
+    ],
+    "sinonimosNota": "Se pide como traje de horno o de trabajo en caliente. En catálogo de importación aparece como furnace entry o furnace maintenance suit.",
+    "comparativa": {
+      "titulo": "Conjunto de horno o conjunto de entrada estándar",
+      "intro": "Mismo aislamiento, distinta tarea. La diferencia está en los detalles que definen si puedes trabajar.",
+      "columnas": [
+        "Criterio",
+        "Mantenimiento de hornos",
+        "Entrada estándar"
+      ],
+      "filas": [
+        [
+          "Visor",
+          "Transparente de doble capa",
+          "Con película dorada"
+        ],
+        [
+          "Refuerzos",
+          "Codos y rodillas",
+          "Sin parches adicionales"
+        ],
+        [
+          "Tarea",
+          "Trabajar dentro",
+          "Entrar, resolver y salir"
+        ],
+        [
+          "Frecuencia de uso",
+          "Programada y recurrente",
+          "Emergencia"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de penetración de corta duración",
+        "href": "/trajes/entrada/conjunto-corta-duracion/"
+      },
+      {
+        "label": "Trajes de aproximación para trabajo prolongado",
+        "href": "/trajes/aproximacion/"
+      },
+      {
+        "label": "Normas aplicables en México",
+        "href": "/#normas"
+      }
+    ]
+  },
+  {
+    "slug": "accesorios",
+    "familia": "entrada",
+    "nombreCard": "Pasamontañas y talega de conjunto",
+    "nombre": "Pasamontañas y talega de conjunto",
+    "seoTitle": "Pasamontañas para traje de entrada | talega | México",
+    "seoDescription": "Pasamontañas para traje de entrada y talega de nailon balístico: la prenda que va bajo la capucha y el sistema que conserva el conjunto entre usos.",
+    "keywords": [
+      "pasamontañas para traje de entrada",
+      "talega de conjunto",
+      "México"
+    ],
+    "eyebrow": "Pieza · Ingreso a la flama",
+    "h1": "Pasamontañas y talega para traje de entrada",
+    "h1Accent": "los accesorios del conjunto",
+    "lead": "El pasamontañas ignífugo que va bajo la capucha y la talega de nailon balístico que conserva el conjunto entre usos.",
+    "descRight": [
+      "Son las dos piezas que vienen incluidas y que nadie recuerda hasta que faltan. El pasamontañas cierra la interfaz entre la capucha y la cara; la talega es lo que evita que la superficie aluminizada se raye guardada en un locker.",
+      "Ambas se reponen por separado y conviene tenerlo previsto: un conjunto sin talega termina dañado por abrasión, y un conjunto sin pasamontañas se usa igual pero con una franja de piel expuesta que no debería estarlo."
+    ],
+    "meta": [
+      "Pasamontañas ignífugo",
+      "Talega balística",
+      "Incluidos en conjunto",
+      "Reposición por separado"
+    ],
+    "resumen": [
+      "El pasamontañas se coloca bajo la capucha y cubre cabeza, cuello y parte del rostro que la capucha no sella por completo. Está fabricado en fibra ignífuga y su función es cerrar esa interfaz, no aportar aislamiento por sí mismo.",
+      "La talega de nailon balístico protege el conjunto durante el transporte y el almacenamiento. En un equipo cuya superficie reflejante se degrada con la abrasión, la bolsa no es un accesorio de cortesía sino parte del sistema de conservación."
+    ],
+    "puntosClave": [
+      "El pasamontañas cierra la interfaz entre capucha y rostro",
+      "Fibra ignífuga: no aporta aislamiento por sí mismo",
+      "La talega protege la superficie reflejante de la abrasión",
+      "Ambos vienen incluidos en el conjunto de entrada",
+      "Se reponen por separado, sin reemplazar el traje",
+      "Un conjunto guardado sin talega se degrada más rápido"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/pasamontanas-y-talega-de-conjunto.svg",
+        "alt": "Pasamontañas ignífugo y talega del conjunto de entrada"
+      },
+      {
+        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "alt": "Traje de entrada aluminizado multicapa"
+      },
+      {
+        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "alt": "Capucha aluminizada de traje de entrada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia",
+            "valor": "Accesorios del conjunto",
+            "nota": "Se evalúan junto con el traje"
+          },
+          {
+            "campo": "Pasamontañas",
+            "valor": "Fibra ignífuga",
+            "nota": "No sustituye a la capucha del conjunto"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Pasamontañas",
+            "valor": "Tejido ignífugo elástico",
+            "nota": "Cubre cabeza, cuello y parte del rostro"
+          },
+          {
+            "campo": "Talega",
+            "valor": "Nailon balístico",
+            "nota": "Resistente a la abrasión y al desgarre"
+          },
+          {
+            "campo": "Cierre de talega",
+            "valor": "Según modelo",
+            "nota": "Debe permitir guardar el conjunto sin forzar pliegues"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Inclusión",
+            "valor": "Vienen con el conjunto de entrada",
+            "nota": "Se cotizan sueltos para reposición"
+          },
+          {
+            "campo": "Talla del pasamontañas",
+            "valor": "Única en la mayoría de modelos",
+            "nota": "Tejido elástico"
+          },
+          {
+            "campo": "Tamaño de talega",
+            "valor": "Según el conjunto",
+            "nota": "Una talega chica obliga a doblar de más"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Pasamontañas",
+            "valor": "Lavado tras cada uso",
+            "nota": "Contacto directo con la piel"
+          },
+          {
+            "campo": "Talega",
+            "valor": "Revisión de costuras y cierre",
+            "nota": "Una talega rota deja de proteger"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Independiente del traje",
+            "nota": "Piezas de bajo costo"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Pasamontañas de fibra ignífuga",
+      "Talega de nailon balístico para transporte y almacenamiento"
+    ],
+    "noIncluye": [
+      "Capucha del conjunto: es otra pieza",
+      "Traje, guantes y demás elementos"
+    ],
+    "errores": [
+      {
+        "error": "Guardar el conjunto sin talega",
+        "realidad": "La superficie aluminizada se raya por abrasión contra el locker o contra otro equipo, y una vez opaca pierde reflectancia."
+      },
+      {
+        "error": "Usar el pasamontañas como si aislara",
+        "realidad": "Su función es cerrar la interfaz, no proteger del calor. El aislamiento lo dan la capucha y el conjunto."
+      },
+      {
+        "error": "Compartir el pasamontañas entre operadores",
+        "realidad": "Va en contacto directo con la piel del rostro. Es prenda personal por higiene."
+      },
+      {
+        "error": "Doblar el conjunto para que quepa en una talega chica",
+        "realidad": "Los pliegues forzados quiebran la capa reflejante. Si la talega no da, hay que cambiar la talega, no doblar más el traje."
+      },
+      {
+        "error": "No reponerlos por ser accesorios",
+        "realidad": "Cuestan poco y protegen una inversión grande. Es de las economías peor entendidas del catálogo."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Conjunto de entrada",
+        "desc": "Accesorios incluidos en cualquier nivel de penetración."
+      },
+      {
+        "titulo": "Reposición",
+        "desc": "Cambio de pasamontañas o talega sin tocar el traje."
+      },
+      {
+        "titulo": "Conservación del equipo",
+        "desc": "La talega es parte del sistema de almacenamiento."
+      },
+      {
+        "titulo": "Higiene del conjunto",
+        "desc": "El pasamontañas es la barrera entre la piel y el equipo compartido."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿El pasamontañas protege del calor?",
+        "a": "No es su función principal. El aislamiento lo dan la capucha y el conjunto; el pasamontañas cierra la interfaz entre la capucha y el rostro, y actúa como barrera de higiene entre la piel y un equipo que suele ser compartido."
+      },
+      {
+        "q": "¿Por qué importa tanto la talega?",
+        "a": "Porque la superficie aluminizada se degrada con la abrasión. Un conjunto guardado suelto en un locker se raya contra el metal y contra otro equipo, y una superficie opaca ya no refleja. La talega es parte del sistema de conservación, no un extra."
+      },
+      {
+        "q": "¿Vienen incluidos?",
+        "a": "Sí, ambos vienen con el conjunto de entrada. Se cotizan sueltos únicamente para reposición, que conviene prever porque son piezas de bajo costo que protegen una inversión alta."
+      },
+      {
+        "q": "¿Puedo usar cualquier bolsa en vez de la talega?",
+        "a": "No es recomendable. El nailon balístico está pensado para resistir abrasión y desgarre, y el tamaño está calculado para que el conjunto entre sin pliegues forzados. Una bolsa chica obliga a doblar de más y ahí se daña la capa reflejante."
+      },
+      {
+        "q": "¿Se puede compartir el pasamontañas?",
+        "a": "No conviene. Va en contacto directo con la piel del rostro y del cuello. Es prenda personal por higiene, aunque el resto del conjunto se comparta entre operadores."
+      },
+      {
+        "q": "¿Cada cuánto se lava?",
+        "a": "Después de cada uso. Es la única pieza del conjunto que toca la piel de forma directa y prolongada, así que acumula sudor y contaminante."
+      },
+      {
+        "q": "¿Cuándo se repone la talega?",
+        "a": "Cuando tiene costuras abiertas, rasgaduras o el cierre falla. Una talega rota deja de cumplir su función y el conjunto empieza a degradarse sin que nadie lo note hasta la siguiente inspección."
+      },
+      {
+        "q": "¿Sirve el pasamontañas de brigada?",
+        "a": "No necesariamente. La geometría de la interfaz con la capucha de entrada es distinta. Al reponer, conviene pedir el que corresponde al conjunto en servicio y no improvisar con otro modelo."
+      }
+    ],
+    "sinonimos": [
+      "pasamontañas ignífugo",
+      "balaclava para traje de entrada",
+      "talega de traje aluminizado",
+      "bolsa de conjunto",
+      "carrying bag",
+      "capuchón interior de entrada"
+    ],
+    "sinonimosNota": "El pasamontañas se pide también como balaclava o capuchón interior. La talega aparece en catálogo como carrying bag o gear bag.",
+    "comparativa": {
+      "titulo": "Reponer accesorios o dejarlos pasar",
+      "intro": "La economía peor entendida del catálogo, con números fáciles de ver.",
+      "columnas": [
+        "Criterio",
+        "Reponer a tiempo",
+        "Posponer la reposición"
+      ],
+      "filas": [
+        [
+          "Costo",
+          "Bajo, es consumible",
+          "Alto: se degrada el conjunto"
+        ],
+        [
+          "Efecto en el traje",
+          "Se conserva la reflectancia",
+          "Abrasión progresiva"
+        ],
+        [
+          "Higiene",
+          "Controlada",
+          "Pasamontañas compartido y sucio"
+        ],
+        [
+          "Resultado",
+          "El conjunto llega a su vida útil",
+          "Retiro anticipado del equipo caro"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de penetración de corta duración",
+        "href": "/trajes/entrada/conjunto-corta-duracion/"
+      },
+      {
+        "label": "Capucha de entrada con visor doble",
+        "href": "/trajes/entrada/capucha/"
+      },
+      {
+        "label": "Vida útil y servicio del equipo",
+        "href": "/#vida-util"
+      }
+    ]
   }
 ];
 
