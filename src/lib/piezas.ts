@@ -217,7 +217,7 @@ export const PIEZAS: Pieza[] = [
         q: '¿Sirve para incendio forestal o para extricación?',
         a: 'No es lo indicado. En línea de fuego forestal el peso y las barreras provocan golpe de calor en jornadas largas; para rescate vehicular lo contaminas con aceite, vidrio y fluidos, y le consumes vida útil. Cada operación tiene su familia de traje.',
       },
-    ],
+    {"q": "¿Cómo sé si un chaquetón ya debe retirarse?", "a": "Por fecha y por condición. El retiro obligado son diez años desde la fecha de fabricación que trae la etiqueta interior, no desde la compra. Antes de eso se retira si hay quemadura que atraviese el forro exterior, costuras abiertas, barrera de humedad delaminada o cinta reflejante que ya no responde a la linterna."}, {"q": "¿Puedo lavar el chaquetón en una lavadora normal?", "a": "No. Requiere lavadora de extracción sin agitador central, detergente neutro con pH entre 6 y 10.5, agua por debajo de 40 °C, sin blanqueador y sin suavizante. Una lavadora doméstica con agitador daña la barrera de humedad por fricción, y esa barrera es la que detiene el vapor a presión."}],
     sinonimos: [
           "chaquetón de bombero",
           "saco de bombero",
