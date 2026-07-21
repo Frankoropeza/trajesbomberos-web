@@ -1,0 +1,300 @@
+---
+// BlogSidebar: el mismo lenguaje que Sidebar.astro (títulos con
+// subrayado rojo, lista con borde izquierdo, tarjeta oscura de
+// contacto), pero con los bloques que sirven a un artículo:
+// índice del propio texto, últimos artículos, categorías con
+// conteo, familias de traje y la tarjeta de cotización.
+// Sticky en desktop; en móvil se apila arriba del contenido.
+// Data-driven desde site.ts y blog.ts (SSoT). Regla D4: waUrl.
+import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+import { getPosts, categoriasConConteo, postUrl, categoriaUrl, categoriaNombre } from '@lib/blog';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings?: Heading[];          // índice del artículo (solo H2)
+  currentId?: string;            // artículo actual: no se autoenlaza
+  currentCategoria?: string;     // categoría actual: se marca
+  waMessage?: string;
+  flowOnMobile?: boolean;        // en artículo: índice arriba, resto abajo
+}
+const {
+  headings = [],
+  currentId,
+  currentCategoria,
+  waMessage = WA_MESSAGES.cotizar,
+  flowOnMobile = false,
+} = Astro.props;
+
+// Solo H2: un índice de segundo nivel es navegable; uno de tercero,
+// ruido. Los H3 quedan para el lector dentro de cada bloque.
+const toc = headings.filter((h) => h.depth === 2);
+
+const posts = await getPosts();
+const recientes = posts.filter((p) => p.id !== currentId).slice(0, 5);
+const categorias = await categoriasConConteo();
+---
+<aside class:list={['sidebar', { 'sidebar--flow': flowOnMobile }]} aria-label="Navegación del blog">
+  {toc.length > 0 && (
+    <nav class="sb-block sb-block--toc" aria-label="Índice del artículo">
+      <p class="sb-title">En este artículo</p>
+      <ul class="sb-list sb-list--anchors" id="blog-toc">
+        {toc.map((h) => (
+          <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  {recientes.length > 0 && (
+    <nav class="sb-block" aria-label="Artículos recientes">
+      <p class="sb-title">Artículos recientes</p>
+      <ul class="sb-posts">
+        {recientes.map((p) => (
+          <li>
+            <a href={postUrl(p)}>
+              <span class="sb-posts__cat">{categoriaNombre(p.data.categoria)}</span>
+              <span class="sb-posts__title">{p.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <nav class="sb-block" aria-label="Categorías del blog">
+    <p class="sb-title">Categorías</p>
+    <ul class="sb-list">
+      {categorias.map((c) => (
+        <li>
+          <a
+            href={categoriaUrl(c.slug)}
+            class:list={['sb-cat', { 'is-active': c.slug === currentCategoria }]}
+            aria-current={c.slug === currentCategoria ? 'page' : undefined}
+          >
+            <span>{c.nombre}</span>
+            <span class="sb-cat__n">{c.total}</span>
+          </a>
+        </li>
+      ))}
+      <li><a class="sb-all" href="/blog/">Ver todos los artículos</a></li>
+    </ul>
+  </nav>
+
+  <nav class="sb-block" aria-label="Familias de traje">
+    <p class="sb-title">Familias de traje</p>
+    <ul class="sb-list sb-list--muted">
+      {PRODUCT_CATEGORIES.map((c) => (
+        <li><a href={`/trajes/${c.slug}/`}>{c.nombre}</a></li>
+      ))}
+      <li><a class="sb-all" href="/trajes/">Ver comparativa completa</a></li>
+    </ul>
+  </nav>
+
+  <div class="sb-card">
+    <p class="sb-card__title">¿Necesitas una cotización?</p>
+    <p class="sb-card__text">Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</p>
+    <a class="sb-card__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Cotizar por WhatsApp
+    </a>
+    <a class="sb-card__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+    <p class="sb-card__horario">{CONTACT.horario}</p>
+  </div>
+</aside>
+
+<style>
+  .sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+    display: grid;
+    gap: 1.8rem;
+    align-self: start;
+    max-height: calc(100vh - var(--header-height) - 3rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .sb-title {
+    margin: 0 0 0.7rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .sb-list { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-list a {
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border-left: 2px solid transparent;
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  }
+  .sb-list a:hover { color: var(--color-primary); background: var(--color-light); }
+  .sb-list a.is-active {
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 800;
+  }
+  .sb-all {
+    margin-top: 0.35rem;
+    border-top: var(--border);
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+    font-size: 0.85rem !important;
+  }
+  .sb-list--anchors a { font-weight: 600; color: var(--color-gray); font-size: 0.86rem; line-height: 1.4; }
+  .sb-list--muted a { font-size: 0.85rem; color: var(--color-gray); font-weight: 600; }
+
+  /* Índice del artículo: marca la sección visible (scrollspy) */
+  .sb-list--anchors a.is-reading {
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 800;
+  }
+
+  .sb-cat { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; }
+  .sb-cat__n {
+    flex-shrink: 0;
+    min-width: 22px;
+    padding: 0.05rem 0.35rem;
+    border-radius: 2px;
+    background: var(--color-light);
+    border: 1px solid var(--color-gray-light);
+    color: var(--color-gray-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .sb-cat.is-active .sb-cat__n { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+
+  .sb-posts { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-posts li + li { border-top: var(--border); }
+  .sb-posts a {
+    display: grid;
+    gap: 0.18rem;
+    padding: 0.75rem 0;
+    text-decoration: none;
+  }
+  .sb-posts__cat {
+    font-size: 0.66rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-primary);
+  }
+  .sb-posts__title {
+    color: var(--color-dark);
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
+
+  .sb-card {
+    background: var(--color-ink);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem;
+  }
+  .sb-card__title { margin: 0 0 0.35rem; color: var(--color-white); font-weight: 800; font-size: 1rem; }
+  .sb-card__text { margin: 0 0 1rem; color: #b9bec5; font-size: 0.85rem; }
+  .sb-card__wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    background: var(--color-wa);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    min-height: 46px;
+  }
+  .sb-card__wa:hover { background: var(--color-wa-dark); }
+  .sb-card__tel {
+    display: block;
+    margin-top: 0.7rem;
+    text-align: center;
+    color: var(--color-accent);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .sb-card__horario { margin: 0.2rem 0 0; text-align: center; color: #8a9099; font-size: 0.76rem; }
+
+  @media (max-width: 1024px) {
+    .sidebar {
+      position: static;
+      order: -1;
+      max-height: none;
+      overflow: visible;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 2rem;
+    }
+    .sb-block--toc { grid-column: 1 / -1; }
+    .sb-card { grid-column: 1 / -1; }
+  }
+  @media (max-width: 640px) {
+    .sidebar { grid-template-columns: 1fr; }
+  }
+
+  /* Artículo en móvil: el aside se disuelve en la retícula del
+     padre (display:contents) para que el índice quede ARRIBA del
+     texto y el resto —recientes, categorías, familias y CTA—
+     debajo. Leer primero, navegar después. */
+  @media (max-width: 1024px) {
+    .sidebar--flow { display: contents; }
+    .sidebar--flow .sb-block,
+    .sidebar--flow .sb-card { order: 1; }
+    .sidebar--flow .sb-block--toc { order: -1; }
+  }
+</style>
+
+<script>
+  // Scrollspy del índice: marca el H2 que el lector tiene enfrente.
+  // Sin dependencias y sin tocar el historial (nada de scroll-jack).
+  const toc = document.getElementById('blog-toc');
+  if (toc) {
+    const links = new Map<string, HTMLAnchorElement>();
+    toc.querySelectorAll<HTMLAnchorElement>('a[data-toc]').forEach((a) => {
+      const id = a.dataset.toc;
+      if (id) links.set(id, a);
+    });
+    const targets = [...links.keys()]
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => !!el);
+
+    if (targets.length) {
+      let activo = '';
+      const marcar = (id: string) => {
+        if (id === activo) return;
+        activo = id;
+        links.forEach((a, key) => a.classList.toggle('is-reading', key === id));
+      };
+      const io = new IntersectionObserver(
+        (entries) => {
+          const visibles = entries
+            .filter((e) => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          if (visibles[0]?.target.id) marcar(visibles[0].target.id);
+        },
+        { rootMargin: '-15% 0px -70% 0px', threshold: 0 },
+      );
+      targets.forEach((t) => io.observe(t));
+    }
+  }
+</script>

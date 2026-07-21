@@ -1,0 +1,198 @@
+---
+// L2 · Índice del blog: /blog/
+// Misma arquitectura que /trajes/: hero canónico, franja de
+// secciones y contenido con sidebar sticky. El destacado va a
+// ancho completo arriba; el resto en retícula junto al sidebar.
+// El ItemList lo emite ESTA página (regla B3), nunca las tarjetas.
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import PostCard from '@components/PostCard.astro';
+import BlogSidebar from '@components/BlogSidebar.astro';
+import CTABanner from '@components/CTABanner.astro';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { SITE, BLOG_CATEGORIES } from '@config/site';
+import { getPosts, postUrl, categoriaUrl, readingTime, categoriasConConteo } from '@lib/blog';
+
+const path = '/blog/';
+
+const posts = await getPosts();
+const destacado = posts.find((p) => p.data.destacado) ?? posts[0];
+const resto = posts.filter((p) => p.id !== destacado?.id);
+const categorias = await categoriasConConteo();
+
+const menuItems = [
+  { label: 'Últimos artículos', href: '#articulos' },
+  { label: 'Por categoría', href: '#categorias' },
+  ...BLOG_CATEGORIES.slice(0, 2).map((c) => ({ label: c.nombre, href: categoriaUrl(c.slug) })),
+  { label: 'Todas las familias', href: '/trajes/' },
+];
+
+const keywords = ['blog de trajes para bomberos', 'guías técnicas', 'México'] as const;
+const title = 'Blog de trajes para bomberos | guías | México';
+const description =
+  'Blog de trajes para bomberos: cómo especificar, qué exige la norma NFPA 1970, comparativas entre familias, vida útil del equipo y expediente para licitación.';
+
+const directoryItems = posts.map((p) => ({
+  name: p.data.title,
+  url: new URL(postUrl(p), SITE.url).href,
+}));
+---
+<PageLayout
+  pageType="directorio"
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  crumbLabel="Blog"
+  eyebrow="Conocimiento técnico, no relleno"
+  h1="Blog de trajes para bomberos"
+  h1Accent="y equipo contra incendios"
+  lead="Lo que preguntan por teléfono todos los días, explicado con el criterio con el que se especifica una requisición: normas, comparativas, vida útil y compra pública."
+  meta={[`${posts.length} artículos publicados`, 'Escrito por gente del ramo', 'Sin copiar fichas de fabricante', 'Actualizado con norma vigente']}
+  descRight={[
+    'No escribimos para llenar el sitio. Cada artículo sale de una llamada real: un comprador que no sabe si necesita estructural o brigadista, un área de compras que recibió tres ofertas que no se pueden comparar, un jefe de estación al que le retiraron equipo por fecha de fabricación.',
+    'Todo lo que leas aquí lo puedes contrastar con la norma citada y con la ficha técnica del fabricante. Si algo no nos consta, lo decimos. Y si tu caso no encaja con lo que está escrito, escríbenos: preferimos perder una venta que venderte el traje equivocado.',
+  ]}
+  directoryItems={directoryItems}
+>
+  {destacado && (
+    <section class="section section--tight">
+      <div class="container">
+        <SectionHeading
+          eyebrow="Empieza por aquí"
+          title="El artículo que más nos piden"
+          description="Si es tu primera compra de equipo de protección contra incendios, este es el punto de partida."
+        />
+        <PostCard
+          href={postUrl(destacado)}
+          title={destacado.data.title}
+          resumen={destacado.data.resumen}
+          categoria={destacado.data.categoria}
+          fecha={destacado.data.fecha}
+          lectura={readingTime(destacado.body)}
+          destacado={true}
+          wide={true}
+        />
+      </div>
+    </section>
+  )}
+
+  <div class="section section--tight" id="articulos">
+    <div class="container layout-grid">
+      <div class="layout-main">
+        <SectionHeading
+          eyebrow="Últimos artículos"
+          title="Todo lo publicado, de lo más reciente a lo más viejo"
+          description="Cinco categorías: cómo especificar, normas y certificación, comparativas entre familias, vida útil y servicio, y compras y licitación."
+        />
+        {resto.length > 0 ? (
+          <div class="post-grid">
+            {resto.map((p, i) => (
+              <PostCard
+                href={postUrl(p)}
+                title={p.data.title}
+                resumen={p.data.resumen}
+                categoria={p.data.categoria}
+                fecha={p.data.fecha}
+                lectura={readingTime(p.body)}
+                destacado={p.data.destacado}
+                index={i}
+              />
+            ))}
+          </div>
+        ) : (
+          <p class="vacio">Pronto publicaremos más artículos en esta sección.</p>
+        )}
+      </div>
+
+      <BlogSidebar currentId={destacado?.id} />
+    </div>
+  </div>
+
+  <section class="section section--alt" id="categorias">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Por categoría"
+        title="Entra directo a lo que estás resolviendo"
+        description="Cada categoría responde a una etapa distinta de la compra: entender, comparar, documentar y mantener."
+      />
+      <div class="cat-grid">
+        {categorias.map((c) => (
+          <a class="cat-tile" href={categoriaUrl(c.slug)}>
+            <span class="cat-tile__n">{String(c.total).padStart(2, '0')}</span>
+            <h3>{c.nombre}</h3>
+            <p>{c.desc}</p>
+            <span class="cat-tile__cta">
+              Ver artículos
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABanner variant="dark" {...PRESET_CONTACTO} />
+</PageLayout>
+
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gap-grid);
+  }
+  .vacio { color: var(--color-gray); }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--gap-grid);
+  }
+  .cat-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding: 1.5rem 1.4rem 1.3rem;
+    background: var(--color-white);
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+  }
+  .cat-tile:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: rgb(200 16 46 / 0.35);
+  }
+  .cat-tile__n {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+  }
+  .cat-tile h3 { margin: 0; font-size: 1rem; }
+  .cat-tile p { margin: 0; flex: 1; color: var(--color-gray); font-size: 0.85rem; line-height: 1.55; }
+  .cat-tile__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+    padding-top: 0.8rem;
+    border-top: var(--border);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.82rem;
+  }
+  .cat-tile__cta svg { transition: transform 0.22s ease; }
+  .cat-tile:hover .cat-tile__cta svg { transform: translateX(4px); }
+
+  @media (max-width: 1200px) { .cat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 860px) {
+    .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 720px) { .post-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 520px) { .cat-grid { grid-template-columns: 1fr; } }
+</style>

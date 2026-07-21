@@ -1,0 +1,85 @@
+---
+// ProductCard: pieza cotizable dentro de una familia de traje.
+// API pequeña y sin foto: en este catálogo la prenda se define por
+// construcción y norma, no por imagen de stock. NO emite schema
+// (regla B3: el grid padre emite ItemList desde la página).
+import { WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+interface Props {
+  nombre: string;
+  desc: string;
+  chips: string[];
+  spec?: string;      // rangos que se especifican al cotizar
+  index?: number;
+}
+const { nombre, desc, chips, spec, index = 0 } = Astro.props;
+---
+<article class="prod">
+  <span class="prod__n">{String(index + 1).padStart(2, '0')}</span>
+  <h3>{nombre}</h3>
+  <p class="prod__desc">{desc}</p>
+  <div class="prod__chips">
+    {chips.map((c) => <span class="chip">{c}</span>)}
+  </div>
+  {spec && (
+    <p class="prod__spec"><strong>Se especifica:</strong> {spec}</p>
+  )}
+  <a
+    class="prod__cta"
+    href={waUrl(WA_MESSAGES.categoria(nombre))}
+    target="_blank"
+    rel="noopener nofollow"
+  >
+    Cotizar esta pieza
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+</article>
+
+<style>
+  .prod {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: var(--border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem 1.4rem 1.3rem;
+    height: 100%;
+    transition: box-shadow 0.22s ease, transform 0.22s ease;
+  }
+  .prod:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+  .prod__n {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--color-gray-soft);
+    margin-bottom: 0.45rem;
+  }
+  h3 { margin: 0 0 0.5rem; font-size: 1.02rem; }
+  .prod__desc { margin: 0 0 0.9rem; color: var(--color-gray); font-size: 0.87rem; line-height: 1.55; }
+  .prod__chips { display: flex; flex-wrap: wrap; gap: 0.32rem; margin-bottom: 0.9rem; }
+  .prod__spec {
+    margin: 0 0 1rem;
+    padding-left: 0.8rem;
+    border-left: 3px solid var(--color-accent);
+    font-size: 0.8rem;
+    color: var(--color-gray);
+    flex: 1;
+  }
+  .prod__spec strong { color: var(--color-dark); }
+  .prod__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.9rem;
+    border-top: var(--border);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .prod__cta svg { transition: transform 0.22s ease; }
+  .prod:hover .prod__cta svg { transform: translateX(4px); }
+</style>

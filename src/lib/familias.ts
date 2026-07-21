@@ -26,6 +26,7 @@ export interface FamiliaDetalle {
   keywords: readonly string[];
   especificar: { titulo: string; desc: string }[];
   faqs: { q: string; a: string }[];
+  productos: { nombre: string; desc: string; chips: string[]; spec?: string }[];
 }
 
 export const FAMILIAS: FamiliaDetalle[] = [
@@ -59,6 +60,68 @@ export const FAMILIAS: FamiliaDetalle[] = [
     keywords: ["traje estructural para bombero", "tres capas", "México"],
     especificar: [{"titulo": "El composite, con nombre y apellido", "desc": "Exterior, barrera de humedad y barrera térmica, cada uno con su nombre comercial. Sin eso no puedes comparar dos ofertas."}, {"titulo": "TPP y THL juntos", "desc": "Referencias mínimas: TPP 35 y THL 205. El TPP alto con THL bajo se paga en estrés térmico."}, {"titulo": "Largo y corte", "desc": "Chaquetón de 28 a 35 pulgadas, tirantes H-back o Y-back, refuerzos en rodilla y codo."}, {"titulo": "Etiqueta y fecha", "desc": "La certificación va a nombre del fabricante y la fecha de fabricación arranca los diez años de vida útil."}],
     faqs: [{"q": "¿Cuántas capas debe tener un traje estructural?", "a": "Tres: capa exterior, barrera de humedad y barrera térmica. Si una falta, no es un traje estructural aunque el proveedor lo llame así. Entre la barrera térmica y la de humedad se define la mayor parte de la protección real."}, {"q": "¿Qué es el DRD y viene incluido?", "a": "Es el Drag Rescue Device: un arnés integrado al chaquetón que permite arrastrar a un elemento inconsciente. Forma parte de los requisitos del conjunto estructural. Si una oferta no lo menciona, pregúntalo explícitamente."}, {"q": "¿Conviene talla de stock o a medida?", "a": "Depende del presupuesto y del uso. Lo que no conviene es mezclar: si el chaquetón y la pantalonera no ajustan entre sí, la cintura queda abierta y ahí entra el calor. Te ayudamos a tomar medidas antes de pedir."}],
+    productos: [
+          {
+                "nombre": "Chaquetón estructural de tres capas",
+                "desc": "Prenda superior del conjunto: capa exterior ignífuga, barrera de humedad y barrera térmica, con DRD integrado para arrastre de rescate. Se cotiza independiente del pantalón.",
+                "chips": [
+                      "Tres capas",
+                      "DRD integrado",
+                      "NFPA 1970"
+                ],
+                "spec": "talla de pecho, largo y manga; opción de espalda extendida 3\" o 6\"; configuración de bolsas, refuerzos, cinta reflejante y puños"
+          },
+          {
+                "nombre": "Pantalonera estructural",
+                "desc": "Pantalón de combate de tres capas con rodillas articuladas y refuerzos. Se especifica por cintura y entrepierna, y por tipo de ajuste.",
+                "chips": [
+                      "Tres capas",
+                      "Rodilla reforzada",
+                      "4 ajustes"
+                ],
+                "spec": "ajuste slim, regular, relajado o de dama; cintura y entrepierna; cierre de cintura con medio cinturón, cinturón completo o cinturón de escape"
+          },
+          {
+                "nombre": "Tirantes acolchados tipo H",
+                "desc": "Soporte del pantalón con espalda en H acolchada y liberación rápida. Sin herrajes metálicos que lastimen bajo el arnés del equipo de respiración.",
+                "chips": [
+                      "Espalda en H",
+                      "Acolchados",
+                      "Sin herraje"
+                ],
+                "spec": "largo por estatura; sujeción a presillas del pantalón"
+          },
+          {
+                "nombre": "Rodilleras de espuma para forro",
+                "desc": "Almohadillas de espuma de célula cerrada que se instalan sobre el forro del pantalón, en la rodilla. Amortiguan el trabajo hincado y no absorben agua.",
+                "chips": [
+                      "Célula cerrada",
+                      "Se monta en forro",
+                      "Opción de fábrica"
+                ],
+                "spec": "se pide como opción del pantalón, no se instala después"
+          },
+          {
+                "nombre": "Arnés interno de escape",
+                "desc": "Arnés clase escape cosido dentro del pantalón, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 1983, aparte del conjunto.",
+                "chips": [
+                      "NFPA 1983",
+                      "Perneras flotantes",
+                      "Integrado"
+                ],
+                "spec": "clase de arnés y bolsa para cuerda, gancho y descensor"
+          },
+          {
+                "nombre": "Capucha antipartículas (monja)",
+                "desc": "Cubre cabeza, cuello y orejas con barrera de partículas y sella la interfaz entre casco, chaquetón y máscara del equipo de respiración.",
+                "chips": [
+                      "Barrera de partículas",
+                      "Interfaz con ERA",
+                      "Doble capa"
+                ],
+                "spec": "tipo de barrera y compatibilidad con la máscara en uso"
+          }
+    ]
   },
   {
     slug: 'brigadista',
@@ -89,6 +152,68 @@ export const FAMILIAS: FamiliaDetalle[] = [
     keywords: ["traje de brigadista", "NOM-002-STPS", "México"],
     especificar: [{"titulo": "Qué incluye el combo", "desc": "Chaquetón, pantalón, casco, guantes, botas y escafandra. Pide el desglose por pieza, no un precio global."}, {"titulo": "Alcance declarado por escrito", "desc": "Que la ficha diga para qué está pensado. Si dice uso estructural, exige la certificación del conjunto."}, {"titulo": "Tallas por elemento", "desc": "La brigada cambia de integrantes: pregunta por disponibilidad de reposición y rango de tallas."}, {"titulo": "Respaldo documental", "desc": "Ficha técnica y factura CFDI, que es lo que te va a pedir tu auditoría interna o la STPS."}],
     faqs: [{"q": "¿La NOM-002-STPS obliga a comprar traje de bombero?", "a": "Obliga a dotar de equipo de protección personal a los integrantes de la brigada contra incendio (cláusula 5.9), conforme a la NOM-017-STPS-2024 vigente. No especifica marca ni norma de producto: eso depende del análisis de riesgo de tu centro de trabajo."}, {"q": "¿Un traje de brigadista sirve para entrar a un incendio?", "a": "No para ataque interior. Está pensado para conato: control con extintor, contención inicial y evacuación. Si tu brigada entra a espacios con humo o fuego declarado, lo que corresponde es un traje estructural."}, {"q": "¿Por qué cuesta bastante menos que un estructural?", "a": "Porque protege para otro escenario. El estructural certificado lleva tres capas y un proceso de certificación del conjunto completo; el de brigadista tiene otro alcance. La diferencia de precio refleja una diferencia real de protección, no de calidad de marca."}],
+    productos: [
+          {
+                "nombre": "Conjunto de brigada contra fuego incipiente",
+                "desc": "Chaquetón y pantalón para brigada industrial en atención de conato, con capa externa inherentemente ignífuga y forro desmontable de barrera de humedad más barrera térmica.",
+                "chips": [
+                      "Nomex · Kevlar",
+                      "Forro desmontable",
+                      "Refuerzo en rodilla"
+                ],
+                "spec": "tallas por elemento; configuración de cinta reflejante y tirantes"
+          },
+          {
+                "nombre": "Overol ignífugo NFPA 2112",
+                "desc": "Overol de una pieza en aramida inherente, certificado para exposición breve a flamazo. Es la prenda base de brigada en planta, petroquímica y energía.",
+                "chips": [
+                      "Nomex IIIA",
+                      "NFPA 2112",
+                      "Antiestático"
+                ],
+                "spec": "tallas CH a XG; cierre de dos vías; bordado o serigrafía de empresa"
+          },
+          {
+                "nombre": "Chaquetón de brigadista (pieza suelta)",
+                "desc": "Chaquetón de brigada con barreras técnicas, bandas reflejantes de alta visibilidad y refuerzos en zonas de desgaste. Se cotiza suelto para reposición.",
+                "chips": [
+                      "Multicapa",
+                      "Bandas reflejantes",
+                      "Reposición"
+                ],
+                "spec": "talla y largo; misma configuración que el conjunto para uniformidad"
+          },
+          {
+                "nombre": "Pantalonera de brigadista (pieza suelta)",
+                "desc": "Pantalón de brigada con refuerzos en rodillas y valencianas, tirantes de alta resistencia y cinta reflejante. Se repone con más frecuencia que el chaquetón.",
+                "chips": [
+                      "Refuerzo rodilla",
+                      "Incluye tirantes",
+                      "Reposición"
+                ],
+                "spec": "cintura y largo; tipo de tirante"
+          },
+          {
+                "nombre": "Monja (capucha) de brigada",
+                "desc": "Capuchón de tejido aramídico elástico que cubre orejas, cuello y mandíbula: justo lo que no cubren el casco ni el chaquetón.",
+                "chips": [
+                      "Aramida elástica",
+                      "Talla única",
+                      "Interfaz con ERA"
+                ],
+                "spec": "número de capas y compatibilidad con la máscara"
+          },
+          {
+                "nombre": "Tirantes tipo X de ocho puntos",
+                "desc": "Tirantes de elástico con terminales de piel y sujeción en X, para repartir el peso de la pantalonera en uso prolongado.",
+                "chips": [
+                      "Elástico 2\"",
+                      "Terminal de piel",
+                      "Sujeción en X"
+                ],
+                "spec": "largo por estatura del elemento"
+          }
+    ]
   },
   {
     slug: 'forestal',
@@ -119,6 +244,68 @@ export const FAMILIAS: FamiliaDetalle[] = [
     keywords: ["traje forestal para bombero", "incendios de vegetación", "México"],
     especificar: [{"titulo": "Fibra inherente, no tratada", "desc": "La protección debe estar en la fibra. Un acabado tratado se degrada con los lavados y nadie lleva la cuenta."}, {"titulo": "Peso de la tela", "desc": "Se especifica en onzas por yarda cuadrada. Más ligera respira mejor; más pesada resiste más el matorral."}, {"titulo": "Camisola y pantalón por separado", "desc": "Se reponen a ritmos distintos: la camisola sufre más. Pregunta por reposición por pieza."}, {"titulo": "Botas sin puntera de acero", "desc": "El acero conduce calor. Para línea de fuego se usa bota de piel, caña media y suela resistente."}],
     faqs: [{"q": "¿Por qué el traje forestal es de una sola capa?", "a": "Porque el riesgo dominante no es el engullimiento sino el agotamiento por calor en turnos muy largos. Añadir barreras aumentaría la protección puntual, pero al costo de que el bombero no pueda disipar su propio calor durante horas."}, {"q": "¿Sirve un traje forestal para incendio estructural?", "a": "No. Sin barrera de humedad ni barrera térmica no hay protección frente al calor y el vapor de un interior. Son dos equipos distintos para dos riesgos distintos."}, {"q": "¿Qué más necesito además del traje?", "a": "Casco forestal con barbiquejo, goggles, guantes de piel ligeros, botas sin puntera de acero y, según la operación, mochila de agua o herramienta manual. Lo cotizamos junto si lo necesitas."}],
+    productos: [
+          {
+                "nombre": "Camisola forestal",
+                "desc": "Camisola de manga larga en tela inherentemente ignífuga y construcción ventilada. Es la prenda preferida por cuadrillas de línea sobre la chamarra.",
+                "chips": [
+                      "Fibra inherente",
+                      "Alta ventilación",
+                      "NFPA 1950 (ex 1977)"
+                ],
+                "spec": "gramaje de la tela en oz/yd²; talla; corte atlético o relajado"
+          },
+          {
+                "nombre": "Pantalón cargo forestal",
+                "desc": "Pantalón tipo cargo en tela ignífuga inherente, con bolsas de carga, refuerzos y ajuste en valenciana para terreno agreste y uso con mochila.",
+                "chips": [
+                      "Bolsas cargo",
+                      "Refuerzo en rodilla",
+                      "NFPA 1950 (ex 1977)"
+                ],
+                "spec": "gramaje; corte atlético o relajado; línea de dama; abertura de pierna con cierre"
+          },
+          {
+                "nombre": "Chamarra forestal",
+                "desc": "Chamarra de combate de una sola capa, con más cobertura que la camisola, cierre interno y solapa exterior. Para interfaz urbano-rural y quema controlada.",
+                "chips": [
+                      "Monocapa",
+                      "Largo 32\"",
+                      "Puños ajustables"
+                ],
+                "spec": "talla y gramaje; presillas de utilidad y velcro en pecho"
+          },
+          {
+                "nombre": "Overol forestal",
+                "desc": "Overol de una pieza en tela ignífuga inherente, alternativa al conjunto de dos piezas cuando se busca cobertura continua sin interfaz camisa-pantalón.",
+                "chips": [
+                      "Una pieza",
+                      "Cobertura continua",
+                      "NFPA 1950 (ex 1977)"
+                ],
+                "spec": "talla; gramaje; configuración de bolsas"
+          },
+          {
+                "nombre": "Nuquera forestal",
+                "desc": "Protector de nuca en tela ignífuga que se acopla al casco y cubre cuello y orejas de la lluvia de pavesas y del calor radiante.",
+                "chips": [
+                      "Acople a casco",
+                      "Cubre nuca",
+                      "Tela FR"
+                ],
+                "spec": "compatibilidad con el modelo de casco forestal en uso"
+          },
+          {
+                "nombre": "Conjunto dual forestal y rescate",
+                "desc": "Chaqueta y pantalón certificados a la vez para incendio forestal y rescate técnico, para brigadas que atienden ambos escenarios con un solo equipo.",
+                "chips": [
+                      "Doble certificación",
+                      "Monocapa ligera",
+                      "Alta transpirabilidad"
+                ],
+                "spec": "tallas por elemento; tela sin PFAS disponible"
+          }
+    ]
   },
   {
     slug: 'aproximacion',
@@ -149,6 +336,68 @@ export const FAMILIAS: FamiliaDetalle[] = [
     keywords: ["traje de aproximación aluminizado", "calor radiante", "México"],
     especificar: [{"titulo": "Superficie reflejante", "desc": "El aluminizado refleja radiación. Pregunta por el porcentaje de reflectancia y por el sustrato debajo."}, {"titulo": "Conjunto completo", "desc": "Traje, capucha con visor, guantes y botas de la misma familia. Un guante estructural deja el punto débil en la mano."}, {"titulo": "Movilidad real", "desc": "Es equipo de trabajo. Verifica que permita agacharse, jalar y manipular herramienta con el conjunto puesto."}, {"titulo": "Compatibilidad con el ERA", "desc": "Si la operación lo requiere, el traje debe alojar el equipo de respiración sin comprometer el cierre."}],
     faqs: [{"q": "¿Cuál es la diferencia entre aproximación y entrada?", "a": "Aproximación es para trabajar cerca del calor radiante de forma prolongada, conservando movilidad. Entrada permite el ingreso breve a la flama, es multicapa, pesado y se usa por minutos. Comprar uno creyendo que hace lo del otro es el error más peligroso del catálogo."}, {"q": "¿En qué industrias se usa?", "a": "Rescate y extinción en aeropuertos (ARFF), refinería y petroquímica, fundición y colada de metal, hornos industriales y plantas de vidrio. En general, cualquier operación con una fuente de calor radiante intensa y sostenida."}, {"q": "¿Requiere mantenimiento especial?", "a": "Sí. La superficie aluminizada se daña con abrasión y con limpieza agresiva, y una vez rayada pierde reflectancia. Pide al fabricante el procedimiento de limpieza y almacenamiento antes de ponerlo en servicio."}],
+    productos: [
+          {
+                "nombre": "Chaquetón aluminizado de aproximación",
+                "desc": "Capa exterior aluminizada que refleja el calor radiante sobre un forro ignífugo. Se usa encima de ropa de trabajo no inflamable.",
+                "chips": [
+                      "Exterior aluminizado",
+                      "Bolsa para ERA",
+                      "ISO 11612"
+                ],
+                "spec": "tipo de forro: algodón FR, neopreno, aramida acolchada o fibra de vidrio"
+          },
+          {
+                "nombre": "Pantalón aluminizado de aproximación",
+                "desc": "Pantalón aluminizado con tirantes para ajustar el largo y puños ajustables. Complemento del chaquetón en el mismo nivel de protección radiante.",
+                "chips": [
+                      "Aluminizado",
+                      "Tirantes de ajuste",
+                      "Puños ajustables"
+                ],
+                "spec": "talla; opción de rodillas reforzadas"
+          },
+          {
+                "nombre": "Capucha aluminizada con visor dorado",
+                "desc": "Capucha con casco duro de ajuste dentado, visor con película dorada y cobertor que abarca todo el hombro. Protege cabeza, cara y cuello del calor radiante.",
+                "chips": [
+                      "Visor dorado",
+                      "Casco duro",
+                      "Cobertor de hombro"
+                ],
+                "spec": "tipo de visor: vidrio laminado, policarbonato dorado o doble capa"
+          },
+          {
+                "nombre": "Guantes aluminizados de tres dedos",
+                "desc": "Manopla con dorso aluminizado y palma resistente al calor. Sacrifica destreza para maximizar el aislamiento de la mano.",
+                "chips": [
+                      "Manopla 3 dedos",
+                      "Palma aislante",
+                      "Forro térmico"
+                ],
+                "spec": "talla; tipo de palma"
+          },
+          {
+                "nombre": "Polainas aluminizadas para bota",
+                "desc": "Cobertores aluminizados que se fijan con velcro detrás de la bota. Se usan sobre el calzado de trabajo, no lo sustituyen.",
+                "chips": [
+                      "Se usa sobre bota",
+                      "Cierre de velcro",
+                      "Aluminizado"
+                ],
+                "spec": "talla; alternativa: bota aluminizada de conjunto"
+          },
+          {
+                "nombre": "Delantal aluminizado",
+                "desc": "Protección frontal contra calor radiante y salpicadura de metal fundido, para operaciones donde no se justifica el conjunto completo.",
+                "chips": [
+                      "Protección frontal",
+                      "Fundición",
+                      "Aluminizado"
+                ],
+                "spec": "largo y ancho; tipo de sujeción"
+          }
+    ]
   },
   {
     slug: 'entrada',
@@ -179,6 +428,68 @@ export const FAMILIAS: FamiliaDetalle[] = [
     keywords: ["traje de entrada a la flama", "aluminizado multicapa", "México"],
     especificar: [{"titulo": "Ficha del fabricante", "desc": "No hay norma NFPA de producto específica para entrada: la especificación es contra la ficha técnica, así que léela completa."}, {"titulo": "Tiempo de exposición declarado", "desc": "El fabricante debe indicar el tiempo máximo de exposición y en qué condiciones se midió."}, {"titulo": "Integración con el ERA", "desc": "El conjunto tiene que alojar el equipo de respiración y permitir su revisión sin desarmar todo."}, {"titulo": "Entrenamiento incluido", "desc": "Es equipo que se usa mal si nadie practicó con él. Pregunta si el proveedor da capacitación de uso."}],
     faqs: [{"q": "¿Cuánto tiempo se puede permanecer con un traje de entrada?", "a": "Muy poco, y depende del modelo y de las condiciones. El fabricante declara el tiempo máximo de exposición en su ficha técnica. Es equipo para entrar, resolver y salir, no para operar."}, {"q": "¿Existe una norma NFPA para trajes de entrada?", "a": "No hay una norma NFPA de producto específica para entrada, a diferencia del estructural o el forestal. Por eso la evaluación se hace contra la ficha del fabricante y conviene revisarla con detenimiento antes de comprar."}, {"q": "¿Se puede usar sin equipo de respiración?", "a": "No. El ingreso a la flama implica atmósfera no respirable. Sin equipo de respiración autónoma y sin protocolo de entrada y salida, el traje no habilita la maniobra."}],
+    productos: [
+          {
+                "nombre": "Conjunto de penetración de corta duración",
+                "desc": "Conjunto aluminizado fuertemente aislado para entrada rápida y salida: da tiempo para un rescate o para cerrar una válvula en fuego declarado.",
+                "chips": [
+                      "Multicapa aislado",
+                      "ISO 11612",
+                      "Uso corto"
+                ],
+                "spec": "talla única hasta XG; a medida en pedidos de cinco o más"
+          },
+          {
+                "nombre": "Conjunto de penetración avanzada",
+                "desc": "Nivel máximo de la escala aluminizada, con aislamiento adicional para engullimiento total por flama. Pesa más y limita la movilidad a propósito.",
+                "chips": [
+                      "Aislamiento reforzado",
+                      "Engullimiento total",
+                      "ISO 11612"
+                ],
+                "spec": "talla única hasta XG; incluye capucha, guantes y talega"
+          },
+          {
+                "nombre": "Capucha de penetración con visor doble",
+                "desc": "Capucha del conjunto de entrada con casco duro de ajuste dentado, visor con película dorada de doble capa y cobertor que abarca todo el hombro.",
+                "chips": [
+                      "Visor doble capa",
+                      "Película dorada",
+                      "Casco integrado"
+                ],
+                "spec": "viene incluida en el conjunto; se repone por separado"
+          },
+          {
+                "nombre": "Guantes mitón de penetración",
+                "desc": "Mitón aluminizado con palma de alto aislamiento: el nivel máximo de protección de manos del conjunto de entrada.",
+                "chips": [
+                      "Mitón",
+                      "Palma aislante",
+                      "Incluido en conjunto"
+                ],
+                "spec": "talla; se repone por separado"
+          },
+          {
+                "nombre": "Conjunto para mantenimiento de hornos",
+                "desc": "Variante del conjunto de corta duración para trabajo en caliente: mismo aislamiento, visor transparente de doble capa y parches en codos y rodillas.",
+                "chips": [
+                      "Visor transparente",
+                      "Parches de refuerzo",
+                      "Trabajo en caliente"
+                ],
+                "spec": "talla; suela especial para superficie caliente"
+          },
+          {
+                "nombre": "Pasamontañas y talega de conjunto",
+                "desc": "Pasamontañas ignífugo que se usa bajo la capucha y talega de nailon balístico para transportar y guardar el conjunto sin dañarlo.",
+                "chips": [
+                      "Pasamontañas FR",
+                      "Talega balística",
+                      "Incluidos"
+                ],
+                "spec": "reposición por separado"
+          }
+    ]
   },
   {
     slug: 'extricacion',
@@ -209,6 +520,68 @@ export const FAMILIAS: FamiliaDetalle[] = [
     keywords: ["traje de extricación", "rescate vehicular", "México"],
     especificar: [{"titulo": "Resistencia a corte y punción", "desc": "Es el requisito central: vidrio, lámina y herramienta hidráulica. Pide el dato, no el adjetivo."}, {"titulo": "Barrera contra patógenos", "desc": "En rescate vehicular hay sangre y fluidos. La barrera debe estar declarada en la ficha."}, {"titulo": "Movilidad real", "desc": "Se trabaja hincado, dentro del vehículo y en posturas incómodas. El traje tiene que acompañar."}, {"titulo": "Visibilidad", "desc": "Casi siempre es de noche y sobre carretera. La cinta reflejante aquí no es estética, es seguridad vial."}],
     faqs: [{"q": "¿Por qué no usar el traje estructural para extricación?", "a": "Porque lo contaminas con aceite, vidrio y fluidos, y le restas vida a un equipo que ya se retira a los diez años de fabricado. Además pesa y estorba para trabajar hincado dentro de un vehículo. Un traje de extricación cuesta bastante menos de reponer."}, {"q": "¿El traje de extricación protege del fuego?", "a": "Solo de forma limitada frente a un flash. No es equipo para entrar a fuego ni sustituye al estructural. Es equipo de rescate técnico."}, {"q": "¿Sirve para otros rescates además del vehicular?", "a": "Sí. Se usa también en rescate en estructuras colapsadas, espacios confinados y atención prehospitalaria, donde el riesgo dominante es mecánico y biológico, no térmico."}],
+    productos: [
+          {
+                "nombre": "Chaqueta de rescate técnico",
+                "desc": "Chaqueta monocapa ligera para extricación, accidentes viales, rescate y mando de incidente. Más protección que el uniforme de estación, mucho menos carga térmica que el chaquetón.",
+                "chips": [
+                      "Monocapa",
+                      "Codo reforzado",
+                      "NFPA 1950 (ex 1951)"
+                ],
+                "spec": "talla; nivel de certificación 1 o 2; tela exterior a elegir"
+          },
+          {
+                "nombre": "Pantalón de rescate técnico",
+                "desc": "Pantalón monocapa ignífugo con rodillas acolchadas y reforzadas, diseñado para trabajar hincado sobre vidrio y lámina.",
+                "chips": [
+                      "Rodilla acolchada",
+                      "Monocapa",
+                      "NFPA 1950 (ex 1951)"
+                ],
+                "spec": "cintura y largo; nivel de certificación"
+          },
+          {
+                "nombre": "Conjunto de extricación",
+                "desc": "Chaqueta y pantalón que se cotizan como set. Evita rasgar y contaminar el traje estructural en llamados que no son de incendio.",
+                "chips": [
+                      "Set de dos piezas",
+                      "Protege el estructural",
+                      "Bajo estrés térmico"
+                ],
+                "spec": "tallas por elemento; tela exterior a elegir"
+          },
+          {
+                "nombre": "Overol de rescate técnico",
+                "desc": "Overol de una pieza para vestido rápido y cobertura continua, alternativa al conjunto de dos piezas.",
+                "chips": [
+                      "Una pieza",
+                      "Vestido rápido",
+                      "Doble certificación"
+                ],
+                "spec": "talla; certificación dual rescate y forestal"
+          },
+          {
+                "nombre": "Conjunto dual rescate y forestal",
+                "desc": "Certificado a la vez para rescate técnico y combate forestal, para cuerpos que atienden ambos escenarios sin comprar dos equipos.",
+                "chips": [
+                      "Doble certificación",
+                      "Sin PFAS disponible",
+                      "Transpirable"
+                ],
+                "spec": "tallas; tela exterior a elegir"
+          },
+          {
+                "nombre": "Pantalón de cubierta para rescate",
+                "desc": "Pantalón exterior que se pone rápido sobre el uniforme de estación para llamados de rescate, sin vestir el equipo estructural completo.",
+                "chips": [
+                      "Sobre uniforme",
+                      "Vestido rápido",
+                      "Ligero"
+                ],
+                "spec": "talla; largo"
+          }
+    ]
   },
 ];
 

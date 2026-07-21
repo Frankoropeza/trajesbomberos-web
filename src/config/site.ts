@@ -41,6 +41,7 @@ export const WA_MESSAGES = {
   segmento: (nombre: string) => `Hola, necesito equipo para: ${nombre}.`,
   licitacion: 'Hola, necesito cotización formal y ficha técnica para una licitación.',
   servicio: 'Hola, quiero información sobre inspección y lavado de equipo (NFPA 1850).',
+  articulo: (titulo: string) => `Hola, leí el artículo "${titulo}" y tengo una duda.`,
 } as const;
 
 // ============================================================
@@ -167,6 +168,85 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
 ];
 
 // ============================================================
+// BLOG — taxonomía. SSoT de las categorías editoriales: alimenta
+// el NAV, el índice /blog/, el sidebar y los archivos
+// /blog/categoria/<slug>/. Cinco categorías y ni una más: cada
+// una responde a una pregunta real del comprador mexicano.
+// ============================================================
+export interface BlogCategory {
+  slug: string;
+  nombre: string;
+  desc: string;
+  h1: string;
+  lead: string;
+  seoTitle: string;         // regla de las 3 keywords, <= 60
+  seoDescription: string;   // abre con kw1, <= 160
+  keywords: readonly string[];
+}
+
+export const BLOG_CATEGORIES: BlogCategory[] = [
+  {
+    slug: 'especificacion',
+    nombre: 'Cómo especificar',
+    desc: 'Qué datos debe traer una cotización para que sea comparable con otra.',
+    h1: 'Cómo especificar equipo de bombero',
+    lead: 'Artículos sobre los datos que hacen comparable una cotización: composite, TPP, THL, tallas y alcance declarado.',
+    seoTitle: 'Cómo especificar equipo de bombero | ficha técnica | México',
+    seoDescription:
+      'Cómo especificar equipo de bombero: qué datos debe traer una cotización para que sea comparable con otra y qué revisar antes de firmar la orden.',
+    keywords: ['cómo especificar equipo de bombero', 'ficha técnica', 'México'],
+  },
+  {
+    slug: 'normas',
+    nombre: 'Normas y certificación',
+    desc: 'NFPA 1970, NFPA 1850 y las NOM de la STPS aplicadas al equipo real.',
+    h1: 'Normas y certificación',
+    lead: 'NFPA 1970, NFPA 1850, NOM-002-STPS-2010 y NOM-017-STPS-2024 explicadas con lo que realmente te van a pedir.',
+    seoTitle: 'Normas para trajes de bombero | NFPA 1970 | México',
+    seoDescription:
+      'Normas para trajes de bombero: NFPA 1970, NFPA 1850 y las NOM de la STPS explicadas con lo que de verdad te van a pedir en una compra.',
+    keywords: ['normas para trajes de bombero', 'NFPA 1970', 'México'],
+  },
+  {
+    slug: 'comparativas',
+    nombre: 'Comparativas',
+    desc: 'Qué familia corresponde a cada operación y por qué no son intercambiables.',
+    h1: 'Comparativas entre familias de traje',
+    lead: 'Estructural contra brigadista, aproximación contra entrada: las confusiones que cuestan dinero y, a veces, algo peor.',
+    seoTitle: 'Comparativas de trajes para bomberos | familias | México',
+    seoDescription:
+      'Comparativas de trajes para bomberos: estructural contra brigadista, aproximación contra entrada y qué familia corresponde a cada operación.',
+    keywords: ['comparativas de trajes para bomberos', 'familias', 'México'],
+  },
+  {
+    slug: 'mantenimiento',
+    nombre: 'Vida útil y servicio',
+    desc: 'Inspección, lavado, reparación y retiro del equipo en servicio.',
+    h1: 'Vida útil y servicio del equipo',
+    lead: 'Cómo se inspecciona, se lava, se repara y se retira un traje para que dure lo que tiene que durar y ni un día más.',
+    seoTitle: 'Mantenimiento de trajes para bomberos | vida útil | México',
+    seoDescription:
+      'Mantenimiento de trajes para bomberos: inspección, lavado, reparación y retiro del equipo conforme a la NFPA 1850, explicado para estación real.',
+    keywords: ['mantenimiento de trajes para bomberos', 'vida útil', 'México'],
+  },
+  {
+    slug: 'licitacion',
+    nombre: 'Compras y licitación',
+    desc: 'Expediente, pliego y documentación para compra pública y corporativa.',
+    h1: 'Compras y licitación',
+    lead: 'Cómo se arma un expediente que no te descalifica: ficha técnica, certificado de laboratorio, carta de distribuidor y CFDI.',
+    seoTitle: 'Compra de trajes para bomberos | licitación | México',
+    seoDescription:
+      'Compra de trajes para bomberos por licitación o vía corporativa: expediente, pliego, certificados y la documentación que no te descalifica.',
+    keywords: ['compra de trajes para bomberos', 'licitación', 'México'],
+  },
+];
+
+export function blogCategoria(slug: string) {
+  return BLOG_CATEGORIES.find((c) => c.slug === slug);
+}
+
+// ============================================================
 // NAV — única fuente del Header, del menú móvil, del SectionMenu
 // y del Footer. Las anclas van absolutas (/#seccion) para que
 // funcionen también desde las páginas L2 y L3.
@@ -190,6 +270,14 @@ export const NAV: NavItem[] = [
   { label: 'Cómo especificar', href: '/#especificar' },
   { label: 'Marcas', href: '/#marcas' },
   { label: 'Normas', href: '/#normas' },
+  {
+    label: 'Blog',
+    href: '/blog/',
+    children: [
+      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
+      { label: 'Ver todos los artículos', href: '/blog/' },
+    ],
+  },
   { label: 'Preguntas', href: '/#faq' },
 ];
 
@@ -255,6 +343,13 @@ export const FOOTER_COLUMNS = [
       { label: 'Brigada industrial', href: '/#segmentos' },
       { label: 'Gobierno y licitación', href: '/#segmentos' },
       { label: 'Cuerpos voluntarios', href: '/#segmentos' },
+    ],
+  },
+  {
+    title: 'Blog',
+    links: [
+      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
+      { label: 'Ver todos los artículos', href: '/blog/' },
     ],
   },
   {
