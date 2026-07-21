@@ -22,7 +22,8 @@ interface Props {
 const { familia: f } = Astro.props;
 
 const path = `/trajes/${f.slug}/`;
-const otras = PRODUCT_CATEGORIES.filter((c) => c.slug !== f.slug);
+// Se muestran las 6 familias: la actual va marcada como "estás aquí"
+// (sin enlace) para que la retícula quede en dos filas exactas de 3.
 
 const menuItems = [
   { label: 'A fondo', href: '#a-fondo' },
@@ -130,11 +131,11 @@ const pageIndex = [
     <div class="container">
       <SectionHeading
         eyebrow="Otras familias"
-        title="Quizá lo que necesitas es otro traje"
-        description="Cada familia responde a un riesgo distinto. Si tu operación no encaja con esta, entra a la que corresponde."
+        title="Las seis familias de traje"
+        description="Cada una responde a un riesgo distinto y no son intercambiables. Si tu operación no encaja con esta, entra a la que corresponde."
       />
-      <div class="grid-cards">
-        {otras.map((cat, i) => (
+      <div class="grid-cards grid-cards--3">
+        {PRODUCT_CATEGORIES.map((cat, i) => (
           <CategoryCard
             href={`/trajes/${cat.slug}/`}
             image={cat.image}
@@ -144,6 +145,7 @@ const pageIndex = [
             chips={[...cat.chips]}
             ctaLabel="Ver ficha"
             index={i}
+            current={cat.slug === f.slug}
           />
         ))}
       </div>
