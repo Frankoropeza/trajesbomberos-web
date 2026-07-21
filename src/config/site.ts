@@ -253,36 +253,86 @@ export function blogCategoria(slug: string) {
 // y del Footer. Las anclas van absolutas (/#seccion) para que
 // funcionen también desde las páginas L2 y L3.
 // ============================================================
+export interface NavLink {
+  label: string;
+  href: string;
+  desc?: string;      // línea de apoyo en el panel desplegable
+}
+
+export interface NavGroup {
+  title: string;
+  items: NavLink[];
+}
+
 export interface NavItem {
   label: string;
   href: string;
-  children?: { label: string; href: string }[];
+  /** Panel simple: una sola lista. */
+  children?: NavLink[];
+  /** Panel agrupado por columnas: una columna por grupo. */
+  groups?: NavGroup[];
+  /** Enlace destacado al pie del panel. */
+  panelCta?: NavLink;
 }
 
+// Cuatro entradas, no ocho. Cada una agrupa lo que le corresponde
+// por nivel: catálogo, contenido técnico, blog y contacto.
 export const NAV: NavItem[] = [
   {
     label: 'Trajes',
     href: '/trajes/',
-    children: [
-      ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
-      // Fichas técnicas de pieza publicadas (L4)
-      ...PIEZAS.map((p) => ({ label: `Ficha: ${p.nombre}`, href: `/trajes/${p.familia}/${p.slug}/` })),
-      { label: 'Ver todas las familias', href: '/trajes/' },
+    groups: [
+      {
+        title: 'Por familia',
+        items: PRODUCT_CATEGORIES.map((c) => ({
+          label: c.nombre,
+          href: `/trajes/${c.slug}/`,
+          desc: c.chips.slice(0, 2).join(' · '),
+        })),
+      },
+      {
+        title: 'Fichas técnicas',
+        items: PIEZAS.map((p) => ({
+          label: p.nombre,
+          href: `/trajes/${p.familia}/${p.slug}/`,
+          desc: p.meta.slice(0, 2).join(' · '),
+        })),
+      },
     ],
+    panelCta: { label: 'Comparar las seis familias de traje', href: '/trajes/' },
   },
-  { label: 'Anatomía', href: '/#anatomia' },
-  { label: 'Cómo especificar', href: '/#especificar' },
-  { label: 'Marcas', href: '/#marcas' },
-  { label: 'Normas', href: '/#normas' },
+  {
+    label: 'Guía técnica',
+    href: '/#anatomia',
+    groups: [
+      {
+        title: 'Cómo elegir',
+        items: [
+          { label: 'Anatomía del traje', href: '/#anatomia', desc: 'Las tres capas y qué hace cada una' },
+          { label: 'Cómo especificar', href: '/#especificar', desc: 'Los ocho datos de la ficha' },
+          { label: 'Errores de compra', href: '/#errores', desc: 'Lo que más se hace mal' },
+        ],
+      },
+      {
+        title: 'Cumplimiento y servicio',
+        items: [
+          { label: 'Normas aplicables', href: '/#normas', desc: 'Qué obliga la ley en México' },
+          { label: 'Vida útil y servicio', href: '/#vida-util', desc: 'Retiro a los 10 años' },
+          { label: 'Marcas de referencia', href: '/#marcas', desc: 'Quién fabrica y qué se especifica' },
+        ],
+      },
+    ],
+    panelCta: { label: 'Preguntas frecuentes', href: '/#faq' },
+  },
   {
     label: 'Blog',
     href: '/blog/',
     children: [
       ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
-      { label: 'Ver todos los artículos', href: '/blog/' },
     ],
+    panelCta: { label: 'Ver todos los artículos', href: '/blog/' },
   },
-  { label: 'Preguntas', href: '/#faq' },
+  { label: 'Contacto', href: '/#faq' },
 ];
 
 // Complementos del conjunto. NO son línea de negocio: se cotizan
