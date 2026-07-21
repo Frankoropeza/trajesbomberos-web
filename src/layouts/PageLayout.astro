@@ -1,9 +1,12 @@
 ---
-// PageLayout (L2/L3): BaseLayout + migas + hero de página.
-// Jerarquía canónica: BaseLayout → PageLayout → {Product…}Layout.
+// PageLayout (L2/L3): BaseLayout + migas + el Hero canónico.
+// Jerarquía: BaseLayout → PageLayout → {Product…}Layout.
+// El hero es EXACTAMENTE el mismo componente que usa la home:
+// misma retícula, mismo padding, misma escala tipográfica.
 // Las migas se generan desde la ruta, no se escriben a mano.
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Breadcrumbs from '@components/Breadcrumbs.astro';
+import Hero from '@components/Hero.astro';
 import SectionMenu from '@components/SectionMenu.astro';
 import type { SchemaInput } from '@lib/seo';
 
@@ -14,16 +17,13 @@ interface Props extends SchemaInput {
   h1: string;              // H1 único de la página
   h1Accent?: string;       // parte resaltada del H1
   eyebrow?: string;
-  lead: string;            // párrafo de entrada
+  lead: string;            // subtítulo bajo el H1
+  descRight: string[];     // panel de 2 párrafos, columna derecha
+  meta?: string[];         // datos duros bajo el subtítulo
   crumbLabel: string;      // nombre de esta página en las migas
-  parent?: { name: string; href: string };  // nivel superior (L3 → L2)
-  keywords?: readonly string[];             // tripleta propia de la página
+  parent?: { name: string; href: string };        // nivel superior (L3 → L2)
+  keywords?: readonly string[];                   // tripleta propia de la página
   menuItems?: { label: string; href: string }[];  // franja de secciones de ESTA página
-  // ProductLayout y /trajes/ ya envían descRight (los 2 párrafos de la columna
-  // derecha del Hero), pero este layout usa `page-hero`, que solo pinta `lead`.
-  // Se declara para que el prop no rompa el type-check; hoy no se renderiza.
-  // Si se quiere mostrar, hay que decidir dónde va dentro de page-hero.
-  descRight?: string[];
 }
 
 const {
@@ -37,6 +37,8 @@ const {
   h1Accent,
   eyebrow,
   lead,
+  descRight,
+  meta,
   crumbLabel,
   parent,
   keywords,
@@ -62,70 +64,16 @@ const crumbs = [
 >
   <Breadcrumbs items={crumbs} />
 
-  <section class="page-hero">
-    <div class="page-hero__stripes" aria-hidden="true"></div>
-    <div class="container page-hero__inner">
-      {eyebrow && <p class="page-hero__eyebrow">{eyebrow}</p>}
-      <h1>{h1}{h1Accent && <> <span class="page-hero__accent">{h1Accent}</span></>}</h1>
-      <p class="page-hero__lead">{lead}</p>
-    </div>
-  </section>
+  <Hero
+    eyebrow={eyebrow}
+    title={h1}
+    accent={h1Accent}
+    subtitle={lead}
+    descRight={descRight}
+    meta={meta}
+  />
 
   <SectionMenu items={menuItems} />
 
   <slot />
 </BaseLayout>
-
-<style>
-  .page-hero {
-    position: relative;
-    overflow: hidden;
-    background:
-      radial-gradient(120% 120% at 85% 0%, rgba(200, 16, 46, 0.26) 0%, transparent 60%),
-      linear-gradient(180deg, var(--color-ink) 0%, var(--color-ink-soft) 100%);
-    color: var(--color-white);
-    padding-block: clamp(2.8rem, 5vw, 4.6rem);
-  }
-  .page-hero__stripes {
-    position: absolute;
-    inset: auto 0 0 0;
-    height: 5px;
-    background: repeating-linear-gradient(
-      115deg,
-      var(--color-accent) 0 26px,
-      var(--color-ink-soft) 26px 52px
-    );
-    opacity: 0.9;
-  }
-  .page-hero__inner { position: relative; }
-  .page-hero__eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin: 0 0 0.9rem;
-    font-size: var(--fs-xs);
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: var(--tracking-wide);
-    color: var(--color-accent);
-  }
-  .page-hero__eyebrow::before {
-    content: '';
-    width: 26px;
-    height: 3px;
-    background: var(--color-accent);
-  }
-  h1 {
-    font-size: clamp(1.9rem, 3.6vw, 3.2rem);
-    margin: 0 0 0.9rem;
-    max-width: 22ch;
-    text-wrap: balance;
-  }
-  .page-hero__accent { color: var(--color-accent); }
-  .page-hero__lead {
-    margin: 0;
-    color: #c8ccd2;
-    font-size: var(--fs-lead);
-    max-width: 72ch;
-  }
-</style>

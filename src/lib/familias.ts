@@ -20,6 +20,7 @@ export interface FamiliaDetalle {
   h1Accent: string;
   lead: string;
   descRight: string[];
+  meta: string[];
   seoTitle: string;
   seoDescription: string;
   keywords: readonly string[];
@@ -52,6 +53,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     h1Accent: "de tres capas",
     lead: "Chaquetón y pantalonera certificados para ataque interior, con DRD integrado y el composite declarado capa por capa en la cotización.",
     descRight: ["El traje estructural es la partida más cara del equipamiento y la que más se especifica mal. Trabajamos la referencia vigente —NFPA 1970, que absorbió a la NFPA 1971— y te entregamos por escrito el composite completo: capa exterior, barrera de humedad y barrera térmica, cada una con su nombre comercial.", "Cotizamos por pieza o conjunto completo, con guía de tallas del fabricante antes de pedir y ficha técnica lista para tu expediente de compra o tu pliego de licitación. Envíos a estación, base o domicilio en los 32 estados."],
+    meta: ["NFPA 1970 · cap. 5–9", "Tres capas", "DRD integrado", "Por pieza o conjunto"],
     seoTitle: "Traje estructural para bombero | tres capas | México",
     seoDescription: "Traje estructural para bombero: chaquetón y pantalonera de tres capas con DRD. Qué pedir en la ficha técnica, cómo tomar tallas y qué revisar antes de firmar.",
     keywords: ["traje estructural para bombero", "tres capas", "México"],
@@ -81,6 +83,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     h1Accent: "para brigada industrial",
     lead: "El equipo con el que tu empresa cumple la NOM-002-STPS-2010: conato de incendio, primera respuesta y evacuación, sin pagar de más por protección que tu operación no usa.",
     descRight: ["Equipamos brigadas de planta, almacén, hotelería y corporativo. El combo se cotiza desglosado por pieza —chaquetón, pantalón, casco, guantes, botas y escafandra— para que tu área de compras pueda comparar partida por partida y tu auditoría tenga el respaldo documental.", "Si el análisis de riesgo de tu centro de trabajo indica ataque interior o entrada a espacios con humo, te lo decimos antes de cotizar: ahí lo que corresponde es un traje estructural certificado, no uno de brigadista."],
+    meta: ["NOM-002-STPS-2010", "Combo desglosado", "Factura CFDI", "Envíos nacionales"],
     seoTitle: "Traje de brigadista contra incendio | NOM-002-STPS | México",
     seoDescription: "Traje de brigadista contra incendio para brigada industrial: qué cubre, qué exige la NOM-002-STPS-2010 y cuándo tu operación necesita un traje estructural.",
     keywords: ["traje de brigadista", "NOM-002-STPS", "México"],
@@ -110,6 +113,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     h1Accent: "de una sola capa",
     lead: "Camisola y pantalón en fibra ignífuga inherente para combate de incendios forestales: ligereza y transpirabilidad en turnos de muchas horas en línea de fuego.",
     descRight: ["En incendio de vegetación el riesgo dominante no es la flama sino el calor acumulado. Por eso este equipo va sin barrera de humedad ni barrera térmica: prioriza que el cuerpo pueda disipar calor durante toda la jornada, con fibra ignífuga inherente cuya protección no se pierde con los lavados.", "Cotizamos camisola y pantalón por separado, porque se reponen a ritmos distintos, y completamos el conjunto con casco forestal, goggles, guantes y bota sin puntera de acero. Atendemos brigadas estatales, municipales y de manejo del fuego en todo el país."],
+    meta: ["Fibra inherente", "Una sola capa", "Camisola y pantalón", "Jornada larga"],
     seoTitle: "Traje forestal para bombero | incendio forestal | México",
     seoDescription: "Traje forestal para bombero: camisola y pantalón de una sola capa en fibra ignífuga inherente para combate de incendios de vegetación y jornadas largas.",
     keywords: ["traje forestal para bombero", "incendios de vegetación", "México"],
@@ -139,6 +143,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     h1Accent: "para calor radiante",
     lead: "Equipo de trabajo para operar cerca de fuentes de calor intenso —ARFF, refinería, fundición y hornos— conservando la movilidad durante toda la maniobra.",
     descRight: ["El exterior aluminizado refleja radiación térmica, que es un principio distinto al aislamiento por masa. Eso permite trabajar de forma prolongada a pocos metros de la fuente sin el peso ni la limitación de movimiento de un traje de entrada.", "Se cotiza como conjunto: traje, capucha con visor, guantes y botas de la misma familia, porque un guante estructural con traje aluminizado deja el punto débil justo en la mano. Atendemos aeropuertos, petroquímica, metalúrgica y planta de vidrio."],
+    meta: ["Exterior aluminizado", "Uso prolongado", "Conjunto completo", "ARFF · refinería"],
     seoTitle: "Traje de aproximación aluminizado | calor radiante | México",
     seoDescription: "Traje de aproximación aluminizado para calor radiante intenso: ARFF, refinería, fundición y hornos. Uso prolongado con movilidad, con capucha y guantes a juego.",
     keywords: ["traje de aproximación aluminizado", "calor radiante", "México"],
@@ -168,6 +173,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     h1Accent: "aluminizado multicapa",
     lead: "El nivel más extremo del catálogo: ingreso breve con engullimiento en horno, incidente térmico severo o rescate industrial, siempre con equipo de respiración y protocolo.",
     descRight: ["Es equipo para entrar, resolver y salir en minutos, no para operar. Multicapa, pesado y con movilidad limitada a propósito. Como no existe una norma NFPA de producto específica para entrada, la evaluación se hace contra la ficha técnica del fabricante: te ayudamos a leerla y a comparar antes de comprometer presupuesto.", "Cotizamos el conjunto completo, verificamos la integración con tu equipo de respiración autónoma y te decimos con franqueza si tu operación realmente lo necesita o si con un traje de aproximación queda resuelta."],
+    meta: ["Aluminizado multicapa", "Ingreso breve", "Requiere ERA", "Ficha del fabricante"],
     seoTitle: "Traje de entrada a la flama | aluminizado multicapa | México",
     seoDescription: "Traje de entrada a la flama: aluminizado multicapa para ingreso breve en horno, incidente térmico severo o rescate industrial. Siempre con equipo de aire.",
     keywords: ["traje de entrada a la flama", "aluminizado multicapa", "México"],
@@ -197,6 +203,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     h1Accent: "para rescate vehicular",
     lead: "Resistencia a corte y punción con barrera contra patógenos, para las salidas que ocurren todos los días y que no deberían desgastar tu traje estructural.",
     descRight: ["La mayoría de las salidas de un cuerpo de bomberos son accidentes viales, no incendios. Cada extricación hecha con el traje estructural lo contamina con aceite, vidrio y fluidos, y consume vida útil de un equipo que la norma retira a los diez años de fabricado.", "Un conjunto de extricación es más ligero, permite trabajar hincado dentro del vehículo y cuesta bastante menos de reponer. Lo cotizamos con la cinta reflejante que exige el trabajo nocturno sobre carretera y con guante de extricación a juego."],
+    meta: ["Corte y punción", "Barrera de patógenos", "Alta visibilidad", "Rescate vehicular"],
     seoTitle: "Traje de extricación | rescate vehicular | México",
     seoDescription: "Traje de extricación para rescate vehicular y técnico: resistencia a corte y punción con barrera contra patógenos. Protege la vida útil de tu traje estructural.",
     keywords: ["traje de extricación", "rescate vehicular", "México"],
