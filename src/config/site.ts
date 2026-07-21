@@ -11,7 +11,7 @@
 export const SITE = {
   name: 'TrajesBombero',
   legalName: 'TrajesBombero México',
-  url: 'https://trajesbombero.com',
+  url: 'https://trajesbomberos.com',
   lang: 'es',
   locale: 'es_MX',
   allowSelfReviews: false, // regla B4: sin reseñas propias
@@ -28,7 +28,7 @@ export const CONTACT = {
   telefono: '+52 55 0000 0000',      // TODO(Frank): real
   telefonoHref: '+525500000000',     // TODO(Frank): real
   whatsapp: '525500000000',          // TODO(Frank): real, solo dígitos
-  email: 'ventas@trajesbombero.com', // TODO(Frank): confirmar
+  email: 'ventas@trajesbomberos.com', // TODO(Frank): confirmar
   horario: 'Lun–Vie 9:00–18:00',
   cobertura: 'Envíos a todo México',
   posicionamiento: 'Venta de trajes para bomberos · Envíos a todo México',

@@ -1,23 +1,27 @@
 ---
-// Hero canónico: dos columnas. Izquierda: title + accent (H1 ÚNICO,
-// con la kw principal) + subtitle. Derecha: descRight[] (2 párrafos)
-// presentados como panel de contexto. Los CTAs NO viven aquí:
-// "el hero presenta, la franja convierte" (van en SectionMenu).
+// Hero canónico del sitio. Se usa IGUAL en L1, L2 y L3.
+// Dos columnas: izquierda title + accent (H1 ÚNICO, con la kw
+// principal) + subtitle; derecha descRight[] como panel de
+// contexto. Los CTA no viven aquí: "el hero presenta, la franja
+// convierte" (van en SectionMenu, justo debajo).
+// `compact` solo reduce el padding en páginas internas: el
+// diseño, la retícula y la banda reflectante son los mismos.
 interface Props {
   eyebrow?: string;
   title: string;
-  accent: string;
+  accent?: string;
   subtitle: string;
   descRight: string[];
+  compact?: boolean;
 }
-const { eyebrow, title, accent, subtitle, descRight } = Astro.props;
+const { eyebrow, title, accent, subtitle, descRight, compact = false } = Astro.props;
 ---
-<section class="hero">
+<section class:list={['hero', { 'hero--compact': compact }]}>
   <div class="hero__stripes" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div class="hero-left">
       {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
-      <h1>{title} <span class="hero-accent">{accent}</span></h1>
+      <h1>{title}{accent && <> <span class="hero-accent">{accent}</span></>}</h1>
       <p class="hero-subtitle">{subtitle}</p>
     </div>
     <div class="hero-right">
@@ -38,6 +42,8 @@ const { eyebrow, title, accent, subtitle, descRight } = Astro.props;
     color: var(--color-white);
     padding-block: clamp(3.5rem, 7vw, 7rem);
   }
+  .hero--compact { padding-block: clamp(2.8rem, 5vw, 4.8rem); }
+
   /* Banda reflectante de alta visibilidad (código visual bombero) */
   .hero__stripes {
     position: absolute;
@@ -79,6 +85,7 @@ const { eyebrow, title, accent, subtitle, descRight } = Astro.props;
     margin: 0 0 1.1rem;
     text-wrap: balance;
   }
+  .hero--compact h1 { font-size: clamp(1.9rem, 3.6vw, 3.2rem); }
   .hero-accent { color: var(--color-accent); }
   .hero-subtitle {
     font-size: var(--fs-lead);

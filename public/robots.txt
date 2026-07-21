@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://trajesbombero.com/sitemap-index.xml
+Sitemap: https://trajesbomberos.com/sitemap-index.xml

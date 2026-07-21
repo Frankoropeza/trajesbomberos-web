@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://trajesbombero.com',
+  site: 'https://trajesbomberos.com',
   trailingSlash: 'ignore',
   integrations: [mdx(), sitemap()],
   build: {

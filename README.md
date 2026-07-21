@@ -1,4 +1,4 @@
-# TRAJESBOMBERO — trajesbombero.com
+# TRAJESBOMBERO — trajesbomberos.com
 
 Sitio de venta de trajes y equipo de protección para bomberos en México.
 Astro 6 + Markdown (canónico OrigenLab). CSS vanilla. Deploy: GitHub Pages (build-based).
