@@ -1,38 +1,64 @@
 ---
-// Footer: cinco zonas en orden estricto — 1) banda CTA pre-footer
-// (último intento de conversión), 2) cuerpo de marca + columnas
-// data-driven, 3) banda de cumplimiento (opcional), 4) barra
-// inferior con copyright dinámico + scroll-top, 5) barra de acento.
+// Footer en cinco zonas, en orden estricto:
+//   1) banda CTA pre-footer (último intento de conversión)
+//   2) cuerpo: marca + NAP + cuatro columnas data-driven
+//   3) banda de cumplimiento (precisión normativa breve)
+//   4) barra inferior: copyright, legales y volver arriba
+//   5) barra de acento
 // NO emite JSON-LD: el Organization vive en lib/seo.ts y lo emite
-// buildSchema desde BaseLayout (regla B3). NAP consistente (SSoT
-// en CONTACT, misma fuente que Topbar y schema).
+// buildSchema desde BaseLayout (regla B3). NAP consistente con
+// Topbar y con el schema (SSoT en CONTACT).
 import { SITE, CONTACT, FOOTER_COLUMNS, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
-  <!-- Zona 1: banda CTA pre-footer -->
-  <div class="footer-cta">
-    <div class="container footer-cta__inner">
-      <p>¿Listo para equipar a tu equipo? Cotiza sin compromiso.</p>
-      <a class="btn btn--light" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
+  <!-- Zona 1 · CTA pre-footer -->
+  <div class="fcta">
+    <div class="container fcta__inner">
+      <div class="fcta__text">
+        <p class="fcta__title">¿Listo para equipar a tu gente?</p>
+        <p class="fcta__lead">Cotización con ficha técnica y condiciones por escrito. Sin compromiso.</p>
+      </div>
+      <div class="fcta__actions">
+        <a class="fcta__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+        <a class="fcta__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+      </div>
     </div>
   </div>
 
-  <!-- Zona 2: marca + columnas data-driven -->
-  <div class="container footer-body">
-    <div class="footer-brand">
-      <p class="footer-brand__name">{SITE.name}<span>.com</span></p>
-      <p>{CONTACT.posicionamiento}.</p>
-      <p>{CONTACT.cobertura} · {CONTACT.horario}</p>
-      <p>
-        <a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a><br />
-        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
-      </p>
+  <!-- Zona 2 · Marca + columnas -->
+  <div class="container fbody">
+    <div class="fbrand">
+      <p class="fbrand__name">{SITE.name}<span>.com</span></p>
+      <p class="fbrand__claim">{CONTACT.posicionamiento}.</p>
+
+      <dl class="fnap">
+        <div>
+          <dt>Teléfono</dt>
+          <dd><a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a></dd>
+        </div>
+        <div>
+          <dt>Correo</dt>
+          <dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd>
+        </div>
+        <div>
+          <dt>Horario</dt>
+          <dd>{CONTACT.horario}</dd>
+        </div>
+        <div>
+          <dt>Cobertura</dt>
+          <dd>{CONTACT.cobertura}</dd>
+        </div>
+      </dl>
     </div>
-    <div class="footer-cols">
+
+    <div class="fcols">
       {FOOTER_COLUMNS.map((col) => (
-        <nav aria-label={col.title}>
+        <nav class="fcol" aria-label={col.title}>
           <h3>{col.title}</h3>
           <ul>
             {col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
@@ -42,65 +68,187 @@ const year = new Date().getFullYear();
     </div>
   </div>
 
-  <!-- Zona 4: barra inferior -->
-  <div class="footer-bottom">
-    <div class="container footer-bottom__inner">
-      <p>© {year} {SITE.legalName}. Todos los derechos reservados.</p>
-      <a href="#main-content" class="footer-top">Volver arriba ↑</a>
+  <!-- Zona 3 · Banda de cumplimiento -->
+  <div class="fnote">
+    <div class="container">
+      <p>
+        Trabajamos sobre <strong>NFPA 1970</strong> (edición 2025, que absorbió a la NFPA 1971) y
+        <strong>NFPA 1850</strong> para el ciclo de servicio. En México el EPP se rige por la
+        <strong>NOM-017-STPS-2024</strong> y, para brigadas, por la <strong>NOM-002-STPS-2010</strong>.
+        NFPA es referencia técnica voluntaria: se vuelve exigible cuando la incorpora un pliego de licitación.
+      </p>
     </div>
   </div>
 
-  <!-- Zona 5: barra de acento -->
-  <div class="footer-accent" aria-hidden="true"></div>
+  <!-- Zona 4 · Barra inferior -->
+  <div class="fbottom">
+    <div class="container fbottom__inner">
+      <p>© {year} {SITE.legalName}. Todos los derechos reservados.</p>
+      <nav class="fbottom__nav" aria-label="Enlaces legales">
+        <a href="/trajes/">Catálogo</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#faq">Contacto</a>
+        <a class="fbottom__top" href="#main-content">Volver arriba ↑</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Zona 5 · Barra de acento -->
+  <div class="faccent" aria-hidden="true"></div>
 </footer>
 
 <style>
-  .site-footer { background: var(--color-ink); color: #a8aeb6; margin-top: 0; }
-  .footer-cta { background: var(--color-primary); color: var(--color-white); }
-  .footer-cta__inner {
+  .site-footer { background: var(--color-ink); color: #a8aeb6; }
+
+  /* --- Zona 1 · CTA ------------------------------------------ */
+  .fcta { background: var(--color-primary); color: var(--color-white); }
+  .fcta__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding-block: 1.6rem;
+    gap: clamp(1.2rem, 4vw, 3rem);
+    padding-block: clamp(1.4rem, 2.4vw, 2rem);
     flex-wrap: wrap;
   }
-  .footer-cta__inner p { margin: 0; font-size: clamp(1.1rem, 1.7vw, 1.5rem); font-weight: 800; letter-spacing: var(--tracking-tight); }
-
-  .footer-body {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
-    gap: clamp(2rem, 5vw, 5rem);
-    padding-block: clamp(2.5rem, 4vw, 4rem);
+  .fcta__title {
+    margin: 0 0 0.2rem;
+    font-size: clamp(1.1rem, 1.7vw, 1.45rem);
+    font-weight: 800;
+    letter-spacing: var(--tracking-tight);
   }
-  .footer-brand__name { font-size: 1.25rem; font-weight: 800; color: var(--color-white); margin: 0 0 0.6rem; }
-  .footer-brand__name span { color: var(--color-accent); }
-  .footer-brand p { margin: 0 0 0.6rem; font-size: 0.9rem; }
-  .footer-brand a { color: var(--color-accent); text-decoration: none; }
-
-  .footer-cols {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-  .footer-cols h3 { color: var(--color-white); font-size: 0.78rem; margin: 0 0 1rem; text-transform: uppercase; letter-spacing: var(--tracking-wide); }
-  .footer-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
-  .footer-cols a { color: #c9ccd1; text-decoration: none; font-size: 0.9rem; }
-  .footer-cols a:hover { color: var(--color-accent); }
-
-  .footer-bottom { border-top: 1px solid rgb(255 255 255 / 0.12); }
-  .footer-bottom__inner {
-    display: flex;
-    justify-content: space-between;
+  .fcta__lead { margin: 0; font-size: 0.9rem; color: rgb(255 255 255 / 0.85); }
+  .fcta__actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .fcta__wa {
+    display: inline-flex;
     align-items: center;
-    gap: 1rem;
-    padding-block: 1rem;
+    gap: 0.5rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: var(--radius);
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.92rem;
+    text-decoration: none;
+    min-height: 46px;
+  }
+  .fcta__tel {
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255 255 255 / 0.4);
+  }
+
+  /* --- Zona 2 · Cuerpo ---------------------------------------- */
+  .fbody {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 2.1fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    padding-block: clamp(2.4rem, 4vw, 3.4rem);
+  }
+  .fbrand__name {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: var(--tracking-tight);
+  }
+  .fbrand__name span { color: var(--color-accent); }
+  .fbrand__claim { margin: 0 0 1.3rem; font-size: 0.86rem; max-width: 40ch; }
+
+  .fnap { margin: 0; display: grid; gap: 0.75rem; }
+  .fnap dt {
+    font-size: 0.62rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: #6f767f;
+    margin-bottom: 0.1rem;
+  }
+  .fnap dd { margin: 0; font-size: 0.88rem; color: #d2d7dd; }
+  .fnap a { color: var(--color-accent); text-decoration: none; font-weight: 700; }
+
+  .fcols {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1.2rem, 2.5vw, 2.4rem);
+  }
+  .fcol h3 {
+    margin: 0 0 0.85rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(255 255 255 / 0.14);
+    font-size: 0.66rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-white);
+  }
+  .fcol ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.42rem; }
+  .fcol a {
+    color: #a8aeb6;
+    text-decoration: none;
     font-size: 0.85rem;
+    line-height: 1.4;
+    display: block;
+  }
+  .fcol a:hover { color: var(--color-accent); }
+
+  /* --- Zona 3 · Cumplimiento ---------------------------------- */
+  .fnote {
+    border-top: 1px solid rgb(255 255 255 / 0.1);
+    background: rgb(255 255 255 / 0.02);
+  }
+  .fnote p {
+    margin: 0;
+    padding-block: 1.1rem;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: #8a9099;
+    max-width: 110ch;
+  }
+  .fnote strong { color: #c3c9d0; font-weight: 700; }
+
+  /* --- Zona 4 · Barra inferior -------------------------------- */
+  .fbottom { border-top: 1px solid rgb(255 255 255 / 0.1); }
+  .fbottom__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.95rem;
     flex-wrap: wrap;
   }
-  .footer-bottom p { margin: 0; }
-  .footer-top { color: var(--color-accent); text-decoration: none; font-weight: 600; }
-  .footer-accent { height: 6px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); }
+  .fbottom p { margin: 0; font-size: 0.78rem; color: #7d848c; }
+  .fbottom__nav { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; }
+  .fbottom__nav a { color: #a8aeb6; text-decoration: none; font-size: 0.78rem; }
+  .fbottom__nav a:hover { color: var(--color-accent); }
+  .fbottom__top { font-weight: 800; color: var(--color-accent) !important; }
 
-  @media (max-width: 1024px) { .footer-body { grid-template-columns: 1fr; gap: 2rem; } }
+  /* --- Zona 5 · Acento ---------------------------------------- */
+  .faccent {
+    height: 5px;
+    background: repeating-linear-gradient(
+      115deg,
+      var(--color-accent) 0 22px,
+      var(--color-ink-soft) 22px 44px
+    );
+  }
+
+  /* --- Responsive --------------------------------------------- */
+  @media (max-width: 1100px) {
+    .fbody { grid-template-columns: 1fr; gap: 2.2rem; }
+    .fnap { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (max-width: 860px) {
+    .fcols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.8rem; }
+    .fnap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 560px) {
+    .fcta__inner { flex-direction: column; align-items: flex-start; }
+    .fcta__actions { width: 100%; }
+    .fcta__wa { flex: 1; justify-content: center; }
+    .fcols { grid-template-columns: 1fr; }
+    .fnap { grid-template-columns: 1fr; }
+    .fbottom__inner { flex-direction: column; align-items: flex-start; gap: 0.7rem; }
+  }
 </style>

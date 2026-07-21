@@ -383,13 +383,33 @@ export const MARCAS_MATERIAL: Marca[] = [
   { nombre: 'TenCate · Safety Components', origen: 'Exterior', nota: 'Tejedores de tela exterior certificada' },
 ];
 
+// Footer compacto: cuatro columnas de máximo 6 enlaces. Las 36
+// fichas L4 NO van aquí — se llega a ellas desde /trajes/<familia>/
+// y desde el submenú del header. Un footer con 40 enlaces no
+// orienta a nadie y diluye el reparto de autoridad interna.
 export const FOOTER_COLUMNS = [
   {
-    title: 'Trajes',
+    title: 'Familias de traje',
     links: [
       ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
-      ...PIEZAS.map((p) => ({ label: p.nombre, href: `/trajes/${p.familia}/${p.slug}/` })),
-      { label: 'Ver todas las familias', href: '/trajes/' },
+    ],
+  },
+  {
+    title: 'Guía técnica',
+    links: [
+      { label: 'Anatomía del traje', href: '/#anatomia' },
+      { label: 'Cómo especificar', href: '/#especificar' },
+      { label: 'Errores de compra', href: '/#errores' },
+      { label: 'Normas aplicables', href: '/#normas' },
+      { label: 'Vida útil y servicio', href: '/#vida-util' },
+      { label: 'Marcas de referencia', href: '/#marcas' },
+    ],
+  },
+  {
+    title: 'Blog técnico',
+    links: [
+      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
+      { label: 'Ver todos los artículos', href: '/blog/' },
     ],
   },
   {
@@ -398,24 +418,8 @@ export const FOOTER_COLUMNS = [
       { label: 'Brigada industrial', href: '/#segmentos' },
       { label: 'Gobierno y licitación', href: '/#segmentos' },
       { label: 'Cuerpos voluntarios', href: '/#segmentos' },
-    ],
-  },
-  {
-    title: 'Blog',
-    links: [
-      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
-      { label: 'Ver todos los artículos', href: '/blog/' },
-    ],
-  },
-  {
-    title: 'Técnico',
-    links: [
-      { label: 'Anatomía del traje', href: '/#anatomia' },
-      { label: 'Cómo especificar', href: '/#especificar' },
-      { label: 'Errores de compra', href: '/#errores' },
-      { label: 'Marcas de referencia', href: '/#marcas' },
-      { label: 'Normas aplicables', href: '/#normas' },
-      { label: 'Vida útil y servicio', href: '/#vida-util' },
+      { label: 'Comparar familias', href: '/trajes/' },
+      { label: 'Preguntas frecuentes', href: '/#faq' },
     ],
   },
 ] as const;
