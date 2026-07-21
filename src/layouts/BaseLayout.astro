@@ -21,23 +21,26 @@ interface Props extends SchemaInput {
   title?: string;
   description?: string;
   path?: string;
+  keywords?: readonly string[];   // tripleta propia de la página
 }
 
 const {
   pageType,
   faqs,
   directoryItems,
+  breadcrumbs,
   title = buildKeywordTitle(),
   description = buildKeywordDescription(),
   path = '/',
+  keywords,
 } = Astro.props;
 
 const canonical = new URL(path, SITE.url).href;
 const ogImage = new URL('/images/og-trajes-para-bomberos.png', SITE.url).href;
-const schemas = buildSchema({ pageType, faqs, directoryItems });
+const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs });
 
 // metaAudit valida la regla en build; avisa en consola sin romper.
-const audit = metaAudit(title, description);
+const audit = metaAudit(title, description, keywords);
 if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
 ---
 <!doctype html>

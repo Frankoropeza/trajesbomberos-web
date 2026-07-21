@@ -1,0 +1,203 @@
+// ============================================================
+// FAMILIAS — detalle por familia de traje. Fuente única para:
+//  · L1 home (cards, vía PRODUCT_CATEGORIES en site.ts)
+//  · L2 /trajes/ (módulos completos)
+//  · L3 /trajes/<slug>/ (ficha de familia)
+// Publicar aquí actualiza las tres a la vez (SSoT).
+// ============================================================
+
+export interface FamiliaDetalle {
+  slug: string;          // clave de URL: /trajes/<slug>/
+  nombreWa: string;      // nombre para el mensaje de WhatsApp
+  eyebrow: string;
+  title: string;
+  description: string;
+  features: string[];
+  brands: string[];
+  images: { src: string; alt: string }[];
+  // --- solo L3 -------------------------------------------------
+  h1: string;
+  h1Accent: string;
+  lead: string;
+  seoTitle: string;
+  seoDescription: string;
+  keywords: readonly string[];
+  especificar: { titulo: string; desc: string }[];
+  faqs: { q: string; a: string }[];
+}
+
+export const FAMILIAS: FamiliaDetalle[] = [
+  {
+    slug: 'estructural',
+    nombreWa: 'Trajes estructurales',
+    eyebrow: 'Más solicitado · Trajes estructurales',
+    title: 'Traje estructural para bombero: chaquetón y pantalonera de tres capas',
+    description:
+      'Si tu gente entra a una edificación en llamas, esto es lo que se pone. Un traje estructural para bombero no es "ropa gruesa que no se quema": es un composite de tres capas —exterior, barrera de humedad y barrera térmica— trabajando juntas. Quita una y ya no es estructural, aunque en la foto se vea idéntico.',
+    features: [
+      'Pide las tres capas por nombre comercial. Si la cotización dice "tela ignífuga" y nada más, todavía no sabes qué estás comprando',
+      'El DRD va integrado al chaquetón: es el asa con la que arrastras a un compañero que ya no puede salir solo',
+      'Largo de chaquetón de 28" a 35". El corto da movilidad, el largo da cobertura — depende de tu operación, no de la moda',
+      'La cintura es la zona crítica: si chaquetón y pantalonera no ajustan entre sí, ahí entra el calor',
+      'La certificación es del conjunto terminado, con el fabricante listado ante el organismo certificador. Nunca de la tela suelta',
+    ],
+    brands: ['Chaquetón de bombero', 'Pantalonera', 'Tres capas', 'Barrera térmica', 'DRD', 'Ataque interior'],
+    images: [
+      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural para bombero con chaquetón y pantalón de tres capas' },
+      { src: '/images/productos/chaqueton-estructural-bombero.svg', alt: 'Chaquetón estructural para bombero con DRD integrado' },
+      { src: '/images/productos/pantalonera-estructural-bombero.svg', alt: 'Pantalonera estructural para bombero con tirantes' },
+    ],
+    h1: "Traje estructural para bombero",
+    h1Accent: "tres capas, sin atajos",
+    lead: "El equipo con el que tu gente entra a una edificación en llamas. Aquí está lo que hay que exigirle a una cotización antes de firmarla.",
+    seoTitle: "Traje estructural para bombero | tres capas | México",
+    seoDescription: "Traje estructural para bombero: chaquetón y pantalonera de tres capas con DRD. Qué pedir en la ficha técnica, cómo tomar tallas y qué revisar antes de firmar.",
+    keywords: ["traje estructural para bombero", "tres capas", "México"],
+    especificar: [{"titulo": "El composite, con nombre y apellido", "desc": "Exterior, barrera de humedad y barrera térmica, cada uno con su nombre comercial. Sin eso no puedes comparar dos ofertas."}, {"titulo": "TPP y THL juntos", "desc": "Referencias mínimas: TPP 35 y THL 205. El TPP alto con THL bajo se paga en estrés térmico."}, {"titulo": "Largo y corte", "desc": "Chaquetón de 28 a 35 pulgadas, tirantes H-back o Y-back, refuerzos en rodilla y codo."}, {"titulo": "Etiqueta y fecha", "desc": "La certificación va a nombre del fabricante y la fecha de fabricación arranca los diez años de vida útil."}],
+    faqs: [{"q": "¿Cuántas capas debe tener un traje estructural?", "a": "Tres: capa exterior, barrera de humedad y barrera térmica. Si una falta, no es un traje estructural aunque el proveedor lo llame así. Entre la barrera térmica y la de humedad se define la mayor parte de la protección real."}, {"q": "¿Qué es el DRD y viene incluido?", "a": "Es el Drag Rescue Device: un arnés integrado al chaquetón que permite arrastrar a un elemento inconsciente. Forma parte de los requisitos del conjunto estructural. Si una oferta no lo menciona, pregúntalo explícitamente."}, {"q": "¿Conviene talla de stock o a medida?", "a": "Depende del presupuesto y del uso. Lo que no conviene es mezclar: si el chaquetón y la pantalonera no ajustan entre sí, la cintura queda abierta y ahí entra el calor. Te ayudamos a tomar medidas antes de pedir."}],
+  },
+  {
+    slug: 'brigadista',
+    nombreWa: 'Trajes de brigadista',
+    eyebrow: 'Brigada industrial',
+    title: 'Traje de brigadista: para conato de incendio, no para ataque interior',
+    description:
+      'Cuando una empresa nos escribe pidiendo "trajes de bombero", muchas veces lo que su operación necesita es esto. El equipo de brigadista está hecho para el conato: extintor en mano, controlar mientras llega el cuerpo de bomberos y sacar a la gente. Cuesta menos que un estructural certificado porque protege para otra cosa, y esa diferencia hay que decirla de frente.',
+    features: [
+      'Cubre la obligación de la NOM-002-STPS-2010 de dotar de equipo de protección a los integrantes de la brigada',
+      'Se cotiza como combo: chaquetón, pantalón, casco, guantes, botas y escafandra en una sola partida',
+      'Sirve para conato, primera respuesta y evacuación. Hasta ahí llega, y está bien que llegue hasta ahí',
+      'Si tu brigada hace ataque interior o entra a espacios con humo, la respuesta honesta es estructural. Te lo vamos a decir aunque la venta sea menor',
+    ],
+    brands: ['Brigada contra incendio', 'Conato', 'Combo brigadista', 'NOM-002-STPS', 'Primera respuesta'],
+    images: [
+      { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial para conato de incendio' },
+      { src: '/images/productos/combo-brigadista-industrial.svg', alt: 'Combo completo de brigadista industrial contra incendio' },
+      { src: '/images/productos/casco-brigadista-industrial.svg', alt: 'Casco para brigadista industrial' },
+    ],
+    h1: "Traje de brigadista",
+    h1Accent: "para conato, no para ataque interior",
+    lead: "El equipo con el que la mayoría de las empresas cumple la NOM-002-STPS-2010. Protege para el conato: hasta ahí llega, y conviene saberlo antes de comprar.",
+    seoTitle: "Traje de brigadista contra incendio | NOM-002-STPS | México",
+    seoDescription: "Traje de brigadista contra incendio para brigada industrial: qué cubre, qué exige la NOM-002-STPS-2010 y cuándo tu operación necesita un traje estructural.",
+    keywords: ["traje de brigadista", "NOM-002-STPS", "México"],
+    especificar: [{"titulo": "Qué incluye el combo", "desc": "Chaquetón, pantalón, casco, guantes, botas y escafandra. Pide el desglose por pieza, no un precio global."}, {"titulo": "Alcance declarado por escrito", "desc": "Que la ficha diga para qué está pensado. Si dice uso estructural, exige la certificación del conjunto."}, {"titulo": "Tallas por elemento", "desc": "La brigada cambia de integrantes: pregunta por disponibilidad de reposición y rango de tallas."}, {"titulo": "Respaldo documental", "desc": "Ficha técnica y factura CFDI, que es lo que te va a pedir tu auditoría interna o la STPS."}],
+    faqs: [{"q": "¿La NOM-002-STPS obliga a comprar traje de bombero?", "a": "Obliga a dotar de equipo de protección personal a los integrantes de la brigada contra incendio (cláusula 5.9), conforme a la NOM-017-STPS-2024 vigente. No especifica marca ni norma de producto: eso depende del análisis de riesgo de tu centro de trabajo."}, {"q": "¿Un traje de brigadista sirve para entrar a un incendio?", "a": "No para ataque interior. Está pensado para conato: control con extintor, contención inicial y evacuación. Si tu brigada entra a espacios con humo o fuego declarado, lo que corresponde es un traje estructural."}, {"q": "¿Por qué cuesta bastante menos que un estructural?", "a": "Porque protege para otro escenario. El estructural certificado lleva tres capas y un proceso de certificación del conjunto completo; el de brigadista tiene otro alcance. La diferencia de precio refleja una diferencia real de protección, no de calidad de marca."}],
+  },
+  {
+    slug: 'forestal',
+    nombreWa: 'Trajes forestales',
+    eyebrow: 'Línea de fuego',
+    title: 'Traje forestal para bombero: una sola capa, porque el enemigo es la jornada',
+    description:
+      'En un incendio de vegetación casi nadie cae por la flama. Cae por el calor acumulado después de ocho, diez o catorce horas en la línea. Por eso el traje forestal para bombero va al revés que el estructural: una sola capa de tela ignífuga inherente, camisola en lugar de chaquetón, y todo pensado para que el cuerpo pueda soltar calor.',
+    features: [
+      'Camisola y pantalón, ligeros y sueltos. Aquí el peso extra no protege: cansa',
+      'La tela es ignífuga inherente, no tratada: la protección está en la fibra y no se va con los lavados',
+      'Botas forestales sin puntera de acero — el acero conduce el calor directo al pie',
+      'Un forestal no sirve para ataque estructural, y un estructural en la línea de fuego es un golpe de calor esperando pasar',
+    ],
+    brands: ['Camisola forestal', 'Wildland', 'Una capa', 'Fibra inherente', 'CONAFOR'],
+    images: [
+      { src: '/images/productos/traje-forestal-camisola-pantalon-bombero.svg', alt: 'Traje forestal para bombero de una sola capa' },
+      { src: '/images/productos/camisola-forestal-nomex.svg', alt: 'Camisola forestal de tela ignífuga inherente' },
+      { src: '/images/productos/pantalon-forestal-bombero.svg', alt: 'Pantalón forestal para combate de incendios de vegetación' },
+    ],
+    h1: "Traje forestal para bombero",
+    h1Accent: "pensado para la jornada larga",
+    lead: "En incendio de vegetación el riesgo se acumula por horas. Este equipo está hecho para que el cuerpo pueda soltar calor durante todo el turno.",
+    seoTitle: "Traje forestal para bombero | incendio forestal | México",
+    seoDescription: "Traje forestal para bombero: camisola y pantalón de una sola capa en fibra ignífuga inherente para combate de incendios de vegetación y jornadas largas.",
+    keywords: ["traje forestal para bombero", "incendios de vegetación", "México"],
+    especificar: [{"titulo": "Fibra inherente, no tratada", "desc": "La protección debe estar en la fibra. Un acabado tratado se degrada con los lavados y nadie lleva la cuenta."}, {"titulo": "Peso de la tela", "desc": "Se especifica en onzas por yarda cuadrada. Más ligera respira mejor; más pesada resiste más el matorral."}, {"titulo": "Camisola y pantalón por separado", "desc": "Se reponen a ritmos distintos: la camisola sufre más. Pregunta por reposición por pieza."}, {"titulo": "Botas sin puntera de acero", "desc": "El acero conduce calor. Para línea de fuego se usa bota de piel, caña media y suela resistente."}],
+    faqs: [{"q": "¿Por qué el traje forestal es de una sola capa?", "a": "Porque el riesgo dominante no es el engullimiento sino el agotamiento por calor en turnos muy largos. Añadir barreras aumentaría la protección puntual, pero al costo de que el bombero no pueda disipar su propio calor durante horas."}, {"q": "¿Sirve un traje forestal para incendio estructural?", "a": "No. Sin barrera de humedad ni barrera térmica no hay protección frente al calor y el vapor de un interior. Son dos equipos distintos para dos riesgos distintos."}, {"q": "¿Qué más necesito además del traje?", "a": "Casco forestal con barbiquejo, goggles, guantes de piel ligeros, botas sin puntera de acero y, según la operación, mochila de agua o herramienta manual. Lo cotizamos junto si lo necesitas."}],
+  },
+  {
+    slug: 'aproximacion',
+    nombreWa: 'Trajes de aproximación',
+    eyebrow: 'Calor radiante',
+    title: 'Traje de aproximación aluminizado: cerca de la flama, nunca dentro',
+    description:
+      'Este es el traje del aeropuerto, la refinería y la fundidora. El exterior aluminizado no aísla: refleja el calor radiante, que es lo que te cocina cuando trabajas a unos metros de una fuente muy caliente. Y como es equipo de trabajo y no de rescate relámpago, está diseñado para que puedas moverte durante toda la maniobra.',
+    features: [
+      'El aluminizado refleja radiación. No lo confundas con aislamiento: son dos físicas distintas',
+      'Pensado para uso prolongado: te tienes que poder agachar, jalar y manipular herramienta con él puesto',
+      'Va acompañado de capucha aluminizada, guantes y botas de la misma familia. Un traje aluminizado con guante estructural deja el eslabón débil en la mano',
+      'Acercarse y entrar no son lo mismo. Para ingresar a la flama necesitas un traje de entrada, no este',
+    ],
+    brands: ['Aluminizado', 'ARFF aeropuerto', 'Refinería', 'Fundición', 'Calor radiante'],
+    images: [
+      { src: '/images/productos/traje-aproximacion-aluminizado-bombero.svg', alt: 'Traje de aproximación aluminizado para calor radiante' },
+      { src: '/images/productos/capucha-aluminizada-aproximacion.svg', alt: 'Capucha aluminizada para traje de aproximación' },
+      { src: '/images/productos/guante-aluminizado-aproximacion.svg', alt: 'Guante aluminizado para trabajo cerca de calor radiante' },
+    ],
+    h1: "Traje de aproximación aluminizado",
+    h1Accent: "cerca del calor, no dentro",
+    lead: "El traje del aeropuerto, la refinería y la fundidora. Refleja calor radiante y te deja trabajar durante toda la maniobra.",
+    seoTitle: "Traje de aproximación aluminizado | calor radiante | México",
+    seoDescription: "Traje de aproximación aluminizado para calor radiante intenso: ARFF, refinería, fundición y hornos. Uso prolongado con movilidad, con capucha y guantes a juego.",
+    keywords: ["traje de aproximación aluminizado", "calor radiante", "México"],
+    especificar: [{"titulo": "Superficie reflejante", "desc": "El aluminizado refleja radiación. Pregunta por el porcentaje de reflectancia y por el sustrato debajo."}, {"titulo": "Conjunto completo", "desc": "Traje, capucha con visor, guantes y botas de la misma familia. Un guante estructural deja el punto débil en la mano."}, {"titulo": "Movilidad real", "desc": "Es equipo de trabajo. Verifica que permita agacharse, jalar y manipular herramienta con el conjunto puesto."}, {"titulo": "Compatibilidad con el ERA", "desc": "Si la operación lo requiere, el traje debe alojar el equipo de respiración sin comprometer el cierre."}],
+    faqs: [{"q": "¿Cuál es la diferencia entre aproximación y entrada?", "a": "Aproximación es para trabajar cerca del calor radiante de forma prolongada, conservando movilidad. Entrada permite el ingreso breve a la flama, es multicapa, pesado y se usa por minutos. Comprar uno creyendo que hace lo del otro es el error más peligroso del catálogo."}, {"q": "¿En qué industrias se usa?", "a": "Rescate y extinción en aeropuertos (ARFF), refinería y petroquímica, fundición y colada de metal, hornos industriales y plantas de vidrio. En general, cualquier operación con una fuente de calor radiante intensa y sostenida."}, {"q": "¿Requiere mantenimiento especial?", "a": "Sí. La superficie aluminizada se daña con abrasión y con limpieza agresiva, y una vez rayada pierde reflectancia. Pide al fabricante el procedimiento de limpieza y almacenamiento antes de ponerlo en servicio."}],
+  },
+  {
+    slug: 'entrada',
+    nombreWa: 'Trajes de entrada',
+    eyebrow: 'Ingreso a la flama',
+    title: 'Traje de entrada a la flama: minutos contados, nunca una jornada',
+    description:
+      'Es el nivel más extremo del catálogo y el que menos gente necesita de verdad. Permite entrar a la flama —horno, incidente térmico severo, rescate industrial— por un rato muy corto. Pesa, estorba y limita la vista a propósito: no está hecho para trabajar, está hecho para meterse, sacar y salir.',
+    features: [
+      'Se usa por minutos y con protocolo de entrada y salida definido antes de la maniobra',
+      'Siempre con equipo de respiración autónoma. Sin aire no hay entrada, por bueno que sea el traje',
+      'La protección viene del conjunto multicapa completo, no de la tela exterior brillante',
+      'No hay una norma NFPA de producto específica para entrada: se especifica contra la ficha del fabricante, y por eso conviene revisarla con calma',
+    ],
+    brands: ['Penetración a flama', 'Aluminizado multicapa', 'Horno', 'Rescate industrial', 'Uso corto'],
+    images: [
+      { src: '/images/productos/traje-entrada-penetracion-flama.svg', alt: 'Traje de entrada aluminizado multicapa para ingreso a la flama' },
+      { src: '/images/productos/capucha-entrada-aluminizada.svg', alt: 'Capucha aluminizada de traje de entrada a la flama' },
+      { src: '/images/productos/botas-aluminizadas-entrada.svg', alt: 'Botas aluminizadas para traje de entrada' },
+    ],
+    h1: "Traje de entrada a la flama",
+    h1Accent: "minutos, no jornadas",
+    lead: "El nivel más extremo del catálogo y el que menos gente necesita de verdad. Se usa por minutos, con aire y con protocolo.",
+    seoTitle: "Traje de entrada a la flama | aluminizado multicapa | México",
+    seoDescription: "Traje de entrada a la flama: aluminizado multicapa para ingreso breve en horno, incidente térmico severo o rescate industrial. Siempre con equipo de aire.",
+    keywords: ["traje de entrada a la flama", "aluminizado multicapa", "México"],
+    especificar: [{"titulo": "Ficha del fabricante", "desc": "No hay norma NFPA de producto específica para entrada: la especificación es contra la ficha técnica, así que léela completa."}, {"titulo": "Tiempo de exposición declarado", "desc": "El fabricante debe indicar el tiempo máximo de exposición y en qué condiciones se midió."}, {"titulo": "Integración con el ERA", "desc": "El conjunto tiene que alojar el equipo de respiración y permitir su revisión sin desarmar todo."}, {"titulo": "Entrenamiento incluido", "desc": "Es equipo que se usa mal si nadie practicó con él. Pregunta si el proveedor da capacitación de uso."}],
+    faqs: [{"q": "¿Cuánto tiempo se puede permanecer con un traje de entrada?", "a": "Muy poco, y depende del modelo y de las condiciones. El fabricante declara el tiempo máximo de exposición en su ficha técnica. Es equipo para entrar, resolver y salir, no para operar."}, {"q": "¿Existe una norma NFPA para trajes de entrada?", "a": "No hay una norma NFPA de producto específica para entrada, a diferencia del estructural o el forestal. Por eso la evaluación se hace contra la ficha del fabricante y conviene revisarla con detenimiento antes de comprar."}, {"q": "¿Se puede usar sin equipo de respiración?", "a": "No. El ingreso a la flama implica atmósfera no respirable. Sin equipo de respiración autónoma y sin protocolo de entrada y salida, el traje no habilita la maniobra."}],
+  },
+  {
+    slug: 'extricacion',
+    nombreWa: 'Extricación y rescate',
+    eyebrow: 'Rescate técnico',
+    title: 'Traje de extricación: el que evita que gastes tu estructural en un choque',
+    description:
+      'La mayoría de las salidas de un cuerpo de bomberos no son incendios: son accidentes viales. Y cada vez que sales a extricación con el traje estructural puesto, lo llenas de aceite, vidrio y fluidos, y le restas vida a un equipo que ya trae fecha de retiro a los diez años. Un traje de extricación es más ligero, más barato de reponer y está hecho justo para eso.',
+    features: [
+      'Resistente a corte y punción, con barrera contra patógenos transmitidos por sangre',
+      'Ligero y flexible: puedes trabajar hincado, dentro del vehículo y en espacios cerrados',
+      'Protección limitada frente a flash. Que quede claro: no es equipo para entrar a fuego',
+      'Es la forma más simple de estirar la vida útil del traje estructural, que es el caro de la estación',
+    ],
+    brands: ['Extricación', 'Rescate vehicular', 'Corte y punción', 'Patógenos', 'Rescate técnico'],
+    images: [
+      { src: '/images/productos/traje-extricacion-rescate-vehicular.svg', alt: 'Traje de extricación para rescate vehicular' },
+      { src: '/images/productos/chaqueta-extricacion-rescate.svg', alt: 'Chaqueta de extricación para rescate técnico' },
+      { src: '/images/productos/pantalon-extricacion-rescate.svg', alt: 'Pantalón de extricación para rescate técnico' },
+    ],
+    h1: "Traje de extricación",
+    h1Accent: "para el rescate que sí ocurre todos los días",
+    lead: "La mayoría de las salidas no son incendios: son choques. Este traje evita que gastes el estructural en ellos.",
+    seoTitle: "Traje de extricación | rescate vehicular | México",
+    seoDescription: "Traje de extricación para rescate vehicular y técnico: resistencia a corte y punción con barrera contra patógenos. Protege la vida útil de tu traje estructural.",
+    keywords: ["traje de extricación", "rescate vehicular", "México"],
+    especificar: [{"titulo": "Resistencia a corte y punción", "desc": "Es el requisito central: vidrio, lámina y herramienta hidráulica. Pide el dato, no el adjetivo."}, {"titulo": "Barrera contra patógenos", "desc": "En rescate vehicular hay sangre y fluidos. La barrera debe estar declarada en la ficha."}, {"titulo": "Movilidad real", "desc": "Se trabaja hincado, dentro del vehículo y en posturas incómodas. El traje tiene que acompañar."}, {"titulo": "Visibilidad", "desc": "Casi siempre es de noche y sobre carretera. La cinta reflejante aquí no es estética, es seguridad vial."}],
+    faqs: [{"q": "¿Por qué no usar el traje estructural para extricación?", "a": "Porque lo contaminas con aceite, vidrio y fluidos, y le restas vida a un equipo que ya se retira a los diez años de fabricado. Además pesa y estorba para trabajar hincado dentro de un vehículo. Un traje de extricación cuesta bastante menos de reponer."}, {"q": "¿El traje de extricación protege del fuego?", "a": "Solo de forma limitada frente a un flash. No es equipo para entrar a fuego ni sustituye al estructural. Es equipo de rescate técnico."}, {"q": "¿Sirve para otros rescates además del vehicular?", "a": "Sí. Se usa también en rescate en estructuras colapsadas, espacios confinados y atención prehospitalaria, donde el riesgo dominante es mecánico y biológico, no térmico."}],
+  },
+];
+
+export function familiaPorSlug(slug: string) {
+  return FAMILIAS.find((f) => f.slug === slug);
+}

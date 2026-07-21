@@ -44,7 +44,7 @@ export const WA_MESSAGES = {
 } as const;
 
 export const NAV = [
-  { label: 'Trajes', href: '/#catalogo' },
+  { label: 'Trajes', href: '/trajes/' },
   { label: 'Anatomía', href: '/#anatomia' },
   { label: 'Cómo especificar', href: '/#especificar' },
   { label: 'Marcas', href: '/#marcas' },
@@ -114,7 +114,7 @@ export const SEGMENTOS: Segmento[] = [
 // NO son línea propia. Ver COMPLEMENTOS más abajo.
 // ============================================================
 export interface ProductCategory {
-  slug: string;
+  slug: string;      // slug de URL L3: /trajes/<slug>/
   nombre: string;
   desc: string;
   image: string;
@@ -125,7 +125,7 @@ export interface ProductCategory {
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
-    slug: 'traje-estructural',
+    slug: 'estructural',
     nombre: 'Trajes estructurales',
     desc: 'Chaquetón y pantalón de tres capas: exterior, barrera de humedad y barrera térmica. Para combate de incendio en edificaciones.',
     image: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg',
@@ -134,7 +134,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     chips: ['Chaquetón', 'Pantalonera', 'DRD'],
   },
   {
-    slug: 'traje-brigadista',
+    slug: 'brigadista',
     nombre: 'Trajes de brigadista',
     desc: 'Equipo para brigada industrial de fuego incipiente. Menor costo que el estructural certificado y distinto alcance de protección.',
     image: '/images/productos/traje-brigadista-industrial-bombero.svg',
@@ -142,7 +142,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     chips: ['Brigada', 'NOM-002-STPS', 'Combo'],
   },
   {
-    slug: 'traje-forestal',
+    slug: 'forestal',
     nombre: 'Trajes forestales',
     desc: 'Camisola y pantalón de una sola capa en tela ignífuga inherente. Ligereza y transpirabilidad para jornadas largas en línea de fuego.',
     image: '/images/productos/traje-forestal-camisola-pantalon-bombero.svg',
@@ -150,7 +150,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     chips: ['Camisola', 'Una capa', 'Wildland'],
   },
   {
-    slug: 'traje-aproximacion',
+    slug: 'aproximacion',
     nombre: 'Trajes de aproximación',
     desc: 'Aluminizados para trabajo prolongado cerca de calor radiante intenso: ARFF, refinería y colada de metal. Conservan movilidad.',
     image: '/images/productos/traje-aproximacion-aluminizado-bombero.svg',
@@ -158,7 +158,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     chips: ['Aluminizado', 'ARFF', 'Metalúrgica'],
   },
   {
-    slug: 'traje-entrada',
+    slug: 'entrada',
     nombre: 'Trajes de entrada',
     desc: 'Aluminizado multicapa para ingreso breve a la flama en horno o incidente térmico severo. No se sustituye con uno de aproximación.',
     image: '/images/productos/traje-entrada-penetracion-flama.svg',
@@ -166,7 +166,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     chips: ['Penetración', 'Multicapa', 'Uso corto'],
   },
   {
-    slug: 'traje-extricacion',
+    slug: 'extricacion',
     nombre: 'Extricación y rescate',
     desc: 'Rescate vehicular y técnico: resistencia a corte y punción con barrera contra patógenos. Protege la inversión del traje estructural.',
     image: '/images/productos/traje-extricacion-rescate-vehicular.svg',
@@ -226,7 +226,7 @@ export const MARCAS_MATERIAL: Marca[] = [
 export const FOOTER_COLUMNS = [
   {
     title: 'Trajes',
-    links: PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: '/#catalogo' })),
+    links: PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
   },
   {
     title: 'Quién compra',

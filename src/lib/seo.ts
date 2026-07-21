@@ -28,9 +28,13 @@ export interface MetaAuditResult {
 }
 
 // Valida la regla: longitudes, kw1 primero, tokens repetidos
-export function metaAudit(title: string, description: string): MetaAuditResult {
+export function metaAudit(
+  title: string,
+  description: string,
+  kws: readonly string[] = KEYWORDS,
+): MetaAuditResult {
   const problems: string[] = [];
-  const kw1 = KEYWORDS[0].toLowerCase();
+  const kw1 = kws[0].toLowerCase();
   if (title.length > 60) problems.push(`Title de ${title.length} chars: pasa de 60.`);
   if (description.length > 160) problems.push(`Description de ${description.length} chars: pasa de 160.`);
   if (!title.toLowerCase().startsWith(kw1)) problems.push('El title no abre con kw1.');
@@ -95,6 +99,20 @@ export function directorySchema(items: { name: string; url: string }[]): object 
   };
 }
 
+// Migas: se generan desde la ruta, nunca se escriben a mano
+export function breadcrumbSchema(items: { name: string; href: string }[]): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: new URL(item.href, SITE.url).href,
+    })),
+  };
+}
+
 export function faqSchema(faqs: { q: string; a: string }[]): object {
   return {
     '@context': 'https://schema.org',
@@ -111,12 +129,14 @@ export interface SchemaInput {
   pageType: PageType;
   faqs?: { q: string; a: string }[];
   directoryItems?: { name: string; url: string }[];
+  breadcrumbs?: { name: string; href: string }[];
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
 export function buildSchema(input: SchemaInput): object[] {
   const schemas: object[] = [organizationSchema()];
   if (input.pageType === 'home') schemas.push(webSiteSchema());
+  if (input.breadcrumbs?.length) schemas.push(breadcrumbSchema(input.breadcrumbs));
   if (input.directoryItems?.length) schemas.push(directorySchema(input.directoryItems));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;

@@ -1,0 +1,163 @@
+---
+// L2 · Índice de sección "Trajes".
+// Aquí viven los módulos completos de las 6 familias (la home solo
+// lleva las cards, para no duplicar contenido y no canibalizar).
+// Cada módulo cierra enlazando a su L3: /trajes/<slug>/
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import CategoryCard from '@components/CategoryCard.astro';
+import CategoryFeature from '@components/CategoryFeature.astro';
+import RiskGuide from '@components/RiskGuide.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import { SITE, PRODUCT_CATEGORIES } from '@config/site';
+import { FAMILIAS } from '@lib/familias';
+
+const path = '/trajes/';
+
+// Keywords propias de esta página (regla de las 3 keywords)
+const keywords = ['tipos de trajes para bomberos', 'catálogo', 'México'] as const;
+const title = 'Tipos de trajes para bomberos | catálogo | México';
+const description =
+  'Tipos de trajes para bomberos: estructural, brigadista, forestal, aproximación, entrada y extricación. Cuál corresponde a cada operación y cómo se especifica.';
+
+const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
+const guiaRows = [
+  ['Estructural', 'Incendio en edificaciones, ataque interior', 'Tres capas: exterior + barrera de humedad + barrera térmica', 'Casco, monja, botas, guantes, ERA'],
+  ['Brigadista', 'Conato de incendio en industria, primera respuesta', 'Menor gramaje y alcance de protección que el estructural', 'Casco, guantes, botas, escafandra'],
+  ['Forestal', 'Incendio de vegetación, jornadas largas en campo', 'Una sola capa de tela ignífuga inherente, ligera y transpirable', 'Casco forestal, goggles, guantes, botas sin puntera'],
+  ['Aproximación', 'Trabajo cerca de calor radiante: ARFF, refinería, colada', 'Exterior aluminizado, uso prolongado, movilidad conservada', 'Capucha aluminizada, guantes, botas'],
+  ['Entrada', 'Ingreso breve a la flama: horno, incidente térmico severo', 'Aluminizado multicapa, pesado, uso corto de emergencia', 'Conjunto completo con ERA'],
+  ['Extricación', 'Rescate vehicular y técnico', 'Ligero, resistente a corte y punción, barrera contra patógenos', 'Guante de extricación, casco, goggles'],
+];
+const guiaNote =
+  'Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar.';
+
+const faqs = [
+  {
+    q: '¿Cuántos tipos de trajes para bomberos hay?',
+    a: 'En el mercado mexicano se manejan seis familias que no son intercambiables: estructural, brigadista, forestal, aproximación, entrada y extricación. Cada una responde a un riesgo distinto: elegir por precio y no por operación es lo que provoca la mayoría de los problemas.',
+  },
+  {
+    q: '¿Cuál es la diferencia entre un traje estructural y uno de brigadista?',
+    a: 'El alcance de protección. El estructural lleva tres capas y está pensado para ataque interior en una edificación en llamas. El de brigadista está pensado para conato de incendio en industria: primera respuesta, control con extintor y evacuación. Se parecen a la vista y cuestan muy distinto.',
+  },
+  {
+    q: '¿Puedo usar un traje forestal para un incendio estructural?',
+    a: 'No. El forestal es de una sola capa, sin barrera de humedad ni barrera térmica: está diseñado para jornadas largas en línea de fuego, no para el calor y el vapor de un interior. Al revés tampoco: un estructural en línea forestal provoca golpe de calor.',
+  },
+  {
+    q: '¿Qué diferencia hay entre aproximación y entrada?',
+    a: 'Aproximación es para trabajar cerca del calor radiante de forma prolongada, conservando movilidad. Entrada permite el ingreso breve a la flama y es multicapa, pesado y de uso corto. Comprar uno pensando que hace lo del otro es el error más peligroso del catálogo.',
+  },
+  {
+    q: '¿Necesito un traje distinto para rescate vehicular?',
+    a: 'Es muy recomendable. El de extricación resiste corte y punción y trae barrera contra patógenos, y evita que contamines y desgastes el traje estructural en salidas que no son de incendio. Considerando que el estructural se retira a los diez años de fabricado, cuidarlo tiene un valor económico directo.',
+  },
+  {
+    q: '¿Venden por pieza o solo el conjunto completo?',
+    a: 'Las dos formas. Puedes pedir solo chaquetón, solo pantalonera o el conjunto completo, sin compra mínima. Si combinas piezas de distintos cortes conviene revisarlo con nosotros: la interfaz entre chaquetón y pantalón es zona crítica.',
+  },
+];
+
+const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
+  name: c.nombre,
+  url: `${SITE.url}/trajes/${c.slug}/`,
+}));
+---
+<PageLayout
+  pageType="directorio"
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  crumbLabel="Trajes"
+  eyebrow="Catálogo por tipo de riesgo"
+  h1="Tipos de trajes para bomberos"
+  h1Accent="y para qué sirve cada uno"
+  lead="Seis familias, seis operaciones distintas. Abajo está cada una explicada como te la explicaría alguien que ya cotizó muchas: qué protege, qué no protege y qué conviene preguntar antes de firmar."
+  faqs={faqs}
+  directoryItems={directoryItems}
+>
+  <!-- Índice rápido de las 6 familias -->
+  <section class="section">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Las seis familias"
+        title="Empieza por identificar tu operación"
+        description="Si ya sabes cuál necesitas, entra directo a su ficha. Si no, la tabla comparativa de más abajo te ubica en un minuto."
+      />
+      <div class="grid-cards grid-cards--3">
+        {PRODUCT_CATEGORIES.map((cat, i) => (
+          <CategoryCard
+            href={`/trajes/${cat.slug}/`}
+            image={cat.image}
+            imageAlt={cat.imageAlt}
+            title={cat.nombre}
+            desc={cat.desc}
+            badge={cat.badge}
+            chips={[...cat.chips]}
+            ctaLabel="Ver ficha"
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulos completos: todos idénticos, sin zig-zag -->
+  <section class="section section--alt" id="familias">
+    <div class="container">
+      <SectionHeading
+        eyebrow="A fondo"
+        title="Cada familia, explicada de frente"
+        description="Sin adornos: para qué está hecha, qué se le pide en una cotización y en qué caso conviene otra."
+      />
+      {FAMILIAS.map((f) => (
+        <div class="familia">
+          <CategoryFeature
+            eyebrow={f.eyebrow}
+            title={f.title}
+            description={f.description}
+            features={f.features}
+            brands={f.brands}
+            images={f.images}
+            ctaLabel={`Ver ${f.nombreWa.toLowerCase()}`}
+            ctaHref={`/trajes/${f.slug}/`}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Comparativa -->
+  <section class="section" id="comparar">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Comparativa"
+        title="Qué familia corresponde a tu operación"
+        description="La misma tabla que usamos por teléfono cuando alguien no sabe por dónde empezar."
+      />
+      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
+    </div>
+  </section>
+
+  <!-- FAQ de la sección -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Preguntas frecuentes"
+        title="Dudas que salen siempre al elegir traje"
+      />
+      <FAQWithContact items={faqs} />
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .familia {
+    padding-block: clamp(2.2rem, 3.5vw, 3.4rem);
+    border-top: var(--border);
+  }
+  .familia:first-of-type { border-top: 0; padding-top: 0; }
+  .familia:last-of-type { padding-bottom: 0; }
+</style>
