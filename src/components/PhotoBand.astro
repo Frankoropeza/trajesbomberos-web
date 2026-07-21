@@ -1,0 +1,50 @@
+---
+// Banda de foto a todo lo ancho (full-bleed). Estática, sin
+// animación (regla del sitio). NO toca el hero: es una sección
+// independiente que se intercala entre bloques de contenido.
+// La imagen es AVIF optimizada (<200 KB) de images/escenas/.
+interface Props {
+  src: string;
+  alt: string;
+  caption?: string;
+  position?: string; // object-position, p.ej. 'center 40%'
+  height?: 'band' | 'tall';
+}
+const { src, alt, caption, position = 'center', height = 'band' } = Astro.props;
+---
+<section class={`photoband photoband--${height}`}>
+  <img src={src} alt={alt} loading="lazy" decoding="async" style={`object-position:${position}`} />
+  {caption && <p class="photoband__cap"><span>{caption}</span></p>}
+</section>
+
+<style>
+  .photoband {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--color-ink);
+    border-block: var(--border);
+  }
+  .photoband img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photoband--band { height: clamp(240px, 34vw, 460px); }
+  .photoband--tall { height: clamp(320px, 44vw, 600px); }
+  .photoband__cap {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 2.4rem clamp(1rem, 5vw, 3.5rem) 1.4rem;
+    background: linear-gradient(to top, rgba(10, 12, 14, 0.72), transparent);
+  }
+  .photoband__cap span {
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 640px) {
+    .photoband__cap { padding: 1.6rem 1rem 1rem; }
+    .photoband__cap span { font-size: 0.82rem; }
+  }
+</style>

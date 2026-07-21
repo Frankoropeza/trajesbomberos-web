@@ -7,6 +7,7 @@
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CTABanner from '@components/CTABanner.astro';
+import PhotoBand from '@components/PhotoBand.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
 
@@ -140,6 +141,14 @@ const entregables = [
       </section>
     </div>
   </div>
+
+  <PhotoBand
+    src="/images/escenas/bombero-ventilacion-techo-nocturno.avif"
+    alt="Bombero realizando ventilación en un techo durante un incendio nocturno"
+    caption="Equipamos a quienes entran primero: cotización por escrito, ficha técnica por partida y la norma vigente."
+    height="tall"
+    position="center 35%"
+  />
 
   <CTABanner {...PRESET_CONTACTO} />
 </PageLayout>

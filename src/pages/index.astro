@@ -14,6 +14,7 @@
 //  · Sin precios (decisión de negocio). Sin reseñas fabricadas.
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
+import PhotoBand from '@components/PhotoBand.astro';
 import SectionMenu from '@components/SectionMenu.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CategoryCard from '@components/CategoryCard.astro';
@@ -233,6 +234,12 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   </section>
 
   <CTABanner variant="light" {...PRESET_GENERAL} />
+
+  <PhotoBand
+    src="/images/escenas/bomberos-ataque-incendio-manguera.avif"
+    alt="Bomberos con traje estructural y equipo de respiración avanzando una línea de manguera en un incendio"
+    caption="Traje estructural en ataque interior: chaquetón y pantalonera de tres capas, cinta reflejante y equipo de respiración."
+  />
 
   <!-- 2 · Cómo está hecho: las tres capas -->
   <section class="section" id="anatomia">
