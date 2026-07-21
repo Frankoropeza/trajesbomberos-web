@@ -1,0 +1,314 @@
+---
+// L4 · Ficha de pieza: /trajes/<familia>/<pieza>/
+// Secuencia homologada con L3: hero → franja → [contenido +
+// sidebar] → piezas hermanas → CTA de cierre.
+// Solo se generan las piezas con entrada en PIEZAS (lib/piezas.ts).
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import CategoryDetail from '@components/CategoryDetail.astro';
+import SpecTable from '@components/SpecTable.astro';
+import ProductCard from '@components/ProductCard.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import CTABanner from '@components/CTABanner.astro';
+import Sidebar from '@components/Sidebar.astro';
+import { WA_MESSAGES } from '@config/site';
+import { PIEZAS } from '@lib/piezas';
+import { FAMILIAS } from '@lib/familias';
+import { presetCategoria } from '@lib/cta-presets';
+import { waUrl } from '@lib/wa';
+
+export const getStaticPaths = (() => {
+  return PIEZAS.map((p) => ({
+    params: { familia: p.familia, pieza: p.slug },
+    props: { pieza: p },
+  }));
+}) satisfies GetStaticPaths;
+
+const { pieza: pz } = Astro.props;
+const familia = FAMILIAS.find((f) => f.slug === pz.familia)!;
+const path = `/trajes/${pz.familia}/${pz.slug}/`;
+
+// Hermanas: las demás piezas cotizables de la misma familia
+const hermanas = familia.productos.filter((pr) => pr.nombre !== pz.nombreCard);
+
+const menuItems = [
+  { label: 'Qué es', href: '#que-es' },
+  { label: 'Ficha técnica', href: '#ficha' },
+  { label: 'Qué incluye', href: '#incluye' },
+  { label: 'Errores', href: '#errores' },
+  { label: 'Preguntas', href: '#faq' },
+];
+
+const pageIndex = [
+  { label: 'Qué es y cómo está hecho', href: '#que-es' },
+  { label: 'Ficha técnica completa', href: '#ficha' },
+  { label: 'Qué incluye y qué no', href: '#incluye' },
+  { label: 'Dónde se usa', href: '#aplicaciones' },
+  { label: 'Errores al comprar', href: '#errores' },
+  { label: 'Preguntas frecuentes', href: '#faq' },
+];
+---
+<PageLayout
+  pageType="producto"
+  path={path}
+  title={pz.seoTitle}
+  description={pz.seoDescription}
+  keywords={pz.keywords}
+  menuItems={menuItems}
+  crumbLabel={pz.nombre}
+  parent={[
+    { name: 'Trajes', href: '/trajes/' },
+    { name: familia.nombreWa, href: `/trajes/${pz.familia}/` },
+  ]}
+  eyebrow={pz.eyebrow}
+  h1={pz.h1}
+  h1Accent={pz.h1Accent}
+  lead={pz.lead}
+  descRight={pz.descRight}
+  meta={pz.meta}
+  faqs={pz.faqs}
+  product={{
+    nombre: pz.nombre,
+    descripcion: pz.seoDescription,
+    imagen: pz.images[0].src,
+    categoria: familia.nombreWa,
+    url: path,
+  }}
+>
+  <div class="section">
+    <div class="container layout-grid">
+      <div class="layout-main">
+        <!-- 1 · Qué es -->
+        <section id="que-es" class="block">
+          <CategoryDetail
+            eyebrow="Qué es"
+            title={`${pz.nombre}: cómo está construido`}
+            paragraphs={pz.resumen}
+            points={pz.puntosClave}
+            images={pz.images}
+            ctaLabel="Cotizar esta pieza"
+            ctaHref={waUrl(WA_MESSAGES.categoria(pz.nombre))}
+            external
+          />
+        </section>
+
+        <!-- 2 · Ficha técnica -->
+        <section id="ficha" class="block">
+          <SectionHeading
+            eyebrow="Ficha técnica"
+            title="Especificación completa"
+            description="Cópiala tal cual a tu requisición o a tu anexo técnico. Si una oferta no puede llenar estos campos, todavía no es comparable."
+          />
+          <SpecTable grupos={pz.fichaTecnica} />
+        </section>
+
+        <!-- 3 · Qué incluye -->
+        <section id="incluye" class="block">
+          <SectionHeading
+            eyebrow="Alcance"
+            title="Qué incluye y qué se cotiza aparte"
+            description="Para que no haya sorpresas al comparar dos cotizaciones que parecen iguales."
+          />
+          <div class="alcance">
+            <div class="alcance__col">
+              <h3 class="alcance__t alcance__t--si">Incluye</h3>
+              <ul class="alcance__list alcance__list--si">
+                {pz.incluye.map((i) => <li>{i}</li>)}
+              </ul>
+            </div>
+            <div class="alcance__col">
+              <h3 class="alcance__t alcance__t--no">Se cotiza aparte</h3>
+              <ul class="alcance__list alcance__list--no">
+                {pz.noIncluye.map((i) => <li>{i}</li>)}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4 · Aplicaciones -->
+        <section id="aplicaciones" class="block">
+          <SectionHeading
+            eyebrow="Dónde se usa"
+            title="Operaciones que lo requieren"
+          />
+          <div class="apl">
+            {pz.aplicaciones.map((a) => (
+              <div class="apl__item">
+                <h3>{a.titulo}</h3>
+                <p>{a.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- 5 · Errores -->
+        <section id="errores" class="block">
+          <SectionHeading
+            eyebrow="Antes de firmar"
+            title="Errores frecuentes al comprar esta pieza"
+            description="Publicados aunque no nos compres. Si detectas alguno en una oferta que estás evaluando, ya te sirvió la visita."
+          />
+          <ul class="err">
+            {pz.errores.map((e, i) => (
+              <li class="err__item">
+                <div class="err__head">
+                  <span class="err__n">{String(i + 1).padStart(2, '0')}</span>
+                  <h3>{e.error}</h3>
+                </div>
+                <p>{e.realidad}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <!-- 6 · FAQ -->
+        <section id="faq" class="block">
+          <SectionHeading
+            eyebrow="Preguntas frecuentes"
+            title={`Dudas sobre ${pz.nombre.toLowerCase()}`}
+          />
+          <FAQWithContact items={pz.faqs} />
+        </section>
+      </div>
+
+      <Sidebar
+        activeSlug={pz.familia}
+        pageIndex={pageIndex}
+        waMessage={WA_MESSAGES.categoria(pz.nombre)}
+      />
+    </div>
+  </div>
+
+  <!-- 7 · Piezas hermanas -->
+  <section class="section section--alt" id="hermanas">
+    <div class="container">
+      <SectionHeading
+        eyebrow={familia.nombreWa}
+        title="Otras piezas de esta familia"
+        description="Se cotizan por separado o dentro del conjunto completo."
+      />
+      <div class="grid-cards grid-cards--3">
+        {hermanas.map((pr, i) => (
+          <ProductCard
+            nombre={pr.nombre}
+            desc={pr.desc}
+            chips={pr.chips}
+            spec={pr.spec}
+            img={pr.img}
+            alt={pr.alt}
+            index={i}
+          />
+        ))}
+      </div>
+      <p class="volver"><a href={`/trajes/${pz.familia}/`}>← Volver a {familia.nombreWa.toLowerCase()}</a></p>
+    </div>
+  </section>
+
+  <!-- 8 · CTA de cierre -->
+  <CTABanner variant="dark" {...presetCategoria(pz.nombre)} />
+</PageLayout>
+
+<style>
+  .layout-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+  .layout-main { display: grid; gap: 0; min-width: 0; }
+  .block { padding-block: clamp(2.2rem, 3.5vw, 3.4rem); border-top: var(--border); }
+  .block:first-child { padding-top: 0; border-top: 0; }
+  .block:last-child { padding-bottom: 0; }
+
+  .alcance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
+  .alcance__t {
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 2px solid var(--color-gray-light);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+  }
+  .alcance__t--si { border-bottom-color: var(--color-wa); color: var(--color-wa-dark); }
+  .alcance__t--no { border-bottom-color: var(--color-gray-soft); color: var(--color-gray-soft); }
+  .alcance__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+  .alcance__list li {
+    position: relative;
+    padding-left: 1.6rem;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+  }
+  .alcance__list--si li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-wa-dark);
+    font-weight: 800;
+  }
+  .alcance__list--no li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--color-gray-soft);
+    font-weight: 800;
+  }
+
+  .apl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .apl__item {
+    padding: 0 clamp(0.9rem, 1.6vw, 1.6rem);
+    border-left: var(--border);
+  }
+  .apl__item:first-child { border-left: 0; padding-left: 0; }
+  .apl h3 { margin: 0 0 0.35rem; font-size: 0.98rem; }
+  .apl p { margin: 0; font-size: 0.86rem; color: var(--color-gray); line-height: 1.55; }
+
+  .err { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--color-primary); }
+  .err__item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: clamp(1.2rem, 3vw, 3rem);
+    padding: 1.3rem 0;
+    border-bottom: var(--border);
+    align-items: start;
+  }
+  .err__head { display: flex; gap: 0.85rem; align-items: baseline; }
+  .err__n {
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+  .err h3 { margin: 0; font-size: 1rem; }
+  .err p { margin: 0; color: var(--color-gray); font-size: 0.9rem; }
+
+  .volver { margin: 2.2rem 0 0; }
+  .volver a { font-weight: 800; text-decoration: none; }
+  .volver a:hover { text-decoration: underline; }
+
+  @media (max-width: 1024px) {
+    .layout-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .apl { grid-template-columns: repeat(2, 1fr); row-gap: 1.6rem; }
+    .apl__item:nth-child(odd) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 800px) {
+    .err__item { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+  @media (max-width: 700px) {
+    .alcance { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .apl { grid-template-columns: 1fr; }
+    .apl__item { border-left: 0; padding-left: 0; }
+  }
+</style>

@@ -8,6 +8,8 @@
 // poder nombrarlas como tales (hoy solo referencia técnica).
 // ============================================================
 
+import { PIEZAS } from '@lib/piezas';
+
 export const SITE = {
   name: 'TrajesBombero',
   legalName: 'TrajesBombero México',
@@ -263,6 +265,8 @@ export const NAV: NavItem[] = [
     href: '/trajes/',
     children: [
       ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+      // Fichas técnicas de pieza publicadas (L4)
+      ...PIEZAS.map((p) => ({ label: `Ficha: ${p.nombre}`, href: `/trajes/${p.familia}/${p.slug}/` })),
       { label: 'Ver todas las familias', href: '/trajes/' },
     ],
   },
@@ -334,6 +338,7 @@ export const FOOTER_COLUMNS = [
     title: 'Trajes',
     links: [
       ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+      ...PIEZAS.map((p) => ({ label: p.nombre, href: `/trajes/${p.familia}/${p.slug}/` })),
       { label: 'Ver todas las familias', href: '/trajes/' },
     ],
   },

@@ -6,6 +6,7 @@
 // NO emite schema (regla B3: el ItemList lo emite la página).
 import { WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
+import { piezaPorNombreCard } from '@lib/piezas';
 
 interface Props {
   nombre: string;
@@ -18,6 +19,10 @@ interface Props {
 }
 const { nombre, desc, chips, spec, img, alt, index = 0 } = Astro.props;
 const eager = index < 3;
+// Si la pieza tiene ficha L4 publicada, la tarjeta lleva a la ficha
+// y el CTA de WhatsApp pasa a segundo plano.
+const ficha = piezaPorNombreCard(nombre);
+const fichaHref = ficha ? `/trajes/${ficha.familia}/${ficha.slug}/` : null;
 ---
 <article class="prod">
   <div class="prod__media">
@@ -47,16 +52,37 @@ const eager = index < 3;
       </dl>
     )}
 
-    <a
-      class="prod__cta"
-      href={waUrl(WA_MESSAGES.categoria(nombre))}
-      target="_blank"
-      rel="noopener nofollow"
-      aria-label={`Cotizar ${nombre} por WhatsApp`}
-    >
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
-      Cotizar esta pieza
-    </a>
+    <div class="prod__actions">
+      {fichaHref ? (
+        <>
+          <a class="prod__cta prod__cta--ficha" href={fichaHref}>
+            Ver ficha técnica
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a
+            class="prod__wa"
+            href={waUrl(WA_MESSAGES.categoria(nombre))}
+            target="_blank"
+            rel="noopener nofollow"
+            aria-label={`Cotizar ${nombre} por WhatsApp`}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Cotizar
+          </a>
+        </>
+      ) : (
+        <a
+          class="prod__cta"
+          href={waUrl(WA_MESSAGES.categoria(nombre))}
+          target="_blank"
+          rel="noopener nofollow"
+          aria-label={`Cotizar ${nombre} por WhatsApp`}
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Cotizar esta pieza
+        </a>
+      )}
+    </div>
   </div>
 </article>
 
@@ -145,12 +171,12 @@ const eager = index < 3;
     color: var(--color-gray);
   }
 
+  .prod__actions { margin-top: auto; display: grid; gap: 0.5rem; }
   .prod__cta {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    margin-top: auto;
     padding: 0.7rem 1rem;
     min-height: 46px;
     border-radius: var(--radius);
@@ -162,4 +188,23 @@ const eager = index < 3;
     transition: background 0.18s ease;
   }
   .prod__cta:hover { background: var(--color-wa-dark); }
+
+  /* Con ficha publicada: primario a la ficha, WhatsApp secundario */
+  .prod__cta--ficha { background: var(--color-primary); }
+  .prod__cta--ficha:hover { background: var(--color-primary-dark); }
+  .prod__wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.6rem 1rem;
+    min-height: 42px;
+    border: 1.5px solid var(--color-wa);
+    border-radius: var(--radius);
+    color: var(--color-wa-dark);
+    font-weight: 700;
+    font-size: 0.84rem;
+    text-decoration: none;
+  }
+  .prod__wa:hover { background: var(--color-wa); color: #fff; }
 </style>

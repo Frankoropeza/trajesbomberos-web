@@ -7,6 +7,7 @@
 // Data-driven desde site.ts (SSoT). Regla D4: waUrl para WhatsApp.
 import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
+import { PIEZAS } from '@lib/piezas';
 import { getPostsByFamilia, postUrl, categoriaNombre } from '@lib/blog';
 
 interface Props {
@@ -15,6 +16,8 @@ interface Props {
   waMessage?: string;
 }
 const { activeSlug, pageIndex = [], waMessage = WA_MESSAGES.cotizar } = Astro.props;
+// Fichas de pieza publicadas de la familia activa
+const fichas = activeSlug ? PIEZAS.filter((p) => p.familia === activeSlug) : [];
 
 // Artículos del blog para esta familia: interlinking hacia el
 // contenido editorial, que es el que resuelve las dudas que
@@ -46,6 +49,17 @@ const RECURSOS = [
       <li><a class="sb-all" href="/trajes/">Ver comparativa completa</a></li>
     </ul>
   </nav>
+
+  {fichas.length > 0 && (
+    <nav class="sb-block" aria-label="Fichas técnicas">
+      <p class="sb-title">Fichas técnicas</p>
+      <ul class="sb-list">
+        {fichas.map((f) => (
+          <li><a href={`/trajes/${f.familia}/${f.slug}/`}>{f.nombre}</a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
 
   {pageIndex.length > 0 && (
     <nav class="sb-block" aria-label="Contenido de esta página">

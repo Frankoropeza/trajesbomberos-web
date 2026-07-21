@@ -21,7 +21,7 @@ interface Props extends SchemaInput {
   descRight: string[];     // panel de 2 párrafos, columna derecha
   meta?: string[];         // datos duros bajo el subtítulo
   crumbLabel: string;      // nombre de esta página en las migas
-  parent?: { name: string; href: string };        // nivel superior (L3 → L2)
+  parent?: { name: string; href: string } | { name: string; href: string }[];  // niveles superiores
   keywords?: readonly string[];                   // tripleta propia de la página
   menuItems?: { label: string; href: string }[];  // franja de secciones de ESTA página
 }
@@ -44,12 +44,14 @@ const {
   parent,
   keywords,
   menuItems,
+  product,
 } = Astro.props;
 
 // Migas derivadas de la ruta: Inicio › [padre] › actual
+const parents = parent ? (Array.isArray(parent) ? parent : [parent]) : [];
 const crumbs = [
   { name: 'Inicio', href: '/' },
-  ...(parent ? [parent] : []),
+  ...parents,
   { name: crumbLabel, href: path },
 ];
 ---
@@ -63,6 +65,7 @@ const crumbs = [
   directoryItems={directoryItems}
   article={article}
   breadcrumbs={crumbs}
+  product={product}
 >
   <Breadcrumbs items={crumbs} />
 

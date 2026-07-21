@@ -162,12 +162,34 @@ export function articleSchema(a: ArticleInput): object {
   };
 }
 
+// Product para fichas L4. Sin offers ni aggregateRating: no
+// publicamos precios y nunca fabricamos reseñas (regla dura).
+export function productSchema(p: {
+  nombre: string;
+  descripcion: string;
+  imagen: string;
+  categoria: string;
+  url: string;
+}): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: p.nombre,
+    description: p.descripcion,
+    image: new URL(p.imagen, SITE.url).href,
+    category: p.categoria,
+    url: new URL(p.url, SITE.url).href,
+    brand: { '@type': 'Brand', name: SITE.name },
+  };
+}
+
 export interface SchemaInput {
   pageType: PageType;
   faqs?: { q: string; a: string }[];
   directoryItems?: { name: string; url: string }[];
   breadcrumbs?: { name: string; href: string }[];
   article?: ArticleInput;
+  product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -177,6 +199,7 @@ export function buildSchema(input: SchemaInput): object[] {
   if (input.breadcrumbs?.length) schemas.push(breadcrumbSchema(input.breadcrumbs));
   if (input.directoryItems?.length) schemas.push(directorySchema(input.directoryItems));
   if (input.article) schemas.push(articleSchema(input.article));
+  if (input.product) schemas.push(productSchema(input.product));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;
 }

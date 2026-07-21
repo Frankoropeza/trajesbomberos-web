@@ -30,6 +30,7 @@ const {
   directoryItems,
   breadcrumbs,
   article,
+  product,
   title = buildKeywordTitle(),
   description = buildKeywordDescription(),
   path = '/',
@@ -38,7 +39,7 @@ const {
 
 const canonical = new URL(path, SITE.url).href;
 const ogImage = new URL('/images/og-trajes-para-bomberos.png', SITE.url).href;
-const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article });
+const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product });
 
 // metaAudit valida la regla en build; avisa en consola sin romper.
 const audit = metaAudit(title, description, keywords);
