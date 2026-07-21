@@ -50,9 +50,9 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     brands: ['Chaquetón de bombero', 'Pantalonera', 'Tres capas', 'Barrera térmica', 'DRD', 'Ataque interior'],
     images: [
-      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural para bombero con chaquetón y pantalón de tres capas' },
-      { src: '/images/productos/chaqueton-estructural-bombero.svg', alt: 'Chaquetón estructural para bombero con DRD integrado' },
-      { src: '/images/productos/pantalonera-estructural-bombero.svg', alt: 'Pantalonera estructural para bombero con tirantes' },
+      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif', alt: 'Traje estructural para bombero con chaquetón y pantalón de tres capas' },
+      { src: '/images/productos/chaqueton-estructural-bombero.avif', alt: 'Chaquetón estructural para bombero con DRD integrado' },
+      { src: '/images/productos/pantalonera-estructural-bombero.avif', alt: 'Pantalonera estructural para bombero con tirantes' },
     ],
     h1: "Traje estructural para bombero",
     h1Accent: "de tres capas",
@@ -68,7 +68,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaquetón estructural de tres capas",
-                "img": "/images/piezas/chaqueton-estructural-de-tres-capas.svg",
+                "img": "/images/piezas/chaqueton-estructural-de-tres-capas.avif",
                 "alt": "Chaquetón estructural de tres capas para bombero",
                 "desc": "Prenda superior del conjunto: capa exterior ignífuga, barrera de humedad y barrera térmica, con DRD integrado para arrastre de rescate. Se cotiza independiente del pantalón.",
                 "chips": [
@@ -80,7 +80,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalonera estructural",
-                "img": "/images/piezas/pantalonera-estructural.svg",
+                "img": "/images/piezas/pantalonera-estructural.avif",
                 "alt": "Pantalonera estructural para bombero",
                 "desc": "Pantalón de combate de tres capas con rodillas articuladas y refuerzos. Se especifica por cintura y entrepierna, y por tipo de ajuste.",
                 "chips": [
@@ -116,7 +116,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Arnés interno de escape",
-                "img": "/images/piezas/arnes-interno-de-escape.svg",
+                "img": "/images/piezas/arnes-interno-de-escape.avif",
                 "alt": "Arnés interno de escape para bombero",
                 "desc": "Arnés clase escape cosido dentro del pantalón, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 1983, aparte del conjunto.",
                 "chips": [
@@ -128,7 +128,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Capucha antipartículas (monja)",
-                "img": "/images/piezas/capucha-antiparticulas-monja.svg",
+                "img": "/images/piezas/capucha-antiparticulas-monja.avif",
                 "alt": "Capucha antipartículas (monja) para bombero",
                 "desc": "Cubre cabeza, cuello y orejas con barrera de partículas y sella la interfaz entre casco, chaquetón y máscara del equipo de respiración.",
                 "chips": [
@@ -155,8 +155,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     brands: ['Brigada contra incendio', 'Conato', 'Combo brigadista', 'NOM-002-STPS', 'Primera respuesta'],
     images: [
-      { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial para conato de incendio' },
-      { src: '/images/productos/combo-brigadista-industrial.svg', alt: 'Combo completo de brigadista industrial contra incendio' },
+      { src: '/images/productos/traje-brigadista-industrial-bombero.avif', alt: 'Traje de brigadista industrial para conato de incendio' },
+      { src: '/images/productos/combo-brigadista-industrial.avif', alt: 'Combo completo de brigadista industrial contra incendio' },
       { src: '/images/productos/casco-brigadista-industrial.svg', alt: 'Casco para brigadista industrial' },
     ],
     h1: "Traje de brigadista contra incendio",
@@ -173,7 +173,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Conjunto de brigada contra fuego incipiente",
-                "img": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.svg",
+                "img": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.avif",
                 "alt": "Conjunto de brigada contra fuego incipiente para bombero",
                 "desc": "Chaquetón y pantalón para brigada industrial en atención de conato, con capa externa inherentemente ignífuga y forro desmontable de barrera de humedad más barrera térmica.",
                 "chips": [
@@ -185,7 +185,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Overol ignífugo NFPA 2112",
-                "img": "/images/piezas/overol-ignifugo-nfpa-2112.svg",
+                "img": "/images/piezas/overol-ignifugo-nfpa-2112.avif",
                 "alt": "Overol ignífugo NFPA 2112 para bombero",
                 "desc": "Overol de una pieza en aramida inherente, certificado para exposición breve a flamazo. Es la prenda base de brigada en planta, petroquímica y energía.",
                 "chips": [
@@ -197,7 +197,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Chaquetón de brigadista (pieza suelta)",
-                "img": "/images/piezas/chaqueton-de-brigadista-pieza-suelta.svg",
+                "img": "/images/piezas/chaqueton-de-brigadista-pieza-suelta.avif",
                 "alt": "Chaquetón de brigadista (pieza suelta) para bombero",
                 "desc": "Chaquetón de brigada con barreras técnicas, bandas reflejantes de alta visibilidad y refuerzos en zonas de desgaste. Se cotiza suelto para reposición.",
                 "chips": [
@@ -221,7 +221,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Monja (capucha) de brigada",
-                "img": "/images/piezas/monja-capucha-de-brigada.svg",
+                "img": "/images/piezas/monja-capucha-de-brigada.avif",
                 "alt": "Monja (capucha) de brigada para bombero",
                 "desc": "Capuchón de tejido aramídico elástico que cubre orejas, cuello y mandíbula: justo lo que no cubren el casco ni el chaquetón.",
                 "chips": [
@@ -260,9 +260,9 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     brands: ['Camisola forestal', 'Wildland', 'Una capa', 'Fibra inherente', 'CONAFOR'],
     images: [
-      { src: '/images/productos/traje-forestal-camisola-pantalon-bombero.svg', alt: 'Traje forestal para bombero de una sola capa' },
-      { src: '/images/productos/camisola-forestal-nomex.svg', alt: 'Camisola forestal de tela ignífuga inherente' },
-      { src: '/images/productos/pantalon-forestal-bombero.svg', alt: 'Pantalón forestal para combate de incendios de vegetación' },
+      { src: '/images/productos/traje-forestal-camisola-pantalon-bombero.avif', alt: 'Traje forestal para bombero de una sola capa' },
+      { src: '/images/productos/camisola-forestal-nomex.avif', alt: 'Camisola forestal de tela ignífuga inherente' },
+      { src: '/images/productos/pantalon-forestal-bombero.avif', alt: 'Pantalón forestal para combate de incendios de vegetación' },
     ],
     h1: "Traje forestal para bombero",
     h1Accent: "de una sola capa",
@@ -278,7 +278,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Camisola forestal",
-                "img": "/images/piezas/camisola-forestal.svg",
+                "img": "/images/piezas/camisola-forestal.avif",
                 "alt": "Camisola forestal para bombero",
                 "desc": "Camisola de manga larga en tela inherentemente ignífuga y construcción ventilada. Es la prenda preferida por cuadrillas de línea sobre la chamarra.",
                 "chips": [
@@ -290,7 +290,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón cargo forestal",
-                "img": "/images/piezas/pantalon-cargo-forestal.svg",
+                "img": "/images/piezas/pantalon-cargo-forestal.avif",
                 "alt": "Pantalón cargo forestal para bombero",
                 "desc": "Pantalón tipo cargo en tela ignífuga inherente, con bolsas de carga, refuerzos y ajuste en valenciana para terreno agreste y uso con mochila.",
                 "chips": [
@@ -338,7 +338,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto dual forestal y rescate",
-                "img": "/images/piezas/conjunto-dual-forestal-y-rescate.svg",
+                "img": "/images/piezas/conjunto-dual-forestal-y-rescate.avif",
                 "alt": "Conjunto dual forestal y rescate para bombero",
                 "desc": "Chaqueta y pantalón certificados a la vez para incendio forestal y rescate técnico, para brigadas que atienden ambos escenarios con un solo equipo.",
                 "chips": [
@@ -574,9 +574,9 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     brands: ['Extricación', 'Rescate vehicular', 'Corte y punción', 'Patógenos', 'Rescate técnico'],
     images: [
-      { src: '/images/productos/traje-extricacion-rescate-vehicular.svg', alt: 'Traje de extricación para rescate vehicular' },
-      { src: '/images/productos/chaqueta-extricacion-rescate.svg', alt: 'Chaqueta de extricación para rescate técnico' },
-      { src: '/images/productos/pantalon-extricacion-rescate.svg', alt: 'Pantalón de extricación para rescate técnico' },
+      { src: '/images/productos/traje-extricacion-rescate-vehicular.avif', alt: 'Traje de extricación para rescate vehicular' },
+      { src: '/images/productos/chaqueta-extricacion-rescate.avif', alt: 'Chaqueta de extricación para rescate técnico' },
+      { src: '/images/productos/pantalon-extricacion-rescate.avif', alt: 'Pantalón de extricación para rescate técnico' },
     ],
     h1: "Traje de extricación",
     h1Accent: "para rescate vehicular",
@@ -592,7 +592,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaqueta de rescate técnico",
-                "img": "/images/piezas/chaqueta-de-rescate-tecnico.svg",
+                "img": "/images/piezas/chaqueta-de-rescate-tecnico.avif",
                 "alt": "Chaqueta de rescate técnico para bombero",
                 "desc": "Chaqueta monocapa ligera para extricación, accidentes viales, rescate y mando de incidente. Más protección que el uniforme de estación, mucho menos carga térmica que el chaquetón.",
                 "chips": [
@@ -604,7 +604,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón de rescate técnico",
-                "img": "/images/piezas/pantalon-de-rescate-tecnico.svg",
+                "img": "/images/piezas/pantalon-de-rescate-tecnico.avif",
                 "alt": "Pantalón de rescate técnico para bombero",
                 "desc": "Pantalón monocapa ignífugo con rodillas acolchadas y reforzadas, diseñado para trabajar hincado sobre vidrio y lámina.",
                 "chips": [
@@ -616,7 +616,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto de extricación",
-                "img": "/images/piezas/conjunto-de-extricacion.svg",
+                "img": "/images/piezas/conjunto-de-extricacion.avif",
                 "alt": "Conjunto de extricación para bombero",
                 "desc": "Chaqueta y pantalón que se cotizan como set. Evita rasgar y contaminar el traje estructural en llamados que no son de incendio.",
                 "chips": [
@@ -652,7 +652,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón de cubierta para rescate",
-                "img": "/images/piezas/pantalon-de-cubierta-para-rescate.svg",
+                "img": "/images/piezas/pantalon-de-cubierta-para-rescate.avif",
                 "alt": "Pantalón de cubierta para rescate para bombero",
                 "desc": "Pantalón exterior que se pone rápido sobre el uniforme de estación para llamados de rescate, sin vestir el equipo estructural completo.",
                 "chips": [

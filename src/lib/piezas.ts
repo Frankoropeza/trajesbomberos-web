@@ -95,9 +95,9 @@ export const PIEZAS: Pieza[] = [
       'La fecha de fabricación de la etiqueta arranca los diez años de vida útil',
     ],
     images: [
-      { src: '/images/piezas/chaqueton-estructural-de-tres-capas.svg', alt: 'Chaquetón estructural para bombero de tres capas con DRD integrado' },
-      { src: '/images/productos/chaqueton-estructural-bombero.svg', alt: 'Detalle de chaquetón estructural para bombero' },
-      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Conjunto estructural completo: chaquetón y pantalonera' },
+      { src: '/images/piezas/chaqueton-estructural-de-tres-capas.avif', alt: 'Chaquetón estructural para bombero de tres capas con DRD integrado' },
+      { src: '/images/productos/chaqueton-estructural-bombero.avif', alt: 'Detalle de chaquetón estructural para bombero' },
+      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif', alt: 'Conjunto estructural completo: chaquetón y pantalonera' },
     ],
 
     fichaTecnica: [
@@ -317,15 +317,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pantalonera-estructural.svg",
+        "src": "/images/piezas/pantalonera-estructural.avif",
         "alt": "Pantalonera estructural para bombero de tres capas"
       },
       {
-        "src": "/images/productos/pantalonera-estructural-bombero.svg",
+        "src": "/images/productos/pantalonera-estructural-bombero.avif",
         "alt": "Detalle de pantalonera estructural con tirantes"
       },
       {
-        "src": "/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg",
+        "src": "/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif",
         "alt": "Conjunto estructural: chaquetón y pantalonera"
       }
     ],
@@ -651,11 +651,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Tirantes acolchados tipo H para pantalonera de bombero"
       },
       {
-        "src": "/images/productos/pantalonera-estructural-bombero.svg",
+        "src": "/images/productos/pantalonera-estructural-bombero.avif",
         "alt": "Pantalonera estructural con tirantes"
       },
       {
-        "src": "/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg",
+        "src": "/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif",
         "alt": "Conjunto estructural completo"
       }
     ],
@@ -900,11 +900,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Rodilleras de espuma para forro de pantalonera de bombero"
       },
       {
-        "src": "/images/productos/pantalonera-estructural-bombero.svg",
+        "src": "/images/productos/pantalonera-estructural-bombero.avif",
         "alt": "Pantalonera estructural con rodilla reforzada"
       },
       {
-        "src": "/images/piezas/pantalonera-estructural.svg",
+        "src": "/images/piezas/pantalonera-estructural.avif",
         "alt": "Pantalonera estructural de tres capas"
       }
     ],
@@ -1138,15 +1138,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/arnes-interno-de-escape.svg",
+        "src": "/images/piezas/arnes-interno-de-escape.avif",
         "alt": "Arnés interno de escape para bombero integrado a la pantalonera"
       },
       {
-        "src": "/images/productos/pantalonera-estructural-bombero.svg",
+        "src": "/images/productos/pantalonera-estructural-bombero.avif",
         "alt": "Pantalonera estructural con arnés interno"
       },
       {
-        "src": "/images/piezas/pantalonera-estructural.svg",
+        "src": "/images/piezas/pantalonera-estructural.avif",
         "alt": "Pantalonera estructural de tres capas"
       }
     ],
@@ -1417,15 +1417,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/capucha-antiparticulas-monja.svg",
+        "src": "/images/piezas/capucha-antiparticulas-monja.avif",
         "alt": "Monja o capucha antipartículas para bombero"
       },
       {
-        "src": "/images/productos/monja-capucha-barrera-particulas-bombero.svg",
+        "src": "/images/productos/monja-capucha-barrera-particulas-bombero.avif",
         "alt": "Capucha con barrera de partículas para bombero"
       },
       {
-        "src": "/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg",
+        "src": "/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif",
         "alt": "Conjunto estructural completo"
       }
     ],
@@ -1700,15 +1700,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.svg",
+        "src": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.avif",
         "alt": "Conjunto de brigada contra fuego incipiente: chaquetón y pantalón"
       },
       {
-        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "src": "/images/productos/traje-brigadista-industrial-bombero.avif",
         "alt": "Traje de brigadista industrial"
       },
       {
-        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "src": "/images/productos/combo-brigadista-industrial.avif",
         "alt": "Combo completo de brigadista industrial"
       }
     ],
@@ -1999,15 +1999,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/overol-ignifugo-nfpa-2112.svg",
+        "src": "/images/piezas/overol-ignifugo-nfpa-2112.avif",
         "alt": "Overol ignífugo NFPA 2112 para riesgo de flamazo"
       },
       {
-        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "src": "/images/productos/traje-brigadista-industrial-bombero.avif",
         "alt": "Traje de brigadista industrial"
       },
       {
-        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "src": "/images/productos/combo-brigadista-industrial.avif",
         "alt": "Combo de brigadista industrial"
       }
     ],
@@ -2282,15 +2282,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/chaqueton-de-brigadista-pieza-suelta.svg",
+        "src": "/images/piezas/chaqueton-de-brigadista-pieza-suelta.avif",
         "alt": "Chaquetón de brigadista para reposición"
       },
       {
-        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "src": "/images/productos/traje-brigadista-industrial-bombero.avif",
         "alt": "Traje de brigadista industrial"
       },
       {
-        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "src": "/images/productos/combo-brigadista-industrial.avif",
         "alt": "Combo de brigadista industrial"
       }
     ],
@@ -2540,11 +2540,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Pantalón de brigadista para reposición"
       },
       {
-        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "src": "/images/productos/traje-brigadista-industrial-bombero.avif",
         "alt": "Traje de brigadista industrial"
       },
       {
-        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "src": "/images/productos/combo-brigadista-industrial.avif",
         "alt": "Combo de brigadista industrial"
       }
     ],
@@ -2799,15 +2799,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/monja-capucha-de-brigada.svg",
+        "src": "/images/piezas/monja-capucha-de-brigada.avif",
         "alt": "Monja o capucha de brigada contra incendio"
       },
       {
-        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "src": "/images/productos/traje-brigadista-industrial-bombero.avif",
         "alt": "Traje de brigadista industrial"
       },
       {
-        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "src": "/images/productos/combo-brigadista-industrial.avif",
         "alt": "Combo de brigadista industrial"
       }
     ],
@@ -3079,11 +3079,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Tirantes tipo X de ocho puntos para pantalón de brigada"
       },
       {
-        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "src": "/images/productos/traje-brigadista-industrial-bombero.avif",
         "alt": "Traje de brigadista industrial"
       },
       {
-        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "src": "/images/productos/combo-brigadista-industrial.avif",
         "alt": "Combo de brigadista industrial"
       }
     ],
@@ -3327,15 +3327,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/camisola-forestal.svg",
+        "src": "/images/piezas/camisola-forestal.avif",
         "alt": "Camisola forestal para bombero en fibra ignífuga inherente"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de camisola y pantalón"
       },
       {
-        "src": "/images/productos/camisola-forestal-nomex.svg",
+        "src": "/images/productos/camisola-forestal-nomex.avif",
         "alt": "Detalle de camisola forestal ventilada"
       }
     ],
@@ -3610,15 +3610,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pantalon-cargo-forestal.svg",
+        "src": "/images/piezas/pantalon-cargo-forestal.avif",
         "alt": "Pantalón forestal para bombero tipo cargo"
       },
       {
-        "src": "/images/productos/pantalon-forestal-bombero.svg",
+        "src": "/images/productos/pantalon-forestal-bombero.avif",
         "alt": "Pantalón forestal con bolsas de carga"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de camisola y pantalón"
       }
     ],
@@ -3897,11 +3897,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Chamarra forestal para bombero de una sola capa"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de camisola y pantalón"
       },
       {
-        "src": "/images/productos/camisola-forestal-nomex.svg",
+        "src": "/images/productos/camisola-forestal-nomex.avif",
         "alt": "Camisola forestal ventilada"
       }
     ],
@@ -4171,11 +4171,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Overol forestal para bombero de una sola pieza"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de dos piezas"
       },
       {
-        "src": "/images/productos/pantalon-forestal-bombero.svg",
+        "src": "/images/productos/pantalon-forestal-bombero.avif",
         "alt": "Pantalón forestal cargo"
       }
     ],
@@ -4445,11 +4445,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Nuquera forestal para casco de bombero"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de camisola y pantalón"
       },
       {
-        "src": "/images/productos/camisola-forestal-nomex.svg",
+        "src": "/images/productos/camisola-forestal-nomex.avif",
         "alt": "Camisola forestal ventilada"
       }
     ],
@@ -4704,15 +4704,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-dual-forestal-y-rescate.svg",
+        "src": "/images/piezas/conjunto-dual-forestal-y-rescate.avif",
         "alt": "Conjunto dual forestal y rescate técnico"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de camisola y pantalón"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       }
     ],
@@ -8331,15 +8331,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/chaqueta-de-rescate-tecnico.svg",
+        "src": "/images/piezas/chaqueta-de-rescate-tecnico.avif",
         "alt": "Chaqueta de rescate técnico para extricación"
       },
       {
-        "src": "/images/productos/chaqueta-extricacion-rescate.svg",
+        "src": "/images/productos/chaqueta-extricacion-rescate.avif",
         "alt": "Chaqueta de extricación para rescate técnico"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       }
     ],
@@ -8614,15 +8614,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pantalon-de-rescate-tecnico.svg",
+        "src": "/images/piezas/pantalon-de-rescate-tecnico.avif",
         "alt": "Pantalón de rescate técnico para extricación"
       },
       {
-        "src": "/images/productos/pantalon-extricacion-rescate.svg",
+        "src": "/images/productos/pantalon-extricacion-rescate.avif",
         "alt": "Pantalón de extricación para rescate técnico"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       }
     ],
@@ -8892,15 +8892,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-de-extricacion.svg",
+        "src": "/images/piezas/conjunto-de-extricacion.avif",
         "alt": "Conjunto de extricación de chaqueta y pantalón"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       },
       {
-        "src": "/images/productos/chaqueta-extricacion-rescate.svg",
+        "src": "/images/productos/chaqueta-extricacion-rescate.avif",
         "alt": "Chaqueta de extricación"
       }
     ],
@@ -9174,11 +9174,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Overol de rescate técnico de una pieza"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       },
       {
-        "src": "/images/productos/pantalon-extricacion-rescate.svg",
+        "src": "/images/productos/pantalon-extricacion-rescate.avif",
         "alt": "Pantalón de extricación"
       }
     ],
@@ -9452,11 +9452,11 @@ export const PIEZAS: Pieza[] = [
         "alt": "Conjunto dual rescate y forestal"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       },
       {
-        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.avif",
         "alt": "Traje forestal de camisola y pantalón"
       }
     ],
@@ -9731,15 +9731,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pantalon-de-cubierta-para-rescate.svg",
+        "src": "/images/piezas/pantalon-de-cubierta-para-rescate.avif",
         "alt": "Pantalón de cubierta para rescate sobre uniforme"
       },
       {
-        "src": "/images/productos/pantalon-extricacion-rescate.svg",
+        "src": "/images/productos/pantalon-extricacion-rescate.avif",
         "alt": "Pantalón de extricación para rescate técnico"
       },
       {
-        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.avif",
         "alt": "Traje de extricación para rescate vehicular"
       }
     ],

@@ -40,27 +40,12 @@ const CAPAS: Capa[] = [
 ];
 ---
 <div class="anatomy">
-  <div class="anatomy__viz" aria-hidden="true">
-    <svg viewBox="0 0 260 300" xmlns="http://www.w3.org/2000/svg" role="presentation">
-      <!-- exterior -->
-      <path d="M60 40 L100 26 L130 40 L160 26 L200 40 L214 96 L188 104 L188 264 L72 264 L72 104 L46 96 Z" fill="#c8102e" opacity="0.92"/>
-      <!-- barrera de humedad -->
-      <path d="M78 62 L104 52 L130 62 L156 52 L182 62 L192 100 L176 106 L176 248 L84 248 L84 106 L68 100 Z" fill="#4b5563" opacity="0.95"/>
-      <!-- barrera térmica -->
-      <path d="M94 84 L112 76 L130 84 L148 76 L166 84 L172 106 L162 110 L162 232 L98 232 L98 110 L88 106 Z" fill="#ffc72c"/>
-      <!-- cinta reflejante -->
-      <rect x="72" y="196" width="116" height="9" fill="#ffc72c" opacity="0.9"/>
-      <rect x="72" y="210" width="116" height="5" fill="#e6e9ec" opacity="0.8"/>
-      <!-- etiquetas -->
-      <g font-family="system-ui,sans-serif" font-size="11" font-weight="700">
-        <line x1="214" y1="70" x2="242" y2="58" stroke="#c8102e" stroke-width="1.5"/>
-        <text x="246" y="61" fill="#c8102e">01</text>
-        <line x1="190" y1="88" x2="242" y2="112" stroke="#4b5563" stroke-width="1.5"/>
-        <text x="246" y="115" fill="#4b5563">02</text>
-        <line x1="170" y1="100" x2="242" y2="164" stroke="#b58500" stroke-width="1.5"/>
-        <text x="246" y="167" fill="#b58500">03</text>
-      </g>
-    </svg>
+  <div class="anatomy__viz">
+    <img
+      src="/images/escenas/composite-tres-capas-traje-estructural.avif"
+      alt="Corte de un traje estructural de bombero: capa exterior de aramida, barrera de humedad y barrera térmica"
+      width="1300" height="1000" loading="lazy" decoding="async" class="anatomy__photo"
+    />
     <p class="anatomy__caption">Corte del chaquetón estructural. Las tres capas son obligatorias: si falta una, no es un traje estructural.</p>
   </div>
 
@@ -146,5 +131,12 @@ const CAPAS: Capa[] = [
     .anatomy { grid-template-columns: 1fr; }
     .anatomy__viz { position: static; }
     .anatomy__viz svg { max-height: 260px; }
+  }
+  .anatomy__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--color-border, #e6e9ec);
   }
 </style>
