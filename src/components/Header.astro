@@ -1,8 +1,12 @@
 ---
-// Header: todo el menú (escritorio y móvil) se genera desde NAV
-// en site.ts (SSoT). CTA de conversión "Cotizar" siempre visible.
+// Header: todo el menú —escritorio, panel desplegable y versión
+// móvil— se genera desde NAV en site.ts, una sola fuente.
+// CTA de conversión "Cotizar" siempre visible a la derecha.
 import { SITE, NAV, CONTACT, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href.startsWith('/') && !href.includes('#') && path.startsWith(href);
 ---
 <header class="site-header">
   <div class="container header-inner">
@@ -19,7 +23,23 @@ import { waUrl } from '@lib/wa';
     <nav class="nav-desktop" aria-label="Navegación principal">
       <ul class="nav-list">
         {NAV.map((item) => (
-          <li><a href={item.href}>{item.label}</a></li>
+          <li class:list={['nav-item', { 'nav-item--has-menu': !!item.children }]}>
+            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+              {item.label}
+              {item.children && (
+                <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              )}
+            </a>
+            {item.children && (
+              <div class="nav-panel">
+                <ul>
+                  {item.children.map((c) => (
+                    <li><a href={c.href}>{c.label}</a></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </li>
         ))}
       </ul>
     </nav>
@@ -40,7 +60,16 @@ import { waUrl } from '@lib/wa';
   <div class="mob-menu" id="mob-menu" hidden>
     <ul class="mob-list">
       {NAV.map((item) => (
-        <li class="mob-item"><a class="mob-item__link" href={item.href}>{item.label}</a></li>
+        <li class="mob-item">
+          <a class="mob-item__link" href={item.href}>{item.label}</a>
+          {item.children && (
+            <ul class="mob-sub">
+              {item.children.map((c) => (
+                <li><a class="mob-item__link mob-item__link--sub" href={c.href}>{c.label}</a></li>
+              ))}
+            </ul>
+          )}
+        </li>
       ))}
     </ul>
     <div class="mob-actions">
@@ -79,7 +108,7 @@ import { waUrl } from '@lib/wa';
   .header-inner {
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 3vw, 3rem);
+    gap: clamp(1rem, 2.5vw, 3rem);
     min-height: var(--header-height);
   }
   .brand {
@@ -103,17 +132,68 @@ import { waUrl } from '@lib/wa';
   }
 
   .nav-desktop { flex: 1; }
-  .nav-list { display: flex; gap: clamp(0.9rem, 1.8vw, 2rem); list-style: none; margin: 0; padding: 0; }
-  .nav-list a {
+  .nav-list { display: flex; gap: clamp(0.8rem, 1.6vw, 1.8rem); list-style: none; margin: 0; padding: 0; }
+  .nav-item { position: relative; }
+  .nav-item > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+    padding-block: 0.5rem;
     color: var(--color-gray);
     text-decoration: none;
     font-weight: 700;
     font-size: 0.88rem;
     white-space: nowrap;
   }
-  .nav-list a:hover { color: var(--color-primary); }
+  .nav-item > a:hover,
+  .nav-item > a[aria-current='page'] { color: var(--color-primary); }
+  .nav-caret { transition: transform 0.18s ease; }
+  .nav-item--has-menu:hover .nav-caret { transform: rotate(180deg); }
 
-  .header-actions { display: flex; align-items: center; gap: 1.4rem; flex-shrink: 0; }
+  /* Panel desplegable */
+  .nav-panel {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: -0.9rem;
+    min-width: 260px;
+    background: var(--color-white);
+    border: var(--border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    z-index: 20;
+  }
+  .nav-item--has-menu:hover .nav-panel,
+  .nav-item--has-menu:focus-within .nav-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-panel ul { list-style: none; margin: 0; padding: 0; }
+  .nav-panel a {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    border-radius: var(--radius);
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .nav-panel a:hover { background: var(--color-light); color: var(--color-primary); }
+  .nav-panel li:last-child a {
+    margin-top: 0.3rem;
+    border-top: var(--border);
+    border-radius: 0;
+    color: var(--color-primary);
+    font-weight: 800;
+  }
+
+  .header-actions { display: flex; align-items: center; gap: 1.2rem; flex-shrink: 0; }
   .header-phone { display: flex; flex-direction: column; text-decoration: none; line-height: 1.2; }
   .header-phone__label {
     font-size: 0.68rem;
@@ -139,7 +219,14 @@ import { waUrl } from '@lib/wa';
 
   .mob-menu { background: var(--color-white); border-top: var(--border); padding: 1rem var(--container-px) 1.5rem; }
   .mob-list { list-style: none; margin: 0 0 1rem; padding: 0; }
-  .mob-item__link { text-decoration: none; color: var(--color-dark); font-weight: 700; border-bottom: var(--border); }
+  .mob-item__link {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 700;
+    border-bottom: var(--border);
+  }
+  .mob-sub { list-style: none; margin: 0; padding: 0 0 0.4rem 0.9rem; border-left: 2px solid var(--color-gray-light); }
+  .mob-item__link--sub { font-weight: 600; font-size: 0.9rem; color: var(--color-gray); border-bottom: 0; }
   .mob-actions { display: grid; gap: 0.6rem; }
   .mob-horario { text-align: center; color: var(--color-gray); font-size: 0.85rem; margin: 0.25rem 0 0; }
 

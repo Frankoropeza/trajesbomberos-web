@@ -43,15 +43,6 @@ export const WA_MESSAGES = {
   servicio: 'Hola, quiero información sobre inspección y lavado de equipo (NFPA 1850).',
 } as const;
 
-export const NAV = [
-  { label: 'Trajes', href: '/trajes/' },
-  { label: 'Anatomía', href: '/#anatomia' },
-  { label: 'Cómo especificar', href: '/#especificar' },
-  { label: 'Marcas', href: '/#marcas' },
-  { label: 'Normas', href: '/#normas' },
-  { label: 'Preguntas', href: '/#faq' },
-] as const;
-
 // ============================================================
 // SEGMENTOS — los 3 compradores reales del mercado mexicano.
 // Cada uno usa vocabulario, presupuesto y proceso distintos.
@@ -175,6 +166,33 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
   },
 ];
 
+// ============================================================
+// NAV — única fuente del Header, del menú móvil, del SectionMenu
+// y del Footer. Las anclas van absolutas (/#seccion) para que
+// funcionen también desde las páginas L2 y L3.
+// ============================================================
+export interface NavItem {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+}
+
+export const NAV: NavItem[] = [
+  {
+    label: 'Trajes',
+    href: '/trajes/',
+    children: [
+      ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+      { label: 'Ver todas las familias', href: '/trajes/' },
+    ],
+  },
+  { label: 'Anatomía', href: '/#anatomia' },
+  { label: 'Cómo especificar', href: '/#especificar' },
+  { label: 'Marcas', href: '/#marcas' },
+  { label: 'Normas', href: '/#normas' },
+  { label: 'Preguntas', href: '/#faq' },
+];
+
 // Complementos del conjunto. NO son línea de negocio: se cotizan
 // junto al traje para cerrar el equipamiento del elemento.
 export const COMPLEMENTOS = [
@@ -226,7 +244,10 @@ export const MARCAS_MATERIAL: Marca[] = [
 export const FOOTER_COLUMNS = [
   {
     title: 'Trajes',
-    links: PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+    links: [
+      ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+      { label: 'Ver todas las familias', href: '/trajes/' },
+    ],
   },
   {
     title: 'Quién compra',

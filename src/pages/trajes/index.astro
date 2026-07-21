@@ -14,6 +14,15 @@ import { FAMILIAS } from '@lib/familias';
 
 const path = '/trajes/';
 
+// Franja de secciones de ESTA página
+const menuItems = [
+  { label: 'Las seis familias', href: '#familias' },
+  { label: 'Comparativa', href: '#comparar' },
+  { label: 'Preguntas', href: '#faq' },
+  { label: 'Anatomía del traje', href: '/#anatomia' },
+  { label: 'Normas', href: '/#normas' },
+];
+
 // Keywords propias de esta página (regla de las 3 keywords)
 const keywords = ['tipos de trajes para bomberos', 'catálogo', 'México'] as const;
 const title = 'Tipos de trajes para bomberos | catálogo | México';
@@ -70,6 +79,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   title={title}
   description={description}
   keywords={keywords}
+  menuItems={menuItems}
   crumbLabel="Trajes"
   eyebrow="Catálogo por tipo de riesgo"
   h1="Tipos de trajes para bomberos"

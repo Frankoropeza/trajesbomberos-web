@@ -4,11 +4,16 @@
 // conversión (WhatsApp): "el hero presenta, la franja convierte".
 import { NAV, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
+
+interface Props {
+  items?: { label: string; href: string }[];
+}
+const { items = NAV.map((n) => ({ label: n.label, href: n.href })) } = Astro.props;
 ---
 <nav class="section-menu" aria-label="Secciones del sitio">
   <div class="container section-menu__inner">
     <ul class="section-menu__list">
-      {NAV.map((item) => (
+      {items.map((item) => (
         <li><a href={item.href}>{item.label}</a></li>
       ))}
     </ul>

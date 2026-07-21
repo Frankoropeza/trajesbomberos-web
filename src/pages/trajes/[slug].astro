@@ -22,6 +22,15 @@ const path = `/trajes/${f.slug}/`;
 
 // Las otras familias, para enlazado interno al final
 const otras = PRODUCT_CATEGORIES.filter((c) => c.slug !== f.slug);
+
+// Franja de secciones de ESTA ficha
+const menuItems = [
+  { label: 'Qué pedir', href: '#especificar' },
+  { label: 'Complementos', href: '#complementos' },
+  { label: 'Preguntas', href: '#faq' },
+  { label: 'Otras familias', href: '#otras' },
+  { label: 'Todos los trajes', href: '/trajes/' },
+];
 ---
 <PageLayout
   pageType="producto"
@@ -29,6 +38,7 @@ const otras = PRODUCT_CATEGORIES.filter((c) => c.slug !== f.slug);
   title={f.seoTitle}
   description={f.seoDescription}
   keywords={f.keywords}
+  menuItems={menuItems}
   crumbLabel={f.nombreWa}
   parent={{ name: 'Trajes', href: '/trajes/' }}
   eyebrow={f.eyebrow}
