@@ -1,0 +1,166 @@
+---
+// Sidebar de sección: interlinking real, no decorativo.
+// Cuatro bloques: familias hermanas (con la actual marcada),
+// índice de esta página, recursos técnicos de la home y tarjeta
+// de contacto. Sticky en desktop; en móvil se apila arriba del
+// contenido para que el usuario vea primero por dónde moverse.
+// Data-driven desde site.ts (SSoT). Regla D4: waUrl para WhatsApp.
+import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+interface Props {
+  activeSlug?: string;
+  pageIndex?: { label: string; href: string }[];
+  waMessage?: string;
+}
+const { activeSlug, pageIndex = [], waMessage = WA_MESSAGES.cotizar } = Astro.props;
+
+const RECURSOS = [
+  { label: 'Anatomía del traje', href: '/#anatomia' },
+  { label: 'Cómo especificar', href: '/#especificar' },
+  { label: 'Errores de compra', href: '/#errores' },
+  { label: 'Marcas de referencia', href: '/#marcas' },
+  { label: 'Normas aplicables', href: '/#normas' },
+  { label: 'Vida útil y servicio', href: '/#vida-util' },
+];
+---
+<aside class="sidebar" aria-label="Navegación de la sección">
+  <nav class="sb-block" aria-label="Familias de traje">
+    <p class="sb-title">Familias de traje</p>
+    <ul class="sb-list">
+      {PRODUCT_CATEGORIES.map((c) => (
+        <li>
+          <a
+            href={`/trajes/${c.slug}/`}
+            class:list={{ 'is-active': c.slug === activeSlug }}
+            aria-current={c.slug === activeSlug ? 'page' : undefined}
+          >{c.nombre}</a>
+        </li>
+      ))}
+      <li><a class="sb-all" href="/trajes/">Ver comparativa completa</a></li>
+    </ul>
+  </nav>
+
+  {pageIndex.length > 0 && (
+    <nav class="sb-block" aria-label="Contenido de esta página">
+      <p class="sb-title">En esta página</p>
+      <ul class="sb-list sb-list--anchors">
+        {pageIndex.map((i) => (
+          <li><a href={i.href}>{i.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <nav class="sb-block" aria-label="Recursos técnicos">
+    <p class="sb-title">Recursos técnicos</p>
+    <ul class="sb-list sb-list--muted">
+      {RECURSOS.map((r) => (
+        <li><a href={r.href}>{r.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+
+  <div class="sb-card">
+    <p class="sb-card__title">¿Necesitas una cotización?</p>
+    <p class="sb-card__text">Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</p>
+    <a class="sb-card__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Cotizar por WhatsApp
+    </a>
+    <a class="sb-card__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+    <p class="sb-card__horario">{CONTACT.horario}</p>
+  </div>
+</aside>
+
+<style>
+  .sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+    display: grid;
+    gap: 1.8rem;
+    align-self: start;
+  }
+  .sb-title {
+    margin: 0 0 0.7rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .sb-list { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-list a {
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border-left: 2px solid transparent;
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  }
+  .sb-list a:hover { color: var(--color-primary); background: var(--color-light); }
+  .sb-list a.is-active {
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 800;
+  }
+  .sb-all {
+    margin-top: 0.35rem;
+    border-top: var(--border);
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+    font-size: 0.85rem !important;
+  }
+  .sb-list--anchors a { font-weight: 600; color: var(--color-gray); }
+  .sb-list--muted a { font-size: 0.85rem; color: var(--color-gray); font-weight: 600; }
+
+  .sb-card {
+    background: var(--color-ink);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem;
+  }
+  .sb-card__title { margin: 0 0 0.35rem; color: var(--color-white); font-weight: 800; font-size: 1rem; }
+  .sb-card__text { margin: 0 0 1rem; color: #b9bec5; font-size: 0.85rem; }
+  .sb-card__wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    background: var(--color-wa);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    min-height: 46px;
+  }
+  .sb-card__wa:hover { background: var(--color-wa-dark); }
+  .sb-card__tel {
+    display: block;
+    margin-top: 0.7rem;
+    text-align: center;
+    color: var(--color-accent);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .sb-card__horario { margin: 0.2rem 0 0; text-align: center; color: #8a9099; font-size: 0.76rem; }
+
+  @media (max-width: 1024px) {
+    .sidebar {
+      position: static;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 2rem;
+    }
+    .sb-card { grid-column: 1 / -1; }
+  }
+  @media (max-width: 640px) {
+    .sidebar { grid-template-columns: 1fr; }
+  }
+</style>
