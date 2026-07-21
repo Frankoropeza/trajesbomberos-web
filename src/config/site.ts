@@ -3,7 +3,7 @@
 // Terminología: español de México verificado en el mercado real
 // (chaquetón, pantalonera, monja, escafandra, tirantes, ERA,
 // brigadista, DRD, combo). Ver estudio de mercado jul-2026.
-// TODO(Frank): teléfono, WhatsApp y email reales.
+// TODO(Frank): confirmar email real.
 // TODO(Frank): confirmar marcas con carta de distribuidor para
 // poder nombrarlas como tales (hoy solo referencia técnica).
 // ============================================================
@@ -27,9 +27,9 @@ export const KEYWORDS = [
 ] as const;
 
 export const CONTACT = {
-  telefono: '+52 55 0000 0000',      // TODO(Frank): real
-  telefonoHref: '+525500000000',     // TODO(Frank): real
-  whatsapp: '525500000000',          // TODO(Frank): real, solo dígitos
+  telefono: '+52 55 1005 3432',
+  telefonoHref: '+525510053432',
+  whatsapp: '525510053432',
   email: 'ventas@trajesbomberos.com', // TODO(Frank): confirmar
   horario: 'Lun–Vie 9:00–18:00',
   cobertura: 'Envíos a todo México',
