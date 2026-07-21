@@ -327,8 +327,9 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
       </div>
 
       <!-- Un módulo por familia, en el mismo orden que las cards.
-           flip alterna para dar ritmo visual entre módulos seguidos. -->
-      {SPOTLIGHTS.map((s, i) => (
+           REGLA DURA: todos idénticos, sin zig-zag. Info a la
+           izquierda, galería a la derecha, siempre. -->
+      {SPOTLIGHTS.map((s) => (
         <div class="spotlight-wrap">
           <CategoryFeature
             eyebrow={s.eyebrow}
@@ -337,7 +338,6 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
             features={s.features}
             brands={s.brands}
             images={s.images}
-            flip={i % 2 === 1}
             ctaLabel={`Cotizar ${s.slug.toLowerCase()}`}
             ctaHref={waUrl(WA_MESSAGES.categoria(s.slug))}
             external
