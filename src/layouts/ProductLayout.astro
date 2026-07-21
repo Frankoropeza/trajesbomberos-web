@@ -1,15 +1,17 @@
 ---
 // ProductLayout (L3 · ficha de familia).
 // Jerarquía canónica: BaseLayout → PageLayout → ProductLayout.
-// Encapsula la secuencia fija de una ficha para que las seis
-// familias queden homologadas: a fondo → qué pedir → complementos
-// → FAQ → otras familias → CTA de cierre.
+// Estructura: hero → franja → [contenido + sidebar sticky] →
+// otras familias → CTA de cierre. El sidebar aporta el
+// interlinking: familias hermanas, índice de página y recursos.
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CategoryDetail from '@components/CategoryDetail.astro';
+import ProductCard from '@components/ProductCard.astro';
 import CategoryCard from '@components/CategoryCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
+import Sidebar from '@components/Sidebar.astro';
 import { PRODUCT_CATEGORIES, WA_MESSAGES, COMPLEMENTOS } from '@config/site';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
@@ -21,14 +23,28 @@ interface Props {
 const { familia: f } = Astro.props;
 
 const path = `/trajes/${f.slug}/`;
-const otras = PRODUCT_CATEGORIES.filter((c) => c.slug !== f.slug);
+// Se muestran las 6 familias: la actual va marcada como "estás aquí"
+// (sin enlace) para que la retícula quede en dos filas exactas de 3.
 
 const menuItems = [
   { label: 'A fondo', href: '#a-fondo' },
+  { label: 'Piezas', href: '#piezas' },
   { label: 'Qué pedir', href: '#especificar' },
-  { label: 'Complementos', href: '#complementos' },
   { label: 'Preguntas', href: '#faq' },
   { label: 'Todos los trajes', href: '/trajes/' },
+  { label: 'Blog técnico', href: '/blog/' },
+];
+
+const pageIndex = [
+  { label: 'A fondo', href: '#a-fondo' },
+  { label: 'Piezas cotizables', href: '#piezas' },
+  { label: 'Qué pedir en tu cotización', href: '#especificar' },
+  { label: 'Complementos del conjunto', href: '#complementos' },
+  ...(f.marcasRef && f.marcasRef.length > 0
+    ? [{ label: 'Marcas de referencia', href: '#marcas' }]
+    : []),
+  { label: 'Preguntas frecuentes', href: '#faq' },
+  { label: 'Otras familias', href: '#otras' },
 ];
 ---
 <PageLayout
@@ -45,81 +61,124 @@ const menuItems = [
   h1Accent={f.h1Accent}
   lead={f.lead}
   descRight={f.descRight}
+  meta={f.meta}
   faqs={f.faqs}
 >
-  <!-- 1 · A fondo -->
-  <section class="section" id="a-fondo">
-    <div class="container">
-      <CategoryDetail
-        eyebrow="A fondo"
-        title={f.title}
-        paragraphs={[f.description]}
-        points={f.features}
-        images={f.images}
-        ctaLabel={`Cotizar ${f.nombreWa.toLowerCase()}`}
-        ctaHref={waUrl(WA_MESSAGES.categoria(f.nombreWa))}
-        external
+  <!-- Contenido + sidebar de interlinking -->
+  <div class="section">
+    <div class="container layout-grid">
+      <div class="layout-main">
+        <!-- 1 · A fondo -->
+        <section id="a-fondo" class="block">
+          <CategoryDetail
+            eyebrow="A fondo"
+            title={f.title}
+            paragraphs={[f.description]}
+            points={f.features}
+            images={f.images}
+            ctaLabel={`Cotizar ${f.nombreWa.toLowerCase()}`}
+            ctaHref={waUrl(WA_MESSAGES.categoria(f.nombreWa))}
+            external
+          />
+        </section>
+
+        <!-- 2 · Piezas cotizables de esta familia -->
+        <section id="piezas" class="block">
+          <SectionHeading
+            eyebrow="Qué se cotiza"
+            title={`Piezas y configuraciones de ${f.nombreWa.toLowerCase()}`}
+            description="Cada pieza se cotiza por separado o dentro del conjunto. Dinos cuáles necesitas y cuántos elementos vas a equipar."
+          />
+          <div class="piezas-grid">
+            {f.productos.map((pr, i) => (
+              <ProductCard
+                nombre={pr.nombre}
+                desc={pr.desc}
+                chips={pr.chips}
+                spec={pr.spec}
+                img={pr.img}
+                alt={pr.alt}
+                index={i}
+              />
+            ))}
+          </div>
+        </section>
+
+        <!-- 3 · Qué pedir en la cotización -->
+        <section id="especificar" class="block">
+          <SectionHeading
+            eyebrow="Qué pedir"
+            title="Los datos que debe traer tu cotización"
+            description="Cópialos tal cual en tu requisición. Si una oferta no puede darlos, todavía no es comparable con otra."
+          />
+          <ol class="pedir">
+            {f.especificar.map((e, i) => (
+              <li>
+                <span class="pedir__n">{String(i + 1).padStart(2, '0')}</span>
+                <h3>{e.titulo}</h3>
+                <p>{e.desc}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <!-- 4 · Complementos -->
+        <section id="complementos" class="block">
+          <SectionHeading
+            eyebrow="Para cerrar el conjunto"
+            title="Lo que se cotiza junto con el traje"
+            description="No son nuestra línea principal, pero los conseguimos para que no armes el pedido con tres proveedores."
+          />
+          <ul class="complementos-list">
+            {COMPLEMENTOS.map((c) => (
+              <li><strong>{c.nombre}</strong> — {c.nota}</li>
+            ))}
+          </ul>
+        </section>
+
+        {f.marcasRef && f.marcasRef.length > 0 && (
+          <section id="marcas" class="block">
+            <SectionHeading
+              eyebrow="Referencia del mercado"
+              title={`Marcas de referencia en ${f.nombreWa.toLowerCase()}`}
+              description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo."
+            />
+            <ul class="marcas-list">
+              {f.marcasRef.map((m) => (
+                <li><strong>{m.nombre}</strong> — {m.nota}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <!-- 5 · FAQ de la familia -->
+        <section id="faq" class="block">
+          <SectionHeading
+            eyebrow="Preguntas frecuentes"
+            title={`Dudas sobre ${f.nombreWa.toLowerCase()}`}
+          />
+          <FAQWithContact items={f.faqs} />
+        </section>
+      </div>
+
+      <Sidebar
+        activeSlug={f.slug}
+        pageIndex={pageIndex}
+        waMessage={WA_MESSAGES.categoria(f.nombreWa)}
       />
     </div>
-  </section>
+  </div>
 
-  <!-- 2 · Qué pedir en la cotización -->
-  <section class="section section--alt" id="especificar">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Qué pedir"
-        title="Los datos que debe traer tu cotización"
-        description="Cópialos tal cual en tu requisición. Si una oferta no puede darlos, todavía no es comparable con otra."
-      />
-      <ol class="pedir">
-        {f.especificar.map((e, i) => (
-          <li>
-            <span class="pedir__n">{String(i + 1).padStart(2, '0')}</span>
-            <h3>{e.titulo}</h3>
-            <p>{e.desc}</p>
-          </li>
-        ))}
-      </ol>
-    </div>
-  </section>
-
-  <!-- 3 · Complementos -->
-  <section class="section" id="complementos">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Para cerrar el conjunto"
-        title="Lo que se cotiza junto con el traje"
-        description="No son nuestra línea principal, pero los conseguimos para que no tengas que armar el pedido con tres proveedores."
-      />
-      <ul class="complementos-list">
-        {COMPLEMENTOS.map((c) => (
-          <li><strong>{c.nombre}</strong> — {c.nota}</li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <!-- 4 · FAQ de la familia -->
-  <section class="section section--alt" id="faq">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Preguntas frecuentes"
-        title={`Dudas sobre ${f.nombreWa.toLowerCase()}`}
-      />
-      <FAQWithContact items={f.faqs} />
-    </div>
-  </section>
-
-  <!-- 5 · Otras familias -->
-  <section class="section" id="otras">
+  <!-- 6 · Otras familias (ancho completo) -->
+  <section class="section section--alt" id="otras">
     <div class="container">
       <SectionHeading
         eyebrow="Otras familias"
-        title="Quizá lo que necesitas es otro traje"
-        description="Cada familia responde a un riesgo distinto. Si tu operación no encaja con esta, entra a la que corresponde."
+        title="Las seis familias de traje"
+        description="Cada una responde a un riesgo distinto y no son intercambiables. Si tu operación no encaja con esta, entra a la que corresponde."
       />
       <div class="grid-cards grid-cards--3">
-        {otras.map((cat, i) => (
+        {PRODUCT_CATEGORIES.map((cat, i) => (
           <CategoryCard
             href={`/trajes/${cat.slug}/`}
             image={cat.image}
@@ -129,6 +188,7 @@ const menuItems = [
             chips={[...cat.chips]}
             ctaLabel="Ver ficha"
             index={i}
+            current={cat.slug === f.slug}
           />
         ))}
       </div>
@@ -136,25 +196,44 @@ const menuItems = [
     </div>
   </section>
 
-  <!-- 6 · CTA de cierre -->
+  <!-- 7 · CTA de cierre -->
   <CTABanner variant="dark" {...presetCategoria(f.nombreWa)} />
 </PageLayout>
 
 <style>
+  /* Retícula de contenido: contenido a la izquierda, sidebar a la
+     derecha. La sidebar es la que aporta el interlinking. */
+  .layout-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+  .layout-main { display: grid; gap: 0; min-width: 0; }
+  .block { padding-block: clamp(2.2rem, 3.5vw, 3.4rem); border-top: var(--border); }
+  .block:first-child { padding-top: 0; border-top: 0; }
+  .block:last-child { padding-bottom: 0; }
+
+  .piezas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-grid);
+  }
+
   .pedir {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   .pedir li {
-    padding: 1.5rem clamp(1rem, 1.8vw, 1.9rem);
+    padding: 1.4rem clamp(1rem, 1.6vw, 1.7rem);
     border-left: var(--border);
     border-bottom: var(--border);
   }
-  .pedir li:first-child { border-left: 0; padding-left: 0; }
+  .pedir li:nth-child(odd) { border-left: 0; padding-left: 0; }
   .pedir__n {
     display: block;
     font-size: 0.78rem;
@@ -168,7 +247,7 @@ const menuItems = [
 
   .complementos-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.7rem 2rem;
     list-style: none;
     margin: 0;
@@ -191,19 +270,53 @@ const menuItems = [
   }
   .complementos-list strong { color: var(--color-dark); }
 
+  /* Marcas de referencia: misma retícula que complementos */
+  .marcas-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .marcas-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--color-text);
+  }
+  .marcas-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+  }
+  .marcas-list strong { color: var(--color-dark); }
+
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
 
-  @media (max-width: 1100px) {
-    .pedir { grid-template-columns: repeat(2, 1fr); }
-    .pedir li:first-child { border-left: var(--border); padding-left: 1.4rem; }
-    .pedir li:nth-child(odd) { border-left: 0; padding-left: 0; }
+  @media (max-width: 1280px) { .piezas-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 1024px) {
+    .layout-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .piezas-grid { grid-template-columns: repeat(3, 1fr); }
   }
-  @media (max-width: 900px) { .complementos-list { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 560px) {
-    .pedir { grid-template-columns: 1fr; }
+  @media (max-width: 900px) { .piezas-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .piezas-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .piezas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-grid);
+  }
+
+  .pedir { grid-template-columns: 1fr; }
     .pedir li { border-left: 0 !important; padding-left: 0 !important; }
     .complementos-list { grid-template-columns: 1fr; }
+    .marcas-list { grid-template-columns: 1fr; }
   }
 </style>

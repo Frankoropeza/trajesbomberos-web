@@ -1,0 +1,347 @@
+---
+// BlogSidebar: columna de apoyo del blog.
+// Regla dura: SIN scroll propio. En el artículo lleva solo índice
+// + tarjeta de contacto, que caben en pantalla, y ahí sí va
+// sticky. En índice y categoría lleva más bloques y va estático:
+// fluye con la página, sin cortarse y sin barra interna.
+// Cada bloque es una tarjeta con el mismo borde, radio y acento
+// rojo superior que PostCard: el sidebar es parte del diseño,
+// no una lista pegada al margen.
+import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+import { getPosts, categoriasConConteo, postUrl, categoriaUrl, categoriaNombre } from '@lib/blog';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+type Variant = 'articulo' | 'indice' | 'categoria';
+
+interface Props {
+  variant?: Variant;
+  headings?: Heading[];          // índice del artículo (solo H2)
+  currentId?: string;            // artículo actual: no se autoenlaza
+  currentCategoria?: string;     // categoría actual: se marca
+  waMessage?: string;
+}
+const {
+  variant = 'indice',
+  headings = [],
+  currentId,
+  currentCategoria,
+  waMessage = WA_MESSAGES.cotizar,
+} = Astro.props;
+
+const esArticulo = variant === 'articulo';
+// Cada variante lleva solo lo que aporta, para que la columna no
+// crezca más que el contenido y no haga falta scroll ni recortes:
+//  · artículo  → índice + cotización (sticky, cabe en pantalla)
+//  · índice    → recientes + categorías + familias + cotización
+//  · categoría → categorías + cotización (la lista ya son los posts)
+const esIndice = variant === 'indice';
+
+// Solo H2: un índice de segundo nivel es navegable; uno de tercero,
+// ruido. Los H3 quedan para el lector dentro de cada bloque.
+const toc = esArticulo ? headings.filter((h) => h.depth === 2) : [];
+
+// En el artículo no se listan recientes ni categorías: ya viven en
+// la sección "Relacionados" del pie y en la franja de secciones.
+const recientes = esIndice
+  ? (await getPosts()).filter((p) => p.id !== currentId).slice(0, 4)
+  : [];
+const categorias = esArticulo ? [] : await categoriasConConteo();
+---
+<aside class:list={['sidebar', esArticulo ? 'sidebar--sticky' : 'sidebar--flow']} aria-label="Navegación del blog">
+  {toc.length > 0 && (
+    <nav class="sb-card sb-card--toc" aria-label="Índice del artículo">
+      <p class="sb-title">En este artículo</p>
+      <ul class="sb-anchors" id="blog-toc">
+        {toc.map((h) => (
+          <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  {recientes.length > 0 && (
+    <nav class="sb-card" aria-label="Artículos recientes">
+      <p class="sb-title">Artículos recientes</p>
+      <ul class="sb-posts">
+        {recientes.map((p) => (
+          <li>
+            <a href={postUrl(p)}>
+              <span class="sb-posts__cat">{categoriaNombre(p.data.categoria)}</span>
+              <span class="sb-posts__title">{p.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  {categorias.length > 0 && (
+    <nav class="sb-card" aria-label="Categorías del blog">
+      <p class="sb-title">Categorías</p>
+      <ul class="sb-cats">
+        {categorias.map((c) => (
+          <li>
+            <a
+              href={categoriaUrl(c.slug)}
+              class:list={{ 'is-active': c.slug === currentCategoria }}
+              aria-current={c.slug === currentCategoria ? 'page' : undefined}
+            >
+              <span>{c.nombre}</span>
+              <span class="sb-cats__n">{c.total}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="sb-more" href="/blog/">Ver todos los artículos →</a>
+    </nav>
+  )}
+
+  {esIndice && (
+    <nav class="sb-card" aria-label="Familias de traje">
+      <p class="sb-title">Familias de traje</p>
+      <div class="sb-chips">
+        {PRODUCT_CATEGORIES.map((c) => (
+          <a class="chip chip--link" href={`/trajes/${c.slug}/`}>{c.nombre}</a>
+        ))}
+      </div>
+      <a class="sb-more" href="/trajes/">Ver comparativa completa →</a>
+    </nav>
+  )}
+
+  <div class="sb-quote">
+    <p class="sb-quote__title">¿Necesitas una cotización?</p>
+    <p class="sb-quote__text">Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</p>
+    <a class="sb-quote__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Cotizar por WhatsApp
+    </a>
+    <a class="sb-quote__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+    <p class="sb-quote__horario">{CONTACT.horario}</p>
+  </div>
+</aside>
+
+<style>
+  .sidebar {
+    display: grid;
+    gap: 1.1rem;
+    align-self: start;
+    min-width: 0;
+  }
+  /* Solo el artículo va sticky: ahí el sidebar es corto y cabe
+     completo en pantalla, así que nunca necesita scroll propio. */
+  .sidebar--sticky {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+  }
+
+  /* --- Tarjeta base: mismo lenguaje que PostCard --------------- */
+  .sb-card {
+    background: var(--color-white);
+    border: var(--border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: 1.15rem 1.2rem 1.2rem;
+  }
+  .sb-title {
+    margin: 0 0 0.75rem;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .sb-more {
+    display: inline-block;
+    margin-top: 0.85rem;
+    padding-top: 0.75rem;
+    border-top: var(--border);
+    width: 100%;
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.82rem;
+    text-decoration: none;
+  }
+  .sb-more:hover { text-decoration: underline; }
+
+  /* --- Índice del artículo ------------------------------------ */
+  .sb-anchors { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.1rem; }
+  .sb-anchors a {
+    display: block;
+    padding: 0.42rem 0.6rem;
+    border-left: 2px solid var(--color-gray-light);
+    color: var(--color-gray);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.38;
+  }
+  .sb-anchors a:hover { color: var(--color-primary); background: var(--color-light); }
+  .sb-anchors a.is-reading {
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 800;
+  }
+
+  /* --- Categorías --------------------------------------------- */
+  .sb-cats { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-cats a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0.5rem 0.6rem;
+    border-left: 2px solid transparent;
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+  .sb-cats a:hover { color: var(--color-primary); background: var(--color-light); }
+  .sb-cats a.is-active {
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 800;
+  }
+  .sb-cats__n {
+    flex-shrink: 0;
+    min-width: 22px;
+    padding: 0.05rem 0.35rem;
+    border-radius: 2px;
+    background: var(--color-light);
+    border: 1px solid var(--color-gray-light);
+    color: var(--color-gray-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .sb-cats a.is-active .sb-cats__n { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+
+  /* --- Recientes ---------------------------------------------- */
+  .sb-posts { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-posts li + li { border-top: var(--border); }
+  .sb-posts a { display: grid; gap: 0.18rem; padding: 0.7rem 0; text-decoration: none; }
+  .sb-posts li:first-child a { padding-top: 0; }
+  .sb-posts li:last-child a { padding-bottom: 0; }
+  .sb-posts__cat {
+    font-size: 0.64rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-primary);
+  }
+  .sb-posts__title { color: var(--color-dark); font-size: 0.85rem; font-weight: 700; line-height: 1.35; }
+  .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
+
+  /* --- Familias como chips: ocupan una fracción del alto ------ */
+  .sb-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .chip--link {
+    text-decoration: none;
+  }
+  .chip--link:hover {
+    background: var(--color-primary-light);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  /* --- Tarjeta de cotización ---------------------------------- */
+  .sb-quote {
+    background: var(--color-ink);
+    border-radius: var(--radius-lg);
+    padding: 1.3rem 1.2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .sb-quote::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: repeating-linear-gradient(115deg, var(--color-accent) 0 14px, var(--color-ink-soft) 14px 28px);
+  }
+  .sb-quote__title { margin: 0.35rem 0 0.35rem; color: var(--color-white); font-weight: 800; font-size: 1rem; }
+  .sb-quote__text { margin: 0 0 1rem; color: #b9bec5; font-size: 0.84rem; }
+  .sb-quote__wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    background: var(--color-wa);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    min-height: 46px;
+  }
+  .sb-quote__wa:hover { background: var(--color-wa-dark); }
+  .sb-quote__tel {
+    display: block;
+    margin-top: 0.7rem;
+    text-align: center;
+    color: var(--color-accent);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .sb-quote__horario { margin: 0.2rem 0 0; text-align: center; color: #8a9099; font-size: 0.76rem; }
+
+  /* --- Responsive --------------------------------------------- */
+  @media (max-width: 1024px) {
+    .sidebar { position: static; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+    .sb-quote { grid-column: 1 / -1; }
+    /* Artículo: el índice sube arriba del texto; en este caso el
+       aside se disuelve en la retícula del padre para poder
+       ordenar bloque por bloque. Leer primero, navegar después. */
+    .sidebar--sticky { display: contents; }
+    .sidebar--sticky .sb-card,
+    .sidebar--sticky .sb-quote { order: 1; }
+    .sidebar--sticky .sb-card--toc { order: -1; }
+  }
+  @media (max-width: 640px) {
+    .sidebar { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  // Scrollspy del índice: marca el H2 que el lector tiene enfrente.
+  // Sin dependencias y sin tocar el historial (nada de scroll-jack).
+  const toc = document.getElementById('blog-toc');
+  if (toc) {
+    const links = new Map<string, HTMLAnchorElement>();
+    toc.querySelectorAll<HTMLAnchorElement>('a[data-toc]').forEach((a) => {
+      const id = a.dataset.toc;
+      if (id) links.set(id, a);
+    });
+    const targets = [...links.keys()]
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => !!el);
+
+    if (targets.length) {
+      let activo = '';
+      const marcar = (id: string) => {
+        if (id === activo) return;
+        activo = id;
+        links.forEach((a, key) => a.classList.toggle('is-reading', key === id));
+      };
+      const io = new IntersectionObserver(
+        (entries) => {
+          const visibles = entries
+            .filter((e) => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          if (visibles[0]?.target.id) marcar(visibles[0].target.id);
+        },
+        { rootMargin: '-15% 0px -70% 0px', threshold: 0 },
+      );
+      targets.forEach((t) => io.observe(t));
+    }
+  }
+</script>

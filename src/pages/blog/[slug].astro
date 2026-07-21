@@ -1,0 +1,17 @@
+---
+// L3 · Artículo del blog: /blog/<slug>/
+// La página solo resuelve la ruta; toda la secuencia de módulos
+// vive en PostLayout para que todos los artículos queden
+// homologados (mismo criterio que /trajes/[slug].astro).
+import type { GetStaticPaths } from 'astro';
+import PostLayout from '@layouts/PostLayout.astro';
+import { getPosts } from '@lib/blog';
+
+export const getStaticPaths = (async () => {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+---
+<PostLayout post={post} />

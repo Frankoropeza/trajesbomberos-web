@@ -10,9 +10,12 @@ import CategoryFeature from '@components/CategoryFeature.astro';
 import RiskGuide from '@components/RiskGuide.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
+import PhotoBand from '@components/PhotoBand.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, PRODUCT_CATEGORIES } from '@config/site';
 import { FAMILIAS } from '@lib/familias';
+import PostCard from '@components/PostCard.astro';
+import { getPosts, postUrl, readingTime } from '@lib/blog';
 
 const path = '/trajes/';
 
@@ -21,6 +24,7 @@ const menuItems = [
   { label: 'Las seis familias', href: '#familias' },
   { label: 'Comparativa', href: '#comparar' },
   { label: 'Preguntas', href: '#faq' },
+  { label: 'Blog', href: '#blog' },
   { label: 'Anatomía del traje', href: '/#anatomia' },
   { label: 'Normas', href: '/#normas' },
 ];
@@ -65,10 +69,21 @@ const faqs = [
     a: 'Es muy recomendable. El de extricación resiste corte y punción y trae barrera contra patógenos, y evita que contamines y desgastes el traje estructural en salidas que no son de incendio. Considerando que el estructural se retira a los diez años de fabricado, cuidarlo tiene un valor económico directo.',
   },
   {
+    q: '¿Qué pasa si compro la familia equivocada?',
+    a: 'Depende de qué tan lejos esté del uso real. Un forestal usado en estructural o un traje de aproximación usado para entrar a la flama son errores con consecuencia física, no solo económica. Por eso preferimos preguntar por tu operación antes de cotizar, aunque implique proponerte algo distinto a lo que pediste.',
+  },
+  {
+    q: '¿Cuál es la norma vigente para trajes de bombero?',
+    a: 'Para estructural, NFPA 1970 edición 2025, que absorbió a la NFPA 1971. Para forestal y rescate técnico, NFPA 1950, que absorbió a la 1977 y la 1951. El ciclo de servicio se rige por NFPA 1850, que absorbió a la 1851. Muchas licitaciones mexicanas todavía redactan los números viejos y podemos documentar la correspondencia.',
+  },
+  {
     q: '¿Venden por pieza o solo el conjunto completo?',
     a: 'Las dos formas. Puedes pedir solo chaquetón, solo pantalonera o el conjunto completo, sin compra mínima. Si combinas piezas de distintos cortes conviene revisarlo con nosotros: la interfaz entre chaquetón y pantalón es zona crítica.',
   },
 ];
+
+// Lectura recomendada antes de decidir familia
+const ultimosPosts = (await getPosts()).slice(0, 3);
 
 const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   name: c.nombre,
@@ -87,6 +102,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   h1="Tipos de trajes para bomberos"
   h1Accent="y cuál necesita tu operación"
   lead="Estructural, brigadista, forestal, aproximación, entrada y extricación. Seis familias que no son intercambiables y que responden a seis riesgos distintos."
+  meta={['6 familias de traje', 'Comparativa técnica', 'Sin compra mínima', 'Envíos a los 32 estados']}
   descRight={[
     'Elegir mal la familia de traje es el error más caro del sector, y casi siempre ocurre por comparar precios entre equipos que no protegen para lo mismo. Aquí está cada familia explicada con el criterio con el que se especifica en una requisición: qué construcción lleva, para qué operación está pensada y en qué caso conviene otra.',
     'Cotizamos con ficha técnica desde el primer mensaje, sobre la norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y con factura CFDI. Sin compra mínima: por pieza o conjunto completo, con envíos a los 32 estados.',
@@ -145,6 +161,12 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
+  <PhotoBand
+    src="/images/escenas/estacion-bomberos-trajes-percha.avif"
+    alt="Trajes estructurales colgados en la percha de equipo de una estación de bomberos"
+    caption="Seis familias de traje, cada una para una operación distinta. Te ayudamos a elegir la que corresponde antes de cotizar."
+  />
+
   <!-- Comparativa -->
   <section class="section" id="comparar">
     <div class="container">
@@ -168,10 +190,40 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
+
+  <!-- Blog técnico: interlinking al contenido editorial -->
+  <section class="section " id="blog">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Blog técnico"
+        title="Antes de decidir, léete esto"
+        description="Las guías que resuelven las dudas que aparecen justo antes de emitir una requisición: qué familia toca, qué norma citar y qué datos hacen comparable una cotización."
+      />
+      <div class="grid-cards grid-cards--3">
+        {ultimosPosts.map((a, i) => (
+          <PostCard
+            href={postUrl(a)}
+            title={a.data.title}
+            resumen={a.data.resumen}
+            categoria={a.data.categoria}
+            fecha={a.data.fecha}
+            lectura={readingTime(a.body)}
+            destacado={a.data.destacado}
+            index={i}
+          />
+        ))}
+      </div>
+      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+    </div>
+  </section>
+
   <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
+  .blog-cta { margin: 2.2rem 0 0; }
+  .blog-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
+  .blog-cta a:hover { text-decoration: underline; }
   .familia {
     padding-block: clamp(2.2rem, 3.5vw, 3.4rem);
     border-top: var(--border);

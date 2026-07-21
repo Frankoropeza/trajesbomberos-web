@@ -14,6 +14,7 @@
 //  · Sin precios (decisión de negocio). Sin reseñas fabricadas.
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
+import PhotoBand from '@components/PhotoBand.astro';
 import SectionMenu from '@components/SectionMenu.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CategoryCard from '@components/CategoryCard.astro';
@@ -30,6 +31,8 @@ import ProcessSteps from '@components/ProcessSteps.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import FactList from '@components/FactList.astro';
 import CTABanner from '@components/CTABanner.astro';
+import PostCard from '@components/PostCard.astro';
+import { getPosts, postUrl, readingTime } from '@lib/blog';
 import {
   SITE,
   PRODUCT_CATEGORIES,
@@ -44,6 +47,12 @@ const hero = {
   accent: 'en todo México',
   subtitle:
     'Estructural, brigadista, forestal, aproximación, entrada y extricación. Chaquetón y pantalonera con el composite que exige tu operación, con ficha técnica y factura. Cotiza por WhatsApp y recibe en tu estación.',
+  meta: [
+    'Especialistas solo en trajes',
+    'Ficha técnica por partida',
+    'Factura CFDI 4.0',
+    'Envíos a los 32 estados',
+  ],
   descRight: [
     'Somos especialistas en una sola línea: ropa de protección para combate de incendios. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos municipales que compran por licitación y unidades de protección civil en los 32 estados de la República.',
     'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y condiciones de entrega por escrito. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
@@ -155,10 +164,6 @@ const faqs = [
     a: 'Bajo NFPA 1850, el retiro es a los 10 años desde la fecha de fabricación, incluso si el traje nunca se usó. Además requiere inspección avanzada anual y dos lavados avanzados por año. Revisa siempre la fecha de fabricación en la etiqueta antes de aceptar un pedido.',
   },
   {
-    q: '¿Qué es el DRD y por qué debe traerlo el chaquetón?',
-    a: 'Drag Rescue Device: un arnés integrado que permite arrastrar a un elemento inconsciente sin improvisar. Forma parte de los requisitos del conjunto estructural desde la edición 2008 de la norma. Si una oferta no lo menciona, pregúntalo explícitamente.',
-  },
-  {
     q: '¿Puedo comprar solo el chaquetón o solo la pantalonera?',
     a: 'Sí. Vendemos por pieza o conjunto completo, sin compra mínima. Ten en cuenta que la interfaz entre chaquetón y pantalón es una zona crítica: si combinas piezas de distintos cortes o tallas, conviene revisarlo con nosotros antes.',
   },
@@ -176,6 +181,10 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   name: c.nombre,
   url: `${SITE.url}/trajes/${c.slug}/`,
 }));
+
+// Últimos 3 artículos del blog: la home enlaza al contenido que
+// resuelve las dudas previas a la cotización.
+const ultimosPosts = (await getPosts()).slice(0, 3);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
   <Hero {...hero} />
@@ -225,6 +234,12 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <CTABanner variant="light" {...PRESET_GENERAL} />
+
+  <PhotoBand
+    src="/images/escenas/bomberos-ataque-incendio-manguera.avif"
+    alt="Bomberos con traje estructural y equipo de respiración avanzando una línea de manguera en un incendio"
+    caption="Traje estructural en ataque interior: chaquetón y pantalonera de tres capas, cinta reflejante y equipo de respiración."
+  />
 
   <!-- 2 · Cómo está hecho: las tres capas -->
   <section class="section" id="anatomia">
@@ -372,9 +387,38 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
       <FAQWithContact items={faqs} />
     </div>
   </section>
+
+  <!-- Blog técnico: interlinking al contenido editorial -->
+  <section class="section section--alt" id="blog">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Blog técnico"
+        title="Lo que preguntan por teléfono, explicado a fondo"
+        description="Guías de especificación, normas vigentes, comparativas entre familias y compra pública. Escrito por gente del ramo, sin copiar fichas de fabricante."
+      />
+      <div class="grid-cards grid-cards--3">
+        {ultimosPosts.map((a, i) => (
+          <PostCard
+            href={postUrl(a)}
+            title={a.data.title}
+            resumen={a.data.resumen}
+            categoria={a.data.categoria}
+            fecha={a.data.fecha}
+            lectura={readingTime(a.body)}
+            destacado={a.data.destacado}
+            index={i}
+          />
+        ))}
+      </div>
+      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
+  .blog-cta { margin: 2.2rem 0 0; }
+  .blog-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
+  .blog-cta a:hover { text-decoration: underline; }
   .catalogo-cta { margin: 2.2rem 0 0; }
   .catalogo-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
   .catalogo-cta a:hover { text-decoration: underline; }

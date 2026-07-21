@@ -1,0 +1,228 @@
+---
+// PostLayout (artículo del blog).
+// Jerarquía canónica: BaseLayout → PageLayout → PostLayout, la
+// misma que ProductLayout. Estructura: hero → franja →
+// [artículo + sidebar sticky] → relacionados → CTA de cierre.
+// El JSON-LD de Article NO se emite aquí: se arma y se pasa a
+// PageLayout, que lo entrega a BaseLayout (regla B3, emisor único).
+import { render } from 'astro:content';
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import PostCard from '@components/PostCard.astro';
+import BlogSidebar from '@components/BlogSidebar.astro';
+import CTABanner from '@components/CTABanner.astro';
+import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { waUrl } from '@lib/wa';
+import {
+  type Post,
+  postUrl,
+  categoriaUrl,
+  categoriaNombre,
+  relatedPosts,
+  formatFecha,
+  isoFecha,
+  readingTime,
+  wordCount,
+} from '@lib/blog';
+
+interface Props {
+  post: Post;
+}
+const { post } = Astro.props;
+const d = post.data;
+
+const { Content, headings } = await render(post);
+const path = postUrl(post);
+const url = new URL(path, SITE.url).href;
+const lectura = readingTime(post.body);
+const palabras = wordCount(post.body);
+const cat = blogCategoria(d.categoria);
+const relacionados = await relatedPosts(post, 3);
+const waMsg = WA_MESSAGES.articulo(d.title);
+
+const menuItems = [
+  { label: 'El artículo', href: '#articulo' },
+  { label: 'Relacionados', href: '#relacionados' },
+  { label: categoriaNombre(d.categoria), href: categoriaUrl(d.categoria) },
+  ...(d.familia ? [{ label: 'Ver la familia', href: `/trajes/${d.familia}/` }] : []),
+  { label: 'Todos los artículos', href: '/blog/' },
+];
+
+// Datos duros del hero: si el artículo no los declara, se arma
+// uno honesto con categoría, fecha y tiempo de lectura.
+const heroMeta = d.meta.length
+  ? d.meta
+  : [categoriaNombre(d.categoria), formatFecha(d.fecha), `${lectura} min de lectura`];
+
+const article = {
+  headline: d.title,
+  description: d.description,
+  url,
+  datePublished: isoFecha(d.fecha),
+  dateModified: isoFecha(d.actualizado ?? d.fecha),
+  section: categoriaNombre(d.categoria),
+  keywords: d.keywords,
+  wordCount: palabras,
+  image: new URL('/images/og-trajes-para-bomberos.png', SITE.url).href,
+};
+---
+<PageLayout
+  pageType="articulo"
+  path={path}
+  title={d.seoTitle}
+  description={d.description}
+  keywords={d.keywords}
+  menuItems={menuItems}
+  crumbLabel={d.title}
+  parent={{ name: 'Blog', href: '/blog/' }}
+  eyebrow={d.eyebrow ?? `Blog · ${categoriaNombre(d.categoria)}`}
+  h1={d.title}
+  h1Accent={d.titleAccent}
+  lead={d.lead}
+  descRight={d.descRight}
+  meta={heroMeta}
+  article={article}
+>
+  <div class="section">
+    <div class="container layout-grid layout-grid--post">
+      <div class="layout-main">
+        <article id="articulo" class="post">
+          <!-- Ficha del artículo: quién responde por esto y desde cuándo -->
+          <div class="post__bar">
+            <a class="post__cat" href={categoriaUrl(d.categoria)}>{categoriaNombre(d.categoria)}</a>
+            <span class="post__dot" aria-hidden="true">·</span>
+            <span class="post__dato">
+              Publicado el <time datetime={isoFecha(d.fecha)}>{formatFecha(d.fecha)}</time>
+            </span>
+            {d.actualizado && (
+              <>
+                <span class="post__dot" aria-hidden="true">·</span>
+                <span class="post__dato">
+                  Actualizado el <time datetime={isoFecha(d.actualizado)}>{formatFecha(d.actualizado)}</time>
+                </span>
+              </>
+            )}
+            <span class="post__dot" aria-hidden="true">·</span>
+            <span class="post__dato">{lectura} min de lectura</span>
+            <span class="post__dot" aria-hidden="true">·</span>
+            <span class="post__dato">{d.autor}</span>
+          </div>
+
+          <div class="prose">
+            <Content />
+          </div>
+
+          <!-- Cierre del artículo: a dónde va el lector que ya leyó -->
+          <div class="post__cierre">
+            <p class="post__cierre-t">¿Te quedó una duda sobre lo que acabas de leer?</p>
+            <p class="post__cierre-p">
+              Escríbenos y te la contestamos con la ficha técnica en la mano. Si tu compra es por
+              licitación, pide el expediente completo desde el primer mensaje.
+            </p>
+            <div class="post__cierre-cta">
+              <a class="btn btn--wa" href={waUrl(waMsg)} target="_blank" rel="noopener nofollow">
+                Preguntar por WhatsApp
+              </a>
+              {d.familia && (
+                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>Ver la familia de traje</a>
+              )}
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <BlogSidebar
+        variant="articulo"
+        headings={headings}
+        currentId={post.id}
+        currentCategoria={d.categoria}
+        waMessage={waMsg}
+      />
+    </div>
+  </div>
+
+  {relacionados.length > 0 && (
+    <section class="section section--alt" id="relacionados">
+      <div class="container">
+        <SectionHeading
+          eyebrow="Seguir leyendo"
+          title="Artículos relacionados"
+          description={cat ? cat.desc : undefined}
+        />
+        <div class="grid-cards grid-cards--3">
+          {relacionados.map((p, i) => (
+            <PostCard
+              href={postUrl(p)}
+              title={p.data.title}
+              resumen={p.data.resumen}
+              categoria={p.data.categoria}
+              fecha={p.data.fecha}
+              lectura={readingTime(p.body)}
+              destacado={p.data.destacado}
+              index={i}
+            />
+          ))}
+        </div>
+        <p class="volver"><a href="/blog/">← Volver al blog</a></p>
+      </div>
+    </section>
+  )}
+
+  <CTABanner variant="dark" {...PRESET_CONTACTO} />
+</PageLayout>
+
+<style>
+  /* El sitio es full-width, pero un artículo no se lee a 1500px.
+     Esta es la única página donde el bloque de contenido se
+     acota y se centra: medida de lectura + sidebar, sin hueco
+     muerto entre columnas. */
+  .layout-grid--post {
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+  .layout-grid--post :global(.prose),
+  .post__cierre { max-width: none; }
+
+  .post { min-width: 0; }
+
+  .post__bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 2rem;
+    padding-bottom: 1.1rem;
+    border-bottom: var(--border);
+    font-size: 0.78rem;
+    color: var(--color-gray-soft);
+    font-weight: 600;
+  }
+  .post__cat {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.72rem;
+  }
+  .post__cat:hover { text-decoration: underline; }
+  .post__dot { color: var(--color-gray-light); }
+
+  .post__cierre {
+    margin-top: clamp(2.5rem, 4vw, 3.6rem);
+    padding: clamp(1.5rem, 2.4vw, 2.2rem);
+    background: var(--color-light);
+    border: var(--border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    max-width: 74ch;
+  }
+  .post__cierre-t { margin: 0 0 0.4rem; font-weight: 800; font-size: 1.05rem; }
+  .post__cierre-p { margin: 0 0 1.2rem; color: var(--color-gray); font-size: 0.92rem; }
+  .post__cierre-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+  .volver { margin: 2.2rem 0 0; }
+  .volver a { font-weight: 800; text-decoration: none; }
+  .volver a:hover { text-decoration: underline; }
+</style>

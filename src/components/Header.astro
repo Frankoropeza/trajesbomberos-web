@@ -1,12 +1,19 @@
 ---
 // Header: todo el menú —escritorio, panel desplegable y versión
 // móvil— se genera desde NAV en site.ts, una sola fuente.
+//
+// Estructura del menú (4 entradas, no ocho):
+//   Trajes        → panel agrupado: familias | fichas técnicas
+//   Guía técnica  → panel agrupado: cómo elegir | cumplimiento
+//   Blog          → panel simple con categorías
+//   Contacto      → enlace directo
+// Cada panel cierra con un enlace destacado (panelCta).
 // CTA de conversión "Cotizar" siempre visible a la derecha.
 import { SITE, NAV, CONTACT, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 const path = Astro.url.pathname;
 const isActive = (href: string) =>
-  href.startsWith('/') && !href.includes('#') && path.startsWith(href);
+  href.startsWith('/') && !href.includes('#') && href !== '/' && path.startsWith(href);
 ---
 <header class="site-header">
   <div class="container header-inner">
@@ -22,25 +29,58 @@ const isActive = (href: string) =>
 
     <nav class="nav-desktop" aria-label="Navegación principal">
       <ul class="nav-list">
-        {NAV.map((item) => (
-          <li class:list={['nav-item', { 'nav-item--has-menu': !!item.children }]}>
-            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
-              {item.label}
-              {item.children && (
-                <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        {NAV.map((item) => {
+          const tienePanel = !!(item.groups || item.children);
+          return (
+            <li class:list={['nav-item', { 'nav-item--has-menu': tienePanel }]}>
+              <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+                {item.label}
+                {tienePanel && (
+                  <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                )}
+              </a>
+
+              {tienePanel && (
+                <div class:list={['nav-panel', { 'nav-panel--grid': !!item.groups }]}>
+                  {item.groups && (
+                    <div class="nav-cols">
+                      {item.groups.map((g) => (
+                        <div class="nav-col">
+                          <p class="nav-col__title">{g.title}</p>
+                          <ul>
+                            {g.items.map((c) => (
+                              <li>
+                                <a href={c.href}>
+                                  <span class="nav-link__label">{c.label}</span>
+                                  {c.desc && <span class="nav-link__desc">{c.desc}</span>}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {item.children && (
+                    <ul class="nav-simple">
+                      {item.children.map((c) => (
+                        <li><a href={c.href}>{c.label}</a></li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {item.panelCta && (
+                    <a class="nav-panel__cta" href={item.panelCta.href}>
+                      {item.panelCta.label}
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                  )}
+                </div>
               )}
-            </a>
-            {item.children && (
-              <div class="nav-panel">
-                <ul>
-                  {item.children.map((c) => (
-                    <li><a href={c.href}>{c.label}</a></li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ul>
     </nav>
 
@@ -57,21 +97,41 @@ const isActive = (href: string) =>
     </button>
   </div>
 
+  <!-- Menú móvil: mismas secciones, en acordeón por grupo -->
   <div class="mob-menu" id="mob-menu" hidden>
     <ul class="mob-list">
       {NAV.map((item) => (
         <li class="mob-item">
           <a class="mob-item__link" href={item.href}>{item.label}</a>
+
+          {item.groups && item.groups.map((g) => (
+            <div class="mob-group">
+              <p class="mob-group__title">{g.title}</p>
+              <ul>
+                {g.items.map((c) => (
+                  <li><a class="mob-item__link mob-item__link--sub" href={c.href}>{c.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+
           {item.children && (
-            <ul class="mob-sub">
-              {item.children.map((c) => (
-                <li><a class="mob-item__link mob-item__link--sub" href={c.href}>{c.label}</a></li>
-              ))}
-            </ul>
+            <div class="mob-group">
+              <ul>
+                {item.children.map((c) => (
+                  <li><a class="mob-item__link mob-item__link--sub" href={c.href}>{c.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {item.panelCta && (
+            <a class="mob-item__cta" href={item.panelCta.href}>{item.panelCta.label} →</a>
           )}
         </li>
       ))}
     </ul>
+
     <div class="mob-actions">
       <a class="btn btn--wa mob-direct" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
       <a class="btn btn--ghost mob-direct" href={`tel:${CONTACT.telefonoHref}`}>Llamar {CONTACT.telefono}</a>
@@ -101,14 +161,14 @@ const isActive = (href: string) =>
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgb(255 255 255 / 0.94);
+    background: rgb(255 255 255 / 0.96);
     backdrop-filter: saturate(180%) blur(10px);
     border-bottom: var(--border);
   }
   .header-inner {
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 2.5vw, 3rem);
+    gap: clamp(1.2rem, 3vw, 3.5rem);
     min-height: var(--header-height);
   }
   .brand {
@@ -132,67 +192,101 @@ const isActive = (href: string) =>
   }
 
   .nav-desktop { flex: 1; }
-  .nav-list { display: flex; gap: clamp(0.8rem, 1.6vw, 1.8rem); list-style: none; margin: 0; padding: 0; }
+  .nav-list { display: flex; gap: 1.9rem; list-style: none; margin: 0; padding: 0; }
   .nav-item { position: relative; }
   .nav-item > a {
     display: inline-flex;
     align-items: center;
-    gap: 0.28rem;
-    padding-block: 0.5rem;
+    gap: 0.3rem;
+    padding-block: 0.55rem;
     color: var(--color-gray);
     text-decoration: none;
     font-weight: 700;
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     white-space: nowrap;
   }
   .nav-item > a:hover,
   .nav-item > a[aria-current='page'] { color: var(--color-primary); }
-  .nav-caret { transition: transform 0.18s ease; }
-  .nav-item--has-menu:hover .nav-caret { transform: rotate(180deg); }
 
-  /* Panel desplegable */
+  /* --- Panel desplegable ------------------------------------- */
   .nav-panel {
     position: absolute;
-    top: calc(100% + 0.5rem);
-    left: -0.9rem;
-    min-width: 260px;
+    top: 100%;
+    left: -1rem;
+    min-width: 280px;
     background: var(--color-white);
     border: var(--border);
     border-top: 3px solid var(--color-primary);
-    border-radius: var(--radius-lg);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     box-shadow: var(--shadow-lg);
-    padding: 0.5rem;
+    padding: 1.2rem;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-6px);
-    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
     z-index: 20;
   }
   .nav-item--has-menu:hover .nav-panel,
-  .nav-item--has-menu:focus-within .nav-panel {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+  .nav-item--has-menu:focus-within .nav-panel { opacity: 1; visibility: visible; }
+  .nav-panel--grid { min-width: 620px; }
+
+  .nav-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem; }
+  .nav-col__title {
+    margin: 0 0 0.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: var(--border);
+    font-size: 0.66rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
   }
   .nav-panel ul { list-style: none; margin: 0; padding: 0; }
-  .nav-panel a {
+  .nav-col a {
     display: block;
-    padding: 0.6rem 0.8rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+  }
+  .nav-col a:hover { background: var(--color-light); }
+  .nav-link__label {
+    display: block;
+    color: var(--color-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .nav-col a:hover .nav-link__label { color: var(--color-primary); }
+  .nav-link__desc {
+    display: block;
+    color: var(--color-gray-soft);
+    font-size: 0.76rem;
+    margin-top: 0.05rem;
+  }
+
+  .nav-simple a {
+    display: block;
+    padding: 0.55rem 0.6rem;
     border-radius: var(--radius);
     color: var(--color-dark);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .nav-panel a:hover { background: var(--color-light); color: var(--color-primary); }
-  .nav-panel li:last-child a {
-    margin-top: 0.3rem;
+  .nav-simple a:hover { background: var(--color-light); color: var(--color-primary); }
+
+  .nav-panel__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
     border-top: var(--border);
-    border-radius: 0;
     color: var(--color-primary);
     font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: none;
   }
 
+  /* --- Acciones ---------------------------------------------- */
   .header-actions { display: flex; align-items: center; gap: 1.2rem; flex-shrink: 0; }
   .header-phone { display: flex; flex-direction: column; text-decoration: none; line-height: 1.2; }
   .header-phone__label {
@@ -217,16 +311,44 @@ const isActive = (href: string) =>
   }
   .nav-toggle span { width: 24px; height: 3px; background: var(--color-dark); border-radius: 2px; }
 
-  .mob-menu { background: var(--color-white); border-top: var(--border); padding: 1rem var(--container-px) 1.5rem; }
+  /* --- Móvil -------------------------------------------------- */
+  .mob-menu {
+    background: var(--color-white);
+    border-top: var(--border);
+    padding: 1rem var(--container-px) 1.5rem;
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+  }
   .mob-list { list-style: none; margin: 0 0 1rem; padding: 0; }
+  .mob-item { padding-bottom: 0.9rem; margin-bottom: 0.9rem; border-bottom: var(--border); }
+  .mob-item:last-child { border-bottom: 0; }
   .mob-item__link {
+    display: block;
+    padding: 0.5rem 0;
     text-decoration: none;
     color: var(--color-dark);
-    font-weight: 700;
-    border-bottom: var(--border);
+    font-weight: 800;
+    font-size: 1.02rem;
   }
-  .mob-sub { list-style: none; margin: 0; padding: 0 0 0.4rem 0.9rem; border-left: 2px solid var(--color-gray-light); }
-  .mob-item__link--sub { font-weight: 600; font-size: 0.9rem; color: var(--color-gray); border-bottom: 0; }
+  .mob-group { padding-left: 0.9rem; border-left: 2px solid var(--color-gray-light); margin-top: 0.4rem; }
+  .mob-group__title {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 0.64rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .mob-group ul { list-style: none; margin: 0; padding: 0; }
+  .mob-item__link--sub { font-weight: 600; font-size: 0.92rem; color: var(--color-gray); }
+  .mob-item__cta {
+    display: inline-block;
+    margin-top: 0.6rem;
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.88rem;
+    text-decoration: none;
+  }
   .mob-actions { display: grid; gap: 0.6rem; }
   .mob-horario { text-align: center; color: var(--color-gray); font-size: 0.85rem; margin: 0.25rem 0 0; }
 

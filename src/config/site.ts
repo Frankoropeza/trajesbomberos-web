@@ -3,10 +3,12 @@
 // Terminología: español de México verificado en el mercado real
 // (chaquetón, pantalonera, monja, escafandra, tirantes, ERA,
 // brigadista, DRD, combo). Ver estudio de mercado jul-2026.
-// TODO(Frank): teléfono, WhatsApp y email reales.
+// TODO(Frank): confirmar email real.
 // TODO(Frank): confirmar marcas con carta de distribuidor para
 // poder nombrarlas como tales (hoy solo referencia técnica).
 // ============================================================
+
+import { PIEZAS } from '@lib/piezas';
 
 export const SITE = {
   name: 'TrajesBombero',
@@ -25,9 +27,9 @@ export const KEYWORDS = [
 ] as const;
 
 export const CONTACT = {
-  telefono: '+52 55 0000 0000',      // TODO(Frank): real
-  telefonoHref: '+525500000000',     // TODO(Frank): real
-  whatsapp: '525500000000',          // TODO(Frank): real, solo dígitos
+  telefono: '+52 55 1005 3432',
+  telefonoHref: '+525510053432',
+  whatsapp: '525510053432',
   email: 'ventas@trajesbomberos.com', // TODO(Frank): confirmar
   horario: 'Lun–Vie 9:00–18:00',
   cobertura: 'Envíos a todo México',
@@ -41,6 +43,7 @@ export const WA_MESSAGES = {
   segmento: (nombre: string) => `Hola, necesito equipo para: ${nombre}.`,
   licitacion: 'Hola, necesito cotización formal y ficha técnica para una licitación.',
   servicio: 'Hola, quiero información sobre inspección y lavado de equipo (NFPA 1850).',
+  articulo: (titulo: string) => `Hola, leí el artículo "${titulo}" y tengo una duda.`,
 } as const;
 
 // ============================================================
@@ -119,7 +122,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     slug: 'estructural',
     nombre: 'Trajes estructurales',
     desc: 'Chaquetón y pantalón de tres capas: exterior, barrera de humedad y barrera térmica. Para combate de incendio en edificaciones.',
-    image: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg',
+    image: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif',
     imageAlt: 'Traje estructural para bombero: chaquetón y pantalón de tres capas',
     badge: 'Más solicitado',
     chips: ['Chaquetón', 'Pantalonera', 'DRD'],
@@ -128,7 +131,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     slug: 'brigadista',
     nombre: 'Trajes de brigadista',
     desc: 'Equipo para brigada industrial de fuego incipiente. Menor costo que el estructural certificado y distinto alcance de protección.',
-    image: '/images/productos/traje-brigadista-industrial-bombero.svg',
+    image: '/images/productos/traje-brigadista-industrial-bombero.avif',
     imageAlt: 'Traje de brigadista industrial contra incendio',
     chips: ['Brigada', 'NOM-002-STPS', 'Combo'],
   },
@@ -136,7 +139,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     slug: 'forestal',
     nombre: 'Trajes forestales',
     desc: 'Camisola y pantalón de una sola capa en tela ignífuga inherente. Ligereza y transpirabilidad para jornadas largas en línea de fuego.',
-    image: '/images/productos/traje-forestal-camisola-pantalon-bombero.svg',
+    image: '/images/productos/traje-forestal-camisola-pantalon-bombero.avif',
     imageAlt: 'Traje forestal para bombero: camisola y pantalón de una capa',
     chips: ['Camisola', 'Una capa', 'Wildland'],
   },
@@ -160,37 +163,177 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     slug: 'extricacion',
     nombre: 'Extricación y rescate',
     desc: 'Rescate vehicular y técnico: resistencia a corte y punción con barrera contra patógenos. Protege la inversión del traje estructural.',
-    image: '/images/productos/traje-extricacion-rescate-vehicular.svg',
+    image: '/images/productos/traje-extricacion-rescate-vehicular.avif',
     imageAlt: 'Traje de extricación para rescate vehicular y técnico',
     chips: ['Corte', 'Patógenos', 'Ligero'],
   },
 ];
 
 // ============================================================
+// BLOG — taxonomía. SSoT de las categorías editoriales: alimenta
+// el NAV, el índice /blog/, el sidebar y los archivos
+// /blog/categoria/<slug>/. Cinco categorías y ni una más: cada
+// una responde a una pregunta real del comprador mexicano.
+// ============================================================
+export interface BlogCategory {
+  slug: string;
+  nombre: string;
+  desc: string;
+  h1: string;
+  lead: string;
+  seoTitle: string;         // regla de las 3 keywords, <= 60
+  seoDescription: string;   // abre con kw1, <= 160
+  keywords: readonly string[];
+}
+
+export const BLOG_CATEGORIES: BlogCategory[] = [
+  {
+    slug: 'especificacion',
+    nombre: 'Cómo especificar',
+    desc: 'Qué datos debe traer una cotización para que sea comparable con otra.',
+    h1: 'Cómo especificar equipo de bombero',
+    lead: 'Artículos sobre los datos que hacen comparable una cotización: composite, TPP, THL, tallas y alcance declarado.',
+    seoTitle: 'Cómo especificar equipo de bombero | ficha técnica | México',
+    seoDescription:
+      'Cómo especificar equipo de bombero: qué datos debe traer una cotización para que sea comparable con otra y qué revisar antes de firmar la orden.',
+    keywords: ['cómo especificar equipo de bombero', 'ficha técnica', 'México'],
+  },
+  {
+    slug: 'normas',
+    nombre: 'Normas y certificación',
+    desc: 'NFPA 1970, NFPA 1850 y las NOM de la STPS aplicadas al equipo real.',
+    h1: 'Normas y certificación',
+    lead: 'NFPA 1970, NFPA 1850, NOM-002-STPS-2010 y NOM-017-STPS-2024 explicadas con lo que realmente te van a pedir.',
+    seoTitle: 'Normas para trajes de bombero | NFPA 1970 | México',
+    seoDescription:
+      'Normas para trajes de bombero: NFPA 1970, NFPA 1850 y las NOM de la STPS explicadas con lo que de verdad te van a pedir en una compra.',
+    keywords: ['normas para trajes de bombero', 'NFPA 1970', 'México'],
+  },
+  {
+    slug: 'comparativas',
+    nombre: 'Comparativas',
+    desc: 'Qué familia corresponde a cada operación y por qué no son intercambiables.',
+    h1: 'Comparativas entre familias de traje',
+    lead: 'Estructural contra brigadista, aproximación contra entrada: las confusiones que cuestan dinero y, a veces, algo peor.',
+    seoTitle: 'Comparativas de trajes para bomberos | familias | México',
+    seoDescription:
+      'Comparativas de trajes para bomberos: estructural contra brigadista, aproximación contra entrada y qué familia corresponde a cada operación.',
+    keywords: ['comparativas de trajes para bomberos', 'familias', 'México'],
+  },
+  {
+    slug: 'mantenimiento',
+    nombre: 'Vida útil y servicio',
+    desc: 'Inspección, lavado, reparación y retiro del equipo en servicio.',
+    h1: 'Vida útil y servicio del equipo',
+    lead: 'Cómo se inspecciona, se lava, se repara y se retira un traje para que dure lo que tiene que durar y ni un día más.',
+    seoTitle: 'Mantenimiento de trajes para bomberos | vida útil | México',
+    seoDescription:
+      'Mantenimiento de trajes para bomberos: inspección, lavado, reparación y retiro del equipo conforme a la NFPA 1850, explicado para estación real.',
+    keywords: ['mantenimiento de trajes para bomberos', 'vida útil', 'México'],
+  },
+  {
+    slug: 'licitacion',
+    nombre: 'Compras y licitación',
+    desc: 'Expediente, pliego y documentación para compra pública y corporativa.',
+    h1: 'Compras y licitación',
+    lead: 'Cómo se arma un expediente que no te descalifica: ficha técnica, certificado de laboratorio, carta de distribuidor y CFDI.',
+    seoTitle: 'Compra de trajes para bomberos | licitación | México',
+    seoDescription:
+      'Compra de trajes para bomberos por licitación o vía corporativa: expediente, pliego, certificados y la documentación que no te descalifica.',
+    keywords: ['compra de trajes para bomberos', 'licitación', 'México'],
+  },
+];
+
+export function blogCategoria(slug: string) {
+  return BLOG_CATEGORIES.find((c) => c.slug === slug);
+}
+
+// ============================================================
 // NAV — única fuente del Header, del menú móvil, del SectionMenu
 // y del Footer. Las anclas van absolutas (/#seccion) para que
 // funcionen también desde las páginas L2 y L3.
 // ============================================================
+export interface NavLink {
+  label: string;
+  href: string;
+  desc?: string;      // línea de apoyo en el panel desplegable
+}
+
+export interface NavGroup {
+  title: string;
+  items: NavLink[];
+}
+
 export interface NavItem {
   label: string;
   href: string;
-  children?: { label: string; href: string }[];
+  /** Panel simple: una sola lista. */
+  children?: NavLink[];
+  /** Panel agrupado por columnas: una columna por grupo. */
+  groups?: NavGroup[];
+  /** Enlace destacado al pie del panel. */
+  panelCta?: NavLink;
 }
 
+// Cuatro entradas, no ocho. Cada una agrupa lo que le corresponde
+// por nivel: catálogo, contenido técnico, blog y contacto.
 export const NAV: NavItem[] = [
   {
     label: 'Trajes',
     href: '/trajes/',
-    children: [
-      ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
-      { label: 'Ver todas las familias', href: '/trajes/' },
+    groups: [
+      {
+        title: 'Por familia',
+        items: PRODUCT_CATEGORIES.map((c) => ({
+          label: c.nombre,
+          href: `/trajes/${c.slug}/`,
+          desc: c.chips.slice(0, 2).join(' · '),
+        })),
+      },
+      {
+        title: 'Fichas técnicas',
+        items: PIEZAS.map((p) => ({
+          label: p.nombre,
+          href: `/trajes/${p.familia}/${p.slug}/`,
+          desc: p.meta.slice(0, 2).join(' · '),
+        })),
+      },
     ],
+    panelCta: { label: 'Comparar las seis familias de traje', href: '/trajes/' },
   },
-  { label: 'Anatomía', href: '/#anatomia' },
-  { label: 'Cómo especificar', href: '/#especificar' },
-  { label: 'Marcas', href: '/#marcas' },
-  { label: 'Normas', href: '/#normas' },
-  { label: 'Preguntas', href: '/#faq' },
+  {
+    label: 'Guía técnica',
+    href: '/#anatomia',
+    groups: [
+      {
+        title: 'Cómo elegir',
+        items: [
+          { label: 'Anatomía del traje', href: '/#anatomia', desc: 'Las tres capas y qué hace cada una' },
+          { label: 'Cómo especificar', href: '/#especificar', desc: 'Los ocho datos de la ficha' },
+          { label: 'Errores de compra', href: '/#errores', desc: 'Lo que más se hace mal' },
+        ],
+      },
+      {
+        title: 'Cumplimiento y servicio',
+        items: [
+          { label: 'Normas aplicables', href: '/#normas', desc: 'Qué obliga la ley en México' },
+          { label: 'Vida útil y servicio', href: '/#vida-util', desc: 'Retiro a los 10 años' },
+          { label: 'Marcas de referencia', href: '/#marcas', desc: 'Quién fabrica y qué se especifica' },
+        ],
+      },
+    ],
+    panelCta: { label: 'Preguntas frecuentes', href: '/#faq' },
+  },
+  {
+    label: 'Blog',
+    href: '/blog/',
+    children: [
+      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
+    ],
+    panelCta: { label: 'Ver todos los artículos', href: '/blog/' },
+  },
+  { label: 'Empresa', href: '/empresa/' },
+  { label: 'Contacto', href: '/contacto/' },
 ];
 
 // Complementos del conjunto. NO son línea de negocio: se cotizan
@@ -241,12 +384,33 @@ export const MARCAS_MATERIAL: Marca[] = [
   { nombre: 'TenCate · Safety Components', origen: 'Exterior', nota: 'Tejedores de tela exterior certificada' },
 ];
 
+// Footer compacto: cuatro columnas de máximo 6 enlaces. Las 36
+// fichas L4 NO van aquí — se llega a ellas desde /trajes/<familia>/
+// y desde el submenú del header. Un footer con 40 enlaces no
+// orienta a nadie y diluye el reparto de autoridad interna.
 export const FOOTER_COLUMNS = [
   {
-    title: 'Trajes',
+    title: 'Familias de traje',
     links: [
       ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
-      { label: 'Ver todas las familias', href: '/trajes/' },
+    ],
+  },
+  {
+    title: 'Guía técnica',
+    links: [
+      { label: 'Anatomía del traje', href: '/#anatomia' },
+      { label: 'Cómo especificar', href: '/#especificar' },
+      { label: 'Errores de compra', href: '/#errores' },
+      { label: 'Normas aplicables', href: '/#normas' },
+      { label: 'Vida útil y servicio', href: '/#vida-util' },
+      { label: 'Marcas de referencia', href: '/#marcas' },
+    ],
+  },
+  {
+    title: 'Blog técnico',
+    links: [
+      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
+      { label: 'Ver todos los artículos', href: '/blog/' },
     ],
   },
   {
@@ -255,17 +419,8 @@ export const FOOTER_COLUMNS = [
       { label: 'Brigada industrial', href: '/#segmentos' },
       { label: 'Gobierno y licitación', href: '/#segmentos' },
       { label: 'Cuerpos voluntarios', href: '/#segmentos' },
-    ],
-  },
-  {
-    title: 'Técnico',
-    links: [
-      { label: 'Anatomía del traje', href: '/#anatomia' },
-      { label: 'Cómo especificar', href: '/#especificar' },
-      { label: 'Errores de compra', href: '/#errores' },
-      { label: 'Marcas de referencia', href: '/#marcas' },
-      { label: 'Normas aplicables', href: '/#normas' },
-      { label: 'Vida útil y servicio', href: '/#vida-util' },
+      { label: 'Comparar familias', href: '/trajes/' },
+      { label: 'Preguntas frecuentes', href: '/#faq' },
     ],
   },
 ] as const;

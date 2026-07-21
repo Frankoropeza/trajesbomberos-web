@@ -6,7 +6,7 @@ import { SITE, CONTACT, KEYWORDS } from '@config/site';
 // Regla dura: cero aggregateRating / reseñas fabricadas.
 // ============================================================
 
-export type PageType = 'home' | 'directorio' | 'producto' | 'generic';
+export type PageType = 'home' | 'directorio' | 'producto' | 'articulo' | 'generic';
 
 // --- Regla de las 3 keywords -------------------------------
 
@@ -125,11 +125,71 @@ export function faqSchema(faqs: { q: string; a: string }[]): object {
   };
 }
 
+// Artículo del blog. Sin author ficticio y sin aggregateRating:
+// el autor es la organización, que es lo que realmente responde
+// por el contenido técnico (regla B4).
+export interface ArticleInput {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;      // ISO
+  dateModified?: string;      // ISO
+  image?: string;
+  section?: string;
+  keywords?: readonly string[];
+  wordCount?: number;
+}
+
+export function articleSchema(a: ArticleInput): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${a.url}#article`,
+    headline: a.headline,
+    description: a.description,
+    url: a.url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': a.url },
+    datePublished: a.datePublished,
+    dateModified: a.dateModified ?? a.datePublished,
+    inLanguage: SITE.lang,
+    isAccessibleForFree: true,
+    author: { '@id': `${SITE.url}/#organization` },
+    publisher: { '@id': `${SITE.url}/#organization` },
+    ...(a.image ? { image: a.image } : {}),
+    ...(a.section ? { articleSection: a.section } : {}),
+    ...(a.keywords?.length ? { keywords: a.keywords.join(', ') } : {}),
+    ...(a.wordCount ? { wordCount: a.wordCount } : {}),
+  };
+}
+
+// Product para fichas L4. Sin offers ni aggregateRating: no
+// publicamos precios y nunca fabricamos reseñas (regla dura).
+export function productSchema(p: {
+  nombre: string;
+  descripcion: string;
+  imagen: string;
+  categoria: string;
+  url: string;
+}): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: p.nombre,
+    description: p.descripcion,
+    image: new URL(p.imagen, SITE.url).href,
+    category: p.categoria,
+    url: new URL(p.url, SITE.url).href,
+    brand: { '@type': 'Brand', name: SITE.name },
+  };
+}
+
 export interface SchemaInput {
   pageType: PageType;
   faqs?: { q: string; a: string }[];
   directoryItems?: { name: string; url: string }[];
   breadcrumbs?: { name: string; href: string }[];
+  article?: ArticleInput;
+  product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -138,6 +198,8 @@ export function buildSchema(input: SchemaInput): object[] {
   if (input.pageType === 'home') schemas.push(webSiteSchema());
   if (input.breadcrumbs?.length) schemas.push(breadcrumbSchema(input.breadcrumbs));
   if (input.directoryItems?.length) schemas.push(directorySchema(input.directoryItems));
+  if (input.article) schemas.push(articleSchema(input.article));
+  if (input.product) schemas.push(productSchema(input.product));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;
 }

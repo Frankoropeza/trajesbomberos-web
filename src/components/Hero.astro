@@ -1,24 +1,31 @@
 ---
-// Hero canónico: dos columnas. Izquierda: title + accent (H1 ÚNICO,
-// con la kw principal) + subtitle. Derecha: descRight[] (2 párrafos)
-// presentados como panel de contexto. Los CTAs NO viven aquí:
-// "el hero presenta, la franja convierte" (van en SectionMenu).
+// Hero canónico del sitio — idéntico en L1, L2 y L3.
+// Dos columnas: izquierda title + accent (H1 ÚNICO, con la kw
+// principal), subtitle y fila de datos duros; derecha descRight[]
+// como panel de contexto. Los CTA no viven aquí: "el hero
+// presenta, la franja convierte" (van en SectionMenu, debajo).
 interface Props {
   eyebrow?: string;
   title: string;
-  accent: string;
+  accent?: string;
   subtitle: string;
   descRight: string[];
+  meta?: string[];
 }
-const { eyebrow, title, accent, subtitle, descRight } = Astro.props;
+const { eyebrow, title, accent, subtitle, descRight, meta = [] } = Astro.props;
 ---
 <section class="hero">
   <div class="hero__stripes" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div class="hero-left">
       {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
-      <h1>{title} <span class="hero-accent">{accent}</span></h1>
+      <h1>{title}{accent && <> <span class="hero-accent">{accent}</span></>}</h1>
       <p class="hero-subtitle">{subtitle}</p>
+      {meta.length > 0 && (
+        <ul class="hero-meta">
+          {meta.map((m) => <li>{m}</li>)}
+        </ul>
+      )}
     </div>
     <div class="hero-right">
       <div class="hero-panel">
@@ -85,6 +92,35 @@ const { eyebrow, title, accent, subtitle, descRight } = Astro.props;
     color: #c8ccd2;
     margin: 0;
   }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem 1.5rem;
+    list-style: none;
+    margin: 1.7rem 0 0;
+    padding: 1.2rem 0 0;
+    border-top: 1px solid rgb(255 255 255 / 0.14);
+  }
+  .hero-meta li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #d6dae0;
+  }
+  .hero-meta li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--color-accent);
+    flex-shrink: 0;
+  }
+
   .hero-panel {
     border-left: 3px solid var(--color-primary);
     padding: 0.2rem 0 0.2rem 1.6rem;

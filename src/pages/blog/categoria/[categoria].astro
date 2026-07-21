@@ -1,0 +1,106 @@
+---
+// L3 · Archivo por categoría: /blog/categoria/<slug>/
+// Existe para que cada categoría tenga una URL indexable propia
+// con su H1 y su tripleta de keywords, en vez de un filtro en
+// JavaScript que Google no puede rastrear.
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import PostCard from '@components/PostCard.astro';
+import BlogSidebar from '@components/BlogSidebar.astro';
+import CTABanner from '@components/CTABanner.astro';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { SITE, BLOG_CATEGORIES } from '@config/site';
+import { getPostsByCategoria, postUrl, categoriaUrl, readingTime, type Post } from '@lib/blog';
+
+export const getStaticPaths = (() => {
+  return BLOG_CATEGORIES.map((c) => ({ params: { categoria: c.slug }, props: { cat: c } }));
+}) satisfies GetStaticPaths;
+
+const { cat } = Astro.props;
+
+const posts: Post[] = await getPostsByCategoria(cat.slug);
+const path = categoriaUrl(cat.slug);
+
+const menuItems = [
+  { label: 'Artículos', href: '#articulos' },
+  ...BLOG_CATEGORIES.filter((c) => c.slug !== cat.slug)
+    .slice(0, 3)
+    .map((c) => ({ label: c.nombre, href: categoriaUrl(c.slug) })),
+  { label: 'Todo el blog', href: '/blog/' },
+];
+
+// Meta de la categoría: SSoT en site.ts, no generada a mano aquí,
+// para que la regla de las 3 keywords se audite en un solo lugar.
+const keywords = cat.keywords;
+const title = cat.seoTitle;
+const description = cat.seoDescription;
+
+const directoryItems = posts.map((p) => ({
+  name: p.data.title,
+  url: new URL(postUrl(p), SITE.url).href,
+}));
+---
+<PageLayout
+  pageType="directorio"
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  crumbLabel={cat.nombre}
+  parent={{ name: 'Blog', href: '/blog/' }}
+  eyebrow={`Blog · ${cat.nombre}`}
+  h1={cat.h1}
+  lead={cat.lead}
+  meta={[`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'}`, 'Norma vigente citada', 'Español de México', 'Sin relleno']}
+  descRight={[
+    cat.desc,
+    'Si después de leer sigues con la duda, escríbenos: contestamos con la ficha técnica en la mano y te decimos con franqueza si lo que necesitas es otra cosa.',
+  ]}
+  directoryItems={directoryItems}
+>
+  <div class="section section--alt" id="articulos">
+    <div class="container layout-grid">
+      <div class="layout-main">
+        <SectionHeading eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
+        {posts.length > 0 ? (
+          <div class="post-grid">
+            {posts.map((p, i) => (
+              <PostCard
+                href={postUrl(p)}
+                title={p.data.title}
+                resumen={p.data.resumen}
+                categoria={p.data.categoria}
+                fecha={p.data.fecha}
+                lectura={readingTime(p.body)}
+                destacado={p.data.destacado}
+                index={i}
+              />
+            ))}
+          </div>
+        ) : (
+          <p class="vacio">Todavía no hay artículos publicados en esta categoría.</p>
+        )}
+        <p class="volver"><a href="/blog/">← Volver al blog</a></p>
+      </div>
+
+      <BlogSidebar variant="categoria" currentCategoria={cat.slug} />
+    </div>
+  </div>
+
+  <CTABanner variant="dark" {...PRESET_CONTACTO} />
+</PageLayout>
+
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gap-grid);
+  }
+  .vacio { color: var(--color-gray); }
+  .volver { margin: 2.2rem 0 0; }
+  .volver a { font-weight: 800; text-decoration: none; }
+  .volver a:hover { text-decoration: underline; }
+  @media (max-width: 720px) { .post-grid { grid-template-columns: 1fr; } }
+</style>

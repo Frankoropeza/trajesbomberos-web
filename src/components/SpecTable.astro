@@ -1,0 +1,69 @@
+---
+// SpecTable: ficha técnica agrupada. Tres columnas — campo, valor
+// y nota — para que el comprador pueda copiar el bloque completo
+// a su requisición o a su anexo técnico de licitación.
+// Responsive con scroll horizontal en móvil.
+import type { FichaFila } from '@lib/piezas';
+
+interface Props {
+  grupos: { grupo: string; filas: FichaFila[] }[];
+}
+const { grupos } = Astro.props;
+---
+<div class="spec">
+  {grupos.map((g) => (
+    <section class="spec__grupo">
+      <h3 class="spec__titulo">{g.grupo}</h3>
+      <div class="spec__scroll" tabindex="0" role="region" aria-label={`Ficha técnica: ${g.grupo}`}>
+        <table>
+          <tbody>
+            {g.filas.map((f) => (
+              <tr>
+                <th scope="row">{f.campo}</th>
+                <td class="spec__valor">{f.valor}</td>
+                <td class="spec__nota">{f.nota}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+</div>
+
+<style>
+  .spec__grupo { margin-bottom: 2rem; }
+  .spec__grupo:last-child { margin-bottom: 0; }
+  .spec__titulo {
+    margin: 0 0 0.8rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .spec__scroll { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+    background: var(--color-white);
+  }
+  th, td {
+    padding: 0.85rem 1rem 0.85rem 0;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: var(--border);
+    font-size: 0.88rem;
+  }
+  th[scope='row'] {
+    width: 26%;
+    font-weight: 700;
+    color: var(--color-dark);
+  }
+  .spec__valor { width: 38%; color: var(--color-dark); }
+  .spec__nota { color: var(--color-gray); font-size: 0.82rem; }
+  tr:last-child th, tr:last-child td { border-bottom: 0; }
+</style>
