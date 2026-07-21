@@ -4946,6 +4946,1677 @@ export const PIEZAS: Pieza[] = [
         "href": "/#normas"
       }
     ]
+  },
+  {
+    "slug": "chaqueton",
+    "familia": "aproximacion",
+    "nombreCard": "Chaquetón aluminizado de aproximación",
+    "nombre": "Chaquetón aluminizado de aproximación",
+    "seoTitle": "Chaquetón aluminizado de aproximación | ARFF | México",
+    "seoDescription": "Chaquetón aluminizado de aproximación con exterior reflejante sobre forro ignífugo, para trabajo prolongado cerca de calor radiante en ARFF y fundición.",
+    "keywords": [
+      "chaquetón aluminizado de aproximación",
+      "calor radiante",
+      "México"
+    ],
+    "eyebrow": "Pieza · Calor radiante",
+    "h1": "Chaquetón aluminizado de aproximación",
+    "h1Accent": "refleja, no aísla",
+    "lead": "Prenda superior del conjunto de proximidad: exterior aluminizado que refleja radiación térmica sobre un forro ignífugo, para trabajar cerca de la fuente.",
+    "descRight": [
+      "El aluminizado no aísla: refleja. Es una física distinta a la del traje estructural y por eso funciona donde el problema es el calor radiante de una fuente muy caliente y no el contacto con la flama. Aeropuerto, refinería, fundidora y horno industrial son sus escenarios.",
+      "Se usa sobre ropa de trabajo de fibra no inflamable, no sobre ropa común. Y es equipo de trabajo, no de rescate relámpago: está construido para que puedas agacharte, jalar y manipular herramienta durante toda la maniobra."
+    ],
+    "meta": [
+      "Exterior aluminizado",
+      "Uso prolongado",
+      "Bolsa para ERA",
+      "ISO 11612"
+    ],
+    "resumen": [
+      "El chaquetón de aproximación lleva una capa exterior aluminizada que devuelve la mayor parte de la radiación térmica que recibe, montada sobre un forro ignífugo cuya composición cambia según el nivel del conjunto: desde algodón tratado o neopreno en los niveles ligeros hasta aramida acolchada o fibra de vidrio en los industriales.",
+      "La diferencia con un traje de entrada es de propósito. Aproximación es para operar cerca; entrada es para meterse. Comprar uno creyendo que hace lo del otro es el error más peligroso de esta familia, y ocurre con más frecuencia de la que debería."
+    ],
+    "puntosClave": [
+      "El aluminizado refleja radiación; no es aislamiento por masa",
+      "Forro ignífugo cuya composición define el nivel del conjunto",
+      "Diseñado para uso prolongado con movilidad conservada",
+      "Se usa sobre ropa de trabajo de fibra no inflamable",
+      "Muchos modelos incorporan bolsa para el equipo de respiración",
+      "No sustituye a un traje de entrada a la flama"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/chaqueton-aluminizado-de-aproximacion.svg",
+        "alt": "Chaquetón aluminizado de aproximación para calor radiante"
+      },
+      {
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "alt": "Traje de aproximación aluminizado"
+      },
+      {
+        "src": "/images/productos/capucha-aluminizada-aproximacion.svg",
+        "alt": "Capucha aluminizada del conjunto de aproximación"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "Ropa de protección contra calor y flama"
+          },
+          {
+            "campo": "Referencia europea de aproximación",
+            "valor": "EN 1486",
+            "nota": "Para conjuntos de control de incendios"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible cuando un pliego la incorpora"
+          },
+          {
+            "campo": "Qué NO cubre",
+            "valor": "Ingreso a la flama",
+            "nota": "Para eso se requiere traje de entrada"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa exterior",
+            "valor": "Tejido aluminizado reflejante",
+            "nota": "Devuelve la mayor parte de la radiación recibida"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Algodón tratado, neopreno, aramida acolchada o fibra de vidrio",
+            "nota": "Define el nivel del conjunto"
+          },
+          {
+            "campo": "Bolsa para ERA",
+            "valor": "Integrada en varios modelos",
+            "nota": "Permite alojar el equipo de respiración bajo el chaquetón"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "Protegido, sin metal expuesto",
+            "nota": "El herraje expuesto se calienta"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Chica, mediana, grande y extragrande",
+            "nota": "Tallas mayores y a medida con recargo según fabricante"
+          },
+          {
+            "campo": "Nivel del conjunto",
+            "valor": "Según exposición y tiempo de trabajo",
+            "nota": "Se define con el escenario, no por catálogo"
+          },
+          {
+            "campo": "Complementos",
+            "valor": "Capucha, guantes y polainas de la misma familia",
+            "nota": "Mezclar niveles deja un eslabón débil"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Cuidado de la superficie",
+            "valor": "Evitar abrasión y limpieza agresiva",
+            "nota": "El aluminizado rayado pierde reflectancia"
+          },
+          {
+            "campo": "Almacenamiento",
+            "valor": "Colgado, sin doblar en el mismo pliegue",
+            "nota": "El doblez repetido daña la capa reflejante"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por pérdida de reflectancia o daño",
+            "nota": "Una superficie opaca ya no cumple su función"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaquetón con exterior aluminizado y forro especificado",
+      "Cierre protegido sin herraje expuesto",
+      "Bolsa para equipo de respiración si el modelo la incluye"
+    ],
+    "noIncluye": [
+      "Pantalón aluminizado: se cotiza por separado",
+      "Capucha con visor, guantes y polainas",
+      "Ropa de trabajo de fibra no inflamable que va debajo",
+      "Equipo de respiración autónoma"
+    ],
+    "errores": [
+      {
+        "error": "Comprarlo para entrar a la flama",
+        "realidad": "Aproximación es para trabajar cerca de la fuente. Para ingreso con engullimiento se necesita un traje de entrada, que es otro producto."
+      },
+      {
+        "error": "Usarlo sobre ropa común",
+        "realidad": "Va sobre ropa de trabajo de fibra no inflamable. Si lo que llevas debajo se funde, el conjunto deja de tener sentido."
+      },
+      {
+        "error": "Mezclar niveles del conjunto",
+        "realidad": "Un chaquetón de nivel alto con guante ligero deja el punto débil en la mano, que es justo lo que más se acerca a la fuente."
+      },
+      {
+        "error": "Limpiar la superficie con abrasivo",
+        "realidad": "El aluminizado rayado pierde reflectancia y no se recupera. Hay que seguir el procedimiento del fabricante al pie de la letra."
+      },
+      {
+        "error": "Guardarlo doblado siempre en el mismo pliegue",
+        "realidad": "El doblez repetido quiebra la capa reflejante. Se almacena colgado."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "ARFF en aeropuerto",
+        "desc": "Rescate y extinción en incidente de aeronave."
+      },
+      {
+        "titulo": "Refinería y petroquímica",
+        "desc": "Intervención cerca de fuentes de calor radiante intenso."
+      },
+      {
+        "titulo": "Fundición y colada de metal",
+        "desc": "Trabajo prolongado frente a metal fundido."
+      },
+      {
+        "titulo": "Hornos industriales",
+        "desc": "Maniobra y mantenimiento en caliente."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Cuál es la diferencia entre aproximación y entrada?",
+        "a": "Aproximación es para trabajar cerca de una fuente de calor radiante de forma prolongada, conservando movilidad. Entrada permite el ingreso breve a la flama, es multicapa, pesa mucho más y se usa por minutos. Comprar uno creyendo que hace lo del otro es el error más peligroso del catálogo."
+      },
+      {
+        "q": "¿Qué significa que refleja y no aísla?",
+        "a": "Que la superficie aluminizada devuelve la radiación térmica en lugar de absorberla y frenarla con masa. Por eso funciona tan bien frente a una fuente muy caliente a distancia y por eso pierde eficacia si la superficie se raya u opaca."
+      },
+      {
+        "q": "¿Qué llevo debajo?",
+        "a": "Ropa de trabajo de fibra no inflamable. El conjunto está diseñado para usarse sobre ropa industrial, no sobre ropa común. Si lo que va debajo es de fibra sintética que se funde, el chaquetón deja de cumplir su propósito."
+      },
+      {
+        "q": "¿Cómo elijo el nivel del conjunto?",
+        "a": "Por la exposición real y el tiempo de trabajo, no por catálogo. Un mantenimiento de horno con acercamientos cortos no requiere lo mismo que una guardia ARFF. Nos dices la operación y te ayudamos a ubicarla."
+      },
+      {
+        "q": "¿Puedo combinarlo con guantes estructurales?",
+        "a": "No es recomendable. Un chaquetón aluminizado con guante estructural deja el eslabón débil justo en la mano, que es lo que más se acerca a la fuente. El conjunto se arma con piezas del mismo nivel."
+      },
+      {
+        "q": "¿Cómo se limpia?",
+        "a": "Con el procedimiento del fabricante y nunca con abrasivos. La superficie aluminizada se daña con el frote y una vez rayada pierde reflectancia de forma permanente. Es el error de mantenimiento más costoso de esta familia."
+      },
+      {
+        "q": "¿Cómo se almacena?",
+        "a": "Colgado, no doblado. El doblez repetido en el mismo punto quiebra la capa reflejante y crea una línea que ya no refleja. En una estación con espacio limitado vale la pena resolver el perchero antes de comprar el equipo."
+      },
+      {
+        "q": "¿Cuándo se retira de servicio?",
+        "a": "Cuando la superficie perdió reflectancia por rayado, opacidad o quemadura, o cuando hay daño en el forro. Un aluminizado opaco se ve entero pero ya no hace su trabajo, y eso es más peligroso que una prenda visiblemente rota."
+      }
+    ],
+    "sinonimos": [
+      "chaquetón aluminizado",
+      "saco aluminizado de aproximación",
+      "chaqueta proximity",
+      "chaquetón reflejante de calor",
+      "proximity coat",
+      "chaquetón para calor radiante"
+    ],
+    "sinonimosNota": "Se pide como chaquetón o saco aluminizado. En catálogo de importación aparece como proximity coat o approach coat.",
+    "comparativa": {
+      "titulo": "Aproximación o traje de entrada",
+      "intro": "La decisión más importante de esta familia y la que más se equivoca.",
+      "columnas": [
+        "Criterio",
+        "Aproximación",
+        "Entrada a la flama"
+      ],
+      "filas": [
+        [
+          "Qué permite",
+          "Trabajar cerca de la fuente",
+          "Ingresar brevemente a la flama"
+        ],
+        [
+          "Duración de uso",
+          "Toda la maniobra",
+          "Minutos contados"
+        ],
+        [
+          "Movilidad",
+          "Conservada",
+          "Limitada a propósito"
+        ],
+        [
+          "Peso",
+          "Manejable",
+          "Considerablemente mayor"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalón aluminizado: la otra mitad del conjunto",
+        "href": "/trajes/aproximacion/pantalon/"
+      },
+      {
+        "label": "Capucha aluminizada con visor dorado",
+        "href": "/trajes/aproximacion/capucha/"
+      },
+      {
+        "label": "Trajes de entrada a la flama: cuándo se necesitan",
+        "href": "/trajes/entrada/"
+      }
+    ]
+  },
+  {
+    "slug": "pantalon",
+    "familia": "aproximacion",
+    "nombreCard": "Pantalón aluminizado de aproximación",
+    "nombre": "Pantalón aluminizado de aproximación",
+    "seoTitle": "Pantalón aluminizado de aproximación | proximity | México",
+    "seoDescription": "Pantalón aluminizado de aproximación con tirantes de ajuste y puños regulables: complemento del chaquetón en el mismo nivel de protección radiante.",
+    "keywords": [
+      "pantalón aluminizado de aproximación",
+      "proximity",
+      "México"
+    ],
+    "eyebrow": "Pieza · Calor radiante",
+    "h1": "Pantalón aluminizado de aproximación",
+    "h1Accent": "mismo nivel que el chaquetón",
+    "lead": "La mitad inferior del conjunto de proximidad, con tirantes para ajustar el largo y puños regulables que cierran sobre la bota o la polaina.",
+    "descRight": [
+      "Se cotiza por separado del chaquetón, pero no se elige por separado: ambas piezas deben ser del mismo nivel. Un pantalón ligero bajo un chaquetón industrial deja las piernas como el punto débil frente a la fuente de calor.",
+      "El ajuste del puño resuelve la interfaz con la bota o la polaina aluminizada. Es una zona pequeña que se pasa por alto y que en colada de metal es exactamente por donde entra la salpicadura."
+    ],
+    "meta": [
+      "Aluminizado",
+      "Tirantes de ajuste",
+      "Puños regulables",
+      "Rodilla opcional"
+    ],
+    "resumen": [
+      "El pantalón de aproximación repite la construcción del chaquetón: exterior aluminizado reflejante sobre forro ignífugo del nivel correspondiente. Los tirantes permiten ajustar el largo para que la valenciana caiga sobre la bota sin arrastrar.",
+      "En modelos pensados para trabajo de rodillas —mantenimiento de horno, colada— existe la opción de rodillas reforzadas. Conviene definirlo desde la orden porque, igual que en estructural, no es algo que se agregue después."
+    ],
+    "puntosClave": [
+      "Mismo nivel de conjunto que el chaquetón: no se mezclan",
+      "Tirantes para ajustar el largo sin que la valenciana arrastre",
+      "Puños regulables que cierran sobre bota o polaina",
+      "Opción de rodillas reforzadas en modelos industriales",
+      "Se usa sobre ropa de trabajo de fibra no inflamable",
+      "El aluminizado exige almacenamiento colgado"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/pantalon-aluminizado-de-aproximacion.svg",
+        "alt": "Pantalón aluminizado de aproximación"
+      },
+      {
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "alt": "Traje de aproximación aluminizado"
+      },
+      {
+        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "alt": "Guante aluminizado de aproximación"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "Ropa de protección contra calor y flama"
+          },
+          {
+            "campo": "Referencia europea",
+            "valor": "EN 1486",
+            "nota": "Conjuntos de control de incendios"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa exterior",
+            "valor": "Tejido aluminizado reflejante",
+            "nota": "Mismo material que el chaquetón del conjunto"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Según nivel del conjunto",
+            "nota": "Debe coincidir con el del chaquetón"
+          },
+          {
+            "campo": "Tirantes",
+            "valor": "De ajuste de largo",
+            "nota": "Evitan que la valenciana arrastre"
+          },
+          {
+            "campo": "Puños",
+            "valor": "Regulables",
+            "nota": "Interfaz con bota o polaina"
+          },
+          {
+            "campo": "Rodillas reforzadas",
+            "valor": "Opción de fábrica",
+            "nota": "Para trabajo de rodillas en caliente"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Chica a extragrande",
+            "nota": "A medida con recargo según fabricante"
+          },
+          {
+            "campo": "Nivel",
+            "valor": "El mismo que el chaquetón",
+            "nota": "No mezclar niveles"
+          },
+          {
+            "campo": "Largo",
+            "valor": "Ajustable con tirantes",
+            "nota": "Debe caer sobre la bota"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Almacenamiento",
+            "valor": "Colgado",
+            "nota": "El doblez repetido daña la capa reflejante"
+          },
+          {
+            "campo": "Limpieza",
+            "valor": "Según procedimiento del fabricante",
+            "nota": "Sin abrasivos"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por pérdida de reflectancia o daño",
+            "nota": "Superficie opaca ya no protege igual"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Pantalón con exterior aluminizado y forro del nivel especificado",
+      "Tirantes de ajuste",
+      "Puños regulables"
+    ],
+    "noIncluye": [
+      "Chaquetón aluminizado: se cotiza por separado",
+      "Polainas o botas aluminizadas",
+      "Ropa de trabajo de fibra no inflamable que va debajo"
+    ],
+    "errores": [
+      {
+        "error": "Comprar pantalón de un nivel y chaquetón de otro",
+        "realidad": "El conjunto protege al nivel de su pieza más débil. Un pantalón ligero deja las piernas expuestas frente a la misma fuente."
+      },
+      {
+        "error": "Dejar el largo sin ajustar",
+        "realidad": "Una valenciana que arrastra se daña rápido y además deja abierta la interfaz con la bota."
+      },
+      {
+        "error": "Omitir las rodillas reforzadas en trabajo de horno",
+        "realidad": "Si la operación implica hincarse frente a calor, esa zona se destruye primero. Es opción de fábrica, no se agrega después."
+      },
+      {
+        "error": "Guardarlo doblado",
+        "realidad": "El pliegue repetido quiebra la capa reflejante y deja una línea que ya no refleja."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "ARFF en aeropuerto",
+        "desc": "Parte del conjunto de proximidad para incidente de aeronave."
+      },
+      {
+        "titulo": "Colada de metal",
+        "desc": "Trabajo frente a metal fundido con riesgo de salpicadura."
+      },
+      {
+        "titulo": "Mantenimiento de hornos",
+        "desc": "Maniobra en caliente que a menudo implica trabajar hincado."
+      },
+      {
+        "titulo": "Petroquímica",
+        "desc": "Intervención cerca de fuentes de calor radiante."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Puedo comprar solo el pantalón?",
+        "a": "Sí, se cotiza por separado y es común reponer una pieza sin la otra. Lo que no conviene es comprarlo de un nivel distinto al del chaquetón: el conjunto protege al nivel de su pieza más débil."
+      },
+      {
+        "q": "¿Para qué sirven los tirantes?",
+        "a": "Para ajustar el largo, no solo para sostener. En este conjunto importa que la valenciana caiga sobre la bota sin arrastrar: si arrastra se destruye rápido y además deja abierta la interfaz con el calzado."
+      },
+      {
+        "q": "¿Cuándo conviene pedir rodillas reforzadas?",
+        "a": "Cuando la operación implica hincarse frente a la fuente de calor: mantenimiento de horno, trabajos de colada, reparación en caliente. Es opción de fábrica y hay que definirla en la orden."
+      },
+      {
+        "q": "¿Qué llevo debajo?",
+        "a": "Ropa de trabajo de fibra no inflamable, igual que con el chaquetón. El conjunto de proximidad está diseñado para usarse encima de ropa industrial, nunca sobre fibras que se funden."
+      },
+      {
+        "q": "¿Cómo se ajusta el puño?",
+        "a": "Con el sistema regulable del modelo, cerrando sobre la bota o la polaina aluminizada. Es una zona chica que se pasa por alto y que en colada de metal es justo por donde entra la salpicadura."
+      },
+      {
+        "q": "¿Se puede lavar en lavadora industrial?",
+        "a": "No sin confirmar el procedimiento del fabricante. La superficie aluminizada se daña con el frote mecánico. Cada fabricante indica su método y conviene tenerlo escrito en el procedimiento interno."
+      },
+      {
+        "q": "¿Cómo se guarda?",
+        "a": "Colgado. El doblez repetido en el mismo punto quiebra la capa reflejante. Si tu estación guarda el equipo en bolsa o en locker cerrado, vale la pena resolver el almacenamiento antes de comprar."
+      },
+      {
+        "q": "¿Cuándo se retira?",
+        "a": "Cuando la superficie está opaca, rayada o quemada, o cuando hay daño en el forro. Una prenda que perdió reflectancia se ve completa pero ya no cumple, y esa falsa sensación de protección es el riesgo."
+      }
+    ],
+    "sinonimos": [
+      "pantalón aluminizado",
+      "pantalón proximity",
+      "pantalón reflejante de calor",
+      "pantalón de aproximación",
+      "proximity pant",
+      "pantalón para calor radiante"
+    ],
+    "sinonimosNota": "Se pide como pantalón aluminizado o de aproximación. En catálogo de importación aparece como proximity pant.",
+    "comparativa": {
+      "titulo": "Con o sin rodillas reforzadas",
+      "intro": "La única opción de configuración que no se puede agregar después.",
+      "columnas": [
+        "Criterio",
+        "Con rodillas reforzadas",
+        "Sin refuerzo"
+      ],
+      "filas": [
+        [
+          "Trabajo hincado",
+          "Resiste el desgaste",
+          "La zona se destruye primero"
+        ],
+        [
+          "Peso",
+          "Ligeramente mayor",
+          "Menor"
+        ],
+        [
+          "Se agrega después",
+          "No: es opción de fábrica",
+          "No aplica"
+        ],
+        [
+          "Cuándo conviene",
+          "Horno, colada, mantenimiento en caliente",
+          "Guardia y maniobra de pie"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaquetón aluminizado: la otra mitad del conjunto",
+        "href": "/trajes/aproximacion/chaqueton/"
+      },
+      {
+        "label": "Polainas aluminizadas para bota",
+        "href": "/trajes/aproximacion/polainas/"
+      },
+      {
+        "label": "Cómo especificar sin dejar huecos",
+        "href": "/#especificar"
+      }
+    ]
+  },
+  {
+    "slug": "capucha",
+    "familia": "aproximacion",
+    "nombreCard": "Capucha aluminizada con visor dorado",
+    "nombre": "Capucha aluminizada con visor dorado",
+    "seoTitle": "Capucha aluminizada con visor dorado | proximity | México",
+    "seoDescription": "Capucha aluminizada con visor dorado y casco duro de ajuste dentado: protege cabeza, cara y cuello del calor radiante extremo en trabajo de proximidad.",
+    "keywords": [
+      "capucha aluminizada con visor dorado",
+      "proximity",
+      "México"
+    ],
+    "eyebrow": "Pieza · Calor radiante",
+    "h1": "Capucha aluminizada con visor dorado",
+    "h1Accent": "protege cara y cuello",
+    "lead": "Casco duro con ajuste dentado, visor con película dorada y cobertor que abarca todo el hombro: la pieza que protege la zona más expuesta del conjunto.",
+    "descRight": [
+      "La cara es lo que más se acerca a la fuente y lo que menos tolera la radiación. El visor con película dorada reduce la carga térmica y el deslumbramiento sin sacrificar la visión, que es justo el equilibrio difícil de esta pieza.",
+      "El cobertor de hombro no es un adorno: sella la unión entre la capucha y el chaquetón. Sin él queda una franja descubierta en la nuca y los hombros, que es donde más se nota el calor cuando trabajas de espaldas a la fuente."
+    ],
+    "meta": [
+      "Visor con película dorada",
+      "Casco duro integrado",
+      "Cobertor de hombro",
+      "Ajuste dentado"
+    ],
+    "resumen": [
+      "La capucha de aproximación integra un casco duro con sistema de ajuste dentado, la superficie aluminizada del conjunto y un visor tratado con película dorada. Según el nivel, el visor puede ser de vidrio laminado multicapa o de policarbonato con película, y en los niveles altos se usan visores de doble capa.",
+      "En algunos conjuntos la capucha es opcional y en otros viene incluida. Es un dato que conviene aclarar en la cotización porque cambia bastante el precio total del equipo y porque comprarla suelta después obliga a verificar compatibilidad."
+    ],
+    "puntosClave": [
+      "Visor con película dorada: reduce carga térmica y deslumbramiento",
+      "Casco duro con sistema de ajuste dentado",
+      "Cobertor de hombro que sella la unión con el chaquetón",
+      "Tipo de visor según nivel: laminado, policarbonato o doble capa",
+      "En algunos conjuntos es opcional y en otros viene incluida",
+      "El visor rayado pierde eficacia: es consumible"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/capucha-aluminizada-con-visor-dorado.svg",
+        "alt": "Capucha aluminizada con visor dorado de aproximación"
+      },
+      {
+        "src": "/images/productos/capucha-aluminizada-aproximacion.svg",
+        "alt": "Capucha aluminizada del conjunto de aproximación"
+      },
+      {
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "alt": "Traje de aproximación aluminizado completo"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "Como elemento del conjunto"
+          },
+          {
+            "campo": "Referencia europea",
+            "valor": "EN 1486",
+            "nota": "Conjuntos de control de incendios"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Casco",
+            "valor": "Duro, con ajuste dentado",
+            "nota": "Integrado a la capucha"
+          },
+          {
+            "campo": "Visor",
+            "valor": "Con película dorada",
+            "nota": "Vidrio laminado, policarbonato o doble capa según nivel"
+          },
+          {
+            "campo": "Cobertor",
+            "valor": "Abarca todo el hombro",
+            "nota": "Sella la unión con el chaquetón"
+          },
+          {
+            "campo": "Exterior",
+            "valor": "Aluminizado del mismo nivel del conjunto",
+            "nota": "No mezclar niveles"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Inclusión",
+            "valor": "Opcional o incluida según conjunto",
+            "nota": "Aclararlo en la cotización"
+          },
+          {
+            "campo": "Tipo de visor",
+            "valor": "Según nivel de exposición",
+            "nota": "El doble capa es para exposición mayor"
+          },
+          {
+            "campo": "Compatibilidad",
+            "valor": "Con el equipo de respiración si aplica",
+            "nota": "Verificar antes de comprar"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Visor",
+            "valor": "Consumible",
+            "nota": "Se reemplaza cuando se raya u opaca"
+          },
+          {
+            "campo": "Limpieza",
+            "valor": "Sin abrasivos ni solventes",
+            "nota": "Dañan la película dorada"
+          },
+          {
+            "campo": "Almacenamiento",
+            "valor": "Sin apoyar el visor sobre superficie",
+            "nota": "Se raya con el simple contacto"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Capucha aluminizada con casco duro integrado",
+      "Visor con película dorada del tipo especificado",
+      "Cobertor de hombro"
+    ],
+    "noIncluye": [
+      "Chaquetón y pantalón: se cotizan por separado",
+      "Visor de repuesto",
+      "Equipo de respiración autónoma"
+    ],
+    "errores": [
+      {
+        "error": "Comprar el conjunto sin verificar si incluye capucha",
+        "realidad": "En varios niveles es opcional. Descubrirlo al recibir el pedido descuadra el presupuesto y deja el conjunto incompleto."
+      },
+      {
+        "error": "Limpiar el visor con solvente o abrasivo",
+        "realidad": "La película dorada se daña y no se recupera. El visor se limpia con el método del fabricante y nada más."
+      },
+      {
+        "error": "Apoyar el casco sobre el visor al guardarlo",
+        "realidad": "Se raya con el simple contacto. Un visor rayado difracta la luz y reduce visión justo cuando más se necesita."
+      },
+      {
+        "error": "Mezclar niveles entre capucha y chaquetón",
+        "realidad": "La cara es la zona más expuesta del cuerpo en esta operación. No es el lugar para bajar de nivel."
+      },
+      {
+        "error": "No presupuestar visores de repuesto",
+        "realidad": "Es consumible. Sin repuesto en almacén, una capucha con visor dañado saca de servicio el conjunto completo."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "ARFF en aeropuerto",
+        "desc": "Aproximación a incidente de aeronave con exposición frontal."
+      },
+      {
+        "titulo": "Colada y fundición",
+        "desc": "Trabajo frente a metal fundido con radiación directa a la cara."
+      },
+      {
+        "titulo": "Hornos y vidrio",
+        "desc": "Mantenimiento en caliente con exposición sostenida."
+      },
+      {
+        "titulo": "Petroquímica",
+        "desc": "Maniobra cerca de fuentes de calor radiante intenso."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué el visor es dorado?",
+        "a": "La película dorada refleja parte de la radiación infrarroja y reduce el deslumbramiento sin cortar demasiado la visión. Es el equilibrio que hace posible trabajar mirando de frente a una fuente muy caliente."
+      },
+      {
+        "q": "¿Viene incluida en el conjunto?",
+        "a": "Depende del nivel. En los conjuntos ligeros suele ser opcional y en los industriales viene incluida. Es un dato que aclaramos siempre en la cotización, porque cambia bastante el total y deja el conjunto incompleto si se pasa por alto."
+      },
+      {
+        "q": "¿Qué diferencia hay entre los tipos de visor?",
+        "a": "El vidrio laminado multicapa se usa en conjuntos de control de incendios; el policarbonato con película dorada es más ligero; el de doble capa se reserva para exposiciones mayores. La elección va con el nivel del conjunto, no por gusto."
+      },
+      {
+        "q": "¿Cómo se limpia?",
+        "a": "Con el método que indica el fabricante y jamás con solventes ni abrasivos. La película dorada es una capa muy delgada: un limpiador agresivo la retira y el visor queda inservible aunque el vidrio esté entero."
+      },
+      {
+        "q": "¿El visor se reemplaza?",
+        "a": "Sí, es consumible. Se cambia cuando se raya, se opaca o presenta daño. Conviene tener repuestos en almacén: sin visor en condiciones, el conjunto completo sale de servicio."
+      },
+      {
+        "q": "¿Para qué sirve el cobertor de hombro?",
+        "a": "Para sellar la unión entre la capucha y el chaquetón. Sin él queda una franja descubierta en nuca y hombros, que es donde más se siente el calor cuando trabajas de espaldas a la fuente."
+      },
+      {
+        "q": "¿Es compatible con equipo de respiración?",
+        "a": "Depende del modelo y del ERA. Algunos conjuntos están diseñados para alojar el equipo bajo el chaquetón con la capucha encima; otros no. Hay que verificarlo antes de comprar, no después."
+      },
+      {
+        "q": "¿Cómo se almacena?",
+        "a": "Sin apoyar el visor sobre ninguna superficie y sin objetos encima. El visor se raya con el simple contacto y el rayado no se quita. Lo ideal es colgarla o guardarla en su funda si el fabricante la provee."
+      }
+    ],
+    "sinonimos": [
+      "capucha aluminizada",
+      "escafandra aluminizada",
+      "capucha con visor dorado",
+      "capucha proximity",
+      "aluminized hood",
+      "capucha para calor radiante"
+    ],
+    "sinonimosNota": "En México se pide como capucha o escafandra aluminizada. En catálogo de importación aparece como aluminized hood o proximity hood.",
+    "comparativa": {
+      "titulo": "Visor de una capa o de doble capa",
+      "intro": "La elección del visor define hasta dónde puedes acercarte con seguridad.",
+      "columnas": [
+        "Criterio",
+        "Visor de una capa",
+        "Visor de doble capa"
+      ],
+      "filas": [
+        [
+          "Exposición admitida",
+          "Moderada",
+          "Mayor"
+        ],
+        [
+          "Peso",
+          "Menor",
+          "Mayor"
+        ],
+        [
+          "Visión",
+          "Muy buena",
+          "Buena"
+        ],
+        [
+          "Cuándo conviene",
+          "Aproximación ligera e industrial",
+          "Exposición alta y sostenida"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaquetón aluminizado del conjunto",
+        "href": "/trajes/aproximacion/chaqueton/"
+      },
+      {
+        "label": "Guantes aluminizados de tres dedos",
+        "href": "/trajes/aproximacion/guantes/"
+      },
+      {
+        "label": "Trajes de entrada: capucha de nivel superior",
+        "href": "/trajes/entrada/"
+      }
+    ]
+  },
+  {
+    "slug": "guantes",
+    "familia": "aproximacion",
+    "nombreCard": "Guantes aluminizados de tres dedos",
+    "nombre": "Guantes aluminizados de tres dedos",
+    "seoTitle": "Guantes aluminizados para calor radiante | manopla | México",
+    "seoDescription": "Guantes aluminizados para calor radiante en manopla de tres dedos: dorso reflejante y palma aislante, máxima protección de la mano a costa de destreza.",
+    "keywords": [
+      "guantes aluminizados para calor radiante",
+      "manopla",
+      "México"
+    ],
+    "eyebrow": "Pieza · Calor radiante",
+    "h1": "Guantes aluminizados para calor radiante",
+    "h1Accent": "manopla de tres dedos",
+    "lead": "Dorso aluminizado y palma resistente al calor, en configuración de tres dedos: cambia destreza por aislamiento donde la mano es lo que más se acerca.",
+    "descRight": [
+      "La mano es la parte del cuerpo que más se aproxima a la fuente en casi toda maniobra de proximidad. Por eso los conjuntos de nivel alto usan manopla de tres dedos: menos costuras, menos superficie expuesta y más masa aislante alrededor de los dedos.",
+      "Es un cambio consciente: se pierde destreza fina. Si tu operación requiere manipular herramienta pequeña, hay que resolverlo con el diseño de la maniobra, no bajando el nivel del guante."
+    ],
+    "meta": [
+      "Dorso aluminizado",
+      "Palma aislante",
+      "Tres dedos",
+      "Forro térmico"
+    ],
+    "resumen": [
+      "El guante de aproximación combina un dorso aluminizado que refleja la radiación con una palma de material resistente al calor por contacto, porque la mano no solo recibe radiación: también toca superficies calientes. Debajo lleva forro térmico.",
+      "La configuración de tres dedos —índice separado y los otros tres juntos— es un compromiso entre la manopla total, que aísla más pero no permite agarrar nada, y el guante de cinco dedos, que da destreza pero multiplica las costuras y la superficie expuesta."
+    ],
+    "puntosClave": [
+      "Dorso aluminizado que refleja radiación",
+      "Palma de material resistente al calor por contacto",
+      "Configuración de tres dedos: equilibrio entre aislamiento y agarre",
+      "Forro térmico interior",
+      "Debe ser del mismo nivel que el resto del conjunto",
+      "Se prueba con la maniobra real antes de comprar el lote"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/guantes-aluminizados-de-tres-dedos.svg",
+        "alt": "Guantes aluminizados de tres dedos para calor radiante"
+      },
+      {
+        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "alt": "Guante aluminizado de aproximación"
+      },
+      {
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "alt": "Traje de aproximación aluminizado"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612 como parte del conjunto",
+            "nota": "Los guantes pueden tener referencia propia según fabricante"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Dorso",
+            "valor": "Tejido aluminizado",
+            "nota": "Refleja radiación"
+          },
+          {
+            "campo": "Palma",
+            "valor": "Material resistente al calor por contacto",
+            "nota": "La mano también toca superficies calientes"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Térmico",
+            "nota": "Composición según nivel del conjunto"
+          },
+          {
+            "campo": "Configuración",
+            "valor": "Tres dedos",
+            "nota": "Índice separado; los otros tres juntos"
+          },
+          {
+            "campo": "Puño",
+            "valor": "Largo, para traslapar con la manga",
+            "nota": "No debe quedar piel expuesta"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Según fabricante",
+            "nota": "Probar con la maniobra real antes del lote"
+          },
+          {
+            "campo": "Nivel",
+            "valor": "El mismo del conjunto",
+            "nota": "El guante suele ser el eslabón débil"
+          },
+          {
+            "campo": "Alternativa",
+            "valor": "Cinco dedos en niveles ligeros",
+            "nota": "Más destreza, menos aislamiento"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Inspección",
+            "valor": "Antes de cada uso",
+            "nota": "Costuras abiertas y forro comprimido"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Más frecuente que el traje",
+            "nota": "Es la pieza que más se maltrata"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Dorso opaco, palma endurecida o costura abierta",
+            "nota": "No se repara"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Par de guantes con dorso aluminizado y palma aislante",
+      "Forro térmico interior",
+      "Puño largo para traslape con la manga"
+    ],
+    "noIncluye": [
+      "Guante interior de contacto si el fabricante lo maneja aparte",
+      "Chaquetón, pantalón y capucha del conjunto"
+    ],
+    "errores": [
+      {
+        "error": "Usar guante estructural con traje aluminizado",
+        "realidad": "Deja el eslabón débil justo en la mano, que es lo que más se acerca a la fuente. El conjunto se arma con piezas del mismo nivel."
+      },
+      {
+        "error": "Comprar el lote sin probar la maniobra",
+        "realidad": "Un guante que no permite ejecutar la tarea termina fuera de uso. Hay que probarlo con la herramienta y el procedimiento reales."
+      },
+      {
+        "error": "Elegir cinco dedos para no perder destreza",
+        "realidad": "En niveles altos multiplica costuras y superficie expuesta. Si la maniobra exige destreza fina, se resuelve rediseñando la tarea."
+      },
+      {
+        "error": "Ignorar el traslape con la manga",
+        "realidad": "Un puño corto deja una franja de muñeca descubierta, que es de las quemaduras más frecuentes en esta operación."
+      },
+      {
+        "error": "Reutilizarlos con el forro comprimido",
+        "realidad": "El forro aplastado dejó de aislar aunque el guante se vea entero. Es motivo de retiro."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Colada de metal",
+        "desc": "Manipulación de herramienta frente a metal fundido."
+      },
+      {
+        "titulo": "ARFF en aeropuerto",
+        "desc": "Operación de línea de manguera en aproximación."
+      },
+      {
+        "titulo": "Hornos industriales",
+        "desc": "Maniobra y mantenimiento con contacto de superficies calientes."
+      },
+      {
+        "titulo": "Vidrio y cerámica",
+        "desc": "Procesos con radiación sostenida a corta distancia."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué tres dedos y no cinco?",
+        "a": "Porque menos separaciones significa menos costuras, menos superficie expuesta y más masa aislante alrededor de los dedos. El índice queda libre para agarrar y los otros tres se agrupan. Es el compromiso estándar en conjuntos de nivel alto."
+      },
+      {
+        "q": "¿Pierdo destreza?",
+        "a": "Sí, y hay que asumirlo. Si tu maniobra requiere manipular piezas pequeñas, la solución no es bajar el nivel del guante sino rediseñar la tarea: preparar la herramienta antes, usar extensiones o repartir el trabajo."
+      },
+      {
+        "q": "¿Puedo usar guantes estructurales?",
+        "a": "No es recomendable. Un guante estructural con traje aluminizado deja el punto débil en la mano, que es justo lo que más se acerca a la fuente en casi toda maniobra de proximidad."
+      },
+      {
+        "q": "¿Cómo elijo la talla?",
+        "a": "Probando con la maniobra real, no con la mano en reposo. Un guante que ajusta bien parado en el almacén puede resultar imposible para operar una válvula o sostener una lanza. Pide muestra antes de comprar el lote."
+      },
+      {
+        "q": "¿Cada cuánto se reponen?",
+        "a": "Más seguido que el resto del conjunto: es la pieza que más se maltrata. Se retiran cuando el dorso se opaca, la palma se endurece o alguna costura se abre. No se reparan."
+      },
+      {
+        "q": "¿Por qué importa el largo del puño?",
+        "a": "Porque tiene que traslapar con la manga del chaquetón. Si queda corto, expone la muñeca, que es una de las zonas de quemadura más frecuentes en trabajo de proximidad."
+      },
+      {
+        "q": "¿Se usan con guante interior?",
+        "a": "Algunos fabricantes lo manejan y otros lo integran como forro. Si tu operación implica sudoración alta, un guante interior de contacto facilita quitarse el aluminizado sin pelear con él."
+      },
+      {
+        "q": "¿Cómo sé que ya no protegen?",
+        "a": "Dorso opaco o rayado, palma endurecida o vitrificada, forro comprimido, costura abierta. Cualquiera de esas condiciones es motivo de retiro aunque el guante se vea completo por fuera."
+      }
+    ],
+    "sinonimos": [
+      "guantes aluminizados",
+      "manopla aluminizada",
+      "guantes proximity",
+      "guante para calor radiante",
+      "aluminized gloves",
+      "guante de fundición"
+    ],
+    "sinonimosNota": "Se piden como guantes aluminizados o manoplas. En catálogo de importación aparecen como aluminized gloves o proximity mitts.",
+    "comparativa": {
+      "titulo": "Tres dedos o cinco dedos",
+      "intro": "El compromiso entre aislamiento y destreza, que se resuelve con la maniobra real.",
+      "columnas": [
+        "Criterio",
+        "Tres dedos",
+        "Cinco dedos"
+      ],
+      "filas": [
+        [
+          "Aislamiento",
+          "Mayor",
+          "Menor: más costuras"
+        ],
+        [
+          "Destreza",
+          "Limitada",
+          "Buena"
+        ],
+        [
+          "Nivel de conjunto",
+          "Alto e industrial",
+          "Ligero"
+        ],
+        [
+          "Cuándo conviene",
+          "Exposición alta o sostenida",
+          "Maniobra que exige manipulación"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaquetón aluminizado del conjunto",
+        "href": "/trajes/aproximacion/chaqueton/"
+      },
+      {
+        "label": "Capucha aluminizada con visor dorado",
+        "href": "/trajes/aproximacion/capucha/"
+      },
+      {
+        "label": "Errores frecuentes al comprar traje",
+        "href": "/#errores"
+      }
+    ]
+  },
+  {
+    "slug": "polainas",
+    "familia": "aproximacion",
+    "nombreCard": "Polainas aluminizadas para bota",
+    "nombre": "Polainas aluminizadas para bota",
+    "seoTitle": "Polainas aluminizadas para bota | proximity | México",
+    "seoDescription": "Polainas aluminizadas para bota que se fijan con velcro sobre el calzado de trabajo: lo cubren del calor radiante sin sustituirlo, en conjuntos de proximidad.",
+    "keywords": [
+      "polainas aluminizadas para bota",
+      "cobertores de bota",
+      "México"
+    ],
+    "eyebrow": "Pieza · Calor radiante",
+    "h1": "Polainas aluminizadas para bota",
+    "h1Accent": "van sobre el calzado",
+    "lead": "Cobertores aluminizados que se fijan con velcro detrás de la bota. Protegen el pie del calor radiante sin sustituir al calzado de seguridad.",
+    "descRight": [
+      "Es la pieza que más se malinterpreta del conjunto: no son botas. Van encima del calzado de trabajo que ya usas, y por eso permiten armar un conjunto de proximidad sin cambiar toda la dotación de calzado de la planta.",
+      "El punto de atención es la interfaz con el pantalón. La polaina debe quedar por dentro de la valenciana o cerrada sobre ella según el diseño, porque si queda una abertura hacia arriba, la salpicadura entra directo al pie."
+    ],
+    "meta": [
+      "Se usa sobre la bota",
+      "Cierre de velcro",
+      "Aluminizado",
+      "No sustituye calzado"
+    ],
+    "resumen": [
+      "Las polainas aluminizadas cubren empeine, tobillo y parte de la caña de la bota con la misma superficie reflejante del resto del conjunto. Se sujetan por detrás con tiras de velcro, lo que permite colocarlas y retirarlas rápido sin descalzarse.",
+      "Existen como alternativa a la bota aluminizada completa, que se usa en los niveles industriales del conjunto. La polaina es más económica y flexible; la bota integrada protege más y evita la interfaz."
+    ],
+    "puntosClave": [
+      "Se colocan sobre la bota de trabajo, no la reemplazan",
+      "Sujeción con tiras de velcro por la parte posterior",
+      "Permiten armar el conjunto sin cambiar el calzado de la planta",
+      "La interfaz con la valenciana del pantalón es el punto crítico",
+      "Alternativa económica a la bota aluminizada integrada",
+      "Se retiran rápido sin descalzarse"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/polainas-aluminizadas-para-bota.svg",
+        "alt": "Polainas aluminizadas para bota de trabajo"
+      },
+      {
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "alt": "Traje de aproximación aluminizado"
+      },
+      {
+        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "alt": "Guante aluminizado de aproximación"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612 como parte del conjunto",
+            "nota": "No sustituyen la certificación del calzado"
+          },
+          {
+            "campo": "Calzado base",
+            "valor": "Debe cumplir su propia norma",
+            "nota": "La polaina no aporta protección mecánica al pie"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Superficie",
+            "valor": "Tejido aluminizado del nivel del conjunto",
+            "nota": "Misma familia que chaquetón y pantalón"
+          },
+          {
+            "campo": "Cobertura",
+            "valor": "Empeine, tobillo y parte de la caña",
+            "nota": "Según modelo"
+          },
+          {
+            "campo": "Sujeción",
+            "valor": "Tiras de velcro por la parte posterior",
+            "nota": "Colocación y retiro rápidos"
+          },
+          {
+            "campo": "Suela",
+            "valor": "No tienen",
+            "nota": "No son calzado: van sobre la bota"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por número de calzado",
+            "nota": "Deben ajustar sobre la bota real, no sobre el pie"
+          },
+          {
+            "campo": "Interfaz con pantalón",
+            "valor": "Por dentro o cerradas sobre la valenciana",
+            "nota": "Según diseño del conjunto"
+          },
+          {
+            "campo": "Alternativa",
+            "valor": "Bota aluminizada integrada",
+            "nota": "En niveles industriales del conjunto"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Desgaste",
+            "valor": "Alto: contacto con suelo",
+            "nota": "Es de las piezas que más rápido se opacan"
+          },
+          {
+            "campo": "Almacenamiento",
+            "valor": "Extendidas, sin doblar",
+            "nota": "El pliegue daña la capa reflejante"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por pérdida de reflectancia o velcro vencido",
+            "nota": "Una polaina que se suelta en maniobra es un riesgo"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Par de polainas aluminizadas con sistema de velcro"
+    ],
+    "noIncluye": [
+      "Botas de trabajo: la polaina va encima",
+      "Pantalón aluminizado",
+      "Bota aluminizada integrada, que es otra pieza"
+    ],
+    "errores": [
+      {
+        "error": "Comprarlas creyendo que son botas",
+        "realidad": "No tienen suela ni protección mecánica. Van sobre el calzado de seguridad que ya usas, no lo sustituyen."
+      },
+      {
+        "error": "Dejar abierta la interfaz con la valenciana",
+        "realidad": "Si queda una abertura hacia arriba, la salpicadura de metal o la brasa entran directo al pie."
+      },
+      {
+        "error": "Pedir la talla por número de pie",
+        "realidad": "Deben ajustar sobre la bota puesta, que abulta bastante más. Hay que dar el número de calzado y el tipo de bota."
+      },
+      {
+        "error": "Guardarlas dobladas",
+        "realidad": "El pliegue quiebra la capa reflejante. Se guardan extendidas o colgadas, como el resto del conjunto."
+      },
+      {
+        "error": "Seguir usándolas con el velcro vencido",
+        "realidad": "Una polaina que se suelta a media maniobra deja el pie expuesto en el peor momento y además es un tropiezo."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Colada de metal",
+        "desc": "Protección del pie frente a salpicadura y radiación."
+      },
+      {
+        "titulo": "ARFF en aeropuerto",
+        "desc": "Complemento del conjunto sin cambiar la bota estructural."
+      },
+      {
+        "titulo": "Hornos industriales",
+        "desc": "Trabajo de pie frente a fuente de calor sostenido."
+      },
+      {
+        "titulo": "Conjunto ligero",
+        "desc": "Alternativa económica a la bota aluminizada integrada."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Son botas?",
+        "a": "No. No tienen suela ni protección mecánica: van encima del calzado de seguridad que ya usas. Por eso permiten armar un conjunto de proximidad sin cambiar toda la dotación de botas de la planta."
+      },
+      {
+        "q": "¿Cómo se ajustan a la bota?",
+        "a": "Con tiras de velcro por la parte posterior, que se cierran alrededor de la caña. La colocación y el retiro son rápidos y no hay que descalzarse, que es una de sus ventajas prácticas."
+      },
+      {
+        "q": "¿Cómo pido la talla?",
+        "a": "Por número de calzado y tipo de bota. Deben ajustar sobre la bota puesta, que abulta bastante más que el pie: pedirlas por número de pie es un error frecuente y llegan chicas."
+      },
+      {
+        "q": "¿Van por dentro o por fuera del pantalón?",
+        "a": "Depende del diseño del conjunto: en algunos la valenciana cae sobre la polaina y en otros la polaina cierra sobre la valenciana. Lo que no puede quedar es una abertura hacia arriba, porque ahí entra la salpicadura."
+      },
+      {
+        "q": "¿Cuándo conviene bota aluminizada en vez de polaina?",
+        "a": "Cuando el nivel de exposición es alto y sostenido. La bota integrada protege más y elimina la interfaz, pero obliga a cambiar el calzado. La polaina es la opción flexible y económica para niveles ligeros e industriales."
+      },
+      {
+        "q": "¿Se desgastan rápido?",
+        "a": "Más que el resto del conjunto, porque están en contacto con el suelo. Son de las primeras piezas que se opacan por rayado, y una superficie opaca ya no refleja igual."
+      },
+      {
+        "q": "¿Cómo se guardan?",
+        "a": "Extendidas o colgadas, nunca dobladas. El pliegue repetido quiebra la capa reflejante y deja una línea permanente que pierde reflectancia."
+      },
+      {
+        "q": "¿Cuándo se retiran?",
+        "a": "Cuando la superficie perdió reflectancia por rayado u opacidad, o cuando el velcro ya no sujeta con firmeza. Una polaina que se suelta a media maniobra es un riesgo doble: deja el pie expuesto y provoca tropiezos."
+      }
+    ],
+    "sinonimos": [
+      "polainas aluminizadas",
+      "cobertores de bota",
+      "cubrebotas aluminizado",
+      "polainas proximity",
+      "boot covers aluminizados",
+      "protector de bota para calor"
+    ],
+    "sinonimosNota": "Se piden como polainas o cobertores de bota. En catálogo de importación aparecen como aluminized boot covers.",
+    "comparativa": {
+      "titulo": "Polainas o bota aluminizada integrada",
+      "intro": "Dos formas de proteger el pie en un conjunto de proximidad.",
+      "columnas": [
+        "Criterio",
+        "Polainas sobre la bota",
+        "Bota aluminizada integrada"
+      ],
+      "filas": [
+        [
+          "Inversión",
+          "Menor: aprovecha el calzado existente",
+          "Mayor: reemplaza la bota"
+        ],
+        [
+          "Interfaz",
+          "Existe y hay que cuidarla",
+          "Eliminada por diseño"
+        ],
+        [
+          "Nivel de exposición",
+          "Ligero e industrial",
+          "Alto y sostenido"
+        ],
+        [
+          "Flexibilidad",
+          "Se comparten entre elementos",
+          "Personal, por talla de pie"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalón aluminizado: cuida la interfaz con la polaina",
+        "href": "/trajes/aproximacion/pantalon/"
+      },
+      {
+        "label": "Chaquetón aluminizado del conjunto",
+        "href": "/trajes/aproximacion/chaqueton/"
+      },
+      {
+        "label": "Comparar las seis familias de traje",
+        "href": "/trajes/"
+      }
+    ]
+  },
+  {
+    "slug": "delantal",
+    "familia": "aproximacion",
+    "nombreCard": "Delantal aluminizado",
+    "nombre": "Delantal aluminizado",
+    "seoTitle": "Delantal aluminizado para fundición | calor | México",
+    "seoDescription": "Delantal aluminizado para fundición: protección frontal contra calor radiante y salpicadura de metal, donde no se justifica un conjunto completo.",
+    "keywords": [
+      "delantal aluminizado para fundición",
+      "calor radiante",
+      "México"
+    ],
+    "eyebrow": "Pieza · Calor radiante",
+    "h1": "Delantal aluminizado para fundición",
+    "h1Accent": "protección frontal",
+    "lead": "Cobertura del frente del cuerpo contra radiación y salpicadura, para puestos donde la exposición es puntual y no se justifica un conjunto completo.",
+    "descRight": [
+      "No todo puesto expuesto a calor radiante necesita un conjunto de proximidad completo. En muchas operaciones de fundición, forja o vidrio la exposición es frontal y acotada, y ahí el delantal resuelve con mucho menos peso y costo.",
+      "Es también la pieza que permite escalar la protección por etapas: se empieza con delantal y mangas donde el riesgo lo permite, y se sube a conjunto completo donde el análisis lo indica."
+    ],
+    "meta": [
+      "Protección frontal",
+      "Aluminizado",
+      "Fundición y forja",
+      "Menor carga que el conjunto"
+    ],
+    "resumen": [
+      "El delantal aluminizado cubre pecho, abdomen y muslos con la misma superficie reflejante del conjunto de proximidad. Se sujeta con tirantes de cuello y cintura, y su longitud se elige según hasta dónde llegue la exposición del puesto.",
+      "Su límite es evidente: no protege espalda, brazos ni cabeza. Por eso se usa en puestos donde el operador siempre trabaja de frente a la fuente y donde el análisis de riesgo descarta exposición envolvente."
+    ],
+    "puntosClave": [
+      "Cubre pecho, abdomen y muslos: protección frontal",
+      "Misma superficie aluminizada del conjunto de proximidad",
+      "Mucho menor carga térmica y de peso que el conjunto completo",
+      "Solo sirve si la exposición es siempre frontal",
+      "Permite escalar la protección por etapas",
+      "Se complementa con mangas y careta según el puesto"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/delantal-aluminizado.svg",
+        "alt": "Delantal aluminizado para fundición y calor radiante"
+      },
+      {
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "alt": "Traje de aproximación aluminizado"
+      },
+      {
+        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "alt": "Guante aluminizado de aproximación"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia habitual",
+            "valor": "ISO 11612",
+            "nota": "Ropa de protección contra calor y flama"
+          },
+          {
+            "campo": "Alcance",
+            "valor": "Protección frontal parcial",
+            "nota": "No sustituye a un conjunto completo"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "El EPP se define por análisis de riesgo (NOM-017-STPS-2024)"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Superficie",
+            "valor": "Tejido aluminizado reflejante",
+            "nota": "Mismo material del conjunto de proximidad"
+          },
+          {
+            "campo": "Cobertura",
+            "valor": "Pecho, abdomen y muslos",
+            "nota": "Largo según puesto"
+          },
+          {
+            "campo": "Sujeción",
+            "valor": "Tirantes de cuello y cintura",
+            "nota": "Ajustables"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Según nivel de exposición",
+            "nota": "Verificar en la ficha del fabricante"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Largo",
+            "valor": "Según hasta dónde llega la exposición",
+            "nota": "Se define con el puesto, no por catálogo"
+          },
+          {
+            "campo": "Ancho",
+            "valor": "Según cobertura lateral requerida",
+            "nota": "Un delantal angosto deja los costados expuestos"
+          },
+          {
+            "campo": "Complementos",
+            "valor": "Mangas y careta según el puesto",
+            "nota": "Se cotizan aparte"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Almacenamiento",
+            "valor": "Colgado",
+            "nota": "El doblez daña la capa reflejante"
+          },
+          {
+            "campo": "Limpieza",
+            "valor": "Según procedimiento del fabricante",
+            "nota": "Sin abrasivos"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por opacidad, perforación o quemadura",
+            "nota": "La salpicadura perfora antes que el desgaste"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Delantal aluminizado con tirantes ajustables",
+      "Largo y ancho especificados en la orden"
+    ],
+    "noIncluye": [
+      "Mangas aluminizadas: se cotizan aparte si el fabricante las maneja",
+      "Careta o protección facial",
+      "Guantes y polainas"
+    ],
+    "errores": [
+      {
+        "error": "Usarlo donde la exposición es envolvente",
+        "realidad": "Solo cubre el frente. Si el operador rodea la fuente o hay radiación desde varios lados, el delantal no basta."
+      },
+      {
+        "error": "Elegir el largo por catálogo",
+        "realidad": "El largo lo define hasta dónde llega la exposición en ese puesto concreto, no la talla del operador."
+      },
+      {
+        "error": "Pedirlo angosto para que estorbe menos",
+        "realidad": "Un delantal angosto deja los costados descubiertos justo en la zona de salpicadura lateral."
+      },
+      {
+        "error": "Omitir la protección facial",
+        "realidad": "Si el frente está expuesto, la cara también. El delantal casi nunca va solo."
+      },
+      {
+        "error": "Guardarlo doblado en un cajón",
+        "realidad": "El pliegue quiebra la capa reflejante. Se cuelga, igual que el resto del equipo aluminizado."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Fundición y colada",
+        "desc": "Puestos con exposición frontal a metal fundido."
+      },
+      {
+        "titulo": "Forja",
+        "desc": "Manipulación de pieza caliente frente al operador."
+      },
+      {
+        "titulo": "Vidrio",
+        "desc": "Trabajo frente a horno con radiación sostenida."
+      },
+      {
+        "titulo": "Escalamiento por etapas",
+        "desc": "Primer nivel de protección antes del conjunto completo."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Cuándo basta un delantal y cuándo necesito el conjunto?",
+        "a": "El delantal sirve cuando la exposición es siempre frontal y acotada: el operador trabaja de cara a la fuente y no la rodea. Si hay radiación desde varios lados, si el operador se desplaza alrededor o si hay riesgo de engullimiento, se necesita el conjunto."
+      },
+      {
+        "q": "¿Qué largo pido?",
+        "a": "El que cubra hasta donde llega la exposición en ese puesto. No es una talla: es una medida del riesgo. En colada suele llegar bajo la rodilla; en forja de pieza pequeña puede bastar a media pierna."
+      },
+      {
+        "q": "¿Protege la espalda?",
+        "a": "No. Solo cubre el frente del cuerpo. Es su límite principal y la razón por la que se usa únicamente donde el análisis de riesgo confirma que la exposición es frontal."
+      },
+      {
+        "q": "¿Va solo o con más equipo?",
+        "a": "Casi nunca va solo. Si el frente está expuesto, la cara también, así que normalmente se combina con careta y guantes. Algunos puestos suman mangas aluminizadas para cubrir el antebrazo."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Con el procedimiento del fabricante y sin abrasivos. La superficie aluminizada se raya con el frote y una vez rayada pierde reflectancia de manera permanente."
+      },
+      {
+        "q": "¿Cuándo se retira?",
+        "a": "Cuando la superficie está opaca, cuando hay perforación por salpicadura o cuando presenta quemadura. En fundición la perforación suele aparecer antes que el desgaste general."
+      },
+      {
+        "q": "¿Se puede compartir entre turnos?",
+        "a": "Sí, a diferencia de la ropa personal el delantal se comparte con frecuencia porque el ajuste es amplio. Lo que hay que cuidar es la inspección entre turnos, porque el daño se acumula sin que nadie lo reporte."
+      },
+      {
+        "q": "¿Cómo se almacena?",
+        "a": "Colgado y extendido. Guardarlo doblado en un cajón es la forma más rápida de arruinar la capa reflejante en el pliegue, y esa línea ya no recupera su función."
+      }
+    ],
+    "sinonimos": [
+      "delantal aluminizado",
+      "mandil aluminizado",
+      "peto aluminizado",
+      "delantal para fundición",
+      "aluminized apron",
+      "delantal reflejante de calor"
+    ],
+    "sinonimosNota": "En México se pide como delantal o mandil aluminizado. En catálogo de importación aparece como aluminized apron.",
+    "comparativa": {
+      "titulo": "Delantal o conjunto completo",
+      "intro": "La decisión depende de la geometría de la exposición, no del presupuesto.",
+      "columnas": [
+        "Criterio",
+        "Delantal aluminizado",
+        "Conjunto de aproximación"
+      ],
+      "filas": [
+        [
+          "Cobertura",
+          "Frontal",
+          "Cuerpo completo"
+        ],
+        [
+          "Carga térmica y peso",
+          "Baja",
+          "Considerable"
+        ],
+        [
+          "Movilidad",
+          "Muy alta",
+          "Buena pero menor"
+        ],
+        [
+          "Cuándo conviene",
+          "Exposición frontal acotada",
+          "Exposición envolvente o desplazamiento alrededor de la fuente"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaquetón aluminizado: cuando el delantal ya no basta",
+        "href": "/trajes/aproximacion/chaqueton/"
+      },
+      {
+        "label": "Guantes aluminizados de tres dedos",
+        "href": "/trajes/aproximacion/guantes/"
+      },
+      {
+        "label": "Normas aplicables en México",
+        "href": "/#normas"
+      }
+    ]
   }
 ];
 
