@@ -144,7 +144,6 @@ const directoryItems = posts.map((p) => ({
     background: transparent;
     text-decoration: none;
     color: var(--color-dark);
-    transition: border-color 0.22s ease, background 0.22s ease;
   }
   .ask-tile:hover { border-color: var(--color-primary); background: var(--color-white); }
   .ask-tile__eyebrow {
@@ -167,8 +166,6 @@ const directoryItems = posts.map((p) => ({
     font-weight: 800;
     font-size: 0.83rem;
   }
-  .ask-tile__cta svg { transition: transform 0.22s ease; }
-  .ask-tile:hover .ask-tile__cta svg { transform: translateX(4px); }
 
   @media (max-width: 1280px) { .post-grid { grid-template-columns: 1fr; } }
   @media (max-width: 1024px) { .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

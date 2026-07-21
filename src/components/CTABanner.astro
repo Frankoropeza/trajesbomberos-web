@@ -92,9 +92,8 @@ const ICONS: Record<CtaIcon, string> = {
     font-weight: 700;
     font-size: 0.93rem;
     text-decoration: none;
-    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+    transition: background 0.15s linear, color 0.15s linear;
   }
-  .ctab__btn:hover { transform: translateY(-1px); }
   .ctab__btn--primary { background: var(--color-white); color: var(--color-primary); border-color: var(--color-white); }
   .ctab--light .ctab__btn--primary { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
   .ctab__btn:not(.ctab__btn--primary):hover { background: color-mix(in srgb, var(--ctab-fg) 14%, transparent); }

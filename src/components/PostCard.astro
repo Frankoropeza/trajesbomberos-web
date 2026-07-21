@@ -55,11 +55,9 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
     text-decoration: none;
     color: var(--color-dark);
     overflow: hidden;
-    transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
   }
   .post-card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
+    box-shadow: var(--shadow);
     border-color: rgb(200 16 46 / 0.35);
     border-top-color: var(--color-primary);
   }
@@ -124,8 +122,6 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
     font-weight: 800;
     font-size: 0.83rem;
   }
-  .post-card__cta svg { transition: transform 0.22s ease; }
-  .post-card:hover .post-card__cta svg { transform: translateX(4px); }
 
   .post-card__n {
     position: absolute;

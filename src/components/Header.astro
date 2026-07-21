@@ -147,7 +147,6 @@ const isActive = (href: string) =>
   }
   .nav-item > a:hover,
   .nav-item > a[aria-current='page'] { color: var(--color-primary); }
-  .nav-caret { transition: transform 0.18s ease; }
   .nav-item--has-menu:hover .nav-caret { transform: rotate(180deg); }
 
   /* Panel desplegable */
@@ -164,15 +163,12 @@ const isActive = (href: string) =>
     padding: 0.5rem;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-6px);
-    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
     z-index: 20;
   }
   .nav-item--has-menu:hover .nav-panel,
   .nav-item--has-menu:focus-within .nav-panel {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
   }
   .nav-panel ul { list-style: none; margin: 0; padding: 0; }
   .nav-panel a {
