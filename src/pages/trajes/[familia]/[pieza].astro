@@ -36,6 +36,7 @@ const menuItems = [
   { label: 'Qué es', href: '#que-es' },
   { label: 'Ficha técnica', href: '#ficha' },
   { label: 'Qué incluye', href: '#incluye' },
+  { label: 'Cómo elegir', href: '#comparativa' },
   { label: 'Errores', href: '#errores' },
   { label: 'Preguntas', href: '#faq' },
 ];
@@ -44,6 +45,7 @@ const pageIndex = [
   { label: 'Qué es y cómo está hecho', href: '#que-es' },
   { label: 'Ficha técnica completa', href: '#ficha' },
   { label: 'Qué incluye y qué no', href: '#incluye' },
+  { label: 'Cómo elegir entre opciones', href: '#comparativa' },
   { label: 'Dónde se usa', href: '#aplicaciones' },
   { label: 'Errores al comprar', href: '#errores' },
   { label: 'Preguntas frecuentes', href: '#faq' },
@@ -126,7 +128,40 @@ const pageIndex = [
           </div>
         </section>
 
-        <!-- 4 · Aplicaciones -->
+        <!-- 4 · Comparativa de decisión -->
+        <section id="comparativa" class="block">
+          <SectionHeading
+            eyebrow="Cómo elegir"
+            title={pz.comparativa.titulo}
+            description={pz.comparativa.intro}
+          />
+          <div class="comp__scroll" tabindex="0" role="region" aria-label={pz.comparativa.titulo}>
+            <table class="comp">
+              <thead>
+                <tr>{pz.comparativa.columnas.map((c) => <th scope="col">{c}</th>)}</tr>
+              </thead>
+              <tbody>
+                {pz.comparativa.filas.map((fila) => (
+                  <tr>
+                    {fila.map((celda, i) => (
+                      i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sinon">
+            <h3 class="sinon__t">Cómo se le dice también</h3>
+            <ul class="sinon__list">
+              {pz.sinonimos.map((sn) => <li>{sn}</li>)}
+            </ul>
+            <p class="sinon__nota">{pz.sinonimosNota}</p>
+          </div>
+        </section>
+
+        <!-- 5 · Aplicaciones -->
         <section id="aplicaciones" class="block">
           <SectionHeading
             eyebrow="Dónde se usa"
@@ -142,7 +177,7 @@ const pageIndex = [
           </div>
         </section>
 
-        <!-- 5 · Errores -->
+        <!-- 6 · Errores -->
         <section id="errores" class="block">
           <SectionHeading
             eyebrow="Antes de firmar"
@@ -162,13 +197,31 @@ const pageIndex = [
           </ul>
         </section>
 
-        <!-- 6 · FAQ -->
+        <!-- 7 · FAQ -->
         <section id="faq" class="block">
           <SectionHeading
             eyebrow="Preguntas frecuentes"
             title={`Dudas sobre ${pz.nombre.toLowerCase()}`}
           />
           <FAQWithContact items={pz.faqs} />
+        </section>
+
+        <!-- 8 · Enlazado contextual -->
+        <section id="relacionados" class="block">
+          <SectionHeading
+            eyebrow="Sigue leyendo"
+            title="Lo que suele revisarse junto con esta pieza"
+          />
+          <ul class="rel">
+            {pz.relacionados.map((r) => (
+              <li>
+                <a href={r.href}>
+                  {r.label}
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
       </div>
 
@@ -291,6 +344,64 @@ const pageIndex = [
   }
   .err h3 { margin: 0; font-size: 1rem; }
   .err p { margin: 0; color: var(--color-gray); font-size: 0.9rem; }
+
+  .comp__scroll { overflow-x: auto; border: var(--border); border-radius: var(--radius-lg); }
+  .comp { width: 100%; border-collapse: collapse; min-width: 640px; background: var(--color-white); }
+  .comp th, .comp td {
+    padding: 0.95rem 1.1rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: var(--border);
+    font-size: 0.88rem;
+  }
+  .comp thead th {
+    background: var(--color-ink);
+    color: var(--color-white);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    font-weight: 800;
+  }
+  .comp tbody th { font-weight: 800; color: var(--color-dark); width: 26%; }
+  .comp td { color: var(--color-gray); }
+  .comp tbody tr:last-child th, .comp tbody tr:last-child td { border-bottom: 0; }
+
+  .sinon { margin-top: 2rem; padding-top: 1.6rem; border-top: var(--border); }
+  .sinon__t {
+    margin: 0 0 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .sinon__list { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0 0 0.9rem; padding: 0; }
+  .sinon__list li {
+    padding: 0.3rem 0.7rem;
+    background: var(--color-light);
+    border: var(--border);
+    border-radius: 2px;
+    font-size: 0.82rem;
+    color: var(--color-gray);
+    font-weight: 600;
+  }
+  .sinon__nota { margin: 0; font-size: 0.85rem; color: var(--color-gray); max-width: 72ch; }
+
+  .rel { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .rel li { border-bottom: var(--border); }
+  .rel li:first-child { border-top: var(--border); }
+  .rel a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.95rem 0.2rem;
+    color: var(--color-dark);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.94rem;
+  }
+  .rel a:hover { color: var(--color-primary); }
 
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }

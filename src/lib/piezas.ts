@@ -43,6 +43,20 @@ export interface Pieza {
   errores: { error: string; realidad: string }[];
   aplicaciones: { titulo: string; desc: string }[];
   faqs: { q: string; a: string }[];
+
+  // --- SEO de cola larga y decisión de compra -----------------
+  /** Cómo se le dice también: captura búsquedas reales por sinónimo. */
+  sinonimos: string[];
+  sinonimosNota: string;
+  /** Tabla de decisión entre las dos opciones reales de la pieza. */
+  comparativa: {
+    titulo: string;
+    intro: string;
+    columnas: string[];
+    filas: string[][];
+  };
+  /** Enlazado contextual hacia piezas hermanas y recursos. */
+  relacionados: { label: string; href: string }[];
 }
 
 export const PIEZAS: Pieza[] = [
@@ -203,6 +217,64 @@ export const PIEZAS: Pieza[] = [
         q: '¿Sirve para incendio forestal o para extricación?',
         a: 'No es lo indicado. En línea de fuego forestal el peso y las barreras provocan golpe de calor en jornadas largas; para rescate vehicular lo contaminas con aceite, vidrio y fluidos, y le consumes vida útil. Cada operación tiene su familia de traje.',
       },
+    ],
+    sinonimos: [
+          "chaquetón de bombero",
+          "saco de bombero",
+          "casaca estructural",
+          "chaqueta de ataque interior",
+          "turnout coat",
+          "chaquetón NFPA"
+    ],
+    sinonimosNota: "Si tu área de compras lo escribió de otra forma en la requisición, es la misma pieza. Lo importante no es el nombre sino el composite y la norma.",
+    comparativa: {
+          "titulo": "Largo corto o largo extendido",
+          "intro": "La decisión que más se toma por costumbre y que más cambia la operación real del elemento.",
+          "columnas": [
+                "Criterio",
+                "Chaquetón corto",
+                "Chaquetón largo"
+          ],
+          "filas": [
+                [
+                      "Movilidad",
+                      "Mayor: no estorba al agacharse ni al subir escalera",
+                      "Menor: se monta sobre el pantalón al flexionar"
+                ],
+                [
+                      "Cobertura lumbar",
+                      "Depende de la espalda extendida de 3\" o 6\"",
+                      "Cubre por diseño, incluso sin extendida"
+                ],
+                [
+                      "Con equipo de respiración",
+                      "Mejor interacción con el arnés y la placa",
+                      "El faldón puede quedar bajo el cinturón del ERA"
+                ],
+                [
+                      "Uso recomendado",
+                      "Ataque interior, espacios reducidos, mucha escalera",
+                      "Operación con exposición prolongada de espalda"
+                ]
+          ]
+    },
+    relacionados: [
+          {
+                "label": "Pantalonera estructural: la otra mitad del conjunto",
+                "href": "/trajes/estructural/pantalonera/"
+          },
+          {
+                "label": "Monja con barrera de partículas: cierra la interfaz del cuello",
+                "href": "/trajes/estructural/monja/"
+          },
+          {
+                "label": "Anatomía del traje: qué hace cada una de las tres capas",
+                "href": "/#anatomia"
+          },
+          {
+                "label": "Vida útil y servicio: por qué el retiro es a los 10 años",
+                "href": "/#vida-util"
+          }
     ],
   },
   {
@@ -475,7 +547,65 @@ export const PIEZAS: Pieza[] = [
         "q": "¿Cuánto dura?",
         "a": "El retiro es a los diez años desde la fecha de fabricación, igual que el chaquetón, aunque en la práctica la pantalonera suele necesitar reparación o reemplazo antes por desgaste mecánico en rodilla y valenciana."
       }
-    ]
+    ],
+    sinonimos: [
+          "pantalonera de bombero",
+          "pantalón estructural",
+          "pantalón de combate",
+          "pantalón NFPA",
+          "turnout pant",
+          "pantalón de ataque interior"
+    ],
+    sinonimosNota: "En México se dice pantalonera; en catálogos de importación aparece como turnout pant. Es la misma prenda.",
+    comparativa: {
+          "titulo": "Qué cierre de cintura elegir",
+          "intro": "Esta decisión no se puede corregir después: define si la prenda puede alojar arnés interno de escape.",
+          "columnas": [
+                "Criterio",
+                "Medio cinturón o cinturón completo",
+                "Cinturón de escape"
+          ],
+          "filas": [
+                [
+                      "Para qué sirve",
+                      "Sujeción del pantalón, uso general",
+                      "Sujeción y punto de anclaje del sistema de descenso"
+                ],
+                [
+                      "Admite arnés interno",
+                      "No",
+                      "Sí, es su función"
+                ],
+                [
+                      "Cuándo conviene",
+                      "Operación sin riesgo de quedar atrapado en altura",
+                      "Edificación vertical, plantas con estructura elevada"
+                ],
+                [
+                      "Se puede cambiar después",
+                      "No sin reemplazar la pantalonera",
+                      "No aplica"
+                ]
+          ]
+    },
+    relacionados: [
+          {
+                "label": "Chaquetón estructural: debe compartir corte y talla",
+                "href": "/trajes/estructural/chaqueton/"
+          },
+          {
+                "label": "Tirantes tipo H: sostienen la pantalonera bajo el ERA",
+                "href": "/trajes/estructural/tirantes/"
+          },
+          {
+                "label": "Rodilleras de espuma: opción de fábrica del forro",
+                "href": "/trajes/estructural/rodilleras/"
+          },
+          {
+                "label": "Arnés interno de escape: depende del cierre que elijas",
+                "href": "/trajes/estructural/arnes-escape/"
+          }
+    ],
   },
   {
     "slug": "tirantes",
@@ -670,7 +800,61 @@ export const PIEZAS: Pieza[] = [
         "q": "¿Los venden sueltos o solo con el pantalón?",
         "a": "Sueltos, sin compra mínima. Es una de las piezas que más se pide por separado para reposición de dotación."
       }
-    ]
+    ],
+    sinonimos: [
+          "tirantes de bombero",
+          "suspensores para pantalonera",
+          "tirantes tipo H",
+          "tirantes acolchados",
+          "suspenders turnout",
+          "tirantes para pantalón de bombero"
+    ],
+    sinonimosNota: "Se piden como tirantes o suspensores según la región. En catálogo de importación aparecen como suspenders.",
+    comparativa: {
+          "titulo": "Tipo H o tipo Y",
+          "intro": "Las dos configuraciones que existen. La diferencia se nota cuando el traje está mojado y pesa.",
+          "columnas": [
+                "Criterio",
+                "Tipo H",
+                "Tipo Y"
+          ],
+          "filas": [
+                [
+                      "Reparto de carga",
+                      "Sobre ambos hombros, simétrico",
+                      "Concentrado en el cruce de la espalda"
+                ],
+                [
+                      "Con los brazos en alto",
+                      "No se desplaza",
+                      "Tiende a resbalarse, sobre todo con el traje mojado"
+                ],
+                [
+                      "Bajo la placa del ERA",
+                      "Superficie plana, menos presión puntual",
+                      "El cruce puede quedar bajo la placa"
+                ],
+                [
+                      "Cuándo conviene",
+                      "Uso habitual de equipo de respiración",
+                      "Operación ligera o preferencia del elemento"
+                ]
+          ]
+    },
+    relacionados: [
+          {
+                "label": "Pantalonera estructural: verifica compatibilidad de presillas",
+                "href": "/trajes/estructural/pantalonera/"
+          },
+          {
+                "label": "Chaquetón estructural: el resto del conjunto",
+                "href": "/trajes/estructural/chaqueton/"
+          },
+          {
+                "label": "Ver las seis familias de traje",
+                "href": "/trajes/"
+          }
+    ],
   },
   {
     "slug": "rodilleras",
@@ -859,7 +1043,60 @@ export const PIEZAS: Pieza[] = [
         "q": "¿Las recomiendan siempre?",
         "a": "Para operación estructural, sí. Si tu gente hace ataque interior, búsqueda o extricación, va a trabajar hincada. Para un uso ocasional o para brigada de conato, es una opción que se puede valorar según presupuesto."
       }
-    ]
+    ],
+    sinonimos: [
+          "rodilleras para pantalón de bombero",
+          "almohadillas de rodilla",
+          "protección de rodilla turnout",
+          "knee pads bombero",
+          "rodilleras de forro"
+    ],
+    sinonimosNota: "No confundir con las rodilleras exteriores de trabajo: estas van dentro del conjunto, sobre el forro.",
+    comparativa: {
+          "titulo": "Rodillera interna o refuerzo exterior",
+          "intro": "Se confunden todo el tiempo y hacen cosas distintas. Lo ideal es tener ambas.",
+          "columnas": [
+                "Criterio",
+                "Rodillera de espuma (interna)",
+                "Refuerzo exterior de rodilla"
+          ],
+          "filas": [
+                [
+                      "Qué resuelve",
+                      "Impacto y presión al trabajar hincado",
+                      "Abrasión contra escombro y concreto"
+                ],
+                [
+                      "Dónde va",
+                      "Sobre el forro, dentro del conjunto",
+                      "Sobre la capa exterior"
+                ],
+                [
+                      "Se puede agregar después",
+                      "No: implica abrir el conjunto",
+                      "No: es parte de la construcción"
+                ],
+                [
+                      "Viene de serie",
+                      "Normalmente no, es opción",
+                      "Habitual en pantalón estructural"
+                ]
+          ]
+    },
+    relacionados: [
+          {
+                "label": "Pantalonera estructural: la rodillera es opción de esta pieza",
+                "href": "/trajes/estructural/pantalonera/"
+          },
+          {
+                "label": "Cómo especificar un traje sin dejar huecos",
+                "href": "/#especificar"
+          },
+          {
+                "label": "Errores frecuentes al comprar traje",
+                "href": "/#errores"
+          }
+    ],
   },
   {
     "slug": "arnes-escape",
@@ -1084,7 +1321,61 @@ export const PIEZAS: Pieza[] = [
         "q": "¿Se necesita capacitación?",
         "a": "Sí, y es la parte que más se omite. El autorrescate se ejecuta bajo estrés extremo, con humo y sin visibilidad. Un arnés sin entrenamiento previo es equipo que no se va a usar bien. Podemos cotizar la capacitación junto con el equipo."
       }
-    ]
+    ],
+    sinonimos: [
+          "arnés de escape para bombero",
+          "sistema de autorrescate",
+          "cinturón de escape",
+          "arnés clase escape",
+          "escape belt",
+          "arnés NFPA 1983"
+    ],
+    sinonimosNota: "En pliegos aparece como sistema de escape o de autorrescate. El arnés es solo una parte: el sistema incluye cuerda, gancho y descensor.",
+    comparativa: {
+          "titulo": "Arnés cosido o cinturón de escape independiente",
+          "intro": "Dos formas de resolver el mismo escenario, con implicaciones distintas de compra y de reposición.",
+          "columnas": [
+                "Criterio",
+                "Arnés cosido a la pantalonera",
+                "Cinturón de escape independiente"
+          ],
+          "filas": [
+                [
+                      "Disponibilidad",
+                      "Siempre puesto: sale con el elemento",
+                      "Depende de que se coloque antes de la salida"
+                ],
+                [
+                      "Volumen",
+                      "Sin volumen exterior",
+                      "Se suma sobre el traje"
+                ],
+                [
+                      "Reposición",
+                      "Ligada a la pantalonera",
+                      "Se cambia solo, sin tocar el traje"
+                ],
+                [
+                      "Decisión de compra",
+                      "Se define al ordenar el pantalón",
+                      "Se puede adquirir después"
+                ]
+          ]
+    },
+    relacionados: [
+          {
+                "label": "Pantalonera estructural: el cierre debe ser compatible",
+                "href": "/trajes/estructural/pantalonera/"
+          },
+          {
+                "label": "Normas aplicables: por qué son dos certificados",
+                "href": "/#normas"
+          },
+          {
+                "label": "Chaquetón estructural: el resto del conjunto",
+                "href": "/trajes/estructural/chaqueton/"
+          }
+    ],
   },
   {
     "slug": "monja",
@@ -1312,7 +1603,62 @@ export const PIEZAS: Pieza[] = [
         "q": "¿Vale la pena cambiarla si el resto del traje está en buen estado?",
         "a": "Es exactamente lo que recomendamos. Es la actualización de menor costo y mayor impacto en salud ocupacional de toda la dotación: no requiere cambiar el traje ni reentrenar a nadie, y reduce exposición desde el primer turno."
       }
-    ]
+    ],
+    sinonimos: [
+          "monja de bombero",
+          "capucha antipartículas",
+          "escafandra de bombero",
+          "capuchón Nomex",
+          "verdugo",
+          "balaclava para bombero",
+          "hood barrera de partículas"
+    ],
+    sinonimosNota: "Monja y escafandra son los términos más usados en México; en catálogo aparece como hood o capucha. Todos nombran la misma pieza.",
+    comparativa: {
+          "titulo": "Monja tradicional o con barrera de partículas",
+          "intro": "La diferencia de precio es de las más pequeñas del conjunto. La diferencia de exposición acumulada, no.",
+          "columnas": [
+                "Criterio",
+                "Tradicional de aramida",
+                "Con barrera de partículas"
+          ],
+          "filas": [
+                [
+                      "Protección térmica",
+                      "Sí, es su función original",
+                      "Sí, equivalente"
+                ],
+                [
+                      "Partículas finas del humo",
+                      "Las deja pasar",
+                      "Las bloquea en cuello y mandíbula"
+                ],
+                [
+                      "Transpiración",
+                      "Alta",
+                      "Alta: la barrera se concentra en la zona crítica"
+                ],
+                [
+                      "Cuándo conviene",
+                      "Uso ocasional o presupuesto muy ajustado",
+                      "Cualquier operación con exposición a humo"
+                ]
+          ]
+    },
+    relacionados: [
+          {
+                "label": "Chaquetón estructural: la monja va debajo de su cuello",
+                "href": "/trajes/estructural/chaqueton/"
+          },
+          {
+                "label": "Vida útil y servicio: por qué se repone antes que el traje",
+                "href": "/#vida-util"
+          },
+          {
+                "label": "Ver las seis familias de traje",
+                "href": "/trajes/"
+          }
+    ],
   }
 ];
 
