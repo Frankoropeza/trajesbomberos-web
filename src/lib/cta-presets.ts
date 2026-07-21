@@ -29,6 +29,7 @@ export const PRESET_GENERAL: CtaPreset = {
   buttons: [
     { label: 'Cotizar por WhatsApp', href: waUrl(WA_MESSAGES.cotizar), icon: 'wa', primary: true, external: true },
     { label: 'Ver todas las familias', href: '/trajes/', icon: 'catalog' },
+    { label: 'Leer el blog técnico', href: '/blog/', icon: 'info' },
   ],
 };
 
@@ -40,6 +41,7 @@ export function presetCategoria(nombre: string): CtaPreset {
     buttons: [
       { label: 'Cotizar ahora', href: waUrl(WA_MESSAGES.categoria(nombre)), icon: 'wa', primary: true, external: true },
       { label: 'Comparar con otras familias', href: '/trajes/', icon: 'arrow' },
+      { label: 'Guías del blog', href: '/blog/', icon: 'info' },
     ],
   };
 }
@@ -51,6 +53,7 @@ export const PRESET_CONTACTO: CtaPreset = {
   buttons: [
     { label: 'Escribir por WhatsApp', href: waUrl(WA_MESSAGES.informacion), icon: 'wa', primary: true, external: true },
     { label: CONTACT.telefono, href: `tel:${CONTACT.telefonoHref}`, icon: 'phone' },
+    { label: 'Leer el blog técnico', href: '/blog/', icon: 'info' },
   ],
 };
 
@@ -61,5 +64,6 @@ export const PRESET_LICITACION: CtaPreset = {
   buttons: [
     { label: 'Pedir documentación', href: waUrl(WA_MESSAGES.licitacion), icon: 'quote', primary: true, external: true },
     { label: 'Ver normas aplicables', href: '/#normas', icon: 'info' },
+    { label: 'Guías de licitación', href: '/blog/categoria/licitacion/', icon: 'quote' },
   ],
 };

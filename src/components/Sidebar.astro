@@ -7,6 +7,7 @@
 // Data-driven desde site.ts (SSoT). Regla D4: waUrl para WhatsApp.
 import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
+import { getPostsByFamilia, postUrl, categoriaNombre } from '@lib/blog';
 
 interface Props {
   activeSlug?: string;
@@ -14,6 +15,11 @@ interface Props {
   waMessage?: string;
 }
 const { activeSlug, pageIndex = [], waMessage = WA_MESSAGES.cotizar } = Astro.props;
+
+// Artículos del blog para esta familia: interlinking hacia el
+// contenido editorial, que es el que resuelve las dudas que
+// frenan la cotización.
+const articulos = await getPostsByFamilia(activeSlug, 3);
 
 const RECURSOS = [
   { label: 'Anatomía del traje', href: '/#anatomia' },
@@ -60,6 +66,23 @@ const RECURSOS = [
       ))}
     </ul>
   </nav>
+
+  {articulos.length > 0 && (
+    <nav class="sb-block" aria-label="Artículos del blog">
+      <p class="sb-title">Del blog</p>
+      <ul class="sb-posts">
+        {articulos.map((a) => (
+          <li>
+            <a href={postUrl(a)}>
+              <span class="sb-posts__cat">{categoriaNombre(a.data.categoria)}</span>
+              <span class="sb-posts__title">{a.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="sb-blog-all" href="/blog/">Ver todos los artículos →</a>
+    </nav>
+  )}
 
   <div class="sb-card">
     <p class="sb-card__title">¿Necesitas una cotización?</p>
@@ -118,6 +141,31 @@ const RECURSOS = [
   }
   .sb-list--anchors a { font-weight: 600; color: var(--color-gray); }
   .sb-list--muted a { font-size: 0.85rem; color: var(--color-gray); font-weight: 600; }
+
+  /* Bloque del blog: mismo lenguaje que el sidebar del artículo */
+  .sb-posts { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-posts li + li { border-top: var(--border); }
+  .sb-posts a { display: grid; gap: 0.18rem; padding: 0.75rem 0; text-decoration: none; }
+  .sb-posts__cat {
+    font-size: 0.66rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-primary);
+  }
+  .sb-posts__title { color: var(--color-dark); font-size: 0.86rem; font-weight: 700; line-height: 1.35; }
+  .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
+  .sb-blog-all {
+    display: block;
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: var(--border);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .sb-blog-all:hover { text-decoration: underline; }
 
   .sb-card {
     background: var(--color-ink);

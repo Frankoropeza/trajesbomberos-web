@@ -30,6 +30,8 @@ import ProcessSteps from '@components/ProcessSteps.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import FactList from '@components/FactList.astro';
 import CTABanner from '@components/CTABanner.astro';
+import PostCard from '@components/PostCard.astro';
+import { getPosts, postUrl, readingTime } from '@lib/blog';
 import {
   SITE,
   PRODUCT_CATEGORIES,
@@ -182,6 +184,10 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   name: c.nombre,
   url: `${SITE.url}/trajes/${c.slug}/`,
 }));
+
+// Últimos 3 artículos del blog: la home enlaza al contenido que
+// resuelve las dudas previas a la cotización.
+const ultimosPosts = (await getPosts()).slice(0, 3);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
   <Hero {...hero} />
@@ -378,9 +384,38 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
       <FAQWithContact items={faqs} />
     </div>
   </section>
+
+  <!-- Blog técnico: interlinking al contenido editorial -->
+  <section class="section section--alt" id="blog">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Blog técnico"
+        title="Lo que preguntan por teléfono, explicado a fondo"
+        description="Guías de especificación, normas vigentes, comparativas entre familias y compra pública. Escrito por gente del ramo, sin copiar fichas de fabricante."
+      />
+      <div class="grid-cards grid-cards--3">
+        {ultimosPosts.map((a, i) => (
+          <PostCard
+            href={postUrl(a)}
+            title={a.data.title}
+            resumen={a.data.resumen}
+            categoria={a.data.categoria}
+            fecha={a.data.fecha}
+            lectura={readingTime(a.body)}
+            destacado={a.data.destacado}
+            index={i}
+          />
+        ))}
+      </div>
+      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
+  .blog-cta { margin: 2.2rem 0 0; }
+  .blog-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
+  .blog-cta a:hover { text-decoration: underline; }
   .catalogo-cta { margin: 2.2rem 0 0; }
   .catalogo-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
   .catalogo-cta a:hover { text-decoration: underline; }

@@ -10,19 +10,19 @@ import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
 import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
-import { SITE, BLOG_CATEGORIES } from '@config/site';
-import { getPosts, postUrl, categoriaUrl, readingTime, categoriasConConteo } from '@lib/blog';
+import { SITE, BLOG_CATEGORIES, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+import { getPosts, postUrl, categoriaUrl, readingTime } from '@lib/blog';
 
 const path = '/blog/';
 
 const posts = await getPosts();
 const destacado = posts.find((p) => p.data.destacado) ?? posts[0];
 const resto = posts.filter((p) => p.id !== destacado?.id);
-const categorias = await categoriasConConteo();
 
 const menuItems = [
+  { label: 'Empieza por aquí', href: '#destacado' },
   { label: 'Últimos artículos', href: '#articulos' },
-  { label: 'Por categoría', href: '#categorias' },
   ...BLOG_CATEGORIES.slice(0, 2).map((c) => ({ label: c.nombre, href: categoriaUrl(c.slug) })),
   { label: 'Todas las familias', href: '/trajes/' },
 ];
@@ -57,7 +57,7 @@ const directoryItems = posts.map((p) => ({
   directoryItems={directoryItems}
 >
   {destacado && (
-    <section class="section section--tight">
+    <section class="section section--tight" id="destacado">
       <div class="container">
         <SectionHeading
           eyebrow="Empieza por aquí"
@@ -78,7 +78,7 @@ const directoryItems = posts.map((p) => ({
     </section>
   )}
 
-  <div class="section section--tight" id="articulos">
+  <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
       <div class="layout-main">
         <SectionHeading
@@ -100,38 +100,27 @@ const directoryItems = posts.map((p) => ({
                 index={i}
               />
             ))}
+            <!-- Cierra la retícula y convierte el hueco en una vía
+                 de contacto: la duda que no está publicada casi
+                 siempre es el siguiente artículo. -->
+            <a class="ask-tile" href={waUrl(WA_MESSAGES.informacion)} target="_blank" rel="noopener nofollow">
+              <span class="ask-tile__eyebrow">¿Falta tu tema?</span>
+              <h3>Pregúntanos directo</h3>
+              <p>Si tu duda no está publicada, escríbenos. La contestamos con la ficha técnica en la mano y, si le sirve a más gente, se vuelve el siguiente artículo.</p>
+              <span class="ask-tile__cta">
+                Escribir por WhatsApp
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
           </div>
         ) : (
           <p class="vacio">Pronto publicaremos más artículos en esta sección.</p>
         )}
       </div>
 
-      <BlogSidebar currentId={destacado?.id} />
+      <BlogSidebar variant="indice" currentId={destacado?.id} />
     </div>
   </div>
-
-  <section class="section section--alt" id="categorias">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Por categoría"
-        title="Entra directo a lo que estás resolviendo"
-        description="Cada categoría responde a una etapa distinta de la compra: entender, comparar, documentar y mantener."
-      />
-      <div class="cat-grid">
-        {categorias.map((c) => (
-          <a class="cat-tile" href={categoriaUrl(c.slug)}>
-            <span class="cat-tile__n">{String(c.total).padStart(2, '0')}</span>
-            <h3>{c.nombre}</h3>
-            <p>{c.desc}</p>
-            <span class="cat-tile__cta">
-              Ver artículos
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
 
   <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
@@ -144,55 +133,44 @@ const directoryItems = posts.map((p) => ({
   }
   .vacio { color: var(--color-gray); }
 
-  .cat-grid {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: var(--gap-grid);
-  }
-  .cat-tile {
-    position: relative;
+  .ask-tile {
     display: flex;
     flex-direction: column;
     gap: 0.55rem;
-    padding: 1.5rem 1.4rem 1.3rem;
-    background: var(--color-white);
-    border: var(--border);
+    height: 100%;
+    padding: 1.5rem;
+    border: 1px dashed var(--color-gray-soft);
     border-radius: var(--radius-lg);
+    background: transparent;
     text-decoration: none;
     color: var(--color-dark);
-    transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+    transition: border-color 0.22s ease, background 0.22s ease;
   }
-  .cat-tile:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
-    border-color: rgb(200 16 46 / 0.35);
-  }
-  .cat-tile__n {
-    font-size: 0.78rem;
+  .ask-tile:hover { border-color: var(--color-primary); background: var(--color-white); }
+  .ask-tile__eyebrow {
+    font-size: 0.68rem;
     font-weight: 800;
-    letter-spacing: 0.06em;
-    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
   }
-  .cat-tile h3 { margin: 0; font-size: 1rem; }
-  .cat-tile p { margin: 0; flex: 1; color: var(--color-gray); font-size: 0.85rem; line-height: 1.55; }
-  .cat-tile__cta {
+  .ask-tile h3 { margin: 0; font-size: var(--fs-h3); }
+  .ask-tile p { margin: 0; flex: 1; color: var(--color-gray); font-size: 0.88rem; line-height: 1.6; }
+  .ask-tile__cta {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
     margin-top: 0.3rem;
-    padding-top: 0.8rem;
-    border-top: var(--border);
-    color: var(--color-primary);
+    padding-top: 0.85rem;
+    border-top: 1px dashed var(--color-gray-light);
+    color: var(--color-wa-dark);
     font-weight: 800;
-    font-size: 0.82rem;
+    font-size: 0.83rem;
   }
-  .cat-tile__cta svg { transition: transform 0.22s ease; }
-  .cat-tile:hover .cat-tile__cta svg { transform: translateX(4px); }
+  .ask-tile__cta svg { transition: transform 0.22s ease; }
+  .ask-tile:hover .ask-tile__cta svg { transform: translateX(4px); }
 
-  @media (max-width: 1200px) { .cat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (max-width: 860px) {
-    .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
+  @media (max-width: 1280px) { .post-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 1024px) { .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 720px) { .post-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 520px) { .cat-grid { grid-template-columns: 1fr; } }
 </style>

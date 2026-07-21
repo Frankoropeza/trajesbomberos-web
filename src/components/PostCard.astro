@@ -151,19 +151,45 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
   .post-card--wide .post-card__head { grid-area: head; }
   .post-card--wide .post-card__title { grid-area: title; font-size: clamp(1.35rem, 2vw, 1.85rem); }
   .post-card--wide .post-card__resumen { grid-area: resumen; font-size: 0.95rem; }
+  /* El destacado cierra con un panel oscuro: el mismo recurso
+     visual del hero y de la tarjeta de cotización. Integra la
+     tarjeta al lenguaje del sitio en vez de dejar un hueco. */
   .post-card--wide .post-card__foot {
     grid-area: foot;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 1rem;
     margin: 0;
-    padding: 0 0 0 clamp(1.5rem, 3vw, 3rem);
-    border-top: 0;
-    border-left: var(--border);
+    padding: 1.5rem;
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--color-ink);
     height: 100%;
+    position: relative;
+    overflow: hidden;
   }
-  .post-card--wide .post-card__n { font-size: 3.4rem; }
+  .post-card--wide .post-card__foot::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: repeating-linear-gradient(115deg, var(--color-accent) 0 14px, var(--color-ink-soft) 14px 28px);
+  }
+  .post-card--wide .post-card__meta { color: #b9bec5; font-size: 0.78rem; }
+  .post-card--wide .post-card__cta {
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--radius);
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 0.88rem;
+  }
+  .post-card:hover .post-card--wide .post-card__cta,
+  .post-card--wide:hover .post-card__cta { background: var(--color-primary-dark); }
+  /* El destacado no numera: es uno solo y el número chocaba
+     con el panel oscuro. */
+  .post-card--wide .post-card__n { display: none; }
 
   @media (max-width: 860px) {
     .post-card--wide {
@@ -174,9 +200,8 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 0.85rem 0 0;
-      border-left: 0;
-      border-top: var(--border);
+      gap: 1rem;
+      padding: 1rem 1.2rem;
       height: auto;
     }
   }

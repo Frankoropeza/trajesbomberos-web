@@ -47,7 +47,8 @@ La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el m
 
 Esto es lo que más confusión provoca en México, así que conviene decirlo claro:
 
-- El **traje forestal** no forma parte de la NFPA 1970. La ropa de protección para incendio de vegetación conserva su propio estándar. Si estás comprando [equipo forestal](/trajes/forestal/), tu referencia normativa es otra.
+- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 —rescate técnico—, NFPA 1977 —forestal— y NFPA 1999 —operaciones médicas—. En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
+- La misma NFPA 1950 rige el **rescate técnico y la extricación**, que tampoco están en la 1970. Trae un periodo de gracia de 18 meses para producto certificado bajo las ediciones anteriores.
 - Los **trajes de entrada a la flama** siguen sin tener una norma NFPA de producto específica. Se especifican contra la ficha técnica del fabricante, como explicamos en la ficha de [trajes de entrada](/trajes/entrada/).
 - La **selección, cuidado y mantenimiento** del equipo tampoco está aquí: eso vive en la NFPA 1850, que a su vez consolidó las viejas 1851 y 1852. Son documentos hermanos con funciones distintas: **1970 dice cómo debe ser el equipo; 1850 dice cómo debes cuidarlo.**
 
@@ -95,3 +96,4 @@ Si contestaste que no a alguna, no es urgencia pero sí es pendiente. Mándanos 
 
 - [UL Solutions — NFPA Consolidates Firefighter PPE Standards into New NFPA 1970](https://www.ul.com/news/nfpa-consolidates-firefighter-ppe-standards-new-nfpa-1970)
 - [FireRescue1 — What you need to know now about the NFPA 1970 consolidations](https://www.firerescue1.com/nfpa/what-you-need-to-know-now-about-the-nfpa-1970-consolidations)
+- [FireRescue1 — The new NFPA 1950: consolidating tech rescue, EMS and wildland PPE](https://www.firerescue1.com/fire-products/Personal-protective-equipment-ppe/the-new-nfpa-1950-consolidating-tech-rescue-ems-and-wildland-ppe)

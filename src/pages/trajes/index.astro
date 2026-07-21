@@ -13,6 +13,8 @@ import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, PRODUCT_CATEGORIES } from '@config/site';
 import { FAMILIAS } from '@lib/familias';
+import PostCard from '@components/PostCard.astro';
+import { getPosts, postUrl, readingTime } from '@lib/blog';
 
 const path = '/trajes/';
 
@@ -21,6 +23,7 @@ const menuItems = [
   { label: 'Las seis familias', href: '#familias' },
   { label: 'Comparativa', href: '#comparar' },
   { label: 'Preguntas', href: '#faq' },
+  { label: 'Blog', href: '#blog' },
   { label: 'Anatomía del traje', href: '/#anatomia' },
   { label: 'Normas', href: '/#normas' },
 ];
@@ -69,6 +72,9 @@ const faqs = [
     a: 'Las dos formas. Puedes pedir solo chaquetón, solo pantalonera o el conjunto completo, sin compra mínima. Si combinas piezas de distintos cortes conviene revisarlo con nosotros: la interfaz entre chaquetón y pantalón es zona crítica.',
   },
 ];
+
+// Lectura recomendada antes de decidir familia
+const ultimosPosts = (await getPosts()).slice(0, 3);
 
 const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   name: c.nombre,
@@ -169,10 +175,40 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     </div>
   </section>
 
+
+  <!-- Blog técnico: interlinking al contenido editorial -->
+  <section class="section " id="blog">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Blog técnico"
+        title="Antes de decidir, léete esto"
+        description="Las guías que resuelven las dudas que aparecen justo antes de emitir una requisición: qué familia toca, qué norma citar y qué datos hacen comparable una cotización."
+      />
+      <div class="grid-cards grid-cards--3">
+        {ultimosPosts.map((a, i) => (
+          <PostCard
+            href={postUrl(a)}
+            title={a.data.title}
+            resumen={a.data.resumen}
+            categoria={a.data.categoria}
+            fecha={a.data.fecha}
+            lectura={readingTime(a.body)}
+            destacado={a.data.destacado}
+            index={i}
+          />
+        ))}
+      </div>
+      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+    </div>
+  </section>
+
   <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
+  .blog-cta { margin: 2.2rem 0 0; }
+  .blog-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
+  .blog-cta a:hover { text-decoration: underline; }
   .familia {
     padding-block: clamp(2.2rem, 3.5vw, 3.4rem);
     border-top: var(--border);

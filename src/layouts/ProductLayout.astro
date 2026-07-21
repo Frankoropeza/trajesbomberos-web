@@ -32,6 +32,7 @@ const menuItems = [
   { label: 'Qué pedir', href: '#especificar' },
   { label: 'Preguntas', href: '#faq' },
   { label: 'Todos los trajes', href: '/trajes/' },
+  { label: 'Blog técnico', href: '/blog/' },
 ];
 
 const pageIndex = [
@@ -92,6 +93,8 @@ const pageIndex = [
                 desc={pr.desc}
                 chips={pr.chips}
                 spec={pr.spec}
+                img={pr.img}
+                alt={pr.alt}
                 index={i}
               />
             ))}

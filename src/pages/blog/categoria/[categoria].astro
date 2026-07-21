@@ -60,7 +60,7 @@ const directoryItems = posts.map((p) => ({
   ]}
   directoryItems={directoryItems}
 >
-  <div class="section" id="articulos">
+  <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
       <div class="layout-main">
         <SectionHeading eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
@@ -85,7 +85,7 @@ const directoryItems = posts.map((p) => ({
         <p class="volver"><a href="/blog/">← Volver al blog</a></p>
       </div>
 
-      <BlogSidebar currentCategoria={cat.slug} />
+      <BlogSidebar variant="categoria" currentCategoria={cat.slug} />
     </div>
   </div>
 

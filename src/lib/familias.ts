@@ -26,7 +26,7 @@ export interface FamiliaDetalle {
   keywords: readonly string[];
   especificar: { titulo: string; desc: string }[];
   faqs: { q: string; a: string }[];
-  productos: { nombre: string; desc: string; chips: string[]; spec?: string }[];
+  productos: { nombre: string; desc: string; chips: string[]; spec?: string; img: string; alt: string }[];
 }
 
 export const FAMILIAS: FamiliaDetalle[] = [
@@ -63,6 +63,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaquetón estructural de tres capas",
+                "img": "/images/piezas/chaqueton-estructural-de-tres-capas.svg",
+                "alt": "Chaquetón estructural de tres capas para bombero",
                 "desc": "Prenda superior del conjunto: capa exterior ignífuga, barrera de humedad y barrera térmica, con DRD integrado para arrastre de rescate. Se cotiza independiente del pantalón.",
                 "chips": [
                       "Tres capas",
@@ -73,6 +75,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalonera estructural",
+                "img": "/images/piezas/pantalonera-estructural.svg",
+                "alt": "Pantalonera estructural para bombero",
                 "desc": "Pantalón de combate de tres capas con rodillas articuladas y refuerzos. Se especifica por cintura y entrepierna, y por tipo de ajuste.",
                 "chips": [
                       "Tres capas",
@@ -83,6 +87,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Tirantes acolchados tipo H",
+                "img": "/images/piezas/tirantes-acolchados-tipo-h.svg",
+                "alt": "Tirantes acolchados tipo H para bombero",
                 "desc": "Soporte del pantalón con espalda en H acolchada y liberación rápida. Sin herrajes metálicos que lastimen bajo el arnés del equipo de respiración.",
                 "chips": [
                       "Espalda en H",
@@ -93,6 +99,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Rodilleras de espuma para forro",
+                "img": "/images/piezas/rodilleras-de-espuma-para-forro.svg",
+                "alt": "Rodilleras de espuma para forro para bombero",
                 "desc": "Almohadillas de espuma de célula cerrada que se instalan sobre el forro del pantalón, en la rodilla. Amortiguan el trabajo hincado y no absorben agua.",
                 "chips": [
                       "Célula cerrada",
@@ -103,6 +111,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Arnés interno de escape",
+                "img": "/images/piezas/arnes-interno-de-escape.svg",
+                "alt": "Arnés interno de escape para bombero",
                 "desc": "Arnés clase escape cosido dentro del pantalón, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 1983, aparte del conjunto.",
                 "chips": [
                       "NFPA 1983",
@@ -113,6 +123,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Capucha antipartículas (monja)",
+                "img": "/images/piezas/capucha-antiparticulas-monja.svg",
+                "alt": "Capucha antipartículas (monja) para bombero",
                 "desc": "Cubre cabeza, cuello y orejas con barrera de partículas y sella la interfaz entre casco, chaquetón y máscara del equipo de respiración.",
                 "chips": [
                       "Barrera de partículas",
@@ -155,6 +167,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Conjunto de brigada contra fuego incipiente",
+                "img": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.svg",
+                "alt": "Conjunto de brigada contra fuego incipiente para bombero",
                 "desc": "Chaquetón y pantalón para brigada industrial en atención de conato, con capa externa inherentemente ignífuga y forro desmontable de barrera de humedad más barrera térmica.",
                 "chips": [
                       "Nomex · Kevlar",
@@ -165,6 +179,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Overol ignífugo NFPA 2112",
+                "img": "/images/piezas/overol-ignifugo-nfpa-2112.svg",
+                "alt": "Overol ignífugo NFPA 2112 para bombero",
                 "desc": "Overol de una pieza en aramida inherente, certificado para exposición breve a flamazo. Es la prenda base de brigada en planta, petroquímica y energía.",
                 "chips": [
                       "Nomex IIIA",
@@ -175,6 +191,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Chaquetón de brigadista (pieza suelta)",
+                "img": "/images/piezas/chaqueton-de-brigadista-pieza-suelta.svg",
+                "alt": "Chaquetón de brigadista (pieza suelta) para bombero",
                 "desc": "Chaquetón de brigada con barreras técnicas, bandas reflejantes de alta visibilidad y refuerzos en zonas de desgaste. Se cotiza suelto para reposición.",
                 "chips": [
                       "Multicapa",
@@ -185,6 +203,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalonera de brigadista (pieza suelta)",
+                "img": "/images/piezas/pantalonera-de-brigadista-pieza-suelta.svg",
+                "alt": "Pantalonera de brigadista (pieza suelta) para bombero",
                 "desc": "Pantalón de brigada con refuerzos en rodillas y valencianas, tirantes de alta resistencia y cinta reflejante. Se repone con más frecuencia que el chaquetón.",
                 "chips": [
                       "Refuerzo rodilla",
@@ -195,6 +215,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Monja (capucha) de brigada",
+                "img": "/images/piezas/monja-capucha-de-brigada.svg",
+                "alt": "Monja (capucha) de brigada para bombero",
                 "desc": "Capuchón de tejido aramídico elástico que cubre orejas, cuello y mandíbula: justo lo que no cubren el casco ni el chaquetón.",
                 "chips": [
                       "Aramida elástica",
@@ -205,6 +227,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Tirantes tipo X de ocho puntos",
+                "img": "/images/piezas/tirantes-tipo-x-de-ocho-puntos.svg",
+                "alt": "Tirantes tipo X de ocho puntos para bombero",
                 "desc": "Tirantes de elástico con terminales de piel y sujeción en X, para repartir el peso de la pantalonera en uso prolongado.",
                 "chips": [
                       "Elástico 2\"",
@@ -247,6 +271,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Camisola forestal",
+                "img": "/images/piezas/camisola-forestal.svg",
+                "alt": "Camisola forestal para bombero",
                 "desc": "Camisola de manga larga en tela inherentemente ignífuga y construcción ventilada. Es la prenda preferida por cuadrillas de línea sobre la chamarra.",
                 "chips": [
                       "Fibra inherente",
@@ -257,6 +283,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón cargo forestal",
+                "img": "/images/piezas/pantalon-cargo-forestal.svg",
+                "alt": "Pantalón cargo forestal para bombero",
                 "desc": "Pantalón tipo cargo en tela ignífuga inherente, con bolsas de carga, refuerzos y ajuste en valenciana para terreno agreste y uso con mochila.",
                 "chips": [
                       "Bolsas cargo",
@@ -267,6 +295,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Chamarra forestal",
+                "img": "/images/piezas/chamarra-forestal.svg",
+                "alt": "Chamarra forestal para bombero",
                 "desc": "Chamarra de combate de una sola capa, con más cobertura que la camisola, cierre interno y solapa exterior. Para interfaz urbano-rural y quema controlada.",
                 "chips": [
                       "Monocapa",
@@ -277,6 +307,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Overol forestal",
+                "img": "/images/piezas/overol-forestal.svg",
+                "alt": "Overol forestal para bombero",
                 "desc": "Overol de una pieza en tela ignífuga inherente, alternativa al conjunto de dos piezas cuando se busca cobertura continua sin interfaz camisa-pantalón.",
                 "chips": [
                       "Una pieza",
@@ -287,6 +319,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Nuquera forestal",
+                "img": "/images/piezas/nuquera-forestal.svg",
+                "alt": "Nuquera forestal para bombero",
                 "desc": "Protector de nuca en tela ignífuga que se acopla al casco y cubre cuello y orejas de la lluvia de pavesas y del calor radiante.",
                 "chips": [
                       "Acople a casco",
@@ -297,6 +331,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto dual forestal y rescate",
+                "img": "/images/piezas/conjunto-dual-forestal-y-rescate.svg",
+                "alt": "Conjunto dual forestal y rescate para bombero",
                 "desc": "Chaqueta y pantalón certificados a la vez para incendio forestal y rescate técnico, para brigadas que atienden ambos escenarios con un solo equipo.",
                 "chips": [
                       "Doble certificación",
@@ -339,6 +375,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaquetón aluminizado de aproximación",
+                "img": "/images/piezas/chaqueton-aluminizado-de-aproximacion.svg",
+                "alt": "Chaquetón aluminizado de aproximación para bombero",
                 "desc": "Capa exterior aluminizada que refleja el calor radiante sobre un forro ignífugo. Se usa encima de ropa de trabajo no inflamable.",
                 "chips": [
                       "Exterior aluminizado",
@@ -349,6 +387,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón aluminizado de aproximación",
+                "img": "/images/piezas/pantalon-aluminizado-de-aproximacion.svg",
+                "alt": "Pantalón aluminizado de aproximación para bombero",
                 "desc": "Pantalón aluminizado con tirantes para ajustar el largo y puños ajustables. Complemento del chaquetón en el mismo nivel de protección radiante.",
                 "chips": [
                       "Aluminizado",
@@ -359,6 +399,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Capucha aluminizada con visor dorado",
+                "img": "/images/piezas/capucha-aluminizada-con-visor-dorado.svg",
+                "alt": "Capucha aluminizada con visor dorado para bombero",
                 "desc": "Capucha con casco duro de ajuste dentado, visor con película dorada y cobertor que abarca todo el hombro. Protege cabeza, cara y cuello del calor radiante.",
                 "chips": [
                       "Visor dorado",
@@ -369,6 +411,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Guantes aluminizados de tres dedos",
+                "img": "/images/piezas/guantes-aluminizados-de-tres-dedos.svg",
+                "alt": "Guantes aluminizados de tres dedos para bombero",
                 "desc": "Manopla con dorso aluminizado y palma resistente al calor. Sacrifica destreza para maximizar el aislamiento de la mano.",
                 "chips": [
                       "Manopla 3 dedos",
@@ -379,6 +423,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Polainas aluminizadas para bota",
+                "img": "/images/piezas/polainas-aluminizadas-para-bota.svg",
+                "alt": "Polainas aluminizadas para bota para bombero",
                 "desc": "Cobertores aluminizados que se fijan con velcro detrás de la bota. Se usan sobre el calzado de trabajo, no lo sustituyen.",
                 "chips": [
                       "Se usa sobre bota",
@@ -389,6 +435,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Delantal aluminizado",
+                "img": "/images/piezas/delantal-aluminizado.svg",
+                "alt": "Delantal aluminizado para bombero",
                 "desc": "Protección frontal contra calor radiante y salpicadura de metal fundido, para operaciones donde no se justifica el conjunto completo.",
                 "chips": [
                       "Protección frontal",
@@ -431,6 +479,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Conjunto de penetración de corta duración",
+                "img": "/images/piezas/conjunto-de-penetracion-de-corta-duracion.svg",
+                "alt": "Conjunto de penetración de corta duración para bombero",
                 "desc": "Conjunto aluminizado fuertemente aislado para entrada rápida y salida: da tiempo para un rescate o para cerrar una válvula en fuego declarado.",
                 "chips": [
                       "Multicapa aislado",
@@ -441,6 +491,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto de penetración avanzada",
+                "img": "/images/piezas/conjunto-de-penetracion-avanzada.svg",
+                "alt": "Conjunto de penetración avanzada para bombero",
                 "desc": "Nivel máximo de la escala aluminizada, con aislamiento adicional para engullimiento total por flama. Pesa más y limita la movilidad a propósito.",
                 "chips": [
                       "Aislamiento reforzado",
@@ -451,6 +503,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Capucha de penetración con visor doble",
+                "img": "/images/piezas/capucha-de-penetracion-con-visor-doble.svg",
+                "alt": "Capucha de penetración con visor doble para bombero",
                 "desc": "Capucha del conjunto de entrada con casco duro de ajuste dentado, visor con película dorada de doble capa y cobertor que abarca todo el hombro.",
                 "chips": [
                       "Visor doble capa",
@@ -461,6 +515,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Guantes mitón de penetración",
+                "img": "/images/piezas/guantes-miton-de-penetracion.svg",
+                "alt": "Guantes mitón de penetración para bombero",
                 "desc": "Mitón aluminizado con palma de alto aislamiento: el nivel máximo de protección de manos del conjunto de entrada.",
                 "chips": [
                       "Mitón",
@@ -471,6 +527,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto para mantenimiento de hornos",
+                "img": "/images/piezas/conjunto-para-mantenimiento-de-hornos.svg",
+                "alt": "Conjunto para mantenimiento de hornos para bombero",
                 "desc": "Variante del conjunto de corta duración para trabajo en caliente: mismo aislamiento, visor transparente de doble capa y parches en codos y rodillas.",
                 "chips": [
                       "Visor transparente",
@@ -481,6 +539,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pasamontañas y talega de conjunto",
+                "img": "/images/piezas/pasamontanas-y-talega-de-conjunto.svg",
+                "alt": "Pasamontañas y talega de conjunto para bombero",
                 "desc": "Pasamontañas ignífugo que se usa bajo la capucha y talega de nailon balístico para transportar y guardar el conjunto sin dañarlo.",
                 "chips": [
                       "Pasamontañas FR",
@@ -523,6 +583,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaqueta de rescate técnico",
+                "img": "/images/piezas/chaqueta-de-rescate-tecnico.svg",
+                "alt": "Chaqueta de rescate técnico para bombero",
                 "desc": "Chaqueta monocapa ligera para extricación, accidentes viales, rescate y mando de incidente. Más protección que el uniforme de estación, mucho menos carga térmica que el chaquetón.",
                 "chips": [
                       "Monocapa",
@@ -533,6 +595,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón de rescate técnico",
+                "img": "/images/piezas/pantalon-de-rescate-tecnico.svg",
+                "alt": "Pantalón de rescate técnico para bombero",
                 "desc": "Pantalón monocapa ignífugo con rodillas acolchadas y reforzadas, diseñado para trabajar hincado sobre vidrio y lámina.",
                 "chips": [
                       "Rodilla acolchada",
@@ -543,6 +607,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto de extricación",
+                "img": "/images/piezas/conjunto-de-extricacion.svg",
+                "alt": "Conjunto de extricación para bombero",
                 "desc": "Chaqueta y pantalón que se cotizan como set. Evita rasgar y contaminar el traje estructural en llamados que no son de incendio.",
                 "chips": [
                       "Set de dos piezas",
@@ -553,6 +619,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Overol de rescate técnico",
+                "img": "/images/piezas/overol-de-rescate-tecnico.svg",
+                "alt": "Overol de rescate técnico para bombero",
                 "desc": "Overol de una pieza para vestido rápido y cobertura continua, alternativa al conjunto de dos piezas.",
                 "chips": [
                       "Una pieza",
@@ -563,6 +631,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Conjunto dual rescate y forestal",
+                "img": "/images/piezas/conjunto-dual-rescate-y-forestal.svg",
+                "alt": "Conjunto dual rescate y forestal para bombero",
                 "desc": "Certificado a la vez para rescate técnico y combate forestal, para cuerpos que atienden ambos escenarios sin comprar dos equipos.",
                 "chips": [
                       "Doble certificación",
@@ -573,6 +643,8 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalón de cubierta para rescate",
+                "img": "/images/piezas/pantalon-de-cubierta-para-rescate.svg",
+                "alt": "Pantalón de cubierta para rescate para bombero",
                 "desc": "Pantalón exterior que se pone rápido sobre el uniforme de estación para llamados de rescate, sin vestir el equipo estructural completo.",
                 "chips": [
                       "Sobre uniforme",

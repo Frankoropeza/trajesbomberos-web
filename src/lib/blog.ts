@@ -34,6 +34,19 @@ export function categoriaNombre(slug: string): string {
   return blogCategoria(slug)?.nombre ?? slug;
 }
 
+/**
+ * Artículos para una familia de traje. Primero los que hablan de
+ * esa familia; si no alcanzan, se completa con los más recientes
+ * para que el bloque nunca quede a medias.
+ */
+export async function getPostsByFamilia(familia: string | undefined, limit = 3): Promise<Post[]> {
+  const posts = await getPosts();
+  if (!familia) return posts.slice(0, limit);
+  const propios = posts.filter((p) => p.data.familia === familia);
+  const resto = posts.filter((p) => p.data.familia !== familia);
+  return [...propios, ...resto].slice(0, limit);
+}
+
 /** Conteo por categoría, para el sidebar y el índice. */
 export async function categoriasConConteo() {
   const posts = await getPosts();
