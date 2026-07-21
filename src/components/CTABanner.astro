@@ -1,0 +1,106 @@
+---
+// CTABanner: banda de conversión con tres variantes de fondo
+// (red sólido · dark gradiente · light gris con bordes).
+// Data-driven desde cta-presets.ts. Botones tipados por icono.
+// Foco visible AA; en móvil los botones van full-width.
+import type { CtaPreset, CtaIcon } from '@lib/cta-presets';
+
+interface Props extends CtaPreset {
+  variant?: 'red' | 'dark' | 'light';
+}
+const { title, text, buttons, variant = 'red' } = Astro.props;
+
+const ICONS: Record<CtaIcon, string> = {
+  wa: 'M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z',
+  arrow: 'M5 12h14M13 6l6 6-6 6',
+  phone: 'M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z',
+  catalog: 'M4 4h7v16H4zM13 4h7v16h-7',
+  info: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 5v1m0 3v6',
+  quote: 'M6 2h9l5 5v15H6V2zm8 1v5h5M9 13h6M9 17h4',
+};
+---
+<aside class:list={['ctab', `ctab--${variant}`]}>
+  <div class="container ctab__inner">
+    <div class="ctab__text">
+      <p class="ctab__title">{title}</p>
+      {text && <p class="ctab__lead">{text}</p>}
+    </div>
+    <div class="ctab__actions">
+      {buttons.map((b) => (
+        <a
+          class:list={['ctab__btn', { 'ctab__btn--primary': b.primary }]}
+          href={b.href}
+          target={b.external ? '_blank' : undefined}
+          rel={b.external ? 'noopener nofollow' : undefined}
+        >
+          {b.icon && (
+            <svg width="17" height="17" viewBox="0 0 24 24" fill={b.icon === 'wa' ? 'currentColor' : 'none'} stroke={b.icon === 'wa' ? 'none' : 'currentColor'} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d={ICONS[b.icon]} />
+            </svg>
+          )}
+          {b.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</aside>
+
+<style>
+  .ctab { --ctab-fg: var(--color-white); }
+  .ctab--red { background: var(--color-primary); }
+  .ctab--dark { background: linear-gradient(120deg, var(--color-ink) 0%, var(--color-ink-soft) 100%); }
+  .ctab--light {
+    background: var(--color-light);
+    border-block: var(--border);
+    --ctab-fg: var(--color-dark);
+  }
+
+  .ctab__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(1.5rem, 4vw, 4rem);
+    padding-block: clamp(1.8rem, 3vw, 2.8rem);
+    flex-wrap: wrap;
+  }
+  .ctab__text { flex: 1 1 380px; }
+  .ctab__title {
+    margin: 0 0 0.35rem;
+    font-size: clamp(1.15rem, 1.9vw, 1.6rem);
+    font-weight: 800;
+    letter-spacing: var(--tracking-tight);
+    color: var(--ctab-fg);
+    text-wrap: balance;
+  }
+  .ctab__lead {
+    margin: 0;
+    font-size: 0.94rem;
+    max-width: 68ch;
+    color: color-mix(in srgb, var(--ctab-fg) 78%, transparent);
+  }
+  .ctab--light .ctab__lead { color: var(--color-gray); }
+
+  .ctab__actions { display: flex; gap: 0.7rem; flex-wrap: wrap; flex-shrink: 0; }
+  .ctab__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--ctab-fg);
+    color: var(--ctab-fg);
+    font-weight: 700;
+    font-size: 0.93rem;
+    text-decoration: none;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  }
+  .ctab__btn:hover { transform: translateY(-1px); }
+  .ctab__btn--primary { background: var(--color-white); color: var(--color-primary); border-color: var(--color-white); }
+  .ctab--light .ctab__btn--primary { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+  .ctab__btn:not(.ctab__btn--primary):hover { background: color-mix(in srgb, var(--ctab-fg) 14%, transparent); }
+
+  @media (max-width: 560px) {
+    .ctab__actions { width: 100%; }
+    .ctab__btn { flex: 1 1 100%; justify-content: center; min-height: 50px; }
+  }
+</style>

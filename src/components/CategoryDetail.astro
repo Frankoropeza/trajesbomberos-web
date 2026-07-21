@@ -1,0 +1,112 @@
+---
+// CategoryDetail: bloque "a fondo". Dos columnas — información
+// detallada a la izquierda (título, párrafos, puntos clave y CTA)
+// y galería a la derecha (una imagen grande y dos debajo).
+// REGLA DURA: todos idénticos, sin zig-zag.
+//
+// Cuándo usarlo vs CategoryFeature: CategoryDetail amplía una
+// categoría en su propia página (L3) o como bloque "a fondo" en
+// la home. CategoryFeature *vende* la categoría antes de entrar.
+interface Props {
+  eyebrow?: string;
+  title: string;
+  paragraphs: string[];
+  points: string[];
+  ctaLabel: string;
+  ctaHref: string;
+  external?: boolean;
+  images: { src: string; alt: string }[];  // [grande, chica, chica]
+}
+const { eyebrow, title, paragraphs, points, ctaLabel, ctaHref, external = false, images } = Astro.props;
+---
+<div class="detail-grid">
+  <div class="detail-info">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h2>{title}</h2>
+    {paragraphs.map((p) => <p class="detail-p">{p}</p>)}
+    <ul class="detail-points">
+      {points.map((pt) => <li>{pt}</li>)}
+    </ul>
+    <a
+      class="btn"
+      href={ctaHref}
+      target={external ? '_blank' : undefined}
+      rel={external ? 'noopener nofollow' : undefined}
+    >{ctaLabel}</a>
+  </div>
+
+  <div class="detail-gallery">
+    {images.slice(0, 3).map((img, i) => (
+      <img
+        src={img.src}
+        alt={img.alt}
+        width={i === 0 ? 800 : 400}
+        height={i === 0 ? 500 : 250}
+        loading="lazy"
+        decoding="async"
+        class:list={[i === 0 ? 'detail-img--big' : 'detail-img--small']}
+      />
+    ))}
+  </div>
+</div>
+
+<style>
+  .detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: start;
+  }
+  h2 { font-size: var(--fs-h2); margin: 0 0 1rem; text-wrap: balance; }
+  .detail-p { color: var(--color-gray); margin: 0 0 1rem; max-width: 68ch; }
+  .detail-points {
+    list-style: none;
+    margin: 1.4rem 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+  .detail-points li {
+    position: relative;
+    padding-left: 1.9rem;
+    font-size: 0.94rem;
+    color: var(--color-dark);
+  }
+  .detail-points li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-primary-light);
+    border: 1px solid rgb(200 16 46 / 0.28);
+    color: var(--color-primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .detail-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .detail-gallery img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+  }
+  .detail-img--big { grid-column: 1 / -1; }
+
+  @media (max-width: 900px) {
+    .detail-grid { grid-template-columns: 1fr; }
+  }
+</style>

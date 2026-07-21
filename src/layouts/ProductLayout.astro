@@ -1,0 +1,208 @@
+---
+// ProductLayout (L3 · ficha de familia).
+// Jerarquía canónica: BaseLayout → PageLayout → ProductLayout.
+// Encapsula la secuencia fija de una ficha para que las seis
+// familias queden homologadas: a fondo → qué pedir → complementos
+// → FAQ → otras familias → CTA de cierre.
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import CategoryDetail from '@components/CategoryDetail.astro';
+import CategoryCard from '@components/CategoryCard.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import CTABanner from '@components/CTABanner.astro';
+import { PRODUCT_CATEGORIES, WA_MESSAGES, COMPLEMENTOS } from '@config/site';
+import { presetCategoria } from '@lib/cta-presets';
+import { waUrl } from '@lib/wa';
+import type { FamiliaDetalle } from '@lib/familias';
+
+interface Props {
+  familia: FamiliaDetalle;
+}
+const { familia: f } = Astro.props;
+
+const path = `/trajes/${f.slug}/`;
+const otras = PRODUCT_CATEGORIES.filter((c) => c.slug !== f.slug);
+
+const menuItems = [
+  { label: 'A fondo', href: '#a-fondo' },
+  { label: 'Qué pedir', href: '#especificar' },
+  { label: 'Complementos', href: '#complementos' },
+  { label: 'Preguntas', href: '#faq' },
+  { label: 'Todos los trajes', href: '/trajes/' },
+];
+---
+<PageLayout
+  pageType="producto"
+  path={path}
+  title={f.seoTitle}
+  description={f.seoDescription}
+  keywords={f.keywords}
+  menuItems={menuItems}
+  crumbLabel={f.nombreWa}
+  parent={{ name: 'Trajes', href: '/trajes/' }}
+  eyebrow={f.eyebrow}
+  h1={f.h1}
+  h1Accent={f.h1Accent}
+  lead={f.lead}
+  faqs={f.faqs}
+>
+  <!-- 1 · A fondo -->
+  <section class="section" id="a-fondo">
+    <div class="container">
+      <CategoryDetail
+        eyebrow="A fondo"
+        title={f.title}
+        paragraphs={[f.description]}
+        points={f.features}
+        images={f.images}
+        ctaLabel={`Cotizar ${f.nombreWa.toLowerCase()}`}
+        ctaHref={waUrl(WA_MESSAGES.categoria(f.nombreWa))}
+        external
+      />
+    </div>
+  </section>
+
+  <!-- 2 · Qué pedir en la cotización -->
+  <section class="section section--alt" id="especificar">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Qué pedir"
+        title="Los datos que debe traer tu cotización"
+        description="Cópialos tal cual en tu requisición. Si una oferta no puede darlos, todavía no es comparable con otra."
+      />
+      <ol class="pedir">
+        {f.especificar.map((e, i) => (
+          <li>
+            <span class="pedir__n">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{e.titulo}</h3>
+            <p>{e.desc}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- 3 · Complementos -->
+  <section class="section" id="complementos">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Para cerrar el conjunto"
+        title="Lo que se cotiza junto con el traje"
+        description="No son nuestra línea principal, pero los conseguimos para que no tengas que armar el pedido con tres proveedores."
+      />
+      <ul class="complementos-list">
+        {COMPLEMENTOS.map((c) => (
+          <li><strong>{c.nombre}</strong> — {c.nota}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 · FAQ de la familia -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Preguntas frecuentes"
+        title={`Dudas sobre ${f.nombreWa.toLowerCase()}`}
+      />
+      <FAQWithContact items={f.faqs} />
+    </div>
+  </section>
+
+  <!-- 5 · Otras familias -->
+  <section class="section" id="otras">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Otras familias"
+        title="Quizá lo que necesitas es otro traje"
+        description="Cada familia responde a un riesgo distinto. Si tu operación no encaja con esta, entra a la que corresponde."
+      />
+      <div class="grid-cards grid-cards--3">
+        {otras.map((cat, i) => (
+          <CategoryCard
+            href={`/trajes/${cat.slug}/`}
+            image={cat.image}
+            imageAlt={cat.imageAlt}
+            title={cat.nombre}
+            desc={cat.desc}
+            chips={[...cat.chips]}
+            ctaLabel="Ver ficha"
+            index={i}
+          />
+        ))}
+      </div>
+      <p class="volver"><a href="/trajes/">← Volver al índice de trajes</a></p>
+    </div>
+  </section>
+
+  <!-- 6 · CTA de cierre -->
+  <CTABanner variant="dark" {...presetCategoria(f.nombreWa)} />
+</PageLayout>
+
+<style>
+  .pedir {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pedir li {
+    padding: 1.5rem clamp(1rem, 1.8vw, 1.9rem);
+    border-left: var(--border);
+    border-bottom: var(--border);
+  }
+  .pedir li:first-child { border-left: 0; padding-left: 0; }
+  .pedir__n {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+  }
+  .pedir h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+  .pedir p { margin: 0; font-size: 0.86rem; color: var(--color-gray); line-height: 1.55; }
+
+  .complementos-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .complementos-list li {
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+  }
+  .complementos-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.58rem;
+    width: 5px;
+    height: 5px;
+    background: var(--color-primary);
+  }
+  .complementos-list strong { color: var(--color-dark); }
+
+  .volver { margin: 2.2rem 0 0; }
+  .volver a { font-weight: 800; text-decoration: none; }
+  .volver a:hover { text-decoration: underline; }
+
+  @media (max-width: 1100px) {
+    .pedir { grid-template-columns: repeat(2, 1fr); }
+    .pedir li:first-child { border-left: var(--border); padding-left: 1.4rem; }
+    .pedir li:nth-child(odd) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 900px) { .complementos-list { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) {
+    .pedir { grid-template-columns: 1fr; }
+    .pedir li { border-left: 0 !important; padding-left: 0 !important; }
+    .complementos-list { grid-template-columns: 1fr; }
+  }
+</style>
