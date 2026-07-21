@@ -8290,6 +8290,1683 @@ export const PIEZAS: Pieza[] = [
         "href": "/#vida-util"
       }
     ]
+  },
+  {
+    "slug": "chaqueta",
+    "familia": "extricacion",
+    "nombreCard": "Chaqueta de rescate técnico",
+    "nombre": "Chaqueta de rescate técnico",
+    "seoTitle": "Chaqueta de rescate técnico | extricación | México",
+    "seoDescription": "Chaqueta de rescate técnico monocapa para extricación y accidentes viales: resistencia a corte y punción con mucha menos carga térmica que un chaquetón.",
+    "keywords": [
+      "chaqueta de rescate técnico",
+      "extricación",
+      "México"
+    ],
+    "eyebrow": "Pieza · Rescate técnico",
+    "h1": "Chaqueta de rescate técnico",
+    "h1Accent": "para extricación",
+    "lead": "Prenda superior monocapa para accidentes viales, rescate y mando de incidente: protege más que el uniforme de estación y pesa mucho menos que el chaquetón.",
+    "descRight": [
+      "La mayoría de las salidas de un cuerpo de bomberos no son incendios. Son choques, rescates y apoyos, y en todos ellos el chaquetón estructural estorba, da calor y se contamina con aceite, vidrio y fluidos que le consumen vida útil.",
+      "La chaqueta de rescate resuelve ese hueco: resistencia a corte y punción, barrera contra patógenos y peso bajo. Es la prenda que evita gastar el equipo caro en la salida que se repite todos los días."
+    ],
+    "meta": [
+      "Monocapa",
+      "Corte y punción",
+      "Barrera de patógenos",
+      "NFPA 1950 (ex 1951)"
+    ],
+    "resumen": [
+      "En rescate vehicular el riesgo cambia de naturaleza: ya no es térmico sino mecánico y biológico. Vidrio laminado, lámina cortada, herramienta hidráulica, sangre y fluidos. Una chaqueta de rescate está construida para eso, con refuerzos en codos y antebrazos y barrera contra patógenos.",
+      "Al ser monocapa, la carga térmica es una fracción de la del chaquetón estructural. Eso importa porque una extricación puede durar cuarenta minutos de trabajo físico continuo, muchas veces bajo sol o con el motor de la herramienta cerca."
+    ],
+    "puntosClave": [
+      "Construcción monocapa: mucha menos carga térmica que el chaquetón",
+      "Resistencia a corte y punción para vidrio y lámina",
+      "Barrera contra patógenos transmitidos por sangre",
+      "Refuerzos en codos y antebrazos, zonas de apoyo real",
+      "Alta visibilidad para trabajo nocturno sobre carretera",
+      "Protege la vida útil del traje estructural"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/chaqueta-de-rescate-tecnico.svg",
+        "alt": "Chaqueta de rescate técnico para extricación"
+      },
+      {
+        "src": "/images/productos/chaqueta-extricacion-rescate.svg",
+        "alt": "Chaqueta de extricación para rescate técnico"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1951)",
+            "nota": "La 1951 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Niveles de certificación",
+            "valor": "Existen dos niveles según fabricante",
+            "nota": "Conviene declarar cuál se requiere en el pliego"
+          },
+          {
+            "campo": "Protección biológica",
+            "valor": "Barrera contra patógenos",
+            "nota": "Debe estar declarada en la ficha"
+          },
+          {
+            "campo": "Lo que NO cubre",
+            "valor": "Ataque interior a incendio",
+            "nota": "Protección limitada frente a flash"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Sin barrera de humedad ni térmica de traje estructural"
+          },
+          {
+            "campo": "Resistencia mecánica",
+            "valor": "A corte y punción",
+            "nota": "El requisito central de la prenda"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Codos y antebrazos",
+            "nota": "Zonas de apoyo dentro del vehículo"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "Alta visibilidad",
+            "nota": "Trabajo nocturno sobre carretera"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por pecho y largo de manga",
+            "nota": "Considerar el uniforme que va debajo"
+          },
+          {
+            "campo": "Tela exterior",
+            "valor": "Varias opciones según fabricante",
+            "nota": "Cambia peso, transpirabilidad y resistencia"
+          },
+          {
+            "campo": "Nivel de certificación",
+            "valor": "Se define en la orden",
+            "nota": "No todos los modelos ofrecen ambos"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Descontaminación",
+            "valor": "Protocolo biológico tras contacto con fluidos",
+            "nota": "No basta el lavado por suciedad visible"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Tras cada uso",
+            "nota": "Cortes, perforaciones y estado de la cinta"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por daño mecánico o contaminación no removible",
+            "nota": "No tiene fecha fija como el estructural"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaqueta monocapa con refuerzos en codos y antebrazos",
+      "Cinta reflejante de alta visibilidad",
+      "Ficha técnica con nivel de certificación declarado"
+    ],
+    "noIncluye": [
+      "Pantalón de rescate: se cotiza por separado",
+      "Guantes de extricación",
+      "Casco y goggles"
+    ],
+    "errores": [
+      {
+        "error": "Seguir saliendo a choques con el chaquetón estructural",
+        "realidad": "Lo contaminas con aceite y fluidos y le consumes vida útil a un equipo que se retira a los diez años de fabricado."
+      },
+      {
+        "error": "Suponer que sirve para entrar a fuego",
+        "realidad": "Es monocapa con protección limitada frente a flash. No sustituye al conjunto estructural en ningún escenario de incendio."
+      },
+      {
+        "error": "No declarar el nivel de certificación en el pliego",
+        "realidad": "Existen dos niveles. Si no lo especificas, recibes el más económico y puede no cubrir tu operación."
+      },
+      {
+        "error": "Omitir la cinta reflejante",
+        "realidad": "Casi toda extricación ocurre sobre carretera y muchas veces de noche. La visibilidad ahí es seguridad vial, no acabado."
+      },
+      {
+        "error": "Lavarla solo cuando se ve sucia",
+        "realidad": "El riesgo es biológico. Tras contacto con fluidos aplica protocolo de descontaminación, no un lavado normal."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Extricación vehicular",
+        "desc": "Accidentes de tránsito con atrapamiento."
+      },
+      {
+        "titulo": "Rescate técnico",
+        "desc": "Estructuras colapsadas y espacios confinados."
+      },
+      {
+        "titulo": "Mando de incidente",
+        "desc": "Personal que dirige sin entrar a la zona caliente."
+      },
+      {
+        "titulo": "Atención prehospitalaria",
+        "desc": "Apoyo médico con riesgo biológico."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué no usar el chaquetón estructural?",
+        "a": "Porque lo contaminas con aceite, vidrio y fluidos, y le consumes vida útil a un equipo que la norma retira a los diez años de fabricado. Además pesa y da calor en un trabajo que puede durar cuarenta minutos de esfuerzo continuo."
+      },
+      {
+        "q": "¿Protege del fuego?",
+        "a": "Solo de forma limitada frente a un flash. No es equipo para entrar a incendio ni sustituye al conjunto estructural. Es equipo de rescate técnico, con riesgo mecánico y biológico como preocupación central."
+      },
+      {
+        "q": "¿Qué son los dos niveles de certificación?",
+        "a": "La referencia de rescate técnico contempla más de un nivel de exigencia según el escenario. Si tu pliego no lo declara, puedes recibir el nivel más básico. Conviene definirlo desde la requisición."
+      },
+      {
+        "q": "¿Qué diferencia hay con una chamarra de trabajo?",
+        "a": "La resistencia a corte y punción, la barrera contra patógenos y la certificación. Una chamarra de trabajo se rasga con la lámina cortada y no ofrece barrera biológica frente a sangre."
+      },
+      {
+        "q": "¿Cómo se descontamina?",
+        "a": "Con protocolo biológico cuando hubo contacto con fluidos, no con un lavado por suciedad visible. Conviene tenerlo escrito en el procedimiento de la estación, porque es lo que más se improvisa."
+      },
+      {
+        "q": "¿Cada cuánto se retira?",
+        "a": "No tiene fecha fija como el traje estructural. Se retira por condición: cortes, perforaciones, pérdida de la barrera o contaminación que no se puede remover."
+      },
+      {
+        "q": "¿Se puede usar sobre el uniforme de estación?",
+        "a": "Sí, es lo habitual. Está pensada para colocarse rápido sobre la ropa de trabajo cuando entra el llamado, sin vestir el conjunto estructural completo."
+      },
+      {
+        "q": "¿Conviene comprarla si mi presupuesto es limitado?",
+        "a": "Si tu cuerpo sale con frecuencia a accidentes viales, es de las inversiones que más rápido se pagan: cada salida que no gasta el traje estructural es vida útil conservada de un equipo mucho más caro."
+      }
+    ],
+    "sinonimos": [
+      "chaqueta de rescate",
+      "chaqueta de extricación",
+      "chamarra de rescate técnico",
+      "rescue coat",
+      "extrication jacket",
+      "chaqueta USAR"
+    ],
+    "sinonimosNota": "Se pide como chaqueta de rescate o de extricación. En catálogo de importación aparece como rescue coat o extrication jacket.",
+    "comparativa": {
+      "titulo": "Chaqueta de rescate o chaquetón estructural",
+      "intro": "La comparación que decide si tu traje caro dura diez años o cinco.",
+      "columnas": [
+        "Criterio",
+        "Chaqueta de rescate",
+        "Chaquetón estructural"
+      ],
+      "filas": [
+        [
+          "Carga térmica",
+          "Baja",
+          "Alta"
+        ],
+        [
+          "Riesgo que cubre",
+          "Mecánico y biológico",
+          "Térmico"
+        ],
+        [
+          "Costo de reposición",
+          "Bajo",
+          "Alto"
+        ],
+        [
+          "En extricación",
+          "Es la prenda correcta",
+          "Se contamina y pierde vida útil"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalón de rescate técnico: la otra mitad",
+        "href": "/trajes/extricacion/pantalon/"
+      },
+      {
+        "label": "Conjunto de extricación completo",
+        "href": "/trajes/extricacion/conjunto/"
+      },
+      {
+        "label": "Vida útil del traje estructural",
+        "href": "/#vida-util"
+      }
+    ]
+  },
+  {
+    "slug": "pantalon",
+    "familia": "extricacion",
+    "nombreCard": "Pantalón de rescate técnico",
+    "nombre": "Pantalón de rescate técnico",
+    "seoTitle": "Pantalón de rescate técnico | extricación | México",
+    "seoDescription": "Pantalón de rescate técnico monocapa con rodillas acolchadas y reforzadas, para trabajar hincado sobre vidrio y lámina en extricación vehicular.",
+    "keywords": [
+      "pantalón de rescate técnico",
+      "extricación",
+      "México"
+    ],
+    "eyebrow": "Pieza · Rescate técnico",
+    "h1": "Pantalón de rescate técnico",
+    "h1Accent": "rodilla acolchada y reforzada",
+    "lead": "Prenda inferior monocapa pensada para el trabajo de rodillas junto al vehículo, sobre vidrio, lámina y asfalto caliente.",
+    "descRight": [
+      "En una extricación se trabaja hincado casi todo el tiempo: junto a la puerta, dentro del habitáculo, bajo el chasis. La rodilla apoya sobre vidrio laminado, lámina cortada y asfalto, y ahí es donde el pantalón se decide.",
+      "Por eso lleva doble tratamiento en la rodilla: acolchado para el apoyo prolongado y refuerzo para la abrasión y la punción. No es lo mismo que la rodillera del pantalón estructural, que resuelve solo la comodidad."
+    ],
+    "meta": [
+      "Monocapa",
+      "Rodilla acolchada",
+      "Corte y punción",
+      "NFPA 1950 (ex 1951)"
+    ],
+    "resumen": [
+      "El pantalón de rescate técnico repite la lógica de la chaqueta: una sola capa, resistencia mecánica alta y barrera contra patógenos, con la carga térmica reducida al mínimo. La diferencia está concentrada en la rodilla, que es la zona de trabajo real.",
+      "El acolchado permite permanecer hincado sin lesión por presión, y el refuerzo exterior aguanta el vidrio y la lámina. Ambas cosas juntas: un pantalón con acolchado pero sin refuerzo se perfora, y uno con refuerzo pero sin acolchado se vuelve intolerable a los veinte minutos."
+    ],
+    "puntosClave": [
+      "Rodilla con acolchado y refuerzo: dos funciones distintas",
+      "Resistencia a corte y punción en toda la prenda",
+      "Barrera contra patógenos declarada en ficha",
+      "Carga térmica muy inferior a la de una pantalonera estructural",
+      "Cinta reflejante en pierna para trabajo nocturno en carretera",
+      "Se cotiza suelto o dentro del conjunto de extricación"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/pantalon-de-rescate-tecnico.svg",
+        "alt": "Pantalón de rescate técnico para extricación"
+      },
+      {
+        "src": "/images/productos/pantalon-extricacion-rescate.svg",
+        "alt": "Pantalón de extricación para rescate técnico"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1951)",
+            "nota": "La 1951 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Niveles de certificación",
+            "valor": "Dos niveles según fabricante",
+            "nota": "Declararlo en el pliego"
+          },
+          {
+            "campo": "Protección biológica",
+            "valor": "Barrera contra patógenos",
+            "nota": "Debe venir declarada"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Carga térmica reducida"
+          },
+          {
+            "campo": "Rodilla",
+            "valor": "Acolchada y reforzada",
+            "nota": "Dos funciones: presión y abrasión"
+          },
+          {
+            "campo": "Resistencia mecánica",
+            "valor": "A corte y punción",
+            "nota": "Vidrio laminado y lámina cortada"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "En pierna",
+            "nota": "Visibilidad con el elemento hincado"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por cintura y largo",
+            "nota": "Considerar el uniforme que va debajo"
+          },
+          {
+            "campo": "Cierre de cintura",
+            "valor": "Según modelo",
+            "nota": "Debe permitir vestido rápido"
+          },
+          {
+            "campo": "Bolsas",
+            "valor": "De carga y para herramienta menor",
+            "nota": "Se define en la orden"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Descontaminación",
+            "valor": "Protocolo biológico tras contacto con fluidos",
+            "nota": "La rodilla es la zona que más contacto tiene"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Tras cada uso",
+            "nota": "Perforaciones en rodilla y estado del acolchado"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por daño o contaminación no removible",
+            "nota": "Sin fecha fija"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Pantalón monocapa con rodilla acolchada y reforzada",
+      "Cinta reflejante en pierna",
+      "Ficha técnica con nivel de certificación"
+    ],
+    "noIncluye": [
+      "Chaqueta de rescate: se cotiza por separado",
+      "Cinturón",
+      "Rodilleras exteriores independientes"
+    ],
+    "errores": [
+      {
+        "error": "Elegirlo solo con refuerzo, sin acolchado",
+        "realidad": "Aguanta el vidrio pero se vuelve intolerable a los veinte minutos de trabajo hincado. Se necesitan las dos cosas."
+      },
+      {
+        "error": "Usar la pantalonera estructural en extricación",
+        "realidad": "Pesa, da calor y se contamina con fluidos. Es la forma más rápida de acortar la vida útil del equipo caro."
+      },
+      {
+        "error": "Ignorar la cinta reflejante en pierna",
+        "realidad": "Con el elemento hincado junto al vehículo, la banda de pierna es la que lo hace visible al tránsito."
+      },
+      {
+        "error": "No revisar la rodilla después de cada salida",
+        "realidad": "Es la zona que más contacto tiene con vidrio y fluidos. Una perforación pequeña anula la barrera biológica."
+      },
+      {
+        "error": "Comprar sin declarar el nivel de certificación",
+        "realidad": "Existen dos niveles. Sin especificarlo, recibes el más económico y puede no cubrir tu operación."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Extricación vehicular",
+        "desc": "Trabajo hincado junto al vehículo y dentro del habitáculo."
+      },
+      {
+        "titulo": "Rescate en estructuras",
+        "desc": "Colapso y espacios confinados con superficies cortantes."
+      },
+      {
+        "titulo": "Atención prehospitalaria",
+        "desc": "Apoyo médico en escena con riesgo biológico."
+      },
+      {
+        "titulo": "Reposición del conjunto",
+        "desc": "Se gasta antes que la chaqueta por la rodilla."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué la rodilla lleva acolchado y refuerzo?",
+        "a": "Porque resuelven cosas distintas. El acolchado permite estar hincado mucho tiempo sin lesión por presión; el refuerzo aguanta la abrasión y la punción del vidrio y la lámina. Un pantalón con solo una de las dos falla por el otro lado."
+      },
+      {
+        "q": "¿Es lo mismo que la rodillera del pantalón estructural?",
+        "a": "No. En estructural la rodillera es de espuma y resuelve comodidad. Aquí el requisito es mecánico: hay que resistir vidrio laminado y borde de lámina cortada, además de dar apoyo cómodo."
+      },
+      {
+        "q": "¿Puedo usar la pantalonera estructural?",
+        "a": "Puedes, pero es justo lo que conviene evitar. Pesa, da calor durante un trabajo físico largo y se contamina con aceite y fluidos que le consumen vida útil a un equipo que se retira a los diez años de fabricado."
+      },
+      {
+        "q": "¿Se cotiza suelto?",
+        "a": "Sí, sin compra mínima. De hecho es la pieza del conjunto de extricación que primero se repone, porque la rodilla concentra todo el desgaste."
+      },
+      {
+        "q": "¿Cómo se descontamina?",
+        "a": "Con protocolo biológico cuando hubo contacto con fluidos. La rodilla es la zona de mayor contacto en una extricación, así que es donde hay que ser más estricto."
+      },
+      {
+        "q": "¿Qué reviso después de cada salida?",
+        "a": "Perforaciones y cortes en la rodilla, estado del acolchado y de la cinta reflejante. Una perforación pequeña anula la barrera biológica aunque la prenda se vea bien."
+      },
+      {
+        "q": "¿Va sobre el uniforme de estación?",
+        "a": "Sí, está pensado para vestido rápido sobre la ropa de trabajo. Es la ventaja principal frente al conjunto estructural cuando el llamado no es de incendio."
+      },
+      {
+        "q": "¿Cuándo se retira?",
+        "a": "Por condición, no por fecha: perforación en rodilla, cortes que comprometen la barrera, contaminación que no se remueve o pérdida de reflectancia de la cinta."
+      }
+    ],
+    "sinonimos": [
+      "pantalón de rescate",
+      "pantalón de extricación",
+      "pantalón USAR",
+      "rescue pant",
+      "extrication pant",
+      "pantalón de rescate vehicular"
+    ],
+    "sinonimosNota": "Se pide como pantalón de rescate o de extricación. En catálogo de importación aparece como rescue pant o extrication pant.",
+    "comparativa": {
+      "titulo": "Pantalón de rescate o pantalonera estructural",
+      "intro": "Para la salida que se repite todos los días, la elección tiene consecuencias económicas claras.",
+      "columnas": [
+        "Criterio",
+        "Pantalón de rescate",
+        "Pantalonera estructural"
+      ],
+      "filas": [
+        [
+          "Trabajo hincado",
+          "Diseñado para eso",
+          "Incómodo y pesado"
+        ],
+        [
+          "Riesgo cubierto",
+          "Corte, punción y biológico",
+          "Térmico"
+        ],
+        [
+          "Contaminación",
+          "Prenda destinada a ensuciarse",
+          "Consume vida útil del equipo caro"
+        ],
+        [
+          "Costo de reposición",
+          "Bajo",
+          "Alto"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaqueta de rescate técnico: la otra mitad",
+        "href": "/trajes/extricacion/chaqueta/"
+      },
+      {
+        "label": "Conjunto de extricación completo",
+        "href": "/trajes/extricacion/conjunto/"
+      },
+      {
+        "label": "Pantalonera estructural: para incendio",
+        "href": "/trajes/estructural/pantalonera/"
+      }
+    ]
+  },
+  {
+    "slug": "conjunto",
+    "familia": "extricacion",
+    "nombreCard": "Conjunto de extricación",
+    "nombre": "Conjunto de extricación",
+    "seoTitle": "Conjunto de extricación | chaqueta y pantalón | México",
+    "seoDescription": "Conjunto de extricación de dos piezas para rescate vehicular: evita rasgar y contaminar el traje estructural en las salidas que no son de incendio.",
+    "keywords": [
+      "conjunto de extricación",
+      "rescate vehicular",
+      "México"
+    ],
+    "eyebrow": "Pieza · Rescate técnico",
+    "h1": "Conjunto de extricación",
+    "h1Accent": "chaqueta y pantalón",
+    "lead": "Las dos piezas cotizadas como set: la forma más directa de dejar de gastar el traje estructural en accidentes viales.",
+    "descRight": [
+      "Comprar el conjunto completo tiene una ventaja sobre comprar por pieza: la interfaz entre chaqueta y pantalón queda diseñada como sistema y las dos prendas comparten corte, tela y nivel de certificación.",
+      "Es la compra recomendada para un cuerpo que arranca su dotación de rescate. Después, la reposición se hace por pieza, porque el pantalón se gasta antes por la rodilla."
+    ],
+    "meta": [
+      "Set de dos piezas",
+      "Corte y punción",
+      "Barrera de patógenos",
+      "Vestido rápido"
+    ],
+    "resumen": [
+      "El conjunto de extricación agrupa chaqueta y pantalón con la misma tela exterior, el mismo nivel de certificación y una interfaz pensada como sistema. Eso evita el problema típico de mezclar piezas de distintos modelos: cintura abierta, cintas que no coinciden y niveles distintos de protección.",
+      "En términos operativos, su valor es simple de calcular: cada salida que se atiende con este conjunto es una salida en la que el traje estructural no se contaminó, no se rasgó y no consumió vida útil."
+    ],
+    "puntosClave": [
+      "Chaqueta y pantalón del mismo corte, tela y nivel",
+      "Interfaz diseñada como sistema, sin cintura abierta",
+      "Vestido rápido sobre el uniforme de estación",
+      "Resistencia a corte y punción con barrera biológica",
+      "Alta visibilidad para trabajo en carretera",
+      "La reposición posterior se hace por pieza"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-de-extricacion.svg",
+        "alt": "Conjunto de extricación de chaqueta y pantalón"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      },
+      {
+        "src": "/images/productos/chaqueta-extricacion-rescate.svg",
+        "alt": "Chaqueta de extricación"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1951)",
+            "nota": "La 1951 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Niveles",
+            "valor": "Dos niveles según fabricante",
+            "nota": "Ambas piezas deben ser del mismo nivel"
+          },
+          {
+            "campo": "Protección biológica",
+            "valor": "Barrera contra patógenos",
+            "nota": "Declarada en la ficha del conjunto"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Formato",
+            "valor": "Dos piezas",
+            "nota": "Permite reposición individual después"
+          },
+          {
+            "campo": "Capas",
+            "valor": "Una sola en ambas prendas",
+            "nota": "Carga térmica baja"
+          },
+          {
+            "campo": "Interfaz",
+            "valor": "Diseñada como sistema",
+            "nota": "Evita cintura abierta al agacharse"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Codos, antebrazos y rodillas",
+            "nota": "Zonas de apoyo y abrasión"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por elemento, ambas piezas",
+            "nota": "Considerar el uniforme que va debajo"
+          },
+          {
+            "campo": "Tela exterior",
+            "valor": "Varias opciones según fabricante",
+            "nota": "Misma tela en ambas prendas"
+          },
+          {
+            "campo": "Alta visibilidad",
+            "valor": "Cinta reflejante en ambas piezas",
+            "nota": "Crítica en carretera"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Descontaminación",
+            "valor": "Protocolo biológico",
+            "nota": "Tras contacto con fluidos"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Por pieza",
+            "nota": "El pantalón se gasta antes"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por condición",
+            "nota": "Daño mecánico o contaminación no removible"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaqueta y pantalón del mismo corte y nivel",
+      "Refuerzos en codos, antebrazos y rodillas",
+      "Cinta reflejante en ambas prendas"
+    ],
+    "noIncluye": [
+      "Guantes de extricación",
+      "Casco y goggles",
+      "Botas"
+    ],
+    "errores": [
+      {
+        "error": "Armar el conjunto con piezas de modelos distintos",
+        "realidad": "La interfaz deja de estar diseñada como sistema y aparecen aberturas y niveles de protección distintos entre prendas."
+      },
+      {
+        "error": "Comprarlo y seguir saliendo con el estructural",
+        "realidad": "El beneficio solo existe si el conjunto se usa. Conviene definir en el procedimiento qué tipo de salida lo activa."
+      },
+      {
+        "error": "No declarar el nivel de certificación",
+        "realidad": "Existen dos niveles y ambas piezas deben coincidir. Si no se especifica, puede llegar mezclado."
+      },
+      {
+        "error": "Guardar el conjunto sucio tras una extricación",
+        "realidad": "El riesgo biológico no se ve. La descontaminación es parte del procedimiento, no una tarea opcional."
+      },
+      {
+        "error": "Comprar una sola talla por brigada",
+        "realidad": "Un conjunto que no ajusta estorba en un trabajo donde hay que meterse en espacios reducidos."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Dotación inicial de rescate",
+        "desc": "Primera compra para un cuerpo que quiere dejar de usar el estructural."
+      },
+      {
+        "titulo": "Accidentes viales",
+        "desc": "La salida más frecuente de la mayoría de los cuerpos."
+      },
+      {
+        "titulo": "Rescate técnico",
+        "desc": "Colapso, espacios confinados y alturas."
+      },
+      {
+        "titulo": "Mando y apoyo",
+        "desc": "Personal en escena que no entra a zona caliente."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Conviene el conjunto o comprar por pieza?",
+        "a": "Para la primera compra conviene el conjunto: garantiza que ambas prendas compartan corte, tela y nivel, y que la interfaz de cintura esté diseñada como sistema. Después, la reposición se hace por pieza porque el pantalón se gasta antes."
+      },
+      {
+        "q": "¿Qué gano frente a salir con el estructural?",
+        "a": "Cada salida atendida con este conjunto es una en la que el traje estructural no se contaminó ni se rasgó. Considerando que el estructural se retira a los diez años de fabricado y cuesta varias veces más, la cuenta sale rápido."
+      },
+      {
+        "q": "¿Sirve para incendio?",
+        "a": "No. Es monocapa con protección limitada frente a flash. Está pensado para riesgo mecánico y biológico. Para incendio se usa el conjunto estructural."
+      },
+      {
+        "q": "¿Se pone sobre el uniforme?",
+        "a": "Sí, y esa es parte de su ventaja: vestido rápido cuando entra el llamado, sin la maniobra completa del conjunto estructural."
+      },
+      {
+        "q": "¿Cómo defino cuándo se usa?",
+        "a": "Conviene establecerlo en el procedimiento de la estación: qué tipo de salida activa el conjunto de rescate y cuál el estructural. Si queda a criterio del momento, se termina usando el que esté más a la mano."
+      },
+      {
+        "q": "¿Cómo se descontamina?",
+        "a": "Con protocolo biológico cuando hubo contacto con fluidos, y con lavado normal cuando solo hay suciedad mecánica. La diferencia debe estar escrita, porque el riesgo biológico no se ve."
+      },
+      {
+        "q": "¿Cuántos conjuntos necesito?",
+        "a": "Depende de cuántos elementos salen a rescate por turno. Conviene que cada uno tenga el suyo por talla: un conjunto compartido termina sin usarse porque nunca queda a la mano cuando entra el llamado."
+      },
+      {
+        "q": "¿Los dos niveles de certificación son muy distintos?",
+        "a": "Cambian los requisitos de resistencia que debe cumplir la prenda. Para un cuerpo con extricación frecuente conviene el nivel más exigente; si el uso es ocasional, se puede valorar. Lo importante es declararlo en la orden."
+      }
+    ],
+    "sinonimos": [
+      "conjunto de extricación",
+      "set de rescate técnico",
+      "traje de extricación",
+      "rescue gear set",
+      "extrication set",
+      "equipo de rescate vehicular"
+    ],
+    "sinonimosNota": "Se pide como conjunto o set de extricación. En catálogo de importación aparece como rescue gear set o extrication set.",
+    "comparativa": {
+      "titulo": "Conjunto de dos piezas u overol de rescate",
+      "intro": "Los dos formatos disponibles en rescate técnico.",
+      "columnas": [
+        "Criterio",
+        "Conjunto de dos piezas",
+        "Overol de rescate"
+      ],
+      "filas": [
+        [
+          "Reposición",
+          "Solo la pieza dañada",
+          "Prenda completa"
+        ],
+        [
+          "Vestido",
+          "Dos prendas",
+          "Más rápido"
+        ],
+        [
+          "Interfaz de cintura",
+          "Diseñada como sistema",
+          "Sin interfaz"
+        ],
+        [
+          "Cuándo conviene",
+          "Uso frecuente con desgaste alto",
+          "Salidas súbitas y vestido inmediato"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaqueta de rescate técnico por separado",
+        "href": "/trajes/extricacion/chaqueta/"
+      },
+      {
+        "label": "Overol de rescate técnico",
+        "href": "/trajes/extricacion/overol/"
+      },
+      {
+        "label": "Vida útil del traje estructural",
+        "href": "/#vida-util"
+      }
+    ]
+  },
+  {
+    "slug": "overol",
+    "familia": "extricacion",
+    "nombreCard": "Overol de rescate técnico",
+    "nombre": "Overol de rescate técnico",
+    "seoTitle": "Overol de rescate técnico | vestido rápido | México",
+    "seoDescription": "Overol de rescate técnico de una pieza para vestido rápido y cobertura continua: alternativa al conjunto de dos piezas en salidas súbitas.",
+    "keywords": [
+      "overol de rescate técnico",
+      "vestido rápido",
+      "México"
+    ],
+    "eyebrow": "Pieza · Rescate técnico",
+    "h1": "Overol de rescate técnico",
+    "h1Accent": "para vestido rápido",
+    "lead": "Una sola pieza para ponerse en segundos sobre el uniforme, con cobertura continua y sin interfaz en la cintura.",
+    "descRight": [
+      "Cuando el llamado entra y hay que salir en un minuto, dos prendas son dos prendas. El overol se pone de una vez, cierra al frente y ya. Es la razón principal por la que muchas estaciones lo prefieren para rescate.",
+      "El costo de esa velocidad es la reposición: si se rompe la rodilla, sale toda la prenda. Es la misma disyuntiva que en forestal, y se resuelve mirando cuántas salidas hace tu cuerpo y con cuánto desgaste."
+    ],
+    "meta": [
+      "Una pieza",
+      "Vestido rápido",
+      "Cobertura continua",
+      "NFPA 1950 (ex 1951)"
+    ],
+    "resumen": [
+      "El overol de rescate mantiene los requisitos de la familia —resistencia a corte y punción, barrera contra patógenos, carga térmica baja— en formato de una sola pieza. Elimina la interfaz de cintura, que es donde se abre el conjunto de dos piezas al agacharse dentro de un vehículo.",
+      "Algunos modelos son dual certificados, es decir cumplen a la vez rescate técnico y combate forestal. Para un cuerpo rural que atiende ambas cosas, esa combinación resuelve dos necesidades con una prenda."
+    ],
+    "puntosClave": [
+      "Vestido en segundos sobre el uniforme de estación",
+      "Sin interfaz de cintura: cobertura continua al agacharse",
+      "Resistencia a corte y punción con barrera biológica",
+      "Existen modelos con doble certificación rescate y forestal",
+      "Si se daña una zona, se repone la prenda completa",
+      "Requiere abrirse completo para usar el sanitario"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/overol-de-rescate-tecnico.svg",
+        "alt": "Overol de rescate técnico de una pieza"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      },
+      {
+        "src": "/images/productos/pantalon-extricacion-rescate.svg",
+        "alt": "Pantalón de extricación"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1951)",
+            "nota": "La 1951 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Doble certificación",
+            "valor": "Disponible en algunos modelos",
+            "nota": "Rescate técnico y combate forestal"
+          },
+          {
+            "campo": "Protección biológica",
+            "valor": "Barrera contra patógenos",
+            "nota": "Declarada en la ficha"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Formato",
+            "valor": "Una pieza",
+            "nota": "Sin unión en cintura"
+          },
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Carga térmica baja"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "Frontal, de vestido rápido",
+            "nota": "Debe permitir ponerse sobre la bota"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Rodillas y codos",
+            "nota": "Zonas de apoyo"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por estatura y torso",
+            "nota": "Más crítico que en dos piezas"
+          },
+          {
+            "campo": "Certificación",
+            "valor": "Simple o dual",
+            "nota": "Definir en la orden"
+          },
+          {
+            "campo": "Alta visibilidad",
+            "valor": "Cinta reflejante",
+            "nota": "Trabajo en carretera"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Descontaminación",
+            "valor": "Protocolo biológico",
+            "nota": "Tras contacto con fluidos"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Prenda completa",
+            "nota": "No se sustituye solo la mitad dañada"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Tras cada uso",
+            "nota": "Rodillas, codos y cierre"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Overol de una pieza con refuerzos en rodillas y codos",
+      "Cierre frontal de vestido rápido",
+      "Cinta reflejante"
+    ],
+    "noIncluye": [
+      "Guantes de extricación",
+      "Casco y goggles",
+      "Botas"
+    ],
+    "errores": [
+      {
+        "error": "Elegirlo sin considerar el desgaste",
+        "realidad": "Si tu cuerpo hace extricación seguido, la rodilla se destruye y con ella la prenda completa. Ahí conviene el conjunto de dos piezas."
+      },
+      {
+        "error": "Pedir talla estimada",
+        "realidad": "En una sola pieza el ajuste de torso es crítico: si queda corto, limita el movimiento de brazos y se sube al agacharse."
+      },
+      {
+        "error": "No considerar el cierre sobre la bota",
+        "realidad": "Si el overol no se puede poner con la bota calzada, se pierde justo la ventaja de velocidad que lo justifica."
+      },
+      {
+        "error": "Suponer que es dual sin verificarlo",
+        "realidad": "Solo algunos modelos tienen doble certificación. Debe venir declarado en la etiqueta, no en el folleto."
+      },
+      {
+        "error": "Guardarlo contaminado",
+        "realidad": "El riesgo biológico no se ve. Un overol guardado sucio contamina el resto del equipo del locker."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Salidas súbitas",
+        "desc": "Estaciones donde el tiempo de vestido es crítico."
+      },
+      {
+        "titulo": "Extricación vehicular",
+        "desc": "Trabajo dentro del habitáculo con cobertura continua."
+      },
+      {
+        "titulo": "Cuerpo rural con doble uso",
+        "desc": "Modelos duales que cubren rescate y forestal."
+      },
+      {
+        "titulo": "Apoyo prehospitalario",
+        "desc": "Vestido rápido con barrera biológica."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Overol o conjunto de dos piezas?",
+        "a": "El overol gana en velocidad de vestido y en cobertura continua. El conjunto gana en reposición: si se rompe la rodilla puedes cambiar solo el pantalón. Si tu cuerpo hace extricación con frecuencia y desgaste alto, el conjunto sale más económico a mediano plazo."
+      },
+      {
+        "q": "¿Qué es la doble certificación?",
+        "a": "Algunos modelos cumplen a la vez los requisitos de rescate técnico y de combate forestal. Para un cuerpo rural que atiende ambas cosas con la misma gente, esa combinación resuelve dos necesidades con una sola prenda."
+      },
+      {
+        "q": "¿Se puede poner con las botas puestas?",
+        "a": "Depende del modelo. Es una pregunta clave, porque si hay que descalzarse se pierde justo la ventaja de velocidad. Conviene confirmarlo antes de comprar, sobre todo si tu estación usa bota de caña alta."
+      },
+      {
+        "q": "¿Sirve para incendio?",
+        "a": "No. Es monocapa con protección limitada frente a flash, igual que el resto de la familia de rescate. Para incendio se usa el conjunto estructural."
+      },
+      {
+        "q": "¿Cómo se toma la talla?",
+        "a": "Por estatura y torso, y es más crítico que en dos piezas: un overol corto de torso se sube al agacharse y limita el movimiento de brazos justo cuando hay que trabajar dentro del vehículo."
+      },
+      {
+        "q": "¿Cómo se descontamina?",
+        "a": "Con protocolo biológico tras contacto con fluidos. Al ser una prenda grande conviene verificar que seque por completo antes de guardarla, sobre todo en la zona de rodillas."
+      },
+      {
+        "q": "¿Cuántos se necesitan por estación?",
+        "a": "Idealmente uno por elemento que sale a rescate, en su talla. Un overol compartido nunca está donde debe cuando entra el llamado, y entonces la gente sale con lo que tenga puesto."
+      },
+      {
+        "q": "¿Cuándo se retira?",
+        "a": "Por condición: perforaciones, cortes que comprometen la barrera, contaminación no removible o falla del cierre. Como es una sola pieza, cualquiera de esos daños saca de servicio la prenda completa."
+      }
+    ],
+    "sinonimos": [
+      "overol de rescate",
+      "mameluco de rescate técnico",
+      "overol de extricación",
+      "rescue coverall",
+      "USAR coverall",
+      "overol de emergencia"
+    ],
+    "sinonimosNota": "Se pide como overol o mameluco de rescate. En catálogo de importación aparece como rescue coverall.",
+    "comparativa": {
+      "titulo": "Overol o conjunto de dos piezas",
+      "intro": "La misma disyuntiva de la línea forestal, aplicada al rescate.",
+      "columnas": [
+        "Criterio",
+        "Overol",
+        "Conjunto de dos piezas"
+      ],
+      "filas": [
+        [
+          "Velocidad de vestido",
+          "Mayor",
+          "Menor"
+        ],
+        [
+          "Cobertura de cintura",
+          "Continua",
+          "Depende del ajuste"
+        ],
+        [
+          "Reposición",
+          "Prenda completa",
+          "Solo la pieza dañada"
+        ],
+        [
+          "Uso del sanitario en turno",
+          "Hay que abrirlo completo",
+          "Sin problema"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de extricación de dos piezas",
+        "href": "/trajes/extricacion/conjunto/"
+      },
+      {
+        "label": "Conjunto dual rescate y forestal",
+        "href": "/trajes/extricacion/conjunto-dual/"
+      },
+      {
+        "label": "Overol forestal: misma lógica, otra familia",
+        "href": "/trajes/forestal/overol/"
+      }
+    ]
+  },
+  {
+    "slug": "conjunto-dual",
+    "familia": "extricacion",
+    "nombreCard": "Conjunto dual rescate y forestal",
+    "nombre": "Conjunto dual rescate y forestal",
+    "seoTitle": "Conjunto dual rescate y forestal | doble norma | México",
+    "seoDescription": "Conjunto dual rescate y forestal certificado para ambos escenarios: una sola dotación para cuerpos que atienden accidentes viales e incendios de vegetación.",
+    "keywords": [
+      "conjunto dual rescate y forestal",
+      "doble certificación",
+      "México"
+    ],
+    "eyebrow": "Pieza · Rescate técnico",
+    "h1": "Conjunto dual rescate y forestal",
+    "h1Accent": "dos escenarios, una dotación",
+    "lead": "Certificado a la vez para rescate técnico y combate forestal: la respuesta para cuerpos que salen a lo mismo con la misma gente y el mismo presupuesto.",
+    "descRight": [
+      "En buena parte del país el mismo turno atiende el accidente en la carretera por la mañana y el incendio de pastizal por la tarde. Comprar dos dotaciones certificadas separadas no siempre es posible, y usar la estructural para todo es la peor salida.",
+      "El conjunto dual cumple las dos referencias completas. No es un equipo a medias: es un equipo diseñado para cubrir ambos escenarios con un solo ciclo de lavado, inspección y almacenamiento."
+    ],
+    "meta": [
+      "Doble certificación",
+      "Rescate y forestal",
+      "Sin PFAS disponible",
+      "Monocapa transpirable"
+    ],
+    "resumen": [
+      "El conjunto dual se certifica simultáneamente bajo las referencias de rescate técnico y de combate forestal, ambas hoy dentro de NFPA 1950. Cumple los requisitos mecánicos y biológicos del rescate y los térmicos y de transpirabilidad del forestal.",
+      "Se construye monocapa, con tela de alta transpirabilidad y refuerzos en zonas de contacto. Hay opciones sin PFAS, un criterio que empieza a aparecer en pliegos por la persistencia ambiental de esos compuestos."
+    ],
+    "puntosClave": [
+      "Cumple rescate técnico y combate forestal a la vez",
+      "Una sola dotación, un solo ciclo de servicio",
+      "Monocapa transpirable con refuerzos en contacto",
+      "Opciones de tela sin PFAS según fabricante",
+      "La doble certificación debe venir en la etiqueta",
+      "No sustituye al conjunto estructural para incendio en edificación"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-dual-rescate-y-forestal.svg",
+        "alt": "Conjunto dual rescate y forestal"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de camisola y pantalón"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia de rescate",
+            "valor": "NFPA 1950 (ex NFPA 1951)",
+            "nota": "La 1951 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Referencia forestal",
+            "valor": "NFPA 1950 (ex NFPA 1977)",
+            "nota": "La 1977 también fue absorbida"
+          },
+          {
+            "campo": "Declaración",
+            "valor": "Debe constar en la etiqueta del producto",
+            "nota": "No basta el folleto comercial"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "No es prenda de ataque interior"
+          },
+          {
+            "campo": "Tela",
+            "valor": "Ignífuga inherente de alta transpirabilidad",
+            "nota": "Opciones sin PFAS según fabricante"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Rodillas, codos y hombros",
+            "nota": "Contacto en rescate y matorral en forestal"
+          },
+          {
+            "campo": "Barrera biológica",
+            "valor": "Según modelo",
+            "nota": "Requisito del componente de rescate"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Formato",
+            "valor": "Dos piezas u overol",
+            "nota": "Según fabricante y preferencia"
+          },
+          {
+            "campo": "Tallas",
+            "valor": "Por elemento",
+            "nota": "Considerar el uniforme que va debajo"
+          },
+          {
+            "campo": "Alta visibilidad",
+            "valor": "Cinta reflejante",
+            "nota": "Crítica en carretera nocturna"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Según el uso: hollín o fluidos",
+            "nota": "Dos protocolos distintos para la misma prenda"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Cubre ambos usos",
+            "nota": "Según instrucciones del fabricante"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por condición",
+            "nota": "Daño mecánico, quemadura o contaminación"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaqueta y pantalón, u overol, con doble certificación declarada",
+      "Refuerzos en zonas de contacto",
+      "Cinta reflejante"
+    ],
+    "noIncluye": [
+      "Casco, guantes y goggles",
+      "Botas",
+      "Equipo de respiración autónoma"
+    ],
+    "errores": [
+      {
+        "error": "Aceptar la doble certificación de palabra",
+        "realidad": "Debe venir declarada en la etiqueta del producto. En licitación es exactamente lo que se revisa y lo que descalifica si falta."
+      },
+      {
+        "error": "Usarlo para incendio estructural",
+        "realidad": "Es monocapa. No tiene barrera térmica ni de humedad y no protege en un interior con fuego declarado."
+      },
+      {
+        "error": "Compararlo por precio con un forestal simple",
+        "realidad": "Cumple dos referencias y añade protección mecánica y biológica. La comparación justa es contra dos dotaciones separadas."
+      },
+      {
+        "error": "Usar un solo protocolo de lavado",
+        "realidad": "Tras forestal se lava por hollín; tras rescate, con protocolo biológico. Es la misma prenda con dos procedimientos distintos."
+      },
+      {
+        "error": "No pedir la opción sin PFAS cuando aplica",
+        "realidad": "Si tu institución ya tiene criterio ambiental, hay que declararlo en la orden: no viene por defecto."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Cuerpo municipal con doble atribución",
+        "desc": "Accidentes viales e incendios de vegetación con la misma gente."
+      },
+      {
+        "titulo": "Protección civil estatal",
+        "desc": "Temporada de incendios y emergencias viales."
+      },
+      {
+        "titulo": "Brigada rural",
+        "desc": "Zonas donde un solo equipo atiende todo tipo de emergencia."
+      },
+      {
+        "titulo": "Presupuesto acotado",
+        "desc": "Cuando no alcanza para dos dotaciones certificadas."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Realmente cumple las dos normas?",
+        "a": "Sí, cuando la doble certificación viene declarada en la etiqueta del producto. Eso es lo que hay que exigir: no basta con que el catálogo diga dual. En licitación se revisa la etiqueta y el listado del fabricante ante el organismo certificador."
+      },
+      {
+        "q": "¿Sirve para incendio estructural?",
+        "a": "No. Es monocapa: no tiene barrera de humedad ni barrera térmica. Cubre rescate técnico y combate forestal, que son escenarios de riesgo mecánico, biológico y térmico moderado, no de ataque interior."
+      },
+      {
+        "q": "¿Conviene económicamente?",
+        "a": "Si tu cuerpo atiende los dos escenarios, sí: una dotación en vez de dos, con un solo ciclo de lavado, inspección y almacenamiento. Si solo haces rescate, un conjunto dedicado puede resultar más ligero y económico."
+      },
+      {
+        "q": "¿Qué son las telas sin PFAS?",
+        "a": "Telas fabricadas sin compuestos perfluorados, que son persistentes en el ambiente y objeto de atención creciente por su relación con la exposición ocupacional. Varios fabricantes ya ofrecen alternativas: si es criterio para tu institución, hay que pedirlo explícitamente."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Depende del uso. Tras incendio de vegetación, con detergente neutro sin suavizante; tras rescate con contacto de fluidos, con protocolo de descontaminación biológica. Conviene tener ambos procedimientos escritos."
+      },
+      {
+        "q": "¿Dos piezas u overol?",
+        "a": "Para uso dual normalmente conviene dos piezas: permite reponer la prenda dañada y facilita el vestido parcial cuando la salida es solo de rescate. El overol tiene sentido si priorizas velocidad de vestido."
+      },
+      {
+        "q": "¿Sustituye al traje de extricación dedicado?",
+        "a": "Cumple la función porque incluye la certificación de rescate. Un conjunto dedicado puede estar más optimizado para ese uso, pero si necesitas cubrir ambos escenarios con un solo equipo, el dual es la vía."
+      },
+      {
+        "q": "¿Cómo lo especifico en una licitación?",
+        "a": "Declarando ambas referencias, exigiendo que la doble certificación conste en la etiqueta y pidiendo el listado vigente del fabricante ante el organismo certificador. Podemos preparar el expediente completo."
+      }
+    ],
+    "sinonimos": [
+      "conjunto dual rescate y forestal",
+      "traje dual certificado",
+      "equipo doble certificación",
+      "dual certified gear",
+      "traje multipropósito de emergencia",
+      "conjunto doble uso"
+    ],
+    "sinonimosNota": "Se pide como dual o de doble certificación. En catálogo de importación aparece como dual certified o double duty gear.",
+    "comparativa": {
+      "titulo": "Dual o dos dotaciones separadas",
+      "intro": "La decisión de fondo para un cuerpo con doble atribución y presupuesto real.",
+      "columnas": [
+        "Criterio",
+        "Conjunto dual",
+        "Dotación de rescate + dotación forestal"
+      ],
+      "filas": [
+        [
+          "Inversión",
+          "Una dotación",
+          "Dos dotaciones completas"
+        ],
+        [
+          "Optimización",
+          "Buena en ambos escenarios",
+          "Óptima en cada uno"
+        ],
+        [
+          "Logística",
+          "Un ciclo de servicio",
+          "Dos ciclos separados"
+        ],
+        [
+          "Cuándo conviene",
+          "Presupuesto acotado y doble atribución",
+          "Volumen alto en ambos escenarios"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de extricación dedicado",
+        "href": "/trajes/extricacion/conjunto/"
+      },
+      {
+        "label": "Conjunto dual desde la línea forestal",
+        "href": "/trajes/forestal/conjunto-dual/"
+      },
+      {
+        "label": "Normas aplicables en México",
+        "href": "/#normas"
+      }
+    ]
+  },
+  {
+    "slug": "cover-pants",
+    "familia": "extricacion",
+    "nombreCard": "Pantalón de cubierta para rescate",
+    "nombre": "Pantalón de cubierta para rescate",
+    "seoTitle": "Pantalón de cubierta para rescate | sobre uniforme | México",
+    "seoDescription": "Pantalón de cubierta para rescate que se pone sobre el uniforme de estación: protege la ropa de trabajo sin vestir el conjunto estructural completo.",
+    "keywords": [
+      "pantalón de cubierta para rescate",
+      "sobre uniforme",
+      "México"
+    ],
+    "eyebrow": "Pieza · Rescate técnico",
+    "h1": "Pantalón de cubierta para rescate",
+    "h1Accent": "se pone sobre el uniforme",
+    "lead": "La prenda de respuesta más rápida del catálogo: se calza encima de la ropa de estación para salidas de rescate y apoyo.",
+    "descRight": [
+      "No toda salida justifica vestir un conjunto completo. Un apoyo médico, un derrame, un retiro de árbol caído: son llamados donde el uniforme de estación se ensucia y se rompe, pero donde ponerse el traje estructural sería exagerado y lento.",
+      "El pantalón de cubierta cubre ese hueco. Se pone en segundos sobre lo que ya traes puesto, protege de suciedad, abrasión y contacto, y se quita igual de rápido al terminar."
+    ],
+    "meta": [
+      "Sobre uniforme",
+      "Vestido en segundos",
+      "Ligero",
+      "Uso en apoyo y rescate"
+    ],
+    "resumen": [
+      "El pantalón de cubierta es la prenda más ligera de la familia de rescate. Su función no es sustituir al pantalón de extricación en una maniobra pesada, sino proteger el uniforme de estación en salidas donde el riesgo es de suciedad, abrasión y contacto puntual.",
+      "En estaciones con alto volumen de apoyos y llamados menores, es la prenda que evita que el uniforme se convierta en un gasto recurrente y que el personal salga con ropa manchada o rota a la vista del público."
+    ],
+    "puntosClave": [
+      "Se calza sobre el uniforme de estación, sin cambiarse",
+      "Vestido y retiro en segundos",
+      "Protege de suciedad, abrasión y contacto puntual",
+      "No sustituye al pantalón de extricación en maniobra pesada",
+      "Reduce el desgaste del uniforme en llamados menores",
+      "Cinta reflejante para trabajo en vía pública"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/pantalon-de-cubierta-para-rescate.svg",
+        "alt": "Pantalón de cubierta para rescate sobre uniforme"
+      },
+      {
+        "src": "/images/productos/pantalon-extricacion-rescate.svg",
+        "alt": "Pantalón de extricación para rescate técnico"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia",
+            "valor": "Según modelo y fabricante",
+            "nota": "No todos los cover pants están certificados a rescate técnico"
+          },
+          {
+            "campo": "Alcance",
+            "valor": "Protección de la ropa de trabajo",
+            "nota": "No sustituye equipo certificado en maniobra pesada"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "El EPP se define por análisis de riesgo"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Prenda ligera de cubierta"
+          },
+          {
+            "campo": "Corte",
+            "valor": "Amplio, para vestir sobre el uniforme",
+            "nota": "Debe permitir calzarse con bota puesta"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "De vestido rápido",
+            "nota": "Lateral o frontal según modelo"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "En pierna",
+            "nota": "Trabajo en vía pública"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por cintura y largo, con holgura",
+            "nota": "Va sobre otra prenda"
+          },
+          {
+            "campo": "Certificación",
+            "valor": "Verificar si el modelo la tiene",
+            "nota": "Varía entre fabricantes"
+          },
+          {
+            "campo": "Bolsas",
+            "valor": "Según modelo",
+            "nota": "Algunas permiten acceso a las del uniforme"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Frecuente",
+            "nota": "Es prenda de sacrificio: se ensucia por diseño"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Alta rotación",
+            "nota": "Cuesta poco y se cambia seguido"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Rasgaduras y estado del cierre",
+            "nota": "Un cierre roto la vuelve inútil"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Pantalón de cubierta con cierre de vestido rápido",
+      "Cinta reflejante en pierna"
+    ],
+    "noIncluye": [
+      "Chaqueta de rescate",
+      "Pantalón de extricación certificado",
+      "Botas"
+    ],
+    "errores": [
+      {
+        "error": "Usarlo como sustituto del pantalón de extricación",
+        "realidad": "Es prenda de cubierta, no de maniobra pesada. En una extricación con vidrio y lámina no ofrece la resistencia necesaria."
+      },
+      {
+        "error": "Suponer que está certificado",
+        "realidad": "No todos los modelos lo están. Si necesitas certificación de rescate técnico, hay que verificarlo en la ficha antes de comprar."
+      },
+      {
+        "error": "Comprarlo ajustado",
+        "realidad": "Va sobre otra prenda y hay que poder calzarlo con la bota puesta. Un corte justo anula la ventaja de velocidad."
+      },
+      {
+        "error": "Repararlo en vez de reponerlo",
+        "realidad": "Es prenda de sacrificio y de bajo costo. Reparar un cover pants sale más caro que cambiarlo."
+      },
+      {
+        "error": "No tenerlo a la mano en la unidad",
+        "realidad": "Si está en el locker de la estación no se usa. Su valor está en poder ponérselo al bajar de la unidad."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Apoyo prehospitalario",
+        "desc": "Atención en escena sin vestir conjunto completo."
+      },
+      {
+        "titulo": "Llamados menores",
+        "desc": "Derrames, árbol caído, apoyo a otras dependencias."
+      },
+      {
+        "titulo": "Protección del uniforme",
+        "desc": "Reduce el desgaste de la ropa de estación."
+      },
+      {
+        "titulo": "Trabajo en vía pública",
+        "desc": "Visibilidad y protección en incidentes de tránsito menores."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿En qué se diferencia del pantalón de extricación?",
+        "a": "En el propósito y en la resistencia. El de extricación está certificado y construido para maniobra pesada con vidrio y lámina; el de cubierta es una prenda ligera que protege el uniforme en salidas donde el riesgo es suciedad, abrasión y contacto puntual."
+      },
+      {
+        "q": "¿Está certificado?",
+        "a": "Depende del modelo: algunos sí y otros no. Si necesitas certificación de rescate técnico hay que verificarlo en la ficha antes de comprar. Muchos cover pants se venden como prenda de protección de uniforme, sin certificación de producto."
+      },
+      {
+        "q": "¿Se puede poner con las botas puestas?",
+        "a": "Es su razón de ser. Un cover pants que obliga a descalzarse pierde toda su ventaja. Al cotizar conviene confirmarlo, sobre todo si tu estación usa bota de caña alta."
+      },
+      {
+        "q": "¿Para qué salidas se usa?",
+        "a": "Apoyos médicos, derrames, retiro de árbol caído, incidentes menores en vía pública. Todo aquello donde el uniforme se va a ensuciar o a romper pero donde vestir el conjunto completo sería lento y desproporcionado."
+      },
+      {
+        "q": "¿Cada cuánto se repone?",
+        "a": "Con frecuencia alta: es prenda de sacrificio y de bajo costo. Conviene tener repuestos en la unidad, no solo en el almacén de la estación."
+      },
+      {
+        "q": "¿Dónde se guarda?",
+        "a": "En la unidad, al alcance. Si está en el locker de la estación, nadie regresa por él y termina saliendo con el uniforme sin proteger. Su valor está en poder ponérselo al bajar."
+      },
+      {
+        "q": "¿Conviene si ya tengo conjunto de extricación?",
+        "a": "Sí, porque cubren escenarios distintos. El conjunto para la extricación real; el cover pants para el volumen de llamados menores que hoy desgastan el uniforme y que no justifican vestirse completo."
+      },
+      {
+        "q": "¿Se puede reparar?",
+        "a": "No conviene. Cuesta poco y se cambia seguido: reparar costuras o cierres sale más caro que reponerlo. Es la única prenda del catálogo donde la reposición es claramente la vía."
+      }
+    ],
+    "sinonimos": [
+      "pantalón de cubierta",
+      "cover pants",
+      "sobrepantalón de rescate",
+      "pantalón sobre uniforme",
+      "pantalón de sacrificio",
+      "pantalón de apoyo"
+    ],
+    "sinonimosNota": "En catálogo de importación aparece como cover pants o overpants. En México se pide también como sobrepantalón.",
+    "comparativa": {
+      "titulo": "Pantalón de cubierta o de extricación",
+      "intro": "Dos prendas de la misma familia para dos tipos de salida muy distintos.",
+      "columnas": [
+        "Criterio",
+        "Pantalón de cubierta",
+        "Pantalón de extricación"
+      ],
+      "filas": [
+        [
+          "Resistencia mecánica",
+          "Básica",
+          "Alta: corte y punción"
+        ],
+        [
+          "Certificación",
+          "Variable según modelo",
+          "Certificado de rescate técnico"
+        ],
+        [
+          "Velocidad de vestido",
+          "Máxima",
+          "Alta"
+        ],
+        [
+          "Cuándo usarlo",
+          "Apoyos y llamados menores",
+          "Extricación y rescate real"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalón de rescate técnico certificado",
+        "href": "/trajes/extricacion/pantalon/"
+      },
+      {
+        "label": "Conjunto de extricación completo",
+        "href": "/trajes/extricacion/conjunto/"
+      },
+      {
+        "label": "Comparar las seis familias de traje",
+        "href": "/trajes/"
+      }
+    ]
   }
 ];
 
