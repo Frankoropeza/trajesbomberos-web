@@ -65,26 +65,126 @@ const hechos = [
   { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
 ];
 
-// Spotlight de la familia principal: amplía la card "Más solicitado"
-const spotlight = {
-  eyebrow: 'Más solicitado · Trajes estructurales',
-  title: 'Chaquetón y pantalonera de tres capas para ataque interior',
-  description:
-    'Es la compra más importante del equipamiento y la que más se equivoca. El traje estructural está pensado para entrar a una edificación en llamas: chaquetón y pantalón construidos con capa exterior, barrera de humedad y barrera térmica. Si falta una capa, no es un traje estructural, aunque se le parezca.',
-  features: [
-    'Las tres capas van declaradas por nombre comercial, no como "tela ignífuga" a secas',
-    'DRD integrado al chaquetón para arrastre de un elemento inconsciente',
-    'Largo de chaquetón de 28" a 35": cambia cobertura y movilidad según la operación',
-    'A medida o talla de stock — la interfaz chaquetón-pantalón es zona crítica',
-    'La certificación corresponde al conjunto completo, no a la tela por separado',
-  ],
-  brands: ['Chaquetón', 'Pantalonera', 'Barrera térmica', 'Barrera de humedad', 'DRD', 'Tirantes'],
-  images: [
-    { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural de bombero con chaquetón y pantalón de tres capas' },
-    { src: '/images/productos/monja-capucha-barrera-particulas-bombero.svg', alt: 'Monja barrera de partículas para bombero' },
-    { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial, distinto del estructural' },
-  ],
-};
+// Un módulo por familia: amplía cada card del catálogo con el
+// detalle técnico que el comprador necesita antes de cotizar.
+// flip alterna para dar ritmo cuando hay varios seguidos.
+const SPOTLIGHTS = [
+  {
+    slug: 'Trajes estructurales',
+    eyebrow: 'Más solicitado · Trajes estructurales',
+    title: 'Chaquetón y pantalonera de tres capas para ataque interior',
+    description:
+      'Es la compra más importante del equipamiento y la que más se equivoca. El traje estructural está pensado para entrar a una edificación en llamas: chaquetón y pantalón construidos con capa exterior, barrera de humedad y barrera térmica. Si falta una capa, no es un traje estructural, aunque se le parezca.',
+    features: [
+      'Las tres capas van declaradas por nombre comercial, no como "tela ignífuga" a secas',
+      'DRD integrado al chaquetón para arrastre de un elemento inconsciente',
+      'Largo de chaquetón de 28" a 35": cambia cobertura y movilidad según la operación',
+      'A medida o talla de stock — la interfaz chaquetón-pantalón es zona crítica',
+      'La certificación corresponde al conjunto completo, no a la tela por separado',
+    ],
+    brands: ['Chaquetón', 'Pantalonera', 'Barrera térmica', 'Barrera de humedad', 'DRD', 'Tirantes'],
+    images: [
+      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.svg', alt: 'Traje estructural para bomberos con chaquetón y pantalón de tres capas' },
+      { src: '/images/productos/chaqueton-estructural-bombero.svg', alt: 'Chaquetón estructural para bombero' },
+      { src: '/images/productos/pantalonera-estructural-bombero.svg', alt: 'Pantalonera estructural para bombero' },
+    ],
+  },
+  {
+    slug: 'Trajes de brigadista',
+    eyebrow: 'Brigada industrial',
+    title: 'El equipo de brigadista cubre fuego incipiente, no ataque interior',
+    description:
+      'Es el equipo con el que la mayoría de las empresas cumple la NOM-002-STPS-2010: primera respuesta, conato de incendio y evacuación. Cuesta menos que un estructural certificado porque su alcance de protección es otro, y confundirlos es el error más frecuente del mercado.',
+    features: [
+      'Pensado para fuego incipiente y primera respuesta, no para entrar a una edificación en llamas',
+      'Cubre la obligación de dotar de EPP a la brigada (NOM-002-STPS-2010, cláusula 5.9)',
+      'Se arma como combo: chaquetón, pantalón, casco, guantes, botas y escafandra',
+      'Si tu brigada hace ataque interior, la respuesta correcta es estructural, no brigadista',
+    ],
+    brands: ['Brigada', 'Conato', 'Combo', 'NOM-002-STPS', 'Primera respuesta'],
+    images: [
+      { src: '/images/productos/traje-brigadista-industrial-bombero.svg', alt: 'Traje de brigadista industrial contra incendio' },
+      { src: '/images/productos/combo-brigadista-industrial.svg', alt: 'Combo completo de brigadista industrial' },
+      { src: '/images/productos/casco-brigadista-industrial.svg', alt: 'Casco para brigadista industrial' },
+    ],
+  },
+  {
+    slug: 'Trajes forestales',
+    eyebrow: 'Línea de fuego',
+    title: 'Forestal: una sola capa, porque el enemigo es la jornada larga',
+    description:
+      'En incendio de vegetación el riesgo no es el engullimiento sino el agotamiento por calor en turnos de muchas horas. Por eso el traje forestal es de una sola capa de tela ignífuga inherente: camisola y pantalón ligeros y transpirables, sin barrera de humedad ni barrera térmica.',
+    features: [
+      'Camisola y pantalón, no chaquetón: prioriza ligereza y disipación de calor',
+      'Tela ignífuga inherente — la protección no se lava ni se desgasta con el uso',
+      'Las botas forestales van sin puntera de acero: el acero transmite calor',
+      'Nunca uses forestal en ataque estructural ni estructural en línea de fuego forestal',
+    ],
+    brands: ['Camisola', 'Una capa', 'Wildland', 'Transpirable', 'Jornada larga'],
+    images: [
+      { src: '/images/productos/traje-forestal-camisola-pantalon-bombero.svg', alt: 'Traje forestal para bombero de una sola capa' },
+      { src: '/images/productos/camisola-forestal-nomex.svg', alt: 'Camisola forestal de tela ignífuga inherente' },
+      { src: '/images/productos/pantalon-forestal-bombero.svg', alt: 'Pantalón forestal para combate de incendios de vegetación' },
+    ],
+  },
+  {
+    slug: 'Trajes de aproximación',
+    eyebrow: 'Calor radiante',
+    title: 'Aproximación: trabajar cerca de la flama, no dentro de ella',
+    description:
+      'El exterior aluminizado refleja el calor radiante y permite operar de forma prolongada a poca distancia de la fuente: aeropuertos (ARFF), refinería, colada de metal y hornos industriales. Conserva movilidad porque está pensado para trabajar, no para un ingreso de emergencia.',
+    features: [
+      'Exterior aluminizado que refleja radiación térmica, no aislamiento por masa',
+      'Uso prolongado con movilidad conservada: es equipo de trabajo, no de rescate puntual',
+      'Se completa con capucha aluminizada, guantes y botas de la misma familia',
+      'No sustituye a un traje de entrada: acercarse y entrar son dos cosas distintas',
+    ],
+    brands: ['Aluminizado', 'ARFF', 'Refinería', 'Metalúrgica', 'Calor radiante'],
+    images: [
+      { src: '/images/productos/traje-aproximacion-aluminizado-bombero.svg', alt: 'Traje de aproximación aluminizado para calor radiante' },
+      { src: '/images/productos/capucha-aluminizada-aproximacion.svg', alt: 'Capucha aluminizada para traje de aproximación' },
+      { src: '/images/productos/guante-aluminizado-aproximacion.svg', alt: 'Guante aluminizado para trabajo cerca de calor radiante' },
+    ],
+  },
+  {
+    slug: 'Trajes de entrada',
+    eyebrow: 'Ingreso a la flama',
+    title: 'Entrada: aluminizado multicapa para segundos, no para turnos',
+    description:
+      'Es el nivel más extremo: permite el ingreso breve a la flama en horno, incidente térmico severo o rescate industrial. Es pesado, multicapa y limita la movilidad a propósito. Se usa por minutos, siempre con equipo de respiración y con personal entrenado para ese procedimiento.',
+    features: [
+      'Ingreso breve con engullimiento, no operación prolongada',
+      'Multicapa aluminizado: la protección viene del conjunto, no de una tela',
+      'Requiere equipo de respiración autónoma y protocolo de entrada y salida',
+      'No existe una norma NFPA de producto específica para entrada: se especifica por fabricante',
+    ],
+    brands: ['Penetración', 'Multicapa', 'Uso corto', 'Horno', 'Rescate industrial'],
+    images: [
+      { src: '/images/productos/traje-entrada-penetracion-flama.svg', alt: 'Traje de entrada aluminizado multicapa para ingreso a la flama' },
+      { src: '/images/productos/capucha-entrada-aluminizada.svg', alt: 'Capucha aluminizada de traje de entrada' },
+      { src: '/images/productos/botas-aluminizadas-entrada.svg', alt: 'Botas aluminizadas para traje de entrada' },
+    ],
+  },
+  {
+    slug: 'Extricación y rescate',
+    eyebrow: 'Rescate técnico',
+    title: 'Extricación: el traje que protege la inversión del estructural',
+    description:
+      'En un rescate vehicular el riesgo cambia: corte, punción, vidrio, aceite y fluidos corporales. Salir a extricación con el traje estructural lo contamina y le acorta la vida útil, que ya está limitada a diez años. Un traje de extricación es más ligero, más flexible y mucho más barato de reponer.',
+    features: [
+      'Resistencia a corte y punción, con barrera contra patógenos transmitidos por sangre',
+      'Ligero y flexible: permite trabajar arrodillado y en espacios reducidos',
+      'Protección limitada frente a flash: no es equipo para entrada a fuego',
+      'Evita contaminar y desgastar el traje estructural en salidas que no son de incendio',
+    ],
+    brands: ['Corte', 'Punción', 'Patógenos', 'Ligero', 'Rescate vehicular'],
+    images: [
+      { src: '/images/productos/traje-extricacion-rescate-vehicular.svg', alt: 'Traje de extricación para rescate vehicular' },
+      { src: '/images/productos/chaqueta-extricacion-rescate.svg', alt: 'Chaqueta de extricación para rescate técnico' },
+      { src: '/images/productos/pantalon-extricacion-rescate.svg', alt: 'Pantalón de extricación para rescate técnico' },
+    ],
+  },
+];
 
 const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
 const guiaRows = [
@@ -117,7 +217,7 @@ const normasRows: [string, string, string][] = [
   ],
   [
     'NFPA 1950 (ed. 2025)',
-    'EPP forestal, rescate técnico y emergencias médicas. Absorbió a NFPA 1977, 1951 y 1999.',
+    'EPP forestal, rescate técnico y emergencias médicas. Absorbió a NFPA 1977, 1950.',
     'Referencia técnica voluntaria.',
   ],
   [
@@ -226,16 +326,24 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         ))}
       </div>
 
-      <!-- Spotlight de la primera familia: va pegado a las cards
-           porque explica justo la que lleva el badge "Más solicitado" -->
-      <div class="spotlight-wrap">
-        <CategoryFeature
-          {...spotlight}
-          ctaLabel="Cotizar trajes estructurales"
-          ctaHref={waUrl(WA_MESSAGES.categoria('Trajes estructurales'))}
-          external
-        />
-      </div>
+      <!-- Un módulo por familia, en el mismo orden que las cards.
+           flip alterna para dar ritmo visual entre módulos seguidos. -->
+      {SPOTLIGHTS.map((s, i) => (
+        <div class="spotlight-wrap">
+          <CategoryFeature
+            eyebrow={s.eyebrow}
+            title={s.title}
+            description={s.description}
+            features={s.features}
+            brands={s.brands}
+            images={s.images}
+            flip={i % 2 === 1}
+            ctaLabel={`Cotizar ${s.slug.toLowerCase()}`}
+            ctaHref={waUrl(WA_MESSAGES.categoria(s.slug))}
+            external
+          />
+        </div>
+      ))}
 
       <div class="complementos">
         <p class="complementos__intro">
