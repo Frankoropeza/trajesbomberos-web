@@ -1,0 +1,142 @@
+---
+// L2 · Contacto. WhatsApp-first (la conversión del sitio), con
+// teléfono y correo como alternativas. Los datos salen del SSoT
+// (CONTACT en site.ts): cuando Frank ponga los reales, esta
+// página se actualiza sola. CERO horarios ni direcciones
+// fabricadas.
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import { CONTACT, SEGMENTOS } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+const path = '/contacto/';
+const keywords = ['cotizar trajes para bomberos', 'contacto', 'México'] as const;
+const title = 'Cotizar trajes para bomberos | contacto | México';
+const description =
+  'Cotizar trajes para bomberos: escríbenos por WhatsApp con tu operación y tallas, o llama y te ayudamos a especificar. Cotización por escrito con ficha técnica.';
+
+const menuItems = [
+  { label: 'WhatsApp', href: '#whatsapp' },
+  { label: 'Qué incluir en tu mensaje', href: '#mensaje' },
+  { label: 'Escríbenos', href: '#formulario' },
+  { label: 'Todos los trajes', href: '/trajes/' },
+];
+
+const faqs = [
+  {
+    q: '¿Cómo pido una cotización?',
+    a: 'Por WhatsApp o con el formulario de esta página. Cuéntanos quién usa el equipo, contra qué riesgo, cuántos elementos son y qué piezas necesitas. Con eso armamos la primera propuesta de especificación.',
+  },
+  {
+    q: '¿Qué datos necesitan para cotizar tallas?',
+    a: 'Para pedidos chicos, la talla comercial de cada elemento. Para pedidos de brigada o cuerpo completo conviene levantar medidas por elemento: estatura, pecho, cintura y entrepierna. Te mandamos la guía de medición.',
+  },
+  {
+    q: '¿Atienden a particulares o solo a corporaciones?',
+    a: 'Ambos. Cotizamos igual a un bombero voluntario que compra su propio chaquetón que a una dependencia que licita 200 conjuntos. El proceso es el mismo: especificación por escrito y ficha técnica por partida.',
+  },
+  {
+    q: '¿Dan factura?',
+    a: 'Sí, factura CFDI con los datos de tu organización o dependencia. Para gobierno, acompañamos la documentación del fabricante que el expediente requiera.',
+  },
+  {
+    q: '¿Publican precios?',
+    a: 'No. Cada pedido se cotiza porque el precio depende del composite, las tallas, la cantidad y el tiempo de entrega. Un precio de mostrador para un traje certificado casi siempre esconde una ficha técnica incompleta.',
+  },
+  {
+    q: '¿Cuánto tardan en responder?',
+    a: 'Por WhatsApp, en el transcurso del día hábil. La cotización formal por escrito depende de la complejidad del pedido; la fecha exacta te la confirmamos en la primera conversación.',
+  },
+  {
+    q: '¿Pueden ayudarme a armar el pliego de una licitación?',
+    a: 'Sí. Te ayudamos a redactar la especificación técnica por partida —composite, certificación, tallas y documentación— para que el pliego sea comparable y defendible. Es la parte donde más errores de compra se originan.',
+  },
+  {
+    q: '¿Hacen envíos a todo México?',
+    a: 'Sí, cotizamos con entrega en todo el país. El costo y el tiempo de envío van especificados en la cotización, no como sorpresa al final.',
+  },
+];
+---
+<PageLayout
+  pageType="generic"
+  faqs={faqs}
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  crumbLabel="Contacto"
+  eyebrow="Contacto"
+  h1="Cotiza tus trajes para bomberos"
+  h1Accent="trajes para bomberos"
+  lead="Cuéntanos tu operación y te ayudamos a especificar antes de cotizar. Respondemos por WhatsApp en el transcurso del día hábil."
+  descRight={[
+    'No necesitas llegar con la especificación resuelta. Dinos quién usa el equipo, contra qué riesgo y cuántos elementos son: nosotros te proponemos la familia, el composite y las piezas, con la ficha técnica de cada partida.',
+    'Si ya tienes un pliego o una requisición, mándalo tal cual. Lo revisamos, te señalamos lo que falta por especificar y te cotizamos por escrito con fecha de entrega comprometida.',
+  ]}
+  meta={['WhatsApp en día hábil', 'Cotización por escrito', 'Envíos a todo México']}
+>
+  <div class="section">
+    <div class="container">
+      <section id="whatsapp" class="block">
+        <SectionHeading
+          eyebrow="La vía rápida"
+          title="Escríbenos por WhatsApp"
+          description="Es el canal por el que resolvemos casi todo: dudas de familia, tallas, fichas técnicas y cotizaciones."
+        />
+        <div class="contacto-vias">
+          <a class="btn btn--wa" href={waUrl('Hola, quiero cotizar trajes para bomberos.')} target="_blank" rel="noopener">
+            Cotizar por WhatsApp
+          </a>
+          <a class="contacto-alt" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+          <a class="contacto-alt" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        </div>
+      </section>
+
+      <section id="mensaje" class="block">
+        <SectionHeading
+          eyebrow="Para cotizar más rápido"
+          title="Qué incluir en tu primer mensaje"
+        />
+        <ol class="contacto-steps">
+          <li><strong>Quién usa el equipo.</strong> {SEGMENTOS.map((s) => s.titulo).join(', ')} — cada perfil especifica distinto.</li>
+          <li><strong>La operación.</strong> Ataque interior, conato industrial, línea forestal, rescate vehicular… la familia de traje sale de aquí.</li>
+          <li><strong>Cuántos elementos y qué piezas.</strong> Conjuntos completos o piezas sueltas; con tallas si ya las tienes.</li>
+          <li><strong>Si hay pliego o requisición, adjúntalo.</strong> Cotizamos contra documento cuando existe.</li>
+        </ol>
+      </section>
+
+      <section id="formulario" class="block">
+        <SectionHeading
+          eyebrow="Preguntas frecuentes"
+          title="Dudas antes de escribirnos"
+        />
+        <FAQWithContact items={faqs} />
+      </section>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .block { margin-bottom: 4rem; }
+  .block:last-child { margin-bottom: 0; }
+
+  .contacto-vias { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .contacto-alt { font-weight: 800; color: var(--color-dark); text-decoration: none; }
+  .contacto-alt:hover { text-decoration: underline; }
+
+  .contacto-steps {
+    margin: 0;
+    padding-left: 1.4rem;
+    display: grid;
+    gap: 0.9rem;
+    max-width: 70ch;
+  }
+  .contacto-steps li { line-height: 1.6; }
+  .contacto-steps strong { color: var(--color-dark); }
+
+  @media (max-width: 640px) {
+    .contacto-vias { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
+</style>

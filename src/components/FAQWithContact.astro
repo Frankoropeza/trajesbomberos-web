@@ -36,7 +36,7 @@ const TIPOS = [
   <aside class="faqc-card">
     <h3>¿Tu duda no está aquí?</h3>
     <p class="faqc-card__lead">Te respondemos por WhatsApp en minutos.</p>
-    <form class="cform" id="faq-contact-form">
+    <form class="cform" id="faq-contact-form" data-wa={CONTACT.whatsapp}>
       <div class="cform__field">
         <label for="cf-nombre">Nombre (opcional)</label>
         <input type="text" id="cf-nombre" name="nombre" autocomplete="name" />
@@ -66,8 +66,10 @@ const TIPOS = [
 </div>
 
 <script>
-  import { CONTACT } from '@config/site';
-
+  // Sin imports: un import de @config/site arrastra las 36 fichas
+  // de piezas.ts al bundle cliente (318 KB). El número llega por
+  // data-wa desde el frontmatter (regla D4 intacta: el SSoT sigue
+  // siendo CONTACT.whatsapp, solo que serializado en el HTML).
   const form = document.getElementById('faq-contact-form') as HTMLFormElement | null;
   const msg = document.getElementById('cf-mensaje') as HTMLTextAreaElement | null;
   const count = document.getElementById('cf-count');
@@ -89,7 +91,9 @@ const TIPOS = [
       `Organización: ${tipo}.`,
       mensaje,
     ].join(' ');
-    window.open(`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    const wa = form.dataset.wa || '';
+    if (!wa) return;
+    window.open(`https://wa.me/${wa}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
   });
 </script>
 

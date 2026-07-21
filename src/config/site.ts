@@ -332,7 +332,8 @@ export const NAV: NavItem[] = [
     ],
     panelCta: { label: 'Ver todos los artículos', href: '/blog/' },
   },
-  { label: 'Contacto', href: '/#faq' },
+  { label: 'Empresa', href: '/empresa/' },
+  { label: 'Contacto', href: '/contacto/' },
 ];
 
 // Complementos del conjunto. NO son línea de negocio: se cotizan

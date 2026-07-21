@@ -40,6 +40,9 @@ const pageIndex = [
   { label: 'Piezas cotizables', href: '#piezas' },
   { label: 'Qué pedir en tu cotización', href: '#especificar' },
   { label: 'Complementos del conjunto', href: '#complementos' },
+  ...(f.marcasRef && f.marcasRef.length > 0
+    ? [{ label: 'Marcas de referencia', href: '#marcas' }]
+    : []),
   { label: 'Preguntas frecuentes', href: '#faq' },
   { label: 'Otras familias', href: '#otras' },
 ];
@@ -132,6 +135,21 @@ const pageIndex = [
             ))}
           </ul>
         </section>
+
+        {f.marcasRef && f.marcasRef.length > 0 && (
+          <section id="marcas" class="block">
+            <SectionHeading
+              eyebrow="Referencia del mercado"
+              title={`Marcas de referencia en ${f.nombreWa.toLowerCase()}`}
+              description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo."
+            />
+            <ul class="marcas-list">
+              {f.marcasRef.map((m) => (
+                <li><strong>{m.nombre}</strong> — {m.nota}</li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <!-- 5 · FAQ de la familia -->
         <section id="faq" class="block">
@@ -252,6 +270,32 @@ const pageIndex = [
   }
   .complementos-list strong { color: var(--color-dark); }
 
+  /* Marcas de referencia: misma retícula que complementos */
+  .marcas-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .marcas-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--color-text);
+  }
+  .marcas-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+  }
+  .marcas-list strong { color: var(--color-dark); }
+
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
@@ -273,5 +317,6 @@ const pageIndex = [
   .pedir { grid-template-columns: 1fr; }
     .pedir li { border-left: 0 !important; padding-left: 0 !important; }
     .complementos-list { grid-template-columns: 1fr; }
+    .marcas-list { grid-template-columns: 1fr; }
   }
 </style>

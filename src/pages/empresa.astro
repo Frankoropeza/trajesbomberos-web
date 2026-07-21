@@ -1,0 +1,190 @@
+---
+// L2 · Empresa. Página E-E-A-T: quiénes somos, cómo trabajamos y
+// qué entregamos con cada pedido. Importa para licitación: el
+// comprador de gobierno verifica legitimidad documental antes de
+// invitar a cotizar. CERO datos fabricados: los datos fiscales y
+// la dirección se añaden cuando Frank los proporcione (TODO).
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import CTABanner from '@components/CTABanner.astro';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
+
+const path = '/empresa/';
+const keywords = ['proveedor de trajes para bomberos', 'empresa', 'México'] as const;
+const title = 'Proveedor de trajes para bomberos | empresa | México';
+const description =
+  'Proveedor de trajes para bomberos en México: especialización exclusiva en trajes, cotización por escrito con ficha técnica, factura CFDI y soporte para licitación.';
+
+const menuItems = [
+  { label: 'Qué hacemos', href: '#que-hacemos' },
+  { label: 'Cómo trabajamos', href: '#como-trabajamos' },
+  { label: 'Qué entregamos', href: '#entregables' },
+  { label: 'Marcas de referencia', href: '#marcas' },
+  { label: 'Contacto', href: '/contacto/' },
+];
+
+const compromisos = [
+  {
+    titulo: 'Solo trajes para bomberos',
+    desc: 'No vendemos de todo. Nuestra línea es el traje: estructural, brigadista, forestal, aproximación, entrada y extricación. Los complementos del conjunto los conseguimos para cerrar el pedido, pero la especialidad es una.',
+  },
+  {
+    titulo: 'Cotización por escrito, siempre',
+    desc: 'Cada partida sale con ficha técnica: composite declarado capa por capa, certificación del conjunto, tallas y tiempo de entrega comprometido. Si una oferta no se puede comparar, no sirve.',
+  },
+  {
+    titulo: 'Te decimos cuando NO te conviene',
+    desc: 'Si tu operación se resuelve con brigadista, no te vendemos estructural. Si no necesitas un traje de entrada, te lo decimos aunque implique una venta menor. El sobreequipamiento también es un error de compra.',
+  },
+  {
+    titulo: 'Norma vigente, no norma de memoria',
+    desc: 'Trabajamos con NFPA 1970 y 1950 (ediciones 2025), EN 469 y EN ISO 15384, y las NOM-017-STPS-2024 y NOM-002-STPS-2010. Cuando un pliego cita una norma ya consolidada, documentamos la correspondencia para tu expediente.',
+  },
+];
+
+const entregables = [
+  { nombre: 'Ficha técnica por partida', nota: 'composite, certificación, tallas y alcance de uso' },
+  { nombre: 'Factura CFDI', nota: 'con los datos de tu organización o dependencia' },
+  { nombre: 'Fecha de entrega por escrito', nota: 'comprometida en la cotización, no de palabra' },
+  { nombre: 'Soporte para licitación', nota: 'correspondencia de normas y documentación del fabricante' },
+  { nombre: 'Guía de tallas', nota: 'levantamiento de medidas por elemento cuando el pedido lo amerita' },
+];
+---
+<PageLayout
+  pageType="generic"
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  crumbLabel="Empresa"
+  eyebrow="Quiénes somos"
+  h1="Proveedor especializado en trajes para bomberos"
+  h1Accent="trajes para bomberos"
+  lead="Una sola línea de producto, atendida con profundidad técnica: el traje. Cotizamos para cuerpos de bomberos, brigadas industriales, dependencias de gobierno y voluntarios en todo México."
+  descRight={[
+    'La mayoría de los proveedores de seguridad industrial venden el traje como una partida más del catálogo. Nosotros lo trabajamos al revés: el traje es la especialidad, y todo lo demás —casco, botas, guantes— es complemento del conjunto.',
+    'Eso cambia la conversación. En lugar de mandarte una lista de precios, te ayudamos a especificar: qué familia corresponde a tu operación, qué composite pedir, qué exigir en la ficha técnica y cómo comparar dos cotizaciones que dicen lo mismo y no son lo mismo.',
+  ]}
+  meta={['Cobertura: todo México', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
+>
+  <div class="section">
+    <div class="container">
+      <section id="que-hacemos" class="block">
+        <SectionHeading
+          eyebrow="Qué hacemos"
+          title="Especificación y venta de trajes para bomberos"
+          description="Seis familias de traje, 36 piezas documentadas con ficha técnica pública, y un criterio: se especifica por operación y por composite, no por catálogo ni por logotipo."
+        />
+        <ul class="empresa-list">
+          {compromisos.map((c) => (
+            <li>
+              <strong>{c.titulo}</strong>
+              <p>{c.desc}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="como-trabajamos" class="block">
+        <SectionHeading
+          eyebrow="Cómo trabajamos"
+          title="Del primer mensaje a la entrega"
+          description="El proceso completo se documenta por escrito. Así se compara, así se audita y así se defiende un expediente de compra."
+        />
+        <ol class="empresa-steps">
+          <li><strong>Nos cuentas tu operación.</strong> Quién usa el equipo, contra qué riesgo y con qué frecuencia. Por WhatsApp o por el formulario de contacto.</li>
+          <li><strong>Te proponemos la especificación.</strong> Familia, composite y piezas, con la ficha técnica de cada partida. Si algo no te conviene, te lo decimos ahí.</li>
+          <li><strong>Cotización formal.</strong> Por escrito, con tallas, tiempo de entrega comprometido y condiciones. Sin precios de mostrador: cada pedido se cotiza.</li>
+          <li><strong>Entrega y documentación.</strong> Factura CFDI, fichas técnicas y la documentación del fabricante que tu expediente requiera.</li>
+        </ol>
+      </section>
+
+      <section id="entregables" class="block">
+        <SectionHeading
+          eyebrow="Qué entregamos"
+          title="Lo que incluye cada pedido"
+        />
+        <ul class="empresa-list empresa-list--compact">
+          {entregables.map((e) => (
+            <li><strong>{e.nombre}</strong> — {e.nota}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="marcas" class="block">
+        <SectionHeading
+          eyebrow="Referencia del mercado"
+          title="Marcas con las que se especifica en México"
+          description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo."
+        />
+        <div class="empresa-marcas">
+          <div>
+            <h3>Fabricantes de traje</h3>
+            <ul class="empresa-list empresa-list--compact">
+              {MARCAS_TRAJE.map((m) => (
+                <li><strong>{m.nombre}</strong> — {m.nota}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3>Materiales del composite</h3>
+            <ul class="empresa-list empresa-list--compact">
+              {MARCAS_MATERIAL.map((m) => (
+                <li><strong>{m.nombre}</strong> — {m.nota}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <CTABanner {...PRESET_CONTACTO} />
+</PageLayout>
+
+<style>
+  .block { margin-bottom: 4rem; }
+  .block:last-child { margin-bottom: 0; }
+
+  .empresa-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .empresa-list li { border-left: 3px solid var(--color-primary); padding-left: 1.1rem; }
+  .empresa-list strong { color: var(--color-dark); display: block; margin-bottom: 0.25rem; }
+  .empresa-list p { margin: 0; font-size: 0.95rem; line-height: 1.6; }
+  .empresa-list--compact { gap: 0.75rem 2rem; }
+  .empresa-list--compact li { border-left: 0; padding-left: 1.4rem; position: relative; font-size: 0.95rem; line-height: 1.55; }
+  .empresa-list--compact li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+  }
+  .empresa-list--compact strong { display: inline; margin: 0; }
+
+  .empresa-steps {
+    margin: 0;
+    padding-left: 1.4rem;
+    display: grid;
+    gap: 0.9rem;
+    max-width: 70ch;
+  }
+  .empresa-steps li { line-height: 1.6; }
+  .empresa-steps strong { color: var(--color-dark); }
+
+  .empresa-marcas { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .empresa-marcas h3 { margin: 0 0 1rem; font-size: 1.05rem; }
+
+  @media (max-width: 768px) {
+    .empresa-list, .empresa-marcas { grid-template-columns: 1fr; }
+  }
+</style>
