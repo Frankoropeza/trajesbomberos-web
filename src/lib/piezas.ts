@@ -3286,6 +3286,1666 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/brigadista/conjunto/"
       }
     ]
+  },
+  {
+    "slug": "camisola",
+    "familia": "forestal",
+    "nombreCard": "Camisola forestal",
+    "nombre": "Camisola forestal",
+    "seoTitle": "Camisola forestal para bombero | fibra inherente | México",
+    "seoDescription": "Camisola forestal para bombero en fibra ignífuga inherente y construcción ventilada: la prenda que prefieren las cuadrillas de línea sobre la chamarra.",
+    "keywords": [
+      "camisola forestal para bombero",
+      "fibra inherente",
+      "México"
+    ],
+    "eyebrow": "Pieza · Línea de fuego",
+    "h1": "Camisola forestal para bombero",
+    "h1Accent": "ligera y ventilada",
+    "lead": "La prenda superior que más usan las cuadrillas de línea: manga larga en fibra ignífuga inherente, construcción ventilada y peso mínimo.",
+    "descRight": [
+      "En línea de fuego el enemigo no es la flama sino el calor que se acumula turno tras turno. Por eso la camisola gana a la chamarra en la mayoría de las cuadrillas: cubre igual, pesa menos y deja que el cuerpo respire durante catorce horas de trabajo continuo.",
+      "El dato que hay que pedir en la cotización es el gramaje de la tela. No es un detalle: define cuánto respira, cuánto aguanta el matorral y cuánto cansa al final del turno. Un mismo modelo puede venir en varios gramajes."
+    ],
+    "meta": [
+      "Fibra inherente",
+      "NFPA 1950 (ex 1977)",
+      "Alta ventilación",
+      "Se pide por gramaje"
+    ],
+    "resumen": [
+      "La camisola forestal es una prenda monocapa: no lleva barrera de humedad ni barrera térmica, y esa ausencia es deliberada. En incendio de vegetación el riesgo dominante es el agotamiento por calor, así que todo el diseño va orientado a que el cuerpo pueda disipar temperatura mientras trabaja.",
+      "La tela es ignífuga inherente, es decir la protección vive en la fibra y no en un acabado aplicado. Eso importa en una brigada que lava el uniforme constantemente: un tratamiento se degrada con los ciclos y nadie lleva la cuenta, la fibra no."
+    ],
+    "puntosClave": [
+      "Monocapa: sin barrera de humedad ni barrera térmica, a propósito",
+      "Fibra ignífuga inherente, no tratada con acabado químico",
+      "Construcción ventilada para jornadas de muchas horas",
+      "Se especifica por gramaje en onzas por yarda cuadrada",
+      "Corte atlético o relajado según preferencia de la cuadrilla",
+      "Se repone antes que el pantalón: sufre más por el matorral"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/camisola-forestal.svg",
+        "alt": "Camisola forestal para bombero en fibra ignífuga inherente"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de camisola y pantalón"
+      },
+      {
+        "src": "/images/productos/camisola-forestal-nomex.svg",
+        "alt": "Detalle de camisola forestal ventilada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1977)",
+            "nota": "La 1977 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Referencia europea",
+            "valor": "EN ISO 15384:2020+A1:2021",
+            "nota": "Sustituyó a la EN 15614"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible cuando un pliego de licitación la incorpora"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Sin barrera de humedad ni barrera térmica"
+          },
+          {
+            "campo": "Fibra",
+            "valor": "Ignífuga inherente",
+            "nota": "La protección está en la fibra, no en un acabado"
+          },
+          {
+            "campo": "Gramaje típico de mercado",
+            "valor": "De 5.8 a 7.0 oz/yd² según tela",
+            "nota": "Menor gramaje respira más; mayor resiste más el matorral"
+          },
+          {
+            "campo": "Ventilación",
+            "valor": "Paneles o perforación según modelo",
+            "nota": "Verificar en la ficha del fabricante"
+          },
+          {
+            "campo": "Bolsas",
+            "valor": "De pecho con cierre o solapa",
+            "nota": "Se define en la orden"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Corte",
+            "valor": "Atlético o relajado",
+            "nota": "Cambia el volumen de torso y la caída de manga"
+          },
+          {
+            "campo": "Tallas",
+            "valor": "Por pecho y largo de manga",
+            "nota": "Disponible línea de dama según fabricante"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "Opcional según modelo",
+            "nota": "En forestal no siempre se usa"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Sin suavizante ni blanqueador",
+            "nota": "Los aditivos dejan residuo combustible"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por condición, no por fecha",
+            "nota": "Daño, quemadura o pérdida de integridad de la tela"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Antes que el pantalón",
+            "nota": "El matorral castiga más mangas y hombros"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Camisola de manga larga en fibra ignífuga inherente",
+      "Configuración de bolsas especificada en la orden",
+      "Ficha técnica con gramaje y composición"
+    ],
+    "noIncluye": [
+      "Pantalón cargo forestal: se cotiza por separado",
+      "Casco forestal, goggles y guantes",
+      "Ropa interior resistente a la flama"
+    ],
+    "errores": [
+      {
+        "error": "Pedirla sin especificar gramaje",
+        "realidad": "Un mismo modelo viene en varios gramajes. Sin ese dato no puedes comparar dos ofertas ni saber cuánto va a respirar."
+      },
+      {
+        "error": "Comprar tela tratada en vez de inherente",
+        "realidad": "El acabado se degrada con los lavados y nadie audita los ciclos. En una brigada que lava a diario, eso se traduce en protección que se va sin avisar."
+      },
+      {
+        "error": "Usar camisola forestal en ataque estructural",
+        "realidad": "Sin barreras no hay protección frente al calor y el vapor de un interior. Son dos equipos para dos riesgos distintos."
+      },
+      {
+        "error": "Lavarla con suavizante",
+        "realidad": "El suavizante deja residuo sobre la fibra y ese residuo sí arde. Es el error de mantenimiento más común en brigadas forestales."
+      },
+      {
+        "error": "Elegir el gramaje más alto por si acaso",
+        "realidad": "Más tela es más peso y menos ventilación. En jornadas largas eso cansa antes y el cansancio es el riesgo real de la línea."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Cuadrilla de línea",
+        "desc": "Construcción de brecha y ataque directo en incendio de vegetación."
+      },
+      {
+        "titulo": "Manejo del fuego",
+        "desc": "Quemas prescritas y control de combustible."
+      },
+      {
+        "titulo": "Brigada estatal o municipal",
+        "desc": "Dotación de temporada para personal de campo."
+      },
+      {
+        "titulo": "Interfaz urbano-rural",
+        "desc": "Zonas donde el incendio de vegetación amenaza asentamientos."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué camisola y no chamarra?",
+        "a": "Porque pesa menos y ventila más, y en línea de fuego eso importa más que la cobertura extra. La mayoría de las cuadrillas prefiere camisola para trabajo directo y deja la chamarra para condiciones de más exposición o para interfaz urbano-rural."
+      },
+      {
+        "q": "¿Qué gramaje me conviene?",
+        "a": "Depende del terreno. En zona de matorral denso conviene un gramaje mayor porque la tela sufre más; en terreno abierto y clima caliente, uno menor que respire mejor. El rango de mercado va aproximadamente de 5.8 a 7.0 onzas por yarda cuadrada."
+      },
+      {
+        "q": "¿Qué significa fibra inherente?",
+        "a": "Que la resistencia a la flama es una propiedad de la fibra misma, no un tratamiento aplicado encima. La diferencia práctica se ve con el tiempo: una tela tratada pierde desempeño con los lavados y una inherente protege igual el primer día que el último."
+      },
+      {
+        "q": "¿Sirve para incendio estructural?",
+        "a": "No. La camisola es monocapa y no tiene barrera de humedad ni barrera térmica. En un interior con calor y vapor no protege. Para eso se necesita un conjunto estructural de tres capas."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Sin suavizante y sin blanqueador. Esos productos dejan residuo sobre la fibra y el residuo es combustible. Es el error más frecuente en el mantenimiento de ropa forestal y anula parte de la protección sin que se vea."
+      },
+      {
+        "q": "¿Cuándo se retira de servicio?",
+        "a": "Por condición, no por fecha: cuando hay quemadura, rasgadura, adelgazamiento de la tela o contaminación que no sale con el lavado. En brigada de temporada conviene revisar todo el uniforme al cierre del periodo de incendios."
+      },
+      {
+        "q": "¿Hay línea de dama?",
+        "a": "Sí, varios fabricantes manejan corte específico. No es cuestión estética: el corte cambia el ajuste en hombro y busto, y una prenda que no ajusta estorba para trabajar con herramienta y mochila."
+      },
+      {
+        "q": "¿Se puede bordar el logotipo de la brigada?",
+        "a": "Sí, con hilo compatible con tela resistente a la flama. Un bordado con hilo convencional introduce material combustible sobre la prenda, así que hay que especificarlo en la orden."
+      }
+    ],
+    "sinonimos": [
+      "camisola forestal",
+      "camisa forestal",
+      "camisola wildland",
+      "camisa de línea de fuego",
+      "wildland shirt",
+      "camisola contra incendio forestal"
+    ],
+    "sinonimosNota": "En México se pide como camisola o camisa forestal. En catálogo de importación aparece como wildland shirt o brush shirt.",
+    "comparativa": {
+      "titulo": "Camisola o chamarra forestal",
+      "intro": "Las dos prendas superiores de la línea forestal. La elección depende del terreno y del tipo de operación.",
+      "columnas": [
+        "Criterio",
+        "Camisola",
+        "Chamarra forestal"
+      ],
+      "filas": [
+        [
+          "Peso y ventilación",
+          "Menor peso, más ventilación",
+          "Más tela, menos ventilación"
+        ],
+        [
+          "Cobertura",
+          "Hasta la cintura",
+          "Largo mayor, más cobertura"
+        ],
+        [
+          "Jornadas largas",
+          "Preferida por cuadrillas de línea",
+          "Cansa más en turno prolongado"
+        ],
+        [
+          "Cuándo conviene",
+          "Ataque directo y trabajo con herramienta",
+          "Interfaz urbano-rural y quema prescrita"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalón cargo forestal: la otra mitad del conjunto",
+        "href": "/trajes/forestal/pantalon/"
+      },
+      {
+        "label": "Chamarra forestal: cuándo conviene sobre la camisola",
+        "href": "/trajes/forestal/chamarra/"
+      },
+      {
+        "label": "Normas aplicables: qué exige realmente la ley en México",
+        "href": "/#normas"
+      }
+    ]
+  },
+  {
+    "slug": "pantalon",
+    "familia": "forestal",
+    "nombreCard": "Pantalón cargo forestal",
+    "nombre": "Pantalón cargo forestal",
+    "seoTitle": "Pantalón forestal para bombero | tipo cargo | México",
+    "seoDescription": "Pantalón forestal para bombero tipo cargo en fibra ignífuga inherente: bolsas de carga, refuerzo de rodilla y ajuste en valenciana para terreno agreste.",
+    "keywords": [
+      "pantalón forestal para bombero",
+      "tipo cargo",
+      "México"
+    ],
+    "eyebrow": "Pieza · Línea de fuego",
+    "h1": "Pantalón forestal para bombero",
+    "h1Accent": "tipo cargo",
+    "lead": "Pantalón monocapa con bolsas de carga, refuerzo de piel en rodilla y ajuste de valenciana, pensado para terreno agreste y trabajo con mochila.",
+    "descRight": [
+      "En la línea el pantalón carga más de lo que parece: cantimplora, radio, guantes, herramienta menor. Las bolsas cargo no son un detalle de diseño, son donde vive lo que el combatiente necesita a la mano sin abrir la mochila.",
+      "El refuerzo de piel en rodilla y el ajuste de valenciana resuelven las dos zonas que primero se destruyen: el arrastre sobre roca y el roce constante contra el matorral y la bota."
+    ],
+    "meta": [
+      "Fibra inherente",
+      "Bolsas cargo",
+      "Refuerzo en rodilla",
+      "Ajuste de valenciana"
+    ],
+    "resumen": [
+      "El pantalón forestal comparte lógica con la camisola: una sola capa de fibra ignífuga inherente, sin barreras, priorizando ventilación y peso. La diferencia está en las zonas de refuerzo, porque el desgaste aquí es puramente mecánico.",
+      "El ajuste en valenciana permite cerrar la pierna sobre la bota y evitar que entren brasas o vegetación. La abertura con cierre en la parte baja facilita ponerse y quitarse el pantalón sin descalzarse, algo que se agradece en un cambio rápido de turno."
+    ],
+    "puntosClave": [
+      "Monocapa en fibra ignífuga inherente, como la camisola",
+      "Bolsas de carga para lo que se necesita a la mano",
+      "Refuerzo de piel en rodilla contra el arrastre sobre roca",
+      "Ajuste de valenciana para cerrar sobre la bota",
+      "Abertura con cierre en la pierna para calzar sin descalzarse",
+      "Corte atlético o relajado y versión de dama"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/pantalon-cargo-forestal.svg",
+        "alt": "Pantalón forestal para bombero tipo cargo"
+      },
+      {
+        "src": "/images/productos/pantalon-forestal-bombero.svg",
+        "alt": "Pantalón forestal con bolsas de carga"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de camisola y pantalón"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1977)",
+            "nota": "La 1977 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Referencia europea",
+            "valor": "EN ISO 15384:2020+A1:2021",
+            "nota": "Sustituyó a la EN 15614"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Sin barrera de humedad ni barrera térmica"
+          },
+          {
+            "campo": "Gramaje típico de mercado",
+            "valor": "De 6.0 a 7.0 oz/yd² según tela",
+            "nota": "Se especifica en la orden"
+          },
+          {
+            "campo": "Refuerzo de rodilla",
+            "valor": "Piel o material de alta abrasión",
+            "nota": "Zona de arrastre sobre roca"
+          },
+          {
+            "campo": "Bolsas",
+            "valor": "Cargo laterales más traseras",
+            "nota": "Número y disposición según modelo"
+          },
+          {
+            "campo": "Abertura de pierna",
+            "valor": "Con cierre en la parte baja",
+            "nota": "Permite calzar sin descalzarse"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Corte",
+            "valor": "Atlético o relajado",
+            "nota": "Línea de dama disponible según fabricante"
+          },
+          {
+            "campo": "Tallas",
+            "valor": "Por cintura y largo",
+            "nota": "Tomar medida sobre la ropa de trabajo"
+          },
+          {
+            "campo": "Ajuste de valenciana",
+            "valor": "Con velcro o cordón",
+            "nota": "Cierra la pierna sobre la bota"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Sin suavizante ni blanqueador",
+            "nota": "Los aditivos dejan residuo combustible"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por condición",
+            "nota": "Refuerzo abierto, quemadura o adelgazamiento"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Junto con la camisola o por separado",
+            "nota": "Se gastan a ritmos distintos"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Pantalón cargo en fibra ignífuga inherente",
+      "Refuerzo de rodilla",
+      "Ajuste de valenciana y abertura con cierre"
+    ],
+    "noIncluye": [
+      "Camisola forestal: se cotiza por separado",
+      "Cinturón",
+      "Botas forestales"
+    ],
+    "errores": [
+      {
+        "error": "Comprar el mismo gramaje para todo el país",
+        "realidad": "El terreno manda. Matorral denso pide más tela; zona abierta y calor extremo piden menos. Especificar un solo gramaje para brigadas de regiones distintas es un error común en compras centralizadas."
+      },
+      {
+        "error": "Ignorar el refuerzo de rodilla",
+        "realidad": "Es la zona que primero se abre por el arrastre sobre roca. Cuando el refuerzo cede, el desgaste pasa directo a la tela y la prenda se pierde en semanas."
+      },
+      {
+        "error": "Usar pantalón forestal con puntera de acero",
+        "realidad": "No es del pantalón sino de la bota, pero va junto: el acero conduce calor directo al pie. En forestal se usa bota sin puntera metálica."
+      },
+      {
+        "error": "Pedirlo sin la abertura con cierre",
+        "realidad": "Sin ella hay que descalzarse para cambiarse, y en un relevo de turno eso cuesta minutos que no siempre hay."
+      },
+      {
+        "error": "Lavarlo con blanqueador para quitar el hollín",
+        "realidad": "El blanqueador daña la fibra y deja residuo. El hollín en forestal es normal; la prenda se lava con detergente neutro, no se blanquea."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Cuadrilla de línea",
+        "desc": "Construcción de brecha con herramienta manual."
+      },
+      {
+        "titulo": "Manejo del fuego",
+        "desc": "Quema prescrita y control de combustible."
+      },
+      {
+        "titulo": "Brigada de temporada",
+        "desc": "Dotación para personal de campo en periodo de incendios."
+      },
+      {
+        "titulo": "Rescate en zona agreste",
+        "desc": "Operaciones donde el terreno castiga la prenda más que el calor."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Qué diferencia hay con un pantalón cargo común?",
+        "a": "La fibra. Un pantalón cargo de trabajo puede ser de algodón o mezcla sintética, que arde o se funde. El forestal es de fibra ignífuga inherente y está certificado para combate de incendio de vegetación. Por fuera se parecen; en línea de fuego no tienen nada que ver."
+      },
+      {
+        "q": "¿Para qué sirve el ajuste de valenciana?",
+        "a": "Para cerrar la pierna sobre la bota y evitar que entren brasas, ceniza o vegetación. En terreno con material incandescente en el suelo es una diferencia real, no un detalle de acabado."
+      },
+      {
+        "q": "¿Qué gramaje elijo?",
+        "a": "El terreno decide. Matorral denso y espinoso pide más tela; zona abierta con calor extremo pide menos, porque el peso y la ventilación pesan más que la resistencia. Si tienes brigadas en regiones distintas, conviene no especificar un solo gramaje para todas."
+      },
+      {
+        "q": "¿El refuerzo de rodilla viene siempre?",
+        "a": "En la mayoría de los modelos sí, pero cambia el material y la extensión. Es un dato que conviene pedir en la ficha: un refuerzo pequeño se desplaza al arrodillarse y deja expuesta la zona que debía proteger."
+      },
+      {
+        "q": "¿Hay versión de dama?",
+        "a": "Sí, varios fabricantes la manejan. El corte cambia en cadera y entrepierna, y con mochila y cinturón puesto la diferencia se nota en movilidad y en dónde rozan las costuras."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Con detergente neutro, sin suavizante ni blanqueador. El hollín es parte del trabajo y no hay que perseguirlo con químicos agresivos: dañan la fibra y dejan residuo que sí es combustible."
+      },
+      {
+        "q": "¿Cuándo se retira de servicio?",
+        "a": "Cuando el refuerzo de rodilla está abierto, cuando hay quemadura o rasgadura en la tela, o cuando el tejido se ve adelgazado por abrasión. En brigada de temporada conviene revisar todo al cierre del periodo."
+      },
+      {
+        "q": "¿Se puede comprar solo el pantalón?",
+        "a": "Sí, sin compra mínima. De hecho camisola y pantalón se gastan a ritmos distintos —la camisola sufre más por el matorral en mangas y hombros— así que reponerlos por separado es lo normal."
+      }
+    ],
+    "sinonimos": [
+      "pantalón forestal",
+      "pantalón cargo forestal",
+      "pantalón wildland",
+      "pantalón de línea de fuego",
+      "brush pant",
+      "wildland pant"
+    ],
+    "sinonimosNota": "Se pide como pantalón forestal o cargo forestal. En catálogo de importación aparece como brush pant o wildland pant.",
+    "comparativa": {
+      "titulo": "Gramaje ligero o gramaje alto",
+      "intro": "La decisión que más impacta en comodidad y duración, y que depende del terreno donde opera tu brigada.",
+      "columnas": [
+        "Criterio",
+        "Gramaje ligero",
+        "Gramaje alto"
+      ],
+      "filas": [
+        [
+          "Ventilación",
+          "Mayor: menos fatiga por calor",
+          "Menor"
+        ],
+        [
+          "Resistencia al matorral",
+          "Menor: se abre antes",
+          "Mayor"
+        ],
+        [
+          "Peso en jornada larga",
+          "Se agradece",
+          "Cansa más"
+        ],
+        [
+          "Terreno recomendado",
+          "Abierto, clima caliente",
+          "Matorral denso y espinoso"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Camisola forestal: la otra mitad del conjunto",
+        "href": "/trajes/forestal/camisola/"
+      },
+      {
+        "label": "Overol forestal: alternativa de una sola pieza",
+        "href": "/trajes/forestal/overol/"
+      },
+      {
+        "label": "Cómo especificar sin dejar huecos",
+        "href": "/#especificar"
+      }
+    ]
+  },
+  {
+    "slug": "chamarra",
+    "familia": "forestal",
+    "nombreCard": "Chamarra forestal",
+    "nombre": "Chamarra forestal",
+    "seoTitle": "Chamarra forestal para bombero | monocapa | México",
+    "seoDescription": "Chamarra forestal para bombero monocapa con largo extendido y cierre protegido: más cobertura que la camisola para interfaz urbano-rural y quema prescrita.",
+    "keywords": [
+      "chamarra forestal para bombero",
+      "monocapa",
+      "México"
+    ],
+    "eyebrow": "Pieza · Línea de fuego",
+    "h1": "Chamarra forestal para bombero",
+    "h1Accent": "más cobertura que la camisola",
+    "lead": "Prenda superior de una sola capa con largo extendido, cierre interior protegido con solapa y tab de garganta, para condiciones de mayor exposición.",
+    "descRight": [
+      "La chamarra ocupa el lugar intermedio de la línea forestal: cubre más que la camisola y pesa mucho menos que un chaquetón estructural. Es la elección habitual para interfaz urbano-rural, donde el fuego se acerca a construcciones y la exposición cambia.",
+      "El cierre va por dentro y se cubre con una solapa de velcro. No es estética: un cierre metálico expuesto se calienta y se convierte en un punto de contacto contra la piel o contra la ropa interior."
+    ],
+    "meta": [
+      "Monocapa",
+      "Largo extendido",
+      "Cierre protegido",
+      "NFPA 1950 (ex 1977)"
+    ],
+    "resumen": [
+      "La chamarra forestal mantiene la construcción de una sola capa —sin barrera de humedad ni térmica— pero con más largo y más cobertura de torso que la camisola. Da protección adicional donde el calor radiante es mayor sin convertirse en la carga térmica de un traje estructural.",
+      "Los detalles de la prenda están pensados para trabajo con herramienta: presillas de utilidad en las bolsas, velcro en pecho para identificación y puños ajustables que cierran contra el guante."
+    ],
+    "puntosClave": [
+      "Una sola capa, como toda la línea forestal",
+      "Largo mayor que la camisola: más cobertura de torso y cadera",
+      "Cierre interior cubierto con solapa de velcro",
+      "Tab de garganta para cerrar el cuello",
+      "Presillas de utilidad y velcro para identificación",
+      "Puños ajustables que cierran contra el guante"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/chamarra-forestal.svg",
+        "alt": "Chamarra forestal para bombero de una sola capa"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de camisola y pantalón"
+      },
+      {
+        "src": "/images/productos/camisola-forestal-nomex.svg",
+        "alt": "Camisola forestal ventilada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1977)",
+            "nota": "La 1977 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Referencia europea",
+            "valor": "EN ISO 15384:2020+A1:2021",
+            "nota": "Sustituyó a la EN 15614"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Sin barreras: no es prenda estructural"
+          },
+          {
+            "campo": "Largo típico de mercado",
+            "valor": "Alrededor de 32 pulgadas",
+            "nota": "Varía según fabricante y talla"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "Interior con solapa de velcro",
+            "nota": "Evita metal expuesto al calor"
+          },
+          {
+            "campo": "Cuello",
+            "valor": "Con tab de garganta",
+            "nota": "Cierra la abertura superior"
+          },
+          {
+            "campo": "Puños",
+            "valor": "Ajustables",
+            "nota": "Interfaz con el guante"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por pecho y largo de manga",
+            "nota": "Considerar la ropa que va debajo"
+          },
+          {
+            "campo": "Bolsas",
+            "valor": "Con presillas de utilidad",
+            "nota": "Para herramienta menor y radio"
+          },
+          {
+            "campo": "Identificación",
+            "valor": "Velcro en pecho",
+            "nota": "Para parche de brigada"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Sin suavizante ni blanqueador",
+            "nota": "Igual que el resto de la línea forestal"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por condición",
+            "nota": "Quemadura, rasgadura o adelgazamiento"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chamarra monocapa con cierre protegido",
+      "Presillas de utilidad y velcro de identificación",
+      "Puños ajustables"
+    ],
+    "noIncluye": [
+      "Pantalón cargo forestal",
+      "Parche o bordado de brigada",
+      "Casco forestal y goggles"
+    ],
+    "errores": [
+      {
+        "error": "Comprarla creyendo que es un chaquetón estructural",
+        "realidad": "Es monocapa. No tiene barrera de humedad ni térmica y no protege en un interior con calor y vapor."
+      },
+      {
+        "error": "Elegirla para cuadrilla de línea en clima caliente",
+        "realidad": "Más tela es más carga térmica. Para ataque directo prolongado la mayoría de las cuadrillas prefiere camisola."
+      },
+      {
+        "error": "Aceptar cierre metálico expuesto",
+        "realidad": "Se calienta y hace contacto con la piel o con la ropa interior. El cierre debe ir por dentro y cubierto con solapa."
+      },
+      {
+        "error": "Pedir talla justa",
+        "realidad": "Va sobre otra prenda y hay que poder moverse con mochila. Una chamarra ajustada limita el brazo justo al usar herramienta."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Interfaz urbano-rural",
+        "desc": "Donde el incendio de vegetación amenaza construcciones."
+      },
+      {
+        "titulo": "Quema prescrita",
+        "desc": "Operación planeada con exposición controlada."
+      },
+      {
+        "titulo": "Mando y supervisión en línea",
+        "desc": "Personal con menos trabajo físico y más tiempo expuesto."
+      },
+      {
+        "titulo": "Clima frío de montaña",
+        "desc": "Donde la cobertura adicional se agradece."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Chamarra o camisola?",
+        "a": "Depende del trabajo. La camisola pesa menos y ventila más: es lo que prefieren las cuadrillas para ataque directo con herramienta. La chamarra cubre más y sirve mejor en interfaz urbano-rural, quema prescrita, mando en línea o clima frío de montaña."
+      },
+      {
+        "q": "¿Es lo mismo que un chaquetón estructural?",
+        "a": "No. La chamarra forestal es de una sola capa; el chaquetón estructural tiene tres, con barrera de humedad y barrera térmica. Se parecen en el largo pero no en la construcción ni en el escenario para el que sirven."
+      },
+      {
+        "q": "¿Por qué el cierre va por dentro?",
+        "a": "Porque un cierre metálico expuesto se calienta y hace contacto con la piel o con la ropa interior. Por eso va interior y cubierto con solapa de velcro, que además evita que se enganche con el matorral."
+      },
+      {
+        "q": "¿Qué largo tiene?",
+        "a": "Los modelos de mercado rondan las 32 pulgadas, aunque varía según fabricante y talla. Lo importante es que cubra la cadera al agacharse, que es cuando se descubre la zona lumbar."
+      },
+      {
+        "q": "¿Sirve para incendio estructural?",
+        "a": "No. Es monocapa. En un interior el calor y el vapor pasan sin resistencia. Para eso se necesita un conjunto estructural certificado de tres capas."
+      },
+      {
+        "q": "¿Cómo elijo la talla?",
+        "a": "Considerando lo que va debajo y el movimiento con mochila y herramienta. Conviene una talla que permita levantar los brazos completamente sin que la prenda se suba: si se sube, deja expuesta la cintura."
+      },
+      {
+        "q": "¿Se puede poner parche de brigada?",
+        "a": "Sí, la mayoría trae velcro en pecho justamente para eso. Si prefieres bordado, hay que usar hilo compatible con tela resistente a la flama y especificarlo en la orden."
+      },
+      {
+        "q": "¿Se lava distinto que la camisola?",
+        "a": "No, mismo criterio: detergente neutro, sin suavizante y sin blanqueador. Al ser una prenda con más tela, conviene verificar que el secado sea completo antes de guardarla para evitar hongos y olor."
+      }
+    ],
+    "sinonimos": [
+      "chamarra forestal",
+      "chaqueta forestal",
+      "chamarra wildland",
+      "chaqueta de línea de fuego",
+      "wildland jacket",
+      "brush jacket"
+    ],
+    "sinonimosNota": "Se pide como chamarra o chaqueta forestal. En catálogo de importación aparece como wildland jacket o brush jacket.",
+    "comparativa": {
+      "titulo": "Chamarra forestal o chaquetón estructural",
+      "intro": "Se confunden por el largo, pero son prendas de escenarios opuestos.",
+      "columnas": [
+        "Criterio",
+        "Chamarra forestal",
+        "Chaquetón estructural"
+      ],
+      "filas": [
+        [
+          "Capas",
+          "Una",
+          "Tres, con barreras"
+        ],
+        [
+          "Peso",
+          "Ligera",
+          "Considerablemente mayor"
+        ],
+        [
+          "Escenario",
+          "Vegetación e interfaz urbano-rural",
+          "Ataque interior en edificación"
+        ],
+        [
+          "Jornada larga",
+          "Diseñada para eso",
+          "Provoca estrés térmico"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Camisola forestal: la alternativa más ligera",
+        "href": "/trajes/forestal/camisola/"
+      },
+      {
+        "label": "Chaquetón estructural: para ataque interior",
+        "href": "/trajes/estructural/chaqueton/"
+      },
+      {
+        "label": "Comparar las seis familias de traje",
+        "href": "/trajes/"
+      }
+    ]
+  },
+  {
+    "slug": "overol",
+    "familia": "forestal",
+    "nombreCard": "Overol forestal",
+    "nombre": "Overol forestal",
+    "seoTitle": "Overol forestal para bombero | una pieza | México",
+    "seoDescription": "Overol forestal para bombero de una sola pieza en fibra ignífuga inherente: cobertura continua sin interfaz entre camisa y pantalón, para vestido rápido.",
+    "keywords": [
+      "overol forestal para bombero",
+      "una pieza",
+      "México"
+    ],
+    "eyebrow": "Pieza · Línea de fuego",
+    "h1": "Overol forestal para bombero",
+    "h1Accent": "de una sola pieza",
+    "lead": "La alternativa al conjunto de dos piezas: cobertura continua sin abertura en la cintura y vestido más rápido en salidas de emergencia.",
+    "descRight": [
+      "El overol resuelve el punto débil del conjunto de dos piezas: la interfaz entre camisola y pantalón. Al agacharse o levantar los brazos, esa unión se abre y deja expuesta la cintura. En una sola pieza ese problema no existe.",
+      "A cambio pierde flexibilidad: no puedes reponer solo la mitad desgastada ni ajustar tallas por separado. Es la elección de brigadas que priorizan cobertura y rapidez de vestido sobre economía de reposición."
+    ],
+    "meta": [
+      "Una pieza",
+      "Cobertura continua",
+      "Vestido rápido",
+      "NFPA 1950 (ex 1977)"
+    ],
+    "resumen": [
+      "El overol forestal se fabrica con la misma fibra ignífuga inherente y la misma construcción monocapa que la camisola y el pantalón. La diferencia está en el formato: una sola prenda, sin unión en la cintura.",
+      "Es común en brigadas que atienden llamados súbitos y necesitan vestirse en segundos, y en operaciones donde la contaminación por ceniza y polvo en la cintura es un problema recurrente. También simplifica el control de inventario: una prenda por elemento en vez de dos."
+    ],
+    "puntosClave": [
+      "Sin interfaz en la cintura: no hay abertura que se descubra al moverse",
+      "Vestido más rápido que un conjunto de dos piezas",
+      "Misma fibra inherente monocapa que el resto de la línea",
+      "Una sola talla por elemento simplifica el inventario",
+      "No permite reponer solo la mitad desgastada",
+      "Requiere abrirse completo para usar el sanitario en campo"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/overol-forestal.svg",
+        "alt": "Overol forestal para bombero de una sola pieza"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de dos piezas"
+      },
+      {
+        "src": "/images/productos/pantalon-forestal-bombero.svg",
+        "alt": "Pantalón forestal cargo"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de desempeño",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1977)",
+            "nota": "La 1977 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Referencia europea",
+            "valor": "EN ISO 15384:2020+A1:2021",
+            "nota": "Sustituyó a la EN 15614"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Formato",
+            "valor": "Una pieza, sin unión en cintura",
+            "nota": "Elimina la interfaz camisa-pantalón"
+          },
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "Sin barrera de humedad ni térmica"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "Frontal, protegido con solapa",
+            "nota": "Evita metal expuesto"
+          },
+          {
+            "campo": "Refuerzo de rodilla",
+            "valor": "Según modelo",
+            "nota": "Verificar en la ficha del fabricante"
+          },
+          {
+            "campo": "Bolsas",
+            "valor": "De pecho y cargo en pierna",
+            "nota": "Distribución según modelo"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por estatura y torso",
+            "nota": "El ajuste es más crítico que en dos piezas"
+          },
+          {
+            "campo": "Ajuste de valenciana",
+            "valor": "Con velcro o cordón",
+            "nota": "Cierra sobre la bota"
+          },
+          {
+            "campo": "Identificación",
+            "valor": "Velcro o bordado",
+            "nota": "Se define en la orden"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Sin suavizante ni blanqueador",
+            "nota": "Mismo criterio que el resto de la línea"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Prenda completa",
+            "nota": "No se puede sustituir solo la mitad dañada"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Overol de una pieza en fibra ignífuga inherente",
+      "Cierre frontal protegido con solapa",
+      "Ajuste de valenciana"
+    ],
+    "noIncluye": [
+      "Casco forestal, goggles y guantes",
+      "Botas forestales",
+      "Ropa interior resistente a la flama"
+    ],
+    "errores": [
+      {
+        "error": "Elegirlo solo por precio",
+        "realidad": "Si se daña una zona hay que reponer la prenda completa. En brigadas con desgaste alto sale más caro que el conjunto de dos piezas."
+      },
+      {
+        "error": "Pedir talla estimada",
+        "realidad": "En una sola pieza el ajuste es más crítico: un overol corto de torso limita el movimiento de brazos y se sube al agacharse."
+      },
+      {
+        "error": "No considerar el uso en campo",
+        "realidad": "Hay que abrirlo completo para usar el sanitario, y en jornadas de doce horas en monte eso es un factor real que el personal reporta."
+      },
+      {
+        "error": "Suponer que protege más por ser una pieza",
+        "realidad": "La protección es la misma: misma fibra, misma capa. Lo que mejora es la cobertura de la cintura, no el desempeño térmico."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Respuesta rápida",
+        "desc": "Brigadas que se visten en segundos ante un llamado."
+      },
+      {
+        "titulo": "Zonas con ceniza y polvo",
+        "desc": "Donde la contaminación en la cintura es recurrente."
+      },
+      {
+        "titulo": "Control de inventario simple",
+        "desc": "Una prenda por elemento en vez de dos."
+      },
+      {
+        "titulo": "Manejo del fuego",
+        "desc": "Quemas prescritas con cuadrillas fijas."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Protege más que el conjunto de dos piezas?",
+        "a": "No en desempeño térmico: es la misma fibra y la misma construcción monocapa. Lo que mejora es la cobertura, porque desaparece la abertura en la cintura que se descubre al agacharse o al levantar los brazos."
+      },
+      {
+        "q": "¿Cuándo conviene overol y cuándo dos piezas?",
+        "a": "El overol conviene si tu prioridad es cobertura continua y vestido rápido. El conjunto de dos piezas conviene si el desgaste es alto y quieres reponer solo la prenda dañada, o si necesitas ajustar tallas distintas de torso y pierna."
+      },
+      {
+        "q": "¿Cómo se toma la talla?",
+        "a": "Por estatura y torso, y es más crítico que en dos piezas. Un overol corto de torso se sube al agacharse y limita el movimiento de brazos; uno largo hace bolsa y estorba con el cinturón."
+      },
+      {
+        "q": "¿Se puede reponer solo la parte dañada?",
+        "a": "No. Si se rompe la rodilla o se quema una manga, la prenda completa sale de servicio. Es el principal argumento a favor del conjunto de dos piezas en brigadas con desgaste alto."
+      },
+      {
+        "q": "¿Es cómodo en jornadas largas?",
+        "a": "Depende del ajuste y del clima. El personal suele reportar dos temas: que hay que abrirlo completo para usar el sanitario y que ventila un poco menos que un conjunto de dos piezas con la camisola por fuera."
+      },
+      {
+        "q": "¿Sirve para incendio estructural?",
+        "a": "No. Es monocapa, sin barrera de humedad ni barrera térmica. En interior con calor y vapor no protege. Para eso se necesita conjunto estructural de tres capas."
+      },
+      {
+        "q": "¿Lleva refuerzo de rodilla?",
+        "a": "Depende del modelo. Es un dato que conviene confirmar en la ficha, porque en terreno rocoso la rodilla es la primera zona que se abre y en un overol eso implica reponer la prenda entera."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Igual que el resto de la línea forestal: detergente neutro, sin suavizante y sin blanqueador. Al ser una prenda grande conviene asegurarse de que seque completamente antes de guardarla."
+      }
+    ],
+    "sinonimos": [
+      "overol forestal",
+      "mameluco forestal",
+      "overol wildland",
+      "traje forestal de una pieza",
+      "wildland coverall",
+      "overol contra incendio forestal"
+    ],
+    "sinonimosNota": "En México se pide como overol o mameluco forestal. En catálogo de importación aparece como wildland coverall.",
+    "comparativa": {
+      "titulo": "Overol o conjunto de dos piezas",
+      "intro": "La decisión de formato en la línea forestal. No hay una respuesta única: depende de tu operación.",
+      "columnas": [
+        "Criterio",
+        "Overol de una pieza",
+        "Camisola y pantalón"
+      ],
+      "filas": [
+        [
+          "Cobertura de cintura",
+          "Continua, sin abertura",
+          "Depende del ajuste entre prendas"
+        ],
+        [
+          "Reposición",
+          "Prenda completa",
+          "Solo la pieza dañada"
+        ],
+        [
+          "Vestido",
+          "Más rápido",
+          "Dos prendas"
+        ],
+        [
+          "Ventilación",
+          "Algo menor",
+          "Mayor, sobre todo con la camisola por fuera"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Camisola forestal: opción de dos piezas",
+        "href": "/trajes/forestal/camisola/"
+      },
+      {
+        "label": "Pantalón cargo forestal",
+        "href": "/trajes/forestal/pantalon/"
+      },
+      {
+        "label": "Conjunto dual forestal y rescate",
+        "href": "/trajes/forestal/conjunto-dual/"
+      }
+    ]
+  },
+  {
+    "slug": "nuquera",
+    "familia": "forestal",
+    "nombreCard": "Nuquera forestal",
+    "nombre": "Nuquera forestal",
+    "seoTitle": "Nuquera forestal para casco de bombero | México",
+    "seoDescription": "Nuquera forestal para casco de bombero en tela ignífuga: cubre cuello y orejas de la lluvia de pavesas y del calor radiante en línea de fuego.",
+    "keywords": [
+      "nuquera forestal para casco",
+      "protector de nuca",
+      "México"
+    ],
+    "eyebrow": "Pieza · Línea de fuego",
+    "h1": "Nuquera forestal para casco",
+    "h1Accent": "protege cuello y orejas",
+    "lead": "Protector de tela ignífuga que se acopla al casco forestal y cubre nuca, cuello y orejas de las pavesas y del calor radiante.",
+    "descRight": [
+      "En línea de fuego caen pavesas. No es una imagen dramática: es lo que pasa cuando el viento arrastra material incandescente desde la copa de los árboles. La nuca y las orejas quedan justo en la trayectoria y el casco no las cubre.",
+      "Es la pieza más barata del equipo forestal y la que más se omite en las dotaciones. También es la que más agradece el personal cuando lleva ocho horas bajo sol directo, porque además protege del quemado solar en el cuello."
+    ],
+    "meta": [
+      "Tela ignífuga",
+      "Acople a casco",
+      "Cubre nuca y orejas",
+      "Pieza económica"
+    ],
+    "resumen": [
+      "La nuquera se acopla al casco forestal —normalmente por el sistema de ajuste o por velcro— y cae sobre nuca, cuello y orejas. Está hecha de la misma fibra ignífuga inherente que el resto de la línea, así que soporta la pavesa que la ropa común no aguantaría.",
+      "Además del riesgo térmico, resuelve algo que el personal reporta constantemente: la exposición solar prolongada. Una brigada que trabaja jornadas largas en monte abierto acumula daño solar en cuello y orejas que se evita con esta pieza."
+    ],
+    "puntosClave": [
+      "Cubre la zona que el casco forestal deja descubierta",
+      "Fibra ignífuga inherente, resiste la caída de pavesas",
+      "Se acopla al casco por ajuste o velcro, según modelo",
+      "Protege también de la exposición solar prolongada",
+      "Es de las piezas más económicas del equipo forestal",
+      "Se verifica compatibilidad con el modelo de casco en uso"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/nuquera-forestal.svg",
+        "alt": "Nuquera forestal para casco de bombero"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de camisola y pantalón"
+      },
+      {
+        "src": "/images/productos/camisola-forestal-nomex.svg",
+        "alt": "Camisola forestal ventilada"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia",
+            "valor": "Complemento del equipo forestal",
+            "nota": "Se especifica junto con el casco"
+          },
+          {
+            "campo": "Fibra",
+            "valor": "Ignífuga inherente",
+            "nota": "Misma familia que el resto de la línea"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Cobertura",
+            "valor": "Nuca, cuello y orejas",
+            "nota": "La zona que el casco no cubre"
+          },
+          {
+            "campo": "Sujeción",
+            "valor": "Por ajuste del casco o velcro",
+            "nota": "Depende del modelo de casco"
+          },
+          {
+            "campo": "Peso",
+            "valor": "Mínimo",
+            "nota": "No debe alterar el balance del casco"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Compatibilidad",
+            "valor": "Según modelo de casco forestal",
+            "nota": "Dato necesario al cotizar"
+          },
+          {
+            "campo": "Talla",
+            "valor": "Única en la mayoría de modelos",
+            "nota": "El ajuste lo da el casco"
+          },
+          {
+            "campo": "Color",
+            "valor": "Según dotación de la brigada",
+            "nota": "Se define en la orden"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Con el resto del uniforme",
+            "nota": "Sin suavizante ni blanqueador"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Frecuente",
+            "nota": "Se pierde o se daña con facilidad; conviene tener repuestos"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Nuquera en fibra ignífuga inherente",
+      "Sistema de sujeción compatible con el casco especificado"
+    ],
+    "noIncluye": [
+      "Casco forestal",
+      "Goggles y barbiquejo",
+      "Pasamontañas o capucha"
+    ],
+    "errores": [
+      {
+        "error": "Omitirla del pedido para ahorrar",
+        "realidad": "Es de las piezas más baratas del equipo forestal y cubre la zona por donde entran las pavesas. Ahorrar aquí no mueve el presupuesto."
+      },
+      {
+        "error": "No verificar compatibilidad con el casco",
+        "realidad": "El sistema de sujeción cambia entre modelos. Una nuquera que no ajusta se cae en la primera hora y termina en la mochila."
+      },
+      {
+        "error": "Comprar solo una por elemento",
+        "realidad": "Se pierde y se daña con facilidad. Conviene tener repuestos en almacén: una brigada sin nuquera trabaja igual, pero acumula exposición."
+      },
+      {
+        "error": "Usar una tela común como sustituto",
+        "realidad": "Una pañoleta de algodón se enciende con una pavesa. La pieza existe porque el material importa."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Cuadrilla de línea",
+        "desc": "Trabajo bajo caída de pavesas y sol directo."
+      },
+      {
+        "titulo": "Quema prescrita",
+        "desc": "Exposición controlada pero prolongada al calor radiante."
+      },
+      {
+        "titulo": "Brigada de temporada",
+        "desc": "Dotación completa para personal de campo."
+      },
+      {
+        "titulo": "Reposición periódica",
+        "desc": "Refacción económica que conviene tener en stock."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Para qué sirve exactamente?",
+        "a": "Para cubrir nuca, cuello y orejas, que es la zona que el casco forestal deja descubierta. Protege de la caída de pavesas —material incandescente que arrastra el viento— y del calor radiante, además de reducir la exposición solar en jornadas largas."
+      },
+      {
+        "q": "¿Sirve con cualquier casco?",
+        "a": "No necesariamente. El sistema de sujeción cambia entre modelos: algunas se fijan al ajuste del casco y otras por velcro. Al cotizar dinos qué casco usa tu brigada para confirmar compatibilidad."
+      },
+      {
+        "q": "¿Puedo usar una pañoleta común?",
+        "a": "No conviene. Una tela de algodón se enciende con una pavesa y deja de ser protección para volverse el problema. La nuquera existe porque está hecha con fibra ignífuga inherente."
+      },
+      {
+        "q": "¿Estorba con el equipo?",
+        "a": "No debería. Pesa muy poco y no altera el balance del casco. Si el personal la reporta incómoda, normalmente es porque el sistema de sujeción no es el adecuado para ese casco."
+      },
+      {
+        "q": "¿Cada cuánto se repone?",
+        "a": "Con más frecuencia que el resto del uniforme, porque se pierde y se daña con facilidad. Es una refacción económica: conviene tener repuestos en almacén para que nadie salga sin ella."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Con el resto del uniforme forestal: detergente neutro, sin suavizante ni blanqueador. Al ser una pieza chica se extravía fácil en la lavandería, así que conviene marcarla."
+      },
+      {
+        "q": "¿Protege del sol?",
+        "a": "Sí, y es una de las razones por las que el personal la agradece. Una brigada que trabaja jornadas largas en monte abierto acumula daño solar en cuello y orejas que esta pieza evita."
+      },
+      {
+        "q": "¿Viene en tallas?",
+        "a": "La mayoría de los modelos es talla única porque el ajuste lo da el casco. Lo que sí varía es el largo de la caída sobre el cuello, y ese dato conviene revisarlo si tu personal usa mochila con arnés alto."
+      }
+    ],
+    "sinonimos": [
+      "nuquera forestal",
+      "protector de nuca",
+      "cubrenuca para casco",
+      "faldón de casco forestal",
+      "neck shroud",
+      "protector cervical forestal"
+    ],
+    "sinonimosNota": "Se pide como nuquera, cubrenuca o protector de nuca. En catálogo de importación aparece como neck shroud o helmet shroud.",
+    "comparativa": {
+      "titulo": "Nuquera o pasamontañas forestal",
+      "intro": "Dos formas de cubrir la zona del cuello. No compiten: resuelven cosas distintas.",
+      "columnas": [
+        "Criterio",
+        "Nuquera de casco",
+        "Pasamontañas"
+      ],
+      "filas": [
+        [
+          "Cobertura",
+          "Nuca, cuello y orejas",
+          "Cabeza completa y cara parcial"
+        ],
+        [
+          "Ventilación",
+          "Alta: solo cae por detrás",
+          "Menor: cubre toda la cabeza"
+        ],
+        [
+          "Uso típico",
+          "Jornada completa en línea",
+          "Momentos de mayor exposición"
+        ],
+        [
+          "Comodidad con calor",
+          "Muy alta",
+          "Se siente en clima caliente"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Camisola forestal: el resto del uniforme de línea",
+        "href": "/trajes/forestal/camisola/"
+      },
+      {
+        "label": "Comparar las seis familias de traje",
+        "href": "/trajes/"
+      },
+      {
+        "label": "Cómo especificar sin dejar huecos",
+        "href": "/#especificar"
+      }
+    ]
+  },
+  {
+    "slug": "conjunto-dual",
+    "familia": "forestal",
+    "nombreCard": "Conjunto dual forestal y rescate",
+    "nombre": "Conjunto dual forestal y rescate",
+    "seoTitle": "Conjunto dual forestal y rescate | doble norma | México",
+    "seoDescription": "Conjunto dual forestal y rescate certificado para incendio de vegetación y rescate técnico: un solo equipo para cuerpos que atienden ambos escenarios.",
+    "keywords": [
+      "conjunto dual forestal y rescate",
+      "doble certificación",
+      "México"
+    ],
+    "eyebrow": "Pieza · Línea de fuego",
+    "h1": "Conjunto dual forestal y rescate",
+    "h1Accent": "una prenda, dos escenarios",
+    "lead": "Chaqueta y pantalón certificados a la vez para combate forestal y rescate técnico, para cuerpos que salen a las dos cosas sin comprar dos equipos.",
+    "descRight": [
+      "La mayoría de los cuerpos municipales de México no tiene el lujo de una dotación por escenario. La misma gente que sale a un incendio de pastizal sale al accidente en carretera dos horas después. El conjunto dual está pensado exactamente para eso.",
+      "No es un equipo a medias: cumple las dos referencias completas. Lo que se paga es la versatilidad, y lo que se ahorra es una segunda dotación completa con su propio ciclo de lavado, inspección y almacenamiento."
+    ],
+    "meta": [
+      "Doble certificación",
+      "Forestal y rescate",
+      "Monocapa ligero",
+      "Sin PFAS disponible"
+    ],
+    "resumen": [
+      "El conjunto dual se certifica simultáneamente bajo la referencia forestal y la de rescate técnico, ambas hoy dentro de NFPA 1950. Eso significa que la misma prenda cumple los requisitos de combate de incendio de vegetación y los de protección mecánica y contra patógenos del rescate.",
+      "Se construye monocapa, con telas de alta transpirabilidad y refuerzos en las zonas de contacto. Hay opciones de tela sin PFAS, una discusión creciente en el sector por la persistencia de esos compuestos y su relación con la exposición ocupacional."
+    ],
+    "puntosClave": [
+      "Certificado para combate forestal y para rescate técnico",
+      "Una sola dotación para cuerpos que atienden ambos escenarios",
+      "Construcción monocapa, transpirable y ligera",
+      "Refuerzos en zonas de contacto mecánico",
+      "Opciones de tela sin PFAS según fabricante",
+      "Simplifica el ciclo de lavado, inspección y almacenamiento"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-dual-forestal-y-rescate.svg",
+        "alt": "Conjunto dual forestal y rescate técnico"
+      },
+      {
+        "src": "/images/productos/traje-forestal-camisola-pantalon-bombero.svg",
+        "alt": "Traje forestal de camisola y pantalón"
+      },
+      {
+        "src": "/images/productos/traje-extricacion-rescate-vehicular.svg",
+        "alt": "Traje de extricación para rescate vehicular"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Referencia forestal",
+            "valor": "NFPA 1950, edición 2025 (ex NFPA 1977)",
+            "nota": "La 1977 fue absorbida por la 1950"
+          },
+          {
+            "campo": "Referencia de rescate",
+            "valor": "NFPA 1950 (ex NFPA 1951)",
+            "nota": "La 1951 también fue absorbida por la 1950"
+          },
+          {
+            "campo": "Doble cumplimiento",
+            "valor": "Debe venir declarado en la etiqueta",
+            "nota": "No basta con que el fabricante lo diga en el catálogo"
+          },
+          {
+            "campo": "Estatus en México",
+            "valor": "Referencia técnica voluntaria",
+            "nota": "Exigible por pliego de licitación"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capas",
+            "valor": "Una sola",
+            "nota": "No es prenda de ataque interior"
+          },
+          {
+            "campo": "Tela",
+            "valor": "Ignífuga inherente de alta transpirabilidad",
+            "nota": "Opciones sin PFAS según fabricante"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Rodillas, codos y hombros",
+            "nota": "Zonas de contacto en rescate"
+          },
+          {
+            "campo": "Protección biológica",
+            "valor": "Barrera contra patógenos según modelo",
+            "nota": "Requisito del componente de rescate"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Formato",
+            "valor": "Chaqueta y pantalón, u overol",
+            "nota": "Según fabricante"
+          },
+          {
+            "campo": "Tallas",
+            "valor": "Por elemento",
+            "nota": "Considerar uso sobre uniforme de estación"
+          },
+          {
+            "campo": "Alta visibilidad",
+            "valor": "Cinta reflejante para trabajo en carretera",
+            "nota": "Crítico en rescate vehicular nocturno"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Tras exposición a humo o a fluidos",
+            "nota": "El componente de rescate implica descontaminación biológica"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Según instrucciones del fabricante",
+            "nota": "Cubre ambos usos"
+          },
+          {
+            "campo": "Retiro",
+            "valor": "Por condición",
+            "nota": "Daño mecánico, quemadura o contaminación"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaqueta y pantalón con doble certificación declarada",
+      "Refuerzos en zonas de contacto",
+      "Cinta reflejante en la configuración especificada"
+    ],
+    "noIncluye": [
+      "Casco, guantes y goggles",
+      "Botas",
+      "Equipo de respiración autónoma"
+    ],
+    "errores": [
+      {
+        "error": "Aceptar la doble certificación solo de palabra",
+        "realidad": "Debe venir declarada en la etiqueta del producto, no en el folleto comercial. En licitación es lo que se revisa."
+      },
+      {
+        "error": "Usarlo para ataque interior estructural",
+        "realidad": "Es monocapa. No tiene barrera térmica ni de humedad y no protege en un interior con fuego declarado."
+      },
+      {
+        "error": "Compararlo por precio contra un forestal simple",
+        "realidad": "Cumple dos referencias y trae protección mecánica y biológica adicional. La comparación justa es contra dos dotaciones separadas."
+      },
+      {
+        "error": "Descuidar la descontaminación tras rescate",
+        "realidad": "El componente de rescate implica contacto con fluidos. La prenda se lava con protocolo biológico, no solo por hollín."
+      },
+      {
+        "error": "Omitir la cinta reflejante",
+        "realidad": "En rescate vehicular nocturno sobre carretera la visibilidad es seguridad vial, no estética."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Cuerpo municipal con doble atribución",
+        "desc": "Sale a incendio de vegetación y a accidente vial con la misma dotación."
+      },
+      {
+        "titulo": "Protección civil estatal",
+        "desc": "Unidades que cubren temporada de incendios y emergencias viales."
+      },
+      {
+        "titulo": "Brigada rural",
+        "desc": "Zonas donde el mismo equipo atiende todo tipo de emergencia."
+      },
+      {
+        "titulo": "Presupuesto acotado",
+        "desc": "Cuando no alcanza para dos dotaciones certificadas separadas."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Realmente cumple las dos normas?",
+        "a": "Sí, cuando la doble certificación viene declarada en la etiqueta del producto. Eso es lo que hay que exigir: no basta con que el catálogo diga 'dual'. En una licitación se revisa la etiqueta y el listado del fabricante ante el organismo certificador."
+      },
+      {
+        "q": "¿Sirve para incendio estructural?",
+        "a": "No. Es una prenda monocapa: no tiene barrera de humedad ni barrera térmica. Cubre incendio de vegetación y rescate técnico, que son escenarios de riesgo mecánico y térmico moderado, no de ataque interior."
+      },
+      {
+        "q": "¿Conviene económicamente?",
+        "a": "Si tu cuerpo atiende los dos escenarios, sí: una dotación en vez de dos, con un solo ciclo de lavado, inspección y almacenamiento. Si solo haces forestal, un conjunto forestal simple es más ligero y más barato."
+      },
+      {
+        "q": "¿Qué son las telas sin PFAS?",
+        "a": "Son telas fabricadas sin compuestos perfluorados, que son persistentes en el ambiente y objeto de creciente atención por su relación con la exposición ocupacional. Varios fabricantes ya ofrecen alternativas: si es un criterio para tu institución, pídelo explícitamente."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Depende del uso: tras incendio de vegetación, con detergente neutro sin suavizante; tras rescate con exposición a fluidos, con protocolo de descontaminación biológica. Es un punto que conviene tener escrito en el procedimiento interno."
+      },
+      {
+        "q": "¿Qué formato conviene, dos piezas u overol?",
+        "a": "Para uso dual normalmente conviene dos piezas: permite reponer la prenda dañada y facilita el vestido parcial cuando la salida es solo de rescate. El overol tiene sentido si priorizas cobertura continua y vestido rápido."
+      },
+      {
+        "q": "¿Lleva protección contra patógenos?",
+        "a": "El componente de rescate lo requiere, pero el nivel varía entre modelos. Es un dato que debe estar declarado en la ficha técnica: en rescate vehicular hay contacto con sangre y fluidos con más frecuencia de la que se supone."
+      },
+      {
+        "q": "¿Sustituye al traje de extricación?",
+        "a": "Cumple la función, porque incluye la certificación de rescate técnico. Un traje de extricación dedicado puede estar más optimizado para ese uso específico, pero si necesitas cubrir ambos escenarios con un solo equipo, el dual es la vía."
+      }
+    ],
+    "sinonimos": [
+      "conjunto dual forestal y rescate",
+      "traje dual wildland rescate",
+      "conjunto doble certificación",
+      "traje forestal y extricación",
+      "dual certified gear",
+      "traje multipropósito de emergencia"
+    ],
+    "sinonimosNota": "Se pide como dual o de doble certificación. En catálogo de importación aparece como dual certified o double duty.",
+    "comparativa": {
+      "titulo": "Conjunto dual o dos dotaciones separadas",
+      "intro": "La decisión de fondo para un cuerpo que atiende forestal y rescate con el mismo personal.",
+      "columnas": [
+        "Criterio",
+        "Conjunto dual",
+        "Dotación forestal + dotación de rescate"
+      ],
+      "filas": [
+        [
+          "Inversión inicial",
+          "Una dotación",
+          "Dos dotaciones completas"
+        ],
+        [
+          "Optimización por escenario",
+          "Buena en ambos, óptima en ninguno",
+          "Óptima en cada uno"
+        ],
+        [
+          "Logística",
+          "Un solo ciclo de servicio",
+          "Dos ciclos separados"
+        ],
+        [
+          "Cuándo conviene",
+          "Presupuesto acotado y doble atribución",
+          "Cuerpos con volumen alto en ambos escenarios"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Trajes de extricación y rescate técnico",
+        "href": "/trajes/extricacion/"
+      },
+      {
+        "label": "Camisola forestal: opción dedicada de línea",
+        "href": "/trajes/forestal/camisola/"
+      },
+      {
+        "label": "Normas aplicables en México",
+        "href": "/#normas"
+      }
+    ]
   }
 ];
 
