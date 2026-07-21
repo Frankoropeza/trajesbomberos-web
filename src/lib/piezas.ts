@@ -1659,6 +1659,1633 @@ export const PIEZAS: Pieza[] = [
                 "href": "/trajes/"
           }
     ],
+  },
+  {
+    "slug": "conjunto",
+    "familia": "brigadista",
+    "nombreCard": "Conjunto de brigada contra fuego incipiente",
+    "nombre": "Conjunto de brigada contra fuego incipiente",
+    "seoTitle": "Traje de brigada contra incendio | conjunto | México",
+    "seoDescription": "Traje de brigada contra incendio: chaquetón y pantalón con capa inherente y forro desmontable, para conato en industria. Cumple la dotación de la NOM-002-STPS.",
+    "keywords": [
+      "traje de brigada contra incendio",
+      "conjunto",
+      "México"
+    ],
+    "eyebrow": "Pieza · Brigada industrial",
+    "h1": "Traje de brigada contra incendio",
+    "h1Accent": "chaquetón y pantalón",
+    "lead": "El conjunto con el que una empresa cumple la dotación de su brigada: capa externa inherente, forro desmontable y refuerzos donde se desgasta.",
+    "descRight": [
+      "Es el equipo pensado para el conato: el fuego que todavía se controla con extintor o con manguera de gabinete, mientras se evacúa y se espera al cuerpo de bomberos. Cubre ese escenario y hasta ahí llega, que es exactamente lo que la mayoría de las plantas necesita.",
+      "Se cotiza como conjunto pero se factura por pieza, porque tu área de compras necesita comparar partida por partida y tu auditoría necesita el respaldo documental. Si el análisis de riesgo indica ataque interior, te lo decimos antes: ahí lo que corresponde es estructural."
+    ],
+    "meta": [
+      "NOM-002-STPS-2010",
+      "Forro desmontable",
+      "Capa inherente",
+      "Desglose por pieza"
+    ],
+    "resumen": [
+      "El conjunto de brigada se construye distinto al estructural. La capa externa es inherentemente resistente a la flama —la protección está en la fibra, no en un acabado que se lava— y el forro va desmontable, con barrera de humedad y barrera térmica que se separan para lavado e inspección. Eso baja el costo y facilita el mantenimiento en una planta que no tiene taller de EPP.",
+      "Los refuerzos van donde realmente se gasta: rodillas y valencianas. La cinta reflejante se coloca en mangas, pecho, faldón y pierna, porque buena parte de los conatos ocurren de noche o en zonas con poca luz. Los tirantes tipo X reparten el peso del pantalón sin herrajes que estorben."
+    ],
+    "puntosClave": [
+      "Pensado para conato y primera respuesta, no para ataque interior",
+      "Capa externa inherente: la protección no se va con los lavados",
+      "Forro desmontable con barrera de humedad y barrera térmica",
+      "Refuerzos en rodillas y valencianas, que es donde se gasta",
+      "Cinta reflejante en mangas, pecho, faldón y pierna",
+      "Se cotiza desglosado por pieza para tu orden de compra"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.svg",
+        "alt": "Conjunto de brigada contra fuego incipiente: chaquetón y pantalón"
+      },
+      {
+        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "alt": "Traje de brigadista industrial"
+      },
+      {
+        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "alt": "Combo completo de brigadista industrial"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y cumplimiento",
+        "filas": [
+          {
+            "campo": "Obligación en México",
+            "valor": "NOM-002-STPS-2010, cláusula 5.9",
+            "nota": "Dotar de EPP a los integrantes de la brigada contra incendio"
+          },
+          {
+            "campo": "Norma de EPP aplicable",
+            "valor": "NOM-017-STPS-2024",
+            "nota": "Vigente desde el 28-sep-2025; sustituyó a la de 2008"
+          },
+          {
+            "campo": "Referencia de producto",
+            "valor": "Según el fabricante",
+            "nota": "En México no existe NOM de producto para traje de bombero"
+          },
+          {
+            "campo": "Alcance declarado",
+            "valor": "Fuego incipiente y primera respuesta",
+            "nota": "Debe venir por escrito en la ficha técnica"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa externa",
+            "valor": "Aramida inherente tipo Nomex con Kevlar",
+            "nota": "Gramaje típico de mercado: 6.0 oz/yd²"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Desmontable, de dos capas",
+            "nota": "Barrera de humedad más barrera térmica"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Rodillas y valencianas",
+            "nota": "Zonas de mayor desgaste"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "En mangas, pecho, faldón y pierna",
+            "nota": "Ancho típico de 5 cm"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "Broches de presión, ganchos y aros D",
+            "nota": "Sin cierre metálico expuesto"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "Por elemento de la brigada",
+            "nota": "Conviene levantar medidas, no estimar por promedio"
+          },
+          {
+            "campo": "Tirantes",
+            "valor": "Tipo X de elástico",
+            "nota": "Incluidos o cotizados aparte según fabricante"
+          },
+          {
+            "campo": "Identificación",
+            "valor": "Bordado o serigrafía de empresa",
+            "nota": "Se define en la orden"
+          },
+          {
+            "campo": "Piezas",
+            "valor": "Conjunto completo o por pieza",
+            "nota": "Sin compra mínima"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Forro desmontado",
+            "nota": "Facilita el mantenimiento sin taller especializado"
+          },
+          {
+            "campo": "Inspección",
+            "valor": "Periódica, según programa interno",
+            "nota": "Documentarla sirve en auditoría de la STPS"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Por pieza",
+            "nota": "La pantalonera se repone antes que el chaquetón"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaquetón con capa externa inherente y forro desmontable",
+      "Pantalón con refuerzos en rodillas y valencianas",
+      "Cinta reflejante en la disposición especificada",
+      "Ficha técnica con composición y alcance de uso"
+    ],
+    "noIncluye": [
+      "Casco, guantes, botas y monja: se cotizan como complementos del combo",
+      "Equipo de respiración autónoma",
+      "Capacitación de uso de la brigada",
+      "Bordado o serigrafía si no se especifica en la orden"
+    ],
+    "errores": [
+      {
+        "error": "Comprarlo creyendo que sirve para ataque interior",
+        "realidad": "Está pensado para conato. Si tu brigada entra a espacios con humo o fuego declarado, lo que corresponde es un conjunto estructural certificado."
+      },
+      {
+        "error": "Aceptar un precio global sin desglose",
+        "realidad": "Tu área de compras no puede comparar dos ofertas globales. Pide el desglose por pieza aunque compres el combo completo."
+      },
+      {
+        "error": "No pedir el alcance por escrito",
+        "realidad": "Si la ficha no dice para qué escenario está pensado el traje, no tienes cómo defender la compra en una auditoría."
+      },
+      {
+        "error": "Estimar tallas por promedio",
+        "realidad": "Una brigada de veinte personas no cabe en tres tallas. El traje que no ajusta se deja de usar, y eso es peor que no tenerlo."
+      },
+      {
+        "error": "Olvidar el resto del combo",
+        "realidad": "El traje sin casco, guantes, botas y monja no equipa a nadie. Cotiza el conjunto completo aunque lo compres por etapas."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Brigada de planta",
+        "desc": "Manufactura, alimentos, automotriz y bodega con brigada formal."
+      },
+      {
+        "titulo": "Petroquímica y energía",
+        "desc": "Donde la brigada atiende conato mientras llega el equipo especializado."
+      },
+      {
+        "titulo": "Hotelería y corporativo",
+        "desc": "Brigadas de edificio con atribución de primera respuesta."
+      },
+      {
+        "titulo": "Cumplimiento documentado",
+        "desc": "Cuando la auditoría interna o la STPS pide evidencia de dotación."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Este traje cumple con la NOM-002-STPS?",
+        "a": "La NOM-002-STPS-2010 obliga en su cláusula 5.9 a dotar de equipo de protección personal a los integrantes de la brigada, conforme a la NOM-017-STPS-2024 vigente. No especifica marca ni norma de producto: lo que define qué traje corresponde es el análisis de riesgo de tu centro de trabajo. Este conjunto está pensado para brigada de conato."
+      },
+      {
+        "q": "¿Sirve para entrar a un incendio declarado?",
+        "a": "No. Está diseñado para fuego incipiente: control con extintor, contención inicial y evacuación. Si tu brigada entra a espacios con humo o a fuego declarado, necesitas un conjunto estructural de tres capas certificado. Te lo decimos aunque implique una venta mayor de tu lado."
+      },
+      {
+        "q": "¿Por qué el forro es desmontable?",
+        "a": "Para que puedas lavarlo e inspeccionarlo por separado sin taller especializado. En una planta que no tiene área de mantenimiento de EPP, eso hace la diferencia entre un programa de cuidado que se cumple y uno que se abandona a los tres meses."
+      },
+      {
+        "q": "¿Qué significa que la capa sea inherente?",
+        "a": "Que la resistencia a la flama está en la propia fibra, no en un acabado químico aplicado a la tela. La diferencia práctica: un tratamiento se degrada con los lavados y nadie lleva la cuenta de cuántos van; una fibra inherente protege igual el primer día que el último."
+      },
+      {
+        "q": "¿Puedo comprar solo algunas piezas?",
+        "a": "Sí, sin compra mínima. De hecho es lo habitual en reposición: la pantalonera se gasta antes que el chaquetón por rodillas y valencianas. Al comprar suelto conviene mantener la misma configuración para que la dotación se vea uniforme."
+      },
+      {
+        "q": "¿Incluye casco, guantes y botas?",
+        "a": "No, se cotizan como complementos. Los conseguimos para que no tengas que armar el pedido con tres proveedores, pero van desglosados en la cotización para que compras pueda revisar cada partida."
+      },
+      {
+        "q": "¿Se puede bordar el logotipo de la empresa?",
+        "a": "Sí, bordado o serigrafía. Hay que definirlo en la orden porque se aplica durante la confección: agregarlo después implica intervenir una prenda terminada."
+      },
+      {
+        "q": "¿Qué documentación entregan para auditoría?",
+        "a": "Ficha técnica con composición y alcance de uso, y factura CFDI. Si tu auditoría interna o la STPS piden evidencia de la dotación, ese expediente es lo que respalda la compra."
+      }
+    ],
+    "sinonimos": [
+      "traje de brigada contra incendio",
+      "traje de brigadista industrial",
+      "equipo de brigada contra incendio",
+      "conjunto de brigada",
+      "traje de conato",
+      "industrial firefighting suit"
+    ],
+    "sinonimosNota": "En México se pide como traje de brigada o de brigadista. En catálogo de importación aparece como industrial firefighting o proximity light: conviene revisar el alcance declarado, no el nombre.",
+    "comparativa": {
+      "titulo": "Conjunto de brigada u overol ignífugo",
+      "intro": "Las dos formas de vestir a una brigada industrial. Resuelven cosas distintas.",
+      "columnas": [
+        "Criterio",
+        "Conjunto de brigada",
+        "Overol ignífugo NFPA 2112"
+      ],
+      "filas": [
+        [
+          "Escenario",
+          "Conato de incendio con intervención activa",
+          "Protección del trabajador ante flamazo"
+        ],
+        [
+          "Construcción",
+          "Dos piezas con forro desmontable",
+          "Una pieza monocapa"
+        ],
+        [
+          "Uso",
+          "Se pone al activarse la brigada",
+          "Se usa toda la jornada como uniforme"
+        ],
+        [
+          "Quién lo usa",
+          "Integrantes de la brigada",
+          "Personal expuesto a riesgo de flash fire"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Overol ignífugo NFPA 2112: la otra forma de vestir la brigada",
+        "href": "/trajes/brigadista/overol/"
+      },
+      {
+        "label": "Traje estructural: cuándo tu brigada necesita subir de nivel",
+        "href": "/trajes/estructural/"
+      },
+      {
+        "label": "Normas aplicables: qué obliga realmente la ley en México",
+        "href": "/#normas"
+      },
+      {
+        "label": "Cómo especificar sin dejar huecos en la cotización",
+        "href": "/#especificar"
+      }
+    ]
+  },
+  {
+    "slug": "overol",
+    "familia": "brigadista",
+    "nombreCard": "Overol ignífugo NFPA 2112",
+    "nombre": "Overol ignífugo NFPA 2112",
+    "seoTitle": "Overol ignífugo NFPA 2112 | flash fire | México",
+    "seoDescription": "Overol ignífugo NFPA 2112 en aramida inherente antiestática: protección ante flamazo para planta, petroquímica y energía. Tallas CH a XG con cierre de dos vías.",
+    "keywords": [
+      "overol ignífugo NFPA 2112",
+      "flash fire",
+      "México"
+    ],
+    "eyebrow": "Pieza · Brigada industrial",
+    "h1": "Overol ignífugo NFPA 2112",
+    "h1Accent": "para riesgo de flamazo",
+    "lead": "La prenda base del personal expuesto a flash fire: una sola pieza en aramida inherente antiestática, certificada para exposición breve a flamazo.",
+    "descRight": [
+      "No es un traje de bombero: es ropa de trabajo que protege al operador durante los segundos de un flamazo, el tiempo suficiente para salir. Se usa toda la jornada, no solo cuando se activa la brigada, y por eso la comodidad y la transpiración pesan tanto como la certificación.",
+      "Es la confusión más frecuente en compras industriales: un overol NFPA 2112 no sustituye a un traje estructural NFPA 1970. Protegen escenarios distintos y ninguno de los dos hace el trabajo del otro."
+    ],
+    "meta": [
+      "NFPA 2112",
+      "Aramida inherente",
+      "Antiestático",
+      "Uso de jornada"
+    ],
+    "resumen": [
+      "El overol ignífugo se certifica bajo NFPA 2112, la norma de prendas contra flamazo industrial, y se selecciona con el criterio de NFPA 2113. La composición típica del mercado es aramida inherente con un porcentaje de fibra de carbono que le da propiedad antiestática, algo obligatorio donde hay atmósferas inflamables.",
+      "La diferencia con la ropa de trabajo tratada es la misma de siempre: aquí la protección está en la fibra. Un algodón con acabado retardante pierde desempeño con los lavados industriales y nadie audita cuántos ciclos lleva. El inherente entrega lo mismo el primer día y el último."
+    ],
+    "puntosClave": [
+      "Certificado NFPA 2112 para exposición breve a flamazo",
+      "Aramida inherente: la protección está en la fibra, no en un acabado",
+      "Componente antiestático para atmósferas inflamables",
+      "Se usa toda la jornada, no solo durante la emergencia",
+      "No sustituye a un traje estructural para ataque interior",
+      "Cierre de dos vías y tallas CH a XG"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/overol-ignifugo-nfpa-2112.svg",
+        "alt": "Overol ignífugo NFPA 2112 para riesgo de flamazo"
+      },
+      {
+        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "alt": "Traje de brigadista industrial"
+      },
+      {
+        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "alt": "Combo de brigadista industrial"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y certificación",
+        "filas": [
+          {
+            "campo": "Norma de producto",
+            "valor": "NFPA 2112",
+            "nota": "Prendas resistentes a la flama para protección ante flash fire"
+          },
+          {
+            "campo": "Norma de selección",
+            "valor": "NFPA 2113",
+            "nota": "Criterios de selección, cuidado, uso y mantenimiento"
+          },
+          {
+            "campo": "Obligación en México",
+            "valor": "NOM-017-STPS-2024",
+            "nota": "El patrón debe proporcionar el EPP conforme al análisis de riesgo"
+          },
+          {
+            "campo": "Lo que NO cubre",
+            "valor": "Ataque interior a incendio estructural",
+            "nota": "Para eso se requiere NFPA 1970"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Composición típica",
+            "valor": "Aramida inherente con fibra de carbono antiestática",
+            "nota": "Proporción según fabricante"
+          },
+          {
+            "campo": "Construcción",
+            "valor": "Una pieza, monocapa",
+            "nota": "Sin barrera de humedad ni barrera térmica"
+          },
+          {
+            "campo": "Cierre",
+            "valor": "De dos vías, cubierto",
+            "nota": "Facilita el acceso sin exponer el herraje"
+          },
+          {
+            "campo": "Categoría de riesgo",
+            "valor": "Nivel de arco eléctrico según modelo",
+            "nota": "Verificar contra el estudio de arco de tu instalación"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Tallas",
+            "valor": "CH, M, G y XG",
+            "nota": "Algunos fabricantes ofrecen talla extendida"
+          },
+          {
+            "campo": "Identificación",
+            "valor": "Bordado o serigrafía resistente",
+            "nota": "Debe ser compatible con la tela FR"
+          },
+          {
+            "campo": "Color",
+            "valor": "Según código interno de la planta",
+            "nota": "Se define en la orden"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Industrial, sin suavizante ni blanqueador",
+            "nota": "Los aditivos pueden dejar residuo combustible"
+          },
+          {
+            "campo": "Vida útil",
+            "valor": "Por desgaste, no por fecha",
+            "nota": "Se retira cuando hay daño, contaminación o pérdida de integridad"
+          },
+          {
+            "campo": "Contaminación con hidrocarburo",
+            "valor": "Motivo de retiro",
+            "nota": "La prenda impregnada deja de proteger"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Overol de una pieza en aramida inherente antiestática",
+      "Cierre de dos vías cubierto",
+      "Ficha técnica con composición y certificación"
+    ],
+    "noIncluye": [
+      "Casco, guantes, botas y protección facial",
+      "Ropa interior resistente a la flama",
+      "Bordado o serigrafía si no se especifica en la orden"
+    ],
+    "errores": [
+      {
+        "error": "Usarlo como traje de bombero",
+        "realidad": "Un overol NFPA 2112 protege del flamazo durante segundos. No sustituye a un traje estructural NFPA 1970 para ataque interior."
+      },
+      {
+        "error": "Comprar algodón con acabado retardante",
+        "realidad": "El tratamiento se degrada con los lavados industriales y nadie lleva la cuenta de los ciclos. La fibra inherente no pierde desempeño."
+      },
+      {
+        "error": "Lavarlo con suavizante o blanqueador",
+        "realidad": "Los aditivos dejan residuo sobre la tela y ese residuo sí es combustible. Anula parte de la protección que pagaste."
+      },
+      {
+        "error": "Seguir usándolo impregnado de hidrocarburo",
+        "realidad": "Una prenda contaminada con combustible deja de proteger y se vuelve el problema. Es motivo de retiro inmediato, no de lavado."
+      },
+      {
+        "error": "Ignorar el estudio de arco eléctrico",
+        "realidad": "Si tu riesgo incluye arco además de flamazo, el nivel de protección se define con ese estudio, no con el catálogo."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Petroquímica y refinación",
+        "desc": "Personal expuesto a atmósferas con riesgo de flamazo."
+      },
+      {
+        "titulo": "Generación y distribución eléctrica",
+        "desc": "Donde además del flamazo hay riesgo de arco."
+      },
+      {
+        "titulo": "Manufactura con proceso caliente",
+        "desc": "Fundición, tratamiento térmico y hornos industriales."
+      },
+      {
+        "titulo": "Uniforme de brigada",
+        "desc": "Como prenda base bajo el conjunto de brigada."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Un overol NFPA 2112 sirve como traje de bombero?",
+        "a": "No. Es la confusión más cara del sector. El 2112 protege al trabajador durante los segundos de un flamazo, el tiempo de salir. Un traje estructural bajo NFPA 1970 está construido con tres capas para entrar a un incendio. Son escenarios distintos y ninguno sustituye al otro."
+      },
+      {
+        "q": "¿Cuál es la diferencia entre NFPA 2112 y NFPA 2113?",
+        "a": "La 2112 es la norma del producto: define cómo debe comportarse la prenda ante flamazo. La 2113 es la norma de selección, cuidado, uso y mantenimiento: te dice cómo elegirla y cómo conservarla. En una compra bien hecha aparecen las dos."
+      },
+      {
+        "q": "¿Qué significa antiestático y por qué importa?",
+        "a": "Significa que la tela disipa la carga estática en vez de acumularla. Importa donde hay atmósferas inflamables: una chispa por descarga estática es una fuente de ignición como cualquier otra. Se logra sumando un porcentaje de fibra de carbono a la aramida."
+      },
+      {
+        "q": "¿Cómo se lava?",
+        "a": "Lavado industrial sin suavizante ni blanqueador. Esos aditivos dejan residuo sobre la fibra y el residuo sí arde. Es el error de mantenimiento más común y anula parte de la protección sin que se note a simple vista."
+      },
+      {
+        "q": "¿Cuánto dura?",
+        "a": "No tiene fecha de retiro como el traje estructural. Se retira por condición: daño mecánico, contaminación con hidrocarburo o pérdida de integridad de la tela. Un overol impregnado de combustible se retira aunque se vea nuevo."
+      },
+      {
+        "q": "¿Sirve para riesgo de arco eléctrico?",
+        "a": "Algunos modelos tienen valor de protección ante arco declarado, pero no todos. Si tu instalación tiene riesgo de arco, el nivel se define con el estudio de arco eléctrico de tu planta y no con el catálogo del proveedor."
+      },
+      {
+        "q": "¿Se puede bordar el logotipo?",
+        "a": "Sí, con hilo y método compatibles con tela resistente a la flama. Un bordado con hilo convencional introduce material combustible sobre la prenda: hay que especificarlo en la orden."
+      },
+      {
+        "q": "¿Se usa debajo del conjunto de brigada?",
+        "a": "Es lo recomendable cuando el mismo personal opera la brigada. El overol es la prenda base de jornada y el conjunto de brigada se coloca encima al activarse la emergencia."
+      }
+    ],
+    "sinonimos": [
+      "overol ignífugo",
+      "overol FR",
+      "overol antiflama",
+      "coverall NFPA 2112",
+      "overol resistente a la flama",
+      "overol flash fire"
+    ],
+    "sinonimosNota": "En México se pide como overol ignífugo, antiflama o FR. En catálogo de importación aparece como FR coverall: es la misma prenda si está certificada bajo NFPA 2112.",
+    "comparativa": {
+      "titulo": "Inherente o tratado",
+      "intro": "Las dos tecnologías que compiten en overol ignífugo. La diferencia se nota con los años, no en la primera compra.",
+      "columnas": [
+        "Criterio",
+        "Fibra inherente",
+        "Algodón con acabado retardante"
+      ],
+      "filas": [
+        [
+          "Dónde está la protección",
+          "En la fibra misma",
+          "En un tratamiento químico aplicado"
+        ],
+        [
+          "Con los lavados",
+          "No pierde desempeño",
+          "Se degrada; nadie audita los ciclos"
+        ],
+        [
+          "Costo inicial",
+          "Mayor",
+          "Menor"
+        ],
+        [
+          "Costo por año de servicio",
+          "Menor: dura más",
+          "Mayor: reposición más frecuente"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Conjunto de brigada: el equipo para intervenir el conato",
+        "href": "/trajes/brigadista/conjunto/"
+      },
+      {
+        "label": "Traje estructural: para ataque interior, no flamazo",
+        "href": "/trajes/estructural/"
+      },
+      {
+        "label": "Normas aplicables en México",
+        "href": "/#normas"
+      }
+    ]
+  },
+  {
+    "slug": "chaqueton",
+    "familia": "brigadista",
+    "nombreCard": "Chaquetón de brigadista (pieza suelta)",
+    "nombre": "Chaquetón de brigadista (pieza suelta)",
+    "seoTitle": "Chaquetón de brigadista | pieza de reposición | México",
+    "seoDescription": "Chaquetón de brigadista suelto para reposición: capa externa inherente, forro desmontable y cinta reflejante. Se pide con la misma configuración de tu dotación.",
+    "keywords": [
+      "chaquetón de brigadista",
+      "pieza de reposición",
+      "México"
+    ],
+    "eyebrow": "Pieza · Brigada industrial",
+    "h1": "Chaquetón de brigadista",
+    "h1Accent": "para reposición",
+    "lead": "La prenda superior del conjunto de brigada, cotizada suelta: para reponer una pieza dañada o completar equipos sin volver a comprar el combo entero.",
+    "descRight": [
+      "En una brigada industrial las prendas no se gastan al mismo ritmo ni se pierden en pares. Se rompe un chaquetón, entra un integrante nuevo, cambia alguien de talla. Comprar el combo completo cada vez encarece la operación sin motivo.",
+      "El punto que importa al reponer: la configuración. Si el chaquetón nuevo llega con otra disposición de cinta reflejante o distinto color, la brigada deja de verse uniforme y en una auditoría eso se nota. Guarda la ficha de la compra original."
+    ],
+    "meta": [
+      "Pieza suelta",
+      "Capa inherente",
+      "Forro desmontable",
+      "Sin compra mínima"
+    ],
+    "resumen": [
+      "El chaquetón de brigadista comparte construcción con el del conjunto: capa externa inherentemente resistente a la flama, forro desmontable con barrera de humedad y barrera térmica, refuerzos en zonas de desgaste y cinta reflejante de alta visibilidad.",
+      "Comprado suelto sirve para tres cosas: reponer una prenda dañada, incorporar a un integrante nuevo o corregir una talla mal estimada en la compra original. En los tres casos conviene pedirlo con la misma configuración que el resto de la dotación."
+    ],
+    "puntosClave": [
+      "Misma construcción que el chaquetón del conjunto de brigada",
+      "Se cotiza suelto, sin compra mínima",
+      "Pide la misma configuración que tu dotación actual",
+      "Capa externa inherente y forro desmontable",
+      "Sirve para reposición, alta de personal o corrección de talla",
+      "Guarda la ficha de la compra original para replicarla"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/chaqueton-de-brigadista-pieza-suelta.svg",
+        "alt": "Chaquetón de brigadista para reposición"
+      },
+      {
+        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "alt": "Traje de brigadista industrial"
+      },
+      {
+        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "alt": "Combo de brigadista industrial"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y cumplimiento",
+        "filas": [
+          {
+            "campo": "Obligación en México",
+            "valor": "NOM-002-STPS-2010, cláusula 5.9",
+            "nota": "Dotación de EPP a la brigada"
+          },
+          {
+            "campo": "Norma de EPP",
+            "valor": "NOM-017-STPS-2024",
+            "nota": "Sustituyó a la NOM-017-STPS-2008"
+          },
+          {
+            "campo": "Alcance",
+            "valor": "Fuego incipiente y primera respuesta",
+            "nota": "No es prenda de ataque interior"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa externa",
+            "valor": "Aramida inherente",
+            "nota": "Gramaje según configuración del conjunto"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Desmontable de dos capas",
+            "nota": "Barrera de humedad y barrera térmica"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "Mangas, pecho y faldón",
+            "nota": "Debe replicar la disposición de tu dotación"
+          },
+          {
+            "campo": "Refuerzos",
+            "valor": "Codos y hombros",
+            "nota": "Zonas de contacto y arrastre"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Talla",
+            "valor": "Por pecho y largo de manga",
+            "nota": "Tomar medida del elemento, no estimar"
+          },
+          {
+            "campo": "Identificación",
+            "valor": "Bordado o serigrafía",
+            "nota": "Replicar la de la dotación existente"
+          },
+          {
+            "campo": "Color",
+            "valor": "Según configuración original",
+            "nota": "Dato de la ficha de la compra anterior"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Chaquetón con capa externa inherente",
+      "Forro desmontable de dos capas",
+      "Cinta reflejante en la disposición especificada"
+    ],
+    "noIncluye": [
+      "Pantalonera: se cotiza por separado",
+      "Casco, guantes, botas y monja",
+      "Bordado si no se especifica en la orden"
+    ],
+    "errores": [
+      {
+        "error": "Pedirlo sin la ficha de la compra original",
+        "realidad": "Sin ese dato el chaquetón nuevo puede llegar con otra cinta u otro color, y la dotación deja de verse uniforme."
+      },
+      {
+        "error": "Estimar la talla del elemento nuevo",
+        "realidad": "Una prenda que no ajusta se deja de usar. Vale más tomar la medida que ahorrarse la llamada."
+      },
+      {
+        "error": "Mezclar chaquetón nuevo con pantalón muy desgastado",
+        "realidad": "La protección del conjunto la define la pieza más deteriorada, no la más nueva."
+      },
+      {
+        "error": "Comprar el combo completo para reponer una pieza",
+        "realidad": "Encarece la operación sin necesidad. Las piezas se venden sueltas y sin mínimo."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Reposición por daño",
+        "desc": "Rasgadura, quemadura o contaminación de una prenda en servicio."
+      },
+      {
+        "titulo": "Alta de integrante",
+        "desc": "Incorporación de personal nuevo a la brigada."
+      },
+      {
+        "titulo": "Corrección de talla",
+        "desc": "Cuando la compra original se estimó por promedio."
+      },
+      {
+        "titulo": "Ampliación de brigada",
+        "desc": "Crecimiento del equipo sin recomprar combos completos."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Puedo comprar solo el chaquetón?",
+        "a": "Sí, sin compra mínima. Es de las peticiones más frecuentes en brigada industrial, porque las prendas no se dañan en pares ni el personal rota completo. Lo único que pedimos es la configuración de tu dotación actual para que la pieza nueva llegue igual."
+      },
+      {
+        "q": "¿Cómo replico la configuración de mi compra anterior?",
+        "a": "Con la ficha técnica de esa compra: ahí viene el gramaje, la disposición de cinta reflejante, el color y el tipo de forro. Si no la conservas, mándanos fotos de la prenda actual y te ayudamos a identificar la configuración."
+      },
+      {
+        "q": "¿Sirve para ataque interior?",
+        "a": "No. Es prenda de brigada, pensada para conato y primera respuesta. Si tu operación cambió y ahora entran a fuego declarado, lo correcto es migrar a conjunto estructural, no reponer más chaquetones de brigada."
+      },
+      {
+        "q": "¿Cómo tomo la talla?",
+        "a": "Por medida de pecho y largo de manga del elemento. Te compartimos la guía del fabricante antes de pedir. Para altas de personal conviene medir en el momento y no estimar por la talla de camisa."
+      },
+      {
+        "q": "¿Puedo mezclarlo con pantalón de otra marca?",
+        "a": "Técnicamente se puede, pero la interfaz entre las dos prendas deja de estar diseñada como conjunto. Si vas a mezclar, revísalo con nosotros antes de comprar."
+      },
+      {
+        "q": "¿Se puede bordar el logotipo?",
+        "a": "Sí, y conviene replicar exactamente el de la dotación existente: mismo tipo de letra, misma posición. Se define en la orden porque se aplica durante la confección."
+      },
+      {
+        "q": "¿Cuánto tarda la entrega de una pieza suelta?",
+        "a": "Depende de si hay existencia en la configuración que necesitas o si se fabrica sobre pedido. Te lo confirmamos por escrito en la cotización, con fecha comprometida."
+      },
+      {
+        "q": "¿Qué hago con el chaquetón que voy a reemplazar?",
+        "a": "Si es por daño, se retira de servicio: no conviene dejarlo en el gabinete como respaldo, porque tarde o temprano alguien lo usa. Documenta la baja para tu expediente de EPP."
+      }
+    ],
+    "sinonimos": [
+      "chaquetón de brigadista",
+      "chamarra de brigada contra incendio",
+      "casaca de brigadista",
+      "chaquetón industrial FR",
+      "brigade jacket",
+      "chaquetón de conato"
+    ],
+    "sinonimosNota": "Se pide como chaquetón, chamarra o casaca según la región. Lo que define la pieza no es el nombre sino el alcance declarado en la ficha.",
+    "comparativa": {
+      "titulo": "Reponer la pieza o renovar el conjunto",
+      "intro": "La decisión que conviene tomar con criterio y no por costumbre.",
+      "columnas": [
+        "Criterio",
+        "Reponer solo el chaquetón",
+        "Renovar el conjunto completo"
+      ],
+      "filas": [
+        [
+          "Cuándo conviene",
+          "Daño puntual o alta de personal",
+          "Dotación con desgaste parejo"
+        ],
+        [
+          "Costo",
+          "Menor por evento",
+          "Mayor, pero uniforma toda la brigada"
+        ],
+        [
+          "Uniformidad",
+          "Requiere replicar la configuración",
+          "Uniforme por definición"
+        ],
+        [
+          "Riesgo",
+          "Mezclar prendas de distinto desgaste",
+          "Ninguno en ese sentido"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalonera de brigadista: la otra mitad del conjunto",
+        "href": "/trajes/brigadista/pantalonera/"
+      },
+      {
+        "label": "Conjunto de brigada completo",
+        "href": "/trajes/brigadista/conjunto/"
+      },
+      {
+        "label": "Errores frecuentes al comprar traje",
+        "href": "/#errores"
+      }
+    ]
+  },
+  {
+    "slug": "pantalonera",
+    "familia": "brigadista",
+    "nombreCard": "Pantalonera de brigadista (pieza suelta)",
+    "nombre": "Pantalonera de brigadista (pieza suelta)",
+    "seoTitle": "Pantalón de brigadista | pieza de reposición | México",
+    "seoDescription": "Pantalón de brigadista suelto para reposición: refuerzos en rodillas y valencianas y cinta reflejante. Es la pieza que más se gasta de la dotación.",
+    "keywords": [
+      "pantalón de brigadista",
+      "pieza de reposición",
+      "México"
+    ],
+    "eyebrow": "Pieza · Brigada industrial",
+    "h1": "Pantalón de brigadista",
+    "h1Accent": "la pieza que más se repone",
+    "lead": "La mitad inferior del conjunto de brigada, cotizada suelta: refuerzos en rodillas y valencianas, tirantes y cinta reflejante en pierna.",
+    "descRight": [
+      "Es la prenda que primero se acaba de cualquier dotación de brigada. Rodillas y valencianas concentran todo el desgaste mecánico: hincarse junto a un tablero, arrastrar manguera, subir escaleras de gato. El chaquetón todavía se ve bien y el pantalón ya no.",
+      "Por eso conviene tenerla identificada como refacción y no como compra excepcional: se pide suelta, sin mínimo, replicando la configuración de la dotación para que la brigada siga uniformada."
+    ],
+    "meta": [
+      "Pieza suelta",
+      "Refuerzo en rodilla",
+      "Incluye tirantes",
+      "Sin compra mínima"
+    ],
+    "resumen": [
+      "La pantalonera de brigadista lleva la misma construcción que el chaquetón —capa externa inherente y forro desmontable— pero con refuerzos adicionales donde el desgaste es mecánico y no térmico: rodilla y valenciana. Ahí es donde se decide cuánto dura la prenda.",
+      "La cinta reflejante en la pierna no es adorno: buena parte de las emergencias industriales ocurre de noche o en zonas con iluminación pobre, y la banda inferior es la que hace visible al elemento cuando está agachado o parcialmente cubierto por equipo."
+    ],
+    "puntosClave": [
+      "Es la pieza del conjunto que más rápido se desgasta",
+      "Refuerzos en rodillas y valencianas contra abrasión",
+      "Cinta reflejante en pierna, clave con poca luz",
+      "Tirantes de alta resistencia incluidos o cotizados aparte",
+      "Se pide suelta, replicando la configuración de la dotación",
+      "Conviene tenerla contemplada como refacción, no como compra excepcional"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/pantalonera-de-brigadista-pieza-suelta.svg",
+        "alt": "Pantalón de brigadista para reposición"
+      },
+      {
+        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "alt": "Traje de brigadista industrial"
+      },
+      {
+        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "alt": "Combo de brigadista industrial"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y cumplimiento",
+        "filas": [
+          {
+            "campo": "Obligación en México",
+            "valor": "NOM-002-STPS-2010, cláusula 5.9",
+            "nota": "Dotación de EPP a la brigada"
+          },
+          {
+            "campo": "Norma de EPP",
+            "valor": "NOM-017-STPS-2024",
+            "nota": "Vigente desde el 28-sep-2025"
+          },
+          {
+            "campo": "Alcance",
+            "valor": "Fuego incipiente y primera respuesta",
+            "nota": "No es prenda de ataque interior"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Capa externa",
+            "valor": "Aramida inherente",
+            "nota": "Mismo gramaje que el chaquetón del conjunto"
+          },
+          {
+            "campo": "Forro",
+            "valor": "Desmontable de dos capas",
+            "nota": "Se retira para lavado e inspección"
+          },
+          {
+            "campo": "Refuerzo de rodilla",
+            "valor": "Material de alta abrasión",
+            "nota": "Zona de mayor desgaste"
+          },
+          {
+            "campo": "Refuerzo de valenciana",
+            "valor": "Material de alta abrasión",
+            "nota": "Contacto con calzado y suelo"
+          },
+          {
+            "campo": "Cinta reflejante",
+            "valor": "En pierna, sobre y bajo la rodilla",
+            "nota": "Visibilidad con el elemento agachado"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Talla",
+            "valor": "Por cintura y largo",
+            "nota": "Tomar medida, no estimar por talla de pantalón de vestir"
+          },
+          {
+            "campo": "Tirantes",
+            "valor": "Tipo X incluidos o por separado",
+            "nota": "Según fabricante"
+          },
+          {
+            "campo": "Color y cinta",
+            "valor": "Según configuración original",
+            "nota": "Replicar la ficha de la compra anterior"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Pantalón con capa externa inherente y forro desmontable",
+      "Refuerzos en rodillas y valencianas",
+      "Cinta reflejante en la disposición especificada"
+    ],
+    "noIncluye": [
+      "Chaquetón: se cotiza por separado",
+      "Tirantes, si el fabricante los maneja como pieza aparte",
+      "Botas y demás complementos del combo"
+    ],
+    "errores": [
+      {
+        "error": "Tratarla como compra excepcional",
+        "realidad": "Es la pieza que más se gasta de toda la dotación. Contemplarla como refacción periódica evita paros y compras de emergencia."
+      },
+      {
+        "error": "Reponer el pantalón y conservar tirantes vencidos",
+        "realidad": "El elástico pierde recuperación y deja de sostener con la prenda mojada. Es la refacción más barata del conjunto."
+      },
+      {
+        "error": "Estimar la talla por el pantalón de vestir",
+        "realidad": "El corte del pantalón de brigada es distinto y va sobre otra ropa. Hay que tomar la medida real."
+      },
+      {
+        "error": "Ignorar el estado del refuerzo de rodilla",
+        "realidad": "Cuando el refuerzo se abre, el desgaste pasa directo a la capa externa y la prenda se pierde en semanas."
+      },
+      {
+        "error": "Pedirla sin la configuración original",
+        "realidad": "Llega con otra cinta u otro color y la brigada deja de verse uniforme, que es justo lo que revisa una auditoría."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Reposición periódica",
+        "desc": "Refacción habitual dentro del programa de EPP de la planta."
+      },
+      {
+        "titulo": "Daño por abrasión",
+        "desc": "Rodilla o valenciana abiertas tras uso intensivo."
+      },
+      {
+        "titulo": "Alta de integrante",
+        "desc": "Personal nuevo en la brigada."
+      },
+      {
+        "titulo": "Corrección de talla",
+        "desc": "Cuando la compra original se estimó por promedio."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué se gasta antes que el chaquetón?",
+        "a": "Porque su desgaste es mecánico, no térmico. Rodillas y valencianas rozan contra suelo, escaleras y equipo en cada intervención y en cada simulacro. El chaquetón sufre menos abrasión y por eso aguanta más ciclos."
+      },
+      {
+        "q": "¿Puedo comprar solo el pantalón?",
+        "a": "Sí, sin compra mínima. Es la petición más frecuente de reposición en brigada industrial. Solo necesitamos la configuración de tu dotación para que la pieza nueva llegue igual que las que ya tienes."
+      },
+      {
+        "q": "¿Los tirantes vienen incluidos?",
+        "a": "Depende del fabricante: algunos los integran y otros los manejan como pieza aparte. Lo aclaramos en la cotización. Si vas a reponer el pantalón, vale la pena revisar el estado de los tirantes: suelen estar igual de vencidos."
+      },
+      {
+        "q": "¿Cómo sé cuándo retirarla de servicio?",
+        "a": "Cuando el refuerzo de rodilla o valenciana está abierto, cuando hay quemadura o rasgadura en la capa externa, o cuando el forro presenta daño. Una prenda con el refuerzo abierto se degrada muy rápido: conviene reponerla antes de que llegue a la capa externa."
+      },
+      {
+        "q": "¿Cómo tomo la talla?",
+        "a": "Por cintura y largo, con la ropa que se usa debajo. No sirve la talla del pantalón de vestir: el corte es distinto y va sobre otra prenda. Te compartimos la guía del fabricante antes de pedir."
+      },
+      {
+        "q": "¿Puedo combinarla con un chaquetón de otra marca?",
+        "a": "Se puede, pero la interfaz entre ambas prendas deja de estar diseñada como conjunto. Si tu dotación ya está mezclada, revisémoslo antes de la siguiente compra para irla homologando."
+      },
+      {
+        "q": "¿Conviene comprar de más para tener refacciones?",
+        "a": "En brigadas grandes, sí. Tener dos o tres pantalones de tallas comunes en almacén evita que un elemento quede sin equipo mientras llega el pedido. Es una práctica común en plantas con brigada activa."
+      },
+      {
+        "q": "¿Qué documentación entregan?",
+        "a": "Ficha técnica de la pieza y factura CFDI. Para tu expediente de EPP conviene archivar ambas junto con el registro de a quién se asignó la prenda."
+      }
+    ],
+    "sinonimos": [
+      "pantalón de brigadista",
+      "pantalonera de brigada",
+      "pantalón industrial FR",
+      "pantalón de conato",
+      "brigade pant",
+      "pantalón contra incendio industrial"
+    ],
+    "sinonimosNota": "En México se dice pantalonera o pantalón de brigada. En catálogo de importación aparece como brigade pant o industrial firefighting pant.",
+    "comparativa": {
+      "titulo": "Reponer o tener refacción en almacén",
+      "intro": "Dos formas de administrar la pieza que más se gasta de la dotación.",
+      "columnas": [
+        "Criterio",
+        "Comprar al momento del daño",
+        "Mantener refacciones en almacén"
+      ],
+      "filas": [
+        [
+          "Disponibilidad",
+          "El elemento queda sin equipo mientras llega",
+          "Reemplazo inmediato"
+        ],
+        [
+          "Costo",
+          "Sin inventario inmovilizado",
+          "Requiere stock de tallas comunes"
+        ],
+        [
+          "Riesgo operativo",
+          "Alto si la brigada se activa",
+          "Bajo"
+        ],
+        [
+          "Cuándo conviene",
+          "Brigadas pequeñas",
+          "Brigadas grandes o con simulacros frecuentes"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Chaquetón de brigadista: la otra mitad del conjunto",
+        "href": "/trajes/brigadista/chaqueton/"
+      },
+      {
+        "label": "Tirantes tipo X: revísalos al reponer el pantalón",
+        "href": "/trajes/brigadista/tirantes/"
+      },
+      {
+        "label": "Conjunto de brigada completo",
+        "href": "/trajes/brigadista/conjunto/"
+      }
+    ]
+  },
+  {
+    "slug": "monja",
+    "familia": "brigadista",
+    "nombreCard": "Monja (capucha) de brigada",
+    "nombre": "Monja (capucha) de brigada",
+    "seoTitle": "Monja de brigada | capucha contra incendio | México",
+    "seoDescription": "Monja de brigada en tejido aramídico elástico: cubre orejas, cuello y mandíbula, la zona que no protegen el casco ni el chaquetón de la brigada.",
+    "keywords": [
+      "monja de brigada",
+      "capucha contra incendio",
+      "México"
+    ],
+    "eyebrow": "Pieza · Brigada industrial",
+    "h1": "Monja de brigada",
+    "h1Accent": "cubre lo que el casco no",
+    "lead": "Capuchón de tejido aramídico elástico que protege orejas, cuello y mandíbula, y cierra la interfaz con la máscara del equipo de respiración.",
+    "descRight": [
+      "Es la pieza más barata del combo y la primera que se omite cuando se recorta el presupuesto. También es la que cubre la zona de piel más expuesta del cuerpo: entre el casco y el cuello del chaquetón queda una franja descubierta que nadie nota hasta que hay calor.",
+      "Si tu brigada usa equipo de respiración autónoma, la monja además cierra el sello alrededor de la máscara. Sin ella queda una vía de entrada abierta justo en la cara, que es donde menos conviene."
+    ],
+    "meta": [
+      "Tejido aramídico",
+      "Interfaz con ERA",
+      "Talla única",
+      "Pieza de reposición"
+    ],
+    "resumen": [
+      "La monja de brigada es un capuchón elástico de fibra aramídica que cubre cabeza, orejas, cuello y mandíbula. Se coloca bajo el casco y por debajo del cuello del chaquetón —nunca encima— para que no quede un canal abierto hacia el cuello.",
+      "En brigada industrial cumple dos funciones: protección térmica de la zona descubierta y sellado alrededor de la máscara del equipo de respiración cuando se usa. Es también la prenda que más contaminante retiene, así que entra al lavado con más frecuencia que el resto."
+    ],
+    "puntosClave": [
+      "Cubre orejas, cuello y mandíbula: la franja que deja el casco",
+      "Se coloca debajo del cuello del chaquetón, nunca encima",
+      "Cierra el sello alrededor de la máscara del ERA",
+      "Tejido aramídico elástico que debe recuperar forma tras el lavado",
+      "Es la prenda que más contaminante retiene del combo",
+      "Se repone con más frecuencia que el traje"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/monja-capucha-de-brigada.svg",
+        "alt": "Monja o capucha de brigada contra incendio"
+      },
+      {
+        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "alt": "Traje de brigadista industrial"
+      },
+      {
+        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "alt": "Combo de brigadista industrial"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Norma y cumplimiento",
+        "filas": [
+          {
+            "campo": "Obligación en México",
+            "valor": "NOM-002-STPS-2010, cláusula 5.9",
+            "nota": "Como parte de la dotación de la brigada"
+          },
+          {
+            "campo": "Norma de EPP",
+            "valor": "NOM-017-STPS-2024",
+            "nota": "El patrón debe proporcionar el EPP adecuado"
+          },
+          {
+            "campo": "Alcance",
+            "valor": "Complemento del conjunto de brigada",
+            "nota": "No sustituye a capucha estructural con barrera de partículas"
+          }
+        ]
+      },
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Material",
+            "valor": "Tejido aramídico elástico",
+            "nota": "Debe recuperar forma tras el lavado"
+          },
+          {
+            "campo": "Capas",
+            "valor": "Doble capa en la mayoría de modelos",
+            "nota": "Verificar en la ficha del fabricante"
+          },
+          {
+            "campo": "Cobertura",
+            "valor": "Cabeza, orejas, cuello y mandíbula",
+            "nota": "La zona que no cubren casco ni chaquetón"
+          },
+          {
+            "campo": "Abertura facial",
+            "valor": "Elástica, para sello con máscara",
+            "nota": "Se verifica contra el modelo de ERA en uso"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Talla",
+            "valor": "Única en la mayoría de modelos",
+            "nota": "Algunos fabricantes ofrecen talla extendida"
+          },
+          {
+            "campo": "Compatibilidad",
+            "valor": "Según modelo de máscara del ERA",
+            "nota": "Dato necesario al cotizar"
+          },
+          {
+            "campo": "Largo de cuello",
+            "valor": "Según cobertura bajo el chaquetón",
+            "nota": "Debe quedar por dentro de la prenda"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Lavado",
+            "valor": "Tras cada exposición a humo",
+            "nota": "Retiene más contaminante que el resto del combo"
+          },
+          {
+            "campo": "Reposición",
+            "valor": "Más frecuente que el traje",
+            "nota": "Cuando pierde elasticidad, deja de sellar"
+          },
+          {
+            "campo": "Asignación",
+            "valor": "Personal, no compartida",
+            "nota": "Higiene y ajuste"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Capuchón aramídico elástico con la configuración de capas especificada"
+    ],
+    "noIncluye": [
+      "Casco y barbiquejo",
+      "Máscara del equipo de respiración",
+      "Capucha estructural con barrera de partículas: es otra pieza"
+    ],
+    "errores": [
+      {
+        "error": "Omitirla para recortar el presupuesto",
+        "realidad": "Es la pieza más barata del combo y cubre la zona de piel más expuesta. Ahorrar aquí no mueve el costo total y sí la protección."
+      },
+      {
+        "error": "Usarla sobre el cuello del chaquetón",
+        "realidad": "Colocada por encima deja un canal directo hacia el cuello, justo lo contrario de lo que se busca. Va por dentro."
+      },
+      {
+        "error": "No verificar compatibilidad con la máscara",
+        "realidad": "Si no sella contra el modelo de ERA que usa tu brigada, queda una vía de entrada abierta en la cara."
+      },
+      {
+        "error": "Compartirla entre turnos",
+        "realidad": "Es prenda personal por higiene y por ajuste. Compartir capuchas es la forma más rápida de que dejen de usarse."
+      },
+      {
+        "error": "Esperar a que dure lo mismo que el traje",
+        "realidad": "Pierde elasticidad mucho antes. Cuando deja de ajustar deja de sellar, aunque la tela se vea entera."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Brigada de planta",
+        "desc": "Parte del combo básico de cualquier brigada contra incendio."
+      },
+      {
+        "titulo": "Uso con equipo de respiración",
+        "desc": "Sellado alrededor de la máscara en atmósferas con humo."
+      },
+      {
+        "titulo": "Reposición periódica",
+        "desc": "Refacción de bajo costo dentro del programa de EPP."
+      },
+      {
+        "titulo": "Alta de integrante",
+        "desc": "Asignación personal para cada nuevo miembro de la brigada."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Qué es exactamente una monja?",
+        "a": "Es el capuchón que cubre cabeza, orejas, cuello y mandíbula bajo el casco. En México se le dice monja o escafandra; en catálogo aparece como capucha o hood. Cubre la franja de piel que queda descubierta entre el casco y el cuello del chaquetón."
+      },
+      {
+        "q": "¿Va por dentro o por fuera del chaquetón?",
+        "a": "Por dentro, siempre. Colocada sobre el cuello de la prenda deja un canal abierto hacia el cuello, que es exactamente lo que la pieza busca cerrar. Es un error de uso frecuente y anula el beneficio."
+      },
+      {
+        "q": "¿Es la misma que la capucha con barrera de partículas?",
+        "a": "No. La de brigada es un capuchón aramídico que protege del calor. La capucha con barrera de partículas incorpora una capa filtrante que bloquea el hollín fino, y se usa en operación estructural con exposición prolongada a humo. Si tu brigada entra a ambientes con humo, conviene revisar esa opción."
+      },
+      {
+        "q": "¿Sirve con cualquier máscara de equipo de respiración?",
+        "a": "No necesariamente. El sello se logra en la interfaz con la máscara y esa geometría cambia entre fabricantes. Al cotizar dinos qué modelo de ERA usa tu brigada: es un dato tan importante como la talla."
+      },
+      {
+        "q": "¿Cada cuánto se lava?",
+        "a": "Después de cada exposición a humo, no cuando se ve sucia. Es la prenda del combo que más contaminante retiene y queda en contacto directo con la piel de la cara y el cuello durante toda la intervención."
+      },
+      {
+        "q": "¿Cada cuánto se repone?",
+        "a": "Cuando pierde elasticidad y deja de ajustar, que suele ser bastante antes de que la tela se vea dañada. Una monja floja no sella, y una que no sella no protege. Es de las refacciones más económicas del programa de EPP."
+      },
+      {
+        "q": "¿Puede compartirse entre turnos?",
+        "a": "No conviene. Es prenda personal por higiene y porque el ajuste importa. Compartir capuchas es la forma más rápida de que el personal deje de usarlas."
+      },
+      {
+        "q": "¿Viene en tallas?",
+        "a": "La mayoría de los modelos es talla única, con tejido elástico que se adapta. Algunos fabricantes manejan talla extendida para personas con cabeza más grande o para uso sobre lentes."
+      }
+    ],
+    "sinonimos": [
+      "monja de bombero",
+      "escafandra",
+      "capucha de brigada",
+      "capuchón aramídico",
+      "verdugo",
+      "hood contra incendio"
+    ],
+    "sinonimosNota": "Monja y escafandra son los términos más usados en México; en catálogo de importación aparece como hood. Todos nombran la misma pieza.",
+    "comparativa": {
+      "titulo": "Monja de brigada o capucha con barrera de partículas",
+      "intro": "Dos niveles distintos para dos exposiciones distintas.",
+      "columnas": [
+        "Criterio",
+        "Monja de brigada",
+        "Capucha con barrera de partículas"
+      ],
+      "filas": [
+        [
+          "Protección térmica",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "Partículas finas del humo",
+          "Las deja pasar",
+          "Las bloquea en cuello y mandíbula"
+        ],
+        [
+          "Escenario",
+          "Conato, exposición breve",
+          "Exposición prolongada a humo"
+        ],
+        [
+          "Cuándo conviene",
+          "Brigada que no entra a ambientes con humo",
+          "Brigada con ataque interior o humo denso"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Capucha estructural con barrera de partículas",
+        "href": "/trajes/estructural/monja/"
+      },
+      {
+        "label": "Conjunto de brigada: la monja es parte del combo",
+        "href": "/trajes/brigadista/conjunto/"
+      },
+      {
+        "label": "Vida útil y servicio del equipo",
+        "href": "/#vida-util"
+      }
+    ]
+  },
+  {
+    "slug": "tirantes",
+    "familia": "brigadista",
+    "nombreCard": "Tirantes tipo X de ocho puntos",
+    "nombre": "Tirantes tipo X de ocho puntos",
+    "seoTitle": "Tirantes para pantalón de brigada | tipo X | México",
+    "seoDescription": "Tirantes para pantalón de brigada tipo X de ocho puntos: elástico de dos pulgadas con terminales de piel, para repartir el peso en uso prolongado.",
+    "keywords": [
+      "tirantes para pantalón de brigada",
+      "tipo X",
+      "México"
+    ],
+    "eyebrow": "Pieza · Brigada industrial",
+    "h1": "Tirantes para pantalón de brigada",
+    "h1Accent": "tipo X de ocho puntos",
+    "lead": "Sujeción del pantalón con elástico de dos pulgadas y terminales de piel, en configuración X para repartir el peso sin cargarlo en la cintura.",
+    "descRight": [
+      "Con el pantalón mojado el peso se multiplica, y si los tirantes no reparten esa carga sobre los hombros todo queda colgando de la cintura. En una intervención de veinte minutos se nota; en un simulacro largo, más.",
+      "Es también la refacción más barata y la más olvidada. El elástico pierde recuperación con los lavados mucho antes que la tela del pantalón, y un tirante vencido deja de sostener justo cuando más hace falta."
+    ],
+    "meta": [
+      "Elástico de 2\"",
+      "Terminal de piel",
+      "Ocho puntos",
+      "Refacción económica"
+    ],
+    "resumen": [
+      "Los tirantes tipo X reparten el peso del pantalón sobre ambos hombros y la espalda, con ocho puntos de sujeción que evitan que la carga se concentre en un solo lugar. Las terminales de piel resisten el roce constante contra las presillas mejor que las de material sintético.",
+      "El elástico de dos pulgadas es el estándar del sector porque distribuye la presión sobre una superficie mayor: un tirante angosto se clava en el hombro cuando el pantalón está mojado, y eso hace que la gente termine ajustándolo mal o quitándoselo."
+    ],
+    "puntosClave": [
+      "Configuración X: reparte carga sobre hombros y espalda",
+      "Elástico de dos pulgadas para no clavarse en el hombro",
+      "Terminales de piel, más resistentes al roce que las sintéticas",
+      "Ocho puntos de sujeción al pantalón",
+      "Refacción de bajo costo que suele olvidarse",
+      "Se especifican por estatura del elemento"
+    ],
+    "images": [
+      {
+        "src": "/images/piezas/tirantes-tipo-x-de-ocho-puntos.svg",
+        "alt": "Tirantes tipo X de ocho puntos para pantalón de brigada"
+      },
+      {
+        "src": "/images/productos/traje-brigadista-industrial-bombero.svg",
+        "alt": "Traje de brigadista industrial"
+      },
+      {
+        "src": "/images/productos/combo-brigadista-industrial.svg",
+        "alt": "Combo de brigadista industrial"
+      }
+    ],
+    "fichaTecnica": [
+      {
+        "grupo": "Construcción",
+        "filas": [
+          {
+            "campo": "Configuración",
+            "valor": "Tipo X",
+            "nota": "Reparto sobre hombros y espalda"
+          },
+          {
+            "campo": "Ancho del elástico",
+            "valor": "Dos pulgadas",
+            "nota": "Estándar del sector; menor ancho concentra presión"
+          },
+          {
+            "campo": "Terminales",
+            "valor": "De piel",
+            "nota": "Mayor resistencia al roce que las sintéticas"
+          },
+          {
+            "campo": "Puntos de sujeción",
+            "valor": "Ocho",
+            "nota": "Evita que la carga se concentre"
+          }
+        ]
+      },
+      {
+        "grupo": "Configuración",
+        "filas": [
+          {
+            "campo": "Largo",
+            "valor": "Por estatura del elemento",
+            "nota": "No por talla de pantalón"
+          },
+          {
+            "campo": "Ajuste",
+            "valor": "Regulable sin herramienta",
+            "nota": "Permite corregir en servicio"
+          },
+          {
+            "campo": "Compatibilidad",
+            "valor": "Con las presillas del pantalón",
+            "nota": "Verificar si el pantalón es de otro fabricante"
+          }
+        ]
+      },
+      {
+        "grupo": "Ciclo de servicio",
+        "filas": [
+          {
+            "campo": "Reposición",
+            "valor": "Antes que el pantalón",
+            "nota": "El elástico pierde recuperación con los lavados"
+          },
+          {
+            "campo": "Revisión",
+            "valor": "Al reponer el pantalón",
+            "nota": "Momento natural para cambiarlos"
+          },
+          {
+            "campo": "Señal de retiro",
+            "valor": "Ya no sostiene con la prenda mojada",
+            "nota": "Aunque el elástico se vea entero"
+          }
+        ]
+      }
+    ],
+    "incluye": [
+      "Par de tirantes tipo X con terminales de piel",
+      "Sistema de ajuste regulable"
+    ],
+    "noIncluye": [
+      "Pantalón de brigada",
+      "Adaptadores para presillas de otro fabricante"
+    ],
+    "errores": [
+      {
+        "error": "Reponer el pantalón y conservar los tirantes viejos",
+        "realidad": "El elástico ya perdió recuperación. Es la refacción más barata del conjunto y la que más se nota en comodidad."
+      },
+      {
+        "error": "Comprarlos por talla de pantalón",
+        "realidad": "Se especifican por estatura del elemento. Un tirante corto obliga a llevar el pantalón arriba de la cintura y limita el movimiento."
+      },
+      {
+        "error": "Elegir elástico angosto para ahorrar",
+        "realidad": "Se clava en el hombro con el pantalón mojado. La gente termina aflojándolos y entonces ya no cumplen su función."
+      },
+      {
+        "error": "No verificar compatibilidad de presillas",
+        "realidad": "La disposición cambia entre fabricantes. Si el pantalón es de otra marca, hay que confirmarlo antes de comprar."
+      }
+    ],
+    "aplicaciones": [
+      {
+        "titulo": "Reposición de dotación",
+        "desc": "Refacción periódica dentro del programa de EPP."
+      },
+      {
+        "titulo": "Compra de pantalón nuevo",
+        "desc": "Se piden juntos para asegurar compatibilidad de presillas."
+      },
+      {
+        "titulo": "Reasignación de equipo",
+        "desc": "Al cambiar de elemento se ajustan o se cambian por estatura."
+      },
+      {
+        "titulo": "Corrección de comodidad",
+        "desc": "Cuando el personal reporta que el pantalón se vence en operación."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué tipo X y no otro?",
+        "a": "La configuración en X reparte la carga sobre ambos hombros y la espalda, con ocho puntos de sujeción. Con el pantalón mojado —que es cuando pesa— evita que todo el peso quede colgando de la cintura o concentrado en un solo punto del hombro."
+      },
+      {
+        "q": "¿Cómo se especifican?",
+        "a": "Por estatura del elemento, no por talla de pantalón. Si estás equipando una brigada, conviene levantar estaturas junto con las medidas de cintura. Un tirante mal medido termina mal ajustado y deja de cumplir su función."
+      },
+      {
+        "q": "¿Por qué el elástico de dos pulgadas?",
+        "a": "Porque distribuye la presión sobre más superficie. Un elástico angosto se clava en el hombro cuando la prenda está mojada, y la reacción natural del usuario es aflojarlo hasta que ya no sostiene nada."
+      },
+      {
+        "q": "¿Sirven con cualquier pantalón?",
+        "a": "No necesariamente. La sujeción es a presillas y su número y disposición cambian entre fabricantes. Si vas a comprar tirantes para un pantalón que ya tienes, dinos marca y modelo y confirmamos compatibilidad antes de cotizar."
+      },
+      {
+        "q": "¿Cada cuánto se reponen?",
+        "a": "Antes que el pantalón. El elástico pierde recuperación con los ciclos de lavado y la piel de las terminales se reseca. No hay un plazo normativo: se cambian cuando dejan de sostener con la prenda mojada."
+      },
+      {
+        "q": "¿Por qué terminales de piel y no sintéticas?",
+        "a": "Porque el roce contra las presillas es constante y la piel aguanta mejor ese desgaste. Las terminales sintéticas se abren antes, y cuando una terminal falla el tirante deja de sujetar de ese lado."
+      },
+      {
+        "q": "¿Se lavan con el pantalón?",
+        "a": "Sí, aunque conviene retirarlos para la revisión periódica: hay que verificar costuras, elástico y terminales por separado, y con el tirante montado no se ve todo."
+      },
+      {
+        "q": "¿Los venden sueltos?",
+        "a": "Sí, sin compra mínima. Es una de las piezas que más se piden por separado, sobre todo cuando la brigada ya identificó que sus tirantes están vencidos pero los pantalones siguen en buen estado."
+      }
+    ],
+    "sinonimos": [
+      "tirantes de brigada",
+      "suspensores para pantalón de brigada",
+      "tirantes tipo X",
+      "tirantes elásticos FR",
+      "suspenders brigada",
+      "tirantes de ocho puntos"
+    ],
+    "sinonimosNota": "Se piden como tirantes o suspensores según la región. En catálogo de importación aparecen como suspenders.",
+    "comparativa": {
+      "titulo": "Tipo X o tipo H",
+      "intro": "Las dos configuraciones que existen. La elección depende de si se usa equipo de respiración.",
+      "columnas": [
+        "Criterio",
+        "Tipo X",
+        "Tipo H"
+      ],
+      "filas": [
+        [
+          "Puntos de sujeción",
+          "Ocho, reparto amplio",
+          "Cuatro, reparto en dos bandas"
+        ],
+        [
+          "Bajo la placa del ERA",
+          "El cruce puede quedar debajo",
+          "Superficie plana, menos presión"
+        ],
+        [
+          "Con los brazos en alto",
+          "Estable",
+          "Muy estable"
+        ],
+        [
+          "Cuándo conviene",
+          "Brigada sin uso habitual de ERA",
+          "Uso frecuente de equipo de respiración"
+        ]
+      ]
+    },
+    "relacionados": [
+      {
+        "label": "Pantalón de brigadista: revisa los tirantes al reponerlo",
+        "href": "/trajes/brigadista/pantalonera/"
+      },
+      {
+        "label": "Tirantes tipo H para conjunto estructural",
+        "href": "/trajes/estructural/tirantes/"
+      },
+      {
+        "label": "Conjunto de brigada completo",
+        "href": "/trajes/brigadista/conjunto/"
+      }
+    ]
   }
 ];
 
