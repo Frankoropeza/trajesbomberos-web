@@ -19,6 +19,11 @@ interface Props extends SchemaInput {
   parent?: { name: string; href: string };  // nivel superior (L3 → L2)
   keywords?: readonly string[];             // tripleta propia de la página
   menuItems?: { label: string; href: string }[];  // franja de secciones de ESTA página
+  // ProductLayout y /trajes/ ya envían descRight (los 2 párrafos de la columna
+  // derecha del Hero), pero este layout usa `page-hero`, que solo pinta `lead`.
+  // Se declara para que el prop no rompa el type-check; hoy no se renderiza.
+  // Si se quiere mostrar, hay que decidir dónde va dentro de page-hero.
+  descRight?: string[];
 }
 
 const {
