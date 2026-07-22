@@ -1,4 +1,16 @@
-name: Deploy to GitHub Pages
+# Publica el sitio en GitHub Pages.
+#
+# IMPORTANTE — este workflow SOLO corre en Frankoropeza/trajesbomberos-web,
+# que es el repo publico al que apunta el dominio trajesbomberos.com
+# (cname y certificado configurados ahi). GitHub Pages no publica repos
+# privados en plan gratuito, asi que en Origenlab/TRAJESBOMBERO este job
+# se salta a proposito: si corriera, reportaria exito sin publicar nada,
+# que es exactamente el falso positivo que tuvo el sitio caido dos dias
+# en julio de 2026.
+#
+# El codigo vive en los dos repos, por eso la guarda va por repositorio
+# y no por rama.
+name: Publicar en GitHub Pages
 
 on:
   push:
@@ -16,6 +28,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'Frankoropeza/trajesbomberos-web'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,6 +44,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.repository == 'Frankoropeza/trajesbomberos-web'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

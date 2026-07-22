@@ -1,0 +1,45 @@
+# Espeja main hacia el repo que sirve el dominio.
+#
+# Origenlab/TRAJESBOMBERO es privado, y GitHub Pages no publica repos
+# privados en plan gratuito. El dominio trajesbomberos.com lo sirve
+# Frankoropeza/trajesbomberos-web, que es publico. Este workflow cierra
+# ese hueco: cada push a main aqui se replica alla, y alla se dispara
+# el deploy de Pages.
+#
+# Credencial: deploy key SSH (secret PAGES_DEPLOY_KEY), con permiso de
+# escritura sobre UN solo repositorio. No es un token de cuenta: si se
+# filtra, no da acceso a nada mas.
+#
+# La guarda por repositorio evita que este job corra tambien en el repo
+# destino, donde se empujaria a si mismo en bucle.
+name: Publicar en el repo del dominio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  espejo:
+    if: github.repository == 'Origenlab/TRAJESBOMBERO'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar la deploy key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PAGES_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Empujar main al repo del dominio
+        run: |
+          git push git@github.com:Frankoropeza/trajesbomberos-web.git HEAD:main
+          echo "Publicado. El deploy de Pages corre en el repo destino."
