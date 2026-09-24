@@ -118,9 +118,9 @@ export const FAMILIAS: FamiliaDetalle[] = [
                 "nombre": "Arnés interno de escape",
                 "img": "/images/piezas/arnes-interno-de-escape.avif",
                 "alt": "Arnés interno de escape para bombero",
-                "desc": "Arnés clase escape cosido dentro del pantalón, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 1983, aparte del conjunto.",
+                "desc": "Arnés clase escape cosido dentro del pantalón, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 2500 (antes NFPA 1983), aparte del conjunto.",
                 "chips": [
-                      "NFPA 1983",
+                      "NFPA 2500",
                       "Perneras flotantes",
                       "Integrado"
                 ],

@@ -350,7 +350,7 @@ export const PIEZAS: Pieza[] = [
           },
           {
             "campo": "Arnés de escape",
-            "valor": "Se certifica aparte bajo NFPA 1983",
+            "valor": "Se certifica aparte bajo NFPA 2500 (antes NFPA 1983)",
             "nota": "Aunque vaya cosido dentro de la pantalonera"
           }
         ]
@@ -471,7 +471,7 @@ export const PIEZAS: Pieza[] = [
     "noIncluye": [
       "Tirantes: se cotizan como pieza aparte, tipo H o tipo Y",
       "Rodilleras de espuma: son opción de fábrica y se piden con la orden",
-      "Arnés interno de escape: es opción configurable, se certifica bajo NFPA 1983",
+      "Arnés interno de escape: es opción configurable, se certifica bajo NFPA 2500 (antes NFPA 1983)",
       "Chaquetón: se cotiza por separado, del mismo corte y talla"
     ],
     "errores": [
@@ -1103,11 +1103,11 @@ export const PIEZAS: Pieza[] = [
     "familia": "estructural",
     "nombreCard": "Arnés interno de escape",
     "nombre": "Arnés interno de escape",
-    "seoTitle": "Arnés de escape para bombero | NFPA 1983 | México",
-    "seoDescription": "Arnés de escape para bombero cosido en la pantalonera, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 1983, aparte del conjunto.",
+    "seoTitle": "Arnés de escape para bombero | NFPA 2500 | México",
+    "seoDescription": "Arnés de escape para bombero cosido en la pantalonera, con perneras flotantes y hebilla de perfil bajo. Certificado aparte bajo NFPA 2500 (antes NFPA 1983).",
     "keywords": [
       "arnés de escape para bombero",
-      "NFPA 1983",
+      "NFPA 2500",
       "México"
     ],
     "eyebrow": "Pieza · Conjunto estructural",
@@ -1116,10 +1116,10 @@ export const PIEZAS: Pieza[] = [
     "lead": "Sistema de autorrescate cosido dentro del pantalón: siempre puesto, sin volumen exterior y listo cuando la salida por escalera ya no existe.",
     "descRight": [
       "El arnés de escape resuelve un escenario concreto: el elemento queda atrapado en un piso alto y la ruta de salida se cerró. Un sistema que se guarda en la unidad no sirve en ese momento; por eso este va cosido dentro de la pantalonera y sale de la estación puesto.",
-      "Se certifica bajo NFPA 1983, una norma distinta a la del conjunto estructural. Es un detalle que confunde en licitaciones: el traje cumple una norma y el arnés otra, y ambas deben aparecer en el expediente."
+      "Se certifica bajo NFPA 2500 (antes NFPA 1983), una norma distinta a la del conjunto estructural. Es un detalle que confunde en licitaciones: el traje cumple una norma y el arnés otra, y ambas deben aparecer en el expediente."
     ],
     "meta": [
-      "NFPA 1983",
+      "NFPA 2500",
       "Perneras flotantes",
       "Hebilla de perfil bajo",
       "Siempre puesto"
@@ -1130,7 +1130,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "puntosClave": [
       "Cosido dentro de la pantalonera: siempre disponible, sin volumen exterior",
-      "Se certifica bajo NFPA 1983, no bajo la norma del conjunto",
+      "Se certifica bajo NFPA 2500 (antes NFPA 1983), no bajo la norma del conjunto",
       "Perneras flotantes: acompañan el movimiento y tensan solo bajo carga",
       "Hebilla de perfil bajo, para no crear punto de presión en cadera",
       "Requiere definir el cierre de cintura de la pantalonera desde la orden",
@@ -1156,7 +1156,7 @@ export const PIEZAS: Pieza[] = [
         "filas": [
           {
             "campo": "Norma aplicable",
-            "valor": "NFPA 1983",
+            "valor": "NFPA 2500",
             "nota": "Distinta a la del conjunto estructural (NFPA 1970)"
           },
           {
@@ -1240,7 +1240,7 @@ export const PIEZAS: Pieza[] = [
     "incluye": [
       "Arnés clase escape cosido en la pantalonera",
       "Perneras flotantes y hebilla de perfil bajo",
-      "Certificado del arnés bajo NFPA 1983"
+      "Certificado del arnés bajo NFPA 2500 (antes NFPA 1983)"
     ],
     "noIncluye": [
       "Cuerda, gancho y descensor: son el sistema de descenso, se cotizan aparte",
@@ -1285,7 +1285,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "titulo": "Compra por licitación",
-        "desc": "Cuando el pliego exige sistema de escape con certificado NFPA 1983."
+        "desc": "Cuando el pliego exige sistema de escape con certificado NFPA 2500 (antes NFPA 1983)."
       }
     ],
     "faqs": [
@@ -1294,8 +1294,8 @@ export const PIEZAS: Pieza[] = [
         "a": "El de escape está diseñado para una maniobra de emergencia: bajar una vez, rápido, desde una posición comprometida. El de trabajo en altura está pensado para suspensión prolongada y posicionamiento. No son intercambiables y se certifican distinto."
       },
       {
-        "q": "¿Por qué se certifica bajo NFPA 1983 y no bajo la del traje?",
-        "a": "Porque es equipo de vida, no ropa de protección. La NFPA 1970 cubre el desempeño térmico del conjunto; la NFPA 1983 cubre cuerdas, arneses y herrajes de rescate. Ambos certificados deben ir en el expediente de compra."
+        "q": "¿Por qué se certifica bajo NFPA 2500 y no bajo la del traje?",
+        "a": "Porque es equipo de vida, no ropa de protección. La NFPA 1970 cubre el desempeño térmico del conjunto; la NFPA 2500, que integró a la antigua NFPA 1983, cubre cuerdas, arneses y herrajes de rescate. Ambos certificados deben ir en el expediente de compra."
       },
       {
         "q": "¿Puedo agregarlo a una pantalonera que ya tengo?",
@@ -1328,7 +1328,7 @@ export const PIEZAS: Pieza[] = [
           "cinturón de escape",
           "arnés clase escape",
           "escape belt",
-          "arnés NFPA 1983"
+          "arnés NFPA 2500"
     ],
     sinonimosNota: "En pliegos aparece como sistema de escape o de autorrescate. El arnés es solo una parte: el sistema incluye cuerda, gancho y descensor.",
     comparativa: {
