@@ -26,10 +26,10 @@ export const KEYWORDS = [
 ] as const;
 
 export const CONTACT = {
-  telefono: '+52 55 1005 3432',
-  telefonoHref: '+525510053432',
-  whatsapp: '525510053432',
-  email: 'ventas@trajesbomberos.com',
+  telefono: '+52 56 6480 4962',
+  telefonoHref: '+525664804962',
+  whatsapp: '525664804962',
+  email: 'trajes.bomberos@gmail.com',
   horario: 'Lun–Vie 9:00–18:00',
   cobertura: 'Envíos a todo México',
   posicionamiento: 'Venta de trajes para bomberos · Envíos a todo México',
