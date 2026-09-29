@@ -1,0 +1,32 @@
+{
+ "lead": "Mazatlán reúne siete estaciones de bomberos: seis de dos corporaciones voluntarias distintas y la del aeropuerto. Encuentra el domicilio de cada base cuando está publicado y su ubicación dentro del municipio.",
+ "panorama": [
+  "En Mazatlán conviven dos instituciones de voluntarios. El H. Cuerpo Voluntario de Bomberos de Mazatlán opera la Central Estación 1, en la colonia Montuosa, y las bases Insurgentes y Villa Florida; Bomberos Veteranos de Mazatlán cubre Fovissste Playa Azul, El Castillo y Villa Unión. El SSEI del aeropuerto Gral. Rafael Buelna atiende la operación aérea.",
+  "Para coordinar capacitación o donativos conviene distinguir a cada corporación: el Cuerpo Voluntario trabaja en la ciudad, sobre avenidas como Gabriel Leyva e Insurgentes, mientras los Veteranos llegan a localidades como El Castillo y Villa Unión. Un mismo proyecto de equipamiento puede requerir acuerdos con ambas."
+ ],
+ "coberturaDuo": [
+  "Seis estaciones son voluntarias y la séptima pertenece al aeropuerto. La central de Montuosa declara incendio estructural, rescate vehicular, rescate acuático y materiales peligrosos, un perfil propio de una ciudad costera; la base de Villa Unión suma la atención de incendios vehiculares."
+ ],
+ "equipoDuo": [
+  "La Central Estación 1 necesita <a href=\"/trajes/estructural/\">trajes estructurales</a> con respiración autónoma, herramienta de extricación, chalecos y cuerdas para rescate acuático y protección química para materiales peligrosos. El SSEI del aeropuerto trabaja con trajes de aproximación al fuego, y las bases de Veteranos parten del equipo estructural básico.",
+  "LORICA cotiza por separado al Cuerpo Voluntario, a Bomberos Veteranos o a la empresa que done equipo en Mazatlán: una partida por renglón, ficha técnica y expediente si hay licitación. Facturamos con CFDI 4.0 a quien paga, sin compra mínima, y enviamos a Sinaloa <a href=\"/rescate/\">equipo de rescate acuático</a> y protección personal."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Mazatlán y en qué zonas están?",
+   "a": "Siete. La Central Estación 1 está en avenida Gabriel Leyva esquina Josefa Ortiz de Domínguez, colonia Montuosa; hay bases sobre avenida Insurgentes y en los fraccionamientos Villa Florida y Fovissste Playa Azul, además de estaciones en El Castillo, Villa Unión y el aeropuerto."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Mazatlán?",
+   "a": "Dos corporaciones voluntarias diferentes, el H. Cuerpo Voluntario de Bomberos de Mazatlán y Bomberos Veteranos de Mazatlán, se reparten las seis bases voluntarias. El aeropuerto Gral. Rafael Buelna tiene su propio SSEI. Sinaloa suma 23 estaciones en 11 municipios."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Mazatlán si no es una emergencia?",
+   "a": "Ninguna de las siete estaciones tiene teléfono oficial publicado. Para cursos, visitas o donativos, acude a la Central de la colonia Montuosa, pide apoyo a protección civil municipal o escríbenos. Si se trata de una emergencia, marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Mazatlán?",
+   "a": "Los cuerpos voluntarios suelen equiparse con recursos propios, donativos y apoyo empresarial. LORICA cotiza a cualquiera de ellos, o al aeropuerto, con ficha técnica por artículo y factura CFDI 4.0 a nombre de quien paga. No pedimos compra mínima y enviamos a Mazatlán."
+  }
+ ]
+}

@@ -261,6 +261,8 @@ export const dominio = (url: string) => { try { return new URL(url).hostname.rep
 // páginas delgadas). Nombre común cuando la ciudad se busca por otro nombre.
 const NOMBRE_COMUN: Record<string, string> = {
   'quintana-roo/benito-juarez': 'Cancún',
+  'sinaloa/ahome': 'Los Mochis',
+  'tamaulipas/victoria': 'Ciudad Victoria',
   'tabasco/centro': 'Villahermosa',
   'campeche/carmen': 'Ciudad del Carmen',
   'chihuahua/juarez': 'Ciudad Juárez',

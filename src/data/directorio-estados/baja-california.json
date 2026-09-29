@@ -1,14 +1,14 @@
 {
- "lead": "Baja California reúne 32 estaciones de bomberos en 6 municipios. Tijuana concentra 20 y Ensenada 6. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para localizar la base adecuada y planear una dotación.",
+ "lead": "Baja California reúne 42 estaciones de bomberos en 7 municipios. Tijuana concentra 20 y Mexicali 12, varias en el valle. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para localizar la base adecuada.",
  "panorama": [
-  "El servicio de bomberos en Baja California está sostenido principalmente por cuerpos municipales. Tijuana, Ensenada y Mexicali cuentan con redes de centrales y subestaciones, mientras Playas de Rosarito, San Quintín y Tecate tienen operación propia. Además, los aeropuertos de Tijuana y Mexicali mantienen servicios especializados de salvamento y extinción dentro de sus instalaciones.",
-  "Tijuana concentra 20 estaciones y Ensenada 6, una distribución que orienta buena parte de la coordinación a esas dos ciudades. Mexicali suma 3 estaciones y los demás municipios completan una presencia territorial más compacta. Si compras para bomberos en Baja California, conviene programar entregas por corporación y diferenciar necesidades urbanas, forestales, acuáticas o aeroportuarias."
+  "El servicio de bomberos en Baja California está sostenido principalmente por cuerpos municipales. Tijuana, Ensenada y Mexicali operan redes de central y subestaciones, y San Felipe ya cuenta con corporación y estación central propias. Playas de Rosarito, San Quintín y Tecate mantienen operación local, mientras los aeropuertos de Tijuana y Mexicali tienen servicios especializados de salvamento y extinción.",
+  "Tijuana concentra 20 estaciones y Mexicali 12, con bases en poblados del valle como Ciudad Morelos, Guadalupe Victoria o Ejido Hermosillo. Ensenada suma 6 y los demás municipios tienen una estación cada uno. Si compras para bomberos en Baja California, programa entregas por corporación y diferencia necesidades urbanas, rurales, acuáticas o aeroportuarias."
  ],
  "estacionesDuo": [
-  "El Heroico Cuerpo de Bomberos de Tijuana sostiene la red más amplia del estado, acompañado por los cuerpos de Ensenada y Mexicali. También figuran las direcciones de Tecate, Playas de Rosarito y San Quintín. Las estaciones de bomberos en Baja California se agrupan por municipio y muestran teléfono oficial cuando está disponible."
+  "El Heroico Cuerpo de Bomberos de Tijuana sostiene la red más amplia, seguido por el de Mexicali, con subestaciones en el valle, y el de Ensenada. Se suman la corporación de San Felipe, la central de Tecate, Playas de Rosarito y San Quintín. Las estaciones de bomberos en Baja California se agrupan por municipio, con teléfono oficial."
  ],
  "coberturaDuo": [
-  "Las 32 estaciones declaran incendios estructurales, la labor que atraviesa toda la red. Materiales peligrosos, rescate acuático, incendios forestales y salvamento aeroportuario aparecen en sedes específicas. La compra debe complementar la protección estructural con soluciones puntuales donde esos servicios están declarados."
+  "Los incendios estructurales aparecen en 32 estaciones y son la labor que atraviesa la red. Materiales peligrosos, rescate acuático, incendios forestales y salvamento aeroportuario se concentran en sedes específicas. La compra debe complementar la protección estructural con soluciones puntuales donde esos servicios están declarados."
  ],
  "equipoDuo": [
   "La protección para inmuebles parte de <a href=\"/trajes/estructural/\">trajes estructurales</a> y equipo respiratorio. Las estaciones con incendios forestales requieren prendas forestales, mientras las sedes que reportan materiales peligrosos necesitan protección Hazmat. El rescate acuático exige recursos propios de esa maniobra y los servicios aeroportuarios deben considerar protección de aproximación para su escenario.",
@@ -17,11 +17,11 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Baja California y dónde están?",
-   "a": "Hay 32 estaciones de bomberos localizadas en 6 municipios de Baja California. Tijuana concentra 20 y Ensenada 6; Mexicali tiene 3. También hay estaciones en Playas de Rosarito, San Quintín y Tecate, operadas principalmente por cuerpos municipales y con presencia aeroportuaria."
+   "a": "Hay 42 estaciones de bomberos localizadas en 7 municipios de Baja California. Tijuana concentra 20 y Mexicali 12, varias de ellas en el valle; Ensenada tiene 6. También hay estaciones en Playas de Rosarito, San Felipe, San Quintín y Tecate, operadas principalmente por cuerpos municipales y con presencia aeroportuaria."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Baja California?",
-   "a": "Los bomberos en Baja California son operados principalmente por los cuerpos municipales de Tijuana, Ensenada, Mexicali, Playas de Rosarito, San Quintín y Tecate. Los aeropuertos de Tijuana y Mexicali cuentan además con servicios de salvamento y extinción para su ámbito especializado."
+   "a": "Los bomberos en Baja California son operados principalmente por los cuerpos municipales de Tijuana, Mexicali, Ensenada, Playas de Rosarito, San Felipe, San Quintín y Tecate. Los aeropuertos de Tijuana y Mexicali cuentan además con servicios de salvamento y extinción para su ámbito especializado."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Baja California para una gestión?",
@@ -29,7 +29,7 @@
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Baja California?",
-   "a": "Las corporaciones listadas en Baja California declaran incendios estructurales en toda la red. Algunas añaden protección civil, materiales peligrosos, rescate acuático, incendios forestales, atención prehospitalaria y salvamento aeroportuario. La cobertura especializada cambia entre municipios y aeropuertos."
+   "a": "Las corporaciones listadas en Baja California declaran incendios estructurales en la mayoría de sus estaciones. Algunas añaden protección civil, materiales peligrosos, rescate acuático, incendios forestales, atención prehospitalaria y salvamento aeroportuario. La cobertura especializada cambia entre municipios y aeropuertos."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Baja California?",

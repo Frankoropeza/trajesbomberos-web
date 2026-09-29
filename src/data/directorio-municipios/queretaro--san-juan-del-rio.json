@@ -1,0 +1,32 @@
+{
+ "lead": "En San Juan del Río hay tres estaciones de bomberos, todas del Heroico Cuerpo de Bomberos de San Juan del Río, de carácter voluntario. Encuentra dónde está cada una; ninguna publica teléfono oficial.",
+ "panorama": [
+  "El Heroico Cuerpo de Bomberos de San Juan del Río sostiene el servicio con voluntarios desde su base de la Carretera Panamericana, en la colonia Casa Blanca. Esa sede declara incendio estructural, rescate vehicular, atención prehospitalaria y salvamento aeroportuario; la acompañan la Estación 2, en Banthí, y la de Paseo Central.",
+  "Para quien planea capacitación o compras, la ventaja es tratar con una sola corporación y tres sedes bien identificadas: Avenida Universidad en Banthí, Paseo Central junto a la Cruz Roja y la base sobre la Panamericana. Las tres imparten capacitación, algo valioso para las brigadas internas de empresas del municipio."
+ ],
+ "coberturaDuo": [
+  "Las tres sedes son voluntarias y comparten la capacitación como servicio común. Lo demás se concentra en Casa Blanca: incendio en inmuebles, rescate vehicular, protección civil y salvamento aeroportuario, una combinación que mezcla emergencias urbanas, accidentes en carretera y operación aérea."
+ ],
+ "equipoDuo": [
+  "La base de Casa Blanca necesita <a href=\"/trajes/estructural/\">traje estructural</a> completo, con casco, botas y respiración autónoma, además de herramienta hidráulica para rescate vehicular. Por su servicio de salvamento aeroportuario también le corresponden trajes de aproximación al fuego; en las otras sedes, material para prácticas y cursos.",
+  "LORICA atiende al cuerpo voluntario de San Juan del Río y a las empresas que lo apoyan con cotización por partida, ficha técnica de cada artículo y, si media una convocatoria, el expediente requerido. Facturamos con CFDI 4.0, sin compra mínima, y enviamos a la ciudad <a href=\"/trajes/aproximacion/\">trajes de aproximación</a> o cualquier otra partida."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos tiene San Juan del Río y dónde se encuentran?",
+   "a": "Tres. La base principal está en la Carretera Panamericana esquina Ing. Leopoldo Peralta, colonia Casa Blanca; la Estación 2 queda sobre Avenida Universidad, casi en la esquina con Avenida De Los Patos, en Banthí, y la tercera en Paseo Central, a un lado de la Cruz Roja."
+  },
+  {
+   "q": "¿Qué corporación brinda el servicio de bomberos en San Juan del Río?",
+   "a": "El Heroico Cuerpo de Bomberos de San Juan del Río, integrado por voluntarios, opera las tres sedes del municipio. Querétaro suma 14 estaciones en 7 municipios; la corporación sanjuanense aporta tres de ellas y cubre también salvamento aeroportuario."
+  },
+  {
+   "q": "¿Cómo me comunico con los bomberos en San Juan del Río fuera de una emergencia?",
+   "a": "Ninguna de las tres sedes publica teléfono oficial. Para cursos, visitas o donativos, acude a la base de Casa Blanca, consulta a protección civil municipal o escríbenos y te orientamos. En una emergencia, llama al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en San Juan del Río?",
+   "a": "Un cuerpo voluntario suele combinar recursos propios y donativos. En cualquier caso, envíanos la lista de necesidades: LORICA responde con ficha técnica, cotización formal y factura CFDI 4.0 a nombre de quien paga, sin monto mínimo y con envío a San Juan del Río."
+  }
+ ]
+}

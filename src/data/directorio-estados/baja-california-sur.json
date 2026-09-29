@@ -1,14 +1,14 @@
 {
- "lead": "Baja California Sur reúne 7 estaciones de bomberos en 5 municipios, con mayor presencia en Los Cabos. Incluye dirección, teléfono oficial cuando existe, ubicación y la corporación que opera cada estación para ubicar bomberos en Baja California Sur.",
+ "lead": "Baja California Sur reúne 11 estaciones de bomberos en 5 municipios, y Los Cabos concentra 7 entre Cabo San Lucas, San José del Cabo, Santiago y La Ribera. Incluye dirección, teléfono oficial cuando existe, ubicación y la corporación que opera cada estación.",
  "panorama": [
-  "El servicio de bomberos en Baja California Sur combina cuerpos municipales con agrupaciones voluntarias en Los Cabos y un servicio aeroportuario. La Paz, Loreto, Comondú y Mulegé cuentan con corporaciones propias; en San José del Cabo y Cabo San Lucas participan bomberos voluntarios. Es una operación distribuida por municipio, sin centrales ni subestaciones dentro de las estaciones localizadas.",
-  "Los Cabos concentra 3 estaciones y reúne servicio voluntario junto con la atención aeroportuaria. Para quien coordina una corporación o una brigada, esa convivencia pide definir equipos por función y mantener compatibilidad entre protección estructural, rescate y atención prehospitalaria. En La Paz y Mulegé también hay servicios forestales declarados, un dato útil al planear dotaciones locales."
+  "El servicio de bomberos en Baja California Sur combina cuerpos municipales con agrupaciones voluntarias y un servicio aeroportuario. La Paz, Loreto, Comondú y Mulegé cuentan con corporaciones propias; en Los Cabos, los voluntarios de Cabo San Lucas y San José del Cabo operan bases adicionales y el ayuntamiento sostiene la estación de La Ribera. Las 4 subestaciones localizadas están en ese municipio.",
+  "Los Cabos concentra 7 estaciones y reúne servicio voluntario, municipal y aeroportuario. Para quien coordina una corporación o una brigada, esa convivencia pide definir equipos por función y mantener compatibilidad entre protección estructural, rescate y atención prehospitalaria. En La Paz, Mulegé y Santiago también hay servicios forestales declarados, un dato útil al planear dotaciones locales."
  ],
  "estacionesDuo": [
-  "Las estaciones de bomberos en Baja California Sur incluyen al Heroico Cuerpo de Bomberos de La Paz, el Departamento de Bomberos de San José del Cabo y el H. Cuerpo de Bomberos de Cabo San Lucas. Están ordenadas por municipio; cuando hay teléfono oficial, se muestra junto a la estación."
+  "Las estaciones de bomberos en Baja California Sur incluyen al Heroico Cuerpo de Bomberos de La Paz, el Departamento de Bomberos de San José del Cabo y el H. Cuerpo de Bomberos de Cabo San Lucas, con bases en Cabo del Sol y Lomas del Sol. Están ordenadas por municipio, con teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Los 7 servicios declarados para incendios estructurales marcan la base de la cobertura. También aparecen incendios forestales, rescate vehicular y rescate acuático, mientras Los Cabos suma salvamento aeroportuario. El equipo debe considerar protección estructural, rescate y operación en áreas abiertas."
+  "Los incendios estructurales, declarados en 8 estaciones, marcan la base de la cobertura junto con protección civil y atención prehospitalaria. También aparecen incendios forestales, rescate vehicular y rescate acuático, y Los Cabos suma salvamento aeroportuario. El equipo debe considerar rescate y operación en áreas abiertas."
  ],
  "equipoDuo": [
   "Para bomberos en Baja California Sur, el incendio estructural requiere <a href=\"/trajes/estructural/\">trajes estructurales</a> como base inicial. Donde se declaran incendios forestales, hacen falta <a href=\"/trajes/forestal/\">trajes forestales</a>; el rescate vehicular pide protección adecuada para maniobras de extricación. El servicio aeroportuario puede requerir equipo de aproximación según su operación.",
@@ -17,11 +17,11 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Baja California Sur y dónde están?",
-   "a": "Hay 7 estaciones localizadas en 5 municipios de Baja California Sur. Los Cabos concentra 3; también hay corporaciones en Comondú, La Paz, Loreto y Mulegé. Cada ubicación incluye los datos disponibles para identificar a la corporación responsable."
+   "a": "Hay 11 estaciones localizadas en 5 municipios de Baja California Sur. Los Cabos concentra 7, repartidas entre Cabo San Lucas, San José del Cabo, Santiago y La Ribera; también hay corporaciones en Comondú, La Paz, Loreto y Mulegé. Cada ubicación incluye los datos disponibles para identificar a la corporación responsable."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Baja California Sur?",
-   "a": "En Baja California Sur participan cuerpos municipales en Comondú, La Paz, Loreto y Mulegé, además de bomberos voluntarios en Los Cabos. También figura el servicio aeroportuario de Los Cabos, con una función distinta a la atención municipal."
+   "a": "En Baja California Sur participan cuerpos municipales en Comondú, La Paz, Loreto, Mulegé y La Ribera, además de bomberos voluntarios en Cabo San Lucas y San José del Cabo. También figura el servicio aeroportuario de Los Cabos, con una función distinta a la atención municipal."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Baja California Sur para una gestión?",
@@ -29,7 +29,7 @@
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Baja California Sur?",
-   "a": "Los bomberos en Baja California Sur declaran atención a incendios estructurales, protección civil y atención prehospitalaria. En algunas corporaciones también aparecen incendios forestales, rescate vehicular, rescate acuático y salvamento aeroportuario, según la estación."
+   "a": "Los bomberos en Baja California Sur declaran atención a incendios estructurales, protección civil y atención prehospitalaria. En algunas corporaciones también aparecen incendios forestales, rescate vehicular, rescate acuático, fugas de gas y salvamento aeroportuario, según la estación."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Baja California Sur?",

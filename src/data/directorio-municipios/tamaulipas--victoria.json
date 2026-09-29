@@ -1,0 +1,32 @@
+{
+ "lead": "Ciudad Victoria, capital de Tamaulipas, tiene dos estaciones de bomberos de Protección Civil y Bomberos de Ciudad Victoria, corporación municipal. Encuentra dónde está la Base Sagitario y el teléfono oficial de la corporación.",
+ "panorama": [
+  "En la capital tamaulipeca, bomberos y protección civil forman una sola corporación municipal: Protección Civil y Bomberos de Ciudad Victoria. Su sede declara incendio estructural y forestal, rescate vehicular y atención prehospitalaria, y la Base Sagitario, en la colonia del mismo nombre, refuerza la respuesta a incendios en inmuebles.",
+  "Para gestionar cursos, simulacros o compras hay un solo interlocutor, con teléfono oficial publicado. Toma en cuenta que la corporación atiende también incendios forestales, de modo que su equipamiento debe abarcar tanto la zona urbana como los terrenos con vegetación del municipio."
+ ],
+ "coberturaDuo": [
+  "Las dos estaciones son municipales y ambas responden a incendios estructurales. La sede agrega incendios forestales, rescate vehicular y urgencias médicas, una mezcla que muestra una capital donde conviven el riesgo urbano, los accidentes viales y el fuego en vegetación."
+ ],
+ "equipoDuo": [
+  "Para los incendios urbanos, el equipo base es el traje estructural con casco, guantes y respiración autónoma, además de herramienta hidráulica para rescate vehicular. En incendios de vegetación, un <a href=\"/trajes/forestal/\">traje forestal</a> más ligero y transpirable protege mejor al personal durante jornadas largas.",
+  "Protección Civil y Bomberos de Ciudad Victoria puede cotizar con LORICA por partida, con ficha técnica y el expediente que pida el área de adquisiciones del municipio. Emitimos CFDI 4.0, no exigimos compra mínima y enviamos a Ciudad Victoria; también surtimos <a href=\"/botas/\">botas para bombero</a> por talla."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Ciudad Victoria y dónde se ubican?",
+   "a": "Hay dos. La Base Sagitario está en la colonia Sagitario de Ciudad Victoria. La sede de Protección Civil y Bomberos no tiene domicilio publicado, pero cuenta con teléfono oficial para ubicarla y pedir orientación."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Ciudad Victoria?",
+   "a": "Protección Civil y Bomberos de Ciudad Victoria, una corporación municipal que reúne ambas funciones y tiene a su cargo las dos estaciones. En todo Tamaulipas se cuentan 16 estaciones en 9 municipios."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Ciudad Victoria para una gestión?",
+   "a": "Llama a la sede de Protección Civil y Bomberos de Ciudad Victoria, que tiene teléfono oficial publicado; es el canal indicado para cursos, visitas o donativos. La Base Sagitario no difunde número propio. Para cualquier emergencia, marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Ciudad Victoria?",
+   "a": "Como corporación municipal, suele comprar por licitación o adjudicación directa. Envíanos las bases o la lista de partidas y LORICA responde con ficha técnica, cotización formal y CFDI 4.0, sin monto mínimo y con envío a Ciudad Victoria."
+  }
+ ]
+}

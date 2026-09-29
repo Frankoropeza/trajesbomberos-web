@@ -1,39 +1,39 @@
 {
- "lead": "San Luis Potosí cuenta con 5 estaciones de bomberos en 5 municipios, entre ellos San Luis Potosí, Ciudad Valles y Matehuala. Consulta dirección, teléfono oficial cuando existe, ubicación y la corporación responsable de cada estación.",
+ "lead": "San Luis Potosí cuenta con 9 estaciones de bomberos localizadas en 5 municipios, y la zona metropolitana de la capital reúne 6 de ellas. Encontrarás dirección, ubicación, teléfono oficial cuando existe y la corporación responsable de cada estación.",
  "panorama": [
-  "El servicio de bomberos en San Luis Potosí se sostiene principalmente con cuerpos voluntarios en Ciudad Valles, Matehuala, Rioverde y la capital. A esa red se suma el servicio aeroportuario de Soledad de Graciano Sánchez. Cada sede atiende su propio ámbito con una organización distinta.",
-  "La distribución abarca municipios separados y no una concentración única. Para quien equipa bomberos en San Luis Potosí, vale la pena considerar partidas que sirvan tanto a rescate vehicular como a incendios estructurales. Ciudad Valles y Rioverde además reportan rescate acuático, mientras Matehuala incluye incendios forestales."
+  "El servicio de bomberos en San Luis Potosí es voluntario en casi toda su extensión. El Honorable Cuerpo de Bomberos Metropolitanos de San Luis Potosí opera su sede y 4 estaciones: Lomas, Tangamanga, Zona Industrial, donde funciona el Colegio de Bomberos, y Norte, en Soledad de Graciano Sánchez. Ciudad Valles, Matehuala y Rioverde tienen cuerpos voluntarios propios, y el aeropuerto Ponciano Arriaga, su SSEI.",
+  "Dos terceras partes de las estaciones están en la capital y Soledad, casi todas bajo la corporación metropolitana. Eso facilita estandarizar equipo y capacitación en la zona urbana. Fuera de ella, cada cuerpo voluntario trabaja con riesgos propios: rescate acuático en Ciudad Valles y Rioverde, incendio forestal en Ciudad Valles y Matehuala."
  ],
  "estacionesDuo": [
-  "Entre las corporaciones figuran el Honorable Cuerpo de Bomberos Metropolitanos de San Luis Potosí, el Heroico Cuerpo de Bomberos de Ciudad Valles y los Bomberos Voluntarios de Matehuala. El listado se organiza por municipio e incorpora teléfono oficial cuando se cuenta con ese dato."
+  "Los Bomberos Metropolitanos dan forma a la red de la capital, mientras el Heroico Cuerpo de Bomberos de Ciudad Valles y el Cuerpo de Bomberos Voluntarios de Matehuala sostienen el servicio en sus ciudades. Las estaciones se ordenan por municipio e incluyen teléfono oficial cuando se tiene."
  ],
  "coberturaDuo": [
-  "Las 5 estaciones declaran atención prehospitalaria y 4 reportan incendio estructural y rescate vehicular. También hay rescate acuático e incendios forestales en 2 cuerpos. Esto demanda un equipo flexible: protección para fuego, movilidad para rescate y una selección particular según el entorno de cada corporación."
+  "La atención prehospitalaria aparece en 5 estaciones y el incendio estructural y el rescate vehicular en 4, siempre en las sedes principales. El rescate acuático y el fuego forestal se reparten entre Ciudad Valles, Rioverde y Matehuala; materiales peligrosos, altura y espacios confinados se concentran en la sede metropolitana."
  ],
  "equipoDuo": [
-  "El base inicial para estas corporaciones son <a href=\"/trajes/estructural/\">trajes estructurales</a> y protección para rescate vehicular. Ciudad Valles y Matehuala también justifican trajes forestales por los servicios declarados. Para materiales peligrosos, altura o espacios confinados, la selección debe responder al riesgo puntual de la operación.",
-  "LORICA arma una cotización por partida para compra directa o licitación, con especificación técnica que facilita revisar productos. Emite factura CFDI 4.0, no solicita compra mínima y envía al estado. Puedes añadir <a href=\"/guantes/\">guantes para bombero</a> y otros complementos a la misma cotización."
+  "En la capital, <a href=\"/trajes/estructural/\">trajes estructurales</a> y equipo de extricación cubren lo esencial; la sede metropolitana, con espacios confinados y materiales peligrosos, necesita además protección Hazmat y respiración autónoma. Ciudad Valles y Matehuala justifican <a href=\"/trajes/forestal/\">trajes forestales</a>, Valles y Rioverde equipo acuático, y el SSEI de Soledad, protección de aproximación.",
+  "LORICA cotiza por partida con ficha técnica, lista para licitación o compra directa, y te ayuda a integrar el expediente. Facturamos con CFDI 4.0, no hay compra mínima y enviamos a San Luis Potosí, ya sea para una sola estación en Rioverde o para las bases metropolitanas. Completa el pedido con <a href=\"/guantes/\">guantes para bombero</a>."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en San Luis Potosí y dónde están?",
-   "a": "Hay 5 estaciones de bomberos en San Luis Potosí, ubicadas en Ciudad Valles, Matehuala, Rioverde, San Luis Potosí y Soledad de Graciano Sánchez. La página concentra los datos disponibles para reconocer qué corporación atiende cada uno de esos municipios."
+   "a": "Tenemos localizadas 9 estaciones de bomberos en San Luis Potosí. La capital tiene 4 y Soledad de Graciano Sánchez 2; Ciudad Valles, Matehuala y Rioverde cuentan con una cada uno. Si conoces una estación que falta en el estado, escríbenos para sumarla."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en San Luis Potosí?",
-   "a": "Los bomberos en San Luis Potosí son operados principalmente por cuerpos voluntarios. En Soledad de Graciano Sánchez aparece además un servicio aeroportuario. La corporación de cada municipio conserva su propia identidad operativa, por lo que conviene dirigirse al cuerpo correspondiente."
+   "a": "Casi todo el servicio es voluntario: 8 de las 9 estaciones pertenecen a cuerpos voluntarios, y los Bomberos Metropolitanos son la corporación más extendida, en la capital y Soledad. La excepción es el SSEI del Aeropuerto Internacional Ponciano Arriaga."
   },
   {
    "q": "¿Cómo contacto una estación de bomberos en San Luis Potosí para una gestión?",
-   "a": "Revisa el teléfono oficial cuando esté disponible y usa ese contacto para comunicaciones institucionales o solicitudes de información. Para una emergencia en San Luis Potosí marca 911. El nombre de la corporación y su ubicación permiten ubicar la estación adecuada antes de llamar."
+   "a": "Hay teléfono oficial para la sede de los Bomberos Metropolitanos y para los voluntarios de Matehuala. Si buscas una estación metropolitana sin número, canaliza la capacitación, la donación o el dictamen por la sede. En una emergencia en San Luis Potosí, llama al 911."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en San Luis Potosí?",
-   "a": "Los bomberos en San Luis Potosí reportan incendio estructural, rescate vehicular y atención prehospitalaria. Según la corporación, también atienden incendios forestales, rescate acuático, altura, espacios confinados, materiales peligrosos o salvamento aeroportuario."
+   "a": "Los servicios más declarados son atención prehospitalaria, incendio estructural y rescate vehicular. Ciudad Valles y Rioverde declaran rescate acuático; Valles y Matehuala, incendio forestal. La sede metropolitana suma altura, espacios confinados y materiales peligrosos, y el SSEI, salvamento aeroportuario."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en San Luis Potosí?",
-   "a": "Una corporación de bomberos en San Luis Potosí puede pedir cotización para licitación o compra directa. LORICA proporciona especificación técnica por partida, factura CFDI 4.0, sin compra mínima, y coordina el envío al estado conforme a las necesidades de equipo."
+   "a": "Un cuerpo voluntario puede comprar directo y una corporación con recursos públicos, por licitación; en ambos casos LORICA entrega ficha técnica por partida y factura CFDI 4.0. No exigimos compra mínima y el envío llega a cualquier estación de San Luis Potosí."
   }
  ]
 }
