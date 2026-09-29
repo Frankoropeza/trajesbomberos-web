@@ -34,12 +34,12 @@ const path = `/trajes/${pz.familia}/${pz.slug}/`;
 const hermanas = familia.productos.filter((pr) => pr.nombre !== pz.nombreCard);
 
 const menuItems = [
-  { label: 'Qué es', href: '#que-es' },
+  { label: pz.nombre, href: '#que-es' },
   { label: 'Ficha técnica', href: '#ficha' },
-  { label: 'Qué incluye', href: '#incluye' },
+  { label: 'Qué incluye la cotización', href: '#incluye' },
   { label: 'Cómo elegir', href: '#comparativa' },
-  { label: 'Errores', href: '#errores' },
-  { label: 'Preguntas', href: '#faq' },
+  { label: 'Errores al comprar', href: '#errores' },
+  { label: 'Preguntas frecuentes', href: '#faq' },
 ];
 
 const pageIndex = [
@@ -47,7 +47,7 @@ const pageIndex = [
   { label: 'Ficha técnica completa', href: '#ficha' },
   { label: 'Qué incluye y qué no', href: '#incluye' },
   { label: 'Cómo elegir entre opciones', href: '#comparativa' },
-  { label: 'Dónde se usa', href: '#aplicaciones' },
+  { label: `Dónde se usa ${pz.nombre.toLowerCase()}`, href: '#aplicaciones' },
   { label: 'Errores al comprar', href: '#errores' },
   { label: 'Preguntas frecuentes', href: '#faq' },
 ];
@@ -92,7 +92,7 @@ const pageIndex = [
             paragraphs={pz.resumen}
             points={pz.puntosClave}
             images={pz.images}
-            ctaLabel="Cotizar esta pieza"
+            ctaLabel={`Cotizar ${pz.nombre.toLowerCase()}`}
             ctaHref={waUrl(WA_MESSAGES.categoria(pz.nombre))}
             external
           />
@@ -258,7 +258,7 @@ const pageIndex = [
           />
         ))}
       </div>
-      <p class="volver"><a href={`/trajes/${pz.familia}/`}>← Volver a {familia.nombreWa.toLowerCase()}</a></p>
+      <p class="volver"><a href={`/trajes/${pz.familia}/`}>← {familia.nombreWa}: todas las piezas</a></p>
     </div>
   </section>
 

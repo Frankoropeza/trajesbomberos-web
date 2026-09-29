@@ -12,6 +12,7 @@ import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
 import CTABanner from '@components/CTABanner.astro';
 import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
+import { familiaPorSlug } from '@lib/familias';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { HERO_GENERICO } from '@lib/imagenes';
@@ -43,11 +44,11 @@ const relacionados = await relatedPosts(post, 3);
 const waMsg = WA_MESSAGES.articulo(d.title);
 
 const menuItems = [
-  { label: 'El artículo', href: '#articulo' },
-  { label: 'Relacionados', href: '#relacionados' },
+  { label: 'Guía técnica completa', href: '#articulo' },
+  { label: 'Artículos relacionados de trajes', href: '#relacionados' },
   { label: categoriaNombre(d.categoria), href: categoriaUrl(d.categoria) },
-  ...(d.familia ? [{ label: 'Ver la familia', href: `/trajes/${d.familia}/` }] : []),
-  { label: 'Todos los artículos', href: '/blog/' },
+  ...(d.familia ? [{ label: familiaPorSlug(d.familia)?.nombreWa ?? 'Trajes para bomberos', href: `/trajes/${d.familia}/` }] : []),
+  { label: 'Artículos sobre trajes para bomberos', href: '/blog/' },
 ];
 
 // Datos duros del hero: si el artículo no los declara, se arma
@@ -76,7 +77,7 @@ const article = {
   keywords={d.keywords}
   menuItems={menuItems}
   crumbLabel={d.title}
-  parent={{ name: 'Blog', href: '/blog/' }}
+  parent={{ name: 'Blog técnico de bomberos', href: '/blog/' }}
   eyebrow={d.eyebrow ?? `Blog · ${categoriaNombre(d.categoria)}`}
   h1={d.title}
   h1Accent={d.titleAccent}
@@ -132,10 +133,10 @@ const article = {
             </p>
             <div class="post__cierre-cta">
               <a class="btn btn--wa" href={waUrl(waMsg)} target="_blank" rel="noopener nofollow">
-                Preguntar por WhatsApp
+                Preguntar por equipo para bomberos en WhatsApp
               </a>
               {d.familia && (
-                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>Ver la familia de traje</a>
+                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>Cotizar {familiaPorSlug(d.familia)?.nombreWa.toLowerCase() ?? 'trajes para bomberos'}</a>
               )}
             </div>
           </div>
@@ -176,7 +177,7 @@ const article = {
             />
           ))}
         </div>
-        <p class="volver"><a href="/blog/">← Volver al blog</a></p>
+        <p class="volver"><a href="/blog/">← Blog técnico de trajes para bomberos</a></p>
       </div>
     </section>
   )}

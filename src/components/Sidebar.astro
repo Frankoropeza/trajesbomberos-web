@@ -26,11 +26,11 @@ const articulos = await getPostsByFamilia(activeSlug, 3);
 
 const RECURSOS = [
   { label: 'Anatomía del traje', href: '/#anatomia' },
-  { label: 'Cómo especificar', href: '/#especificar' },
-  { label: 'Errores de compra', href: '/#errores' },
-  { label: 'Marcas de referencia', href: '/#marcas' },
-  { label: 'Normas aplicables', href: '/#normas' },
-  { label: 'Vida útil y servicio', href: '/#vida-util' },
+  { label: 'Cómo especificar un traje de bombero', href: '/#especificar' },
+  { label: 'Errores al comprar un traje de bombero', href: '/#errores' },
+  { label: 'Marcas de trajes de bombero', href: '/#marcas' },
+  { label: 'Normas para trajes de bombero', href: '/#normas' },
+  { label: 'Vida útil del traje de bombero', href: '/#vida-util' },
 ];
 ---
 <aside class="sidebar" aria-label="Navegación de la sección">
@@ -46,7 +46,7 @@ const RECURSOS = [
           >{c.nombre}</a>
         </li>
       ))}
-      <li><a class="sb-all" href="/trajes/">Ver comparativa completa</a></li>
+      <li><a class="sb-all" href="/trajes/">Comparar trajes para bomberos</a></li>
     </ul>
   </nav>
 
@@ -94,7 +94,7 @@ const RECURSOS = [
           </li>
         ))}
       </ul>
-      <a class="sb-blog-all" href="/blog/">Ver todos los artículos →</a>
+      <a class="sb-blog-all" href="/blog/">Artículos sobre trajes para bomberos →</a>
     </nav>
   )}
 
@@ -103,7 +103,7 @@ const RECURSOS = [
     <p class="sb-card__text">Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</p>
     <a class="sb-card__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
-      Cotizar por WhatsApp
+      Cotizar trajes por WhatsApp
     </a>
     <a class="sb-card__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
     <p class="sb-card__horario">{CONTACT.horario}</p>
