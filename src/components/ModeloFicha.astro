@@ -25,7 +25,7 @@ const rows = isTipo ? (tipo.especificacion ?? []) : [
   ...(modelo.tipo ? [{ campo: 'Tipo', valor: tiposDeSeccion(seccion.slug).find((item) => item.slug === modelo.tipo)?.nombre ?? modelo.tipo }] : []),
   ...(modelo.material || modelo.capaExterior ? [{ campo: 'Material / capa exterior', valor: modelo.material ?? modelo.capaExterior! }] : []), ...(modelo.barreras ? [{ campo: 'Barreras', valor: modelo.barreras }] : []),
   ...(modelo.colores ? [{ campo: 'Colores', valor: modelo.colores }] : []), ...(modelo.tallas ? [{ campo: 'Tallas', valor: modelo.tallas }] : []), ...(modelo.peso ? [{ campo: 'Peso', valor: modelo.peso }] : []),
-  ...(modelo.norma ? [{ campo: 'Norma declarada', valor: modelo.norma }] : []), { campo: 'Estatus', valor: modelo.estatusNorma === 'declarado' ? 'Declarado por el fabricante' : modelo.estatusNorma }, ...(modelo.certificacion ? [{ campo: 'Certificación', valor: modelo.certificacion }] : [])
+  ...(modelo.norma ? [{ campo: 'Norma declarada', valor: modelo.norma }] : []), { campo: 'Estatus', valor: ({ 'certificado-ul': 'Certificado por laboratorio UL', declarado: 'Declarado por el fabricante', equivalente: 'Equivalente declarado, no certificado', materiales: 'Materiales conformes a la norma', niosh: 'Certificación NIOSH (uso industrial)', 'sin-norma': 'Sin norma publicada', 'no-aplica': 'No aplica' } as Record<string, string>)[modelo.estatusNorma] ?? modelo.estatusNorma }, ...(modelo.certificacion ? [{ campo: 'Certificación', valor: modelo.certificacion }] : [])
 ];
 const image = isTipo ? tipo.imagen : modelo.imagen;
 const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
