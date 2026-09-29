@@ -6,6 +6,7 @@
 // de «:»). Sin fecha: blog atemporal. NO emite schema (regla B3).
 // Variante "wide": destacado, imagen + panel a dos columnas.
 import { categoriaNombre } from '@lib/blog';
+import { anclaCorta } from '@lib/blog-enlaces';
 
 interface Props {
   href: string;
@@ -35,7 +36,7 @@ const {
   index = 0,
   ancla,
 } = Astro.props;
-const ctaAncla = ancla ?? title.split(':')[0]?.trim() ?? title;
+const ctaAncla = anclaCorta({ data: { ancla, title } });
 const ctaCompleto = `Guía: ${ctaAncla}`;
 ---
 

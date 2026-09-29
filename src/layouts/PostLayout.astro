@@ -21,6 +21,7 @@ import {
   categoriaUrl,
   categoriaNombre,
   relatedPosts,
+  getPosts,
   readingTime,
   wordCount,
 } from '@lib/blog';
@@ -37,7 +38,26 @@ const url = new URL(path, SITE.url).href;
 const lectura = readingTime(post.body);
 const palabras = wordCount(post.body);
 const cat = blogCategoria(d.categoria);
-const relacionados = await relatedPosts(post, 3);
+// Enlazado interno: el sidebar («Más guías de {categoría}») y el
+// módulo final («Artículos relacionados», 4 fichas) no repiten
+// guías. `relacionadosSidebar` conserva el relleno de 3 que ya
+// recibía el sidebar; `enSidebar` replica su regla (misma
+// categoría primero, luego ese relleno, máximo 4) y el módulo
+// final toma las 4 siguientes del ranking de `relatedPosts`.
+// DECISIÓN DE FRANK (2026-09-29): el módulo final son 4 fichas en
+// una fila de 4 (como TileGrid del index). No volver a 3 por fila.
+const ranking = await relatedPosts(post, Number.POSITIVE_INFINITY);
+const relacionadosSidebar = ranking.slice(0, 3);
+const mismaCategoria = (await getPosts()).filter(
+  (p) => p.id !== post.id && p.data.categoria === d.categoria,
+);
+const enSidebar = new Set(
+  [...new Set([...mismaCategoria, ...relacionadosSidebar].map((p) => p.id))].slice(0, 4),
+);
+const relacionados = [
+  ...ranking.filter((p) => !enSidebar.has(p.id)),
+  ...ranking.filter((p) => enSidebar.has(p.id)),
+].slice(0, 4); // una fila de 4 que no repite lo del sidebar
 const waMsg = WA_MESSAGES.articulo(d.title);
 const familiaNombre = PRODUCT_CATEGORIES.find((familia) => familia.slug === d.familia)?.nombre;
 
@@ -143,6 +163,8 @@ const article = {
         headings={headings}
         currentId={post.id}
         currentCategoria={d.categoria}
+        post={post}
+        relatedPosts={relacionadosSidebar}
         waMessage={waMsg}
       />
     </div>
@@ -301,8 +323,10 @@ const article = {
   .post__author-name { color: var(--color-dark); font-weight: 800; }
   .post__author a { display: inline-block; margin-top: 0.35rem; color: var(--color-primary); font-weight: 800; text-decoration: none; }
   .related-grid { display: grid; grid-template-columns: 1fr; gap: var(--gap-grid); }
-  @media (min-width: 600px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 960px) { .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  /* Relacionados: 4 fichas en fila de 4 (decisión de Frank 2026-09-29),
+     mismos cortes que TileGrid del index. El listado del blog sigue en 3. */
+  @media (min-width: 560px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) { .related-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }

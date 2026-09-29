@@ -1,26 +1,32 @@
 ---
 // BlogSidebar: columna de apoyo del blog, sin scroll propio.
-//  · indice / categoria → Guías esenciales (con miniatura; prioriza
-//    los artículos que NO están en la página actual) + Familias de
-//    traje + tarjeta de cotización. Fluye con la página.
-//  · articulo → índice numerado con scrollspy y barra de progreso
-//    + cotización compacta. Sticky.
-// Las categorías viven en las tabs de BlogListado, no aquí.
-import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
+//  · indice / categoria → Buscar, Guías esenciales, Temas, comprador,
+//    cotización, norma, equipo y familias. Fluye con la página.
+//  · articulo → cotización, más guías, equipo, norma e índice al final.
+//    Solo el índice sticky en escritorio; se oculta en pantallas bajas.
+import { CONTACT, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
-import { getPosts, postUrl, categoriaNombre } from '@lib/blog';
+import { categoriasConConteo, categoriaNombre, getPosts, postUrl, type Post } from '@lib/blog';
+import {
+  anclaCorta,
+  equipoCatalogo,
+  equipoDeArticulo,
+  guiasPorComprador,
+  guiasPorNorma,
+} from '@lib/blog-enlaces';
 
 interface Heading {
   depth: number;
   slug: string;
   text: string;
 }
-type Variant = 'articulo' | 'indice' | 'categoria';
 interface Props {
-  variant?: Variant;
+  variant?: 'articulo' | 'indice' | 'categoria';
   headings?: Heading[];
   currentId?: string;
   currentCategoria?: string;
+  post?: Post;
+  relatedPosts?: Post[];
   visiblePostIds?: string[];
   waMessage?: string;
 }
@@ -28,36 +34,232 @@ const {
   variant = 'indice',
   headings = [],
   currentId,
+  currentCategoria,
+  post,
+  relatedPosts = [],
   visiblePostIds = [],
   waMessage = WA_MESSAGES.cotizar,
 } = Astro.props;
 const esArticulo = variant === 'articulo';
-const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
 const todos = await getPosts();
+const categorias = await categoriasConConteo();
+const categoriaActual = currentCategoria ?? Astro.url.pathname.match(/\/categoria\/([^/]+)/)?.[1];
 const excluidos = new Set([...visiblePostIds, ...(currentId ? [currentId] : [])]);
-const destacado = todos.find((post) => post.data.destacado);
-const guias = esArticulo
+const destacado = todos.find((item) => item.data.destacado);
+const esenciales = esArticulo
   ? []
   : [
       ...(destacado && !excluidos.has(destacado.id) ? [destacado] : []),
-      ...todos.filter((post) => post.id !== destacado?.id && !excluidos.has(post.id)),
+      ...todos.filter((item) => item.id !== destacado?.id && !excluidos.has(item.id)),
     ].slice(0, 4);
-const quoteTitle = esArticulo
-  ? '¿Cotizas equipo para tu corporación o brigada?'
-  : '¿Cotizas equipo para tu corporación o brigada?';
+const mismas = post
+  ? todos.filter((item) => item.id !== post.id && item.data.categoria === post.data.categoria)
+  : [];
+const masGuias = [...mismas, ...relatedPosts.filter((item) => item.id !== currentId)]
+  .filter((item, index, list) => list.findIndex((other) => other.id === item.id) === index)
+  .slice(0, 4);
+const normas = guiasPorNorma(todos).filter(({ post: item }) => item.id !== currentId);
+const compradores = guiasPorComprador(todos).map(({ segmento, posts }) => ({
+  segmento,
+  posts: posts.filter((item) => item.id !== currentId),
+}));
+const equipo = post ? equipoDeArticulo(post) : [];
+const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
 ---
 
-<aside
-  class:list={['sidebar', esArticulo ? 'sidebar--sticky' : 'sidebar--flow']}
-  aria-label="Navegación del blog"
->
+<aside class:list={['sidebar', esArticulo && 'sidebar--article']} aria-label="Navegación del blog">
+  <!-- Buscar en el blog. -->
+  {!esArticulo && (
+    <nav class="sb-block" aria-label="Buscar en el blog">
+      <p class="sb-title">Buscar en el blog</p>
+      <label for="blog-search">Busca una guía técnica</label>
+      <input id="blog-search" type="search" placeholder="Casco, NFPA 1970, licitación…" />
+      <p data-search-status aria-live="polite"></p>
+      <ul data-search-results hidden>
+        {todos.map((item) => (
+          <li
+            data-search-item
+            data-search={`${item.data.title} ${item.data.resumen} ${item.data.keywords.join(' ')}`}
+          >
+            <a href={postUrl(item)}>
+              {item.data.title}
+              <small>{categoriaNombre(item.data.categoria)}</small>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <!-- Guías esenciales o más guías de la categoría. -->
+  {(esArticulo ? masGuias : esenciales).length > 0 && (
+    <nav class="sb-block" aria-label={esArticulo ? 'Más guías del tema' : 'Guías esenciales'}>
+      <p class="sb-title">
+        {esArticulo ? `Más guías de ${categoriaNombre(post?.data.categoria ?? '')}` : 'Guías esenciales'}
+      </p>
+      <ul class="sb-posts">
+        {(esArticulo ? masGuias : esenciales).map((item) => (
+          <li>
+            <a href={postUrl(item)}>
+              <img src={item.data.imagen} alt="" width="72" height="54" loading="lazy" decoding="async" />
+              <span>
+                <small>{categoriaNombre(item.data.categoria)}</small>
+                {item.data.title}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <!-- Temas del blog. -->
+  {!esArticulo && (
+    <nav class="sb-block" aria-label="Temas del blog">
+      <p class="sb-title">Temas del blog</p>
+      <ul class="sb-rows">
+        {categorias.map((categoria) => (
+          <li>
+            <a
+              href={`/blog/categoria/${categoria.slug}/`}
+              aria-current={categoria.slug === categoriaActual ? 'page' : undefined}
+            >
+              <span>
+                <strong>{categoria.nombre}</strong>
+                <small>{categoria.desc}</small>
+              </span>
+              <b>{categoria.total}</b>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <!-- Guías por tipo de comprador. -->
+  {!esArticulo && (
+    <nav class="sb-block" aria-label="Guías por tipo de comprador">
+      <p class="sb-title">Guías por tipo de comprador</p>
+      {compradores.map(
+        ({ segmento, posts }) =>
+          posts.length > 0 && (
+            <section class="sb-buyer">
+              <p>{segmento.titulo}</p>
+              <ul class="sb-links">
+                {posts.map((item) => (
+                  <li>
+                    <a href={postUrl(item)}>
+                      {anclaCorta(item)} <span aria-hidden="true">→</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ),
+      )}
+    </nav>
+  )}
+
+  <!-- Tarjeta de cotización. -->
+  <div class="sb-quote">
+    <p>¿Cotizas equipo para tu corporación o brigada?</p>
+    <small>Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</small>
+    {!esArticulo && (
+      <ul>
+        <li>Ficha técnica por partida</li>
+        <li>Expediente para licitación</li>
+        <li>Envío a todo México</li>
+      </ul>
+    )}
+    <a class="sb-wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">
+      Cotizar trajes por WhatsApp
+    </a>
+    <a class="sb-tel" href={`tel:${CONTACT.telefonoHref}`}>
+      {CONTACT.telefono}
+    </a>
+    <small>{CONTACT.horario}</small>
+  </div>
+
+  <!-- Guías por norma y material. -->
+  <nav class="sb-block" aria-label="Guías por norma y material">
+    <p class="sb-title">Guías por norma y material</p>
+    <ul class="sb-rows">
+      {normas.slice(0, esArticulo ? 3 : undefined).map((guia) => (
+        <li>
+          <a href={postUrl(guia.post)}>
+            <span>
+              <strong>{guia.etiqueta}</strong>
+              <small>{guia.desc}</small>
+            </span>
+            <b aria-hidden="true">→</b>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <!-- Equipo de esta guía. -->
+  {esArticulo && equipo.length > 0 && (
+    <nav class="sb-block" aria-label="Equipo de esta guía">
+      <p class="sb-title">Equipo de esta guía</p>
+      <ul class="sb-links">
+        {equipo.map((item) => (
+          <li>
+            <a href={item.href}>
+              {item.nombre} <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <!-- Equipo para bomberos. -->
+  {!esArticulo && (
+    <nav class="sb-block" aria-label="Equipo para bomberos">
+      <p class="sb-title">Equipo para bomberos</p>
+      <ul class="sb-links">
+        {equipoCatalogo().map((item) => (
+          <li>
+            <a href={item.href}>
+              {item.nombre} <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="sb-more" href="/marcas/">
+        Marcas de equipo para bomberos →
+      </a>
+    </nav>
+  )}
+
+  <!-- Familias de traje. -->
+  {!esArticulo && (
+    <nav class="sb-block" aria-label="Familias de traje">
+      <p class="sb-title">Familias de traje</p>
+      <ul class="sb-links">
+        {PRODUCT_CATEGORIES.map((item) => (
+          <li>
+            <a href={`/trajes/${item.slug}/`}>
+              {item.nombre} <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="sb-more" href="/trajes/">
+        Comparar trajes para bomberos →
+      </a>
+    </nav>
+  )}
+
+  <!-- Índice del artículo: último bloque y único sticky. -->
   {toc.length > 0 && (
-    <nav class="sb-block sb-block--toc" aria-label="Índice del artículo">
-      <div class="sb-progress" aria-hidden="true">
+    <nav class="sb-block sb-toc" aria-label="Índice del artículo">
+      <div class="sb-progress">
         <span data-reading-progress></span>
       </div>
       <p class="sb-title">En este artículo</p>
-      <ol class="sb-anchors" id="blog-toc">
+      <ol id="blog-toc">
         {toc.map((heading, index) => (
           <li>
             <a href={`#${heading.slug}`} data-toc={heading.slug}>
@@ -69,60 +271,6 @@ const quoteTitle = esArticulo
       </ol>
     </nav>
   )}
-  {guias.length > 0 && (
-    <nav class="sb-block" aria-label="Guías esenciales">
-      <p class="sb-title">Guías esenciales</p>
-      <ul class="sb-posts">
-        {guias.map((post) => (
-          <li>
-            <a href={postUrl(post)}>
-              <img src={post.data.imagen} alt="" width="72" height="54" loading="lazy" decoding="async" />
-              <span>
-                <span class="sb-posts__cat">{categoriaNombre(post.data.categoria)}</span>
-                <span class="sb-posts__title">{post.data.title}</span>
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  )}
-  {!esArticulo && (
-    <nav class="sb-block" aria-label="Familias de traje">
-      <p class="sb-title">Familias de traje</p>
-      <ul class="sb-familias">
-        {PRODUCT_CATEGORIES.map((category) => (
-          <li>
-            <a href={`/trajes/${category.slug}/`}>
-              <span>{category.nombre}</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-      <a class="sb-more" href="/trajes/">
-        Comparar trajes para bomberos →
-      </a>
-    </nav>
-  )}
-  <div class:list={['sb-quote', { 'sb-quote--compact': esArticulo }]}>
-    <p class="sb-quote__title">{quoteTitle}</p>
-    <p class="sb-quote__text">Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</p>
-    {!esArticulo && (
-      <ul class="sb-quote__list">
-        <li>Ficha técnica por partida</li>
-        <li>Expediente para licitación</li>
-        <li>Envío a todo México</li>
-      </ul>
-    )}
-    <a class="sb-quote__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">
-      Cotizar trajes por WhatsApp
-    </a>
-    <a class="sb-quote__tel" href={`tel:${CONTACT.telefonoHref}`}>
-      {CONTACT.telefono}
-    </a>
-    <p class="sb-quote__horario">{CONTACT.horario}</p>
-  </div>
 </aside>
 
 <style>
@@ -131,32 +279,6 @@ const quoteTitle = esArticulo
     gap: 1.35rem;
     align-self: start;
     min-width: 0;
-  }
-  /* Artículo (escritorio): la columna se estira a la altura del
-     artículo y solo el ÍNDICE va sticky; la cotización queda arriba.
-     Así un índice largo (15+ secciones) nunca obliga a scroll propio
-     ni esconde la parte baja del sidebar. Flex y no grid: en grid el
-     bloque de contención del sticky sería su propia celda. */
-  @media (min-width: 1025px) {
-    .sidebar--sticky {
-      display: flex;
-      flex-direction: column;
-      align-self: stretch;
-    }
-    .sidebar--sticky .sb-quote { order: -1; }
-    .sidebar--sticky .sb-block--toc {
-      position: sticky;
-      top: calc(var(--header-height) + 1.5rem);
-    }
-  }
-  /* Pantalla baja: el índice deja de ser sticky en lugar de recortarse. */
-  @media (min-width: 1025px) and (max-height: 760px) {
-    .sidebar--sticky .sb-block--toc { position: static; }
-  }
-  .sb-block {
-    padding: 0;
-    border: 0;
-    background: transparent;
   }
   .sb-title {
     margin: 0 0 0.75rem;
@@ -168,31 +290,81 @@ const quoteTitle = esArticulo
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
   }
-  .sb-posts,
-  .sb-familias,
-  .sb-anchors {
+  .sidebar ul,
+  .sidebar ol {
     display: grid;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  .sb-posts li + li,
-  .sb-familias li + li {
+  .sidebar li + li {
     border-top: var(--border);
+  }
+  /* El atributo hidden debe ganarle a los display de las listas. */
+  /* Descripción de cada tema en una sola línea: el bloque no crece. */
+  .sb-rows small {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .sidebar [hidden] {
+    display: none !important;
+  }
+  .sidebar label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--color-gray);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+  }
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 44px;
+    padding: 0.55rem 0.7rem;
+    border: var(--border);
+    border-radius: var(--radius);
+    font: inherit;
+  }
+  input:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  [data-search-status] {
+    min-height: 1.25rem;
+    margin: 0.5rem 0 0;
+    color: var(--color-gray);
+    font-size: var(--fs-xs);
+  }
+  [data-search-results] a {
+    display: grid;
+    gap: 0.15rem;
+    min-height: 44px;
+    padding: 0.55rem 0;
+  }
+  .sidebar a {
+    color: var(--color-dark);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sidebar a:hover,
+  .sb-more:hover {
+    color: var(--color-primary);
+  }
+  .sidebar small {
+    color: var(--color-gray);
+    font-size: var(--fs-xs);
+    font-weight: 500;
+    line-height: 1.35;
   }
   .sb-posts a {
     display: grid;
     grid-template-columns: 72px minmax(0, 1fr);
     gap: 0.7rem;
+    min-height: 67px;
     padding: 0.65rem 0;
-    color: var(--color-dark);
-    text-decoration: none;
-  }
-  .sb-posts li:first-child a {
-    padding-top: 0;
-  }
-  .sb-posts li:last-child a {
-    padding-bottom: 0;
   }
   .sb-posts img {
     width: 72px;
@@ -204,41 +376,46 @@ const quoteTitle = esArticulo
     display: grid;
     align-content: center;
     gap: 0.16rem;
-    min-width: 0;
   }
-  .sb-posts__cat {
+  .sb-posts small {
     color: var(--color-primary);
     font-size: 0.62rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
   }
-  .sb-posts__title {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    font-size: 0.85rem;
-    font-weight: 700;
-    line-height: 1.25;
-  }
-  .sb-posts a:hover .sb-posts__title {
-    color: var(--color-primary);
-  }
-  .sb-familias a {
+  .sb-rows a,
+  .sb-links a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 44px;
-    gap: 0.5rem;
-    color: var(--color-dark);
-    font-size: var(--fs-sm);
-    font-weight: 700;
-    text-decoration: none;
+    gap: 0.65rem;
   }
-  .sb-familias a:hover,
-  .sb-more:hover {
+  .sb-rows a > span {
+    display: grid;
+    gap: 0.12rem;
+    min-width: 0;
+  }
+  .sb-rows b,
+  .sb-links span {
     color: var(--color-primary);
+  }
+  .sb-rows a[aria-current='page'] {
+    border-left: 3px solid var(--color-primary);
+    padding-left: 0.55rem;
+    color: var(--color-primary);
+  }
+  .sb-buyer + .sb-buyer {
+    margin-top: 0.85rem;
+  }
+  .sb-buyer > p {
+    margin: 0;
+    color: var(--color-gray-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .sb-more {
     display: block;
@@ -246,47 +423,6 @@ const quoteTitle = esArticulo
     color: var(--color-primary);
     font-size: var(--fs-sm);
     font-weight: 800;
-    text-decoration: none;
-  }
-  .sb-progress {
-    height: 3px;
-    margin-bottom: 0.75rem;
-    overflow: hidden;
-    background: var(--color-gray-light);
-  }
-  .sb-progress span {
-    display: block;
-    width: 0;
-    height: 100%;
-    background: var(--color-primary);
-  }
-  .sb-anchors {
-    counter-reset: toc;
-  }
-  .sb-anchors a {
-    display: grid;
-    grid-template-columns: 1.7rem minmax(0, 1fr);
-    gap: 0.35rem;
-    min-height: 34px;
-    padding: 0.32rem 0.25rem 0.32rem 0.6rem;
-    border-left: 2px solid var(--color-gray-light);
-    color: var(--color-gray);
-    font-size: var(--fs-sm);
-    font-weight: 600;
-    line-height: 1.35;
-    text-decoration: none;
-  }
-  .sb-anchors a > span {
-    color: var(--color-gray-soft);
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: var(--tracking-wide);
-  }
-  .sb-anchors a:hover,
-  .sb-anchors a.is-reading {
-    border-left-color: var(--color-primary);
-    background: var(--color-primary-light);
-    color: var(--color-primary);
   }
   .sb-quote {
     position: relative;
@@ -302,35 +438,33 @@ const quoteTitle = esArticulo
     background: var(--color-primary);
     content: '';
   }
-  .sb-quote__title {
+  .sb-quote > p {
     margin: 0.35rem 0 0.45rem;
     color: var(--color-white);
     font-size: 1.05rem;
     font-weight: 800;
     line-height: 1.16;
   }
-  .sb-quote__text {
-    margin: 0 0 0.85rem;
+  .sb-quote > small,
+  .sb-quote li {
+    display: block;
     color: #b9bec5;
     font-size: var(--fs-sm);
-    line-height: 1.45;
+    line-height: 1.5;
   }
-  .sb-quote__list {
-    display: grid;
+  .sb-quote li + li {
+    border-top: 0;
+  }
+  .sb-quote ul {
     gap: 0.38rem;
-    margin: 0 0 1rem;
-    padding: 0;
-    list-style: none;
-    color: #d7dbe0;
-    font-size: var(--fs-xs);
+    margin: 0.85rem 0;
   }
-  .sb-quote__list li::before {
+  .sb-quote li::before {
     margin-right: 0.45rem;
     color: var(--color-accent);
     content: '✓';
-    font-weight: 800;
   }
-  .sb-quote__wa {
+  .sb-wa {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,39 +472,64 @@ const quoteTitle = esArticulo
     padding: 0.65rem;
     border-radius: var(--radius);
     background: var(--color-wa);
-    color: var(--color-white);
-    font-size: var(--fs-sm);
-    font-weight: 800;
+    color: var(--color-white) !important;
     text-align: center;
-    text-decoration: none;
   }
-  .sb-quote__wa:hover {
-    background: var(--color-wa-dark);
-  }
-  .sb-quote__tel {
+  .sb-tel {
     display: block;
     margin-top: 0.75rem;
-    color: var(--color-accent);
-    font-size: 0.95rem;
-    font-weight: 800;
-    text-align: center;
-    text-decoration: none;
-  }
-  .sb-quote__horario {
-    margin: 0.2rem 0 0;
-    color: #b9bec5;
-    font-size: var(--fs-xs);
+    color: var(--color-accent) !important;
     text-align: center;
   }
-  .sb-quote--compact {
-    padding: 1.1rem;
+  .sb-progress {
+    height: 3px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    background: var(--color-gray-light);
+  }
+  .sb-progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: var(--color-primary);
+  }
+  .sb-toc a {
+    display: grid;
+    grid-template-columns: 1.7rem minmax(0, 1fr);
+    gap: 0.35rem;
+    min-height: 34px;
+    padding: 0.32rem 0.25rem 0.32rem 0.6rem;
+    border-left: 2px solid var(--color-gray-light);
+    color: var(--color-gray);
+    line-height: 1.35;
+  }
+  .sb-toc a > span {
+    color: var(--color-gray-soft);
+    font-size: 0.68rem;
+  }
+  .sb-toc a:hover,
+  .sb-toc a.is-reading {
+    border-left-color: var(--color-primary);
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  @media (min-width: 1025px) {
+    .sidebar--article {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+    }
+    .sidebar--article .sb-toc {
+      position: sticky;
+      top: calc(var(--header-height) + 1.5rem);
+    }
   }
   @media (max-width: 1024px) {
     .sidebar {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .sidebar--sticky {
-      position: static;
+    .sidebar--article .sb-toc {
+      display: none;
     }
     .sb-quote {
       grid-column: 1 / -1;
@@ -384,9 +543,43 @@ const quoteTitle = esArticulo
 </style>
 
 <script>
+  const normalize = (value: string) =>
+    value
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  const input = document.querySelector<HTMLInputElement>('#blog-search');
+  const results = document.querySelector<HTMLUListElement>('[data-search-results]');
+  const status = document.querySelector<HTMLElement>('[data-search-status]');
+  const items = [...document.querySelectorAll<HTMLLIElement>('[data-search-item]')];
+  const clear = () => {
+    if (input) input.value = '';
+    if (results) results.hidden = true;
+    if (status) status.textContent = '';
+    items.forEach((item) => {
+      item.hidden = false;
+    });
+  };
+  input?.addEventListener('input', () => {
+    const query = normalize(input.value.trim());
+    if (query.length < 2) return clear();
+    const matches = items.filter((item) => normalize(item.dataset.search ?? '').includes(query));
+    // Máximo 6 visibles, contados sobre las coincidencias (no sobre la lista completa).
+    const visibles = new Set(matches.slice(0, 6));
+    items.forEach((item) => {
+      item.hidden = !visibles.has(item);
+    });
+    if (results) results.hidden = false;
+    if (status)
+      status.textContent = matches.length
+        ? `${Math.min(matches.length, 6)} resultado${matches.length === 1 ? '' : 's'}`
+        : 'Sin resultados: prueba con “traje estructural”';
+  });
+  input?.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') clear();
+  });
   const toc = document.getElementById('blog-toc');
   const article = document.getElementById('articulo');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (toc) {
     const links = new Map<string, HTMLAnchorElement>();
     toc.querySelectorAll<HTMLAnchorElement>('a[data-toc]').forEach((link) => {
@@ -395,29 +588,31 @@ const quoteTitle = esArticulo
     const targets = [...links.keys()]
       .map((id) => document.getElementById(id))
       .filter((node): node is HTMLElement => Boolean(node));
-    let active = '';
-    const mark = (id: string) => {
-      if (id !== active) {
-        active = id;
-        links.forEach((link, key) => link.classList.toggle('is-reading', key === id));
+    // Scrollspy: la sección activa es el último H2 que ya cruzó el 30 %
+    // superior de la pantalla. Por posición y no por IntersectionObserver
+    // para que un salto largo (clic en el índice, tecla Fin) no deje
+    // marcada una sección vieja.
+    let spyQueued = false;
+    const spy = () => {
+      spyQueued = false;
+      const limite = window.innerHeight * 0.3;
+      const actual = targets.filter((target) => target.getBoundingClientRect().top <= limite).pop();
+      const id = actual?.id ?? targets[0]?.id;
+      links.forEach((link, key) => link.classList.toggle('is-reading', key === id));
+    };
+    const requestSpy = () => {
+      if (!spyQueued) {
+        spyQueued = true;
+        requestAnimationFrame(spy);
       }
     };
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
-        if (visible?.target.id) mark(visible.target.id);
-      },
-      { rootMargin: '-15% 0px -70% 0px', threshold: 0 },
-    );
-    targets.forEach((target) => observer.observe(target));
+    window.addEventListener('scroll', requestSpy, { passive: true });
+    window.addEventListener('resize', requestSpy, { passive: true });
+    requestSpy();
   }
-  if (article && !reduceMotion) {
+  if (article && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const bars = document.querySelectorAll<HTMLElement>('[data-reading-progress]');
-    let queued = false;
     const update = () => {
-      queued = false;
       const rect = article.getBoundingClientRect();
       const range = Math.max(1, article.offsetHeight - window.innerHeight * 0.45);
       const value = Math.min(100, Math.max(0, ((-rect.top + window.innerHeight * 0.2) / range) * 100));
@@ -425,14 +620,8 @@ const quoteTitle = esArticulo
         bar.style.width = `${value}%`;
       });
     };
-    const request = () => {
-      if (!queued) {
-        queued = true;
-        requestAnimationFrame(update);
-      }
-    };
-    window.addEventListener('scroll', request, { passive: true });
-    window.addEventListener('resize', request, { passive: true });
-    request();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
   }
 </script>
