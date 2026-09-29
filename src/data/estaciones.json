@@ -14042,7 +14042,6 @@
    "lng": -104.8995,
    "precision": "aproximada"
   },
-  "telefono": "(327) 277-2280",
   "sitioWeb": "https://compostela.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -14082,7 +14081,6 @@
    "lng": -105.2905,
    "precision": "exacta"
   },
-  "telefono": "(323) 285-0079",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -14124,8 +14122,6 @@
    "lng": -104.843,
    "precision": "aproximada"
   },
-  "telefono": "(311) 214-1850",
-  "sitioWeb": "https://www.asa.gob.mx/es/ASA/TEPIC",
   "servicios": [
    "incendios-estructurales",
    "hazmat",
@@ -14228,10 +14224,6 @@
    "lng": -104.8952,
    "precision": "aproximada"
   },
-  "telefono": "(311) 213-1607",
-  "telefonosAdicionales": [
-   "(311) 213-1809"
-  ],
   "sitioWeb": "https://www.tepic.gob.mx",
   "servicios": [
    "incendios-estructurales",
