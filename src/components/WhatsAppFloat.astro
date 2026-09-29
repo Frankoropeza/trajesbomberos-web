@@ -44,8 +44,9 @@ import { waUrl } from '@lib/wa';
       bottom: max(1rem, env(safe-area-inset-bottom));
       right: max(1rem, env(safe-area-inset-right));
     }
-    :global(html.nav-open) .wa-float {
-      display: none;
-    }
+  }
+  /* Con el cajón del menú abierto (cualquier ancho < 1280) el FAB taparía su barra de acciones. */
+  :global(html.nav-open) .wa-float {
+    display: none;
   }
 </style>

@@ -15501,16 +15501,16 @@
  },
  {
   "id": "oax-05",
-  "nombre": "HCBO — Estación Matías Romero Avendano",
+  "nombre": "HCBO — Estación Matías Romero Avendaño",
   "slug": "hcbo-estacion-matias-romero-avendano",
   "estado": "oaxaca",
   "estadoNombre": "Oaxaca",
   "ciudad": "Matías Romero",
-  "municipio": "Matías Romero Avendano",
+  "municipio": "Matías Romero Avendaño",
   "tipo": "Estatal",
   "corporacion": "HCBO",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Matías Romero Avendano",
+  "numeroEstacion": "Estación Matías Romero Avendaño",
   "direccion": "Callejon las Cabañas, Col. Guadalupe, C.P. 70300",
   "coordenadas": {
    "lat": 16.86015093,
@@ -15711,7 +15711,6 @@
    "lng": -95.2016,
    "precision": "aproximada"
   },
-  "telefono": "(922) 714-6000",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -15753,7 +15752,6 @@
    "lng": -96.12933967,
    "precision": "exacta"
   },
-  "telefono": "(287) 875-1475",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -15792,7 +15790,6 @@
    "lng": -97.07309511,
    "precision": "exacta"
   },
-  "telefono": "(954) 582-0222",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -15901,13 +15898,12 @@
   "tipo": "Municipal",
   "corporacion": "Protección Civil y Bomberos del Municipio de Santa María Huatulco",
   "rolEstacion": "unica",
-  "direccion": "Blvd. Chahue 108, Col. R, C.P. 70987",
+  "direccion": "Blvd. Chahué 108, C.P. 70987",
   "coordenadas": {
    "lat": 15.76470059,
    "lng": -96.13465638,
    "precision": "exacta"
   },
-  "telefono": "(958) 587-0847",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
