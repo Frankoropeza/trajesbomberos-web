@@ -176,7 +176,14 @@ const categorias = defineCollection({
     comparativaModelos: z.object({ ...tabla, columnas: z.array(z.string()).min(3), wa }).strict(),
     faqs: z.array(z.object({ q: z.string(), a: z.string().min(120) }).strict()).min(6),
     contacto: z.object({ asunto: z.string(), boton: z.string() }).strict(),
-    cotizar: z.object({ titulo: z.string(), boton: z.string(), mensaje: z.string().min(20) }).strict(),
+    cotizar: z.object({
+      titulo: z.string(),
+      boton: z.string(),
+      mensaje: z.string().min(20),
+      datos: z.array(z.string()).length(4).optional(),  // lista «Para cotizar más rápido, envíanos»
+      menu: z.string().max(28).optional(),  // botón de la franja de secciones (con palabra clave)
+    }).strict(),
+    ogImagen: z.string().regex(/^\/images\/og\/[a-z0-9-]+\.jpg$/).optional(),  // 1200×630 JPEG
     blogCategoria: z.string().optional(),    // guías: categoría del blog; si falta, guiasParaRuta(ruta)
     // Cards propias de #tipos cuando la L2 no agrupa categorías del catálogo (p. ej. marcas).
     tarjetas: z.array(z.object({

@@ -16,7 +16,8 @@ type Estado = NonNullable<TileProps['estado']>;
 export function estadoModelo(m: Modelo): Estado {
   switch (m.estatusNorma) {
     case 'certificado-ul': return { label: m.certificacion ? `Certificado UL · ${m.certificacion}` : 'Certificado UL · número al cotizar', tone: 'good' };
-    case 'declarado': return { label: m.norma ? `Conforme a ${m.norma}, según el fabricante` : 'Norma declarada por el fabricante', tone: 'neutral' };
+    // Normas que el fabricante ya redacta como frase («Acorde a…», «Clasificación…») no llevan «Conforme a».
+    case 'declarado': return { label: m.norma ? `${/^(acorde|valores|clasificaci)/i.test(m.norma) ? m.norma : `Conforme a ${m.norma}`}, según el fabricante` : 'Norma declarada por el fabricante', tone: 'neutral' };
     case 'equivalente': return { label: m.norma ? `Equivalente a ${m.norma} · no certificado` : 'Equivalente · no certificado', tone: 'warn' };
     case 'materiales': return { label: m.norma ? `Materiales conforme a ${m.norma}` : 'Materiales con norma declarada', tone: 'neutral' };
     case 'niosh': return { label: 'Certificación NIOSH · uso industrial', tone: 'warn' };
@@ -102,8 +103,8 @@ const SUBS_FAMILIA: Record<string, [string, string][]> = {
   hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes para químicos', 'guantes-quimicos']],
 };
 const RETRATO = new Set([
-  '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif',
-  '/images/productos/traje-brigadista-industrial-bombero.avif',
+  '/images/productos/traje-estructural-bombero-conjunto-frente.avif',
+  '/images/productos/traje-brigadista-industrial-conjunto.avif',
   '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif',
 ]);
 const RUTAS_PIEZA = new Set(PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`));

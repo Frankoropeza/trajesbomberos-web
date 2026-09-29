@@ -24,6 +24,7 @@ interface Props extends SchemaInput {
   parent?: { name: string; href: string } | { name: string; href: string }[];  // niveles superiores
   keywords?: readonly string[];                   // tripleta propia de la página
   menuItems?: { label: string; href: string }[];  // franja de secciones de ESTA página
+  menuCta?: { label: string; mensaje: string };     // botón WhatsApp de esa franja (opcional)
   heroImage?: { src: string; alt: string };  // en desuso: el hero es de color sólido en todo el sitio (2026-09-29)
   ogImage?: string;
   footerCta?: { title: string; text?: string; secondary?: { label: string; href: string } };
@@ -47,6 +48,7 @@ const {
   parent,
   keywords,
   menuItems,
+  menuCta,
   product,
   collection,
   estaciones,
@@ -92,7 +94,7 @@ const crumbs = [
     solid
   ><slot name="hero-badge" slot="badge" /></Hero>
 
-  <SectionMenu items={menuItems} />
+  <SectionMenu items={menuItems} cta={menuCta} />
 
   <slot />
 </BaseLayout>

@@ -18,7 +18,7 @@ import DirectorioSidebar from '@components/directorio/DirectorioSidebar.astro';
 import DataTable from '@components/directorio/DataTable.astro';
 import { tilesEquipo } from '@lib/directorio-equipo';
 import { waUrl } from '@lib/wa';
-import { SITE, CONTACT, MARCA, WA_MESSAGES } from '@config/site';
+import { SITE, CONTACT, MARCA } from '@config/site';
 import {
   BASE_DIRECTORIO, ENTIDADES, TIPO_DESC, SERVICIO_LABEL, MUNICIPIOS_PAGINA,
   municipiosDe, rutaEstado, rutaMunicipio, hrefMunicipio, telHref, telTexto, pct, nf, enEstado, deEstado, conArticulo, unidad, cuenta,
@@ -104,6 +104,7 @@ const ctaText = `Con ${MARCA.experiencia} de experiencia, ${MARCA.nombre} cotiza
   footerCta={{ title: ctaTitle, text: ctaText, secondary: { label: `Bomberos ${enEstado(e)}`, href: rutaEstado(e.slug) } }}
   pageType="directorio"
   path={path}
+  ogImage={`/images/og/dir-${e.slug}--${m.slug}.jpg`}
   title={title}
   description={description}
   keywords={keywords}

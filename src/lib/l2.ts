@@ -63,9 +63,9 @@ export function filaModelo(m: Modelo, columnas: readonly ColumnaModelo[]): (stri
     switch (columna) {
       case 'modelo': return { texto: `${m.marca} ${m.nombre}`, href: urlModelo(m) };
       case 'marca': return m.marca;
-      case 'codigo': return m.codigo ?? pendiente;
+      case 'codigo': return m.codigo ?? (m.codigoNota ? 'Según configuración' : pendiente);
       case 'familia': return familia?.nombreWa ?? pendiente;
-      case 'seccion': return seccion?.nombre ?? pendiente;
+      case 'seccion': return seccion?.nombre ?? familia?.nombreWa ?? pendiente; // trajes: la familia hace de sección
       case 'tipo': return tipo?.nombreCard ?? '—';
       case 'material': return m.material ?? m.capaExterior ?? pendiente;
       case 'capa': return m.capaExterior ?? m.material ?? pendiente;

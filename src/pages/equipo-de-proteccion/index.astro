@@ -6,7 +6,7 @@ import { getEntry, render } from 'astro:content';
 import CategoriaL2 from '@components/l2/CategoriaL2.astro';
 import { MODELOS, urlModelo } from '@lib/catalogo/modelos';
 import { SITE } from '@config/site';
-import { SECCIONES_EPP, spotlightDeModulo, filaModelo, guiasL2 } from '@lib/l2';
+import { SECCIONES_EPP, spotlightDeModulo, filaModelo, guiasL2, modelosPorId } from '@lib/l2';
 import { tilesCategorias } from '@lib/catalogo/categorias';
 
 const entrada = await getEntry('categorias', 'equipo-de-proteccion');
@@ -15,12 +15,14 @@ const { Content } = await render(entrada);
 const d = entrada.data;
 const tiles = tilesCategorias(SECCIONES_EPP.map((slug) => `/${slug}/`), 'EP-');
 const spotlights = d.modulos.map((modulo, index) => spotlightDeModulo(modulo, index));
-const modelos = SECCIONES_EPP.filter((seccion) => seccion !== 'kits').flatMap((seccion) => MODELOS.filter((modelo) => modelo.seccion === seccion));
+const todos = SECCIONES_EPP.filter((seccion) => seccion !== 'kits').flatMap((seccion) => MODELOS.filter((modelo) => modelo.seccion === seccion));
 const columnas = ['modelo', 'seccion', 'tipo', 'material', 'norma', 'estatus'] as const;
-const filasModelos = modelos.map((modelo) => filaModelo(modelo, columnas));
+// Grid: modelosDestacados del .md si existen; tabla e ItemList: todos los modelos.
+const modelos = d.modelosDestacados ? modelosPorId(d.modelosDestacados) : todos;
+const filasModelos = todos.map((modelo) => filaModelo(modelo, columnas));
 const directoryItems = [
   ...tiles.map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
-  ...modelos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
+  ...todos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
 ];
 const guias = await guiasL2(d);
 ---

@@ -19,8 +19,8 @@ const RUTAS = new Set([
 const validas = (subs: TileSub[]) => subs.filter((s) => RUTAS.has(s.href));
 
 const RETRATO = new Set([
-  '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif',
-  '/images/productos/traje-brigadista-industrial-bombero.avif',
+  '/images/productos/traje-estructural-bombero-conjunto-frente.avif',
+  '/images/productos/traje-brigadista-industrial-conjunto.avif',
   '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif',
 ]);
 

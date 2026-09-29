@@ -1,0 +1,62 @@
+---
+// EnlaceDirectorio: bloque de cierre en guías de compra institucional
+// (licitación, voluntarios, renovación). Lleva al directorio por estado y a
+// las ciudades con más estaciones. Solo en los posts de ENLACE_DIRECTORIO_POSTS.
+import BotonesConteo from './BotonesConteo.astro';
+import { BASE_DIRECTORIO, ENTIDADES, MUNICIPIOS_PAGINA, RESUMEN_ESTADOS, rutaMunicipio } from '@lib/directorio';
+
+const total = RESUMEN_ESTADOS.reduce((a, r) => a + r.total, 0);
+const ciudades = [...MUNICIPIOS_PAGINA]
+  .sort((a, b) => b.estaciones.length - a.estaciones.length || a.comun.localeCompare(b.comun, 'es'))
+  .slice(0, 8)
+  .map((m) => ({
+    label: m.comun,
+    href: rutaMunicipio(m.estado, m.slug),
+    n: m.estaciones.length,
+    title: `Estaciones de bomberos en ${m.comun}, ${ENTIDADES.find((e) => e.slug === m.estado)?.nombre ?? ''}`,
+  }));
+---
+<aside class="ed" aria-labelledby="ed-t">
+  <p class="ed__eb">Directorio de estaciones de bomberos</p>
+  <p class="ed__t" id="ed-t">Corporaciones de bomberos por estado y ciudad</p>
+  <p class="ed__p">
+    Antes de armar la requisición conviene saber quién opera cada estación: municipio, gobierno
+    estatal, patronato, industria o aeropuerto. Reunimos {total} estaciones en los 32 estados, con
+    la corporación responsable y su contacto oficial.
+  </p>
+  <BotonesConteo items={ciudades} label="Ciudades con más estaciones de bomberos" cols={4} />
+  <a class="btn btn--ghost ed__btn" href={BASE_DIRECTORIO}>Directorio de estaciones de bomberos por estado</a>
+</aside>
+
+<style>
+  .ed {
+    margin: 2.5rem 0 0;
+    padding: 1.5rem 1.5rem 1.6rem;
+    background: var(--color-light);
+    border-left: 4px solid var(--color-primary);
+    border-radius: 0 var(--radius, 6px) var(--radius, 6px) 0;
+  }
+  .ed__eb {
+    margin: 0 0 0.35rem;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  .ed__t {
+    margin: 0 0 0.6rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-dark);
+  }
+  .ed__p { margin: 0 0 1.1rem; color: var(--color-gray); line-height: 1.6; }
+  .ed__btn { margin-top: 1.1rem; }
+  @media (max-width: 767px) {
+    .ed { padding: 1.25rem 1rem 1.35rem; }
+    .ed__btn { display: flex; width: 100%; justify-content: center; text-align: center; }
+  }
+</style>
