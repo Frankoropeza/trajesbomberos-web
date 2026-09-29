@@ -42,6 +42,7 @@ import CTABanner from '@components/CTABanner.astro';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
 import { piezasDeFamilia } from '@lib/piezas';
+import { familiaPorSlug } from '@lib/familias';
 import { getSeccion } from '@lib/catalogo/secciones';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { MODELOS } from '@lib/catalogo/data';
@@ -65,7 +66,7 @@ const hero = {
 };
 
 const hechos = [
-  { label: 'Especialidad', value: '6 familias de traje' },
+  { label: 'Especialidad', value: '7 familias de traje' },
   { label: 'Cobertura', value: 'Los 32 estados' },
   { label: 'Comprobante', value: 'Factura CFDI 4.0' },
   { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
@@ -108,14 +109,31 @@ const DIMENSIONES: Record<string, { width: number; height: number }> = {
   '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif': { width: 640, height: 1000 },
   '/images/productos/traje-brigadista-industrial-bombero.avif': { width: 640, height: 1000 },
   '/images/productos/traje-forestal-camisola-pantalon-bombero.avif': { width: 1200, height: 800 },
+  '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif': { width: 1000, height: 1250 },
+  '/images/escenas/bomberos-ataque-incendio-manguera.avif': { width: 1376, height: 768 },
 };
 const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
 
 type CardData = ComponentProps<typeof CatalogCard>;
 
-const trajes: CardData[] = PRODUCT_CATEGORIES.map((c, i) => {
+// Ocho cards: seis familias de PRODUCT_CATEGORIES + Hazmat (familia
+// real en FAMILIAS, página /trajes/hazmat/) + card de conjunto completo.
+// "Incluye" y "norma" salen de FAMILIAS (SSoT): no se duplica ni se inventa.
+const NORMA_POR_FAMILIA: Record<string, string> = {
+  estructural: 'NFPA 1970 (ed. 2025), caps. 5 a 9',
+  brigadista: 'NOM-002-STPS-2010, cláusula 5.9',
+  forestal: 'NFPA 1950 (ed. 2025) · EN ISO 15384',
+  aproximacion: 'NFPA 1970 (proximidad)',
+  entrada: 'Ficha del fabricante (sin norma NFPA de producto)',
+  extricacion: 'NFPA 1950 (ed. 2025)',
+  hazmat: 'NFPA 1990 (ed. 2022)',
+};
+const piezasIncluye = (slug: string) => (familiaPorSlug(slug)?.productos ?? []).map((p) => p.nombre);
+
+const trajesFamilias: CardData[] = PRODUCT_CATEGORIES.map((c, i) => {
   const piezas = piezasDeFamilia(c.slug).length;
   const modelos = MODELOS.filter((m) => m.familia === c.slug).length;
+  const incluye = piezasIncluye(c.slug);
   return {
     codigo: `TR-${String(i + 1).padStart(2, '0')}`,
     titulo: TITULO_CARD[c.slug] ?? c.nombre,
@@ -124,13 +142,62 @@ const trajes: CardData[] = PRODUCT_CATEGORIES.map((c, i) => {
     image: { src: c.image, alt: c.imageAlt, ...(DIMENSIONES[c.image] ?? { width: 1000, height: 1250 }) },
     chips: c.chips.slice(0, 3),
     badge: c.badge,
-    meta: [plural(piezas, 'pieza cotizable', 'piezas cotizables'), modelos > 0 ? plural(modelos, 'modelo', 'modelos') : '']
+    norma: NORMA_POR_FAMILIA[c.slug],
+    incluye: incluye.slice(0, 4),
+    incluyeMas: Math.max(incluye.length - 4, 0),
+    meta: [plural(incluye.length || piezas, 'pieza cotizable', 'piezas cotizables'), modelos > 0 ? plural(modelos, 'modelo', 'modelos') : '']
       .filter(Boolean)
       .join(' · '),
     href: `/trajes/${c.slug}/`,
     ctaLabel: 'Conocer la categoría' as const,
   };
 });
+
+const hazmat = familiaPorSlug('hazmat');
+const hazmatIncluye = piezasIncluye('hazmat');
+const hazmatModelos = MODELOS.filter((m) => m.familia === 'hazmat').length;
+const cardHazmat: CardData[] = hazmat
+  ? [
+      {
+        codigo: `TR-${String(trajesFamilias.length + 1).padStart(2, '0')}`,
+        titulo: 'Trajes Hazmat (protección química)',
+        operacion: 'Fuga o derrame químico, materiales peligrosos',
+        desc: 'Encapsulado nivel A, químico nivel B y C, overol desechable, botas y guantes. La barrera se elige por sustancia, concentración y tarea, no por el nombre del nivel.',
+        image: { src: hazmat.images[0].src, alt: hazmat.images[0].alt, ...(DIMENSIONES[hazmat.images[0].src] ?? { width: 1000, height: 1250 }) },
+        chips: ['Nivel A', 'Nivel B', 'Nivel C'],
+        norma: NORMA_POR_FAMILIA.hazmat,
+        incluye: hazmatIncluye.slice(0, 4),
+        incluyeMas: Math.max(hazmatIncluye.length - 4, 0),
+        meta: [plural(hazmatIncluye.length, 'pieza cotizable', 'piezas cotizables'), hazmatModelos > 0 ? plural(hazmatModelos, 'modelo', 'modelos') : '']
+          .filter(Boolean)
+          .join(' · '),
+        href: '/trajes/hazmat/',
+        ctaLabel: 'Conocer la categoría' as const,
+      },
+    ]
+  : [];
+
+const cardConjunto: CardData = {
+  codigo: `TR-${String(trajesFamilias.length + cardHazmat.length + 1).padStart(2, '0')}`,
+  titulo: 'Conjunto completo y compra por pieza',
+  operacion: 'Equipar a un elemento, una brigada o una estación',
+  desc: 'Traje más casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima, con ficha técnica por partida.',
+  image: {
+    src: '/images/escenas/bomberos-ataque-incendio-manguera.avif',
+    alt: 'Bomberos con equipo completo: traje estructural, casco y equipo de respiración autónoma',
+    ...DIMENSIONES['/images/escenas/bomberos-ataque-incendio-manguera.avif'],
+  },
+  chips: ['Conjunto', 'Por pieza', 'Licitación'],
+  badge: 'Cotización armada',
+  norma: 'Composite y norma declarados por partida',
+  incluye: ['Traje de la familia que corresponda', 'Casco, monja y guantes', 'Botas y ERA compatibles', 'Tirantes y arnés de escape'],
+  incluyeMas: 0,
+  meta: 'CFDI 4.0 · envío a los 32 estados',
+  href: '#complementos',
+  ctaLabel: 'Armar mi conjunto' as const,
+};
+
+const trajes: CardData[] = [...trajesFamilias, ...cardHazmat, cardConjunto];
 
 interface ComplementoDef {
   slug: string | null; // sección del catálogo (null = sin hub planeado)
@@ -341,18 +408,18 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     <div class="container">
       <SectionHeading
         eyebrow="Trajes para bomberos"
-        title="Seis familias de trajes para bomberos, una por tipo de riesgo"
+        title="Siete familias de trajes para bomberos, una por tipo de riesgo"
         duo={[
-          'Los <a href="/trajes/">trajes para bomberos</a> no son un producto único: cada familia se construye para un riesgo distinto. Trajes estructurales para incendio en edificaciones, de brigadista para fuego incipiente en industria, forestales para línea de fuego, de aproximación y de entrada para calor radiante y flama, y de extricación para rescate. No son intercambiables.',
+          'Los <a href="/trajes/">trajes para bomberos</a> no son un producto único: cada familia se construye para un riesgo distinto. Trajes estructurales para incendio en edificaciones, de brigadista para fuego incipiente en industria, forestales para línea de fuego, de aproximación y de entrada para calor radiante y flama, de extricación para rescate y Hazmat para materiales peligrosos. No son intercambiables.',
           'Elige la categoría que corresponde a tu operación y consulta su ficha técnica: composite por capa, norma de referencia y compra por pieza o conjunto completo. Cotizamos trajes de bomberos con factura CFDI 4.0, sin compra mínima y con envío a los 32 estados.',
         ]}
       />
-      <div class="catalog-grid">
+      <div class="catalog-grid catalog-grid--4">
         {trajes.map((c) => <CatalogCard {...c} />)}
       </div>
 
       <p class="catalogo-cta">
-        <a href="/trajes/">Ver las seis familias explicadas a fondo →</a>
+        <a href="/trajes/">Ver todas las familias de trajes explicadas a fondo →</a>
       </p>
 
     </div>
@@ -642,8 +709,11 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     color: var(--color-dark);
     max-width: 80ch;
   }
+  /* Trajes: 8 cards, 4 por fila en escritorio (2 × 4); 2 en tablet; 1 en móvil */
+  .catalog-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.1rem; }
+  @media (max-width: 1099px) { .catalog-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-grid, 1.5rem); } }
   @media (max-width: 1023px) { .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 639px) {
-    .catalog-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+    .catalog-grid, .catalog-grid--4 { grid-template-columns: 1fr; gap: 0.75rem; }
   }
 </style>
