@@ -105,11 +105,11 @@ export const DUO_P_I: Record<string, Record<string, Duo>> = {
       'Confirma BPS1005, medidas, asas de polipropileno de 1 ½ pulgadas y dos bolsas. Casco y botas alteran volumen; la condición repelente al agua no equivale a impermeabilidad ni a descontaminación. Conserva accesorios romak-bps1005 caracteristicas en la orden para cotejar la entrega con la configuración solicitada.',
     ],
     faq: [
-      'Romak Fire Maleta porta-equipo BPS1005 se consulta por medidas y recepción. Se acepta cargando el kit real, cerrando sin forzar costuras o zipper y verificando que pueda levantarse hacia vehículo o almacén. Revisa accesorios romak-bps1005 faq con la corporación antes de integrar la partida a la operación institucional.',
+      'Para recepción, la maleta se revisa por medidas y carga real. Se acepta cerrando sin forzar costuras o zipper y verificando que pueda levantarse hacia vehículo o almacén. Revisa accesorios romak-bps1005 faq con la corporación antes de integrar la partida a la operación institucional.',
       'Comparte composición del kit, cantidad y espacio de traslado. La cotización puede incluir material, asas, bolsas y carga prevista, sin asumir que una maleta descrita para «kit completo» resuelve cualquier talla o accesorio. Conserva accesorios romak-bps1005 faq en la orden para cotejar la entrega con la configuración solicitada.',
     ],
     ficha: [
-      'Romak Fire Maleta porta-equipo BPS1005 especifica poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Su estatus normativo es no aplica. Revisa accesorios romak-bps1005 ficha con la corporación antes de integrar la partida a la operación institucional.',
+      'La ficha especifica poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Su estatus normativo es no aplica. Revisa accesorios romak-bps1005 ficha con la corporación antes de integrar la partida a la operación institucional.',
       'Solicita código y características por escrito para cotejar costuras, cierres y capacidad en recepción. El material no debe trasladarse como propiedad del EPP guardado ni describirse como barrera de descontaminación. Conserva accesorios romak-bps1005 ficha en la orden para cotejar la entrega con la configuración solicitada.',
     ],
   },
@@ -343,11 +343,11 @@ export const DUO_P_I: Record<string, Record<string, Duo>> = {
       'Confirma HAC1007, acero, ambas dimensiones, peso y funda o soporte. Presentar medida contra compartimiento permite probar extracción con guantes y evitar que extremos vibren o golpeen equipos durante traslado. Conserva herramientas romak-hac1007 caracteristicas en la orden para cotejar la entrega con la configuración solicitada.',
     ],
     faq: [
-      'Romak Fire Barra Halligan se consulta por código, longitud y configuración. HAC1007 declara 91 cm y 90 cm entre extremos; imagen ilustrativa no reemplaza confirmar acero inoxidable, pico, extremos y soporte. Revisa herramientas romak-hac1007 faq con la corporación antes de integrar la partida a la operación institucional.',
+      'Para entrada forzada, la consulta confirma código, longitud y configuración. HAC1007 declara 91 cm y 90 cm entre extremos; imagen ilustrativa no reemplaza confirmar acero inoxidable, pico, extremos y soporte. Revisa herramientas romak-hac1007 faq con la corporación antes de integrar la partida a la operación institucional.',
       'Comparte compartimiento, cantidad, uso y funda de puntas. Se cotiza barra identificada y documenta recepción que revise rectitud, corrosión, peso y liberación de retención. Conserva herramientas romak-hac1007 faq en la orden para cotejar la entrega con la configuración solicitada.',
     ],
     ficha: [
-      'Romak Fire Barra Halligan HAC1007 especifica acero inoxidable, extremos y pico, 91 cm de largo, 90 cm de extremo a extremo y 6 lb o 3.36 kg. Su estatus normativo es no aplica. Revisa herramientas romak-hac1007 ficha con la corporación antes de integrar la partida a la operación institucional.',
+      'La ficha especifica acero inoxidable, extremos y pico, 91 cm de largo, 90 cm de extremo a extremo y 6 lb o 3.36 kg. Su estatus normativo es no aplica. Revisa herramientas romak-hac1007 ficha con la corporación antes de integrar la partida a la operación institucional.',
       'Pide código, material, dimensiones, peso y resguardo. No aplica norma publicada; los campos dan criterio de recepción para soporte, geometría y superficie sin atribuir certificación inexistente. Conserva herramientas romak-hac1007 ficha en la orden para cotejar la entrega con la configuración solicitada.',
     ],
   },
