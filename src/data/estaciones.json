@@ -5100,7 +5100,7 @@
   "municipio": "Monclova",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Monclova",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Blvd. Francisco I. Madero esq. Blvd. Harold R. Pape s/n, Zona Centro, C.P. 25750, Monclova",
   "coordenadas": {
    "lat": 26.9097,
@@ -5316,7 +5316,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil y Bomberos de Nava",
   "rolEstacion": "unica",
-  "direccion": "Nava, Coahuila (Dirección de PC y Bomberos municipal)",
   "coordenadas": {
    "lat": 28.4214,
    "lng": -100.7711,
@@ -5637,7 +5636,7 @@
   "municipio": "Saltillo",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Saltillo",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Blvd. Isidro López Zertuche s/n, Col. Río Bravo, C.P. 25225, Saltillo",
   "coordenadas": {
    "lat": 25.4232,
@@ -5726,7 +5725,11 @@
   "fuentes": [
    {
     "nombre": "web.nuevarosita.gob.mx",
-    "url": "https://web.nuevarosita.gob.mx/colaboran-bomberos-de-nueva-rosita-en-incendio-de-sabinas/"
+    "retirada": "https://web.nuevarosita.gob.mx/colaboran-bomberos-de-nueva-rosita-en-incendio-de-sabinas/"
+   },
+   {
+    "nombre": "vanguardia.com.mx — Teléfonos de apoyo para Sabinas y Nueva Rosita",
+    "url": "https://vanguardia.com.mx/coahuila/2901507-telefonos-de-apoyo-para-sabinas-y-nueva-rosita-coahuila-DYVG2901507"
    }
   ],
   "verificadoEl": "2026-06",
@@ -5996,7 +5999,7 @@
   "municipio": "Torreón",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Torreón",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Prol. Degollado y Av. Delicias, Col. Luis Echeverría Álvarez, Torreón",
   "coordenadas": {
    "lat": 25.5394,
@@ -6290,16 +6293,14 @@
   "tipo": "Municipal",
   "corporacion": "Unidad Municipal de Protección Civil y Bomberos de Cuauhtémoc",
   "rolEstacion": "unica",
-  "direccion": "Guadalupe Victoria S/N, Col. El Toreo, C.P. 28500, Cuauhtémoc",
   "coordenadas": {
    "lat": 19.33,
    "lng": -103.6,
    "precision": "aproximada"
   },
-  "telefono": "(312) 328-0557",
+  "telefono": "(312) 328-1170",
   "telefonosAdicionales": [
-   "(312) 328-1170",
-   "(312) 328-0802"
+   "(312) 309-0971"
   ],
   "servicios": [
    "incendios-estructurales",
@@ -6313,6 +6314,10 @@
    {
     "nombre": "proteccioncivil.gob.mx",
     "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "cuauhtemoc-col.gob.mx — Números de emergencia",
+    "url": "https://www.cuauhtemoc-col.gob.mx/portal/?numeros-emergencia="
    }
   ],
   "verificadoEl": "2026-06",
@@ -6336,7 +6341,7 @@
    "lng": -103.7197,
    "precision": "exacta"
   },
-  "telefono": "(313) 324-9008",
+  "telefono": "(313) 324-9200",
   "telefonosAdicionales": [
    "(313) 324-9032"
   ],
@@ -6349,6 +6354,10 @@
    {
     "nombre": "proteccioncivil.gob.mx",
     "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "ixtlahuacan.col.gob.mx — Protección Civil",
+    "url": "http://www.ixtlahuacan.col.gob.mx/curr%C3%ADculo%20proteccion%20civil.html"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6515,7 +6524,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección Municipal de Protección Civil y Bomberos de Manzanillo",
   "rolEstacion": "unica",
-  "direccion": "Calle Cedros No. 2, Barrio Uno, Col. Valle de las Garzas, C.P. 28200, Manzanillo",
   "coordenadas": {
    "lat": 19.0925026,
    "lng": -104.2973371,
@@ -6535,6 +6543,10 @@
    {
     "nombre": "proteccioncivil.gob.mx",
     "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "origeninformativo.com — Protección Civil Manzanillo",
+    "url": "https://www.origeninformativo.com/post/protecci%C3%B3n-civil-manzanillo-refuerza-medidas-preventivas-en-zonas-de-playa-por-hurac%C3%A1n-flossie"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6797,38 +6809,6 @@
   "municipioSlug": "cuencame"
  },
  {
-  "id": "dgo-17",
-  "nombre": "Brigadas Forestales — Secretaría de Recursos Naturales y Medio Ambiente de Durango",
-  "slug": "brigadas-forestales-secretaria-de-recursos-naturales-y-medio-ambiente-de-durango",
-  "estado": "durango",
-  "estadoNombre": "Durango",
-  "ciudad": "Durango",
-  "municipio": "Durango",
-  "tipo": "Estatal",
-  "corporacion": "Brigadas Forestales — Secretaría de Recursos Naturales y Medio Ambiente de Durango",
-  "rolEstacion": "unica",
-  "coordenadas": {
-   "lat": 24.0277,
-   "lng": -104.6532,
-   "precision": "aproximada"
-  },
-  "sitioWeb": "https://medioambiente.durango.gob.mx/",
-  "servicios": [
-   "incendios-estructurales",
-   "incendios-forestales",
-   "capacitacion"
-  ],
-  "fuentes": [
-   {
-    "nombre": "durango.gob.mx — brigadas de sanidad forestal",
-    "url": "https://www.durango.gob.mx/boletines/gobierno-del-estado-y-conafor-trabajan-en-equipo-para-atender-plaga-de-insecto-descortezador-y-proteger-bosques-de-durango"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "durango"
- },
- {
   "id": "dgo-16",
   "nombre": "Brigadas de Combate de Incendios Forestales — CONAFOR Durango",
   "slug": "brigadas-de-combate-de-incendios-forestales-conafor-durango",
@@ -6836,7 +6816,7 @@
   "estadoNombre": "Durango",
   "ciudad": "Durango",
   "municipio": "Durango",
-  "tipo": "Estatal",
+  "tipo": "Federal",
   "corporacion": "Brigadas de Combate de Incendios Forestales — CONAFOR Durango",
   "rolEstacion": "unica",
   "coordenadas": {
@@ -6886,7 +6866,6 @@
    "(618) 814-4555"
   ],
   "email": "direccionproteccioncivil@gmail.com",
-  "sitioWeb": "https://pc.durangocapital.gob.mx/",
   "servicios": [
    "incendios-estructurales",
    "proteccion-civil"
@@ -6894,7 +6873,7 @@
   "fuentes": [
    {
     "nombre": "pc.durangocapital.gob.mx",
-    "url": "https://pc.durangocapital.gob.mx/bomberos-2/"
+    "retirada": "https://pc.durangocapital.gob.mx/bomberos-2/"
    },
    {
     "nombre": "proteccioncivil.durango.gob.mx",
