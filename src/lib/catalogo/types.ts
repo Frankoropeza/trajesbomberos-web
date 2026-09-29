@@ -98,4 +98,6 @@ export interface Modelo {
   resumen?: string[];
   /** Nota de compra específica del modelo, cuando sustituye el enlace genérico del catálogo. */
   notaCompra?: string;
+  /** Enlaces contextuales a piezas de la familia (solo modelos de traje). */
+  relacionados?: { label: string; href: string }[];
 }
