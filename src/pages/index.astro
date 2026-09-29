@@ -102,7 +102,7 @@ const trajesFamilias: TileProps[] = PRODUCT_CATEGORIES.map((c, i) => ({
   titulo: TITULO_CARD[c.slug] ?? c.nombre,
   desc: c.desc,
   href: `/trajes/${c.slug}/`,
-  cta: FAMILIA_TILE[c.slug]?.cta ?? `Catálogo de ${c.nombre.toLowerCase()}`,
+  cta: FAMILIA_TILE[c.slug]?.cta ?? `${c.nombre} para bombero`,
   img: c.image,
   alt: c.imageAlt,
   pos: esRetrato(c.image) ? POS_RETRATO : undefined,
@@ -205,7 +205,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   <section class="section" id="categorias">
     <div class="container">
       <SectionHeading
-        eyebrow="Catálogo por categoría"
+        eyebrow="Categorías de equipo para bomberos"
         title="Equipo para bomberos: trajes, cascos, botas, guantes y más"
         duo={[
           'Reunimos en un solo proveedor el equipo para bomberos completo: <a href="/trajes/">trajes para bomberos</a> por familia de riesgo, <a href="/cascos/">cascos</a>, <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma</a>, <a href="/botas/">botas</a>, <a href="/guantes/">guantes</a>, monjas, herramientas, mangueras y equipo de rescate.',
@@ -297,7 +297,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           />
         ))}
       </div>
-      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+      <p class="blog-cta"><a href="/blog/">Artículos técnicos sobre trajes de bomberos →</a></p>
     </div>
   </section>
   <QuoteCTA id="cotizar" />

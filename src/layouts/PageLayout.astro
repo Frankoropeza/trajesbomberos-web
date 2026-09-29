@@ -52,10 +52,10 @@ const {
   ogImage,
 } = Astro.props;
 
-// Migas derivadas de la ruta: Inicio › [padre] › actual
+// Migas derivadas de la ruta: home (keyword) › [padre] › actual
 const parents = parent ? (Array.isArray(parent) ? parent : [parent]) : [];
 const crumbs = [
-  { name: 'Inicio', href: '/' },
+  { name: 'Trajes para bomberos', href: '/' },
   ...parents,
   { name: crumbLabel, href: path },
 ];

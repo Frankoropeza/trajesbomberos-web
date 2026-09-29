@@ -26,13 +26,13 @@ const path = '/trajes/';
 
 // Franja de secciones de ESTA página
 const menuItems = [
-  { label: 'Las seis familias', href: '#familias' },
-  { label: 'Modelos', href: '#modelos' },
-  { label: 'Comparativa', href: '#comparar' },
-  { label: 'Preguntas', href: '#faq' },
-  { label: 'Blog', href: '#blog' },
+  { label: 'Familias de trajes para bomberos', href: '#familias' },
+  { label: 'Modelos de trajes de bombero', href: '#modelos' },
+  { label: 'Comparativa de trajes', href: '#comparar' },
+  { label: 'Preguntas sobre trajes de bombero', href: '#faq' },
+  { label: 'Blog técnico de trajes', href: '#blog' },
   { label: 'Anatomía del traje', href: '/#anatomia' },
-  { label: 'Normas', href: '/#normas' },
+  { label: 'Normas para trajes de bombero', href: '/#normas' },
 ];
 
 // Keywords propias de esta página (regla de las 3 keywords)
@@ -104,7 +104,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   keywords={keywords}
   menuItems={menuItems}
   crumbLabel="Trajes"
-  eyebrow="Catálogo por tipo de riesgo"
+  eyebrow="Trajes por tipo de riesgo"
   h1="Tipos de trajes para bomberos"
   h1Accent="y cuál necesita tu operación"
   lead="Estructural, brigadista, forestal, aproximación, entrada y extricación. Seis familias que no son intercambiables y que responden a seis riesgos distintos."
@@ -150,7 +150,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
             features={f.features}
             brands={f.brands}
             images={f.images}
-            ctaLabel={`Ver ${f.nombreWa.toLowerCase()}`}
+            ctaLabel={`Especificar ${f.nombreWa.toLowerCase()}`}
             ctaHref={`/trajes/${f.slug}/`}
           />
         </div>
@@ -227,7 +227,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
           />
         ))}
       </div>
-      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+      <p class="blog-cta"><a href="/blog/">Artículos técnicos sobre trajes de bomberos →</a></p>
     </div>
   </section>
 

@@ -24,11 +24,11 @@ const posts: Post[] = await getPostsByCategoria(cat.slug);
 const path = categoriaUrl(cat.slug);
 
 const menuItems = [
-  { label: 'Artículos', href: '#articulos' },
+  { label: `Artículos de ${cat.nombre.toLowerCase()}`, href: '#articulos' },
   ...BLOG_CATEGORIES.filter((c) => c.slug !== cat.slug)
     .slice(0, 3)
     .map((c) => ({ label: c.nombre, href: categoriaUrl(c.slug) })),
-  { label: 'Todo el blog', href: '/blog/' },
+  { label: 'Blog técnico de trajes para bomberos', href: '/blog/' },
 ];
 
 // Meta de la categoría: SSoT en site.ts, no generada a mano aquí,
@@ -50,7 +50,7 @@ const directoryItems = posts.map((p) => ({
   keywords={keywords}
   menuItems={menuItems}
   crumbLabel={cat.nombre}
-  parent={{ name: 'Blog', href: '/blog/' }}
+  parent={{ name: 'Blog técnico de bomberos', href: '/blog/' }}
   eyebrow={`Blog · ${cat.nombre}`}
   h1={cat.h1}
   lead={cat.lead}
@@ -94,7 +94,7 @@ const directoryItems = posts.map((p) => ({
             </ul>
           </section>
         )}
-        <p class="volver"><a href="/blog/">← Volver al blog</a></p>
+        <p class="volver"><a href="/blog/">← Blog técnico de trajes para bomberos</a></p>
       </div>
 
       <BlogSidebar variant="categoria" currentCategoria={cat.slug} />

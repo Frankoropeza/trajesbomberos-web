@@ -87,7 +87,7 @@ export const SEGMENTOS: Segmento[] = [
       'Cotización formal para orden de compra',
       'Factura CFDI y ficha técnica por partida',
     ],
-    cta: 'Equipar mi brigada',
+    cta: 'Equipar mi brigada con trajes',
   },
   {
     slug: 'gobierno-licitacion',
@@ -113,7 +113,7 @@ export const SEGMENTOS: Segmento[] = [
       'Asesoría de tallas antes de pedir',
       'Envío a estación o domicilio',
     ],
-    cta: 'Cotizar por pieza',
+    cta: 'Cotizar trajes por pieza',
   },
 ];
 
@@ -207,7 +207,7 @@ export interface BlogCategory {
 export const BLOG_CATEGORIES: BlogCategory[] = [
   {
     slug: 'especificacion',
-    nombre: 'Cómo especificar',
+    nombre: 'Cómo especificar equipo de bombero',
     desc: 'Qué datos debe traer una cotización para que sea comparable con otra.',
     h1: 'Cómo especificar equipo de bombero',
     lead: 'Artículos sobre los datos que hacen comparable una cotización: composite, TPP, THL, tallas y alcance declarado.',
@@ -232,7 +232,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'normas',
-    nombre: 'Normas y certificación',
+    nombre: 'Normas y certificación de trajes',
     desc: 'NFPA 1970, NFPA 1850 y las NOM de la STPS aplicadas al equipo real.',
     h1: 'Normas y certificación',
     lead: 'NFPA 1970, NFPA 1850, NOM-002-STPS-2010 y NOM-017-STPS-2024 explicadas con lo que realmente te van a pedir.',
@@ -248,7 +248,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         'Aquí se explica qué pide cada norma en la práctica, cómo citarla en una requisición y qué revisar en el certificado.',
       ],
       enlaces: [
-        { label: 'Normas aplicables en México', href: '/#normas' },
+        { label: 'Normas para trajes de bombero en México', href: '/#normas' },
         { label: 'Trajes estructurales', href: '/trajes/estructural/' },
         { label: 'Trajes forestales', href: '/trajes/forestal/' },
         { label: 'Extricación y rescate', href: '/trajes/extricacion/' },
@@ -257,7 +257,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'comparativas',
-    nombre: 'Comparativas',
+    nombre: 'Comparativas de trajes de bombero',
     desc: 'Qué familia corresponde a cada operación y por qué no son intercambiables.',
     h1: 'Comparativas entre familias de traje',
     lead: 'Estructural contra brigadista, aproximación contra entrada: las confusiones que cuestan dinero y, a veces, algo peor.',
@@ -283,7 +283,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'mantenimiento',
-    nombre: 'Vida útil y servicio',
+    nombre: 'Vida útil del traje de bombero',
     desc: 'Inspección, lavado, reparación y retiro del equipo en servicio.',
     h1: 'Vida útil y servicio del equipo',
     lead: 'Cómo se inspecciona, se lava, se repara y se retira un traje para que dure lo que tiene que durar y ni un día más.',
@@ -306,7 +306,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'licitacion',
-    nombre: 'Compras y licitación',
+    nombre: 'Licitación de trajes de bombero',
     desc: 'Expediente, pliego y documentación para compra pública y corporativa.',
     h1: 'Compras y licitación',
     lead: 'Cómo se arma un expediente que no te descalifica: ficha técnica, certificado de laboratorio, carta de distribuidor y CFDI.',
@@ -399,7 +399,7 @@ export const MENU: MenuItem[] = [
   { label: 'Equipo de protección', href: '/cascos/', match: ['/cascos/', '/equipo-de-respiracion-autonoma/', '/botas/', '/guantes/', '/capuchas/'], columns: equipo, overview: { label: 'Equipo de protección personal para bomberos', href: '/cascos/' } },
   { label: 'Rescate y herramientas', href: '/rescate/', match: ['/rescate/', '/herramientas/', '/mangueras-y-accesorios/', '/accesorios/', '/kits/'], columns: rescate, overview: { label: 'Equipo de rescate y herramientas para bomberos', href: '/rescate/' } },
   {
-    label: 'Marcas', href: '/marcas/', match: ['/marcas/'], columns: [
+    label: 'Marcas de equipo', href: '/marcas/', match: ['/marcas/'], columns: [
       { title: 'Marcas que surtimos', links: [{ label: 'Romak Fire', href: '/marcas/romak-fire/', desc: chipsMarca('romak-fire') }, { label: 'Sköld', href: '/marcas/skold/', desc: chipsMarca('skold') }] },
       { title: 'Modelos por marca', links: [{ label: 'Modelos de trajes Romak Fire, Sköld y Lakeland', href: '/trajes/#modelos' }, { label: 'Casco Sköld Viking', href: '/cascos/skold-viking/' }, { label: 'ERA Sköld Phantöm', href: '/equipo-de-respiracion-autonoma/skold-phantom/' }, { label: 'Bota Romak Workman Fire', href: '/botas/romak-workman-fire/' }] },
       { title: 'También cotizamos', links: [{ label: 'Bullard · Croydon · Veridian · Majestic · Streamlight · ESS · Lakeland · MSA' }] },

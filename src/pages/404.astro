@@ -21,10 +21,10 @@ import { waUrl } from '@lib/wa';
         {FAMILIAS.map((familia) => <a href={`/trajes/${familia.slug}/`}>{familia.nombreWa}</a>)}
       </div>
       <nav class="not-found__links" aria-label="Secciones principales">
-        <a href="/trajes/">Ver todos los trajes</a>
-        <a href="/blog/">Ir al blog</a>
-        <a href="/contacto/">Contacto</a>
-        <a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
+        <a href="/trajes/">Trajes para bomberos</a>
+        <a href="/blog/">Blog técnico de bomberos</a>
+        <a href="/contacto/">Cotizar trajes para bomberos</a>
+        <a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a>
       </nav>
     </div>
   </section>
