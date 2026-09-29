@@ -6,7 +6,7 @@
  ],
  "municipiosDuo": [
   "León encabeza el índice con 8 estaciones; Celaya y Silao de la Victoria le siguen con 3 cada uno. Así, quien busca bomberos en León puede identificar la central y sus distintas bases, mientras que los tres registros de Celaya muestran una red municipal con estaciones diferenciadas.",
-  "Los otros 5 municipios registrados cuentan con una estación: Dolores Hidalgo Cuna de la Independencia Nacional, Guanajuato, Irapuato, Salamanca y San Miguel de Allende. El índice ordena estas fichas para consultar la cobertura localizada sin presentar el registro como un inventario completo de bomberos en Guanajuato."
+  "Los otros 5 municipios registrados cuentan con una estación: Dolores Hidalgo Cuna de la Independencia Nacional, el municipio de Guanajuato (la capital), Irapuato, Salamanca y San Miguel de Allende. El índice ordena estas fichas para consultar la cobertura localizada sin presentar el registro como un inventario completo de bomberos en Guanajuato."
  ],
  "estacionesDuo": [
   "Cada ficha explica si la estación es municipal, voluntaria, aeroportuaria o industrial, y señala su rol como central, subestación o sede única. Por ejemplo, aparecen el Heroico Cuerpo de Bomberos de León y Protección Civil y Bomberos de Celaya, con sus registros diferenciados cuando corresponde.",
@@ -14,7 +14,7 @@
  ],
  "coberturaDuo": [
   "Las 19 fichas declaran incendios estructurales; 16 incluyen atención prehospitalaria y 15 rescate vehicular. También hay 2 registros con materiales peligrosos y uno con salvamento aeroportuario. Estas cifras describen los servicios reportados en las fichas, no una capacidad general atribuida a todas las estaciones.",
-  "En el directorio de Guanajuato, 12 fichas tienen teléfono, las 19 incluyen dirección y las 19 cuentan con ubicación exacta. Hay 11 registros de confianza alta. Los campos disponibles permiten filtrar una consulta práctica y reconocer dónde la fuente pública respalda una referencia de contacto o localización."
+  "En Guanajuato, 6 fichas tienen teléfono respaldado por una fuente pública, las 19 incluyen dirección y las 19 cuentan con ubicación exacta. Hay 11 registros de confianza alta. Cada ficha enlaza a su fuente para que puedas confirmar el contacto o la localización antes de acudir."
  ],
  "equipoDuo": [
   "Los servicios declarados priorizan incendios estructurales, atención prehospitalaria y rescate vehicular; por ello conviene revisar <a href=\"/trajes/estructural/\">trajes estructurales para bomberos</a> y <a href=\"/trajes/extricacion/\">equipo de extricación</a>. Los registros con materiales peligrosos requieren una evaluación específica de protección química. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Guanajuato.",

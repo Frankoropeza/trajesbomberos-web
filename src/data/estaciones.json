@@ -9629,7 +9629,7 @@
    "lng": -100.93355398,
    "precision": "exacta"
   },
-  "telefono": "(418) 1820-343",
+  "telefono": "(418) 182-0343",
   "servicios": [
    "incendios-estructurales",
    "atencion-prehospitalaria"
@@ -9642,6 +9642,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=1282525"
+   },
+   {
+    "nombre": "H. Cuerpo de Bomberos Dolores Hidalgo — publicación oficial en Facebook",
+    "url": "https://www.facebook.com/BomberosDH/posts/central-de-bomberos-tel%C3%A9fono-%EF%B8%8F-418-182-03-43-n%C3%BAmero-de-emergencias-911/1510716431064655/"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9665,12 +9669,7 @@
    "lng": -101.26538933,
    "precision": "exacta"
   },
-  "telefono": "(473) 734-5969",
-  "telefonosAdicionales": [
-   "(473) 118-9164"
-  ],
   "email": "bomberossimub@gmail.com",
-  "sitioWeb": "https://bomberossimub.org/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -9711,7 +9710,6 @@
    "lng": -101.35576173,
    "precision": "exacta"
   },
-  "telefono": "(462) 660-2233",
   "email": "proteccioncivil@irapuato.gob.mx",
   "sitioWeb": "https://www.irapuato.gob.mx/",
   "servicios": [
@@ -9823,7 +9821,6 @@
    "lng": -101.71750918,
    "precision": "exacta"
   },
-  "telefono": "(477) 7738-124",
   "sitioWeb": "https://bomberosdeleon.org/",
   "servicios": [
    "incendios-estructurales",
@@ -9858,7 +9855,6 @@
    "lng": -101.58510752,
    "precision": "exacta"
   },
-  "telefono": "(477) 7735-313",
   "sitioWeb": "https://bomberosdeleon.org/",
   "servicios": [
    "incendios-estructurales",
@@ -9893,7 +9889,6 @@
    "lng": -101.67953975,
    "precision": "exacta"
   },
-  "telefono": "(477) 7175-916",
   "sitioWeb": "https://bomberosdeleon.org/",
   "servicios": [
    "incendios-estructurales",
@@ -10208,7 +10203,6 @@
    "lng": -101.4296,
    "precision": "exacta"
   },
-  "telefono": "(472) 722-0911",
   "email": "soporte@bomberosdesilao.com",
   "servicios": [
    "incendios-estructurales",
