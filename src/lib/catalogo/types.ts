@@ -42,6 +42,8 @@ export interface Seccion {
   };
   /** Tabla comparativa del hub: la primera columna es el nombre del tipo. */
   comparativa?: { columnas: string[]; filas: string[][] };
+  /** Enlaces a fichas existentes fuera del catálogo (p. ej. capuchas de cada familia de traje). */
+  enlaces?: { label: string; href: string; descripcion: string }[];
   /** Criterios de compra del hub. */
   criterios?: { titulo: string; items: { termino: string; texto: string }[] };
 }
