@@ -7,21 +7,7 @@
 // Un módulo por categoría; `flip` invierte columnas para dar ritmo.
 // Los párrafos admiten <a>/<strong>: texto propio del sitio, nunca
 // entrada de usuario. Regla del sitio: cero animaciones/transiciones.
-export interface SpotImg { src: string; alt: string; caption: string; width: number; height: number; pos?: string }
-export interface SpotPunto { titulo: string; texto: string }
-export interface SpotProps {
-  id: string;
-  numero: string;
-  eyebrow: string;
-  titulo: string;
-  parrafos: string[];
-  puntos: SpotPunto[];
-  cta: { label: string; href: string };
-  wa?: { label: string; href: string };
-  nota?: string;
-  imagenes: [SpotImg, SpotImg, SpotImg];
-  flip?: boolean;
-}
+import type { SpotProps } from '@lib/spotlights/types';
 const { id, numero, eyebrow, titulo, parrafos, puntos, cta, wa, nota, imagenes, flip = false } = Astro.props as SpotProps;
 const [grande, ...chicas] = imagenes;
 ---
