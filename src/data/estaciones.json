@@ -17037,7 +17037,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base 2 (Zona Hotelera)",
-  "direccion": "12, Col. Zona Hotelera, C.P. 77500",
+  "direccion": "Zona Hotelera, C.P. 77500",
   "coordenadas": {
    "lat": 21.10431101,
    "lng": -86.76484103,
@@ -17071,7 +17071,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base 3",
-  "direccion": "Calle Chac Mool, Col. 100, C.P. 77518",
+  "direccion": "Calle Chac Mool, Región 100, C.P. 77518",
   "coordenadas": {
    "lat": 21.15455346,
    "lng": -86.87120494,
@@ -17105,13 +17105,12 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base 4 José Roberto Barboza Montiel",
-  "direccion": "Av. 20 de Noviembre 77, Col. 77, C.P. 77500",
+  "direccion": "Av. 20 de Noviembre, Supermanzana 77, C.P. 77500",
   "coordenadas": {
    "lat": 21.19074571,
    "lng": -86.82612294,
    "precision": "exacta"
   },
-  "telefono": "(998) 8841-202",
   "sitioWeb": "https://cancun.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -17140,7 +17139,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 5",
-  "direccion": "Calle 46, Col. 510, C.P. 77535",
+  "direccion": "Calle 46, Región 510, C.P. 77535",
   "coordenadas": {
    "lat": 21.13592199,
    "lng": -86.85612696,
@@ -17180,7 +17179,6 @@
    "lng": -86.8515,
    "precision": "exacta"
   },
-  "telefono": "(998) 884-1202",
   "email": "capacitacionbomberoscancun@gmail.com",
   "sitioWeb": "https://cancun.gob.mx",
   "servicios": [
@@ -17338,7 +17336,6 @@
    "lng": -88.05222911,
    "precision": "exacta"
   },
-  "telefono": "(983) 834-0927",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -17400,7 +17397,7 @@
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Isla Mujeres",
   "rolEstacion": "unica",
-  "direccion": "Av. Av Gaston Alegre, Col. Urbana, C.P. 77400",
+  "direccion": "Av. Gastón Alegre, Col. Urbana, C.P. 77400",
   "coordenadas": {
    "lat": 21.22567361,
    "lng": -86.85256376,
@@ -17443,7 +17440,7 @@
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Lázaro Cárdenas",
   "rolEstacion": "unica",
-  "direccion": "Otro(especifique), Col. Expo, C.P. 77307",
+  "direccion": "Col. Expo, C.P. 77307",
   "coordenadas": {
    "lat": 21.11355442,
    "lng": -87.49563891,
@@ -17479,7 +17476,7 @@
   "tipo": "Municipal",
   "corporacion": "Bomberos de Othón P. Blanco",
   "rolEstacion": "unica",
-  "direccion": "Carretera Cafetal-mahahual, Col. La Victoria, C.P. 77976",
+  "direccion": "Carretera Cafetal-Mahahual, Col. La Victoria, C.P. 77976",
   "coordenadas": {
    "lat": 18.73442309,
    "lng": -87.71172229,
