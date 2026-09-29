@@ -21,6 +21,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
 import PhotoBand from '@components/PhotoBand.astro';
 import QuickNav from '@components/home/QuickNav.astro';
+import CategoryTiles from '@components/home/CategoryTiles.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import SegmentCards from '@components/SegmentCards.astro';
 import SuitAnatomy from '@components/SuitAnatomy.astro';
@@ -319,6 +320,18 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
   <Hero {...hero} solid />
   <QuickNav />
+
+  <!-- 0 · Índice de categorías del catálogo (4 cards por fila) -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Catálogo por categoría"
+        title="Equipo para bomberos: trajes, cascos, botas, guantes y más"
+        description="Elige la categoría y entra a sus tipos y modelos con ficha técnica. Cotizamos por pieza o conjunto completo, con factura CFDI 4.0 y envío a los 32 estados."
+      />
+      <CategoryTiles />
+    </div>
+  </section>
 
   <!-- 1 · Trajes: grid principal de categorías (TR-01…) -->
   <section class="section section--alt" id="catalogo">
