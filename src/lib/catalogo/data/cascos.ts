@@ -14,9 +14,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "eyebrow": "Catálogo de protección personal",
     "lead": "El casco no es un accesorio del traje: define cobertura, visión, compatibilidad con el ERA y la operación para la que el elemento queda protegido.",
     "intro": [
-      "Un casco de bombero se elige por el escenario de trabajo, no por su silueta. El estructural está pensado para combate en edificación: debe trabajar con la máscara del equipo de respiración autónoma, desviar agua y escombro, y mantener protegidos nuca, orejas y frente. El forestal reduce peso y permite disipar calor en jornadas largas de línea de fuego. El de rescate técnico privilegia un perfil compacto, barbiquejo estable y puntos para lámpara o arnés. La brigada industrial, en cambio, puede partir de un casco industrial únicamente cuando su análisis de riesgo se limita a conatos y nunca contempla ataque interior.",
-      "En esta sección reunimos cascos para bomberos que se cotizan con datos comparables: material de carcasa, suspensión, visor o goggles, barbiquejo, compatibilidad con ERA y declaración de norma del fabricante. No publicamos precios porque la configuración cambia con el color, los accesorios, la protección ocular, la identificación y el número de elementos. La cotización debe dejar por escrito qué incluye cada casco y cuál es el documento de cumplimiento disponible para la partida.",
-      "Bullard y Sköld aparecen aquí porque hay modelos concretos con ficha de proveedor para cotizar. Eso no convierte una foto en una configuración cerrada: la visera, las cintas, el color, el cubrenuca y otros accesorios se confirman antes de ordenar. Si equipas una brigada o un cuerpo de bomberos, pide también revisar la interfaz completa: casco, monja o capucha, máscara de ERA, guantes y cuello del chaquetón deben permitir movimiento sin dejar zonas expuestas."
+      "Cotizamos cascos para tu brigada, cuerpo de bomberos o partida institucional según la maniobra: estructural para ataque en edificaciones, forestal para línea de fuego, rescate técnico o brigada industrial. La decisión inicial separa NFPA 1970, NFPA 1950, NFPA 2500, EN 443:2008 o NOM-002-STPS-2010 según el alcance. Indícanos la operación y surtimos el tipo que corresponde a tu pliego.",
+      "Comparamos carcasa, suspensión, barbiquejo, visor o goggles y la interfaz con tu ERA. El Bullard LTX declara NFPA 1971 ed. 2018 y el Wildland FH911H declara NFPA 1977 ed. 1998; son configuraciones distintas para riesgos distintos. Mándanos por WhatsApp el modelo de máscara, capucha y chaquetón para cotizar una combinación verificable.",
+      "Surtimos Bullard LTX, UST LW, Viking y Wildland FH911H con la configuración que solicites por escrito. El LTX usa termoplástico de alto impacto, mientras el UST LW usa fibra de vidrio con resina ignífuga termoestable; el material orienta la comparación junto con la operación. Pídelo con color, protección ocular, cubrenuca, identificación y cantidad definidos.",
+      "Para recibir la partida, tu requisición debe conservar modelo, norma declarada, accesorios y destino. Al llegar, coteja carcasa, ajuste, barbiquejo y protector ocular contra esa descripción antes de asignar cada casco. Nosotros entregamos los datos técnicos disponibles del modelo; mándanos por WhatsApp tu formato de compra para alinear la cotización con tu inspección."
     ],
     "grupos": [
       {
@@ -38,27 +39,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Cuánto dura un casco de bombero?",
-        "a": "La vida de servicio depende de la marca, la fecha de fabricación, el impacto, la exposición térmica y el programa de inspección. Revisa la instrucción del fabricante y retira un casco que haya sufrido daño, deformación o exposición que comprometa sus componentes."
+        "a": "La duración la define la fecha de fabricación, el impacto y la exposición térmica, no un plazo único. El Bullard LTX declara NFPA 1971 ed. 2018 y su carcasa es de termoplástico de alto impacto; esa información acompaña la inspección del modelo. Pídelo con la documentación disponible y registra el casco desde su recepción."
       },
       {
         "q": "¿Cuál es la diferencia entre casco estructural y forestal?",
-        "a": "El estructural está hecho para ataque en edificaciones y prioriza cobertura con ERA; el forestal reduce peso, usa ala completa y ayuda a manejar jornadas largas al aire libre. No se sustituyen entre sí."
+        "a": "El estructural atiende ataque en edificaciones y el forestal línea de fuego exterior. NFPA 1970 referencia el estructural, mientras NFPA 1950 reúne la referencia forestal; el Wildland FH911H declara NFPA 1977 ed. 1998. Mándanos por WhatsApp la maniobra de tu brigada para cotizar el tipo correspondiente."
       },
       {
         "q": "¿Un casco industrial sirve para incendio?",
-        "a": "Puede ser parte del equipo de una brigada ante conatos si el análisis de riesgo lo permite. Para ataque interior o exposición estructural se necesita casco diseñado para esa operación."
+        "a": "Un casco industrial puede cubrir conatos definidos por tu análisis de riesgo, pero no ataque interior. La sección de brigada industrial usa NOM-002-STPS-2010 como referencia, mientras el casco estructural remite a NFPA 1970. Pídelo con el escenario de tu instalación y la tarea autorizada en la requisición."
       },
       {
         "q": "¿Se puede usar con ERA?",
-        "a": "Los cascos estructurales y algunos de rescate deben revisarse físicamente con la máscara y arnés del ERA que ya usa el equipo. La compatibilidad se confirma por configuración."
+        "a": "Sí, cuando la configuración confirma el espacio con máscara, arnés y capucha de tu ERA. El Viking declara NFPA 1971 / EN 443:2009 y el casco estructural trabaja junto con esa interfaz, no aislado. Mándanos por WhatsApp el modelo de tu ERA para preparar la cotización con esa revisión."
       },
       {
         "q": "¿Los colores indican jerarquía?",
-        "a": "Cada corporación define sus colores e identificación. Confirma esa convención antes de cotizar para que todos los cascos del pedido queden consistentes."
+        "a": "Los colores obedecen la convención de cada corporación y se fijan en la partida. El Bullard UST LW usa fibra de vidrio con resina ignífuga termoestable, pero el color no cambia su operación estructural declarada. Pídelo con color e identificación institucional escritos para surtir todos los cascos consistentes."
       },
       {
         "q": "¿Qué incluye la cotización?",
-        "a": "Incluye el modelo y la configuración solicitada, accesorios declarados y los datos técnicos disponibles. Antes de ordenar, confirma por escrito color, protección ocular, cubrenuca, tallas o ajuste y documentación aplicable."
+        "a": "Nuestra cotización enumera modelo, configuración, accesorios y datos técnicos disponibles para la partida. Puedes pedir Bullard LTX, UST LW, Viking o Wildland FH911H con protección ocular y cubrenuca definidos; la norma queda como declarada por modelo. Mándanos por WhatsApp cantidad, destino y especificación de tu pliego."
       }
     ],
     "hero": {
@@ -66,8 +67,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "alt": "Cascos para bombero de distintos usos operativos"
     },
     "resumenHero": [
-      "Elige primero el escenario de trabajo y luego compara casco, ajuste, protección ocular, cubrenuca y compatibilidad con el resto del equipo.",
-      "Las fichas de modelo conservan la declaración del fabricante. En LORICA, la configuración exacta se confirma por escrito antes de cotizar."
+      "Surtimos cascos estructurales, forestales, de rescate técnico y para brigada industrial a cuerpos de bomberos, brigadas y compradores de gobierno. Tu operación marca la ruta: NFPA 1970 para estructural, NFPA 1950 para forestal, NFPA 2500 para rescate o NOM-002-STPS-2010 en brigada. Cotizamos el tipo y configuración que tu maniobra requiere.",
+      "Cotizamos por modelo, accesorios, cantidad y destino, con datos técnicos disponibles y estatus declarado en cada ficha. Indica Bullard LTX, UST LW, Viking o Wildland FH911H, además de color, visor, cubrenuca e interfaz con ERA. Mándanos por WhatsApp tu pliego y armamos una partida lista para cotejar al recibirla."
     ],
     "etiquetas": {
       "menuTipos": "Tipos de casco",

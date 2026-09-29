@@ -18,13 +18,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "alt": "Guantes para bombero de uso estructural, forestal y de rescate"
     },
     "intro": [
-      "Los guantes de bombero no se eligen solo por el grosor del cuero. En ataque estructural, la mano necesita trabajar con calor, humedad, agarre y el puño del chaquetón como un conjunto. En rescate y extricación, el riesgo mecánico, la destreza para herramienta y la protección ante vidrio o bordes cambian la prioridad. En línea de fuego, la jornada exterior pide movilidad, ventilación y un ajuste que no fatigue al cerrar la mano repetidamente.",
-      "La referencia para guante estructural es NFPA 1970, que integró la anterior NFPA 1971. Para trabajo forestal, NFPA 1950 incorporó la anterior NFPA 1977; esa misma NFPA 1950 edición 2025 absorbió la referencia de rescate técnico antes identificada como NFPA 1951. EN 659 y EN 388 aparecen como referencias europeas para guante de bombero y riesgo mecánico, respectivamente. La norma aplicable se confirma contra el riesgo y la documentación del modelo.",
-      "Antes de ordenar, prueba el guante con la herramienta, el puño del traje y cualquier sistema de comunicación o control que use la cuadrilla. Revisa talla, longitud del puño, cierre, costuras, refuerzos y barreras declaradas. Una cotización comparable identifica modelo, código cuando exista, talla, configuración y declaración de norma; así se recibe el equipo que fue evaluado y no una versión parecida.",
-      "Una comparación responsable separa lo que el modelo declara de lo que se necesita para la operación. NFPA 1970 es la referencia estructural; NFPA 1950 reúne las referencias anteriores de línea de fuego y rescate técnico. Estas referencias ayudan a formular la solicitud, pero no autorizan a transferir prestaciones entre modelos ni a llamar certificado a un producto cuyo estatus solo es declarado. La recepción debe contrastar modelo, código, talla, materiales y documentación contra la orden.",
-      "El programa de conservación importa desde la compra. Un par que se guarda húmedo, contaminado o sin identificación puede perderse antes de que el desgaste sea evidente. Define quién inspecciona, cómo se limpia, dónde se seca y cuándo se reemplaza. Esta disciplina evita que las manos dependan de un equipo cuya condición ya no se puede confirmar.",
-      "La entrega no concluye al contar pares. Capacita a cada usuario para reconocer qué tipo recibió, dónde están sus límites y cómo revisar palma, costuras, puño y forro antes de servicio. Mantén el par identificado, procesa cualquier exposición conforme al método indicado y registra daños o reemplazos. Esta rutina transforma la compra en protección disponible y evita mezclar guantes de tareas distintas en el mismo inventario.",
-      "Cuando aparezca un modelo nuevo, evalúalo con la misma maniobra y documentación que se usaron para la partida anterior. La comparación debe responder si mantiene talla, interfaz, construcción y estatus requeridos; no basta que tenga un nombre parecido o un acabado equivalente."
+      "Cotizamos guantes para ataque estructural, rescate y extricación, línea de fuego o respuesta de brigada. Tu brigada compra una herramienta de mano, no solo cuero: el tipo cambia entre calor y humedad, riesgo mecánico, agarre o movilidad exterior. Define la maniobra principal y surtimos el guante alineado con esa exposición y con tu procedimiento.",
+      "La selección compara referencia, construcción y destreza. NFPA 1970 reúne la referencia estructural; NFPA 1950 incorporó las anteriores NFPA 1977 y NFPA 1951 para línea de fuego y rescate técnico. El Sköld FPGS declara NFPA 1971 ed. 2013 y usa carnaza de res de 1.5–1.7 mm. Mándanos por WhatsApp la herramienta y operación para armar la comparación.",
+      "Surtimos Firemax VI, Sköld FPGS y Fire Pro II según la aplicación que especifiques. Firemax VI usa piel tratada color oro, Fire Pro II usa cuero tratado y cada ficha conserva su estatus normativo declarado. Pídelo con talla, longitud de puño, cantidad y la interfaz con manga, ERA o herramientas que usa tu cuadrilla.",
+      "Para documentar la partida, tu requisición debe incluir modelo, talla, configuración, materiales y norma declarada. Al recibir, coteja cada par por costuras, refuerzos, barreras y documentación contra tu orden; registra asignación e inspecciones conforme a tu procedimiento. Nosotros entregamos esos datos por escrito; mándanos por WhatsApp el pliego y destino para cotizar."
     ],
     "grupos": [
       {
@@ -40,35 +37,35 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Un guante estructural sirve para rescate?",
-        "a": "Puede acompañar una tarea, pero rescate y extricación suelen exigir otra relación entre destreza, agarre y riesgo mecánico. Define primero la operación principal."
+        "a": "No siempre: rescate y extricación priorizan destreza, agarre y riesgo mecánico frente al ataque estructural. NFPA 1970 es la referencia estructural y NFPA 1950 reúne la referencia de rescate técnico; los tipos no son intercambiables. Mándanos por WhatsApp la maniobra y herramienta para cotizar el guante adecuado."
       },
       {
         "q": "¿Qué talla debo pedir?",
-        "a": "Prueba el guante con los movimientos y herramientas reales. La talla debe permitir cerrar la mano y operar controles sin exceso de holgura."
+        "a": "Pide la talla que te permita cerrar la mano y operar controles con tu herramienta real. El Sköld FPGS usa carnaza de res de 1.5–1.7 mm, material que debes revisar junto con ajuste y destreza. Pídelo con talla, longitud de puño y una prueba con tu manga."
       },
       {
         "q": "¿La norma de un modelo es una certificación?",
-        "a": "Cada ficha muestra su estatus. Cuando la norma está declarada, solicita la declaración de conformidad junto con la cotización."
+        "a": "No necesariamente: la ficha conserva el estatus que declara cada modelo. El Fire Pro II declara NFPA 1971-2018 y el Sköld FPGS declara NFPA 1971 ed. 2013; esas menciones no cambian su carácter declarado. Pídenos la documentación disponible junto con la cotización del modelo."
       },
       {
         "q": "¿Cómo se limpian?",
-        "a": "Sigue el método indicado por el fabricante. No sustituyas ese procedimiento con químicos o calor que puedan alterar cuero, textiles, costuras o barreras."
+        "a": "Límpialos con el método indicado por el fabricante para el modelo. Firemax VI usa piel tratada color oro y Fire Pro II cuero tratado; químicos o calor ajenos al método pueden alterar materiales, costuras o barreras. Pídenos la documentación disponible del par que vas a surtir."
       },
       {
         "q": "¿Qué se compara además del material?",
-        "a": "Talla, palma, dedos, puño, costuras, interfaz, operación y estatus normativo del modelo."
+        "a": "Compara talla, palma, dedos, puño, costuras, refuerzos, interfaz y estatus del modelo. El Sköld FPGS declara NFPA 1971 ed. 2013 y su carnaza mide 1.5–1.7 mm; esos datos se leen junto con la maniobra. Mándanos por WhatsApp tu especificación para cotizar pares comparables."
       },
       {
         "q": "¿Puedo pedir un solo modelo para todo?",
-        "a": "Solo si el análisis de riesgo y las tareas autorizadas justifican esa selección; los tipos no son intercambiables."
+        "a": "Solo cuando tus tareas autorizadas y análisis de riesgo cubran esa selección; estructural, rescate, forestal y brigadista no son equivalentes. NFPA 1970 orienta lo estructural y NFPA 1950 línea de fuego o rescate técnico. Pídenos por WhatsApp una cotización separada por operación para tu cuadrilla."
       },
       {
         "q": "¿Cómo recibo una partida?",
-        "a": "Verifica por par modelo, talla, configuración y documentación antes de asignarla."
+        "a": "Recibe cada par contra modelo, talla, configuración y documentación de tu orden. Firemax VI, Sköld FPGS y Fire Pro II tienen materiales y estatus declarados distintos, por lo que no se cotejan solo por apariencia. Pídenos una relación escrita con la partida para revisarla al recibirla."
       },
       {
         "q": "¿Cuándo retiro un guante?",
-        "a": "Por daño, pérdida de ajuste, contaminación o criterio del programa de inspección."
+        "a": "Retíralo por daño, pérdida de ajuste, contaminación o conforme a tu programa de inspección. En un guante estructural NFPA 1970 es la referencia publicada, pero costuras, puño y forro deben conservar la condición de la partida. Mándanos por WhatsApp el modelo y daño para cotizar reposición compatible."
       }
     ],
     "checklistCompra": {
@@ -80,8 +77,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     },
     "leyendaImagenIlustrativa": "Imagen ilustrativa del tipo de guante. Marca, modelo y configuración exactos se confirman por escrito en la cotización.",
     "resumenHero": [
-      "La mano es el punto donde el equipo se encuentra con la tarea. Por eso un guante se selecciona por operación: ataque estructural, rescate, línea de fuego o respuesta de brigada. Material, capas, costuras, refuerzos y puño importan únicamente cuando se revisan junto con el movimiento, la herramienta y la exposición de esa operación.",
-      "La compra empieza con una prueba de talla e interfaz. Coloca el guante con la manga, casco, protección respiratoria y equipo habitual; después revisa agarre, movilidad, solape y retiro. El resultado debe quedar descrito en la requisición para que la partida recibida sea comparable con la que se evaluó. Con más de 35 años equipando bomberos, en LORICA pedimos esa prueba antes de cerrar la partida."
+      "Surtimos guantes estructurales, de rescate, forestales y para brigada a bomberos y cuadrillas que necesitan conservar agarre y movilidad. Tu tarea define el tipo: NFPA 1970 reúne la referencia estructural y NFPA 1950 las referencias de línea de fuego y rescate técnico. Cotizamos el modelo con talla, puño e interfaz para tu maniobra.",
+      "Cotizamos por modelo, talla, cantidad y operación, con materiales y estatus declarados en cada ficha. Puedes solicitar Firemax VI, Sköld FPGS o Fire Pro II y compararlos con tu manga, ERA y herramientas. Mándanos por WhatsApp tu pliego y destino; te entregamos una relación escrita para cotejar cada par al recibirlo."
     ],
     "etiquetas": {
       "menuTipos": "Tipos de guantes",

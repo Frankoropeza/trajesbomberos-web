@@ -14,10 +14,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "eyebrow": "Catálogo de protección respiratoria",
     "lead": "Un ERA entrega aire respirable independiente de la atmósfera; se selecciona por el riesgo, la certificación aplicable, la duración nominal y la compatibilidad del conjunto.",
     "intro": [
-      "El equipo de respiración autónoma, también llamado ERA o SCBA, protege cuando el aire ambiente no permite respirar con seguridad. Se usa en atmósferas IDLH, humo, atmósferas con posible deficiencia de oxígeno y espacios confinados. A diferencia de una mascarilla con filtro, no depende de que el cartucho retenga un contaminante ni de que haya oxígeno suficiente: porta un cilindro de aire y entrega ese aire a una máscara de cara completa mediante reguladores.",
-      "Un conjunto de circuito abierto reúne máscara, regulador de primera y segunda etapa, cilindro, válvula, arnés o espaldera, manómetro, alarmas de baja presión y, cuando aplica, PASS. Para combate estructural la referencia vigente es NFPA 1970, que absorbió NFPA 1981 y NFPA 1982; un ERA industrial con certificación NIOSH atiende otro alcance. No sustituyas una evaluación de riesgo por el nombre comercial de un equipo.",
-      "La duración de 30, 45 o 60 minutos es nominal. Cambia con el consumo del usuario, la carga de trabajo y las condiciones de la escena. Los cilindros de fibra de carbono de 4,500 psi requieren control de conexión, inspección y prueba hidrostática conforme a su etiqueta DOT. Antes de cotizar, define la operación, el tiempo de autonomía requerido, la interfaz con casco y capucha, el programa de mantenimiento y el suministro de aire respirable grado D o superior para carga.",
-      "La compra también debe contemplar quién revisará cada unidad, dónde se almacenará, cómo se conservarán las etiquetas y qué ocurrirá cuando una pieza requiera servicio. Sin esa cadena de control, un ERA puede tener componentes correctos y aun así no estar disponible para la maniobra que pretende atender."
+      "Cotizamos ERA para combate, brigada industrial, espacios confinados y escape cuando tu personal entra a humo, atmósferas IDLH o deficiencia de oxígeno. Un conjunto integra máscara, reguladores, cilindro, válvula, arnés, manómetro y alarmas. La compra parte de tu maniobra y del límite de actuación; mándanos por WhatsApp ese alcance para surtir el equipo adecuado.",
+      "Elegimos por referencia y autonomía nominal, no por nombre comercial. NFPA 1970 guía el ERA de combate; el G1 Industrial declara NIOSH 42 CFR Parte 84 para aplicación industrial. Los cilindros de fibra de carbono operan a 4,500 psi y se publican en 30, 45 o 60 min nominales. Pídenos la configuración con tu operación y relevo previstos.",
+      "Surtimos Phantöm 60 min, G1 Industrial, cilindros de fibra de carbono, máscaras y reguladores según compatibilidad. El Phantöm 60 min declara acuerdo con NFPA edición 1997 y CE EN 137:2006, mientras el G1 Industrial declara NIOSH 42 CFR Parte 84. Indica máscara, conexión, cilindro y accesorios para cotizar una sola configuración verificable.",
+      "Tu requisición debe documentar modelo, duración nominal, talla de máscara, conexión, accesorios y documentación declarada. Al recibir, coteja cilindro, válvula, reguladores, arnés, manómetro y alarmas contra la partida. Nosotros entregamos esa relación por escrito; mándanos por WhatsApp tu formato institucional y destino para preparar la cotización."
     ],
     "grupos": [
       {
@@ -34,32 +34,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Cuánto dura un cilindro de ERA?",
-        "a": "La marca de 30, 45 o 60 minutos es nominal. La duración real depende del consumo del usuario, esfuerzo, condición física y escena."
+        "a": "La marca de 30, 45 o 60 min es nominal y cambia con consumo, esfuerzo y escena. El Phantöm 60 min identifica esa autonomía en su modelo y usa cilindro de fibra de carbono. Pídelo con la autonomía de tu relevo y la operación descrita en la cotización."
       },
       {
         "q": "¿Cada cuánto se hace la prueba hidrostática?",
-        "a": "En cilindros de compuesto se realiza cada cinco años, conforme a la etiqueta DOT del cilindro y al programa aplicable."
+        "a": "La prueba hidrostática del cilindro compuesto se realiza cada cinco años conforme a su etiqueta DOT. Los cilindros de fibra de carbono de 4,500 psi requieren además control de conexión y servicio. Mándanos por WhatsApp la etiqueta y modelo para cotizar el componente compatible."
       },
       {
         "q": "¿Cuál es la diferencia entre ERA y mascarilla con filtro?",
-        "a": "El ERA aporta aire desde un cilindro; una mascarilla purificadora depende del cartucho y del aire ambiente. La NOM-116-STPS-2009 regula respiradores purificadores, no ERA."
+        "a": "El ERA entrega aire desde un cilindro; la mascarilla con filtro depende del cartucho y del aire ambiente. NOM-116-STPS-2009 corresponde a respiradores purificadores, mientras un ERA de combate toma NFPA 1970 como referencia. Pídenos el equipo con el riesgo atmosférico de tu maniobra."
       },
       {
         "q": "¿Un ERA industrial sirve para combate?",
-        "a": "No se debe asumir. Un ERA con certificación NIOSH es de uso industrial; para combate estructural se requiere un ERA conforme a NFPA 1970."
+        "a": "No se asume: el ERA industrial y el de combate tienen alcances distintos. El G1 Industrial declara NIOSH 42 CFR Parte 84, mientras el ERA de combate usa NFPA 1970 como referencia. Mándanos por WhatsApp la tarea y tu límite operativo para cotizar el conjunto correspondiente."
       },
       {
         "q": "¿Se recarga con cualquier compresor?",
-        "a": "No. La carga requiere aire respirable grado D o superior y un proceso compatible con el cilindro y la válvula."
+        "a": "No; la carga exige aire respirable grado D o superior y compatibilidad con cilindro y válvula. Un cilindro de fibra de carbono opera a 4,500 psi, dato que orienta el control de tu sistema de carga. Pídenos el cilindro con conexión y programa de aire documentados."
       },
       {
         "q": "¿Qué incluye la cotización?",
-        "a": "Debe indicar modelo, duración nominal, cilindro, máscara, regulador, conexión, accesorios, documentación declarada y cantidad."
+        "a": "Nuestra cotización identifica modelo, duración nominal, cilindro, máscara, regulador, conexión, accesorios y cantidad. Puedes solicitar Phantöm 60 min o G1 Industrial, conservando la documentación declarada de cada modelo. Mándanos por WhatsApp talla de máscara, destino y especificación de tu pliego."
       }
     ],
     "resumenHero": [
-      "Un ERA permite respirar cuando la atmósfera no es apta para hacerlo. Su valor no está en un solo componente: máscara, reguladores, cilindro, arnés, indicadores y alarmas deben funcionar como conjunto y con el procedimiento de la organización.",
-      "La selección cambia entre combate, brigada industrial, espacio confinado y escape. Define primero la tarea, el límite de actuación, la autonomía nominal, la referencia aplicable y la capacidad real de inspección, carga y mantenimiento. LORICA cotiza el ERA con esa información por escrito y entrega en los 32 estados."
+      "Surtimos ERA para bomberos, brigadas y operaciones en espacios confinados donde la atmósfera no permite respirar con seguridad. Máscara, reguladores, cilindro de 4,500 psi, arnés, manómetro y alarmas funcionan como un conjunto. Tu tarea define si buscas combate, uso industrial, escape o componentes; cotizamos la configuración con ese límite operativo claro.",
+      "Cotizamos por operación, autonomía nominal, conexión, máscara y cilindro. Elige 30, 45 o 60 min nominales y confirma si corresponde NFPA 1970 o NIOSH 42 CFR Parte 84 según el modelo. Mándanos por WhatsApp tu pliego, cantidad y destino; te entregamos una relación escrita para cotejar cada unidad al recibirla."
     ],
     "etiquetas": {
       "menuTipos": "Tipos de ERA y componentes",
