@@ -1,6 +1,6 @@
 ---
 title: "Aviso de privacidad"
-description: "Aviso de privacidad integral de TrajesBombero México: qué datos personales recabamos al cotizar trajes para bomberos, para qué los usamos y cómo ejercer tus derechos ARCO."
+description: "Aviso de privacidad de TrajesBombero México: qué datos recabamos al cotizar trajes para bomberos, para qué los usamos y cómo ejercer tus derechos ARCO."
 actualizado: 2026-09-28
 ---
 
