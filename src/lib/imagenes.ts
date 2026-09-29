@@ -13,6 +13,7 @@ export const HERO_POR_FAMILIA: Record<string, HeroImage> = {
   aproximacion: { src: '/images/escenas/hero-aproximacion.avif', alt: 'Bombero con traje aluminizado de aproximación avanzando hacia un fuego de combustible' },
   entrada: { src: '/images/escenas/hero-entrada.avif', alt: 'Trabajador con traje aluminizado de entrada frente a la boca de un horno industrial' },
   extricacion: { src: '/images/escenas/hero-extricacion.avif', alt: 'Equipo de rescate con traje de extricación cortando un vehículo con herramienta hidráulica' },
+  hazmat: { src: '/images/catalogo/hazmat/hero-hazmat.avif', alt: 'Personal con equipo de protección química durante una operación Hazmat' },
 };
 
 export const HERO_HOME: HeroImage = HERO_POR_FAMILIA.estructural;
