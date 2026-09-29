@@ -49,6 +49,7 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
       {seccion.intro.map((parrafo) => <p class="prose">{parrafo}</p>)}
       {seccion.comparativa && <div class="scroll" tabindex="0" role="region" aria-label={`Comparativa de ${seccion.nombre.toLowerCase()}`}><table><thead><tr>{seccion.comparativa.columnas.map((columna) => <th>{columna}</th>)}</tr></thead><tbody>{seccion.comparativa.filas.map((fila) => <tr>{fila.map((celda, i) => i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>)}</tr>)}</tbody></table></div>}
       {seccion.criterios && <div class="criteria"><h2>{seccion.criterios.titulo}</h2><ol>{seccion.criterios.items.map((item) => <li><strong>{item.termino}:</strong> {item.texto}</li>)}</ol></div>}
+      {seccion.checklistCompra && <div class="criteria" id="antes-de-ordenar"><h2>{seccion.checklistCompra.titulo}</h2>{seccion.checklistCompra.parrafos.map((parrafo) => <p>{parrafo}</p>)}</div>}
     </section>}
     {modelos.length > 0 && <section class="block" id="modelos">
       <SectionHeading eyebrow="Disponibles para cotizar" title={etiquetas?.modelosTitulo ?? `Modelos de ${seccion.nombre.toLowerCase()} publicados`} description={etiquetas?.modelosDescripcion} />
