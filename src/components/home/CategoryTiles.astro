@@ -1,7 +1,6 @@
 ---
 // CategoryTiles (home): índice de las 12 categorías del catálogo.
-// Card homologada: imagen 4:3 → título → texto → 4 subcategorías →
-// botón principal. 4 cards por fila (2 en tablet, 1 en móvil).
+// Diseño en <TileCard>/<TileGrid> (compartido con todo el index).
 // Todos los textos de botón son palabra clave (nunca "ver", "ir").
 // Cada href se valida contra las rutas reales del build: si una
 // subcategoría deja de existir, se omite y se avisa en consola.
@@ -9,6 +8,8 @@
 import { SECCIONES, TIPOS, MODELOS } from '@lib/catalogo/data';
 import { PIEZAS } from '@lib/piezas';
 import { PRODUCT_CATEGORIES } from '@config/site';
+import TileGrid from './TileGrid.astro';
+import TileCard from './TileCard.astro';
 
 interface Sub { label: string; href: string }
 interface Def {
@@ -177,173 +178,6 @@ const items = DEFS.filter((d) => RUTAS.has(d.href)).map((d, i) => {
   return { ...d, subs, codigo: String(i + 1).padStart(2, '0') };
 });
 ---
-<ul class="ct-grid">
-  {items.map((c) => (
-    <li class="ct">
-      <a class="ct__media" href={c.href} tabindex="-1" aria-hidden="true">
-        <img src={c.img} alt={c.alt} style={c.pos ? `object-position:${c.pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
-        <span class="ct__code">{c.codigo}</span>
-      </a>
-      <div class="ct__body">
-        <h3 class="ct__title"><a href={c.href}>{c.titulo}</a></h3>
-        <p class="ct__desc">{c.desc}</p>
-        <ul class="ct__subs" aria-label={`Subcategorías de ${c.titulo}`}>
-          {c.subs.map((s) => (
-            <li>
-              <a class="ct__sub" href={s.href}>
-                <span>{s.label}</span>
-                <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <a class="ct__cta" href={c.href}>{c.cta}</a>
-      </div>
-    </li>
-  ))}
-</ul>
-
-<style>
-  .ct-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .ct {
-    display: flex;
-    flex-direction: column;
-    background: var(--color-white);
-    border: 1px solid rgb(20 22 26 / 0.14);
-    border-top: 3px solid var(--color-primary);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-
-  /* Imagen: proporción fija para todas las cards */
-  .ct__media {
-    position: relative;
-    display: block;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    background: var(--color-light);
-  }
-  .ct__media img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 35%;
-    display: block;
-  }
-  .ct__code {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 0.3rem 0.65rem;
-    background: var(--color-primary);
-    color: var(--color-white);
-    font-family: var(--font-display);
-    font-size: 0.74rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-  }
-
-  .ct__body {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 1.15rem 1.15rem 1.2rem;
-  }
-
-  /* Título: 2 líneas reservadas → todas las cards alinean */
-  .ct__title {
-    margin: 0 0 0.55rem;
-    font-size: 1.08rem;
-    line-height: 1.25;
-    min-height: calc(1.08rem * 1.25 * 2);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  .ct__title a { color: var(--color-dark); text-decoration: none; }
-  .ct__title a:hover { color: var(--color-primary); }
-
-  /* Texto: 3 líneas reservadas */
-  .ct__desc {
-    margin: 0 0 1rem;
-    font-size: 0.87rem;
-    line-height: 1.5;
-    color: var(--color-gray);
-    min-height: calc(0.87rem * 1.5 * 3);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  /* Subcategorías: 4 filas de igual alto */
-  .ct__subs {
-    list-style: none;
-    margin: 0 0 1.1rem;
-    padding: 0;
-    border-top: 1px solid rgb(20 22 26 / 0.12);
-  }
-  .ct__subs li { border-bottom: 1px solid rgb(20 22 26 / 0.12); }
-  .ct__sub {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.6rem;
-    min-height: 46px;
-    padding: 0.35rem 0.1rem;
-    color: var(--color-dark);
-    font-size: 0.86rem;
-    font-weight: 600;
-    line-height: 1.25;
-    text-decoration: none;
-  }
-  .ct__sub svg { flex: none; color: var(--color-primary); }
-  .ct__sub:hover { color: var(--color-primary); }
-  .ct__sub:hover span { text-decoration: underline; text-underline-offset: 3px; }
-  .ct__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
-
-  /* Botón principal: siempre al fondo de la card */
-  .ct__cta {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 52px;
-    padding: 0.55rem 0.9rem;
-    background: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    border-radius: var(--radius);
-    color: var(--color-white);
-    font-family: var(--font-display);
-    font-size: 0.86rem;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    text-align: center;
-    text-decoration: none;
-  }
-  .ct__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
-  .ct__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-
-  @media (max-width: 1279px) {
-    .ct-grid { gap: 1rem; }
-    .ct__body { padding: 1rem; }
-  }
-  @media (max-width: 1023px) {
-    .ct-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 559px) {
-    .ct-grid { grid-template-columns: 1fr; }
-    .ct__title, .ct__desc { min-height: 0; }
-  }
-</style>
+<TileGrid>
+  {items.map((c) => <TileCard {...c} />)}
+</TileGrid>

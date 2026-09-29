@@ -1,0 +1,175 @@
+---
+// TileCard: card homologada de TODO el index (categorías, familias de
+// traje, complementos). Estructura fija: imagen 4:3 → título (2 líneas
+// reservadas) → texto (3 líneas) → 4 subcategorías → botón principal.
+// Botones siempre con palabra clave (nunca "ver", "ir", "conocer").
+// Va dentro de <TileGrid> (4 por fila). Cero animaciones/transiciones.
+export interface TileSub { label: string; href: string }
+export interface TileProps {
+  codigo: string;
+  titulo: string;
+  desc: string;
+  href: string;
+  cta: string;
+  img: string;
+  alt: string;
+  pos?: string; // object-position de la foto (retrato vs. paisaje)
+  subs: TileSub[];
+}
+const { codigo, titulo, desc, href, cta, img, alt, pos, subs } = Astro.props as TileProps;
+---
+<li class="ct">
+  <a class="ct__media" href={href} tabindex="-1" aria-hidden="true">
+    <img src={img} alt={alt} style={pos ? `object-position:${pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
+    <span class="ct__code">{codigo}</span>
+  </a>
+  <div class="ct__body">
+    <h3 class="ct__title"><a href={href}>{titulo}</a></h3>
+    <p class="ct__desc">{desc}</p>
+    <ul class="ct__subs" aria-label={`Subcategorías de ${titulo}`}>
+      {subs.map((s) => (
+        <li>
+          <a class="ct__sub" href={s.href}>
+            <span>{s.label}</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <a class="ct__cta" href={href}>{cta}</a>
+  </div>
+</li>
+
+<style>
+  .ct {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgb(20 22 26 / 0.14);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  /* Imagen: proporción fija para todas las cards */
+  .ct__media {
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-light);
+  }
+  .ct__media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+  }
+  .ct__code {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.3rem 0.65rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  .ct__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.15rem 1.15rem 1.2rem;
+  }
+
+  /* Título: 2 líneas reservadas → todas las cards alinean */
+  .ct__title {
+    margin: 0 0 0.55rem;
+    font-size: 1.08rem;
+    line-height: 1.25;
+    min-height: calc(1.08rem * 1.25 * 2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .ct__title a { color: var(--color-dark); text-decoration: none; }
+  .ct__title a:hover { color: var(--color-primary); }
+
+  /* Texto: 3 líneas reservadas */
+  .ct__desc {
+    margin: 0 0 1rem;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+    min-height: calc(0.87rem * 1.5 * 3);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Subcategorías: 4 filas de igual alto */
+  .ct__subs {
+    list-style: none;
+    margin: 0 0 1.1rem;
+    padding: 0;
+    border-top: 1px solid rgb(20 22 26 / 0.12);
+  }
+  .ct__subs li { border-bottom: 1px solid rgb(20 22 26 / 0.12); }
+  .ct__sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    min-height: 46px;
+    padding: 0.35rem 0.1rem;
+    color: var(--color-dark);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+  }
+  .ct__sub svg { flex: none; color: var(--color-primary); }
+  .ct__sub:hover { color: var(--color-primary); }
+  .ct__sub:hover span { text-decoration: underline; text-underline-offset: 3px; }
+  .ct__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+
+  /* Botón principal: siempre al fondo de la card */
+  .ct__cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.55rem 0.9rem;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ct__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
+  .ct__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  @media (max-width: 1279px) {
+      .ct__body { padding: 1rem; }
+  }
+  @media (max-width: 1023px) {
+    }
+  @media (max-width: 559px) {
+      .ct__title, .ct__desc { min-height: 0; }
+  }
+</style>

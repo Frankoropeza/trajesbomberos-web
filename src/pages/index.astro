@@ -29,10 +29,10 @@ import SpecChecklist from '@components/SpecChecklist.astro';
 import MistakeList from '@components/MistakeList.astro';
 import BrandGrid from '@components/BrandGrid.astro';
 import { PRESET_GENERAL, PRESET_LICITACION } from '@lib/cta-presets';
-import CatalogCard from '@components/home/CatalogCard.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard, { type TileProps, type TileSub } from '@components/home/TileCard.astro';
 import QuoteCTA from '@components/home/QuoteCTA.astro';
 import ModelosGrid from '@components/ModelosGrid.astro';
-import type { ComponentProps } from 'astro/types';
 import RiskGuide from '@components/RiskGuide.astro';
 import NormsTable from '@components/NormsTable.astro';
 import ProcessSteps from '@components/ProcessSteps.astro';
@@ -41,11 +41,9 @@ import FactList from '@components/FactList.astro';
 import CTABanner from '@components/CTABanner.astro';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
-import { piezasDeFamilia } from '@lib/piezas';
+import { PIEZAS } from '@lib/piezas';
 import { familiaPorSlug } from '@lib/familias';
-import { getSeccion } from '@lib/catalogo/secciones';
-import { tiposDeSeccion } from '@lib/catalogo/tipos';
-import { MODELOS } from '@lib/catalogo/data';
+import { MODELOS, SECCIONES, TIPOS } from '@lib/catalogo/data';
 import {
   SITE,
   PRODUCT_CATEGORIES,
@@ -114,176 +112,155 @@ const DIMENSIONES: Record<string, { width: number; height: number }> = {
 };
 const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
 
-type CardData = ComponentProps<typeof CatalogCard>;
+// Cards homologadas (TileCard): imagen → título → texto → 4 subcategorías
+// → botón principal con palabra clave. Las subcategorías de familia salen
+// de PIEZAS (SSoT) y se validan en build: nunca se enlaza una ruta inexistente.
+const RUTAS_PIEZA = new Set(PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`));
+const RUTAS_CATALOGO = new Set([
+  ...SECCIONES.map((s) => `/${s.slug}/`),
+  ...TIPOS.map((t) => `/${t.seccion}/${t.slug}/`),
+  ...MODELOS.filter((m) => m.seccion).map((m) => `/${m.seccion}/${m.id}/`),
+]);
+const rutaValida = (href: string) => RUTAS_PIEZA.has(href) || RUTAS_CATALOGO.has(href) || /^\/trajes\/[a-z-]+\/$/.test(href);
+const soloValidas = (subs: TileSub[]) =>
+  subs.filter((s) => {
+    const ok = rutaValida(s.href);
+    if (!ok) console.warn(`[index] subcategoría sin ruta: ${s.href}`);
+    return ok;
+  });
+// Fotos de producto en retrato: se encuadran por arriba para no cortar el casco.
+const POS_RETRATO = 'center 8%';
+const esRetrato = (src: string) => (DIMENSIONES[src]?.height ?? 1250) > (DIMENSIONES[src]?.width ?? 1000);
 
-// Ocho cards: seis familias de PRODUCT_CATEGORIES + Hazmat (familia
-// real en FAMILIAS, página /trajes/hazmat/) + card de conjunto completo.
-// "Incluye" y "norma" salen de FAMILIAS (SSoT): no se duplica ni se inventa.
-const NORMA_POR_FAMILIA: Record<string, string> = {
-  estructural: 'NFPA 1970 (ed. 2025), caps. 5 a 9',
-  brigadista: 'NOM-002-STPS-2010, cláusula 5.9',
-  forestal: 'NFPA 1950 (ed. 2025) · EN ISO 15384',
-  aproximacion: 'NFPA 1970 (proximidad)',
-  entrada: 'Ficha del fabricante (sin norma NFPA de producto)',
-  extricacion: 'NFPA 1950 (ed. 2025)',
-  hazmat: 'NFPA 1990 (ed. 2022)',
+interface FamiliaTile { cta: string; subs: [string, string][] } // [label, slug de pieza]
+const FAMILIA_TILE: Record<string, FamiliaTile> = {
+  estructural: { cta: 'Catálogo de trajes estructurales', subs: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']] },
+  brigadista: { cta: 'Catálogo de trajes de brigadista', subs: [['Conjunto de brigada', 'conjunto'], ['Overol ignífugo', 'overol'], ['Chaquetón de brigadista', 'chaqueton'], ['Pantalonera de brigadista', 'pantalonera']] },
+  forestal: { cta: 'Catálogo de trajes forestales', subs: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']] },
+  aproximacion: { cta: 'Catálogo de trajes aluminizados', subs: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']] },
+  entrada: { cta: 'Catálogo de trajes de entrada', subs: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']] },
+  extricacion: { cta: 'Catálogo de trajes de extricación', subs: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']] },
+  hazmat: { cta: 'Catálogo de trajes Hazmat', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']] },
 };
-const piezasIncluye = (slug: string) => (familiaPorSlug(slug)?.productos ?? []).map((p) => p.nombre);
+const subsFamilia = (slug: string) =>
+  soloValidas((FAMILIA_TILE[slug]?.subs ?? []).map(([label, pieza]) => ({ label, href: `/trajes/${slug}/${pieza}/` })));
 
-const trajesFamilias: CardData[] = PRODUCT_CATEGORIES.map((c, i) => {
-  const piezas = piezasDeFamilia(c.slug).length;
-  const modelos = MODELOS.filter((m) => m.familia === c.slug).length;
-  const incluye = piezasIncluye(c.slug);
-  return {
-    codigo: `TR-${String(i + 1).padStart(2, '0')}`,
-    titulo: TITULO_CARD[c.slug] ?? c.nombre,
-    operacion: OPERACION_POR_FAMILIA[c.slug] ?? c.chips.join(' · '),
-    desc: c.desc,
-    image: { src: c.image, alt: c.imageAlt, ...(DIMENSIONES[c.image] ?? { width: 1000, height: 1250 }) },
-    chips: c.chips.slice(0, 3),
-    badge: c.badge,
-    norma: NORMA_POR_FAMILIA[c.slug],
-    incluye: incluye.slice(0, 4),
-    incluyeMas: Math.max(incluye.length - 4, 0),
-    meta: [plural(incluye.length || piezas, 'pieza cotizable', 'piezas cotizables'), modelos > 0 ? plural(modelos, 'modelo', 'modelos') : '']
-      .filter(Boolean)
-      .join(' · '),
-    href: `/trajes/${c.slug}/`,
-    ctaLabel: 'Conocer la categoría' as const,
-  };
-});
+const trajesFamilias: TileProps[] = PRODUCT_CATEGORIES.map((c, i) => ({
+  codigo: `TR-${String(i + 1).padStart(2, '0')}`,
+  titulo: TITULO_CARD[c.slug] ?? c.nombre,
+  desc: c.desc,
+  href: `/trajes/${c.slug}/`,
+  cta: FAMILIA_TILE[c.slug]?.cta ?? `Catálogo de ${c.nombre.toLowerCase()}`,
+  img: c.image,
+  alt: c.imageAlt,
+  pos: esRetrato(c.image) ? POS_RETRATO : undefined,
+  subs: subsFamilia(c.slug),
+}));
 
 const hazmat = familiaPorSlug('hazmat');
-const hazmatIncluye = piezasIncluye('hazmat');
-const hazmatModelos = MODELOS.filter((m) => m.familia === 'hazmat').length;
-const cardHazmat: CardData[] = hazmat
-  ? [
-      {
-        codigo: `TR-${String(trajesFamilias.length + 1).padStart(2, '0')}`,
-        titulo: 'Trajes Hazmat (protección química)',
-        operacion: 'Fuga o derrame químico, materiales peligrosos',
-        desc: 'Encapsulado nivel A, químico nivel B y C, overol desechable, botas y guantes. La barrera se elige por sustancia, concentración y tarea, no por el nombre del nivel.',
-        image: { src: hazmat.images[0].src, alt: hazmat.images[0].alt, ...(DIMENSIONES[hazmat.images[0].src] ?? { width: 1000, height: 1250 }) },
-        chips: ['Nivel A', 'Nivel B', 'Nivel C'],
-        norma: NORMA_POR_FAMILIA.hazmat,
-        incluye: hazmatIncluye.slice(0, 4),
-        incluyeMas: Math.max(hazmatIncluye.length - 4, 0),
-        meta: [plural(hazmatIncluye.length, 'pieza cotizable', 'piezas cotizables'), hazmatModelos > 0 ? plural(hazmatModelos, 'modelo', 'modelos') : '']
-          .filter(Boolean)
-          .join(' · '),
-        href: '/trajes/hazmat/',
-        ctaLabel: 'Conocer la categoría' as const,
-      },
-    ]
+const cardHazmat: TileProps[] = hazmat
+  ? [{
+      codigo: `TR-${String(trajesFamilias.length + 1).padStart(2, '0')}`,
+      titulo: 'Trajes Hazmat (protección química)',
+      desc: 'Encapsulado nivel A, químico nivel B y C, overol desechable, botas y guantes. La barrera se elige por sustancia, concentración y tarea.',
+      href: '/trajes/hazmat/',
+      cta: FAMILIA_TILE.hazmat.cta,
+      img: hazmat.images[0].src,
+      alt: hazmat.images[0].alt,
+      pos: esRetrato(hazmat.images[0].src) ? POS_RETRATO : undefined,
+      subs: subsFamilia('hazmat'),
+    }]
   : [];
 
-const cardConjunto: CardData = {
+const cardConjunto: TileProps = {
   codigo: `TR-${String(trajesFamilias.length + cardHazmat.length + 1).padStart(2, '0')}`,
   titulo: 'Conjunto completo y compra por pieza',
-  operacion: 'Equipar a un elemento, una brigada o una estación',
-  desc: 'Traje más casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima, con ficha técnica por partida.',
-  image: {
-    src: '/images/escenas/bomberos-ataque-incendio-manguera.avif',
-    alt: 'Bomberos con equipo completo: traje estructural, casco y equipo de respiración autónoma',
-    ...DIMENSIONES['/images/escenas/bomberos-ataque-incendio-manguera.avif'],
-  },
-  chips: ['Conjunto', 'Por pieza', 'Licitación'],
-  badge: 'Cotización armada',
-  norma: 'Composite y norma declarados por partida',
-  incluye: ['Traje de la familia que corresponda', 'Casco, monja y guantes', 'Botas y ERA compatibles', 'Tirantes y arnés de escape'],
-  incluyeMas: 0,
-  meta: 'CFDI 4.0 · envío a los 32 estados',
-  href: '#complementos',
-  ctaLabel: 'Armar mi conjunto' as const,
+  desc: 'Traje, casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima.',
+  href: '/kits/',
+  cta: 'Kits de equipo completo para bombero',
+  img: '/images/escenas/bomberos-ataque-incendio-manguera.avif',
+  alt: 'Bomberos con equipo completo: traje estructural, casco y equipo de respiración autónoma',
+  subs: soloValidas([
+    { label: 'Kit estructural', href: '/kits/kit-estructural/' },
+    { label: 'Kit brigadista', href: '/kits/kit-brigadista/' },
+    { label: 'Kit forestal', href: '/kits/kit-forestal/' },
+    { label: 'Tirantes para pantalonera', href: '/trajes/estructural/tirantes/' },
+  ]),
 };
 
-const trajes: CardData[] = [...trajesFamilias, ...cardHazmat, cardConjunto];
+const trajes: TileProps[] = [...trajesFamilias, ...cardHazmat, cardConjunto];
 
-interface ComplementoDef {
-  slug: string | null; // sección del catálogo (null = sin hub planeado)
-  titulo: string;
-  operacion: string;
-  desc: string;
-  image: { src: string; alt: string; width: number; height: number };
-  respaldo?: { href: string; extra?: { label: string; href: string }[] };
-  extra?: { label: string; href: string }[];
-}
-// Orden por demanda medida en Ahrefs MX (2026-09-28): casco ≈800,
-// ERA ≈950 (con variantes), botas ≈240, guantes ≈120, monja ≈70,
-// tirantes/cinturón ≈0. Textos solo con datos ya publicados.
-const COMPLEMENTOS_DEF: ComplementoDef[] = [
+// Complementos del conjunto (EQ). Orden por demanda medida en Ahrefs MX
+// (2026-09-28): casco ≈800, ERA ≈950 (con variantes), botas ≈240,
+// guantes ≈120, monja ≈70, tirantes/cinturón ≈0.
+const complementos: TileProps[] = [
   {
-    slug: 'cascos',
-    titulo: 'Cascos para bombero',
-    operacion: 'Ataque interior, forestal y rescate',
-    desc: 'Casco estructural tradicional o europeo para ataque interior, forestal para línea de fuego y compacto para rescate técnico. Se verifica compatibilidad con la máscara del ERA en uso.',
-    image: { src: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero: estructural, forestal y de rescate', width: 800, height: 450 },
-  },
-  {
-    slug: 'equipo-de-respiracion-autonoma',
-    titulo: 'Equipo de respiración autónoma (ERA)',
-    operacion: 'Atmósferas no respirables',
-    desc: 'Protección respiratoria para ataque interior y rescate en humo. Se cotiza por separado del traje, con su llenado de aire, y se revisa su compatibilidad con casco y monja.',
-    image: { src: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro', width: 800, height: 450 },
-  },
-  {
-    slug: 'botas',
-    titulo: 'Botas para bombero',
-    operacion: 'Estructural, forestal y brigada',
-    desc: 'Hule o piel para incendio estructural y bota sin puntera para trabajo forestal. Se eligen según la familia de traje, no por separado.',
-    image: { src: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel', width: 800, height: 450 },
-  },
-  {
-    slug: 'guantes',
-    titulo: 'Guantes para bombero',
-    operacion: 'Según la operación',
-    desc: 'Estructural, extricación o forestal: cada operación exige su guante y no se sustituyen entre sí.',
-    image: { src: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales, de extricación y forestales', width: 800, height: 450 },
-  },
-  {
-    slug: 'capuchas',
-    titulo: 'Monjas y escafandras',
-    operacion: 'Cabeza y cuello',
-    desc: 'Monja o escafandra tradicional de Nomex o con barrera de partículas, bajo el casco y sobre el cuello del chaquetón.',
-    image: { src: '/images/productos/monja-capucha-barrera-particulas-bombero.avif', alt: 'Monja o escafandra para bombero con barrera de partículas', width: 1000, height: 1250 },
-    respaldo: { href: '/trajes/estructural/monja/' },
-    extra: [{ label: 'Monja de brigada', href: '/trajes/brigadista/monja/' }],
-  },
-  {
-    slug: null,
-    titulo: 'Tirantes y cinturones',
-    operacion: 'Sujeción de la pantalonera',
-    desc: 'Tirantes con espalda en H que reparten el peso de la pantalonera mojada sobre los hombros, y arnés interno de escape integrado a la pantalonera estructural.',
-    image: { src: '/images/piezas/tirantes-acolchados-tipo-h.avif', alt: 'Tirantes acolchados tipo H para pantalonera de bombero', width: 1000, height: 1250 },
-    respaldo: { href: '/trajes/estructural/tirantes/' },
-    extra: [
-      { label: 'Tirantes de brigada', href: '/trajes/brigadista/tirantes/' },
-      { label: 'Arnés de escape', href: '/trajes/estructural/arnes-escape/' },
+    titulo: 'Cascos para bombero', href: '/cascos/', cta: 'Cascos para bombero certificados',
+    desc: 'Casco estructural tradicional o europeo para ataque interior, forestal para línea de fuego y compacto para rescate técnico.',
+    img: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero: estructural, forestal y de rescate',
+    subs: [
+      { label: 'Casco Bullard LTX', href: '/cascos/bullard-ltx/' },
+      { label: 'Casco Bullard UST LW', href: '/cascos/bullard-ust-lw/' },
+      { label: 'Casco Sköld Viking', href: '/cascos/skold-viking/' },
+      { label: 'Casco forestal Bullard FH911H', href: '/cascos/bullard-fh911h/' },
     ],
   },
-];
-
-const complementos: CardData[] = COMPLEMENTOS_DEF.map((d, i) => {
-  const seccion = d.slug ? getSeccion(d.slug) : undefined;
-  const base = { codigo: `EQ-${String(i + 1).padStart(2, '0')}`, titulo: d.titulo, operacion: d.operacion, desc: d.desc, image: d.image };
-  if (seccion && d.slug) {
-    const tipos = tiposDeSeccion(d.slug);
-    const modelos = MODELOS.filter((m) => m.seccion === d.slug).length;
-    return {
-      ...base,
-      chips: tipos.slice(0, 3).map((t) => t.nombreCard),
-      meta: [plural(tipos.length, 'tipo', 'tipos'), modelos > 0 ? plural(modelos, 'modelo', 'modelos') : ''].filter(Boolean).join(' · '),
-      href: `/${d.slug}/`,
-      extra: d.extra,
-      ctaLabel: 'Ver equipo' as const,
-    };
-  }
-  if (d.respaldo) {
-    return { ...base, href: d.respaldo.href, extra: d.extra, ctaLabel: 'Ver equipo' as const };
-  }
-  return { ...base, ctaLabel: 'Solicitar cotización' as const };
-});
-const hayPendientes = complementos.some((c) => !c.href);
+  {
+    titulo: 'Equipo de respiración autónoma (ERA)', href: '/equipo-de-respiracion-autonoma/', cta: 'Equipos ERA para bombero',
+    desc: 'Protección respiratoria para ataque interior y rescate en humo, con revisión de compatibilidad con casco y monja.',
+    img: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro',
+    subs: [
+      { label: 'ERA Sköld Phantöm 60 min', href: '/equipo-de-respiracion-autonoma/skold-phantom/' },
+      { label: 'ERA MSA G1 Industrial', href: '/equipo-de-respiracion-autonoma/msa-g1-industrial/' },
+      { label: 'Máscaras y reguladores ERA', href: '/equipo-de-respiracion-autonoma/mascaras-y-reguladores-era/' },
+      { label: 'Cilindros de fibra de carbono', href: '/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/' },
+    ],
+  },
+  {
+    titulo: 'Botas para bombero', href: '/botas/', cta: 'Botas para bombero estructurales',
+    desc: 'Hule o piel para incendio estructural y bota sin puntera para trabajo forestal, elegidas según la familia de traje.',
+    img: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel',
+    subs: [
+      { label: 'Bota Romak Workman Fire', href: '/botas/romak-workman-fire/' },
+      { label: 'Bota Croydon Filtrex', href: '/botas/croydon-filtrex/' },
+      { label: 'Bota Sköld Workman', href: '/botas/skold-workman/' },
+      { label: 'Bota Romak Fire Ranger', href: '/botas/romak-fire-ranger-bota/' },
+    ],
+  },
+  {
+    titulo: 'Guantes para bombero', href: '/guantes/', cta: 'Guantes para bombero certificados',
+    desc: 'Estructural, extricación o forestal: cada operación exige su guante y no se sustituyen entre sí.',
+    img: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales, de extricación y forestales',
+    subs: [
+      { label: 'Guante Romak Firemax VI', href: '/guantes/romak-firemax-vi/' },
+      { label: 'Guante Sköld para bombero', href: '/guantes/skold-fpgs/' },
+      { label: 'Guante Veridian Fire Pro II', href: '/guantes/veridian-fire-pro-ii/' },
+      { label: 'Guante de extricación', href: '/guantes/guante-rescate-extricacion/' },
+    ],
+  },
+  {
+    titulo: 'Monjas y escafandras', href: '/capuchas/', cta: 'Monjas y escafandras para bombero',
+    desc: 'Monja o escafandra tradicional de Nomex o con barrera de partículas, bajo el casco y sobre el cuello del chaquetón.',
+    img: '/images/productos/monja-capucha-barrera-particulas-bombero.avif', alt: 'Monja o escafandra para bombero con barrera de partículas', pos: POS_RETRATO,
+    subs: [
+      { label: 'Capucha Romak over-face', href: '/capuchas/romak-cap1005/' },
+      { label: 'Escafandra Sköld Nomex', href: '/capuchas/skold-fpen/' },
+      { label: 'Capucha Majestic PAC II', href: '/capuchas/majestic-pac-ii/' },
+      { label: 'Monja de brigada', href: '/trajes/brigadista/monja/' },
+    ],
+  },
+  {
+    titulo: 'Tirantes y cinturones', href: '/trajes/estructural/tirantes/', cta: 'Tirantes para pantalonera de bombero',
+    desc: 'Tirantes que reparten el peso de la pantalonera mojada sobre los hombros y arnés interno de escape integrado.',
+    img: '/images/piezas/tirantes-acolchados-tipo-h.avif', alt: 'Tirantes acolchados tipo H para pantalonera de bombero', pos: POS_RETRATO,
+    subs: [
+      { label: 'Tirantes acolchados tipo H', href: '/trajes/estructural/tirantes/' },
+      { label: 'Tirantes de brigada tipo X', href: '/trajes/brigadista/tirantes/' },
+      { label: 'Arnés interno de escape', href: '/trajes/estructural/arnes-escape/' },
+      { label: 'Rodilleras para forro', href: '/trajes/estructural/rodilleras/' },
+    ],
+  },
+].map((c, i) => ({ ...c, codigo: `EQ-${String(i + 1).padStart(2, '0')}`, subs: soloValidas(c.subs) }));
 
 const normasColumns: [string, string, string] = ['Referencia', 'Qué exige realmente', 'Estatus en México'];
 const normasRows: [string, string, string][] = [
@@ -414,12 +391,12 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           'Elige la categoría que corresponde a tu operación y consulta su ficha técnica: composite por capa, norma de referencia y compra por pieza o conjunto completo. Cotizamos trajes de bomberos con factura CFDI 4.0, sin compra mínima y con envío a los 32 estados.',
         ]}
       />
-      <div class="catalog-grid catalog-grid--4">
-        {trajes.map((c) => <CatalogCard {...c} />)}
-      </div>
+      <TileGrid>
+        {trajes.map((c) => <TileCard {...c} />)}
+      </TileGrid>
 
       <p class="catalogo-cta">
-        <a href="/trajes/">Ver todas las familias de trajes explicadas a fondo →</a>
+        <a href="/trajes/">Guía completa de familias de trajes para bomberos →</a>
       </p>
 
     </div>
@@ -451,14 +428,9 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           'Los revisamos como conjunto: el casco debe ajustar con la máscara del ERA, la bota se elige según la familia de traje y el guante según la operación. Así recibes un equipo de bombero completo y compatible, con ficha técnica por partida.',
         ]}
       />
-      <div class="catalog-grid">
-        {complementos.map((c) => <CatalogCard {...c} prefijo="Uso" />)}
-      </div>
-      {hayPendientes && (
-        <p class="pending-note">
-          Las categorías marcadas «Catálogo en preparación» ya se cotizan por WhatsApp con ficha técnica.
-        </p>
-      )}
+      <TileGrid>
+        {complementos.map((c) => <TileCard {...c} />)}
+      </TileGrid>
     </div>
   </section>
 
@@ -693,27 +665,5 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     font-size: 0.86rem;
     color: var(--color-gray);
     max-width: 92ch;
-  }
-  /* Grid de cards de categoría (trajes y complementos) */
-  .catalog-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--gap-grid, 1.5rem);
-  }
-  .pending-note {
-    margin: 1.6rem 0 0;
-    padding: 0.9rem 1.1rem;
-    border-left: 4px solid var(--color-accent);
-    background: var(--color-light);
-    font-size: 0.9rem;
-    color: var(--color-dark);
-    max-width: 80ch;
-  }
-  /* Trajes: 8 cards, 4 por fila en escritorio (2 × 4); 2 en tablet; 1 en móvil */
-  .catalog-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.1rem; }
-  @media (max-width: 1099px) { .catalog-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-grid, 1.5rem); } }
-  @media (max-width: 1023px) { .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 639px) {
-    .catalog-grid, .catalog-grid--4 { grid-template-columns: 1fr; gap: 0.75rem; }
   }
 </style>
