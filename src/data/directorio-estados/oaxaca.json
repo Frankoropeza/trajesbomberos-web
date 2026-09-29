@@ -2,18 +2,18 @@
  "lead": "El directorio concentra 15 estaciones de bomberos en Oaxaca dentro de 11 municipios. Cada ficha señala corporación, ubicación y fuente pública para ubicar bomberos en Oaxaca y entender qué datos están disponibles en cada referencia.",
  "descRight": [
   "En Oaxaca se registran 7 estaciones estatales, 5 municipales, 2 aeroportuarias y una de PEMEX. Hay una central y 6 subestaciones. Oaxaca de Juárez concentra 3 fichas; Salina Cruz y Santa María Huatulco tienen 2 cada uno. El resto de los municipios incorporados aparece con una estación, mostrando una presencia distribuida en distintas zonas.",
-  "Utiliza el índice municipal para llegar a cada ficha y revisar sus campos de localización. El directorio cuenta con teléfono en 5 casos, dirección en 8 y ubicación exacta en 8. Puedes contrastar la fuente y la precisión del mapa antes de contactar a una corporación. Para solicitar ayuda urgente no uses estos contactos: llama al 911."
+  "Utiliza el índice municipal para llegar a cada ficha y revisar sus campos de localización. Una ficha cuenta con teléfono respaldado por una fuente pública, 8 con dirección y 8 con ubicación exacta. Puedes contrastar la fuente y la precisión del mapa antes de contactar a una corporación. Para solicitar ayuda urgente no uses estos contactos: llama al 911."
  ],
  "municipiosDuo": [
   "Oaxaca de Juárez suma 3 estaciones registradas, incluidas referencias del Heroico Cuerpo de Bomberos de Oaxaca y sus subestaciones. Esto hace que la consulta de bomberos en Oaxaca de Juárez tenga varias entradas diferenciadas por nombre y tipo, no una ficha agrupada.",
-  "Salina Cruz y Santa María Huatulco cuentan con 2 estaciones cada uno. Heroica Ciudad de Huajuapan de León, Heroica Ciudad de Tlaxiaco, Juchitán de Zaragoza, Matías Romero Avendano, San Juan Bautista Tuxtepec, San Pedro Mixtepec, Santa Cruz Xoxocotlán y Santa María Tonameca tienen una ficha registrada."
+  "Salina Cruz y Santa María Huatulco cuentan con 2 estaciones cada uno. Heroica Ciudad de Huajuapan de León, Heroica Ciudad de Tlaxiaco, Juchitán de Zaragoza, Matías Romero Avendaño, San Juan Bautista Tuxtepec, San Pedro Mixtepec, Santa Cruz Xoxocotlán y Santa María Tonameca tienen una ficha registrada."
  ],
  "estacionesDuo": [
   "Cada ficha marca la naturaleza estatal, municipal, aeroportuaria o de PEMEX de la corporación. También informa central o subestación cuando corresponde, junto a dirección, teléfono con fuente y precisión del mapa. El Heroico Cuerpo de Bomberos de Oaxaca y Protección Civil y Bomberos Municipales de Salina Cruz forman parte del registro.",
   "No todas las referencias contienen los mismos campos. La Brigada de Emergencias PEMEX de Salina Cruz y el CREI Aeropuerto Internacional de Oaxaca se leen dentro de su clasificación específica, mientras las estaciones HCBO conservan su identificación territorial y de rol cuando está declarada."
  ],
  "coberturaDuo": [
-  "Incendios estructurales y atención prehospitalaria se declaran en las 15 fichas de Oaxaca; el rescate vehicular aparece en 12. Hay 5 teléfonos con fuente, 8 direcciones y 8 ubicaciones exactas. La diferencia entre esos campos ayuda a medir la precisión de cada estación publicada.",
+  "Incendios estructurales y atención prehospitalaria se declaran en las 15 fichas de Oaxaca; el rescate vehicular aparece en 12. Hay un teléfono con fuente pública, 8 direcciones y 8 ubicaciones exactas. La diferencia entre esos campos ayuda a medir la precisión de cada estación publicada.",
   "El rescate acuático figura en 6 casos y materiales peligrosos en 4. También hay referencias de incendios forestales, salvamento aeroportuario, rescate en altura, espacios confinados y fugas de gas. Conviene consultar las etiquetas particulares de la corporación antes de asignarle un servicio."
  ],
  "equipoDuo": [
@@ -27,7 +27,7 @@
   },
   {
    "q": "¿Qué municipio tiene más estaciones y bomberos en Oaxaca?",
-   "a": "Oaxaca de Juárez tiene 3 estaciones registradas, la mayor concentración del directorio. Para encontrar bomberos en Oaxaca de Juárez se muestran el Heroico Cuerpo de Bomberos de Oaxaca y referencias de subestaciones, con sus datos publicados de manera individual."
+   "a": "Oaxaca de Juárez tiene 3 estaciones registradas, la mayor concentración del estado. Para encontrar bomberos en Oaxaca de Juárez se muestran el Heroico Cuerpo de Bomberos de Oaxaca y referencias de subestaciones, con sus datos publicados de manera individual."
   },
   {
    "q": "¿Quién opera las estaciones de bomberos en Oaxaca?",
