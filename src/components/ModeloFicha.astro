@@ -80,9 +80,9 @@ if (isTipo) {
 } else {
   const s1 = segmentoTitle(tituloModelo);
   if (llevaKeyword(s1)) h1Ficha = s1;
-  else {
+  else if (!llevaKeyword(nombre)) {
     const tipoNombre = (tipoDeModelo?.nombre ?? seccion.nombre).toLowerCase();
-    h1Accent = /bombero/.test(tipoNombre) ? tipoNombre : `${tipoNombre} para bombero`;
+    h1Accent = llevaKeyword(tipoNombre) ? tipoNombre : `${tipoNombre} para bombero`;
   }
 }
 const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
