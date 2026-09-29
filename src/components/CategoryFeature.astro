@@ -78,7 +78,7 @@ const { eyebrow, title, description, features, brands = [], ctaLabel, ctaHref, i
     background: var(--color-primary-light);
     border: 1px solid rgb(200 16 46 / 0.28);
     color: var(--color-primary);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
     line-height: 1;
   }
@@ -100,7 +100,7 @@ const { eyebrow, title, description, features, brands = [], ctaLabel, ctaHref, i
   }
   .feature-img--big { grid-column: 1 / -1; }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1023px) {
     .feature-grid, .feature-grid--flip .feature-text, .feature-grid--flip .feature-gallery { grid-template-columns: 1fr; order: initial; }
   }
 </style>

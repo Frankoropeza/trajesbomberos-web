@@ -10,11 +10,13 @@ interface Props {
   caption?: string;
   position?: string; // object-position, p.ej. 'center 40%'
   height?: 'band' | 'tall';
+  width: number;
+  heightPx: number;
 }
-const { src, alt, caption, position = 'center', height = 'band' } = Astro.props;
+const { src, alt, caption, position = 'center', height = 'band', width, heightPx } = Astro.props as Props;
 ---
 <section class={`photoband photoband--${height}`}>
-  <img src={src} {...responsive(src, SIZES.full)} alt={alt} loading="lazy" decoding="async" style={`object-position:${position}`} />
+  <img src={src} {...responsive(src, SIZES.full)} alt={alt} width={width} height={heightPx} loading="lazy" decoding="async" style={`object-position:${position}`} />
   {caption && <p class="photoband__cap"><span>{caption}</span></p>}
 </section>
 
@@ -44,7 +46,7 @@ const { src, alt, caption, position = 'center', height = 'band' } = Astro.props;
     letter-spacing: 0.01em;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .photoband__cap { padding: 1.6rem 1rem 1rem; }
     .photoband__cap span { font-size: 0.82rem; }
   }

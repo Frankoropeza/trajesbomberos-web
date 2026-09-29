@@ -79,14 +79,14 @@ import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf, enEst
     background: var(--color-primary);
     color: var(--color-white);
     font-family: var(--font-display);
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.08em;
   }
   .ri__title { margin: 0; font-size: 1.12rem; line-height: 1.2; }
   .ri__meta {
     margin: 0;
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -120,8 +120,6 @@ import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf, enEst
     font-variant-numeric: tabular-nums;
   }
   .ri__row svg { flex: none; color: var(--color-primary); }
-  .ri__row:hover { color: var(--color-primary); }
-  .ri__row:hover .ri__name { text-decoration: underline; text-underline-offset: 3px; }
   .ri__row:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
 
   /* Bloque de total nacional: tinta, como la cabecera de las cards de estado */
@@ -156,10 +154,21 @@ import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf, enEst
     text-align: center;
     text-decoration: none;
   }
-  .ri__cta:hover { background: var(--color-white); color: var(--color-dark); }
   .ri__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 
   @media (max-width: 1279px) { .ri { gap: 1rem; } }
   @media (max-width: 1023px) { .ri { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 559px) { .ri { grid-template-columns: 1fr; } }
+  @media (hover: hover) {
+    .ri__row:hover { color: var(--color-primary); }
+    .ri__row:hover .ri__name { text-decoration: underline; text-underline-offset: 3px; }
+    .ri__cta:hover { background: var(--color-white); color: var(--color-dark); }
+  }
+  @media (max-width: 767px) {
+    .ri { grid-template-columns: none; grid-auto-columns: 84%; grid-auto-flow: column; align-items: stretch; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: var(--container-px); scroll-snap-type: x mandatory; margin-inline: calc(var(--container-px) * -1); padding-inline: var(--container-px); scrollbar-color: var(--color-primary) var(--color-gray-light); scrollbar-width: thin; }
+    .ri__card { scroll-snap-align: start; }
+    .ri::-webkit-scrollbar { height: 4px; }
+    .ri::-webkit-scrollbar-thumb { background: var(--color-primary); }
+    .ri::-webkit-scrollbar-track { background: var(--color-gray-light); }
+  }
+  @media (max-width: 379px) { .ri { grid-auto-columns: 88%; } }
 </style>

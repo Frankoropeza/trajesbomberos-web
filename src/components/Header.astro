@@ -211,7 +211,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   .brand-claim {
     color: var(--color-gray);
     font-family: var(--font-display);
-    font-size: .62rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: .215em;
     text-transform: uppercase;
@@ -253,7 +253,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     white-space: nowrap;
   }
 
-  .nav-trigger:hover,.nav-trigger[aria-expanded='true'],.nav-item--active .nav-trigger {
+  .nav-trigger[aria-expanded='true'],.nav-item--active .nav-trigger {
     color: var(--color-primary);
   }
 
@@ -308,7 +308,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     color: var(--color-gray-soft);
     display: flex;
     gap: .55rem;
-    font-size: .68rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     line-height: 1.2;
@@ -322,10 +322,6 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     letter-spacing: 0;
     text-decoration: none;
     text-transform: none;
-  }
-
-  .mega__heading--link:hover {
-    color: var(--color-primary);
   }
 
   .mega__heading img {
@@ -354,10 +350,6 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     text-decoration: none;
   }
 
-  .mega__links a:hover {
-    background: var(--color-light);
-  }
-
   .mega__links a>span {
     color: var(--color-dark);
     display: block;
@@ -366,8 +358,17 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     line-height: 1.22;
   }
 
-  .mega__links a:hover>span {
-    color: var(--color-primary);
+  @media (hover: hover) {
+    .nav-trigger:hover,
+    .mega__heading--link:hover {
+      color: var(--color-primary);
+    }
+    .mega__links a:hover {
+      background: var(--color-light);
+    }
+    .mega__links a:hover > span {
+      color: var(--color-primary);
+    }
   }
 
   .mega__links small {
@@ -401,7 +402,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
 
   .mega__feature>p {
     color: var(--color-gray-soft);
-    font-size: .65rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     margin: .75rem .8rem .25rem;
@@ -489,9 +490,10 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     gap: 1rem;
   }
 
+  /* El teléfono solo cabe junto al menú en escritorio amplio (≥ 1440). */
   .header-phone {
     color: var(--color-dark);
-    display: flex;
+    display: none;
     flex-direction: column;
     font-size: .92rem;
     font-weight: 800;
@@ -502,7 +504,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
 
   .header-phone span {
     color: var(--color-gray-soft);
-    font-size: .63rem;
+    font-size: 0.75rem;
     letter-spacing: .08em;
     text-transform: uppercase;
   }
@@ -516,8 +518,14 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     display: none;
   }
 
-  .site-header:not(.js) .nav-item:hover .mega,.site-header:not(.js) .nav-item:focus-within .mega {
+  .site-header:not(.js) .nav-item:focus-within .mega {
     display: block;
+  }
+
+  @media (hover: hover) {
+    .site-header:not(.js) .nav-item:hover .mega {
+      display: block;
+    }
   }
 
   .site-header.js .nav-item.is-open .mega {
@@ -529,13 +537,13 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     outline-offset: 2px;
   }
 
-  @media(max-width:1439px) {
+  @media (min-width: 1440px) {
     .header-phone {
-      display: none;
+      display: flex;
     }
   }
 
-  @media(max-width:1279px) {
+  @media (max-width: 1279px) {
     .nav-desktop,.header-actions {
       display: none;
     }
@@ -680,7 +688,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     }
     p.mob-column__title {
       color: var(--color-gray-soft);
-      font-size: .7rem;
+      font-size: 0.75rem;
       letter-spacing: var(--tracking-wide);
       text-transform: uppercase;
       padding-top: .35rem;
@@ -739,19 +747,19 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     }
   }
 
-  @media(min-width:768px) and (max-width:1279px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     .mob-item__columns {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media(max-width:479px) {
+  @media (max-width: 479px) {
     .brand-claim,.header-cta-mobile {
       display: none;
     }
   }
 
-  @media(max-width:379px) {
+  @media (max-width: 379px) {
     .mob-actions__buttons {
       grid-template-columns: 1fr;
     }

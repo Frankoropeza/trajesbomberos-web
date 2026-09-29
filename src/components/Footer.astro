@@ -228,6 +228,9 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
   }
 
   .fcta__tel {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     color: var(--color-white);
     font-size: .95rem;
     font-weight: 800;
@@ -245,7 +248,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
     gap: .8rem;
     margin: 0 0 1.35rem;
     color: #d2d7dd;
-    font-size: .68rem;
+    font-size: .75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
@@ -304,7 +307,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
 
   .fcol__title {
     display: block;
-    font-size: .68rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
@@ -326,8 +329,11 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
     text-decoration: none;
   }
 
-  .fcol a:hover {
-    color: var(--color-accent);
+  @media (hover: hover) {
+    .fcol a:hover,
+    .fbottom a:hover {
+      color: var(--color-accent);
+    }
   }
 
   .fbrand__name {
@@ -353,7 +359,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
 
   .fbrand__lockup span {
     color: #d2d7dd;
-    font-size: .64rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: .215em;
     text-transform: uppercase;
@@ -383,7 +389,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
   .fnap dt {
     margin-bottom: .1rem;
     color: #9aa1ab;
-    font-size: .62rem;
+    font-size: .75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
@@ -438,7 +444,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
     border: 1px solid rgb(255 255 255 / .2);
     border-radius: var(--radius);
     color: #d2d7dd;
-    font-size: .64rem;
+    font-size: .75rem;
     font-weight: 700;
   }
 
@@ -484,9 +490,6 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
     text-decoration: none;
   }
 
-  .fbottom a:hover {
-    color: var(--color-accent);
-  }
 
   .faccent {
     height: 5px;

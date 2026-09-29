@@ -1,10 +1,15 @@
 ---
 // TileGrid: rejilla única de cards del index — 4 por fila en escritorio,
-// 2 en tablet, 1 en móvil. Los hijos son <TileCard> (elementos <li>).
-interface Props { cols?: 3 | 4; }
-const { cols = 4 } = Astro.props as Props;
+// 2 en tablet y carrusel accesible en móvil. stack se reserva para listas
+// donde la lectura vertical sea más apropiada que el descubrimiento lateral.
+interface Props {
+  cols?: 3 | 4;
+  stack?: boolean;
+  label?: string;
+}
+const { cols = 4, stack = false, label = 'Tarjetas del catálogo' } = Astro.props as Props;
 ---
-<ul class:list={['ct-grid', { 'ct-grid--3': cols === 3 }]}><slot /></ul>
+<ul class:list={['ct-grid', { 'ct-grid--3': cols === 3, 'ct-grid--stack': stack }]} aria-label={label} tabindex="0"><slot /></ul>
 
 <style>
   .ct-grid {
@@ -16,7 +21,49 @@ const { cols = 4 } = Astro.props as Props;
     padding: 0;
   }
   .ct-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  @media (max-width: 1279px) { .ct-grid { gap: 1rem; } }
-  @media (max-width: 1023px) { .ct-grid, .ct-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 559px) { .ct-grid, .ct-grid--3 { grid-template-columns: 1fr; } }
+  @media (max-width: 1279px) {
+    .ct-grid {
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 1023px) {
+    .ct-grid,
+    .ct-grid--3 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 767px) {
+    .ct-grid:not(.ct-grid--stack) {
+      display: grid;
+      grid-auto-columns: 84%;
+      grid-auto-flow: column;
+      grid-template-columns: none;
+      align-items: stretch;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-padding-inline: var(--container-px);
+      scroll-snap-type: x mandatory;
+      margin-inline: calc(var(--container-px) * -1);
+      padding-inline: var(--container-px);
+      scrollbar-color: var(--color-primary) var(--color-gray-light);
+      scrollbar-width: thin;
+    }
+    .ct-grid:not(.ct-grid--stack) > :global(*) {
+      scroll-snap-align: start;
+    }
+    .ct-grid:not(.ct-grid--stack)::-webkit-scrollbar {
+      height: 4px;
+    }
+    .ct-grid:not(.ct-grid--stack)::-webkit-scrollbar-thumb {
+      background: var(--color-primary);
+    }
+    .ct-grid:not(.ct-grid--stack)::-webkit-scrollbar-track {
+      background: var(--color-gray-light);
+    }
+  }
+  @media (max-width: 379px) {
+    .ct-grid:not(.ct-grid--stack) {
+      grid-auto-columns: 88%;
+    }
+  }
 </style>

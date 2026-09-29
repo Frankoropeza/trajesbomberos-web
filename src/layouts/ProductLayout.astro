@@ -55,6 +55,24 @@ const pageIndex = [
   { label: 'Otras familias', href: '#otras' },
 ];
 const cta = presetCategoria(f.nombreWa);
+// Tanda de metas P03–P09: H2 de la ficha de familia con la keyword de la familia
+// (antes genéricos: «Los datos que debe traer tu cotización», «Modelos disponibles»…).
+const KW_H2: Record<string, string> = {
+  estructural: 'trajes estructurales para bombero',
+  brigadista: 'trajes de bombero brigadista',
+  forestal: 'trajes forestales para bombero',
+  aproximacion: 'trajes aluminizados de aproximación',
+  entrada: 'trajes de entrada a la flama',
+  extricacion: 'trajes de extricación',
+  hazmat: 'trajes Hazmat',
+};
+const kwH2 = KW_H2[f.slug] ?? f.nombreWa.toLowerCase();
+// Forma corta para no repetir la keyword completa en todos los H2.
+const KW_CORTO: Record<string, string> = {
+  estructural: 'traje estructural', brigadista: 'traje de brigadista', forestal: 'traje forestal',
+  aproximacion: 'traje aluminizado', entrada: 'traje de entrada', extricacion: 'traje de extricación', hazmat: 'traje Hazmat',
+};
+const kwCorto = KW_CORTO[f.slug] ?? f.nombreWa.toLowerCase();
 const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Comparar familias de trajes para bomberos', href: '/trajes/' } };
 ---
 <PageLayout
@@ -99,7 +117,7 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
         <section id="piezas" class="block">
           <SectionHeading
             eyebrow="Qué se cotiza"
-            title={`Piezas y configuraciones de ${f.nombreWa.toLowerCase()}`}
+            title={`Piezas y configuraciones del ${kwCorto}`}
             description="Cada pieza se cotiza por separado o dentro del conjunto. Dinos cuáles necesitas y cuántos elementos vas a equipar." duo={duoFamilia(f.slug, 'cotiza')} />
           <TileGrid cols={3}>
             {tilesPiezas(f).map((t) => <TileCard {...t} />)}
@@ -110,7 +128,7 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
         <section id="especificar" class="block">
           <SectionHeading
             eyebrow="Qué pedir"
-            title="Los datos que debe traer tu cotización"
+            title={`Qué pedir en la cotización de ${kwH2}`}
             description="Cópialos tal cual en tu requisición. Si una oferta no puede darlos, todavía no es comparable con otra." duo={duoFamilia(f.slug, 'pedir')} />
           <ol class="pedir">
             {f.especificar.map((e, i) => (
@@ -127,7 +145,7 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
         <section id="complementos" class="block">
           <SectionHeading
             eyebrow="Para cerrar el conjunto"
-            title="Lo que se cotiza junto con el traje"
+            title={`Equipo que se cotiza junto con el ${kwCorto}`}
             description="No son nuestra línea principal, pero los conseguimos para que no armes el pedido con tres proveedores." duo={duoFamilia(f.slug, 'conjunto')} />
           <ul class="complementos-list">
             {COMPLEMENTOS.map((c) => (
@@ -140,7 +158,7 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
           <section id="marcas" class="block">
             <SectionHeading
               eyebrow="Referencia del mercado"
-              title={`Marcas de referencia en ${f.nombreWa.toLowerCase()}`}
+              title={`Marcas de referencia del ${kwCorto}`}
               description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo." duo={duoFamilia(f.slug, 'marcas')} />
             <ul class="marcas-list">
               {f.marcasRef.map((m) => (
@@ -152,7 +170,7 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
 
         {modelos.length > 0 && (
           <section id="modelos" class="block">
-            <SectionHeading eyebrow="Modelos" title="Modelos disponibles" description="Consulta la ficha de cada modelo antes de integrarlo a la partida." duo={duoFamilia(f.slug, 'modelos')} />
+            <SectionHeading eyebrow="Modelos" title={`Modelos de ${kwH2} disponibles`} description="Consulta la ficha de cada modelo antes de integrarlo a la partida." duo={duoFamilia(f.slug, 'modelos')} />
             <ModelosGrid modelos={modelos} cols={3} />
           </section>
         )}
@@ -161,7 +179,7 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
         <section id="faq" class="block">
           <SectionHeading
             eyebrow="Preguntas frecuentes"
-            title={`Dudas sobre ${f.nombreWa.toLowerCase()}`} duo={duoFamilia(f.slug, 'faq')} />
+            title={`Dudas sobre el ${kwCorto}`} duo={duoFamilia(f.slug, 'faq')} />
           <FAQWithContact items={f.faqs} />
         </section>
       </div>
@@ -287,10 +305,10 @@ const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Compa
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1279px) {
     .layout-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .pedir { grid-template-columns: 1fr; }
     .pedir li { border-left: 0 !important; padding-left: 0 !important; }
     .complementos-list { grid-template-columns: 1fr; }

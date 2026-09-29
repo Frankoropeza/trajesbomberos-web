@@ -14,7 +14,7 @@ const { grupos } = Astro.props;
   {grupos.map((g) => (
     <section class="spec__grupo">
       <h3 class="spec__titulo">{g.grupo}</h3>
-      <div class="spec__scroll" tabindex="0" role="region" aria-label={`Ficha técnica: ${g.grupo}`}>
+      <div class="spec__scroll table-scroll" tabindex="0" role="region" aria-label={`Ficha técnica: ${g.grupo}`}>
         <table>
           <tbody>
             {g.filas.map((f) => (
@@ -38,7 +38,7 @@ const { grupos } = Astro.props;
     margin: 0 0 0.8rem;
     padding-bottom: 0.6rem;
     border-bottom: 2px solid var(--color-primary);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
