@@ -65,7 +65,7 @@ const directoryItems = posts.map((p) => ({
   <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
       <div class="layout-main">
-        <SectionHeading eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
+        <SectionHeading clave="articulos" eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
         {posts.length > 0 ? (
           <div class="post-grid">
             {posts.map((p, i) => (
@@ -86,9 +86,9 @@ const directoryItems = posts.map((p) => ({
           <p class="vacio">Todavía no hay artículos publicados en esta categoría.</p>
         )}
         {cat.guia && (
-          <section class="cat-guia" aria-labelledby="cat-guia-t">
-            <h2 id="cat-guia-t">{cat.guia.titulo}</h2>
-            {cat.guia.parrafos.map((t) => <p>{t}</p>)}
+          <section class="cat-guia" aria-label={cat.guia.titulo}>
+            <SectionHeading eyebrow="Guía de la categoría" title={cat.guia.titulo} duo={cat.guia.parrafos.slice(0, 2)} />
+            {cat.guia.parrafos.slice(2).map((t) => <p>{t}</p>)}
             <ul class="cat-guia__links">
               {cat.guia.enlaces.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
             </ul>
@@ -110,9 +110,8 @@ const directoryItems = posts.map((p) => ({
     gap: var(--gap-grid);
   }
   .vacio { color: var(--color-gray); }
-  .cat-guia { margin-top: clamp(2.2rem, 3.5vw, 3.2rem); padding-top: clamp(1.8rem, 3vw, 2.6rem); border-top: var(--border); max-width: 72ch; }
-  .cat-guia h2 { font-size: var(--fs-h3); margin: 0 0 0.9rem; font-family: var(--font-display); }
-  .cat-guia p { margin: 0 0 1rem; color: var(--color-gray); line-height: 1.7; }
+  .cat-guia { margin-top: clamp(2.2rem, 3.5vw, 3.2rem); padding-top: clamp(1.8rem, 3vw, 2.6rem); border-top: var(--border); }
+  .cat-guia > p { max-width: 72ch; margin: 0 0 1rem; color: var(--color-gray); line-height: 1.7; }
   .cat-guia__links { list-style: none; margin: 1.2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .cat-guia__links a { display: inline-block; padding: 0.45rem 0.8rem; border: var(--border); border-radius: var(--radius); background: var(--color-white); font-size: 0.86rem; font-weight: 700; text-decoration: none; color: var(--color-dark); }
   .cat-guia__links a:hover { border-color: var(--color-primary); color: var(--color-primary); }

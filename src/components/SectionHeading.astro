@@ -4,16 +4,20 @@
 // Variante "duo": título izquierda, 2 párrafos derecha (admiten enlaces <a> internos:
 // las cadenas son texto propio del sitio, nunca entrada de usuario).
 // Un solo componente para todos los títulos: cero diseño duplicado.
+// `clave`: busca el dúo de esta página en src/lib/titulos/paginas.ts (ruta + clave) cuando no llega `duo`.
+import { duoPagina } from '@lib/titulos/paginas';
 interface Props {
   eyebrow: string;
   title: string;
   description?: string;
   duo?: string[];
+  clave?: string;
   dark?: boolean;
 }
-const { eyebrow, title, description, duo, dark = false } = Astro.props;
+const { eyebrow, title, description, clave, dark = false } = Astro.props;
+const duo = Astro.props.duo ?? (clave ? duoPagina(Astro.url.pathname, clave) : undefined);
 ---
-<div class:list={['sec-heading', { 'sec-heading--dark': dark, 'sec-heading--duo': !!duo }]}>
+<div class:list={['sec-heading', { 'sec-heading--dark': dark, 'sec-heading--duo': !!duo }]} data-clave={clave}>
   <div class="sec-heading__main">
     <p class="eyebrow sec-heading__eyebrow">{eyebrow}</p>
     <h2>{title}</h2>

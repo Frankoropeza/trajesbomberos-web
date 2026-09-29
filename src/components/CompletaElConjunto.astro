@@ -1,5 +1,6 @@
 ---
 import { SECCIONES } from '@lib/catalogo/secciones';
+import SectionHeading from '@components/SectionHeading.astro';
 
 const disponibles = new Set(SECCIONES.map((seccion) => seccion.slug));
 const opciones = [
@@ -11,9 +12,7 @@ const opciones = [
 ---
 {opciones.length > 0 && (
   <section class="conjunto" aria-label="Completa el conjunto">
-    <p class="conjunto__eyebrow">Equipo complementario</p>
-    <h2>Completa el conjunto</h2>
-    <p class="conjunto__lead">Selecciona cada componente por el riesgo y confirma la compatibilidad del sistema completo.</p>
+    <SectionHeading clave="completa" eyebrow="Equipo complementario" title="Completa el conjunto" description="Selecciona cada componente por el riesgo y confirma la compatibilidad del sistema completo." />
     <div class="conjunto__grid">
       {opciones.map((opcion) => (
         <a href={`/${opcion.slug}/`} class="conjunto__card">
@@ -26,9 +25,6 @@ const opciones = [
 
 <style>
   .conjunto { padding: 1.6rem; background: var(--color-light); border: var(--border); border-radius: var(--radius-lg); }
-  .conjunto__eyebrow { margin: 0 0 0.35rem; color: var(--color-primary); font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: var(--tracking-wide); }
-  h2 { margin: 0; font-size: 1.4rem; }
-  .conjunto__lead { margin: 0.5rem 0 1.1rem; color: var(--color-gray); }
   .conjunto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
   .conjunto__card { display: grid; gap: 0.35rem; padding: 1rem; background: var(--color-white); border: var(--border); border-radius: var(--radius); color: var(--color-dark); text-decoration: none; }
   .conjunto__card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); }
