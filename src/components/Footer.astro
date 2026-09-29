@@ -8,7 +8,7 @@
 // NO emite JSON-LD: el Organization vive en lib/seo.ts y lo emite
 // buildSchema desde BaseLayout (regla B3). NAP consistente con
 // Topbar y con el schema (SSoT en CONTACT).
-import { SITE, CONTACT, FOOTER_COLUMNS, WA_MESSAGES } from '@config/site';
+import { SITE, CONTACT, EMPRESA, FOOTER_COLUMNS, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 const year = new Date().getFullYear();
 ---
@@ -33,7 +33,7 @@ const year = new Date().getFullYear();
   <!-- Zona 2 · Marca + columnas -->
   <div class="container fbody">
     <div class="fbrand">
-      <p class="fbrand__name">{SITE.name}<span>.com</span></p>
+      <p class="fbrand__name"><img src="/images/marca/isotipo.svg" width="36" height="36" alt="" />{SITE.name}<span>.com</span></p>
       <p class="fbrand__claim">{CONTACT.posicionamiento}.</p>
 
       <dl class="fnap">
@@ -83,12 +83,14 @@ const year = new Date().getFullYear();
   <!-- Zona 4 · Barra inferior -->
   <div class="fbottom">
     <div class="container fbottom__inner">
-      <p>© {year} {SITE.legalName}. Todos los derechos reservados.</p>
+      <p>© {year} {EMPRESA.razonSocial ?? SITE.legalName}. Todos los derechos reservados.</p>
       <nav class="fbottom__nav" aria-label="Enlaces legales">
         <a href="/trajes/">Catálogo</a>
         <a href="/blog/">Blog</a>
         <a href="/empresa/">Empresa</a>
         <a href="/contacto/">Contacto</a>
+        <a href="/aviso-de-privacidad/">Aviso de privacidad</a>
+        <a href="/terminos-y-condiciones/">Términos y condiciones</a>
         <a class="fbottom__top" href="#main-content">Volver arriba ↑</a>
       </nav>
     </div>
@@ -148,12 +150,16 @@ const year = new Date().getFullYear();
     padding-block: clamp(2.4rem, 4vw, 3.4rem);
   }
   .fbrand__name {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
     margin: 0 0 0.4rem;
     font-size: 1.2rem;
     font-weight: 800;
     color: var(--color-white);
     letter-spacing: var(--tracking-tight);
   }
+  .fbrand__name img { flex: 0 0 auto; }
   .fbrand__name span { color: var(--color-accent); }
   .fbrand__claim { margin: 0 0 1.3rem; font-size: 0.86rem; max-width: 40ch; }
 

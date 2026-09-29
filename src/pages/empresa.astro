@@ -9,7 +9,8 @@ import SectionHeading from '@components/SectionHeading.astro';
 import CTABanner from '@components/CTABanner.astro';
 import PhotoBand from '@components/PhotoBand.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
-import { MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
+import { CONTACT, EMPRESA, MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
+import { HERO_GENERICO } from '@lib/imagenes';
 
 const path = '/empresa/';
 const keywords = ['proveedor de trajes para bomberos', 'empresa', 'México'] as const;
@@ -22,6 +23,7 @@ const menuItems = [
   { label: 'Cómo trabajamos', href: '#como-trabajamos' },
   { label: 'Qué entregamos', href: '#entregables' },
   { label: 'Marcas de referencia', href: '#marcas' },
+  { label: 'Datos', href: '#datos' },
   { label: 'Contacto', href: '/contacto/' },
 ];
 
@@ -69,6 +71,7 @@ const entregables = [
     'Eso cambia la conversación. En lugar de mandarte una lista de precios, te ayudamos a especificar: qué familia corresponde a tu operación, qué composite pedir, qué exigir en la ficha técnica y cómo comparar dos cotizaciones que dicen lo mismo y no son lo mismo.',
   ]}
   meta={['Cobertura: todo México', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
+  heroImage={HERO_GENERICO}
 >
   <div class="section">
     <div class="container">
@@ -139,6 +142,22 @@ const entregables = [
           </div>
         </div>
       </section>
+
+      <section id="datos" class="block empresa-datos">
+        <SectionHeading eyebrow="Atención" title="Datos de contacto y atención" />
+        <dl>
+          <div><dt>Nombre comercial</dt><dd>{EMPRESA.nombreComercial}</dd></div>
+          <div><dt>Teléfono y WhatsApp</dt><dd>{CONTACT.telefono}</dd></div>
+          <div><dt>Correo</dt><dd>{CONTACT.email}</dd></div>
+          <div><dt>Horario</dt><dd>{CONTACT.horario}</dd></div>
+          <div><dt>Cobertura</dt><dd>{CONTACT.cobertura}</dd></div>
+          <div><dt>Facturación</dt><dd>CFDI 4.0</dd></div>
+          {EMPRESA.razonSocial && <div><dt>Razón social</dt><dd>{EMPRESA.razonSocial}</dd></div>}
+          {EMPRESA.rfc && <div><dt>RFC</dt><dd>{EMPRESA.rfc}</dd></div>}
+          {EMPRESA.domicilio && <div><dt>Domicilio</dt><dd>{EMPRESA.domicilio}</dd></div>}
+          {EMPRESA.anioInicio && <div><dt>En operación desde</dt><dd>{EMPRESA.anioInicio}</dd></div>}
+        </dl>
+      </section>
     </div>
   </div>
 
@@ -193,7 +212,11 @@ const entregables = [
   .empresa-marcas { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
   .empresa-marcas h3 { margin: 0 0 1rem; font-size: 1.05rem; }
 
+  .empresa-datos dl { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem 2rem; }
+  .empresa-datos dt { margin-bottom: 0.15rem; color: var(--color-gray-soft); font-size: 0.62rem; font-weight: 800; letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+  .empresa-datos dd { margin: 0; color: var(--color-dark); font-size: 0.95rem; font-weight: 600; }
+
   @media (max-width: 768px) {
-    .empresa-list, .empresa-marcas { grid-template-columns: 1fr; }
+    .empresa-list, .empresa-marcas, .empresa-datos dl { grid-template-columns: 1fr; }
   }
 </style>

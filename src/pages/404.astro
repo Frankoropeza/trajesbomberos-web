@@ -1,0 +1,45 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { FAMILIAS } from '@lib/familias';
+import { WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+---
+
+<BaseLayout
+  pageType="generic"
+  path="/404.html"
+  title="Página no encontrada | TrajesBombero México"
+  description="La página solicitada no está disponible. Consulta las secciones principales de TrajesBombero México."
+  noindex
+>
+  <section class="not-found">
+    <div class="container">
+      <p class="not-found__eyebrow">Error 404</p>
+      <h1>Esta página no existe</h1>
+      <p class="not-found__lead">Puede que la dirección haya cambiado. Estas son las secciones principales del sitio.</p>
+      <div class="not-found__grid">
+        {FAMILIAS.map((familia) => <a href={`/trajes/${familia.slug}/`}>{familia.nombreWa}</a>)}
+      </div>
+      <nav class="not-found__links" aria-label="Secciones principales">
+        <a href="/trajes/">Ver todos los trajes</a>
+        <a href="/blog/">Ir al blog</a>
+        <a href="/contacto/">Contacto</a>
+        <a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
+      </nav>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found { background: var(--color-ink); color: var(--color-white); padding-block: clamp(4rem, 9vw, 8rem); }
+  .not-found > .container { max-width: 1040px; }
+  .not-found__eyebrow { color: var(--color-accent); font-family: var(--font-display); font-size: var(--fs-xs); font-weight: 700; letter-spacing: var(--tracking-wide); margin: 0 0 0.8rem; text-transform: uppercase; }
+  h1 { font-family: var(--font-display); font-size: var(--fs-h1); margin: 0 0 1rem; }
+  .not-found__lead { color: #c8ccd2; font-size: var(--fs-lead); margin: 0; max-width: 65ch; }
+  .not-found__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: rgb(255 255 255 / 0.16); border: 1px solid rgb(255 255 255 / 0.16); margin-top: 2.5rem; }
+  .not-found__grid a { background: var(--color-ink-soft); color: var(--color-white); font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; padding: 1.25rem; text-decoration: none; }
+  .not-found__grid a:hover { background: var(--color-primary); }
+  .not-found__links { align-items: center; display: flex; flex-wrap: wrap; gap: 1rem 1.6rem; margin-top: 2rem; }
+  .not-found__links > a:not(.btn) { color: var(--color-accent); font-weight: 700; text-underline-offset: 3px; }
+  @media (max-width: 720px) { .not-found__grid { grid-template-columns: 1fr; } }
+</style>

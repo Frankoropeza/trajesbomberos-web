@@ -31,6 +31,7 @@ interface Props extends SchemaInput {
   path?: string;
   keywords?: readonly string[];   // tripleta propia de la página
   ogImage?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -45,6 +46,7 @@ const {
   path = '/',
   keywords,
   ogImage: ogImagePath,
+  noindex = false,
 } = Astro.props;
 
 const canonical = new URL(path, SITE.url).href;
@@ -65,10 +67,11 @@ if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" as="font" type="font/woff2" href={barlowSemiCondensed700} crossorigin />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="theme-color" content="#c8102e" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
     <meta name="author" content={SITE.legalName} />
     <meta name="geo.region" content="MX" />
     <meta property="og:type" content="website" />

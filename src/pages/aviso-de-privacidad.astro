@@ -1,0 +1,44 @@
+---
+import { getEntry } from 'astro:content';
+import PageLayout from '@layouts/PageLayout.astro';
+import { CONTACT, EMPRESA } from '@config/site';
+import { HERO_GENERICO } from '@lib/imagenes';
+
+const legal = await getEntry('legal', 'aviso-de-privacidad');
+if (!legal) throw new Error('No se encontró el aviso de privacidad.');
+
+const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (character) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;',
+}[character] ?? character));
+const responsable = EMPRESA.razonSocial ?? EMPRESA.nombreComercial;
+const email = escapeHtml(CONTACT.email);
+const domicilio = EMPRESA.domicilio
+  ? `<p>Domicilio del responsable: ${escapeHtml(EMPRESA.domicilio)}.</p>`
+  : '';
+const body = (legal.rendered?.html ?? '')
+  .replace('<p>{{DOMICILIO}}</p>', domicilio)
+  .replaceAll('{{RESPONSABLE}}', escapeHtml(responsable))
+  .replaceAll('{{EMAIL}}', `<a href="mailto:${email}">${email}</a>`);
+const actualizado = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }).format(legal.data.actualizado);
+---
+
+<PageLayout
+  pageType="generic"
+  path="/aviso-de-privacidad/"
+  title="Aviso de privacidad | TrajesBombero México"
+  description={legal.data.description}
+  crumbLabel={legal.data.title}
+  eyebrow="Legal"
+  h1={legal.data.title}
+  lead={legal.data.description}
+  descRight={[`Última actualización: ${actualizado}.`, `Si tienes dudas sobre este documento escríbenos a ${CONTACT.email}.`]}
+  heroImage={HERO_GENERICO}
+>
+  <div class="section">
+    <div class="container"><article class="prose legal-prose" set:html={body} /></div>
+  </div>
+</PageLayout>
+
+<style>
+  .legal-prose { margin-inline: auto; }
+</style>
