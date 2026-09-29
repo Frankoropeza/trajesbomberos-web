@@ -1,255 +1,168 @@
 ---
-// L2 · Índice de sección "Trajes".
-// Aquí viven los módulos completos de las 7 familias (la home solo
-// lleva las cards, para no duplicar contenido y no canibalizar).
-// Cada módulo cierra enlazando a su L3: /trajes/<slug>/
+// L2 · /trajes/ — primera categoría homologada con la home (L1), 2026-09-29.
+// Plantilla L2: hero sólido → franja de secciones → tipos (TileGrid) → cómo elegir
+// (L2Guia + cuerpo Markdown con H3/H4) → familias a fondo (CategorySpotlight, H3) →
+// banda de foto → modelos (ModelosGrid) → comparativas (RiskGuide ×2) → FAQ con
+// formulario de WhatsApp → guías del blog (4 fichas) → QuoteCTA → footer.
+// Texto editorial: src/content/categorias/trajes.md (esquema estricto). Datos de
+// catálogo (familias, modelos, estatus normativo): sus fuentes en src/lib/.
+import { getEntry, render } from 'astro:content';
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
-import { tilesFamilias, tileConjunto } from '@lib/catalogo/tiles';
-import CategoryFeature from '@components/CategoryFeature.astro';
-import RiskGuide from '@components/RiskGuide.astro';
+import CategorySpotlight from '@components/home/CategorySpotlight.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
+import RiskGuide from '@components/RiskGuide.astro';
 import PhotoBand from '@components/PhotoBand.astro';
-import { PRESET_CONTACTO } from '@lib/cta-presets';
-import { SITE, PRODUCT_CATEGORIES } from '@config/site';
-import { FAMILIAS } from '@lib/familias';
-import PostCard from '@components/PostCard.astro';
 import ModelosGrid from '@components/ModelosGrid.astro';
-import { duoTrajes } from '@lib/titulos';
-import { getPosts, postUrl, readingTime } from '@lib/blog';
-import { HERO_GENERICO } from '@lib/imagenes';
+import PostCard from '@components/PostCard.astro';
+import QuoteCTA from '@components/home/QuoteCTA.astro';
+import L2Guia from '@components/l2/L2Guia.astro';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { SITE, WA_MESSAGES } from '@config/site';
+import { tilesFamilias, tileConjunto, ctaFamilia, estadoModelo } from '@lib/catalogo/tiles';
+import { MODELOS, urlModelo } from '@lib/catalogo/modelos';
+import { FAMILIAS } from '@lib/familias';
+import { heroDeFamilia } from '@lib/imagenes';
+import { dimensiones } from '@lib/img';
+import { waUrl } from '@lib/wa';
+import { guiasParaRuta, postUrl, readingTime } from '@lib/blog';
+import type { SpotProps } from '@lib/spotlights/types';
 
-const path = '/trajes/';
-
-// Franja de secciones de ESTA página
+const entrada = await getEntry('categorias', 'trajes');
+if (!entrada) throw new Error('Falta la entrada de contenido categorias/trajes.');
+const { Content } = await render(entrada);
+const d = entrada.data;
+const modelos = MODELOS.filter((m) => m.seccion === 'trajes');
+const guias = await guiasParaRuta(d.ruta, 4);
 const menuItems = [
-  { label: 'Familias de trajes para bomberos', href: '#familias' },
+  { label: 'Tipos de traje de bombero', href: '#tipos' },
+  { label: 'Cómo elegir un traje', href: '#elegir' },
+  { label: 'Familias a fondo', href: '#familias' },
   { label: 'Modelos de trajes de bombero', href: '#modelos' },
   { label: 'Comparativa de trajes', href: '#comparar' },
-  { label: 'Preguntas sobre trajes de bombero', href: '#faq' },
-  { label: 'Blog técnico de trajes', href: '#blog' },
-  { label: 'Normas para trajes de bombero', href: '/blog/categoria/normas/' },
+  { label: 'Preguntas sobre trajes', href: '#faq' },
+  { label: 'Guías de trajes para bomberos', href: '#guias' },
 ];
-
-// Metas P02 (tanda de metas 2026-09-29): keyword natural, sin marca, sin «México»,
-// sin pipes. Ahrefs MX: traje de bombero profesional 90 (KD 0, TP 70, parent
-// «trajes de bomberos» 200) · traje de bombero completo 60 · cuánto cuesta un
-// traje de bombero profesional 20. «tipos de trajes de bombero» ≈ 0–10.
-const keywords = ['traje de bombero profesional', 'traje de bombero completo', 'trajes de bomberos'] as const;
-const title = 'Traje de bombero profesional: tipos, modelos y ficha técnica';
-const description =
-  'Traje de bombero profesional por tipo de riesgo: estructural, brigadista, forestal, aluminizado y Hazmat. Compara modelos y cotiza completo o por pieza.';
-
-const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
-const guiaRows = [
-  ['Estructural', 'Incendio en edificaciones, ataque interior', 'Tres capas: exterior + barrera de humedad + barrera térmica', 'Casco, monja, botas, guantes, ERA'],
-  ['Brigadista', 'Conato de incendio en industria, primera respuesta', 'Menor gramaje y alcance de protección que el estructural', 'Casco, guantes, botas, escafandra'],
-  ['Forestal', 'Incendio de vegetación, jornadas largas en campo', 'Una sola capa de tela ignífuga inherente, ligera y transpirable', 'Casco forestal, goggles, guantes, botas sin puntera'],
-  ['Aproximación', 'Trabajo cerca de calor radiante: ARFF, refinería, colada', 'Exterior aluminizado, uso prolongado, movilidad conservada', 'Capucha aluminizada, guantes, botas'],
-  ['Entrada', 'Ingreso breve a la flama: horno, incidente térmico severo', 'Aluminizado multicapa, pesado, uso corto de emergencia', 'Conjunto completo con ERA'],
-  ['Extricación', 'Rescate vehicular y técnico', 'Ligero, resistente a corte y punción, barrera contra patógenos', 'Guante de extricación, casco, goggles'],
-  ['Hazmat', 'Materiales peligrosos: derrame, fuga o salpicadura química', 'Barrera química por nivel (A encapsulado, B o C) elegida por sustancia', 'ERA, guantes y botas químicas compatibles'],
+const directoryItems = [
+  ...tilesFamilias().map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
+  ...modelos.map((m) => ({ name: `${m.marca} ${m.nombre}`, url: `${SITE.url}${urlModelo(m)}` })),
 ];
-const guiaNote =
-  'Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar.';
+const familiaSlug: Record<string, string> = {
+  Estructural: 'estructural', Brigadista: 'brigadista', Forestal: 'forestal', Aproximación: 'aproximacion',
+  Entrada: 'entrada', Extricación: 'extricacion', Hazmat: 'hazmat',
+};
+const familiaRows = d.comparativaFamilias.filas.map(([familia, ...celdas]) => [
+  { texto: familia, href: `/trajes/${familiaSlug[familia]}/` },
+  ...celdas,
+]);
+// Familias a fondo: mismo módulo spotlight que la home (CategorySpotlight), con H3
+// porque cuelga del H2 de la sección. Texto de FAMILIAS (SSoT de L1/L2/L3), escena de
+// HERO_POR_FAMILIA y puntos/leyendas del .md de la categoría.
+const medidas = (src: string) => dimensiones(src) ?? { width: 1000, height: 1250 };
+// Nombre de la familia en botón y mensaje de WhatsApp cuando `nombreWa` no dice «trajes».
+const NOMBRE_COTIZAR: Record<string, string> = { extricacion: 'Trajes de extricación', hazmat: 'Trajes Hazmat' };
+const spotlights: SpotProps[] = FAMILIAS.map((f, index) => {
+  const x = d.familias.find((familia) => familia.slug === f.slug);
+  if (!x) throw new Error(`Falta contenido para la familia ${f.slug}.`);
+  const escena = heroDeFamilia(f.slug);
+  const [producto1, producto2] = f.images;
+  return {
+    id: `familia-${f.slug}`,
+    numero: String(index + 1).padStart(2, '0'),
+    eyebrow: f.eyebrow,
+    titulo: f.title,
+    parrafos: [f.description],
+    puntos: x.puntos,
+    cta: { label: ctaFamilia(f.slug), href: `/trajes/${f.slug}/` },
+    wa: {
+      label: `Cotizar ${(NOMBRE_COTIZAR[f.slug] ?? f.nombreWa).replace(/^Trajes/, 'trajes')}`,
+      href: waUrl(WA_MESSAGES.categoria(NOMBRE_COTIZAR[f.slug] ?? f.nombreWa)),
+    },
+    imagenes: [
+      { ...escena, ...medidas(escena.src), caption: x.leyendas[0] },
+      { ...producto1, ...medidas(producto1.src), caption: x.leyendas[1], pos: 'center 18%' },
+      { ...producto2, ...medidas(producto2.src), caption: x.leyendas[2], pos: 'center 18%' },
+    ],
+    nivel: 3,
+  };
+});
 
-const faqs = [
-  {
-    q: '¿Cuántos tipos de trajes para bomberos hay?',
-    a: 'En el mercado mexicano se manejan siete familias que no son intercambiables: estructural, brigadista, forestal, aproximación, entrada, extricación y Hazmat. Cada una responde a un riesgo distinto: elegir por precio y no por operación es lo que provoca la mayoría de los problemas.',
-  },
-  {
-    q: '¿Cuál es la diferencia entre un traje estructural y uno de brigadista?',
-    a: 'El alcance de protección. El estructural lleva tres capas y está pensado para ataque interior en una edificación en llamas. El de brigadista está pensado para conato de incendio en industria: primera respuesta, control con extintor y evacuación. Se parecen a la vista y cuestan muy distinto.',
-  },
-  {
-    q: '¿Puedo usar un traje forestal para un incendio estructural?',
-    a: 'No. El forestal es de una sola capa, sin barrera de humedad ni barrera térmica: está diseñado para jornadas largas en línea de fuego, no para el calor y el vapor de un interior. Al revés tampoco: un estructural en línea forestal provoca golpe de calor.',
-  },
-  {
-    q: '¿Qué diferencia hay entre aproximación y entrada?',
-    a: 'Aproximación es para trabajar cerca del calor radiante de forma prolongada, conservando movilidad. Entrada permite el ingreso breve a la flama y es multicapa, pesado y de uso corto. Comprar uno pensando que hace lo del otro es el error más peligroso del catálogo.',
-  },
-  {
-    q: '¿Necesito un traje distinto para rescate vehicular?',
-    a: 'Es muy recomendable. El de extricación resiste corte y punción y trae barrera contra patógenos, y evita que contamines y desgastes el traje estructural en salidas que no son de incendio. Considerando que el estructural se retira a los diez años de fabricado, cuidarlo tiene un valor económico directo.',
-  },
-  {
-    q: '¿Qué es un traje de bombero profesional y en qué se diferencia de uno completo?',
-    a: 'Profesional suele referirse a un conjunto estructural certificado (NFPA 1970, antes 1971) para cuerpos de bomberos, frente a un traje de brigadista para conato en industria. «Traje de bombero completo» se refiere al conjunto: chaquetón y pantalonera más casco, monja, guantes, botas y ERA. Cotizamos ambas cosas: el traje solo o el kit completo por operación.',
-  },
-  {
-    q: '¿Cuánto cuesta un traje de bombero profesional?',
-    a: 'Depende de la familia, del composite de cada capa (Nomex, PBI o Kevlar), de la norma que exige tu pliego y de si compras el traje completo o por pieza: un traje de brigadista y un estructural certificado se parecen a la vista y cuestan muy distinto. No publicamos precios; cotizamos en día hábil con ficha técnica por partida. Los factores que mueven el precio los explicamos en la guía del blog sobre cuánto cuesta un traje de bombero.',
-  },
-  {
-    q: '¿Cuál es la norma vigente para trajes de bombero?',
-    a: 'Para estructural, NFPA 1970 edición 2025, que absorbió a la NFPA 1971. Para forestal y rescate técnico, NFPA 1950, que integró a la 1951, la 1977 y la 1999. El ciclo de servicio se rige por NFPA 1850, que integró a la 1851 y la 1852. Muchas licitaciones mexicanas todavía redactan los números viejos y podemos documentar la correspondencia.',
-  },
-  {
-    q: '¿Venden por pieza o solo el conjunto completo?',
-    a: 'Las dos formas. Puedes pedir solo chaquetón, solo pantalonera o el conjunto completo, sin compra mínima. Si combinas piezas de distintos cortes conviene revisarlo con nosotros: la interfaz entre chaquetón y pantalón es zona crítica.',
-  },
-];
-
-// Lectura recomendada antes de decidir familia
-const ultimosPosts = (await getPosts()).slice(0, 4);
-
-const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
-  name: c.nombre,
-  url: `${SITE.url}/trajes/${c.slug}/`,
-}));
+const pendiente = 'Se confirma al cotizar';
+const modeloRows = modelos.map((m) => {
+  const familia = FAMILIAS.find((f) => f.slug === m.familia);
+  return [
+    { texto: `${m.marca} ${m.nombre}`, href: urlModelo(m) },
+    familia?.nombreWa ?? pendiente,
+    m.capaExterior ?? m.material ?? pendiente,
+    m.barreras ?? pendiente,
+    m.norma ?? pendiente,
+    estadoModelo(m).label,
+  ];
+});
 ---
 <PageLayout
   pageType="directorio"
-  path={path}
-  title={title}
-  description={description}
-  keywords={keywords}
+  path={d.ruta}
+  title={d.seo.title}
+  description={d.seo.description}
+  keywords={d.seo.keywords}
   menuItems={menuItems}
-  crumbLabel="Trajes"
-  eyebrow="Trajes por tipo de riesgo"
-  h1="Traje de bombero profesional"
-  h1Accent="por tipo de riesgo"
-  lead="Estructural, brigadista, forestal, aproximación, entrada, extricación y Hazmat: siete tipos de trajes para bomberos que no son intercambiables y que responden a siete riesgos distintos."
-  meta={['7 familias de traje', 'Comparativa técnica', 'Sin compra mínima', 'Envíos a los 32 estados']}
-  descRight={[
-    'Elegir mal la familia de traje es el error más caro del sector, y casi siempre ocurre por comparar precios entre equipos que no protegen para lo mismo. Aquí está cada familia explicada con el criterio con el que se especifica en una requisición: qué construcción lleva, para qué operación está pensada y en qué caso conviene otra.',
-    'En LORICA cotizamos con ficha técnica desde el primer mensaje, sobre la norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y con factura CFDI. Sin compra mínima: por pieza o conjunto completo, con envíos a los 32 estados.',
-  ]}
-  faqs={faqs}
+  crumbLabel={d.crumb}
+  eyebrow={d.hero.eyebrow}
+  h1={d.hero.h1}
+  h1Accent={d.hero.h1Accent}
+  lead={d.hero.lead}
+  descRight={d.hero.descRight}
+  meta={d.hero.meta}
+  faqs={d.faqs}
   directoryItems={directoryItems}
-  heroImage={HERO_GENERICO}
+  collection={{ name: `${d.hero.h1} ${d.hero.h1Accent ?? ''}`.trim(), description: d.seo.description, url: d.ruta }}
   footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
-  <!-- Índice rápido de las 7 familias -->
-  <section class="section">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Las siete familias"
-        title="Tipos de traje de bombero según tu operación"
-        description="Si ya sabes cuál necesitas, entra directo a su ficha. Si no, la tabla comparativa de más abajo te ubica en un minuto."
-        duo={duoTrajes('familias')}
-      />
-      <TileGrid>
-        {[...tilesFamilias(), tileConjunto(tilesFamilias().length + 1)].map((t) => <TileCard {...t} />)}
-      </TileGrid>
-    </div>
-  </section>
-
-  <!-- Módulos completos: todos idénticos, sin zig-zag -->
-  <section class="section section--alt" id="familias">
-    <div class="container">
-      <SectionHeading
-        eyebrow="A fondo"
-        title="Cada tipo de traje para bomberos, explicado a fondo"
-        description="Sin adornos: para qué está hecha, qué se le pide en una cotización y en qué caso conviene otra."
-        duo={duoTrajes('afondo')}
-      />
-      {FAMILIAS.map((f) => (
-        <div class="familia">
-          <CategoryFeature
-            eyebrow={f.eyebrow}
-            title={f.title}
-            description={f.description}
-            features={f.features}
-            brands={f.brands}
-            images={f.images}
-            ctaLabel={`Especificar ${f.nombreWa.toLowerCase()}`}
-            ctaHref={`/trajes/${f.slug}/`}
-          />
-        </div>
-      ))}
-    </div>
-  </section>
-
-  <PhotoBand
-    src="/images/escenas/estacion-bomberos-trajes-percha.avif"
-    alt="Trajes estructurales colgados en la percha de equipo de una estación de bomberos"
-    width={1376}
-    heightPx={768}
-    caption="Siete familias de traje, cada una para una operación distinta. Te ayudamos a elegir la que corresponde antes de cotizar."
-  />
-
-  <!-- Modelos reales (palanca SEO del clúster «trajes de bomberos») -->
-  <section class="section" id="modelos">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Modelos disponibles"
-        title="Modelos de traje de bombero profesional que cotizamos"
-        description="Romak Fire, Sköld y Lakeland, con foto del fabricante, configuración por escrito y estatus normativo declarado en cada ficha."
-        duo={duoTrajes('modelos')}
-      />
-      <ModelosGrid />
-    </div>
-  </section>
-
-  <!-- Comparativa -->
-  <section class="section section--alt" id="comparar">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Comparativa"
-        title="Comparativa de trajes de bomberos por tipo de riesgo"
-        description="La misma tabla que usamos por teléfono cuando alguien no sabe por dónde empezar."
-        duo={duoTrajes('comparativa')}
-      />
-      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
-    </div>
-  </section>
-
-  <!-- FAQ de la sección -->
-  <section class="section" id="faq">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Preguntas frecuentes"
-        title="Preguntas sobre el traje de bombero profesional"
-        duo={duoTrajes('faq')}
-      />
-      <FAQWithContact items={faqs} />
-    </div>
-  </section>
-
-
-  <!-- Blog técnico: interlinking al contenido editorial -->
-  <section class="section " id="blog">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Blog técnico"
-        title="Guías para elegir traje de bombero antes de cotizar"
-        description="Las guías que resuelven las dudas que aparecen justo antes de emitir una requisición: qué familia toca, qué norma citar y qué datos hacen comparable una cotización."
-        duo={duoTrajes('blog')}
-      />
-      <div class="grid-cards grid-cards--4">
-        {ultimosPosts.map((a, i) => (
-          <PostCard
-            href={postUrl(a)}
-            title={a.data.title}
-            resumen={a.data.resumen}
-            categoria={a.data.categoria}
-            lectura={readingTime(a.body)}
-            image={a.data.imagen}
-            imageAlt={a.data.imagenAlt}
-            destacado={a.data.destacado}
-            index={i}
-          />
-        ))}
-      </div>
-      <p class="blog-cta"><a href="/blog/">Blog técnico de trajes para bomberos: todas las guías →</a></p>
-    </div>
-  </section>
-
+  <section class="section" id="tipos"><div class="container">
+    <SectionHeading eyebrow={d.secciones.tipos.eyebrow} title={d.secciones.tipos.titulo} duo={d.secciones.tipos.duo} />
+    <TileGrid>{[...tilesFamilias(), tileConjunto(tilesFamilias().length + 1)].map((tile) => <TileCard {...tile} />)}</TileGrid>
+  </div></section>
+  <section class="section section--alt" id="elegir"><div class="container">
+    <SectionHeading eyebrow={d.secciones.elegir.eyebrow} title={d.secciones.elegir.titulo} duo={d.secciones.elegir.duo} />
+    <L2Guia conjunto={d.conjunto}><Content /></L2Guia>
+  </div></section>
+  <section class="section" id="familias"><div class="container">
+    <SectionHeading eyebrow={d.secciones.familias.eyebrow} title={d.secciones.familias.titulo} duo={d.secciones.familias.duo} />
+    {spotlights.map((spot) => <CategorySpotlight {...spot} />)}
+  </div></section>
+  <PhotoBand src={d.fotoBanda.src} alt={d.fotoBanda.alt} width={d.fotoBanda.width} heightPx={d.fotoBanda.height} caption={d.fotoBanda.caption} />
+  <section class="section" id="modelos"><div class="container">
+    <SectionHeading eyebrow={d.secciones.modelos.eyebrow} title={d.secciones.modelos.titulo} duo={d.secciones.modelos.duo} /><ModelosGrid />
+  </div></section>
+  <section class="section section--alt" id="comparar"><div class="container">
+    <SectionHeading eyebrow={d.secciones.comparar.eyebrow} title={d.secciones.comparar.titulo} duo={d.secciones.comparar.duo} />
+    <div class="comparison-block"><h3>{d.comparativaFamilias.titulo}</h3><RiskGuide columns={d.comparativaFamilias.columnas} rows={familiaRows} note={d.comparativaFamilias.nota} caption={d.comparativaFamilias.caption} ariaLabel={d.comparativaFamilias.caption} sinCta /></div>
+    <div class="comparison-block comparison-block--modelos"><h3>{d.comparativaModelos.titulo}</h3><RiskGuide columns={['Modelo', 'Familia', 'Capa exterior o material', 'Barreras', 'Norma de referencia declarada', 'Estatus normativo']} rows={modeloRows} note={d.comparativaModelos.nota} caption={d.comparativaModelos.caption} ariaLabel={d.comparativaModelos.caption} ctaLabel={d.comparativaModelos.wa.label} waMensaje={d.comparativaModelos.wa.mensaje} /></div>
+  </div></section>
+  <section class="section" id="faq"><div class="container">
+    <SectionHeading eyebrow={d.secciones.faq.eyebrow} title={d.secciones.faq.titulo} duo={d.secciones.faq.duo} /><FAQWithContact items={d.faqs} asunto={d.contacto.asunto} boton={d.contacto.boton} />
+  </div></section>
+  <section class="section section--alt" id="guias"><div class="container">
+    <SectionHeading eyebrow={d.secciones.guias.eyebrow} title={d.secciones.guias.titulo} duo={d.secciones.guias.duo} />
+    <div class="grid-cards grid-cards--4">{guias.map((a, index) => <PostCard href={postUrl(a)} title={a.data.title} resumen={a.data.resumen} categoria={a.data.categoria} lectura={readingTime(a.body)} image={a.data.imagen} imageAlt={a.data.imagenAlt} destacado={a.data.destacado} ancla={a.data.ancla} {index} />)}</div>
+    <p class="blog-cta"><a href="/blog/">Blog técnico de trajes para bomberos: todas las guías →</a></p>
+  </div></section>
+  <QuoteCTA id="cotizar" titulo={d.cotizar.titulo} boton={d.cotizar.boton} mensaje={d.cotizar.mensaje} />
 </PageLayout>
-
 <style>
+  /* Mismo ritmo que CategorySpotlights de la home: separador entre módulos. */
+  #familias :global(.spot + .spot) {
+    margin-top: var(--section-y);
+    padding-top: var(--section-y);
+    border-top: var(--border);
+  }
+  .comparison-block h3 { margin: 0 0 1rem; font-family: var(--font-display); font-size: 1.3rem; }
+  .comparison-block--modelos { margin-top: 3rem; }
+  /* Enlace de cierre del blog: idéntico a la home. */
   .blog-cta { margin: 2.2rem 0 0; }
   .blog-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
   .blog-cta a:hover { text-decoration: underline; }
-  .familia {
-    padding-block: clamp(2.2rem, 3.5vw, 3.4rem);
-    border-top: var(--border);
-  }
-  .familia:first-of-type { border-top: 0; padding-top: 0; }
-  .familia:last-of-type { padding-bottom: 0; }
 </style>

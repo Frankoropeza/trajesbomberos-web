@@ -92,4 +92,85 @@ const legal = defineCollection({
   }).strict(),
 });
 
-export const collections = { productos, blog, legal };
+// ============================================================
+// CATEGORÍAS (L2) — un .md por hub de categoría (/trajes/, …).
+// Frontmatter = textos de la página (metas, hero, dúos de sección,
+// tablas, FAQ, CTA); cuerpo Markdown = guía «Cómo elegir» con H3/H4.
+// La plantilla toma los datos del catálogo (familias, modelos) de
+// sus fuentes; aquí solo vive el texto editorial. Esquema estricto:
+// una clave desconocida rompe el build.
+// ============================================================
+const ruta = z.string().regex(/^\/[a-z0-9\-\/]*\/$/);
+const duoSeccion = z.object({
+  eyebrow: z.string(),
+  titulo: z.string(),                        // H2 de la sección
+  duo: z.array(z.string().min(120)).length(2),
+}).strict();
+const enlace = z.object({ label: z.string(), href: ruta }).strict();
+const wa = z.object({ label: z.string(), mensaje: z.string().min(20) }).strict();
+const tabla = {
+  titulo: z.string(),                        // H3 sobre la tabla
+  caption: z.string(),                       // <caption> accesible
+  nota: z.string(),
+};
+
+const categorias = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/categorias' }),
+  schema: z.object({
+    ruta,
+    crumb: z.string(),
+    seo: z.object({
+      title: z.string().max(65),
+      description: z.string().min(110).max(165),
+      keywords: z.array(z.string()).length(3),
+    }).strict(),
+    hero: z.object({
+      eyebrow: z.string(),
+      h1: z.string(),
+      h1Accent: z.string().optional(),
+      lead: z.string(),
+      descRight: z.array(z.string()).length(2),
+      meta: z.array(z.string()).max(4).default([]),
+    }).strict(),
+    secciones: z.object({
+      tipos: duoSeccion,
+      elegir: duoSeccion,
+      familias: duoSeccion,
+      modelos: duoSeccion,
+      comparar: duoSeccion,
+      faq: duoSeccion,
+      guias: duoSeccion,
+    }).strict(),
+    conjunto: z.object({
+      titulo: z.string(),
+      intro: z.string(),
+      items: z.array(enlace).min(4),
+      dato: z.string().optional(),
+      cta: enlace,
+      wa,
+    }).strict(),
+    familias: z.array(z.object({
+      slug: z.string(),
+      leyendas: z.array(z.string()).length(3),
+      puntos: z.array(z.object({ titulo: z.string(), texto: z.string() }).strict()).length(4),
+    }).strict()).min(1),
+    fotoBanda: z.object({
+      src: z.string(),
+      alt: z.string().min(10),
+      width: z.number(),
+      height: z.number(),
+      caption: z.string(),
+    }).strict(),
+    comparativaFamilias: z.object({
+      ...tabla,
+      columnas: z.array(z.string()).min(3),
+      filas: z.array(z.array(z.string()).min(3)).min(2),
+    }).strict(),
+    comparativaModelos: z.object({ ...tabla, wa }).strict(),
+    faqs: z.array(z.object({ q: z.string(), a: z.string().min(120) }).strict()).min(6),
+    contacto: z.object({ asunto: z.string(), boton: z.string() }).strict(),
+    cotizar: z.object({ titulo: z.string(), boton: z.string(), mensaje: z.string().min(20) }).strict(),
+  }).strict(),
+});
+
+export const collections = { productos, blog, legal, categorias };

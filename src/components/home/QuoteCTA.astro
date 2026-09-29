@@ -5,8 +5,13 @@
 import { CONTACT, MARCA, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 
-interface Props { id?: string; }
-const { id = 'cotizar' } = Astro.props as Props;
+interface Props { id?: string; titulo?: string; boton?: string; mensaje?: string; }
+const {
+  id = 'cotizar',
+  titulo = 'Cotiza tu equipo con ficha técnica por WhatsApp',
+  boton = 'Cotizar trajes por WhatsApp',
+  mensaje = WA_MESSAGES.cotizar,
+} = Astro.props as Props;
 
 const datos = [
   'Tipo de operación (estructural, forestal, industrial, rescate…)',
@@ -20,15 +25,15 @@ const datos = [
   <div class="container quote__grid">
     <div>
       <p class="quote__eyebrow">Cotización con ficha técnica</p>
-      <h2 id="quote-title">Cotiza tu equipo con ficha técnica por WhatsApp</h2>
+      <h2 id="quote-title">{titulo}</h2>
       <p class="quote__text">
         {MARCA.nombre} responde en día hábil con cotización formal, ficha técnica por partida y condiciones de entrega por
         escrito. Sin compra mínima: por pieza o conjunto completo, con entrega en {MARCA.cobertura}.
       </p>
       <div class="quote__actions">
-        <a class="quote__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">
+        <a class="quote__wa" href={waUrl(mensaje)} target="_blank" rel="noopener nofollow">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z" /></svg>
-          Cotizar trajes por WhatsApp
+          {boton}
         </a>
         <a class="quote__tel" href={`tel:${CONTACT.telefonoHref}`}>Llamar: {CONTACT.telefono}</a>
       </div>

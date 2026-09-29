@@ -674,7 +674,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
       'Los niveles A, B, C y D describen conjuntos de protección; no son una tabla de resistencia universal para cualquier sustancia',
       'La compatibilidad química se verifica contra el agente, concentración, temperatura y tiempo de exposición antes de entrar al área',
       'El traje químico no protege contra fuego salvo que el fabricante declare protección para flash dentro de su configuración',
-      'La selección de EPP parte del análisis de riesgo; la NOM-017-STPS-2008 es la referencia mexicana para esa decisión',
+      'La selección de EPP parte del análisis de riesgo; la NOM-017-STPS-2024 es la referencia mexicana para esa decisión',
     ],
     brands: ['Traje Hazmat', 'Traje encapsulado', 'Nivel A', 'Nivel B', 'Protección química'],
     images: [
@@ -703,7 +703,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
       { q: '¿Qué diferencia hay entre nivel A y nivel B?', a: 'El nivel A busca la mayor protección respiratoria y cutánea mediante un encapsulado hermético a vapor con el equipo de aire dentro. En nivel B se mantiene protección respiratoria autónoma, pero la prenda se selecciona principalmente para salpicadura líquida.' },
       { q: '¿Un traje Hazmat sirve para incendio?', a: 'No por defecto. La protección química no equivale a protección contra fuego; solo debe considerarse esa capacidad cuando el fabricante declare expresamente protección flash para la configuración ofrecida.' },
       { q: '¿Cómo sé si resiste una sustancia?', a: 'Solicita la tabla de compatibilidad del fabricante para la sustancia, concentración, temperatura y tiempo previstos. Si falta uno de esos datos, no conviene asumir compatibilidad.' },
-      { q: '¿Qué norma aplica en México?', a: 'La NOM-017-STPS-2008 orienta la selección del equipo de protección personal a partir del análisis de riesgo. Las referencias de producto se definen en la requisición según la operación.' },
+      { q: '¿Qué norma aplica en México?', a: 'La NOM-017-STPS-2024 orienta la selección del equipo de protección personal a partir del análisis de riesgo. Las referencias de producto se definen en la requisición según la operación.' },
       { q: '¿Se puede reutilizar un traje químico?', a: 'Depende de su diseño, contaminación y procedimiento del fabricante. Los desechables se retiran tras la tarea; un traje reutilizable exige inspección y descontaminación antes de volver a servicio.' },
       { q: '¿Por qué importan guantes y botas?', a: 'Porque manos y pies son interfaces del sistema. Una barrera corporal correcta no compensa un guante permeado o una bota que deja entrar el contaminante.' },
       { q: '¿Qué información debo enviar para cotizar?', a: 'Sustancia o proceso, concentración, temperatura, forma de contacto, duración de la tarea, número de usuarios, tallas y si existe necesidad de respiración autónoma o purificadora. Con eso se puede revisar compatibilidad y configuración.' },

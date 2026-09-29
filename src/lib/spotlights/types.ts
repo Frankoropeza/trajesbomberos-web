@@ -1,5 +1,5 @@
 // Tipos del módulo «spotlight» de categoría (home). Ver CategorySpotlight.astro.
-export interface SpotImg { src: string; alt: string; caption: string; width: number; height: number; pos?: string }
+export interface SpotImg { src: string; alt: string; caption?: string; width: number; height: number; pos?: string }
 export interface SpotPunto { titulo: string; texto: string }
 export interface SpotProps {
   id: string;
@@ -13,4 +13,5 @@ export interface SpotProps {
   nota?: string;
   imagenes: [SpotImg, SpotImg, SpotImg];
   flip?: boolean;
+  nivel?: 2 | 3;
 }
