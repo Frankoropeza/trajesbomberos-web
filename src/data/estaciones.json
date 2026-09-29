@@ -18221,7 +18221,6 @@
    "lng": -112.1475,
    "precision": "exacta"
   },
-  "telefono": "(637) 372-0162",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18260,7 +18259,6 @@
    "lng": -109.9522325,
    "precision": "exacta"
   },
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18269,7 +18267,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18298,7 +18296,6 @@
    "lng": -109.91691861,
    "precision": "exacta"
   },
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18307,7 +18304,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18336,8 +18333,6 @@
    "lng": -109.95325824,
    "precision": "exacta"
   },
-  "telefono": "(644) 211-0381",
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18346,7 +18341,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18375,7 +18370,6 @@
    "lng": -109.94275524,
    "precision": "exacta"
   },
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18384,7 +18378,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18413,11 +18407,6 @@
    "lng": -109.9374,
    "precision": "exacta"
   },
-  "telefono": "(644) 417-5070",
-  "telefonosAdicionales": [
-   "(644) 417-0904"
-  ],
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18427,7 +18416,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/historia.htm"
+    "retirada": "http://www.bomberoscajeme.mx/historia.htm"
    },
    {
     "nombre": "elimparcial.com",
@@ -18586,10 +18575,6 @@
    "lng": -110.8974,
    "precision": "aproximada"
   },
-  "telefono": "(622) 222-0010",
-  "telefonosAdicionales": [
-   "(622) 222-7444"
-  ],
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18642,7 +18627,7 @@
    },
    {
     "nombre": "asa.gob.mx — Aeropuerto de Guaymas",
-    "url": "https://www.asa.gob.mx/es/ASA/GUAYMAS"
+    "retirada": "https://www.asa.gob.mx/es/ASA/GUAYMAS"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -18857,7 +18842,6 @@
    "lng": -110.9559,
    "precision": "exacta"
   },
-  "telefono": "(662) 212-0197",
   "sitioWeb": "https://www.pbh.com.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -18949,7 +18933,6 @@
    "lng": -109.43677036,
    "precision": "exacta"
   },
-  "telefono": "(642) 120-2904",
   "sitioWeb": "https://www.navojoa.gob.mx/bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -18989,10 +18972,6 @@
    "precision": "exacta"
   },
   "telefono": "(642) 422-0622",
-  "telefonosAdicionales": [
-   "(642) 421-4158",
-   "(642) 421-5049"
-  ],
   "email": "direccionbomberos@navojoa.gob.mx",
   "sitioWeb": "https://www.navojoa.gob.mx/bomberos/",
   "servicios": [
@@ -19095,7 +19074,6 @@
    "lng": -110.92505807,
    "precision": "exacta"
   },
-  "telefono": "(631) 315-7862",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -19127,9 +19105,8 @@
   "coordenadas": {
    "lat": 31.3,
    "lng": -110.944,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(631) 312-0836",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -19242,7 +19219,6 @@
    "lng": -114.7974642,
    "precision": "exacta"
   },
-  "telefono": "(653) 146-2663",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
