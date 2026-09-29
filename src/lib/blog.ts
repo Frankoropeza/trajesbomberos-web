@@ -172,3 +172,35 @@ export async function relatedPosts(current: Post, limit = 3): Promise<Post[]> {
     .slice(0, limit)
     .map((x) => x.p);
 }
+
+// FAQ del artículo (AEO ZeroRank, 2026-09-29): se extrae de la sección
+// «## Preguntas frecuentes» del Markdown, con el formato del blog
+// «**¿Pregunta?** Respuesta.». El texto del JSON-LD queda idéntico al
+// visible: se quitan marcas de Markdown y se aplican las mismas
+// comillas tipográficas que SmartyPants pone en el HTML.
+const sinMarkdown = (t: string) =>
+  t
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/(^|[\s(])[*_]([^*_]+)[*_]/g, '$1$2')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+const tipografia = (t: string) =>
+  t
+    .replace(/---/g, '—')
+    .replace(/--/g, '–')
+    .replace(/\.\.\./g, '…')
+    .replace(/(^|[\s(\[—–-])"/g, '$1“')
+    .replace(/"/g, '”')
+    .replace(/(^|[\s(\[—–-])'/g, '$1‘')
+    .replace(/'/g, '’');
+
+export function faqsDePost(body = ''): { q: string; a: string }[] {
+  const m = body.match(/^## Preguntas frecuentes[^\n]*\n([\s\S]*?)(?=^## |(?![\s\S]))/m);
+  if (!m) return [];
+  return [...m[1].matchAll(/^\*\*(¿[^\n]+?)\*\*[ \t]+([^\n]+)$/gm)].map(([, q, a]) => ({
+    q: tipografia(sinMarkdown(q)),
+    a: tipografia(sinMarkdown(a)),
+  }));
+}

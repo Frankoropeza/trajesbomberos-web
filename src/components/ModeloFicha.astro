@@ -18,6 +18,7 @@ import { piezasDeFamilia } from '@lib/piezas';
 import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
 import { temaEnFrase } from '@lib/blog-enlaces';
 import { MARCA } from '@config/site';
+import { propiedadesDeFicha, type ProductoInput } from '@lib/seo';
 
 interface Props { seccion: Seccion; entry: Tipo | Modelo; kind: 'tipo' | 'modelo'; path: string; parent?: { name: string; href: string } | { name: string; href: string }[]; heroImage?: { src: string; alt: string }; }
 const { seccion, entry, kind, path, parent, heroImage = seccion.hero } = Astro.props;
@@ -127,9 +128,21 @@ const rapida = isTipo ? [] : [
   ...(modelo.tallas ? [['Tallas', modelo.tallas]] : []),
   ...(modelo.peso ? [['Peso', modelo.peso]] : []),
 ] as [string, string][];
+// Product (AEO ZeroRank 2026-09-29): datos que la ficha ya muestra; sin offers ni precio.
+// Las fichas de marca (/marcas/<marca>/) no son producto: no emiten Product.
+const producto: ProductoInput | undefined = seccion.slug === 'marcas' ? undefined : {
+  name: nombre,
+  description: isTipo ? tipo.description : descripcionModelo,
+  url: path,
+  image: image?.src,
+  category: isTipo ? `${seccion.nombre} para bomberos` : (tipoDeModelo?.nombre ?? familiaModelo?.nombreWa ?? seccion.nombre),
+  ...(!isTipo ? { brand: modelo.marca, manufacturer: modelo.fabricante, model: modelo.nombre, ...(modelo.codigo ? { mpn: modelo.codigo } : {}) } : {}),
+  propiedades: propiedadesDeFicha(isTipo ? (tipo.especificacion ?? []) : rows.filter((r) => !/^(Marca|Fabricante|Código)$/.test(r.campo))),
+  ...(componentesKit.length ? { componentes: componentesKit.map((c) => ({ name: c.nombre, url: c.href })) } : {}),
+};
 const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
 ---
-<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
+<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} producto={producto} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   {!isTipo && (
     <div class="section producto"><div class="container">
