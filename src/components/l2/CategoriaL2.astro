@@ -34,8 +34,10 @@ interface Props {
   guias: Post[];
   /** Solo L3: categoría L2 de la que cuelga el hub (migas y BreadcrumbList). */
   parent?: { name: string; href: string };
+  /** Solo L3 de trajes: cards de las familias hermanas (sección #otras, con d.secciones.otras). */
+  hermanas?: TileProps[];
 }
-const { d, tiles, spotlights, modelos, filasModelos, directoryItems, guias, parent } = Astro.props;
+const { d, tiles, spotlights, modelos, filasModelos, directoryItems, guias, parent, hermanas = [] } = Astro.props;
 // Hubs L3 sin modelos publicados (kits, rescate, mangueras): sin #modelos ni tabla de modelos.
 const conModelos = modelos.length > 0 && Boolean(d.secciones.modelos && d.menu.modelos && d.comparativaModelos);
 const ANCLAS = { tipos: '#tipos', elegir: '#elegir', modulos: '#a-fondo', modelos: '#modelos', comparar: '#comparar', faq: '#faq', guias: '#guias' } as const;
@@ -142,6 +144,15 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
     </div>
   </section>
 
+  {hermanas.length > 0 && d.secciones.otras && (
+  <section class="section section--rule" id="otras">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.otras.eyebrow} title={d.secciones.otras.titulo} duo={d.secciones.otras.duo} />
+      <TileGrid cols={hermanas.length % 4 === 0 ? 4 : 3}>{hermanas.map((tile) => <TileCard {...tile} />)}</TileGrid>
+    </div>
+  </section>
+  )}
+
   <section class="section section--alt" id="guias">
     <div class="container">
       <SectionHeading eyebrow={d.secciones.guias.eyebrow} title={d.secciones.guias.titulo} duo={d.secciones.guias.duo} />
@@ -171,6 +182,8 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
 <style>
   /* Mismo ritmo que CategorySpotlights de la home: separador entre módulos. */
   #a-fondo :global(.spot + .spot) { margin-top: var(--section-y); padding-top: var(--section-y); border-top: var(--border); }
+  /* #otras va entre dos secciones claras: filete superior para separarlas. */
+  .section--rule { border-top: var(--border); }
   .comparison-block h3 { margin: 0 0 1rem; font-family: var(--font-display); font-size: 1.3rem; }
   .comparison-block--modelos { margin-top: 3rem; }
   /* Enlace de cierre del blog: idéntico a la home. */
