@@ -10,12 +10,12 @@
   --color-ink-soft: #1b2027;
   --color-dark: #14161a;
   --color-gray: #565b62;
-  --color-gray-soft: #8a9099;
+  --color-gray-soft: #6b717a;       /* 4.9:1 sobre blanco (AA) */
   --color-gray-light: #e6e9ec;
   --color-light: #f6f7f8;
   --color-white: #ffffff;
-  --color-wa: #25d366;
-  --color-wa-dark: #1da851;
+  --color-wa: #11803f;             /* verde WhatsApp oscurecido: texto blanco 5:1 (AA) */
+  --color-wa-dark: #0c6632;
 
   /* --- Tipografía ------------------------------------------- */
   --font-sans: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
