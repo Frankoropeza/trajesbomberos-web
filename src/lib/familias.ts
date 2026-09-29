@@ -664,6 +664,58 @@ export const FAMILIAS: FamiliaDetalle[] = [
           }
     ]
   },
+  {
+    slug: 'hazmat',
+    nombreWa: 'Equipo Hazmat',
+    eyebrow: 'Materiales peligrosos',
+    title: 'Traje Hazmat: protección química según la vía de exposición',
+    description: 'En una fuga química no se elige el traje por color ni por el nombre del nivel. Primero se identifica el agente, su concentración, el estado físico y la tarea; después se define la barrera, el equipo respiratorio y los guantes compatibles. Un encapsulado puede ser indispensable ante vapor tóxico y excesivo para una salpicadura controlada.',
+    features: [
+      'Los niveles A, B, C y D describen conjuntos de protección; no son una tabla de resistencia universal para cualquier sustancia',
+      'La compatibilidad química se verifica contra el agente, concentración, temperatura y tiempo de exposición antes de entrar al área',
+      'El traje químico no protege contra fuego salvo que el fabricante declare protección para flash dentro de su configuración',
+      'La selección de EPP parte del análisis de riesgo; la NOM-017-STPS-2008 es la referencia mexicana para esa decisión',
+    ],
+    brands: ['Traje Hazmat', 'Traje encapsulado', 'Nivel A', 'Nivel B', 'Protección química'],
+    images: [
+      { src: '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif', alt: 'Traje encapsulado nivel A para respuesta a materiales peligrosos' },
+      { src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con equipo de respiración autónoma exterior' },
+      { src: '/images/catalogo/hazmat/tipo-traje-nivel-c.avif', alt: 'Equipo de protección química nivel C' },
+    ],
+    h1: 'Equipo Hazmat',
+    h1Accent: 'para respuesta a sustancias químicas',
+    lead: 'Trajes, botas y guantes para materiales peligrosos: selecciona la barrera por sustancia y tarea, con compatibilidad química documentada antes de cotizar.',
+    descRight: [
+      'Hazmat no es una sola prenda. Es un sistema que puede incluir traje, respiración, guantes, botas, cinta de sellado y un procedimiento de descontaminación. La diferencia entre nivel A, B y C está en cómo protege piel y vías respiratorias ante el peligro evaluado.',
+      'Para integrar una requisición conviene pedir la tabla de compatibilidad del fabricante, el alcance de uso y el método de retiro. Una barrera correcta puede perder su función si se combina con guante, bota o respirador incompatibles.',
+    ],
+    meta: ['Niveles A–D', 'NFPA 1990 · ed. 2022', 'Selección por riesgo', 'Compatibilidad química'],
+    seoTitle: 'Traje Hazmat y protección química | México',
+    seoDescription: 'Equipo Hazmat para sustancias químicas: niveles A, B y C, trajes encapsulados, guantes y botas. Aprende a seleccionar la barrera según el riesgo.',
+    keywords: ['traje hazmat', 'traje encapsulado', 'traje nivel b', 'equipo hazmat'],
+    especificar: [
+      { titulo: 'Agente y concentración', desc: 'La sustancia, concentración, temperatura y tiempo de exposición definen la compatibilidad. Un nombre de producto no sustituye esa revisión.' },
+      { titulo: 'Vía de entrada', desc: 'Define si el control principal es vapor, salpicadura, contacto o inhalación. El nivel del conjunto se decide con esa exposición, no por costumbre.' },
+      { titulo: 'Interfaz completa', desc: 'Traje, guantes, botas y protección respiratoria deben funcionar como sistema. Pide cómo se sella cada unión y cómo se retira sin contaminarse.' },
+      { titulo: 'Referencia normativa', desc: 'NFPA 1990 edición 2022 consolidó referencias para vapor, salpicadura líquida y CBRN. En Europa, EN 943 y EN 14605 o EN 13034 orientan el tipo de barrera.' },
+    ],
+    faqs: [
+      { q: '¿Qué diferencia hay entre nivel A y nivel B?', a: 'El nivel A busca la mayor protección respiratoria y cutánea mediante un encapsulado hermético a vapor con el equipo de aire dentro. En nivel B se mantiene protección respiratoria autónoma, pero la prenda se selecciona principalmente para salpicadura líquida.' },
+      { q: '¿Un traje Hazmat sirve para incendio?', a: 'No por defecto. La protección química no equivale a protección contra fuego; solo debe considerarse esa capacidad cuando el fabricante declare expresamente protección flash para la configuración ofrecida.' },
+      { q: '¿Cómo sé si resiste una sustancia?', a: 'Solicita la tabla de compatibilidad del fabricante para la sustancia, concentración, temperatura y tiempo previstos. Si falta uno de esos datos, no conviene asumir compatibilidad.' },
+      { q: '¿Qué norma aplica en México?', a: 'La NOM-017-STPS-2008 orienta la selección del equipo de protección personal a partir del análisis de riesgo. Las referencias de producto se definen en la requisición según la operación.' },
+      { q: '¿Se puede reutilizar un traje químico?', a: 'Depende de su diseño, contaminación y procedimiento del fabricante. Los desechables se retiran tras la tarea; un traje reutilizable exige inspección y descontaminación antes de volver a servicio.' },
+      { q: '¿Por qué importan guantes y botas?', a: 'Porque manos y pies son interfaces del sistema. Una barrera corporal correcta no compensa un guante permeado o una bota que deja entrar el contaminante.' },
+    ],
+    productos: [
+      { nombre: 'Traje encapsulado nivel A', img: '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif', alt: 'Traje encapsulado nivel A Hazmat', desc: 'Conjunto hermético a vapor para la máxima protección cutánea y respiratoria cuando el peligro lo exige.', chips: ['Nivel A', 'Encapsulado', 'Vapor químico'], spec: 'sustancia, concentración, talla y compatibilidad del sistema respiratorio' },
+      { nombre: 'Traje nivel B', img: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje nivel B para materiales peligrosos', desc: 'Protección química para salpicadura con equipo de respiración autónoma configurado fuera de la prenda.', chips: ['Nivel B', 'Salpicadura', 'ERA exterior'], spec: 'agente químico, talla y configuración de guante, bota y ERA' },
+      { nombre: 'Traje nivel C', img: '/images/catalogo/hazmat/tipo-traje-nivel-c.avif', alt: 'Traje nivel C para materiales peligrosos', desc: 'Barreras químicas con respiración purificadora cuando el agente y su concentración permiten esa selección.', chips: ['Nivel C', 'Respirador', 'Contaminante conocido'], spec: 'contaminante identificado, cartucho compatible y talla' },
+      { nombre: 'Overol químico desechable', img: '/images/catalogo/hazmat/tipo-overol-quimico-desechable.avif', alt: 'Overol químico desechable', desc: 'Prenda de barrera para tareas delimitadas, elegida por el tipo de exposición y retirada tras el uso.', chips: ['Desechable', 'Barrera química', 'Uso delimitado'], spec: 'tipo de exposición, talla y método de retiro' },
+      { nombre: 'Botas químicas', img: '/images/catalogo/hazmat/tipo-botas-quimicas.avif', alt: 'Botas químicas para Hazmat', desc: 'Protección de pie y tobillo que completa el sellado inferior del sistema frente al contaminante evaluado.', chips: ['Protección química', 'Interfaz inferior', 'Compatibilidad'], spec: 'sustancia, talla y método de unión con el traje' },
+      { nombre: 'Guantes químicos', img: '/images/catalogo/hazmat/tipo-guantes-quimicos.avif', alt: 'Guantes químicos para respuesta Hazmat', desc: 'Barrera de mano seleccionada por permeación, destreza requerida y compatibilidad con el traje.', chips: ['Compatibilidad química', 'Destreza', 'Barrera de mano'], spec: 'sustancia, concentración, talla y tiempo de tarea' },
+    ],
+  },
 ];
 
 export function familiaPorSlug(slug: string) {
