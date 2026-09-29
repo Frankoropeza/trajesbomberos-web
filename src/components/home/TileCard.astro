@@ -89,7 +89,7 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     padding: 0.3rem 0.6rem;
     border-left: 3px solid currentColor;
     background: rgb(255 255 255 / 0.96);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     line-height: 1.25;
     display: -webkit-box;
@@ -107,7 +107,7 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     padding: 0.3rem 0.55rem;
     background: rgb(20 22 26 / 0.82);
     color: var(--color-white);
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     font-weight: 700;
   }
   .ct__code {
@@ -118,7 +118,7 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     background: var(--color-primary);
     color: var(--color-white);
     font-family: var(--font-display);
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.08em;
   }
@@ -142,7 +142,9 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     overflow: hidden;
   }
   .ct__title a { color: var(--color-dark); text-decoration: none; }
-  .ct__title a:hover { color: var(--color-primary); }
+  @media (hover: hover) {
+    .ct__title a:hover { color: var(--color-primary); }
+  }
 
   /* Texto: 3 líneas reservadas */
   .ct__desc {
@@ -179,8 +181,6 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     text-decoration: none;
   }
   .ct__sub svg { flex: none; color: var(--color-primary); }
-  .ct__sub:hover { color: var(--color-primary); }
-  .ct__sub:hover span { text-decoration: underline; text-underline-offset: 3px; }
   .ct__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
 
   /* Botón principal: siempre al fondo de la card */
@@ -203,15 +203,14 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     text-align: center;
     text-decoration: none;
   }
-  .ct__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
   .ct__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 
   @media (max-width: 1279px) {
       .ct__body { padding: 1rem; }
   }
-  @media (max-width: 1023px) {
-    }
-  @media (max-width: 559px) {
-      .ct__title, .ct__desc { min-height: 0; }
+  @media (hover: hover) {
+    .ct__sub:hover { color: var(--color-primary); }
+    .ct__sub:hover span { text-decoration: underline; text-underline-offset: 3px; }
+    .ct__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
   }
 </style>

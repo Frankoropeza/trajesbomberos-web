@@ -44,13 +44,13 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
   <div class="section"><div class="container content">
     {tipos.length > 0 && <section class="block" id="tipos">
       <SectionHeading eyebrow={etiquetas?.tiposEyebrow ?? 'Por operación'} title={etiquetas?.tiposTitulo ?? `Tipos de ${seccion.nombre.toLowerCase()}`} description={etiquetas?.tiposDescripcion} duo={duoSeccion(seccion.slug, 'tipos')} />
-      {tiposAgrupados ? grupos!.map((grupo) => <section class="type-group"><h3 class="type-group__t">{grupo.titulo}</h3><div class="cards">{grupo.tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div></section>) : <div class="cards">{tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div>}
+      {tiposAgrupados ? grupos!.map((grupo) => <section class="type-group"><h3 class="type-group__t">{grupo.titulo}</h3><div class="cards">{grupo.tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}>{tipo.imagen && <img src={tipo.imagen.src} alt={tipo.imagen.alt} width={tipo.imagen.width} height={tipo.imagen.height} loading="lazy" />}<h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div></section>) : <div class="cards">{tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}>{tipo.imagen && <img src={tipo.imagen.src} alt={tipo.imagen.alt} width={tipo.imagen.width} height={tipo.imagen.height} loading="lazy" />}<h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div>}
     </section>}
-    {seccion.enlaces && seccion.enlaces.length > 0 && <section class="block" id="fichas"><SectionHeading eyebrow="Por tipo de traje" title={`Fichas de ${seccion.nombre.toLowerCase()} por familia`} description="Cada familia de traje tiene su propia ficha con la especificación completa." duo={duoSeccion(seccion.slug, 'fichas')} /><div class="cards">{seccion.enlaces.map((enlace) => <a class="card" href={enlace.href}><h3>{enlace.label}</h3><p>{enlace.descripcion}</p><span>Ver ficha →</span></a>)}</div></section>}
+    {seccion.enlaces && seccion.enlaces.length > 0 && <section class="block" id="fichas"><SectionHeading eyebrow="Por tipo de traje" title={`Fichas de ${seccion.nombre.toLowerCase()} por familia`} description="Cada familia de traje tiene su propia ficha con la especificación completa." duo={duoSeccion(seccion.slug, 'fichas')} /><div class="cards">{seccion.enlaces.map((enlace) => <a class="card" href={enlace.href}><h3>{enlace.label}</h3><p>{enlace.descripcion}</p><span>Ficha técnica →</span></a>)}</div></section>}
     {mostrarEleccion && <section class="block" id="elegir">
       <SectionHeading eyebrow="Comparativa" title={etiquetas?.elegirTitulo ?? `Cómo elegir ${seccion.nombre.toLowerCase()}`} description={etiquetas?.elegirDescripcion} duo={duoSeccion(seccion.slug, 'elegir')} />
       {seccion.intro.map((parrafo) => <p class="prose">{parrafo}</p>)}
-      {seccion.comparativa && <div class="scroll" tabindex="0" role="region" aria-label={`Comparativa de ${seccion.nombre.toLowerCase()}`}><table><thead><tr>{seccion.comparativa.columnas.map((columna) => <th>{columna}</th>)}</tr></thead><tbody>{seccion.comparativa.filas.map((fila) => <tr>{fila.map((celda, i) => i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>)}</tr>)}</tbody></table></div>}
+      {seccion.comparativa && <div class="scroll table-scroll" tabindex="0" role="region" aria-label={`Comparativa de ${seccion.nombre.toLowerCase()}`}><table><thead><tr>{seccion.comparativa.columnas.map((columna) => <th>{columna}</th>)}</tr></thead><tbody>{seccion.comparativa.filas.map((fila) => <tr>{fila.map((celda, i) => i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>)}</tr>)}</tbody></table></div>}
       {seccion.criterios && <div class="criteria"><h3 class="criteria__t">{seccion.criterios.titulo}</h3><ol>{seccion.criterios.items.map((item) => <li><strong>{item.termino}:</strong> {item.texto}</li>)}</ol></div>}
       {seccion.checklistCompra && <div class="criteria" id="antes-de-ordenar"><h3 class="criteria__t">{seccion.checklistCompra.titulo}</h3>{seccion.checklistCompra.parrafos.map((parrafo) => <p>{parrafo}</p>)}</div>}
     </section>}
@@ -63,6 +63,39 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
 </PageLayout>
 
 <style>
-  .block { padding-block: clamp(2.5rem, 5vw, 4rem); border-top: var(--border); } .block:first-child { border-top: 0; padding-top: 0; }
-  .prose { max-width: 82ch; color: var(--color-gray); line-height: 1.72; } .type-group + .type-group { margin-top: 2rem; } .type-group > h3 { font-size: 1.25rem; } .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; } .card { overflow: hidden; display: flex; flex-direction: column; background: var(--color-white); border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; } .card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); } .card img { aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-light); } .card h2, .card h3, .card p, .card > span { margin-inline: 1.2rem; } .card h2, .card h3 { margin-top: 1.15rem; margin-bottom: 0.45rem; font-size: 1.1rem; } .card p { margin-top: 0; color: var(--color-gray); line-height: 1.55; font-size: 0.9rem; } .card > span, .model a { margin-top: auto; padding-block: 1rem; color: var(--color-primary); font-size: 0.85rem; font-weight: 800; } .cards--models { grid-template-columns: repeat(4, 1fr); } .model > div { display: flex; flex-direction: column; flex: 1; padding-inline: 1.2rem; } .model h2, .model p { margin-inline: 0; } .model a { text-decoration: none; } .scroll { overflow-x: auto; border: var(--border); border-radius: var(--radius-lg); } table { min-width: 780px; width: 100%; border-collapse: collapse; } th, td { padding: .9rem 1rem; border-bottom: var(--border); text-align: left; vertical-align: top; font-size: .86rem; } thead { background: var(--color-ink); color: var(--color-white); } tbody th { color: var(--color-dark); } td { color: var(--color-gray); } .criteria { margin-top: 2rem; padding: 1.4rem; background: var(--color-light); border-left: 3px solid var(--color-primary); } .criteria h2 { margin-top: 0; } .criteria li { margin-block: .6rem; color: var(--color-gray); } @media (max-width: 1024px) { .cards, .cards--models { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 560px) { .cards, .cards--models { grid-template-columns: 1fr; } }
+  .block { padding-block: clamp(2.5rem, 5vw, 4rem); border-top: var(--border); }
+  .block:first-child { border-top: 0; padding-top: 0; }
+  .prose { max-width: 82ch; color: var(--color-gray); line-height: 1.72; }
+  .type-group + .type-group { margin-top: 2rem; }
+  .type-group > h3 { font-size: 1.25rem; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .card { overflow: hidden; display: flex; flex-direction: column; min-width: 0; background: var(--color-white); border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; }
+  .card img { aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-light); }
+  .card h2, .card h3, .card p, .card > span { margin-inline: 1.2rem; }
+  .card h2, .card h3 { margin-top: 1.15rem; margin-bottom: 0.45rem; font-size: 1.1rem; }
+  .card p { margin-top: 0; color: var(--color-gray); line-height: 1.55; font-size: 0.9rem; }
+  .card > span, .model a { margin-top: auto; padding-block: 1rem; color: var(--color-primary); font-size: 0.85rem; font-weight: 800; }
+  .cards--models { grid-template-columns: repeat(4, 1fr); }
+  .model > div { display: flex; flex-direction: column; flex: 1; padding-inline: 1.2rem; }
+  .model h2, .model p { margin-inline: 0; }
+  .model a { text-decoration: none; }
+  .scroll { overflow-x: auto; border: var(--border); border-radius: var(--radius-lg); }
+  table { min-width: 780px; width: 100%; border-collapse: collapse; }
+  th, td { padding: .9rem 1rem; border-bottom: var(--border); text-align: left; vertical-align: top; font-size: .86rem; }
+  thead { background: var(--color-ink); color: var(--color-white); }
+  tbody th { color: var(--color-dark); }
+  td { color: var(--color-gray); }
+  .criteria { margin-top: 2rem; padding: 1.4rem; background: var(--color-light); border-left: 3px solid var(--color-primary); }
+  .criteria h2 { margin-top: 0; }
+  .criteria li { margin-block: .6rem; color: var(--color-gray); }
+  @media (hover: hover) { .card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); } }
+  @media (max-width: 1023px) { .cards, .cards--models { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px) {
+    .cards, .cards--models { grid-template-columns: none; grid-auto-columns: 84%; grid-auto-flow: column; align-items: stretch; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: var(--container-px); scroll-snap-type: x mandatory; margin-inline: calc(var(--container-px) * -1); padding-inline: var(--container-px); scrollbar-color: var(--color-primary) var(--color-gray-light); scrollbar-width: thin; }
+    .cards > .card { scroll-snap-align: start; }
+    .cards::-webkit-scrollbar { height: 4px; }
+    .cards::-webkit-scrollbar-thumb { background: var(--color-primary); }
+    .cards::-webkit-scrollbar-track { background: var(--color-gray-light); }
+  }
+  @media (max-width: 379px) { .cards, .cards--models { grid-auto-columns: 88%; } }
 </style>

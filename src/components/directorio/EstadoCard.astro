@@ -72,7 +72,7 @@ const titulo = `Estaciones de bomberos ${enEstado(e)}`;
   }
   .ec__region {
     font-family: var(--font-display);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
@@ -105,7 +105,7 @@ const titulo = `Estaciones de bomberos ${enEstado(e)}`;
     background: var(--color-primary);
     color: var(--color-white);
     font-family: var(--font-display);
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.08em;
   }
@@ -127,7 +127,6 @@ const titulo = `Estaciones de bomberos ${enEstado(e)}`;
     overflow: hidden;
   }
   .ec__title a { color: var(--color-dark); text-decoration: none; }
-  .ec__title a:hover { color: var(--color-primary); }
   .ec__desc {
     margin: 0 0 1rem;
     font-size: 0.87rem;
@@ -166,15 +165,13 @@ const titulo = `Estaciones de bomberos ${enEstado(e)}`;
     padding: 0.1rem 0.35rem;
     border: 1px solid rgb(20 22 26 / 0.14);
     border-radius: var(--radius);
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-align: center;
     color: var(--color-gray);
     font-variant-numeric: tabular-nums;
   }
   .ec__sub svg { flex: none; color: var(--color-primary); }
-  .ec__sub:hover { color: var(--color-primary); }
-  .ec__sub:hover .ec__sub-label { text-decoration: underline; text-underline-offset: 3px; }
   .ec__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
 
   .ec__cta {
@@ -195,14 +192,19 @@ const titulo = `Estaciones de bomberos ${enEstado(e)}`;
     text-align: center;
     text-decoration: none;
   }
-  .ec__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
   .ec__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 
   @media (max-width: 1279px) { .ec__body { padding: 1rem; } }
   /* Móvil: card compacta (32 cards en una columna). Se ocultan el
      texto y los subenlaces a partir del 3.º; el estado completo vive
      en su página. */
-  @media (max-width: 559px) {
+  @media (hover: hover) {
+    .ec__title a:hover { color: var(--color-primary); }
+    .ec__sub:hover { color: var(--color-primary); }
+    .ec__sub:hover .ec__sub-label { text-decoration: underline; text-underline-offset: 3px; }
+    .ec__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
+  }
+  @media (max-width: 639px) {
     .ec__title { min-height: 0; }
     .ec__desc { display: none; }
     .ec__subs li:nth-child(n + 3) { display: none; }

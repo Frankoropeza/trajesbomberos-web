@@ -82,9 +82,6 @@ const { items } = Astro.props;
     white-space: nowrap;
   }
   .section-menu__list li:first-child a { padding-left: 0; }
-  .section-menu__list a:hover {
-    color: var(--color-primary);
-  }
   .section-menu__list a.is-active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
   .section-menu__list::-webkit-scrollbar { display: none; }
   .section-menu__cta {
@@ -100,10 +97,13 @@ const { items } = Astro.props;
     border-radius: var(--radius);
     flex-shrink: 0;
   }
-  .section-menu__cta:hover { background: var(--color-wa-dark); }
+  @media (hover: hover) {
+    .section-menu__list a:hover { color: var(--color-primary); }
+    .section-menu__cta:hover { background: var(--color-wa-dark); }
+  }
   .section-menu__cta span { white-space: nowrap; font-size: 0.9rem; font-weight: 800; }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .section-menu__inner { gap: 0; }
     .section-menu__cta { display: none; }
   }

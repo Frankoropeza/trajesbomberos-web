@@ -140,7 +140,7 @@ const pageIndex = [
             title={pz.comparativa.titulo}
             description={pz.comparativa.intro}
           />
-          <div class="comp__scroll" tabindex="0" role="region" aria-label={pz.comparativa.titulo}>
+          <div class="comp__scroll table-scroll" tabindex="0" role="region" aria-label={pz.comparativa.titulo}>
             <table class="comp">
               <thead>
                 <tr>{pz.comparativa.columnas.map((c) => <th scope="col">{c}</th>)}</tr>
@@ -277,7 +277,7 @@ const pageIndex = [
     margin: 0 0 0.9rem;
     padding-bottom: 0.55rem;
     border-bottom: 2px solid var(--color-gray-light);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
@@ -351,7 +351,7 @@ const pageIndex = [
   .comp thead th {
     background: var(--color-ink);
     color: var(--color-white);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
     font-weight: 800;
@@ -363,7 +363,7 @@ const pageIndex = [
   .sinon { margin-top: 2rem; padding-top: 1.6rem; border-top: var(--border); }
   .sinon__t {
     margin: 0 0 0.8rem;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
@@ -401,18 +401,20 @@ const pageIndex = [
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1279px) {
     .layout-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+  @media (max-width: 1023px) {
     .apl { grid-template-columns: repeat(2, 1fr); row-gap: 1.6rem; }
     .apl__item:nth-child(odd) { border-left: 0; padding-left: 0; }
   }
-  @media (max-width: 800px) {
+  @media (max-width: 767px) {
     .err__item { grid-template-columns: 1fr; gap: 0.5rem; }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 767px) {
     .alcance { grid-template-columns: 1fr; }
   }
-  @media (max-width: 560px) {
+  @media (max-width: 639px) {
     .apl { grid-template-columns: 1fr; }
     .apl__item { border-left: 0; padding-left: 0; }
   }

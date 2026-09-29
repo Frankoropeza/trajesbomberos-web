@@ -122,7 +122,7 @@ const RECURSOS = [
     margin: 0 0 0.7rem;
     padding-bottom: 0.6rem;
     border-bottom: 2px solid var(--color-primary);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
@@ -138,7 +138,6 @@ const RECURSOS = [
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .sb-list a:hover { color: var(--color-primary); background: var(--color-light); }
   .sb-list a.is-active {
     border-left-color: var(--color-primary);
     color: var(--color-primary);
@@ -160,14 +159,13 @@ const RECURSOS = [
   .sb-posts li + li { border-top: var(--border); }
   .sb-posts a { display: grid; gap: 0.18rem; padding: 0.75rem 0; text-decoration: none; }
   .sb-posts__cat {
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
     color: var(--color-primary);
   }
   .sb-posts__title { color: var(--color-dark); font-size: 0.86rem; font-weight: 700; line-height: 1.35; }
-  .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
   .sb-blog-all {
     display: block;
     margin-top: 0.6rem;
@@ -178,7 +176,6 @@ const RECURSOS = [
     font-size: 0.85rem;
     text-decoration: none;
   }
-  .sb-blog-all:hover { text-decoration: underline; }
 
   .sb-card {
     background: var(--color-ink);
@@ -201,7 +198,12 @@ const RECURSOS = [
     text-decoration: none;
     min-height: 46px;
   }
-  .sb-card__wa:hover { background: var(--color-wa-dark); }
+  @media (hover: hover) {
+    .sb-list a:hover { color: var(--color-primary); background: var(--color-light); }
+    .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
+    .sb-blog-all:hover { text-decoration: underline; }
+    .sb-card__wa:hover { background: var(--color-wa-dark); }
+  }
   .sb-card__tel {
     display: block;
     margin-top: 0.7rem;
@@ -213,7 +215,7 @@ const RECURSOS = [
   }
   .sb-card__horario { margin: 0.2rem 0 0; text-align: center; color: #8a9099; font-size: 0.76rem; }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .sidebar {
       position: static;
       grid-template-columns: repeat(2, 1fr);
@@ -221,7 +223,7 @@ const RECURSOS = [
     }
     .sb-card { grid-column: 1 / -1; }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .sidebar { grid-template-columns: 1fr; }
   }
 </style>

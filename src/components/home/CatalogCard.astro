@@ -121,7 +121,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
     border-radius: var(--radius-lg);
     overflow: hidden;
   }
-  .cc:hover { border-color: rgb(200 16 46 / 0.55); box-shadow: var(--shadow); }
+  @media (hover: hover) { .cc:hover { border-color: rgb(200 16 46 / 0.55); box-shadow: var(--shadow); } }
   .cc:focus-within { outline: 3px solid var(--color-primary); outline-offset: 3px; }
 
   /* Media 4:3 con código técnico y franja reflejante inferior */
@@ -144,7 +144,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
     position: absolute;
     top: 0.7rem;
     padding: 0.3rem 0.5rem;
-    font: 800 0.72rem/1 var(--font-display);
+    font: 800 0.75rem/1 var(--font-display);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     border-radius: 2px;
@@ -167,13 +167,13 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
   .cc__op {
     margin: 0;
     color: var(--color-primary);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.07em;
     text-transform: uppercase;
   }
   .cc__op span { color: var(--color-gray); }
-  h3 { margin: 0; font: 800 1.28rem/1.12 var(--font-display); color: var(--color-dark); }
+  h3 { margin: 0; font: 800 10.75rem/1.12 var(--font-display); color: var(--color-dark); }
   .cc__link { color: inherit; text-decoration: none; }
   /* Enlace estirado: toda la card es clicable sin anidar <a> */
   .cc__link::after { content: ''; position: absolute; inset: 0; z-index: 1; }
@@ -185,7 +185,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
     background: var(--color-light);
     border: 1px dashed var(--color-gray-soft);
     color: var(--color-dark);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
   }
   .cc__desc { margin: 0; color: var(--color-gray); font-size: 0.9rem; line-height: 1.55; }
@@ -203,7 +203,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
   .cc__norma span {
     display: block;
     color: var(--color-gray);
-    font-size: 0.64rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -211,7 +211,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
   .cc__incluye-t {
     margin: 0.15rem 0 0.25rem;
     color: var(--color-gray);
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -233,7 +233,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
     height: 6px;
     background: var(--color-primary);
   }
-  .cc__mas { margin: 0.3rem 0 0; color: var(--color-gray); font-size: 0.74rem; font-weight: 700; }
+  .cc__mas { margin: 0.3rem 0 0; color: var(--color-gray); font-size: 0.75rem; font-weight: 700; }
   .cc__meta {
     margin: auto 0 0;
     padding-top: 0.3rem;
@@ -288,10 +288,10 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
     .cc__media img { position: absolute; inset: 0; }
     .cc__media::after { inset: 0 0 0 auto; width: 5px; height: auto; }
     .cc__badge { display: none; }
-    .cc__code { top: 0.4rem; left: 0.4rem; font-size: 0.62rem; }
+    .cc__code { top: 0.4rem; left: 0.4rem; font-size: 0.75rem; }
     .cc__placeholder strong { font-size: 1.3rem; }
     .cc__body { gap: 0.3rem; padding: 0.8rem 0.85rem 0; }
-    .cc__op { font-size: 0.66rem; }
+    .cc__op { font-size: 0.75rem; }
     h3 { font-size: 1.05rem; }
     .cc__desc {
       font-size: 0.84rem;
@@ -301,7 +301,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
       overflow: hidden;
     }
     .cc__chips, .cc__extra, .cc__norma, .cc__incluye { display: none; }
-    .cc__meta { font-size: 0.72rem; }
+    .cc__meta { font-size: 0.75rem; }
     .cc__cta { margin: 0.4rem -0.85rem 0; padding: 0.6rem 0.85rem; min-height: 44px; font-size: 0.84rem; }
   }
 </style>

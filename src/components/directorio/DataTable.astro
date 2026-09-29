@@ -11,7 +11,7 @@ const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc'
 ---
 <figure class="dt">
   <figcaption>{caption}</figcaption>
-  <div class="dt__wrap">
+  <div class="dt__wrap table-scroll" tabindex="0" role="region" aria-label={caption}>
     <table>
       <thead><tr>{cols.map((c) => <th scope="col" class={cls(c)}>{c.label}</th>)}</tr></thead>
       <tbody>
@@ -54,7 +54,7 @@ const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc'
     padding: 0.6rem 1.1rem;
     background: var(--color-light);
     color: var(--color-gray);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -71,11 +71,11 @@ const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc'
   tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
   tbody th { font-weight: 700; color: var(--color-dark); }
   tbody a { color: var(--color-dark); font-weight: 700; text-decoration: none; }
-  tbody a:hover { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; }
+  @media (hover: hover) { tbody a:hover { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; } }
   .dt th.num, .dt td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .dt td.num { font-weight: 700; color: var(--color-dark); }
   .dt td.acc, .dt th.acc { color: var(--color-primary); font-family: var(--font-display); font-weight: 700; }
   .dt .nw { white-space: nowrap; }
-  @media (max-width: 640px) { .hm { display: none; } }
-  @media (max-width: 480px) { tbody th, tbody td, thead th { padding-inline: 0.75rem; } }
+  @media (max-width: 639px) { .hm { display: none; } }
+  @media (max-width: 479px) { tbody th, tbody td, thead th { padding-inline: 0.75rem; } }
 </style>
