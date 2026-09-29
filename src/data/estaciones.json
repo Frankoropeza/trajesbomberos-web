@@ -56,7 +56,7 @@
   "coordenadas": {
    "lat": 21.892,
    "lng": -102.285,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(449) 996-9300",
   "email": "proteccion.civil@aguascalientes.gob.mx",
@@ -253,7 +253,7 @@
   "coordenadas": {
    "lat": 22.3656,
    "lng": -102.3,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(449) 984-0543",
   "servicios": [
@@ -336,7 +336,7 @@
   "coordenadas": {
    "lat": 21.961,
    "lng": -102.343,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(449) 965-0088",
   "servicios": [
@@ -384,7 +384,7 @@
   "coordenadas": {
    "lat": 22.153,
    "lng": -102.276,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(465) 958-0116",
   "servicios": [
@@ -430,7 +430,7 @@
   "coordenadas": {
    "lat": 22.229,
    "lng": -102.318,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales",
@@ -474,7 +474,7 @@
   "coordenadas": {
    "lat": 21.9783,
    "lng": -102.27,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://www.sanfranciscodelosromo.gob.mx/",
   "servicios": [
@@ -953,7 +953,7 @@
   "coordenadas": {
    "lat": 32.5667,
    "lng": -116.625,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales",
@@ -1560,7 +1560,7 @@
   "coordenadas": {
    "lat": 32.541,
    "lng": -116.97,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://www.aeropuertosgap.com.mx/es/tijuana.html",
   "servicios": [
@@ -2190,10 +2190,6 @@
    "lng": -91.8,
    "precision": "aproximada"
   },
-  "telefono": "(938) 382-4266",
-  "telefonosAdicionales": [
-   "(938) 384-1663"
-  ],
   "email": "proteccioncivil.carmen@gmail.com",
   "servicios": [
    "proteccion-civil"
@@ -3308,7 +3304,6 @@
    "lng": -106.85204,
    "precision": "exacta"
   },
-  "telefono": "(625) 582-0290",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -3413,10 +3408,6 @@
    "lng": -104.9156,
    "precision": "exacta"
   },
-  "telefono": "(629) 542-9000",
-  "telefonosAdicionales": [
-   "(629) 542-0055"
-  ],
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -3834,7 +3825,6 @@
    "lng": -105.4806,
    "precision": "exacta"
   },
-  "telefono": "(639) 473-3630",
   "email": "seguridadpublica@meoqui.com.mx",
   "sitioWeb": "https://meoqui.com.mx/",
   "servicios": [
@@ -3938,7 +3928,6 @@
    "lng": -105.2833,
    "precision": "aproximada"
   },
-  "telefono": "(621) 475-0240",
   "servicios": [
    "incendios-estructurales",
    "capacitacion"
@@ -5005,7 +4994,7 @@
   "coordenadas": {
    "lat": 25.53,
    "lng": -103.2289,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(871) 762-7636",
   "email": "bomberos@matamoroscoahuila.gob.mx",
@@ -5017,6 +5006,10 @@
    {
     "nombre": "matamoroscoahuila.gob.mx",
     "url": "https://matamoroscoahuila.gob.mx/seguridad-y-justicia/bomberos/"
+   },
+   {
+    "nombre": "Trámites Coahuila — Control y extinción de incendios (H. Cuerpo de Bomberos de Matamoros)",
+    "url": "https://www.tramitescoahuila.gob.mx/assets/file-test/Matamoros/Bomberos%20pdf/Control%20y%20extinci+%C2%A6n%20de%20incendios.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -5100,10 +5093,6 @@
    "lng": -101.422,
    "precision": "aproximada"
   },
-  "telefono": "(866) 635-0808",
-  "telefonosAdicionales": [
-   "(866) 632-9438"
-  ],
   "servicios": [
    "incendios-estructurales",
    "atencion-prehospitalaria"
@@ -5704,7 +5693,7 @@
   "coordenadas": {
    "lat": 27.945,
    "lng": -101.215,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(861) 614-4577",
   "servicios": [
@@ -9635,7 +9624,7 @@
   "coordenadas": {
    "lat": 20.509,
    "lng": -100.829,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://www.celaya.gob.mx/ssc/proteccion-civil-y-bomberos/",
   "servicios": [
@@ -10210,7 +10199,7 @@
   "coordenadas": {
    "lat": 20.92,
    "lng": -101.3957,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://puertointerior.guanajuato.gob.mx/",
   "servicios": [
@@ -14226,7 +14215,7 @@
   "fuentes": [
    {
     "nombre": "transparencia.nayarit.gob.mx",
-    "url": "https://transparencia.nayarit.gob.mx/admin2/resources/uploads/seguridad/pdfs/Direccion%20del%20Herocio%20Cuerpo%20de%20Bomberos.pdf"
+    "retirada": "https://transparencia.nayarit.gob.mx/admin2/resources/uploads/seguridad/pdfs/Direccion%20del%20Herocio%20Cuerpo%20de%20Bomberos.pdf"
    },
    {
     "nombre": "tramites.nayarit.gob.mx",
@@ -14822,7 +14811,7 @@
   "coordenadas": {
    "lat": 25.6827,
    "lng": -100.24,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(81) 4040-0021",
   "sitioWeb": "https://guadalupe.gob.mx",
@@ -17728,7 +17717,7 @@
   "coordenadas": {
    "lat": 21.93,
    "lng": -99.9916,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales",
@@ -19371,7 +19360,7 @@
   "coordenadas": {
    "lat": 17.982,
    "lng": -92.947,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(993) 316-8816",
   "telefonosAdicionales": [

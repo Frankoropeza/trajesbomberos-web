@@ -234,6 +234,30 @@ export interface BlogCategory {
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
   {
+    slug: 'equipo',
+    nombre: 'Equipo de protección',
+    desc: 'Criterios técnicos para seleccionar, integrar e inspeccionar EPP de bomberos.',
+    h1: 'Equipo de protección para bomberos',
+    lead: 'Guías para elegir casco, guantes, botas y capucha como un conjunto compatible con la operación, el usuario y el procedimiento de servicio.',
+    seoTitle: 'Equipo de protección para bomberos',
+    seoDescription: 'Equipo de protección para bomberos: criterios para comparar casco, guantes, botas y capucha por operación, interfaz, condición y documentación en México.',
+    keywords: ['equipo de protección para bomberos', 'EPP para bombero', 'México'],
+    guia: {
+      titulo: 'Cómo comprar equipo de protección para bomberos',
+      parrafos: [
+        'La operación determina la partida: casco, guantes, botas y capucha se seleccionan por el riesgo, el tiempo de uso y la movilidad requerida, no por una apariencia común. Define la tarea autorizada y el EPP que ya utiliza cada persona antes de comparar modelos.',
+        'Una requisición debe separar modelo, talla, material, accesorios, norma declarada y la interfaz con máscara, chaquetón o pantalón. La prueba física del conjunto permite detectar un visor que interfiere, una manga que no solapa o una bota que no conserva estabilidad.',
+        'El criterio de compra continúa en servicio: recepción contra ficha, asignación por usuario, inspección, limpieza y retiro por condición. Una pieza sin trazabilidad o con daño no debe volver a una operación solo porque todavía parece utilizable.',
+      ],
+      enlaces: [
+        { label: 'Cascos para bombero', href: '/cascos/' },
+        { label: 'Guantes para bombero', href: '/guantes/' },
+        { label: 'Botas para bombero', href: '/botas/' },
+        { label: 'Capuchas para bombero', href: '/capuchas/' },
+      ],
+    },
+  },
+  {
     slug: 'herramientas-rescate',
     nombre: 'Herramientas y rescate',
     desc: 'Herramientas, sistemas y criterios para equipar operaciones de rescate.',
