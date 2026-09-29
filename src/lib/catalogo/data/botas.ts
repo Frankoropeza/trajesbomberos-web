@@ -14,9 +14,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "eyebrow": "Catálogo de protección para pies",
     "lead": "La bota se selecciona por el tipo de incendio, terreno, exposición y el resto del conjunto; material, suela y talla deben funcionar en la escena real.",
     "intro": [
-      "Las botas para bombero protegen frente a superficies calientes, objetos punzantes, humedad, compresión y condiciones de desplazamiento propias de cada operación. La bota de hule estructural facilita descontaminación y suele integrar puntera y entresuela de acero; la de piel estructural prioriza ajuste y movilidad en jornadas largas. Para línea de fuego, una bota forestal con agujetas y suela para alta temperatura responde a otro patrón de movimiento.",
-      "NFPA 1970 es la referencia vigente para calzado estructural y absorbió NFPA 1971; NFPA 1950 absorbió NFPA 1977 para equipo forestal. ASTM F2413 trata puntera e impacto o compresión, mientras CSA Z195 aplica en Canadá. Cada modelo conserva el estatus y ediciones que declara; no se infiere una certificación por tener puntera, piel o bandas reflejantes.",
-      "Antes de cotizar, confirma talla mexicana en centímetros o equivalencia declarada, tipo de plantilla, puntera, entresuela, suela, cierre y uso. Prueba ambas botas con calcetín de trabajo y pantalón del conjunto, caminando, subiendo escalera y agachándote. La bota debe sujetar el pie sin rozar ni impedir movimiento; una talla anotada sin prueba puede comprometer seguridad y continuidad de uso."
+      "Cotizamos botas para combate estructural, línea de fuego exterior o brigada industrial según la escena de tu cuerpo de bomberos. Una Workman Fire BOT1004 de caucho natural vulcanizado en autoclave no resuelve la misma marcha que una Fire Ranger de piel negra; definimos exposición, terreno y conjunto antes de elegir hule, piel, agujetas, puntera o entresuela.",
+      "Elegimos por construcción y estatus publicado. Workman Fire BOT1004 declara NFPA 1971, ASTM F903-10 e ISO 9001:2008 como proceso; Sköld Workman FPBSK declara NFPA 1971-2007, NFPA 1992-2005, ASTM F2413-05 y CSA Z195-02. Te entregamos cada referencia como declarada, sin extenderla a Fire Ranger ni a la bota brigadista forestal caña corta sin norma.",
+      "Surtimos Workman Fire, Filtrex BOT1002, Sköld Workman FPBSK, Fire Ranger o la bota brigadista forestal caña corta cuando la tarea y el ajuste lo permiten. La última publica piel hidrofugada de 2.0 a 2.4 mm; para estructural revisamos la construcción de caucho, puntera, entresuela y suela con el pantalón y calcetín que utilizará tu brigada.",
+      "En tu pliego anota modelo, código, talla mexicana o equivalencia declarada, operación, color cuando aplique y componentes requeridos. Al recibir, cotejamos pares, suela, puntera, plantilla, costuras, agarraderas y elementos reflectantes contra la orden; mándanos por WhatsApp talla, calcetín y pantalón del conjunto para preparar la prueba de caminata, escalera y agachamiento."
     ],
     "grupos": [
       {
@@ -32,32 +33,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Qué bota conviene para incendio estructural?",
-        "a": "Selecciona una bota estructural conforme al riesgo, configuración y referencia de norma requerida; confirma puntera, entresuela, suela y talla."
+        "a": "Para incendio estructural cotizamos una bota cuya construcción, operación y estatus publicado correspondan a tu conjunto. Workman Fire BOT1004 usa caucho natural vulcanizado en autoclave y declara NFPA 1971 y ASTM F903-10; confirma puntera, entresuela, suela y talla. Mándanos por WhatsApp pantalón y calcetín para probar la interfaz antes de surtir."
       },
       {
         "q": "¿La bota forestal sirve para ataque interior?",
-        "a": "No se debe asumir. La operación forestal y el ataque estructural requieren evaluar protecciones distintas."
+        "a": "No asumimos que una bota forestal sirva para ataque interior porque la línea de fuego exterior y el combate estructural usan construcciones distintas. Fire Ranger se publica en piel negra y sin norma, mientras Workman Fire BOT1004 declara NFPA 1971. Pídenos el modelo junto con la tarea autorizada para cotizar la familia que corresponde a tu operación."
       },
       {
         "q": "¿Cómo se mide una talla mexicana?",
-        "a": "La talla mexicana suele expresarse en centímetros; confirma la tabla y equivalencia declarada por el modelo."
+        "a": "La talla mexicana suele expresarse en centímetros, pero confirmamos la tabla y equivalencia declarada por cada modelo antes de surtir. La medida se toma con calcetín de trabajo y con el pantalón del conjunto puesto, caminando, subiendo escalera y agachándote. Mándanos por WhatsApp la talla usada y el modelo elegido para preparar la prueba física."
       },
       {
         "q": "¿Qué hace la entresuela antiperforación?",
-        "a": "Ayuda a limitar perforación desde la planta, cuando el modelo la incorpora; no elimina la necesidad de inspeccionar el terreno."
+        "a": "La entresuela antiperforación ayuda a limitar perforación desde la planta cuando el modelo la incorpora; se revisa junto con suela, puntera y terreno. Sköld Workman FPBSK declara ASTM F2413-05, dato que conservamos como declaración del modelo. Pídenos la configuración de planta que requiere tu brigada para comparar contra la requisición."
       },
       {
         "q": "¿Se pueden secar con calor directo?",
-        "a": "Sigue las instrucciones del fabricante. El calor directo puede afectar piel, hule, adhesivos, forros y suela."
+        "a": "No aplicamos calor directo sin la instrucción del fabricante, porque puede afectar piel, caucho, adhesivos, forros y suela. La bota brigadista forestal caña corta publica piel hidrofugada de 2.0 a 2.4 mm y Workman Fire caucho vulcanizado en autoclave. Pídenos el cuidado aplicable al modelo que recibirás para registrarlo con tu inventario."
       },
       {
         "q": "¿Qué debe incluir la cotización?",
-        "a": "Modelo, código, tallas, color cuando aplique, configuración, norma declarada y cantidad por usuario."
+        "a": "La cotización debe llevar modelo, código, tallas, color cuando aplique, configuración, norma declarada y cantidad por usuario. Para Filtrex anotamos BOT1002 y sus referencias NFPA 1971 y ASTM F903-10 como declaradas; para Fire Ranger, piel negra y sin norma. Mándanos por WhatsApp la relación de tallas y operación para armar tu partida."
       }
     ],
     "resumenHero": [
-      "La bota es el punto de contacto entre el usuario, el terreno y el resto del conjunto. Una selección útil equilibra protección declarada, estabilidad, movilidad, talla y la posibilidad de inspeccionarla después de cada exposición.",
-      "Estructural, forestal e industrial no son etiquetas intercambiables. La tarea autorizada, el calor, la humedad, el tipo de desplazamiento y la interfaz con pantalón y calcetín determinan qué construcción conviene revisar. En LORICA te ayudamos a cruzar esos datos con la talla antes de cotizar."
+      "La bota une a tu brigada con el terreno, el calor, la humedad y el pantalón del conjunto. Cotizamos construcciones estructurales, forestales e industriales para la tarea que realmente realizan; una bota de caucho vulcanizado, una de piel negra y una de piel hidrofugada de 2.0 a 2.4 mm responden a decisiones operativas distintas.",
+      "Cotizamos por modelo, código, talla, operación y componentes como puntera, entresuela y suela, conservando el estatus que publica cada ficha. Mándanos por WhatsApp el modelo, las tallas, el calcetín y pantalón de trabajo; preparamos la prueba de caminata, escalera y agachamiento antes de surtir la partida."
     ],
     "etiquetas": {
       "menuTipos": "Tipos de botas para bombero",

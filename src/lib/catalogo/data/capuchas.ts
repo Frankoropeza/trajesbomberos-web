@@ -18,48 +18,44 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "alt": "Capuchas y monjas de protección para bombero"
     },
     "intro": [
-      "La capucha, también llamada monja, cubre cabeza, cuello y la transición hacia hombros o pechera. Su función depende de cómo se solapa con el casco, la máscara del equipo de respiración autónoma y el cuello del chaquetón. Una apertura facial demasiado floja, un babero que se acumula o una capa mal colocada pueden afectar esa interfaz aunque el textil parezca adecuado.",
-      "Hay capuchas de una o dos capas y configuraciones con barrera contra partículas. La doble capa concentra cobertura en cabeza y puede cambiar la sensación térmica y el ajuste; una barrera contra partículas responde a una necesidad distinta y debe evaluarse con el procedimiento de descontaminación. Ninguna de estas opciones se compara solo por color o por el nombre comercial.",
-      "Prueba la capucha con máscara de ERA, casco y chaquetón puestos. Revisa que el elástico recupere posición, que la apertura se acomode al sello de la máscara y que el babero permanezca extendido al mover la cabeza. Para lavado y descontaminación, sigue las instrucciones del fabricante; suavizante, cloro o métodos no previstos pueden alterar la tela y el ajuste.",
-      "El momento de colocación y retiro merece el mismo cuidado que la compra. La capucha puede quedar expuesta a productos de combustión y después tocar piel, casco o cabina si se guarda sin procesar. Define una ruta de equipo limpio y contaminado, asigna responsables e incorpora el cuidado a la instrucción de uso. Esto mantiene la cobertura y evita que la prenda se convierta en una fuente de transferencia.",
-      "Para comparar opciones, solicita construcción, material, apertura, medidas publicadas cuando existan y estatus normativo por modelo. La capucha antipartículas de la familia estructural y la monja de brigada tienen su propia ficha de pieza, enlazada arriba. Sus objetivos no se mezclan con una capucha de Nomex solo porque todas cubren cabeza y cuello.",
-      "El presupuesto debe contemplar piezas de reemplazo y el tiempo de entrenamiento. La apertura facial y el babero se acomodan con una secuencia que conviene practicar antes de una emergencia; cuando una corporación cambia de máscara o casco, esa práctica se repite. La inversión no se limita al tejido: incluye conservar la interfaz que protege piel y vías respiratorias dentro del conjunto.",
-      "Al cerrar una orden, separa los datos de desempeño que pertenecen a un modelo de los criterios operativos de la corporación. Pide los primeros por escrito y define los segundos en el programa de EPP. Este enfoque permite comparar modelos de una o dos capas, o con barrera contra partículas, sin prometer capacidades que no estén expresamente documentadas.",
-      "Una ficha de compra bien planteada nombra la capucha, pero también describe la combinación con la que se aprobó: máscara, casco, cuello y usuario. Incluye cantidad de reposición, responsable de recepción y método de cuidado. Con ello, el cambio de una prenda no obliga a redescubrir cómo debe colocarse ni a usar una alternativa sin haber revisado su cobertura."
+      "Cotizamos capuchas o monjas para cerrar la interfaz entre casco, máscara de ERA, cuello del chaquetón y hombros de tu brigada. La Romak Fire CAP1005 usa 100 % Nomex y círculo facial descubierto; la Majestic PAC II CAP1001 es de Nomex blanco 100 % con doble capa en cabeza y pechera. Definimos la combinación completa antes de elegir una construcción.",
+      "Elegimos por capas, apertura y estatus publicado. Sköld FPEN combina dos capas en cabeza, una en hombros, apertura de 120–145 mm y elástico de al menos 31 pulgadas, equivalentes a 800 mm; PAC II publica apertura de 120–145 mm y elástico encapsulado de media pulgada. Te ayudamos a decidir qué interfaz conserva sello y babero extendido al mover cabeza y torso.",
+      "Surtimos CAP1005, FPEN o CAP1001 según la configuración que pruebe tu equipo con máscara, casco y chaquetón. CAP1005 se publica sin norma; FPEN declara valores de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269; PAC II está listada por UL bajo NFPA 1971 ed. 2018. Conservamos cada estatus tal como corresponde al modelo.",
+      "En tu pliego anota modelo, cantidad, capas, color, apertura facial y combinación aprobada de máscara, casco y cuello. Al recibir, cotejamos costuras, elástico, apertura, babero y documentación contra la orden; registra también el método de lavado y descontaminación. Mándanos por WhatsApp la máscara y casco de tu brigada para revisar la interfaz antes de surtir reposiciones."
     ],
     "grupos": [],
     "faq": [
       {
         "q": "¿Una capucha reemplaza el cubrenuca del casco?",
-        "a": "No. Son piezas distintas y deben solaparse sin afectar máscara, casco o cuello del traje."
+        "a": "No, la capucha y el cubrenuca son piezas distintas y deben solaparse con casco, máscara y cuello del chaquetón. La CAP1005 deja el círculo facial descubierto para ERA, mientras la PAC II tiene aberturas para ojos y nariz diseñadas para máscara. Pídenos la prueba con tu casco y máscara para confirmar la cobertura de ambas piezas."
       },
       {
         "q": "¿Qué diferencia hay entre una y dos capas?",
-        "a": "La configuración de capas cambia la cobertura y el ajuste. Selecciona conforme a la operación y los datos del modelo."
+        "a": "Una y dos capas de Nomex cambian la construcción, la cobertura y el ajuste con tu ERA; no son nombres intercambiables. FPEN publica dos capas en cabeza y una en hombros, mientras PAC II declara doble capa en cabeza y pechera. Pídenos el modelo y la combinación de casco, máscara y chaquetón para revisar cuál conserva el babero extendido."
       },
       {
         "q": "¿Cómo se prueba con ERA?",
-        "a": "Colócala con máscara, casco y chaquetón; revisa apertura facial, sello de máscara y cobertura al mover cabeza y hombros."
+        "a": "La prueba se hace con máscara de ERA, casco y chaquetón puestos, revisando apertura facial, sello, elástico y babero al mover cabeza y hombros. FPEN publica apertura de 120–145 mm y elástico de al menos 31 pulgadas, o 800 mm. Mándanos por WhatsApp tu conjunto para programar la prueba de interfaz antes de cotizar."
       },
       {
         "q": "¿Se puede lavar con cloro?",
-        "a": "No uses cloro ni suavizante si la instrucción del modelo no lo permite."
+        "a": "No usamos cloro ni suavizante cuando la instrucción del modelo no lo permite; FPEN publica lavado con agua tibia, sin suavizante ni cloro. Ese cuidado protege el 100 % Nomex, el elástico y el ajuste que probaste con ERA. Pídenos el método de cuidado del modelo en tu orden para entregarlo con la documentación."
       },
       {
         "q": "¿Dónde están las fichas de capucha existentes?",
-        "a": "En las fichas de pieza de cada familia de traje, enlazadas al inicio de esta página."
+        "a": "Las fichas de capucha existentes están en las fichas de pieza de cada familia de traje enlazadas al inicio de esta página. Ahí distinguimos la capucha antipartículas para traje estructural, la monja de brigada y las capuchas aluminizada y de penetración. Pídenos por WhatsApp la familia de traje para enviarte la ficha que corresponde a tu conjunto."
       },
       {
         "q": "¿Una barrera contra partículas evita lavar?",
-        "a": "No. El lavado y la descontaminación siguen siendo parte del cuidado."
+        "a": "No, una barrera contra partículas no elimina lavado ni descontaminación; complementa el control de partículas en las zonas declaradas. NFPA 1970 aparece como referencia para esa configuración, pero no sustituye el procedimiento de cuidado. Pídenos la ficha de la capucha antipartículas y registra el método aplicable antes de asignarla a tu brigada."
       },
       {
         "q": "¿Qué reviso en recepción?",
-        "a": "Modelo, capas, color, costuras, elástico, apertura y documentación contra la requisición."
+        "a": "En recepción coteja modelo, capas, color, costuras, elástico, apertura y documentación contra la requisición. Para PAC II confirma CAP1001, Nomex blanco 100 %, doble capa en cabeza y pechera, además de apertura de 120–145 mm. Pídenos la orden detallada para comparar cada pieza con la configuración que recibió tu brigada."
       },
       {
         "q": "¿Por qué asignarla por persona?",
-        "a": "Para cuidar higiene, ajuste e historial de condición."
+        "a": "La asignación por persona permite conservar higiene, ajuste e historial de condición de la misma interfaz. En FPEN, el tamaño universal no sustituye revisar elástico de 800 mm, apertura de 120–145 mm y babero de 4 pulgadas con el ERA del elemento. Mándanos por WhatsApp modelo y combinación aprobada para registrar una reposición compatible."
       }
     ],
     "checklistCompra": {
@@ -92,8 +88,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       }
     ],
     "resumenHero": [
-      "La capucha o monja protege una interfaz: la franja que une casco, máscara, cuello y hombros. Una selección correcta no parte de la prenda extendida, sino de una prueba puesta con el ERA y el chaquetón que usa la persona. Apertura facial, elástico, babero y número de capas deben conservar cobertura mientras se mueve la cabeza y el torso.",
-      "Las configuraciones de una capa, doble capa y barrera contra partículas tienen propósitos distintos. La última no elimina la necesidad de descontaminar ni de lavar; las capas no convierten por sí solas un modelo en sustituto de otro. Compra el diseño que corresponde al riesgo, registra el cuidado y verifica su condición antes de cada reasignación. LORICA cotiza la monja junto con el casco y el ERA de tu equipo para revisar esa interfaz."
+      "La capucha o monja cierra la interfaz entre casco, máscara, cuello y hombros de tu brigada. Cotizamos una o dos capas, configuraciones con barrera contra partículas y modelos de 100 % Nomex para que apertura facial, elástico y babero mantengan cobertura con el ERA y chaquetón que utiliza cada elemento.",
+      "Cotizamos CAP1005, FPEN o CAP1001 por modelo, capas, apertura y estatus publicado, sin trasladar una declaración a otra configuración. Mándanos por WhatsApp la máscara, casco y chaquetón de tu equipo; revisamos la prueba de interfaz y anotamos en tu partida los datos para recibir, asignar, lavar y reponer la capucha."
     ],
     "etiquetas": {
       "menuTipos": "Tipos de capucha",

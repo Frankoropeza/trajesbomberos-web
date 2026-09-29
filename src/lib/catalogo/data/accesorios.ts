@@ -18,9 +18,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "alt": "Accesorios para bombero de iluminación, protección ocular y transporte"
     },
     "intro": [
-      "La compra de accesorios comienza por la maniobra, el casco, guantes, ERA, vehículo y resguardo con que convivirá cada pieza. Una apariencia parecida no confirma montaje, alimentación ni funcionamiento.",
-      "NFPA 1970 incorporó la anterior NFPA 1982 para PASS. Una referencia publicada se conserva como declaración del modelo y no se transfiere a otro accesorio.",
-      "En la requisición mexicana anota unidad, cantidad, modelo o configuración, componentes incluidos y prueba de aceptación."
+      "Cotizamos accesorios para la maniobra concreta de tu brigada: iluminación, protección ocular, transporte, cámara térmica o PASS. Cada pieza debe convivir con casco, guantes, ERA, vehículo y resguardo; por eso definimos si necesitas una Streamlight Vantage con clip para casco con ala, goggles Striketeam XTO o una maleta BPS1005 antes de comparar presentaciones.",
+      "Elegimos por interfaz y especificación publicada, no por apariencia. La Vantage declara LED C4, 115 lúmenes, giro de 360° y dos CR123A de 3 V; el kit Striketeam XTO publica BLL1006 con NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA como declaraciones. Te ayudamos a separar esos datos del montaje y la maniobra que realmente cubrirá tu equipo.",
+      "Surtimos la configuración que corresponda: lámpara de casco con clip y baterías, goggles con el kit identificado o maleta Romak Fire BPS1005 de poliéster repelente al agua. Si integras PASS, conservamos NFPA 1970 —antes NFPA 1982— como referencia de esa familia; si el modelo no la publica, no la trasladamos desde otro accesorio.",
+      "En tu pliego registra unidad, cantidad, modelo o configuración, componentes incluidos y la validación de entrega. Al recibir, cotejamos el modelo, soporte, alimentación, accesorios y función contra la requisición; mándanos por WhatsApp el casco, visor, máscara o forma de transporte para definir la interfaz antes de surtir tu partida."
     ],
     "grupos": [
       {
@@ -38,7 +39,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Qué debe incluir una cotización?",
-        "a": "Modelo, cantidad, componentes, método de montaje o transporte y la prueba de aceptación aplicable a la pieza."
+        "a": "La cotización debe identificar modelo, cantidad, componentes, método de montaje o transporte y validación de entrega. Para una Streamlight Vantage anotamos LED C4, clip para casco con ala y dos CR123A de 3 V; para una BPS1005, el poliéster repelente al agua. Pídela con tu casco, visor o forma de transporte para cerrar la configuración."
+      },
+      {
+        "q": "¿Cómo elijo una lámpara de casco?",
+        "a": "Elige lámpara de casco cuando tu maniobra necesita manos libres y tu casco admite el soporte. La Streamlight Vantage declara LED C4, 115 lúmenes, giro de 360° y clip para casco con ala; verifica visor y máscara con guantes puestos. Mándanos por WhatsApp el modelo de casco para cotizar el montaje compatible."
+      },
+      {
+        "q": "¿Qué datos de la Vantage deben aparecer en el pliego?",
+        "a": "El pliego de la Vantage debe nombrar LED C4, 115 lúmenes, giro de 360°, clip para casco con ala y dos CR123A de 3 V. La clasificación NFPA 1971 se publica como declaración del modelo, no como certificación. Pídenos la partida con baterías y casco muestra para cotejar el montaje."
+      },
+      {
+        "q": "¿Qué referencia aplica al dispositivo PASS?",
+        "a": "Para PASS, NFPA 1970 incorporó la anterior NFPA 1982 como referencia de la familia. Esa referencia no convierte otro accesorio en PASS ni se transfiere a un modelo sin publicación propia. Pídenos el modelo, su configuración y la maniobra de tu brigada para documentar la partida correcta."
+      },
+      {
+        "q": "¿Cómo identifico los goggles publicados?",
+        "a": "Los goggles Striketeam XTO se identifican como BLL1006, kit #740-0283, con NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA declarados. Esas referencias pertenecen al kit publicado y no a cualquier lente parecido. Mándanos por WhatsApp el casco y visor para confirmar la interfaz antes de surtirlos."
+      },
+      {
+        "q": "¿Qué reviso al recibir una maleta porta-equipo?",
+        "a": "Al recibir una maleta, coteja Romak Fire BPS1005, su construcción de poliéster de alta resistencia repelente al agua y los componentes descritos en tu requisición. La maleta tiene estatus no aplica en norma, así que no la presentamos como equipo certificado. Pídela con el equipo que transportarás para validar capacidad y forma de carga."
       }
     ],
     "checklistCompra": {
