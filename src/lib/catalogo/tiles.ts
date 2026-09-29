@@ -16,7 +16,8 @@ type Estado = NonNullable<TileProps['estado']>;
 export function estadoModelo(m: Modelo): Estado {
   switch (m.estatusNorma) {
     case 'certificado-ul': return { label: m.certificacion ? `Certificado UL · ${m.certificacion}` : 'Certificado UL · número al cotizar', tone: 'good' };
-    case 'declarado': return { label: m.norma ? `Conforme a ${m.norma}, según el fabricante` : 'Norma declarada por el fabricante', tone: 'neutral' };
+    // Normas que el fabricante ya redacta como frase («Acorde a…», «Clasificación…») no llevan «Conforme a».
+    case 'declarado': return { label: m.norma ? `${/^(acorde|valores|clasificaci)/i.test(m.norma) ? m.norma : `Conforme a ${m.norma}`}, según el fabricante` : 'Norma declarada por el fabricante', tone: 'neutral' };
     case 'equivalente': return { label: m.norma ? `Equivalente a ${m.norma} · no certificado` : 'Equivalente · no certificado', tone: 'warn' };
     case 'materiales': return { label: m.norma ? `Materiales conforme a ${m.norma}` : 'Materiales con norma declarada', tone: 'neutral' };
     case 'niosh': return { label: 'Certificación NIOSH · uso industrial', tone: 'warn' };

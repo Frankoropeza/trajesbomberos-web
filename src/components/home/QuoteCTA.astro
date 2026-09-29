@@ -5,15 +5,16 @@
 import { CONTACT, MARCA, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 
-interface Props { id?: string; titulo?: string; boton?: string; mensaje?: string; }
+interface Props { id?: string; titulo?: string; boton?: string; mensaje?: string; datos?: string[]; }
 const {
   id = 'cotizar',
   titulo = 'Cotiza tu equipo con ficha técnica por WhatsApp',
   boton = 'Cotizar trajes por WhatsApp',
   mensaje = WA_MESSAGES.cotizar,
+  datos: datosProp,
 } = Astro.props as Props;
 
-const datos = [
+const datos = datosProp ?? [
   'Tipo de operación (estructural, forestal, industrial, rescate…)',
   'Número de elementos y tallas',
   'Norma o pliego que debes cumplir, si aplica',

@@ -52,6 +52,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
   description={d.seo.description}
   keywords={d.seo.keywords}
   menuItems={menuItems}
+  menuCta={d.cotizar.menu ? { label: d.cotizar.menu, mensaje: d.cotizar.mensaje } : undefined}
   crumbLabel={d.crumb}
   eyebrow={d.hero.eyebrow}
   h1={d.hero.h1}
@@ -61,6 +62,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
   meta={d.hero.meta}
   faqs={d.faqs}
   {directoryItems}
+  ogImage={d.ogImagen}
   collection={{ name: `${d.hero.h1} ${d.hero.h1Accent ?? ''}`.trim(), description: d.seo.description, url: d.ruta }}
   footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
@@ -153,7 +155,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
     </div>
   </section>
 
-  <QuoteCTA id="cotizar" titulo={d.cotizar.titulo} boton={d.cotizar.boton} mensaje={d.cotizar.mensaje} />
+  <QuoteCTA id="cotizar" titulo={d.cotizar.titulo} boton={d.cotizar.boton} mensaje={d.cotizar.mensaje} datos={d.cotizar.datos} />
 </PageLayout>
 
 <style>
