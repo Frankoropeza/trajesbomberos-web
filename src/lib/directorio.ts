@@ -89,6 +89,7 @@ export const ENTIDADES: Entidad[] = [
 export const TIPO_PLURAL: Record<string, string> = {
   Municipal: 'municipales',
   Estatal: 'estatales',
+  Federal: 'federales',
   Aeropuerto: 'de aeropuerto',
   Voluntarios: 'de voluntarios',
   PEMEX: 'de PEMEX',
@@ -97,7 +98,8 @@ export const TIPO_PLURAL: Record<string, string> = {
 };
 export const TIPO_DESC: Record<string, string> = {
   Municipal: 'Cuerpo de bomberos del ayuntamiento, casi siempre dentro de la coordinación municipal de protección civil.',
-  Estatal: 'Corporación del gobierno del estado o estación que opera como base regional de cobertura estatal.',
+  Estatal: 'Corporación del gobierno del estado (en la Ciudad de México, del gobierno de la Ciudad) o base regional de cobertura estatal.',
+  Federal: 'Brigada de una dependencia federal, como la Comisión Nacional Forestal (CONAFOR) en el combate de incendios forestales.',
   Aeropuerto: 'Servicio de salvamento y extinción de incendios (SEI) dentro de un aeropuerto.',
   Voluntarios: 'Patronato o asociación civil de bomberos voluntarios, con financiamiento propio.',
   PEMEX: 'Brigada contraincendio de refinería, terminal o complejo de Petróleos Mexicanos.',
@@ -237,7 +239,14 @@ export function municipiosDe(estado: string) {
 
 export const serviciosDe = (estado: string) => cuenta(estacionesDe(estado).flatMap((s) => s.servicios ?? []), (x) => x);
 export const fuentesConUrl = (s: Estacion) => s.fuentes.filter((f) => f.url);
-export const mapsUrl = (s: Estacion) => `https://www.google.com/maps/search/?api=1&query=${s.coordenadas.lat},${s.coordenadas.lng}`;
+/** Ubicación exacta → coordenadas; aproximada → búsqueda por nombre y dirección
+ *  (una coordenada aproximada suele ser el centro de la ciudad y llevaría al lector a un punto equivocado). */
+export const mapsUrl = (s: Estacion) => {
+  const q = s.coordenadas.precision === 'exacta'
+    ? `${s.coordenadas.lat},${s.coordenadas.lng}`
+    : [s.nombre, s.direccion ?? (s.ciudad && s.ciudad !== s.municipio ? `${s.ciudad}, ${s.municipio}` : s.municipio), s.estadoNombre].join(', ');
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+};
 /** tel: sin extensión, con lada internacional de México. */
 export const telHref = (t: string) => `+52${t.split(/ext/i)[0].replace(/\D/g, '').replace(/^52(?=\d{10}$)/, '')}`;
 /** Texto del teléfono tal como la fuente lo publica, sin extensiones repetidas. */

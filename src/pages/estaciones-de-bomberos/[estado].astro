@@ -100,8 +100,8 @@ const estacionesSchema = municipios.flatMap((m) => m.estaciones).map((s) => ({
   url: `${SITE.url}${path}#${s.slug}`,
   locality: s.ciudad || s.municipio,
   region: e.nombre,
-  lat: s.coordenadas.lat,
-  lng: s.coordenadas.lng,
+  // Solo coordenadas exactas en el schema: una aproximada no identifica la estación.
+  ...(s.coordenadas.precision === 'exacta' ? { lat: s.coordenadas.lat, lng: s.coordenadas.lng } : {}),
   street: s.direccion,
   telephone: s.telefono ? telHref(s.telefono) : undefined,
   sameAs: s.sitioWeb,

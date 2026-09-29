@@ -15,7 +15,7 @@ resumen: "Qué mide el TPP, qué mide el THL, por qué van en direcciones opuest
 categoria: "especificacion"
 familia: "estructural"
 fecha: 2026-06-23
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "TPP y THL | traje estructural | México"
 description: "TPP y THL son los dos números que definen un traje estructural: qué mide cada uno, por qué se leen juntos y qué valores mínimos pedir en tu cotización."
 keywords:

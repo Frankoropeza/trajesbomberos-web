@@ -1,5 +1,6 @@
 ---
 title: "Cómo elegir equipo de respiración autónoma para bombero"
+ancla: "Equipo de respiración autónoma"
 titleAccent: "por operación y ciclo de servicio"
 eyebrow: "Guía de compra · Protección respiratoria"
 lead: "Un ERA se elige por la atmósfera que enfrentará el usuario, la configuración completa del equipo y la capacidad de mantenerlo listo para el siguiente llamado."
@@ -10,10 +11,10 @@ meta: ["ERA de combate", "ERA industrial", "Cilindro", "Mantenimiento"]
 resumen: "Cómo elegir equipo de respiración autónoma: combate o industrial, cilindros, máscaras, duración nominal, mantenimiento y criterios para una cotización comparable."
 categoria: "especificacion"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cómo elegir equipo de respiración autónoma | México"
 description: "Cómo elegir equipo de respiración autónoma para bombero: diferencias entre combate e industrial, cilindros, máscaras, duración y mantenimiento del ERA."
-keywords: ["equipo de respiración autónoma", "ERA para bombero", "México"]
+keywords: ["cómo elegir equipo de respiración autónoma", "ERA para bombero", "México"]
 imagen: "/images/blog/como-elegir-equipo-de-respiracion-autonoma.avif"
 imagenAlt: "Equipo de respiración autónoma con máscara y cilindro para bombero"
 ---

@@ -34,12 +34,23 @@ import {
   PRODUCT_CATEGORIES,
 } from '@config/site';
 
+// Metas de la home (tanda de metas P01, 2026-09-29): keyword natural,
+// sin marca, sin «México», sin pipes. Datos: Ahrefs MX (trajes de bomberos 200,
+// traje de bombero profesional 90, traje contra incendio 30+20, venta de trajes
+// para bomberos 10 — hoy #11).
+const SEO_HOME = {
+  title: 'Trajes para bomberos profesionales y equipo contra incendio',
+  description:
+    'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados: Romak Fire, Sköld y Lakeland con ficha técnica. Cotiza en día hábil.',
+  keywords: ['trajes para bomberos', 'traje de bombero profesional', 'traje contra incendio'],
+} as const;
+
 const hero = {
   eyebrow: 'Trajes y equipo de protección para bomberos',
   title: 'Trajes para bomberos',
-  accent: 'en todo México',
+  accent: 'profesionales con ficha técnica',
   subtitle:
-    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
+    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación —el traje contra incendio que corresponde a cada riesgo—, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
   descRight: [
     'Somos especialistas en una sola línea: ropa de protección para combate de incendios. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos municipales que compran por licitación y unidades de protección civil en los 32 estados de la República.',
     'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y condiciones de entrega por escrito. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
@@ -127,7 +138,7 @@ const cardHazmat: TileProps[] = hazmat
 const cardConjunto: TileProps = {
   codigo: `TR-${String(trajesFamilias.length + cardHazmat.length + 1).padStart(2, '0')}`,
   titulo: 'Conjunto completo y compra por pieza',
-  desc: 'Traje, casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima.',
+  desc: 'El traje de bombero completo: traje, casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima.',
   href: '/kits/',
   cta: 'Kits de equipo completo para bombero',
   img: '/images/escenas/bomberos-ataque-incendio-manguera.avif',
@@ -179,7 +190,7 @@ const faqs = [
   },
   {
     q: '¿Cómo se llama el traje de los bomberos?',
-    a: 'En México se le llama traje de bombero, traje estructural o equipo de protección estructural; en catálogos de importación aparece como turnout gear o bunker gear. Se compone de chaquetón y pantalonera de tres capas, y se completa con casco, monja, guantes, botas y equipo de respiración autónoma (ERA). El traje de brigadista, el forestal y el de aproximación son familias distintas, no sinónimos.',
+    a: 'En México se le llama traje de bombero, traje estructural, traje contra incendio o equipo de protección estructural; en el habla común, uniforme de bombero. En catálogos de importación aparece como turnout gear o bunker gear. Se compone de chaquetón y pantalonera de tres capas, y se completa con casco, monja, guantes, botas y equipo de respiración autónoma (ERA). El traje de brigadista, el forestal y el de aproximación son familias distintas, no sinónimos.',
   },
   {
     q: '¿Qué necesito para una licitación o compra de gobierno?',
@@ -193,11 +204,19 @@ const directoryItems = [
   ...complementos.flatMap((c) => (c.href ? [{ name: c.titulo, url: `${SITE.url}${c.href}` }] : [])),
 ];
 
-// Últimos 3 artículos del blog: la home enlaza al contenido que
+// Últimos 4 artículos del blog: la home enlaza al contenido que
 // resuelve las dudas previas a la cotización.
-const ultimosPosts = (await getPosts()).slice(0, 3);
+const ultimosPosts = (await getPosts()).slice(0, 4);
 ---
-<BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
+<BaseLayout
+  pageType="home"
+  path="/"
+  title={SEO_HOME.title}
+  description={SEO_HOME.description}
+  keywords={SEO_HOME.keywords}
+  faqs={faqs}
+  directoryItems={directoryItems}
+>
   <Hero {...hero} solid />
   <QuickNav />
 
@@ -282,7 +301,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           'Empieza por <a href="/blog/como-elegir-traje-para-bomberos/">cómo elegir un traje para bomberos</a> o por <a href="/blog/nfpa-1970-que-cambio/">qué cambió con la NFPA 1970</a>. Cada guía enlaza al catálogo correspondiente y te lleva a cotizar por WhatsApp cuando ya sabes qué necesitas.',
         ]}
       />
-      <div class="grid-cards grid-cards--3">
+      <div class="grid-cards grid-cards--4">
         {ultimosPosts.map((a, i) => (
           <PostCard
             href={postUrl(a)}
@@ -297,7 +316,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           />
         ))}
       </div>
-      <p class="blog-cta"><a href="/blog/">Artículos técnicos sobre trajes de bomberos →</a></p>
+      <p class="blog-cta"><a href="/blog/">Blog técnico de trajes para bomberos: todas las guías →</a></p>
     </div>
   </section>
   <QuoteCTA id="cotizar" />

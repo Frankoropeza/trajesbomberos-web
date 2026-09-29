@@ -59,10 +59,6 @@
    "precision": "exacta"
   },
   "telefono": "(449) 996-9300",
-  "telefonosAdicionales": [
-   "(449) 970-0065",
-   "(449) 970-3939"
-  ],
   "email": "proteccion.civil@aguascalientes.gob.mx",
   "sitioWeb": "https://www.aguascalientes.gob.mx/SEGGOB/civil",
   "servicios": [
@@ -106,8 +102,8 @@
   },
   "telefono": "(449) 970-4053",
   "telefonosAdicionales": [
-   "(449) 970-3939",
-   "(449) 918-2811"
+   "(449) 918-2811",
+   "(449) 970-0075"
   ],
   "sitioWeb": "https://www.ags.gob.mx",
   "servicios": [
@@ -135,6 +131,14 @@
    {
     "nombre": "oem.com.mx",
     "url": "https://oem.com.mx/elsoldelcentro/local/en-aguascalientes-152-anos-de-heroes-que-arriesgan-su-vida-celebran-hoy-el-dia-del-bombero-25340095"
+   },
+   {
+    "nombre": "ags.gob.mx — Protección Civil municipal",
+    "url": "https://www.ags.gob.mx/cont.aspx?p=9833"
+   },
+   {
+    "nombre": "aguascalientes.gob.mx — Teléfonos de emergencia",
+    "url": "https://www.aguascalientes.gob.mx/estado/emergencias.html"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -158,10 +162,6 @@
    "lng": -102.0892,
    "precision": "exacta"
   },
-  "telefono": "(496) 967-4019",
-  "telefonosAdicionales": [
-   "(496) 967-4056"
-  ],
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -205,10 +205,7 @@
    "lng": -102.7184,
    "precision": "exacta"
   },
-  "telefono": "(495) 956-0937",
-  "telefonosAdicionales": [
-   "(495) 956-1184"
-  ],
+  "telefono": "(495) 956-0756",
   "servicios": [
    "incendios-estructurales",
    "incendios-vehiculares",
@@ -231,6 +228,10 @@
    {
     "nombre": "calvillo.gob.mx",
     "url": "https://calvillo.gob.mx/"
+   },
+   {
+    "nombre": "facebook.com/MunicipioDeCalvillo — Protección Civil, Bomberos y Paramédicos",
+    "url": "https://www.facebook.com/MunicipioDeCalvillo/photos/gobiernodecalvilloteescuchaprotecci%C3%B3n-civil-bomberos-y-param%C3%A9dicos-495-956-0756p/1940606912811014/"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -296,9 +297,8 @@
   "coordenadas": {
    "lat": 21.85,
    "lng": -101.9333,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(496) 967-3389",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -339,9 +339,6 @@
    "precision": "exacta"
   },
   "telefono": "(449) 965-0088",
-  "telefonosAdicionales": [
-   "(449) 965-0089"
-  ],
   "servicios": [
    "incendios-estructurales",
    "incendios-vehiculares",
@@ -435,7 +432,6 @@
    "lng": -102.318,
    "precision": "exacta"
   },
-  "telefono": "(465) 951-0203",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -480,7 +476,6 @@
    "lng": -102.27,
    "precision": "exacta"
   },
-  "telefono": "(465) 967-0124",
   "sitioWeb": "https://www.sanfranciscodelosromo.gob.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -570,7 +565,6 @@
    "lng": -102.1717,
    "precision": "exacta"
   },
-  "telefono": "(465) 951-2076",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -613,7 +607,7 @@
   "coordenadas": {
    "lat": 31.7167,
    "lng": -116.5667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales"
@@ -1927,7 +1921,7 @@
   "coordenadas": {
    "lat": 20.3667,
    "lng": -90.05,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "email": "proteccioncivil@calkini.gob.mx",
   "sitioWeb": "https://www.calkini.gob.mx",
@@ -2092,7 +2086,7 @@
   "coordenadas": {
    "lat": 18.1833,
    "lng": -91.05,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(982) 826-0138",
   "email": "presidencia@municipiodecandelaria.gob.mx",
@@ -2197,7 +2191,6 @@
    "(938) 384-1663"
   ],
   "email": "proteccioncivil.carmen@gmail.com",
-  "sitioWeb": "http://www.carmen.gob.mx/",
   "servicios": [
    "proteccion-civil"
   ],
@@ -2205,6 +2198,10 @@
    {
     "nombre": "carmen.gob.mx",
     "retirada": "http://www.carmen.gob.mx/home/proteccion-civil-carmen/"
+   },
+   {
+    "nombre": "facebook.com/proteccioncivilcarmen2021",
+    "url": "https://www.facebook.com/proteccioncivilcarmen2021/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2257,7 +2254,7 @@
   "coordenadas": {
    "lat": 19.35,
    "lng": -90.7167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(982) 828-0343",
   "telefonosAdicionales": [
@@ -2270,7 +2267,11 @@
   "fuentes": [
    {
     "nombre": "cotaipec.org.mx",
-    "url": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+    "retirada": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+   },
+   {
+    "nombre": "champoton.gob.mx",
+    "url": "https://www.champoton.gob.mx/inicio/index.php/component/sppagebuilder/page/10?Itemid=0"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2309,37 +2310,6 @@
   "municipioSlug": "dzitbalche"
  },
  {
-  "id": "cam-12",
-  "nombre": "Dirección de Protección Civil Municipal de Escárcega",
-  "slug": "direccion-de-proteccion-civil-municipal-de-escarcega",
-  "estado": "campeche",
-  "estadoNombre": "Campeche",
-  "ciudad": "Escárcega",
-  "municipio": "Escárcega",
-  "tipo": "Municipal",
-  "corporacion": "Dirección de Protección Civil Municipal de Escárcega",
-  "rolEstacion": "unica",
-  "direccion": "Av. Héctor Pérez Martínez S/N, entre 35 y 37, Col. Morelos, C.P. 24350, Escárcega",
-  "coordenadas": {
-   "lat": 18.61,
-   "lng": -90.74,
-   "precision": "exacta"
-  },
-  "sitioWeb": "https://www.escarcega.gob.mx",
-  "servicios": [
-   "proteccion-civil"
-  ],
-  "fuentes": [
-   {
-    "nombre": "cotaipec.org.mx",
-    "url": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "baja",
-  "municipioSlug": "escarcega"
- },
- {
   "id": "cam-11",
   "nombre": "Dirección de Protección Civil Municipal de Hecelchakán",
   "slug": "direccion-de-proteccion-civil-municipal-de-hecelchakan",
@@ -2350,7 +2320,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil Municipal de Hecelchakán",
   "rolEstacion": "unica",
-  "direccion": "Calle 20 S/N, Col. Centro, C.P. 24800, Hecelchakán",
   "coordenadas": {
    "lat": 20.1747,
    "lng": -90.1297,
@@ -2363,7 +2332,11 @@
   "fuentes": [
    {
     "nombre": "cotaipec.org.mx",
-    "url": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+    "retirada": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+   },
+   {
+    "nombre": "hecelchakan.gob.mx — Reglamento de Protección Civil",
+    "url": "https://www.hecelchakan.gob.mx/hecelchakan/wp-content/uploads/2022/04/REGLAMENTO-DE-PROTECCION-CIVIL.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2620,7 +2593,7 @@
   "coordenadas": {
    "lat": 16.7,
    "lng": -93.7167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(968) 107-3251",
   "servicios": [
@@ -2904,7 +2877,7 @@
   "coordenadas": {
    "lat": 16.35,
    "lng": -92.5667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(992) 108-2486",
   "servicios": [
@@ -2936,7 +2909,7 @@
   "coordenadas": {
    "lat": 16.2333,
    "lng": -93.2667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(965) 113-4493",
   "servicios": [
@@ -3350,40 +3323,7 @@
    },
    {
     "nombre": "patronatobomberoscuauhtemoc.org",
-    "url": "https://patronatobomberoscuauhtemoc.org/"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "cuauhtemoc"
- },
- {
-  "id": "chih-20",
-  "nombre": "Patronato del H. Cuerpo de Bomberos de Cuauhtémoc A.C.",
-  "slug": "patronato-del-h-cuerpo-de-bomberos-de-cuauhtemoc-a-c",
-  "estado": "chihuahua",
-  "estadoNombre": "Chihuahua",
-  "ciudad": "Ciudad Cuauhtémoc",
-  "municipio": "Cuauhtémoc",
-  "tipo": "Voluntarios",
-  "corporacion": "Patronato del H. Cuerpo de Bomberos de Cuauhtémoc A.C.",
-  "rolEstacion": "unica",
-  "direccion": "10 de Mayo #2210, Col. Progreso, Ciudad Cuauhtémoc",
-  "coordenadas": {
-   "lat": 28.4089,
-   "lng": -106.8667,
-   "precision": "exacta"
-  },
-  "telefono": "(614) 239-6563",
-  "email": "contacto@patronatobomberoscuauhtemoc.org",
-  "sitioWeb": "https://patronatobomberoscuauhtemoc.org/",
-  "servicios": [
-   "proteccion-civil"
-  ],
-  "fuentes": [
-   {
-    "nombre": "patronatobomberoscuauhtemoc.org",
-    "url": "https://patronatobomberoscuauhtemoc.org/"
+    "retirada": "https://patronatobomberoscuauhtemoc.org/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -3435,7 +3375,7 @@
   "coordenadas": {
    "lat": 26.9333,
    "lng": -105.6667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://hidalgodelparral.chihuahua.gob.mx/",
   "servicios": [
@@ -3922,13 +3862,11 @@
   "tipo": "Municipal",
   "corporacion": "Cuerpo de Bomberos / Protección Civil de Nuevo Casas Grandes",
   "rolEstacion": "unica",
-  "direccion": "Calle Candameño No. 5709, Fracc. Aeropuerto, C.P. 31700, Nuevo Casas Grandes",
   "coordenadas": {
    "lat": 30.4167,
    "lng": -107.9167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(636) 694-1529",
   "sitioWeb": "https://ncg.gob.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -3938,7 +3876,11 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "https://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "https://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "facebook.com — Bomberos y Protección Civil NCG",
+    "url": "https://www.facebook.com/p/Bomberos-y-Protecci%C3%B3n-Civil-NCG-100066563768191/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -4018,7 +3960,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Azcapotzalco",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Azcapotzalco",
@@ -4054,7 +3996,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Benito Juárez",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Benito Juárez",
@@ -4090,7 +4032,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Coyoacán",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Coyoacán",
@@ -4126,7 +4068,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Cuajimalpa de Morelos",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Cuajimalpa",
@@ -4163,7 +4105,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Cuajimalpa de Morelos",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Subestación Cuajimalpa (Santa Fe)",
@@ -4195,7 +4137,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Cuauhtémoc",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Cuauhtémoc",
@@ -4231,7 +4173,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Gustavo A. Madero",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Saavedra",
@@ -4267,7 +4209,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Gustavo A. Madero",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX — Módulo II Cuautepec",
   "rolEstacion": "subestacion",
   "direccion": "Calle 5 de Mayo No. 59, Col. Villa Madero, C.P. 07200",
@@ -4301,7 +4243,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Iztacalco",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Iztacalco",
@@ -4336,7 +4278,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Iztapalapa",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Iztapalapa",
@@ -4373,7 +4315,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Iztapalapa",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Subestación CEDA (Central de Abasto)",
@@ -4405,7 +4347,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Iztapalapa",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Subestación Iztapalapa II",
@@ -4441,7 +4383,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "La Magdalena Contreras",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Magdalena Contreras",
@@ -4478,7 +4420,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "La Magdalena Contreras",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Subestación San Jerónimo (Magdalena Contreras)",
@@ -4510,7 +4452,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Miguel Hidalgo",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Tacuba",
@@ -4546,7 +4488,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Miguel Hidalgo",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Tacubaya",
@@ -4582,7 +4524,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Milpa Alta",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Milpa Alta",
@@ -4618,7 +4560,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Tlalpan",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Tlalpan",
@@ -4655,7 +4597,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Tláhuac",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Tláhuac",
@@ -4691,7 +4633,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Venustiano Carranza",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "central",
   "numeroEstacion": "Estación Central",
@@ -4764,7 +4706,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Xochimilco",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Xochimilco",
@@ -4800,7 +4742,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Álvaro Obregón",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Álvaro Obregón",
@@ -4836,7 +4778,7 @@
   "estadoNombre": "Ciudad de México",
   "ciudad": "Ciudad de México",
   "municipio": "Álvaro Obregón",
-  "tipo": "Municipal",
+  "tipo": "Estatal",
   "corporacion": "HCBCDMX — Módulo I Álvaro Obregón (Olivar de los Padres)",
   "rolEstacion": "subestacion",
   "direccion": "Av. Toluca, esq. San Pablo, Col. Olivar de los Padres, C.P. 01780",
@@ -5152,7 +5094,7 @@
   "municipio": "Monclova",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Monclova",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Blvd. Francisco I. Madero esq. Blvd. Harold R. Pape s/n, Zona Centro, C.P. 25750, Monclova",
   "coordenadas": {
    "lat": 26.9097,
@@ -5368,7 +5310,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil y Bomberos de Nava",
   "rolEstacion": "unica",
-  "direccion": "Nava, Coahuila (Dirección de PC y Bomberos municipal)",
   "coordenadas": {
    "lat": 28.4214,
    "lng": -100.7711,
@@ -5568,7 +5509,7 @@
   "coordenadas": {
    "lat": 27.85,
    "lng": -101.1167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(861) 612-3535",
   "servicios": [
@@ -5689,7 +5630,7 @@
   "municipio": "Saltillo",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Saltillo",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Blvd. Isidro López Zertuche s/n, Col. Río Bravo, C.P. 25225, Saltillo",
   "coordenadas": {
    "lat": 25.4232,
@@ -5778,7 +5719,11 @@
   "fuentes": [
    {
     "nombre": "web.nuevarosita.gob.mx",
-    "url": "https://web.nuevarosita.gob.mx/colaboran-bomberos-de-nueva-rosita-en-incendio-de-sabinas/"
+    "retirada": "https://web.nuevarosita.gob.mx/colaboran-bomberos-de-nueva-rosita-en-incendio-de-sabinas/"
+   },
+   {
+    "nombre": "vanguardia.com.mx — Teléfonos de apoyo para Sabinas y Nueva Rosita",
+    "url": "https://vanguardia.com.mx/coahuila/2901507-telefonos-de-apoyo-para-sabinas-y-nueva-rosita-coahuila-DYVG2901507"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6048,7 +5993,7 @@
   "municipio": "Torreón",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Torreón",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Prol. Degollado y Av. Delicias, Col. Luis Echeverría Álvarez, Torreón",
   "coordenadas": {
    "lat": 25.5394,
@@ -6342,16 +6287,14 @@
   "tipo": "Municipal",
   "corporacion": "Unidad Municipal de Protección Civil y Bomberos de Cuauhtémoc",
   "rolEstacion": "unica",
-  "direccion": "Guadalupe Victoria S/N, Col. El Toreo, C.P. 28500, Cuauhtémoc",
   "coordenadas": {
    "lat": 19.33,
    "lng": -103.6,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(312) 328-0557",
+  "telefono": "(312) 328-1170",
   "telefonosAdicionales": [
-   "(312) 328-1170",
-   "(312) 328-0802"
+   "(312) 309-0971"
   ],
   "servicios": [
    "incendios-estructurales",
@@ -6365,6 +6308,10 @@
    {
     "nombre": "proteccioncivil.gob.mx",
     "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "cuauhtemoc-col.gob.mx — Números de emergencia",
+    "url": "https://www.cuauhtemoc-col.gob.mx/portal/?numeros-emergencia="
    }
   ],
   "verificadoEl": "2026-06",
@@ -6388,7 +6335,7 @@
    "lng": -103.7197,
    "precision": "exacta"
   },
-  "telefono": "(313) 324-9008",
+  "telefono": "(313) 324-9200",
   "telefonosAdicionales": [
    "(313) 324-9032"
   ],
@@ -6401,6 +6348,10 @@
    {
     "nombre": "proteccioncivil.gob.mx",
     "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "ixtlahuacan.col.gob.mx — Protección Civil",
+    "url": "http://www.ixtlahuacan.col.gob.mx/curr%C3%ADculo%20proteccion%20civil.html"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6567,7 +6518,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección Municipal de Protección Civil y Bomberos de Manzanillo",
   "rolEstacion": "unica",
-  "direccion": "Calle Cedros No. 2, Barrio Uno, Col. Valle de las Garzas, C.P. 28200, Manzanillo",
   "coordenadas": {
    "lat": 19.0925026,
    "lng": -104.2973371,
@@ -6587,6 +6537,10 @@
    {
     "nombre": "proteccioncivil.gob.mx",
     "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "origeninformativo.com — Protección Civil Manzanillo",
+    "url": "https://www.origeninformativo.com/post/protecci%C3%B3n-civil-manzanillo-refuerza-medidas-preventivas-en-zonas-de-playa-por-hurac%C3%A1n-flossie"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6794,7 +6748,7 @@
   "coordenadas": {
    "lat": 24.5167,
    "lng": -104.7667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(677) 872-0225",
   "telefonosAdicionales": [
@@ -6808,7 +6762,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6842,43 +6796,15 @@
    {
     "nombre": "proteccioncivil.durango.gob.mx",
     "url": "https://proteccioncivil.durango.gob.mx/durango-avanza-en-la-profesionalizacion-de-corporaciones-de-emergencia/"
+   },
+   {
+    "nombre": "proteccioncivil.durango.gob.mx — Directorio Municipal de PC y Bomberos 2022-2025",
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "alta",
   "municipioSlug": "cuencame"
- },
- {
-  "id": "dgo-17",
-  "nombre": "Brigadas Forestales — Secretaría de Recursos Naturales y Medio Ambiente de Durango",
-  "slug": "brigadas-forestales-secretaria-de-recursos-naturales-y-medio-ambiente-de-durango",
-  "estado": "durango",
-  "estadoNombre": "Durango",
-  "ciudad": "Durango",
-  "municipio": "Durango",
-  "tipo": "Estatal",
-  "corporacion": "Brigadas Forestales — Secretaría de Recursos Naturales y Medio Ambiente de Durango",
-  "rolEstacion": "unica",
-  "coordenadas": {
-   "lat": 24.0277,
-   "lng": -104.6532,
-   "precision": "aproximada"
-  },
-  "sitioWeb": "https://medioambiente.durango.gob.mx/",
-  "servicios": [
-   "incendios-estructurales",
-   "incendios-forestales",
-   "capacitacion"
-  ],
-  "fuentes": [
-   {
-    "nombre": "durango.gob.mx — brigadas de sanidad forestal",
-    "url": "https://www.durango.gob.mx/boletines/gobierno-del-estado-y-conafor-trabajan-en-equipo-para-atender-plaga-de-insecto-descortezador-y-proteger-bosques-de-durango"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "durango"
  },
  {
   "id": "dgo-16",
@@ -6888,7 +6814,7 @@
   "estadoNombre": "Durango",
   "ciudad": "Durango",
   "municipio": "Durango",
-  "tipo": "Estatal",
+  "tipo": "Federal",
   "corporacion": "Brigadas de Combate de Incendios Forestales — CONAFOR Durango",
   "rolEstacion": "unica",
   "coordenadas": {
@@ -6934,11 +6860,7 @@
    "precision": "aproximada"
   },
   "telefono": "(618) 137-8460",
-  "telefonosAdicionales": [
-   "(618) 814-4555"
-  ],
   "email": "direccionproteccioncivil@gmail.com",
-  "sitioWeb": "https://pc.durangocapital.gob.mx/",
   "servicios": [
    "incendios-estructurales",
    "proteccion-civil"
@@ -6946,11 +6868,11 @@
   "fuentes": [
    {
     "nombre": "pc.durangocapital.gob.mx",
-    "url": "https://pc.durangocapital.gob.mx/bomberos-2/"
+    "retirada": "https://pc.durangocapital.gob.mx/bomberos-2/"
    },
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7016,7 +6938,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7042,8 +6964,7 @@
   },
   "telefono": "(871) 714-1210",
   "telefonosAdicionales": [
-   "(871) 714-0231",
-   "(871) 748-0255"
+   "(871) 714-0231"
   ],
   "sitioWeb": "https://www.gomezpalacio.gob.mx/proteccion-civil-3/",
   "servicios": [
@@ -7057,6 +6978,10 @@
    {
     "nombre": "elsiglodetorreon.com.mx",
     "url": "https://www.elsiglodetorreon.com.mx/noticia/2022/bomberos-de-gomez-palacio-cuentan-por-primera-vez-con-patronato.html"
+   },
+   {
+    "nombre": "proteccioncivil.durango.gob.mx — Directorio Municipal de PC y Bomberos 2022-2025",
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7092,7 +7017,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7123,7 +7048,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7154,7 +7079,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7185,7 +7110,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7207,7 +7132,7 @@
   "coordenadas": {
    "lat": 24.0667,
    "lng": -104.0833,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(675) 867-0402",
   "servicios": [
@@ -7216,7 +7141,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7238,7 +7163,7 @@
   "coordenadas": {
    "lat": 23.7833,
    "lng": -105.3667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(675) 876-0180",
   "servicios": [
@@ -7250,6 +7175,10 @@
    {
     "nombre": "elsiglodedurango.com.mx",
     "url": "https://www.elsiglodedurango.com.mx/noticia/2018/cuerpo-de-bomberos-voluntarios-de-el-salto-cumple-35-anos.html"
+   },
+   {
+    "nombre": "proteccioncivil.durango.gob.mx — Directorio Municipal de PC y Bomberos 2022-2025",
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7287,6 +7216,10 @@
    {
     "nombre": "oem.com.mx",
     "url": "https://oem.com.mx/elsoldedurango/local/capacita-pc-de-durango-a-bomberos-de-santiago-papasquiaro-27269202"
+   },
+   {
+    "nombre": "proteccioncivil.durango.gob.mx — Directorio Municipal de PC y Bomberos 2022-2025",
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7317,7 +7250,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.durango.gob.mx",
-    "url": "https://proteccioncivil.durango.gob.mx/wp-content/uploads/sites/39/2023/04/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025.pdf"
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7339,7 +7272,7 @@
   "coordenadas": {
    "lat": 23.95,
    "lng": -103.9833,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(675) 102-6691",
   "servicios": [
@@ -7350,6 +7283,10 @@
    {
     "nombre": "vicenteguerrero.gob.mx",
     "url": "https://vicenteguerrero.gob.mx/proteccion-civil/"
+   },
+   {
+    "nombre": "proteccioncivil.durango.gob.mx — Directorio Municipal de PC y Bomberos 2022-2025",
+    "url": "https://proteccioncivil.durango.gob.mx/wp/cepc_archivos/Directorio%20de%20Unidades%20Municipales/DIRECTORIO-DE-COORDINADORES-MUNICIPALES-DE-P.-C.-sin-dp-2022-2025%20(1).pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -7367,16 +7304,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación Municipal de Protección Civil y Bomberos de Amecameca",
   "rolEstacion": "unica",
-  "direccion": "Calle Ayapango, Col. Panohaya, C.P. 56900",
+  "direccion": "Paseo de los Volcanes s/n, Unidad Deportiva, Amecameca",
   "coordenadas": {
    "lat": 19.13146334,
    "lng": -98.77653069,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(597) 978-4099",
-  "telefonosAdicionales": [
-   "(597) 978-1793"
-  ],
+  "telefono": "(597) 978-1793",
   "sitioWeb": "https://amecameca.gob.mx/proteccion-civil/",
   "servicios": [
    "incendios-estructurales",
@@ -7395,6 +7329,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2127506"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7582,7 +7520,7 @@
    "lng": -98.7392,
    "precision": "aproximada"
   },
-  "telefono": "(597) 688-2442",
+  "telefono": "(597) 976-2417",
   "email": "dir.proteccioncivil@atlautla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -7592,11 +7530,16 @@
    {
     "nombre": "alertas.edomex.gob.mx — Atlautla",
     "url": "https://alertas.edomex.gob.mx/inicio/unidad-municipal-pc/coordinacion-de-proteccion-civil-atlautla/"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "alta",
-  "municipioSlug": "atlautla"
+  "municipioSlug": "atlautla",
+  "direccion": "Calle Veracruz s/n, Col. Centro, Barrio San Jacinto, Atlautla"
  },
  {
   "id": "mex-07",
@@ -7690,16 +7633,13 @@
   "tipo": "Municipal",
   "corporacion": "Dirección General de Protección Civil y Bomberos de Chimalhuacán",
   "rolEstacion": "unica",
-  "direccion": "Calle Malinalli, Col. Alfareros, C.P. 56363",
+  "direccion": "Calle Anáhuacatl No. 3, Barrio Alfarero, Chimalhuacán",
   "coordenadas": {
    "lat": 19.42696329,
    "lng": -98.96579073,
    "precision": "aproximada"
   },
-  "telefono": "(55) 9208-6317",
-  "telefonosAdicionales": [
-   "(55) 9208-6318"
-  ],
+  "telefono": "(55) 9208-6319",
   "sitioWeb": "https://chimalhuacan.gob.mx/proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -7718,6 +7658,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=11844661"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7783,13 +7727,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación Municipal de Protección Civil y Bomberos de Cuautitlán Izcalli",
   "rolEstacion": "unica",
-  "direccion": "Calle Bosques de Bolognia, Col. Bosques del Lago Sector 1, C.P. 54766",
+  "direccion": "Av. Transformación esq. Calle Luis Pasteur, Parque Industrial Cuamatla, Cuautitlán Izcalli",
   "coordenadas": {
    "lat": 19.6187441,
    "lng": -99.23780264,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 2620-1909",
+  "telefono": "(55) 5870-1783",
   "sitioWeb": "https://cuautitlanizcalli.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -7809,6 +7753,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=1988591"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8231,10 +8179,7 @@
    "lng": -99.7641,
    "precision": "aproximada"
   },
-  "telefono": "(712) 283-0052",
-  "telefonosAdicionales": [
-   "(712) 283-3060"
-  ],
+  "telefono": "(712) 283-3060",
   "email": "proteccion_civil@ixtlahuaca.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8249,11 +8194,16 @@
    {
     "nombre": "Directorio CGPC EDOMEX 2024",
     "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "alta",
-  "municipioSlug": "ixtlahuaca"
+  "municipioSlug": "ixtlahuaca",
+  "direccion": "Avenida de la Mujer s/n, Ixtlahuaca"
  },
  {
   "id": "mex-41",
@@ -8271,7 +8221,7 @@
    "lng": -99.7286,
    "precision": "aproximada"
   },
-  "telefono": "(55) 4911-6262",
+  "telefono": "(761) 734-2360",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -8285,11 +8235,16 @@
    {
     "nombre": "Directorio CGPC EDOMEX 2024",
     "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "media",
-  "municipioSlug": "jilotepec"
+  "municipioSlug": "jilotepec",
+  "direccion": "Libramiento Antonio Huitrón s/n (atrás del Hospital General), Jilotepec"
  },
  {
   "id": "mex-20",
@@ -8305,9 +8260,9 @@
   "coordenadas": {
    "lat": 19.35520296,
    "lng": -98.96541791,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5857-2028",
+  "telefono": "(55) 5857-0990",
   "email": "proteccioncivil@losreyeslapaz.gob.mx",
   "sitioWeb": "https://lapaz.gob.mx",
   "servicios": [
@@ -8327,11 +8282,16 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2140593"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
   "confianza": "alta",
-  "municipioSlug": "la-paz"
+  "municipioSlug": "la-paz",
+  "direccion": "Carretera México–Texcoco km 19.5, Col. Coaxuaco, La Paz"
  },
  {
   "id": "mex-05",
@@ -8414,7 +8374,7 @@
    },
    {
     "nombre": "metepec.gob.mx — verificadores PC",
-    "url": "https://metepec.gob.mx/verificadores/protciv.php"
+    "retirada": "https://metepec.gob.mx/verificadores/protciv.php"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -8424,43 +8384,6 @@
   "verificadoEl": "2026-09",
   "confianza": "alta",
   "municipioSlug": "metepec"
- },
- {
-  "id": "mex-50",
-  "nombre": "Bomberos Naucalpan — Estación Los Arcos",
-  "slug": "bomberos-naucalpan-estacion-los-arcos",
-  "estado": "estado-de-mexico",
-  "estadoNombre": "Estado de México",
-  "ciudad": "Naucalpan de Juárez",
-  "municipio": "Naucalpan de Juárez",
-  "tipo": "Municipal",
-  "corporacion": "Coordinación Municipal de Gestión Integral de Riesgos, Protección Civil y Bomberos de Naucalpan de Juárez",
-  "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Los Arcos",
-  "direccion": "Av. los Arcos, Col. Padre Figueroa, C.P. 53410",
-  "coordenadas": {
-   "lat": 19.47323855,
-   "lng": -99.24343139,
-   "precision": "exacta"
-  },
-  "servicios": [
-   "incendios-estructurales",
-   "rescate-vehicular",
-   "atencion-prehospitalaria"
-  ],
-  "fuentes": [
-   {
-    "nombre": "naucalpan.gob.mx",
-    "url": "https://www.naucalpan.gob.mx/"
-   },
-   {
-    "nombre": "DENUE — INEGI",
-    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2043211"
-   }
-  ],
-  "verificadoEl": "2026-09",
-  "confianza": "media",
-  "municipioSlug": "naucalpan-de-juarez"
  },
  {
   "id": "mex-48",
@@ -8549,17 +8472,13 @@
   "corporacion": "Coordinación Municipal de Gestión Integral de Riesgos, Protección Civil y Bomberos de Naucalpan de Juárez",
   "rolEstacion": "central",
   "numeroEstacion": "Cuartel Central",
-  "direccion": "Av. de las Granjas 243, Col. El Chamizal, C.P. 53770",
+  "direccion": "Av. de los Arcos No. 30, Col. Padre Figueroa, Naucalpan de Juárez",
   "coordenadas": {
    "lat": 19.44516217,
    "lng": -99.24831804,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5373-1122",
-  "telefonosAdicionales": [
-   "(55) 5560-3868",
-   "(55) 5560-5989"
-  ],
+  "telefono": "(55) 5560-5989",
   "sitioWeb": "https://naucalpan.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8581,6 +8500,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2081646"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8795,13 +8718,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación de Protección Civil y Bomberos de Tecámac",
   "rolEstacion": "unica",
-  "direccion": "Av. Mexiquense, Col. Los Héroes Sección Bosques, C.P. 55764",
+  "direccion": "Carretera Federal México–Pachuca km 36.5, Ex Hacienda La Joya, Tecámac",
   "coordenadas": {
    "lat": 19.63305709,
    "lng": -99.02959873,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5936-1060",
+  "telefono": "(55) 2120-2726",
   "email": "proteccioncivil@tecamac.gob.mx",
   "sitioWeb": "https://tecamac.gob.mx/",
   "servicios": [
@@ -8825,7 +8748,12 @@
   ],
   "verificadoEl": "2026-09",
   "confianza": "alta",
-  "municipioSlug": "tecamac"
+  "municipioSlug": "tecamac",
+  "telefonosAdicionales": [
+   "(55) 5938-8888",
+   "(55) 5936-4591",
+   "(55) 5936-1446"
+  ]
  },
  {
   "id": "mex-42",
@@ -8872,15 +8800,15 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil y Bomberos de Tenancingo",
   "rolEstacion": "unica",
-  "direccion": "Calle Benito Juarez 211, Col. Tenancingo, C.P. 52400",
+  "direccion": "Calle Juárez Poniente No. 211, Tenancingo",
   "coordenadas": {
    "lat": 18.95776501,
    "lng": -99.59451756,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(719) 265-0384",
+  "telefono": "(714) 103-0877",
   "telefonosAdicionales": [
-   "(719) 261-6739"
+   "(714) 142-5732"
   ],
   "servicios": [
    "incendios-estructurales",
@@ -8899,6 +8827,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2550409"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8916,13 +8848,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación de Protección Civil y Bomberos de Tepotzotlán",
   "rolEstacion": "unica",
-  "direccion": "Blvd. Libramiento Sur, Col. Texcacoac, C.P. 54605",
+  "direccion": "Avenida del Trabajo No. 2-A esq. Libramiento Sur, Barrio Texcacoa, Tepotzotlán",
   "coordenadas": {
    "lat": 19.70505922,
    "lng": -99.22086695,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 8764-8848",
+  "telefono": "(55) 5876-3838",
   "sitioWeb": "https://www.tepotzotlan.gob.mx/tramite-s-proteccioncivil",
   "servicios": [
    "incendios-estructurales",
@@ -8941,11 +8873,18 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2473190"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
   "confianza": "alta",
-  "municipioSlug": "tepotzotlan"
+  "municipioSlug": "tepotzotlan",
+  "telefonosAdicionales": [
+   "(55) 5876-0120"
+  ]
  },
  {
   "id": "mex-26",
@@ -9008,16 +8947,13 @@
   "tipo": "Municipal",
   "corporacion": "Dirección Municipal de Protección Civil, Bomberos y Gestión Integral de Riesgos de Tlalnepantla de Baz",
   "rolEstacion": "unica",
-  "direccion": "Andador Camilo Cienfuegos, Col. Unidad Habitacional el Rosario Ii, C.P. 54090",
+  "direccion": "Av. Hidalgo esq. Calle Zumpango s/n, Col. Centro, Tlalnepantla de Baz",
   "coordenadas": {
    "lat": 19.51114146,
    "lng": -99.1794126,
    "precision": "aproximada"
   },
-  "telefono": "(55) 5088-2725",
-  "telefonosAdicionales": [
-   "(55) 5366-4450"
-  ],
+  "telefono": "(55) 5390-6548",
   "sitioWeb": "https://portal.tlalnepantla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -9038,6 +8974,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=10109559"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9090,17 +9030,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación Municipal de Protección Civil y Bomberos de Toluca",
   "rolEstacion": "unica",
-  "direccion": "Calle 28 de Octubre, Col. San Sebastián y Vértice, C.P. 50150",
+  "direccion": "Av. Paseo Fidel Velázquez s/n, Toluca",
   "coordenadas": {
    "lat": 19.28725929,
    "lng": -99.63714314,
    "precision": "aproximada"
   },
-  "telefono": "(722) 217-8858",
-  "telefonosAdicionales": [
-   "(722) 217-8323",
-   "(722) 212-0909"
-  ],
+  "telefono": "(722) 212-0909",
   "email": "proteccion.civil@toluca.gob.mx",
   "sitioWeb": "https://www2.toluca.gob.mx",
   "servicios": [
@@ -9370,7 +9306,7 @@
    },
    {
     "nombre": "umamexico.com — incendios Valle de Bravo 2025",
-    "url": "https://umamexico.com/incendios-2025-en-valle-de-bravo-y-el-fondo-ciudadano-en-apoyo-a-brigadistas-forestales/"
+    "retirada": "https://umamexico.com/incendios-2025-en-valle-de-bravo-y-el-fondo-ciudadano-en-apoyo-a-brigadistas-forestales/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -9392,13 +9328,13 @@
   "tipo": "Municipal",
   "corporacion": "Protección Civil y H. Cuerpo de Bomberos de Valle de Chalco Solidaridad",
   "rolEstacion": "unica",
-  "direccion": "Av. Tezozomoc, Col. San Miguel Xico Segunda Sección, C.P. 56617",
+  "direccion": "Tezozómoc s/n casi esq. Av. López Mateos, Col. San Miguel Xico II, Valle de Chalco Solidaridad",
   "coordenadas": {
    "lat": 19.27622523,
    "lng": -98.93478259,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5971-1177",
+  "telefono": "(55) 5971-4060",
   "email": "bomberos@valledechalco.gob.mx",
   "sitioWeb": "https://valledechalco.gob.mx/dependencia.php?id_direccion=6",
   "servicios": [
@@ -9414,6 +9350,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2368041"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -11489,7 +11429,7 @@
   "coordenadas": {
    "lat": 20.35,
    "lng": -102.7667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales",
@@ -19795,7 +19735,7 @@
   "coordenadas": {
    "lat": 22.7333,
    "lng": -98.9667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(831) 232-3872",
   "servicios": [

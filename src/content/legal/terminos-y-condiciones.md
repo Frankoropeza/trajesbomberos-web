@@ -1,6 +1,6 @@
 ---
 title: "Términos y condiciones"
-description: "Términos y condiciones de TrajesBombero México para cotizaciones, pedidos, entregas, garantías y facturación de trajes para bomberos y equipo de protección."
+description: "Términos y condiciones de LORICA Trajes para Bomberos para cotizaciones, pedidos, entregas, garantías y facturación de trajes para bomberos y equipo de protección."
 actualizado: 2026-09-28
 ---
 

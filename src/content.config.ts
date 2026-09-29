@@ -46,6 +46,7 @@ const blog = defineCollection({
     descRight: z.array(z.string()).min(1),   // panel derecho del hero
     meta: z.array(z.string()).default([]),   // datos duros del hero
     resumen: z.string(),                     // texto de la tarjeta en el índice
+    ancla: z.string().optional(),             // etiqueta breve del CTA de la tarjeta
 
     // --- taxonomía ---
     categoria: z.enum([
@@ -62,7 +63,7 @@ const blog = defineCollection({
     // --- fechas y autoría ---
     fecha: z.coerce.date(),
     actualizado: z.coerce.date().optional(),
-    autor: z.string().default('Equipo técnico TrajesBombero'),
+    autor: z.string().default('Equipo técnico LORICA'),
 
     // --- SEO (regla de las 3 keywords) ---
     seoTitle: z.string(),

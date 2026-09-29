@@ -21,6 +21,7 @@
   .sb-chip,
   .sb-quote__tel,
   .sb-card__tel,
+  .sb-tel,
   .not-found__links a {
     display: inline-flex !important;
     align-items: center;

@@ -15,7 +15,7 @@ resumen: "La NFPA 1970 consolidó cuatro normas —1971, 1975, 1981 y 1982— en
 categoria: "normas"
 familia: "estructural"
 fecha: 2026-07-07
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "NFPA 1970 | certificación de trajes | México"
 description: "NFPA 1970 sustituyó a la NFPA 1971: qué normas consolidó, qué quedó fuera y cómo citar hoy la referencia en una requisición o en un pliego de licitación."
 keywords:

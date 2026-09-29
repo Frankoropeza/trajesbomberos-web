@@ -11,7 +11,7 @@ resumen: "Qué pide la NOM-002-STPS-2010 para una brigada contra incendio, cómo
 categoria: "normas"
 familia: "brigadista"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "NOM-002-STPS-2010: equipo para brigadas | México"
 description: "NOM-002-STPS-2010: qué equipo necesita una brigada contra incendio, cómo distinguir riesgo ordinario y alto, y cómo seleccionar el EPP de forma correcta."
 keywords: ["NOM-002-STPS-2010", "equipo para brigadas", "México"]

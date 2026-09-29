@@ -14,7 +14,7 @@ meta:
 resumen: "Qué determina el costo de un traje de bombero y qué debe incluir una cotización para comparar familias, materiales, certificación, tallas, accesorios y entrega."
 categoria: "especificacion"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cuánto cuesta un traje de bombero | México"
 description: "Cuánto cuesta un traje de bombero: factores que cambian una cotización y cómo comparar configuración, certificación, tallas, entrega y vida útil."
 keywords: ["cuánto cuesta un traje de bombero", "traje de bombero precio", "México"]

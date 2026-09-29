@@ -10,8 +10,8 @@
 import { data as MARCAS_DATA } from '@lib/catalogo/data/marcas';
 
 export const SITE = {
-  name: 'TrajesBombero',
-  legalName: 'TrajesBombero México',
+  name: 'LORICA',
+  legalName: 'LORICA Trajes para Bomberos',
   url: 'https://trajesbomberos.com',
   lang: 'es',
   locale: 'es_MX',
@@ -49,7 +49,7 @@ export const EMPRESA: {
   ciudad?: string;
   anioInicio?: number;
 } = {
-  nombreComercial: 'TrajesBombero México',
+  nombreComercial: 'LORICA · Trajes para bomberos',
 };
 
 export const WA_MESSAGES = {
@@ -523,7 +523,7 @@ export const FOOTER = {
       ],
     },
     {
-      title: 'TrajesBombero México',
+      title: 'LORICA · Trajes para bomberos',
       links: [
         { label: 'Proveedor de trajes para bomberos', href: '/empresa/' },
         { label: 'Contacto para cotizar trajes', href: '/contacto/' },

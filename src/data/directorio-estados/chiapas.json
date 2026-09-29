@@ -2,10 +2,10 @@
  "lead": "Localiza 13 estaciones de bomberos en Chiapas, registradas en 11 municipios. Cada ficha concentra corporación, rol de la sede, dirección o mapa, teléfono si existe fuente pública y el nivel de precisión de la ubicación para apoyar una búsqueda informada.",
  "descRight": [
   "Chiapas reúne 8 registros estatales, 2 municipales, 2 de aeropuerto y uno de PEMEX. Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez tienen 2 fichas cada uno; los otros 9 municipios, una. El directorio registra una central y 6 subestaciones, asociadas principalmente al Instituto de Bomberos del Estado de Chiapas.",
-  "Filtra por municipio para ubicar bomberos en Chiapas y abre cada sede para consultar corporación, mapa y datos de contacto disponibles. El teléfono aparece cuando hay fuente pública. Si existe una emergencia, marca 911; los contactos publicados son para trámites, visitas, capacitación o donaciones y no sustituyen el servicio de auxilio."
+  "Consulta el índice por municipio para ubicar bomberos en Chiapas y abre cada sede para consultar corporación, mapa y datos de contacto disponibles. El teléfono aparece cuando hay fuente pública. Si existe una emergencia, marca 911; los contactos publicados son para trámites, visitas, capacitación o donaciones y no sustituyen el servicio de auxilio."
  ],
  "municipiosDuo": [
-  "Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez concentran 2 estaciones cada uno. Arriaga, Cacahoatán, Chiapa de Corzo, Cintalapa, Ocosingo, Reforma, San Cristóbal de las Casas, Venustiano Carranza y Villaflores registran una ficha. Para bomberos en Tuxtla Gutiérrez, el índice separa la estación territorial y la referencia aeroportuaria.",
+  "Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez concentran 2 estaciones cada uno. Arriaga, Cacahoatán, Chiapa de Corzo, Cintalapa, Ocosingo, Reforma, San Cristóbal de las Casas, Venustiano Carranza y Villaflores registran una ficha. En Tuxtla Gutiérrez, el índice distingue la estación de bomberos de la Dirección General del IBECH; el aeropuerto que sirve a la capital está en Chiapa de Corzo.",
   "El directorio registra 13 sedes en 11 municipios y una parte importante pertenece a la red estatal. Esta es una cobertura documentada, no una afirmación de que estén todas las estaciones de Chiapas. Las referencias se incorporan cuando existe fuente pública y el mapa muestra si el punto es exacto o aproximado."
  ],
  "estacionesDuo": [
@@ -14,7 +14,7 @@
  ],
  "coberturaDuo": [
   "Las 13 fichas declaran incendios estructurales. Incendios forestales aparece en 5, y salvamento aeroportuario y capacitación en 2 cada uno. Fugas de gas, rescate acuático, enjambres y fauna, rescate vehicular y atención prehospitalaria se reportan en una ficha. Son servicios publicados, no una promesa de atención uniforme.",
-  "Hay teléfono en 6 registros, dirección en 9 y ubicación exacta en 5. El directorio de estaciones de bomberos en Chiapas identifica 7 fichas de confianza alta. Consultar estos indicadores ayuda a anticipar qué sedes tienen datos de localización completos y cuáles conservan una referencia más general."
+  "Hay teléfono en 6 registros, dirección en 9 y ubicación exacta en 2. El directorio de estaciones de bomberos en Chiapas identifica 7 fichas de confianza alta. Consultar estos indicadores ayuda a anticipar qué sedes tienen datos de localización completos y cuáles conservan una referencia más general."
  ],
  "equipoDuo": [
   "Los servicios declarados contemplan incendios estructurales y forestales, rescate vehicular, atención prehospitalaria y salvamento aeroportuario. La evaluación puede requerir <a href=\"/trajes/forestal/\">trajes para incendio forestal</a> o <a href=\"/trajes/aproximacion/\">protección de aproximación</a> en escenarios aeroportuarios, siempre conforme al riesgo y procedimiento de uso.",
@@ -27,7 +27,7 @@
   },
   {
    "q": "¿Dónde hay más estaciones de bomberos en Chiapas?",
-   "a": "Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez registran 2 fichas cada uno; los otros 9 municipios listados tienen una. Para buscar bomberos en Tuxtla Gutiérrez, consulta el índice municipal y revisa la diferencia entre la corporación estatal y la sede de aeropuerto, junto con la ubicación documentada."
+   "a": "Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez registran 2 fichas cada uno; los otros 9 municipios listados tienen una. Para buscar bomberos en Tuxtla Gutiérrez, consulta el índice municipal: ahí aparecen la estación del IBECH y su Dirección General; el SSEI del aeropuerto que sirve a la capital figura en Chiapa de Corzo."
   },
   {
    "q": "¿Quién opera las estaciones de bomberos en Chiapas?",

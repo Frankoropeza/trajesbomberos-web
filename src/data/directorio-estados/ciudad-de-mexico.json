@@ -1,7 +1,7 @@
 {
  "lead": "Revisa 24 estaciones de bomberos en la Ciudad de México, distribuidas en 16 demarcaciones. Cada ficha ofrece corporación, rol de la sede, dirección, teléfono cuando hay fuente pública y ubicación exacta o aproximada para consultar el servicio por zona.",
  "descRight": [
-  "La red registrada tiene 23 fichas municipales y una de aeropuerto. Iztapalapa concentra 3 estaciones; Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón tienen 2 cada una. El directorio señala una central y 22 subestaciones, principalmente de HCBCDMX.",
+  "La red registrada tiene 23 fichas del Heroico Cuerpo de Bomberos de la Ciudad de México (HCBCDMX), organismo del gobierno capitalino, y una de aeropuerto. Iztapalapa concentra 3 estaciones; Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón tienen 2 cada una. El directorio señala una central y 22 subestaciones, todas del HCBCDMX.",
   "El índice territorial permite ubicar bomberos en la Ciudad de México por demarcación y comparar los datos de cada sede. Todas las fichas incluyen dirección y ubicación exacta, y 23 tienen teléfono con fuente. Ante cualquier emergencia marca 911; los contactos directos son para visitas, trámites, capacitación o donaciones, no para auxilio inmediato."
  ],
  "municipiosDuo": [
@@ -9,7 +9,7 @@
   "Las 24 estaciones aparecen en las 16 demarcaciones de la Ciudad de México. La distribución combina una estación central, subestaciones y una sede aeroportuaria. Es una relación documentada que puede ampliarse al confirmarse nuevas fichas con fuente pública; el mapa detallado de cada registro permite verificar la ubicación territorial antes de acudir."
  ],
  "estacionesDuo": [
-  "Cada ficha informa si la estación es municipal o de aeropuerto, junto con su rol: central, subestación o sede única. La mayor parte pertenece a HCBCDMX, incluidos puntos como Estación Central y Estación Iztapalapa; también aparece SSEI / CREI del Aeropuerto Internacional de la Ciudad de México. El rol aclara la función documental de cada referencia.",
+  "Cada ficha informa si la estación pertenece al HCBCDMX o al aeropuerto, junto con su rol: central, subestación o sede única. La mayor parte pertenece al HCBCDMX, incluidos puntos como Estación Central y Estación Iztapalapa; también aparece SSEI / CREI del Aeropuerto Internacional de la Ciudad de México. El rol aclara la función documental de cada referencia.",
   "Las estaciones de bomberos en la Ciudad de México tienen dirección y ubicación exacta en las fichas registradas; el teléfono se muestra cuando existe fuente. Consulta esos datos para trámites, capacitación, visitas o donaciones. Para un incidente no esperes una respuesta por contacto administrativo: marca 911 y sigue las indicaciones de emergencia."
  ],
  "coberturaDuo": [
@@ -23,15 +23,15 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en la Ciudad de México?",
-   "a": "El directorio registra 24 estaciones de bomberos en la Ciudad de México, presentes en 16 demarcaciones. Hay 23 fichas municipales y una de aeropuerto, con una central y 22 subestaciones. La relación no pretende ser un padrón completo: se actualiza cuando una nueva sede se puede comprobar mediante una fuente pública."
+   "a": "El directorio registra 24 estaciones de bomberos en la Ciudad de México, presentes en 16 demarcaciones. Hay 23 fichas del HCBCDMX y una de aeropuerto, con una central y 22 subestaciones. La relación no pretende ser un padrón completo: se actualiza cuando una nueva sede se puede comprobar mediante una fuente pública."
   },
   {
    "q": "¿Qué zonas tienen más estaciones de bomberos en la Ciudad de México?",
-   "a": "Iztapalapa concentra 3 fichas. Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón registran 2 cada una. Para buscar bomberos en la Ciudad de México, filtra por demarcación y consulta el rol, dirección y ubicación exacta de la sede que te interese."
+   "a": "Iztapalapa concentra 3 fichas. Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón registran 2 cada una. Para buscar bomberos en la Ciudad de México, entra al índice por alcaldía y consulta el rol, dirección y ubicación exacta de la sede que te interese."
   },
   {
    "q": "¿Quién opera las estaciones de bomberos en la Ciudad de México?",
-   "a": "La mayoría de las estaciones de la Ciudad de México se identifica como municipal y pertenece a HCBCDMX; además hay una sede de aeropuerto, SSEI / CREI del Aeropuerto Internacional de la Ciudad de México. La ficha indica si se trata de central, subestación o sede única para que puedas interpretar correctamente cada referencia."
+   "a": "La mayoría de las estaciones de la Ciudad de México pertenece al HCBCDMX, organismo del gobierno de la Ciudad; además hay una sede de aeropuerto, SSEI / CREI del Aeropuerto Internacional de la Ciudad de México. La ficha indica si se trata de central, subestación o sede única para que puedas interpretar correctamente cada referencia."
   },
   {
    "q": "¿A qué número llamar en una emergencia en la Ciudad de México?",
