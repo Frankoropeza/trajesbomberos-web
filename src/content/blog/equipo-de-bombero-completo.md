@@ -37,7 +37,7 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 ---
 
-Un equipo de bombero completo se integra de acuerdo con la operación autorizada. Para ataque estructural puede incluir traje, casco, monja, guantes, botas, ERA y PASS; para brigada industrial, forestal o rescate, la combinación cambia junto con el alcance de protección, los complementos y el procedimiento de uso.
+Un equipo de bombero completo se integra de acuerdo con la operación autorizada. Para ataque estructural puede incluir traje, casco, monja, guantes, botas, ERA y PASS; para brigada industrial, forestal o rescate, la combinación cambia junto con el alcance de protección, los complementos y el procedimiento de uso. El PASS, la cámara térmica y la iluminación se revisan en [accesorios del bombero](/blog/accesorios-del-bombero-pass-camara-termica/).
 
 La manera segura de comprar es separar lo que se asigna a cada persona de lo que puede compartir una unidad, y documentar cada partida. Un kit es una forma de ordenar la compra, no una licencia para omitir tallas, modelos o compatibilidad.
 
