@@ -5,7 +5,7 @@ eyebrow: "Especificación · Conjuntos de protección"
 lead: "Un equipo de bombero completo no es la misma lista para todas las operaciones. El conjunto cambia entre incendio estructural, brigada industrial, incendio forestal y rescate; primero se define el riesgo y después se integran las piezas que lo atienden."
 descRight:
   - "Comprar por kit ayuda a ordenar una necesidad frecuente, pero no sustituye definir tallas, documentación, protección respiratoria y componentes compartidos."
-  - "En TrajesBombero podemos integrar kits o cotizar cada pieza con ficha técnica por partida, para que la recepción y las reposiciones mantengan trazabilidad."
+  - "En LORICA podemos integrar kits o cotizar cada pieza con ficha técnica por partida, para que la recepción y las reposiciones mantengan trazabilidad."
 meta:
   - "Kits por operación"
   - "Equipo personal y común"
@@ -15,7 +15,7 @@ resumen: "Qué incluye un equipo de bombero completo para operación estructural
 ancla: "Equipo de bombero completo"
 categoria: "especificacion"
 fecha: 2026-09-29
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Equipo de bombero completo | qué incluye | México"
 description: "Equipo de bombero completo: checklist por operación, piezas personales y compartidas, documentos de compra y cómo especificar kits por partida."
 keywords:

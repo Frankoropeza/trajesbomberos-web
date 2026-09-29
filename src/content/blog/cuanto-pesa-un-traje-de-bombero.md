@@ -5,7 +5,7 @@ eyebrow: "Especificación · Carga de trabajo"
 lead: "El peso de un traje de bombero no se responde con un número aislado. Depende del traje, las piezas que lo completan, el ERA y, durante la emergencia, de la humedad, las herramientas y los accesorios que se agregan al cuerpo."
 descRight:
   - "Para comprar bien, separa el peso declarado de cada pieza del peso que una persona realmente carga en operación. Así puedes evaluar fatiga, movilidad y prueba de talla sin convertir una cifra orientativa en una promesa del fabricante."
-  - "En TrajesBombero armamos la cotización por componentes: revisamos la operación, las tallas y las interfaces para que el conjunto proteja sin sumar carga innecesaria."
+  - "En LORICA armamos la cotización por componentes: revisamos la operación, las tallas y las interfaces para que el conjunto proteja sin sumar carga innecesaria."
 meta:
   - "Peso por configuración"
   - "ERA y cilindro"
@@ -16,7 +16,7 @@ ancla: "Cuánto pesa un traje de bombero"
 categoria: "especificacion"
 familia: "estructural"
 fecha: 2026-09-29
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cuánto pesa un traje de bombero | guía | México"
 description: "Cuánto pesa un traje de bombero: separa el traje, casco, botas, guantes y ERA para evaluar carga, movilidad y la configuración correcta."
 keywords:

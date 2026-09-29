@@ -16,7 +16,7 @@ ancla: "Trajes estructurales Romak"
 categoria: "comparativas"
 familia: "estructural"
 fecha: 2026-09-29
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Trajes estructurales Romak | comparativa | México"
 description: "Trajes estructurales Romak: compara Protector, Profesional, Defender, Vantage y Maverick II por composite, configuración y estatus declarado."
 keywords:
