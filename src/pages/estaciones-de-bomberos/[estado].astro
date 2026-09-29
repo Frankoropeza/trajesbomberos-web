@@ -58,9 +58,10 @@ const UNIS = unidad(e.slug); // plural
 
 // Regla de las 3 keywords
 // kw1 «bomberos en {estado}» (intención local + teléfono); el H1 cubre «estaciones de bomberos».
-const keywords = [`bomberos ${EN}`, 'estaciones y teléfonos', 'directorio'] as const;
-const title = `Bomberos ${EN}: estaciones y teléfonos`;
-const description = `Bomberos ${EN}: ${est(r.total)} en ${mun(r.municipios)}, con ubicación en mapa, teléfono con fuente pública y corporación. En emergencias, marca al 911.`;
+// Metas (tanda de metas 2026-09-29): Ahrefs MX «estación de bomberos» 800 + búsquedas «bomberos <ciudad> teléfono».
+const keywords = [`estaciones de bomberos ${EN}`, `bomberos ${EN}`, 'teléfonos de bomberos'] as const;
+const title = `Estaciones de bomberos ${EN}: teléfonos`;
+const description = `Estaciones de bomberos ${EN}: ${est(r.total)} en ${mun(r.municipios)} con mapa, teléfono con fuente pública y corporación. Emergencias: 911.`;
 
 const menuItems = [
   { label: UNIS.charAt(0).toUpperCase() + UNIS.slice(1), href: '#municipios' },
@@ -292,7 +293,7 @@ const cta: CtaPreset = {
 
 <style>
   /* Bloque de municipio: barra con número, título y conteo */
-  .muni { scroll-margin-top: calc(var(--header-height) + 1rem); }
+  .muni { scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
   .muni-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20.5rem), 1fr));
@@ -351,7 +352,7 @@ const cta: CtaPreset = {
   }
   /* Sub-secciones del directorio dentro de la columna principal */
   .dir-main { gap: 0; }
-  .dir-sub { scroll-margin-top: calc(var(--header-height) + 1rem); }
+  .dir-sub { scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
   .dir-sub + .dir-sub {
     margin-top: clamp(3rem, 5vw, 4.5rem);
     padding-top: clamp(3rem, 5vw, 4.5rem);

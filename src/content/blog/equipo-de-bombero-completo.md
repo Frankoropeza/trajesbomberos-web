@@ -16,7 +16,7 @@ ancla: "Equipo de bombero completo"
 categoria: "especificacion"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Equipo de bombero completo | qué incluye | México"
+seoTitle: "Equipo de bombero completo: qué incluye por operación"
 description: "Equipo de bombero completo: checklist por operación, piezas personales y compartidas, documentos de compra y cómo especificar kits por partida."
 keywords:
   - "equipo de bombero completo"

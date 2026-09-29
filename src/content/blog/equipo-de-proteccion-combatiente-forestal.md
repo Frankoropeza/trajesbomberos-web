@@ -17,7 +17,7 @@ categoria: "comparativas"
 familia: "forestal"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Equipo de protección para combatiente forestal | México"
+seoTitle: "Equipo de protección para combatiente forestal: qué incluye"
 description: "Equipo de protección para combatiente forestal: compara ropa, casco forestal, goggles, guantes y botas para jornadas de línea, ceniza y terreno irregular."
 keywords:
   - "equipo de protección para combatiente forestal"

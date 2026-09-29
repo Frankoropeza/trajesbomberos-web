@@ -21,7 +21,7 @@ productos:
   - "/trajes/brigadista/"
 fecha: 2026-06-30
 autor: "Equipo técnico LORICA"
-seoTitle: "Traje estructural o brigadista | diferencias | México"
+seoTitle: "Traje estructural o brigadista: diferencias y cuál elegir"
 description: "Traje estructural o brigadista: en qué se diferencian, qué exige la NOM-002-STPS-2010 a una brigada industrial y cómo saber cuál corresponde a tu riesgo real."
 keywords:
   - "traje estructural o brigadista"

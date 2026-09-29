@@ -1,20 +1,20 @@
 {
- "lead": "El directorio registra 7 estaciones de bomberos en Querétaro distribuidas en 6 municipios. Cada ficha reúne corporación, ubicación y fuente pública para localizar bomberos en Querétaro, con un alcance que puede ampliarse al confirmar nuevas referencias.",
+ "lead": "El directorio registra 6 estaciones de bomberos en Querétaro distribuidas en 6 municipios. Cada ficha reúne corporación, ubicación y fuente pública para localizar bomberos en Querétaro, con un alcance que puede ampliarse al confirmar nuevas referencias.",
  "descRight": [
-  "La red incluida en Querétaro se integra por 4 corporaciones de voluntarios, una municipal, una aeroportuaria y una industrial. No hay centrales ni subestaciones identificadas en las fichas. El municipio de Querétaro concentra 2 estaciones; Cadereyta de Montes, Corregidora, El Marqués, San Juan del Río y Tequisquiapan tienen una cada uno.",
-  "Revisa el listado por municipio para identificar tipo de corporación, dirección y fuente de contacto. Hay teléfono en 6 fichas, dirección en 4 y ninguna cuenta con ubicación exacta en este registro. La falta de precisión cartográfica se muestra como parte de la ficha, sin completar datos ausentes. Para una urgencia, marca 911; los contactos de ficha son de consulta institucional."
+  "La red incluida en Querétaro se integra por 4 corporaciones de voluntarios, una municipal y una aeroportuaria. No hay centrales ni subestaciones identificadas en las fichas. Cada uno de los 6 municipios registrados —Cadereyta de Montes, Corregidora, El Marqués, el municipio de Querétaro, San Juan del Río y Tequisquiapan— cuenta con una estación.",
+  "Revisa el listado por municipio para identificar tipo de corporación, dirección y fuente de contacto. Hay teléfono con fuente pública en 4 fichas, dirección en 4 y ninguna cuenta con ubicación exacta en este registro. La falta de precisión cartográfica se muestra como parte de la ficha, sin completar datos ausentes. Para una urgencia, marca 911; los contactos de ficha son de consulta institucional."
  ],
  "municipiosDuo": [
-  "Querétaro concentra 2 de las 7 estaciones registradas: el Heroico Cuerpo de Bomberos Voluntarios de Querétaro y CLAMAPIQ. Para buscar bomberos en Querétaro, el índice permite distinguir la corporación de voluntarios de la referencia industrial localizada en el mismo municipio.",
+  "El municipio de Querétaro registra una estación: el Heroico Cuerpo de Bomberos Voluntarios de Querétaro, con sede en el Centro Histórico de la capital. Para buscar bomberos en Querétaro, su ficha reúne la corporación, un teléfono con fuente pública y la referencia de ubicación disponible.",
   "Cadereyta de Montes, Corregidora, El Marqués, San Juan del Río y Tequisquiapan aparecen con una ficha cada uno. La cobertura registrada se reparte así entre 6 municipios, por lo que el directorio señala referencias concretas sin afirmar que se trate de todas las estaciones queretanas."
  ],
  "estacionesDuo": [
-  "Cada ficha identifica el tipo de organización: voluntarios, municipal, aeropuerto o industria. El directorio no registra centrales ni subestaciones para Querétaro. Cuando está disponible, muestra dirección, teléfono con fuente y una ubicación aproximada; no hay ubicaciones exactas publicadas en las 7 fichas.",
+  "Cada ficha identifica el tipo de organización: voluntarios, municipal o aeropuerto. El directorio no registra centrales ni subestaciones para Querétaro. Cuando está disponible, muestra dirección, teléfono con fuente y una ubicación aproximada; no hay ubicaciones exactas publicadas en las 6 fichas.",
   "El Heroico Cuerpo de Bomberos de San Juan del Río y la Dirección Municipal de Protección Civil y Bomberos de Corregidora ejemplifican dos clases de corporación distintas. La ficha permite cotejar municipio y nombre antes de utilizar un dato de contacto para trámites, visitas, capacitación o donaciones."
  ],
  "coberturaDuo": [
-  "Incendios estructurales y atención prehospitalaria se declaran en las 7 referencias de Querétaro. El rescate vehicular figura en 5; protección civil en 3; materiales peligrosos, salvamento aeroportuario y capacitación en 2. Hay 6 teléfonos, 4 direcciones y 0 ubicaciones exactas.",
-  "También existen menciones individuales de rescate en altura y espacios confinados. La disponibilidad de datos no es uniforme: una ficha puede tener teléfono y otra solo localización general. Para decidir a quién consultar, revisa el municipio, la corporación y el servicio que muestra cada resultado."
+  "Incendios estructurales y atención prehospitalaria se declaran en las 6 referencias de Querétaro. El rescate vehicular figura en 5; protección civil en 3 y salvamento aeroportuario en 2. Hay 4 teléfonos con fuente y 4 direcciones; ninguna ubicación es exacta.",
+  "También existen menciones individuales de materiales peligrosos, rescate en altura, espacios confinados y capacitación. La disponibilidad de datos no es uniforme: una ficha puede tener teléfono y otra solo localización general. Para decidir a quién consultar, revisa el municipio, la corporación y el servicio que muestra cada resultado."
  ],
  "equipoDuo": [
   "La combinación de incendios estructurales, rescate vehicular y espacios confinados registrada en Querétaro sugiere equipar por actividad, con <a href=\"/trajes/estructural/\">trajes estructurales</a> y herramientas de intervención. Para materiales peligrosos, la protección debe corresponder al agente y la tarea evaluados.",
@@ -23,15 +23,15 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Querétaro?",
-   "a": "El directorio registra 7 estaciones de bomberos en Querétaro, distribuidas en 6 municipios. Esta cifra corresponde a referencias con fuente pública y no declara ser un inventario completo del estado; aumentará a medida que se confirmen nuevas estaciones."
+   "a": "El directorio registra 6 estaciones de bomberos en Querétaro, distribuidas en 6 municipios. Esta cifra corresponde a referencias con fuente pública y no declara ser un inventario completo del estado; aumentará a medida que se confirmen nuevas estaciones."
   },
   {
    "q": "¿Dónde hay más estaciones y bomberos en Querétaro?",
-   "a": "El municipio de Querétaro cuenta con 2 estaciones registradas, mientras Cadereyta de Montes, Corregidora, El Marqués, San Juan del Río y Tequisquiapan tienen una ficha cada uno. Para ubicar bomberos en Querétaro, consulta cada resultado por corporación y tipo."
+   "a": "Los 6 municipios registrados cuentan con una estación cada uno: Cadereyta de Montes, Corregidora, El Marqués, el municipio de Querétaro, San Juan del Río y Tequisquiapan. Para ubicar bomberos en Querétaro, consulta cada resultado por corporación y tipo."
   },
   {
    "q": "¿Quién opera las estaciones de bomberos en Querétaro?",
-   "a": "La guía reúne 4 corporaciones de voluntarios, una municipal, una aeroportuaria y una industrial. No identifica centrales ni subestaciones en este registro. La clasificación permite entender el tipo de estación antes de consultar su dirección o teléfono disponible."
+   "a": "La guía reúne 4 corporaciones de voluntarios, una municipal y una aeroportuaria. No identifica centrales ni subestaciones en este registro. La clasificación permite entender el tipo de estación antes de consultar su dirección o teléfono disponible."
   },
   {
    "q": "¿A qué número llamar en una emergencia en Querétaro?",

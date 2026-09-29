@@ -17,7 +17,7 @@ categoria: "comparativas"
 familia: "hazmat"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Niveles de protección Hazmat: A, B, C y D | México"
+seoTitle: "Niveles de protección Hazmat A, B, C y D: cómo elegir"
 description: "Niveles de protección Hazmat: compara traje encapsulado A, niveles B y C, protección D, respiración, compatibilidad química y descontaminación."
 keywords:
   - "niveles de protección hazmat"

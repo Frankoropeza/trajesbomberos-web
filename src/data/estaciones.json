@@ -16049,8 +16049,6 @@
    "lng": -98.3734,
    "precision": "aproximada"
   },
-  "telefono": "(227) 102-5066",
-  "sitioWeb": "https://www.aeropuertos.gob.mx/aeropuerto/Hermanos-Serdan",
   "servicios": [
    "incendios-estructurales",
    "hazmat",
@@ -16093,7 +16091,6 @@
    "lng": -98.3995,
    "precision": "aproximada"
   },
-  "telefono": "(227) 275-0088",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -16203,7 +16200,6 @@
    "lng": -98.23180107,
    "precision": "exacta"
   },
-  "telefono": "(222) 2245-564",
   "sitioWeb": "https://ssp.puebla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -16238,7 +16234,6 @@
    "lng": -98.15913808,
    "precision": "exacta"
   },
-  "telefono": "(222) 2826-118",
   "sitioWeb": "https://ssp.puebla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -16267,7 +16262,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos y Bomberas del Estado de Puebla",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación San Pablo Xochimehuacán",
-  "direccion": "Calle Calle de los Palos, Col. San Jeronimo Caleras, C.P. 72100",
+  "direccion": "Calle de los Palos, Col. San Jerónimo Caleras, C.P. 72100",
   "coordenadas": {
    "lat": 19.09620119,
    "lng": -98.20665416,
@@ -16307,7 +16302,6 @@
    "lng": -98.24904582,
    "precision": "exacta"
   },
-  "telefono": "(222) 2457-799",
   "sitioWeb": "https://ssp.puebla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -16376,7 +16370,6 @@
    "lng": -98.2132,
    "precision": "aproximada"
   },
-  "telefono": "(222) 245-8477",
   "email": "dpe.bomberos@puebla.gob.mx",
   "sitioWeb": "https://ssp.puebla.gob.mx",
   "servicios": [
@@ -16434,10 +16427,6 @@
    "lng": -98.29692655,
    "precision": "exacta"
   },
-  "telefono": "(222) 409-0769",
-  "telefonosAdicionales": [
-   "(221) 246-7173"
-  ],
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -16519,7 +16508,6 @@
    "lng": -98.4358,
    "precision": "aproximada"
   },
-  "telefono": "(248) 484-2299",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -16600,7 +16588,6 @@
    "lng": -97.3915,
    "precision": "aproximada"
   },
-  "telefono": "(238) 380-4304",
   "sitioWeb": "https://www.tehuacan.gob.mx/bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -16735,7 +16722,7 @@
    },
    {
     "nombre": "nmas.com.mx",
-    "url": "https://nmas.com.mx/noticias/nacional/convocatoria-bomberos-ssp-puebla-2025-requisitos-sueldo/"
+    "retirada": "https://nmas.com.mx/noticias/nacional/convocatoria-bomberos-ssp-puebla-2025-requisitos-sueldo/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -16862,40 +16849,6 @@
   "municipioSlug": "el-marques"
  },
  {
-  "id": "qro-07",
-  "nombre": "CLAMAPIQ — Comité Local de Ayuda Mutua / Parque Industrial Querétaro",
-  "slug": "clamapiq-parque-industrial-queretaro",
-  "estado": "queretaro",
-  "estadoNombre": "Querétaro",
-  "ciudad": "Santa Rosa Jáuregui",
-  "municipio": "Querétaro",
-  "tipo": "Industrial",
-  "corporacion": "CLAMAPIQ — Comité Local de Ayuda Mutua / Parque Industrial Querétaro",
-  "rolEstacion": "unica",
-  "coordenadas": {
-   "lat": 20.7238,
-   "lng": -100.413,
-   "precision": "aproximada"
-  },
-  "telefono": "(442) 391-9308",
-  "sitioWeb": "https://piq.com.mx",
-  "servicios": [
-   "incendios-estructurales",
-   "hazmat",
-   "atencion-prehospitalaria",
-   "capacitacion"
-  ],
-  "fuentes": [
-   {
-    "nombre": "piq.com.mx",
-    "url": "https://piq.com.mx"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "queretaro"
- },
- {
   "id": "qro-01",
   "nombre": "Heroico Cuerpo de Bomberos Voluntarios de Querétaro",
   "slug": "heroico-cuerpo-bomberos-queretaro",
@@ -16974,9 +16927,7 @@
    "lng": -99.9976,
    "precision": "aproximada"
   },
-  "telefono": "(427) 121-4253",
   "email": "academiaaspirantes@bomberossanjuandelrio.com",
-  "sitioWeb": "https://www.bomberossanjuandelrio.org",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -16988,7 +16939,7 @@
   "fuentes": [
    {
     "nombre": "bomberossanjuandelrio.org",
-    "url": "https://www.bomberossanjuandelrio.org/blank-2"
+    "retirada": "https://www.bomberossanjuandelrio.org/blank-2"
    },
    {
     "nombre": "tramites.proteccioncivilqro.gob.mx",
@@ -17051,7 +17002,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base 2 (Zona Hotelera)",
-  "direccion": "12, Col. Zona Hotelera, C.P. 77500",
+  "direccion": "Zona Hotelera, C.P. 77500",
   "coordenadas": {
    "lat": 21.10431101,
    "lng": -86.76484103,
@@ -17085,7 +17036,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base 3",
-  "direccion": "Calle Chac Mool, Col. 100, C.P. 77518",
+  "direccion": "Calle Chac Mool, Región 100, C.P. 77518",
   "coordenadas": {
    "lat": 21.15455346,
    "lng": -86.87120494,
@@ -17119,13 +17070,12 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base 4 José Roberto Barboza Montiel",
-  "direccion": "Av. 20 de Noviembre 77, Col. 77, C.P. 77500",
+  "direccion": "Av. 20 de Noviembre, Supermanzana 77, C.P. 77500",
   "coordenadas": {
    "lat": 21.19074571,
    "lng": -86.82612294,
    "precision": "exacta"
   },
-  "telefono": "(998) 8841-202",
   "sitioWeb": "https://cancun.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -17154,7 +17104,7 @@
   "corporacion": "Heroico Cuerpo de Bomberos de Cancún",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 5",
-  "direccion": "Calle 46, Col. 510, C.P. 77535",
+  "direccion": "Calle 46, Región 510, C.P. 77535",
   "coordenadas": {
    "lat": 21.13592199,
    "lng": -86.85612696,
@@ -17194,7 +17144,6 @@
    "lng": -86.8515,
    "precision": "exacta"
   },
-  "telefono": "(998) 884-1202",
   "email": "capacitacionbomberoscancun@gmail.com",
   "sitioWeb": "https://cancun.gob.mx",
   "servicios": [
@@ -17352,7 +17301,6 @@
    "lng": -88.05222911,
    "precision": "exacta"
   },
-  "telefono": "(983) 834-0927",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -17414,7 +17362,7 @@
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Isla Mujeres",
   "rolEstacion": "unica",
-  "direccion": "Av. Av Gaston Alegre, Col. Urbana, C.P. 77400",
+  "direccion": "Av. Gastón Alegre, Col. Urbana, C.P. 77400",
   "coordenadas": {
    "lat": 21.22567361,
    "lng": -86.85256376,
@@ -17457,7 +17405,7 @@
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Lázaro Cárdenas",
   "rolEstacion": "unica",
-  "direccion": "Otro(especifique), Col. Expo, C.P. 77307",
+  "direccion": "Col. Expo, C.P. 77307",
   "coordenadas": {
    "lat": 21.11355442,
    "lng": -87.49563891,
@@ -17493,7 +17441,7 @@
   "tipo": "Municipal",
   "corporacion": "Bomberos de Othón P. Blanco",
   "rolEstacion": "unica",
-  "direccion": "Carretera Cafetal-mahahual, Col. La Victoria, C.P. 77976",
+  "direccion": "Carretera Cafetal-Mahahual, Col. La Victoria, C.P. 77976",
   "coordenadas": {
    "lat": 18.73442309,
    "lng": -87.71172229,
@@ -17657,7 +17605,6 @@
    "lng": -99.0157,
    "precision": "exacta"
   },
-  "telefono": "(481) 382-3133",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -17716,6 +17663,10 @@
    {
     "nombre": "matehuala.gob.mx",
     "url": "https://matehuala.gob.mx/m/proteccion-civil/"
+   },
+   {
+    "nombre": "Bomberos Voluntarios de Matehuala — Contacto",
+    "url": "http://www.bomberosmatehuala.org.mx/contact.html"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -17739,7 +17690,6 @@
    "lng": -99.9916,
    "precision": "exacta"
   },
-  "telefono": "(487) 872-2700",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -17806,6 +17756,10 @@
    {
     "nombre": "proteccioncivil.slp.gob.mx",
     "url": "https://proteccioncivil.slp.gob.mx/directorio/"
+   },
+   {
+    "nombre": "Bomberos Metropolitanos de San Luis Potosí — publicación oficial en X con sus números",
+    "url": "https://x.com/bomberosmslp/status/2027926802597916824"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -17941,7 +17895,6 @@
    "lng": -107.394,
    "precision": "exacta"
   },
-  "telefono": "(667) 712-3199",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18137,7 +18090,6 @@
    "lng": -107.7095,
    "precision": "aproximada"
   },
-  "telefono": "(672) 722-0123",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18169,7 +18121,6 @@
    "lng": -108.0939,
    "precision": "aproximada"
   },
-  "telefono": "(673) 732-1900",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -18235,7 +18186,6 @@
    "lng": -112.1475,
    "precision": "exacta"
   },
-  "telefono": "(637) 372-0162",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18274,7 +18224,6 @@
    "lng": -109.9522325,
    "precision": "exacta"
   },
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18283,7 +18232,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18312,7 +18261,6 @@
    "lng": -109.91691861,
    "precision": "exacta"
   },
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18321,7 +18269,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18350,8 +18298,6 @@
    "lng": -109.95325824,
    "precision": "exacta"
   },
-  "telefono": "(644) 211-0381",
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18360,7 +18306,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18389,7 +18335,6 @@
    "lng": -109.94275524,
    "precision": "exacta"
   },
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18398,7 +18343,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/"
+    "retirada": "http://www.bomberoscajeme.mx/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -18427,11 +18372,6 @@
    "lng": -109.9374,
    "precision": "exacta"
   },
-  "telefono": "(644) 417-5070",
-  "telefonosAdicionales": [
-   "(644) 417-0904"
-  ],
-  "sitioWeb": "http://www.bomberoscajeme.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18441,7 +18381,7 @@
   "fuentes": [
    {
     "nombre": "bomberoscajeme.mx",
-    "url": "http://www.bomberoscajeme.mx/historia.htm"
+    "retirada": "http://www.bomberoscajeme.mx/historia.htm"
    },
    {
     "nombre": "elimparcial.com",
@@ -18600,10 +18540,6 @@
    "lng": -110.8974,
    "precision": "aproximada"
   },
-  "telefono": "(622) 222-0010",
-  "telefonosAdicionales": [
-   "(622) 222-7444"
-  ],
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -18656,7 +18592,7 @@
    },
    {
     "nombre": "asa.gob.mx — Aeropuerto de Guaymas",
-    "url": "https://www.asa.gob.mx/es/ASA/GUAYMAS"
+    "retirada": "https://www.asa.gob.mx/es/ASA/GUAYMAS"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -18871,7 +18807,6 @@
    "lng": -110.9559,
    "precision": "exacta"
   },
-  "telefono": "(662) 212-0197",
   "sitioWeb": "https://www.pbh.com.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -18963,7 +18898,6 @@
    "lng": -109.43677036,
    "precision": "exacta"
   },
-  "telefono": "(642) 120-2904",
   "sitioWeb": "https://www.navojoa.gob.mx/bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -19003,10 +18937,6 @@
    "precision": "exacta"
   },
   "telefono": "(642) 422-0622",
-  "telefonosAdicionales": [
-   "(642) 421-4158",
-   "(642) 421-5049"
-  ],
   "email": "direccionbomberos@navojoa.gob.mx",
   "sitioWeb": "https://www.navojoa.gob.mx/bomberos/",
   "servicios": [
@@ -19109,7 +19039,6 @@
    "lng": -110.92505807,
    "precision": "exacta"
   },
-  "telefono": "(631) 315-7862",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -19141,9 +19070,8 @@
   "coordenadas": {
    "lat": 31.3,
    "lng": -110.944,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(631) 312-0836",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -19256,7 +19184,6 @@
    "lng": -114.7974642,
    "precision": "exacta"
   },
-  "telefono": "(653) 146-2663",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",

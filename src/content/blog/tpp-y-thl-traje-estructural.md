@@ -20,7 +20,7 @@ productos:
   - "/trajes/estructural/pantalonera/"
 fecha: 2026-06-23
 autor: "Equipo técnico LORICA"
-seoTitle: "TPP y THL | traje estructural | México"
+seoTitle: "TPP y THL del traje estructural: qué miden y cómo leerlos"
 description: "TPP y THL son los dos números que definen un traje estructural: qué mide cada uno, por qué se leen juntos y qué valores mínimos pedir en tu cotización."
 keywords:
   - "TPP y THL"

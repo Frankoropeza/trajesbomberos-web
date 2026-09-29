@@ -16,7 +16,7 @@ productos:
   - "/cascos/casco-rescate-tecnico/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "Cómo elegir casco de bombero | guía | México"
+seoTitle: "Cómo elegir casco de bombero según el tipo de operación"
 description: "Cómo elegir casco de bombero: diferencias entre casco estructural, forestal, rescate y brigada; ajuste, normas y compatibilidad con el equipo."
 keywords: ["cómo elegir casco de bombero", "casco de bombero", "México"]
 imagen: "/images/blog/como-elegir-casco-de-bombero.avif"

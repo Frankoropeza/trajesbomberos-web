@@ -17,7 +17,7 @@ categoria: "especificacion"
 familia: "estructural"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Partes del traje de bombero | equipo estructural | México"
+seoTitle: "Partes del traje de bombero y del equipo estructural"
 description: "Partes del traje de bombero: chaquetón, pantalonera, tirantes, monja, arnés y las interfaces que deben revisarse en equipo estructural."
 keywords:
   - "partes del traje de bombero"

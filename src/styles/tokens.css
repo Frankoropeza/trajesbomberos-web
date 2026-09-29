@@ -45,6 +45,7 @@
   --container-px: clamp(1.1rem, 4vw, 4.5rem);
   --header-height: 76px;
   --topbar-height: 40px;
+  --sticky-offset: 0px; /* el header ya no es fijo: nada tapa la parte superior del viewport */
   --gap-grid: clamp(1rem, 1.4vw, 1.75rem);
 
   /* --- Superficies ------------------------------------------ */

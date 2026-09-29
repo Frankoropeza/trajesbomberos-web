@@ -2,10 +2,10 @@
  "lead": "Consulta 9 estaciones de bomberos en Sinaloa, distribuidas en 6 municipios. Cada ficha reúne corporación, tipo de servicio, ubicación disponible y fuente; también identifica los contactos publicados para facilitar una consulta informada.",
  "descRight": [
   "La red registrada combina 3 estaciones municipales, 3 voluntarias y 3 de aeropuerto. No se identifican centrales ni subestaciones en estas fichas. Ahome, Culiacán y Mazatlán reúnen 2 estaciones cada uno; Guasave, Navolato y Salvador Alvarado aportan una estación por municipio. La clasificación permite reconocer una red de operaciones distintas.",
-  "Ubica bomberos en Sinaloa mediante el listado por municipio y consulta el mapa de cada ficha cuando exista posición disponible. Hay teléfono publicado en 4 casos y dirección en 1. Esos medios sirven para contacto ordinario; ante una emergencia, llama al 911. Cada fuente acompaña los datos que se muestran en el registro."
+  "Ubica bomberos en Sinaloa mediante el listado por municipio y consulta el mapa de cada ficha cuando exista posición disponible. Hay teléfono con fuente pública en un caso y dirección en uno. Esos medios sirven para contacto ordinario; ante una emergencia, llama al 911. Cada fuente acompaña los datos que se muestran en el registro."
  ],
  "municipiosDuo": [
-  "La mayor concentración del directorio está repartida entre Ahome, Culiacán y Mazatlán, con 2 estaciones en cada municipio. Esto permite localizar tanto bomberos en Culiacán como las corporaciones y servicios aeroportuarios registrados en Los Mochis y Mazatlán.",
+  "Los municipios con más registros en Sinaloa son Ahome, Culiacán y Mazatlán, con 2 estaciones en cada municipio. Esto permite localizar tanto bomberos en Culiacán como las corporaciones y servicios aeroportuarios registrados en Los Mochis y Mazatlán.",
   "Fuera de esos tres puntos, el directorio incorpora una ficha en Guasave, una en Navolato y una en Salvador Alvarado. La cobertura aquí descrita corresponde a estaciones con registro público; puede ampliarse al confirmarse nuevas fichas con fuente verificable."
  ],
  "estacionesDuo": [
@@ -14,7 +14,7 @@
  ],
  "coberturaDuo": [
   "La atención prehospitalaria aparece declarada en 9 fichas; los incendios estructurales y el rescate vehicular, en 6. También hay registros para materiales peligrosos y salvamento aeroportuario, ambos en 3 casos, lo que perfila los servicios informados por las estaciones de Sinaloa.",
-  "De las 9 fichas, 4 incluyen teléfono, 1 dirección y 1 ubicación exacta. Estas cifras ayudan a distinguir qué datos están listos para consulta directa y qué registros requieren usar la fuente o el mapa con la precisión que se indica en cada estación."
+  "De las 9 fichas, una incluye teléfono con fuente, una dirección y una ubicación exacta. Estas cifras ayudan a distinguir qué datos están listos para consulta directa y qué registros requieren usar la fuente o el mapa con la precisión que se indica en cada estación."
  ],
  "equipoDuo": [
   "Los incendios estructurales y el rescate vehicular declarados requieren protección térmica y herramientas de intervención; para materiales peligrosos conviene considerar <a href=\"/trajes/hazmat/\">trajes Hazmat</a>. Los servicios aeroportuarios se relacionan con <a href=\"/trajes/aproximacion/\">trajes de aproximación</a> y los incendios forestales con protección forestal.",

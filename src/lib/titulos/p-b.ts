@@ -2,6 +2,10 @@ import type { Duo } from './index';
 
 export const DUO_P_B: Record<string, Record<string, Duo>> = {
   '/contacto/': {
+    direccion: [
+      'LORICA, proveedor de trajes para bomberos, tiene su domicilio en Manuel Caballero 161, colonia Obrera, alcaldía Cuauhtémoc, C.P. 06800, Ciudad de México. Es el domicilio del responsable que figura en el aviso de privacidad y en los términos y condiciones del sitio.',
+      'Desde la Ciudad de México cotizamos y enviamos trajes y equipo a los 32 estados. Si necesitas acudir en persona para revisar una partida o entregar documentación, confirma día y hora por WhatsApp antes de tu visita para que te atienda quien lleva tu cotización.',
+    ],
     faq: [
       'Para cotizar trajes para bomberos suelen surgir dudas sobre compra mínima, factura, envíos y licitación. Atendemos pedidos por pieza o conjunto, emitimos CFDI 4.0 y cotizamos entregas a los 32 estados; la documentación técnica se define según la partida y el expediente.',
       'Escribe por WhatsApp o correo si necesitas resolver una requisición antes de comprar. Indica si requieres factura, destino de envío o apoyo para pliego, y recibirás una respuesta en día hábil con los datos que faltan para integrar una propuesta por escrito.',
@@ -11,8 +15,12 @@ export const DUO_P_B: Record<string, Record<string, Duo>> = {
       'Un mensaje con riesgo, número de elementos, medidas y alcance permite separar una brigada industrial de un cuerpo de ataque interior desde el inicio. Manda esos datos por WhatsApp o correo y solicita que la cotización desglosada incluya ficha técnica por partida.',
     ],
     whatsapp: [
-      'WhatsApp es la vía rápida para cotizar trajes para bomberos cuando necesitas aclarar familias, tallas, fichas técnicas o piezas de reposición. La conversación permite ubicar la operación antes de preparar una propuesta, sin que tengas que llegar con cada especificación completamente resuelta.',
-      'Envía una foto de la prenda existente, el pliego o la lista de tallas y describe el riesgo que atenderá tu personal. Respondemos durante el día hábil; después podrás pedir que lo acordado quede asentado en la cotización y documentación de la partida.',
+      'Los trajes para bomberos se cotizan por WhatsApp, teléfono, correo o formulario, según el canal que te resulte útil. Comparte la operación, las piezas, las tallas disponibles y, si existe, el pliego o requisición; así la solicitud inicia con los datos necesarios para especificar la partida.',
+      'WhatsApp recibe respuesta en el transcurso del día hábil. Para pliegos, requisiciones y fichas técnicas, usa el correo; para una llamada de cotización, consulta el horario de lunes a viernes. Las visitas a nuestra dirección en la colonia Obrera se coordinan previamente por WhatsApp con cita confirmada.',
+    ],
+    proceso: [
+      'El proceso para cotizar trajes para bomberos comienza con tu mensaje y la información de la operación. Con los elementos, piezas, tallas y requisitos disponibles, proponemos una familia de traje y un composite que corresponda al riesgo y a la norma solicitada.',
+      'La propuesta queda por escrito con ficha técnica por partida, tallas y condiciones de entrega. Emitimos CFDI 4.0, atendemos compras sin mínimo y cotizamos envío a los 32 estados; también apoyamos la especificación de pliegos de licitación.',
     ],
   },
   '/empresa/': {
