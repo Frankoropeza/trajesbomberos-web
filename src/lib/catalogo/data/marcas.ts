@@ -14,9 +14,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "eyebrow": "Catálogo de protección personal",
     "lead": "Trabajamos con Romak Fire y Sköld, y cotizamos componentes para armar conjuntos que correspondan a la operación de cada comprador.",
     "resumenHero": [
-      "Las marcas ayudan a localizar familias de prendas y componentes, pero no reemplazan la evaluación de riesgo. En LORICA trabajamos con Romak Fire y Sköld para integrar configuraciones de protección; cada artículo se coteja por modelo, talla, accesorios, documentación y la tarea autorizada.",
-      "También cotizamos componentes de Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA en ERA industrial cuando la operación lo requiere. La interfaz entre todos ellos se prueba físicamente antes de la compra, porque una combinación útil no depende solamente de que sus artículos compartan fabricante.",
-      "Una compra trazable conserva la relación entre marca, modelo y componente para que la evaluación técnica permanezca clara durante la entrega, la inspección y las reposiciones posteriores."
+      "Trabajamos con Romak Fire y Sköld para cuerpos de bomberos, brigadas y compradores institucionales que necesitan ubicar prendas y componentes por operación. Romak Fire reúne Protector, Profesional, Defender, Vantage y Mark One; Sköld publica Hero Nomex IIIA. La marca abre la búsqueda, mientras modelo, talla y configuración definen lo que recibe tu personal.",
+      "Cotizamos por modelo, código, talla, accesorios y documento aplicable, y también integramos Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA para ERA industrial cuando corresponde. Mándanos por WhatsApp tu operación y los componentes existentes; revisamos la interfaz y preparamos una partida identificable para tu pliego."
     ],
     "etiquetas": {
       "menuTipos": "Consulta las marcas principales",
@@ -29,12 +28,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "modelosDescripcion": "Las tarjetas llevan a la familia de producto donde se conserva su información técnica."
     },
     "intro": [
-      "Romak Fire y Sköld son las marcas principales que trabajamos para trajes y equipo de bombero. También cotizamos componentes que se integran al conjunto, como Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA en ERA industrial. La marca orienta una búsqueda; la decisión de compra la definen riesgo, operación autorizada, talla y documentación del modelo.",
-      "Un conjunto de protección puede requerir prendas, casco, capucha, guantes, botas y, cuando el ambiente lo exige, equipo de respiración autónoma. Estas piezas deben revisarse en conjunto: una buena interfaz conserva cobertura y movimiento, mientras una combinación improvisada puede dejar una transición expuesta o impedir el uso correcto de la máscara.",
-      "Las páginas de marca agrupan modelos publicados sin repetir información técnica. Cada tarjeta conserva el enlace a su familia original, donde se indican características, configuraciones y estatus normativo del producto. La cotización se confirma por WhatsApp con modelos, tallas, accesorios, cantidades y documento aplicable a cada partida.",
-      "Comprar por marca no significa usar todos los componentes de un solo fabricante. Puede ser necesario integrar casco, prenda, guante, bota y accesorios de distintas procedencias para atender una configuración definida. Lo importante es que esa integración se pruebe con los usuarios y no se infiera a partir de nombres comerciales.",
-      "Las declaraciones normativas se leen con el modelo, versión y alcance que señalan. Una declaración de una prenda no convierte en certificado a un casco, una bota o un ERA. Mantener esa separación ayuda a compras, seguridad y usuarios a evaluar propuestas con criterios verificables.",
-      "La entrega final también es parte de la selección. Se revisan códigos, tallas, accesorios e identificación contra la requisición, se asigna el equipo por persona y se registra su condición inicial. Así se puede inspeccionar, cuidar y reponer sin perder la configuración aprobada."
+      "Surtimos prendas y componentes por marca para cuerpos de bomberos, brigadas y compras institucionales. Romak Fire concentra Protector, Profesional, Defender, Vantage y Mark One; Sköld incluye Hero Nomex IIIA. También cotizamos Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA en ERA industrial. Elige la familia por la operación autorizada y el modelo por la configuración que usará tu brigada.",
+      "Comparamos el modelo concreto, su talla, código, accesorios y estatus documental. Por ejemplo, Romak Fire declara UL MH14790 para líneas estructurales cuando corresponde y UL MH48840 para Mark One; Sköld refiere UL MH60435 para Hero Nomex IIIA. No trasladamos esas referencias a otra configuración: en tu pliego anota el modelo y el documento que necesitas cotejar.",
+      "Armamos el conjunto con prenda, casco, capucha, guantes, botas y, cuando corresponde, ERA. Firemax VI GIS1008, CAP1005, Workman Fire BOT1004 y la barra Halligan HAC1007 son componentes Romak Fire publicados; casco, ERA o guante estructural pueden venir de Bullard, Sköld o Veridian. Mándanos qué usa tu personal y revisamos cuello, puño y máscara antes de cotizar.",
+      "Entregamos cada partida con modelo, código, talla y accesorios contra la requisición para que tu recepción los identifique por persona. Conserva la documentación que aplique al modelo, registra la condición inicial y separa cada configuración para inspección y reposición. Pídenos por WhatsApp la cotización con tus cantidades y confirmamos los renglones que debes recibir."
     ],
     "comparativa": {
       "columnas": [
@@ -101,31 +98,31 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Son distribuidores exclusivos?",
-        "a": "No se declara exclusividad. Trabajamos con estas marcas y cotizamos la configuración requerida."
+        "a": "No declaramos exclusividad sobre Romak Fire ni Sköld; cotizamos la configuración que corresponda a tu operación. La ficha de Romak Fire distingue Protector, Profesional, Defender, Vantage y Mark One, mientras Sköld publica Hero Nomex IIIA. Mándanos por WhatsApp el modelo, tallas y accesorios de tu partida para confirmar disponibilidad documental."
       },
       {
         "q": "¿Qué marcas de componentes cotizan?",
-        "a": "Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA para ERA industrial, según la necesidad."
+        "a": "Cotizamos Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA para ERA industrial cuando forman parte de tu conjunto. Romak Fire aporta, entre otros, Firemax VI GIS1008 y Workman Fire BOT1004. Envíanos por WhatsApp casco, prenda o ERA que ya usa tu brigada y armamos los renglones compatibles para cotizar."
       },
       {
         "q": "¿La misma marca garantiza compatibilidad?",
-        "a": "No; la compatibilidad se revisa entre los componentes y la operación."
+        "a": "No; compartir fabricante no confirma la compatibilidad entre componentes. Un conjunto puede unir CAP1005, Firemax VI GIS1008, botas Workman Fire BOT1004 y un casco de otra marca, pero revisamos cuello, puño, talla y máscara con la operación autorizada. Pídenos una cotización con tu equipo actual y validamos cada interfaz."
       },
       {
         "q": "¿Dónde veo cada ficha?",
-        "a": "Las tarjetas de marca llevan a la familia original del modelo."
+        "a": "Cada tarjeta de marca lleva a la familia original donde conservamos el modelo, sus materiales y el estatus que declara. Desde Romak Fire puedes ubicar Defender BOM1045 o Mark One BOM1046; la referencia UL MH14790 o MH48840 se consulta en la configuración correspondiente. Mándanos por WhatsApp el modelo que buscas y te dirigimos a su ficha."
       },
       {
         "q": "¿Puedo pedir una configuración?",
-        "a": "Sí; indica operación, tallas, accesorios y cantidades para recibir una cotización."
+        "a": "Sí; cotizamos una configuración cuando nos indicas operación, modelo, tallas, accesorios y cantidades. Para Romak Fire podemos identificar Combate Básico BOM1001, Defender BOM1045 o Mark One BOM1046, además de capucha, guante y bota. Envíanos por WhatsApp tu pliego y el equipo que ya usa tu personal para integrar la partida."
       },
       {
         "q": "¿Cómo se revisa la norma?",
-        "a": "Por modelo y configuración declarados, solicitando el documento correspondiente al cotizar."
+        "a": "Revisamos la norma por modelo y configuración, sin extenderla a toda la marca. Romak Fire declara UL MH14790 para líneas estructurales cuando corresponde y UL MH48840 para Mark One; Sköld refiere UL MH60435 para Hero Nomex IIIA. Pídenos por WhatsApp el documento del modelo que incluyes en tu pliego y lo cotizamos con ese alcance."
       },
       {
         "q": "¿Por qué se registra la entrega?",
-        "a": "Para verificar lo recibido, asignarlo por usuario y mantener control de inspección y reposición."
+        "a": "Registramos la entrega para cotejar modelo, código, talla y accesorios contra tu requisición, después asignas cada pieza por persona. Ese control distingue, por ejemplo, Defender BOM1045 de Mark One BOM1046 y conserva su documentación separada. Mándanos por WhatsApp tu formato de recepción y preparamos la partida con los datos que debes revisar."
       }
     ],
     "hero": {

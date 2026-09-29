@@ -14,47 +14,47 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
     "eyebrow": "Catálogo de rescate técnico",
     "lead": "El equipo de rescate se compra como un sistema de maniobra: riesgo, anclajes, protección personal, entrenamiento y trazabilidad deben revisarse juntos.",
     "intro": [
-      "Extricación, rescate vertical y trabajo con cuerda requieren conjuntos distintos. La selección comienza con la maniobra autorizada, el entorno y el nivel de capacitación, no con una marca o una imagen. En rescate técnico, la compatibilidad entre arnés, cuerda, conectores, anclajes y protección personal es una condición de uso.",
-      "Las herramientas hidráulicas se evalúan por la tarea de separación, corte, combinación o empuje. En sistemas de cuerda, los diámetros, clases, conectores y resistencia declarada pertenecen a la especificación del fabricante y al procedimiento de la corporación. No se deben inferir capacidades ni sustituir capacitación con una configuración de compra.",
-      "Antes de recibir, define inventario, identificación, inspección, retiro y resguardo. El equipo expuesto a carga, impacto, contaminación o daño debe seguir el criterio de evaluación correspondiente. Para rescate vehicular, integra también protección ocular, guantes y ropa de extricación apropiada.",
-      "La revisión de compatibilidad debe incluir la logística: acceso al compartimiento, identificación bajo condiciones de trabajo, bolsas de transporte y separación entre equipo limpio, húmedo o en cuarentena. Con esos datos se puede solicitar una configuración reproducible y sostener prácticas que reflejen el inventario realmente disponible para la corporación."
+      "Surtimos equipo para extricación, rescate vertical y sistemas con cuerda a brigadas y corporaciones que ya definieron su maniobra. Una herramienta hidráulica resuelve separación, corte, combinación o empuje; un arnés, cuerda y mosquetones organizan otra operación. Indica el escenario, los usuarios y la tarea autorizada para que coticemos componentes que correspondan al sistema de tu unidad.",
+      "Elegimos herramienta hidráulica como separador, cortador, combinada o cilindro, y confirmamos fuente hidráulica o batería, mangueras y acoples. Para cuerda y arnés usamos NFPA 2500, antes NFPA 1983, como referencia y revisamos la declaración del modelo. No atribuimos fuerza, apertura, peso o presión si el fabricante no lo publica; mándanos la maniobra y cotejamos cada dato.",
+      "Combinamos el kit vertical con arnés de rescate, cuerda estática kernmantle y mosquetones de acero o aluminio con seguro; para extricación añadimos traje, guantes y protección ocular. La elección cambia por clase, talla, puntos de conexión, diámetro, longitud y terminaciones. Envíanos por WhatsApp tu inventario actual para revisar conectores, anclajes, transporte y el espacio disponible en la unidad.",
+      "Documentamos modelo, marcado, accesorios y declaración del fabricante por cada renglón, además de identificación e historial desde la entrega. Al recibir, coteja condición física, cantidad, mangueras, acoples, funda, núcleo, hebillas y conexiones contra la requisición; separa el componente con carga, impacto o contaminación. Pídenos la partida por WhatsApp y la preparamos para que tu personal inspeccione el conjunto."
     ],
     "faq": [
       {
         "q": "¿Qué significa comprar por sistema?",
-        "a": "Que cada componente se valida con la maniobra y con los demás elementos que lo acompañan."
+        "a": "Comprar por sistema significa cotizar cada componente para una maniobra y comprobar su interfaz con los demás. Un kit vertical reúne arnés de rescate, cuerda estática kernmantle y mosquetones de acero o aluminio; la referencia indicada es NFPA 2500. Mándanos por WhatsApp tu operación, anclajes y usuarios para integrar los renglones que necesitas revisar."
       },
       {
         "q": "¿La frase quijadas de la vida identifica una configuración?",
-        "a": "No. Puede referirse a familias distintas; define separador, cortador, combinada o cilindro."
+        "a": "No; «quijadas de la vida» no identifica una configuración porque puede significar separador, cortador, combinada o cilindro. Cada función trabaja sobre una maniobra distinta y puede requerir fuente hidráulica o batería, mangueras y acoples. Envíanos por WhatsApp el acceso y el movimiento que hará tu unidad para cotizar la herramienta con sus accesorios."
       },
       {
         "q": "¿Qué referencia aplica a arneses y cuerda?",
-        "a": "NFPA 2500, antes NFPA 1983, es la referencia indicada; revisa la declaración del modelo."
+        "a": "NFPA 2500, antes NFPA 1983, es la referencia indicada para arneses y cuerda de rescate. La confirmamos contra la declaración del fabricante del modelo, junto con clase, talla, puntos de conexión, diámetro, longitud y terminaciones. Pídenos por WhatsApp la cotización de tu sistema y solicitamos la documentación correspondiente a cada renglón."
       },
       {
         "q": "¿Cómo se elige un mosquetón?",
-        "a": "Por material, forma, seguro, marcado de resistencia y compatibilidad con el sistema."
+        "a": "Elegimos el mosquetón por acero o aluminio, forma, seguro y resistencia marcada, además de su compatibilidad con arnés, cuerda y dispositivo. NFPA 2500 funciona como referencia para el sistema, pero la resistencia se consulta en el marcado del componente. Mándanos por WhatsApp tus conectores y maniobra para cotizar el seguro y material que corresponden."
       },
       {
         "q": "¿Un kit vertical sirve para cualquier maniobra?",
-        "a": "No; se configura para una operación definida y el plan de rescate correspondiente."
+        "a": "No; un kit vertical se configura para una maniobra definida con arnés, cuerda estática kernmantle, mosquetones y anclajes compatibles. NFPA 2500 es la referencia del conjunto, sin sustituir el plan de rescate ni el ajuste de cada usuario. Envíanos por WhatsApp tu operación y tallas para preparar los componentes que tu brigada debe verificar."
       },
       {
         "q": "¿Qué pasa después de una carga o contaminación?",
-        "a": "El componente se identifica y sigue el proceso de evaluación establecido por el fabricante y programa de rescate."
+        "a": "Después de carga o contaminación, identificamos el componente y lo separamos hasta seguir la evaluación indicada por el fabricante y tu programa. En cuerda estática kernmantle revisa funda, núcleo y terminaciones; en arnés, cintas, hebillas y puntos de conexión. Mándanos por WhatsApp el modelo y el hallazgo para cotejar la documentación antes de reintegrarlo."
       },
       {
         "q": "¿Con qué EPP se revisa la compatibilidad?",
-        "a": "Con el traje de extricación, guantes, casco y demás protección que acompañará la operación."
+        "a": "Revisamos la compatibilidad con traje de extricación, guantes, casco y la protección que acompañará la maniobra. El arnés debe permitir acceso a cintas, hebillas y puntos de conexión; los mosquetones de acero o aluminio deben corresponder a cuerda y dispositivo. Envíanos por WhatsApp fotos de tu equipo actual y cotizamos la interfaz completa."
       },
       {
         "q": "¿Qué debe acompañar la entrega?",
-        "a": "Identificación, condición inicial, documentación aplicable, accesorios y método de resguardo."
+        "a": "La entrega debe incluir identificación, condición inicial, accesorios, documentación aplicable y método de resguardo por componente. Para herramienta hidráulica coteja separador, cortador, combinada o cilindro con fuente, batería, mangueras y acoples; para cuerda, marcado y terminaciones. Pídenos por WhatsApp la partida detallada para recibir cada renglón contra tu requisición."
       },
       {
         "q": "¿Por qué se separa equipo en cuarentena?",
-        "a": "Para impedir que un componente con carga, daño o contaminación incierta vuelva al sistema antes de evaluarse."
+        "a": "Separamos equipo en cuarentena para impedir que un componente con carga, daño o contaminación incierta vuelva al sistema antes de evaluarlo. Una cuerda estática kernmantle puede mostrar abrasión, zona rígida o contaminación; arnés y mosquetones requieren revisar cintas, hebillas, puntos y seguro. Mándanos por WhatsApp el marcado y te ayudamos a cotejar su documentación."
       }
     ],
     "hero": {
@@ -63,8 +63,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
     },
     "leyendaImagenIlustrativa": "Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.",
     "resumenHero": [
-      "El rescate técnico no se resuelve con una lista aislada de artículos. Extricación, acceso por cuerda y evacuación exigen identificar la maniobra, el entorno, las competencias autorizadas y las interfaces entre cada componente antes de definir una partida.",
-      "Un programa de rescate sostenible incorpora trazabilidad, inspección, cuarentena y resguardo desde la compra. El traje de extricación, los guantes, el arnés, la cuerda, los conectores y las herramientas deben comprobarse como conjunto sin deducir capacidades que no declare cada fabricante. LORICA cotiza estos sistemas para corporaciones de los 32 estados."
+      "Surtimos sistemas de rescate para brigadas y corporaciones que atienden extricación, acceso vertical o maniobras con cuerda. La partida puede incluir separador, cortador, combinada o cilindro, además de arnés, cuerda estática kernmantle y mosquetones. Definimos cada componente por su función, talla, conexión y declaración disponible para que corresponda a tu operación.",
+      "Cotizamos por maniobra, modelo, accesorios y documentación: confirmamos fuente hidráulica o batería, mangueras, acoples, diámetro, longitud, clase y puntos de conexión. NFPA 2500 orienta arnés y cuerda, siempre contra la declaración del modelo. Mándanos por WhatsApp tu inventario, usuarios y sistema actual; preparamos una partida para que revises recepción, marcado y resguardo."
     ],
     "etiquetas": {
       "menuTipos": "Equipo por sistema de rescate",
