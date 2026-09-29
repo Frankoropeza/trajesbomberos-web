@@ -341,13 +341,10 @@ th { font-family: var(--font-display); }
   scroll-behavior: auto;
 }
 
-/* Rendimiento (CWV, 2026-09-29): las secciones fuera de pantalla no se
-   estilan, maquetan ni pintan hasta acercarse al viewport. Recorta el
-   trabajo de «Style & Layout» del primer render (DOM de ~2 900 nodos).
-   contain-intrinsic-size «auto» recuerda el alto real una vez pintadas,
-   así que no hay saltos al volver a subir. */
-main > .section:not(:first-child),
-.site-footer {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
-}
+/* Rendimiento (CWV, 2026-09-29): content-visibility:auto en secciones y
+   footer se RETIRÓ el mismo día. Con él, Lighthouse/axe no resolvía el fondo
+   real de lo que estaba fuera de pantalla y marcaba falsos fallos de contraste
+   y de área táctil (accesibilidad 96–97). Medido A/B (Lighthouse móvil, 3
+   corridas, mediana): rendimiento idéntico (89/91/94), TBT 0 en ambos, hilo
+   principal +50–80 ms; accesibilidad 96–97 → 100. El reflow forzado del
+   Header, que era el costo real, ya estaba resuelto. */

@@ -1,3 +1,12 @@
+/* Respaldo con métricas ajustadas (2026-09-29): mientras cargan las webfonts,
+   Arial se escala para ocupar el mismo ancho y alto que Barlow y no hay salto
+   de maquetación al cambiar de fuente (CLS 0.06 en /contacto/ por Barlow 600/700).
+   Valores calculados con ~/Desktop/OBSIDIAN/TRAJESBOMBERO/scripts/img-opt/fallback.py. */
+@font-face { font-family: 'Barlow Fallback'; font-weight: 400; src: local('Arial'), local('ArialMT'); size-adjust: 95.76%; ascent-override: 104.43%; descent-override: 20.89%; line-gap-override: 0.00%; }
+@font-face { font-family: 'Barlow Fallback'; font-weight: 600; src: local('Arial Bold'), local('Arial-BoldMT'); size-adjust: 91.33%; ascent-override: 109.49%; descent-override: 21.90%; line-gap-override: 0.00%; }
+@font-face { font-family: 'Barlow Fallback'; font-weight: 700; src: local('Arial Bold'), local('Arial-BoldMT'); size-adjust: 92.22%; ascent-override: 108.44%; descent-override: 21.69%; line-gap-override: 0.00%; }
+@font-face { font-family: 'Barlow Semi Condensed Fallback'; font-weight: 700; src: local('Arial Bold'), local('Arial-BoldMT'); size-adjust: 83.96%; ascent-override: 119.11%; descent-override: 23.82%; line-gap-override: 0.00%; }
+
 /* tokens.css · SSoT visual. Escala canónica: max-width 1279 · 1023 · 767 · 639 · 479 · 379; min-width 1440 (solo escritorio amplio) · 1280 · 1024 · 768 · 640. */
 :root {
   /* --- Color ------------------------------------------------ */
@@ -18,8 +27,8 @@
   --color-wa-dark: #0c6632;
 
   /* --- Tipografía ------------------------------------------- */
-  --font-sans: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif;
+  --font-sans: 'Barlow', 'Barlow Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Barlow Semi Condensed', 'Barlow Semi Condensed Fallback', 'Barlow', system-ui, sans-serif;
   --fs-h1: clamp(2.3rem, 4.4vw, 4.1rem);
   --fs-h2: clamp(1.7rem, 2.6vw, 2.6rem);
   --fs-h3: clamp(1.05rem, 1.2vw, 1.2rem);
