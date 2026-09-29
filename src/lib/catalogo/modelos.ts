@@ -1,9 +1,13 @@
 import { MODELOS } from './data';
+import type { Modelo } from './types';
 
 export { MODELOS };
 export const modelosDeSeccion = (seccion: string) => MODELOS.filter((modelo) => modelo.seccion === seccion);
 export const modelosDeTipo = (tipo: string) => MODELOS.filter((modelo) => modelo.tipo === tipo);
 export const modelosDeFamilia = (familia: string) => MODELOS.filter((modelo) => modelo.familia === familia);
+export const urlModelo = (modelo: Modelo) => modelo.familia
+  ? `/trajes/${modelo.familia}/modelos/${modelo.id}/`
+  : `/${modelo.seccion}/${modelo.id}/`;
 
 /* Datos trasladados a data/cascos.ts.
 

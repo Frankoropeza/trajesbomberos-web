@@ -6,10 +6,12 @@ import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
 import NormaBadge from '@components/NormaBadge.astro';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
-import { modelosDeSeccion, modelosDeTipo } from '@lib/catalogo/modelos';
+import { modelosDeFamilia, modelosDeSeccion, modelosDeTipo, urlModelo } from '@lib/catalogo/modelos';
 import { MODELOS } from '@lib/catalogo/data';
 import type { Modelo, Seccion, Tipo } from '@lib/catalogo/types';
 import { waUrl } from '@lib/wa';
+import { FAMILIAS } from '@lib/familias';
+import { piezasDeFamilia } from '@lib/piezas';
 
 interface Props { seccion: Seccion; entry: Tipo | Modelo; kind: 'tipo' | 'modelo'; path: string; parent?: { name: string; href: string } | { name: string; href: string }[]; heroImage?: { src: string; alt: string }; }
 const { seccion, entry, kind, path, parent, heroImage = seccion.hero } = Astro.props;
@@ -27,24 +29,33 @@ const rows = isTipo ? (tipo.especificacion ?? []) : [
 ];
 const image = isTipo ? tipo.imagen : modelo.imagen;
 const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
-const related = !isTipo && modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : [];
+const related = !isTipo ? (modelo.familia ? modelosDeFamilia(modelo.familia).filter((item) => item.id !== modelo.id) : modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : []) : [];
 const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre) : [];
-const hrefModeloMarca = (item: Modelo) => item.seccion === 'trajes' ? `/trajes/${item.familia}/modelos/${item.id}/` : `/${item.seccion}/${item.id}/`;
+const familiaModelo = !isTipo && modelo.familia ? FAMILIAS.find((familia) => familia.slug === modelo.familia) : undefined;
+const piezasFamilia = familiaModelo ? piezasDeFamilia(familiaModelo.slug) : [];
+const modelosSidebar = familiaModelo ? modelosDeFamilia(familiaModelo.slug) : modelosDeSeccion(seccion.slug);
+const primeraFrase = (texto: string) => texto.match(/^.*?[.!?](?:\s|$)/)?.[0].trim() ?? texto;
+const recortarPalabras = (texto: string, limite: number) => texto.length <= limite ? texto : texto.slice(0, limite + 1).replace(/\s+\S*$/, '').trim();
+const tituloModeloBase = isTipo ? '' : `${modelo.marca} ${modelo.nombre} | ${seccion.nombre}`;
+const tituloModelo = isTipo ? '' : modelo.title ?? (tituloModeloBase.length <= 60 ? tituloModeloBase : `${modelo.marca} ${modelo.nombre} | TrajesBombero`);
+const llamadaCotizacion = 'Cotiza por WhatsApp con envío a todo México.';
+const descripcionModelo = isTipo ? '' : modelo.description ?? recortarPalabras(`${recortarPalabras(primeraFrase(modelo.resumen?.[0] ?? modelo.descripcion[0]), 160 - llamadaCotizacion.length - 1)} ${llamadaCotizacion}`, 160);
+const modeloPorId = (id: string) => MODELOS.find((item) => item.id === id)!;
 const componentesKit = isTipo && seccion.slug === 'kits' ? {
   'kit-estructural': [
-    { nombre: 'Bullard LTX', href: '/cascos/bullard-ltx/' }, { nombre: 'Croydon Filtrex', href: '/botas/croydon-filtrex/' }, { nombre: 'Veridian Fire Pro II', href: '/guantes/veridian-fire-pro-ii/' }, { nombre: 'Majestic PAC II', href: '/capuchas/majestic-pac-ii/' },
+    { nombre: 'Bullard LTX', href: urlModelo(modeloPorId('bullard-ltx')) }, { nombre: 'Croydon Filtrex', href: urlModelo(modeloPorId('croydon-filtrex')) }, { nombre: 'Veridian Fire Pro II', href: urlModelo(modeloPorId('veridian-fire-pro-ii')) }, { nombre: 'Majestic PAC II', href: urlModelo(modeloPorId('majestic-pac-ii')) },
   ],
   'kit-brigadista': [
-    { nombre: 'Bullard LTX', href: '/cascos/bullard-ltx/' }, { nombre: 'Romak CAP1005', href: '/capuchas/romak-cap1005/' }, { nombre: 'Romak Firemax VI', href: '/guantes/romak-firemax-vi/' }, { nombre: 'Romak Workman Fire', href: '/botas/romak-workman-fire/' },
+    { nombre: 'Bullard LTX', href: urlModelo(modeloPorId('bullard-ltx')) }, { nombre: 'Romak CAP1005', href: urlModelo(modeloPorId('romak-cap1005')) }, { nombre: 'Romak Firemax VI', href: urlModelo(modeloPorId('romak-firemax-vi')) }, { nombre: 'Romak Workman Fire', href: urlModelo(modeloPorId('romak-workman-fire')) },
   ],
   'kit-forestal': [
-    { nombre: 'Fire Ranger Explorer', href: '/trajes/forestal/modelos/romak-fire-ranger-explorer/' }, { nombre: 'Romak BOMW1002', href: '/trajes/forestal/modelos/romak-bomw1002/' }, { nombre: 'Bullard Wildland FH911H', href: '/cascos/bullard-fh911h/' }, { nombre: 'ESS Striketeam XTO', href: '/accesorios/ess-striketeam-xto/' },
+    { nombre: 'Fire Ranger Explorer', href: urlModelo(modeloPorId('romak-fire-ranger-explorer')) }, { nombre: 'Romak BOMW1002', href: urlModelo(modeloPorId('romak-bomw1002')) }, { nombre: 'Bullard Wildland FH911H', href: urlModelo(modeloPorId('bullard-fh911h')) }, { nombre: 'ESS Striketeam XTO', href: urlModelo(modeloPorId('ess-striketeam-xto')) },
   ],
 }[tipo.slug] ?? [] : [];
 const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 ---
-<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : `${nombre} | ${seccion.nombre} | México`} description={isTipo ? tipo.description : `${nombre}: especificación, configuración y cotización por WhatsApp.`} crumbLabel={nombre} parent={parent ?? { name: seccion.nombre, href: `/${seccion.slug}/` }} eyebrow={isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${seccion.nombre}`} h1={nombre} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : (modelo.resumen ? modelo.resumen.slice(1) : [])} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : modelo.descripcion[0], image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas', href: '#faq' }]}>
+<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : tituloModelo} description={isTipo ? tipo.description : descripcionModelo} crumbLabel={nombre} parent={parent ?? { name: seccion.nombre, href: `/${seccion.slug}/` }} eyebrow={isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${seccion.nombre}`} h1={nombre} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : (modelo.resumen ? modelo.resumen.slice(1) : [])} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas', href: '#faq' }]}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   <div class="section"><div class="container layout"><main>
     <section class="block first" id="a-fondo"><div class="detail">
@@ -55,11 +66,11 @@ const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` 
     {!isTipo && <section class="block"><SectionHeading eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="features">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
     {isTipo && tipo.errores && <section class="block"><SectionHeading eyebrow="Antes de comprar" title="Errores que conviene evitar" /><ul class="features">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
     {!isTipo && seccion.checklistCompra && <section class="block"><SectionHeading eyebrow="Antes de ordenar" title={seccion.checklistCompra.titulo} />{seccion.checklistCompra.parrafos.map((paragraph) => <p class="text">{paragraph}</p>)}</section>}
-    {related.length > 0 && <section class="block"><SectionHeading eyebrow="Mismo tipo" title="Otros modelos disponibles" /><div class="cards">{related.map((item) => <a href={`/${seccion.slug}/${item.id}/`}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
-    {modelosMarca.length > 0 && <section class="block"><SectionHeading eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><div class="cards">{modelosMarca.map((item) => <a href={hrefModeloMarca(item)}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
+    {related.length > 0 && <section class="block"><SectionHeading eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title="Otros modelos disponibles" /><div class="cards">{related.map((item) => <a href={urlModelo(item)}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
+    {modelosMarca.length > 0 && <section class="block"><SectionHeading eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><div class="cards">{modelosMarca.map((item) => <a href={urlModelo(item)}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
     {componentesKit.length > 0 && <section class="block"><SectionHeading eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
-  </main><aside><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>Ver catálogo</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosDeSeccion(seccion.slug).map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={`/${seccion.slug}/${item.id}/`}>{item.marca} {item.nombre}</a>)}</nav></aside></div></div>
+  </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Ver familia</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>Ver catálogo</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
   <CTABanner variant="dark" title={`Cotiza ${nombre}`} text="Indica operación, número de elementos y accesorios para confirmar por escrito la configuración." buttons={[{ label: 'Cotizar por WhatsApp', href: waUrl(waMessage), icon: 'wa', primary: true, external: true }, { label: `Volver a ${seccion.nombre.toLowerCase()}`, href: `/${seccion.slug}/`, icon: 'catalog' }]} />
 </PageLayout>
 <style>

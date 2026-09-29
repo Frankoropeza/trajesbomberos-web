@@ -6,7 +6,7 @@ import FAQWithContact from '@components/FAQWithContact.astro';
 import NormaBadge from '@components/NormaBadge.astro';
 import { SECCIONES } from '@lib/catalogo/secciones';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
-import { modelosDeSeccion } from '@lib/catalogo/modelos';
+import { modelosDeSeccion, urlModelo } from '@lib/catalogo/modelos';
 
 export const getStaticPaths = (() => {
   const reserved = new Set(['trajes', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
@@ -21,46 +21,44 @@ const modelos = modelosDeSeccion(seccion.slug);
 const path = `/${seccion.slug}/`;
 const items = [
   ...tipos.map((tipo) => ({ name: tipo.nombre, url: `/${seccion.slug}/${tipo.slug}/` })),
-  ...modelos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `/${seccion.slug}/${modelo.id}/` })),
+  ...modelos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: urlModelo(modelo) })),
 ];
-const comparativa = [
-  ['Estructural tradicional', 'Ataque en edificaciones', 'NFPA 1970 (antes NFPA 1971)', 'Ala trasera larga', 'Medio', 'Sí, se confirma por modelo'],
-  ['Estructural europeo', 'Ataque en edificaciones', 'EN 443:2008', 'Perfil jet con visor', 'Medio', 'Sí, se confirma por modelo'],
-  ['Forestal', 'Línea de fuego y exterior', 'NFPA 1950 (antes NFPA 1977)', 'Ala completa', 'Ligero', 'No sustituye casco estructural'],
-  ['Rescate técnico', 'Vehicular, vertical y confinados', 'NFPA 2500', 'Perfil compacto sin ala', 'Ligero', 'Según operación y equipo'],
-  ['Brigada industrial', 'Conatos definidos por riesgo', 'NOM-002-STPS-2010', 'Industrial o estructural según tarea', 'Variable', 'Solo si el escenario lo requiere'],
-];
+const etiquetas = seccion.etiquetas;
+const grupos = seccion.grupos?.map((grupo) => ({
+  ...grupo,
+  tipos: grupo.tipos.map((slug) => tipos.find((tipo) => tipo.slug === slug)).filter((tipo): tipo is typeof tipos[number] => Boolean(tipo)),
+})).filter((grupo) => grupo.tipos.length > 0);
+const tiposAgrupados = grupos && grupos.length > 0;
+const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || seccion.intro.length > 0);
 ---
 <PageLayout
   pageType="directorio" path={path} title={seccion.title} description={seccion.description}
   crumbLabel={seccion.nombre} eyebrow={seccion.eyebrow} h1={seccion.h1} lead={seccion.lead}
-  descRight={['Elige primero el escenario de trabajo y luego compara casco, ajuste, protección ocular, cubrenuca y compatibilidad con el resto del equipo.', 'Las fichas de modelo conservan la declaración del fabricante. La configuración exacta se confirma por escrito antes de cotizar.']}
+  descRight={seccion.resumenHero ?? []}
   heroImage={seccion.hero} faqs={seccion.faq} directoryItems={items}
   collection={{ name: seccion.h1, description: seccion.description, url: path }}
-  menuItems={[{ label: 'Tipos de casco', href: '#tipos' }, { label: 'Cómo elegir', href: '#elegir' }, { label: 'Modelos', href: '#modelos' }, { label: 'Preguntas', href: '#faq' }]}
+  menuItems={[{ label: etiquetas?.menuTipos ?? 'Tipos', href: '#tipos' }, ...(mostrarEleccion ? [{ label: 'Cómo elegir', href: '#elegir' }] : []), ...(modelos.length > 0 ? [{ label: 'Modelos', href: '#modelos' }] : []), { label: 'Preguntas', href: '#faq' }]}
 >
   <div class="section"><div class="container content">
     <section class="block" id="tipos">
-      <SectionHeading eyebrow="Por operación" title="Cinco tipos de casco para bombero" description="No son intercambiables: cada forma, peso relativo y sistema de retención responde a una escena distinta." />
-      <div class="cards">
-        {tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h2>{tipo.nombreCard}</h2><p>{tipo.lead}</p><span>Ver guía del tipo →</span></a>)}
-      </div>
+      <SectionHeading eyebrow={etiquetas?.tiposEyebrow ?? 'Por operación'} title={etiquetas?.tiposTitulo ?? `Tipos de ${seccion.nombre.toLowerCase()}`} description={etiquetas?.tiposDescripcion} />
+      {tiposAgrupados ? grupos!.map((grupo) => <section class="type-group"><h2>{grupo.titulo}</h2><div class="cards">{grupo.tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Ver guía del tipo →</span></a>)}</div></section>) : <div class="cards">{tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h2>{tipo.nombreCard}</h2><p>{tipo.lead}</p><span>Ver guía del tipo →</span></a>)}</div>}
     </section>
-    <section class="block" id="elegir">
-      <SectionHeading eyebrow="Comparativa" title="Cómo elegir el casco de bombero adecuado" description="Antes de pedir marca o color, compara el riesgo, el conjunto que ya usa tu equipo y la documentación que necesitas recibir." />
+    {mostrarEleccion && <section class="block" id="elegir">
+      <SectionHeading eyebrow="Comparativa" title={etiquetas?.elegirTitulo ?? `Cómo elegir ${seccion.nombre.toLowerCase()}`} description={etiquetas?.elegirDescripcion} />
       {seccion.intro.map((parrafo) => <p class="prose">{parrafo}</p>)}
-      <div class="scroll" tabindex="0" role="region" aria-label="Comparativa de tipos de casco"><table><thead><tr><th>Tipo</th><th>Uso</th><th>Referencia</th><th>Forma</th><th>Peso</th><th>ERA</th></tr></thead><tbody>{comparativa.map((fila) => <tr>{fila.map((celda, i) => i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>)}</tr>)}</tbody></table></div>
-      <div class="criteria"><h2>Cinco criterios antes de cotizar</h2><ol><li><strong>Escenario:</strong> distingue ataque interior, línea de fuego, rescate y conato industrial.</li><li><strong>Interfaz:</strong> prueba casco, máscara de ERA, capucha y cuello del traje en conjunto.</li><li><strong>Ajuste:</strong> revisa suspensión y barbiquejo mientras el elemento se mueve.</li><li><strong>Accesorios:</strong> define visor, goggles, lámpara, bandas y marcaje desde la requisición.</li><li><strong>Documento:</strong> pide modelo, edición de norma declarada y configuración por escrito.</li></ol></div>
-    </section>
-    <section class="block" id="modelos">
-      <SectionHeading eyebrow="Disponibles para cotizar" title="Modelos de casco publicados" description="Cada ficha conserva sus componentes y alcance declarado; elige el modelo después de definir el tipo de operación." />
-      <div class="cards cards--models">{modelos.map((modelo) => <article class="card model"><img src={modelo.imagen?.src} alt={modelo.imagen?.alt} width={modelo.imagen?.width} height={modelo.imagen?.height} loading="lazy" /><div><h2>{modelo.marca} {modelo.nombre}</h2><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /><p>{modelo.caracteristicas.slice(0, 2).join('. ')}.</p><a href={`/${seccion.slug}/${modelo.id}/`}>Ver ficha del modelo →</a></div></article>)}</div>
-    </section>
+      {seccion.comparativa && <div class="scroll" tabindex="0" role="region" aria-label={`Comparativa de ${seccion.nombre.toLowerCase()}`}><table><thead><tr>{seccion.comparativa.columnas.map((columna) => <th>{columna}</th>)}</tr></thead><tbody>{seccion.comparativa.filas.map((fila) => <tr>{fila.map((celda, i) => i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>)}</tr>)}</tbody></table></div>}
+      {seccion.criterios && <div class="criteria"><h2>{seccion.criterios.titulo}</h2><ol>{seccion.criterios.items.map((item) => <li><strong>{item.termino}:</strong> {item.texto}</li>)}</ol></div>}
+    </section>}
+    {modelos.length > 0 && <section class="block" id="modelos">
+      <SectionHeading eyebrow="Disponibles para cotizar" title={etiquetas?.modelosTitulo ?? `Modelos de ${seccion.nombre.toLowerCase()} publicados`} description={etiquetas?.modelosDescripcion} />
+      <div class="cards cards--models">{modelos.map((modelo) => <article class="card model"><img src={modelo.imagen?.src} alt={modelo.imagen?.alt} width={modelo.imagen?.width} height={modelo.imagen?.height} loading="lazy" /><div><h2>{modelo.marca} {modelo.nombre}</h2><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /><p>{modelo.caracteristicas.slice(0, 2).join('. ')}.</p><a href={urlModelo(modelo)}>Ver ficha del modelo →</a></div></article>)}</div>
+    </section>}
     <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title="Respuestas antes de elegir" /><FAQWithContact items={seccion.faq} /></section>
   </div></div>
 </PageLayout>
 
 <style>
   .content { max-width: 1120px; } .block { padding-block: clamp(2.5rem, 5vw, 4rem); border-top: var(--border); } .block:first-child { border-top: 0; padding-top: 0; }
-  .prose { max-width: 82ch; color: var(--color-gray); line-height: 1.72; } .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; } .card { overflow: hidden; display: flex; flex-direction: column; background: var(--color-white); border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; } .card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); } .card img { aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-light); } .card h2, .card p, .card > span { margin-inline: 1.2rem; } .card h2 { margin-top: 1.15rem; margin-bottom: 0.45rem; font-size: 1.1rem; } .card p { margin-top: 0; color: var(--color-gray); line-height: 1.55; font-size: 0.9rem; } .card > span, .model a { margin-top: auto; padding-block: 1rem; color: var(--color-primary); font-size: 0.85rem; font-weight: 800; } .cards--models { grid-template-columns: repeat(4, 1fr); } .model > div { display: flex; flex-direction: column; flex: 1; padding-inline: 1.2rem; } .model h2, .model p { margin-inline: 0; } .model a { text-decoration: none; } .scroll { overflow-x: auto; border: var(--border); border-radius: var(--radius-lg); } table { min-width: 780px; width: 100%; border-collapse: collapse; } th, td { padding: .9rem 1rem; border-bottom: var(--border); text-align: left; vertical-align: top; font-size: .86rem; } thead { background: var(--color-ink); color: var(--color-white); } tbody th { color: var(--color-dark); } td { color: var(--color-gray); } .criteria { margin-top: 2rem; padding: 1.4rem; background: var(--color-light); border-left: 3px solid var(--color-primary); } .criteria h2 { margin-top: 0; } .criteria li { margin-block: .6rem; color: var(--color-gray); } @media (max-width: 820px) { .cards, .cards--models { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 560px) { .cards, .cards--models { grid-template-columns: 1fr; } }
+  .prose { max-width: 82ch; color: var(--color-gray); line-height: 1.72; } .type-group + .type-group { margin-top: 2rem; } .type-group > h2 { font-size: 1.25rem; } .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; } .card { overflow: hidden; display: flex; flex-direction: column; background: var(--color-white); border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; } .card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); } .card img { aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-light); } .card h2, .card h3, .card p, .card > span { margin-inline: 1.2rem; } .card h2, .card h3 { margin-top: 1.15rem; margin-bottom: 0.45rem; font-size: 1.1rem; } .card p { margin-top: 0; color: var(--color-gray); line-height: 1.55; font-size: 0.9rem; } .card > span, .model a { margin-top: auto; padding-block: 1rem; color: var(--color-primary); font-size: 0.85rem; font-weight: 800; } .cards--models { grid-template-columns: repeat(4, 1fr); } .model > div { display: flex; flex-direction: column; flex: 1; padding-inline: 1.2rem; } .model h2, .model p { margin-inline: 0; } .model a { text-decoration: none; } .scroll { overflow-x: auto; border: var(--border); border-radius: var(--radius-lg); } table { min-width: 780px; width: 100%; border-collapse: collapse; } th, td { padding: .9rem 1rem; border-bottom: var(--border); text-align: left; vertical-align: top; font-size: .86rem; } thead { background: var(--color-ink); color: var(--color-white); } tbody th { color: var(--color-dark); } td { color: var(--color-gray); } .criteria { margin-top: 2rem; padding: 1.4rem; background: var(--color-light); border-left: 3px solid var(--color-primary); } .criteria h2 { margin-top: 0; } .criteria li { margin-block: .6rem; color: var(--color-gray); } @media (max-width: 820px) { .cards, .cards--models { grid-template-columns: repeat(2, 1fr); } } @media (max-width: 560px) { .cards, .cards--models { grid-template-columns: 1fr; } }
 </style>

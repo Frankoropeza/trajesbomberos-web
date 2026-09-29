@@ -19,7 +19,7 @@ import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import type { FamiliaDetalle } from '@lib/familias';
 import { heroDeFamilia } from '@lib/imagenes';
-import { modelosDeFamilia } from '@lib/catalogo/modelos';
+import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -163,7 +163,7 @@ const pageIndex = [
             <SectionHeading eyebrow="Modelos" title="Modelos disponibles" description="Consulta la ficha de cada modelo antes de integrarlo a la partida." />
             <div class="piezas-grid">
               {modelos.map((modelo) => (
-                <a class="modelo-card" href={`/trajes/${f.slug}/modelos/${modelo.id}/`}>
+                <a class="modelo-card" href={urlModelo(modelo)}>
                   <img src={modelo.imagen?.src} alt={modelo.imagen?.alt} width={modelo.imagen?.width} height={modelo.imagen?.height} loading="lazy" />
                   <p>{modelo.marca}</p><h3>{modelo.nombre}</h3>
                   <NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} />
