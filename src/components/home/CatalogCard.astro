@@ -20,9 +20,14 @@ interface Props {
   image?: { src: string; alt: string; width: number; height: number };
   chips?: string[];
   meta?: string;
+  /** Norma o referencia técnica de la familia (ya publicada en su ficha). */
+  norma?: string;
+  /** Piezas cotizables que incluye la categoría (máx. 4 visibles). */
+  incluye?: string[];
+  incluyeMas?: number;
   badge?: string;
   href?: string;
-  ctaLabel: 'Ver equipo' | 'Conocer la categoría' | 'Solicitar cotización';
+  ctaLabel: 'Ver equipo' | 'Conocer la categoría' | 'Solicitar cotización' | 'Armar mi conjunto';
   waNombre?: string;
   extra?: { label: string; href: string }[];
 }
@@ -35,6 +40,9 @@ const {
   image,
   chips = [],
   meta,
+  norma,
+  incluye = [],
+  incluyeMas = 0,
   badge,
   href,
   ctaLabel,
@@ -69,6 +77,18 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
       <ul class="cc__chips" aria-label="Incluye">
         {chips.slice(0, 3).map((c) => <li class="chip">{c}</li>)}
       </ul>
+    )}
+    {norma && (
+      <p class="cc__norma"><span>Norma</span> {norma}</p>
+    )}
+    {incluye.length > 0 && (
+      <div class="cc__incluye">
+        <p class="cc__incluye-t">Incluye</p>
+        <ul>
+          {incluye.slice(0, 4).map((i) => <li>{i}</li>)}
+        </ul>
+        {incluyeMas > 0 && <p class="cc__mas">+ {incluyeMas} {incluyeMas === 1 ? 'pieza más' : 'piezas más'} en la ficha</p>}
+      </div>
     )}
     {meta && <p class="cc__meta">{meta}</p>}
     {extra.length > 0 && (
@@ -170,6 +190,50 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
   }
   .cc__desc { margin: 0; color: var(--color-gray); font-size: 0.9rem; line-height: 1.55; }
   .cc__chips { display: flex; flex-wrap: wrap; gap: 0.32rem; margin: 0.1rem 0 0; padding: 0; list-style: none; }
+  .cc__norma {
+    margin: 0;
+    padding: 0.45rem 0.6rem;
+    background: var(--color-light);
+    border-left: 3px solid var(--color-primary);
+    color: var(--color-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .cc__norma span {
+    display: block;
+    color: var(--color-gray);
+    font-size: 0.64rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cc__incluye-t {
+    margin: 0.15rem 0 0.25rem;
+    color: var(--color-gray);
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cc__incluye ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.22rem; }
+  .cc__incluye li {
+    position: relative;
+    padding-left: 1rem;
+    color: var(--color-dark);
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+  .cc__incluye li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.42em;
+    width: 6px;
+    height: 6px;
+    background: var(--color-primary);
+  }
+  .cc__mas { margin: 0.3rem 0 0; color: var(--color-gray); font-size: 0.74rem; font-weight: 700; }
   .cc__meta {
     margin: auto 0 0;
     padding-top: 0.3rem;
@@ -236,7 +300,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    .cc__chips, .cc__extra { display: none; }
+    .cc__chips, .cc__extra, .cc__norma, .cc__incluye { display: none; }
     .cc__meta { font-size: 0.72rem; }
     .cc__cta { margin: 0.4rem -0.85rem 0; padding: 0.6rem 0.85rem; min-height: 44px; font-size: 0.84rem; }
   }
