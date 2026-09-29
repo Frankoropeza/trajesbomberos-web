@@ -44,7 +44,7 @@ Para quien compra equipo estructural de bomberos, la pregunta correcta no es só
 
 ## Las tres capas del conjunto estructural
 
-Un conjunto estructural se construye normalmente con capa exterior, barrera de humedad y barrera térmica. La exterior enfrenta abrasión, calor y exposición según el diseño declarado; la barrera de humedad participa en la protección frente a líquidos y vapor; la térmica aporta aislamiento. El desempeño pertenece al composite completo y a su configuración, no al nombre de una fibra suelta.
+Un conjunto estructural se construye normalmente con capa exterior, barrera de humedad y barrera térmica. La exterior enfrenta abrasión, calor y exposición según el diseño declarado; la barrera de humedad participa en la protección frente a líquidos y vapor; la térmica aporta aislamiento. El desempeño pertenece al composite completo y a su configuración, no al nombre de una fibra suelta. Estas piezas no son el uniforme de estación: la diferencia se explica en [uniforme de bombero: qué incluye](/blog/uniforme-de-bombero-que-incluye/).
 
 Por eso, al pedir un [chaquetón estructural](/trajes/estructural/chaqueton/) o una [pantalonera estructural](/trajes/estructural/pantalonera/), solicita las tres capas y sus opciones. La explicación de [materiales del traje de bombero](/blog/materiales-del-traje-de-bombero/) muestra cómo leer ese composite sin adjudicarle capacidades que la ficha no publica.
 

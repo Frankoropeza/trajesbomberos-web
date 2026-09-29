@@ -83,13 +83,13 @@ Este modelo se debe revisar con movimientos: extensión por arriba de hombro, ac
 
 ## Romak Fire Maverick II: capas con gramaje publicado
 
-Maverick II declara Panther de 210 g/m² como exterior, Moisture Barrier 125 de 125 g/m² y Dubai TB205 de 205 g/m². También publica referencias EN 469, NFPA 1970:2025 y NFPA 1971:2018 con estatus declarado, no como certificación. Es importante respetar esa diferencia en la requisición.
+Maverick II declara Panther de 210 g/m² como exterior, Moisture Barrier 125 de 125 g/m² y Dubai TB205 de 205 g/m². También publica referencias EN 469, NFPA 1970:2025 y NFPA 1971:2018 con estatus declarado, no como certificación. Es importante respetar esa diferencia en la requisición. Qué cambió al consolidarse la norma se explica en [NFPA 1970: qué cambió](/blog/nfpa-1970-que-cambio/).
 
 Es una opción defendible cuando el comprador necesita que los nombres y gramajes de capas aparezcan en la partida. El fabricante usa la frase “La protección más ligera”, pero no hay peso total publicado del traje; para esa cifra se requiere confirmar la talla y configuración. La comparación de [materiales del traje de bombero](/blog/materiales-del-traje-de-bombero/) aclara por qué sumar gramajes no equivale al peso final del conjunto.
 
 ## Cómo elegir entre los cinco sin usar una cifra aislada
 
-Define primero frecuencia de incendio estructural, escenarios de exposición, clima, número de usuarios, operación con ERA y requisitos documentales. Con ello compara composites completos y no sólo exteriores. Si la institución necesita varias partidas, evita pedir una línea con opciones abiertas: una oferta debe cerrar exterior, barreras, talla, color y accesorios para cada usuario.
+Define primero frecuencia de incendio estructural, escenarios de exposición, clima, número de usuarios, operación con ERA y requisitos documentales. Con ello compara composites completos y no sólo exteriores. Si la institución necesita varias partidas, evita pedir una línea con opciones abiertas: una oferta debe cerrar exterior, barreras, talla, color y accesorios para cada usuario. Qué factores mueven el costo entre modelos se explica en [cuánto cuesta un traje de bombero](/blog/cuanto-cuesta-un-traje-de-bombero/).
 
 Para una licitación, el criterio no debe ser una declaración que no corresponda a todos los modelos. Pide documentos por modelo ofertado y define si aceptarás referencias históricas o requerirás la edición de norma que corresponda a tu pliego. La guía de [cómo elegir traje para bomberos](/blog/como-elegir-traje-para-bomberos/) ofrece el orden de decisión antes de comparar propuestas.
 
