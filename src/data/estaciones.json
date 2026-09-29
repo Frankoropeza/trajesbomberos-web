@@ -10841,6 +10841,10 @@
    {
     "nombre": "ameca.gob.mx",
     "url": "https://ameca.gob.mx/municipio/telefonos"
+   },
+   {
+    "nombre": "Gobierno de Ameca — Protocolos de actuación de la Unidad Municipal de Protección Civil y Bomberos (2025)",
+    "url": "https://app-sapumu.sfo2.digitaloceanspaces.com/ameca/content/2025/07/84115/zfgEFf8yMw.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -11308,7 +11312,11 @@
   "fuentes": [
    {
     "nombre": "rankeando.com",
-    "url": "https://rankeando.com/1631616-proteccion-civil-y-bomberos"
+    "retirada": "https://rankeando.com/1631616-proteccion-civil-y-bomberos"
+   },
+   {
+    "nombre": "Gobierno de La Barca — comunicado oficial de Protección Civil y Bomberos",
+    "url": "https://www.facebook.com/GobLaBarca2427/posts/comunicado-oficialprotecci%C3%B3n-civil-y-bomberos-la-barcael-d%C3%ADa-de-ayer-alrededor-d/1273502608296764/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -11432,7 +11440,6 @@
    "lng": -105.21376009,
    "precision": "exacta"
   },
-  "telefono": "(322) 226-8080",
   "sitioWeb": "https://bomberos.puertovallarta.gob.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -12351,7 +12358,7 @@
    "precision": "exacta"
   },
   "telefono": "(341) 412-3305",
-  "sitioWeb": "https://ciudadguzman.gob.mx/",
+  "sitioWeb": "http://www.ciudadguzman.gob.mx/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
