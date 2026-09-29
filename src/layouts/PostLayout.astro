@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // PostLayout (artículo del blog).
 // Jerarquía canónica: BaseLayout → PageLayout → PostLayout, la
 // misma que ProductLayout. Estructura: hero → franja →
@@ -124,7 +125,7 @@ const article = {
 
           {d.imagen && (
             <figure class="post__cover">
-              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="1600" height="686" fetchpriority="high" decoding="async" />
+              <img src={d.imagen} {...responsive(d.imagen, SIZES.full)} alt={d.imagenAlt ?? ''} width="1600" height="686" fetchpriority="high" decoding="async" />
               {d.imagenAlt && <figcaption>{d.imagenAlt}</figcaption>}
             </figure>
           )}

@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // SuitAnatomy: las tres capas obligatorias del traje estructural.
 // Es el bloque técnico central del sitio: explica dónde vive el
 // desempeño real (las barreras, no el exterior que se ve).
@@ -43,6 +44,7 @@ const CAPAS: Capa[] = [
   <div class="anatomy__viz">
     <img
       src="/images/escenas/composite-tres-capas-traje-estructural.avif"
+      {...responsive('/images/escenas/composite-tres-capas-traje-estructural.avif', SIZES.half)}
       alt="Corte de un traje estructural de bombero: capa exterior de aramida, barrera de humedad y barrera térmica"
       width="1300" height="1000" loading="lazy" decoding="async" class="anatomy__photo"
     />

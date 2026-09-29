@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // CategoryFeature: spotlight de categoría. 2 columnas: texto
 // estructurado (eyebrow + título + description + features[] con
 // check + brands en pills + CTA flecha) | galería de 3 imágenes
@@ -38,6 +39,7 @@ const { eyebrow, title, description, features, brands = [], ctaLabel, ctaHref, i
     {images.slice(0, 3).map((img, i) => (
       <img
         src={img.src}
+        {...responsive(img.src, i === 0 ? SIZES.half : SIZES.tile)}
         alt={img.alt}
         width={i === 0 ? 800 : 400}
         height={i === 0 ? 500 : 300}

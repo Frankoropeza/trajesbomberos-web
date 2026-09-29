@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // CatalogCard (home): card de exploración por categoría — trajes
 // (TR-0n) y complementos del conjunto (EQ-0n). Tres estados:
 //  · con href  → toda la card es clicable (enlace "estirado" sobre
@@ -55,7 +56,7 @@ const wa = waUrl(WA_MESSAGES.categoria(waNombre));
 <article class:list={['cc', { 'cc--pendiente': pendiente }]}>
   <div class="cc__media">
     {image ? (
-      <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" />
+      <img src={image.src} {...responsive(image.src, SIZES.tile)} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" />
     ) : (
       <div class="cc__placeholder" role="img" aria-label={`Imagen pendiente de ${titulo}`}>
         <strong>{codigo}</strong>

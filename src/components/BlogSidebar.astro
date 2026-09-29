@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // BlogSidebar: columna de apoyo del blog, sin scroll propio.
 //  · indice / categoria → Buscar, Guías esenciales, Temas, comprador,
 //    cotización, norma, equipo y familias. Fluye con la página.
@@ -103,7 +104,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
         {(esArticulo ? masGuias : esenciales).map((item) => (
           <li>
             <a href={postUrl(item)}>
-              <img src={item.data.imagen} alt="" width="72" height="54" loading="lazy" decoding="async" />
+              <img src={item.data.imagen} {...responsive(item.data.imagen, SIZES.thumb)} alt="" width="72" height="54" loading="lazy" decoding="async" />
               <span>
                 <small>{categoriaNombre(item.data.categoria)}</small>
                 {item.data.title}
