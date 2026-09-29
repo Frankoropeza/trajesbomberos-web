@@ -1,42 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_D: Record<string, Record<string, Duo>> = {
-  '/marcas/romak-fire/': {
-    errores: [
-      'Romak Fire se compra por modelo, operación y declaración publicada, no por el nombre de la marca. Confundir un traje de proximidad con uno estructural, o dar por certificado un modelo que solo se declara, como Maverick II o Fire Ranger Explorer, compromete el anexo técnico y la selección.',
-      'Incluye modelo, código, talla, capa y norma declarada en la solicitud. Con la tarea, cantidad y configuración por WhatsApp se prepara una cotización con partidas rastreables, útil para comparar Romak Fire Protector, Fire Ranger o Combate Básico sin mezclar su alcance.',
-    ],
-    faq: [
-      'Romak Fire aclara qué modelo corresponde a estructural, brigada, forestal o aproximación, y cuál es su estatus normativo. Protector, Profesional, Defender, Vantage y Mark One MPX-8 se publican con certificación UL; Maverick II y los Fire Ranger, como declarados; Combate Básico, por materiales, y BOMW1002, sin norma.',
-      'Envía por WhatsApp operación, modelo de interés, tallas y cantidad para cotejar código, materiales y accesorios. Esa información permite pedir documentación por partida y evita que una foto o una familia de producto sustituya la configuración que necesita tu requisición.',
-    ],
-    ficha: [
-      'Romak Fire se especifica por código, familia de uso, talla y materiales o barreras indicados en cada modelo. Mark One MPX-8 usa BOM1046, Nor-Fab MPX-8 aluminizada, Omni Synergy y Stedair 3000; Combate Básico BOM1001 declara Nomex IIIA y Neo-Guard.',
-      'La norma y el estatus se transcriben exactamente desde la ficha del modelo, sin generalizarlos a la marca. Pide por escrito la ficha técnica de cada partida y confirma composición, accesorios y documentación antes de comparar ofertas o recibir el suministro.',
-    ],
-    marca: [
-      'Romak Fire publica Protector, Profesional, Defender, Vantage, Maverick II, Combate Básico, Fire Ranger Explorer, Fire Ranger Scout, BOMW1002 y Mark One MPX-8. Protector, Profesional, Defender y Vantage se publican con certificación UL para estructural, y Mark One MPX-8 para proximidad; el resto se revisa por el estatus de su ficha.',
-      'Selecciona el modelo a partir de la operación y solicita código, talla, capas y declaración correspondiente. Una cotización por partidas permite conservar la diferencia entre certificado UL, declarado, materiales o sin norma, en vez de atribuir a toda la marca una condición que no publica.',
-    ],
-  },
-  '/marcas/skold/': {
-    errores: [
-      'Sköld no se debe pedir solo por la prenda: Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender tienen exterior, accesorios y estatus distintos. También es riesgoso llamar certificado a un modelo equivalente; ese término solo corresponde a la certificación UL que declara Hero Nomex IIIA.',
-      'Anota modelo, exterior elegido, talla, radio, DRD y documentos requeridos antes de cotizar. Por WhatsApp comparte la tarea y configuración para que la partida mantenga claro si el fabricante publica certificado UL, equivalente u otra declaración de la ficha.',
-    ],
-    faq: [
-      'Sköld responde dudas sobre el exterior de Hero Nomex IIIA y el estatus de sus modelos. Hero Nomex IIIA permite cinco opciones de exterior y declara certificación UL MH60435; Hero PBI MAX se publica como equivalente, por lo que sus documentos no se expresan igual.',
-      'Para cotizar, envía por WhatsApp actividad, tallas, configuración de radio o lámpara y exterior deseado. Así se confirma con precisión qué debe llevar la orden y qué documento aplica, incluido el uso de SköldTracker para fichas, mantenimiento y caducidad cuando corresponda.',
-    ],
-    ficha: [
-      'Sköld se requisita con modelo, talla, exterior y configuración. Hero PBI MAX declara PBI MAX, cuello escudo 360°, DRD y estatus equivalente; Hero Nomex IIIA identifica certificación UL MH60435 y opciones Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750.',
-      'No basta escribir el nombre comercial: puño Kevlar, refuerzos Stedshield, tirantes, radio y accesorios deben quedar en la partida. Pide la ficha técnica y declaración por escrito para que el estatus publicado de cada modelo acompañe la recepción y la licitación.',
-    ],
-    marca: [
-      'Sköld publica Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender. Hero Nomex IIIA declara certificación UL MH60435 para NFPA 1971 ed. 2018; Hero PBI MAX se presenta como equivalente y Brigadista Defender como equivalente con referencias NFPA 1971 ed. 1991 y NOM-002-STPS-2010.',
-      'Define exterior, accesorios y operación antes de solicitar partidas. El estatus normativo se conserva tal como lo publica cada ficha, de modo que compras puede distinguir una certificación UL de una equivalencia y pedir el documento aplicable a la configuración elegida.',
-    ],
-  },
   '/trajes/aproximacion/capucha/': {
     aplicaciones: [
       'Capucha aluminizada con visor dorado protege cara y cuello en ARFF, colada y fundición, hornos, vidrio y maniobras petroquímicas con radiación frontal. Quien especifica la pieza debe definir exposición, tiempo, casco y si existe equipo de respiración que deba conservar compatibilidad.',

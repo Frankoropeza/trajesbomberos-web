@@ -27,7 +27,7 @@ const tipo = entry as Tipo;
 const modelo = entry as Modelo;
 const nombre = isTipo ? tipo.nombre : `${modelo.marca} ${modelo.nombre}`;
 // Nombre en minúscula para títulos de sección del tipo («Dudas sobre casco forestal»).
-// Las fichas de marca (/marcas/<marca>/) conservan su nombre propio y su maquetación anterior.
+// Las fichas de marca (/marcas/<marca>/) conservan su nombre propio en los títulos de sección.
 const esMarca = seccion.slug === 'marcas';
 const nombreFrase = isTipo && !esMarca ? tipo.nombreCard.replace(/^([A-ZÁÉÍÓÚÑ])(?=[a-záéíóúñ])/, (l) => l.toLowerCase()) : nombre;
 // Uso recomendado por familia de traje (ficha técnica estandarizada, AEO 2026-09-29, 2.1).
@@ -52,7 +52,8 @@ const rows = isTipo ? (tipo.especificacion ?? []) : [
 const image = isTipo ? tipo.imagen : modelo.imagen;
 const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
 const related = !isTipo ? (modelo.familia ? modelosDeFamilia(modelo.familia).filter((item) => item.id !== modelo.id) : modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : []) : [];
-const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre) : [];
+// Ficha de marca: primero los trajes, después los complementos.
+const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre).sort((a, b) => Number(b.seccion === 'trajes') - Number(a.seccion === 'trajes')) : [];
 // Modelos publicados de este tipo (enlazado tipo → modelo; auditoría 2026-09-29, E2)
 const modelosTipo = isTipo && seccion.slug !== 'marcas' ? modelosDeTipo(tipo.slug) : [];
 const listaModelos = modelosTipo.map((item) => `${item.marca} ${item.nombre}`);
@@ -135,7 +136,7 @@ const metaRuta = metaSeo(path);
 // FAQ extra por ruta (preguntas de la SERP, Ahrefs) antes de las FAQ de los datos.
 const faqsFicha = [...(metaRuta?.faqsExtra ?? []), ...((isTipo ? tipo.faq : modelo.faq) ?? [])];
 if (metaRuta?.h1) { h1Ficha = metaRuta.h1; h1Accent = undefined; }
-const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
+const eyebrowFicha = isTipo ? (esMarca ? 'Marca de equipo para bombero' : `Tipo · ${seccion.nombre}`) : `Modelo · ${modelo.marca}`;
 const copy: Bloque[] = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: undefined }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 const waFicha = `Hola, quiero la ficha técnica de ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
@@ -169,7 +170,7 @@ const menuFicha = [
   { label: 'A fondo', href: '#a-fondo' },
   ...(bloqueElegir ? [{ label: 'Cómo elegir', href: `#${bloqueElegir.id}` }] : []),
   { label: 'Especificación', href: '#ficha' },
-  ...(modelosTipo.length > 0 ? [{ label: 'Modelos', href: '#modelos' }] : []),
+  ...(modelosTipo.length > 0 || modelosMarca.length > 0 ? [{ label: 'Modelos', href: '#modelos' }] : []),
   { label: 'Preguntas frecuentes', href: '#faq' },
 ];
 ---
@@ -202,18 +203,18 @@ const menuFicha = [
     </div></div>
   )}
   <div class="section"><div class="container layout"><main>
-    <section class="block first" id="a-fondo"><div class:list={['detail', { 'detail--solo': !isTipo }]}>
+    {isTipo && !image ? <section class="block first" id="a-fondo"><SectionHeading eyebrow={copy[0]?.eyebrow ?? 'Qué es'} title={copy[0]?.h2 ?? nombre} duo={copy[0]?.parrafos} />{copy[0]?.lista && <ul class="checks">{copy[0].lista.map((item) => <li>{item}</li>)}</ul>}</section> : <section class="block first" id="a-fondo"><div class:list={['detail', { 'detail--solo': !isTipo }]}>
       <div class="copy"><p class="eyebrow">{copy[0]?.eyebrow ?? (isTipo ? 'Qué es' : 'Modelo y configuración')}</p>{copy.slice(0, 1).map((block) => <><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</>)}</div>
       {isTipo && image && <div class="gallery"><figure><img src={image.src} {...responsive(image.src, SIZES.half)} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} />{image.origen === 'proveedor' ? <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption> : <figcaption>{seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.'}</figcaption>}</figure>{extras.map((extra) => <figure><img src={extra.src} {...responsive(extra.src, SIZES.tile)} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" /><figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption></figure>)}</div>}
-    </div>{esMarca && copy.slice(1).map((block) => <div class="prose"><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</div>)}</section>
-    {!esMarca && copy.slice(1).map((block) => <section class="block" id={block.id}><SectionHeading eyebrow={block.eyebrow ?? 'Cómo elegir'} title={block.h2} duo={block.parrafos} />{block.lista && <ul class="checks">{block.lista.map((item) => <li>{item}</li>)}</ul>}</section>)}
-    <section class="block" id="ficha"><SectionHeading clave="ficha" duo={duosTipo.ficha} eyebrow="Ficha técnica" title={isTipo ? (esMarca ? 'Datos para tu requisición' : `Datos para requisitar ${nombreFrase}`) : `Ficha técnica de ${nombre}`} /><SpecTable grupos={[{ grupo: isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}:</strong> {norma.alcance}</p>)}</section>
+    </div></section>}
+    {copy.slice(1).map((block) => <section class="block" id={block.id}><SectionHeading eyebrow={block.eyebrow ?? 'Cómo elegir'} title={block.h2} duo={block.parrafos} />{block.lista && <ul class="checks">{block.lista.map((item) => <li>{item}</li>)}</ul>}</section>)}
+    <section class="block" id="ficha"><SectionHeading clave="ficha" duo={duosTipo.ficha} eyebrow="Ficha técnica" title={isTipo ? (esMarca ? `Ficha de la marca ${nombre}` : `Datos para requisitar ${nombreFrase}`) : `Ficha técnica de ${nombre}`} /><SpecTable grupos={[{ grupo: esMarca ? 'Marca' : isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}:</strong> {norma.alcance}</p>)}</section>
     {!isTipo && <section class="block"><SectionHeading clave="caracteristicas" duo={duosTipo.caracteristicas} eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="checks">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
-    {isTipo && tipo.errores && <section class="block"><SectionHeading clave="errores" duo={duosTipo.errores} eyebrow="Antes de comprar" title={esMarca ? 'Errores que conviene evitar' : `Errores al comprar ${nombreFrase}`} /><ul class:list={[esMarca ? 'features' : 'checks']}>{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
+    {isTipo && tipo.errores && <section class="block"><SectionHeading clave="errores" duo={duosTipo.errores} eyebrow="Antes de comprar" title={`Errores al comprar ${nombreFrase}`} /><ul class="checks">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
     {!isTipo && seccion.slug !== 'trajes' && <p class="text">{modelo.notaCompra ?? <><strong>Antes de ordenar:</strong> revisa la guía de compra de <a href={`/${seccion.slug}/#elegir`}>{seccion.nombre.toLowerCase()}</a> para que la cotización llegue completa.</>}</p>}
     {related.length > 0 && <section class="block"><SectionHeading clave="otros" duo={duosTipo.otros} eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title={`Alternativas a ${nombre}`} /><ModelosGrid modelos={related} cols={3} /></section>}
     {familiaModelo && <section class="block" id="conjunto"><CompletaElConjunto familia={familiaModelo.slug} titulo={`Completa el conjunto con ${nombre}`} /></section>}
-    {modelosMarca.length > 0 && <section class="block"><SectionHeading clave="marca" eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
+    {modelosMarca.length > 0 && <section class="block" id="modelos"><SectionHeading clave="marca" duo={duosTipo.marca} eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} en nuestro catálogo`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
     {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${nombreFrase} que surtimos`} duo={duosTipo.modelos ?? duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
     {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" duo={duosTipo.kit} eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><strong>{item.rol}:</strong> <a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading clave="faq" duo={duosTipo.faq} eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombreFrase}`} /><FAQWithContact items={faqsFicha} /></section>

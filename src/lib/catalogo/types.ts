@@ -47,7 +47,7 @@ export interface Tipo {
   chips?: string[];
   resumen?: string[];
   /** Dúos (dos párrafos a la derecha del título) de los módulos de la ficha de tipo. */
-  duos?: Partial<Record<'ficha' | 'errores' | 'modelos' | 'kit' | 'faq', [string, string]>>;
+  duos?: Partial<Record<'ficha' | 'errores' | 'modelos' | 'kit' | 'marca' | 'faq', [string, string]>>;
 }
 
 export interface Modelo {
