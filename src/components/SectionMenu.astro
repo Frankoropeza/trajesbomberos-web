@@ -10,7 +10,7 @@ interface Props {
 }
 const { items = NAV.map((n) => ({ label: n.label, href: n.href })) } = Astro.props;
 ---
-<nav class="section-menu" aria-label="Secciones del sitio">
+<nav class="section-menu" aria-label="Navegación de página">
   <div class="container section-menu__inner">
     <ul class="section-menu__list">
       {items.map((item) => (

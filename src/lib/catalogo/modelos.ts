@@ -1,4 +1,11 @@
-import type { Modelo } from './types';
+import { MODELOS } from './data';
+
+export { MODELOS };
+export const modelosDeSeccion = (seccion: string) => MODELOS.filter((modelo) => modelo.seccion === seccion);
+export const modelosDeTipo = (tipo: string) => MODELOS.filter((modelo) => modelo.tipo === tipo);
+export const modelosDeFamilia = (familia: string) => MODELOS.filter((modelo) => modelo.familia === familia);
+
+/* Datos trasladados a data/cascos.ts.
 
 const proveedor = (src: string, alt: string, credito: string) => ({ src, alt, width: 1000, height: 1250, origen: 'proveedor' as const, credito });
 
@@ -11,4 +18,4 @@ export const MODELOS: Modelo[] = [
 
 export const modelosDeSeccion = (seccion: string) => MODELOS.filter((modelo) => modelo.seccion === seccion);
 export const modelosDeTipo = (tipo: string) => MODELOS.filter((modelo) => modelo.tipo === tipo);
-export const modelosDeFamilia = (familia: string) => MODELOS.filter((modelo) => modelo.familia === familia);
+*/

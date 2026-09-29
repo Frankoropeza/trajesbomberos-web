@@ -1,10 +1,17 @@
 ---
 import type { GetStaticPaths } from 'astro';
+import ModeloFicha from '@components/ModeloFicha.astro';
 import { MODELOS, modelosDeFamilia } from '@lib/catalogo/modelos';
+import { FAMILIAS } from '@lib/familias';
+import { heroDeFamilia } from '@lib/imagenes';
+import type { Seccion } from '@lib/catalogo/types';
 
 export const getStaticPaths = (() => MODELOS.filter((modelo) => modelo.familia).map((modelo) => ({ params: { familia: modelo.familia!, modelo: modelo.id } }))) satisfies GetStaticPaths;
-const { familia, modelo } = Astro.params;
-const entry = modelosDeFamilia(familia!).find((item) => item.id === modelo);
-if (!entry) throw new Error('Modelo no encontrado');
+const { familia: familiaSlug, modelo: modeloId } = Astro.params;
+const familia = FAMILIAS.find((item) => item.slug === familiaSlug);
+const entry = modelosDeFamilia(familiaSlug!).find((item) => item.id === modeloId);
+if (!familia || !entry) throw new Error('Modelo no encontrado');
+const seccion: Seccion = { slug: 'trajes', nombre: 'Trajes', h1: 'Trajes para bombero', title: 'Trajes para bombero', description: 'Trajes para bombero', eyebrow: 'Trajes', lead: '', intro: [], faq: [] };
+const path = `/trajes/${familia.slug}/modelos/${entry.id}/`;
 ---
-<meta http-equiv="refresh" content={`0; url=/trajes/${familia}/`} />
+<ModeloFicha {seccion} entry={entry} kind="modelo" {path} parent={[{ name: 'Trajes', href: '/trajes/' }, { name: familia.nombreWa, href: `/trajes/${familia.slug}/` }]} heroImage={heroDeFamilia(familia.slug)} />

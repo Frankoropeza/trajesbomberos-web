@@ -1,0 +1,51 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import SpecTable from '@components/SpecTable.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import CTABanner from '@components/CTABanner.astro';
+import NormaBadge from '@components/NormaBadge.astro';
+import { tiposDeSeccion } from '@lib/catalogo/tipos';
+import { modelosDeSeccion, modelosDeTipo } from '@lib/catalogo/modelos';
+import type { Modelo, Seccion, Tipo } from '@lib/catalogo/types';
+import { waUrl } from '@lib/wa';
+
+interface Props { seccion: Seccion; entry: Tipo | Modelo; kind: 'tipo' | 'modelo'; path: string; parent?: { name: string; href: string } | { name: string; href: string }[]; heroImage?: { src: string; alt: string }; }
+const { seccion, entry, kind, path, parent, heroImage = seccion.hero } = Astro.props;
+const isTipo = kind === 'tipo';
+const tipo = entry as Tipo;
+const modelo = entry as Modelo;
+const nombre = isTipo ? tipo.nombre : `${modelo.marca} ${modelo.nombre}`;
+const rows = isTipo ? (tipo.especificacion ?? []) : [
+  { campo: 'Marca', valor: modelo.marca }, { campo: 'Fabricante', valor: modelo.fabricante },
+  ...(modelo.codigo ? [{ campo: 'Código', valor: modelo.codigo }] : []), ...(modelo.codigoNota ? [{ campo: 'Código', valor: modelo.codigoNota }] : []),
+  ...(modelo.tipo ? [{ campo: 'Tipo', valor: tiposDeSeccion(seccion.slug).find((item) => item.slug === modelo.tipo)?.nombre ?? modelo.tipo }] : []),
+  ...(modelo.material || modelo.capaExterior ? [{ campo: 'Material / capa exterior', valor: modelo.material ?? modelo.capaExterior! }] : []), ...(modelo.barreras ? [{ campo: 'Barreras', valor: modelo.barreras }] : []),
+  ...(modelo.colores ? [{ campo: 'Colores', valor: modelo.colores }] : []), ...(modelo.tallas ? [{ campo: 'Tallas', valor: modelo.tallas }] : []), ...(modelo.peso ? [{ campo: 'Peso', valor: modelo.peso }] : []),
+  ...(modelo.norma ? [{ campo: 'Norma declarada', valor: modelo.norma }] : []), { campo: 'Estatus', valor: modelo.estatusNorma === 'declarado' ? 'Declarado por el fabricante' : modelo.estatusNorma }, ...(modelo.certificacion ? [{ campo: 'Certificación', valor: modelo.certificacion }] : [])
+];
+const image = isTipo ? tipo.imagen : modelo.imagen;
+const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
+const related = !isTipo && modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : [];
+const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
+const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
+---
+<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : `${nombre} | ${seccion.nombre} | México`} description={isTipo ? tipo.description : `${nombre}: especificación, configuración y cotización por WhatsApp.`} crumbLabel={nombre} parent={parent ?? { name: seccion.nombre, href: `/${seccion.slug}/` }} eyebrow={isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${seccion.nombre}`} h1={nombre} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : (modelo.resumen ? modelo.resumen.slice(1) : [])} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : modelo.descripcion[0], image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas', href: '#faq' }]}>
+  {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
+  <div class="section"><div class="container layout"><main>
+    <section class="block first" id="a-fondo"><div class="detail">
+      <div class="copy"><p class="eyebrow">{isTipo ? 'Qué es' : 'Modelo y configuración'}</p>{copy.slice(0, 1).map((block) => <><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</>)}</div>
+      {image && <div class="gallery"><figure><img src={image.src} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} />{image.origen === 'proveedor' ? <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption> : <figcaption>{seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.'}</figcaption>}</figure>{extras.map((extra) => <figure><img src={extra.src} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" /><figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption></figure>)}</div>}
+    </div>{copy.slice(1).map((block) => <div class="prose"><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</div>)}</section>
+    <section class="block" id="ficha"><SectionHeading eyebrow="Ficha técnica" title={isTipo ? 'Datos para tu requisición' : 'Especificación disponible'} /><SpecTable grupos={[{ grupo: isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}</strong> — {norma.alcance}</p>)}</section>
+    {!isTipo && <section class="block"><SectionHeading eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="features">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
+    {isTipo && tipo.errores && <section class="block"><SectionHeading eyebrow="Antes de comprar" title="Errores que conviene evitar" /><ul class="features">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
+    {!isTipo && seccion.checklistCompra && <section class="block"><SectionHeading eyebrow="Antes de ordenar" title={seccion.checklistCompra.titulo} />{seccion.checklistCompra.parrafos.map((paragraph) => <p class="text">{paragraph}</p>)}</section>}
+    {related.length > 0 && <section class="block"><SectionHeading eyebrow="Mismo tipo" title="Otros modelos disponibles" /><div class="cards">{related.map((item) => <a href={`/${seccion.slug}/${item.id}/`}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
+    <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
+  </main><aside><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>Ver catálogo</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosDeSeccion(seccion.slug).map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={`/${seccion.slug}/${item.id}/`}>{item.marca} {item.nombre}</a>)}</nav></aside></div></div>
+  <CTABanner variant="dark" title={`Cotiza ${nombre}`} text="Indica operación, número de elementos y accesorios para confirmar por escrito la configuración." buttons={[{ label: 'Cotizar por WhatsApp', href: waUrl(waMessage), icon: 'wa', primary: true, external: true }, { label: `Volver a ${seccion.nombre.toLowerCase()}`, href: `/${seccion.slug}/`, icon: 'catalog' }]} />
+</PageLayout>
+<style>
+ .layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:clamp(2rem,4vw,4rem)}.block{padding-block:2.8rem;border-top:var(--border)}.first{padding-top:0;border-top:0}.detail{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:2rem}.copy p,.prose p,.text{color:var(--color-gray);line-height:1.72}.copy li,.prose li,.features li{color:var(--color-gray);line-height:1.6;margin-block:.55rem}.eyebrow,.side-title{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:var(--tracking-wide);color:var(--color-primary)}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;align-content:start}.gallery figure:first-child{grid-column:1/-1}.gallery figure+figure figcaption{display:none}.gallery figure+figure img{aspect-ratio:1/1;border:var(--border)}.gallery figure{margin:0}.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--color-light);border-radius:var(--radius)}figcaption,.norma{font-size:.8rem;color:var(--color-gray);line-height:1.45}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.cards a{border:var(--border);border-radius:var(--radius);overflow:hidden;color:var(--color-dark);text-decoration:none;padding-bottom:1rem}.cards img{width:100%;aspect-ratio:4/3;object-fit:cover}.cards h2,.cards .norma-badge{margin-inline:1rem}.cards h2{font-size:1rem}aside{position:sticky;top:calc(var(--header-height) + 1rem);height:max-content}aside nav{display:grid;border-top:var(--border)}aside a{padding:.6rem .7rem;color:var(--color-dark);text-decoration:none;border-bottom:var(--border);font-size:.88rem}aside a.active{border-left:3px solid var(--color-primary);color:var(--color-primary);font-weight:800;background:var(--color-primary-light)}.layout>*,.detail>*,.gallery,.gallery figure{min-width:0}.gallery img,.cards img{max-width:100%;height:auto}@media(max-width:900px){.layout{grid-template-columns:1fr}.detail{grid-template-columns:1fr}.gallery{order:-1}.cards{grid-template-columns:1fr}aside{position:static;order:2}}
+</style>

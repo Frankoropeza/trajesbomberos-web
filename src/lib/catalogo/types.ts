@@ -29,6 +29,8 @@ export interface Seccion {
   grupos?: { titulo: string; tipos: string[] }[];
   faq: { q: string; a: string }[];
   hero?: HeroImage;
+  checklistCompra?: { titulo: string; parrafos: string[] };
+  leyendaImagenIlustrativa?: string;
 }
 
 export interface Tipo {
@@ -46,6 +48,8 @@ export interface Tipo {
   faq: { q: string; a: string }[];
   imagen?: Imagen;
   relacionados?: string[];
+  chips?: string[];
+  resumen?: string[];
 }
 
 export interface Modelo {
@@ -59,7 +63,9 @@ export interface Modelo {
   codigo?: string;
   codigoNota?: string;
   capaExterior?: string;
+  material?: string;
   barreras?: string;
+  colores?: string;
   norma?: string;
   estatusNorma: 'certificado-ul' | 'declarado' | 'equivalente' | 'materiales' | 'niosh' | 'sin-norma' | 'no-aplica';
   certificacion?: string;
@@ -70,4 +76,6 @@ export interface Modelo {
   faq: { q: string; a: string }[];
   imagen?: Imagen;
   imagenesExtra?: Imagen[];
+  chips?: string[];
+  resumen?: string[];
 }

@@ -12,7 +12,6 @@ export const getStaticPaths = (() => {
   const reserved = new Set(['trajes', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
   return SECCIONES
   .filter((seccion) => !reserved.has(seccion.slug))
-  .filter((seccion) => tiposDeSeccion(seccion.slug).length > 0 || modelosDeSeccion(seccion.slug).length > 0)
   .map((seccion) => ({ params: { seccion: seccion.slug }, props: { seccion } }));
 }) satisfies GetStaticPaths;
 

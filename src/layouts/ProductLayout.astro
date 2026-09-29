@@ -13,11 +13,13 @@ import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
 import CompletaElConjunto from '@components/CompletaElConjunto.astro';
+import NormaBadge from '@components/NormaBadge.astro';
 import { PRODUCT_CATEGORIES, WA_MESSAGES, COMPLEMENTOS } from '@config/site';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import type { FamiliaDetalle } from '@lib/familias';
 import { heroDeFamilia } from '@lib/imagenes';
+import { modelosDeFamilia } from '@lib/catalogo/modelos';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -25,6 +27,7 @@ interface Props {
 const { familia: f } = Astro.props;
 
 const path = `/trajes/${f.slug}/`;
+const modelos = modelosDeFamilia(f.slug);
 // Se muestran las 6 familias: la actual va marcada como "estás aquí"
 // (sin enlace) para que la retícula quede en dos filas exactas de 3.
 
@@ -155,6 +158,21 @@ const pageIndex = [
           </section>
         )}
 
+        {modelos.length > 0 && (
+          <section id="modelos" class="block">
+            <SectionHeading eyebrow="Modelos" title="Modelos disponibles" description="Consulta la ficha de cada modelo antes de integrarlo a la partida." />
+            <div class="piezas-grid">
+              {modelos.map((modelo) => (
+                <a class="modelo-card" href={`/trajes/${f.slug}/modelos/${modelo.id}/`}>
+                  <img src={modelo.imagen?.src} alt={modelo.imagen?.alt} width={modelo.imagen?.width} height={modelo.imagen?.height} loading="lazy" />
+                  <p>{modelo.marca}</p><h3>{modelo.nombre}</h3>
+                  <NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} />
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
         <!-- 5 · FAQ de la familia -->
         <section id="faq" class="block">
           <SectionHeading
@@ -225,6 +243,11 @@ const pageIndex = [
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-grid);
   }
+  .modelo-card { display: block; overflow: hidden; padding-bottom: 1rem; border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; }
+  .modelo-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--color-light); }
+  .modelo-card p, .modelo-card h3, .modelo-card .norma-badge { margin-inline: 1rem; }
+  .modelo-card p { margin-top: 1rem; margin-bottom: .2rem; color: var(--color-gray); font-size: .78rem; font-weight: 800; text-transform: uppercase; }
+  .modelo-card h3 { margin-top: 0; margin-bottom: 0; font-size: 1rem; }
 
   .pedir {
     display: grid;
