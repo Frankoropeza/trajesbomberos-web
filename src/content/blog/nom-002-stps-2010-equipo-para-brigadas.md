@@ -84,7 +84,7 @@ No establezcas este tipo de intervención por costumbre ni por la tardanza de ap
 
 La NOM-017-STPS-2008 aporta el criterio de selección de EPP desde el riesgo. En la práctica, la empresa debe identificar qué amenaza enfrenta cada puesto y entregar equipo adecuado sin costo, con información para su uso, revisión y reemplazo. Un inventario sin tallas ni responsables no demuestra que el usuario tenga una protección funcional.
 
-Para protección de cabeza, la NOM-115-STPS-2009 es una referencia de seguridad industrial que se revisa junto con la tarea. Para ojos y cara, el riesgo puede ser de partículas, salpicadura, calor o radiación, y por eso visor, goggles o lentes se definen desde la exposición. El [catálogo de cascos](/cascos/) sirve para explorar configuraciones, pero no elimina la necesidad de revisar compatibilidad con capucha, máscara o protección ocular.
+Para protección de cabeza, la NOM-115-STPS-2009 es una referencia de seguridad industrial que se revisa junto con la tarea. Para ojos y cara, el riesgo puede ser de partículas, salpicadura, calor o radiación, y por eso visor, goggles o lentes se definen desde la exposición. La sección de [cascos para bombero](/cascos/) sirve para explorar configuraciones, pero no elimina la necesidad de revisar compatibilidad con capucha, máscara o protección ocular.
 
 ## Capacitación, simulacros y condición del equipo
 
