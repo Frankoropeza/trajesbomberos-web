@@ -1,40 +1,399 @@
-import type { Seccion, Tipo } from '../types';
+// Datos del catálogo · sección «marcas» (trajesbomberos.com).
+// LITERAL PURO: sin funciones, sin mutaciones, sin plantillas. Se edita solo el texto;
+// `astro check` valida la estructura contra ../types. Generado por scripts/emit_data.py
+// (2026-09-29) a partir del contenido vigente; desde aquí se edita a mano o con Codex.
+import type { Modelo, Seccion, Tipo } from '../types';
 
-const faqs = (items: [string, string][]) => items.map(([q, a]) => ({ q, a }));
-
-const tipos: Tipo[] = [
-  {
-    slug: 'romak-fire', seccion: 'marcas', nombre: 'Romak Fire', nombreCard: 'Romak Fire', title: 'Romak Fire: trajes y equipo para bombero | México', description: 'Romak Fire: líneas de trajes y equipo para bombero; consulta modelos, configuraciones y declaraciones disponibles para cotizar en México.', lead: 'Romak Fire reúne líneas para protección de bomberos y brigadas; los modelos se comparan por operación, materiales y documentación declarada.', chips: ['Traje estructural', 'Proximidad', 'Brigada y forestal', 'Configuración por modelo'],
-    resumen: ['Romak Fire reúne líneas de protección para bomberos y brigadas que se seleccionan por operación, corte, talla y componentes con los que se integrarán. El nombre de la línea orienta la búsqueda, pero la decisión se cierra al identificar el modelo y la configuración que requiere cada usuario.', 'Las declaraciones UL, referencias de fabricación y materiales se revisan donde correspondan al producto. La cotización debe conservar esa separación: una referencia de una línea o configuración no se transfiere automáticamente a todo el portafolio ni a una partida modificada.'],
-    bloques: [
-      { h2: 'Líneas Romak Fire para cotizar', parrafos: ['Romak Fire fabrica las líneas Protector, Profesional, Defender, Vantage, Maverick II, Mark One, Fire Ranger y Combate Básico. La selección comienza por la operación: combate estructural, aproximación, brigada o trabajo forestal no piden el mismo conjunto. Cada modelo debe revisarse con sus piezas, talla, configuración y el equipo que ya opera la corporación.', 'Sus fichas declaran certificaciones UL para líneas estructurales bajo MH14790 y para proximidad bajo MH48840. También muestran fabricación bajo ISO 9001:2015 y materiales de origen estadounidense. Estas referencias se conservan como declaraciones del fabricante para los modelos que las indiquen; solicita la declaración de conformidad correspondiente con la cotización.'] },
-      { h2: 'Cómo relacionar la línea con la operación', parrafos: ['Una línea comercial no sustituye la definición de riesgo. Quien compra debe establecer si el personal realizará combate estructural, labores de brigada, aproximación o actividad forestal, y si habrá necesidades de protección respiratoria. Esa descripción permite revisar el modelo apropiado sin usar un nombre de familia como una especificación completa.', 'También importa el resto del conjunto. Un traje se prueba con casco, capucha, guantes, botas y, cuando aplica, máscara y arnés de ERA. La operación real revela si el corte conserva cobertura y movilidad; por eso la comparación no se limita a color, tela exterior o fotografía.'] },
-      { h2: 'Cómo elegir configuración y talla', parrafos: ['La cotización debe separar chaquetón, pantalonera, overol u otros componentes según el modelo elegido. Se indican talla, color, accesorios, identificación y cantidades para cada usuario. Dejar esos datos abiertos hasta la entrega suele producir una partida que no puede revisarse contra una requisición técnica clara.', 'Antes de ordenar, se prueban los movimientos que exige la tarea. Agacharse, levantar brazos, usar herramienta, caminar y mirar hacia arriba muestran si casco, cuello, puños y botas mantienen su posición. Si se reemplaza un artículo o se cambia un accesorio, la prueba se repite para la configuración final.'] },
-      { h2: 'Interfaz con casco, guantes y ERA', parrafos: ['La prenda funciona dentro de una interfaz: capucha y cuello cubren la transición de cabeza; manga y guante deben seguir unidos; pantalonera y bota no deben abrirse al flexionar. En una operación que requiera ERA, la máscara, la capucha y el casco se verifican físicamente para evitar interferencia con el sello o con el campo visual.', 'Usar piezas de una misma marca no elimina esa revisión. Diferencias de talla, accesorios o modelo cambian la relación entre los componentes. La cotización más útil es la que identifica esas decisiones antes de la compra y conserva el registro de la configuración aprobada.'] },
-      { h2: 'Errores al comparar propuestas', parrafos: ['El primer error es comparar solamente por nombre de línea o por precio sin pedir modelo, componentes y declaración aplicable. Otro es tratar el sello ISO 9001:2015 como una certificación de desempeño de cada prenda; se refiere a la gestión declarada, no sustituye la revisión de una configuración concreta.', 'También conviene evitar extrapolar MH14790 o MH48840 a un producto que no lo declara. La documentación debe acompañar el modelo solicitado. Si una oferta sustituye un componente, se confirma su código, alcance y compatibilidad en lugar de asumir equivalencia por la marca.'] },
-      { h2: 'Inspección y cuidado del conjunto', parrafos: ['La entrega se revisa por usuario: talla, costuras, cierres, refuerzos, cintas, accesorios e identificación deben coincidir con la orden. Este control inicial detecta diferencias antes de que el equipo entre en rotación. Registrar modelo, talla, fecha de fabricación cuando exista y responsable facilita las revisiones posteriores.', 'Limpieza, inspección después de exposición y retiro se realizan conforme a las instrucciones del fabricante de cada componente. Una prenda no debe guardarse con contaminación o daño sin evaluar. La condición, la exposición y el programa de cuidado determinan cuándo se repara o reemplaza una pieza.'] },
-      { h2: 'Vida útil y reposición', parrafos: ['La reposición no se resuelve copiando una descripción corta de una compra anterior. Se revisa qué pieza se retira, cuál es su talla, qué accesorios llevaba y cómo se relaciona con las demás. Este proceso reduce el riesgo de que una sustitución modifique cobertura, ajuste o documentación de la partida.', 'Cuando una corporación conserva un inventario por usuario, puede planear reemplazos sin mezclar cortes, colores o configuraciones. La vida de servicio depende de las instrucciones aplicables, condición y exposición; una revisión documentada permite tomar decisiones de retiro sin afirmar una duración no declarada para el modelo.'] }
-    ], especificacion: [{ campo: 'Fabricante', valor: 'Romak Fire' }, { campo: 'Líneas', valor: 'Protector, Profesional, Defender, Vantage, Maverick II, Mark One, Fire Ranger y Combate Básico' }, { campo: 'Declaraciones', valor: 'UL MH14790 estructural y MH48840 proximidad, cuando corresponda al modelo' }, { campo: 'Gestión declarada', valor: 'ISO 9001:2015' }, { campo: 'Selección', valor: 'Modelo, talla y configuración definidos por operación' }], normas: [{ norma: 'UL MH14790 / MH48840', alcance: 'Referencias declaradas por el fabricante para líneas y configuraciones que las indiquen.' }, { norma: 'ISO 9001:2015', alcance: 'Referencia de fabricación declarada; no sustituye la documentación del producto.' }], errores: ['Suponer que una línea aplica a cualquier operación', 'Tomar una declaración de un modelo como válida para otro', 'Confundir gestión de calidad con certificación de desempeño', 'Omitir talla, código y configuración', 'No probar la interfaz con el resto del EPP', 'Reponer una pieza sin revisar compatibilidad'], faq: faqs([['¿Romak Fire maneja equipo forestal?', 'La línea Fire Ranger se considera para esa operación; revisa el modelo y configuración concretos.'], ['¿Las referencias UL aplican a toda la marca?', 'Se revisan por modelo y configuración declarados en la cotización.'], ['¿Qué debo indicar al cotizar?', 'Operación, modelos, tallas, color, accesorios, cantidades y los componentes que ya usa el personal.'], ['¿Puedo pedir sólo una pieza?', 'Sí; al reponerla conviene confirmar talla, código e interfaz con el conjunto que seguirá en servicio.'], ['¿Cómo reviso la entrega?', 'Comparando cada componente y accesorio contra la configuración aprobada antes de asignarlo.'], ['¿Qué hago tras una exposición?', 'Sigue el cuidado indicado para el componente, inspecciónalo y retíralo de servicio si su condición es incierta.']])
+export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
+  "seccion": {
+    "slug": "marcas",
+    "nombre": "Marcas",
+    "h1": "Marcas de equipo para bombero que manejamos",
+    "title": "Marcas de equipo para bombero | México",
+    "description": "Marcas de equipo para bombero: Romak Fire y Sköld, con prendas y componentes para configurar protección según cada operación en México.",
+    "eyebrow": "Catálogo de protección personal",
+    "lead": "Trabajamos con Romak Fire y Sköld, y cotizamos componentes para armar conjuntos que correspondan a la operación de cada comprador.",
+    "resumenHero": [
+      "Trabajamos con Romak Fire y Sköld para cuerpos de bomberos, brigadas y compradores institucionales que necesitan ubicar prendas y componentes por operación. Romak Fire reúne Protector, Profesional, Defender, Vantage y Mark One; Sköld publica Hero Nomex IIIA. La marca abre la búsqueda, mientras modelo, talla y configuración definen lo que recibe tu personal.",
+      "Cotizamos por modelo, código, talla, accesorios y documento aplicable, y también integramos Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA para ERA industrial cuando corresponde. Mándanos por WhatsApp tu operación y los componentes existentes; revisamos la interfaz y preparamos una partida identificable para tu pliego."
+    ],
+    "etiquetas": {
+      "menuTipos": "Consulta las marcas principales",
+      "tiposEyebrow": "Marcas con modelos publicados",
+      "tiposTitulo": "Ubica la línea y valida el producto concreto",
+      "tiposDescripcion": "Las páginas de marca reúnen familias y componentes; la selección se confirma en la ficha de cada modelo.",
+      "elegirTitulo": "Cómo comprar por marca sin perder precisión",
+      "elegirDescripcion": "Define operación, componentes, interfaz y documentos antes de cerrar una partida.",
+      "modelosTitulo": "Modelos relacionados en el catálogo",
+      "modelosDescripcion": "Las tarjetas llevan a la familia de producto donde se conserva su información técnica."
+    },
+    "intro": [
+      "Surtimos prendas y componentes por marca para cuerpos de bomberos, brigadas y compras institucionales. Romak Fire concentra Protector, Profesional, Defender, Vantage y Mark One; Sköld incluye Hero Nomex IIIA. También cotizamos Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA en ERA industrial. Elige la familia por la operación autorizada y el modelo por la configuración que usará tu brigada.",
+      "Comparamos el modelo concreto, su talla, código, accesorios y estatus documental. Por ejemplo, Romak Fire declara UL MH14790 para líneas estructurales cuando corresponde y UL MH48840 para Mark One; Sköld refiere UL MH60435 para Hero Nomex IIIA. No trasladamos esas referencias a otra configuración: en tu pliego anota el modelo y el documento que necesitas cotejar.",
+      "Armamos el conjunto con prenda, casco, capucha, guantes, botas y, cuando corresponde, ERA. Firemax VI GIS1008, CAP1005, Workman Fire BOT1004 y la barra Halligan HAC1007 son componentes Romak Fire publicados; casco, ERA o guante estructural pueden venir de Bullard, Sköld o Veridian. Mándanos qué usa tu personal y revisamos cuello, puño y máscara antes de cotizar.",
+      "Entregamos cada partida con modelo, código, talla y accesorios contra la requisición para que tu recepción los identifique por persona. Conserva la documentación que aplique al modelo, registra la condición inicial y separa cada configuración para inspección y reposición. Pídenos por WhatsApp la cotización con tus cantidades y confirmamos los renglones que debes recibir."
+    ],
+    "comparativa": {
+      "columnas": [
+        "Marca",
+        "Uso",
+        "Referencia o declaración",
+        "Material o forma",
+        "Ventaja",
+        "Límite"
+      ],
+      "filas": [
+        [
+          "Romak Fire",
+          "Protección estructural, proximidad, brigada y forestal según modelo",
+          "MH14790 estructural y MH48840 proximidad cuando corresponda",
+          "Líneas Protector, Profesional, Defender, Vantage y otras",
+          "Permite ubicar familias de prendas por operación",
+          "La declaración se revisa por modelo y configuración"
+        ],
+        [
+          "Sköld",
+          "Prendas, componentes y ERA según producto",
+          "UL MH60435 referido para Hero Nomex IIIA",
+          "Hero, Defender, Viking, Workman, escafandra y Phantöm",
+          "Integra opciones de prenda y componentes",
+          "No traslada el alcance de un modelo a otro"
+        ]
+      ]
+    },
+    "criterios": {
+      "titulo": "Cinco criterios para comprar por marca",
+      "items": [
+        {
+          "termino": "Operación",
+          "texto": "Define la tarea autorizada antes de comparar familias comerciales."
+        },
+        {
+          "termino": "Modelo",
+          "texto": "Identifica el artículo exacto, no sólo el nombre de la marca."
+        },
+        {
+          "termino": "Documento",
+          "texto": "Solicita la declaración aplicable a la configuración cotizada."
+        },
+        {
+          "termino": "Interfaz",
+          "texto": "Prueba casco, prenda, guante, bota y ERA si corresponde."
+        },
+        {
+          "termino": "Trazabilidad",
+          "texto": "Registra código, talla, accesorios y responsable de cada entrega."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "titulo": "Marcas principales",
+        "tipos": [
+          "romak-fire",
+          "skold"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Son distribuidores exclusivos?",
+        "a": "No declaramos exclusividad sobre Romak Fire ni Sköld; cotizamos la configuración que corresponda a tu operación. La ficha de Romak Fire distingue Protector, Profesional, Defender, Vantage y Mark One, mientras Sköld publica Hero Nomex IIIA. Mándanos por WhatsApp el modelo, tallas y accesorios de tu partida para confirmar disponibilidad documental."
+      },
+      {
+        "q": "¿Qué marcas de componentes cotizan?",
+        "a": "Cotizamos Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA para ERA industrial cuando forman parte de tu conjunto. Romak Fire aporta, entre otros, Firemax VI GIS1008 y Workman Fire BOT1004. Envíanos por WhatsApp casco, prenda o ERA que ya usa tu brigada y armamos los renglones compatibles para cotizar."
+      },
+      {
+        "q": "¿La misma marca garantiza compatibilidad?",
+        "a": "No; compartir fabricante no confirma la compatibilidad entre componentes. Un conjunto puede unir CAP1005, Firemax VI GIS1008, botas Workman Fire BOT1004 y un casco de otra marca, pero revisamos cuello, puño, talla y máscara con la operación autorizada. Pídenos una cotización con tu equipo actual y validamos cada interfaz."
+      },
+      {
+        "q": "¿Dónde veo cada ficha?",
+        "a": "Cada tarjeta de marca lleva a la familia original donde conservamos el modelo, sus materiales y el estatus que declara. Desde Romak Fire puedes ubicar Defender BOM1045 o Mark One BOM1046; la referencia UL MH14790 o MH48840 se consulta en la configuración correspondiente. Mándanos por WhatsApp el modelo que buscas y te dirigimos a su ficha."
+      },
+      {
+        "q": "¿Puedo pedir una configuración?",
+        "a": "Sí; cotizamos una configuración cuando nos indicas operación, modelo, tallas, accesorios y cantidades. Para Romak Fire podemos identificar Combate Básico BOM1001, Defender BOM1045 o Mark One BOM1046, además de capucha, guante y bota. Envíanos por WhatsApp tu pliego y el equipo que ya usa tu personal para integrar la partida."
+      },
+      {
+        "q": "¿Cómo se revisa la norma?",
+        "a": "Revisamos la norma por modelo y configuración, sin extenderla a toda la marca. Romak Fire declara UL MH14790 para líneas estructurales cuando corresponde y UL MH48840 para Mark One; Sköld refiere UL MH60435 para Hero Nomex IIIA. Pídenos por WhatsApp el documento del modelo que incluyes en tu pliego y lo cotizamos con ese alcance."
+      },
+      {
+        "q": "¿Por qué se registra la entrega?",
+        "a": "Registramos la entrega para cotejar modelo, código, talla y accesorios contra tu requisición, después asignas cada pieza por persona. Ese control distingue, por ejemplo, Defender BOM1045 de Mark One BOM1046 y conserva su documentación separada. Mándanos por WhatsApp tu formato de recepción y preparamos la partida con los datos que debes revisar."
+      }
+    ],
+    "hero": {
+      "src": "/images/catalogo/marcas/hero-marcas.avif",
+      "alt": "Marcas de equipo y trajes para bombero"
+    },
+    "checklistCompra": {
+      "titulo": "Validación antes de emitir orden",
+      "parrafos": [
+        "La comparación de marcas termina al identificar el modelo, la talla, la configuración y el documento aplicable a cada componente. Un cambio de casco, prenda, bota, guante o accesorio no se trata como equivalente sin revisar la función que tendrá en la operación y su relación con el resto del equipo.",
+        "La recepción verifica artículos y accesorios contra la requisición, después se asignan por usuario y se registra su condición. Este control facilita la inspección, el cuidado y la reposición sin confundir una referencia declarada para un modelo con una promesa para toda la marca."
+      ]
+    }
   },
-  {
-    slug: 'skold', seccion: 'marcas', nombre: 'Sköld', nombreCard: 'Sköld', title: 'Sköld: equipo y trajes para bombero | México', description: 'Sköld: trajes, casco, bota, guantes, escafandra y ERA para bombero; revisa los modelos publicados y su documentación al cotizar en México.', lead: 'Sköld integra prendas y componentes para bomberos; cada modelo se elige por su operación y por la declaración de fabricante que le corresponde.', chips: ['Prendas y componentes', 'ERA Phantöm', 'Hero Nomex IIIA', 'Selección por operación'],
-    resumen: ['Sköld integra prendas, casco, bota, guante, escafandra y ERA dentro de una oferta que debe leerse por componentes. Una marca permite localizar opciones relacionadas, pero la protección depende de cómo se selecciona cada artículo para la tarea, la talla del usuario y la interfaz que formará con el equipo existente.', 'La línea Hero Nomex IIIA refiere UL MH60435; esa declaración se mantiene vinculada al modelo indicado. Para una requisición institucional, el documento de conformidad, edición y configuración se solicitan antes de emitir la orden, especialmente si se trata de protección respiratoria o respuesta estructural.'],
-    bloques: [
-      { h2: 'Equipo Sköld por componente', parrafos: ['Sköld maneja los trajes Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender, además de casco Viking, bota Workman, guante, escafandra y ERA Phantöm. También identifica la plataforma SköldTracker. Un comprador debe separar la línea comercial de la selección técnica: casco, calzado, guante, prenda y equipo de respiración se evalúan para la tarea que realizará el usuario.', 'La línea Hero Nomex IIIA declara UL MH60435. Esa referencia se conserva en el modelo que la declara y no se traslada automáticamente a los demás productos de la marca. Para cualquier requerimiento institucional, solicita el modelo, edición, configuración y declaración de conformidad antes de emitir la orden.'] },
-      { h2: 'Elegir según la operación', parrafos: ['El punto de partida es la actividad autorizada: brigada, respuesta estructural, trabajo con equipo de respiración o una tarea específica que requiera calzado y protección de manos. No se debe construir el alcance a partir del catálogo. El análisis de riesgo y el procedimiento determinan primero qué debe hacer la persona usuaria.', 'Con esa definición, se compara cada artículo por su función dentro del conjunto. Una prenda debe permitir el uso de guantes y botas; un casco se ajusta con capucha y máscara; un ERA se revisa por la atmósfera y operación. La elección correcta puede reunir componentes distintos, siempre que su compatibilidad se pruebe.'] },
-      { h2: 'Tallas, ajuste y configuración', parrafos: ['Talla de prenda, calzado, guante y ajuste de casco se levantan por persona. El objetivo no es llenar una tabla rápida, sino verificar movimiento y cobertura durante las maniobras previstas. Un artículo en la talla equivocada puede limitar alcance, destreza, visión o permanencia de las transiciones entre piezas.', 'La orden debe indicar modelo, código cuando corresponda, color, accesorios, identificación y cantidades. Si se incluye protección ocular, comunicación u otro complemento del casco, se documenta como parte de la configuración. Así se evita recibir una variante distinta a la evaluada o dejar decisiones operativas para el final.'] },
-      { h2: 'Interfaz de prendas y respiración', parrafos: ['Casco, escafandra, cuello de prenda, guante y bota deben revisarse en conjunto. En una prueba de movimiento se mira hacia arriba, se flexiona el torso, se elevan brazos y se camina con el calzado puesto. Estas acciones muestran si el equipo conserva cobertura o si un componente desplaza a otro.', 'Si se contempla el ERA Phantöm, la selección requiere revisar su ficha concreta y la relación con máscara, casco y capucha. La presencia de un ERA dentro de la marca no implica que cualquier configuración sea apta para combate estructural. La documentación y el riesgo de la operación mantienen la decisión dentro de su alcance real.'] },
-      { h2: 'Errores de especificación', parrafos: ['Generalizar UL MH60435 a toda la marca es un error de compra, igual que elegir por nombre comercial sin definir operación. También falla la propuesta que pide un conjunto completo sin asignar tallas ni prever cómo se relacionará con el equipo ya disponible.', 'No se deben omitir códigos y configuración cuando se requiere una partida verificable. Al comparar ofertas, cada componente debe conservar su identidad y documento aplicable. Eso evita que un cambio de bota, casco o prenda se reciba como si fuera la misma solución sólo por compartir fabricante.'] },
-      { h2: 'Inspección y cuidado en servicio', parrafos: ['La recepción verifica que prendas, casco, bota, guante, escafandra y accesorios correspondan a la orden. Se revisan cierres, costuras, suspensión, suela, piezas de ajuste y condición general antes de asignar el equipo. Registrar usuario, talla y fecha de entrega crea un punto de partida para las inspecciones de rutina.', 'Después de una exposición se aplica el cuidado indicado por el fabricante del componente. El equipo con daño, contaminación o pérdida de ajuste se aparta hasta evaluarlo. Guardar una pieza sin inspeccionarla sólo retrasa la detección de una condición que puede afectar su siguiente uso.'] },
-      { h2: 'Reposición sin perder compatibilidad', parrafos: ['Al reponer una pieza se identifica la causa: desgaste, daño, cambio de talla o modificación de la operación. El reemplazo se coteja con la configuración que permanecerá en servicio, no únicamente con el nombre de la marca. Una bota nueva o un casco con accesorios distintos puede requerir volver a revisar movimiento y cobertura.', 'Un inventario que conserva modelo, talla, responsable y condición permite programar compras con mayor precisión. La vida útil se decide conforme a las instrucciones aplicables, el historial de exposición y la inspección del artículo; no se asigna una cifra general a productos de familias distintas.'] }
-    ], especificacion: [{ campo: 'Marca', valor: 'Sköld' }, { campo: 'Prendas', valor: 'Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender' }, { campo: 'Componentes', valor: 'Viking, Workman, guante, escafandra y ERA Phantöm' }, { campo: 'Declaración referida', valor: 'UL MH60435 para Hero Nomex IIIA' }, { campo: 'Control', valor: 'Configuración y documentación verificadas por modelo' }], normas: [{ norma: 'UL MH60435', alcance: 'Declaración referida para Hero Nomex IIIA; verifica modelo y configuración al cotizar.' }], errores: ['Generalizar una declaración normativa a toda la marca', 'Elegir por nombre comercial sin definir operación', 'Omitir prueba de compatibilidad entre piezas', 'No documentar código y configuración', 'Tratar un ERA como apto sin revisar su alcance', 'Reponer componentes sin volver a probar el conjunto'], faq: faqs([['¿Sköld tiene equipo de respiración autónoma?', 'La marca incluye ERA Phantöm; consulta la ficha concreta y su declaración antes de cotizar.'], ['¿Hero Nomex IIIA declara UL?', 'La información de la marca refiere UL MH60435 para ese modelo; confírmalo para la configuración requerida.'], ['¿Qué componentes puedo integrar?', 'Según la operación, prendas, casco Viking, bota Workman, guante, escafandra y el ERA que corresponda.'], ['¿Una sola marca garantiza compatibilidad?', 'No. La compatibilidad se prueba entre los componentes y con las maniobras de la persona usuaria.'], ['¿Qué registro conviene conservar?', 'Modelo, talla, código, accesorios, responsable, entrega, inspección y condición de cada pieza.'], ['¿Cómo se decide una reposición?', 'Por condición, exposición, instrucciones aplicables y compatibilidad con lo que seguirá en servicio.']])
-  }
-];
-
-const seccion: Seccion = { slug: 'marcas', nombre: 'Marcas', h1: 'Marcas de equipo para bombero que manejamos', title: 'Marcas de equipo para bombero | México', description: 'Marcas de equipo para bombero: Romak Fire y Sköld, con prendas y componentes para configurar protección según cada operación en México.', eyebrow: 'Catálogo de protección personal', lead: 'Trabajamos con Romak Fire y Sköld, y cotizamos componentes para armar conjuntos que correspondan a la operación de cada comprador.', resumenHero: ['Las marcas ayudan a localizar familias de prendas y componentes, pero no reemplazan la evaluación de riesgo. En LORICA trabajamos con Romak Fire y Sköld para integrar configuraciones de protección; cada artículo se coteja por modelo, talla, accesorios, documentación y la tarea autorizada.', 'También cotizamos componentes de Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA en ERA industrial cuando la operación lo requiere. La interfaz entre todos ellos se prueba físicamente antes de la compra, porque una combinación útil no depende solamente de que sus artículos compartan fabricante.'], etiquetas: { menuTipos: 'Consulta las marcas principales', tiposEyebrow: 'Marcas con modelos publicados', tiposTitulo: 'Ubica la línea y valida el producto concreto', tiposDescripcion: 'Las páginas de marca reúnen familias y componentes; la selección se confirma en la ficha de cada modelo.', elegirTitulo: 'Cómo comprar por marca sin perder precisión', elegirDescripcion: 'Define operación, componentes, interfaz y documentos antes de cerrar una partida.', modelosTitulo: 'Modelos relacionados en el catálogo', modelosDescripcion: 'Las tarjetas llevan a la familia de producto donde se conserva su información técnica.' }, intro: ['Romak Fire y Sköld son las marcas principales que trabajamos para trajes y equipo de bombero. También cotizamos componentes que se integran al conjunto, como Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA en ERA industrial. La marca orienta una búsqueda; la decisión de compra la definen riesgo, operación autorizada, talla y documentación del modelo.', 'Un conjunto de protección puede requerir prendas, casco, capucha, guantes, botas y, cuando el ambiente lo exige, equipo de respiración autónoma. Estas piezas deben revisarse en conjunto: una buena interfaz conserva cobertura y movimiento, mientras una combinación improvisada puede dejar una transición expuesta o impedir el uso correcto de la máscara.', 'Las páginas de marca agrupan modelos publicados sin repetir información técnica. Cada tarjeta conserva el enlace a su familia original, donde se indican características, configuraciones y estatus normativo del producto. La cotización se confirma por WhatsApp con modelos, tallas, accesorios, cantidades y documento aplicable a cada partida.', 'Comprar por marca no significa usar todos los componentes de un solo fabricante. Puede ser necesario integrar casco, prenda, guante, bota y accesorios de distintas procedencias para atender una configuración definida. Lo importante es que esa integración se pruebe con los usuarios y no se infiera a partir de nombres comerciales.', 'Las declaraciones normativas se leen con el modelo, versión y alcance que señalan. Una declaración de una prenda no convierte en certificado a un casco, una bota o un ERA. Mantener esa separación ayuda a compras, seguridad y usuarios a evaluar propuestas con criterios verificables.', 'La entrega final también es parte de la selección. Se revisan códigos, tallas, accesorios e identificación contra la requisición, se asigna el equipo por persona y se registra su condición inicial. Así se puede inspeccionar, cuidar y reponer sin perder la configuración aprobada.'], comparativa: { columnas: ['Marca', 'Uso', 'Referencia o declaración', 'Material o forma', 'Ventaja', 'Límite'], filas: [['Romak Fire', 'Protección estructural, proximidad, brigada y forestal según modelo', 'MH14790 estructural y MH48840 proximidad cuando corresponda', 'Líneas Protector, Profesional, Defender, Vantage y otras', 'Permite ubicar familias de prendas por operación', 'La declaración se revisa por modelo y configuración'], ['Sköld', 'Prendas, componentes y ERA según producto', 'UL MH60435 referido para Hero Nomex IIIA', 'Hero, Defender, Viking, Workman, escafandra y Phantöm', 'Integra opciones de prenda y componentes', 'No traslada el alcance de un modelo a otro']] }, criterios: { titulo: 'Cinco criterios para comprar por marca', items: [{ termino: 'Operación', texto: 'Define la tarea autorizada antes de comparar familias comerciales.' }, { termino: 'Modelo', texto: 'Identifica el artículo exacto, no sólo el nombre de la marca.' }, { termino: 'Documento', texto: 'Solicita la declaración aplicable a la configuración cotizada.' }, { termino: 'Interfaz', texto: 'Prueba casco, prenda, guante, bota y ERA si corresponde.' }, { termino: 'Trazabilidad', texto: 'Registra código, talla, accesorios y responsable de cada entrega.' }] }, grupos: [{ titulo: 'Marcas principales', tipos: tipos.map((tipo) => tipo.slug) }], faq: faqs([['¿Son distribuidores exclusivos?', 'No se declara exclusividad. Trabajamos con estas marcas y cotizamos la configuración requerida.'], ['¿Qué marcas de componentes cotizan?', 'Bullard, Croydon, Veridian, Majestic, Streamlight, ESS, Lakeland y MSA para ERA industrial, según la necesidad.'], ['¿La misma marca garantiza compatibilidad?', 'No; la compatibilidad se revisa entre los componentes y la operación.'], ['¿Dónde veo cada ficha?', 'Las tarjetas de marca llevan a la familia original del modelo.'], ['¿Puedo pedir una configuración?', 'Sí; indica operación, tallas, accesorios y cantidades para recibir una cotización.'], ['¿Cómo se revisa la norma?', 'Por modelo y configuración declarados, solicitando el documento correspondiente al cotizar.'], ['¿Por qué se registra la entrega?', 'Para verificar lo recibido, asignarlo por usuario y mantener control de inspección y reposición.']]), hero: { src: '/images/catalogo/marcas/hero-marcas.avif', alt: 'Marcas de equipo y trajes para bombero' } };
-
-seccion.checklistCompra = { titulo: 'Validación antes de emitir orden', parrafos: ['La comparación de marcas termina al identificar el modelo, la talla, la configuración y el documento aplicable a cada componente. Un cambio de casco, prenda, bota, guante o accesorio no se trata como equivalente sin revisar la función que tendrá en la operación y su relación con el resto del equipo.', 'La recepción verifica artículos y accesorios contra la requisición, después se asignan por usuario y se registra su condición. Este control facilita la inspección, el cuidado y la reposición sin confundir una referencia declarada para un modelo con una promesa para toda la marca.'] };
-
-seccion.resumenHero?.push('Una compra trazable conserva la relación entre marca, modelo y componente para que la evaluación técnica permanezca clara durante la entrega, la inspección y las reposiciones posteriores.');
-
-export const data = { seccion, tipos, modelos: [] };
+  "tipos": [
+    {
+      "slug": "romak-fire",
+      "seccion": "marcas",
+      "nombre": "Romak Fire",
+      "nombreCard": "Romak Fire",
+      "title": "Romak Fire: trajes y equipo para bombero | México",
+      "description": "Romak Fire: líneas de trajes y equipo para bombero; consulta modelos, configuraciones y declaraciones disponibles para cotizar en México.",
+      "lead": "Romak Fire es la marca que más surtimos: 10 trajes de bombero para estructural, brigada, forestal y aproximación, más guante, capucha, botas, maleta y barra Halligan que completan el conjunto.",
+      "chips": [
+        "Traje estructural",
+        "Proximidad",
+        "Brigada y forestal",
+        "Configuración por modelo"
+      ],
+      "resumen": [
+        "Cotizamos 16 modelos Romak Fire: los estructurales Protector, Profesional, Defender, Vantage y Maverick II, el brigadista Combate Básico, los forestales Fire Ranger Explorer y Scout y el BOMW1002, el de aproximación Mark One MPX-8, y el guante Firemax VI, la capucha CAP1005 y las botas Workman Fire y Fire Ranger.",
+        "Cada modelo lleva su estatus tal como lo declara el fabricante: cuatro estructurales y el Mark One con certificado UL, otros declarados o solo con materiales. Escríbenos por WhatsApp con tu operación y te decimos cuál conviene y con qué componentes se arma el conjunto."
+      ],
+      "bloques": [
+        {
+          "h2": "Modelos Romak Fire que cotizamos por operación",
+          "parrafos": [
+            "Romak Fire abarca cuatro operaciones en trajes: estructural (Protector, Profesional, Defender, Vantage y Maverick II), brigada (Combate Básico, en Nomex IIIA 7.5 oz repelente al agua), forestal (Fire Ranger Explorer y Scout en Nomex IIIA de 6 oz, y el conjunto BOMW1002 en Nomex o algodón ignífugo) y aproximación (Mark One MPX-8 aluminizado, código BOM1046). Lo surtimos a cuerpos de bomberos municipales, brigadas industriales y cuadrillas forestales.",
+            "Elige la línea por el riesgo, no por el catálogo: si tu cuerpo entra a incendios en edificación, ve a los estructurales certificados UL; si tu planta atiende conato, Combate Básico es el modelo pensado para ese alcance; si tu brigada trabaja en monte, los Fire Ranger; si tu operación es de calor radiante, el Mark One. Dinos tu escenario por WhatsApp y te recomendamos el modelo antes de que pidas la cotización formal."
+          ]
+        },
+        {
+          "h2": "Cómo especificamos un pedido Romak Fire",
+          "parrafos": [
+            "Un pedido Romak Fire se escribe con seis datos: modelo y código (BOM1045 en el Defender, BOM1001 en Combate Básico, BOM1046 en el Mark One, BOMW1001 en el Explorer), tela exterior con nombre, barreras, color, talla por elemento y estatus normativo declarado. En los modelos configurables —Protector, Profesional, Vantage— el código depende de la configuración y lo confirmamos por escrito en la cotización.",
+            "Te entregamos ficha técnica por partida y, en los modelos con certificado UL, el certificado con su número (MH14790 en el Protector, MH48840 en el Mark One) y la carta de distribuidor para tu pliego. Si vas a reponer piezas de un lote anterior, mándanos la etiqueta interior y confirmamos que sea la misma configuración."
+          ],
+          "lista": [
+            "Modelo y código: Protector, Defender BOM1045, Combate Básico BOM1001, Mark One BOM1046",
+            "Tela exterior con nombre: PBI, Advance 7.0 oz, Brigade 7.5 oz, Nomex IIIA",
+            "Barreras térmica y de humedad declaradas",
+            "Color y talla por elemento, no talla promedio",
+            "Certificado UL con número donde exista: MH14790, MH48840",
+            "Accesorios: DRD, porta radio, bolsas, capucha, guante y bota"
+          ]
+        },
+        {
+          "h2": "Con qué armamos el conjunto: guante, capucha, botas y maleta",
+          "parrafos": [
+            "El traje Romak Fire se completa con piezas de la misma marca que ya probamos juntas: el guante Firemax VI (GIS1008) para brigada, la capucha over-face CAP1005, las botas Workman Fire (BOT1004, declarado) para estructural y Fire Ranger para forestal, la maleta porta-equipo BPS1005 y la barra Halligan HAC1007. Las cotizamos por pieza o dentro del kit estructural, brigadista o forestal.",
+            "Casco, ERA y guante estructural los surtimos de otras marcas (Bullard, Sköld, Veridian); el traje Romak funciona con ellos si se prueba el solape de cuello y puño. Mándanos el casco y la máscara que usa tu corporación y te decimos cómo cierra el cuello del chaquetón sobre ellos."
+          ]
+        },
+        {
+          "h2": "Errores que vemos al comprar Romak Fire",
+          "parrafos": [
+            "El primero es pedir «traje Romak» sin modelo ni configuración: llegan ofertas con exteriores distintos —PBI contra Advance o Brigade— con precios y vida útil muy diferentes. El segundo es asumir que toda la marca tiene certificado UL: Protector, Profesional, Defender, Vantage y Mark One lo tienen; Maverick II, los Fire Ranger y Workman Fire son declarados; Combate Básico, BOMW1002, Firemax VI y CAP1005 no se presentan como certificados.",
+            "En tu pliego escribe modelo, código, tela, barreras, edición de norma y estatus, y exige el certificado UL con número cuando lo pidas. Nosotros confirmamos cada renglón contra la ficha del fabricante antes de cotizar y te avisamos si un modelo no cumple lo que tu pliego exige."
+          ]
+        },
+        {
+          "h2": "Inspección y reposición de equipo Romak Fire",
+          "parrafos": [
+            "Antes de cada guardia revisa exterior, cinta reflejante, costuras, cierres YKK y velcro, puños y refuerzos; después de humo, calor o contaminantes, sigue el procedimiento de limpieza del fabricante y aparta la prenda dañada. En estructural aplica la inspección de la NFPA 1850; en brigada industrial, el procedimiento de tu centro de trabajo y la NOM-002-STPS-2010.",
+            "Lleva registro por prenda —persona, fecha de asignación, lavados, reparaciones y retiro según la NFPA 1850— y ten existencias por talla. Para reponer, mándanos la etiqueta interior por WhatsApp y te confirmamos el modelo, la tela y el código; si el fabricante cambió la configuración, te lo decimos antes de que la pidas."
+          ]
+        }
+      ],
+      "especificacion": [
+        {
+          "campo": "Fabricante",
+          "valor": "Romak Fire"
+        },
+        {
+          "campo": "Líneas",
+          "valor": "Protector, Profesional, Defender, Vantage, Maverick II, Mark One, Fire Ranger y Combate Básico"
+        },
+        {
+          "campo": "Declaraciones",
+          "valor": "UL MH14790 estructural y MH48840 proximidad, cuando corresponda al modelo"
+        },
+        {
+          "campo": "Gestión declarada",
+          "valor": "ISO 9001:2015"
+        },
+        {
+          "campo": "Selección",
+          "valor": "Modelo, talla y configuración definidos por operación"
+        }
+      ],
+      "normas": [
+        {
+          "norma": "UL MH14790 / MH48840",
+          "alcance": "Referencias declaradas por el fabricante para líneas y configuraciones que las indiquen."
+        },
+        {
+          "norma": "ISO 9001:2015",
+          "alcance": "Referencia de fabricación declarada; no sustituye la documentación del producto."
+        }
+      ],
+      "errores": [
+        "Suponer que una línea aplica a cualquier operación",
+        "Tomar una declaración de un modelo como válida para otro",
+        "Confundir gestión de calidad con certificación de desempeño",
+        "Omitir talla, código y configuración",
+        "No probar la interfaz con el resto del EPP",
+        "Reponer una pieza sin revisar compatibilidad"
+      ],
+      "faq": [
+        {
+          "q": "¿Romak Fire maneja equipo forestal?",
+          "a": "La línea Fire Ranger se considera para esa operación; revisa el modelo y configuración concretos."
+        },
+        {
+          "q": "¿Las referencias UL aplican a toda la marca?",
+          "a": "Se revisan por modelo y configuración declarados en la cotización."
+        },
+        {
+          "q": "¿Qué debo indicar al cotizar?",
+          "a": "Operación, modelos, tallas, color, accesorios, cantidades y los componentes que ya usa el personal."
+        },
+        {
+          "q": "¿Puedo pedir sólo una pieza?",
+          "a": "Sí; al reponerla conviene confirmar talla, código e interfaz con el conjunto que seguirá en servicio."
+        },
+        {
+          "q": "¿Cómo reviso la entrega?",
+          "a": "Comparando cada componente y accesorio contra la configuración aprobada antes de asignarlo."
+        },
+        {
+          "q": "¿Qué hago tras una exposición?",
+          "a": "Sigue el cuidado indicado para el componente, inspecciónalo y retíralo de servicio si su condición es incierta."
+        }
+      ]
+    },
+    {
+      "slug": "skold",
+      "seccion": "marcas",
+      "nombre": "Sköld",
+      "nombreCard": "Sköld",
+      "title": "Sköld: equipo y trajes para bombero | México",
+      "description": "Sköld: trajes, casco, bota, guantes, escafandra y ERA para bombero; revisa los modelos publicados y su documentación al cotizar en México.",
+      "lead": "Sköld es la marca con la que surtimos el traje Hero en PBI MAX y Nomex IIIA, el brigadista Defender y los componentes que lo completan: casco Viking, guante FPGS, escafandra FPEN, botas Workman y el ERA Phantöm.",
+      "chips": [
+        "Prendas y componentes",
+        "ERA Phantöm",
+        "Hero Nomex IIIA",
+        "Selección por operación"
+      ],
+      "resumen": [
+        "Cotizamos 8 modelos Sköld: los trajes estructurales Hero PBI MAX y Hero Nomex IIIA (certificado UL MH60435), el brigadista Defender, el casco Viking FPCM, el guante FPGS, la escafandra Nomex FPEN, las botas Workman FPBSK y el ERA Phantöm 60 min SCBA-P60FC.",
+        "Cada modelo lleva su estatus como lo declara el fabricante: el Hero Nomex IIIA con certificado UL, el Hero PBI MAX y el Defender como equivalentes, los componentes declarados. Escríbenos por WhatsApp con tu operación y armamos el conjunto Sköld completo o solo la pieza que necesitas."
+      ],
+      "bloques": [
+        {
+          "h2": "Modelos Sköld que cotizamos y para qué operación",
+          "parrafos": [
+            "Sköld cubre trajes y componentes: estructurales Hero PBI MAX y Hero Nomex IIIA, el brigadista Defender, el casco Viking FPCM, el guante de bombero FPGS, la escafandra Nomex FPEN, las botas Workman FPBSK y el ERA Phantöm de 60 minutos SCBA-P60FC. Lo surtimos a cuerpos de bomberos municipales y protección civil que buscan un conjunto completo de una sola marca con ficha por componente.",
+            "Elige el Hero Nomex IIIA si tu pliego pide certificado UL —lleva el número MH60435— y el Hero PBI MAX si priorizas la fibra PBI MAX y aceptas el estatus equivalente que el fabricante declara. El Defender es el brigadista para planta; el Phantöm, el ERA de combate que integramos con el traje."
+          ]
+        },
+        {
+          "h2": "Cómo especificamos un pedido Sköld",
+          "parrafos": [
+            "Escribimos cada partida con modelo y código (MH60435 en el Hero Nomex IIIA, FPCM en el Viking, FPGS en el guante, FPEN en la escafandra, FPBSK en las botas, SCBA-P60FC en el Phantöm), tela exterior —Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750 en el Hero Nomex—, talla por elemento y estatus normativo tal como lo declara el fabricante.",
+            "Te entregamos ficha técnica por partida y el certificado con número donde existe; el que no lo tiene, lo decimos: el Hero PBI MAX y el Defender se presentan como equivalentes, no como certificados. Los modelos con código «según configuración» se confirman por escrito antes de facturar."
+          ],
+          "lista": [
+            "Modelo y código: Hero Nomex IIIA MH60435, Viking FPCM, FPGS, FPEN, FPBSK, Phantöm SCBA-P60FC",
+            "Tela exterior con nombre: PBI MAX, Advance, Kombat Flex, Pioneer, Defender 750",
+            "Talla por elemento; el guante FPGS es unitalla",
+            "Estatus declarado: certificado UL, equivalente, declarado",
+            "Accesorios y configuración del conjunto",
+            "ERA: cilindro y máscara compatibles con tu corporación"
+          ]
+        },
+        {
+          "h2": "Conjunto Sköld completo: traje, casco, guante, escafandra, botas y ERA",
+          "parrafos": [
+            "El conjunto Sköld se arma con lo que ya probamos junto: chaquetón y pantalonera Hero, casco Viking con protector facial, guante FPGS, escafandra Nomex FPEN bajo el casco, botas Workman FPBSK y el ERA Phantöm con su máscara. Lo cotizamos por pieza o completo, con una sola ficha técnica por partida y una sola factura CFDI 4.0.",
+            "La prueba que hacemos antes de aceptar un lote es la del sistema: casco, escafandra, máscara y cuello del chaquetón se ponen juntos y se comprueba que no queda hueco al girar la cabeza. Mándanos por WhatsApp la talla de tu cuadrilla y la máscara que usan hoy y te decimos qué cambia con el Phantöm."
+          ]
+        },
+        {
+          "h2": "Errores que vemos al comprar Sköld",
+          "parrafos": [
+            "El primero es leer «UL» en la marca y asumir que todo lo Sköld es certificado: solo el Hero Nomex IIIA lo tiene (MH60435); el Hero PBI MAX y el Defender son equivalentes y el resto de los componentes son declarados. El segundo es pedir el guante FPGS por talla cuando es unitalla, o el traje sin especificar cuál de las cinco telas del Hero Nomex se quiere.",
+            "En tu pliego pon modelo, código, tela, edición de norma y estatus, y pide el certificado UL con número si lo exiges. Nosotros te decimos por escrito qué cumple cada renglón antes de cotizar, y si un modelo no llega al estatus que tu pliego pide, te proponemos otro."
+          ]
+        },
+        {
+          "h2": "Inspección y reposición de equipo Sköld",
+          "parrafos": [
+            "Antes de cada guardia revisa exterior, costuras, cierres, cinta y puños del traje, la carcasa y el barbiquejo del casco, y el estado de la escafandra; después de una exposición, limpia como indica el fabricante y aparta lo dañado. Sköld indica SköldTracker para fichas, mantenimiento y caducidad, y te ayudamos a llevar ese registro por prenda si tu corporación lo usa.",
+            "Ten existencias por talla y lleva un registro por prenda; para reponer, mándanos la etiqueta y te confirmamos modelo, tela y código. Con el ERA Phantöm, el cilindro y la máscara se inspeccionan con el procedimiento del fabricante y por personal capacitado; nosotros te entregamos la documentación del modelo con la cotización."
+          ]
+        }
+      ],
+      "especificacion": [
+        {
+          "campo": "Marca",
+          "valor": "Sköld"
+        },
+        {
+          "campo": "Prendas",
+          "valor": "Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender"
+        },
+        {
+          "campo": "Componentes",
+          "valor": "Viking, Workman, guante, escafandra y ERA Phantöm"
+        },
+        {
+          "campo": "Declaración referida",
+          "valor": "UL MH60435 para Hero Nomex IIIA"
+        },
+        {
+          "campo": "Control",
+          "valor": "Configuración y documentación verificadas por modelo"
+        }
+      ],
+      "normas": [
+        {
+          "norma": "UL MH60435",
+          "alcance": "Declaración referida para Hero Nomex IIIA; verifica modelo y configuración al cotizar."
+        }
+      ],
+      "errores": [
+        "Generalizar una declaración normativa a toda la marca",
+        "Elegir por nombre comercial sin definir operación",
+        "Omitir prueba de compatibilidad entre piezas",
+        "No documentar código y configuración",
+        "Tratar un ERA como apto sin revisar su alcance",
+        "Reponer componentes sin volver a probar el conjunto"
+      ],
+      "faq": [
+        {
+          "q": "¿Sköld tiene equipo de respiración autónoma?",
+          "a": "La marca incluye ERA Phantöm; consulta la ficha concreta y su declaración antes de cotizar."
+        },
+        {
+          "q": "¿Hero Nomex IIIA declara UL?",
+          "a": "La información de la marca refiere UL MH60435 para ese modelo; confírmalo para la configuración requerida."
+        },
+        {
+          "q": "¿Qué componentes puedo integrar?",
+          "a": "Según la operación, prendas, casco Viking, bota Workman, guante, escafandra y el ERA que corresponda."
+        },
+        {
+          "q": "¿Una sola marca garantiza compatibilidad?",
+          "a": "No. La compatibilidad se prueba entre los componentes y con las maniobras de la persona usuaria."
+        },
+        {
+          "q": "¿Qué registro conviene conservar?",
+          "a": "Modelo, talla, código, accesorios, responsable, entrega, inspección y condición de cada pieza."
+        },
+        {
+          "q": "¿Cómo se decide una reposición?",
+          "a": "Por condición, exposición, instrucciones aplicables y compatibilidad con lo que seguirá en servicio."
+        }
+      ]
+    }
+  ],
+  "modelos": []
+};

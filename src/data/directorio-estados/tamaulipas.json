@@ -1,45 +1,39 @@
 {
- "lead": "En Tamaulipas, el directorio registra 12 estaciones de bomberos en 8 municipios. Las fichas indican ubicación, corporación, clase de estación y fuente disponible para consultar bomberos en Tamaulipas con mayor claridad.",
- "descRight": [
-  "El registro de Tamaulipas reúne 8 estaciones municipales, 3 aeroportuarias y 1 de PEMEX. No se clasifican centrales ni subestaciones en estas fichas; Ciudad Madero, Nuevo Laredo, Reynosa y Tampico aportan 2 estaciones cada uno, combinando atención local y especialidades puntuales.",
-  "Recorre el listado por municipio y usa el mapa para identificar la ubicación publicada. Hay teléfono únicamente cuando existe fuente. En una situación de emergencia se debe marcar 911; los números de las fichas están destinados a trámites, visitas, capacitación o donaciones, no al despacho urgente."
- ],
- "municipiosDuo": [
-  "Ciudad Madero, Nuevo Laredo, Reynosa y Tampico concentran 2 registros cada uno. En esos municipios aparecen combinaciones de corporación municipal y atención aeroportuaria o industrial, por lo que conviene leer el nombre completo de cada ficha antes de contactarla.",
-  "Altamira, El Mante, Matamoros y Victoria tienen 1 estación registrada por municipio. El directorio cubre 8 municipios y la cifra puede aumentar cuando se confirme información pública adicional; la ausencia de una ficha no confirma ausencia de servicio."
+ "lead": "Doce estaciones dan presencia a los bomberos en Tamaulipas dentro de 8 municipios. Ciudad Madero, Nuevo Laredo, Reynosa y Tampico tienen dos sedes cada uno. Se incluyen dirección, ubicación, teléfono oficial cuando existe y la corporación que las opera.",
+ "panorama": [
+  "En Tamaulipas predominan los cuerpos municipales, junto con servicios aeroportuarios y la brigada contraincendio de PEMEX en Ciudad Madero. La operación abarca municipios fronterizos, industriales y costeros. Para coordinar protección o abastecimiento, conviene identificar el tipo de corporación antes de preparar una solicitud.",
+  "Cuatro municipios reúnen dos estaciones: Ciudad Madero, Nuevo Laredo, Reynosa y Tampico. Los materiales peligrosos aparecen tanto en corporaciones municipales como en la brigada de PEMEX, así que la dotación para bomberos en Tamaulipas debe contemplarlos por separado. Tampico declara rescate acuático; El Mante y Victoria incluyen incendios forestales."
  ],
  "estacionesDuo": [
-  "Las fichas separan estaciones municipales, aeroportuarias y de PEMEX, todas marcadas como sede única dentro del registro. Se incluyen la Dirección de Protección Civil y Bomberos de Nuevo Laredo y la Brigada Contraincendio Refinería Francisco I. Madero — PEMEX.",
-  "Cada ficha muestra dirección o teléfono solo si la fuente lo sustenta, y distingue ubicación exacta de una referencia aproximada. Esta información sirve para consultas planeadas sobre bomberos en Tamaulipas; para auxilio inmediato, el canal correcto sigue siendo el 911."
+  "Sobresalen el Heroico Cuerpo de Bomberos de Tampico, la Dirección de Protección Civil y Bomberos de Nuevo Laredo y la Brigada Contraincendio Refinería Francisco I. Madero de PEMEX. El listado está ordenado por municipio y conserva el teléfono oficial de las corporaciones que lo tienen."
  ],
  "coberturaDuo": [
-  "La atención prehospitalaria figura en 11 fichas de Tamaulipas, seguida de incendios estructurales con 9 y rescate vehicular con 8. Materiales peligrosos aparece en 6 registros y el salvamento aeroportuario en 3, señalando servicios declarados de distinta naturaleza.",
-  "De las 12 fichas, 8 contienen teléfono con fuente y 7 incluyen dirección y ubicación exacta. Estos indicadores ayudan a decidir qué tan precisa es la referencia de cada estación, sin convertir el directorio en una medición de disponibilidad o respuesta."
+  "La atención prehospitalaria se declara en 11 estaciones y materiales peligrosos en 6. Incendios estructurales, rescate vehicular y fugas de gas conforman otro frente relevante. El servicio aeroportuario en Nuevo Laredo, Reynosa y Tampico añade requisitos de aproximación específicos."
  ],
  "equipoDuo": [
-  "Para servicios de incendios estructurales y rescate vehicular conviene evaluar <a href=\"/trajes/estructural/\">protección estructural</a> y <a href=\"/trajes/extricacion/\">herramientas de extricación</a>. Los registros de materiales peligrosos hacen pertinente revisar <a href=\"/trajes/hazmat/\">trajes Hazmat</a>, mientras que el salvamento aeroportuario demanda analizar protección de aproximación.",
-  "Atendemos cotizaciones de equipo para bomberos en Tamaulipas con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La configuración se define con el riesgo declarado y las necesidades de la corporación, ya sea municipal, aeroportuaria o industrial."
+  "Los servicios estructurales requieren <a href=\"/trajes/estructural/\">trajes estructurales</a> y protección para rescate vehicular. Por los materiales peligrosos y fugas de gas, algunas partidas deben incluir <a href=\"/trajes/hazmat/\">trajes Hazmat</a> conforme al riesgo. Tampico también puede requerir accesorios para rescate acuático, y los aeropuertos protección de aproximación.",
+  "LORICA puede presentar una cotización de Tamaulipas dividida por partidas, lista para compra directa o licitación. Cada producto lleva su especificación técnica; la factura se emite en CFDI 4.0. No hay compra mínima y el envío se coordina al estado con los accesorios y protección seleccionados."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Tamaulipas?",
-   "a": "El directorio registra 12 estaciones de bomberos en Tamaulipas, distribuidas en 8 municipios. Son fichas sustentadas en información pública y el número puede crecer al verificarse nuevas referencias; no representa una afirmación de que el directorio incluya todas las estaciones del estado."
+   "q": "¿Cuántas estaciones de bomberos hay en Tamaulipas y dónde están?",
+   "a": "Hay 12 estaciones de bomberos en Tamaulipas en Altamira, Ciudad Madero, El Mante, Matamoros, Nuevo Laredo, Reynosa, Tampico y Victoria. Ciudad Madero, Nuevo Laredo, Reynosa y Tampico cuentan con dos sedes en el estado."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Tamaulipas?",
-   "a": "Ciudad Madero, Nuevo Laredo, Reynosa y Tampico cuentan con 2 fichas cada uno en el directorio. Para buscar bomberos en Ciudad Victoria, revisa el registro de Victoria, que tiene 1 estación publicada; el mapa y la fuente ayudan a diferenciar cada ubicación."
+   "q": "¿Quién opera los cuerpos de bomberos en Tamaulipas?",
+   "a": "Los bomberos en Tamaulipas son operados principalmente por corporaciones municipales. También existen servicios aeroportuarios en Nuevo Laredo, Reynosa y Tampico, además de una brigada contraincendio de PEMEX en Ciudad Madero. Cada tipo de cuerpo atiende su ámbito operativo."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Tamaulipas?",
-   "a": "En Tamaulipas hay 8 fichas municipales, 3 aeroportuarias y 1 de PEMEX. Figuran corporaciones como Protección Civil y Bomberos de Ciudad Victoria, junto con servicios especializados como el SSEI Aeropuerto Internacional Quetzalcóatl, según la clasificación de cada ficha."
+   "q": "¿Cómo contacto una estación de bomberos en Tamaulipas para una gestión?",
+   "a": "Cuando se cuenta con teléfono oficial, aparece con los datos de la corporación para comunicaciones institucionales o solicitudes de información. Para una emergencia en Tamaulipas marca 911. La ubicación, el municipio y la corporación operadora ayudan a encontrar la sede adecuada."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Tamaulipas?",
-   "a": "Para una emergencia en Tamaulipas marca 911. Los teléfonos mostrados en las fichas se reservan para trámites, visitas, capacitación o donaciones y no deben usarse en lugar del servicio de emergencia. Consulta el propósito del contacto y usa el número nacional ante una situación urgente."
+   "q": "¿Qué riesgos atienden los bomberos en Tamaulipas?",
+   "a": "Los bomberos en Tamaulipas reportan atención prehospitalaria, incendios estructurales y rescate vehicular. Además, varias corporaciones declaran materiales peligrosos, fugas de gas, salvamento aeroportuario, incendios forestales, rescate en altura o acuático, de acuerdo con sus servicios."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Tamaulipas?",
-   "a": "Cotizamos trajes y equipo para bomberos en Tamaulipas con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Indica si el requerimiento es para incendio, rescate, atención industrial o un entorno aeroportuario para recibir opciones pertinentes."
+   "q": "¿De qué forma compra equipo una corporación de bomberos en Tamaulipas?",
+   "a": "Una corporación de bomberos en Tamaulipas puede solicitar equipo por licitación o mediante compra directa. LORICA entrega la especificación técnica de cada partida, expide CFDI 4.0, no exige compra mínima y despacha al estado los productos incluidos en la cotización."
   }
  ]
 }

@@ -1,45 +1,39 @@
 {
- "lead": "El directorio registra 18 estaciones de bomberos en Colima, distribuidas en 10 municipios. Cada ficha reúne corporación, tipo de servicio, ubicación disponible y fuente; cuando existe, también incluye dirección y teléfono para consulta no urgente.",
- "descRight": [
-  "La red registrada en Colima combina 9 estaciones municipales con 4 voluntarias, además de presencia estatal, PEMEX, CFE, industria y aeropuerto. Manzanillo concentra 6 fichas y el municipio de Colima 3; también hay 2 subestaciones. Esta diversidad muestra servicios locales junto con brigadas vinculadas a instalaciones específicas.",
-  "Consulta las estaciones de bomberos en Colima por municipio para ubicar la corporación que corresponde a tu zona. Las fichas indican teléfono cuando existe una fuente pública, dirección y mapa cuando están disponibles. Para pedir ayuda ante una emergencia, marca 911; el directorio sirve como referencia para trámites, visitas o contacto institucional."
- ],
- "municipiosDuo": [
-  "Manzanillo reúne 6 registros, la mayor concentración del estado, mientras que el municipio de Colima cuenta con 3 y Tecomán con 2. En esos municipios coinciden unidades municipales, voluntarias y servicios asociados a puerto, industria o aeropuerto, por lo que conviene distinguir la corporación antes de hacer contacto.",
-  "La cobertura registrada alcanza 10 municipios. Armería, Comala, Coquimatlán, Cuauhtémoc, Ixtlahuacán, Minatitlán y Villa de Álvarez tienen 1 ficha cada uno. El índice permite recorrer esa distribución sin asumir que el registro representa todas las estaciones existentes en Colima."
+ "lead": "Colima cuenta con 18 estaciones de bomberos en 10 municipios, con concentración en Manzanillo y Colima. Incluye dirección, teléfono oficial cuando existe, localización y corporación operadora para contactar bomberos en Colima.",
+ "panorama": [
+  "El servicio de bomberos en Colima reúne unidades municipales, voluntarios, protección civil estatal y brigadas ligadas a PEMEX, CFE, industria, puerto y aeropuerto. Manzanillo muestra la mayor diversidad de operadores; en otros municipios, la atención se integra a protección civil municipal. Para compras institucionales, cada tipo de corporación requiere una lectura propia de sus servicios declarados.",
+  "Manzanillo concentra 6 estaciones y Colima 3, con presencia de atención municipal, voluntaria y portuaria. Esa concentración pone en un mismo municipio operaciones de distinto perfil. Si coordinas una brigada o corporación, el equipo debe responder al riesgo de su servicio, no sólo a la ciudad donde se encuentra; Tecomán también reúne 2 estaciones."
  ],
  "estacionesDuo": [
-  "Cada ficha identifica si se trata de una unidad municipal, voluntaria, estatal o de instalación especializada, así como su rol de subestación o sede única. Por ejemplo, aparecen el H. Cuerpo de Bomberos Voluntarios de Colima y la Dirección Municipal de Protección Civil y Bomberos de Manzanillo.",
-  "Revisa la dirección y el teléfono solo cuando la ficha los muestra con fuente, y usa el mapa para distinguir una ubicación exacta de una aproximada. En el directorio de bomberos en Colima hay 13 fichas con dirección, 10 con teléfono y 8 con ubicación exacta; esos campos facilitan una consulta informada."
+  "Las estaciones de bomberos en Colima incluyen a Bomberos Voluntarios de Manzanillo A.C., el H. Cuerpo de Bomberos Voluntarios de Colima y la Unidad Estatal de Protección Civil de Colima. Se ordenan por municipio e incorporan teléfonos oficiales disponibles. Separan la operación municipal de brigadas portuarias e industriales."
  ],
  "coberturaDuo": [
-  "Los incendios estructurales figuran en 16 fichas y protección civil en 8, por lo que son los servicios más repetidos en el registro. También se declaran rescate vehicular y atención prehospitalaria en 5 casos, además de incendios forestales y materiales peligrosos en 4.",
-  "De las 18 estaciones registradas, 10 incluyen teléfono, 13 dirección y 8 una ubicación exacta. Estas diferencias reflejan la información pública localizada para cada corporación. La sección de cifras ayuda a comparar campos disponibles sin convertirlos en una valoración operativa de los bomberos de Colima."
+  "Los incendios estructurales se declaran en 16 estaciones, y rescate vehicular, atención prehospitalaria y materiales peligrosos aparecen en varias corporaciones. Manzanillo añade perfiles portuarios y aeroportuarios. Para los bomberos en Colima, esto implica combinar protección estructural con riesgos químicos, forestales o de rescate."
  ],
  "equipoDuo": [
-  "La presencia de incendios estructurales, forestales, rescate vehicular y materiales peligrosos orienta una selección por escenario. Para atención de fuego estructural se pueden revisar <a href=\"/trajes/estructural/\">trajes estructurales</a>; para vegetación, <a href=\"/trajes/forestal/\">trajes forestales</a>; y para sustancias, <a href=\"/trajes/hazmat/\">equipo Hazmat</a>.",
-  "Los servicios de salvamento aeroportuario y rescate vehicular también requieren definir protección y herramientas conforme a su ficha técnica. Cotizamos equipo para bomberos en Colima con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado."
+  "Las corporaciones de Colima requieren <a href=\"/trajes/estructural/\">trajes estructurales</a> para la atención base. Cuando la estación declara incendios forestales, corresponde usar <a href=\"/trajes/forestal/\">trajes forestales</a>. Las brigadas con materiales peligrosos necesitan selección Hazmat; para rescate vehicular, la protección debe acompañar el trabajo de extricación y herramientas especializadas.",
+  "LORICA prepara cotizaciones por partida para cuerpos municipales, voluntarios y brigadas en Colima. Aporta especificaciones técnicas para licitación o compra directa, CFDI 4.0, venta sin compra mínima y envío al estado. Las compras pueden incluir <a href=\"/herramientas/\">herramientas para bomberos</a> cuando la operación necesite reforzar rescate o control de incidentes."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Colima?",
-   "a": "El directorio registra 18 estaciones de bomberos en Colima distribuidas en 10 municipios. La cifra corresponde a las fichas con corporación identificada y puede crecer al confirmar nuevas estaciones con fuente pública. Cada registro permite revisar tipo de servicio, ubicación disponible y datos de contacto cuando fueron localizados."
+   "q": "¿Cuántas estaciones de bomberos hay en Colima y dónde están?",
+   "a": "Hay 18 estaciones localizadas en 10 municipios de Colima. Manzanillo concentra 6 y Colima 3; Tecomán tiene 2. También existen corporaciones en Armería, Comala, Coquimatlán, Cuauhtémoc, Ixtlahuacán, Minatitlán y Villa de Álvarez."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Colima?",
-   "a": "Manzanillo concentra 6 fichas, seguido del municipio de Colima con 3 y Tecomán con 2. Para localizar bomberos en Manzanillo o en otra zona, usa el índice municipal y revisa el tipo de corporación: hay unidades municipales, voluntarias y servicios vinculados con instalaciones específicas. No todas las fichas tienen los mismos datos públicos."
+   "q": "¿Quién opera los cuerpos de bomberos en Colima?",
+   "a": "Los cuerpos de bomberos en Colima incluyen unidades municipales, corporaciones voluntarias y la Unidad Estatal de Protección Civil. En Manzanillo también figuran brigadas de PEMEX, CFE, industria, puerto y aeropuerto, con funciones vinculadas a esas instalaciones."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Colima?",
-   "a": "Las estaciones de bomberos en Colima registradas son operadas principalmente por corporaciones municipales y voluntarias. También aparecen una instancia estatal y servicios de PEMEX, CFE, industria y aeropuerto. La ficha de cada sitio nombra la corporación para que se identifique si su atención corresponde a una unidad pública o especializada."
+   "q": "¿Cómo contactar a una estación de bomberos en Colima para una gestión?",
+   "a": "Para una gestión en Colima, localiza la estación por municipio y usa el teléfono oficial cuando se encuentre disponible para asuntos institucionales, dictámenes o donativos. Si existe una emergencia, llama al 911 para activar el auxilio correspondiente."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Colima?",
-   "a": "Ante una emergencia en Colima, marca 911. Los teléfonos que aparecen en algunas fichas del directorio no sustituyen esa llamada: se publican para trámites, visitas, capacitación o donaciones, cuando hay una fuente que los respalda. Consulta la ficha de la corporación correspondiente si necesitas contacto institucional no urgente."
+   "q": "¿Qué riesgos atienden los bomberos en Colima?",
+   "a": "Los bomberos en Colima declaran incendios estructurales, protección civil, rescate vehicular y atención prehospitalaria. Dependiendo de la corporación, también hay incendios forestales, materiales peligrosos, fugas de gas, incendios vehiculares y salvamento aeroportuario."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Colima?",
-   "a": "Para bomberos en Colima cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La selección puede partir de los servicios declarados por cada corporación, como incendio estructural, rescate vehicular, incendios forestales o materiales peligrosos, para solicitar una propuesta adecuada."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Colima?",
+   "a": "Una corporación de Colima puede comprar por licitación o compra directa con LORICA. Se preparan especificaciones técnicas por partida y CFDI 4.0, no hay compra mínima y el envío se programa al estado para el equipo elegido."
   }
  ]
 }

@@ -1,45 +1,39 @@
 {
- "lead": "Revisa 24 estaciones de bomberos en la Ciudad de México, distribuidas en 16 demarcaciones. Cada ficha ofrece corporación, rol de la sede, dirección, teléfono cuando hay fuente pública y ubicación exacta o aproximada para consultar el servicio por zona.",
- "descRight": [
-  "La red registrada tiene 23 fichas del Heroico Cuerpo de Bomberos de la Ciudad de México (HCBCDMX), organismo del gobierno capitalino, y una de aeropuerto. Iztapalapa concentra 3 estaciones; Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón tienen 2 cada una. El directorio señala una central y 22 subestaciones, todas del HCBCDMX.",
-  "El índice territorial permite ubicar bomberos en la Ciudad de México por demarcación y comparar los datos de cada sede. Todas las fichas incluyen dirección y ubicación exacta, y 23 tienen teléfono con fuente. Ante cualquier emergencia marca 911; los contactos directos son para visitas, trámites, capacitación o donaciones, no para auxilio inmediato."
- ],
- "municipiosDuo": [
-  "Iztapalapa registra 3 estaciones, la mayor concentración. Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón tienen 2 fichas. Las demarcaciones restantes del directorio cuentan con una referencia. El listado facilita buscar bomberos en Iztapalapa por sede y rol.",
-  "Las 24 estaciones aparecen en las 16 demarcaciones de la Ciudad de México. La distribución combina una estación central, subestaciones y una sede aeroportuaria. Es una relación documentada que puede ampliarse al confirmarse nuevas fichas con fuente pública; el mapa detallado de cada registro permite verificar la ubicación territorial antes de acudir."
+ "lead": "La Ciudad de México cuenta con 24 estaciones de bomberos en 16 alcaldías, con mayor concentración en Iztapalapa y varias en Álvaro Obregón. Encontrarás dirección, teléfono oficial, ubicación y corporación operadora para localizar la estación que necesitas.",
+ "panorama": [
+  "El servicio de bomberos en la Ciudad de México se organiza principalmente bajo el Heroico Cuerpo de Bomberos de la Ciudad de México (HCBCDMX), con una estación central y 22 subestaciones distribuidas por las alcaldías. A esta red se suma el cuerpo de salvamento aeroportuario del AICM. La estructura acerca bases operativas a distintas zonas de la capital sin dejar toda la atención en un solo cuartel.",
+  "Iztapalapa reúne 3 estaciones, mientras Álvaro Obregón, Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo y Venustiano Carranza tienen más de una estación. Para equipar bomberos en la Ciudad de México, esta distribución permite planear entregas por alcaldía y definir tallas o partidas según el uso de cada base."
  ],
  "estacionesDuo": [
-  "Cada ficha informa si la estación pertenece al HCBCDMX o al aeropuerto, junto con su rol: central, subestación o sede única. La mayor parte pertenece al HCBCDMX, incluidos puntos como Estación Central y Estación Iztapalapa; también aparece SSEI / CREI del Aeropuerto Internacional de la Ciudad de México. El rol aclara la función documental de cada referencia.",
-  "Las estaciones de bomberos en la Ciudad de México tienen dirección y ubicación exacta en las fichas registradas; el teléfono se muestra cuando existe fuente. Consulta esos datos para trámites, capacitación, visitas o donaciones. Para un incidente no esperes una respuesta por contacto administrativo: marca 911 y sigue las indicaciones de emergencia."
+  "El HCBCDMX da continuidad a la mayor parte de las estaciones, con módulos en Álvaro Obregón y Cuautepec, además de bases en otras alcaldías. El SSEI / CREI del AICM cubre el ámbito aeroportuario. Las estaciones de bomberos en la Ciudad de México están ordenadas por alcaldía y muestran teléfono oficial cuando está publicado."
  ],
  "coberturaDuo": [
-  "Incendios estructurales se declara en las 24 fichas. Incendios forestales aparece en 4, materiales peligrosos en 2 y rescate en altura y salvamento aeroportuario en una ficha cada uno. Estas categorías describen los servicios declarados en el directorio y no establecen la disponibilidad o alcance operativo de una estación determinada.",
-  "La información territorial es amplia: 23 fichas tienen teléfono, las 24 incluyen dirección y las 24 muestran ubicación exacta. Hay 17 registros de confianza alta. Al consultar bomberos en la Ciudad de México, estas cifras permiten saber qué datos están documentados y en qué casos conviene confirmar el contacto antes de una visita."
+  "Las 24 estaciones declaran incendios estructurales, lo que define la necesidad principal de protección contra calor y llama. También aparecen incendios forestales, materiales peligrosos y salvamento aeroportuario. La dotación de cada base debe responder a sus riesgos declarados y no solamente a su ubicación dentro de la ciudad."
  ],
  "equipoDuo": [
-  "Los registros mencionan incendios estructurales, forestales, materiales peligrosos, rescate en altura y salvamento aeroportuario. Para fuego urbano, consulta <a href=\"/trajes/estructural/\">trajes estructurales</a>; cuando exista exposición a sustancias peligrosas, revisa <a href=\"/trajes/hazmat/\">trajes Hazmat</a> con base en el agente y el procedimiento de seguridad aplicable.",
-  "Las tareas de altura y atención aeroportuaria pueden requerir configuraciones específicas de protección y accesorios. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a la Ciudad de México. La selección se plantea conforme al servicio declarado, las maniobras previstas y las especificaciones que comunique cada corporación."
+  "Los <a href=\"/trajes/estructural/\">trajes estructurales</a> son esenciales para la atención que declaran todas las estaciones. En las zonas con fuego forestal se requieren prendas forestales; para materiales peligrosos, protección Hazmat. El entorno aeroportuario requiere protección de aproximación, y los trabajos de altura se complementan con equipo de rescate definido para esa maniobra.",
+  "LORICA cotiza partidas con especificación técnica para procesos de licitación o compra directa de una corporación capitalina. La operación incluye CFDI 4.0, sin compra mínima y con envío a Ciudad de México. Una propuesta puede complementar la protección personal con <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> y cascos según la misión de la estación."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en la Ciudad de México?",
-   "a": "El directorio registra 24 estaciones de bomberos en la Ciudad de México, presentes en 16 demarcaciones. Hay 23 fichas del HCBCDMX y una de aeropuerto, con una central y 22 subestaciones. La relación no pretende ser un padrón completo: se actualiza cuando una nueva sede se puede comprobar mediante una fuente pública."
+   "q": "¿Cuántas estaciones de bomberos hay en la Ciudad de México y dónde están?",
+   "a": "Hay 24 estaciones de bomberos localizadas en 16 alcaldías de la Ciudad de México. Iztapalapa concentra 3, y Álvaro Obregón, Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo y Venustiano Carranza tienen varias bases."
   },
   {
-   "q": "¿Qué zonas tienen más estaciones de bomberos en la Ciudad de México?",
-   "a": "Iztapalapa concentra 3 fichas. Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Venustiano Carranza y Álvaro Obregón registran 2 cada una. Para buscar bomberos en la Ciudad de México, entra al índice por alcaldía y consulta el rol, dirección y ubicación exacta de la sede que te interese."
+   "q": "¿Quién opera los cuerpos de bomberos en la Ciudad de México?",
+   "a": "Los bomberos en la Ciudad de México son operados principalmente por el HCBCDMX, que cuenta con una estación central y subestaciones en distintas alcaldías. También aparece el SSEI / CREI del AICM, encargado del servicio de salvamento y extinción dentro de su ámbito aeroportuario."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en la Ciudad de México?",
-   "a": "La mayoría de las estaciones de la Ciudad de México pertenece al HCBCDMX, organismo del gobierno de la Ciudad; además hay una sede de aeropuerto, SSEI / CREI del Aeropuerto Internacional de la Ciudad de México. La ficha indica si se trata de central, subestación o sede única para que puedas interpretar correctamente cada referencia."
+   "q": "¿Cómo contactar a una estación de bomberos en la Ciudad de México para una gestión?",
+   "a": "Identifica la alcaldía y la estación del HCBCDMX correspondiente; casi todas muestran teléfono oficial para capacitación, donaciones o dictámenes. Para una emergencia en la Ciudad de México llama al 911. El contacto administrativo sirve para gestión institucional, no para sustituir el aviso de emergencia."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en la Ciudad de México?",
-   "a": "Ante una emergencia en la Ciudad de México marca 911. Los teléfonos de las fichas se muestran cuando cuentan con fuente pública y se destinan a trámites, visitas, capacitación o donaciones. No sustituyen el canal de auxilio. Para una gestión no urgente con bomberos en la Ciudad de México, localiza primero la estación correspondiente."
+   "q": "¿Qué riesgos atienden los bomberos en la Ciudad de México?",
+   "a": "Las estaciones de la Ciudad de México declaran atención de incendios estructurales en toda la red. Algunas suman fuego forestal, materiales peligrosos y rescate en altura. El cuerpo aeroportuario declara salvamento aeroportuario, por lo que la protección necesaria cambia entre actividades y bases."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en la Ciudad de México?",
-   "a": "Cotizamos trajes y equipo para bomberos en la Ciudad de México de acuerdo con los riesgos y tareas que se requieran atender. Incluimos ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Puedes solicitar opciones para fuego estructural, materiales peligrosos, rescate en altura o salvamento aeroportuario."
+   "q": "¿Cómo compra equipo una corporación de bomberos en la Ciudad de México?",
+   "a": "Una corporación de bomberos en la Ciudad de México puede comprar por licitación o compra directa. LORICA prepara especificación técnica por partida, proporciona CFDI 4.0 y no exige compra mínima. El envío se coordina a la alcaldía o base que indique la corporación, conforme a los riesgos que cubre."
   }
  ]
 }

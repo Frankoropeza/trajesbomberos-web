@@ -1,45 +1,39 @@
 {
- "lead": "El directorio reúne 7 estaciones de bomberos en Baja California Sur, presentes en 5 municipios. Las fichas permiten identificar corporación, ubicación, teléfono cuando hay fuente pública y el grado de precisión con que puede ubicarse cada sede.",
- "descRight": [
-  "Baja California Sur tiene 4 registros municipales, 2 de voluntarios y una estación de aeropuerto. Los Cabos reúne 3 fichas, mientras Comondú, La Paz, Loreto y Mulegé registran una cada uno. No aparecen centrales ni subestaciones, de modo que el listado distingue sedes únicas y las corporaciones que las operan.",
-  "Usa el índice por municipio para encontrar bomberos en Baja California Sur y abre la ficha para revisar mapa, dirección y contacto si existe fuente. Solo 2 registros muestran teléfono. Para incidentes urgentes, marca 911; los teléfonos de las fichas se reservan para trámites, visitas, capacitación o donaciones."
- ],
- "municipiosDuo": [
-  "Los Cabos concentra 3 estaciones, por lo que es la principal agrupación del estado. Comondú, La Paz, Loreto y Mulegé cuentan con una ficha cada uno. Quien busque bomberos en La Paz puede partir de su registro municipal y confirmar ahí el dato territorial disponible antes de acudir.",
-  "La cobertura registrada se limita a 7 estaciones en 5 municipios. Por su alcance, esta relación no pretende afirmar que contiene todas las sedes de Baja California Sur: se amplía cuando una nueva estación puede confirmarse con fuente pública. El mapa aclara si la ubicación es exacta o aproximada."
+ "lead": "Baja California Sur reúne 7 estaciones de bomberos en 5 municipios, con mayor presencia en Los Cabos. Incluye dirección, teléfono oficial cuando existe, ubicación y la corporación que opera cada estación para ubicar bomberos en Baja California Sur.",
+ "panorama": [
+  "El servicio de bomberos en Baja California Sur combina cuerpos municipales con agrupaciones voluntarias en Los Cabos y un servicio aeroportuario. La Paz, Loreto, Comondú y Mulegé cuentan con corporaciones propias; en San José del Cabo y Cabo San Lucas participan bomberos voluntarios. Es una operación distribuida por municipio, sin centrales ni subestaciones dentro de las estaciones localizadas.",
+  "Los Cabos concentra 3 estaciones y reúne servicio voluntario junto con la atención aeroportuaria. Para quien coordina una corporación o una brigada, esa convivencia pide definir equipos por función y mantener compatibilidad entre protección estructural, rescate y atención prehospitalaria. En La Paz y Mulegé también hay servicios forestales declarados, un dato útil al planear dotaciones locales."
  ],
  "estacionesDuo": [
-  "Las fichas indican si una sede es municipal, voluntaria o de aeropuerto y señalan el rol disponible, aquí como sede única. Entre las corporaciones aparecen el Heroico Cuerpo de Bomberos de La Paz y el Departamento de Bomberos de San José del Cabo. El tipo permite entender el contexto institucional de cada registro.",
-  "Consulta dirección y teléfono únicamente donde se presentan, pues dependen de una fuente pública. El mapa diferencia ubicaciones exactas de referencias aproximadas. Esta información es útil para visitas programadas o contacto administrativo; no debe usarse como sustituto de los canales de emergencia de bomberos en Baja California Sur."
+  "Las estaciones de bomberos en Baja California Sur incluyen al Heroico Cuerpo de Bomberos de La Paz, el Departamento de Bomberos de San José del Cabo y el H. Cuerpo de Bomberos de Cabo San Lucas. Están ordenadas por municipio; cuando hay teléfono oficial, se muestra junto a la estación."
  ],
  "coberturaDuo": [
-  "Incendios estructurales se declaran en las 7 fichas y protección civil en 6. La atención prehospitalaria aparece en 4, mientras incendios forestales y rescate vehicular figuran en 2. También hay referencias de rescate acuático, capacitación y salvamento aeroportuario. Las categorías describen lo publicado por cada registro.",
-  "Solo 2 fichas tienen teléfono, 3 incorporan dirección y una muestra ubicación exacta. El directorio de estaciones de bomberos en Baja California Sur registra 2 fichas de confianza alta. Estas diferencias explican por qué conviene verificar la ficha específica antes de planear una visita o solicitar información."
+  "Los 7 servicios declarados para incendios estructurales marcan la base de la cobertura. También aparecen incendios forestales, rescate vehicular y rescate acuático, mientras Los Cabos suma salvamento aeroportuario. El equipo debe considerar protección estructural, rescate y operación en áreas abiertas."
  ],
  "equipoDuo": [
-  "Los servicios declarados combinan incendios estructurales, forestales, rescate vehicular, atención prehospitalaria y salvamento aeroportuario. Un análisis de riesgo puede llevar a <a href=\"/trajes/forestal/\">trajes forestales</a> para fuego de vegetación o a <a href=\"/trajes/aproximacion/\">trajes de aproximación</a> para escenarios aeroportuarios, según el protocolo aplicable.",
-  "Para rescate vehicular, la protección debe permitir la operación segura durante maniobras de extricación. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Baja California Sur. Definir el equipo por servicio declarado ayuda a mantener la consulta centrada en la necesidad operativa."
+  "Para bomberos en Baja California Sur, el incendio estructural requiere <a href=\"/trajes/estructural/\">trajes estructurales</a> como base inicial. Donde se declaran incendios forestales, hacen falta <a href=\"/trajes/forestal/\">trajes forestales</a>; el rescate vehicular pide protección adecuada para maniobras de extricación. El servicio aeroportuario puede requerir equipo de aproximación según su operación.",
+  "LORICA prepara una especificación técnica por partida para compra directa o licitación, con respaldo documental para integrar el expediente. La corporación recibe factura CFDI 4.0, no tiene compra mínima y puede solicitar envío a Baja California Sur. También puede complementar la dotación con <a href=\"/cascos/\">cascos para bombero</a> de acuerdo con el uso previsto."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Baja California Sur?",
-   "a": "El directorio registra 7 estaciones de bomberos en Baja California Sur, repartidas en 5 municipios. Incluye 4 estaciones municipales, 2 voluntarias y una de aeropuerto. La cifra no representa necesariamente todas las sedes del estado: el listado crece cuando se confirman nuevas estaciones mediante una fuente pública."
+   "q": "¿Cuántas estaciones de bomberos hay en Baja California Sur y dónde están?",
+   "a": "Hay 7 estaciones localizadas en 5 municipios de Baja California Sur. Los Cabos concentra 3; también hay corporaciones en Comondú, La Paz, Loreto y Mulegé. Cada ubicación incluye los datos disponibles para identificar a la corporación responsable."
   },
   {
-   "q": "¿Qué municipio tiene más estaciones de bomberos en Baja California Sur?",
-   "a": "Los Cabos concentra 3 fichas; Comondú, La Paz, Loreto y Mulegé tienen una cada uno. Para localizar bomberos en La Paz o en cualquier municipio de Baja California Sur, usa el índice territorial y consulta la ficha para conocer la corporación, los datos de dirección disponibles y la precisión de la ubicación en el mapa."
+   "q": "¿Quién opera los cuerpos de bomberos en Baja California Sur?",
+   "a": "En Baja California Sur participan cuerpos municipales en Comondú, La Paz, Loreto y Mulegé, además de bomberos voluntarios en Los Cabos. También figura el servicio aeroportuario de Los Cabos, con una función distinta a la atención municipal."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Baja California Sur?",
-   "a": "Las estaciones de Baja California Sur registran operación municipal, voluntaria y de aeropuerto. Ejemplos son el Heroico Cuerpo de Bomberos de La Paz, el H. Cuerpo de Bomberos de Cabo San Lucas y el SSEI del Aeropuerto Internacional de Los Cabos. Cada ficha especifica el tipo de corporación asociado a la sede."
+   "q": "¿Cómo contactar a una estación de bomberos en Baja California Sur para una gestión?",
+   "a": "Ubica la estación de Baja California Sur por municipio y usa su teléfono oficial cuando esté publicado para asuntos institucionales, solicitudes de dictamen o donativos. Para una emergencia, llama al 911; no uses estos datos como sustituto de la atención inmediata."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Baja California Sur?",
-   "a": "Para una emergencia en Baja California Sur llama al 911. Los teléfonos que aparecen en algunas fichas se incluyen solamente cuando existe fuente pública y son adecuados para trámites, visitas, capacitación o donaciones. No reemplazan el contacto de emergencia, incluso si buscas bomberos en Baja California Sur desde un municipio listado."
+   "q": "¿Qué riesgos atienden los bomberos en Baja California Sur?",
+   "a": "Los bomberos en Baja California Sur declaran atención a incendios estructurales, protección civil y atención prehospitalaria. En algunas corporaciones también aparecen incendios forestales, rescate vehicular, rescate acuático y salvamento aeroportuario, según la estación."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Baja California Sur?",
-   "a": "Atendemos cotizaciones de trajes y equipo para bomberos en Baja California Sur según el escenario de trabajo. Entregamos ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Se pueden solicitar alternativas para incendio estructural, forestal, rescate vehicular o salvamento aeroportuario."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Baja California Sur?",
+   "a": "Una corporación de Baja California Sur puede comprar por licitación o compra directa. LORICA entrega especificaciones técnicas por partida, factura CFDI 4.0, no exige compra mínima y coordina el envío al estado conforme a los productos seleccionados."
   }
  ]
 }

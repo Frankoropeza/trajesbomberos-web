@@ -1,45 +1,39 @@
 {
- "lead": "Encuentra 24 estaciones de bomberos en Michoacán registradas en 14 municipios. Cada ficha presenta ubicación, corporación y fuente, con datos de dirección, teléfono y precisión de mapa cuando están disponibles.",
- "descRight": [
-  "El registro de Michoacán integra 14 estaciones municipales, 4 voluntarias, 2 industriales, 2 de PEMEX, una aeroportuaria y una estatal. Hay 3 centrales y 3 subestaciones. Lázaro Cárdenas y Morelia concentran 5 estaciones cada uno, con perfiles distintos de servicio público, industrial y especializado.",
-  "Consulta las estaciones de bomberos en Michoacán desde el índice municipal y utiliza el mapa para revisar las referencias de ubicación. Cada ficha muestra teléfono solo cuando existe fuente, además de dirección y precisión de localización. Para una emergencia corresponde marcar 911; los contactos registrados apoyan trámites, visitas, capacitación o donaciones."
- ],
- "municipiosDuo": [
-  "Lázaro Cárdenas y Morelia concentran 5 estaciones registradas cada uno. Quien busca bomberos en Morelia encontrará una central, subestaciones, un registro estatal y uno aeroportuario. En Lázaro Cárdenas, el índice reúne corporación municipal, voluntaria, industrial y de PEMEX para mostrar la diversidad de sus fichas.",
-  "Uruapan y Zamora tienen 2 registros cada uno; los otros 10 municipios aparecen con una estación. Esa distribución no implica que no existan más bomberos en Michoacán fuera del directorio: el registro se amplía cuando se confirma una estación adicional mediante fuente pública y se puede documentar su ubicación y corporación."
+ "lead": "Michoacán reúne 24 estaciones de bomberos en 14 municipios. Lázaro Cárdenas y Morelia cuentan con 5 sedes cada uno; Uruapan y Zamora tienen 2. Se muestran dirección, ubicación, teléfono oficial cuando existe y corporación operadora.",
+ "panorama": [
+  "Corporaciones municipales y voluntarias articulan los bomberos en Michoacán. Morelia y Lázaro Cárdenas reúnen centrales, bases municipales, brigadas industriales y atención de PEMEX; también participa la Coordinación Estatal de Protección Civil Michoacán. Cada operación debe definir sus requerimientos con el mando responsable.",
+  "Lázaro Cárdenas y Morelia agrupan 5 estaciones cada uno, mientras Uruapan y Zamora tienen 2. Para equipar bomberos en Michoacán, esta concentración ayuda a organizar entregas por corporación. Aun así, brigadas industriales, PEMEX y cuerpos municipales de Lázaro Cárdenas requieren partidas acordes con sus riesgos."
  ],
  "estacionesDuo": [
-  "Las fichas clasifican cada sede como municipal, voluntaria, industrial, PEMEX, aeroportuaria o estatal, y anotan si funciona como central, subestación o única. Entre las corporaciones listadas están la Coordinación Municipal de Protección Civil y Bomberos de Morelia y el H. Cuerpo de Bomberos de la ASIPONA Lázaro Cárdenas.",
-  "Antes de acudir, revisa el tipo de ubicación indicado y confirma si existe dirección o teléfono con fuente. El mapa diferencia referencias exactas de aproximadas. Esta información permite leer con cuidado una base de Bomberos Morelia, una estación de la Coordinación Estatal de Protección Civil Michoacán o un registro de brigada especializada."
+  "La Coordinación Municipal de Protección Civil y Bomberos de Morelia y la Dirección de Protección Civil y Bomberos de Lázaro Cárdenas agrupan varias operaciones. Participan BECAPE, la ASIPONA y brigadas de PEMEX e industria. Las estaciones aparecen por municipio, con teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Las 24 fichas reportan incendios estructurales; 19 declaran atención prehospitalaria y 17 rescate vehicular. Incendios forestales aparecen en 6 registros y materiales peligrosos en 5. El directorio muestra estos servicios como atributos de cada ficha, sin extenderlos automáticamente a otras estaciones de Michoacán.",
-  "Hay teléfono respaldado por una fuente pública en 10 fichas, dirección en 13 y ubicación exacta en 13; 15 registros alcanzan confianza alta. La disponibilidad desigual de esos datos refleja lo que cada fuente permite identificar. Conviene consultarlos junto con la corporación y el rol de la sede para una búsqueda de bomberos en Michoacán más precisa."
+  "Las 24 estaciones declaran incendios estructurales y 17 rescate vehicular. Seis incluyen incendios forestales, mientras materiales peligrosos se presenta en 5, relevante para la operación industrial y portuaria. Hay salvamento aeroportuario, fugas de gas y rescate en altura; la dotación debe responder a cada servicio."
  ],
  "equipoDuo": [
-  "El registro concentra incendios estructurales, atención prehospitalaria y rescate vehicular, con presencia de materiales peligrosos e incendios forestales. Para esos frentes se pueden revisar <a href=\"/trajes/estructural/\">trajes estructurales</a>, <a href=\"/trajes/extricacion/\">equipo de extricación</a> y <a href=\"/trajes/hazmat/\">trajes Hazmat</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Michoacán.",
-  "La ficha con salvamento aeroportuario y los registros industriales requieren valorar el riesgo concreto antes de comprar protección. Un <a href=\"/trajes/aproximacion/\">traje de aproximación</a> puede responder a un escenario térmico especializado. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Michoacán."
+  "La atención estructural requiere protección térmica para el trabajo cotidiano. Las corporaciones con incendios forestales necesitan <a href=\"/trajes/forestal/\">trajes forestales</a>; para rescate vehicular son pertinentes prendas de extricación. Las brigadas que atienden materiales peligrosos o fugas de gas deben evaluar <a href=\"/trajes/hazmat/\">protección Hazmat</a>, junto con respiración autónoma según su procedimiento.",
+  "Al cotizar para Michoacán, LORICA presenta la especificación técnica de cada partida para respaldar una licitación o compra directa. Emite CFDI 4.0, no establece compra mínima y coordina el envío al estado. La solicitud puede sumar <a href=\"/cascos/\">cascos para bomberos</a>, botas, guantes y complementos según el riesgo."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Michoacán?",
-   "a": "El directorio registra 24 estaciones de bomberos en Michoacán repartidas en 14 municipios. La cifra se refiere a las fichas publicadas con corporación, fuente y referencias de ubicación; no asegura abarcar todas las estaciones del estado. Se agregan nuevas fichas cuando una estación puede confirmarse con una fuente pública."
+   "q": "¿Cuántas estaciones de bomberos hay en Michoacán y dónde están?",
+   "a": "Hay 24 estaciones de bomberos localizadas en 14 municipios de Michoacán. Lázaro Cárdenas y Morelia concentran 5 cada uno, y Uruapan y Zamora cuentan con 2. También hay presencia en Huetamo, La Piedad, Pátzcuaro, Sahuayo, Tacámbaro, Tarímbaro, Zacapu y Zitácuaro."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones y dónde hay bomberos en Michoacán?",
-   "a": "Lázaro Cárdenas y Morelia concentran 5 estaciones registradas cada uno. Para bomberos en Morelia hay una central, subestaciones y registros estatal y aeroportuario. Uruapan y Zamora tienen 2 fichas cada uno. El índice municipal permite ubicar estas corporaciones y revisar sus datos disponibles."
+   "q": "¿Quién opera los cuerpos de bomberos en Michoacán?",
+   "a": "Los bomberos en Michoacán son atendidos por corporaciones municipales, cuerpos voluntarios, brigadas industriales y de PEMEX, además de la Coordinación Estatal de Protección Civil Michoacán. En Lázaro Cárdenas intervienen también organizaciones vinculadas con actividad portuaria e industrial."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Michoacán?",
-   "a": "El listado de estaciones de bomberos en Michoacán incluye corporaciones municipales y voluntarias, además de registros industriales, de PEMEX, aeroportuario y estatal. La ficha señala el tipo de operación y el rol como central, subestación o sede única. Esa clasificación evita atribuir a una corporación funciones que no declara."
+   "q": "¿Cómo contactar a una estación de bomberos en Michoacán para una gestión?",
+   "a": "Ubica la estación en su municipio y usa el teléfono oficial publicado para una gestión, donación, capacitación o dictamen. Comunícate con la corporación que opera el servicio. Ante una emergencia en Michoacán llama al 911 para que se canalice la atención."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Michoacán?",
-   "a": "Para una emergencia en Michoacán marca 911. Los teléfonos mostrados en las fichas de bomberos son datos de contacto para trámites, visitas, capacitación o donaciones, y no reemplazan la atención de emergencia. Revisa el listado para identificar los contactos que cuenten con fuente pública y ubicación de referencia."
+   "q": "¿Qué riesgos atienden los bomberos en Michoacán?",
+   "a": "Los bomberos en Michoacán declaran incendios estructurales, atención prehospitalaria y rescate vehicular. También aparecen incendios forestales, materiales peligrosos, fugas de gas, rescate en altura y salvamento aeroportuario. El perfil industrial y portuario de Lázaro Cárdenas suma necesidades específicas."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Michoacán?",
-   "a": "Cotizamos trajes y equipo para bomberos en Michoacán conforme al tipo de riesgo que se atiende. Incluimos ficha técnica y factura CFDI 4.0, no exigimos compra mínima y enviamos a Michoacán. Indica si el requerimiento es estructural, forestal, de rescate vehicular o de materiales peligrosos para orientar la selección."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Michoacán?",
+   "a": "Una corporación de bomberos en Michoacán puede adquirir equipo mediante licitación o compra directa. LORICA aporta especificación técnica por partida, emite CFDI 4.0, no solicita compra mínima y organiza el envío al estado con la protección requerida."
   }
  ]
 }

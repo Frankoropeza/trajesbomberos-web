@@ -1,45 +1,39 @@
 {
- "lead": "El directorio registra 9 estaciones de bomberos en Guerrero, localizadas en 3 municipios. Cada ficha indica ubicación, corporación y fuente, además de señalar cuando hay dirección, teléfono o referencia exacta en el mapa.",
- "descRight": [
-  "La cobertura registrada en Guerrero reúne 6 estaciones municipales, 2 aeroportuarias y una estatal. Hay una central y 3 subestaciones. Acapulco de Juárez concentra 5 fichas, mientras Chilpancingo de los Bravo y Zihuatanejo de Azueta tienen 2 cada uno. Es un registro acotado que crecerá al confirmar nuevas estaciones con fuente pública.",
-  "El listado se organiza por municipio para ubicar estaciones de bomberos en Guerrero y contrastar corporación, teléfono, dirección y mapa. Solo se muestra teléfono cuando existe respaldo en la fuente; la ubicación puede ser exacta o aproximada. Ante una emergencia marca 911: los contactos de las fichas sirven para trámites, visitas, capacitación o donaciones."
- ],
- "municipiosDuo": [
-  "Acapulco de Juárez concentra 5 de las 9 estaciones registradas, incluyendo una central y 3 subestaciones. Para quien busca bomberos en Acapulco de Juárez, el índice permite distinguir las bases municipales del registro aeroportuario y consultar los datos que acompañan a cada ficha.",
-  "Chilpancingo de los Bravo, capital de Guerrero, tiene 2 registros y Zihuatanejo de Azueta otros 2. Fuera de esos 3 municipios, el directorio no presenta más estaciones por ahora. La cifra no pretende describir todas las corporaciones de Guerrero; se amplía conforme se validan nuevas fuentes públicas."
+ "lead": "Guerrero tiene 9 estaciones de bomberos en 3 municipios, con mayor concentración en Acapulco de Juárez. Consulta dirección, teléfono oficial cuando existe, ubicación y corporación operadora para localizar el servicio en Acapulco, Chilpancingo o Zihuatanejo.",
+ "panorama": [
+  "En Guerrero predominan las corporaciones municipales, encabezadas por la Coordinación General de Protección Civil y Bomberos de Acapulco. El servicio se complementa con la Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero y dos cuerpos de rescate aeroportuario. Acapulco opera una central con subestaciones, mientras Chilpancingo y Zihuatanejo cuentan con sus propios cuerpos municipales.",
+  "Cinco de las estaciones se ubican en Acapulco de Juárez; Chilpancingo de los Bravo y Zihuatanejo de Azueta reúnen las demás. Para equipar bomberos en Guerrero, conviene separar las necesidades de las bases municipales de los servicios aeroportuarios. La presencia de rescate acuático en Acapulco y Zihuatanejo también cambia las prioridades de una corporación costera."
  ],
  "estacionesDuo": [
-  "Cada registro identifica su tipo de corporación —municipal, aeroportuaria o estatal— y el rol de la sede: central, subestación o única. Se incluyen la Coordinación General de Protección Civil y Bomberos de Acapulco y la SGIRPC — Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero, con fichas separadas.",
-  "La ficha también comunica si hay dirección, teléfono y ubicación exacta. Cuando una referencia no alcanza ese nivel, se trata como aproximada para no confundirla con una localización precisa. Esta lectura resulta útil al comparar las subestaciones de Bomberos Acapulco con los registros del CREI de los aeropuertos del estado."
+  "La Coordinación General de Protección Civil y Bomberos de Acapulco opera una central y varias subestaciones. Se suman el H. Cuerpo de Bomberos de Chilpancingo de los Bravo, el de Zihuatanejo de Azueta y los CREI aeroportuarios. El listado está ordenado por municipio e incorpora teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Los 9 registros declaran incendios estructurales; 6 mencionan rescate vehicular y 6 atención prehospitalaria. Hay 2 fichas con materiales peligrosos, salvamento aeroportuario, incendios forestales y rescate acuático. Estas son referencias de servicio declaradas por ficha, no una garantía de disponibilidad para toda estación de Guerrero.",
-  "En Guerrero hay teléfono respaldado por una fuente pública en 2 fichas, dirección en 6 y ubicación exacta en 6; 3 registros son de confianza alta. La diferencia de campos refleja la información confirmada para cada sede. Consultar la fuente y el tipo de ubicación ayuda a aprovechar la página como guía de referencias, no como canal de emergencia."
+  "Las 9 estaciones reportan incendios estructurales; 6 incluyen rescate vehicular y atención prehospitalaria. En Acapulco y Zihuatanejo aparecen también rescate acuático, mientras los dos CREI atienden salvamento aeroportuario y materiales peligrosos. Esa mezcla demanda una dotación diferenciada, no un solo paquete para toda la operación."
  ],
  "equipoDuo": [
-  "En Guerrero se declaran incendios estructurales, rescate vehicular, rescate acuático y materiales peligrosos. La protección debe corresponder al riesgo: revisa <a href=\"/trajes/estructural/\">trajes estructurales</a>, <a href=\"/trajes/extricacion/\">equipo de extricación</a> y <a href=\"/trajes/hazmat/\">trajes Hazmat</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Guerrero.",
-  "Los servicios de incendios forestales y salvamento aeroportuario reportados requieren evaluar el entorno antes de definir el equipo. Pueden ser relevantes <a href=\"/trajes/forestal/\">trajes forestales</a> y <a href=\"/trajes/aproximacion/\">trajes de aproximación</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Guerrero."
+  "Las corporaciones municipales requieren protección estructural para su respuesta cotidiana. Donde se declara fuego forestal son adecuados <a href=\"/trajes/forestal/\">trajes forestales</a>; para rescate vehicular hacen falta prendas de extricación. Los CREI deben valorar protección de aproximación y, cuando hay materiales peligrosos, <a href=\"/trajes/hazmat/\">trajes Hazmat</a> según la intervención prevista.",
+  "LORICA organiza la especificación técnica de cada partida para compra directa o licitación y entrega el expediente solicitado. La facturación se emite con CFDI 4.0, no existe compra mínima y el envío llega a Guerrero. Una corporación puede completar la dotación con <a href=\"/botas/\">botas para bomberos</a>, cascos y guantes definidos por su mando."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Guerrero?",
-   "a": "El directorio registra 9 estaciones de bomberos en Guerrero, ubicadas en 3 municipios. Esta cifra cuenta las fichas que cuentan con corporación, fuente y una referencia de ubicación; no afirma representar todas las estaciones del estado. El directorio puede crecer cuando se confirme una nueva estación a partir de una fuente pública."
+   "q": "¿Cuántas estaciones de bomberos hay en Guerrero y dónde están?",
+   "a": "Hay 9 estaciones de bomberos localizadas en 3 municipios de Guerrero. Acapulco de Juárez concentra 5, y Chilpancingo de los Bravo y Zihuatanejo de Azueta cuentan con 2 estaciones cada uno. Operan corporaciones municipales, estatales y aeroportuarias."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones y dónde hay bomberos en Guerrero?",
-   "a": "Acapulco de Juárez reúne 5 estaciones registradas y es el principal municipio para consultar bomberos en Acapulco de Juárez. Chilpancingo de los Bravo, capital de Guerrero, y Zihuatanejo de Azueta cuentan con 2 fichas cada uno. El índice permite abrir cada registro y revisar su corporación y datos disponibles."
+   "q": "¿Quién opera los cuerpos de bomberos en Guerrero?",
+   "a": "Los bomberos en Guerrero son atendidos principalmente por corporaciones municipales de Acapulco, Chilpancingo y Zihuatanejo. También participa la Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero, junto con los cuerpos de rescate y extinción de incendios aeroportuarios."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Guerrero?",
-   "a": "Las estaciones de bomberos en Guerrero que aparecen en el directorio son principalmente municipales, junto con 2 registros aeroportuarios y uno estatal. Cada ficha identifica la corporación y su rol como central, subestación o única. De esta manera se diferencia una base municipal de un servicio aeroportuario o de protección civil estatal."
+   "q": "¿Cómo contactar a una estación de bomberos en Guerrero para una gestión?",
+   "a": "Busca la estación por municipio y consulta el teléfono oficial cuando se encuentre publicado para una capacitación, una donación o un dictamen. Dirige la solicitud a la corporación que opera la estación. Para una emergencia llama al 911, que es el canal de respuesta inmediata."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Guerrero?",
-   "a": "Si ocurre una emergencia en Guerrero, marca 911. Los teléfonos disponibles en las fichas de estaciones de bomberos son para trámites, visitas, capacitación o donaciones y no sustituyen la llamada de emergencia. El directorio permite consultar las referencias publicadas de cada corporación, incluyendo su ubicación cuando está disponible."
+   "q": "¿Qué riesgos atienden los bomberos en Guerrero?",
+   "a": "Los bomberos en Guerrero declaran incendios estructurales, rescate vehicular y atención prehospitalaria. En Acapulco y Zihuatanejo hay rescate acuático; los cuerpos aeroportuarios incluyen salvamento aeroportuario y materiales peligrosos. También se reportan intervenciones por incendios forestales."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Guerrero?",
-   "a": "Para bomberos en Guerrero cotizamos trajes y equipo a partir del riesgo que se atiende. La propuesta incluye ficha técnica y factura CFDI 4.0, sin compra mínima y con envío a Guerrero. Describe el servicio requerido, ya sea estructural, forestal, de rescate o de materiales peligrosos, para orientar la selección."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Guerrero?",
+   "a": "Una corporación de bomberos en Guerrero puede comprar mediante licitación o compra directa. LORICA entrega especificación técnica por partida y el expediente de soporte, emite CFDI 4.0, no establece compra mínima y coordina el envío al estado conforme a sus riesgos."
   }
  ]
 }

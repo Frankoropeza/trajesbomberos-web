@@ -6,10 +6,9 @@ import StatsRow from './StatsRow.astro';
 import DataTable from './DataTable.astro';
 import { RESUMEN_NACIONAL as N, RESUMEN_ESTADOS, TIPO_DESC, rutaEstado, pct, nf, enEstado } from '@lib/directorio';
 
-const alta = N.confianza.find(([c]) => c === 'alta')?.[1] ?? 0;
 const stats = [
-  { n: nf(N.total), label: 'estaciones registradas', note: `en ${N.estados} entidades federativas` },
-  { n: nf(N.municipios), label: 'municipios y alcaldías', note: 'con al menos una estación registrada' },
+  { n: nf(N.total), label: 'estaciones localizadas', note: `en ${N.estados} entidades federativas` },
+  { n: nf(N.municipios), label: 'municipios y alcaldías', note: 'con al menos una estación' },
   { n: pct(N.conFuente, N.total), label: 'con fuente pública citada', note: 'INEGI, gobiernos y corporaciones' },
   { n: nf(N.coordExactas), label: 'con ubicación exacta', note: `${pct(N.coordExactas, N.total)} del directorio` },
 ];
@@ -23,12 +22,12 @@ const top = [...RESUMEN_ESTADOS].sort((a, b) => b.total - a.total || a.nombre.lo
     rows={N.porTipo.map(([t, n]) => [t, nf(n), pct(n, N.total), TIPO_DESC[t] ?? ''])}
   />
   <DataTable
-    caption="Estados con más estaciones registradas"
+    caption="Estados con más estaciones de bomberos"
     cols={[{ label: '#', num: true, accent: true }, { label: 'Estado' }, { label: 'Estaciones', num: true }, { label: 'Municipios', num: true }]}
     rows={top.map((e, i) => [String(i + 1).padStart(2, '0'), { text: `Bomberos ${enEstado(e)}`, href: rutaEstado(e.slug) }, e.total, e.municipios])}
   />
 </div>
-<p class="cd-note">Nivel de confianza declarado por ficha: {nf(alta)} estaciones con confianza alta y el resto con confianza media o baja; el nivel se indica en cada ficha. El directorio no pretende ser un censo oficial: registra solo las estaciones con fuente pública localizable.</p>
+<p class="cd-note">No existe un censo oficial de estaciones de bomberos en México: estas cifras corresponden a las estaciones que tenemos localizadas y verificadas con una fuente oficial, y crecen con cada revisión.</p>
 
 <style>
   .cd-tables {

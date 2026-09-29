@@ -1,194 +1,1377 @@
-import type { Modelo, Tipo } from '../types';
+// Datos del catálogo · sección «trajes-modelos» (trajesbomberos.com).
+// LITERAL PURO: sin funciones, sin mutaciones, sin plantillas. Se edita solo el texto;
+// `astro check` valida la estructura contra ../types. Generado por scripts/emit_data.py
+// (2026-09-29) a partir del contenido vigente; desde aquí se edita a mano o con Codex.
+import type { Modelo, Seccion, Tipo } from '../types';
 
-const proveedor = (archivo: string, alt: string, credito: string) => ({ src: `/images/catalogo/trajes/${archivo}`, alt, width: 1000, height: 1250, origen: 'proveedor' as const, credito });
-const ilustrativa = (src: string, alt: string) => ({ src, alt, width: 1600, height: 900, origen: 'ia' as const });
-const confirmar = 'Código según configuración; confírmalo al cotizar';
-type ModeloAmpliado = Modelo & { relacionados?: { label: string; href: string }[] };
-const ficha = (modelo: ModeloAmpliado): ModeloAmpliado => modelo;
-
-const piezasPorFamilia = {
-  estructural: [
-    { label: 'Chaquetón estructural de tres capas', href: '/trajes/estructural/chaqueton/' },
-    { label: 'Pantalonera estructural', href: '/trajes/estructural/pantalonera/' },
-    { label: 'Tirantes para pantalonera estructural', href: '/trajes/estructural/tirantes/' },
-    { label: 'Capucha o monja estructural', href: '/trajes/estructural/monja/' },
-  ],
-  brigadista: [
-    { label: 'Conjunto brigadista', href: '/trajes/brigadista/conjunto/' },
-    { label: 'Chaquetón brigadista', href: '/trajes/brigadista/chaqueton/' },
-    { label: 'Pantalonera brigadista', href: '/trajes/brigadista/pantalonera/' },
-    { label: 'Tirantes brigadistas', href: '/trajes/brigadista/tirantes/' },
-    { label: 'Capucha o monja brigadista', href: '/trajes/brigadista/monja/' },
-  ],
-  forestal: [
-    { label: 'Camisola forestal', href: '/trajes/forestal/camisola/' },
-    { label: 'Pantalón forestal', href: '/trajes/forestal/pantalon/' },
-    { label: 'Chamarra forestal', href: '/trajes/forestal/chamarra/' },
-    { label: 'Overol forestal', href: '/trajes/forestal/overol/' },
-  ],
-  aproximacion: [
-    { label: 'Chaquetón de aproximación', href: '/trajes/aproximacion/chaqueton/' },
-    { label: 'Pantalón de aproximación', href: '/trajes/aproximacion/pantalon/' },
-    { label: 'Capucha de aproximación', href: '/trajes/aproximacion/capucha/' },
-    { label: 'Guantes de aproximación', href: '/trajes/aproximacion/guantes/' },
-  ],
-} as const;
-
-const contenido: Record<string, Pick<ModeloAmpliado, 'title' | 'description' | 'resumen' | 'caracteristicas' | 'descripcion' | 'faq' | 'relacionados'>> = {
-  'romak-protector': {
-    title: 'Traje de bombero estructural Romak Fire Protector UL',
-    description: 'Traje de bombero estructural Romak Fire Protector: exterior PBI/Kevlar o Nomex/Kevlar, DRD, certificado UL MH14790, tallas y cotización con ficha técnica.',
-    resumen: [
-      'El Romak Fire Protector es el traje estructural que más cotizamos a cuerpos de bomberos municipales: chaquetón de 2.5 kg y pantalonera de 1.88 kg en tres capas, exterior a elegir entre PBI Gemini XTL (40 % PBI / 60 % Kevlar) o Nomex Brigade 7.5 oz, barrera térmica Defender, barrera de humedad Stedair 3000 o 4000 y certificación UL MH14790 bajo NFPA 1971:2018.',
-      'Se pide con cuatro datos —exterior, color, barrera de humedad y talla— y con eso te entregamos ficha técnica por partida, certificado UL y carta de distribuidor para tu pliego. Si vas a reponer piezas de un lote anterior, mándanos la etiqueta interior por WhatsApp y te confirmamos la misma configuración.',
-    ],
-    caracteristicas: ['Exterior PBI Gemini XTL o Brigade 7.5 oz, según configuración', 'Térmica Defender y humedad Stedair 3000 o 4000', 'DRD de cinta 100 % Kevlar y cuello de cuatro capas', 'Chaquetón con solapa de cinco pulgadas, tapa boca y porta radio bilateral', 'Dos bolsas cargo con fuelle y drenado; bolsa interior', 'Pantalón Tree Lock, tirantes H de cuatro u ocho puntos y ajustes laterales', 'Ara-Shield acolchado en hombros, codos, rodillas y talón', 'Tallas publicadas de S a 2XL para ambas prendas'],
-    descripcion: [
-      'Con el Protector la primera decisión es la tela exterior, y conviene tomarla con el presupuesto y el clima de tu zona en la mano: PBI Gemini XTL (40 % PBI y 60 % Kevlar) resiste mejor el calor radiante y no se vuelve quebradizo tras exposiciones repetidas, mientras que Brigade 7.5 oz (93 % Nomex, 5 % Kevlar y 2 % antiestático) cuesta menos y pesa parecido. El exterior fija los colores disponibles —natural gold, negro, amarillo u oro—, así que en la orden de compra escribimos siempre exterior, color, barrera de humedad y talla; «Protector» a secas no identifica la prenda.',
-      'El chaquetón está pensado para trabajar con máscara y monja puestas: cierre de zipper Nomex YKK con velcro FR y solapa de cinco pulgadas en cuatro capas, cuello de cuatro pulgadas, tapa boca Shield Fire abatible, puño Nomex Ultra Soft con abertura para el pulgar y pozo de agua. En la prueba de talla te pedimos levantar los brazos y mirar al techo con el casco puesto: si el cuello se abre o el puño se retrae más de 2 cm, cambiamos la talla antes de facturar.',
-      'El DRD (dispositivo de rescate por arrastre) es una cinta 100 % Kevlar cosida al chaquetón que tu compañero jala para sacarte de un piso; queda accesible con el ERA puesto, y en la recepción lo revisamos con el arnés colocado. Las bolsas cargo de 10 × 10 pulgadas con fuelle y drenado, la bolsa porta radio —a la izquierda o a la derecha, según cómo cargue tu cuerpo— y la bolsa interior se eligen en la cotización, porque un radio y una lámpara cambian cómo cae la prenda y la talla se prueba con ellos puestos.',
-      'La pantalonera cierra con el sistema Tree Lock: zipper Nomex YKK, velcro FR y broche de gancho con anillo D antichispa. Los tirantes en H vienen de cuatro u ocho puntos, y la prenda trae ajustes laterales, bolsas cargo, refuerzo diamante en la entrepierna, talón con resaque y rodilleras Ara-Shield acolchadas. Antes de aceptar un lote pedimos a un elemento ponerse en cuclillas, subir una escalera y entrar y salir de la unidad: el solape con el chaquetón tiene que mantenerse en las tres posiciones.',
-      'El Protector está certificado por UL con el número MH14790 bajo NFPA 1971:2018, y esa certificación cubre la configuración tal como se fabricó: si cambias capas o accesorios sin documentarlo, dejas de estar amparado. Te entregamos el certificado con el pedido y la ficha de inspección que marca NFPA 1850: exterior, cinta reflejante, costuras, cierres, puños, refuerzos y barreras después de cada uso; una prenda contaminada o dañada se aparta hasta que un centro de servicio la libere.',
-    ],
-    faq: [{ q: '¿Qué exterior puede llevar Protector?', a: 'PBI Gemini XTL o Brigade 7.5 oz; la configuración debe indicarse en la cotización.' }, { q: '¿Cuál es la certificación publicada?', a: 'UL MH14790 para NFPA 1971:2018.' }, { q: '¿Dónde se ubica el DRD?', a: 'En el chaquetón, como cinta 100 % Kevlar.' }, { q: '¿Qué cierre usa el pantalón?', a: 'Tree Lock con zipper Nomex, velcro FR y gancho con anillo D antichispa.' }, { q: '¿Qué tallas se publican?', a: 'Chaquetón de S a 2XL y pantalonera de S a 2XL, con rangos distintos por prenda.' }, { q: '¿Qué revisar en una reposición?', a: 'Exterior, barreras, color, talla, tirantes y accesorios, además del estado de la prenda sustituida.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'romak-profesional': {
-    title: 'Traje de bombero estructural Romak Fire Profesional UL',
-    description: 'Traje de bombero estructural Romak Fire Profesional: Brigade 7.5 oz, Stedair 3000 y Defender, opción de kit completo y cotización con ficha técnica.',
-    resumen: ['El Romak Fire Profesional es un traje estructural que cotizamos para corporaciones que buscan Brigade 7.5 oz —93 % Nomex, 5 % Kevlar y 2 % fibra antiestática— con Stedair 3000, térmica Defender y refuerzos Ara-Shield. Lleva DRD de Kevlar, cuello de cuatro capas, cinta 3M limón-plata-limón de tres pulgadas y pantalonera con tirantes H de cuatro puntos.', 'Pídenos exterior Brigade 7.5 oz, color amarillo, negro o rojo, talla, Stedair 3000 y accesorios; si requieres el kit, anotamos BOM1028, BOM1040, Bullard LTX, Croydon Filtrex, Veridian Fire Pro II y Majestic PAC II por separado. Te entregamos ficha técnica y confirmamos el estatus certificado UL para NFPA 1971:2018. Mándanos por WhatsApp las tallas y el equipo que usa tu brigada.'],
-    caracteristicas: ['Brigade 7.5 oz: 93 % Nomex, 5 % Kevlar y 2 % fibra antiestática', 'Stedair 3000 y térmica Defender', 'Colores amarillo, negro o rojo', 'DRD de Kevlar, cuello de cuatro capas y tapa boca', 'Zipper Nomex, velcro FR y cinta 3M limón-plata-limón de tres pulgadas', 'Porta radio, bolsas cargo, pozo de agua y refuerzos Ara-Shield', 'Pantalón con tirantes H de cuatro puntos y rodilleras Ara-Shield', 'Referencia de kit con chaquetón, pantalón, casco, bota, guante y capucha'],
-    descripcion: ['Arranca tu compra por el composite: Brigade 7.5 oz —93 % Nomex, 5 % Kevlar y 2 % fibra antiestática—, Stedair 3000, térmica Defender y Ara-Shield negro o gris. Elige amarillo, negro o rojo según tu corporación y escríbenos las cuatro capas, color y talla en cada partida. Nosotros cotizamos esa combinación completa; pedir solo Profesional deja abierta la configuración que recibirá tu brigada.', 'En el chaquetón reunimos zipper Nomex, velcro FR, DRD de Kevlar, cuello de cuatro capas y tapa boca. El porta radio, bolsas cargo, pozo de agua y cinta 3M limón-plata-limón de tres pulgadas se seleccionan para cómo carga tu gente. Durante la talla, ponte capucha, máscara, guantes y ERA; te pedimos alcanzar el radio y elevar ambos brazos. Si el cuello o el puño pierde cobertura, cambiamos talla antes de integrar el pedido.', 'Para rescate y carga exterior, define con nosotros el DRD de Kevlar, porta radio, bolsas cargo y cinta 3M de tres pulgadas. Elige la posición del radio con el arnés ERA puesto, porque una bolsa mal ubicada cambia la caída del chaquetón. En la prueba haz que un elemento tome una manguera y gire el torso con guantes; así confirmamos que el tapa boca, el pozo de agua y las bolsas siguen accesibles.', 'La pantalonera lleva tirantes H de cuatro puntos, cierre, ajustes laterales y rodilleras Ara-Shield. Pídela con la talla de pantalón independiente del chaquetón y prueba el conjunto con Croydon Filtrex si esa bota integra tu kit. Antes de aceptar el lote hacemos cuclilla, escalera y entrada a unidad con ERA: la cintura debe conservar solape y las rodilleras quedar en su sitio. Para kit negro anotamos térmica Xtralite y talla M, G o XL cuando aplique.', 'Romak Fire publica el Profesional como certificado UL bajo NFPA 1971:2018; confirmamos el número aplicable a tu configuración y te entregamos ficha técnica, certificado UL y carta de distribuidor. Esa documentación cubre el conjunto fabricado, no accesorios añadidos después. Para servicio usamos NFPA 1850: revisamos cinta 3M, costuras, cierres, puños, cuello, Ara-Shield y zonas del ERA después de cada uso; una prenda con humo, calor o contaminantes queda fuera de servicio.'],
-    faq: [{ q: '¿Qué capa exterior declara?', a: 'Brigade 7.5 oz con Nomex, Kevlar y fibra antiestática.' }, { q: '¿Qué barreras se indican?', a: 'Stedair 3000 y Defender.' }, { q: '¿Se publica en varios colores?', a: 'Sí: amarillo, negro o rojo.' }, { q: '¿Qué incluye el kit de referencia?', a: 'Chaquetón, pantalón, casco, bota, guante y capucha descritos por separado.' }, { q: '¿El kit negro conserva la misma térmica?', a: 'Se menciona Xtralite para esa referencia; confírmala por escrito.' }, { q: '¿Cómo se confirma la certificación?', a: 'Con la declaración aplicable a la configuración ofertada.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'romak-defender': {
-    title: 'Traje de bombero Romak Fire Defender BOM1045 certificado UL',
-    description: 'Traje de bombero estructural Romak Fire Defender BOM1045: exterior Advance, Stedair 3000 o 4000, refuerzos Ara-Shield y cotización con ficha técnica.',
-    resumen: ['El Romak Fire Defender es un traje estructural para quien necesita Advance 7.0 oz —60 % Kevlar y 40 % Nomex—, térmica Defender y barrera Stedair 3000 o 4000. Cotizamos khaki o negro, con DRD, cuello de cuatro capas, tapa boca, Ara-Shield en hombros, codos, rodillas y talón, además de tirantes H y ajuste lateral.', 'Escríbenos BOM1045, Stedair 3000 o 4000, color, talla, tirantes y accesorios para cerrar tu configuración. Te entregamos ficha técnica, certificado UL y carta de distribuidor con la configuración aplicable a NFPA 1971:2018. Para una reposición, mándanos por WhatsApp la etiqueta de la prenda que seguirá en servicio y cotejamos capas y color.'],
-    caracteristicas: ['Advance 7.0 oz: 60 % Kevlar y 40 % Nomex', 'Barrera de humedad Stedair 3000 o 4000', 'Barrera térmica Defender', 'Colores khaki o negro', 'DRD, cuello de cuatro capas y tapa boca', 'Porta radio, bolsas cargo, pozo de agua y cinta reflejante', 'Tirantes H, ajuste lateral y refuerzo diamante de entrepierna', 'Ara-Shield en hombros, codos, rodillas y talón'],
-    descripcion: ['La primera elección del Defender es Stedair 3000 o Stedair 4000 sobre Advance 7.0 oz —60 % Kevlar y 40 % Nomex— con térmica Defender. Elige khaki o negro y pide que BOM1045 lleve exterior, barrera, térmica, color y talla en la misma línea. Nosotros no cotizamos el nombre aislado: dos lotes Defender con distinta Stedair no son el mismo conjunto para tu cuerpo de bomberos.', 'Su chaquetón reúne DRD, cuello de cuatro capas, tapa boca, porta radio, bolsas cargo, pozo de agua y cinta reflejante. Pídelo con la distribución de carga que usa tu personal. En la prueba de talla colocamos casco, monja, máscara, guante y ERA; después pedimos mirar arriba, alcanzar el radio y tomar herramienta. Si cuello y puños cambian de posición, ajustamos la talla antes de levantar la orden.', 'El DRD, porta radio, bolsas cargo, pozo de agua y cinta reflejante se definen en cotización porque cada accesorio ocupa un frente de trabajo. Elige el porta radio para el lado que usa tu brigada y prueba una herramienta en las bolsas con el ERA puesto. Hacemos esa maniobra para confirmar que el DRD queda libre y que la cinta conserva visibilidad sin que radio o bolsa interfieran con las correas.', 'La pantalonera combina tirantes H, ajuste lateral, bolsas, refuerzo diamante de entrepierna, talón reforzado y rodilleras Ara-Shield acolchadas. Te pedimos usar la bota asignada, caminar, arrodillarte y subir escalera antes de recibir el lote. Elige la talla que mantenga talón y rodillera alineados; si la cintura pierde solape con el chaquetón, corregimos el ajuste lateral o la talla y no aceptamos esa pieza.', 'El fabricante publica estatus certificado UL bajo NFPA 1971:2018; confirmamos el número de la configuración y te entregamos ficha técnica, certificado UL y carta de distribuidor. El certificado cubre las capas documentadas, no una combinación distinta. Para NFPA 1850 revisamos Ara-Shield, costuras, cierre, puños y cinta antes y después del uso. Una prenda con suciedad retenida, daño o calor queda fuera de servicio hasta atender el procedimiento del fabricante.'],
-    faq: [{ q: '¿Cuál es el exterior?', a: 'Advance 7.0 oz, 60 % Kevlar y 40 % Nomex.' }, { q: '¿Qué Stedair se puede pedir?', a: 'Stedair 3000 o Stedair 4000.' }, { q: '¿Qué colores están publicados?', a: 'Khaki y negro.' }, { q: '¿Qué protege Ara-Shield?', a: 'Hombros, codos, rodillas y talón.' }, { q: '¿Cómo se recibe una reposición?', a: 'Comparando capas, color, talla y accesorios contra la prenda que continúa en servicio.' }, { q: '¿El número UL está publicado?', a: 'Debe confirmarse con la configuración cotizada.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'romak-vantage': {
-    title: 'Traje de bombero estructural Romak Fire Vantage UL',
-    description: 'Traje de bombero estructural Romak Fire Vantage: OMNI Vantage ripstop, Stedair 3000, Thermal Liner, corte ergonómico y cotización con ficha técnica.',
-    resumen: ['El Romak Fire Vantage es un traje estructural de OMNI Vantage 7.8 oz ripstop, Stedair 3000 y Thermal Liner que cotizamos para brigadas que requieren comprobar movilidad con equipo completo. Disponible en amarillo o negro, suma DRD de Kevlar, cuello de cuatro capas, manga curva ergonómica, cinta 3M limón-plata-limón de tres pulgadas, tirantes H y rodilleras Ara-Shield.', 'Pídenos exterior OMNI Vantage 7.8 oz ripstop, Stedair 3000, Thermal Liner, color, talla y accesorios instalados. Te entregamos ficha técnica, certificado UL y carta de distribuidor para la referencia NFPA 1971:2018 aplicable. Mándanos por WhatsApp una foto de tu radio, guante y ERA para preparar la prueba de talla con esas interfaces.'],
-    caracteristicas: ['Exterior OMNI Vantage 7.8 oz ripstop', 'Stedair 3000 y Thermal Liner', 'Colores amarillo o negro', 'DRD de Kevlar, cuello de cuatro capas y tapa boca con velcro FR', 'Manga curva ergonómica, porta radio y bolsas cargo con fuelle', 'Pozo de agua y cinta 3M limón-plata-limón de tres pulgadas', 'Tirantes H de cuatro puntos', 'Rodilleras Ara-Shield y refuerzos de la línea'],
-    descripcion: ['Para Vantage decide primero el exterior OMNI Vantage 7.8 oz ripstop con Stedair 3000 y Thermal Liner, y luego amarillo o negro. Escribe esas capas, color, talla y Ara-Shield en tu orden; nosotros las cotizamos como una sola configuración. El nombre Vantage no sustituye el composite ni los accesorios que recibirá tu corporación, sobre todo cuando la reposición debe coincidir con un conjunto ya asignado.', 'La manga curva ergonómica trabaja junto con Stedair 3000, cuello de cuatro capas, tapa boca con velcro FR, pozo de agua y puño. En tu prueba te pedimos usar casco, monja, máscara, guantes y ERA, extender los brazos y alcanzar arriba del hombro. Elige la talla que conserve cuello y muñeca cubiertos mientras tomas el radio; si la manga se retrae, cambiamos talla antes de pedir el chaquetón.', 'Cotiza el DRD de Kevlar, porta radio, bolsas cargo con fuelle y cinta 3M limón-plata-limón de tres pulgadas con el OMNI Vantage 7.8 oz ripstop según el equipo de tu unidad. Elige dónde quedará el radio antes de producir, porque la carga exterior cambia cómo cae el frente. Hacemos una prueba de bolsa con guantes y arnés ERA: radio y herramientas deben salir sin bloquear máscara, correas ni el acceso al DRD.', 'Abajo, la pantalonera trae tirantes H de cuatro puntos, ajustes de línea y rodilleras Ara-Shield. Pídela por talla propia y pruébala con la bota de servicio, en cuclilla y escalera. Antes de aceptar un lote verificamos tiro, solape de cintura y alineación de rodillera al subir a la unidad. Si el bajo arrastra o la rodillera se mueve, elegimos otra talla o ajuste de línea antes de recibir las piezas.', 'El Vantage se publica con estatus certificado UL bajo NFPA 1971:2018; confirmamos el código aplicable y te entregamos ficha técnica, certificado UL y carta de distribuidor. El documento ampara la configuración publicada, no accesorios modificados después. Bajo NFPA 1850, tu rutina incluye cinta 3M, puños, cierres, costuras y Ara-Shield antes y después del uso. Humo, calor o daño obligan a retirar la prenda hasta aplicar el proceso del fabricante.'],
-    faq: [{ q: '¿Qué exterior lleva Vantage?', a: 'OMNI Vantage 7.8 oz ripstop.' }, { q: '¿Qué barreras se declaran?', a: 'Stedair 3000 y Thermal Liner.' }, { q: '¿Qué colores se publican?', a: 'Amarillo y negro.' }, { q: '¿Cómo se revisa la manga curva?', a: 'Con guantes, capucha, máscara y movimientos de alcance reales.' }, { q: '¿Qué tirantes declara?', a: 'Tirantes H de cuatro puntos.' }, { q: '¿El código es fijo?', a: 'Se confirma al cotizar según la configuración.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'romak-maverick-ii': {
-    title: 'Romak Fire Maverick II: traje estructural de tres capas',
-    description: 'Traje de bombero estructural Romak Fire Maverick II: Panther 210 g/m², Moisture Barrier 125 y Dubai TB205; EN 469 y NFPA 1970 declaradas. Cotiza con ficha.',
-    resumen: ['Maverick II es el estructural que cotizamos por composite: Panther 210 g/m² —65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática—, Moisture Barrier 125 de 125 g/m² y Dubai TB205 de 205 g/m². Sus capas se publican con nombre y composición; ese es el dato que usamos para comparar una partida, no el lema comercial.', 'Pídenos Panther, Moisture Barrier 125, Dubai TB205, talla y accesorios en tu orden, porque el código depende de configuración. Te entregamos ficha técnica y declaración de conformidad; las referencias EN 469, NFPA 1970:2025 y NFPA 1971:2018 tienen estatus declarado, no certificación. Mándanos por WhatsApp el alcance de tu operación y la lista de accesorios para integrar la cotización.'],
-    caracteristicas: ['Panther 210 g/m²: meta-aramida, para-aramida y fibra antiestática', 'Moisture Barrier 125: 125 g/m² y 100 % aramida', 'Dubai TB205: 205 g/m², aramida y viscosa FR', 'El fabricante usa el lema “La protección más ligera”', 'Referencias EN 469, NFPA 1970:2025 y NFPA 1971:2018', 'Estatus normativo declarado', 'Código según configuración; confirmación previa a la orden'],
-    descripcion: ['Maverick II empieza por Panther 210 g/m² —65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática— con Moisture Barrier 125 y Dubai TB205. Escribe los tres nombres, sus 125 g/m² y 205 g/m², talla y accesorios en la orden. Nosotros confirmamos el código según configuración; pedir solo Maverick II no protege tu compra contra un composite distinto al que evaluó tu corporación.', 'Para el chaquetón pedimos al fabricante identificar cierres, cuello, puños y sus interfaces con casco, monja, máscara y guante dentro de la configuración Panther 210 g/m². Durante la prueba de talla te ponemos capucha, guantes, botas y ERA de tu corporación; haces alcance, flexión y traslado de equipo. Elige la talla que mantenga cuello, muñeca, cintura y bota cubiertos sin tensión constante en costuras y cierres.', 'Antes de cotizar accesorios, define radio, lámpara, bolsas, porta radio, cinta reflejante y DRD para Panther 210 g/m², Moisture Barrier 125 y Dubai TB205. La ficha no publica esos componentes; por eso no los asumimos en tu partida. En la muestra de talla comprobamos que el arnés ERA y los accesorios autorizados no presionen las capas ni bloqueen una salida. Pídenos por escrito cada accesorio que sí requerirá tu cuadrilla.', 'Para pantalonera o conjunto, solicitamos al fabricante el cierre, tirantes, refuerzos y rodilleras que correspondan a Panther 210 g/m² antes de producir. Con bota y ERA puestos hacemos cuclilla, escalera y traslado de equipo; la pieza elegida debe conservar cobertura de cintura y bota. Como la ficha no declara esos componentes, no los incluimos por inferencia: confirma en tu orden qué prenda inferior y qué accesorios forman el lote.', 'Maverick II declara Panther 210 g/m², EN 469, NFPA 1970:2025 y NFPA 1971:2018; ese estatus es declarado, no certificado UL. Te entregamos ficha técnica y declaración de conformidad aplicable, no un certificado. Para NFPA 1850, tu centro debe inspeccionar exterior Panther, costuras, cinta, puños y cierres antes y después del uso según la información del fabricante. Daño, abrasión o contaminación requieren retiro de servicio y evaluación documentada.'],
-    faq: [{ q: '¿Cuál es la capa exterior?', a: 'Panther 210 g/m² con meta-aramida, para-aramida y fibra antiestática.' }, { q: '¿Qué barrera de humedad declara?', a: 'Moisture Barrier 125, 100 % aramida.' }, { q: '¿Qué térmica indica?', a: 'Dubai TB205 con aramida y viscosa FR.' }, { q: '¿Menciona NFPA 1970:2025?', a: 'Sí, como referencia declarada.' }, { q: '¿Está publicado como certificado?', a: 'No; su estatus es declarado.' }, { q: '¿Cómo se identifica el código?', a: 'Se confirma al cotizar según la configuración.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'skold-hero-pbimax': {
-    title: 'Traje de bombero Sköld Hero PBI MAX con cuello 360°',
-    description: 'Traje de bombero estructural Sköld Hero PBI MAX: cuello 360°, DRD, Stedshield, tirantes acolchados y SköldTracker. Cotiza con ficha técnica.',
-    resumen: ['Sköld Hero PBI MAX es un traje estructural con exterior PBI MAX, cuello tipo escudo de cobertura 360° y DRD en espalda. Lo cotizamos para cuerpos que requieren bies plata, banda Orafol, puño Kevlar con ojillo para pulgar, Stedshield en mangas, hombros, codos y rodillas, además de tirantes acolchados con conexión rápida.', 'Pídenos PBI MAX, talla, bies plata, banda Orafol, bolsillos y tirantes acolchados como una configuración. Te entregamos ficha técnica; NFPA 1971 edición 2018 se publica como equivalente, no certificado UL, y SköldTracker sirve para fichas, mantenimiento y caducidad. Mándanos por WhatsApp el lado de radio y la bota de tu elemento para coordinar la prueba.'],
-    caracteristicas: ['Exterior PBI MAX', 'Cuello tipo escudo de cobertura 360° y DRD en espalda', 'Bies plata en pecho, espalda, brazos y bolsas', 'Banda reflejante Orafol, zipper y velcro', 'Bolsillo superior derecho y dos bolsillos inferiores', 'Puño de Kevlar con ojillo para pulgar', 'Stedshield en mangas, hombros, codos y rodillas', 'Tirantes acolchados, ajuste posterior y conexión rápida'],
-    descripcion: ['Elige Hero PBI MAX por exterior PBI MAX y cuello tipo escudo de cobertura 360°, no solo por el nombre Hero. En tu orden anotamos DRD en espalda, bies plata, banda Orafol, bolsillo superior derecho, dos inferiores, talla y zipper con velcro. Esa lista define la pieza que cotizamos para tu corporación y evita que visibilidad o acceso a herramientas queden abiertos.', 'El chaquetón combina cuello escudo, zipper, velcro, puño Kevlar con ojillo para pulgar y Stedshield en mangas, hombros y codos. En la prueba de talla coloca casco, monja, máscara, guante y ERA; te pedimos girar la cabeza, elevar brazos y accionar el radio. Elige el ajuste que conserve el cuello 360° y el puño sobre el guante, sin que el arnés o la máscara impidan mover la manga.', 'Cotiza DRD, bolsillo superior derecho, dos bolsillos inferiores, bies plata y banda Orafol según la carga que llevará tu gente. Elige el contenido de bolsa antes de producir: radio, herramienta y arnés ERA deben dejar libre el DRD. Probamos esos accesorios con guantes para confirmar acceso y que la banda Orafol permanezca visible. Si una bolsa altera el frente, ajustamos su uso dentro de la configuración publicada.', 'La pantalonera PBI MAX lleva tirantes acolchados, ajuste elástico posterior en el forro, conexión rápida, bolsillos laterales tipo parche y Stedshield en rodillas. Pídenos la talla con chaquetón y bota puestos. Antes de aceptar un lote hacemos cuclilla, escalera y traslado de herramienta; la cintura debe conservar solape y los tirantes mantener la pieza sin elevar el bajo. Elige ajuste posterior y contenido de bolsa con esa prueba realizada.', 'Sköld publica PBI MAX y NFPA 1971 edición 2018 como equivalente, no certificado UL; te entregamos ficha técnica y la declaración disponible para tu configuración. El fabricante declara barreras interiores resistentes a agentes químicos, biológicos, radiológicos y nucleares, sin convertir el conjunto en HazMat. Con SköldTracker registramos fichas, mantenimiento y caducidad. Inspecciona bies, Orafol, zipper, velcro, costuras, puños y Stedshield antes y después de uso; daño, calor o contaminación apartan la prenda.'],
-    faq: [{ q: '¿Qué exterior declara?', a: 'PBI MAX.' }, { q: '¿Cómo es el cuello?', a: 'Tipo escudo con cobertura 360°.' }, { q: '¿Dónde está el DRD?', a: 'En la espalda del chaquetón.' }, { q: '¿Qué refuerzos usa?', a: 'Stedshield en mangas, hombros, codos y rodillas.' }, { q: '¿Qué es SköldTracker?', a: 'La plataforma indicada para fichas, mantenimiento y caducidad.' }, { q: '¿Está certificado UL?', a: 'No; se publica con estatus equivalente.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'skold-hero-nomex': {
-    title: 'Traje de bombero Sköld Hero Nomex IIIA certificado UL',
-    description: 'Traje de bombero estructural Sköld Hero Nomex IIIA: certificado UL MH60435, cinco opciones de capa exterior, porta radio y linterna. Cotiza con ficha técnica.',
-    resumen: ['Sköld Hero Nomex IIIA es un estructural amarillo certificado UL MH60435 para NFPA 1971 edición 2018. Cotizamos el exterior Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750 con cuello escudo, DRD, porta linternas, bolsillo porta radios, bies plata, banda Orafol, puño Kevlar y Stedshield.', 'Pídenos MH60435, exterior elegido, talla, amarillo, porta linternas y bolsillo para radio en cada línea de tu orden. Te entregamos ficha técnica, certificado UL y carta de distribuidor de la configuración aplicable. Mándanos por WhatsApp una foto de tu radio y lámpara para probarlas con máscara, guantes, ERA y los tirantes acolchados.'],
-    caracteristicas: ['Certificación UL MH60435 para NFPA 1971 ed. 2018', 'Color amarillo', 'Exteriores Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750', 'Cuello tipo escudo y DRD', 'Porta linternas y bolsillo porta radios', 'Bies plata, banda Orafol, zipper y velcro', 'Puño Kevlar con ojillo para pulgar y Stedshield', 'Tirantes acolchados, ajuste posterior y conexión rápida'],
-    descripcion: ['La primera decisión en Hero Nomex IIIA es Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750 como exterior amarillo. Escríbenos MH60435, la opción elegida, talla, bolsillos y accesorios definidos en la orden; nosotros cotizamos el exterior exacto certificado UL para NFPA 1971 edición 2018. Hero Nomex sin esa elección no identifica el conjunto que llegará a tu estación.', 'Este chaquetón integra cuello escudo, DRD, zipper, velcro, bies plata, banda Orafol, porta linternas y bolsillo porta radios. En la prueba usa casco, monja, máscara, guante y ERA con tu radio y lámpara reales. Te pedimos alcanzarlos y girar el torso: elige la ubicación que permita operarlos con guante sin bloquear las correas, la máscara ni el movimiento de los brazos.', 'Para visibilidad y carga, cotiza bies plata, banda Orafol, DRD, porta linternas y bolsillo porta radios junto con el exterior Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750. Así asociamos cada accesorio a la configuración MH60435. Probamos radio y lámpara con el arnés ERA para confirmar acceso al DRD y evitar una bolsa que presione el frente del chaquetón.', 'La pantalonera usa tirantes acolchados, ajuste posterior en el forro, conexión rápida y Stedshield en rodillas; el chaquetón suma puño Kevlar con ojillo para pulgar y Stedshield en mangas, hombros y codos. Pruébalos con bota puesta en rodilla, escalera y acceso a vehículo. Antes de aceptar el lote verificamos que tirantes y bajo no se eleven y que cintura, muñeca y rodilla mantengan cobertura.', 'Hero Nomex IIIA tiene certificación UL MH60435 para NFPA 1971 edición 2018; te entregamos ficha técnica, certificado UL y carta de distribuidor para el exterior elegido. La certificación no cubre complementos añadidos después. Con NFPA 1850 inspecciona Orafol, bies, cierres, velcro, puños, costuras, tirantes y Stedshield antes y después del uso. Si hay rasgadura, contaminación o pérdida de función, la prenda queda fuera de servicio para evaluación del fabricante.'],
-    faq: [{ q: '¿Cuál es la certificación?', a: 'UL MH60435 para NFPA 1971 edición 2018.' }, { q: '¿Qué color está publicado?', a: 'Amarillo.' }, { q: '¿Qué exteriores se pueden elegir?', a: 'Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750.' }, { q: '¿Incluye porta linternas?', a: 'Sí, además de bolsillo porta radios.' }, { q: '¿Cómo se ajusta la pantalonera?', a: 'Con tirantes acolchados, ajuste posterior y conexión rápida.' }, { q: '¿Qué se coteja al recibir?', a: 'Certificación, exterior, talla, color, accesorios y refuerzos contra la orden.' }],
-    relacionados: [...piezasPorFamilia.estructural],
-  },
-  'romak-combate-basico': {
-    title: 'Traje de bombero brigadista Romak Combate Básico BOM1001',
-    description: 'Traje de bombero brigadista Romak Fire Combate Básico BOM1001: Nomex IIIA 7.5 oz, forro FR desmontable y Neo-Guard; kit para brigada. Cotiza con ficha.',
-    resumen: ['Romak Fire Combate Básico es el conjunto brigadista amarillo que cotizamos en Nomex IIIA 7.5 oz/yd² repelente al agua, Lining FR desmontable y Neo-Guard de neopreno laminado. Incluye chaquetón de 35 pulgadas, cuello de cuatro capas, Arashield, cinta 3M, puño Kevlar y pantalonera con bastilla de carnaza y anillo D antichispa.', 'Pídenos BOM1001, Nomex IIIA 7.5 oz/yd², Lining FR, Neo-Guard, talla y piezas de kit por separado. Te entregamos ficha técnica; NFPA 1971 tiene estatus materiales, no es certificación del conjunto. Mándanos por WhatsApp las tallas, el procedimiento de tu centro de trabajo y si usarás Bullard LTX, CAP1005, Firemax VI o Workman Fire.'],
-    caracteristicas: ['Exterior Nomex IIIA 7.5 oz/yd² repelente al agua', 'Forro térmico Lining FR desmontable integrado a la barrera', 'Barrera de humedad Neo-Guard de neopreno laminado', 'Chaquetón de 35 pulgadas, cuello de cuatro capas y tapa boca', 'Zipper y velcro Nomex, bolsas con drenado y bolsa interior', 'Puño de carnaza, puño Kevlar y cinta 3M', 'Arashield en hombros, codos y rodillas', 'Pantalón con bastilla de carnaza y anillo D antichispa'],
-    descripcion: ['Para Combate Básico decide primero el alcance de tu brigada y el conjunto Nomex IIIA 7.5 oz/yd² repelente al agua, Lining FR desmontable y Neo-Guard de neopreno laminado. Pide BOM1001 con esas capas, talla y amarillo en la orden. Nosotros no presentamos esos materiales como certificación: el uso depende de la tarea autorizada, análisis de riesgo y procedimiento de tu centro de trabajo.', 'El chaquetón de 35 pulgadas lleva cuello de cuatro capas, tapa boca, mangas curvas, puño de carnaza, zipper y velcro Nomex, bolsas parche con drenado, bolsa interior, puño Kevlar y cinta 3M. En talla usa casco, capucha, máscara y guante de tu brigada; levantamos brazos y tomamos radio para probar cuello, muñeca y bolsas. Elige la medida que mantenga cobertura y acceso a herramientas durante tus maniobras autorizadas.', 'Cotiza Arashield en hombros, codos y rodillas, cinta 3M, bolsas con drenado y bolsa interior según el equipo que portará tu brigada. Elige esos accesorios antes de pedir, porque una herramienta modifica cómo trabaja el chaquetón y el pantalón. Durante la muestra probamos bolsa, puño Kevlar y tapa boca con guantes, capucha y radio para confirmar que la cinta 3M y el acceso permanecen disponibles.', 'La pantalonera integra doble costura engargolada, bastilla de carnaza, broche de gancho con anillo D antichispa, Lining FR desmontable con Neo-Guard y cinta 3M. Pruébala con Workman Fire si esa bota forma parte de tu kit, al agacharte, trasladar equipo y operar un extintor. Antes de recibir el lote revisamos rodillas, bastilla y cintura; elige la talla que conserve solape con el chaquetón durante las tareas permitidas.', 'BOM1001 publica NFPA 1971 con estatus materiales, no certificado UL ni certificación del conjunto. Te entregamos ficha técnica y dejamos por separado Bullard LTX, capucha Nomex CAP1005, guante Firemax VI y Workman Fire cuando los requieras. Con el procedimiento del centro de trabajo, inspecciona costuras, cierres, velcro, puños, cinta 3M, Neo-Guard y Arashield después de humo, calor o contaminantes; aparta cualquier prenda dañada.'],
-    faq: [{ q: '¿Cuál es el material exterior?', a: 'Nomex IIIA 7.5 oz/yd² repelente al agua.' }, { q: '¿Qué barrera declara?', a: 'Neo-Guard, membrana laminada de neopreno.' }, { q: '¿El forro se puede desmontar?', a: 'Se declara Lining FR desmontable integrado a la barrera.' }, { q: '¿Qué contiene la referencia de kit?', a: 'Casco, capucha, guante y bota, además del traje, con confirmación individual.' }, { q: '¿Está certificado el conjunto?', a: 'No se publica como certificado; su estatus es materiales.' }, { q: '¿Qué operación define su uso?', a: 'La tarea autorizada por el análisis de riesgo y procedimiento de la brigada.' }],
-    relacionados: [...piezasPorFamilia.brigadista],
-  },
-  'skold-brigadista-defender': {
-    title: 'Traje de bombero brigadista Sköld Defender con cuello 360°',
-    description: 'Traje de bombero brigadista Sköld Defender: cuello 360°, Ultrashield en hombros, codos y rodillas, bies fotoluminiscente y porta radio. Cotiza con ficha.',
-    resumen: ['Sköld Brigadista Defender es un traje para brigadas industriales que cotizamos con cuello de cobertura 360°, bies fotoluminiscente, zipper de escape rápido, velcro retardante a la flama, porta radio y Ultrashield en hombros, codos y rodillas. La referencia publicada es NFPA 1971 edición 1991 y NOM-002-STPS-2010, con estatus equivalente.', 'Pídenos talla, color, tela, accesorios y el uso previsto para tu brigada; así dejamos la configuración escrita desde la cotización. Te entregamos ficha técnica y la declaración disponible del proveedor para el Defender, sin presentarla como certificación actual. Mándanos por WhatsApp una foto de tu radio, casco y guantes para preparar la prueba de talla.'],
-    caracteristicas: ['Cuello de cobertura 360°', 'Bies fotoluminiscente en pecho, espalda y muñecas', 'Velcro retardante a la flama y zipper de escape rápido', 'Refuerzos Ultrashield en hombros, codos y rodillas', 'Porta radio', 'SköldTracker para fichas, mantenimiento y caducidad', 'Referencia NFPA 1971 ed. 1991 y NOM-002-STPS-2010', 'Estatus equivalente, no certificado'],
-    descripcion: ['Empieza por definir el escenario de tu brigada y la configuración: cuello de cobertura 360°, bies fotoluminiscente, porta radio y Ultrashield. En la orden anotamos tela, talla, color y accesorios junto con Sköld Brigadista Defender, porque el nombre no describe por sí solo la prenda entregada. Si tu operación exige protección ocular, pídelo desde la cotización para comprobar la interfaz con el cuello y el zipper de escape rápido.', 'Para el chaquetón te cotizamos velcro retardante a la flama, zipper de escape rápido, cuello 360° y porta radio. Durante la talla ponemos casco, protección ocular y guante: tú giras la cabeza, levantas los brazos y alcanzas el cierre para confirmar cobertura y acceso. También revisamos que el radio no cargue el frente ni tape el zipper; esa prueba evita que un accesorio cambie el ajuste de una prenda con Ultrashield.', 'Ultrashield en hombros, codos y rodillas, más el bies fotoluminiscente en pecho, espalda y muñecas, define qué solicitamos para tu partida. El fabricante menciona NFPA 2013 para termorresistencia ante explosión, abrasión, corte y desgarre. Elige el porta radio según el equipo que ya usa tu brigada y pide que venga asentado junto con los refuerzos. En la prueba hacemos una maniobra con guantes, radio y extintor para verificar que las bolsas y el frente sigan accesibles sin engancharse.', 'La movilidad se comprueba con el conjunto Brigadista Defender y sus refuerzos Ultrashield: te pedimos flexionar rodillas, agacharte, subir un escalón y extender ambos brazos. Revisamos que el bies fotoluminiscente, velcro y zipper de escape rápido permanezcan funcionales y que el bajo no pierda posición con la bota. Antes de aceptar el lote, repetimos esas maniobras con las tallas representativas de tu cuadrilla.', 'El fabricante publica NFPA 1971 edición 1991 y NOM-002-STPS-2010 con estatus equivalente; no lo comunicamos como certificación actual. Esa referencia cubre la declaración publicada, no sustituye el procedimiento de tu centro de trabajo. Te entregamos la ficha técnica disponible y registramos SköldTracker para mantenimiento y caducidad; revisamos cierre, bies, costuras, porta radio y Ultrashield antes y después de cada uso de la brigada.'],
-    faq: [{ q: '¿El cuello tiene cobertura completa?', a: 'Se publica con cobertura 360°.' }, { q: '¿Dónde va el bies fotoluminiscente?', a: 'En pecho, espalda y muñecas.' }, { q: '¿Qué protege Ultrashield?', a: 'Hombros, codos y rodillas.' }, { q: '¿La referencia NFPA es actual?', a: 'No; se indica NFPA 1971 edición 1991 como referencia antigua.' }, { q: '¿Está certificado?', a: 'No; el estatus publicado es equivalente.' }, { q: '¿Para qué sirve SköldTracker?', a: 'Para fichas, mantenimiento y caducidad según la plataforma indicada.' }],
-    relacionados: [...piezasPorFamilia.brigadista],
-  },
-  'lakeland-a10-attack': {
-    title: 'Lakeland OSX A10 Attack: traje de bombero brigadista Nomex',
-    description: 'Traje de bombero brigadista Lakeland OSX A10 Attack: chaquetón AT3202Y97 y pantalón AT3302Y97, Nomex 7.5 oz, DRD y Stedair 3000. Cotiza con ficha técnica.',
-    resumen: ['Lakeland OSX A10 Attack es un conjunto para brigadas industriales que cotizamos como AT3202Y97 para chaquetón y AT3302Y97 para pantalón, con Nomex 7.5 oz amarillo, Nomex Quilt Q8, Stedair 3000, DRD Easy Grip, puños Kevlar y rodilleras Stedshield. El chaquetón tradicional mide 35 pulgadas para la configuración publicada.', 'Pídelo indicando ambos códigos, tallas, capa exterior, barreras y accesorios para que llegue como conjunto. Te entregamos ficha técnica y declaración del fabricante para NFPA 1971 edición 2018 con estatus declarado, no un certificado. Mándanos por WhatsApp fotos de la bota y el radio de tu brigada para programar la prueba.'],
-    caracteristicas: ['AT3202Y97 para chaquetón y AT3302Y97 para pantalón', 'Exterior Nomex 7.5 oz amarillo', 'Barrera térmica Nomex Quilt Q8 y humedad Stedair 3000', 'Chaquetón tradicional de 35 pulgadas', 'DRD Easy Grip, cuello de tres pulgadas y mangas plisadas curvas', 'Puños Kevlar, pozo Stedprene y refuerzos Stedshield', 'Bolsas de expansión forradas en Kevlar y abertura de inspección', 'Rodilleras dobles, corte de bota invertido y tirantes Black-Ops'],
-    descripcion: ['En A10 Attack la primera compra es inseparable: AT3202Y97 para chaquetón y AT3302Y97 para pantalón. Escribe ambos códigos en la orden con Nomex 7.5 oz amarillo, Nomex Quilt Q8, Stedair 3000 y tallas, para que tu brigada reciba el mismo conjunto que aprobó. Si vas a reponer una pieza, pídela contra la etiqueta y conserva el código de la otra prenda; así mantenemos el solape y las capas declaradas.', 'El chaquetón tradicional de 35 pulgadas lleva zipper, velcro, cinta 3M Scotchlite, DRD Easy Grip y cuello de tres pulgadas con gancho. Sus mangas plisadas curvas, puños Kevlar de siete pulgadas con ojillo para pulgar y pozo Stedprene de cinco pulgadas se prueban con capucha, máscara, casco y guantes. Te pedimos alcanzar arriba y girar con la máscara puesta; revisamos que cuello, puño y cierre sigan cubriendo sin presión.', 'Al cotizar elegimos DRD Easy Grip, bolsas de expansión forradas en Kevlar y Stedshield según el uso de tu brigada. Las bolsas de 2 por 10 por 10 pulgadas y la abertura de inspección del forro se revisan con radio y arnés para comprobar acceso. Pide los accesorios que realmente llevarán tus elementos: cargar objetos fuera de esa prueba cambia el frente y puede estorbar mangueras o correas.', 'En la pantalonera definimos tirantes Black-Ops, cierre de gancho y D, broche, velcro y ajustes Delrin HT. Las rodilleras Stedshield dobles acolchadas, el corte de bota invertido y el refuerzo Nomex de bastilla se validan caminando, arrodillándose y subiendo escalones con la bota final. Antes de recibir un lote, hacemos esas tres maniobras y confirmamos que cintura, rodillas y tirantes se mantengan alineados.', 'Lakeland publica NFPA 1971 edición 2018 con estatus declarado para brigadas industriales y requisitos OSHA; no lo presentamos como certificado. La declaración aplica a la configuración ofertada y no reemplaza el procedimiento de tu centro de trabajo. Te entregamos ficha técnica y la declaración disponible; revisamos cinta 3M, cierre, puños, forro Nomex, rodilleras, tirantes y bastilla antes de reutilizar cada prenda.'],
-    faq: [{ q: '¿Qué código tiene el chaquetón?', a: 'AT3202Y97.' }, { q: '¿Y la pantalonera?', a: 'AT3302Y97.' }, { q: '¿Qué barreras declara?', a: 'Nomex Quilt Q8 y Stedair 3000.' }, { q: '¿Qué tipo de DRD incluye?', a: 'DRD Easy Grip.' }, { q: '¿Cómo son los tirantes?', a: 'Black-Ops sin botones metálicos.' }, { q: '¿Cuál es su estatus?', a: 'Declarado.' }],
-    relacionados: [...piezasPorFamilia.brigadista],
-  },
-  'romak-fire-ranger-explorer': {
-    title: 'Traje forestal Romak Fire Ranger Explorer: overol BOMW1001',
-    description: 'Traje de bombero forestal Romak Fire Ranger Explorer BOMW1001: overol Nomex IIIA, cinta 3M, bolsas cargo y porta radio para línea de fuego. Cotiza con ficha.',
-    resumen: ['Romak Fire Ranger Explorer es un overol forestal BOMW1001 que cotizamos en Nomex IIIA amarillo de 6 oz/yd² o Brigade 7.5 oz según configuración, con cinta 3M Scotchlite FR de tres pulgadas, bolsas cargo 10 por 10 pulgadas, zipper Nomex YKK, porta radio, pozo de agua y porta micrófono.', 'Para pedirlo necesitamos material, talla, color y accesorios de tu cuadrilla, especialmente radio y comunicación. Te entregamos ficha técnica y declaración del fabricante para NFPA 1971-2018 con estatus declarado; la referencia forestal a contrastar es NFPA 1950, antes NFPA 1977. Mándanos por WhatsApp la foto de tu radio para preparar el porta radio.'],
-    caracteristicas: ['Nomex IIIA amarillo de 6 oz/yd²; Brigade 7.5 oz según configuración', 'Cinta 3M Scotchlite FR limón-plata-limón de tres pulgadas', 'Bolsas cargo 10 por 10 pulgadas en ambos costados', 'Zipper Nomex YKK y broches de acero inoxidable', 'Cuello alto, puños con velcro y cintura elástica', 'Porta radio en pecho con recorte de antena', 'Pozo de agua y porta micrófono', 'Codos y rodillas reforzados; ajuste de piernas con velcro'],
-    descripcion: ['Explorer arranca con una elección de material: Nomex IIIA amarillo de 6 oz/yd² o Brigade 7.5 oz según configuración. En la orden escribimos BOMW1001, material, talla, color y accesorios, porque las dos opciones no son intercambiables por llevar el mismo nombre. Elige la versión que corresponda a tu partida y pídela completa; un overol solo funciona bien cuando torso, piernas y entrepierna tienen el ajuste aprobado.', 'El overol combina zipper Nomex YKK, broches de acero inoxidable, cuello alto, puños con velcro y cinta 3M Scotchlite FR limón-plata-limón de tres pulgadas. En la talla te pedimos usar casco, guantes y bota, mirar arriba y simular el uso de herramienta para revisar cuello y muñecas. También comprobamos que el cierre siga libre al flexionar; esa interfaz importa tanto como el Nomex IIIA elegido.', 'Para campo cotizamos bolsas cargo de 10 por 10 pulgadas, porta radio de pecho con recorte para antena, pozo de agua y porta micrófono. Tú eliges esos puntos con el radio que ya usa tu cuadrilla, y nosotros revisamos el alcance con guantes. Prueba radio y micrófono al caminar en pendiente: si la antena tira del frente o un cable invade el zipper Nomex YKK, ajustamos la configuración antes de surtir.', 'Codos y rodillas reforzados, cintura elástica y velcro de ajuste en piernas se validan en movimiento. Antes de aceptar el lote, hacemos caminar en terreno irregular, subir pendiente y agacharse con la bota forestal; revisamos que rodillas, bajo y cierres mantengan posición. Después de humo, ceniza, polvo o vegetación, inspeccionamos cinta 3M, velcro, zipper y refuerzos antes de guardar cada overol.', 'Romak Fire declara NFPA 1971-2018 con estatus declarado; para la operación forestal contrastamos NFPA 1950, antes NFPA 1977, sin llamarlo certificación. La declaración cubre solo la configuración indicada por el fabricante, no define por sí sola la tarea de tu cuadrilla. Te entregamos ficha técnica y declaración disponible; seguimos el procedimiento del centro de trabajo para inspección, limpieza y servicio.'],
-    faq: [{ q: '¿Es una prenda de una pieza?', a: 'Sí, se publica como overol forestal.' }, { q: '¿Qué material declara?', a: 'Nomex IIIA 6 oz/yd²; Brigade 7.5 oz se confirma según configuración.' }, { q: '¿Tiene porta radio?', a: 'Sí, en pecho con recorte para antena.' }, { q: '¿Qué se revisa con la bota?', a: 'Largo, rodillas y ajuste de piernas al caminar en terreno irregular.' }, { q: '¿Qué referencia forestal conviene revisar?', a: 'NFPA 1950, antes NFPA 1977.' }, { q: '¿Cuál es su estatus normativo?', a: 'Declarado.' }],
-    relacionados: [...piezasPorFamilia.forestal],
-  },
-  'romak-fire-ranger-scout': {
-    title: 'Traje de bombero forestal Romak Fire Ranger Scout',
-    description: 'Traje de bombero forestal Romak Fire Ranger Scout: chaquetón Nomex amarillo y pantalón azul de dos piezas, cinta 3M y codos reforzados. Cotiza con ficha.',
-    resumen: ['Romak Fire Ranger Scout es un conjunto forestal de dos piezas: chaquetón amarillo en Nomex IIIA de 6 oz/yd² y pantalón azul, con cinta 3M, zipper Nomex YKK, bolsas parche 10 por 10 pulgadas, cuello alto, puños con velcro, codos reforzados y cintura con presillas. El póster también declara tela 100 % Nomex.', 'Pídenos chaquetón y pantalón con talla, color, tela, código por confirmar y accesorios para tu cuadrilla. Te entregamos ficha técnica y declaración del fabricante para NFPA 1971-2018 con estatus declarado, no un certificado; para forestal se contrasta NFPA 1950, antes NFPA 1977. Mándanos por WhatsApp foto de la bota forestal antes de la talla.'],
-    caracteristicas: ['Chaquetón amarillo en Nomex IIIA de 6 oz/yd²', 'Póster con referencia a tela 100 % Nomex', 'Cinta 3M y bolsas parche de 10 por 10 pulgadas', 'Zipper Nomex YKK, cuello alto y puños con velcro', 'Codos reforzados', 'Pantalón azul con zipper Nomex YKK', 'Bolsas parche en costados y espalda; cinta 3M de tres pulgadas', 'Refuerzos y cintura con presillas'],
-    descripcion: ['Scout se define primero por la tela del chaquetón: Nomex IIIA amarillo de 6 oz/yd², aunque el póster declara 100 % Nomex. Antes de cotizar, confirmamos cuál aplica a tu partida y escribimos tela, talla, color, código por confirmar y accesorios. Elige esa versión por escrito junto con el pantalón azul; el nombre Scout no resuelve una diferencia de material ni identifica una reposición.', 'En el chaquetón reunimos zipper Nomex YKK, cuello alto, puños con velcro, cinta 3M, codos reforzados y bolsas parche de 10 por 10 pulgadas. Para la prueba trae casco, guante y radio: revisamos que puedas mirar arriba, cerrar el cuello y tomar equipo sin que la manga se retraiga. Si el radio o la bota cambian la postura, ajustamos la talla antes de pedir el conjunto forestal.', 'La cotización del Scout incluye bolsas parche en costados y espalda, cinta 3M de tres pulgadas, refuerzos y cintura con presillas. Pide la distribución que corresponda al equipo autorizado de tu cuadrilla y comprueba acceso con guantes. En vez de cargar objetos después, probamos las bolsas con radio y herramienta; así verificamos que el zipper Nomex YKK y el frente no se atoren durante el avance exterior.', 'El pantalón azul se mueve con zipper Nomex YKK, presillas, refuerzos, cinta 3M de tres pulgadas y bolsas de 10 por 10 pulgadas. Antes de aceptar una partida, hacemos flexión, inclinación, paso alto y caminata en terreno irregular con la bota forestal. Revisamos el traslape con el chaquetón, largo del bajo y posición de rodillas; esa prueba confirma que las dos piezas trabajen como conjunto.', 'El fabricante declara NFPA 1971-2018 con estatus declarado y código por confirmar; para forestal tomamos NFPA 1950, antes NFPA 1977, como referencia de contraste. No lo presentamos como certificación. Te entregamos ficha técnica y declaración disponible; seguimos el procedimiento del centro de trabajo e inspeccionamos cinta, cierres, velcro, codos, rodillas y costuras tras cada jornada operativa y asignación del conjunto.'],
-    faq: [{ q: '¿Qué piezas componen Scout?', a: 'Chaquetón amarillo y pantalón azul.' }, { q: '¿Qué material debe confirmarse?', a: 'Nomex IIIA 6 oz/yd² o la referencia de 100 % Nomex del póster.' }, { q: '¿Qué lleva el pantalón?', a: 'Bolsas laterales y traseras, cinta, refuerzos y presillas.' }, { q: '¿Cómo se revisa la cintura?', a: 'Con ambas piezas, bota y movimientos de flexión y desplazamiento.' }, { q: '¿Tiene código publicado?', a: 'Debe confirmarse al cotizar.' }, { q: '¿Qué referencia forestal se consulta?', a: 'NFPA 1950, antes NFPA 1977.' }],
-    relacionados: [...piezasPorFamilia.forestal],
-  },
-  'romak-bomw1002': {
-    title: 'Traje forestal Romak Fire BOMW1002: saco y pantalón',
-    description: 'Traje de bombero forestal Romak Fire BOMW1002: saco y pantalón en Nomex IIIA 6.0 oz o algodón 100 % ignífugo (BOMW1002 FR), amarillo. Cotiza con ficha.',
-    resumen: ['Romak Fire BOMW1002 es un conjunto forestal de saco y pantalón amarillo que cotizamos en BOMW1002 con Nomex IIIA de 6.0 oz o BOMW1002 FR con algodón 100 % ignífugo. Incluye cierre frontal con broche y solapa, porta radio, bolsas parche 10 por 10 pulgadas, cinta 3M Scotchlite y pantalón con bolsas cargo.', 'Pídenos código BOMW1002, material, talla, color y accesorios para que tu reposición coincida con el lote existente. Te entregamos ficha técnica; el modelo tiene estatus sin norma, así que no entregamos certificado ni lo presentamos como tal. Mándanos por WhatsApp foto de la etiqueta de la prenda que reemplazarás y confirmamos la versión.'],
-    caracteristicas: ['BOMW1002 en Nomex IIIA de 6.0 oz', 'BOMW1002 FR en algodón 100 % ignífugo', 'Saco con cierre frontal de broche y solapa', 'Bolsa porta radio y dos bolsas parche de 10 por 10 pulgadas', 'Cinta 3M Scotchlite de dos pulgadas', 'Mangas ergonómicas y cuello protector con velcro', 'Pantalón amarillo con presillas', 'Bolsas cargo con fuelle, bolsillos traseros y cintas reflejantes'],
-    descripcion: ['La decisión de BOMW1002 es material y código: elige BOMW1002 si necesitas Nomex IIIA de 6.0 oz, o BOMW1002 FR para algodón 100 % ignífugo. En cada orden anotamos código, material, talla, color y accesorios de tu cuadrilla. Pide la misma combinación que trae la etiqueta cuando reemplaces una pieza; dos sacos amarillos con corte parecido no garantizan la misma versión.', 'El saco incorpora cierre frontal con broche y solapa, porta radio, dos bolsas parche de 10 por 10 pulgadas, cinta 3M Scotchlite de dos pulgadas, mangas ergonómicas y cuello protector con velcro. En la talla te pedimos poner casco, guantes y protección ocular, cerrar el frente y levantar los brazos. Revisamos que cuello, mangas y cierre cubran sin impedir el uso del radio ni el acceso a las bolsas.', 'Cotizamos porta radio, bolsas parche y cinta 3M Scotchlite según lo que cargue tu cuadrilla en campo. Elige bolsas de 10 por 10 pulgadas para el equipo autorizado y pruébalas con guantes antes de recibir el pedido. El cierre con broche y solapa debe quedar libre cuando el radio está colocado; esa comprobación evita resolver el acomodo con fijaciones ajenas al saco.', 'El pantalón amarillo lleva presillas, bolsas cargo con fuelle de 10 por 10 pulgadas, bolsas traseras y cintas reflejantes. Hacemos caminar, agacharse y subir desniveles con bota de campo para confirmar largo, rodilla y bajo antes de aceptar el lote. También revisamos que las presillas y los bolsillos permanezcan firmes; la movilidad del conjunto depende de esa prueba, no solo de la talla anotada.', 'BOMW1002 tiene estatus sin norma: no existe norma declarada ni certificación publicada para presentarte. Esa ausencia cubre todo el conjunto, tanto Nomex IIIA 6.0 oz como algodón 100 % ignífugo, y no sustituye el procedimiento de tu centro de trabajo. Te entregamos ficha técnica e inspeccionamos cierre, velcro, cinta 3M, costuras, bolsas y contaminación antes de volverlo a servicio en campo.'],
-    faq: [{ q: '¿Cuál es la diferencia entre códigos?', a: 'BOMW1002 es Nomex IIIA; BOMW1002 FR es algodón 100 % ignífugo.' }, { q: '¿El saco tiene porta radio?', a: 'Sí.' }, { q: '¿Qué lleva el pantalón?', a: 'Presillas, bolsas cargo con fuelle, bolsas traseras y cintas reflejantes.' }, { q: '¿Qué revisar al recibir?', a: 'Código, material, talla, cierres, cinta, bolsillos y costuras.' }, { q: '¿Tiene una norma declarada?', a: 'No; su estatus es sin norma.' }, { q: '¿Cómo se repone una pieza?', a: 'Identificando la versión exacta y cotejándola con la prenda que sigue en uso.' }],
-    relacionados: [...piezasPorFamilia.forestal],
-  },
-  'romak-mark-one': {
-    title: 'Traje aluminizado Romak Fire Mark One MPX-8 certificado UL',
-    description: 'Traje de bombero de aproximación aluminizado Romak Fire Mark One MPX-8 BOM1046: cuatro capas Nor-Fab, certificado UL MH48840, para ARFF e industria. Cotiza.',
-    resumen: ['Romak Fire Mark One MPX-8 es un traje de proximidad BOM1046 para operación aeroportuaria e industrial, con cuatro capas: Nor-Fab MPX-8 aluminizada de 17 % Basofil y 83 % para-aramida, Omni Synergy, Stedair 3000, DRD, porta radio bilateral, tirantes H y talón Ara-Shield. Cuenta con UL MH48840.', 'Pídelo con BOM1046, tallas, tirantes de cuatro u ocho puntos y accesorios para tu equipo de proximidad. Te entregamos ficha técnica, certificado UL MH48840 y carta de distribuidor para NFPA 1971:2018 proximidad, ligados a la configuración solicitada. Mándanos por WhatsApp fotos de casco, máscara, ERA, radio y micrófono para preparar la talla.'],
-    caracteristicas: ['Sistema de cuatro capas para proximidad aeroportuaria e industrial', 'Nor-Fab MPX-8 aluminizada: 17 % Basofil y 83 % para-aramida', 'Exterior y refuerzos aluminizados', 'Barrera térmica Omni Synergy y humedad Stedair 3000', 'DRD con letras de alta visibilidad, porta micrófono y extensión de manga', 'Porta radio bilateral y mangas curvas', 'Hombros acolchados con ocho puntos de anclaje', 'Tirantes H, cierre doble Nomex, rodilleras y talón Ara-Shield'],
-    descripcion: ['Mark One MPX-8 comienza por el alcance: proximidad aeroportuaria e industrial con BOM1046, no un traje estructural ni de entrada a flama. En la orden anotamos Nor-Fab MPX-8 aluminizada, Omni Synergy, Stedair 3000, tallas y accesorios. El exterior tiene 17 % Basofil y 83 % para-aramida; elige esa configuración completa para calor radiante y no sustituyas capas bajo el mismo nombre del modelo.', 'El chaquetón lleva DRD con letras de alta visibilidad, puño porta micrófono, extensión de manga, porta radio bilateral, mangas curvas, bolsas con fuelle y hombros acolchados de ocho puntos de anclaje. En la prueba de talla usamos casco, máscara, ERA, radio, micrófono y guantes; tú subes a cabina y alcanzas los controles mientras revisamos que cables, antenas y correas no invadan la manga ni el DRD.', 'Al cotizar define el DRD, porta radio a ambos lados, porta micrófono, bolsas con fuelle y los hombros de ocho puntos de anclaje. Elegimos esos accesorios contra el radio y la comunicación de tu unidad para que el conjunto aluminizado conserve acceso real. Antes de entregarlo, revisamos con ERA que las bolsas no estorben correas y que el micrófono no genere presión sobre Nor-Fab MPX-8.', 'La pantalonera se configura con tirantes H de cuatro u ocho puntos, cierre doble con zipper Nomex, hebillas antichispa, gancho y anillo D, refuerzo diamante, rodilleras acolchadas y talón Ara-Shield. Probamos entrar y salir de cabina, arrodillarse y caminar con la bota final. Antes de aceptar un lote, confirmamos que tirantes, cintura y rodilleras mantengan su lugar y el traslape con el chaquetón no se abra.', 'Mark One tiene certificación UL MH48840 para NFPA 1971:2018 proximidad, que cubre la configuración fabricada, no cualquier cambio de capas o accesorios. Te entregamos ficha técnica, certificado UL y carta de distribuidor con el pedido. Bajo NFPA 1850 revisamos superficie aluminizada, costuras, cierre, puños, cinta, DRD y Ara-Shield después de uso; la abrasión o contaminación exige apartar la prenda para servicio.'],
-    faq: [{ q: '¿Para qué operación se indica?', a: 'Proximidad aeroportuaria e industrial.' }, { q: '¿Cuál es la certificación publicada?', a: 'UL MH48840 para NFPA 1971:2018 proximidad.' }, { q: '¿Qué exterior declara?', a: 'Nor-Fab MPX-8 aluminizada.' }, { q: '¿Qué barreras contiene?', a: 'Omni Synergy y Stedair 3000.' }, { q: '¿Qué tirantes puede llevar?', a: 'Tirantes H de cuatro u ocho puntos.' }, { q: '¿Cuál es el código?', a: 'BOM1046.' }],
-    relacionados: [...piezasPorFamilia.aproximacion],
-  },
+export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
+  "tipos": [],
+  "modelos": [
+    {
+      "id": "romak-protector",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Protector",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "capaExterior": "Según configuración: PBI/Kevlar o Nomex/Kevlar",
+      "barreras": "Defender; Stedair 3000 o 4000",
+      "colores": "Natural gold, negro, amarillo u oro, según configuración",
+      "tallas": "Chaquetón S (34–36) a 2XL (50–52); pantalón S (28–30) a 2XL (44–46)",
+      "peso": "Chaquetón 2.5 kg; pantalón 1.88 kg",
+      "norma": "NFPA 1971:2018",
+      "estatusNorma": "certificado-ul",
+      "certificacion": "MH14790",
+      "chips": [
+        "Estructural",
+        "UL MH14790",
+        "Tres capas"
+      ],
+      "resumen": [
+        "El Romak Fire Protector es el traje estructural que más cotizamos a cuerpos de bomberos municipales: chaquetón de 2.5 kg y pantalonera de 1.88 kg en tres capas, exterior a elegir entre PBI Gemini XTL (40 % PBI / 60 % Kevlar) o Nomex Brigade 7.5 oz, barrera térmica Defender, barrera de humedad Stedair 3000 o 4000 y certificación UL MH14790 bajo NFPA 1971:2018.",
+        "Se pide con cuatro datos —exterior, color, barrera de humedad y talla— y con eso te entregamos ficha técnica por partida, certificado UL y carta de distribuidor para tu pliego. Si vas a reponer piezas de un lote anterior, mándanos la etiqueta interior por WhatsApp y te confirmamos la misma configuración."
+      ],
+      "caracteristicas": [
+        "Exterior PBI Gemini XTL o Brigade 7.5 oz, según configuración",
+        "Térmica Defender y humedad Stedair 3000 o 4000",
+        "DRD de cinta 100 % Kevlar y cuello de cuatro capas",
+        "Chaquetón con solapa de cinco pulgadas, tapa boca y porta radio bilateral",
+        "Dos bolsas cargo con fuelle y drenado; bolsa interior",
+        "Pantalón Tree Lock, tirantes H de cuatro u ocho puntos y ajustes laterales",
+        "Ara-Shield acolchado en hombros, codos, rodillas y talón",
+        "Tallas publicadas de S a 2XL para ambas prendas"
+      ],
+      "descripcion": [
+        "Con el Protector la primera decisión es la tela exterior, y conviene tomarla con el presupuesto y el clima de tu zona en la mano: PBI Gemini XTL (40 % PBI y 60 % Kevlar) resiste mejor el calor radiante y no se vuelve quebradizo tras exposiciones repetidas, mientras que Brigade 7.5 oz (93 % Nomex, 5 % Kevlar y 2 % antiestático) cuesta menos y pesa parecido. El exterior fija los colores disponibles —natural gold, negro, amarillo u oro—, así que en la orden de compra escribimos siempre exterior, color, barrera de humedad y talla; «Protector» a secas no identifica la prenda.",
+        "El chaquetón está pensado para trabajar con máscara y monja puestas: cierre de zipper Nomex YKK con velcro FR y solapa de cinco pulgadas en cuatro capas, cuello de cuatro pulgadas, tapa boca Shield Fire abatible, puño Nomex Ultra Soft con abertura para el pulgar y pozo de agua. En la prueba de talla te pedimos levantar los brazos y mirar al techo con el casco puesto: si el cuello se abre o el puño se retrae más de 2 cm, cambiamos la talla antes de facturar.",
+        "El DRD (dispositivo de rescate por arrastre) es una cinta 100 % Kevlar cosida al chaquetón que tu compañero jala para sacarte de un piso; queda accesible con el ERA puesto, y en la recepción lo revisamos con el arnés colocado. Las bolsas cargo de 10 × 10 pulgadas con fuelle y drenado, la bolsa porta radio —a la izquierda o a la derecha, según cómo cargue tu cuerpo— y la bolsa interior se eligen en la cotización, porque un radio y una lámpara cambian cómo cae la prenda y la talla se prueba con ellos puestos.",
+        "La pantalonera cierra con el sistema Tree Lock: zipper Nomex YKK, velcro FR y broche de gancho con anillo D antichispa. Los tirantes en H vienen de cuatro u ocho puntos, y la prenda trae ajustes laterales, bolsas cargo, refuerzo diamante en la entrepierna, talón con resaque y rodilleras Ara-Shield acolchadas. Antes de aceptar un lote pedimos a un elemento ponerse en cuclillas, subir una escalera y entrar y salir de la unidad: el solape con el chaquetón tiene que mantenerse en las tres posiciones.",
+        "El Protector está certificado por UL con el número MH14790 bajo NFPA 1971:2018, y esa certificación cubre la configuración tal como se fabricó: si cambias capas o accesorios sin documentarlo, dejas de estar amparado. Te entregamos el certificado con el pedido y la ficha de inspección que marca NFPA 1850: exterior, cinta reflejante, costuras, cierres, puños, refuerzos y barreras después de cada uso; una prenda contaminada o dañada se aparta hasta que un centro de servicio la libere."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué exterior puede llevar Protector?",
+          "a": "PBI Gemini XTL o Brigade 7.5 oz; la configuración debe indicarse en la cotización."
+        },
+        {
+          "q": "¿Cuál es la certificación publicada?",
+          "a": "UL MH14790 para NFPA 1971:2018."
+        },
+        {
+          "q": "¿Dónde se ubica el DRD?",
+          "a": "En el chaquetón, como cinta 100 % Kevlar."
+        },
+        {
+          "q": "¿Qué cierre usa el pantalón?",
+          "a": "Tree Lock con zipper Nomex, velcro FR y gancho con anillo D antichispa."
+        },
+        {
+          "q": "¿Qué tallas se publican?",
+          "a": "Chaquetón de S a 2XL y pantalonera de S a 2XL, con rangos distintos por prenda."
+        },
+        {
+          "q": "¿Qué revisar en una reposición?",
+          "a": "Exterior, barreras, color, talla, tirantes y accesorios, además del estado de la prenda sustituida."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-protector.avif",
+        "alt": "Traje estructural Romak Fire Protector",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje de bombero estructural Romak Fire Protector UL",
+      "description": "Traje de bombero estructural Romak Fire Protector: exterior PBI/Kevlar o Nomex/Kevlar, DRD, certificado UL MH14790, tallas y cotización con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "romak-profesional",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Profesional",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "capaExterior": "Brigade 7.5 oz: 93 % Nomex, 5 % Kevlar y 2 % fibra antiestática",
+      "barreras": "Stedair 3000; Defender",
+      "colores": "Amarillo, negro o rojo",
+      "norma": "NFPA 1971:2018",
+      "estatusNorma": "certificado-ul",
+      "chips": [
+        "Estructural",
+        "Brigade 7.5 oz",
+        "Profesional"
+      ],
+      "resumen": [
+        "El Romak Fire Profesional es un traje estructural que cotizamos para corporaciones que buscan Brigade 7.5 oz —93 % Nomex, 5 % Kevlar y 2 % fibra antiestática— con Stedair 3000, térmica Defender y refuerzos Ara-Shield. Lleva DRD de Kevlar, cuello de cuatro capas, cinta 3M limón-plata-limón de tres pulgadas y pantalonera con tirantes H de cuatro puntos.",
+        "Pídenos exterior Brigade 7.5 oz, color amarillo, negro o rojo, talla, Stedair 3000 y accesorios; si requieres el kit, anotamos BOM1028, BOM1040, Bullard LTX, Croydon Filtrex, Veridian Fire Pro II y Majestic PAC II por separado. Te entregamos ficha técnica y confirmamos el estatus certificado UL para NFPA 1971:2018. Mándanos por WhatsApp las tallas y el equipo que usa tu brigada."
+      ],
+      "caracteristicas": [
+        "Brigade 7.5 oz: 93 % Nomex, 5 % Kevlar y 2 % fibra antiestática",
+        "Stedair 3000 y térmica Defender",
+        "Colores amarillo, negro o rojo",
+        "DRD de Kevlar, cuello de cuatro capas y tapa boca",
+        "Zipper Nomex, velcro FR y cinta 3M limón-plata-limón de tres pulgadas",
+        "Porta radio, bolsas cargo, pozo de agua y refuerzos Ara-Shield",
+        "Pantalón con tirantes H de cuatro puntos y rodilleras Ara-Shield",
+        "Referencia de kit con chaquetón, pantalón, casco, bota, guante y capucha"
+      ],
+      "descripcion": [
+        "Arranca tu compra por el composite: Brigade 7.5 oz —93 % Nomex, 5 % Kevlar y 2 % fibra antiestática—, Stedair 3000, térmica Defender y Ara-Shield negro o gris. Elige amarillo, negro o rojo según tu corporación y escríbenos las cuatro capas, color y talla en cada partida. Nosotros cotizamos esa combinación completa; pedir solo Profesional deja abierta la configuración que recibirá tu brigada.",
+        "En el chaquetón reunimos zipper Nomex, velcro FR, DRD de Kevlar, cuello de cuatro capas y tapa boca. El porta radio, bolsas cargo, pozo de agua y cinta 3M limón-plata-limón de tres pulgadas se seleccionan para cómo carga tu gente. Durante la talla, ponte capucha, máscara, guantes y ERA; te pedimos alcanzar el radio y elevar ambos brazos. Si el cuello o el puño pierde cobertura, cambiamos talla antes de integrar el pedido.",
+        "Para rescate y carga exterior, define con nosotros el DRD de Kevlar, porta radio, bolsas cargo y cinta 3M de tres pulgadas. Elige la posición del radio con el arnés ERA puesto, porque una bolsa mal ubicada cambia la caída del chaquetón. En la prueba haz que un elemento tome una manguera y gire el torso con guantes; así confirmamos que el tapa boca, el pozo de agua y las bolsas siguen accesibles.",
+        "La pantalonera lleva tirantes H de cuatro puntos, cierre, ajustes laterales y rodilleras Ara-Shield. Pídela con la talla de pantalón independiente del chaquetón y prueba el conjunto con Croydon Filtrex si esa bota integra tu kit. Antes de aceptar el lote hacemos cuclilla, escalera y entrada a unidad con ERA: la cintura debe conservar solape y las rodilleras quedar en su sitio. Para kit negro anotamos térmica Xtralite y talla M, G o XL cuando aplique.",
+        "Romak Fire publica el Profesional como certificado UL bajo NFPA 1971:2018; confirmamos el número aplicable a tu configuración y te entregamos ficha técnica, certificado UL y carta de distribuidor. Esa documentación cubre el conjunto fabricado, no accesorios añadidos después. Para servicio usamos NFPA 1850: revisamos cinta 3M, costuras, cierres, puños, cuello, Ara-Shield y zonas del ERA después de cada uso; una prenda con humo, calor o contaminantes queda fuera de servicio."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué capa exterior declara?",
+          "a": "Brigade 7.5 oz con Nomex, Kevlar y fibra antiestática."
+        },
+        {
+          "q": "¿Qué barreras se indican?",
+          "a": "Stedair 3000 y Defender."
+        },
+        {
+          "q": "¿Se publica en varios colores?",
+          "a": "Sí: amarillo, negro o rojo."
+        },
+        {
+          "q": "¿Qué incluye el kit de referencia?",
+          "a": "Chaquetón, pantalón, casco, bota, guante y capucha descritos por separado."
+        },
+        {
+          "q": "¿El kit negro conserva la misma térmica?",
+          "a": "Se menciona Xtralite para esa referencia; confírmala por escrito."
+        },
+        {
+          "q": "¿Cómo se confirma la certificación?",
+          "a": "Con la declaración aplicable a la configuración ofertada."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-profesional.avif",
+        "alt": "Traje estructural Romak Fire Profesional",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje de bombero estructural Romak Fire Profesional UL",
+      "description": "Traje de bombero estructural Romak Fire Profesional: Brigade 7.5 oz, Stedair 3000 y Defender, opción de kit completo y cotización con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "romak-defender",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Defender",
+      "codigo": "BOM1045",
+      "capaExterior": "Advance 7.0 oz: 60 % Kevlar y 40 % Nomex",
+      "barreras": "Stedair 3000 o 4000; Defender",
+      "colores": "Khaki o negro",
+      "norma": "NFPA 1971:2018",
+      "estatusNorma": "certificado-ul",
+      "chips": [
+        "Estructural",
+        "Advance 7.0 oz",
+        "BOM1045"
+      ],
+      "resumen": [
+        "El Romak Fire Defender es un traje estructural para quien necesita Advance 7.0 oz —60 % Kevlar y 40 % Nomex—, térmica Defender y barrera Stedair 3000 o 4000. Cotizamos khaki o negro, con DRD, cuello de cuatro capas, tapa boca, Ara-Shield en hombros, codos, rodillas y talón, además de tirantes H y ajuste lateral.",
+        "Escríbenos BOM1045, Stedair 3000 o 4000, color, talla, tirantes y accesorios para cerrar tu configuración. Te entregamos ficha técnica, certificado UL y carta de distribuidor con la configuración aplicable a NFPA 1971:2018. Para una reposición, mándanos por WhatsApp la etiqueta de la prenda que seguirá en servicio y cotejamos capas y color."
+      ],
+      "caracteristicas": [
+        "Advance 7.0 oz: 60 % Kevlar y 40 % Nomex",
+        "Barrera de humedad Stedair 3000 o 4000",
+        "Barrera térmica Defender",
+        "Colores khaki o negro",
+        "DRD, cuello de cuatro capas y tapa boca",
+        "Porta radio, bolsas cargo, pozo de agua y cinta reflejante",
+        "Tirantes H, ajuste lateral y refuerzo diamante de entrepierna",
+        "Ara-Shield en hombros, codos, rodillas y talón"
+      ],
+      "descripcion": [
+        "La primera elección del Defender es Stedair 3000 o Stedair 4000 sobre Advance 7.0 oz —60 % Kevlar y 40 % Nomex— con térmica Defender. Elige khaki o negro y pide que BOM1045 lleve exterior, barrera, térmica, color y talla en la misma línea. Nosotros no cotizamos el nombre aislado: dos lotes Defender con distinta Stedair no son el mismo conjunto para tu cuerpo de bomberos.",
+        "Su chaquetón reúne DRD, cuello de cuatro capas, tapa boca, porta radio, bolsas cargo, pozo de agua y cinta reflejante. Pídelo con la distribución de carga que usa tu personal. En la prueba de talla colocamos casco, monja, máscara, guante y ERA; después pedimos mirar arriba, alcanzar el radio y tomar herramienta. Si cuello y puños cambian de posición, ajustamos la talla antes de levantar la orden.",
+        "El DRD, porta radio, bolsas cargo, pozo de agua y cinta reflejante se definen en cotización porque cada accesorio ocupa un frente de trabajo. Elige el porta radio para el lado que usa tu brigada y prueba una herramienta en las bolsas con el ERA puesto. Hacemos esa maniobra para confirmar que el DRD queda libre y que la cinta conserva visibilidad sin que radio o bolsa interfieran con las correas.",
+        "La pantalonera combina tirantes H, ajuste lateral, bolsas, refuerzo diamante de entrepierna, talón reforzado y rodilleras Ara-Shield acolchadas. Te pedimos usar la bota asignada, caminar, arrodillarte y subir escalera antes de recibir el lote. Elige la talla que mantenga talón y rodillera alineados; si la cintura pierde solape con el chaquetón, corregimos el ajuste lateral o la talla y no aceptamos esa pieza.",
+        "El fabricante publica estatus certificado UL bajo NFPA 1971:2018; confirmamos el número de la configuración y te entregamos ficha técnica, certificado UL y carta de distribuidor. El certificado cubre las capas documentadas, no una combinación distinta. Para NFPA 1850 revisamos Ara-Shield, costuras, cierre, puños y cinta antes y después del uso. Una prenda con suciedad retenida, daño o calor queda fuera de servicio hasta atender el procedimiento del fabricante."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el exterior?",
+          "a": "Advance 7.0 oz, 60 % Kevlar y 40 % Nomex."
+        },
+        {
+          "q": "¿Qué Stedair se puede pedir?",
+          "a": "Stedair 3000 o Stedair 4000."
+        },
+        {
+          "q": "¿Qué colores están publicados?",
+          "a": "Khaki y negro."
+        },
+        {
+          "q": "¿Qué protege Ara-Shield?",
+          "a": "Hombros, codos, rodillas y talón."
+        },
+        {
+          "q": "¿Cómo se recibe una reposición?",
+          "a": "Comparando capas, color, talla y accesorios contra la prenda que continúa en servicio."
+        },
+        {
+          "q": "¿El número UL está publicado?",
+          "a": "Debe confirmarse con la configuración cotizada."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-defender.avif",
+        "alt": "Traje estructural Romak Fire Defender",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje de bombero Romak Fire Defender BOM1045 certificado UL",
+      "description": "Traje de bombero estructural Romak Fire Defender BOM1045: exterior Advance, Stedair 3000 o 4000, refuerzos Ara-Shield y cotización con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "romak-vantage",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Vantage",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "capaExterior": "OMNI Vantage 7.8 oz ripstop",
+      "barreras": "Stedair 3000; Thermal Liner",
+      "colores": "Amarillo o negro",
+      "norma": "NFPA 1971:2018",
+      "estatusNorma": "certificado-ul",
+      "chips": [
+        "Estructural",
+        "OMNI Vantage",
+        "Ripstop"
+      ],
+      "resumen": [
+        "El Romak Fire Vantage es un traje estructural de OMNI Vantage 7.8 oz ripstop, Stedair 3000 y Thermal Liner que cotizamos para brigadas que requieren comprobar movilidad con equipo completo. Disponible en amarillo o negro, suma DRD de Kevlar, cuello de cuatro capas, manga curva ergonómica, cinta 3M limón-plata-limón de tres pulgadas, tirantes H y rodilleras Ara-Shield.",
+        "Pídenos exterior OMNI Vantage 7.8 oz ripstop, Stedair 3000, Thermal Liner, color, talla y accesorios instalados. Te entregamos ficha técnica, certificado UL y carta de distribuidor para la referencia NFPA 1971:2018 aplicable. Mándanos por WhatsApp una foto de tu radio, guante y ERA para preparar la prueba de talla con esas interfaces."
+      ],
+      "caracteristicas": [
+        "Exterior OMNI Vantage 7.8 oz ripstop",
+        "Stedair 3000 y Thermal Liner",
+        "Colores amarillo o negro",
+        "DRD de Kevlar, cuello de cuatro capas y tapa boca con velcro FR",
+        "Manga curva ergonómica, porta radio y bolsas cargo con fuelle",
+        "Pozo de agua y cinta 3M limón-plata-limón de tres pulgadas",
+        "Tirantes H de cuatro puntos",
+        "Rodilleras Ara-Shield y refuerzos de la línea"
+      ],
+      "descripcion": [
+        "Para Vantage decide primero el exterior OMNI Vantage 7.8 oz ripstop con Stedair 3000 y Thermal Liner, y luego amarillo o negro. Escribe esas capas, color, talla y Ara-Shield en tu orden; nosotros las cotizamos como una sola configuración. El nombre Vantage no sustituye el composite ni los accesorios que recibirá tu corporación, sobre todo cuando la reposición debe coincidir con un conjunto ya asignado.",
+        "La manga curva ergonómica trabaja junto con Stedair 3000, cuello de cuatro capas, tapa boca con velcro FR, pozo de agua y puño. En tu prueba te pedimos usar casco, monja, máscara, guantes y ERA, extender los brazos y alcanzar arriba del hombro. Elige la talla que conserve cuello y muñeca cubiertos mientras tomas el radio; si la manga se retrae, cambiamos talla antes de pedir el chaquetón.",
+        "Cotiza el DRD de Kevlar, porta radio, bolsas cargo con fuelle y cinta 3M limón-plata-limón de tres pulgadas con el OMNI Vantage 7.8 oz ripstop según el equipo de tu unidad. Elige dónde quedará el radio antes de producir, porque la carga exterior cambia cómo cae el frente. Hacemos una prueba de bolsa con guantes y arnés ERA: radio y herramientas deben salir sin bloquear máscara, correas ni el acceso al DRD.",
+        "Abajo, la pantalonera trae tirantes H de cuatro puntos, ajustes de línea y rodilleras Ara-Shield. Pídela por talla propia y pruébala con la bota de servicio, en cuclilla y escalera. Antes de aceptar un lote verificamos tiro, solape de cintura y alineación de rodillera al subir a la unidad. Si el bajo arrastra o la rodillera se mueve, elegimos otra talla o ajuste de línea antes de recibir las piezas.",
+        "El Vantage se publica con estatus certificado UL bajo NFPA 1971:2018; confirmamos el código aplicable y te entregamos ficha técnica, certificado UL y carta de distribuidor. El documento ampara la configuración publicada, no accesorios modificados después. Bajo NFPA 1850, tu rutina incluye cinta 3M, puños, cierres, costuras y Ara-Shield antes y después del uso. Humo, calor o daño obligan a retirar la prenda hasta aplicar el proceso del fabricante."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué exterior lleva Vantage?",
+          "a": "OMNI Vantage 7.8 oz ripstop."
+        },
+        {
+          "q": "¿Qué barreras se declaran?",
+          "a": "Stedair 3000 y Thermal Liner."
+        },
+        {
+          "q": "¿Qué colores se publican?",
+          "a": "Amarillo y negro."
+        },
+        {
+          "q": "¿Cómo se revisa la manga curva?",
+          "a": "Con guantes, capucha, máscara y movimientos de alcance reales."
+        },
+        {
+          "q": "¿Qué tirantes declara?",
+          "a": "Tirantes H de cuatro puntos."
+        },
+        {
+          "q": "¿El código es fijo?",
+          "a": "Se confirma al cotizar según la configuración."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-vantage.avif",
+        "alt": "Traje estructural Romak Fire Vantage",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje de bombero estructural Romak Fire Vantage UL",
+      "description": "Traje de bombero estructural Romak Fire Vantage: OMNI Vantage ripstop, Stedair 3000, Thermal Liner, corte ergonómico y cotización con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "romak-maverick-ii",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Maverick II",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "capaExterior": "Panther 210 g/m²: 65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática",
+      "barreras": "Moisture Barrier 125; Dubai TB205",
+      "norma": "EN 469 · NFPA 1970:2025 · NFPA 1971:2018",
+      "estatusNorma": "declarado",
+      "chips": [
+        "Estructural",
+        "NFPA 1970:2025",
+        "Declarado"
+      ],
+      "resumen": [
+        "Maverick II es el estructural que cotizamos por composite: Panther 210 g/m² —65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática—, Moisture Barrier 125 de 125 g/m² y Dubai TB205 de 205 g/m². Sus capas se publican con nombre y composición; ese es el dato que usamos para comparar una partida, no el lema comercial.",
+        "Pídenos Panther, Moisture Barrier 125, Dubai TB205, talla y accesorios en tu orden, porque el código depende de configuración. Te entregamos ficha técnica y declaración de conformidad; las referencias EN 469, NFPA 1970:2025 y NFPA 1971:2018 tienen estatus declarado, no certificación. Mándanos por WhatsApp el alcance de tu operación y la lista de accesorios para integrar la cotización."
+      ],
+      "caracteristicas": [
+        "Panther 210 g/m²: meta-aramida, para-aramida y fibra antiestática",
+        "Moisture Barrier 125: 125 g/m² y 100 % aramida",
+        "Dubai TB205: 205 g/m², aramida y viscosa FR",
+        "El fabricante usa el lema “La protección más ligera”",
+        "Referencias EN 469, NFPA 1970:2025 y NFPA 1971:2018",
+        "Estatus normativo declarado",
+        "Código según configuración; confirmación previa a la orden"
+      ],
+      "descripcion": [
+        "Maverick II empieza por Panther 210 g/m² —65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática— con Moisture Barrier 125 y Dubai TB205. Escribe los tres nombres, sus 125 g/m² y 205 g/m², talla y accesorios en la orden. Nosotros confirmamos el código según configuración; pedir solo Maverick II no protege tu compra contra un composite distinto al que evaluó tu corporación.",
+        "Para el chaquetón pedimos al fabricante identificar cierres, cuello, puños y sus interfaces con casco, monja, máscara y guante dentro de la configuración Panther 210 g/m². Durante la prueba de talla te ponemos capucha, guantes, botas y ERA de tu corporación; haces alcance, flexión y traslado de equipo. Elige la talla que mantenga cuello, muñeca, cintura y bota cubiertos sin tensión constante en costuras y cierres.",
+        "Antes de cotizar accesorios, define radio, lámpara, bolsas, porta radio, cinta reflejante y DRD para Panther 210 g/m², Moisture Barrier 125 y Dubai TB205. La ficha no publica esos componentes; por eso no los asumimos en tu partida. En la muestra de talla comprobamos que el arnés ERA y los accesorios autorizados no presionen las capas ni bloqueen una salida. Pídenos por escrito cada accesorio que sí requerirá tu cuadrilla.",
+        "Para pantalonera o conjunto, solicitamos al fabricante el cierre, tirantes, refuerzos y rodilleras que correspondan a Panther 210 g/m² antes de producir. Con bota y ERA puestos hacemos cuclilla, escalera y traslado de equipo; la pieza elegida debe conservar cobertura de cintura y bota. Como la ficha no declara esos componentes, no los incluimos por inferencia: confirma en tu orden qué prenda inferior y qué accesorios forman el lote.",
+        "Maverick II declara Panther 210 g/m², EN 469, NFPA 1970:2025 y NFPA 1971:2018; ese estatus es declarado, no certificado UL. Te entregamos ficha técnica y declaración de conformidad aplicable, no un certificado. Para NFPA 1850, tu centro debe inspeccionar exterior Panther, costuras, cinta, puños y cierres antes y después del uso según la información del fabricante. Daño, abrasión o contaminación requieren retiro de servicio y evaluación documentada."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la capa exterior?",
+          "a": "Panther 210 g/m² con meta-aramida, para-aramida y fibra antiestática."
+        },
+        {
+          "q": "¿Qué barrera de humedad declara?",
+          "a": "Moisture Barrier 125, 100 % aramida."
+        },
+        {
+          "q": "¿Qué térmica indica?",
+          "a": "Dubai TB205 con aramida y viscosa FR."
+        },
+        {
+          "q": "¿Menciona NFPA 1970:2025?",
+          "a": "Sí, como referencia declarada."
+        },
+        {
+          "q": "¿Está publicado como certificado?",
+          "a": "No; su estatus es declarado."
+        },
+        {
+          "q": "¿Cómo se identifica el código?",
+          "a": "Se confirma al cotizar según la configuración."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-maverick-ii.avif",
+        "alt": "Traje estructural Romak Fire Maverick II",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Romak Fire Maverick II: traje estructural de tres capas",
+      "description": "Traje de bombero estructural Romak Fire Maverick II: Panther 210 g/m², Moisture Barrier 125 y Dubai TB205; EN 469 y NFPA 1970 declaradas. Cotiza con ficha.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "skold-hero-pbimax",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Sköld",
+      "fabricante": "Sköld",
+      "nombre": "Hero PBI MAX",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "capaExterior": "PBI MAX",
+      "barreras": "Resistentes a agentes químicos, biológicos, radiológicos y nucleares, según fabricante",
+      "norma": "NFPA 1971 ed. 2018",
+      "estatusNorma": "equivalente",
+      "chips": [
+        "Estructural",
+        "PBI MAX",
+        "Equivalente"
+      ],
+      "resumen": [
+        "Sköld Hero PBI MAX es un traje estructural con exterior PBI MAX, cuello tipo escudo de cobertura 360° y DRD en espalda. Lo cotizamos para cuerpos que requieren bies plata, banda Orafol, puño Kevlar con ojillo para pulgar, Stedshield en mangas, hombros, codos y rodillas, además de tirantes acolchados con conexión rápida.",
+        "Pídenos PBI MAX, talla, bies plata, banda Orafol, bolsillos y tirantes acolchados como una configuración. Te entregamos ficha técnica; NFPA 1971 edición 2018 se publica como equivalente, no certificado UL, y SköldTracker sirve para fichas, mantenimiento y caducidad. Mándanos por WhatsApp el lado de radio y la bota de tu elemento para coordinar la prueba."
+      ],
+      "caracteristicas": [
+        "Exterior PBI MAX",
+        "Cuello tipo escudo de cobertura 360° y DRD en espalda",
+        "Bies plata en pecho, espalda, brazos y bolsas",
+        "Banda reflejante Orafol, zipper y velcro",
+        "Bolsillo superior derecho y dos bolsillos inferiores",
+        "Puño de Kevlar con ojillo para pulgar",
+        "Stedshield en mangas, hombros, codos y rodillas",
+        "Tirantes acolchados, ajuste posterior y conexión rápida"
+      ],
+      "descripcion": [
+        "Elige Hero PBI MAX por exterior PBI MAX y cuello tipo escudo de cobertura 360°, no solo por el nombre Hero. En tu orden anotamos DRD en espalda, bies plata, banda Orafol, bolsillo superior derecho, dos inferiores, talla y zipper con velcro. Esa lista define la pieza que cotizamos para tu corporación y evita que visibilidad o acceso a herramientas queden abiertos.",
+        "El chaquetón combina cuello escudo, zipper, velcro, puño Kevlar con ojillo para pulgar y Stedshield en mangas, hombros y codos. En la prueba de talla coloca casco, monja, máscara, guante y ERA; te pedimos girar la cabeza, elevar brazos y accionar el radio. Elige el ajuste que conserve el cuello 360° y el puño sobre el guante, sin que el arnés o la máscara impidan mover la manga.",
+        "Cotiza DRD, bolsillo superior derecho, dos bolsillos inferiores, bies plata y banda Orafol según la carga que llevará tu gente. Elige el contenido de bolsa antes de producir: radio, herramienta y arnés ERA deben dejar libre el DRD. Probamos esos accesorios con guantes para confirmar acceso y que la banda Orafol permanezca visible. Si una bolsa altera el frente, ajustamos su uso dentro de la configuración publicada.",
+        "La pantalonera PBI MAX lleva tirantes acolchados, ajuste elástico posterior en el forro, conexión rápida, bolsillos laterales tipo parche y Stedshield en rodillas. Pídenos la talla con chaquetón y bota puestos. Antes de aceptar un lote hacemos cuclilla, escalera y traslado de herramienta; la cintura debe conservar solape y los tirantes mantener la pieza sin elevar el bajo. Elige ajuste posterior y contenido de bolsa con esa prueba realizada.",
+        "Sköld publica PBI MAX y NFPA 1971 edición 2018 como equivalente, no certificado UL; te entregamos ficha técnica y la declaración disponible para tu configuración. El fabricante declara barreras interiores resistentes a agentes químicos, biológicos, radiológicos y nucleares, sin convertir el conjunto en HazMat. Con SköldTracker registramos fichas, mantenimiento y caducidad. Inspecciona bies, Orafol, zipper, velcro, costuras, puños y Stedshield antes y después de uso; daño, calor o contaminación apartan la prenda."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué exterior declara?",
+          "a": "PBI MAX."
+        },
+        {
+          "q": "¿Cómo es el cuello?",
+          "a": "Tipo escudo con cobertura 360°."
+        },
+        {
+          "q": "¿Dónde está el DRD?",
+          "a": "En la espalda del chaquetón."
+        },
+        {
+          "q": "¿Qué refuerzos usa?",
+          "a": "Stedshield en mangas, hombros, codos y rodillas."
+        },
+        {
+          "q": "¿Qué es SköldTracker?",
+          "a": "La plataforma indicada para fichas, mantenimiento y caducidad."
+        },
+        {
+          "q": "¿Está certificado UL?",
+          "a": "No; se publica con estatus equivalente."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/skold-hero-pbimax.avif",
+        "alt": "Traje Sköld Hero PBI MAX",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Sköld"
+      },
+      "imagenesExtra": [
+        {
+          "src": "/images/catalogo/trajes/skold-hero-pbimax-conjunto.avif",
+          "alt": "Conjunto Sköld Hero PBI MAX",
+          "width": 1000,
+          "height": 1250,
+          "origen": "proveedor",
+          "credito": "Sköld"
+        }
+      ],
+      "title": "Traje de bombero Sköld Hero PBI MAX con cuello 360°",
+      "description": "Traje de bombero estructural Sköld Hero PBI MAX: cuello 360°, DRD, Stedshield, tirantes acolchados y SköldTracker. Cotiza con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "skold-hero-nomex",
+      "seccion": "trajes",
+      "familia": "estructural",
+      "marca": "Sköld",
+      "fabricante": "Sköld",
+      "nombre": "Hero Nomex IIIA",
+      "codigo": "MH60435",
+      "capaExterior": "Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750",
+      "colores": "Amarillo",
+      "norma": "NFPA 1971 ed. 2018",
+      "estatusNorma": "certificado-ul",
+      "certificacion": "MH60435",
+      "chips": [
+        "Estructural",
+        "UL MH60435",
+        "Nomex IIIA"
+      ],
+      "resumen": [
+        "Sköld Hero Nomex IIIA es un estructural amarillo certificado UL MH60435 para NFPA 1971 edición 2018. Cotizamos el exterior Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750 con cuello escudo, DRD, porta linternas, bolsillo porta radios, bies plata, banda Orafol, puño Kevlar y Stedshield.",
+        "Pídenos MH60435, exterior elegido, talla, amarillo, porta linternas y bolsillo para radio en cada línea de tu orden. Te entregamos ficha técnica, certificado UL y carta de distribuidor de la configuración aplicable. Mándanos por WhatsApp una foto de tu radio y lámpara para probarlas con máscara, guantes, ERA y los tirantes acolchados."
+      ],
+      "caracteristicas": [
+        "Certificación UL MH60435 para NFPA 1971 ed. 2018",
+        "Color amarillo",
+        "Exteriores Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750",
+        "Cuello tipo escudo y DRD",
+        "Porta linternas y bolsillo porta radios",
+        "Bies plata, banda Orafol, zipper y velcro",
+        "Puño Kevlar con ojillo para pulgar y Stedshield",
+        "Tirantes acolchados, ajuste posterior y conexión rápida"
+      ],
+      "descripcion": [
+        "La primera decisión en Hero Nomex IIIA es Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750 como exterior amarillo. Escríbenos MH60435, la opción elegida, talla, bolsillos y accesorios definidos en la orden; nosotros cotizamos el exterior exacto certificado UL para NFPA 1971 edición 2018. Hero Nomex sin esa elección no identifica el conjunto que llegará a tu estación.",
+        "Este chaquetón integra cuello escudo, DRD, zipper, velcro, bies plata, banda Orafol, porta linternas y bolsillo porta radios. En la prueba usa casco, monja, máscara, guante y ERA con tu radio y lámpara reales. Te pedimos alcanzarlos y girar el torso: elige la ubicación que permita operarlos con guante sin bloquear las correas, la máscara ni el movimiento de los brazos.",
+        "Para visibilidad y carga, cotiza bies plata, banda Orafol, DRD, porta linternas y bolsillo porta radios junto con el exterior Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750. Así asociamos cada accesorio a la configuración MH60435. Probamos radio y lámpara con el arnés ERA para confirmar acceso al DRD y evitar una bolsa que presione el frente del chaquetón.",
+        "La pantalonera usa tirantes acolchados, ajuste posterior en el forro, conexión rápida y Stedshield en rodillas; el chaquetón suma puño Kevlar con ojillo para pulgar y Stedshield en mangas, hombros y codos. Pruébalos con bota puesta en rodilla, escalera y acceso a vehículo. Antes de aceptar el lote verificamos que tirantes y bajo no se eleven y que cintura, muñeca y rodilla mantengan cobertura.",
+        "Hero Nomex IIIA tiene certificación UL MH60435 para NFPA 1971 edición 2018; te entregamos ficha técnica, certificado UL y carta de distribuidor para el exterior elegido. La certificación no cubre complementos añadidos después. Con NFPA 1850 inspecciona Orafol, bies, cierres, velcro, puños, costuras, tirantes y Stedshield antes y después del uso. Si hay rasgadura, contaminación o pérdida de función, la prenda queda fuera de servicio para evaluación del fabricante."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la certificación?",
+          "a": "UL MH60435 para NFPA 1971 edición 2018."
+        },
+        {
+          "q": "¿Qué color está publicado?",
+          "a": "Amarillo."
+        },
+        {
+          "q": "¿Qué exteriores se pueden elegir?",
+          "a": "Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750."
+        },
+        {
+          "q": "¿Incluye porta linternas?",
+          "a": "Sí, además de bolsillo porta radios."
+        },
+        {
+          "q": "¿Cómo se ajusta la pantalonera?",
+          "a": "Con tirantes acolchados, ajuste posterior y conexión rápida."
+        },
+        {
+          "q": "¿Qué se coteja al recibir?",
+          "a": "Certificación, exterior, talla, color, accesorios y refuerzos contra la orden."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/skold-hero-nomex.avif",
+        "alt": "Traje Sköld Hero Nomex IIIA",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Sköld"
+      },
+      "imagenesExtra": [
+        {
+          "src": "/images/catalogo/trajes/skold-hero-nomex-chaqueton.avif",
+          "alt": "Chaquetón Sköld Hero Nomex IIIA",
+          "width": 1000,
+          "height": 1250,
+          "origen": "proveedor",
+          "credito": "Sköld"
+        },
+        {
+          "src": "/images/catalogo/trajes/skold-hero-nomex-pantalon.avif",
+          "alt": "Pantalón Sköld Hero Nomex IIIA",
+          "width": 1000,
+          "height": 1250,
+          "origen": "proveedor",
+          "credito": "Sköld"
+        }
+      ],
+      "title": "Traje de bombero Sköld Hero Nomex IIIA certificado UL",
+      "description": "Traje de bombero estructural Sköld Hero Nomex IIIA: certificado UL MH60435, cinco opciones de capa exterior, porta radio y linterna. Cotiza con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Chaquetón estructural de tres capas",
+          "href": "/trajes/estructural/chaqueton/"
+        },
+        {
+          "label": "Pantalonera estructural",
+          "href": "/trajes/estructural/pantalonera/"
+        },
+        {
+          "label": "Tirantes para pantalonera estructural",
+          "href": "/trajes/estructural/tirantes/"
+        },
+        {
+          "label": "Capucha o monja estructural",
+          "href": "/trajes/estructural/monja/"
+        }
+      ]
+    },
+    {
+      "id": "romak-combate-basico",
+      "seccion": "trajes",
+      "familia": "brigadista",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Combate Básico",
+      "codigo": "BOM1001",
+      "material": "Nomex IIIA 7.5 oz/yd² repelente al agua",
+      "barreras": "Lining FR desmontable; Neo-Guard",
+      "colores": "Amarillo",
+      "norma": "NFPA 1971",
+      "estatusNorma": "materiales",
+      "chips": [
+        "Brigadista",
+        "Nomex IIIA",
+        "BOM1001"
+      ],
+      "resumen": [
+        "Romak Fire Combate Básico es el conjunto brigadista amarillo que cotizamos en Nomex IIIA 7.5 oz/yd² repelente al agua, Lining FR desmontable y Neo-Guard de neopreno laminado. Incluye chaquetón de 35 pulgadas, cuello de cuatro capas, Arashield, cinta 3M, puño Kevlar y pantalonera con bastilla de carnaza y anillo D antichispa.",
+        "Pídenos BOM1001, Nomex IIIA 7.5 oz/yd², Lining FR, Neo-Guard, talla y piezas de kit por separado. Te entregamos ficha técnica; NFPA 1971 tiene estatus materiales, no es certificación del conjunto. Mándanos por WhatsApp las tallas, el procedimiento de tu centro de trabajo y si usarás Bullard LTX, CAP1005, Firemax VI o Workman Fire."
+      ],
+      "caracteristicas": [
+        "Exterior Nomex IIIA 7.5 oz/yd² repelente al agua",
+        "Forro térmico Lining FR desmontable integrado a la barrera",
+        "Barrera de humedad Neo-Guard de neopreno laminado",
+        "Chaquetón de 35 pulgadas, cuello de cuatro capas y tapa boca",
+        "Zipper y velcro Nomex, bolsas con drenado y bolsa interior",
+        "Puño de carnaza, puño Kevlar y cinta 3M",
+        "Arashield en hombros, codos y rodillas",
+        "Pantalón con bastilla de carnaza y anillo D antichispa"
+      ],
+      "descripcion": [
+        "Para Combate Básico decide primero el alcance de tu brigada y el conjunto Nomex IIIA 7.5 oz/yd² repelente al agua, Lining FR desmontable y Neo-Guard de neopreno laminado. Pide BOM1001 con esas capas, talla y amarillo en la orden. Nosotros no presentamos esos materiales como certificación: el uso depende de la tarea autorizada, análisis de riesgo y procedimiento de tu centro de trabajo.",
+        "El chaquetón de 35 pulgadas lleva cuello de cuatro capas, tapa boca, mangas curvas, puño de carnaza, zipper y velcro Nomex, bolsas parche con drenado, bolsa interior, puño Kevlar y cinta 3M. En talla usa casco, capucha, máscara y guante de tu brigada; levantamos brazos y tomamos radio para probar cuello, muñeca y bolsas. Elige la medida que mantenga cobertura y acceso a herramientas durante tus maniobras autorizadas.",
+        "Cotiza Arashield en hombros, codos y rodillas, cinta 3M, bolsas con drenado y bolsa interior según el equipo que portará tu brigada. Elige esos accesorios antes de pedir, porque una herramienta modifica cómo trabaja el chaquetón y el pantalón. Durante la muestra probamos bolsa, puño Kevlar y tapa boca con guantes, capucha y radio para confirmar que la cinta 3M y el acceso permanecen disponibles.",
+        "La pantalonera integra doble costura engargolada, bastilla de carnaza, broche de gancho con anillo D antichispa, Lining FR desmontable con Neo-Guard y cinta 3M. Pruébala con Workman Fire si esa bota forma parte de tu kit, al agacharte, trasladar equipo y operar un extintor. Antes de recibir el lote revisamos rodillas, bastilla y cintura; elige la talla que conserve solape con el chaquetón durante las tareas permitidas.",
+        "BOM1001 publica NFPA 1971 con estatus materiales, no certificado UL ni certificación del conjunto. Te entregamos ficha técnica y dejamos por separado Bullard LTX, capucha Nomex CAP1005, guante Firemax VI y Workman Fire cuando los requieras. Con el procedimiento del centro de trabajo, inspecciona costuras, cierres, velcro, puños, cinta 3M, Neo-Guard y Arashield después de humo, calor o contaminantes; aparta cualquier prenda dañada."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el material exterior?",
+          "a": "Nomex IIIA 7.5 oz/yd² repelente al agua."
+        },
+        {
+          "q": "¿Qué barrera declara?",
+          "a": "Neo-Guard, membrana laminada de neopreno."
+        },
+        {
+          "q": "¿El forro se puede desmontar?",
+          "a": "Se declara Lining FR desmontable integrado a la barrera."
+        },
+        {
+          "q": "¿Qué contiene la referencia de kit?",
+          "a": "Casco, capucha, guante y bota, además del traje, con confirmación individual."
+        },
+        {
+          "q": "¿Está certificado el conjunto?",
+          "a": "No se publica como certificado; su estatus es materiales."
+        },
+        {
+          "q": "¿Qué operación define su uso?",
+          "a": "La tarea autorizada por el análisis de riesgo y procedimiento de la brigada."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-profesional.avif",
+        "alt": "Imagen ilustrativa de traje brigadista Romak Fire",
+        "width": 1600,
+        "height": 900,
+        "origen": "ia"
+      },
+      "title": "Traje de bombero brigadista Romak Combate Básico BOM1001",
+      "description": "Traje de bombero brigadista Romak Fire Combate Básico BOM1001: Nomex IIIA 7.5 oz, forro FR desmontable y Neo-Guard; kit para brigada. Cotiza con ficha.",
+      "relacionados": [
+        {
+          "label": "Conjunto brigadista",
+          "href": "/trajes/brigadista/conjunto/"
+        },
+        {
+          "label": "Chaquetón brigadista",
+          "href": "/trajes/brigadista/chaqueton/"
+        },
+        {
+          "label": "Pantalonera brigadista",
+          "href": "/trajes/brigadista/pantalonera/"
+        },
+        {
+          "label": "Tirantes brigadistas",
+          "href": "/trajes/brigadista/tirantes/"
+        },
+        {
+          "label": "Capucha o monja brigadista",
+          "href": "/trajes/brigadista/monja/"
+        }
+      ]
+    },
+    {
+      "id": "skold-brigadista-defender",
+      "seccion": "trajes",
+      "familia": "brigadista",
+      "marca": "Sköld",
+      "fabricante": "Sköld",
+      "nombre": "Brigadista Defender",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "norma": "NFPA 1971 ed. 1991 · NOM-002-STPS-2010",
+      "estatusNorma": "equivalente",
+      "chips": [
+        "Brigadista",
+        "Equivalente",
+        "NOM-002-STPS-2010"
+      ],
+      "resumen": [
+        "Sköld Brigadista Defender es un traje para brigadas industriales que cotizamos con cuello de cobertura 360°, bies fotoluminiscente, zipper de escape rápido, velcro retardante a la flama, porta radio y Ultrashield en hombros, codos y rodillas. La referencia publicada es NFPA 1971 edición 1991 y NOM-002-STPS-2010, con estatus equivalente.",
+        "Pídenos talla, color, tela, accesorios y el uso previsto para tu brigada; así dejamos la configuración escrita desde la cotización. Te entregamos ficha técnica y la declaración disponible del proveedor para el Defender, sin presentarla como certificación actual. Mándanos por WhatsApp una foto de tu radio, casco y guantes para preparar la prueba de talla."
+      ],
+      "caracteristicas": [
+        "Cuello de cobertura 360°",
+        "Bies fotoluminiscente en pecho, espalda y muñecas",
+        "Velcro retardante a la flama y zipper de escape rápido",
+        "Refuerzos Ultrashield en hombros, codos y rodillas",
+        "Porta radio",
+        "SköldTracker para fichas, mantenimiento y caducidad",
+        "Referencia NFPA 1971 ed. 1991 y NOM-002-STPS-2010",
+        "Estatus equivalente, no certificado"
+      ],
+      "descripcion": [
+        "Empieza por definir el escenario de tu brigada y la configuración: cuello de cobertura 360°, bies fotoluminiscente, porta radio y Ultrashield. En la orden anotamos tela, talla, color y accesorios junto con Sköld Brigadista Defender, porque el nombre no describe por sí solo la prenda entregada. Si tu operación exige protección ocular, pídelo desde la cotización para comprobar la interfaz con el cuello y el zipper de escape rápido.",
+        "Para el chaquetón te cotizamos velcro retardante a la flama, zipper de escape rápido, cuello 360° y porta radio. Durante la talla ponemos casco, protección ocular y guante: tú giras la cabeza, levantas los brazos y alcanzas el cierre para confirmar cobertura y acceso. También revisamos que el radio no cargue el frente ni tape el zipper; esa prueba evita que un accesorio cambie el ajuste de una prenda con Ultrashield.",
+        "Ultrashield en hombros, codos y rodillas, más el bies fotoluminiscente en pecho, espalda y muñecas, define qué solicitamos para tu partida. El fabricante menciona NFPA 2013 para termorresistencia ante explosión, abrasión, corte y desgarre. Elige el porta radio según el equipo que ya usa tu brigada y pide que venga asentado junto con los refuerzos. En la prueba hacemos una maniobra con guantes, radio y extintor para verificar que las bolsas y el frente sigan accesibles sin engancharse.",
+        "La movilidad se comprueba con el conjunto Brigadista Defender y sus refuerzos Ultrashield: te pedimos flexionar rodillas, agacharte, subir un escalón y extender ambos brazos. Revisamos que el bies fotoluminiscente, velcro y zipper de escape rápido permanezcan funcionales y que el bajo no pierda posición con la bota. Antes de aceptar el lote, repetimos esas maniobras con las tallas representativas de tu cuadrilla.",
+        "El fabricante publica NFPA 1971 edición 1991 y NOM-002-STPS-2010 con estatus equivalente; no lo comunicamos como certificación actual. Esa referencia cubre la declaración publicada, no sustituye el procedimiento de tu centro de trabajo. Te entregamos la ficha técnica disponible y registramos SköldTracker para mantenimiento y caducidad; revisamos cierre, bies, costuras, porta radio y Ultrashield antes y después de cada uso de la brigada."
+      ],
+      "faq": [
+        {
+          "q": "¿El cuello tiene cobertura completa?",
+          "a": "Se publica con cobertura 360°."
+        },
+        {
+          "q": "¿Dónde va el bies fotoluminiscente?",
+          "a": "En pecho, espalda y muñecas."
+        },
+        {
+          "q": "¿Qué protege Ultrashield?",
+          "a": "Hombros, codos y rodillas."
+        },
+        {
+          "q": "¿La referencia NFPA es actual?",
+          "a": "No; se indica NFPA 1971 edición 1991 como referencia antigua."
+        },
+        {
+          "q": "¿Está certificado?",
+          "a": "No; el estatus publicado es equivalente."
+        },
+        {
+          "q": "¿Para qué sirve SköldTracker?",
+          "a": "Para fichas, mantenimiento y caducidad según la plataforma indicada."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/skold-brigadista-defender.avif",
+        "alt": "Traje Sköld Brigadista Defender",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Sköld"
+      },
+      "imagenesExtra": [
+        {
+          "src": "/images/catalogo/trajes/skold-brigadista-defender-pantalon.avif",
+          "alt": "Pantalón Sköld Brigadista Defender",
+          "width": 1000,
+          "height": 1250,
+          "origen": "proveedor",
+          "credito": "Sköld"
+        }
+      ],
+      "title": "Traje de bombero brigadista Sköld Defender con cuello 360°",
+      "description": "Traje de bombero brigadista Sköld Defender: cuello 360°, Ultrashield en hombros, codos y rodillas, bies fotoluminiscente y porta radio. Cotiza con ficha.",
+      "relacionados": [
+        {
+          "label": "Conjunto brigadista",
+          "href": "/trajes/brigadista/conjunto/"
+        },
+        {
+          "label": "Chaquetón brigadista",
+          "href": "/trajes/brigadista/chaqueton/"
+        },
+        {
+          "label": "Pantalonera brigadista",
+          "href": "/trajes/brigadista/pantalonera/"
+        },
+        {
+          "label": "Tirantes brigadistas",
+          "href": "/trajes/brigadista/tirantes/"
+        },
+        {
+          "label": "Capucha o monja brigadista",
+          "href": "/trajes/brigadista/monja/"
+        }
+      ]
+    },
+    {
+      "id": "lakeland-a10-attack",
+      "seccion": "trajes",
+      "familia": "brigadista",
+      "marca": "Lakeland",
+      "fabricante": "Lakeland",
+      "nombre": "OSX A10 Attack",
+      "codigo": "AT3202Y97 (chaquetón) / AT3302Y97 (pantalón)",
+      "capaExterior": "Nomex 7.5 oz amarillo",
+      "barreras": "Nomex Quilt Q8; Stedair 3000",
+      "norma": "NFPA 1971 ed. 2018",
+      "estatusNorma": "declarado",
+      "chips": [
+        "Brigadista",
+        "Lakeland",
+        "Stedair 3000"
+      ],
+      "resumen": [
+        "Lakeland OSX A10 Attack es un conjunto para brigadas industriales que cotizamos como AT3202Y97 para chaquetón y AT3302Y97 para pantalón, con Nomex 7.5 oz amarillo, Nomex Quilt Q8, Stedair 3000, DRD Easy Grip, puños Kevlar y rodilleras Stedshield. El chaquetón tradicional mide 35 pulgadas para la configuración publicada.",
+        "Pídelo indicando ambos códigos, tallas, capa exterior, barreras y accesorios para que llegue como conjunto. Te entregamos ficha técnica y declaración del fabricante para NFPA 1971 edición 2018 con estatus declarado, no un certificado. Mándanos por WhatsApp fotos de la bota y el radio de tu brigada para programar la prueba."
+      ],
+      "caracteristicas": [
+        "AT3202Y97 para chaquetón y AT3302Y97 para pantalón",
+        "Exterior Nomex 7.5 oz amarillo",
+        "Barrera térmica Nomex Quilt Q8 y humedad Stedair 3000",
+        "Chaquetón tradicional de 35 pulgadas",
+        "DRD Easy Grip, cuello de tres pulgadas y mangas plisadas curvas",
+        "Puños Kevlar, pozo Stedprene y refuerzos Stedshield",
+        "Bolsas de expansión forradas en Kevlar y abertura de inspección",
+        "Rodilleras dobles, corte de bota invertido y tirantes Black-Ops"
+      ],
+      "descripcion": [
+        "En A10 Attack la primera compra es inseparable: AT3202Y97 para chaquetón y AT3302Y97 para pantalón. Escribe ambos códigos en la orden con Nomex 7.5 oz amarillo, Nomex Quilt Q8, Stedair 3000 y tallas, para que tu brigada reciba el mismo conjunto que aprobó. Si vas a reponer una pieza, pídela contra la etiqueta y conserva el código de la otra prenda; así mantenemos el solape y las capas declaradas.",
+        "El chaquetón tradicional de 35 pulgadas lleva zipper, velcro, cinta 3M Scotchlite, DRD Easy Grip y cuello de tres pulgadas con gancho. Sus mangas plisadas curvas, puños Kevlar de siete pulgadas con ojillo para pulgar y pozo Stedprene de cinco pulgadas se prueban con capucha, máscara, casco y guantes. Te pedimos alcanzar arriba y girar con la máscara puesta; revisamos que cuello, puño y cierre sigan cubriendo sin presión.",
+        "Al cotizar elegimos DRD Easy Grip, bolsas de expansión forradas en Kevlar y Stedshield según el uso de tu brigada. Las bolsas de 2 por 10 por 10 pulgadas y la abertura de inspección del forro se revisan con radio y arnés para comprobar acceso. Pide los accesorios que realmente llevarán tus elementos: cargar objetos fuera de esa prueba cambia el frente y puede estorbar mangueras o correas.",
+        "En la pantalonera definimos tirantes Black-Ops, cierre de gancho y D, broche, velcro y ajustes Delrin HT. Las rodilleras Stedshield dobles acolchadas, el corte de bota invertido y el refuerzo Nomex de bastilla se validan caminando, arrodillándose y subiendo escalones con la bota final. Antes de recibir un lote, hacemos esas tres maniobras y confirmamos que cintura, rodillas y tirantes se mantengan alineados.",
+        "Lakeland publica NFPA 1971 edición 2018 con estatus declarado para brigadas industriales y requisitos OSHA; no lo presentamos como certificado. La declaración aplica a la configuración ofertada y no reemplaza el procedimiento de tu centro de trabajo. Te entregamos ficha técnica y la declaración disponible; revisamos cinta 3M, cierre, puños, forro Nomex, rodilleras, tirantes y bastilla antes de reutilizar cada prenda."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué código tiene el chaquetón?",
+          "a": "AT3202Y97."
+        },
+        {
+          "q": "¿Y la pantalonera?",
+          "a": "AT3302Y97."
+        },
+        {
+          "q": "¿Qué barreras declara?",
+          "a": "Nomex Quilt Q8 y Stedair 3000."
+        },
+        {
+          "q": "¿Qué tipo de DRD incluye?",
+          "a": "DRD Easy Grip."
+        },
+        {
+          "q": "¿Cómo son los tirantes?",
+          "a": "Black-Ops sin botones metálicos."
+        },
+        {
+          "q": "¿Cuál es su estatus?",
+          "a": "Declarado."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/lakeland-a10.avif",
+        "alt": "Traje Lakeland OSX A10 Attack",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Lakeland"
+      },
+      "imagenesExtra": [
+        {
+          "src": "/images/catalogo/trajes/lakeland-a10-pantalon.avif",
+          "alt": "Pantalón Lakeland OSX A10 Attack",
+          "width": 1000,
+          "height": 1250,
+          "origen": "proveedor",
+          "credito": "Lakeland"
+        }
+      ],
+      "title": "Lakeland OSX A10 Attack: traje de bombero brigadista Nomex",
+      "description": "Traje de bombero brigadista Lakeland OSX A10 Attack: chaquetón AT3202Y97 y pantalón AT3302Y97, Nomex 7.5 oz, DRD y Stedair 3000. Cotiza con ficha técnica.",
+      "relacionados": [
+        {
+          "label": "Conjunto brigadista",
+          "href": "/trajes/brigadista/conjunto/"
+        },
+        {
+          "label": "Chaquetón brigadista",
+          "href": "/trajes/brigadista/chaqueton/"
+        },
+        {
+          "label": "Pantalonera brigadista",
+          "href": "/trajes/brigadista/pantalonera/"
+        },
+        {
+          "label": "Tirantes brigadistas",
+          "href": "/trajes/brigadista/tirantes/"
+        },
+        {
+          "label": "Capucha o monja brigadista",
+          "href": "/trajes/brigadista/monja/"
+        }
+      ]
+    },
+    {
+      "id": "romak-fire-ranger-explorer",
+      "seccion": "trajes",
+      "familia": "forestal",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Fire Ranger Explorer",
+      "codigo": "BOMW1001",
+      "material": "Nomex IIIA amarillo 6 oz/yd²; Brigade 7.5 oz según configuración",
+      "colores": "Amarillo",
+      "norma": "NFPA 1971-2018",
+      "estatusNorma": "declarado",
+      "chips": [
+        "Forestal",
+        "Overol",
+        "BOMW1001"
+      ],
+      "resumen": [
+        "Romak Fire Ranger Explorer es un overol forestal BOMW1001 que cotizamos en Nomex IIIA amarillo de 6 oz/yd² o Brigade 7.5 oz según configuración, con cinta 3M Scotchlite FR de tres pulgadas, bolsas cargo 10 por 10 pulgadas, zipper Nomex YKK, porta radio, pozo de agua y porta micrófono.",
+        "Para pedirlo necesitamos material, talla, color y accesorios de tu cuadrilla, especialmente radio y comunicación. Te entregamos ficha técnica y declaración del fabricante para NFPA 1971-2018 con estatus declarado; la referencia forestal a contrastar es NFPA 1950, antes NFPA 1977. Mándanos por WhatsApp la foto de tu radio para preparar el porta radio."
+      ],
+      "caracteristicas": [
+        "Nomex IIIA amarillo de 6 oz/yd²; Brigade 7.5 oz según configuración",
+        "Cinta 3M Scotchlite FR limón-plata-limón de tres pulgadas",
+        "Bolsas cargo 10 por 10 pulgadas en ambos costados",
+        "Zipper Nomex YKK y broches de acero inoxidable",
+        "Cuello alto, puños con velcro y cintura elástica",
+        "Porta radio en pecho con recorte de antena",
+        "Pozo de agua y porta micrófono",
+        "Codos y rodillas reforzados; ajuste de piernas con velcro"
+      ],
+      "descripcion": [
+        "Explorer arranca con una elección de material: Nomex IIIA amarillo de 6 oz/yd² o Brigade 7.5 oz según configuración. En la orden escribimos BOMW1001, material, talla, color y accesorios, porque las dos opciones no son intercambiables por llevar el mismo nombre. Elige la versión que corresponda a tu partida y pídela completa; un overol solo funciona bien cuando torso, piernas y entrepierna tienen el ajuste aprobado.",
+        "El overol combina zipper Nomex YKK, broches de acero inoxidable, cuello alto, puños con velcro y cinta 3M Scotchlite FR limón-plata-limón de tres pulgadas. En la talla te pedimos usar casco, guantes y bota, mirar arriba y simular el uso de herramienta para revisar cuello y muñecas. También comprobamos que el cierre siga libre al flexionar; esa interfaz importa tanto como el Nomex IIIA elegido.",
+        "Para campo cotizamos bolsas cargo de 10 por 10 pulgadas, porta radio de pecho con recorte para antena, pozo de agua y porta micrófono. Tú eliges esos puntos con el radio que ya usa tu cuadrilla, y nosotros revisamos el alcance con guantes. Prueba radio y micrófono al caminar en pendiente: si la antena tira del frente o un cable invade el zipper Nomex YKK, ajustamos la configuración antes de surtir.",
+        "Codos y rodillas reforzados, cintura elástica y velcro de ajuste en piernas se validan en movimiento. Antes de aceptar el lote, hacemos caminar en terreno irregular, subir pendiente y agacharse con la bota forestal; revisamos que rodillas, bajo y cierres mantengan posición. Después de humo, ceniza, polvo o vegetación, inspeccionamos cinta 3M, velcro, zipper y refuerzos antes de guardar cada overol.",
+        "Romak Fire declara NFPA 1971-2018 con estatus declarado; para la operación forestal contrastamos NFPA 1950, antes NFPA 1977, sin llamarlo certificación. La declaración cubre solo la configuración indicada por el fabricante, no define por sí sola la tarea de tu cuadrilla. Te entregamos ficha técnica y declaración disponible; seguimos el procedimiento del centro de trabajo para inspección, limpieza y servicio."
+      ],
+      "faq": [
+        {
+          "q": "¿Es una prenda de una pieza?",
+          "a": "Sí, se publica como overol forestal."
+        },
+        {
+          "q": "¿Qué material declara?",
+          "a": "Nomex IIIA 6 oz/yd²; Brigade 7.5 oz se confirma según configuración."
+        },
+        {
+          "q": "¿Tiene porta radio?",
+          "a": "Sí, en pecho con recorte para antena."
+        },
+        {
+          "q": "¿Qué se revisa con la bota?",
+          "a": "Largo, rodillas y ajuste de piernas al caminar en terreno irregular."
+        },
+        {
+          "q": "¿Qué referencia forestal conviene revisar?",
+          "a": "NFPA 1950, antes NFPA 1977."
+        },
+        {
+          "q": "¿Cuál es su estatus normativo?",
+          "a": "Declarado."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-fire-ranger-explorer.avif",
+        "alt": "Overol forestal Romak Fire Ranger Explorer",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje forestal Romak Fire Ranger Explorer: overol BOMW1001",
+      "description": "Traje de bombero forestal Romak Fire Ranger Explorer BOMW1001: overol Nomex IIIA, cinta 3M, bolsas cargo y porta radio para línea de fuego. Cotiza con ficha.",
+      "relacionados": [
+        {
+          "label": "Camisola forestal",
+          "href": "/trajes/forestal/camisola/"
+        },
+        {
+          "label": "Pantalón forestal",
+          "href": "/trajes/forestal/pantalon/"
+        },
+        {
+          "label": "Chamarra forestal",
+          "href": "/trajes/forestal/chamarra/"
+        },
+        {
+          "label": "Overol forestal",
+          "href": "/trajes/forestal/overol/"
+        }
+      ]
+    },
+    {
+      "id": "romak-fire-ranger-scout",
+      "seccion": "trajes",
+      "familia": "forestal",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Fire Ranger Scout",
+      "codigoNota": "Código según configuración; confírmalo al cotizar",
+      "material": "Nomex IIIA amarillo 6 oz/yd²; el póster declara tela 100 % Nomex",
+      "colores": "Chaquetón amarillo y pantalón azul",
+      "norma": "NFPA 1971-2018",
+      "estatusNorma": "declarado",
+      "chips": [
+        "Forestal",
+        "Nomex",
+        "Dos piezas"
+      ],
+      "resumen": [
+        "Romak Fire Ranger Scout es un conjunto forestal de dos piezas: chaquetón amarillo en Nomex IIIA de 6 oz/yd² y pantalón azul, con cinta 3M, zipper Nomex YKK, bolsas parche 10 por 10 pulgadas, cuello alto, puños con velcro, codos reforzados y cintura con presillas. El póster también declara tela 100 % Nomex.",
+        "Pídenos chaquetón y pantalón con talla, color, tela, código por confirmar y accesorios para tu cuadrilla. Te entregamos ficha técnica y declaración del fabricante para NFPA 1971-2018 con estatus declarado, no un certificado; para forestal se contrasta NFPA 1950, antes NFPA 1977. Mándanos por WhatsApp foto de la bota forestal antes de la talla."
+      ],
+      "caracteristicas": [
+        "Chaquetón amarillo en Nomex IIIA de 6 oz/yd²",
+        "Póster con referencia a tela 100 % Nomex",
+        "Cinta 3M y bolsas parche de 10 por 10 pulgadas",
+        "Zipper Nomex YKK, cuello alto y puños con velcro",
+        "Codos reforzados",
+        "Pantalón azul con zipper Nomex YKK",
+        "Bolsas parche en costados y espalda; cinta 3M de tres pulgadas",
+        "Refuerzos y cintura con presillas"
+      ],
+      "descripcion": [
+        "Scout se define primero por la tela del chaquetón: Nomex IIIA amarillo de 6 oz/yd², aunque el póster declara 100 % Nomex. Antes de cotizar, confirmamos cuál aplica a tu partida y escribimos tela, talla, color, código por confirmar y accesorios. Elige esa versión por escrito junto con el pantalón azul; el nombre Scout no resuelve una diferencia de material ni identifica una reposición.",
+        "En el chaquetón reunimos zipper Nomex YKK, cuello alto, puños con velcro, cinta 3M, codos reforzados y bolsas parche de 10 por 10 pulgadas. Para la prueba trae casco, guante y radio: revisamos que puedas mirar arriba, cerrar el cuello y tomar equipo sin que la manga se retraiga. Si el radio o la bota cambian la postura, ajustamos la talla antes de pedir el conjunto forestal.",
+        "La cotización del Scout incluye bolsas parche en costados y espalda, cinta 3M de tres pulgadas, refuerzos y cintura con presillas. Pide la distribución que corresponda al equipo autorizado de tu cuadrilla y comprueba acceso con guantes. En vez de cargar objetos después, probamos las bolsas con radio y herramienta; así verificamos que el zipper Nomex YKK y el frente no se atoren durante el avance exterior.",
+        "El pantalón azul se mueve con zipper Nomex YKK, presillas, refuerzos, cinta 3M de tres pulgadas y bolsas de 10 por 10 pulgadas. Antes de aceptar una partida, hacemos flexión, inclinación, paso alto y caminata en terreno irregular con la bota forestal. Revisamos el traslape con el chaquetón, largo del bajo y posición de rodillas; esa prueba confirma que las dos piezas trabajen como conjunto.",
+        "El fabricante declara NFPA 1971-2018 con estatus declarado y código por confirmar; para forestal tomamos NFPA 1950, antes NFPA 1977, como referencia de contraste. No lo presentamos como certificación. Te entregamos ficha técnica y declaración disponible; seguimos el procedimiento del centro de trabajo e inspeccionamos cinta, cierres, velcro, codos, rodillas y costuras tras cada jornada operativa y asignación del conjunto."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué piezas componen Scout?",
+          "a": "Chaquetón amarillo y pantalón azul."
+        },
+        {
+          "q": "¿Qué material debe confirmarse?",
+          "a": "Nomex IIIA 6 oz/yd² o la referencia de 100 % Nomex del póster."
+        },
+        {
+          "q": "¿Qué lleva el pantalón?",
+          "a": "Bolsas laterales y traseras, cinta, refuerzos y presillas."
+        },
+        {
+          "q": "¿Cómo se revisa la cintura?",
+          "a": "Con ambas piezas, bota y movimientos de flexión y desplazamiento."
+        },
+        {
+          "q": "¿Tiene código publicado?",
+          "a": "Debe confirmarse al cotizar."
+        },
+        {
+          "q": "¿Qué referencia forestal se consulta?",
+          "a": "NFPA 1950, antes NFPA 1977."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-fire-ranger-explorer.avif",
+        "alt": "Imagen ilustrativa de traje forestal Romak Fire",
+        "width": 1600,
+        "height": 900,
+        "origen": "ia"
+      },
+      "title": "Traje de bombero forestal Romak Fire Ranger Scout",
+      "description": "Traje de bombero forestal Romak Fire Ranger Scout: chaquetón Nomex amarillo y pantalón azul de dos piezas, cinta 3M y codos reforzados. Cotiza con ficha.",
+      "relacionados": [
+        {
+          "label": "Camisola forestal",
+          "href": "/trajes/forestal/camisola/"
+        },
+        {
+          "label": "Pantalón forestal",
+          "href": "/trajes/forestal/pantalon/"
+        },
+        {
+          "label": "Chamarra forestal",
+          "href": "/trajes/forestal/chamarra/"
+        },
+        {
+          "label": "Overol forestal",
+          "href": "/trajes/forestal/overol/"
+        }
+      ]
+    },
+    {
+      "id": "romak-bomw1002",
+      "seccion": "trajes",
+      "familia": "forestal",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Saco y pantalón forestal",
+      "codigo": "BOMW1002 / BOMW1002 FR",
+      "material": "Nomex IIIA 6.0 oz o algodón 100 % ignífugo",
+      "colores": "Amarillo",
+      "estatusNorma": "sin-norma",
+      "chips": [
+        "Forestal",
+        "Sin norma",
+        "BOMW1002"
+      ],
+      "resumen": [
+        "Romak Fire BOMW1002 es un conjunto forestal de saco y pantalón amarillo que cotizamos en BOMW1002 con Nomex IIIA de 6.0 oz o BOMW1002 FR con algodón 100 % ignífugo. Incluye cierre frontal con broche y solapa, porta radio, bolsas parche 10 por 10 pulgadas, cinta 3M Scotchlite y pantalón con bolsas cargo.",
+        "Pídenos código BOMW1002, material, talla, color y accesorios para que tu reposición coincida con el lote existente. Te entregamos ficha técnica; el modelo tiene estatus sin norma, así que no entregamos certificado ni lo presentamos como tal. Mándanos por WhatsApp foto de la etiqueta de la prenda que reemplazarás y confirmamos la versión."
+      ],
+      "caracteristicas": [
+        "BOMW1002 en Nomex IIIA de 6.0 oz",
+        "BOMW1002 FR en algodón 100 % ignífugo",
+        "Saco con cierre frontal de broche y solapa",
+        "Bolsa porta radio y dos bolsas parche de 10 por 10 pulgadas",
+        "Cinta 3M Scotchlite de dos pulgadas",
+        "Mangas ergonómicas y cuello protector con velcro",
+        "Pantalón amarillo con presillas",
+        "Bolsas cargo con fuelle, bolsillos traseros y cintas reflejantes"
+      ],
+      "descripcion": [
+        "La decisión de BOMW1002 es material y código: elige BOMW1002 si necesitas Nomex IIIA de 6.0 oz, o BOMW1002 FR para algodón 100 % ignífugo. En cada orden anotamos código, material, talla, color y accesorios de tu cuadrilla. Pide la misma combinación que trae la etiqueta cuando reemplaces una pieza; dos sacos amarillos con corte parecido no garantizan la misma versión.",
+        "El saco incorpora cierre frontal con broche y solapa, porta radio, dos bolsas parche de 10 por 10 pulgadas, cinta 3M Scotchlite de dos pulgadas, mangas ergonómicas y cuello protector con velcro. En la talla te pedimos poner casco, guantes y protección ocular, cerrar el frente y levantar los brazos. Revisamos que cuello, mangas y cierre cubran sin impedir el uso del radio ni el acceso a las bolsas.",
+        "Cotizamos porta radio, bolsas parche y cinta 3M Scotchlite según lo que cargue tu cuadrilla en campo. Elige bolsas de 10 por 10 pulgadas para el equipo autorizado y pruébalas con guantes antes de recibir el pedido. El cierre con broche y solapa debe quedar libre cuando el radio está colocado; esa comprobación evita resolver el acomodo con fijaciones ajenas al saco.",
+        "El pantalón amarillo lleva presillas, bolsas cargo con fuelle de 10 por 10 pulgadas, bolsas traseras y cintas reflejantes. Hacemos caminar, agacharse y subir desniveles con bota de campo para confirmar largo, rodilla y bajo antes de aceptar el lote. También revisamos que las presillas y los bolsillos permanezcan firmes; la movilidad del conjunto depende de esa prueba, no solo de la talla anotada.",
+        "BOMW1002 tiene estatus sin norma: no existe norma declarada ni certificación publicada para presentarte. Esa ausencia cubre todo el conjunto, tanto Nomex IIIA 6.0 oz como algodón 100 % ignífugo, y no sustituye el procedimiento de tu centro de trabajo. Te entregamos ficha técnica e inspeccionamos cierre, velcro, cinta 3M, costuras, bolsas y contaminación antes de volverlo a servicio en campo."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la diferencia entre códigos?",
+          "a": "BOMW1002 es Nomex IIIA; BOMW1002 FR es algodón 100 % ignífugo."
+        },
+        {
+          "q": "¿El saco tiene porta radio?",
+          "a": "Sí."
+        },
+        {
+          "q": "¿Qué lleva el pantalón?",
+          "a": "Presillas, bolsas cargo con fuelle, bolsas traseras y cintas reflejantes."
+        },
+        {
+          "q": "¿Qué revisar al recibir?",
+          "a": "Código, material, talla, cierres, cinta, bolsillos y costuras."
+        },
+        {
+          "q": "¿Tiene una norma declarada?",
+          "a": "No; su estatus es sin norma."
+        },
+        {
+          "q": "¿Cómo se repone una pieza?",
+          "a": "Identificando la versión exacta y cotejándola con la prenda que sigue en uso."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-bomw1002.avif",
+        "alt": "Saco y pantalón forestal Romak Fire",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje forestal Romak Fire BOMW1002: saco y pantalón",
+      "description": "Traje de bombero forestal Romak Fire BOMW1002: saco y pantalón en Nomex IIIA 6.0 oz o algodón 100 % ignífugo (BOMW1002 FR), amarillo. Cotiza con ficha.",
+      "relacionados": [
+        {
+          "label": "Camisola forestal",
+          "href": "/trajes/forestal/camisola/"
+        },
+        {
+          "label": "Pantalón forestal",
+          "href": "/trajes/forestal/pantalon/"
+        },
+        {
+          "label": "Chamarra forestal",
+          "href": "/trajes/forestal/chamarra/"
+        },
+        {
+          "label": "Overol forestal",
+          "href": "/trajes/forestal/overol/"
+        }
+      ]
+    },
+    {
+      "id": "romak-mark-one",
+      "seccion": "trajes",
+      "familia": "aproximacion",
+      "marca": "Romak Fire",
+      "fabricante": "Romak Fire",
+      "nombre": "Mark One MPX-8",
+      "codigo": "BOM1046",
+      "capaExterior": "Nor-Fab MPX-8 aluminizada: 17 % Basofil y 83 % para-aramida",
+      "barreras": "Omni Synergy; Stedair 3000",
+      "norma": "NFPA 1971:2018 proximidad",
+      "estatusNorma": "certificado-ul",
+      "certificacion": "MH48840",
+      "chips": [
+        "Aproximación",
+        "UL MH48840",
+        "Aluminizado"
+      ],
+      "resumen": [
+        "Romak Fire Mark One MPX-8 es un traje de proximidad BOM1046 para operación aeroportuaria e industrial, con cuatro capas: Nor-Fab MPX-8 aluminizada de 17 % Basofil y 83 % para-aramida, Omni Synergy, Stedair 3000, DRD, porta radio bilateral, tirantes H y talón Ara-Shield. Cuenta con UL MH48840.",
+        "Pídelo con BOM1046, tallas, tirantes de cuatro u ocho puntos y accesorios para tu equipo de proximidad. Te entregamos ficha técnica, certificado UL MH48840 y carta de distribuidor para NFPA 1971:2018 proximidad, ligados a la configuración solicitada. Mándanos por WhatsApp fotos de casco, máscara, ERA, radio y micrófono para preparar la talla."
+      ],
+      "caracteristicas": [
+        "Sistema de cuatro capas para proximidad aeroportuaria e industrial",
+        "Nor-Fab MPX-8 aluminizada: 17 % Basofil y 83 % para-aramida",
+        "Exterior y refuerzos aluminizados",
+        "Barrera térmica Omni Synergy y humedad Stedair 3000",
+        "DRD con letras de alta visibilidad, porta micrófono y extensión de manga",
+        "Porta radio bilateral y mangas curvas",
+        "Hombros acolchados con ocho puntos de anclaje",
+        "Tirantes H, cierre doble Nomex, rodilleras y talón Ara-Shield"
+      ],
+      "descripcion": [
+        "Mark One MPX-8 comienza por el alcance: proximidad aeroportuaria e industrial con BOM1046, no un traje estructural ni de entrada a flama. En la orden anotamos Nor-Fab MPX-8 aluminizada, Omni Synergy, Stedair 3000, tallas y accesorios. El exterior tiene 17 % Basofil y 83 % para-aramida; elige esa configuración completa para calor radiante y no sustituyas capas bajo el mismo nombre del modelo.",
+        "El chaquetón lleva DRD con letras de alta visibilidad, puño porta micrófono, extensión de manga, porta radio bilateral, mangas curvas, bolsas con fuelle y hombros acolchados de ocho puntos de anclaje. En la prueba de talla usamos casco, máscara, ERA, radio, micrófono y guantes; tú subes a cabina y alcanzas los controles mientras revisamos que cables, antenas y correas no invadan la manga ni el DRD.",
+        "Al cotizar define el DRD, porta radio a ambos lados, porta micrófono, bolsas con fuelle y los hombros de ocho puntos de anclaje. Elegimos esos accesorios contra el radio y la comunicación de tu unidad para que el conjunto aluminizado conserve acceso real. Antes de entregarlo, revisamos con ERA que las bolsas no estorben correas y que el micrófono no genere presión sobre Nor-Fab MPX-8.",
+        "La pantalonera se configura con tirantes H de cuatro u ocho puntos, cierre doble con zipper Nomex, hebillas antichispa, gancho y anillo D, refuerzo diamante, rodilleras acolchadas y talón Ara-Shield. Probamos entrar y salir de cabina, arrodillarse y caminar con la bota final. Antes de aceptar un lote, confirmamos que tirantes, cintura y rodilleras mantengan su lugar y el traslape con el chaquetón no se abra.",
+        "Mark One tiene certificación UL MH48840 para NFPA 1971:2018 proximidad, que cubre la configuración fabricada, no cualquier cambio de capas o accesorios. Te entregamos ficha técnica, certificado UL y carta de distribuidor con el pedido. Bajo NFPA 1850 revisamos superficie aluminizada, costuras, cierre, puños, cinta, DRD y Ara-Shield después de uso; la abrasión o contaminación exige apartar la prenda para servicio."
+      ],
+      "faq": [
+        {
+          "q": "¿Para qué operación se indica?",
+          "a": "Proximidad aeroportuaria e industrial."
+        },
+        {
+          "q": "¿Cuál es la certificación publicada?",
+          "a": "UL MH48840 para NFPA 1971:2018 proximidad."
+        },
+        {
+          "q": "¿Qué exterior declara?",
+          "a": "Nor-Fab MPX-8 aluminizada."
+        },
+        {
+          "q": "¿Qué barreras contiene?",
+          "a": "Omni Synergy y Stedair 3000."
+        },
+        {
+          "q": "¿Qué tirantes puede llevar?",
+          "a": "Tirantes H de cuatro u ocho puntos."
+        },
+        {
+          "q": "¿Cuál es el código?",
+          "a": "BOM1046."
+        }
+      ],
+      "imagen": {
+        "src": "/images/catalogo/trajes/romak-mark-one.avif",
+        "alt": "Traje de aproximación Romak Fire Mark One MPX-8",
+        "width": 1000,
+        "height": 1250,
+        "origen": "proveedor",
+        "credito": "Romak Fire"
+      },
+      "title": "Traje aluminizado Romak Fire Mark One MPX-8 certificado UL",
+      "description": "Traje de bombero de aproximación aluminizado Romak Fire Mark One MPX-8 BOM1046: cuatro capas Nor-Fab, certificado UL MH48840, para ARFF e industria. Cotiza.",
+      "relacionados": [
+        {
+          "label": "Chaquetón de aproximación",
+          "href": "/trajes/aproximacion/chaqueton/"
+        },
+        {
+          "label": "Pantalón de aproximación",
+          "href": "/trajes/aproximacion/pantalon/"
+        },
+        {
+          "label": "Capucha de aproximación",
+          "href": "/trajes/aproximacion/capucha/"
+        },
+        {
+          "label": "Guantes de aproximación",
+          "href": "/trajes/aproximacion/guantes/"
+        }
+      ]
+    }
+  ]
 };
-
-// Une la ficha técnica (abajo) con su contenido editorial (arriba). Los 5 párrafos de
-// `descripcion` son texto redactado a mano por modelo; nada se compone con plantillas.
-const completar = (modelo: ModeloAmpliado): ModeloAmpliado => ({ ...modelo, ...contenido[modelo.id] });
-
-export const data: { tipos: Tipo[]; modelos: ModeloAmpliado[] } = { tipos: [], modelos: [
-  ficha({ id: 'romak-protector', seccion: 'trajes', familia: 'estructural', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Protector', codigoNota: confirmar, capaExterior: 'Según configuración: PBI/Kevlar o Nomex/Kevlar', barreras: 'Defender; Stedair 3000 o 4000', colores: 'Natural gold, negro, amarillo u oro, según configuración', tallas: 'Chaquetón S (34–36) a 2XL (50–52); pantalón S (28–30) a 2XL (44–46)', peso: 'Chaquetón 2.5 kg; pantalón 1.88 kg', norma: 'NFPA 1971:2018', estatusNorma: 'certificado-ul', certificacion: 'MH14790', chips: ['Estructural', 'UL MH14790', 'Tres capas'], resumen: ['Conjunto estructural configurable con exterior PBI/Kevlar o Nomex/Kevlar, capas interiores declaradas y certificación UL.'], caracteristicas: ['PBI Gemini XTL o Brigade 7.5 oz según configuración', 'Barrera térmica Defender y humedad Stedair 3000 o 4000', 'DRD de cinta 100 % Kevlar; cuello de cuatro capas', 'Zipper Nomex YKK, velcro FR y solapa de cinco pulgadas', 'Bolsa porta radio, bolsas cargo y pozo de agua', 'Refuerzos Ara-Shield en hombros, codos, rodillas y talón', 'Tirantes H de cuatro u ocho puntos'], descripcion: ['El Romak Fire Protector se integra por chaquetón y pantalón estructurales cuyo composite se fija al cotizar. La capa exterior puede ser PBI Gemini XTL, 40 % PBI y 60 % Kevlar, o Brigade 7.5 oz, 93 % Nomex, 5 % Kevlar y 2 % fibra antiestática. La orden debe identificar cuál se requiere, además de color: natural gold o negro para PBI, amarillo u oro para Brigade. Las capas interiores declaradas son térmica Defender y humedad Stedair 3000 o 4000.', 'El chaquetón lleva cierre Nomex YKK, velcro FR y solapa de cinco pulgadas con cuatro capas; también DRD de cinta 100 % Kevlar, cuello de cuatro pulgadas, tapa boca, porta radio, bolsas cargo de 10 por 10 pulgadas y puños con pozo de agua. Hombros y codos usan Ara-Shield acolchado. La pantalonera emplea cierre Tree Lock, tirantes H, ajuste lateral, bolsas cargo, entrepierna reforzada, talón con resaque y rodilleras Ara-Shield.', 'La toma de talla debe revisar chaquetón y pantalón como conjunto. El solape de cintura, el recorrido de manga con guante y capucha, y el acceso al DRD se comprueban con el ERA que opere la corporación. No conviene sustituir barreras o refuerzos de otra configuración con el mismo nombre de modelo: cada componente debe quedar en la propuesta aprobada.', 'El Protector cuenta con certificación UL MH14790 para NFPA 1971:2018. Incluye composite, color, tallas, tirantes y accesorios en la requisición; solicita la declaración de conformidad correspondiente a la configuración.'], faq: [{ q: '¿Qué exteriores se ofrecen?', a: 'PBI/Kevlar o Nomex/Kevlar, según configuración.' }, { q: '¿Cuál es la certificación?', a: 'UL MH14790.' }, { q: '¿Incluye DRD?', a: 'Declara DRD de cinta 100 % Kevlar.' }, { q: '¿Qué tallas se indican?', a: 'Chaquetón y pantalón de S a 2XL, con rangos publicados en la ficha.' }], imagen: proveedor('romak-protector.avif', 'Traje estructural Romak Fire Protector', 'Romak Fire') }),
-  ficha({ id: 'romak-profesional', seccion: 'trajes', familia: 'estructural', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Profesional', codigoNota: confirmar, capaExterior: 'Brigade 7.5 oz: 93 % Nomex, 5 % Kevlar y 2 % fibra antiestática', barreras: 'Stedair 3000; Defender', colores: 'Amarillo, negro o rojo', norma: 'NFPA 1971:2018', estatusNorma: 'certificado-ul', chips: ['Estructural', 'Brigade 7.5 oz', 'Profesional'], resumen: ['Traje estructural Brigade con Stedair 3000, Defender y componentes de línea para una configuración por escrito.'], caracteristicas: ['Capa Brigade 7.5 oz de Nomex, Kevlar y fibra antiestática', 'Barrera Stedair 3000 y térmica Defender', 'DRD Kevlar, cuello de cuatro capas y tapa boca', 'Cinta 3M limón-plata-limón de tres pulgadas', 'Bolsas cargo, pozo de agua y Ara-Shield', 'Tirantes H de cuatro puntos'], descripcion: ['El Romak Fire Profesional utiliza exterior Brigade de 7.5 onzas: 93 % Nomex, 5 % Kevlar y 2 % fibra antiestática. Se declara con humedad Stedair 3000, térmica Defender y refuerzos Ara-Shield negro o gris. Puede pedirse en amarillo, negro o rojo. El color y las capas se anotan juntos para que la prenda recibida corresponda al composite revisado.', 'La configuración de chaquetón considera zipper Nomex, velcro FR, DRD Kevlar, cuello de cuatro capas, tapa boca, bolsa porta radio, bolsas cargo, pozo de agua y cinta 3M limón-plata-limón de tres pulgadas. En el pantalón se señalan tirantes H de cuatro puntos, cierres, ajuste lateral y rodilleras Ara-Shield. Prueba radio, guante, capucha y ERA durante la talla para verificar que cierres y coberturas funcionen como conjunto.', 'También existe un kit Profesional súper equipado con chaquetón BOM1028, pantalón BOM1040, casco Bullard LTX, bota Croydon Filtrex, guante Veridian Fire Pro II y capucha Majestic PAC II. Esa referencia de kit requiere confirmación de cada talla; para el kit negro se menciona barrera Xtralite y tallas M, G y XL, distinta de la configuración general.', 'La norma es NFPA 1971:2018 con estatus certificado UL; el número debe confirmarse en la cotización. Pide declaración de conformidad, capas, color, tallas y componentes antes de ordenar.'], faq: [{ q: '¿Qué material exterior usa?', a: 'Brigade 7.5 oz de Nomex, Kevlar y fibra antiestática.' }, { q: '¿Qué colores declara?', a: 'Amarillo, negro o rojo.' }, { q: '¿Existe en kit?', a: 'Sí; confirma cada componente y talla.' }, { q: '¿Se publica número UL?', a: 'Debe confirmarse con la configuración cotizada.' }], imagen: proveedor('romak-profesional.avif', 'Traje estructural Romak Fire Profesional', 'Romak Fire') }),
-  ficha({ id: 'romak-defender', seccion: 'trajes', familia: 'estructural', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Defender', codigo: 'BOM1045', capaExterior: 'Advance 7.0 oz: 60 % Kevlar y 40 % Nomex', barreras: 'Stedair 3000 o 4000; Defender', colores: 'Khaki o negro', norma: 'NFPA 1971:2018', estatusNorma: 'certificado-ul', chips: ['Estructural', 'Advance 7.0 oz', 'BOM1045'], resumen: ['Conjunto con exterior Advance y opciones Stedair para especificar con el código BOM1045.'], caracteristicas: ['Advance 7.0 oz de Kevlar y Nomex', 'Stedair 3000 o 4000 y térmica Defender', 'Colores khaki o negro', 'DRD, cuello de cuatro capas y tapa boca', 'Refuerzos Ara-Shield y rodilleras acolchadas'], descripcion: ['El Romak Fire Defender declara exterior Advance 7.0 oz, con 60 % Kevlar y 40 % Nomex, en khaki o negro. Sus capas interiores pueden ser Stedair 3000 o 4000 y térmica Defender. Esa elección se escribe en la requisición: dos ofertas con el mismo código no son comparables si no identifican la barrera de humedad.', 'La prenda superior conserva componentes de la línea Protector: DRD, cuello de cuatro capas, tapa boca, porta radio, bolsas cargo, pozo de agua y cinta reflejante. El pantalón incorpora tirantes H, ajuste lateral, bolsas, refuerzo de entrepierna, talón reforzado y rodilleras Ara-Shield. Revisa la interfaz de cintura, capucha, guante y ERA al tomar medidas.', 'Pide que la oferta nombre Advance, Stedair elegida, Defender, color y accesorios. En la recepción, coteja etiquetas y documentación con esa lista, especialmente si se repone una sola pieza.', 'Se indica NFPA 1971:2018 con estatus certificado UL; el número aplicable se confirma con el conjunto configurado. Solicita declaración de conformidad con la cotización.'], faq: [{ q: '¿Cuál es el código?', a: 'BOM1045.' }, { q: '¿Qué exterior declara?', a: 'Advance 7.0 oz con Kevlar y Nomex.' }, { q: '¿Qué Stedair puede llevar?', a: '3000 o 4000.' }, { q: '¿Qué colores hay?', a: 'Khaki o negro.' }], imagen: proveedor('romak-defender.avif', 'Traje estructural Romak Fire Defender', 'Romak Fire') }),
-  ficha({ id: 'romak-vantage', seccion: 'trajes', familia: 'estructural', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Vantage', codigoNota: confirmar, capaExterior: 'OMNI Vantage 7.8 oz ripstop', barreras: 'Stedair 3000; Thermal Liner', colores: 'Amarillo o negro', norma: 'NFPA 1971:2018', estatusNorma: 'certificado-ul', chips: ['Estructural', 'OMNI Vantage', 'Ripstop'], resumen: ['Modelo ergonómico con tela OMNI Vantage ripstop y capas Stedair 3000 y Thermal Liner.'], caracteristicas: ['OMNI Vantage 7.8 oz ripstop', 'Stedair 3000 y Thermal Liner', 'DRD, porta radio y bolsas con fuelle', 'Cinta 3M de tres pulgadas', 'Tirantes H y rodilleras Ara-Shield'], descripcion: ['El Romak Fire Vantage se describe con diseño ergonómico y capa exterior OMNI Vantage 7.8 oz ripstop. Declara humedad Stedair 3000, térmica Thermal Liner, refuerzos Ara-Shield y color amarillo o negro. Incluye los nombres de las capas en la orden para asegurar que el composite ofrecido coincide con el solicitado.', 'El chaquetón lleva DRD Kevlar, cuello de cuatro capas, tapa boca con velcro FR, porta radio, bolsas cargo con fuelle, pozo de agua y cinta 3M limón-plata-limón. Las mangas curvas deben probarse con capucha, guantes y máscara para confirmar que el movimiento no abre el cuello ni bloquea el radio.', 'La pantalonera declara tirantes H de cuatro puntos, rodilleras Ara-Shield y ajustes de línea. Define qué accesorios llegan instalados y cómo se recibirán sus piezas de reemplazo; una foto no establece una configuración cerrada.', 'La referencia NFPA 1971:2018 tiene estatus certificado UL; código y documento aplicable se confirman en cotización.'], faq: [{ q: '¿Qué exterior usa?', a: 'OMNI Vantage 7.8 oz ripstop.' }, { q: '¿Qué barreras declara?', a: 'Stedair 3000 y Thermal Liner.' }, { q: '¿Qué colores hay?', a: 'Amarillo o negro.' }, { q: '¿El código es fijo?', a: 'No; confírmalo al cotizar.' }], imagen: proveedor('romak-vantage.avif', 'Traje estructural Romak Fire Vantage', 'Romak Fire') }),
-  ficha({ id: 'romak-maverick-ii', seccion: 'trajes', familia: 'estructural', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Maverick II', codigoNota: confirmar, capaExterior: 'Panther 210 g/m²: 65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática', barreras: 'Moisture Barrier 125; Dubai TB205', norma: 'EN 469 · NFPA 1970:2025 · NFPA 1971:2018', estatusNorma: 'declarado', chips: ['Estructural', 'NFPA 1970:2025', 'Declarado'], resumen: ['Composite estructural declarado por capa, composición y peso, con referencias EN y NFPA incluidas por el fabricante.'], caracteristicas: ['Panther 210 g/m²', 'Moisture Barrier 125, 100 % aramida', 'Dubai TB205: aramida y viscosa FR', 'EN 469, NFPA 1970:2025 y NFPA 1971:2018'], descripcion: ['El Romak Fire Maverick II declara Panther 210 g/m² como exterior: 65 % meta-aramida, 33 % para-aramida y 2 % fibra antiestática. La barrera Moisture Barrier 125 pesa 125 g/m² y se indica 100 % aramida. Dubai TB205, la barrera térmica, pesa 205 g/m² y combina 70 % aramida con 30 % viscosa FR.', 'El fabricante emplea el lema “La protección más ligera”. Para comparar una propuesta, ese lema no sustituye identificar Panther, Moisture Barrier 125 y Dubai TB205. Pide los tres nombres y pesos en la cotización, además de tallas y accesorios; así se evita aceptar una sustitución genérica de tela o forro.', 'La ficha declara EN 469, NFPA 1970:2025 y NFPA 1971:2018. Es el único modelo de este catálogo que menciona NFPA 1970:2025. Su estatus es declarado, por lo que esas referencias no se comunican como certificación.', 'El código depende de configuración. Solicita la declaración de conformidad, revisa el alcance requerido y coteja las capas al recibir el conjunto.'], faq: [{ q: '¿Qué exterior declara?', a: 'Panther 210 g/m².' }, { q: '¿Menciona NFPA 1970:2025?', a: 'Sí.' }, { q: '¿Está publicado como certificado?', a: 'No; el estatus es declarado.' }, { q: '¿Tiene código público?', a: 'Debe confirmarse al cotizar.' }], imagen: proveedor('romak-maverick-ii.avif', 'Traje estructural Romak Fire Maverick II', 'Romak Fire') }),
-  ficha({ id: 'skold-hero-pbimax', seccion: 'trajes', familia: 'estructural', marca: 'Sköld', fabricante: 'Sköld', nombre: 'Hero PBI MAX', codigoNota: confirmar, capaExterior: 'PBI MAX', barreras: 'Resistentes a agentes químicos, biológicos, radiológicos y nucleares, según fabricante', norma: 'NFPA 1971 ed. 2018', estatusNorma: 'equivalente', chips: ['Estructural', 'PBI MAX', 'Equivalente'], resumen: ['Conjunto Sköld con PBI MAX, cuello 360°, DRD y plataforma de seguimiento para mantenimiento y caducidad.'], caracteristicas: ['Exterior PBI MAX', 'Cuello tipo escudo 360° y DRD en espalda', 'Bies plata y banda Orafol', 'Puño Kevlar y refuerzos Stedshield', 'SköldTracker'], descripcion: ['El Sköld Hero PBI MAX se configura con exterior PBI MAX, cuello tipo escudo de cobertura 360° y DRD en espalda. Declara bies plata en pecho, espalda, brazos y bolsas, banda Orafol, zipper y velcro, bolsillo superior derecho y dos inferiores. Estos componentes deben figurar en el pedido cuando determinan visibilidad o acceso a herramientas.', 'Puño Kevlar con ojillo para pulgar y refuerzos Stedshield cubren mangas, hombros, codos y rodillas. El pantalón lleva tirantes acolchados, ajuste elástico posterior, conexión rápida y bolsillos laterales. Valida con botas, guantes y ERA que los tirantes mantengan posición y que la cintura conserve solape.', 'El fabricante declara barreras interiores resistentes a agentes químicos, biológicos, radiológicos y nucleares. Solicita esa declaración para la configuración elegida; no sustituye un análisis de riesgo ni convierte al conjunto en protección especializada HazMat.', 'La referencia es NFPA 1971 ed. 2018 con estatus equivalente, no certificado UL. SköldTracker se indica para fichas, mantenimiento y caducidad.'], faq: [{ q: '¿Qué capa exterior tiene?', a: 'PBI MAX.' }, { q: '¿Cómo es el cuello?', a: 'Tipo escudo de cobertura 360°.' }, { q: '¿Cuál es el estatus?', a: 'Equivalente.' }, { q: '¿Qué es SköldTracker?', a: 'La plataforma para fichas, mantenimiento y caducidad.' }], imagen: proveedor('skold-hero-pbimax.avif', 'Traje Sköld Hero PBI MAX', 'Sköld'), imagenesExtra: [proveedor('skold-hero-pbimax-conjunto.avif', 'Conjunto Sköld Hero PBI MAX', 'Sköld')] }),
-  ficha({ id: 'skold-hero-nomex', seccion: 'trajes', familia: 'estructural', marca: 'Sköld', fabricante: 'Sköld', nombre: 'Hero Nomex IIIA', codigo: 'MH60435', capaExterior: 'Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750', colores: 'Amarillo', norma: 'NFPA 1971 ed. 2018', estatusNorma: 'certificado-ul', certificacion: 'MH60435', chips: ['Estructural', 'UL MH60435', 'Nomex IIIA'], resumen: ['Modelo Sköld amarillo con certificación UL MH60435 y opciones de capa exterior que se confirman por configuración.'], caracteristicas: ['Certificación UL MH60435', 'Cuello escudo y DRD', 'Porta linternas y bolsillo porta radios', 'Bies plata, banda Orafol y Stedshield', 'Cinco opciones de exterior'], descripcion: ['El Sköld Hero Nomex IIIA es un conjunto amarillo con certificación UL MH60435 para NFPA 1971 ed. 2018. La configuración permite Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750 como barrera exterior. Selecciona una de ellas por escrito: el nombre Hero Nomex no identifica por sí solo el composite entregado.', 'Comparte cuello tipo escudo, DRD, zipper, velcro, bolsillos y banda Orafol con Hero PBI MAX, y agrega porta linternas y bolsillo para radio. Verifica que radio, lámpara, máscara y arnés no se estorben al mover brazos o girar el torso.', 'Puño Kevlar, ojillo para pulgar, Stedshield y tirantes acolchados se evalúan durante la prueba de talla, especialmente en rodillas, cintura y muñecas. El ajuste posterior y la conexión rápida del pantalón deben conservar cobertura durante flexión.', 'Incluye MH60435, capa exterior seleccionada, talla y accesorios en la cotización. Pide la declaración de conformidad correspondiente al conjunto.'], faq: [{ q: '¿Cuál es la certificación?', a: 'UL MH60435.' }, { q: '¿Qué color se declara?', a: 'Amarillo.' }, { q: '¿Qué exteriores pueden seleccionarse?', a: 'Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750.' }, { q: '¿Incluye porta linternas?', a: 'Sí.' }], imagen: proveedor('skold-hero-nomex.avif', 'Traje Sköld Hero Nomex IIIA', 'Sköld'), imagenesExtra: [proveedor('skold-hero-nomex-chaqueton.avif', 'Chaquetón Sköld Hero Nomex IIIA', 'Sköld'), proveedor('skold-hero-nomex-pantalon.avif', 'Pantalón Sköld Hero Nomex IIIA', 'Sköld')] }),
-  ficha({ id: 'romak-combate-basico', seccion: 'trajes', familia: 'brigadista', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Combate Básico', codigo: 'BOM1001', material: 'Nomex IIIA 7.5 oz/yd² repelente al agua', barreras: 'Lining FR desmontable; Neo-Guard', colores: 'Amarillo', norma: 'NFPA 1971', estatusNorma: 'materiales', chips: ['Brigadista', 'Nomex IIIA', 'BOM1001'], resumen: ['Traje brigadista amarillo de Nomex con forro desmontable y Neo-Guard, publicado por materiales y no como certificación.'], caracteristicas: ['Nomex IIIA 7.5 oz/yd²', 'Lining FR y Neo-Guard de neopreno laminado', 'Chaquetón de 35 pulgadas con cuello de cuatro capas', 'Refuerzos Arashield y cinta 3M', 'Pantalón con bastilla de carnaza y anillo D antichispa'], descripcion: ['El Romak Fire Combate Básico usa exterior Nomex IIIA 7.5 oz/yd² repelente al agua. Declara forro térmico Lining FR desmontable y barrera Neo-Guard, una membrana laminada de neopreno. Registrar cada capa permite comparar esta opción brigadista sin asumir que un exterior Nomex define por sí solo el alcance del conjunto.', 'El chaquetón de 35 pulgadas incorpora cuello de cuatro capas, tapa boca, mangas curvas, puño de carnaza, zipper y velcro Nomex, dos bolsas parche con drenado, bolsa interior, puño Kevlar y cinta 3M. Arashield refuerza hombros, codos y rodillas. Prueba puño, cuello y bolsillos con el equipo que realmente usará la brigada.', 'El pantalón tiene doble costura, bastilla de carnaza, gancho y anillo D antichispa, forro desmontable con Neo-Guard y cinta 3M. Puede integrarse a un kit con Bullard LTX, capucha CAP1005, Firemax VI y Workman Fire; confirma la talla y alcance de cada componente de manera independiente.', 'La ficha indica NFPA 1971 con estatus materiales. No se comunica como certificación del conjunto. Define si la tarea es conato, evacuación o apoyo exterior y solicita documentación aplicable antes de comprar BOM1001.'], faq: [{ q: '¿Qué exterior tiene?', a: 'Nomex IIIA 7.5 oz/yd².' }, { q: '¿Qué barrera declara?', a: 'Neo-Guard.' }, { q: '¿Se ofrece como kit?', a: 'Sí; confirma cada pieza y talla.' }, { q: '¿Está certificado?', a: 'No se publica como certificado; su estatus es materiales.' }], imagen: ilustrativa('/images/catalogo/trajes/romak-profesional.avif', 'Imagen ilustrativa de traje brigadista Romak Fire') }),
-  ficha({ id: 'skold-brigadista-defender', seccion: 'trajes', familia: 'brigadista', marca: 'Sköld', fabricante: 'Sköld', nombre: 'Brigadista Defender', codigoNota: confirmar, norma: 'NFPA 1971 ed. 1991 · NOM-002-STPS-2010', estatusNorma: 'equivalente', chips: ['Brigadista', 'Equivalente', 'NOM-002-STPS-2010'], resumen: ['Traje brigadista Sköld con cobertura 360°, Ultrashield y referencias que se comunican como equivalencia de edición antigua.'], caracteristicas: ['Cuello 360° y bies fotoluminiscente', 'Velcro FR y zipper de escape rápido', 'Ultrashield en hombros, codos y rodillas', 'Porta radio y SköldTracker'], descripcion: ['El Sköld Brigadista Defender declara cuello de cobertura 360°, bies fotoluminiscente en pecho, espalda y muñecas, porta radio, velcro retardante a la flama y zipper de escape rápido. El fabricante menciona telas que exceden NFPA 2013 en termorresistencia ante explosión, abrasión, corte y desgarre. Solicita el documento técnico que identifique tela y configuración.', 'Ultrashield refuerza hombros, codos y rodillas. Prueba cierres, radio, guantes y protección ocular en la maniobra de brigada para confirmar que la prenda mantiene cobertura sin engancharse. SköldTracker se indica para fichas, mantenimiento y caducidad; su inclusión en el suministro debe quedar confirmada.', 'Inspecciona cierre, bies, costuras y refuerzos antes de usar. Tras exposición o daño, sigue el procedimiento de servicio en lugar de reparar de forma improvisada.', 'La ficha indica NFPA 1971 ed. 1991 y NOM-002-STPS-2010 con estatus equivalente. La edición NFPA es antigua y no se presenta como certificación actual.'], faq: [{ q: '¿La referencia NFPA es actual?', a: 'No; se publica NFPA 1971 edición 1991 como referencia antigua.' }, { q: '¿Tiene porta radio?', a: 'Sí.' }, { q: '¿Dónde usa Ultrashield?', a: 'Hombros, codos y rodillas.' }, { q: '¿Qué se confirma?', a: 'Código, tela, configuración y documentación aplicable.' }], imagen: proveedor('skold-brigadista-defender.avif', 'Traje Sköld Brigadista Defender', 'Sköld'), imagenesExtra: [proveedor('skold-brigadista-defender-pantalon.avif', 'Pantalón Sköld Brigadista Defender', 'Sköld')] }),
-  ficha({ id: 'lakeland-a10-attack', seccion: 'trajes', familia: 'brigadista', marca: 'Lakeland', fabricante: 'Lakeland', nombre: 'OSX A10 Attack', codigo: 'AT3202Y97 (chaquetón) / AT3302Y97 (pantalón)', capaExterior: 'Nomex 7.5 oz amarillo', barreras: 'Nomex Quilt Q8; Stedair 3000', norma: 'NFPA 1971 ed. 2018', estatusNorma: 'declarado', chips: ['Brigadista', 'Lakeland', 'Stedair 3000'], resumen: ['Conjunto Lakeland para brigadas industriales, con códigos de chaquetón y pantalón, exterior Nomex y capas declaradas.'], caracteristicas: ['Nomex 7.5 oz, Nomex Quilt Q8 y Stedair 3000', 'Chaquetón tradicional de 35 pulgadas', 'DRD Easy Grip y cuello de tres pulgadas', 'Puños Kevlar, pozo Stedprene y Stedshield', 'Rodilleras dobles y tirantes Black-Ops'], descripcion: ['El Lakeland OSX A10 Attack declara exterior Nomex 7.5 oz amarillo, térmica Nomex Quilt Q8 y humedad Stedair 3000. AT3202Y97 identifica el chaquetón y AT3302Y97 el pantalón. Aunque los códigos se pidan por separado, valida ambas piezas como conjunto para definir capa, talla y solape de cintura.', 'El chaquetón de 35 pulgadas incorpora zipper/velcro, cinta 3M Scotchlite, DRD Easy Grip, cuello de tres pulgadas, mangas curvas, puños Kevlar, pozo Stedprene, Stedshield, bolsas de expansión y abertura de inspección del forro. El pantalón tiene cierre gancho y D, ajustes Delrin HT, rodilleras dobles, refuerzo de bastilla y tirantes Black-Ops sin botones metálicos.', 'Prueba el corte de bota invertido con la bota de la operación y revisa el comportamiento de rodillas y tirantes al arrodillarse. El fabricante lo orienta a brigadas industriales y requisitos OSHA; el análisis de riesgo define si corresponde al escenario.', 'NFPA 1971 ed. 2018 se publica como declaración del fabricante. Pide el documento de conformidad de la configuración ofertada.'], faq: [{ q: '¿Qué códigos tiene?', a: 'AT3202Y97 para chaquetón y AT3302Y97 para pantalón.' }, { q: '¿Qué barreras declara?', a: 'Nomex Quilt Q8 y Stedair 3000.' }, { q: '¿Incluye DRD?', a: 'Declara DRD Easy Grip.' }, { q: '¿Cuál es el estatus?', a: 'Declarado.' }], imagen: proveedor('lakeland-a10.avif', 'Traje Lakeland OSX A10 Attack', 'Lakeland'), imagenesExtra: [proveedor('lakeland-a10-pantalon.avif', 'Pantalón Lakeland OSX A10 Attack', 'Lakeland')] }),
-  ficha({ id: 'romak-fire-ranger-explorer', seccion: 'trajes', familia: 'forestal', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Fire Ranger Explorer', codigo: 'BOMW1001', material: 'Nomex IIIA amarillo 6 oz/yd²; Brigade 7.5 oz según configuración', colores: 'Amarillo', norma: 'NFPA 1971-2018', estatusNorma: 'declarado', chips: ['Forestal', 'Overol', 'BOMW1001'], resumen: ['Overol forestal ligero con Nomex, bolsillos de campo y declaración normativa que debe contrastarse con NFPA 1950.'], caracteristicas: ['Nomex IIIA 6 oz/yd²; Brigade 7.5 oz según configuración', 'Cinta 3M FR de tres pulgadas', 'Bolsas cargo, zipper Nomex YKK y broches inoxidables', 'Porta radio, pozo de agua y porta micrófono', 'Codos y rodillas reforzados'], descripcion: ['El Romak Fire Fire Ranger Explorer es un overol forestal Nomex IIIA amarillo de 6 oz/yd². La hoja de colores menciona Brigade 7.5 oz, por lo que se confirma el material según configuración. Indica material, talla y accesorios en la orden para evitar recibir una variante distinta.', 'Declara cinta 3M Scotchlite FR de tres pulgadas, bolsas cargo de 10 por 10 pulgadas, zipper Nomex YKK, broches inoxidables, cuello alto, puños con velcro, porta radio, pozo de agua y porta micrófono. Codos y rodillas están reforzados; cintura elástica y velcro de piernas se revisan caminando y trabajando en pendiente.', 'Tras exposición a humo, ceniza o contaminantes, sigue el procedimiento del fabricante para inspección y limpieza. En recepción, coteja cierres, velcros, cintas, bolsillos y refuerzos contra la configuración aprobada.', 'El fabricante declara “NFPA 1971-2018”. Para forestal, la referencia específica es NFPA 1950, antes NFPA 1977; solicita la declaración aplicable. El estatus es declarado.'], faq: [{ q: '¿Es overol?', a: 'Sí.' }, { q: '¿Qué material declara?', a: 'Nomex IIIA 6 oz/yd² o Brigade 7.5 oz según configuración.' }, { q: '¿Qué referencia forestal se revisa?', a: 'NFPA 1950.' }, { q: '¿Cuál es el código?', a: 'BOMW1001.' }], imagen: proveedor('romak-fire-ranger-explorer.avif', 'Overol forestal Romak Fire Ranger Explorer', 'Romak Fire') }),
-  ficha({ id: 'romak-fire-ranger-scout', seccion: 'trajes', familia: 'forestal', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Fire Ranger Scout', codigoNota: confirmar, material: 'Nomex IIIA amarillo 6 oz/yd²; el póster declara tela 100 % Nomex', colores: 'Chaquetón amarillo y pantalón azul', norma: 'NFPA 1971-2018', estatusNorma: 'declarado', chips: ['Forestal', 'Nomex', 'Dos piezas'], resumen: ['Conjunto forestal amarillo y azul de dos piezas, con descripción de tela Nomex que se confirma antes de ordenar.'], caracteristicas: ['Chaquetón Nomex IIIA amarillo 6 oz/yd²', 'Póster: tela 100 % Nomex', 'Cinta 3M, bolsas parche y zipper YKK', 'Cuello alto, puños velcro y codos reforzados', 'Pantalón azul con bolsas laterales y traseras'], descripcion: ['El Romak Fire Fire Ranger Scout reúne chaquetón amarillo y pantalón azul. El chaquetón se indica como Nomex IIIA amarillo de 6 oz/yd², mientras el póster declara tela 100 % Nomex. La cotización debe aclarar cuál material aplica a la partida y confirmar código antes de emitir la orden.', 'La parte superior declara cinta 3M, bolsas parche de 10 por 10 pulgadas, zipper Nomex YKK, cuello alto, puños velcro y codos reforzados. El pantalón usa zipper Nomex YKK, bolsas en costados y espalda, cinta 3M de tres pulgadas, refuerzos y cintura con presillas. Valida el largo con bota forestal y la movilidad sobre terreno irregular.', 'El color de ambas piezas, distribución de bolsas y ajuste deben quedar escritos; el nombre Scout no sustituye esos detalles. Como no hay foto propia, la imagen es ilustrativa de la familia y no confirma una configuración.', 'El fabricante declara “NFPA 1971-2018”. Para forestal consulta NFPA 1950, antes NFPA 1977, y solicita la declaración aplicable. Se presenta con estatus declarado.'], faq: [{ q: '¿Qué piezas incluye?', a: 'Chaquetón amarillo y pantalón azul.' }, { q: '¿Qué material se indica?', a: 'Nomex IIIA 6 oz/yd²; el póster declara 100 % Nomex.' }, { q: '¿Tiene código publicado?', a: 'No; confírmalo al cotizar.' }, { q: '¿Qué norma forestal se revisa?', a: 'NFPA 1950.' }], imagen: ilustrativa('/images/catalogo/trajes/romak-fire-ranger-explorer.avif', 'Imagen ilustrativa de traje forestal Romak Fire') }),
-  ficha({ id: 'romak-bomw1002', seccion: 'trajes', familia: 'forestal', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Saco y pantalón forestal', codigo: 'BOMW1002 / BOMW1002 FR', material: 'Nomex IIIA 6.0 oz o algodón 100 % ignífugo', colores: 'Amarillo', estatusNorma: 'sin-norma', chips: ['Forestal', 'Sin norma', 'BOMW1002'], resumen: ['Saco y pantalón forestal disponibles en Nomex IIIA o algodón ignífugo, con códigos separados por material y sin norma declarada.'], caracteristicas: ['BOMW1002 en Nomex IIIA 6.0 oz', 'BOMW1002 FR en algodón 100 % ignífugo', 'Cierre con broche y solapa', 'Porta radio, bolsas parche y cinta 3M', 'Pantalón con bolsas cargo y traseras'], descripcion: ['El Romak Fire saco y pantalón forestal tiene BOMW1002 en Nomex IIIA de 6.0 oz y BOMW1002 FR en algodón 100 % ignífugo. No mezcles ambas versiones: identifica material, código, talla y color en la solicitud. Un corte similar no implica el mismo comportamiento o alcance de uso.', 'El saco declara cierre frontal con broche y solapa, porta radio, dos bolsas parche de 10 por 10 pulgadas, cinta 3M de dos pulgadas, mangas ergonómicas y cuello protector con velcro. El pantalón amarillo tiene presillas, bolsas cargo con fuelle, bolsas traseras y cintas reflejantes. Revisa con bota y guantes el cierre, largo y acceso a bolsas.', 'Al recibir reposiciones, conserva el registro de código y material para no combinar prendas distintas bajo el mismo uniforme. Tras daño o contaminación, sigue el procedimiento de servicio correspondiente.', 'El estatus es sin norma: no se publica norma declarada ni certificación. Contrasta la prenda con el análisis de riesgo de la operación forestal.'], faq: [{ q: '¿Cuáles son las versiones?', a: 'BOMW1002 Nomex IIIA y BOMW1002 FR algodón ignífugo.' }, { q: '¿Tiene norma declarada?', a: 'No.' }, { q: '¿Qué lleva el pantalón?', a: 'Bolsas cargo con fuelle y bolsas traseras.' }, { q: '¿Qué revisar al reponer?', a: 'Código, material, talla y cintas.' }], imagen: proveedor('romak-bomw1002.avif', 'Saco y pantalón forestal Romak Fire', 'Romak Fire') }),
-  ficha({ id: 'romak-mark-one', seccion: 'trajes', familia: 'aproximacion', marca: 'Romak Fire', fabricante: 'Romak Fire', nombre: 'Mark One MPX-8', codigo: 'BOM1046', capaExterior: 'Nor-Fab MPX-8 aluminizada: 17 % Basofil y 83 % para-aramida', barreras: 'Omni Synergy; Stedair 3000', norma: 'NFPA 1971:2018 proximidad', estatusNorma: 'certificado-ul', certificacion: 'MH48840', chips: ['Aproximación', 'UL MH48840', 'Aluminizado'], resumen: ['Traje aluminizado de cuatro capas para proximidad aeroportuaria e industrial, con certificación UL MH48840.'], caracteristicas: ['Sistema de cuatro capas', 'Nor-Fab MPX-8 aluminizada', 'Omni Synergy y Stedair 3000', 'DRD, porta micrófono y porta radio', 'Tirantes H y ajustes antichispa', 'Rodilleras ortopédicas y talón Ara-Shield'], descripcion: ['El Romak Fire Mark One MPX-8 es un traje de proximidad para incendios aeroportuarios e industriales. Declara cuatro capas con exterior y refuerzos Nor-Fab MPX-8 aluminizados, 17 % Basofil y 83 % para-aramida, barrera térmica Omni Synergy y barrera de humedad Stedair 3000. La superficie aluminizada responde a calor radiante; no se intercambia con un traje estructural o de entrada a flama.', 'El chaquetón incorpora DRD con letras de alta visibilidad, porta micrófono, extensión de manga, porta radio en ambos lados, mangas curvas y bolsas con fuelle. Los hombros acolchinados tienen ocho puntos de anclaje. Ensaya radio, micrófono, casco, máscara, ERA y guantes para evitar presión, enganches o pérdida de cobertura.', 'La pantalonera declara tirantes H de cuatro u ocho puntos, cierre doble Nomex, hebillas antichispa, gancho y anillo D, refuerzo de entrepierna, rodilleras con espuma de grado ortopédico y talón Ara-Shield. Confirma opción de tirantes y tallas durante movimiento y acceso a vehículo.', 'Tiene certificación UL MH48840 para NFPA 1971:2018 proximidad. Incluye BOM1046, las cuatro capas y accesorios en la cotización; solicita la declaración de conformidad para la configuración elegida.'], faq: [{ q: '¿Para qué operación se indica?', a: 'Proximidad aeroportuaria e industrial.' }, { q: '¿Cuál es la certificación?', a: 'UL MH48840.' }, { q: '¿Qué exterior declara?', a: 'Nor-Fab MPX-8 aluminizada.' }, { q: '¿Cuál es el código?', a: 'BOM1046.' }], imagen: proveedor('romak-mark-one.avif', 'Traje de aproximación Romak Fire Mark One MPX-8', 'Romak Fire') }),
-].map(completar) };

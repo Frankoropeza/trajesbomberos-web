@@ -1,45 +1,39 @@
 {
- "lead": "Consulta 20 estaciones de bomberos en Puebla registradas en 12 municipios. Las fichas de este directorio presentan corporación, ubicación y fuente pública para buscar bomberos en Puebla con criterios claros de consulta.",
- "descRight": [
-  "La cobertura registrada combina 10 estaciones estatales, 8 municipales, una aeroportuaria y una de PEMEX. Se identifican una central y 9 subestaciones. Puebla concentra 7 fichas, mientras Huejotzingo y San Martín Texmelucan tienen 2 cada uno; los demás municipios incluidos aportan una referencia con su propia corporación indicada.",
-  "Selecciona un municipio para revisar su listado y los atributos de cada estación. Hay teléfono con fuente pública en 2 fichas, dirección en 19 y ubicación exacta en 8, por lo que conviene verificar cada campo. El mapa y la identificación corporativa complementan la consulta antes de cualquier gestión. Si requieres respuesta ante una emergencia, marca 911."
- ],
- "municipiosDuo": [
-  "Puebla concentra 7 estaciones en el directorio, la mayor agrupación estatal. La sección de bomberos en Puebla permite distinguir las distintas estaciones de Bomberos Puebla y la referencia del Heroico Cuerpo de Bomberos y Bomberas del Estado de Puebla, sin mezclarlas en un único resultado.",
-  "Huejotzingo y San Martín Texmelucan reúnen 2 fichas cada uno. Atlixco, Huauchinango, Izúcar de Matamoros, San Andrés Cholula, San Pedro Cholula, Tehuacán, Teziutlán, Xicotepec y Zacatlán tienen una estación registrada, lo que orienta una búsqueda municipal más puntual."
+ "lead": "Puebla cuenta con 20 estaciones de bomberos en 12 municipios, con mayor concentración en Puebla y presencia doble en Huejotzingo y San Martín Texmelucan. Consulta dirección, teléfono oficial, ubicación y corporación operadora para canalizar tu gestión.",
+ "panorama": [
+  "El servicio de bomberos en Puebla combina una red estatal con corporaciones municipales, una brigada PEMEX y el CREI del aeropuerto. El Heroico Cuerpo de Bomberos y Bomberas del Estado de Puebla mantiene una central y subestaciones en Puebla, Huejotzingo, Teziutlán y Zacatlán. Esta estructura convive con servicios locales de Atlixco, Cholula, Tehuacán y otros municipios.",
+  "Puebla concentra 7 estaciones; Huejotzingo y San Martín Texmelucan reúnen 2 cada uno. Para coordinar una dotación, la zona de Puebla requiere distinguir bases estatales y municipales. Huejotzingo incorpora servicio aeroportuario, y San Martín Texmelucan suma una brigada PEMEX, dos contextos que demandan protección distinta a la de una estación urbana convencional."
  ],
  "estacionesDuo": [
-  "Los resultados indican corporación estatal, municipal, aeroportuaria o de PEMEX, además de central y subestación cuando se declara ese rol. Cada ficha separa dirección, teléfono con fuente y ubicación exacta o aproximada. Bomberos Puebla y el H. Cuerpo de Bomberos Municipales de San Martín Texmelucan son referencias del listado.",
-  "Para interpretar una ficha, revisa primero su municipio y tipo, luego la información de ubicación disponible. El CREI Aeropuerto Internacional Hermanos Serdán y la Brigada de Emergencias PEMEX de San Martín Texmelucan están clasificados conforme a su carácter especializado, distinto de una corporación municipal."
+  "El Heroico Cuerpo de Bomberos y Bomberas del Estado de Puebla opera la central y diversas subestaciones. HCBP también tiene bases fuera de la capital, mientras San Martín Texmelucan, Atlixco y Tehuacán disponen de corporaciones municipales. El listado agrupa las estaciones por municipio e indica el teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Las 20 fichas de Puebla declaran incendios estructurales y atención prehospitalaria; 18 mencionan rescate vehicular. Puebla suma 2 teléfonos con fuente pública, 19 direcciones y 8 ubicaciones exactas. Esos campos permiten conocer el nivel de detalle publicado para cada estación.",
-  "Materiales peligrosos aparece en 5 estaciones y salvamento aeroportuario en 3. Incendios forestales se registra en 2 casos; rescate en altura, acuático, fugas de gas, protección civil y capacitación tienen presencia puntual. La etiqueta debe leerse como servicio declarado por la ficha correspondiente."
+  "Las 20 estaciones declaran incendios estructurales y atención prehospitalaria; 18 integran rescate vehicular. Materiales peligrosos se reporta en 5, con presencia en aeropuerto y brigada PEMEX. Hay salvamento aeroportuario, fuego forestal, rescate en altura y acuático; la compra debe ajustarse a cada corporación."
  ],
  "equipoDuo": [
-  "El registro de Puebla apunta a necesidades de incendios estructurales, rescate vehicular y materiales peligrosos. Una base útil incluye <a href=\"/trajes/estructural/\">trajes de protección estructural</a> y soluciones para extricación; los escenarios aeroportuarios demandan revisar prendas para calor radiante y aproximación.",
-  "Para intervenciones con sustancias peligrosas, <a href=\"/trajes/hazmat/\">trajes Hazmat</a> deben seleccionarse conforme al riesgo específico, junto con guantes y protección respiratoria que corresponda. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Puebla."
+  "La protección para incendio estructural debe ser la base de la dotación. Las corporaciones que realizan rescate vehicular necesitan <a href=\"/trajes/extricacion/\">trajes de extricación</a>, y las que atienden incendios forestales requieren prendas específicas. En el aeropuerto, PEMEX y servicios con materiales peligrosos, <a href=\"/trajes/hazmat/\">equipo Hazmat</a> y protección de aproximación deben definirse por operación.",
+  "LORICA prepara especificación técnica por partida para licitación o compra directa, junto con el expediente que solicite la corporación. Emite CFDI 4.0, no hay compra mínima y envía a Puebla. La dotación puede complementarse con <a href=\"/equipo-de-respiracion-autonoma/\">equipos de respiración autónoma</a>, cascos, botas y guantes seleccionados según el riesgo."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Puebla?",
-   "a": "El directorio registra 20 estaciones de bomberos en Puebla, ubicadas en 12 municipios. No se presenta como un conteo total del estado: reúne fichas con fuente pública y puede incorporar más estaciones conforme se confirmen sus referencias."
+   "q": "¿Cuántas estaciones de bomberos hay en Puebla y dónde están?",
+   "a": "Hay 20 estaciones de bomberos localizadas en 12 municipios de Puebla. El municipio de Puebla concentra 7, mientras Huejotzingo y San Martín Texmelucan tienen 2 cada uno. También hay corporaciones en Atlixco, Huauchinango, Izúcar de Matamoros, Cholula, Tehuacán, Teziutlán, Xicotepec y Zacatlán."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Puebla?",
-   "a": "Puebla tiene 7 estaciones registradas, seguida de Huejotzingo y San Martín Texmelucan con 2 cada uno. Para consultar bomberos en Puebla, el índice separa las estaciones por nombre, corporación y los datos de ubicación disponibles en cada caso."
+   "q": "¿Quién opera los cuerpos de bomberos en Puebla?",
+   "a": "Los bomberos en Puebla incluyen al Heroico Cuerpo de Bomberos y Bomberas del Estado de Puebla, corporaciones municipales, una brigada PEMEX y un cuerpo de rescate aeroportuario. Las estaciones estatales cuentan con central y subestaciones, mientras varios municipios mantienen sus propios servicios."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Puebla?",
-   "a": "La clasificación del directorio incluye 10 estaciones estatales, 8 municipales, una aeroportuaria y una de PEMEX. También señala una central y 9 subestaciones. Así, cada ficha muestra el tipo de corporación antes de que el usuario revise ubicación o teléfono."
+   "q": "¿Cómo contactar a una estación de bomberos en Puebla para una gestión?",
+   "a": "Busca la estación por municipio y consulta el teléfono oficial cuando se encuentre publicado para solicitar capacitación, realizar una donación o pedir un dictamen. Comunícate con la corporación operadora de la estación. Para una emergencia llama al 911 y no utilices un contacto administrativo."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Puebla?",
-   "a": "En caso de una emergencia en Puebla, llama al 911. Los teléfonos que aparecen en fichas tienen otro fin: trámites, visitas, capacitación o donaciones, siempre que exista una fuente pública para publicarlos."
+   "q": "¿Qué riesgos atienden los bomberos en Puebla?",
+   "a": "Los bomberos en Puebla declaran incendios estructurales, atención prehospitalaria y rescate vehicular. También se reportan materiales peligrosos, salvamento aeroportuario, incendios forestales, rescate en altura, rescate acuático y fugas de gas, de acuerdo con las intervenciones de cada corporación."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Puebla?",
-   "a": "Para bomberos en Puebla cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. El equipo puede definirse en función de incendios estructurales, rescate vehicular, materiales peligrosos o labores de aproximación."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Puebla?",
+   "a": "Una corporación de bomberos en Puebla puede adquirir equipo por licitación o compra directa. LORICA entrega especificación técnica por partida, expediente de soporte y CFDI 4.0. No solicita compra mínima y coordina el envío al estado con la protección requerida para sus servicios."
   }
  ]
 }

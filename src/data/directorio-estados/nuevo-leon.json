@@ -1,45 +1,39 @@
 {
- "lead": "Encuentra 28 estaciones de bomberos en Nuevo León repartidas en 13 municipios. El directorio presenta corporación, ubicación, rol y fuente pública de cada ficha para consultar bomberos en Nuevo León con datos diferenciados por estación.",
- "descRight": [
-  "El registro de Nuevo León está dominado por 25 estaciones municipales, además de 2 aeroportuarias y una de PEMEX. Se identifican 2 centrales y 16 subestaciones. Monterrey reúne 5 fichas; Apodaca y Guadalupe, 4 cada uno; San Pedro Garza García cuenta con 3, lo que dibuja una red con varios puntos de operación.",
-  "Navega el listado por municipio para comparar nombre, tipo y datos de localización. Hay teléfono con fuente pública en 5 fichas, direcciones en 23 y ubicación exacta en 22. El mapa ayuda a ubicar referencias y la fuente aclara el respaldo de cada dato publicado; ante una emergencia debes marcar 911 de inmediato."
- ],
- "municipiosDuo": [
-  "Monterrey concentra 5 estaciones registradas, seguido de Apodaca y Guadalupe con 4 cada uno, y San Pedro Garza García con 3. Para localizar bomberos en Monterrey, el índice permite separar sus estaciones por nombre, mientras que Apodaca incluye también referencias aeroportuarias.",
-  "Cadereyta Jiménez, García y General Escobedo suman 2 estaciones por municipio. Juárez, Linares, Pesquería, Sabinas Hidalgo, San Nicolás de los Garza y Santiago tienen una ficha cada uno. Esta distribución permite identificar tanto concentraciones como municipios con una sola referencia publicada."
+ "lead": "Nuevo León cuenta con 28 estaciones de bomberos en 13 municipios, concentradas en Monterrey, Apodaca y Guadalupe. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para contactar o equipar la base que corresponde.",
+ "panorama": [
+  "La atención de bomberos en Nuevo León se sostiene principalmente en corporaciones municipales, con Bomberos de Nuevo León, A.B.P. como una red que opera en varios municipios. El Patronato de Bomberos de Ciudad Guadalupe, A.C. mantiene su propia estructura, y se agregan brigada PEMEX y dos servicios aeroportuarios. Hay 2 centrales y 16 subestaciones para distribuir la operación.",
+  "Monterrey concentra 5 estaciones; Apodaca y Guadalupe reúnen 4 cada uno, con continuidad hacia San Pedro Garza García, García y General Escobedo. Esa densidad metropolitana facilita organizar dotaciones por corporación, aunque Linares, Sabinas Hidalgo y Santiago requieren una logística propia. Quien equipa bomberos en Nuevo León debe separar servicio urbano, industrial, forestal y aeroportuario."
  ],
  "estacionesDuo": [
-  "La ficha explica si la estación es municipal, aeroportuaria o de PEMEX, e indica central o subestación cuando el dato existe. Dirección, teléfono con fuente y ubicación exacta o aproximada se muestran como campos independientes. Bomberos de Nuevo León, A.B.P. y Bomberos Guadalupe aparecen entre las corporaciones registradas.",
-  "Al comparar resultados, considera que una estación puede servir a una zona concreta y que el tipo aclara su ámbito. El CREI Aeropuerto Internacional General Mariano Escobedo y la Brigada Industrial PEMEX de Cadereyta Jiménez figuran con su clasificación propia; no deben interpretarse como equivalentes a una estación municipal."
+  "Bomberos de Nuevo León, A.B.P. enlaza estaciones en Monterrey, Apodaca, García, General Escobedo y San Pedro Garza García. El Patronato de Bomberos de Ciudad Guadalupe, A.C. opera una central y subestaciones propias. El listado se presenta por municipio e integra el teléfono oficial cuando fue publicado para cada corporación."
  ],
  "coberturaDuo": [
-  "La atención prehospitalaria está declarada en 28 fichas y los incendios estructurales en 27; el rescate vehicular figura en 24. Hay 5 fichas con teléfono publicado con fuente, 23 direcciones y 22 ubicaciones exactas. Estas cifras permiten apreciar qué tan completa está cada referencia dentro del directorio.",
-  "Materiales peligrosos aparece en 7 casos, mientras incendios forestales y atención a enjambres y fauna se declaran en 4. El listado también incluye salvamento aeroportuario, fugas de gas, rescate en altura, espacios confinados, rescate acuático y protección civil según la ficha correspondiente."
+  "La atención prehospitalaria aparece en las 28 estaciones y los incendios estructurales en 27. Rescate vehicular, materiales peligrosos y fuego forestal dibujan una demanda variada, reforzada por servicios aeroportuarios. La protección debe responder a esa combinación en corporaciones que atienden ciudad y zonas industriales."
  ],
  "equipoDuo": [
-  "El peso de incendios estructurales, rescate vehicular y materiales peligrosos en Nuevo León pide una selección por tarea: <a href=\"/trajes/estructural/\">trajes estructurales</a>, equipo de extricación y protección química compatible con el riesgo. Las referencias aeroportuarias requieren valorar alternativas de aproximación.",
-  "Para brigadas con intervención en incidentes vehiculares, <a href=\"/trajes/extricacion/\">trajes para extricación</a> y herramientas especializadas complementan la configuración. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Nuevo León."
+  "El base inicial son <a href=\"/trajes/estructural/\">trajes estructurales</a> para fuego en inmuebles. Las brigadas que declaran materiales peligrosos requieren protección Hazmat, y el rescate vehicular pide prendas de extricación. Donde hay incendios forestales se necesitan trajes forestales; los aeropuertos deben definir protección de aproximación acorde con su servicio especializado.",
+  "LORICA prepara especificación técnica por partida para respaldar licitación o compra directa de corporaciones en Nuevo León. La entrega incluye CFDI 4.0, no hay compra mínima y el envío se programa al estado. Para completar el conjunto pueden incluirse <a href=\"/herramientas/\">herramientas para bomberos</a>, botas, guantes y equipo respiratorio según la intervención asignada."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Nuevo León?",
-   "a": "El directorio registra 28 estaciones de bomberos en Nuevo León en 13 municipios. La relación se limita a fichas con referencias públicas y no afirma abarcar todas las estaciones del estado; se amplía cuando se validan nuevos datos de corporaciones y ubicación."
+   "q": "¿Cuántas estaciones de bomberos hay en Nuevo León y dónde están?",
+   "a": "Hay 28 estaciones de bomberos localizadas en 13 municipios de Nuevo León. Monterrey concentra 5; Apodaca y Guadalupe reúnen 4 cada uno. También hay estaciones en Cadereyta Jiménez, García, General Escobedo, Juárez, Linares, Pesquería, Sabinas Hidalgo, San Nicolás de los Garza, San Pedro Garza García y Santiago."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Nuevo León?",
-   "a": "Monterrey tiene 5 estaciones registradas; Apodaca y Guadalupe cuentan con 4 cada uno, mientras San Pedro Garza García suma 3. Para buscar bomberos en Monterrey, cada estación aparece por separado en el índice con su tipo y datos de localización disponibles."
+   "q": "¿Quién opera los cuerpos de bomberos en Nuevo León?",
+   "a": "Los bomberos en Nuevo León son atendidos por corporaciones municipales y por Bomberos de Nuevo León, A.B.P., con presencia en varios municipios. También opera el Patronato de Bomberos de Ciudad Guadalupe, A.C., una brigada PEMEX en Cadereyta Jiménez y cuerpos aeroportuarios en Apodaca."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Nuevo León?",
-   "a": "El listado reúne 25 fichas municipales, 2 aeroportuarias y una de PEMEX. También distingue 2 centrales y 16 subestaciones cuando esa información está disponible, para mostrar que las corporaciones y funciones de las estaciones no son idénticas."
+   "q": "¿Cómo contactar a una estación de bomberos en Nuevo León para una gestión?",
+   "a": "Busca la corporación y municipio correspondientes; cuando está publicado, el teléfono oficial permite solicitar capacitación, canalizar donaciones o pedir dictámenes. Para una emergencia en Nuevo León llama al 911. Los contactos de gestión son útiles para coordinación institucional, no para reemplazar el reporte urgente."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Nuevo León?",
-   "a": "Si hay una emergencia en Nuevo León, marca 911. Los teléfonos asociados a fichas del directorio son para trámites, visitas, capacitación o donaciones cuando tienen fuente pública; no son el canal que debe usarse para pedir ayuda inmediata."
+   "q": "¿Qué riesgos atienden los bomberos en Nuevo León?",
+   "a": "Las estaciones de Nuevo León declaran atención prehospitalaria, incendios estructurales y rescate vehicular con amplia presencia. Algunas agregan materiales peligrosos, fuego forestal, fugas de gas, rescate en altura, espacios confinados, rescate acuático, fauna y salvamento aeroportuario."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Nuevo León?",
-   "a": "Para bomberos en Nuevo León cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La propuesta puede considerar incendios estructurales, rescate vehicular, materiales peligrosos o atención aeroportuaria según la necesidad."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Nuevo León?",
+   "a": "Una corporación de Nuevo León puede adquirir equipo por licitación o compra directa. LORICA entrega especificación técnica por partida y CFDI 4.0, sin requerir compra mínima. El envío se coordina al estado, con las prendas y accesorios definidos por los riesgos que atiende cada base."
   }
  ]
 }
