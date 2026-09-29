@@ -337,7 +337,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Trajes para bomberos"
         title="Seis familias de trajes para bomberos, una por tipo de riesgo"
-        description="Nos especializamos en ropa de protección para bombero. Cada familia responde a una operación distinta y no son intercambiables."
+        duo={[
+          'Los <a href="/trajes/">trajes para bomberos</a> no son un producto único: cada familia se construye para un riesgo distinto. Trajes estructurales para incendio en edificaciones, de brigadista para fuego incipiente en industria, forestales para línea de fuego, de aproximación y de entrada para calor radiante y flama, y de extricación para rescate. No son intercambiables.',
+          'Elige la categoría que corresponde a tu operación y consulta su ficha técnica: composite por capa, norma de referencia y compra por pieza o conjunto completo. Cotizamos trajes de bomberos con factura CFDI 4.0, sin compra mínima y con envío a los 32 estados.',
+        ]}
       />
       <div class="catalog-grid">
         {trajes.map((c) => <CatalogCard {...c} />)}
@@ -356,12 +359,12 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Modelos disponibles"
         title="Trajes de bomberos Romak Fire, Sköld y Lakeland con ficha técnica"
-        description="Modelos que cotizamos con su configuración por escrito: capa exterior, barreras, tallas y estatus normativo de cada uno. Foto del fabricante en cada ficha."
+        duo={[
+          'Cotizamos <a href="/trajes/">trajes de bombero profesional</a> de Romak Fire, Sköld y Lakeland: modelos estructurales, de brigadista, forestales y de aproximación, cada uno con su ficha, foto del fabricante y configuración por escrito.',
+          'Cada modelo muestra su estatus normativo tal como lo declara el fabricante —certificado UL con número, declarado, equivalente o solo materiales—, además de capa exterior, barreras y tallas, para que compares ofertas con el mismo criterio. Nunca presentamos como certificado un modelo que no lo está.',
+        ]}
       />
       <ModelosGrid />
-      <p class="modelos-nota">
-        El estatus de norma se muestra tal como lo declara cada fabricante: certificado UL con número, declarado, equivalente o solo materiales. Nunca presentamos como certificado un modelo que no lo está.
-      </p>
     </div>
   </section>
 
@@ -371,7 +374,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Complementos del conjunto"
         title="Casco, botas, guantes, monja, tirantes y ERA para completar el equipo"
-        description="Se cotizan junto con el traje para que el elemento reciba un conjunto compatible: casco con la máscara del ERA, bota según la familia de traje y guante según la operación."
+        duo={[
+          'Un traje para bombero protege completo solo cuando se integra con el resto del equipo. Cotizamos junto al traje el <a href="/cascos/">casco de bombero</a>, las <a href="/botas/">botas</a>, los <a href="/guantes/">guantes</a>, la <a href="/capuchas/">monja o escafandra</a>, los tirantes y el <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma (ERA)</a>.',
+          'Los revisamos como conjunto: el casco debe ajustar con la máscara del ERA, la bota se elige según la familia de traje y el guante según la operación. Así recibes un equipo de bombero completo y compatible, con ficha técnica por partida.',
+        ]}
       />
       <div class="catalog-grid">
         {complementos.map((c) => <CatalogCard {...c} prefijo="Uso" />)}
@@ -392,7 +398,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Cómo elegir"
         title="Qué familia corresponde a tu operación"
-        description="Seis familias para seis tipos de riesgo. No son intercambiables y elegir mal cuesta caro, en dinero y en seguridad."
+        duo={[
+          'Antes de comparar precios, define el riesgo: incendio estructural, fuego incipiente en planta, incendio forestal, calor radiante, entrada a flama o rescate vehicular. Cada tipo de traje para bomberos responde a uno, y elegir mal cuesta caro, en dinero y en seguridad.',
+          'La tabla resume, por familia, para qué operación sirve, cómo está construida y qué complementos necesita. Si dudas entre un traje estructural y uno de brigadista, o entre aproximación y entrada, escríbenos antes de cotizar: te decimos cuál corresponde a tu operación.',
+        ]}
       />
       <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
     </div>
@@ -410,7 +419,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Anatomía del traje"
         title="Tres capas, y la que más protege no es la que se ve"
-        description="Un traje estructural es un composite de tres materiales distintos. Saber qué hace cada capa es lo que separa una compra informada de una compra por color y precio."
+        duo={[
+          'Un traje estructural de bombero es un composite de tres capas: exterior, barrera de humedad y barrera térmica. Cada una cumple una función distinta, y la que más protege no es la que se ve.',
+          'Entender las capas —fibras como Nomex, Kevlar o PBI en el exterior, membrana de barrera de humedad y aislamiento térmico— es lo que separa una compra informada de una compra por color y precio, y te permite leer los valores de TPP y THL de la ficha técnica.',
+        ]}
       />
       <SuitAnatomy />
     </div>
@@ -422,7 +434,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Cómo especificar"
         title="Los ocho datos que debe traer la ficha antes de que firmes"
-        description="Cópialos en tu requisición o en tu pliego. Si una oferta no puede darte los ocho, todavía no es una oferta comparable."
+        duo={[
+          'La ficha técnica separa una oferta comparable de una promesa. Al cotizar trajes de bomberos estructurales, copia en tu requisición o pliego estos ocho datos: norma y edición, composite completo, TPP y THL, peso y largo, DRD, cinta y refuerzos, tallas, y etiqueta con fecha de fabricación.',
+          '«Nomex» a secas no es una especificación: importa cada capa por nombre comercial y la edición de la norma, NFPA 1970 o EN 469. Si una oferta no puede darte los ocho, todavía no es comparable; nosotros los entregamos por escrito con cada partida.',
+        ]}
       />
       <SpecChecklist />
     </div>
@@ -449,7 +464,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Quién compra"
         title="Tres compradores, tres procesos distintos"
-        description="Una brigada industrial, un cuerpo de bomberos que licita y un voluntario que repone una pieza no compran igual. Entra por la ruta que te corresponde."
+        duo={[
+          'Una brigada industrial obligada por la NOM-002-STPS-2010, un cuerpo de bomberos o unidad de protección civil que compra por licitación y un voluntario que repone una pieza no compran igual, ni necesitan los mismos documentos.',
+          'Entra por tu ruta: brigada industrial, gobierno y licitación, o cuerpos voluntarios y particulares. En cada una cotizamos trajes para bomberos con la documentación que tu proceso pide, por pieza o conjunto completo y con envío a los 32 estados.',
+        ]}
       />
       <SegmentCards />
     </div>
@@ -461,7 +479,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Normas"
         title="Qué es obligatorio en México y qué es referencia técnica"
-        description="La confusión entre ambas cosas está en casi todos los sitios del sector. Aquí está la distinción, con la norma vigente en cada caso."
+        duo={[
+          'En México no existe una NOM ni una NMX de producto para trajes de bombero. Lo obligatorio es la NOM-017-STPS-2024, que exige EPP adecuado sin costo, y para brigadas la NOM-002-STPS-2010; las NFPA son referencia técnica voluntaria.',
+          'Consulta qué pide cada norma —NFPA 1970 (que absorbió a la 1971), NFPA 1950, NFPA 1850 y EN 469— y cuándo una licitación las vuelve exigibles. Así redactas o revisas un pliego con la norma vigente, no con la de hace ocho años.',
+        ]}
       />
       <NormsTable columns={normasColumns} rows={normasRows} note={normasNote} />
     </div>
@@ -475,7 +496,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Vida útil y servicio"
         title="El traje tiene fecha de retiro, aunque se vea nuevo"
-        description="NFPA 1850 define el ciclo de servicio del equipo estructural: inspección, lavado y retiro obligatorio. Presupuestarlo desde la compra evita sorpresas."
+        duo={[
+          'Bajo NFPA 1850, un traje estructural de bombero se retira a los 10 años desde su fecha de fabricación, aunque se vea nuevo o nunca se haya usado.',
+          'El ciclo de servicio incluye inspección de rutina, inspección avanzada anual y lavado avanzado dos veces al año. Presupuestarlo desde la compra, y revisar la fecha de fabricación al recibir el equipo, evita sorpresas y protege tu inversión.',
+        ]}
       />
       <NormsTable columns={vidaUtilColumns} rows={vidaUtilRows} note={vidaUtilNote} />
     </div>
@@ -487,7 +511,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Marcas"
         title="Marcas de trajes para bomberos: quién fabrica y qué se especifica"
-        description="Referencia técnica para que redactes tu pliego o tu requisición. Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación."
+        duo={[
+          'Referencia técnica para que redactes tu pliego o tu requisición: qué fabricantes de trajes para bomberos existen y qué materiales del composite se especifican, como PBI, Nomex, Kevlar y membranas de barrera.',
+          'Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación. Consulta las <a href="/marcas/">marcas que cotizamos</a>, Romak Fire y Sköld; la lista de referencia es orientativa y no implica representación exclusiva.',
+        ]}
       />
       <BrandGrid titulo="Fabricantes de traje" marcas={MARCAS_TRAJE} />
       <BrandGrid titulo="Materiales del composite" marcas={MARCAS_MATERIAL} />
@@ -523,6 +550,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
         dark
         eyebrow="Cómo trabajamos"
         title="De tu mensaje al equipo entregado"
+        duo={[
+          'Cotizar trajes para bomberos por WhatsApp toma cinco pasos: cuéntanos tu operación, definimos la familia y el composite, tomamos tallas, te enviamos la cotización formal y entregamos.',
+          'Cada cotización incluye partidas, ficha técnica, norma y condiciones por escrito. Facturamos con CFDI 4.0, enviamos a cualquier estado y damos seguimiento hasta que el equipo llega a tu estación, base o domicilio.',
+        ]}
       />
       <ProcessSteps pasos={pasos} />
     </div>
@@ -534,6 +565,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Preguntas frecuentes"
         title="Lo que conviene saber antes de cotizar"
+        duo={[
+          'Respuestas breves a lo que más nos preguntan al cotizar trajes de bombero: norma vigente, diferencia entre traje estructural y de brigadista, TPP y THL, vida útil y compra por pieza o conjunto.',
+          'También respondemos <a href="/blog/cuanto-cuesta-un-traje-de-bombero/">cuánto cuesta un traje de bombero</a> y qué documentación pide una licitación. Si tu duda no está aquí, escríbenos por WhatsApp y te respondemos en día hábil.',
+        ]}
       />
       <FAQWithContact items={faqs} />
     </div>
@@ -545,7 +580,10 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <SectionHeading
         eyebrow="Blog técnico"
         title="Lo que preguntan por teléfono, explicado a fondo"
-        description="Guías de especificación, normas vigentes, comparativas entre familias y compra pública. Escrito por gente del ramo, sin copiar fichas de fabricante."
+        duo={[
+          'Guías de especificación, normas vigentes, comparativas entre familias y compra pública sobre trajes para bomberos, escritas por gente del ramo y sin copiar fichas de fabricante.',
+          'Empieza por <a href="/blog/como-elegir-traje-para-bomberos/">cómo elegir un traje para bomberos</a>, <a href="/blog/nfpa-1970-que-cambio/">qué cambió con la NFPA 1970</a> o <a href="/blog/uniforme-de-bombero-que-incluye/">qué es un uniforme de bombero</a>. Cada guía enlaza al catálogo correspondiente.',
+        ]}
       />
       <div class="grid-cards grid-cards--3">
         {ultimosPosts.map((a, i) => (
@@ -590,7 +628,6 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--gap-grid, 1.5rem);
   }
-  .modelos-nota { margin: 1.4rem 0 0; font-size: 0.86rem; color: var(--color-gray); max-width: 92ch; }
   .pending-note {
     margin: 1.6rem 0 0;
     padding: 0.9rem 1.1rem;
