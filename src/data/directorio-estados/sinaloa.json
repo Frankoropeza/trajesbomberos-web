@@ -1,0 +1,45 @@
+{
+ "lead": "Consulta 9 estaciones de bomberos en Sinaloa, distribuidas en 6 municipios. Cada ficha reúne corporación, tipo de servicio, ubicación disponible y fuente; también identifica los contactos publicados para facilitar una consulta informada.",
+ "descRight": [
+  "La red registrada combina 3 estaciones municipales, 3 voluntarias y 3 de aeropuerto. No se identifican centrales ni subestaciones en estas fichas. Ahome, Culiacán y Mazatlán reúnen 2 estaciones cada uno; Guasave, Navolato y Salvador Alvarado aportan una estación por municipio. La clasificación permite reconocer una red de operaciones distintas.",
+  "Ubica bomberos en Sinaloa mediante el listado por municipio y consulta el mapa de cada ficha cuando exista posición disponible. Hay teléfono publicado en 4 casos y dirección en 1. Esos medios sirven para contacto ordinario; ante una emergencia, llama al 911. Cada fuente acompaña los datos que se muestran en el registro."
+ ],
+ "municipiosDuo": [
+  "La mayor concentración del directorio está repartida entre Ahome, Culiacán y Mazatlán, con 2 estaciones en cada municipio. Esto permite localizar tanto bomberos en Culiacán como las corporaciones y servicios aeroportuarios registrados en Los Mochis y Mazatlán.",
+  "Fuera de esos tres puntos, el directorio incorpora una ficha en Guasave, una en Navolato y una en Salvador Alvarado. La cobertura aquí descrita corresponde a estaciones con registro público; puede ampliarse al confirmarse nuevas fichas con fuente verificable."
+ ],
+ "estacionesDuo": [
+  "Cada resultado señala si corresponde a una corporación municipal, voluntaria o de aeropuerto, y en este caso todas las fichas se muestran como estación única. La lectura de la ficha separa claramente la identidad de la corporación y los datos disponibles de localización.",
+  "Entre las referencias incluidas están el Heroico Cuerpo de Bomberos de Culiacán y el Cuerpo Voluntario de Bomberos de Mazatlán. Revisa dirección, teléfono con fuente y mapa cuando estén publicados; si falta precisión, la ubicación se presenta con el alcance disponible."
+ ],
+ "coberturaDuo": [
+  "La atención prehospitalaria aparece declarada en 9 fichas; los incendios estructurales y el rescate vehicular, en 6. También hay registros para materiales peligrosos y salvamento aeroportuario, ambos en 3 casos, lo que perfila los servicios informados por las estaciones de Sinaloa.",
+  "De las 9 fichas, 4 incluyen teléfono, 1 dirección y 1 ubicación exacta. Estas cifras ayudan a distinguir qué datos están listos para consulta directa y qué registros requieren usar la fuente o el mapa con la precisión que se indica en cada estación."
+ ],
+ "equipoDuo": [
+  "Los incendios estructurales y el rescate vehicular declarados requieren protección térmica y herramientas de intervención; para materiales peligrosos conviene considerar <a href=\"/trajes/hazmat/\">trajes Hazmat</a>. Los servicios aeroportuarios se relacionan con <a href=\"/trajes/aproximacion/\">trajes de aproximación</a> y los incendios forestales con protección forestal.",
+  "Para corporaciones y brigadas de Sinaloa cotizamos equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La selección debe partir del riesgo y servicio declarado, incluyendo rescate vehicular, atención prehospitalaria o control de incendios."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Sinaloa?",
+   "a": "El directorio registra 9 estaciones de bomberos en Sinaloa ubicadas en 6 municipios. La cifra corresponde a fichas con fuente pública y no pretende representar todas las instalaciones del estado. El listado puede crecer conforme se confirmen nuevas estaciones y sus datos de contacto o ubicación."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones de bomberos en Sinaloa?",
+   "a": "Ahome, Culiacán y Mazatlán concentran 2 estaciones cada uno dentro del directorio. Para bomberos en Culiacán se incluyen una corporación voluntaria y un servicio aeroportuario. Guasave, Navolato y Salvador Alvarado cuentan con una ficha registrada por municipio."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Sinaloa?",
+   "a": "Las fichas de Sinaloa incluyen 3 estaciones municipales, 3 voluntarias y 3 de aeropuerto. Entre ellas aparecen el Heroico Cuerpo de Bomberos de Los Mochis, A.C., Bomberos de Navolato y los servicios SSEI aeroportuarios. Cada ficha identifica el tipo de corporación correspondiente."
+  },
+  {
+   "q": "¿A qué número llamo en una emergencia en Sinaloa?",
+   "a": "Ante una emergencia en Sinaloa llama al 911. Los teléfonos que aparecen en algunas fichas no sustituyen ese número: son útiles para trámites, visitas, capacitación o donaciones. Antes de contactar una estación, consulta la fuente y los datos disponibles en su ficha."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Sinaloa?",
+   "a": "Para bomberos en Sinaloa cotizamos trajes y equipo conforme al riesgo de cada servicio, con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La cotización puede orientarse a incendios estructurales, rescate vehicular, materiales peligrosos o labores aeroportuarias."
+  }
+ ]
+}

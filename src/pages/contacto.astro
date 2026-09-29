@@ -18,10 +18,10 @@ const description =
   'Cotizar trajes para bomberos: escríbenos por WhatsApp con tu operación y tallas, o llama y te ayudamos a especificar. Cotización por escrito con ficha técnica.';
 
 const menuItems = [
-  { label: 'WhatsApp', href: '#whatsapp' },
+  { label: 'Cotizar trajes por WhatsApp', href: '#whatsapp' },
   { label: 'Qué incluir en tu mensaje', href: '#mensaje' },
-  { label: 'Escríbenos', href: '#formulario' },
-  { label: 'Todos los trajes', href: '/trajes/' },
+  { label: 'Formulario para cotizar trajes', href: '#formulario' },
+  { label: 'Trajes para bomberos por familia', href: '/trajes/' },
 ];
 
 const faqs = [
@@ -89,7 +89,7 @@ const faqs = [
         />
         <div class="contacto-vias">
           <a class="btn btn--wa" href={waUrl('Hola, quiero cotizar trajes para bomberos.')} target="_blank" rel="noopener">
-            Cotizar por WhatsApp
+            Cotizar trajes por WhatsApp
           </a>
           <a class="contacto-alt" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
           <a class="contacto-alt" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>

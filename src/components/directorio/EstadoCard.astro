@@ -1,0 +1,212 @@
+---
+// EstadoCard: card de entidad del directorio, homologada con TileCard
+// (borde superior rojo, código en franja roja, título en 2 líneas,
+// texto en 3, subenlaces con chevron y botón principal con palabra
+// clave al fondo). La foto se sustituye por una cabecera de datos
+// sobre tinta: el directorio no usa imágenes de relleno.
+// Todo el contenido sale de lib/directorio (cero cifras a mano).
+import { type ResumenEstado, descEstado, rutaEstado, rutaMunicipio, nf, enEstado, unidad } from '@lib/directorio';
+
+interface Props { e: ResumenEstado; regionNombre: string }
+const { e, regionNombre } = Astro.props as Props;
+const href = rutaEstado(e.slug);
+const titulo = `Estaciones de bomberos ${enEstado(e)}`;
+---
+<li class="ec">
+  <a class="ec__head" href={href} tabindex="-1" aria-hidden="true">
+    <span class="ec__region">{regionNombre}</span>
+    <span class="ec__num">{nf(e.total)}</span>
+    <span class="ec__label">{e.total === 1 ? 'estación registrada' : 'estaciones registradas'}</span>
+    <span class="ec__muni">{e.municipios} {unidad(e.slug, e.municipios)} · {e.coordExactas} con ubicación exacta</span>
+    <span class="ec__code">{e.iso}</span>
+  </a>
+  <div class="ec__body">
+    <h3 class="ec__title"><a href={href}>{titulo}</a></h3>
+    <p class="ec__desc">{descEstado(e)}</p>
+    <ul class="ec__subs" aria-label={`${unidad(e.slug) === 'alcaldías' ? 'Alcaldías' : 'Municipios'} con más estaciones ${enEstado(e)}`}>
+      {e.topMunicipios.map((m) => (
+        <li>
+          <a class="ec__sub" href={rutaMunicipio(e.slug, m.slug)}>
+            <span class="ec__sub-label">Bomberos en {m.nombre}</span>
+            <span class="ec__sub-n" aria-label={`${m.n} ${m.n === 1 ? 'estación' : 'estaciones'}`}>{m.n}</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <a class="ec__cta" href={href}>Bomberos {enEstado(e)}</a>
+  </div>
+</li>
+
+<style>
+  .ec {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgb(20 22 26 / 0.14);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  /* Cabecera de datos: ocupa el lugar de la foto 4:3 de TileCard */
+  .ec__head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 11.5rem;
+    padding: 1.25rem 1.15rem 2.4rem;
+    background: var(--color-ink);
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  .ec__head::after {
+    content: '';
+    position: absolute;
+    right: 1.15rem;
+    top: 1.2rem;
+    width: 3px;
+    height: 2.6rem;
+    background: var(--color-primary);
+  }
+  .ec__region {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+  .ec__num {
+    margin-top: 0.55rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 3.4vw, 3.3rem);
+    font-weight: 700;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .ec__label {
+    margin-top: 0.3rem;
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: #d6dae0;
+  }
+  .ec__muni {
+    margin-top: 0.2rem;
+    font-size: 0.78rem;
+    color: #a9afb7;
+  }
+  .ec__code {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.3rem 0.65rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  .ec__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.15rem 1.15rem 1.2rem;
+  }
+  .ec__title {
+    margin: 0 0 0.55rem;
+    font-size: 1.08rem;
+    line-height: 1.25;
+    min-height: calc(1.08rem * 1.25 * 2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .ec__title a { color: var(--color-dark); text-decoration: none; }
+  .ec__title a:hover { color: var(--color-primary); }
+  .ec__desc {
+    margin: 0 0 1rem;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+    min-height: calc(0.87rem * 1.5 * 3);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ec__subs {
+    list-style: none;
+    margin: 0 0 1.1rem;
+    padding: 0;
+    border-top: 1px solid rgb(20 22 26 / 0.12);
+  }
+  .ec__subs li { border-bottom: 1px solid rgb(20 22 26 / 0.12); }
+  .ec__sub {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 46px;
+    padding: 0.35rem 0.1rem;
+    color: var(--color-dark);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+  }
+  .ec__sub-label { flex: 1; min-width: 0; }
+  .ec__sub-n {
+    flex: none;
+    min-width: 1.7rem;
+    padding: 0.1rem 0.35rem;
+    border: 1px solid rgb(20 22 26 / 0.14);
+    border-radius: var(--radius);
+    font-size: 0.74rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--color-gray);
+    font-variant-numeric: tabular-nums;
+  }
+  .ec__sub svg { flex: none; color: var(--color-primary); }
+  .ec__sub:hover { color: var(--color-primary); }
+  .ec__sub:hover .ec__sub-label { text-decoration: underline; text-underline-offset: 3px; }
+  .ec__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+
+  .ec__cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.55rem 0.9rem;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ec__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
+  .ec__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  @media (max-width: 1279px) { .ec__body { padding: 1rem; } }
+  /* Móvil: card compacta (32 cards en una columna). Se ocultan el
+     texto y los subenlaces a partir del 3.º; el estado completo vive
+     en su página. */
+  @media (max-width: 559px) {
+    .ec__title { min-height: 0; }
+    .ec__desc { display: none; }
+    .ec__subs li:nth-child(n + 3) { display: none; }
+    .ec__head { min-height: 0; padding: 1rem 1rem 2.3rem; }
+    .ec__num { font-size: 2.4rem; }
+  }
+</style>

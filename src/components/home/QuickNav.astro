@@ -8,13 +8,13 @@ import { getSeccion } from '@lib/catalogo/secciones';
 
 const DEFS: { label: string; href: string; seccion?: string }[] = [
   { label: 'Trajes para bomberos', href: '/trajes/' },
-  { label: 'Cascos', href: '/cascos/', seccion: 'cascos' },
-  { label: 'Equipo de respiración', href: '/equipo-de-respiracion-autonoma/', seccion: 'equipo-de-respiracion-autonoma' },
-  { label: 'Botas', href: '/botas/', seccion: 'botas' },
-  { label: 'Guantes', href: '/guantes/', seccion: 'guantes' },
-  { label: 'Kits completos', href: '/kits/', seccion: 'kits' },
-  { label: 'Marcas', href: '/marcas/', seccion: 'marcas' },
-  { label: 'Guías técnicas', href: '/blog/' },
+  { label: 'Cascos para bomberos', href: '/cascos/', seccion: 'cascos' },
+  { label: 'Equipo de respiración autónoma', href: '/equipo-de-respiracion-autonoma/', seccion: 'equipo-de-respiracion-autonoma' },
+  { label: 'Botas para bomberos', href: '/botas/', seccion: 'botas' },
+  { label: 'Guantes para bomberos', href: '/guantes/', seccion: 'guantes' },
+  { label: 'Kits de equipo para bomberos', href: '/kits/', seccion: 'kits' },
+  { label: 'Marcas de equipo para bomberos', href: '/marcas/', seccion: 'marcas' },
+  { label: 'Guías técnicas para bomberos', href: '/blog/' },
 ];
 
 const items = DEFS.filter((d) => !d.seccion || getSeccion(d.seccion));

@@ -1,0 +1,50 @@
+---
+// Aviso911: franja fija bajo la franja de secciones en todo el
+// directorio. Los teléfonos del directorio no sustituyen al 911.
+interface Props { estado?: string }
+const { estado } = Astro.props as Props;
+---
+<aside class="dir-911" aria-label="Número de emergencias">
+  <div class="container dir-911__inner">
+    <a class="dir-911__num" href="tel:911">911</a>
+    <p><strong>¿Es una emergencia? Marca al 911.</strong> Es el número único de emergencias {estado ? `en ${estado} y en todo México` : 'en todo México'} y canaliza tu llamada a la estación que corresponde. Los teléfonos del directorio son para trámites y consultas.</p>
+  </div>
+</aside>
+
+<style>
+  .dir-911 {
+    background: var(--color-primary-light);
+    border-bottom: 1px solid rgb(200 16 46 / 0.18);
+  }
+  .dir-911__inner {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding-block: 0.95rem;
+  }
+  .dir-911__num {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4.2rem;
+    min-height: 44px;
+    padding: 0.35rem 0.6rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+  .dir-911__num:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  p { margin: 0; font-size: 0.95rem; color: var(--color-dark); }
+  strong { color: var(--color-primary-dark); }
+  @media (max-width: 640px) {
+    .dir-911__inner { align-items: flex-start; }
+    .dir-911__num { min-width: 3.4rem; font-size: 1.1rem; }
+    p { font-size: 0.88rem; }
+  }
+</style>

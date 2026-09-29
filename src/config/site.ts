@@ -7,7 +7,6 @@
 // poder nombrarlas como tales (hoy solo referencia técnica).
 // ============================================================
 
-import { SECCIONES } from '@lib/catalogo/secciones';
 import { data as MARCAS_DATA } from '@lib/catalogo/data/marcas';
 
 export const SITE = {
@@ -88,7 +87,7 @@ export const SEGMENTOS: Segmento[] = [
       'Cotización formal para orden de compra',
       'Factura CFDI y ficha técnica por partida',
     ],
-    cta: 'Equipar mi brigada',
+    cta: 'Equipar mi brigada con trajes',
   },
   {
     slug: 'gobierno-licitacion',
@@ -114,7 +113,7 @@ export const SEGMENTOS: Segmento[] = [
       'Asesoría de tallas antes de pedir',
       'Envío a estación o domicilio',
     ],
-    cta: 'Cotizar por pieza',
+    cta: 'Cotizar trajes por pieza',
   },
 ];
 
@@ -208,7 +207,7 @@ export interface BlogCategory {
 export const BLOG_CATEGORIES: BlogCategory[] = [
   {
     slug: 'especificacion',
-    nombre: 'Cómo especificar',
+    nombre: 'Cómo especificar equipo de bombero',
     desc: 'Qué datos debe traer una cotización para que sea comparable con otra.',
     h1: 'Cómo especificar equipo de bombero',
     lead: 'Artículos sobre los datos que hacen comparable una cotización: composite, TPP, THL, tallas y alcance declarado.',
@@ -233,7 +232,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'normas',
-    nombre: 'Normas y certificación',
+    nombre: 'Normas y certificación de trajes',
     desc: 'NFPA 1970, NFPA 1850 y las NOM de la STPS aplicadas al equipo real.',
     h1: 'Normas y certificación',
     lead: 'NFPA 1970, NFPA 1850, NOM-002-STPS-2010 y NOM-017-STPS-2024 explicadas con lo que realmente te van a pedir.',
@@ -249,7 +248,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         'Aquí se explica qué pide cada norma en la práctica, cómo citarla en una requisición y qué revisar en el certificado.',
       ],
       enlaces: [
-        { label: 'Normas aplicables en México', href: '/#normas' },
+        { label: 'Normas para trajes de bombero en México', href: '/#normas' },
         { label: 'Trajes estructurales', href: '/trajes/estructural/' },
         { label: 'Trajes forestales', href: '/trajes/forestal/' },
         { label: 'Extricación y rescate', href: '/trajes/extricacion/' },
@@ -258,7 +257,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'comparativas',
-    nombre: 'Comparativas',
+    nombre: 'Comparativas de trajes de bombero',
     desc: 'Qué familia corresponde a cada operación y por qué no son intercambiables.',
     h1: 'Comparativas entre familias de traje',
     lead: 'Estructural contra brigadista, aproximación contra entrada: las confusiones que cuestan dinero y, a veces, algo peor.',
@@ -284,7 +283,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'mantenimiento',
-    nombre: 'Vida útil y servicio',
+    nombre: 'Vida útil del traje de bombero',
     desc: 'Inspección, lavado, reparación y retiro del equipo en servicio.',
     h1: 'Vida útil y servicio del equipo',
     lead: 'Cómo se inspecciona, se lava, se repara y se retira un traje para que dure lo que tiene que durar y ni un día más.',
@@ -307,7 +306,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   },
   {
     slug: 'licitacion',
-    nombre: 'Compras y licitación',
+    nombre: 'Licitación de trajes de bombero',
     desc: 'Expediente, pliego y documentación para compra pública y corporativa.',
     h1: 'Compras y licitación',
     lead: 'Cómo se arma un expediente que no te descalifica: ficha técnica, certificado de laboratorio, carta de distribuidor y CFDI.',
@@ -400,25 +399,23 @@ export const MENU: MenuItem[] = [
   { label: 'Equipo de protección', href: '/cascos/', match: ['/cascos/', '/equipo-de-respiracion-autonoma/', '/botas/', '/guantes/', '/capuchas/'], columns: equipo, overview: { label: 'Equipo de protección personal para bomberos', href: '/cascos/' } },
   { label: 'Rescate y herramientas', href: '/rescate/', match: ['/rescate/', '/herramientas/', '/mangueras-y-accesorios/', '/accesorios/', '/kits/'], columns: rescate, overview: { label: 'Equipo de rescate y herramientas para bomberos', href: '/rescate/' } },
   {
-    label: 'Marcas', href: '/marcas/', match: ['/marcas/'], columns: [
+    label: 'Marcas de equipo', href: '/marcas/', match: ['/marcas/'], columns: [
       { title: 'Marcas que surtimos', links: [{ label: 'Romak Fire', href: '/marcas/romak-fire/', desc: chipsMarca('romak-fire') }, { label: 'Sköld', href: '/marcas/skold/', desc: chipsMarca('skold') }] },
       { title: 'Modelos por marca', links: [{ label: 'Modelos de trajes Romak Fire, Sköld y Lakeland', href: '/trajes/#modelos' }, { label: 'Casco Sköld Viking', href: '/cascos/skold-viking/' }, { label: 'ERA Sköld Phantöm', href: '/equipo-de-respiracion-autonoma/skold-phantom/' }, { label: 'Bota Romak Workman Fire', href: '/botas/romak-workman-fire/' }] },
       { title: 'También cotizamos', links: [{ label: 'Bullard · Croydon · Veridian · Majestic · Streamlight · ESS · Lakeland · MSA' }] },
     ], feature: { eyebrow: 'Marcas y modelos', title: 'Componentes documentados para tu operación', text: 'Compara modelo, talla y alcance antes de integrar el conjunto.', img: '/images/catalogo/marcas/hero-marcas.avif', alt: 'Marcas de equipo para bombero', cta: { label: 'Equipo Romak Fire y Sköld para bomberos', href: '/marcas/' } }, overview: { label: 'Marcas de equipo para bomberos', href: '/marcas/' },
   },
   {
-    label: 'Guías técnicas', href: '/blog/', match: ['/blog/'], columns: [
+    label: 'Guías técnicas', href: '/blog/', match: ['/blog/', '/estaciones-de-bomberos/'], columns: [
       { title: 'Temas del blog', href: '/blog/', links: BLOG_CATEGORIES.map((categoria) => ({ label: categoria.nombre, href: `/blog/categoria/${categoria.slug}/` })) },
       { title: 'Guías de trajes', links: [{ label: 'Cómo elegir traje para bomberos', href: '/blog/como-elegir-traje-para-bomberos/' }, { label: 'Cuánto cuesta un traje de bombero', href: '/blog/cuanto-cuesta-un-traje-de-bombero/' }, { label: 'Traje estructural o brigadista', href: '/blog/traje-estructural-o-brigadista/' }, { label: 'NFPA 1970: cambios para trajes de bombero', href: '/blog/nfpa-1970-que-cambio/' }, { label: 'TPP y THL del traje estructural', href: '/blog/tpp-y-thl-traje-estructural/' }, { label: 'Vida útil del traje de bombero', href: '/blog/vida-util-traje-bombero-nfpa-1850/' }] },
-      { title: 'Guías de equipo y compra', links: [{ label: 'Cómo elegir casco de bombero', href: '/blog/como-elegir-casco-de-bombero/' }, { label: 'Cómo elegir botas de bombero', href: '/blog/como-elegir-botas-de-bombero/' }, { label: 'Cómo elegir equipo de respiración autónoma', href: '/blog/como-elegir-equipo-de-respiracion-autonoma/' }, { label: 'NOM-002-STPS-2010 para brigadas', href: '/blog/nom-002-stps-2010-equipo-para-brigadas/' }, { label: 'Licitación de trajes de bomberos', href: '/blog/licitacion-trajes-bomberos-expediente/' }, { label: 'Nomex IIIA en trajes de bombero', href: '/blog/nomex-iiia-que-es/' }] },
+      { title: 'Guías de equipo y compra', links: [{ label: 'Cómo elegir casco de bombero', href: '/blog/como-elegir-casco-de-bombero/' }, { label: 'Cómo elegir botas de bombero', href: '/blog/como-elegir-botas-de-bombero/' }, { label: 'Cómo elegir equipo de respiración autónoma', href: '/blog/como-elegir-equipo-de-respiracion-autonoma/' }, { label: 'NOM-002-STPS-2010 para brigadas', href: '/blog/nom-002-stps-2010-equipo-para-brigadas/' }, { label: 'Licitación de trajes de bomberos', href: '/blog/licitacion-trajes-bomberos-expediente/' }, { label: 'Nomex IIIA en trajes de bombero', href: '/blog/nomex-iiia-que-es/' }, { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' }] },
     ], feature: { eyebrow: 'Compra informada', title: 'Preguntas frecuentes sobre trajes de bombero', text: 'Resuelve dudas sobre familia, piezas, tallas y documentación antes de cotizar.', cta: { label: 'Preguntas frecuentes sobre trajes de bombero', href: '/#faq' } }, overview: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' },
   },
 ];
 
 // SectionMenu conserva este formato compacto por compatibilidad.
 export const NAV = MENU.map(({ label, href }) => ({ label, href }));
-
-const seccionPublicada = (slug: string) => SECCIONES.some((seccion) => seccion.slug === slug);
 
 // Complementos del conjunto. NO son línea de negocio: se cotizan
 // junto al traje para cerrar el equipamiento del elemento.
@@ -468,53 +465,76 @@ export const MARCAS_MATERIAL: Marca[] = [
   { nombre: 'TenCate · Safety Components', origen: 'Exterior', nota: 'Tejedores de tela exterior certificada' },
 ];
 
-// Footer compacto: cuatro columnas de máximo 6 enlaces. Las 36
-// fichas L4 NO van aquí — se llega a ellas desde /trajes/<familia>/
-// y desde el submenú del header. Un footer con 40 enlaces no
-// orienta a nadie y diluye el reparto de autoridad interna.
-export const FOOTER_COLUMNS = [
-  {
-    title: 'Familias de traje',
-    links: [
-      ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
-    ],
-  },
-  {
-    title: 'Catálogo de equipo',
-    links: [
-      ...([
-        ['cascos', 'Cascos para bombero'], ['equipo-de-respiracion-autonoma', 'Equipo de respiración (ERA)'], ['botas', 'Botas para bombero'],
-        ['guantes', 'Guantes para bombero'], ['capuchas', 'Monjas y capuchas'], ['kits', 'Kits por operación'], ['marcas', 'Marcas que surtimos'],
-      ] as [string, string][]).filter(([slug]) => seccionPublicada(slug)).map(([slug, label]) => ({ label, href: `/${slug}/` })),
-      { label: 'Modelos de traje', href: '/trajes/#modelos' },
-    ],
-  },
-  {
-    title: 'Guía técnica',
-    links: [
-      { label: 'Anatomía del traje', href: '/#anatomia' },
-      { label: 'Cómo especificar', href: '/#especificar' },
-      { label: 'Errores de compra', href: '/#errores' },
-      { label: 'Normas aplicables', href: '/#normas' },
-      { label: 'Vida útil y servicio', href: '/#vida-util' },
-      { label: 'Marcas de referencia', href: '/#marcas' },
-    ],
-  },
-  {
-    title: 'Blog técnico',
-    links: [
-      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
-      { label: 'Ver todos los artículos', href: '/blog/' },
-    ],
-  },
-  {
-    title: 'Quién compra',
-    links: [
-      { label: 'Brigada industrial', href: '/#segmentos' },
-      { label: 'Gobierno y licitación', href: '/#segmentos' },
-      { label: 'Cuerpos voluntarios', href: '/#segmentos' },
-      { label: 'Comparar familias', href: '/trajes/' },
-      { label: 'Preguntas frecuentes', href: '/#faq' },
-    ],
-  },
-] as const;
+export interface FooterLink {
+  label: string;
+  href?: string;
+}
+
+export interface FooterColumn {
+  title: string;
+  links: FooterLink[];
+}
+
+// Footer: su piso de catálogo deriva de MENU para mantener la navegación
+// principal y secundaria alineadas. El segundo piso concentra soporte.
+export const FOOTER = {
+  catalogo: [
+    {
+      title: 'Trajes para bomberos',
+      links: [...MENU[0].columns[0].links, { label: 'Trajes para bomberos por familia', href: '/trajes/' }],
+    },
+    {
+      title: 'Piezas del traje',
+      links: MENU[0].columns[1].links,
+    },
+    {
+      title: 'Equipo de protección',
+      links: [...MENU[1].columns.map(({ title, href }) => ({ label: title, href: href! })), { label: 'Kits de equipo completo para bombero', href: '/kits/' }],
+    },
+    {
+      title: 'Rescate y herramientas',
+      links: [...MENU[2].columns.filter(({ title }) => title !== 'Kits para bomberos').map(({ title, href }) => ({ label: title, href: href! })), { label: 'Modelos de trajes de bomberos', href: '/trajes/#modelos' }],
+    },
+    {
+      title: 'Marcas y modelos',
+      links: [
+        ...MENU[3].columns[0].links,
+        { label: 'Marcas de equipo para bomberos', href: '/marcas/' },
+        ...MENU[3].columns[1].links.slice(1),
+      ],
+    },
+    {
+      title: 'Guías técnicas',
+      links: [...BLOG_CATEGORIES.map((categoria) => ({ label: categoria.nombre, href: `/blog/categoria/${categoria.slug}/` })), { label: 'Blog técnico de trajes para bomberos', href: '/blog/' }],
+    },
+  ] satisfies FooterColumn[],
+  soporte: [
+    {
+      title: 'Guías más consultadas',
+      links: MENU[4].columns[1].links.filter(({ href }) => href !== '/blog/tpp-y-thl-traje-estructural/'),
+    },
+    {
+      title: 'Compra y licitación',
+      links: [
+        ...MENU[4].columns[2].links.filter(({ href }) => ['/blog/licitacion-trajes-bomberos-expediente/', '/blog/nom-002-stps-2010-equipo-para-brigadas/'].includes(href ?? '')),
+        { label: 'TPP y THL del traje estructural', href: '/blog/tpp-y-thl-traje-estructural/' },
+        { label: 'Preguntas frecuentes sobre trajes de bombero', href: '/#faq' },
+        { label: 'Solicitar cotización de trajes', href: '/#cotizar' },
+      ],
+    },
+    {
+      title: 'TrajesBombero México',
+      links: [
+        { label: 'Proveedor de trajes para bomberos', href: '/empresa/' },
+        { label: 'Contacto para cotizar trajes', href: '/contacto/' },
+        { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' },
+        { label: 'Aviso de privacidad', href: '/aviso-de-privacidad/' },
+        { label: 'Términos y condiciones', href: '/terminos-y-condiciones/' },
+      ],
+    },
+  ] satisfies FooterColumn[],
+  legales: [
+    { label: 'Aviso de privacidad', href: '/aviso-de-privacidad/' },
+    { label: 'Términos y condiciones', href: '/terminos-y-condiciones/' },
+  ] satisfies FooterLink[],
+} as const;

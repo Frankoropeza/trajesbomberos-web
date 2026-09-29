@@ -16,7 +16,7 @@ const opciones = [
     <div class="conjunto__grid">
       {opciones.map((opcion) => (
         <a href={`/${opcion.slug}/`} class="conjunto__card">
-          <strong>{opcion.nombre}</strong><span>{opcion.desc}</span><b>Ver catálogo →</b>
+          <strong>{opcion.nombre}</strong><span>{opcion.desc}</span><b>Cotizar {opcion.nombre.toLowerCase()} →</b>
         </a>
       ))}
     </div>

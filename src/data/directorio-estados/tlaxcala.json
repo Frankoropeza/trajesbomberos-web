@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio registra 1 estación de bomberos en Tlaxcala, ubicada en 1 municipio. La ficha concentra ubicación, corporación, tipo de sede y fuente disponible para consultar bomberos en Tlaxcala con una referencia puntual.",
+ "descRight": [
+  "La referencia publicada en Tlaxcala corresponde a 1 estación estatal en Apetatitlán de Antonio Carvajal. Se clasifica como sede única, sin centrales ni subestaciones registradas. Por tratarse de una cobertura limitada, el directorio no la presenta como un inventario completo del servicio estatal.",
+  "Consulta la ficha y el mapa para revisar su ubicación; el teléfono y la dirección se muestran porque cuentan con fuente. Para una emergencia se marca 911. El contacto de la estación puede destinarse a trámites, visitas, capacitación o donaciones y no debe sustituir la llamada de auxilio."
+ ],
+ "municipiosDuo": [
+  "Apetatitlán de Antonio Carvajal concentra la única estación registrada del directorio en Tlaxcala. La ficha identifica al Heroico Cuerpo de Bomberos de Tlaxcala y sirve como punto de consulta para esa localidad, sin extrapolar esa referencia a otros municipios del estado.",
+  "No hay otras estaciones publicadas en esta versión del directorio. La cobertura registrada es de 1 municipio y crecerá cuando se confirmen nuevas fichas mediante fuente pública. Si buscas bomberos en Tlaxcala para una gestión, revisa la precisión de ubicación antes de desplazarte."
+ ],
+ "estacionesDuo": [
+  "La única ficha se clasifica como corporación estatal y sede única. Corresponde al Heroico Cuerpo de Bomberos de Tlaxcala, en Apetatitlán de Antonio Carvajal. El tipo y el rol ayudan a leer el alcance del registro sin atribuirle funciones que no están declaradas.",
+  "La ficha indica dirección, teléfono con fuente y ubicación exacta. Esos campos son útiles para una visita, capacitación, trámite o donación planificados. Para solicitar auxilio de bomberos en Tlaxcala, no uses la ficha como sustituto del número de emergencia nacional."
+ ],
+ "coberturaDuo": [
+  "La estación registrada declara incendios estructurales, incendios forestales, rescate vehicular, rescate en altura, materiales peligrosos y atención prehospitalaria: 1 referencia en cada servicio. Esa amplitud describe los servicios consignados en su ficha, no una disponibilidad para cada evento.",
+  "La única ficha de Tlaxcala tiene teléfono con fuente, dirección y ubicación exacta: 1 en cada campo. Estas cifras aclaran la información disponible para consulta y hacen visible que el directorio todavía tiene una cobertura limitada dentro del estado."
+ ],
+ "equipoDuo": [
+  "Los servicios declarados combinan incendios estructurales y forestales, rescate vehicular, altura y materiales peligrosos. Por ello conviene evaluar <a href=\"/trajes/estructural/\">trajes estructurales</a>, <a href=\"/trajes/forestal/\">protección forestal</a> y <a href=\"/trajes/hazmat/\">trajes Hazmat</a> según el riesgo específico y el procedimiento de uso.",
+  "Para bomberos en Tlaxcala cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La selección de equipo puede considerar rescate vehicular o altura, además de la protección contra incendio, siempre a partir de las necesidades operativas declaradas."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Tlaxcala?",
+   "a": "El directorio registra 1 estación de bomberos en Tlaxcala, localizada en 1 municipio. Es una ficha respaldada por información pública; la cifra puede aumentar al confirmar nuevas estaciones con fuente. No se presenta como un conteo completo de todos los servicios de bomberos del estado."
+  },
+  {
+   "q": "¿Qué municipio tiene estaciones de bomberos en Tlaxcala?",
+   "a": "Apetatitlán de Antonio Carvajal es el municipio con 1 estación registrada en Tlaxcala. Para consultar bomberos en Tlaxcala de forma planeada, revisa la ficha del Heroico Cuerpo de Bomberos de Tlaxcala, con su ubicación y datos disponibles, sin asumir cobertura en municipios no listados."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Tlaxcala?",
+   "a": "La ficha publicada en Tlaxcala corresponde a 1 corporación estatal: el Heroico Cuerpo de Bomberos de Tlaxcala. Está identificada como sede única. Esta clasificación procede del registro disponible y no permite inferir una estructura de centrales o subestaciones fuera de la ficha publicada."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Tlaxcala?",
+   "a": "En una emergencia en Tlaxcala marca 911. El teléfono incluido en la ficha tiene un uso distinto: trámites, visitas, capacitación o donaciones cuando corresponda. No debe emplearse en vez del número nacional para pedir auxilio, incluso si se conoce la ubicación de la estación registrada."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Tlaxcala?",
+   "a": "Para bomberos en Tlaxcala cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Comparte el riesgo que se busca atender, como incendio, rescate o materiales peligrosos, para revisar opciones de protección adecuadas a ese servicio."
+  }
+ ]
+}

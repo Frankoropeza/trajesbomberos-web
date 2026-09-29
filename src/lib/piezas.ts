@@ -928,7 +928,7 @@ export const PIEZAS: Pieza[] = [
                 "href": "/trajes/estructural/chaqueton/"
           },
           {
-                "label": "Ver las seis familias de traje",
+                "label": "Familias de trajes para bomberos",
                 "href": "/trajes/"
           }
     ],
@@ -1445,7 +1445,7 @@ export const PIEZAS: Pieza[] = [
                 "href": "/trajes/estructural/pantalonera/"
           },
           {
-                "label": "Normas aplicables: por qué son dos certificados",
+                "label": "Normas para trajes de bombero: por qué son dos certificados",
                 "href": "/#normas"
           },
           {
@@ -1732,7 +1732,7 @@ export const PIEZAS: Pieza[] = [
                 "href": "/#vida-util"
           },
           {
-                "label": "Ver las seis familias de traje",
+                "label": "Familias de trajes para bomberos",
                 "href": "/trajes/"
           }
     ],
@@ -2027,7 +2027,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/estructural/"
       },
       {
-        "label": "Normas aplicables: qué obliga realmente la ley en México",
+        "label": "Normas para trajes de bombero: qué obliga realmente la ley en México",
         "href": "/#normas"
       },
       {
@@ -2314,7 +2314,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/estructural/"
       },
       {
-        "label": "Normas aplicables en México",
+        "label": "Normas para trajes de bombero en México",
         "href": "/#normas"
       }
     ]
@@ -3642,7 +3642,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/forestal/chamarra/"
       },
       {
-        "label": "Normas aplicables: qué exige realmente la ley en México",
+        "label": "Normas para trajes de bombero: qué exige realmente la ley en México",
         "href": "/#normas"
       }
     ]
@@ -5019,7 +5019,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/forestal/camisola/"
       },
       {
-        "label": "Normas aplicables en México",
+        "label": "Normas para trajes de bombero en México",
         "href": "/#normas"
       }
     ]
@@ -6690,7 +6690,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/aproximacion/guantes/"
       },
       {
-        "label": "Normas aplicables en México",
+        "label": "Normas para trajes de bombero en México",
         "href": "/#normas"
       }
     ]
@@ -6974,7 +6974,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/aproximacion/"
       },
       {
-        "label": "Normas aplicables en México",
+        "label": "Normas para trajes de bombero en México",
         "href": "/#normas"
       }
     ]
@@ -8092,7 +8092,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/aproximacion/"
       },
       {
-        "label": "Normas aplicables en México",
+        "label": "Normas para trajes de bombero en México",
         "href": "/#normas"
       }
     ]
@@ -9763,7 +9763,7 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/forestal/conjunto-dual/"
       },
       {
-        "label": "Normas aplicables en México",
+        "label": "Normas para trajes de bombero en México",
         "href": "/#normas"
       }
     ]

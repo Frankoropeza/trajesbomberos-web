@@ -12,7 +12,7 @@ import { SPOTLIGHTS } from '@lib/spotlights';
 ---
 <section class="section spotlights" id="categorias-destacadas">
   <div class="container">
-    {SPOTLIGHTS.map((s, i) => <CategorySpotlight {...s} flip={i % 2 === 1} />)}
+    {SPOTLIGHTS.map((s) => <CategorySpotlight {...s} />)}
   </div>
 </section>
 

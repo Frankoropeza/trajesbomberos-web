@@ -22,10 +22,10 @@ const destacado = posts.find((p) => p.data.destacado) ?? posts[0];
 const resto = posts.filter((p) => p.id !== destacado?.id);
 
 const menuItems = [
-  { label: 'Empieza por aquí', href: '#destacado' },
+  { label: 'Guía destacada de trajes para bomberos', href: '#destacado' },
   { label: 'Últimos artículos', href: '#articulos' },
   ...BLOG_CATEGORIES.slice(0, 2).map((c) => ({ label: c.nombre, href: categoriaUrl(c.slug) })),
-  { label: 'Todas las familias', href: '/trajes/' },
+  { label: 'Familias de trajes para bomberos', href: '/trajes/' },
 ];
 
 const keywords = ['blog de trajes para bomberos', 'guías técnicas', 'México'] as const;
@@ -112,7 +112,7 @@ const directoryItems = posts.map((p) => ({
               <h3>Pregúntanos directo</h3>
               <p>Si tu duda no está publicada, escríbenos. La contestamos con la ficha técnica en la mano y, si le sirve a más gente, se vuelve el siguiente artículo.</p>
               <span class="ask-tile__cta">
-                Escribir por WhatsApp
+                Preguntar por trajes en WhatsApp
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </span>
             </a>

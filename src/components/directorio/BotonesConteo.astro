@@ -1,0 +1,74 @@
+---
+// BotonesConteo: rejilla de botones con conteo (índice de municipios y
+// estados vecinos). Misma pieza visual que QuickNav del index: botón
+// blanco con borde, hover rojo; conteo a la derecha.
+export interface BotonConteo { label: string; href: string; n: number; title?: string }
+interface Props { items: BotonConteo[]; label: string; cols?: 4 | 6 }
+const { items, label, cols = 6 } = Astro.props as Props;
+---
+<ul class:list={['bc', `bc--${cols}`]} aria-label={label}>
+  {items.map((b) => (
+    <li>
+      <a class="bc__btn" href={b.href} title={b.title}>
+        <span class="bc__name">{b.label}</span>
+        <span class="bc__n" aria-label={`${b.n} ${b.n === 1 ? 'estación' : 'estaciones'}`}>{b.n}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .bc {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0.6rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .bc--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .bc li { display: flex; }
+  .bc__btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    min-height: 52px;
+    padding: 0.5rem 0.7rem 0.5rem 0.85rem;
+    background: var(--color-white);
+    color: var(--color-dark);
+    border: 1px solid rgb(20 22 26 / 0.18);
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background 0.15s linear, color 0.15s linear, border-color 0.15s linear;
+  }
+  .bc__name { min-width: 0; }
+  .bc__n {
+    flex: none;
+    min-width: 1.9rem;
+    padding: 0.12rem 0.35rem;
+    background: var(--color-light);
+    border-radius: var(--radius);
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .bc__btn:hover { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-white); }
+  .bc__btn:hover .bc__n { background: rgb(255 255 255 / 0.18); color: var(--color-white); }
+  .bc__btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  @media (max-width: 1279px) { .bc { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (max-width: 1024px) { .bc, .bc--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 768px) { .bc, .bc--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) {
+    .bc { gap: 0.5rem; }
+    .bc__btn { min-height: 48px; font-size: 0.86rem; }
+  }
+</style>

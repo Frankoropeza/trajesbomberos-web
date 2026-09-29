@@ -78,13 +78,13 @@ const TITULO_FAMILIA: Record<string, string> = {
   hazmat: 'Trajes Hazmat (protección química)',
 };
 const CTA_FAMILIA: Record<string, string> = {
-  estructural: 'Catálogo de trajes estructurales',
-  brigadista: 'Catálogo de trajes de brigadista',
-  forestal: 'Catálogo de trajes forestales',
-  aproximacion: 'Catálogo de trajes aluminizados',
-  entrada: 'Catálogo de trajes de entrada',
-  extricacion: 'Catálogo de trajes de extricación',
-  hazmat: 'Catálogo de trajes Hazmat',
+  estructural: 'Trajes estructurales para bombero',
+  brigadista: 'Trajes de brigadista industrial',
+  forestal: 'Trajes forestales para bombero',
+  aproximacion: 'Trajes aluminizados de aproximación',
+  entrada: 'Trajes de entrada a la flama',
+  extricacion: 'Trajes de extricación y rescate',
+  hazmat: 'Trajes Hazmat nivel A, B y C',
 };
 // [etiqueta, slug de pieza] — se valida contra PIEZAS: nunca se enlaza una ficha inexistente.
 const SUBS_FAMILIA: Record<string, [string, string][]> = {
