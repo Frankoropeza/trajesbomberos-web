@@ -99,7 +99,41 @@ Tres cosas que conviene dejar amarradas **antes** de emitir la orden, no despué
 
 Y una recomendación que ahorra más dinero que cualquier negociación de precio: usa un [traje de extricación](/trajes/extricacion/) para el rescate vehicular. La mayoría de las salidas de un cuerpo de bomberos no son incendios, y cada extricación hecha con el estructural le resta vida útil al equipo más caro que tienes. Te lo explicamos en la guía del [traje de extricación para rescate vehicular](/blog/traje-de-extricacion-rescate-vehicular/).
 
+## Frecuencias de cuidado, inspección y retiro en una tabla
+
+Para el calendario de la estación sirve tener las cifras juntas. La NFPA 1851 edición 2020 —antecesora directa de la NFPA 1850— endureció varias de ellas, y son las que conviene seguir mientras adoptas la edición consolidada:
+
+| Tarea | Frecuencia o límite | Referencia |
+| --- | --- | --- |
+| Reducción preliminar de exposición en la escena | Después de cada exposición a productos de combustión | NFPA 1851 (2020), término que sustituyó a «limpieza de rutina» |
+| Limpieza avanzada | Al menos dos veces al año, una de ellas junto con la inspección avanzada | NFPA 1851 (2020) |
+| Inspección avanzada | Al menos cada 12 meses, o cuando la inspección de rutina detecte posible daño | NFPA 1851 (2020) |
+| Retiro del conjunto estructural | A los diez años de la fecha de fabricación | NFPA 1851 / NFPA 1850 |
+| Retiro de la capa exterior reflejante de aproximación | A los cinco años | NFPA 1851 (2020) |
+| Lavado en lavadora de carga superior | No permitido; se usa extractora de carga frontal | NFPA 1851 (2020) |
+| Almacenamiento | Lejos de luz ultravioleta: sol directo o indirecto y lámparas fluorescentes | NFPA 1851 (2020), capítulo 9 |
+
+La lectura práctica: si hoy tu estación lava una vez al año, ya está por debajo de la referencia. Y si el traje de [aproximación](/trajes/aproximacion/) tiene más de cinco años, revisa la capa aluminizada antes que cualquier otra pieza.
+
+## Cómo lo resuelve LORICA
+
+En cada cotización de LORICA la fecha de fabricación va por escrito, junto con el proceso de limpieza que indica el fabricante y la ficha técnica del modelo. Cuando un cuerpo de bomberos nos manda su inventario con fechas, le devolvemos el calendario de reposición por pieza: qué conjuntos cumplen diez años en el ejercicio, cuáles conviene inspeccionar primero y qué partidas se pueden comprar sueltas —[chaquetón](/trajes/estructural/chaqueton/) o [pantalonera](/trajes/estructural/pantalonera/)— sin reponer el conjunto completo.
+
+## Preguntas frecuentes
+
+**¿Cuántos años dura un traje de bombero?** El conjunto estructural se retira a los diez años contados desde la fecha de fabricación, no desde la entrega. Es un límite máximo: daño, contaminación que no sale o una exposición severa pueden obligar a retirarlo antes.
+
+**¿Cada cuánto se lava un traje de bombero?** Después de cada exposición se hace la reducción preliminar en la escena, y la limpieza avanzada al menos dos veces al año según la NFPA 1851 edición 2020, una de ellas junto con la inspección avanzada anual.
+
+**¿Qué es la inspección avanzada?** Es la revisión anual que hace personal capacitado o un proveedor de servicio: barreras, costuras, cinta reflejante, herrajes, DRD e interfaz entre chaquetón y pantalonera. También se hace cuando la inspección de rutina detecta posible daño.
+
+**¿Se puede reparar un traje de bombero?** Sí, pero solo por el fabricante o un taller autorizado. Un parche cosido sin acreditación puede perforar la barrera de humedad y dejar el conjunto fuera de su certificación.
+
+**¿Qué registro hay que llevar del equipo?** Uno por pieza, no por persona: número, fecha de fabricación, puesta en servicio, limpiezas, inspecciones y reparaciones. Sirve para presupuestar la reposición y para demostrar la condición del equipo si hay un incidente.
+
 ## Fuentes
 
 - [UL Solutions — NFPA 1850 Spotlight Series](https://www.ul.com/resources/nfpa-1850-spotlight-series)
 - [Fire Apparatus Magazine — NFPA Combines PPE and SCBA Care and Maintenance Standards](https://www.fireapparatusmagazine.com/firefighter-ppe/scba/nfpa-combines-ppe-and-scba-care-and-maintenance-standards/)
+- [NFPA 1850, selección, cuidado y mantenimiento del equipo de protección (NFPA)](https://www.nfpa.org/codes-and-standards/nfpa-1850-standard-development/1850)
+- [MSA Safety — Changes to the 2020 revision of NFPA 1851](https://blog.msafire.com/changes-to-2020-revision-nfpa-1851/): limpieza avanzada dos veces al año, inspección avanzada anual, retiro a cinco años de capas reflejantes y prohibición de lavadoras de carga superior.
