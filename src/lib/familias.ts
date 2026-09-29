@@ -50,7 +50,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     brands: ['Chaquetón de bombero', 'Pantalonera', 'Tres capas', 'Barrera térmica', 'DRD', 'Ataque interior'],
     images: [
-      { src: '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif', alt: 'Traje estructural para bombero con chaquetón y pantalón de tres capas' },
+      { src: '/images/productos/traje-estructural-bombero-conjunto-frente.avif', alt: 'Traje estructural para bombero con chaquetón y pantalón de tres capas' },
       { src: '/images/productos/chaqueton-estructural-bombero.avif', alt: 'Chaquetón estructural para bombero con DRD integrado' },
       { src: '/images/productos/pantalonera-estructural-bombero.avif', alt: 'Pantalonera estructural para bombero con tirantes' },
     ],
@@ -68,7 +68,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaquetón estructural de tres capas",
-                "img": "/images/piezas/chaqueton-estructural-de-tres-capas.avif",
+                "img": "/images/piezas/chaqueton-estructural-bombero-frente.avif",
                 "alt": "Chaquetón estructural de tres capas para bombero",
                 "desc": "Prenda superior del conjunto: capa exterior ignífuga, barrera de humedad y barrera térmica, con DRD integrado para arrastre de rescate. Se cotiza independiente del pantalón.",
                 "chips": [
@@ -80,7 +80,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Pantalonera estructural",
-                "img": "/images/piezas/pantalonera-estructural.avif",
+                "img": "/images/piezas/pantalonera-estructural-tirantes-acolchados.avif",
                 "alt": "Pantalonera estructural para bombero",
                 "desc": "Pantalón de combate de tres capas con rodillas articuladas y refuerzos. Se especifica por cintura y entrepierna, y por tipo de ajuste.",
                 "chips": [
@@ -116,7 +116,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Arnés interno de escape",
-                "img": "/images/piezas/arnes-interno-de-escape.avif",
+                "img": "/images/piezas/arnes-interno-de-escape-pantalonera.avif",
                 "alt": "Arnés interno de escape para bombero",
                 "desc": "Arnés clase escape cosido dentro del pantalón, con perneras flotantes y hebilla de perfil bajo. Se certifica bajo NFPA 2500 (antes NFPA 1983), aparte del conjunto.",
                 "chips": [
@@ -128,7 +128,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Capucha antipartículas (monja)",
-                "img": "/images/piezas/capucha-antiparticulas-monja.avif",
+                "img": "/images/piezas/capucha-antiparticulas-bombero.avif",
                 "alt": "Capucha antipartículas (monja) para bombero",
                 "desc": "Cubre cabeza, cuello y orejas con barrera de partículas y sella la interfaz entre casco, chaquetón y máscara del equipo de respiración.",
                 "chips": [
@@ -155,7 +155,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     brands: ['Brigada contra incendio', 'Conato', 'Combo brigadista', 'NOM-002-STPS', 'Primera respuesta'],
     images: [
-      { src: '/images/productos/traje-brigadista-industrial-bombero.avif', alt: 'Traje de brigadista industrial para conato de incendio' },
+      { src: '/images/productos/traje-brigadista-industrial-conjunto.avif', alt: 'Traje de brigadista industrial para conato de incendio' },
       { src: '/images/productos/combo-brigadista-industrial.avif', alt: 'Combo completo de brigadista industrial contra incendio' },
       { src: '/images/productos/casco-brigadista-industrial.avif', alt: 'Casco para brigadista industrial' },
     ],
@@ -173,7 +173,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Conjunto de brigada contra fuego incipiente",
-                "img": "/images/piezas/conjunto-de-brigada-contra-fuego-incipiente.avif",
+                "img": "/images/productos/traje-brigadista-industrial-conjunto.avif",
                 "alt": "Conjunto de brigada contra fuego incipiente para bombero",
                 "desc": "Chaquetón y pantalón para brigada industrial en atención de conato, con capa externa inherentemente ignífuga y forro desmontable de barrera de humedad más barrera térmica.",
                 "chips": [
@@ -278,7 +278,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Camisola forestal",
-                "img": "/images/piezas/camisola-forestal.avif",
+                "img": "/images/piezas/camisola-forestal-amarilla.avif",
                 "alt": "Camisola forestal para bombero",
                 "desc": "Camisola de manga larga en tela inherentemente ignífuga y construcción ventilada. Es la prenda preferida por cuadrillas de línea sobre la chamarra.",
                 "chips": [
@@ -592,7 +592,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     productos: [
           {
                 "nombre": "Chaqueta de rescate técnico",
-                "img": "/images/piezas/chaqueta-de-rescate-tecnico.avif",
+                "img": "/images/piezas/chaqueta-de-rescate-tecnico-roja.avif",
                 "alt": "Chaqueta de rescate técnico para bombero",
                 "desc": "Chaqueta monocapa ligera para extricación, accidentes viales, rescate y mando de incidente. Más protección que el uniforme de estación, mucho menos carga térmica que el chaquetón.",
                 "chips": [
@@ -628,7 +628,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
           },
           {
                 "nombre": "Overol de rescate técnico",
-                "img": "/images/piezas/overol-de-rescate-tecnico.avif",
+                "img": "/images/piezas/overol-de-rescate-tecnico-rojo.avif",
                 "alt": "Overol de rescate técnico para bombero",
                 "desc": "Overol de una pieza para vestido rápido y cobertura continua, alternativa al conjunto de dos piezas.",
                 "chips": [

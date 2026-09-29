@@ -103,8 +103,8 @@ const SUBS_FAMILIA: Record<string, [string, string][]> = {
   hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes para químicos', 'guantes-quimicos']],
 };
 const RETRATO = new Set([
-  '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif',
-  '/images/productos/traje-brigadista-industrial-bombero.avif',
+  '/images/productos/traje-estructural-bombero-conjunto-frente.avif',
+  '/images/productos/traje-brigadista-industrial-conjunto.avif',
   '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif',
 ]);
 const RUTAS_PIEZA = new Set(PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`));
