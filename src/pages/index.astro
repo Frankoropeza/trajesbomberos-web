@@ -1,13 +1,9 @@
 ---
 // L1 · Home — portada comercial con exploración por categorías.
-// Orden (rediseño 2026-09-28): hero con CTA → botones de sección → trajes
-// (6 cards) → complementos del conjunto (6 cards) → cómo elegir
-// (guía + anatomía + ficha + errores) → quién compra → normas →
-// vida útil → marcas → empresa → proceso → FAQ → blog → CTA final.
-// Las cards de complementos detectan en build si la sección del
-// catálogo existe (getSeccion): enlazan al hub, a la ficha real de
-// respaldo o quedan «en preparación» con CTA de WhatsApp. Nunca se
-// genera un href a una página que no existe.
+// Orden (2026-09-29): hero → botones de sección → categorías → trajes →
+// modelos → FAQ → blog → CTA final. Se retiraron por decisión de Frank
+// las secciones de complementos, guía, anatomía, especificar, errores,
+// segmentos, normas, vida útil, marcas, empresa y proceso.
 //
 // Reglas duras aplicadas (estudio de mercado jul-2026):
 //  · Normas VIGENTES: NFPA 1970 (absorbió 1971), NFPA 1950
@@ -19,26 +15,14 @@
 //  · Sin precios (decisión de negocio). Sin reseñas fabricadas.
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
-import PhotoBand from '@components/PhotoBand.astro';
 import QuickNav from '@components/home/QuickNav.astro';
 import CategoryTiles from '@components/home/CategoryTiles.astro';
 import SectionHeading from '@components/SectionHeading.astro';
-import SegmentCards from '@components/SegmentCards.astro';
-import SuitAnatomy from '@components/SuitAnatomy.astro';
-import SpecChecklist from '@components/SpecChecklist.astro';
-import MistakeList from '@components/MistakeList.astro';
-import BrandGrid from '@components/BrandGrid.astro';
-import { PRESET_GENERAL, PRESET_LICITACION } from '@lib/cta-presets';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard, { type TileProps, type TileSub } from '@components/home/TileCard.astro';
 import QuoteCTA from '@components/home/QuoteCTA.astro';
 import ModelosGrid from '@components/ModelosGrid.astro';
-import RiskGuide from '@components/RiskGuide.astro';
-import NormsTable from '@components/NormsTable.astro';
-import ProcessSteps from '@components/ProcessSteps.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import FactList from '@components/FactList.astro';
-import CTABanner from '@components/CTABanner.astro';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
 import { PIEZAS } from '@lib/piezas';
@@ -47,8 +31,6 @@ import { MODELOS, SECCIONES, TIPOS } from '@lib/catalogo/data';
 import {
   SITE,
   PRODUCT_CATEGORIES,
-  MARCAS_TRAJE,
-  MARCAS_MATERIAL,
 } from '@config/site';
 
 const hero = {
@@ -63,41 +45,11 @@ const hero = {
   ],
 };
 
-const hechos = [
-  { label: 'Especialidad', value: '7 familias de traje' },
-  { label: 'Cobertura', value: 'Los 32 estados' },
-  { label: 'Comprobante', value: 'Factura CFDI 4.0' },
-  { label: 'Compra mínima', value: 'Sin mínimo: por pieza o conjunto' },
-];
-
-// Un módulo por familia: amplía cada card del catálogo con el
-// detalle técnico que el comprador necesita antes de cotizar.
-// flip alterna para dar ritmo cuando hay varios seguidos.
-const guiaColumns: string[] = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
-const guiaRows: string[][] = [
-  ['Estructural', 'Incendio en edificaciones, ataque interior', 'Tres capas: exterior + barrera de humedad + barrera térmica', 'Casco, monja, botas, guantes, ERA'],
-  ['Brigadista', 'Fuego incipiente en industria, primera respuesta', 'Menor gramaje y alcance de protección que el estructural', 'Casco, guantes, botas, escafandra'],
-  ['Forestal', 'Incendio de vegetación, jornadas largas en campo', 'Una sola capa de tela ignífuga inherente, ligera y transpirable', 'Casco forestal, goggles, guantes, botas sin puntera'],
-  ['Aproximación', 'Trabajo cerca de calor radiante: ARFF, refinería, colada', 'Exterior aluminizado, uso prolongado, movilidad conservada', 'Capucha aluminizada, guantes, botas'],
-  ['Entrada', 'Ingreso breve a la flama: horno, incidente térmico severo', 'Aluminizado multicapa, pesado, uso corto de emergencia', 'Conjunto completo con ERA'],
-  ['Extricación', 'Rescate vehicular y técnico', 'Ligero, resistente a corte y punción, barrera contra patógenos', 'Guante de extricación, casco, goggles'],
-];
-const guiaNote =
-  'Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar.';
-
 // ------------------------------------------------------------
 // Cards de categoría. TR = trajes (PRODUCT_CATEGORIES, SSoT);
 // EQ = complementos. La "operación" de cada familia sale de la
 // guía de selección (guiaRows) para no duplicar datos.
 // ------------------------------------------------------------
-const OPERACION_POR_FAMILIA: Record<string, string> = {
-  estructural: guiaRows[0][1],
-  brigadista: guiaRows[1][1],
-  forestal: guiaRows[2][1],
-  aproximacion: guiaRows[3][1],
-  entrada: guiaRows[4][1],
-  extricacion: guiaRows[5][1],
-};
 const TITULO_CARD: Record<string, string> = {
   aproximacion: 'Trajes de aproximación (aluminizados)',
   extricacion: 'Trajes de extricación y rescate',
@@ -110,7 +62,6 @@ const DIMENSIONES: Record<string, { width: number; height: number }> = {
   '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif': { width: 1000, height: 1250 },
   '/images/escenas/bomberos-ataque-incendio-manguera.avif': { width: 1376, height: 768 },
 };
-const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
 
 // Cards homologadas (TileCard): imagen → título → texto → 4 subcategorías
 // → botón principal con palabra clave. Las subcategorías de familia salen
@@ -190,130 +141,14 @@ const cardConjunto: TileProps = {
 
 const trajes: TileProps[] = [...trajesFamilias, ...cardHazmat, cardConjunto];
 
-// Complementos del conjunto (EQ). Orden por demanda medida en Ahrefs MX
-// (2026-09-28): casco ≈800, ERA ≈950 (con variantes), botas ≈240,
-// guantes ≈120, monja ≈70, tirantes/cinturón ≈0.
-const complementos: TileProps[] = [
-  {
-    titulo: 'Cascos para bombero', href: '/cascos/', cta: 'Cascos para bombero certificados',
-    desc: 'Casco estructural tradicional o europeo para ataque interior, forestal para línea de fuego y compacto para rescate técnico.',
-    img: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero: estructural, forestal y de rescate',
-    subs: [
-      { label: 'Casco Bullard LTX', href: '/cascos/bullard-ltx/' },
-      { label: 'Casco Bullard UST LW', href: '/cascos/bullard-ust-lw/' },
-      { label: 'Casco Sköld Viking', href: '/cascos/skold-viking/' },
-      { label: 'Casco forestal Bullard FH911H', href: '/cascos/bullard-fh911h/' },
-    ],
-  },
-  {
-    titulo: 'Equipo de respiración autónoma (ERA)', href: '/equipo-de-respiracion-autonoma/', cta: 'Equipos ERA para bombero',
-    desc: 'Protección respiratoria para ataque interior y rescate en humo, con revisión de compatibilidad con casco y monja.',
-    img: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro',
-    subs: [
-      { label: 'ERA Sköld Phantöm 60 min', href: '/equipo-de-respiracion-autonoma/skold-phantom/' },
-      { label: 'ERA MSA G1 Industrial', href: '/equipo-de-respiracion-autonoma/msa-g1-industrial/' },
-      { label: 'Máscaras y reguladores ERA', href: '/equipo-de-respiracion-autonoma/mascaras-y-reguladores-era/' },
-      { label: 'Cilindros de fibra de carbono', href: '/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/' },
-    ],
-  },
-  {
-    titulo: 'Botas para bombero', href: '/botas/', cta: 'Botas para bombero estructurales',
-    desc: 'Hule o piel para incendio estructural y bota sin puntera para trabajo forestal, elegidas según la familia de traje.',
-    img: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel',
-    subs: [
-      { label: 'Bota Romak Workman Fire', href: '/botas/romak-workman-fire/' },
-      { label: 'Bota Croydon Filtrex', href: '/botas/croydon-filtrex/' },
-      { label: 'Bota Sköld Workman', href: '/botas/skold-workman/' },
-      { label: 'Bota Romak Fire Ranger', href: '/botas/romak-fire-ranger-bota/' },
-    ],
-  },
-  {
-    titulo: 'Guantes para bombero', href: '/guantes/', cta: 'Guantes para bombero certificados',
-    desc: 'Estructural, extricación o forestal: cada operación exige su guante y no se sustituyen entre sí.',
-    img: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales, de extricación y forestales',
-    subs: [
-      { label: 'Guante Romak Firemax VI', href: '/guantes/romak-firemax-vi/' },
-      { label: 'Guante Sköld para bombero', href: '/guantes/skold-fpgs/' },
-      { label: 'Guante Veridian Fire Pro II', href: '/guantes/veridian-fire-pro-ii/' },
-      { label: 'Guante de extricación', href: '/guantes/guante-rescate-extricacion/' },
-    ],
-  },
-  {
-    titulo: 'Monjas y escafandras', href: '/capuchas/', cta: 'Monjas y escafandras para bombero',
-    desc: 'Monja o escafandra tradicional de Nomex o con barrera de partículas, bajo el casco y sobre el cuello del chaquetón.',
-    img: '/images/productos/monja-capucha-barrera-particulas-bombero.avif', alt: 'Monja o escafandra para bombero con barrera de partículas', pos: POS_RETRATO,
-    subs: [
-      { label: 'Capucha Romak over-face', href: '/capuchas/romak-cap1005/' },
-      { label: 'Escafandra Sköld Nomex', href: '/capuchas/skold-fpen/' },
-      { label: 'Capucha Majestic PAC II', href: '/capuchas/majestic-pac-ii/' },
-      { label: 'Monja de brigada', href: '/trajes/brigadista/monja/' },
-    ],
-  },
-  {
-    titulo: 'Tirantes y cinturones', href: '/trajes/estructural/tirantes/', cta: 'Tirantes para pantalonera de bombero',
-    desc: 'Tirantes que reparten el peso de la pantalonera mojada sobre los hombros y arnés interno de escape integrado.',
-    img: '/images/piezas/tirantes-acolchados-tipo-h.avif', alt: 'Tirantes acolchados tipo H para pantalonera de bombero', pos: POS_RETRATO,
-    subs: [
-      { label: 'Tirantes acolchados tipo H', href: '/trajes/estructural/tirantes/' },
-      { label: 'Tirantes de brigada tipo X', href: '/trajes/brigadista/tirantes/' },
-      { label: 'Arnés interno de escape', href: '/trajes/estructural/arnes-escape/' },
-      { label: 'Rodilleras para forro', href: '/trajes/estructural/rodilleras/' },
-    ],
-  },
-].map((c, i) => ({ ...c, codigo: `EQ-${String(i + 1).padStart(2, '0')}`, subs: soloValidas(c.subs) }));
-
-const normasColumns: [string, string, string] = ['Referencia', 'Qué exige realmente', 'Estatus en México'];
-const normasRows: [string, string, string][] = [
-  [
-    'NOM-017-STPS-2024',
-    'Obliga al patrón a analizar riesgos por puesto, proporcionar el EPP sin costo, capacitar y supervisar. No define desempeño del traje.',
-    'Obligatoria. Vigente desde el 28-sep-2025; sustituyó a la NOM-017-STPS-2008.',
-  ],
-  [
-    'NOM-002-STPS-2010',
-    'Cláusula 5.9: dotar de EPP a los integrantes de la brigada contra incendio, conforme a la NOM-017 vigente.',
-    'Obligatoria en centros de trabajo con brigada.',
-  ],
-  [
-    'NFPA 1970 (ed. 2025)',
-    'Desempeño del conjunto estructural y de proximidad. Absorbió a NFPA 1971, 1975, 1981 y 1982.',
-    'Referencia técnica voluntaria. Se vuelve exigible cuando un pliego de licitación la incorpora.',
-  ],
-  [
-    'NFPA 1950 (ed. 2025)',
-    'EPP forestal, rescate técnico y emergencias médicas. Integró a las antiguas NFPA 1951, 1977 y 1999.',
-    'Referencia técnica voluntaria.',
-  ],
-  [
-    'NFPA 1850 (ed. 2026)',
-    'Selección, cuidado y mantenimiento: inspección, lavado y retiro del equipo. Absorbió a NFPA 1851 y 1852.',
-    'Referencia técnica voluntaria; define el ciclo de servicio del traje.',
-  ],
-  [
-    'EN 469:2020',
-    'Equivalente europeo para ropa de extinción, con Nivel 1 y Nivel 2.',
-    'Referencia para equipo de origen europeo.',
-  ],
-];
-const normasNote =
-  'Precisión que conviene tener clara: en México no existe una NOM ni una NMX de producto para trajes de bombero, y la Ley General de Protección Civil no exige certificación NFPA. NFPA es referencia técnica voluntaria que se vuelve contractualmente exigible cuando la incorpora un pliego de licitación. Las licitaciones mexicanas todavía suelen redactar "NFPA 1971 Edición 2018": podemos documentar la correspondencia con NFPA 1970, capítulos 5 a 9.';
-
-const vidaUtilColumns: [string, string, string] = ['Actividad', 'Frecuencia', 'Quién puede hacerlo'];
-const vidaUtilRows: [string, string, string][] = [
-  ['Inspección de rutina', 'Al inicio de turno y después de cada uso', 'El propio bombero'],
-  ['Inspección avanzada', 'Anual (y a los 3 años aunque el traje no se haya estrenado)', 'Fabricante, personal capacitado o proveedor de servicio verificado'],
-  ['Lavado avanzado', 'Dos veces cada 12 meses y tras exposición a productos de combustión', 'Con lavadora extractora; nunca lavadora de carga superior'],
-  ['Retiro de servicio', 'Máximo 10 años desde la fecha de fabricación', 'Aplica aunque el traje nunca se haya usado'],
-];
-const vidaUtilNote =
-  'El reloj corre desde la fecha de FABRICACIÓN impresa en la etiqueta, no desde la compra ni desde la puesta en servicio. Por eso conviene revisar esa fecha antes de aceptar inventario: comprar equipo viejo te come años de vida útil pagados.';
-
-const pasos = [
-  { title: 'Cuéntanos', desc: 'Qué operación cubres, cuántos elementos y con qué presupuesto trabajas.' },
-  { title: 'Definimos', desc: 'Qué familia de traje corresponde y qué composite debe llevar.' },
-  { title: 'Tallas', desc: 'Guía de tallas del fabricante y toma de medidas antes de pedir.' },
-  { title: 'Cotización', desc: 'Documento formal con partidas, ficha técnica, norma y condiciones.' },
-  { title: 'Entrega', desc: 'Facturamos, enviamos a cualquier estado y damos seguimiento.' },
+// Hubs de complementos: solo alimentan el ItemList (schema) de la home.
+const complementos = [
+  { titulo: 'Cascos para bombero', href: '/cascos/' },
+  { titulo: 'Equipo de respiración autónoma (ERA)', href: '/equipo-de-respiracion-autonoma/' },
+  { titulo: 'Botas para bombero', href: '/botas/' },
+  { titulo: 'Guantes para bombero', href: '/guantes/' },
+  { titulo: 'Monjas y escafandras', href: '/capuchas/' },
+  { titulo: 'Tirantes y cinturones', href: '/trajes/estructural/tirantes/' },
 ];
 
 const faqs = [
@@ -414,192 +249,6 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
         ]}
       />
       <ModelosGrid />
-    </div>
-  </section>
-
-  <!-- 2 · Complementos del conjunto (EQ-01…) -->
-  <section class="section section--alt" id="complementos">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Complementos del conjunto"
-        title="Casco, botas, guantes, monja, tirantes y ERA para completar el equipo"
-        duo={[
-          'Un traje para bombero protege completo solo cuando se integra con el resto del equipo. Cotizamos junto al traje el <a href="/cascos/">casco de bombero</a>, las botas, los guantes, la monja o escafandra, los tirantes y el <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma (ERA)</a>.',
-          'Los revisamos como conjunto: el casco debe ajustar con la máscara del ERA, la bota se elige según la familia de traje y el guante según la operación. Así recibes un equipo de bombero completo y compatible, con ficha técnica por partida.',
-        ]}
-      />
-      <TileGrid>
-        {complementos.map((c) => <TileCard {...c} />)}
-      </TileGrid>
-    </div>
-  </section>
-
-  <CTABanner variant="light" {...PRESET_GENERAL} />
-
-  <!-- 3 · Bloque educativo: cómo elegir según la operación -->
-  <section class="section" id="guia">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Cómo elegir"
-        title="Qué familia corresponde a tu operación"
-        duo={[
-          'Antes de comparar precios, define el riesgo: incendio estructural, fuego incipiente en planta, incendio forestal, calor radiante, entrada a flama o rescate vehicular. Cada tipo de traje para bomberos responde a uno, y elegir mal cuesta caro, en dinero y en seguridad.',
-          'La tabla resume, por familia, para qué operación sirve, cómo está construida y qué complementos necesita. Si dudas entre un traje estructural y uno de brigadista, o entre aproximación y entrada, escríbenos antes de cotizar: te decimos cuál corresponde a tu operación.',
-        ]}
-      />
-      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
-    </div>
-  </section>
-
-  <PhotoBand
-    src="/images/escenas/bomberos-ataque-incendio-manguera.avif"
-    alt="Bomberos con traje estructural y equipo de respiración avanzando una línea de manguera en un incendio"
-    caption="Traje estructural en ataque interior: chaquetón y pantalonera de tres capas, cinta reflejante y equipo de respiración."
-  />
-
-  <!-- 2 · Cómo está hecho: las tres capas -->
-  <section class="section section--alt" id="anatomia">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Anatomía del traje"
-        title="Tres capas, y la que más protege no es la que se ve"
-        duo={[
-          'Un traje estructural de bombero es un composite de tres capas: exterior, barrera de humedad y barrera térmica. Cada una cumple una función distinta, y la que más protege no es la que se ve.',
-          'Entender las capas —fibras como Nomex, Kevlar o PBI en el exterior, membrana de barrera de humedad y aislamiento térmico— es lo que separa una compra informada de una compra por color y precio, y te permite leer los valores de TPP y THL de la ficha técnica.',
-        ]}
-      />
-      <SuitAnatomy />
-    </div>
-  </section>
-
-  <!-- 3 · Cómo se especifica -->
-  <section class="section" id="especificar">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Cómo especificar"
-        title="Los ocho datos que debe traer la ficha antes de que firmes"
-        duo={[
-          'La ficha técnica separa una oferta comparable de una promesa. Al cotizar trajes de bomberos estructurales, copia en tu requisición o pliego estos ocho datos: norma y edición, composite completo, TPP y THL, peso y largo, DRD, cinta y refuerzos, tallas, y etiqueta con fecha de fabricación.',
-          '«Nomex» a secas no es una especificación: importa cada capa por nombre comercial y la edición de la norma, NFPA 1970 o EN 469. Si una oferta no puede darte los ocho, todavía no es comparable; nosotros los entregamos por escrito con cada partida.',
-        ]}
-      />
-      <SpecChecklist />
-    </div>
-  </section>
-
-  <!-- 5 · Errores de compra -->
-  <section class="section section--alt" id="errores">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Errores caros"
-        title="Lo que más se hace mal al comprar un traje para bombero"
-        duo={[
-          'Siete errores que vemos repetirse en compras de gobierno, de industria y de cuerpos voluntarios. Ninguno tiene que ver con el presupuesto: todos tienen que ver con la información que faltó en el momento de decidir.',
-          'Están aquí abiertos aunque no nos compres. Si detectas alguno en una oferta que estás evaluando, ya te sirvió la visita: revísalos antes de firmar una requisición de trajes para bombero y pídenos la ficha técnica para confirmarlos por escrito.',
-        ]}
-      />
-      <MistakeList />
-    </div>
-  </section>
-
-  <!-- 10 · Quién compra -->
-  <section class="section" id="segmentos">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Quién compra"
-        title="Tres compradores, tres procesos distintos"
-        duo={[
-          'Una brigada industrial obligada por la NOM-002-STPS-2010, un cuerpo de bomberos o unidad de protección civil que compra por licitación y un voluntario que repone una pieza no compran igual, ni necesitan los mismos documentos.',
-          'Entra por tu ruta: brigada industrial, gobierno y licitación, o cuerpos voluntarios y particulares. En cada una cotizamos trajes para bomberos con la documentación que tu proceso pide, por pieza o conjunto completo y con envío a los 32 estados.',
-        ]}
-      />
-      <SegmentCards />
-    </div>
-  </section>
-
-  <!-- 8 · Normas -->
-  <section class="section section--alt" id="normas">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Normas"
-        title="Qué es obligatorio en México y qué es referencia técnica"
-        duo={[
-          'En México no existe una NOM ni una NMX de producto para trajes de bombero. Lo obligatorio es la NOM-017-STPS-2024, que exige EPP adecuado sin costo, y para brigadas la NOM-002-STPS-2010; las NFPA son referencia técnica voluntaria.',
-          'Consulta qué pide cada norma —NFPA 1970 (que absorbió a la 1971), NFPA 1950, NFPA 1850 y EN 469— y cuándo una licitación las vuelve exigibles. Así redactas o revisas un pliego con la norma vigente, no con la de hace ocho años.',
-        ]}
-      />
-      <NormsTable columns={normasColumns} rows={normasRows} note={normasNote} />
-    </div>
-  </section>
-
-  <CTABanner variant="red" {...PRESET_LICITACION} />
-
-  <!-- 9 · Vida útil -->
-  <section class="section" id="vida-util">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Vida útil y servicio"
-        title="El traje tiene fecha de retiro, aunque se vea nuevo"
-        duo={[
-          'Bajo NFPA 1850, un traje estructural de bombero se retira a los 10 años desde su fecha de fabricación, aunque se vea nuevo o nunca se haya usado. El reloj corre desde la etiqueta, no desde la compra ni desde el primer uso.',
-          'El ciclo de servicio incluye inspección de rutina, inspección avanzada anual y lavado avanzado dos veces al año. Presupuestarlo desde la compra, y revisar la fecha de fabricación al recibir el equipo, evita sorpresas y protege tu inversión.',
-        ]}
-      />
-      <NormsTable columns={vidaUtilColumns} rows={vidaUtilRows} note={vidaUtilNote} />
-    </div>
-  </section>
-
-  <!-- 6 · Marcas: referencia técnica, NO distribución -->
-  <section class="section section--alt" id="marcas">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Marcas"
-        title="Marcas de trajes para bomberos: quién fabrica y qué se especifica"
-        duo={[
-          'Referencia técnica para que redactes tu pliego o tu requisición: qué fabricantes de trajes para bomberos existen y qué materiales del composite se especifican, como PBI, Nomex, Kevlar y membranas de barrera.',
-          'Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación. Consulta las <a href="/marcas/">marcas que cotizamos</a>, Romak Fire y Sköld; la lista de referencia es orientativa y no implica representación exclusiva.',
-        ]}
-      />
-      <BrandGrid titulo="Fabricantes de traje" marcas={MARCAS_TRAJE} />
-      <BrandGrid titulo="Materiales del composite" marcas={MARCAS_MATERIAL} />
-      <p class="marcas__nota">
-        Esta lista es orientativa del mercado y no implica representación exclusiva. Dos precisiones que
-        conviene tener a la mano al comparar ofertas: Globe, Cairns y Bristol pertenecen hoy a MSA Safety,
-        y Morning Pride dejó de ser de Honeywell en mayo de 2025, cuando el negocio pasó a PIP. La
-        certificación, en todos los casos, corresponde al conjunto terminado y al fabricante que lo lista
-        ante el organismo certificador — nunca a la tela por separado.
-      </p>
-    </div>
-  </section>
-
-  <!-- 11 · La empresa -->
-  <section class="section" id="nosotros">
-    <div class="container">
-      <SectionHeading
-        eyebrow="La empresa"
-        title="Una sola especialidad: el traje"
-        duo={[
-          'Vendemos ropa de protección para bombero: trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación. No intentamos venderte de todo un poco; los complementos los cotizamos para cerrar el conjunto, pero el traje es lo que dominamos. Envíos a todo México.',
-          'Asesoría técnica antes de la venta: qué familia corresponde a tu operación, qué capas debe llevar el composite, cómo tomar tallas y qué documentación necesita tu expediente de compra. Todo por escrito: cotización, ficha técnica y factura.',
-        ]}
-      />
-      <FactList facts={hechos} />
-    </div>
-  </section>
-
-  <!-- 12 · Proceso -->
-  <section class="section section--dark" id="proceso">
-    <div class="container">
-      <SectionHeading
-        dark
-        eyebrow="Cómo trabajamos"
-        title="De tu mensaje al equipo entregado"
-        duo={[
-          'Cotizar trajes para bomberos por WhatsApp toma cinco pasos: cuéntanos tu operación, definimos la familia y el composite, tomamos tallas, te enviamos la cotización formal y entregamos. Respondemos en día hábil y sin compra mínima.',
-          'Cada cotización incluye partidas, ficha técnica, norma y condiciones por escrito. Facturamos con CFDI 4.0, enviamos a cualquier estado y damos seguimiento hasta que el equipo llega a tu estación, base o domicilio.',
-        ]}
-      />
-      <ProcessSteps pasos={pasos} />
     </div>
   </section>
 
