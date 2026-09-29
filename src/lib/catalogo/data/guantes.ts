@@ -83,42 +83,50 @@ const tipos: Tipo[] = [
     title: "Guante estructural para bombero | México",
     description:
       "Guante estructural para bombero: capas, barreras, puño, ajuste y referencia NFPA 1970 para comparar una cotización institucional por operación.",
-    lead: "Para ataque en edificaciones, el guante integra cuero, aislamiento, barreras y puño sin perder la capacidad de sujetar herramienta y controles.",
+    lead: "El guante estructural es el que entra contigo a un incendio en edificación: cuero por fuera, barrera de humedad y forro térmico por dentro, y un puño que solapa con la manga del chaquetón sin soltar la boquilla.",
     imagen: ia("guante-estructural", "Guante estructural para bombero"),
     bloques: [
       {
-        h2: "Qué debe resolver un guante estructural",
+        h2: "Qué es un guante estructural y para quién lo cotizamos",
         parrafos: [
-          "Un guante estructural está diseñado para integrarse al conjunto usado en combate de incendios en edificaciones. La capa exterior aporta resistencia al desgaste y al contacto propio de la operación; las capas interiores pueden sumar aislamiento y manejo de humedad según el modelo. La protección no depende de un solo material: palma, dedos, costuras, forro, barreras y puño deben conservar continuidad cuando la mano abre, cierra y sujeta una herramienta.",
-          "El puño coordina el solape con la manga del chaquetón. Si queda corto, rígido o mal ajustado, puede dificultar el movimiento o dejar una transición mal resuelta. También conviene revisar cómo se comporta el guante al tomar una boquilla, abrir una puerta, manipular radio o trabajar con la máscara. La destreza no se sustituye con elegir una talla menor; se obtiene con un modelo apropiado y una prueba de uso.",
-          "La referencia vigente es NFPA 1970, antes NFPA 1971. Algunos modelos conservan una declaración con edición anterior; esa edición se reporta tal como la declara el fabricante. Pide que la oferta identifique modelo, talla y documento aplicable, en lugar de aceptar una mención genérica de norma.",
-        ],
-        lista: [
-          "Capa exterior, aislamiento y barreras según modelo",
-          "Refuerzos donde la mano recibe fricción",
-          "Puño que solapa con la manga del traje",
-          "Talla probada con herramienta y controles",
+          "El guante estructural es el de ataque interior: el que sostiene la boquilla con la línea cargada, abre una puerta caliente y sujeta la herramienta de entrada con el chaquetón puesto. Lleva tres capas —cuero o carnaza de 1.5–1.7 mm por fuera, barrera de humedad en medio y forro térmico por dentro— y un puño que solapa con la manga. Lo cotizamos sobre todo a cuerpos de bomberos municipales y a brigadas industriales con procedimiento de ataque interior; para conato en planta te conviene el guante para brigadista, que cuesta menos y da más destreza.",
+          "La referencia es NFPA 1970 (la norma que absorbió a la NFPA 1971); los modelos que surtimos declaran la edición con la que fueron evaluados —2013 en el Sköld FPGS, 2018 con certificado UL en el Veridian Fire Pro II— y así te la reportamos, sin convertir una declaración en certificación. Si tu pliego pide certificado de laboratorio, el Veridian es el que lo tiene; si pide declaración del fabricante bajo NFPA 1971 y OSHA 29 CFR 1910.156, el Sköld cumple y va en carnaza de res.",
         ],
       },
       {
-        h2: "Cómo comparar una partida",
+        h2: "Cómo especificamos un guante estructural en la cotización",
         parrafos: [
-          "Compara los modelos por la operación que cubrirán, no solo por apariencia. Revisa material exterior, construcción de dedos, costuras, barreras declaradas, longitud de puño y tallas. Si la corporación usa distintos tamaños, define el desglose por persona y no una talla estándar para toda la entrega.",
-          "El ensayo práctico debe incluir movimientos repetidos con el equipo habitual. Busca presión en nudillos, arrugas que reduzcan el agarre, interferencia con la manga y dificultad para retirar el guante después de una jornada. Si se requieren reemplazos, pide que se mantenga el mismo modelo y configuración.",
-          "Los modelos publicados para este tipo son Sköld FPGS y Veridian Fire Pro II. Cada ficha conserva datos y estatus normativo propios; no transfieras la declaración de uno al otro.",
+          "Cada partida la escribimos con seis datos: modelo y código (FPGS o GIS1017), material exterior, barreras interiores con nombre (Pyrotec y modacrílico en el Veridian; forro de modacrílico SEF en el Sköld), construcción del puño (Kevlar de dos capas en el Sköld; 2 pulgadas con refuerzo Nomex en el Veridian), talla y estatus normativo tal como lo declara el fabricante. Con eso el área de compras compara dos ofertas con el mismo criterio y no por el color del cuero.",
+          "Las tallas no se piden por promedio: te pedimos el desglose por elemento (el Sköld FPGS es unitalla, y te lo decimos antes de que lo pidas para una cuadrilla con manos chicas; del Veridian te confirmamos las tallas disponibles al cotizar). Si repones pares de un lote anterior, mándanos por WhatsApp la foto de la etiqueta del puño y te confirmamos si sigue la misma configuración o si el fabricante cambió barrera o forro.",
         ],
         lista: [
-          "Solicita modelo y talla por escrito",
-          "Revisa palma, dedos, puño y costuras",
-          "Prueba con boquilla, radio y herramienta",
-          "Conserva documentación de la partida",
+          "Modelo y código: Sköld FPGS o Veridian Fire Pro II GIS1017",
+          "Exterior: carnaza de res 1.5–1.7 mm o cuero tratado",
+          "Barreras con nombre: modacrílico SEF, Pyrotec, hidrófuga",
+          "Puño: Kevlar dos capas o 2 in con refuerzo Nomex",
+          "Tallas por elemento, no talla promedio",
+          "Estatus normativo: declarado NFPA 1971:2013 o certificado UL NFPA 1971:2018",
         ],
       },
       {
-        h2: "Inspección y retiro",
+        h2: "Modelos de guante estructural que surtimos y con qué traje van",
         parrafos: [
-          "Antes de usar, revisa desgaste, costuras abiertas, contaminación, endurecimiento del cuero, pérdida de forro y daño visible en puño o barreras. Un guante que ya no permite sujetar con control o que presenta daño no se corrige con cinta o costura improvisada.",
-          "La limpieza debe seguir la indicación del fabricante del modelo. Después de cada intervención, inspecciona ambos guantes como par y conserva registro de asignación, exposición y reemplazos. El guante se retira por condición y por los lineamientos aplicables, no solo porque cambie su apariencia.",
+          "Surtimos dos modelos de guante estructural. El Sköld FPGS, en carnaza de res oro y negro con forro de modacrílico SEF cosido a cada dedo, costuras Kevlar Tex-80, puño elástico de Kevlar y bandola interna para secado: es el que va con los trajes Sköld Hero y el de menor costo de los dos. El Veridian Fire Pro II GIS1017, en cuero tratado con tres capas interiores, barrera transpirable Pyrotec hasta el puño y refuerzo de Nomex: certificado UL bajo NFPA 1971-2018 y el que integramos en el kit estructural Profesional con los trajes Romak Fire.",
+          "El guante se prueba con el chaquetón puesto, porque el puño y la manga trabajan juntos: con los brazos arriba y el casco en la cabeza, el puño debe quedar bajo la manga y el pozo de agua no debe atorarse. Si ya usas chaquetón Romak Fire Protector, Profesional o Sköld Hero, te decimos cuál de los dos guantes ya probamos con esa manga; si es de otra marca, mándanos una foto del puño del chaquetón y te contestamos en el día hábil.",
+        ],
+      },
+      {
+        h2: "Errores que vemos en pliegos de guantes estructurales",
+        parrafos: [
+          "El más caro es pedir «guante de bombero NFPA» sin edición ni estatus: llegan ofertas con guante de brigada o de extricación, que valen la mitad y no protegen en ataque interior, y el comité no tiene con qué descalificarlas. El segundo es pedir una sola talla para toda la corporación: un guante grande forma pliegues en la palma, el pliegue queda justo sobre el mando de la boquilla y el elemento termina quitándoselo. El tercero es comprar por muestra de un par y recibir otra configuración de forro.",
+          "En tu pliego pon modelo, código, edición de norma y estatus, y exige que cada caja identifique par, talla y código; así la recepción coteja contra lo evaluado y no contra un nombre comercial. Si un proveedor ofrece un guante «equivalente», pídele la ficha con las mismas 6 líneas de arriba y compárala renglón por renglón; nosotros te la mandamos por WhatsApp antes de que abras el sobre.",
+        ],
+      },
+      {
+        h2: "Inspección y retiro del guante estructural",
+        parrafos: [
+          "Antes de cada guardia revisa cuero endurecido o cuarteado, costuras abiertas en la horquilla del pulgar, forro desprendido o girado, contaminación visible y que el puño siga elástico. Después de una intervención, lava y seca como indica el fabricante —el Sköld trae bandola interna para colgarlo— y nunca sobre una fuente de calor directo: el cuero encoge y el forro se despega. Un guante que ya no cierra la mano con control se retira, aunque se vea entero.",
+          "No repares la palma con cinta, pegamento ni costura improvisada: cambias el espesor justo donde se controla la boquilla y pierdes la continuidad de las barreras. Lleva registro por par —elemento, fecha de asignación, exposiciones y reemplazos— y ten existencias por talla; cuando un par se retira, el elemento no debe salir con un guante de rescate ni con uno ajeno. Si tienes duda de un par, mándanos la foto y te decimos si sigue en servicio.",
         ],
       },
     ],
@@ -150,8 +158,8 @@ const tipos: Tipo[] = [
     relacionados: ["skold-fpgs", "veridian-fire-pro-ii"],
     chips: ["NFPA 1970", "Capas interiores", "Puño integrado"],
     resumen: [
-      "Guante para operación estructural con capas y puño que se evalúan junto con el traje.",
-      "La prueba con herramienta y manga confirma ajuste, agarre y movilidad.",
+      "Tres capas —cuero o carnaza por fuera, barrera de humedad y forro térmico por dentro— y puño que solapa con la manga del chaquetón. Surtimos el Sköld FPGS (carnaza, declarado NFPA 1971:2013) y el Veridian Fire Pro II (cuero tratado, certificado UL NFPA 1971-2018).",
+      "Te cotizamos por talla y por elemento con ficha técnica y el estatus bajo NFPA 1970 tal como lo declara el fabricante. Si ya tienes chaquetón, dinos el modelo y te decimos qué guante ya probamos con esa manga.",
     ],
   },
   {
@@ -465,22 +473,6 @@ const modelos: Modelo[] = [
   },
 ];
 
-tipos[0].bloques.push({
-  h2: "Ataque interior: mano, boquilla y manga",
-  parrafos: [
-    "Durante el avance con línea cargada, la palma sostiene la boquilla mientras el pulgar y el índice gobiernan agarre y apertura. El guante estructural necesita cerrar la mano alrededor de esa geometría aun cuando el exterior esté húmedo; una palma que forma pliegues sobre el mando convierte una maniobra repetible en un punto de fatiga. Al abrir una puerta o mover una herramienta de entrada, los nudillos, la base del pulgar y las costuras reciben otra clase de roce que también debe revisarse.",
-    "La prueba de aceptación se hace con el chaquetón puesto y la manga en la posición que tendrá al trabajar por encima del hombro. Flexiona muñeca, toma radio, sujeta boquilla y simula el cambio de agarre de una herramienta. Observa si el puño se dobla dentro de la manga, si el forro gira al retirar la mano o si aparece una franja expuesta. Esos hallazgos describen una incompatibilidad de conjunto, no un defecto que se resuelva pidiendo una talla menor.",
-    "En una requisición mexicana, separa la cantidad de pares por talla y registra el modelo que se probó. Incluye uso estructural, longitud o construcción del puño si el fabricante la declara, y la referencia NFPA 1970 solo como corresponda al modelo ofertado. Pide que cada caja identifique par, talla y código; recibir pares mezclados impide saber qué configuración fue evaluada.",
-    "La inspección previa busca cuero endurecido, costura abierta, forro desprendido, contaminación visible y pérdida de continuidad entre palma y puño. Después de una intervención, voltea el guante solo hasta donde permita el fabricante para revisar que el forro no se haya desplazado. No pegues ni coses un área de agarre: una reparación improvisada altera espesor y comportamiento justo donde se controla la boquilla.",
-    "Una pregunta habitual del jefe de guardia es si un modelo estructural puede sustituirse temporalmente por uno de rescate. La respuesta depende del riesgo y de la aprobación institucional; la destreza para extricación no demuestra protección para ataque interior. Mantén existencias de reposición por talla para evitar que una guardia use un par ajeno o una alternativa de otra operación.",
-  ],
-  lista: [
-    "Prueba con boquilla, radio, manga y herramienta de entrada",
-    "Pide pares por talla y modelo, no una talla promedio",
-    "Revisa forro, palma y continuidad del puño después de exposición",
-    "Conserva la declaración normativa junto con el modelo ofertado",
-  ],
-});
 tipos[1].bloques.push({
   h2: "Extricación: control sobre vidrio, lámina y herramienta",
   parrafos: [
