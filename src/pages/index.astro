@@ -41,8 +41,6 @@ import FactList from '@components/FactList.astro';
 import CTABanner from '@components/CTABanner.astro';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
-import { HERO_HOME } from '@lib/imagenes';
-import { waUrl } from '@lib/wa';
 import { piezasDeFamilia } from '@lib/piezas';
 import { getSeccion } from '@lib/catalogo/secciones';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
@@ -50,7 +48,6 @@ import { MODELOS } from '@lib/catalogo/data';
 import {
   SITE,
   PRODUCT_CATEGORIES,
-  WA_MESSAGES,
   MARCAS_TRAJE,
   MARCAS_MATERIAL,
 } from '@config/site';
@@ -61,12 +58,6 @@ const hero = {
   accent: 'en todo México',
   subtitle:
     'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
-  meta: [
-    'Ficha técnica por partida',
-    'Factura CFDI 4.0',
-    'Envíos a los 32 estados',
-    'Por pieza o conjunto completo',
-  ],
   descRight: [
     'Somos especialistas en una sola línea: ropa de protección para combate de incendios. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos municipales que compran por licitación y unidades de protección civil en los 32 estados de la República.',
     'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y condiciones de entrega por escrito. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
@@ -336,12 +327,7 @@ const directoryItems = [
 const ultimosPosts = (await getPosts()).slice(0, 3);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
-  <Hero {...hero} image={HERO_HOME}>
-    <div class="hero-actions" slot="actions">
-      <a class="hero-actions__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
-      <a class="hero-actions__cat" href="#catalogo">Ver categorías</a>
-    </div>
-  </Hero>
+  <Hero {...hero} solid />
   <SectionMenu />
   <TrustBlock id="confianza" items={confianza} />
 
@@ -614,26 +600,8 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     color: var(--color-dark);
     max-width: 80ch;
   }
-  /* CTA del hero (slot "actions" de Hero) */
-  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; position: relative; }
-  .hero-actions a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50px;
-    padding: 0.75rem 1.4rem;
-    border-radius: var(--radius);
-    font-weight: 800;
-    text-decoration: none;
-  }
-  .hero-actions__wa { background: var(--color-wa); color: #fff; }
-  .hero-actions__wa:hover { background: var(--color-wa-dark); }
-  .hero-actions__cat { border: 1px solid rgb(255 255 255 / 0.7); color: #fff; }
-  .hero-actions__cat:hover { background: rgb(255 255 255 / 0.1); }
   @media (max-width: 1023px) { .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 639px) {
     .catalog-grid { grid-template-columns: 1fr; gap: 0.75rem; }
-    .hero-actions { display: grid; }
-    .hero-actions a { width: 100%; }
   }
 </style>
