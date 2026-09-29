@@ -82,7 +82,7 @@ No elijas sólo por costumbre de marca o porque un material sea conocido. Compar
 
 Un conjunto puede integrar el [casco Sköld Viking](/cascos/skold-viking/), el [guante Sköld FPGS](/guantes/skold-fpgs/), la [bota Sköld Workman](/botas/skold-workman/), la [capucha Sköld FPEN](/capuchas/skold-fpen/) y el [ERA Sköld Phantöm](/equipo-de-respiracion-autonoma/skold-phantom/). La página de [marca Sköld](/marcas/skold/) reúne estos componentes, pero una misma marca no garantiza compatibilidad automática.
 
-El casco Viking declara compatibilidad con ERA que debe confirmarse con la máscara y arnés reales. Workman declara 3,150 g y código FPBSK; ese peso es de la bota, no del conjunto. El ERA Phantöm publica 60 minutos nominales a 4,500 psi con cilindro de fibra de carbono y una referencia NFPA de 1997 declarada, que no se presenta como NFPA vigente. Revisa cada dato en su ficha y procedimiento de operación.
+El [casco](/cascos/) Viking declara compatibilidad con ERA que debe confirmarse con la máscara y arnés reales. Workman declara 3,150 g y código FPBSK; ese peso es de la bota, no del conjunto. El ERA Phantöm publica 60 minutos nominales a 4,500 psi con cilindro de fibra de carbono y una referencia NFPA de 1997 declarada, que no se presenta como NFPA vigente. Revisa cada dato en su ficha y procedimiento de operación.
 
 ## Qué pasa con el brigadista Defender
 
@@ -92,7 +92,7 @@ Este contraste ayuda a evitar un error común: usar una prenda de otra familia p
 
 ## Cómo revisar la interfaz antes de comprar
 
-Coloca traje, capucha, casco, guantes, botas y ERA. Haz alcance alto, giro de cabeza, rodilla, escalera y toma de radio. Verifica que la capucha no afecte el sello de máscara, que el casco mantenga campo visual, que el puño solape con guante y que pantalonera y bota no formen apertura. Prueba ambos modelos con el mismo protocolo si los comparas.
+Coloca traje, capucha, casco, guantes, [botas](/botas/) y ERA. Haz alcance alto, giro de cabeza, rodilla, escalera y toma de radio. Verifica que la capucha no afecte el sello de máscara, que el casco mantenga campo visual, que el puño solape con guante y que pantalonera y bota no formen apertura. Prueba ambos modelos con el mismo protocolo si los comparas.
 
 El DRD debe seguir accesible con ERA puesto. Los bolsillos deben abrirse con guante. El ajuste de tirantes debe sostener la pantalonera sin modificar el solape de cintura. Estas observaciones se registran junto con la talla, no se dejan como impresión de quien se probó una muestra.
 

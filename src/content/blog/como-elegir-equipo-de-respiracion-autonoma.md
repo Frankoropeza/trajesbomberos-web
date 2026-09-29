@@ -34,7 +34,7 @@ La pregunta no es cuánto aire "trae" el equipo, sino cuánto tiempo de trabajo 
 
 ## Combate contra incendio e industria no son la misma requisición
 
-Para combate, el ERA se integra con casco, capucha, máscara, regulador, arnés, cilindro y sistemas de alerta aplicables. El usuario puede estar expuesto a calor, humo, visibilidad limitada y movilidad compleja. En industria, la atmósfera y el procedimiento pueden ser distintos: procesos, espacios confinados, derrames, mantenimiento o respuesta a liberaciones. El arnés, comunicación, máscara y compatibilidad con sustancias deben seleccionarse para el escenario documentado.
+Para combate, el ERA se integra con [casco](/cascos/), capucha, máscara, regulador, arnés, cilindro y sistemas de alerta aplicables. El usuario puede estar expuesto a calor, humo, visibilidad limitada y movilidad compleja. En industria, la atmósfera y el procedimiento pueden ser distintos: procesos, espacios confinados, derrames, mantenimiento o respuesta a liberaciones. El arnés, comunicación, máscara y compatibilidad con sustancias deben seleccionarse para el escenario documentado.
 
 No conviertas un equipo industrial en ERA de ataque interior por agregarle una prenda, ni des por hecho que un ERA de combate resuelve una operación química sin revisar compatibilidad. En [Hazmat](/trajes/hazmat/) la selección se une con el nivel de barrera y la vía de exposición. La configuración de un encapsulado, por ejemplo, requiere revisar dimensiones y uso del equipo de aire dentro del traje.
 

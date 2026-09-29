@@ -17,6 +17,7 @@ import { FAMILIAS } from '@lib/familias';
 import { piezasDeFamilia } from '@lib/piezas';
 import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
 import { temaEnFrase } from '@lib/blog-enlaces';
+import { MARCA } from '@config/site';
 
 interface Props { seccion: Seccion; entry: Tipo | Modelo; kind: 'tipo' | 'modelo'; path: string; parent?: { name: string; href: string } | { name: string; href: string }[]; heroImage?: { src: string; alt: string }; }
 const { seccion, entry, kind, path, parent, heroImage = seccion.hero } = Astro.props;
@@ -52,7 +53,7 @@ const primeraFrase = (texto: string) => texto.match(/^.*?[.!?](?:\s|$)/)?.[0].tr
 const recortarPalabras = (texto: string, limite: number) => texto.length <= limite ? texto : texto.slice(0, limite + 1).replace(/\s+\S*$/, '').trim();
 const tituloModeloBase = isTipo ? '' : `${modelo.marca} ${modelo.nombre} | ${seccion.nombre}`;
 const tituloModelo = isTipo ? '' : modelo.title ?? (tituloModeloBase.length <= 60 ? tituloModeloBase : `${modelo.marca} ${modelo.nombre} | LORICA`);
-const llamadaCotizacion = 'Cotiza por WhatsApp con envío a todo México.';
+const llamadaCotizacion = `Cotiza con ${MARCA.nombre} por WhatsApp: entrega en ${MARCA.cobertura}.`;
 const descripcionModelo = isTipo ? '' : modelo.description ?? recortarPalabras(`${recortarPalabras(primeraFrase(modelo.resumen?.[0] ?? modelo.descripcion[0]), 160 - llamadaCotizacion.length - 1)} ${llamadaCotizacion}`, 160);
 const modeloPorId = (id: string) => MODELOS.find((item) => item.id === id)!;
 const componentesKit = isTipo && seccion.slug === 'kits' ? {

@@ -38,7 +38,7 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 ---
 
-El traje de bombero y sus partes se entienden mejor como un sistema de protección, no como prendas que se compran por separado. El chaquetón y la pantalonera cubren el cuerpo, pero la protección depende de que sus capas, cierres y refuerzos sigan funcionando al conectarse con monja, guantes, botas, casco y ERA.
+El traje de bombero y sus partes se entienden mejor como un sistema de protección, no como prendas que se compran por separado. El chaquetón y la pantalonera cubren el cuerpo, pero la protección depende de que sus capas, cierres y refuerzos sigan funcionando al conectarse con monja, guantes, [botas](/botas/), casco y ERA.
 
 Para quien compra equipo estructural de bomberos, la pregunta correcta no es sólo qué incluye el conjunto. Es qué función cubre cada pieza, cuál es su configuración publicada y qué pasa en las zonas donde una pieza toca a otra.
 

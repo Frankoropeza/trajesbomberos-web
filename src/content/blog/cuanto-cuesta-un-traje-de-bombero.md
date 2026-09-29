@@ -56,7 +56,7 @@ Tampoco la ley mexicana exige de forma automática una certificación NFPA para 
 
 ## Tallas, ajustes y configuración por usuario
 
-La talla estándar puede funcionar cuando el fabricante tiene una guía clara, pero el levantamiento de medidas, la prueba de movilidad y la configuración de cada usuario afectan la cotización. Chaquetón y pantalonera deben permitir moverse con las capas que se usarán realmente, además de trabajar con botas, guantes, monja y ERA. Una talla incorrecta no se corrige con una prenda más grande: puede abrir interfaces, estorbar controles o cansar al usuario.
+La talla estándar puede funcionar cuando el fabricante tiene una guía clara, pero el levantamiento de medidas, la prueba de movilidad y la configuración de cada usuario afectan la cotización. Chaquetón y pantalonera deben permitir moverse con las capas que se usarán realmente, además de trabajar con [botas](/botas/), guantes, monja y ERA. Una talla incorrecta no se corrige con una prenda más grande: puede abrir interfaces, estorbar controles o cansar al usuario.
 
 El ajuste a medida, cuando procede, requiere más información y coordinación que una entrega de tallas estándar. Conviene separar el levantamiento de tallas como actividad de la compra, definir quién valida la tabla y conservar la guía del fabricante. Una oferta que no aclara si considera talla estándar, ajuste especial o prueba física deja abierta una diferencia relevante para el costo y la entrega.
 
@@ -107,7 +107,7 @@ La comparación se vuelve clara cuando todas las respuestas contestan los mismos
 
 El error más común es decidir por fotografía. Una imagen no muestra la composición de capas, el estatus documental, la talla ni la configuración incluida. El segundo es elegir por monto entre familias distintas: comparar brigadista con estructural certificado no revela cuál oferta es mejor; revela que se está cotizando para escenarios diferentes.
 
-También es frecuente no revisar la fecha de fabricación. El plazo de vida de servicio comienza ahí, por lo que una pieza almacenada consume parte de su uso antes de ser entregada. Finalmente, una oferta sin ficha por partida impide detectar si cambió el composite, la talla, los accesorios o las condiciones de entrega. La cotización más útil no es la que tiene menos renglones, sino la que permite verificar qué se recibirá. Si cotizas el conjunto y no sólo el traje, la lista de [equipo de bombero completo](/blog/equipo-de-bombero-completo/) ordena las partidas por operación. Para cuerpos voluntarios que compran por etapas, revisa [cómo equipar a bomberos voluntarios por pieza](/blog/equipar-bomberos-voluntarios-compra-por-pieza/).
+También es frecuente no revisar la fecha de fabricación. El plazo de vida de servicio comienza ahí, por lo que una pieza almacenada consume parte de su uso antes de ser entregada. Finalmente, una oferta sin ficha por partida impide detectar si cambió el composite, la talla, los accesorios o las condiciones de entrega. La cotización más útil no es la que tiene menos renglones, sino la que permite verificar qué se recibirá; así la preparamos en LORICA. Si cotizas el conjunto y no sólo el traje, la lista de [equipo de bombero completo](/blog/equipo-de-bombero-completo/) ordena las partidas por operación. Para cuerpos voluntarios que compran por etapas, revisa [cómo equipar a bomberos voluntarios por pieza](/blog/equipar-bomberos-voluntarios-compra-por-pieza/).
 
 ## Preguntas frecuentes sobre el costo de un traje de bombero
 

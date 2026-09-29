@@ -12,7 +12,7 @@ ancla: "Hacha de bombero y Halligan"
 categoria: "herramientas-rescate"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Hacha de bombero y barra Halligan | México"
+seoTitle: "Hacha de bombero, Halligan y gancho: guía de entrada forzada"
 description: "Hacha de bombero y barra Halligan: compara funciones, materiales, medidas de la Romak HAC1007, gancho bichero, cuidado y selección."
 keywords: ["hacha de bombero", "barra Halligan", "México"]
 imagen: "/images/blog/entrada-forzada-hacha-halligan-gancho.avif"
