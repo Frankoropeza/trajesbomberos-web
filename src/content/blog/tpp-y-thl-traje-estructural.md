@@ -1,5 +1,5 @@
 ---
-title: "TPP y THL: los dos números que definen un traje estructural"
+title: "TPP y THL: los dos números del traje estructural"
 titleAccent: "y por qué se leen juntos"
 eyebrow: "Cómo especificar · Datos duros"
 lead: "El TPP mide cuánto aguanta el conjunto antes de que te quemes. El THL mide cuánto calor deja salir tu propio cuerpo. Subir uno normalmente baja el otro, y ahí está toda la decisión."
@@ -19,7 +19,7 @@ productos:
   - "/trajes/estructural/chaqueton/"
   - "/trajes/estructural/pantalonera/"
 fecha: 2026-06-23
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "TPP y THL | traje estructural | México"
 description: "TPP y THL son los dos números que definen un traje estructural: qué mide cada uno, por qué se leen juntos y qué valores mínimos pedir en tu cotización."
 keywords:

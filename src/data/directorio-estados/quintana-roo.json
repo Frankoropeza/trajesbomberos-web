@@ -1,0 +1,45 @@
+{
+ "lead": "Esta página reúne 16 estaciones de bomberos en Quintana Roo, distribuidas entre 9 municipios. Cada ficha ofrece corporación, ubicación y fuente pública para encontrar bomberos en Quintana Roo mediante un directorio organizado por localidad.",
+ "descRight": [
+  "El registro de Quintana Roo incluye 13 estaciones municipales y 3 aeroportuarias, con una central y 4 subestaciones identificadas. Benito Juárez concentra 6 fichas; Cozumel y Felipe Carrillo Puerto tienen 2 cada uno. Los otros municipios incorporados cuentan con una estación dentro de esta consulta.",
+  "Usa el índice municipal para llegar al listado completo y comparar los datos de cada corporación. Hay teléfonos con fuente en 8 fichas, dirección en 13 y ubicación exacta en 10. La ficha ayuda a contrastar esos campos y la clasificación de cada servicio antes de hacer una gestión. Para pedir auxilio ante una emergencia marca 911; el resto de contactos es para gestión y consulta."
+ ],
+ "municipiosDuo": [
+  "Benito Juárez reúne 6 de las 16 estaciones registradas, incluida la red de Bomberos Cancún y la referencia aeroportuaria. Para localizar bomberos en Benito Juárez, el índice separa las bases, la estación y el Heroico Cuerpo de Bomberos de Cancún por sus nombres propios.",
+  "Cozumel y Felipe Carrillo Puerto tienen 2 estaciones cada uno. Isla Mujeres, Lázaro Cárdenas, Othón P. Blanco, Puerto Morelos, Solidaridad y Tulum aportan una ficha. Esta distribución permite explorar las referencias por municipio sin convertir el directorio en una afirmación de cobertura total."
+ ],
+ "estacionesDuo": [
+  "Cada resultado especifica si corresponde a bomberos municipales o a un servicio aeroportuario y señala central o subestación cuando aplica. La ficha distingue dirección, teléfono con fuente y ubicación exacta o aproximada. Heroico Cuerpo de Bomberos de Cancún y Bomberos de Solidaridad están incluidos como corporaciones municipales.",
+  "Las estaciones aeroportuarias tienen una clasificación separada de las municipales. El SSEI Aeropuerto Internacional de Cancún y el SSEI Aeropuerto Internacional de Cozumel son ejemplos de esa diferencia. Lee municipio, corporación y campos de localización antes de usar un teléfono para gestiones no urgentes."
+ ],
+ "coberturaDuo": [
+  "La atención prehospitalaria está declarada en las 16 fichas de Quintana Roo, mientras incendios estructurales aparece en 13 y rescate vehicular en 8. El directorio tiene 8 teléfonos con fuente, 13 direcciones y 10 ubicaciones exactas, con detalle variable entre estaciones.",
+  "El rescate acuático se registra en 7 casos; el salvamento aeroportuario y los incendios forestales en 3; materiales peligrosos en 2. Hay una mención de rescate en altura. Estas categorías son una guía para lectura de las fichas, no una confirmación de servicio disponible en tiempo real."
+ ],
+ "equipoDuo": [
+  "En Quintana Roo, los servicios declarados de atención prehospitalaria, incendios estructurales, rescate vehicular y acuático requieren una selección diversa. <a href=\"/trajes/estructural/\">Trajes estructurales</a> y accesorios de rescate son una base; la intervención aeroportuaria demanda protección de aproximación adecuada.",
+  "Para incidentes con sustancias peligrosas, la protección debe evaluarse frente al agente involucrado; el rescate acuático requiere equipo orientado a esa labor. Consulta <a href=\"/rescate/\">equipo de rescate para bomberos</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Quintana Roo."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Quintana Roo?",
+   "a": "El directorio registra 16 estaciones de bomberos en Quintana Roo, repartidas en 9 municipios. La cifra cubre referencias con fuente pública y no se presenta como el total de estaciones del estado; puede cambiar al incorporarse registros que logren confirmación."
+  },
+  {
+   "q": "¿Qué municipio tiene más estaciones y bomberos en Quintana Roo?",
+   "a": "Benito Juárez concentra 6 estaciones registradas, la cifra más alta de esta guía. Para buscar bomberos en Benito Juárez se distinguen las bases de Bomberos Cancún, su cuerpo de bomberos y el servicio aeroportuario, cada uno con su propia ficha."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Quintana Roo?",
+   "a": "El registro clasifica 13 estaciones municipales y 3 aeroportuarias. También identifica una central y 4 subestaciones. Esa información ayuda a reconocer si una referencia corresponde a una corporación local o a un servicio ligado al aeropuerto antes de revisar su ubicación."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Quintana Roo?",
+   "a": "En una emergencia en Quintana Roo debes llamar al 911. Los teléfonos disponibles en las fichas son contactos para trámites, visitas, capacitación o donaciones cuando tienen fuente pública, y no reemplazan la llamada de auxilio."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Quintana Roo?",
+   "a": "Para bomberos en Quintana Roo cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La recomendación puede ajustarse a incendios estructurales, rescate vehicular, atención acuática, materiales peligrosos o salvamento aeroportuario."
+  }
+ ]
+}

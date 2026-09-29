@@ -1,0 +1,330 @@
+---
+// DirectorioSidebar: columna de interlinking de las páginas de estado.
+// Homologada con BlogSidebar (tarjetas blancas con acento rojo superior,
+// radio lg, títulos en versalitas grises y tarjeta de cotización tinta
+// con banda reflectante). Regla dura del sitio: SIN scroll propio.
+// Los bloques de navegación fluyen con la página; solo el grupo final
+// (índice de la página + cotización), que cabe en pantalla, es sticky
+// y acompaña al lector a lo largo del listado de estaciones.
+// Cada enlace se valida contra rutas reales (rutaExiste): nunca se
+// publica un destino que Astro no genera.
+import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+import { rutaExiste } from '@lib/rutas';
+import { getPosts, postUrl, categoriaNombre } from '@lib/blog';
+import {
+  type Entidad, BASE_DIRECTORIO, ENTIDADES, REGIONES, resumenEstado, municipiosDe, rutaEstado, enEstado, deEstado, unidad,
+} from '@lib/directorio';
+
+interface Props {
+  e: Entidad;
+  pageIndex: { label: string; href: string }[];
+}
+const { e, pageIndex } = Astro.props as Props;
+const region = REGIONES.find((r) => r.slug === e.region)!;
+const municipios = municipiosDe(e.slug);
+const MAX_MUNI = 10;
+const vecinos = ENTIDADES.filter((x) => x.region === e.region && x.slug !== e.slug)
+  .map(resumenEstado)
+  .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+const UNIS = unidad(e.slug);
+
+const familias = [
+  ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+  { label: 'Trajes Hazmat', href: '/trajes/hazmat/' },
+].filter((x) => rutaExiste(x.href));
+
+const equipo = [
+  { label: 'Cascos para bombero', href: '/cascos/' },
+  { label: 'Equipo de respiración autónoma', href: '/equipo-de-respiracion-autonoma/' },
+  { label: 'Botas para bombero', href: '/botas/' },
+  { label: 'Guantes para bombero', href: '/guantes/' },
+  { label: 'Monjas y capuchas', href: '/capuchas/' },
+  { label: 'Herramientas de ataque', href: '/herramientas/' },
+  { label: 'Equipo de rescate', href: '/rescate/' },
+  { label: 'Kits por operación', href: '/kits/' },
+].filter((x) => rutaExiste(x.href));
+
+// Guías para corporaciones: primero compra pública y especificación
+const ORDEN = ['licitacion', 'especificacion', 'normas', 'mantenimiento', 'comparativas'];
+const guias = (await getPosts())
+  .slice()
+  .sort((a, b) => ORDEN.indexOf(a.data.categoria) - ORDEN.indexOf(b.data.categoria))
+  .slice(0, 4);
+---
+<aside class="dsb" aria-label={`Navegación del directorio de bomberos ${deEstado(e)}`}>
+  <div class="dsb__flow">
+    <nav class="sb-card" aria-label={`${UNIS} ${deEstado(e)}`}>
+      <p class="sb-title">{UNIS.charAt(0).toUpperCase() + UNIS.slice(1)} {deEstado(e)}</p>
+      <ul class="sb-cats">
+        {municipios.slice(0, MAX_MUNI).map((m) => (
+          <li>
+            <a href={`#${m.slug}`}>
+              <span>Bomberos en {m.nombre}</span>
+              <span class="sb-cats__n">{m.estaciones.length}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      {municipios.length > MAX_MUNI && (
+        <a class="sb-more" href="#municipios">Los {municipios.length} {UNIS} con estaciones →</a>
+      )}
+    </nav>
+
+    <nav class="sb-card" aria-label={`Estados de la región ${region.nombre}`}>
+      <p class="sb-title">Región {region.nombre}</p>
+      <ul class="sb-cats">
+        <li>
+          <a class="is-active" aria-current="page" href={rutaEstado(e.slug)}>
+            <span>Bomberos {enEstado(e)}</span>
+          </a>
+        </li>
+        {vecinos.map((v) => (
+          <li>
+            <a href={rutaEstado(v.slug)}>
+              <span>Bomberos {enEstado(v)}</span>
+              <span class="sb-cats__n">{v.total}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="sb-more" href={BASE_DIRECTORIO}>Directorio nacional de bomberos →</a>
+    </nav>
+
+    <nav class="sb-card" aria-label="Trajes para bomberos">
+      <p class="sb-title">Trajes para bomberos</p>
+      <div class="sb-chips">
+        {familias.map((f) => <a class="sb-chip" href={f.href}>{f.label}</a>)}
+      </div>
+      <a class="sb-more" href="/trajes/">Comparar trajes para bomberos →</a>
+    </nav>
+
+    {equipo.length > 0 && (
+      <nav class="sb-card" aria-label="Equipo para bomberos">
+        <p class="sb-title">Equipo para bomberos</p>
+        <ul class="sb-links">
+          {equipo.map((x) => <li><a href={x.href}>{x.label}</a></li>)}
+        </ul>
+      </nav>
+    )}
+
+    {guias.length > 0 && (
+      <nav class="sb-card" aria-label="Guías técnicas para corporaciones">
+        <p class="sb-title">Guías para corporaciones</p>
+        <ul class="sb-posts">
+          {guias.map((p) => (
+            <li>
+              <a href={postUrl(p)}>
+                <span class="sb-posts__cat">{categoriaNombre(p.data.categoria)}</span>
+                <span class="sb-posts__title">{p.data.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a class="sb-more" href="/blog/">Blog técnico para bomberos →</a>
+      </nav>
+    )}
+  </div>
+
+  <!-- Grupo sticky: corto, cabe en pantalla, acompaña al listado -->
+  <div class="dsb__sticky">
+    <nav class="sb-card sb-card--toc" aria-label="En esta página">
+      <p class="sb-title">En esta página</p>
+      <ul class="sb-anchors">
+        {pageIndex.map((x) => <li><a href={x.href}>{x.label}</a></li>)}
+      </ul>
+    </nav>
+    <div class="sb-quote">
+      <p class="sb-quote__title">¿Equipas a una corporación {enEstado(e)}?</p>
+      <p class="sb-quote__text">Cotización con ficha técnica por partida, expediente para licitación y factura CFDI 4.0.</p>
+      <a class="sb-quote__wa" href={waUrl(WA_MESSAGES.licitacion)} target="_blank" rel="noopener nofollow">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Cotizar equipo por WhatsApp
+      </a>
+      <a class="sb-quote__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
+      <p class="sb-quote__horario">{CONTACT.horario}</p>
+    </div>
+  </div>
+</aside>
+
+<style>
+  /* El aside ocupa todo el alto de la fila para que el grupo final
+     pueda ser sticky; los bloques de navegación fluyen normal. */
+  .dsb {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    align-self: stretch;
+    min-width: 0;
+  }
+  .dsb__flow, .dsb__sticky { display: grid; gap: 1.1rem; }
+  .dsb__sticky { position: sticky; top: calc(var(--header-height) + 1.5rem); }
+
+  /* --- Tarjeta base: mismo lenguaje que BlogSidebar/PostCard ---- */
+  .sb-card {
+    background: var(--color-white);
+    border: var(--border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: 1.15rem 1.2rem 1.2rem;
+  }
+  .sb-title {
+    margin: 0 0 0.75rem;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-gray-soft);
+  }
+  .sb-more {
+    display: inline-block;
+    margin-top: 0.85rem;
+    padding-top: 0.75rem;
+    border-top: var(--border);
+    width: 100%;
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.82rem;
+    text-decoration: none;
+  }
+  .sb-more:hover { text-decoration: underline; }
+
+  /* --- Listas con conteo (municipios, estados) ------------------ */
+  .sb-cats { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-cats a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    min-height: 40px;
+    padding: 0.45rem 0.6rem;
+    border-left: 2px solid transparent;
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .sb-cats a:hover { color: var(--color-primary); background: var(--color-light); }
+  .sb-cats a.is-active {
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: 800;
+  }
+  .sb-cats__n {
+    flex-shrink: 0;
+    min-width: 22px;
+    padding: 0.05rem 0.35rem;
+    border-radius: 2px;
+    background: var(--color-light);
+    border: 1px solid var(--color-gray-light);
+    color: var(--color-gray-soft);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  /* --- Chips de familias --------------------------------------- */
+  .sb-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .sb-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--color-gray-light);
+    border-radius: 2px;
+    background: var(--color-light);
+    color: var(--color-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sb-chip:hover { background: var(--color-primary-light); border-color: var(--color-primary); color: var(--color-primary); }
+
+  /* --- Lista simple de equipo ---------------------------------- */
+  .sb-links { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-links li + li { border-top: var(--border); }
+  .sb-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    color: var(--color-dark);
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sb-links a::after { content: '›'; color: var(--color-primary); font-weight: 800; }
+  .sb-links a:hover { color: var(--color-primary); }
+
+  /* --- Guías --------------------------------------------------- */
+  .sb-posts { list-style: none; margin: 0; padding: 0; display: grid; }
+  .sb-posts li + li { border-top: var(--border); }
+  .sb-posts a { display: grid; gap: 0.18rem; padding: 0.7rem 0; text-decoration: none; }
+  .sb-posts li:first-child a { padding-top: 0; }
+  .sb-posts li:last-child a { padding-bottom: 0; }
+  .sb-posts__cat { font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-primary); }
+  .sb-posts__title { color: var(--color-dark); font-size: 0.85rem; font-weight: 700; line-height: 1.35; }
+  .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
+
+  /* --- Índice de la página ------------------------------------- */
+  .sb-anchors { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.1rem; }
+  .sb-anchors a {
+    display: block;
+    padding: 0.4rem 0.6rem;
+    border-left: 2px solid var(--color-gray-light);
+    color: var(--color-gray);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  .sb-anchors a:hover { color: var(--color-primary); background: var(--color-light); border-left-color: var(--color-primary); }
+
+  /* --- Tarjeta de cotización (idéntica a BlogSidebar) ----------- */
+  .sb-quote {
+    background: var(--color-ink);
+    border-radius: var(--radius-lg);
+    padding: 1.3rem 1.2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .sb-quote::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: repeating-linear-gradient(115deg, var(--color-accent) 0 14px, var(--color-ink-soft) 14px 28px);
+  }
+  .sb-quote__title { margin: 0.35rem 0 0.35rem; color: var(--color-white); font-weight: 800; font-size: 1rem; line-height: 1.3; }
+  .sb-quote__text { margin: 0 0 1rem; color: #b9bec5; font-size: 0.84rem; }
+  .sb-quote__wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    background: var(--color-wa);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    min-height: 46px;
+  }
+  .sb-quote__wa:hover { background: var(--color-wa-dark); }
+  .sb-quote__tel { display: block; margin-top: 0.7rem; text-align: center; color: var(--color-accent); font-weight: 800; text-decoration: none; font-size: 0.95rem; }
+  .sb-quote__horario { margin: 0.2rem 0 0; text-align: center; color: #8a9099; font-size: 0.76rem; }
+
+  /* --- Responsive: debajo del listado, en rejilla, sin sticky ---- */
+  @media (max-width: 1024px) {
+    .dsb { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .dsb__flow, .dsb__sticky { display: contents; }
+    .sb-card--toc { display: none; }
+    .sb-quote { grid-column: 1 / -1; }
+  }
+  @media (max-width: 640px) {
+    .dsb { grid-template-columns: 1fr; }
+  }
+</style>

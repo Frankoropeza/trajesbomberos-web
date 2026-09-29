@@ -18,10 +18,10 @@ const description =
   'Cotizar trajes para bomberos: escríbenos por WhatsApp con tu operación y tallas, o llama y te ayudamos a especificar. Cotización por escrito con ficha técnica.';
 
 const menuItems = [
-  { label: 'WhatsApp', href: '#whatsapp' },
+  { label: 'Cotizar trajes por WhatsApp', href: '#whatsapp' },
   { label: 'Qué incluir en tu mensaje', href: '#mensaje' },
-  { label: 'Escríbenos', href: '#formulario' },
-  { label: 'Todos los trajes', href: '/trajes/' },
+  { label: 'Formulario para cotizar trajes', href: '#formulario' },
+  { label: 'Trajes para bomberos por familia', href: '/trajes/' },
 ];
 
 const faqs = [
@@ -82,14 +82,14 @@ const faqs = [
   <div class="section">
     <div class="container">
       <section id="whatsapp" class="block">
-        <SectionHeading
+        <SectionHeading clave="whatsapp"
           eyebrow="La vía rápida"
           title="Escríbenos por WhatsApp"
           description="Es el canal por el que resolvemos casi todo: dudas de familia, tallas, fichas técnicas y cotizaciones."
         />
         <div class="contacto-vias">
           <a class="btn btn--wa" href={waUrl('Hola, quiero cotizar trajes para bomberos.')} target="_blank" rel="noopener">
-            Cotizar por WhatsApp
+            Cotizar trajes por WhatsApp
           </a>
           <a class="contacto-alt" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
           <a class="contacto-alt" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
@@ -97,7 +97,7 @@ const faqs = [
       </section>
 
       <section id="mensaje" class="block">
-        <SectionHeading
+        <SectionHeading clave="primer-mensaje"
           eyebrow="Para cotizar más rápido"
           title="Qué incluir en tu primer mensaje"
         />
@@ -110,7 +110,7 @@ const faqs = [
       </section>
 
       <section id="formulario" class="block">
-        <SectionHeading
+        <SectionHeading clave="faq"
           eyebrow="Preguntas frecuentes"
           title="Dudas antes de escribirnos"
         />

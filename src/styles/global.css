@@ -74,7 +74,6 @@ th { font-family: var(--font-display); }
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background 0.15s linear, box-shadow 0.15s linear;
 }
 .btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
 .btn:hover { background: var(--color-primary-dark); box-shadow: var(--shadow); }
@@ -127,6 +126,10 @@ th { font-family: var(--font-display); }
 }
 /* 6 tarjetas → 3 columnas: dos filas completas, sin huecos */
 .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
+/* Módulo de blog pre-footer: 4 fichas → 4 / 2 / 1, sin huérfanas */
+.grid-cards--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1023px) { .grid-cards--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 559px)  { .grid-cards--4 { grid-template-columns: 1fr; } }
 @media (max-width: 1200px) { .grid-cards { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 860px)  {
   .grid-cards, .grid-cards--3 { grid-template-columns: repeat(2, 1fr); }
@@ -291,16 +294,13 @@ th { font-family: var(--font-display); }
   scroll-behavior: auto;
 }
 
-/* Excepción única: feedback de botón. Color y sombra, sin
-   desplazamiento ni escala. */
-.btn,
-.ctab__btn,
-.prod__cta,
-.sb-card__wa,
-.wa-float,
-.section-menu__cta,
-.cform__submit,
-button[type='submit'] {
-  transition: background-color 0.12s linear, border-color 0.12s linear,
-              color 0.12s linear, box-shadow 0.12s linear !important;
+/* Rendimiento (CWV, 2026-09-29): las secciones fuera de pantalla no se
+   estilan, maquetan ni pintan hasta acercarse al viewport. Recorta el
+   trabajo de «Style & Layout» del primer render (DOM de ~2 900 nodos).
+   contain-intrinsic-size «auto» recuerda el alto real una vez pintadas,
+   así que no hay saltos al volver a subir. */
+main > .section:not(:first-child),
+.site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }

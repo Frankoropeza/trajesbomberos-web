@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio registra 30 estaciones de bomberos en Chihuahua, presentes en 12 municipios. Cada ficha indica corporación y rol, además de ubicación, dirección, teléfono cuando hay fuente pública y la precisión con que puede localizarse la sede.",
+ "descRight": [
+  "Chihuahua cuenta con 27 registros municipales, 2 de aeropuerto y uno de bomberos voluntarios. Juárez concentra 11 fichas y el municipio de Chihuahua 9; los otros 10 municipios registran una cada uno. Hay 2 centrales y 16 subestaciones, principalmente dentro de las redes municipales de Juárez y Chihuahua. También se muestran referencias en Aldama, Camargo, Delicias y otros municipios.",
+  "Navega por municipio para encontrar bomberos en Chihuahua y distinguir centrales, subestaciones o sedes únicas. Las fichas muestran mapa, dirección y teléfono cuando existe fuente. En una emergencia marca 911; los datos de contacto directos se publican para trámites, visitas, capacitación o donaciones, nunca como sustituto del auxilio inmediato."
+ ],
+ "municipiosDuo": [
+  "Juárez reúne 11 estaciones y el municipio de Chihuahua 9, los dos bloques más extensos del listado. Aldama, Camargo, Cuauhtémoc, Delicias, Hidalgo del Parral, Jiménez, Meoqui, Nuevo Casas Grandes, Ojinaga y Saucillo tienen una ficha. Para bomberos en la capital, entra al bloque del municipio de Chihuahua y revisa el rol de cada sede.",
+  "La relación abarca 30 referencias en 12 municipios, con mayor densidad registrada en Juárez y Chihuahua. No constituye un conteo exhaustivo de estaciones de bomberos en Chihuahua: el directorio incorpora nuevas fichas cuando se comprueban con fuente pública. La precisión del mapa se consulta individualmente en cada sede."
+ ],
+ "estacionesDuo": [
+  "La ficha explica si se trata de corporación municipal, voluntaria o de aeropuerto, y si su rol es central, subestación o sede única. Aparecen el Heroico Cuerpo de Bomberos de Ciudad Juárez y el Heroico Cuerpo de Bomberos y Rescate de Chihuahua. Esta estructura permite leer redes con varias ubicaciones sin confundirlas entre sí.",
+  "Dirección y teléfono se muestran solo cuando la fuente permite respaldarlos; el mapa señala ubicación exacta o aproximada. Usa esa información para una gestión programada y valida el dato antes de trasladarte. Para pedir apoyo ante una urgencia, no dependas de la ficha: llama al 911 desde cualquier punto de Chihuahua."
+ ],
+ "coberturaDuo": [
+  "Incendios estructurales está declarado en las 30 fichas. Incendios forestales aparece en 6, protección civil y atención prehospitalaria en 5, y capacitación en 4. Rescate vehicular figura en 3 y salvamento aeroportuario en 2. Son categorías disponibles en registros, no un catálogo fijo por estación.",
+  "El directorio reúne teléfono en 7 fichas, dirección en 23 y ubicación exacta en 14; 2 tienen confianza alta. Estos indicadores son útiles al comparar la información territorial de las estaciones de bomberos en Chihuahua y al decidir si se requiere confirmar una dirección por otra vía antes de una visita."
+ ],
+ "equipoDuo": [
+  "Incendios estructurales, forestales, rescate vehicular, materiales peligrosos y salvamento aeroportuario están entre los servicios declarados. Para fuego urbano consulta <a href=\"/trajes/estructural/\">trajes estructurales para bomberos</a>; las maniobras de vehículos pueden requerir <a href=\"/trajes/extricacion/\">equipo para extricación</a> definido según su procedimiento operativo.",
+  "La protección forestal o de aproximación debe elegirse de acuerdo con el escenario específico y la valoración de riesgo. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Chihuahua. La propuesta se enfoca en el servicio declarado y en las condiciones de uso que comunique la corporación."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Chihuahua?",
+   "a": "El directorio registra 30 estaciones de bomberos en Chihuahua, distribuidas en 12 municipios. Comprende 27 estaciones municipales, 2 de aeropuerto y una de bomberos voluntarios, con 2 centrales y 16 subestaciones. No asegura contener todas las sedes estatales; agrega referencias al confirmarlas mediante fuente pública."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones de bomberos en Chihuahua?",
+   "a": "Juárez concentra 11 fichas y el municipio de Chihuahua 9; los otros 10 municipios registrados tienen una cada uno. Para buscar bomberos en Chihuahua, selecciona el municipio de Chihuahua en el índice y compara central, subestaciones y datos de localización de cada corporación antes de realizar cualquier gestión presencial."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Chihuahua?",
+   "a": "La mayoría de las fichas en Chihuahua corresponde a corporaciones municipales, aunque también hay un cuerpo de bomberos voluntarios y estaciones de aeropuerto. El directorio incluye el Heroico Cuerpo de Bomberos de Ciudad Juárez, el Cuerpo de Bomberos de Cuauhtémoc y el SSEI del Aeropuerto Internacional Abraham González. Cada ficha identifica el tipo de operador."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Chihuahua?",
+   "a": "En una emergencia en Chihuahua llama al 911. Los teléfonos que aparecen en algunas fichas son contactos con fuente pública para trámites, visitas, capacitación o donaciones, y no deben emplearse para solicitar respuesta urgente. Si tu consulta con bomberos en Chihuahua no es urgente, ubica primero la sede y corporación correctas."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Chihuahua?",
+   "a": "Para bomberos en Chihuahua cotizamos trajes y equipo conforme a incendios, rescate y los riesgos de la operación. La cotización lleva ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Puedes pedir una propuesta para protección estructural, forestal, extricación o materiales peligrosos."
+  }
+ ]
+}

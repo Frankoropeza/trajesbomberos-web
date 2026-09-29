@@ -12,7 +12,6 @@ import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
 import { tilesPiezas } from '@lib/catalogo/tiles';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
 import { WA_MESSAGES } from '@config/site';
 import { PIEZAS } from '@lib/piezas';
@@ -37,12 +36,12 @@ const path = `/trajes/${pz.familia}/${pz.slug}/`;
 // Hermanas: las demás piezas cotizables de la misma familia
 
 const menuItems = [
-  { label: 'Qué es', href: '#que-es' },
+  { label: pz.nombre, href: '#que-es' },
   { label: 'Ficha técnica', href: '#ficha' },
-  { label: 'Qué incluye', href: '#incluye' },
+  { label: 'Qué incluye la cotización', href: '#incluye' },
   { label: 'Cómo elegir', href: '#comparativa' },
-  { label: 'Errores', href: '#errores' },
-  { label: 'Preguntas', href: '#faq' },
+  { label: 'Errores al comprar', href: '#errores' },
+  { label: 'Preguntas frecuentes', href: '#faq' },
 ];
 
 const pageIndex = [
@@ -50,7 +49,7 @@ const pageIndex = [
   { label: 'Ficha técnica completa', href: '#ficha' },
   { label: 'Qué incluye y qué no', href: '#incluye' },
   { label: 'Cómo elegir entre opciones', href: '#comparativa' },
-  { label: 'Dónde se usa', href: '#aplicaciones' },
+  { label: `Dónde se usa ${pz.nombre.toLowerCase()}`, href: '#aplicaciones' },
   { label: 'Errores al comprar', href: '#errores' },
   { label: 'Preguntas frecuentes', href: '#faq' },
 ];
@@ -83,6 +82,7 @@ const pageIndex = [
     categoria: familia.nombreWa,
     url: path,
   }}
+  footerCta={{ title: presetCategoria(pz.nombre).title, text: presetCategoria(pz.nombre).text, secondary: { label: 'Comparar familias de trajes para bomberos', href: '/trajes/' } }}
 >
   <div class="section">
     <div class="container layout-grid">
@@ -95,7 +95,7 @@ const pageIndex = [
             paragraphs={pz.resumen}
             points={pz.puntosClave}
             images={pz.images}
-            ctaLabel="Cotizar esta pieza"
+            ctaLabel={`Cotizar ${pz.nombre.toLowerCase()}`}
             ctaHref={waUrl(WA_MESSAGES.categoria(pz.nombre))}
             external
           />
@@ -104,7 +104,7 @@ const pageIndex = [
 
         <!-- 2 · Ficha técnica -->
         <section id="ficha" class="block">
-          <SectionHeading
+          <SectionHeading clave="ficha"
             eyebrow="Ficha técnica"
             title="Especificación completa"
             description="Cópiala tal cual a tu requisición o a tu anexo técnico. Si una oferta no puede llenar estos campos, todavía no es comparable."
@@ -114,7 +114,7 @@ const pageIndex = [
 
         <!-- 3 · Qué incluye -->
         <section id="incluye" class="block">
-          <SectionHeading
+          <SectionHeading clave="incluye"
             eyebrow="Alcance"
             title="Qué incluye y qué se cotiza aparte"
             description="Para que no haya sorpresas al comparar dos cotizaciones que parecen iguales."
@@ -137,7 +137,7 @@ const pageIndex = [
 
         <!-- 4 · Comparativa de decisión -->
         <section id="comparativa" class="block">
-          <SectionHeading
+          <SectionHeading clave="comparativa"
             eyebrow="Cómo elegir"
             title={pz.comparativa.titulo}
             description={pz.comparativa.intro}
@@ -170,7 +170,7 @@ const pageIndex = [
 
         <!-- 5 · Aplicaciones -->
         <section id="aplicaciones" class="block">
-          <SectionHeading
+          <SectionHeading clave="aplicaciones"
             eyebrow="Dónde se usa"
             title="Operaciones que lo requieren"
           />
@@ -186,7 +186,7 @@ const pageIndex = [
 
         <!-- 6 · Errores -->
         <section id="errores" class="block">
-          <SectionHeading
+          <SectionHeading clave="errores"
             eyebrow="Antes de firmar"
             title="Errores frecuentes al comprar esta pieza"
             description="Publicados aunque no nos compres. Si detectas alguno en una oferta que estás evaluando, ya te sirvió la visita."
@@ -206,7 +206,7 @@ const pageIndex = [
 
         <!-- 7 · FAQ -->
         <section id="faq" class="block">
-          <SectionHeading
+          <SectionHeading clave="faq"
             eyebrow="Preguntas frecuentes"
             title={`Dudas sobre ${pz.nombre.toLowerCase()}`}
           />
@@ -215,7 +215,7 @@ const pageIndex = [
 
         <!-- 8 · Enlazado contextual -->
         <section id="relacionados" class="block">
-          <SectionHeading
+          <SectionHeading clave="relacionados"
             eyebrow="Sigue leyendo"
             title="Lo que suele revisarse junto con esta pieza"
           />
@@ -243,7 +243,7 @@ const pageIndex = [
   <!-- 7 · Piezas hermanas -->
   <section class="section section--alt" id="hermanas">
     <div class="container">
-      <SectionHeading
+      <SectionHeading clave="hermanas"
         eyebrow={familia.nombreWa}
         title="Otras piezas de esta familia"
         description="Se cotizan por separado o dentro del conjunto completo."
@@ -251,14 +251,11 @@ const pageIndex = [
       <TileGrid cols={3}>
         {tilesPiezas(familia, pz.nombreCard).map((t) => <TileCard {...t} />)}
       </TileGrid>
-      <p class="volver"><a href={`/trajes/${pz.familia}/`}>← Volver a {familia.nombreWa.toLowerCase()}</a></p>
+      <p class="volver"><a href={`/trajes/${pz.familia}/`}>← {familia.nombreWa}: todas las piezas</a></p>
     </div>
   </section>
 
   <GuiasTecnicas ruta={path} tema={temaEnFrase(pz.nombre)} />
-
-  <!-- 8 · CTA de cierre -->
-  <CTABanner variant="dark" {...presetCategoria(pz.nombre)} />
 </PageLayout>
 
 <style>

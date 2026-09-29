@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 10 124 142" role="img" aria-label="LORICA · Trajes para bomberos"><title>LORICA · Trajes para bomberos</title><defs><clipPath id="lci"><path d="M22 30 L80 14 L138 30 L138 84 C138 116 112 136 80 148 C48 136 22 116 22 84 Z"/></clipPath></defs>
+<path d="M22 30 L80 14 L138 30 L138 84 C138 116 112 136 80 148 C48 136 22 116 22 84 Z" fill="#1A1A1A"/>
+<g clip-path="url(#lci)">
+<polygon points="0,56 80,78 160,56 160,64 80,86 0,64" fill="#A7ADB4"/>
+<polygon points="0,64 80,86 160,64 160,94 80,116 0,94" fill="#C8102E"/>
+<polygon points="0,94 80,116 160,94 160,102 80,124 0,102" fill="#A7ADB4"/>
+</g></svg>

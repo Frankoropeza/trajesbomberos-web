@@ -1,5 +1,6 @@
 ---
-title: "Vida útil del traje de bombero: los diez años y lo que pasa antes"
+title: "Vida útil del traje de bombero"
+titleAccent: "los diez años y lo que pasa antes"
 eyebrow: "Vida útil y servicio · NFPA 1850"
 lead: "El reloj no arranca cuando recibes el traje: arranca en la fecha de fabricación. Y entre esa fecha y el retiro hay un régimen de inspección, lavado y registro que casi ninguna estación mexicana lleva completo."
 descRight:
@@ -19,7 +20,7 @@ productos:
   - "/trajes/estructural/pantalonera/"
   - "/trajes/extricacion/"
 fecha: 2026-06-16
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Vida útil del traje de bombero | NFPA 1850 | México"
 description: "Vida útil del traje de bombero: por qué se retira a los diez años de fabricado, qué exige la NFPA 1850 en inspección y lavado, y cómo llevar la bitácora."
 keywords:

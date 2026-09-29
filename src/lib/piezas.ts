@@ -79,13 +79,13 @@ const HAZMAT_PIEZAS: Pieza[] = [
     relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Guantes químicos compatibles', href: '/trajes/hazmat/guantes-quimicos/' }, { label: 'Familia Hazmat', href: '/trajes/hazmat/' }],
   },
   {
-    slug: 'traje-nivel-b', familia: 'hazmat', nombreCard: 'Traje nivel B', nombre: 'Traje químico nivel B', seoTitle: 'Traje químico nivel B | Hazmat | México', seoDescription: 'Traje químico nivel B para salpicadura peligrosa: diferencias frente al encapsulado, compatibilidad de la barrera y configuración con ERA exterior.', keywords: ['traje nivel b', 'equipo Hazmat', 'protección química'], eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel B', h1Accent: 'para salpicadura peligrosa', lead: 'Protección respiratoria autónoma y barrera química para operaciones con salpicadura, seleccionadas contra el agente y no por apariencia.', descRight: ['El nivel B conserva una protección respiratoria alta mediante ERA, pero coloca ese equipo fuera del traje. La prenda se selecciona para el contacto esperado con líquido y sus uniones se construyen para impedir que la salpicadura llegue a la ropa o piel.', 'No es una versión económica de nivel A ni se decide por costumbre. Si existe riesgo de vapor que requiera encapsular el equipo de aire, nivel B deja de ser la respuesta adecuada.'], meta: ['Nivel B', 'Salpicadura química', 'ERA exterior', 'NFPA 1990'], resumen: ['Un traje químico nivel B combina prenda de barrera, guantes, botas y equipo de respiración autónoma cuando el peligro respiratorio exige aire independiente, pero la exposición cutánea evaluada corresponde principalmente a salpicadura líquida. Su utilidad está en equilibrar protección y movilidad sin convertir una tarea líquida en una especificación de vapor que no corresponde.', 'Antes de cotizar, describe el agente, concentración, volumen posible, presión, temperatura y tarea. Esa información permite revisar la tabla de compatibilidad, decidir si la prenda debe ser reutilizable o desechable y definir cómo se traslapa con guantes y botas. El nivel termina donde empieza la incompatibilidad: no se extrapola de una sustancia a otra.', 'Nivel B parte de una distinción operativa: el aire autónomo protege la respiración, mientras que la prenda corporal se elige por contacto líquido y salpicadura previstos. Por eso el ERA va exterior y debe quedar accesible a su usuario y compañero. Antes de entrar se revisan arnés, correas, válvulas y presión sin que el traje los cubra o impida la salida. Si la evaluación establece vapor peligroso para el conjunto completo, esta configuración deja de corresponder aunque el líquido sea la fuente visible del incidente.', 'Para definir la barrera, documenta altura de salpicadura, presión de una línea o recipiente, posibilidad de rociado, temperatura, volumen y duración de la maniobra. Revisa cierre, puños, guantes, botas y forma de traslape como una ruta continua: el traje puede resistir el agente y fallar por una manga mal unida. La talla tiene que permitir agacharse, subir escalones, mover herramientas y manipular el regulador sin tensar costuras. Ensaya estas acciones con el conjunto armado antes de liberar la compra.', 'La salida exige descontaminar el exterior sin contaminar arnés, máscara ni persona. Establece un área para retirar guantes, prenda y botas en el orden aplicable al agente, con apoyo de un observador. Después inspecciona la barrera y el equipo respiratorio por separado; no reutilices una pieza sólo porque no presenta manchas. El registro de sustancia, tiempo, condición y acción de limpieza permite decidir el retorno a servicio con un procedimiento controlado.'], puntosClave: ['ERA exterior con protección respiratoria autónoma', 'Barrera corporal elegida para salpicadura líquida', 'Sellado de manga, guante, bota y cierre definido en la orden', 'Compatibilidad por sustancia y condiciones de exposición', 'No es protección automática frente a vapor ni fuego', 'Retiro posterior a descontaminación'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con ERA exterior' }], fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel', valor: 'B conforme al análisis de riesgo', nota: 'Protección respiratoria alta y barrera para líquido' }, { campo: 'Respiración', valor: 'ERA exterior', nota: 'Se verifica la interfase con la prenda' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'La configuración concreta se declara por fabricante' }] }, { grupo: 'Compra', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración', nota: 'Base de compatibilidad' }, { campo: 'Exposición', valor: 'Salpicadura esperada', nota: 'Registrar presión, temperatura y duración' }, { campo: 'Barrera', valor: 'Material declarado', nota: 'No asumir equivalencias entre materiales' }] }], incluye: ['Prenda química en configuración nivel B', 'Especificación de interfaces solicitadas', 'Ficha técnica del material'], noIncluye: ['ERA', 'Cartuchos o respirador purificador', 'Descontaminación operativa'], errores: [{ error: 'Usar nivel B ante vapor sin evaluación', realidad: 'El ERA exterior no queda encapsulado; si el riesgo demanda esa barrera, corresponde otra configuración.' }, { error: 'Comprar sin concentración', realidad: 'Un mismo agente puede requerir una respuesta distinta según concentración y temperatura.' }, { error: 'Ignorar botas y guantes', realidad: 'Las extremidades son vías de entrada si sus uniones no son compatibles.' }], aplicaciones: [{ titulo: 'Control de derrame', desc: 'Tareas con posible salpicadura líquida y protección respiratoria autónoma.' }, { titulo: 'Descontaminación técnica', desc: 'Operaciones donde la barrera se selecciona por el agente identificado.' }, { titulo: 'Reconocimiento delimitado', desc: 'Ingreso con plan de salida y tiempo de aire controlado.' }], faqs: [{ q: '¿Qué diferencia hay con nivel A?', a: 'Nivel A encapsula el ERA para peligro de vapor; nivel B usa ERA exterior y se selecciona para salpicadura líquida.' }, { q: '¿Lleva respirador?', a: 'Puede requerir ERA cuando el ambiente no es respirable. La selección depende del análisis de riesgo.' }, { q: '¿Sirve ante cualquier líquido?', a: 'No; confirma compatibilidad para el agente y condiciones reales.' }, { q: '¿Protege contra fuego?', a: 'No se asume esa capacidad.' }, { q: '¿Cómo se limpia?', a: 'Con el procedimiento de descontaminación aplicable antes de retirarlo.' }], sinonimos: ['traje nivel B', 'traje contra salpicadura química', 'equipo Hazmat nivel B'], sinonimosNota: 'El nombre no sustituye la tabla de compatibilidad ni el análisis del incidente.', comparativa: { titulo: 'Nivel B o nivel C', intro: 'El respirador y la información disponible sobre el ambiente son la diferencia decisiva.', columnas: ['Criterio', 'Nivel B', 'Nivel C'], filas: [['Respiración', 'ERA', 'Purificadora cuando procede'], ['Ambiente', 'Puede ser peligroso para respirar', 'Contaminante conocido y controlado'], ['Barrera', 'Salpicadura', 'Según exposición'], ['Decisión', 'Mayor independencia', 'No usar si faltan condiciones']] }, relacionados: [{ label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }, { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }] },
+    slug: 'traje-nivel-b', familia: 'hazmat', nombreCard: 'Traje nivel B', nombre: 'Traje químico nivel B', seoTitle: 'Traje químico nivel B | Hazmat | México', seoDescription: 'Traje químico nivel B para salpicadura peligrosa: diferencias frente al encapsulado, compatibilidad de la barrera y configuración con ERA exterior.', keywords: ['traje químico nivel B', 'equipo Hazmat', 'protección química'], eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel B', h1Accent: 'para salpicadura peligrosa', lead: 'Protección respiratoria autónoma y barrera química para operaciones con salpicadura, seleccionadas contra el agente y no por apariencia.', descRight: ['El nivel B conserva una protección respiratoria alta mediante ERA, pero coloca ese equipo fuera del traje. La prenda se selecciona para el contacto esperado con líquido y sus uniones se construyen para impedir que la salpicadura llegue a la ropa o piel.', 'No es una versión económica de nivel A ni se decide por costumbre. Si existe riesgo de vapor que requiera encapsular el equipo de aire, nivel B deja de ser la respuesta adecuada.'], meta: ['Nivel B', 'Salpicadura química', 'ERA exterior', 'NFPA 1990'], resumen: ['Un traje químico nivel B combina prenda de barrera, guantes, botas y equipo de respiración autónoma cuando el peligro respiratorio exige aire independiente, pero la exposición cutánea evaluada corresponde principalmente a salpicadura líquida. Su utilidad está en equilibrar protección y movilidad sin convertir una tarea líquida en una especificación de vapor que no corresponde.', 'Antes de cotizar, describe el agente, concentración, volumen posible, presión, temperatura y tarea. Esa información permite revisar la tabla de compatibilidad, decidir si la prenda debe ser reutilizable o desechable y definir cómo se traslapa con guantes y botas. El nivel termina donde empieza la incompatibilidad: no se extrapola de una sustancia a otra.', 'Nivel B parte de una distinción operativa: el aire autónomo protege la respiración, mientras que la prenda corporal se elige por contacto líquido y salpicadura previstos. Por eso el ERA va exterior y debe quedar accesible a su usuario y compañero. Antes de entrar se revisan arnés, correas, válvulas y presión sin que el traje los cubra o impida la salida. Si la evaluación establece vapor peligroso para el conjunto completo, esta configuración deja de corresponder aunque el líquido sea la fuente visible del incidente.', 'Para definir la barrera, documenta altura de salpicadura, presión de una línea o recipiente, posibilidad de rociado, temperatura, volumen y duración de la maniobra. Revisa cierre, puños, guantes, botas y forma de traslape como una ruta continua: el traje puede resistir el agente y fallar por una manga mal unida. La talla tiene que permitir agacharse, subir escalones, mover herramientas y manipular el regulador sin tensar costuras. Ensaya estas acciones con el conjunto armado antes de liberar la compra.', 'La salida exige descontaminar el exterior sin contaminar arnés, máscara ni persona. Establece un área para retirar guantes, prenda y botas en el orden aplicable al agente, con apoyo de un observador. Después inspecciona la barrera y el equipo respiratorio por separado; no reutilices una pieza sólo porque no presenta manchas. El registro de sustancia, tiempo, condición y acción de limpieza permite decidir el retorno a servicio con un procedimiento controlado.'], puntosClave: ['ERA exterior con protección respiratoria autónoma', 'Barrera corporal elegida para salpicadura líquida', 'Sellado de manga, guante, bota y cierre definido en la orden', 'Compatibilidad por sustancia y condiciones de exposición', 'No es protección automática frente a vapor ni fuego', 'Retiro posterior a descontaminación'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con ERA exterior' }], fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel', valor: 'B conforme al análisis de riesgo', nota: 'Protección respiratoria alta y barrera para líquido' }, { campo: 'Respiración', valor: 'ERA exterior', nota: 'Se verifica la interfase con la prenda' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'La configuración concreta se declara por fabricante' }] }, { grupo: 'Compra', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración', nota: 'Base de compatibilidad' }, { campo: 'Exposición', valor: 'Salpicadura esperada', nota: 'Registrar presión, temperatura y duración' }, { campo: 'Barrera', valor: 'Material declarado', nota: 'No asumir equivalencias entre materiales' }] }], incluye: ['Prenda química en configuración nivel B', 'Especificación de interfaces solicitadas', 'Ficha técnica del material'], noIncluye: ['ERA', 'Cartuchos o respirador purificador', 'Descontaminación operativa'], errores: [{ error: 'Usar nivel B ante vapor sin evaluación', realidad: 'El ERA exterior no queda encapsulado; si el riesgo demanda esa barrera, corresponde otra configuración.' }, { error: 'Comprar sin concentración', realidad: 'Un mismo agente puede requerir una respuesta distinta según concentración y temperatura.' }, { error: 'Ignorar botas y guantes', realidad: 'Las extremidades son vías de entrada si sus uniones no son compatibles.' }], aplicaciones: [{ titulo: 'Control de derrame', desc: 'Tareas con posible salpicadura líquida y protección respiratoria autónoma.' }, { titulo: 'Descontaminación técnica', desc: 'Operaciones donde la barrera se selecciona por el agente identificado.' }, { titulo: 'Reconocimiento delimitado', desc: 'Ingreso con plan de salida y tiempo de aire controlado.' }], faqs: [{ q: '¿Qué diferencia hay con nivel A?', a: 'Nivel A encapsula el ERA para peligro de vapor; nivel B usa ERA exterior y se selecciona para salpicadura líquida.' }, { q: '¿Lleva respirador?', a: 'Puede requerir ERA cuando el ambiente no es respirable. La selección depende del análisis de riesgo.' }, { q: '¿Sirve ante cualquier líquido?', a: 'No; confirma compatibilidad para el agente y condiciones reales.' }, { q: '¿Protege contra fuego?', a: 'No se asume esa capacidad.' }, { q: '¿Cómo se limpia?', a: 'Con el procedimiento de descontaminación aplicable antes de retirarlo.' }], sinonimos: ['traje nivel B', 'traje contra salpicadura química', 'equipo Hazmat nivel B'], sinonimosNota: 'El nombre no sustituye la tabla de compatibilidad ni el análisis del incidente.', comparativa: { titulo: 'Nivel B o nivel C', intro: 'El respirador y la información disponible sobre el ambiente son la diferencia decisiva.', columnas: ['Criterio', 'Nivel B', 'Nivel C'], filas: [['Respiración', 'ERA', 'Purificadora cuando procede'], ['Ambiente', 'Puede ser peligroso para respirar', 'Contaminante conocido y controlado'], ['Barrera', 'Salpicadura', 'Según exposición'], ['Decisión', 'Mayor independencia', 'No usar si faltan condiciones']] }, relacionados: [{ label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }, { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }] },
 ];
 
 HAZMAT_PIEZAS.push(
   {
     slug: 'traje-nivel-c', familia: 'hazmat', nombreCard: 'Traje nivel C', nombre: 'Traje químico nivel C',
-    seoTitle: 'Traje químico nivel C | Hazmat | México', seoDescription: 'Traje químico nivel C para contaminante conocido: barrera corporal, respirador purificador, programa de cartuchos y criterios para abandonar el área.', keywords: ['traje nivel C', 'equipo Hazmat nivel C', 'respirador purificador químico'],
+    seoTitle: 'Traje químico nivel C | Hazmat | México', seoDescription: 'Traje químico nivel C para contaminante conocido: barrera corporal, respirador purificador, programa de cartuchos y criterios para abandonar el área.', keywords: ['traje químico nivel C', 'equipo Hazmat nivel C', 'respirador purificador químico'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel C', h1Accent: 'para contaminante conocido', lead: 'Barrera química con respiración purificadora únicamente cuando el agente, la concentración y la atmósfera permiten controlar el riesgo.',
     descRight: ['Nivel C no se usa por comodidad ni como primera entrada. Exige conocer el contaminante, su concentración y los límites del respirador seleccionado.', 'La ropa, cartuchos, guantes y botas se revisan como un sistema. Si falla el monitoreo, el ajuste facial o el programa de cambio, la configuración deja de ser válida.'], meta: ['Nivel C', 'Respirador purificador', 'Contaminante conocido', 'NOM-017-STPS-2008'],
     resumen: ['El traje químico nivel C se selecciona cuando el contaminante está identificado, la concentración medida está dentro del alcance del respirador purificador y la atmósfera permite esa forma de protección. No es una alternativa ligera de nivel B para ingresar primero: depende de información previa, monitoreo y un procedimiento que establezca cuándo abandonar el área. Si existe deficiencia de oxígeno, concentración desconocida, posibilidad de cambio rápido o una condición que rebasa el cartucho, la selección debe cambiar antes del ingreso.', 'El respirador es la decisión crítica. Identifica contaminante, cartucho compatible, programa de cambio, ajuste facial y limitaciones de uso. Una máscara bien elegida no compensa un cartucho incorrecto; tampoco un cartucho correcto compensa barba, sello deficiente o una atmósfera que no puede purificarse. La persona debe reconocer señales de salida y no esperar a percibir olor o irritación para concluir que la protección dejó de ser apropiada.', 'En la orden se definen prenda, respirador, cartuchos, guantes, botas y el método de unión entre cada pieza. Revisa movilidad de brazos, visibilidad, acceso a radio y comunicación en zona segura. La talla debe permitir agacharse y subir escalones sin abrir puños, tobillos o cierre. La barrera se escoge con la tabla de compatibilidad del fabricante para sustancia, concentración, temperatura y exposición; no se deduce por el color o por la etiqueta de nivel.', 'El programa de cambio de cartuchos se escribe antes de exponer al usuario. Se registra el cartucho instalado, fecha de apertura, agente para el que se autorizó y cualquier evento que obligue a desecharlo. Nivel C conserva su sentido mientras el monitoreo confirme que la concentración sigue dentro del alcance del respirador. Si cambian la lectura, el olor, la irritación o las condiciones del área, la persona sale y se reevalúa la protección.', 'La colocación debe practicarse con la misma protección ocular, casco y radio que acompañarán la tarea. Una capucha mal acomodada, patillas o vello facial pueden desplazar el sello. Antes de cruzar el límite, un compañero revisa cierre, capucha, puños y traslapes mientras el usuario flexiona codos, hombros y rodillas. Esa verificación convierte una lista de componentes en una configuración que no abre rutas de entrada al moverse.', 'El retiro inicia con descontaminación exterior y continúa con una secuencia que no lleve contaminante a la cara. Cartuchos usados se separan de los sellados y se etiquetan para evitar que un relevo reciba un componente abierto sin historial. Registra agente, condición de la prenda y acción aplicada; una barrera dañada, una exposición fuera de su alcance o un cartucho sin trazabilidad no regresan a servicio por apariencia.'],
@@ -346,11 +346,11 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Anatomía del traje: qué hace cada una de las tres capas",
-                "href": "/#anatomia"
+                "href": "/blog/uniforme-de-bombero-que-incluye/"
           },
           {
                 "label": "Vida útil y servicio: por qué el retiro es a los 10 años",
-                "href": "/#vida-util"
+                "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
           }
     ],
   },
@@ -928,7 +928,7 @@ export const PIEZAS: Pieza[] = [
                 "href": "/trajes/estructural/chaqueton/"
           },
           {
-                "label": "Ver las seis familias de traje",
+                "label": "Familias de trajes para bomberos",
                 "href": "/trajes/"
           }
     ],
@@ -1167,11 +1167,11 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Cómo especificar un traje sin dejar huecos",
-                "href": "/#especificar"
+                "href": "/blog/categoria/especificacion/"
           },
           {
                 "label": "Errores frecuentes al comprar traje",
-                "href": "/#errores"
+                "href": "/blog/como-elegir-traje-para-bomberos/"
           }
     ],
   },
@@ -1445,8 +1445,8 @@ export const PIEZAS: Pieza[] = [
                 "href": "/trajes/estructural/pantalonera/"
           },
           {
-                "label": "Normas aplicables: por qué son dos certificados",
-                "href": "/#normas"
+                "label": "Normas para trajes de bombero: por qué son dos certificados",
+                "href": "/blog/categoria/normas/"
           },
           {
                 "label": "Chaquetón estructural: el resto del conjunto",
@@ -1729,10 +1729,10 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Vida útil y servicio: por qué se repone antes que el traje",
-                "href": "/#vida-util"
+                "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
           },
           {
-                "label": "Ver las seis familias de traje",
+                "label": "Familias de trajes para bomberos",
                 "href": "/trajes/"
           }
     ],
@@ -2027,12 +2027,12 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/estructural/"
       },
       {
-        "label": "Normas aplicables: qué obliga realmente la ley en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero: qué obliga realmente la ley en México",
+        "href": "/blog/categoria/normas/"
       },
       {
         "label": "Cómo especificar sin dejar huecos en la cotización",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -2314,8 +2314,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/estructural/"
       },
       {
-        "label": "Normas aplicables en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -2569,7 +2569,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Errores frecuentes al comprar traje",
-        "href": "/#errores"
+        "href": "/blog/como-elegir-traje-para-bomberos/"
       }
     ]
   },
@@ -3108,7 +3108,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil y servicio del equipo",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -3642,8 +3642,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/forestal/chamarra/"
       },
       {
-        "label": "Normas aplicables: qué exige realmente la ley en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero: qué exige realmente la ley en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -3926,7 +3926,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -4737,7 +4737,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -5019,8 +5019,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/forestal/camisola/"
       },
       {
-        "label": "Normas aplicables en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -5583,7 +5583,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -6138,7 +6138,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Errores frecuentes al comprar traje",
-        "href": "/#errores"
+        "href": "/blog/como-elegir-traje-para-bomberos/"
       }
     ]
   },
@@ -6690,8 +6690,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/aproximacion/guantes/"
       },
       {
-        "label": "Normas aplicables en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -6974,8 +6974,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/aproximacion/"
       },
       {
-        "label": "Normas aplicables en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -7532,7 +7532,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -7814,7 +7814,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Errores frecuentes al comprar traje",
-        "href": "/#errores"
+        "href": "/blog/como-elegir-traje-para-bomberos/"
       }
     ]
   },
@@ -8092,8 +8092,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/aproximacion/"
       },
       {
-        "label": "Normas aplicables en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -8364,7 +8364,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil y servicio del equipo",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -8647,7 +8647,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil del traje estructural",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -9203,7 +9203,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil del traje estructural",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -9763,8 +9763,8 @@ export const PIEZAS: Pieza[] = [
         "href": "/trajes/forestal/conjunto-dual/"
       },
       {
-        "label": "Normas aplicables en México",
-        "href": "/#normas"
+        "label": "Normas para trajes de bombero en México",
+        "href": "/blog/categoria/normas/"
       }
     ]
   },

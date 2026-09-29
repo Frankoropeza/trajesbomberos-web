@@ -1,0 +1,45 @@
+{
+ "lead": "Consulta 19 estaciones de bomberos en Guanajuato distribuidas en 8 municipios. Cada ficha reúne ubicación, corporación responsable y fuente; también indica cuando hay dirección, teléfono y coordenadas disponibles.",
+ "descRight": [
+  "La red registrada combina 14 estaciones municipales, 3 voluntarias, una aeroportuaria y una industrial. Hay una central y 10 subestaciones; León concentra 8 fichas, mientras Celaya y Silao de la Victoria reúnen 3 cada uno. Esta distribución permite distinguir las bases de una misma corporación de las estaciones únicas del resto del estado.",
+  "Explora el listado de estaciones de bomberos en Guanajuato por municipio y abre el mapa para ubicar cada registro. Las fichas incorporan teléfono cuando existe una fuente que lo respalda, además de dirección y referencia de ubicación. Para reportar una emergencia marca 911; los teléfonos publicados no sustituyen esa llamada."
+ ],
+ "municipiosDuo": [
+  "León encabeza el índice con 8 estaciones; Celaya y Silao de la Victoria le siguen con 3 cada uno. Así, quien busca bomberos en León puede identificar la central y sus distintas bases, mientras que los tres registros de Celaya muestran una red municipal con estaciones diferenciadas.",
+  "Los otros 5 municipios registrados cuentan con una estación: Dolores Hidalgo Cuna de la Independencia Nacional, el municipio de Guanajuato (la capital), Irapuato, Salamanca y San Miguel de Allende. El índice ordena estas fichas para consultar la cobertura localizada sin presentar el registro como un inventario completo de bomberos en Guanajuato."
+ ],
+ "estacionesDuo": [
+  "Cada ficha explica si la estación es municipal, voluntaria, aeroportuaria o industrial, y señala su rol como central, subestación o sede única. Por ejemplo, aparecen el Heroico Cuerpo de Bomberos de León y Protección Civil y Bomberos de Celaya, con sus registros diferenciados cuando corresponde.",
+  "Revisa la dirección y el teléfono solamente cuando la ficha los muestra con fuente. La ubicación se presenta como exacta o aproximada para orientar la consulta en el mapa. Esta lectura ayuda a no confundir una base de Bomberos León con una corporación independiente, ni una estación aeroportuaria con servicio municipal."
+ ],
+ "coberturaDuo": [
+  "Las 19 fichas declaran incendios estructurales; 16 incluyen atención prehospitalaria y 15 rescate vehicular. También hay 2 registros con materiales peligrosos y uno con salvamento aeroportuario. Estas cifras describen los servicios reportados en las fichas, no una capacidad general atribuida a todas las estaciones.",
+  "En Guanajuato, 6 fichas tienen teléfono respaldado por una fuente pública, las 19 incluyen dirección y las 19 cuentan con ubicación exacta. Hay 11 registros de confianza alta. Cada ficha enlaza a su fuente para que puedas confirmar el contacto o la localización antes de acudir."
+ ],
+ "equipoDuo": [
+  "Los servicios declarados priorizan incendios estructurales, atención prehospitalaria y rescate vehicular; por ello conviene revisar <a href=\"/trajes/estructural/\">trajes estructurales para bomberos</a> y <a href=\"/trajes/extricacion/\">equipo de extricación</a>. Los registros con materiales peligrosos requieren una evaluación específica de protección química. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Guanajuato.",
+  "La presencia de salvamento aeroportuario en el registro también vuelve pertinente comparar <a href=\"/trajes/aproximacion/\">trajes de aproximación</a> para riesgos térmicos especializados. La selección final debe responder al servicio declarado y a su operación real. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Guanajuato."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Guanajuato?",
+   "a": "El directorio registra 19 estaciones de bomberos en Guanajuato, ubicadas en 8 municipios. La cifra corresponde a fichas identificadas con información de corporación, ubicación y fuente; no afirma reunir todas las estaciones del estado. El registro puede crecer al confirmarse nuevas estaciones mediante una fuente pública."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones y dónde hay bomberos en Guanajuato?",
+   "a": "León concentra 8 estaciones registradas, por lo que es el principal punto de consulta para bomberos en León. Celaya y Silao de la Victoria tienen 3 fichas cada uno. El índice también incluye registros en la capital, Guanajuato, y en otros municipios, con la corporación y el tipo de sede señalados en cada ficha."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Guanajuato?",
+   "a": "Las estaciones de bomberos en Guanajuato del directorio corresponden principalmente a corporaciones municipales, además de registros voluntarios, uno aeroportuario y uno industrial. Cada ficha identifica a la corporación responsable y si se trata de una central, subestación o sede única, para distinguir la organización local de cada servicio."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Guanajuato?",
+   "a": "Ante una emergencia en Guanajuato se debe marcar 911. Los teléfonos que aparecen en algunas fichas de estaciones de bomberos son referencias para trámites, visitas, capacitación o donaciones y no reemplazan el canal de emergencia. Consulta el listado para localizar datos de contacto publicados con fuente."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Guanajuato?",
+   "a": "Para bomberos en Guanajuato cotizamos trajes y equipo de acuerdo con el riesgo y la operación que se atiende. La cotización incluye ficha técnica y factura CFDI 4.0; no hay compra mínima y realizamos envío a Guanajuato. Comparte el tipo de servicio para orientar la selección del equipo de protección."
+  }
+ ]
+}

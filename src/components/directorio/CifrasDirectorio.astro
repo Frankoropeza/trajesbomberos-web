@@ -1,0 +1,49 @@
+---
+// CifrasDirectorio (hub): 4 indicadores + tabla por tipo de corporación
+// + estados con más estaciones. Cifras calculadas en build desde
+// lib/directorio; ninguna se escribe a mano. Piezas: StatsRow + DataTable.
+import StatsRow from './StatsRow.astro';
+import DataTable from './DataTable.astro';
+import { RESUMEN_NACIONAL as N, RESUMEN_ESTADOS, TIPO_DESC, rutaEstado, pct, nf, enEstado } from '@lib/directorio';
+
+const alta = N.confianza.find(([c]) => c === 'alta')?.[1] ?? 0;
+const stats = [
+  { n: nf(N.total), label: 'estaciones registradas', note: `en ${N.estados} entidades federativas` },
+  { n: nf(N.municipios), label: 'municipios y alcaldías', note: 'con al menos una estación registrada' },
+  { n: pct(N.conFuente, N.total), label: 'con fuente pública citada', note: 'INEGI, gobiernos y corporaciones' },
+  { n: nf(N.coordExactas), label: 'con ubicación exacta', note: `${pct(N.coordExactas, N.total)} del directorio` },
+];
+const top = [...RESUMEN_ESTADOS].sort((a, b) => b.total - a.total || a.nombre.localeCompare(b.nombre, 'es')).slice(0, 10);
+---
+<StatsRow stats={stats} />
+<div class="cd-tables">
+  <DataTable
+    caption="Estaciones por tipo de corporación"
+    cols={[{ label: 'Tipo' }, { label: 'Estaciones', num: true }, { label: 'Part.', num: true }, { label: 'Quién la opera', hideMobile: true }]}
+    rows={N.porTipo.map(([t, n]) => [t, nf(n), pct(n, N.total), TIPO_DESC[t] ?? ''])}
+  />
+  <DataTable
+    caption="Estados con más estaciones registradas"
+    cols={[{ label: '#', num: true, accent: true }, { label: 'Estado' }, { label: 'Estaciones', num: true }, { label: 'Municipios', num: true }]}
+    rows={top.map((e, i) => [String(i + 1).padStart(2, '0'), { text: `Bomberos ${enEstado(e)}`, href: rutaEstado(e.slug) }, e.total, e.municipios])}
+  />
+</div>
+<p class="cd-note">Nivel de confianza declarado por ficha: {nf(alta)} estaciones con confianza alta y el resto con confianza media o baja; el nivel se indica en cada ficha. El directorio no pretende ser un censo oficial: registra solo las estaciones con fuente pública localizable.</p>
+
+<style>
+  .cd-tables {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+  }
+  .cd-note {
+    margin: 1.4rem 0 0;
+    padding-top: 1.2rem;
+    border-top: var(--border);
+    font-size: 0.86rem;
+    color: var(--color-gray);
+    max-width: 100ch;
+  }
+  @media (max-width: 1100px) { .cd-tables { grid-template-columns: 1fr; } }
+</style>

@@ -1,5 +1,6 @@
 ---
-title: "Licitación de trajes para bomberos: el expediente que no te descalifica"
+title: "Licitación de trajes para bomberos"
+titleAccent: "el expediente que no te descalifica"
 eyebrow: "Compras y licitación · Sector público"
 lead: "En compra pública mexicana casi nadie pierde por precio. Se pierde por documentación: un certificado a nombre equivocado, una carta que no llegó, una ficha que no coincide con lo ofertado."
 descRight:
@@ -21,7 +22,7 @@ productos:
   - "/botas/"
   - "/guantes/"
 fecha: 2026-06-09
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Licitación de trajes para bomberos | expediente | México"
 description: "Licitación de trajes para bomberos: qué documentos pide un pliego mexicano, qué descalifica una propuesta y cómo armar el expediente técnico completo."
 keywords:

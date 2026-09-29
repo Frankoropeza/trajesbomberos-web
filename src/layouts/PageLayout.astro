@@ -26,6 +26,7 @@ interface Props extends SchemaInput {
   menuItems?: { label: string; href: string }[];  // franja de secciones de ESTA página
   heroImage?: { src: string; alt: string };  // en desuso: el hero es de color sólido en todo el sitio (2026-09-29)
   ogImage?: string;
+  footerCta?: { title: string; text?: string; secondary?: { label: string; href: string } };
 }
 
 const {
@@ -48,14 +49,16 @@ const {
   menuItems,
   product,
   collection,
+  estaciones,
   item,
   ogImage,
+  footerCta,
 } = Astro.props;
 
-// Migas derivadas de la ruta: Inicio › [padre] › actual
+// Migas derivadas de la ruta: home (keyword) › [padre] › actual
 const parents = parent ? (Array.isArray(parent) ? parent : [parent]) : [];
 const crumbs = [
-  { name: 'Inicio', href: '/' },
+  { name: 'Trajes para bomberos', href: '/' },
   ...parents,
   { name: crumbLabel, href: path },
 ];
@@ -72,8 +75,10 @@ const crumbs = [
   breadcrumbs={crumbs}
   product={product}
   collection={collection}
+  estaciones={estaciones}
   item={item}
   ogImage={ogImage}
+  footerCta={footerCta}
 >
   <Breadcrumbs items={crumbs} />
 

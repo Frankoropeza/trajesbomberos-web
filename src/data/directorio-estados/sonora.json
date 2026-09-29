@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio registra 31 estaciones de bomberos en Sonora, distribuidas en 9 municipios. Cada ficha reúne ubicación, corporación, tipo de servicio y fuente disponible, para ubicar opciones de bomberos en Sonora con datos consultables.",
+ "descRight": [
+  "La red registrada en Sonora combina 20 estaciones municipales, 8 de voluntarios y 3 aeroportuarias. Hay 6 centrales y 19 subestaciones; Hermosillo concentra 7 fichas, seguido de Cajeme con 6 y San Luis Río Colorado con 5. Esta distribución permite distinguir bases principales, extensiones operativas y servicios especializados.",
+  "Consulta el listado por municipio para localizar bomberos en Hermosillo y otras localidades. Cuando la fuente lo respalda, la ficha incorpora teléfono; el mapa ayuda a revisar la ubicación. Para una emergencia, marca 911: los contactos publicados pueden servir para gestiones, visitas, capacitación o donaciones."
+ ],
+ "municipiosDuo": [
+  "Hermosillo reúne 7 estaciones registradas, Cajeme suma 6 y San Luis Río Colorado cuenta con 5. Guaymas y Nogales tienen 4 cada uno, por lo que el índice permite pasar de los municipios con mayor presencia a sus corporaciones y bases específicas.",
+  "Fuera de esos polos, el directorio incluye 2 fichas en Navojoa y 1 en Agua Prieta, Caborca y Empalme. La cobertura registrada se reparte en 9 municipios; nuevas estaciones pueden incorporarse al confirmarse con una fuente pública."
+ ],
+ "estacionesDuo": [
+  "Cada registro identifica si corresponde a una corporación municipal, voluntaria o aeroportuaria, además de su función como central, subestación o sede única. Por ejemplo, aparecen el Departamento de Bomberos de Hermosillo y el H. Cuerpo de Bomberos de Cajeme.",
+  "Revisa dirección y teléfono cuando estén sustentados por una fuente, junto con la ubicación exacta o aproximada mostrada en el mapa. Esa lectura evita confundir una estación de barrio con una central y facilita ubicar bomberos en Sonora antes de hacer una consulta no urgente."
+ ],
+ "coberturaDuo": [
+  "Entre los servicios declarados predominan la atención prehospitalaria con 30 registros, los incendios estructurales con 28 y el rescate vehicular con 28. También se documentan materiales peligrosos y salvamento aeroportuario, útiles para entender el perfil de las fichas.",
+  "De las 31 estaciones registradas, 11 tienen teléfono con fuente, 25 incluyen dirección y 25 muestran ubicación exacta. Estos campos describen la calidad de la información disponible por ficha, no la capacidad operativa de cada corporación."
+ ],
+ "equipoDuo": [
+  "La presencia de incendios estructurales y rescate vehicular orienta la selección de <a href=\"/trajes/estructural/\">trajes estructurales</a> y <a href=\"/trajes/extricacion/\">equipo de extricación</a>; los registros de materiales peligrosos requieren valorar protección Hazmat. Para salvamento aeroportuario, corresponde revisar protección de aproximación conforme al riesgo declarado.",
+  "Cotizamos equipo para bomberos en Sonora con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La selección debe partir del servicio declarado, el procedimiento de la corporación y la protección requerida, no solo del nombre de la estación."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Sonora?",
+   "a": "El directorio registra 31 estaciones de bomberos en Sonora ubicadas en 9 municipios. La cifra corresponde a fichas con información pública disponible y puede crecer al confirmarse nuevas estaciones con fuente; no pretende afirmar que sean todas las estaciones existentes en el estado."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones de bomberos en Sonora?",
+   "a": "Hermosillo tiene 7 fichas registradas, Cajeme 6 y San Luis Río Colorado 5. Para encontrar bomberos en Hermosillo, consulta el índice municipal y abre la ficha de la corporación o estación requerida; también hay registros en Guaymas, Nogales y otros municipios."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Sonora?",
+   "a": "Las fichas de Sonora incluyen 20 estaciones municipales, 8 de voluntarios y 3 aeroportuarias. Entre las corporaciones registradas están el Departamento de Bomberos de Hermosillo y el Cuerpo de Bomberos de Heroica Nogales, con centrales, subestaciones o sedes únicas según el caso."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Sonora?",
+   "a": "Ante una emergencia en Sonora marca 911. Los teléfonos incorporados en algunas fichas no sustituyen ese número: se publican para trámites, visitas, capacitación o donaciones cuando existe una fuente que los respalda. Verifica siempre el propósito del contacto antes de llamar."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Sonora?",
+   "a": "Para bomberos en Sonora cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Comparte el tipo de servicio y la protección buscada para revisar alternativas acordes con incendios, rescate o manejo de materiales peligrosos."
+  }
+ ]
+}

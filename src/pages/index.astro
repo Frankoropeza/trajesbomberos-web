@@ -34,12 +34,23 @@ import {
   PRODUCT_CATEGORIES,
 } from '@config/site';
 
+// Metas de la home (tanda de metas P01, 2026-09-29): keyword natural,
+// sin marca, sin «México», sin pipes. Datos: Ahrefs MX (trajes de bomberos 200,
+// traje de bombero profesional 90, traje contra incendio 30+20, venta de trajes
+// para bomberos 10 — hoy #11).
+const SEO_HOME = {
+  title: 'Trajes para bomberos profesionales y equipo contra incendio',
+  description:
+    'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados: Romak Fire, Sköld y Lakeland con ficha técnica. Cotiza en día hábil.',
+  keywords: ['trajes para bomberos', 'traje de bombero profesional', 'traje contra incendio'],
+} as const;
+
 const hero = {
   eyebrow: 'Trajes y equipo de protección para bomberos',
   title: 'Trajes para bomberos',
-  accent: 'en todo México',
+  accent: 'profesionales con ficha técnica',
   subtitle:
-    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
+    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación —el traje contra incendio que corresponde a cada riesgo—, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
   descRight: [
     'Somos especialistas en una sola línea: ropa de protección para combate de incendios. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos municipales que compran por licitación y unidades de protección civil en los 32 estados de la República.',
     'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y condiciones de entrega por escrito. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
@@ -86,13 +97,13 @@ const esRetrato = (src: string) => (DIMENSIONES[src]?.height ?? 1250) > (DIMENSI
 
 interface FamiliaTile { cta: string; subs: [string, string][] } // [label, slug de pieza]
 const FAMILIA_TILE: Record<string, FamiliaTile> = {
-  estructural: { cta: 'Catálogo de trajes estructurales', subs: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']] },
-  brigadista: { cta: 'Catálogo de trajes de brigadista', subs: [['Conjunto de brigada', 'conjunto'], ['Overol ignífugo', 'overol'], ['Chaquetón de brigadista', 'chaqueton'], ['Pantalonera de brigadista', 'pantalonera']] },
-  forestal: { cta: 'Catálogo de trajes forestales', subs: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']] },
-  aproximacion: { cta: 'Catálogo de trajes aluminizados', subs: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']] },
-  entrada: { cta: 'Catálogo de trajes de entrada', subs: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']] },
-  extricacion: { cta: 'Catálogo de trajes de extricación', subs: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']] },
-  hazmat: { cta: 'Catálogo de trajes Hazmat', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']] },
+  estructural: { cta: 'Trajes estructurales para bombero', subs: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']] },
+  brigadista: { cta: 'Trajes de brigadista industrial', subs: [['Conjunto de brigada', 'conjunto'], ['Overol ignífugo', 'overol'], ['Chaquetón de brigadista', 'chaqueton'], ['Pantalonera de brigadista', 'pantalonera']] },
+  forestal: { cta: 'Trajes forestales para bombero', subs: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']] },
+  aproximacion: { cta: 'Trajes aluminizados de aproximación', subs: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']] },
+  entrada: { cta: 'Trajes de entrada a la flama', subs: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']] },
+  extricacion: { cta: 'Trajes de extricación y rescate', subs: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']] },
+  hazmat: { cta: 'Trajes Hazmat nivel A, B y C', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']] },
 };
 const subsFamilia = (slug: string) =>
   soloValidas((FAMILIA_TILE[slug]?.subs ?? []).map(([label, pieza]) => ({ label, href: `/trajes/${slug}/${pieza}/` })));
@@ -102,7 +113,7 @@ const trajesFamilias: TileProps[] = PRODUCT_CATEGORIES.map((c, i) => ({
   titulo: TITULO_CARD[c.slug] ?? c.nombre,
   desc: c.desc,
   href: `/trajes/${c.slug}/`,
-  cta: FAMILIA_TILE[c.slug]?.cta ?? `Catálogo de ${c.nombre.toLowerCase()}`,
+  cta: FAMILIA_TILE[c.slug]?.cta ?? `${c.nombre} para bombero`,
   img: c.image,
   alt: c.imageAlt,
   pos: esRetrato(c.image) ? POS_RETRATO : undefined,
@@ -127,7 +138,7 @@ const cardHazmat: TileProps[] = hazmat
 const cardConjunto: TileProps = {
   codigo: `TR-${String(trajesFamilias.length + cardHazmat.length + 1).padStart(2, '0')}`,
   titulo: 'Conjunto completo y compra por pieza',
-  desc: 'Traje, casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima.',
+  desc: 'El traje de bombero completo: traje, casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima.',
   href: '/kits/',
   cta: 'Kits de equipo completo para bombero',
   img: '/images/escenas/bomberos-ataque-incendio-manguera.avif',
@@ -179,7 +190,7 @@ const faqs = [
   },
   {
     q: '¿Cómo se llama el traje de los bomberos?',
-    a: 'En México se le llama traje de bombero, traje estructural o equipo de protección estructural; en catálogos de importación aparece como turnout gear o bunker gear. Se compone de chaquetón y pantalonera de tres capas, y se completa con casco, monja, guantes, botas y equipo de respiración autónoma (ERA). El traje de brigadista, el forestal y el de aproximación son familias distintas, no sinónimos.',
+    a: 'En México se le llama traje de bombero, traje estructural, traje contra incendio o equipo de protección estructural; en el habla común, uniforme de bombero. En catálogos de importación aparece como turnout gear o bunker gear. Se compone de chaquetón y pantalonera de tres capas, y se completa con casco, monja, guantes, botas y equipo de respiración autónoma (ERA). El traje de brigadista, el forestal y el de aproximación son familias distintas, no sinónimos.',
   },
   {
     q: '¿Qué necesito para una licitación o compra de gobierno?',
@@ -193,11 +204,19 @@ const directoryItems = [
   ...complementos.flatMap((c) => (c.href ? [{ name: c.titulo, url: `${SITE.url}${c.href}` }] : [])),
 ];
 
-// Últimos 3 artículos del blog: la home enlaza al contenido que
+// Últimos 4 artículos del blog: la home enlaza al contenido que
 // resuelve las dudas previas a la cotización.
-const ultimosPosts = (await getPosts()).slice(0, 3);
+const ultimosPosts = (await getPosts()).slice(0, 4);
 ---
-<BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
+<BaseLayout
+  pageType="home"
+  path="/"
+  title={SEO_HOME.title}
+  description={SEO_HOME.description}
+  keywords={SEO_HOME.keywords}
+  faqs={faqs}
+  directoryItems={directoryItems}
+>
   <Hero {...hero} solid />
   <QuickNav />
 
@@ -205,7 +224,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   <section class="section" id="categorias">
     <div class="container">
       <SectionHeading
-        eyebrow="Catálogo por categoría"
+        eyebrow="Categorías de equipo para bomberos"
         title="Equipo para bomberos: trajes, cascos, botas, guantes y más"
         duo={[
           'Reunimos en un solo proveedor el equipo para bomberos completo: <a href="/trajes/">trajes para bomberos</a> por familia de riesgo, <a href="/cascos/">cascos</a>, <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma</a>, <a href="/botas/">botas</a>, <a href="/guantes/">guantes</a>, monjas, herramientas, mangueras y equipo de rescate.',
@@ -282,14 +301,13 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           'Empieza por <a href="/blog/como-elegir-traje-para-bomberos/">cómo elegir un traje para bomberos</a> o por <a href="/blog/nfpa-1970-que-cambio/">qué cambió con la NFPA 1970</a>. Cada guía enlaza al catálogo correspondiente y te lleva a cotizar por WhatsApp cuando ya sabes qué necesitas.',
         ]}
       />
-      <div class="grid-cards grid-cards--3">
+      <div class="grid-cards grid-cards--4">
         {ultimosPosts.map((a, i) => (
           <PostCard
             href={postUrl(a)}
             title={a.data.title}
             resumen={a.data.resumen}
             categoria={a.data.categoria}
-            fecha={a.data.fecha}
             lectura={readingTime(a.body)}
             image={a.data.imagen}
             imageAlt={a.data.imagenAlt}
@@ -298,7 +316,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           />
         ))}
       </div>
-      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+      <p class="blog-cta"><a href="/blog/">Blog técnico de trajes para bomberos: todas las guías →</a></p>
     </div>
   </section>
   <QuoteCTA id="cotizar" />

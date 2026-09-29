@@ -1,6 +1,6 @@
 ---
-title: "Uniforme de bombero: qué incluye y en qué se diferencia del traje de protección"
-titleAccent: "la diferencia que evita comprar equipo equivocado"
+title: "Uniforme de bombero: qué incluye"
+titleAccent: "y en qué se diferencia del traje de protección"
 eyebrow: "Guía de compra · Uniforme y protección"
 lead: "Uniforme de bombero puede significar ropa de estación o un conjunto de protección. Separarlos evita usar una prenda de diario donde hace falta EPP."
 descRight:
@@ -23,7 +23,7 @@ productos:
   - "/capuchas/"
   - "/cascos/"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Uniforme de bombero: ropa y protección | México"
 description: "Uniforme de bombero: qué incluye la ropa de estación, cómo se distingue del traje de protección y qué equipo corresponde a cada operación en México."
 keywords: ["uniforme de bombero", "ropa de bombero", "México"]

@@ -1,6 +1,6 @@
 ---
-title: "NFPA 1970: qué cambió cuando cuatro normas se volvieron una"
-titleAccent: "y cómo afecta tu compra"
+title: "NFPA 1970: qué cambió y cómo afecta tu compra"
+titleAccent: "cuatro normas en una"
 eyebrow: "Normas · Referencia estructural"
 lead: "La NFPA 1971 ya no existe como documento independiente. Desde la consolidación, el traje estructural, el uniforme de trabajo, el equipo de respiración y el PASS viven en un solo estándar: la NFPA 1970."
 descRight:
@@ -20,7 +20,7 @@ productos:
   - "/trajes/extricacion/"
   - "/trajes/entrada/"
 fecha: 2026-07-07
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "NFPA 1970 | certificación de trajes | México"
 description: "NFPA 1970 sustituyó a la NFPA 1971: qué normas consolidó, qué quedó fuera y cómo citar hoy la referencia en una requisición o en un pliego de licitación."
 keywords:

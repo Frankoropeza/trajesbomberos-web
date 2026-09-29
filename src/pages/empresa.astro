@@ -6,7 +6,6 @@
 // la dirección se añaden cuando Frank los proporcione (TODO).
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
-import CTABanner from '@components/CTABanner.astro';
 import PhotoBand from '@components/PhotoBand.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { CONTACT, EMPRESA, MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
@@ -19,12 +18,12 @@ const description =
   'Proveedor de trajes para bomberos en México: una sola especialidad, cotización por escrito con ficha técnica, factura CFDI y soporte para licitación.';
 
 const menuItems = [
-  { label: 'Qué hacemos', href: '#que-hacemos' },
+  { label: 'Proveedor de trajes para bomberos', href: '#que-hacemos' },
   { label: 'Cómo trabajamos', href: '#como-trabajamos' },
   { label: 'Qué entregamos', href: '#entregables' },
-  { label: 'Marcas de referencia', href: '#marcas' },
-  { label: 'Datos', href: '#datos' },
-  { label: 'Contacto', href: '/contacto/' },
+  { label: 'Marcas de trajes de bombero', href: '#marcas' },
+  { label: 'Datos de la empresa de trajes', href: '#datos' },
+  { label: 'Cotizar trajes para bomberos', href: '/contacto/' },
 ];
 
 const compromisos = [
@@ -72,11 +71,12 @@ const entregables = [
   ]}
   meta={['Cobertura: todo México', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
   heroImage={HERO_GENERICO}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="section">
     <div class="container">
       <section id="que-hacemos" class="block">
-        <SectionHeading
+        <SectionHeading clave="que-hacemos"
           eyebrow="Qué hacemos"
           title="Especificación y venta de trajes para bomberos"
           description="Seis familias de traje, 36 piezas documentadas con ficha técnica pública, y un criterio: se especifica por operación y por composite, no por catálogo ni por logotipo."
@@ -92,7 +92,7 @@ const entregables = [
       </section>
 
       <section id="como-trabajamos" class="block">
-        <SectionHeading
+        <SectionHeading clave="proceso"
           eyebrow="Cómo trabajamos"
           title="Del primer mensaje a la entrega"
           description="El proceso completo se documenta por escrito. Así se compara, así se audita y así se defiende un expediente de compra."
@@ -106,7 +106,7 @@ const entregables = [
       </section>
 
       <section id="entregables" class="block">
-        <SectionHeading
+        <SectionHeading clave="entregables"
           eyebrow="Qué entregamos"
           title="Lo que incluye cada pedido"
         />
@@ -118,7 +118,7 @@ const entregables = [
       </section>
 
       <section id="marcas" class="block">
-        <SectionHeading
+        <SectionHeading clave="marcas"
           eyebrow="Referencia del mercado"
           title="Marcas con las que se especifica en México"
           description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo."
@@ -144,7 +144,7 @@ const entregables = [
       </section>
 
       <section id="datos" class="block empresa-datos">
-        <SectionHeading eyebrow="Atención" title="Datos de contacto y atención" />
+        <SectionHeading clave="atencion" eyebrow="Atención" title="Datos de contacto y atención" />
         <dl>
           <div><dt>Nombre comercial</dt><dd>{EMPRESA.nombreComercial}</dd></div>
           <div><dt>Teléfono y WhatsApp</dt><dd>{CONTACT.telefono}</dd></div>
@@ -169,7 +169,6 @@ const entregables = [
     position="center 35%"
   />
 
-  <CTABanner {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>

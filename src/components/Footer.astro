@@ -1,264 +1,598 @@
 ---
-// Footer en cinco zonas, en orden estricto:
-//   1) banda CTA pre-footer (último intento de conversión)
-//   2) cuerpo: marca + NAP + cuatro columnas data-driven
-//   3) banda de cumplimiento (precisión normativa breve)
-//   4) barra inferior: copyright, legales y volver arriba
-//   5) barra de acento
-// NO emite JSON-LD: el Organization vive en lib/seo.ts y lo emite
-// buildSchema desde BaseLayout (regla B3). NAP consistente con
-// Topbar y con el schema (SSoT en CONTACT).
-import { SITE, CONTACT, EMPRESA, FOOTER_COLUMNS, WA_MESSAGES } from '@config/site';
+// Footer en seis zonas: CTA, catálogo, empresa y soporte, normas, legales y
+// acento. Las rutas internas se validan antes de renderizar; BaseLayout emite
+// el JSON-LD, por lo que este componente no añade datos estructurados.
+import { CONTACT, EMPRESA, FOOTER, SITE, WA_MESSAGES, type FooterColumn, type FooterLink } from '@config/site';
+import { rutaExiste } from '@lib/rutas';
 import { waUrl } from '@lib/wa';
+
+interface FooterCta {
+  title: string;
+  text?: string;
+  secondary?: { label: string; href: string };
+}
+
+interface Props {
+  cta?: FooterCta;
+}
+
+const { cta } = Astro.props;
 const year = new Date().getFullYear();
+type FooterLinkValido = FooterLink & { href: string };
+const rutaValida = (link: FooterLink): link is FooterLinkValido => {
+  if (!link.href) {
+    console.warn(`[Footer] ruta inexistente: ${link.label}`);
+    return false;
+  }
+  const existe = rutaExiste(link.href);
+  if (!existe) console.warn(`[Footer] ruta inexistente: ${link.href}`);
+  return existe;
+};
+const columnasValidas = (columns: readonly FooterColumn[]): { title: string; links: FooterLinkValido[] }[] => columns
+  .map((column) => ({ ...column, links: column.links.filter(rutaValida) }))
+  .filter((column) => column.links.length > 0);
+const catalogo = columnasValidas(FOOTER.catalogo);
+const soporte = columnasValidas(FOOTER.soporte);
+const legales = FOOTER.legales.filter(rutaValida);
+const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.secondary : undefined;
 ---
 <footer class="site-footer">
-  <!-- Zona 1 · CTA pre-footer -->
-  <div class="fcta">
+  <!-- Zona 1 · CTA -->
+  <section class="fcta" aria-label="Cotización de trajes para bomberos">
     <div class="container fcta__inner">
+      <ul class="fcta__commitments" aria-label="Compromisos de compra">
+        {['Ficha técnica por partida', 'Factura CFDI 4.0', 'Envío a los 32 estados'].map((item) => <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>{item}</li>)}
+      </ul>
       <div class="fcta__text">
-        <p class="fcta__title">¿Listo para equipar a tu gente?</p>
-        <p class="fcta__lead">Cotización con ficha técnica y condiciones por escrito. Sin compromiso.</p>
+        <p class="fcta__title">{cta?.title ?? 'Cotiza trajes para bomberos con ficha técnica'}</p>
+        <p class="fcta__lead">{cta?.text ?? 'Cotización con ficha técnica y condiciones por escrito. Sin compromiso.'}</p>
       </div>
       <div class="fcta__actions">
-        <a class="fcta__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
-          Cotizar por WhatsApp
-        </a>
+        <a class="fcta__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a>
+        {secondary && <a class="fcta__secondary" href={secondary.href}>{secondary.label}</a>}
         <a class="fcta__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Zona 2 · Marca + columnas -->
-  <div class="container fbody">
-    <div class="fbrand">
-      <p class="fbrand__name"><img src="/images/marca/isotipo.svg" width="36" height="36" alt="" /><span class="fbrand__word">{SITE.name}<span>.com</span></span></p>
-      <p class="fbrand__claim">{CONTACT.posicionamiento}.</p>
-
-      <dl class="fnap">
-        <div>
-          <dt>Teléfono</dt>
-          <dd><a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a></dd>
-        </div>
-        <div>
-          <dt>Correo</dt>
-          <dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd>
-        </div>
-        <div>
-          <dt>Horario</dt>
-          <dd>{CONTACT.horario}</dd>
-        </div>
-        <div>
-          <dt>Cobertura</dt>
-          <dd>{CONTACT.cobertura}</dd>
-        </div>
-      </dl>
-    </div>
-
-    <div class="fcols">
-      {FOOTER_COLUMNS.map((col) => (
-        <nav class="fcol" aria-label={col.title}>
-          <h3>{col.title}</h3>
-          <ul>
-            {col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
-          </ul>
-        </nav>
-      ))}
-    </div>
-  </div>
-
-  <!-- Zona 3 · Banda de cumplimiento -->
-  <div class="fnote">
+  <!-- Zona 2 · Piso 1: catálogo -->
+  <section class="fcatalog">
     <div class="container">
-      <p>
-        Trabajamos sobre <strong>NFPA 1970</strong> (edición 2025, que absorbió a la NFPA 1971) y
-        <strong>NFPA 1850</strong> para el ciclo de servicio. En México el EPP se rige por la
-        <strong>NOM-017-STPS-2024</strong> y, para brigadas, por la <strong>NOM-002-STPS-2010</strong>.
-        NFPA es referencia técnica voluntaria: se vuelve exigible cuando la incorpora un pliego de licitación.
-      </p>
+      <p class="ffloor-label">Catálogo de equipo para bomberos</p>
+      <div class="fgrid fgrid--catalog">
+        {catalogo.map((column) => (
+          <details class="fcol" open>
+            <summary><span class="fcol__title">{column.title}</span></summary>
+            <nav aria-label={column.title}>
+              <ul>{column.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+            </nav>
+          </details>
+        ))}
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Zona 4 · Barra inferior -->
+  <!-- Zona 3 · Piso 2: empresa y soporte -->
+  <section class="fsupport">
+    <div class="container fsupport__grid">
+      <div class="fbrand">
+        <p class="fbrand__name"><img src="/images/marca/lorica-icono-neg.svg" width="35" height="40" alt="" /><span class="fbrand__lockup"><img src="/images/marca/lorica-wordmark-neg.svg" width="116" height="18" alt={SITE.name} /><span>Trajes para bomberos</span></span></p>
+        <p class="fbrand__positioning">{CONTACT.posicionamiento}</p>
+        <p class="fbrand__copy">Especialistas en trajes para bomberos con ficha técnica y CFDI 4.0, sin compra mínima y envío a los 32 estados.</p>
+        <dl class="fnap">
+          <div><dt>Teléfono</dt><dd><a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a></dd></div>
+          <div><dt>Correo</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd></div>
+          <div><dt>Horario</dt><dd>{CONTACT.horario}</dd></div>
+          <div><dt>Cobertura</dt><dd>{CONTACT.cobertura}</dd></div>
+        </dl>
+        <div class="fbrand__actions"><a class="fbrand__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a><a class="fbrand__call" href={`tel:${CONTACT.telefonoHref}`}>Llamar {CONTACT.telefono}</a></div>
+      </div>
+      <div class="fgrid fgrid--support">
+        {soporte.map((column) => (
+          <details class="fcol" open>
+            <summary><span class="fcol__title">{column.title}</span></summary>
+            <nav aria-label={column.title}>
+              <ul>{column.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+            </nav>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Zona 4 · Normas -->
+  <section class="fnote" aria-label="Referencias normativas">
+    <div class="container fnote__inner">
+      <ul class="fnote__chips" aria-label="Normas de referencia"><li>NFPA 1970</li><li>NFPA 1950</li><li>NFPA 1850</li><li>NOM-017-STPS-2024</li><li>NOM-002-STPS-2010</li><li>EN 469</li></ul>
+      <p>Trabajamos sobre <strong>NFPA 1970</strong> (edición 2025, que absorbió a la NFPA 1971) y <strong>NFPA 1850</strong> para el ciclo de servicio. En México el EPP se rige por la <strong>NOM-017-STPS-2024</strong> y, para brigadas, por la <strong>NOM-002-STPS-2010</strong>. NFPA es referencia técnica voluntaria: se vuelve exigible cuando la incorpora un pliego de licitación.</p>
+    </div>
+  </section>
+
+  <!-- Zona 5 · Legales -->
   <div class="fbottom">
     <div class="container fbottom__inner">
-      <p>© {year} {EMPRESA.razonSocial ?? SITE.legalName}. Todos los derechos reservados.</p>
-      <nav class="fbottom__nav" aria-label="Enlaces legales">
-        <a href="/trajes/">Catálogo</a>
-        <a href="/blog/">Blog</a>
-        <a href="/empresa/">Empresa</a>
-        <a href="/contacto/">Contacto</a>
-        <a href="/aviso-de-privacidad/">Aviso de privacidad</a>
-        <a href="/terminos-y-condiciones/">Términos y condiciones</a>
-        <a class="fbottom__top" href="#main-content">Volver arriba ↑</a>
-      </nav>
+      <p>© {year} {EMPRESA.razonSocial ?? SITE.legalName}. Todos los derechos reservados. <span aria-hidden="true">·</span> Envíos a todo México</p>
+      <nav aria-label="Enlaces legales">{legales.map((link) => <a href={link.href}>{link.label}</a>)}</nav>
     </div>
   </div>
 
-  <!-- Zona 5 · Barra de acento -->
+  <!-- Zona 6 · Acento -->
   <div class="faccent" aria-hidden="true"></div>
 </footer>
 
-<style>
-  .site-footer { background: var(--color-ink); color: #a8aeb6; }
+<script>
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    document.querySelectorAll<HTMLDetailsElement>('.site-footer .fcol').forEach((column) => column.removeAttribute('open'));
+  }
+</script>
 
-  /* --- Zona 1 · CTA ------------------------------------------ */
-  .fcta { background: var(--color-primary); color: var(--color-white); }
+<style>
+  .site-footer {
+    background: var(--color-ink);
+    color: #a8aeb6;
+  }
+
+  .fcta {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
   .fcta__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "text actions" "commit actions";
+    align-items: center;
+    gap: clamp(1.2rem, 3vw, 2.5rem);
+    padding-block: clamp(1.25rem, 2.3vw, 1.85rem);
+  }
+
+  .fcta__commitments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem 1rem;
+    grid-area: commit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: .78rem;
+    font-weight: 700;
+  }
+
+  .fcta__commitments li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: clamp(1.2rem, 4vw, 3rem);
-    padding-block: clamp(1.4rem, 2.4vw, 2rem);
-    flex-wrap: wrap;
+    gap: .35rem;
   }
+
+  .fcta__text {
+    grid-area: text;
+  }
+
+  .fcta__actions {
+    grid-area: actions;
+  }
+
   .fcta__title {
-    margin: 0 0 0.2rem;
+    margin: 0 0 .18rem;
     font-size: clamp(1.1rem, 1.7vw, 1.45rem);
     font-weight: 800;
     letter-spacing: var(--tracking-tight);
   }
-  .fcta__lead { margin: 0; font-size: 0.9rem; color: rgb(255 255 255 / 0.85); }
-  .fcta__actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-  .fcta__wa {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.4rem;
-    border-radius: var(--radius);
-    background: var(--color-white);
-    color: var(--color-primary);
-    font-weight: 800;
-    font-size: 0.92rem;
-    text-decoration: none;
-    min-height: 46px;
-  }
-  .fcta__tel {
-    color: var(--color-white);
-    font-weight: 800;
-    font-size: 1.05rem;
-    text-decoration: none;
-    border-bottom: 2px solid rgb(255 255 255 / 0.4);
+
+  .fcta__lead {
+    margin: 0;
+    color: rgb(255 255 255 / .85);
+    font-size: .9rem;
   }
 
-  /* --- Zona 2 · Cuerpo ---------------------------------------- */
-  .fbody {
-    display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 2.1fr);
-    gap: clamp(2rem, 5vw, 4.5rem);
-    padding-block: clamp(2.4rem, 4vw, 3.4rem);
+  .fcta__actions,
+  .fbrand__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .7rem;
   }
+
+  .fcta__wa,
+  .fbrand__wa,
+  .fbrand__call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: .65rem 1rem;
+    border-radius: var(--radius);
+    font-size: .84rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .fcta__wa {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .fcta__secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: .65rem 1rem;
+    border: 1px solid rgb(255 255 255 / .8);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-size: .84rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .fcta__tel {
+    color: var(--color-white);
+    font-size: .95rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .fcatalog,
+  .fsupport {
+    padding-block: clamp(2.2rem, 4vw, 3.6rem);
+  }
+
+  .ffloor-label {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 0 0 1.35rem;
+    color: #d2d7dd;
+    font-size: .68rem;
+    font-weight: 800;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .ffloor-label::after {
+    flex: 1 1 auto;
+    height: 1px;
+    background: rgb(255 255 255 / .16);
+    content: '';
+  }
+
+  .fgrid {
+    display: grid;
+    gap: clamp(1.25rem, 2.2vw, 2.25rem);
+  }
+
+  .fgrid--catalog {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .fsupport {
+    border-top: 1px solid rgb(255 255 255 / .12);
+    background: var(--color-ink-soft);
+  }
+
+  .fsupport__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  .fgrid--support {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fcol {
+    min-width: 0;
+  }
+
+  .fcol summary {
+    display: block;
+    margin-bottom: .7rem;
+    padding-bottom: .55rem;
+    border-bottom: 1px solid rgb(255 255 255 / .14);
+    box-shadow: inset 0 -2px var(--color-accent);
+    color: var(--color-white);
+    cursor: default;
+    list-style: none;
+  }
+
+  .fcol summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .fcol__title {
+    display: block;
+    font-size: .68rem;
+    font-weight: 800;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+  }
+
+  .fcol ul {
+    display: grid;
+    gap: .32rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .fcol a {
+    display: block;
+    color: #a8aeb6;
+    font-size: .86rem;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .fcol a:hover {
+    color: var(--color-accent);
+  }
+
   .fbrand__name {
     display: flex;
     align-items: center;
-    gap: 0.45rem;
-    margin: 0 0 0.4rem;
-    font-size: 1.2rem;
-    font-weight: 800;
+    gap: .55rem;
+    margin: 0 0 .45rem;
     color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 800;
     letter-spacing: var(--tracking-tight);
   }
-  .fbrand__name img { flex: 0 0 auto; }
-  .fbrand__word > span { color: var(--color-accent); }
-  .fbrand__claim { margin: 0 0 1.3rem; font-size: 0.86rem; max-width: 40ch; }
 
-  .fnap { margin: 0; display: grid; gap: 0.75rem; }
-  .fnap dt {
-    font-size: 0.62rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: var(--tracking-wide);
-    color: #9aa1ab;
-    margin-bottom: 0.1rem;
+  .fbrand__name img {
+    flex: 0 0 auto;
   }
-  .fnap dd { margin: 0; font-size: 0.88rem; color: #d2d7dd; }
-  .fnap a { color: var(--color-accent); text-decoration: none; font-weight: 700; }
 
-  .fcols {
+  .fbrand__lockup {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+  }
+
+  .fbrand__lockup span {
+    color: #d2d7dd;
+    font-size: .64rem;
+    font-weight: 600;
+    letter-spacing: .215em;
+    text-transform: uppercase;
+  }
+
+  .fbrand__positioning {
+    margin: 0 0 .7rem;
+    color: #d2d7dd;
+    font-size: .82rem;
+    font-weight: 700;
+  }
+
+  .fbrand__copy {
+    max-width: 47ch;
+    margin: 0 0 1.25rem;
+    font-size: .86rem;
+    line-height: 1.5;
+  }
+
+  .fnap {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: clamp(1.2rem, 2.5vw, 2.4rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .8rem 1.25rem;
+    margin: 0 0 1.25rem;
   }
-  .fcol h3 {
-    margin: 0 0 0.85rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgb(255 255 255 / 0.14);
-    font-size: 0.66rem;
+
+  .fnap dt {
+    margin-bottom: .1rem;
+    color: #9aa1ab;
+    font-size: .62rem;
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+  }
+
+  .fnap dd {
+    margin: 0;
+    color: #d2d7dd;
+    font-size: .82rem;
+  }
+
+  .fnap a {
+    color: var(--color-accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .fbrand__wa {
+    background: var(--color-wa);
     color: var(--color-white);
   }
-  .fcol ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.42rem; }
-  .fcol a {
-    color: #a8aeb6;
-    text-decoration: none;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    display: block;
-  }
-  .fcol a:hover { color: var(--color-accent); }
 
-  /* --- Zona 3 · Cumplimiento ---------------------------------- */
-  .fnote {
-    border-top: 1px solid rgb(255 255 255 / 0.1);
-    background: rgb(255 255 255 / 0.02);
+  .fbrand__call {
+    border: 1px solid rgb(255 255 255 / .65);
+    color: var(--color-white);
   }
+
+  .fnote {
+    border-top: 1px solid rgb(255 255 255 / .1);
+    background: rgb(255 255 255 / .02);
+  }
+
+  .fnote__inner {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem 2rem;
+    padding-block: 1rem;
+  }
+
+  .fnote__chips {
+    display: flex;
+    flex: 0 1 31rem;
+    flex-wrap: wrap;
+    gap: .35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .fnote__chips li {
+    padding: .25rem .45rem;
+    border: 1px solid rgb(255 255 255 / .2);
+    border-radius: var(--radius);
+    color: #d2d7dd;
+    font-size: .64rem;
+    font-weight: 700;
+  }
+
   .fnote p {
     margin: 0;
-    padding-block: 1.1rem;
-    font-size: 0.78rem;
-    line-height: 1.6;
     color: #8a9099;
-    max-width: 110ch;
+    font-size: .76rem;
+    line-height: 1.55;
   }
-  .fnote strong { color: #c3c9d0; font-weight: 700; }
 
-  /* --- Zona 4 · Barra inferior -------------------------------- */
-  .fbottom { border-top: 1px solid rgb(255 255 255 / 0.1); }
+  .fnote strong {
+    color: #c3c9d0;
+    font-weight: 700;
+  }
+
+  .fbottom {
+    border-top: 1px solid rgb(255 255 255 / .1);
+  }
+
   .fbottom__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    padding-block: 0.95rem;
-    flex-wrap: wrap;
+    gap: .8rem 1.5rem;
+    padding-block: .95rem;
   }
-  .fbottom p { margin: 0; font-size: 0.78rem; color: #7d848c; }
-  .fbottom__nav { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; }
-  .fbottom__nav a { color: #a8aeb6; text-decoration: none; font-size: 0.78rem; }
-  .fbottom__nav a:hover { color: var(--color-accent); }
-  .fbottom__top { font-weight: 800; color: var(--color-accent) !important; }
 
-  /* --- Zona 5 · Acento ---------------------------------------- */
+  .fbottom p,
+  .fbottom nav {
+    margin: 0;
+    color: #7d848c;
+    font-size: .76rem;
+  }
+
+  .fbottom nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .fbottom a {
+    color: #a8aeb6;
+    text-decoration: none;
+  }
+
+  .fbottom a:hover {
+    color: var(--color-accent);
+  }
+
   .faccent {
     height: 5px;
-    background: repeating-linear-gradient(
-      115deg,
-      var(--color-accent) 0 22px,
-      var(--color-ink-soft) 22px 44px
-    );
+    background: repeating-linear-gradient(115deg, var(--color-accent) 0 22px, var(--color-ink-soft) 22px 44px);
   }
 
-  /* --- Responsive --------------------------------------------- */
-  @media (max-width: 1100px) {
-    .fbody { grid-template-columns: 1fr; gap: 2.2rem; }
-    .fnap { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .fgrid--catalog {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .fsupport__grid {
+      grid-template-columns: 1fr;
+    }
   }
-  @media (max-width: 1100px) {
-    .fcols { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  @media (min-width: 768px) {
+    .fcol summary {
+      pointer-events: none;
+    }
   }
-  @media (max-width: 860px) {
-    .fcols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.8rem; }
-    .fnap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 560px) {
-    .fcta__inner { flex-direction: column; align-items: flex-start; }
-    .fcta__actions { width: 100%; }
-    .fcta__wa { flex: 1; justify-content: center; }
-    .fcols { grid-template-columns: 1fr; }
-    .fnap { grid-template-columns: 1fr; }
-    .fbottom__inner { flex-direction: column; align-items: flex-start; gap: 0.7rem; }
+
+  @media (max-width: 767px) {
+    .fcta__inner {
+      grid-template-columns: 1fr;
+      grid-template-areas: "text" "actions";
+      gap: 1rem;
+    }
+
+    .fbrand__actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .fnote__chips {
+      flex: none;
+    }
+
+    .fcta__commitments {
+      display: none;
+    }
+
+    .fcta__actions {
+      width: 100%;
+    }
+
+    .fcta__wa,
+    .fcta__secondary {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    .fsupport__grid,
+    .fgrid--catalog,
+    .fgrid--support {
+      grid-template-columns: 1fr;
+    }
+
+    .fgrid {
+      gap: 0;
+    }
+
+    .fcol {
+      border-bottom: 1px solid rgb(255 255 255 / .1);
+    }
+
+    .fcol summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      margin: 0;
+      padding-block: .8rem;
+      border-bottom: 0;
+      box-shadow: none;
+      cursor: pointer;
+    }
+
+    .fcol summary::after {
+      color: var(--color-accent);
+      content: '+';
+      font-size: 1.15rem;
+    }
+
+    .fcol[open] summary::after {
+      content: '−';
+    }
+
+    .fcol nav {
+      padding-bottom: .65rem;
+    }
+
+    .fcol a {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+    }
+
+    .fnap {
+      grid-template-columns: 1fr;
+    }
+
+    .fnote__inner,
+    .fbottom__inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 </style>

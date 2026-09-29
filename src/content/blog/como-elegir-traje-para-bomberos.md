@@ -1,6 +1,6 @@
 ---
-title: "Cómo elegir traje para bomberos sin equivocarte de familia"
-titleAccent: "en la primera compra"
+title: "Cómo elegir traje para bomberos"
+titleAccent: "sin equivocarte de familia"
 eyebrow: "Guía de compra · Empieza por aquí"
 lead: "La misma conversación que tenemos por teléfono cuando alguien nos escribe pidiendo trajes de bombero y todavía no sabe cuál de las seis familias corresponde a su operación."
 descRight:
@@ -22,7 +22,7 @@ productos:
   - "/trajes/entrada/"
   - "/trajes/extricacion/"
 fecha: 2026-07-14
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cómo elegir traje para bomberos | guía de compra | México"
 description: "Cómo elegir traje para bomberos sin equivocarte: qué familia corresponde a tu operación, qué datos pedir en la cotización y qué revisar antes de firmar."
 keywords:

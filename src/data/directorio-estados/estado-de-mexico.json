@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio registra 53 estaciones de bomberos en el Estado de México, repartidas en 36 municipios. Cada ficha identifica corporación, tipo, ubicación y fuente; cuando el registro público lo permite, incorpora dirección, teléfono y referencia en mapa.",
+ "descRight": [
+  "La cobertura registrada en el Estado de México se apoya principalmente en 47 estaciones municipales, con presencia de aeropuerto, CFE, industria, PEMEX y una instancia estatal. Ecatepec de Morelos concentra 7 estaciones; Atizapán de Zaragoza, Naucalpan de Juárez, Nezahualcóyotl y Toluca, 3 cada uno. Hay 4 centrales junto con 11 subestaciones para distinguir los puntos de cada red.",
+  "Usa el listado municipal para localizar estaciones de bomberos en el Estado de México y comparar corporación, teléfono, dirección o mapa. Los datos de contacto se incluyen cuando tienen fuente pública. Para una emergencia marca 911; los teléfonos de ficha son referencias para trámites, visitas, capacitación o donaciones, no para sustituir ese número."
+ ],
+ "municipiosDuo": [
+  "Ecatepec de Morelos tiene 7 fichas, y Atizapán de Zaragoza, Naucalpan de Juárez, Nezahualcóyotl y Toluca reúnen 3 cada uno. Esta concentración permite empezar la búsqueda por municipio y después identificar la central, subestación o sede única que corresponde a cada corporación.",
+  "Tultitlán, Zinacantepec y Zumpango registran 2 estaciones cada uno; el resto de los municipios incluidos tiene 1 ficha. El índice hace visible una cobertura amplia en 36 municipios, sin presentar los 53 registros como un padrón exhaustivo de las estaciones existentes en el Estado de México."
+ ],
+ "estacionesDuo": [
+  "La ficha indica corporación municipal, estatal, aeroportuaria, industrial o de infraestructura, además de central, subestación o sede única. Entre las corporaciones aparecen la Coordinación Municipal de Protección Civil, Bomberos y Medio Ambiente de Atizapán de Zaragoza y los servicios de bomberos de Ecatepec de Morelos.",
+  "Hay 42 teléfonos publicados, 43 direcciones y 26 ubicaciones exactas. Conviene confirmar esos campos en cada ficha, pues no todas tienen el mismo nivel de detalle. La presentación permite distinguir una referencia geográfica precisa de una aproximada antes de contactar a bomberos en el Estado de México."
+ ],
+ "coberturaDuo": [
+  "Incendios estructurales se declaran en las 53 fichas; atención prehospitalaria aparece en 48 y rescate vehicular en 45. También se registran fugas de gas en 12, materiales peligrosos en 8 e incendios forestales en 7, además de servicios con menor número de referencias.",
+  "El directorio documenta teléfono en 42 fichas, dirección en 43 y ubicación exacta en 26. Las cifras describen información disponible por registro, no evaluación de capacidad. Funcionan para decidir si hay datos suficientes para una consulta institucional o si conviene recurrir al 911 en una urgencia."
+ ],
+ "equipoDuo": [
+  "El predominio de incendio estructural, atención prehospitalaria y rescate vehicular pide una selección por función. Los <a href=\"/trajes/estructural/\">trajes estructurales</a> atienden exposición al fuego; para liberación vehicular puede revisarse <a href=\"/trajes/extricacion/\">equipo de extricación</a>, y los incidentes con sustancias requieren <a href=\"/trajes/hazmat/\">protección Hazmat</a>.",
+  "Las fichas también declaran incendios forestales, rescate en altura y salvamento aeroportuario, por lo que la especificación debe ajustarse al riesgo. Cotizamos equipo para bomberos en el Estado de México con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en el Estado de México?",
+   "a": "El directorio registra 53 estaciones de bomberos en el Estado de México, localizadas en 36 municipios. Es una relación de fichas identificadas con fuente pública, por lo que puede crecer al comprobar nuevas estaciones. Cada resultado presenta corporación, tipo y ubicación, con dirección o teléfono cuando esos datos se encuentran documentados."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones de bomberos en el Estado de México?",
+   "a": "Ecatepec de Morelos reúne 7 estaciones registradas; Atizapán de Zaragoza, Naucalpan de Juárez, Nezahualcóyotl y Toluca tienen 3 cada uno. Para buscar bomberos en Toluca o en otro municipio, abre el índice territorial y verifica el rol de cada ficha, porque una misma corporación puede tener central y subestaciones."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en el Estado de México?",
+   "a": "Las fichas del Estado de México son principalmente de corporaciones municipales. También se incluyen servicios de aeropuerto, CFE, industria y PEMEX, además de una instancia estatal. El tipo y el nombre institucional de la corporación están visibles en cada resultado para que el usuario conozca la naturaleza del punto consultado."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en el Estado de México?",
+   "a": "En una emergencia en el Estado de México marca 911. Los teléfonos de algunas fichas son para trámites, visitas, capacitación o donaciones y se muestran cuando existe fuente pública; no deben usarse como reemplazo de la llamada de emergencia. Para atención inmediata, el canal indicado es siempre 911."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en el Estado de México?",
+   "a": "Para bomberos en el Estado de México cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Se puede solicitar una propuesta para incendio estructural, rescate vehicular, materiales peligrosos o incendios forestales, tomando como punto de partida el riesgo y la función requerida."
+  }
+ ]
+}

@@ -1,6 +1,7 @@
 ---
 import { getEntry } from 'astro:content';
 import PageLayout from '@layouts/PageLayout.astro';
+import BlogSidebar from '@components/BlogSidebar.astro';
 import { CONTACT, EMPRESA } from '@config/site';
 import { HERO_GENERICO } from '@lib/imagenes';
 
@@ -20,12 +21,13 @@ const body = (legal.rendered?.html ?? '')
   .replaceAll('{{RESPONSABLE}}', escapeHtml(responsable))
   .replaceAll('{{EMAIL}}', `<a href="mailto:${email}">${email}</a>`);
 const actualizado = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(legal.data.actualizado);
+const headings = [...body.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)].map(([, slug, text]) => ({ depth: 2, slug, text: text.replace(/<[^>]+>/g, '') }));
 ---
 
 <PageLayout
   pageType="generic"
   path="/terminos-y-condiciones/"
-  title="Términos y condiciones | TrajesBombero México"
+  title="Términos y condiciones | LORICA"
   description={legal.data.description}
   crumbLabel={legal.data.title}
   eyebrow="Legal"
@@ -35,10 +37,11 @@ const actualizado = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'l
   heroImage={HERO_GENERICO}
 >
   <div class="section">
-    <div class="container"><article class="prose legal-prose" set:html={body} /></div>
+    <div class="container layout-grid legal-layout"><article class="prose legal-prose" set:html={body} /><BlogSidebar variant="legal" headings={headings} tocTitle="Contenido de los términos" /></div>
   </div>
 </PageLayout>
 
 <style>
-  .legal-prose { margin-inline: auto; }
+  .legal-prose { max-width: 74ch; }
+  @media (max-width: 1024px) { .legal-layout { grid-template-columns: 1fr; } }
 </style>

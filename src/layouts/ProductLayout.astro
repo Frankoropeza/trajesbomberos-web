@@ -10,16 +10,14 @@ import CategoryDetail from '@components/CategoryDetail.astro';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
 import CompletaElConjunto from '@components/CompletaElConjunto.astro';
-import NormaBadge from '@components/NormaBadge.astro';
 import { WA_MESSAGES, COMPLEMENTOS } from '@config/site';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import type { FamiliaDetalle } from '@lib/familias';
 import { heroDeFamilia } from '@lib/imagenes';
-import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
+import { modelosDeFamilia } from '@lib/catalogo/modelos';
 import { duoFamilia } from '@lib/titulos';
 import ModelosGrid from '@components/ModelosGrid.astro';
 import { tilesFamilias, tilesPiezas } from '@lib/catalogo/tiles';
@@ -37,25 +35,27 @@ const modelos = modelosDeFamilia(f.slug);
 // (sin enlace) para que la retícula quede en dos filas exactas de 3.
 
 const menuItems = [
-  { label: 'A fondo', href: '#a-fondo' },
-  { label: 'Piezas', href: '#piezas' },
-  { label: 'Qué pedir', href: '#especificar' },
-  { label: 'Preguntas', href: '#faq' },
-  { label: 'Todos los trajes', href: '/trajes/' },
-  { label: 'Blog técnico', href: '/blog/' },
+  { label: f.nombreWa, href: '#a-fondo' },
+  { label: 'Piezas cotizables', href: '#piezas' },
+  { label: 'Qué pedir en la cotización', href: '#especificar' },
+  { label: `Preguntas de ${f.nombreWa.toLowerCase()}`, href: '#faq' },
+  { label: 'Trajes para bomberos', href: '/trajes/' },
+  { label: 'Blog de trajes de bombero', href: '/blog/' },
 ];
 
 const pageIndex = [
-  { label: 'A fondo', href: '#a-fondo' },
+  { label: f.nombreWa, href: '#a-fondo' },
   { label: 'Piezas cotizables', href: '#piezas' },
   { label: 'Qué pedir en tu cotización', href: '#especificar' },
   { label: 'Complementos del conjunto', href: '#complementos' },
   ...(f.marcasRef && f.marcasRef.length > 0
-    ? [{ label: 'Marcas de referencia', href: '#marcas' }]
+    ? [{ label: `Marcas de ${f.nombreWa.toLowerCase()}`, href: '#marcas' }]
     : []),
   { label: 'Preguntas frecuentes', href: '#faq' },
   { label: 'Otras familias', href: '#otras' },
 ];
+const cta = presetCategoria(f.nombreWa);
+const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Comparar familias de trajes para bomberos', href: '/trajes/' } };
 ---
 <PageLayout
   pageType="producto"
@@ -75,6 +75,7 @@ const pageIndex = [
   faqs={f.faqs}
   heroImage={heroDeFamilia(f.slug)}
   ogImage={`/images/og/trajes-${f.slug}.jpg`}
+  footerCta={footerCta}
 >
   <!-- Contenido + sidebar de interlinking -->
   <div class="section">
@@ -178,21 +179,18 @@ const pageIndex = [
     <div class="container">
       <SectionHeading
         eyebrow="Otras familias"
-        title="Las seis familias de traje"
+        title="Las siete familias de trajes para bomberos"
         description="Cada una responde a un riesgo distinto y no son intercambiables. Si tu operación no encaja con esta, entra a la que corresponde." duo={duoFamilia(f.slug, 'otras')} />
       <TileGrid cols={3}>
           {tilesFamilias(f.slug).map((t) => <TileCard {...t} />)}
         </TileGrid>
-      <p class="volver"><a href="/trajes/">← Volver al índice de trajes</a></p>
+      <p class="volver"><a href="/trajes/">← Trajes para bomberos: todas las familias</a></p>
     </div>
   </section>
 
-  <div class="section conjunto-wrap"><div class="container"><CompletaElConjunto /></div></div>
+  <div class="section conjunto-wrap"><div class="container"><CompletaElConjunto familia={f.slug} /></div></div>
 
   <GuiasTecnicas ruta={path} tema={temaEnFrase(f.nombreWa)} />
-
-  <!-- 7 · CTA de cierre -->
-  <CTABanner variant="dark" {...presetCategoria(f.nombreWa)} />
 </PageLayout>
 
 <style>

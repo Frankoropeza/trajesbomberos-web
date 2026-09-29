@@ -1,5 +1,5 @@
 ---
-title: "Cómo elegir equipo de respiración autónoma para bombero"
+title: "Cómo elegir equipo de respiración autónoma"
 ancla: "Equipo de respiración autónoma"
 titleAccent: "por operación y ciclo de servicio"
 eyebrow: "Guía de compra · Protección respiratoria"
@@ -16,39 +16,15 @@ productos:
   - "/trajes/estructural/"
   - "/trajes/hazmat/"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cómo elegir equipo de respiración autónoma | México"
 description: "Cómo elegir equipo de respiración autónoma para bombero: diferencias entre combate e industrial, cilindros, máscaras, duración y mantenimiento del ERA."
-keywords: ["equipo de respiración autónoma", "ERA para bombero", "México"]
+keywords: ["cómo elegir equipo de respiración autónoma", "ERA para bombero", "México"]
 imagen: "/images/blog/como-elegir-equipo-de-respiracion-autonoma.avif"
 imagenAlt: "Equipo de respiración autónoma con máscara y cilindro para bombero"
 ---
 
 El [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) permite trabajar donde el aire no es respirable, pero sólo si se selecciona, ajusta y mantiene como sistema. Antes de cotizar, define el tipo de atmósfera, la tarea, el tiempo de trabajo, el número de usuarios y la forma en que se recargarán, inspeccionarán y almacenarán los equipos.
-
-## Combate e industria
-
-Un ERA de combate se configura para el trabajo de bomberos y sus interfaces con casco, capucha, traje, regulador y dispositivo de alerta. Un ERA industrial puede responder a una operación de planta con requisitos distintos de arnés, máscara, comunicación o compatibilidad química. No los intercambies sólo porque ambos tengan cilindro: describe el escenario, la capacitación disponible y el alcance de la intervención.
-
-## Duración: nominal no significa tiempo garantizado
-
-La duración del cilindro es una referencia nominal. El consumo sube con esfuerzo, calor, estrés, peso del equipo y condición física. Planea el ingreso con margen para salida, no con la cifra de la etiqueta como si fuera un cronómetro. Revisa [cilindros de fibra de carbono](/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/) y la capacidad de contar con repuestos y recarga para la operación.
-
-## La máscara decide la interfaz
-
-La máscara debe sellar con el rostro del usuario y ser compatible con casco, capucha, lentes permitidos y regulador. La prueba de ajuste, capacitación para colocación y limpieza posterior son parte de la compra. Un regulador correcto no compensa una máscara mal ajustada ni una barba que impida el sello.
-
-## Mantenimiento y trazabilidad
-
-Incluye inspección previa a servicio, revisión de presión, limpieza, almacenamiento, pruebas requeridas y registro de mantenimiento. Define quién administra cilindros, refacciones y retiro de componentes. El equipo que no se conserva listo puede fallar justo cuando el ambiente obliga a usarlo.
-
-## Preguntas frecuentes
-
-**¿Qué ERA necesito?** El que corresponda al escenario de combate o industrial y a sus interfaces de protección.
-
-**¿Cuánto dura un cilindro?** La duración real depende del consumo del usuario y condiciones de trabajo; usa la nominal como referencia de planeación, no garantía.
-
-**¿Qué incluyo en la cotización?** Arnés, máscara, regulador, cilindro, PASS cuando aplique, tallas, mantenimiento, capacitación y refacciones.
 
 ## El aire respirable es parte del sistema
 
@@ -96,14 +72,6 @@ Después de una operación, limpia máscara y componentes siguiendo el método i
 | Accesorios | Alarma, comunicación y elementos incluidos por modelo. |
 | Servicio | Capacitación, limpieza, inspección, refacciones y registro. |
 
-## Preguntas frecuentes adicionales
-
-**¿Puedo elegir ERA por la mayor duración nominal?** No sin revisar peso, tarea, logística y consumo real. La reserva para salida se planea antes de entrar.
-
-**¿Puedo compartir máscara?** Sólo dentro del procedimiento de higiene, ajuste y mantenimiento correspondiente. La asignación individual facilita verificar sello y condición.
-
-**¿Qué pasa si el aire parece suficiente pero la máscara no sella?** El usuario no debe entrar. El sello es indispensable; se corrige talla, ajuste o condición antes de poner el equipo en servicio.
-
 ## Decisión final antes de comprar
 
 Reúne a operación, seguridad y quien mantendrá el equipo. Confirmen el escenario, las personas que lo usarán, la prueba de máscara, el número de cilindros de rotación, el espacio de resguardo y el programa de revisión. La compra correcta es la que puede mantenerse lista durante toda su vida de servicio, no la que sólo completa una lista de inventario. Si alguno de esos puntos queda sin responsable, resuélvelo antes de recibir los equipos.
@@ -111,3 +79,17 @@ Reúne a operación, seguridad y quien mantendrá el equipo. Confirmen el escena
 ## Recepción y puesta en servicio
 
 Al recibir los equipos, compara número de serie, máscara, arnés, regulador, cilindros, accesorios y manuales con la orden. Registra cada conjunto, asigna responsable y realiza las pruebas de ajuste y capacitación previstas antes de guardarlo como disponible. La recepción es el momento de detectar una configuración incompleta, no la primera emergencia.
+
+## Preguntas frecuentes
+
+**¿Qué ERA necesito?** El que corresponda al escenario de combate o industrial y a sus interfaces de protección.
+
+**¿Cuánto dura un cilindro?** La duración real depende del consumo del usuario y condiciones de trabajo; usa la nominal como referencia de planeación, no garantía.
+
+**¿Qué incluyo en la cotización?** Arnés, máscara, regulador, cilindro, PASS cuando aplique, tallas, mantenimiento, capacitación y refacciones.
+
+**¿Puedo elegir ERA por la mayor duración nominal?** No sin revisar peso, tarea, logística y consumo real. La reserva para salida se planea antes de entrar.
+
+**¿Puedo compartir máscara?** Sólo dentro del procedimiento de higiene, ajuste y mantenimiento correspondiente. La asignación individual facilita verificar sello y condición.
+
+**¿Qué pasa si el aire parece suficiente pero la máscara no sella?** El usuario no debe entrar. El sello es indispensable; se corrige talla, ajuste o condición antes de poner el equipo en servicio.

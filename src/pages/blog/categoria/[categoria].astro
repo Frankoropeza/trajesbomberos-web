@@ -8,7 +8,6 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import BlogListado from '@components/blog/BlogListado.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
-import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, BLOG_CATEGORIES } from '@config/site';
 import { getPosts, getPostsByCategoria, paginar, postUrl, categoriaUrl } from '@lib/blog';
@@ -28,11 +27,11 @@ const directoryItems = pagina.posts.map((post) => ({
   url: new URL(postUrl(post), SITE.url).href,
 }));
 const menuItems = [
-  { label: 'Artículos sobre trajes para bomberos', href: '#articulos' },
+  { label: `Artículos de ${cat.nombre.toLowerCase()}`, href: '#articulos' },
   ...BLOG_CATEGORIES.filter((item) => item.slug !== cat.slug)
     .slice(0, 3)
     .map((item) => ({ label: item.nombre, href: categoriaUrl(item.slug) })),
-  { label: 'Blog de trajes para bomberos', href: '/blog/' },
+  { label: 'Blog técnico de trajes para bomberos', href: '/blog/' },
 ];
 ---
 
@@ -59,11 +58,12 @@ const menuItems = [
     'Si después de leer sigues con la duda, escríbenos: contestamos con la ficha técnica en la mano y te decimos con franqueza si lo que necesitas es otra cosa.',
   ]}
   directoryItems={directoryItems}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
       <div class="layout-main">
-        <SectionHeading eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
+        <SectionHeading clave="articulos" eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
         <BlogListado
           posts={pagina.posts}
           todos={todos}
@@ -74,9 +74,9 @@ const menuItems = [
           actualCategoria={cat.slug}
         />
         {cat.guia && (
-          <section class="cat-guia" aria-labelledby="cat-guia-t">
-            <h2 id="cat-guia-t">{cat.guia.titulo}</h2>
-            {cat.guia.parrafos.map((texto) => (
+          <section class="cat-guia" aria-label={cat.guia.titulo}>
+            <SectionHeading eyebrow="Guía de la categoría" title={cat.guia.titulo} duo={cat.guia.parrafos.slice(0, 2)} />
+            {cat.guia.parrafos.slice(2).map((texto) => (
               <p>{texto}</p>
             ))}
             <ul class="cat-guia__links">
@@ -88,14 +88,11 @@ const menuItems = [
             </ul>
           </section>
         )}
-        <p class="volver">
-          <a href="/blog/">← Blog de trajes para bomberos</a>
-        </p>
+        <p class="volver"><a href="/blog/">← Blog técnico de trajes para bomberos</a></p>
       </div>
       <BlogSidebar variant="categoria" visiblePostIds={pagina.posts.map((post) => post.id)} />
     </div>
   </div>
-  <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
@@ -103,14 +100,9 @@ const menuItems = [
     margin-top: clamp(2.2rem, 3.5vw, 3.2rem);
     padding-top: clamp(1.8rem, 3vw, 2.6rem);
     border-top: var(--border);
+  }
+  .cat-guia > p {
     max-width: 72ch;
-  }
-  .cat-guia h2 {
-    margin: 0 0 0.9rem;
-    font-family: var(--font-display);
-    font-size: var(--fs-h3);
-  }
-  .cat-guia p {
     margin: 0 0 1rem;
     color: var(--color-gray);
     line-height: 1.7;

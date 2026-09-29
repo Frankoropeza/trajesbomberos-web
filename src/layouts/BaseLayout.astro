@@ -20,9 +20,14 @@ import '@fontsource/barlow/latin-700.css';
 import '@fontsource/barlow-semi-condensed/latin-700.css';
 import barlowSemiCondensed700 from '@fontsource/barlow-semi-condensed/files/barlow-semi-condensed-latin-700-normal.woff2?url';
 import barlow400 from '@fontsource/barlow/files/barlow-latin-400-normal.woff2?url';
-import barlow700 from '@fontsource/barlow/files/barlow-latin-700-normal.woff2?url';
 import '@styles/global.css';
 import '@styles/mobile.css';
+
+interface FooterCta {
+  title: string;
+  text?: string;
+  secondary?: { label: string; href: string };
+}
 
 interface Props extends SchemaInput {
   title?: string;
@@ -30,7 +35,9 @@ interface Props extends SchemaInput {
   path?: string;
   keywords?: readonly string[];   // tripleta propia de la página
   ogImage?: string;
+  ogImageAlt?: string;
   noindex?: boolean;
+  footerCta?: FooterCta;
 }
 
 const {
@@ -41,22 +48,29 @@ const {
   article,
   product,
   collection,
+  estaciones,
   item,
   title = buildKeywordTitle(),
   description = buildKeywordDescription(),
   path = '/',
   keywords,
   ogImage: ogImagePath,
+  ogImageAlt,
   noindex = false,
+  footerCta,
 } = Astro.props;
 
 const canonical = new URL(path, SITE.url).href;
 const ogImage = new URL(ogImagePath ?? '/images/og-trajes-para-bomberos.png', SITE.url).href;
 const ogImageType = ogImagePath ? 'image/jpeg' : 'image/png';
-const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product, collection, item });
+const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product, collection, item, estaciones });
 
-// metaAudit valida la regla en build; avisa en consola sin romper.
-const audit = metaAudit(title, description, keywords);
+const ogType = pageType === 'articulo' ? 'article' : 'website';
+const ogAlt = ogImageAlt ?? (ogImagePath ? title : 'Trajes para bomberos y equipo contra incendios en México');
+// metaAudit valida la regla POR PÁGINA en build; avisa en consola sin romper
+// (el gate de publicación, scripts/gate_dist.py, es el que bloquea).
+const esLegal = /^\/(aviso-de-privacidad|terminos-y-condiciones)\//.test(path);
+const audit = metaAudit(title, description, keywords, { permitirMarca: noindex || esLegal });
 if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
 ---
 <!doctype html>
@@ -71,13 +85,12 @@ if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" as="font" type="font/woff2" href={barlowSemiCondensed700} crossorigin />
     <link rel="preload" as="font" type="font/woff2" href={barlow400} crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href={barlow700} crossorigin />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="theme-color" content="#c8102e" />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
     <meta name="author" content={SITE.legalName} />
     <meta name="geo.region" content="MX" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -86,14 +99,14 @@ if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content={ogImageType} />
-    <meta property="og:image:alt" content="Trajes para bomberos y equipo contra incendios en México" />
+    <meta property="og:image:alt" content={ogAlt} />
     <meta property="og:locale" content={SITE.locale} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     {schemas.map((s) => (
-      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+      <script is:inline type="application/ld+json" set:html={JSON.stringify(s)} />
     ))}
   </head>
   <body>
@@ -103,7 +116,7 @@ if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+    <Footer cta={footerCta} />
     <WhatsAppFloat />
   </body>
 </html>

@@ -1,0 +1,45 @@
+{
+ "lead": "Encuentra 16 estaciones de bomberos en Durango registradas en 14 municipios. Las fichas reúnen corporación, clase de servicio, ubicación y fuente disponible; también señalan dirección y teléfono cuando esos datos aparecen en fuentes públicas.",
+ "descRight": [
+  "El registro de Durango está formado sobre todo por 13 servicios municipales, complementados por las brigadas federales de la CONAFOR, una estación aeroportuaria y una corporación voluntaria. El municipio de Durango reúne 3 fichas; los demás municipios tienen 1. No se registran centrales ni subestaciones, lo que permite leer cada ficha como un punto de referencia individual.",
+  "El listado ordena las estaciones de bomberos en Durango por municipio y permite comparar datos de corporación, dirección, teléfono y mapa. El teléfono se muestra únicamente cuando existe fuente pública. En una situación de emergencia llama al 911; la información de las fichas es útil para gestiones, visitas, capacitación y comunicaciones no urgentes."
+ ],
+ "municipiosDuo": [
+  "El municipio de Durango concentra 3 estaciones registradas: la corporación municipal, las brigadas de la CONAFOR y el servicio del aeropuerto. En el resto del estado, Canatlán, Cuencamé, Guadalupe Victoria, Gómez Palacio y Lerdo cuentan con 1 ficha por municipio, lo que hace práctico buscar primero por nombre territorial.",
+  "También hay 1 registro en Mapimí, Nombre de Dios, Nuevo Ideal, Poanas, Pueblo Nuevo, Santiago Papasquiaro, Tepehuanes y Vicente Guerrero. La distribución cubre 14 municipios, pero el directorio no presume un inventario total: suma fichas confirmadas con fuente pública de bomberos en Durango."
+ ],
+ "estacionesDuo": [
+  "Las fichas distinguen corporaciones municipales, federales, voluntarias y de aeropuerto, además del rol de sede única cuando corresponde. Entre los nombres localizados están la Dirección Municipal de Protección Civil y Bomberos de Durango y el Cuerpo de Bomberos Voluntarios de El Salto.",
+  "Antes de llamar, verifica si la ficha contiene teléfono con fuente y revisa el mapa para saber si la ubicación es exacta o aproximada. Hay 14 direcciones, 14 teléfonos y 9 ubicaciones exactas dentro del registro. Ese detalle evita confundir un dato de referencia con un canal de respuesta inmediata."
+ ],
+ "coberturaDuo": [
+  "Protección civil aparece en 13 fichas e incendios estructurales en 11. El directorio también registra incendios forestales en 3 casos y, en menor presencia, rescate vehicular, atención prehospitalaria y salvamento aeroportuario con 1 ficha cada uno.",
+  "De las 16 fichas de Durango, 14 incluyen teléfono y 14 dirección; 9 cuentan con ubicación exacta. Estas cifras describen campos documentados, no capacidad ni disponibilidad. Sirven para identificar qué información puede consultarse directamente antes de buscar a una corporación de bomberos en Durango."
+ ],
+ "equipoDuo": [
+  "Los incendios estructurales y forestales declarados requieren separar la protección según el entorno de trabajo. Un catálogo de <a href=\"/trajes/estructural/\">trajes para incendio estructural</a> apoya la primera necesidad, mientras que los <a href=\"/trajes/forestal/\">trajes forestales</a> responden a operaciones de vegetación. El rescate vehicular demanda equipo específico de extricación.",
+  "Para salvamento aeroportuario, la definición del equipo debe partir de la tarea y de la ficha técnica aplicable. Cotizamos equipo para bomberos en Durango con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Durango?",
+   "a": "El directorio registra 16 estaciones de bomberos en Durango, ubicadas en 14 municipios. Esta cifra reúne fichas identificadas con fuente pública y puede aumentar al confirmarse nuevos puntos de servicio. Cada ficha muestra corporación, tipo, ubicación y, cuando está disponible, dirección o teléfono para una consulta no urgente."
+  },
+  {
+   "q": "¿Dónde hay más estaciones y bomberos en Durango?",
+   "a": "El municipio de Durango reúne 3 registros, por lo que es la concentración principal del estado. Los otros municipios registrados tienen 1 ficha cada uno. Para encontrar bomberos en Durango o en localidades como Gómez Palacio y Lerdo, consulta el índice municipal y revisa qué corporación opera el punto mostrado."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Durango?",
+   "a": "En Durango predominan las corporaciones municipales dentro de las fichas registradas. También aparecen las brigadas de la Comisión Nacional Forestal (CONAFOR), dependencia federal dedicada a incendios forestales, una estación de aeropuerto y un cuerpo voluntario. El tipo de corporación está indicado en cada ficha para diferenciar su carácter municipal, federal, voluntario o especializado."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Durango?",
+   "a": "Si tienes una emergencia en Durango, llama al 911. Los teléfonos incluidos en las fichas no son una alternativa para despacho urgente; se muestran cuando hay fuente pública y pueden servir para trámites, visitas, capacitación o donaciones. Para ayuda inmediata, utiliza siempre el número de emergencia."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Durango?",
+   "a": "Para cuerpos de bomberos en Durango cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La cotización puede considerar necesidades de incendio estructural, operación forestal, rescate vehicular o atención aeroportuaria, de acuerdo con el servicio que se busca atender."
+  }
+ ]
+}

@@ -27,19 +27,26 @@ export interface MetaAuditResult {
   problems: string[];
 }
 
-// Valida la regla: longitudes, kw1 primero, tokens repetidos
+// Valida la regla POR PÁGINA: longitudes, kw1 (la de la página, no la del
+// sitio) al inicio del title y presente en la description, tokens repetidos.
+// Si la página no declara keywords, kw1 = primer segmento del title.
+// `permitirMarca`: legales y 404 llevan la marca en el title a propósito.
 export function metaAudit(
   title: string,
   description: string,
-  kws: readonly string[] = KEYWORDS,
+  kws?: readonly string[],
+  opts: { permitirMarca?: boolean } = {},
 ): MetaAuditResult {
   const problems: string[] = [];
-  const kw1 = kws[0].toLowerCase();
+  const kw1 = (kws?.[0] ?? title.split('|')[0]).trim().toLowerCase();
+  // Sustantivo núcleo: primera palabra de ≥ 4 letras de kw1, sin puntuación («goggles», «casco», «traje»).
+  const nucleo = kw1.replace(/[^\p{L}\p{N}\s-]/gu, ' ').split(/\s+/).find((t) => t.length >= 4) ?? kw1;
   if (title.length > 60) problems.push(`Title de ${title.length} chars: pasa de 60.`);
   if (description.length > 160) problems.push(`Description de ${description.length} chars: pasa de 160.`);
-  if (!title.toLowerCase().startsWith(kw1)) problems.push('El title no abre con kw1.');
-  if (!description.toLowerCase().startsWith(kw1)) problems.push('La description no abre con kw1.');
-  if (title.toLowerCase().includes(SITE.name.toLowerCase()))
+  if (description.length < 70) problems.push(`Description de ${description.length} chars: menos de 70.`);
+  if (!title.toLowerCase().startsWith(kw1)) problems.push(`El title no abre con kw1 («${kw1}»).`);
+  if (!description.toLowerCase().includes(nucleo)) problems.push(`La description no menciona «${nucleo}».`);
+  if (!opts.permitirMarca && title.toLowerCase().includes(SITE.name.toLowerCase()))
     problems.push('El title incluye la marca: la regla pide title sin marca.');
   const tokens = title.toLowerCase().split(/[^a-záéíóúñ]+/).filter((t) => t.length > 3);
   const dupes = tokens.filter((t, i) => tokens.indexOf(t) !== i);
@@ -61,7 +68,7 @@ export function organizationSchema(): object {
       'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE.url}/images/marca/logo-trajesbombero-512.png`,
+      url: `${SITE.url}/images/marca/lorica-logo-512.png`,
       width: 512,
       height: 512,
     },
@@ -109,6 +116,39 @@ export function directorySchema(items: { name: string; url: string }[]): object 
       position: i + 1,
       name: item.name,
       url: item.url,
+    })),
+  };
+}
+
+// Directorio: ItemList de estaciones como FireStation (solo campos con fuente)
+export interface EstacionSchema {
+  name: string; url: string; locality: string; region: string;
+  lat?: number; lng?: number; telephone?: string; street?: string; sameAs?: string;
+}
+export function fireStationListSchema(xs: EstacionSchema[]): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    numberOfItems: xs.length,
+    itemListElement: xs.map((x, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'FireStation',
+        '@id': x.url,
+        name: x.name,
+        url: x.url,
+        address: {
+          '@type': 'PostalAddress',
+          ...(x.street ? { streetAddress: x.street } : {}),
+          addressLocality: x.locality,
+          addressRegion: x.region,
+          addressCountry: 'MX',
+        },
+        ...(x.lat != null && x.lng != null ? { geo: { '@type': 'GeoCoordinates', latitude: x.lat, longitude: x.lng } } : {}),
+        ...(x.telephone ? { telephone: x.telephone } : {}),
+        ...(x.sameAs ? { sameAs: x.sameAs } : {}),
+      },
     })),
   };
 }
@@ -246,6 +286,7 @@ export interface SchemaInput {
   product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };
   collection?: { name: string; description: string; url: string };
   item?: { name: string; description: string; image?: string; category: string; url: string };
+  estaciones?: EstacionSchema[];
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -258,6 +299,7 @@ export function buildSchema(input: SchemaInput): object[] {
   if (input.product) schemas.push(productSchema(input.product));
   if (input.collection) schemas.push(collectionPageSchema(input.collection));
   if (input.item) schemas.push(itemPageSchema(input.item));
+  if (input.estaciones?.length) schemas.push(fireStationListSchema(input.estaciones));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;
 }

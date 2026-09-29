@@ -1,6 +1,6 @@
 ---
-title: "Cuánto cuesta un traje de bombero: qué determina el precio y cómo comparar cotizaciones"
-titleAccent: "sin confundir una oferta con otra"
+title: "Cuánto cuesta un traje de bombero"
+titleAccent: "qué determina el precio y cómo comparar"
 eyebrow: "Guía de compra · Cotizaciones técnicas"
 lead: "El costo de un traje de bombero depende de su familia, configuración, talla y volumen. Comparar cotizaciones exige leer la ficha antes que la fotografía."
 descRight:
@@ -22,7 +22,7 @@ productos:
   - "/trajes/estructural/modelos/skold-hero-nomex/"
   - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cuánto cuesta un traje de bombero | México"
 description: "Cuánto cuesta un traje de bombero: factores que cambian una cotización y cómo comparar configuración, certificación, tallas, entrega y vida útil."
 keywords: ["cuánto cuesta un traje de bombero", "traje de bombero precio", "México"]
@@ -101,7 +101,7 @@ Envía el uso previsto, número de usuarios, familias de equipo requeridas, tall
 - Fecha de fabricación solicitada, tiempo de entrega y condiciones de garantía aplicables.
 - Factura CFDI y documentación que exija el procedimiento de compra.
 
-La comparación se vuelve clara cuando todas las respuestas contestan los mismos puntos. Si una propuesta omite un dato, no supongas que incluye la mejor opción: pide precisión antes de tomar una decisión. También vale la pena revisar la sección de [normas](/#normas) para ubicar qué referencia corresponde a cada familia.
+La comparación se vuelve clara cuando todas las respuestas contestan los mismos puntos. Si una propuesta omite un dato, no supongas que incluye la mejor opción: pide precisión antes de tomar una decisión. También vale la pena revisar la sección de [normas](/blog/categoria/normas/) para ubicar qué referencia corresponde a cada familia.
 
 ## Errores al comparar ofertas de trajes de bombero
 

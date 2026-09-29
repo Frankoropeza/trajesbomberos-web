@@ -691,7 +691,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     ],
     meta: ['Niveles A–D', 'NFPA 1990 · ed. 2022', 'Selección por riesgo', 'Compatibilidad química'],
     seoTitle: 'Traje Hazmat y protección química | México',
-    seoDescription: 'Equipo Hazmat para sustancias químicas: niveles A, B y C, trajes encapsulados, guantes y botas. Aprende a seleccionar la barrera según el riesgo.',
+    seoDescription: 'Trajes Hazmat y protección química para bomberos: niveles A, B y C, encapsulados, guantes y botas químicas. Elige la barrera según el riesgo y cotiza.',
     keywords: ['traje hazmat', 'traje encapsulado', 'traje nivel b', 'equipo hazmat'],
     especificar: [
       { titulo: 'Agente y concentración', desc: 'La sustancia, concentración, temperatura y tiempo de exposición definen la compatibilidad. Un nombre de producto no sustituye esa revisión.' },

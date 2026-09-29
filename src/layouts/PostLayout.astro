@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // PostLayout (artículo del blog).
 // Jerarquía canónica: BaseLayout → PageLayout → PostLayout, la
 // misma que ProductLayout. Estructura: hero → franja →
@@ -10,8 +11,8 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
-import CTABanner from '@components/CTABanner.astro';
-import { SITE, WA_MESSAGES, PRODUCT_CATEGORIES, blogCategoria } from '@config/site';
+import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
+import { familiaPorSlug } from '@lib/familias';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { HERO_GENERICO } from '@lib/imagenes';
@@ -59,14 +60,16 @@ const relacionados = [
   ...ranking.filter((p) => enSidebar.has(p.id)),
 ].slice(0, 4); // una fila de 4 que no repite lo del sidebar
 const waMsg = WA_MESSAGES.articulo(d.title);
-const familiaNombre = PRODUCT_CATEGORIES.find((familia) => familia.slug === d.familia)?.nombre;
 
+// Franja de secciones del artículo: los h2 reales (sin fuentes ni FAQ),
+// recortados en palabra completa para que quepan en una línea.
+const corto = (t: string, max = 32) => (t.length <= max ? t : `${t.slice(0, t.lastIndexOf(' ', max))}…`);
 const menuItems = [
-  { label: 'El artículo', href: '#articulo' },
-  { label: 'Relacionados', href: '#relacionados' },
-  { label: categoriaNombre(d.categoria), href: categoriaUrl(d.categoria) },
-  ...(d.familia && familiaNombre ? [{ label: `Familia: ${familiaNombre}`, href: `/trajes/${d.familia}/` }] : []),
-  { label: 'Artículos sobre trajes para bomberos', href: '/blog/' },
+  ...headings
+    .filter((heading) => heading.depth === 2 && !/^(fuentes|preguntas frecuentes)/i.test(heading.text))
+    .slice(0, 3)
+    .map((heading) => ({ label: corto(heading.text), href: `#${heading.slug}` })),
+  ...(relacionados.length > 0 ? [{ label: 'Guías relacionadas de trajes', href: '#relacionados' }] : []),
 ];
 
 // Datos duros del hero: si el artículo no los declara, se arma
@@ -94,7 +97,7 @@ const article = {
   keywords={d.keywords}
   menuItems={menuItems}
   crumbLabel={d.title}
-  parent={{ name: 'Blog', href: '/blog/' }}
+  parent={{ name: 'Blog técnico de bomberos', href: '/blog/' }}
   eyebrow={d.eyebrow ?? `Blog · ${categoriaNombre(d.categoria)}`}
   h1={d.title}
   h1Accent={d.titleAccent}
@@ -104,6 +107,7 @@ const article = {
   article={article}
   heroImage={d.imagen ? { src: d.imagen, alt: d.imagenAlt ?? '' } : HERO_GENERICO}
   ogImage={`/images/og/blog-${post.id}.jpg`}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="reading-progress-global" aria-hidden="true"><span data-reading-progress-global></span></div>
   <div class="section">
@@ -121,7 +125,7 @@ const article = {
 
           {d.imagen && (
             <figure class="post__cover">
-              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="1600" height="686" fetchpriority="high" decoding="async" />
+              <img src={d.imagen} {...responsive(d.imagen, SIZES.full)} alt={d.imagenAlt ?? ''} width="1600" height="686" fetchpriority="high" decoding="async" />
               {d.imagenAlt && <figcaption>{d.imagenAlt}</figcaption>}
             </figure>
           )}
@@ -141,15 +145,15 @@ const article = {
             </p>
             <div class="post__cierre-cta">
               <a class="btn btn--wa" href={waUrl(waMsg)} target="_blank" rel="noopener nofollow">
-                Preguntar por WhatsApp sobre trajes
+                Preguntar por equipo para bomberos en WhatsApp
               </a>
-              {d.familia && familiaNombre && (
-                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>{familiaNombre}</a>
+              {d.familia && (
+                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>Cotizar {familiaPorSlug(d.familia)?.nombreWa.toLowerCase() ?? 'trajes para bomberos'}</a>
               )}
             </div>
           </div>
           <aside class="post__author" aria-label="Autoría">
-            <p class="post__author-name">Equipo técnico TrajesBombero</p>
+            <p class="post__author-name">Equipo técnico LORICA</p>
             <p>Especificamos y cotizamos equipo de protección contra incendio para cuerpos de bomberos, brigadas industriales y compras públicas en México.</p>
             <p>Cada guía se contrasta con la norma citada y con la ficha técnica del fabricante.</p>
             <a href="/empresa/">Empresa de trajes para bomberos →</a>
@@ -173,7 +177,7 @@ const article = {
   {relacionados.length > 0 && (
     <section class="section section--alt" id="relacionados">
       <div class="container">
-        <SectionHeading
+        <SectionHeading clave="relacionados"
           eyebrow="Seguir leyendo"
           title="Artículos relacionados"
           description={cat ? cat.desc : undefined}
@@ -194,12 +198,11 @@ const article = {
             />
           ))}
         </div>
-        <p class="volver"><a href="/blog/">← Blog de trajes para bomberos</a></p>
+        <p class="volver"><a href="/blog/">← Blog técnico de trajes para bomberos</a></p>
       </div>
     </section>
   )}
 
-  <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
@@ -209,7 +212,8 @@ const article = {
      resto del sitio: cada H2 a la izquierda (con numeración tipo
      eyebrow) y su contenido a la derecha, con medida de lectura.
      La consulta mide el <article> (contenedor «post»). */
-  .layout-grid--post :global(.prose) { max-width: none; }
+  .layout-grid--post :global(.prose),
+  .post__cierre { max-width: none; }
   .post { min-width: 0; container: post / inline-size; }
 
   @container post (min-width: 760px) {

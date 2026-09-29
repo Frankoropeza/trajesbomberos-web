@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TrajesBombero">
-  <defs><clipPath id="tb-escudo"><path d="M32 3 56 12v18c0 15.2-9.8 25.7-24 31C17.8 55.7 8 45.2 8 30V12L32 3Z"/></clipPath></defs>
-  <path fill="#c8102e" d="M32 3 56 12v18c0 15.2-9.8 25.7-24 31C17.8 55.7 8 45.2 8 30V12L32 3Z"/>
-  <path clip-path="url(#tb-escudo)" fill="#ffc72c" d="M0 49 64 37v7L0 56Z"/>
-  <path fill="#fff" d="M32.3 13.2c3.8 5.3-.3 8.2 1.2 12.1.9 2.2 2.8 3.2 2.8 3.2s3.8-3.2 2.4-8.2c5.6 4.4 8.4 9.5 8.4 15.3 0 8.4-6.7 15.2-15 15.2s-15-6.8-15-15.2c0-8.1 6-17.1 15.2-22.4Z"/>
-  <path fill="#ffc72c" d="M31.5 27.3c2.1 3-.2 4.7.6 6.8.5 1.2 1.5 1.8 1.5 1.8s2.1-1.8 1.3-4.6c3 2.4 4.5 5.3 4.5 8.4a7.5 7.5 0 0 1-15 0c0-4.5 3.1-9.1 7.1-12.4Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 11 140 140"><title>LORICA</title><defs><clipPath id="lcf"><path d="M22 30 L80 14 L138 30 L138 84 C138 116 112 136 80 148 C48 136 22 116 22 84 Z"/></clipPath></defs>
+<path d="M22 30 L80 14 L138 30 L138 84 C138 116 112 136 80 148 C48 136 22 116 22 84 Z" fill="#1A1A1A"/>
+<g clip-path="url(#lcf)">
+<polygon points="0,56 80,78 160,56 160,64 80,86 0,64" fill="#A7ADB4"/>
+<polygon points="0,64 80,86 160,64 160,94 80,116 0,94" fill="#C8102E"/>
+<polygon points="0,94 80,116 160,94 160,102 80,124 0,102" fill="#A7ADB4"/>
+</g></svg>

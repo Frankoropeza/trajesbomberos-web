@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // BlogSidebar: columna de apoyo del blog, sin scroll propio.
 //  · indice / categoria → Buscar, Guías esenciales, Temas, comprador,
 //    cotización, norma, equipo y familias. Fluye con la página.
@@ -21,7 +22,7 @@ interface Heading {
   text: string;
 }
 interface Props {
-  variant?: 'articulo' | 'indice' | 'categoria';
+  variant?: 'articulo' | 'indice' | 'categoria' | 'legal'; // legal: índice sticky + cotización (aviso y términos)
   headings?: Heading[];
   currentId?: string;
   currentCategoria?: string;
@@ -29,6 +30,7 @@ interface Props {
   relatedPosts?: Post[];
   visiblePostIds?: string[];
   waMessage?: string;
+  tocTitle?: string;
 }
 const {
   variant = 'indice',
@@ -39,8 +41,9 @@ const {
   relatedPosts = [],
   visiblePostIds = [],
   waMessage = WA_MESSAGES.cotizar,
+  tocTitle = 'En este artículo',
 } = Astro.props;
-const esArticulo = variant === 'articulo';
+const esArticulo = variant === 'articulo' || variant === 'legal';
 const todos = await getPosts();
 const categorias = await categoriasConConteo();
 const categoriaActual = currentCategoria ?? Astro.url.pathname.match(/\/categoria\/([^/]+)/)?.[1];
@@ -101,7 +104,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
         {(esArticulo ? masGuias : esenciales).map((item) => (
           <li>
             <a href={postUrl(item)}>
-              <img src={item.data.imagen} alt="" width="72" height="54" loading="lazy" decoding="async" />
+              <img src={item.data.imagen} {...responsive(item.data.imagen, SIZES.thumb)} alt="" width="72" height="54" loading="lazy" decoding="async" />
               <span>
                 <small>{categoriaNombre(item.data.categoria)}</small>
                 {item.data.title}
@@ -258,7 +261,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
       <div class="sb-progress">
         <span data-reading-progress></span>
       </div>
-      <p class="sb-title">En este artículo</p>
+      <p class="sb-title">{tocTitle}</p>
       <ol id="blog-toc">
         {toc.map((heading, index) => (
           <li>
