@@ -47,6 +47,8 @@ const {
   keywords,
   menuItems,
   product,
+  collection,
+  item,
   heroImage,
   ogImage,
 } = Astro.props;
@@ -70,6 +72,8 @@ const crumbs = [
   article={article}
   breadcrumbs={crumbs}
   product={product}
+  collection={collection}
+  item={item}
   ogImage={ogImage}
 >
   <Breadcrumbs items={crumbs} />
@@ -82,7 +86,7 @@ const crumbs = [
     descRight={descRight}
     meta={meta}
     image={heroImage}
-  />
+  ><slot name="hero-badge" slot="badge" /></Hero>
 
   <SectionMenu items={menuItems} />
 

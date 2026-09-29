@@ -1,0 +1,30 @@
+---
+import type { Modelo } from '@lib/catalogo/types';
+
+interface Props {
+  estatus: Modelo['estatusNorma'];
+  norma?: string;
+  certificacion?: string;
+}
+
+const { estatus, norma, certificacion } = Astro.props;
+const labels = {
+  'certificado-ul': certificacion ? `Certificado UL · ${certificacion}` : undefined,
+  declarado: norma ? `Conforme a ${norma}, según el fabricante` : undefined,
+  equivalente: norma ? `Diseñado como equivalente a ${norma} — no certificado` : undefined,
+  materiales: norma ? `Materiales conforme a ${norma}` : undefined,
+  niosh: 'Certificación NIOSH — uso industrial, no para combate estructural',
+  'sin-norma': undefined,
+  'no-aplica': undefined,
+} as const;
+const label = labels[estatus];
+const tone = estatus === 'certificado-ul' ? 'good' : estatus === 'equivalente' || estatus === 'niosh' ? 'warn' : 'neutral';
+---
+{label && <span class:list={['norma-badge', `norma-badge--${tone}`]}>{label}</span>}
+
+<style>
+  .norma-badge { display: inline-flex; align-items: center; max-width: 100%; margin-top: 0.55rem; padding: 0.35rem 0.6rem; border-radius: 3px; font-size: 0.72rem; line-height: 1.35; font-weight: 800; }
+  .norma-badge--good { background: #e8f4ec; color: #176b3a; }
+  .norma-badge--neutral { background: var(--color-light); color: var(--color-gray); border: var(--border); }
+  .norma-badge--warn { background: #fff2d6; color: #805400; }
+</style>

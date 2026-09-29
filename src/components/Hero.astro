@@ -23,6 +23,7 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image } = Astro.
     <div class="hero-left">
       {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
       <h1>{title}{accent && <> <span class="hero-accent">{accent}</span></>}</h1>
+      <slot name="badge" />
       <p class="hero-subtitle">{subtitle}</p>
       {meta.length > 0 && (
         <ul class="hero-meta">

@@ -105,14 +105,14 @@ const isActive = (href: string) =>
           <a class="mob-item__link" href={item.href}>{item.label}</a>
 
           {item.groups && item.groups.map((g) => (
-            <div class="mob-group">
-              <p class="mob-group__title">{g.title}</p>
+            <details class="mob-group">
+              <summary class="mob-group__title">{g.title}</summary>
               <ul>
                 {g.items.map((c) => (
                   <li><a class="mob-item__link mob-item__link--sub" href={c.href}>{c.label}</a></li>
                 ))}
               </ul>
-            </div>
+            </details>
           ))}
 
           {item.children && (
@@ -340,7 +340,12 @@ const isActive = (href: string) =>
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
     color: var(--color-gray-soft);
+    cursor: pointer;
+    list-style: none;
   }
+  .mob-group__title::-webkit-details-marker { display: none; }
+  .mob-group__title::after { content: '+'; float: right; color: var(--color-primary); font-size: 1rem; }
+  .mob-group[open] .mob-group__title::after { content: '−'; }
   .mob-group ul { list-style: none; margin: 0; padding: 0; }
   .mob-item__link--sub { font-weight: 600; font-size: 0.92rem; color: var(--color-gray); }
   .mob-item__cta {

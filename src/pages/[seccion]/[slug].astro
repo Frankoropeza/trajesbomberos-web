@@ -1,0 +1,75 @@
+---
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import SpecTable from '@components/SpecTable.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import CTABanner from '@components/CTABanner.astro';
+import NormaBadge from '@components/NormaBadge.astro';
+import { SECCIONES } from '@lib/catalogo/secciones';
+import { CIERRES_TIPO, tiposDeSeccion } from '@lib/catalogo/tipos';
+import { modelosDeSeccion, modelosDeTipo } from '@lib/catalogo/modelos';
+import type { Modelo, Tipo } from '@lib/catalogo/types';
+import { waUrl } from '@lib/wa';
+
+export const getStaticPaths = (() => {
+  const reserved = new Set(['trajes', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
+  return SECCIONES.filter((seccion) => !reserved.has(seccion.slug)).flatMap((seccion) => [
+  ...tiposDeSeccion(seccion.slug).map((tipo) => ({ params: { seccion: seccion.slug, slug: tipo.slug }, props: { seccion, entry: tipo, kind: 'tipo' as const } })),
+  ...modelosDeSeccion(seccion.slug).map((modelo) => ({ params: { seccion: seccion.slug, slug: modelo.id }, props: { seccion, entry: modelo, kind: 'modelo' as const } })),
+  ]);
+}) satisfies GetStaticPaths;
+
+const { seccion, entry, kind } = Astro.props;
+const path = `/${seccion.slug}/${kind === 'tipo' ? entry.slug : entry.id}/`;
+const isTipo = kind === 'tipo';
+const tipo = entry as Tipo;
+const modelo = entry as Modelo;
+const modelCards = isTipo ? modelosDeTipo(tipo.slug) : [];
+const typeRows = tipo?.especificacion?.map((fila) => ({ campo: fila.campo, valor: fila.valor, nota: fila.nota }));
+const modelRows = modelo ? [
+  ...(modelo.capaExterior ? [{ campo: 'Capa exterior', valor: modelo.capaExterior }] : []),
+  ...(modelo.barreras ? [{ campo: 'Barreras', valor: modelo.barreras }] : []),
+  ...(modelo.norma ? [{ campo: 'Norma declarada', valor: modelo.norma }] : []),
+  ...(modelo.tallas ? [{ campo: 'Tallas', valor: modelo.tallas }] : []),
+  ...(modelo.peso ? [{ campo: 'Peso', valor: modelo.peso }] : []),
+] : [];
+const nombreModelo = modelo ? `${modelo.marca} ${modelo.nombre}` : '';
+const waMessage = isTipo ? `Hola, quiero cotizar ${tipo.nombre}.` : `Hola, quiero cotizar ${nombreModelo}${modelo.codigo ? ` ${modelo.codigo}` : ''}`;
+const title = isTipo ? tipo.title : `${nombreModelo} | casco para bombero | México`;
+const description = isTipo ? tipo.description : `${nombreModelo}: características, configuración, norma declarada y cotización por WhatsApp.`;
+const lead = isTipo ? tipo.lead : modelo.descripcion[0];
+const heroImage = isTipo ? tipo.imagen : modelo.imagen;
+---
+<PageLayout
+  pageType="producto" path={path} title={title} description={description} crumbLabel={isTipo ? tipo.nombreCard : nombreModelo}
+  parent={{ name: seccion.nombre, href: `/${seccion.slug}/` }} eyebrow={isTipo ? `Tipo de casco · ${seccion.nombre}` : `Modelo de casco · ${seccion.nombre}`}
+  h1={isTipo ? tipo.nombre : nombreModelo} lead={lead} descRight={isTipo ? ['Esta guía define el tipo de casco y los criterios para pedirlo. Después compara el modelo concreto y su configuración.', 'La selección se valida con la operación, el equipo existente y la documentación del fabricante.'] : [modelo.descripcion[1], 'La configuración exacta se confirma por escrito en la cotización.']}
+  heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq}
+  item={{ name: isTipo ? tipo.nombre : nombreModelo, description, image: heroImage?.src, category: seccion.nombre, url: path }}
+  menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: isTipo ? 'Modelos' : 'Características', href: '#modelos' }, { label: 'Preguntas', href: '#faq' }]}
+>
+  {modelo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
+  <div class="section"><div class="container layout">
+    <div>
+      <section class="block" id="a-fondo">
+        <SectionHeading eyebrow={isTipo ? 'Guía técnica' : 'Descripción del fabricante'} title={isTipo ? `Cómo elegir ${tipo.nombre.toLowerCase()}` : `Qué declara ${nombreModelo}`} />
+        {isTipo ? tipo.bloques.map((bloque) => <div class="prose-block"><h2>{bloque.h2}</h2>{bloque.parrafos.map((parrafo) => <p>{parrafo}</p>)}{bloque.lista && <ul>{bloque.lista.map((item) => <li>{item}</li>)}</ul>}</div>) : modelo.descripcion.slice(1).map((parrafo) => <p class="prose">{parrafo}</p>)}
+        {isTipo && <div class="prose-block"><h2>Cómo cerrar la selección antes de pedir</h2>{(CIERRES_TIPO[tipo.slug] ?? []).map((parrafo) => <p>{parrafo}</p>)}</div>}
+        {!isTipo && <div class="prose-block"><h2>Qué confirmar antes de ordenar</h2><p>La ficha sirve para iniciar una cotización, no para asumir una configuración cerrada. Indica por escrito el modelo, código cuando corresponda, color, protección ocular, accesorios, cantidad y destino de entrega. Si el casco se integra con ERA, capucha o identificación institucional, pide revisar esa interfaz antes de emitir la orden. La misma marca puede tener variantes que cambian suspensión, visor o componentes incluidos.</p><p>En la recepción, valida que la carcasa, ajuste, barbiquejo, protector ocular y accesorios correspondan a lo solicitado. Registra fecha de fabricación, asignación e inspecciones conforme al procedimiento de tu organización y las indicaciones del fabricante. Si hay dudas sobre alcance de norma o documentación, resuélvelas antes de poner el equipo en servicio; una imagen o una descripción comercial no sustituyen la confirmación por escrito de la partida comprada.</p></div>}
+      </section>
+      <section class="block" id="ficha"><SectionHeading eyebrow="Ficha técnica" title={isTipo ? 'Datos para tu requisición' : 'Especificación disponible'} description="Solo se muestran los campos publicados para esta ficha." />
+        {((isTipo && typeRows?.length) || (!isTipo && modelRows.length)) ? <SpecTable grupos={[{ grupo: isTipo ? 'Tipo de casco' : 'Modelo', filas: (isTipo ? typeRows : modelRows) as { campo: string; valor: string; nota?: string }[] }]} /> : <p class="prose">Consulta por WhatsApp para confirmar la configuración disponible.</p>}
+        {isTipo && tipo.normas && <div class="normas">{tipo.normas.map((norma) => <p><strong>{norma.norma}</strong> — {norma.alcance}</p>)}</div>}
+      </section>
+      {isTipo ? <section class="block" id="modelos"><SectionHeading eyebrow="Modelos relacionados" title="Fichas disponibles para este tipo" />{modelCards.length ? <div class="models">{modelCards.map((item) => <a href={`/${seccion.slug}/${item.id}/`}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /><span>Ver modelo →</span></a>)}</div> : <p class="prose">Por ahora no hay modelos publicados para este tipo. Podemos revisar la necesidad y la configuración requerida al cotizar.</p>}</section> : <section class="block" id="modelos"><SectionHeading eyebrow="Características" title={`Configuración declarada de ${nombreModelo}`} />{modelo.codigo ? <p class="code">Código: <strong>{modelo.codigo}</strong></p> : <p class="code">{modelo.codigoNota}</p>}<ul class="features">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul><div class="gallery">{[modelo.imagen, ...(modelo.imagenesExtra ?? [])].filter(Boolean).map((image) => <figure><img src={image?.src} alt={image?.alt} width={image?.width} height={image?.height} loading="lazy" />{image?.origen === 'proveedor' && <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption>}</figure>)}</div>{modelo.imagen?.origen !== 'proveedor' && <p class="gallery-disclaimer">Imagen ilustrativa del tipo de casco. Marca, modelo y configuración exactos se confirman por escrito en la cotización.</p>}</section>}
+      {isTipo && tipo.errores && <section class="block"><SectionHeading eyebrow="Antes de comprar" title="Errores que conviene evitar" /><ul class="features">{tipo.errores.map((error) => <li>{error}</li>)}</ul></section>}
+      <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title={isTipo ? `Dudas sobre ${tipo.nombre.toLowerCase()}` : `Dudas sobre ${nombreModelo}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
+    </div>
+  </div></div>
+  <CTABanner variant="dark" title={isTipo ? `Cotiza ${tipo.nombreCard.toLowerCase()} con la configuración correcta` : `Cotiza ${nombreModelo}`} text="Indica operación, número de elementos y accesorios para confirmar por escrito la configuración." buttons={[{ label: 'Cotizar por WhatsApp', href: waUrl(waMessage), icon: 'wa', primary: true, external: true }, { label: `Volver a ${seccion.nombre.toLowerCase()}`, href: `/${seccion.slug}/`, icon: 'catalog' }]} />
+</PageLayout>
+
+<style>
+  .layout { max-width: 980px; } .block { padding-block: clamp(2.5rem, 5vw, 4rem); border-top: var(--border); } .block:first-child { padding-top: 0; border-top: 0; } .prose, .prose-block > p { max-width: 82ch; color: var(--color-gray); line-height: 1.72; } .prose-block { margin-bottom: 2.4rem; } .prose-block h2 { font-size: 1.45rem; } .prose-block li, .features li { margin-block: .55rem; color: var(--color-gray); line-height: 1.6; } .normas { margin-top: 1.5rem; padding: 1rem 1.2rem; background: var(--color-light); border-left: 3px solid var(--color-primary); } .models { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; } .models a { display: flex; flex-direction: column; padding-bottom: 1rem; overflow: hidden; border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; } .models a:hover { border-color: var(--color-primary); box-shadow: var(--shadow); } .models img { aspect-ratio: 4 / 3; object-fit: cover; background: var(--color-light); } .models h2, .models .norma-badge, .models span { margin-inline: 1rem; } .models h2 { font-size: 1.05rem; margin-block: 1rem .1rem; } .models span { color: var(--color-primary); font-size: .85rem; font-weight: 800; margin-top: auto; padding-top: .8rem; } .code { padding: .8rem 1rem; background: var(--color-light); border-left: 3px solid var(--color-primary); color: var(--color-gray); } .features { columns: 2; column-gap: 2rem; } .features li { break-inside: avoid; } .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem; } figure { margin: 0; } figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); background: var(--color-light); } figcaption, .gallery-disclaimer { color: var(--color-gray); font-size: .8rem; line-height: 1.45; margin-top: .45rem; } @media (max-width: 640px) { .models, .gallery { grid-template-columns: 1fr; } .features { columns: 1; } }
+</style>

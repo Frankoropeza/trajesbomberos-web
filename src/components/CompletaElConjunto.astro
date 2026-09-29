@@ -1,0 +1,38 @@
+---
+import { SECCIONES } from '@lib/catalogo/secciones';
+
+const disponibles = new Set(SECCIONES.map((seccion) => seccion.slug));
+const opciones = [
+  { slug: 'cascos', nombre: 'Casco', desc: 'Protección de cabeza según la operación.' },
+  { slug: 'guantes', nombre: 'Guantes', desc: 'Interfaz de mano con el riesgo específico.' },
+  { slug: 'botas', nombre: 'Botas', desc: 'Calzado para la familia de traje elegida.' },
+  { slug: 'era', nombre: 'ERA', desc: 'Equipo de respiración autónoma compatible.' },
+].filter((opcion) => disponibles.has(opcion.slug));
+---
+{opciones.length > 0 && (
+  <section class="conjunto" aria-label="Completa el conjunto">
+    <p class="conjunto__eyebrow">Equipo complementario</p>
+    <h2>Completa el conjunto</h2>
+    <p class="conjunto__lead">Selecciona cada componente por el riesgo y confirma la compatibilidad del sistema completo.</p>
+    <div class="conjunto__grid">
+      {opciones.map((opcion) => (
+        <a href={`/${opcion.slug}/`} class="conjunto__card">
+          <strong>{opcion.nombre}</strong><span>{opcion.desc}</span><b>Ver catálogo →</b>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .conjunto { padding: 1.6rem; background: var(--color-light); border: var(--border); border-radius: var(--radius-lg); }
+  .conjunto__eyebrow { margin: 0 0 0.35rem; color: var(--color-primary); font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: var(--tracking-wide); }
+  h2 { margin: 0; font-size: 1.4rem; }
+  .conjunto__lead { margin: 0.5rem 0 1.1rem; color: var(--color-gray); }
+  .conjunto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+  .conjunto__card { display: grid; gap: 0.35rem; padding: 1rem; background: var(--color-white); border: var(--border); border-radius: var(--radius); color: var(--color-dark); text-decoration: none; }
+  .conjunto__card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); }
+  .conjunto__card span { color: var(--color-gray); font-size: 0.82rem; line-height: 1.4; }
+  .conjunto__card b { margin-top: 0.2rem; color: var(--color-primary); font-size: 0.78rem; }
+  @media (max-width: 640px) { .conjunto__grid { grid-template-columns: 1fr; } }
+</style>

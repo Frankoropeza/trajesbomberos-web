@@ -204,6 +204,39 @@ export function productSchema(p: {
   };
 }
 
+export function collectionPageSchema(c: { name: string; description: string; url: string }): object {
+  const url = new URL(c.url, SITE.url).href;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: c.name,
+    description: c.description,
+    inLanguage: SITE.lang,
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    publisher: { '@id': `${SITE.url}/#organization` },
+  };
+}
+
+export function itemPageSchema(i: { name: string; description: string; image?: string; category: string; url: string }): object {
+  const url = new URL(i.url, SITE.url).href;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: i.name,
+    description: i.description,
+    inLanguage: SITE.lang,
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    publisher: { '@id': `${SITE.url}/#organization` },
+    ...(i.image ? { primaryImageOfPage: { '@type': 'ImageObject', url: new URL(i.image, SITE.url).href } } : {}),
+    about: { '@type': 'Thing', name: i.name, description: i.description },
+    genre: i.category,
+  };
+}
+
 export interface SchemaInput {
   pageType: PageType;
   faqs?: { q: string; a: string }[];
@@ -211,6 +244,8 @@ export interface SchemaInput {
   breadcrumbs?: { name: string; href: string }[];
   article?: ArticleInput;
   product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };
+  collection?: { name: string; description: string; url: string };
+  item?: { name: string; description: string; image?: string; category: string; url: string };
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -221,6 +256,8 @@ export function buildSchema(input: SchemaInput): object[] {
   if (input.directoryItems?.length) schemas.push(directorySchema(input.directoryItems));
   if (input.article) schemas.push(articleSchema(input.article));
   if (input.product) schemas.push(productSchema(input.product));
+  if (input.collection) schemas.push(collectionPageSchema(input.collection));
+  if (input.item) schemas.push(itemPageSchema(input.item));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;
 }

@@ -12,6 +12,7 @@ import CategoryCard from '@components/CategoryCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
+import CompletaElConjunto from '@components/CompletaElConjunto.astro';
 import { PRODUCT_CATEGORIES, WA_MESSAGES, COMPLEMENTOS } from '@config/site';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
@@ -198,6 +199,8 @@ const pageIndex = [
       <p class="volver"><a href="/trajes/">← Volver al índice de trajes</a></p>
     </div>
   </section>
+
+  <div class="section conjunto-wrap"><div class="container"><CompletaElConjunto /></div></div>
 
   <!-- 7 · CTA de cierre -->
   <CTABanner variant="dark" {...presetCategoria(f.nombreWa)} />

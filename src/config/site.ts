@@ -7,7 +7,7 @@
 // poder nombrarlas como tales (hoy solo referencia técnica).
 // ============================================================
 
-import { PIEZAS } from '@lib/piezas';
+import { SECCIONES } from '@lib/catalogo/secciones';
 
 export const SITE = {
   name: 'TrajesBombero',
@@ -291,57 +291,38 @@ export interface NavItem {
   panelCta?: NavLink;
 }
 
-// Cuatro entradas, no ocho. Cada una agrupa lo que le corresponde
-// por nivel: catálogo, contenido técnico, blog y contacto.
+const seccionPublicada = (slug: string) => SECCIONES.some((seccion) => seccion.slug === slug);
+
+// El catálogo solo expone grupos que ya tienen hub publicado. Así el
+// menú no promete una línea sin destino y las fichas siguen a dos clics.
 export const NAV: NavItem[] = [
   {
-    label: 'Trajes',
+    label: 'Catálogo',
     href: '/trajes/',
     groups: [
       {
-        title: 'Por familia',
+        title: 'Trajes',
         items: PRODUCT_CATEGORIES.map((c) => ({
           label: c.nombre,
           href: `/trajes/${c.slug}/`,
           desc: c.chips.slice(0, 2).join(' · '),
         })),
       },
-      {
-        title: 'Fichas técnicas',
-        items: PIEZAS.map((p) => ({
-          label: p.nombre,
-          href: `/trajes/${p.familia}/${p.slug}/`,
-          desc: p.meta.slice(0, 2).join(' · '),
-        })),
-      },
+      ...(seccionPublicada('cascos') ? [{
+        title: 'Protección personal',
+        items: [{ label: 'Cascos', href: '/cascos/', desc: 'Estructural, forestal y rescate' }],
+      }] : []),
+      ...(seccionPublicada('era') ? [{ title: 'ERA', items: [{ label: 'Equipo de respiración', href: '/era/' }] }] : []),
+      ...(seccionPublicada('herramientas-y-rescate') ? [{ title: 'Herramientas y rescate', items: [{ label: 'Herramientas y rescate', href: '/herramientas-y-rescate/' }] }] : []),
+      ...(seccionPublicada('mangueras-y-accesorios') ? [{ title: 'Mangueras y accesorios', items: [{ label: 'Mangueras y accesorios', href: '/mangueras-y-accesorios/' }] }] : []),
+      ...(seccionPublicada('kits') ? [{ title: 'Kits', items: [{ label: 'Kits', href: '/kits/' }] }] : []),
+      { title: 'Marcas', items: [{ label: 'Marcas de referencia', href: '/#marcas', desc: 'Qué se especifica, no solo el logotipo' }] },
+      { title: 'Guías', items: [{ label: 'Blog técnico', href: '/blog/', desc: 'Cómo elegir y especificar' }] },
     ],
-    panelCta: { label: 'Comparar las seis familias de traje', href: '/trajes/' },
+    panelCta: { label: 'Todos los trajes', href: '/trajes/' },
   },
   {
-    label: 'Guía técnica',
-    href: '/#anatomia',
-    groups: [
-      {
-        title: 'Cómo elegir',
-        items: [
-          { label: 'Anatomía del traje', href: '/#anatomia', desc: 'Las tres capas y qué hace cada una' },
-          { label: 'Cómo especificar', href: '/#especificar', desc: 'Los ocho datos de la ficha' },
-          { label: 'Errores de compra', href: '/#errores', desc: 'Lo que más se hace mal' },
-        ],
-      },
-      {
-        title: 'Cumplimiento y servicio',
-        items: [
-          { label: 'Normas aplicables', href: '/#normas', desc: 'Qué obliga la ley en México' },
-          { label: 'Vida útil y servicio', href: '/#vida-util', desc: 'Retiro a los 10 años' },
-          { label: 'Marcas de referencia', href: '/#marcas', desc: 'Quién fabrica y qué se especifica' },
-        ],
-      },
-    ],
-    panelCta: { label: 'Preguntas frecuentes', href: '/#faq' },
-  },
-  {
-    label: 'Blog',
+    label: 'Guías',
     href: '/blog/',
     children: [
       ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),

@@ -1,0 +1,10 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { MODELOS, modelosDeFamilia } from '@lib/catalogo/modelos';
+
+export const getStaticPaths = (() => MODELOS.filter((modelo) => modelo.familia).map((modelo) => ({ params: { familia: modelo.familia!, modelo: modelo.id } }))) satisfies GetStaticPaths;
+const { familia, modelo } = Astro.params;
+const entry = modelosDeFamilia(familia!).find((item) => item.id === modelo);
+if (!entry) throw new Error('Modelo no encontrado');
+---
+<meta http-equiv="refresh" content={`0; url=/trajes/${familia}/`} />
