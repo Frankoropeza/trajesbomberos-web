@@ -15,6 +15,7 @@ import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, PRODUCT_CATEGORIES } from '@config/site';
 import { FAMILIAS } from '@lib/familias';
 import PostCard from '@components/PostCard.astro';
+import ModelosGrid from '@components/ModelosGrid.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
 import { HERO_GENERICO } from '@lib/imagenes';
 
@@ -23,6 +24,7 @@ const path = '/trajes/';
 // Franja de secciones de ESTA página
 const menuItems = [
   { label: 'Las seis familias', href: '#familias' },
+  { label: 'Modelos', href: '#modelos' },
   { label: 'Comparativa', href: '#comparar' },
   { label: 'Preguntas', href: '#faq' },
   { label: 'Blog', href: '#blog' },
@@ -31,10 +33,10 @@ const menuItems = [
 ];
 
 // Keywords propias de esta página (regla de las 3 keywords)
-const keywords = ['tipos de trajes para bomberos', 'catálogo', 'México'] as const;
-const title = 'Tipos de trajes para bomberos | catálogo | México';
+const keywords = ['traje de bombero profesional', 'tipos y modelos', 'México'] as const;
+const title = 'Traje de bombero profesional: tipos y modelos | México';
 const description =
-  'Tipos de trajes para bomberos: estructural, brigadista, forestal, aproximación, entrada y extricación. Cuál corresponde a cada operación y cómo se especifica.';
+  'Traje de bombero profesional: seis tipos (estructural, brigadista, forestal, aproximación, entrada y extricación) y modelos Romak Fire, Sköld y Lakeland.';
 
 const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
 const guiaRows = [
@@ -70,8 +72,8 @@ const faqs = [
     a: 'Es muy recomendable. El de extricación resiste corte y punción y trae barrera contra patógenos, y evita que contamines y desgastes el traje estructural en salidas que no son de incendio. Considerando que el estructural se retira a los diez años de fabricado, cuidarlo tiene un valor económico directo.',
   },
   {
-    q: '¿Qué pasa si compro la familia equivocada?',
-    a: 'Depende de qué tan lejos esté del uso real. Un forestal usado en estructural o un traje de aproximación usado para entrar a la flama son errores con consecuencia física, no solo económica. Por eso preferimos preguntar por tu operación antes de cotizar, aunque implique proponerte algo distinto a lo que pediste.',
+    q: '¿Qué es un traje de bombero profesional y en qué se diferencia de uno completo?',
+    a: 'Profesional suele referirse a un conjunto estructural certificado (NFPA 1970, antes 1971) para cuerpos de bomberos, frente a un traje de brigadista para conato en industria. «Traje completo» se refiere al conjunto: chaquetón y pantalonera más casco, monja, guantes, botas y ERA. Cotizamos ambas cosas: el traje solo o el kit completo por operación.',
   },
   {
     q: '¿Cuál es la norma vigente para trajes de bombero?',
@@ -169,8 +171,20 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
     caption="Seis familias de traje, cada una para una operación distinta. Te ayudamos a elegir la que corresponde antes de cotizar."
   />
 
+  <!-- Modelos reales (palanca SEO del clúster «trajes de bomberos») -->
+  <section class="section" id="modelos">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Modelos disponibles"
+        title="Modelos de traje de bombero que cotizamos"
+        description="Romak Fire, Sköld y Lakeland, con foto del fabricante, configuración por escrito y estatus normativo declarado en cada ficha."
+      />
+      <ModelosGrid />
+    </div>
+  </section>
+
   <!-- Comparativa -->
-  <section class="section" id="comparar">
+  <section class="section section--alt" id="comparar">
     <div class="container">
       <SectionHeading
         eyebrow="Comparativa"
@@ -182,7 +196,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   </section>
 
   <!-- FAQ de la sección -->
-  <section class="section section--alt" id="faq">
+  <section class="section" id="faq">
     <div class="container">
       <SectionHeading
         eyebrow="Preguntas frecuentes"

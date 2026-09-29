@@ -52,10 +52,16 @@ const componentesKit = isTipo && seccion.slug === 'kits' ? {
     { nombre: 'Fire Ranger Explorer', href: urlModelo(modeloPorId('romak-fire-ranger-explorer')) }, { nombre: 'Romak BOMW1002', href: urlModelo(modeloPorId('romak-bomw1002')) }, { nombre: 'Bullard Wildland FH911H', href: urlModelo(modeloPorId('bullard-fh911h')) }, { nombre: 'ESS Striketeam XTO', href: urlModelo(modeloPorId('ess-striketeam-xto')) },
   ],
 }[tipo.slug] ?? [] : [];
+// Keyword del clúster en eyebrow y H1 de los modelos de traje:
+// «Romak Fire Protector · traje de bombero estructural».
+const KW_FAMILIA: Record<string, string> = { estructural: 'traje de bombero estructural', brigadista: 'traje de bombero brigadista', forestal: 'traje de bombero forestal', aproximacion: 'traje de bombero de aproximación', entrada: 'traje de bombero de entrada', extricacion: 'traje de extricación y rescate', hazmat: 'traje hazmat' };
+const kwFamilia = familiaModelo ? KW_FAMILIA[familiaModelo.slug] : undefined;
+const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : kwFamilia ? `Modelo · ${kwFamilia}` : `Modelo · ${seccion.nombre}`;
+const h1Accent = !isTipo && kwFamilia ? `· ${kwFamilia}` : undefined;
 const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 ---
-<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : tituloModelo} description={isTipo ? tipo.description : descripcionModelo} crumbLabel={nombre} parent={parent ?? { name: seccion.nombre, href: `/${seccion.slug}/` }} eyebrow={isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${seccion.nombre}`} h1={nombre} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : (modelo.resumen ? modelo.resumen.slice(1) : [])} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas', href: '#faq' }]}>
+<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : tituloModelo} description={isTipo ? tipo.description : descripcionModelo} crumbLabel={nombre} parent={parent ?? { name: seccion.nombre, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={nombre} h1Accent={h1Accent} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : (modelo.resumen ? modelo.resumen.slice(1) : [])} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas', href: '#faq' }]}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   <div class="section"><div class="container layout"><main>
     <section class="block first" id="a-fondo"><div class="detail">

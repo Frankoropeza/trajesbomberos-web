@@ -19,7 +19,7 @@ export function buildKeywordTitle(kws: readonly string[] = KEYWORDS): string {
 
 // description abre con kw1 y teje las 3 sin sobreoptimizar, ≤160
 export function buildKeywordDescription(): string {
-  return 'Trajes para bomberos: estructural, brigadista, forestal y de aproximación. Equipo contra incendios con ficha técnica, factura y envíos a todo México.';
+  return 'Trajes para bomberos y trajes de bombero profesional: estructural, brigadista, forestal y de aproximación. Modelos Romak Fire y Sköld con ficha técnica. México.';
 }
 
 export interface MetaAuditResult {

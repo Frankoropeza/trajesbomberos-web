@@ -20,8 +20,8 @@ export const SITE = {
 
 // Regla de las 3 keywords · kw1 = principal, va primero y sin marca
 export const KEYWORDS = [
-  'trajes para bomberos',      // kw1 · principal
-  'equipo contra incendios',   // kw2 · secundaria
+  'trajes para bomberos',      // kw1 · principal (20/mes, TP 60)
+  'trajes de bomberos',        // kw2 · variante con más demanda del clúster profesional (200/mes)
   'México',                    // kw3 · variante geográfica
 ] as const;
 
@@ -362,6 +362,11 @@ export interface NavItem {
 }
 
 const seccionPublicada = (slug: string) => SECCIONES.some((seccion) => seccion.slug === slug);
+// Grupo del megamenú con solo las secciones del catálogo que ya existen en el build.
+const grupoCatalogo = (title: string, defs: [string, string, string][]): NavGroup[] => {
+  const items = defs.filter(([slug]) => seccionPublicada(slug)).map(([slug, label, desc]) => ({ label, href: `/${slug}/`, desc }));
+  return items.length ? [{ title, items }] : [];
+};
 
 // El catálogo solo expone grupos que ya tienen hub publicado. Así el
 // menú no promete una línea sin destino y las fichas siguen a dos clics.
@@ -378,16 +383,30 @@ export const NAV: NavItem[] = [
           desc: c.chips.slice(0, 2).join(' · '),
         })),
       },
-      ...(seccionPublicada('cascos') ? [{
-        title: 'Protección personal',
-        items: [{ label: 'Cascos', href: '/cascos/', desc: 'Estructural, forestal y rescate' }],
-      }] : []),
-      ...(seccionPublicada('era') ? [{ title: 'ERA', items: [{ label: 'Equipo de respiración', href: '/era/' }] }] : []),
-      ...(seccionPublicada('herramientas-y-rescate') ? [{ title: 'Herramientas y rescate', items: [{ label: 'Herramientas y rescate', href: '/herramientas-y-rescate/' }] }] : []),
-      ...(seccionPublicada('mangueras-y-accesorios') ? [{ title: 'Mangueras y accesorios', items: [{ label: 'Mangueras y accesorios', href: '/mangueras-y-accesorios/' }] }] : []),
-      ...(seccionPublicada('kits') ? [{ title: 'Kits', items: [{ label: 'Kits', href: '/kits/' }] }] : []),
-      { title: 'Marcas', items: [{ label: 'Marcas de referencia', href: '/#marcas', desc: 'Qué se especifica, no solo el logotipo' }] },
-      { title: 'Guías', items: [{ label: 'Blog técnico', href: '/blog/', desc: 'Cómo elegir y especificar' }] },
+      ...grupoCatalogo('Protección personal', [
+        ['cascos', 'Cascos', 'Estructural, forestal y rescate'],
+        ['capuchas', 'Monjas y capuchas', 'Nomex y barrera de partículas'],
+        ['guantes', 'Guantes', 'Estructural, extricación y forestal'],
+        ['botas', 'Botas', 'Hule, piel y forestal'],
+      ]),
+      ...grupoCatalogo('Respiración y kits', [
+        ['equipo-de-respiracion-autonoma', 'Equipo de respiración (ERA)', 'Combate, escape e industrial'],
+        ['kits', 'Kits por operación', 'Estructural, brigadista y forestal'],
+        ['accesorios', 'Accesorios', 'Lámparas, goggles, PASS y cámara térmica'],
+      ]),
+      ...grupoCatalogo('Ataque y rescate', [
+        ['herramientas', 'Herramientas', 'Hacha, Halligan, Pulaski y McLeod'],
+        ['rescate', 'Rescate', 'Hidráulica, arnés, cuerda y mosquetones'],
+        ['mangueras-y-accesorios', 'Mangueras y accesorios', 'Manguera, pitón y llave para hidrante'],
+      ]),
+      {
+        title: 'Marcas y guías',
+        items: [
+          ...(seccionPublicada('marcas') ? [{ label: 'Marcas que surtimos', href: '/marcas/', desc: 'Romak Fire y Sköld' }] : []),
+          { label: 'Marcas de referencia', href: '/#marcas', desc: 'Qué se especifica, no solo el logotipo' },
+          { label: 'Blog técnico', href: '/blog/', desc: 'Cómo elegir y especificar' },
+        ],
+      },
     ],
     panelCta: { label: 'Todos los trajes', href: '/trajes/' },
   },
@@ -460,6 +479,16 @@ export const FOOTER_COLUMNS = [
     title: 'Familias de traje',
     links: [
       ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
+    ],
+  },
+  {
+    title: 'Catálogo de equipo',
+    links: [
+      ...([
+        ['cascos', 'Cascos para bombero'], ['equipo-de-respiracion-autonoma', 'Equipo de respiración (ERA)'], ['botas', 'Botas para bombero'],
+        ['guantes', 'Guantes para bombero'], ['capuchas', 'Monjas y capuchas'], ['kits', 'Kits por operación'], ['marcas', 'Marcas que surtimos'],
+      ] as [string, string][]).filter(([slug]) => seccionPublicada(slug)).map(([slug, label]) => ({ label, href: `/${slug}/` })),
+      { label: 'Modelos de traje', href: '/trajes/#modelos' },
     ],
   },
   {

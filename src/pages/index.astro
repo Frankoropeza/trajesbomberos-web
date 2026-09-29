@@ -31,6 +31,7 @@ import { PRESET_GENERAL, PRESET_LICITACION } from '@lib/cta-presets';
 import TrustBlock from '@components/home/TrustBlock.astro';
 import CatalogCard from '@components/home/CatalogCard.astro';
 import QuoteCTA from '@components/home/QuoteCTA.astro';
+import ModelosGrid from '@components/ModelosGrid.astro';
 import type { ComponentProps } from 'astro/types';
 import RiskGuide from '@components/RiskGuide.astro';
 import NormsTable from '@components/NormsTable.astro';
@@ -311,16 +312,16 @@ const faqs = [
     a: 'Bajo NFPA 1850, el retiro es a los 10 años desde la fecha de fabricación, incluso si el traje nunca se usó. Además requiere inspección avanzada anual y dos lavados avanzados por año. Revisa siempre la fecha de fabricación en la etiqueta antes de aceptar un pedido.',
   },
   {
-    q: '¿Puedo comprar solo el chaquetón o solo la pantalonera?',
-    a: 'Sí. Vendemos por pieza o conjunto completo, sin compra mínima. Ten en cuenta que la interfaz entre chaquetón y pantalón es una zona crítica: si combinas piezas de distintos cortes o tallas, conviene revisarlo con nosotros antes.',
+    q: '¿Cuánto cuesta un traje de bombero?',
+    a: 'No publicamos precios porque el costo depende del composite (PBI, Nomex o Kevlar en cada capa), la norma que exige tu pliego, las tallas y si compras por pieza o el conjunto completo. Cotizamos en día hábil con ficha técnica por partida y precio por escrito, sin compra mínima. Un traje de brigadista y uno estructural certificado se parecen a la vista y cuestan muy distinto: por eso preguntamos primero por tu operación.',
+  },
+  {
+    q: '¿Cómo se llama el traje de los bomberos?',
+    a: 'En México se le llama traje de bombero, traje estructural o equipo de protección estructural; en catálogos de importación aparece como turnout gear o bunker gear. Se compone de chaquetón y pantalonera de tres capas, y se completa con casco, monja, guantes, botas y equipo de respiración autónoma (ERA). El traje de brigadista, el forestal y el de aproximación son familias distintas, no sinónimos.',
   },
   {
     q: '¿Qué necesito para una licitación o compra de gobierno?',
     a: 'Normalmente ficha técnica en formato de licitación, certificado de laboratorio del conjunto, carta de distribuidor autorizado, CFDI 4.0 con las partidas correspondientes y acta de entrega-recepción. Preparamos el expediente y asistimos a junta de aclaraciones.',
-  },
-  {
-    q: '¿Manejan marcas específicas?',
-    a: 'Trabajamos con producto de fabricantes nacionales e importados. Dinos qué marca o qué composite pide tu pliego o tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación.',
   },
 ];
 
@@ -363,8 +364,23 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     </div>
   </section>
 
+  <!-- 1b · Modelos reales de traje (palanca SEO del clúster «trajes de bomberos») -->
+  <section class="section" id="modelos">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Modelos disponibles"
+        title="Trajes de bomberos Romak Fire, Sköld y Lakeland con ficha técnica"
+        description="Modelos que cotizamos con su configuración por escrito: capa exterior, barreras, tallas y estatus normativo de cada uno. Foto del fabricante en cada ficha."
+      />
+      <ModelosGrid />
+      <p class="modelos-nota">
+        El estatus de norma se muestra tal como lo declara cada fabricante: certificado UL con número, declarado, equivalente o solo materiales. Nunca presentamos como certificado un modelo que no lo está.
+      </p>
+    </div>
+  </section>
+
   <!-- 2 · Complementos del conjunto (EQ-01…) -->
-  <section class="section" id="complementos">
+  <section class="section section--alt" id="complementos">
     <div class="container">
       <SectionHeading
         eyebrow="Complementos del conjunto"
@@ -588,6 +604,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--gap-grid, 1.5rem);
   }
+  .modelos-nota { margin: 1.4rem 0 0; font-size: 0.86rem; color: var(--color-gray); max-width: 92ch; }
   .pending-note {
     margin: 1.6rem 0 0;
     padding: 0.9rem 1.1rem;
