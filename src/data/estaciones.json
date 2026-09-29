@@ -5100,7 +5100,7 @@
   "municipio": "Monclova",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Monclova",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Blvd. Francisco I. Madero esq. Blvd. Harold R. Pape s/n, Zona Centro, C.P. 25750, Monclova",
   "coordenadas": {
    "lat": 26.9097,
@@ -5316,7 +5316,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil y Bomberos de Nava",
   "rolEstacion": "unica",
-  "direccion": "Nava, Coahuila (Dirección de PC y Bomberos municipal)",
   "coordenadas": {
    "lat": 28.4214,
    "lng": -100.7711,
@@ -5637,7 +5636,7 @@
   "municipio": "Saltillo",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Saltillo",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Blvd. Isidro López Zertuche s/n, Col. Río Bravo, C.P. 25225, Saltillo",
   "coordenadas": {
    "lat": 25.4232,
@@ -5726,7 +5725,11 @@
   "fuentes": [
    {
     "nombre": "web.nuevarosita.gob.mx",
-    "url": "https://web.nuevarosita.gob.mx/colaboran-bomberos-de-nueva-rosita-en-incendio-de-sabinas/"
+    "retirada": "https://web.nuevarosita.gob.mx/colaboran-bomberos-de-nueva-rosita-en-incendio-de-sabinas/"
+   },
+   {
+    "nombre": "vanguardia.com.mx — Teléfonos de apoyo para Sabinas y Nueva Rosita",
+    "url": "https://vanguardia.com.mx/coahuila/2901507-telefonos-de-apoyo-para-sabinas-y-nueva-rosita-coahuila-DYVG2901507"
    }
   ],
   "verificadoEl": "2026-06",
@@ -5996,7 +5999,7 @@
   "municipio": "Torreón",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Torreón",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "direccion": "Prol. Degollado y Av. Delicias, Col. Luis Echeverría Álvarez, Torreón",
   "coordenadas": {
    "lat": 25.5394,
