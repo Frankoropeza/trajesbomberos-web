@@ -239,8 +239,8 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     desc: 'Herramientas, sistemas y criterios para equipar operaciones de rescate.',
     h1: 'Herramientas y equipo de rescate para bomberos',
     lead: 'Guías para elegir herramientas de entrada, rescate, líneas de agua y sus componentes por operación, compatibilidad y condición de servicio.',
-    seoTitle: 'Herramientas y rescate para bomberos | México',
-    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada, rescate técnico, mangueras y kits con datos comparables en México.',
+    seoTitle: 'Herramientas y rescate para bomberos: guías de compra',
+    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada forzada, rescate técnico, mangueras y kits con datos comparables.',
     keywords: ['herramientas y rescate para bomberos', 'equipo de rescate', 'México'],
     guia: {
       titulo: 'Cómo comprar herramientas y equipo de rescate',

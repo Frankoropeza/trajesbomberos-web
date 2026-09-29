@@ -10,7 +10,7 @@ ancla: "Mangueras contra incendio"
 categoria: "herramientas-rescate"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Manguera de bombero: tipos y conexiones | México"
+seoTitle: "Manguera de bombero: tipos, diámetros y conexiones"
 description: "Manguera de bombero: selecciona manguera contra incendio, acoples, adaptadores, pitón y llave para hidrante por medida, rosca y uso."
 keywords: ["manguera de bombero", "manguera contra incendio", "México"]
 imagen: "/images/blog/mangueras-contra-incendio-tipos-y-conexiones.avif"

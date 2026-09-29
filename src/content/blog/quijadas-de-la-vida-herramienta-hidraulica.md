@@ -10,7 +10,7 @@ ancla: "Quijadas de la vida"
 categoria: "herramientas-rescate"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Quijadas de la vida y cizalla hidráulica | México"
+seoTitle: "Quijadas de la vida: qué son y cómo se usan en rescate"
 description: "Quijadas de la vida y cizalla hidráulica: selecciona separador, combinada o ariete por vehículo, fuente de poder, mantenimiento y EPP."
 keywords: ["quijadas de la vida", "cizalla hidráulica", "México"]
 imagen: "/images/blog/quijadas-de-la-vida-herramienta-hidraulica.avif"
