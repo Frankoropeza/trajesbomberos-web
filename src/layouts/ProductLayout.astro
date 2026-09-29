@@ -20,6 +20,7 @@ import { waUrl } from '@lib/wa';
 import type { FamiliaDetalle } from '@lib/familias';
 import { heroDeFamilia } from '@lib/imagenes';
 import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
+import { duoFamilia } from '@lib/titulos';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -94,8 +95,7 @@ const pageIndex = [
           <SectionHeading
             eyebrow="Qué se cotiza"
             title={`Piezas y configuraciones de ${f.nombreWa.toLowerCase()}`}
-            description="Cada pieza se cotiza por separado o dentro del conjunto. Dinos cuáles necesitas y cuántos elementos vas a equipar."
-          />
+            description="Cada pieza se cotiza por separado o dentro del conjunto. Dinos cuáles necesitas y cuántos elementos vas a equipar." duo={duoFamilia(f.slug, 'cotiza')} />
           <div class="piezas-grid">
             {f.productos.map((pr, i) => (
               <ProductCard
@@ -116,8 +116,7 @@ const pageIndex = [
           <SectionHeading
             eyebrow="Qué pedir"
             title="Los datos que debe traer tu cotización"
-            description="Cópialos tal cual en tu requisición. Si una oferta no puede darlos, todavía no es comparable con otra."
-          />
+            description="Cópialos tal cual en tu requisición. Si una oferta no puede darlos, todavía no es comparable con otra." duo={duoFamilia(f.slug, 'pedir')} />
           <ol class="pedir">
             {f.especificar.map((e, i) => (
               <li>
@@ -134,8 +133,7 @@ const pageIndex = [
           <SectionHeading
             eyebrow="Para cerrar el conjunto"
             title="Lo que se cotiza junto con el traje"
-            description="No son nuestra línea principal, pero los conseguimos para que no armes el pedido con tres proveedores."
-          />
+            description="No son nuestra línea principal, pero los conseguimos para que no armes el pedido con tres proveedores." duo={duoFamilia(f.slug, 'conjunto')} />
           <ul class="complementos-list">
             {COMPLEMENTOS.map((c) => (
               <li><strong>{c.nombre}</strong> — {c.nota}</li>
@@ -148,8 +146,7 @@ const pageIndex = [
             <SectionHeading
               eyebrow="Referencia del mercado"
               title={`Marcas de referencia en ${f.nombreWa.toLowerCase()}`}
-              description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo."
-            />
+              description="Referencia técnica del mercado, no afirmación de distribución. La especificación correcta se hace por composite y certificación, no por logotipo." duo={duoFamilia(f.slug, 'marcas')} />
             <ul class="marcas-list">
               {f.marcasRef.map((m) => (
                 <li><strong>{m.nombre}</strong> — {m.nota}</li>
@@ -160,7 +157,7 @@ const pageIndex = [
 
         {modelos.length > 0 && (
           <section id="modelos" class="block">
-            <SectionHeading eyebrow="Modelos" title="Modelos disponibles" description="Consulta la ficha de cada modelo antes de integrarlo a la partida." />
+            <SectionHeading eyebrow="Modelos" title="Modelos disponibles" description="Consulta la ficha de cada modelo antes de integrarlo a la partida." duo={duoFamilia(f.slug, 'modelos')} />
             <div class="piezas-grid">
               {modelos.map((modelo) => (
                 <a class="modelo-card" href={urlModelo(modelo)}>
@@ -177,8 +174,7 @@ const pageIndex = [
         <section id="faq" class="block">
           <SectionHeading
             eyebrow="Preguntas frecuentes"
-            title={`Dudas sobre ${f.nombreWa.toLowerCase()}`}
-          />
+            title={`Dudas sobre ${f.nombreWa.toLowerCase()}`} duo={duoFamilia(f.slug, 'faq')} />
           <FAQWithContact items={f.faqs} />
         </section>
       </div>
@@ -197,8 +193,7 @@ const pageIndex = [
       <SectionHeading
         eyebrow="Otras familias"
         title="Las seis familias de traje"
-        description="Cada una responde a un riesgo distinto y no son intercambiables. Si tu operación no encaja con esta, entra a la que corresponde."
-      />
+        description="Cada una responde a un riesgo distinto y no son intercambiables. Si tu operación no encaja con esta, entra a la que corresponde." duo={duoFamilia(f.slug, 'otras')} />
       <div class="grid-cards grid-cards--3">
         {PRODUCT_CATEGORIES.map((cat, i) => (
           <CategoryCard

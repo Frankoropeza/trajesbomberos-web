@@ -16,6 +16,7 @@ import { SITE, PRODUCT_CATEGORIES } from '@config/site';
 import { FAMILIAS } from '@lib/familias';
 import PostCard from '@components/PostCard.astro';
 import ModelosGrid from '@components/ModelosGrid.astro';
+import { duoTrajes } from '@lib/titulos';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
 import { HERO_GENERICO } from '@lib/imagenes';
 
@@ -121,6 +122,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         eyebrow="Las seis familias"
         title="Empieza por identificar tu operación"
         description="Si ya sabes cuál necesitas, entra directo a su ficha. Si no, la tabla comparativa de más abajo te ubica en un minuto."
+        duo={duoTrajes('familias')}
       />
       <div class="grid-cards grid-cards--3">
         {PRODUCT_CATEGORIES.map((cat, i) => (
@@ -147,6 +149,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         eyebrow="A fondo"
         title="Cada familia, explicada de frente"
         description="Sin adornos: para qué está hecha, qué se le pide en una cotización y en qué caso conviene otra."
+        duo={duoTrajes('afondo')}
       />
       {FAMILIAS.map((f) => (
         <div class="familia">
@@ -178,6 +181,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         eyebrow="Modelos disponibles"
         title="Modelos de traje de bombero que cotizamos"
         description="Romak Fire, Sköld y Lakeland, con foto del fabricante, configuración por escrito y estatus normativo declarado en cada ficha."
+        duo={duoTrajes('modelos')}
       />
       <ModelosGrid />
     </div>
@@ -190,6 +194,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         eyebrow="Comparativa"
         title="Qué familia corresponde a tu operación"
         description="La misma tabla que usamos por teléfono cuando alguien no sabe por dónde empezar."
+        duo={duoTrajes('comparativa')}
       />
       <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
     </div>
@@ -201,6 +206,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
       <SectionHeading
         eyebrow="Preguntas frecuentes"
         title="Dudas que salen siempre al elegir traje"
+        duo={duoTrajes('faq')}
       />
       <FAQWithContact items={faqs} />
     </div>
@@ -214,6 +220,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         eyebrow="Blog técnico"
         title="Antes de decidir, léete esto"
         description="Las guías que resuelven las dudas que aparecen justo antes de emitir una requisición: qué familia toca, qué norma citar y qué datos hacen comparable una cotización."
+        duo={duoTrajes('blog')}
       />
       <div class="grid-cards grid-cards--3">
         {ultimosPosts.map((a, i) => (
