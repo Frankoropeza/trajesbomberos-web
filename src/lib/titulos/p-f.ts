@@ -131,31 +131,31 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Describe en la solicitud si habrá trabajo dentro del habitáculo, junto a lámina o en carretera nocturna. Así se define talla sobre uniforme, cinta reflejante y el nivel requerido; pide por WhatsApp la configuración antes de convertir una chaqueta de trabajo en una partida de rescate.',
     ],
     comparativa: [
-      'La chaqueta de rescate técnico conviene ante vidrio, aceite y fluidos; el chaquetón estructural corresponde al riesgo térmico de ataque interior. La diferencia decisiva es el escenario, no la apariencia: una es monocapa con barrera biológica y la otra integra tres capas para fuego.',
+      'Ante vidrio, aceite y fluidos conviene una prenda de rescate; el chaquetón estructural corresponde al riesgo térmico de ataque interior. La diferencia decisiva es el escenario, no la apariencia: una es monocapa con barrera biológica y la otra integra tres capas para fuego.',
       'Reserva el chaquetón para incendio y especifica la chaqueta con corte, punción, patógenos y visibilidad para rescate. <a href="/trajes/estructural/">Trajes estructurales</a> ayuda a separar ambas partidas; solicita por escrito el nivel de certificación que exige tu operación.',
     ],
     errores: [
-      'Comprar una chaqueta de rescate técnico sin declarar el nivel de certificación puede entregar una protección que no corresponde a la maniobra. Otro error es salir a choques con el chaquetón estructural: aceite y fluidos contaminan un equipo que no fue seleccionado para ese trabajo.',
+      'Sin declarar el nivel de certificación, la compra puede entregar una protección que no corresponde a la maniobra. Otro error es salir a choques con el chaquetón estructural: aceite y fluidos contaminan un equipo que no fue seleccionado para ese trabajo.',
       'Evita ambos problemas describiendo rescate vehicular, exposición biológica y trabajo nocturno en la cotización. Pide la ficha de la chaqueta con su nivel declarado, cinta reflejante y refuerzos de codo; la partida queda verificable antes de firmar.',
     ],
     faq: [
-      'Las dudas sobre chaqueta de rescate técnico aclaran si protege frente a fuego, qué significan sus dos niveles y cómo se descontamina después de fluidos. También distinguen esta prenda de una chamarra de trabajo y explican por qué se coloca sobre el uniforme de estación.',
+      'Durante la selección surgen dudas sobre protección frente a fuego, significado de los dos niveles y descontaminación después de fluidos. También se distingue esta prenda de una chamarra de trabajo y se explica por qué se coloca sobre el uniforme de estación.',
       'Escríbenos por WhatsApp si necesitas definir nivel, talla de pecho y manga, o la salida que cubrirá. Indica si hay extricación, mando de incidente o atención prehospitalaria para recibir la información útil de la chaqueta de rescate técnico.',
     ],
     ficha: [
-      'La especificación de la chaqueta de rescate técnico debe copiar NFPA 1950 edición 2025 como referencia, nivel declarado, construcción monocapa y barrera contra patógenos. Añade resistencia a corte y punción, refuerzos de codo y antebrazo, cinta reflejante, talla por pecho y largo de manga.',
+      'En la especificación copia NFPA 1950 edición 2025 como referencia, nivel declarado, construcción monocapa y barrera contra patógenos. Añade resistencia a corte y punción, refuerzos de codo y antebrazo, cinta reflejante, talla por pecho y largo de manga.',
       'Pide la ficha técnica por escrito con esos campos y la tela exterior propuesta. Así el anexo separa una prenda de rescate de un chaquetón estructural y permite comparar configuraciones antes de liberar la requisición.',
     ],
     hermanas: [
-      'La chaqueta de rescate técnico se combina con pantalón de rescate, conjunto de dos piezas, overol, conjunto dual y pantalón de cubierta. Cada formato responde a vestido, desgaste y alcance distintos dentro de extricación y rescate.',
+      'Dentro de la familia, la pieza superior se combina con pantalón de rescate, conjunto de dos piezas, overol, conjunto dual y pantalón de cubierta. Cada formato responde a vestido, desgaste y alcance distintos dentro de extricación y rescate.',
       'Puedes comprar la chaqueta por pieza para reposición o armar una dotación completa desde <a href="/trajes/extricacion/">extricación y rescate</a>. Define cuáles usuarios trabajan hincados, cuáles requieren cobertura rápida y qué complementos acompañarán cada conjunto.',
     ],
     incluye: [
-      'La chaqueta de rescate técnico incluye construcción monocapa con refuerzos en codos y antebrazos, cinta reflejante de alta visibilidad y ficha con nivel de certificación declarado. El pantalón de rescate, guantes de extricación, casco y goggles se cotizan por separado.',
+      'La partida incluye construcción monocapa con refuerzos en codos y antebrazos, cinta reflejante de alta visibilidad y ficha con nivel de certificación declarado. El pantalón de rescate, guantes de extricación, casco y goggles se cotizan por separado.',
       'Separa el alcance en cada oferta para que una chaqueta no parezca una dotación completa. Solicita la misma lista de incluidos y excluidos por partida, y agrega los complementos compatibles cuando la operación requiera protección ocular, agarre o calzado.',
     ],
     relacionados: [
-      'Junto con la chaqueta de rescate técnico conviene revisar el pantalón que recibe el desgaste de rodilla y el conjunto cuando se necesita que ambas piezas compartan corte y nivel. Esas decisiones evitan una interfaz improvisada para rescate vehicular.',
+      'Para completar la protección conviene revisar el pantalón que recibe el desgaste de rodilla y el conjunto cuando se necesita que ambas piezas compartan corte y nivel. Esas decisiones evitan una interfaz improvisada para rescate vehicular.',
       'Consulta <a href="/trajes/extricacion/pantalon/">pantalón de rescate técnico</a> y <a href="/trajes/extricacion/conjunto/">conjunto de extricación</a> antes de cerrar la requisición. Anota usuarios, tallas y tipo de salida para decidir si conviene reposición por pieza, set completo o combinación operativa de turno.',
     ],
   },
@@ -165,31 +165,31 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Indica en la cotización si habrá trabajo dentro del vehículo, carretera nocturna o contacto biológico. Con esos datos se definen cintura, largo, cinta reflejante y nivel requerido; pide la ficha de la prenda antes de asignarla a la dotación.',
     ],
     comparativa: [
-      'El pantalón de rescate técnico sirve para corte, punción y exposición biológica durante extricación; la pantalonera estructural está diseñada para protección térmica. El dato que define la compra es el riesgo dominante: trabajar hincado sobre lámina no equivale a entrar a un incendio.',
+      'Frente a corte, punción y exposición biológica durante extricación funciona esta prenda; la pantalonera estructural está diseñada para protección térmica. El dato que define la compra es el riesgo dominante: trabajar hincado sobre lámina no equivale a entrar a un incendio.',
       'Pide rodilla acolchada y reforzada, barrera declarada y cinta en pierna para rescate. Para la partida de fuego consulta <a href="/trajes/estructural/">trajes estructurales</a>; mantener ambos usos separados conserva disponibilidad de cada equipo y aclara la requisición.',
     ],
     errores: [
-      'Un pantalón de rescate técnico con solo refuerzo puede resistir abrasión pero resultar insoportable durante una maniobra hincada; sin acolchado falta una función esencial. Ignorar la cinta en pierna también reduce visibilidad cuando el usuario trabaja junto al vehículo.',
+      'Una prenda de extricación con solo refuerzo puede resistir abrasión pero resultar insoportable durante una maniobra hincada; sin acolchado falta una función esencial. Ignorar la cinta en pierna también reduce visibilidad cuando el usuario trabaja junto al vehículo.',
       'Evita comparar fotografías: pide la ficha con acolchado, refuerzo, resistencia mecánica y cinta reflejante. Revisa la rodilla tras cada salida y declara el nivel de certificación en la orden para no recibir una configuración sin el alcance requerido.',
     ],
     faq: [
-      'Las preguntas del pantalón de rescate técnico explican por qué rodilla acolchada y refuerzo no son lo mismo, cómo se descontamina tras fluidos y qué revisar después de cada salida. También aclaran por qué no conviene sustituirlo con pantalonera estructural.',
+      'La rodilla acolchada y el refuerzo no son lo mismo; esa distinción orienta la selección y la descontaminación tras fluidos. También conviene revisar la prenda después de cada salida y no sustituirla con pantalonera estructural.',
       'Manda por WhatsApp cintura, largo, uniforme que irá debajo y tipo de rescate. Con esos datos se puede orientar la talla, el nivel declarado y la necesidad de compra por pieza para reposición de la zona que más desgaste recibe.',
     ],
     ficha: [
-      'Para especificar pantalón de rescate técnico anota NFPA 1950 edición 2025 como referencia, nivel declarado, barrera contra patógenos, construcción monocapa y resistencia a corte y punción. La rodilla debe figurar acolchada y reforzada; agrega cinta en pierna, cintura, largo y cierre.',
+      'Al especificar esta pantalonera anota NFPA 1950 edición 2025 como referencia, nivel declarado, barrera contra patógenos, construcción monocapa y resistencia a corte y punción. La rodilla debe figurar acolchada y reforzada; agrega cinta en pierna, cintura, largo y cierre.',
       'Pide la ficha técnica por escrito y transcribe los campos al anexo de compra. Esa precisión diferencia el pantalón de una pantalonera estructural y permite validar que la prenda seleccionada acompaña el trabajo hincado sobre vidrio y lámina.',
     ],
     hermanas: [
-      'El pantalón de rescate técnico comparte familia con chaqueta, conjunto, overol, conjunto dual y pantalón de cubierta. La pieza inferior se repone con frecuencia por el contacto de rodilla, mientras que los demás formatos cambian velocidad de vestido y cobertura.',
+      'Como pieza inferior, comparte familia con chaqueta, conjunto, overol, conjunto dual y pantalón de cubierta. Se repone con frecuencia por el contacto de rodilla, mientras que los demás formatos cambian velocidad de vestido y cobertura.',
       'Cotiza el pantalón suelto cuando necesitas reponer desgaste o integra una dotación desde <a href="/trajes/extricacion/">extricación y rescate</a>. Define el formato por usuario y operación para que la misma familia no se convierta en una compra genérica.',
     ],
     incluye: [
-      'El pantalón de rescate técnico incluye prenda monocapa con rodilla acolchada y reforzada, cinta reflejante en pierna y ficha con nivel de certificación. Chaqueta, cinturón y rodilleras exteriores independientes no forman parte de esta partida.',
+      'Esta partida de extricación incluye prenda monocapa con rodilla acolchada y reforzada, cinta reflejante en pierna y ficha con nivel de certificación. Chaqueta, cinturón y rodilleras exteriores independientes no forman parte de esta partida.',
       'Pide que incluidos y excluidos aparezcan separados en cada propuesta. Así la comparación conserva el mismo alcance y puedes sumar chaqueta, guantes, botas o accesorios cuando la operación requiera cerrar el conjunto de rescate.',
     ],
     relacionados: [
-      'El pantalón de rescate técnico se revisa con la chaqueta que completa el sistema y con el conjunto de extricación si se busca mismo corte y nivel. También permite contrastar su rodilla mecánica con la pantalonera destinada al riesgo térmico.',
+      'La selección se revisa con la chaqueta que completa el sistema y con el conjunto de extricación si se busca mismo corte y nivel. También permite contrastar la rodilla mecánica con la pantalonera destinada al riesgo térmico.',
       'Abre <a href="/trajes/extricacion/chaqueta/">chaqueta de rescate técnico</a> y <a href="/trajes/extricacion/conjunto/">conjunto de extricación</a> antes de solicitar precios. Define si buscas reposición, dotación inicial o una combinación por usuario, talla, turno, tipo de intervención y condiciones de uso.',
     ],
   },
@@ -199,31 +199,31 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Especifica cuántos elementos salen a rescate por turno y qué uniforme usarán debajo. Ese dato permite pedir tallas por persona, mismo nivel en ambas piezas y cinta reflejante para carretera, en lugar de armar pares de modelos distintos.',
     ],
     comparativa: [
-      'El conjunto de extricación de dos piezas conviene cuando el desgaste obliga a reemplazar solo pantalón o chaqueta; el overol gana cuando el vestido inmediato y la cobertura continua pesan más. La elección se define por frecuencia de rescate, desgaste de rodilla y tiempo de salida.',
+      'Cuando el desgaste de extricación obliga a reemplazar solo pantalón o chaqueta, el formato de dos piezas conviene; el overol gana cuando el vestido inmediato y la cobertura continua pesan más. La elección se define por frecuencia de rescate, desgaste de rodilla y tiempo de salida.',
       'Compara reposición, interfaz de cintura y velocidad antes de seleccionar formato. <a href="/trajes/extricacion/overol/">Overol de rescate técnico</a> muestra la alternativa de una pieza; solicita por escrito corte, nivel y tallas de la dotación que realmente usará cada elemento.',
     ],
     errores: [
-      'Mezclar un conjunto de extricación con piezas de modelos distintos deja cintura, tela o nivel sin correspondencia. Guardarlo después de una salida con fluidos sin descontaminación también conserva un riesgo biológico que no siempre se aprecia a simple vista.',
+      'Mezclar piezas de modelos distintos deja cintura, tela o nivel sin correspondencia. Guardarlas después de una salida con fluidos sin descontaminación también conserva un riesgo biológico que no siempre se aprecia a simple vista.',
       'Pide ambas prendas como sistema, con nivel declarado y talla por elemento. Incluye en el procedimiento qué salidas activan este conjunto y cuándo se limpia; así la compra evita que el equipo estructural siga siendo la respuesta improvisada ante cada choque.',
     ],
     faq: [
-      'Las dudas del conjunto de extricación resuelven si conviene comprar por pieza, cómo definir cuándo se usa y por qué las dos prendas deben compartir nivel. También explican su vestido sobre uniforme y el procedimiento distinto para suciedad mecánica o contacto con fluidos.',
+      'Al armar una dotación de extricación conviene resolver si se compra por pieza, cuándo se usa y por qué las dos prendas deben compartir nivel. También importa el vestido sobre uniforme y el procedimiento distinto para suciedad mecánica o contacto con fluidos.',
       'Escríbenos por WhatsApp el número de rescatistas, sus tallas y las salidas habituales. Esa información ayuda a decidir si la primera compra debe ser set completo y qué reposiciones se prevén por rodilla, contaminación o condición.',
     ],
     ficha: [
-      'La ficha del conjunto de extricación debe indicar NFPA 1950 edición 2025 como referencia, dos niveles según fabricante y barrera contra patógenos. Copia además formato de dos piezas, construcción monocapa, interfaz diseñada como sistema, refuerzos en codos, antebrazos y rodillas, más tallas por elemento.',
+      'La ficha del sistema de extricación debe indicar NFPA 1950 edición 2025 como referencia, dos niveles según fabricante y barrera contra patógenos. Copia además formato de dos piezas, construcción monocapa, interfaz diseñada como sistema, refuerzos en codos, antebrazos y rodillas, más tallas por elemento.',
       'Solicita esa ficha por escrito para que chaqueta y pantalón se evalúen como una sola configuración. El anexo técnico debe incluir tela exterior, cinta reflejante y nivel común antes de comparar una oferta contra otra.',
     ],
     hermanas: [
-      'El conjunto de extricación convive con chaqueta y pantalón por separado, overol de vestido rápido, conjunto dual para rescate y forestal, y pantalón de cubierta. Las piezas hermanas permiten ajustar la dotación al desgaste, la urgencia y el alcance de cada salida.',
+      'La dotación de extricación convive con chaqueta y pantalón por separado, overol de vestido rápido, conjunto dual para rescate y forestal, y pantalón de cubierta. Las piezas hermanas permiten ajustar el equipo al desgaste, la urgencia y el alcance de cada salida.',
       'Revisa la familia <a href="/trajes/extricacion/">extricación y rescate</a> si necesitas combinar formatos. Compra el set para una primera dotación o piezas sueltas para reposición, siempre con talla, función, turno y operación documentados por usuario.',
     ],
     incluye: [
-      'El conjunto de extricación incluye chaqueta y pantalón del mismo corte y nivel, refuerzos en codos, antebrazos y rodillas, además de cinta reflejante en ambas prendas. Guantes, casco, goggles y botas se cotizan como complementos separados.',
+      'La partida de extricación incluye chaqueta y pantalón del mismo corte y nivel, refuerzos en codos, antebrazos y rodillas, además de cinta reflejante en ambas prendas. Guantes, casco, goggles y botas se cotizan como complementos separados.',
       'Solicita que el alcance se enumere de esa forma en cada cotización. Así puedes incorporar los complementos compatibles sin atribuirlos al set y comparar dos propuestas que cubren exactamente las mismas dos piezas.',
     ],
     relacionados: [
-      'Antes de contratar un conjunto de extricación conviene revisar la chaqueta para reposición individual y el overol para estaciones donde la salida requiere vestido inmediato. Son decisiones de formato que influyen en la disponibilidad de la dotación durante el turno.',
+      'Antes de contratar una dotación de extricación de dos piezas conviene revisar la chaqueta para reposición individual y el overol para estaciones donde la salida requiere vestido inmediato. Son decisiones de formato que influyen en la disponibilidad durante el turno.',
       'Consulta <a href="/trajes/extricacion/chaqueta/">chaqueta de rescate técnico</a> y <a href="/trajes/extricacion/overol/">overol de rescate técnico</a>. Define en la requisición frecuencia de uso, desgaste esperado, tallas y tiempo de respuesta antes de elegir entre dos piezas o una sola.',
     ],
   },
@@ -233,31 +233,31 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Describe si el usuario debe vestirlo con botas puestas, entrar a vehículos o cubrir rescate y forestal. Con esa información se define cierre frontal, talla por estatura y torso, y si se requiere doble certificación declarada en la etiqueta.',
     ],
     comparativa: [
-      'El overol de rescate técnico favorece velocidad de vestido y cobertura continua; el conjunto de dos piezas favorece cambiar solo la prenda dañada. El desgaste de rodilla y la necesidad de abrir la prenda completa durante el turno son datos prácticos que resuelven la comparación.',
+      'La velocidad de vestido y la cobertura continua favorecen al overol; el conjunto de dos piezas favorece cambiar solo la prenda dañada. El desgaste de rodilla y la necesidad de abrir la prenda completa durante el turno son datos prácticos que resuelven la comparación.',
       'Elige una pieza cuando la salida inmediata es prioritaria y dos piezas si anticipas reposición frecuente. <a href="/trajes/extricacion/conjunto/">Conjunto de extricación</a> permite contrastar esa logística; pide tallas reales y confirma que el cierre funciona con la bota de servicio.',
     ],
     errores: [
-      'Elegir un overol de rescate técnico por talla estimada puede dejar el torso corto y limitar brazos al agacharse. Otro error es asumir doble certificación: solo algunos modelos la tienen y debe declararse en etiqueta, no inferirse del formato.',
+      'Elegir este formato de extricación por talla estimada puede dejar el torso corto y limitar brazos al agacharse. Otro error es asumir doble certificación: solo algunos modelos la tienen y debe declararse en etiqueta, no inferirse del formato.',
       'Evita la improvisación midiendo estatura y torso con el uniforme de trabajo. Solicita la ficha que confirme cierre, nivel, barrera y estatus declarado del modelo; si habrá uso rural, agrega expresamente la necesidad de rescate y forestal.',
     ],
     faq: [
-      'Las preguntas del overol de rescate técnico abordan su diferencia frente al conjunto, el uso con botas puestas, la talla de torso y la descontaminación después de fluidos. También aclaran que la protección frente a incendio interior no se presume por ser una prenda completa.',
+      'Al elegir una pieza de extricación surgen preguntas sobre su diferencia frente al conjunto, el uso con botas puestas, la talla de torso y la descontaminación después de fluidos. La protección frente a incendio interior no se presume por ser una prenda completa.',
       'Comparte por WhatsApp estaturas, tipo de bota y tiempo de respuesta de la estación. Con esos datos se orienta el formato, la talla y si la configuración debe ser simple o dual para las salidas que atiende la unidad.',
     ],
     ficha: [
-      'Especifica el overol de rescate técnico con NFPA 1950 edición 2025 como referencia, barrera contra patógenos, construcción monocapa y formato de una pieza. Añade cierre frontal de vestido rápido, refuerzos en rodillas y codos, talla por estatura y torso, cinta reflejante y certificación simple o dual.',
+      'En la ficha de extricación especifica NFPA 1950 edición 2025 como referencia, barrera contra patógenos, construcción monocapa y formato de una pieza. Añade cierre frontal de vestido rápido, refuerzos en rodillas y codos, talla por estatura y torso, cinta reflejante y certificación simple o dual.',
       'Pide la ficha técnica por escrito y confirma la condición de doble certificación solo si el modelo la declara. Esa lista impide que una prenda de rapidez se cotice sin resolver talla, cierre ni alcance operativo.',
     ],
     hermanas: [
-      'El overol de rescate técnico comparte familia con conjunto de dos piezas, chaqueta, pantalón, conjunto dual y pantalón de cubierta. Su diferencia es eliminar la cintura y acelerar el vestido, mientras que las otras piezas permiten reposición localizada o cobertura parcial.',
+      'El formato de una pieza comparte familia con conjunto de dos piezas, chaqueta, pantalón, conjunto dual y pantalón de cubierta. Su diferencia es eliminar la cintura y acelerar el vestido, mientras que las otras piezas permiten reposición localizada o cobertura parcial.',
       'Explora <a href="/trajes/extricacion/">extricación y rescate</a> para elegir por servicio. Compra el overol por pieza o combina formatos según la unidad, pero asigna talla individual para que la rapidez de colocación no se pierda en una prenda compartida.',
     ],
     incluye: [
-      'El overol de rescate técnico incluye una pieza con refuerzos en rodillas y codos, cierre frontal de vestido rápido y cinta reflejante. Guantes de extricación, casco, goggles y botas no vienen dentro de la partida y requieren cotización por separado.',
+      'La partida incluye una pieza con refuerzos en rodillas y codos, cierre frontal de vestido rápido y cinta reflejante. Guantes de extricación, casco, goggles y botas no vienen dentro de la partida y requieren cotización por separado.',
       'Pide que la propuesta liste el overol y sus exclusiones sin agrupar accesorios. Así puedes comprobar que el cierre, la talla y los refuerzos corresponden al modelo elegido, además de agregar los complementos necesarios para la operación.',
     ],
     relacionados: [
-      'El overol de rescate técnico se revisa junto con el conjunto de extricación, que cambia la lógica de reposición, y con el conjunto dual cuando una unidad también combate vegetación. Ambos enlaces ayudan a definir si rapidez, servicio o doble escenario controla la compra.',
+      'La elección se revisa junto con el conjunto de extricación, que cambia la lógica de reposición, y con el conjunto dual cuando una unidad también combate vegetación. Ambos enlaces ayudan a definir si rapidez, servicio o doble escenario controla la compra.',
       'Consulta <a href="/trajes/extricacion/conjunto/">conjunto de extricación</a> y <a href="/trajes/extricacion/conjunto-dual/">conjunto dual rescate y forestal</a>. Envía la lista de salidas de la estación para comparar formatos sobre el mismo riesgo, talla, desgaste, disponibilidad, personal asignado y tiempo operativo.',
     ],
   },
@@ -267,31 +267,31 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Describe volumen de salidas, terreno, contacto biológico y trabajo nocturno al especificarlo. Esa información permite decidir formato, tallas, cinta reflejante y la declaración de ambas referencias, en vez de comprar una prenda forestal simple para una operación que también exige rescate.',
     ],
     comparativa: [
-      'El conjunto dual rescate y forestal conviene cuando una misma corporación cubre ambos escenarios con presupuesto para una dotación; dos equipos separados permiten optimizar cada uso. La decisión depende de volumen por servicio, logística de lavado y necesidad de especialización por operación.',
+      'Cuando una misma corporación cubre ambos escenarios con presupuesto para una dotación, el formato dual conviene; dos equipos separados permiten optimizar cada uso. La decisión depende de volumen por servicio, logística de lavado y necesidad de especialización por operación.',
       'Compara una etiqueta con ambas declaraciones, no solo el precio de una prenda forestal. Si las dos tareas son intensas, dos dotaciones pueden resolver mejor; si se alternan con la misma gente, pide por escrito composición, formato y alcance dual.',
     ],
     errores: [
-      'Aceptar un conjunto dual rescate y forestal solo de palabra deja sin evidencia la doble declaración que debe constar en etiqueta. También es incorrecto usarlo en incendio estructural: su construcción monocapa no incorpora barrera térmica ni de humedad para ataque interior.',
+      'Aceptar una configuración dual solo de palabra deja sin evidencia la doble declaración que debe constar en etiqueta. También es incorrecto usarla en incendio estructural: su construcción monocapa no incorpora barrera térmica ni de humedad para ataque interior.',
       'Evita esos errores solicitando foto o información de etiqueta, referencias de rescate y forestal, además del procedimiento de lavado para cada salida. <a href="/trajes/estructural/">Trajes estructurales</a> cubren otra exposición y deben permanecer como partida independiente.',
     ],
     faq: [
-      'Las preguntas del conjunto dual rescate y forestal explican qué respalda la doble certificación, cuándo puede sustituir dos dotaciones y por qué se aplican procedimientos de lavado distintos tras vegetación o fluidos. También aclaran que no corresponde a incendio estructural.',
+      'La doble certificación para extricación plantea qué la respalda, cuándo puede sustituir dos dotaciones y por qué se aplican procedimientos de lavado distintos tras vegetación o fluidos. También debe quedar claro que esta prenda no corresponde a incendio estructural.',
       'Escribe por WhatsApp si la unidad alterna carretera y vegetación, cuántos usuarios participan y si existe criterio ambiental sin PFAS. Con esos datos se puede pedir la configuración dual adecuada y documentar la declaración requerida para la compra.',
     ],
     ficha: [
-      'La ficha del conjunto dual rescate y forestal debe consignar NFPA 1950 para rescate y para forestal, con declaración en etiqueta y estatus de referencia técnica voluntaria en México. Copia construcción monocapa, tela ignífuga inherente transpirable, refuerzos, formato, tallas y cinta reflejante.',
+      'La ficha de la configuración dual debe consignar NFPA 1950 para rescate y para forestal, con declaración en etiqueta y estatus de referencia técnica voluntaria en México. Copia construcción monocapa, tela ignífuga inherente transpirable, refuerzos, formato, tallas y cinta reflejante.',
       'Pide la ficha técnica por escrito y no llames certificado a un modelo sin esa declaración. Si se requiere opción sin PFAS o barrera biológica según modelo, inclúyelo en el anexo para que la propuesta sea evaluable.',
     ],
     hermanas: [
-      'El conjunto dual rescate y forestal comparte familia con conjunto dedicado, overol, chaqueta, pantalón y pantalón de cubierta. Sus hermanas cubren rescate de manera específica, mientras el dual reúne dos escenarios para una dotación con la misma gente.',
+      'Esta configuración comparte familia con conjunto dedicado, overol, chaqueta, pantalón y pantalón de cubierta. Sus piezas hermanas cubren rescate de manera específica, mientras el formato dual reúne dos escenarios para una dotación con la misma gente.',
       'Compara las alternativas desde <a href="/trajes/extricacion/">extricación y rescate</a> antes de comprar. Elige conjunto completo si predomina rescate, dual si alternas vegetación y carretera, y piezas sueltas cuando la reposición es el objetivo principal de la partida.',
     ],
     incluye: [
-      'El conjunto dual rescate y forestal incluye chaqueta y pantalón, u overol según configuración, con doble declaración solicitada, refuerzos en zonas de contacto y cinta reflejante. Casco, guantes, goggles, botas y ERA se cotizan fuera de esta partida.',
+      'La partida dual incluye chaqueta y pantalón, u overol según configuración, con doble declaración solicitada, refuerzos en zonas de contacto y cinta reflejante. Casco, guantes, goggles, botas y ERA se cotizan fuera de esta partida.',
       'Pide que el formato y la declaración aparezcan junto a los incluidos. Separar cada complemento permite verificar la dotación sin convertir una prenda dual en un conjunto de protección completo que no contempla respiración, cabeza ni calzado.',
     ],
     relacionados: [
-      'Al revisar conjunto dual rescate y forestal conviene contrastarlo con el conjunto de extricación dedicado y con el formato forestal equivalente. Esos destinos aclaran qué se gana al cubrir dos operaciones y qué se conserva cuando cada una tiene dotación propia.',
+      'Al revisar una dotación dual conviene contrastarla con el conjunto de extricación dedicado y con el formato forestal equivalente. Esos destinos aclaran qué se gana al cubrir dos operaciones y qué se conserva cuando cada una tiene dotación propia.',
       'Consulta <a href="/trajes/extricacion/conjunto/">conjunto de extricación</a> y <a href="/trajes/forestal/conjunto-dual/">conjunto dual forestal</a>. Solicita ambas configuraciones cuando la decisión dependa de frecuencia de salidas, presupuesto, mantenimiento, disponibilidad por turno, personal asignado, almacenamiento disponible y protocolos internos de servicio.',
     ],
   },
@@ -301,31 +301,31 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Describe si el llamado implica solo suciedad y abrasión o una maniobra con vidrio y lámina. Esa diferencia fija el alcance: pide holgura, cierre rápido y cinta en pierna para cobertura ligera, o selecciona pantalón de extricación cuando el riesgo mecánico aumenta.',
     ],
     comparativa: [
-      'El pantalón de cubierta para rescate protege la ropa de trabajo y se calza con máxima rapidez; el pantalón de extricación se destina a maniobra pesada con corte y punción. La decisión se define por exposición mecánica, no por que ambas prendas se usen sobre uniforme.',
+      'Para proteger la ropa de trabajo y calzarse con máxima rapidez sirve esta cubierta; el pantalón de extricación se destina a maniobra pesada con corte y punción. La decisión se define por exposición mecánica, no por que ambas prendas se usen sobre uniforme.',
       'Para apoyos y llamados menores solicita corte amplio, cierre de vestido rápido y talla con bota. Para extricación real revisa <a href="/trajes/extricacion/pantalon/">pantalón de rescate técnico</a>; pedir la referencia del modelo evita asumir que todos los pantalones de cubierta tienen certificación.',
     ],
     errores: [
-      'Usar pantalón de cubierta para rescate como sustituto de un pantalón de extricación expone al usuario ante vidrio y lámina. También es un error suponer certificación: varía por modelo y debe verificarse en ficha antes de incluirla en una requisición.',
+      'Usar una cubierta como sustituto de un pantalón de extricación expone al usuario ante vidrio y lámina. También es un error suponer certificación: varía por modelo y debe verificarse en ficha antes de incluirla en una requisición.',
       'Evita ambas confusiones describiendo si la salida es apoyo ligero o rescate técnico. Pide alcance, modelo, holgura sobre uniforme y cierre compatible con bota; si la prenda se perfora o pierde función, programa su reposición en vez de improvisar una reparación.',
     ],
     faq: [
-      'Las preguntas del pantalón de cubierta para rescate aclaran para qué llamados sirve, si se coloca con bota puesta y por qué no reemplaza equipo certificado de extricación. También explican su vida de servicio como prenda de desgaste y la utilidad de guardarlo en la unidad.',
+      'Para los apoyos cotidianos importa definir qué llamados cubre, si se coloca con bota puesta y por qué no reemplaza equipo certificado de extricación. También se considera su vida de servicio como prenda de desgaste y la utilidad de guardarla en la unidad.',
       'Manda por WhatsApp tipo de apoyo, talla sobre uniforme y bota habitual. Esa información permite definir corte, largo y alcance del pantalón de cubierta para rescate, sin adjudicarle una protección mecánica que no declara el modelo.',
     ],
     ficha: [
-      'La especificación del pantalón de cubierta para rescate debe indicar referencia según modelo, alcance para proteger ropa de trabajo y estatus técnico voluntario. Añade construcción monocapa, corte amplio, cierre rápido, cinta en pierna, talla por cintura y largo con holgura, además de certificación solo si se verifica.',
+      'La especificación de esta cubierta para extricación debe indicar referencia según modelo, alcance para proteger ropa de trabajo y estatus técnico voluntario. Añade construcción monocapa, corte amplio, cierre rápido, cinta en pierna, talla por cintura y largo con holgura, además de certificación solo si se verifica.',
       'Pide la ficha técnica por escrito para conservar claro que no sustituye una prenda de maniobra pesada. La lista facilita comparar cierres, acceso con bota y configuración antes de asignarlo a una unidad de respuesta.',
     ],
     hermanas: [
-      'El pantalón de cubierta para rescate es la opción ligera frente a pantalón técnico, chaqueta, conjunto, overol y conjunto dual. Sus piezas hermanas cubren extricación con diferentes niveles de protección, velocidad y reposición; esta prenda cubre el espacio de apoyos cotidianos.',
+      'Como opción ligera, esta cubierta se ubica frente a pantalón técnico, chaqueta, conjunto, overol y conjunto dual. Sus piezas hermanas cubren extricación con diferentes niveles de protección, velocidad y reposición; esta prenda cubre el espacio de apoyos cotidianos.',
       'Revisa <a href="/trajes/extricacion/">extricación y rescate</a> para distribuir cada formato por salida. Compra cubierta para la unidad y pantalón técnico para maniobra pesada, siempre documentando qué riesgo, usuario y turno activa una u otra prenda.',
     ],
     incluye: [
-      'El pantalón de cubierta para rescate incluye prenda con cierre de vestido rápido y cinta reflejante en pierna. Chaqueta de rescate, pantalón de extricación certificado y botas no están incluidos, porque cubren funciones diferentes dentro de la dotación.',
+      'La partida incluye prenda con cierre de vestido rápido y cinta reflejante en pierna. Chaqueta de rescate, pantalón de extricación certificado y botas no están incluidos, porque cubren funciones diferentes dentro de la dotación.',
       'Exige que cada exclusión aparezca en la cotización. Así puedes comparar un pantalón ligero con otro de igual alcance y agregar por separado las piezas que sí necesita el personal para la extricación o protección de pie.',
     ],
     relacionados: [
-      'El pantalón de cubierta para rescate se contrasta con pantalón técnico para definir cuándo hay protección de prenda y cuándo se requiere resistencia de maniobra. El conjunto de extricación completa la revisión cuando el apoyo puede escalar a trabajo con vehículo, vidrio o lámina.',
+      'La comparación con pantalón técnico define cuándo hay protección de prenda y cuándo se requiere resistencia de maniobra. El conjunto de extricación completa la revisión cuando el apoyo puede escalar a trabajo con vehículo, vidrio o lámina.',
       'Consulta <a href="/trajes/extricacion/pantalon/">pantalón de rescate técnico</a> y <a href="/trajes/extricacion/conjunto/">conjunto de extricación</a>. Lleva una lista de llamados de la unidad para dividir cobertura ligera, rescate técnico, reposición y asignación por turno en partidas compatibles claramente separadas.',
     ],
   },
