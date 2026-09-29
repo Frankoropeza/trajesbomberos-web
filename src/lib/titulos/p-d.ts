@@ -1,60 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_D: Record<string, Record<string, Duo>> = {
-  '/kits/kit-brigadista/': {
-    errores: [
-      'El Kit brigadista contra incendio falla cuando se compra por apariencia o con talla única: casco, capucha, guante y bota dejan de acompañar la maniobra autorizada. Tampoco debe tomarse como permiso para ataque interior; esa confusión altera la partida, el procedimiento y la recepción.',
-      'Incluye tarea autorizada, talla por usuario, color, bandas e identificación en la solicitud. Así compras puede contrastar cada componente contra el análisis de riesgo y evitar accesorios añadidos después. Comparte por WhatsApp ubicación, actividad y límite de intervención para recibir una cotización formal por partida.',
-    ],
-    faq: [
-      'Antes de definir la dotación, conviene resolver las dudas sobre ataque interior y sobre la composición Combate Básico: traje BOM1001, casco LTX, capucha CAP1005, guante Firemax VI y bota Workman Fire. La pregunta decisiva sigue siendo qué tarea tiene autorizada la brigada.',
-      'Para cotizar, manda por WhatsApp número de usuarios, tallas de traje y bota, actividad del centro de trabajo y si requieren identificación. Con esos datos se documentan configuración y alcance por escrito, sin confundir el kit con un conjunto estructural o ERA.',
-    ],
-    ficha: [
-      'Para la requisición de brigada del equipo de bombero se define el uso conforme a análisis de riesgo, traje, casco, capucha, guantes y botas, además de la referencia Combate Básico Romak BOM1001. La NOM-002-STPS-2010 se consulta para la dotación de brigada según el riesgo del centro.',
-      'Deja modelo, talla, accesorios y límite de intervención en el anexo técnico; una lista genérica impide cotejar la recepción. Pide la ficha técnica por escrito junto con la cotización formal para que seguridad, compras y usuarios comparen la misma configuración.',
-    ],
-    kit: [
-      'La configuración Combate Básico del equipo de bombero puede integrar traje Romak BOM1001, casco Bullard LTX, capucha CAP1005, guante Firemax VI GIS1008 y bota Workman Fire BOT1004. Se cotizan juntos porque cuello, puños y pantalonera deben conservar cobertura durante la tarea definida.',
-      'La partida reúne códigos, tallas y accesorios, pero cada pieza conserva su propia documentación. Solicita la configuración completa por WhatsApp y prueba movimientos con extintor o manguera antes de asignar equipo; así la recepción no depende de una foto ni de un nombre genérico.',
-    ],
-  },
-  '/kits/kit-estructural/': {
-    errores: [
-      'El Kit estructural para bombero no debe armarse sin probar solapes entre capucha, cuello, guantes, mangas y botas. Otro error es trasladar la declaración de un componente a todo el conjunto; al cambiar una pieza, cobertura y documentación pueden modificarse.',
-      'Define primero atmósfera, entrada, humo y necesidad de ERA; este último se cotiza por separado y se prueba con máscara y arnés. Envía por WhatsApp usuarios, tallas y maniobras previstas para documentar una partida que soporte la licitación y la entrega.',
-    ],
-    faq: [
-      'Al definir el conjunto estructural se aclara si el ERA viene incluido y si una pieza puede cambiarse. El ERA depende de atmósfera, duración y compatibilidad, mientras que una sustitución exige volver a validar solape, movimiento y documento de la configuración final.',
-      'Manda por WhatsApp cantidad de usuarios, tallas de traje, casco y bota, además de la operación prevista. Con esa información se separan componentes, accesorios y necesidades de respiración en una cotización formal, en lugar de asumir que un conjunto ya está certificado como sistema.',
-    ],
-    ficha: [
-      'La especificación para combate reúne análisis de riesgo, traje, casco, capucha, guantes y botas; el ERA es opcional según operación. Como referencia, el armado Profesional Romak requiere validar por usuario tallas, solapes y accesorios antes de liberar la orden.',
-      'La requisición debe identificar código, talla, color y declaración de cada componente. NFPA 1970 funciona como referencia del conjunto estructural, mientras el listado UL indicado para guante o capucha corresponde solo a esa pieza. Pide cada ficha técnica por escrito.',
-    ],
-    kit: [
-      'Como referencia, el armado Profesional del equipo de bombero considera chaquetón BOM1028, pantalonera BOM1040, casco Bullard LTX, bota Croydon Filtrex BOT1002, guante Veridian Fire Pro II GIS1017 y capucha Majestic PAC II. Sus interfaces se cotizan juntas para conservar solape al agacharse, cargar herramienta o elevar brazos.',
-      'La ficha del guante declara UL NFPA 2018 y la capucha aparece listada UL NFPA 1971 edición 2018; esas declaraciones se confirman por componente. Comparte configuración, tallas y uso previsto para recibir partidas separadas y una prueba de conjunto defendible.',
-    ],
-  },
-  '/kits/kit-forestal/': {
-    errores: [
-      'El Kit forestal para brigada se equivoca cuando se trata como una versión ligera del estructural: línea de fuego, terreno, ceniza y desplazamiento exigen otra configuración. Omitir la estabilidad de goggles y nuquera o elegir bota sin revisar recorrido genera fatiga, tropiezos y cobertura incompleta.',
-      'Describe por WhatsApp terreno, jornada, herramientas y número de personas. Así se definen ropa, casco forestal, goggles, guantes, bota y nuquera por talla y tarea, evitando que una compra exterior se use indebidamente en estructura o atmósfera que requiera respiración autónoma.',
-    ],
-    faq: [
-      'La operación exterior del equipo de bombero define si corresponde ropa, casco, goggles, guantes, bota y nuquera. También distingue entre overol y saco con pantalón, una decisión que depende de movimiento, ajuste y tarea de la cuadrilla.',
-      'Para una propuesta útil, comparte por WhatsApp tipo de terreno, exposición a ceniza, herramienta autorizada, tallas y configuración de casco. La cotización formal puede separar Fire Ranger Explorer, BOMW1002 y accesorios sin asumir que sirven para incendio estructural.',
-    ],
-    ficha: [
-      'La dotación forestal se documenta con ropa, casco forestal, goggles, guantes, bota y nuquera; la selección valida talla y estabilidad durante el recorrido. Fire Ranger Explorer o BOMW1002 son referencias de armado, no sustituyen la revisión de actividad, material y configuración.',
-      'Escribe modelo, talla, casco, goggles, nuquera y tipo de bota en la requisición para comparar cada entrega. La referencia forestal vigente es NFPA 1950; solicita la ficha técnica y declaración aplicable por escrito antes de emitir una orden para cuadrilla.',
-    ],
-    kit: [
-      'Para la línea de fuego pueden reunirse Fire Ranger Explorer o BOMW1002, casco Bullard FH911H, goggle ESS Striketeam XTO y bota forestal. Las piezas se cotizan juntas para revisar que goggles y nuquera se mantengan con el casco, y que guante y bota funcionen sobre terreno irregular.',
-      'Cada referencia conserva talla y configuración propias, por lo que una partida debe identificar ropa y accesorios sin abreviaturas. Comparte número de usuarios, material preferido y condiciones de campo para contrastar el conjunto con la tarea exterior que realizará la brigada.',
-    ],
-  },
   '/marcas/romak-fire/': {
     errores: [
       'Romak Fire se compra por modelo, operación y declaración publicada, no por el nombre de la marca. Confundir un traje de proximidad con uno estructural, o dar por certificado un modelo que solo se declara, como Maverick II o Fire Ranger Explorer, compromete el anexo técnico y la selección.',

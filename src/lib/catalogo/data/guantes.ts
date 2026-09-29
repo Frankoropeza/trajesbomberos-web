@@ -20,8 +20,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "seccion": "guantes",
       "nombre": "Guante estructural",
       "nombreCard": "Guante estructural",
-      "title": "Guante estructural para bombero | México",
-      "description": "Guante estructural para bombero: capas, barreras, puño, ajuste y referencia NFPA 1970 para comparar una cotización institucional por operación.",
+      "title": "Guantes de bombero estructural con barrera de humedad",
+      "description": "Guantes de bombero estructural: capas, barreras, puño, ajuste y referencia NFPA 1970 para comparar una cotización institucional por operación.",
       "lead": "El guante estructural es el que entra contigo a un incendio en edificación: cuero por fuera, barrera de humedad y forro térmico por dentro, y un puño que solapa con la manga del chaquetón sin soltar la boquilla.",
       "imagen": {
         "src": "/images/catalogo/guantes/tipo-guante-estructural.avif",
@@ -32,46 +32,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Qué es un guante estructural y para quién lo cotizamos",
+          "eyebrow": "Qué es",
+          "h2": "Tres capas y un puño que no deja huecos",
           "parrafos": [
-            "El guante estructural es el de ataque interior: el que sostiene la boquilla con la línea cargada, abre una puerta caliente y sujeta la herramienta de entrada con el chaquetón puesto. Lleva tres capas —cuero o carnaza de 1.5–1.7 mm por fuera, barrera de humedad en medio y forro térmico por dentro— y un puño que solapa con la manga. Lo cotizamos sobre todo a cuerpos de bomberos municipales y a brigadas industriales con procedimiento de ataque interior; para conato en planta te conviene el guante para brigadista, que cuesta menos y da más destreza.",
-            "La referencia es NFPA 1970 (la norma que absorbió a la NFPA 1971); los modelos que surtimos declaran la edición con la que fueron evaluados —2013 en el Sköld FPGS, 2018 con certificado UL en el Veridian Fire Pro II— y así te la reportamos, sin convertir una declaración en certificación. Si tu pliego pide certificado de laboratorio, el Veridian es el que lo tiene; si pide declaración del fabricante bajo NFPA 1971 y OSHA 29 CFR 1910.156, el Sköld cumple y va en carnaza de res."
+            "Un guante estructural repite la lógica del traje: una capa exterior que resiste flama y abrasión, una barrera que frena el agua y el vapor caliente, y un forro que aísla del calor. Todo eso sin perder el agarre de la boquilla ni de la herramienta.",
+            "El punto crítico es la muñeca. Con los brazos arriba, el puño del guante debe quedar bajo la manga del chaquetón; si queda un hueco, por ahí entra el calor aunque guante y traje estén certificados."
           ]
         },
         {
-          "h2": "Cómo especificamos un guante estructural en la cotización",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Material, barreras y estatus normativo",
           "parrafos": [
-            "Cada partida la escribimos con seis datos: modelo y código (FPGS o GIS1017), material exterior, barreras interiores con nombre (Pyrotec y modacrílico en el Veridian; forro de modacrílico SEF en el Sköld), construcción del puño (Kevlar de dos capas en el Sköld; 2 pulgadas con refuerzo Nomex en el Veridian), talla y estatus normativo tal como lo declara el fabricante. Con eso el área de compras compara dos ofertas con el mismo criterio y no por el color del cuero.",
-            "Las tallas no se piden por promedio: te pedimos el desglose por elemento (el Sköld FPGS es unitalla, y te lo decimos antes de que lo pidas para una cuadrilla con manos chicas; del Veridian te confirmamos las tallas disponibles al cotizar). Si repones pares de un lote anterior, mándanos por WhatsApp la foto de la etiqueta del puño y te confirmamos si sigue la misma configuración o si el fabricante cambió barrera o forro."
+            "El Sköld FPGS usa carnaza de res de 1.5 a 1.7 mm, forro de modacrílico SEF cosido a cada dedo y puño elástico de Kevlar de dos capas; se publica en unitalla. El Veridian Fire Pro II usa cuero tratado, barrera transpirable Pyrotec hasta el puño y puño de dos pulgadas reforzado con Nomex.",
+            "La diferencia normativa también cuenta: el FPGS declara NFPA 1971 edición 2013 y el Fire Pro II está certificado por UL bajo NFPA 1971-2018. Si tu pliego exige certificación, esa línea decide la compra."
           ],
           "lista": [
-            "Modelo y código: Sköld FPGS o Veridian Fire Pro II GIS1017",
-            "Exterior: carnaza de res 1.5–1.7 mm o cuero tratado",
-            "Barreras con nombre: modacrílico SEF, Pyrotec, hidrófuga",
-            "Puño: Kevlar dos capas o 2 in con refuerzo Nomex",
-            "Tallas por elemento, no talla promedio",
-            "Estatus normativo: declarado NFPA 1971:2013 o certificado UL NFPA 1971:2018"
+            "Sköld FPGS: carnaza de res de 1.5 a 1.7 mm",
+            "Veridian Fire Pro II: GIS1017, cuero tratado",
+            "Barreras: modacrílico SEF o Pyrotec",
+            "Puño: Kevlar de dos capas o dos pulgadas con Nomex",
+            "Talla: por usuario, con prueba de agarre",
+            "Estatus: declarado o certificado UL, según modelo"
           ]
         },
         {
-          "h2": "Modelos de guante estructural que surtimos y con qué traje van",
+          "eyebrow": "En servicio",
+          "h2": "Inspección y retiro del guante",
           "parrafos": [
-            "Surtimos dos modelos de guante estructural. El Sköld FPGS, en carnaza de res oro y negro con forro de modacrílico SEF cosido a cada dedo, costuras Kevlar Tex-80, puño elástico de Kevlar y bandola interna para secado: es el que va con los trajes Sköld Hero y el de menor costo de los dos. El Veridian Fire Pro II GIS1017, en cuero tratado con tres capas interiores, barrera transpirable Pyrotec hasta el puño y refuerzo de Nomex: certificado UL bajo NFPA 1971-2018 y el que integramos en el kit estructural Profesional con los trajes Romak Fire.",
-            "El guante se prueba con el chaquetón puesto, porque el puño y la manga trabajan juntos: con los brazos arriba y el casco en la cabeza, el puño debe quedar bajo la manga y el pozo de agua no debe atorarse. Si ya usas chaquetón Romak Fire Protector, Profesional o Sköld Hero, te decimos cuál de los dos guantes ya probamos con esa manga; si es de otra marca, mándanos una foto del puño del chaquetón y te contestamos en el día hábil."
-          ]
-        },
-        {
-          "h2": "Errores que vemos en pliegos de guantes estructurales",
-          "parrafos": [
-            "El más caro es pedir «guante de bombero NFPA» sin edición ni estatus: llegan ofertas con guante de brigada o de extricación, que valen la mitad y no protegen en ataque interior, y el comité no tiene con qué descalificarlas. El segundo es pedir una sola talla para toda la corporación: un guante grande forma pliegues en la palma, el pliegue queda justo sobre el mando de la boquilla y el elemento termina quitándoselo. El tercero es comprar por muestra de un par y recibir otra configuración de forro.",
-            "En tu pliego pon modelo, código, edición de norma y estatus, y exige que cada caja identifique par, talla y código; así la recepción coteja contra lo evaluado y no contra un nombre comercial. Si un proveedor ofrece un guante «equivalente», pídele la ficha con las mismas 6 líneas de arriba y compárala renglón por renglón; nosotros te la mandamos por WhatsApp antes de que abras el sobre."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro del guante estructural",
-          "parrafos": [
-            "Antes de cada guardia revisa cuero endurecido o cuarteado, costuras abiertas en la horquilla del pulgar, forro desprendido o girado, contaminación visible y que el puño siga elástico. Después de una intervención, lava y seca como indica el fabricante —el Sköld trae bandola interna para colgarlo— y nunca sobre una fuente de calor directo: el cuero encoge y el forro se despega. Un guante que ya no cierra la mano con control se retira, aunque se vea entero.",
-            "No repares la palma con cinta, pegamento ni costura improvisada: cambias el espesor justo donde se controla la boquilla y pierdes la continuidad de las barreras. Lleva registro por par —elemento, fecha de asignación, exposiciones y reemplazos— y ten existencias por talla; cuando un par se retira, el elemento no debe salir con un guante de rescate ni con uno ajeno. Si tienes duda de un par, mándanos la foto y te decimos si sigue en servicio."
+            "Revisa costuras, palma y puño después de cada servicio. Un guante endurecido por calor, con la barrera perforada o con costuras abiertas en los dedos ya no protege, aunque siga cerrando la mano.",
+            "Lávalo y sécalo como indica el fabricante; el FPGS trae bandola interna para colgarlo a secar. No lo repares con hilos o parches que no sean del fabricante, porque cambian su comportamiento frente al calor."
           ]
         }
       ],
@@ -96,19 +86,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar por talla estándar sin prueba",
-        "Confundir una declaración con certificación",
-        "Separar el guante del puño del traje",
-        "Reparar con materiales no previstos"
+        "Comprar una talla estándar sin prueba de agarre",
+        "Confundir una declaración del fabricante con certificación",
+        "Elegir el guante sin revisar el puño del chaquetón",
+        "Reparar con materiales no previstos por el fabricante"
       ],
       "faq": [
         {
-          "q": "¿Qué modelos hay?",
-          "a": "Sköld FPGS y Veridian Fire Pro II."
+          "q": "¿Qué guantes estructurales para bombero surtimos?",
+          "a": "El Sköld FPGS y el Veridian Fire Pro II GIS1017. El primero declara NFPA 1971 edición 2013; el segundo está certificado por UL bajo NFPA 1971-2018."
         },
         {
-          "q": "¿Sirve para línea de fuego?",
-          "a": "Selecciona guante forestal si esa es la operación principal."
+          "q": "¿Qué guante trae el kit estructural?",
+          "a": "El kit estructural Profesional incluye el Veridian Fire Pro II GIS1017, con barrera Pyrotec y puño reforzado con Nomex."
+        },
+        {
+          "q": "¿El guante estructural sirve para incendio forestal?",
+          "a": "Se puede usar, pero en línea de fuego se trabaja horas con herramienta manual y conviene un guante forestal, más ligero y con mejor destreza."
+        },
+        {
+          "q": "¿Cómo compruebo que el guante es compatible con mi chaquetón?",
+          "a": "Con los dos puestos, levantando los brazos y girando las muñecas: el puño del guante debe quedar bajo la manga sin dejar piel expuesta. Mándanos una foto del puño de tu chaquetón y te decimos qué revisar."
         }
       ],
       "relacionados": [
@@ -121,18 +119,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Puño integrado"
       ],
       "resumen": [
-        "Tres capas —cuero o carnaza por fuera, barrera de humedad y forro térmico por dentro— y puño que solapa con la manga del chaquetón. Surtimos el Sköld FPGS (carnaza, declarado NFPA 1971:2013) y el Veridian Fire Pro II (cuero tratado, certificado UL NFPA 1971-2018).",
-        "Te cotizamos por talla y por elemento con ficha técnica y el estatus bajo NFPA 1970 tal como lo declara el fabricante. Si ya tienes chaquetón, dinos el modelo y te decimos qué guante ya probamos con esa manga."
-      ]
+        "Surtimos dos modelos: el Sköld FPGS, de carnaza de res con declaración NFPA 1971 edición 2013, y el Veridian Fire Pro II GIS1017, de cuero tratado con certificación UL bajo NFPA 1971-2018.",
+        "Te los cotizamos con ficha técnica y con el estatus normativo tal como lo publica cada fabricante. Si ya tienes chaquetón, dinos el modelo y revisamos contigo cómo solapan puño y manga."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de guante estructural indica uso en combate de incendio estructural, referencia NFPA 1970 e interfaz con la manga del chaquetón y la herramienta.",
+          "Si ya elegiste modelo, pide que código, talla y estatus normativo queden escritos por par. Así la recepción puede revisar cada guante contra su ficha."
+        ],
+        "errores": [
+          "Casi todos los errores con guantes estructurales tienen que ver con la talla o con el puño: un guante grande pierde agarre y uno corto deja la muñeca expuesta.",
+          "Estos cuatro puntos se resuelven con una prueba de uso antes de cerrar la partida."
+        ],
+        "modelos": [
+          "Surtimos dos guantes estructurales con ficha publicada: el Sköld FPGS, de carnaza de res con forro de modacrílico SEF, y el Veridian Fire Pro II GIS1017, de cuero tratado con barrera Pyrotec.",
+          "El Fire Pro II forma parte de nuestro kit estructural Profesional. Cada ficha muestra el estatus normativo tal como lo publica su marca."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre modelos, kit estructural, uso forestal y compatibilidad con el chaquetón.",
+          "Si nos mandas el modelo de tu chaquetón y las tallas de tu personal, te decimos qué guante conviene probar."
+        ]
+      }
     },
     {
       "slug": "guante-rescate-extricacion",
       "seccion": "guantes",
       "nombre": "Guante de rescate y extricación",
       "nombreCard": "Guante de rescate y extricación",
-      "title": "Guante de rescate y extricación para bombero | México",
-      "description": "Guante para rescate y extricación: agarre, destreza, riesgo mecánico y referencia NFPA 1950 antes de solicitar una cotización por operación.",
-      "lead": "El guante de rescate y extricación acompaña maniobras vehiculares y técnicas con referencia NFPA 1950, donde elegimos destreza y agarre para controlar vidrio, lámina, eslingas y herramienta.",
+      "title": "Guante de rescate y extricación para bombero",
+      "description": "Guante de rescate y extricación para bombero: agarre, destreza, riesgo mecánico y referencia NFPA 1950 antes de solicitar una cotización por operación.",
+      "lead": "El guante de rescate y extricación prioriza destreza y protección contra cortes: se usa para manejar vidrio, lámina, eslingas y herramienta en rescate vehicular y técnico, no para entrar a un incendio.",
       "imagen": {
         "src": "/images/catalogo/guantes/tipo-guante-rescate-extricacion.avif",
         "alt": "Guante de rescate y extricación para bombero",
@@ -142,21 +158,24 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Guante de rescate y extricación para maniobra técnica",
+          "eyebrow": "Qué es",
+          "h2": "Destreza y protección mecánica",
           "parrafos": [
-            "Cotizamos guante de rescate y extricación para unidades que retiran vidrio, estabilizan puertas, pasan eslingas y operan conectores en rescate vehicular. La referencia es NFPA 1950 edición 2025, antes NFPA 1951; elige esta familia si tu maniobra exige tacto sobre lámina y herramienta, y conserva el guante estructural para ataque interior.",
-            "También atendemos rescate técnico donde EN 388 aparece como referencia de riesgo mecánico, sin atribuir niveles que un fabricante no publica. Si tu cuadrilla abre mosquetones, gira válvulas o usa cuñas, pídenos el modelo según esas acciones; si solo describes guante de rescate, la partida no permite comparar palma, puño ni agarre."
+            "En extricación vehicular el riesgo está en el vidrio roto, la lámina cortada y las herramientas hidráulicas. En rescate técnico, en cuerdas, eslingas y conectores que exigen sensibilidad en los dedos.",
+            "Por eso este guante se diseña distinto al estructural: menos aislamiento térmico, más protección contra corte y abrasión, y una palma que deja sentir lo que se está manejando."
           ]
         },
         {
-          "h2": "Cómo cotizamos guante de rescate y extricación",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Maniobra, palma y puño",
           "parrafos": [
-            "En cada cotización escribimos rescate vehicular o técnico, NFPA 1950, talla por usuario, material de palma declarado, puño y cierre. Pide una muestra para abrir un mosquetón, tomar una cuña y liberar un conector; elige el par que mantenga tacto con vidrio y eslinga, no el más voluminoso.",
-            "Como no hay modelo publicado en esta familia, proponemos el guante según tu operación y dejamos su documentación separada de la referencia NFPA 1950. Si incluyes cuerdas, válvulas o pinzas, anótalas en la partida; así revisamos contigo agarre, dedos y muñeca antes de surtir tallas para el relevo."
+            "Empieza por la maniobra principal: vehicular, vertical o ambas. Después define el material de la palma y el tipo de puño, y pide que el fabricante declare ambos por escrito.",
+            "La prueba decide: con el guante puesto, el usuario debe abrir y cerrar un mosquetón, manejar una cuña y operar la válvula de la herramienta sin quitárselo."
           ],
           "lista": [
             "Operación: rescate vehicular o técnico",
-            "Referencia: NFPA 1950 edición 2025",
+            "Referencia: NFPA 1950",
             "Talla: por usuario y por par",
             "Palma: material declarado por fabricante",
             "Puño y cierre: según maniobra",
@@ -164,24 +183,11 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           ]
         },
         {
-          "h2": "Modelos para guante de rescate y extricación",
+          "eyebrow": "En servicio",
+          "h2": "Inspección después de cada rescate",
           "parrafos": [
-            "Aún no publicamos un modelo de guante de rescate y extricación; lo proponemos con base en NFPA 1950, la herramienta y la talla de tu cuadrilla. Para extricación, elige el modelo que permita mover con seguridad vidrio, eslingas y conectores; no lo sustituyas por Sköld FPGS o Veridian Fire Pro II, que son estructurales.",
-            "Lo combinamos con la familia de traje que corresponda a la operación y revisamos casco, máscara y herramienta durante la muestra. Si el rescate comparte chaquetón estructural, confirma que el puño no se enganche al retirar la mano; si usas equipo técnico distinto, mándanos sus datos para ajustar la cotización."
-          ]
-        },
-        {
-          "h2": "Errores de pliego en guante de rescate y extricación",
-          "parrafos": [
-            "Vemos tres errores: pedir guante grueso sin ensayar conectores, ordenar una talla para voluntarios y copiar EN 388 sin declaración del modelo. En tu pliego escribe NFPA 1950, rescate vehicular o técnico, tallas por persona y material de palma declarado; así evitamos que llegue un par que no libera una cuña.",
-            "Otro error es llamar estructural al guante de extricación y esperar que cubra ataque interior bajo NFPA 1950. Escribe que la prueba incluye mosquetón, eslinga, válvula y vidrio simulado; nosotros cotejamos la muestra contra esa lista. Si falta una prestación mecánica declarada, no la agregamos a la orden y te pedimos la ficha del proveedor."
-          ]
-        },
-        {
-          "h2": "Inspección de guante de rescate y extricación",
-          "parrafos": [
-            "Antes de guardia revisamos contigo palma, yemas, costados de dedos, unión índice pulgar, puño y cierre por cortes, vidrio incrustado o costura levantada. Después de intervenir, separa el par con aceite, combustible, fluidos o polvo de freno; retíralo si pierde agarre o si el cierre abre al flexionar la muñeca.",
-            "Limpia y seca según el método aplicable a NFPA 1950, sin devolver a servicio un guante con fragmentos en costuras. Te recomendamos registrar por par la talla, rescate realizado, contaminación y motivo de baja; elige reposición del mismo uso cuando el tacto ya no permita identificar un control pequeño con seguridad."
+            "El vidrio y la lámina dejan cortes que a veces no se ven a simple vista. Revisa palma, dedos y costuras después de cada servicio, y retira el guante si hay cortes que atraviesan el material.",
+            "Si el guante se contaminó con fluidos o químicos del vehículo, límpialo según el fabricante o sepáralo para evaluarlo antes de volver a usarlo."
           ]
         }
       ],
@@ -206,14 +212,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Elegir por grosor sin probar destreza",
-        "Usarlo como sustituto estructural",
-        "No definir maniobra"
+        "Elegir por grosor sin probar la destreza",
+        "Usarlo como sustituto del guante estructural",
+        "No definir la maniobra principal",
+        "Ignorar la contaminación después de un rescate vehicular"
       ],
       "faq": [
         {
-          "q": "¿Hay modelos publicados?",
-          "a": "No por ahora; solicita cotización con la maniobra y talla requeridas."
+          "q": "¿Tienen modelos de guante de rescate publicados?",
+          "a": "Todavía no. Lo cotizamos según la maniobra y las tallas de tu equipo, y te presentamos la ficha del fabricante antes de que decidas."
+        },
+        {
+          "q": "¿Puedo usar el guante estructural para extricación?",
+          "a": "Se hace, pero el guante estructural es grueso y resta destreza para manejar conectores y piezas pequeñas. Si el rescate es frecuente, conviene un guante propio."
+        },
+        {
+          "q": "¿Qué norma aplica al guante de rescate técnico?",
+          "a": "La referencia vigente es NFPA 1950, que absorbió a la NFPA 1951 de equipo de rescate técnico."
+        },
+        {
+          "q": "¿El guante de rescate protege contra el fuego?",
+          "a": "No está pensado para combate de incendio. Si en la escena hay riesgo de fuego, la protección térmica la da el guante estructural."
         }
       ],
       "chips": [
@@ -222,18 +241,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Destreza"
       ],
       "resumen": [
-        "El guante de rescate y extricación se elige para NFPA 1950, vidrio, eslingas, conectores y herramienta técnica. No hay modelo publicado: proponemos la opción según rescate vehicular o técnico, talla y puño de tu cuadrilla.",
-        "Cotizamos por operación, talla, palma, cierre y prueba con mosquetón, cuña y válvula bajo NFPA 1950. Mándanos por WhatsApp la maniobra y el equipo que usas para revisar contigo el par antes de ordenar una partida."
-      ]
+        "En un rescate se trabaja con piezas pequeñas y bordes filosos, y un guante grueso estorba. La referencia para EPP de rescate técnico es NFPA 1950, que sustituyó a la 1951.",
+        "Todavía no publicamos un modelo de rescate. Lo cotizamos según la maniobra de tu equipo y lo probamos con mosquetones, cuñas y conectores antes de cerrar la partida."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar guante de rescate y extricación indica la operación, la referencia NFPA 1950 y la prioridad de destreza y protección mecánica.",
+          "La tabla describe el tipo; el código llega con el modelo que te propongamos. Material de palma, puño y norma declarada llegan con la ficha del guante que te propongamos."
+        ],
+        "errores": [
+          "El guante de rescate falla cuando se elige como si fuera estructural: grueso, rígido y difícil de usar con conectores.",
+          "Estos cuatro errores conviene revisarlos antes de comprar para toda la cuadrilla."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre modelos, norma y diferencias con el guante estructural.",
+          "Si nos dices qué rescates hace tu equipo y con qué herramienta, te proponemos una configuración concreta."
+        ]
+      }
     },
     {
       "slug": "guante-forestal",
       "seccion": "guantes",
       "nombre": "Guante forestal",
       "nombreCard": "Guante forestal",
-      "title": "Guante forestal para bombero | México",
-      "description": "Guante forestal para bombero: movilidad, puño, calor exterior y referencia NFPA 1950 antes de integrar el equipo de línea de fuego.",
-      "lead": "El guante forestal acompaña línea de fuego con referencia NFPA 1950, movilidad para Pulaski y batefuego, y un puño que conserva el ajuste durante caminata, ceniza y herramienta manual.",
+      "title": "Guante forestal para bombero de línea de fuego",
+      "description": "Guante forestal para bombero: movilidad, puño, calor exterior y referencia NFPA 1950 antes de integrar el equipo de línea de fuego. Cotiza con ficha.",
+      "lead": "El guante forestal está pensado para jornadas largas con herramienta manual: protege del calor y de las astillas sin quitar la movilidad que se necesita para trabajar con Pulaski, McLeod o batefuego.",
       "imagen": {
         "src": "/images/catalogo/guantes/tipo-guante-forestal.avif",
         "alt": "Guante forestal para bombero",
@@ -243,46 +276,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Guante forestal para línea de fuego exterior",
+          "eyebrow": "Qué es",
+          "h2": "Guante para abrir brecha y trabajar ceniza",
           "parrafos": [
-            "Cotizamos guante forestal para cuadrillas que caminan, abren brecha, retiran vegetación y trabajan ceniza cotidiana con Pulaski o batefuego durante toda la jornada de campo. NFPA 1950, antes NFPA 1977, es la referencia de esta operación; elige esta familia si tu jornada exige repetir agarre sobre un mango, no si entrarás a ataque estructural ni a rescate técnico.",
-            "La palma, costuras y puño enfrentan tierra, humedad y cambios de pendiente durante trabajo exterior bajo NFPA 1950. Si tu cuadrilla alterna Pulaski y McLeod, pídenos prueba con ambas herramientas; elegimos la construcción que no forme un borde duro en la palma ni acumule ceniza bajo la manga forestal."
+            "El trabajo forestal combina calor, ceniza, astillas y roce constante con el mango de la herramienta. Un guante demasiado grueso cansa la mano y un guante delgado se rompe en pocos días.",
+            "El puño también importa: debe cerrar con la manga de la camisola o del overol forestal para que no entre ceniza ni brasa mientras el brigadista se agacha y trabaja cerca del suelo."
           ]
         },
         {
-          "h2": "Cotización de guante forestal para cuadrillas",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Herramienta, talla y reserva",
           "parrafos": [
-            "Nuestra partida identifica línea de fuego, NFPA 1950, tallas por par, herramienta predominante, palma, puño y reserva por desgaste. Pide entrega identificada por talla y no por bulto; así eliges reposición compatible cuando Pulaski, batefuego o ceniza desgasten una zona distinta de cada mano de la cuadrilla.",
-            "No hay modelo forestal publicado en este arreglo, por eso proponemos el guante conforme a tu manga y herramienta. Incluye si trabajas con cuero, refuerzo o textil declarado; si el proveedor no declara material, no lo ponemos como prestación. Cotizamos la muestra para caminar, agacharte y cerrar la mano tras trabajo sostenido."
+            "Define qué herramienta usa la cuadrilla y prueba el guante con ella: Pulaski, McLeod, rastrillo o batefuego. El agarre del mango tiene que ser firme sin que el guante se doble en la palma.",
+            "El desgaste es alto, así que conviene cotizar un par de reserva por persona para la temporada. Pide que la palma y el puño estén declarados por el fabricante."
           ],
           "lista": [
             "Operación: línea de fuego exterior",
-            "Referencia: NFPA 1950 antes NFPA 1977",
-            "Talla: por par y cuadrilla",
+            "Referencia: NFPA 1950, antes NFPA 1977",
+            "Talla: por par y por cuadrilla",
             "Herramienta: Pulaski, McLeod o batefuego",
             "Palma y puño: material declarado",
-            "Reserva: por desgaste de herramienta"
+            "Reserva: por desgaste de temporada"
           ]
         },
         {
-          "h2": "Modelos de guante forestal y equipo compatible",
+          "eyebrow": "En servicio",
+          "h2": "Revisión y cambio durante la temporada",
           "parrafos": [
-            "No publicamos un modelo forestal en este arreglo; proponemos el guante según NFPA 1950, Pulaski, McLeod o batefuego y la talla de cada cuadrilla. Elige el par después de probarlo con manga forestal y herramienta manual, no como sustituto de Sköld FPGS o Veridian Fire Pro II estructurales.",
-            "Lo revisamos con tu traje forestal, casco y protección respiratoria para confirmar solape y movilidad al alcanzar el suelo. Si usas Romak Fire Ranger Explorer o Fire Ranger Scout, anota la configuración Nomex IIIA o Brigade; así validamos la interfaz de NFPA 1950 sin prometer un modelo de guante no publicado."
-          ]
-        },
-        {
-          "h2": "Errores de compra en guante forestal",
-          "parrafos": [
-            "Encontramos tres fallas: pedir cualquier cuero como forestal, omitir tallas y reservar pares sin identificar. En tu pliego escribe línea de fuego, NFPA 1950, talla por persona, herramienta y material declarado; de ese modo evitamos que un par estructural llegue para una jornada con Pulaski o batefuego.",
-            "También vemos órdenes que mezclan inventario forestal con pares para incendio de edificio bajo NFPA 1950. Escribe que la muestra debe caminar, abrir brecha y trabajar ceniza; nosotros contrastamos puño, palma y manga. Si necesitas un refuerzo, pide el nombre que declare el proveedor y no copies la ficha de otro producto."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro de guante forestal",
-          "parrafos": [
-            "Antes de desplegar la cuadrilla revisa palma, lateral del mango, costuras de dedos, puño y flexibilidad por tierra, humedad, ceniza, agujeros o cuero reseco. Después de la jornada, retira el par con costura que atrapa material o palma endurecida; no lo guardes húmedo dentro de la mochila.",
-            "Limpia y seca conforme al método aplicable a NFPA 1950 y registra talla, herramienta, desgaste y reposición por campaña. Si ceniza o tierra alcanza el interior, separa el par hasta inspeccionarlo; elige un reemplazo de la misma operación para que la cuadrilla no mezcle un guante nuevo con otra construcción."
+            "Después de cada jornada sacude la ceniza y revisa palma, dedos y costuras. La zona entre el pulgar y el índice es la primera que se gasta con el mango de la herramienta.",
+            "Un guante con la palma adelgazada o una costura abierta se cambia antes de la siguiente salida. En plena temporada, tener pares de reserva evita que alguien trabaje con un guante dañado."
           ]
         }
       ],
@@ -307,14 +330,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Usar guante estructural por costumbre",
-        "No probar con herramienta",
-        "Ignorar talla y puño"
+        "Usar guante estructural en línea de fuego por costumbre",
+        "No probar el guante con la herramienta real",
+        "Ignorar la talla y el ajuste del puño",
+        "Comprar sin reserva para toda la temporada"
       ],
       "faq": [
         {
-          "q": "¿Sirve para ataque interior?",
-          "a": "No se usa como sustituto del guante estructural para esa operación."
+          "q": "¿El guante forestal sirve para ataque interior?",
+          "a": "No. Para incendio estructural se usa guante estructural, con barrera de humedad y forro térmico."
+        },
+        {
+          "q": "¿Tienen modelos de guante forestal publicados?",
+          "a": "Todavía no. Lo cotizamos según la herramienta y las tallas de tu cuadrilla, y te presentamos la ficha antes de que decidas."
+        },
+        {
+          "q": "¿Qué norma aplica al guante forestal?",
+          "a": "La referencia vigente para equipo forestal es NFPA 1950, que sustituyó a la NFPA 1977."
+        },
+        {
+          "q": "¿Cuántos guantes forestales se necesitan por brigadista?",
+          "a": "Al menos uno en uso y uno de reserva por temporada. El desgaste con herramienta manual es alto y un guante roto no debe esperar a la siguiente compra."
         }
       ],
       "chips": [
@@ -323,18 +359,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Herramienta manual"
       ],
       "resumen": [
-        "El guante forestal acompaña NFPA 1950, línea de fuego, Pulaski, McLeod y batefuego con movilidad durante jornada exterior. No hay modelo publicado: proponemos el par según tu herramienta, talla y manga forestal.",
-        "Cotizamos por cuadrilla, talla, palma, puño, material declarado y reserva de desgaste bajo NFPA 1950. Escríbenos por WhatsApp qué herramienta usas y revisamos la muestra al caminar, abrir brecha y trabajar ceniza."
-      ]
+        "En línea de fuego no se sostiene una boquilla, se abre brecha durante horas. Por eso el guante forestal es más ligero que el estructural y prioriza agarre y destreza.",
+        "Todavía no publicamos un modelo forestal. Lo cotizamos por cuadrilla, según la herramienta que usa y la manga del traje forestal, con NFPA 1950 como referencia."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar guante forestal indica el uso en línea de fuego, la referencia NFPA 1950 y la prioridad de movilidad y agarre.",
+          "Todavía no hay un modelo en catálogo, así que la tabla no incluye código. Palma, puño y norma declarada llegan con la ficha del guante que te propongamos."
+        ],
+        "errores": [
+          "En incendio forestal el guante se gasta rápido y se usa todo el día. Elegirlo mal se nota desde la primera jornada.",
+          "Estos cuatro errores conviene revisarlos antes de equipar a la cuadrilla completa."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre uso, modelos, norma y reserva del guante forestal.",
+          "Si nos dices cuántos brigadistas son y con qué herramienta trabajan, te mandamos una propuesta por WhatsApp."
+        ]
+      }
     },
     {
       "slug": "guante-brigadista",
       "seccion": "guantes",
       "nombre": "Guante para brigadista",
       "nombreCard": "Guante para brigadista",
-      "title": "Guante para brigadista contra incendio | México",
-      "description": "Guante para brigadista: materiales, ajuste y límites de uso para definir equipo de respuesta inicial y solicitar una cotización clara.",
-      "lead": "El guante para brigadista se cotiza para respuesta inicial y conato, con Firemax VI GIS1008 de piel tratada, tallas M/G estándar y XG, y sin norma declarada.",
+      "title": "Guante para brigadista contra incendio y conato",
+      "description": "Guante para brigadista contra incendio: materiales, ajuste y límites de uso para definir el equipo de respuesta inicial y pedir una cotización clara.",
+      "lead": "El guante para brigadista protege en respuesta inicial y control de conatos: extintor, manguera de gabinete y apoyo a la evacuación. Surtimos el Romak Fire Firemax VI GIS1008, de piel tratada.",
       "imagen": {
         "src": "/images/catalogo/guantes/tipo-guante-brigadista.avif",
         "alt": "Guante para brigadista contra incendio",
@@ -344,20 +394,23 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Guante para brigadista en respuesta inicial",
+          "eyebrow": "Qué es",
+          "h2": "Guante para respuesta inicial y conato",
           "parrafos": [
-            "Cotizamos guante para brigadista cuando tu procedimiento autoriza conato, extintor, aislamiento de área o evacuación. Firemax VI GIS1008 usa piel tratada color oro, corte gun y puño tejido de Kevlar; elígelo si necesitas accionar pasador, palanca y manguera de gabinete, no para convertir una brigada en ataque interior.",
-            "La respuesta cambia según extintor, radio, puerta y manga de cada planta. Si tu brigada usa esos controles, pídenos prueba con Firemax VI M/G estándar o XG; comprobamos que pulgar tipo ala y banda elástica del dorso mantengan control. Si el riesgo cambia, cotizamos el conjunto de traje, casco, máscara y guante correspondiente."
+            "La brigada de un centro de trabajo suele actuar en los primeros minutos: extintor, manguera de gabinete y evacuación. Necesita un guante que proteja del calor y de la abrasión sin quitar destreza para operar pasadores y palancas.",
+            "Esa es la función del guante brigadista. No sustituye al guante estructural, que se diseña para permanecer dentro de un incendio con barrera de humedad y forro de mayor protección."
           ]
         },
         {
-          "h2": "Cómo cotizamos guante para brigadista",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Talla, refuerzos y tarea autorizada",
           "parrafos": [
-            "Escribimos en la partida Firemax VI, código GIS1008, piel tratada color oro, corte gun, pulgar tipo ala, talla M/G estándar o XG y destino de brigada. Elige cantidad por talla y persona, y pide refuerzo de piel en palma y entre índice y pulgar cuando esa sea la muestra que aprobarás.",
-            "También asentamos forro térmico de aramida, puño tejido de Kevlar e hilo Kevlar, sin norma declarada. Si tu orden llama certificado al modelo, corrígela antes de surtir: nosotros reportamos sin norma. Prueba el pasador, la palanca y la manguera con la manga real para definir la talla antes de recibir el lote."
+            "El Firemax VI trae refuerzo de piel en la palma y entre índice y pulgar, banda elástica en el dorso e índice de construcción corrida, sin costura expuesta. Se cose con hilo de Kevlar.",
+            "Elige la talla con la prueba real: quitar el seguro de un extintor, apretar la palanca y abrir la válvula de un gabinete con el guante puesto. Si algo de eso cuesta, la talla no es la correcta."
           ],
           "lista": [
-            "Modelo y código: Firemax VI GIS1008",
+            "Modelo: Romak Fire Firemax VI GIS1008",
             "Material: piel tratada color oro",
             "Corte: gun con pulgar tipo ala",
             "Tallas: M/G estándar y XG",
@@ -366,24 +419,11 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           ]
         },
         {
-          "h2": "Modelo Firemax VI y equipo de brigada",
+          "eyebrow": "En servicio",
+          "h2": "Inspección y retiro del guante brigadista",
           "parrafos": [
-            "Surtimos Romak Fire Firemax VI GIS1008 para esta familia: piel tratada, índice corrido sin costura expuesta, refuerzo de palma y forro térmico de aramida. Combínalo con el traje brigadista Romak Fire Combate Básico, casco, máscara y extintor que use tu personal; elige tallas M/G estándar o XG después de probar el control.",
-            "El Firemax VI no declara norma, por lo que lo presentamos como sin norma y no como certificación. Si tu procedimiento llega a incendio interior, pide el conjunto estructural con Sköld FPGS o Veridian Fire Pro II GIS1017; revisamos contigo chaquetón, casco, máscara y guante, porque piel color oro no define por sí sola la operación."
-          ]
-        },
-        {
-          "h2": "Errores de pliego para guante brigadista",
-          "parrafos": [
-            "Vemos tres errores: ordenar Firemax VI sin talla, escribir una certificación inexistente y pedirlo para ataque interior. En tu pliego anota GIS1008, M/G estándar y XG, piel tratada, forro de aramida, puño Kevlar y sin norma declarada; así recibes el modelo que tu brigada probó con extintor.",
-            "Otra falla es aceptar un par parecido sin GIS1008, corte gun, pulgar tipo ala o refuerzo entre índice y pulgar. Escribe que la recepción coteja esos rasgos, color oro y banda dorsal; nosotros comparamos contra la orden. Si la planta requiere otra exposición, define el procedimiento y cotizamos otro conjunto, no un alcance inventado."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro de Firemax VI",
-          "parrafos": [
-            "Antes de cada guardia revisa Firemax VI GIS1008 por piel endurecida, refuerzo de palma, unión índice pulgar, hilo Kevlar, banda dorsal y puño tejido de Kevlar. Después de simulacro o conato, retira el par si el forro térmico de aramida se separa, el pulgar pierde alcance o la palanca ya no se oprime con control.",
-            "Limpia según el método aplicable, separa contaminación y registra persona, talla M/G estándar o XG, fecha de entrega y motivo de baja. No dejes pares junto a herramienta contaminada; elige reposición con GIS1008 y los mismos rasgos cuando el procedimiento siga siendo brigada y respuesta inicial."
+            "Revisa la piel, las costuras y el puño después de cada simulacro o respuesta real. La piel endurecida por calor o las costuras abiertas en los dedos son motivo de cambio.",
+            "Guarda los guantes con el resto del equipo asignado a cada brigadista. Así se sabe quién usa qué talla y se repone sin volver a probar todo el lote."
           ]
         }
       ],
@@ -402,14 +442,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Confundir brigada con ataque interior",
-        "Pedir sin talla",
-        "Atribuir una norma no declarada"
+        "Confundir el trabajo de brigada con el ataque interior",
+        "Pedir el lote sin talla por usuario",
+        "Atribuir al guante una norma que no declara",
+        "No probarlo con el extintor y el gabinete reales"
       ],
       "faq": [
         {
-          "q": "¿Qué modelo se publica?",
-          "a": "Romak Fire Firemax VI."
+          "q": "¿Qué guante para brigadista surtimos?",
+          "a": "El Romak Fire Firemax VI GIS1008, de piel tratada color oro con forro de aramida y puño de Kevlar, en tallas M/G estándar y XG."
+        },
+        {
+          "q": "¿El Firemax VI está certificado?",
+          "a": "No. Su fabricante no declara norma y así lo presentamos. Si tu pliego exige certificación, te cotizamos un guante estructural."
+        },
+        {
+          "q": "¿El guante brigadista sirve para entrar a un incendio?",
+          "a": "No está pensado para ataque interior. Para esa operación la brigada necesita guante estructural y el resto del conjunto estructural."
+        },
+        {
+          "q": "¿Qué guante incluye el kit brigadista?",
+          "a": "El kit brigadista incluye el Firemax VI GIS1008 junto con el traje Combate Básico, el casco Bullard LTX, la capucha CAP1005 y la bota Workman Fire."
         }
       ],
       "relacionados": [
@@ -421,9 +474,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Sin norma declarada"
       ],
       "resumen": [
-        "El guante para brigadista Firemax VI GIS1008 combina piel tratada, corte gun, pulgar tipo ala y forro de aramida para conato, extintor y respuesta inicial. Se publica en M/G estándar y XG, sin norma declarada.",
-        "Cotizamos modelo, talla, refuerzos, puño Kevlar y tarea autorizada de tu brigada. Envíanos por WhatsApp el extintor, la manga y el procedimiento para probar pasador, palanca y manguera antes de pedir el lote."
-      ]
+        "El Firemax VI combina piel tratada color oro, corte gun con pulgar tipo ala, forro térmico de aramida y puño tejido de Kevlar. Se ofrece en tallas M/G estándar y XG.",
+        "No declara norma, y así lo indicamos en su ficha. Si el procedimiento de tu brigada incluye ataque interior, te cotizamos guante estructural dentro del conjunto completo."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de guante brigadista parte del análisis de riesgo: qué tareas tiene autorizadas la brigada y hasta dónde llega su respuesta.",
+          "El modelo publicado es el Romak Fire Firemax VI. Si la brigada hace ataque interior, la tabla cambia y la partida pasa a guante estructural."
+        ],
+        "errores": [
+          "Los errores con guantes de brigada casi siempre vienen de no separar el conato del ataque interior.",
+          "Revisa estos cuatro puntos contra tu procedimiento antes de pedir cotización."
+        ],
+        "modelos": [
+          "Surtimos el Romak Fire Firemax VI GIS1008: piel tratada color oro, corte gun, forro térmico de aramida y puño tejido de Kevlar, en tallas M/G estándar y XG.",
+          "Es el guante de nuestro kit brigadista y se publica sin norma declarada, tal como lo indica su fabricante."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre el Firemax VI, certificación, alcance y kit brigadista.",
+          "Si nos compartes cuántos brigadistas son y sus tallas, te mandamos la cotización con el lote cerrado."
+        ]
+      }
     }
   ],
   "modelos": [

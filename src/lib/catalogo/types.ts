@@ -12,6 +12,9 @@ export interface Imagen extends HeroImage {
 }
 
 export interface Bloque {
+  /** Eyebrow del título en dos columnas; ancla opcional para el menú de sección. */
+  eyebrow?: string;
+  id?: string;
   h2: string;
   parrafos: string[];
   lista?: string[];
@@ -43,6 +46,8 @@ export interface Tipo {
   relacionados?: string[];
   chips?: string[];
   resumen?: string[];
+  /** Dúos (dos párrafos a la derecha del título) de los módulos de la ficha de tipo. */
+  duos?: Partial<Record<'ficha' | 'errores' | 'modelos' | 'kit' | 'faq', [string, string]>>;
 }
 
 export interface Modelo {

@@ -20,9 +20,9 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       "seccion": "rescate",
       "nombre": "Herramienta hidráulica de rescate",
       "nombreCard": "Herramienta hidráulica de rescate",
-      "title": "Herramienta hidráulica de rescate para bomberos | México",
-      "description": "Herramienta hidráulica de rescate para bomberos: separador, cizalla y ram, fuerza de corte, alimentación y mantenimiento. Cotiza con ficha técnica.",
-      "lead": "La herramienta hidráulica de rescate reúne separador, cortador, combinada y cilindro para extricación vehicular; cotizamos cada función con la fuente hidráulica o batería que corresponde a tu unidad.",
+      "title": "Quijadas de la vida: herramienta hidráulica de rescate",
+      "description": "Quijadas de la vida para bomberos: separador, cizalla y ram hidráulicos; fuerza de corte, alimentación y mantenimiento para extricación. Cotiza con ficha.",
+      "lead": "La herramienta hidráulica de rescate, conocida como quijadas de la vida, abre, corta y separa la estructura de un vehículo para liberar a una persona atrapada. Separador, cortador, combinada y cilindro cumplen funciones distintas.",
       "imagen": {
         "src": "/images/catalogo/rescate/tipo-herramienta-hidraulica-de-rescate.avif",
         "alt": "Herramienta hidráulica de rescate para operaciones de rescate",
@@ -34,8 +34,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
         "/trajes/extricacion/",
         "/guantes/guante-rescate-extricacion/"
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Comprar la cabeza de trabajo sin su fuente de energía",
+        "Elegir por una fuerza que el fabricante no declara",
+        "No considerar el espacio disponible en la unidad",
+        "Operar sin entrenamiento en la maniobra"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué son las quijadas de la vida?",
+          "a": "Es el nombre común de las herramientas hidráulicas de rescate, sobre todo el separador y la combinada, que se usan para liberar a personas atrapadas en vehículos."
+        },
+        {
+          "q": "¿Qué diferencia hay entre separador, cortador y combinada?",
+          "a": "El separador abre y empuja para crear espacio, el cortador corta postes y perfiles, y la combinada hace ambas tareas con menos rendimiento que cada herramienta dedicada."
+        },
+        {
+          "q": "¿Tienen modelos de herramienta hidráulica publicados?",
+          "a": "Todavía no. La cotizamos según las maniobras de tu equipo y te presentamos la ficha del fabricante, con fuerzas y aperturas declaradas, antes de que decidas."
+        },
+        {
+          "q": "¿Qué conviene más, herramienta hidráulica o de batería?",
+          "a": "Depende de la operación. La hidráulica trabaja con bomba y mangueras; la de batería permite moverse con libertad, pero exige gestionar la carga. Lo revisamos contigo según el tipo de rescate que atiendes."
+        }
+      ],
       "especificacion": [
         {
           "campo": "Uso principal",
@@ -52,66 +74,66 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "bloques": [
         {
-          "h2": "Herramienta hidráulica para extricación vehicular",
+          "eyebrow": "Qué es",
+          "h2": "Herramientas para abrir espacio en un vehículo",
           "parrafos": [
-            "Cotizamos separador, cortador, combinada o cilindro cuando tu corporación atiende extricación vehicular y necesita abrir, cortar, combinar movimientos o empujar sobre un vehículo estabilizado. La herramienta entra después del control de escena, con protección ocular, guantes y traje de extricación; pedimos la maniobra y el acceso para no entregarte una función distinta.",
-            "Para una escena con perfiles, elige cortador; para crear espacio, separador; para dos movimientos en una unidad, combinada; y para empuje entre puntos definidos, cilindro. Surtimos la partida con fuente hidráulica, batería, mangueras y acoples compatibles, porque tu cuadrilla no puede resolver una extricación con una cabeza de trabajo aislada."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Partida hidráulica que escribimos al cotizar",
-          "parrafos": [
-            "En tu cotización escribimos separador, cortador, combinada o cilindro por unidad, además de fuente hidráulica o batería, mangueras, acoples, cargador y transporte. Si ya cuentas con una unidad de potencia, confirmamos sus conexiones antes de proponer accesorios; así comparas una partida con el mismo circuito y no una foto de herramienta.",
-            "También pedimos el acceso al vehículo, puntos de apoyo, espacio de almacenamiento y medio de sujeción durante traslado. Anota la función junto con cada componente: un cortador no sustituye un cilindro y una batería no confirma por sí misma compatibilidad. Te entregamos la lista con la declaración que publique el fabricante del modelo."
-          ],
-          "lista": [
-            "Herramienta: separador, cortador, combinada o cilindro",
-            "Fuente hidráulica o batería compatible",
-            "Mangueras y acoples cuando correspondan",
-            "Cargador y accesorios de transporte",
-            "Puntos de acceso y apoyo de la maniobra",
-            "Declaración del fabricante para el modelo"
+            "La herramienta hidráulica entra después de estabilizar el vehículo y controlar la escena. Su trabajo es crear un acceso seguro hacia el paciente: abrir una puerta, retirar el techo o desplazar el tablero.",
+            "Cada función resuelve un problema distinto, y una cabeza de trabajo sola no sirve de nada sin su fuente de energía, mangueras o batería. Por eso se cotiza como sistema, no como pieza suelta."
           ]
         },
         {
-          "h2": "Configuración sin modelo publicado de rescate",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Función, energía y accesorios",
           "parrafos": [
-            "No tenemos un modelo publicado de herramienta hidráulica en este catálogo; proponemos separador, cortador, combinada o cilindro según la extricación que autorice tu brigada. La configuración se combina con traje de extricación, guantes de rescate extricación y protección ocular, mientras la estabilización y el control de energía siguen el procedimiento de tu corporación.",
-            "Al cotizar no atribuimos fuerza de corte, apertura, peso o presión sin la documentación del fabricante. Pedimos código, material de cuchillas, fuente hidráulica o batería y declaración normativa exacta del modelo disponible; con esos datos puedes comparar la herramienta con tus mangueras, acoples y espacio de la unidad."
+            "Empieza por las maniobras que hace tu equipo y el espacio de la unidad. Una combinada puede bastar a una brigada que atiende pocos rescates; un cuerpo con alta demanda suele necesitar separador y cortador por separado.",
+            "La energía cambia la operación: los equipos hidráulicos dependen de bomba y mangueras, y los de batería dan más libertad de movimiento a cambio de gestionar la carga. Pide fuerza, apertura y peso tal como los declara el fabricante."
           ],
-          "lista": []
+          "lista": [
+            "Herramienta: separador, cortador, combinada o cilindro",
+            "Energía: fuente hidráulica o batería compatible",
+            "Conexión: mangueras y acoples cuando correspondan",
+            "Accesorios: cargador y transporte",
+            "Maniobra: puntos de acceso y apoyo",
+            "Norma: la que declare el fabricante"
+          ]
         },
         {
-          "h2": "Errores de pliego en herramienta hidráulica",
+          "eyebrow": "En servicio",
+          "h2": "Revisión después de cada rescate",
           "parrafos": [
-            "Vemos pliegos que dicen «quijadas de la vida» sin pedir separador, cortador, combinada o cilindro; escribe la función y la fuente hidráulica o batería para evitar recibir una herramienta sin aplicación definida. También vemos órdenes que omiten mangueras y acoples: inclúyelos cuando tu unidad no opere con batería integrada.",
-            "Otro error es pedir «herramienta hidráulica NFPA» sin exigir la declaración del fabricante para el modelo ni la fuerza de corte en kN. En tu pliego agrega código, accesorios, cargador, transporte y documentación publicada; nosotros confirmamos cada renglón antes de surtir. Así la recepción coteja la herramienta, cuchillas, mandos y conexiones contra una partida verificable."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Inspección de circuito y retiro",
-          "parrafos": [
-            "Antes de guardia revisamos contigo mangueras, acoples, carcasa, mandos, cuchillas, pasadores y fuente hidráulica o batería. Después de una intervención, limpia la herramienta y registra fuga, deformación, falla de mando, daño de cuchillas o golpe relevante; cualquiera de esos hallazgos deja la unidad fuera de servicio hasta evaluación.",
-            "Para traslado, pide sujeción que proteja cortador, separador, combinada o cilindro contra movimiento. Retira del inventario una herramienta con aceite en mangueras, acople sucio, cuchilla mellada o movimiento errático, y conserva identificación, fecha de ingreso y revisión; te ayudamos a cotejar esos datos con la documentación del fabricante."
-          ],
-          "lista": []
+            "Después de cada uso se revisan cuchillas, puntas, mangueras, acoples y, en equipos de batería, el estado de carga. Una cuchilla despostillada o una fuga en un acople sacan la herramienta de servicio.",
+            "Limpia con el método del fabricante, sobre todo si hubo contacto con fluidos del vehículo o del paciente. Registra cada mantenimiento: estas herramientas tienen piezas de desgaste que conviene reponer a tiempo."
+          ]
         }
       ],
       "resumen": [
-        "La herramienta hidráulica de rescate cubre separador, cortador, combinada y cilindro para extricación vehicular; no hay modelo publicado y proponemos la función junto con traje de extricación y guantes de rescate extricación.",
-        "Cotizamos fuente hidráulica o batería, mangueras, acoples, cargador y transporte por partida. Mándanos tu maniobra y sistema actual por WhatsApp para confirmar conexiones, accesorios y la declaración del fabricante."
-      ]
+        "En extricación vehicular cada herramienta tiene su papel: el separador crea espacio, el cortador corta postes y perfiles, la combinada hace las dos cosas y el cilindro empuja entre dos puntos.",
+        "Todavía no publicamos un modelo. Cotizamos cada función con su fuente de energía, hidráulica o batería, y con los datos que declare el fabricante, sin atribuir fuerzas ni aperturas que no estén en su ficha."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de herramienta hidráulica indica uso en extricación vehicular o rescate técnico, las funciones que se necesitan y la norma que declare el fabricante del modelo.",
+          "Como aún no publicamos modelo, la tabla no muestra fuerzas ni aperturas. Esos datos solo aparecen en la cotización, con la documentación del fabricante."
+        ],
+        "errores": [
+          "La herramienta de rescate es una inversión grande, y los errores de compra suelen descubrirse en la primera práctica.",
+          "Estos cuatro puntos conviene resolverlos antes de pedir cotización."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre funciones, energía y modelos de la herramienta hidráulica de rescate.",
+          "Si nos compartes cuántos rescates vehiculares atiende tu equipo y qué unidad los lleva, te ayudamos a definir la configuración."
+        ]
+      }
     },
     {
       "slug": "arnes-de-rescate",
       "seccion": "rescate",
       "nombre": "Arnés de rescate",
       "nombreCard": "Arnés de rescate",
-      "title": "Arnés de rescate para bomberos | México",
-      "description": "Arnés de rescate para bomberos: clase I, II y III, puntos de anclaje, tallas e inspección NFPA 2500. Cotiza con ficha técnica y envío a todo México.",
-      "lead": "El arnés de rescate conecta a tu brigada con una maniobra de cuerda mediante clase, talla, cintas, hebillas y puntos de conexión bajo la referencia NFPA 2500.",
+      "title": "Arnés de rescate para bomberos clase I, II y III",
+      "description": "Arnés de rescate para bomberos: clase I, II y III, puntos de anclaje, tallas e inspección conforme a NFPA 2500. Cotiza con ficha técnica por maniobra.",
+      "lead": "El arnés de rescate une al rescatista con el sistema de cuerda. Se elige por clase, talla y puntos de conexión, y se prueba puesto sobre el equipo que se usa en la maniobra.",
       "imagen": {
         "src": "/images/catalogo/rescate/tipo-arnes-de-rescate.avif",
         "alt": "Arnés de rescate para operaciones de rescate",
@@ -123,8 +145,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
         "/trajes/extricacion/",
         "/guantes/guante-rescate-extricacion/"
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Comprar el arnés sin definir la clase",
+        "Elegir la talla sin probarla sobre el traje",
+        "Mezclar conectores sin revisar compatibilidad",
+        "Usar un arnés sin registro de inspección"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué norma aplica al arnés de rescate para bombero?",
+          "a": "La referencia es NFPA 2500, que absorbió a la NFPA 1983 de cuerda y equipo de rescate. Pide que la cotización indique qué declara el modelo."
+        },
+        {
+          "q": "¿Tienen modelos de arnés de rescate publicados?",
+          "a": "Todavía no. Lo cotizamos por clase y talla, y te presentamos la ficha del fabricante antes de que decidas."
+        },
+        {
+          "q": "¿Cuándo se retira un arnés de rescate?",
+          "a": "Cuando tiene cortes, quemaduras, costuras dañadas o herrajes deformados, y siempre después de soportar una caída o una carga anormal."
+        },
+        {
+          "q": "¿Se puede usar un arnés industrial para rescate?",
+          "a": "Depende de su clase y de lo que declare el fabricante. Muchos arneses industriales están pensados para detención de caídas y no para rescate con cuerda."
+        }
+      ],
       "especificacion": [
         {
           "campo": "Uso principal",
@@ -147,18 +191,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "bloques": [
         {
-          "h2": "Arnés de rescate para maniobra autorizada",
+          "eyebrow": "Qué es",
+          "h2": "El punto de unión entre el rescatista y la cuerda",
           "parrafos": [
-            "Cotizamos arnés de rescate por clase, talla, cintas, hebillas y puntos de conexión cuando tu brigada realiza acceso, descenso, ascenso, posicionamiento o rescate. NFPA 2500, antes NFPA 1983, es la referencia que anotamos; pedimos la maniobra porque un arnés no se intercambia como prenda genérica.",
-            "Elige puntos de conexión y rango de ajuste según cuerda, conectores y dispositivo; surtimos tallas por usuario para que tu equipo pruebe el arnés sobre traje, casco y guantes. En una práctica, confirma que perneras, banda dorsal y anillos queden accesibles sin cintas retorcidas."
-          ],
-          "lista": []
+            "En acceso, descenso, ascenso o posicionamiento, el arnés sostiene al rescatista y, en algunos casos, también al paciente. Tiene que repartir la carga en piernas y cintura, y dejar los anillos a la mano.",
+            "Un arnés no es una prenda genérica. La clase, los puntos de conexión y el rango de ajuste dependen de la maniobra que tu equipo practica."
+          ]
         },
         {
-          "h2": "Datos de arnés para la cotización",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Clase, talla y puntos de conexión",
           "parrafos": [
-            "En la partida escribimos clase, talla, rango de ajuste, puntos de conexión, cintas, hebillas, anillos y marcado individual. También pedimos compatibilidad con cuerda y conectores, porque NFPA 2500 es referencia y la declaración concreta pertenece al fabricante y al modelo que tú autorices.",
-            "Para recibir arneses por corporación, separa tallas y funciones en cada renglón; nosotros confirmamos documentación, instructivos y método de identificación. Evita una cantidad total sin ajuste: la prueba sobre EPP real muestra si casco, traje o conectores bloquean hebillas o el anillo elegido."
+            "Define primero la clase que necesita tu maniobra y los puntos de conexión que vas a usar: ventral, dorsal o laterales. Después, la talla de cada rescatista.",
+            "La prueba se hace sobre el traje, con casco y guantes: perneras ajustadas, banda dorsal centrada y cada anillo al alcance de la mano sin cintas retorcidas."
           ],
           "lista": [
             "Clase de arnés requerida",
@@ -166,47 +212,45 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
             "Puntos de conexión declarados",
             "Cintas, hebillas y anillos",
             "Compatibilidad con cuerda y conectores",
-            "Marcado e instructivos del fabricante"
+            "Marcado e instructivo del fabricante"
           ]
         },
         {
-          "h2": "Arnés sin modelo publicado en catálogo",
+          "eyebrow": "En servicio",
+          "h2": "Inspección antes y después de cada uso",
           "parrafos": [
-            "No publicamos un modelo de arnés de rescate en esta sección; proponemos clase, talla y puntos de conexión conforme a la maniobra de tu brigada. Lo combinamos con cuerda estática kernmantle, mosquetones de acero o aluminio, casco y traje de extricación para que compruebes la interfaz completa.",
-            "Pedimos al proveedor la declaración NFPA 2500, antes NFPA 1983, tal como corresponda al modelo, sin presentarla como certificación universal. En tu prueba de talla ajusta cintas, revisa hebillas y alcanza cada anillo con guantes; registra el código y la identificación antes de asignarlo."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Errores de pliego al pedir arneses",
-          "parrafos": [
-            "Vemos órdenes por talla de ropa sin clase, rango de ajuste o puntos de conexión; escribe esos campos y exige prueba con EPP para evitar un arnés que no funcione con tu cuerda. También separa las tallas, porque una cantidad global mezcla funciones de acceso, descenso o rescate.",
-            "Otro error es declarar NFPA 2500 sin pedir documento del modelo. Nosotros anotamos fabricante, marcado, cintas, hebillas y anillos en la cotización; incluye esos datos en tu pliego para cotejar recepción. No autorices perforar, coser o marcar cintas con métodos que alteren el material."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Revisión de cintas y retiro",
-          "parrafos": [
-            "Antes de guardia revisamos cintas, costuras, etiquetas, hebillas, anillos y puntos de conexión contigo. Después de carga, calor, sustancias o corte, registra exposición e identificación; una cinta cortada, costura comprometida, hebilla dañada o contaminación deja el arnés fuera de servicio hasta evaluación del fabricante.",
-            "Guarda el arnés seco, sin comprimir hebillas y lejos de luz directa o químicos. En cada revisión, conserva usuario, fecha de ingreso y resultado; te entregamos la documentación para relacionar ese código con sus instrucciones. No reincorpores un arnés solo porque las cintas parezcan limpias."
-          ],
-          "lista": []
+            "Revisa cintas, costuras, hebillas y anillos antes de cada práctica. Un corte, una quemadura, una costura abierta o una hebilla deformada sacan al arnés de servicio.",
+            "Lleva un registro por arnés con fecha de entrada en servicio, usos e inspecciones. Un arnés que soportó una caída o una carga fuera de lo normal se retira aunque se vea bien."
+          ]
         }
       ],
       "resumen": [
-        "El arnés de rescate se especifica por clase, talla, cintas, hebillas y puntos de conexión bajo la referencia NFPA 2500; no hay modelo publicado y proponemos la configuración conforme a tu maniobra.",
-        "Cotizamos el arnés por clase (I, II o III bajo NFPA 2500), tallas, anillos de acero o aluminio, marcado y compatibilidad con cuerda y conectores. Mándanos por WhatsApp tu operación, EPP y número de usuarios para preparar una partida que puedas probar."
-      ]
+        "La referencia para equipo de rescate con cuerda es NFPA 2500, que absorbió a la NFPA 1983. Define las clases de arnés según la carga y el tipo de maniobra.",
+        "Todavía no publicamos un modelo. Lo cotizamos por clase, talla y conexiones, con la declaración del fabricante y compatibilidad con la cuerda y los conectores de tu equipo."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar arnés de rescate indica el uso según clase y maniobra, la referencia NFPA 2500 y los datos de compra: clase, talla, conexiones y trazabilidad.",
+          "El código de producto se agrega cuando elegimos el modelo contigo. Clase declarada, resistencia y marcado llegan con la ficha del modelo propuesto."
+        ],
+        "errores": [
+          "En rescate con cuerda, un error de compra afecta a todo el sistema. El arnés tiene que corresponder a la cuerda y a los conectores.",
+          "Estos cuatro puntos conviene revisarlos antes de pedir cotización."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre norma, modelos, retiro y uso de arneses industriales.",
+          "Si nos compartes qué maniobras hace tu equipo y cuántos rescatistas son, te proponemos una configuración."
+        ]
+      }
     },
     {
       "slug": "cuerda-de-rescate",
       "seccion": "rescate",
       "nombre": "Cuerda de rescate",
       "nombreCard": "Cuerda de rescate",
-      "title": "Cuerda de rescate para bomberos | México",
-      "description": "Cuerda de rescate para bomberos: kernmantle estática, diámetro, longitud, terminaciones y registro de uso. Cotiza con ficha técnica en México.",
-      "lead": "La cuerda de rescate estática kernmantle se cotiza por diámetro, longitud, terminaciones y función como línea principal, respaldo o acceso dentro de un sistema NFPA 2500.",
+      "title": "Cuerda de rescate kernmantle estática para bomberos",
+      "description": "Cuerda de rescate para bomberos: kernmantle estática, diámetro, longitud, terminaciones y registro de uso para rescate vertical. Cotiza con ficha técnica.",
+      "lead": "La cuerda de rescate es una cuerda estática tipo kernmantle: un núcleo que carga el peso y una funda que lo protege. Se elige por diámetro, longitud y función dentro del sistema.",
       "imagen": {
         "src": "/images/catalogo/rescate/tipo-cuerda-de-rescate.avif",
         "alt": "Cuerda de rescate para operaciones de rescate",
@@ -218,8 +262,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
         "/trajes/extricacion/",
         "/guantes/guante-rescate-extricacion/"
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Comprar diámetro sin revisar descensores y conectores",
+        "Cortar tramos sin registrar su nueva identificación",
+        "Guardar la cuerda húmeda o junto a químicos",
+        "Usar una cuerda sin historial de inspección"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué cuerda se usa en rescate de bomberos?",
+          "a": "Cuerda estática tipo kernmantle, con diámetro compatible con los descensores y conectores del equipo. La referencia para equipo de rescate con cuerda es NFPA 2500."
+        },
+        {
+          "q": "¿Se puede usar cuerda de escalada para rescate?",
+          "a": "La cuerda dinámica de escalada se estira para absorber caídas y dificulta el control de cargas. En rescate se usa cuerda estática."
+        },
+        {
+          "q": "¿Cada cuánto se revisa una cuerda de rescate?",
+          "a": "Antes y después de cada uso, además de las inspecciones periódicas que defina el fabricante. Cada revisión se anota en su historial."
+        },
+        {
+          "q": "¿Tienen modelos de cuerda de rescate publicados?",
+          "a": "Todavía no. La cotizamos por diámetro, longitud y función, y te presentamos la ficha del fabricante antes de que decidas."
+        }
+      ],
       "especificacion": [
         {
           "campo": "Uso principal",
@@ -242,66 +308,66 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "bloques": [
         {
-          "h2": "Cuerda estática para línea definida",
+          "eyebrow": "Qué es",
+          "h2": "Cuerda estática para cargas de rescate",
           "parrafos": [
-            "Cotizamos cuerda estática kernmantle cuando tu rescate requiere línea principal, respaldo o acceso con diámetro, longitud y terminaciones definidos. NFPA 2500 orienta la referencia; pedimos la maniobra para que núcleo, funda, descensores, conectores y anclajes correspondan al sistema que tu corporación practica.",
-            "Elige una longitud para recorrido y resguardo, y pide terminaciones identificadas si tu procedimiento las usa. Surtimos la cuerda con bolsa limpia y trazabilidad; en tu prueba, pasa funda y núcleo palmo a palmo, arma descensor y conector, y confirma que no haya zona rígida ni abrasión."
-          ],
-          "lista": []
+            "Una cuerda estática se estira muy poco bajo carga, lo que permite controlar un descenso o un izado con precisión. Es distinta a una cuerda dinámica de escalada, que se estira para absorber una caída.",
+            "La construcción kernmantle separa funciones: el núcleo aporta la resistencia y la funda soporta el roce contra bordes y dispositivos. Por eso se inspecciona palmo a palmo."
+          ]
         },
         {
-          "h2": "Campos de cuerda en la partida",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Diámetro, longitud y función",
           "parrafos": [
-            "Escribimos modelo, diámetro, longitud, color, terminaciones, función de línea, bolsa y marcado para cada cuerda estática kernmantle. Confirmamos compatibilidad con arnés, mosquetones, descensores y anclajes, pues una cuerda NFPA 2500 no autoriza por sí sola una configuración que tu brigada no haya definido.",
-            "Para comparar ofertas de cuerda kernmantle, separa línea principal, respaldo y acceso, y anota diámetro y longitud de cada una; te pedimos el uso previsto antes de surtir. Incluye historial de inspección y exposición desde la recepción, porque funda, núcleo y terminaciones requieren identificación propia después de agua contaminada, calor, aceite o contacto con bordes."
+            "El diámetro depende de tus descensores y conectores; cambiarlo sin revisar el resto del sistema es un riesgo. La longitud se calcula por el recorrido más largo que atiende tu equipo, más lo necesario para anclar.",
+            "Define también la función de cada cuerda y cómo se identifica: por color, por marca o por etiqueta. En una escena con varias líneas, confundir la principal con el respaldo no es opción."
           ],
           "lista": [
-            "Modelo de cuerda estática kernmantle",
+            "Tipo: estática kernmantle",
             "Diámetro y longitud solicitados",
-            "Línea principal, respaldo o acceso",
+            "Función: principal, respaldo o acceso",
             "Terminaciones identificadas",
-            "Bolsa limpia para resguardo",
+            "Bolsa para resguardo",
             "Marcado e historial de inspección"
           ]
         },
         {
-          "h2": "Cuerda sin modelo publicado disponible",
+          "eyebrow": "En servicio",
+          "h2": "Inspección, lavado y retiro",
           "parrafos": [
-            "No hay modelo publicado de cuerda de rescate en esta sección; proponemos cuerda estática kernmantle según diámetro, longitud, terminaciones y operación. La combinamos con arnés, mosquetones de acero o aluminio, casco y traje de extricación para que tu equipo revise el sistema antes de integrarlo.",
-            "Pedimos al proveedor declaración NFPA 2500 y documentación del modelo sin inventar resistencia o carga. Durante tu prueba, recorre funda y núcleo, confirma bolsa, descensor y anclaje, y anota identificación; una cuerda sin historial no vuelve a servicio solo porque su apariencia parezca nueva."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Errores de compra de cuerda",
-          "parrafos": [
-            "Vemos pliegos que piden un rollo sin diámetro, longitud, terminaciones o función; escribe línea principal, respaldo o acceso para recibir cuerda estática kernmantle útil a tu sistema. También añade bolsa y marcado, porque una cuerda suelta se mezcla con equipo húmedo, aceite o herramientas durante traslado.",
-            "Otro error es anunciar NFPA 2500 sin solicitar la declaración del modelo. Nosotros pedimos documentación, compatibilidad y historial en cada partida; copia esos campos a tu orden. No aceptes una cuerda con funda dañada, zona rígida o contaminación solo porque la longitud coincide con el renglón solicitado."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Funda, núcleo y retiro",
-          "parrafos": [
-            "Antes de guardia revisamos funda, núcleo perceptible, cortes, abrasión, aplanamientos, zonas rígidas y terminaciones contigo. Después de uso, registra calor, carga, contaminación, agua contaminada o aceite; retira una cuerda estática kernmantle con corte, abrasión o cambio táctil hasta evaluación conforme al fabricante.",
-            "Lava y seca únicamente según la instrucción del modelo, después guarda la cuerda en bolsa limpia, lejos de sol, baterías y rebabas. Conserva identificación, fecha de ingreso y exposición para tu inventario; te ayudamos a cotejar esos registros con la documentación NFPA 2500 declarada."
-          ],
-          "lista": []
+            "Después de cada uso, pasa la cuerda por las manos buscando zonas rígidas, aplastadas, con cortes en la funda o cambios de diámetro. Guárdala limpia y seca en su bolsa, lejos de químicos y de la luz solar.",
+            "Cada cuerda lleva un historial de usos, cargas e inspecciones. Una cuerda sin historial no vuelve a servicio solo porque se vea nueva."
+          ]
         }
       ],
       "resumen": [
-        "La cuerda de rescate estática kernmantle se compra como línea principal, respaldo o acceso con diámetro, longitud, funda y terminaciones definidos; no hay modelo publicado y proponemos la configuración de tu maniobra.",
-        "Cotizamos la cuerda por diámetro y longitud, con bolsa, marcado, compatibilidad con arnés y mosquetones y la declaración NFPA 2500 del modelo. Escríbenos por WhatsApp para revisar tus longitudes, tu sistema y el resguardo."
-      ]
+        "En un sistema de rescate cada cuerda tiene un papel: línea principal, respaldo o acceso. El diámetro tiene que corresponder a los descensores y conectores que usa tu equipo.",
+        "Todavía no publicamos un modelo. La cotizamos por diámetro, longitud y terminaciones, con la declaración NFPA 2500 que publique el fabricante y sin atribuir resistencias que no estén en su ficha."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar cuerda de rescate indica el uso con cuerda estática kernmantle, la referencia NFPA 2500 y los datos de selección: diámetro, longitud y compatibilidad con el sistema.",
+          "Como aún no publicamos modelo, la tabla no muestra resistencia ni código. Esos datos llegan con la documentación del fabricante."
+        ],
+        "errores": [
+          "La cuerda es la parte del sistema que más se desgasta y la que menos se nota dañada a simple vista.",
+          "Estos cuatro errores conviene evitarlos desde la compra y en cada guardado."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre tipo de cuerda, inspección y modelos para rescate.",
+          "Si nos compartes los descensores que usa tu equipo y el recorrido más largo que atiende, te ayudamos a definir diámetro y longitud."
+        ]
+      }
     },
     {
       "slug": "mosquetones-de-rescate",
       "seccion": "rescate",
       "nombre": "Mosquetones de rescate",
       "nombreCard": "Mosquetones de rescate",
-      "title": "Mosquetones de rescate para bomberos | México",
-      "description": "Mosquetones de rescate para bomberos: acero o aluminio, seguro automático o de rosca, resistencia marcada y compatibilidad. Cotiza con ficha técnica.",
-      "lead": "Los mosquetones de rescate unen componentes mediante cuerpo de acero o aluminio, forma, seguro de rosca o automático y resistencia marcada para tu sistema bajo NFPA 2500.",
+      "title": "Mosquetones de seguridad para rescate de bomberos",
+      "description": "Mosquetones de seguridad para rescate: acero o aluminio, seguro automático o de rosca, resistencia marcada y compatibilidad del sistema. Cotiza con ficha.",
+      "lead": "Los mosquetones de rescate conectan arnés, cuerda, anclajes y dispositivos. Se eligen por material, forma, tipo de seguro y resistencia marcada por el fabricante.",
       "imagen": {
         "src": "/images/catalogo/rescate/tipo-mosquetones-de-rescate.avif",
         "alt": "Mosquetones de rescate para operaciones de rescate",
@@ -313,8 +379,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
         "/trajes/extricacion/",
         "/guantes/guante-rescate-extricacion/"
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Comprar sin revisar la resistencia marcada",
+        "Elegir un seguro que no se opera con guantes",
+        "Cargar el mosquetón de lado o con el gatillo abierto",
+        "Usar conectores sin identificación ni registro"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué mosquetón conviene para rescate, acero o aluminio?",
+          "a": "El acero resiste mejor el desgaste y se usa en anclajes y puntos de roce; el aluminio pesa menos y se prefiere cuando se carga mucho equipo. Muchos equipos combinan ambos."
+        },
+        {
+          "q": "¿Qué significan los kN marcados en un mosquetón?",
+          "a": "Es la resistencia que declara el fabricante en cada dirección: eje mayor, eje menor y con el gatillo abierto. Se lee en el cuerpo del conector."
+        },
+        {
+          "q": "¿Cuándo se retira un mosquetón de rescate?",
+          "a": "Si cayó desde altura sobre una superficie dura, si el gatillo no cierra solo, si el seguro falla o si tiene desgaste o rebabas visibles."
+        },
+        {
+          "q": "¿Tienen modelos de mosquetón publicados?",
+          "a": "Todavía no. Los cotizamos por material, forma y seguro, y te presentamos la ficha del fabricante antes de que decidas."
+        }
+      ],
       "especificacion": [
         {
           "campo": "Uso principal",
@@ -337,66 +425,66 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "bloques": [
         {
-          "h2": "Mosquetones para conexión de rescate",
+          "eyebrow": "Qué es",
+          "h2": "Conectores para sistemas de rescate",
           "parrafos": [
-            "Cotizamos mosquetones de rescate de acero o aluminio con seguro de rosca o automático para unir arnés, cuerda, anclajes y dispositivos. NFPA 2500 es la referencia de este sistema; pedimos dónde abrirás el conector, qué guantes usas y cómo queda la orientación de carga.",
-            "Elige acero si tu operación privilegia desgaste y aluminio si la configuración requiere ese material declarado; confirma forma y seguro antes de ordenar. Surtimos cada conector para una interfaz concreta, y en tu prueba revisa que nariz, gatillo, bisagra y bloqueo cierren sin forzar anillo, cuerda o dispositivo."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Renglones de mosquetón para cotizar",
-          "parrafos": [
-            "En la cotización anotamos material, forma, seguro, resistencia marcada, cantidad, uso asignado y declaración del fabricante. Separar conectores de anclaje, arnés o descensor evita que un mosquetón de acero o aluminio llegue sin función; tú comparas marcado, cierre y compatibilidad contra la misma configuración.",
-            "También pedimos el dispositivo, anillo o cuerda que recibirá cada mosquetón. La referencia NFPA 2500 no sustituye el marcado legible del modelo; te entregamos los datos para que la recepción compruebe cuerpo, nariz, gatillo y seguro antes de incorporar unidades al inventario."
-          ],
-          "lista": [
-            "Material: acero o aluminio",
-            "Forma del mosquetón",
-            "Seguro de rosca o automático",
-            "Resistencia marcada por fabricante",
-            "Cantidad y uso asignado",
-            "Compatibilidad con arnés o dispositivo"
+            "Un mosquetón une dos elementos del sistema y trabaja en una sola dirección: a lo largo de su eje mayor. Cargado de lado o con el gatillo abierto, su resistencia baja mucho.",
+            "Por eso importa elegir la forma correcta para cada conexión y entrenar su uso. Un sistema de rescate tiene tantos puntos débiles como conectores mal colocados."
           ]
         },
         {
-          "h2": "Conectores sin modelo publicado de rescate",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Material, forma y seguro",
           "parrafos": [
-            "No hay modelo publicado de mosquetón en esta sección; proponemos acero o aluminio, forma y seguro conforme a la conexión de tu maniobra. Los combinamos con arnés, cuerda estática kernmantle, casco y traje de extricación para que la brigada pruebe orientación, cierre y acceso con guantes.",
-            "Pedimos al proveedor la declaración NFPA 2500 y resistencia marcada del modelo sin presentarla como certificación general. En tu práctica abre y cierra gatillo, verifica bloqueo y mira que nariz asiente; registra código e identificación antes de asignar el conector a un anclaje o descensor."
+            "Acero para puntos de mucho roce o anclajes fijos; aluminio cuando el peso del equipo es una limitante. La forma, en D, oval o de pera, depende de lo que se conecta y de cómo se orienta la carga.",
+            "El seguro de rosca es sencillo y confiable si se revisa; el automático cierra solo, pero puede ser más difícil de operar con guantes gruesos. La prueba con el guante de tu equipo decide."
           ],
-          "lista": []
+          "lista": [
+            "Material: acero o aluminio",
+            "Forma: D, oval o pera según uso",
+            "Seguro: de rosca o automático",
+            "Resistencia marcada por el fabricante",
+            "Cantidad y uso asignado",
+            "Compatibilidad con arnés y dispositivos"
+          ]
         },
         {
-          "h2": "Fallos habituales en orden de conectores",
+          "eyebrow": "En servicio",
+          "h2": "Revisión de gatillo, nariz y seguro",
           "parrafos": [
-            "Vemos órdenes que piden mosquetones sin material, forma, seguro ni cantidad; escribe acero o aluminio, rosca o automático y uso para evitar una entrega incompleta. También separa conectores de arnés, anclaje y descensor: el mismo nombre no confirma orientación de carga ni compatibilidad con tu dispositivo.",
-            "Otro fallo es omitir resistencia marcada y documento del fabricante al citar NFPA 2500. Nosotros los pedimos en cada partida; inclúyelos en tu pliego y coteja el marcado al recibir. No ordenes lubricar, raspar o modificar gatillo, nariz o seguro para recuperar un mosquetón irregular."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Gatillo, nariz y criterios de retiro",
-          "parrafos": [
-            "Antes de salida revisamos cuerpo, nariz, gatillo, seguro, bisagra, marcado y contaminación contigo. Después de una intervención, registra caída, corrosión, rebaba, grieta, deformación o gatillo irregular; cualquiera de esos daños retira el mosquetón de acero o aluminio hasta evaluación del fabricante.",
-            "Guarda los mosquetones de acero o aluminio secos, protegidos de golpes, pintura, arena, baterías y fluidos. En la revisión de sistema confirma que el seguro y la orientación sobre el eje mayor no queden contra una arista, y conserva identificación y fecha de ingreso; te entregamos la documentación del modelo para sostener ese registro."
-          ],
-          "lista": []
+            "Antes de cada uso, abre y cierra el gatillo y comprueba que regresa solo y que el seguro bloquea. Revisa que la nariz no tenga rebabas que puedan cortar la cuerda.",
+            "Un mosquetón que cayó desde altura sobre una superficie dura, que tiene desgaste marcado o un gatillo que no cierra se retira. Registra cada pieza para saber dónde se ha usado."
+          ]
         }
       ],
       "resumen": [
-        "Los mosquetones de rescate conectan arnés, cuerda y dispositivos con acero o aluminio, forma y seguro definidos; no hay modelo publicado y proponemos el conector para tu orientación de carga.",
-        "Cotizamos mosquetones de acero o aluminio con seguro de rosca o automático, resistencia marcada en kN, cantidad y compatibilidad con tu sistema NFPA 2500. Mándanos por WhatsApp tu anclaje, arnés o descensor para preparar la partida."
-      ]
+        "El acero resiste mejor el desgaste y el aluminio pesa menos. La forma y el seguro, de rosca o automático, dependen de dónde se abre el conector y con qué guantes.",
+        "Todavía no publicamos un modelo. Los cotizamos por uso, con la resistencia en kN marcada en cada pieza y la declaración NFPA 2500 del fabricante."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de mosquetones indica uso en conexión de sistemas de rescate, material según modelo y referencia NFPA 2500, verificando la declaración de cada pieza.",
+          "Como aún no publicamos modelo, la tabla no muestra resistencia. La lees en el cuerpo del conector y en la ficha del fabricante que te entregamos."
+        ],
+        "errores": [
+          "Los mosquetones son piezas pequeñas y baratas frente al resto del sistema, y por eso a veces se compran sin el mismo cuidado.",
+          "Estos cuatro errores conviene evitarlos en la compra y en el entrenamiento."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre material, resistencia y retiro de mosquetones de rescate.",
+          "Si nos compartes qué arneses y dispositivos usa tu equipo, te decimos qué conectores conviene cotizar."
+        ]
+      }
     },
     {
       "slug": "kit-de-rescate-vertical",
       "seccion": "rescate",
       "nombre": "Kit de rescate vertical",
       "nombreCard": "Kit de rescate vertical",
-      "title": "Kit de rescate vertical para bomberos | México",
-      "description": "Kit de rescate vertical para bomberos: cuerda, arnés, descensor, poleas y anclajes compatibles en una sola partida. Cotiza con ficha técnica en México.",
-      "lead": "El kit de rescate vertical integra cuerda, arnés, mosquetones, dispositivos, anclajes y bolsa para una secuencia definida de acceso, descenso, ascenso o evacuación bajo NFPA 2500.",
+      "title": "Kit de rescate vertical para bomberos con cuerda y arnés",
+      "description": "Kit de rescate vertical para bomberos: cuerda, arnés, descensor, poleas y anclajes compatibles en una sola partida. Cotiza el equipo con ficha técnica.",
+      "lead": "El kit de rescate vertical reúne cuerda, arneses, mosquetones, dispositivos y anclajes para una secuencia concreta de acceso, descenso, ascenso o evacuación.",
       "imagen": {
         "src": "/images/catalogo/rescate/tipo-kit-de-rescate-vertical.avif",
         "alt": "Kit de rescate vertical para operaciones de rescate",
@@ -408,8 +496,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
         "/trajes/extricacion/",
         "/guantes/guante-rescate-extricacion/"
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Comprar un kit cerrado sin revisar las maniobras de tu equipo",
+        "Llamar certificado al kit completo cuando la declaración es por pieza",
+        "No identificar cada componente por separado",
+        "Salir sin revisar el inventario"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué incluye un kit de rescate vertical para bomberos?",
+          "a": "Cuerda estática, arneses, mosquetones, descensor, poleas y anclajes, además de bolsas para su resguardo. La cantidad y el tipo dependen de la maniobra y del número de rescatistas."
+        },
+        {
+          "q": "¿El kit de rescate vertical está certificado?",
+          "a": "La declaración NFPA 2500 es de cada componente, no del kit como conjunto. Así lo presentamos en la cotización."
+        },
+        {
+          "q": "¿Tienen kits de rescate vertical publicados?",
+          "a": "Todavía no publicamos un kit cerrado. Lo armamos con tu equipo según sus maniobras y te presentamos la ficha de cada componente."
+        },
+        {
+          "q": "¿Se puede ampliar un kit de rescate vertical?",
+          "a": "Sí, siempre que las piezas nuevas sean compatibles con las existentes y queden registradas en el inventario del kit."
+        }
+      ],
       "especificacion": [
         {
           "campo": "Uso principal",
@@ -432,57 +542,57 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "bloques": [
         {
-          "h2": "Kit vertical para secuencia de rescate",
+          "eyebrow": "Qué es",
+          "h2": "Un sistema completo para trabajar en altura",
           "parrafos": [
-            "Cotizamos kit de rescate vertical cuando tu brigada define acceso, descenso, ascenso o evacuación y necesita cuerda, arnés, mosquetones, dispositivos, anclajes y bolsa como sistema. NFPA 2500 es la referencia; pedimos escenario y usuarios porque un paquete no vuelve universal una maniobra ni sustituye tu entrenamiento.",
-            "Elige contenido según secuencia, usuarios, tallas, longitudes y transporte. Surtimos los componentes identificados por separado para que pruebes casco, traje de extricación, arnés y cuerda antes de salida; en esa práctica confirma borde, bolsa, conectores y dispositivos con el procedimiento que autorice tu corporación."
-          ],
-          "lista": []
+            "El rescate vertical necesita que cada pieza funcione con las demás: la cuerda con el descensor, el descensor con el mosquetón, el mosquetón con el arnés. Un kit resuelve esa compatibilidad desde la compra.",
+            "Lo que no resuelve es el entrenamiento. El mejor kit no sustituye a un equipo que practica sus maniobras y conoce los límites de cada componente."
+          ]
         },
         {
-          "h2": "Lista individual para kit vertical",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Maniobra, usuarios y longitudes",
           "parrafos": [
-            "En la cotización describimos maniobra, usuarios, cuerda estática kernmantle, arneses por talla, mosquetones de acero o aluminio, dispositivos, anclajes, longitudes, bolsa y marcado. Confirmamos compatibilidad por renglón para que tu kit vertical sea una configuración reproducible y no una caja sin identificación NFPA 2500.",
-            "También pedimos método de resguardo, inventario y documentación para cada componente. Tú puedes cotejar la partida al recibir: cuenta conectores, revisa cuerda, ajusta arnés y verifica bolsa; una pieza húmeda, contaminada o sin historial se separa antes de armar el sistema."
+            "Parte de la secuencia que vas a ejecutar y del número de rescatistas. Con eso se define cuántos arneses y de qué tallas, qué longitud de cuerda, cuántos conectores y qué dispositivos.",
+            "Pide cada componente identificado por separado dentro de la cotización. Así se puede revisar pieza por pieza y reponer lo que se dañe sin comprar un kit nuevo."
           ],
           "lista": [
             "Maniobra y secuencia de rescate",
             "Usuarios y arneses por talla",
-            "Cuerda, diámetro y longitud",
+            "Cuerda: diámetro y longitud",
             "Mosquetones por material y seguro",
             "Dispositivos y anclajes identificados",
-            "Bolsa, marcado e inventario individual"
+            "Bolsa, marcado e inventario"
           ]
         },
         {
-          "h2": "Kit sin modelo publicado como paquete",
+          "eyebrow": "En servicio",
+          "h2": "Inventario antes de cada salida",
           "parrafos": [
-            "No publicamos un modelo de kit vertical cerrado; proponemos la lista de cuerda, arneses, mosquetones, dispositivos, anclajes y bolsa para la secuencia de tu operación. Lo combinamos con casco y traje de extricación cuando corresponda, para que tu brigada verifique interfaces reales antes de integrar la configuración.",
-            "Pedimos declaración NFPA 2500 por componente, sin llamar certificación a un kit completo si el fabricante no lo declara. En tu prueba arma la secuencia con tallas, longitudes y conectores cotizados, revisa bolsa y marcado, y registra cada código antes de entregar el conjunto a una unidad."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Errores al comprar un kit vertical",
-          "parrafos": [
-            "Vemos pedidos de «kit completo» sin maniobra, usuarios, tallas ni longitudes; escribe acceso, descenso, ascenso o evacuación y lista cuerda, arnés, mosquetones, dispositivos y anclajes. Así nosotros cotizamos un sistema vertical que tu corporación puede revisar en lugar de una combinación genérica de piezas.",
-            "También vemos una caja recibida sin inventario ni documentación. Incluye marcado, bolsa y declaración NFPA 2500 por artículo en tu pliego; la recepción contará cada componente. No mezcles piezas húmedas, contaminadas o sin historial dentro del kit, porque una bolsa cerrada no confirma disponibilidad."
-          ],
-          "lista": []
-        },
-        {
-          "h2": "Inventario, limpieza y retiro del kit",
-          "parrafos": [
-            "Antes de guardia revisamos contigo cuerda, arneses, mosquetones, dispositivos, anclajes, bolsa y marcado. Después de uso registra carga, humedad, contaminación, calor, corte, caída o daño; retira el componente afectado y conserva el resto identificado, pues el kit vertical no elimina la trazabilidad individual.",
-            "Seca cuerda y cintas según el fabricante, protege conectores de golpes y guarda bolsa lejos de sustancias. Antes de rearmar, coteja inventario, tallas, longitudes y códigos contra la orden; te entregamos la documentación de cada modelo para que tu registro indique qué pieza vuelve al sistema."
-          ],
-          "lista": []
+            "El kit se revisa contra su inventario antes de cada salida y después de cada uso. Una pieza que falta o que se dañó se repone antes de que el kit vuelva a la unidad.",
+            "Cada componente conserva su propio registro. Cuando una cuerda o un arnés se retira, el kit se actualiza, para que nadie salga con un sistema incompleto."
+          ]
         }
       ],
       "resumen": [
-        "El kit de rescate vertical reúne cuerda, arnés, mosquetones, dispositivos, anclajes y bolsa para una secuencia definida; no existe modelo publicado como paquete y proponemos cada componente de tu maniobra.",
-        "Cotizamos el kit vertical completo —cuerda, arnés, descensor, poleas, mosquetones y anclajes— con tallas, longitudes, marcado, inventario y documentación NFPA 2500 por artículo. Escríbenos por WhatsApp con tu escenario y usuarios para armar una configuración revisable."
-      ]
+        "Un kit no es un paquete universal: se arma para las maniobras que tu equipo practica y para el número de rescatistas que lo van a usar.",
+        "Todavía no publicamos un kit cerrado. Lo cotizamos componente por componente, con la declaración NFPA 2500 de cada pieza y un inventario que permite revisarlo antes de cada salida."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de kit de rescate vertical indica la maniobra definida, los componentes del sistema y la referencia NFPA 2500 para cada uno.",
+          "Como aún no publicamos un kit cerrado, la tabla describe lo que debe contener y no un código de producto."
+        ],
+        "errores": [
+          "Los kits de rescate fallan cuando se compran como paquete y no como sistema que se revisa y se mantiene.",
+          "Estos cuatro errores conviene evitarlos desde la cotización."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre contenido, certificación y ampliación del kit de rescate vertical.",
+          "Si nos compartes las maniobras que hace tu equipo y cuántos rescatistas son, te proponemos la lista de componentes."
+        ]
+      }
     }
   ]
 };

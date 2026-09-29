@@ -19,9 +19,9 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "seccion": "kits",
       "nombre": "Kit estructural para bombero",
       "nombreCard": "Kit estructural",
-      "title": "Kit estructural para bombero | México",
-      "description": "Kit estructural con traje, casco, capucha, guantes y botas para revisar cobertura, tallas e interfaz antes de cotizar en México.",
-      "lead": "El kit estructural reúne traje, casco, capucha, guantes y botas para combate; lo cotizamos por usuario y el ERA queda aparte cuando la atmósfera exige esa configuración.",
+      "title": "Kit de bombero estructural: traje, casco, botas y guantes",
+      "description": "Kit de bombero estructural con traje, casco, monja, guantes y botas para revisar cobertura, tallas e interfaz en una sola partida. Cotiza con ficha técnica.",
+      "lead": "El kit estructural reúne en una sola cotización el traje, el casco, la capucha, los guantes y las botas que un bombero necesita para ataque interior. El ERA se cotiza aparte, según la operación.",
       "chips": [
         "Ataque estructural",
         "Interfaz de EPP",
@@ -29,8 +29,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Tallas por usuario"
       ],
       "resumen": [
-        "El kit estructural junta chaquetón, pantalonera, casco, capucha, guantes y botas para combate con referencia NFPA 1970. Como no hay modelos publicados en esta sección, cotizamos la configuración según tu operación y probamos con tu brigada los solapes entre cuello, puño y bota.",
-        "En tu requisición escribimos componentes, códigos, tallas y accesorios; el ERA queda separado. Mándanos por WhatsApp tu procedimiento y la relación de usuarios para proponerte una familia estructural y confirmar las declaraciones NFPA 1970, UL NFPA 2018 o UL NFPA 1971 edición 2018 de cada pieza."
+        "Comprar por kit evita el problema más común del equipo estructural: piezas que no solapan entre sí. Nuestra referencia es el traje Romak Fire Profesional con Bullard LTX, Majestic PAC II, Veridian Fire Pro II y Croydon Filtrex.",
+        "Cada pieza conserva su ficha y su estatus normativo. Cotizamos por usuario, con tallas escritas, y probamos cuello, puño y bota con el conjunto puesto antes de cerrar la partida."
       ],
       "imagen": {
         "src": "/images/catalogo/kits/tipo-kit-estructural.avif",
@@ -41,46 +41,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Kit estructural para combate y respuesta",
+          "eyebrow": "Qué es",
+          "h2": "Un conjunto pensado para trabajar junto",
           "parrafos": [
-            "El kit estructural coordina chaquetón, pantalonera con tirantes, casco, capucha, guantes y botas para combate estructural según tu análisis de riesgo. Lo cotizamos a cuerpos de bomberos y brigadas que ya autorizan esa respuesta; si tu procedimiento sólo cubre conatos, elige kit brigadista con NOM-002-STPS-2010 en vez de una partida con referencia NFPA 1970.",
-            "Para una intervención con humo o atmósfera comprometida, pedimos que definas el ERA por separado y lo probamos con casco, capucha y cuello. Elige la familia estructural cuando tu operación requiere ese solape; si sólo habrá apoyo exterior, conserva el límite de brigada y no agregues una declaración UL NFPA 2018 como si cubriera todo el conjunto."
+            "En un incendio estructural el calor entra por las uniones: entre casco y capucha, entre manga y guante, entre pantalonera y bota. Un kit se arma para que esas uniones estén resueltas desde la compra.",
+            "Eso no convierte al kit en un producto certificado como sistema. La certificación o declaración sigue siendo de cada pieza, y así la presentamos en la cotización."
           ]
         },
         {
-          "h2": "Cotización de kit estructural por partida",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Qué se define por usuario",
           "parrafos": [
-            "En cada partida escribimos el código de traje, casco, capucha, guante y bota, además de talla, color y accesorio. Para la referencia Profesional Romak, elige BOM1028 y BOM1040 sólo si quieres esa combinación con Bullard LTX; si tu pliego pide evidencia de pieza, separamos el Veridian Fire Pro II GIS1017 con su declaración UL NFPA 2018.",
-            "También anotamos qué pieza llevará con el ERA y qué declaración corresponde a la capucha Majestic PAC II listada UL NFPA 1971 edición 2018. Pídenos tallas por usuario, no una talla de lote; así confirmamos que Croydon Filtrex BOT1002 cierre con la pantalonera y que cada componente recibido coincida con tu orden."
+            "Por cada elemento se escriben talla de chaquetón y pantalonera, talla de guante y de bota, color, bandas reflejantes y accesorios. Con esos datos el kit se entrega completo y se revisa pieza por pieza.",
+            "El ERA queda fuera del kit a propósito: depende de la atmósfera, de la autonomía que necesita la guardia y del equipo que ya tiene la corporación. Si lo incluyes, se prueba con casco y capucha del mismo conjunto."
           ],
           "lista": [
-            "Traje: chaquetón BOM1028 y pantalonera BOM1040",
+            "Traje: Romak Fire Profesional, chaquetón y pantalonera",
             "Casco: Bullard LTX",
-            "Bota: Croydon Filtrex BOT1002",
-            "Guante: Veridian Fire Pro II GIS1017, UL NFPA 2018",
-            "Capucha: Majestic PAC II, UL NFPA 1971 edición 2018",
-            "Tallas, color, accesorios y ERA por separado"
+            "Capucha: Majestic PAC II",
+            "Guantes: Veridian Fire Pro II GIS1017",
+            "Botas: Croydon Filtrex BOT1002",
+            "ERA: se cotiza aparte, según la operación"
           ]
         },
         {
-          "h2": "Modelos de kit estructural que surtimos",
+          "eyebrow": "En servicio",
+          "h2": "Registro, inspección y reposición",
           "parrafos": [
-            "No hay modelos publicados bajo kit-estructural en este arreglo; proponemos la combinación según tu operación en lugar de prometer un kit cerrado. Si eliges la referencia Profesional Romak, cotizamos chaquetón BOM1028, pantalonera BOM1040, Bullard LTX, Croydon Filtrex BOT1002, Veridian Fire Pro II GIS1017 y Majestic PAC II, con cada talla escrita.",
-            "El guante Veridian Fire Pro II GIS1017 declara UL NFPA 2018 y la capucha Majestic PAC II aparece listada UL NFPA 1971 edición 2018; esas referencias pertenecen a cada pieza. Pide el traje estructural con el que las usarás y prueba casco, capucha y máscara antes de aceptar la propuesta, especialmente si tu ERA ya está asignado."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de kit estructural",
-          "parrafos": [
-            "Vemos pliegos que llaman «kit completo» a traje, casco y bota, pero omiten capucha, guante o talla; escribe BOM1028, BOM1040 y el accesorio requerido por partida. Si compras Veridian Fire Pro II GIS1017, pide su declaración UL NFPA 2018 para ese guante, no una certificación general del kit.",
-            "También llegan órdenes que incluyen ERA sin describir la máscara, o sustituyen Bullard LTX por otro casco al recibir. Escribe «ERA por separado y prueba de interfaz» y conserva Croydon Filtrex BOT1002 cuando esa fue la bota aprobada; si cambias casco o bota, vuelve a hacer la prueba con capucha y pantalonera."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro del kit estructural",
-          "parrafos": [
-            "Antes de la guardia revisamos contigo costuras, cierres, tirantes, suspensión Bullard LTX, capucha Majestic PAC II, palma del Veridian Fire Pro II GIS1017 y suela Croydon Filtrex BOT1002. Si ves daño, pérdida de ajuste o una pieza faltante, apártala y registra usuario, código y talla antes de elegir reposición.",
-            "Después de calor, humo, agua o contaminantes, limpia cada componente conforme a su fabricante y revisa de nuevo el solape con el ERA, Bullard LTX y Majestic PAC II. Retira el guante, capucha, casco, traje o bota que conserve daño o condición incierta; al reponerlo, pide el mismo código o prueba la nueva configuración antes de devolverla a guardia."
+            "Cada kit se asigna a una persona y se registra con sus tallas y números de serie. Así se programan las inspecciones y se sabe qué reponer cuando una pieza se daña.",
+            "Si una pieza cambia, el conjunto se vuelve a probar. Un guante de otro modelo o una capucha distinta pueden alterar la unión con el resto, aunque sean de buena calidad."
           ]
         }
       ],
@@ -121,48 +111,61 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar piezas sin probar sus solapes",
-        "Tomar una declaración de componente como certificación del kit",
-        "Omitir tallas, color o accesorios de la requisición",
-        "Incluir ERA sin revisar atmósfera y compatibilidad",
-        "Sustituir una pieza al recibir sin volver a probarla",
-        "Asignar equipo sin registro de usuario y configuración"
+        "Comprar piezas sueltas sin probar sus solapes",
+        "Tomar la declaración de una pieza como certificación del kit",
+        "Omitir tallas, color o accesorios en la requisición",
+        "Incluir ERA sin revisar la operación y la compatibilidad",
+        "Sustituir una pieza al recibir sin volver a probar el conjunto"
       ],
       "faq": [
         {
-          "q": "¿El ERA viene incluido?",
-          "a": "Se cotiza aparte, porque depende de la atmósfera, duración requerida y compatibilidad con el conjunto."
+          "q": "¿El kit estructural incluye ERA?",
+          "a": "No. El ERA se cotiza aparte porque depende de la atmósfera, la autonomía requerida y la compatibilidad con el equipo que ya tiene tu corporación."
         },
         {
-          "q": "¿Puedo cambiar una pieza?",
-          "a": "Sí, si se revisa nuevamente la interfaz y documentación de la configuración final."
+          "q": "¿Qué incluye el kit estructural para bombero?",
+          "a": "Nuestra referencia es el traje Romak Fire Profesional, el casco Bullard LTX, la capucha Majestic PAC II, los guantes Veridian Fire Pro II y las botas Croydon Filtrex."
         },
         {
-          "q": "¿El kit ya queda certificado como sistema?",
-          "a": "No debe asumirse. Las declaraciones se revisan por componente y por la configuración incluida."
+          "q": "¿El kit estructural está certificado como sistema?",
+          "a": "No debe darse por hecho. La certificación o declaración es de cada pieza: el traje Profesional, la capucha PAC II y el guante Fire Pro II publican certificación UL, y el casco y la bota, declaraciones de su fabricante."
         },
         {
-          "q": "¿Qué se mide en la prueba de talla?",
-          "a": "Cobertura, ajuste y movimiento de casco, capucha, traje, guantes y botas con las maniobras previstas."
+          "q": "¿Puedo cambiar una pieza del kit?",
+          "a": "Sí, siempre que se vuelva a probar la unión con el resto del conjunto y que la cotización refleje la configuración final."
         },
         {
-          "q": "¿Para qué sirve registrar el equipo?",
-          "a": "Para asignarlo, inspeccionarlo y reponer una pieza sin perder el control de la configuración."
-        },
-        {
-          "q": "¿Puedo usar este conjunto en cualquier incendio?",
-          "a": "No. La operación autorizada, el riesgo y la necesidad de ERA definen si corresponde emplearlo."
+          "q": "¿Qué se revisa en la prueba del kit?",
+          "a": "Que el casco asiente con la capucha, que el puño del guante quede bajo la manga y que la pantalonera cubra la bota al flexionar la rodilla, todo con movimientos reales de trabajo."
         }
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La tabla resume la partida: uso en combate estructural, componentes del kit, ERA como opción aparte y prueba de tallas y solapes por usuario.",
+          "La referencia vigente del conjunto es NFPA 1970. Cada pieza, en cambio, conserva su propia certificación o declaración, y así debe quedar escrita en la cotización."
+        ],
+        "errores": [
+          "Casi todos los errores con kits vienen de tratarlos como paquete cerrado y no como conjunto que se prueba.",
+          "Estos cinco puntos conviene revisarlos antes de publicar una partida o de pedir cotización."
+        ],
+        "kit": [
+          "Estos son los modelos de referencia que integran el kit estructural. Cada uno tiene su ficha técnica, con estatus normativo, tallas y accesorios.",
+          "Si tu corporación ya usa alguna de estas piezas, dinos marca y modelo y ajustamos el kit para que lo nuevo embone con lo que ya funciona."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre contenido, ERA, certificación y cambios de piezas del kit estructural.",
+          "Si nos compartes cuántos elementos son y sus tallas, te mandamos la cotización del kit completo por WhatsApp."
+        ]
+      }
     },
     {
       "slug": "kit-brigadista",
       "seccion": "kits",
       "nombre": "Kit brigadista contra incendio",
       "nombreCard": "Kit brigadista",
-      "title": "Kit brigadista contra incendio | México",
-      "description": "Kit brigadista con traje, casco, capucha, guantes y botas para definir una partida conforme al riesgo y procedimiento del centro de trabajo.",
-      "lead": "El kit brigadista reúne traje, casco, capucha, guantes y botas para las tareas autorizadas por tu centro de trabajo bajo NOM-002-STPS-2010.",
+      "title": "Kit de brigadista contra incendio NOM-002-STPS",
+      "description": "Kit brigadista contra incendio con traje, casco, capucha, guantes y botas para definir una partida conforme al riesgo y procedimiento del centro de trabajo.",
+      "lead": "El kit brigadista reúne traje, casco, capucha, guantes y botas para las tareas que tu centro de trabajo autoriza a su brigada, conforme a la NOM-002-STPS-2010.",
       "chips": [
         "Brigada de centro de trabajo",
         "Límite de intervención",
@@ -170,8 +173,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Recepción controlada"
       ],
       "resumen": [
-        "El kit brigadista ordena traje, casco, capucha, guantes y botas para conatos y tareas definidas por tu centro de trabajo. Como no hay modelos publicados en este arreglo, tomamos Combate Básico Romak BOM1001 como referencia y cerramos tallas, accesorios y alcance contigo.",
-        "Cotizamos cada componente con código, talla y configuración; no incluimos ataque interior ni ERA por nombre de kit. Escríbenos por WhatsApp tus tareas autorizadas y usuarios para definir si BOM1001, LTX CBOM1007, CAP1005, Firemax VI GIS1008 y Workman Fire BOT1004 corresponden a tu partida."
+        "Nuestra referencia es el traje Romak Fire Combate Básico BOM1001 con casco Bullard LTX, capucha CAP1005, guantes Firemax VI y botas Workman Fire BOT1004.",
+        "Lo cotizamos por usuario, con tallas y tarea autorizada escritas. Un kit brigadista no autoriza por sí mismo el ataque interior: eso lo define el procedimiento de la brigada."
       ],
       "imagen": {
         "src": "/images/catalogo/kits/tipo-kit-brigadista.avif",
@@ -182,46 +185,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Kit brigadista para tarea autorizada",
+          "eyebrow": "Qué es",
+          "h2": "Equipo completo para la brigada de tu centro de trabajo",
           "parrafos": [
-            "El kit brigadista reúne traje, casco, capucha, guantes y botas para el límite que tu centro de trabajo fija bajo NOM-002-STPS-2010. Lo cotizamos para conatos, evacuación o tareas cercanas a una fuente de calor; si tu brigada prevé ataque interior, elige kit estructural y revisa ERA antes de pedir BOM1001.",
-            "Usamos Combate Básico Romak BOM1001 como referencia real: traje BOM1001, casco LTX CBOM1007, capucha CAP1005, guante Firemax VI GIS1008 y bota Workman Fire BOT1004. Elige esa composición si coincide con tu procedimiento; si cambian tareas o exposición, cuéntanoslo y ajustamos la partida antes de emitir la cotización."
+            "La NOM-002-STPS-2010 pide dotar a la brigada del equipo que corresponda a su riesgo. Un kit resuelve esa dotación de una vez, con piezas que se probaron juntas y un solo documento para la auditoría.",
+            "El kit brigadista está pensado para respuesta inicial y conato. Si tu brigada entra a combatir con ERA, revisamos contigo el conjunto estructural, porque el alcance es distinto."
           ]
         },
         {
-          "h2": "Cotización de kit brigadista por usuario",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Tarea autorizada, tallas e identificación",
           "parrafos": [
-            "En la cotización escribimos BOM1001, LTX CBOM1007, CAP1005, Firemax VI GIS1008 y Workman Fire BOT1004 junto con talla, color e identificación. Pide cada elemento por usuario si tu brigada opera con extintor o manguera; así comprobamos que el guante mantenga destreza y que la bota acompañe la pantalonera.",
-            "También preguntamos por turnos, accesorios y el límite de intervención de la NOM-002-STPS-2010. Elige identificación y bandas antes de ordenar, no al recibir; dejamos esos valores por escrito para que tu área de compras compare la pieza entregada contra la misma configuración que aprobaste."
+            "Parte del procedimiento de la brigada: qué hace, hasta dónde llega y quién la integra. Con eso confirmamos que el kit de referencia corresponde, o proponemos ajustes.",
+            "Después se definen tallas por persona, color, bandas e identificación. Todo se especifica antes de ordenar, para que el lote llegue completo y se pueda entregar a cada brigadista con su registro."
           ],
           "lista": [
-            "Traje: Combate Básico Romak BOM1001",
-            "Casco: LTX CBOM1007",
-            "Capucha: CAP1005",
-            "Guante: Firemax VI GIS1008",
-            "Bota: Workman Fire BOT1004",
-            "Talla, color, identificación y tarea autorizada"
+            "Traje: Romak Fire Combate Básico BOM1001",
+            "Casco: Bullard LTX CBOM1007",
+            "Capucha: Romak Fire CAP1005",
+            "Guantes: Romak Fire Firemax VI GIS1008",
+            "Botas: Romak Fire Workman Fire BOT1004",
+            "Por usuario: talla, color, identificación y tarea"
           ]
         },
         {
-          "h2": "Modelos de kit brigadista que surtimos",
+          "eyebrow": "En servicio",
+          "h2": "Asignación, inspección y reposición",
           "parrafos": [
-            "No hay modelos publicados bajo kit-brigadista en este arreglo; proponemos el conjunto según tu tarea en vez de declarar un paquete fijo. Si eliges Combate Básico Romak BOM1001, lo combinamos con LTX CBOM1007, CAP1005, Firemax VI GIS1008 y Workman Fire BOT1004, con tallas confirmadas para tu brigada.",
-            "Esa referencia se usa para brigada de centro de trabajo conforme a NOM-002-STPS-2010, no como declaración de ataque interior. Pide la familia estructural sólo si tu operación ya lo exige; antes de cerrar el brigadista, prueba casco, capucha, guante y bota con el traje BOM1001 y con la herramienta autorizada."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de kit brigadista",
-          "parrafos": [
-            "Vemos órdenes que sólo dicen «kit brigadista» y dejan sin código el casco o la bota. Escribe BOM1001, LTX CBOM1007, CAP1005, Firemax VI GIS1008 y Workman Fire BOT1004, más talla y accesorio; si quieres otra pieza, pídenos una configuración distinta antes de autorizar la compra.",
-            "Otro error es pedir ese conjunto para humo, ERA o ataque interior sólo por llevar traje completo. Escribe el límite de intervención conforme a NOM-002-STPS-2010 y prueba el equipo con extintor o manguera; si la tarea rebasa ese límite, cambia a kit estructural en lugar de repartir BOM1001 sin una decisión operativa."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro del kit brigadista",
-          "parrafos": [
-            "Antes del turno revisamos contigo cierres y costuras de BOM1001, suspensión y barbiquejo LTX CBOM1007, capucha CAP1005, palma Firemax VI GIS1008, agujetas y suela Workman Fire BOT1004. Si falta una pieza, pierde ajuste o muestra daño, regístrala por usuario y apártala antes de una tarea autorizada.",
-            "Después de humo, calor, suciedad o contaminantes, limpia conforme al fabricante y registra condición, talla y código. Retira cualquier pieza con daño visible o condición incierta; al reponer casco, guante o bota, vuelve a probar cobertura y movimiento con BOM1001 antes de asignarla a la brigada."
+            "Cada kit se entrega a una persona y queda registrado. Después de un simulacro o una respuesta real, se revisa pieza por pieza y se aparta lo que tenga daño o condición dudosa.",
+            "El registro también ayuda en la rotación de personal: cuando entra un brigadista nuevo, se sabe qué tallas hay disponibles y qué hay que pedir."
           ]
         }
       ],
@@ -254,48 +247,61 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Equipar por apariencia y no por tarea",
-        "No definir el límite de intervención",
+        "Equipar por apariencia y no por la tarea autorizada",
+        "No definir el límite de intervención de la brigada",
         "Tomar el kit como autorización para ataque interior",
         "Agregar accesorios después de aprobar el kit",
-        "Ignorar tallas durante la recepción",
-        "Distribuir equipo sin asignación individual"
+        "Entregar equipo sin asignación individual"
       ],
       "faq": [
         {
-          "q": "¿Un kit brigadista sirve para ataque interior?",
-          "a": "No se debe asumir. Esa operación exige revisar el conjunto estructural, el ERA y el procedimiento."
+          "q": "¿El kit brigadista sirve para ataque interior?",
+          "a": "No debe darse por hecho. Esa operación exige revisar el conjunto estructural, el ERA y el procedimiento de la brigada."
         },
         {
-          "q": "¿Qué incluye el ejemplo Combate Básico?",
-          "a": "Traje BOM1001, casco LTX, capucha CAP1005, guante Firemax VI y bota Workman Fire; confirma la configuración al cotizar."
+          "q": "¿Qué incluye el kit brigadista contra incendio?",
+          "a": "Nuestra referencia es el traje Combate Básico BOM1001, el casco Bullard LTX, la capucha CAP1005, los guantes Firemax VI y las botas Workman Fire. La configuración se confirma al cotizar."
         },
         {
-          "q": "¿Cómo defino la talla?",
-          "a": "Por usuario y mediante prueba de movimiento con las piezas que se usarán en la tarea autorizada."
+          "q": "¿El kit brigadista cumple con la NOM-002-STPS-2010?",
+          "a": "La norma pide dotar el equipo conforme al riesgo, sin fijar un kit. El kit cubre esa dotación cuando corresponde al análisis de riesgo de tu centro de trabajo."
         },
         {
-          "q": "¿Se puede añadir identificación?",
-          "a": "Sí, siempre que color, bandas e identificación se especifiquen antes de ordenar y no alteren el uso previsto."
+          "q": "¿Qué norma declara el traje Combate Básico?",
+          "a": "Sus materiales son conformes a NFPA 1971, según el fabricante. Es un estatus de materiales, no una certificación del conjunto, y así lo indicamos en la ficha."
         },
         {
-          "q": "¿Qué hago después de una exposición?",
-          "a": "Sigue las instrucciones de cuidado, inspecciona las piezas y aparta el equipo con daño o condición incierta."
-        },
-        {
-          "q": "¿Por qué registrar cada entrega?",
-          "a": "Porque permite saber quién usa cada configuración, programar inspecciones y controlar la reposición."
+          "q": "¿Por qué registrar cada entrega del kit?",
+          "a": "Porque permite saber quién usa cada configuración, programar inspecciones y reponer piezas sin perder el control del equipo."
         }
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La tabla resume la partida: uso conforme al análisis de riesgo, componentes del kit, traje de referencia y control por usuario.",
+          "La fila de límite es tan importante como las demás: el kit brigadista no sustituye al conjunto estructural para ataque interior."
+        ],
+        "errores": [
+          "Los errores con kits de brigada casi siempre vienen de comprar antes de definir qué hará la brigada.",
+          "Revisa estos cinco puntos contra tu procedimiento de respuesta antes de pedir cotización."
+        ],
+        "kit": [
+          "Estos son los modelos de referencia del kit brigadista. Cada uno tiene su ficha, con el estatus normativo que publica su fabricante.",
+          "Dos de ellos, la capucha CAP1005 y el guante Firemax VI, se publican sin norma declarada. Si tu pliego exige certificación en todas las piezas, ajustamos el kit."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre contenido, alcance, normas de la STPS y registro del kit brigadista.",
+          "Si nos compartes cuántos brigadistas son y su nivel de respuesta, te mandamos la cotización con el kit cerrado."
+        ]
+      }
     },
     {
       "slug": "kit-forestal",
       "seccion": "kits",
       "nombre": "Kit forestal para brigada",
       "nombreCard": "Kit forestal",
-      "title": "Kit forestal para brigada | México",
-      "description": "Kit forestal con ropa, casco, goggles, guantes, bota y nuquera para armar protección de línea de fuego según la tarea de la cuadrilla.",
-      "lead": "El kit forestal coordina ropa, casco, goggles, guantes, bota y nuquera para línea de fuego exterior, con NFPA 1950 como referencia por modelo.",
+      "title": "Kit forestal para brigada y bombero de línea de fuego",
+      "description": "Kit forestal con ropa, casco, goggles, guantes, bota y nuquera para armar la protección de línea de fuego según la tarea de la cuadrilla. Cotiza con ficha.",
+      "lead": "El kit forestal reúne ropa, casco, goggles, guantes, bota y nuquera para trabajar en línea de fuego. Todo se prueba en movimiento, porque en el monte el equipo se usa el día entero.",
       "chips": [
         "Operación exterior",
         "Línea de fuego",
@@ -303,8 +309,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Casco con goggles y nuquera"
       ],
       "resumen": [
-        "El kit forestal reúne ropa, casco, goggles, guantes, bota y nuquera para línea de fuego y operación exterior. Como no hay modelos publicados en este arreglo, proponemos Fire Ranger Explorer o BOMW1002 según tu cuadrilla y probamos movilidad con casco Bullard FH911H.",
-        "Cotizamos talla, ropa, casco, goggles ESS Striketeam XTO, bota y nuquera por usuario. Envíanos por WhatsApp el terreno y las herramientas autorizadas para elegir entre overol o saco y pantalón, y para confirmar la referencia NFPA 1950 de cada modelo."
+        "Nuestra referencia combina el overol Romak Fire Ranger Explorer BOMW1001 o el saco y pantalón BOMW1002 con el casco Bullard FH911H y los goggles ESS Striketeam XTO.",
+        "Bota, guantes y nuquera se definen por talla y terreno. Cada pieza conserva su estatus normativo, y la referencia vigente del equipo forestal es NFPA 1950."
       ],
       "imagen": {
         "src": "/images/catalogo/kits/tipo-kit-forestal.avif",
@@ -315,46 +321,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Kit forestal para línea de fuego",
+          "eyebrow": "Qué es",
+          "h2": "Equipo para jornadas largas en línea de fuego",
           "parrafos": [
-            "El kit forestal integra overol o saco y pantalón, casco, goggles, guantes, bota y nuquera para línea de fuego exterior. Lo cotizamos para cuadrillas que caminan entre vegetación, ceniza y terreno; si tu tarea pasa a incendio en estructura o requiere ERA, elige familia estructural y no extiendas la referencia NFPA 1950.",
-            "Partimos de Fire Ranger Explorer o BOMW1002 con casco Bullard FH911H y goggles ESS Striketeam XTO cuando la operación coincide. Elige overol si tu cuadrilla necesita esa prenda o saco y pantalón si el ajuste lo favorece; antes de ordenar, te pedimos terreno, herramientas y talla para cerrar bota, guante y nuquera."
+            "El incendio forestal exige ropa ligera que deje transpirar, un casco que no se mueva con el viento y goggles que sellen contra la ceniza. Si una pieza falla, la cuadrilla lo resiente durante horas.",
+            "Por eso conviene comprar en conjunto: goggles probados con el casco, nuquera que no estorba a los goggles y bota adecuada al terreno donde trabaja la brigada."
           ]
         },
         {
-          "h2": "Cotización de kit forestal por cuadrilla",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Overol o saco y pantalón",
           "parrafos": [
-            "Escribimos Fire Ranger Explorer o BOMW1002, Bullard FH911H, ESS Striketeam XTO, talla, bota, guante y nuquera en cada cotización. Pide un desglose por persona si habrá caminata y herramienta; así decidimos la ropa y comprobamos que la bota cierre con el pantalón sin perder movilidad en el recorrido.",
-            "La referencia NFPA 1950 se conserva por modelo y no se convierte en declaración de todo el kit. Define goggles y nuquera junto con Bullard FH911H antes de aprobar la orden; si tu cuadrilla usa otro casco, mándanos su configuración y probamos el ajuste en vez de asumir compatibilidad por la marca."
+            "El overol Fire Ranger Explorer cubre el cuerpo en una sola pieza y declara NFPA 1971-2018 según su fabricante. El saco y pantalón BOMW1002 permite quitarse la parte superior en descansos, y se publica sin norma declarada.",
+            "La elección depende de la operación y del clima. En ambos casos se prueban casco, goggles y nuquera con la ropa puesta, caminando y agachándose."
           ],
           "lista": [
             "Ropa: Fire Ranger Explorer o BOMW1002",
-            "Casco: Bullard FH911H",
+            "Casco: Bullard Wildland FH911H",
             "Goggles: ESS Striketeam XTO",
-            "Bota forestal por talla y terreno",
-            "Guantes para la herramienta autorizada",
-            "Nuquera, talla y configuración por usuario"
+            "Bota forestal: por talla y terreno",
+            "Guantes: según la herramienta autorizada",
+            "Nuquera: probada con casco y goggles"
           ]
         },
         {
-          "h2": "Modelos de kit forestal que surtimos",
+          "eyebrow": "En servicio",
+          "h2": "Limpieza e inspección después de cada jornada",
           "parrafos": [
-            "No hay modelos publicados bajo kit-forestal en este arreglo; proponemos Fire Ranger Explorer o BOMW1002 según tu operación exterior. Si eliges esa referencia, combinamos Bullard FH911H y ESS Striketeam XTO con bota, guantes y nuquera definidos para tu cuadrilla, y documentamos talla y configuración en la cotización.",
-            "La referencia NFPA 1950 aplica al equipo forestal por modelo, no equivale a un conjunto estructural. Elige esta familia para línea de fuego y prueba goggles, nuquera y casco con la ropa antes de aceptar la partida; si tu operación exige máscara o ERA, dinos el escenario para proponer otra familia."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de kit forestal",
-          "parrafos": [
-            "Vemos pliegos que escriben «kit forestal» sin decir si quieren Fire Ranger Explorer o BOMW1002, ni nombran Bullard FH911H o ESS Striketeam XTO. Escribe modelo, talla, bota, guante y nuquera por usuario; así cotizamos una configuración que sirve al terreno y no una lista incompleta.",
-            "También se pide el mismo conjunto para línea de fuego y ataque interior, o se dejan goggles y nuquera para después. Escribe NFPA 1950 como referencia por modelo y fija esos accesorios con Bullard FH911H; si la cuadrilla cambia de casco, vuelve a probar visión, retención y cobertura antes de liberar la orden."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro del kit forestal",
-          "parrafos": [
-            "Antes de salida revisamos suspensión Bullard FH911H, clips ESS Striketeam XTO, nuquera, costuras Fire Ranger Explorer o BOMW1002, puños, agujetas y suela. Si hay ceniza, rotura, pérdida de ajuste o una pieza faltante, registra talla y configuración por usuario y aparta el componente antes de enviar a la cuadrilla.",
-            "Al regreso retira polvo, ceniza y vegetación conforme a cada fabricante, e inspecciona lentes, textiles y herrajes. Retira bota, goggle, nuquera, casco o ropa con daño o condición incierta; cuando repongas una pieza, prueba de nuevo Bullard FH911H, ESS Striketeam XTO y la ropa con los movimientos de campo."
+            "Después de cada salida se sacude la ceniza, se revisa la ropa en costuras y cierres, y se limpian los goggles para que el lente no se raye. Las piezas dañadas se apartan y se registran.",
+            "Una pieza que se repone se vuelve a probar con el resto: unos goggles nuevos pueden no ajustar igual con el casco que ya tiene la cuadrilla."
           ]
         }
       ],
@@ -389,37 +385,50 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "errores": [
         "Usar el kit forestal para ataque interior",
         "No probar goggles y nuquera con el casco",
-        "Elegir bota sin considerar el terreno",
-        "Tratar la talla como un dato genérico",
-        "Recibir equipo sin registrar componentes por persona",
-        "Guardar ceniza y polvo sin inspección"
+        "Elegir la bota sin considerar el terreno",
+        "Recibir el equipo sin registrar las piezas por persona",
+        "Guardar ropa con ceniza sin inspeccionarla"
       ],
       "faq": [
         {
-          "q": "¿Qué ropa puede llevar?",
-          "a": "Overol o saco y pantalón forestal, según la tarea y configuración cotizada."
+          "q": "¿Qué incluye el kit forestal para brigada?",
+          "a": "Ropa Fire Ranger Explorer o BOMW1002, casco Bullard FH911H, goggles ESS Striketeam XTO, bota forestal, guantes y nuquera. La configuración se confirma al cotizar."
         },
         {
-          "q": "¿Para qué sirven los goggles?",
-          "a": "Ayudan frente a polvo, ceniza y vegetación; se prueban con el casco para conservar visión y ajuste."
+          "q": "¿Qué conviene más en incendio forestal, overol o saco y pantalón?",
+          "a": "El overol protege en una sola pieza; el saco y pantalón permite ventilar en descansos. Depende del clima, de la operación y de la costumbre de la cuadrilla."
         },
         {
-          "q": "¿La nuquera se compra aparte?",
-          "a": "Se define como parte de la configuración del casco y debe verificarse con los goggles antes de ordenar."
+          "q": "¿Qué norma declaran los goggles ESS Striketeam XTO?",
+          "a": "El fabricante declara NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA. Se prueban con el casco para confirmar el ajuste."
         },
         {
-          "q": "¿Este kit sirve para un incendio en edificio?",
-          "a": "No. Un escenario estructural requiere revisar otro conjunto, procedimiento y necesidad de ERA."
+          "q": "¿El kit forestal sirve para un incendio en edificio?",
+          "a": "No. Un escenario estructural requiere otro conjunto, otro procedimiento y, en general, ERA."
         },
         {
-          "q": "¿Cómo reviso la bota?",
-          "a": "Con caminata y flexión en la talla del usuario, además de inspeccionar agujetas, suela y unión con la prenda."
-        },
-        {
-          "q": "¿Qué hago si una pieza se daña?",
-          "a": "Se aparta, se registra y se sustituye por un componente que vuelva a probarse con el resto del equipo."
+          "q": "¿Cómo se revisa la bota del kit forestal?",
+          "a": "Caminando en pendiente con la talla del usuario, y después revisando agujetas, suela y unión con el pantalón en cada jornada."
         }
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La tabla resume la partida: uso en incendio forestal, componentes del kit, ropa de referencia e interfaz entre casco, goggles y nuquera.",
+          "La referencia vigente del equipo forestal es NFPA 1950, antes NFPA 1977. Cada pieza conserva la declaración que publica su fabricante."
+        ],
+        "errores": [
+          "En el monte, un kit mal armado se nota en las primeras horas: goggles que se empañan, nuquera que estorba o botas que no agarran.",
+          "Estos cinco errores conviene revisarlos antes de equipar a toda la cuadrilla."
+        ],
+        "kit": [
+          "Estos son los modelos de referencia que integran el kit forestal. El saco y pantalón BOMW1002 es la alternativa al overol Fire Ranger Explorer.",
+          "Cada ficha muestra su estatus normativo. Si tu cuadrilla ya tiene parte del equipo, lo integramos al kit en lugar de duplicarlo."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre contenido, ropa, goggles, alcance y bota del kit forestal.",
+          "Si nos dices cuántos brigadistas son y en qué terreno trabajan, te mandamos la cotización del kit completo."
+        ]
+      }
     }
   ],
   "modelos": []

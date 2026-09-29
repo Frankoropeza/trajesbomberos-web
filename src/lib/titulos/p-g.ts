@@ -1,62 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_G: Record<string, Record<string, Duo>> = {
-  '/guantes/guante-brigadista/': {
-    errores: [
-      'El guante para brigadista se compra para respuesta inicial y no para ataque interior. Pedirlo por apariencia o sin definir el procedimiento puede dejar a la brigada con un nivel de protección ajeno al conato que atenderá.',
-      'Tampoco conviene omitir talla, puño y ajuste con la manga. Esos datos evitan que el guante se desplace al operar un extintor; envía por WhatsApp la actividad, cantidades y tallas para recibir una partida comparable por escrito.',
-    ],
-    faq: [
-      'Las dudas sobre guante para brigadista aclaran sus límites frente al combate estructural y la forma de integrarlo a una respuesta a conatos. También ayudan a distinguir el material, ajuste y cuidado que corresponden a la brigada de cada centro de trabajo.',
-      'Para orientar la cotización, comparte por WhatsApp el procedimiento de emergencia, número de usuarios, tallas y equipo con el que trabajarán. Así se puede documentar si requiere coordinación con manga, extintor y el resto del EPP.',
-    ],
-    ficha: [
-      'La requisición de guante para brigadista debe asentar uso principal para conatos, material exterior, ajuste y la referencia declarada por el modelo. Escribir esos campos evita comparar ofertas que usan el mismo nombre comercial para configuraciones distintas.',
-      'Solicita la ficha técnica por partida y conserva talla, puño y condiciones de limpieza en el expediente. Una orden precisa facilita la recepción y permite cotejar cada par con la actividad de respuesta inicial definida por la brigada.',
-    ],
-  },
-  '/guantes/guante-estructural/': {
-    errores: [
-      'Un guante estructural no se elige con una talla estándar para toda la corporación. Sin prueba de palma, dedos y puño con boquilla, radio o herramienta, la presión y las arrugas pueden restar agarre durante la maniobra.',
-      'Otro error es presentar una declaración como certificación. Pide modelo, talla, barreras y documento aplicable de NFPA 1970 por escrito; la partida queda trazable y no transfiere el estatus de un guante a otro.',
-    ],
-    faq: [
-      'Las preguntas de guante estructural resuelven qué capas intervienen, cómo solapa el puño con el chaquetón y qué modelos publicados corresponden a incendio en edificaciones. También delimitan por qué no sustituye al guante forestal en línea de fuego.',
-      'Al escribir por WhatsApp, indica si usarán boquilla, radio, herramienta y manga estructural, además de las tallas requeridas. Con esa información se revisan modelos como Sköld FPGS o Veridian Fire Pro II sin mezclar sus declaraciones.',
-    ],
-    ficha: [
-      'Para solicitar guante estructural anota combate de incendio estructural, interfaz con manga del chaquetón y referencia NFPA 1970, antes NFPA 1971. Agrega construcción de palma, dedos, costuras, barreras y longitud de puño en la requisición.',
-      'Exige que la ficha identifique modelo y talla, porque esas condiciones definen la partida recibida. El documento escrito permite revisar continuidad del puño y la declaración aplicable sin asumir que todos los guantes estructurales comparten configuración.',
-    ],
-  },
-  '/guantes/guante-forestal/': {
-    errores: [
-      'El guante forestal se especifica para caminata, vegetación, ceniza y herramienta manual; usar uno estructural por costumbre puede añadir volumen donde la cuadrilla necesita sujetar, soltar y moverse durante una jornada exterior.',
-      'Ignorar talla y puño también perjudica la línea de fuego: el guante puede desplazarse o acumular material. Define manga, herramienta y desglose por persona antes de cotizar, en vez de aceptar una talla única para todos.',
-    ],
-    faq: [
-      'Las dudas de guante forestal explican por qué NFPA 1950, antes NFPA 1977, sirve como referencia para operación exterior y por qué la movilidad con herramienta manual no equivale a protección para ataque interior.',
-      'Manda por WhatsApp la tarea, herramienta, tallas y cantidad de reemplazo prevista. Esa descripción permite confirmar ajuste con la manga forestal y pedir documentación del modelo, sin convertir una necesidad de línea de fuego en una compra estructural.',
-    ],
-    ficha: [
-      'La especificación de guante forestal debe mencionar línea de fuego y operación exterior, referencia NFPA 1950 antes NFPA 1977, además de movilidad, agarre y coordinación del puño con la manga. Son campos que cambian cómo funciona cada par.',
-      'Incorpora tallas, herramienta de prueba y método de cuidado a la orden. Pedirlos por escrito ayuda a revisar costuras, humedad y desgaste al recibir, y evita que un modelo se evalúe sólo por su aspecto exterior.',
-    ],
-  },
-  '/guantes/guante-rescate-extricacion/': {
-    errores: [
-      'En un guante de rescate y extricación, elegir sólo por grosor puede quitar control al manipular aristas, vidrio o herramienta. La destreza y el agarre deben probarse con la maniobra vehicular o técnica que realizará el usuario.',
-      'Usarlo como sustituto estructural es otro desajuste: el riesgo térmico y la operación son distintos. Describe por escrito rescate vehicular, cuerdas o extricación, talla y puño para que la cotización refleje protección mecánica pertinente.',
-    ],
-    faq: [
-      'Las preguntas sobre guante de rescate y extricación delimitan su utilidad ante bordes, suciedad, herramientas y movimientos finos. También explican la referencia NFPA 1950, antes NFPA 1951, y que EN 388 puede aparecer para riesgo mecánico.',
-      'Comparte por WhatsApp la maniobra prevista, talla, cantidad y si habrá cuerdas o herramienta hidráulica. Con esos datos se puede solicitar una configuración que priorice control de mano, en vez de confundir rescate técnico con ataque interior.',
-    ],
-    ficha: [
-      'En la requisición de guante de rescate y extricación registra uso principal, referencia NFPA 1950 antes NFPA 1951 y prioridad de destreza con protección mecánica. Material exterior, puño y talla completan una solicitud que sí se puede comparar.',
-      'Pide la declaración del modelo junto con la ficha técnica y prueba con la herramienta de la organización. Ese respaldo escrito aclara qué se entregará para rescate o extricación, sin atribuirle una capacidad estructural no declarada.',
-    ],
-  },
   '/guantes/romak-firemax-vi/': {
     caracteristicas: [
       'Romak Fire Firemax VI usa piel tratada color oro, corte gun, pulgar tipo ala y forro térmico de aramida. Sus refuerzos de palma y banda elástica se revisan con talla, puño y actividad de brigada, sin asumir equivalencia automática.',

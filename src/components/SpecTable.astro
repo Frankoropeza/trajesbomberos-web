@@ -2,7 +2,7 @@
 // SpecTable: ficha técnica agrupada. Tres columnas — campo, valor
 // y nota — para que el comprador pueda copiar el bloque completo
 // a su requisición o a su anexo técnico de licitación.
-// Responsive con scroll horizontal en móvil.
+// En móvil las filas se apilan (sin scroll horizontal).
 import type { FichaFila } from '@lib/piezas';
 
 interface Props {
@@ -66,4 +66,13 @@ const { grupos } = Astro.props;
   .spec__valor { width: 38%; color: var(--color-dark); }
   .spec__nota { color: var(--color-gray); font-size: 0.82rem; }
   tr:last-child th, tr:last-child td { border-bottom: 0; }
+  /* Móvil: cada fila se apila (campo → valor → nota) en vez de obligar a desplazar la tabla. */
+  @media (max-width: 640px) {
+    table { min-width: 0; }
+    tr { display: block; padding: 0.75rem 0; border-bottom: var(--border); }
+    tr:last-child { border-bottom: 0; }
+    th[scope='row'], .spec__valor, .spec__nota { display: block; width: auto; padding: 0; border-bottom: 0; }
+    .spec__valor { margin-top: 0.25rem; }
+    .spec__nota:not(:empty) { margin-top: 0.35rem; }
+  }
 </style>

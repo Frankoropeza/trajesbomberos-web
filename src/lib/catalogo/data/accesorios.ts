@@ -20,9 +20,9 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "seccion": "accesorios",
       "nombre": "Lámpara de casco",
       "nombreCard": "Lámpara de casco",
-      "title": "Lámpara de casco para bombero | México",
-      "description": "Lámpara de casco: la lámpara de casco Streamlight Vantage deja las manos libres con LED C4, giro de 360° y dos baterías CR123A de 3 V para el casco con ala que ",
-      "lead": "La lámpara de casco Streamlight Vantage deja las manos libres con LED C4, giro de 360° y dos baterías CR123A de 3 V para el casco con ala que validamos contigo.",
+      "title": "Lámpara de casco para bombero con manos libres",
+      "description": "Lámpara de casco para bombero: deja las manos libres y debe apuntar sin estorbar visor, máscara ni retención. Compatibilidad con tu casco al cotizar.",
+      "lead": "La lámpara de casco ilumina hacia donde mira el bombero y deja las dos manos libres para la herramienta, la radio o el pasamanos. Surtimos la Streamlight Vantage, para casco con ala.",
       "imagen": {
         "src": "/images/catalogo/accesorios/tipo-lampara-de-casco.avif",
         "alt": "Lámpara de casco para bombero",
@@ -32,46 +32,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Lámpara de casco para guardia",
+          "eyebrow": "Qué es",
+          "h2": "Luz de manos libres que sigue la mirada",
           "parrafos": [
-            "Cotizamos lámpara de casco para búsqueda, escalera y reconocimiento cuando tu brigada necesita conservar ambas manos en radio, herramienta o pasamanos. La Streamlight Vantage declara LED C4, 115 lúmenes y giro de 360°; elige este montaje si tu casco tiene ala y el haz debe seguir la mirada, no si requieres iluminar un punto fuera de ella.",
-            "Te entregamos la Vantage con clip para casco con ala, dos CR123A de 3 V y luz trasera azul según su ficha. Antes de comprarla, monta casco, visor y máscara con guantes: si el lente de vidrio borofloat rebota en el visor o el soporte pierde retención, pide otra interfaz en vez de forzar el casco con cinta o perforaciones."
+            "En búsqueda, escaleras y reconocimiento el bombero necesita las dos manos. Una lámpara montada en el casco ilumina hacia donde gira la cabeza, sin ocupar una mano.",
+            "Su límite es ese mismo: solo alumbra hacia donde se mira. Para dirigir el haz a otro punto, se complementa con una linterna portátil."
           ]
         },
         {
-          "h2": "Cotización de lámpara de casco",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Montaje, energía y prueba sobre el casco",
           "parrafos": [
-            "En nuestra cotización escribimos cada partida de Streamlight Vantage por separado: lámpara, clip, baterías CR123A y casco muestra. Pide dos CR123A de 3 V iniciales y reserva del mismo formato si eliges este modelo; así el giro de 360° y los 167 m declarados se reciben con la energía y montaje que realmente usarán.",
-            "Para una compra comparable anotamos marca, modelo, soporte y la declaración de clasificación NFPA 1971 sin presentarla como certificación. Elige lámpara de casco si el comprador valida 7,000 candelas, seis horas declaradas e IPX7 de 1 m durante 30 min contra la maniobra; si falta el clip compatible, dejamos la partida pendiente."
+            "La Vantage se sujeta con clip a cascos con ala. Antes de ordenar, móntala sobre tu casco con visor y máscara, y revisa que el clip no se mueva y que el ala no tape el haz.",
+            "Define también las baterías de reserva. Usa dos CR123A de 3 V, que conviene tener en la unidad para no depender de una sola carga durante un servicio largo."
           ],
           "lista": [
-            "Marca y modelo: Streamlight Vantage",
-            "Emisor: LED C4",
-            "Soporte: clip para casco con ala",
+            "Modelo: Streamlight Vantage",
+            "Emisor: LED C4, 115 lúmenes",
+            "Haz: 7,000 candelas y 167 m",
             "Energía: dos CR123A de 3 V",
-            "Haz: 7,000 candelas y 115 lúmenes",
-            "Referencia: clasificación NFPA 1971 declarada"
+            "Montaje: clip para casco con ala",
+            "Norma: clasificación NFPA 1971 declarada"
           ]
         },
         {
-          "h2": "Modelo Vantage y compatibilidad",
+          "eyebrow": "En servicio",
+          "h2": "Revisión de la lámpara y del clip",
           "parrafos": [
-            "Surtimos la Streamlight Vantage para casco con ala; su cuerpo es de aluminio anodizado de grado aeronáutico y usa lente de vidrio borofloat de alta temperatura. Pídela con tu casco, visor y máscara si buscas una luz de manos libres; si la operación exige orientar el haz lejos de la mirada, combínala con una linterna portátil, no con otro soporte improvisado.",
-            "La Vantage declara 167 m de alcance, seis horas de duración e IPX7 a 1 m durante 30 min. En la prueba de talla y uso, gira el cabezal 360°, activa el interruptor con guante y sube una escalera con máscara; aceptamos el lote solo si el clip conserva posición y el haz no queda tapado por el ala."
-          ]
-        },
-        {
-          "h2": "Errores en pliego de lámparas",
-          "parrafos": [
-            "Vemos pliegos que piden 115 lúmenes pero omiten el clip para casco con ala. Para evitarlo, escribe Streamlight Vantage, LED C4, clip y dos CR123A de 3 V en el mismo renglón; elige otra propuesta si no identifica la batería, porque una lámpara sin energía definida no queda lista para guardia.",
-            "También recibimos órdenes que copian IPX7 de 1 m durante 30 min como si definiera montaje o uso. Escribe lente de vidrio borofloat, giro de 360° y prueba con visor y máscara; si el soporte golpea el visor, pide compatibilidad comprobada y no presentes la clasificación NFPA 1971 declarada como certificación."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro Vantage",
-          "parrafos": [
-            "Antes de guardia revisamos LED C4, lente de vidrio borofloat, aro, interruptor, clip y tapa de las dos CR123A de 3 V. Enciende la Vantage, mueve el cabezal 360° y comprueba el haz con visor y máscara; si hay parpadeo, corrosión o giro sin retención, retírala y registra marca, modelo y condición.",
-            "Después de una intervención, revisa aluminio anodizado, lente, contactos y clip antes de devolver la Vantage al casco con ala. Aparta la unidad con IPX7 comprometido, lente quebrado o soporte flojo; registra el cambio de CR123A y pide evaluación del fabricante tras golpe o humedad, sin usar cinta como reparación."
+            "Antes de cada guardia, enciende la lámpara con guantes puestos, gira el cabezal y revisa que el clip sujete firme. Cambia las baterías según el registro de uso, no cuando la luz ya está baja.",
+            "La Vantage declara protección IPX7, de 1 m durante 30 minutos. Aun así, después de un servicio con agua o humo conviene limpiarla y revisar el lente de vidrio."
           ]
         }
       ],
@@ -90,14 +80,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar soporte sin probar casco",
-        "No definir baterías",
-        "Perforar el casco para forzar montaje"
+        "Comprar el soporte sin probarlo en el casco real",
+        "No definir baterías de reserva",
+        "Perforar el casco para forzar el montaje",
+        "Usar la lámpara de casco como única fuente de luz"
       ],
       "faq": [
         {
-          "q": "¿Cómo se acepta?",
-          "a": "Montando soporte, visor y máscara sobre el casco real, con guantes, y comprobando que el haz mantenga su orientación durante movimientos de trabajo."
+          "q": "¿Qué lámpara de casco para bombero surtimos?",
+          "a": "La Streamlight Vantage: LED C4, 115 lúmenes, 7,000 candelas, 167 m de alcance y seis horas de duración, con dos baterías CR123A de 3 V."
+        },
+        {
+          "q": "¿La lámpara Streamlight Vantage se adapta a cualquier casco?",
+          "a": "Su fabricante indica que se adapta a casi cualquier casco con ala. Por eso la probamos sobre tu casco, con visor y máscara, antes de cerrar la compra."
+        },
+        {
+          "q": "¿La lámpara de casco sustituye a la linterna?",
+          "a": "No. La lámpara ilumina hacia donde se mira; la linterna permite dirigir la luz a otro punto. Se complementan."
+        },
+        {
+          "q": "¿Qué norma declara la Streamlight Vantage?",
+          "a": "Su fabricante declara clasificación NFPA 1971. Así lo indicamos en su ficha, como declaración del fabricante."
         }
       ],
       "chips": [
@@ -106,18 +109,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Prueba de uso"
       ],
       "resumen": [
-        "La lámpara de casco Streamlight Vantage combina LED C4, 115 lúmenes, giro de 360° y dos CR123A de 3 V para casco con ala. La surtimos cuando visor, máscara y clip conservan orientación y retención durante la maniobra.",
-        "Cotizamos Vantage por pieza con clip, baterías, reserva y prueba sobre tu casco. Mándanos WhatsApp con foto o modelo del casco, visor y máscara para revisar la interfaz antes de integrar los 167 m y seis horas declaradas a tu partida."
-      ]
+        "La Vantage declara LED C4 con 115 lúmenes y 7,000 candelas, alcance de 167 m, seis horas de duración y cabezal que gira 360°. Funciona con dos baterías CR123A de 3 V.",
+        "Su fabricante declara clasificación NFPA 1971. La cotizamos probada sobre tu casco, con visor y máscara, para confirmar que el clip retiene y el haz no queda tapado."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de lámpara de casco indica el uso, la referencia que declare el modelo y la validación con el equipo y la maniobra reales.",
+          "Si ya elegiste la Vantage, su ficha incluye emisor, energía, alcance y montaje. Pide que las baterías de reserva queden en la misma partida."
+        ],
+        "errores": [
+          "Una lámpara de casco mal montada se mueve, se cae o alumbra el ala en lugar del camino.",
+          "Estos cuatro errores conviene evitarlos con una prueba sobre el casco real."
+        ],
+        "modelos": [
+          "Surtimos la Streamlight Vantage, de aluminio anodizado de grado aeronáutico, lente de vidrio borofloat de alta temperatura, luz trasera azul y cabezal con giro de 360°.",
+          "Su ficha muestra la clasificación NFPA 1971 tal como la declara Streamlight, con alcance, duración y protección IPX7."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre el modelo, compatibilidad con cascos, uso con linterna y norma.",
+          "Si nos mandas el modelo de tu casco, te confirmamos si la Vantage monta bien antes de cotizar."
+        ]
+      }
     },
     {
       "slug": "linterna-de-bombero",
       "seccion": "accesorios",
       "nombre": "Linterna de bombero",
       "nombreCard": "Linterna de bombero",
-      "title": "Linterna de bombero | México",
-      "description": "Linterna de bombero: la linterna de bombero dirige luz manual con lente, interruptor y carcasa; la cotizamos con funda o clip para que tu brigada la recupere co",
-      "lead": "La linterna de bombero dirige luz manual con lente, interruptor y carcasa; la cotizamos con funda o clip para que tu brigada la recupere con guante durante la maniobra.",
+      "title": "Linterna de bombero para uso con guante estructural",
+      "description": "Linterna de bombero: se elige por agarre, interruptor, energía y forma de llevarla con guante en la escena. Revisa la ficha técnica y cotiza la partida.",
+      "lead": "La linterna de bombero dirige la luz a donde hace falta: una puerta, un escalón o el fondo de un cuarto. Se lleva en funda o clip y se opera con guantes.",
       "imagen": {
         "src": "/images/catalogo/accesorios/tipo-linterna-de-bombero.avif",
         "alt": "Linterna de bombero",
@@ -127,46 +148,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Linterna de bombero y agarre",
+          "eyebrow": "Qué es",
+          "h2": "Luz que se apunta con la mano",
           "parrafos": [
-            "Cotizamos linterna de bombero para reconocimiento, gabinete o escalera cuando necesitas dirigir el haz fuera de la mirada. Elige carcasa de aluminio, lente, interruptor y funda si tu cuadrilla debe recuperar la pieza con guante; si requiere manos libres, pide lámpara de casco con LED C4 y giro de 360° como configuración distinta.",
-            "Te proponemos probar la linterna con guante, funda y radio antes de ordenar. Sácala, ilumina un escalón y devuélvela sin activarla dentro del bolsillo; si el clip de aluminio obliga a soltar pasamanos o herramienta, elegimos otro sistema de porte para tu prenda."
+            "La linterna permite revisar un rincón, iluminar el piso antes de pisarlo o marcar la posición del equipo ante otro compañero. Tiene que resistir golpes, humedad y calor.",
+            "Lo importante no es solo cuánta luz da, sino si se puede sacar, encender, apuntar y volver a guardar con guantes gruesos, sin soltar la herramienta."
           ]
         },
         {
-          "h2": "Cotización de linterna de bombero",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Porte, interruptor y energía",
           "parrafos": [
-            "En nuestra cotización escribimos unidad, modelo, carcasa de aluminio, lente, interruptor, alimentación y funda o clip. Elige batería reemplazable si tu almacén controla formato y reserva; elige recargable si puedes asignar cargador y punto de carga. Sin modelo publicado para esta categoría, pedimos al proveedor la tecnología y material exactos antes de cerrar la partida.",
-            "Separamos lámparas, cargadores, bases, tapas y fundas para evitar una entrega incompleta. Pide cantidad por persona, vehículo o puesto y anota la declaración del fabricante; si ofrece aluminio y lúmenes sin describir lente, energía y retención, te pedimos esos datos antes de elegir el modelo."
+            "Decide dónde se va a llevar: funda en cinturón, clip en el chaquetón o anillo. El lugar no debe chocar con el ERA, la máscara ni la herramienta al agacharse.",
+            "El interruptor tiene que accionarse con guante y no encenderse solo dentro de la bolsa. En cuanto a energía, elige entre batería recargable, con cargador y base, o reemplazable, con reserva del formato exacto."
           ],
           "lista": [
             "Unidad: linterna por pieza",
-            "Cuerpo: carcasa de aluminio, lente e interruptor",
+            "Cuerpo: carcasa, lente e interruptor",
             "Porte: funda, clip o anillo",
-            "Energía: batería o sistema recargable",
-            "Refacciones: tapa, cargador o base según modelo",
+            "Energía: recargable o reemplazable",
+            "Refacciones: cargador o base según modelo",
             "Documento: declaración del fabricante"
           ]
         },
         {
-          "h2": "Modelo propuesto y compatibilidad",
+          "eyebrow": "En servicio",
+          "h2": "Carga, limpieza y registro",
           "parrafos": [
-            "No hay un modelo de linterna de bombero publicado en este catálogo, así que proponemos la pieza según tu operación y combinamos carcasa de aluminio, casco, guante, prenda y radio reales. Elige funda si debe viajar en cinturón; pide clip si la ubicación no choca con ERA, máscara o herramienta al agacharte.",
-            "Antes de aceptar la propuesta, probamos lente, interruptor, carcasa de aluminio y retención durante escalera, arrastre y revisión de gabinete. Si usa batería recargable, verifica cargador, base y puerto; si usa reemplazable, pide el formato exacto y no mezcles unidades de condición distinta en guardia."
-          ]
-        },
-        {
-          "h2": "Errores en órdenes de compra",
-          "parrafos": [
-            "Vemos órdenes que piden una linterna de aluminio y omiten funda, clip o anillo. Para evitarlo, escribe lente, interruptor, porte y energía en cada renglón; si llevará batería recargable, agrega cargador y base, no los supongas incluidos por el nombre comercial.",
-            "Te pedimos no elegir por alcance sin probar el agarre con guante y prenda. Escribe prueba de sacar, encender, dirigir y devolver a funda; si el interruptor se activa al flexionar o el clip de aluminio choca con radio, pide otra configuración antes de autorizar la compra."
-          ]
-        },
-        {
-          "h2": "Inspección, limpieza y retiro",
-          "parrafos": [
-            "Antes de guardia revisamos carcasa de aluminio, lente, aro, interruptor, contactos, tapa, puerto de carga y funda. Enciende la linterna con guante y verifica retención; si aparece parpadeo, lente opaco, corrosión o tapa floja, retírala y registra modelo, energía y componente afectado.",
-            "Después de intervención, limpiamos lente y carcasa de aluminio con el método del fabricante, revisamos clip, anillo o costuras de funda y probamos el interruptor. Aparta la pieza con cuerpo fisurado, puerto flojo, cargador incompatible o funda rota; no tapes una junta con cinta ni guardes batería con metal."
+            "Antes de cada guardia revisa carga, lente e interruptor. Una linterna que se apaga a media búsqueda es peor que no llevarla, porque el bombero cuenta con ella.",
+            "No mezcles baterías nuevas y usadas en la misma unidad. Registra cada linterna para saber cuándo cambiar baterías o reponer el equipo."
           ]
         }
       ],
@@ -185,14 +196,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Omitir funda",
-        "Elegir interruptor inaccesible",
-        "Mezclar baterías"
+        "Omitir la funda o el sistema de porte",
+        "Elegir un interruptor que no se opera con guantes",
+        "Mezclar baterías nuevas y usadas",
+        "Comprar sin definir cargador o reserva"
       ],
       "faq": [
         {
-          "q": "¿Qué se prueba?",
-          "a": "Sacar, encender, dirigir y devolver la linterna a su funda con el guante y la prenda que utilizará la persona asignada."
+          "q": "¿Qué debe tener una linterna de bombero?",
+          "a": "Carcasa resistente a golpes y humedad, interruptor que se opere con guantes, sistema de porte seguro y una energía que la estación pueda mantener."
+        },
+        {
+          "q": "¿Linterna recargable o de baterías?",
+          "a": "La recargable ahorra baterías, pero necesita cargador y base en la estación o en el vehículo. La de baterías reemplazables exige tener reserva del formato exacto."
+        },
+        {
+          "q": "¿Cómo se prueba una linterna antes de comprarla?",
+          "a": "Sacándola, encendiéndola, apuntándola y volviéndola a guardar con el guante y el chaquetón que usará cada persona."
+        },
+        {
+          "q": "¿Tienen modelos de linterna publicados?",
+          "a": "Todavía no. La cotizamos según tu operación y te presentamos la ficha del fabricante antes de que decidas."
         }
       ],
       "chips": [
@@ -201,18 +225,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Prueba de uso"
       ],
       "resumen": [
-        "La linterna de bombero aporta dirección manual de luz con lente, interruptor, carcasa de aluminio y funda o clip. Como no hay modelo publicado, la proponemos según el uso y la probamos con guante, prenda, radio y casco de tu brigada.",
-        "Cotizamos la pieza con alimentación, porte, cargador o reserva y prueba de recuperación. Escríbenos por WhatsApp qué maniobra cubres, dónde la llevarás y si requieres cuerpo de aluminio para definir la configuración antes de pedirla al proveedor."
-      ]
+        "Complementa a la lámpara de casco: una alumbra hacia donde se mira y la otra hacia donde se apunta. En búsqueda, esa diferencia importa.",
+        "Todavía no publicamos un modelo. La cotizamos por energía, porte y tipo de interruptor, y la probamos con guantes, radio y equipo puesto."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de linterna indica el uso, la referencia que declare el modelo y la validación con el equipo y la maniobra reales.",
+          "Como aún no publicamos modelo, la tabla no muestra código. Energía, alcance y porte llegan con la ficha del fabricante."
+        ],
+        "errores": [
+          "Casi todos los problemas con linternas tienen que ver con cómo se lleva y cómo se mantiene, no con cuánta luz dan.",
+          "Estos cuatro errores conviene evitarlos desde la compra."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre características, energía, prueba y modelos de linterna.",
+          "Si nos compartes dónde llevará la linterna tu equipo, te decimos qué sistema de porte conviene."
+        ]
+      }
     },
     {
       "slug": "goggles",
       "seccion": "accesorios",
       "nombre": "Goggles para bombero",
       "nombreCard": "Goggles para bombero",
-      "title": "Goggles para bombero | México",
-      "description": "Goggles para bombero: los goggles ESS Striketeam XTO combinan lente de policarbonato de 2.4–2.6 mm, Speed-Clip y ventilación perimetral para conservar la visión",
-      "lead": "Los goggles ESS Striketeam XTO combinan lente de policarbonato de 2.4–2.6 mm, Speed-Clip y ventilación perimetral para conservar la visión con casco forestal o de rescate.",
+      "title": "Goggles para bombero forestal y de rescate",
+      "description": "Goggles para bombero: lente, marco y correa que conservan la visión en una exposición definida, forestal o de rescate. Compatibilidad con el casco al cotizar.",
+      "lead": "Los goggles protegen los ojos de ceniza, polvo y partículas en incendio forestal y rescate. Surtimos los ESS Striketeam XTO, que se sujetan al casco con Speed-Clip.",
       "imagen": {
         "src": "/images/catalogo/accesorios/tipo-goggles.avif",
         "alt": "Goggles para bombero",
@@ -222,47 +260,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Goggles para bombero forestal",
+          "eyebrow": "Qué es",
+          "h2": "Protección ocular para trabajo en exterior",
           "parrafos": [
-            "Cotizamos goggles ESS Striketeam XTO para combate forestal y rescate cuando tu brigada necesita leer terreno y herramienta frente a partículas. Elige este modelo si requiere lente intercambiable de policarbonato de 2.4–2.6 mm y Speed-Clip; si la atmósfera requiere ERA, pide la máscara respiratoria correspondiente porque el goggle no la sustituye.",
-            "La Striketeam XTO usa acolchado facial de celda cerrada y correa envolvente de una pieza con velcro. En la prueba, coloca casco forestal o de rescate, ajusta correa y mira arriba, abajo y a los lados; si el marco se desplaza o el clip no retiene, cotizamos otra interfaz y no declaramos compatibilidad universal."
+            "En línea de fuego o en un rescate, la ceniza y las partículas llegan con el viento. Los goggles sellan alrededor de los ojos para que el brigadista siga viendo el terreno y la herramienta.",
+            "Un buen goggle tiene que ventilar para no empañarse, sellar sin lastimar y quedarse en su lugar al caminar o agacharse. Si hay que acomodarlo cada minuto, deja de proteger."
           ]
         },
         {
-          "h2": "Cotización de goggles ESS",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Ajuste con el casco y repuestos",
           "parrafos": [
-            "En la cotización anotamos ESS Striketeam XTO, código BLL1006, kit #740-0283, lente transparente y dos cubiertas desprendibles. Pide por separado lentes, correa, Speed-Clip y funda si necesitas reserva; así eliges el repuesto compatible con el policarbonato de 2.4–2.6 mm y no una mica de apariencia parecida.",
-            "Escribimos NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA como referencias declaradas por el fabricante. Si el comprador elige anteojos graduados, prueba esa interfaz con ClearZone FlowCoat; si reduce campo visual o presiona el lente, deja fuera esa configuración antes de liberar la orden."
+            "El Striketeam XTO se sujeta con Speed-Clip a cascos forestales y de rescate, y usa correa envolvente de una pieza con velcro. Admite anteojos graduados debajo.",
+            "Pruébalo con el casco puesto, mirando arriba, abajo y a los lados. Define también lentes y cubiertas de repuesto: el lente se raya con el uso y conviene cambiarlo a tiempo."
           ],
           "lista": [
-            "Marca y modelo: ESS Striketeam XTO",
-            "Código: BLL1006 y kit #740-0283",
-            "Lente: policarbonato de 2.4–2.6 mm",
+            "Modelo: ESS Striketeam XTO",
+            "Código: BLL1006, kit #740-0283",
+            "Lente: policarbonato de 2.4 a 2.6 mm",
             "Tratamiento: ClearZone FlowCoat",
-            "Montaje: Speed-Clip para casco forestal o rescate",
-            "Contenido: lente transparente y dos cubiertas",
-            "Estatus: referencias NFPA, ANSI, CE y OSHA declaradas"
+            "Montaje: Speed-Clip para casco forestal o de rescate",
+            "Contenido: lente transparente y dos cubiertas"
           ]
         },
         {
-          "h2": "Striketeam XTO y casco",
+          "eyebrow": "En servicio",
+          "h2": "Limpieza y cambio de lente",
           "parrafos": [
-            "Surtimos ESS Striketeam XTO con Speed-Clip para casco forestal o de rescate, ventilación y filtración perimetral contra humo y partículas declaradas. Elige el kit BLL1006 si necesitas lente transparente y dos cubiertas desprendibles; si tu casco desplaza el marco, pide prueba física antes de combinarlo con visor o herramienta.",
-            "El lente intercambiable de policarbonato de 2.4–2.6 mm declara ClearZone FlowCoat antiempaño y antirrayas, además de protección UVA/UVB. Durante la prueba de uso, camina, agáchate y gira la cabeza con casco y anteojos graduados si aplican; aceptamos el lote cuando correa, clip y campo visual conservan posición sin levantar el goggle."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de goggles",
-          "parrafos": [
-            "Vemos pliegos que solicitan goggles sin lente, clip ni casco de referencia. Para evitarlo, escribe ESS Striketeam XTO, BLL1006, Speed-Clip y policarbonato de 2.4–2.6 mm; si la brigada usa casco de rescate, pide instalar el clip sobre muestra y no compres solo por la frase de adaptación.",
-            "También aparecen órdenes que presentan ANSI Z87.1-2010 o CE EN 166 B como certificación de ERA. Escribe estatus declarado, lente transparente y dos cubiertas del kit #740-0283; si hay empañamiento repetido o campo visual reducido con graduación, pide ajuste, ventilación o combinación distinta antes de liberar el lote."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro de goggles",
-          "parrafos": [
-            "Antes de guardia revisamos lente de policarbonato de 2.4–2.6 mm, marco, espuma de celda cerrada, ventilación perimetral, velcro y Speed-Clip. Prueba la correa con casco forestal o de rescate; si hay fisura, opacidad, clip flojo o lente rayado, aparta el conjunto y registra BLL1006 para pedir la pieza compatible.",
-            "Después de una intervención, guarda Striketeam XTO con lente transparente y cubiertas fuera de arena y herrajes, y limpia ClearZone FlowCoat con el método del fabricante. Retira el goggle BLL1006 cuando la correa pierda tensión, el marco deforme o el lente distorsione; no uses abrasivos, solventes, cinta o una mica no identificada para recuperar el equipo."
+            "Limpia el lente con agua y un paño suave, nunca con la manga llena de ceniza, que lo raya. Revisa el acolchado facial y la correa después de cada jornada.",
+            "Cambia el lente cuando las rayas dificulten la visión, y la cubierta desprendible cuando se ensucie. Tener repuestos en la unidad evita que alguien trabaje sin ver bien."
           ]
         }
       ],
@@ -281,14 +308,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "No definir repuestos de lente",
-        "Ignorar ventilación",
-        "Usarlos como máscara de ERA"
+        "No definir lentes y cubiertas de repuesto",
+        "Ignorar la ventilación al elegir",
+        "Usarlos como si fueran máscara de ERA",
+        "Comprar sin probarlos con el casco"
       ],
       "faq": [
         {
-          "q": "¿Sustituyen una máscara de ERA?",
-          "a": "No. Los goggles son protección ocular; la máscara de un equipo de respiración autónoma tiene otra interfaz y función dentro de una atmósfera que exige respiración protegida."
+          "q": "¿Los goggles sustituyen a la máscara de ERA?",
+          "a": "No. Los goggles son protección ocular. La máscara de un equipo de respiración autónoma protege las vías respiratorias y tiene otra función."
+        },
+        {
+          "q": "¿Qué goggles para bombero forestal surtimos?",
+          "a": "Los ESS Striketeam XTO, con lente de policarbonato intercambiable, tratamiento antiempaño y Speed-Clip para cascos forestales y de rescate."
+        },
+        {
+          "q": "¿Se pueden usar goggles con lentes graduados?",
+          "a": "El Striketeam XTO admite anteojos graduados debajo, según su fabricante. Conviene probarlo con los lentes de cada usuario."
+        },
+        {
+          "q": "¿Qué normas declaran los goggles ESS Striketeam XTO?",
+          "a": "NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA, según su fabricante."
         }
       ],
       "chips": [
@@ -297,18 +337,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Prueba de uso"
       ],
       "resumen": [
-        "Los goggles ESS Striketeam XTO aportan lente intercambiable de policarbonato de 2.4–2.6 mm, Speed-Clip y ventilación perimetral para casco forestal o de rescate. Surtimos BLL1006 con lente transparente y dos cubiertas desprendibles.",
-        "Cotizamos el kit #740-0283 con lente, clip, correa y prueba sobre tu casco. Escríbenos por WhatsApp el modelo de casco y si usas graduación para validar campo visual, ClearZone FlowCoat y retención antes de ordenar."
-      ]
+        "Tienen lente intercambiable de policarbonato de 2.4 a 2.6 mm con tratamiento ClearZone FlowCoat antiempaño y antirrayas, protección UVA/UVB y ventilación perimetral.",
+        "Su fabricante declara NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA. No sustituyen a la máscara de un ERA: son protección ocular."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de goggles indica el uso, la referencia que declare el modelo y la validación con el casco y la maniobra reales.",
+          "Si ya elegiste el Striketeam XTO, su ficha incluye código, lente, tratamiento y montaje. Pide los repuestos en la misma partida."
+        ],
+        "errores": [
+          "Un goggle que se empaña o que no ajusta con el casco termina colgado del cuello, sin proteger.",
+          "Estos cuatro errores conviene evitarlos con una prueba antes de comprar."
+        ],
+        "modelos": [
+          "Surtimos los ESS Striketeam XTO: acolchado facial de celda cerrada, ventilación y filtración perimetral contra humo y partículas, y lente intercambiable con ClearZone FlowCoat.",
+          "También forman parte de nuestro kit forestal. Su ficha muestra las normas tal como las declara ESS."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre uso con ERA, modelo, lentes graduados y normas.",
+          "Si nos compartes el modelo de casco de tu cuadrilla, te confirmamos el ajuste antes de cotizar."
+        ]
+      }
     },
     {
       "slug": "camara-termica",
       "seccion": "accesorios",
       "nombre": "Cámara térmica",
       "nombreCard": "Cámara térmica",
-      "title": "Cámara térmica para bombero | México",
-      "description": "Cámara térmica: la cámara térmica convierte contrastes de radiación infrarroja en imagen de pantalla para búsqueda y reconocimiento; la cotizamos con energía, p",
-      "lead": "La cámara térmica convierte contrastes de radiación infrarroja en imagen de pantalla para búsqueda y reconocimiento; la cotizamos con energía, porte y entrenamiento para que tu brigada la interprete dentro de la escena.",
+      "title": "Cámara térmica para bomberos: búsqueda y ataque",
+      "description": "Cámara térmica para bomberos: muestra contrastes de radiación infrarroja y exige entrenamiento para leerlos en la escena. Cotiza con ficha técnica.",
+      "lead": "La cámara térmica muestra en pantalla las diferencias de temperatura de lo que se observa. Ayuda a buscar personas en humo, a orientarse y a encontrar fuego oculto después de la extinción.",
       "imagen": {
         "src": "/images/catalogo/accesorios/tipo-camara-termica.avif",
         "alt": "Cámara térmica para bombero",
@@ -318,46 +376,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Cámara térmica para búsqueda y reconocimiento",
+          "eyebrow": "Qué es",
+          "h2": "Ver temperatura donde el humo no deja ver",
           "parrafos": [
-            "Cotizamos cámara térmica para búsqueda, reconocimiento interior y revisión posterior a extinción cuando tu brigada necesita observar contrastes de radiación infrarroja en una pantalla. No hay un modelo Romak Fire publicado para esta categoría; elige una cámara con sensor infrarrojo, lente, controles, batería, carcasa y correa si el personal puede entrenar su lectura.",
-            "Te pedimos probar la cámara frente a objetos de contraste conocido y comunicar el hallazgo por radio antes de elegir configuración. Sin un modelo Romak Fire publicado, vapor, agua, metales reflectivos, geometría y materiales cambian la lectura de superficies; pídela con entrenamiento y método de escena."
+            "En un cuarto lleno de humo, la cámara distingue una persona del mobiliario por su temperatura. Después de la extinción, muestra si hay calor dentro de un muro o un techo.",
+            "Tiene límites que el equipo debe conocer: el vapor, el agua, los metales y los vidrios pueden engañar la lectura. Por eso la cámara se compra con entrenamiento, no sola."
           ]
         },
         {
-          "h2": "Cotización de cámara térmica",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Uso, energía y porte",
           "parrafos": [
-            "En nuestra cotización anotamos cámara, sensor infrarrojo, lente, pantalla, batería, cargador, base, funda y correa como partidas identificadas. Sin modelo Romak Fire publicado, elige batería intercambiable si necesitas relevo durante guardia y pide base para estación y otra para vehículo.",
-            "También dejamos escrito el modelo, sus controles y cualquier captura de imagen, video, modos de ganancia o temperatura aparente que el fabricante publique. Romak Fire no publica aquí una cámara térmica, así que proponemos la configuración según tu operación y pedimos documentación técnica. Romak Fire no aporta valores de resolución."
+            "Define para qué se va a usar: búsqueda y rescate, ataque, o revisión posterior a la extinción. Cada uso pide cosas distintas de pantalla, controles y resistencia.",
+            "Resuelve también la energía y el porte: baterías intercambiables, cargador en estación o en vehículo, y una correa o funda que no estorbe al ERA ni a la herramienta."
           ],
           "lista": [
             "Unidad: cámara con sensor y lente infrarroja",
-            "Pantalla y controles: según modelo ofertado",
-            "Energía: batería, cargador y base identificados",
-            "Porte: funda y correa según operación",
-            "Ubicación: estación o vehículo por separado",
+            "Pantalla y controles según modelo",
+            "Energía: batería, cargador y base",
+            "Porte: funda y correa",
+            "Ubicación: estación o vehículo",
             "Documento: especificación del fabricante"
           ]
         },
         {
-          "h2": "Configuración y compatibilidad térmica",
+          "eyebrow": "En servicio",
+          "h2": "Entrenamiento, carga y cuidado del lente",
           "parrafos": [
-            "No hay un modelo de cámara térmica publicado en este catálogo ni una configuración Romak Fire, por eso proponemos el modelo conforme a búsqueda, reconocimiento o revisión posterior a extinción. Pídelo con radio, ERA, guantes y traje; si el porte interfiere con máscara, arnés o herramienta, cambiamos funda o correa. Romak Fire no declara compatibilidad.",
-            "La cámara se combina con el conjunto real, no con una promesa de compatibilidad universal ni con una ficha Romak Fire ajena a esta categoría. En la prueba de uso, el operador enciende pantalla y controles con guantes y protege la lente infrarroja durante traslado."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de cámara térmica",
-          "parrafos": [
-            "Vemos pliegos que piden solo pantalla y omiten batería, cargador, base, funda y correa. Romak Fire no publica un modelo térmico aquí; escribe cámara con sensor infrarrojo, energía y porte, y pide bases diferenciadas para estación y vehículo. Romak Fire identifica el dato verificable del catálogo.",
-            "También recibimos órdenes que nombran resolución, rango, frecuencia o autonomía sin identificar modelo ni documento. Como Romak Fire no publica la cámara en este catálogo, escribe el modelo ofertado, prueba con objetos de contraste conocido y capacitación de lectura. Romak Fire queda identificado en la cotización."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro de cámara térmica",
-          "parrafos": [
-            "Antes de guardia revisamos lente infrarroja, tapa, pantalla, carcasa, botones, puerta de batería, contactos, correa y condición de carga. Sin ficha Romak Fire de cámara térmica, enciende la cámara y confirma imagen y ciclo de calibración; si fallan, retírala y registra condición. Romak Fire queda identificado.",
-            "Después de una intervención, protegemos la lente y limpiamos sus recubrimientos solo con el método del fabricante. No aplicamos una instrucción Romak Fire sin modelo publicado; aparta la cámara con lente rayada, pantalla ilegible, correa dañada o comportamiento irregular. Romak Fire no declara limpieza."
+            "Antes de asignarla, el equipo practica con objetos de temperatura conocida: escaneo, lectura, cambio de batería y cómo comunicar lo que ve por radio.",
+            "El lente infrarrojo no es de vidrio común. Límpialo solo con el método del fabricante; un paño equivocado lo raya y afecta la imagen."
           ]
         }
       ],
@@ -376,33 +424,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar sin entrenamiento",
-        "Omitir carga",
-        "Tomar la imagen como diagnóstico total",
-        "Confundir contraste térmico con diagnóstico concluyente",
-        "Pedir una pantalla sin baterías intercambiables o base",
-        "Dejar la capacitación fuera de la recepción"
+        "Comprar la cámara sin entrenamiento de lectura",
+        "Omitir baterías de reserva y cargador",
+        "Tomar la imagen como diagnóstico concluyente",
+        "Limpiar el lente como si fuera de cámara fotográfica"
       ],
       "faq": [
         {
-          "q": "¿Ve a través de paredes?",
-          "a": "No debe describirse así. Muestra diferencias térmicas de superficies observadas; materiales, vapor, reflejos y otros factores exigen confirmar la lectura con la evaluación de escena."
+          "q": "¿La cámara térmica ve a través de las paredes?",
+          "a": "No. Muestra la temperatura de las superficies que observa. Si un muro está caliente por dentro, la cámara ve el calor en su superficie, no lo que hay detrás."
         },
         {
-          "q": "¿La cámara confirma que no hay fuego oculto?",
-          "a": "No por sí sola. Muestra información térmica de las superficies que observa y se interpreta con la inspección, el procedimiento y el contexto del inmueble. Materiales, agua o reflejos pueden cambiar la lectura aparente."
+          "q": "¿La cámara térmica confirma que no hay fuego oculto?",
+          "a": "No por sí sola. Su lectura se interpreta junto con la inspección, el procedimiento y el contexto del inmueble; agua, vapor o reflejos pueden cambiarla."
         },
         {
-          "q": "¿Qué se practica antes de asignarla?",
-          "a": "Escaneo, enfoque de la observación, comunicación por radio, cambio de batería y lectura de objetos conocidos. El objetivo es reconocer tanto la información útil como los límites que pueden llevar a una interpretación incorrecta."
+          "q": "¿Qué se practica antes de usar una cámara térmica?",
+          "a": "Escaneo, lectura de objetos conocidos, cambio de batería y comunicación por radio. El objetivo es reconocer tanto la información útil como sus límites."
         },
         {
-          "q": "¿Qué debe incluir un cargador en la requisición?",
-          "a": "Su compatibilidad con el modelo, cantidad, base o adaptador y ubicación de uso. Una cámara para unidad móvil puede requerir un esquema de carga distinto del equipo que se conserva en estación."
-        },
-        {
-          "q": "¿Por qué no se limpia como una cámara fotográfica?",
-          "a": "La lente infrarroja puede tener materiales y recubrimientos distintos. Solo se usa el método indicado por el fabricante para evitar rayas, residuos o daño que afecte la imagen térmica."
+          "q": "¿Tienen modelos de cámara térmica publicados?",
+          "a": "Todavía no. La cotizamos según el uso de tu equipo y te presentamos la ficha del fabricante antes de que decidas."
         }
       ],
       "chips": [
@@ -411,18 +453,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Prueba de uso"
       ],
       "resumen": [
-        "La cámara térmica apoya búsqueda y reconocimiento al mostrar contrastes de radiación infrarroja en pantalla. Romak Fire no publica modelo; proponemos configuración con sensor, lente, energía y porte según tu maniobra.",
-        "Cotizamos cámara, batería, cargador, base, funda, correa y capacitación de lectura por partida. Romak Fire no aporta cámara publicada; escríbenos por WhatsApp para definir carga y prueba de uso."
-      ]
+        "No ve a través de paredes ni reemplaza la evaluación de la escena: muestra la temperatura de las superficies, y esa lectura se interpreta con entrenamiento.",
+        "Todavía no publicamos un modelo. La cotizamos con batería, cargador, funda y capacitación de lectura, según el uso de tu equipo."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de cámara térmica indica el uso, la referencia que declare el modelo y la validación con el equipo y la maniobra reales.",
+          "Como aún no publicamos modelo, la tabla no muestra resolución ni rango. Esos datos llegan con la especificación del fabricante."
+        ],
+        "errores": [
+          "La cámara térmica es una herramienta poderosa que puede llevar a conclusiones equivocadas si se usa sin entrenamiento.",
+          "Los cuatro se resuelven en la requisición, antes de pedir precio."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre lo que muestra una cámara térmica, sus límites y el entrenamiento.",
+          "Si nos compartes para qué la usaría tu equipo, te decimos qué configuración conviene cotizar."
+        ]
+      }
     },
     {
       "slug": "dispositivo-pass",
       "seccion": "accesorios",
       "nombre": "Dispositivo PASS",
       "nombreCard": "Dispositivo PASS",
-      "title": "Dispositivo PASS para bombero | México",
-      "description": "Dispositivo PASS: el dispositivo PASS emite una alarma personal para una respuesta institucional; lo cotizamos como integrado o independiente con NFPA 1970, ant",
-      "lead": "El dispositivo PASS emite una alarma personal para una respuesta institucional; lo cotizamos como integrado o independiente con NFPA 1970, antes NFPA 1982, declarada según el modelo.",
+      "title": "Dispositivo PASS para bombero: alarma personal",
+      "description": "Dispositivo PASS para bombero: alerta personal de inmovilidad dentro de una respuesta institucional que debe estar ensayada. Cotiza con ficha técnica.",
+      "lead": "El dispositivo PASS emite una alarma cuando el bombero deja de moverse o cuando la activa a mano. Avisa al resto del equipo de una posible emergencia personal dentro de la escena.",
       "imagen": {
         "src": "/images/catalogo/accesorios/tipo-dispositivo-pass.avif",
         "alt": "Dispositivo PASS para bombero",
@@ -432,46 +488,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Dispositivo PASS para respuesta de emergencia",
+          "eyebrow": "Qué es",
+          "h2": "Una alarma para el bombero en problemas",
           "parrafos": [
-            "Cotizamos dispositivo PASS para brigadas que deben reconocer una alarma personal dentro de su respuesta de bombero caído. NFPA 1970 declarada. Elige PASS integrado si corresponde al ERA exacto de tu conjunto; pide uno independiente con soporte y ubicación corporal si no depende del ERA, porque carcasa, sensor de inmovilidad, alarma audible, controles, batería y fijación cambian con el modelo.",
-            "Antes de comprar, colocamos PASS, prenda, radio, arnés, máscara y ERA sobre el usuario. NFPA 1970 guía la referencia declarada. Si el botón manual queda cubierto o la salida de alarma se apoya contra una superficie, pedimos otra interfaz o punto de fijación; si la cuadrilla no ensaya reconocer, comunicar, ubicar, verificar y escalar, integra capacitación a la partida en lugar de recibir solo la alarma."
+            "Si un bombero queda inmóvil por un tiempo, el PASS entra en prealarma y después en alarma plena. También se puede activar con un botón cuando alguien sabe que está en problemas.",
+            "La alarma es solo el aviso. Lo que sigue depende del procedimiento de bombero caído de la corporación: reconocer la señal, comunicar, ubicar y rescatar."
           ]
         },
         {
-          "h2": "Cotización de dispositivo PASS",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Integrado o independiente",
           "parrafos": [
-            "En nuestra cotización escribimos fabricante, modelo, modalidad integrada o independiente, interfaz de montaje, batería o cargador, cantidad por usuario o conjunto de ERA, refacciones y capacitación. NFPA 1970 se conserva como referencia. Elige integración al ERA si el fabricante la declara para esa plataforma; pide soporte independiente cuando la fijación se prueba con traje, arnés y radio reales, no solo en una muestra vacía.",
-            "Conservamos NFPA 1970, antes NFPA 1982, como referencia declarada y pedimos la declaración documental del modelo ofertado. Si el proveedor no declara certificación, escribimos su estatus declarado y no certificado; además anotamos herramientas de prueba y energía por separado para que la entrega no deje una alarma sin medios para mantenerse disponible."
+            "El PASS integrado se activa con el ERA y comparte su energía; conviene cuando todo el equipo usa el mismo modelo. El independiente se fija al cuerpo o al arnés y funciona sin depender del ERA.",
+            "Con el equipo completo puesto, revisa que el botón manual quede a la mano y que nada tape la salida de la alarma: radio, tirantes o herramienta."
           ],
           "lista": [
-            "Modalidad: PASS integrado o independiente",
-            "Interfaz: ERA, soporte y ubicación corporal",
+            "Modalidad: integrado o independiente",
+            "Interfaz: ERA, soporte y ubicación",
             "Energía: batería o cargador del modelo",
-            "Cantidad: por usuario o conjunto de ERA",
-            "Referencia: NFPA 1970 antes NFPA 1982 declarada",
-            "Recepción: prueba, capacitación y documentación"
+            "Cantidad: por usuario o por ERA",
+            "Referencia: NFPA 1970, antes NFPA 1982",
+            "Recepción: prueba, capacitación y documentos"
           ]
         },
         {
-          "h2": "PASS y compatibilidad con ERA",
+          "eyebrow": "En servicio",
+          "h2": "Prueba diaria y ensayo de respuesta",
           "parrafos": [
-            "No hay un modelo PASS publicado en este catálogo, así que proponemos el equipo según tu operación y el ERA que realmente usa la corporación. NFPA 1970 queda declarada; pídelo con traje, casco, máscara, radio y arnés para revisar accesibilidad y conservar el control manual.",
-            "La prueba de uso se realiza con el conjunto puesto: activamos la función manual y la condición de inmovilidad conforme al manual, escuchamos la alarma y localizamos su procedencia. Si radio, tirante o herramienta cubren altavoz o botón, no aceptamos ese montaje; pedimos soporte distinto o modelo compatible antes de incorporar el PASS al conjunto de protección. NFPA 1970 queda declarada. NFPA 1970 permanece declarada."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de PASS",
-          "parrafos": [
-            "Vemos pliegos que solicitan PASS sin aclarar si es integrado o independiente ni nombrar el ERA. Para evitarlo, escribe modelo del ERA, modalidad, soporte, ubicación, batería y cargador; si será independiente, pide prueba con traje y arnés para que una fijación parecida no llegue a bloquear el control. NFPA 1970 exige identificar el modelo declarado.",
-            "También aparecen órdenes que copian NFPA 1970 como si certificara cualquier alarma. Escribe referencia declarada, documento del fabricante y prueba de reconocimiento dentro del ruido operativo; si no incluye capacitación para comunicar, buscar, verificar y escalar, te pedimos agregarla antes de liberar la compra. NFPA 1970 queda como referencia declarada."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro de PASS",
-          "parrafos": [
-            "Antes de guardia revisamos carcasa, fijación, botones, indicadores, salida de alarma, sensor según la prueba autorizada y estado de energía. NFPA 1970 es la referencia declarada. Ponte traje, arnés y ERA, activa la prueba indicada por el manual y confirma que control y señal permanezcan accesibles; si hay alarma débil, indicador anómalo o batería sin retención, retira la unidad y registra la condición. NFPA 1970 no sustituye la inspección.",
-            "Después de golpe, inmersión o reparación aplicamos el procedimiento del fabricante antes de devolver el PASS a servicio. Aparta una unidad con carcasa fisurada, fijación dañada, botón inaccesible o respuesta distinta de la indicada; la bitácora conserva unidad, fecha de prueba, energía y causa de retiro, sin abrir sellos ni intentar calibraciones ajenas al fabricante. NFPA 1970 se conserva en el registro."
+            "Al inicio de cada guardia se prueba el PASS: activación manual, prealarma por inmovilidad y reinicio, conforme al manual del fabricante. Una alarma débil o que no activa se aparta para revisión.",
+            "Además, la corporación ensaya qué hace cuando suena. Un PASS que nadie sabe atender en medio del ruido de una escena no cumple su propósito."
           ]
         }
       ],
@@ -496,33 +542,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar sin respuesta ensayada",
-        "No probar alarma",
-        "Atribuir certificación no declarada",
-        "Elegir PASS independiente sin definir dónde se fija",
-        "No ensayar la señal dentro del ruido operativo",
-        "Ocultar el botón manual bajo arnés o radio"
+        "Comprar sin una respuesta ensayada",
+        "No probar la alarma al inicio de la guardia",
+        "Atribuir una certificación que el modelo no declara",
+        "Dejar el botón manual cubierto por el arnés o la radio"
       ],
       "faq": [
         {
-          "q": "¿Qué ocurre cuando suena?",
-          "a": "La corporación debe ejecutar su procedimiento: reconocer señal, comunicar, ubicar, verificar y escalar la respuesta. El dispositivo no define por sí mismo la táctica ni reemplaza supervisión."
+          "q": "¿Qué pasa cuando suena el PASS?",
+          "a": "La corporación activa su procedimiento: reconocer la señal, comunicar, ubicar, verificar y escalar la respuesta. El dispositivo avisa, pero no coordina el rescate."
         },
         {
-          "q": "¿El PASS reemplaza el procedimiento de bombero caído?",
-          "a": "No. Es un medio de alerta dentro de ese procedimiento. La corporación debe definir y entrenar reconocimiento, comunicación, búsqueda, verificación y escalamiento; la alarma por sí sola no coordina la respuesta."
+          "q": "¿El PASS se activa solo por inmovilidad?",
+          "a": "Depende del modelo. Además de la función por inmovilidad, los equipos tienen activación manual. La forma de operar y reiniciar se confirma en el manual del fabricante."
         },
         {
-          "q": "¿Se activa solo por inmovilidad?",
-          "a": "Depende del modelo y de su configuración. Además de la función de inmovilidad, los equipos pueden tener activación manual. La forma correcta de operar y reiniciar se confirma en el manual del fabricante."
+          "q": "¿Qué norma aplica al dispositivo PASS?",
+          "a": "La referencia vigente es NFPA 1970, que absorbió a la NFPA 1982. Pide que la cotización indique qué declara el modelo ofertado."
         },
         {
-          "q": "¿Cómo se compra para un ERA?",
-          "a": "Con marca y modelo del ERA, configuración integrada requerida, cantidad por conjunto, batería o cargador y declaración del fabricante. No se asume que un PASS de otra plataforma se conectará o montará igual."
-        },
-        {
-          "q": "¿Qué hace que una alarma no sea aceptable?",
-          "a": "Que no active como indica el equipo, quede obstruida, tenga energía insuficiente, presente controles inaccesibles o muestre daño en carcasa y fijación. Se aparta para evaluación, no se corrige con cinta o ajustes improvisados."
+          "q": "¿Tienen modelos de PASS publicados?",
+          "a": "Todavía no. Lo cotizamos según el ERA de tu corporación y te presentamos la ficha del fabricante antes de que decidas."
         }
       ],
       "chips": [
@@ -531,18 +571,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Prueba de uso"
       ],
       "resumen": [
-        "El dispositivo PASS alerta sobre una posible emergencia personal mediante carcasa, sensor, alarma audible, controles, energía y fijación. NFPA 1970 queda declarada; proponemos integrado o independiente para el ERA de tu brigada.",
-        "Cotizamos modalidad, soporte, batería, cargador, cantidad, capacitación y NFPA 1970, antes NFPA 1982, como referencia declarada. Mándanos WhatsApp con el modelo de ERA, radio y arnés para revisar dónde queda audible y accesible."
-      ]
+        "Puede venir integrado al ERA o ser independiente. La referencia es NFPA 1970, que absorbió a la NFPA 1982, y cada modelo declara su cumplimiento.",
+        "Todavía no publicamos un modelo. Lo cotizamos según el ERA que usa tu corporación, con batería, capacitación y la declaración del fabricante."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de dispositivo PASS indica el uso, la referencia NFPA 1970, antes NFPA 1982, y la validación con el equipo y la maniobra reales.",
+          "Sin modelo publicado, la tabla describe el tipo y no un código de producto. La declaración normativa llega con la ficha del fabricante del modelo propuesto."
+        ],
+        "errores": [
+          "Un PASS mal montado o sin respuesta ensayada da una falsa sensación de seguridad.",
+          "Estos cuatro errores conviene revisarlos antes de comprar y en cada guardia."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre funcionamiento, activación, norma y modelos del dispositivo PASS.",
+          "Si nos compartes el modelo de ERA que usa tu corporación, te decimos si conviene un PASS integrado o independiente."
+        ]
+      }
     },
     {
       "slug": "maleta-porta-equipo",
       "seccion": "accesorios",
       "nombre": "Maleta porta-equipo",
       "nombreCard": "Maleta porta-equipo",
-      "title": "Maleta porta-equipo para bombero | México",
-      "description": "Maleta porta-equipo: la maleta porta-equipo Romak Fire BPS1005 traslada casco, botas, prendas y accesorios en poliéster repelente al agua de 25 × 13 × 14 pulgad",
-      "lead": "La maleta porta-equipo Romak Fire BPS1005 traslada casco, botas, prendas y accesorios en poliéster repelente al agua de 25 × 13 × 14 pulgadas, validada con la carga real de tu brigada.",
+      "title": "Maleta porta-equipo para bombero y traje completo",
+      "description": "Maleta porta-equipo para bombero: organiza el traslado del conjunto y se valida cargando casco, botas, prendas y accesorios reales. Cotiza con ficha técnica.",
+      "lead": "La maleta porta-equipo guarda y traslada el conjunto de un bombero: casco, botas, chaquetón, pantalonera y accesorios. Surtimos la Romak Fire BPS1005, de poliéster repelente al agua.",
       "imagen": {
         "src": "/images/catalogo/accesorios/tipo-maleta-porta-equipo.avif",
         "alt": "Maleta porta-equipo para bombero",
@@ -552,47 +606,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Maleta porta-equipo para traslado",
+          "eyebrow": "Qué es",
+          "h2": "Transporte ordenado del equipo personal",
           "parrafos": [
-            "Cotizamos la maleta porta-equipo Romak Fire BPS1005 cuando tu brigada debe trasladar casco, botas, chaquetón, pantalón, tirantes, guantes y monja entre almacén, vehículo y punto de entrega. Elige BPS1005 si el conjunto cabe en sus 25 × 13 × 14 pulgadas; si tus tallas o accesorios cambian el volumen, pide prueba de carga antes de decidir por medidas externas.",
-            "La BPS1005 usa poliéster de alta resistencia repelente al agua, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Pídela para organizar el conjunto identificado, no como impermeabilidad total ni descontaminación; si debes separar piezas húmedas o contaminadas, define ese procedimiento por fuera de las bolsas y no mezcles equipo listo solo porque cabe en el mismo contenedor."
+            "Cuando el equipo viaja entre almacén, estación y vehículo, una maleta lo mantiene junto, identificado y protegido del polvo. También ayuda a que cada bombero encuentre su conjunto completo.",
+            "No descontamina ni separa equipo sucio del limpio por sí misma. Las piezas contaminadas se manejan según el procedimiento de la corporación."
           ]
         },
         {
-          "h2": "Cotización de maleta porta-equipo",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Medidas y carga real",
           "parrafos": [
-            "En nuestra cotización escribimos Romak Fire BPS1005 por pieza, poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Elige cantidad por persona, reserva o unidad móvil según tu operación; si una maleta va a vehículo, pide comprobar además el espacio de estiba.",
-            "Anotamos como contenido declarado chaquetón, pantalón, tirantes, casco, botas, guantes y monja, y definimos qué artículo va en cada bolsa. Romak Fire BPS1005 identifica la partida. Si la compra solicita un «kit completo», pedimos la lista del conjunto institucional y prueba física; así el cierre, las asas y el volumen se comparan contra la carga real en lugar de asumir una capacidad universal."
+            "Las medidas externas no dicen si el equipo cabe. Carga una talla representativa, con casco y botas, y cierra la maleta: el zipper tiene que correr sin presión y las costuras no deben tensarse.",
+            "Revisa también cómo se va a guardar en la unidad o en el almacén. Una maleta que no cabe en su lugar termina fuera de él."
           ],
           "lista": [
-            "Marca y modelo: Romak Fire BPS1005",
+            "Modelo: Romak Fire BPS1005",
             "Material: poliéster repelente al agua",
             "Medidas: 25 × 13 × 14 pulgadas",
             "Asas: polipropileno de 1 ½ pulgadas",
             "Bolsas: dos con zipper",
-            "Carga: casco, botas, prendas y accesorios",
-            "Estatus: sin norma declarada"
+            "Carga: casco, botas, prendas y accesorios"
           ]
         },
         {
-          "h2": "BPS1005 y conjunto de bombero",
+          "eyebrow": "En servicio",
+          "h2": "Revisión de asas, cierres y costuras",
           "parrafos": [
-            "Surtimos Romak Fire BPS1005 para chaquetón, pantalón, tirantes, casco, botas, guantes y monja; la combinamos con la familia de traje que use tu brigada y con su casco real. Elige esta maleta si la prueba permite cerrar sin forzar costuras o zipper; si casco y botas presionan esquinas, pedimos otra configuración de transporte antes de asignarla al conjunto.",
-            "En la recepción cargamos una talla representativa, cerramos BPS1005, levantamos por las asas de polipropileno de 1 ½ pulgadas y acomodamos la pieza en vehículo o almacén. Si tiradores, dientes o costuras no trabajan sin presión, apartamos la propuesta; la maleta no recibe la norma del traje o casco que transporta porque BPS1005 no tiene norma declarada. Romak Fire identifica la partida."
-          ]
-        },
-        {
-          "h2": "Errores en órdenes de maletas",
-          "parrafos": [
-            "Vemos órdenes que escriben solo medidas y omiten modelo, material, asas, bolsas y cierre. Para evitarlo, pide Romak Fire BPS1005, poliéster repelente al agua, 25 × 13 × 14 pulgadas, asas de 1 ½ pulgadas y dos bolsas con zipper; si falta alguno, no se puede comparar la forma de traslado.",
-            "También recibimos pliegos que piden compartimientos sin decir qué equipo separan o trasladan la norma del EPP a la maleta. Escribe chaquetón, pantalón, tirantes, casco, botas, guantes y monja como carga muestra, y especifica sin norma declarada; si la unidad móvil no admite la estiba cargada, pide otra solución antes de liberar la orden. Romak Fire BPS1005 debe quedar escrito."
-          ]
-        },
-        {
-          "h2": "Inspección y retiro de BPS1005",
-          "parrafos": [
-            "Antes de guardia revisamos poliéster, base, costuras, uniones de asa, tiradores, dientes, recorrido del zipper y dos bolsas bajo la carga del conjunto. Cierra BPS1005, levántala por sus asas de polipropileno de 1 ½ pulgadas y confirma que no abra costura ni se separen dientes; si hay hilos sueltos, humedad o cierre trabado, retírala y registra condición.",
-            "Después de una salida vaciamos la maleta, clasificamos el contenido y la secamos conforme al procedimiento aplicable. Aparta BPS1005 si una costura abre, un asa pierde unión, la base se perfora o el zipper se atora bajo carga; no usamos cordones, cinta o cierre forzado para recuperar una capacidad de transporte que ya no conserva."
+            "Revisa asas, zipper y costuras de forma periódica. Una maleta con el cierre roto o un asa descosida no se remienda con amarras: se reemplaza.",
+            "Limpia el interior cuando se vacía y no guardes equipo húmedo dentro por mucho tiempo, porque la humedad daña las prendas."
           ]
         }
       ],
@@ -611,33 +654,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar solo por medidas",
-        "Mezclar equipo contaminado",
-        "Ignorar costuras y cierres",
-        "Tomar «kit completo» como medida de capacidad comprobada",
-        "Pedir compartimientos sin definir qué equipo separan",
-        "Estibar maletas sin verificar el espacio de la unidad"
+        "Comprar solo por las medidas externas",
+        "Mezclar equipo contaminado con equipo limpio",
+        "Ignorar costuras y cierres al recibir",
+        "No verificar el espacio de guardado en la unidad"
       ],
       "faq": [
         {
-          "q": "¿La maleta descontamina?",
-          "a": "No. Transporta y organiza; las piezas contaminadas se manejan según el procedimiento aplicable y no deben mezclarse con equipo listo solo por caber en el mismo compartimiento."
+          "q": "¿Qué medidas tiene la maleta porta-equipo Romak Fire BPS1005?",
+          "a": "25 × 13 × 14 pulgadas, con asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper, según su fabricante."
         },
         {
-          "q": "¿Qué se usa como muestra para la prueba?",
-          "a": "El casco, botas, prendas y accesorios que realmente se asignarán, idealmente en una talla representativa. Las fotografías o una lista de piezas no muestran los volúmenes y puntos de presión que aparecen al cerrar."
+          "q": "¿La maleta porta-equipo descontamina?",
+          "a": "No. Transporta y organiza. Las piezas contaminadas se manejan según el procedimiento de la corporación y no se mezclan con equipo limpio."
         },
         {
-          "q": "¿Una bolsa interior separa equipo contaminado?",
-          "a": "No por sí misma. La clasificación, limpieza y resguardo de piezas contaminadas siguen el procedimiento de la organización. Un bolsillo solo organiza los artículos que se haya definido colocar en él."
+          "q": "¿Cabe un conjunto completo de bombero en la BPS1005?",
+          "a": "Está pensada para casco, botas, prendas y accesorios. Como las tallas cambian el volumen, la probamos con el conjunto real de tu brigada antes de cerrar la compra."
         },
         {
-          "q": "¿Qué se recibe además de la maleta?",
-          "a": "Modelo, medidas, asas, cierres, bolsas y cualquier rueda o accesorio declarado. La recepción carga el conjunto muestra, levanta la maleta y verifica que pueda guardarse en el espacio previsto."
-        },
-        {
-          "q": "¿Cuándo se retira una maleta?",
-          "a": "Cuando costuras, asas, base o cierres ya no soportan la carga prevista, o cuando su condición impide un resguardo adecuado. No se conserva en servicio mediante amarras que cambian el modo de transporte."
+          "q": "¿Cuándo se reemplaza una maleta porta-equipo?",
+          "a": "Cuando asas, costuras, base o cierres ya no soportan la carga, o cuando su estado impide guardar bien el equipo."
         }
       ],
       "chips": [
@@ -646,9 +683,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Prueba de uso"
       ],
       "resumen": [
-        "La Romak Fire BPS1005 es una maleta de poliéster repelente al agua de 25 × 13 × 14 pulgadas, con asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper para el conjunto de bombero declarado.",
-        "Cotizamos BPS1005 por pieza con carga muestra, estiba y prueba de asas y cierres. Escríbenos por WhatsApp qué casco, botas, prendas y accesorios llevará tu brigada para validar el volumen antes de ordenar."
-      ]
+        "La BPS1005 mide 25 × 13 × 14 pulgadas, tiene asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper, según su fabricante.",
+        "Es una maleta de transporte, no un equipo de protección, así que no le aplica una norma. La cotizamos probando que el conjunto real de tu brigada quepa sin forzarla."
+      ],
+      "duos": {
+        "ficha": [
+          "La requisición de maleta porta-equipo indica el uso, que no aplica una norma de protección y la validación con el equipo real de la brigada.",
+          "La BPS1005 es el modelo publicado. Su ficha incluye material, medidas, asas y bolsas."
+        ],
+        "errores": [
+          "Una maleta mal elegida se nota en la primera carga: no cierra, se descose o no cabe en su lugar.",
+          "Estos cuatro errores conviene evitarlos con una prueba de carga."
+        ],
+        "modelos": [
+          "Surtimos la Romak Fire BPS1005: poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno y dos bolsas con zipper.",
+          "Su ficha la presenta sin norma aplicable, porque es equipo de transporte y no de protección."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre medidas, capacidad, descontaminación y reemplazo de la maleta.",
+          "Si nos dices cuántos conjuntos vas a guardar, te cotizamos las maletas con la prueba de carga incluida."
+        ]
+      }
     }
   ],
   "modelos": [
