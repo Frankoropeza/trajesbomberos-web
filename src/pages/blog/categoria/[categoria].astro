@@ -8,7 +8,6 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import BlogListado from '@components/blog/BlogListado.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
-import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, BLOG_CATEGORIES } from '@config/site';
 import { getPosts, getPostsByCategoria, paginar, postUrl, categoriaUrl } from '@lib/blog';
@@ -59,6 +58,7 @@ const menuItems = [
     'Si después de leer sigues con la duda, escríbenos: contestamos con la ficha técnica en la mano y te decimos con franqueza si lo que necesitas es otra cosa.',
   ]}
   directoryItems={directoryItems}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
@@ -93,7 +93,6 @@ const menuItems = [
       <BlogSidebar variant="categoria" visiblePostIds={pagina.posts.map((post) => post.id)} />
     </div>
   </div>
-  <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
