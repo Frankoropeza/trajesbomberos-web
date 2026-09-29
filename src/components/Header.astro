@@ -39,7 +39,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
       <span class="brand-mark" aria-hidden="true"><img src="/images/marca/lorica-icono.svg" width="35" height="40" alt="" /></span>
       <span class="brand-text"><img class="brand-name" src="/images/marca/lorica-wordmark.svg" width="104" height="17" alt={SITE.name} /><span class="brand-claim">Trajes para bomberos</span></span>
     </a>
-    <nav class="nav-desktop" aria-label="Navegación principal">
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
       <ul class="nav-list">
         {menu.map((item, index) => (
           <li class:list={['nav-item', { 'nav-item--active': isActive(item) }]} data-menu={String(index)}>
@@ -61,18 +61,13 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
           </li>
         ))}
       </ul>
+      <div class="container nav-drawer__extra"><a href="/empresa/">Proveedor de trajes para bomberos</a><a href="/contacto/">Contacto para cotizar trajes</a></div>
+      <div class="nav-drawer__actions"><div class="container nav-drawer__actions-inner"><div class="nav-drawer__buttons"><a class="btn btn--wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a><a class="btn btn--ghost" href={`tel:${CONTACT.telefonoHref}`}>Llamar {CONTACT.telefono}</a></div><p>{CONTACT.horario}</p></div></div>
     </nav>
     <div class="header-actions"><a class="header-phone" href={`tel:${CONTACT.telefonoHref}`}><span>Llámanos</span>{CONTACT.telefono}</a><a class="btn header-cta" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes</a></div>
     <a class="btn header-cta-mobile" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mob-menu" aria-label="Abrir menú"><svg class="nav-toggle__open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="nav-toggle__close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg></button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><svg class="nav-toggle__open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="nav-toggle__close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg></button>
   </div>
-  <nav class="mob-menu" id="mob-menu" aria-label="Navegación móvil" hidden>
-    <div class="container mob-menu__content">
-      <ul class="mob-list">{menu.map((item, index) => <li class="mob-item"><button class="mob-item__trigger" type="button" aria-expanded="false" aria-controls={`mobile-panel-${index}`}><span>{item.label}</span><span aria-hidden="true">+</span></button><div class="mob-item__panel" id={`mobile-panel-${index}`} hidden><a class="mob-item__overview" href={item.overview.href}>{item.overview.label} <span aria-hidden="true">→</span></a><div class="mob-item__columns">{item.columns.map((column) => <section class="mob-column">{column.href ? <a class="mob-column__title" href={column.href} aria-current={current(column.href)}>{column.title}</a> : <p class="mob-column__title">{column.title}</p>}<ul>{column.links.map((link) => <li>{link.href ? <a href={link.href} aria-current={current(link.href)}>{link.label}</a> : <span>{link.label}</span>}</li>)}</ul></section>)}</div></div></li>)}</ul>
-      <div class="mob-extra"><a href="/empresa/">Proveedor de trajes para bomberos</a><a href="/contacto/">Contacto para cotizar trajes</a></div>
-    </div>
-    <div class="mob-actions"><div class="container mob-actions__inner"><div class="mob-actions__buttons"><a class="btn btn--wa mob-direct" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a><a class="btn btn--ghost mob-direct" href={`tel:${CONTACT.telefonoHref}`}>Llamar {CONTACT.telefono}</a></div><p>{CONTACT.horario}</p></div></div>
-  </nav>
   <button class="mega-scrim" type="button" aria-label="Cerrar menú desplegable" hidden></button>
 </header>
 <script>
@@ -81,8 +76,8 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   const scrim = document.querySelector<HTMLButtonElement>('.mega-scrim');
   const navItems = [...document.querySelectorAll<HTMLElement>('.nav-item')];
   const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
-  const mobileMenu = document.getElementById('mob-menu');
-  const mobileTriggers = [...document.querySelectorAll<HTMLButtonElement>('.mob-item__trigger')];
+  const siteNav = document.getElementById('site-nav');
+  const desktopQuery = window.matchMedia('(min-width: 1280px)');
   let closeTimer: number | undefined;
   let hoverOpenedAt = 0;
   // Borde inferior real del header (varía con la topbar visible): ancla del velo y del cajón.
@@ -121,45 +116,68 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     item.querySelector<HTMLButtonElement>('.nav-trigger')?.setAttribute('aria-expanded', 'true');
     if (scrim) scrim.hidden = false;
   };
+  const closeDrawer = (restoreFocus = false) => {
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.setAttribute('aria-label', 'Abrir menú');
+    header?.classList.remove('is-drawer-open');
+    root.classList.remove('nav-open');
+    if (restoreFocus) toggle?.focus();
+  };
+  const openDrawer = () => {
+    if (!toggle || desktopQuery.matches) return;
+    syncBottom();
+    closeDesktop();
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Cerrar menú');
+    header?.classList.add('is-drawer-open');
+    root.classList.add('nav-open');
+    navItems[0]?.querySelector<HTMLButtonElement>('.nav-trigger')?.focus();
+  };
+  const toggleDrawerItem = (item: HTMLElement) => {
+    const open = item.classList.contains('is-open');
+    navItems.forEach((other) => {
+      other.classList.remove('is-open');
+      other.querySelector<HTMLButtonElement>('.nav-trigger')?.setAttribute('aria-expanded', 'false');
+    });
+    if (!open) {
+      item.classList.add('is-open');
+      item.querySelector<HTMLButtonElement>('.nav-trigger')?.setAttribute('aria-expanded', 'true');
+    }
+  };
   navItems.forEach((item) => {
     const trigger = item.querySelector<HTMLButtonElement>('.nav-trigger');
     trigger?.addEventListener('click', () => {
+      if (!desktopQuery.matches) {
+        toggleDrawerItem(item);
+        return;
+      }
       // Un clic justo después de abrir por hover no debe cerrar el panel.
       if (item.classList.contains('is-open') && Date.now() - hoverOpenedAt < 600) return;
       openDesktop(item);
     });
-    trigger?.addEventListener('keydown', (event) => { if (event.key === 'ArrowDown') { event.preventDefault(); if (!item.classList.contains('is-open')) openDesktop(item); item.querySelector<HTMLAnchorElement>('.mega a')?.focus(); } });
+    trigger?.addEventListener('keydown', (event) => {
+      if (!desktopQuery.matches || event.key !== 'ArrowDown') return;
+      event.preventDefault();
+      if (!item.classList.contains('is-open')) openDesktop(item);
+      item.querySelector<HTMLAnchorElement>('.mega a')?.focus();
+    });
     item.addEventListener('pointerenter', (event) => {
-      if (event.pointerType !== 'mouse') return;
+      if (!desktopQuery.matches || event.pointerType !== 'mouse') return;
       window.clearTimeout(closeTimer);
       if (!item.classList.contains('is-open')) { openDesktop(item); hoverOpenedAt = Date.now(); }
     });
-    item.addEventListener('pointerleave', (event) => { if (event.pointerType === 'mouse') closeTimer = window.setTimeout(closeDesktop, 180); });
+    item.addEventListener('pointerleave', (event) => { if (desktopQuery.matches && event.pointerType === 'mouse') closeTimer = window.setTimeout(closeDesktop, 180); });
   });
-  document.addEventListener('click', (event) => { if (header && !header.contains(event.target as Node)) closeDesktop(); });
-  scrim?.addEventListener('click', closeDesktop);
-  const closeMobile = (restoreFocus = false) => {
-    if (!toggle || !mobileMenu) return;
-    toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); mobileMenu.hidden = true; root.classList.remove('nav-open');
-    if (restoreFocus) toggle.focus();
-  };
-  const openMobile = () => {
-    if (!toggle || !mobileMenu) return;
-    syncBottom(); closeDesktop(); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); mobileMenu.hidden = false; root.classList.add('nav-open'); mobileTriggers[0]?.focus();
-  };
-  toggle?.addEventListener('click', () => toggle.getAttribute('aria-expanded') === 'true' ? closeMobile() : openMobile());
-  mobileTriggers.forEach((trigger) => trigger.addEventListener('click', () => {
-    const panel = document.getElementById(trigger.getAttribute('aria-controls') ?? '');
-    const open = trigger.getAttribute('aria-expanded') === 'true';
-    mobileTriggers.forEach((other) => { other.setAttribute('aria-expanded', 'false'); const otherPanel = document.getElementById(other.getAttribute('aria-controls') ?? ''); if (otherPanel) otherPanel.hidden = true; });
-    trigger.setAttribute('aria-expanded', String(!open)); if (panel) panel.hidden = open;
-  }));
-  mobileMenu?.addEventListener('click', (event) => { if ((event.target as HTMLElement).closest('a')) closeMobile(); });
+  document.addEventListener('click', (event) => { if (desktopQuery.matches && header && !header.contains(event.target as Node)) closeDesktop(); });
+  scrim?.addEventListener('click', () => { if (desktopQuery.matches) closeDesktop(); });
+  toggle?.addEventListener('click', () => toggle.getAttribute('aria-expanded') === 'true' ? closeDrawer() : openDrawer());
+  siteNav?.addEventListener('click', (event) => { if (!desktopQuery.matches && (event.target as HTMLElement).closest('a')) closeDrawer(); });
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
-    if (toggle?.getAttribute('aria-expanded') === 'true') closeMobile(true);
+    if (toggle?.getAttribute('aria-expanded') === 'true') closeDrawer(true);
     else { const active = document.querySelector<HTMLElement>('.nav-item.is-open'); if (active) { const trigger = active.querySelector<HTMLButtonElement>('.nav-trigger'); closeDesktop(); trigger?.focus(); } }
   });
+  desktopQuery.addEventListener('change', () => { closeDesktop(); closeDrawer(); });
 </script>
 <style>
   .site-header {
@@ -217,7 +235,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     text-transform: uppercase;
   }
 
-  .nav-desktop {
+  .site-nav {
     flex: 1 1 auto;
     min-width: 0;
   }
@@ -514,7 +532,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     white-space: nowrap;
   }
 
-  .header-cta-mobile,.nav-toggle,.mob-menu {
+  .header-cta-mobile,.nav-toggle,.nav-drawer__extra,.nav-drawer__actions {
     display: none;
   }
 
@@ -544,7 +562,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   }
 
   @media (max-width: 1279px) {
-    .nav-desktop,.header-actions {
+    .header-actions {
       display: none;
     }
     .header-inner {
@@ -584,37 +602,35 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     .nav-toggle[aria-expanded='true'] .nav-toggle__close {
       display: block!important;
     }
-    .mob-menu {
+    .site-nav {
       background: var(--color-white);
       bottom: 0;
       display: flex;
-      left: 0;
+      flex-direction: column;
+      inset-inline: 0;
       overflow-y: auto;
       overscroll-behavior: contain;
       position: fixed;
-      right: 0;
       top: var(--hdr-bottom,var(--header-height));
       z-index: 4;
-      flex-direction: column;
     }
-    .mob-menu[hidden] {
+    .site-header.js:not(.is-drawer-open) .site-nav {
       display: none;
     }
-    .mob-menu__content {
-      flex: 1 0 auto;
-      padding-bottom: 1rem;
-      padding-top: .25rem;
-      width: 100%;
-    }
-    .mob-list {
+    .nav-list {
+      align-items: stretch;
+      display: block;
+      flex: 0 0 auto;
+      height: auto;
       list-style: none;
       margin: 0;
-      padding: 0;
+      padding: .25rem max(var(--container-px), env(safe-area-inset-left)) 1rem;
     }
-    .mob-item {
+    .nav-item {
       border-bottom: var(--border);
+      display: block;
     }
-    .mob-item__trigger {
+    .nav-trigger {
       align-items: center;
       background: transparent;
       border: 0;
@@ -629,82 +645,110 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
       padding: 0;
       width: 100%;
     }
-    .mob-item__trigger>span:last-child {
+    .nav-caret {
+      display: none;
+    }
+    /* En el cajón, el ítem de la sección actual se marca solo con color: el
+       subrayado inferior es del megamenú de escritorio. */
+    .nav-item--active .nav-trigger {
+      box-shadow: none;
+    }
+    .nav-trigger::after {
       color: var(--color-primary);
       font-size: 1.4rem;
+      content: '+';
     }
-    .mob-item__trigger[aria-expanded='true']>span:last-child {
-      font-size: 0;
-    }
-    .mob-item__trigger[aria-expanded='true']>span:last-child::after {
+    .nav-trigger[aria-expanded='true']::after {
       content: '−';
-      font-size: 1.4rem;
     }
-    .mob-item__panel {
-      padding: 0 0 1rem;
+    .mega {
+      border-top: 0;
+      box-shadow: none;
+      max-height: none;
+      overflow: visible;
+      position: static;
     }
-    .mob-item__overview {
-      color: var(--color-primary);
+    .site-header.js .nav-item.is-open .mega {
+      display: flex;
+      flex-direction: column;
+    }
+    .mega__footer {
+      order: -1;
+    }
+    .mega__footer-inner {
       display: block;
+      min-height: 0;
+      padding-block: 0 .75rem;
+    }
+    .mega__overview {
+      color: var(--color-primary);
+      align-items: center;
+      display: flex;
       font-size: .96rem;
       font-weight: 800;
-      margin: 0 0 .75rem;
+      min-height: 44px;
       text-decoration: none;
     }
-    .mob-item__columns {
+    .mega__contact,.mega__feature,.mega__heading img,.mega__links small {
+      display: none;
+    }
+    .mega__body {
+      padding: 0 0 1rem;
+    }
+    .mega .mega__grid {
       display: grid;
       gap: .8rem 1.3rem;
+      grid-template-columns: 1fr;
     }
-    .mob-column {
+    .mega__column {
       border-left: 2px solid var(--color-gray-light);
       padding-left: .8rem;
     }
-    .mob-column__title {
+    .mega__heading {
+      align-items: center;
       color: var(--color-dark);
-      display: block;
-      font-size: .9rem;
+      display: flex;
+      font-size: 1rem;
       font-weight: 800;
-      margin: 0 0 .2rem;
-      text-decoration: none;
-    }
-    .mob-column ul {
-      list-style: none;
       margin: 0;
-      padding: 0;
+      min-height: 44px;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: 0;
     }
-    .mob-column li a,.mob-column li span {
+    .mega__heading--link {
+      font-size: 1rem;
+    }
+    .mega__arrow {
+      display: none;
+    }
+    .mega__links a,.mega__plain {
       align-items: center;
       color: var(--color-dark);
       display: flex;
       font-size: .97rem;
       font-weight: 600;
       min-height: 44px;
+      padding: 0;
       text-decoration: none;
     }
-    .mob-column li span {
+    .mega__links a > span {
+      font-size: .97rem;
+      font-weight: 600;
+    }
+    .mega__plain {
       color: var(--color-gray);
       font-weight: 400;
       line-height: 1.45;
     }
-    p.mob-column__title {
-      color: var(--color-gray-soft);
-      font-size: 0.75rem;
-      letter-spacing: var(--tracking-wide);
-      text-transform: uppercase;
-      padding-top: .35rem;
-    }
-    a.mob-column__title {
-      align-items: center;
-      display: flex;
-      font-size: 1rem;
-      min-height: 44px;
-    }
-    .mob-extra {
+    .nav-drawer__extra {
+      align-content: start;
       display: grid;
+      flex: 1 0 auto;
       gap: .25rem;
-      padding: 1rem 0;
+      padding-block: 1rem;
     }
-    .mob-extra a {
+    .nav-drawer__extra a {
       align-items: center;
       color: var(--color-dark);
       display: flex;
@@ -712,7 +756,8 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
       min-height: 44px;
       text-decoration: none;
     }
-    .mob-actions {
+    .nav-drawer__actions {
+      display: block;
       background: var(--color-white);
       border-top: var(--border);
       bottom: 0;
@@ -721,22 +766,22 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
       width: 100%;
       box-shadow: 0 -6px 16px rgb(15 18 22 / .06);
     }
-    .mob-actions__inner {
+    .nav-drawer__actions-inner {
       padding-block: .65rem max(1rem,env(safe-area-inset-bottom));
     }
-    .mob-actions__buttons {
+    .nav-drawer__buttons {
       display: grid;
       gap: .6rem;
       grid-template-columns: 1fr 1fr;
     }
-    .mob-direct {
+    .nav-drawer__buttons .btn {
       font-size: .78rem;
       min-height: 44px;
       padding-inline: .45rem;
       text-align: center;
       width: auto;
     }
-    .mob-actions p {
+    .nav-drawer__actions p {
       color: var(--color-gray);
       font-size: .78rem;
       margin: .45rem 0 0;
@@ -748,7 +793,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   }
 
   @media (min-width: 768px) and (max-width: 1279px) {
-    .mob-item__columns {
+    .mega .mega__grid {
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -760,7 +805,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   }
 
   @media (max-width: 379px) {
-    .mob-actions__buttons {
+    .nav-drawer__buttons {
       grid-template-columns: 1fr;
     }
   }
