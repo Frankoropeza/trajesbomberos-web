@@ -97,6 +97,13 @@ export function organizationSchema(): object {
       email: CONTACT.email,
       areaServed: 'MX',
       availableLanguage: ['es'],
+      // Mismo horario que la barra superior (CONTACT.horario: Lun–Vie 9:00–18:00).
+      hoursAvailable: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
     },
     areaServed: [
       { '@type': 'Country', name: 'México' },
