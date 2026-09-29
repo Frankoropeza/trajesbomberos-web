@@ -418,6 +418,7 @@ export const NAV: NavItem[] = [
     ],
     panelCta: { label: 'Ver todos los artículos', href: '/blog/' },
   },
+  { label: 'Directorio de bomberos', href: '/estaciones-de-bomberos/' },
   { label: 'Empresa', href: '/empresa/' },
   { label: 'Contacto', href: '/contacto/' },
 ];

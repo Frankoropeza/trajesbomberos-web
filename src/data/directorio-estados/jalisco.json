@@ -1,0 +1,45 @@
+{
+ "lead": "Localiza 42 estaciones de bomberos en Jalisco dentro de 27 municipios. El directorio reúne fichas con ubicación, corporación y fuente, e identifica la disponibilidad de dirección, teléfono y coordenadas para cada registro.",
+ "descRight": [
+  "Jalisco reúne 35 registros municipales, 2 de PEMEX, 2 aeroportuarios, 2 industriales y uno estatal. Se identifican 3 centrales y 8 subestaciones. Zapopan suma 6 fichas y Tlajomulco de Zúñiga 4, mientras Puerto Vallarta y Tequila tienen 3. El panorama distingue servicios públicos, terminales y brigadas especializadas.",
+  "Busca estaciones de bomberos en Jalisco por municipio, compara los datos de cada ficha y usa el mapa como apoyo de localización. Se publica teléfono cuando hay fuente, además de dirección y una referencia exacta o aproximada. Si la situación es urgente, marca 911: los contactos de ficha sirven para gestiones, no para sustituir emergencias."
+ ],
+ "municipiosDuo": [
+  "Zapopan concentra 6 estaciones registradas y Tlajomulco de Zúñiga 4; Puerto Vallarta y Tequila suman 3 cada uno. Para bomberos en Zapopan, el índice separa las bases y la central, incluyendo las estaciones forestales. Esa estructura permite ubicar qué registro corresponde a cada zona o tipo de servicio.",
+  "El directorio abarca 27 municipios: El Salto, Guadalajara y Zapotlanejo tienen 2 fichas, y los demás aparecen con una. La cobertura está repartida entre localidades con una sola sede y municipios con redes de bases. Se trata de un registro consultable que puede ampliarse con nuevas estaciones confirmadas mediante fuente pública."
+ ],
+ "estacionesDuo": [
+  "La ficha señala si el registro es municipal, estatal, de PEMEX, aeroportuario o industrial, además de su papel como central, subestación o estación única. En el listado aparecen la Dirección de Protección Civil y Bomberos de Zapopan y la Unidad Estatal de Protección Civil y Bomberos de Jalisco, entre otras corporaciones.",
+  "Las referencias de dirección, teléfono y mapa no tienen la misma disponibilidad en todas las fichas. El directorio marca la ubicación exacta cuando está disponible y evita presentar como exacta una referencia aproximada. Así se pueden diferenciar las bases de Bomberos Tlajomulco de una brigada de PEMEX o de una estación municipal independiente."
+ ],
+ "coberturaDuo": [
+  "Los servicios más frecuentes son incendios estructurales, declarados en 40 fichas; atención prehospitalaria, en 33; y rescate vehicular, en 27. También se reportan 14 registros de incendios forestales y 8 de materiales peligrosos. Las cifras corresponden a servicios declarados, no a una lista uniforme para toda la red.",
+  "De las 42 fichas de Jalisco, 15 tienen teléfono, 21 cuentan con dirección y 18 muestran ubicación exacta; 21 son de confianza alta. Esta diferencia entre campos ayuda a leer el alcance de cada registro antes de planear una visita o contactar a una corporación de bomberos en Jalisco."
+ ],
+ "equipoDuo": [
+  "Jalisco reúne incendios estructurales, rescate vehicular e incendios forestales en sus fichas, por lo que la selección puede partir de <a href=\"/trajes/estructural/\">trajes estructurales</a>, <a href=\"/trajes/forestal/\">trajes forestales</a> y <a href=\"/trajes/extricacion/\">equipo para extricación</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Jalisco.",
+  "Los servicios declarados de materiales peligrosos y salvamento aeroportuario piden revisar la protección según el escenario antes de elegir. Hay opciones como <a href=\"/trajes/hazmat/\">trajes Hazmat</a> y <a href=\"/trajes/aproximacion/\">trajes de aproximación</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Jalisco."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Jalisco?",
+   "a": "El directorio registra 42 estaciones de bomberos en Jalisco en 27 municipios. Cada incorporación reúne una ficha de corporación, ubicación y fuente, por lo que la cifra describe los registros publicados y no afirma que sean todas las estaciones del estado. Puede aumentar al confirmarse nuevas fuentes públicas."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones y dónde hay bomberos en Jalisco?",
+   "a": "Zapopan cuenta con 6 fichas y Tlajomulco de Zúñiga con 4; Puerto Vallarta y Tequila tienen 3 cada uno. Para buscar bomberos en Guadalajara, el directorio incluye 2 registros. El índice municipal permite comparar estas concentraciones y abrir la ficha de cada corporación o base registrada."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Jalisco?",
+   "a": "Las estaciones de bomberos en Jalisco registradas incluyen corporaciones municipales, una estatal, brigadas de PEMEX, servicios aeroportuarios e instalaciones industriales. En cada ficha se identifica el tipo de corporación y el rol de la sede, ya sea central, subestación o única, para interpretar correctamente el listado."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Jalisco?",
+   "a": "En una emergencia en Jalisco marca 911. Los números telefónicos de las fichas de estaciones de bomberos se publican como referencias para trámites, visitas, capacitación o donaciones; no deben usarse en lugar del número de emergencia. El listado permite consultar los datos disponibles de cada corporación."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Jalisco?",
+   "a": "Para bomberos en Jalisco cotizamos trajes y equipo con base en el riesgo del servicio. Entregamos ficha técnica y factura CFDI 4.0, sin compra mínima y con envío a Jalisco. Indica si requieres protección estructural, forestal, de rescate o para materiales peligrosos para recibir una orientación de producto."
+  }
+ ]
+}

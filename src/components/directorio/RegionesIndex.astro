@@ -3,7 +3,7 @@
 // bloque de total nacional (8 bloques = 2 filas completas de 4).
 // Bloques homologados con TileCard: borde superior rojo, código en
 // franja roja, filas de enlace de 44px+ con conteo y chevron.
-import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf } from '@lib/directorio';
+import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf, enEstado } from '@lib/directorio';
 ---
 <ul class="ri">
   {REGIONES.map((r, i) => {
@@ -19,7 +19,7 @@ import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf } from
         <ul class="ri__list" aria-label={`Estados de la región ${r.nombre}`}>
           {estados.map((e) => (
             <li>
-              <a class="ri__row" href={rutaEstado(e.slug)} title={`Estaciones de bomberos en ${e.nombre}`}>
+              <a class="ri__row" href={rutaEstado(e.slug)} title={`Estaciones de bomberos ${enEstado(e)}`}>
                 <span class="ri__name">{e.nombre}</span>
                 <span class="ri__n" aria-label={`${e.total} estaciones`}>{e.total}</span>
                 <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
@@ -39,7 +39,7 @@ import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf } from
     <p class="ri__big-label">estaciones de bomberos registradas</p>
     <ul class="ri__facts">
       <li><strong>{N.estados}</strong> entidades federativas</li>
-      <li><strong>{nf(N.municipios)}</strong> municipios con estación</li>
+      <li><strong>{nf(N.municipios)}</strong> municipios y alcaldías</li>
       <li><strong>{nf(N.conTelefono)}</strong> con teléfono con fuente</li>
     </ul>
     <a class="ri__cta" href="#directorio">Directorio completo por estado</a>

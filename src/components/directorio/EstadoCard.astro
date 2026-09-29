@@ -5,25 +5,25 @@
 // clave al fondo). La foto se sustituye por una cabecera de datos
 // sobre tinta: el directorio no usa imágenes de relleno.
 // Todo el contenido sale de lib/directorio (cero cifras a mano).
-import { type ResumenEstado, descEstado, rutaEstado, rutaMunicipio, nf } from '@lib/directorio';
+import { type ResumenEstado, descEstado, rutaEstado, rutaMunicipio, nf, enEstado, unidad } from '@lib/directorio';
 
 interface Props { e: ResumenEstado; regionNombre: string }
 const { e, regionNombre } = Astro.props as Props;
 const href = rutaEstado(e.slug);
-const titulo = `Estaciones de bomberos en ${e.nombre}`;
+const titulo = `Estaciones de bomberos ${enEstado(e)}`;
 ---
 <li class="ec">
   <a class="ec__head" href={href} tabindex="-1" aria-hidden="true">
     <span class="ec__region">{regionNombre}</span>
     <span class="ec__num">{nf(e.total)}</span>
     <span class="ec__label">{e.total === 1 ? 'estación registrada' : 'estaciones registradas'}</span>
-    <span class="ec__muni">{e.municipios} {e.municipios === 1 ? 'municipio' : 'municipios'} · {e.coordExactas} con ubicación exacta</span>
+    <span class="ec__muni">{e.municipios} {unidad(e.slug, e.municipios)} · {e.coordExactas} con ubicación exacta</span>
     <span class="ec__code">{e.iso}</span>
   </a>
   <div class="ec__body">
     <h3 class="ec__title"><a href={href}>{titulo}</a></h3>
     <p class="ec__desc">{descEstado(e)}</p>
-    <ul class="ec__subs" aria-label={`Municipios con más estaciones en ${e.nombre}`}>
+    <ul class="ec__subs" aria-label={`${unidad(e.slug) === 'alcaldías' ? 'Alcaldías' : 'Municipios'} con más estaciones ${enEstado(e)}`}>
       {e.topMunicipios.map((m) => (
         <li>
           <a class="ec__sub" href={rutaMunicipio(e.slug, m.slug)}>
@@ -34,7 +34,7 @@ const titulo = `Estaciones de bomberos en ${e.nombre}`;
         </li>
       ))}
     </ul>
-    <a class="ec__cta" href={href}>Bomberos en {e.nombre}</a>
+    <a class="ec__cta" href={href}>Bomberos {enEstado(e)}</a>
   </div>
 </li>
 

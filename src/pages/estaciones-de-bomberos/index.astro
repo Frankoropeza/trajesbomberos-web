@@ -15,6 +15,7 @@ import TileCard from '@components/home/TileCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
 import EstadoCard from '@components/directorio/EstadoCard.astro';
+import Aviso911 from '@components/directorio/Aviso911.astro';
 import RegionesIndex from '@components/directorio/RegionesIndex.astro';
 import CifrasDirectorio from '@components/directorio/CifrasDirectorio.astro';
 import { tilesFamilias, tileConjunto } from '@lib/catalogo/tiles';
@@ -27,6 +28,7 @@ import {
   RESUMEN_ESTADOS,
   RESUMEN_NACIONAL as N,
   rutaEstado,
+  enEstado,
   pct,
   nf,
 } from '@lib/directorio';
@@ -69,7 +71,7 @@ const equipo = [...familias, tileConjunto(familias.length + 1)];
 const faqs = [
   {
     q: '¿Cuántas estaciones de bomberos hay en México?',
-    a: `No existe un censo nacional único y público de estaciones de bomberos. Este directorio registra ${nf(N.total)} estaciones en los 32 estados y ${nf(N.municipios)} municipios, todas con al menos una fuente pública localizable. La cifra crece conforme se confirman nuevas estaciones.`,
+    a: `No existe un censo nacional único y público de estaciones de bomberos. Este directorio registra ${nf(N.total)} estaciones en los 32 estados y ${nf(N.municipios)} municipios y alcaldías, todas con al menos una fuente pública localizable. La cifra crece conforme se confirman nuevas estaciones.`,
   },
   {
     q: '¿A qué número llamo en una emergencia?',
@@ -95,7 +97,7 @@ const faqs = [
 
 // Schema: ItemList con las 32 páginas de estado + CollectionPage
 const directoryItems = RESUMEN_ESTADOS.map((e) => ({
-  name: `Estaciones de bomberos en ${e.nombre}`,
+  name: `Estaciones de bomberos ${enEstado(e)}`,
   url: `${SITE.url}${rutaEstado(e.slug)}`,
 }));
 const collection = {
@@ -126,7 +128,7 @@ const cta: CtaPreset = {
   h1="Estaciones de bomberos"
   h1Accent="en México"
   lead={`Directorio de ${nf(N.total)} estaciones de bomberos en los 32 estados de la República, organizado por estado y municipio, con la ubicación, la corporación que la opera y la fuente pública de cada dato.`}
-  meta={[`${nf(N.total)} estaciones`, '32 estados', `${nf(N.municipios)} municipios`, 'Fuente pública por ficha']}
+  meta={[`${nf(N.total)} estaciones`, '32 estados', `${nf(N.municipios)} municipios y alcaldías`, 'Fuente pública por ficha']}
   descRight={[
     'Reunimos en un solo lugar las estaciones de bomberos municipales, estatales, de aeropuerto, de bomberos voluntarios, de PEMEX, de CFE y las brigadas industriales que operan en el país. Cada estación tiene su propia ficha: una base física, un registro.',
     'Elige tu estado en el índice por región o en el directorio completo. Si ves un dato desactualizado o falta una estación, escríbenos con la fuente y la corregimos. En una emergencia no busques aquí: marca al 911.',
@@ -135,13 +137,7 @@ const cta: CtaPreset = {
   directoryItems={directoryItems}
   collection={collection}
 >
-  <!-- Aviso de emergencia: siempre visible bajo la franja de secciones -->
-  <aside class="dir-911" aria-label="Número de emergencias">
-    <div class="container dir-911__inner">
-      <span class="dir-911__num">911</span>
-      <p><strong>¿Es una emergencia? Marca al 911.</strong> Es el número único de emergencias en todo México y canaliza tu llamada a la estación que corresponde. Los teléfonos del directorio son para trámites y consultas.</p>
-    </div>
-  </aside>
+  <Aviso911 />
 
   <!-- 1 · Índice de los 32 estados agrupado por región (2 filas de 4) -->
   <section class="section" id="estados">
@@ -249,35 +245,6 @@ const cta: CtaPreset = {
 </PageLayout>
 
 <style>
-  /* Aviso 911: franja clara con acento rojo, bajo la franja de secciones */
-  .dir-911 {
-    background: var(--color-primary-light);
-    border-bottom: 1px solid rgb(200 16 46 / 0.18);
-  }
-  .dir-911__inner {
-    display: flex;
-    align-items: center;
-    gap: 1.1rem;
-    padding-block: 0.95rem;
-  }
-  .dir-911__num {
-    flex: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 4.2rem;
-    padding: 0.35rem 0.6rem;
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-radius: var(--radius);
-    font-family: var(--font-display);
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-  }
-  .dir-911 p { margin: 0; font-size: 0.95rem; color: var(--color-dark); }
-  .dir-911 strong { color: var(--color-primary-dark); }
-
   /* Cómo se arma: 4 pasos en cards homologadas */
   .metodo {
     display: grid;
@@ -306,10 +273,5 @@ const cta: CtaPreset = {
   .metodo__item p { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--color-gray); }
 
   @media (max-width: 1023px) { .metodo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
-  @media (max-width: 640px) {
-    .dir-911__inner { align-items: flex-start; }
-    .dir-911__num { min-width: 3.4rem; font-size: 1.1rem; }
-    .dir-911 p { font-size: 0.88rem; }
-  }
   @media (max-width: 559px) { .metodo { grid-template-columns: 1fr; } }
 </style>

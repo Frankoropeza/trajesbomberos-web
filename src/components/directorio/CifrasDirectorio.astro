@@ -1,138 +1,42 @@
 ---
-// CifrasDirectorio: fila de 4 indicadores + dos tablas (por tipo de
-// corporación y estados con más estaciones). Cifras calculadas en
-// build desde lib/directorio; ninguna se escribe a mano.
-import { RESUMEN_NACIONAL as N, RESUMEN_ESTADOS, TIPO_DESC, rutaEstado, pct, nf } from '@lib/directorio';
+// CifrasDirectorio (hub): 4 indicadores + tabla por tipo de corporación
+// + estados con más estaciones. Cifras calculadas en build desde
+// lib/directorio; ninguna se escribe a mano. Piezas: StatsRow + DataTable.
+import StatsRow from './StatsRow.astro';
+import DataTable from './DataTable.astro';
+import { RESUMEN_NACIONAL as N, RESUMEN_ESTADOS, TIPO_DESC, rutaEstado, pct, nf, enEstado } from '@lib/directorio';
 
 const alta = N.confianza.find(([c]) => c === 'alta')?.[1] ?? 0;
 const stats = [
   { n: nf(N.total), label: 'estaciones registradas', note: `en ${N.estados} entidades federativas` },
-  { n: nf(N.municipios), label: 'municipios con estación', note: 'con al menos una base registrada' },
+  { n: nf(N.municipios), label: 'municipios y alcaldías', note: 'con al menos una estación registrada' },
   { n: pct(N.conFuente, N.total), label: 'con fuente pública citada', note: 'INEGI, gobiernos y corporaciones' },
   { n: nf(N.coordExactas), label: 'con ubicación exacta', note: `${pct(N.coordExactas, N.total)} del directorio` },
 ];
 const top = [...RESUMEN_ESTADOS].sort((a, b) => b.total - a.total || a.nombre.localeCompare(b.nombre, 'es')).slice(0, 10);
 ---
-<ul class="cd-stats">
-  {stats.map((s) => (
-    <li class="cd-stat">
-      <span class="cd-stat__n">{s.n}</span>
-      <span class="cd-stat__label">{s.label}</span>
-      <span class="cd-stat__note">{s.note}</span>
-    </li>
-  ))}
-</ul>
-
+<StatsRow stats={stats} />
 <div class="cd-tables">
-  <figure class="cd-table">
-    <figcaption>Estaciones por tipo de corporación</figcaption>
-    <div class="cd-table__wrap">
-      <table>
-        <thead><tr><th scope="col">Tipo</th><th scope="col" class="num">Estaciones</th><th scope="col" class="num">Part.</th><th scope="col" class="desc">Quién la opera</th></tr></thead>
-        <tbody>
-          {N.porTipo.map(([t, n]) => (
-            <tr><th scope="row">{t}</th><td class="num">{nf(n)}</td><td class="num">{pct(n, N.total)}</td><td class="desc">{TIPO_DESC[t] ?? ''}</td></tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  </figure>
-
-  <figure class="cd-table">
-    <figcaption>Estados con más estaciones registradas</figcaption>
-    <div class="cd-table__wrap">
-      <table>
-        <thead><tr><th scope="col" class="num">#</th><th scope="col">Estado</th><th scope="col" class="num">Estaciones</th><th scope="col" class="num">Municipios</th></tr></thead>
-        <tbody>
-          {top.map((e, i) => (
-            <tr><td class="num pos">{String(i + 1).padStart(2, '0')}</td><th scope="row"><a href={rutaEstado(e.slug)}>Bomberos en {e.nombre}</a></th><td class="num">{e.total}</td><td class="num">{e.municipios}</td></tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  </figure>
+  <DataTable
+    caption="Estaciones por tipo de corporación"
+    cols={[{ label: 'Tipo' }, { label: 'Estaciones', num: true }, { label: 'Part.', num: true }, { label: 'Quién la opera', hideMobile: true }]}
+    rows={N.porTipo.map(([t, n]) => [t, nf(n), pct(n, N.total), TIPO_DESC[t] ?? ''])}
+  />
+  <DataTable
+    caption="Estados con más estaciones registradas"
+    cols={[{ label: '#', num: true, accent: true }, { label: 'Estado' }, { label: 'Estaciones', num: true }, { label: 'Municipios', num: true }]}
+    rows={top.map((e, i) => [String(i + 1).padStart(2, '0'), { text: `Bomberos ${enEstado(e)}`, href: rutaEstado(e.slug) }, e.total, e.municipios])}
+  />
 </div>
 <p class="cd-note">Nivel de confianza declarado por ficha: {nf(alta)} estaciones con confianza alta y el resto con confianza media o baja; el nivel se indica en cada ficha. El directorio no pretende ser un censo oficial: registra solo las estaciones con fuente pública localizable.</p>
 
 <style>
-  .cd-stats {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.25rem;
-    list-style: none;
-    margin: 0 0 clamp(2rem, 3.5vw, 3rem);
-    padding: 0;
-  }
-  .cd-stat {
-    display: flex;
-    flex-direction: column;
-    padding: 1.3rem 1.3rem 1.2rem;
-    background: var(--color-white);
-    border: 1px solid rgb(20 22 26 / 0.14);
-    border-top: 3px solid var(--color-primary);
-    border-radius: var(--radius);
-  }
-  .cd-stat__n {
-    font-family: var(--font-display);
-    font-size: clamp(2.2rem, 3vw, 2.9rem);
-    font-weight: 700;
-    line-height: 1;
-    color: var(--color-dark);
-    font-variant-numeric: tabular-nums;
-  }
-  .cd-stat__label { margin-top: 0.5rem; font-weight: 700; color: var(--color-dark); }
-  .cd-stat__note { margin-top: 0.15rem; font-size: 0.84rem; color: var(--color-gray); }
-
   .cd-tables {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
     gap: 1.25rem;
     align-items: start;
   }
-  .cd-table {
-    margin: 0;
-    background: var(--color-white);
-    border: 1px solid rgb(20 22 26 / 0.14);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-  figcaption {
-    padding: 0.85rem 1.1rem;
-    background: var(--color-ink);
-    color: var(--color-white);
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 0.95rem;
-    letter-spacing: 0.01em;
-    border-bottom: 3px solid var(--color-primary);
-  }
-  .cd-table__wrap { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
-  thead th {
-    padding: 0.6rem 1.1rem;
-    background: var(--color-light);
-    color: var(--color-gray);
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: left;
-    border-bottom: var(--border);
-  }
-  tbody th, tbody td {
-    padding: 0.7rem 1.1rem;
-    border-bottom: var(--border);
-    text-align: left;
-    vertical-align: top;
-  }
-  tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
-  tbody th { font-weight: 700; color: var(--color-dark); white-space: nowrap; }
-  tbody th a { color: var(--color-dark); text-decoration: none; }
-  tbody th a:hover { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; }
-  th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
-  td.num { font-weight: 700; }
-  .pos { color: var(--color-primary); font-family: var(--font-display); }
-  .desc { color: var(--color-gray); font-size: 0.84rem; min-width: 16rem; }
   .cd-note {
     margin: 1.4rem 0 0;
     padding-top: 1.2rem;
@@ -141,12 +45,5 @@ const top = [...RESUMEN_ESTADOS].sort((a, b) => b.total - a.total || a.nombre.lo
     color: var(--color-gray);
     max-width: 100ch;
   }
-
   @media (max-width: 1100px) { .cd-tables { grid-template-columns: 1fr; } }
-  @media (max-width: 900px) { .cd-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
-  @media (max-width: 640px) { .desc { display: none; } }
-  @media (max-width: 480px) {
-    .cd-stat { padding: 1rem; }
-    tbody th, tbody td, thead th { padding-inline: 0.75rem; }
-  }
 </style>
