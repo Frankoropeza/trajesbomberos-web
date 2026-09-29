@@ -12716,7 +12716,6 @@
    "lng": -101.19247262,
    "precision": "exacta"
   },
-  "telefono": "(443) 3225-502",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -12863,7 +12862,6 @@
    "lng": -101.22848101,
    "precision": "exacta"
   },
-  "telefono": "(443) 322-5506",
   "sitioWeb": "https://www.morelia.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -12887,7 +12885,7 @@
    },
    {
     "nombre": "morelia.gob.mx — referencia de actividad",
-    "url": "https://www.morelia.gob.mx/saldo-blanco-tras-sismo-proteccion-civil-y-bomberos-de-morelia/"
+    "retirada": "https://www.morelia.gob.mx/saldo-blanco-tras-sismo-proteccion-civil-y-bomberos-de-morelia/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -13084,7 +13082,6 @@
    "lng": -102.07156305,
    "precision": "exacta"
   },
-  "telefono": "(452) 5241-494",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -13161,7 +13158,6 @@
    "lng": -101.7956398,
    "precision": "exacta"
   },
-  "telefono": "(436) 3630-911",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -13280,9 +13276,6 @@
    "precision": "exacta"
   },
   "telefono": "(715) 153-8742",
-  "telefonosAdicionales": [
-   "(715) 121-4115"
-  ],
   "sitioWeb": "https://www.zitacuaro.gob.mx",
   "servicios": [
    "incendios-estructurales",
