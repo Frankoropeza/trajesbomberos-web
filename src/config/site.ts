@@ -200,6 +200,8 @@ export interface BlogCategory {
   seoTitle: string;         // regla de las 3 keywords, <= 60
   seoDescription: string;   // abre con kw1, <= 160
   keywords: readonly string[];
+  /** Guía breve de la categoría: contexto y enlaces al catálogo. */
+  guia?: { titulo: string; parrafos: string[]; enlaces: { label: string; href: string }[] };
 }
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
@@ -213,6 +215,20 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     seoDescription:
       'Cómo especificar equipo de bombero: qué datos debe traer una cotización para que sea comparable con otra y qué revisar antes de firmar la orden.',
     keywords: ['cómo especificar equipo de bombero', 'ficha técnica', 'México'],
+    guia: {
+      titulo: 'Qué hace comparable una cotización',
+      parrafos: [
+        'Dos cotizaciones de traje estructural pueden decir «NFPA 1970» y aun así no ser comparables. Lo que las vuelve comparables es el detalle por partida: el nombre comercial de cada capa del composite —exterior, barrera de humedad y barrera térmica—, los valores de TPP y THL del conjunto terminado, la edición de la norma, el laboratorio que certifica y la corrida de tallas.',
+        'En brigadista y forestal la lógica es la misma aunque cambie la norma: tela, gramaje, si la resistencia a la flama es inherente o tratada y el alcance declarado de la certificación. Sin esos datos por escrito, el precio queda como único criterio, y es justo el que no debería decidir.',
+        'Los artículos de esta categoría explican cada dato y dónde se lee en una ficha técnica; las fichas de cada pieza del catálogo los traen ya ordenados.',
+      ],
+      enlaces: [
+        { label: 'Los ocho datos de la ficha', href: '/#especificar' },
+        { label: 'Trajes estructurales', href: '/trajes/estructural/' },
+        { label: 'Chaquetón estructural de tres capas', href: '/trajes/estructural/chaqueton/' },
+        { label: 'Comparativa de las seis familias', href: '/trajes/' },
+      ],
+    },
   },
   {
     slug: 'normas',
@@ -224,6 +240,20 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     seoDescription:
       'Normas para trajes de bombero: NFPA 1970, NFPA 1850 y las NOM de la STPS explicadas con lo que de verdad te van a pedir en una compra.',
     keywords: ['normas para trajes de bombero', 'NFPA 1970', 'México'],
+    guia: {
+      titulo: 'Qué norma aplica a cada traje',
+      parrafos: [
+        'La NFPA 1970, edición 2025, es la referencia para el traje estructural y de proximidad: consolidó a la antigua NFPA 1971 junto con otras normas de equipo. El equipo forestal y de rescate técnico se rige por la NFPA 1950, y el ciclo de inspección, lavado, reparación y retiro, por la NFPA 1850.',
+        'En México las NFPA son referencia técnica voluntaria: se vuelven exigibles cuando un pliego o una especificación de compra las incorpora. Lo obligatorio para el empleador es la NOM-017-STPS-2024, de equipo de protección personal, y para las brigadas contra incendio, la NOM-002-STPS-2010.',
+        'Aquí se explica qué pide cada norma en la práctica, cómo citarla en una requisición y qué revisar en el certificado.',
+      ],
+      enlaces: [
+        { label: 'Normas aplicables en México', href: '/#normas' },
+        { label: 'Trajes estructurales', href: '/trajes/estructural/' },
+        { label: 'Trajes forestales', href: '/trajes/forestal/' },
+        { label: 'Extricación y rescate', href: '/trajes/extricacion/' },
+      ],
+    },
   },
   {
     slug: 'comparativas',
@@ -235,6 +265,21 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     seoDescription:
       'Comparativas de trajes para bomberos: estructural contra brigadista, aproximación contra entrada y qué familia corresponde a cada operación.',
     keywords: ['comparativas de trajes para bomberos', 'familias', 'México'],
+    guia: {
+      titulo: 'Cómo elegir la familia correcta',
+      parrafos: [
+        'Cada familia de traje responde a un riesgo distinto y no se sustituyen entre sí. El estructural protege en ataque interior; el de brigadista, en fuego incipiente dentro de una planta; el forestal, en jornadas largas de combate de vegetación; el de aproximación, cerca de calor radiante intenso; el de entrada, en el ingreso breve a la flama; y el de extricación, en rescate vehicular y técnico.',
+        'Los errores caros suelen venir de comprar por apariencia: un aluminizado de aproximación no sirve para entrar a la flama, y un traje de brigadista no equivale a uno estructural certificado. La comparación correcta empieza por la operación, no por el catálogo.',
+      ],
+      enlaces: [
+        { label: 'Trajes estructurales', href: '/trajes/estructural/' },
+        { label: 'Trajes de brigadista', href: '/trajes/brigadista/' },
+        { label: 'Trajes forestales', href: '/trajes/forestal/' },
+        { label: 'Trajes de aproximación', href: '/trajes/aproximacion/' },
+        { label: 'Trajes de entrada', href: '/trajes/entrada/' },
+        { label: 'Extricación y rescate', href: '/trajes/extricacion/' },
+      ],
+    },
   },
   {
     slug: 'mantenimiento',
@@ -246,6 +291,18 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     seoDescription:
       'Mantenimiento de trajes para bomberos: inspección, lavado, reparación y retiro del equipo conforme a la NFPA 1850, explicado para estación real.',
     keywords: ['mantenimiento de trajes para bomberos', 'vida útil', 'México'],
+    guia: {
+      titulo: 'Cuánto dura un traje y qué lo acorta',
+      parrafos: [
+        'Conforme a la NFPA 1850, el traje estructural se retira a los diez años de su fecha de fabricación aunque se vea en buen estado, y antes si una inspección encuentra un daño que no se puede reparar.',
+        'Entre la compra y el retiro hay dos niveles de revisión: la inspección de rutina después de cada uso y la inspección avanzada, al menos una vez al año, acompañada de limpieza avanzada. El lavado doméstico, el almacenamiento con luz solar directa y las reparaciones con material no certificado son lo que más acorta la vida útil.',
+      ],
+      enlaces: [
+        { label: 'Pantalonera estructural', href: '/trajes/estructural/pantalonera/' },
+        { label: 'Capucha antipartículas (monja)', href: '/trajes/estructural/monja/' },
+        { label: 'Trajes estructurales', href: '/trajes/estructural/' },
+      ],
+    },
   },
   {
     slug: 'licitacion',
@@ -257,6 +314,19 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     seoDescription:
       'Compra de trajes para bomberos por licitación o vía corporativa: expediente, pliego, certificados y la documentación que no te descalifica.',
     keywords: ['compra de trajes para bomberos', 'licitación', 'México'],
+    guia: {
+      titulo: 'Qué se revisa en una junta de aclaraciones',
+      parrafos: [
+        'En una compra pública el traje se evalúa primero en papel. Los pliegos suelen pedir la norma con su edición, el certificado del laboratorio que lista el producto, la carta del fabricante o del distribuidor, una ficha técnica por partida con valores mínimos de TPP y THL, y la corrida de tallas.',
+        'Una cita desactualizada —por ejemplo, pedir solo «NFPA 1971» cuando la vigente es la NFPA 1970— o una ficha sin los nombres comerciales de las capas bastan para descalificar una propuesta, o para que el área usuaria reciba un equipo distinto al que especificó.',
+        'En compras corporativas el proceso es más corto, pero conviene pedir lo mismo: especificación por escrito, factura CFDI 4.0 y fecha de entrega comprometida.',
+      ],
+      enlaces: [
+        { label: 'Trajes estructurales', href: '/trajes/estructural/' },
+        { label: 'Trajes de brigadista', href: '/trajes/brigadista/' },
+        { label: 'Solicitar cotización', href: '/contacto/' },
+      ],
+    },
   },
 ];
 
