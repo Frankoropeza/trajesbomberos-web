@@ -1,0 +1,110 @@
+{
+  "slug": "puebla",
+  "nombreOficial": "Ley del Sistema Estatal de Protección Civil",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Puebla",
+    "fecha": "2013-03-20"
+  },
+  "ultimaReforma": "2026-01-20",
+  "urlOficial": "https://ojp.puebla.gob.mx/media/k2/attachments/Ley_del_Sistema_Estatal_de_Proteccion_Civil_TEV_20012026.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Unidad Estatal de Protección Civil",
+    "articulo": "Art. 28",
+    "cita": "La Unidad Estatal se integrará por: I. Un Coordinador que será el Subsecretario de Asuntos Políticos y Protección Civil; II. Un Director que será el Director General de Protección Civil; III. Un Subdirector Operativo que será el Director de Protección Civil"
+  },
+  "lead": "Puebla regula la protección civil con la Ley del Sistema Estatal de Protección Civil, que exige Programa Interno, simulacros semestrales y medidas para eventos, gas y materiales peligrosos. Esta guía lo aterriza por artículo para brigadas y responsables de inmuebles.",
+  "panorama": [
+    "Expedida en marzo de 2013 y reformada por última vez el 20 de enero de 2026, la ley organiza el Sistema Estatal de Protección Civil de Puebla. Obliga a los establecimientos de bienes y servicios y a los edificios públicos a elaborar e implementar un Programa Interno (Art. 103), y fija reglas adicionales para eventos masivos, pirotecnia, juegos mecánicos, gas y materiales peligrosos.",
+    "El Ejecutivo del Estado es la autoridad máxima del sistema, que coordina la Secretaría de Gobernación. La Unidad Estatal integra y ejecuta el Programa Estatal (Art. 27) y la encabeza el Subsecretario de Asuntos Políticos y Protección Civil (Art. 28). En cada municipio, la Unidad Municipal ejecuta el Programa Municipal (Art. 61) y promueve el Programa Interno en inmuebles públicos y privados (Art. 63)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos de bienes y servicios y edificios públicos",
+      "obligacion": "Elaborar e implementar un Programa Interno de Protección Civil y realizar al menos dos simulacros al año con las instancias competentes.",
+      "articulo": "Art. 103",
+      "cita": "Los establecimientos de bienes y servicios, así como de edificios públicos, a través de sus responsables o representantes, estarán obligados a elaborar e implementar un Programa Interno de Protección Civil, en términos de esta Ley, su reglamento y demás disposiciones legales aplicables, y a realizar simulacros por lo menos dos veces al año"
+    },
+    {
+      "sujeto": "Establecimientos con afluencia masiva de personas",
+      "obligacion": "Someter su Programa Interno a autorización y supervisión de la Unidad Municipal del lugar donde operan, que lo reporta a la Unidad Estatal.",
+      "articulo": "Art. 104",
+      "cita": "El Programa Interno de los establecimientos de bienes o servicios que por su propia naturaleza o por el uso a que están destinados reciban una afluencia masiva de personas, deberá ser autorizado y supervisado por la Unidad Municipal de la localidad en que se encuentre funcionando"
+    },
+    {
+      "sujeto": "Organizadores de eventos y espectáculos masivos",
+      "obligacion": "Presentar a la Unidad Municipal, antes del evento, un Programa Especial acorde a sus características y difundir al público las medidas clave.",
+      "articulo": "Art. 105",
+      "cita": "Los promotores, organizadores o responsables de la realización de eventos o espectáculos públicos de afluencia masiva, deberán, previa a su realización, elaborar y presentar a la Unidad Municipal un Programa Especial de Protección Civil acorde a las características de tales eventos o espectáculos"
+    },
+    {
+      "sujeto": "Inmuebles obligados a Programa Interno o Especial",
+      "obligacion": "Colocar equipos de seguridad y señalización conforme a las NOM, y contar con luces de emergencia, instructivos y manuales de emergencia.",
+      "articulo": "Art. 106",
+      "cita": "En los lugares a que se refieren los artículos anteriores, deberán colocarse en sitios visibles, equipos de seguridad, señales informativas, preventivas, restrictivas y de obligación, conforme a las Normas Oficiales Mexicanas vigentes; contar con luces de emergencia, equipos de seguridad, instructivos y manuales para situaciones de emergencia"
+    },
+    {
+      "sujeto": "Operaciones con materiales peligrosos o explosivos",
+      "obligacion": "Integrar unidades internas con su propio personal según los requisitos del Reglamento, además de presentar su programa interno ante la autoridad.",
+      "articulo": "Art. 109",
+      "cita": "Los responsables de la administración y operación de las actividades relacionadas con el manejo, almacenamiento, distribución, transporte y utilización de materiales peligrosos, hidrocarburos y explosivos, deberán integrar las unidades internas con su respectivo personal"
+    },
+    {
+      "sujeto": "Establecimientos que usan gas natural o LP",
+      "obligacion": "Contar con dictamen de sus instalaciones de aprovechamiento de gas emitido por una Unidad Verificadora acreditada.",
+      "articulo": "Art. 111",
+      "cita": "Todo establecimiento de bienes o servicios que use gas natural o licuado de petróleo en sus procesos operativos, deberá contar con un dictamen de sus instalaciones de aprovechamiento, practicado por una Unidad Verificadora, acreditada por la autoridad competente en la especialidad respectiva."
+    },
+    {
+      "sujeto": "Empresas con Unidad Interna de Protección Civil",
+      "obligacion": "Mantener capacitado al personal y cumplir la periodicidad de simulacros; omitirlo está tipificado como infracción.",
+      "articulo": "Art. 136, fr. III",
+      "cita": "No contar con Unidad Interna o Programa Interno o Especial de Protección Civil, de conformidad con lo dispuesto en esta Ley; III. No mantener debidamente capacitado al personal o no realizar simulacros con la periodicidad establecida en esta Ley y en su Reglamento"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley poblana describe la brigada como el grupo de personas de un inmueble capacitadas en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, designadas por la Unidad Interna (Art. 2, fr. VII). A esa Unidad Interna, también llamada Brigada Institucional, le toca elaborar, operar y vigilar el Programa Interno (Art. 2, fr. LIV, y Art. 73).",
+    "Los establecimientos deben realizar simulacros por lo menos dos veces al año, y la Unidad Estatal puede evaluarlos (Art. 103). Las Unidades Internas son la primera instancia de actuación especializada ante una emergencia en su instalación (Art. 71). Fuera de la empresa, la Red Estatal de Brigadistas Comunitarios agrupa a voluntarios capacitados que apoyan en alertamiento y evacuación (Arts. 94 y 95)."
+  ],
+  "equipoDuo": [
+    "El artículo 106 es de los más concretos del país en equipo: pide equipos de seguridad visibles, señalización conforme a las Normas Oficiales Mexicanas, luces de emergencia e instructivos. Para juegos mecánicos temporales, el artículo 105 Ter exige incluir extintores en su programa interno de seguridad. La NOM-002-STPS-2010, de carácter federal, detalla la dotación contra incendio de un centro de trabajo.",
+    "Una brigada que combate conatos, evacúa y rescata necesita equipo acorde a cada función. En LORICA fabricamos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> para esas tareas; la NOM-017-STPS-2024, norma federal sobre equipo de protección personal, sirve para asignarlo según el análisis de riesgo de cada puesto."
+  ],
+  "sancionesDuo": [
+    "Las sanciones son apercibimiento y multa, que puede aumentar en caso de reincidencia (Art. 137). No tener Unidad Interna o Programa Interno, o no capacitar ni hacer simulacros, se castiga con multa y clausura temporal si se trata de persona jurídica (Art. 140, fr. II); las faltas más graves llegan a la clausura definitiva."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Puebla y dónde consulto el texto?",
+      "a": "Es la Ley del Sistema Estatal de Protección Civil, publicada en el Periódico Oficial del Estado el 20 de marzo de 2013. Su reforma más reciente anotada es del 20 de enero de 2026. El texto vigente actualizado lo publica el Orden Jurídico Poblano, portal normativo del Gobierno del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Puebla?",
+      "a": "El artículo 103 obliga a los establecimientos de bienes y servicios y a los edificios públicos. Si reciben afluencia masiva, el programa lo autoriza y supervisa la Unidad Municipal (Art. 104), y quienes manejan materiales peligrosos, hidrocarburos o explosivos también deben presentarlo (Art. 108)."
+    },
+    {
+      "q": "¿Cada cuánto hay que hacer simulacros en Puebla?",
+      "a": "Por lo menos dos veces al año, en coordinación con las instancias competentes, según el artículo 103. La Unidad Estatal puede evaluar los simulacros previo pago de derechos, y no realizarlos con la periodicidad debida es una infracción prevista en el artículo 136."
+    },
+    {
+      "q": "¿Qué pide la ley poblana para espectáculos con pirotecnia?",
+      "a": "El artículo 105 Bis exige, además de los permisos de la Secretaría de la Defensa Nacional, un programa interno de seguridad con croquis de ubicación, programa de quema y póliza de seguro de responsabilidad civil, así como certificados de capacitación en quema y primeros auxilios cada seis meses."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Puebla?",
+      "a": "La ley pide equipos de seguridad, señalización, luces de emergencia e instructivos en el inmueble (Art. 106), sin listar prendas. Para la brigada suele considerarse casco, guantes, calzado de seguridad, chaleco reflejante, lámpara, botiquín y extintores, definidos con la NOM-002-STPS-2010 y el análisis de riesgo."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Orden Jurídico Poblano · Ley del Sistema Estatal de Protección Civil, texto vigente al 20/01/2026 (PDF)",
+      "url": "https://ojp.puebla.gob.mx/media/k2/attachments/Ley_del_Sistema_Estatal_de_Proteccion_Civil_TEV_20012026.pdf"
+    },
+    {
+      "nombre": "Orden Jurídico Poblano · Legislación del Estado, Ley del Sistema Estatal de Protección Civil",
+      "url": "https://ojp.puebla.gob.mx/legislacion-del-estado/item/246-ley-del-sistema-estatal-de-proteccion-civil"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

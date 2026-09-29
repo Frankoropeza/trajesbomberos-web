@@ -27,7 +27,7 @@ export function getStaticPaths() {
 }
 
 const { ley, e } = Astro.props as { ley: LeyPC; e: Entidad };
-const REVISION = 'octubre de 2026';
+const REVISION = fechaLarga(`${ley.verificadoEl}-01`).replace(/^1 de /, ''); // «septiembre de 2026»
 const DE = deEstado(e); // «de Jalisco», «del Estado de México», «de la Ciudad de México»
 const path = rutaLeyPC(e.slug);
 const r = RESUMEN_ESTADOS.find((x) => x.slug === e.slug)!;
@@ -53,7 +53,7 @@ const menuItems = [
 ];
 
 const ficha = [
-  ['Nombre oficial', ley.numero ? `${ley.nombreOficial} (${ley.numero})` : ley.nombreOficial],
+  ['Nombre oficial', ley.numero && !ley.nombreOficial.includes(ley.numero) ? `${ley.nombreOficial} (Ley Número ${ley.numero})` : ley.nombreOficial],
   ['Publicación', `${ley.publicacion.medio}, ${fechaLarga(ley.publicacion.fecha)}`],
   ['Última reforma', ley.ultimaReforma ? fechaLarga(ley.ultimaReforma) : 'Sin reforma registrada en la fuente oficial'],
   ['Texto vigente', { text: 'Consultar en la fuente oficial', href: ley.urlOficial, ext: true }],

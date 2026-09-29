@@ -21,6 +21,7 @@ import BotonesConteo from '@components/directorio/BotonesConteo.astro';
 import { tilesEquipo } from '@lib/directorio-equipo';
 import type { CtaPreset } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
+import { LEYES_PC, rutaLeyPC } from '@lib/leyes-proteccion-civil';
 import { SITE, CONTACT, WA_MESSAGES } from '@config/site';
 import {
   BASE_DIRECTORIO,
@@ -32,6 +33,7 @@ import {
   pct,
   nf,
   MUNICIPIOS_PAGINA, rutaMunicipio, ENTIDADES as ENT_CIUDADES,
+  deEstado,
 } from '@lib/directorio';
 
 const path = BASE_DIRECTORIO;
@@ -48,6 +50,7 @@ const menuItems = [
   { label: 'Índice por región', href: '#estados' },
   { label: 'Directorio por estado', href: '#directorio' },
   { label: 'Ciudades', href: '#ciudades' },
+  ...(LEYES_PC.length ? [{ label: 'Normativa', href: '#normativa' }] : []),
   { label: 'Cifras', href: '#cifras' },
   { label: 'Cómo verificamos', href: '#metodologia' },
   { label: 'Equipo para bomberos', href: '#equipo' },
@@ -194,6 +197,24 @@ const cta: CtaPreset = {
           title: `Bomberos en ${m.comun}`,
         }))}
       />
+      {LEYES_PC.length > 0 && (
+        <div class="normativa" id="normativa">
+          <SectionHeading
+            eyebrow="Normativa de protección civil"
+            title="Ley de Protección Civil por estado"
+            duo={[
+              `Resumimos la ley de protección civil vigente de ${LEYES_PC.length === 32 ? 'los 32 estados' : `${LEYES_PC.length} estados`}: qué exige a empresas, inmuebles y brigadas, con el artículo y el enlace al texto oficial de cada congreso.`,
+              'Sirve para preparar el programa interno, integrar la brigada y definir su equipo de protección antes de una verificación.',
+            ]}
+          />
+          <ul class="normativa__grid">
+            {LEYES_PC.map((l) => {
+              const ent = ENT_CIUDADES.find((x) => x.slug === l.slug)!;
+              return <li><a href={rutaLeyPC(l.slug)}>Ley de Protección Civil {deEstado(ent)}</a></li>;
+            })}
+          </ul>
+        </div>
+      )}
     </div>
   </section>
 
@@ -270,6 +291,12 @@ const cta: CtaPreset = {
 </PageLayout>
 
 <style>
+  .normativa { margin-top: clamp(3rem, 5vw, 4.5rem); padding-top: clamp(3rem, 5vw, 4.5rem); border-top: var(--border); scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
+  .normativa__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.4rem 1.5rem; }
+  .normativa__grid a { display: block; padding: 0.55rem 0; border-bottom: 1px solid var(--color-gray-light); font-weight: 600; color: var(--color-dark); text-decoration: none; }
+  .normativa__grid a:hover { color: var(--color-primary); }
+  @media (max-width: 1023px) { .normativa__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 479px) { .normativa__grid { grid-template-columns: 1fr; } }
   /* Cómo se arma: 4 pasos en cards homologadas */
   .metodo {
     display: grid;

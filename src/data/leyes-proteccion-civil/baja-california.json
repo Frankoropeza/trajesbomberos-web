@@ -1,0 +1,116 @@
+{
+  "slug": "baja-california",
+  "nombreOficial": "Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Baja California",
+    "fecha": "2017-09-08"
+  },
+  "ultimaReforma": "2026-06-22",
+  "urlOficial": "https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_VII/20260622_LEYPROCIV.PDF",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil de Baja California",
+    "articulo": "Art. 28",
+    "cita": "La Coordinación Ejecutiva del Sistema Estatal recaerá en la Secretaría General de Gobierno por conducto de la Coordinación Estatal, la cual tiene las atribuciones siguientes en materia de protección civil:"
+  },
+  "lead": "La Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California señala quién debe tener programa interno, unidad interna y simulacros. Esta guía reúne sus obligaciones con artículo y cita literal para empresas, inmuebles y brigadas.",
+  "panorama": [
+    "Publicada el 8 de septiembre de 2017 y reformada por última vez el 22 de junio de 2026, la ley es de orden público y regula la integración de los sistemas estatal y municipales, la prevención y el auxilio ante emergencias, y la participación de los sectores privado y social (Art. 1). El Art. 74 clasifica a los obligados a tener programa interno, desde guarderías y hospitales hasta bares y albercas.",
+    "La coordinación ejecutiva del sistema recae en la Secretaría General de Gobierno, por conducto de la Coordinación Estatal de Protección Civil (Art. 28), que opera el Centro de Operaciones de Emergencia (Art. 31). Los ayuntamientos deben establecer su Sistema Municipal, primer nivel de respuesta (Arts. 32 y 34), y cada municipio cuenta con una corporación de bomberos con funciones propias (Art. 54)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Titulares de inmuebles públicos, privados y sociales",
+      "obligacion": "Presentar el programa interno de protección civil ante la autoridad competente para su aprobación, conforme a la ley y su reglamento.",
+      "articulo": "Art. 67",
+      "cita": "Es responsabilidad de la persona propietaria, responsable legal o titular de dependencia, entidad, institución u organismo del sector público, privado o social, presentar el programa interno de protección civil ante las autoridades competentes para su aprobación."
+    },
+    {
+      "sujeto": "Sujetos obligados del Art. 74, fr. I a IV",
+      "obligacion": "Encargar su programa interno a personas acreditadas ante la Coordinación Estatal; abarca guarderías, hospitales, industrias de alto riesgo y bares.",
+      "articulo": "Art. 69",
+      "cita": "Los programas internos señalados en las fracciones I, II, III y IV del artículo 74 de la presente Ley deberán ser desarrollados por personas acreditadas ante la Coordinación Estatal."
+    },
+    {
+      "sujeto": "Instalaciones y servicios con permiso municipal",
+      "obligacion": "Mostrar el programa interno aprobado cuando el ayuntamiento lo solicite para otorgar el permiso de operaciones.",
+      "articulo": "Art. 75",
+      "cita": "Toda instalación o servicio deberá contar con el permiso de operaciones del ayuntamiento donde se encuentre desarrollando sus actividades, para tal efecto, la autoridad municipal respectiva, deberá solicitar al interesado o responsable de la instalación, establecimiento o servicio, el programa interno de protección civil"
+    },
+    {
+      "sujeto": "Promotores de eventos de afluencia masiva",
+      "obligacion": "Presentar a la Coordinación Estatal un programa específico con al menos cinco días hábiles de anticipación y avisar a la unidad municipal.",
+      "articulo": "Art. 79",
+      "cita": "Las personas promotoras, organizadoras o responsables de la realización de eventos o espectáculos públicos de afluencia masiva deberán, con anticipación mínima de cinco días hábiles, presentar a la Coordinación Estatal un programa específico de protección civil"
+    },
+    {
+      "sujeto": "Dependencias y empresas de todos los sectores",
+      "obligacion": "Integrar una Unidad Interna que elabore, actualice y opere el Programa Interno y realice simulacros al menos tres veces al año.",
+      "articulo": "Art. 82",
+      "cita": "integrarán a su estructura orgánica Unidades Internas de Protección Civil como órgano normativo y operativo responsable de desarrollar y dirigir las acciones de protección civil, así como elaborar, actualizar, operar y vigilar el Programa Interno de Protección Civil y realizar simulacros por lo menos tres veces al año"
+    },
+    {
+      "sujeto": "Responsables de organizar simulacros",
+      "obligacion": "Avisar por escrito a la autoridad de protección civil con un mínimo de quince días hábiles antes de cada simulacro.",
+      "articulo": "Art. 133",
+      "cita": "En todos los simulacros se deberá contar con un aviso por escrito a las autoridades de protección civil correspondientes, el cual se hará con un mínimo de quince días hábiles previos a su realización."
+    },
+    {
+      "sujeto": "Unidades Internas de Protección Civil",
+      "obligacion": "Conservar evidencia de cada simulacro: participantes, fotografías, oficios enviados a la autoridad y acta firmada por cada brigada.",
+      "articulo": "Art. 137",
+      "cita": "Toda Unidad Interna de Protección Civil deberá contar con evidencia documental de los simulacros realizados, que contenga, por lo menos, personal participante, material fotográfico, copia de oficios girados a las autoridades correspondientes, así como acta de resultados firmada por un representante de cada brigada."
+    },
+    {
+      "sujeto": "Brigadistas de centros de trabajo",
+      "obligacion": "Abstenerse de combatir incendios estructurales en su centro de trabajo, pues la ley no los considera bomberos profesionales.",
+      "articulo": "Art. 87",
+      "cita": "A ninguna persona brigadista se le considerará como bombero profesional, por lo que no deberá realizar ninguna actividad relativa al combate de incendios estructurales dentro de su centro de trabajo"
+    }
+  ],
+  "brigadasDuo": [
+    "Las dependencias y empresas de los sectores público, privado y social integran una Unidad Interna que elabora y opera el Programa Interno (Art. 82). La ley define la brigada como el grupo capacitado en primeros auxilios, combate a conatos de incendio, evacuación y búsqueda y rescate (Art. 84), y pide dar a los brigadistas facilidades para capacitarse y entrenar (Art. 85).",
+    "Sobre simulacros, el Art. 82 habla de al menos tres al año y el Art. 135 de una periodicidad de dos, con evaluación escrita de la Unidad Interna; vale confirmar el criterio con la autoridad local. Cada simulacro se avisa por escrito con quince días hábiles de anticipación (Art. 133) y se documenta con fotos, lista de participantes y acta firmada por cada brigada (Art. 137)."
+  ],
+  "equipoDuo": [
+    "La ley bajacaliforniana marca un límite claro: el brigadista no es bombero profesional, no debe combatir incendios estructurales en su centro de trabajo ni usar fuera de él su equipo de protección personal, salvo que esté certificado (Art. 87). A las corporaciones de bomberos les exige equipo e instrumentos certificados por normas nacionales o internacionales (Art. 131).",
+    "Por eso, en LORICA distinguimos entre <a href=\"/trajes/brigadista/\">trajes para brigadista</a>, pensados para evacuación y conatos, y <a href=\"/trajes/estructural/\">trajes estructurales</a> para corporaciones de bomberos. La NOM-002-STPS-2010 orienta la protección contra incendios en centros de trabajo y la NOM-017-STPS-2024 guía la selección del equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "Las unidades de protección civil pueden imponer amonestación, multa, clausura temporal o definitiva, total o parcial, suspensión o revocación de autorizaciones y arresto administrativo hasta por 36 horas (Art. 148). Para fijarlas se consideran el daño o peligro, la gravedad, la condición de la persona infractora y la reincidencia (Art. 150)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Baja California y dónde consultarla?",
+      "a": "Es la Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California, publicada el 8 de septiembre de 2017 en el Periódico Oficial del Estado. Su última reforma, el Decreto 287, se publicó el 22 de junio de 2026. El Congreso del Estado ofrece el texto en PDF y Word."
+    },
+    {
+      "q": "¿Quién debe tener programa interno de protección civil en Baja California?",
+      "a": "El Art. 74 enumera a los obligados: centros para personas vulnerables, industrias de alto riesgo, edificios estratégicos como hospitales, escuelas y estaciones de bomberos, y establecimientos de esparcimiento o culto en áreas cerradas. El programa se presenta ante la autoridad competente para su aprobación (Art. 67)."
+    },
+    {
+      "q": "¿Qué pide la ley sobre brigadas y simulacros?",
+      "a": "Cada Unidad Interna organiza brigadas capacitadas en primeros auxilios, conatos de incendio, evacuación y rescate (Art. 84). Los simulacros se avisan por escrito con quince días hábiles de anticipación (Art. 133), se evalúan por escrito (Art. 135) y se documentan con acta firmada por cada brigada (Art. 137)."
+    },
+    {
+      "q": "¿Puede una brigada interna combatir un incendio estructural en Baja California?",
+      "a": "No. Según el Art. 87, ninguna persona brigadista se considera bombero profesional, por lo que no debe combatir incendios estructurales en su centro de trabajo ni portar fuera de él su equipo de protección personal, salvo que la corporación de bomberos del municipio la certifique."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Baja California?",
+      "a": "La ley no fija una lista, pero sí el alcance: primeros auxilios, conatos de incendio, evacuación, búsqueda y rescate (Art. 84). En la práctica suele traducirse en casco, guantes, calzado de seguridad, chaleco de alta visibilidad, botiquín, extintores y radios, según el análisis de riesgo y la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Baja California · Ley de Protección Civil y Gestión Integral de Riesgos (PDF)",
+      "url": "https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_VII/20260622_LEYPROCIV.PDF"
+    },
+    {
+      "nombre": "Congreso del Estado de Baja California · Trabajo legislativo, leyes vigentes",
+      "url": "https://www.congresobc.gob.mx/TrabajoLegislativo/Leyes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

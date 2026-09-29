@@ -1,0 +1,116 @@
+{
+  "slug": "colima",
+  "nombreOficial": "Ley de Protección Civil del Estado de Colima",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial «El Estado de Colima»",
+    "fecha": "2011-10-29"
+  },
+  "ultimaReforma": "2025-11-15",
+  "urlOficial": "https://congresocol.gob.mx/web/Sistema/uploads/LegislacionEstatal/LeyesEstatales/proteccion_civil_15noviembre2025.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Unidad Estatal de Protección Civil (UEPC)",
+    "articulo": "Art. 45",
+    "cita": "Se crea la Unidad Estatal de Protección Civil, como un organismo público descentralizado del Gobierno del Estado, con personalidad jurídica, patrimonio propio, autonomía técnica y de gestión para el cumplimiento de sus objetivos y fines"
+  },
+  "lead": "La Ley de Protección Civil del Estado de Colima exige a empresas y centros laborales programa interno, unidad interna y cuatro simulacros al año en fechas fijas. Aquí se resumen sus obligaciones para empresas, inmuebles y eventos, con artículo y cita literal.",
+  "panorama": [
+    "Publicada el 29 de octubre de 2011 y reformada por última vez el 15 de noviembre de 2025, la ley es de orden público y obliga a autoridades, organizaciones públicas, privadas y sociales y a todos los habitantes del estado (Art. 1o.). A las empresas industriales, comerciales y de servicios les pide elaborar un Programa Interno, capacitar a su personal e implementar la unidad interna, con autorización de la autoridad (Art. 9o.).",
+    "El Sistema Estatal de Protección Civil (SEPROC) reúne al Gobernador, el Consejo Estatal, la Unidad Estatal de Protección Civil (UEPC), los sistemas y consejos municipales, las unidades municipales (UMPC), las unidades internas y los grupos voluntarios (Art. 27). La UEPC es un organismo público descentralizado (Art. 45); cada ayuntamiento crea su UMPC (Art. 76), que informa cada mes a la UEPC (Art. 9o.)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Edificaciones con afluencia masiva de personas",
+      "obligacion": "Elaborar y cumplir un programa interno de protección civil, con asesoría técnica de la UMPC y, en su caso, de la UEPC.",
+      "articulo": "Art. 8",
+      "cita": "Los administradores, gerentes, poseedores, arrendatarios o propietarios de edificaciones que por su uso y destino reciban una afluencia masiva de personas, están obligados a elaborar y cumplir un programa interno de protección civil"
+    },
+    {
+      "sujeto": "Empresas industriales, comerciales o de servicios",
+      "obligacion": "Elaborar su Programa Interno, capacitar al personal e implementar la unidad interna, con autorización y acreditación de la UMPC o la UEPC.",
+      "articulo": "Art. 9",
+      "cita": "Es obligación de las empresas, ya sean industriales, comerciales o de servicios, elaborar un Programa Interno de Protección Civil, capacitar a su personal en esta materia e implementar la unidad interna en los casos que se determinen"
+    },
+    {
+      "sujeto": "Centros laborales y desarrollos habitacionales nuevos",
+      "obligacion": "Presentar un estudio de riesgos de instalaciones y actividades antes de iniciar operaciones, y renovarlo si cambian las actividades o el inmueble.",
+      "articulo": "Art. 19",
+      "cita": "Toda negociación, centro laboral e inmuebles que reciban una afluencia masiva de personas, así como desarrollos o conjuntos habitacionales de nueva creación, deberán elaborar, previo a su inicio de actividades y conforme a lo que disponga el Reglamento, un estudio de riesgos de sus instalaciones y actividades"
+    },
+    {
+      "sujeto": "Empresas industriales, de servicios y centros laborales",
+      "obligacion": "Integrar su Unidad Interna, contar con un sistema de prevención, capacitar al personal y realizar al menos cuatro simulacros por año.",
+      "articulo": "Art. 106",
+      "cita": "adecuado a las actividades que realicen, capacitando en esta materia a las personas que laboren en ellas. Dichos centros de trabajo deberán realizar, por lo menos, cuatro simulacros por año."
+    },
+    {
+      "sujeto": "Centros de trabajo y dependencias públicas",
+      "obligacion": "Hacer los simulacros el 21 de enero, 6 de mayo, 12 de julio y 19 de septiembre, con la hipótesis que la ley asigna a cada fecha.",
+      "articulo": "Art. 106 Bis",
+      "cita": "Los simulacros a que se refieren los artículos 105 y 106 de la presente ley deberán realizarse en las siguientes fechas e hipótesis"
+    },
+    {
+      "sujeto": "Establecimientos de bienes o servicios",
+      "obligacion": "Someter el programa interno a evaluación y autorización de la UEPC o la UMPC, que emite el certificado de cumplimiento.",
+      "articulo": "Art. 108",
+      "cita": "El programa Interno de los establecimientos de bienes o servicios, deberá ser evaluado y autorizado por la UEPC o UMPC, de conformidad a sus atribuciones, emitiendo el certificado de cumplimiento correspondiente."
+    },
+    {
+      "sujeto": "Organizadores de eventos de concentración masiva",
+      "obligacion": "Elaborar un programa especial y entregarlo a la autoridad de protección civil al menos quince días hábiles antes del evento.",
+      "articulo": "Art. 146 Bis",
+      "cita": "Previo a la realización de eventos de concentración masiva, el organizador deberá elaborar un programa especial de protección civil de acuerdo a las características del evento y el lugar donde se llevará a cabo"
+    },
+    {
+      "sujeto": "Consultores y capacitadores en protección civil",
+      "obligacion": "Estar acreditados por la UEPC o una autoridad nacional antes de asesorar, capacitar, evaluar o elaborar programas internos.",
+      "articulo": "Art. 12",
+      "cita": "Para que los particulares o dependencias públicas puedan ejercer la actividad de asesoría, capacitación, evaluación y elaboración de programas internos de protección civil, deberán contar con el registro expedido por la Unidad Estatal de Protección Civil"
+    }
+  ],
+  "brigadasDuo": [
+    "En Colima, cada empresa industrial, de servicios o centro laboral integra su Unidad Interna de Protección Civil, capacita a su personal y realiza al menos cuatro simulacros al año (Art. 106). Desde la reforma de noviembre de 2025 esos ejercicios tienen fecha e hipótesis fijas: 21 de enero y 19 de septiembre (sismo), 6 de mayo (inundación, tsunami o huracán) y 12 de julio (erupción volcánica o incendio), según el Art. 106 Bis.",
+    "La ley define la brigada como el grupo organizado dentro de un inmueble y adiestrado en primeros auxilios, combate a conatos de incendio, evacuación y búsqueda y rescate (Art. 4o.). En las dependencias públicas, la unidad interna se forma con al menos cuatro brigadas identificadas por color: verde (evacuación), rojo (incendios), naranja (búsqueda y rescate) y azul (primeros auxilios), según el Art. 105."
+  ],
+  "equipoDuo": [
+    "El Art. 10 pide que toda edificación distinta de casa habitación unifamiliar señale zonas de seguridad, puntos de reunión, rutas de evacuación y equipo contra incendio, y el Art. 146 Sexies exige equipos de seguridad visibles en establecimientos y eventos. Para dotar a cada brigada, la NOM-002-STPS-2010, de carácter federal, orienta sobre prevención y combate de incendios en centros de trabajo.",
+    "Los colores que el Art. 105 asigna a las brigadas ayudan a distinguir funciones durante una evacuación. En LORICA ofrecemos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> para cada función de la brigada; la NOM-017-STPS-2024, norma federal de equipo de protección personal, sirve para seleccionarlo según el riesgo."
+  ],
+  "sancionesDuo": [
+    "La UEPC y las UMPC imponen las sanciones (Art. 147). El Art. 148 prevé clausura temporal o definitiva, demolición, arresto administrativo, multa, desocupación o cierre de inmuebles, cancelación de la inscripción de grupos voluntarios y decomiso; la clausura y la demolición requieren dictamen técnico."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Colima y dónde se consulta?",
+      "a": "Es la Ley de Protección Civil del Estado de Colima, publicada el 29 de octubre de 2011 en el Periódico Oficial «El Estado de Colima». Su última reforma, el Decreto 184, se publicó el 15 de noviembre de 2025. El texto completo está en la sección de Leyes Estatales del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Colima?",
+      "a": "Los inmuebles de afluencia masiva (Art. 8o.), las empresas industriales, comerciales y de servicios (Art. 9o.) y los inmuebles de los sectores público, privado y social que señale el Reglamento (Art. 88). Lo elabora la unidad interna, y la UEPC o la UMPC lo evalúa y autoriza (Art. 108)."
+    },
+    {
+      "q": "¿Qué exige la ley sobre brigadas y simulacros?",
+      "a": "Empresas y centros laborales deben integrar su unidad interna, capacitar a su personal y hacer cuatro simulacros al año (Art. 106) en las fechas del Art. 106 Bis. El programa interno debe incluir apartados de capacitación y enseñanza y de simulacros (Art. 95)."
+    },
+    {
+      "q": "¿Qué debe hacer un evento con 50 personas o más en Colima?",
+      "a": "El Art. 13 pide informar al inicio a los asistentes las rutas de evacuación, salidas de emergencia, zonas de seguridad, puntos de reunión y equipo contra incendio. En discotecas, bares o palenques el mensaje se repite cada dos horas y requiere el visto bueno de la UMPC y la UEPC."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Colima?",
+      "a": "La ley no fija una lista cerrada, pero exige equipo contra incendio señalizado (Art. 10) y distingue las brigadas por color. Una brigada suele requerir casco, guantes, chaleco o prenda del color de su función, botiquín, lámparas y extintores, dimensionados con la NOM-002-STPS-2010 y el análisis de riesgo."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "H. Congreso del Estado de Colima · Ley de Protección Civil del Estado de Colima (PDF)",
+      "url": "https://congresocol.gob.mx/web/Sistema/uploads/LegislacionEstatal/LeyesEstatales/proteccion_civil_15noviembre2025.pdf"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Colima · Legislación estatal",
+      "url": "https://congresocol.gob.mx/web/www/leyes/index.php"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "zacatecas",
+  "nombreOficial": "Ley de Protección Civil del Estado y Municipios de Zacatecas",
+  "numero": null,
+  "publicacion": {
+    "medio": "Suplemento del Periódico Oficial, Órgano del Gobierno del Estado de Zacatecas",
+    "fecha": "2018-03-14"
+  },
+  "ultimaReforma": "2026-08-22",
+  "urlOficial": "https://www.congresozac.gob.mx/65/ley&cual=164&tipo=pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación de Protección Civil del Estado de Zacatecas",
+    "articulo": "Art. 19",
+    "cita": "La Coordinación de Protección Civil del Estado de Zacatecas es un órgano desconcentrado de la Secretaría General de Gobierno, con autonomía técnica, financiera, de operación y gestión."
+  },
+  "lead": "La Ley de Protección Civil del Estado y Municipios de Zacatecas, vigente desde marzo de 2018, define lo que deben cumplir fábricas, comercios, escuelas, hospitales y hospedajes. Resumimos sus exigencias con cita literal para jefes de brigada y áreas de seguridad.",
+  "panorama": [
+    "Expedida por el Decreto 237 y publicada el 14 de marzo de 2018, la ley zacatecana ha recibido reformas en 2022, 2025 y 2026; la más reciente, del 22 de agosto de 2026, sumó reglas para hospedajes ofrecidos en plataformas digitales (Art. 51 Bis). Es de orden público y obliga a dependencias, empresas e inmuebles de afluencia masiva a operar una Unidad Interna con su Programa Interno (Art. 50).",
+    "El Ejecutivo aplica la ley por conducto de la Coordinación de Protección Civil del Estado (Art. 2), órgano desconcentrado de la Secretaría General de Gobierno (Art. 19) que revisa y autoriza los Programas Internos (Art. 53). Cada municipio tiene su propio sistema, con el Presidente Municipal al frente, un consejo, una coordinación municipal, las unidades internas y los grupos voluntarios (Art. 27)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de afluencia o concentración masiva",
+      "obligacion": "Operar una Unidad Interna de Protección Civil encargada de formular y aplicar el Programa Interno del inmueble.",
+      "articulo": "Art. 50",
+      "cita": "los inmuebles que por su uso o destino reciban afluencia o concentración masiva de personas deberán contar con una Unidad Interna de Protección Civil que formulará y operará el Programa Interno de Protección Civil respectivo."
+    },
+    {
+      "sujeto": "Hospedajes y estancias por plataformas digitales",
+      "obligacion": "Cumplir medidas mínimas de seguridad, prevención de incendios, señalización y rutas de evacuación; exigencia añadida en agosto de 2026.",
+      "articulo": "Art. 51 Bis",
+      "cita": "Los inmuebles destinados a la prestación de servicios de hospedaje o estancia turística eventual mediante plataformas digitales, deberán cumplir con las medidas mínimas de seguridad, prevención de incendios, señalización y rutas de evacuación que establezca la normatividad aplicable."
+    },
+    {
+      "sujeto": "Titulares de inmuebles con Programa Interno",
+      "obligacion": "Elaborar el programa según las características del inmueble, con carta de corresponsabilidad de un consultor acreditado ante la Coordinación Estatal.",
+      "articulo": "Art. 54",
+      "cita": "El Programa Interno de Protección Civil deberá elaborarse acorde a las particularidades, características y actividades del inmueble, acompañarse de carta de corresponsabilidad firmada por consultor con registro vigente ante la Coordinación Estatal"
+    },
+    {
+      "sujeto": "Edificios públicos, escuelas, industrias y comercios",
+      "obligacion": "Practicar al menos dos simulacros por año, avisando a la coordinación estatal o municipal; incluye transporte escolar y de personal.",
+      "articulo": "Art. 76",
+      "cita": "deberán practicarse simulacros de Protección Civil, por lo menos dos veces al año, dando aviso a la Coordinación Estatal o Coordinación Municipal competente."
+    },
+    {
+      "sujeto": "Patrones y responsables de centros de trabajo",
+      "obligacion": "Capacitar a los empleados y dotarlos del equipo de protección civil que requiera su actividad; no hacerlo es infracción.",
+      "articulo": "Art. 120, fr. III",
+      "cita": "No capacitar empleados o no dotarlos de equipo necesario en materia de Protección Civil y prevención de riesgos, atendiendo a la naturaleza de la actividad, tipo de lugar de trabajo, inmueble, construcción o elemento natural"
+    },
+    {
+      "sujeto": "Inmuebles y establecimientos sujetos a la ley",
+      "obligacion": "Mantener equipo fijo o portátil contra incendios conforme a las NOM y en buen estado; carecer de él o tenerlo dañado es infracción.",
+      "articulo": "Art. 120, fr. XI",
+      "cita": "No contar con equipo fijo o portátil contra incendios reglamentados bajo las Normas Oficiales Mexicanas o que el existente se encuentre en mal estado"
+    },
+    {
+      "sujeto": "Empresas con sustancias o residuos peligrosos",
+      "obligacion": "Informar a la Coordinación Estatal sustancia, número CAS, riesgo, cantidad, concentración y hoja de seguridad, cada enero y al cambiar almacenaje.",
+      "articulo": "Art. 71",
+      "cita": "Las empresas que almacenen, comercialicen, produzcan, empleen o generen sustancias, materiales o residuos peligrosos, deberán informar a la Coordinación Estatal las siguientes características de los mismos:"
+    },
+    {
+      "sujeto": "Asesores, capacitadores y consultores",
+      "obligacion": "Estar dados de alta ante la Coordinación Estatal para dar asesoría, capacitación, consultoría o peritaje en protección civil.",
+      "articulo": "Art. 88",
+      "cita": "Los particulares que ejerzan la actividad de asesoría, capacitación, consultoría o peritaje en la materia, deberán contar con el registro respectivo ante la Coordinación Estatal, conforme lo dispone esta Ley y el Reglamento correspondiente."
+    }
+  ],
+  "brigadasDuo": [
+    "Zacatecas define la brigada como el grupo organizado dentro de un inmueble y adiestrado en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, designado por la Unidad Interna (Art. 5, fr. III). El Programa Interno debe prever organización, capacitación, ejercicios y simulacros, y el equipo de identificación y accesorios para brigadistas (Art. 54, fr. I).",
+    "La meta mínima son dos simulacros por año, con aviso a la autoridad (Art. 76); no presentar constancia de ellos es infracción (Art. 120, fr. V). La Coordinación Estatal capacita en prevención y combate contra incendios, evacuación, primeros auxilios, búsqueda y rescate (Art. 22, fr. XXV), y quienes impartan esos cursos por su cuenta deben estar dados de alta ante ella (Art. 88)."
+  ],
+  "equipoDuo": [
+    "Esta ley sí vincula el equipo con el cumplimiento: son infracciones no dotar al personal del equipo necesario (Art. 120, fr. III), carecer de equipo contra incendios conforme a las NOM (fr. XI) o de botiquín completo (fr. XII). El Plan de Contingencias menciona casco, guantes de carnaza y botas de goma (Art. 54, fr. II). La NOM-002-STPS-2010 es la referencia federal para incendios.",
+    "Para equipar a la brigada zacatecana, en LORICA ofrecemos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> con casco, guantes, botas y prendas de alta visibilidad. La selección conviene hacerla con la NOM-017-STPS-2024, norma federal que pide asignar el equipo de protección personal según los riesgos de cada puesto."
+  ],
+  "sancionesDuo": [
+    "Las coordinaciones estatal y municipales pueden imponer multa, clausura definitiva, temporal, parcial o total, suspensión de obras, actividades o servicios, suspensión de eventos o espectáculos y revocación de autorizaciones, incluso varias a la vez según la gravedad (Art. 122). La reincidencia permite duplicar la multa (Art. 123)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Zacatecas y dónde leo el texto?",
+      "a": "Es la Ley de Protección Civil del Estado y Municipios de Zacatecas, publicada en el Suplemento del Periódico Oficial del 14 de marzo de 2018. Su última reforma anotada es del 22 de agosto de 2026 (Decreto 369). El texto vigente se descarga en la sección de leyes de la Legislatura del Estado."
+    },
+    {
+      "q": "¿Quién necesita Unidad Interna y Programa Interno en Zacatecas?",
+      "a": "El artículo 50 enlista fábricas, industrias, comercios, oficinas, escuelas, centros de atención infantil, hospitales, cines, gasolineras, mercados y plazas, entre otros, además de oficinas públicas. El programa lo revisa y autoriza la Coordinación Estatal (Art. 53) y va con carta de corresponsabilidad (Art. 54)."
+    },
+    {
+      "q": "¿Cuántos simulacros exige la ley y qué debe tener la brigada?",
+      "a": "Dos simulacros al año como mínimo, con aviso a la coordinación estatal o municipal (Art. 76). La brigada se integra en la Unidad Interna y se adiestra en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate (Art. 5, fr. III)."
+    },
+    {
+      "q": "¿Qué cambió en 2026 para quienes rentan por plataformas digitales?",
+      "a": "El Decreto 369, publicado el 22 de agosto de 2026, añadió el artículo 51 Bis: los inmuebles de hospedaje o estancia turística eventual ofrecidos por plataformas digitales deben cumplir medidas mínimas de seguridad, prevención de incendios, señalización y rutas de evacuación."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Zacatecas?",
+      "a": "La ley exige equipo contra incendios fijo o portátil conforme a las NOM, botiquín completo y equipo de identificación para brigadistas. Para cada integrante suele requerirse casco, guantes, botas, chaleco reflejante y linterna, definidos con el análisis de riesgos y la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Legislatura del Estado de Zacatecas · Ley de Protección Civil del Estado y Municipios de Zacatecas (PDF)",
+      "url": "https://www.congresozac.gob.mx/65/ley&cual=164&tipo=pdf"
+    },
+    {
+      "nombre": "Legislatura del Estado de Zacatecas · Leyes estatales",
+      "url": "https://www.congresozac.gob.mx/65/leyes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

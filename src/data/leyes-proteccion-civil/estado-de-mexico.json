@@ -1,0 +1,110 @@
+{
+  "slug": "estado-de-mexico",
+  "nombreOficial": "Libro Sexto del Código Administrativo del Estado de México",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial «Gaceta del Gobierno»",
+    "fecha": "2001-12-13"
+  },
+  "ultimaReforma": "2024-04-05",
+  "urlOficial": "https://legislacion.edomex.gob.mx/sites/legislacion.edomex.gob.mx/files/files/pdf/cod/vig/codvig008.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación General de Protección Civil y Gestión Integral del Riesgo (Secretaría General de Gobierno)",
+    "articulo": "Art. 6.4",
+    "cita": "Son autoridades en materia de protección civil, la Secretaría General de Gobierno, la Coordinación General de Protección Civil y Gestión Integral del Riesgo y, los ayuntamientos con las atribuciones que les otorga este Libro."
+  },
+  "lead": "En el Estado de México no hay una ley autónoma: la protección civil se regula en el Libro Sexto del Código Administrativo del Estado de México. Esta guía resume lo que exige a empresas, inmuebles y unidades internas, con artículo y cita literal.",
+  "panorama": [
+    "El Libro Sexto, «De la Protección Civil y Gestión Integral del Riesgo», regula las acciones de protección civil en la entidad y persigue la prevención, el auxilio y la recuperación de la población (Art. 6.1 y 6.2). Forma parte del Código publicado el 13 de diciembre de 2001; sus detalles operativos se remiten a la reglamentación del Libro y a normas técnicas estatales (Art. 6.7, fr. XXI).",
+    "Son autoridades la Secretaría General de Gobierno, la Coordinación General de Protección Civil y Gestión Integral del Riesgo y los ayuntamientos (Art. 6.4). El sistema estatal suma al Gobernador, al consejo estatal, a los presidentes municipales y a los cuerpos de bomberos municipales (Art. 6.6). Cada municipio integra su sistema con consejo, unidades internas, grupos voluntarios, comités ciudadanos y cuerpo de bomberos (Art. 6.12)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Sectores social y privado, en los casos del reglamento",
+      "obligacion": "Establecer y operar unidades internas que protejan a las personas y bienes de sus instalaciones con acciones de prevención, auxilio y recuperación.",
+      "articulo": "Art. 6.17",
+      "cita": "así como las personas de los sectores social y privado en los casos previstos en la reglamentación de este Libro, deberán establecer y operar unidades internas de protección civil, con el objeto de procurar la seguridad tanto de las personas que estén en sus instalaciones como de sus bienes"
+    },
+    {
+      "sujeto": "Unidades internas de protección civil",
+      "obligacion": "Elaborar programas de protección civil y presentarlos ante la Secretaría General de Gobierno por conducto de la Coordinación General.",
+      "articulo": "Art. 6.18",
+      "cita": "Las unidades internas deberán elaborar programas de protección civil que fomenten la cultura de la prevención y proporcionen los conocimientos básicos que permitan el aprendizaje de medidas de autoprotección y de auxilio"
+    },
+    {
+      "sujeto": "Fábricas, comercios, oficinas y lugares abiertos al público",
+      "obligacion": "Practicar simulacros al menos dos veces al año; la ausencia de la autoridad no condiciona su validez.",
+      "articulo": "Art. 6.23",
+      "cita": "deberán practicarse simulacros de protección civil, por lo menos dos veces al año, en coordinación con las autoridades competentes. La asistencia de las autoridades en materia de protección civil no condicionará el cumplimiento, registro y resultado del simulacro."
+    },
+    {
+      "sujeto": "Empresas, escuelas y generadores de mediano y alto riesgo",
+      "obligacion": "Instalar un equipo de alerta temprana que reciba la señal oficial del Sistema de Alerta Sísmica Mexicano donde haya cobertura.",
+      "articulo": "Art. 6.19 Sexies",
+      "cita": "Las escuelas, hospitales, empresas, industrias, centros religiosos, establecimientos mercantiles o de servicios con concentración masiva de personas, unidades multifamiliares, condominios y todos aquellos generadores de mediano y alto riesgo, deberán instalar un equipo de alerta temprana"
+    },
+    {
+      "sujeto": "Construcciones con evaluación técnica de impacto",
+      "obligacion": "Obtener la autorización de la Coordinación General antes de iniciar operaciones, una vez concluida la obra.",
+      "articulo": "Art. 6.24",
+      "cita": "Una vez concluidas las construcciones derivadas del uso del suelo a que se refiere el párrafo anterior, para el inicio de las operaciones se requerirá la autorización de la Secretaría General de Gobierno a través de la Coordinación General de Protección Civil y Gestión Integral del Riesgo."
+    },
+    {
+      "sujeto": "Actividades que pueden generar fenómenos perturbadores",
+      "obligacion": "Tramitar la autorización de protección civil estatal; el reglamento del Libro precisa qué actividades la requieren.",
+      "articulo": "Art. 6.25",
+      "cita": "Requieren autorización de protección civil de la Secretaría General de Gobierno las actividades que pudieran generar fenómenos perturbadores, quien la emitirá a través de la Coordinación General de Protección Civil y Gestión Integral del Riesgo."
+    },
+    {
+      "sujeto": "Establecimientos de bajo riesgo",
+      "obligacion": "Obtener el dictamen de protección civil del municipio, incluidos los comercios que venden bebidas alcohólicas.",
+      "articulo": "Art. 6.25 Bis",
+      "cita": "Corresponde a los Municipios emitir dictamen de protección civil de bajo riesgo, incluyendo a los establecimientos mercantiles que vendan bebidas alcohólicas para su consumo, en envase cerrado o al copeo."
+    }
+  ],
+  "brigadasDuo": [
+    "El Libro Sexto se apoya en las unidades internas: el sector privado debe establecerlas y operarlas en los casos que fija la reglamentación, y son la primera instancia de actuación ante un agente perturbador (Art. 6.17). Sus programas de protección civil se presentan ante la Secretaría General de Gobierno por conducto de la Coordinación General, y en hospitales siguen el Programa Hospital Seguro (Art. 6.18).",
+    "Los simulacros son obligatorios al menos dos veces al año en fábricas, industrias, comercios, oficinas, centros de espectáculos, establecimientos abiertos al público y lugares con artículos pirotécnicos; la ausencia de la autoridad no condiciona su validez (Art. 6.23). Además, quienes tengan conocimientos y experiencia pueden inscribirse de forma individual como brigadistas voluntarios (Art. 6.16)."
+  ],
+  "equipoDuo": [
+    "Un rasgo propio del Estado de México es la alerta sísmica: escuelas, empresas, industrias, comercios con concentración masiva, condominios y generadores de mediano y alto riesgo deben instalar un receptor de la señal oficial del Sistema de Alerta Sísmica Mexicano (Art. 6.19 Sexies). Además, el Art. 6.23 pide instructivos visibles, zonas de seguridad y salidas de emergencia señalizadas.",
+    "Para la brigada contra incendio, la referencia federal es la NOM-002-STPS-2010, y para el equipo de protección personal, la NOM-017-STPS-2024. En LORICA surtimos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/trajes/estructural/\">trajes estructurales</a> para brigadas industriales y para los cuerpos de bomberos municipales que el Art. 6.6 integra al sistema estatal."
+  ],
+  "sancionesDuo": [
+    "La Secretaría General de Gobierno, mediante la Coordinación General, y los municipios sancionan con amonestación con apercibimiento, multa, clausura temporal o definitiva, revocación de inscripciones y demolición (Art. 6.36). Operar sin la autorización correspondiente o sin receptor de alerta sísmica se castiga con multa (Art. 6.37)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la norma de protección civil vigente en el Estado de México y dónde se consulta?",
+      "a": "No hay ley autónoma: rige el Libro Sexto del Código Administrativo del Estado de México, publicado en la Gaceta del Gobierno el 13 de diciembre de 2001. Su última modificación anotada es del 5 de abril de 2024; el Código completo se reformó por última vez el 25 de septiembre de 2026. El texto está en el portal Legistel del gobierno estatal."
+    },
+    {
+      "q": "¿Quién debe tener unidad interna y programa de protección civil?",
+      "a": "Los poderes, dependencias y organismos públicos y, en los casos que fija la reglamentación del Libro, las personas de los sectores social y privado (Art. 6.17). La unidad interna elabora el programa y lo presenta ante la Coordinación General de Protección Civil y Gestión Integral del Riesgo (Art. 6.18)."
+    },
+    {
+      "q": "¿Cuántos simulacros al año exige el Código Administrativo?",
+      "a": "Al menos dos al año en edificios públicos, escuelas, fábricas, industrias, comercios, oficinas, unidades habitacionales, centros de espectáculos y establecimientos abiertos al público, en coordinación con las autoridades (Art. 6.23). Si la autoridad no asiste, el simulacro cuenta igual."
+    },
+    {
+      "q": "¿Mi empresa necesita receptor de alerta sísmica?",
+      "a": "Si es escuela, hospital, empresa, industria, comercio con concentración masiva, condominio o generador de mediano y alto riesgo, el Art. 6.19 Sexies exige un equipo que reciba la señal oficial del Sistema de Alerta Sísmica Mexicano donde haya cobertura. Operar sin él se sanciona con multa (Art. 6.37)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en el Estado de México?",
+      "a": "El Libro Sexto no trae una lista; pide instructivos, señalización y alerta sísmica. Como referencia, una brigada suele usar casco, guantes, chaleco de alta visibilidad, botiquín, lámparas y extintores, definidos con la NOM-002-STPS-2010 y el análisis de riesgo del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Legistel, Gobierno del Estado de México · Código Administrativo del Estado de México (PDF)",
+      "url": "https://legislacion.edomex.gob.mx/sites/legislacion.edomex.gob.mx/files/files/pdf/cod/vig/codvig008.pdf"
+    },
+    {
+      "nombre": "Legistel · Códigos vigentes del Estado de México",
+      "url": "https://legislacion.edomex.gob.mx/codigos/vigentes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

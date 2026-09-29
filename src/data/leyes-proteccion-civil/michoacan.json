@@ -1,0 +1,116 @@
+{
+  "slug": "michoacan",
+  "nombreOficial": "Ley de Protección Civil del Estado de Michoacán de Ocampo",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno Constitucional del Estado de Michoacán de Ocampo",
+    "fecha": "2014-11-25"
+  },
+  "ultimaReforma": "2025-09-02",
+  "urlOficial": "https://so.secoem.michoacan.gob.mx/wp-content/uploads/2026/01/Ley-de-Proteccion-Civil-del-Estado-de-Michoacan-de-Ocampo.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil (Secretaría de Gobierno)",
+    "articulo": "Art. 30",
+    "cita": "La Coordinación Ejecutiva del Sistema Estatal, estará a cargo de la Secretaría de Gobierno de manera directa, misma que será ejercida por conducto de la Coordinación Estatal, la cual tendrá las atribuciones siguientes"
+  },
+  "lead": "Qué exige la Ley de Protección Civil del Estado de Michoacán de Ocampo a negocios, industrias, escuelas y organizadores de eventos: programa interno, unidad interna y medidas mínimas, con artículo y cita literal para responsables de seguridad y brigadas.",
+  "panorama": [
+    "Expedida por el Decreto 350 y publicada el 25 de noviembre de 2014, la ley tuvo su reforma más reciente el 2 de septiembre de 2025, que agregó reglas para eventos masivos y denuncia ciudadana. Obliga a poderes, dependencias, municipios, sectores privado y social y a la población (Art. 2), y exige Programa Interno a todo inmueble destinado al trabajo o a servicios (Art. 62).",
+    "La Secretaría de Gobierno encabeza la Coordinación Ejecutiva del Sistema Estatal por medio de la Coordinación Estatal de Protección Civil (Arts. 20 y 30), que además acredita a consultores y capacitadores (Art. 34). Cada municipio debe operar su propio sistema (Art. 35) y una Coordinación Municipal como primer nivel de respuesta, con titular de experiencia comprobable (Art. 42)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de trabajo o servicios (todos los sectores)",
+      "obligacion": "Contar con Programa Interno de Protección Civil en cada inmueble, edificio o establecimiento destinado al trabajo o a servicios.",
+      "articulo": "Art. 62",
+      "cita": "Todo inmueble, edificio o establecimiento de las dependencias, instituciones, organismos, industrias, empresas o negocios, destinados al trabajo o a la prestación de servicios, pertenecientes a los sectores público, privado, social y económico del Estado y sus Municipios, deberá contar con su respectivo Programa Interno de Protección Civil."
+    },
+    {
+      "sujeto": "Sujetos obligados a Programa Interno",
+      "obligacion": "Crear una Unidad Interna que elabore, actualice, opere y vigile el Programa Interno dentro del inmueble.",
+      "articulo": "Art. 61",
+      "cita": "cada entidad o sujeto obligado, deberá crear una estructura organizacional específica, que se denominará Unidad Interna de Protección Civil; la cual se encargará de elaborar, actualizar, operar y vigilar el cumplimiento de este instrumento"
+    },
+    {
+      "sujeto": "Negocios con afluencia promedio mayor a 50 personas",
+      "obligacion": "Tener Unidad Interna con personal capacitado y Programa Interno; sin ellos la licencia de funcionamiento no se expide o se revoca.",
+      "articulo": "Art. 117",
+      "cita": "Los particulares que se dediquen a actividades en las que se concentre o se reciba una afluencia promedio mayor a 50 personas en sus instalaciones, entre empleados y usuarios, estarán obligados a contar con una Unidad Interna de Protección Civil y a elaborar su correspondiente Programa Interno"
+    },
+    {
+      "sujeto": "Inmuebles con menos de 50 personas en promedio",
+      "obligacion": "Cumplir medidas mínimas: señalización, salida de emergencia, extintor, cinta antiderrapante, botiquín y al menos un empleado capacitado.",
+      "articulo": "Art. 117",
+      "cita": "deberán cumplir con las medidas mínimas de Protección Civil y seguridad que señale el Reglamento de esta Ley, las normas oficiales mexicanas y las de la normatividad municipal, tales como: señalización informativa, preventiva y restrictiva, salida de emergencia, extintor contra fuego"
+    },
+    {
+      "sujeto": "Manejo de materiales peligrosos o inflamables",
+      "obligacion": "Presentar ante la autoridad estatal y municipal los Programas Internos que correspondan a su actividad.",
+      "articulo": "Art. 118",
+      "cita": "cuya actividad sea el manejo, almacenamiento, distribución, transporte, adquisición y/o utilización de materiales peligrosos, hidrocarburos, explosivos, inflamables, corrosivos, reactivos, tóxicos, biológico infecciosos o cualquier otra sustancia equivalente, dentro del territorio del Estado, deberán presentar ante la autoridad estatal y municipal competente, los Programas Internos de Protección Civil que correspondan."
+    },
+    {
+      "sujeto": "Organizadores de eventos masivos",
+      "obligacion": "Entregar un Programa Especial para aprobación y difundir al público sus medidas antes o al inicio del evento.",
+      "articulo": "Art. 110 Bis",
+      "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse Programas Especiales de Protección Civil, los cuales serán entregados oportunamente a las autoridades de Protección Civil para su aprobación y coordinación con otras instancias de seguridad."
+    },
+    {
+      "sujeto": "Locales cerrados de entretenimiento o servicios",
+      "obligacion": "No realizar actos que pongan en peligro a los asistentes, en especial con pirotecnia o fuego.",
+      "articulo": "Art. 110 Ter",
+      "cita": "destinados a la prestación de servicios o a la realización de actividades de entretenimiento, esparcimiento o de cualquier índole similar, quedará estrictamente prohibida la ejecución de actos que pongan en peligro a los asistentes, especialmente los que impliquen uso de pirotecnia o fuego."
+    },
+    {
+      "sujeto": "Consultores, capacitadores y asesores",
+      "obligacion": "Obtener de la Coordinación Estatal la autorización que los faculte antes de asesorar, capacitar o elaborar programas internos.",
+      "articulo": "Art. 14",
+      "cita": "Para que los particulares o las dependencias públicas puedan ejercer la actividad de asesoría, capacitación, evaluación, elaboración de programas internos, de continuidad de operaciones, estudios de vulnerabilidad y riesgos en materia de Protección Civil, deberán contar con el registro que los faculte, expedido por la Coordinación Estatal"
+    }
+  ],
+  "brigadasDuo": [
+    "El eje en Michoacán es la Unidad Interna de Protección Civil, la estructura que cada sujeto obligado crea para elaborar, actualizar y operar su Programa Interno (Art. 61). Si el negocio recibe en promedio más de 50 personas, debe integrarla con personal capacitado que labore ahí; de lo contrario, la licencia de funcionamiento no se expide o puede revocarse (Art. 117).",
+    "La ley no fija cuántos simulacros debe hacer una empresa: encarga a la Coordinación Estatal y a las municipales realizar simulacros preventivos para capacitar a la población (Arts. 30 y 43). Quien preste servicios de integración de brigadas, combate a incendios o primeros auxilios requiere acreditación de la Coordinación Estatal (Art. 34); sin ella, esos servicios quedan prohibidos."
+  ],
+  "equipoDuo": [
+    "Para inmuebles pequeños, la ley michoacana baja a lo concreto: señalización, salida de emergencia, extintor, cinta antiderrapante en escaleras, botiquín y un empleado capacitado (Art. 117). También regula a los Bomberos del Estado, que atienden incendios industriales, fugas y rescates (Art. 81 Quater). La NOM-002-STPS-2010, norma federal, completa los criterios contra incendio en centros de trabajo.",
+    "Cuando la Unidad Interna forma su brigada contra incendio, LORICA la equipa con <a href=\"/trajes/brigadista/\">trajes para brigadista</a>; para cuerpos de bomberos ofrecemos <a href=\"/trajes/estructural/\">trajes estructurales</a> con casco, guantes y botas. La NOM-017-STPS-2024, norma federal de equipo de protección personal, orienta qué asignar a cada puesto."
+  ],
+  "sancionesDuo": [
+    "La Coordinación Estatal y las municipales pueden imponer apercibimiento público, clausura o suspensión temporal o definitiva, multa y suspensión o revocación de permisos y licencias (Art. 111). Las infracciones se califican como leves, graves o muy graves y la reincidencia agrava la sanción; antes pueden dictarse medidas de seguridad (Art. 110)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Michoacán y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Michoacán de Ocampo, publicada el 25 de noviembre de 2014, con última reforma del 2 de septiembre de 2025. La versión que integra esa reforma la difunde el Gobierno del Estado; la compilación del Congreso llega a la reforma de 2023."
+    },
+    {
+      "q": "¿Quién está obligado a tener Programa Interno en Michoacán?",
+      "a": "Todo inmueble o establecimiento de los sectores público, privado, social y económico destinado al trabajo o a servicios (Art. 62), además de escuelas públicas y privadas (Art. 63) y quienes manejan materiales peligrosos, que deben presentarlo ante la autoridad (Art. 118)."
+    },
+    {
+      "q": "¿Qué pide la ley sobre la unidad interna y las brigadas?",
+      "a": "Cada sujeto obligado crea una Unidad Interna que opera el Programa Interno (Art. 61). Con afluencia promedio mayor a 50 personas, debe integrarse con personal capacitado del propio establecimiento, y sin ella no se otorga la licencia de funcionamiento (Art. 117)."
+    },
+    {
+      "q": "¿Se puede usar pirotecnia en un salón o antro cerrado en Michoacán?",
+      "a": "La reforma de septiembre de 2025 prohíbe estrictamente, en espacios cerrados de servicios o entretenimiento, actos que pongan en peligro a los asistentes, en especial con pirotecnia o fuego (Art. 110 Ter). Los eventos masivos, además, requieren un Programa Especial aprobado (Art. 110 Bis)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Michoacán?",
+      "a": "La ley fija un mínimo para inmuebles pequeños: extintor, botiquín, señalización y salida de emergencia. Una brigada formal suele sumar casco, guantes, botas, prendas de alta visibilidad y equipo de comunicación, dimensionados con la NOM-002-STPS-2010 y el análisis de riesgos."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Gobierno del Estado de Michoacán · Ley de Protección Civil del Estado de Michoacán de Ocampo, reforma 2025 (PDF)",
+      "url": "https://so.secoem.michoacan.gob.mx/wp-content/uploads/2026/01/Ley-de-Proteccion-Civil-del-Estado-de-Michoacan-de-Ocampo.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Michoacán · Ley de Protección Civil, compilación con reforma de 2023 (PDF)",
+      "url": "http://congresomich.gob.mx/file/LEY-DE-PROTECCI%C3%93N-CIVIL-DEL-ESTADO-13-JUNIO-DE-2023.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

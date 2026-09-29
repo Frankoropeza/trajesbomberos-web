@@ -1,0 +1,114 @@
+{
+  "slug": "baja-california-sur",
+  "nombreOficial": "Ley de Protección Civil y Gestión de Riesgos para el Estado y Municipios de Baja California Sur",
+  "numero": null,
+  "publicacion": {
+    "medio": "Boletín Oficial del Gobierno del Estado de Baja California Sur",
+    "fecha": "2015-09-01"
+  },
+  "ultimaReforma": "2024-08-20",
+  "urlOficial": "https://www.cbcs.gob.mx/LEYES-BCS/LProteccionCivilyGestionBCS.doc",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Subsecretaría de Protección Civil del Estado de Baja California Sur",
+    "articulo": "Art. 15",
+    "cita": "La Subsecretaría dependerá de la Secretaría General de Gobierno, y se encargará de la elaboración, ejecución y seguimiento de los programas de prevención y gestión de riesgos, en coordinación con dependencias, instituciones y organismos de los sectores público, privado y social"
+  },
+  "lead": "La Ley de Protección Civil y Gestión de Riesgos para el Estado y Municipios de Baja California Sur fija qué establecimientos requieren programa interno y equipamiento de seguridad. Esta guía lo resume con artículo y cita literal para empresas y brigadas.",
+  "panorama": [
+    "Publicada en el Boletín Oficial el 1 de septiembre de 2015, con última reforma del 20 de agosto de 2024, la ley busca proteger la vida, el patrimonio, la planta productiva y el medio ambiente en coordinación con los sectores público, privado y social (Art. 1). Obliga a fábricas, comercios, escuelas, hospitales, gaseras y todo sitio con afluencia masiva o de riesgo a tener programa interno (Art. 51).",
+    "La aplicación corresponde al Gobernador, por conducto de la Secretaría General de Gobierno y de la Subsecretaría de Protección Civil (Art. 3), que coordina la Red Estatal de Brigadistas (Art. 38). El Sistema Municipal es el primer nivel de respuesta (Art. 18) y lo integran el Consejo y la Coordinación Municipal, el Cuerpo de Bomberos municipal, la red municipal de brigadistas y los grupos voluntarios (Art. 19)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos con afluencia masiva o de riesgo",
+      "obligacion": "Contar de forma permanente con programa interno y equipamiento de seguridad, autorizados y supervisados por la Subsecretaría y la Coordinación Municipal.",
+      "articulo": "Art. 51",
+      "cita": "tienen obligación de contar permanentemente con un programa interno de protección civil y el equipamiento de seguridad respectivo, el cual deberá ser autorizado y supervisado por la Subsecretaría, por conducto de la Coordinación Estatal y la Coordinación Municipal de Protección Civil correspondiente."
+    },
+    {
+      "sujeto": "Administradores de sitios con público y organizadores",
+      "obligacion": "Realizar, junto con las autoridades, acciones para orientar y auxiliar a la población ante cualquier contingencia.",
+      "articulo": "Art. 51",
+      "cita": "los propietarios, poseedores, administradores de establecimientos en los que haya afluencia de público y los organizadores o responsables de eventos, deberán en coordinación con las autoridades de protección civil, realizar acciones que permitan orientar y auxiliar a la población en caso de cualquier contingencia."
+    },
+    {
+      "sujeto": "Inmuebles obligados a tener programa interno",
+      "obligacion": "Tener salidas de emergencia y colocar en sitios visibles equipos de seguridad, señales, luces, equipo de emergencia, rutas de evacuación y puntos de reunión.",
+      "articulo": "Art. 52",
+      "cita": "En todos los inmuebles a los que se refiere el artículo anterior tendrán salidas de emergencia, deberán colocarse en sitios visibles y accesibles, equipos de seguridad, señales preventivas, indicativas, prohibitivas, restrictivas e informativas, luces y equipo de emergencia reglamentario según el caso"
+    },
+    {
+      "sujeto": "Organizadores de eventos masivos",
+      "obligacion": "Entregar un programa específico para revisión y aprobación, y difundir sus medidas antes, al inicio, durante y al término del evento.",
+      "articulo": "Art. 53",
+      "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse programas específicos de protección civil, los cuales serán entregados oportunamente a las autoridades correspondientes, para su revisión y en su caso aprobación."
+    },
+    {
+      "sujeto": "Grupos voluntarios de rescate y combate a incendios",
+      "obligacion": "Tramitar su alta ante la Subsecretaría para actuar en rescate, auxilio, combate a incendios, albergues o servicios médicos de urgencia.",
+      "articulo": "Art. 39",
+      "cita": "Para desarrollar sus actividades en materia de protección civil, tales como rescate, auxilio, combate a incendios, administración de albergues, centros de acopio y servicios médicos de urgencias, entre otros, los Grupos Voluntarios Estatal y Municipales deberán tramitar su registro ante la Subsecretaría"
+    },
+    {
+      "sujeto": "Personas que realizan labores de protección civil",
+      "obligacion": "Integrarse de preferencia a la Red de Brigadistas o a un grupo voluntario; si no, darse de alta en la Coordinación Municipal.",
+      "articulo": "Art. 41",
+      "cita": "Las personas que deseen desempeñar labores de protección civil, deberán integrarse o constituirse preferentemente en la Red de Brigadistas o en grupos voluntarios."
+    },
+    {
+      "sujeto": "Particulares sujetos a inspección",
+      "obligacion": "Permitir las inspecciones y supervisiones de protección civil y dar la información necesaria para realizarlas.",
+      "articulo": "Art. 71",
+      "cita": "Las inspecciones y supervisiones de protección civil tienen el carácter de visitas domiciliarias, administrativas y sanitarias, en términos del Artículo 16 de la Constitución Política de los Estados Unidos Mexicanos, por lo que los particulares están obligados a permitirlas"
+    }
+  ],
+  "brigadasDuo": [
+    "En Baja California Sur, el Programa Interno reúne tres piezas: el plan operativo de la Unidad Interna, el plan de continuidad de operaciones y el plan de contingencias (Art. 2). La Unidad Interna, también llamada brigada institucional, es quien lo opera en cada inmueble, y la Subsecretaría fija los lineamientos para presentarlo y aprobarlo (Art. 17).",
+    "Aparte de las brigadas de cada empresa, la ley crea una Red Estatal de Brigadistas formada por voluntarios que se capacitan y trabajan con la Subsecretaría (Art. 36), además de redes municipales. Quien quiera hacer labores de protección civil debe sumarse de preferencia a esa red o a un grupo voluntario (Art. 41). La Subsecretaría imparte cursos, ejercicios y simulacros de evacuación (Art. 17)."
+  ],
+  "equipoDuo": [
+    "La ley sudcaliforniana pide contar permanentemente con el equipamiento de seguridad respectivo (Art. 51) y colocar en sitios visibles equipos de seguridad, señales, luces y equipo de emergencia reglamentario (Art. 52). Para los cuerpos de bomberos, Estado y municipios procurarán presupuesto para equipamiento y equipo de protección (Art. 35). La NOM-002-STPS-2010 orienta la parte contra incendio.",
+    "En LORICA atendemos tanto a brigadas institucionales como a cuerpos de bomberos: <a href=\"/trajes/brigadista/\">trajes para brigadista</a> para evacuación y primera respuesta, y <a href=\"/trajes/estructural/\">trajes estructurales</a> para el combate a incendios. Para asignar el equipo de protección personal de cada puesto, la referencia federal es la NOM-017-STPS-2024."
+  ],
+  "sancionesDuo": [
+    "La Subsecretaría o la Coordinación Municipal pueden aplicar apercibimiento, amonestación, multa, suspensión de actividades, obras o servicios y clausura temporal o definitiva, parcial o total (Art. 72). Se valoran la gravedad, el daño posible, la zona y la reincidencia, y la sanción no exime de corregir las irregularidades (Art. 73)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Baja California Sur y dónde está el texto?",
+      "a": "Es la Ley de Protección Civil y Gestión de Riesgos para el Estado y Municipios de Baja California Sur, publicada en el Boletín Oficial del Gobierno del Estado el 1 de septiembre de 2015. Su última reforma es del 20 de agosto de 2024. El Congreso del Estado publica el texto vigente en formato Word."
+    },
+    {
+      "q": "¿Quién debe tener programa interno de protección civil en Baja California Sur?",
+      "a": "El Art. 51 obliga a dependencias públicas y a propietarios o administradores de fábricas, comercios, oficinas, escuelas, hospitales, cines, mercados, gaseras, talleres y todo establecimiento con afluencia masiva o considerado de riesgo. El programa lo autoriza y supervisa la Subsecretaría."
+    },
+    {
+      "q": "¿Qué dice la ley sobre brigadas?",
+      "a": "Reconoce las brigadas institucionales, que operan el Programa Interno de cada inmueble (Art. 2), y una Red Estatal de Brigadistas voluntarios coordinada por la Subsecretaría (Arts. 36 y 38). Los grupos voluntarios que hagan rescate o combate a incendios deben tramitar su alta ante la Subsecretaría (Art. 39)."
+    },
+    {
+      "q": "¿Qué revisa la autoridad en una inspección de protección civil en Baja California Sur?",
+      "a": "Según el Art. 70, se supervisan maquinaria, instalaciones de gas, capacitación, equipo contra incendio, almacenamiento de químicos y aspectos eléctricos, estructurales e hidráulicos. Las inspecciones tienen carácter de visita domiciliaria y los particulares deben permitirlas (Art. 71)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Baja California Sur?",
+      "a": "La ley exige el equipamiento de seguridad respectivo y equipo de emergencia reglamentario, sin detallar prendas. Como referencia, una brigada suele contar con casco, guantes, calzado de seguridad, chaleco de alta visibilidad, botiquín, extintores y lámparas, definidos por el análisis de riesgo y la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Baja California Sur · Ley de Protección Civil y Gestión de Riesgos (Word)",
+      "url": "https://www.cbcs.gob.mx/LEYES-BCS/LProteccionCivilyGestionBCS.doc"
+    },
+    {
+      "nombre": "Congreso del Estado de Baja California Sur · Página de la ley con fechas de publicación y reforma",
+      "url": "https://www.cbcs.gob.mx/index.php/trabajos-legislativos/leyes?layout=edit&id=7775"
+    },
+    {
+      "nombre": "Congreso del Estado de Baja California Sur · Trabajos legislativos, leyes",
+      "url": "https://www.cbcs.gob.mx/index.php/trabajos-legislativos/leyes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

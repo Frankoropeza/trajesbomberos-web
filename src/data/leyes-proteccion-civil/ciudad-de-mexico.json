@@ -1,0 +1,116 @@
+{
+  "slug": "ciudad-de-mexico",
+  "nombreOficial": "Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México",
+  "numero": null,
+  "publicacion": {
+    "medio": "Gaceta Oficial de la Ciudad de México",
+    "fecha": "2019-06-05"
+  },
+  "ultimaReforma": "2023-04-28",
+  "urlOficial": "https://www.congresocdmx.gob.mx/archivo-a062bdbea11155fbb5aad9cf49120bb7056af51c.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Secretaría de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México",
+    "articulo": "Art. 14, fr. II a V",
+    "cita": "II. Supervisar que la operación y acciones de los integrantes cumplan con los objetivos y principios de la Gestión Integral de Riesgos y Protección Civil; III. Supervisar el correcto funcionamiento del Sistema; IV. Instalar el Comité de Emergencias; V. Ejecutar, cumplir y vigilar el cumplimiento de la presente Ley y otras disposiciones en la materia;"
+  },
+  "lead": "En la capital, la norma aplicable es la Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México. Aquí resumimos qué pide a comercios, industrias, centros comerciales y organizadores de eventos, con artículo y cita literal para cada obligación.",
+  "panorama": [
+    "La ley se publicó en la Gaceta Oficial el 5 de junio de 2019, sustituyó a la Ley del Sistema de Protección Civil del Distrito Federal y su última reforma es del 28 de abril de 2023. Clasifica los establecimientos por nivel de riesgo mediante un cuestionario: los de mediano y alto riesgo requieren Programa Interno y seguro de responsabilidad civil; los de bajo riesgo, medidas preventivas básicas.",
+    "La Secretaría de Gestión Integral de Riesgos y Protección Civil coordina el Sistema y vigila el cumplimiento de la ley (Art. 14). En lugar de municipios, la operación territorial recae en las dieciséis alcaldías: cada una instala su Unidad de Gestión Integral de Riesgos y Protección Civil, preside su Consejo y actualiza cada año su Atlas de Riesgos (Art. 15). Las alcaldías verifican y sancionan a los particulares (Art. 218)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos mercantiles de mediano y alto riesgo",
+      "obligacion": "Implementar Programa Interno según el cuestionario de nivel de riesgo, con vigencia de cinco años; en establecimientos industriales, de dos años.",
+      "articulo": "Art. 58, fr. IV",
+      "cita": "Establecimientos mercantiles de mediano y alto riesgo, conforme al resultado que arroje el cuestionario clasificatorio de nivel de riesgo, por parte de la persona propietaria, poseedora o representante legal, cuya vigencia será de 5 años;"
+    },
+    {
+      "sujeto": "Inmuebles de mediano o alto riesgo",
+      "obligacion": "Mantener una póliza de seguro de responsabilidad civil no cancelable que cubra a terceros en sus bienes y personas.",
+      "articulo": "Art. 62",
+      "cita": "Los establecimientos o inmuebles clasificados como de mediano o alto riesgo, deberán contar con una Póliza de Seguro de Responsabilidad Civil no cancelable, vigente durante el periodo del registro en todo momento, que cubra e indemnice a los terceros en sus bienes y personas."
+    },
+    {
+      "sujeto": "Establecimientos de bajo riesgo",
+      "obligacion": "Tener extintores señalizados, botiquín, rutas de evacuación señalizadas, personal capacitado y directorio de servicios de emergencia.",
+      "articulo": "Art. 64",
+      "cita": "Los establecimientos clasificados de bajo Riesgo deberán cumplir con las siguientes medidas preventivas, así como las que para tal efecto se establezcan en el Reglamento: a. Extintor o extintores, debidamente señalizados;"
+    },
+    {
+      "sujeto": "Brigadas de los Programas Internos",
+      "obligacion": "Identificar a las personas de grupos de atención prioritaria del inmueble y capacitarse en técnicas de apoyo y evacuación para ellas.",
+      "articulo": "Art. 70",
+      "cita": "Toda brigada de Protección Civil contemplada en los Programas Internos, deberá integrar un registro del número, ubicación y características de los grupos de atención prioritaria y de escasos recursos que habiten, laboren o estudien en los inmuebles respectivos."
+    },
+    {
+      "sujeto": "Personas obligadas a tener Programa Interno",
+      "obligacion": "Acompañar el programa con su Carta de Responsabilidad y la Carta de Corresponsabilidad del Responsable Oficial de Protección Civil.",
+      "articulo": "Art. 71",
+      "cita": "El Programa Interno deberá ir acompañado de una Carta de Responsabilidad firmada por la persona obligada, así como la Carta de Corresponsabilidad firmada por el Responsable Oficial de Protección Civil que haya intervenido o lo haya elaborado."
+    },
+    {
+      "sujeto": "Organizadores privados de eventos de 500 o más",
+      "obligacion": "Capturar el Programa Especial en la plataforma digital al menos diez días hábiles antes del evento.",
+      "articulo": "Art. 73",
+      "cita": "deberán ser capturados en la plataforma digital con un mínimo de 10 días hábiles de anticipación y registrados por la Alcaldía, previo a la celebración de dicha actividad, evento o espectáculo de afluencia masiva."
+    },
+    {
+      "sujeto": "Promotores de espectáculos de afluencia masiva",
+      "obligacion": "Informar al público, antes, durante y al final, las medidas de protección civil, salidas de emergencia y zonas de menor riesgo.",
+      "articulo": "Art. 92",
+      "cita": "Previo al inicio, en el intermedio y al final de la celebración de eventos, actividades o espectáculos públicos de afluencia masiva, las y los promotores, organizadores o responsables del mismo, deberán informar a las y los asistentes a través de avisos sonoros y visuales"
+    },
+    {
+      "sujeto": "Brigadistas de protección civil",
+      "obligacion": "Tomar cursos aprobados por la Secretaría: primeros auxilios, combate de incendios, comunicación y evacuación, en nivel básico a avanzado.",
+      "articulo": "Art. 190",
+      "cita": "Los cursos de capacitación para los Brigadistas de Protección Civil y los que integran los Grupos Voluntarios son obligatorios y requieren aprobación y registro de la Secretaría, mismos que se enlistan a continuación: I. Básico, intermedio y/o avanzado de primeros auxilios; II. Básico, intermedio y/o avanzado de prevención, combate y extinción de incendios;"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley capitalina fija el contenido de la capacitación: los cursos para brigadistas son obligatorios y deben estar aprobados por la Secretaría, en niveles básico, intermedio o avanzado de primeros auxilios, combate de incendios, comunicación y evacuación, además de grupo de apoyo especial y comités internos (Art. 190). El detalle de los cursos queda en el Reglamento y las Normas Técnicas.",
+    "El Programa Interno se elabora conforme a los Términos de Referencia y Normas Técnicas de la Secretaría (Art. 59) y lo captura en la Plataforma Digital un Responsable Oficial de Protección Civil (Art. 63). La brigada debe conocer a las personas con discapacidad o mayores del inmueble y capacitarse en su evacuación (Art. 70). La frecuencia de simulacros se remite al Reglamento."
+  ],
+  "equipoDuo": [
+    "La ley de la Ciudad de México enumera equipo mínimo para comercios de bajo riesgo: extintores señalizados, botiquín de primeros auxilios y señalización de rutas de evacuación (Art. 64). En establecimientos de mediano y alto riesgo, el equipamiento se define en el Programa Interno, y la NOM-002-STPS-2010, norma federal, orienta la protección contra incendios.",
+    "En LORICA equipamos brigadas de oficinas, plazas comerciales e industrias con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> para cada curso que marca la ley: primeros auxilios, combate de incendios y evacuación. La NOM-017-STPS-2024, norma federal de equipo de protección personal, ayuda a elegirlo por puesto."
+  ],
+  "sancionesDuo": [
+    "Tras la verificación, las alcaldías pueden imponer multa, revocación de autorizaciones o permisos, clausura temporal o definitiva, parcial o total, y revocación de los Programas Internos y Especiales, o bien ordenar obras para mitigar el riesgo (Art. 218). La Secretaría puede revocar la autorización de los Responsables Oficiales (Art. 218 Bis)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en la Ciudad de México y dónde consulto el texto?",
+      "a": "Es la Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México, publicada en la Gaceta Oficial el 5 de junio de 2019; su última reforma se publicó el 28 de abril de 2023. El texto vigente está en la sección de marco legal del Congreso de la Ciudad de México."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno en la Ciudad de México?",
+      "a": "El artículo 58 lo exige a unidades habitacionales y condominios, inmuebles de servicio público, centros comerciales y establecimientos mercantiles o industriales de mediano y alto riesgo según el cuestionario de nivel de riesgo. La vigencia va de dos a cinco años, según el tipo de inmueble."
+    },
+    {
+      "q": "¿Qué pide la ley sobre la capacitación de brigadas en la capital?",
+      "a": "Cursos obligatorios aprobados por la Secretaría en primeros auxilios, combate de incendios, comunicación y evacuación, en nivel básico, intermedio o avanzado (Art. 190). Además, cada brigada debe identificar a las personas con discapacidad o mayores del inmueble y capacitarse para apoyarlas (Art. 70)."
+    },
+    {
+      "q": "¿Qué es un Responsable Oficial de Protección Civil (ROPC)?",
+      "a": "Es el profesional autorizado por la Secretaría para capacitar y elaborar programas internos y especiales. Firma la Carta de Corresponsabilidad junto con el obligado (Arts. 71 y 196) y captura el Programa Interno en la Plataforma Digital (Art. 63). Su autorización tiene vigencia de cinco años (Art. 195)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada en la Ciudad de México?",
+      "a": "Para bajo riesgo la ley pide al menos extintores señalizados y botiquín (Art. 64). Una brigada formada en primeros auxilios, incendios y evacuación trabaja además con casco, guantes, chaleco o camisola de alta visibilidad, lámpara y silbato, ajustados a la NOM-002-STPS-2010 y al Programa Interno."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso de la Ciudad de México · Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México (PDF)",
+      "url": "https://www.congresocdmx.gob.mx/archivo-a062bdbea11155fbb5aad9cf49120bb7056af51c.pdf"
+    },
+    {
+      "nombre": "Congreso de la Ciudad de México · Marco legal, leyes de la Ciudad de México",
+      "url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

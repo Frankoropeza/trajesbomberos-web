@@ -1,0 +1,116 @@
+{
+  "slug": "nayarit",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Nayarit",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial, Órgano del Gobierno del Estado de Nayarit",
+    "fecha": "2003-07-23"
+  },
+  "ultimaReforma": "2019-09-25",
+  "urlOficial": "https://congresonayarit.gob.mx/wp-content/uploads/QUE_HACEMOS/LEGISLACION_ESTATAL/leyes/proteccion_civil_para_el_estado_de_nayarit_ley_de.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 35",
+    "cita": "La Coordinación Estatal de Protección Civil es una dependencia con nivel de Dirección y será un órgano desconcentrado con autonomía administrativa, financiera, de operación y gestión, dependiente de la Secretaría General de Gobierno"
+  },
+  "lead": "La Ley de Protección Civil para el Estado de Nayarit define qué deben hacer empresas, edificios con afluencia masiva y organizadores de eventos ante riesgos y emergencias. Aquí se resumen sus obligaciones con artículo y cita literal, para jefes de brigada y responsables de seguridad.",
+  "panorama": [
+    "Publicada en julio de 2003 y reformada por última vez en septiembre de 2019, la ley es de orden público y regula las acciones de protección civil en Nayarit (Art. 1). Toda persona física o moral debe informar de riesgos y cooperar con las autoridades (Art. 15), y quienes administran edificaciones con afluencia masiva deben elaborar y cumplir un programa específico de protección civil (Art. 5).",
+    "El Sistema Estatal se compone del Consejo Estatal, la Coordinación Estatal de Protección Civil, los sistemas municipales, las unidades internas y los grupos voluntarios (Art. 20). La Coordinación Estatal es un órgano desconcentrado de la Secretaría General de Gobierno (Art. 35). Cada municipio establece su propio sistema y debe informar de forma constante sus actividades a la Coordinación Estatal (Art. 39)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Edificaciones con afluencia masiva de personas",
+      "obligacion": "Administradores, gerentes, poseedores, arrendatarios o propietarios deben elaborar y cumplir un programa específico, con asesoría técnica de las coordinaciones.",
+      "articulo": "Art. 5",
+      "cita": "Los administradores, gerentes, poseedores, arrendatarios o propietarios de edificaciones que por su uso o destino, reciban una afluencia masiva de personas, están obligados a elaborar y cumplir un programa específico de protección civil"
+    },
+    {
+      "sujeto": "Edificaciones distintas a casa habitación unifamiliar",
+      "obligacion": "Colocar en lugares visibles señalización e instructivos de emergencia, y señalar zonas de seguridad y rutas de evacuación.",
+      "articulo": "Art. 6",
+      "cita": "En todas las edificaciones, excepto casas habitación unifamiliares, se deberán colocar, en lugares visibles señalización adecuada e instructivos para casos de emergencia, en los que se consignarán las reglas que deberán observarse antes, durante y después del siniestro o desastre"
+    },
+    {
+      "sujeto": "Empresas industriales, comerciales o de servicios",
+      "obligacion": "Capacitar a su personal en protección civil e implementar la unidad interna cuando corresponda, con autorización y acreditación de la autoridad.",
+      "articulo": "Art. 7",
+      "cita": "Es obligación de las empresas, ya sean industriales, comerciales o de servicios, la capacitación de su personal en materia de protección civil e implementar la unidad interna de protección civil en los casos que se determinen"
+    },
+    {
+      "sujeto": "Empresas industriales y de servicio",
+      "obligacion": "Contar con un sistema de prevención y protección para sus bienes y entorno, adecuado a su actividad, y capacitar a quienes laboran ahí.",
+      "articulo": "Art. 43",
+      "cita": "Las empresas industriales y de servicio, contarán con un sistema de prevención y protección para sus propios bienes y su entorno, adecuado a las actividades que se realicen y capacitando en la materia a las personas que laboren en ellas."
+    },
+    {
+      "sujeto": "Particulares que reciben afluencia masiva",
+      "obligacion": "Tener una unidad interna de protección civil y elaborar un programa interno en los términos de la ley.",
+      "articulo": "Art. 43 Bis",
+      "cita": "Los particulares que concentren o reciban una afluencia masiva de personas, están obligadas a contar con una unidad interna de protección civil y elaborar un programa interno, en los términos que establece esta Ley."
+    },
+    {
+      "sujeto": "Organizadores de eventos públicos o masivos",
+      "obligacion": "Elaborar un programa específico antes del evento, entregarlo a la autoridad para su aprobación y difundir al público las medidas de seguridad.",
+      "articulo": "Art. 15, fr. IV",
+      "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse programas específicos de protección civil, los cuales serán entregados oportunamente a las autoridades de protección civil para su aprobación y coordinación con otras instancias de seguridad."
+    },
+    {
+      "sujeto": "Consultores y capacitadores en protección civil",
+      "obligacion": "Estar acreditados por la autoridad de protección civil para asesorar, capacitar o elaborar programas internos y emitir cartas de corresponsabilidad.",
+      "articulo": "Art. 9 Ter",
+      "cita": "Para que los particulares o dependencias públicas puedan ejercer asesoría, capacitación, evaluación, elaboración de programas internos de protección civil, continuidad de operaciones y estudios de vulnerabilidad y riesgos en materia de protección civil, deberán contar con el registro expedido por la autoridad competente de protección civil"
+    },
+    {
+      "sujeto": "Grupos voluntarios de prevención y auxilio",
+      "obligacion": "Inscribirse ante la Coordinación Estatal de Protección Civil, refrendar su alta cada año y portar la identificación autorizada.",
+      "articulo": "Art. 46",
+      "cita": "Es obligación de los grupos voluntarios constituidos o que se integren en la entidad, registrarse en la Coordinación Estatal de Protección Civil."
+    }
+  ],
+  "brigadasDuo": [
+    "La ley nayarita define la brigada como el grupo de personas de un inmueble capacitadas en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, designadas por la Unidad Interna con base en el Programa Interno (Art. 4, fr. VII). Las empresas industriales, comerciales o de servicios deben capacitar a su personal e implementar su unidad interna, con autorización de la autoridad (Art. 7).",
+    "El Programa Interno reúne el plan operativo de la Unidad Interna, el plan de continuidad de operaciones y el plan de contingencias (Art. 4, fr. XXXIV). Quien reciba afluencia masiva de personas debe tener unidad interna y programa interno (Art. 43 Bis), y las coordinaciones estatal y municipales asesoran gratis para integrarlas (Art. 44). En escuelas, la ley ordena simulacros según los riesgos de la localidad (Art. 70)."
+  ],
+  "equipoDuo": [
+    "La ley no fija una lista de equipo, pero encarga a la Coordinación Estatal promover la capacitación en simulacros, señalización y uso de equipo de seguridad personal (Art. 35, fr. IV), y exige a las empresas industriales y de servicio un sistema de prevención y protección adecuado a sus actividades (Art. 43). La NOM-002-STPS-2010, norma federal, orienta cómo equipar a una brigada contra incendio.",
+    "Una brigada con funciones de combate a conatos de incendio, evacuación y rescate necesita protección acorde a cada tarea. En LORICA fabricamos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y, para cuerpos de bomberos, <a href=\"/trajes/estructural/\">trajes estructurales</a>; la NOM-017-STPS-2024, norma federal de equipo de protección personal, ayuda a seleccionarlos según el riesgo de cada puesto."
+  ],
+  "sancionesDuo": [
+    "El artículo 78 prevé clausura temporal o definitiva, parcial o total, multa y arresto administrativo; los grupos voluntarios que incumplan pueden quedar inhabilitados en el estado. Si se reincide en faltas a los artículos 5 y 7, procede la clausura temporal del inmueble, y las multas se duplican (Art. 79)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Nayarit y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil para el Estado de Nayarit, publicada el 23 de julio de 2003 en el Periódico Oficial, Órgano del Gobierno del Estado. La última reforma anotada en el texto se publicó el 25 de septiembre de 2019. El Congreso del Estado la ofrece completa en su sección de legislación estatal."
+    },
+    {
+      "q": "¿Quién debe elaborar programa específico o interno de protección civil en Nayarit?",
+      "a": "Según el artículo 5, los administradores, gerentes, poseedores, arrendatarios o propietarios de edificaciones que reciben afluencia masiva de personas. El artículo 43 Bis agrega que esos particulares deben contar con unidad interna y programa interno, y el artículo 8 remite a los reglamentos para definir qué empresas deben hacerlo."
+    },
+    {
+      "q": "¿Qué exige la ley nayarita sobre brigadas y capacitación?",
+      "a": "Las empresas industriales, comerciales o de servicios deben capacitar a su personal e implementar su unidad interna de protección civil, con autorización y acreditación de la autoridad (Art. 7). La ley define a la brigada por sus funciones: primeros auxilios, conatos de incendio, evacuación, búsqueda y rescate (Art. 4)."
+    },
+    {
+      "q": "¿Qué debe hacer quien organiza un evento público o masivo en Nayarit?",
+      "a": "El artículo 15, fracción IV, pide elaborar antes del evento un programa específico de protección civil y entregarlo a la autoridad para su aprobación. El organizador también debe difundir al público las principales medidas y conductas en caso de contingencia, antes del evento o al iniciar."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Nayarit?",
+      "a": "La ley no detalla prendas; habla de capacitación en simulacros, señalización y uso de equipo de seguridad personal. En la práctica, cada brigadista suele requerir casco, guantes, calzado de seguridad y chaleco de alta visibilidad, además de botiquín y extintores, dimensionados con la NOM-002-STPS-2010 y el análisis de riesgo."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Nayarit · Ley de Protección Civil para el Estado de Nayarit (PDF)",
+      "url": "https://congresonayarit.gob.mx/wp-content/uploads/QUE_HACEMOS/LEGISLACION_ESTATAL/leyes/proteccion_civil_para_el_estado_de_nayarit_ley_de.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Nayarit · Legislación estatal",
+      "url": "https://congresonayarit.gob.mx/legislacion-estatal/"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}
