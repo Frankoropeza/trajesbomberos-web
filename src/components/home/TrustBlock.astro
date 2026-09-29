@@ -1,0 +1,108 @@
+---
+// TrustBlock (home): cinco compromisos REALES del negocio, sin
+// métricas inventadas (nada de "+500 clientes" ni reseñas).
+// 5 columnas ≥1200 · 3+2 entre 768 y 1199 · lista compacta <768.
+// Íconos: mismos paths que TrustBar para coherencia visual.
+type IconKey = 'shield' | 'doc' | 'chat' | 'pin' | 'check';
+interface Item {
+  icon: IconKey;
+  title: string;
+  desc: string;
+  href?: string;
+  hrefLabel?: string;
+}
+interface Props {
+  id?: string;
+  title?: string;
+  items: Item[];
+}
+const { id, title = 'Lo que recibes al cotizar con nosotros', items } = Astro.props as Props;
+
+const ICONS: Record<IconKey, string> = {
+  shield: 'M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z',
+  doc: 'M6 2h9l5 5v15H6V2zm8 1v5h5',
+  chat: 'M4 4h16v12H8l-4 4V4z',
+  pin: 'M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5z',
+  check: 'M20 6L9 17l-5-5',
+};
+---
+<section class="trust" id={id} aria-labelledby="trust-title">
+  <div class="container">
+    <h2 id="trust-title" class="trust__title">{title}</h2>
+    <ul class="trust__grid">
+      {items.map((it) => (
+        <li class="trust__item">
+          <span class="trust__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d={ICONS[it.icon]} />
+            </svg>
+          </span>
+          <div>
+            <h3>{it.title}</h3>
+            <p>{it.desc}</p>
+            {it.href && <a href={it.href}>{it.hrefLabel ?? 'Ver más'}</a>}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .trust {
+    background: var(--color-white);
+    border-bottom: var(--border);
+    padding-block: 1.6rem 1.2rem;
+  }
+  .trust__title {
+    margin: 0 0 0.9rem;
+    font: 800 var(--fs-h3) / 1.2 var(--font-display);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+  }
+  .trust__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .trust__item {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    padding: 0.9rem 1.1rem;
+    border-left: var(--border);
+  }
+  .trust__item:first-child { border-left: 0; padding-left: 0; }
+  .trust__icon {
+    flex: 0 0 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius);
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  h3 { margin: 0 0 0.15rem; font-size: 0.95rem; font-weight: 800; color: var(--color-dark); }
+  p { margin: 0; font-size: 0.83rem; color: var(--color-gray); line-height: 1.5; }
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    font-size: 0.82rem;
+    font-weight: 800;
+  }
+
+  @media (max-width: 1199px) {
+    .trust__grid { grid-template-columns: repeat(3, 1fr); }
+    .trust__item:nth-child(4) { border-left: 0; padding-left: 0; }
+    .trust__item:nth-child(n + 4) { border-top: var(--border); }
+  }
+  @media (max-width: 767px) {
+    .trust__grid { grid-template-columns: 1fr; }
+    .trust__item { border-left: 0; padding: 0.8rem 0; border-top: var(--border); }
+    .trust__item:first-child { border-top: 0; }
+  }
+</style>

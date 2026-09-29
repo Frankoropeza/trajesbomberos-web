@@ -1,8 +1,13 @@
 ---
-// L1 · Home — arquitectura de asesor experto, no de catálogo.
-// Orden: qué vendemos → cómo está hecho → cómo se especifica →
-// qué se hace mal → quién lo fabrica → cómo elegir → qué exige la
-// ley → cuánto dura → quién compra → quiénes somos → proceso → FAQ.
+// L1 · Home — portada comercial con exploración por categorías.
+// Orden (rediseño 2026-09-28): hero con CTA → confianza → trajes
+// (6 cards) → complementos del conjunto (6 cards) → cómo elegir
+// (guía + anatomía + ficha + errores) → quién compra → normas →
+// vida útil → marcas → empresa → proceso → FAQ → blog → CTA final.
+// Las cards de complementos detectan en build si la sección del
+// catálogo existe (getSeccion): enlazan al hub, a la ficha real de
+// respaldo o quedan «en preparación» con CTA de WhatsApp. Nunca se
+// genera un href a una página que no existe.
 //
 // Reglas duras aplicadas (estudio de mercado jul-2026):
 //  · Normas VIGENTES: NFPA 1970 (absorbió 1971), NFPA 1950
@@ -17,14 +22,16 @@ import Hero from '@components/Hero.astro';
 import PhotoBand from '@components/PhotoBand.astro';
 import SectionMenu from '@components/SectionMenu.astro';
 import SectionHeading from '@components/SectionHeading.astro';
-import CategoryCard from '@components/CategoryCard.astro';
 import SegmentCards from '@components/SegmentCards.astro';
 import SuitAnatomy from '@components/SuitAnatomy.astro';
 import SpecChecklist from '@components/SpecChecklist.astro';
 import MistakeList from '@components/MistakeList.astro';
 import BrandGrid from '@components/BrandGrid.astro';
 import { PRESET_GENERAL, PRESET_LICITACION } from '@lib/cta-presets';
-import TrustBar from '@components/TrustBar.astro';
+import TrustBlock from '@components/home/TrustBlock.astro';
+import CatalogCard from '@components/home/CatalogCard.astro';
+import QuoteCTA from '@components/home/QuoteCTA.astro';
+import type { ComponentProps } from 'astro/types';
 import RiskGuide from '@components/RiskGuide.astro';
 import NormsTable from '@components/NormsTable.astro';
 import ProcessSteps from '@components/ProcessSteps.astro';
@@ -34,25 +41,30 @@ import CTABanner from '@components/CTABanner.astro';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
 import { HERO_HOME } from '@lib/imagenes';
+import { waUrl } from '@lib/wa';
+import { piezasDeFamilia } from '@lib/piezas';
+import { getSeccion } from '@lib/catalogo/secciones';
+import { tiposDeSeccion } from '@lib/catalogo/tipos';
+import { MODELOS } from '@lib/catalogo/data';
 import {
   SITE,
   PRODUCT_CATEGORIES,
-  COMPLEMENTOS,
+  WA_MESSAGES,
   MARCAS_TRAJE,
   MARCAS_MATERIAL,
 } from '@config/site';
 
 const hero = {
-  eyebrow: 'Venta de equipo de protección personal contra incendios',
+  eyebrow: 'Trajes y equipo de protección para bomberos',
   title: 'Trajes para bomberos',
   accent: 'en todo México',
   subtitle:
-    'Estructural, brigadista, forestal, aproximación, entrada y extricación. Chaquetón y pantalonera con el composite que exige tu operación, con ficha técnica y factura. Cotiza por WhatsApp y recibe en tu estación.',
+    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
   meta: [
-    'Especialistas solo en trajes',
     'Ficha técnica por partida',
     'Factura CFDI 4.0',
     'Envíos a los 32 estados',
+    'Por pieza o conjunto completo',
   ],
   descRight: [
     'Somos especialistas en una sola línea: ropa de protección para combate de incendios. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos municipales que compran por licitación y unidades de protección civil en los 32 estados de la República.',
@@ -60,11 +72,13 @@ const hero = {
   ],
 };
 
-const pilares = [
-  { icon: 'shield' as const, title: 'Solo trajes', desc: 'Una sola especialidad. No vendemos de todo un poco.' },
+// Bloque de confianza: compromisos reales, sin métricas inventadas.
+const confianza = [
   { icon: 'doc' as const, title: 'Ficha técnica por partida', desc: 'Composite, TPP, THL y norma por escrito antes de que compres.' },
-  { icon: 'chat' as const, title: 'Norma vigente, no la de hace 8 años', desc: 'Trabajamos sobre NFPA 1970, que sustituyó a la NFPA 1971.' },
-  { icon: 'pin' as const, title: 'Cobertura nacional', desc: 'Envíos a estación, base o domicilio en cualquier estado.' },
+  { icon: 'check' as const, title: 'Factura CFDI 4.0', desc: 'Cotización formal, factura y acta de entrega-recepción para compra pública.' },
+  { icon: 'pin' as const, title: 'Cobertura nacional', desc: 'Envíos a estación, base o domicilio en los 32 estados.' },
+  { icon: 'shield' as const, title: 'Especialistas en el traje', desc: 'Seis familias de traje por tipo de riesgo; el resto del conjunto se cotiza junto, compatible entre sí.' },
+  { icon: 'chat' as const, title: 'Normas aplicables', desc: 'NFPA 1970, 1950 y 1850 como referencia técnica; NOM-017-STPS-2024 y NOM-002-STPS-2010 como obligación en México.', href: '#normas', hrefLabel: 'Ver normas' },
 ];
 
 const hechos = [
@@ -77,8 +91,8 @@ const hechos = [
 // Un módulo por familia: amplía cada card del catálogo con el
 // detalle técnico que el comprador necesita antes de cotizar.
 // flip alterna para dar ritmo cuando hay varios seguidos.
-const guiaColumns = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
-const guiaRows = [
+const guiaColumns: string[] = ['Familia', 'Para qué operación', 'Construcción', 'Complementos'];
+const guiaRows: string[][] = [
   ['Estructural', 'Incendio en edificaciones, ataque interior', 'Tres capas: exterior + barrera de humedad + barrera térmica', 'Casco, monja, botas, guantes, ERA'],
   ['Brigadista', 'Fuego incipiente en industria, primera respuesta', 'Menor gramaje y alcance de protección que el estructural', 'Casco, guantes, botas, escafandra'],
   ['Forestal', 'Incendio de vegetación, jornadas largas en campo', 'Una sola capa de tela ignífuga inherente, ligera y transpirable', 'Casco forestal, goggles, guantes, botas sin puntera'],
@@ -88,6 +102,138 @@ const guiaRows = [
 ];
 const guiaNote =
   'Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar.';
+
+// ------------------------------------------------------------
+// Cards de categoría. TR = trajes (PRODUCT_CATEGORIES, SSoT);
+// EQ = complementos. La "operación" de cada familia sale de la
+// guía de selección (guiaRows) para no duplicar datos.
+// ------------------------------------------------------------
+const OPERACION_POR_FAMILIA: Record<string, string> = {
+  estructural: guiaRows[0][1],
+  brigadista: guiaRows[1][1],
+  forestal: guiaRows[2][1],
+  aproximacion: guiaRows[3][1],
+  entrada: guiaRows[4][1],
+  extricacion: guiaRows[5][1],
+};
+const TITULO_CARD: Record<string, string> = {
+  aproximacion: 'Trajes de aproximación (aluminizados)',
+  extricacion: 'Trajes de extricación y rescate',
+};
+// Dimensiones reales de las fotos de familia (evita CLS; medidas con sips).
+const DIMENSIONES: Record<string, { width: number; height: number }> = {
+  '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif': { width: 640, height: 1000 },
+  '/images/productos/traje-brigadista-industrial-bombero.avif': { width: 640, height: 1000 },
+  '/images/productos/traje-forestal-camisola-pantalon-bombero.avif': { width: 1200, height: 800 },
+};
+const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
+
+type CardData = ComponentProps<typeof CatalogCard>;
+
+const trajes: CardData[] = PRODUCT_CATEGORIES.map((c, i) => {
+  const piezas = piezasDeFamilia(c.slug).length;
+  const modelos = MODELOS.filter((m) => m.familia === c.slug).length;
+  return {
+    codigo: `TR-${String(i + 1).padStart(2, '0')}`,
+    titulo: TITULO_CARD[c.slug] ?? c.nombre,
+    operacion: OPERACION_POR_FAMILIA[c.slug] ?? c.chips.join(' · '),
+    desc: c.desc,
+    image: { src: c.image, alt: c.imageAlt, ...(DIMENSIONES[c.image] ?? { width: 1000, height: 1250 }) },
+    chips: c.chips.slice(0, 3),
+    badge: c.badge,
+    meta: [plural(piezas, 'pieza cotizable', 'piezas cotizables'), modelos > 0 ? plural(modelos, 'modelo', 'modelos') : '']
+      .filter(Boolean)
+      .join(' · '),
+    href: `/trajes/${c.slug}/`,
+    ctaLabel: 'Conocer la categoría' as const,
+  };
+});
+
+interface ComplementoDef {
+  slug: string | null; // sección del catálogo (null = sin hub planeado)
+  titulo: string;
+  operacion: string;
+  desc: string;
+  image: { src: string; alt: string; width: number; height: number };
+  respaldo?: { href: string; extra?: { label: string; href: string }[] };
+  extra?: { label: string; href: string }[];
+}
+// Orden por demanda medida en Ahrefs MX (2026-09-28): casco ≈800,
+// ERA ≈950 (con variantes), botas ≈240, guantes ≈120, monja ≈70,
+// tirantes/cinturón ≈0. Textos solo con datos ya publicados.
+const COMPLEMENTOS_DEF: ComplementoDef[] = [
+  {
+    slug: 'cascos',
+    titulo: 'Cascos para bombero',
+    operacion: 'Ataque interior, forestal y rescate',
+    desc: 'Casco estructural tradicional o europeo para ataque interior, forestal para línea de fuego y compacto para rescate técnico. Se verifica compatibilidad con la máscara del ERA en uso.',
+    image: { src: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero: estructural, forestal y de rescate', width: 800, height: 450 },
+  },
+  {
+    slug: 'equipo-de-respiracion-autonoma',
+    titulo: 'Equipo de respiración autónoma (ERA)',
+    operacion: 'Atmósferas no respirables',
+    desc: 'Protección respiratoria para ataque interior y rescate en humo. Se cotiza por separado del traje, con su llenado de aire, y se revisa su compatibilidad con casco y monja.',
+    image: { src: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro', width: 800, height: 450 },
+  },
+  {
+    slug: 'botas',
+    titulo: 'Botas para bombero',
+    operacion: 'Estructural, forestal y brigada',
+    desc: 'Hule o piel para incendio estructural y bota sin puntera para trabajo forestal. Se eligen según la familia de traje, no por separado.',
+    image: { src: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel', width: 800, height: 450 },
+  },
+  {
+    slug: 'guantes',
+    titulo: 'Guantes para bombero',
+    operacion: 'Según la operación',
+    desc: 'Estructural, extricación o forestal: cada operación exige su guante y no se sustituyen entre sí.',
+    image: { src: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales, de extricación y forestales', width: 800, height: 450 },
+  },
+  {
+    slug: 'capuchas',
+    titulo: 'Monjas y escafandras',
+    operacion: 'Cabeza y cuello',
+    desc: 'Monja o escafandra tradicional de Nomex o con barrera de partículas, bajo el casco y sobre el cuello del chaquetón.',
+    image: { src: '/images/productos/monja-capucha-barrera-particulas-bombero.avif', alt: 'Monja o escafandra para bombero con barrera de partículas', width: 1000, height: 1250 },
+    respaldo: { href: '/trajes/estructural/monja/' },
+    extra: [{ label: 'Monja de brigada', href: '/trajes/brigadista/monja/' }],
+  },
+  {
+    slug: null,
+    titulo: 'Tirantes y cinturones',
+    operacion: 'Sujeción de la pantalonera',
+    desc: 'Tirantes con espalda en H que reparten el peso de la pantalonera mojada sobre los hombros, y arnés interno de escape integrado a la pantalonera estructural.',
+    image: { src: '/images/piezas/tirantes-acolchados-tipo-h.avif', alt: 'Tirantes acolchados tipo H para pantalonera de bombero', width: 1000, height: 1250 },
+    respaldo: { href: '/trajes/estructural/tirantes/' },
+    extra: [
+      { label: 'Tirantes de brigada', href: '/trajes/brigadista/tirantes/' },
+      { label: 'Arnés de escape', href: '/trajes/estructural/arnes-escape/' },
+    ],
+  },
+];
+
+const complementos: CardData[] = COMPLEMENTOS_DEF.map((d, i) => {
+  const seccion = d.slug ? getSeccion(d.slug) : undefined;
+  const base = { codigo: `EQ-${String(i + 1).padStart(2, '0')}`, titulo: d.titulo, operacion: d.operacion, desc: d.desc, image: d.image };
+  if (seccion && d.slug) {
+    const tipos = tiposDeSeccion(d.slug);
+    const modelos = MODELOS.filter((m) => m.seccion === d.slug).length;
+    return {
+      ...base,
+      chips: tipos.slice(0, 3).map((t) => t.nombreCard),
+      meta: [plural(tipos.length, 'tipo', 'tipos'), modelos > 0 ? plural(modelos, 'modelo', 'modelos') : ''].filter(Boolean).join(' · '),
+      href: `/${d.slug}/`,
+      extra: d.extra,
+      ctaLabel: 'Ver equipo' as const,
+    };
+  }
+  if (d.respaldo) {
+    return { ...base, href: d.respaldo.href, extra: d.extra, ctaLabel: 'Ver equipo' as const };
+  }
+  return { ...base, ctaLabel: 'Solicitar cotización' as const };
+});
+const hayPendientes = complementos.some((c) => !c.href);
 
 const normasColumns: [string, string, string] = ['Referencia', 'Qué exige realmente', 'Estatus en México'];
 const normasRows: [string, string, string][] = [
@@ -178,63 +324,77 @@ const faqs = [
   },
 ];
 
-const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
-  name: c.nombre,
-  url: `${SITE.url}/trajes/${c.slug}/`,
-}));
+// ItemList de la home: familias + complementos con página real.
+const directoryItems = [
+  ...PRODUCT_CATEGORIES.map((c) => ({ name: c.nombre, url: `${SITE.url}/trajes/${c.slug}/` })),
+  ...complementos.flatMap((c) => (c.href ? [{ name: c.titulo, url: `${SITE.url}${c.href}` }] : [])),
+];
 
 // Últimos 3 artículos del blog: la home enlaza al contenido que
 // resuelve las dudas previas a la cotización.
 const ultimosPosts = (await getPosts()).slice(0, 3);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
-  <Hero {...hero} image={HERO_HOME} />
+  <Hero {...hero} image={HERO_HOME}>
+    <div class="hero-actions" slot="actions">
+      <a class="hero-actions__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a>
+      <a class="hero-actions__cat" href="#catalogo">Ver categorías</a>
+    </div>
+  </Hero>
   <SectionMenu />
-  <TrustBar pilares={[...pilares]} />
+  <TrustBlock id="confianza" items={confianza} />
 
-  <!-- 1 · Qué vendemos: 6 familias de traje -->
+  <!-- 1 · Trajes: grid principal de categorías (TR-01…) -->
   <section class="section section--alt" id="catalogo">
     <div class="container">
       <SectionHeading
-        eyebrow="Trajes"
+        eyebrow="Trajes para bomberos"
         title="Seis familias de trajes para bomberos, una por tipo de riesgo"
         description="Nos especializamos en ropa de protección para bombero. Cada familia responde a una operación distinta y no son intercambiables."
       />
-      <div class="grid-cards grid-cards--3">
-        {PRODUCT_CATEGORIES.map((cat, i) => (
-          <CategoryCard
-            href={`/trajes/${cat.slug}/`}
-            image={cat.image}
-            imageAlt={cat.imageAlt}
-            title={cat.nombre}
-            desc={cat.desc}
-            badge={cat.badge}
-            chips={[...cat.chips]}
-            ctaLabel="Ver ficha"
-            index={i}
-          />
-        ))}
+      <div class="catalog-grid">
+        {trajes.map((c) => <CatalogCard {...c} />)}
       </div>
 
       <p class="catalogo-cta">
         <a href="/trajes/">Ver las seis familias explicadas a fondo →</a>
       </p>
 
-      <div class="complementos">
-        <p class="complementos__intro">
-          <strong>Complementos del conjunto.</strong> No son nuestra línea, pero los cotizamos junto al traje
-          para cerrar el equipamiento del elemento:
-        </p>
-        <ul class="complementos__list">
-          {COMPLEMENTOS.map((c) => (
-            <li><strong>{c.nombre}</strong> — {c.nota}</li>
-          ))}
-        </ul>
+    </div>
+  </section>
+
+  <!-- 2 · Complementos del conjunto (EQ-01…) -->
+  <section class="section" id="complementos">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Complementos del conjunto"
+        title="Casco, botas, guantes, monja, tirantes y ERA para completar el equipo"
+        description="Se cotizan junto con el traje para que el elemento reciba un conjunto compatible: casco con la máscara del ERA, bota según la familia de traje y guante según la operación."
+      />
+      <div class="catalog-grid">
+        {complementos.map((c) => <CatalogCard {...c} prefijo="Uso" />)}
       </div>
+      {hayPendientes && (
+        <p class="pending-note">
+          Las categorías marcadas «Catálogo en preparación» ya se cotizan por WhatsApp con ficha técnica.
+        </p>
+      )}
     </div>
   </section>
 
   <CTABanner variant="light" {...PRESET_GENERAL} />
+
+  <!-- 3 · Bloque educativo: cómo elegir según la operación -->
+  <section class="section" id="guia">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Cómo elegir"
+        title="Qué familia corresponde a tu operación"
+        description="Seis familias para seis tipos de riesgo. No son intercambiables y elegir mal cuesta caro, en dinero y en seguridad."
+      />
+      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
+    </div>
+  </section>
 
   <PhotoBand
     src="/images/escenas/bomberos-ataque-incendio-manguera.avif"
@@ -243,7 +403,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   />
 
   <!-- 2 · Cómo está hecho: las tres capas -->
-  <section class="section" id="anatomia">
+  <section class="section section--alt" id="anatomia">
     <div class="container">
       <SectionHeading
         eyebrow="Anatomía del traje"
@@ -255,7 +415,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   </section>
 
   <!-- 3 · Cómo se especifica -->
-  <section class="section section--alt" id="especificar">
+  <section class="section" id="especificar">
     <div class="container">
       <SectionHeading
         eyebrow="Cómo especificar"
@@ -267,7 +427,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   </section>
 
   <!-- 5 · Errores de compra -->
-  <section class="section" id="errores">
+  <section class="section section--alt" id="errores">
     <div class="container">
       <SectionHeading
         eyebrow="Errores caros"
@@ -281,35 +441,15 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     </div>
   </section>
 
-  <!-- 6 · Marcas: referencia técnica, NO distribución -->
-  <section class="section section--alt" id="marcas">
+  <!-- 10 · Quién compra -->
+  <section class="section" id="segmentos">
     <div class="container">
       <SectionHeading
-        eyebrow="Marcas"
-        title="Marcas de trajes para bomberos: quién fabrica y qué se especifica"
-        description="Referencia técnica para que redactes tu pliego o tu requisición. Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación."
+        eyebrow="Quién compra"
+        title="Tres compradores, tres procesos distintos"
+        description="Una brigada industrial, un cuerpo de bomberos que licita y un voluntario que repone una pieza no compran igual. Entra por la ruta que te corresponde."
       />
-      <BrandGrid titulo="Fabricantes de traje" marcas={MARCAS_TRAJE} />
-      <BrandGrid titulo="Materiales del composite" marcas={MARCAS_MATERIAL} />
-      <p class="marcas__nota">
-        Esta lista es orientativa del mercado y no implica representación exclusiva. Dos precisiones que
-        conviene tener a la mano al comparar ofertas: Globe, Cairns y Bristol pertenecen hoy a MSA Safety,
-        y Morning Pride dejó de ser de Honeywell en mayo de 2025, cuando el negocio pasó a PIP. La
-        certificación, en todos los casos, corresponde al conjunto terminado y al fabricante que lo lista
-        ante el organismo certificador — nunca a la tela por separado.
-      </p>
-    </div>
-  </section>
-
-  <!-- 7 · Guía de selección -->
-  <section class="section" id="guia">
-    <div class="container">
-      <SectionHeading
-        eyebrow="Cómo elegir"
-        title="Qué familia corresponde a tu operación"
-        description="Seis familias para seis tipos de riesgo. No son intercambiables y elegir mal cuesta caro, en dinero y en seguridad."
-      />
-      <RiskGuide columns={guiaColumns} rows={guiaRows} note={guiaNote} ctaLabel="Preguntar cuál me corresponde" />
+      <SegmentCards />
     </div>
   </section>
 
@@ -339,15 +479,23 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     </div>
   </section>
 
-  <!-- 10 · Quién compra -->
-  <section class="section section--alt" id="segmentos">
+  <!-- 6 · Marcas: referencia técnica, NO distribución -->
+  <section class="section section--alt" id="marcas">
     <div class="container">
       <SectionHeading
-        eyebrow="Quién compra"
-        title="Tres compradores, tres procesos distintos"
-        description="Una brigada industrial, un cuerpo de bomberos que licita y un voluntario que repone una pieza no compran igual. Entra por la ruta que te corresponde."
+        eyebrow="Marcas"
+        title="Marcas de trajes para bomberos: quién fabrica y qué se especifica"
+        description="Referencia técnica para que redactes tu pliego o tu requisición. Dinos qué marca o qué composite te pide tu área de compras y te confirmamos disponibilidad, tiempo de entrega y documentación."
       />
-      <SegmentCards />
+      <BrandGrid titulo="Fabricantes de traje" marcas={MARCAS_TRAJE} />
+      <BrandGrid titulo="Materiales del composite" marcas={MARCAS_MATERIAL} />
+      <p class="marcas__nota">
+        Esta lista es orientativa del mercado y no implica representación exclusiva. Dos precisiones que
+        conviene tener a la mano al comparar ofertas: Globe, Cairns y Bristol pertenecen hoy a MSA Safety,
+        y Morning Pride dejó de ser de Honeywell en mayo de 2025, cuando el negocio pasó a PIP. La
+        certificación, en todos los casos, corresponde al conjunto terminado y al fabricante que lo lista
+        ante el organismo certificador — nunca a la tela por separado.
+      </p>
     </div>
   </section>
 
@@ -416,6 +564,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
     </div>
   </section>
+  <QuoteCTA id="cotizar" />
 </BaseLayout>
 
 <style>
@@ -425,36 +574,6 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
   .catalogo-cta { margin: 2.2rem 0 0; }
   .catalogo-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
   .catalogo-cta a:hover { text-decoration: underline; }
-  .complementos {
-    margin-top: 2.5rem;
-    padding-top: 1.8rem;
-    border-top: var(--border);
-  }
-  .complementos__intro { margin: 0 0 1rem; color: var(--color-gray); max-width: 72ch; }
-  .complementos__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.7rem 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .complementos__list li {
-    position: relative;
-    padding-left: 1.1rem;
-    font-size: 0.88rem;
-    color: var(--color-gray);
-  }
-  .complementos__list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.55rem;
-    width: 5px;
-    height: 5px;
-    background: var(--color-primary);
-  }
-  .complementos__list strong { color: var(--color-dark); }
   .marcas__nota {
     margin: 2rem 0 0;
     padding-top: 1.4rem;
@@ -463,6 +582,41 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
     color: var(--color-gray);
     max-width: 92ch;
   }
-  @media (max-width: 900px) { .complementos__list { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 560px) { .complementos__list { grid-template-columns: 1fr; } }
+  /* Grid de cards de categoría (trajes y complementos) */
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gap-grid, 1.5rem);
+  }
+  .pending-note {
+    margin: 1.6rem 0 0;
+    padding: 0.9rem 1.1rem;
+    border-left: 4px solid var(--color-accent);
+    background: var(--color-light);
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    max-width: 80ch;
+  }
+  /* CTA del hero (slot "actions" de Hero) */
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; position: relative; }
+  .hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0.75rem 1.4rem;
+    border-radius: var(--radius);
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .hero-actions__wa { background: var(--color-wa); color: #fff; }
+  .hero-actions__wa:hover { background: var(--color-wa-dark); }
+  .hero-actions__cat { border: 1px solid rgb(255 255 255 / 0.7); color: #fff; }
+  .hero-actions__cat:hover { background: rgb(255 255 255 / 0.1); }
+  @media (max-width: 1023px) { .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 639px) {
+    .catalog-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+    .hero-actions { display: grid; }
+    .hero-actions a { width: 100%; }
+  }
 </style>

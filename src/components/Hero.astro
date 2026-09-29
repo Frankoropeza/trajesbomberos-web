@@ -29,7 +29,7 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image } = Astro.
         <ul class="hero-meta">
           {meta.map((m) => <li>{m}</li>)}
         </ul>
-      )}
+      )}<slot name="actions" />
     </div>
     <div class="hero-right">
       <div class="hero-panel">
