@@ -203,7 +203,7 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Solicita la ficha por escrito y agrega instrucciones de retiro y disposición a la partida. Ese anexo permite contrastar el modelo contra la tarea delimitada sin convertir una descripción de uso único en una declaración de protección universal.',
     ],
     hermanas: [
-      'Dentro de la familia Hazmat, la prenda de uso único convive con botas químicas, guantes químicos, encapsulado nivel A y configuraciones nivel B o nivel C. La barrera corporal no sustituye manos, pie ni respiración durante la operación prevista y definida.',
+      'Dentro de la familia Hazmat, la prenda de uso único convive con botas químicas, guantes químicos, encapsulado nivel A y configuraciones nivel B o nivel C. La barrera corporal no sustituye manos, pie ni respiración durante la operación prevista.',
       'Cotiza por pieza o mediante <a href="/trajes/hazmat/">equipo Hazmat</a> completo según la maniobra. Compartir agente, condiciones y tallas deja que el conjunto se configure con interfaces consistentes en vez de acumular artículos independientes sin evaluación previa.',
     ],
     incluye: [
@@ -211,7 +211,7 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Distingue cada rubro al comparar cotizaciones para evitar alcances aparentes. Cuando el retiro controlado es parte de la tarea, debe quedar asignado en la operación y no suponerse incluido por el carácter desechable del overol.',
     ],
     relacionados: [
-      'Para distinguir barrera corporal, respiración y protección inferior, revisa esta prenda Hazmat junto con <a href="/trajes/hazmat/traje-nivel-c/">traje químico nivel C</a> y <a href="/trajes/hazmat/botas-quimicas/">botas químicas</a>. Esa lectura conjunta y operativa evita elegir por ciclo de uso únicamente.',
+      'Para distinguir barrera corporal, respiración y protección inferior, revisa esta prenda Hazmat junto con <a href="/trajes/hazmat/traje-nivel-c/">traje químico nivel C</a> y <a href="/trajes/hazmat/botas-quimicas/">botas químicas</a>. Esa lectura conjunta evita elegir solo por el ciclo de uso de la prenda.',
       'Consulta las fichas relacionadas antes de formalizar la compra. Comparar exposición, material, talla y descontaminación ayuda a decidir si la tarea permite una prenda de uso único o exige otra configuración de protección.',
     ],
   },
@@ -237,7 +237,7 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Copia a la requisición sustancia, concentración, exposición y tallas, y pide el documento técnico por escrito. Así se valida la configuración concreta del fabricante sin asumir compatibilidad de un material frente a otro agente.',
     ],
     hermanas: [
-      'La selección encapsulada se complementa con botas químicas, guantes químicos, overol desechable y soluciones nivel B o nivel C. Son piezas de la familia Hazmat que cambian con vapor, salpicadura y respiración requerida en cada maniobra planificada previamente.',
+      'La selección encapsulada se complementa con botas químicas, guantes químicos, overol desechable y soluciones nivel B o nivel C. Son piezas de la familia Hazmat que cambian con vapor, salpicadura y respiración requerida en cada maniobra planificada.',
       'Solicita cada componente o el <a href="/trajes/hazmat/">equipo Hazmat</a> completo con el análisis de riesgo. La cotización puede entonces definir talla, material e interfaces sin confundir distintas categorías de protección química durante la selección operativa.',
     ],
     incluye: [
@@ -245,7 +245,7 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Pide que esos límites aparezcan por separado en la cotización. Distinguir prenda, respiración y procedimiento permite comparar propuestas sin suponer que el encapsulado cubre todos los recursos necesarios para la entrada y salida controladas.',
     ],
     relacionados: [
-      'Antes de decidir una configuración encapsulada Hazmat revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/guantes-quimicos/">guantes químicos</a>. La comparación técnica de riesgo aclara qué exposición exige encapsular el ERA y qué material debe proteger las manos.',
+      'Antes de decidir una configuración encapsulada Hazmat revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/guantes-quimicos/">guantes químicos</a>. La comparación aclara qué exposición exige encapsular el ERA y qué material debe proteger las manos.',
       'Reúne las fichas de ambos elementos con el análisis de atmósfera. Esa revisión conecta barrera corporal, respiración y destreza, y evita sustituir el criterio de vapor por una elección basada en el nombre del nivel.',
     ],
   },
@@ -305,11 +305,11 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Pide la especificación escrita con las condiciones de atmósfera y ajuste facial. Llevar esos datos al anexo técnico evita que el modelo se compre sin la información que determina si el respirador puede operar dentro de su alcance.',
     ],
     hermanas: [
-      'Nivel C Hazmat se relaciona con traje nivel B, encapsulado nivel A, overol desechable, botas químicas y guantes químicos. No son sustitutos directos: cada opción cambia de acuerdo con aire ambiente, barrera y tarea concreta evaluada previamente.',
+      'Nivel C Hazmat se relaciona con traje nivel B, encapsulado nivel A, overol desechable, botas químicas y guantes químicos. No son sustitutos directos: cada opción cambia de acuerdo con aire ambiente, barrera y la tarea concreta evaluada.',
       'Cotiza partes independientes o el <a href="/trajes/hazmat/">equipo Hazmat</a> completo después de compartir monitoreo y agente. Así el conjunto puede incluir cartuchos, puños y calzado con criterios compatibles para la entrada planeada y su retiro posterior.',
     ],
     incluye: [
-      'La configuración Hazmat incluye prenda de barrera, interfaces solicitadas y ficha del material para el escenario documentado de la tarea. No incluye automáticamente respirador purificador, cartuchos, prueba de ajuste ni procedimiento de descontaminación operativa.',
+      'La configuración Hazmat incluye prenda de barrera, interfaces solicitadas y ficha del material para el escenario documentado. No incluye automáticamente respirador purificador, cartuchos, prueba de ajuste ni procedimiento de descontaminación operativa.',
       'Desglosa esos elementos en la cotización para comparar alcance y responsabilidades. Distinguir ropa, respiración y control de uso ayuda a evitar que una propuesta omita recursos indispensables para una tarea condicionada por monitoreo.',
     ],
     relacionados: [
