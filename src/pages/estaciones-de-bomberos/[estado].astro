@@ -293,7 +293,7 @@ const cta: CtaPreset = {
 
 <style>
   /* Bloque de municipio: barra con número, título y conteo */
-  .muni { scroll-margin-top: calc(var(--header-height) + 1rem); }
+  .muni { scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
   .muni-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20.5rem), 1fr));
@@ -352,7 +352,7 @@ const cta: CtaPreset = {
   }
   /* Sub-secciones del directorio dentro de la columna principal */
   .dir-main { gap: 0; }
-  .dir-sub { scroll-margin-top: calc(var(--header-height) + 1rem); }
+  .dir-sub { scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
   .dir-sub + .dir-sub {
     margin-top: clamp(3rem, 5vw, 4.5rem);
     padding-top: clamp(3rem, 5vw, 4.5rem);

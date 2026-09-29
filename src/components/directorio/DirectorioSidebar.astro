@@ -158,7 +158,7 @@ const guias = (await getPosts())
     min-width: 0;
   }
   .dsb__flow, .dsb__sticky { display: grid; gap: 1.1rem; }
-  .dsb__sticky { position: sticky; top: calc(var(--header-height) + 1.5rem); }
+  .dsb__sticky { position: sticky; top: calc(var(--sticky-offset) + 1.5rem); }
 
   /* --- Tarjeta base: mismo lenguaje que BlogSidebar/PostCard ---- */
   .sb-card {
