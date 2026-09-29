@@ -301,12 +301,12 @@ seccion.criterios = {
 };
 seccion.intro.push(
   "El momento de colocación y retiro merece el mismo cuidado que la compra. La capucha puede quedar expuesta a productos de combustión y después tocar piel, casco o cabina si se guarda sin procesar. Define una ruta de equipo limpio y contaminado, asigna responsables e incorpora el cuidado a la instrucción de uso. Esto mantiene la cobertura y evita que la prenda se convierta en una fuente de transferencia.",
-  "Para comparar opciones, solicita construcción, material, apertura, medidas publicadas cuando existan y estatus normativo por modelo. La capucha antipartículas publicada en la familia estructural y la monja de brigada son fichas de pieza complementarias: /trajes/estructural/monja/ y /trajes/brigadista/monja/. Sus objetivos no se mezclan con una capucha de Nomex solo porque todas cubren cabeza y cuello.",
+  "Para comparar opciones, solicita construcción, material, apertura, medidas publicadas cuando existan y estatus normativo por modelo. La capucha antipartículas de la familia estructural y la monja de brigada tienen su propia ficha de pieza, enlazada arriba. Sus objetivos no se mezclan con una capucha de Nomex solo porque todas cubren cabeza y cuello.",
 );
 seccion.faq.push(
   {
     q: "¿Dónde están las fichas de capucha existentes?",
-    a: "En /trajes/estructural/monja/ y /trajes/brigadista/monja/.",
+    a: "En las fichas de pieza de cada familia de traje, enlazadas al inicio de esta página.",
   },
   {
     q: "¿Una barrera contra partículas evita lavar?",
