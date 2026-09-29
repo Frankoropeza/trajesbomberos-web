@@ -57,11 +57,11 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
   },
   '/marcas/romak-fire/': {
     errores: [
-      'Romak Fire requiere comprar por modelo, operación y declaración publicada, no por el nombre de la marca. Confundir un traje de proximidad con uno estructural o trasladar la certificación UL de Mark One MPX-8 a otra línea puede comprometer el anexo técnico y la selección.',
+      'Romak Fire se compra por modelo, operación y declaración publicada, no por el nombre de la marca. Confundir un traje de proximidad con uno estructural, o dar por certificado un modelo que solo se declara, como Maverick II o Fire Ranger Explorer, compromete el anexo técnico y la selección.',
       'Incluye modelo, código, talla, capa y norma declarada en la solicitud. Con la tarea, cantidad y configuración por WhatsApp se prepara una cotización con partidas rastreables, útil para comparar Romak Fire Protector, Fire Ranger o Combate Básico sin mezclar su alcance.',
     ],
     faq: [
-      'Romak Fire aclara qué modelo corresponde a estructural, brigada, forestal o aproximación, y cuál es su estatus normativo publicado. Por ejemplo, Mark One MPX-8 declara certificación UL MH48840, mientras otras fichas se presentan como declarado, materiales o sin norma.',
+      'Romak Fire aclara qué modelo corresponde a estructural, brigada, forestal o aproximación, y cuál es su estatus normativo. Protector, Profesional, Defender, Vantage y Mark One MPX-8 se publican con certificación UL; Maverick II y los Fire Ranger, como declarados; Combate Básico, por materiales, y BOMW1002, sin norma.',
       'Envía por WhatsApp operación, modelo de interés, tallas y cantidad para cotejar código, materiales y accesorios. Esa información permite pedir documentación por partida y evita que una foto o una familia de producto sustituya la configuración que necesita tu requisición.',
     ],
     ficha: [
@@ -69,7 +69,7 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'La norma y el estatus se transcriben exactamente desde la ficha del modelo, sin generalizarlos a la marca. Pide por escrito la ficha técnica de cada partida y confirma composición, accesorios y documentación antes de comparar ofertas o recibir el suministro.',
     ],
     marca: [
-      'Romak Fire publica Protector, Profesional, Defender, Vantage, Maverick II, Combate Básico, Fire Ranger Explorer, Fire Ranger Scout, BOMW1002 y Mark One MPX-8. El último declara certificación UL MH48840 para NFPA 1971:2018 proximidad; los demás se revisan por el estatus que indica cada ficha.',
+      'Romak Fire publica Protector, Profesional, Defender, Vantage, Maverick II, Combate Básico, Fire Ranger Explorer, Fire Ranger Scout, BOMW1002 y Mark One MPX-8. Protector, Profesional, Defender y Vantage se publican con certificación UL para estructural, y Mark One MPX-8 para proximidad; el resto se revisa por el estatus de su ficha.',
       'Selecciona el modelo a partir de la operación y solicita código, talla, capas y declaración correspondiente. Una cotización por partidas permite conservar la diferencia entre certificado UL, declarado, materiales o sin norma, en vez de atribuir a toda la marca una condición que no publica.',
     ],
   },
@@ -303,15 +303,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
   },
   '/trajes/aproximacion/modelos/romak-mark-one/': {
     caracteristicas: [
-      'Romak Fire Mark One MPX-8 · traje de bombero de aproximación declara sistema de cuatro capas, exterior Nor-Fab MPX-8 aluminizada, Omni Synergy y Stedair 3000. También integra DRD, porta micrófono, porta radio, tirantes H y rodilleras ortopédicas que deben confirmarse en la configuración ofertada.',
+      'El traje de aproximación Romak Fire Mark One MPX-8 declara un sistema de cuatro capas, exterior Nor-Fab MPX-8 aluminizada, Omni Synergy y Stedair 3000. También integra DRD, porta micrófono, porta radio, tirantes H y rodilleras ortopédicas que deben confirmarse en la configuración ofertada.',
       'Pide que BOM1046, capas, opción de tirantes y accesorios queden escritos en la cotización. Ensayar radio, máscara, ERA, casco y guantes con el traje revela enganches o presión antes de recibir una configuración que no coincide con las maniobras aeroportuarias o industriales previstas.',
     ],
     faq: [
-      'Romak Fire Mark One MPX-8 · traje de bombero de aproximación responde para qué operación se indica y cuál es su certificación. Se publica para proximidad aeroportuaria e industrial, con certificación UL MH48840; además aclara exterior Nor-Fab MPX-8 aluminizada y código BOM1046.',
+      'Las dudas sobre el traje de aproximación Mark One MPX-8 se concentran en la operación y la certificación. Se publica para proximidad aeroportuaria e industrial, con certificación UL MH48840; además aclara exterior Nor-Fab MPX-8 aluminizada y código BOM1046.',
       'Envía por WhatsApp cantidad, tallas, operación y accesorios de comunicación o ERA. Con esos datos se prepara una partida que identifica el modelo y su configuración, y se solicita la declaración de conformidad sin trasladar su condición a otros trajes de Romak Fire.',
     ],
     ficha: [
-      'Romak Fire Mark One MPX-8 · traje de bombero de aproximación se identifica como BOM1046, con exterior Nor-Fab MPX-8 aluminizada de 17 % Basofil y 83 % para-aramida, barrera Omni Synergy y Stedair 3000. Declara certificación UL MH48840 para NFPA 1971:2018 proximidad.',
+      'El traje de aproximación Romak Fire Mark One MPX-8 se identifica como BOM1046, con exterior Nor-Fab MPX-8 aluminizada de 17 % Basofil y 83 % para-aramida, barrera Omni Synergy y Stedair 3000. Declara certificación UL MH48840 para NFPA 1971:2018 proximidad.',
       'Copia código, cuatro capas, talla, tirantes H y accesorios al anexo técnico. Pide por escrito la declaración de conformidad para la configuración elegida: la certificación UL publicada pertenece a este modelo y debe acompañar la partida, no asumirse para otra variante.',
     ],
   },
