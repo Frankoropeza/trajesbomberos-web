@@ -647,7 +647,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/tirantes-acolchados-tipo-h.svg",
+        "src": "/images/piezas/tirantes-acolchados-tipo-h.avif",
         "alt": "Tirantes acolchados tipo H para pantalonera de bombero"
       },
       {
@@ -896,7 +896,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/rodilleras-de-espuma-para-forro.svg",
+        "src": "/images/piezas/rodilleras-de-espuma-para-forro.avif",
         "alt": "Rodilleras de espuma para forro de pantalonera de bombero"
       },
       {
@@ -2536,7 +2536,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pantalonera-de-brigadista-pieza-suelta.svg",
+        "src": "/images/piezas/pantalonera-de-brigadista-pieza-suelta.avif",
         "alt": "Pantalón de brigadista para reposición"
       },
       {
@@ -3075,7 +3075,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/tirantes-tipo-x-de-ocho-puntos.svg",
+        "src": "/images/piezas/tirantes-tipo-x-de-ocho-puntos.avif",
         "alt": "Tirantes tipo X de ocho puntos para pantalón de brigada"
       },
       {
@@ -3893,7 +3893,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/chamarra-forestal.svg",
+        "src": "/images/piezas/chamarra-forestal.avif",
         "alt": "Chamarra forestal para bombero de una sola capa"
       },
       {
@@ -4167,7 +4167,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/overol-forestal.svg",
+        "src": "/images/piezas/overol-forestal.avif",
         "alt": "Overol forestal para bombero de una sola pieza"
       },
       {
@@ -4441,7 +4441,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/nuquera-forestal.svg",
+        "src": "/images/piezas/nuquera-forestal.avif",
         "alt": "Nuquera forestal para casco de bombero"
       },
       {
@@ -4987,15 +4987,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/chaqueton-aluminizado-de-aproximacion.svg",
+        "src": "/images/piezas/chaqueton-aluminizado-de-aproximacion.avif",
         "alt": "Chaquetón aluminizado de aproximación para calor radiante"
       },
       {
-        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.avif",
         "alt": "Traje de aproximación aluminizado"
       },
       {
-        "src": "/images/productos/capucha-aluminizada-aproximacion.svg",
+        "src": "/images/productos/capucha-aluminizada-aproximacion.avif",
         "alt": "Capucha aluminizada del conjunto de aproximación"
       }
     ],
@@ -5271,15 +5271,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pantalon-aluminizado-de-aproximacion.svg",
+        "src": "/images/piezas/pantalon-aluminizado-de-aproximacion.avif",
         "alt": "Pantalón aluminizado de aproximación"
       },
       {
-        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.avif",
         "alt": "Traje de aproximación aluminizado"
       },
       {
-        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "src": "/images/productos/guante-aluminizado-aproximacion.avif",
         "alt": "Guante aluminizado de aproximación"
       }
     ],
@@ -5550,15 +5550,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/capucha-aluminizada-con-visor-dorado.svg",
+        "src": "/images/piezas/capucha-aluminizada-con-visor-dorado.avif",
         "alt": "Capucha aluminizada con visor dorado de aproximación"
       },
       {
-        "src": "/images/productos/capucha-aluminizada-aproximacion.svg",
+        "src": "/images/productos/capucha-aluminizada-aproximacion.avif",
         "alt": "Capucha aluminizada del conjunto de aproximación"
       },
       {
-        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.avif",
         "alt": "Traje de aproximación aluminizado completo"
       }
     ],
@@ -5828,15 +5828,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/guantes-aluminizados-de-tres-dedos.svg",
+        "src": "/images/piezas/guantes-aluminizados-de-tres-dedos.avif",
         "alt": "Guantes aluminizados de tres dedos para calor radiante"
       },
       {
-        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "src": "/images/productos/guante-aluminizado-aproximacion.avif",
         "alt": "Guante aluminizado de aproximación"
       },
       {
-        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.avif",
         "alt": "Traje de aproximación aluminizado"
       }
     ],
@@ -6105,15 +6105,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/polainas-aluminizadas-para-bota.svg",
+        "src": "/images/piezas/polainas-aluminizadas-para-bota.avif",
         "alt": "Polainas aluminizadas para bota de trabajo"
       },
       {
-        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.avif",
         "alt": "Traje de aproximación aluminizado"
       },
       {
-        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "src": "/images/productos/guante-aluminizado-aproximacion.avif",
         "alt": "Guante aluminizado de aproximación"
       }
     ],
@@ -6381,15 +6381,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/delantal-aluminizado.svg",
+        "src": "/images/piezas/delantal-aluminizado.avif",
         "alt": "Delantal aluminizado para fundición y calor radiante"
       },
       {
-        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.svg",
+        "src": "/images/productos/traje-aproximacion-aluminizado-bombero.avif",
         "alt": "Traje de aproximación aluminizado"
       },
       {
-        "src": "/images/productos/guante-aluminizado-aproximacion.svg",
+        "src": "/images/productos/guante-aluminizado-aproximacion.avif",
         "alt": "Guante aluminizado de aproximación"
       }
     ],
@@ -6658,15 +6658,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-de-penetracion-de-corta-duracion.svg",
+        "src": "/images/piezas/conjunto-de-penetracion-de-corta-duracion.avif",
         "alt": "Traje de penetración a la flama de corta duración"
       },
       {
-        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "src": "/images/productos/traje-entrada-penetracion-flama.avif",
         "alt": "Traje de entrada aluminizado multicapa"
       },
       {
-        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "src": "/images/productos/capucha-entrada-aluminizada.avif",
         "alt": "Capucha aluminizada de traje de entrada"
       }
     ],
@@ -6942,15 +6942,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-de-penetracion-avanzada.svg",
+        "src": "/images/piezas/conjunto-de-penetracion-avanzada.avif",
         "alt": "Traje de entrada a fuego avanzado para engullimiento"
       },
       {
-        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "src": "/images/productos/traje-entrada-penetracion-flama.avif",
         "alt": "Traje de entrada aluminizado multicapa"
       },
       {
-        "src": "/images/productos/botas-aluminizadas-entrada.svg",
+        "src": "/images/productos/botas-aluminizadas-entrada.avif",
         "alt": "Botas aluminizadas del conjunto de entrada"
       }
     ],
@@ -7221,15 +7221,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/capucha-de-penetracion-con-visor-doble.svg",
+        "src": "/images/piezas/capucha-de-penetracion-con-visor-doble.avif",
         "alt": "Capucha de entrada a la flama con visor de doble capa"
       },
       {
-        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "src": "/images/productos/capucha-entrada-aluminizada.avif",
         "alt": "Capucha aluminizada de traje de entrada"
       },
       {
-        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "src": "/images/productos/traje-entrada-penetracion-flama.avif",
         "alt": "Traje de entrada aluminizado multicapa"
       }
     ],
@@ -7499,15 +7499,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/guantes-miton-de-penetracion.svg",
+        "src": "/images/piezas/guantes-miton-de-penetracion.avif",
         "alt": "Guantes mitón para entrada a la flama"
       },
       {
-        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "src": "/images/productos/traje-entrada-penetracion-flama.avif",
         "alt": "Traje de entrada aluminizado multicapa"
       },
       {
-        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "src": "/images/productos/capucha-entrada-aluminizada.avif",
         "alt": "Capucha aluminizada de traje de entrada"
       }
     ],
@@ -7781,15 +7781,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-para-mantenimiento-de-hornos.svg",
+        "src": "/images/piezas/conjunto-para-mantenimiento-de-hornos.avif",
         "alt": "Traje para mantenimiento de hornos con visor transparente"
       },
       {
-        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "src": "/images/productos/traje-entrada-penetracion-flama.avif",
         "alt": "Traje de entrada aluminizado multicapa"
       },
       {
-        "src": "/images/productos/botas-aluminizadas-entrada.svg",
+        "src": "/images/productos/botas-aluminizadas-entrada.avif",
         "alt": "Botas aluminizadas del conjunto de entrada"
       }
     ],
@@ -8060,15 +8060,15 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/pasamontanas-y-talega-de-conjunto.svg",
+        "src": "/images/piezas/pasamontanas-y-talega-de-conjunto.avif",
         "alt": "Pasamontañas ignífugo y talega del conjunto de entrada"
       },
       {
-        "src": "/images/productos/traje-entrada-penetracion-flama.svg",
+        "src": "/images/productos/traje-entrada-penetracion-flama.avif",
         "alt": "Traje de entrada aluminizado multicapa"
       },
       {
-        "src": "/images/productos/capucha-entrada-aluminizada.svg",
+        "src": "/images/productos/capucha-entrada-aluminizada.avif",
         "alt": "Capucha aluminizada de traje de entrada"
       }
     ],
@@ -9170,7 +9170,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/overol-de-rescate-tecnico.svg",
+        "src": "/images/piezas/overol-de-rescate-tecnico.avif",
         "alt": "Overol de rescate técnico de una pieza"
       },
       {
@@ -9448,7 +9448,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "images": [
       {
-        "src": "/images/piezas/conjunto-dual-rescate-y-forestal.svg",
+        "src": "/images/piezas/conjunto-dual-rescate-y-forestal.avif",
         "alt": "Conjunto dual rescate y forestal"
       },
       {
