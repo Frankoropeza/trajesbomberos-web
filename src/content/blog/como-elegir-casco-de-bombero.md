@@ -9,6 +9,11 @@ descRight:
 meta: ["Estructural", "Forestal", "Rescate", "Compatibilidad con ERA"]
 resumen: "Guía para elegir casco de bombero: tipos de uso, ajuste, suspensión, protección ocular y compatibilidad con el resto del equipo."
 categoria: "especificacion"
+productos:
+  - "/cascos/"
+  - "/cascos/casco-estructural-tradicional/"
+  - "/cascos/casco-forestal/"
+  - "/cascos/casco-rescate-tecnico/"
 fecha: 2026-09-28
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "Cómo elegir casco de bombero | guía | México"

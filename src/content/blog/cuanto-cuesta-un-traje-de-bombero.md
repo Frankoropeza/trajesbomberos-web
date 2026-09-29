@@ -13,6 +13,14 @@ meta:
   - "Costo por vida de servicio"
 resumen: "Qué determina el costo de un traje de bombero y qué debe incluir una cotización para comparar familias, materiales, certificación, tallas, accesorios y entrega."
 categoria: "especificacion"
+productos:
+  - "/trajes/"
+  - "/trajes/brigadista/"
+  - "/trajes/estructural/"
+  - "/cascos/"
+  - "/trajes/estructural/modelos/romak-protector/"
+  - "/trajes/estructural/modelos/skold-hero-nomex/"
+  - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "Cuánto cuesta un traje de bombero | México"

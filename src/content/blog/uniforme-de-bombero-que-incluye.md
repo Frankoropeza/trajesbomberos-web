@@ -13,6 +13,15 @@ meta:
   - "Compra por uso y talla"
 resumen: "Qué incluye el uniforme de bombero, cómo se diferencia del equipo de protección y qué pedir para estación, brigada, ataque estructural o incendio forestal."
 categoria: "comparativas"
+productos:
+  - "/trajes/"
+  - "/trajes/estructural/"
+  - "/trajes/brigadista/"
+  - "/trajes/forestal/"
+  - "/botas/"
+  - "/guantes/"
+  - "/capuchas/"
+  - "/cascos/"
 fecha: 2026-09-28
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "Uniforme de bombero: ropa y protección | México"

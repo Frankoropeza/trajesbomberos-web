@@ -118,6 +118,18 @@ const ETIQUETAS_EQUIPO: Record<string, string> = {
   kits: 'Kits de equipo para bombero',
 };
 
+/** Texto con palabra clave de una sección del catálogo («Cascos para bombero»). */
+export function etiquetaEquipo(slug: string, respaldo: string): string {
+  return ETIQUETAS_EQUIPO[slug] ?? respaldo;
+}
+
+/** Minúscula solo en la inicial y solo si no es sigla ni nombre propio («PASS», «Bullard»). */
+export function temaEnFrase(texto: string): string {
+  const [primera = '', segunda = ''] = texto;
+  const esComun = /^(Trajes?|Chaquet|Pantal|Tirant|Rodill|Arn|Monja|Capuch|Casco|Bota|Guante|Kit|Equipo|Herram|Mangu|Acceso|Conjunto|Overol|Camisola|Chamarra|Nuquera|Polaina|Delantal|Hornos?|Cover|Chaqueta|Pantal|Botas|Cilindro|Máscara|Mascara|Lámpara|Lampara|Linterna|Maleta|Cámara|Camara|Dispositivo|Goggles|Barra|Batefuego|Bomba|Gancho|Hacha|Rastrillo|Cuerda|Mosquet|Llave|Pitón|Piton|Conexi|ERA de|Guías?)/.test(texto);
+  return esComun && segunda === segunda.toLowerCase() ? primera.toLowerCase() + texto.slice(1) : texto;
+}
+
 /** Secciones del catálogo (sin «marcas») con texto de enlace SEO. */
 export function equipoCatalogo(): EnlaceEquipo[] {
   return SECCIONES.filter((seccion) => seccion.slug !== 'marcas').map((seccion) => ({

@@ -14,6 +14,10 @@ meta:
 resumen: "En qué se diferencian de verdad, qué exige la NOM-002-STPS-2010 a una brigada industrial y cómo saber cuál corresponde a tu riesgo antes de pedir tres cotizaciones que no se pueden comparar."
 categoria: "comparativas"
 familia: "brigadista"
+productos:
+  - "/trajes/"
+  - "/trajes/estructural/"
+  - "/trajes/brigadista/"
 fecha: 2026-06-30
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "Traje estructural o brigadista | diferencias | México"

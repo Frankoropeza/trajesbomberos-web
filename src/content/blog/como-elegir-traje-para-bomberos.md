@@ -14,6 +14,13 @@ meta:
 resumen: "El orden correcto para decidir: primero la operación, luego la familia de traje, luego el composite y hasta el final el precio. Con la tabla que usamos por teléfono y los cinco datos que hacen comparable una cotización."
 ancla: "Cómo elegir traje para bomberos"
 categoria: "especificacion"
+productos:
+  - "/trajes/estructural/"
+  - "/trajes/brigadista/"
+  - "/trajes/forestal/"
+  - "/trajes/aproximacion/"
+  - "/trajes/entrada/"
+  - "/trajes/extricacion/"
 fecha: 2026-07-14
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "Cómo elegir traje para bomberos | guía de compra | México"

@@ -9,6 +9,8 @@ import { duoSeccion } from '@lib/titulos';
 import ModelosGrid from '@components/ModelosGrid.astro';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeSeccion, urlModelo } from '@lib/catalogo/modelos';
+import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
+import { etiquetaEquipo, temaEnFrase } from '@lib/blog-enlaces';
 
 export const getStaticPaths = (() => {
   const reserved = new Set(['trajes', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
@@ -60,6 +62,7 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
     </section>}
     <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title="Respuestas antes de elegir" duo={duoSeccion(seccion.slug, 'faq')} /><FAQWithContact items={seccion.faq} /></section>
   </div></div>
+  <GuiasTecnicas ruta={path} tema={temaEnFrase(etiquetaEquipo(seccion.slug, seccion.nombre))} />
 </PageLayout>
 
 <style>

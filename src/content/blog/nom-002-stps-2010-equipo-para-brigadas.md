@@ -10,6 +10,13 @@ meta: ["NOM-002-STPS-2010", "Riesgo ordinario o alto", "Selección de EPP", "Cap
 resumen: "Qué pide la NOM-002-STPS-2010 para una brigada contra incendio, cómo cambia el equipo con el riesgo del centro de trabajo y qué documentar antes de comprar."
 categoria: "normas"
 familia: "brigadista"
+productos:
+  - "/kits/kit-brigadista/"
+  - "/trajes/brigadista/"
+  - "/cascos/"
+  - "/equipo-de-respiracion-autonoma/era-industrial/"
+  - "/trajes/estructural/"
+  - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "NOM-002-STPS-2010: equipo para brigadas | México"

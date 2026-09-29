@@ -20,6 +20,8 @@ import { FAMILIAS } from '@lib/familias';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { heroDeFamilia } from '@lib/imagenes';
+import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
+import { temaEnFrase } from '@lib/blog-enlaces';
 
 export const getStaticPaths = (() => {
   return PIEZAS.map((p) => ({
@@ -252,6 +254,8 @@ const pageIndex = [
       <p class="volver"><a href={`/trajes/${pz.familia}/`}>← Volver a {familia.nombreWa.toLowerCase()}</a></p>
     </div>
   </section>
+
+  <GuiasTecnicas ruta={path} tema={temaEnFrase(pz.nombre)} />
 
   <!-- 8 · CTA de cierre -->
   <CTABanner variant="dark" {...presetCategoria(pz.nombre)} />

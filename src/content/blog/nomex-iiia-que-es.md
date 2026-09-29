@@ -9,6 +9,11 @@ descRight:
 meta: ["Meta-aramida", "Mezcla 93/5/2", "Fibra inherente", "Cuidado de prenda"]
 resumen: "Qué es Nomex IIIA, cómo se diferencia de PBI, Kevlar y algodón ignífugo, y qué revisar al elegir una prenda para bomberos o brigada."
 categoria: "especificacion"
+productos:
+  - "/trajes/estructural/"
+  - "/trajes/estructural/modelos/romak-profesional/"
+  - "/guantes/"
+  - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "Nomex IIIA: qué es en trajes de bombero | México"

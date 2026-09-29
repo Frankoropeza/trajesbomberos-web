@@ -23,6 +23,8 @@ import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
 import { duoFamilia } from '@lib/titulos';
 import ModelosGrid from '@components/ModelosGrid.astro';
 import { tilesFamilias, tilesPiezas } from '@lib/catalogo/tiles';
+import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
+import { temaEnFrase } from '@lib/blog-enlaces';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -186,6 +188,8 @@ const pageIndex = [
   </section>
 
   <div class="section conjunto-wrap"><div class="container"><CompletaElConjunto /></div></div>
+
+  <GuiasTecnicas ruta={path} tema={temaEnFrase(f.nombreWa)} />
 
   <!-- 7 · CTA de cierre -->
   <CTABanner variant="dark" {...presetCategoria(f.nombreWa)} />

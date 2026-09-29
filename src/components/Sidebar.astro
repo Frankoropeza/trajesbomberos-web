@@ -8,7 +8,7 @@
 import { PRODUCT_CATEGORIES, CONTACT, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 import { PIEZAS } from '@lib/piezas';
-import { getPostsByFamilia, postUrl, categoriaNombre } from '@lib/blog';
+import { guiasParaRuta, postUrl, categoriaNombre } from '@lib/blog';
 
 interface Props {
   activeSlug?: string;
@@ -22,7 +22,7 @@ const fichas = activeSlug ? PIEZAS.filter((p) => p.familia === activeSlug) : [];
 // Artículos del blog para esta familia: interlinking hacia el
 // contenido editorial, que es el que resuelve las dudas que
 // frenan la cotización.
-const articulos = await getPostsByFamilia(activeSlug, 3);
+const articulos = await guiasParaRuta(Astro.url.pathname, 3);
 
 const RECURSOS = [
   { label: 'Anatomía del traje', href: '/#anatomia' },

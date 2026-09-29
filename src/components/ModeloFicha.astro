@@ -13,6 +13,8 @@ import type { Modelo, Seccion, Tipo } from '@lib/catalogo/types';
 import { waUrl } from '@lib/wa';
 import { FAMILIAS } from '@lib/familias';
 import { piezasDeFamilia } from '@lib/piezas';
+import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
+import { temaEnFrase } from '@lib/blog-enlaces';
 
 interface Props { seccion: Seccion; entry: Tipo | Modelo; kind: 'tipo' | 'modelo'; path: string; parent?: { name: string; href: string } | { name: string; href: string }[]; heroImage?: { src: string; alt: string }; }
 const { seccion, entry, kind, path, parent, heroImage = seccion.hero } = Astro.props;
@@ -117,6 +119,7 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
     {componentesKit.length > 0 && <section class="block"><SectionHeading eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
   </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Ver familia</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>Ver catálogo</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
+  <GuiasTecnicas ruta={path} tema={temaEnFrase(nombre)} />
   <CTABanner variant="dark" title={`Cotiza ${nombre}`} text="Indica operación, número de elementos y accesorios para confirmar por escrito la configuración." buttons={[{ label: 'Cotizar por WhatsApp', href: waUrl(waMessage), icon: 'wa', primary: true, external: true }, { label: `Volver a ${seccion.nombre.toLowerCase()}`, href: `/${seccion.slug}/`, icon: 'catalog' }]} />
 </PageLayout>
 <style>

@@ -1,0 +1,58 @@
+---
+import SectionHeading from '@components/SectionHeading.astro';
+import PostCard from '@components/PostCard.astro';
+import { guiasParaRuta, postUrl, readingTime } from '@lib/blog';
+
+interface Props {
+  ruta?: string;
+  tema: string;
+  limite?: number;
+}
+
+const { ruta = Astro.url.pathname, tema, limite = 4 } = Astro.props;
+const guias = await guiasParaRuta(ruta, limite);
+---
+
+<section class="section section--alt">
+  <div class="container">
+    <SectionHeading
+      eyebrow="Guías técnicas"
+      title={`Guías sobre ${tema}`}
+      description="Criterios prácticos para especificar, comparar y mantener este equipo."
+    />
+    <div class="guias-grid">
+      {guias.map((guia, index) => (
+        <PostCard
+          href={postUrl(guia)}
+          title={guia.data.title}
+          resumen={guia.data.resumen}
+          categoria={guia.data.categoria}
+          lectura={readingTime(guia.body)}
+          image={guia.data.imagen}
+          imageAlt={guia.data.imagenAlt}
+          destacado={guia.data.destacado}
+          ancla={guia.data.ancla}
+          {index}
+        />
+      ))}
+    </div>
+    <p class="guias-link"><a href="/blog/">Blog de trajes para bomberos →</a></p>
+  </div>
+</section>
+
+<style>
+  .guias-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .guias-link { margin: 2rem 0 0; }
+  .guias-link a { color: var(--color-primary); font-weight: 800; text-decoration: none; }
+  .guias-link a:hover { text-decoration: underline; }
+  @media (min-width: 560px) {
+    .guias-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (min-width: 1024px) {
+    .guias-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+</style>

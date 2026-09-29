@@ -14,6 +14,10 @@ meta:
 resumen: "Qué mide el TPP, qué mide el THL, por qué van en direcciones opuestas y qué valores pedir en tu cotización para que dos ofertas sean realmente comparables."
 categoria: "especificacion"
 familia: "estructural"
+productos:
+  - "/trajes/estructural/"
+  - "/trajes/estructural/chaqueton/"
+  - "/trajes/estructural/pantalonera/"
 fecha: 2026-06-23
 autor: "Equipo técnico TrajesBombero"
 seoTitle: "TPP y THL | traje estructural | México"
