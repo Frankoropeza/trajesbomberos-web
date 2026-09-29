@@ -1,65 +1,203 @@
 ---
-// CategoryTiles (home): índice visual de TODAS las categorías del
-// catálogo, 4 cards por fila en desktop (2 en tablet, 1 en móvil).
-// Va arriba del grid de familias de traje. Solo enlaza rutas que
-// existen en build (getSeccion / PRODUCT_CATEGORIES): nunca inventa
-// una URL. Regla del sitio: cero animaciones/transiciones.
-import { getSeccion } from '@lib/catalogo/secciones';
-import { tiposDeSeccion } from '@lib/catalogo/tipos';
-import { MODELOS } from '@lib/catalogo/data';
-import { piezasDeFamilia } from '@lib/piezas';
+// CategoryTiles (home): índice de las 12 categorías del catálogo.
+// Card homologada: imagen 4:3 → título → texto → 4 subcategorías →
+// botón principal. 4 cards por fila (2 en tablet, 1 en móvil).
+// Todos los textos de botón son palabra clave (nunca "ver", "ir").
+// Cada href se valida contra las rutas reales del build: si una
+// subcategoría deja de existir, se omite y se avisa en consola.
+// Regla del sitio: cero animaciones/transiciones.
+import { SECCIONES, TIPOS, MODELOS } from '@lib/catalogo/data';
+import { PIEZAS } from '@lib/piezas';
 import { PRODUCT_CATEGORIES } from '@config/site';
 
+interface Sub { label: string; href: string }
 interface Def {
   titulo: string;
   desc: string;
   href: string;
+  cta: string; // botón principal: palabra clave de la categoría
   img: string;
   alt: string;
-  seccion?: string; // hub del catálogo: define existencia y conteo
-  meta?: string;    // conteo fijo cuando no es hub de catálogo
+  pos?: string; // object-position de la foto (retrato vs. paisaje)
+  subs: Sub[];
 }
 
-const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
-const piezasHazmat = piezasDeFamilia('hazmat').length;
+// Rutas válidas en build (hubs, tipos, modelos, familias y piezas).
+const RUTAS = new Set<string>([
+  '/trajes/',
+  ...SECCIONES.map((s) => `/${s.slug}/`),
+  ...TIPOS.map((t) => `/${t.seccion}/${t.slug}/`),
+  ...MODELOS.filter((m) => m.seccion).map((m) => `/${m.seccion}/${m.id}/`),
+  ...PRODUCT_CATEGORIES.map((c) => `/trajes/${c.slug}/`),
+  '/trajes/hazmat/',
+  ...PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`),
+]);
 
 const DEFS: Def[] = [
-  { titulo: 'Trajes para bomberos', desc: 'Estructural, brigadista, forestal, aproximación, entrada y extricación.', href: '/trajes/', img: '/images/catalogo/trajes/skold-hero-pbimax-conjunto.avif', alt: 'Traje estructural para bombero de chaquetón y pantalonera', meta: plural(PRODUCT_CATEGORIES.length, 'familia', 'familias') },
-  { titulo: 'Cascos para bomberos', desc: 'Estructural tradicional y europeo, forestal, rescate y brigada.', href: '/cascos/', seccion: 'cascos', img: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero estructurales, forestales y de rescate' },
-  { titulo: 'Equipo de respiración autónoma', desc: 'ERA de combate, industrial y de escape, máscaras y cilindros.', href: '/equipo-de-respiracion-autonoma/', seccion: 'equipo-de-respiracion-autonoma', img: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro' },
-  { titulo: 'Botas para bomberos', desc: 'Hule o piel estructural, forestal y de brigada industrial.', href: '/botas/', seccion: 'botas', img: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel' },
-  { titulo: 'Guantes para bomberos', desc: 'Estructurales, de extricación, forestales y de brigadista.', href: '/guantes/', seccion: 'guantes', img: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales y de extricación' },
-  { titulo: 'Monjas y escafandras', desc: 'Protección de cabeza y cuello bajo el casco, con o sin barrera.', href: '/capuchas/', seccion: 'capuchas', img: '/images/catalogo/capuchas/hero-capuchas-800.avif', alt: 'Monjas y escafandras para bombero' },
-  { titulo: 'Kits para bomberos', desc: 'Conjuntos completos estructural, brigadista y forestal.', href: '/kits/', seccion: 'kits', img: '/images/catalogo/kits/hero-kits-800.avif', alt: 'Kit completo de equipo para bombero' },
-  { titulo: 'Trajes Hazmat', desc: 'Protección química niveles A, B y C, guantes y botas químicas.', href: '/trajes/hazmat/', img: '/images/catalogo/hazmat/hero-hazmat-800.avif', alt: 'Trajes de protección química Hazmat', meta: plural(piezasHazmat, 'pieza cotizable', 'piezas cotizables') },
-  { titulo: 'Equipo de rescate', desc: 'Extricación hidráulica, cuerdas, arneses y rescate vertical.', href: '/rescate/', seccion: 'rescate', img: '/images/catalogo/rescate/hero-rescate-800.avif', alt: 'Equipo de rescate para bomberos: cuerdas, arneses y herramienta hidráulica' },
-  { titulo: 'Herramientas para bomberos', desc: 'Entrada forzada y combate forestal: Halligan, hachas y más.', href: '/herramientas/', seccion: 'herramientas', img: '/images/catalogo/herramientas/hero-herramientas-800.avif', alt: 'Herramientas para bombero de entrada forzada' },
-  { titulo: 'Mangueras y accesorios', desc: 'Manguera de ataque, pitones, conexiones y llaves de hidrante.', href: '/mangueras-y-accesorios/', seccion: 'mangueras-y-accesorios', img: '/images/catalogo/mangueras/hero-mangueras-800.avif', alt: 'Mangueras contra incendio y accesorios' },
-  { titulo: 'Accesorios para bomberos', desc: 'Linternas, lámparas de casco, goggles, PASS y cámara térmica.', href: '/accesorios/', seccion: 'accesorios', img: '/images/catalogo/accesorios/hero-accesorios-800.avif', alt: 'Accesorios para bombero: linterna, goggles y cámara térmica' },
+  {
+    titulo: 'Trajes para bomberos', href: '/trajes/', cta: 'Catálogo de trajes para bomberos',
+    desc: 'Chaquetón y pantalonera por familia de riesgo: estructural, brigadista, forestal, aproximación, entrada y extricación.',
+    img: '/images/catalogo/trajes/skold-hero-pbimax-conjunto.avif', alt: 'Traje estructural para bombero de chaquetón y pantalonera', pos: 'center 8%',
+    subs: [
+      { label: 'Traje estructural', href: '/trajes/estructural/' },
+      { label: 'Traje de brigadista', href: '/trajes/brigadista/' },
+      { label: 'Traje forestal', href: '/trajes/forestal/' },
+      { label: 'Traje aluminizado', href: '/trajes/aproximacion/' },
+    ],
+  },
+  {
+    titulo: 'Cascos para bomberos', href: '/cascos/', cta: 'Catálogo de cascos para bomberos',
+    desc: 'Cascos estructurales, forestales y de rescate, con compatibilidad verificada con la máscara del ERA en uso.',
+    img: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero estructurales, forestales y de rescate',
+    subs: [
+      { label: 'Casco estructural tradicional', href: '/cascos/casco-estructural-tradicional/' },
+      { label: 'Casco estructural europeo', href: '/cascos/casco-estructural-europeo/' },
+      { label: 'Casco forestal', href: '/cascos/casco-forestal/' },
+      { label: 'Casco de rescate técnico', href: '/cascos/casco-rescate-tecnico/' },
+    ],
+  },
+  {
+    titulo: 'Equipo de respiración autónoma', href: '/equipo-de-respiracion-autonoma/', cta: 'Catálogo de equipos de respiración autónoma',
+    desc: 'ERA para ataque interior, industria y escape: arnés, máscara, regulador y cilindro con su certificación.',
+    img: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro',
+    subs: [
+      { label: 'ERA de combate', href: '/equipo-de-respiracion-autonoma/era-de-combate/' },
+      { label: 'ERA industrial', href: '/equipo-de-respiracion-autonoma/era-industrial/' },
+      { label: 'ERA de escape', href: '/equipo-de-respiracion-autonoma/era-de-escape/' },
+      { label: 'Cilindros de fibra de carbono', href: '/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/' },
+    ],
+  },
+  {
+    titulo: 'Botas para bomberos', href: '/botas/', cta: 'Catálogo de botas para bomberos',
+    desc: 'Botas de hule o piel para incendio estructural y bota forestal, elegidas según la familia de traje.',
+    img: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel',
+    subs: [
+      { label: 'Bota de hule estructural', href: '/botas/bota-de-hule-estructural/' },
+      { label: 'Bota de piel estructural', href: '/botas/bota-de-piel-estructural/' },
+      { label: 'Bota forestal', href: '/botas/bota-forestal/' },
+      { label: 'Bota de brigada industrial', href: '/botas/bota-de-brigada-industrial/' },
+    ],
+  },
+  {
+    titulo: 'Guantes para bomberos', href: '/guantes/', cta: 'Catálogo de guantes para bomberos',
+    desc: 'Un guante por operación: estructural, extricación, forestal y brigada. No se sustituyen entre sí.',
+    img: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales y de extricación',
+    subs: [
+      { label: 'Guante estructural', href: '/guantes/guante-estructural/' },
+      { label: 'Guante de extricación', href: '/guantes/guante-rescate-extricacion/' },
+      { label: 'Guante forestal', href: '/guantes/guante-forestal/' },
+      { label: 'Guante para brigadista', href: '/guantes/guante-brigadista/' },
+    ],
+  },
+  {
+    titulo: 'Monjas y escafandras', href: '/capuchas/', cta: 'Catálogo de monjas para bombero',
+    desc: 'Protección de cabeza y cuello bajo el casco: Nomex tradicional, barrera de partículas y capucha aluminizada.',
+    img: '/images/catalogo/capuchas/hero-capuchas-800.avif', alt: 'Monjas y escafandras para bombero',
+    subs: [
+      { label: 'Monja antipartículas', href: '/trajes/estructural/monja/' },
+      { label: 'Monja de brigada', href: '/trajes/brigadista/monja/' },
+      { label: 'Escafandra Nomex', href: '/capuchas/skold-fpen/' },
+      { label: 'Capucha aluminizada', href: '/trajes/aproximacion/capucha/' },
+    ],
+  },
+  {
+    titulo: 'Kits para bomberos', href: '/kits/', cta: 'Catálogo de kits para bomberos',
+    desc: 'Conjuntos completos y compatibles entre sí: traje, casco, monja, guantes y botas en una sola cotización.',
+    img: '/images/catalogo/kits/hero-kits-800.avif', alt: 'Kit completo de equipo para bombero',
+    subs: [
+      { label: 'Kit estructural', href: '/kits/kit-estructural/' },
+      { label: 'Kit brigadista', href: '/kits/kit-brigadista/' },
+      { label: 'Kit forestal', href: '/kits/kit-forestal/' },
+      { label: 'Kit de rescate vertical', href: '/rescate/kit-de-rescate-vertical/' },
+    ],
+  },
+  {
+    titulo: 'Trajes Hazmat', href: '/trajes/hazmat/', cta: 'Catálogo de trajes Hazmat',
+    desc: 'Protección química por nivel de riesgo: encapsulados nivel A, trajes nivel B y C, guantes y botas químicas.',
+    img: '/images/catalogo/hazmat/hero-hazmat-800.avif', alt: 'Trajes de protección química Hazmat',
+    subs: [
+      { label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' },
+      { label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' },
+      { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' },
+      { label: 'Overol químico desechable', href: '/trajes/hazmat/overol-quimico-desechable/' },
+    ],
+  },
+  {
+    titulo: 'Equipo de rescate', href: '/rescate/', cta: 'Catálogo de equipo de rescate',
+    desc: 'Rescate vehicular y vertical: herramienta hidráulica de extricación, cuerdas, arneses y conectores.',
+    img: '/images/catalogo/rescate/hero-rescate-800.avif', alt: 'Equipo de rescate para bomberos: cuerdas, arneses y herramienta hidráulica',
+    subs: [
+      { label: 'Herramienta hidráulica de rescate', href: '/rescate/herramienta-hidraulica-de-rescate/' },
+      { label: 'Arnés de rescate', href: '/rescate/arnes-de-rescate/' },
+      { label: 'Cuerda de rescate', href: '/rescate/cuerda-de-rescate/' },
+      { label: 'Mosquetones de rescate', href: '/rescate/mosquetones-de-rescate/' },
+    ],
+  },
+  {
+    titulo: 'Herramientas para bomberos', href: '/herramientas/', cta: 'Catálogo de herramientas para bomberos',
+    desc: 'Herramienta de entrada forzada y de combate forestal, seleccionada por maniobra y material.',
+    img: '/images/catalogo/herramientas/hero-herramientas-800.avif', alt: 'Herramientas para bombero de entrada forzada y forestales',
+    subs: [
+      { label: 'Hacha de bombero', href: '/herramientas/hacha-de-bombero/' },
+      { label: 'Barra Halligan', href: '/herramientas/barra-halligan/' },
+      { label: 'Herramienta Pulaski', href: '/herramientas/pulaski/' },
+      { label: 'Bomba de mochila forestal', href: '/herramientas/bomba-de-mochila-forestal/' },
+    ],
+  },
+  {
+    titulo: 'Mangueras y accesorios', href: '/mangueras-y-accesorios/', cta: 'Catálogo de mangueras contra incendio',
+    desc: 'Manguera de ataque, pitones, llaves para hidrante y conexiones compatibles con el equipo en servicio.',
+    img: '/images/catalogo/mangueras/hero-mangueras-800.avif', alt: 'Mangueras contra incendio y accesorios',
+    subs: [
+      { label: 'Manguera de ataque', href: '/mangueras-y-accesorios/manguera-de-ataque/' },
+      { label: 'Pitón o boquilla', href: '/mangueras-y-accesorios/piton-boquilla/' },
+      { label: 'Llave para hidrante', href: '/mangueras-y-accesorios/llave-para-hidrante/' },
+      { label: 'Conexiones y adaptadores', href: '/mangueras-y-accesorios/conexiones-y-adaptadores/' },
+    ],
+  },
+  {
+    titulo: 'Accesorios para bomberos', href: '/accesorios/', cta: 'Catálogo de accesorios para bomberos',
+    desc: 'Iluminación, protección ocular, alarma PASS, cámara térmica y transporte del equipo.',
+    img: '/images/catalogo/accesorios/hero-accesorios-800.avif', alt: 'Accesorios para bombero: linterna, goggles y cámara térmica',
+    subs: [
+      { label: 'Cámara térmica', href: '/accesorios/camara-termica/' },
+      { label: 'Linterna de bombero', href: '/accesorios/linterna-de-bombero/' },
+      { label: 'Lámpara de casco', href: '/accesorios/lampara-de-casco/' },
+      { label: 'Goggles para bombero', href: '/accesorios/goggles/' },
+    ],
+  },
 ];
 
-const items = DEFS.filter((d) => !d.seccion || getSeccion(d.seccion)).map((d, i) => {
-  let meta = d.meta ?? '';
-  if (d.seccion) {
-    const tipos = tiposDeSeccion(d.seccion).length;
-    const modelos = MODELOS.filter((m) => m.seccion === d.seccion).length;
-    meta = [tipos > 0 ? plural(tipos, 'tipo', 'tipos') : '', modelos > 0 ? plural(modelos, 'modelo', 'modelos') : ''].filter(Boolean).join(' · ');
-  }
-  return { ...d, meta, codigo: String(i + 1).padStart(2, '0') };
+const items = DEFS.filter((d) => RUTAS.has(d.href)).map((d, i) => {
+  const subs = d.subs.filter((s) => {
+    const ok = RUTAS.has(s.href);
+    if (!ok) console.warn(`[CategoryTiles] subcategoría sin ruta: ${s.href}`);
+    return ok;
+  });
+  return { ...d, subs, codigo: String(i + 1).padStart(2, '0') };
 });
 ---
 <ul class="ct-grid">
   {items.map((c) => (
     <li class="ct">
-      <div class="ct__media">
-        <img src={c.img} alt={c.alt} width="800" height="600" loading="lazy" decoding="async" />
-        <span class="ct__code" aria-hidden="true">{c.codigo}</span>
-      </div>
+      <a class="ct__media" href={c.href} tabindex="-1" aria-hidden="true">
+        <img src={c.img} alt={c.alt} style={c.pos ? `object-position:${c.pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
+        <span class="ct__code">{c.codigo}</span>
+      </a>
       <div class="ct__body">
         <h3 class="ct__title"><a href={c.href}>{c.titulo}</a></h3>
         <p class="ct__desc">{c.desc}</p>
-        {c.meta && <p class="ct__meta">{c.meta}</p>}
-        <span class="ct__cta" aria-hidden="true">Ver categoría →</span>
+        <ul class="ct__subs" aria-label={`Subcategorías de ${c.titulo}`}>
+          {c.subs.map((s) => (
+            <li>
+              <a class="ct__sub" href={s.href}>
+                <span>{s.label}</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a class="ct__cta" href={c.href}>{c.cta}</a>
       </div>
     </li>
   ))}
@@ -69,90 +207,143 @@ const items = DEFS.filter((d) => !d.seccion || getSeccion(d.seccion)).map((d, i)
   .ct-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--gap-grid, 1.5rem);
+    gap: 1.25rem;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   .ct {
-    position: relative;
     display: flex;
     flex-direction: column;
     background: var(--color-white);
     border: 1px solid rgb(20 22 26 / 0.14);
+    border-top: 3px solid var(--color-primary);
     border-radius: var(--radius);
     overflow: hidden;
   }
-  .ct:hover { border-color: var(--color-primary); }
-  .ct:focus-within { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  /* Imagen: proporción fija para todas las cards */
   .ct__media {
     position: relative;
+    display: block;
     aspect-ratio: 4 / 3;
+    overflow: hidden;
     background: var(--color-light);
-    border-bottom: 1px solid rgb(20 22 26 / 0.1);
   }
   .ct__media img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center 35%;
     display: block;
   }
   .ct__code {
     position: absolute;
-    top: 0.6rem;
-    left: 0.6rem;
-    padding: 0.15rem 0.45rem;
-    background: var(--color-dark);
+    left: 0;
+    bottom: 0;
+    padding: 0.3rem 0.65rem;
+    background: var(--color-primary);
     color: var(--color-white);
     font-family: var(--font-display);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    border-radius: 2px;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
   }
+
   .ct__body {
     display: flex;
     flex-direction: column;
-    gap: 0.45rem;
     flex: 1;
-    padding: 1rem 1.1rem 1.1rem;
-  }
-  .ct__title {
-    margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.25;
-  }
-  .ct__title a { color: var(--color-dark); text-decoration: none; }
-  /* Enlace estirado: toda la card es clicable sin anidar <a>. */
-  .ct__title a::after { content: ''; position: absolute; inset: 0; }
-  .ct__title a:focus-visible { outline: none; }
-  .ct:hover .ct__title a { color: var(--color-primary); }
-  .ct__desc {
-    margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.45;
-    color: var(--color-gray);
-  }
-  .ct__meta {
-    margin: 0;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    color: var(--color-dark);
-  }
-  .ct__cta {
-    margin-top: auto;
-    padding-top: 0.35rem;
-    font-weight: 800;
-    font-size: 0.9rem;
-    color: var(--color-primary);
+    padding: 1.15rem 1.15rem 1.2rem;
   }
 
+  /* Título: 2 líneas reservadas → todas las cards alinean */
+  .ct__title {
+    margin: 0 0 0.55rem;
+    font-size: 1.08rem;
+    line-height: 1.25;
+    min-height: calc(1.08rem * 1.25 * 2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .ct__title a { color: var(--color-dark); text-decoration: none; }
+  .ct__title a:hover { color: var(--color-primary); }
+
+  /* Texto: 3 líneas reservadas */
+  .ct__desc {
+    margin: 0 0 1rem;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+    min-height: calc(0.87rem * 1.5 * 3);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Subcategorías: 4 filas de igual alto */
+  .ct__subs {
+    list-style: none;
+    margin: 0 0 1.1rem;
+    padding: 0;
+    border-top: 1px solid rgb(20 22 26 / 0.12);
+  }
+  .ct__subs li { border-bottom: 1px solid rgb(20 22 26 / 0.12); }
+  .ct__sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    min-height: 46px;
+    padding: 0.35rem 0.1rem;
+    color: var(--color-dark);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+  }
+  .ct__sub svg { flex: none; color: var(--color-primary); }
+  .ct__sub:hover { color: var(--color-primary); }
+  .ct__sub:hover span { text-decoration: underline; text-underline-offset: 3px; }
+  .ct__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+
+  /* Botón principal: siempre al fondo de la card */
+  .ct__cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.55rem 0.9rem;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ct__cta:hover { background: var(--color-dark); border-color: var(--color-dark); }
+  .ct__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  @media (max-width: 1279px) {
+    .ct-grid { gap: 1rem; }
+    .ct__body { padding: 1rem; }
+  }
   @media (max-width: 1023px) {
     .ct-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  @media (max-width: 479px) {
-    .ct-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+  @media (max-width: 559px) {
+    .ct-grid { grid-template-columns: 1fr; }
+    .ct__title, .ct__desc { min-height: 0; }
   }
 </style>
