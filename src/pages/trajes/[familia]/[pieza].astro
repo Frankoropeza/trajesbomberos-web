@@ -17,6 +17,7 @@ import { PIEZAS } from '@lib/piezas';
 import { FAMILIAS } from '@lib/familias';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
+import { heroDeFamilia } from '@lib/imagenes';
 
 export const getStaticPaths = (() => {
   return PIEZAS.map((p) => ({
@@ -70,6 +71,8 @@ const pageIndex = [
   descRight={pz.descRight}
   meta={pz.meta}
   faqs={pz.faqs}
+  heroImage={heroDeFamilia(pz.familia)}
+  ogImage={`/images/og/trajes-${pz.familia}-${pz.slug}.jpg`}
   product={{
     nombre: pz.nombre,
     descripcion: pz.seoDescription,
@@ -93,6 +96,7 @@ const pageIndex = [
             ctaHref={waUrl(WA_MESSAGES.categoria(pz.nombre))}
             external
           />
+          <p class="gallery-disclaimer">Imagen ilustrativa del tipo de prenda. Marca, modelo y certificación exactos se confirman por escrito en la cotización.</p>
         </section>
 
         <!-- 2 · Ficha técnica -->
@@ -273,6 +277,7 @@ const pageIndex = [
   .block { padding-block: clamp(2.2rem, 3.5vw, 3.4rem); border-top: var(--border); }
   .block:first-child { padding-top: 0; border-top: 0; }
   .block:last-child { padding-bottom: 0; }
+  .gallery-disclaimer { margin: 0.85rem 0 0; color: var(--color-gray); font-size: 0.8rem; line-height: 1.45; }
 
   .alcance {
     display: grid;

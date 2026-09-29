@@ -30,7 +30,7 @@ const fichaHref = ficha ? `/trajes/${ficha.familia}/${ficha.slug}/` : null;
       src={img}
       alt={alt}
       width="640"
-      height="400"
+      height="800"
       loading={eager ? 'eager' : 'lazy'}
       decoding="async"
     />
@@ -91,7 +91,7 @@ const fichaHref = ficha ? `/trajes/${ficha.familia}/${ficha.slug}/` : null;
 
   .prod__media {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 5;
     background: var(--color-light);
     border-bottom: var(--border);
     overflow: hidden;
@@ -149,7 +149,7 @@ const fichaHref = ficha ? `/trajes/${ficha.familia}/${ficha.slug}/` : null;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
-    color: var(--color-gray-soft);
+    color: var(--color-gray);
     margin-bottom: 0.25rem;
   }
   .prod__spec dd {

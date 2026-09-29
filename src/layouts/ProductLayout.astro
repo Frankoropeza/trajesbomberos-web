@@ -16,6 +16,7 @@ import { PRODUCT_CATEGORIES, WA_MESSAGES, COMPLEMENTOS } from '@config/site';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import type { FamiliaDetalle } from '@lib/familias';
+import { heroDeFamilia } from '@lib/imagenes';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -63,6 +64,8 @@ const pageIndex = [
   descRight={f.descRight}
   meta={f.meta}
   faqs={f.faqs}
+  heroImage={heroDeFamilia(f.slug)}
+  ogImage={`/images/og/trajes-${f.slug}.jpg`}
 >
   <!-- Contenido + sidebar de interlinking -->
   <div class="section">

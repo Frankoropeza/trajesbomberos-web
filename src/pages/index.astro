@@ -33,6 +33,7 @@ import FactList from '@components/FactList.astro';
 import CTABanner from '@components/CTABanner.astro';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
+import { HERO_HOME } from '@lib/imagenes';
 import {
   SITE,
   PRODUCT_CATEGORIES,
@@ -187,7 +188,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
 const ultimosPosts = (await getPosts()).slice(0, 3);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
-  <Hero {...hero} />
+  <Hero {...hero} image={HERO_HOME} />
   <SectionMenu />
   <TrustBar pilares={[...pilares]} />
 
@@ -405,6 +406,8 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
             categoria={a.data.categoria}
             fecha={a.data.fecha}
             lectura={readingTime(a.body)}
+            image={a.data.imagen}
+            imageAlt={a.data.imagenAlt}
             destacado={a.data.destacado}
             index={i}
           />

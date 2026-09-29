@@ -16,6 +16,7 @@ import { SITE, PRODUCT_CATEGORIES } from '@config/site';
 import { FAMILIAS } from '@lib/familias';
 import PostCard from '@components/PostCard.astro';
 import { getPosts, postUrl, readingTime } from '@lib/blog';
+import { HERO_GENERICO } from '@lib/imagenes';
 
 const path = '/trajes/';
 
@@ -109,6 +110,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   ]}
   faqs={faqs}
   directoryItems={directoryItems}
+  heroImage={HERO_GENERICO}
 >
   <!-- Índice rápido de las 6 familias -->
   <section class="section">
@@ -208,6 +210,8 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
             categoria={a.data.categoria}
             fecha={a.data.fecha}
             lectura={readingTime(a.body)}
+            image={a.data.imagen}
+            imageAlt={a.data.imagenAlt}
             destacado={a.data.destacado}
             index={i}
           />

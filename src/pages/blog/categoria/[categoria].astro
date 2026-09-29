@@ -12,6 +12,7 @@ import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, BLOG_CATEGORIES } from '@config/site';
 import { getPostsByCategoria, postUrl, categoriaUrl, readingTime, type Post } from '@lib/blog';
+import { HERO_GENERICO } from '@lib/imagenes';
 
 export const getStaticPaths = (() => {
   return BLOG_CATEGORIES.map((c) => ({ params: { categoria: c.slug }, props: { cat: c } }));
@@ -59,6 +60,7 @@ const directoryItems = posts.map((p) => ({
     'Si después de leer sigues con la duda, escríbenos: contestamos con la ficha técnica en la mano y te decimos con franqueza si lo que necesitas es otra cosa.',
   ]}
   directoryItems={directoryItems}
+  heroImage={HERO_GENERICO}
 >
   <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
@@ -74,6 +76,8 @@ const directoryItems = posts.map((p) => ({
                 categoria={p.data.categoria}
                 fecha={p.data.fecha}
                 lectura={readingTime(p.body)}
+                image={p.data.imagen}
+                imageAlt={p.data.imagenAlt}
                 destacado={p.data.destacado}
                 index={i}
               />

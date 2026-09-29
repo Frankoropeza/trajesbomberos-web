@@ -13,13 +13,16 @@ interface Props {
   categoria: string;
   fecha: Date;
   lectura: number;
+  image?: string;
+  imageAlt?: string;
   destacado?: boolean;
   wide?: boolean;
   index?: number;
 }
-const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide = false, index = 0 } = Astro.props;
+const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', destacado = false, wide = false, index = 0 } = Astro.props;
 ---
 <a class:list={['post-card', { 'post-card--wide': wide }]} href={href}>
+  {image && <img class="post-card__image" src={image} alt={imageAlt} width="800" height="450" loading="lazy" decoding="async" />}
   <div class="post-card__head">
     <span class="post-card__cat">{categoriaNombre(categoria)}</span>
     {destacado && <span class="post-card__badge">Destacado</span>}
@@ -47,7 +50,7 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
     flex-direction: column;
     gap: 0.7rem;
     height: 100%;
-    padding: 1.5rem 1.5rem 1.3rem;
+    padding: 0 1.5rem 1.3rem;
     background: var(--color-white);
     border: var(--border);
     border-top: 3px solid var(--color-primary);
@@ -55,6 +58,14 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
     text-decoration: none;
     color: var(--color-dark);
     overflow: hidden;
+  }
+  .post-card__image {
+    width: calc(100% + 3rem);
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 0 -1.5rem 0.8rem;
+    border-bottom: var(--border);
   }
   .post-card:hover {
     box-shadow: var(--shadow);
@@ -110,7 +121,7 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    color: var(--color-gray-soft);
+    color: var(--color-gray);
     font-size: 0.76rem;
     font-weight: 600;
   }
@@ -139,10 +150,15 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
   .post-card--wide {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    grid-template-areas: 'head foot' 'title foot' 'resumen foot';
+    grid-template-areas: 'image foot' 'head foot' 'title foot' 'resumen foot';
     align-content: start;
     gap: 0.8rem clamp(1.5rem, 3vw, 3rem);
-    padding: clamp(1.6rem, 2.4vw, 2.4rem);
+    padding: 0 clamp(1.6rem, 2.4vw, 2.4rem) clamp(1.6rem, 2.4vw, 2.4rem);
+  }
+  .post-card--wide .post-card__image {
+    grid-area: image;
+    width: calc(100% + clamp(3.2rem, 4.8vw, 4.8rem));
+    margin: 0 calc(clamp(1.6rem, 2.4vw, 2.4rem) * -1) 0.8rem;
   }
   .post-card--wide .post-card__head { grid-area: head; }
   .post-card--wide .post-card__title { grid-area: title; font-size: clamp(1.35rem, 2vw, 1.85rem); }
@@ -190,7 +206,7 @@ const { href, title, resumen, categoria, fecha, lectura, destacado = false, wide
   @media (max-width: 860px) {
     .post-card--wide {
       grid-template-columns: 1fr;
-      grid-template-areas: 'head' 'title' 'resumen' 'foot';
+      grid-template-areas: 'image' 'head' 'title' 'resumen' 'foot';
     }
     .post-card--wide .post-card__foot {
       flex-direction: row;

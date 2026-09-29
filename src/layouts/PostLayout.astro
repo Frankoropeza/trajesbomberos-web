@@ -14,6 +14,7 @@ import CTABanner from '@components/CTABanner.astro';
 import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
+import { HERO_GENERICO } from '@lib/imagenes';
 import {
   type Post,
   postUrl,
@@ -64,7 +65,7 @@ const article = {
   section: categoriaNombre(d.categoria),
   keywords: d.keywords,
   wordCount: palabras,
-  image: new URL('/images/og-trajes-para-bomberos.png', SITE.url).href,
+  image: new URL(d.imagen ?? HERO_GENERICO.src, SITE.url).href,
 };
 ---
 <PageLayout
@@ -83,6 +84,8 @@ const article = {
   descRight={d.descRight}
   meta={heroMeta}
   article={article}
+  heroImage={d.imagen ? { src: d.imagen, alt: d.imagenAlt ?? '' } : HERO_GENERICO}
+  ogImage={`/images/og/blog-${post.id}.jpg`}
 >
   <div class="section">
     <div class="container layout-grid layout-grid--post">
@@ -108,6 +111,13 @@ const article = {
             <span class="post__dot" aria-hidden="true">·</span>
             <span class="post__dato">{d.autor}</span>
           </div>
+
+          {d.imagen && (
+            <figure class="post__cover">
+              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="800" height="450" loading="eager" decoding="async" />
+              {d.imagenAlt && <figcaption>{d.imagenAlt}</figcaption>}
+            </figure>
+          )}
 
           <div class="prose">
             <Content />
@@ -159,6 +169,8 @@ const article = {
               categoria={p.data.categoria}
               fecha={p.data.fecha}
               lectura={readingTime(p.body)}
+              image={p.data.imagen}
+              imageAlt={p.data.imagenAlt}
               destacado={p.data.destacado}
               index={i}
             />
@@ -195,7 +207,7 @@ const article = {
     padding-bottom: 1.1rem;
     border-bottom: var(--border);
     font-size: 0.78rem;
-    color: var(--color-gray-soft);
+    color: var(--color-gray);
     font-weight: 600;
   }
   .post__cat {
@@ -218,6 +230,9 @@ const article = {
     border-radius: var(--radius-lg);
     max-width: 74ch;
   }
+  .post__cover { margin: 0 0 2rem; }
+  .post__cover img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: var(--border); border-radius: var(--radius-lg); }
+  .post__cover figcaption { margin-top: 0.55rem; color: var(--color-gray); font-size: 0.8rem; line-height: 1.45; }
   .post__cierre-t { margin: 0 0 0.4rem; font-weight: 800; font-size: 1.05rem; }
   .post__cierre-p { margin: 0 0 1.2rem; color: var(--color-gray); font-size: 0.92rem; }
   .post__cierre-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
