@@ -21,7 +21,7 @@ productos:
   - "/trajes/entrada/"
 fecha: 2026-07-07
 autor: "Equipo técnico LORICA"
-seoTitle: "NFPA 1970 | certificación de trajes | México"
+seoTitle: "NFPA 1970: qué cambió frente a la NFPA 1971 en trajes"
 description: "NFPA 1970 sustituyó a la NFPA 1971: qué normas consolidó, qué quedó fuera y cómo citar hoy la referencia en una requisición o en un pliego de licitación."
 keywords:
   - "NFPA 1970"

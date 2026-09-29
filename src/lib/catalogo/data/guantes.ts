@@ -485,7 +485,7 @@ const modelos: Modelo[] = [
 
 seccion.resumenHero = [
   "La mano es el punto donde el equipo se encuentra con la tarea. Por eso un guante se selecciona por operación: ataque estructural, rescate, línea de fuego o respuesta de brigada. Material, capas, costuras, refuerzos y puño importan únicamente cuando se revisan junto con el movimiento, la herramienta y la exposición de esa operación.",
-  "La compra empieza con una prueba de talla e interfaz. Coloca el guante con la manga, casco, protección respiratoria y equipo habitual; después revisa agarre, movilidad, solape y retiro. El resultado debe quedar descrito en la requisición para que la partida recibida sea comparable con la que se evaluó.",
+  "La compra empieza con una prueba de talla e interfaz. Coloca el guante con la manga, casco, protección respiratoria y equipo habitual; después revisa agarre, movilidad, solape y retiro. El resultado debe quedar descrito en la requisición para que la partida recibida sea comparable con la que se evaluó. Con más de 35 años equipando bomberos, en LORICA pedimos esa prueba antes de cerrar la partida.",
 ];
 seccion.etiquetas = {
   menuTipos: "Tipos de guantes",

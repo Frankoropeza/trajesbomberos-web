@@ -23,7 +23,7 @@ productos:
   - "/guantes/"
 fecha: 2026-06-09
 autor: "Equipo técnico LORICA"
-seoTitle: "Licitación de trajes para bomberos | expediente | México"
+seoTitle: "Licitación de trajes para bomberos: expediente y documentos"
 description: "Licitación de trajes para bomberos: qué documentos pide un pliego mexicano, qué descalifica una propuesta y cómo armar el expediente técnico completo."
 keywords:
   - "licitación de trajes para bomberos"
@@ -93,6 +93,6 @@ No todo es responsabilidad del licitante. Los que más nos tocan ver:
 
 ## Qué te podemos mandar
 
-Si estás armando una compra —pública o corporativa— pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. Lo mandamos por escrito, aunque todavía no haya orden de compra.
+Si estás armando una compra —pública o corporativa— pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. En LORICA lo mandamos por escrito, aunque todavía no haya orden de compra.
 
 Y si lo que tienes es un anexo técnico a medio redactar, mándalo: te decimos qué líneas conviene ajustar antes de publicar. Un pliego bien escrito nos conviene a todos, incluso cuando lo gane otro.

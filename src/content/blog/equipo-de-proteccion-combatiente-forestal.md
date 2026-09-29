@@ -17,7 +17,7 @@ categoria: "comparativas"
 familia: "forestal"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Equipo de protección para combatiente forestal | México"
+seoTitle: "Equipo de protección para combatiente forestal: qué incluye"
 description: "Equipo de protección para combatiente forestal: compara ropa, casco forestal, goggles, guantes y botas para jornadas de línea, ceniza y terreno irregular."
 keywords:
   - "equipo de protección para combatiente forestal"
@@ -50,7 +50,7 @@ La protección debe conservarse en la fibra y configuración declaradas por cada
 
 ## Componentes de una dotación forestal
 
-| Componente | Función en jornada exterior | Qué debe definirse al cotizar |
+| Componente | Función en jornada exterior | Qué debe definirse al cotizar | Las herramientas de la cuadrilla (Pulaski, McLeod, batefuego y rastrillo) están en [herramientas forestales](/blog/herramientas-forestales-pulaski-mcleod-batefuego/).
 | --- | --- | --- |
 | Camisola, pantalón u overol | Cobertura de torso y piernas con movilidad | Formato, material, talla, largos y refuerzos |
 | Casco forestal | Retención, sombra y protección de cabeza | Modelo, color, barbiquejo, clips, bandas y cubrenuca |

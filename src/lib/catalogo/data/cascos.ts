@@ -29,7 +29,7 @@ export const SECCIONES: Seccion[] = [
     hero: { src: '/images/catalogo/cascos/hero-cascos.avif', alt: 'Cascos para bombero de distintos usos operativos' },
     resumenHero: [
       'Elige primero el escenario de trabajo y luego compara casco, ajuste, protección ocular, cubrenuca y compatibilidad con el resto del equipo.',
-      'Las fichas de modelo conservan la declaración del fabricante. La configuración exacta se confirma por escrito antes de cotizar.',
+      'Las fichas de modelo conservan la declaración del fabricante. En LORICA, la configuración exacta se confirma por escrito antes de cotizar.',
     ],
     etiquetas: {
       menuTipos: 'Tipos de casco',

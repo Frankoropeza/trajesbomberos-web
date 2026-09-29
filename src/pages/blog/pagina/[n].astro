@@ -27,7 +27,7 @@ const listado = todos.filter((post) => post.id !== destacado?.id);
 const pagina = paginar(listado, n);
 const path = paginaUrl('/blog/', pagina.pagina);
 const seo = seoPagina(
-  'Blog de trajes para bomberos | guías | México',
+  'Blog de trajes para bomberos: guías de compra y normas',
   'Blog de trajes para bomberos: cómo especificar, qué exige la norma NFPA 1970, comparativas entre familias, vida útil del equipo y expediente para licitación.',
   pagina.pagina,
 );

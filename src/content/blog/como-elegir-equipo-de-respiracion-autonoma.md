@@ -17,7 +17,7 @@ productos:
   - "/trajes/hazmat/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "Cómo elegir equipo de respiración autónoma | México"
+seoTitle: "Cómo elegir equipo de respiración autónoma para bombero"
 description: "Cómo elegir equipo de respiración autónoma para bombero: diferencias entre combate e industrial, cilindros, máscaras, duración y mantenimiento del ERA."
 keywords: ["cómo elegir equipo de respiración autónoma", "ERA para bombero", "México"]
 imagen: "/images/blog/como-elegir-equipo-de-respiracion-autonoma.avif"

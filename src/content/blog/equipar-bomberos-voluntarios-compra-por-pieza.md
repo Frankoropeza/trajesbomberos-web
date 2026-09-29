@@ -16,8 +16,8 @@ ancla: "Equipo para bomberos voluntarios"
 categoria: "licitacion"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Equipo para bomberos voluntarios: compra por pieza | México"
-description: "Equipo para bomberos voluntarios: prioriza por riesgo y persona, compra por pieza sin mínimo, revisa donaciones, fichas técnicas y envío a todo México."
+seoTitle: "Equipo para bomberos voluntarios: cómo comprar por pieza"
+description: "Equipo para bomberos voluntarios: prioriza por riesgo y persona, compra por pieza sin mínimo y revisa donaciones y fichas técnicas antes de cotizar."
 keywords:
   - "equipo para bomberos voluntarios"
   - "cómo equipar a un cuerpo de bomberos voluntarios"
@@ -121,7 +121,7 @@ Para [cotizar equipo para bomberos voluntarios](/contacto/), indica si es dotaci
 
 **¿El equipo usado puede entrar a servicio estructural?** Sólo si su condición y documentación permiten verificarlo; un dato faltante no se debe completar por estimación.
 
-**¿Incluyen envío?** Realizamos envío a todo México; se confirma destino y condiciones de entrega en la cotización.
+**¿Incluyen envío?** Realizamos envío a los 32 estados; se confirma destino y condiciones de entrega en la cotización.
 
 ## Fuentes
 

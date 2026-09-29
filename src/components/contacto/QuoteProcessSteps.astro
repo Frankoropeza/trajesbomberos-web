@@ -1,0 +1,43 @@
+---
+interface Paso {
+  title: string;
+  desc: string;
+}
+
+interface Props {
+  pasos: Paso[];
+}
+
+const { pasos } = Astro.props;
+---
+
+<ol class="quote-process">
+  {pasos.map((paso, index) => (
+    <li>
+      <span>{String(index + 1).padStart(2, '0')}</span>
+      <h3>{paso.title}</h3>
+      <p>{paso.desc}</p>
+    </li>
+  ))}
+</ol>
+
+<style>
+  /* Línea de tiempo sobre banda oscura: se distingue de las tarjetas de #mensaje. */
+  .quote-process { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap-grid); list-style: none; margin: 0; padding: 0; counter-reset: paso; }
+  .quote-process::before { content: ''; position: absolute; top: 1.6rem; left: 1.6rem; right: 1.6rem; height: 2px; background: linear-gradient(90deg, var(--color-primary), rgb(255 255 255 / .18)); }
+  .quote-process li { position: relative; padding: 0 1rem 0 0; }
+  .quote-process span { position: relative; z-index: 1; display: grid; place-items: center; width: 3.2rem; height: 3.2rem; margin-bottom: 1.25rem; border: 2px solid var(--color-accent); border-radius: 50%; background: var(--color-ink); color: var(--color-accent); font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; line-height: 1; }
+  .quote-process h3 { margin: 0 0 .5rem; color: var(--color-white); font-size: var(--fs-h3); }
+  .quote-process p { margin: 0; color: #c3c9d1; font-size: var(--fs-sm); line-height: 1.6; max-width: 30ch; }
+
+  @media (max-width: 1023px) {
+    .quote-process { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.2rem; }
+    .quote-process::before { display: none; }
+  }
+  @media (max-width: 560px) {
+    .quote-process { grid-template-columns: 1fr; row-gap: 1.6rem; }
+    .quote-process li { display: grid; grid-template-columns: 3.2rem 1fr; column-gap: 1rem; padding: 0; }
+    .quote-process span { grid-row: span 2; margin: 0; }
+    .quote-process p { max-width: none; }
+  }
+</style>

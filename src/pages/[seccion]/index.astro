@@ -24,6 +24,7 @@ const { seccion } = Astro.props;
 const tipos = tiposDeSeccion(seccion.slug);
 const modelos = modelosDeSeccion(seccion.slug);
 const path = `/${seccion.slug}/`;
+const faqsSeccion = [...(metaSeo(path)?.faqsExtra ?? []), ...(seccion.faq ?? [])];
 const items = [
   ...tipos.map((tipo) => ({ name: tipo.nombre, url: `/${seccion.slug}/${tipo.slug}/` })),
   ...modelos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: urlModelo(modelo) })),
@@ -38,9 +39,9 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
 ---
 <PageLayout
   pageType="directorio" path={path} title={metaSeo(path)?.title ?? seccion.title} description={metaSeo(path)?.description ?? seccion.description}
-  crumbLabel={seccion.nombre} eyebrow={seccion.eyebrow} h1={seccion.h1} lead={seccion.lead}
+  crumbLabel={seccion.nombre} eyebrow={seccion.eyebrow} h1={metaSeo(path)?.h1 ?? seccion.h1} lead={metaSeo(path)?.lead ?? seccion.lead}
   descRight={seccion.resumenHero ?? []}
-  heroImage={seccion.hero} faqs={seccion.faq} directoryItems={items}
+  heroImage={seccion.hero} faqs={faqsSeccion} directoryItems={items}
   collection={{ name: seccion.h1, description: seccion.description, url: path }}
   menuItems={[...(tipos.length > 0 ? [{ label: etiquetas?.menuTipos ?? `Tipos de ${seccion.nombre.toLowerCase()}`, href: '#tipos' }] : seccion.enlaces?.length ? [{ label: `Fichas de ${seccion.nombre.toLowerCase()}`, href: '#fichas' }] : []), ...(mostrarEleccion ? [{ label: `Cómo elegir ${seccion.nombre.toLowerCase()}`, href: '#elegir' }] : []), ...(modelos.length > 0 ? [{ label: `Modelos de ${seccion.nombre.toLowerCase()}`, href: '#modelos' }] : []), { label: `Preguntas de ${seccion.nombre.toLowerCase()}`, href: '#faq' }]}
 >
@@ -61,7 +62,7 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
       <SectionHeading eyebrow="Disponibles para cotizar" title={etiquetas?.modelosTitulo ?? `Modelos de ${seccion.nombre.toLowerCase()} publicados`} description={etiquetas?.modelosDescripcion} duo={duoSeccion(seccion.slug, 'modelos')} />
       <ModelosGrid modelos={modelos} />
     </section>}
-    <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title="Respuestas antes de elegir" duo={duoSeccion(seccion.slug, 'faq')} /><FAQWithContact items={seccion.faq} /></section>
+    <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title="Respuestas antes de elegir" duo={duoSeccion(seccion.slug, 'faq')} /><FAQWithContact items={faqsSeccion} /></section>
   </div></div>
   <GuiasTecnicas ruta={path} tema={temaEnFrase(etiquetaEquipo(seccion.slug, seccion.nombre))} />
 </PageLayout>

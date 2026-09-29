@@ -18,11 +18,20 @@ export const SITE = {
   allowSelfReviews: false, // regla B4: sin reseñas propias
 } as const;
 
+export const MARCA = {
+  nombre: 'LORICA',
+  completo: 'LORICA · Trajes para bomberos',
+  experiencia: 'más de 35 años',
+  experienciaCorta: 'Más de 35 años de experiencia',
+  cobertura: 'los 32 estados de la República',
+  lema: 'La armadura del bombero',
+} as const;
+
 // Regla de las 3 keywords · kw1 = principal, va primero y sin marca
 export const KEYWORDS = [
   'trajes para bomberos',      // kw1 · principal (20/mes, TP 60)
   'trajes de bomberos',        // kw2 · variante con más demanda del clúster profesional (200/mes)
-  'México',                    // kw3 · variante geográfica
+  'traje de bombero profesional', // kw3 · (antes «México»; retirado en la tanda de metas 2026-09-29)
 ] as const;
 
 export const CONTACT = {
@@ -31,8 +40,8 @@ export const CONTACT = {
   whatsapp: '525664804962',
   email: 'trajes.bomberos@gmail.com',
   horario: 'Lun–Vie 9:00–18:00',
-  cobertura: 'Envíos a todo México',
-  posicionamiento: 'Venta de trajes para bomberos · Envíos a todo México',
+  cobertura: 'Presencia en los 32 estados',
+  posicionamiento: 'LORICA · Más de 35 años equipando bomberos en los 32 estados',
 } as const;
 
 // ============================================================
@@ -48,9 +57,28 @@ export const EMPRESA: {
   domicilio?: string;          // domicilio del responsable (aviso de privacidad)
   ciudad?: string;
   anioInicio?: number;
+  experiencia?: string;
 } = {
   nombreComercial: 'LORICA · Trajes para bomberos',
+  domicilio: 'Manuel Caballero 161, Col. Obrera, Alcaldía Cuauhtémoc, C.P. 06800, Ciudad de México, CDMX',
+  ciudad: 'Ciudad de México',
+  experiencia: 'Más de 35 años',
 };
+
+// Dirección de la empresa (aprobada por Frank el 2026-09-29). Una sola fuente para
+// footer, /contacto/, /empresa/, legales y JSON-LD (PostalAddress).
+export const DIRECCION = {
+  calle: 'Manuel Caballero 161',
+  colonia: 'Obrera',
+  alcaldia: 'Cuauhtémoc',
+  cp: '06800',
+  ciudad: 'Ciudad de México',
+  estado: 'CDMX',
+  pais: 'MX',
+  linea1: 'Manuel Caballero 161, Col. Obrera',
+  linea2: 'Cuauhtémoc, 06800 Ciudad de México, CDMX',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Manuel+Caballero+161%2C+Obrera%2C+Cuauht%C3%A9moc%2C+06800+Ciudad+de+M%C3%A9xico%2C+CDMX',
+} as const;
 
 export const WA_MESSAGES = {
   cotizar: 'Hola, quiero cotizar trajes o equipo para bomberos.',
@@ -206,12 +234,36 @@ export interface BlogCategory {
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
   {
+    slug: 'herramientas-rescate',
+    nombre: 'Herramientas y rescate',
+    desc: 'Herramientas, sistemas y criterios para equipar operaciones de rescate.',
+    h1: 'Herramientas y equipo de rescate para bomberos',
+    lead: 'Guías para elegir herramientas de entrada, rescate, líneas de agua y sus componentes por operación, compatibilidad y condición de servicio.',
+    seoTitle: 'Herramientas y rescate para bomberos | México',
+    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada, rescate técnico, mangueras y kits con datos comparables en México.',
+    keywords: ['herramientas y rescate para bomberos', 'equipo de rescate', 'México'],
+    guia: {
+      titulo: 'Cómo comprar herramientas y equipo de rescate',
+      parrafos: [
+        'La operación define la partida: una herramienta de entrada, un sistema hidráulico, una cuerda o una manguera no se eligen por apariencia. Antes de comparar opciones, identifica maniobra autorizada, personal capacitado, interfaces existentes, espacio de la unidad y método de resguardo.',
+        'Una requisición útil separa material, medida, peso cuando el fabricante lo publica, conexiones, accesorios y condición de entrega. Para componentes que se integran entre sí, la compatibilidad física debe confirmarse antes de asignarlos a una emergencia.',
+        'El criterio de compra incluye el ciclo completo: inspección, limpieza, registro, reemplazo y disponibilidad por unidad. Una pieza dañada o sin soporte puede fallar como recurso operativo aunque se haya adquirido correctamente.',
+      ],
+      enlaces: [
+        { label: 'Herramientas para bombero', href: '/herramientas/' },
+        { label: 'Equipo de rescate', href: '/rescate/' },
+        { label: 'Mangueras y accesorios contra incendio', href: '/mangueras-y-accesorios/' },
+        { label: 'Kits para bomberos', href: '/kits/' },
+      ],
+    },
+  },
+  {
     slug: 'especificacion',
     nombre: 'Cómo especificar equipo de bombero',
     desc: 'Qué datos debe traer una cotización para que sea comparable con otra.',
     h1: 'Cómo especificar equipo de bombero',
     lead: 'Artículos sobre los datos que hacen comparable una cotización: composite, TPP, THL, tallas y alcance declarado.',
-    seoTitle: 'Cómo especificar equipo de bombero | ficha técnica | México',
+    seoTitle: 'Cómo especificar equipo de bombero en una ficha técnica',
     seoDescription:
       'Cómo especificar equipo de bombero: qué datos debe traer una cotización para que sea comparable con otra y qué revisar antes de firmar la orden.',
     keywords: ['cómo especificar equipo de bombero', 'ficha técnica', 'México'],
@@ -236,7 +288,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     desc: 'NFPA 1970, NFPA 1850 y las NOM de la STPS aplicadas al equipo real.',
     h1: 'Normas y certificación',
     lead: 'NFPA 1970, NFPA 1850, NOM-002-STPS-2010 y NOM-017-STPS-2024 explicadas con lo que realmente te van a pedir.',
-    seoTitle: 'Normas para trajes de bombero | NFPA 1970 | México',
+    seoTitle: 'Normas para trajes de bombero: NFPA 1970, NFPA 1850 y NOM',
     seoDescription:
       'Normas para trajes de bombero: NFPA 1970, NFPA 1850 y las NOM de la STPS explicadas con lo que de verdad te van a pedir en una compra.',
     keywords: ['normas para trajes de bombero', 'NFPA 1970', 'México'],
@@ -261,7 +313,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     desc: 'Qué familia corresponde a cada operación y por qué no son intercambiables.',
     h1: 'Comparativas entre familias de traje',
     lead: 'Estructural contra brigadista, aproximación contra entrada: las confusiones que cuestan dinero y, a veces, algo peor.',
-    seoTitle: 'Comparativas de trajes para bomberos | familias | México',
+    seoTitle: 'Comparativas de trajes para bomberos por familia y modelo',
     seoDescription:
       'Comparativas de trajes para bomberos: estructural contra brigadista, aproximación contra entrada y qué familia corresponde a cada operación.',
     keywords: ['comparativas de trajes para bomberos', 'familias', 'México'],
@@ -287,7 +339,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     desc: 'Inspección, lavado, reparación y retiro del equipo en servicio.',
     h1: 'Vida útil y servicio del equipo',
     lead: 'Cómo se inspecciona, se lava, se repara y se retira un traje para que dure lo que tiene que durar y ni un día más.',
-    seoTitle: 'Mantenimiento de trajes para bomberos | vida útil | México',
+    seoTitle: 'Mantenimiento de trajes para bomberos y vida útil',
     seoDescription:
       'Mantenimiento de trajes para bomberos: inspección, lavado, reparación y retiro del equipo conforme a la NFPA 1850, explicado para estación real.',
     keywords: ['mantenimiento de trajes para bomberos', 'vida útil', 'México'],
@@ -310,7 +362,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     desc: 'Expediente, pliego y documentación para compra pública y corporativa.',
     h1: 'Compras y licitación',
     lead: 'Cómo se arma un expediente que no te descalifica: ficha técnica, certificado de laboratorio, carta de distribuidor y CFDI.',
-    seoTitle: 'Compra de trajes para bomberos | licitación | México',
+    seoTitle: 'Compra de trajes para bomberos por licitación o empresa',
     seoDescription:
       'Compra de trajes para bomberos por licitación o vía corporativa: expediente, pliego, certificados y la documentación que no te descalifica.',
     keywords: ['compra de trajes para bomberos', 'licitación', 'México'],

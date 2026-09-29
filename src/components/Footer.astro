@@ -2,7 +2,7 @@
 // Footer en seis zonas: CTA, catálogo, empresa y soporte, normas, legales y
 // acento. Las rutas internas se validan antes de renderizar; BaseLayout emite
 // el JSON-LD, por lo que este componente no añade datos estructurados.
-import { CONTACT, EMPRESA, FOOTER, SITE, WA_MESSAGES, type FooterColumn, type FooterLink } from '@config/site';
+import { CONTACT, EMPRESA, FOOTER, MARCA, SITE, WA_MESSAGES, type FooterColumn, type FooterLink, DIRECCION } from '@config/site';
 import { rutaExiste } from '@lib/rutas';
 import { waUrl } from '@lib/wa';
 
@@ -41,7 +41,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
   <section class="fcta" aria-label="Cotización de trajes para bomberos">
     <div class="container fcta__inner">
       <ul class="fcta__commitments" aria-label="Compromisos de compra">
-        {['Ficha técnica por partida', 'Factura CFDI 4.0', 'Envío a los 32 estados'].map((item) => <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>{item}</li>)}
+        {[MARCA.experienciaCorta, 'Ficha técnica por partida', 'Factura CFDI 4.0', 'Envío a los 32 estados'].map((item) => <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>{item}</li>)}
       </ul>
       <div class="fcta__text">
         <p class="fcta__title">{cta?.title ?? 'Cotiza trajes para bomberos con ficha técnica'}</p>
@@ -78,8 +78,9 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
       <div class="fbrand">
         <p class="fbrand__name"><img src="/images/marca/lorica-icono-neg.svg" width="34" height="40" alt="" /><span class="fbrand__lockup"><img src="/images/marca/lorica-wordmark-neg.svg" width="160" height="22" alt={SITE.name} /><span>Trajes para bomberos</span></span></p>
         <p class="fbrand__positioning">{CONTACT.posicionamiento}</p>
-        <p class="fbrand__copy">Especialistas en trajes para bomberos con ficha técnica y CFDI 4.0, sin compra mínima y envío a los 32 estados.</p>
+        <p class="fbrand__copy">{MARCA.nombre} equipa a bomberos desde hace {MARCA.experiencia}: trajes con ficha técnica, factura CFDI 4.0, sin compra mínima y entrega en {MARCA.cobertura}.</p>
         <dl class="fnap">
+          <div class="fnap__dir"><dt>Dirección</dt><dd><a href={DIRECCION.mapsUrl} target="_blank" rel="noopener">{DIRECCION.linea1}<br />{DIRECCION.linea2}</a></dd></div>
           <div><dt>Teléfono</dt><dd><a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a></dd></div>
           <div><dt>WhatsApp</dt><dd><a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a></dd></div>
           <div><dt>Correo</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd></div>
@@ -112,7 +113,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
   <!-- Zona 5 · Legales -->
   <div class="fbottom">
     <div class="container fbottom__inner">
-      <p>© {year} {EMPRESA.razonSocial ?? SITE.legalName}. Todos los derechos reservados. <span aria-hidden="true">·</span> Envíos a todo México</p>
+      <p>© {year} {EMPRESA.razonSocial ?? SITE.legalName}. Todos los derechos reservados. <span aria-hidden="true">·</span> Presencia en los 32 estados de México</p>
       <nav aria-label="Enlaces legales">{legales.map((link) => <a href={link.href}>{link.label}</a>)}</nav>
     </div>
   </div>
@@ -384,6 +385,10 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: .8rem 1.25rem;
     margin: 0 0 1.25rem;
+  }
+
+  .fnap__dir {
+    grid-column: 1 / -1;
   }
 
   .fnap dt {

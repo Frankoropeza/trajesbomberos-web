@@ -19,7 +19,7 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "NOM-002-STPS-2010: equipo para brigadas | México"
+seoTitle: "NOM-002-STPS-2010: equipo para brigadas contra incendio"
 description: "NOM-002-STPS-2010: qué equipo necesita una brigada contra incendio, cómo distinguir riesgo ordinario y alto, y cómo seleccionar el EPP de forma correcta."
 keywords: ["NOM-002-STPS-2010", "equipo para brigadas", "México"]
 imagen: "/images/blog/nom-002-stps-2010-equipo-para-brigadas.avif"

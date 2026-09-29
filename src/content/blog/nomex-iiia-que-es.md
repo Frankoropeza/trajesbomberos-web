@@ -15,7 +15,7 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "Nomex IIIA: qué es en trajes de bombero | México"
+seoTitle: "Nomex IIIA: qué es y por qué se usa en trajes de bombero"
 description: "Nomex IIIA: qué es, cómo se compone y por qué se usa en ropa para bomberos y brigadas. Diferencias frente a PBI, Kevlar y algodón ignífugo."
 keywords: ["Nomex IIIA", "trajes de bombero", "México"]
 imagen: "/images/blog/nomex-iiia-que-es.avif"

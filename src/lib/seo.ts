@@ -1,4 +1,5 @@
-import { SITE, CONTACT, KEYWORDS } from '@config/site';
+import { SITE, CONTACT, KEYWORDS, DIRECCION, MARCA } from '@config/site';
+import { ENTIDADES } from '@lib/directorio';
 
 // ============================================================
 // SEO centralizado (regla B3: UN solo emisor de schema por
@@ -10,16 +11,16 @@ export type PageType = 'home' | 'directorio' | 'producto' | 'articulo' | 'generi
 
 // --- Regla de las 3 keywords -------------------------------
 
-// title = "Kw1 | kw2 | kw3" — kw1 primero, sin marca, ≤60
-export function buildKeywordTitle(kws: readonly string[] = KEYWORDS): string {
-  const [kw1, ...rest] = kws;
-  const cap = kw1.charAt(0).toUpperCase() + kw1.slice(1);
-  return [cap, ...rest].join(' | ');
+// title = frase natural con kw1 al inicio, sin marca, sin «|» ni «México», ≤60
+// Tanda de metas (2026-09-29): el title por defecto ya no apila keywords con «|»;
+// es el title de la home, en frase natural y sin «México».
+export function buildKeywordTitle(_kws: readonly string[] = KEYWORDS): string {
+  return 'Trajes para bomberos profesionales y equipo contra incendio';
 }
 
 // description abre con kw1 y teje las 3 sin sobreoptimizar, ≤160
 export function buildKeywordDescription(): string {
-  return 'Trajes para bomberos y trajes de bombero profesional: estructural, brigadista, forestal y de aproximación. Modelos Romak Fire y Sköld con ficha técnica. México.';
+  return 'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados: Romak Fire, Sköld y Lakeland con ficha técnica. Cotiza en día hábil.';
 }
 
 export interface MetaAuditResult {
@@ -44,6 +45,11 @@ export function metaAudit(
   if (title.length > 60) problems.push(`Title de ${title.length} chars: pasa de 60.`);
   if (description.length > 160) problems.push(`Description de ${description.length} chars: pasa de 160.`);
   if (description.length < 70) problems.push(`Description de ${description.length} chars: menos de 70.`);
+  // Tanda de metas (2026-09-29, decisión de Frank): title en frase natural, sin «|» y sin
+  // «México» (se permite solo como nombre de estado: Ciudad de México, Estado de México).
+  if (title.includes('|')) problems.push('El title lleva «|»: la regla pide una frase natural sin pipes.');
+  if (/méxico/i.test(title.replace(/(Ciudad|Estado) de México/g, '')))
+    problems.push('El title lleva «México»: la regla lo prohíbe salvo como nombre de estado.');
   if (!title.toLowerCase().startsWith(kw1)) problems.push(`El title no abre con kw1 («${kw1}»).`);
   if (!description.toLowerCase().includes(nucleo)) problems.push(`La description no menciona «${nucleo}».`);
   if (!opts.permitirMarca && title.toLowerCase().includes(SITE.name.toLowerCase()))
@@ -63,6 +69,7 @@ export function organizationSchema(): object {
     '@id': `${SITE.url}/#organization`,
     name: SITE.legalName,
     alternateName: SITE.name,
+    slogan: MARCA.lema,
     url: SITE.url,
     description:
       'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
@@ -74,6 +81,15 @@ export function organizationSchema(): object {
     },
     telephone: CONTACT.telefonoHref,
     email: CONTACT.email,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: `${DIRECCION.calle}, Col. ${DIRECCION.colonia}`,
+      addressLocality: DIRECCION.alcaldia,
+      addressRegion: DIRECCION.ciudad,
+      postalCode: DIRECCION.cp,
+      addressCountry: DIRECCION.pais,
+    },
+    hasMap: DIRECCION.mapsUrl,
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
@@ -82,7 +98,10 @@ export function organizationSchema(): object {
       areaServed: 'MX',
       availableLanguage: ['es'],
     },
-    areaServed: { '@type': 'Country', name: 'México' },
+    areaServed: [
+      { '@type': 'Country', name: 'México' },
+      ...ENTIDADES.map((entidad) => ({ '@type': 'State', name: entidad.nombre })),
+    ],
     knowsAbout: [
       'Trajes para bomberos',
       'Equipo de protección personal contra incendios',

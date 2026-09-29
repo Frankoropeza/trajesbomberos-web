@@ -17,7 +17,7 @@ categoria: "comparativas"
 familia: "aproximacion"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Traje aluminizado: aproximación vs entrada | México"
+seoTitle: "Traje aluminizado: diferencias entre aproximación y entrada"
 description: "Traje aluminizado: compara aproximación y entrada al fuego por exposición, capas, piezas, ERA, límites y el modelo Romak Fire Mark One MPX-8."
 keywords:
   - "traje aluminizado"

@@ -14,7 +14,7 @@
  ],
  "coberturaDuo": [
   "Entre los servicios declarados predominan la atención prehospitalaria con 30 registros, los incendios estructurales con 28 y el rescate vehicular con 28. También se documentan materiales peligrosos y salvamento aeroportuario, útiles para entender el perfil de las fichas.",
-  "De las 31 estaciones registradas, 11 tienen teléfono con fuente, 25 incluyen dirección y 25 muestran ubicación exacta. Estos campos describen la calidad de la información disponible por ficha, no la capacidad operativa de cada corporación."
+  "De las 31 estaciones registradas, 2 tienen teléfono con fuente pública, 25 incluyen dirección y 24 muestran ubicación exacta. Estos campos describen la calidad de la información disponible por ficha, no la capacidad operativa de cada corporación."
  ],
  "equipoDuo": [
   "La presencia de incendios estructurales y rescate vehicular orienta la selección de <a href=\"/trajes/estructural/\">trajes estructurales</a> y <a href=\"/trajes/extricacion/\">equipo de extricación</a>; los registros de materiales peligrosos requieren valorar protección Hazmat. Para salvamento aeroportuario, corresponde revisar protección de aproximación conforme al riesgo declarado.",

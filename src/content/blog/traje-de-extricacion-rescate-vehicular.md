@@ -17,7 +17,7 @@ categoria: "comparativas"
 familia: "extricacion"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Traje de extricación para rescate vehicular | México"
+seoTitle: "Traje de extricación o estructural en rescate vehicular"
 description: "Traje de extricación para rescate vehicular: compara chaqueta, pantalón y overol frente al estructural por corte, punción, fluidos, movilidad y reposición."
 keywords:
   - "traje de extricación"
@@ -76,7 +76,7 @@ El [overol de rescate técnico](/trajes/extricacion/overol/) elimina la interfaz
 
 ## Guantes, casco y herramienta como sistema
 
-El [guante de rescate y extricación](/guantes/guante-rescate-extricacion/) se elige por destreza, agarre y protección mecánica para la maniobra. Un guante muy voluminoso puede impedir operar un pasador, una válvula o una herramienta; uno elegido sólo por apariencia puede no responder a bordes y abrasión. La ficha usa NFPA 1950 como referencia vigente y solicita que modelo, talla, puño y prueba con herramienta queden definidos antes de una compra por volumen.
+El [guante de rescate y extricación](/guantes/guante-rescate-extricacion/) se elige por destreza, agarre y protección mecánica para la maniobra. Un guante muy voluminoso puede impedir operar un pasador, una válvula o una herramienta; uno elegido sólo por apariencia puede no responder a bordes y abrasión. La ficha usa NFPA 1950 como referencia vigente y solicita que modelo, talla, puño y prueba con herramienta queden definidos antes de una compra por volumen. Para elegir la herramienta, revisa la guía de [quijadas de la vida](/blog/quijadas-de-la-vida-herramienta-hidraulica/).
 
 El [casco de rescate técnico](/cascos/casco-rescate-tecnico/) se prueba con goggles, protección ocular, barbiquejo y campo visual de la escena. Para el [equipo de rescate](/rescate/), la selección empieza por la maniobra autorizada y capacitación, no por marca. Una [herramienta hidráulica de rescate](/rescate/herramienta-hidraulica-de-rescate/) puede ser separador, cortador, combinada o cilindro; la cotización especifica tipo, energía, conexiones, acceso y compatibilidad con el sistema existente. La ropa no autoriza operar herramienta sin el entrenamiento y mando requeridos.
 

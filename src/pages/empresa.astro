@@ -8,12 +8,13 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import PhotoBand from '@components/PhotoBand.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
-import { CONTACT, EMPRESA, MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
+import { CONTACT, EMPRESA, MARCA, MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
 import { HERO_GENERICO } from '@lib/imagenes';
+import { REGIONES, estadosDeRegion, rutaEstado } from '@lib/directorio';
 
 const path = '/empresa/';
 const keywords = ['proveedor de trajes para bomberos', 'empresa', 'México'] as const;
-const title = 'Proveedor de trajes para bomberos | empresa | México';
+const title = 'Proveedor de trajes para bomberos y equipo contra incendio';
 const description =
   'Proveedor de trajes para bomberos en México: una sola especialidad, cotización por escrito con ficha técnica, factura CFDI y soporte para licitación.';
 
@@ -22,11 +23,20 @@ const menuItems = [
   { label: 'Cómo trabajamos', href: '#como-trabajamos' },
   { label: 'Qué entregamos', href: '#entregables' },
   { label: 'Marcas de trajes de bombero', href: '#marcas' },
+  { label: 'Cobertura en los 32 estados', href: '#cobertura' },
   { label: 'Datos de la empresa de trajes', href: '#datos' },
   { label: 'Cotizar trajes para bomberos', href: '/contacto/' },
 ];
 
 const compromisos = [
+  {
+    titulo: 'Más de 35 años en el ramo',
+    desc: 'La experiencia ayuda a distinguir qué composite, talla y documentación conviene pedir para que una cotización sea comparable antes de comprar.',
+  },
+  {
+    titulo: 'Presencia en los 32 estados',
+    desc: 'Atendemos por WhatsApp, mandamos cotización por escrito y coordinamos el envío a estación o domicilio en toda la República.',
+  },
   {
     titulo: 'Solo trajes para bomberos',
     desc: 'No vendemos de todo. Nuestra línea es el traje: estructural, brigadista, forestal, aproximación, entrada y extricación. Los complementos del conjunto los conseguimos para cerrar el pedido, pero la especialidad es una.',
@@ -64,12 +74,12 @@ const entregables = [
   eyebrow="Quiénes somos"
   h1="Proveedor especializado en"
   h1Accent="trajes para bomberos"
-  lead="Una sola línea de producto, atendida con profundidad técnica: el traje. Cotizamos para cuerpos de bomberos, brigadas industriales, dependencias de gobierno y voluntarios en todo México."
+  lead={`${MARCA.completo}: una sola línea de producto, atendida con profundidad técnica desde hace ${MARCA.experiencia}. Cotizamos para cuerpos de bomberos, brigadas industriales, dependencias de gobierno y voluntarios en ${MARCA.cobertura}.`}
   descRight={[
-    'La mayoría de los proveedores de seguridad industrial venden el traje como una partida más del catálogo. Nosotros lo trabajamos al revés: el traje es la especialidad, y todo lo demás —casco, botas, guantes— es complemento del conjunto.',
+    'La mayoría de los proveedores de seguridad industrial venden el traje como una partida más del catálogo. En LORICA lo trabajamos al revés: el traje es la especialidad, y todo lo demás —casco, botas, guantes— es complemento del conjunto.',
     'Eso cambia la conversación. En lugar de mandarte una lista de precios, te ayudamos a especificar: qué familia corresponde a tu operación, qué composite pedir, qué exigir en la ficha técnica y cómo comparar dos cotizaciones que dicen lo mismo y no son lo mismo.',
   ]}
-  meta={['Cobertura: todo México', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
+  meta={[MARCA.experienciaCorta, 'Presencia en los 32 estados', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
   heroImage={HERO_GENERICO}
   footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
@@ -143,6 +153,29 @@ const entregables = [
         </div>
       </section>
 
+      <section id="cobertura" class="block">
+        <SectionHeading clave="cobertura"
+          eyebrow="Cobertura nacional"
+          title="LORICA en los 32 estados de México"
+          duo={[
+            'Atendemos cotizaciones de corporaciones y brigadas en los 32 estados de la República. La conversación inicia por WhatsApp y la propuesta se entrega por escrito, con ficha técnica y condiciones de compra claras.',
+            'Coordinamos la entrega a estación o domicilio según la cotización. Consulta el directorio de bomberos de cada entidad para ubicar referencias locales de corporaciones y estaciones.',
+          ]}
+        />
+        <div class="cobertura-regiones">
+          {REGIONES.map((region) => (
+            <section class="cobertura-region">
+              <h3>{region.nombre}</h3>
+              <ul>
+                {estadosDeRegion(region.slug).sort((a, b) => a.nombre.localeCompare(b.nombre, 'es')).map((estado) => (
+                  <li><a href={rutaEstado(estado.slug)}>{estado.nombre}</a></li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </section>
+
       <section id="datos" class="block empresa-datos">
         <SectionHeading clave="atencion" eyebrow="Atención" title="Datos de contacto y atención" />
         <dl>
@@ -150,6 +183,7 @@ const entregables = [
           <div><dt>Teléfono y WhatsApp</dt><dd>{CONTACT.telefono}</dd></div>
           <div><dt>Correo</dt><dd>{CONTACT.email}</dd></div>
           <div><dt>Horario</dt><dd>{CONTACT.horario}</dd></div>
+          {EMPRESA.experiencia && <div><dt>Experiencia</dt><dd>{EMPRESA.experiencia}</dd></div>}
           <div><dt>Cobertura</dt><dd>{CONTACT.cobertura}</dd></div>
           <div><dt>Facturación</dt><dd>CFDI 4.0</dd></div>
           {EMPRESA.razonSocial && <div><dt>Razón social</dt><dd>{EMPRESA.razonSocial}</dd></div>}
@@ -166,7 +200,7 @@ const entregables = [
   alt="Bombero realizando ventilación en un techo durante un incendio nocturno"
   width={896}
   heightPx={1200}
-  caption="Equipamos a quienes entran primero: cotización por escrito, ficha técnica por partida y la norma vigente."
+  caption="LORICA equipa a quienes entran primero: cotización por escrito, ficha técnica por partida y la norma vigente."
     height="tall"
     position="center 35%"
   />
@@ -212,12 +246,19 @@ const entregables = [
 
   .empresa-marcas { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
   .empresa-marcas h3 { margin: 0 0 1rem; font-size: 1.05rem; }
+  .cobertura-regiones { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+  @media (max-width: 1099px) { .cobertura-regiones { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .cobertura-region { padding: 1rem 1.1rem; border: 1px solid rgb(20 22 26 / 0.14); border-top: 3px solid var(--color-primary); border-radius: var(--radius); }
+  .cobertura-region h3 { margin: 0 0 .75rem; font-size: 1rem; }
+  .cobertura-region ul { display: grid; gap: .35rem .75rem; margin: 0; padding: 0; list-style: none; }
+  .cobertura-region a { color: var(--color-dark); font-weight: 600; text-decoration: none; }
+  .cobertura-region a:hover { color: var(--color-primary); text-decoration: underline; }
 
   .empresa-datos dl { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem 2rem; }
   .empresa-datos dt { margin-bottom: 0.15rem; color: var(--color-gray-soft); font-size: 0.75rem; font-weight: 800; letter-spacing: var(--tracking-wide); text-transform: uppercase; }
   .empresa-datos dd { margin: 0; color: var(--color-dark); font-size: 0.95rem; font-weight: 600; }
 
   @media (max-width: 767px) {
-    .empresa-list, .empresa-marcas, .empresa-datos dl { grid-template-columns: 1fr; }
+    .empresa-list, .empresa-marcas, .empresa-datos dl, .cobertura-regiones { grid-template-columns: 1fr; }
   }
 </style>

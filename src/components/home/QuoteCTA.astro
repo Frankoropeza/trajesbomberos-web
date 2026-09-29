@@ -2,7 +2,7 @@
 // QuoteCTA (home): cierre de conversión. WhatsApp primario con la
 // lista de lo que acelera la cotización; teléfono como secundario.
 // Enlaces desde CONTACT/WA_MESSAGES vía waUrl (regla D4).
-import { CONTACT, WA_MESSAGES } from '@config/site';
+import { CONTACT, MARCA, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 
 interface Props { id?: string; }
@@ -22,8 +22,8 @@ const datos = [
       <p class="quote__eyebrow">Cotización con ficha técnica</p>
       <h2 id="quote-title">Cotiza tu equipo con ficha técnica por WhatsApp</h2>
       <p class="quote__text">
-        Respondemos en día hábil con cotización formal, ficha técnica por partida y condiciones de entrega por
-        escrito. Sin compra mínima: por pieza o conjunto completo.
+        {MARCA.nombre} responde en día hábil con cotización formal, ficha técnica por partida y condiciones de entrega por
+        escrito. Sin compra mínima: por pieza o conjunto completo, con entrega en {MARCA.cobertura}.
       </p>
       <div class="quote__actions">
         <a class="quote__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">
