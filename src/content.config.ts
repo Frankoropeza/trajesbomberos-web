@@ -63,7 +63,7 @@ const blog = defineCollection({
     // --- fechas y autoría ---
     fecha: z.coerce.date(),
     actualizado: z.coerce.date().optional(),
-    autor: z.string().default('Equipo técnico TrajesBombero'),
+    autor: z.string().default('Equipo técnico LORICA'),
 
     // --- SEO (regla de las 3 keywords) ---
     seoTitle: z.string(),

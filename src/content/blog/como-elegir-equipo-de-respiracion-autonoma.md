@@ -11,7 +11,7 @@ meta: ["ERA de combate", "ERA industrial", "Cilindro", "Mantenimiento"]
 resumen: "Cómo elegir equipo de respiración autónoma: combate o industrial, cilindros, máscaras, duración nominal, mantenimiento y criterios para una cotización comparable."
 categoria: "especificacion"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Cómo elegir equipo de respiración autónoma | México"
 description: "Cómo elegir equipo de respiración autónoma para bombero: diferencias entre combate e industrial, cilindros, máscaras, duración y mantenimiento del ERA."
 keywords: ["cómo elegir equipo de respiración autónoma", "ERA para bombero", "México"]

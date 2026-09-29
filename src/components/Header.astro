@@ -35,9 +35,9 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="brand" aria-label={`${SITE.name}.com, inicio`}>
-      <span class="brand-mark" aria-hidden="true"><img src="/images/marca/isotipo.svg" width="40" height="40" alt="" /></span>
-      <span class="brand-text"><span class="brand-name">{SITE.name}<span class="brand-tld">.com</span></span><span class="brand-claim">{CONTACT.cobertura}</span></span>
+    <a href="/" class="brand" aria-label={`${SITE.name}, trajes para bomberos: inicio`}>
+      <span class="brand-mark" aria-hidden="true"><img src="/images/marca/lorica-icono.svg" width="35" height="40" alt="" /></span>
+      <span class="brand-text"><img class="brand-name" src="/images/marca/lorica-wordmark.svg" width="104" height="17" alt={SITE.name} /><span class="brand-claim">Trajes para bomberos</span></span>
     </a>
     <nav class="nav-desktop" aria-label="Navegación principal">
       <ul class="nav-list">
@@ -176,33 +176,29 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   }
 
   .brand-mark img {
-    width: 40px;
+    width: 35px;
     height: 40px;
   }
 
   .brand-text {
     display: flex;
     flex-direction: column;
-    line-height: 1.15;
+    gap: .3rem;
+    line-height: 1;
   }
 
   .brand-name {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.32rem;
-    letter-spacing: -.01em;
-  }
-
-  .brand-tld {
-    color: var(--color-primary);
+    display: block;
+    width: 104px;
+    height: auto;
   }
 
   .brand-claim {
     color: var(--color-gray);
     font-family: var(--font-display);
-    font-size: .68rem;
+    font-size: .62rem;
     font-weight: 600;
-    letter-spacing: .08em;
+    letter-spacing: .215em;
     text-transform: uppercase;
   }
 

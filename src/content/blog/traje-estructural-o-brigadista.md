@@ -15,7 +15,7 @@ resumen: "En qué se diferencian de verdad, qué exige la NOM-002-STPS-2010 a un
 categoria: "comparativas"
 familia: "brigadista"
 fecha: 2026-06-30
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Traje estructural o brigadista | diferencias | México"
 description: "Traje estructural o brigadista: en qué se diferencian, qué exige la NOM-002-STPS-2010 a una brigada industrial y cómo saber cuál corresponde a tu riesgo real."
 keywords:

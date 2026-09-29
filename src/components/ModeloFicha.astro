@@ -37,7 +37,7 @@ const modelosSidebar = familiaModelo ? modelosDeFamilia(familiaModelo.slug) : mo
 const primeraFrase = (texto: string) => texto.match(/^.*?[.!?](?:\s|$)/)?.[0].trim() ?? texto;
 const recortarPalabras = (texto: string, limite: number) => texto.length <= limite ? texto : texto.slice(0, limite + 1).replace(/\s+\S*$/, '').trim();
 const tituloModeloBase = isTipo ? '' : `${modelo.marca} ${modelo.nombre} | ${seccion.nombre}`;
-const tituloModelo = isTipo ? '' : modelo.title ?? (tituloModeloBase.length <= 60 ? tituloModeloBase : `${modelo.marca} ${modelo.nombre} | TrajesBombero`);
+const tituloModelo = isTipo ? '' : modelo.title ?? (tituloModeloBase.length <= 60 ? tituloModeloBase : `${modelo.marca} ${modelo.nombre} | LORICA`);
 const llamadaCotizacion = 'Cotiza por WhatsApp con envío a todo México.';
 const descripcionModelo = isTipo ? '' : modelo.description ?? recortarPalabras(`${recortarPalabras(primeraFrase(modelo.resumen?.[0] ?? modelo.descripcion[0]), 160 - llamadaCotizacion.length - 1)} ${llamadaCotizacion}`, 160);
 const modeloPorId = (id: string) => MODELOS.find((item) => item.id === id)!;

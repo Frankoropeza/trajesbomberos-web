@@ -14,7 +14,7 @@ resumen: "Por qué el traje estructural se retira a los diez años de fabricado,
 categoria: "mantenimiento"
 familia: "estructural"
 fecha: 2026-06-16
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Vida útil del traje de bombero | NFPA 1850 | México"
 description: "Vida útil del traje de bombero: por qué se retira a los diez años de fabricado, qué exige la NFPA 1850 en inspección y lavado, y cómo llevar la bitácora."
 keywords:

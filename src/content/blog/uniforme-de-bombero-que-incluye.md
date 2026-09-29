@@ -14,7 +14,7 @@ meta:
 resumen: "Qué incluye el uniforme de bombero, cómo se diferencia del equipo de protección y qué pedir para estación, brigada, ataque estructural o incendio forestal."
 categoria: "comparativas"
 fecha: 2026-09-28
-autor: "Equipo técnico TrajesBombero"
+autor: "Equipo técnico LORICA"
 seoTitle: "Uniforme de bombero: ropa y protección | México"
 description: "Uniforme de bombero: qué incluye la ropa de estación, cómo se distingue del traje de protección y qué equipo corresponde a cada operación en México."
 keywords: ["uniforme de bombero", "ropa de bombero", "México"]

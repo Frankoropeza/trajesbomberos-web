@@ -68,7 +68,7 @@ export function organizationSchema(): object {
       'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE.url}/images/marca/logo-trajesbombero-512.png`,
+      url: `${SITE.url}/images/marca/lorica-logo-512.png`,
       width: 512,
       height: 512,
     },
