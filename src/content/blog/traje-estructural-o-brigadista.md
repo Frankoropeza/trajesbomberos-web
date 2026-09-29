@@ -99,4 +99,4 @@ Cuesta menos que estructurar a toda la brigada, protege de verdad a quien sí va
 
 Mándanos dos datos —**qué dice tu análisis de riesgo** y **cuántos elementos por rol**— y te devolvemos las dos cotizaciones, la de brigadista y la de estructural, desglosadas por pieza. Con eso puedes decidir con números reales en lugar de con una foto.
 
-Y si la respuesta honesta resulta ser la más barata, te la vamos a decir igual. Es la única forma de que la siguiente compra también nos la pidas a nosotros.
+Y si la respuesta honesta resulta ser la más barata, en LORICA te la vamos a decir igual. Es la única forma de que la siguiente compra también nos la pidas a nosotros.

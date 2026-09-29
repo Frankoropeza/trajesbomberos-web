@@ -216,7 +216,7 @@ seccion.enlaces = [
 ];
 seccion.resumenHero = [
   "La capucha o monja protege una interfaz: la franja que une casco, máscara, cuello y hombros. Una selección correcta no parte de la prenda extendida, sino de una prueba puesta con el ERA y el chaquetón que usa la persona. Apertura facial, elástico, babero y número de capas deben conservar cobertura mientras se mueve la cabeza y el torso.",
-  "Las configuraciones de una capa, doble capa y barrera contra partículas tienen propósitos distintos. La última no elimina la necesidad de descontaminar ni de lavar; las capas no convierten por sí solas un modelo en sustituto de otro. Compra el diseño que corresponde al riesgo, registra el cuidado y verifica su condición antes de cada reasignación.",
+  "Las configuraciones de una capa, doble capa y barrera contra partículas tienen propósitos distintos. La última no elimina la necesidad de descontaminar ni de lavar; las capas no convierten por sí solas un modelo en sustituto de otro. Compra el diseño que corresponde al riesgo, registra el cuidado y verifica su condición antes de cada reasignación. LORICA cotiza la monja junto con el casco y el ERA de tu equipo para revisar esa interfaz.",
 ];
 seccion.etiquetas = {
   menuTipos: "Tipos de capucha",

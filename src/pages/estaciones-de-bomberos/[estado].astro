@@ -22,7 +22,7 @@ import DataTable from '@components/directorio/DataTable.astro';
 import { tilesEquipo } from '@lib/directorio-equipo';
 import type { CtaPreset } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
-import { SITE, CONTACT, WA_MESSAGES } from '@config/site';
+import { SITE, CONTACT, MARCA, WA_MESSAGES } from '@config/site';
 import {
   BASE_DIRECTORIO, ENTIDADES, REGIONES, TIPO_DESC, SERVICIO_LABEL,
   resumenEstado, municipiosDe, serviciosDe, estacionesDe, rutaEstado, telHref, telTexto, pct, nf, enEstado, deEstado, conArticulo, unidad,
@@ -111,7 +111,7 @@ const collection = { name: `Estaciones de bomberos ${EN}`, description, url: `${
 
 const cta: CtaPreset = {
   title: `¿Equipas a una corporación de bomberos ${EN}?`,
-  text: `Cotizamos trajes y equipo para bomberos con ficha técnica por partida, expediente para licitación y factura CFDI 4.0. Sin compra mínima y con envío a ${e.slug === 'estado-de-mexico' ? 'todo el Estado de México' : e.slug === 'ciudad-de-mexico' ? 'toda la Ciudad de México' : e.nombre}.`,
+  text: `Con ${MARCA.experiencia} de experiencia, ${MARCA.nombre} cotiza trajes y equipo para bomberos ${EN} con ficha técnica por partida, expediente para licitación y factura CFDI 4.0. Sin compra mínima y con envío a ${e.slug === 'estado-de-mexico' ? 'todo el Estado de México' : e.slug === 'ciudad-de-mexico' ? 'toda la Ciudad de México' : e.nombre}.`,
   buttons: [
     { label: 'Cotizar equipo por WhatsApp', href: waUrl(WA_MESSAGES.licitacion), icon: 'wa', primary: true, external: true },
     { label: CONTACT.telefono, href: `tel:${CONTACT.telefonoHref}`, icon: 'phone' },

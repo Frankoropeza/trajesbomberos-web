@@ -18,6 +18,15 @@ export const SITE = {
   allowSelfReviews: false, // regla B4: sin reseñas propias
 } as const;
 
+export const MARCA = {
+  nombre: 'LORICA',
+  completo: 'LORICA · Trajes para bomberos',
+  experiencia: 'más de 35 años',
+  experienciaCorta: 'Más de 35 años de experiencia',
+  cobertura: 'los 32 estados de la República',
+  lema: 'La armadura del bombero',
+} as const;
+
 // Regla de las 3 keywords · kw1 = principal, va primero y sin marca
 export const KEYWORDS = [
   'trajes para bomberos',      // kw1 · principal (20/mes, TP 60)
@@ -31,8 +40,8 @@ export const CONTACT = {
   whatsapp: '525664804962',
   email: 'trajes.bomberos@gmail.com',
   horario: 'Lun–Vie 9:00–18:00',
-  cobertura: 'Envíos a todo México',
-  posicionamiento: 'Venta de trajes para bomberos · Envíos a todo México',
+  cobertura: 'Presencia en los 32 estados',
+  posicionamiento: 'LORICA · Más de 35 años equipando bomberos en los 32 estados',
 } as const;
 
 // ============================================================
@@ -48,10 +57,12 @@ export const EMPRESA: {
   domicilio?: string;          // domicilio del responsable (aviso de privacidad)
   ciudad?: string;
   anioInicio?: number;
+  experiencia?: string;
 } = {
   nombreComercial: 'LORICA · Trajes para bomberos',
   domicilio: 'Manuel Caballero 161, Col. Obrera, Alcaldía Cuauhtémoc, C.P. 06800, Ciudad de México, CDMX',
   ciudad: 'Ciudad de México',
+  experiencia: 'Más de 35 años',
 };
 
 // Dirección de la empresa (aprobada por Frank el 2026-09-29). Una sola fuente para

@@ -121,7 +121,7 @@ Para [cotizar equipo para bomberos voluntarios](/contacto/), indica si es dotaci
 
 **¿El equipo usado puede entrar a servicio estructural?** Sólo si su condición y documentación permiten verificarlo; un dato faltante no se debe completar por estimación.
 
-**¿Incluyen envío?** Realizamos envío a todo México; se confirma destino y condiciones de entrega en la cotización.
+**¿Incluyen envío?** Realizamos envío a los 32 estados; se confirma destino y condiciones de entrega en la cotización.
 
 ## Fuentes
 
