@@ -33,7 +33,7 @@ const year = new Date().getFullYear();
   <!-- Zona 2 · Marca + columnas -->
   <div class="container fbody">
     <div class="fbrand">
-      <p class="fbrand__name"><img src="/images/marca/isotipo.svg" width="36" height="36" alt="" />{SITE.name}<span>.com</span></p>
+      <p class="fbrand__name"><img src="/images/marca/isotipo.svg" width="36" height="36" alt="" /><span class="fbrand__word">{SITE.name}<span>.com</span></span></p>
       <p class="fbrand__claim">{CONTACT.posicionamiento}.</p>
 
       <dl class="fnap">
@@ -160,7 +160,7 @@ const year = new Date().getFullYear();
     letter-spacing: var(--tracking-tight);
   }
   .fbrand__name img { flex: 0 0 auto; }
-  .fbrand__name span { color: var(--color-accent); }
+  .fbrand__word > span { color: var(--color-accent); }
   .fbrand__claim { margin: 0 0 1.3rem; font-size: 0.86rem; max-width: 40ch; }
 
   .fnap { margin: 0; display: grid; gap: 0.75rem; }

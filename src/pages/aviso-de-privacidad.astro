@@ -19,7 +19,7 @@ const body = (legal.rendered?.html ?? '')
   .replace('<p>{{DOMICILIO}}</p>', domicilio)
   .replaceAll('{{RESPONSABLE}}', escapeHtml(responsable))
   .replaceAll('{{EMAIL}}', `<a href="mailto:${email}">${email}</a>`);
-const actualizado = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }).format(legal.data.actualizado);
+const actualizado = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(legal.data.actualizado);
 ---
 
 <PageLayout
