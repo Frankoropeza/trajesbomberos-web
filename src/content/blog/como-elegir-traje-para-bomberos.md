@@ -1,6 +1,6 @@
 ---
-title: "Cómo elegir traje para bomberos sin equivocarte de familia"
-titleAccent: "en la primera compra"
+title: "Cómo elegir traje para bomberos"
+titleAccent: "sin equivocarte de familia"
 eyebrow: "Guía de compra · Empieza por aquí"
 lead: "La misma conversación que tenemos por teléfono cuando alguien nos escribe pidiendo trajes de bombero y todavía no sabe cuál de las seis familias corresponde a su operación."
 descRight:

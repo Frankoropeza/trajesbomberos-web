@@ -1,6 +1,6 @@
 ---
-title: "NFPA 1970: qué cambió cuando cuatro normas se volvieron una"
-titleAccent: "y cómo afecta tu compra"
+title: "NFPA 1970: qué cambió y cómo afecta tu compra"
+titleAccent: "cuatro normas en una"
 eyebrow: "Normas · Referencia estructural"
 lead: "La NFPA 1971 ya no existe como documento independiente. Desde la consolidación, el traje estructural, el uniforme de trabajo, el equipo de respiración y el PASS viven en un solo estándar: la NFPA 1970."
 descRight:
