@@ -125,7 +125,7 @@ Para [cotizar casco de bombero](/contacto/), incluye si se usará con máscara, 
 
 **¿El visor siempre viene incluido?** Depende de la configuración; debe aparecer en la cotización y ficha del modelo.
 
-**¿Puedo montar cualquier lámpara?** Sólo si el casco y soporte declaran compatibilidad o el fabricante la confirma.
+**¿Puedo montar cualquier lámpara en el casco?** Sólo si el casco y soporte declaran compatibilidad o el fabricante la confirma.
 
 **¿Cómo pruebo casco con ERA?** Con máscara, capucha, casco y comunicación en la secuencia real, verificando sello, movilidad y acceso al regulador.
 

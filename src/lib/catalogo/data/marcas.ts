@@ -265,8 +265,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           "a": "Traje Hero, casco Viking, guante FPGS, escafandra FPEN, botas Workman y ERA Phantöm, cotizados por pieza o completos."
         },
         {
-          "q": "¿Qué es SköldTracker?",
-          "a": "La plataforma de Sköld para registrar fichas, mantenimiento y caducidad de cada prenda."
+          "q": "¿Para qué sirve SköldTracker en un conjunto Sköld?",
+          "a": "Para registrar la ficha, el mantenimiento y la caducidad de cada prenda del conjunto, según la plataforma de Sköld."
         },
         {
           "q": "¿Qué telas exteriores tiene el Sköld Hero Nomex?",

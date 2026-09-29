@@ -120,7 +120,7 @@ Para [cotizar cilindros para ERA](/contacto/), envía los datos de la etiqueta o
 
 **¿Qué presión tienen los cilindros del catálogo?** Las configuraciones publicadas señalan 4,500 psi.
 
-**¿Cuánto dura un cilindro?** 30, 45 o 60 minutos son valores nominales; la duración real cambia con consumo y escena.
+**¿Cuánto dura un cilindro de fibra de carbono de 60 minutos?** 30, 45 o 60 minutos son valores nominales; la duración real cambia con consumo y escena.
 
 **¿Cada cuándo se realiza la prueba hidrostática?** Cada cinco años para cilindros de compuesto, conforme a etiqueta DOT y programa aplicable.
 

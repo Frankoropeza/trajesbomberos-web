@@ -177,7 +177,7 @@ comparativaModelos:
 faqs:
   - q: "¿Qué cambia entre una bota de hule y una de piel estructural?"
     a: "La construcción y el ajuste. La de hule es de caucho vulcanizado de una pieza, se limpia fácil y trae puntera y entresuela de acero en nuestros tres modelos. La de piel usa piel, forro y membrana, y sujeta el pie de otra forma. Las dos se refieren a NFPA 1970."
-  - q: "¿La bota forestal sirve para ataque interior?"
+  - q: "¿Se puede entrar a un incendio estructural con bota forestal?"
     a: "No. Están hechas para trabajos distintos. La forestal es de piel, más ligera y pensada para caminar en el monte; la estructural resiste el calor y lo que pisas dentro de una edificación. La Fire Ranger no declara norma; la Workman Fire declara NFPA 1971."
   - q: "¿Cómo se mide la talla mexicana de una bota?"
     a: "En centímetros, pero cada modelo tiene su tabla y la confirmamos antes de surtir. Mide con el calcetín de trabajo puesto y prueba la bota caminando, subiendo una escalera y agachándote. Si alguien queda entre dos tallas, dínoslo: conviene probar las dos."
