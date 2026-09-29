@@ -35,9 +35,10 @@ import {
 const path = BASE_DIRECTORIO;
 
 // Regla de las 3 keywords
-const keywords = ['estaciones de bomberos', 'directorio por estado', 'México'] as const;
-const title = 'Estaciones de bomberos: directorio por estado | México';
-const description = `Estaciones de bomberos en México: directorio de ${nf(N.total)} estaciones en los 32 estados, con ubicación, corporación y fuente pública de cada dato.`;
+// Metas (tanda de metas 2026-09-29): sin «| México» ni pipes. Ahrefs MX: «estación de bomberos» 800.
+const keywords = ['estaciones de bomberos', 'directorio de bomberos', 'teléfonos de bomberos'] as const;
+const title = 'Estaciones de bomberos: directorio por estado y municipio';
+const description = `Directorio de estaciones de bomberos: ${nf(N.total)} estaciones en los 32 estados, con ubicación, teléfono, corporación y fuente pública de cada dato.`;
 
 const menuItems = [
   { label: 'Índice por región', href: '#estados' },
