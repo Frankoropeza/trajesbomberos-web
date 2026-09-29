@@ -1,14 +1,14 @@
 {
- "lead": "Tenemos localizadas 11 estaciones de bomberos en 9 municipios de Hidalgo; Pachuca de Soto y Tula de Allende tienen 2 cada uno. Encontrarás teléfono oficial en casi la mitad, ubicación, domicilio cuando se conoce y la corporación que opera cada estación.",
+ "lead": "Tenemos localizadas 13 estaciones de bomberos en 11 municipios de Hidalgo; Pachuca de Soto y Tula de Allende tienen 2 cada uno. Encontrarás teléfono oficial en más de un tercio, ubicación, domicilio cuando se conoce y la corporación que opera cada estación.",
  "panorama": [
-  "Los bomberos en Hidalgo dependen sobre todo de los ayuntamientos: 8 de las estaciones son corporaciones municipales de protección civil y bomberos, incluida Tulancingo de Bravo, que opera como Dirección de Bomberos y Protección Civil del municipio. Completan el mapa la Subsecretaría estatal de Protección Civil, en Pachuca, la brigada PEMEX de la Refinería Miguel Hidalgo, en Tula, y Pro Bomberos Huejutla de Reyes, único cuerpo voluntario.",
-  "Pachuca de Soto y Tula de Allende son los municipios con más operación, y el sur del estado suma corporaciones municipales en Tizayuca, Tepeji del Río de Ocampo y Apan, junto a Actopan e Ixmiquilpan. Para quien equipa corporaciones en Hidalgo, casi todo el trato es con corporaciones municipales, y en Tula conviven necesidades urbanas e industriales."
+  "Los bomberos en Hidalgo dependen sobre todo de los ayuntamientos: 9 de las estaciones son corporaciones municipales de protección civil y bomberos. Completan el mapa la Subsecretaría estatal de Protección Civil, en Pachuca, la brigada PEMEX de la Refinería Miguel Hidalgo, en Tula, y dos cuerpos voluntarios: Pro Bomberos Huejutla de Reyes y el Heroico Cuerpo de Bomberos Voluntarios del Estado de Hidalgo, con base en Mineral de la Reforma.",
+  "Pachuca de Soto y Tula de Allende son los municipios con más operación, y Mineral de la Reforma suma un cuerpo voluntario junto a la capital. El sur del estado agrega corporaciones municipales en Tizayuca, Tepeji del Río de Ocampo, Apan y Tepeapulco. Para quien equipa corporaciones en Hidalgo, casi todo el trato es con ayuntamientos, y en Tula conviven necesidades urbanas e industriales."
  ],
  "estacionesDuo": [
   "Entre las corporaciones destacan la Dirección de Protección Civil, Bomberos y Gestión Integral de Riesgos de Pachuca de Soto y la CREI — Brigada de Emergencias PEMEX Refinería Miguel Hidalgo, en Tula de Allende. Las estaciones se agrupan por municipio, con teléfono oficial en 5 de ellas."
  ],
  "coberturaDuo": [
-  "El incendio estructural es el servicio más común, declarado en 8 estaciones, seguido de la atención prehospitalaria y el rescate vehicular. Materiales peligrosos aparece en Pachuca y la refinería de Tula; las fugas de gas, en Tizayuca y la brigada PEMEX, y el fuego forestal lo atiende la Subsecretaría estatal."
+  "El incendio estructural es el servicio más común, declarado en 9 estaciones, seguido de la atención prehospitalaria y el rescate vehicular. Materiales peligrosos aparece en Pachuca y la refinería de Tula; las fugas de gas, en Tizayuca y la brigada PEMEX, y el fuego forestal lo atiende la Subsecretaría estatal."
  ],
  "equipoDuo": [
   "Las direcciones municipales parten de <a href=\"/trajes/estructural/\">trajes estructurales</a> y de <a href=\"/trajes/extricacion/\">trajes de extricación</a> para el rescate vehicular. Pachuca, con espacios confinados y materiales peligrosos, y la brigada de Tula necesitan protección Hazmat y respiratoria; la Subsecretaría, prendas forestales para incendios en campo.",
@@ -17,11 +17,11 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Hidalgo y dónde están?",
-   "a": "Tenemos localizadas 11 estaciones de bomberos en Hidalgo, en 9 municipios. Pachuca de Soto y Tula de Allende tienen 2; Actopan, Apan, Huejutla de Reyes, Ixmiquilpan, Tepeji del Río de Ocampo, Tizayuca y Tulancingo de Bravo, una cada uno. Si falta alguna, escríbenos."
+   "a": "Tenemos localizadas 13 estaciones de bomberos en Hidalgo, en 11 municipios. Pachuca de Soto y Tula de Allende tienen 2; Actopan, Apan, Huejutla de Reyes, Ixmiquilpan, Mineral de la Reforma, Tepeapulco, Tepeji del Río de Ocampo, Tizayuca y Tulancingo de Bravo, una cada uno. Si falta alguna, escríbenos."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Hidalgo?",
-   "a": "Predominan las corporaciones municipales: 8 de las 11 estaciones dependen de ayuntamientos, entre ellas Pachuca, Tula, Tizayuca y Tulancingo de Bravo. También operan la Subsecretaría estatal de Protección Civil, la brigada PEMEX de Tula y un cuerpo voluntario en Huejutla de Reyes."
+   "a": "Predominan las corporaciones municipales: 9 de las 13 estaciones dependen de ayuntamientos, entre ellas Pachuca, Tula, Tepeapulco y Tulancingo de Bravo. También operan la Subsecretaría estatal de Protección Civil, la brigada PEMEX de Tula y dos cuerpos voluntarios, en Huejutla de Reyes y Mineral de la Reforma."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Hidalgo para una gestión?",
