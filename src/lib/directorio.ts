@@ -89,6 +89,7 @@ export const ENTIDADES: Entidad[] = [
 export const TIPO_PLURAL: Record<string, string> = {
   Municipal: 'municipales',
   Estatal: 'estatales',
+  Federal: 'federales',
   Aeropuerto: 'de aeropuerto',
   Voluntarios: 'de voluntarios',
   PEMEX: 'de PEMEX',
@@ -98,6 +99,7 @@ export const TIPO_PLURAL: Record<string, string> = {
 export const TIPO_DESC: Record<string, string> = {
   Municipal: 'Cuerpo de bomberos del ayuntamiento, casi siempre dentro de la coordinación municipal de protección civil.',
   Estatal: 'Corporación del gobierno del estado (en la Ciudad de México, del gobierno de la Ciudad) o base regional de cobertura estatal.',
+  Federal: 'Brigada de una dependencia federal, como la Comisión Nacional Forestal (CONAFOR) en el combate de incendios forestales.',
   Aeropuerto: 'Servicio de salvamento y extinción de incendios (SEI) dentro de un aeropuerto.',
   Voluntarios: 'Patronato o asociación civil de bomberos voluntarios, con financiamiento propio.',
   PEMEX: 'Brigada contraincendio de refinería, terminal o complejo de Petróleos Mexicanos.',

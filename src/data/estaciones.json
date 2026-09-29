@@ -6809,38 +6809,6 @@
   "municipioSlug": "cuencame"
  },
  {
-  "id": "dgo-17",
-  "nombre": "Brigadas Forestales — Secretaría de Recursos Naturales y Medio Ambiente de Durango",
-  "slug": "brigadas-forestales-secretaria-de-recursos-naturales-y-medio-ambiente-de-durango",
-  "estado": "durango",
-  "estadoNombre": "Durango",
-  "ciudad": "Durango",
-  "municipio": "Durango",
-  "tipo": "Estatal",
-  "corporacion": "Brigadas Forestales — Secretaría de Recursos Naturales y Medio Ambiente de Durango",
-  "rolEstacion": "unica",
-  "coordenadas": {
-   "lat": 24.0277,
-   "lng": -104.6532,
-   "precision": "aproximada"
-  },
-  "sitioWeb": "https://medioambiente.durango.gob.mx/",
-  "servicios": [
-   "incendios-estructurales",
-   "incendios-forestales",
-   "capacitacion"
-  ],
-  "fuentes": [
-   {
-    "nombre": "durango.gob.mx — brigadas de sanidad forestal",
-    "url": "https://www.durango.gob.mx/boletines/gobierno-del-estado-y-conafor-trabajan-en-equipo-para-atender-plaga-de-insecto-descortezador-y-proteger-bosques-de-durango"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "durango"
- },
- {
   "id": "dgo-16",
   "nombre": "Brigadas de Combate de Incendios Forestales — CONAFOR Durango",
   "slug": "brigadas-de-combate-de-incendios-forestales-conafor-durango",
@@ -6848,7 +6816,7 @@
   "estadoNombre": "Durango",
   "ciudad": "Durango",
   "municipio": "Durango",
-  "tipo": "Estatal",
+  "tipo": "Federal",
   "corporacion": "Brigadas de Combate de Incendios Forestales — CONAFOR Durango",
   "rolEstacion": "unica",
   "coordenadas": {
@@ -6898,7 +6866,6 @@
    "(618) 814-4555"
   ],
   "email": "direccionproteccioncivil@gmail.com",
-  "sitioWeb": "https://pc.durangocapital.gob.mx/",
   "servicios": [
    "incendios-estructurales",
    "proteccion-civil"
@@ -6906,7 +6873,7 @@
   "fuentes": [
    {
     "nombre": "pc.durangocapital.gob.mx",
-    "url": "https://pc.durangocapital.gob.mx/bomberos-2/"
+    "retirada": "https://pc.durangocapital.gob.mx/bomberos-2/"
    },
    {
     "nombre": "proteccioncivil.durango.gob.mx",
