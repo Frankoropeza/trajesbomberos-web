@@ -2,7 +2,7 @@
  "lead": "El directorio reúne 5 estaciones de bomberos en Tabasco, presentes en 3 municipios. En cada ficha encontrarás corporación, tipo, ubicación disponible y fuente consultable, además de teléfono cuando existe un contacto publicado.",
  "descRight": [
   "Las 5 fichas registradas muestran una operación diversa: 2 municipales, una estatal, una de aeropuerto y una de PEMEX. No hay centrales ni subestaciones identificadas. Centro concentra 3 estaciones, mientras Cárdenas y Paraíso tienen una referencia cada uno. Así se distingue el origen institucional de cada resultado disponible.",
-  "Explora la página por municipio para ubicar bomberos en Tabasco y abre el mapa donde la ficha tenga posición disponible. Hay 2 teléfonos, 2 direcciones y 2 ubicaciones exactas registradas. Los contactos son informativos; para una emergencia utiliza siempre el 911. Cada ficha conserva la fuente del dato para consulta posterior."
+  "Explora la página por municipio para ubicar bomberos en Tabasco y abre el mapa donde la ficha tenga posición disponible. Hay 2 teléfonos, 2 direcciones y una ubicación exacta registrados. Los contactos son informativos; para una emergencia utiliza siempre el 911. Cada ficha conserva la fuente del dato para consulta posterior."
  ],
  "municipiosDuo": [
   "Centro concentra 3 de las 5 estaciones registradas, por lo que ahí se encuentran las referencias para bomberos en Villahermosa. El municipio incorpora una opción estatal, una municipal y un servicio aeroportuario, distinguidos de forma individual dentro del listado.",
@@ -14,7 +14,7 @@
  ],
  "coberturaDuo": [
   "Incendios estructurales, materiales peligrosos y atención prehospitalaria se declaran en 4 fichas cada uno; el rescate vehicular figura en 3. También se registran rescate acuático, incendios forestales, salvamento aeroportuario y fugas de gas dentro de las estaciones de bomberos en Tabasco.",
-  "La disponibilidad de datos es acotada: 2 fichas tienen teléfono, 2 dirección y 2 ubicación exacta, de un total de 5. Estas referencias permiten saber qué contacto o punto en mapa puede consultarse directamente antes de hacer una gestión ordinaria."
+  "La disponibilidad de datos es acotada: 2 fichas tienen teléfono, 2 dirección y una ubicación exacta, de un total de 5. Estas referencias permiten saber qué contacto o punto en mapa puede consultarse directamente antes de hacer una gestión ordinaria."
  ],
  "equipoDuo": [
   "Los registros de materiales peligrosos y fugas de gas justifican revisar <a href=\"/trajes/hazmat/\">protección Hazmat</a>, mientras el salvamento aeroportuario se relaciona con <a href=\"/trajes/aproximacion/\">equipo de aproximación</a>. Para incendios forestales puede requerirse protección de uso forestal y para rescate vehicular, herramientas de extricación.",

@@ -2,7 +2,7 @@
  "lead": "Encuentra 28 estaciones de bomberos en Nuevo León repartidas en 13 municipios. El directorio presenta corporación, ubicación, rol y fuente pública de cada ficha para consultar bomberos en Nuevo León con datos diferenciados por estación.",
  "descRight": [
   "El registro de Nuevo León está dominado por 25 estaciones municipales, además de 2 aeroportuarias y una de PEMEX. Se identifican 2 centrales y 16 subestaciones. Monterrey reúne 5 fichas; Apodaca y Guadalupe, 4 cada uno; San Pedro Garza García cuenta con 3, lo que dibuja una red con varios puntos de operación.",
-  "Navega el listado por municipio para comparar nombre, tipo y datos de localización. Hay teléfono con fuente pública en 5 fichas, direcciones en 23 y ubicación exacta en 23. El mapa ayuda a ubicar referencias y la fuente aclara el respaldo de cada dato publicado; ante una emergencia debes marcar 911 de inmediato."
+  "Navega el listado por municipio para comparar nombre, tipo y datos de localización. Hay teléfono con fuente pública en 5 fichas, direcciones en 23 y ubicación exacta en 22. El mapa ayuda a ubicar referencias y la fuente aclara el respaldo de cada dato publicado; ante una emergencia debes marcar 911 de inmediato."
  ],
  "municipiosDuo": [
   "Monterrey concentra 5 estaciones registradas, seguido de Apodaca y Guadalupe con 4 cada uno, y San Pedro Garza García con 3. Para localizar bomberos en Monterrey, el índice permite separar sus estaciones por nombre, mientras que Apodaca incluye también referencias aeroportuarias.",
@@ -13,7 +13,7 @@
   "Al comparar resultados, considera que una estación puede servir a una zona concreta y que el tipo aclara su ámbito. El CREI Aeropuerto Internacional General Mariano Escobedo y la Brigada Industrial PEMEX de Cadereyta Jiménez figuran con su clasificación propia; no deben interpretarse como equivalentes a una estación municipal."
  ],
  "coberturaDuo": [
-  "La atención prehospitalaria está declarada en 28 fichas y los incendios estructurales en 27; el rescate vehicular figura en 24. Hay 5 fichas con teléfono publicado con fuente, 23 direcciones y 23 ubicaciones exactas. Estas cifras permiten apreciar qué tan completa está cada referencia dentro del directorio.",
+  "La atención prehospitalaria está declarada en 28 fichas y los incendios estructurales en 27; el rescate vehicular figura en 24. Hay 5 fichas con teléfono publicado con fuente, 23 direcciones y 22 ubicaciones exactas. Estas cifras permiten apreciar qué tan completa está cada referencia dentro del directorio.",
   "Materiales peligrosos aparece en 7 casos, mientras incendios forestales y atención a enjambres y fauna se declaran en 4. El listado también incluye salvamento aeroportuario, fugas de gas, rescate en altura, espacios confinados, rescate acuático y protección civil según la ficha correspondiente."
  ],
  "equipoDuo": [
