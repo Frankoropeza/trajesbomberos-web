@@ -93,7 +93,7 @@ Envía el uso previsto, número de usuarios, familias de equipo requeridas, tall
 - Fecha de fabricación solicitada, tiempo de entrega y condiciones de garantía aplicables.
 - Factura CFDI y documentación que exija el procedimiento de compra.
 
-La comparación se vuelve clara cuando todas las respuestas contestan los mismos puntos. Si una propuesta omite un dato, no supongas que incluye la mejor opción: pide precisión antes de tomar una decisión. También vale la pena revisar la sección de [normas](/#normas) para ubicar qué referencia corresponde a cada familia.
+La comparación se vuelve clara cuando todas las respuestas contestan los mismos puntos. Si una propuesta omite un dato, no supongas que incluye la mejor opción: pide precisión antes de tomar una decisión. También vale la pena revisar la sección de [normas](/blog/categoria/normas/) para ubicar qué referencia corresponde a cada familia.
 
 ## Errores al comparar ofertas de trajes de bombero
 

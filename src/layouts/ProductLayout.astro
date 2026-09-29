@@ -10,7 +10,6 @@ import CategoryDetail from '@components/CategoryDetail.astro';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
 import CompletaElConjunto from '@components/CompletaElConjunto.astro';
 import NormaBadge from '@components/NormaBadge.astro';
@@ -54,6 +53,8 @@ const pageIndex = [
   { label: 'Preguntas frecuentes', href: '#faq' },
   { label: 'Otras familias', href: '#otras' },
 ];
+const cta = presetCategoria(f.nombreWa);
+const footerCta = { title: cta.title, text: cta.text, secondary: { label: 'Comparar familias de trajes para bomberos', href: '/trajes/' } };
 ---
 <PageLayout
   pageType="producto"
@@ -73,6 +74,7 @@ const pageIndex = [
   faqs={f.faqs}
   heroImage={heroDeFamilia(f.slug)}
   ogImage={`/images/og/trajes-${f.slug}.jpg`}
+  footerCta={footerCta}
 >
   <!-- Contenido + sidebar de interlinking -->
   <div class="section">
@@ -187,8 +189,6 @@ const pageIndex = [
 
   <div class="section conjunto-wrap"><div class="container"><CompletaElConjunto /></div></div>
 
-  <!-- 7 · CTA de cierre -->
-  <CTABanner variant="dark" {...presetCategoria(f.nombreWa)} />
 </PageLayout>
 
 <style>

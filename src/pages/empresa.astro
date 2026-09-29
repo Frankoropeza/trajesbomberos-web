@@ -6,7 +6,6 @@
 // la dirección se añaden cuando Frank los proporcione (TODO).
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
-import CTABanner from '@components/CTABanner.astro';
 import PhotoBand from '@components/PhotoBand.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { CONTACT, EMPRESA, MARCAS_TRAJE, MARCAS_MATERIAL } from '@config/site';
@@ -72,6 +71,7 @@ const entregables = [
   ]}
   meta={['Cobertura: todo México', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
   heroImage={HERO_GENERICO}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="section">
     <div class="container">
@@ -169,7 +169,6 @@ const entregables = [
     position="center 35%"
   />
 
-  <CTABanner {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>

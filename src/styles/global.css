@@ -74,7 +74,6 @@ th { font-family: var(--font-display); }
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background 0.15s linear, box-shadow 0.15s linear;
 }
 .btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
 .btn:hover { background: var(--color-primary-dark); box-shadow: var(--shadow); }
@@ -289,18 +288,4 @@ th { font-family: var(--font-display); }
   animation: none !important;
   transition: none !important;
   scroll-behavior: auto;
-}
-
-/* Excepción única: feedback de botón. Color y sombra, sin
-   desplazamiento ni escala. */
-.btn,
-.ctab__btn,
-.prod__cta,
-.sb-card__wa,
-.wa-float,
-.section-menu__cta,
-.cform__submit,
-button[type='submit'] {
-  transition: background-color 0.12s linear, border-color 0.12s linear,
-              color 0.12s linear, box-shadow 0.12s linear !important;
 }

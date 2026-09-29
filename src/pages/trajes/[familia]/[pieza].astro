@@ -12,7 +12,6 @@ import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
 import { tilesPiezas } from '@lib/catalogo/tiles';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
 import { WA_MESSAGES } from '@config/site';
 import { PIEZAS } from '@lib/piezas';
@@ -81,6 +80,7 @@ const pageIndex = [
     categoria: familia.nombreWa,
     url: path,
   }}
+  footerCta={{ title: presetCategoria(pz.nombre).title, text: presetCategoria(pz.nombre).text, secondary: { label: 'Comparar familias de trajes para bomberos', href: '/trajes/' } }}
 >
   <div class="section">
     <div class="container layout-grid">
@@ -253,8 +253,6 @@ const pageIndex = [
     </div>
   </section>
 
-  <!-- 8 · CTA de cierre -->
-  <CTABanner variant="dark" {...presetCategoria(pz.nombre)} />
 </PageLayout>
 
 <style>

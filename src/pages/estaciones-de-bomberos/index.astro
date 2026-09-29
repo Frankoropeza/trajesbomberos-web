@@ -13,7 +13,6 @@ import SectionHeading from '@components/SectionHeading.astro';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import CTABanner from '@components/CTABanner.astro';
 import EstadoCard from '@components/directorio/EstadoCard.astro';
 import Aviso911 from '@components/directorio/Aviso911.astro';
 import RegionesIndex from '@components/directorio/RegionesIndex.astro';
@@ -115,6 +114,7 @@ const cta: CtaPreset = {
 };
 ---
 <PageLayout
+  footerCta={{ title: cta.title, text: cta.text, secondary: { label: 'Trajes para bomberos por familia', href: '/trajes/' } }}
   pageType="directorio"
   path={path}
   title={title}
@@ -239,7 +239,6 @@ const cta: CtaPreset = {
     </div>
   </section>
 
-  <CTABanner variant="dark" {...cta} />
 </PageLayout>
 
 <style>

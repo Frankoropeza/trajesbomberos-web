@@ -6,6 +6,17 @@ import { CONTACT, EMPRESA, FOOTER, SITE, WA_MESSAGES, type FooterColumn, type Fo
 import { rutaExiste } from '@lib/rutas';
 import { waUrl } from '@lib/wa';
 
+interface FooterCta {
+  title: string;
+  text?: string;
+  secondary?: { label: string; href: string };
+}
+
+interface Props {
+  cta?: FooterCta;
+}
+
+const { cta } = Astro.props;
 const year = new Date().getFullYear();
 type FooterLinkValido = FooterLink & { href: string };
 const rutaValida = (link: FooterLink): link is FooterLinkValido => {
@@ -23,6 +34,7 @@ const columnasValidas = (columns: readonly FooterColumn[]): { title: string; lin
 const catalogo = columnasValidas(FOOTER.catalogo);
 const soporte = columnasValidas(FOOTER.soporte);
 const legales = FOOTER.legales.filter(rutaValida);
+const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.secondary : undefined;
 ---
 <footer class="site-footer">
   <!-- Zona 1 · CTA -->
@@ -32,11 +44,12 @@ const legales = FOOTER.legales.filter(rutaValida);
         {['Ficha técnica por partida', 'Factura CFDI 4.0', 'Envío a los 32 estados'].map((item) => <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>{item}</li>)}
       </ul>
       <div class="fcta__text">
-        <p class="fcta__title">Cotiza trajes para bomberos con ficha técnica</p>
-        <p class="fcta__lead">Cotización con ficha técnica y condiciones por escrito. Sin compromiso.</p>
+        <p class="fcta__title">{cta?.title ?? 'Cotiza trajes para bomberos con ficha técnica'}</p>
+        <p class="fcta__lead">{cta?.text ?? 'Cotización con ficha técnica y condiciones por escrito. Sin compromiso.'}</p>
       </div>
       <div class="fcta__actions">
         <a class="fcta__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a>
+        {secondary && <a class="fcta__secondary" href={secondary.href}>{secondary.label}</a>}
         <a class="fcta__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
       </div>
     </div>
@@ -198,6 +211,20 @@ const legales = FOOTER.legales.filter(rutaValida);
   .fcta__wa {
     background: var(--color-white);
     color: var(--color-primary);
+  }
+
+  .fcta__secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: .65rem 1rem;
+    border: 1px solid rgb(255 255 255 / .8);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-size: .84rem;
+    font-weight: 800;
+    text-decoration: none;
   }
 
   .fcta__tel {
@@ -496,8 +523,10 @@ const legales = FOOTER.legales.filter(rutaValida);
       width: 100%;
     }
 
-    .fcta__wa {
-      flex: 1;
+    .fcta__wa,
+    .fcta__secondary {
+      flex: 1 1 100%;
+      text-align: center;
     }
 
     .fsupport__grid,

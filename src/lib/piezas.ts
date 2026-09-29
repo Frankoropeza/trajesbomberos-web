@@ -346,11 +346,11 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Anatomía del traje: qué hace cada una de las tres capas",
-                "href": "/#anatomia"
+                "href": "/blog/uniforme-de-bombero-que-incluye/"
           },
           {
                 "label": "Vida útil y servicio: por qué el retiro es a los 10 años",
-                "href": "/#vida-util"
+                "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
           }
     ],
   },
@@ -1167,11 +1167,11 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Cómo especificar un traje sin dejar huecos",
-                "href": "/#especificar"
+                "href": "/blog/categoria/especificacion/"
           },
           {
                 "label": "Errores frecuentes al comprar traje",
-                "href": "/#errores"
+                "href": "/blog/como-elegir-traje-para-bomberos/"
           }
     ],
   },
@@ -1446,7 +1446,7 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Normas para trajes de bombero: por qué son dos certificados",
-                "href": "/#normas"
+                "href": "/blog/categoria/normas/"
           },
           {
                 "label": "Chaquetón estructural: el resto del conjunto",
@@ -1729,7 +1729,7 @@ export const PIEZAS: Pieza[] = [
           },
           {
                 "label": "Vida útil y servicio: por qué se repone antes que el traje",
-                "href": "/#vida-util"
+                "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
           },
           {
                 "label": "Familias de trajes para bomberos",
@@ -2028,11 +2028,11 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero: qué obliga realmente la ley en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       },
       {
         "label": "Cómo especificar sin dejar huecos en la cotización",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -2315,7 +2315,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -2569,7 +2569,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Errores frecuentes al comprar traje",
-        "href": "/#errores"
+        "href": "/blog/como-elegir-traje-para-bomberos/"
       }
     ]
   },
@@ -3108,7 +3108,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil y servicio del equipo",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -3643,7 +3643,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero: qué exige realmente la ley en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -3926,7 +3926,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -4737,7 +4737,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -5020,7 +5020,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -5583,7 +5583,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -6138,7 +6138,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Errores frecuentes al comprar traje",
-        "href": "/#errores"
+        "href": "/blog/como-elegir-traje-para-bomberos/"
       }
     ]
   },
@@ -6691,7 +6691,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -6975,7 +6975,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -7532,7 +7532,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Cómo especificar sin dejar huecos",
-        "href": "/#especificar"
+        "href": "/blog/categoria/especificacion/"
       }
     ]
   },
@@ -7814,7 +7814,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Errores frecuentes al comprar traje",
-        "href": "/#errores"
+        "href": "/blog/como-elegir-traje-para-bomberos/"
       }
     ]
   },
@@ -8093,7 +8093,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },
@@ -8364,7 +8364,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil y servicio del equipo",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -8647,7 +8647,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil del traje estructural",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -9203,7 +9203,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Vida útil del traje estructural",
-        "href": "/#vida-util"
+        "href": "/blog/vida-util-traje-bombero-nfpa-1850/"
       }
     ]
   },
@@ -9764,7 +9764,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "label": "Normas para trajes de bombero en México",
-        "href": "/#normas"
+        "href": "/blog/categoria/normas/"
       }
     ]
   },

@@ -25,12 +25,12 @@ const fichas = activeSlug ? PIEZAS.filter((p) => p.familia === activeSlug) : [];
 const articulos = await getPostsByFamilia(activeSlug, 3);
 
 const RECURSOS = [
-  { label: 'Anatomía del traje', href: '/#anatomia' },
-  { label: 'Cómo especificar un traje de bombero', href: '/#especificar' },
-  { label: 'Errores al comprar un traje de bombero', href: '/#errores' },
-  { label: 'Marcas de trajes de bombero', href: '/#marcas' },
-  { label: 'Normas para trajes de bombero', href: '/#normas' },
-  { label: 'Vida útil del traje de bombero', href: '/#vida-util' },
+  { label: 'Anatomía del traje', href: '/blog/uniforme-de-bombero-que-incluye/' },
+  { label: 'Cómo especificar un traje de bombero', href: '/blog/categoria/especificacion/' },
+  { label: 'Errores al comprar un traje de bombero', href: '/blog/como-elegir-traje-para-bomberos/' },
+  { label: 'Marcas de trajes de bombero', href: '/marcas/' },
+  { label: 'Normas para trajes de bombero', href: '/blog/categoria/normas/' },
+  { label: 'Vida útil del traje de bombero', href: '/blog/vida-util-traje-bombero-nfpa-1850/' },
 ];
 ---
 <aside class="sidebar" aria-label="Navegación de la sección">

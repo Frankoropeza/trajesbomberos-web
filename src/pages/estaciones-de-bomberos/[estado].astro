@@ -13,7 +13,6 @@ import SectionHeading from '@components/SectionHeading.astro';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard from '@components/home/TileCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import CTABanner from '@components/CTABanner.astro';
 import Aviso911 from '@components/directorio/Aviso911.astro';
 import BotonesConteo from '@components/directorio/BotonesConteo.astro';
 import EstacionCard from '@components/directorio/EstacionCard.astro';
@@ -114,6 +113,7 @@ const cta: CtaPreset = {
 };
 ---
 <PageLayout
+  footerCta={{ title: cta.title, text: cta.text, secondary: { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' } }}
   pageType="directorio"
   path={path}
   title={title}
@@ -250,7 +250,6 @@ const cta: CtaPreset = {
     </div>
   </section>
 
-  <CTABanner variant="dark" {...cta} />
 </PageLayout>
 
 <style>

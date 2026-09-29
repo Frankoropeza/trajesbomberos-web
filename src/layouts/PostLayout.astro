@@ -10,7 +10,6 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
-import CTABanner from '@components/CTABanner.astro';
 import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
 import { familiaPorSlug } from '@lib/familias';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
@@ -41,12 +40,15 @@ const cat = blogCategoria(d.categoria);
 const relacionados = await relatedPosts(post, 3);
 const waMsg = WA_MESSAGES.articulo(d.title);
 
+// Franja de secciones del artículo: los h2 reales (sin fuentes ni FAQ),
+// recortados en palabra completa para que quepan en una línea.
+const corto = (t: string, max = 32) => (t.length <= max ? t : `${t.slice(0, t.lastIndexOf(' ', max))}…`);
 const menuItems = [
-  { label: 'Guía técnica completa', href: '#articulo' },
-  { label: 'Artículos relacionados de trajes', href: '#relacionados' },
-  { label: categoriaNombre(d.categoria), href: categoriaUrl(d.categoria) },
-  ...(d.familia ? [{ label: familiaPorSlug(d.familia)?.nombreWa ?? 'Trajes para bomberos', href: `/trajes/${d.familia}/` }] : []),
-  { label: 'Artículos sobre trajes para bomberos', href: '/blog/' },
+  ...headings
+    .filter((heading) => heading.depth === 2 && !/^(fuentes|preguntas frecuentes)/i.test(heading.text))
+    .slice(0, 3)
+    .map((heading) => ({ label: corto(heading.text), href: `#${heading.slug}` })),
+  ...(relacionados.length > 0 ? [{ label: 'Guías relacionadas de trajes', href: '#relacionados' }] : []),
 ];
 
 // Datos duros del hero: si el artículo no los declara, se arma
@@ -84,6 +86,7 @@ const article = {
   article={article}
   heroImage={d.imagen ? { src: d.imagen, alt: d.imagenAlt ?? '' } : HERO_GENERICO}
   ogImage={`/images/og/blog-${post.id}.jpg`}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="section">
     <div class="container layout-grid layout-grid--post">
@@ -166,18 +169,11 @@ const article = {
     </section>
   )}
 
-  <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
-  /* El sitio es full-width, pero un artículo no se lee a 1500px.
-     Esta es la única página donde el bloque de contenido se
-     acota y se centra: medida de lectura + sidebar, sin hueco
-     muerto entre columnas. */
-  .layout-grid--post {
-    max-width: 1120px;
-    margin-inline: auto;
-  }
+  /* El contenido se alinea con el container; la medida de lectura
+     se conserva dentro de la columna principal. */
   .layout-grid--post :global(.prose),
   .post__cierre { max-width: none; }
 

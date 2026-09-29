@@ -63,7 +63,7 @@ export const PRESET_LICITACION: CtaPreset = {
   text: 'Ficha técnica en formato de pliego, certificado de laboratorio, carta de distribuidor y CFDI 4.0. Asistimos a junta de aclaraciones.',
   buttons: [
     { label: 'Pedir expediente de licitación', href: waUrl(WA_MESSAGES.licitacion), icon: 'quote', primary: true, external: true },
-    { label: 'Normas para trajes de bombero', href: '/#normas', icon: 'info' },
+    { label: 'Normas para trajes de bombero', href: '/blog/categoria/normas/', icon: 'info' },
     { label: 'Guías para licitar trajes de bomberos', href: '/blog/categoria/licitacion/', icon: 'quote' },
   ],
 };

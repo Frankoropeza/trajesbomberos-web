@@ -17,7 +17,7 @@ interface Heading {
   text: string;
 }
 
-type Variant = 'articulo' | 'indice' | 'categoria';
+type Variant = 'articulo' | 'indice' | 'categoria' | 'legal';
 
 interface Props {
   variant?: Variant;
@@ -25,6 +25,7 @@ interface Props {
   currentId?: string;            // artículo actual: no se autoenlaza
   currentCategoria?: string;     // categoría actual: se marca
   waMessage?: string;
+  tocTitle?: string;
 }
 const {
   variant = 'indice',
@@ -32,9 +33,10 @@ const {
   currentId,
   currentCategoria,
   waMessage = WA_MESSAGES.cotizar,
+  tocTitle = 'En este artículo',
 } = Astro.props;
 
-const esArticulo = variant === 'articulo';
+const esArticulo = variant === 'articulo' || variant === 'legal';
 // Cada variante lleva solo lo que aporta, para que la columna no
 // crezca más que el contenido y no haga falta scroll ni recortes:
 //  · artículo  → índice + cotización (sticky, cabe en pantalla)
@@ -56,7 +58,7 @@ const categorias = esArticulo ? [] : await categoriasConConteo();
 <aside class:list={['sidebar', esArticulo ? 'sidebar--sticky' : 'sidebar--flow']} aria-label="Navegación del blog">
   {toc.length > 0 && (
     <nav class="sb-card sb-card--toc" aria-label="Índice del artículo">
-      <p class="sb-title">En este artículo</p>
+      <p class="sb-title">{tocTitle}</p>
       <ul class="sb-anchors" id="blog-toc">
         {toc.map((h) => (
           <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>

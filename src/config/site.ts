@@ -223,7 +223,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         'Los artículos de esta categoría explican cada dato y dónde se lee en una ficha técnica; las fichas de cada pieza del catálogo los traen ya ordenados.',
       ],
       enlaces: [
-        { label: 'Los ocho datos de la ficha', href: '/#especificar' },
+        { label: 'Los ocho datos de la ficha', href: '/blog/categoria/especificacion/' },
         { label: 'Trajes estructurales', href: '/trajes/estructural/' },
         { label: 'Chaquetón estructural de tres capas', href: '/trajes/estructural/chaqueton/' },
         { label: 'Comparativa de las seis familias', href: '/trajes/' },
@@ -248,7 +248,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         'Aquí se explica qué pide cada norma en la práctica, cómo citarla en una requisición y qué revisar en el certificado.',
       ],
       enlaces: [
-        { label: 'Normas para trajes de bombero en México', href: '/#normas' },
+        { label: 'Normas para trajes de bombero en México', href: '/blog/categoria/normas/' },
         { label: 'Trajes estructurales', href: '/trajes/estructural/' },
         { label: 'Trajes forestales', href: '/trajes/forestal/' },
         { label: 'Extricación y rescate', href: '/trajes/extricacion/' },

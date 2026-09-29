@@ -8,7 +8,6 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
-import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, BLOG_CATEGORIES, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
@@ -57,6 +56,7 @@ const directoryItems = posts.map((p) => ({
   ]}
   directoryItems={directoryItems}
   heroImage={HERO_GENERICO}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Familias de trajes para bomberos', href: '/trajes/' } }}
 >
   {destacado && (
     <section class="section section--tight" id="destacado">
@@ -126,7 +126,6 @@ const directoryItems = posts.map((p) => ({
     </div>
   </div>
 
-  <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
