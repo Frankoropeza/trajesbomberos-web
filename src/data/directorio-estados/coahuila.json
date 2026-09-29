@@ -1,45 +1,39 @@
 {
- "lead": "Encuentra 39 estaciones de bomberos en Coahuila, registradas en 20 municipios. Cada ficha reúne corporación, tipo y rol de la sede, además de dirección, teléfono cuando hay fuente pública y el grado de precisión de la ubicación en mapa.",
- "descRight": [
-  "Coahuila reúne 28 registros municipales, 4 industriales, 3 de aeropuerto, 2 voluntarios y 2 de CFE. Torreón concentra 9 fichas; Nava y Saltillo 4 cada uno; Monclova y Ramos Arizpe 3. Se registran 3 centrales —Saltillo, Torreón y Monclova— y 9 subestaciones, con una red diversa de corporaciones y brigadas. Múzquiz incorpora 2 referencias en la relación.",
-  "Consulta el directorio por municipio para localizar bomberos en Coahuila y revisar el tipo de corporación antes de contactar una sede. Las fichas incluyen dirección, teléfono cuando la fuente lo permite y mapa exacto o aproximado. Para emergencias marca 911; los números directos sirven para visitas, trámites, capacitación o donaciones."
- ],
- "municipiosDuo": [
-  "Torreón registra 9 estaciones, la mayor concentración. Nava y Saltillo cuentan con 4 cada uno; Monclova y Ramos Arizpe con 3, y Múzquiz con 2. Los municipios restantes del listado tienen una ficha. Quien busque bomberos en Saltillo puede distinguir sus referencias municipales desde el índice territorial.",
-  "Las 39 fichas alcanzan 20 municipios y combinan corporaciones públicas, industriales, de aeropuerto, voluntarias y CFE. Esa diversidad explica que una sede no siempre tenga la misma función que otra. La relación no declara abarcar todas las estaciones de Coahuila; se amplía al confirmar referencias con fuente pública."
+ "lead": "Coahuila reúne 39 estaciones de bomberos en 20 municipios, con mayor presencia en Torreón, Nava y Saltillo. Consulta dirección, teléfono oficial cuando existe, ubicación y corporación operadora para ubicar bomberos en Coahuila.",
+ "panorama": [
+  "En Coahuila predominan los cuerpos municipales, pero conviven con brigadas industriales, servicios aeroportuarios, voluntarios y corporaciones de CFE. Torreón, Saltillo, Monclova y Ramos Arizpe concentran distintas modalidades de respuesta. Esta mezcla obliga a reconocer si una estación atiende la ciudad, una planta, un aeropuerto o una instalación energética antes de planear una dotación.",
+  "Torreón reúne 9 estaciones, mientras Nava y Saltillo tienen 4 cada uno. Para quien gestiona equipo, la concentración urbana convive con atención industrial y minera en municipios concretos. Conviene separar las necesidades de los cuerpos municipales de las brigadas de planta, sin dejar fuera a las corporaciones voluntarias y a los servicios que declaran incendios forestales."
  ],
  "estacionesDuo": [
-  "Cada ficha señala si la sede es municipal, industrial, de aeropuerto, voluntaria o CFE y distingue central, subestación o sede única. El directorio incluye Bomberos Torreón y Bomberos Saltillo, además de brigadas industriales. Esta clasificación permite reconocer cuándo una referencia corresponde a una corporación de atención pública o a una instalación especializada.",
-  "Dirección y teléfono se muestran solo donde existe fuente; el mapa identifica ubicación exacta o aproximada. Revisa esos atributos antes de planear una visita o trámite. Los datos no sustituyen el auxilio de bomberos en Coahuila: si hay peligro inmediato, llama al 911 en lugar de usar un contacto administrativo de una ficha."
+  "Las estaciones de bomberos en Coahuila reúnen a Bomberos Torreón, Bomberos Saltillo y Bomberos de Monclova, además de corporaciones industriales y voluntarias. Se agrupan por municipio y muestran teléfono oficial cuando existe. Así se diferencia una estación pública de una brigada ligada a una instalación."
  ],
  "coberturaDuo": [
-  "Incendios estructurales se declaran en 36 fichas. Atención prehospitalaria aparece en 9 y capacitación en 8; incendios forestales, protección civil y materiales peligrosos figuran en 4 cada uno. Rescate vehicular, fugas de gas y salvamento aeroportuario se registran en 3. Son servicios declarados, no disponibilidad permanente.",
-  "El directorio tiene teléfono con fuente pública en 13 fichas, dirección en 22 y ubicación exacta en 4; 19 registros alcanzan confianza alta. Estas cifras muestran que la referencia documental varía entre sedes. Al comparar estaciones de bomberos en Coahuila, consulta siempre la ficha particular antes de depender de una dirección o contacto."
+  "El incendio estructural aparece en 36 estaciones localizadas, pero Coahuila también declara materiales peligrosos en 4 y atención prehospitalaria en 9. Se agregan incendios forestales, rescate vehicular, espacios confinados y salvamento aeroportuario. La operación combina servicio urbano, industria e infraestructura."
  ],
  "equipoDuo": [
-  "La presencia declarada de incendios estructurales, forestales, materiales peligrosos, rescate vehicular y salvamento aeroportuario requiere una selección por riesgo. Consulta <a href=\"/trajes/estructural/\">protección estructural para bomberos</a> o <a href=\"/trajes/extricacion/\">equipo de extricación</a> cuando la tarea involucre rescate vehicular y el procedimiento así lo establezca.",
-  "Las brigadas industriales y los escenarios con materiales peligrosos demandan especificaciones acordes al agente y exposición. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Coahuila. La recomendación de trajes y accesorios se prepara según el servicio declarado y los requisitos de uso de la corporación."
+  "Los <a href=\"/trajes/estructural/\">trajes estructurales</a> responden a la cobertura base de los cuerpos de bomberos en Coahuila. Las brigadas con materiales peligrosos requieren <a href=\"/trajes/hazmat/\">trajes Hazmat</a> seleccionados para su escenario. En corporaciones que reportan incendios forestales, el equipo forestal es el indicado; para rescate vehicular se deben considerar partidas de extricación.",
+  "LORICA cotiza por partida para municipios, patronatos y brigadas de Coahuila. Entrega especificaciones técnicas para compra directa o licitación, emite CFDI 4.0, no condiciona una compra mínima y coordina el envío al estado. La propuesta puede incorporar <a href=\"/botas/\">botas para bombero</a> y protección complementaria conforme al riesgo atendido."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Coahuila?",
-   "a": "El directorio registra 39 estaciones de bomberos en Coahuila, distribuidas en 20 municipios. Incluye 28 referencias municipales, 4 industriales, 3 de aeropuerto, 2 voluntarias y 2 de CFE, con 3 centrales y 9 subestaciones. No afirma reunir todas las sedes estatales; agrega registros confirmados con fuente pública."
+   "q": "¿Cuántas estaciones de bomberos hay en Coahuila y dónde están?",
+   "a": "Hay 39 estaciones localizadas en 20 municipios de Coahuila. Torreón concentra 9, mientras Nava y Saltillo tienen 4 cada uno. También hay corporaciones en Monclova, Ramos Arizpe, Múzquiz, Acuña, Piedras Negras y otros municipios."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Coahuila?",
-   "a": "Torreón concentra 9 fichas; Nava y Saltillo tienen 4 cada uno, Monclova y Ramos Arizpe 3, y Múzquiz 2. Los otros municipios registrados cuentan con una referencia. Para localizar bomberos en Saltillo, usa el índice municipal y verifica el tipo de corporación antes de contactar la sede deseada."
+   "q": "¿Quién opera los cuerpos de bomberos en Coahuila?",
+   "a": "En Coahuila hay cuerpos municipales, brigadas industriales, servicios aeroportuarios, corporaciones voluntarias y unidades de CFE. Bomberos Torreón, Bomberos Saltillo y Bomberos de Monclova son parte de la cobertura municipal identificada en el estado."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Coahuila?",
-   "a": "En Coahuila hay estaciones municipales, industriales, de aeropuerto, voluntarias y de CFE. Entre las corporaciones registradas están Bomberos Torreón, Bomberos Saltillo, la Brigada de Emergencias Met-Mex Peñoles y el SSEI del Aeropuerto Internacional Plan de Guadalupe. La ficha identifica el tipo de operador y rol de la sede."
+   "q": "¿Cómo contactar a una estación de bomberos en Coahuila para una gestión?",
+   "a": "Busca la estación de Coahuila por municipio y utiliza el teléfono oficial si aparece publicado para comunicaciones institucionales, dictámenes o donativos. Ante cualquier emergencia, marca al 911 para solicitar ayuda por el canal de respuesta inmediata."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Coahuila?",
-   "a": "Llama al 911 ante cualquier emergencia en Coahuila. Los teléfonos incorporados en las fichas tienen fuente pública y sirven para trámites, visitas, capacitación o donaciones, pero no para solicitar auxilio. Si necesitas una gestión no urgente con bomberos en Coahuila, selecciona antes la corporación y estación que corresponda."
+   "q": "¿Qué riesgos atienden los bomberos en Coahuila?",
+   "a": "Los bomberos en Coahuila atienden principalmente incendios estructurales. También se declaran atención prehospitalaria, incendios forestales, rescate vehicular, fugas de gas, materiales peligrosos, espacios confinados y salvamento aeroportuario, según la estación o brigada."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Coahuila?",
-   "a": "Para bomberos en Coahuila cotizamos trajes y equipo según los riesgos de incendio, rescate y materiales peligrosos que correspondan. La propuesta incluye ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Puedes pedir alternativas para protección estructural, forestal, extricación o uso industrial."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Coahuila?",
+   "a": "Una corporación de Coahuila puede adquirir equipo mediante licitación o compra directa. LORICA entrega especificaciones técnicas por partida, factura CFDI 4.0, no fija compra mínima y organiza el envío al estado para la corporación solicitante."
   }
  ]
 }

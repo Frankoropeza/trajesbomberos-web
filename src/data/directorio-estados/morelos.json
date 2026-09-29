@@ -1,45 +1,39 @@
 {
- "lead": "El directorio de estaciones de bomberos en Morelos registra 15 fichas distribuidas en 11 municipios. Cada una reúne ubicación, corporación responsable y fuente pública, para ubicar bomberos en Morelos con información consultable.",
- "descRight": [
-  "La red registrada en Morelos es principalmente municipal: 11 de 15 fichas corresponden a ese tipo. También aparecen una corporación estatal, una industrial, una de voluntarios y una aeroportuaria. Cuernavaca, Jiutepec, Jojutla de Zaragoza y Temixco concentran 2 estaciones cada uno; los demás municipios incluidos tienen una ficha.",
-  "Consulta el listado por municipio para identificar la corporación y revisar los datos disponibles. Las fichas señalan teléfono cuando existe fuente pública, dirección y referencia de mapa. Si necesitas atención inmediata, llama al 911; los contactos publicados sirven para trámites, visitas, capacitación o donaciones."
- ],
- "municipiosDuo": [
-  "Cuernavaca, Jiutepec, Jojutla de Zaragoza y Temixco reúnen 2 estaciones registradas cada uno. Esa concentración permite localizar con rapidez opciones de bomberos en Cuernavaca y en esos municipios, sin perder de vista las fichas individuales de Ayala, Cuautla, Emiliano Zapata y otras localidades.",
-  "El resto de la cobertura se reparte con una estación por municipio en Ayala, Cuautla, Emiliano Zapata, Tepoztlán, Xochitepec, Yautepec de Zaragoza y Zacatepec de Hidalgo. El índice facilita navegar por cada zona y deja visible dónde hay una sola ficha registrada para su consulta directa."
+ "lead": "En Morelos operan 15 estaciones de bomberos dentro de 11 municipios. Cuernavaca, Jiutepec, Jojutla de Zaragoza y Temixco tienen dos sedes cada uno. Revisa dirección, ubicación, teléfono oficial cuando existe y la corporación que presta el servicio.",
+ "panorama": [
+  "Las áreas municipales de protección civil sostienen la operación de bomberos en Morelos. Participan también la Coordinación Estatal de Protección Civil de Morelos, un cuerpo voluntario, el Centro de Control de Emergencias CIVAC y el CREI aeroportuario. Así coinciden atención urbana, industrial y aeroportuaria.",
+  "Cuernavaca, Jiutepec, Jojutla de Zaragoza y Temixco concentran dos estaciones cada uno. Al coordinar equipo para bomberos en Morelos, la cercanía entre corporaciones no implica que requieran la misma protección. Los servicios forestales deben valorarse junto con incendio estructural y rescate vehicular."
  ],
  "estacionesDuo": [
-  "Cada resultado identifica si la corporación es municipal, estatal, industrial, voluntaria o aeroportuaria. También indica el rol cuando está disponible y separa dirección, teléfono con fuente y ubicación exacta o aproximada. Entre las corporaciones listadas están la Coordinación Estatal de Protección Civil de Morelos y SEPRAC Cuernavaca.",
-  "La lectura de una ficha empieza por municipio y nombre de la estación; después permite distinguir los datos con respaldo público de los que aún requieren precisión. Bomberos y Paramédicos Voluntarios del Estado de Morelos A.C. y el CREI Aeropuerto Internacional General Mariano Matamoros figuran como servicios de naturaleza distinta dentro del directorio."
+  "La Dirección de Bomberos, Rescate y Urgencias Médicas de Cuernavaca, la Coordinación de Protección Civil y Bomberos de Jiutepec y el Heroico Cuerpo de Bomberos de Jojutla distinguen la operación municipal. Se suman CEPCM, PROCIVAC y el cuerpo voluntario estatal. El listado incluye teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Los servicios declarados con mayor presencia son incendios estructurales en 15 fichas y atención prehospitalaria en 14; el rescate vehicular aparece en 10 y los incendios forestales en 8. De las estaciones de bomberos en Morelos, 8 incluyen teléfono respaldado por una fuente pública, 8 dirección y 6 ubicación exacta.",
-  "Además de la atención a incendios, el registro contempla fugas de gas y protección civil en 4 fichas, así como espacios confinados, enjambres y fauna en 2. Hay referencias puntuales a rescate acuático, materiales peligrosos y salvamento aeroportuario, por lo que conviene revisar el servicio declarado de cada corporación."
+  "Las 15 estaciones declaran incendios estructurales y 14 atención prehospitalaria; 10 reportan rescate vehicular. Ocho contemplan incendios forestales, útil para planear protección adicional a la estructural. Hay fugas de gas, espacios confinados, rescate acuático, materiales peligrosos y salvamento aeroportuario."
  ],
  "equipoDuo": [
-  "La presencia de incendios estructurales, rescate vehicular e incendios forestales orienta la selección hacia <a href=\"/trajes/estructural/\">trajes estructurales para bomberos</a>, protección forestal y herramientas de extricación. Para materiales peligrosos, se requiere valorar la protección compatible con el riesgo declarado antes de equipar una brigada.",
-  "También pueden requerirse <a href=\"/trajes/forestal/\">trajes forestales</a>, equipo de rescate, guantes y accesorios para atención prehospitalaria. La definición final depende del uso operativo y de la compatibilidad entre prendas. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Morelos."
+  "La respuesta estructural demanda prendas adecuadas para fuego y calor. La presencia de incendio forestal en diversas corporaciones hace necesarios <a href=\"/trajes/forestal/\">trajes forestales</a>; el rescate vehicular requiere ropa de extricación. Para espacios confinados o materiales peligrosos se debe elegir protección Hazmat y respiratoria conforme al protocolo de la corporación.",
+  "LORICA organiza la especificación técnica por partida para compras directas o licitaciones de corporaciones en Morelos. Emite CFDI 4.0, no exige compra mínima y realiza el envío al estado. En una misma cotización pueden ir <a href=\"/guantes/\">guantes para bomberos</a>, cascos, botas y equipo respiratorio."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Morelos?",
-   "a": "El directorio registra 15 estaciones de bomberos en Morelos, distribuidas en 11 municipios. La cifra corresponde a las fichas con referencia pública disponibles en esta consulta y puede crecer conforme se confirmen nuevas estaciones y sus datos de contacto."
+   "q": "¿Cuántas estaciones de bomberos hay en Morelos y dónde están?",
+   "a": "Hay 15 estaciones de bomberos localizadas en 11 municipios de Morelos. Cuernavaca, Jiutepec, Jojutla de Zaragoza y Temixco cuentan con 2 cada uno. También hay corporaciones en Ayala, Cuautla, Emiliano Zapata, Tepoztlán, Xochitepec, Yautepec de Zaragoza y Zacatepec de Hidalgo."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Morelos?",
-   "a": "Cuernavaca, Jiutepec, Jojutla de Zaragoza y Temixco tienen 2 estaciones registradas cada uno. Para buscar bomberos en Cuernavaca, el índice muestra tanto la corporación municipal como la referencia estatal, con los campos de ubicación y contacto que tenga fuente pública."
+   "q": "¿Quién opera los cuerpos de bomberos en Morelos?",
+   "a": "Los bomberos en Morelos son operados sobre todo por direcciones municipales de protección civil y bomberos. También intervienen la Coordinación Estatal de Protección Civil de Morelos, un cuerpo voluntario, un centro de control industrial y el cuerpo de rescate y extinción de incendios aeroportuario."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Morelos?",
-   "a": "En el directorio predominan 11 fichas municipales. También se incluyen una estación estatal, una industrial, una de voluntarios y una aeroportuaria. Cada ficha identifica el tipo de corporación para que la consulta distinga claramente el servicio y su ámbito de operación."
+   "q": "¿Cómo contactar a una estación de bomberos en Morelos para una gestión?",
+   "a": "Localiza la sede por municipio y, si está publicado, usa su teléfono oficial para capacitación, donaciones o dictámenes. Dirige la comunicación a la corporación operadora. Ante una emergencia en Morelos llama al 911, el canal indicado para solicitar atención."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Morelos?",
-   "a": "Ante una emergencia en Morelos marca 911. Los teléfonos publicados en las fichas no sustituyen ese número: son referencias para trámites, visitas, capacitación o donaciones cuando existe una fuente pública que los respalda."
+   "q": "¿Qué riesgos atienden los bomberos en Morelos?",
+   "a": "Los bomberos en Morelos declaran incendios estructurales, atención prehospitalaria y rescate vehicular. Son frecuentes los incendios forestales; también se reportan fugas de gas, espacios confinados, rescate acuático, materiales peligrosos y salvamento aeroportuario según la corporación."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Morelos?",
-   "a": "Para bomberos en Morelos cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La selección puede ajustarse al servicio declarado, como incendios estructurales, atención forestal, rescate vehicular o materiales peligrosos."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Morelos?",
+   "a": "Una corporación de bomberos en Morelos puede comprar equipo por licitación o compra directa. LORICA integra la especificación técnica por partida, emite CFDI 4.0, no impone compra mínima y coordina el envío al estado de la dotación solicitada."
   }
  ]
 }

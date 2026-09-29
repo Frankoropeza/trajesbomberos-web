@@ -210,8 +210,8 @@ export function descEstado(r: ResumenEstado): string {
   const otras = resto === 1 ? '1 de otra corporación' : `${resto} de otras corporaciones`;
   const partes = resto > 0 ? `${tipos.join(', ')} y ${otras}` : tipos.join(' y ');
   // Los totales ya van en la cabecera de la card: aquí solo quién las opera.
-  // Ubicación y fuente existen en el 100 % de las fichas; el teléfono no (no se promete).
-  return `${partes}. Cada ficha con ubicación y fuente pública citada.`;
+  // Ubicación y fuente existen en el 100 % de las estaciones; el teléfono no (no se promete).
+  return `${partes}, cada una con su ubicación y la corporación que la opera.`;
 }
 
 export const pct = (n: number, d: number) => `${Math.round((n / d) * 100)} %`;

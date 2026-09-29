@@ -1,45 +1,39 @@
 {
- "lead": "Esta guía reúne 7 estaciones de bomberos en Nayarit ubicadas en 5 municipios. Las fichas integran corporación, ubicación y fuente pública para facilitar la búsqueda de bomberos en Nayarit, sin presentar el registro como un inventario total.",
- "descRight": [
-  "Nayarit combina 3 estaciones estatales, 3 municipales y una aeroportuaria. Tepic concentra 3 fichas, incluidas referencias estatal, municipal y de aeropuerto; Acaponeta, Bahía de Banderas, Compostela y San Blas aportan una cada uno. El registro también identifica 2 subestaciones, un dato útil para distinguir puntos regionales.",
-  "Elige un municipio en el índice para abrir su estación y revisar los campos disponibles. Hay teléfono respaldado en 3 fichas, mientras que dirección y mapa dependen de la fuente de cada caso. El listado facilita contrastar esos datos antes de una gestión. Para una situación de emergencia marca 911, no los teléfonos de consulta publicados."
- ],
- "municipiosDuo": [
-  "Tepic concentra 3 de las 7 estaciones registradas, por lo que es el principal punto de consulta para bomberos en Tepic. Ahí aparecen una referencia estatal, una municipal y el CREI Aeropuerto Internacional de Tepic-Riviera Nayarit, con su información separada dentro del listado.",
-  "Fuera de Tepic, el directorio incorpora una estación en Acaponeta, Bahía de Banderas, Compostela y San Blas. Esta distribución muestra una cobertura registrada más puntual en esos municipios; cada entrada se conserva en el índice para consultar datos y fuente sin extrapolar disponibilidad."
+ "lead": "Por ahora tenemos localizadas 7 estaciones de bomberos en 5 municipios de Nayarit, con mayor presencia en Tepic. Consulta dirección, teléfono oficial cuando existe, ubicación y corporación operadora para comunicarte con el servicio adecuado.",
+ "panorama": [
+  "En Nayarit el servicio reúne bases estatales y corporaciones municipales. Tepic concentra la Dirección General del Estado, Bomberos Nayarit y la dirección municipal; también hay presencia municipal en Acaponeta, Bahía de Banderas, Compostela y San Blas, además del CREI del aeropuerto. Esta organización combina cobertura estatal, atención local y una operación aeroportuaria especializada.",
+  "Tepic reúne 3 estaciones y los otros municipios tienen una cada uno. Para equipar bomberos en Nayarit, vale la pena separar el requerimiento de las bases estatales del de los cuerpos municipales de costa. El fuego forestal se declara ampliamente y el rescate acuático aparece en algunas corporaciones, de modo que la compra debe partir de sus intervenciones reales."
  ],
  "estacionesDuo": [
-  "Las fichas distinguen si se trata de un servicio estatal, municipal o aeroportuario y muestran el rol de subestación cuando aplica. Dirección, teléfono con fuente y precisión de ubicación se presentan por separado. Bomberos Nayarit — Base Regional Acaponeta y la Dirección de Protección Civil y Bomberos de Bahía de Banderas son ejemplos del listado.",
-  "Al abrir una estación conviene confirmar primero municipio y corporación, y después los datos de localización disponibles. La Dirección General de Protección Ciudadana y Bomberos del Estado de Nayarit y el CREI Aeropuerto Internacional de Tepic-Riviera Nayarit responden a esquemas distintos, señalados expresamente en cada ficha."
+  "Bomberos Nayarit y la Dirección General de Protección Ciudadana y Bomberos del Estado de Nayarit operan en Tepic junto con la Dirección municipal. Bahía de Banderas y Compostela cuentan con sus propias direcciones. Las estaciones se agrupan por municipio y muestran teléfono oficial cuando fue publicado para facilitar una gestión dirigida."
  ],
  "coberturaDuo": [
-  "Incendios estructurales y atención prehospitalaria están declarados en las 7 fichas de Nayarit. Los incendios forestales aparecen en 6 y el rescate vehicular en 5, con menciones adicionales de materiales peligrosos. De las 7 estaciones, 3 tienen teléfono con fuente, 3 dirección y 2 ubicación exacta.",
-  "El directorio también registra rescate acuático y atención a enjambres y fauna en 2 casos, además de salvamento aeroportuario, rescate en altura y fugas de gas en una ficha cada uno. Estas etiquetas describen servicios declarados, no una garantía de disponibilidad ante un evento específico."
+  "Las 7 estaciones reportan incendios estructurales y atención prehospitalaria; 6 también declaran incendios forestales. El rescate vehicular está presente en 5 corporaciones, y algunas suman rescate acuático o materiales peligrosos. El CREI incorpora salvamento aeroportuario, por lo que la dotación debe diferenciarse."
  ],
  "equipoDuo": [
-  "Para los servicios registrados en Nayarit, conviene considerar <a href=\"/trajes/forestal/\">trajes forestales para brigadistas</a> junto con protección para incendios estructurales y rescate vehicular. Las menciones de materiales peligrosos requieren revisar el escenario antes de definir ropa y accesorios de protección.",
-  "El rescate acuático, de altura y el salvamento aeroportuario piden configuraciones específicas, desde <a href=\"/rescate/\">equipo para rescate</a> hasta protección de aproximación. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Nayarit."
+  "La protección estructural es necesaria para la intervención urbana, mientras el fuego forestal hace prioritarios <a href=\"/trajes/forestal/\">trajes forestales</a>. Las corporaciones con rescate vehicular requieren prendas de extricación. Cuando se atienden materiales peligrosos, el mando debe definir <a href=\"/trajes/hazmat/\">protección Hazmat</a>; para el CREI, la protección de aproximación responde a su operación aeroportuaria.",
+  "LORICA prepara especificación técnica por partida para una compra directa o un proceso de licitación y acompaña el expediente requerido. Emite CFDI 4.0, no establece compra mínima y envía a Nayarit. Una dotación puede complementarse con <a href=\"/mangueras-y-accesorios/\">mangueras y accesorios</a>, cascos, botas y guantes elegidos por riesgo."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Nayarit?",
-   "a": "El directorio registra 7 estaciones de bomberos en Nayarit, localizadas en 5 municipios. Es una relación de fichas con fuente pública, no una afirmación sobre todas las estaciones del estado; la cifra aumenta si se confirman nuevas referencias y sus datos."
+   "q": "¿Cuántas estaciones de bomberos hay en Nayarit y dónde están?",
+   "a": "Por ahora tenemos localizadas 7 estaciones de bomberos en 5 municipios de Nayarit. Tepic concentra 3; Acaponeta, Bahía de Banderas, Compostela y San Blas cuentan con una estación cada uno. Si conoces una corporación que falta, escríbenos para incorporarla."
   },
   {
-   "q": "¿Dónde hay más estaciones y bomberos en Nayarit?",
-   "a": "Tepic reúne 3 estaciones registradas y es el municipio con mayor concentración de la guía. Para encontrar bomberos en Tepic se muestran la referencia estatal, la municipal y la aeroportuaria; los otros municipios incluidos tienen una ficha cada uno."
+   "q": "¿Quién opera los cuerpos de bomberos en Nayarit?",
+   "a": "Los bomberos en Nayarit son atendidos por corporaciones estatales y municipales. En Tepic participan Bomberos Nayarit, la Dirección General de Protección Ciudadana y Bomberos del Estado y la dirección municipal. También hay servicios municipales y un cuerpo de rescate y extinción aeroportuario."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Nayarit?",
-   "a": "La lista incluye 3 estaciones estatales, 3 municipales y una aeroportuaria. Esa clasificación aparece en cada ficha para diferenciar corporaciones como Bomberos Nayarit, servicios municipales y la atención especializada del aeropuerto, sin mezclar sus alcances."
+   "q": "¿Cómo contactar a una estación de bomberos en Nayarit para una gestión?",
+   "a": "Ubica la estación en su municipio y utiliza el teléfono oficial cuando esté publicado para solicitar capacitación, proponer una donación o pedir un dictamen. Comunícate con la corporación operadora. Para una emergencia llama al 911, que no debe sustituirse por un contacto administrativo."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Nayarit?",
-   "a": "En una emergencia en Nayarit llama al 911. Los teléfonos de las fichas se publican como referencias para trámites, visitas, capacitación o donaciones y no reemplazan la vía de atención inmediata."
+   "q": "¿Qué riesgos atienden los bomberos en Nayarit?",
+   "a": "Los bomberos en Nayarit declaran incendios estructurales, atención prehospitalaria e incendios forestales. También hay rescate vehicular, materiales peligrosos, rescate acuático, fugas de gas y salvamento aeroportuario. Cada corporación atiende una combinación distinta de estos servicios."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Nayarit?",
-   "a": "Para bomberos en Nayarit cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Podemos orientar la cotización a riesgos declarados, como incendio forestal, rescate vehicular, materiales peligrosos o salvamento aeroportuario."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Nayarit?",
+   "a": "Una corporación de bomberos en Nayarit puede adquirir equipo por licitación o compra directa. LORICA entrega especificación técnica por partida y el expediente de soporte, emite CFDI 4.0, no pide compra mínima y coordina envío al estado según sus necesidades."
   }
  ]
 }

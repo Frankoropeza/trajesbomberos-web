@@ -1,45 +1,39 @@
 {
- "lead": "Localiza 13 estaciones de bomberos en Chiapas, registradas en 11 municipios. Cada ficha concentra corporación, rol de la sede, dirección o mapa, teléfono si existe fuente pública y el nivel de precisión de la ubicación para apoyar una búsqueda informada.",
- "descRight": [
-  "Chiapas reúne 8 registros estatales, 2 municipales, 2 de aeropuerto y uno de PEMEX. Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez tienen 2 fichas cada uno; los otros 9 municipios, una. El directorio registra una central y 6 subestaciones, asociadas principalmente al Instituto de Bomberos del Estado de Chiapas.",
-  "Consulta el índice por municipio para ubicar bomberos en Chiapas y abre cada sede para consultar corporación, mapa y datos de contacto disponibles. El teléfono aparece cuando hay fuente pública. Si existe una emergencia, marca 911; los contactos publicados son para trámites, visitas, capacitación o donaciones y no sustituyen el servicio de auxilio."
- ],
- "municipiosDuo": [
-  "Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez concentran 2 estaciones cada uno. Arriaga, Cacahoatán, Chiapa de Corzo, Cintalapa, Ocosingo, Reforma, San Cristóbal de las Casas, Venustiano Carranza y Villaflores registran una ficha. En Tuxtla Gutiérrez, el índice distingue la estación de bomberos de la Dirección General del IBECH; el aeropuerto que sirve a la capital está en Chiapa de Corzo.",
-  "El directorio registra 13 sedes en 11 municipios y una parte importante pertenece a la red estatal. Esta es una cobertura documentada, no una afirmación de que estén todas las estaciones de Chiapas. Las referencias se incorporan cuando existe fuente pública y el mapa muestra si el punto es exacto o aproximado."
+ "lead": "Chiapas reúne 13 estaciones de bomberos en 11 municipios, con presencia principal en Tuxtla Gutiérrez y Tapachula. Encuentra dirección, teléfono oficial cuando existe, ubicación y la corporación responsable para ubicar bomberos en Chiapas.",
+ "panorama": [
+  "El Instituto de Bomberos del Estado de Chiapas articula buena parte de la cobertura mediante una dirección general y subestaciones en varios municipios. A su lado operan cuerpos municipales, servicios aeroportuarios y el Cuerpo Contra Incendio de PEMEX en Reforma. Esta combinación permite reconocer cuándo el contacto corresponde a una corporación estatal, municipal o a una instalación con atención especializada.",
+  "Tuxtla Gutiérrez y Tapachula concentran 2 estaciones cada uno, pero la red estatal se extiende hacia Arriaga, Cintalapa, San Cristóbal de las Casas, Villaflores y otros municipios. Si coordinas equipamiento, vale la pena separar las necesidades de las subestaciones forestales de las instalaciones aeroportuarias y de la operación con fugas de gas declarada en Reforma."
  ],
  "estacionesDuo": [
-  "Cada ficha indica si la corporación es estatal, municipal, de aeropuerto o PEMEX, además de señalar central, subestación o sede única. Se incluyen el Instituto de Bomberos del Estado de Chiapas y el Heroico Cuerpo de Bomberos de Ocosingo. La clasificación permite interpretar si una estación integra una red o representa un punto independiente.",
-  "Antes de acudir, revisa si la ficha incorpora dirección, teléfono y ubicación exacta. Esos datos se publican conforme a la fuente disponible y no tienen el mismo grado de detalle en todas las sedes. Los contactos facilitan gestiones no urgentes; ante riesgo inmediato, utiliza 911 para solicitar a bomberos en Chiapas."
+  "Las estaciones de bomberos en Chiapas se agrupan por municipio. Destacan el Instituto de Bomberos del Estado de Chiapas, el Centro Regional de Protección Civil y Bomberos de Arriaga y los cuerpos de Cacahoatán y Ocosingo. El teléfono oficial aparece cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Las 13 fichas declaran incendios estructurales. Incendios forestales aparece en 5, y salvamento aeroportuario y capacitación en 2 cada uno. Fugas de gas, rescate acuático, enjambres y fauna, rescate vehicular y atención prehospitalaria se reportan en una ficha. Son servicios publicados, no una promesa de atención uniforme.",
-  "Hay teléfono en 6 registros, dirección en 9 y ubicación exacta en 2. El directorio de estaciones de bomberos en Chiapas identifica 7 fichas de confianza alta. Consultar estos indicadores ayuda a anticipar qué sedes tienen datos de localización completos y cuáles conservan una referencia más general."
+  "Los incendios estructurales están declarados en las 13 estaciones localizadas. Los forestales aparecen en 5, especialmente en la red estatal, y hay salvamento aeroportuario en 2 servicios. También figuran rescate vehicular, acuático y fugas de gas, por lo que cada corporación requiere equipo propio."
  ],
  "equipoDuo": [
-  "Los servicios declarados contemplan incendios estructurales y forestales, rescate vehicular, atención prehospitalaria y salvamento aeroportuario. La evaluación puede requerir <a href=\"/trajes/forestal/\">trajes para incendio forestal</a> o <a href=\"/trajes/aproximacion/\">protección de aproximación</a> en escenarios aeroportuarios, siempre conforme al riesgo y procedimiento de uso.",
-  "Las maniobras de rescate vehicular requieren compatibilidad entre protección, movilidad y herramientas. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a Chiapas. La recomendación se construye a partir del servicio declarado y de las necesidades operativas que defina la corporación solicitante."
+  "Para los bomberos en Chiapas, la protección estructural se cubre con <a href=\"/trajes/estructural/\">trajes estructurales</a>. Las estaciones que declaran incendios forestales necesitan <a href=\"/trajes/forestal/\">trajes forestales</a> y un esquema distinto de protección. El servicio aeroportuario requiere equipo de aproximación, mientras la atención a fugas de gas demanda una selección compatible con ese riesgo.",
+  "LORICA cotiza para corporaciones de Chiapas por partida, con especificaciones técnicas y documentos para integrar expediente de licitación o compra directa. La venta no tiene compra mínima, se factura con CFDI 4.0 y el envío llega al estado. También se pueden sumar <a href=\"/equipo-de-respiracion-autonoma/\">equipos de respiración autónoma</a> según la intervención prevista."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Chiapas?",
-   "a": "El directorio registra 13 estaciones de bomberos en Chiapas, repartidas en 11 municipios. Incluye 8 registros estatales, 2 municipales, 2 de aeropuerto y uno de PEMEX, con una central y 6 subestaciones. No es un inventario completo: la cifra aumenta cuando se pueden confirmar nuevas estaciones con fuente pública."
+   "q": "¿Cuántas estaciones de bomberos hay en Chiapas y dónde están?",
+   "a": "Hay 13 estaciones localizadas en 11 municipios de Chiapas. Tuxtla Gutiérrez y Tapachula tienen 2 cada uno; también aparecen estaciones en Arriaga, Cintalapa, Reforma, San Cristóbal de las Casas, Venustiano Carranza y Villaflores."
   },
   {
-   "q": "¿Dónde hay más estaciones de bomberos en Chiapas?",
-   "a": "Tapachula de Córdova y Ordóñez y Tuxtla Gutiérrez registran 2 fichas cada uno; los otros 9 municipios listados tienen una. Para buscar bomberos en Tuxtla Gutiérrez, consulta el índice municipal: ahí aparecen la estación del IBECH y su Dirección General; el SSEI del aeropuerto que sirve a la capital figura en Chiapa de Corzo."
+   "q": "¿Quién opera los cuerpos de bomberos en Chiapas?",
+   "a": "En Chiapas opera principalmente el Instituto de Bomberos del Estado de Chiapas mediante dirección general y subestaciones. También hay cuerpos municipales, servicios de salvamento aeroportuario y una corporación contra incendio de PEMEX en Reforma."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Chiapas?",
-   "a": "En Chiapas predominan los registros estatales, aunque el directorio también incluye corporaciones municipales, de aeropuerto y PEMEX. Entre ellas están el Instituto de Bomberos del Estado de Chiapas, el Heroico Cuerpo de Bomberos de Cacahoatán y el SSEI del Aeropuerto Internacional de Tapachula. La ficha muestra el tipo de cada operación."
+   "q": "¿Cómo contactar a una estación de bomberos en Chiapas para una gestión?",
+   "a": "Localiza la estación de Chiapas por municipio y utiliza el teléfono oficial donde se encuentre publicado para asuntos institucionales, dictámenes o donativos. Si se trata de una emergencia, llama al 911 para activar la atención inmediata."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Chiapas?",
-   "a": "Marca 911 ante una emergencia en Chiapas. Los teléfonos de algunas fichas cuentan con fuente pública, pero son para trámites, visitas, capacitación o donaciones; no para activar una respuesta de auxilio. Para asuntos administrativos con bomberos en Chiapas, identifica la corporación y confirma el dato publicado antes de comunicarte."
+   "q": "¿Qué riesgos atienden los bomberos en Chiapas?",
+   "a": "Los bomberos en Chiapas declaran incendios estructurales en todas las estaciones localizadas. Según la corporación, también atienden incendios forestales, salvamento aeroportuario, rescate vehicular o acuático, fugas de gas, atención prehospitalaria y fauna."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Chiapas?",
-   "a": "Cotizamos trajes y equipo para bomberos en Chiapas con base en el servicio que se atenderá. Incluimos ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Se pueden solicitar alternativas para incendios estructurales, forestales, rescate vehicular o atención en entorno aeroportuario."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Chiapas?",
+   "a": "Una corporación de Chiapas puede adquirir equipo por licitación o compra directa con LORICA. Se entregan especificaciones técnicas por partida y CFDI 4.0, no hay compra mínima y el envío se coordina al municipio o instalación indicada."
   }
  ]
 }

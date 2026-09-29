@@ -1,45 +1,39 @@
 {
- "lead": "El directorio registra 7 estaciones de bomberos en Hidalgo, distribuidas en 5 municipios. Las fichas muestran corporación, tipo de servicio, ubicación y fuente; cuando está disponible, agregan dirección y teléfono para consulta institucional no urgente.",
- "descRight": [
-  "En Hidalgo hay 3 estaciones municipales, 2 voluntarias, una estatal y una de PEMEX dentro de las 7 fichas. Pachuca de Soto y Tula de Allende concentran 2 registros cada uno. No se identifican centrales ni subestaciones, por lo que el listado presenta puntos de servicio individuales y facilita reconocer su carácter institucional.",
-  "El índice ordena las estaciones de bomberos en Hidalgo por municipio y cada ficha aclara el tipo de corporación. Revisa teléfono, dirección y mapa solo si aparecen publicados con fuente. En caso de emergencia marca 911; los contactos de ficha son para trámites, visitas, capacitación o donaciones y no sustituyen la atención urgente."
- ],
- "municipiosDuo": [
-  "Pachuca de Soto registra 2 estaciones y Tula de Allende otras 2, incluyendo servicios de naturaleza distinta. Para buscar bomberos en Pachuca de Soto, el índice ayuda a separar la unidad municipal de la instancia estatal, sin confundir la función declarada en cada registro.",
-  "Huejutla de Reyes, Ixmiquilpan y Tulancingo de Bravo cuentan con 1 ficha cada uno. El directorio cubre 5 municipios y registra 7 estaciones, una relación que puede crecer al confirmarse nuevas referencias con fuente pública. No debe interpretarse como una lista completa del estado."
+ "lead": "Por ahora tenemos localizadas 7 estaciones de bomberos en 5 municipios de Hidalgo, con presencia doble en Pachuca de Soto y Tula de Allende. Encontrarás dirección cuando está publicada, teléfono oficial, ubicación y quién opera cada corporación.",
+ "panorama": [
+  "El servicio de bomberos en Hidalgo combina corporaciones municipales con cuerpos voluntarios, una instancia estatal y una brigada de emergencias PEMEX en Tula de Allende. Pachuca de Soto reúne la Dirección municipal y la Subsecretaría estatal; en Huejutla de Reyes y Tulancingo de Bravo participan organizaciones voluntarias. Esta composición requiere que cada compra parta del riesgo y función de la corporación.",
+  "Pachuca de Soto y Tula de Allende concentran 2 estaciones cada uno; las demás están en Huejutla de Reyes, Ixmiquilpan y Tulancingo de Bravo. Para una coordinación estatal, la dispersión vuelve relevante planear entregas por corporación. En Tula coinciden atención municipal y una brigada PEMEX, con requerimientos que no son equivalentes."
  ],
  "estacionesDuo": [
-  "Las fichas permiten identificar si el servicio es municipal, voluntario, estatal o de PEMEX, y muestran el rol de sede única cuando corresponde. Entre las corporaciones registradas están la Dirección de Protección Civil y Bomberos de Tula de Allende y Pro Bomberos Huejutla de Reyes, A.C.",
-  "Hay teléfono respaldado en 3 fichas y dirección en 2; ninguna ubicación es exacta. Por ello, conviene usar los datos como referencia y confirmar el canal institucional antes de trasladarse. Cada ficha señala la información localizada para que la búsqueda de bomberos en Hidalgo sea clara y verificable."
+  "La Dirección de Protección Civil, Bomberos y Gestión Integral de Riesgos de Pachuca de Soto convive con la Subsecretaría estatal. En Tula de Allende están la Dirección municipal y la Brigada de Emergencias PEMEX Refinería Miguel Hidalgo. Las estaciones se agrupan por municipio y muestran teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Los incendios estructurales se declaran en las 7 fichas; rescate vehicular y atención prehospitalaria aparecen en 5. Materiales peligrosos y protección civil figuran en 2 registros, mientras que espacios confinados, incendios forestales, capacitación y fugas de gas tienen presencia menor.",
-  "Solo 3 fichas incluyen teléfono y 2 dirección; no hay ubicaciones exactas registradas. Estas cifras describen la documentación disponible, no la operación de las corporaciones. Para una urgencia no es necesario localizar una ficha: el número de emergencia para Hidalgo es 911."
+  "El incendio estructural está declarado en las 7 estaciones, mientras 5 incluyen rescate vehicular y atención prehospitalaria. Pachuca y la brigada PEMEX de Tula reportan materiales peligrosos; esta última contempla fugas de gas. Hay espacios confinados y fuego forestal, riesgos que requieren protección por tarea."
  ],
  "equipoDuo": [
-  "El incendio estructural, rescate vehicular y materiales peligrosos declarados requieren protección diferenciada. Los <a href=\"/trajes/estructural/\">trajes estructurales</a> corresponden al fuego en edificaciones, mientras que <a href=\"/trajes/hazmat/\">trajes Hazmat</a> apoyan escenarios con sustancias. El rescate puede requerir herramientas específicas.",
-  "Cuando se atienden incendios forestales o espacios confinados, la selección debe definirse por riesgo y ficha técnica. Cotizamos equipo para bomberos en Hidalgo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado."
+  "La protección para incendio estructural debe cubrir a toda corporación. El rescate vehicular pide <a href=\"/trajes/extricacion/\">ropa de extricación</a>, y las intervenciones de fuego forestal justifican <a href=\"/trajes/forestal/\">trajes forestales</a>. Para materiales peligrosos, fugas de gas o espacios confinados, la selección debe incluir protección Hazmat y respiratoria adecuada al procedimiento de la brigada.",
+  "LORICA entrega una especificación técnica por partida para integrar licitación o compra directa y respalda el expediente solicitado. La corporación recibe CFDI 4.0, sin compra mínima, con envío a Hidalgo. También puede solicitar <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> y complementos definidos para su riesgo operativo."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Hidalgo?",
-   "a": "El directorio registra 7 estaciones de bomberos en Hidalgo, ubicadas en 5 municipios. La cifra integra fichas con corporación identificada y puede aumentar al confirmar nuevas estaciones con fuente pública. Cada registro muestra tipo, ubicación disponible y datos de contacto cuando fueron localizados en la información pública."
+   "q": "¿Cuántas estaciones de bomberos hay en Hidalgo y dónde están?",
+   "a": "Por ahora están localizadas 7 estaciones de bomberos en 5 municipios de Hidalgo. Pachuca de Soto y Tula de Allende concentran 2 cada uno; también hay corporaciones en Huejutla de Reyes, Ixmiquilpan y Tulancingo de Bravo. Si conoces una estación que falta, escríbenos."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Hidalgo?",
-   "a": "Pachuca de Soto y Tula de Allende concentran 2 estaciones registradas cada uno. Para ubicar bomberos en Pachuca de Soto o en cualquier otro municipio, consulta el índice y revisa el tipo de corporación. Las demás fichas se distribuyen entre Huejutla de Reyes, Ixmiquilpan y Tulancingo de Bravo."
+   "q": "¿Quién opera los cuerpos de bomberos en Hidalgo?",
+   "a": "Los bomberos en Hidalgo incluyen corporaciones municipales de Pachuca, Tula e Ixmiquilpan, cuerpos voluntarios en Huejutla de Reyes y Tulancingo de Bravo, una instancia estatal y una brigada de emergencias PEMEX en Tula de Allende."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Hidalgo?",
-   "a": "Las estaciones registradas en Hidalgo incluyen corporaciones municipales, voluntarias, una instancia estatal y una brigada de PEMEX. La ficha identifica a cada corporación para ayudar a distinguir el carácter de su servicio. Esta clasificación no implica disponibilidad operativa, sino que organiza la información pública disponible para cada punto."
+   "q": "¿Cómo contactar a una estación de bomberos en Hidalgo para una gestión?",
+   "a": "Localiza la estación por municipio y usa su teléfono oficial cuando esté publicado para solicitar capacitación, presentar una donación o consultar un dictamen. El contacto debe dirigirse a la corporación operadora. Para reportar una emergencia llama al 911, no a un teléfono administrativo."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Hidalgo?",
-   "a": "Ante una emergencia en Hidalgo marca 911. Los teléfonos que aparecen en algunas fichas son referencias para trámites, visitas, capacitación o donaciones, cuando existe una fuente pública que los respalda. No sustituyen la llamada de emergencia ni deben emplearse como canal de despacho urgente de los bomberos."
+   "q": "¿Qué riesgos atienden los bomberos en Hidalgo?",
+   "a": "Los bomberos en Hidalgo declaran incendios estructurales, rescate vehicular y atención prehospitalaria como servicios comunes. También se reportan materiales peligrosos, fugas de gas, espacios confinados, incendios forestales y protección civil, con presencia particular de estos riesgos en Pachuca y Tula."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Hidalgo?",
-   "a": "Para bomberos en Hidalgo cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La propuesta puede considerar incendios estructurales, rescate vehicular, materiales peligrosos, operación forestal o espacios confinados, según las necesidades que se requieran cubrir."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Hidalgo?",
+   "a": "Una corporación de bomberos en Hidalgo puede optar por licitación o compra directa. LORICA prepara especificación técnica por partida, integra el expediente requerido y emite CFDI 4.0. No hay compra mínima y el envío se coordina al estado según la dotación elegida."
   }
  ]
 }

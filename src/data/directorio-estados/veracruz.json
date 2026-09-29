@@ -1,45 +1,39 @@
 {
- "lead": "El directorio reúne 16 estaciones de bomberos en Veracruz, repartidas en 12 municipios. Cada ficha presenta ubicación, corporación, tipo de estación y fuente disponible para facilitar la consulta de bomberos en Veracruz.",
- "descRight": [
-  "En Veracruz se registran 10 estaciones municipales, 3 voluntarias, 2 aeroportuarias y 1 de PEMEX. El conjunto incluye 2 centrales y 3 subestaciones. El municipio de Veracruz concentra 4 fichas, mientras Boca del Río suma 2, con corporaciones de distinta adscripción.",
-  "Navega por municipio, contrasta la ficha con su mapa y revisa el teléfono solo cuando esté respaldado por fuente. Para cualquier emergencia marca 911. Los contactos incluidos pueden resultar útiles para trámites, visitas, capacitación o donaciones, pero no sustituyen la atención inmediata."
- ],
- "municipiosDuo": [
-  "Veracruz concentra 4 estaciones registradas y Boca del Río 2; juntas reúnen centrales, subestaciones y una sede aeroportuaria. El índice facilita separar a los bomberos en Veracruz de las fichas conurbadas y encontrar la corporación que corresponde a cada ubicación.",
-  "Los 10 municipios restantes tienen 1 registro cada uno, entre ellos Coatzacoalcos, Córdoba, Minatitlán, Orizaba y Xalapa. La distribución publicada abarca 12 municipios; se integrarán más referencias cuando exista confirmación mediante fuente pública."
+ "lead": "Veracruz cuenta con 16 estaciones de bomberos en 12 municipios. Hay 4 en Veracruz y 2 en Boca del Río. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para preparar una compra institucional.",
+ "panorama": [
+  "El servicio de bomberos en Veracruz combina cuerpos municipales, voluntarios, patronatos, una brigada PEMEX y servicios aeroportuarios. La zona Veracruz–Boca del Río reúne bases del Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C., con central y subestación. También hay corporaciones en Xalapa, Córdoba, Orizaba, Coatzacoalcos y otros municipios.",
+  "Veracruz concentra 4 estaciones y Boca del Río 2, una cercanía que da peso a la operación conurbada. El resto se reparte entre municipios como Coatzacoalcos, Minatitlán, Xalapa, Tuxpan y San Andrés Tuxtla. Para equipar bomberos en Veracruz, conviene coordinar por corporación y reconocer las diferencias entre servicio municipal, voluntario, PEMEX y aeropuerto."
  ],
  "estacionesDuo": [
-  "Lee primero el tipo de corporación: municipal, voluntaria, aeroportuaria o PEMEX. Después identifica si la sede es central, subestación o única. El listado incluye al Heroico y Benemérito Cuerpo de Bomberos de Veracruz y al Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C.",
-  "Las fichas señalan dirección y teléfono solo cuando están disponibles con fuente, además de ubicar el punto como exacto o aproximado. Usar esos campos en conjunto permite preparar una visita o gestión y evita asumir que todas las sedes de bomberos en Veracruz tienen el mismo papel."
+  "El Heroico y Benemérito Cuerpo de Bomberos de Veracruz mantiene central y subestaciones en Veracruz. En Boca del Río opera el Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C. También figura el Honorable Cuerpo de Bomberos de Xalapa, A.C. La agrupación es por municipio y conserva teléfonos oficiales publicados."
  ],
  "coberturaDuo": [
-  "La atención prehospitalaria aparece en 15 registros, los incendios estructurales en 14 y el rescate vehicular en 13. También hay servicios declarados de rescate acuático y materiales peligrosos con 3 fichas cada uno, así como salvamento aeroportuario.",
-  "El directorio registra teléfono con fuente en 7 estaciones, dirección en 13 y ubicación exacta en 12. Estas cifras describen qué datos puede consultar la persona usuaria en cada ficha, no una comparación entre corporaciones ni una garantía de atención."
+  "Quince estaciones declaran atención prehospitalaria y 14 incendios estructurales. El rescate vehicular es frecuente; materiales peligrosos y rescate acuático aparecen en corporaciones. Los servicios aeroportuarios y la brigada PEMEX añaden exposiciones especializadas. La dotación debe separar protección cotidiana y equipo específico."
  ],
  "equipoDuo": [
-  "Los incendios estructurales y el rescate vehicular hacen relevante combinar <a href=\"/trajes/estructural/\">trajes para incendio estructural</a> con <a href=\"/trajes/extricacion/\">equipo de extricación</a>. Para materiales peligrosos debe evaluarse protección Hazmat, y los registros acuáticos orientan a complementar el equipo con recursos de rescate.",
-  "Para bomberos en Veracruz cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La recomendación de equipo parte del servicio declarado en la estación y de la protección que necesita la operación, incluyendo los casos de salvamento aeroportuario."
+  "Los <a href=\"/trajes/estructural/\">trajes estructurales</a> corresponden al servicio de incendio en inmuebles que declaran la mayoría de las corporaciones. Las estaciones con materiales peligrosos requieren protección Hazmat y los de rescate vehicular, prendas de extricación. Para rescate acuático se necesita equipo propio de esa maniobra; los aeropuertos deben valorar protección de aproximación.",
+  "LORICA cotiza por partida con especificación técnica para procesos de licitación o compra directa en Veracruz. La corporación recibe CFDI 4.0, puede comprar sin mínimo y coordinar envío al estado. Un pedido puede incluir <a href=\"/capuchas/\">capuchas para bombero</a>, guantes, botas y protección respiratoria, elegidos conforme al servicio que cubrirán."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Veracruz?",
-   "a": "El directorio registra 16 estaciones de bomberos en Veracruz, en 12 municipios. La cifra reúne fichas confirmadas con información pública y puede aumentar al documentarse nuevas estaciones con fuente. No debe interpretarse como un conteo total de todos los servicios existentes en el estado."
+   "q": "¿Cuántas estaciones de bomberos hay en Veracruz y dónde están?",
+   "a": "Hay 16 estaciones de bomberos localizadas en 12 municipios de Veracruz. El municipio de Veracruz cuenta con 4 y Boca del Río con 2. También hay estaciones en Coatzacoalcos, Cosamaloapan, Cosoleacaque, Córdoba, Minatitlán, Orizaba, Poza Rica de Hidalgo, San Andrés Tuxtla, Tuxpan y Xalapa."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Veracruz?",
-   "a": "El municipio de Veracruz tiene 4 estaciones registradas y Boca del Río 2. Para ubicar bomberos en Xalapa, el índice contiene 1 ficha en Xalapa; el listado municipal permite distinguir esa referencia de las corporaciones y subestaciones situadas en otras localidades."
+   "q": "¿Quién opera los cuerpos de bomberos en Veracruz?",
+   "a": "Los bomberos en Veracruz son operados por corporaciones municipales, cuerpos voluntarios y patronatos. Esta página también incluye una brigada contraincendio de PEMEX y dos servicios aeroportuarios. En Veracruz–Boca del Río participa el Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Veracruz?",
-   "a": "El registro de Veracruz combina 10 estaciones municipales, 3 voluntarias, 2 aeroportuarias y 1 de PEMEX. Entre las corporaciones aparecen Bomberos Municipales de Poza Rica y el H. Cuerpo de Bomberos Voluntarios de Cosamaloapan, con la clasificación indicada en cada ficha."
+   "q": "¿Cómo contactar a una estación de bomberos en Veracruz para una gestión?",
+   "a": "Ubica el municipio y la corporación de Veracruz que atienden tu gestión; cuando se publica, el teléfono oficial sirve para capacitación, donaciones o dictámenes. Si se trata de una emergencia, llama al 911. Para asuntos administrativos, confirma que estás contactando a la corporación correcta antes de enviar documentación."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Veracruz?",
-   "a": "En una emergencia en Veracruz, marca 911. Los teléfonos de las fichas son para trámites, visitas, capacitación o donaciones cuando hay fuente disponible; no reemplazan la vía de auxilio. Si necesitas atención inmediata, usa el número nacional y no esperes respuesta de un contacto administrativo."
+   "q": "¿Qué riesgos atienden los bomberos en Veracruz?",
+   "a": "Las corporaciones de Veracruz declaran atención prehospitalaria, incendios estructurales y rescate vehicular. Algunas también cubren materiales peligrosos, rescate acuático, salvamento aeroportuario, incendios forestales y rescate en altura. La combinación cambia según la corporación y el municipio donde opera."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Veracruz?",
-   "a": "Para bomberos en Veracruz cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Describe el uso previsto, como incendio estructural, rescate vehicular, material peligroso o salvamento, para valorar la protección adecuada."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Veracruz?",
+   "a": "Una corporación de bomberos en Veracruz puede comprar mediante licitación o compra directa. LORICA arma especificación técnica por partida, emite CFDI 4.0 y no requiere compra mínima. El envío se organiza al estado con protección, tallas y accesorios adecuados para los servicios definidos por la corporación."
   }
  ]
 }

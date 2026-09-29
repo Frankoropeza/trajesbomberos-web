@@ -4,6 +4,8 @@
 // tipo en rojo, botón principal al fondo). Solo muestra campos con
 // dato; nunca un campo vacío ni un texto de relleno. Las fuentes y el
 // sitio de la corporación salen con rel="nofollow noopener".
+// D5: sin etiqueta de confianza visible, fuentes plegadas y ficha
+// compacta cuando no hay teléfono ni domicilio.
 import {
   type Estacion, ROL_LABEL, unidad, SERVICIO_LABEL, fuentesConUrl, mapsUrl, telHref, telTexto, dominio,
 } from '@lib/directorio';
@@ -16,9 +18,10 @@ const servicios = (s.servicios ?? []).map((x) => SERVICIO_LABEL[x] ?? x);
 const fuentes = [...new Map(fuentesConUrl(s).map((f) => [dominio(f.url!), f.url!])).entries()].slice(0, 3);
 const U = unidad(s.estado, 1);
 const localidad = s.ciudad && s.ciudad !== s.municipio ? `${s.ciudad}, ${U} de ${s.municipio}` : `${U.charAt(0).toUpperCase() + U.slice(1)} ${s.municipio}`;
-const ext = { target: '_blank', rel: 'nofollow noopener' };
+// Sin contacto (ni teléfono ni domicilio): ficha compacta.
+const compacta = telefonos.length === 0 && !s.direccion;
 ---
-<li class="st" id={s.slug}>
+<li class:list={['st', { 'st--compacta': compacta }]} id={s.slug}>
   <div class="st__top">
     <span class="st__tipo">{s.tipo}</span>
     <span class="st__rol">{ROL_LABEL[s.rolEstacion]}{s.numeroEstacion && s.rolEstacion !== 'unica' ? ` · ${s.numeroEstacion}` : ''}</span>
@@ -36,7 +39,7 @@ const ext = { target: '_blank', rel: 'nofollow noopener' };
           <dd class="st__tels">{telefonos.map((t) => <a href={`tel:${telHref(t)}`}>{telTexto(t)}</a>)}</dd>
         </div>
       )}
-      {s.sitioWeb && (<div><dt>Sitio oficial</dt><dd><a href={s.sitioWeb} {...ext}>{dominio(s.sitioWeb)}</a></dd></div>)}
+      {s.sitioWeb && (<div><dt>Sitio oficial</dt><dd><a href={s.sitioWeb} target="_blank" rel="nofollow noopener">{dominio(s.sitioWeb)}</a></dd></div>)}
     </dl>
 
     {servicios.length > 0 && (
@@ -46,18 +49,17 @@ const ext = { target: '_blank', rel: 'nofollow noopener' };
       </ul>
     )}
 
-    <p class="st__meta">
-      <span class={`st__conf st__conf--${s.confianza}`}>Confianza {s.confianza}</span>
-      <span>Ubicación {s.coordenadas.precision}</span>
-    </p>
-    {fuentes.length > 0 && (
-      <p class="st__src">
-        <span>Fuente:</span>
-        {fuentes.map(([d, url]) => <a href={url} {...ext}>{d} ↗</a>)}
-      </p>
-    )}
+    <div class="st__meta">
+      <span class={`st__ubi st__ubi--${s.coordenadas.precision}`}>Ubicación {s.coordenadas.precision}</span>
+      {fuentes.length > 0 && (
+        <details class="st__src">
+          <summary>{fuentes.length > 1 ? `Fuentes (${fuentes.length})` : 'Fuente'}</summary>
+          <p>{fuentes.map(([d, url]) => <a href={url} target="_blank" rel="nofollow noopener">{d} ↗</a>)}</p>
+        </details>
+      )}
+    </div>
 
-    <a class="st__cta" href={mapsUrl(s)} {...ext}>
+    <a class="st__cta" href={mapsUrl(s)} target="_blank" rel="nofollow noopener">
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor" /></svg>
       Ubicación en Google Maps
     </a>
@@ -123,14 +125,21 @@ const ext = { target: '_blank', rel: 'nofollow noopener' };
   }
   .st__serv .st__more { color: var(--color-gray); }
 
-  .st__meta { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; margin: 0.85rem 0 0; font-size: 0.76rem; font-weight: 700; color: var(--color-gray); }
-  .st__conf::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 0.4rem; border-radius: 50%; background: currentColor; vertical-align: 0.05em; }
-  .st__conf--alta { color: #176b3a; }
-  .st__conf--media { color: #805400; }
-  .st__conf--baja { color: var(--color-gray); }
-  .st__src { display: flex; flex-wrap: wrap; gap: 0.2rem 0.6rem; margin: 0.35rem 0 1.1rem; font-size: 0.76rem; color: var(--color-gray); }
+  .st__meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1rem; margin: 0.85rem 0 1.1rem; font-size: 0.76rem; font-weight: 700; color: var(--color-gray); }
+  .st__ubi::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 0.4rem; border-radius: 50%; background: currentColor; vertical-align: 0.05em; }
+  .st__ubi--exacta { color: #176b3a; }
+  .st__src summary { cursor: pointer; list-style: none; text-decoration: underline; text-underline-offset: 2px; }
+  .st__src summary::-webkit-details-marker { display: none; }
+  .st__src summary::after { content: ' ▾'; }
+  .st__src[open] summary::after { content: ' ▴'; }
+  .st__src p { display: flex; flex-wrap: wrap; gap: 0.2rem 0.6rem; margin: 0.35rem 0 0; font-weight: 600; }
   .st__src a { color: var(--color-gray); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
-  .st__src a:hover { color: var(--color-primary); }
+  .st__src a:hover, .st__src summary:hover { color: var(--color-primary); }
+  /* Ficha compacta: estaciones sin teléfono ni domicilio publicados */
+  .st--compacta .st__body { padding-block: 0.8rem 0.95rem; }
+  .st--compacta .st__serv { display: none; }
+  .st--compacta .st__meta { margin-bottom: 0.8rem; }
+  .st--compacta .st__cta { min-height: 44px; }
 
   .st__cta {
     margin-top: auto;

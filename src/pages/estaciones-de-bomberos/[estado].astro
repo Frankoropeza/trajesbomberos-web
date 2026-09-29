@@ -33,9 +33,9 @@ export function getStaticPaths() {
   return ENTIDADES.map((e) => ({ params: { estado: e.slug }, props: { e } }));
 }
 
-// Textos editoriales por estado (D2)
+// Textos editoriales por estado (D5 · reescritura humana, ángulo B2B)
 interface Editorial {
-  lead: string; descRight: string[]; municipiosDuo: string[]; estacionesDuo: string[];
+  lead: string; panorama: string[]; estacionesDuo: string[];
   coberturaDuo: string[]; equipoDuo: string[]; faqs: { q: string; a: string }[];
 }
 const EDITORIAL = import.meta.glob<Editorial>('../../data/directorio-estados/*.json', { eager: true, import: 'default' });
@@ -59,9 +59,14 @@ const UNIS = unidad(e.slug); // plural
 // Regla de las 3 keywords
 // kw1 «bomberos en {estado}» (intención local + teléfono); el H1 cubre «estaciones de bomberos».
 // Metas (tanda de metas 2026-09-29): Ahrefs MX «estación de bomberos» 800 + búsquedas «bomberos <ciudad> teléfono».
-const keywords = [`estaciones de bomberos ${EN}`, `bomberos ${EN}`, 'teléfonos de bomberos'] as const;
-const title = `Estaciones de bomberos ${EN}: teléfonos`;
-const description = `Estaciones de bomberos ${EN}: ${est(r.total)} en ${mun(r.municipios)} con mapa, teléfono con fuente pública y corporación. Emergencias: 911.`;
+// Ángulo B2B (decisión de Frank 2026-09-29): corporaciones, equipamiento y
+// licitaciones; la consulta ciudadana de teléfonos la cubre BOMBERO.MX.
+const keywords = [`estaciones de bomberos ${EN}`, `bomberos ${EN}`, `cuerpos de bomberos ${EN}`] as const;
+const title = r.total === 1
+  ? `Bomberos ${EN}: estación y contacto oficial`
+  : `Bomberos ${EN}: ${nf(r.total)} estaciones por ${UNI}`;
+const description = `Bomberos ${EN}: ${est(r.total)} en ${mun(r.municipios)}, quién opera cada una, teléfono oficial y ubicación. Equipo para corporaciones con CFDI 4.0.`;
+const REVISION = 'septiembre de 2026'; // última pasada de QA completa (verificacion_final.sh)
 
 const menuItems = [
   { label: UNIS.charAt(0).toUpperCase() + UNIS.slice(1), href: '#municipios' },
@@ -133,8 +138,8 @@ const cta: CtaPreset = {
   h1="Estaciones de bomberos"
   h1Accent={EN}
   lead={ed.lead}
-  meta={[est(r.total), mun(r.municipios), `${nf(r.conTelefono)} con teléfono`, e.iso]}
-  descRight={ed.descRight}
+  meta={[est(r.total), mun(r.municipios), `${nf(r.conTelefono)} con teléfono oficial`, `Revisión: ${REVISION}`]}
+  descRight={[]}
   faqs={ed.faqs}
   directoryItems={directoryItems}
   collection={collection}
@@ -152,7 +157,7 @@ const cta: CtaPreset = {
           <SectionHeading
             eyebrow={`${UNIS.charAt(0).toUpperCase() + UNIS.slice(1)} ${DE}`}
             title={`Bomberos ${EN} por ${UNI}`}
-            duo={ed.municipiosDuo}
+            duo={ed.panorama}
           />
           <BotonesConteo
             cols={4}
@@ -164,14 +169,14 @@ const cta: CtaPreset = {
         <!-- 2 · Directorio telefónico -->
         <section class="dir-sub" id="telefonos">
           <SectionHeading
-            eyebrow="Directorio telefónico"
+            eyebrow="Contacto oficial"
             title={`Teléfonos de bomberos ${EN}`}
             duo={[
-              `${conTel.length === r.total ? (r.total === 1 ? `La única estación de bomberos registrada ${EN} tiene teléfono publicado` : `Las ${nf(r.total)} estaciones de bomberos registradas ${EN} tienen teléfono publicado`) : `El directorio publica el teléfono de ${nf(conTel.length)} de las ${est(r.total)} de bomberos registradas ${EN}`}. Un número solo se incluye cuando una fuente pública lo respalda: portal oficial, corporación o DENUE del INEGI.`,
-              'Estos teléfonos sirven para trámites, visitas, capacitación, dictámenes o donaciones. En una emergencia marca al 911, que canaliza la llamada a la estación que corresponde. Cada nombre lleva a la ficha completa con dirección, fuente y ubicación en mapa.',
+              `${conTel.length === r.total ? (r.total === 1 ? 'La estación tiene' : `Las ${nf(r.total)} estaciones tienen`) : `${nf(conTel.length)} de las ${est(r.total)} tienen`} un teléfono publicado por la propia corporación o por una dependencia de gobierno. Úsalo para coordinar capacitaciones, dictámenes, donativos o compras con cada corporación.`,
+              `¿Buscas la información de consulta ciudadana? El directorio de <a href="https://bombero.mx/directorio/${e.slug}/">estaciones de bomberos ${EN} en BOMBERO.MX</a> la reúne junto con la del resto del país.`,
             ]}
           />
-          <DataTable
+          {conTel.length > 0 && <DataTable
             caption={`Teléfonos de estaciones de bomberos ${EN}`}
             cols={[{ label: 'Estación' }, { label: UNI.charAt(0).toUpperCase() + UNI.slice(1), hideMobile: true }, { label: 'Teléfono', nowrap: true }, { label: 'Tipo', hideMobile: true }]}
             rows={conTel.map((s) => [
@@ -180,7 +185,7 @@ const cta: CtaPreset = {
               { text: telTexto(s.telefono!), href: `tel:${telHref(s.telefono!)}` },
               s.tipo,
             ])}
-          />
+          />}
         </section>
 
         <!-- 3 · Estaciones agrupadas por municipio -->
@@ -217,10 +222,10 @@ const cta: CtaPreset = {
             duo={ed.coberturaDuo}
           />
           <StatsRow stats={[
-            { n: nf(r.total), label: r.total === 1 ? 'estación registrada' : 'estaciones registradas', note: `en ${mun(r.municipios)}` },
-            { n: nf(r.conTelefono), label: 'con teléfono con fuente', note: `${pct(r.conTelefono, r.total)} de las fichas` },
-            { n: nf(r.conDireccion), label: 'con dirección publicada', note: `${pct(r.conDireccion, r.total)} de las fichas` },
-            { n: nf(r.coordExactas), label: 'con ubicación exacta', note: `${pct(r.coordExactas, r.total)} de las fichas` },
+            { n: nf(r.total), label: r.total === 1 ? 'estación localizada' : 'estaciones localizadas', note: `en ${mun(r.municipios)}` },
+            { n: nf(r.conTelefono), label: 'con teléfono oficial', note: `${pct(r.conTelefono, r.total)} del total` },
+            { n: nf(r.conDireccion), label: 'con domicilio', note: `${pct(r.conDireccion, r.total)} del total` },
+            { n: nf(r.coordExactas), label: 'con ubicación exacta', note: `${pct(r.coordExactas, r.total)} del total` },
           ]} />
           <div class="cif-tables">
             <DataTable
@@ -260,10 +265,9 @@ const cta: CtaPreset = {
     <div class="container">
       <SectionHeading
         eyebrow={`Región ${region.nombre}`}
-        title={`Estaciones de bomberos en el ${region.nombre}`}
+        title={`Bomberos en la región ${region.nombre}`}
         duo={[
-          `La región ${region.nombre} del directorio agrupa ${vecinos.length + 1} estados: ${region.desc}. Cada botón lleva al listado de estaciones de bomberos del estado, ordenado por municipio.`,
-          `Para el resto del país, el <a href="${BASE_DIRECTORIO}">directorio nacional de estaciones de bomberos</a> reúne los 32 estados con su índice por región y las cifras por tipo de corporación.`,
+          `${vecinos.length === 1 ? 'El estado vecino' : 'Los estados vecinos'} de la región ${region.nombre} ${vecinos.length === 1 ? 'tiene' : 'tienen'} su propio listado de estaciones por municipio, útil si tu corporación coordina apoyo regional o compras conjuntas. Para el resto del país, entra al <a href="${BASE_DIRECTORIO}">directorio nacional de estaciones de bomberos</a>.`,
         ]}
       />
       <BotonesConteo
@@ -281,8 +285,7 @@ const cta: CtaPreset = {
         eyebrow="Preguntas frecuentes"
         title={`Bomberos ${EN}: preguntas frecuentes`}
         duo={[
-          `Cuántas estaciones de bomberos registra el directorio ${EN}, en qué municipios están, quién las opera y a qué número llamar en una emergencia.`,
-          'Si trabajas en una estación y ves un dato desactualizado, escríbenos por WhatsApp con la fuente y lo corregimos en la siguiente revisión.',
+          `¿Tu corporación no aparece o cambió de teléfono o domicilio? Escríbenos por WhatsApp con el dato oficial y lo actualizamos en la siguiente revisión.`,
         ]}
       />
       <FAQWithContact items={ed.faqs} />

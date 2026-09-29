@@ -1,45 +1,39 @@
 {
- "lead": "Yucatán cuenta con 17 estaciones de bomberos registradas en 9 municipios dentro del directorio. Cada ficha muestra ubicación, corporación, tipo de sede y fuente disponible, para consultar bomberos en Yucatán con referencias concretas.",
- "descRight": [
-  "La red publicada en Yucatán está compuesta por 15 estaciones estatales, 1 aeroportuaria y 1 de PEMEX. Tiene 1 central y 14 subestaciones. Mérida concentra 9 fichas, mientras Kinchil, Maxcanú, Motul, Peto, Progreso, Tekax, Ticul y Umán tienen 1 cada uno.",
-  "Elige un municipio en el índice y usa el mapa para revisar la referencia de la base o estación. Los teléfonos se muestran cuando hay fuente que los sustenta. Ante una emergencia llama al 911; los contactos de ficha pueden servir para gestiones, visitas, capacitación o donaciones."
- ],
- "municipiosDuo": [
-  "Mérida agrupa 9 de las 17 estaciones registradas, incluyendo la central, subestaciones y una referencia aeroportuaria. Para buscar bomberos en Mérida, el índice municipal permite identificar la sede por nombre y evitar confundir bases estatales con los otros servicios de la ciudad.",
-  "Kinchil, Maxcanú, Motul, Peto, Progreso, Tekax, Ticul y Umán aportan 1 ficha cada uno. Así, el directorio reparte referencias en 9 municipios; se podrán añadir más estaciones cuando una fuente pública permita confirmar sus datos de ubicación y corporación."
+ "lead": "Yucatán suma 17 estaciones de bomberos en 9 municipios. Mérida concentra 9 sedes y Progreso y Tekax también forman parte de la cobertura. La información reúne dirección, ubicación, teléfono oficial cuando existe y la corporación responsable de cada estación.",
+ "panorama": [
+  "La Dirección de Bomberos de Yucatán — SSP conduce la mayor parte de la operación, desde su central y subestaciones. Su cobertura alcanza Mérida, Kinchil, Maxcanú, Peto, Progreso, Tekax y Ticul. También participan un servicio aeroportuario y una brigada contraincendio de PEMEX.",
+  "Mérida concentra la central, varias estaciones y el servicio aeroportuario. Para equipar bomberos en Yucatán, una selección común para la red estatal debe acompañarse de partidas para materiales peligrosos en Mérida y Umán. La central también declara atención a incendios forestales."
  ],
  "estacionesDuo": [
-  "Las fichas distinguen corporaciones estatales, una estación aeroportuaria y una brigada de PEMEX; también indican central, subestación o sede única. La Dirección de Bomberos de Yucatán — SSP reúne la mayor parte de las referencias, junto con la Brigada Contraincendio PEMEX TAD Mérida.",
-  "En cada registro, dirección, teléfono y precisión de ubicación dependen de la fuente disponible. Revisa esos datos antes de programar una consulta no urgente con bomberos en Yucatán. La etiqueta del rol es importante para leer correctamente si se trata de una base o de la sede central."
+  "La Dirección de Bomberos de Yucatán — SSP es el eje de la red, con central y subestaciones en varios municipios. Junto a ella aparecen el SSEI Aeropuerto Internacional de Mérida y la Brigada Contraincendio PEMEX TAD Mérida. Las estaciones se muestran por municipio y con teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Los servicios declarados señalan atención prehospitalaria en 17 fichas, incendios estructurales en 16 y rescate vehicular en 15. Además hay materiales peligrosos en 2 registros y referencias de incendio forestal y salvamento aeroportuario, cada una con 1.",
-  "Hay teléfono con fuente en 3 estaciones, dirección en 14 y ubicación exacta en 14. Estas cifras muestran cuántos registros tienen cada campo consultable. No indican tiempos de atención ni sustituyen la verificación directa con la corporación cuando se requiera una gestión."
+  "Las 17 estaciones reportan atención prehospitalaria, 16 incendios estructurales y 15 rescate vehicular. Materiales peligrosos aparece en 2 sedes, mientras el salvamento aeroportuario está presente en Mérida. El patrón exige protección estructural como base y partidas particulares para esos servicios especializados."
  ],
  "equipoDuo": [
-  "El volumen de incendios estructurales y rescate vehicular sugiere revisar <a href=\"/trajes/estructural/\">trajes estructurales</a> y <a href=\"/trajes/extricacion/\">soluciones de extricación</a>. Cuando el servicio declarado contempla materiales peligrosos, la protección debe valorarse con <a href=\"/trajes/hazmat/\">equipo Hazmat</a>; el caso aeroportuario requiere analizar aproximación.",
-  "Cotizamos para bomberos en Yucatán con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Para seleccionar equipo, comparte los riesgos y procedimientos aplicables de la estación, sea una subestación estatal, una sede aeroportuaria o una brigada especializada."
+  "La red estatal requiere <a href=\"/trajes/estructural/\">trajes estructurales</a> para incendio y protección que permita rescate vehicular. La central de Mérida reporta incendio forestal, mientras materiales peligrosos se atiende en Mérida y Umán; esos riesgos pueden requerir trajes forestales o Hazmat según la tarea. El aeropuerto precisa equipo de aproximación.",
+  "En Yucatán, LORICA integra las partidas que requiere cada corporación y documenta sus especificaciones para licitación o compra directa. La operación incluye CFDI 4.0, sin compra mínima y envío al estado. Una cotización puede agrupar <a href=\"/botas/\">botas para bombero</a>, cascos y prendas de protección."
  ],
  "faqs": [
   {
-   "q": "¿Cuántas estaciones de bomberos hay en Yucatán?",
-   "a": "El directorio registra 17 estaciones de bomberos en Yucatán distribuidas en 9 municipios. La cantidad se limita a las fichas con información pública disponible y puede crecer conforme se validen nuevas referencias. No es una declaración de que se hayan listado todas las estaciones del estado."
+   "q": "¿Cuántas estaciones de bomberos hay en Yucatán y dónde están?",
+   "a": "Hay 17 estaciones de bomberos en Yucatán distribuidas en 9 municipios. Mérida concentra 9 sedes; también hay presencia en Kinchil, Maxcanú, Motul, Peto, Progreso, Tekax, Ticul y Umán. En esta página se indica la corporación responsable de cada estación."
   },
   {
-   "q": "¿Qué municipios tienen más estaciones de bomberos en Yucatán?",
-   "a": "Mérida concentra 9 fichas registradas, mientras Kinchil, Maxcanú, Motul, Peto, Progreso, Tekax, Ticul y Umán tienen 1 cada uno. Para localizar bomberos en Mérida, el listado permite revisar la central y las subestaciones por separado, junto con sus datos disponibles."
+   "q": "¿Quién opera los cuerpos de bomberos en Yucatán?",
+   "a": "Los bomberos en Yucatán son operados principalmente por la Dirección de Bomberos de Yucatán — SSP, que mantiene una central y subestaciones. También aparecen un servicio aeroportuario en Mérida y una brigada contraincendio de PEMEX en Umán, con ámbitos operativos propios."
   },
   {
-   "q": "¿Quién opera las estaciones de bomberos en Yucatán?",
-   "a": "Las estaciones publicadas de Yucatán incluyen 15 referencias estatales, 1 aeroportuaria y 1 de PEMEX. La Dirección de Bomberos de Yucatán — SSP aparece en las sedes estatales; las otras fichas corresponden al SSEI Aeropuerto Internacional de Mérida y a una brigada de PEMEX."
+   "q": "¿Cómo contacto una estación de bomberos en Yucatán para una gestión?",
+   "a": "Busca el teléfono oficial disponible en los datos de la sede para comunicaciones institucionales o solicitudes de información. Para una emergencia en Yucatán marca 911. El nombre de la corporación, el municipio y la ubicación permiten identificar a quién dirigir la gestión."
   },
   {
-   "q": "¿A qué número llamar en una emergencia en Yucatán?",
-   "a": "Si ocurre una emergencia en Yucatán, marca 911. Los teléfonos que aparecen en fichas con fuente son apropiados para trámites, visitas, capacitación o donaciones, no para solicitar despacho urgente. Usa el número de emergencia y reserva los contactos publicados para consultas planeadas."
+   "q": "¿Qué riesgos atienden los bomberos en Yucatán?",
+   "a": "Los bomberos en Yucatán reportan atención prehospitalaria, incendios estructurales y rescate vehicular. También hay materiales peligrosos, incendio forestal y salvamento aeroportuario en sedes específicas. El riesgo atendido depende de los servicios declarados por cada corporación."
   },
   {
-   "q": "¿Dónde comprar trajes y equipo para bomberos en Yucatán?",
-   "a": "Para bomberos en Yucatán cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Indica el servicio y nivel de protección requerido para orientar la cotización hacia incendio estructural, rescate, materiales peligrosos o atención aeroportuaria."
+   "q": "¿Cómo compra equipo una corporación de bomberos en Yucatán?",
+   "a": "Una corporación de bomberos en Yucatán puede adquirir equipo por licitación o compra directa. LORICA organiza la especificación técnica por partida, emite CFDI 4.0, no requiere compra mínima y coordina el envío según la cotización aprobada."
   }
  ]
 }

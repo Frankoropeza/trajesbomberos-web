@@ -36,15 +36,17 @@ const path = BASE_DIRECTORIO;
 
 // Regla de las 3 keywords
 // Metas (tanda de metas 2026-09-29): sin «| México» ni pipes. Ahrefs MX: «estación de bomberos» 800.
-const keywords = ['estaciones de bomberos', 'directorio de bomberos', 'teléfonos de bomberos'] as const;
-const title = 'Estaciones de bomberos: directorio por estado y municipio';
-const description = `Directorio de estaciones de bomberos: ${nf(N.total)} estaciones en los 32 estados, con ubicación, teléfono, corporación y fuente pública de cada dato.`;
+// Ángulo B2B (decisión de Frank 2026-09-29): corporaciones, equipamiento y licitaciones.
+const keywords = ['estaciones de bomberos', 'directorio de bomberos', 'cuerpos de bomberos'] as const;
+const title = 'Estaciones de bomberos: directorio nacional por estado';
+const description = `${nf(N.total)} estaciones de bomberos en los 32 estados: quién opera cada una, teléfono oficial, ubicación y equipo para corporaciones con factura CFDI 4.0.`;
+const REVISION = 'septiembre de 2026';
 
 const menuItems = [
   { label: 'Índice por región', href: '#estados' },
   { label: 'Directorio por estado', href: '#directorio' },
   { label: 'Cifras', href: '#cifras' },
-  { label: 'Cómo se arma', href: '#metodologia' },
+  { label: 'Cómo verificamos', href: '#metodologia' },
   { label: 'Equipo para bomberos', href: '#equipo' },
   { label: 'Preguntas', href: '#faq' },
 ];
@@ -57,10 +59,10 @@ const WA_CORRECCION = 'Hola, quiero reportar una corrección o una estación nue
 
 // Módulo de cómo se arma el directorio (proceso real, sin promesas)
 const metodo = [
-  { t: 'Una ficha por estación física', d: 'Cada base operativa es un registro propio: la central, cada subestación y las estaciones de aeropuerto, PEMEX o industria. No se agrupan por corporación.' },
-  { t: 'Fuente pública en cada dato', d: 'Dirección, teléfono y coordenadas salen de fuentes localizables: DENUE del INEGI, portales .gob.mx y sitios de las corporaciones. Un campo sin fuente se omite.' },
-  { t: 'Confianza y ubicación declaradas', d: 'Cada ficha indica su nivel de confianza (alto, medio o bajo) y si la ubicación es exacta o aproximada, para que sepas cuánto pesa cada dato.' },
-  { t: 'Correcciones abiertas', d: 'Si una estación cambió de domicilio, de teléfono o falta en el directorio, escríbenos con la fuente y la actualizamos en la siguiente revisión.' },
+  { t: 'Cada base cuenta por separado', d: 'La central, cada subestación y las estaciones de aeropuerto, PEMEX o industria aparecen por separado, porque cada una tiene su domicilio y su personal.' },
+  { t: 'Teléfono solo si es oficial', d: 'Los números vienen de portales de gobierno, directorios de protección civil y canales de las propias corporaciones. Los de directorios comerciales no se publican.' },
+  { t: 'Ubicación exacta o aproximada', d: 'Cuando solo conocemos la colonia o la localidad, la ubicación se marca como aproximada y el mapa busca por nombre y domicilio.' },
+  { t: 'Revisión periódica', d: 'Revisamos enlaces, teléfonos y fuentes en los 32 estados. Si una estación cambió de domicilio o de teléfono, escríbenos con el dato oficial.' },
 ];
 
 // Equipo para corporaciones: familias con demanda municipal + conjunto completo
@@ -69,23 +71,23 @@ const equipo = tilesEquipo(['estructural', 'forestal', 'extricacion']);
 const faqs = [
   {
     q: '¿Cuántas estaciones de bomberos hay en México?',
-    a: `No existe un censo nacional único y público de estaciones de bomberos. Este directorio registra ${nf(N.total)} estaciones en los 32 estados y ${nf(N.municipios)} municipios y alcaldías, todas con al menos una fuente pública localizable. La cifra crece conforme se confirman nuevas estaciones.`,
+    a: `No hay un censo nacional público de estaciones de bomberos. Tenemos localizadas ${nf(N.total)} en los 32 estados y ${nf(N.municipios)} municipios y alcaldías, cada una verificada con una fuente oficial, y la cifra crece con cada revisión.`,
   },
   {
     q: '¿A qué número llamo en una emergencia?',
-    a: 'Al 911, el número único de emergencias en todo México: la central canaliza la llamada a la estación de bomberos que corresponde. Los teléfonos de este directorio son los de cada estación y sirven para trámites, visitas, capacitación o donaciones, no para reportar un incendio.',
+    a: 'Al 911, el número único de emergencias en todo México: la central canaliza la llamada a la estación de bomberos que corresponde. Los teléfonos que publicamos son de cada corporación y sirven para gestiones como capacitación, dictámenes o donativos, no para reportar un incendio.',
   },
   {
     q: '¿Quién opera las estaciones de bomberos en México?',
-    a: `La mayoría son municipales: ${nf(municipal)} de las ${nf(N.total)} estaciones registradas (${pct(municipal, N.total)}) dependen del ayuntamiento, casi siempre dentro de la coordinación de protección civil. El resto son estatales, de aeropuerto, de patronatos de bomberos voluntarios, de PEMEX, de CFE o brigadas industriales.`,
+    a: `La mayoría son municipales: ${nf(municipal)} de las ${nf(N.total)} estaciones localizadas (${pct(municipal, N.total)}) dependen del ayuntamiento, casi siempre dentro de la coordinación de protección civil. El resto son estatales, de aeropuerto, de patronatos de bomberos voluntarios, de PEMEX, de CFE o brigadas industriales.`,
   },
   {
-    q: '¿De dónde salen los datos del directorio?',
-    a: 'De fuentes públicas que se citan en cada ficha: el Directorio Estadístico Nacional de Unidades Económicas (DENUE) del INEGI, portales de gobiernos estatales y municipales, y los sitios y redes oficiales de las corporaciones. Cuando un dato no tiene fuente, no se publica.',
+    q: '¿Cómo verifican los datos de cada estación?',
+    a: 'Cada dato se contrasta con una fuente oficial: portales de gobiernos estatales y municipales, directorios de protección civil, los canales de las corporaciones y el DENUE del INEGI para la ubicación. Si un teléfono no aparece en una fuente oficial, no lo publicamos.',
   },
   {
     q: '¿Cómo reporto un error o agrego una estación?',
-    a: `Escríbenos por WhatsApp al ${CONTACT.telefono} con el nombre de la estación, el dato correcto y la fuente (página oficial, publicación de la corporación o fotografía de la fachada). Revisamos la fuente antes de actualizar la ficha.`,
+    a: `Escríbenos por WhatsApp al ${CONTACT.telefono} con el nombre de la estación, el dato correcto y la fuente (página oficial, publicación de la corporación o fotografía de la fachada). Revisamos la fuente antes de actualizar la información.`,
   },
   {
     q: '¿Venden equipo para cuerpos de bomberos municipales?',
@@ -126,12 +128,9 @@ const cta: CtaPreset = {
   eyebrow="Directorio nacional de bomberos"
   h1="Estaciones de bomberos"
   h1Accent="en México"
-  lead={`Directorio de ${nf(N.total)} estaciones de bomberos en los 32 estados de la República, organizado por estado y municipio, con la ubicación, la corporación que la opera y la fuente pública de cada dato.`}
-  meta={[`${nf(N.total)} estaciones`, '32 estados', `${nf(N.municipios)} municipios y alcaldías`, 'Fuente pública por ficha']}
-  descRight={[
-    'Reunimos en un solo lugar las estaciones de bomberos municipales, estatales, de aeropuerto, de bomberos voluntarios, de PEMEX, de CFE y las brigadas industriales que operan en el país. Cada estación tiene su propia ficha: una base física, un registro.',
-    'Elige tu estado en el índice por región o en el directorio completo. Si ves un dato desactualizado o falta una estación, escríbenos con la fuente y la corregimos. En una emergencia no busques aquí: marca al 911.',
-  ]}
+  lead={`Tenemos localizadas ${nf(N.total)} estaciones de bomberos en los 32 estados, organizadas por estado y municipio. De cada una sabrás quién la opera, su domicilio, su teléfono oficial cuando existe y su ubicación.`}
+  meta={[`${nf(N.total)} estaciones`, '32 estados', `${nf(N.municipios)} municipios y alcaldías`, `Revisión: ${REVISION}`]}
+  descRight={[]}
   faqs={faqs}
   directoryItems={directoryItems}
   collection={collection}
@@ -145,8 +144,8 @@ const cta: CtaPreset = {
         eyebrow="Índice por región"
         title="Estaciones de bomberos por estado y por región"
         duo={[
-          'El directorio cubre las 32 entidades federativas, agrupadas en siete regiones para que ubiques rápido la cobertura de tu zona: del Noroeste y la península de Baja California a la península de Yucatán, pasando por el Bajío, el Centro y el Pacífico Sur.',
-          'El número junto a cada estado es el total de estaciones registradas. La cobertura no es igual en todo el país: depende de cuántas estaciones tienen una fuente pública localizable, y crece con cada revisión del directorio.',
+          'Las 32 entidades están agrupadas en siete regiones para que ubiques rápido tu zona, del Noroeste y la península de Baja California a la península de Yucatán, pasando por el Bajío, el Centro y el Pacífico Sur.',
+          'El número junto a cada estado es el total de estaciones que tenemos localizadas. La cobertura crece con cada revisión: si falta una estación de tu municipio, escríbenos con el dato oficial.',
         ]}
       />
       <RegionesIndex />
@@ -160,8 +159,8 @@ const cta: CtaPreset = {
         eyebrow="Directorio por estado"
         title="Bomberos en los 32 estados de México"
         duo={[
-          'Cada card resume un estado: cuántas estaciones de bomberos tiene registradas, en cuántos municipios, cuántas con ubicación exacta y qué corporaciones las operan. Los municipios con más estaciones tienen acceso directo a su listado.',
-          'Dentro de cada estado, las estaciones se ordenan por municipio, con la dirección, el teléfono cuando existe una fuente que lo respalde y la ubicación en mapa.',
+          'Cada tarjeta resume un estado: cuántas estaciones tiene, en cuántos municipios y qué corporaciones las operan, con acceso directo a los municipios con más estaciones.',
+          'Dentro de cada estado encontrarás las estaciones por municipio, con domicilio, teléfono oficial cuando existe y ubicación en el mapa.',
         ]}
       />
       <TileGrid>
@@ -177,8 +176,8 @@ const cta: CtaPreset = {
         eyebrow="Cifras del directorio"
         title="Quién opera las estaciones de bomberos en México"
         duo={[
-          `De las ${nf(N.total)} estaciones registradas, ${pct(municipal, N.total)} son municipales: en México el servicio de bomberos es, sobre todo, una responsabilidad del ayuntamiento, que lo presta desde la coordinación de protección civil o desde un cuerpo de bomberos propio.`,
-          'Completan el mapa las corporaciones estatales, los servicios de salvamento de los aeropuertos, los patronatos de bomberos voluntarios y las brigadas de PEMEX, CFE y la industria. Todas las cifras de esta sección se calculan directamente de las fichas del directorio.',
+          `${pct(municipal, N.total)} de las estaciones son municipales: en México el servicio de bomberos es, sobre todo, responsabilidad del ayuntamiento, que lo presta desde protección civil o con un cuerpo de bomberos propio.`,
+          'Completan la red las corporaciones estatales, los servicios de salvamento de los aeropuertos, los patronatos de bomberos voluntarios y las brigadas de PEMEX, CFE y la industria. Es el mapa de quién opera, capacita y compra equipo en cada estado.',
         ]}
       />
       <CifrasDirectorio />
@@ -189,11 +188,11 @@ const cta: CtaPreset = {
   <section class="section section--alt" id="metodologia">
     <div class="container">
       <SectionHeading
-        eyebrow="Cómo se arma"
-        title="Un directorio de bomberos con fuente en cada dato"
+        eyebrow="Cómo verificamos"
+        title="Cómo verificamos cada estación de bomberos"
         duo={[
-          'Un directorio solo sirve si puedes confiar en él. Por eso cada ficha cita su fuente, declara su nivel de confianza y distingue entre ubicación exacta y aproximada, en lugar de rellenar con datos genéricos.',
-          `Si trabajas en una estación y ves un dato desactualizado, <a href="${waUrl(WA_CORRECCION)}" target="_blank" rel="noopener nofollow">envíanos la corrección por WhatsApp</a> con la fuente. Revisamos cada reporte antes de publicarlo.`,
+          'Publicamos un teléfono solo si lo difunde la propia corporación o una dependencia de gobierno, y revisamos que los enlaces de origen sigan vivos y limpios. Si la ubicación no es exacta, lo indicamos.',
+          `Si trabajas en una estación y ves un dato desactualizado, <a href="${waUrl(WA_CORRECCION)}" target="_blank" rel="noopener nofollow">envíanos la corrección por WhatsApp</a> con el dato oficial. Revisamos cada reporte antes de publicarlo.`,
         ]}
       />
       <ol class="metodo">
@@ -232,7 +231,7 @@ const cta: CtaPreset = {
         eyebrow="Preguntas frecuentes"
         title="Lo que más se pregunta sobre las estaciones de bomberos"
         duo={[
-          'Cuántas estaciones hay en México, a qué número llamar en una emergencia, quién opera cada estación y de dónde salen los datos del directorio.',
+          'Las dudas más comunes sobre las estaciones de bomberos del país: cuántas hay, quién las opera, cómo verificamos los datos y a qué número llamar en una emergencia.',
           'Si tu pregunta es sobre equipo para tu corporación, LORICA te atiende por WhatsApp: envíanos el número de elementos y la operación que cubren, y te respondemos en día hábil.',
         ]}
       />

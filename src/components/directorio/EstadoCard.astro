@@ -16,7 +16,7 @@ const titulo = `Estaciones de bomberos ${enEstado(e)}`;
   <a class="ec__head" href={href} tabindex="-1" aria-hidden="true">
     <span class="ec__region">{regionNombre}</span>
     <span class="ec__num">{nf(e.total)}</span>
-    <span class="ec__label">{e.total === 1 ? 'estación registrada' : 'estaciones registradas'}</span>
+    <span class="ec__label">{e.total === 1 ? 'estación localizada' : 'estaciones localizadas'}</span>
     <span class="ec__muni">{e.municipios} {unidad(e.slug, e.municipios)} · {e.coordExactas} con ubicación exacta</span>
     <span class="ec__code">{e.iso}</span>
   </a>
