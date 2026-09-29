@@ -1,0 +1,114 @@
+---
+// Paginacion: anterior / números / siguiente. La página actual no
+// se enlaza (aria-current). Página 1 = base; ≥ 2 = base/pagina/N/.
+// Objetivos táctiles ≥ 44px; aria-label con palabra clave.
+import { paginaUrl } from '@lib/blog';
+
+interface Props {
+  pagina: number;
+  totalPaginas: number;
+  total: number;
+  base: string;
+}
+const { pagina, totalPaginas, total, base } = Astro.props;
+---
+
+{totalPaginas > 1 && (
+  <nav class="paginacion" aria-label="Paginación del blog">
+    <div class="paginacion__controls">
+      {pagina > 1 ? (
+        <a
+          href={paginaUrl(base, pagina - 1)}
+          aria-label="Artículos sobre trajes para bomberos, página anterior"
+        >
+          ← Anterior
+        </a>
+      ) : (
+        <span class="is-disabled" aria-disabled="true">
+          ← Anterior
+        </span>
+      )}
+      <ol>
+        {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((n) => (
+          <li>
+            {n === pagina ? (
+              <span aria-current="page">{n}</span>
+            ) : (
+              <a href={paginaUrl(base, n)} aria-label={`Artículos sobre trajes para bomberos, página ${n}`}>
+                {n}
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+      {pagina < totalPaginas ? (
+        <a
+          href={paginaUrl(base, pagina + 1)}
+          aria-label="Artículos sobre trajes para bomberos, página siguiente"
+        >
+          Siguiente →
+        </a>
+      ) : (
+        <span class="is-disabled" aria-disabled="true">
+          Siguiente →
+        </span>
+      )}
+    </div>
+    <p>
+      Página {pagina} de {totalPaginas} · {total} artículos
+    </p>
+  </nav>
+)}
+
+<style>
+  .paginacion {
+    margin-top: clamp(2rem, 4vw, 3rem);
+    padding-top: 1.25rem;
+    border-top: var(--border);
+  }
+  .paginacion__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.45rem;
+  }
+  .paginacion a,
+  .paginacion span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.45rem 0.65rem;
+    border-radius: var(--radius);
+    color: var(--color-dark);
+    font-size: var(--fs-xs);
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .paginacion a:hover {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  .paginacion ol {
+    display: flex;
+    gap: 0.2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .paginacion ol span {
+    min-width: 44px;
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+  .paginacion .is-disabled {
+    color: var(--color-gray-soft);
+    opacity: 0.55;
+  }
+  .paginacion p {
+    margin: 0.5rem 0 0;
+    text-align: center;
+    color: var(--color-gray);
+    font-size: var(--fs-xs);
+  }
+</style>

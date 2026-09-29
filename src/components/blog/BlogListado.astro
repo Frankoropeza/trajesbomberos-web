@@ -1,0 +1,164 @@
+---
+// BlogListado: vista compartida del listado del blog (índice,
+// páginas ≥ 2 y categorías): tabs de tema → retícula → paginación
+// → banda «¿Falta tu tema?». La retícula mide su columna con una
+// container query: 3 por fila con sidebar en escritorio, 2 en
+// tablet, 1 en móvil.
+import PostCard from '@components/PostCard.astro';
+import Paginacion from './Paginacion.astro';
+import { BLOG_CATEGORIES, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+import { categoriaUrl, paginaUrl, readingTime, type Post } from '@lib/blog';
+
+interface Props {
+  posts: Post[];
+  todos: Post[];
+  total: number;
+  pagina: number;
+  totalPaginas: number;
+  base: string;
+  actualCategoria?: string;
+  ask?: boolean;
+}
+const { posts, todos, total, pagina, totalPaginas, base, actualCategoria, ask = false } = Astro.props;
+---
+
+<div class="blog-listado">
+  <nav class="blog-tabs" aria-label="Temas del blog">
+    <a href={paginaUrl('/blog/', 1)} aria-current={!actualCategoria ? 'page' : undefined}>
+      Todos los temas ({todos.length})
+    </a>
+    {BLOG_CATEGORIES.map((cat) => {
+      const conteo = todos.filter((post) => post.data.categoria === cat.slug).length;
+      return (
+        <a
+          href={paginaUrl(categoriaUrl(cat.slug), 1)}
+          aria-current={actualCategoria === cat.slug ? 'page' : undefined}
+        >
+          {cat.nombre} ({conteo})
+        </a>
+      );
+    })}
+  </nav>
+  {posts.length > 0 ? (
+    <div class="post-grid" data-post-grid>
+      {posts.map((post, i) => (
+        <PostCard
+          href={`/blog/${post.id}/`}
+          title={post.data.title}
+          resumen={post.data.resumen}
+          categoria={post.data.categoria}
+          lectura={readingTime(post.body)}
+          image={post.data.imagen}
+          imageAlt={post.data.imagenAlt}
+          destacado={post.data.destacado}
+          ancla={post.data.ancla}
+          index={(pagina - 1) * 9 + i}
+        />
+      ))}
+    </div>
+  ) : (
+    <p class="vacio">Todavía no hay artículos publicados en esta sección.</p>
+  )}
+  <Paginacion pagina={pagina} totalPaginas={totalPaginas} total={total} base={base} />
+  {ask && (
+    <a class="ask-band" href={waUrl(WA_MESSAGES.informacion)} target="_blank" rel="noopener nofollow">
+      <span>
+        <strong>¿Falta tu tema?</strong> Si tu duda no está publicada, escríbenos. La contestamos con la ficha
+        técnica en la mano y, si le sirve a más gente, se vuelve el siguiente artículo.
+      </span>
+      <span class="ask-band__cta">Preguntar por WhatsApp sobre trajes para bomberos →</span>
+    </a>
+  )}
+</div>
+
+<style>
+  .blog-tabs {
+    display: flex;
+    gap: 0.45rem;
+    margin: 0 0 1.25rem;
+    padding: 0 0 0.55rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    border-bottom: var(--border);
+  }
+  .blog-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .blog-tabs a {
+    flex: none;
+    scroll-snap-align: start;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius);
+    color: var(--color-gray);
+    font-size: var(--fs-xs);
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .blog-tabs a:hover,
+  .blog-tabs a[aria-current='page'] {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+  /* La consulta mide la columna principal (.blog-listado), no la retícula:
+     un contenedor no puede consultarse a sí mismo. */
+  .blog-listado {
+    container: listado / inline-size;
+    min-width: 0;
+  }
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-grid);
+  }
+  @container listado (min-width: 520px) {
+    .post-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @container listado (min-width: 820px) {
+    .post-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .vacio {
+    color: var(--color-gray);
+  }
+  .ask-band {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+    padding: 1rem 1.15rem;
+    border: 1px dashed var(--color-gray-soft);
+    border-radius: var(--radius-lg);
+    color: var(--color-gray);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  .ask-band strong {
+    color: var(--color-dark);
+  }
+  .ask-band__cta {
+    flex: none;
+    color: var(--color-wa-dark);
+    font-weight: 800;
+  }
+  .ask-band:hover {
+    border-color: var(--color-primary);
+    background: var(--color-white);
+  }
+  @media (max-width: 539px) {
+    .ask-band {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>

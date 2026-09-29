@@ -11,7 +11,7 @@ import SectionHeading from '@components/SectionHeading.astro';
 import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
 import CTABanner from '@components/CTABanner.astro';
-import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
+import { SITE, WA_MESSAGES, PRODUCT_CATEGORIES, blogCategoria } from '@config/site';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { HERO_GENERICO } from '@lib/imagenes';
@@ -39,13 +39,14 @@ const palabras = wordCount(post.body);
 const cat = blogCategoria(d.categoria);
 const relacionados = await relatedPosts(post, 3);
 const waMsg = WA_MESSAGES.articulo(d.title);
+const familiaNombre = PRODUCT_CATEGORIES.find((familia) => familia.slug === d.familia)?.nombre;
 
 const menuItems = [
   { label: 'El artículo', href: '#articulo' },
   { label: 'Relacionados', href: '#relacionados' },
   { label: categoriaNombre(d.categoria), href: categoriaUrl(d.categoria) },
-  ...(d.familia ? [{ label: 'Ver la familia', href: `/trajes/${d.familia}/` }] : []),
-  { label: 'Todos los artículos', href: '/blog/' },
+  ...(d.familia && familiaNombre ? [{ label: `Familia: ${familiaNombre}`, href: `/trajes/${d.familia}/` }] : []),
+  { label: 'Artículos sobre trajes para bomberos', href: '/blog/' },
 ];
 
 // Datos duros del hero: si el artículo no los declara, se arma
@@ -84,6 +85,7 @@ const article = {
   heroImage={d.imagen ? { src: d.imagen, alt: d.imagenAlt ?? '' } : HERO_GENERICO}
   ogImage={`/images/og/blog-${post.id}.jpg`}
 >
+  <div class="reading-progress-global" aria-hidden="true"><span data-reading-progress-global></span></div>
   <div class="section">
     <div class="container layout-grid layout-grid--post">
       <div class="layout-main">
@@ -99,7 +101,7 @@ const article = {
 
           {d.imagen && (
             <figure class="post__cover">
-              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="800" height="450" loading="lazy" decoding="async" />
+              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="1600" height="686" fetchpriority="high" decoding="async" />
               {d.imagenAlt && <figcaption>{d.imagenAlt}</figcaption>}
             </figure>
           )}
@@ -108,7 +110,9 @@ const article = {
             <Content />
           </div>
 
-          <!-- Cierre del artículo: a dónde va el lector que ya leyó -->
+          <!-- Cierre del artículo: a dónde va el lector que ya leyó
+               (duda → WhatsApp) y quién responde por el contenido. -->
+          <div class="post__fin">
           <div class="post__cierre">
             <p class="post__cierre-t">¿Te quedó una duda sobre lo que acabas de leer?</p>
             <p class="post__cierre-p">
@@ -117,12 +121,19 @@ const article = {
             </p>
             <div class="post__cierre-cta">
               <a class="btn btn--wa" href={waUrl(waMsg)} target="_blank" rel="noopener nofollow">
-                Preguntar por WhatsApp
+                Preguntar por WhatsApp sobre trajes
               </a>
-              {d.familia && (
-                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>Ver la familia de traje</a>
+              {d.familia && familiaNombre && (
+                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>{familiaNombre}</a>
               )}
             </div>
+          </div>
+          <aside class="post__author" aria-label="Autoría">
+            <p class="post__author-name">Equipo técnico TrajesBombero</p>
+            <p>Especificamos y cotizamos equipo de protección contra incendio para cuerpos de bomberos, brigadas industriales y compras públicas en México.</p>
+            <p>Cada guía se contrasta con la norma citada y con la ficha técnica del fabricante.</p>
+            <a href="/empresa/">Empresa de trajes para bomberos →</a>
+          </aside>
           </div>
         </article>
       </div>
@@ -145,7 +156,7 @@ const article = {
           title="Artículos relacionados"
           description={cat ? cat.desc : undefined}
         />
-        <div class="grid-cards grid-cards--3">
+        <div class="related-grid" data-post-grid>
           {relacionados.map((p, i) => (
             <PostCard
               href={postUrl(p)}
@@ -156,11 +167,12 @@ const article = {
               image={p.data.imagen}
               imageAlt={p.data.imagenAlt}
               destacado={p.data.destacado}
+              ancla={p.data.ancla}
               index={i}
             />
           ))}
         </div>
-        <p class="volver"><a href="/blog/">← Volver al blog</a></p>
+        <p class="volver"><a href="/blog/">← Blog de trajes para bomberos</a></p>
       </div>
     </section>
   )}
@@ -169,18 +181,83 @@ const article = {
 </PageLayout>
 
 <style>
-  /* El sitio es full-width, pero un artículo no se lee a 1500px.
-     Esta es la única página donde el bloque de contenido se
-     acota y se centra: medida de lectura + sidebar, sin hueco
-     muerto entre columnas. */
-  .layout-grid--post {
-    max-width: 1120px;
-    margin-inline: auto;
-  }
-  .layout-grid--post :global(.prose),
-  .post__cierre { max-width: none; }
+  /* Homologado con las páginas L2/L3 (familias, piezas): contenedor
+     a todo el ancho, columna principal + sidebar de 280px al borde.
+     Para que el texto no se lea a 1000px, el cuerpo se arma como el
+     resto del sitio: cada H2 a la izquierda (con numeración tipo
+     eyebrow) y su contenido a la derecha, con medida de lectura.
+     La consulta mide el <article> (contenedor «post»). */
+  .layout-grid--post :global(.prose) { max-width: none; }
+  .post { min-width: 0; container: post / inline-size; }
 
-  .post { min-width: 0; }
+  @container post (min-width: 760px) {
+    .post :global(.prose) {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.5fr);
+      column-gap: clamp(2rem, 4vw, 4.5rem);
+      counter-reset: sec;
+    }
+    .post :global(.prose > *) { grid-column: 2; }
+    /* Introducción (lo que va antes del primer H2): a todo el ancho, como lead */
+    .post :global(.prose > :not(h2):not(h2 ~ *)) {
+      grid-column: 1 / -1;
+      max-width: 80ch;
+      font-size: var(--fs-lead);
+      color: var(--color-dark);
+    }
+    .post :global(.prose > h2) {
+      grid-column: 1;
+      position: relative;
+      align-self: start;
+      margin: 4.6rem 0 0;
+      padding: 0;
+      border: 0;
+      counter-increment: sec;
+      text-wrap: balance;
+    }
+    /* Separador de sección a todo el ancho del artículo */
+    .post :global(.prose > h2::after) {
+      content: '';
+      position: absolute;
+      top: -2.2rem;
+      left: 0;
+      width: 100cqw;
+      border-top: var(--border);
+    }
+    .post :global(.prose > h2 + *) { margin-top: 4.6rem; }
+    .post :global(.prose > h2:first-child),
+    .post :global(.prose > h2:first-child + *) { margin-top: 0; }
+    .post :global(.prose > h2:first-child::after) { display: none; }
+  }
+  /* Número de sección con el lenguaje del eyebrow (raya roja + versalitas) */
+  .post :global(.prose > h2::before) {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 0.6rem;
+    content: 'Sección ' counter(sec, decimal-leading-zero);
+    font-family: var(--font-display);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-primary);
+    padding-left: calc(26px + 0.6rem);
+    background: linear-gradient(var(--color-primary), var(--color-primary)) left center / 26px 3px no-repeat;
+  }
+  .post :global(.prose) { counter-reset: sec; }
+  .post :global(.prose > h2) { counter-increment: sec; }
+
+  .post__fin {
+    display: grid;
+    gap: 1rem;
+    margin-top: clamp(2.5rem, 4vw, 3.6rem);
+  }
+  @container post (min-width: 760px) {
+    .post__fin { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: stretch; }
+  }
+  .reading-progress-global { position: fixed; z-index: 40; top: var(--header-height); left: 0; width: 100%; height: 3px; background: transparent; }
+  .reading-progress-global span { display: block; width: 0; height: 100%; background: var(--color-primary); }
 
   .post__bar {
     display: flex;
@@ -206,22 +283,48 @@ const article = {
   .post__dot { color: var(--color-gray-light); }
 
   .post__cierre {
-    margin-top: clamp(2.5rem, 4vw, 3.6rem);
+    margin: 0;
     padding: clamp(1.5rem, 2.4vw, 2.2rem);
     background: var(--color-light);
     border: var(--border);
     border-left: 3px solid var(--color-primary);
     border-radius: var(--radius-lg);
-    max-width: 74ch;
   }
   .post__cover { margin: 0 0 2rem; }
-  .post__cover img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: var(--border); border-radius: var(--radius-lg); }
+  .post__cover img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border: var(--border); border-radius: var(--radius-lg); }
   .post__cover figcaption { margin-top: 0.55rem; color: var(--color-gray); font-size: 0.8rem; line-height: 1.45; }
   .post__cierre-t { margin: 0 0 0.4rem; font-weight: 800; font-size: 1.05rem; }
   .post__cierre-p { margin: 0 0 1.2rem; color: var(--color-gray); font-size: 0.92rem; }
   .post__cierre-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .post__author { margin: 0; padding: 1.25rem 1.35rem; border: var(--border); border-left: 3px solid var(--color-primary); border-radius: var(--radius-lg); background: var(--color-white); color: var(--color-gray); font-size: var(--fs-sm); line-height: 1.55; }
+  .post__author p { margin: 0.35rem 0; }
+  .post__author-name { color: var(--color-dark); font-weight: 800; }
+  .post__author a { display: inline-block; margin-top: 0.35rem; color: var(--color-primary); font-weight: 800; text-decoration: none; }
+  .related-grid { display: grid; grid-template-columns: 1fr; gap: var(--gap-grid); }
+  @media (min-width: 600px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 960px) { .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
 </style>
+
+<script>
+  const articleForProgress = document.getElementById('articulo');
+  const reduceProgressMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (articleForProgress && !reduceProgressMotion) {
+    const globalBar = document.querySelector<HTMLElement>('[data-reading-progress-global]');
+    let pending = false;
+    const updateProgress = () => {
+      pending = false;
+      const rect = articleForProgress.getBoundingClientRect();
+      const range = Math.max(1, articleForProgress.offsetHeight - window.innerHeight * 0.45);
+      const percent = Math.min(100, Math.max(0, (-rect.top + window.innerHeight * 0.2) / range * 100));
+      if (globalBar) globalBar.style.width = `${percent}%`;
+    };
+    const requestProgress = () => { if (!pending) { pending = true; requestAnimationFrame(updateProgress); } };
+    window.addEventListener('scroll', requestProgress, { passive: true });
+    window.addEventListener('resize', requestProgress, { passive: true });
+    requestProgress();
+  }
+</script>
