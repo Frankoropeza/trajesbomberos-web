@@ -1,6 +1,6 @@
 ---
 // Hero canónico del sitio — idéntico en L1, L2 y L3.
-// Dos columnas: izquierda title + accent (H1 ÚNICO, con la kw
+// Dos columnas al 50/50: izquierda title + accent (H1 ÚNICO, con la kw
 // principal), subtitle y fila de datos duros; derecha descRight[]
 // como panel de contexto. Los CTA no viven aquí: "el hero
 // presenta, la franja convierte" (van en SectionMenu, debajo).
@@ -74,11 +74,15 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image, solid = f
     opacity: 0.9;
     z-index: 2;
   }
+  /* Dos columnas al 50 % exacto del ancho útil. El separador vive
+     en el centro del gap (no pegado al texto) para que ambas
+     mitades pesen lo mismo visualmente. */
   .hero-grid {
+    --hero-gap: clamp(3rem, 7vw, 8rem);
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
-    gap: clamp(2rem, 5vw, 5rem);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--hero-gap);
     align-items: center;
     z-index: 1;
   }
@@ -142,19 +146,42 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image, solid = f
     flex-shrink: 0;
   }
 
-  .hero-panel {
-    border-left: 3px solid var(--color-primary);
-    padding: 0.2rem 0 0.2rem 1.6rem;
+  .hero-left .hero-subtitle { max-width: none; }
+  .hero-right { position: relative; align-self: stretch; display: flex; align-items: center; }
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--hero-gap) / -2);
+    width: 1px;
+    background: linear-gradient(180deg, transparent 0%, rgb(255 255 255 / 0.16) 18%, rgb(255 255 255 / 0.16) 82%, transparent 100%);
   }
+  /* Acento rojo centrado sobre el separador (sustituye el borde
+     izquierdo del panel: un solo divisor, no dos). */
+  .hero-right::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(var(--hero-gap) / -2 - 1px);
+    width: 3px;
+    height: 4.5rem;
+    transform: translateY(-50%);
+    background: var(--color-primary);
+  }
+  .hero-panel { padding: 0; }
+  .hero-subtitle, .hero-panel p { text-wrap: pretty; }
   .hero-panel p {
-    color: #b9bec5;
-    font-size: var(--fs-sm);
-    margin: 0 0 1rem;
+    color: #c3c8cf;
+    font-size: var(--fs-lead);
+    line-height: 1.65;
+    margin: 0 0 1.15rem;
   }
   .hero-panel p:last-child { margin-bottom: 0; }
 
   @media (max-width: 1024px) {
     .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-right::before, .hero-right::after { display: none; }
     .hero-panel { border-left: 0; border-top: 3px solid var(--color-primary); padding: 1.2rem 0 0; }
   }
   @media (max-width: 768px) { .hero__veil { background: rgba(15, 18, 22, .88); } }
