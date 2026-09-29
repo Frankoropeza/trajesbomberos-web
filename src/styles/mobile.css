@@ -8,7 +8,6 @@
 /* mobile.css · área táctil mínima 44px (Apple HIG · WCAG 2.5.5). */
 @media (max-width: 1024px) {
   .mob-direct, .mob-item__trigger { min-height: 48px; }
-  .mob-item__link { min-height: 44px; display: flex; align-items: center; }
   a, button, label { -webkit-tap-highlight-color: rgba(200, 16, 46, .15); }
 }
 
