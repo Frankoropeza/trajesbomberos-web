@@ -8,8 +8,8 @@ descRight:
   - "Aquí está qué se consolidó, qué NO entró en la consolidación —el forestal, por ejemplo, sigue por su cuenta— y cómo se redacta hoy la referencia normativa para que tu expediente no se caiga por una cita vieja."
 meta:
   - "4 normas en 1 documento"
-  - "Vigente desde sep-2024"
-  - "Edición 2025"
+  - "Traje, uniforme, ERA y PASS"
+  - "Sustituye a la NFPA 1971"
   - "Forestal queda fuera"
 resumen: "La NFPA 1970 consolidó cuatro normas —1971, 1975, 1981 y 1982— en un solo documento. Qué entró, qué se quedó fuera y cómo citarla en un pliego sin que te tumben la propuesta."
 categoria: "normas"
@@ -41,7 +41,7 @@ La NFPA 1970 agrupó cuatro estándares que antes se compraban, se citaban y se 
 | NFPA 1981 | Equipo de respiración autónoma de circuito abierto (ERA / SCBA) |
 | NFPA 1982 | PASS, el dispositivo de alerta personal por inmovilidad |
 
-La consolidación entró en vigor en **septiembre de 2024**, y la primera edición del documento consolidado es la de **2025**.
+La consolidación ya está en vigor: en un pliego se cita la **NFPA 1970** con su edición vigente, no las normas que absorbió.
 
 La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el mismo cuerpo y sus requisitos de interfaz se contradecían con cierta frecuencia cuando vivían en documentos distintos con ciclos de revisión distintos. Un solo documento obliga a que las interfaces sean coherentes.
 
@@ -49,7 +49,7 @@ La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el m
 
 Esto es lo que más confusión provoca en México, así que conviene decirlo claro:
 
-- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 —rescate técnico—, NFPA 1977 —forestal— y NFPA 1999 —operaciones médicas—. En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
+- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950**, que agrupó las antiguas NFPA 1951 —rescate técnico—, NFPA 1977 —forestal— y NFPA 1999 —operaciones médicas—. En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
 - La misma NFPA 1950 rige el **rescate técnico y la extricación**, que tampoco están en la 1970. Trae un periodo de gracia de 18 meses para producto certificado bajo las ediciones anteriores.
 - Los **trajes de entrada a la flama** siguen sin tener una norma NFPA de producto específica. Se especifican contra la ficha técnica del fabricante, como explicamos en la ficha de [trajes de entrada](/trajes/entrada/).
 - La **selección, cuidado y mantenimiento** del equipo tampoco está aquí: eso vive en la NFPA 1850, que a su vez consolidó las viejas 1851 y 1852. Son documentos hermanos con funciones distintas: **1970 dice cómo debe ser el equipo; 1850 dice cómo debes cuidarlo.**
@@ -58,7 +58,7 @@ Esto es lo que más confusión provoca en México, así que conviene decirlo cla
 
 Tres consecuencias prácticas, en orden de importancia:
 
-**1. La cita cambia de forma.** Ya no basta con "cumple NFPA 1971". Hoy se escribe indicando el documento vigente y el capítulo aplicable al conjunto estructural. Un proveedor que en 2026 sigue citando exclusivamente la 1971 te está diciendo, sin querer, cuándo actualizó por última vez su catálogo.
+**1. La cita cambia de forma.** Ya no basta con "cumple NFPA 1971". Hoy se escribe indicando el documento vigente y el capítulo aplicable al conjunto estructural. Un proveedor que sigue citando exclusivamente la 1971 te está diciendo, sin querer, cuándo actualizó por última vez su catálogo.
 
 **2. La certificación sigue siendo del conjunto, no de la tela.** Esto no cambió y sigue siendo el punto donde más se confunde el comprador mexicano. El fabricante del traje terminado es quien está listado ante el organismo certificador. "Fabricado con material certificado" no equivale a "traje certificado". Si la ficha no dice a nombre de quién está la certificación y ante qué laboratorio, todavía no tienes el dato.
 

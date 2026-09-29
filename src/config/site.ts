@@ -243,7 +243,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     guia: {
       titulo: 'Qué norma aplica a cada traje',
       parrafos: [
-        'La NFPA 1970, edición 2025, es la referencia para el traje estructural y de proximidad: consolidó a la antigua NFPA 1971 junto con otras normas de equipo. El equipo forestal y de rescate técnico se rige por la NFPA 1950, y el ciclo de inspección, lavado, reparación y retiro, por la NFPA 1850.',
+        'La NFPA 1970 es la referencia para el traje estructural y de proximidad: consolidó a la antigua NFPA 1971 junto con otras normas de equipo. El equipo forestal y de rescate técnico se rige por la NFPA 1950, y el ciclo de inspección, lavado, reparación y retiro, por la NFPA 1850.',
         'En México las NFPA son referencia técnica voluntaria: se vuelven exigibles cuando un pliego o una especificación de compra las incorpora. Lo obligatorio para el empleador es la NOM-017-STPS-2024, de equipo de protección personal, y para las brigadas contra incendio, la NOM-002-STPS-2010.',
         'Aquí se explica qué pide cada norma en la práctica, cómo citarla en una requisición y qué revisar en el certificado.',
       ],

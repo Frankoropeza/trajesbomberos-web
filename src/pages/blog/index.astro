@@ -71,7 +71,6 @@ const directoryItems = posts.map((p) => ({
           title={destacado.data.title}
           resumen={destacado.data.resumen}
           categoria={destacado.data.categoria}
-          fecha={destacado.data.fecha}
           lectura={readingTime(destacado.body)}
           image={destacado.data.imagen}
           imageAlt={destacado.data.imagenAlt}
@@ -87,7 +86,7 @@ const directoryItems = posts.map((p) => ({
       <div class="layout-main">
         <SectionHeading
           eyebrow="Últimos artículos"
-          title="Todo lo publicado, de lo más reciente a lo más viejo"
+          title="Todas las guías sobre trajes para bomberos"
           description="Cinco categorías: cómo especificar, normas y certificación, comparativas entre familias, vida útil y servicio, y compras y licitación."
         />
         {resto.length > 0 ? (
@@ -98,7 +97,6 @@ const directoryItems = posts.map((p) => ({
                 title={p.data.title}
                 resumen={p.data.resumen}
                 categoria={p.data.categoria}
-                fecha={p.data.fecha}
                 lectura={readingTime(p.body)}
                 image={p.data.imagen}
                 imageAlt={p.data.imagenAlt}

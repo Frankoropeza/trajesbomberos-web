@@ -4,14 +4,13 @@
 // para que el blog no parezca de otro sitio. NO emite schema:
 // el índice padre emite el ItemList (regla B3).
 // Variante "wide": artículo destacado, a dos columnas.
-import { categoriaNombre, formatFechaCorta } from '@lib/blog';
+import { categoriaNombre } from '@lib/blog';
 
 interface Props {
   href: string;
   title: string;
   resumen: string;
   categoria: string;
-  fecha: Date;
   lectura: number;
   image?: string;
   imageAlt?: string;
@@ -19,7 +18,7 @@ interface Props {
   wide?: boolean;
   index?: number;
 }
-const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', destacado = false, wide = false, index = 0 } = Astro.props;
+const { href, title, resumen, categoria, lectura, image, imageAlt = '', destacado = false, wide = false, index = 0 } = Astro.props;
 ---
 <a class:list={['post-card', { 'post-card--wide': wide }]} href={href}>
   {image && (
@@ -36,8 +35,6 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
   <p class="post-card__resumen">{resumen}</p>
   <div class="post-card__foot">
     <span class="post-card__meta">
-      <time datetime={fecha.toISOString()}>{formatFechaCorta(fecha)}</time>
-      <span aria-hidden="true">·</span>
       <span>{lectura} min de lectura</span>
     </span>
     <span class="post-card__cta">

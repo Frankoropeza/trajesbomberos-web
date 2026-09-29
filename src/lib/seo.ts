@@ -146,7 +146,7 @@ export interface ArticleInput {
   headline: string;
   description: string;
   url: string;
-  datePublished: string;      // ISO
+  datePublished?: string;     // ISO. El blog es atemporal: no se envía.
   dateModified?: string;      // ISO
   image?: string;
   section?: string;
@@ -163,8 +163,8 @@ export function articleSchema(a: ArticleInput): object {
     description: a.description,
     url: a.url,
     mainEntityOfPage: { '@type': 'WebPage', '@id': a.url },
-    datePublished: a.datePublished,
-    dateModified: a.dateModified ?? a.datePublished,
+    ...(a.datePublished ? { datePublished: a.datePublished } : {}),
+    ...(a.dateModified || a.datePublished ? { dateModified: a.dateModified ?? a.datePublished } : {}),
     inLanguage: SITE.lang,
     isAccessibleForFree: true,
     author: { '@id': `${SITE.url}/#organization` },

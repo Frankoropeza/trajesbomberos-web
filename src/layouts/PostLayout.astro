@@ -21,8 +21,6 @@ import {
   categoriaUrl,
   categoriaNombre,
   relatedPosts,
-  formatFecha,
-  isoFecha,
   readingTime,
   wordCount,
 } from '@lib/blog';
@@ -51,17 +49,16 @@ const menuItems = [
 ];
 
 // Datos duros del hero: si el artículo no los declara, se arma
-// uno honesto con categoría, fecha y tiempo de lectura.
+// uno con categoría y tiempo de lectura. Blog atemporal: ninguna
+// fecha visible ni en schema (decisión de Frank, 2026-09-29).
 const heroMeta = d.meta.length
   ? d.meta
-  : [categoriaNombre(d.categoria), formatFecha(d.fecha), `${lectura} min de lectura`];
+  : [categoriaNombre(d.categoria), `${lectura} min de lectura`];
 
 const article = {
   headline: d.title,
   description: d.description,
   url,
-  datePublished: isoFecha(d.fecha),
-  dateModified: isoFecha(d.actualizado ?? d.fecha),
   section: categoriaNombre(d.categoria),
   keywords: d.keywords,
   wordCount: palabras,
@@ -91,21 +88,9 @@ const article = {
     <div class="container layout-grid layout-grid--post">
       <div class="layout-main">
         <article id="articulo" class="post">
-          <!-- Ficha del artículo: quién responde por esto y desde cuándo -->
+          <!-- Ficha del artículo: categoría, lectura y quién responde por esto (sin fechas: blog atemporal) -->
           <div class="post__bar">
             <a class="post__cat" href={categoriaUrl(d.categoria)}>{categoriaNombre(d.categoria)}</a>
-            <span class="post__dot" aria-hidden="true">·</span>
-            <span class="post__dato">
-              Publicado el <time datetime={isoFecha(d.fecha)}>{formatFecha(d.fecha)}</time>
-            </span>
-            {d.actualizado && (
-              <>
-                <span class="post__dot" aria-hidden="true">·</span>
-                <span class="post__dato">
-                  Actualizado el <time datetime={isoFecha(d.actualizado)}>{formatFecha(d.actualizado)}</time>
-                </span>
-              </>
-            )}
             <span class="post__dot" aria-hidden="true">·</span>
             <span class="post__dato">{lectura} min de lectura</span>
             <span class="post__dot" aria-hidden="true">·</span>
@@ -167,7 +152,6 @@ const article = {
               title={p.data.title}
               resumen={p.data.resumen}
               categoria={p.data.categoria}
-              fecha={p.data.fecha}
               lectura={readingTime(p.body)}
               image={p.data.imagen}
               imageAlt={p.data.imagenAlt}
