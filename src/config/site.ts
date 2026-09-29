@@ -7,7 +7,6 @@
 // poder nombrarlas como tales (hoy solo referencia técnica).
 // ============================================================
 
-import { SECCIONES } from '@lib/catalogo/secciones';
 import { data as MARCAS_DATA } from '@lib/catalogo/data/marcas';
 
 export const SITE = {
@@ -418,8 +417,6 @@ export const MENU: MenuItem[] = [
 // SectionMenu conserva este formato compacto por compatibilidad.
 export const NAV = MENU.map(({ label, href }) => ({ label, href }));
 
-const seccionPublicada = (slug: string) => SECCIONES.some((seccion) => seccion.slug === slug);
-
 // Complementos del conjunto. NO son línea de negocio: se cotizan
 // junto al traje para cerrar el equipamiento del elemento.
 export const COMPLEMENTOS = [
@@ -468,53 +465,75 @@ export const MARCAS_MATERIAL: Marca[] = [
   { nombre: 'TenCate · Safety Components', origen: 'Exterior', nota: 'Tejedores de tela exterior certificada' },
 ];
 
-// Footer compacto: cuatro columnas de máximo 6 enlaces. Las 36
-// fichas L4 NO van aquí — se llega a ellas desde /trajes/<familia>/
-// y desde el submenú del header. Un footer con 40 enlaces no
-// orienta a nadie y diluye el reparto de autoridad interna.
-export const FOOTER_COLUMNS = [
-  {
-    title: 'Familias de traje',
-    links: [
-      ...PRODUCT_CATEGORIES.map((c) => ({ label: c.nombre, href: `/trajes/${c.slug}/` })),
-    ],
-  },
-  {
-    title: 'Catálogo de equipo',
-    links: [
-      ...([
-        ['cascos', 'Cascos para bombero'], ['equipo-de-respiracion-autonoma', 'Equipo de respiración (ERA)'], ['botas', 'Botas para bombero'],
-        ['guantes', 'Guantes para bombero'], ['capuchas', 'Monjas y capuchas'], ['kits', 'Kits por operación'], ['marcas', 'Marcas que surtimos'],
-      ] as [string, string][]).filter(([slug]) => seccionPublicada(slug)).map(([slug, label]) => ({ label, href: `/${slug}/` })),
-      { label: 'Modelos de traje', href: '/trajes/#modelos' },
-    ],
-  },
-  {
-    title: 'Guía técnica',
-    links: [
-      { label: 'Anatomía del traje', href: '/#anatomia' },
-      { label: 'Cómo especificar', href: '/#especificar' },
-      { label: 'Errores de compra', href: '/#errores' },
-      { label: 'Normas aplicables', href: '/#normas' },
-      { label: 'Vida útil y servicio', href: '/#vida-util' },
-      { label: 'Marcas de referencia', href: '/#marcas' },
-    ],
-  },
-  {
-    title: 'Blog técnico',
-    links: [
-      ...BLOG_CATEGORIES.map((c) => ({ label: c.nombre, href: `/blog/categoria/${c.slug}/` })),
-      { label: 'Ver todos los artículos', href: '/blog/' },
-    ],
-  },
-  {
-    title: 'Quién compra',
-    links: [
-      { label: 'Brigada industrial', href: '/#segmentos' },
-      { label: 'Gobierno y licitación', href: '/#segmentos' },
-      { label: 'Cuerpos voluntarios', href: '/#segmentos' },
-      { label: 'Comparar familias', href: '/trajes/' },
-      { label: 'Preguntas frecuentes', href: '/#faq' },
-    ],
-  },
-] as const;
+export interface FooterLink {
+  label: string;
+  href?: string;
+}
+
+export interface FooterColumn {
+  title: string;
+  links: FooterLink[];
+}
+
+// Footer: su piso de catálogo deriva de MENU para mantener la navegación
+// principal y secundaria alineadas. El segundo piso concentra soporte.
+export const FOOTER = {
+  catalogo: [
+    {
+      title: 'Trajes para bomberos',
+      links: [...MENU[0].columns[0].links, { label: 'Trajes para bomberos por familia', href: '/trajes/' }],
+    },
+    {
+      title: 'Piezas del traje',
+      links: MENU[0].columns[1].links,
+    },
+    {
+      title: 'Equipo de protección',
+      links: [...MENU[1].columns.map(({ title, href }) => ({ label: title, href: href! })), { label: 'Kits de equipo completo para bombero', href: '/kits/' }],
+    },
+    {
+      title: 'Rescate y herramientas',
+      links: [...MENU[2].columns.filter(({ title }) => title !== 'Kits para bomberos').map(({ title, href }) => ({ label: title, href: href! })), { label: 'Modelos de trajes de bomberos', href: '/trajes/#modelos' }],
+    },
+    {
+      title: 'Marcas y modelos',
+      links: [
+        ...MENU[3].columns[0].links,
+        { label: 'Marcas de equipo para bomberos', href: '/marcas/' },
+        ...MENU[3].columns[1].links.slice(1),
+      ],
+    },
+    {
+      title: 'Guías técnicas',
+      links: [...BLOG_CATEGORIES.map((categoria) => ({ label: categoria.nombre, href: `/blog/categoria/${categoria.slug}/` })), { label: 'Blog técnico de trajes para bomberos', href: '/blog/' }],
+    },
+  ] satisfies FooterColumn[],
+  soporte: [
+    {
+      title: 'Guías más consultadas',
+      links: MENU[4].columns[1].links.filter(({ href }) => href !== '/blog/tpp-y-thl-traje-estructural/'),
+    },
+    {
+      title: 'Compra y licitación',
+      links: [
+        ...MENU[4].columns[2].links.filter(({ href }) => ['/blog/licitacion-trajes-bomberos-expediente/', '/blog/nom-002-stps-2010-equipo-para-brigadas/'].includes(href ?? '')),
+        { label: 'TPP y THL del traje estructural', href: '/blog/tpp-y-thl-traje-estructural/' },
+        { label: 'Preguntas frecuentes sobre trajes de bombero', href: '/#faq' },
+        { label: 'Solicitar cotización de trajes', href: '/#cotizar' },
+      ],
+    },
+    {
+      title: 'TrajesBombero México',
+      links: [
+        { label: 'Proveedor de trajes para bomberos', href: '/empresa/' },
+        { label: 'Contacto para cotizar trajes', href: '/contacto/' },
+        { label: 'Aviso de privacidad', href: '/aviso-de-privacidad/' },
+        { label: 'Términos y condiciones', href: '/terminos-y-condiciones/' },
+      ],
+    },
+  ] satisfies FooterColumn[],
+  legales: [
+    { label: 'Aviso de privacidad', href: '/aviso-de-privacidad/' },
+    { label: 'Términos y condiciones', href: '/terminos-y-condiciones/' },
+  ] satisfies FooterLink[],
+} as const;
