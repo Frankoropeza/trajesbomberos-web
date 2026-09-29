@@ -1,56 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_G: Record<string, Record<string, Duo>> = {
-  '/guantes/romak-firemax-vi/': {
-    caracteristicas: [
-      'Romak Fire Firemax VI usa piel tratada color oro, corte gun, pulgar tipo ala y forro térmico de aramida. Sus refuerzos de palma y banda elástica se revisan con talla, puño y actividad de brigada, sin asumir equivalencia automática.',
-      'En la cotización confirma por escrito el código GIS1008, corte, refuerzos y tallas M/G estándar o XG. Ese detalle permite comparar el guante con el procedimiento de respuesta inicial y recibir la configuración solicitada.',
-    ],
-    faq: [
-      'Quien revisa este guante consulta su piel tratada, corte gun, pulgar tipo ala y forro térmico de aramida. También confirma las tallas M/G estándar y XG, así como sus límites frente a otra operación.',
-      'Envía por WhatsApp el número de pares, tallas y actividad que cubrirá la brigada. Con esos elementos se prepara una cotización que identifique el Firemax VI por GIS1008, construcción y estatus sin norma declarada.',
-    ],
-    ficha: [
-      'El registro técnico del guante identifica código GIS1008, piel tratada color oro, corte gun, pulgar tipo ala, forro térmico de aramida y puño tejido de Kevlar. El fabricante declara el modelo sin norma.',
-      'Pide la especificación por escrito con tallas M/G estándar o XG antes de emitir la requisición. Así se cotejan refuerzos, costuras y código al recibir, sin presentar el estatus sin norma declarada como certificación.',
-    ],
-  },
-  '/guantes/skold-fpgs/': {
-    caracteristicas: [
-      'Sköld Guante de bombero FPGS reúne carnaza de res, corte de pistola, pulgar tipo ala y forro completo de modacrílico SEF. La construcción se prueba con palma, dedos y puño junto al chaquetón antes de decidir una compra estructural.',
-      'Solicita por escrito código FPGS, talla unitalla, carnaza, forro SEF y puño elástico de Kevlar. Confirmar esos rasgos evita que un cambio de construcción se oculte bajo el mismo nombre durante la recepción.',
-    ],
-    faq: [
-      'Durante la prueba del guante se revisan carnaza de res, forro de modacrílico SEF, puño de Kevlar y banda elástica en muñeca, además del uso con boquilla, radio y manga estructural de servicio.',
-      'Para recibir respuesta por WhatsApp comparte cantidad y herramientas habituales. Con ese contexto se revisa el ajuste unitalla, la compatibilidad de puño y chaquetón, y la declaración del FPGS sin atribuirle certificación publicada.',
-    ],
-    ficha: [
-      'La especificación del guante estructural debe incluir código, carnaza de res de 1.5–1.7 mm, forro SEF, puño Kevlar y talla unitalla para compra. El fabricante declara NFPA 1971 ed. 2013, OSHA y Cal-OSHA.',
-      'Antes de cerrar la partida, solicita el documento aplicable por escrito con su configuración. Mantener código y declaración normativa en la orden permite verificar el guante entregado sin llamar certificado a un estatus declarado.',
-    ],
-    otros: [
-      'Dentro del uso estructural, este guante se compara con Veridian Fire Pro II por carnaza, forro SEF, puño Kevlar y talla unitalla, no por el nombre de la categoría ni por una imagen similar.',
-      'Contrasta ambos modelos con la manga, boquilla y tallas reales de la corporación. Solicita sus fichas por separado para conservar el estatus normativo propio de cada uno y elegir el que se adapte a la maniobra documentada.',
-    ],
-  },
-  '/guantes/veridian-fire-pro-ii/': {
-    caracteristicas: [
-      'Veridian Fire Pro II utiliza cuero tratado, costuras reforzadas y tres capas interiores: FR-modacrílico, Pyrotec y barrera hidrófuga químico-biológica. Se contrasta con destreza al manejar radio, boquilla y herramienta dentro del conjunto estructural.',
-      'En la propuesta pide código GIS1017, tallas, cuero tratado, Pyrotec y puño reforzado con Nomex. Tener esos elementos por escrito hace verificable la construcción solicitada entre la muestra de prueba y la entrega.',
-    ],
-    faq: [
-      'Al cerrar la mano durante una maniobra estructural de respuesta, se revisan las capas del guante: cuero tratado, FR-modacrílico, Pyrotec y barrera hidrófuga química, junto con el solape del chaquetón en servicio.',
-      'Escribe por WhatsApp tallas, número de usuarios y equipo habitual. Esos datos permiten solicitar el Fire Pro II con sus barreras declaradas, puño de dos pulgadas reforzado con Nomex y prueba operativa.',
-    ],
-    ficha: [
-      'La ficha del guante estructural debe señalar GIS1017, cuero tratado, FR-modacrílico, Pyrotec y barrera hidrófuga químico-biológica en tres capas interiores. El fabricante lo declara certificado UL, con NFPA 1971-2018 listada por UL.',
-      'Solicita la ficha escrita junto con tallas y condiciones de la partida. Al recibir, ese documento permite revisar código, puño reforzado y capas declaradas sin extender la certificación a un guante distinto.',
-    ],
-    otros: [
-      'Frente a Sköld FPGS, el guante se revisa en prueba operativa por cuero tratado, barreras interiores, forro SEF y ajuste. La familia estructural común no elimina diferencias de talla, construcción o documentación.',
-      'Pide cotizaciones separadas y prueba cada alternativa con manga, radio y herramienta. Así la corporación puede elegir con el mismo criterio funcional y mantener en el expediente la declaración normativa correspondiente a cada configuración.',
-    ],
-  },
   '/trajes/hazmat/': {
     completa: [
       'El equipo Hazmat se cierra al definir la compatibilidad entre traje químico, casco, guantes, botas y respiración. No basta sumar piezas: las uniones de manga, puño, caña y protección respiratoria deben responder al agente y a la tarea evaluada.',

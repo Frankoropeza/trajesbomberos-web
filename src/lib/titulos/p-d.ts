@@ -247,18 +247,4 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Incluye bota y pantalón reales en la prueba de recepción. De esa forma se corrige una abertura o velcro insuficiente antes de la maniobra, sin esperar a descubrir que la polaina se mueve o deja expuesto el calzado bajo calor.',
     ],
   },
-  '/trajes/aproximacion/modelos/romak-mark-one/': {
-    caracteristicas: [
-      'El traje de aproximación Romak Fire Mark One MPX-8 declara un sistema de cuatro capas, exterior Nor-Fab MPX-8 aluminizada, Omni Synergy y Stedair 3000. También integra DRD, porta micrófono, porta radio, tirantes H y rodilleras ortopédicas que deben confirmarse en la configuración ofertada.',
-      'Pide que BOM1046, capas, opción de tirantes y accesorios queden escritos en la cotización. Ensayar radio, máscara, ERA, casco y guantes con el traje revela enganches o presión antes de recibir una configuración que no coincide con las maniobras aeroportuarias o industriales previstas.',
-    ],
-    faq: [
-      'Las dudas sobre el traje de aproximación Mark One MPX-8 se concentran en la operación y la certificación. Se publica para proximidad aeroportuaria e industrial, con certificación UL MH48840; además aclara exterior Nor-Fab MPX-8 aluminizada y código BOM1046.',
-      'Envía por WhatsApp cantidad, tallas, operación y accesorios de comunicación o ERA. Con esos datos se prepara una partida que identifica el modelo y su configuración, y se solicita la declaración de conformidad sin trasladar su condición a otros trajes de Romak Fire.',
-    ],
-    ficha: [
-      'El traje de aproximación Romak Fire Mark One MPX-8 se identifica como BOM1046, con exterior Nor-Fab MPX-8 aluminizada de 17 % Basofil y 83 % para-aramida, barrera Omni Synergy y Stedair 3000. Declara certificación UL MH48840 para NFPA 1971:2018 proximidad.',
-      'Copia código, cuatro capas, talla, tirantes H y accesorios al anexo técnico. Pide por escrito la declaración de conformidad para la configuración elegida: la certificación UL publicada pertenece a este modelo y debe acompañar la partida, no asumirse para otra variante.',
-    ],
-  },
 };

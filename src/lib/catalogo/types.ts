@@ -83,4 +83,6 @@ export interface Modelo {
   notaCompra?: string;
   /** Enlaces contextuales a piezas de la familia (solo modelos de traje). */
   relacionados?: { label: string; href: string }[];
+  /** Dúos (dos párrafos junto al título) de los módulos de la ficha del modelo. */
+  duos?: Partial<Record<'ficha' | 'caracteristicas' | 'otros' | 'faq', [string, string]>>;
 }

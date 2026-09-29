@@ -136,7 +136,7 @@ const metaRuta = metaSeo(path);
 const faqsFicha = [...(metaRuta?.faqsExtra ?? []), ...((isTipo ? tipo.faq : modelo.faq) ?? [])];
 if (metaRuta?.h1) { h1Ficha = metaRuta.h1; h1Accent = undefined; }
 const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
-const copy: Bloque[] = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
+const copy: Bloque[] = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: undefined }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 const waFicha = `Hola, quiero la ficha técnica de ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 // Ficha rápida del modelo (arriba, junto a la foto): lo que el comprador compara primero.
@@ -161,9 +161,9 @@ const producto: ProductoInput | undefined = seccion.slug === 'marcas' ? undefine
   propiedades: propiedadesDeFicha(isTipo ? (tipo.especificacion ?? []) : rows.filter((r) => !/^(Marca|Fabricante|Código)$/.test(r.campo))),
   ...(componentesKit.length ? { componentes: componentesKit.map((c) => ({ name: c.nombre, url: c.href })) } : {}),
 };
-const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
-// Dúos de la ficha de tipo: viven en el propio tipo (fuente única); si faltan, SectionHeading busca por `clave`.
-const duosTipo = isTipo ? tipo.duos ?? {} : {};
+
+// Dúos de la ficha (tipo o modelo): viven en el propio dato (fuente única); si faltan, SectionHeading busca por `clave`.
+const duosTipo: Partial<Record<string, [string, string]>> = (isTipo ? tipo.duos : modelo.duos) ?? {};
 const bloqueElegir = copy.slice(1).find((block) => block.id);
 const menuFicha = [
   { label: 'A fondo', href: '#a-fondo' },
@@ -173,7 +173,7 @@ const menuFicha = [
   { label: 'Preguntas frecuentes', href: '#faq' },
 ];
 ---
-<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} producto={producto} menuItems={menuFicha} footerCta={{ title: `Cotiza ${nombreFrase}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
+<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : modelo.resumen?.slice(1) ?? []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} producto={producto} menuItems={menuFicha} footerCta={{ title: `Cotiza ${nombreFrase}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   {!isTipo && (
     <div class="section producto"><div class="container">
@@ -192,7 +192,6 @@ const menuFicha = [
           <p class="eyebrow">Ficha rápida</p>
           <NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} />
           <dl class="producto__datos">{rapida.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
-          {resumenExtra.map((p) => <p class="producto__nota">{p}</p>)}
           <div class="producto__cta">
             <a class="producto__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z" /></svg>Cotizar {nombre} por WhatsApp</a>
             <a class="producto__ficha" href={waUrl(waFicha)} target="_blank" rel="noopener nofollow">Pedir ficha técnica</a>
@@ -208,17 +207,17 @@ const menuFicha = [
       {isTipo && image && <div class="gallery"><figure><img src={image.src} {...responsive(image.src, SIZES.half)} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} />{image.origen === 'proveedor' ? <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption> : <figcaption>{seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.'}</figcaption>}</figure>{extras.map((extra) => <figure><img src={extra.src} {...responsive(extra.src, SIZES.tile)} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" /><figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption></figure>)}</div>}
     </div>{esMarca && copy.slice(1).map((block) => <div class="prose"><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</div>)}</section>
     {!esMarca && copy.slice(1).map((block) => <section class="block" id={block.id}><SectionHeading eyebrow={block.eyebrow ?? 'Cómo elegir'} title={block.h2} duo={block.parrafos} />{block.lista && <ul class="checks">{block.lista.map((item) => <li>{item}</li>)}</ul>}</section>)}
-    <section class="block" id="ficha"><SectionHeading clave="ficha" duo={duosTipo.ficha} eyebrow="Ficha técnica" title={isTipo ? (esMarca ? 'Datos para tu requisición' : `Datos para requisitar ${nombreFrase}`) : 'Especificación disponible'} /><SpecTable grupos={[{ grupo: isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}</strong> — {norma.alcance}</p>)}</section>
-    {!isTipo && <section class="block"><SectionHeading clave="caracteristicas" eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="features">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
+    <section class="block" id="ficha"><SectionHeading clave="ficha" duo={duosTipo.ficha} eyebrow="Ficha técnica" title={isTipo ? (esMarca ? 'Datos para tu requisición' : `Datos para requisitar ${nombreFrase}`) : `Ficha técnica de ${nombre}`} /><SpecTable grupos={[{ grupo: isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}</strong> — {norma.alcance}</p>)}</section>
+    {!isTipo && <section class="block"><SectionHeading clave="caracteristicas" duo={duosTipo.caracteristicas} eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="checks">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
     {isTipo && tipo.errores && <section class="block"><SectionHeading clave="errores" duo={duosTipo.errores} eyebrow="Antes de comprar" title={esMarca ? 'Errores que conviene evitar' : `Errores al comprar ${nombreFrase}`} /><ul class:list={[esMarca ? 'features' : 'checks']}>{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
     {!isTipo && seccion.slug !== 'trajes' && <p class="text">{modelo.notaCompra ?? <><strong>Antes de ordenar:</strong> revisa la guía de compra de <a href={`/${seccion.slug}/#elegir`}>{seccion.nombre.toLowerCase()}</a> para que la cotización llegue completa.</>}</p>}
-    {related.length > 0 && <section class="block"><SectionHeading clave="otros" eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title="Otros modelos disponibles" /><ModelosGrid modelos={related} cols={3} /></section>}
+    {related.length > 0 && <section class="block"><SectionHeading clave="otros" duo={duosTipo.otros} eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title={`Alternativas a ${nombre}`} /><ModelosGrid modelos={related} cols={3} /></section>}
     {familiaModelo && <section class="block" id="conjunto"><CompletaElConjunto familia={familiaModelo.slug} titulo={`Completa el conjunto con ${nombre}`} /></section>}
     {modelosMarca.length > 0 && <section class="block"><SectionHeading clave="marca" eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
     {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${nombreFrase} que surtimos`} duo={duosTipo.modelos ?? duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
     {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" duo={duosTipo.kit} eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><strong>{item.rol}:</strong> <a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading clave="faq" duo={duosTipo.faq} eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombreFrase}`} /><FAQWithContact items={faqsFicha} /></section>
-  </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Trajes {familiaModelo.nombreWa.toLowerCase()}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
+  </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>{familiaModelo.nombreWa}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
   <GuiasTecnicas ruta={path} tema={temaEnFrase(nombreFrase)} />
 </PageLayout>
 <style>

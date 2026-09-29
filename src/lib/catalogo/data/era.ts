@@ -645,51 +645,46 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "peso": "No especificado",
       "caracteristicas": [
         "Cilindro de fibra de carbono de 60 minutos a 4,500 psi",
-        "Máscara panorámica de silicón hipoalergénico con visión de 180° y doble sello",
-        "Malla de Nomex/Kevlar de cinco puntos, mica de policarbonato antirrayas y antiempaño",
-        "Regulador de primera etapa con reductor y alarma audible; segunda etapa de demanda con conexión rápida",
-        "Espaldera ligera con carga a cadera, manija de arrastre y correas revestidas de Nomex/Kevlar",
+        "Máscara panorámica de silicón con visión de 180° y doble sello",
+        "Malla de Nomex y Kevlar de cinco puntos",
+        "Mica de policarbonato antirrayas y antiempaño",
+        "Regulador de primera etapa con reductor y alarma audible",
+        "Segunda etapa de demanda con conexión rápida",
+        "Espaldera con carga a la cadera y manija de arrastre",
         "Manómetro análogo, prealarma y alarma de baja presión",
-        "Valija de ABS",
-        "Selección y servicio: prueba máscara, casco, capucha, reguladores y arnés como conjunto; conserva el control de cilindro por etiqueta y separa la unidad ante daño o funcionamiento anormal.",
-        "Control posterior a la intervención: documenta presión remanente, condición de la máscara, estado de correas, funcionamiento de prealarma y alarma de baja presión, además de cualquier golpe o contaminación. La limpieza debe respetar materiales y piezas del modelo. Antes de volver a montarlo, confirma que cilindro, válvula y acople coincidan con la configuración SCBA-P60FC autorizada; una adaptación improvisada invalida la revisión de compatibilidad que requiere una entrada segura."
+        "Valija de ABS"
       ],
       "notaCompra": "Antes de ordenar el Phantöm, solicita SCBA-P60FC con cilindro de 4,500 psi, máscara, reguladores, alarmas y la declaración de conformidad correspondiente a la configuración ofrecida; la referencia NFPA de 1997 no sustituye esa verificación.",
       "resumen": [
-        "Cotizamos el Sköld Phantöm SCBA-P60FC para una configuración de aire autónomo con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi, máscara panorámica y reguladores de dos etapas. Elige esta partida si tu operación requiere revisar el conjunto completo con casco, capucha y chaquetón antes de asignar tallas.",
-        "Te entregamos la referencia declarada acorde a NFPA edición 1997 y CE EN 137:2006, no una certificación NFPA vigente. Pídenos la declaración de conformidad y confirma tu requisito de operación; si necesitas una configuración distinta, cotizamos el modelo con sus componentes, conexión rápida y programa de servicio por escrito."
+        "El Sköld Phantöm SCBA-P60FC es un equipo de respiración autónoma para combate, con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi y máscara panorámica de silicón.",
+        "Incluye reguladores de primera y segunda etapa con conexión rápida, manómetro análogo, prealarma y alarma de baja presión, espaldera con carga a la cadera y valija de ABS.",
+        "Sköld lo declara acorde a NFPA edición 1997 y CE EN 137:2006. Si tu pliego exige NFPA 1970, lo revisamos contigo antes de cotizar para que la partida no quede corta."
       ],
       "descripcion": [
-        "Elige el Sköld Phantöm SCBA-P60FC si tu orden requiere un ERA de circuito abierto con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi para atmósferas IDLH, rescate o ataque a incendio. En la orden escribe código, presión, cilindro, máscara panorámica, reguladores y alarmas; nosotros cotejamos esa configuración con casco, capucha y chaquetón antes de surtirla.",
-        "La construcción reúne máscara panorámica de silicón hipoalergénico con visión de 180°, doble sello, copa nasal removible y mica de policarbonato antirrayas y antiempaño. Su malla de Nomex/Kevlar tiene cinco puntos y válvula de exhalación. En tu prueba de talla, ponte casco y capucha, mueve cuello y brazos, y elige otra talla si el sello cambia, la mica limita la visión o el conjunto se desplaza.",
-        "El Phantöm integra regulador de primera etapa con reductor y alarma audible, regulador de demanda de segunda etapa con conexión rápida y manómetro análogo en la correa derecha. La espaldera con carga a cadera, manija de arrastre, banda de cilindro tipo malla y correas Nomex/Kevlar se combina con traje, casco y capucha. Pídelo con valija de ABS, prealarma y alarma de baja presión si esos componentes deben venir en tu partida.",
-        "Para entrada, revisamos presión, válvula, acople del regulador, manómetro, prealarma y alarma de baja presión antes de que tu brigada use el SCBA-P60FC. Haz la prueba con guantes, casco y capucha, y anota presión inicial y número de serie al recibir el lote. Si la conexión rápida no asegura o el arnés altera el cuello del traje, sepáralo y pide el ajuste antes de aceptar la entrega.",
-        "El fabricante lo declara acorde a NFPA edición 1997 y CE EN 137:2006; no lo presentamos como certificación NFPA vigente. Pídenos la declaración de conformidad con la cotización. Después de uso, retira el Phantöm con golpe, calor, contaminación, fuga, alarma anormal, doble sello sin ajuste o mica dañada, limpia sus piezas conforme al fabricante y registra cilindro, válvula y acople autorizados."
+        "La máscara es de silicón hipoalergénico, con visión de 180°, doble sello y mica de policarbonato antirrayas y antiempaño. Se sujeta con una malla de Nomex y Kevlar de cinco puntos que reparte la presión en la cabeza.",
+        "La espaldera es ligera y lleva la carga a la cadera, no a los hombros, lo que se agradece en entradas largas. Sus correas están revestidas de Nomex y Kevlar, y tiene manija de arrastre para mover a un compañero.",
+        "Los 60 minutos son nominales: el tiempo real depende del esfuerzo y de la respiración de cada usuario. El aire se planea con reserva, no con el número del cilindro."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "SCBA-P60FC."
+          "q": "¿Qué norma declara el ERA Sköld Phantöm?",
+          "a": "Sköld lo declara acorde a NFPA edición 1997 y CE EN 137:2006. Es una declaración anterior a la NFPA 1970 vigente, y así lo indicamos en su ficha."
         },
         {
-          "q": "¿Declara NFPA vigente?",
-          "a": "No: declara una referencia NFPA edición 1997, que es antigua."
+          "q": "¿Cuánto aire tiene el Sköld Phantöm?",
+          "a": "Un cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi. El tiempo real depende del esfuerzo y de cada usuario."
         },
         {
-          "q": "¿Cuánto aire declara?",
-          "a": "60 minutos nominales a 4,500 psi."
+          "q": "¿Qué máscara trae el Phantöm?",
+          "a": "Una máscara panorámica de silicón hipoalergénico con visión de 180°, doble sello y mica antirrayas y antiempaño, sujeta con malla de Nomex y Kevlar."
         },
         {
-          "q": "¿Qué debe probarse con la máscara?",
-          "a": "Sello facial, capucha, casco, acceso al regulador y visibilidad durante movimiento."
+          "q": "¿Qué alarmas tiene el Sköld Phantöm?",
+          "a": "Prealarma y alarma de baja presión, además de la alarma audible del regulador de primera etapa. Su ficha no declara un PASS integrado."
         },
         {
-          "q": "¿Qué se inspecciona tras uso?",
-          "a": "Máscara, mica, válvulas, correas, acoples, cilindro e indicadores."
-        },
-        {
-          "q": "¿La autonomía es tiempo garantizado?",
-          "a": "No; cambia con el consumo y las condiciones de la intervención."
+          "q": "¿Cómo se prueba el Phantöm antes de comprarlo?",
+          "a": "Con casco, capucha y chaquetón puestos: el usuario se coloca la máscara, mueve cuello y brazos y confirma que el sello se mantiene y que alcanza la válvula."
         }
       ],
       "imagen": {
@@ -714,7 +709,21 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "60 min nominales",
         "4,500 psi",
         "NFPA 1997 declarada"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "El Sköld Phantöm se identifica con el código SCBA-P60FC. La tabla reúne cilindro, presión y norma tal como los publica su ficha.",
+          "La norma aparece como declaración del fabricante y con su edición original. Si tu requisito es NFPA 1970, pide el respaldo aplicable antes de ordenar."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del Phantöm: cilindro, máscara, reguladores, espaldera y alarmas.",
+          "Todo se cotiza como un solo conjunto. Mezclar piezas con otros equipos cambia la conexión y deja sin validez la prueba de compatibilidad."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Sköld Phantöm: norma, aire, máscara, alarmas y prueba de uso.",
+          "Si nos dices cuántos usuarios son y cómo recargan, te mandamos la cotización con la configuración completa."
+        ]
+      }
     },
     {
       "id": "msa-g1-industrial",
@@ -731,52 +740,43 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "material": "Cilindro de fibra de carbono",
       "tallas": "Máscara G1 talla M",
       "caracteristicas": [
-        "60 minutos nominales a 4,500 psi con cilindro de fibra de carbono y certificación DOT",
-        "Conexión roscada y cinta fotoluminiscente verde que indica presión",
-        "Arnés de Kevlar de cinco puntos con pad, correa al pecho y banda metálica de cilindro",
-        "Regulador de segunda etapa de cubierta dura y manómetro análogo",
+        "Cilindro de fibra de carbono DOT de 60 minutos a 4,500 psi",
+        "Conexión roscada",
+        "Cinta fotoluminiscente verde que indica presión",
+        "Arnés de Kevlar de cinco puntos con banda metálica",
+        "Regulador de segunda etapa de cubierta dura",
+        "Manómetro análogo",
         "Máscara G1 talla M con copa nasal y diafragma para hablar",
-        "Cintas con recubrimiento de nanoesferas; hombreras y soporte lumbar opcionales",
-        "Caja rígida",
-        "Aplicación industrial: integra permiso, monitoreo, vigilancia, comunicación y rescate; confirma la talla M de máscara y los accesorios opcionales antes de cerrar la configuración.",
-        "Preparación de disponibilidad: conserva la unidad en su caja rígida cuando se traslade, registra la inspección de arnés, regulador, manómetro, conexión roscada y máscara, y separa cualquier componente con daño o desempeño irregular. La carga con aire respirable y el control de la etiqueta del cilindro se coordinan con el permiso de entrada. Esta disciplina permite que la brigada conozca qué equipo está disponible antes de recibir una emergencia industrial."
+        "Hombreras y soporte lumbar opcionales",
+        "Caja rígida"
       ],
       "notaCompra": "Antes de ordenar el MSA G1 Industrial, confirma máscara G1 talla M, conexión roscada, cilindro DOT de 4,500 psi y los accesorios opcionales requeridos; la partida debe conservar el alcance industrial NIOSH declarado.",
       "resumen": [
-        "Surtimos el MSA G1 Industrial 10217600 para brigadas, industria y espacios confinados con cilindro de fibra de carbono DOT a 4,500 psi, 60 minutos nominales y máscara G1 talla M. Elige este ERA cuando tu entrada esté definida por permiso, monitoreo, vigilancia, comunicación y rescate, no para combate estructural.",
-        "Cotizamos conexión roscada, arnés de Kevlar de cinco puntos, regulador de cubierta dura y los opcionales que requiera tu brigada. Envíanos por WhatsApp tu casco, protección ocular, línea de vida y maniobra para probar la talla M y confirmar que el conjunto certificado NIOSH 42 CFR Parte 84 responde a tu operación industrial."
+        "El MSA G1 Industrial 10217600 es un equipo de respiración autónoma para brigadas industriales y espacios confinados, con certificación NIOSH 42 CFR Parte 84.",
+        "Lleva cilindro de fibra de carbono con certificación DOT, de 60 minutos nominales a 4,500 psi, conexión roscada, arnés de Kevlar de cinco puntos y máscara G1 talla M.",
+        "Es un equipo de alcance industrial: no se asigna a combate estructural. Para ataque interior te cotizamos un ERA conforme a NFPA 1970."
       ],
       "descripcion": [
-        "Elige el MSA G1 Industrial 10217600 para brigadas, industria o espacios confinados cuando tu orden requiera certificación NIOSH 42 CFR Parte 84, cilindro de fibra de carbono DOT a 4,500 psi y 60 minutos nominales. Escríbenos código, alcance industrial, conexión roscada y máscara G1 talla M; si tu tarea es combate estructural, pide un ERA conforme a NFPA 1970 en vez de extender esta configuración.",
-        "Su cilindro usa conexión roscada y cinta fotoluminiscente verde que indica presión, con arnés de Kevlar de cinco puntos, pad, correa al pecho y banda metálica. El regulador de segunda etapa tiene cubierta dura y el manómetro es análogo. En la prueba de uso, ajusta el arnés con casco, protección ocular y línea de vida; si el acceso, la extracción o la lectura de presión se dificultan, pide otra configuración antes de ordenar.",
-        "La máscara G1 talla M incorpora copa nasal y diafragma para hablar; las cintas tienen recubrimiento de nanoesferas con resistencia declarada al agua y químicos. Surtimos caja rígida para traslado y confirmamos hombreras y soporte lumbar solo como opcionales. Pídelos si tu prueba con traje, casco o herramienta los requiere, y conserva conexión roscada, regulador y cilindro como la misma familia de ERA.",
-        "Para una entrada industrial, verificamos contigo permiso, ruta de extracción, vigilancia, comunicación, conexión roscada, banda metálica, arnés de Kevlar, regulador y manómetro antes de aceptar un lote. Haz la prueba con la máscara G1 talla M y comunica presión y salida conforme a tu procedimiento. Si la cinta fotoluminiscente, el sello o el acceso al regulador fallan, separa la unidad y solicita servicio antes de asignarla.",
-        "MSA declara certificación NIOSH 42 CFR Parte 84 para esta configuración industrial; no la presentamos como certificación para combate estructural. Pide su declaración de conformidad con la cotización. Después de una exposición, limpia la interfaz facial conforme al fabricante, inspecciona cubierta dura, arnés, cilindro DOT y caja rígida, y retira cualquier componente con daño, sello comprometido o desempeño irregular."
+        "El G1 se integra al permiso de entrada, al monitoreo de la atmósfera y al plan de rescate de la planta. Su cinta fotoluminiscente verde indica la presión y facilita la lectura con poca luz.",
+        "El arnés de Kevlar de cinco puntos lleva pad, correa al pecho y banda metálica de cilindro. El regulador de segunda etapa tiene cubierta dura y la máscara G1 incluye copa nasal y diafragma para hablar.",
+        "Hombreras y soporte lumbar son opcionales, no vienen incluidos. Se piden si la prueba de uso los justifica, y se traslada en su caja rígida."
       ],
       "faq": [
         {
-          "q": "¿Para qué operación se usa?",
-          "a": "Para brigadas, industria y espacios confinados dentro del análisis de riesgo y procedimiento aplicable."
+          "q": "¿Para qué se usa el MSA G1 Industrial?",
+          "a": "Para brigadas industriales y entrada a espacios confinados, dentro del permiso, el monitoreo y el plan de rescate de la instalación."
         },
         {
-          "q": "¿Sirve para combate estructural?",
-          "a": "No. La ficha comunica una certificación industrial NIOSH; combate requiere ERA conforme a NFPA 1970."
+          "q": "¿El MSA G1 Industrial sirve para combate estructural?",
+          "a": "No. Su certificación NIOSH 42 CFR Parte 84 es de uso industrial. Para fuego interior se requiere un ERA conforme a NFPA 1970."
         },
         {
-          "q": "¿Qué talla de máscara incluye?",
-          "a": "Máscara G1 talla M."
+          "q": "¿Qué talla de máscara trae el MSA G1 Industrial?",
+          "a": "La máscara G1 talla M. Conviene confirmar el sello con cada usuario antes de cerrar la compra."
         },
         {
-          "q": "¿Qué certificación declara?",
-          "a": "NIOSH 42 CFR Parte 84."
-        },
-        {
-          "q": "¿Qué se verifica antes de entrar?",
-          "a": "Permiso, presión, conexión, arnés, máscara, comunicación y plan de salida."
-        },
-        {
-          "q": "¿Qué accesorios son opcionales?",
-          "a": "Hombreras y soporte lumbar, sujetos a confirmación de la configuración."
+          "q": "¿Qué accesorios son opcionales en el G1 Industrial?",
+          "a": "Las hombreras y el soporte lumbar. Se cotizan aparte si la prueba de uso los justifica."
         }
       ],
       "imagen": {
@@ -801,7 +801,21 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "NIOSH",
         "60 min nominales",
         "Uso industrial"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "El MSA G1 Industrial se identifica con el código 10217600. La tabla reúne cilindro, máscara y certificación tal como los publica su ficha.",
+          "La certificación NIOSH define su alcance industrial. Pide que quede escrita así en la cotización para que nadie lo reasigne a combate."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del G1 Industrial, con los opcionales marcados como tales.",
+          "La conexión roscada y la talla M de máscara son los dos datos que más conviene confirmar antes de ordenar."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del MSA G1 Industrial: uso, alcance, máscara y opcionales.",
+          "Si nos compartes el tipo de espacio y cuántos usuarios son, te decimos qué configuración cotizar."
+        ]
+      }
     }
   ]
 };

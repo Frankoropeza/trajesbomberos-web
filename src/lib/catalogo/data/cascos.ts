@@ -687,24 +687,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Incluido en kit brigadista Romak BOM1001 y kit estructural Profesional"
       ],
       "descripcion": [
-        "Elige Bullard LTX CBOM1007 si tu partida estructural requiere carcasa de termoplástico de alto impacto, ajuste ratchet y suspensión de 6 puntos. En la orden escribimos CBOM1007, amarillo o rojo, visor de policarbonato de 4 pulgadas y cubrenuca de Nomex para que recibas exactamente la versión que evaluó tu brigada, con cintas 3M Scotchlite, barbiquejo de 2 puntos, monja y máscara de ERA.",
-        "La construcción declara forro interior, cintas 3M Scotchlite, contorno recubierto en cuero, termoplástico de alto impacto y suspensión de 6 puntos. En la prueba de talla revisamos ratchet, estabilidad y la posición del visor de 4 pulgadas; pide que el casco no gire al mirar arriba con máscara de ERA puesta, monja, chaquetón y barbiquejo Nomex de 2 puntos ajustados.",
-        "El LTX incorpora protector de cuello y nuca de Nomex, barbiquejo Nomex de 2 puntos con desenganche rápido metálico y colgador metálico. Elige este conjunto con monja y chaquetón para trabajo estructural, o pídelo dentro de Romak BOM1001 si tu brigada usa ese kit; confirmamos color, visor de policarbonato de 4 pulgadas, ERA, suspensión de 6 puntos y accesorios antes de surtir.",
-        "En operación estructural probamos LTX CBOM1007 con ERA, monja, chaquetón y guantes antes de aceptar un lote. Pide que cada usuario ajuste el ratchet, despliegue el visor de policarbonato de 4 pulgadas y haga movimientos de escalera; así revisamos retención, campo visual, cobertura de Nomex, cintas 3M Scotchlite, barbiquejo de 2 puntos y termoplástico de alto impacto.",
-        "El fabricante declara NFPA 1971 ed. 2018; no publicamos número UL ni la presentamos como certificación. Antes de servicio revisamos termoplástico, suspensión de 6 puntos, Nomex y visor; retira LTX con impacto, deformación, daño térmico o retención sin función y registra CBOM1007, color, visor de policarbonato de 4 pulgadas, barbiquejo de 2 puntos, cintas 3M Scotchlite y fecha de inspección."
+        "El LTX es un casco de trabajo diario: carcasa de termoplástico resistente a químicos y altas temperaturas, forro interior y un ajuste ratchet que se aprieta con una perilla, incluso con guantes. La suspensión de seis puntos reparte el peso y lo mantiene estable al moverse.",
+        "Trae de serie cubrenuca de Nomex, barbiquejo Nomex de dos puntos con desenganche rápido metálico y visor de policarbonato de cuatro pulgadas con colgador metálico. Es una configuración completa para ataque interior que no obliga a comprar accesorios por separado.",
+        "En la prueba de talla, el usuario ajusta el ratchet con la máscara puesta, despliega el visor y mira hacia arriba. Si el casco gira o el visor empuja la máscara, se corrige antes de cerrar el lote."
       ],
       "faq": [
         {
-          "q": "¿Qué código tiene el Bullard LTX?",
-          "a": "CBOM1007."
+          "q": "¿Qué incluye el casco Bullard LTX?",
+          "a": "Cubrenuca de Nomex, barbiquejo Nomex de dos puntos con desenganche rápido, visor de policarbonato de cuatro pulgadas, cintas 3M Scotchlite y colgador metálico."
         },
         {
-          "q": "¿La norma está verificada como certificación?",
-          "a": "La ficha disponible declara NFPA 1971 ed. 2018, sin número de certificación; por eso se comunica como declaración del fabricante."
+          "q": "¿En qué colores se consigue el Bullard LTX?",
+          "a": "En amarillo o rojo, según la configuración que se confirme en la cotización."
         },
         {
-          "q": "¿Qué colores se mencionan?",
-          "a": "Amarillo o rojo, sujetos a la configuración confirmada en cotización."
+          "q": "¿El Bullard LTX está certificado?",
+          "a": "Su fabricante declara NFPA 1971 edición 2018, sin número de certificación publicado. Lo presentamos como declaración del fabricante."
+        },
+        {
+          "q": "¿En qué kits viene el Bullard LTX?",
+          "a": "En el kit brigadista Romak BOM1001 y en el kit estructural Profesional."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el Bullard LTX y el UST LW?",
+          "a": "El LTX es de termoplástico con visor de cuatro pulgadas; el UST LW es de fibra de vidrio, más ligero, con visor integrado ReTrack y ajuste Sure-Lock."
         }
       ],
       "imagen": {
@@ -735,9 +741,28 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Visor de 4 pulgadas"
       ],
       "resumen": [
-        "Cotizamos Bullard LTX CBOM1007 para brigadas y bomberos que requieren termoplástico de alto impacto, ajuste ratchet y suspensión de 6 puntos. Elige amarillo o rojo según tu identificación, y pide visor de policarbonato de 4 pulgadas junto con cubrenuca de Nomex, cintas 3M Scotchlite y la configuración que evaluará tu brigada.",
-        "Surtimos LTX dentro del kit brigadista Romak BOM1001 o del kit estructural Profesional cuando tu operación lo justifica. Antes de ordenar, pide que tu personal pruebe barbiquejo Nomex de 2 puntos, máscara de ERA, monja y cuello del chaquetón con la misma configuración, visor de policarbonato de 4 pulgadas y ajuste ratchet."
-      ]
+        "El Bullard LTX CBOM1007 es un casco estructural tradicional de termoplástico de alto impacto, con ajuste ratchet, suspensión de seis puntos y visor de policarbonato de cuatro pulgadas.",
+        "Es el casco de nuestros kits brigadista Romak BOM1001 y estructural Profesional. Se ofrece en amarillo o rojo, con cubrenuca de Nomex, cintas 3M Scotchlite y contorno recubierto en cuero.",
+        "Su fabricante declara NFPA 1971 edición 2018. Lo cotizamos con la configuración escrita y te ayudamos a probarlo con la máscara de ERA, la monja y el chaquetón de tu equipo."
+      ],
+      "duos": {
+        "ficha": [
+          "El Bullard LTX se identifica con el código CBOM1007. La tabla reúne material, colores y norma tal como los publica la ficha del modelo.",
+          "La norma aparece como declaración del fabricante porque no hay número de certificación publicado. Pide que código, color y visor queden escritos en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del LTX. Todas vienen en la configuración estándar del casco, salvo el color, que se elige.",
+          "Si tu corporación ya usa otro casco, compara estos puntos uno por uno: carcasa, ajuste, retención y protección ocular."
+        ],
+        "otros": [
+          "El LTX comparte tipo con el Bullard UST LW y el Sköld Viking. El UST LW es más ligero y el Viking trae barbiquejo de cuatro puntos.",
+          "Si dudas entre ellos, cuéntanos cómo trabaja tu brigada y te decimos cuál conviene probar primero con su máscara de ERA."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Bullard LTX: qué incluye, colores, norma, kits y diferencias con el UST LW.",
+          "Si necesitas cotizar un lote, mándanos cantidad y color por WhatsApp y te enviamos la ficha con la configuración cerrada."
+        ]
+      }
     },
     {
       "id": "bullard-ust-lw",
@@ -761,24 +786,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Protección ocular conforme a ANSI/ISEA Z87.1"
       ],
       "descripcion": [
-        "Elige Bullard UST LW si buscas estilo Nueva York con fibra de vidrio, resina ignífuga termoestable y ajuste Sure-Lock. En la orden pedimos código según configuración, visor ReTrack, careta o goggles y NFPA 1971-2018 declarado, para que tu brigada no reciba una protección ocular distinta de la que probó, con nuquera Nomex de 6 oz y barbiquejo de 2 piezas.",
-        "La carcasa de fibra de vidrio incorpora resina ignífuga termoestable y Sure-Lock con perilla, 6 combinaciones de inclinación y altura. En prueba de talla revisamos cada ajuste con máscara de ERA y campo visual; pide la posición que mantenga el casco estable al agacharte, mirar arriba y mover la cabeza, con nuquera Nomex de 6 oz, chaquetón y barbiquejo de 2 piezas.",
-        "UST LW acepta visor integrado ReTrack, careta o goggles, y usa barbiquejo de 2 piezas de Nomex negro con hebilla de liberación rápida. Elige ReTrack para tu protección ocular si la prueba lo confirma, y pide la nuquera Nomex de 6 oz con 3 capas de algodón FR junto con chaquetón, monja, máscara de ERA y Sure-Lock durante la prueba.",
-        "El fabricante declara masa menor a 1.54 kg con ReTrack y menor a 1.77 kg con careta. Antes de aceptar un lote, revisamos Sure-Lock, ReTrack, barbiquejo Nomex y componentes removibles con ERA; pide que el equipo haga movimientos de escalera y no pierda sellado ni equilibrio, con las 6 combinaciones de inclinación, altura, monja, chaquetón y nuquera Nomex de 6 oz.",
-        "Bullard declara NFPA 1971-2018 y protección ocular conforme a ANSI/ISEA Z87.1; no publicamos número UL ni la presentamos como certificación. Antes de guardia revisamos fibra de vidrio, perilla, 6 ajustes y retención; retira UST LW tras impacto, calor o daño que afecte carcasa o visor, y registra ReTrack, careta o goggles, nuquera Nomex de 6 oz y barbiquejo de 2 piezas."
+        "La carcasa de fibra de vidrio con resina ignífuga termoestable es la razón de su poco peso, algo que se nota en una guardia larga. El ajuste Sure-Lock se gradúa con una perilla y permite acomodar el casco a cada usuario y a su máscara.",
+        "La protección ocular define la configuración: el visor ReTrack va integrado y se guarda dentro del casco; la careta cubre más superficie y sube el peso a menos de 1.77 kg. Los goggles son otra opción para quien los prefiera.",
+        "La nuquera tiene cubierta exterior de Nomex de 6 oz y tres capas de algodón FR, y el barbiquejo es de dos piezas de Nomex negro con hebilla de liberación rápida."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código del UST LW?",
-          "a": "Depende de la configuración; confírmalo al cotizar."
+          "q": "¿Cuánto pesa el casco Bullard UST LW?",
+          "a": "Menos de 1.54 kg con visor ReTrack y menos de 1.77 kg con careta, según su fabricante."
         },
         {
-          "q": "¿Qué peso declara?",
-          "a": "Menor a 1.54 kg con ReTrack y menor a 1.77 kg con careta."
+          "q": "¿Qué es el visor ReTrack del UST LW?",
+          "a": "Un visor integrado que se guarda dentro del casco cuando no se usa. Como alternativa, el UST LW admite careta o goggles."
         },
         {
-          "q": "¿Tiene foto propia?",
-          "a": "No en este catálogo; se muestra una imagen ilustrativa del tipo de casco."
+          "q": "¿Cuál es el código del Bullard UST LW?",
+          "a": "Depende de la configuración de protección ocular. Lo confirmamos al cotizar, una vez definida."
+        },
+        {
+          "q": "¿Se puede descontaminar el Bullard UST LW?",
+          "a": "Sí. Sus componentes son removibles para limpiarlos por separado, siguiendo el método del fabricante."
         }
       ],
       "imagen": {
@@ -798,9 +825,28 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "ReTrack"
       ],
       "resumen": [
-        "Cotizamos Bullard UST LW cuando tu brigada pide fibra de vidrio con resina ignífuga termoestable, ajuste Sure-Lock y visor ReTrack. Elige careta o goggles y confirma el código según configuración; revisamos las 6 combinaciones de inclinación y altura con tu máscara de ERA, nuquera Nomex de 6 oz y barbiquejo de 2 piezas.",
-        "Surtimos UST LW con componentes removibles para descontaminación, nuquera Nomex de 6 oz y protección ocular ANSI/ISEA Z87.1 declarada. Pide ReTrack si tu operación requiere esa configuración, o careta si tu prueba de uso conserva ajuste, visibilidad y retención con el chaquetón, monja y máscara de ERA."
-      ]
+        "El Bullard UST LW es un casco estructural estilo Nueva York de fibra de vidrio, el más ligero de nuestro catálogo: menos de 1.54 kg con visor ReTrack, según su fabricante.",
+        "Su ajuste Sure-Lock ofrece seis combinaciones de inclinación y altura, y sus componentes se desmontan para descontaminarlos. Admite visor ReTrack, careta o goggles.",
+        "Bullard declara NFPA 1971-2018 y protección ocular ANSI/ISEA Z87.1. El código se confirma al cotizar, según la configuración de protección ocular que elijas."
+      ],
+      "duos": {
+        "ficha": [
+          "El UST LW no tiene un código único publicado: se asigna según la protección ocular elegida. La tabla muestra material, peso y norma de su ficha.",
+          "Bullard declara NFPA 1971-2018. Lo presentamos como declaración del fabricante, sin número de certificación publicado."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del UST LW. La protección ocular es la única que cambia según la configuración.",
+          "Si el peso es tu prioridad, compara la versión con ReTrack y la versión con careta antes de decidir."
+        ],
+        "otros": [
+          "El UST LW comparte tipo con el Bullard LTX y el Sköld Viking. Los dos son de termoplástico; el UST LW destaca por su fibra de vidrio y su poco peso.",
+          "Si tu brigada trabaja turnos largos, el peso puede inclinar la balanza; si prefiere un visor de cuatro pulgadas, el LTX es la opción."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Bullard UST LW: peso, visor ReTrack, código y limpieza.",
+          "Si nos dices qué protección ocular usa tu equipo, te cotizamos la configuración exacta con su código."
+        ]
+      }
     },
     {
       "id": "skold-viking",
@@ -823,24 +869,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Compatible con ERA y color amarillo"
       ],
       "descripcion": [
-        "Elige Sköld Viking FPCM si tu orden requiere termoplástico de alta densidad, costilla central, frente triangular y retención de 4 puntos. Nosotros escribimos FPCM, color amarillo y protector facial de policarbonato para que tu brigada reciba la configuración Viking que puede probar con máscara de ERA, faldón Nomex, nuquera aluminizada, matraca y suspensión de red.",
-        "Viking declara faldón con forro interno de Nomex, nuquera aluminizada con forro Nomex, acolchado frontal, matraca y suspensión de red. En la prueba de talla revisamos mentonera, ajuste y cobertura de nuca; pide que casco y máscara de ERA se mantengan en posición al mirar arriba y bajar la cabeza, con protector facial de policarbonato desplegado, barbiquejo de 4 puntos y chaquetón.",
-        "El modelo integra barbiquejo de 4 puntos con mentonera y retiro rápido, bisel protector y soporte trasero para colgar. Elige protector facial antirrayas y antiempaño si tu maniobra lo requiere, y combínalo con monja, chaquetón, guantes estructurales, máscara de ERA, faldón Nomex y nuquera aluminizada; confirmamos accesorios antes de surtir Viking FPCM.",
-        "Durante la prueba de operación revisamos Viking FPCM con arnés de ERA, visor y movimientos de escalera. El fabricante menciona película térmica para 800 °C; pide verificar carcasa, matraca, suspensión de red, faldón Nomex, nuquera aluminizada y protector facial antes de aceptar un lote, sin convertir ese dato en sustituto del conjunto estructural.",
-        "Sköld declara NFPA 1971 / EN 443:2009 y compatibilidad con ERA; no publicamos número UL ni la presentamos como certificación. Antes y después de intervención revisamos termoplástico, Nomex, nuquera aluminizada y barbiquejo; retira FPCM si impacto, calor o daño afectan retención, visor, carcasa, protector facial de policarbonato, matraca o suspensión de red."
+        "El Viking tiene una carcasa con costilla central y frente triangular, bisel protector y acolchado frontal. La matraca y la suspensión de red lo ajustan a la cabeza, y el barbiquejo de cuatro puntos con mentonera lo mantiene firme en cualquier posición.",
+        "El protector facial viene integrado y su fabricante menciona una película térmica para 800 °C. Ese dato describe el protector; la protección del conjunto se sigue evaluando con el resto del equipo.",
+        "Es buena opción cuando la corporación sigue referencias europeas y americanas a la vez, porque declara las dos normas."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código del Sköld Viking?",
-          "a": "FPCM."
+          "q": "¿Qué normas declara el casco Sköld Viking?",
+          "a": "NFPA 1971 y EN 443:2009, según su fabricante. Son declaraciones, sin número de certificación publicado."
         },
         {
-          "q": "¿Es compatible con ERA?",
-          "a": "El fabricante lo declara compatible; confirma físicamente la interfaz con el ERA de tu corporación."
+          "q": "¿El Sköld Viking es compatible con ERA?",
+          "a": "Su fabricante lo declara compatible. Aun así, conviene confirmarlo con la máscara de ERA de tu corporación en una prueba física."
         },
         {
-          "q": "¿Qué protección facial declara?",
-          "a": "Protector de policarbonato antirrayas y antiempaño con película térmica para 800 °C, según fabricante."
+          "q": "¿Qué retención tiene el Sköld Viking?",
+          "a": "Barbiquejo de cuatro puntos con mentonera y retiro rápido, más ajuste de matraca y suspensión de red."
+        },
+        {
+          "q": "¿En qué color viene el Sköld Viking?",
+          "a": "En amarillo, según su ficha."
         }
       ],
       "imagen": {
@@ -871,9 +919,28 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Compatible con ERA"
       ],
       "resumen": [
-        "Cotizamos Sköld Viking FPCM para una partida estructural que requiere termoplástico de alta densidad, matraca y barbiquejo de 4 puntos. Elige color amarillo, protector facial de policarbonato y compatibilidad con ERA declarada; pide prueba con máscara, arnés, monja, chaquetón, faldón Nomex, nuquera aluminizada y película térmica para 800 °C.",
-        "Surtimos Viking con faldón Nomex, nuquera aluminizada y película térmica para 800 °C según fabricante. Para tu orden escribe FPCM, protector facial antirrayas y antiempaño, suspensión de red y retiro rápido; revisamos que esa configuración conserve cobertura, campo visual, barbiquejo de 4 puntos y posición con máscara de ERA."
-      ]
+        "El Sköld Viking FPCM es un casco estructural de termoplástico de alta densidad con barbiquejo de cuatro puntos, ajuste de matraca y protector facial de policarbonato antirrayas y antiempaño.",
+        "Su faldón lleva forro interno de Nomex y su nuquera es aluminizada. Se ofrece en amarillo y su fabricante lo declara compatible con ERA.",
+        "Sköld declara NFPA 1971 y EN 443:2009. Lo cotizamos con esa declaración escrita y te ayudamos a confirmar la compatibilidad con tu máscara en una prueba real."
+      ],
+      "duos": {
+        "ficha": [
+          "El Sköld Viking se identifica con el código FPCM. La tabla reúne material, color y normas tal como los publica su ficha.",
+          "NFPA 1971 y EN 443:2009 aparecen como declaración del fabricante. Pide que queden escritas así en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del Viking, desde la carcasa hasta el protector facial.",
+          "El barbiquejo de cuatro puntos es su rasgo más distintivo frente a los otros cascos estructurales del catálogo."
+        ],
+        "otros": [
+          "El Viking comparte tipo con el Bullard LTX y el Bullard UST LW. Los dos Bullard usan barbiquejo de dos puntos; el Viking, de cuatro.",
+          "Si tu equipo también hace rescate, una retención de cuatro puntos puede ser un argumento para elegirlo."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Sköld Viking: normas, compatibilidad con ERA, retención y color.",
+          "Si nos compartes el modelo de tu ERA, te decimos qué revisar en la prueba antes de cotizar."
+        ]
+      }
     },
     {
       "id": "bullard-fh911h",
@@ -895,24 +962,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Colores amarillo, rojo, blanco y negro"
       ],
       "descripcion": [
-        "Elige Bullard Wildland FH911H para operación forestal si tu partida requiere termoplástico Ultem, ala completa y suspensión automática de 6 puntos. En la orden escribimos FH911H, amarillo, rojo, blanco o negro, y clips para goggles para que tu cuadrilla reciba una configuración de línea de fuego verificable, con barbiquejo Nomex ajustable, bandas reflejantes, sombra interior y velcro.",
-        "FH911H declara carcasa Ultem, suspensión automática de 6 puntos, sombra interior, cierres de velcro y clips de retención para goggles y bandas reflejantes. En prueba de talla revisamos ala completa, velcro y ajuste con goggles; pide que el casco conserve posición al caminar en pendiente, agacharte y mirar la línea de fuego, con barbiquejo Nomex ajustable, visera o pantalla facial.",
-        "El modelo acepta soportes para viseras y pantallas faciales, e incorpora barbiquejo Nomex ajustable. Elige visera, pantalla, bandas o goggles según tu protección ocular, y pídelo con cubrenuca si corresponde a tu equipo forestal; confirmamos color, clips de retención, suspensión automática de 6 puntos y accesorios antes de surtir Bullard FH911H para operación forestal.",
-        "En operación exterior probamos FH911H con goggles, barbiquejo Nomex y movimientos de pendiente antes de aceptar un lote. Pide revisar clips, suspensión de 6 puntos, velcro, ala completa, sombra interior y pantalla facial después de ceniza o viento con tu brigada; el casco forestal no sustituye casco estructural con ERA para incendio interior.",
-        "El fabricante declara NFPA 1977 ed. 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G; no publicamos número UL ni la presentamos como certificación. Antes y después de guardia revisamos Ultem, suspensión, clips, velcro y barbiquejo Nomex; retira FH911H por impacto, calor, deformación o retención sin función y registra inspección."
+        "El FH911H está pensado para jornadas largas: carcasa ligera de Ultem, ala completa que da sombra y protege del material que cae, y una suspensión que se ajusta sola a la cabeza.",
+        "La sombra interior, los cierres de velcro y el barbiquejo Nomex ajustable lo mantienen en su lugar al caminar en pendiente o con viento. Los clips sujetan los goggles cuando no se usan.",
+        "Es un casco para operación exterior. Para ataque interior con ERA se necesita un casco estructural, y así lo separamos en la cotización."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "FH911H."
-        },
-        {
-          "q": "¿Qué colores reporta el proveedor?",
+          "q": "¿En qué colores viene el Bullard FH911H?",
           "a": "Amarillo, rojo, blanco y negro."
         },
         {
-          "q": "¿Por qué se menciona una edición antigua?",
-          "a": "La ficha declara NFPA 1977 ed. 1998 y ANSI Z89.1-1997; se reporta tal cual para compararla con el requisito vigente."
+          "q": "¿Por qué el FH911H declara una norma de 1998?",
+          "a": "Porque así lo publica su fabricante: NFPA 1977 edición 1998 y ANSI Z89.1-1997. Lo reportamos tal cual para que puedas compararlo con el requisito vigente, NFPA 1950."
+        },
+        {
+          "q": "¿Qué accesorios acepta el casco FH911H?",
+          "a": "Goggles y bandas reflejantes en sus clips, además de soportes para viseras y pantallas faciales."
+        },
+        {
+          "q": "¿El Bullard FH911H forma parte de algún kit?",
+          "a": "Sí, es el casco de nuestro kit forestal, junto con la ropa Fire Ranger y los goggles ESS Striketeam XTO."
         }
       ],
       "imagen": {
@@ -933,9 +1002,24 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Suspensión 6 puntos"
       ],
       "resumen": [
-        "Cotizamos Bullard Wildland FH911H para línea de fuego con termoplástico Ultem, ala completa y suspensión automática de 6 puntos. Elige amarillo, rojo, blanco o negro y pide clips para goggles, bandas reflejantes, visera o pantalla según la prueba de tu cuadrilla, con barbiquejo Nomex ajustable y cubrenuca si aplica.",
-        "Surtimos FH911H con barbiquejo Nomex ajustable, sombra interior y velcro para operación exterior. Pide goggles y cubrenuca si tu jornada los requiere, y separa esta partida de casco estructural con ERA; revisamos ajuste en pendiente, viento, contacto con vegetación, clips de retención y suspensión automática de 6 puntos."
-      ]
+        "El Bullard Wildland FH911H es un casco forestal de termoplástico Ultem con ala completa, suspensión automática de seis puntos y clips para sujetar goggles y bandas reflejantes.",
+        "Se ofrece en amarillo, rojo, blanco y negro, y acepta soportes para viseras y pantallas faciales. Es el casco de nuestro kit forestal.",
+        "Su fabricante declara NFPA 1977 edición 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G. La referencia vigente para equipo forestal es NFPA 1950."
+      ],
+      "duos": {
+        "ficha": [
+          "El Bullard Wildland FH911H se identifica con el código FH911H. La tabla reúne material, colores y normas tal como los publica su ficha.",
+          "Las normas aparecen como declaración del fabricante y con su edición original, para compararlas con el requisito vigente de tu partida."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del FH911H, pensadas para trabajo exterior y jornadas largas.",
+          "Los accesorios, como visera o pantalla facial, se eligen según la protección ocular que use tu cuadrilla."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Bullard FH911H: colores, norma, accesorios y kit forestal.",
+          "Si vas a equipar una cuadrilla, dinos cuántas personas son y qué color usan, y te mandamos la cotización."
+        ]
+      }
     }
   ]
 };

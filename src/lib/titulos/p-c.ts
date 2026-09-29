@@ -1,48 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_C: Record<string, Record<string, Duo>> = {
-  '/capuchas/majestic-pac-ii/': {
-    caracteristicas: [
-      'Majestic PAC II combina Nomex blanco con doble capa en cabeza y pechera, además de una cara completa con aberturas para ojos y nariz. La apertura facial de 120–145 mm y el elástico encapsulado deben conservar el sello de la máscara de ERA durante el movimiento.',
-      'Al cotizar esta capucha, confirma por escrito la medida de cabeza y babero, la apertura facial y el uso con el conjunto estructural. Una prueba con casco, máscara y chaquetón permite detectar interferencias antes de asignar las piezas a cada usuario.',
-    ],
-    faq: [
-      'Las dudas sobre Majestic PAC II se centran en su código CAP1001, su inclusión en el kit estructural Profesional y la forma de usar sus aberturas con máscara de ERA. Son preguntas que definen la interfaz de cabeza y cuello, no solo el textil.',
-      'Manda por WhatsApp la cantidad de usuarios, el modelo de máscara y casco, además de si requieres el kit o la capucha por separado. Así la partida puede identificar CAP1001, talla de prueba y configuración solicitada.',
-    ],
-    ficha: [
-      'Majestic PAC II se publica como CAP1001, en Nomex blanco 100 %, con cabeza de 13 pulgadas y babero de ocho. Declara NFPA 1971 ed. 2018, listada por UL; su estatus es certificado UL, conforme a la información del fabricante.',
-      'Pide la especificación por escrito con código, construcción de doble capa, dimensiones y declaración de conformidad. Ese documento ayuda a cotejar la recepción con la orden y a integrar la capucha con el equipo de respiración autónoma de la corporación.',
-    ],
-  },
-  '/capuchas/romak-cap1005/': {
-    caracteristicas: [
-      'Romak Fire Capucha over-face está hecha en 100 % Nomex y deja el círculo facial descubierto para coordinarse con ERA. Se ofrece en natural y negro, y se orienta a zonas de alta temperatura; el babero debe permanecer extendido al girar cabeza y hombros.',
-      'Incluye en la cotización el color, CAP1005 y la prueba de apertura con máscara, casco y cuello del chaquetón. Confirmar esos puntos por escrito evita recibir una variante que no corresponde con el conjunto ya asignado.',
-    ],
-    faq: [
-      'Las preguntas de Romak Fire Capucha over-face aclaran el código CAP1005, los dos colores disponibles y que no tiene norma declarada. También orientan sobre su círculo facial descubierto, que se prueba con la máscara de ERA que realmente usa la brigada.',
-      'Para cotizarla, comparte por WhatsApp color requerido, cantidad, modelo de casco y máscara, junto con la operación prevista. Con esos datos se puede solicitar la configuración sin atribuir una certificación que el modelo no declara.',
-    ],
-    ficha: [
-      'Romak Fire Capucha over-face corresponde al código CAP1005 y utiliza 100 % Nomex, disponible en natural o negro. Su diseño over-face conserva descubierto el círculo facial para ERA. El fabricante la publica con estatus sin norma, sin certificación ni norma declarada.',
-      'Solicita una ficha escrita con código, composición, color y apertura facial antes de ordenar. Registrar esa configuración permite revisar tela y costuras contra la requisición, además de conservar trazabilidad al reponer capuchas de la misma dotación.',
-    ],
-  },
-  '/capuchas/skold-fpen/': {
-    caracteristicas: [
-      'Sköld Escafandra Nomex concentra dos capas en la cabeza y una en hombros, con hilo 100 % Nomex. Declara apertura de 120–145 mm, cabeza de 13 pulgadas y babero de cuatro; el elástico alcanza al menos 31 pulgadas para acomodarse a la máscara.',
-      'Antes de elegirla, valida con el proveedor el ajuste universal, la apertura y el procedimiento de lavado sin cloro ni suavizante. Deja esos datos en la cotización para comprobar cobertura, recuperación del elástico y compatibilidad con ERA.',
-    ],
-    faq: [
-      'Las dudas habituales de Sköld Escafandra Nomex cubren el código FPEN, las dos capas en cabeza y una en hombros, y el lavado con agua tibia sin suavizante, cloro ni lavado en seco. También importa comprobar su apertura con máscara y casco.',
-      'Escribe por WhatsApp el número de elementos, los modelos de ERA y casco, y si necesitas confirmar medidas de apertura. Esa información permite preparar una partida identificada por FPEN y evitar suposiciones sobre el ajuste de tamaño universal.',
-    ],
-    ficha: [
-      'Sköld Escafandra Nomex es FPEN, de 100 % Nomex y tamaño universal; suma 17 pulgadas entre cabeza y babero. El fabricante declara valores de tela de referencia NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269; su estatus es declarado.',
-      'Pide por escrito el código, las capas, apertura facial y la declaración correspondiente. También conviene anotar el cuidado indicado, pues su lavado con agua tibia y sin aditivos forma parte del control de la pieza en servicio.',
-    ],
-  },
   '/trajes/forestal/': {
     completa: [
       'El traje forestal para bombero se integra con casco forestal, goggles, guantes de piel ligeros, bota sin puntera de acero y nuquera. Cada interfaz responde a pavesas, terreno y jornada; el ERA solo se considera cuando el procedimiento y el riesgo respiratorio lo justifican.',
@@ -149,60 +107,6 @@ export const DUO_P_C: Record<string, Record<string, Duo>> = {
     relacionados: [
       'Para revisar exigencias mecánicas, el conjunto dual se complementa con <a href="/trajes/extricacion/">trajes de extricación</a> y con la <a href="/trajes/forestal/camisola/">camisola forestal</a> cuando el servicio requiere una opción dedicada de línea. Así se contrasta versatilidad contra especialización.',
       'Consulta ambos destinos antes de redactar el pliego institucional. La decisión no es solo de presupuesto: define qué riesgo ocurre con mayor frecuencia y qué prenda conservará mejor movilidad durante ese trabajo específico.',
-    ],
-  },
-  '/trajes/forestal/modelos/romak-bomw1002/': {
-    caracteristicas: [
-      'Romak Fire Saco y pantalón forestal se distingue por BOMW1002 en Nomex IIIA 6.0 oz y BOMW1002 FR en algodón 100 % ignífugo. El saco declara broche y solapa, porta radio, bolsas parche y cinta 3M; el pantalón incorpora cargo y traseras.',
-      'No mezcles códigos ni materiales al cotizar. Pide que la orden anote versión, talla, color, cierre y disposición de bolsas para poder comparar ambas alternativas y recibir la configuración que necesita la brigada.',
-    ],
-    faq: [
-      'Al cotizar BOMW1002, distingue la versión Nomex IIIA de BOMW1002 FR en algodón ignífugo, revisa bolsas cargo y traseras, y confirma que no tiene norma declarada. Esos datos también ayudan a mantener código, material y talla en reposiciones del conjunto forestal.',
-      'Envía por WhatsApp el material deseado, número de piezas, tallas y condiciones de uso. Con esos datos se puede solicitar una cotización que no confunda las dos versiones bajo un nombre parecido de uniforme forestal.',
-    ],
-    ficha: [
-      'La ficha de BOMW1002 publica Nomex IIIA 6.0 oz y BOMW1002 FR para algodón 100 % ignífugo. Incluye saco con solapa y pantalón amarillo cargo. El estatus normativo es sin norma: no declara norma ni certificación para este conjunto forestal.',
-      'Pide una ficha por escrito que conserve código, material, talla, color y cintas reflejantes. Esa precisión evita que una reposición cambie de composición sin que compras o la brigada pueda detectarlo en la entrega.',
-    ],
-    otros: [
-      'Frente a Fire Ranger Explorer y Fire Ranger Scout, BOMW1002 es saco y pantalón forestal; Explorer es overol con BOMW1001 y Scout es conjunto amarillo y azul de dos piezas. Este modelo se diferencia por versiones Nomex IIIA o algodón ignífugo y estatus sin norma.',
-      'Usa el mismo criterio de formato, material, código y estatus normativo antes de pedir cotización. Así una elección entre overol, dos piezas o versiones de saco y pantalón se apoya en datos publicados, no en nombres comerciales.',
-    ],
-  },
-  '/trajes/forestal/modelos/romak-fire-ranger-explorer/': {
-    caracteristicas: [
-      'Romak Fire Fire Ranger Explorer es un overol forestal con Nomex IIIA amarillo de 6 oz/yd² o Brigade 7.5 oz según configuración. Declara cinta 3M FR de tres pulgadas, bolsas cargo, zipper Nomex YKK, porta radio, pozo de agua y refuerzos en codos y rodillas.',
-      'Confirma material, talla y accesorios en el pedido, porque la hoja menciona dos telas. También deja escrito el ajuste de cintura y velcro de piernas para revisar movilidad en pendiente antes de aceptar el equipo.',
-    ],
-    faq: [
-      'En el Fire Ranger Explorer, las dudas relevantes aclaran que es overol, identifican BOMW1001 y distinguen Nomex IIIA 6 oz/yd² de Brigade 7.5 oz. También señalan que para forestal se revisa NFPA 1950, mientras el fabricante publica NFPA 1971-2018 como declarado.',
-      'Comparte por WhatsApp talla, tela requerida, cantidad y uso previsto. Con esos datos se puede pedir la variante correcta y solicitar la declaración aplicable sin asumir que una referencia publicada equivale a certificación.',
-    ],
-    ficha: [
-      'El overol Fire Ranger Explorer utiliza el código BOMW1001 y declara Nomex IIIA amarillo 6 oz/yd², con Brigade 7.5 oz según configuración. Incluye bolsillos y cinta 3M FR. Declara NFPA 1971-2018; el estatus del fabricante es declarado.',
-      'Solicita la ficha escrita con material elegido, talla, cintas, refuerzos y accesorios. También pide la declaración aplicable a forestal, pues la documentación debe precisar lo ofertado y no extender el alcance de la referencia anunciada.',
-    ],
-    otros: [
-      'Al comparar modelos, Fire Ranger Explorer se mide frente a Scout, conjunto de chaquetón amarillo y pantalón azul, y Saco y pantalón BOMW1002. Explorer ofrece formato overol y BOMW1001; Scout requiere confirmar código, mientras BOMW1002 publica dos materiales y no declara norma.',
-      'Para contrastarlos, pide material, formato, bolsillos, talla y estatus de cada modelo en columnas separadas. Esa revisión revela si la corporación necesita cobertura continua de overol o reposición independiente de prendas durante temporada.',
-    ],
-  },
-  '/trajes/forestal/modelos/romak-fire-ranger-scout/': {
-    caracteristicas: [
-      'Romak Fire Fire Ranger Scout reúne chaquetón Nomex IIIA amarillo de 6 oz/yd² y pantalón azul, aunque su póster menciona tela 100 % Nomex. Declara cinta 3M, bolsas parche, zipper YKK, cuello alto, puños con velcro y codos reforzados.',
-      'La cotización debe resolver por escrito cuál tela aplica y confirmar el código antes de emitir la orden. Añade largo con bota, distribución de bolsas y color de ambas piezas para que la recepción coincida con la configuración aprobada.',
-    ],
-    faq: [
-      'Quien solicita Fire Ranger Scout debe confirmar que incluye chaquetón amarillo y pantalón azul, la diferencia entre Nomex IIIA 6 oz/yd² y la mención de 100 % Nomex, además del código antes de cotizar este conjunto forestal.',
-      'Manda por WhatsApp tallas de ambas piezas, material solicitado, uso de bota forestal y número de conjuntos. La solicitud puede incluir la declaración de NFPA 1971-2018, presentada por el fabricante con estatus declarado.',
-    ],
-    ficha: [
-      'La ficha del Fire Ranger Scout declara chaquetón amarillo Nomex IIIA 6 oz/yd², pantalón azul, cinta 3M, bolsas y zipper Nomex YKK. El póster añade tela 100 % Nomex y no hay código publicado: ambos datos se confirman. Publica NFPA 1971-2018 con estatus declarado.',
-      'Pide una especificación escrita que fije tela, código, colores, talla y accesorios. Incluir cada diferencia en el anexo técnico evita interpretar una imagen ilustrativa como prueba de la configuración que recibirá la brigada.',
-    ],
-    otros: [
-      'Como conjunto de dos piezas amarillo y azul, Fire Ranger Scout contrasta con Explorer, overol BOMW1001, y Saco y pantalón BOMW1002 en Nomex IIIA o algodón ignífugo. Scout se distingue porque requiere confirmar el código y su material exacto antes de ordenar.',
-      'Compara los modelos por formato, color, cierres, material y estatus, no por la familia Fire Ranger. Esa matriz ayuda a decidir entre cobertura de overol, reposición separada y las dos composiciones que publica BOMW1002.',
     ],
   },
   '/trajes/forestal/nuquera/': {

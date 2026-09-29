@@ -119,60 +119,6 @@ export const DUO_P_B: Record<string, Record<string, Duo>> = {
       'Consulta el <a href="/trajes/brigadista/overol/">overol ignífugo NFPA 2112</a> y los <a href="/trajes/estructural/">trajes estructurales</a> para documentar la comparación. El análisis de riesgo decide cuál corresponde a tu personal, sus maniobras y el límite de exposición que enfrenta.',
     ],
   },
-  '/trajes/brigadista/modelos/lakeland-a10-attack/': {
-    caracteristicas: [
-      'Con exterior Nomex amarillo de 7.5 oz, térmica Nomex Quilt Q8 y barrera Stedair 3000, el Lakeland OSX A10 Attack declara una configuración específica. Su chaquetón de 35 pulgadas añade DRD Easy Grip y cuello de tres pulgadas; el pantalón incorpora rodilleras dobles y tirantes Black-Ops.',
-      'En la cotización confirma AT3202Y97 para chaquetón y AT3302Y97 para pantalón, junto con talla y solape de cintura. También conviene probar botas, rodillas y tirantes en la maniobra para validar la configuración solicitada por la brigada industrial.',
-    ],
-    faq: [
-      'Al consultar el A10 Attack, se resuelven los códigos de chaquetón y pantalón, las barreras Nomex Quilt Q8 y Stedair 3000, y la presencia de DRD Easy Grip. También se aclara que la referencia NFPA 1971 edición 2018 tiene estatus declarado.',
-      'Para cotizarlo comparte cantidad, tallas y operación de la brigada, además de cualquier requisito del pliego. Solicita por escrito la configuración ofertada y el documento de conformidad correspondiente, pues el nombre del modelo no sustituye la revisión de sus capas.',
-    ],
-    ficha: [
-      'Los códigos AT3202Y97 para chaquetón y AT3302Y97 para pantalón identifican al Lakeland OSX A10 Attack, que declara Nomex amarillo 7.5 oz, Nomex Quilt Q8 y Stedair 3000. La referencia NFPA 1971 edición 2018 aparece como declaración del fabricante, no como certificación.',
-      'Pide ficha con ambos códigos, talla, capa exterior y barreras antes de emitir la orden. Al recibirlo, coteja cuello, DRD, rodilleras y tirantes con la configuración cotizada para conservar evidencia verificable de la partida entregada.',
-    ],
-    otros: [
-      'Dentro del tipo brigadista, el Lakeland OSX A10 Attack comparte categoría con Romak Fire Combate Básico y Sköld Brigadista Defender, pero cambian los materiales y referencias publicadas. Lakeland declara Nomex Quilt Q8 y Stedair 3000; los otros modelos presentan Neo-Guard o Ultrashield como datos propios.',
-      'Compara capas, refuerzos, código, talla y estatus normativo de cada alternativa en el mismo formato. Esa lectura permite decidir por la configuración necesaria para conato y brigada industrial, sin asumir equivalencia entre modelos por su apariencia exterior.',
-    ],
-  },
-  '/trajes/brigadista/modelos/romak-combate-basico/': {
-    caracteristicas: [
-      'La configuración Romak Fire Combate Básico usa Nomex IIIA repelente al agua de 7.5 oz/yd², forro Lining FR desmontable y Neo-Guard. El chaquetón de 35 pulgadas declara cuello de cuatro capas, mientras pantalón incorpora bastilla de carnaza y anillo D antichispa.',
-      'Incluye BOM1001, talla, capa exterior y barreras en la cotización. Antes de aceptar, confirma si el kit incorpora capucha, casco, botas o guantes y verifica en prueba que puño, cuello, bolsas y cierre funcionen con el equipo de la brigada.',
-    ],
-    faq: [
-      'Para el modelo Romak Fire Combate Básico, las dudas explican qué exterior Nomex IIIA declara, cuál es la barrera Neo-Guard y cómo se integra como kit. También precisan que NFPA 1971 se publica con estatus materiales, por lo que no se presenta como certificado.',
-      'Envía por WhatsApp el número de elementos, tallas y si necesitas chaquetón, pantalón o kit. Pide que la propuesta detalle BOM1001, Lining FR, Neo-Guard y cada complemento para confirmar el alcance de compra antes de autorizarla.',
-    ],
-    ficha: [
-      'El código BOM1001 corresponde a Romak Fire Combate Básico y declara Nomex IIIA 7.5 oz/yd² repelente al agua, Lining FR desmontable y Neo-Guard de neopreno laminado. Menciona NFPA 1971 con estatus materiales; esa referencia no equivale a certificación del conjunto.',
-      'Solicita la ficha por escrito con talla, capa, barrera y piezas del kit cuando aplique. Revisar esas columnas al recibir el equipo permite identificar una sustitución de forro o complemento que no corresponda a la configuración solicitada.',
-    ],
-    otros: [
-      'Al comparar brigadistas, Romak Fire Combate Básico puede contrastarse con Lakeland OSX A10 Attack y Sköld Brigadista Defender. Romak identifica BOM1001, Nomex IIIA y Neo-Guard; Lakeland publica códigos separados y Sköld destaca cuello 360° con refuerzos Ultrashield.',
-      'Usa la misma matriz de comparación para material, barreras, accesorios, documentación y estatus de norma. El resultado debe responder al riesgo y a la maniobra de tu brigada, no convertir una referencia de fabricante en una certificación no declarada.',
-    ],
-  },
-  '/trajes/brigadista/modelos/skold-brigadista-defender/': {
-    caracteristicas: [
-      'Sköld Brigadista Defender declara cuello de cobertura 360°, bies fotoluminiscente, porta radio, velcro FR y zipper de escape rápido. Ultrashield protege hombros, codos y rodillas; SköldTracker se menciona para fichas, mantenimiento y caducidad de la prenda.',
-      'Confirma por escrito código, tela, configuración y si SköldTracker forma parte del suministro. Durante la prueba, revisa radio, guantes, cierres y protección ocular para comprobar que los refuerzos y el cuello mantengan cobertura en maniobras de brigada.',
-    ],
-    faq: [
-      'Las preguntas de Sköld Brigadista Defender aclaran dónde lleva Ultrashield, si integra porta radio y qué se debe confirmar al cotizar. También advierten que NFPA 1971 edición 1991 y NOM-002-STPS-2010 se publican como equivalentes, no como certificación vigente.',
-      'Comparte operación, tallas y cualquier texto de pliego para solicitar la configuración adecuada. Pide documentación que identifique tela y referencia aplicable; esa evidencia evita tratar una edición NFPA antigua como un estatus distinto del declarado por fabricante.',
-    ],
-    ficha: [
-      'Sköld Brigadista Defender publica cuello 360°, Ultrashield en hombros, codos y rodillas, porta radio y bies fotoluminiscente. La ficha declara NFPA 1971 edición 1991 y NOM-002-STPS-2010 con estatus equivalente, no certificado; código y tela deben confirmarse.',
-      'Solicita una ficha de la configuración ofrecida con talla, cierres y documentación técnica. Al cotejarla con la entrega puedes comprobar elementos de visibilidad, refuerzo y acceso a radio, sin extender el alcance normativo más allá de lo publicado.',
-    ],
-    otros: [
-      'Sköld Brigadista Defender se compara con Romak Fire Combate Básico y Lakeland OSX A10 Attack, aunque sus datos publicados son diferentes. Sköld prioriza cuello 360° y Ultrashield; Romak declara Neo-Guard y Lakeland publica Stedair 3000 con códigos por prenda.',
-      'Pide las tres configuraciones bajo criterios idénticos: materiales, accesorios, talla, uso previsto y estatus normativo. Así la decisión de brigada se apoya en la ficha de cada modelo y no en equivalencias que el fabricante no declara.',
-    ],
-  },
   '/trajes/brigadista/monja/': {
     aplicaciones: [
       'Durante conato, primera respuesta y evacuación, la monja de brigada cubre orejas, cuello y mandíbula que casco y chaquetón dejan expuestos. Seguridad industrial la incluye al dotar brigadistas y al reponer capuchones deformados, contaminados o incompatibles con su protección ocular.',

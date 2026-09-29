@@ -521,28 +521,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Ensamble con hilo Kevlar"
       ],
       "resumen": [
-        "Firemax VI GIS1008 es un guante Romak Fire de piel tratada color oro, corte gun, pulgar tipo ala y forro térmico de aramida. Elige M/G estándar o XG para brigada cuando la prueba permita accionar pasador, palanca y manguera con control, sin confundir respuesta inicial con ataque estructural.",
-        "Cotizamos GIS1008 por talla, piel tratada, refuerzo de palma, puño tejido de Kevlar y tarea autorizada de brigada. El modelo se publica sin norma declarada; pídenos por WhatsApp una prueba con extintor, manga y casco para confirmar que Firemax VI corresponde al procedimiento de tu planta."
+        "El Romak Fire Firemax VI GIS1008 es un guante para brigadista de piel tratada color oro, con forro térmico de aramida, puño tejido de Kevlar y corte gun con pulgar tipo ala.",
+        "Se ofrece en tallas M/G estándar y XG, y es el guante de nuestro kit brigadista. Está pensado para respuesta inicial, extintor y manguera de gabinete.",
+        "Su fabricante no declara norma, y así lo presentamos. Si tu brigada hace ataque interior, te cotizamos un guante estructural."
       ],
       "descripcion": [
-        "Elige Firemax VI GIS1008 cuando tu brigada necesita controlar extintor, pasador y manguera con piel tratada color oro, corte gun y pulgar tipo ala. En la orden escribimos GIS1008, M/G estándar o XG, destino de brigada y refuerzo de palma; si tu procedimiento contempla ataque estructural, cotizamos otra familia y no este guante por apariencia ni por disponibilidad inmediata del inventario.",
-        "La construcción reúne índice corrido sin costura expuesta, banda elástica en el dorso, refuerzo de piel en palma y entre índice y pulgar, forro térmico de aramida, puño tejido e hilo Kevlar. En la prueba de talla te pedimos cerrar la mano, liberar el pasador y oprimir la palanca; elige la talla que no tense el pulgar ni doble el puño dentro de la manga.",
-        "Pide Firemax VI con banda dorsal, pulgar tipo ala y puño tejido de Kevlar cuando lo integrarás con traje brigadista Romak Fire Combate Básico, casco, máscara y extintor. Durante la muestra revisamos que el puño solape la manga y que radio, puerta y manguera sigan accesibles; si una de esas maniobras pierde movilidad, ajustamos la talla antes de cotizar el lote.",
-        "En operación de brigada usamos GIS1008 para respuesta inicial definida por tu procedimiento y ensayamos pasador, palanca, manguera y puerta antes de aceptar un lote. Al recibirlo, cotejamos color oro, corte gun, refuerzos, costuras y tallas M/G estándar o XG contra la orden; separa cualquier par cuya palma resbale, cuyo ajuste cambie durante el cierre de mano o cuya banda dorsal pierda tensión.",
-        "Firemax VI se publica sin norma declarada; lo reportamos así, nunca como certificación. Antes y después de uso revisamos refuerzo entre índice y pulgar, hilo Kevlar, banda dorsal, puño y forro de aramida. Retira el par con piel endurecida, forro separado o control insuficiente, y registra GIS1008, talla y tarea autorizada para pedir una reposición equivalente y compatible para brigada."
+        "La piel tratada da buen agarre y el refuerzo en la palma y entre índice y pulgar protege las zonas que más se gastan al operar palancas y válvulas.",
+        "Su índice es de construcción corrida, sin costura expuesta, y todo el guante se ensambla con hilo de Kevlar. La banda elástica del dorso lo mantiene ajustado a la mano."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "GIS1008."
+          "q": "¿Qué tallas tiene el guante Firemax VI?",
+          "a": "M/G estándar y XG, según su fabricante."
         },
         {
-          "q": "¿Qué tallas hay?",
-          "a": "M/G estándar y XG."
+          "q": "¿El guante Romak Fire Firemax VI está certificado?",
+          "a": "No. Su fabricante no declara norma y así lo presentamos en la ficha."
         },
         {
-          "q": "¿Tiene norma declarada?",
-          "a": "No tiene norma declarada."
+          "q": "¿Qué forro tiene el Firemax VI?",
+          "a": "Forro térmico de aramida, con puño tejido de Kevlar y ensamble con hilo de Kevlar."
+        },
+        {
+          "q": "¿Para qué brigada conviene el Firemax VI?",
+          "a": "Para brigadas de respuesta inicial y conato. Si el procedimiento incluye ataque interior, se necesita guante estructural."
         }
       ],
       "imagen": {
@@ -552,6 +554,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "height": 1250,
         "origen": "proveedor",
         "credito": "Romak Fire"
+      },
+      "duos": {
+        "ficha": [
+          "El Firemax VI se identifica con el código GIS1008. La tabla reúne material, tallas y estatus normativo tal como los publica su ficha.",
+          "No declara norma. Pide que así quede escrito en la cotización para que la partida no se confunda con un guante estructural."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del Firemax VI, pensadas para agarre y destreza en respuesta inicial.",
+          "Los refuerzos de palma y el índice sin costura expuesta son sus rasgos más prácticos en el día a día."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Firemax VI: tallas, certificación, forro y uso.",
+          "Si nos compartes cuántos brigadistas son y sus tallas, te cotizamos el lote cerrado."
+        ]
       }
     },
     {
@@ -577,28 +593,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Bandola interna para secado"
       ],
       "resumen": [
-        "Sköld FPGS combina carnaza de res de 1.5–1.7 mm, forro completo de modacrílico SEF y puño Kevlar de dos capas para uso estructural. Elige este modelo unitalla solo si cada usuario puede cerrar la mano, controlar boquilla y conservar el solape con su chaquetón durante la maniobra.",
-        "Cotizamos FPGS con construcción de puño, costuras Kevlar Tex-80, bandola interna y estatus declarado NFPA 1971 ed. 2013, OSHA 29 CFR 1910.156 y Cal-OSHA. Envíanos por WhatsApp chaquetón, radio, casco y boquilla para que revisemos la prueba antes de confirmar la partida unitalla para cada usuario."
+        "El guante de bombero Sköld FPGS es un guante estructural de carnaza de res de 1.5 a 1.7 mm, en oro y negro, con forro de modacrílico SEF cosido a cada dedo.",
+        "Tiene corte de pistola con pulgar tipo ala, puño elástico de Kevlar de dos capas y costuras de Kevlar Tex-80. Se publica en unitalla.",
+        "Sköld declara NFPA 1971 edición 2013, OSHA 29 CFR 1910.156 y Cal-OSHA. Lo presentamos como declaración del fabricante."
       ],
       "descripcion": [
-        "Elige Sköld FPGS si la carnaza de res de 1.5–1.7 mm en oro y negro, el corte de pistola y el pulgar tipo ala responden a la operación estructural de tu cuerpo. En la orden escribimos FPGS, unitalla, carnaza y puño seleccionado; no cotizamos solo guante Sköld, porque esa frase no identifica la construcción que probará tu personal ni el ajuste real de la muñeca.",
-        "El índice corrido y el forro completo de modacrílico SEF se cosen a cada dedo con hilo Kevlar. Lleva banda elástica en muñeca, refuerzos en dedos y entre índice y pulgar, puño elástico de Kevlar de dos capas con mínimo de tres pulgadas, y costuras Kevlar Tex-80 con mínimo de ocho puntadas por pulgada. En talla, prueba boquilla y cierre de mano antes de elegir unitalla.",
-        "Pide el FPGS con puño elástico de Kevlar o con la opción de puño de piel de dos pulgadas según la manga del chaquetón. La bandola interna apoya el secado, y la probamos con casco, máscara, radio y chaquetón para confirmar que el puño conserve solape; si el radio o la manga interfieren, cotizamos otra interfaz antes de liberar la partida.",
-        "Para operación estructural, te pedimos tomar boquilla, herramienta y radio con FPGS antes de aceptar un lote unitalla. Al recibirlo cotejamos carnaza oro y negro, corte de pistola, pulgar tipo ala, refuerzos y costuras Kevlar Tex-80 contra la orden. Si una persona pierde destreza o el puño se mueve al levantar los brazos, no aprobamos ese ajuste para su uso.",
-        "Sköld declara FPGS bajo NFPA 1971 ed. 2013, OSHA 29 CFR 1910.156 y Cal-OSHA; lo presentamos como declarado, no como certificación UL. Antes y después de intervención revisamos carnaza, forro de modacrílico SEF, costuras Kevlar Tex-80, puño y bandola interna. Retira el par con costura abierta, forro separado o carnaza rígida, y registra FPGS, turno y talla de mano para pedir reemplazo."
+        "El forro cosido a cada dedo evita que se salga al quitarse el guante con la mano sudada, un problema común en guantes estructurales. La bandola interna permite colgarlo para que seque por dentro.",
+        "Al ser unitalla, conviene probarlo con cada usuario, con el chaquetón puesto: el puño elástico de Kevlar debe quedar bajo la manga sin dejar la muñeca expuesta."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "FPGS."
+          "q": "¿En qué talla viene el guante Sköld FPGS?",
+          "a": "En unitalla, según su fabricante. Por eso recomendamos probarlo con cada usuario antes de cerrar la compra."
         },
         {
-          "q": "¿Qué talla declara?",
-          "a": "Unitalla."
+          "q": "¿El guante Sköld FPGS está certificado?",
+          "a": "Sköld declara NFPA 1971 edición 2013, OSHA 29 CFR 1910.156 y Cal-OSHA, sin número de certificación publicado."
         },
         {
-          "q": "¿La norma es certificación publicada?",
-          "a": "Se muestra como declaración del fabricante."
+          "q": "¿De qué material es el guante Sköld FPGS?",
+          "a": "Carnaza de res de 1.5 a 1.7 mm en oro y negro, con forro de modacrílico SEF y costuras de Kevlar Tex-80."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el Sköld FPGS y el Veridian Fire Pro II?",
+          "a": "El FPGS es de carnaza y declara NFPA 1971 edición 2013; el Fire Pro II es de cuero tratado, con barrera Pyrotec, y está certificado por UL bajo NFPA 1971-2018."
         }
       ],
       "imagen": {
@@ -608,6 +626,24 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "height": 1250,
         "origen": "proveedor",
         "credito": "Romak Fire"
+      },
+      "duos": {
+        "ficha": [
+          "El guante Sköld se identifica con el código FPGS. La tabla reúne material, talla y normas tal como los publica su ficha.",
+          "Las normas aparecen como declaración del fabricante. Si tu pliego exige certificación, compáralo con el Veridian Fire Pro II."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del FPGS, con el forro cosido a cada dedo como rasgo distintivo.",
+          "La bandola interna y el puño de dos capas facilitan el secado y el solape con la manga del chaquetón."
+        ],
+        "otros": [
+          "El FPGS comparte tipo con el Veridian Fire Pro II, de cuero tratado y certificado por UL.",
+          "Si tu partida pide certificación, el Fire Pro II es la opción; si pide declaración del fabricante, los dos cumplen el requisito."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Sköld FPGS: talla, normas, material y diferencias con el Fire Pro II.",
+          "Si nos compartes el modelo de chaquetón que usa tu equipo, te decimos qué revisar en la prueba del puño."
+        ]
       }
     },
     {
@@ -633,28 +669,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Incluido en el kit estructural Profesional"
       ],
       "resumen": [
-        "Veridian Fire Pro II GIS1017 es un guante de cuero tratado con tres capas interiores, Pyrotec y barreras que continúan hasta el puño de dos pulgadas reforzado con Nomex. Elige esta configuración estructural si la prueba con chaquetón y herramienta mantiene cobertura y cierre de mano para tu elemento.",
-        "Cotizamos GIS1017 con talla, cuero tratado, FR-modacrílico, Pyrotec y barrera hidrófuga con protección químico-biológica. El modelo tiene estatus certificado UL bajo NFPA 1971-2018; mándanos por WhatsApp tu chaquetón, máscara, casco y radio para revisar solape, talla, destreza, recepción y compatibilidad antes de emitir la partida."
+        "El Veridian Fire Pro II GIS1017 es un guante estructural de cuero tratado con tres capas interiores y barrera de humedad transpirable Pyrotec en todo el guante, incluido el puño.",
+        "Su puño de dos pulgadas está reforzado con Nomex y sus costuras son reforzadas. Es el guante de nuestro kit estructural Profesional.",
+        "Está certificado por UL bajo NFPA 1971-2018. Lo cotizamos con su ficha técnica y con prueba de talla con el chaquetón puesto."
       ],
       "descripcion": [
-        "Elige Veridian Fire Pro II GIS1017 cuando necesitas cuero tratado y costuras reforzadas para una configuración estructural con tres capas interiores. En la orden escribimos GIS1017, talla, cuero tratado y las barreras declaradas; si solo anotas Fire Pro II, te pedimos completar esos datos para que el lote coincida con la muestra que usará tu cuerpo de bomberos en cada guardia.",
-        "La construcción declara FR-modacrílico como refuerzo ignífugo, Pyrotec como barrera de humedad transpirable y una barrera hidrófuga con protección químico-biológica. Las tres capas están dentro del cuero tratado y acompañan costuras reforzadas. En la prueba de talla cerramos la mano, tomamos herramienta y levantamos el brazo con el chaquetón; elige la talla que mantenga destreza sin abrir el solape de la manga.",
-        "Pide Fire Pro II GIS1017 con el kit estructural Profesional cuando esa combinación corresponde a tu partida, y prueba casco, máscara, radio y manga junto con el puño de dos pulgadas reforzado con Nomex. Nosotros revisamos que las barreras continúen hasta el puño y que la manga cubra la interfaz; si radio o herramienta afectan el cierre, ajustamos talla antes de surtir.",
-        "En operación estructural, probamos GIS1017 con agarre, cierre de mano, radio y herramienta antes de aceptar el lote. Al recibirlo, cotejamos cuero tratado, costuras reforzadas, tres capas interiores, Pyrotec y puño Nomex de dos pulgadas contra la orden. Separa un par si la barrera se asoma, el cuero pierde integridad, el solape falla al levantar la mano o una costura cambia de posición.",
-        "Veridian publica Fire Pro II con estatus certificado UL bajo NFPA 1971-2018; te entregamos ese estatus tal como lo declara el fabricante y no lo extendemos a otra configuración. Antes y después de una intervención revisamos cuero, costuras, FR-modacrílico, Pyrotec, barrera hidrófuga y puño Nomex. Retira y registra GIS1017 cuando una capa, costura o barrera pierda continuidad, flexibilidad o cobertura."
+        "Sus barreras, de FR-modacrílico, Pyrotec y una capa hidrófuga con protección químico-biológica, llegan hasta el puño. Así el guante protege también en la zona que se une con la manga.",
+        "La certificación UL es la diferencia principal frente a guantes que solo declaran norma. Si tu pliego exige certificación, este es el guante estructural del catálogo que la publica."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "GIS1017."
+          "q": "¿El guante Veridian Fire Pro II está certificado?",
+          "a": "Sí, está certificado por UL bajo NFPA 1971-2018, según su ficha."
         },
         {
-          "q": "¿Qué barreras declara?",
-          "a": "FR-modacrílico, Pyrotec y barrera hidrófuga con protección químico-biológica."
+          "q": "¿Qué barreras tiene el Veridian Fire Pro II?",
+          "a": "FR-modacrílico, barrera de humedad transpirable Pyrotec y una barrera hidrófuga con protección químico-biológica, en todo el guante."
         },
         {
-          "q": "¿Está incluido en un kit?",
-          "a": "En el kit estructural Profesional."
+          "q": "¿En qué kit viene el Veridian Fire Pro II?",
+          "a": "En nuestro kit estructural Profesional, junto con el traje Romak Fire Profesional, el casco Bullard LTX, la capucha Majestic PAC II y la bota Croydon Filtrex."
+        },
+        {
+          "q": "¿Qué puño tiene el Veridian Fire Pro II?",
+          "a": "Un puño de dos pulgadas reforzado con Nomex, con barreras incluidas, para solapar con la manga del chaquetón."
         }
       ],
       "imagen": {
@@ -664,6 +702,24 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "height": 1250,
         "origen": "proveedor",
         "credito": "Romak Fire"
+      },
+      "duos": {
+        "ficha": [
+          "El Veridian Fire Pro II se identifica con el código GIS1017. La tabla reúne material, barreras y certificación tal como los publica su ficha.",
+          "Es el guante estructural del catálogo con certificación UL. Pide que el estatus quede escrito así en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del Fire Pro II, con barreras que llegan hasta el puño.",
+          "Su inclusión en el kit estructural Profesional lo hace la opción natural si equipas con ese kit."
+        ],
+        "otros": [
+          "El Fire Pro II comparte tipo con el Sköld FPGS, de carnaza de res, que declara NFPA 1971 edición 2013.",
+          "Compáralos por material, barreras, talla y estatus normativo antes de decidir."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Veridian Fire Pro II: certificación, barreras, kit y puño.",
+          "Si nos mandas las tallas de tu personal, te cotizamos el lote con ficha técnica."
+        ]
       }
     }
   ]

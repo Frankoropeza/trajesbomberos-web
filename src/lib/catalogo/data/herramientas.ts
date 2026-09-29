@@ -995,36 +995,25 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Para operaciones de rescate y entrada forzada"
       ],
       "descripcion": [
-        "Elige la Romak Fire HAC1007 si tu orden requiere una barra Halligan de acero inoxidable para rescate y entrada forzada, con extremos y pico para apalancamiento. Escribe HAC1007, 91 cm de largo, 90 cm de extremo a extremo y 6 lb —3.36 kg—; así cotizamos el modelo identificado y no una barra similar por imagen o nombre.",
-        "La HAC1007 declara acero inoxidable y un peso de 6 lb —3.36 kg—. Durante la prueba con guantes, casco y protección ocular, revisamos que sus 91 cm entren en el soporte, que los 90 cm de extremo a extremo no rocen el compartimiento y que pico y extremos permanezcan protegidos; elige otro montaje si la extracción exige forzar la barra.",
-        "Pide la barra con funda de puntas y soporte cuando viajará junto con hacha, mangueras o ERA. Nosotros confirmamos la compatibilidad con tu casco, guantes y el espacio de la unidad; si formará parte de un conjunto de entrada, escribe cada herramienta por separado para que HAC1007 conserve acero inoxidable, dimensiones y accesorios propios en la orden.",
-        "En operación, la HAC1007 corresponde a rescate y entrada forzada dentro de tu procedimiento autorizado. Antes de aceptar un lote, probamos rectitud, extremos, pico, retención y liberación con guantes, además de cotejar 91 cm, 90 cm de extremo a extremo y 6 lb —3.36 kg— contra la orden; rechaza cualquier variación que cambie soporte o resguardo.",
-        "El catálogo declara HAC1007 sin norma aplicable, por lo que la presentamos como estatus sin norma, nunca como certificación. Antes y después de una intervención revisamos corrosión, doblez, punta deformada y abertura anormal; retira la barra de acero inoxidable si pierde geometría, registra el daño y solicita evaluación técnica sin calentarla ni soldarla."
+        "El acero inoxidable resiste bien la corrosión, algo importante en una herramienta que se moja en cada servicio y pasa meses en el compartimiento de una unidad.",
+        "Con 91 cm de largo da buena palanca sin ser difícil de maniobrar en un pasillo. Antes de ordenar, conviene medir el soporte del vehículo con guantes puestos para que la barra salga sin forzar los extremos."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código del modelo?",
-          "a": "El código publicado es HAC1007. Inclúyelo junto con la marca Romak Fire en la requisición para diferenciar esta barra de Halligan de otras longitudes o geometrías disponibles."
+          "q": "¿De qué material es la barra Halligan HAC1007?",
+          "a": "De acero inoxidable, según su fabricante."
         },
         {
-          "q": "¿De qué material es?",
-          "a": "El material declarado para HAC1007 es acero inoxidable. La recepción debe confirmar ese dato con la identificación del modelo y revisar que el acabado no oculte corrosión, golpes o alteraciones de los extremos."
+          "q": "¿Cuánto mide la barra Halligan Romak Fire?",
+          "a": "91 cm de largo y 90 cm de extremo a extremo."
         },
         {
-          "q": "¿Qué longitud declara?",
-          "a": "El modelo declara 91 cm de largo y 90 cm de extremo a extremo. Conserva ambas medidas en la orden porque sirven para validar el soporte, la holgura del compartimiento y la protección de puntas."
+          "q": "¿Cuánto pesa la barra Halligan HAC1007?",
+          "a": "6 lb, equivalentes a 3.36 kg."
         },
         {
-          "q": "¿Cuál es su peso declarado?",
-          "a": "El peso declarado es 6 lb, equivalente a 3.36 kg. Úsalo para comparar logística y soporte, pero prueba la extracción con guantes y la configuración real de la unidad antes de asignarla."
-        },
-        {
-          "q": "¿La imagen identifica la configuración final?",
-          "a": "No. La imagen representa el tipo de barra Halligan; la compra debe confirmar por escrito HAC1007, acero inoxidable, dimensiones, extremos y cualquier funda o soporte incluido en la partida."
-        },
-        {
-          "q": "¿Tiene norma publicada en el catálogo?",
-          "a": "No aplica una norma publicada para esta barra dentro del catálogo. Solicita el modelo, material y dimensiones declaradas, y conserva esos datos como criterio de recepción e inventario institucional."
+          "q": "¿La barra Halligan Romak Fire tiene norma?",
+          "a": "No existe una norma específica para esta herramienta; por eso se publica sin norma aplicable."
         }
       ],
       "imagen": {
@@ -1035,9 +1024,24 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "origen": "ia"
       },
       "resumen": [
-        "La Romak Fire HAC1007 es una barra Halligan de acero inoxidable para rescate y entrada forzada, con extremos y pico para apalancamiento, 91 cm de largo y 6 lb —3.36 kg— declarados. Elige este modelo si tu orden requiere esa geometría y el soporte libera la barra con guantes.",
-        "Cotizamos HAC1007 con 90 cm de extremo a extremo, funda de puntas y soporte si tu unidad lo necesita. Escríbenos por WhatsApp con tu configuración de casco, guantes y compartimiento; revisamos que los 91 cm entren sin rozar equipo y confirmamos la partida."
-      ]
+        "La barra Halligan Romak Fire HAC1007 es de acero inoxidable, con horquilla, cuña y pico para hacer palanca en entrada forzada y rescate.",
+        "Mide 91 cm de largo y 90 cm de extremo a extremo, y pesa 6 lb, equivalentes a 3.36 kg, según su fabricante.",
+        "No existe una norma específica para esta herramienta, así que se publica sin norma aplicable. La cotizamos con funda para las puntas y soporte para tu unidad."
+      ],
+      "duos": {
+        "ficha": [
+          "La barra Halligan Romak Fire se identifica con el código HAC1007. La tabla reúne material, medidas y peso tal como los publica su ficha.",
+          "No tiene norma aplicable. Pide que las medidas queden escritas en la cotización para revisar el soporte de tu unidad."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la HAC1007, pensada para rescate y entrada forzada.",
+          "Si la necesitas junto con un hacha, te cotizamos ambas con su soporte para que viajen juntas."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la barra Halligan HAC1007: material, medidas, peso y norma.",
+          "Si nos dices cuántas unidades vas a equipar, te cotizamos las barras con funda y soporte."
+        ]
+      }
     }
   ]
 };

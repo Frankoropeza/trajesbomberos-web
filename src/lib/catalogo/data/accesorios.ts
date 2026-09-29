@@ -729,36 +729,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Se adapta a casi cualquier casco con ala"
       ],
       "resumen": [
-        "La Streamlight Vantage es una lámpara de casco con LED C4, 115 lúmenes, giro de 360° y dos CR123A de 3 V. La surtimos para casco con ala cuando tu visor y máscara conservan el haz visible durante búsqueda, escalera o reconocimiento.",
-        "Cotizamos Vantage por pieza con soporte, dos CR123A iniciales y reserva del mismo formato; pedimos tu casco, visor y máscara para validar el montaje. Mándanos WhatsApp con esos datos y revisamos los 167 m, seis horas e IPX7 declarados antes de ordenar."
+        "La Streamlight Vantage es una lámpara de casco con LED C4 de 115 lúmenes y 7,000 candelas, con alcance de 167 m y seis horas de duración.",
+        "Su cabezal gira 360°, trae luz trasera azul y funciona con dos baterías CR123A de 3 V incluidas. Se sujeta con clip a casi cualquier casco con ala.",
+        "Streamlight declara clasificación NFPA 1971 y protección IPX7. El código se confirma al cotizar, y la probamos sobre tu casco antes de cerrar la compra."
       ],
       "descripcion": [
-        "Elige Streamlight Vantage si tu casco con ala requiere luz de manos libres y el haz debe seguir la mirada; para una linterna que apunte fuera de ella cotizamos otra configuración. En la orden escribimos Vantage, LED C4, 115 lúmenes, 7,000 candelas, giro de 360° y dos CR123A de 3 V, para que llegue la lámpara que tu brigada probó y no una pieza parecida.",
-        "La Vantage combina aluminio anodizado de grado aeronáutico, lente de vidrio borofloat de alta temperatura, luz trasera azul y cabezal de giro de 360°. En la prueba con guantes montamos soporte, visor y máscara sobre tu casco con ala, encendemos la luz y cambiamos la orientación; si el lente golpea el borde o el cabezal pierde posición, pedimos otra interfaz antes de recibir el lote.",
-        "La configuramos con dos baterías de litio CR123A de 3 V y soporte para casco con ala. Pídela junto con visor y máscara si buscas conservar ambas manos libres; si el clip no retiene o el haz queda tapado, combinamos la maniobra con una linterna portátil en lugar de perforar el casco o fijar la Vantage con cinta. Separamos lámpara, soporte, energía inicial y reserva en tu cotización.",
-        "Para búsqueda, escalera o reconocimiento probamos los 167 m, seis horas y 7,000 candelas declarados con casco, visor, máscara y guantes. Antes de aceptar el lote, verificamos el interruptor, el giro de 360°, la tapa y la luz trasera azul; si hay parpadeo o el clip se mueve al subir una escalera, apartamos la unidad y registramos el soporte que falló.",
-        "Streamlight declara clasificación NFPA 1971 e IPX7 de 1 m durante 30 min; la cotizamos como declaración del modelo, no como certificación. Antes de guardia revisamos lente borofloat, aro, aluminio, contactos y CR123A; después de intervención retiramos la Vantage con corrosión, lente quebrado, humedad o soporte flojo y pedimos evaluación del fabricante antes de devolverla al casco."
+        "Está hecha de aluminio anodizado de grado aeronáutico, con lente de vidrio borofloat de alta temperatura, pensada para aguantar el calor y los golpes de una intervención.",
+        "La luz trasera azul ayuda a que los compañeros ubiquen al bombero desde atrás en humo. El giro de 360° permite orientar el haz hacia donde se trabaja, sin quitar la lámpara del casco."
       ],
       "faq": [
         {
-          "q": "¿Qué alcance declara?",
-          "a": "Streamlight declara 167 m y 7,000 candelas para Vantage. Esa cifra se complementa con la prueba de orientación en el casco, visor y máscara que usa la corporación."
+          "q": "¿Qué alcance tiene la Streamlight Vantage?",
+          "a": "167 m, con 115 lúmenes y 7,000 candelas, según su fabricante."
         },
         {
-          "q": "¿Qué baterías incluye?",
-          "a": "Dos baterías de litio CR123A de 3 V. La orden debe distinguir lámpara, soporte y baterías para mantener reserva del formato exacto."
+          "q": "¿Qué baterías usa la Streamlight Vantage?",
+          "a": "Dos baterías CR123A de 3 V, incluidas con la lámpara. Su duración declarada es de seis horas."
         },
         {
-          "q": "¿Qué significa el giro de 360° en Vantage?",
-          "a": "Permite orientar el cabezal a distintas posiciones sobre el casco. La utilidad real se confirma con visor, máscara y casco con ala, pues una posición disponible puede no resultar útil si rebota en el visor o queda obstruida."
+          "q": "¿La Streamlight Vantage se puede mojar?",
+          "a": "Declara protección IPX7, sumergible a 1 m durante 30 minutos. Aun así, conviene limpiarla y revisar el lente después de cada servicio."
         },
         {
-          "q": "¿La declaración IPX7 permite sumergirla durante cualquier limpieza?",
-          "a": "No. IPX7 es una especificación que Streamlight publica para este modelo; la limpieza, inspección y respuesta después de exposición se realizan conforme a su manual, no mediante inmersiones añadidas por el usuario."
-        },
-        {
-          "q": "¿Qué se registra al aceptar una Vantage?",
-          "a": "Marca, modelo, casco con ala probado, soporte, orientación del cabezal, baterías CR123A y resultado de la prueba con visor, máscara y guantes. Ese registro permite repetir la configuración al reponer una unidad."
+          "q": "¿Para qué sirve la luz trasera azul de la Vantage?",
+          "a": "Para que los compañeros ubiquen al bombero desde atrás cuando hay poca visibilidad."
         }
       ],
       "imagen": {
@@ -767,6 +761,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "width": 1600,
         "height": 900,
         "origen": "ia"
+      },
+      "duos": {
+        "ficha": [
+          "La tabla reúne emisor, energía, alcance y norma de la Streamlight Vantage tal como los publica su ficha. El código se confirma al cotizar.",
+          "La clasificación NFPA 1971 aparece como declaración del fabricante."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica Streamlight para la Vantage, desde el emisor hasta la protección contra agua.",
+          "Antes de comprar, móntala sobre tu casco con visor y máscara para confirmar que el ala no tapa el haz."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Streamlight Vantage: alcance, baterías, agua y luz trasera.",
+          "Si nos mandas el modelo de tu casco, te confirmamos el montaje antes de cotizar."
+        ]
       }
     },
     {
@@ -791,36 +799,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Kit con lente transparente y dos cubiertas desprendibles"
       ],
       "resumen": [
-        "Los ESS Striketeam XTO son goggles forestales con Speed-Clip, ventilación perimetral y lente intercambiable de policarbonato de 2.4–2.6 mm. Los surtimos para casco forestal o de rescate cuando tu brigada conserva retención, protección ocular y campo visual con la maniobra real.",
-        "Cotizamos BLL1006, kit #740-0283, lente transparente, dos cubiertas y repuestos compatibles. Mándanos WhatsApp con casco, graduación y uso previsto; probamos Speed-Clip, ClearZone FlowCoat y la correa antes de pedir el modelo exacto publicado, sin confundirlo con una máscara de ERA."
+        "Los ESS Striketeam XTO son goggles forestales con acolchado facial de celda cerrada, ventilación y filtración perimetral contra humo y partículas.",
+        "Su lente intercambiable es de policarbonato de 2.4 a 2.6 mm, con tratamiento ClearZone FlowCoat antiempaño y antirrayas y protección UVA/UVB. Admiten anteojos graduados.",
+        "ESS declara NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA. El kit BLL1006 incluye lente transparente y dos cubiertas desprendibles."
       ],
       "descripcion": [
-        "Elige ESS Striketeam XTO para casco forestal o de rescate si necesitas goggle con Speed-Clip; para atmósfera que exige ERA cotizamos la máscara respiratoria correspondiente. En la orden escribimos BLL1006, kit #740-0283, lente transparente y dos cubiertas desprendibles, para que tu brigada reciba lente, clip y contenido identificados, no solo goggles sin interfaz definida.",
-        "El modelo lleva acolchado facial de celda cerrada, correa envolvente de una pieza con velcro, ventilación y filtración perimetral, además de lente de policarbonato de 2.4–2.6 mm con ClearZone FlowCoat. Durante la prueba montamos el Speed-Clip en tu casco, ajustamos correa y caminamos, miramos arriba y abajo; si el marco se desplaza, hay presión con graduación o aparece empañamiento, pedimos otra configuración.",
-        "Surtimos Striketeam XTO con Speed-Clip para casco forestal o de rescate, lente intercambiable, correa y cubiertas compatibles. Pídelo con anteojos graduados si los usa tu personal y prueba campo visual, visor y herramienta; si la correa o el clip estorban otro accesorio, dejamos fuera esa combinación en vez de asumir compatibilidad universal. La protección UVA/UVB queda como característica declarada de ESS.",
-        "Para trabajo forestal y rescate abrimos el kit BLL1006 #740-0283 antes de aceptar un lote y contamos goggle, lente transparente y dos cubiertas desprendibles. Probamos retención al agacharse, ventilación al caminar y visibilidad con casco; si hay lente rayado, espuma degradada, velcro fatigado o Speed-Clip sin retención, apartamos el conjunto y pedimos el repuesto compatible, no una mica de grosor parecido.",
-        "ESS declara NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA; las registramos como referencias declaradas, nunca como certificación de casco o ERA. Antes de guardia revisamos lente, marco, espuma, ventilaciones, velcro y clip; después de intervención retiramos Striketeam XTO con fisura, opacidad, deformación o pérdida de tensión y lo guardamos lejos de arena y herrajes."
+        "El Speed-Clip los sujeta a cascos forestales y de rescate, y la correa envolvente de una pieza con velcro los mantiene en su lugar al caminar o agacharse.",
+        "Las cubiertas desprendibles protegen el lente de la ceniza y se cambian cuando se ensucian, lo que alarga la vida del lente principal. Son los goggles de nuestro kit forestal."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "BLL1006; el kit se identifica como #740-0283. Confirma que la propuesta detalle goggle, lente transparente y dos cubiertas desprendibles."
+          "q": "¿Los goggles ESS Striketeam XTO sirven con lentes graduados?",
+          "a": "Sí, admiten anteojos graduados debajo, según su fabricante. Conviene probarlos con los lentes de cada usuario."
         },
         {
-          "q": "¿Acepta lentes graduados?",
-          "a": "ESS declara que admite anteojos graduados. La persona usuaria debe confirmar la interfaz con su graduación, casco y campo visual de trabajo."
+          "q": "¿Qué es el Speed-Clip de los ESS Striketeam XTO?",
+          "a": "Un sistema de sujeción para montar los goggles en cascos forestales y de rescate sin quitarse el casco."
         },
         {
-          "q": "¿Para qué sirve el Speed-Clip?",
-          "a": "ESS lo declara para cascos forestales y de rescate. Su función se acepta instalándolo en el casco que recibirá el kit y comprobando que retenga el goggle sin mover marco, visera ni suspensión durante los movimientos de trabajo."
+          "q": "¿Qué incluye el kit ESS Striketeam XTO?",
+          "a": "El kit BLL1006, número 740-0283, incluye lente transparente y dos cubiertas desprendibles."
         },
         {
-          "q": "¿Qué incluyen las cubiertas desprendibles?",
-          "a": "El kit declarado incluye dos cubiertas además del lente transparente. En la recepción se coteja el contenido abierto y se identifica cómo se almacenarán para que no se rayen ni se confundan con lentes de otro modelo."
-        },
-        {
-          "q": "¿Las referencias del modelo aplican a todo el conjunto?",
-          "a": "No se extienden automáticamente a casco, ERA o accesorios. Se conservan como referencias declaradas de Striketeam XTO y se solicitan en la documentación que acompañe exactamente el modelo y kit cotizados."
+          "q": "¿Los goggles Striketeam XTO se empañan?",
+          "a": "Su lente tiene tratamiento ClearZone FlowCoat antiempaño y ventilación perimetral, lo que reduce el empañamiento en trabajo exterior."
         }
       ],
       "imagen": {
@@ -829,6 +831,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "width": 1600,
         "height": 900,
         "origen": "ia"
+      },
+      "duos": {
+        "ficha": [
+          "Los ESS Striketeam XTO se identifican con el código BLL1006, kit 740-0283. La tabla reúne lente, montaje y normas tal como los publica su ficha.",
+          "Las normas aparecen como declaración del fabricante y aplican a los goggles, no al resto del equipo."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica ESS para los Striketeam XTO, pensados para trabajo forestal y de rescate.",
+          "Pide cubiertas y lentes de repuesto en la misma partida para no quedarte sin ellos en plena temporada."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de los Striketeam XTO: lentes graduados, Speed-Clip, contenido del kit y empañamiento.",
+          "Si nos dices el modelo de casco de tu cuadrilla, te confirmamos el ajuste antes de cotizar."
+        ]
       }
     },
     {
@@ -849,36 +865,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Dos bolsas con zipper"
       ],
       "resumen": [
-        "La Romak Fire BPS1005 es una maleta de poliéster de alta resistencia repelente al agua, de 25 × 13 × 14 pulgadas, para casco, botas, prendas y accesorios. La surtimos cuando tu conjunto real cierra y se traslada sin forzar costuras ni zipper.",
-        "Cotizamos BPS1005 por pieza con asas de polipropileno de 1 ½ pulgadas, dos bolsas con zipper y prueba de carga. Mándanos WhatsApp con casco, botas, prendas y vehículo de tu brigada; revisamos volumen, estiba y cierre antes de solicitar la cantidad requerida."
+        "La maleta porta-equipo Romak Fire BPS1005 es de poliéster de alta resistencia, repelente al agua, y mide 25 × 13 × 14 pulgadas.",
+        "Tiene asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Su fabricante la presenta para el conjunto completo: chaquetón, pantalón, tirantes, casco, botas, guantes y monja.",
+        "Es equipo de transporte, no de protección, así que no le aplica una norma. La cotizamos probando que el conjunto real de tu brigada quepa sin forzarla."
       ],
       "descripcion": [
-        "Elige Romak Fire BPS1005 si tu conjunto de casco, botas, chaquetón, pantalón, tirantes, guantes y monja cabe en 25 × 13 × 14 pulgadas; si tus tallas cambian el volumen, cotizamos otro transporte. En la orden escribimos BPS1005, poliéster de alta resistencia repelente al agua y cantidad por persona, reserva o unidad móvil, para que tu compra describa la pieza completa.",
-        "La BPS1005 se construye en poliéster repelente al agua con asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Durante la prueba de carga colocamos tu casco y botas en las esquinas, cerramos sin forzar dientes o costuras y levantamos la maleta; si el cierre se atora o las asas pierden unión, pedimos otra configuración antes de asignarla al traslado.",
-        "Surtimos Romak Fire BPS1005 para chaquetón, pantalón, tirantes, casco, botas, guantes y monja, junto con la familia de traje que use tu brigada. Pídela con una carga muestra y define qué artículo va en las dos bolsas con zipper; si hay piezas húmedas o contaminadas, seguimos tu procedimiento fuera de la maleta y no mezclamos equipo listo solo porque entra en el mismo compartimiento.",
-        "En almacén, vehículo o punto de entrega probamos Romak Fire BPS1005 de 25 × 13 × 14 pulgadas con una talla representativa: cargamos el conjunto, cerramos el zipper, levantamos por las asas de polipropileno de 1 ½ pulgadas y revisamos estiba. Antes de aceptar el lote, cotejamos dos bolsas, tiradores, dientes, costuras y base; si casco o botas presionan el cierre, apartamos esa opción y cotizamos el volumen que corresponda.",
-        "Romak Fire no declara norma para BPS1005; la anotamos como sin norma declarada y nunca trasladamos la del traje o casco. Antes de guardia revisamos poliéster, base, asas, costuras y zipper; después de salida vaciamos, clasificamos y secamos la maleta, y la retiramos con costura abierta, base perforada, asa floja o cierre que separa dientes bajo carga."
+        "Mantiene el equipo de cada bombero junto e identificado cuando viaja entre almacén, estación y vehículo. Las dos bolsas con zipper sirven para guantes, monja o accesorios pequeños.",
+        "Como las tallas cambian el volumen, la prueba con una talla representativa decide: la maleta tiene que cerrar sin tensar costuras ni zipper."
       ],
       "faq": [
         {
-          "q": "¿Qué medidas declara?",
-          "a": "25 × 13 × 14 pulgadas. Carga físicamente el kit institucional antes de ordenar volumen, porque casco, botas y accesorios cambian el espacio disponible."
+          "q": "¿Qué medidas tiene la maleta Romak Fire BPS1005?",
+          "a": "25 × 13 × 14 pulgadas, según su fabricante."
         },
         {
-          "q": "¿Qué se revisa al recibir?",
-          "a": "Poliéster, costuras, asas, cierres, dos bolsas y capacidad con el conjunto muestra. La prueba incluye levantar y trasladar la maleta cargada."
+          "q": "¿Qué cabe en la maleta porta-equipo BPS1005?",
+          "a": "Su fabricante la presenta para chaquetón, pantalón, tirantes, casco, botas, guantes y monja. Lo confirmamos con el conjunto real de tu brigada."
         },
         {
-          "q": "¿Las medidas aseguran que cabe cualquier conjunto?",
-          "a": "No. Son medidas declaradas de la BPS1005; casco, botas, tallas y accesorios cambian el volumen útil. La aceptación debe cargar el conjunto real, cerrar sin forzar y comprobar la estiba en el vehículo o almacén."
+          "q": "¿La maleta BPS1005 es impermeable?",
+          "a": "Es de poliéster repelente al agua. Protege de salpicaduras, pero no es un contenedor sellado."
         },
         {
-          "q": "¿Para qué sirven las dos bolsas con zipper?",
-          "a": "Para organizar artículos que la corporación defina, no para declarar descontaminación. En recepción se revisa que ambas bolsas, sus tiradores y sus cierres funcionen sin presión indebida cuando la maleta lleva la carga prevista."
-        },
-        {
-          "q": "¿Qué condición obliga a retirar la BPS1005?",
-          "a": "Costura abierta, asa sin unión firme, base perforada o zipper que se atora o separa dientes bajo carga. No se mantiene en uso con amarras que cambian la capacidad de traslado del modelo."
+          "q": "¿Para qué sirven las bolsas de la BPS1005?",
+          "a": "Son dos bolsas con zipper para organizar piezas pequeñas, como guantes, monja o accesorios."
         }
       ],
       "imagen": {
@@ -887,6 +897,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "width": 1600,
         "height": 900,
         "origen": "ia"
+      },
+      "duos": {
+        "ficha": [
+          "La maleta Romak Fire se identifica con el código BPS1005. La tabla reúne material y estatus tal como los publica su ficha.",
+          "Al ser equipo de transporte, no le aplica una norma de protección."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la BPS1005, desde sus medidas hasta sus bolsas.",
+          "La capacidad real se confirma con el equipo de tu brigada, no solo con las medidas."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la BPS1005: medidas, capacidad, agua y bolsas.",
+          "Si nos dices cuántos conjuntos vas a guardar, te cotizamos las maletas con la prueba de carga incluida."
+        ]
       }
     }
   ]
