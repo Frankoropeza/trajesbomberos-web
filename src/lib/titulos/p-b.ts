@@ -15,8 +15,12 @@ export const DUO_P_B: Record<string, Record<string, Duo>> = {
       'Un mensaje con riesgo, número de elementos, medidas y alcance permite separar una brigada industrial de un cuerpo de ataque interior desde el inicio. Manda esos datos por WhatsApp o correo y solicita que la cotización desglosada incluya ficha técnica por partida.',
     ],
     whatsapp: [
-      'WhatsApp es la vía rápida para cotizar trajes para bomberos cuando necesitas aclarar familias, tallas, fichas técnicas o piezas de reposición. La conversación permite ubicar la operación antes de preparar una propuesta, sin que tengas que llegar con cada especificación completamente resuelta.',
-      'Envía una foto de la prenda existente, el pliego o la lista de tallas y describe el riesgo que atenderá tu personal. Respondemos durante el día hábil; después podrás pedir que lo acordado quede asentado en la cotización y documentación de la partida.',
+      'Los trajes para bomberos se cotizan por WhatsApp, teléfono, correo o formulario, según el canal que te resulte útil. Comparte la operación, las piezas, las tallas disponibles y, si existe, el pliego o requisición; así la solicitud inicia con los datos necesarios para especificar la partida.',
+      'WhatsApp recibe respuesta en el transcurso del día hábil. Para pliegos, requisiciones y fichas técnicas, usa el correo; para una llamada de cotización, consulta el horario de lunes a viernes. Las visitas a nuestra dirección en la colonia Obrera se coordinan previamente por WhatsApp con cita confirmada.',
+    ],
+    proceso: [
+      'El proceso para cotizar trajes para bomberos comienza con tu mensaje y la información de la operación. Con los elementos, piezas, tallas y requisitos disponibles, proponemos una familia de traje y un composite que corresponda al riesgo y a la norma solicitada.',
+      'La propuesta queda por escrito con ficha técnica por partida, tallas y condiciones de entrega. Emitimos CFDI 4.0, atendemos compras sin mínimo y cotizamos envío a los 32 estados; también apoyamos la especificación de pliegos de licitación.',
     ],
   },
   '/empresa/': {
