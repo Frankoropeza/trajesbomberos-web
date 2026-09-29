@@ -75,6 +75,36 @@ Pide una partida por rol y por pieza. Incluye número de usuarios, tallas, activ
 | Intervención | Escenario de mayor exposición | Conjunto estructural, respiración y programa técnico. |
 | Apoyo | Comunicación o logística | Equipo acorde a su zona y tarea. |
 
+## Riesgo ordinario o alto: qué cambia en la obligación
+
+La NOM-002-STPS-2010 se publicó en el Diario Oficial de la Federación el 9 de diciembre de 2010 y todo lo demás depende de un primer paso: **clasificar el riesgo de incendio** del centro de trabajo, o de cada área, conforme a su Apéndice A (numeral 5.1). De esa clasificación salen obligaciones distintas:
+
+| Obligación | Riesgo de incendio ordinario | Riesgo de incendio alto | Numeral |
+| --- | --- | --- | --- |
+| Brigada contra incendio | No es obligatoria por esta norma; se organiza la respuesta según el plan | **Obligatoria**, en los términos del capítulo 9 | 5.6 |
+| Simulacros de incendio | Al menos **una vez al año** | Al menos **dos veces al año** | 5.7 |
+| Capacitación | Programa anual teórico-práctico para trabajadores y brigadas | Programa anual teórico-práctico para trabajadores y brigadas | 5.8 |
+| Equipo de protección personal de brigadistas | Según funciones y riesgos, conforme a la NOM-017-STPS | Según funciones y riesgos, conforme a la NOM-017-STPS | 5.9 |
+| Ubicación del EPP de la brigada en el croquis | Sí, si hay brigada | Sí | 5.2 f) |
+
+El numeral 5.9 es el que toca directamente la compra: obliga a **dotar de equipo de protección personal a los integrantes de las brigadas contra incendio, considerando las funciones y riesgos a que estarán expuestos**, y remite a la Guía de Referencia III de la propia norma, que describe los componentes y características generales de ese equipo. Las guías de referencia orientan; la obligación está en el numeral.
+
+## Equipo mínimo por nivel de brigada
+
+La norma no fija un kit único, por eso conviene traducir la función de cada integrante a una dotación concreta. Esta es la tabla con la que armamos las partidas cuando un centro de trabajo nos pide cotizar; el nivel final lo decide tu análisis de riesgo, no el proveedor.
+
+| Nivel de actuación | Qué hace | Cabeza y cara | Cuerpo | Manos y pies | Respiración |
+| --- | --- | --- | --- | --- | --- |
+| 1 · Evacuación y apoyo | Guía, comunicación, concentración de personas | Casco de seguridad industrial e identificación del rol | Chaleco o prenda de identificación | Calzado de seguridad del puesto | No aplica |
+| 2 · Conato | Control inicial con extintor o hidrante, sin entrar a humo | [Casco de brigada](/cascos/casco-brigada-industrial/) con visor o goggles y [capucha](/capuchas/) | [Traje de brigadista](/trajes/brigadista/) de tela ignífuga | [Guantes de brigada](/guantes/guante-brigadista/) y [bota de brigada industrial](/botas/bota-de-brigada-industrial/) | Solo si el análisis lo exige |
+| 3 · Intervención | Ataque interior o atmósfera no respirable, con procedimiento y mando | Casco estructural, monja y protección facial | [Conjunto estructural](/trajes/estructural/) de tres capas | Guante estructural y bota estructural | [Equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) obligado |
+
+Dos notas para que la tabla no se use mal. El nivel 2 no incluye entrar a un espacio con humo aunque el traje «parezca» de bombero. Y el nivel 3 solo existe si hay entrenamiento, supervisión y equipo de respiración para todos los que entran: sin eso, el límite de la brigada es el nivel 2.
+
+## Cómo lo resuelve LORICA
+
+Cuando una planta nos manda su análisis de riesgo, devolvemos la cotización ya dividida por nivel: el [kit brigadista](/kits/kit-brigadista/) para el nivel 2 —traje, casco, capucha, guantes y botas— y, si el análisis lo pide, conjuntos estructurales y ERA para el equipo de intervención. Cada partida lleva la ficha técnica del fabricante y la referencia normativa que declara, para que el expediente de la NOM-002 y la compra digan lo mismo. Entregamos en los 32 estados con factura CFDI 4.0.
+
 ## Preguntas frecuentes
 
 **¿La norma obliga a comprar traje estructural?** No como regla general. El equipo depende de la evaluación de riesgo y de las funciones asignadas a la brigada.
@@ -88,3 +118,10 @@ Pide una partida por rol y por pieza. Incluye número de usuarios, tallas, activ
 **¿Puedo usar el mismo equipo para todos los turnos?** Sólo si está disponible, en talla y en condición para cada usuario. El registro de asignación e inspección ayuda a comprobarlo.
 
 **¿Qué hago cuando cambia el proceso de la planta?** Actualiza el análisis de riesgo y revisa si cambian brigada, capacitación, equipo, ubicación o procedimientos.
+
+**¿Cada cuánto hay que hacer simulacros de incendio según la NOM-002-STPS-2010?** Al menos una vez al año en centros de trabajo con riesgo de incendio ordinario y al menos dos veces al año en los de riesgo alto, según el numeral 5.7 de la norma.
+
+## Fuentes
+
+- [NOM-002-STPS-2010, Condiciones de seguridad — Prevención y protección contra incendios en los centros de trabajo (DOF, 9 de diciembre de 2010)](https://dof.gob.mx/normasOficiales/4228/stps/stps.htm): numerales 5.1, 5.2 f), 5.6, 5.7, 5.8 y 5.9; Apéndice A y Guía de Referencia III.
+- Fichas del [kit brigadista](/kits/kit-brigadista/) y de los [trajes de brigadista](/trajes/brigadista/): componentes y normas declaradas por cada fabricante.
