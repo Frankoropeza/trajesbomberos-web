@@ -26,9 +26,20 @@ const isTipo = kind === 'tipo';
 const tipo = entry as Tipo;
 const modelo = entry as Modelo;
 const nombre = isTipo ? tipo.nombre : `${modelo.marca} ${modelo.nombre}`;
+// Uso recomendado por familia de traje (ficha técnica estandarizada, AEO 2026-09-29, 2.1).
+const USO_FAMILIA: Record<string, string> = {
+  estructural: 'Ataque interior en incendio estructural',
+  brigadista: 'Brigada contra incendio en centro de trabajo y conato (NOM-002-STPS-2010); no sustituye al estructural en ataque interior',
+  forestal: 'Incendio forestal y de vegetación, jornadas largas en línea de fuego',
+  aproximacion: 'Aproximación a calor radiante: ARFF, refinería, fundición y hornos',
+  entrada: 'Entrada breve a la flama con ERA, en incidente térmico severo',
+  extricacion: 'Rescate vehicular y técnico con riesgo de corte y punción',
+  hazmat: 'Respuesta a materiales peligrosos según el agente identificado',
+};
 const rows = isTipo ? (tipo.especificacion ?? []) : [
   { campo: 'Marca', valor: modelo.marca }, { campo: 'Fabricante', valor: modelo.fabricante },
   ...(modelo.codigo ? [{ campo: 'Código', valor: modelo.codigo }] : []), ...(modelo.codigoNota ? [{ campo: 'Código', valor: modelo.codigoNota }] : []),
+  ...(modelo.familia && USO_FAMILIA[modelo.familia] ? [{ campo: 'Uso recomendado', valor: USO_FAMILIA[modelo.familia] }] : []),
   ...(modelo.tipo ? [{ campo: 'Tipo', valor: tiposDeSeccion(seccion.slug).find((item) => item.slug === modelo.tipo)?.nombre ?? modelo.tipo }] : []),
   ...(modelo.material || modelo.capaExterior ? [{ campo: 'Material / capa exterior', valor: modelo.material ?? modelo.capaExterior! }] : []), ...(modelo.barreras ? [{ campo: 'Barreras', valor: modelo.barreras }] : []),
   ...(modelo.colores ? [{ campo: 'Colores', valor: modelo.colores }] : []), ...(modelo.tallas ? [{ campo: 'Tallas', valor: modelo.tallas }] : []), ...(modelo.peso ? [{ campo: 'Peso', valor: modelo.peso }] : []),
@@ -57,15 +68,17 @@ const tituloModelo = isTipo ? '' : modelo.title ?? (tituloModeloBase.length <= 6
 const llamadaCotizacion = `Cotiza con ${MARCA.nombre} por WhatsApp: entrega en ${MARCA.cobertura}.`;
 const descripcionModelo = isTipo ? '' : modelo.description ?? recortarPalabras(`${recortarPalabras(primeraFrase(modelo.resumen?.[0] ?? modelo.descripcion[0]), 160 - llamadaCotizacion.length - 1)} ${llamadaCotizacion}`, 160);
 const modeloPorId = (id: string) => MODELOS.find((item) => item.id === id)!;
+// Kits: cada componente con su función en el conjunto y enlace a su ficha (AEO 2026-09-29, 2.5).
+const componenteKit = (rol: string, id: string, nombre?: string) => { const m = modeloPorId(id); return { rol, nombre: nombre ?? `${m.marca} ${m.nombre}`, href: urlModelo(m) }; };
 const componentesKit = isTipo && seccion.slug === 'kits' ? {
   'kit-estructural': [
-    { nombre: 'Bullard LTX', href: urlModelo(modeloPorId('bullard-ltx')) }, { nombre: 'Croydon Filtrex', href: urlModelo(modeloPorId('croydon-filtrex')) }, { nombre: 'Veridian Fire Pro II', href: urlModelo(modeloPorId('veridian-fire-pro-ii')) }, { nombre: 'Majestic PAC II', href: urlModelo(modeloPorId('majestic-pac-ii')) },
+    componenteKit('Traje', 'romak-profesional'), componenteKit('Casco', 'bullard-ltx', 'Bullard LTX'), componenteKit('Capucha', 'majestic-pac-ii', 'Majestic PAC II'), componenteKit('Guantes', 'veridian-fire-pro-ii', 'Veridian Fire Pro II'), componenteKit('Botas', 'croydon-filtrex', 'Croydon Filtrex'),
   ],
   'kit-brigadista': [
-    { nombre: 'Bullard LTX', href: urlModelo(modeloPorId('bullard-ltx')) }, { nombre: 'Romak CAP1005', href: urlModelo(modeloPorId('romak-cap1005')) }, { nombre: 'Romak Firemax VI', href: urlModelo(modeloPorId('romak-firemax-vi')) }, { nombre: 'Romak Workman Fire', href: urlModelo(modeloPorId('romak-workman-fire')) },
+    componenteKit('Traje', 'romak-combate-basico'), componenteKit('Casco', 'bullard-ltx', 'Bullard LTX'), componenteKit('Capucha', 'romak-cap1005', 'Romak CAP1005'), componenteKit('Guantes', 'romak-firemax-vi', 'Romak Firemax VI'), componenteKit('Botas', 'romak-workman-fire', 'Romak Workman Fire'),
   ],
   'kit-forestal': [
-    { nombre: 'Fire Ranger Explorer', href: urlModelo(modeloPorId('romak-fire-ranger-explorer')) }, { nombre: 'Romak BOMW1002', href: urlModelo(modeloPorId('romak-bomw1002')) }, { nombre: 'Bullard Wildland FH911H', href: urlModelo(modeloPorId('bullard-fh911h')) }, { nombre: 'ESS Striketeam XTO', href: urlModelo(modeloPorId('ess-striketeam-xto')) },
+    componenteKit('Traje', 'romak-fire-ranger-explorer', 'Fire Ranger Explorer'), componenteKit('Traje de saco y pantalón (alternativa)', 'romak-bomw1002', 'Romak BOMW1002'), componenteKit('Casco', 'bullard-fh911h', 'Bullard Wildland FH911H'), componenteKit('Goggles', 'ess-striketeam-xto', 'ESS Striketeam XTO'),
   ],
 }[tipo.slug] ?? [] : [];
 // H1 con la palabra clave de la página (auditoría 2026-09-29, E3): el H1 se
@@ -184,7 +197,7 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
     {familiaModelo && <section class="block" id="conjunto"><CompletaElConjunto familia={familiaModelo.slug} titulo={`Completa el conjunto con ${nombre}`} /></section>}
     {modelosMarca.length > 0 && <section class="block"><SectionHeading clave="marca" eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
     {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${tipo.nombre.toLowerCase()} que surtimos`} duo={duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
-    {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
+    {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><strong>{item.rol}:</strong> <a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading clave="faq" eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={faqsFicha} /></section>
   </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Trajes {familiaModelo.nombreWa.toLowerCase()}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
   <GuiasTecnicas ruta={path} tema={temaEnFrase(nombre)} />

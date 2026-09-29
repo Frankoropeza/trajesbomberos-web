@@ -313,7 +313,7 @@ export function productoSchema(p: ProductoInput): object {
 }
 
 // Filtra filas de ficha técnica a propiedades del producto (no datos de compra).
-const PROP_PRODUCTO = /norma|referencia|certific|estatus|capa|barrera|material|composite|tpp|thl|talla|peso|nivel|color|exterior|forro|suela|puntera|clase|protecci|cumplimiento|c[oó]digo|marca|fabricante|longitud|di[aá]metro|presi[oó]n|capacidad|duraci[oó]n|visor|cierre|conexi|rosca|largo|ancho/i;
+const PROP_PRODUCTO = /\buso\b|norma|referencia|certific|estatus|capa|barrera|material|composite|tpp|thl|talla|peso|nivel|color|exterior|forro|suela|puntera|clase|protecci|cumplimiento|c[oó]digo|marca|fabricante|longitud|di[aá]metro|presi[oó]n|capacidad|duraci[oó]n|visor|cierre|conexi|rosca|largo|ancho/i;
 export function propiedadesDeFicha(filas: { campo: string; valor: string }[]): { name: string; value: string }[] {
   const vistos = new Set<string>();
   return filas
