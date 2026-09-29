@@ -77,7 +77,7 @@ Si eres **convocante**: contesta con precisión y aprovecha para cerrar los huec
 
 No todo es responsabilidad del licitante. Los que más nos tocan ver:
 
-- **Copiar el anexo de una compra anterior.** Con norma consolidada de por medio, un pliego heredado puede estar citando un documento que ya no es la referencia principal.
+- **Copiar el anexo del año pasado.** Con norma consolidada de por medio, un pliego heredado puede estar citando un documento que ya no es la referencia principal.
 - **Pedir valores extremos sin justificación.** Un TPP muy por encima de la referencia encarece, reduce licitantes y entrega trajes más pesados y menos transpirables. Más no es mejor: es distinto, y hay que poder justificarlo con el análisis de riesgo.
 - **No presupuestar el mantenimiento.** El equipo requiere limpieza avanzada e inspección conforme a la **NFPA 1850**. Si compras cincuenta conjuntos y no contemplas su cuidado, en tres años tendrás cincuenta conjuntos en peor estado del que la norma acepta.
 - **Adjudicar sin verificar la muestra física.** Cuando el pliego lo permite, pedir muestra evita sorpresas que ningún PDF revela.

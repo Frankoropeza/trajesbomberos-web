@@ -31,7 +31,7 @@ La respuesta corta es diez años. La respuesta útil es más larga, y es la que 
 
 ## De dónde sale la regla de los diez años
 
-El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850** —el documento que consolidó las anteriores NFPA 1851 y NFPA 1852.
+El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850** —el documento que consolidó las anteriores NFPA 1851 y NFPA 1852, y cuya primera edición consolidada es la de 2026.
 
 Dos precisiones que cambian decisiones de compra:
 

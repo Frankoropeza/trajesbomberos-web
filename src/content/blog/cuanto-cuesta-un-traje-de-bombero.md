@@ -40,7 +40,7 @@ Una capa exterior resistente no describe por sí sola la barrera frente a humeda
 
 ## Certificación, norma y estatus declarado
 
-Para conjuntos estructurales, NFPA 1970 consolidó las referencias previas NFPA 1971, 1975, 1981 y 1982. Para otras familias pueden aplicar referencias distintas, como NFPA 1950, que consolidó 1951, 1977 y 1999. La norma debe coincidir con la familia y con el alcance que se está solicitando.
+Para conjuntos estructurales, NFPA 1970, edición 2025, consolidó las referencias previas NFPA 1971, 1975, 1981 y 1982. Para otras familias pueden aplicar referencias distintas, como NFPA 1950, edición 2025, que consolidó 1951, 1977 y 1999. La norma debe coincidir con la familia y con el alcance que se está solicitando.
 
 La cotización debe indicar si el fabricante declara una certificación, bajo qué norma y edición, y qué documento la respalda para el modelo completo. “Equivalente” necesita una explicación concreta: qué desempeño, configuración o documento se está comparando. No es correcto inferir certificación porque aparezca una tela conocida o porque un catálogo use vocabulario técnico.
 
@@ -78,7 +78,7 @@ Un conjunto no es más seguro porque todas sus piezas tengan la misma marca o el
 
 ### Vida de servicio y costo por año
 
-La vida de un conjunto estructural no se calcula desde la fecha de entrega sino desde su fabricación. NFPA 1850 consolidó las referencias de selección, cuidado y mantenimiento y establece un límite de vida de servicio de diez años para el conjunto estructural, además de inspecciones, limpieza y retiro previo por daño o contaminación. Es un máximo, no una garantía de que cualquier pieza llegará a ese momento.
+La vida de un conjunto estructural no se calcula desde la fecha de entrega sino desde su fabricación. NFPA 1850, edición 2026, consolidó las referencias de selección, cuidado y mantenimiento y establece un límite de vida de servicio de diez años para el conjunto estructural, además de inspecciones, limpieza y retiro previo por daño o contaminación. Es un máximo, no una garantía de que cualquier pieza llegará a ese momento.
 
 Para evaluar el costo por año de servicio, pregunta por fecha de fabricación, programa de limpieza, inspección, reparación autorizada y disponibilidad de refacciones. Un conjunto que no se cuida o que llega con tiempo de vida ya consumido cambia el cálculo aunque la cotización inicial parezca comparable. La guía sobre [vida útil del traje de bombero](/blog/vida-util-traje-bombero-nfpa-1850/) detalla qué registrar desde la recepción.
 
