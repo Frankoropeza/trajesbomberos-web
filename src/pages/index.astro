@@ -86,13 +86,13 @@ const esRetrato = (src: string) => (DIMENSIONES[src]?.height ?? 1250) > (DIMENSI
 
 interface FamiliaTile { cta: string; subs: [string, string][] } // [label, slug de pieza]
 const FAMILIA_TILE: Record<string, FamiliaTile> = {
-  estructural: { cta: 'Catálogo de trajes estructurales', subs: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']] },
-  brigadista: { cta: 'Catálogo de trajes de brigadista', subs: [['Conjunto de brigada', 'conjunto'], ['Overol ignífugo', 'overol'], ['Chaquetón de brigadista', 'chaqueton'], ['Pantalonera de brigadista', 'pantalonera']] },
-  forestal: { cta: 'Catálogo de trajes forestales', subs: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']] },
-  aproximacion: { cta: 'Catálogo de trajes aluminizados', subs: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']] },
-  entrada: { cta: 'Catálogo de trajes de entrada', subs: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']] },
-  extricacion: { cta: 'Catálogo de trajes de extricación', subs: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']] },
-  hazmat: { cta: 'Catálogo de trajes Hazmat', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']] },
+  estructural: { cta: 'Trajes estructurales para bombero', subs: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']] },
+  brigadista: { cta: 'Trajes de brigadista industrial', subs: [['Conjunto de brigada', 'conjunto'], ['Overol ignífugo', 'overol'], ['Chaquetón de brigadista', 'chaqueton'], ['Pantalonera de brigadista', 'pantalonera']] },
+  forestal: { cta: 'Trajes forestales para bombero', subs: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']] },
+  aproximacion: { cta: 'Trajes aluminizados de aproximación', subs: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']] },
+  entrada: { cta: 'Trajes de entrada a la flama', subs: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']] },
+  extricacion: { cta: 'Trajes de extricación y rescate', subs: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']] },
+  hazmat: { cta: 'Trajes Hazmat nivel A, B y C', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']] },
 };
 const subsFamilia = (slug: string) =>
   soloValidas((FAMILIA_TILE[slug]?.subs ?? []).map(([label, pieza]) => ({ label, href: `/trajes/${slug}/${pieza}/` })));
