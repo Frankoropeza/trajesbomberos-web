@@ -3,128 +3,128 @@ import type { Duo } from './index';
 export const DUO_P_I: Record<string, Record<string, Duo>> = {
   '/accesorios/camara-termica/': {
     errores: [
-      'La cámara térmica exige entrenamiento para interpretar contrastes infrarrojos; comprarla sin definir carga o tomar la pantalla como diagnóstico total puede desorientar búsqueda y reconocimiento. Vapor, reflejos y materiales requieren confirmar la observación mediante procedimiento.',
-      'Solicita cámara, baterías, cargadores, base, funda y correa por partida. La aceptación debe incluir lectura de objetos conocidos y comunicación de hallazgos; así la licitación demuestra operación, no solo que la pantalla enciende.',
+      'Una cámara térmica apoya la búsqueda y el reconocimiento al mostrar contrastes de radiación infrarroja, pero vapor, agua, metales reflectivos y materiales alteran la lectura. Por ello, la pantalla no sustituye orientación, comunicación, ERA ni la confirmación de hallazgos conforme al procedimiento.',
+      'Solicita la cámara térmica con baterías, cargadores, base, funda y correa identificados por modelo. Incluye en la aceptación lectura de objetos conocidos, controles con guantes y comunicación de observaciones; así confirmas que la partida respalda la operación y no solo el encendido de pantalla.',
     ],
     faq: [
-      'La cámara térmica no ve a través de paredes: muestra diferencias térmicas de superficies observadas. Sensor, lente, pantalla, controles y batería apoyan reconocimiento, pero no reemplazan comunicación, ERA ni orientación de la cuadrilla.',
-      'Envía por WhatsApp maniobra, cantidad, modelo requerido y lugar de carga. Con esos datos se cotizan los componentes y se documenta el criterio de aceptación, separando una base de estación de una estación dentro de vehículo.',
+      'La cámara térmica no ve a través de paredes; representa diferencias térmicas de las superficies que observa. Sensor infrarrojo, lente, pantalla, controles y batería aportan información para reconocimiento, mientras la cuadrilla confirma el contexto mediante comunicación, orientación y el procedimiento operativo correspondiente.',
+      'Comparte por WhatsApp la maniobra, cantidad, modelo requerido y lugar de carga de cada cámara térmica. Con esos datos se distinguen baterías, cargadores y bases para estación o vehículo, y se define una prueba de aceptación que corresponda a la configuración que realmente utilizará la corporación.',
     ],
     ficha: [
-      'Para la cámara térmica anota sensor infrarrojo, lente, pantalla, controles, batería y carcasa; resolución, rango, frecuencia y autonomía solo cuando el modelo los declare. Esos campos evitan una configuración de observación incompleta.',
-      'Pide ficha técnica por partida y componentes de transporte y carga por escrito. Esto permite cotejar entrega, organizar flujo de batería y revisar lente, puerta, contactos y correa antes de devolver un equipo golpeado a servicio.',
+      'En la ficha de cámara térmica registra sensor infrarrojo, lente, pantalla, controles, carcasa y batería. Resolución, campo de visión, rango, frecuencia y autonomía se incorporan únicamente cuando el fabricante los declara para el modelo, evitando comparar configuraciones de observación que no son equivalentes.',
+      'Pide por escrito la ficha técnica, los componentes de transporte y el sistema de carga de cada partida. Así puedes cotejar la entrega, organizar el relevo de baterías e inspeccionar lente, puerta, contactos y correa antes de que una unidad golpeada regrese al servicio.',
     ],
   },
   '/accesorios/dispositivo-pass/': {
     errores: [
-      'El dispositivo PASS no debe adquirirse sin una respuesta ensayada. Batería agotada, altavoz bloqueado o controles inaccesibles frustran reconocer señal, comunicar, ubicar y verificar a un integrante cuando se activa una alarma.',
-      'Incluye PASS integrado o independiente, fijación, energía y capacitación. NFPA 1970 se mantiene como referencia declarada del modelo, sin describirlo como certificado; esa precisión sostiene la recepción institucional y evita promesas documentales inexistentes.',
+      'El dispositivo PASS solo aporta valor dentro de una respuesta ensayada: la cuadrilla debe reconocer la alarma, comunicarla, ubicar y verificar a la persona. Una batería agotada, un altavoz cubierto o controles inaccesibles impiden esa secuencia aunque el equipo conserve apariencia funcional.',
+      'Define si el dispositivo PASS será integrado o independiente e incluye fijación, energía y capacitación en la partida. Conserva NFPA 1970 como referencia declarada del modelo, sin llamarlo certificado; solicita la documentación ofrecida para recibir la configuración y el entrenamiento que requiere la corporación.',
     ],
     faq: [
-      'El dispositivo PASS emite una alerta dentro de un protocolo institucional. Carcasa, sensor, alarma audible, controles, batería y fijación se ubican donde prenda, radio, arnés o ERA no cubran su operación.',
-      'Comparte por WhatsApp tipo de PASS, cantidad por usuario, conjunto de protección y montaje requerido. La cotización puede detallar energía y prueba de alarma con la interfaz real, en vez de asumir sensibilidad o autonomía por apariencia.',
+      'Un dispositivo PASS emite una alerta personal dentro del protocolo institucional; puede ser integrado al ERA o independiente. Carcasa, sensor, alarma audible, controles, batería y fijación deben quedar donde prenda, radio o arnés no cubran el botón ni atenúen la señal.',
+      'Comparte por WhatsApp el tipo de PASS, cantidad por usuario, conjunto de protección y montaje requerido. La propuesta podrá separar energía y soporte, además de programar la prueba de alarma sobre la interfaz real, sin suponer sensibilidad, volumen o autonomía por la apariencia exterior.',
     ],
     ficha: [
-      'La requisición de dispositivo PASS identifica carcasa, sensor, salida audible, controles, batería, fijación y modalidad integrada o independiente. Ninguna de esas características se infiere por la forma exterior del accesorio.',
-      'Solicita montaje, energía y capacitación por escrito, manteniendo NFPA 1970 como referencia declarada. La ficha permite comprobar indicadores y ubicación sin abrir sellos ni atribuir certificación que el modelo no declara.',
+      'Al especificar un dispositivo PASS, identifica carcasa, sensor, salida audible, indicadores, controles, batería, fijación y modalidad integrada o independiente. Relaciona también la pieza con el ERA cuando corresponda, porque ninguna de esas características se confirma solamente por la forma exterior del accesorio.',
+      'Solicita por escrito el montaje, la energía y la capacitación, manteniendo NFPA 1970 como referencia declarada. La ficha permite comprobar indicadores, ubicación y prueba autorizada sin abrir sellos ni atribuir una certificación que el fabricante no declara para el modelo ofrecido.',
     ],
   },
   '/accesorios/ess-striketeam-xto/': {
     caracteristicas: [
-      'ESS Striketeam XTO reúne acolchado de celda cerrada, correa envolvente, Speed-Clip, ventilación perimetral y lentes intercambiables de policarbonato. Se prueba con casco forestal o de rescate para revisar retención, visión lateral y tensión.',
-      'Confirma BLL1006, kit #740-0283, lente transparente, dos cubiertas y clip compatible. El modelo anuncia adaptación, pero casco, marco y correa deben demostrarse físicamente antes de cerrar una cotización institucional.',
+      'El ESS Striketeam XTO combina acolchado de celda cerrada, correa envolvente, Speed-Clip, ventilación perimetral y lentes intercambiables de policarbonato. La prueba con casco forestal o de rescate revisa que el marco retenga, la correa conserve tensión y el campo visual permanezca despejado.',
+      'Confirma BLL1006, kit #740-0283, lente transparente, dos cubiertas desprendibles y clip compatible antes de cotizar. Aunque el modelo declara adaptación, pide una muestra con casco, marco y correa para comprobar físicamente la interfaz que recibirá la corporación y definir sus repuestos.',
     ],
     faq: [
-      'ESS Striketeam XTO concentra consultas sobre BLL1006, kit #740-0283 y uso con anteojos graduados. El fabricante declara que los admite, aunque la interfaz final depende de casco, lente, correa y campo visual de la persona.',
-      'Manda por WhatsApp casco, cantidad de goggles, lentes de reserva y maniobra prevista. La propuesta puede distinguir goggle, clip, lente y cubiertas para evitar que el componente óptico quede implícito o que el repuesto no corresponda.',
+      'En el ESS Striketeam XTO, BLL1006 y kit #740-0283 identifican una configuración con lente y cubiertas específicas. El fabricante declara compatibilidad con anteojos graduados, pero la persona usuaria debe verificar casco, lente, correa y campo visual antes de asignar el goggle.',
+      'Manda por WhatsApp el casco, cantidad de goggles, lentes de reserva y maniobra prevista. Así la propuesta separa goggle, clip, lente y cubiertas, evitando que la óptica quede implícita o que un repuesto de apariencia semejante no corresponda al kit BLL1006.',
     ],
     ficha: [
-      'ESS Striketeam XTO se identifica como BLL1006, kit #740-0283, con policarbonato de 2.4–2.6 mm y Speed-Clip. Declara NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA; su estatus es declarado.',
-      'Pide documentación del modelo y describe lente, cubiertas, correa y clip por partida. Así se coteja contenido, ventilación y retención sin transformar esas referencias declaradas en certificación de casco, ERA u otro conjunto.',
+      'ESS Striketeam XTO se identifica como BLL1006, kit #740-0283, con lente de policarbonato de 2.4–2.6 mm y Speed-Clip. Declara NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA; todas esas referencias tienen estatus declarado para el modelo.',
+      'Solicita documentación del modelo y describe por partida lente, cubiertas, correa y clip. Con ello cotejas contenido, ventilación y retención al recibir, sin convertir las referencias declaradas en certificación de casco, ERA o cualquier otro conjunto que no forma parte del kit.',
     ],
   },
   '/accesorios/goggles/': {
     errores: [
-      'Los goggles para bombero no sustituyen máscara de ERA. Omitir ventilación, lentes de repuesto o retención con casco puede provocar empañamiento y pérdida de visión, hasta obligar a levantar la protección ocular frente a partículas.',
-      'Define lente, marco, correa, clip y casco antes de comparar ofertas. Una prueba con equipo institucional deja por escrito los repuestos y evita confundir protección ocular con una interfaz diseñada para respiración protegida.',
+      'Los goggles para bombero protegen la visión en una exposición definida, pero no sustituyen la máscara de ERA. Omitir ventilación, lentes de repuesto o retención con casco favorece empañamiento y pérdida de campo visual, hasta obligar a levantar la protección ocular frente a partículas.',
+      'Define lente, marco, correa, clip y casco antes de comparar ofertas de goggles para bombero. Prueba la interfaz con equipo institucional y deja por escrito los repuestos compatibles; así separas protección ocular de la configuración que resuelve respiración protegida en una atmósfera que exige ERA.',
     ],
     faq: [
-      'Los goggles para bombero integran lente, marco, acolchado, ventilaciones, clips y correa. Sus dudas frecuentes separan visión y protección respiratoria: no autorizan una atmósfera que exige ERA ni se compran como adaptación universal.',
-      'Comparte casco, maniobra, cantidad, lentes de reserva y necesidad de clip. Con esa información se cotiza una configuración que conserve visión superior, inferior y lateral, sin asumir material, espesor o tratamiento óptico sin modelo.',
+      'Los goggles para bombero pueden integrar lente, marco, acolchado, ventilaciones, clips y correa. Su función es conservar visión ante partículas dentro de la maniobra definida; no autorizan una atmósfera que exige ERA ni deben comprarse como una adaptación universal para cualquier casco.',
+      'Comparte el casco, la maniobra, cantidad, lentes de reserva y necesidad de clip. Con esa información se cotiza una configuración que conserve visión superior, inferior y lateral, sin atribuir material, espesor o tratamiento óptico cuando todavía no existe un modelo identificado.',
     ],
     ficha: [
-      'Para goggles para bombero especifica lente fijo o intercambiable, marco, acolchado, ventilaciones, clips y correa. Material, espesor y tratamiento óptico deben provenir de la propuesta identificada y no de una descripción genérica.',
-      'Solicita ficha técnica y casco muestra por escrito. La recepción comprueba retención, tensión, lente y campo visual, dejando un registro útil para reponer piezas compatibles sin convertir una frase comercial en especificación.',
+      'Para los goggles para bombero especifica si el lente es fijo o intercambiable, además de marco, acolchado, ventilaciones, clips y correa. Material, espesor, tratamiento óptico y compatibilidad se toman de la propuesta identificada, no de una descripción genérica de protección ocular.',
+      'Solicita ficha técnica y casco muestra por escrito antes de ordenar. Durante la recepción, comprueba retención, tensión de correa, condición del lente y campo visual; ese registro permite pedir piezas compatibles después, sin convertir una frase comercial en una especificación verificable.',
     ],
   },
   '/accesorios/lampara-de-casco/': {
     errores: [
-      'La lámpara de casco falla si se compra soporte sin probar casco, se omiten baterías o se perfora para forzar montaje. El haz puede rebotar en visor, caer al inclinar la cabeza o comprometer la retención original.',
-      'Cotiza lámpara, soporte y energía como conceptos separados. Prueba visor, máscara y guantes para registrar orientación; cinta o perforaciones no resuelven holgura, corrosión o choque contra la interfaz del casco.',
+      'Una lámpara de casco puede fallar en la maniobra si se compra soporte sin probar el casco, se omiten baterías o se perfora para forzar el montaje. El haz puede rebotar en visor, caer al inclinar la cabeza o comprometer la retención original.',
+      'Cotiza lámpara de casco, soporte y energía como conceptos separados. Prueba visor, máscara y guantes para registrar la orientación del haz; cinta o perforaciones no corrigen holgura, corrosión ni choques contra la interfaz que debe conservar el casco institucional.',
     ],
     faq: [
-      'La lámpara de casco reúne carcasa, lente, interruptor, energía y soporte, y debe iluminar en la dirección de la mirada. Su aceptación prueba visor y máscara sin impedir radio, herramienta o pasamanos durante el movimiento.',
-      'Envía marca del casco, visor, máscara, cantidad y tipo de batería o cargador. La cotización puede identificar soporte y alimentación, sin inventar alcance, material o protección de ingreso cuando falta modelo.',
+      'La lámpara de casco reúne carcasa, lente, interruptor, energía y soporte para iluminar en la dirección de la mirada. Su aceptación debe probar visor y máscara sin impedir el uso de radio, herramienta o pasamanos mientras la persona se desplaza con el conjunto completo.',
+      'Envía la marca del casco, visor, máscara, cantidad y tipo de batería o cargador. Con esos datos, la cotización identifica soporte y alimentación de la lámpara de casco, sin inventar alcance, material o protección de ingreso cuando falta el modelo específico.',
     ],
     ficha: [
-      'La ficha de lámpara de casco anota carcasa, lente, interruptor, fuente de energía, soporte y cabezal articulado cuando aplique. Casco muestra, visor y máscara son campos esenciales porque determinan orientación y montaje.',
-      'Pide pieza, soporte, baterías o cargador por escrito. Así se revisan cuerpo, bisagra, contactos y fijación antes de guardia, evitando recibir una cantidad de lámparas que no tiene soportes equivalentes.',
+      'La ficha de lámpara de casco anota carcasa, lente, interruptor, fuente de energía, soporte y cabezal articulado cuando aplique. Casco muestra, visor y máscara son datos esenciales porque determinan tanto el montaje como la orientación útil del haz durante la maniobra.',
+      'Pide por escrito la pieza, el soporte y las baterías o cargador. Así puedes revisar cuerpo, bisagra, contactos y fijación antes de guardia, evitando recibir una cantidad de lámparas de casco que no dispone de los soportes equivalentes para instalarse.',
     ],
   },
   '/accesorios/linterna-de-bombero/': {
     errores: [
-      'La linterna de bombero no se elige únicamente por tamaño o alcance. Una funda ausente, interruptor inaccesible con guante o baterías mezcladas deja una luz difícil de recuperar y confunde iluminación manual con luz de casco.',
-      'Solicita pieza, alimentación, funda, anillo o clip. La prueba de sacar, encender, dirigir y devolver la linterna con guante confirma si la propuesta responde a la maniobra y no solo a la descripción comercial.',
+      'La linterna de bombero no se selecciona únicamente por tamaño o alcance. Una funda ausente, un interruptor inaccesible con guante o baterías mezcladas deja una luz difícil de recuperar y confunde la iluminación manual con la función de una lámpara de casco.',
+      'Solicita la linterna de bombero con alimentación, funda, anillo o clip definidos. Prueba sacar, encender, dirigir y devolver la pieza con guante y prenda institucional; así confirmas que la propuesta responde a la maniobra y no solo a una descripción comercial.',
     ],
     faq: [
-      'La linterna de bombero combina carcasa, lente, emisor, interruptor y energía; funda, anillo o clip definen porte. A diferencia de una luz de casco, permite mantener el haz en otra dirección mientras se observa.',
-      'Indica cantidad por persona, vehículo o puesto, alimentación y método de transporte. Si el modelo es recargable, anota dónde se cargará y cuántos cargadores se requieren para no reunir necesidades distintas en una sola partida.',
+      'La linterna de bombero combina carcasa, lente, emisor, interruptor y energía; funda, anillo o clip definen cómo se porta. A diferencia de una luz de casco, permite mantener el haz en un escalón o control mientras la mirada atiende otra dirección.',
+      'Indica cantidad por persona, vehículo o puesto, además de alimentación y método de transporte. Si la linterna de bombero es recargable, señala dónde se cargará y cuántos cargadores requiere, para no agrupar necesidades distintas dentro de una partida que luego resulte incompleta.',
     ],
     ficha: [
-      'La requisición de linterna de bombero debe incluir carcasa, lente, emisor, interruptor, energía y funda, anillo o clip. Autonomía, material o sellado solo se conservan cuando se declaran para el código ofrecido.',
-      'Pide alimentación, cantidad y accesorios de transporte por escrito. Esto permite aceptar funda, tapa, contactos y retención, y separar cargadores cuando corresponda para evitar baterías incompatibles dentro de la unidad.',
+      'Al pedir una linterna de bombero, incluye carcasa, lente, emisor, interruptor, energía y funda, anillo o clip. Autonomía, material, sellado o alcance se conservan únicamente cuando el fabricante los declara para el código específico que se está ofreciendo.',
+      'Pide por escrito la alimentación, cantidad y accesorios de transporte. Esto permite aceptar funda, tapa, contactos y retención con la pieza real, además de separar cargadores cuando corresponda para evitar baterías incompatibles dentro de la unidad o el almacén.',
     ],
   },
   '/accesorios/maleta-porta-equipo/': {
     errores: [
-      'Una maleta porta-equipo comprada solo por medidas puede fallar con casco, botas, prendas y accesorios reales. Costuras, asas y cierres ignorados afectan traslado; mezclar material contaminado tampoco vuelve al contenedor una solución de descontaminación.',
-      'Carga el conjunto muestra, cierra sin forzar y llévalo a vehículo o almacén antes de ordenar. Pide material, bolsas, asas y contenido previsto para cotizar volumen útil, no una cifra exterior aislada.',
+      'Una maleta porta-equipo comprada solamente por medidas puede fallar con casco, botas, prendas y accesorios reales. Ignorar costuras, asas y cierres afecta el traslado, mientras que mezclar material contaminado no convierte al contenedor en una solución de descontaminación ni mantiene limpio el conjunto.',
+      'Carga el conjunto muestra, cierra la maleta porta-equipo sin forzar y llévala al vehículo o almacén antes de ordenar. Pide material, bolsas, asas y contenido previsto para cotizar volumen útil, no una cifra exterior aislada que no representa la carga institucional.',
     ],
     faq: [
-      'La maleta porta-equipo organiza y transporta, pero no descontamina. Cuerpo textil, base, costuras, asas, cierre y bolsas se validan con el conjunto real, porque casco y botas cambian cómo se acomoda la carga.',
-      'Envía qué casco, botas, prendas y accesorios viajarán, además de cantidad por persona o unidad. Así se definen medidas y bolsas y se documenta una prueba de carga que no dependa de la frase «kit completo».',
+      'La maleta porta-equipo organiza y transporta el conjunto, pero no lo descontamina. Cuerpo textil, base, costuras, asas, cierre y bolsas se validan con la carga real, porque casco y botas ocupan esquinas y cambian cómo se acomoda el volumen disponible.',
+      'Envía qué casco, botas, prendas y accesorios viajarán, además de la cantidad por persona o unidad. Así se definen medidas y bolsas de la maleta porta-equipo, y se documenta una prueba de carga que no dependa de la frase ambigua «kit completo».',
     ],
     ficha: [
-      'Para maleta porta-equipo registra medidas, material, base, número de asas, cierre, bolsas y contenido a alojar. Impermeabilidad, ruedas, refuerzos o capacidad nominal se piden solamente cuando el modelo los declara expresamente.',
-      'Solicita esos campos por escrito para revisar tela, uniones, tiradores, dientes y zipper bajo carga. La ficha ayuda a aceptar por persona o vehículo y a separar una maleta con humedad, costura abierta o cierre trabado.',
+      'Para una maleta porta-equipo registra medidas, material, base, número de asas, cierre, bolsas y contenido que debe alojar. Impermeabilidad, ruedas, refuerzos o capacidad nominal solo se solicitan cuando el fabricante los declara expresamente para el modelo que integra la propuesta.',
+      'Solicita esos campos por escrito para revisar tela, uniones, tiradores, dientes y zipper bajo carga. La ficha permite aceptar por persona o vehículo y apartar una maleta porta-equipo con humedad, costura abierta o cierre trabado antes de que falle durante el traslado.',
     ],
   },
   '/accesorios/romak-bps1005/': {
     caracteristicas: [
-      'Romak Fire Maleta porta-equipo BPS1005 declara poliéster repelente al agua, 25 × 13 × 14 pulgadas y dos bolsas con zipper. Puede alojar chaquetón, pantalón, tirantes, casco, botas, guantes y monja tras una prueba física.',
-      'Confirma BPS1005, medidas, asas de polipropileno de 1 ½ pulgadas y dos bolsas. Casco y botas alteran volumen; la condición repelente al agua no equivale a impermeabilidad ni a descontaminación.',
+      'La Romak Fire Maleta porta-equipo BPS1005 declara poliéster repelente al agua, medidas de 25 × 13 × 14 pulgadas y dos bolsas con zipper. Puede alojar chaquetón, pantalón, tirantes, casco, botas, guantes y monja, siempre que el conjunto pase una prueba física de carga.',
+      'Confirma BPS1005, medidas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper antes de ordenar. Casco y botas modifican el volumen útil; solicita una carga muestra para comprobar cierres y traslado, sin presentar el material repelente al agua como impermeabilidad o descontaminación.',
     ],
     faq: [
-      'Para recepción, la maleta se revisa por medidas y carga real. Se acepta cerrando sin forzar costuras o zipper y verificando que pueda levantarse hacia vehículo o almacén.',
-      'Comparte composición del kit, cantidad y espacio de traslado. La cotización puede incluir material, asas, bolsas y carga prevista, sin asumir que una maleta descrita para «kit completo» resuelve cualquier talla o accesorio.',
+      'En recepción, la Romak Fire Maleta porta-equipo BPS1005 se revisa por sus medidas declaradas y por la carga real. Se acepta al cerrar sin forzar costuras o zipper, levantar mediante las asas y verificar que el conjunto cabe en vehículo o almacén.',
+      'Comparte la composición del kit, cantidad y espacio de traslado disponible. La cotización puede incluir material, asas, bolsas y carga prevista para BPS1005, sin asumir que una maleta descrita para «kit completo» resuelve cualquier talla, casco, bota o accesorio adicional.',
     ],
     ficha: [
-      'La ficha especifica poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Su estatus normativo es no aplica.',
-      'Solicita código y características por escrito para cotejar costuras, cierres y capacidad en recepción. El material no debe trasladarse como propiedad del EPP guardado ni describirse como barrera de descontaminación.',
+      'La ficha de Romak Fire BPS1005 especifica poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Su estatus normativo es no aplica para este modelo.',
+      'Solicita código y características por escrito para cotejar costuras, cierres y capacidad durante la recepción. El poliéster declarado no debe trasladarse como propiedad del EPP guardado ni describirse como barrera de descontaminación; confirma la carga con el conjunto real antes de liberar la partida.',
     ],
   },
   '/accesorios/streamlight-vantage/': {
     caracteristicas: [
-      'Streamlight Vantage declara LED C4, 115 lúmenes, 7,000 candelas y giro de 360°, con dos CR123A de 3 V. Cuerpo de aluminio anodizado y lente borofloat se prueban sobre casco con ala, visor y máscara.',
-      'Confirma lámpara, soporte, dos CR123A, orientación y casco probado. La adaptación anunciada para casi cualquier casco con ala requiere activación con guantes y comprobación de que el haz no rebota en visor.',
+      'Streamlight Vantage declara LED C4, 115 lúmenes, 7,000 candelas y giro de 360°, con dos CR123A de 3 V incluidas. Su cuerpo de aluminio anodizado y lente borofloat se prueban sobre casco con ala, visor y máscara antes de asignar una configuración operativa.',
+      'Confirma la lámpara Streamlight Vantage, su soporte, dos CR123A, orientación y casco probado antes de cotizar. La adaptación declarada para casi cualquier casco con ala requiere activación con guantes y comprobación de que el haz no rebota en visor ni pierde la posición elegida.',
     ],
     faq: [
-      'Streamlight Vantage concentra dudas sobre alcance declarado de 167 m, baterías CR123A y montaje. Giro de 360° y luz trasera azul pertenecen al modelo, pero no sustituyen prueba con casco, visor y máscara.',
-      'Indica casco con ala, visor, cantidad y reserva de baterías. La propuesta puede separar soporte y energía para que una reposición conserve la configuración validada, sin mezclar formatos por tamaño semejante.',
+      'Streamlight Vantage concentra dudas sobre su alcance declarado de 167 m, las baterías CR123A y el montaje. El giro de 360° y la luz trasera azul pertenecen al modelo, pero no sustituyen la prueba con casco con ala, visor y máscara institucionales.',
+      'Indica el casco con ala, visor, cantidad y reserva de baterías requerida. La propuesta puede separar soporte y energía de Streamlight Vantage para que una reposición conserve la configuración validada, sin mezclar formatos por tamaño semejante ni asumir compatibilidad entre cascos distintos.',
     ],
     ficha: [
-      'Streamlight Vantage declara LED C4, 115 lúmenes, 167 m, 6 h, lente borofloat, IPX7 y giro de 360°, con dos CR123A de 3 V. Su clasificación NFPA 1971 tiene estatus declarado.',
-      'Pide código por confirmar y documentación de clasificación declarada. Especificar soporte, casco y baterías permite aceptar lente, aro, interruptor y contactos; IPX7 no autoriza inmersión o limpieza fuera de indicaciones del fabricante.',
+      'Streamlight Vantage declara LED C4, 115 lúmenes, alcance de 167 m, duración de 6 h, lente borofloat, IPX7 y giro de 360°, con dos CR123A de 3 V. Su clasificación NFPA 1971 tiene estatus declarado para este modelo.',
+      'Pide el código por confirmar y la documentación de clasificación declarada. Especificar soporte, casco y baterías permite aceptar lente, aro, interruptor y contactos; IPX7 no autoriza inmersión ni limpieza fuera de las indicaciones publicadas por el fabricante para Streamlight Vantage.',
     ],
   },
   '/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/': {
