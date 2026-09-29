@@ -1,11 +1,11 @@
 {
- "lead": "Nuevo León cuenta con 30 estaciones de bomberos en 14 municipios, concentradas en Monterrey, Apodaca y Guadalupe. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para contactar o equipar la base que corresponde.",
+ "lead": "Nuevo León cuenta con 31 estaciones de bomberos en 14 municipios, concentradas en Monterrey, Apodaca y Guadalupe. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para contactar o equipar la base que corresponde.",
  "panorama": [
-  "En Nuevo León el grueso del servicio lo prestan dos patronatos: Bomberos de Nuevo León, A.B.P., con una red que cubre varios municipios del área metropolitana, y el Patronato de Bomberos de Ciudad Guadalupe, A.C. Los complementan cuerpos municipales como el de San Nicolás de los Garza, con varias estaciones, o el de Linares, una brigada de PEMEX y dos servicios aeroportuarios. Hay 3 centrales y 18 subestaciones.",
+  "En Nuevo León el grueso del servicio lo prestan dos patronatos: Bomberos de Nuevo León, A.B.P., con una red que cubre varios municipios del área metropolitana, y el Patronato de Bomberos de Ciudad Guadalupe, A.C. Los complementan cuerpos municipales como el de San Nicolás de los Garza o el de Cadereyta Jiménez, una brigada de PEMEX y dos servicios aeroportuarios. Hay 3 centrales y 19 subestaciones.",
   "Monterrey concentra 5 estaciones; Apodaca y Guadalupe reúnen 4 cada uno, con continuidad hacia San Nicolás de los Garza, San Pedro Garza García, General Escobedo, Santa Catarina y Salinas Victoria. Esa densidad metropolitana facilita organizar dotaciones por corporación, aunque Linares, Sabinas Hidalgo y Santiago requieren logística propia. Quien equipa bomberos en Nuevo León debe separar servicio urbano, industrial y aeroportuario."
  ],
  "estacionesDuo": [
-  "Bomberos de Nuevo León, A.B.P. enlaza estaciones en Monterrey, Apodaca, General Escobedo, San Pedro Garza García, Santa Catarina y Salinas Victoria. El Patronato de Bomberos de Ciudad Guadalupe, A.C. opera central y subestaciones, y San Nicolás suma estaciones municipales. El listado va por municipio, con teléfono oficial."
+  "Bomberos de Nuevo León, A.B.P. identifica cada estación con su número oficial, como la 3 Morelos o la 18 Gómez Morín. En Cadereyta Jiménez, el municipio opera la Estación de Bomberos No. 2 en Santa Lucía, y el Patronato de Ciudad Guadalupe tiene central y subestaciones. El listado va por municipio, con teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
   "La atención prehospitalaria aparece en 28 estaciones y los incendios estructurales en 25. Rescate vehicular, materiales peligrosos y fuego forestal dibujan una demanda variada; las bases de La Fama y Salinas Victoria se orientan a fugas de gas, espacios confinados y materiales peligrosos. La protección debe responder a esa combinación."
@@ -17,11 +17,11 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Nuevo León y dónde están?",
-   "a": "Hay 30 estaciones de bomberos localizadas en 14 municipios de Nuevo León. Monterrey concentra 5; Apodaca y Guadalupe reúnen 4 cada uno. También hay estaciones en Cadereyta Jiménez, General Escobedo, Juárez, Linares, Pesquería, Sabinas Hidalgo, Salinas Victoria, San Nicolás de los Garza, San Pedro Garza García, Santa Catarina y Santiago."
+   "a": "Hay 31 estaciones de bomberos localizadas en 14 municipios de Nuevo León. Monterrey concentra 5; Apodaca y Guadalupe reúnen 4 cada uno. También hay estaciones en Cadereyta Jiménez, General Escobedo, Juárez, Linares, Pesquería, Sabinas Hidalgo, Salinas Victoria, San Nicolás de los Garza, San Pedro Garza García, Santa Catarina y Santiago."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Nuevo León?",
-   "a": "Los bomberos en Nuevo León son, sobre todo, de patronato: Bomberos de Nuevo León, A.B.P., con presencia en varios municipios, y el Patronato de Bomberos de Ciudad Guadalupe, A.C. También hay cuerpos municipales, una brigada PEMEX en Cadereyta Jiménez y cuerpos aeroportuarios en Apodaca."
+   "a": "Los bomberos en Nuevo León son, sobre todo, de patronato: Bomberos de Nuevo León, A.B.P., con presencia en varios municipios, y el Patronato de Bomberos de Ciudad Guadalupe, A.C. También hay cuerpos municipales, como el de Cadereyta Jiménez con su estación de Santa Lucía, una brigada PEMEX en ese municipio y cuerpos aeroportuarios en Apodaca."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Nuevo León para una gestión?",

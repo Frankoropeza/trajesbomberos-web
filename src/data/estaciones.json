@@ -1938,6 +1938,176 @@
   "municipioSlug": "comondu"
  },
  {
+  "id": "bcs-16",
+  "nombre": "Bomberos Voluntarios de El Pescadero",
+  "ciudad": "El Pescadero",
+  "municipio": "La Paz",
+  "tipo": "Voluntarios",
+  "corporacion": "Bomberos Voluntarios de El Pescadero, A.C.",
+  "rolEstacion": "unica",
+  "coordenadas": {
+   "lat": 23.364,
+   "lng": -110.169,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "rescate-altura",
+   "rescate-acuatico",
+   "rescate-vehicular",
+   "incendios-estructurales",
+   "incendios-forestales",
+   "atencion-prehospitalaria"
+  ],
+  "fuentes": [
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Reconoce Protección Civil Municipal a Bomberos Voluntarios de El Pescadero (12-ago-2024)",
+    "url": "https://noticias.lapaz.gob.mx/reconoce-proteccion-civil-municipal-a-bomberos-voluntarios-de-el-pescadero/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Atendieron Bomberos de La Paz incendio en palmar de playa San Pedrito (6-nov-2025)",
+    "url": "https://noticias.lapaz.gob.mx/atendieron-bomberos-de-la-paz-incendio-en-palmar-de-playa-san-pedrito/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Fortalecen capacidad operativa de Bomberos de La Paz con nuevos elementos (1-feb-2026)",
+    "url": "https://noticias.lapaz.gob.mx/fortalecen-capacidad-operativa-de-bomberos-de-la-paz-con-nuevos-elementos/"
+   }
+  ],
+  "slug": "bomberos-voluntarios-de-el-pescadero",
+  "estado": "baja-california-sur",
+  "estadoNombre": "Baja California Sur",
+  "municipioSlug": "la-paz",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
+  "id": "bcs-15",
+  "nombre": "Bomberos de La Paz — Comandancia Delegacional Los Barriles",
+  "ciudad": "Los Barriles",
+  "municipio": "La Paz",
+  "tipo": "Municipal",
+  "corporacion": "Heroico Cuerpo de Bomberos de La Paz",
+  "rolEstacion": "subestacion",
+  "coordenadas": {
+   "lat": 23.683,
+   "lng": -109.699,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Entrega Presidenta Municipal unidad bombera en Los Barriles (22-jun-2023)",
+    "url": "https://noticias.lapaz.gob.mx/entrega-presidenta-municipal-unidad-bombera-en-los-barriles/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Reconocen compromiso del Cuerpo de Bomberos con nombramientos (14-abr-2025)",
+    "url": "https://noticias.lapaz.gob.mx/reconocen-compromiso-del-cuerpo-de-bomberos-con-nombramientos/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Atendieron Bomberos de La Paz más de 150 emergencias durante septiembre (15-oct-2025)",
+    "url": "https://noticias.lapaz.gob.mx/atendieron-bomberos-de-la-paz-mas-de-150-emergencias-durante-septiembre/"
+   }
+  ],
+  "slug": "bomberos-de-la-paz-comandancia-delegacional-los-barriles",
+  "estado": "baja-california-sur",
+  "estadoNombre": "Baja California Sur",
+  "municipioSlug": "la-paz",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
+  "id": "bcs-14",
+  "nombre": "Bomberos de La Paz — Comandancia Delegacional Todos Santos",
+  "ciudad": "Todos Santos",
+  "municipio": "La Paz",
+  "tipo": "Municipal",
+  "corporacion": "Heroico Cuerpo de Bomberos de La Paz",
+  "rolEstacion": "subestacion",
+  "coordenadas": {
+   "lat": 23.449,
+   "lng": -110.226,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "atencion-prehospitalaria",
+   "incendios-estructurales"
+  ],
+  "fuentes": [
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Reconocen compromiso del Cuerpo de Bomberos con nombramientos (14-abr-2025)",
+    "url": "https://noticias.lapaz.gob.mx/reconocen-compromiso-del-cuerpo-de-bomberos-con-nombramientos/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Atendieron Bomberos de La Paz más de 150 emergencias durante septiembre (15-oct-2025)",
+    "url": "https://noticias.lapaz.gob.mx/atendieron-bomberos-de-la-paz-mas-de-150-emergencias-durante-septiembre/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Bomberos de Todos Santos sofocan fuerte incendio en la comunidad (2-jul-2025)",
+    "url": "https://noticias.lapaz.gob.mx/bomberos-de-todos-santos-sofocan-fuerte-incendio-en-la-comunidad/"
+   }
+  ],
+  "slug": "bomberos-de-la-paz-comandancia-delegacional-todos-santos",
+  "estado": "baja-california-sur",
+  "estadoNombre": "Baja California Sur",
+  "municipioSlug": "la-paz",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
+  "id": "bcs-13",
+  "nombre": "Bomberos de La Paz — Estación Navarro Rubio",
+  "ciudad": "La Paz",
+  "municipio": "La Paz",
+  "tipo": "Municipal",
+  "corporacion": "Heroico Cuerpo de Bomberos de La Paz",
+  "rolEstacion": "subestacion",
+  "coordenadas": {
+   "lat": 24.12,
+   "lng": -110.3,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Bomberos de La Paz participarán en el Operativo de Semana Santa 2026 (27-mar-2026)",
+    "url": "https://noticias.lapaz.gob.mx/bomberos-de-la-paz-participaran-en-el-operativo-de-semana-santa-2026/"
+   }
+  ],
+  "slug": "bomberos-de-la-paz-estacion-navarro-rubio",
+  "estado": "baja-california-sur",
+  "estadoNombre": "Baja California Sur",
+  "municipioSlug": "la-paz",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
+  "id": "bcs-12",
+  "nombre": "Bomberos de La Paz — Subestación Camino Real",
+  "ciudad": "La Paz",
+  "municipio": "La Paz",
+  "tipo": "Municipal",
+  "corporacion": "Heroico Cuerpo de Bomberos de La Paz",
+  "rolEstacion": "subestacion",
+  "coordenadas": {
+   "lat": 24.09,
+   "lng": -110.32,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Atendió Gobierno Municipal rezagos en el Cuerpo de Bomberos (9-sep-2024)",
+    "url": "https://noticias.lapaz.gob.mx/atendio-gobierno-municipal-rezagos-en-el-cuerpo-de-bomberos-con-historica-inversion-en-obras-y-equipos/"
+   },
+   {
+    "nombre": "H. Ayuntamiento de La Paz — Bomberos de La Paz participarán en el Operativo de Semana Santa 2026 (27-mar-2026)",
+    "url": "https://noticias.lapaz.gob.mx/bomberos-de-la-paz-participaran-en-el-operativo-de-semana-santa-2026/"
+   }
+  ],
+  "slug": "bomberos-de-la-paz-subestacion-camino-real",
+  "estado": "baja-california-sur",
+  "estadoNombre": "Baja California Sur",
+  "municipioSlug": "la-paz",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
   "id": "bcs-01",
   "nombre": "Heroico Cuerpo de Bomberos de La Paz",
   "slug": "heroico-cuerpo-de-bomberos-de-la-paz",
@@ -1947,7 +2117,7 @@
   "municipio": "La Paz",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de La Paz",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "coordenadas": {
    "lat": 24.1426,
    "lng": -110.3128,
@@ -1968,11 +2138,42 @@
    {
     "nombre": "oem.com.mx",
     "url": "https://oem.com.mx/elsudcaliforniano/local/integrate-al-heroico-cuerpo-de-bomberos-de-la-paz-19937089"
+   },
+   {
+    "nombre": "noticias.lapaz.gob.mx",
+    "url": "https://noticias.lapaz.gob.mx/sofocan-bomberos-de-la-paz-incendio-en-todos-santos/"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "media",
-  "municipioSlug": "la-paz"
+  "municipioSlug": "la-paz",
+  "telefono": "(612) 122-0054"
+ },
+ {
+  "id": "bcs-17",
+  "nombre": "Bomberos de Loreto — Subestación Miramar",
+  "ciudad": "Loreto",
+  "municipio": "Loreto",
+  "tipo": "Municipal",
+  "corporacion": "Heroico Cuerpo de Bomberos de Loreto",
+  "rolEstacion": "subestacion",
+  "coordenadas": {
+   "lat": 26.0,
+   "lng": -111.34,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Gobierno de Baja California Sur — Presentan el proyecto de parque lineal en malecón de Loreto (1-ago-2025)",
+    "url": "https://www.bcs.gob.mx/presentan-el-proyecto-de-parque-lineal-en-malecon-de-loreto-como-parte-de-la-transformacion-urbana/"
+   }
+  ],
+  "slug": "bomberos-de-loreto-subestacion-miramar",
+  "estado": "baja-california-sur",
+  "estadoNombre": "Baja California Sur",
+  "municipioSlug": "loreto",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
  },
  {
   "id": "bcs-05",
@@ -1984,7 +2185,7 @@
   "municipio": "Loreto",
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Loreto",
-  "rolEstacion": "unica",
+  "rolEstacion": "central",
   "coordenadas": {
    "lat": 26.0115,
    "lng": -111.3486,
@@ -10977,11 +11178,17 @@
    {
     "nombre": "proteccioncivil.guerrero.gob.mx",
     "url": "http://proteccioncivil.guerrero.gob.mx/2024/02/22/bomberos-sofocan-incendio-de-lote-baldio-en-chilpancingo/"
+   },
+   {
+    "nombre": "guerrero.gob.mx — Secretaría de Protección Civil",
+    "url": "https://www.guerrero.gob.mx/dependencia/sector-central/secretaria-de-proteccion-civil/"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "media",
-  "municipioSlug": "chilpancingo-de-los-bravo"
+  "municipioSlug": "chilpancingo-de-los-bravo",
+  "direccion": "Boulevard René Juárez Cisneros S/N, Col. Villa Moderna, C.P. 39074, Chilpancingo",
+  "telefono": "(747) 471-2534"
  },
  {
   "id": "gro-11",
@@ -11234,6 +11441,40 @@
   "municipioSlug": "ixmiquilpan"
  },
  {
+  "id": "hgo-12",
+  "nombre": "Heroico Cuerpo de Bomberos Voluntarios del Estado de Hidalgo",
+  "ciudad": "Mineral de la Reforma",
+  "municipio": "Mineral de la Reforma",
+  "tipo": "Voluntarios",
+  "corporacion": "Heroico Cuerpo de Bomberos Voluntarios del Estado de Hidalgo, A.C.",
+  "rolEstacion": "unica",
+  "direccion": "Fracc. Hacienda Margarita, Mineral de la Reforma, Hgo.",
+  "coordenadas": {
+   "lat": 20.071,
+   "lng": -98.69,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "atencion-prehospitalaria"
+  ],
+  "fuentes": [
+   {
+    "nombre": "El Sol de Hidalgo — Bomberos Voluntarios obtienen registro estatal (15-jul-2026)",
+    "url": "https://oem.com.mx/elsoldehidalgo/local/hidalgo-bomberos-voluntarios-obtienen-registro-estatal-31143541"
+   },
+   {
+    "nombre": "Criterio Hidalgo — Bomberos Voluntarios atienden 40 incidentes de manera mensual (12-jun-2025)",
+    "url": "https://www.criteriohidalgo.com/noticias/hidalgo/hidalgo-bomberos-voluntarios-atienden-40-incidentes-de-manera-mensual"
+   }
+  ],
+  "slug": "heroico-cuerpo-de-bomberos-voluntarios-del-estado-de-hidalgo",
+  "estado": "hidalgo",
+  "estadoNombre": "Hidalgo",
+  "municipioSlug": "mineral-de-la-reforma",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
   "id": "hgo-01",
   "nombre": "Dirección de Protección Civil, Bomberos y Gestión Integral de Riesgos de Pachuca de Soto",
   "slug": "direccion-proteccion-civil-bomberos-gir-pachuca-de-soto",
@@ -11311,6 +11552,43 @@
   "verificadoEl": "2026-06",
   "confianza": "alta",
   "municipioSlug": "pachuca-de-soto"
+ },
+ {
+  "id": "hgo-13",
+  "nombre": "Dirección de Protección Civil y Bomberos del Municipio de Tepeapulco",
+  "ciudad": "Tepeapulco",
+  "municipio": "Tepeapulco",
+  "tipo": "Municipal",
+  "corporacion": "Dirección de Protección Civil y Bomberos del Municipio de Tepeapulco",
+  "rolEstacion": "unica",
+  "coordenadas": {
+   "lat": 19.785,
+   "lng": -98.553,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "incendios-estructurales"
+  ],
+  "fuentes": [
+   {
+    "nombre": "Municipio de Tepeapulco — Transparencia 2025, currículum del titular de Protección Civil y Bomberos",
+    "url": "https://tepeapulco.gob.mx/Transparencia2025/RRHH/1roN/JOSE%20JUAN%20GARCIA%20CORTES.%20CURRICULUM.pdf"
+   },
+   {
+    "nombre": "Criterio Hidalgo — Protección Civil de Tepeapulco controla incendio en Tultengo",
+    "url": "https://criteriohidalgo.com/noticias/regiones/altiplano/proteccion-civil-de-tepeapulco-controla-incendio-en-tultengo"
+   },
+   {
+    "nombre": "Criterio Hidalgo — ¿Qué causó el incendio en Gerdau Corsa de Ciudad Sahagún? (18-mar-2025)",
+    "url": "https://criteriohidalgo.com/noticias/hidalgo/que-causo-el-incendio-en-gerdau-corsa-de-ciudad-sahagun-hidalgo"
+   }
+  ],
+  "slug": "direccion-de-proteccion-civil-y-bomberos-del-municipio-de-tepeapulco",
+  "estado": "hidalgo",
+  "estadoNombre": "Hidalgo",
+  "municipioSlug": "tepeapulco",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
  },
  {
   "id": "hgo-09",
@@ -15384,7 +15662,7 @@
  },
  {
   "id": "nl-17",
-  "nombre": "Bomberos de Nuevo León — Estación Apodaca",
+  "nombre": "Bomberos de Nuevo León — Estación 6 Apodaca",
   "slug": "bomberos-nl-estacion-apodaca",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
@@ -15393,7 +15671,7 @@
   "tipo": "Patronato",
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Apodaca",
+  "numeroEstacion": "Estación 6",
   "direccion": "Blvd. Miguel Alemán 607, Col. Moderno Apodaca Primer Sector",
   "coordenadas": {
    "lat": 25.77825603,
@@ -15422,7 +15700,7 @@
  },
  {
   "id": "nl-18",
-  "nombre": "Bomberos de Nuevo León — Subestación Metroplex",
+  "nombre": "Bomberos de Nuevo León — Estación 7 Metroplex",
   "slug": "bomberos-nl-subestacion-metroplex",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
@@ -15431,7 +15709,7 @@
   "tipo": "Patronato",
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Subestación Metroplex",
+  "numeroEstacion": "Estación 7",
   "direccion": "Av. Metroplex 330, Col. Metroplex Segundo Sector, Apodaca",
   "coordenadas": {
    "lat": 25.79338912,
@@ -15627,6 +15905,34 @@
   "municipioSlug": "cadereyta-jimenez"
  },
  {
+  "id": "nl-33",
+  "nombre": "Protección Civil y Bomberos de Cadereyta Jiménez — Estación de Bomberos No. 2 (Santa Lucía)",
+  "ciudad": "Cadereyta Jiménez",
+  "municipio": "Cadereyta Jiménez",
+  "tipo": "Municipal",
+  "corporacion": "Dirección de Protección Civil y Bomberos de Cadereyta Jiménez",
+  "rolEstacion": "subestacion",
+  "direccion": "Col. Santa Lucía, Cadereyta Jiménez, N.L.",
+  "coordenadas": {
+   "lat": 25.583,
+   "lng": -99.983,
+   "precision": "aproximada"
+  },
+  "sitioWeb": "https://cadereyta.gob.mx/numeros-de-emergencia/bomberos-y-proteccion-civil/",
+  "fuentes": [
+   {
+    "nombre": "Gobierno de Cadereyta — Cadereyta hace inauguración de una nueva estación de bomberos (28-feb-2025)",
+    "url": "https://cadereyta.gob.mx/cadereyta-hace-inauguracion-de-una-nueva-estacion-de-bomberos/"
+   }
+  ],
+  "slug": "proteccion-civil-y-bomberos-de-cadereyta-jimenez-estacion-de-bomberos-no-2-santa-lucia",
+  "estado": "nuevo-leon",
+  "estadoNombre": "Nuevo León",
+  "municipioSlug": "cadereyta-jimenez",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "nl-21",
   "nombre": "Bomberos de Nuevo León — Estación 17 Escobedo",
   "slug": "bomberos-nl-estacion-17-escobedo",
@@ -15666,7 +15972,7 @@
  },
  {
   "id": "nl-22",
-  "nombre": "Bomberos de Nuevo León — Estación Agropecuaria Escobedo",
+  "nombre": "Bomberos de Nuevo León — Estación 8 Escobedo",
   "slug": "bomberos-nl-estacion-agropecuaria-escobedo",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
@@ -15675,12 +15981,12 @@
   "tipo": "Patronato",
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Agropecuaria",
-  "direccion": "Calle Clemente Caballero, Col. Agropecuaria Andrés Caballero, Escobedo",
+  "numeroEstacion": "Estación 8",
+  "direccion": "Av. Raúl Caballero y Azucena, Col. Infonavit Monterreal, General Escobedo, N.L.",
   "coordenadas": {
    "lat": 25.83056988,
    "lng": -100.29641905,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
@@ -15947,6 +16253,44 @@
   "municipioSlug": "linares"
  },
  {
+  "id": "nl-14",
+  "nombre": "Bomberos de Nuevo León — Estación 11 San Bernabé",
+  "slug": "bomberos-nl-estacion-san-bernabe",
+  "estado": "nuevo-leon",
+  "estadoNombre": "Nuevo León",
+  "ciudad": "Monterrey",
+  "municipio": "Monterrey",
+  "tipo": "Patronato",
+  "corporacion": "Bomberos de Nuevo León, A.B.P.",
+  "rolEstacion": "subestacion",
+  "numeroEstacion": "Estación 11",
+  "direccion": "Av. Farolillo y Acónico, Col. Fomerrey 116, Monterrey, N.L.",
+  "coordenadas": {
+   "lat": 25.76558014,
+   "lng": -100.38416931,
+   "precision": "exacta"
+  },
+  "sitioWeb": "https://bomberosdenuevoleon.org",
+  "servicios": [
+   "incendios-estructurales",
+   "rescate-vehicular",
+   "atencion-prehospitalaria"
+  ],
+  "fuentes": [
+   {
+    "nombre": "bomberosdenuevoleon.org",
+    "url": "https://bomberosdenuevoleon.org"
+   },
+   {
+    "nombre": "DENUE — INEGI",
+    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=3047109"
+   }
+  ],
+  "verificadoEl": "2026-09",
+  "confianza": "media",
+  "municipioSlug": "monterrey"
+ },
+ {
   "id": "nl-15",
   "nombre": "Bomberos de Nuevo León — Estación 15 El Uro",
   "slug": "bomberos-nl-estacion-15-carretera-nacional",
@@ -16024,7 +16368,7 @@
  },
  {
   "id": "nl-13",
-  "nombre": "Bomberos de Nuevo León — Estación 3 (Fidel Velázquez)",
+  "nombre": "Bomberos de Nuevo León — Estación 3 Morelos",
   "slug": "bomberos-nl-estacion-3-fidel-velazquez",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
@@ -16034,7 +16378,7 @@
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 3",
-  "direccion": "Av. Fidel Velázquez 209, Col. Cinco de Mayo, C.P. 64180",
+  "direccion": "Av. Fidel Velázquez y Av. Nuevo México, Col. Morelos, Monterrey, N.L.",
   "coordenadas": {
    "lat": 25.71667145,
    "lng": -100.34793476,
@@ -16054,44 +16398,6 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=3005884"
-   }
-  ],
-  "verificadoEl": "2026-09",
-  "confianza": "media",
-  "municipioSlug": "monterrey"
- },
- {
-  "id": "nl-14",
-  "nombre": "Bomberos de Nuevo León — Estación San Bernabé",
-  "slug": "bomberos-nl-estacion-san-bernabe",
-  "estado": "nuevo-leon",
-  "estadoNombre": "Nuevo León",
-  "ciudad": "Monterrey",
-  "municipio": "Monterrey",
-  "tipo": "Patronato",
-  "corporacion": "Bomberos de Nuevo León, A.B.P.",
-  "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación San Bernabé",
-  "direccion": "Calle Farolillo, Col. San Bernabé XIII Sector, Monterrey",
-  "coordenadas": {
-   "lat": 25.76558014,
-   "lng": -100.38416931,
-   "precision": "exacta"
-  },
-  "sitioWeb": "https://bomberosdenuevoleon.org",
-  "servicios": [
-   "incendios-estructurales",
-   "rescate-vehicular",
-   "atencion-prehospitalaria"
-  ],
-  "fuentes": [
-   {
-    "nombre": "bomberosdenuevoleon.org",
-    "url": "https://bomberosdenuevoleon.org"
-   },
-   {
-    "nombre": "DENUE — INEGI",
-    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=3047109"
    }
   ],
   "verificadoEl": "2026-09",
@@ -16382,9 +16688,9 @@
   "confianza": "media"
  },
  {
-  "id": "nl-24",
-  "nombre": "Bomberos de Nuevo León — Estación Morones Prieto",
-  "slug": "bomberos-nl-estacion-morones-prieto",
+  "id": "nl-25",
+  "nombre": "Bomberos de Nuevo León — Estación 12 Valle Oriente",
+  "slug": "bomberos-nl-estacion-valle-oriente",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
   "ciudad": "San Pedro Garza García",
@@ -16392,11 +16698,11 @@
   "tipo": "Patronato",
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Morones Prieto",
-  "direccion": "Av. Ignacio Morones Prieto, Col. Fuentes del Valle, San Pedro Garza García",
+  "numeroEstacion": "Estación 12",
+  "direccion": "Av. Lázaro Cárdenas y Rufino Tamayo, Col. Valle Oriente, San Pedro Garza García, N.L.",
   "coordenadas": {
-   "lat": 25.66851935,
-   "lng": -100.36545301,
+   "lat": 25.64588827,
+   "lng": -100.32563737,
    "precision": "exacta"
   },
   "sitioWeb": "https://bomberosdenuevoleon.org",
@@ -16412,7 +16718,7 @@
    },
    {
     "nombre": "DENUE — INEGI",
-    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=3024498"
+    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2992420"
    }
   ],
   "verificadoEl": "2026-09",
@@ -16421,7 +16727,7 @@
  },
  {
   "id": "nl-23",
-  "nombre": "Bomberos de Nuevo León — Estación San Pedro (Gómez Morín)",
+  "nombre": "Bomberos de Nuevo León — Estación 18 Gómez Morín",
   "slug": "bomberos-nl-estacion-san-pedro-gomez-morin",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
@@ -16430,8 +16736,8 @@
   "tipo": "Patronato",
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación San Pedro",
-  "direccion": "Av. Manuel Gómez Morín, Col. Del Valle, C.P. 66220",
+  "numeroEstacion": "Estación 18",
+  "direccion": "Zona La Alianza, San Pedro Garza García, N.L.",
   "coordenadas": {
    "lat": 25.64753598,
    "lng": -100.36015487,
@@ -16458,9 +16764,9 @@
   "municipioSlug": "san-pedro-garza-garcia"
  },
  {
-  "id": "nl-25",
-  "nombre": "Bomberos de Nuevo León — Estación Valle Oriente",
-  "slug": "bomberos-nl-estacion-valle-oriente",
+  "id": "nl-24",
+  "nombre": "Bomberos de Nuevo León — Estación 5 Morones Prieto",
+  "slug": "bomberos-nl-estacion-morones-prieto",
   "estado": "nuevo-leon",
   "estadoNombre": "Nuevo León",
   "ciudad": "San Pedro Garza García",
@@ -16468,11 +16774,11 @@
   "tipo": "Patronato",
   "corporacion": "Bomberos de Nuevo León, A.B.P.",
   "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Valle Oriente",
-  "direccion": "Av. Lázaro Cárdenas y Rufino Tamayo, Col. Valle Oriente, San Pedro Garza García, N.L.",
+  "numeroEstacion": "Estación 5",
+  "direccion": "Av. Ignacio Morones Prieto, Col. Fuentes del Valle, San Pedro Garza García",
   "coordenadas": {
-   "lat": 25.64588827,
-   "lng": -100.32563737,
+   "lat": 25.66851935,
+   "lng": -100.36545301,
    "precision": "exacta"
   },
   "sitioWeb": "https://bomberosdenuevoleon.org",
@@ -16488,7 +16794,7 @@
    },
    {
     "nombre": "DENUE — INEGI",
-    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2992420"
+    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=3024498"
    }
   ],
   "verificadoEl": "2026-09",
@@ -23125,6 +23431,39 @@
   "verificadoEl": "2026-06-25",
   "confianza": "alta",
   "municipioSlug": "san-andres-tuxtla"
+ },
+ {
+  "id": "ver-19",
+  "nombre": "Heroico Cuerpo de Bomberos de Tierra Blanca",
+  "ciudad": "Tierra Blanca",
+  "municipio": "Tierra Blanca",
+  "tipo": "Municipal",
+  "corporacion": "Protección Civil y Bomberos de Tierra Blanca",
+  "rolEstacion": "unica",
+  "coordenadas": {
+   "lat": 18.449,
+   "lng": -96.359,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "incendios-estructurales"
+  ],
+  "fuentes": [
+   {
+    "nombre": "Protección Civil y Bomberos Tierra Blanca (Facebook oficial)",
+    "url": "https://www.facebook.com/p/Protecci%C3%B3n-Civil-y-Bomberos-Tierra-Blanca-100078539420117/"
+   },
+   {
+    "nombre": "El Sol de Veracruz — Policías rescatan a dos adultos mayores durante incendio de vivienda en Tierra Blanca (22-sep-2026)",
+    "url": "https://elsoldeveracruz.com/policias-rescatan-a-dos-adultos-mayores-durante-incendio-de-vivienda-en-tierra-blanca/"
+   }
+  ],
+  "slug": "heroico-cuerpo-de-bomberos-de-tierra-blanca",
+  "estado": "veracruz",
+  "estadoNombre": "Veracruz",
+  "municipioSlug": "tierra-blanca",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
  },
  {
   "id": "ver-07",

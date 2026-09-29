@@ -1,14 +1,14 @@
 {
- "lead": "Veracruz cuenta con 18 estaciones de bomberos en 13 municipios. Hay 4 en el municipio de Veracruz, y Boca del Río y Minatitlán tienen 2 cada uno. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora.",
+ "lead": "Veracruz cuenta con 19 estaciones de bomberos en 14 municipios. Hay 4 en el municipio de Veracruz, y Boca del Río y Minatitlán tienen 2 cada uno. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora.",
  "panorama": [
-  "El servicio de bomberos en Veracruz combina cuerpos municipales, voluntarios, patronatos, una brigada PEMEX y servicios aeroportuarios. La zona Veracruz–Boca del Río reúne bases del Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C., con central y subestación. También hay corporaciones en Xalapa, Coatepec, Córdoba, Orizaba, Coatzacoalcos y otros municipios.",
+  "El servicio de bomberos en Veracruz combina cuerpos municipales, voluntarios, patronatos, una brigada PEMEX y servicios aeroportuarios. La zona Veracruz–Boca del Río reúne bases del Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C., con central y subestación. También hay corporaciones en Xalapa, Coatepec, Córdoba, Orizaba, Coatzacoalcos, Tierra Blanca y otros municipios.",
   "Veracruz concentra 4 estaciones; Boca del Río y Minatitlán, 2 cada uno, y en Minatitlán conviven la brigada de PEMEX y la estación municipal de Protección Civil y Bomberos. El resto se reparte entre municipios como Coatzacoalcos, Xalapa, Coatepec, Tuxpan y San Andrés Tuxtla. Para equipar bomberos en Veracruz, coordina por corporación y distingue servicio municipal, voluntario, PEMEX y aeropuerto."
  ],
  "estacionesDuo": [
-  "El Heroico y Benemérito Cuerpo de Bomberos de Veracruz mantiene central y subestaciones en el puerto. En Boca del Río opera el patronato de Bomberos Conurbados, y figuran también el Honorable Cuerpo de Bomberos de Xalapa, A.C. y la Unidad de Protección Civil y Bomberos de Coatzacoalcos. Se agrupan por municipio, con teléfono oficial."
+  "El Heroico y Benemérito Cuerpo de Bomberos de Veracruz mantiene central y subestaciones en el puerto. En Boca del Río opera el patronato de Bomberos Conurbados, y figuran también el Honorable Cuerpo de Bomberos de Xalapa, A.C. y el Heroico Cuerpo de Bomberos de Tierra Blanca. Se agrupan por municipio, con teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Quince estaciones declaran atención prehospitalaria y 14 incendios estructurales. El rescate vehicular es frecuente; materiales peligrosos y rescate acuático aparecen en corporaciones. Los servicios aeroportuarios y la brigada PEMEX añaden exposiciones especializadas. La dotación debe separar protección cotidiana y equipo específico."
+  "Quince estaciones declaran atención prehospitalaria y otras tantas, incendios estructurales. El rescate vehicular es frecuente; materiales peligrosos y rescate acuático aparecen en corporaciones. Aeropuertos y PEMEX añaden exposiciones especializadas. La dotación debe separar protección cotidiana y equipo específico."
  ],
  "equipoDuo": [
   "Los <a href=\"/trajes/estructural/\">trajes estructurales</a> corresponden al servicio de incendio en inmuebles que declaran la mayoría de las corporaciones. Las estaciones con materiales peligrosos requieren protección Hazmat y los de rescate vehicular, prendas de extricación. Para rescate acuático se necesita equipo propio de esa maniobra; los aeropuertos deben valorar protección de aproximación.",
@@ -17,11 +17,11 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Veracruz y dónde están?",
-   "a": "Hay 18 estaciones de bomberos localizadas en 13 municipios de Veracruz. El municipio de Veracruz cuenta con 4; Boca del Río y Minatitlán, con 2 cada uno. También hay estaciones en Coatepec, Coatzacoalcos, Cosamaloapan, Cosoleacaque, Córdoba, Orizaba, Poza Rica de Hidalgo, San Andrés Tuxtla, Tuxpan y Xalapa."
+   "a": "Hay 19 estaciones de bomberos localizadas en 14 municipios de Veracruz. El municipio de Veracruz cuenta con 4; Boca del Río y Minatitlán, con 2 cada uno. También hay estaciones en Coatepec, Coatzacoalcos, Cosamaloapan, Cosoleacaque, Córdoba, Orizaba, Poza Rica de Hidalgo, San Andrés Tuxtla, Tierra Blanca, Tuxpan y Xalapa."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Veracruz?",
-   "a": "Los bomberos en Veracruz son operados por corporaciones municipales, cuerpos voluntarios y patronatos. Esta página también incluye una brigada contraincendio de PEMEX y dos servicios aeroportuarios. En Veracruz–Boca del Río participa el Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C."
+   "a": "Los bomberos en Veracruz son operados por corporaciones municipales, cuerpos voluntarios y patronatos; entre los municipales figura el Heroico Cuerpo de Bomberos de Tierra Blanca. Esta página también incluye una brigada contraincendio de PEMEX y dos servicios aeroportuarios. En Veracruz–Boca del Río participa el Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Veracruz para una gestión?",

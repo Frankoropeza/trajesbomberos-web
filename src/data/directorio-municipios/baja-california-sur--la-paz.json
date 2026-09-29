@@ -1,0 +1,32 @@
+{
+ "lead": "La Paz, capital de Baja California Sur, suma seis estaciones de bomberos: cinco del Heroico Cuerpo de Bomberos de La Paz y una de voluntarios en El Pescadero. Encuentra la localidad de cada base y el teléfono oficial de la central.",
+ "panorama": [
+  "El servicio municipal se organiza desde la central del Heroico Cuerpo de Bomberos de La Paz, apoyada dentro de la ciudad por la Subestación Camino Real y la Estación Navarro Rubio. Fuera de la cabecera, las comandancias delegacionales de Todos Santos y Los Barriles llevan la cobertura hacia otras localidades del municipio.",
+  "Quien coordina capacitación o equipamiento en La Paz trata sobre todo con una sola corporación municipal, aunque sus bases quedan muy separadas entre sí. En El Pescadero opera además una asociación civil de voluntarios, con mando y compras propios, así que un plan regional conviene conversarlo con ambas instituciones."
+ ],
+ "coberturaDuo": [
+  "Cinco de las seis estaciones son municipales y la sexta es voluntaria. Incendio estructural y atención prehospitalaria son los servicios más declarados; la central y El Pescadero suman combate forestal y rescate vehicular, y los voluntarios agregan rescate en altura y acuático, riesgos que van del monte al agua."
+ ],
+ "equipoDuo": [
+  "La central y la base de El Pescadero necesitan <a href=\"/trajes/estructural/\">traje estructural</a> con respiración autónoma, además de ropa ligera para incendios de vegetación y herramienta de extricación para choques. Los voluntarios requieren también arneses, cuerdas y chalecos para sus rescates en altura y en el agua.",
+  "LORICA cotiza al Heroico Cuerpo de Bomberos de La Paz con ficha técnica por partida y el expediente que pida la licitación municipal; a los voluntarios de El Pescadero, con propuesta directa para donativos. Facturamos con CFDI 4.0, sin compra mínima, y enviamos <a href=\"/trajes/forestal/\">trajes forestales</a> a la península."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en La Paz y en qué localidades están?",
+   "a": "Son seis. En la ciudad de La Paz están la central, la Subestación Camino Real y la Estación Navarro Rubio; las comandancias delegacionales atienden Todos Santos y Los Barriles, y los voluntarios cubren El Pescadero. Ninguna de ellas tiene domicilio publicado."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en La Paz, Baja California Sur?",
+   "a": "El Heroico Cuerpo de Bomberos de La Paz, corporación municipal, opera la central y cuatro subestaciones. En El Pescadero trabaja Bomberos Voluntarios de El Pescadero, A.C., asociación civil independiente que declara rescate en altura, acuático y vehicular, además de incendios."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en La Paz para una gestión?",
+   "a": "Para cursos, visitas o solicitudes de apoyo, llama a la central del Heroico Cuerpo de Bomberos de La Paz, la única estación con teléfono oficial publicado. Las subestaciones, las comandancias delegacionales y los voluntarios no difunden número propio. En una emergencia, marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en La Paz?",
+   "a": "El cuerpo municipal compra conforme a las reglas del ayuntamiento, por licitación o adjudicación; los voluntarios suelen hacerlo con donativos y recursos propios. LORICA atiende ambos casos con cotización formal, ficha técnica por artículo, CFDI 4.0 y envío a La Paz, sin monto mínimo."
+  }
+ ]
+}
