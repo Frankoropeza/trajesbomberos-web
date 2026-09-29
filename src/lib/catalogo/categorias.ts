@@ -1,0 +1,189 @@
+// Cards de categoría del catálogo (TileCard): una sola fuente para el índice de
+// la home (CategoryTiles) y los hubs L2 (p. ej. /equipo-de-proteccion/).
+// Todos los textos de botón son palabra clave (nunca "ver", "ir").
+// Cada href se valida contra las rutas reales del build: si una
+// subcategoría deja de existir, se omite y se avisa en consola.
+import { SECCIONES, TIPOS, MODELOS } from './data';
+import { PIEZAS } from '../piezas';
+import { PRODUCT_CATEGORIES } from '../../config/site';
+import type { TileProps } from '../../components/home/TileCard.astro';
+
+interface Sub { label: string; href: string }
+interface Def {
+  titulo: string;
+  desc: string;
+  href: string;
+  cta: string; // botón principal: palabra clave de la categoría
+  img: string;
+  alt: string;
+  pos?: string; // object-position de la foto (retrato vs. paisaje)
+  subs: Sub[];
+}
+
+// Rutas válidas en build (hubs, tipos, modelos, familias y piezas).
+const RUTAS = new Set<string>([
+  '/trajes/',
+  ...SECCIONES.map((s) => `/${s.slug}/`),
+  ...TIPOS.map((t) => `/${t.seccion}/${t.slug}/`),
+  ...MODELOS.filter((m) => m.seccion).map((m) => `/${m.seccion}/${m.id}/`),
+  ...PRODUCT_CATEGORIES.map((c) => `/trajes/${c.slug}/`),
+  '/trajes/hazmat/',
+  ...PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`),
+]);
+
+export const CATEGORIAS: Def[] = [
+  {
+    titulo: 'Trajes para bomberos', href: '/trajes/', cta: 'Tipos de trajes para bomberos',
+    desc: 'Chaquetón y pantalonera por familia de riesgo: estructural, brigadista, forestal, aproximación, entrada y extricación.',
+    img: '/images/catalogo/trajes/skold-hero-pbimax-conjunto.avif', alt: 'Traje estructural para bombero de chaquetón y pantalonera', pos: 'center 8%',
+    subs: [
+      { label: 'Traje estructural', href: '/trajes/estructural/' },
+      { label: 'Traje de brigadista', href: '/trajes/brigadista/' },
+      { label: 'Traje forestal', href: '/trajes/forestal/' },
+      { label: 'Traje aluminizado', href: '/trajes/aproximacion/' },
+    ],
+  },
+  {
+    titulo: 'Cascos para bomberos', href: '/cascos/', cta: 'Cascos estructurales y forestales',
+    desc: 'Cascos estructurales, forestales y de rescate, con compatibilidad verificada con la máscara del ERA en uso.',
+    img: '/images/catalogo/cascos/hero-cascos-800.avif', alt: 'Cascos para bombero estructurales, forestales y de rescate',
+    subs: [
+      { label: 'Casco estructural tradicional', href: '/cascos/casco-estructural-tradicional/' },
+      { label: 'Casco estructural europeo', href: '/cascos/casco-estructural-europeo/' },
+      { label: 'Casco forestal', href: '/cascos/casco-forestal/' },
+      { label: 'Casco de rescate técnico', href: '/cascos/casco-rescate-tecnico/' },
+    ],
+  },
+  {
+    titulo: 'Equipo de respiración autónoma', href: '/equipo-de-respiracion-autonoma/', cta: 'Equipos de respiración autónoma (ERA)',
+    desc: 'ERA para ataque interior, industria y escape: arnés, máscara, regulador y cilindro con su certificación.',
+    img: '/images/catalogo/era/hero-era-800.avif', alt: 'Equipo de respiración autónoma para bombero con máscara y cilindro',
+    subs: [
+      { label: 'ERA de combate', href: '/equipo-de-respiracion-autonoma/era-de-combate/' },
+      { label: 'ERA industrial', href: '/equipo-de-respiracion-autonoma/era-industrial/' },
+      { label: 'ERA de escape', href: '/equipo-de-respiracion-autonoma/era-de-escape/' },
+      { label: 'Cilindros de fibra de carbono', href: '/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/' },
+    ],
+  },
+  {
+    titulo: 'Botas para bomberos', href: '/botas/', cta: 'Botas para bomberos estructurales',
+    desc: 'Botas de hule o piel para incendio estructural y bota forestal, elegidas según la familia de traje.',
+    img: '/images/catalogo/botas/hero-botas-800.avif', alt: 'Botas para bombero de hule y de piel',
+    subs: [
+      { label: 'Bota de hule estructural', href: '/botas/bota-de-hule-estructural/' },
+      { label: 'Bota de piel estructural', href: '/botas/bota-de-piel-estructural/' },
+      { label: 'Bota forestal', href: '/botas/bota-forestal/' },
+      { label: 'Bota de brigada industrial', href: '/botas/bota-de-brigada-industrial/' },
+    ],
+  },
+  {
+    titulo: 'Guantes para bomberos', href: '/guantes/', cta: 'Guantes para bomberos por operación',
+    desc: 'Un guante por operación: estructural, extricación, forestal y brigada. No se sustituyen entre sí.',
+    img: '/images/catalogo/guantes/hero-guantes-800.avif', alt: 'Guantes para bombero estructurales y de extricación',
+    subs: [
+      { label: 'Guante estructural', href: '/guantes/guante-estructural/' },
+      { label: 'Guante de extricación', href: '/guantes/guante-rescate-extricacion/' },
+      { label: 'Guante forestal', href: '/guantes/guante-forestal/' },
+      { label: 'Guante para brigadista', href: '/guantes/guante-brigadista/' },
+    ],
+  },
+  {
+    titulo: 'Monjas y escafandras', href: '/capuchas/', cta: 'Monjas y escafandras para bombero',
+    desc: 'Protección de cabeza y cuello bajo el casco: Nomex tradicional, barrera de partículas y capucha aluminizada.',
+    img: '/images/catalogo/capuchas/hero-capuchas-800.avif', alt: 'Monjas y escafandras para bombero',
+    subs: [
+      { label: 'Monja antipartículas', href: '/trajes/estructural/monja/' },
+      { label: 'Monja de brigada', href: '/trajes/brigadista/monja/' },
+      { label: 'Escafandra Nomex', href: '/capuchas/skold-fpen/' },
+      { label: 'Capucha aluminizada', href: '/trajes/aproximacion/capucha/' },
+    ],
+  },
+  {
+    titulo: 'Kits para bomberos', href: '/kits/', cta: 'Kits completos para bombero',
+    desc: 'Conjuntos completos y compatibles entre sí: traje, casco, monja, guantes y botas en una sola cotización.',
+    img: '/images/catalogo/kits/hero-kits-800.avif', alt: 'Kit completo de equipo para bombero',
+    subs: [
+      { label: 'Kit estructural', href: '/kits/kit-estructural/' },
+      { label: 'Kit brigadista', href: '/kits/kit-brigadista/' },
+      { label: 'Kit forestal', href: '/kits/kit-forestal/' },
+      { label: 'Kit de rescate vertical', href: '/rescate/kit-de-rescate-vertical/' },
+    ],
+  },
+  {
+    titulo: 'Trajes Hazmat', href: '/trajes/hazmat/', cta: 'Trajes Hazmat de protección química',
+    desc: 'Protección química por nivel de riesgo: encapsulados nivel A, trajes nivel B y C, guantes y botas químicas.',
+    img: '/images/catalogo/hazmat/hero-hazmat-800.avif', alt: 'Trajes de protección química Hazmat',
+    subs: [
+      { label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' },
+      { label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' },
+      { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' },
+      { label: 'Overol desechable', href: '/trajes/hazmat/overol-quimico-desechable/' },
+    ],
+  },
+  {
+    titulo: 'Equipo de rescate', href: '/rescate/', cta: 'Equipo de rescate para bomberos',
+    desc: 'Rescate vehicular y vertical: herramienta hidráulica de extricación, cuerdas, arneses y conectores.',
+    img: '/images/catalogo/rescate/hero-rescate-800.avif', alt: 'Equipo de rescate para bomberos: cuerdas, arneses y herramienta hidráulica',
+    subs: [
+      { label: 'Quijadas de la vida (hidráulica)', href: '/rescate/herramienta-hidraulica-de-rescate/' },
+      { label: 'Arnés de rescate', href: '/rescate/arnes-de-rescate/' },
+      { label: 'Cuerda de rescate', href: '/rescate/cuerda-de-rescate/' },
+      { label: 'Mosquetones de rescate', href: '/rescate/mosquetones-de-rescate/' },
+    ],
+  },
+  {
+    titulo: 'Herramientas para bomberos', href: '/herramientas/', cta: 'Herramientas de entrada forzada y forestales',
+    desc: 'Herramienta de entrada forzada y de combate forestal, seleccionada por maniobra y material.',
+    img: '/images/catalogo/herramientas/hero-herramientas-800.avif', alt: 'Herramientas para bombero de entrada forzada y forestales',
+    subs: [
+      { label: 'Hacha de bombero', href: '/herramientas/hacha-de-bombero/' },
+      { label: 'Barra Halligan', href: '/herramientas/barra-halligan/' },
+      { label: 'Herramienta Pulaski', href: '/herramientas/pulaski/' },
+      { label: 'Bomba de mochila forestal', href: '/herramientas/bomba-de-mochila-forestal/' },
+    ],
+  },
+  {
+    titulo: 'Mangueras y accesorios', href: '/mangueras-y-accesorios/', cta: 'Mangueras contra incendio y conexiones',
+    desc: 'Manguera de ataque, pitones, llaves para hidrante y conexiones compatibles con el equipo en servicio.',
+    img: '/images/catalogo/mangueras/hero-mangueras-800.avif', alt: 'Mangueras contra incendio y accesorios',
+    subs: [
+      { label: 'Manguera de ataque', href: '/mangueras-y-accesorios/manguera-de-ataque/' },
+      { label: 'Chiflón o pitón', href: '/mangueras-y-accesorios/piton-boquilla/' },
+      { label: 'Llave para hidrante', href: '/mangueras-y-accesorios/llave-para-hidrante/' },
+      { label: 'Conexiones y adaptadores', href: '/mangueras-y-accesorios/conexiones-y-adaptadores/' },
+    ],
+  },
+  {
+    titulo: 'Accesorios para bomberos', href: '/accesorios/', cta: 'Accesorios para bomberos',
+    desc: 'Iluminación, protección ocular, alarma PASS, cámara térmica y transporte del equipo.',
+    img: '/images/catalogo/accesorios/hero-accesorios-800.avif', alt: 'Accesorios para bombero: linterna, goggles y cámara térmica',
+    subs: [
+      { label: 'Cámara térmica', href: '/accesorios/camara-termica/' },
+      { label: 'Linterna de bombero', href: '/accesorios/linterna-de-bombero/' },
+      { label: 'Lámpara de casco', href: '/accesorios/lampara-de-casco/' },
+      { label: 'Goggles para bombero', href: '/accesorios/goggles/' },
+    ],
+  },
+];
+
+/**
+ * Cards validadas. Sin `hrefs`: las 12 categorías en su orden (índice de la home,
+ * códigos 01…). Con `hrefs`: solo esas, en ese orden, con el prefijo indicado (EP-01…).
+ */
+export function tilesCategorias(hrefs?: string[], prefijo = ''): TileProps[] {
+  const defs = hrefs
+    ? hrefs.map((href) => {
+        const d = CATEGORIAS.find((c) => c.href === href);
+        if (!d) throw new Error(`[categorias] categoría sin card: ${href}`);
+        return d;
+      })
+    : CATEGORIAS;
+  return defs.filter((d) => RUTAS.has(d.href)).map((d, i) => {
+    const subs = d.subs.filter((s) => {
+      const ok = RUTAS.has(s.href);
+      if (!ok) console.warn(`[CategoryTiles] subcategoría sin ruta: ${s.href}`);
+      return ok;
+    });
+    return { ...d, subs, codigo: `${prefijo}${String(i + 1).padStart(2, '0')}` };
+  });
+}

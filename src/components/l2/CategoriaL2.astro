@@ -1,0 +1,168 @@
+---
+// CategoriaL2 — plantilla de categoría (L2) homologada con la home (L1), 2026-09-29.
+// Hero sólido → franja de secciones → #tipos (TileGrid) → #elegir (L2Guia + cuerpo
+// Markdown con H3/H4 por <slot />) → #a-fondo (CategorySpotlight H3) → banda de foto →
+// #modelos (ModelosGrid) → #comparar (RiskGuide ×2) → #faq (FAQWithContact con asunto
+// propio) → #guias (4 PostCard) → QuoteCTA → footer.
+// Texto: src/content/categorias/<l2>.md (Zod estricto). Cada página L2 calcula solo sus
+// datos de catálogo (cards, módulos, modelos) con los helpers de src/lib/l2.ts.
+import type { CollectionEntry } from 'astro:content';
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard, { type TileProps } from '@components/home/TileCard.astro';
+import CategorySpotlight from '@components/home/CategorySpotlight.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import RiskGuide from '@components/RiskGuide.astro';
+import PhotoBand from '@components/PhotoBand.astro';
+import ModelosGrid from '@components/ModelosGrid.astro';
+import PostCard from '@components/PostCard.astro';
+import QuoteCTA from '@components/home/QuoteCTA.astro';
+import L2Guia from '@components/l2/L2Guia.astro';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { categoriaNombre, categoriaUrl, postUrl, readingTime, type Post } from '@lib/blog';
+import type { SpotProps } from '@lib/spotlights/types';
+import type { Modelo } from '@lib/catalogo/types';
+
+interface Props {
+  d: CollectionEntry<'categorias'>['data'];
+  tiles: TileProps[];
+  spotlights: SpotProps[];
+  modelos: Modelo[];
+  filasModelos: (string | { texto: string; href?: string })[][];
+  directoryItems: { name: string; url: string }[];
+  guias: Post[];
+}
+const { d, tiles, spotlights, modelos, filasModelos, directoryItems, guias } = Astro.props;
+const menuItems = (['tipos', 'elegir', 'modulos', 'modelos', 'comparar', 'faq', 'guias'] as const).map((clave) => ({
+  label: d.menu[clave], href: ({ tipos: '#tipos', elegir: '#elegir', modulos: '#a-fondo', modelos: '#modelos', comparar: '#comparar', faq: '#faq', guias: '#guias' })[clave],
+}));
+// Cierre del bloque de guías: la categoría del blog de la L2 o el índice del blog.
+const blogCta = d.blogCategoria
+  ? { href: categoriaUrl(d.blogCategoria), label: `Guías de ${categoriaNombre(d.blogCategoria).toLowerCase()} para bomberos: todas las guías →` }
+  : { href: '/blog/', label: 'Blog técnico de trajes para bomberos: todas las guías →' };
+const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
+  { texto: fila[0], href: d.comparativaTipos.enlaces?.[i] }, ...fila.slice(1),
+]);
+---
+<PageLayout
+  pageType="directorio"
+  path={d.ruta}
+  title={d.seo.title}
+  description={d.seo.description}
+  keywords={d.seo.keywords}
+  menuItems={menuItems}
+  crumbLabel={d.crumb}
+  eyebrow={d.hero.eyebrow}
+  h1={d.hero.h1}
+  h1Accent={d.hero.h1Accent}
+  lead={d.hero.lead}
+  descRight={d.hero.descRight}
+  meta={d.hero.meta}
+  faqs={d.faqs}
+  {directoryItems}
+  collection={{ name: `${d.hero.h1} ${d.hero.h1Accent ?? ''}`.trim(), description: d.seo.description, url: d.ruta }}
+  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
+>
+  <section class="section" id="tipos">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.tipos.eyebrow} title={d.secciones.tipos.titulo} duo={d.secciones.tipos.duo} />
+      <TileGrid>{tiles.map((tile) => <TileCard {...tile} />)}</TileGrid>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="elegir">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.elegir.eyebrow} title={d.secciones.elegir.titulo} duo={d.secciones.elegir.duo} />
+      <L2Guia conjunto={d.conjunto}><slot /></L2Guia>
+    </div>
+  </section>
+
+  <section class="section" id="a-fondo">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.modulos.eyebrow} title={d.secciones.modulos.titulo} duo={d.secciones.modulos.duo} />
+      {spotlights.map((spot) => <CategorySpotlight {...spot} />)}
+    </div>
+  </section>
+
+  <PhotoBand src={d.fotoBanda.src} alt={d.fotoBanda.alt} width={d.fotoBanda.width} heightPx={d.fotoBanda.height} caption={d.fotoBanda.caption} />
+
+  <section class="section" id="modelos">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.modelos.eyebrow} title={d.secciones.modelos.titulo} duo={d.secciones.modelos.duo} />
+      <ModelosGrid {modelos} />
+    </div>
+  </section>
+
+  <section class="section section--alt" id="comparar">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.comparar.eyebrow} title={d.secciones.comparar.titulo} duo={d.secciones.comparar.duo} />
+      <div class="comparison-block">
+        <h3>{d.comparativaTipos.titulo}</h3>
+        <RiskGuide
+          columns={d.comparativaTipos.columnas}
+          rows={filasTipos}
+          note={d.comparativaTipos.nota}
+          caption={d.comparativaTipos.caption}
+          ariaLabel={d.comparativaTipos.caption}
+          sinCta
+        />
+      </div>
+      <div class="comparison-block comparison-block--modelos">
+        <h3>{d.comparativaModelos.titulo}</h3>
+        <RiskGuide
+          columns={d.comparativaModelos.columnas}
+          rows={filasModelos}
+          note={d.comparativaModelos.nota}
+          caption={d.comparativaModelos.caption}
+          ariaLabel={d.comparativaModelos.caption}
+          ctaLabel={d.comparativaModelos.wa.label}
+          waMensaje={d.comparativaModelos.wa.mensaje}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.faq.eyebrow} title={d.secciones.faq.titulo} duo={d.secciones.faq.duo} />
+      <FAQWithContact items={d.faqs} asunto={d.contacto.asunto} boton={d.contacto.boton} />
+    </div>
+  </section>
+
+  <section class="section section--alt" id="guias">
+    <div class="container">
+      <SectionHeading eyebrow={d.secciones.guias.eyebrow} title={d.secciones.guias.titulo} duo={d.secciones.guias.duo} />
+      <div class="grid-cards grid-cards--4">
+        {guias.map((a, index) => (
+          <PostCard
+            href={postUrl(a)}
+            title={a.data.title}
+            resumen={a.data.resumen}
+            categoria={a.data.categoria}
+            lectura={readingTime(a.body)}
+            image={a.data.imagen}
+            imageAlt={a.data.imagenAlt}
+            destacado={a.data.destacado}
+            ancla={a.data.ancla}
+            {index}
+          />
+        ))}
+      </div>
+      <p class="blog-cta"><a href={blogCta.href}>{blogCta.label}</a></p>
+    </div>
+  </section>
+
+  <QuoteCTA id="cotizar" titulo={d.cotizar.titulo} boton={d.cotizar.boton} mensaje={d.cotizar.mensaje} />
+</PageLayout>
+
+<style>
+  /* Mismo ritmo que CategorySpotlights de la home: separador entre módulos. */
+  #a-fondo :global(.spot + .spot) { margin-top: var(--section-y); padding-top: var(--section-y); border-top: var(--border); }
+  .comparison-block h3 { margin: 0 0 1rem; font-family: var(--font-display); font-size: 1.3rem; }
+  .comparison-block--modelos { margin-top: 3rem; }
+  /* Enlace de cierre del blog: idéntico a la home. */
+  .blog-cta { margin: 2.2rem 0 0; }
+  .blog-cta a { font-weight: 800; text-decoration: none; font-size: 1.02rem; }
+  .blog-cta a:hover { text-decoration: underline; }
+</style>

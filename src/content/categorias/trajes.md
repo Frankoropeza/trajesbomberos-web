@@ -16,6 +16,14 @@ hero:
     - "Elegir mal la familia de traje es el error más caro del sector, y casi siempre ocurre por comparar precios entre equipos que no protegen para lo mismo. Aquí está cada familia explicada con el criterio con el que se especifica en una requisición: qué construcción lleva, para qué operación está pensada y en qué caso conviene otra."
     - "En LORICA cotizamos con ficha técnica desde el primer mensaje, sobre la norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y con factura CFDI. Sin compra mínima: por pieza o conjunto completo, con envíos a los 32 estados."
   meta: ["7 familias de traje", "Comparativa técnica", "Sin compra mínima", "Envíos a los 32 estados"]
+menu:
+  tipos: "Tipos de traje de bombero"
+  elegir: "Cómo elegir un traje"
+  modulos: "Familias a fondo"
+  modelos: "Modelos de trajes de bombero"
+  comparar: "Comparativa de trajes"
+  faq: "Preguntas sobre trajes"
+  guias: "Guías de trajes para bomberos"
 secciones:
   tipos:
     eyebrow: "Las siete familias"
@@ -29,7 +37,7 @@ secciones:
     duo:
       - "Dos trajes amarillos con cinta reflejante pueden proteger para cosas muy distintas. Estos son los siete criterios con los que especificamos un traje en LORICA desde hace más de 35 años: operación, composite capa por capa, TPP y THL, norma vigente, talla e interfaces, vida útil y documentación de compra."
       - "Úsalos como lista de verificación antes de emitir tu requisición: si una oferta no responde a los siete, todavía no es comparable con otra. Junto a la guía tienes lo que incluye un traje de bombero completo, pieza por pieza, para decidir qué comprar junto y qué reponer por separado."
-  familias:
+  modulos:
     eyebrow: "A fondo"
     titulo: "Cada tipo de traje para bomberos, explicado a fondo"
     duo:
@@ -76,7 +84,7 @@ conjunto:
   wa:
     label: "Cotizar traje de bombero completo"
     mensaje: "Hola, quiero cotizar un traje de bombero completo: traje, casco, monja, guantes, botas y ERA."
-familias:
+modulos:
   - slug: "estructural"
     leyendas: ["Ataque interior con traje estructural y ERA", "Traje estructural de tres capas", "Chaquetón con DRD integrado"]
     puntos:
@@ -132,7 +140,7 @@ fotoBanda:
   width: 1376
   height: 768
   caption: "Siete familias de traje, cada una para una operación distinta. Te ayudamos a elegir la que corresponde antes de cotizar."
-comparativaFamilias:
+comparativaTipos:
   titulo: "Trajes para bomberos por familia: operación, construcción y complementos"
   caption: "Comparativa de las siete familias de trajes para bomberos por tipo de operación"
   columnas: ["Familia", "Para qué operación", "Construcción", "Complementos"]
@@ -144,9 +152,11 @@ comparativaFamilias:
     - ["Entrada", "Ingreso breve a la flama: horno, incidente térmico severo", "Aluminizado multicapa, pesado, uso corto de emergencia", "Conjunto completo con ERA"]
     - ["Extricación", "Rescate vehicular y técnico", "Ligero, resistente a corte y punción, barrera contra patógenos", "Guante de extricación, casco, goggles"]
     - ["Hazmat", "Materiales peligrosos: derrame, fuga o salpicadura química", "Barrera química por nivel (A encapsulado, B o C) elegida por sustancia", "ERA, guantes y botas químicas compatibles"]
+  enlaces: ["/trajes/estructural/", "/trajes/brigadista/", "/trajes/forestal/", "/trajes/aproximacion/", "/trajes/entrada/", "/trajes/extricacion/", "/trajes/hazmat/"]
   nota: "Un traje de aproximación no sirve para entrar a la flama, y uno de entrada no sirve para operación prolongada. Confundirlos es el error más peligroso del sector: si tienes duda de qué familia necesita tu operación, escríbenos antes de cotizar."
 comparativaModelos:
   titulo: "Modelos de traje de bombero: capa exterior, barreras y estatus normativo"
+  columnas: ["Modelo", "Familia", "Capa exterior o material", "Barreras", "Norma de referencia declarada", "Estatus normativo"]
   caption: "Comparativa de los modelos de traje de bombero publicados, con los datos que declara cada fabricante"
   nota: "Datos tal como los declara cada fabricante en su ficha. «Se confirma al cotizar» significa que el fabricante no lo publica: lo entregamos por escrito con la cotización."
   wa:

@@ -13,6 +13,7 @@ const posts = Object.keys(import.meta.glob('/src/content/blog/*.md')).map((file)
 export const RUTAS = new Set<string>([
   '/',
   '/trajes/',
+  '/equipo-de-proteccion/',
   '/trajes/hazmat/',
   '/blog/',
   '/empresa/',

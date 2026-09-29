@@ -114,14 +114,19 @@ const tabla = {
   nota: z.string(),
 };
 
+const claves = ['tipos', 'elegir', 'modulos', 'modelos', 'comparar', 'faq', 'guias'] as const;
+const porClave = <T extends z.ZodTypeAny>(t: T) =>
+  z.object(Object.fromEntries(claves.map((k) => [k, t])) as Record<(typeof claves)[number], T>).strict();
+const imagen = z.object({ src: z.string().startsWith('/images/'), alt: z.string().min(10) }).strict();
+
 const categorias = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/categorias' }),
   schema: z.object({
     ruta,
     crumb: z.string(),
     seo: z.object({
-      title: z.string().max(65),
-      description: z.string().min(110).max(165),
+      title: z.string().max(60),
+      description: z.string().min(110).max(160),
       keywords: z.array(z.string()).length(3),
     }).strict(),
     hero: z.object({
@@ -132,15 +137,8 @@ const categorias = defineCollection({
       descRight: z.array(z.string()).length(2),
       meta: z.array(z.string()).max(4).default([]),
     }).strict(),
-    secciones: z.object({
-      tipos: duoSeccion,
-      elegir: duoSeccion,
-      familias: duoSeccion,
-      modelos: duoSeccion,
-      comparar: duoSeccion,
-      faq: duoSeccion,
-      guias: duoSeccion,
-    }).strict(),
+    menu: porClave(z.string()),              // etiquetas de la franja de secciones
+    secciones: porClave(duoSeccion),         // eyebrow + H2 + dúo de cada sección
     conjunto: z.object({
       titulo: z.string(),
       intro: z.string(),
@@ -149,8 +147,16 @@ const categorias = defineCollection({
       cta: enlace,
       wa,
     }).strict(),
-    familias: z.array(z.object({
+    // Módulos «a fondo» (spotlight H3). Los campos opcionales se omiten cuando la
+    // plantilla los toma del catálogo (p. ej. FAMILIAS en /trajes/).
+    modulos: z.array(z.object({
       slug: z.string(),
+      eyebrow: z.string().optional(),
+      titulo: z.string().optional(),
+      parrafo: z.string().min(200).optional(),
+      imagenes: z.array(imagen).length(3).optional(),
+      cta: enlace.optional(),
+      wa: wa.optional(),
       leyendas: z.array(z.string()).length(3),
       puntos: z.array(z.object({ titulo: z.string(), texto: z.string() }).strict()).length(4),
     }).strict()).min(1),
@@ -161,15 +167,17 @@ const categorias = defineCollection({
       height: z.number(),
       caption: z.string(),
     }).strict(),
-    comparativaFamilias: z.object({
+    comparativaTipos: z.object({
       ...tabla,
       columnas: z.array(z.string()).min(3),
       filas: z.array(z.array(z.string()).min(3)).min(2),
-    }).strict(),
-    comparativaModelos: z.object({ ...tabla, wa }).strict(),
+      enlaces: z.array(ruta).optional(),     // href de la 1.ª celda de cada fila
+    }).strict().refine((t) => !t.enlaces || t.enlaces.length === t.filas.length, 'enlaces debe tener una ruta por fila'),
+    comparativaModelos: z.object({ ...tabla, columnas: z.array(z.string()).min(3), wa }).strict(),
     faqs: z.array(z.object({ q: z.string(), a: z.string().min(120) }).strict()).min(6),
     contacto: z.object({ asunto: z.string(), boton: z.string() }).strict(),
     cotizar: z.object({ titulo: z.string(), boton: z.string(), mensaje: z.string().min(20) }).strict(),
+    blogCategoria: z.string().optional(),    // guías: categoría del blog; si falta, guiasParaRuta(ruta)
   }).strict(),
 });
 

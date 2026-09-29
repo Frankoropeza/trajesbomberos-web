@@ -237,11 +237,11 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     slug: 'equipo',
     nombre: 'Equipo de protección',
     desc: 'Criterios técnicos para seleccionar, integrar e inspeccionar EPP de bomberos.',
-    h1: 'Equipo de protección para bomberos',
+    h1: 'Guías de equipo de protección para bomberos',
     lead: 'Guías para elegir casco, guantes, botas y capucha como un conjunto compatible con la operación, el usuario y el procedimiento de servicio.',
-    seoTitle: 'Equipo de protección para bomberos',
-    seoDescription: 'Equipo de protección para bomberos: criterios para comparar casco, guantes, botas y capucha por operación, interfaz, condición y documentación en México.',
-    keywords: ['equipo de protección para bomberos', 'EPP para bombero', 'México'],
+    seoTitle: 'Guías de equipo de protección para bomberos',
+    seoDescription: 'Guías de equipo de protección para bomberos: criterios para comparar casco, guantes, botas y capucha por operación, interfaz, condición y documentación.',
+    keywords: ['guías de equipo de protección para bomberos', 'EPP para bombero', 'México'],
     guia: {
       titulo: 'Cómo comprar equipo de protección para bomberos',
       parrafos: [
@@ -250,6 +250,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         'El criterio de compra continúa en servicio: recepción contra ficha, asignación por usuario, inspección, limpieza y retiro por condición. Una pieza sin trazabilidad o con daño no debe volver a una operación solo porque todavía parece utilizable.',
       ],
       enlaces: [
+        { label: 'Equipo de protección para bomberos', href: '/equipo-de-proteccion/' },
         { label: 'Cascos para bombero', href: '/cascos/' },
         { label: 'Guantes para bombero', href: '/guantes/' },
         { label: 'Botas para bombero', href: '/botas/' },
@@ -472,7 +473,7 @@ export const MENU: MenuItem[] = [
     feature: { eyebrow: 'Compra sin mínimo', title: 'Traje, casco, botas, guantes y ERA en una sola cotización', text: 'Integra un conjunto por operación, talla y componentes compatibles.', img: '/images/catalogo/trajes/skold-hero-pbimax-conjunto.avif', alt: 'Conjunto Sköld de traje estructural para bombero', cta: { label: 'Kits de equipo completo para bombero', href: '/kits/' } },
     overview: { label: 'Trajes para bomberos: las siete familias', href: '/trajes/' },
   },
-  { label: 'Equipo de protección', href: '/cascos/', match: ['/cascos/', '/equipo-de-respiracion-autonoma/', '/botas/', '/guantes/', '/capuchas/'], columns: equipo, overview: { label: 'Equipo de protección personal para bomberos', href: '/cascos/' } },
+  { label: 'Equipo de protección', href: '/equipo-de-proteccion/', match: ['/equipo-de-proteccion/', '/cascos/', '/equipo-de-respiracion-autonoma/', '/botas/', '/guantes/', '/capuchas/'], columns: equipo, overview: { label: 'Equipo de protección personal para bomberos', href: '/equipo-de-proteccion/' } },
   { label: 'Rescate y herramientas', href: '/rescate/', match: ['/rescate/', '/herramientas/', '/mangueras-y-accesorios/', '/accesorios/', '/kits/'], columns: rescate, overview: { label: 'Equipo de rescate y herramientas para bomberos', href: '/rescate/' } },
   {
     label: 'Marcas de equipo', href: '/marcas/', match: ['/marcas/'], columns: [
@@ -565,7 +566,7 @@ export const FOOTER = {
     },
     {
       title: 'Equipo de protección',
-      links: [...MENU[1].columns.map(({ title, href }) => ({ label: title, href: href! })), { label: 'Kits de equipo completo para bombero', href: '/kits/' }],
+      links: [{ label: 'Equipo de protección para bomberos', href: '/equipo-de-proteccion/' }, ...MENU[1].columns.map(({ title, href }) => ({ label: title, href: href! })), { label: 'Kits de equipo completo para bombero', href: '/kits/' }],
     },
     {
       title: 'Rescate y herramientas',
