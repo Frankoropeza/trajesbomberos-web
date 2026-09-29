@@ -132,9 +132,26 @@ const quoteTitle = esArticulo
     align-self: start;
     min-width: 0;
   }
-  .sidebar--sticky {
-    position: sticky;
-    top: calc(var(--header-height) + 1.5rem);
+  /* Artículo (escritorio): la columna se estira a la altura del
+     artículo y solo el ÍNDICE va sticky; la cotización queda arriba.
+     Así un índice largo (15+ secciones) nunca obliga a scroll propio
+     ni esconde la parte baja del sidebar. Flex y no grid: en grid el
+     bloque de contención del sticky sería su propia celda. */
+  @media (min-width: 1025px) {
+    .sidebar--sticky {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+    }
+    .sidebar--sticky .sb-quote { order: -1; }
+    .sidebar--sticky .sb-block--toc {
+      position: sticky;
+      top: calc(var(--header-height) + 1.5rem);
+    }
+  }
+  /* Pantalla baja: el índice deja de ser sticky en lugar de recortarse. */
+  @media (min-width: 1025px) and (max-height: 760px) {
+    .sidebar--sticky .sb-block--toc { position: static; }
   }
   .sb-block {
     padding: 0;
@@ -245,17 +262,13 @@ const quoteTitle = esArticulo
   }
   .sb-anchors {
     counter-reset: toc;
-    max-height: min(36vh, 330px);
-    overflow-y: auto;
-    scrollbar-width: thin;
-    mask-image: linear-gradient(to bottom, #000 calc(100% - 1.2rem), transparent);
   }
   .sb-anchors a {
     display: grid;
     grid-template-columns: 1.7rem minmax(0, 1fr);
     gap: 0.35rem;
-    min-height: 40px;
-    padding: 0.42rem 0.25rem 0.42rem 0.6rem;
+    min-height: 34px;
+    padding: 0.32rem 0.25rem 0.32rem 0.6rem;
     border-left: 2px solid var(--color-gray-light);
     color: var(--color-gray);
     font-size: var(--fs-sm);
