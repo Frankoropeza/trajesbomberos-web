@@ -4,14 +4,14 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
   guantes: {
     tipos: [
       'Los guantes de bombero se dividen en estructurales, de rescate y extricación, forestales y brigadistas. Cada tipo responde a una exposición distinta: calor y humedad, riesgo mecánico, trabajo exterior o control de conatos. Elige por la maniobra, el agarre necesario y la interfaz con manga y herramienta.',
-      'Describe la operación, las tallas y la herramienta que usa tu cuadrilla para revisar una partida comparable. Puedes <a href="/contacto/">cotizar por WhatsApp</a> guantes por pieza o junto con el traje, con ficha técnica, norma declarada y condiciones por escrito.',
+      'Describe la operación, las tallas y la herramienta que usa tu cuadrilla para revisar una partida comparable. Puedes <a href="/contacto/">pedir tu cotización</a> de guantes por pieza o junto con el traje, con ficha técnica, norma declarada y condiciones por escrito.',
     ],
     elegir: [
       'Para comparar guantes para bombero, revisa materiales, construcción de dedos, barreras declaradas, costuras, refuerzos, longitud de puño y tallas. Un guante grueso no resuelve por sí solo calor, destreza o riesgo mecánico. El error común es comprar por apariencia sin probar cierre de mano, herramienta y solape con la manga.',
       'Haz una prueba con radio, boquilla o herramienta de uso real antes de liberar cantidades. Solicita el modelo, talla y declaración normativa de cada partida; así puedes contrastar alternativas sin transferir la referencia de un guante a otro.',
     ],
     modelos: [
-      'Los modelos publicados de guantes de bombero incluyen Sköld FPGS, Veridian Fire Pro II, Firemax VI y opciones para rescate, forestal y brigada. Cada ficha conserva el material, código y estatus normativo que declara su fabricante; una referencia publicada no se extiende a modelos distintos.',
+      'Los modelos publicados de guantes de bombero son Sköld FPGS, Veridian Fire Pro II y Romak Firemax VI. Cada ficha conserva el material, el código y el estatus normativo que declara su fabricante; una referencia publicada no se extiende a modelos distintos.',
       'Pide la ficha técnica del modelo que corresponda a tu maniobra y confirma talla, puño y configuración. Si lo integras al conjunto, <a href="/trajes/">cotiza el traje para bomberos</a> y los complementos para revisar compatibilidad antes de emitir la orden.',
     ],
     faq: [
@@ -29,7 +29,7 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
       'Coloca la capucha durante los movimientos que hará la persona usuaria y observa sello, cobertura y recuperación del elástico. Solicita por escrito modelo, color y documentación aplicable para recibir la configuración que fue evaluada.',
     ],
     modelos: [
-      'Las capuchas para bombero publicadas incluyen Romak Fire CAP1005 over-face y modelos Majestic como PAC II. Sus fichas indican material, apertura y estatus normativo tal como lo declara el fabricante: algunos tienen listado o declaración y otros no publican norma. No se debe convertir esa diferencia en certificación general.',
+      'Las capuchas publicadas son Romak Fire CAP1005, Sköld FPEN y Majestic PAC II, todas de Nomex. El PAC II declara NFPA 1971 ed. 2018 listada por UL; el FPEN declara una referencia del fabricante y el CAP1005 no publica norma. Cada estatus se conserva tal cual, sin extenderlo a otro modelo.',
       'Compara la apertura facial con la máscara que opera tu corporación y pide la ficha del modelo elegido. También puedes sumar casco y traje en una misma cotización para documentar por separado cada componente y su configuración.',
     ],
     faq: [
@@ -103,7 +103,7 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
   },
   kits: {
     tipos: [
-      'El equipo de bombero puede organizarse en kit estructural, brigadista, forestal, de rescate o de aproximación según la respuesta autorizada. Cada conjunto reúne piezas con tareas y solapes propios; no basta con llamar completo a un kit si no se revisan tallas, accesorios, riesgo y necesidad de ERA.',
+      'El equipo de bombero puede organizarse en kit estructural, brigadista o forestal según la respuesta autorizada. Cada conjunto reúne piezas con tareas y solapes propios; no basta con llamar completo a un kit si no se revisan tallas, accesorios, riesgo y necesidad de ERA.',
       'Explica qué intervención realizará tu personal y te ayudamos a separar las piezas de la partida. Puedes cotizar por conjunto completo o por componente, con ficha técnica y condiciones por escrito para que el kit refleje la operación definida.',
     ],
     elegir: [

@@ -19,8 +19,8 @@ export const DUO_FAMILIAS_B: Record<string, Record<string, Duo>> = {
       'Compara lo que declara cada fabricante y confirma la configuración que corresponde a tu maniobra. En <a href="/marcas/">marcas de equipo para bombero</a> puedes ubicar referencias de mercado antes de pedir una cotización con materiales y componentes definidos.',
     ],
     modelos: [
-      "Los modelos publicados de traje de aproximación incluyen chaquetón y pantalón aluminizados, capucha con visor dorado, guantes de tres dedos, polainas y delantal. Las piezas declaran ISO 11612 cuando corresponde; esa referencia se conserva tal como aparece en cada configuración.",
-      "Revisa si tu operación necesita conjunto completo, mantenimiento de hornos o protección frontal. Pide por WhatsApp la ficha técnica de cada partida y confirma talla, forro, visor y nivel de exposición antes de integrar una compra.",
+      'El modelo publicado de traje de aproximación es el <a href="/trajes/aproximacion/modelos/romak-mark-one/">Romak Fire Mark One MPX-8</a>, código BOM1046: un traje aluminizado de cuatro capas para proximidad aeroportuaria e industrial, con certificación UL MH48840. Su ficha conserva la norma tal como la declara el fabricante.',
+      'Antes de cotizar revisa su exterior Nor-Fab MPX-8, las barreras Omni Synergy y Stedair 3000, las tallas y los accesorios. Pide por WhatsApp el conjunto o las piezas de proximidad, como capucha con visor dorado, guantes, polainas o delantal, para tu operación.',
     ],
     faq: [
       "Las preguntas frecuentes sobre traje de aproximación resuelven cuándo sirve para calor radiante, por qué no sustituye una entrada a la flama y cómo cuidar el aluminizado. También aclaran qué ropa usar debajo y por qué las piezas deben trabajar como conjunto.",
@@ -90,7 +90,7 @@ export const DUO_FAMILIAS_B: Record<string, Record<string, Duo>> = {
     ],
     conjunto: [
       'Un traje Hazmat requiere guantes, botas, cierre e interfaz respiratoria seleccionados contra el mismo agente. El nivel A puede encapsular el aire; el nivel B usa ERA exterior y el nivel C depende de condiciones conocidas. Revisa el <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma</a> aplicable.',
-      'Integra la configuración antes de comprar para definir cómo se sellan y retiran las piezas sin transferir contaminante. Consulta <a href="/botas/">botas para bombero</a> solo como categoría de protección de pie y confirma la compatibilidad química del modelo ofrecido.',
+      'Integra la configuración antes de comprar para definir cómo se sellan y retiran las piezas sin transferir contaminante. Confirma que botas y guantes químicos, cierre e interfaz respiratoria sean compatibles con el mismo agente, y pide esa compatibilidad por escrito con la cotización.',
     ],
     faq: [
       "Las preguntas frecuentes de traje Hazmat aclaran diferencias entre niveles A, B y C, compatibilidad por sustancia y límites frente a fuego. También explican por qué un traje químico, guantes y botas deben inspeccionarse y descontaminarse como un sistema.",

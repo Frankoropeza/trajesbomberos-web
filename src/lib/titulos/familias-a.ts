@@ -42,7 +42,7 @@ export const DUO_FAMILIAS_A: Record<string, Record<string, Duo>> = {
     ],
     conjunto: [
       'El traje de bombero brigadista se integra con casco, botas, guantes y monja o escafandra para la primera respuesta definida por la empresa. Si la tarea implica humo o ataque interior, también se debe evaluar ERA y el cambio a conjunto estructural; una careta no sustituye esa selección.',
-      'Consulta los <a href="/botas/">botas para bombero</a> y los <a href="/guantes/">guantes de bombero</a> junto con la prenda. Mándanos la actividad autorizada de tu brigada para cotizar piezas compatibles y mantener una configuración coherente por elemento.',
+      'Consulta las <a href="/botas/">botas para bombero</a> y los <a href="/guantes/">guantes de bombero</a> junto con la prenda. Mándanos la actividad autorizada de tu brigada para cotizar piezas compatibles y mantener una configuración coherente por elemento.',
     ],
     marcas: [
       'Para traje de brigadista, la referencia de mercado considera tela, alcance de conato, refuerzos y documentación por partida. Fire-Dex, LION, Veridian y Fire Equipment de México son referencias técnicas para contrastar configuraciones; ninguna mención implica distribución ni sustituye la evaluación de riesgo de tu instalación.',
