@@ -87,7 +87,7 @@ const faqs = [
 ];
 
 // Lectura recomendada antes de decidir familia
-const ultimosPosts = (await getPosts()).slice(0, 3);
+const ultimosPosts = (await getPosts()).slice(0, 4);
 
 const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
   name: c.nombre,
@@ -211,7 +211,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
         description="Las guías que resuelven las dudas que aparecen justo antes de emitir una requisición: qué familia toca, qué norma citar y qué datos hacen comparable una cotización."
         duo={duoTrajes('blog')}
       />
-      <div class="grid-cards grid-cards--3">
+      <div class="grid-cards grid-cards--4">
         {ultimosPosts.map((a, i) => (
           <PostCard
             href={postUrl(a)}
@@ -226,7 +226,7 @@ const directoryItems = PRODUCT_CATEGORIES.map((c) => ({
           />
         ))}
       </div>
-      <p class="blog-cta"><a href="/blog/">Artículos técnicos sobre trajes de bomberos →</a></p>
+      <p class="blog-cta"><a href="/blog/">Blog técnico de trajes para bomberos: todas las guías →</a></p>
     </div>
   </section>
 
