@@ -14,7 +14,7 @@
  ],
  "coberturaDuo": [
   "Incendios estructurales está declarado en las 30 fichas. Incendios forestales aparece en 6, protección civil y atención prehospitalaria en 5, y capacitación en 4. Rescate vehicular figura en 3 y salvamento aeroportuario en 2. Son categorías disponibles en registros, no un catálogo fijo por estación.",
-  "El directorio reúne teléfono en 7 fichas, dirección en 23 y ubicación exacta en 14; 2 tienen confianza alta. Estos indicadores son útiles al comparar la información territorial de las estaciones de bomberos en Chihuahua y al decidir si se requiere confirmar una dirección por otra vía antes de una visita."
+  "El directorio reúne teléfono con fuente pública en 3 fichas, dirección en 23 y ubicación exacta en 14; 2 tienen confianza alta. Estos indicadores son útiles al comparar la información territorial de las estaciones de bomberos en Chihuahua y al decidir si se requiere confirmar una dirección por otra vía antes de una visita."
  ],
  "equipoDuo": [
   "Incendios estructurales, forestales, rescate vehicular, materiales peligrosos y salvamento aeroportuario están entre los servicios declarados. Para fuego urbano consulta <a href=\"/trajes/estructural/\">trajes estructurales para bomberos</a>; las maniobras de vehículos pueden requerir <a href=\"/trajes/extricacion/\">equipo para extricación</a> definido según su procedimiento operativo.",

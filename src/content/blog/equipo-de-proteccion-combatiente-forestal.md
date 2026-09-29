@@ -79,7 +79,7 @@ Prueba FH911H y Striketeam juntos: mira arriba, abajo y lateralmente, agáchate 
 
 ## Guantes y botas forestales
 
-El [guante forestal](/guantes/guante-forestal/) se selecciona para caminar, sujetar herramienta y repetir movimientos de mano sin convertir el agarre en fatiga. La talla se prueba con la herramienta que se utilizará y con el puño de la prenda; un guante que sólo parece resistente puede impedir control fino o abrir la interfaz de manga. NFPA 1950 es la referencia del sitio para equipo forestal, pero la documentación de cada modelo define su estatus.
+El [guante forestal](/guantes/guante-forestal/) se selecciona para caminar, sujetar herramienta y repetir movimientos de mano sin convertir el agarre en fatiga. La talla se prueba con la herramienta que se utilizará y con el puño de la prenda; un guante que sólo parece resistente puede impedir control fino o abrir la interfaz de manga. NFPA 1950 es la referencia del sitio para equipo forestal, pero la documentación de cada modelo define su estatus. Las botas forestales del catálogo se comparan con las estructurales en [botas de bombero: modelos comparados](/blog/botas-de-bombero-modelos-comparados/).
 
 La [bota Romak Fire Fire Ranger](/botas/romak-fire-ranger-bota/) se describe como piel negra, agujetas y caña alta. No hay código, altura, suela, puntera ni norma declarados; esos campos se confirman por escrito antes de asignarla. La [Strong Fire bota forestal](/botas/strongfire-bota-forestal/) publica piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm según talla, planta de Kevlar antiperforación, doble membrana, cierre YKK y suela de hule acrilonitrilo para altas temperaturas. Tampoco declara norma; confirma talla, código y configuración en la cotización.
 

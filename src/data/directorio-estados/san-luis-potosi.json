@@ -2,7 +2,7 @@
  "lead": "El directorio registra 5 estaciones de bomberos en San Luis Potosí, una por cada uno de 5 municipios. Sus fichas reúnen corporación, ubicación y fuente pública para consultar bomberos en San Luis Potosí con claridad sobre el alcance del registro.",
  "descRight": [
   "La relación publicada en San Luis Potosí reúne 4 corporaciones de voluntarios y una estación aeroportuaria. No hay centrales ni subestaciones identificadas. Ciudad Valles, Matehuala, Rioverde, San Luis Potosí y Soledad de Graciano Sánchez cuentan con una ficha cada uno, una cobertura registrada todavía acotada.",
-  "El directorio permite entrar por municipio y revisar la información de cada estación. Hay teléfono con fuente pública en 2 fichas, dirección en 4 y ubicación exacta en 4. La cifra puede crecer al confirmar nuevas estaciones con fuente pública; cada campo conserva la precisión que permite su respaldo. Ante cualquier urgencia, el número de atención es 911."
+  "El directorio permite entrar por municipio y revisar la información de cada estación. Hay teléfono con fuente pública en 2 fichas, dirección en 4 y ubicación exacta en 3. La cifra puede crecer al confirmar nuevas estaciones con fuente pública; cada campo conserva la precisión que permite su respaldo. Ante cualquier urgencia, el número de atención es 911."
  ],
  "municipiosDuo": [
   "No existe una concentración municipal dentro de este registro: Ciudad Valles, Matehuala, Rioverde, San Luis Potosí y Soledad de Graciano Sánchez tienen una estación cada uno. Para consultar bomberos en San Luis Potosí, el índice muestra la ficha metropolitana como una referencia individual del municipio.",
@@ -13,7 +13,7 @@
   "La lectura recomendada parte de municipio y corporación, y después continúa con los campos de contacto y mapa. El Honorable Cuerpo de Bomberos Metropolitanos de San Luis Potosí y el SSEI Aeropuerto Internacional Ponciano Arriaga responden a tipos de operación distintos, identificados en su ficha."
  ],
  "coberturaDuo": [
-  "Atención prehospitalaria aparece en las 5 estaciones registradas de San Luis Potosí. Incendios estructurales y rescate vehicular se declaran en 4 fichas cada uno. Hay 2 fichas con teléfono respaldado, 4 con dirección y 4 con ubicación exacta.",
+  "Atención prehospitalaria aparece en las 5 estaciones registradas de San Luis Potosí. Incendios estructurales y rescate vehicular se declaran en 4 fichas cada uno. Hay 2 fichas con teléfono respaldado, 4 con dirección y 3 con ubicación exacta.",
   "Incendios forestales y rescate acuático se mencionan en 2 casos. Rescate en altura, espacios confinados, materiales peligrosos y salvamento aeroportuario aparecen en una ficha cada uno. Revisa el servicio declarado por estación, pues el directorio no asigna capacidades generales a toda la red."
  ],
  "equipoDuo": [
