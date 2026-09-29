@@ -38,7 +38,7 @@ La revisión inicia antes de la guardia y se repite al terminar una exposición 
 
 Busca grietas, muescas profundas, decoloración anormal, deformación, material reblandecido y zonas que ya no permiten ver la superficie. No cubras daños con pintura, calcomanías o adhesivos. Una carcasa afectada por golpe, calor o químico se separa para evaluación conforme a su fabricante; no se devuelve al usuario por costumbre.
 
-Palpa el borde con guantes limpios y revisa también bajo el ala, donde un golpe puede dejar una línea fina o una zona rígida distinta. Tras calor, la señal puede ser cambio de brillo, ondulación, textura alterada o material que deja de conservar su forma; tras una sustancia, puede haber pegajosidad, manchas o degradación que la limpieza autorizada no elimina. La exposición a rayos UV no se valora sólo por el color: conserva el criterio de cuidado y almacenamiento del fabricante y evita dejar el casco innecesariamente al sol, pero no establezcas un plazo de retiro si el modelo no lo declara.
+Palpa el borde con guantes limpios y revisa también bajo el ala, donde un golpe puede dejar una línea fina o una zona rígida distinta. Tras calor, la señal puede ser cambio de brillo, ondulación, textura alterada o material que deja de conservar su forma; tras una sustancia, puede haber pegajosidad, manchas o degradación que la limpieza autorizada no elimina. La exposición a rayos UV no se valora sólo por el color: conserva el criterio de cuidado y almacenamiento del fabricante y evita dejar el casco al sol sin necesidad. Pero no establezcas un plazo de retiro si el modelo no lo declara.
 
 ## Suspensión y ajuste
 
@@ -68,7 +68,7 @@ Después de un impacto no intentes deducir integridad por la ausencia de una gri
 
 Las fichas disponibles de casco no publican una vida de servicio general que pueda aplicarse a todos los modelos. Conserva asignación, fecha de fabricación cuando aparezca en etiqueta, inspecciones, limpieza, impactos, exposiciones y reparaciones autorizadas. El historial evita basar el retiro sólo en memoria y permite seguir el criterio particular del fabricante.
 
-Una hoja o registro digital por casco debe relacionar número de inventario, modelo, código cuando exista, usuario, configuración de visor o goggles, cubrenuca, lámpara y refacciones instaladas. Al devolverlo de servicio, registra condición, inspección, limpieza y decisión: disponible, separado o enviado a evaluación. Las fichas de Bullard LTX, UST LW y FH911H publican materiales y componentes, pero no una cifra común de vida de servicio; por ello el fabricante y la condición documentada son el criterio, no una regla de calendario inventada.
+Una hoja o registro digital por casco debe relacionar número de inventario, modelo, código cuando exista, usuario, configuración de visor o goggles, cubrenuca, lámpara y refacciones instaladas. Al devolverlo de servicio, registra condición, inspección, limpieza y decisión: disponible, separado o enviado a evaluación. Las fichas de Bullard LTX, UST LW y FH911H publican materiales y componentes, pero no una cifra común de vida de servicio. Por eso el criterio es el fabricante y la condición documentada, no una regla de calendario inventada.
 
 ## Qué sí se repone
 

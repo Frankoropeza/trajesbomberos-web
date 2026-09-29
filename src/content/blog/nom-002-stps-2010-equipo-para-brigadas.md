@@ -77,7 +77,7 @@ Pide una partida por rol y por pieza. Incluye número de usuarios, tallas, activ
 
 ## Riesgo ordinario o alto: qué cambia en la obligación
 
-La NOM-002-STPS-2010 se publicó en el Diario Oficial de la Federación el 9 de diciembre de 2010 y todo lo demás depende de un primer paso: **clasificar el riesgo de incendio** del centro de trabajo, o de cada área, conforme a su Apéndice A (numeral 5.1). De esa clasificación salen obligaciones distintas:
+La NOM-002-STPS-2010 se publicó en el Diario Oficial de la Federación el 9 de diciembre de 2010 Todo lo demás depende de un primer paso: **clasificar el riesgo de incendio** del centro de trabajo, o de cada área, conforme a su Apéndice A (numeral 5.1). De esa clasificación salen obligaciones distintas:
 
 | Obligación | Riesgo de incendio ordinario | Riesgo de incendio alto | Numeral |
 | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ La NOM-002-STPS-2010 se publicó en el Diario Oficial de la Federación el 9 de 
 | Equipo de protección personal de brigadistas | Según funciones y riesgos, conforme a la NOM-017-STPS | Según funciones y riesgos, conforme a la NOM-017-STPS | 5.9 |
 | Ubicación del EPP de la brigada en el croquis | Sí, si hay brigada | Sí | 5.2 f) |
 
-El numeral 5.9 es el que toca directamente la compra: obliga a **dotar de equipo de protección personal a los integrantes de las brigadas contra incendio, considerando las funciones y riesgos a que estarán expuestos**, y remite a la Guía de Referencia III de la propia norma, que describe los componentes y características generales de ese equipo. Las guías de referencia orientan; la obligación está en el numeral.
+El numeral 5.9 es el que toca directamente la compra: obliga a **dotar de equipo de protección personal a los integrantes de las brigadas contra incendio, considerando las funciones y riesgos a que estarán expuestos**. Además remite a la Guía de Referencia III de la propia norma, que describe los componentes y características generales de ese equipo. Las guías de referencia orientan; la obligación está en el numeral.
 
 ## Equipo mínimo por nivel de brigada
 
@@ -103,7 +103,7 @@ Dos notas para que la tabla no se use mal. El nivel 2 no incluye entrar a un esp
 
 ## Cómo lo resuelve LORICA
 
-Cuando una planta nos manda su análisis de riesgo, devolvemos la cotización ya dividida por nivel: el [kit brigadista](/kits/kit-brigadista/) para el nivel 2 —traje, casco, capucha, guantes y botas— y, si el análisis lo pide, conjuntos estructurales y ERA para el equipo de intervención. Cada partida lleva la ficha técnica del fabricante y la referencia normativa que declara, para que el expediente de la NOM-002 y la compra digan lo mismo. Entregamos en los 32 estados con factura CFDI 4.0.
+Cuando una planta nos manda su análisis de riesgo, devolvemos la cotización ya dividida por nivel: el [kit brigadista](/kits/kit-brigadista/) para el nivel 2 (traje, casco, capucha, guantes y botas) y, si el análisis lo pide, conjuntos estructurales y ERA para el equipo de intervención. Cada partida lleva la ficha técnica del fabricante y la referencia normativa que declara, para que el expediente de la NOM-002 y la compra digan lo mismo. Entregamos en los 32 estados con factura CFDI 4.0.
 
 ## Preguntas frecuentes
 

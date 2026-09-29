@@ -114,7 +114,7 @@ Al comparar alternativas, pide que cualquier sustitución quede escrita antes de
 
 ## Cómo lo cotizamos
 
-Cotizamos Hero Nomex IIIA, Hero PBI MAX y componentes Sköld con ficha técnica por partida. Ofrecemos compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México. En cada solicitud distinguimos datos declarados de lo que debe confirmar el fabricante para no incluir supuestos en la orden.
+Cotizamos Hero Nomex IIIA, Hero PBI MAX y componentes Sköld con ficha técnica por partida. Surtimos por pieza, sin cantidad mínima, con asesoría de tallas y expediente para licitación cuando la compra lo requiere. En cada solicitud distinguimos datos declarados de lo que debe confirmar el fabricante para no incluir supuestos en la orden.
 
 Para [cotizar trajes para bomberos](/contacto/), indícanos la operación, tallas, el equipo que ya usa tu corporación, el modelo Hero y la documentación requerida para comparar la configuración correcta.
 

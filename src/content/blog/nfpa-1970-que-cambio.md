@@ -48,13 +48,13 @@ La NFPA 1970 agrupó cuatro estándares que antes se compraban, se citaban y se 
 
 La consolidación entró en vigor en **septiembre de 2024**, y la primera edición del documento consolidado es la de **2025**.
 
-La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el mismo cuerpo y sus requisitos de interfaz se contradecían con cierta frecuencia cuando vivían en documentos distintos con ciclos de revisión distintos. Un solo documento obliga a que las interfaces sean coherentes.
+La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el mismo cuerpo. Cuando vivían en documentos distintos, con ciclos de revisión distintos, sus requisitos de interfaz a veces se contradecían. Un solo documento obliga a que las interfaces sean coherentes.
 
 ## Qué NO entró en la consolidación
 
 Esto es lo que más confusión provoca en México, así que conviene decirlo claro:
 
-- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 —rescate técnico—, NFPA 1977 —forestal— y NFPA 1999 —operaciones médicas—. En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
+- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 (rescate técnico), NFPA 1977 (forestal) y NFPA 1999 (operaciones médicas). En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
 - La misma NFPA 1950 rige el **rescate técnico y la extricación**, que tampoco están en la 1970. Trae un periodo de gracia de 18 meses para producto certificado bajo las ediciones anteriores.
 - Los **trajes de entrada a la flama** siguen sin tener una norma NFPA de producto específica. Se especifican contra la ficha técnica del fabricante, como explicamos en la ficha de [trajes de entrada](/trajes/entrada/).
 - La **selección, cuidado y mantenimiento** del equipo tampoco está aquí: eso vive en la NFPA 1850, que a su vez consolidó las viejas 1851 y 1852. Son documentos hermanos con funciones distintas: **1970 dice cómo debe ser el equipo; 1850 dice cómo debes cuidarlo.**
@@ -86,7 +86,7 @@ Tres detalles de esa redacción que valen dinero:
 No se sustituyen entre sí: cubren cosas distintas.
 
 - La **NFPA** es una norma de **producto**: define cómo debe estar hecho y probado el equipo. En México no es obligatoria por sí misma; se vuelve exigible cuando tu pliego o tu contrato la invocan.
-- Las **NOM de la STPS** son obligaciones **patronales**: la NOM-002-STPS-2010 te obliga a dotar de equipo de protección a los integrantes de la brigada contra incendio, y la NOM-017-STPS-2024 rige la selección y uso del equipo de protección personal conforme al análisis de riesgo de tu centro de trabajo.
+- Las **NOM de la STPS** son obligaciones **patronales**: la NOM-002-STPS-2010 te obliga a dotar de equipo de protección a los integrantes de la brigada contra incendio. La NOM-017-STPS-2024 rige la selección y uso del equipo de protección personal conforme al análisis de riesgo de tu centro de trabajo.
 
 Dicho corto: **la NOM te dice que tienes que proteger a tu gente; la NFPA te da el criterio técnico para saber si el equipo que compraste realmente protege.** En una compra seria se citan las dos.
 

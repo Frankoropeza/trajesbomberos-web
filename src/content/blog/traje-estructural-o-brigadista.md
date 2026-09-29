@@ -39,7 +39,7 @@ De esa respuesta depende una diferencia de precio que puede ser de tres a cinco 
 
 **El traje estructural está hecho para entrar; el de brigadista, para controlar y salir.**
 
-Todo lo demás —capas, telas, certificaciones, precio— se desprende de ahí.
+Todo lo demás (capas, telas, certificaciones y presupuesto) se desprende de ahí.
 
 ## Comparación directa
 
@@ -67,7 +67,7 @@ Quita una y ya no es un traje estructural, aunque en la foto se vea idéntico. U
 Aquí hay que separar dos cosas que se confunden todo el tiempo:
 
 - La **NOM-002-STPS-2010** te obliga, como patrón, a dotar de equipo de protección personal a los integrantes de tu brigada contra incendio (cláusula 5.9), conforme a la **NOM-017-STPS-2024** vigente.
-- Ninguna de las dos te dice **qué modelo comprar**. Te dicen que el equipo debe corresponder al riesgo identificado en tu análisis. Ese análisis es tuyo, y es el documento que va a revisar la autoridad —y tu aseguradora— si algo sale mal.
+- Ninguna de las dos te dice **qué modelo comprar**. Te dicen que el equipo debe corresponder al riesgo identificado en tu análisis. Ese análisis es tuyo, y es el documento que van a revisar la autoridad y tu aseguradora si algo sale mal.
 
 Traducción práctica: si tu análisis de riesgo dice que la brigada solo controla conatos y evacúa, un equipo de brigadista es congruente. Si tu análisis contempla que la brigada entre a un espacio con fuego declarado, el equipo de brigadista **no es congruente** y ningún proveedor honesto te lo debería vender para eso.
 
@@ -87,7 +87,7 @@ El patrón que vemos: alguien compara una cotización de estructural certificado
 
 No está inflada. Está cotizando otra cosa.
 
-Un conjunto estructural carga con un composite de tres capas, un proceso de certificación del conjunto terminado ante un organismo acreditado y requisitos de interfaz entre piezas. Eso cuesta. Cuando el precio te parezca alto, la pregunta correcta no es *"¿por qué tan caro?"*, sino **"¿qué trae esta cotización que la otra no?"** — y esa se contesta pidiendo el composite capa por capa, con nombre comercial.
+Un conjunto estructural carga con un composite de tres capas, un proceso de certificación del conjunto terminado ante un organismo acreditado y requisitos de interfaz entre piezas. Eso cuesta. Cuando el precio te parezca alto, la pregunta correcta no es *"¿por qué tan caro?"*, sino **"¿qué trae esta cotización que la otra no?"**. Esa se contesta pidiendo el composite capa por capa, con nombre comercial.
 
 ## Un punto intermedio que casi nadie considera
 
@@ -124,7 +124,7 @@ Con más de 35 años en el sector, lo que más nos piden los compradores institu
 
 ## Qué hacer ahora
 
-Mándanos dos datos —**qué dice tu análisis de riesgo** y **cuántos elementos por rol**— y te devolvemos las dos cotizaciones, la de brigadista y la de estructural, desglosadas por pieza. Con eso puedes decidir con números reales en lugar de con una foto.
+Mándanos dos datos, **qué dice tu análisis de riesgo** y **cuántos elementos por rol**, y te devolvemos las dos cotizaciones, la de brigadista y la de estructural, desglosadas por pieza. Con eso puedes decidir con números reales en lugar de con una foto.
 
 Y si la respuesta honesta resulta ser la más barata, en LORICA te la vamos a decir igual. Es la única forma de que la siguiente compra también nos la pidas a nosotros.
 

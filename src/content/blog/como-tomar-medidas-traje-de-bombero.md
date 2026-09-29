@@ -95,7 +95,7 @@ El registro por elemento resuelve estas fallas. Conserva medidas, talla aceptada
 
 ## Servicio de tallas para dotaciones
 
-Para una dotación de varios turnos, agrupa la toma en un formato con tallas por persona, pero no conviertas la sesión en una talla única. Se puede tomar una muestra física para validar cortes, registrar ajustes y detectar quién requiere otra combinación. Para asesoría remota, solicitamos las medidas con el método anterior, fotografías de la etiqueta de la prenda vigente cuando exista y la descripción de operación; la aceptación final conserva una prueba de movilidad antes de asignar el conjunto.
+Para una dotación de varios turnos, agrupa la toma en un formato con tallas por persona, pero no conviertas la sesión en una talla única. Se puede tomar una muestra física para validar cortes, registrar ajustes y detectar quién requiere otra combinación. Para asesoría remota, solicitamos las medidas con el método anterior, fotografías de la etiqueta de la prenda vigente cuando exista y la descripción de operación. La aceptación final conserva una prueba de movilidad antes de asignar el conjunto.
 
 La reposición se solicita con el registro anterior y se verifica contra la pieza que continúa en servicio. Si se dañó sólo guante, bota, chaquetón o pantalonera, podemos cotizarlo por separado sin mínimo, cuidando talla e interfaz. Esto evita cambiar todo un conjunto por una sola pieza y mantiene trazabilidad cuando la corporación distribuye equipo entre distintos usuarios.
 

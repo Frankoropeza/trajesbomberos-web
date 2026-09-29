@@ -33,7 +33,7 @@ imagen: "/images/escenas/hero-brigadista.avif"
 imagenAlt: "Dos brigadistas industriales con casco rojo operan una línea de manguera en una planta"
 ---
 
-**El equipo indispensable de una brigada contra incendio depende del nivel de actuación de cada integrante.** Quien evacúa necesita identificación y protección básica; quien controla un conato necesita traje de brigadista, casco con protección ocular, capucha, guantes y botas; quien hace intervención necesita conjunto estructural y equipo de respiración autónoma. La NOM-002-STPS-2010 obliga a asignarlo por funciones y riesgos (numeral 5.9).
+**El equipo indispensable de una brigada contra incendio depende del nivel de actuación de cada integrante.** Quien evacúa necesita identificación y protección básica. Quien controla un conato necesita traje de brigadista, casco con protección ocular, capucha, guantes y botas. Quien hace intervención necesita conjunto estructural y equipo de respiración autónoma. La NOM-002-STPS-2010 obliga a asignarlo por funciones y riesgos (numeral 5.9).
 
 ## Cómo usar esta lista
 

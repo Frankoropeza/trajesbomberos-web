@@ -43,7 +43,7 @@ La pregunta no es cuál prenda “aguanta más”, sino cuál responde al riesgo
 
 ## Riesgos que definen la extricación
 
-En una colisión hay corte y punción por vidrio laminado, lámina cortada y piezas deformadas; abrasión por asfalto y habitáculo; fluidos que demandan una barrera biológica; y trabajo físico repetido, muchas veces en vía pública o bajo sol. La prenda debe permitir arrodillarse, entrar al vehículo, alcanzar controles y trabajar con guante sin acumular el calor propio de un conjunto estructural de tres capas.
+En una colisión hay corte y punción por vidrio laminado, lámina cortada y piezas deformadas, y abrasión por asfalto y habitáculo. También hay fluidos que demandan una barrera biológica y trabajo físico repetido, muchas veces en vía pública o bajo el sol. La prenda debe permitir arrodillarse, entrar al vehículo, alcanzar controles y trabajar con guante sin acumular el calor propio de un conjunto estructural de tres capas.
 
 El riesgo térmico no desaparece, pero no se debe resolver aplicando automáticamente un chaquetón estructural. La ficha de rescate técnico indica protección limitada frente a flash según modelo, no capacidad para entrar a incendio. Cuando la escena cambia a fuego estructural o atmósfera no respirable, la evaluación y el conjunto cambian antes de ingresar.
 
@@ -100,7 +100,7 @@ En recepción coteja modelo, talla, tela, nivel o estatus documental declarado, 
 
 ## Cómo lo cotizamos
 
-Nos compartes tipo de rescate, vehículos o escenarios previstos, número de usuarios, tallas, frecuencia de salidas y equipo existente. Entregamos ficha técnica por partida para chaqueta, pantalón, overol, guantes, casco y herramienta, con el estatus que publica cada modelo. También ofrecemos compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México.
+Nos compartes tipo de rescate, vehículos o escenarios previstos, número de usuarios, tallas, frecuencia de salidas y equipo existente. Entregamos ficha técnica por partida para chaqueta, pantalón, overol, guantes, casco y herramienta, con el estatus que publica cada modelo. Puedes pedir solo la pieza que falta, sin mínimo; revisamos tallas contigo y enviamos a todo el país.
 
 Para [cotizar trajes de extricación](/contacto/), indica si buscas dotación inicial, relevo de turno o reposición tras desgaste. Si la ficha no publica peso, código, nivel o compatibilidad que necesitas, lo señalamos para confirmarlo antes de integrar la propuesta.
 

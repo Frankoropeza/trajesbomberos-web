@@ -54,7 +54,7 @@ Esta es la carpeta que debería viajar con cualquier propuesta seria de trajes p
 
 ## Los tres motivos de descalificación más comunes
 
-**1. Certificado a nombre de quien no fabrica.** El clásico: se presenta un certificado del **material** —la tela exterior o la barrera— como si acreditara el traje. No lo acredita. La certificación del conjunto estructural es del **fabricante del conjunto terminado**, listado ante el organismo certificador. Si el nombre del certificado y el del fabricante ofertado no coinciden, es descalificación directa en casi cualquier comité que sepa lo que está leyendo.
+**1. Certificado a nombre de quien no fabrica.** El clásico: se presenta un certificado del **material** (la tela exterior o la barrera) como si acreditara el traje. No lo acredita. La certificación del conjunto estructural es del **fabricante del conjunto terminado**, listado ante el organismo certificador. Si el nombre del certificado y el del fabricante ofertado no coinciden, es descalificación directa en casi cualquier comité que sepa lo que está leyendo.
 
 **2. Falta de carta de distribuidor.** Es el documento que impide que cualquiera oferte una marca que no representa. Cuesta cero pesos y se pide con anticipación; se olvida con una frecuencia sorprendente.
 
@@ -64,7 +64,7 @@ Esta es la carpeta que debería viajar con cualquier propuesta seria de trajes p
 
 Cinco reglas que hacen la diferencia entre un pliego que protege y uno que solo genera trabajo:
 
-**Especifica por desempeño, no por marca.** Salvo justificación documentada, un pliego que nombra una marca reduce la competencia y es impugnable. En vez de nombrar, describe: composite de tres capas con capa exterior, barrera de humedad y barrera térmica declaradas por nombre comercial, y valores mínimos de TPP y THL —35 y 205 como referencia— medidos sobre el composite completo.
+**Especifica por desempeño, no por marca.** Salvo justificación documentada, un pliego que nombra una marca reduce la competencia y es impugnable. En vez de nombrar, describe: composite de tres capas con capa exterior, barrera de humedad y barrera térmica declaradas por nombre comercial, y valores mínimos de TPP y THL (35 y 205 como referencia) medidos sobre el composite completo.
 
 **Cita la norma vigente y su edición.** Hoy la referencia para conjunto estructural es la **NFPA 1970**, que consolidó a la NFPA 1971. Escribe "edición vigente" para no tener que modificar el pliego cada revisión, y define explícitamente si aceptas equipo certificado bajo la edición anterior. Si no lo defines, lo vas a discutir en la junta de aclaraciones.
 
@@ -100,7 +100,7 @@ Antes del expediente hay una etapa que decide casi todo y que en muchos municipi
 3. **Levantamiento de tallas.** Por elemento, no por promedio. Sin tallas, el proveedor cotiza tallas estándar y el ajuste se paga después.
 4. **Partidas por pieza.** Chaquetón, pantalonera, casco, monja, guantes, botas y, si aplica, equipo de respiración autónoma. Así puedes comparar y reponer sin volver a licitar el conjunto.
 5. **Investigación de mercado con la misma solicitud.** Manda el mismo documento a por lo menos tres proveedores: operación, cantidades, tallas, norma y edición, lugar de entrega. Pide ficha técnica y estatus de certificación de cada modelo, no solo precio.
-6. **Procedimiento según monto y origen del recurso.** La ley de adquisiciones que aplica (federal, estatal o municipal, según de dónde venga el recurso) y el monto definen si es adjudicación directa, invitación a cuando menos tres personas o licitación pública.
+6. **Procedimiento según monto y origen del recurso.** La ley de adquisiciones que aplica depende de dónde venga el recurso: federal, estatal o municipal. Junto con el monto, define si es adjudicación directa, invitación a cuando menos tres personas o licitación pública.
 7. **Calendario real.** Suma levantamiento de tallas, fabricación o importación, entrega y recepción con revisión de etiquetas. El equipo certificado de importación rara vez está en existencia para decenas de elementos.
 
 | Etapa | Qué pide el municipio | Qué debe entregar el proveedor |
@@ -112,11 +112,11 @@ Antes del expediente hay una etapa que decide casi todo y que en muchos municipi
 
 ## Cómo lo resuelve LORICA
 
-Para un cuerpo de bomberos municipal, en LORICA armamos la cotización de presupuesto con la misma estructura que después pedirá el pliego: una partida por pieza, la ficha técnica del modelo, el estatus normativo tal como lo declara el fabricante (certificado con número, declarado o solo materiales) y el tiempo de entrega por escrito. Si todavía no tienes tallas, te mandamos la guía para levantarlas; y si el recurso alcanza para una parte, te proponemos el orden de reposición empezando por los conjuntos más próximos a los diez años. Los modelos con certificado UL publicado, como el [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o el [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/), llevan el número en su ficha.
+Para un cuerpo de bomberos municipal, en LORICA armamos la cotización de presupuesto con la misma estructura que después pedirá el pliego. Lleva una partida por pieza, la ficha técnica del modelo, el estatus normativo tal como lo declara el fabricante (certificado con número, declarado o solo materiales) y el tiempo de entrega por escrito. Si todavía no tienes tallas, te mandamos la guía para levantarlas; y si el recurso alcanza para una parte, te proponemos el orden de reposición empezando por los conjuntos más próximos a los diez años. Los modelos con certificado UL publicado, como el [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o el [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/), llevan el número en su ficha.
 
 ## Qué te podemos mandar
 
-Si estás armando una compra —pública o corporativa— pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. En LORICA lo mandamos por escrito, aunque todavía no haya orden de compra.
+Si estás armando una compra, pública o corporativa, pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. En LORICA lo mandamos por escrito, aunque todavía no haya orden de compra.
 
 Y si lo que tienes es un anexo técnico a medio redactar, mándalo: te decimos qué líneas conviene ajustar antes de publicar. Un pliego bien escrito nos conviene a todos, incluso cuando lo gane otro.
 

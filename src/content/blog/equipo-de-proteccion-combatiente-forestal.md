@@ -113,7 +113,7 @@ Buena parte de las requisiciones en México todavía piden «traje forestal NFPA
 | Guantes | Destreza para herramienta y marcha, resistencia a calor de contacto moderado | Talla probada con la herramienta real | [Guante forestal](/guantes/guante-forestal/) |
 | Botas | Marcha en pendiente y terreno suelto | Altura de caña, suela y talla mexicana | [Bota forestal](/botas/bota-forestal/) |
 
-Tres cosas que la tabla no cambia: el traje forestal **no tiene barrera de humedad ni barrera térmica**, así que no entra a un incendio estructural; una misma dotación se prueba completa, caminando y con la herramienta; y una ficha sin norma, edición o estatus no está completa, aunque la prenda sea amarilla y diga «forestal».
+Tres cosas que la tabla no cambia. El traje forestal **no tiene barrera de humedad ni barrera térmica**, así que no entra a un incendio estructural. Una misma dotación se prueba completa, caminando y con la herramienta. Y una ficha sin norma, edición o estatus no está completa, aunque la prenda sea amarilla y diga «forestal».
 
 ## Cómo lo cotizamos
 

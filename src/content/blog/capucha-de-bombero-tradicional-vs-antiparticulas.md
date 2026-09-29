@@ -75,7 +75,7 @@ La dotación debe prever al menos una pieza de reemplazo por el ciclo de lavado 
 
 Retira por agujeros, costuras abiertas, pérdida de elasticidad, contaminación persistente o condición que afecte la interfaz. Inspecciona abertura, tela, babero y costuras antes de reasignar.
 
-Revisa antes y después de uso el tejido contra luz, uniones, elástico, abertura facial y borde del babero. Un agujero pequeño, fibra carbonizada, costura abierta, pérdida de recuperación, estiramiento permanente, olor o contaminación que no se resuelve son motivos para separarla. El lavado permite inspeccionar, no vuelve a servicio una capucha que ya no conserva cobertura. Para la capucha antipartículas publicada, la ficha señala retiro máximo de diez años desde fabricación y que la reposición suele ser más frecuente por elasticidad y sello; se mantiene ese criterio como información de esa configuración, no como fecha atribuida a PAC II, CAP1005 o FPEN.
+Revisa antes y después de uso el tejido contra luz, uniones, elástico, abertura facial y borde del babero. Un agujero pequeño, fibra carbonizada, costura abierta, pérdida de recuperación, estiramiento permanente, olor o contaminación que no se resuelve son motivos para separarla. El lavado permite inspeccionar, no vuelve a servicio una capucha que ya no conserva cobertura. Para la capucha antipartículas publicada, la ficha señala retiro máximo de diez años desde fabricación y una reposición más frecuente por elasticidad y sello. Ese criterio es de esa configuración; no es una fecha atribuida a PAC II, CAP1005 o FPEN.
 
 ## Relación con el traje
 

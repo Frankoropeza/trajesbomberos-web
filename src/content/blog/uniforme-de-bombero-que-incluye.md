@@ -74,7 +74,7 @@ Antes de comprar, documenta qué hace cada rol, qué exposición enfrenta, si ha
 
 El incendio de vegetación impone movilidad, calor ambiental, caminatas largas y exposición distinta a la de una estructura cerrada. Por eso la [ropa forestal](/trajes/forestal/) no se elige como una versión ligera del estructural ni como uniforme de campo. Es EPP para un escenario particular y debe revisarse por su alcance declarado, tallas y compatibilidad con el resto del equipo.
 
-La referencia vigente que reúne equipo forestal está en NFPA 1950, edición 2025, que absorbió la anterior NFPA 1977. Esto no significa que la legislación mexicana obligue por sí sola a comprar una certificación NFPA: el patrón debe seleccionar EPP conforme al riesgo; una referencia NFPA puede formar parte de la especificación o del pliego cuando se incorpora expresamente. Para compras forestales, pide la ficha del conjunto terminado y no extrapoles una prenda de estación ni una de brigada.
+La referencia vigente que reúne equipo forestal está en NFPA 1950, edición 2025, que absorbió la anterior NFPA 1977. Esto no significa que la legislación mexicana obligue por sí sola a comprar una certificación NFPA: el patrón debe seleccionar EPP conforme al riesgo. Una referencia NFPA puede formar parte de la especificación o del pliego cuando se incorpora expresamente. Para compras forestales, pide la ficha del conjunto terminado y no extrapoles una prenda de estación ni una de brigada.
 
 ## Cómo se compra el uniforme de estación
 

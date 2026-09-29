@@ -26,7 +26,7 @@ Nomex IIIA es una tela de fibras inherentemente resistentes a la flama. La compo
 
 ## La composición 93/5/2 y lo que sí permite comparar
 
-La formulación que suele identificarse como Nomex IIIA combina 93 % de meta-aramida, 5 % de para-aramida y 2 % de fibra antiestática. Cada parte atiende una necesidad distinta. La meta-aramida es la base de la resistencia inherente a la flama; la para-aramida ayuda a que la tela soporte el trabajo mecánico; y la fibra antiestática forma parte de una construcción pensada para controlar la carga estática. No es una receta para convertir cualquier prenda en equipo de ataque interior.
+La formulación que suele identificarse como Nomex IIIA combina 93 % de meta-aramida, 5 % de para-aramida y 2 % de fibra antiestática. Cada parte atiende una necesidad distinta. La meta-aramida es la base de la resistencia inherente a la flama, y la para-aramida ayuda a que la tela soporte el trabajo mecánico. La fibra antiestática completa una construcción pensada para controlar la carga estática. No es una receta para convertir cualquier prenda en equipo de ataque interior.
 
 Conviene pedir esa composición cuando se está comparando ropa de estación, prendas de brigada o componentes textiles, pero no tomarla como una respuesta completa. Dos telas con composición semejante pueden tener tejidos, peso, confección, refuerzos y aplicaciones muy diferentes. La pregunta útil para compras es: ¿qué prenda es, qué exposición cubrirá y qué declaración tiene la prenda terminada? A partir de ahí se puede revisar si la mezcla propuesta corresponde al uso.
 

@@ -101,7 +101,7 @@ Registra agente, concentración conocida, configuración utilizada, tiempo, cond
 
 ## Cómo lo cotizamos
 
-Nos compartes sustancia, concentración, estado físico, temperatura, forma de contacto, tarea, número de usuarios y equipo respiratorio existente. Entregamos ficha técnica por partida para comparar el [traje encapsulado](/trajes/hazmat/traje-encapsulado-nivel-a/), nivel B, nivel C, overol, guantes y botas con las interfaces solicitadas. También ofrecemos compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México.
+Nos compartes sustancia, concentración, estado físico, temperatura, forma de contacto, tarea, número de usuarios y equipo respiratorio existente. Entregamos ficha técnica por partida para comparar el [traje encapsulado](/trajes/hazmat/traje-encapsulado-nivel-a/), nivel B, nivel C, overol, guantes y botas con las interfaces solicitadas. Si la compra es pública, integramos el expediente para licitación; también surtimos por pieza, sin mínimo y con asesoría de tallas.
 
 Para [cotizar equipo Hazmat](/contacto/), incluye la ficha de seguridad disponible y el procedimiento de respuesta que debe cubrir la configuración. Si el material, la compatibilidad o el estatus de una prenda no están publicados para ese agente, lo indicamos para confirmarlo antes de armar la partida.
 

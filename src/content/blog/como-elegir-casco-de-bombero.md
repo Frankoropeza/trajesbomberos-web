@@ -59,7 +59,7 @@ Una cotización útil indica modelo, configuración, talla o intervalo de talla,
 
 Haz una prueba de conjunto antes de liberar una compra grande. Reúne casco, capucha, máscara si aplica, goggles o visor, guantes y cuello del traje. El usuario debe ponerse el conjunto y ejecutar movimientos representativos sin entrar en una zona de riesgo: mirar arriba, abajo y a los lados; inclinarse; levantar brazos; abrir y cerrar la protección ocular. Registra qué talla y configuración funcionó para cada persona.
 
-La prueba detecta problemas que una tabla de medidas no muestra: un visor que roza la máscara, un barbiquejo demasiado corto, una suspensión que presiona con la capucha, una lámpara que desbalancea el casco o una protección de nuca que estorba con el cuello del chaquetón. Resolverlo en la requisición es más simple que improvisar adaptaciones después de la entrega.
+La prueba detecta problemas que una tabla de medidas no muestra. Un visor que roza la máscara, un barbiquejo demasiado corto, una suspensión que presiona con la capucha, una lámpara que desbalancea el casco o una nuquera que estorba con el cuello del chaquetón. Resolverlo en la requisición es más simple que improvisar adaptaciones después de la entrega.
 
 ## Inspección, limpieza y retiro
 

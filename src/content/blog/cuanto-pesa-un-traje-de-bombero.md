@@ -87,7 +87,7 @@ La consecuencia práctica es simple: no reduzcas carga bajando de familia sin qu
 
 ## Modelos donde la ficha permite hablar de construcción ligera
 
-El único peso por pieza publicado entre los trajes estructurales del catálogo es el del [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/): la ficha declara 2.5 kg para el chaquetón y 1.88 kg para el pantalón, unos 4.4 kg el traje sin tirantes, casco, capucha, guantes, botas ni ERA. Sirve como referencia real de la parte textil; no se traslada a otros modelos ni a otras tallas.
+El único peso por pieza publicado entre los trajes estructurales del catálogo es el del [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/): la ficha declara 2.5 kg para el chaquetón y 1.88 kg para el pantalón. Son unos 4.4 kg de traje, sin tirantes, casco, capucha, guantes, botas ni ERA. Sirve como referencia real de la parte textil; no se traslada a otros modelos ni a otras tallas.
 
 La ficha del [Romak Fire Maverick II](/trajes/estructural/modelos/romak-maverick-ii/) publica Panther de 210 g/m² como exterior, Moisture Barrier 125 de 125 g/m² y Dubai TB205 de 205 g/m². También comunica “La protección más ligera”, pero esa frase comercial no equivale a un peso total declarado del traje. Lo defendible es comparar las tres capas publicadas y pedir el peso final de la configuración ofertada.
 
@@ -113,7 +113,7 @@ Si la compra contempla varios turnos, prueba una muestra representativa de talla
 
 ## Cómo lo cotizamos
 
-Nos compartes la operación, número de personas, tallas disponibles y el equipo que ya utilizan. Entregamos ficha técnica por partida y desglosamos chaquetón, pantalonera, casco, monja, guantes, botas, ERA y accesorios para comparar la misma configuración. Ofrecemos compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México.
+Nos compartes la operación, número de personas, tallas disponibles y el equipo que ya utilizan. Entregamos ficha técnica por partida y desglosamos chaquetón, pantalonera, casco, monja, guantes, botas, ERA y accesorios para comparar la misma configuración. Puedes comprar por pieza sin mínimo; te asesoramos en tallas, armamos el expediente si hay licitación y enviamos a cualquier estado.
 
 Para [cotizar trajes para bomberos](/contacto/), indica si requieres conjunto completo, reposición o ERA, además de la operación, tallas y configuración existente. Si una ficha no declara el peso de una pieza o configuración, lo señalamos para confirmarlo en la cotización, sin presentar una estimación como especificación.
 

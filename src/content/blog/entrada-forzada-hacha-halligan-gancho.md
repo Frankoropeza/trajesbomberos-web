@@ -28,7 +28,7 @@ Estas herramientas no enseñan entrada forzada. Su empleo exige personal capacit
 
 La [hacha de bombero](/herramientas/hacha-de-bombero/) se elige por tipo de cabeza, filo, punta posterior cuando aplique, material y mango. El catálogo describe cabezas de acero forjado y mangos de fibra de vidrio o madera según modelo; no afirma que todo modelo comparta esa construcción. La longitud se coteja contra la distancia que permite la maniobra y el compartimiento donde viajará.
 
-La [barra Halligan](/herramientas/barra-halligan/) —también llamada Hooligan en algunas fichas— tiene extremos y pico para apalancamiento. El [gancho bichero](/herramientas/gancho-bichero/) no es una palanca: ayuda a alcanzar, jalar o revisar desde posición definida. Sus puntas, mango y longitud requieren protección y una zona de trabajo controlada.
+La [barra Halligan](/herramientas/barra-halligan/), también llamada Hooligan en algunas fichas, tiene extremos y pico para apalancamiento. El [gancho bichero](/herramientas/gancho-bichero/) no es una palanca: ayuda a alcanzar, jalar o revisar desde posición definida. Sus puntas, mango y longitud requieren protección y una zona de trabajo controlada.
 
 La hacha de cabeza plana concentra una superficie de golpe y un filo; una hacha con pico añade una punta posterior. Esa diferencia se describe en la orden porque cambia la función que se pretende cubrir, la funda necesaria y el modo en que se acomodará. No convierte una cabeza en sustituta automática de la otra: el mando define la herramienta conforme a la tarea autorizada y al entrenamiento de la dotación.
 

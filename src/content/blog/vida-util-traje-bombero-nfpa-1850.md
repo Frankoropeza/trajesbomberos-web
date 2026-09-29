@@ -37,7 +37,7 @@ La respuesta corta es diez años. La respuesta útil es más larga, y es la que 
 
 ## De dónde sale la regla de los diez años
 
-El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850** —el documento que consolidó las anteriores NFPA 1851 y NFPA 1852, y cuya primera edición consolidada es la de 2026. La fecha de fabricación se lee en la etiqueta: [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
+El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850**. Ese documento consolidó las anteriores NFPA 1851 y NFPA 1852, y su primera edición consolidada es la de 2026. La fecha de fabricación se lee en la etiqueta: [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
 
 Dos precisiones que cambian decisiones de compra:
 
@@ -101,7 +101,7 @@ Y una recomendación que ahorra más dinero que cualquier negociación de precio
 
 ## Frecuencias de cuidado, inspección y retiro en una tabla
 
-Para el calendario de la estación sirve tener las cifras juntas. La NFPA 1851 edición 2020 —antecesora directa de la NFPA 1850— endureció varias de ellas, y son las que conviene seguir mientras adoptas la edición consolidada:
+Para el calendario de la estación sirve tener las cifras juntas. La NFPA 1851 edición 2020, antecesora directa de la NFPA 1850, endureció varias de ellas, y son las que conviene seguir mientras adoptas la edición consolidada:
 
 | Tarea | Frecuencia o límite | Referencia |
 | --- | --- | --- |
@@ -117,13 +117,13 @@ La lectura práctica: si hoy tu estación lava una vez al año, ya está por deb
 
 ## Cómo lo resuelve LORICA
 
-En cada cotización de LORICA la fecha de fabricación va por escrito, junto con el proceso de limpieza que indica el fabricante y la ficha técnica del modelo. Cuando un cuerpo de bomberos nos manda su inventario con fechas, le devolvemos el calendario de reposición por pieza: qué conjuntos cumplen diez años en el ejercicio, cuáles conviene inspeccionar primero y qué partidas se pueden comprar sueltas —[chaquetón](/trajes/estructural/chaqueton/) o [pantalonera](/trajes/estructural/pantalonera/)— sin reponer el conjunto completo.
+En cada cotización de LORICA la fecha de fabricación va por escrito, junto con el proceso de limpieza que indica el fabricante y la ficha técnica del modelo. Cuando un cuerpo de bomberos nos manda su inventario con fechas, le devolvemos el calendario de reposición por pieza: qué conjuntos cumplen diez años en el ejercicio, cuáles conviene inspeccionar primero y qué partidas se pueden comprar sueltas, como [chaquetón](/trajes/estructural/chaqueton/) o [pantalonera](/trajes/estructural/pantalonera/), sin reponer el conjunto completo.
 
 ## Preguntas frecuentes
 
 **¿Cuántos años dura un traje de bombero?** El conjunto estructural se retira a los diez años contados desde la fecha de fabricación, no desde la entrega. Es un límite máximo: daño, contaminación que no sale o una exposición severa pueden obligar a retirarlo antes.
 
-**¿Cada cuánto se lava un traje de bombero?** Después de cada exposición se hace la reducción preliminar en la escena, y la limpieza avanzada al menos dos veces al año según la NFPA 1851 edición 2020, una de ellas junto con la inspección avanzada anual.
+**¿Cada cuánto se lava un traje de bombero?** Después de cada exposición se hace la reducción preliminar en la escena. La limpieza avanzada va al menos dos veces al año según la NFPA 1851 edición 2020, una de ellas junto con la inspección avanzada anual.
 
 **¿Qué es la inspección avanzada?** Es la revisión anual que hace personal capacitado o un proveedor de servicio: barreras, costuras, cinta reflejante, herrajes, DRD e interfaz entre chaquetón y pantalonera. También se hace cuando la inspección de rutina detecta posible daño.
 

@@ -113,7 +113,7 @@ Durante recepción, revisa etiquetas y materiales contra la cotización aprobada
 
 ## Cómo lo cotizamos
 
-Nos dices la operación, número de usuarios y requisitos de compra; entregamos ficha técnica por partida, desglosamos el composite cuando la ficha lo publica y señalamos lo que debe confirmarse. Ofrecemos compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México. La cotización distingue información declarada de información pendiente, sin asumir certificaciones o materiales no documentados.
+Nos dices la operación, número de usuarios y requisitos de compra; entregamos ficha técnica por partida, desglosamos el composite cuando la ficha lo publica y señalamos lo que debe confirmarse. La compra puede ser por pieza y sin mínimo, con asesoría de tallas, expediente para licitación y envío nacional. La cotización distingue información declarada de información pendiente, sin asumir certificaciones o materiales no documentados.
 
 Para [cotizar trajes para bomberos](/contacto/), comparte el modelo o familia, la configuración actual si es reposición, tallas y los documentos que exige tu institución.
 

@@ -59,7 +59,7 @@ En entrada, el objetivo no es trabajar durante una jornada cerca de la fuente. E
 | Piezas | Capucha, chaquetón, pantalón, guantes, polainas o delantal según riesgo | Conjunto, capucha con casco y visor, mitones, componentes de entrada y talega |
 | Límite crítico | No habilita entrar a flama | No es una prenda para permanencia prolongada ni sustituye entrenamiento |
 
-La tabla no convierte el tiempo de exposición en una cifra universal. Éste depende de modelo, configuración, ambiente y procedimiento; se confirma con la información del fabricante y la evaluación de la maniobra. NFPA puede ser una referencia voluntaria en México salvo que un pliego la incorpore; para entrada, la ficha de la familia señala que no existe una norma NFPA de producto específica y que la referencia técnica debe leerse por modelo.
+La tabla no convierte el tiempo de exposición en una cifra universal. Éste depende de modelo, configuración, ambiente y procedimiento; se confirma con la información del fabricante y la evaluación de la maniobra. NFPA puede ser una referencia voluntaria en México salvo que un pliego la incorpore. Para entrada, la ficha de la familia señala que no existe una norma NFPA de producto específica y que la referencia técnica debe leerse por modelo.
 
 ## Qué integra un conjunto de aproximación
 
