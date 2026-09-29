@@ -109,6 +109,8 @@ if (isTipo) {
 }
 // Metas por ruta (tanda de metas): title, description y H1 con prioridad sobre los datos.
 const metaRuta = metaSeo(path);
+// FAQ extra por ruta (preguntas de la SERP, Ahrefs) antes de las FAQ de los datos.
+const faqsFicha = [...(metaRuta?.faqsExtra ?? []), ...((isTipo ? tipo.faq : modelo.faq) ?? [])];
 if (metaRuta?.h1) { h1Ficha = metaRuta.h1; h1Accent = undefined; }
 const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
 const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
@@ -126,7 +128,7 @@ const rapida = isTipo ? [] : [
 ] as [string, string][];
 const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
 ---
-<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
+<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   {!isTipo && (
     <div class="section producto"><div class="container">
@@ -169,7 +171,7 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
     {modelosMarca.length > 0 && <section class="block"><SectionHeading clave="marca" eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
     {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${tipo.nombre.toLowerCase()} que surtimos`} duo={duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
     {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
-    <section class="block" id="faq"><SectionHeading clave="faq" eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
+    <section class="block" id="faq"><SectionHeading clave="faq" eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={faqsFicha} /></section>
   </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Trajes {familiaModelo.nombreWa.toLowerCase()}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
   <GuiasTecnicas ruta={path} tema={temaEnFrase(nombre)} />
 </PageLayout>
