@@ -17640,7 +17640,6 @@
    "lng": -99.0157,
    "precision": "exacta"
   },
-  "telefono": "(481) 382-3133",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -17699,6 +17698,10 @@
    {
     "nombre": "matehuala.gob.mx",
     "url": "https://matehuala.gob.mx/m/proteccion-civil/"
+   },
+   {
+    "nombre": "Bomberos Voluntarios de Matehuala — Contacto",
+    "url": "http://www.bomberosmatehuala.org.mx/contact.html"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -17722,7 +17725,6 @@
    "lng": -99.9916,
    "precision": "exacta"
   },
-  "telefono": "(487) 872-2700",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -17789,6 +17791,10 @@
    {
     "nombre": "proteccioncivil.slp.gob.mx",
     "url": "https://proteccioncivil.slp.gob.mx/directorio/"
+   },
+   {
+    "nombre": "Bomberos Metropolitanos de San Luis Potosí — publicación oficial en X con sus números",
+    "url": "https://x.com/bomberosmslp/status/2027926802597916824"
    }
   ],
   "verificadoEl": "2026-06-25",
