@@ -59,8 +59,22 @@ export function organizationSchema(): object {
     url: SITE.url,
     description:
       'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE.url}/images/marca/logo-trajesbombero-512.png`,
+      width: 512,
+      height: 512,
+    },
     telephone: CONTACT.telefonoHref,
     email: CONTACT.email,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: CONTACT.telefonoHref,
+      email: CONTACT.email,
+      areaServed: 'MX',
+      availableLanguage: ['es'],
+    },
     areaServed: { '@type': 'Country', name: 'México' },
     knowsAbout: [
       'Trajes para bomberos',
@@ -162,8 +176,10 @@ export function articleSchema(a: ArticleInput): object {
   };
 }
 
-// Product para fichas L4. Sin offers ni aggregateRating: no
-// publicamos precios y nunca fabricamos reseñas (regla dura).
+// Fichas L4 como ItemPage (no Product): el sitio no publica precios
+// ni reseñas, y un Product sin offers/review/aggregateRating es
+// inválido para Google. ItemPage describe la ficha sin afirmar una
+// oferta ni una marca propia sobre piezas genéricas.
 export function productSchema(p: {
   nombre: string;
   descripcion: string;
@@ -171,15 +187,20 @@ export function productSchema(p: {
   categoria: string;
   url: string;
 }): object {
+  const url = new URL(p.url, SITE.url).href;
   return {
     '@context': 'https://schema.org',
-    '@type': 'Product',
+    '@type': 'ItemPage',
+    '@id': `${url}#webpage`,
+    url,
     name: p.nombre,
     description: p.descripcion,
-    image: new URL(p.imagen, SITE.url).href,
-    category: p.categoria,
-    url: new URL(p.url, SITE.url).href,
-    brand: { '@type': 'Brand', name: SITE.name },
+    inLanguage: SITE.lang,
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    publisher: { '@id': `${SITE.url}/#organization` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: new URL(p.imagen, SITE.url).href },
+    about: { '@type': 'Thing', name: p.nombre, description: p.descripcion },
+    genre: p.categoria,
   };
 }
 

@@ -22,6 +22,8 @@ keywords:
   - "guía de compra"
   - "México"
 destacado: true
+imagen: "/images/blog/como-elegir-traje-para-bomberos.avif"
+imagenAlt: "Trajes estructurales, de brigadista, forestales y aluminizados colgados lado a lado en una estación"
 ---
 
 Cada semana entra el mismo mensaje: *"Buenas tardes, necesito cotización de trajes para bomberos, ¿cuánto cuesta el traje completo?"*. Y cada semana la respuesta empieza con una pregunta, no con un precio: **¿para qué operación?**

@@ -21,6 +21,8 @@ keywords:
   - "vida útil del traje de bombero"
   - "NFPA 1850"
   - "México"
+imagen: "/images/blog/vida-util-traje-bombero-nfpa-1850.avif"
+imagenAlt: "Manos con guantes inspeccionando las costuras de un chaquetón estructural usado bajo una lámpara"
 ---
 
 Hay una pregunta que aparece siempre a la mitad de una cotización, casi como comentario al margen: *"¿y cada cuándo hay que cambiarlos?"*.

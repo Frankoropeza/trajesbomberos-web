@@ -22,6 +22,8 @@ keywords:
   - "TPP y THL"
   - "traje estructural"
   - "México"
+imagen: "/images/blog/tpp-y-thl-traje-estructural.avif"
+imagenAlt: "Muestra de composite de tres capas en un equipo de prueba de protección térmica"
 ---
 
 Si de todo el vocabulario técnico del [traje estructural](/trajes/estructural/) tuvieras que quedarte con dos siglas, serían estas. No porque suenen bien en una requisición, sino porque son los dos únicos números que te permiten poner dos ofertas lado a lado y saber cuál protege más.

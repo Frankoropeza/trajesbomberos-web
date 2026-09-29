@@ -27,6 +27,8 @@
   .cform input, .cform textarea, .cform select { font-size: 16px; min-height: 48px; }
   .cform__submit { width: 100%; min-height: 50px; }
   .topbar__extra { display: none !important; }   /* horario oculto en móvil */
+  .topbar__claim { display: none !important; }   /* evita la frase cortada («V…») */
+  .topbar__contact { width: 100%; justify-content: space-between; }
   .section-menu__list { -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .section-menu__list::-webkit-scrollbar { display: none; }
 }

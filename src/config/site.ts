@@ -35,6 +35,23 @@ export const CONTACT = {
   posicionamiento: 'Venta de trajes para bomberos · Envíos a todo México',
 } as const;
 
+// ============================================================
+// EMPRESA — datos corporativos del cliente. Se publican SOLO los
+// campos con valor: nunca se inventan. Cuando el cliente entregue
+// razón social, RFC o domicilio, basta con llenarlos aquí y
+// aparecen en /empresa/, en el aviso de privacidad y en el JSON-LD.
+// ============================================================
+export const EMPRESA: {
+  nombreComercial: string;
+  razonSocial?: string;
+  rfc?: string;
+  domicilio?: string;          // domicilio del responsable (aviso de privacidad)
+  ciudad?: string;
+  anioInicio?: number;
+} = {
+  nombreComercial: 'TrajesBombero México',
+};
+
 export const WA_MESSAGES = {
   cotizar: 'Hola, quiero cotizar trajes o equipo para bomberos.',
   informacion: 'Hola, necesito información sobre equipo de protección contra incendios.',

@@ -209,7 +209,7 @@ const pageIndex = [
     gap: clamp(2rem, 4vw, 4rem);
     align-items: start;
   }
-  .layout-main { display: grid; gap: 0; min-width: 0; }
+  .layout-main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; min-width: 0; }
   .block { padding-block: clamp(2.2rem, 3.5vw, 3.4rem); border-top: var(--border); }
   .block:first-child { padding-top: 0; border-top: 0; }
   .block:last-child { padding-bottom: 0; }

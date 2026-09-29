@@ -22,6 +22,8 @@ keywords:
   - "NFPA 1970"
   - "certificación de trajes"
   - "México"
+imagen: "/images/blog/nfpa-1970-que-cambio.avif"
+imagenAlt: "Traje estructural, equipo de respiración y casco sobre una mesa de acero en una estación de bomberos"
 ---
 
 Durante décadas, en México pedir un traje estructural certificado significaba escribir tres palabras y un número: **NFPA 1971**. Estaba en los pliegos, en las requisiciones, en las fichas de los distribuidores y en la etiqueta cosida dentro del chaquetón.

@@ -20,6 +20,8 @@ keywords:
   - "licitación de trajes para bomberos"
   - "expediente"
   - "México"
+imagen: "/images/blog/licitacion-trajes-bomberos-expediente.avif"
+imagenAlt: "Carpetas técnicas, muestras de composite y un chaquetón doblado sobre un escritorio para armar un expediente de licitación"
 ---
 
 Una licitación de equipo de protección contra incendios se decide dos veces. La primera, cuando alguien redacta el anexo técnico. La segunda, en la mesa donde se abren las propuestas y se revisa, hoja por hoja, si lo que dice la oferta coincide con lo que exige el pliego.

@@ -21,6 +21,8 @@ keywords:
   - "traje estructural o brigadista"
   - "diferencias"
   - "México"
+imagen: "/images/blog/traje-estructural-o-brigadista.avif"
+imagenAlt: "Traje estructural color arena junto a un traje de brigadista azul marino"
 ---
 
 Es la llamada más común que recibimos de una planta industrial: *"Necesitamos trajes de bombero para la brigada, pásame precio del completo"*. Y es también donde más seguido tenemos que frenar la venta para preguntar algo incómodo: **¿tu brigada entra al fuego, o lo controla desde afuera y evacúa?**
