@@ -1,0 +1,84 @@
+---
+// ModelosTiles (home): modelos reales de traje en el formato TileCard
+// homologado del index. El estatus normativo va al inicio del texto,
+// tal como lo declara el fabricante (mismas etiquetas que NormaBadge):
+// nunca se presenta como certificado un modelo que no lo está.
+// Subcategorías: familia, marca (si tiene hub) y dos piezas de la familia.
+import TileGrid from './TileGrid.astro';
+import TileCard, { type TileProps, type TileSub } from './TileCard.astro';
+import { MODELOS, urlModelo } from '@lib/catalogo/modelos';
+import { SECCIONES, TIPOS } from '@lib/catalogo/data';
+import { PIEZAS } from '@lib/piezas';
+import type { Modelo } from '@lib/catalogo/types';
+
+const KW: Record<string, string> = {
+  estructural: 'Traje estructural',
+  brigadista: 'Traje de brigadista',
+  forestal: 'Traje forestal',
+  aproximacion: 'Traje aluminizado',
+  entrada: 'Traje de entrada',
+  extricacion: 'Traje de extricación',
+  hazmat: 'Traje Hazmat',
+};
+const ORDEN = ['estructural', 'brigadista', 'forestal', 'aproximacion', 'entrada', 'extricacion', 'hazmat'];
+// Dos piezas representativas por familia (slug de pieza → etiqueta).
+const PIEZAS_FAMILIA: Record<string, [string, string][]> = {
+  estructural: [['chaqueton', 'Chaquetón estructural'], ['pantalonera', 'Pantalonera estructural']],
+  brigadista: [['conjunto', 'Conjunto de brigada'], ['overol', 'Overol ignífugo']],
+  forestal: [['camisola', 'Camisola forestal'], ['pantalon', 'Pantalón forestal']],
+  aproximacion: [['chaqueton', 'Chaquetón aluminizado'], ['capucha', 'Capucha aluminizada']],
+  entrada: [['conjunto-corta-duracion', 'Traje de penetración'], ['capucha', 'Capucha de penetración']],
+  extricacion: [['chaqueta', 'Chaqueta de rescate técnico'], ['pantalon', 'Pantalón de rescate técnico']],
+  hazmat: [['traje-nivel-b', 'Traje químico nivel B'], ['guantes-quimicos', 'Guantes químicos']],
+};
+// Hub de marca publicado en /marcas/<slug>/ (tipos de la sección «marcas»).
+const MARCA_SLUG: Record<string, string> = { 'Romak Fire': 'romak-fire', 'Sköld': 'skold' };
+const hayHubMarca = SECCIONES.some((s) => s.slug === 'marcas');
+const RUTAS = new Set([
+  ...PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`),
+  ...TIPOS.map((t) => `/${t.seccion}/${t.slug}/`),
+]);
+
+const NORMA = (m: Modelo) => ({
+  'certificado-ul': m.certificacion ? `Certificado UL · ${m.certificacion}.` : '',
+  declarado: m.norma ? `Conforme a ${m.norma}, según el fabricante.` : '',
+  equivalente: m.norma ? `Diseñado como equivalente a ${m.norma}; no certificado.` : '',
+  materiales: m.norma ? `Materiales conforme a ${m.norma}.` : '',
+  niosh: 'Certificación NIOSH: uso industrial, no para combate estructural.',
+  'sin-norma': '',
+  'no-aplica': '',
+})[m.estatusNorma];
+
+const modelos = MODELOS
+  .filter((m) => m.seccion === 'trajes' && m.familia)
+  .sort((a, b) => ORDEN.indexOf(a.familia!) - ORDEN.indexOf(b.familia!));
+
+const items: TileProps[] = modelos.map((m, i) => {
+  const fam = m.familia!;
+  const subs: TileSub[] = [{ label: KW[fam] ?? 'Trajes para bomberos', href: `/trajes/${fam}/` }];
+  const marca = MARCA_SLUG[m.marca];
+  if (marca && hayHubMarca && RUTAS.has(`/marcas/${marca}/`)) subs.push({ label: `Trajes ${m.marca}`, href: `/marcas/${marca}/` });
+  for (const [slug, label] of PIEZAS_FAMILIA[fam] ?? []) {
+    const href = `/trajes/${fam}/${slug}/`;
+    if (RUTAS.has(href)) subs.push({ label, href });
+  }
+  // Sin hub de marca: la cuarta fila es la guía general de trajes.
+  if (subs.length < 4) subs.push({ label: 'Trajes para bomberos', href: '/trajes/' });
+  const texto = m.resumen?.[0] ?? m.descripcion[0] ?? '';
+  const img = m.imagen;
+  return {
+    codigo: `MD-${String(i + 1).padStart(2, '0')}`,
+    titulo: `${m.marca} ${m.nombre}`,
+    desc: [NORMA(m), texto].filter(Boolean).join(' '),
+    href: urlModelo(m),
+    cta: `Ficha técnica ${m.marca} ${m.nombre}`,
+    img: img?.src ?? '/images/escenas/estacion-bomberos-trajes-percha-800.avif',
+    alt: img?.alt ?? `${KW[fam]} ${m.marca} ${m.nombre}`,
+    pos: img && img.height > img.width ? 'center 8%' : undefined,
+    subs: subs.slice(0, 4),
+  };
+});
+---
+<TileGrid>
+  {items.map((c) => <TileCard {...c} />)}
+</TileGrid>

@@ -1,0 +1,47 @@
+---
+// BlogTiles (home): últimos artículos en el formato TileCard homologado.
+// Las 4 subcategorías son los primeros H2 del artículo (enlace directo
+// a la sección, id generado por Astro); se omite «Preguntas frecuentes».
+// El botón principal usa la palabra clave principal del artículo.
+import { existsSync } from 'node:fs';
+import { render } from 'astro:content';
+import TileGrid from './TileGrid.astro';
+import TileCard, { type TileProps } from './TileCard.astro';
+import { getPosts, postUrl } from '@lib/blog';
+
+interface Props { limit?: number }
+const { limit = 4 } = Astro.props as Props;
+
+const posts = (await getPosts()).slice(0, limit);
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+// Variante 800 px si existe (misma foto, menor peso).
+const img800 = (src: string) => {
+  const v = src.replace(/\.avif$/, '-800.avif');
+  return existsSync(`public${v}`) ? v : src;
+};
+
+const items: TileProps[] = await Promise.all(
+  posts.map(async (p, i) => {
+    const { headings } = await render(p);
+    const url = postUrl(p);
+    const subs = headings
+      .filter((h) => h.depth === 2 && !/preguntas frecuentes/i.test(h.text))
+      .slice(0, 4)
+      .map((h) => ({ label: h.text, href: `${url}#${h.slug}` }));
+    const kw = p.data.keywords?.[0];
+    return {
+      codigo: `BL-${String(i + 1).padStart(2, '0')}`,
+      titulo: p.data.title,
+      desc: p.data.resumen ?? p.data.description ?? '',
+      href: url,
+      cta: kw ? `Guía: ${cap(kw)}` : 'Guía técnica completa',
+      img: img800(p.data.imagen),
+      alt: p.data.imagenAlt ?? p.data.title,
+      subs,
+    };
+  }),
+);
+---
+<TileGrid>
+  {items.map((c) => <TileCard {...c} />)}
+</TileGrid>

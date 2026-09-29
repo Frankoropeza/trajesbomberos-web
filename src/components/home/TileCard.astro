@@ -15,8 +15,11 @@ export interface TileProps {
   alt: string;
   pos?: string; // object-position de la foto (retrato vs. paisaje)
   subs: TileSub[];
+  /** CTA a WhatsApp u otro dominio: abre en pestaña nueva, nofollow. */
+  ctaHref?: string;
 }
-const { codigo, titulo, desc, href, cta, img, alt, pos, subs } = Astro.props as TileProps;
+const { codigo, titulo, desc, href, cta, img, alt, pos, subs, ctaHref } = Astro.props as TileProps;
+const externo = !!ctaHref && /^https?:/.test(ctaHref);
 ---
 <li class="ct">
   <a class="ct__media" href={href} tabindex="-1" aria-hidden="true">
@@ -36,7 +39,7 @@ const { codigo, titulo, desc, href, cta, img, alt, pos, subs } = Astro.props as 
         </li>
       ))}
     </ul>
-    <a class="ct__cta" href={href}>{cta}</a>
+    <a class="ct__cta" href={ctaHref ?? href} target={externo ? '_blank' : undefined} rel={externo ? 'noopener nofollow' : undefined}>{cta}</a>
   </div>
 </li>
 
