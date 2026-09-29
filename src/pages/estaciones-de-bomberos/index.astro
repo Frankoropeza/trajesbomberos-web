@@ -18,7 +18,7 @@ import EstadoCard from '@components/directorio/EstadoCard.astro';
 import Aviso911 from '@components/directorio/Aviso911.astro';
 import RegionesIndex from '@components/directorio/RegionesIndex.astro';
 import CifrasDirectorio from '@components/directorio/CifrasDirectorio.astro';
-import { tilesFamilias, tileConjunto } from '@lib/catalogo/tiles';
+import { tilesEquipo } from '@lib/directorio-equipo';
 import type { CtaPreset } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { SITE, CONTACT, WA_MESSAGES } from '@config/site';
@@ -64,9 +64,7 @@ const metodo = [
 ];
 
 // Equipo para corporaciones: familias con demanda municipal + conjunto completo
-const HREFS_EQUIPO = ['/trajes/estructural/', '/trajes/forestal/', '/trajes/extricacion/'];
-const familias = tilesFamilias().filter((t) => HREFS_EQUIPO.includes(t.href));
-const equipo = [...familias, tileConjunto(familias.length + 1)];
+const equipo = tilesEquipo(['estructural', 'forestal', 'extricacion']);
 
 const faqs = [
   {

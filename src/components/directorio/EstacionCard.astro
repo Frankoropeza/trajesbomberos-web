@@ -12,7 +12,8 @@ interface Props { s: Estacion }
 const { s } = Astro.props as Props;
 const telefonos = [s.telefono, ...(s.telefonosAdicionales ?? [])].filter((t): t is string => !!t);
 const servicios = (s.servicios ?? []).map((x) => SERVICIO_LABEL[x] ?? x);
-const fuentes = fuentesConUrl(s).slice(0, 3);
+// Fuente: se muestra el dominio (atemporal, sin titulares ni fechas), sin repetir.
+const fuentes = [...new Map(fuentesConUrl(s).map((f) => [dominio(f.url!), f.url!])).entries()].slice(0, 3);
 const U = unidad(s.estado, 1);
 const localidad = s.ciudad && s.ciudad !== s.municipio ? `${s.ciudad}, ${U} ${s.municipio}` : `${U.charAt(0).toUpperCase() + U.slice(1)} ${s.municipio}`;
 const ext = { target: '_blank', rel: 'nofollow noopener' };
@@ -52,7 +53,7 @@ const ext = { target: '_blank', rel: 'nofollow noopener' };
     {fuentes.length > 0 && (
       <p class="st__src">
         <span>Fuente:</span>
-        {fuentes.map((f) => <a href={f.url} {...ext}>{f.nombre} ↗</a>)}
+        {fuentes.map(([d, url]) => <a href={url} {...ext}>{d} ↗</a>)}
       </p>
     )}
 

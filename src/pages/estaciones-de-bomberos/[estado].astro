@@ -19,7 +19,7 @@ import BotonesConteo from '@components/directorio/BotonesConteo.astro';
 import EstacionCard from '@components/directorio/EstacionCard.astro';
 import StatsRow from '@components/directorio/StatsRow.astro';
 import DataTable from '@components/directorio/DataTable.astro';
-import { tilesFamilias, tileConjunto } from '@lib/catalogo/tiles';
+import { tilesEquipo } from '@lib/directorio-equipo';
 import type { CtaPreset } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { SITE, CONTACT, WA_MESSAGES } from '@config/site';
@@ -74,16 +74,14 @@ const menuItems = [
 const nServ = (k: string) => servicios.find(([s]) => s === k)?.[1] ?? 0;
 const nTipo = (...ts: string[]) => r.porTipo.filter(([t]) => ts.includes(t)).reduce((a, [, n]) => a + n, 0);
 const candidatos = [
-  { href: '/trajes/forestal/', n: nServ('incendios-forestales') },
-  { href: '/trajes/extricacion/', n: nServ('rescate-vehicular') },
-  { href: '/trajes/aproximacion/', n: nServ('arff') },
-  { href: '/trajes/hazmat/', n: nServ('hazmat') },
-  { href: '/trajes/brigadista/', n: nTipo('Industrial', 'PEMEX', 'CFE') },
-].filter((c) => c.n > 0).sort((a, b) => b.n - a.n).slice(0, 2).map((c) => c.href);
-while (candidatos.length < 2) candidatos.push(['/trajes/extricacion/', '/trajes/forestal/'].find((h) => !candidatos.includes(h))!);
-const HREFS = ['/trajes/estructural/', ...candidatos];
-const familias = tilesFamilias().filter((t) => HREFS.includes(t.href)).sort((a, b) => HREFS.indexOf(a.href) - HREFS.indexOf(b.href));
-const equipo = [...familias, tileConjunto(familias.length + 1)];
+  { slug: 'forestal', n: nServ('incendios-forestales') },
+  { slug: 'extricacion', n: nServ('rescate-vehicular') },
+  { slug: 'aproximacion', n: nServ('arff') },
+  { slug: 'hazmat', n: nServ('hazmat') },
+  { slug: 'brigadista', n: nTipo('Industrial', 'PEMEX', 'CFE') },
+].filter((c) => c.n > 0).sort((a, b) => b.n - a.n).slice(0, 2).map((c) => c.slug);
+for (const s of ['extricacion', 'forestal']) if (candidatos.length < 2 && !candidatos.includes(s)) candidatos.push(s);
+const equipo = tilesEquipo(['estructural', ...candidatos]);
 
 // Estados de la región
 const vecinos = ENTIDADES.filter((x) => x.region === e.region && x.slug !== e.slug)
