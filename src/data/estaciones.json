@@ -7289,7 +7289,6 @@
    "precision": "aproximada"
   },
   "telefono": "(597) 978-1793",
-  "sitioWeb": "https://amecameca.gob.mx/proteccion-civil/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -7335,7 +7334,6 @@
    "lng": -99.25522755,
    "precision": "exacta"
   },
-  "telefono": "(55) 5565-0696",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -7373,7 +7371,6 @@
    "lng": -99.24034094,
    "precision": "exacta"
   },
-  "telefono": "(55) 5820-9282",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -7434,6 +7431,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2014113"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7476,6 +7477,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=7465357"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7594,6 +7599,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2162551"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7664,9 +7673,6 @@
    "precision": "exacta"
   },
   "telefono": "(55) 1542-0399",
-  "telefonosAdicionales": [
-   "(55) 1542-0295"
-  ],
   "email": "proteccioncivil@coacalco.gob.mx",
   "sitioWeb": "https://coacalco.gob.mx/portfolio/proteccion-civil/",
   "servicios": [
@@ -7688,6 +7694,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2016862"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7837,11 +7847,7 @@
    "lng": -99.05972,
    "precision": "aproximada"
   },
-  "telefono": "(55) 5116-4415",
-  "telefonosAdicionales": [
-   "(55) 5116-4416",
-   "(55) 5836-1500 ext. 1904"
-  ],
+  "telefono": "(55) 5836-1500 ext. 1904",
   "sitioWeb": "https://ecatepec.gob.mx/direccion-de-proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -7858,6 +7864,10 @@
    {
     "nombre": "ecatepec.gob.mx — 9,513 servicios 2025",
     "url": "https://ecatepec.gob.mx/proteccion-civil-y-bomberos-de-ecatepec-brindo-en-2025-casi-10-mil-servicios/"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7882,7 +7892,6 @@
    "lng": -99.0851411,
    "precision": "exacta"
   },
-  "telefono": "(55) 5715-5137",
   "sitioWeb": "https://ecatepec.gob.mx/direccion-de-proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -8030,9 +8039,6 @@
    "precision": "exacta"
   },
   "telefono": "(711) 125-0475",
-  "telefonosAdicionales": [
-   "(711) 125-0866"
-  ],
   "sitioWeb": "https://www.eloromexico.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8051,6 +8057,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2460456"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8075,9 +8085,6 @@
    "precision": "exacta"
   },
   "telefono": "(55) 5974-4848",
-  "telefonosAdicionales": [
-   "(597) 436-2100"
-  ],
   "sitioWeb": "https://www.ixtapaluca.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8097,6 +8104,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2122876"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8381,7 +8392,6 @@
    "lng": -99.2205485,
    "precision": "exacta"
   },
-  "telefono": "(55) 5560-3868",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -8543,7 +8553,6 @@
    "lng": -99.06381653,
    "precision": "exacta"
   },
-  "telefono": "(55) 3735-8758",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -8603,6 +8612,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2000258"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8637,6 +8650,10 @@
    {
     "nombre": "sanfelipedelprogreso.gob.mx — PC y Bomberos",
     "url": "https://sanfelipedelprogreso.gob.mx/remuvid-direccion-municipal-de-proteccion-civil-y-bomberos/"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -8761,6 +8778,10 @@
    {
     "nombre": "Directorio CGPC EDOMEX 2024",
     "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -8885,7 +8906,6 @@
   "telefonosAdicionales": [
    "(595) 954-2285"
   ],
-  "sitioWeb": "https://www.texcocoedomex.gob.mx",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -8895,7 +8915,7 @@
   "fuentes": [
    {
     "nombre": "texcocoedomex.gob.mx — PC y Bomberos",
-    "url": "https://www.texcocoedomex.gob.mx"
+    "retirada": "https://www.texcocoedomex.gob.mx"
    },
    {
     "nombre": "contrapapel.mx — 40 años H. Cuerpo de Bomberos de Texcoco",
@@ -8908,6 +8928,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=8875958"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9120,6 +9144,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=8332972"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9170,6 +9198,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2002959"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9246,6 +9278,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=1997148"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9289,6 +9325,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2539538"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9440,9 +9480,6 @@
    "precision": "exacta"
   },
   "telefono": "(591) 918-3185",
-  "telefonosAdicionales": [
-   "(591) 911-4358"
-  ],
   "email": "proteccion.civil.bomberos@zumpango.gob.mx",
   "sitioWeb": "https://zumpango.gob.mx/documentos_bomberos.html",
   "servicios": [
@@ -9462,6 +9499,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2245929"
+   },
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil — CGPC Estado de México (junio 2025)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -15484,7 +15525,7 @@
    },
    {
     "nombre": "sspo.gob.mx",
-    "url": "https://www.sspo.gob.mx/?p=56881"
+    "retirada": "https://www.sspo.gob.mx/?p=56881"
    },
    {
     "nombre": "oaxaca.quadratin.com.mx",
@@ -15525,7 +15566,7 @@
   "fuentes": [
    {
     "nombre": "sspo.gob.mx",
-    "url": "https://www.sspo.gob.mx/?p=54203"
+    "retirada": "https://www.sspo.gob.mx/?p=54203"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -15619,7 +15660,6 @@
    "lng": -96.7266,
    "precision": "aproximada"
   },
-  "sitioWeb": "https://www.sspo.gob.mx/?page_id=204",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -15631,11 +15671,11 @@
   "fuentes": [
    {
     "nombre": "sspo.gob.mx",
-    "url": "https://www.sspo.gob.mx/?page_id=204"
+    "retirada": "https://www.sspo.gob.mx/?page_id=204"
    },
    {
     "nombre": "sspo.gob.mx",
-    "url": "https://www.sspo.gob.mx/?page_id=56644"
+    "retirada": "https://www.sspo.gob.mx/?page_id=56644"
    },
    {
     "nombre": "oaxaca.gob.mx",
@@ -15803,7 +15843,7 @@
    },
    {
     "nombre": "sspo.gob.mx",
-    "url": "https://www.sspo.gob.mx/?p=55977"
+    "retirada": "https://www.sspo.gob.mx/?p=55977"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -15951,7 +15991,7 @@
   "fuentes": [
    {
     "nombre": "sspo.gob.mx",
-    "url": "https://www.sspo.gob.mx/?p=55977"
+    "retirada": "https://www.sspo.gob.mx/?p=55977"
    },
    {
     "nombre": "oaxaca.quadratin.com.mx",
@@ -19683,7 +19723,7 @@
    "lng": -99.5154,
    "precision": "exacta"
   },
-  "telefono": "(867) 319-4319",
+  "telefono": "(867) 712-4635",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -19694,20 +19734,27 @@
   "fuentes": [
    {
     "nombre": "po.tamaulipas.gob.mx",
-    "url": "http://po.tamaulipas.gob.mx/wp-content/uploads/2024/03/020_Laredo_Bomberos.pdf"
+    "url": "https://po.tamaulipas.gob.mx/wp-content/uploads/2024/03/020_Laredo_Bomberos.pdf"
    },
    {
     "nombre": "tamaulipas.gob.mx",
-    "url": "https://www.tamaulipas.gob.mx/datosabiertos/datos_abiertos/proteccion-civil-y-bomberos-nuevo-laredo/"
+    "retirada": "https://www.tamaulipas.gob.mx/datosabiertos/datos_abiertos/proteccion-civil-y-bomberos-nuevo-laredo/"
    },
    {
     "nombre": "diariolaredo.com",
     "url": "https://diariolaredo.com/laredo-texas/entrenamiento-binacional-reune-a-bomberos-de-varias-ciudades-de-mexico-en-laredo/"
+   },
+   {
+    "nombre": "DIF Tamaulipas — Directorio de Unidades Municipales de Protección Civil",
+    "url": "https://www.diftamaulipas.gob.mx/wp-content/uploads/sites/88/2021/01/Directorio-Unidades-Municipales-de-PC.pdf"
    }
   ],
   "verificadoEl": "2026-06-25",
   "confianza": "alta",
-  "municipioSlug": "nuevo-laredo"
+  "municipioSlug": "nuevo-laredo",
+  "telefonosAdicionales": [
+   "(867) 712-2124"
+  ]
  },
  {
   "id": "tamps-12",
@@ -19977,19 +20024,19 @@
    },
    {
     "nombre": "coracyt.gob.mx",
-    "url": "https://coracyt.gob.mx/noticias/locales/9600-celebran-41-anos-de-servicio-del-heroico-cuerpo-de-bomberos-del-estado-de-tlaxcala"
+    "retirada": "https://coracyt.gob.mx/noticias/locales/9600-celebran-41-anos-de-servicio-del-heroico-cuerpo-de-bomberos-del-estado-de-tlaxcala"
    },
    {
     "nombre": "coracyt.gob.mx",
-    "url": "https://coracyt.gob.mx/noticias/titulares/4969-celebro-gobernadora-lorena-cuellar-40-aniversario-del-heroico-cuerpo-de-bomberos-de-tlaxcala"
+    "retirada": "https://coracyt.gob.mx/noticias/titulares/4969-celebro-gobernadora-lorena-cuellar-40-aniversario-del-heroico-cuerpo-de-bomberos-de-tlaxcala"
    },
    {
     "nombre": "comunicacion.tlaxcala.gob.mx",
-    "url": "https://comunicacion.tlaxcala.gob.mx/index.php?view=article&id=19289"
+    "retirada": "https://comunicacion.tlaxcala.gob.mx/index.php?view=article&id=19289"
    },
    {
     "nombre": "sma.tlaxcala.gob.mx",
-    "url": "https://sma.tlaxcala.gob.mx/fuego/pemf.pdf"
+    "retirada": "https://sma.tlaxcala.gob.mx/fuego/pemf.pdf"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -20101,7 +20148,7 @@
   "fuentes": [
    {
     "nombre": "coatzacoalcos.gob.mx",
-    "url": "https://www.coatzacoalcos.gob.mx/prensa/conmemoran-147-aniversario-del-heroico-cuerpo-de-bomberos/"
+    "retirada": "https://www.coatzacoalcos.gob.mx/prensa/conmemoran-147-aniversario-del-heroico-cuerpo-de-bomberos/"
    },
    {
     "nombre": "coatzacoalcos.gob.mx",
@@ -20109,11 +20156,15 @@
    },
    {
     "nombre": "coatzacoalcos.gob.mx",
-    "url": "https://www.coatzacoalcos.gob.mx/telefonos-de-emergencia/"
+    "retirada": "https://www.coatzacoalcos.gob.mx/telefonos-de-emergencia/"
    },
    {
     "nombre": "municipiosur.com",
     "url": "https://municipiosur.com/2024/04/09/jorge-garcia-cruz-comandante-de-los-bomberos-portenos-durante-el-periodo-de-vacaciones-de-semana-santa-la-unidad-de-bomberos-de-coatzacoalcos-atendio-150-incendios-de-pastizales/"
+   },
+   {
+    "nombre": "Fiscalía General del Estado de Veracruz — Directorio de teléfonos de emergencia",
+    "url": "https://ftp2.fiscaliaveracruz.gob.mx/WEB%20FGE/Directorios/emergencias/directorio-emergencias-fge.pdf"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -20362,7 +20413,6 @@
    "lng": -95.2107,
    "precision": "exacta"
   },
-  "telefono": "(294) 942-7948",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20666,13 +20716,12 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base Maxcanú",
-  "direccion": "Calle 17, Col. Maxcanu, C.P. 97800",
+  "direccion": "Calle 17, Col. Maxcanú, C.P. 97800",
   "coordenadas": {
    "lat": 20.58917328,
    "lng": -89.99388213,
    "precision": "exacta"
   },
-  "telefono": "(997) 9713-053",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20710,7 +20759,6 @@
    "lng": -89.29956917,
    "precision": "exacta"
   },
-  "telefono": "(991) 9151-967",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20742,7 +20790,7 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 1",
-  "direccion": "Calle 73 a, Col. Centro, C.P. 97000",
+  "direccion": "Calle 73-A, Col. Centro, C.P. 97000",
   "coordenadas": {
    "lat": 20.95826754,
    "lng": -89.62086634,
@@ -20785,7 +20833,7 @@
    "lng": -89.62544079,
    "precision": "exacta"
   },
-  "telefono": "(999) 9303-200",
+  "telefono": "(999) 930-3200",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20817,7 +20865,7 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 12",
-  "direccion": "Calle 6, Col. Manuel Avila Camacho, C.P. 97159",
+  "direccion": "Calle 6, Col. Manuel Ávila Camacho, C.P. 97159",
   "coordenadas": {
    "lat": 20.97799887,
    "lng": -89.58384552,
@@ -20928,7 +20976,7 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 4",
-  "direccion": "Calle 21, Col. Mexico Oriente, C.P. 97137",
+  "direccion": "Calle 21, Col. México Oriente, C.P. 97137",
   "coordenadas": {
    "lat": 21.00132591,
    "lng": -89.60500016,
@@ -20971,7 +21019,6 @@
    "lng": -89.64250137,
    "precision": "exacta"
   },
-  "telefono": "(999) 1956-599",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -21010,8 +21057,7 @@
   },
   "telefono": "(999) 924-9242",
   "telefonosAdicionales": [
-   "(999) 923-2971",
-   "116"
+   "(999) 923-2971"
   ],
   "servicios": [
    "incendios-estructurales",
@@ -21139,7 +21185,7 @@
    "lng": -89.66121149,
    "precision": "exacta"
   },
-  "telefono": "(969) 9350-130",
+  "telefono": "(969) 935-0130",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -21214,7 +21260,6 @@
    "lng": -89.55694136,
    "precision": "exacta"
   },
-  "telefono": "(999) 9203-718",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",

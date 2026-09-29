@@ -38,7 +38,7 @@ productos:
   - "/kits/kit-forestal/"
 ---
 
-El equipo de protección para combatiente forestal se selecciona para caminar, trabajar con herramientas, leer el terreno y responder a calor exterior durante muchas horas. El conjunto combina ropa de una capa, casco forestal, goggles, guantes, bota y, según la configuración, nuquera. Su objetivo no es copiar el equipo estructural, sino proteger sin añadir una carga térmica que perjudique la jornada.
+El equipo de protección para combatiente forestal se selecciona para caminar, trabajar con herramientas, leer el terreno y responder a calor exterior durante muchas horas. El conjunto combina ropa de una capa, [casco](/cascos/) forestal, goggles, guantes, bota y, según la configuración, nuquera. Su objetivo no es copiar el equipo estructural, sino proteger sin añadir una carga térmica que perjudique la jornada.
 
 Antes de elegir una pieza, define si la operación es línea de fuego, guardarraya, liquidación, apoyo exterior o incendio dentro de una estructura. El [traje forestal](/trajes/forestal/) corresponde al primer grupo; no autoriza ataque interior. La diferencia se explica también en [traje estructural o brigadista](/blog/traje-estructural-o-brigadista/), donde el riesgo y la familia de protección cambian la configuración completa.
 

@@ -63,7 +63,7 @@ export const DUO_FAMILIAS_B: Record<string, Record<string, Duo>> = {
       "Describe vidrio, lámina, fluidos, posturas y horario de la maniobra para comparar propuestas útiles. Pide la tela exterior y las capas declaradas, además de rodillas y cinta reflejante; así la compra responde al rescate vehicular real.",
     ],
     conjunto: [
-      "El traje de extricación se completa con guantes para corte, casco de rescate técnico, botas y protección ocular según la herramienta y la escena. En rescate vehicular, el conjunto debe permitir trabajar hincado y mantener visibles las zonas de alta visibilidad.",
+      'El traje de extricación se completa con guantes para corte, casco de rescate técnico, botas y protección ocular según la herramienta y la escena —por ejemplo, las <a href="/rescate/herramienta-hidraulica-de-rescate/">quijadas de la vida</a>—. En rescate vehicular, el conjunto debe permitir trabajar hincado y mantener visibles las zonas de alta visibilidad.',
       'Solicita cada interfaz en la misma partida para probar movilidad y cobertura antes de ordenar. Puedes revisar <a href="/cascos/">cascos para bombero</a> y <a href="/guantes/">guantes de bombero</a> cuando la operación exige lámpara, retención o destreza frente a vidrio.',
     ],
     marcas: [
@@ -81,7 +81,7 @@ export const DUO_FAMILIAS_B: Record<string, Record<string, Duo>> = {
   },
   hazmat: {
     cotiza: [
-      "Un traje Hazmat se cotiza como encapsulado nivel A, traje químico nivel B o C, overol desechable, botas químicas y guantes compatibles. Cada partida parte de la sustancia, concentración, talla, temperatura y método de unión con respiración y extremidades.",
+      'Un traje Hazmat se cotiza como encapsulado nivel A, traje químico nivel B o C, <a href="/trajes/hazmat/overol-quimico-desechable/">overol desechable</a>, botas químicas y <a href="/trajes/hazmat/guantes-quimicos/">guantes para químicos</a> compatibles. Cada partida parte de la sustancia, concentración, talla, temperatura y método de unión con respiración y extremidades.',
       "Envía por WhatsApp el agente, forma de contacto, duración y número de usuarios para solicitar compra por pieza o conjunto. La cotización formal puede separar barrera, botas, guantes y ERA, con ficha técnica y condiciones escritas por partida.",
     ],
     pedir: [

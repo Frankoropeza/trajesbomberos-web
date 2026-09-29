@@ -68,7 +68,7 @@ Cinco reglas que hacen la diferencia entre un pliego que protege y uno que solo 
 
 **Cita la norma vigente y su edición.** Hoy la referencia para conjunto estructural es la **NFPA 1970**, que consolidó a la NFPA 1971. Escribe "edición vigente" para no tener que modificar el pliego cada revisión, y define explícitamente si aceptas equipo certificado bajo la edición anterior. Si no lo defines, lo vas a discutir en la junta de aclaraciones.
 
-**Separa las partidas por pieza.** Chaquetón, pantalonera, casco, monja, botas, guantes. Un precio global impide comparar propuestas y complica la reposición futura.
+**Separa las partidas por pieza.** Chaquetón, pantalonera, [casco](/cascos/), monja, [botas](/botas/), guantes. Un precio global impide comparar propuestas y complica la reposición futura.
 
 **Pide fecha de fabricación como criterio de aceptación.** El reloj de la vida útil corre desde ahí. Sin esta cláusula puedes recibir, legalmente, equipo con dos años ya consumidos.
 

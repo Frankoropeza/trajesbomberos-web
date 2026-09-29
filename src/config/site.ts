@@ -239,8 +239,8 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     desc: 'Herramientas, sistemas y criterios para equipar operaciones de rescate.',
     h1: 'Herramientas y equipo de rescate para bomberos',
     lead: 'Guías para elegir herramientas de entrada, rescate, líneas de agua y sus componentes por operación, compatibilidad y condición de servicio.',
-    seoTitle: 'Herramientas y rescate para bomberos | México',
-    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada, rescate técnico, mangueras y kits con datos comparables en México.',
+    seoTitle: 'Herramientas y rescate para bomberos: guías de compra',
+    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada forzada, rescate técnico, mangueras y kits con datos comparables.',
     keywords: ['herramientas y rescate para bomberos', 'equipo de rescate', 'México'],
     guia: {
       titulo: 'Cómo comprar herramientas y equipo de rescate',
@@ -417,13 +417,13 @@ const equipo = [
 
 const rescate = [
   { title: 'Equipo de rescate', href: '/rescate/', img: '/images/catalogo/rescate/hero-rescate-800.avif', links: [
-    { label: 'Herramienta hidráulica de rescate', href: '/rescate/herramienta-hidraulica-de-rescate/' }, { label: 'Arnés de rescate', href: '/rescate/arnes-de-rescate/' }, { label: 'Cuerda de rescate', href: '/rescate/cuerda-de-rescate/' }, { label: 'Mosquetones de rescate', href: '/rescate/mosquetones-de-rescate/' },
+    { label: 'Quijadas de la vida (hidráulica)', href: '/rescate/herramienta-hidraulica-de-rescate/' }, { label: 'Arnés de rescate', href: '/rescate/arnes-de-rescate/' }, { label: 'Cuerda de rescate', href: '/rescate/cuerda-de-rescate/' }, { label: 'Mosquetones de rescate', href: '/rescate/mosquetones-de-rescate/' },
   ] },
   { title: 'Herramientas para bomberos', href: '/herramientas/', img: '/images/catalogo/herramientas/hero-herramientas-800.avif', links: [
     { label: 'Hacha de bombero', href: '/herramientas/hacha-de-bombero/' }, { label: 'Barra Halligan', href: '/herramientas/barra-halligan/' }, { label: 'Herramienta Pulaski', href: '/herramientas/pulaski/' }, { label: 'Bomba de mochila forestal', href: '/herramientas/bomba-de-mochila-forestal/' },
   ] },
   { title: 'Mangueras y accesorios', href: '/mangueras-y-accesorios/', img: '/images/catalogo/mangueras/hero-mangueras-800.avif', links: [
-    { label: 'Manguera de ataque', href: '/mangueras-y-accesorios/manguera-de-ataque/' }, { label: 'Pitón o boquilla', href: '/mangueras-y-accesorios/piton-boquilla/' }, { label: 'Llave para hidrante', href: '/mangueras-y-accesorios/llave-para-hidrante/' }, { label: 'Conexiones y adaptadores', href: '/mangueras-y-accesorios/conexiones-y-adaptadores/' },
+    { label: 'Manguera de ataque', href: '/mangueras-y-accesorios/manguera-de-ataque/' }, { label: 'Chiflón o pitón', href: '/mangueras-y-accesorios/piton-boquilla/' }, { label: 'Llave para hidrante', href: '/mangueras-y-accesorios/llave-para-hidrante/' }, { label: 'Conexiones y adaptadores', href: '/mangueras-y-accesorios/conexiones-y-adaptadores/' },
   ] },
   { title: 'Accesorios para bomberos', href: '/accesorios/', img: '/images/catalogo/accesorios/hero-accesorios-800.avif', links: [
     { label: 'Cámara térmica', href: '/accesorios/camara-termica/' }, { label: 'Linterna de bombero', href: '/accesorios/linterna-de-bombero/' }, { label: 'Lámpara de casco', href: '/accesorios/lampara-de-casco/' }, { label: 'Goggles para bombero', href: '/accesorios/goggles/' },

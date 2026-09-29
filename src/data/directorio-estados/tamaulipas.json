@@ -2,7 +2,7 @@
  "lead": "En Tamaulipas, el directorio registra 12 estaciones de bomberos en 8 municipios. Las fichas indican ubicación, corporación, clase de estación y fuente disponible para consultar bomberos en Tamaulipas con mayor claridad.",
  "descRight": [
   "El registro de Tamaulipas reúne 8 estaciones municipales, 3 aeroportuarias y 1 de PEMEX. No se clasifican centrales ni subestaciones en estas fichas; Ciudad Madero, Nuevo Laredo, Reynosa y Tampico aportan 2 estaciones cada uno, combinando atención local y especialidades puntuales.",
-  "Filtra el listado por municipio y usa el mapa para identificar la ubicación publicada. Hay teléfono únicamente cuando existe fuente. En una situación de emergencia se debe marcar 911; los números de las fichas están destinados a trámites, visitas, capacitación o donaciones, no al despacho urgente."
+  "Recorre el listado por municipio y usa el mapa para identificar la ubicación publicada. Hay teléfono únicamente cuando existe fuente. En una situación de emergencia se debe marcar 911; los números de las fichas están destinados a trámites, visitas, capacitación o donaciones, no al despacho urgente."
  ],
  "municipiosDuo": [
   "Ciudad Madero, Nuevo Laredo, Reynosa y Tampico concentran 2 registros cada uno. En esos municipios aparecen combinaciones de corporación municipal y atención aeroportuaria o industrial, por lo que conviene leer el nombre completo de cada ficha antes de contactarla.",

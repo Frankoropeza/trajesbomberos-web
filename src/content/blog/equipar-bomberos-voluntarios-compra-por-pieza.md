@@ -63,7 +63,7 @@ No uses la tabla para definir una secuencia automática. El análisis de riesgo 
 
 ## Kits como punto de partida, no como promesa universal
 
-Los [kits de equipo para bombero](/kits/) ayudan a ordenar piezas que deben trabajar juntas. El [kit estructural](/kits/kit-estructural/) permite enumerar traje, casco, capucha, guantes y botas para la operación definida; el ERA se revisa por separado cuando la atmósfera lo exige. El [kit brigadista](/kits/kit-brigadista/) se selecciona conforme al riesgo del centro de trabajo y no presume capacidad de ataque interior.
+Los [kits de equipo para bombero](/kits/) ayudan a ordenar piezas que deben trabajar juntas. El [kit estructural](/kits/kit-estructural/) permite enumerar traje, casco, capucha, guantes y [botas](/botas/) para la operación definida; el ERA se revisa por separado cuando la atmósfera lo exige. El [kit brigadista](/kits/kit-brigadista/) se selecciona conforme al riesgo del centro de trabajo y no presume capacidad de ataque interior.
 
 El [kit forestal](/kits/kit-forestal/) integra ropa, casco, goggles, guantes, bota y nuquera para línea de fuego y terreno exterior. Ningún kit elimina la prueba de talla ni convierte todas las salidas en el mismo escenario. Antes de ordenar, desglosa código, modelo, talla, accesorio, color cuando aplique y documentación disponible de cada componente. Así puedes comparar partidas con el mismo alcance real.
 

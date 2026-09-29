@@ -10,7 +10,7 @@ ancla: "Equipo de rescate vertical"
 categoria: "herramientas-rescate"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Rescate vertical: arnés y cuerda | México"
+seoTitle: "Rescate vertical: equipo, arnés, cuerda y conectores"
 description: "Rescate vertical: selecciona arnés de rescate, cuerda, mosquetones y kit por compatibilidad, inspección, registro y almacenamiento."
 keywords: ["rescate vertical", "arnés de rescate", "México"]
 imagen: "/images/blog/equipo-de-rescate-vertical.avif"

@@ -103,7 +103,7 @@ const FAMILIA_TILE: Record<string, FamiliaTile> = {
   aproximacion: { cta: 'Trajes aluminizados de aproximación', subs: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']] },
   entrada: { cta: 'Trajes de entrada a la flama', subs: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']] },
   extricacion: { cta: 'Trajes de extricación y rescate', subs: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']] },
-  hazmat: { cta: 'Trajes Hazmat nivel A, B y C', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']] },
+  hazmat: { cta: 'Trajes Hazmat nivel A, B y C', subs: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes para químicos', 'guantes-quimicos']] },
 };
 const subsFamilia = (slug: string) =>
   soloValidas((FAMILIA_TILE[slug]?.subs ?? []).map(([label, pieza]) => ({ label, href: `/trajes/${slug}/${pieza}/` })));
