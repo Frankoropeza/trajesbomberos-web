@@ -10,11 +10,11 @@
  ],
  "estacionesDuo": [
   "Cada ficha identifica si se trata de una unidad municipal, voluntaria, estatal o de instalación especializada, así como su rol de subestación o sede única. Por ejemplo, aparecen el H. Cuerpo de Bomberos Voluntarios de Colima y la Dirección Municipal de Protección Civil y Bomberos de Manzanillo.",
-  "Revisa la dirección y el teléfono solo cuando la ficha los muestra con fuente, y usa el mapa para distinguir una ubicación exacta de una aproximada. En el directorio de bomberos en Colima hay 13 fichas con dirección, 14 con teléfono y 8 con ubicación exacta; esos campos facilitan una consulta informada."
+  "Revisa la dirección y el teléfono solo cuando la ficha los muestra con fuente, y usa el mapa para distinguir una ubicación exacta de una aproximada. En el directorio de bomberos en Colima hay 13 fichas con dirección, 10 con teléfono y 8 con ubicación exacta; esos campos facilitan una consulta informada."
  ],
  "coberturaDuo": [
   "Los incendios estructurales figuran en 16 fichas y protección civil en 8, por lo que son los servicios más repetidos en el registro. También se declaran rescate vehicular y atención prehospitalaria en 5 casos, además de incendios forestales y materiales peligrosos en 4.",
-  "De las 18 estaciones registradas, 14 incluyen teléfono, 13 dirección y 8 una ubicación exacta. Estas diferencias reflejan la información pública localizada para cada corporación. La sección de cifras ayuda a comparar campos disponibles sin convertirlos en una valoración operativa de los bomberos de Colima."
+  "De las 18 estaciones registradas, 10 incluyen teléfono, 13 dirección y 8 una ubicación exacta. Estas diferencias reflejan la información pública localizada para cada corporación. La sección de cifras ayuda a comparar campos disponibles sin convertirlos en una valoración operativa de los bomberos de Colima."
  ],
  "equipoDuo": [
   "La presencia de incendios estructurales, forestales, rescate vehicular y materiales peligrosos orienta una selección por escenario. Para atención de fuego estructural se pueden revisar <a href=\"/trajes/estructural/\">trajes estructurales</a>; para vegetación, <a href=\"/trajes/forestal/\">trajes forestales</a>; y para sustancias, <a href=\"/trajes/hazmat/\">equipo Hazmat</a>.",

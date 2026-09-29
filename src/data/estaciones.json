@@ -4916,7 +4916,6 @@
    "lng": -102.066391,
    "precision": "aproximada"
   },
-  "telefono": "(866) 163-9457",
   "servicios": [
    "incendios-estructurales",
    "proteccion-civil"
@@ -4977,7 +4976,6 @@
    "lng": -101.4497,
    "precision": "exacta"
   },
-  "telefono": "(866) 634-2990",
   "servicios": [
    "incendios-estructurales",
    "atencion-prehospitalaria"
@@ -5200,7 +5198,6 @@
    "lng": -101.593899,
    "precision": "exacta"
   },
-  "telefono": "(866) 234-3480",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -5351,7 +5348,6 @@
    "lng": -102.181835,
    "precision": "aproximada"
   },
-  "telefono": "(842) 422-4500",
   "sitioWeb": "https://parras.gob.mx/gaceta/bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -5450,7 +5446,6 @@
    "lng": -100.9401493,
    "precision": "exacta"
   },
-  "telefono": "(844) 488-6981",
   "servicios": [
    "incendios-estructurales",
    "atencion-prehospitalaria"
@@ -5512,7 +5507,6 @@
    "lng": -101.1167,
    "precision": "aproximada"
   },
-  "telefono": "(861) 612-3535",
   "servicios": [
    "incendios-estructurales",
    "rescate-acuatico",
@@ -5679,7 +5673,6 @@
    "lng": -101.533221,
    "precision": "exacta"
   },
-  "telefono": "(866) 131-0412",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -6071,11 +6064,6 @@
    "lng": -103.9656,
    "precision": "exacta"
   },
-  "telefono": "(313) 326-6261",
-  "telefonosAdicionales": [
-   "(313) 322-2663",
-   "(313) 108-2199"
-  ],
   "servicios": [
    "incendios-estructurales",
    "incendios-vehiculares",
@@ -6261,7 +6249,6 @@
    "lng": -103.8092,
    "precision": "exacta"
   },
-  "telefono": "(312) 223-6163",
   "email": "proteccioncivil@coquimatlan.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -6484,7 +6471,6 @@
    "lng": -104.3389,
    "precision": "aproximada"
   },
-  "telefono": "(314) 331-1400",
   "sitioWeb": "https://www.puertomanzanillo.com.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -6525,10 +6511,6 @@
    "precision": "exacta"
   },
   "telefono": "(314) 336-7300",
-  "telefonosAdicionales": [
-   "(314) 336-6707",
-   "(314) 118-9476"
-  ],
   "email": "proteccioncivil@manzanillo.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -6677,10 +6659,6 @@
    "precision": "aproximada"
   },
   "telefono": "(313) 324-0215",
-  "telefonosAdicionales": [
-   "(313) 324-1015",
-   "(313) 113-7381"
-  ],
   "servicios": [
    "proteccion-civil",
    "capacitacion"
@@ -6715,7 +6693,6 @@
    "lng": -103.7383,
    "precision": "aproximada"
   },
-  "telefono": "(312) 316-2729",
   "email": "umpc_villadealvarez2012@hotmail.com",
   "servicios": [
    "incendios-estructurales"
