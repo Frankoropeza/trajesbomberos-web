@@ -12716,7 +12716,6 @@
    "lng": -101.19247262,
    "precision": "exacta"
   },
-  "telefono": "(443) 3225-502",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -12863,7 +12862,6 @@
    "lng": -101.22848101,
    "precision": "exacta"
   },
-  "telefono": "(443) 322-5506",
   "sitioWeb": "https://www.morelia.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -12887,7 +12885,7 @@
    },
    {
     "nombre": "morelia.gob.mx — referencia de actividad",
-    "url": "https://www.morelia.gob.mx/saldo-blanco-tras-sismo-proteccion-civil-y-bomberos-de-morelia/"
+    "retirada": "https://www.morelia.gob.mx/saldo-blanco-tras-sismo-proteccion-civil-y-bomberos-de-morelia/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -13084,7 +13082,6 @@
    "lng": -102.07156305,
    "precision": "exacta"
   },
-  "telefono": "(452) 5241-494",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -13161,7 +13158,6 @@
    "lng": -101.7956398,
    "precision": "exacta"
   },
-  "telefono": "(436) 3630-911",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -13280,9 +13276,6 @@
    "precision": "exacta"
   },
   "telefono": "(715) 153-8742",
-  "telefonosAdicionales": [
-   "(715) 121-4115"
-  ],
   "sitioWeb": "https://www.zitacuaro.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -13411,11 +13404,6 @@
    "precision": "aproximada"
   },
   "telefono": "(777) 100-0515",
-  "telefonosAdicionales": [
-   "(777) 100-0517",
-   "(777) 314-4186",
-   "(777) 312-1683"
-  ],
   "email": "proteccion.civil@morelos.gob.mx",
   "sitioWeb": "https://proteccioncivil.morelos.gob.mx",
   "servicios": [
@@ -13530,7 +13518,7 @@
    },
    {
     "nombre": "dir.morelos.gob.mx",
-    "url": "https://dir.morelos.gob.mx/iframe/funcionario/1435"
+    "url": "https://zapatamorelos.gob.mx/atencion-ciudadana/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13554,12 +13542,7 @@
    "lng": -99.1589,
    "precision": "exacta"
   },
-  "telefono": "(777) 320-5054",
-  "telefonosAdicionales": [
-   "(777) 319-3866",
-   "(777) 319-3746"
-  ],
-  "sitioWeb": "http://www.procivac.com",
+  "sitioWeb": "https://grupoprocivac.com/ccec/",
   "servicios": [
    "incendios-estructurales",
    "espacios-confinados",
@@ -13574,6 +13557,10 @@
    {
     "nombre": "expansion.mx",
     "url": "https://expansion.mx/empresas/2026/03/27/nissan-cierra-historica-planta-civac-en-morelos-tras-60-anos"
+   },
+   {
+    "nombre": "PROCIVAC — Centro Control de Emergencias CIVAC",
+    "url": "https://grupoprocivac.com/ccec/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13605,7 +13592,7 @@
   "fuentes": [
    {
     "nombre": "marcojuridico.morelos.gob.mx",
-    "url": "http://marcojuridico.morelos.gob.mx/archivos/reglamentos_municipales/pdf/REGPCIVILBOMJIUTE24.pdf"
+    "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=4309"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13668,7 +13655,6 @@
    "lng": -99.1827,
    "precision": "aproximada"
   },
-  "telefono": "(734) 342-3400",
   "sitioWeb": "https://jojutla.gob.mx/specialists/proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -13771,7 +13757,7 @@
    },
    {
     "nombre": "marcojuridico.morelos.gob.mx",
-    "url": "http://marcojuridico.morelos.gob.mx/archivos/reglamentos_municipales/pdf/RINTDPTOBOMBEROSTEMIXMO.pdf"
+    "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=4105"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13794,7 +13780,6 @@
    "lng": -99.0968,
    "precision": "aproximada"
   },
-  "telefono": "(739) 395-2412",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -13804,7 +13789,7 @@
   "fuentes": [
    {
     "nombre": "marcojuridico.morelos.gob.mx",
-    "url": "http://marcojuridico.morelos.gob.mx/archivos/reglamentos_municipales/pdf/RPROTCIVTZMO.pdf"
+    "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=3824"
    },
    {
     "nombre": "jornada.com.mx",
@@ -13848,7 +13833,15 @@
    },
    {
     "nombre": "diariodemorelos.com",
-    "url": "https://diariodemorelos.com"
+    "retirada": "https://diariodemorelos.com"
+   },
+   {
+    "nombre": "Central Municipal — Xochitepec celebra a su cuerpo de bomberos",
+    "url": "https://centralmunicipal.mx/municipios/2026/08/26/xochitepec-celebra-a-su-cuerpo-de-bomberos-destaca-su-labor-24-7/"
+   },
+   {
+    "nombre": "Diario de Morelos — Xochitepec refuerza Protección Civil",
+    "url": "https://www.diariodemorelos.com/noticias/xochitepec-refuerza-proteccion-civil-albergues-temporada-lluvias"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13872,10 +13865,7 @@
    "lng": -99.0716,
    "precision": "exacta"
   },
-  "telefono": "(735) 394-0088",
-  "telefonosAdicionales": [
-   "(735) 394-2832"
-  ],
+  "telefono": "(735) 394-2832",
   "email": "procivil.yautepec@gmail.com",
   "servicios": [
    "incendios-estructurales",
@@ -13892,6 +13882,10 @@
    {
     "nombre": "conurbados.com",
     "url": "https://conurbados.com/2023/08/24/reconocen-a-bomberos-yautepec-como-uno-de-los-mejores-de-morelos/"
+   },
+   {
+    "nombre": "Ayuntamiento de Yautepec — Directorio de servidores públicos (transparencia)",
+    "url": "https://transparenciamorelos.mx/sites/default/files/DIRECTORIO_PUBLICADO_0.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -14048,7 +14042,6 @@
    "lng": -104.8995,
    "precision": "aproximada"
   },
-  "telefono": "(327) 277-2280",
   "sitioWeb": "https://compostela.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -14088,7 +14081,6 @@
    "lng": -105.2905,
    "precision": "exacta"
   },
-  "telefono": "(323) 285-0079",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -14130,8 +14122,6 @@
    "lng": -104.843,
    "precision": "aproximada"
   },
-  "telefono": "(311) 214-1850",
-  "sitioWeb": "https://www.asa.gob.mx/es/ASA/TEPIC",
   "servicios": [
    "incendios-estructurales",
    "hazmat",
@@ -14234,10 +14224,6 @@
    "lng": -104.8952,
    "precision": "aproximada"
   },
-  "telefono": "(311) 213-1607",
-  "telefonosAdicionales": [
-   "(311) 213-1809"
-  ],
   "sitioWeb": "https://www.tepic.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -14287,7 +14273,6 @@
    "lng": -100.18200366,
    "precision": "exacta"
   },
-  "telefono": "(81) 8386-2061",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -14363,7 +14348,6 @@
    "lng": -100.1068,
    "precision": "exacta"
   },
-  "telefono": "(81) 8288-7700",
   "sitioWeb": "https://www.oma.aero",
   "servicios": [
    "incendios-estructurales",
@@ -14533,7 +14517,6 @@
    "lng": -100.45570129,
    "precision": "exacta"
   },
-  "telefono": "(81) 1765-4785",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -14648,7 +14631,6 @@
    "lng": -100.29641905,
    "precision": "exacta"
   },
-  "telefono": "(81) 1588-9412",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -14687,7 +14669,6 @@
    "lng": -100.22031692,
    "precision": "exacta"
   },
-  "telefono": "(81) 4040-0022",
   "sitioWeb": "https://guadalupe.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -14850,7 +14831,6 @@
    "lng": -100.1194,
    "precision": "aproximada"
   },
-  "telefono": "(81) 1771-2070",
   "sitioWeb": "https://juarez-nl.gob.mx/direccion-proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -14971,7 +14951,6 @@
    "lng": -100.34793476,
    "precision": "exacta"
   },
-  "telefono": "(81) 8342-0555",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -15010,7 +14989,6 @@
    "lng": -100.38416931,
    "precision": "exacta"
   },
-  "telefono": "(81) 8342-0053",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -15178,7 +15156,6 @@
    "lng": -100.1824,
    "precision": "aproximada"
   },
-  "telefono": "(824) 242-0925",
   "sitioWeb": "https://sabinashidalgo.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -15216,7 +15193,6 @@
    "lng": -100.2962,
    "precision": "aproximada"
   },
-  "telefono": "(81) 8350-6810",
   "sitioWeb": "https://sanicolas.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -15258,7 +15234,6 @@
    "lng": -100.36545301,
    "precision": "exacta"
   },
-  "telefono": "(81) 8378-3968",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -15335,7 +15310,6 @@
    "lng": -100.32563737,
    "precision": "exacta"
   },
-  "telefono": "(81) 1765-9829",
   "sitioWeb": "https://bomberosdenuevoleon.org",
   "servicios": [
    "incendios-estructurales",
@@ -15372,7 +15346,6 @@
    "lng": -100.1485,
    "precision": "aproximada"
   },
-  "telefono": "(81) 1246-0010",
   "sitioWeb": "https://www.santiago.gob.mx",
   "servicios": [
    "incendios-estructurales",

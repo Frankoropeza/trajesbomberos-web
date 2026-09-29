@@ -72,7 +72,7 @@ const componentesKit = isTipo && seccion.slug === 'kits' ? {
 //  · modelo de traje: la keyword de familia primero y el modelo como accent
 //    («Traje de bombero estructural» + «Romak Fire Protector»); sin «·» dentro del H1
 //  · otro modelo: el segmento del title si trae keyword; si no, nombre + tipo «para bombero»
-const KW_FAMILIA: Record<string, string> = { estructural: 'traje de bombero estructural', brigadista: 'traje de bombero brigadista', forestal: 'traje de bombero forestal', aproximacion: 'traje de bombero de aproximación', entrada: 'traje de bombero de entrada', extricacion: 'traje de bombero de extricación', hazmat: 'traje hazmat para bombero' };
+const KW_FAMILIA: Record<string, string> = { estructural: 'traje de bombero estructural', brigadista: 'traje de bombero brigadista', forestal: 'traje de bombero forestal', aproximacion: 'traje aluminizado de aproximación', entrada: 'traje de bombero de entrada', extricacion: 'traje de bombero de extricación', hazmat: 'traje hazmat para bombero' };
 const kwFamilia = familiaModelo ? KW_FAMILIA[familiaModelo.slug] : undefined;
 const tipoDeModelo = !isTipo && modelo.tipo ? tiposDeSeccion(seccion.slug).find((item) => item.slug === modelo.tipo) : undefined;
 const capitalizar = (texto: string) => texto.charAt(0).toUpperCase() + texto.slice(1);
@@ -89,7 +89,15 @@ if (isTipo) {
   }
 } else if (kwFamilia) {
   h1Ficha = capitalizar(kwFamilia);
-  h1Accent = nombre;
+  // Tanda de metas: evita «Romak Fire Fire Ranger…», «Sköld Brigadista Defender» bajo
+  // «Traje de bombero brigadista» y el nombre genérico «Saco y pantalón forestal».
+  const H1_MODELO: Record<string, string> = {
+    'romak-fire-ranger-explorer': 'Romak Fire Ranger Explorer BOMW1001',
+    'romak-fire-ranger-scout': 'Romak Fire Ranger Scout',
+    'romak-bomw1002': 'Romak Fire BOMW1002 de saco y pantalón',
+    'skold-brigadista-defender': 'Sköld Defender',
+  };
+  h1Accent = H1_MODELO[modelo.id] ?? nombre;
 } else {
   const s1 = segmentoTitle(tituloModelo);
   if (llevaKeyword(s1)) h1Ficha = s1;
