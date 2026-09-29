@@ -6,6 +6,7 @@ import FAQWithContact from '@components/FAQWithContact.astro';
 import NormaBadge from '@components/NormaBadge.astro';
 import { SECCIONES } from '@lib/catalogo/secciones';
 import { duoSeccion } from '@lib/titulos';
+import ModelosGrid from '@components/ModelosGrid.astro';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeSeccion, urlModelo } from '@lib/catalogo/modelos';
 
@@ -55,7 +56,7 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
     </section>}
     {modelos.length > 0 && <section class="block" id="modelos">
       <SectionHeading eyebrow="Disponibles para cotizar" title={etiquetas?.modelosTitulo ?? `Modelos de ${seccion.nombre.toLowerCase()} publicados`} description={etiquetas?.modelosDescripcion} duo={duoSeccion(seccion.slug, 'modelos')} />
-      <div class="cards cards--models">{modelos.map((modelo) => <article class="card model"><img src={modelo.imagen?.src} alt={modelo.imagen?.alt} width={modelo.imagen?.width} height={modelo.imagen?.height} loading="lazy" /><div><h2>{modelo.marca} {modelo.nombre}</h2><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /><p>{modelo.caracteristicas.slice(0, 2).join('. ')}.</p><a href={urlModelo(modelo)}>Ver ficha del modelo →</a></div></article>)}</div>
+      <ModelosGrid modelos={modelos} />
     </section>}
     <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title="Respuestas antes de elegir" duo={duoSeccion(seccion.slug, 'faq')} /><FAQWithContact items={seccion.faq} /></section>
   </div></div>

@@ -15,12 +15,20 @@ export interface TileProps {
   alt: string;
   pos?: string; // object-position de la foto (retrato vs. paisaje)
   subs: TileSub[];
+  /** Foto de producto sobre fondo blanco: se muestra completa (contain) en vez de recortada. */
+  fit?: 'cover' | 'contain';
+  /** Estatus normativo del modelo (franja superior de la imagen). */
+  estado?: { label: string; tone: 'good' | 'warn' | 'neutral' };
+  /** Aviso sobre la imagen (p. ej. «Imagen ilustrativa»). */
+  nota?: string;
 }
-const { codigo, titulo, desc, href, cta, img, alt, pos, subs } = Astro.props as TileProps;
+const { codigo, titulo, desc, href, cta, img, alt, pos, subs, fit = 'cover', estado, nota } = Astro.props as TileProps;
 ---
 <li class="ct">
-  <a class="ct__media" href={href} tabindex="-1" aria-hidden="true">
+  <a class:list={['ct__media', { 'ct__media--contain': fit === 'contain' }]} href={href} tabindex="-1" aria-hidden="true">
     <img src={img} alt={alt} style={pos ? `object-position:${pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
+    {estado && <span class={`ct__estado ct__estado--${estado.tone}`}>{estado.label}</span>}
+    {nota && <span class="ct__nota">{nota}</span>}
     <span class="ct__code">{codigo}</span>
   </a>
   <div class="ct__body">
@@ -67,6 +75,37 @@ const { codigo, titulo, desc, href, cta, img, alt, pos, subs } = Astro.props as 
     object-fit: cover;
     object-position: center 35%;
     display: block;
+  }
+  /* Fotos de producto sobre fondo blanco: completas, sin recorte */
+  .ct__media--contain { background: var(--color-white); }
+  .ct__media--contain img { object-fit: contain; padding: 2.2rem 0.5rem 0.4rem; box-sizing: border-box; }
+  .ct__estado {
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: 1;
+    padding: 0.3rem 0.6rem;
+    border-left: 3px solid currentColor;
+    background: rgb(255 255 255 / 0.96);
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .ct__estado--good { color: #176b3a; background: #e8f4ec; }
+  .ct__estado--warn { color: #805400; background: #fff2d6; }
+  .ct__estado--neutral { color: var(--color-gray); }
+  .ct__nota {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.3rem 0.55rem;
+    background: rgb(20 22 26 / 0.82);
+    color: var(--color-white);
+    font-size: 0.66rem;
+    font-weight: 700;
   }
   .ct__code {
     position: absolute;

@@ -21,6 +21,7 @@ import type { FamiliaDetalle } from '@lib/familias';
 import { heroDeFamilia } from '@lib/imagenes';
 import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
 import { duoFamilia } from '@lib/titulos';
+import ModelosGrid from '@components/ModelosGrid.astro';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -158,15 +159,7 @@ const pageIndex = [
         {modelos.length > 0 && (
           <section id="modelos" class="block">
             <SectionHeading eyebrow="Modelos" title="Modelos disponibles" description="Consulta la ficha de cada modelo antes de integrarlo a la partida." duo={duoFamilia(f.slug, 'modelos')} />
-            <div class="piezas-grid">
-              {modelos.map((modelo) => (
-                <a class="modelo-card" href={urlModelo(modelo)}>
-                  <img src={modelo.imagen?.src} alt={modelo.imagen?.alt} width={modelo.imagen?.width} height={modelo.imagen?.height} loading="lazy" />
-                  <p>{modelo.marca}</p><h3>{modelo.nombre}</h3>
-                  <NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} />
-                </a>
-              ))}
-            </div>
+            <ModelosGrid modelos={modelos} cols={3} />
           </section>
         )}
 
@@ -238,11 +231,6 @@ const pageIndex = [
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-grid);
   }
-  .modelo-card { display: block; overflow: hidden; padding-bottom: 1rem; border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; }
-  .modelo-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--color-light); }
-  .modelo-card p, .modelo-card h3, .modelo-card .norma-badge { margin-inline: 1rem; }
-  .modelo-card p { margin-top: 1rem; margin-bottom: .2rem; color: var(--color-gray); font-size: .78rem; font-weight: 800; text-transform: uppercase; }
-  .modelo-card h3 { margin-top: 0; margin-bottom: 0; font-size: 1rem; }
 
   .pedir {
     display: grid;

@@ -1,127 +1,36 @@
 ---
-// ModelosGrid: modelos reales de traje (Romak Fire, Sköld, Lakeland)
-// con foto de proveedor, familia y estatus normativo. Es la palanca
-// SEO del clúster «trajes de bomberos»: la SERP la ganan fichas de
-// modelo con foto real, y esta rejilla les da enlaces desde la home,
-// /trajes/ y las familias. Data-driven desde MODELOS (sección trajes).
-import NormaBadge from '@components/NormaBadge.astro';
-import { MODELOS, urlModelo } from '@lib/catalogo/modelos';
-import { FAMILIAS } from '@lib/familias';
+// ModelosGrid: modelos reales del catálogo con el diseño homologado del sitio
+// (TileGrid + TileCard: imagen 4:3, título, texto, 4 subcategorías, botón con
+// palabra clave). Es la palanca SEO del clúster «trajes de bomberos»: las fichas
+// de modelo con foto real son lo que gana la SERP. Data-driven desde MODELOS.
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard from '@components/home/TileCard.astro';
+import { MODELOS } from '@lib/catalogo/data';
+import { tileDeModelo } from '@lib/catalogo/tiles';
+import type { Modelo } from '@lib/catalogo/types';
 
 interface Props {
-  familia?: string;    // limitar a una familia
+  /** Lista explícita (tiene prioridad sobre los filtros). */
+  modelos?: Modelo[];
+  familia?: string;    // limitar a una familia de traje
+  seccion?: string;    // limitar a una sección del catálogo (por defecto: trajes)
   limit?: number;
   exclude?: string;    // id del modelo actual (no autoenlazar)
+  cols?: 3 | 4;        // 3 cuando la rejilla convive con un sidebar
 }
-const { familia, limit, exclude } = Astro.props as Props;
+const { modelos: lista, familia, seccion = 'trajes', limit, exclude, cols = 4 } = Astro.props as Props;
 
-const KW: Record<string, string> = {
-  estructural: 'Traje estructural',
-  brigadista: 'Traje de brigadista',
-  forestal: 'Traje forestal',
-  aproximacion: 'Traje de aproximación',
-  entrada: 'Traje de entrada',
-  extricacion: 'Traje de extricación',
-  hazmat: 'Traje hazmat',
-};
 const ORDEN = ['estructural', 'brigadista', 'forestal', 'aproximacion', 'entrada', 'extricacion', 'hazmat'];
-let modelos = MODELOS.filter((m) => m.seccion === 'trajes' && m.familia && m.id !== exclude);
-if (familia) modelos = modelos.filter((m) => m.familia === familia);
-modelos.sort((a, b) => ORDEN.indexOf(a.familia!) - ORDEN.indexOf(b.familia!));
+let modelos = lista ?? MODELOS.filter((m) => m.seccion === seccion && (seccion !== 'trajes' || m.familia));
+if (!lista) {
+  if (familia) modelos = modelos.filter((m) => m.familia === familia);
+  if (seccion === 'trajes') modelos = [...modelos].sort((a, b) => ORDEN.indexOf(a.familia!) - ORDEN.indexOf(b.familia!));
+}
+modelos = modelos.filter((m) => m.id !== exclude);
 if (limit) modelos = modelos.slice(0, limit);
-const familiaNombre = (slug: string) => FAMILIAS.find((f) => f.slug === slug)?.nombreWa ?? slug;
 ---
 {modelos.length > 0 && (
-  <ul class="modelos" aria-label="Modelos de traje disponibles">
-    {modelos.map((m) => (
-      <li class="modelo">
-        <a class="modelo__link" href={urlModelo(m)}>
-          <span class="modelo__media">
-            {m.imagen ? (
-              <img src={m.imagen.src} alt={m.imagen.alt} width={m.imagen.width} height={m.imagen.height} loading="lazy" decoding="async" />
-            ) : (
-              <span class="modelo__placeholder" role="img" aria-label={`Imagen pendiente de ${m.marca} ${m.nombre}`}>Imagen pendiente</span>
-            )}
-            {m.imagen?.origen === 'ia' && <span class="modelo__tag">Imagen ilustrativa</span>}
-          </span>
-          <span class="modelo__body">
-            <span class="modelo__familia">{KW[m.familia!] ?? familiaNombre(m.familia!)}</span>
-            <span class="modelo__nombre">{`${m.marca} ${m.nombre}`}</span>
-            {m.codigo && <span class="modelo__codigo">Código {m.codigo}</span>}
-            <NormaBadge estatus={m.estatusNorma} norma={m.norma} certificacion={m.certificacion} />
-          </span>
-        </a>
-      </li>
-    ))}
-  </ul>
+  <TileGrid {cols}>
+    {modelos.map((m) => <TileCard {...tileDeModelo(m)} />)}
+  </TileGrid>
 )}
-
-<style>
-  .modelos {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .modelo { min-width: 0; }
-  .modelo__link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: var(--color-white);
-    border: var(--border);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    color: var(--color-dark);
-    text-decoration: none;
-  }
-  .modelo__link:hover { border-color: rgb(200 16 46 / 0.55); box-shadow: var(--shadow); }
-  .modelo__link:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
-  .modelo__media {
-    position: relative;
-    display: block;
-    aspect-ratio: 4 / 5;
-    background: var(--color-light);
-    border-bottom: var(--border);
-    overflow: hidden;
-  }
-  .modelo__media img { width: 100%; height: 100%; object-fit: contain; display: block; }
-  .modelo__placeholder {
-    display: grid;
-    place-content: center;
-    height: 100%;
-    color: var(--color-gray);
-    font-size: 0.8rem;
-    font-weight: 700;
-    background: repeating-linear-gradient(45deg, var(--color-light) 0 12px, var(--color-gray-light) 12px 24px);
-  }
-  .modelo__tag {
-    position: absolute;
-    right: 0.5rem;
-    bottom: 0.5rem;
-    padding: 0.2rem 0.45rem;
-    background: rgb(20 22 26 / 0.8);
-    color: var(--color-white);
-    font-size: 0.66rem;
-    font-weight: 700;
-    border-radius: 2px;
-  }
-  .modelo__body { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.85rem 0.95rem 1rem; }
-  .modelo__familia {
-    color: var(--color-primary);
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-  }
-  .modelo__nombre { font: 800 1.05rem/1.15 var(--font-display); }
-  .modelo__codigo { color: var(--color-gray); font-size: 0.78rem; }
-  @media (max-width: 1023px) { .modelos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (max-width: 639px) {
-    .modelos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
-    .modelo__body { padding: 0.65rem 0.7rem 0.8rem; }
-    .modelo__nombre { font-size: 0.95rem; }
-  }
-</style>
