@@ -20716,13 +20716,12 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Base Maxcanú",
-  "direccion": "Calle 17, Col. Maxcanu, C.P. 97800",
+  "direccion": "Calle 17, Col. Maxcanú, C.P. 97800",
   "coordenadas": {
    "lat": 20.58917328,
    "lng": -89.99388213,
    "precision": "exacta"
   },
-  "telefono": "(997) 9713-053",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20760,7 +20759,6 @@
    "lng": -89.29956917,
    "precision": "exacta"
   },
-  "telefono": "(991) 9151-967",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20792,7 +20790,7 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 1",
-  "direccion": "Calle 73 a, Col. Centro, C.P. 97000",
+  "direccion": "Calle 73-A, Col. Centro, C.P. 97000",
   "coordenadas": {
    "lat": 20.95826754,
    "lng": -89.62086634,
@@ -20835,7 +20833,7 @@
    "lng": -89.62544079,
    "precision": "exacta"
   },
-  "telefono": "(999) 9303-200",
+  "telefono": "(999) 930-3200",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -20867,7 +20865,7 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 12",
-  "direccion": "Calle 6, Col. Manuel Avila Camacho, C.P. 97159",
+  "direccion": "Calle 6, Col. Manuel Ávila Camacho, C.P. 97159",
   "coordenadas": {
    "lat": 20.97799887,
    "lng": -89.58384552,
@@ -20978,7 +20976,7 @@
   "corporacion": "Dirección de Bomberos de Yucatán — SSP",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación 4",
-  "direccion": "Calle 21, Col. Mexico Oriente, C.P. 97137",
+  "direccion": "Calle 21, Col. México Oriente, C.P. 97137",
   "coordenadas": {
    "lat": 21.00132591,
    "lng": -89.60500016,
@@ -21021,7 +21019,6 @@
    "lng": -89.64250137,
    "precision": "exacta"
   },
-  "telefono": "(999) 1956-599",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -21060,8 +21057,7 @@
   },
   "telefono": "(999) 924-9242",
   "telefonosAdicionales": [
-   "(999) 923-2971",
-   "116"
+   "(999) 923-2971"
   ],
   "servicios": [
    "incendios-estructurales",
@@ -21189,7 +21185,7 @@
    "lng": -89.66121149,
    "precision": "exacta"
   },
-  "telefono": "(969) 9350-130",
+  "telefono": "(969) 935-0130",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -21264,7 +21260,6 @@
    "lng": -89.55694136,
    "precision": "exacta"
   },
-  "telefono": "(999) 9203-718",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
