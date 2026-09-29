@@ -166,7 +166,7 @@ const cta: CtaPreset = {
             eyebrow="Directorio telefónico"
             title={`Teléfonos de bomberos ${EN}`}
             duo={[
-              `El directorio publica el teléfono de ${est(conTel.length)} de las ${est(r.total)} de bomberos registradas ${EN}. Un número solo se incluye cuando una fuente pública lo respalda: portal oficial, corporación o DENUE del INEGI.`,
+              `${conTel.length === r.total ? (r.total === 1 ? `La única estación de bomberos registrada ${EN} tiene teléfono publicado` : `Las ${nf(r.total)} estaciones de bomberos registradas ${EN} tienen teléfono publicado`) : `El directorio publica el teléfono de ${nf(conTel.length)} de las ${est(r.total)} de bomberos registradas ${EN}`}. Un número solo se incluye cuando una fuente pública lo respalda: portal oficial, corporación o DENUE del INEGI.`,
               'Estos teléfonos sirven para trámites, visitas, capacitación, dictámenes o donaciones. En una emergencia marca al 911, que canaliza la llamada a la estación que corresponde. Cada nombre lleva a la ficha completa con dirección, fuente y ubicación en mapa.',
             ]}
           />

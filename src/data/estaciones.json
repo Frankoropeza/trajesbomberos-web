@@ -310,7 +310,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    },
    {
     "nombre": "municipiodeelllano.gob.mx",
@@ -538,7 +538,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    },
    {
     "nombre": "sanjosedegracia.gob.mx",
@@ -6138,7 +6138,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    },
    {
     "nombre": "armeria.gob.mx",
@@ -6364,7 +6364,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6400,7 +6400,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6586,7 +6586,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -6733,7 +6733,7 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "http://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
    },
    {
     "nombre": "tecoman.gob.mx",

@@ -1,11 +1,11 @@
 {
  "lead": "Encuentra 13 estaciones de bomberos en Aguascalientes, distribuidas en 11 municipios. Cada ficha reúne corporación, ubicación, datos de contacto cuando existe fuente pública y el nivel de precisión disponible para localizar el servicio.",
  "descRight": [
-  "La red registrada en Aguascalientes reúne 11 estaciones municipales, además de una estación estatal y una de aeropuerto. Aguascalientes concentra 3 fichas; los otros 10 municipios cuentan con una cada uno. No se registran centrales ni subestaciones en esta relación, por lo que las fichas se presentan como sedes únicas de su corporación.",
+  "La red registrada en Aguascalientes reúne 11 estaciones municipales, además de una estación estatal y una de aeropuerto. El municipio de Aguascalientes concentra 3 fichas; los otros 10 municipios cuentan con una cada uno. No se registran centrales ni subestaciones en esta relación, por lo que las fichas se presentan como sedes únicas de su corporación.",
   "Consulta el listado por municipio para ubicar bomberos en Aguascalientes y el resto del estado. Las fichas muestran teléfono cuando hay fuente, dirección y mapa con ubicación exacta o aproximada. Los contactos sirven para trámites, visitas, capacitación o donaciones; ante una emergencia, marca 911 de inmediato."
  ],
  "municipiosDuo": [
-  "Aguascalientes reúne 3 estaciones, la mayor concentración del directorio y un punto de partida para buscar bomberos en Aguascalientes. Asientos, Calvillo, Cosío, El Llano, Jesús María, Pabellón de Arteaga, Rincón de Romos, San Francisco de los Romo, San José de Gracia y Tepezalá registran una ficha cada uno.",
+  "El municipio de Aguascalientes reúne 3 estaciones, la mayor concentración del estado y el punto de partida para buscar bomberos en Aguascalientes. Asientos, Calvillo, Cosío, El Llano, Jesús María, Pabellón de Arteaga, Rincón de Romos, San Francisco de los Romo, San José de Gracia y Tepezalá registran una ficha cada uno.",
   "La cobertura registrada alcanza 11 municipios con 13 estaciones. Fuera del municipio de Aguascalientes, el directorio muestra una sede por municipio, útil para identificar la corporación local. La relación puede crecer al confirmarse nuevas estaciones con fuente pública, así que no debe interpretarse como un inventario total del estado."
  ],
  "estacionesDuo": [
@@ -27,7 +27,7 @@
   },
   {
    "q": "¿Qué municipios tienen más estaciones de bomberos en Aguascalientes?",
-   "a": "Aguascalientes concentra 3 fichas, mientras Asientos, Calvillo, Cosío, El Llano, Jesús María, Pabellón de Arteaga, Rincón de Romos, San Francisco de los Romo, San José de Gracia y Tepezalá tienen una cada uno. Para buscar bomberos en Aguascalientes, filtra por municipio y revisa corporación, dirección y precisión del mapa."
+   "a": "El municipio de Aguascalientes concentra 3 fichas, mientras Asientos, Calvillo, Cosío, El Llano, Jesús María, Pabellón de Arteaga, Rincón de Romos, San Francisco de los Romo, San José de Gracia y Tepezalá tienen una cada uno. Para buscar bomberos en Aguascalientes, entra al índice por municipio y revisa corporación, dirección y precisión del mapa."
   },
   {
    "q": "¿Quién opera las estaciones de bomberos en Aguascalientes?",
