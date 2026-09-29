@@ -10,6 +10,13 @@ meta: ["NOM-002-STPS-2010", "Riesgo ordinario o alto", "Selección de EPP", "Cap
 resumen: "Qué pide la NOM-002-STPS-2010 para una brigada contra incendio, cómo cambia el equipo con el riesgo del centro de trabajo y qué documentar antes de comprar."
 categoria: "normas"
 familia: "brigadista"
+productos:
+  - "/kits/kit-brigadista/"
+  - "/trajes/brigadista/"
+  - "/cascos/"
+  - "/equipo-de-respiracion-autonoma/era-industrial/"
+  - "/trajes/estructural/"
+  - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
 seoTitle: "NOM-002-STPS-2010: equipo para brigadas | México"
@@ -49,7 +56,7 @@ No establezcas este tipo de intervención por costumbre ni por la tardanza de ap
 
 La NOM-017-STPS-2008 aporta el criterio de selección de EPP desde el riesgo. En la práctica, la empresa debe identificar qué amenaza enfrenta cada puesto y entregar equipo adecuado sin costo, con información para su uso, revisión y reemplazo. Un inventario sin tallas ni responsables no demuestra que el usuario tenga una protección funcional.
 
-Para protección de cabeza, la NOM-115-STPS-2009 es una referencia de seguridad industrial que se revisa junto con la tarea. Para ojos y cara, el riesgo puede ser de partículas, salpicadura, calor o radiación, y por eso visor, goggles o lentes se definen desde la exposición. El [cascos para bombero](/cascos/) sirve para explorar configuraciones, pero no elimina la necesidad de revisar compatibilidad con capucha, máscara o protección ocular.
+Para protección de cabeza, la NOM-115-STPS-2009 es una referencia de seguridad industrial que se revisa junto con la tarea. Para ojos y cara, el riesgo puede ser de partículas, salpicadura, calor o radiación, y por eso visor, goggles o lentes se definen desde la exposición. La sección de [cascos para bombero](/cascos/) sirve para explorar configuraciones, pero no elimina la necesidad de revisar compatibilidad con capucha, máscara o protección ocular.
 
 ## Capacitación, simulacros y condición del equipo
 

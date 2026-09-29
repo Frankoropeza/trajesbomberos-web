@@ -44,11 +44,11 @@ const { pasos } = Astro.props;
   h3 { margin: 0 0 0.35rem; font-size: 1rem; color: var(--color-white); }
   p { margin: 0; font-size: 0.85rem; color: #b9bec5; line-height: 1.55; }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .steps-grid { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
     .step:nth-child(3n + 1) { border-left: 0; padding-left: 0; }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .steps-grid { grid-template-columns: repeat(2, 1fr); }
     .step:nth-child(odd) { border-left: 0; padding-left: 0; }
   }

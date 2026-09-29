@@ -57,8 +57,11 @@ const blog = defineCollection({
       'licitacion',
     ]),
     familia: z
-      .enum(['estructural', 'brigadista', 'forestal', 'aproximacion', 'entrada', 'extricacion'])
+      .enum([
+        'estructural', 'brigadista', 'forestal', 'aproximacion', 'entrada', 'extricacion', 'hazmat',
+      ])
       .optional(),                           // familia de traje relacionada
+    productos: z.array(z.string().regex(/^\/[a-z0-9\-\/]*\/$/)).default([]), // rutas del catálogo tratadas
 
     // --- fechas y autoría ---
     fecha: z.coerce.date(),

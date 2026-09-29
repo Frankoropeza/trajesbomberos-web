@@ -13,6 +13,15 @@ meta:
   - "Compra por uso y talla"
 resumen: "Qué incluye el uniforme de bombero, cómo se diferencia del equipo de protección y qué pedir para estación, brigada, ataque estructural o incendio forestal."
 categoria: "comparativas"
+productos:
+  - "/trajes/"
+  - "/trajes/estructural/"
+  - "/trajes/brigadista/"
+  - "/trajes/forestal/"
+  - "/botas/"
+  - "/guantes/"
+  - "/capuchas/"
+  - "/cascos/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
 seoTitle: "Uniforme de bombero: ropa y protección | México"
@@ -24,7 +33,7 @@ imagenAlt: "Uniformes y conjuntos de protección para bombero colgados en una es
 
 Cuando alguien pide un **uniforme de bombero**, puede estar hablando de cosas muy diferentes. A veces busca camisa, pantalón y emblemas para el turno en estación. Otras veces necesita un conjunto para una brigada industrial. También hay quien usa la misma frase para un equipo que entrará a un incendio estructural. Si se compra sin separar esos usos, el resultado puede ser una prenda incómoda para el día a día o, peor, una pieza que parece protección sin serlo.
 
-La forma útil de ordenar la conversación no es por color ni por fotografía, sino por exposición. La ropa de estación identifica al personal y sirve para actividades rutinarias. El equipo de protección personal se selecciona para un riesgo definido. Un [traje de bombero](/trajes/) reúne familias distintas; ninguna se vuelve intercambiable porque comparta una silueta o una cinta reflejante.
+La forma útil de ordenar la conversación no es por color ni por fotografía, sino por exposición. La ropa de estación identifica al personal y sirve para actividades rutinarias. El equipo de protección personal se selecciona para un riesgo definido. Un [traje de bombero](/trajes/) reúne familias distintas; ninguna se vuelve intercambiable porque comparta una silueta o una cinta reflejante. Si lo que necesitas es equipar a una persona para la emergencia, parte de la lista de [equipo de bombero completo](/blog/equipo-de-bombero-completo/) y de las [partes del traje de bombero](/blog/partes-del-traje-de-bombero/).
 
 ## Qué se entiende por uniforme de bombero en México
 

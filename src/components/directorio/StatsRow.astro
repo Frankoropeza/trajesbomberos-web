@@ -43,6 +43,6 @@ const { stats } = Astro.props as Props;
   }
   .sr__label { margin-top: 0.5rem; font-weight: 700; color: var(--color-dark); }
   .sr__note { margin-top: 0.15rem; font-size: 0.84rem; color: var(--color-gray); }
-  @media (max-width: 900px) { .sr { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
-  @media (max-width: 480px) { .sr__item { padding: 1rem; } }
+  @media (max-width: 1023px) { .sr { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
+  @media (max-width: 479px) { .sr__item { padding: 1rem; } }
 </style>

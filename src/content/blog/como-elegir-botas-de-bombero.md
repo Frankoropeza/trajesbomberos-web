@@ -9,6 +9,10 @@ descRight:
 meta: ["Bota de hule", "Bota de piel", "Talla mexicana", "Suela y puntera"]
 resumen: "Cómo elegir botas de bombero: diferencias entre hule y piel, talla mexicana, suela, puntera y datos que deben venir en la cotización."
 categoria: "especificacion"
+productos:
+  - "/botas/"
+  - "/trajes/estructural/"
+  - "/trajes/hazmat/botas-quimicas/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
 seoTitle: "Cómo elegir botas de bombero | guía | México"

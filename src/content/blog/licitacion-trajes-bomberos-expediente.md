@@ -13,6 +13,14 @@ meta:
   - "Junta de aclaraciones"
 resumen: "Qué documentos pide un pliego mexicano de equipo contra incendios, qué descalifica una propuesta y cómo armar el expediente técnico completo antes de la junta de aclaraciones."
 categoria: "licitacion"
+productos:
+  - "/trajes/"
+  - "/trajes/estructural/"
+  - "/trajes/estructural/chaqueton/"
+  - "/trajes/estructural/pantalonera/"
+  - "/cascos/"
+  - "/botas/"
+  - "/guantes/"
 fecha: 2026-06-09
 autor: "Equipo técnico LORICA"
 seoTitle: "Licitación de trajes para bomberos | expediente | México"

@@ -10,6 +10,11 @@ descRight:
 meta: ["ERA de combate", "ERA industrial", "Cilindro", "Mantenimiento"]
 resumen: "Cómo elegir equipo de respiración autónoma: combate o industrial, cilindros, máscaras, duración nominal, mantenimiento y criterios para una cotización comparable."
 categoria: "especificacion"
+productos:
+  - "/equipo-de-respiracion-autonoma/"
+  - "/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/"
+  - "/trajes/estructural/"
+  - "/trajes/hazmat/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
 seoTitle: "Cómo elegir equipo de respiración autónoma | México"

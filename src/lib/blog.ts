@@ -83,6 +83,33 @@ export async function getPostsByFamilia(familia: string | undefined, limit = 3):
   return [...propios, ...rotado].slice(0, limit);
 }
 
+/**
+ * Guías relacionadas con una ruta comercial, ordenadas por coincidencia exacta,
+ * jerarquía de ruta y familia de traje; completa con las publicaciones recientes.
+ */
+export async function guiasParaRuta(ruta: string, limite = 4): Promise<Post[]> {
+  const posts = await getPosts();
+  const rutaNormalizada = ruta.endsWith('/') ? ruta : `${ruta}/`;
+  const familia = rutaNormalizada.match(/^\/trajes\/([^/]+)\//)?.[1];
+  const puntaje = (post: Post) => {
+    const productos = post.data.productos;
+    const exacta = productos.includes(rutaNormalizada);
+    const relacionada = productos.some((producto) =>
+      producto !== rutaNormalizada &&
+      (rutaNormalizada.startsWith(producto) || producto.startsWith(rutaNormalizada))
+    );
+    return (exacta ? 3 : 0) + (relacionada ? 2 : 0) +
+      (familia && post.data.familia === familia ? 1 : 0);
+  };
+  const ordenadas = posts
+    .map((post, indice) => ({ post, indice, puntaje: puntaje(post) }))
+    .filter((item) => item.puntaje > 0)
+    .sort((a, b) => b.puntaje - a.puntaje || a.indice - b.indice)
+    .map((item) => item.post);
+  const relleno = posts.filter((post) => !ordenadas.includes(post));
+  return [...ordenadas, ...relleno].slice(0, limite);
+}
+
 /** Conteo por categoría, para el sidebar y el índice. */
 export async function categoriasConConteo() {
   const posts = await getPosts();

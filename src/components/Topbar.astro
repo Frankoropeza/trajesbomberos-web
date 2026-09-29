@@ -37,8 +37,16 @@ import { waUrl } from '@lib/wa';
   .topbar__contact { display: flex; gap: 1rem; align-items: center; flex-shrink: 0; }
   .topbar__contact a { color: var(--color-accent); text-decoration: none; font-weight: 600; }
   .topbar__contact a { white-space: nowrap; }
-  .topbar__corp { color: var(--color-light) !important; }
-  .topbar__corp:hover { color: var(--color-accent) !important; text-decoration: underline; }
+  .topbar__corp { color: var(--color-light); }
+  @media (hover: hover) {
+    .topbar__corp:hover { color: var(--color-accent); text-decoration: underline; }
+  }
   /* Bajo 1280 px el enlace corporativo vive en el cajón del menú. */
-  @media (max-width: 1279px) { .topbar__corp { display: none; } }
+  @media (max-width: 1279px) { .topbar__contact .topbar__corp { display: none; } }
+  @media (max-width: 639px) {
+    .topbar__extra,
+    .topbar__claim { display: none; }
+    .topbar__contact { width: 100%; justify-content: space-between; }
+    .topbar__contact a { display: inline-flex; align-items: center; min-height: 44px; }
+  }
 </style>

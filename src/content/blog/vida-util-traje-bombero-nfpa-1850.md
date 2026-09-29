@@ -14,6 +14,11 @@ meta:
 resumen: "Por qué el traje estructural se retira a los diez años de fabricado, qué régimen de inspección y lavado marca la NFPA 1850 y cómo llevar el registro sin volverlo un trámite imposible."
 categoria: "mantenimiento"
 familia: "estructural"
+productos:
+  - "/trajes/estructural/"
+  - "/trajes/estructural/chaqueton/"
+  - "/trajes/estructural/pantalonera/"
+  - "/trajes/extricacion/"
 fecha: 2026-06-16
 autor: "Equipo técnico LORICA"
 seoTitle: "Vida útil del traje de bombero | NFPA 1850 | México"

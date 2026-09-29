@@ -14,6 +14,11 @@ meta:
 resumen: "La NFPA 1970 consolidó cuatro normas —1971, 1975, 1981 y 1982— en un solo documento. Qué entró, qué se quedó fuera y cómo citarla en un pliego sin que te tumben la propuesta."
 categoria: "normas"
 familia: "estructural"
+productos:
+  - "/trajes/estructural/"
+  - "/trajes/forestal/"
+  - "/trajes/extricacion/"
+  - "/trajes/entrada/"
 fecha: 2026-07-07
 autor: "Equipo técnico LORICA"
 seoTitle: "NFPA 1970 | certificación de trajes | México"

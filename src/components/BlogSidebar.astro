@@ -288,7 +288,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
     padding-bottom: 0.55rem;
     border-bottom: var(--border);
     color: var(--color-gray-soft);
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
@@ -382,7 +382,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
   }
   .sb-posts small {
     color: var(--color-primary);
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
@@ -415,7 +415,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
   .sb-buyer > p {
     margin: 0;
     color: var(--color-gray-soft);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -507,8 +507,8 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
     line-height: 1.35;
   }
   .sb-toc a > span {
-    color: var(--color-gray-soft);
-    font-size: 0.68rem;
+    color: var(--color-gray);  /* 6:1 también sobre el fondo rosa del activo */
+    font-size: 0.75rem;
   }
   .sb-toc a:hover,
   .sb-toc a.is-reading {
@@ -516,7 +516,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
     background: var(--color-primary-light);
     color: var(--color-primary);
   }
-  @media (min-width: 1025px) {
+  @media (min-width: 1024px) {
     .sidebar--article {
       display: flex;
       flex-direction: column;
@@ -527,7 +527,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
       top: calc(var(--header-height) + 1.5rem);
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .sidebar {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -538,7 +538,7 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
       grid-column: 1 / -1;
     }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .sidebar {
       grid-template-columns: 1fr;
     }

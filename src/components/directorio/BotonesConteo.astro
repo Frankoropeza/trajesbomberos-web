@@ -65,9 +65,9 @@ const { items, label, cols = 6 } = Astro.props as Props;
   .bc__btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 
   @media (max-width: 1279px) { .bc { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-  @media (max-width: 1024px) { .bc, .bc--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (max-width: 768px) { .bc, .bc--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 640px) {
+  @media (max-width: 1023px) { .bc, .bc--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 767px) { .bc, .bc--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 639px) {
     .bc { gap: 0.5rem; }
     .bc__btn { min-height: 48px; font-size: 0.86rem; }
   }

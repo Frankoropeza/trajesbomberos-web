@@ -14,6 +14,10 @@ meta:
 resumen: "Qué mide el TPP, qué mide el THL, por qué van en direcciones opuestas y qué valores pedir en tu cotización para que dos ofertas sean realmente comparables."
 categoria: "especificacion"
 familia: "estructural"
+productos:
+  - "/trajes/estructural/"
+  - "/trajes/estructural/chaqueton/"
+  - "/trajes/estructural/pantalonera/"
 fecha: 2026-06-23
 autor: "Equipo técnico LORICA"
 seoTitle: "TPP y THL | traje estructural | México"
@@ -78,7 +82,7 @@ Depende de qué hace tu gente la mayor parte del tiempo:
 
 **2. Pedir los números de la tela y no del conjunto.** El TPP y el THL se miden sobre el **composite completo**, con las tres capas en su orden real. El dato de una capa suelta no es comparable ni sirve para nada.
 
-**3. Pedir valores altísimos "por si acaso".** Exigir un TPP muy por encima de la referencia sin justificarlo en el análisis de riesgo encarece la partida, reduce el número de licitantes que pueden cumplir y, de paso, te entrega trajes más pesados y menos transpirables. Más no siempre es mejor: es distinto.
+**3. Pedir valores altísimos "por si acaso".** Exigir un TPP muy por encima de la referencia sin justificarlo en el análisis de riesgo encarece la partida, reduce el número de licitantes que pueden cumplir y, de paso, te entrega trajes más pesados y menos transpirables. Más no siempre es mejor: es distinto. Para ver de dónde sale cada valor, revisa los [materiales del traje de bombero](/blog/materiales-del-traje-de-bombero/) capa por capa y [cuánto pesa un traje de bombero](/blog/cuanto-pesa-un-traje-de-bombero/) con cada configuración.
 
 ## Cómo pedirlo por escrito
 

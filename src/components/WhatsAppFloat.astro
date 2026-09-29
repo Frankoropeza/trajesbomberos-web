@@ -1,5 +1,5 @@
 ---
-// FAB de WhatsApp. 52px en móvil + safe-area (mobile.css → .wa-float).
+// FAB de WhatsApp. 56px en móvil + safe-area.
 // Regla D4: el enlace se genera con waUrl (SSoT CONTACT.whatsapp).
 import { WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
@@ -32,5 +32,20 @@ import { waUrl } from '@lib/wa';
     color: #fff;
     box-shadow: var(--shadow-lg);
   }
-  .wa-float:hover { background: var(--color-wa-dark); }
+  @media (hover: hover) {
+    .wa-float:hover {
+      background: var(--color-wa-dark);
+    }
+  }
+  @media (max-width: 767px) {
+    .wa-float {
+      width: 56px;
+      height: 56px;
+      bottom: max(1rem, env(safe-area-inset-bottom));
+      right: max(1rem, env(safe-area-inset-right));
+    }
+    :global(html.nav-open) .wa-float {
+      display: none;
+    }
+  }
 </style>

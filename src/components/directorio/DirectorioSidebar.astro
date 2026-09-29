@@ -170,7 +170,7 @@ const guias = (await getPosts())
   }
   .sb-title {
     margin: 0 0 0.75rem;
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
@@ -220,7 +220,7 @@ const guias = (await getPosts())
     background: var(--color-light);
     border: 1px solid var(--color-gray-light);
     color: var(--color-gray-soft);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-align: center;
   }
@@ -264,7 +264,7 @@ const guias = (await getPosts())
   .sb-posts a { display: grid; gap: 0.18rem; padding: 0.7rem 0; text-decoration: none; }
   .sb-posts li:first-child a { padding-top: 0; }
   .sb-posts li:last-child a { padding-bottom: 0; }
-  .sb-posts__cat { font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-primary); }
+  .sb-posts__cat { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-primary); }
   .sb-posts__title { color: var(--color-dark); font-size: 0.85rem; font-weight: 700; line-height: 1.35; }
   .sb-posts a:hover .sb-posts__title { color: var(--color-primary); }
 
@@ -318,13 +318,13 @@ const guias = (await getPosts())
   .sb-quote__horario { margin: 0.2rem 0 0; text-align: center; color: #8a9099; font-size: 0.76rem; }
 
   /* --- Responsive: debajo del listado, en rejilla, sin sticky ---- */
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .dsb { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .dsb__flow, .dsb__sticky { display: contents; }
     .sb-card--toc { display: none; }
     .sb-quote { grid-column: 1 / -1; }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .dsb { grid-template-columns: 1fr; }
   }
 </style>

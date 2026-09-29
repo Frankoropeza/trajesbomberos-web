@@ -30,7 +30,7 @@ const { titulo, marcas } = Astro.props;
   .brandgroup { margin-bottom: 2.5rem; }
   .brandgroup:last-child { margin-bottom: 0; }
   .brandgroup__title {
-    font-size: 0.74rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
@@ -56,7 +56,7 @@ const { titulo, marcas } = Astro.props;
   .brand__head { display: flex; flex-direction: column; margin-bottom: 0.3rem; }
   .brand__name { font-weight: 800; font-size: 0.98rem; letter-spacing: var(--tracking-tight); }
   .brand__origen {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: var(--color-primary);
@@ -64,17 +64,17 @@ const { titulo, marcas } = Astro.props;
   }
   .brand__nota { margin: 0; font-size: 0.82rem; color: var(--color-gray); line-height: 1.5; }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1279px) {
     .brandgrid { grid-template-columns: repeat(3, 1fr); }
     .brand:nth-child(5n + 1) { border-left: var(--border); padding-left: clamp(0.9rem, 1.6vw, 1.6rem); }
     .brand:nth-child(3n + 1) { border-left: 0; padding-left: 0; }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 767px) {
     .brandgrid { grid-template-columns: repeat(2, 1fr); }
     .brand:nth-child(3n + 1) { border-left: var(--border); padding-left: 1rem; }
     .brand:nth-child(odd) { border-left: 0; padding-left: 0; }
   }
-  @media (max-width: 460px) {
+  @media (max-width: 479px) {
     .brandgrid { grid-template-columns: 1fr; }
     .brand { border-left: 0 !important; padding-left: 0 !important; }
   }

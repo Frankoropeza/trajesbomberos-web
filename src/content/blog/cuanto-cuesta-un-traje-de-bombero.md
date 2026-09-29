@@ -13,6 +13,14 @@ meta:
   - "Costo por vida de servicio"
 resumen: "Qué determina el costo de un traje de bombero y qué debe incluir una cotización para comparar familias, materiales, certificación, tallas, accesorios y entrega."
 categoria: "especificacion"
+productos:
+  - "/trajes/"
+  - "/trajes/brigadista/"
+  - "/trajes/estructural/"
+  - "/cascos/"
+  - "/trajes/estructural/modelos/romak-protector/"
+  - "/trajes/estructural/modelos/skold-hero-nomex/"
+  - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
 seoTitle: "Cuánto cuesta un traje de bombero | México"
@@ -99,7 +107,7 @@ La comparación se vuelve clara cuando todas las respuestas contestan los mismos
 
 El error más común es decidir por fotografía. Una imagen no muestra la composición de capas, el estatus documental, la talla ni la configuración incluida. El segundo es elegir por monto entre familias distintas: comparar brigadista con estructural certificado no revela cuál oferta es mejor; revela que se está cotizando para escenarios diferentes.
 
-También es frecuente no revisar la fecha de fabricación. El plazo de vida de servicio comienza ahí, por lo que una pieza almacenada consume parte de su uso antes de ser entregada. Finalmente, una oferta sin ficha por partida impide detectar si cambió el composite, la talla, los accesorios o las condiciones de entrega. La cotización más útil no es la que tiene menos renglones, sino la que permite verificar qué se recibirá.
+También es frecuente no revisar la fecha de fabricación. El plazo de vida de servicio comienza ahí, por lo que una pieza almacenada consume parte de su uso antes de ser entregada. Finalmente, una oferta sin ficha por partida impide detectar si cambió el composite, la talla, los accesorios o las condiciones de entrega. La cotización más útil no es la que tiene menos renglones, sino la que permite verificar qué se recibirá. Si cotizas el conjunto y no sólo el traje, la lista de [equipo de bombero completo](/blog/equipo-de-bombero-completo/) ordena las partidas por operación.
 
 ## Preguntas frecuentes sobre el costo de un traje de bombero
 

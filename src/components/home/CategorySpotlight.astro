@@ -129,7 +129,7 @@ const [grande, ...chicas] = imagenes;
     display: block;
   }
   /* Escritorio: la galería llena la altura del texto (sin huecos). */
-  @media (min-width: 1025px) {
+  @media (min-width: 1024px) {
     .spot { align-items: stretch; }
     .spot__gallery { grid-template-rows: minmax(0, 1.55fr) minmax(0, 1fr); min-height: 560px; }
     .spot__fig, .spot__fig--big { aspect-ratio: auto; min-height: 200px; }
@@ -150,14 +150,14 @@ const [grande, ...chicas] = imagenes;
   }
   .spot__fig--big figcaption { font-size: 0.88rem; padding: 0.5rem 0.9rem; }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .spot { grid-template-columns: minmax(0, 1fr); }
     .spot--flip .spot__text, .spot--flip .spot__gallery { order: initial; }
     .spot__title { max-width: none; }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .spot__puntos { grid-template-columns: 1fr; }
     .spot__ctas .btn { width: 100%; }
-    .spot__fig figcaption { font-size: 0.74rem; padding: 0.3rem 0.55rem; }
+    .spot__fig figcaption { font-size: 0.75rem; padding: 0.3rem 0.55rem; }
   }
 </style>

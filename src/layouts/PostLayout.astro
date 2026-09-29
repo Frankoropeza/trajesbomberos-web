@@ -303,7 +303,7 @@ const article = {
     letter-spacing: var(--tracking-wide);
     color: var(--color-primary);
     text-decoration: none;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
   }
   .post__cat:hover { text-decoration: underline; }
   .post__dot { color: var(--color-gray-light); }
@@ -329,7 +329,7 @@ const article = {
   .related-grid { display: grid; grid-template-columns: 1fr; gap: var(--gap-grid); }
   /* Relacionados: 4 fichas en fila de 4 (decisión de Frank 2026-09-29),
      mismos cortes que TileGrid del index. El listado del blog sigue en 3. */
-  @media (min-width: 560px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 640px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1024px) { .related-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
   .volver { margin: 2.2rem 0 0; }

@@ -1,4 +1,4 @@
-/* tokens.css · SSoT visual. Escala canónica de cortes: 1024 · 768 · 640 · 480 · 380 */
+/* tokens.css · SSoT visual. Escala canónica: max-width 1279 · 1023 · 767 · 639 · 479 · 379; min-width 1440 (solo escritorio amplio) · 1280 · 1024 · 768 · 640. */
 :root {
   /* --- Color ------------------------------------------------ */
   --color-primary: #c8102e;        /* rojo bombero */
@@ -26,7 +26,7 @@
   --fs-lead: clamp(1.02rem, 1.15vw, 1.2rem);
   --fs-body: 1rem;
   --fs-sm: 0.9rem;
-  --fs-xs: 0.8rem;
+  --fs-xs: 0.75rem;
   --tracking-tight: -0.022em;
   --tracking-wide: 0.09em;
 
@@ -57,5 +57,17 @@
 }
 
 /* tokens.css · ancho fluido + breakpoints unificados. */
-@media (max-width: 768px) { :root { --container-max: 100%; } }
-@media (max-width: 640px) { :root { --header-height: 58px; --topbar-height: 34px; } }
+@media (max-width: 767px) {
+  :root {
+    --container-max: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  :root {
+    --header-height: 58px;
+    --topbar-height: 40px;
+    --container-px: clamp(1rem, 4vw, 1.25rem);
+    --section-y: clamp(2.75rem, 10vw, 3.5rem);
+  }
+}

@@ -162,9 +162,11 @@ const entregables = [
   </div>
 
   <PhotoBand
-    src="/images/escenas/bombero-ventilacion-techo-nocturno.avif"
-    alt="Bombero realizando ventilación en un techo durante un incendio nocturno"
-    caption="Equipamos a quienes entran primero: cotización por escrito, ficha técnica por partida y la norma vigente."
+  src="/images/escenas/bombero-ventilacion-techo-nocturno.avif"
+  alt="Bombero realizando ventilación en un techo durante un incendio nocturno"
+  width={896}
+  heightPx={1200}
+  caption="Equipamos a quienes entran primero: cotización por escrito, ficha técnica por partida y la norma vigente."
     height="tall"
     position="center 35%"
   />
@@ -212,10 +214,10 @@ const entregables = [
   .empresa-marcas h3 { margin: 0 0 1rem; font-size: 1.05rem; }
 
   .empresa-datos dl { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem 2rem; }
-  .empresa-datos dt { margin-bottom: 0.15rem; color: var(--color-gray-soft); font-size: 0.62rem; font-weight: 800; letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+  .empresa-datos dt { margin-bottom: 0.15rem; color: var(--color-gray-soft); font-size: 0.75rem; font-weight: 800; letter-spacing: var(--tracking-wide); text-transform: uppercase; }
   .empresa-datos dd { margin: 0; color: var(--color-dark); font-size: 0.95rem; font-weight: 600; }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .empresa-list, .empresa-marcas, .empresa-datos dl { grid-template-columns: 1fr; }
   }
 </style>
