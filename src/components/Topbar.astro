@@ -9,7 +9,7 @@ import { waUrl } from '@lib/wa';
   <div class="container topbar__inner">
     <p class="topbar__claim">{CONTACT.posicionamiento}</p>
     <div class="topbar__contact">
-      <a class="topbar__blog" href="/blog/">Blog técnico</a>
+      <a class="topbar__corp" href="/empresa/">Proveedor de trajes para bomberos</a>
       <span class="topbar__extra">{CONTACT.horario}</span>
       <a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
       <a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">WhatsApp</a>
@@ -36,6 +36,9 @@ import { waUrl } from '@lib/wa';
   .topbar__claim { margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .topbar__contact { display: flex; gap: 1rem; align-items: center; flex-shrink: 0; }
   .topbar__contact a { color: var(--color-accent); text-decoration: none; font-weight: 600; }
-  .topbar__blog { color: var(--color-light) !important; }
-  .topbar__blog:hover { color: var(--color-accent) !important; text-decoration: underline; }
+  .topbar__contact a { white-space: nowrap; }
+  .topbar__corp { color: var(--color-light) !important; }
+  .topbar__corp:hover { color: var(--color-accent) !important; text-decoration: underline; }
+  /* Bajo 1280 px el enlace corporativo vive en el cajón del menú. */
+  @media (max-width: 1279px) { .topbar__corp { display: none; } }
 </style>
