@@ -64,7 +64,7 @@ export const modelos: Modelo[] = [{
 Object.assign(seccion, {
   resumenHero: [
     'La compra de herramientas para bombero parte de una tarea delimitada. Entrada forzada, alcance controlado y trabajo de línea en vegetación demandan geometrías, longitudes y métodos de resguardo diferentes; una dotación útil evita duplicar piezas que no cubren la misma maniobra.',
-    'El inventario debe dialogar con el vehículo, el EPP, la capacitación y el programa de inspección. Acero forjado, fibra de vidrio y madera requieren cuidados distintos, pero toda herramienta necesita una revisión física, una sujeción de transporte y un criterio claro para retirarla de servicio.'
+    'El inventario debe dialogar con el vehículo, el EPP, la capacitación y el programa de inspección. Acero forjado, fibra de vidrio y madera requieren cuidados distintos, pero toda herramienta necesita una revisión física, una sujeción de transporte y un criterio claro para retirarla de servicio. En LORICA cotizamos la dotación por maniobra, sin compra mínima.'
   ],
   etiquetas: { menuTipos: 'Herramientas por maniobra', tiposEyebrow: 'Entrada y línea forestal', tiposTitulo: 'Elige por función, no por apariencia', tiposDescripcion: 'Compara alcance, cabeza, mango y forma de resguardo antes de integrar una partida.', elegirTitulo: 'Criterios para equipar una cuadrilla', elegirDescripcion: 'La herramienta correcta depende de la maniobra autorizada, el terreno y el equipo que ya acompaña al personal.', modelosTitulo: 'Modelo disponible', modelosDescripcion: 'Verifica por escrito configuración, dimensiones y accesorios antes de ordenar.' },
   comparativa: { columnas: ['Tipo', 'Uso', 'Referencia', 'Material o forma', 'Ventaja', 'Límite'], filas: [

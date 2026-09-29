@@ -44,7 +44,7 @@ const SUBS: Record<string, [string, string][]> = {
   forestal: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']],
   aproximacion: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']],
   extricacion: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']],
-  hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']],
+  hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes para químicos', 'guantes-quimicos']],
 };
 
 /** Card de una familia de traje por slug (estructural, forestal, hazmat…). */

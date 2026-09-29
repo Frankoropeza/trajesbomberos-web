@@ -5,7 +5,7 @@ import { responsive, SIZES } from '@lib/img';
 //    cotización, norma, equipo y familias. Fluye con la página.
 //  · articulo → cotización, más guías, equipo, norma e índice al final.
 //    Solo el índice sticky en escritorio; se oculta en pantallas bajas.
-import { CONTACT, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
+import { CONTACT, MARCA, PRODUCT_CATEGORIES, WA_MESSAGES } from '@config/site';
 import { waUrl } from '@lib/wa';
 import { categoriasConConteo, categoriaNombre, getPosts, postUrl, type Post } from '@lib/blog';
 import {
@@ -166,12 +166,12 @@ const toc = esArticulo ? headings.filter((heading) => heading.depth === 2) : [];
   <!-- Tarjeta de cotización. -->
   <div class="sb-quote">
     <p>¿Cotizas equipo para tu corporación o brigada?</p>
-    <small>Te mandamos ficha técnica con partidas y condiciones de entrega por escrito.</small>
+    <small>{MARCA.nombre} suma {MARCA.experiencia} de experiencia y manda ficha técnica con partidas y condiciones de entrega por escrito.</small>
     {!esArticulo && (
       <ul>
         <li>Ficha técnica por partida</li>
         <li>Expediente para licitación</li>
-        <li>Envío a todo México</li>
+        <li>Entrega en los 32 estados</li>
       </ul>
     )}
     <a class="sb-wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow">

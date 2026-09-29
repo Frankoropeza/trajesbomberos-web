@@ -16,7 +16,7 @@ ancla: "Herramientas de un bombero"
 categoria: "herramientas-rescate"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Herramientas de un bombero por operación | México"
+seoTitle: "Herramientas de un bombero: nombres y para qué sirven"
 description: "Herramientas de un bombero: selecciona hacha, Halligan, gancho, Pulaski, rescate, mangueras e iluminación por operación y compatibilidad."
 keywords:
   - "herramientas de un bombero"

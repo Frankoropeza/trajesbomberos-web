@@ -10,7 +10,7 @@ ancla: "Herramientas forestales"
 categoria: "herramientas-rescate"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "McLeod, Pulaski y batefuegos | México"
+seoTitle: "McLeod, Pulaski y batefuego: herramientas forestales"
 description: "McLeod, Pulaski y batefuegos: compara herramientas forestales, rastrillo y bomba de mochila por función, selección, cuidado y resguardo."
 keywords: ["McLeod", "herramientas forestales", "México"]
 imagen: "/images/blog/herramientas-forestales-pulaski-mcleod-batefuego.avif"

@@ -57,8 +57,8 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
   },
   herramientas: {
     tipos: [
-      'Las herramientas de bombero incluyen hacha, barra Halligan, gancho bichero, Pulaski, McLeod, rastrillo forestal, batefuego y bomba de mochila. La elección distingue entrada forzada, revisión, construcción de línea y liquidación. Cada función exige longitud, material, resguardo y entrenamiento acordes con la maniobra autorizada.',
-      'Relaciona la herramienta con el procedimiento y el espacio de la unidad antes de pedir cantidades. Escríbenos la función, material y medidas requeridas para cotizar una partida identificable, con especificación del fabricante cuando corresponda.',
+      'Las herramientas de bombero incluyen <a href="/herramientas/hacha-de-bombero/">hacha de bombero</a>, barra Halligan, gancho bichero, Pulaski, McLeod, rastrillo forestal, batefuego y bomba de mochila. La elección distingue entrada forzada, revisión, construcción de línea y liquidación. Cada función exige longitud, material, resguardo y entrenamiento acordes con la maniobra autorizada.',
+      'Relaciona la herramienta con el procedimiento y el espacio de la unidad antes de pedir cantidades. Escríbenos la función, material y medidas requeridas para cotizar una partida identificable, con especificación del fabricante cuando corresponda. Para la línea de agua, revisa aparte la <a href="/mangueras-y-accesorios/">manguera contra incendio y sus accesorios</a>.',
     ],
     elegir: [
       'Para equipar una cuadrilla con herramientas de bombero, revisa maniobra, material de cabeza, mango, longitud, peso declarado y método de sujeción. Elegir por la silueta es un error: una Halligan, un hacha y un Pulaski no sustituyen la función ni el entrenamiento de las otras.',
@@ -69,13 +69,13 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
       'Pide por escrito la longitud, el tipo de mango y la protección de transporte que necesita tu unidad. Una requisición precisa permite comparar la Halligan u otra herramienta contra la maniobra definida antes de confirmar entrega.',
     ],
     faq: [
-      'Las preguntas frecuentes de herramientas de bombero explican cómo definir la pieza para una unidad, si se cotiza por separado y cómo resguardarla. La respuesta parte de maniobras autorizadas, riesgo y entrenamiento, porque una herramienta manual no reemplaza análisis de escena ni EPP.',
+      'Las preguntas frecuentes de herramientas de bombero explican cómo definir la pieza para una unidad, si se cotiza por separado y cómo resguardarla. La respuesta parte de maniobras autorizadas, riesgo y entrenamiento, porque una herramienta manual no reemplaza análisis de escena ni EPP. La guía <a href="/blog/herramientas-de-un-bombero/">herramientas de un bombero: nombres y para qué sirven</a> amplía cada función.',
       'Envía por WhatsApp la lista de herramientas, cantidades y uso previsto. Te devolvemos una cotización con renglones diferenciados para que revises materiales, dimensiones, resguardo y condiciones antes de integrar la dotación institucional.',
     ],
   },
   rescate: {
     tipos: [
-      'El equipo de rescate reúne herramientas hidráulicas para extricación, arnés de rescate, cuerda, conectores, anclajes y kits para trabajo vertical. Se elige dentro de una maniobra concreta: corte, separación, ascenso, descenso o aseguramiento. La compatibilidad entre componentes y el nivel de capacitación son parte de la selección.',
+      'El equipo de rescate reúne herramientas hidráulicas para extricación (las <a href="/rescate/herramienta-hidraulica-de-rescate/">quijadas de la vida</a>), arnés de rescate, cuerda, conectores y <a href="/rescate/mosquetones-de-rescate/">mosquetones de seguridad</a>, anclajes y kits para trabajo vertical. Se elige dentro de una maniobra concreta: corte, separación, ascenso, descenso o aseguramiento. La compatibilidad entre componentes y el nivel de capacitación son parte de la selección.',
       'Describe el escenario, anclajes y procedimiento que tiene autorizados tu equipo para revisar una configuración. Podemos cotizar por componentes con ficha técnica por partida, de modo que arnés, cuerda y conectores se evalúen como sistema.',
     ],
     elegir: [
@@ -83,13 +83,13 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
       'Antes de liberar una compra, documenta inventario, identificación, inspección y resguardo. Solicita la declaración técnica de cada modelo y compara las alternativas con el entrenamiento real de tu corporación, no solo con una fotografía o una marca.',
     ],
     faq: [
-      'Las preguntas de equipo de rescate aclaran qué integra un kit vertical, cómo cotizar cuerda y mosquetones y qué referencia se usa en rescate con cuerda. NFPA 2500 se consulta en el alcance que corresponda; no convierte cualquier componente en una configuración lista para usar.',
+      'Las preguntas de equipo de rescate aclaran qué integra un kit vertical, cómo cotizar cuerda y mosquetones y qué referencia se usa en rescate con cuerda. NFPA 2500 se consulta en el alcance que corresponda; no convierte cualquier componente en una configuración lista para usar. Para el uso en extricación, lee <a href="/blog/quijadas-de-la-vida-herramienta-hidraulica/">qué son las quijadas de la vida</a>.',
       'Escríbenos por WhatsApp con la maniobra, cantidades y piezas que ya tienes. La propuesta puede ordenar componentes y condiciones por escrito para que revises compatibilidad y trazabilidad antes de definir la partida.',
     ],
   },
   'mangueras-y-accesorios': {
     tipos: [
-      'Una manguera contra incendio se integra con pitón o boquilla, acoples, adaptadores y llave para hidrante. El sistema se selecciona por diámetro, longitud, rosca, caudal y operación existente. Dos piezas parecidas pueden ser incompatibles si no coinciden las conexiones o la configuración de la línea.',
+      'Una manguera contra incendio se integra con <a href="/mangueras-y-accesorios/piton-boquilla/">chiflón, pitón o boquilla</a>, acoples, adaptadores y <a href="/mangueras-y-accesorios/llave-para-hidrante/">llave para hidrante</a>. El sistema se selecciona por diámetro, longitud, rosca, caudal y operación existente. Dos piezas parecidas pueden ser incompatibles si no coinciden las conexiones o la configuración de la línea.',
       'Comparte las medidas, roscas y equipo que ya opera tu unidad para revisar una partida compatible. Podemos cotizar manguera, conexiones y accesorios con sus especificaciones, para que la recepción compruebe cada componente antes de ponerlo en servicio.',
     ],
     elegir: [
@@ -97,7 +97,7 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
       'Anota el uso de ataque, abastecimiento o hidrante y solicita la norma NFPA aplicable que declare el fabricante del modelo ofrecido. Revisa sellos, llaves y acoples en una prueba controlada antes de asignar el equipo.',
     ],
     faq: [
-      'Las preguntas sobre manguera contra incendio resuelven diámetros de 1 ½ y 2 ½ pulgadas, roscas NH/NST y NPSH, y documentación de norma. La sección orienta la compra como sistema porque pitón, conexión y línea deben coincidir para que la maniobra sea posible.',
+      'Las preguntas sobre manguera contra incendio resuelven diámetros de 1 ½ y 2 ½ pulgadas, roscas NH/NST y NPSH, y documentación de norma. La sección orienta la compra como sistema porque pitón, conexión y línea deben coincidir para que la maniobra sea posible. La guía de <a href="/blog/mangueras-contra-incendio-tipos-y-conexiones/">manguera de bombero: tipos y conexiones</a> lo explica a detalle.',
       'Manda por WhatsApp el diámetro, la rosca y el uso de tu instalación o unidad. Con esos datos elaboramos una propuesta con partidas claras para validar compatibilidad antes de decidir cantidades y accesorios.',
     ],
   },
@@ -108,7 +108,7 @@ export const DUO_SECCIONES_B: Record<string, Record<string, Duo>> = {
     ],
     elegir: [
       'Antes de integrar equipo para bomberos, revisa el análisis de riesgo, límite de intervención, tallas por usuario, componentes, accesorios y compatibilidad con ERA cuando aplique. Un kit no amplía por sí mismo la capacidad de respuesta; el error es comprar una lista genérica sin probar cobertura y movimiento.',
-      'Solicita una relación por persona con modelo, talla y configuración de cada pieza. Así la cotización puede distinguir casco, traje, guantes, botas y capucha, y la recepción compara el conjunto contra una especificación aprobada.',
+      'Solicita una relación por persona con modelo, talla y configuración de cada pieza. Así la cotización puede distinguir <a href="/cascos/">casco de bombero</a>, traje, <a href="/guantes/">guantes de bombero</a>, <a href="/botas/">botas de bombero</a> y capucha, y la recepción compara el conjunto contra una especificación aprobada.',
     ],
     faq: [
       'Las preguntas de equipo de bombero completo explican qué incluye un kit, cuándo el ERA se cotiza aparte, cómo cambiar una pieza y por qué se registran tallas y configuración. Las respuestas evitan trasladar la declaración de un componente a todo el conjunto.',

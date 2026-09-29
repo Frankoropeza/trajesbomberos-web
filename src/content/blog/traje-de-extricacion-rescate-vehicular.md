@@ -90,7 +90,7 @@ Define un área, secuencia de retiro, responsable y registro de condición. Insp
 
 No existe un número universal de conjuntos por turno. Se estima desde número de personas que pueden entrar a la maniobra, frecuencia de salidas, tiempo de secado y descontaminación, tallas disponibles, relevos y capacidad de mantener una pieza fuera de servicio. Una sola dotación por estación puede dejar a la guardia sin configuración después de una exposición; acumular prendas sin tallaje ni registro tampoco garantiza disponibilidad.
 
-Forma el inventario por función y persona: conjunto o piezas asignadas, tallas, guantes, casco, goggles, equipo de iluminación cuando aplique y condición inicial. Mantén una lista de reposición por pieza y talla. Si el mismo turno atiende vegetación y rescate, evalúa por separado una dotación dual documentada o dos configuraciones, sin convertir esa conveniencia operativa en autorización para ataque interior.
+Forma el inventario por función y persona: conjunto o piezas asignadas, tallas, guantes, [casco](/cascos/), goggles, equipo de iluminación cuando aplique y condición inicial. Mantén una lista de reposición por pieza y talla. Si el mismo turno atiende vegetación y rescate, evalúa por separado una dotación dual documentada o dos configuraciones, sin convertir esa conveniencia operativa en autorización para ataque interior.
 
 ## Prueba de movilidad y recepción
 

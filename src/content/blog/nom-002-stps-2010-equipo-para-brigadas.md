@@ -48,7 +48,7 @@ Un uniforme parecido al de bombero no autoriza a entrar a un espacio con humo o 
 
 ## Ataque interior: alcance, no apariencia
 
-Cuando personal entrará donde el aire no es respirable o hay fuego declarado, se requiere una evaluación técnica específica. El equipo estructural se considera como conjunto: [traje estructural](/trajes/estructural/), casco, capucha, guantes, botas y [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/). Cada pieza se selecciona por el escenario y debe funcionar con las demás; agregar una careta o una bota distinta a un conjunto de brigada no cambia su alcance.
+Cuando personal entrará donde el aire no es respirable o hay fuego declarado, se requiere una evaluación técnica específica. El equipo estructural se considera como conjunto: [traje estructural](/trajes/estructural/), casco, capucha, guantes, [botas](/botas/) y [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/). Cada pieza se selecciona por el escenario y debe funcionar con las demás; agregar una careta o una bota distinta a un conjunto de brigada no cambia su alcance.
 
 No establezcas este tipo de intervención por costumbre ni por la tardanza de apoyo externo. Hace falta entrenamiento, supervisión, procedimientos, mantenimiento y capacidad para retirar al personal. Si esos elementos no existen, el límite más seguro puede ser conato, evacuación y entrega de la escena al cuerpo de respuesta especializado.
 

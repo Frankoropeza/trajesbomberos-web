@@ -1,4 +1,5 @@
-import { SITE, CONTACT, KEYWORDS, DIRECCION } from '@config/site';
+import { SITE, CONTACT, KEYWORDS, DIRECCION, MARCA } from '@config/site';
+import { ENTIDADES } from '@lib/directorio';
 
 // ============================================================
 // SEO centralizado (regla B3: UN solo emisor de schema por
@@ -68,6 +69,7 @@ export function organizationSchema(): object {
     '@id': `${SITE.url}/#organization`,
     name: SITE.legalName,
     alternateName: SITE.name,
+    slogan: MARCA.lema,
     url: SITE.url,
     description:
       'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
@@ -96,7 +98,10 @@ export function organizationSchema(): object {
       areaServed: 'MX',
       availableLanguage: ['es'],
     },
-    areaServed: { '@type': 'Country', name: 'México' },
+    areaServed: [
+      { '@type': 'Country', name: 'México' },
+      ...ENTIDADES.map((entidad) => ({ '@type': 'State', name: entidad.nombre })),
+    ],
     knowsAbout: [
       'Trajes para bomberos',
       'Equipo de protección personal contra incendios',

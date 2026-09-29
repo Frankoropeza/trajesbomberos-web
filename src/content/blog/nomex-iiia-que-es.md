@@ -56,9 +56,9 @@ Para una empresa, esto significa que el inventario debe separarse por tipo de pr
 
 ## Cómo integrar Nomex IIIA al equipo de bombero
 
-Nomex IIIA puede estar en ropa de estación, prendas de brigadista, capuchas o elementos textiles del equipo. Cada interfaz importa. La manga debe trabajar con el [guante](/guantes/), el cuello con capucha y casco, y el corte con la actividad que se realizará. Si la prenda se usará bajo el estructural, debe permitir movilidad sin formar pliegues incómodos ni añadir materiales que se derritan.
+Nomex IIIA puede estar en ropa de estación, prendas de brigadista, capuchas o elementos textiles del equipo. Cada interfaz importa. La manga debe trabajar con el [guante](/guantes/), el cuello con capucha y [casco](/cascos/), y el corte con la actividad que se realizará. Si la prenda se usará bajo el estructural, debe permitir movilidad sin formar pliegues incómodos ni añadir materiales que se derritan.
 
-No sustituye la selección de [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) ni la de un casco o botas. Es una capa dentro de un sistema. Antes de comprar, documenta quién la usará, si se llevará sola o bajo otra prenda, qué contaminantes puede encontrar y cómo se lavará. Esa información permite pedir una configuración congruente sin atribuir a la fibra una capacidad que pertenece al conjunto completo.
+No sustituye la selección de [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) ni la de un casco o [botas](/botas/). Es una capa dentro de un sistema. Antes de comprar, documenta quién la usará, si se llevará sola o bajo otra prenda, qué contaminantes puede encontrar y cómo se lavará. Esa información permite pedir una configuración congruente sin atribuir a la fibra una capacidad que pertenece al conjunto completo.
 
 ## Rutina de inspección y cuidado
 

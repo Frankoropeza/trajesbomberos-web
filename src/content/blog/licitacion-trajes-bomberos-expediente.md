@@ -68,7 +68,7 @@ Cinco reglas que hacen la diferencia entre un pliego que protege y uno que solo 
 
 **Cita la norma vigente y su edición.** Hoy la referencia para conjunto estructural es la **NFPA 1970**, que consolidó a la NFPA 1971. Escribe "edición vigente" para no tener que modificar el pliego cada revisión, y define explícitamente si aceptas equipo certificado bajo la edición anterior. Si no lo defines, lo vas a discutir en la junta de aclaraciones.
 
-**Separa las partidas por pieza.** Chaquetón, pantalonera, casco, monja, botas, guantes. Un precio global impide comparar propuestas y complica la reposición futura.
+**Separa las partidas por pieza.** Chaquetón, pantalonera, [casco](/cascos/), monja, [botas](/botas/), guantes. Un precio global impide comparar propuestas y complica la reposición futura.
 
 **Pide fecha de fabricación como criterio de aceptación.** El reloj de la vida útil corre desde ahí. Sin esta cláusula puedes recibir, legalmente, equipo con dos años ya consumidos.
 
@@ -93,6 +93,6 @@ No todo es responsabilidad del licitante. Los que más nos tocan ver:
 
 ## Qué te podemos mandar
 
-Si estás armando una compra —pública o corporativa— pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. Lo mandamos por escrito, aunque todavía no haya orden de compra.
+Si estás armando una compra —pública o corporativa— pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. En LORICA lo mandamos por escrito, aunque todavía no haya orden de compra.
 
 Y si lo que tienes es un anexo técnico a medio redactar, mándalo: te decimos qué líneas conviene ajustar antes de publicar. Un pliego bien escrito nos conviene a todos, incluso cuando lo gane otro.

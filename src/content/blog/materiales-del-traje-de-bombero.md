@@ -89,7 +89,7 @@ En la práctica, pide tipo de prenda, construcción, composición declarada, tal
 
 Los gramajes publicados son útiles para comparar capas del mismo modelo o propuestas con el mismo alcance, pero no para sumar una cifra de “peso de traje” sin información completa. Maverick II declara 210 g/m² en Panther, 125 g/m² en Moisture Barrier 125 y 205 g/m² en Dubai TB205; estos datos no incluyen talla, corte, cierres, cinta, refuerzos ni complementos.
 
-Antes de elegir por sensación de ligereza, prueba chaquetón, pantalonera, capucha, guantes, botas y ERA juntos. El material correcto debe permitir que las interfaces de cuello, muñeca, cintura y bota se mantengan cubiertas. Si la ficha no declara el peso de una configuración, se confirma al cotizar.
+Antes de elegir por sensación de ligereza, prueba chaquetón, pantalonera, capucha, guantes, [botas](/botas/) y ERA juntos. El material correcto debe permitir que las interfaces de cuello, muñeca, cintura y bota se mantengan cubiertas. Si la ficha no declara el peso de una configuración, se confirma al cotizar.
 
 ## Cómo leer el composite en una cotización
 
