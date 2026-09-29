@@ -40,7 +40,7 @@ const { eyebrow, title, paragraphs, points, ctaLabel, ctaHref, external = false,
     {images.slice(0, 3).map((img, i) => (
       <img
         src={img.src}
-        {...responsive(img.src, i === 0 ? SIZES.half : SIZES.tile)}
+        {...responsive(img.src, i === 0 ? SIZES.half : SIZES.halfTile)}
         alt={img.alt}
         width={i === 0 ? 800 : 400}
         height={i === 0 ? 500 : 250}

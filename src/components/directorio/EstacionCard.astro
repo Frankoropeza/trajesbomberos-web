@@ -10,8 +10,10 @@ import {
   type Estacion, ROL_LABEL, unidad, SERVICIO_LABEL, fuentesConUrl, mapsUrl, telHref, telTexto, dominio,
 } from '@lib/directorio';
 
-interface Props { s: Estacion }
-const { s } = Astro.props as Props;
+// nivel: 4 bajo un H3 de municipio (página de estado); 3 directo bajo el H2 (página de municipio).
+interface Props { s: Estacion; nivel?: 3 | 4 }
+const { s, nivel = 4 } = Astro.props as Props;
+const Titulo = `h${nivel}`;
 const telefonos = [s.telefono, ...(s.telefonosAdicionales ?? [])].filter((t): t is string => !!t);
 const servicios = (s.servicios ?? []).map((x) => SERVICIO_LABEL[x] ?? x);
 // Fuente: se muestra el dominio (atemporal, sin titulares ni fechas), sin repetir.
@@ -27,7 +29,7 @@ const compacta = telefonos.length === 0 && !s.direccion;
     <span class="st__rol">{ROL_LABEL[s.rolEstacion]}{s.numeroEstacion && s.rolEstacion !== 'unica' ? ` · ${s.numeroEstacion}` : ''}</span>
   </div>
   <div class="st__body">
-    <h4 class="st__name">{s.nombre}</h4>
+    <Titulo class="st__name">{s.nombre}</Titulo>
     {s.corporacion && s.corporacion !== s.nombre && <p class="st__corp">{s.corporacion}</p>}
 
     <dl class="st__data">
@@ -112,6 +114,8 @@ const compacta = telefonos.length === 0 && !s.direccion;
   dd a { color: var(--color-primary); font-weight: 700; text-decoration: none; }
   dd a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .st__tels { display: flex; flex-direction: column; gap: 0.2rem; }
+  /* Área táctil mínima de 24 px (WCAG 2.2 · 2.5.8) entre teléfonos apilados. */
+  .st__tels a { display: inline-flex; align-items: center; min-height: 24px; }
 
   .st__serv { display: flex; flex-wrap: wrap; gap: 0.35rem; list-style: none; margin: 0.85rem 0 0; padding: 0; }
   .st__serv li {

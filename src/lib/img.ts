@@ -20,6 +20,8 @@ export const SIZES = {
   third: '(max-width: 559px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), 33vw',
   /** Media columna (layouts de dos columnas: foto + texto) */
   half: '(max-width: 1023px) calc(100vw - 2rem), 50vw',
+  /** Media columna partida en 2 (galería de CategoryDetail: miniaturas bajo la foto grande) */
+  halfTile: '(max-width: 1023px) calc(50vw - 1.4rem), 25vw',
   /** Miniaturas de listas laterales (72 px) */
   thumb: '72px',
   /** Ancho de contenido completo */
