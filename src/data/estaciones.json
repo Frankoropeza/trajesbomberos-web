@@ -59,10 +59,6 @@
    "precision": "exacta"
   },
   "telefono": "(449) 996-9300",
-  "telefonosAdicionales": [
-   "(449) 970-0065",
-   "(449) 970-3939"
-  ],
   "email": "proteccion.civil@aguascalientes.gob.mx",
   "sitioWeb": "https://www.aguascalientes.gob.mx/SEGGOB/civil",
   "servicios": [
@@ -106,8 +102,8 @@
   },
   "telefono": "(449) 970-4053",
   "telefonosAdicionales": [
-   "(449) 970-3939",
-   "(449) 918-2811"
+   "(449) 918-2811",
+   "(449) 970-0075"
   ],
   "sitioWeb": "https://www.ags.gob.mx",
   "servicios": [
@@ -135,6 +131,14 @@
    {
     "nombre": "oem.com.mx",
     "url": "https://oem.com.mx/elsoldelcentro/local/en-aguascalientes-152-anos-de-heroes-que-arriesgan-su-vida-celebran-hoy-el-dia-del-bombero-25340095"
+   },
+   {
+    "nombre": "ags.gob.mx — Protección Civil municipal",
+    "url": "https://www.ags.gob.mx/cont.aspx?p=9833"
+   },
+   {
+    "nombre": "aguascalientes.gob.mx — Teléfonos de emergencia",
+    "url": "https://www.aguascalientes.gob.mx/estado/emergencias.html"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -158,10 +162,6 @@
    "lng": -102.0892,
    "precision": "exacta"
   },
-  "telefono": "(496) 967-4019",
-  "telefonosAdicionales": [
-   "(496) 967-4056"
-  ],
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -205,10 +205,7 @@
    "lng": -102.7184,
    "precision": "exacta"
   },
-  "telefono": "(495) 956-0937",
-  "telefonosAdicionales": [
-   "(495) 956-1184"
-  ],
+  "telefono": "(495) 956-0756",
   "servicios": [
    "incendios-estructurales",
    "incendios-vehiculares",
@@ -231,6 +228,10 @@
    {
     "nombre": "calvillo.gob.mx",
     "url": "https://calvillo.gob.mx/"
+   },
+   {
+    "nombre": "facebook.com/MunicipioDeCalvillo — Protección Civil, Bomberos y Paramédicos",
+    "url": "https://www.facebook.com/MunicipioDeCalvillo/photos/gobiernodecalvilloteescuchaprotecci%C3%B3n-civil-bomberos-y-param%C3%A9dicos-495-956-0756p/1940606912811014/"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -298,7 +299,6 @@
    "lng": -101.9333,
    "precision": "aproximada"
   },
-  "telefono": "(496) 967-3389",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -339,9 +339,6 @@
    "precision": "exacta"
   },
   "telefono": "(449) 965-0088",
-  "telefonosAdicionales": [
-   "(449) 965-0089"
-  ],
   "servicios": [
    "incendios-estructurales",
    "incendios-vehiculares",
@@ -435,7 +432,6 @@
    "lng": -102.318,
    "precision": "exacta"
   },
-  "telefono": "(465) 951-0203",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -480,7 +476,6 @@
    "lng": -102.27,
    "precision": "exacta"
   },
-  "telefono": "(465) 967-0124",
   "sitioWeb": "https://www.sanfranciscodelosromo.gob.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -570,7 +565,6 @@
    "lng": -102.1717,
    "precision": "exacta"
   },
-  "telefono": "(465) 951-2076",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
