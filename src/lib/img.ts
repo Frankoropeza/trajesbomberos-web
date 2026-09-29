@@ -6,6 +6,12 @@ import variants from '../data/img-variants.json';
 type Entry = { w: number; h: number; v: number[] };
 const MANIFEST = variants as Record<string, Entry>;
 
+/** Dimensiones originales registradas para una imagen del manifiesto. */
+export function dimensiones(src: string): { width: number; height: number } | undefined {
+  const entry = MANIFEST[src];
+  return entry ? { width: entry.w, height: entry.h } : undefined;
+}
+
 /** `sizes` por patrón de maqueta (ancho real de pintado por breakpoint). */
 export const SIZES = {
   /** TileGrid/CatalogCard: 4 col ≥1024 · 2 col 560–1023 · 1 col <560 */

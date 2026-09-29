@@ -10,8 +10,10 @@ import { CONTACT } from '@config/site';
 
 interface Props {
   items: { q: string; a: string }[];
+  asunto?: string;
+  boton?: string;
 }
-const { items } = Astro.props;
+const { items, asunto, boton = 'Enviar cotización de trajes por WhatsApp' } = Astro.props;
 
 const TIPOS = [
   'Cuerpo de bomberos',
@@ -36,7 +38,7 @@ const TIPOS = [
   <aside class="faqc-card">
     <h3>¿Tu duda no está aquí?</h3>
     <p class="faqc-card__lead">Te respondemos por WhatsApp en el transcurso del día hábil.</p>
-    <form class="cform" id="faq-contact-form" data-wa={CONTACT.whatsapp}>
+    <form class="cform" id="faq-contact-form" data-wa={CONTACT.whatsapp} data-asunto={asunto}>
       <div class="cform__field">
         <label for="cf-nombre">Nombre (opcional)</label>
         <input type="text" id="cf-nombre" name="nombre" autocomplete="name" />
@@ -58,7 +60,7 @@ const TIPOS = [
         <label for="cf-web">Sitio web</label>
         <input type="text" id="cf-web" name="website" tabindex="-1" autocomplete="off" />
       </div>
-      <button type="submit" class="btn btn--wa cform__submit">Enviar cotización de trajes por WhatsApp</button>
+      <button type="submit" class="btn btn--wa cform__submit">{boton}</button>
       <p class="cform__note">Al pulsar el botón se abre WhatsApp con tu mensaje. No guardamos ningún dato.</p>
       <a class="cform__tel" href={`tel:${CONTACT.telefonoHref}`}>Prefiero llamar directamente</a>
     </form>
@@ -86,11 +88,9 @@ const TIPOS = [
     const tipo = String(data.get('tipo') || '').trim();
     const mensaje = String(data.get('mensaje') || '').trim();
     if (!tipo || !mensaje) return;
-    const text = [
-      nombre ? `Hola, soy ${nombre}.` : 'Hola.',
-      `Organización: ${tipo}.`,
-      mensaje,
-    ].join(' ');
+    const text = form.dataset.asunto
+      ? [nombre ? `Hola, soy ${nombre}.` : 'Hola.', `Organización: ${tipo}.`, `Consulta sobre ${form.dataset.asunto}: ${mensaje}`].join(' ')
+      : [nombre ? `Hola, soy ${nombre}.` : 'Hola.', `Organización: ${tipo}.`, mensaje].join(' ');
     const wa = form.dataset.wa || '';
     if (!wa) return;
     window.open(`https://wa.me/${wa}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
