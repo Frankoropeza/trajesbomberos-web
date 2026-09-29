@@ -7,14 +7,14 @@
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CategoryDetail from '@components/CategoryDetail.astro';
-import ProductCard from '@components/ProductCard.astro';
-import CategoryCard from '@components/CategoryCard.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard from '@components/home/TileCard.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
 import CompletaElConjunto from '@components/CompletaElConjunto.astro';
 import NormaBadge from '@components/NormaBadge.astro';
-import { PRODUCT_CATEGORIES, WA_MESSAGES, COMPLEMENTOS } from '@config/site';
+import { WA_MESSAGES, COMPLEMENTOS } from '@config/site';
 import { presetCategoria } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import type { FamiliaDetalle } from '@lib/familias';
@@ -22,6 +22,7 @@ import { heroDeFamilia } from '@lib/imagenes';
 import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
 import { duoFamilia } from '@lib/titulos';
 import ModelosGrid from '@components/ModelosGrid.astro';
+import { tilesFamilias, tilesPiezas } from '@lib/catalogo/tiles';
 
 interface Props {
   familia: FamiliaDetalle;
@@ -97,19 +98,9 @@ const pageIndex = [
             eyebrow="Qué se cotiza"
             title={`Piezas y configuraciones de ${f.nombreWa.toLowerCase()}`}
             description="Cada pieza se cotiza por separado o dentro del conjunto. Dinos cuáles necesitas y cuántos elementos vas a equipar." duo={duoFamilia(f.slug, 'cotiza')} />
-          <div class="piezas-grid">
-            {f.productos.map((pr, i) => (
-              <ProductCard
-                nombre={pr.nombre}
-                desc={pr.desc}
-                chips={pr.chips}
-                spec={pr.spec}
-                img={pr.img}
-                alt={pr.alt}
-                index={i}
-              />
-            ))}
-          </div>
+          <TileGrid cols={3}>
+            {tilesPiezas(f).map((t) => <TileCard {...t} />)}
+          </TileGrid>
         </section>
 
         <!-- 3 · Qué pedir en la cotización -->
@@ -187,21 +178,9 @@ const pageIndex = [
         eyebrow="Otras familias"
         title="Las seis familias de traje"
         description="Cada una responde a un riesgo distinto y no son intercambiables. Si tu operación no encaja con esta, entra a la que corresponde." duo={duoFamilia(f.slug, 'otras')} />
-      <div class="grid-cards grid-cards--3">
-        {PRODUCT_CATEGORIES.map((cat, i) => (
-          <CategoryCard
-            href={`/trajes/${cat.slug}/`}
-            image={cat.image}
-            imageAlt={cat.imageAlt}
-            title={cat.nombre}
-            desc={cat.desc}
-            chips={[...cat.chips]}
-            ctaLabel="Ver ficha"
-            index={i}
-            current={cat.slug === f.slug}
-          />
-        ))}
-      </div>
+      <TileGrid cols={3}>
+          {tilesFamilias(f.slug).map((t) => <TileCard {...t} />)}
+        </TileGrid>
       <p class="volver"><a href="/trajes/">← Volver al índice de trajes</a></p>
     </div>
   </section>
@@ -225,12 +204,6 @@ const pageIndex = [
   .block { padding-block: clamp(2.2rem, 3.5vw, 3.4rem); border-top: var(--border); }
   .block:first-child { padding-top: 0; border-top: 0; }
   .block:last-child { padding-bottom: 0; }
-
-  .piezas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-grid);
-  }
 
   .pedir {
     display: grid;
@@ -312,21 +285,11 @@ const pageIndex = [
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
 
-  @media (max-width: 1280px) { .piezas-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 1024px) {
     .layout-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .piezas-grid { grid-template-columns: repeat(3, 1fr); }
   }
-  @media (max-width: 900px) { .piezas-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .piezas-grid { grid-template-columns: 1fr; } }
   @media (max-width: 640px) {
-    .piezas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-grid);
-  }
-
-  .pedir { grid-template-columns: 1fr; }
+    .pedir { grid-template-columns: 1fr; }
     .pedir li { border-left: 0 !important; padding-left: 0 !important; }
     .complementos-list { grid-template-columns: 1fr; }
     .marcas-list { grid-template-columns: 1fr; }

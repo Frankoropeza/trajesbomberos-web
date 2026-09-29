@@ -4,7 +4,7 @@
 // reservadas) → texto (3 líneas) → 4 subcategorías → botón principal.
 // Botones siempre con palabra clave (nunca "ver", "ir", "conocer").
 // Va dentro de <TileGrid> (4 por fila). Cero animaciones/transiciones.
-export interface TileSub { label: string; href: string }
+export interface TileSub { label: string; href: string; external?: boolean }
 export interface TileProps {
   codigo: string;
   titulo: string;
@@ -21,30 +21,33 @@ export interface TileProps {
   estado?: { label: string; tone: 'good' | 'warn' | 'neutral' };
   /** Aviso sobre la imagen (p. ej. «Imagen ilustrativa»). */
   nota?: string;
+  /** Enlace externo (WhatsApp): abre en pestaña nueva con rel seguro. */
+  external?: boolean;
 }
-const { codigo, titulo, desc, href, cta, img, alt, pos, subs, fit = 'cover', estado, nota } = Astro.props as TileProps;
+const { codigo, titulo, desc, href, cta, img, alt, pos, subs, fit = 'cover', estado, nota, external = false } = Astro.props as TileProps;
+const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
 ---
 <li class="ct">
-  <a class:list={['ct__media', { 'ct__media--contain': fit === 'contain' }]} href={href} tabindex="-1" aria-hidden="true">
+  <a class:list={['ct__media', { 'ct__media--contain': fit === 'contain' }]} href={href} tabindex="-1" aria-hidden="true" {...ext}>
     <img src={img} alt={alt} style={pos ? `object-position:${pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
     {estado && <span class={`ct__estado ct__estado--${estado.tone}`}>{estado.label}</span>}
     {nota && <span class="ct__nota">{nota}</span>}
     <span class="ct__code">{codigo}</span>
   </a>
   <div class="ct__body">
-    <h3 class="ct__title"><a href={href}>{titulo}</a></h3>
+    <h3 class="ct__title"><a href={href} {...ext}>{titulo}</a></h3>
     <p class="ct__desc">{desc}</p>
     <ul class="ct__subs" aria-label={`Subcategorías de ${titulo}`}>
       {subs.map((s) => (
         <li>
-          <a class="ct__sub" href={s.href}>
+          <a class="ct__sub" href={s.href} {...(s.external ? { target: '_blank', rel: 'noopener nofollow' } : {})}>
             <span>{s.label}</span>
             <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
           </a>
         </li>
       ))}
     </ul>
-    <a class="ct__cta" href={href}>{cta}</a>
+    <a class="ct__cta" href={href} {...ext}>{cta}</a>
   </div>
 </li>
 

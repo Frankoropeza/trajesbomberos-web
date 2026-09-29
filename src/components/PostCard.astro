@@ -1,7 +1,7 @@
 ---
-// PostCard: tarjeta de artículo. Hereda el lenguaje visual de
-// CategoryCard (borde, elevación al hover, CTA con flecha) para
-// que el blog no parezca de otro sitio. NO emite schema:
+// PostCard: tarjeta de artículo. Mismo lenguaje que TileCard
+// (imagen 4:3, código, título 2 líneas, texto 3 líneas, botón rojo)
+// para que el blog no parezca de otro sitio. NO emite schema:
 // el índice padre emite el ItemList (regla B3).
 // Variante "wide": artículo destacado, a dos columnas.
 import { categoriaNombre, formatFechaCorta } from '@lib/blog';
@@ -22,7 +22,12 @@ interface Props {
 const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', destacado = false, wide = false, index = 0 } = Astro.props;
 ---
 <a class:list={['post-card', { 'post-card--wide': wide }]} href={href}>
-  {image && <img class="post-card__image" src={image} alt={imageAlt} width="800" height="450" loading="lazy" decoding="async" />}
+  {image && (
+    <span class="post-card__media">
+      <img class="post-card__image" src={image} alt={imageAlt} width="800" height="600" loading="lazy" decoding="async" />
+      <span class="post-card__code" aria-hidden="true">BL-{String(index + 1).padStart(2, '0')}</span>
+    </span>
+  )}
   <div class="post-card__head">
     <span class="post-card__cat">{categoriaNombre(categoria)}</span>
     {destacado && <span class="post-card__badge">Destacado</span>}
@@ -36,11 +41,10 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
       <span>{lectura} min de lectura</span>
     </span>
     <span class="post-card__cta">
-      Leer artículo
+      Leer guía: {title}
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </span>
   </div>
-  <span class="post-card__n" aria-hidden="true" data-n={String(index + 1).padStart(2, '0')}></span>
 </a>
 
 <style>
@@ -50,27 +54,45 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
     flex-direction: column;
     gap: 0.7rem;
     height: 100%;
-    padding: 0 1.5rem 1.3rem;
+    padding: 0 1.15rem 1.2rem;
     background: var(--color-white);
-    border: var(--border);
+    border: 1px solid rgb(20 22 26 / 0.14);
     border-top: 3px solid var(--color-primary);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius);
     text-decoration: none;
     color: var(--color-dark);
     overflow: hidden;
   }
-  .post-card__image {
-    width: calc(100% + 3rem);
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    margin: 0 -1.5rem 0.8rem;
-    border-bottom: var(--border);
+  /* Imagen 4:3 a sangre, igual que TileCard; código en la esquina inferior izquierda */
+  .post-card__media {
+    position: relative;
+    display: block;
+    width: calc(100% + 2.3rem);
+    margin: 0 -1.15rem 0.35rem;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-light);
   }
-  .post-card:hover {
-    box-shadow: var(--shadow);
-    border-color: rgb(200 16 46 / 0.35);
-    border-top-color: var(--color-primary);
+  .post-card__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+  }
+  .post-card__code {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.3rem 0.65rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
   }
 
   .post-card__head { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
@@ -94,58 +116,65 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
 
   .post-card__title {
     margin: 0;
-    font-size: var(--fs-h3);
-    line-height: 1.28;
-    text-wrap: balance;
+    font-size: 1.08rem;
+    line-height: 1.25;
+    min-height: calc(1.08rem * 1.25 * 2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .post-card:hover .post-card__title { color: var(--color-primary); }
   .post-card__resumen {
     margin: 0;
     flex: 1;
     color: var(--color-gray);
-    font-size: 0.88rem;
-    line-height: 1.6;
+    font-size: 0.87rem;
+    line-height: 1.5;
+    min-height: calc(0.87rem * 1.5 * 3);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .post-card__foot {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 0.3rem;
-    padding-top: 0.85rem;
-    border-top: var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9rem;
+    margin-top: auto;
   }
   .post-card__meta {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    min-height: 46px;
+    border-top: 1px solid rgb(20 22 26 / 0.12);
+    border-bottom: 1px solid rgb(20 22 26 / 0.12);
     gap: 0.45rem;
     color: var(--color-gray);
     font-size: 0.76rem;
     font-weight: 600;
   }
   .post-card__cta {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.4rem;
-    color: var(--color-primary);
+    min-height: 52px;
+    padding: 0.55rem 0.9rem;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-family: var(--font-display);
     font-weight: 800;
-    font-size: 0.83rem;
+    font-size: 0.86rem;
+    line-height: 1.2;
+    text-align: center;
   }
-
-  .post-card__n::before { content: attr(data-n); }
-  .post-card__n {
-    position: absolute;
-    right: 0.9rem;
-    top: 0.55rem;
-    font-size: 2.4rem;
-    font-weight: 800;
-    line-height: 1;
-    color: var(--color-light);
-    letter-spacing: var(--tracking-tight);
-    pointer-events: none;
-  }
+  .post-card:hover .post-card__cta { background: var(--color-dark); border-color: var(--color-dark); }
+  .post-card__cta svg { flex: none; }
 
   /* Destacado a dos columnas: mismo componente, otra retícula */
   .post-card--wide {
@@ -156,11 +185,13 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
     gap: 0.8rem clamp(1.5rem, 3vw, 3rem);
     padding: 0 clamp(1.6rem, 2.4vw, 2.4rem) clamp(1.6rem, 2.4vw, 2.4rem);
   }
-  .post-card--wide .post-card__image {
+  .post-card--wide .post-card__media {
     grid-area: image;
     width: calc(100% + clamp(3.2rem, 4.8vw, 4.8rem));
     margin: 0 calc(clamp(1.6rem, 2.4vw, 2.4rem) * -1) 0.8rem;
+    aspect-ratio: 16 / 9;
   }
+  .post-card--wide .post-card__code { display: none; }
   .post-card--wide .post-card__head { grid-area: head; }
   .post-card--wide .post-card__title { grid-area: title; font-size: clamp(1.35rem, 2vw, 1.85rem); }
   .post-card--wide .post-card__resumen { grid-area: resumen; font-size: 0.95rem; }
@@ -189,20 +220,10 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
     height: 4px;
     background: repeating-linear-gradient(115deg, var(--color-accent) 0 14px, var(--color-ink-soft) 14px 28px);
   }
-  .post-card--wide .post-card__meta { color: #b9bec5; font-size: 0.78rem; }
-  .post-card--wide .post-card__cta {
-    justify-content: center;
-    padding: 0.8rem 1.2rem;
-    border-radius: var(--radius);
-    background: var(--color-primary);
-    color: #fff;
-    font-size: 0.88rem;
-  }
+  .post-card--wide .post-card__meta { color: #b9bec5; font-size: 0.78rem; min-height: 0; border: 0; }
+  .post-card--wide .post-card__cta { font-size: 0.88rem; }
   .post-card:hover .post-card--wide .post-card__cta,
   .post-card--wide:hover .post-card__cta { background: var(--color-primary-dark); }
-  /* El destacado no numera: es uno solo y el número chocaba
-     con el panel oscuro. */
-  .post-card--wide .post-card__n { display: none; }
 
   @media (max-width: 860px) {
     .post-card--wide {
@@ -210,9 +231,6 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
       grid-template-areas: 'image' 'head' 'title' 'resumen' 'foot';
     }
     .post-card--wide .post-card__foot {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
       gap: 1rem;
       padding: 1rem 1.2rem;
       height: auto;

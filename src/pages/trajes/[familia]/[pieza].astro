@@ -8,7 +8,9 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import CategoryDetail from '@components/CategoryDetail.astro';
 import SpecTable from '@components/SpecTable.astro';
-import ProductCard from '@components/ProductCard.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard from '@components/home/TileCard.astro';
+import { tilesPiezas } from '@lib/catalogo/tiles';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import CTABanner from '@components/CTABanner.astro';
 import Sidebar from '@components/Sidebar.astro';
@@ -31,7 +33,6 @@ const familia = FAMILIAS.find((f) => f.slug === pz.familia)!;
 const path = `/trajes/${pz.familia}/${pz.slug}/`;
 
 // Hermanas: las demás piezas cotizables de la misma familia
-const hermanas = familia.productos.filter((pr) => pr.nombre !== pz.nombreCard);
 
 const menuItems = [
   { label: 'Qué es', href: '#que-es' },
@@ -245,19 +246,9 @@ const pageIndex = [
         title="Otras piezas de esta familia"
         description="Se cotizan por separado o dentro del conjunto completo."
       />
-      <div class="grid-cards grid-cards--3">
-        {hermanas.map((pr, i) => (
-          <ProductCard
-            nombre={pr.nombre}
-            desc={pr.desc}
-            chips={pr.chips}
-            spec={pr.spec}
-            img={pr.img}
-            alt={pr.alt}
-            index={i}
-          />
-        ))}
-      </div>
+      <TileGrid cols={3}>
+        {tilesPiezas(familia, pz.nombreCard).map((t) => <TileCard {...t} />)}
+      </TileGrid>
       <p class="volver"><a href={`/trajes/${pz.familia}/`}>← Volver a {familia.nombreWa.toLowerCase()}</a></p>
     </div>
   </section>

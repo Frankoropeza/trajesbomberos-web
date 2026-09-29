@@ -4,7 +4,10 @@
 import { MODELOS, SECCIONES, TIPOS } from './data';
 import { urlModelo } from './modelos';
 import type { Modelo } from './types';
-import { FAMILIAS } from '../familias';
+import { FAMILIAS, type FamiliaDetalle } from '../familias';
+import { PIEZAS, piezaPorNombreCard, piezasDeFamilia } from '../piezas';
+import { PRODUCT_CATEGORIES, WA_MESSAGES } from '../../config/site';
+import { waUrl } from '../wa';
 import type { TileProps } from '../../components/home/TileCard.astro';
 
 type Estado = NonNullable<TileProps['estado']>;
@@ -67,3 +70,122 @@ export function tileDeModelo(m: Modelo): TileProps {
     ],
   };
 }
+
+// ── Familias de traje y piezas (mismo diseño TileCard) ──────────────────────
+const TITULO_FAMILIA: Record<string, string> = {
+  aproximacion: 'Trajes de aproximación (aluminizados)',
+  extricacion: 'Trajes de extricación y rescate',
+  hazmat: 'Trajes Hazmat (protección química)',
+};
+const CTA_FAMILIA: Record<string, string> = {
+  estructural: 'Catálogo de trajes estructurales',
+  brigadista: 'Catálogo de trajes de brigadista',
+  forestal: 'Catálogo de trajes forestales',
+  aproximacion: 'Catálogo de trajes aluminizados',
+  entrada: 'Catálogo de trajes de entrada',
+  extricacion: 'Catálogo de trajes de extricación',
+  hazmat: 'Catálogo de trajes Hazmat',
+};
+// [etiqueta, slug de pieza] — se valida contra PIEZAS: nunca se enlaza una ficha inexistente.
+const SUBS_FAMILIA: Record<string, [string, string][]> = {
+  estructural: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']],
+  brigadista: [['Conjunto de brigada', 'conjunto'], ['Overol ignífugo', 'overol'], ['Chaquetón de brigadista', 'chaqueton'], ['Pantalonera de brigadista', 'pantalonera']],
+  forestal: [['Camisola forestal', 'camisola'], ['Pantalón forestal', 'pantalon'], ['Chamarra forestal', 'chamarra'], ['Overol forestal', 'overol']],
+  aproximacion: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']],
+  entrada: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']],
+  extricacion: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']],
+  hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']],
+};
+const RETRATO = new Set([
+  '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif',
+  '/images/productos/traje-brigadista-industrial-bombero.avif',
+  '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif',
+]);
+const RUTAS_PIEZA = new Set(PIEZAS.map((p) => `/trajes/${p.familia}/${p.slug}/`));
+const CODIGO_FAMILIA: Record<string, string> = { estructural: 'ES', brigadista: 'BR', forestal: 'FO', aproximacion: 'AP', entrada: 'EN', extricacion: 'EX', hazmat: 'HZ' };
+
+function subsFamilia(slug: string) {
+  return (SUBS_FAMILIA[slug] ?? [])
+    .map(([label, pieza]) => ({ label, href: `/trajes/${slug}/${pieza}/` }))
+    .filter((s) => RUTAS_PIEZA.has(s.href));
+}
+
+/** Orden de las familias en el índice: las 6 de PRODUCT_CATEGORIES y Hazmat al final. */
+const ORDEN_FAMILIAS = [...PRODUCT_CATEGORIES.map((c) => c.slug), 'hazmat'];
+
+/** Cards de familia de traje. `excluir` quita la familia en la que ya estás (no se enlaza a sí misma). */
+export function tilesFamilias(excluir?: string): TileProps[] {
+  return ORDEN_FAMILIAS
+    .map((slug, i) => ({ slug, i }))
+    .filter(({ slug }) => slug !== excluir)
+    .map(({ slug, i }) => {
+      const cat = PRODUCT_CATEGORIES.find((c) => c.slug === slug);
+      const fam = FAMILIAS.find((f) => f.slug === slug);
+      const src = cat?.image ?? fam?.images[0]?.src ?? '';
+      return {
+        codigo: `TR-${String(i + 1).padStart(2, '0')}`,
+        titulo: TITULO_FAMILIA[slug] ?? cat?.nombre ?? fam?.nombreWa ?? slug,
+        desc: cat?.desc ?? fam?.description ?? '',
+        href: `/trajes/${slug}/`,
+        cta: CTA_FAMILIA[slug] ?? `Catálogo de ${(cat?.nombre ?? slug).toLowerCase()}`,
+        img: src,
+        alt: cat?.imageAlt ?? fam?.images[0]?.alt ?? '',
+        pos: RETRATO.has(src) ? 'center 8%' : undefined,
+        subs: subsFamilia(slug),
+      } as TileProps;
+    });
+}
+
+const minuscula = (t: string) => t.charAt(0).toLowerCase() + t.slice(1);
+
+/** Cards de las piezas de una familia (chips como franja superior; ficha si existe, si no WhatsApp). */
+export function tilesPiezas(f: FamiliaDetalle, excluirNombre?: string): TileProps[] {
+  const cod = CODIGO_FAMILIA[f.slug] ?? 'PZ';
+  const hermanas = piezasDeFamilia(f.slug);
+  return f.productos.map((pr, i) => {
+    const ficha = piezaPorNombreCard(pr.nombre);
+    const wa = waUrl(WA_MESSAGES.categoria(pr.nombre));
+    const otras = hermanas
+      .filter((h) => h.slug !== ficha?.slug)
+      .slice(0, 3)
+      .map((h) => ({ label: h.nombreCard, href: `/trajes/${f.slug}/${h.slug}/` }));
+    return {
+      codigo: `${cod}-${String(i + 1).padStart(2, '0')}`,
+      titulo: pr.nombre,
+      desc: pr.desc,
+      href: ficha ? `/trajes/${f.slug}/${ficha.slug}/` : wa,
+      external: !ficha,
+      cta: ficha ? `Ficha de ${minuscula(pr.nombre)}` : `Cotizar ${minuscula(pr.nombre)}`,
+      img: pr.img,
+      alt: pr.alt,
+      fit: 'contain',
+      estado: pr.chips.length ? { label: pr.chips.join(' · '), tone: 'neutral' } : undefined,
+      subs: [...otras, { label: 'Cotizar por WhatsApp', href: wa, external: true }],
+    } as TileProps;
+  }).filter((_, i) => f.productos[i].nombre !== excluirNombre);
+}
+
+/** Card «Conjunto completo y compra por pieza» (kits): cierra el índice de familias. */
+export function tileConjunto(n: number): TileProps {
+  const valida = (href: string) => TIPOS_RUTAS.has(href) || RUTAS_PIEZA.has(href);
+  return {
+    codigo: `TR-${String(n).padStart(2, '0')}`,
+    titulo: 'Conjunto completo y compra por pieza',
+    desc: 'Traje, casco, monja, botas, guantes y ERA cotizados como un solo equipo compatible, o reposición de una sola prenda. Sin compra mínima.',
+    href: '/kits/',
+    cta: 'Kits de equipo completo para bombero',
+    img: '/images/escenas/bomberos-ataque-incendio-manguera.avif',
+    alt: 'Bomberos con equipo completo: traje estructural, casco y equipo de respiración autónoma',
+    subs: [
+      { label: 'Kit estructural', href: '/kits/kit-estructural/' },
+      { label: 'Kit brigadista', href: '/kits/kit-brigadista/' },
+      { label: 'Kit forestal', href: '/kits/kit-forestal/' },
+      { label: 'Tirantes para pantalonera', href: '/trajes/estructural/tirantes/' },
+    ].filter((x) => valida(x.href)),
+  };
+}
+const TIPOS_RUTAS = new Set<string>([
+  ...SECCIONES.map((x) => `/${x.slug}/`),
+  ...TIPOS.map((t) => `/${t.seccion}/${t.slug}/`),
+  ...MODELOS.filter((m) => m.seccion).map((m) => `/${m.seccion}/${m.id}/`),
+]);
