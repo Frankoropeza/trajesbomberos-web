@@ -19723,7 +19723,7 @@
    "lng": -99.5154,
    "precision": "exacta"
   },
-  "telefono": "(867) 319-4319",
+  "telefono": "(867) 712-4635",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -19734,20 +19734,27 @@
   "fuentes": [
    {
     "nombre": "po.tamaulipas.gob.mx",
-    "url": "http://po.tamaulipas.gob.mx/wp-content/uploads/2024/03/020_Laredo_Bomberos.pdf"
+    "url": "https://po.tamaulipas.gob.mx/wp-content/uploads/2024/03/020_Laredo_Bomberos.pdf"
    },
    {
     "nombre": "tamaulipas.gob.mx",
-    "url": "https://www.tamaulipas.gob.mx/datosabiertos/datos_abiertos/proteccion-civil-y-bomberos-nuevo-laredo/"
+    "retirada": "https://www.tamaulipas.gob.mx/datosabiertos/datos_abiertos/proteccion-civil-y-bomberos-nuevo-laredo/"
    },
    {
     "nombre": "diariolaredo.com",
     "url": "https://diariolaredo.com/laredo-texas/entrenamiento-binacional-reune-a-bomberos-de-varias-ciudades-de-mexico-en-laredo/"
+   },
+   {
+    "nombre": "DIF Tamaulipas — Directorio de Unidades Municipales de Protección Civil",
+    "url": "https://www.diftamaulipas.gob.mx/wp-content/uploads/sites/88/2021/01/Directorio-Unidades-Municipales-de-PC.pdf"
    }
   ],
   "verificadoEl": "2026-06-25",
   "confianza": "alta",
-  "municipioSlug": "nuevo-laredo"
+  "municipioSlug": "nuevo-laredo",
+  "telefonosAdicionales": [
+   "(867) 712-2124"
+  ]
  },
  {
   "id": "tamps-12",
