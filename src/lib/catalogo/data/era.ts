@@ -105,6 +105,10 @@ const notaModelo: Record<string, string> = {
   'skold-phantom': 'Control posterior a la intervención: documenta presión remanente, condición de la máscara, estado de correas, funcionamiento de prealarma y alarma de baja presión, además de cualquier golpe o contaminación. La limpieza debe respetar materiales y piezas del modelo. Antes de volver a montarlo, confirma que cilindro, válvula y acople coincidan con la configuración SCBA-P60FC autorizada; una adaptación improvisada invalida la revisión de compatibilidad que requiere una entrada segura.',
   'msa-g1-industrial': 'Preparación de disponibilidad: conserva la unidad en su caja rígida cuando se traslade, registra la inspección de arnés, regulador, manómetro, conexión roscada y máscara, y separa cualquier componente con daño o desempeño irregular. La carga con aire respirable y el control de la etiqueta del cilindro se coordinan con el permiso de entrada. Esta disciplina permite que la brigada conozca qué equipo está disponible antes de recibir una emergencia industrial.'
 };
-const modelosFinales = modelosProfundos.map((modelo) => ({ ...modelo, caracteristicas: [...modelo.caracteristicas, notaModelo[modelo.id]] }));
+const notaCompraModelo: Record<string, string> = {
+  'skold-phantom': 'Antes de ordenar el Phantöm, solicita SCBA-P60FC con cilindro de 4,500 psi, máscara, reguladores, alarmas y la declaración de conformidad correspondiente a la configuración ofrecida; la referencia NFPA de 1997 no sustituye esa verificación.',
+  'msa-g1-industrial': 'Antes de ordenar el MSA G1 Industrial, confirma máscara G1 talla M, conexión roscada, cilindro DOT de 4,500 psi y los accesorios opcionales requeridos; la partida debe conservar el alcance industrial NIOSH declarado.',
+};
+const modelosFinales = modelosProfundos.map((modelo) => ({ ...modelo, caracteristicas: [...modelo.caracteristicas, notaModelo[modelo.id]], notaCompra: notaCompraModelo[modelo.id] }));
 
 export const data = { seccion, tipos: tiposProfundos, modelos: modelosFinales };

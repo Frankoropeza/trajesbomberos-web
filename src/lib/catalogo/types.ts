@@ -94,4 +94,6 @@ export interface Modelo {
   imagenesExtra?: Imagen[];
   chips?: string[];
   resumen?: string[];
+  /** Nota de compra específica del modelo, cuando sustituye el enlace genérico del catálogo. */
+  notaCompra?: string;
 }
