@@ -20148,7 +20148,7 @@
   "fuentes": [
    {
     "nombre": "coatzacoalcos.gob.mx",
-    "url": "https://www.coatzacoalcos.gob.mx/prensa/conmemoran-147-aniversario-del-heroico-cuerpo-de-bomberos/"
+    "retirada": "https://www.coatzacoalcos.gob.mx/prensa/conmemoran-147-aniversario-del-heroico-cuerpo-de-bomberos/"
    },
    {
     "nombre": "coatzacoalcos.gob.mx",
@@ -20156,11 +20156,15 @@
    },
    {
     "nombre": "coatzacoalcos.gob.mx",
-    "url": "https://www.coatzacoalcos.gob.mx/telefonos-de-emergencia/"
+    "retirada": "https://www.coatzacoalcos.gob.mx/telefonos-de-emergencia/"
    },
    {
     "nombre": "municipiosur.com",
     "url": "https://municipiosur.com/2024/04/09/jorge-garcia-cruz-comandante-de-los-bomberos-portenos-durante-el-periodo-de-vacaciones-de-semana-santa-la-unidad-de-bomberos-de-coatzacoalcos-atendio-150-incendios-de-pastizales/"
+   },
+   {
+    "nombre": "Fiscalía General del Estado de Veracruz — Directorio de teléfonos de emergencia",
+    "url": "https://ftp2.fiscaliaveracruz.gob.mx/WEB%20FGE/Directorios/emergencias/directorio-emergencias-fge.pdf"
    }
   ],
   "verificadoEl": "2026-06-25",
@@ -20409,7 +20413,6 @@
    "lng": -95.2107,
    "precision": "exacta"
   },
-  "telefono": "(294) 942-7948",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
