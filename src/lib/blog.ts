@@ -30,6 +30,37 @@ export function categoriaUrl(slug: string): string {
   return `/blog/categoria/${slug}/`;
 }
 
+/** Segmenta una colección ordenada sin duplicar el cálculo en las rutas. */
+export function paginar<T>(posts: readonly T[], n: number, porPagina = 9) {
+  const totalPaginas = Math.max(1, Math.ceil(posts.length / porPagina));
+  const pagina = Math.min(Math.max(1, n), totalPaginas);
+  const inicio = (pagina - 1) * porPagina;
+  return {
+    pagina,
+    porPagina,
+    total: posts.length,
+    totalPaginas,
+    posts: posts.slice(inicio, inicio + porPagina),
+  };
+}
+
+/** La primera página vive en la URL base; las demás bajo /pagina/N/. */
+export function paginaUrl(base: string, n: number): string {
+  const raiz = base.endsWith('/') ? base : `${base}/`;
+  return n <= 1 ? raiz : `${raiz}pagina/${n}/`;
+}
+
+/** Añade el sufijo editorial sin incumplir el límite del title. */
+export function seoPagina(title: string, description: string, n: number) {
+  if (n <= 1) return { title, description };
+  const sufijo = ` · página ${n}`;
+  const preferido = title.split('|')[0]?.trim() || title;
+  const base = preferido.slice(0, Math.max(0, 60 - sufijo.length)).trimEnd();
+  const descripcionSufijo = ` · página ${n}`;
+  const descripcionBase = description.slice(0, Math.max(0, 160 - descripcionSufijo.length)).trimEnd();
+  return { title: `${base}${sufijo}`, description: `${descripcionBase}${descripcionSufijo}` };
+}
+
 export function categoriaNombre(slug: string): string {
   return blogCategoria(slug)?.nombre ?? slug;
 }

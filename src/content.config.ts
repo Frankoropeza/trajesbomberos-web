@@ -46,6 +46,7 @@ const blog = defineCollection({
     descRight: z.array(z.string()).min(1),   // panel derecho del hero
     meta: z.array(z.string()).default([]),   // datos duros del hero
     resumen: z.string(),                     // texto de la tarjeta en el índice
+    ancla: z.string().optional(),             // etiqueta breve del CTA de la tarjeta
 
     // --- taxonomía ---
     categoria: z.enum([

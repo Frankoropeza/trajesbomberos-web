@@ -1,122 +1,144 @@
 ---
-// L3 · Archivo por categoría: /blog/categoria/<slug>/
-// Existe para que cada categoría tenga una URL indexable propia
-// con su H1 y su tripleta de keywords, en vez de un filtro en
-// JavaScript que Google no puede rastrear.
+// L2 · Categoría del blog: /blog/categoria/{slug}/ (página 1).
+// Misma vista que el índice (BlogListado) filtrada por tema, con la
+// guía de la categoría debajo. Si pasa de 9 artículos, las páginas
+// ≥ 2 viven en [categoria]/pagina/[n].astro.
 import type { GetStaticPaths } from 'astro';
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
-import PostCard from '@components/PostCard.astro';
+import BlogListado from '@components/blog/BlogListado.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
+import CTABanner from '@components/CTABanner.astro';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { SITE, BLOG_CATEGORIES } from '@config/site';
-import { getPostsByCategoria, postUrl, categoriaUrl, readingTime, type Post } from '@lib/blog';
-import { HERO_GENERICO } from '@lib/imagenes';
+import { getPosts, getPostsByCategoria, paginar, postUrl, categoriaUrl } from '@lib/blog';
 
-export const getStaticPaths = (() => {
-  return BLOG_CATEGORIES.map((c) => ({ params: { categoria: c.slug }, props: { cat: c } }));
-}) satisfies GetStaticPaths;
-
+export const getStaticPaths = (() =>
+  BLOG_CATEGORIES.map((cat) => ({
+    params: { categoria: cat.slug },
+    props: { cat },
+  }))) satisfies GetStaticPaths;
 const { cat } = Astro.props;
-
-const posts: Post[] = await getPostsByCategoria(cat.slug);
+const todos = await getPosts();
+const categoriaPosts = await getPostsByCategoria(cat.slug);
+const pagina = paginar(categoriaPosts, 1);
 const path = categoriaUrl(cat.slug);
-
+const directoryItems = pagina.posts.map((post) => ({
+  name: post.data.title,
+  url: new URL(postUrl(post), SITE.url).href,
+}));
 const menuItems = [
   { label: `Artículos de ${cat.nombre.toLowerCase()}`, href: '#articulos' },
-  ...BLOG_CATEGORIES.filter((c) => c.slug !== cat.slug)
+  ...BLOG_CATEGORIES.filter((item) => item.slug !== cat.slug)
     .slice(0, 3)
-    .map((c) => ({ label: c.nombre, href: categoriaUrl(c.slug) })),
+    .map((item) => ({ label: item.nombre, href: categoriaUrl(item.slug) })),
   { label: 'Blog técnico de trajes para bomberos', href: '/blog/' },
 ];
-
-// Meta de la categoría: SSoT en site.ts, no generada a mano aquí,
-// para que la regla de las 3 keywords se audite en un solo lugar.
-const keywords = cat.keywords;
-const title = cat.seoTitle;
-const description = cat.seoDescription;
-
-const directoryItems = posts.map((p) => ({
-  name: p.data.title,
-  url: new URL(postUrl(p), SITE.url).href,
-}));
 ---
+
 <PageLayout
   pageType="directorio"
   path={path}
-  title={title}
-  description={description}
-  keywords={keywords}
+  title={cat.seoTitle}
+  description={cat.seoDescription}
+  keywords={cat.keywords}
   menuItems={menuItems}
   crumbLabel={cat.nombre}
-  parent={{ name: 'Blog técnico de bomberos', href: '/blog/' }}
+  parent={{ name: 'Blog', href: '/blog/' }}
   eyebrow={`Blog · ${cat.nombre}`}
   h1={cat.h1}
   lead={cat.lead}
-  meta={[`${posts.length} ${posts.length === 1 ? 'artículo' : 'artículos'}`, 'Norma vigente citada', 'Español de México', 'Sin relleno']}
+  meta={[
+    `${pagina.total} ${pagina.total === 1 ? 'artículo' : 'artículos'}`,
+    'Norma vigente citada',
+    'Español de México',
+    'Sin relleno',
+  ]}
   descRight={[
     cat.desc,
     'Si después de leer sigues con la duda, escríbenos: contestamos con la ficha técnica en la mano y te decimos con franqueza si lo que necesitas es otra cosa.',
   ]}
   directoryItems={directoryItems}
-  heroImage={HERO_GENERICO}
-  footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}
 >
   <div class="section section--alt" id="articulos">
     <div class="container layout-grid">
       <div class="layout-main">
         <SectionHeading clave="articulos" eyebrow={cat.nombre} title={`Artículos de ${cat.nombre.toLowerCase()}`} />
-        {posts.length > 0 ? (
-          <div class="post-grid">
-            {posts.map((p, i) => (
-              <PostCard
-                href={postUrl(p)}
-                title={p.data.title}
-                resumen={p.data.resumen}
-                categoria={p.data.categoria}
-                lectura={readingTime(p.body)}
-                image={p.data.imagen}
-                imageAlt={p.data.imagenAlt}
-                destacado={p.data.destacado}
-                index={i}
-              />
-            ))}
-          </div>
-        ) : (
-          <p class="vacio">Todavía no hay artículos publicados en esta categoría.</p>
-        )}
+        <BlogListado
+          posts={pagina.posts}
+          todos={todos}
+          total={pagina.total}
+          pagina={pagina.pagina}
+          totalPaginas={pagina.totalPaginas}
+          base={path}
+          actualCategoria={cat.slug}
+        />
         {cat.guia && (
           <section class="cat-guia" aria-label={cat.guia.titulo}>
             <SectionHeading eyebrow="Guía de la categoría" title={cat.guia.titulo} duo={cat.guia.parrafos.slice(0, 2)} />
-            {cat.guia.parrafos.slice(2).map((t) => <p>{t}</p>)}
+            {cat.guia.parrafos.slice(2).map((texto) => (
+              <p>{texto}</p>
+            ))}
             <ul class="cat-guia__links">
-              {cat.guia.enlaces.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+              {cat.guia.enlaces.map((enlace) => (
+                <li>
+                  <a href={enlace.href}>{enlace.label}</a>
+                </li>
+              ))}
             </ul>
           </section>
         )}
         <p class="volver"><a href="/blog/">← Blog técnico de trajes para bomberos</a></p>
       </div>
-
-      <BlogSidebar variant="categoria" currentCategoria={cat.slug} />
+      <BlogSidebar variant="categoria" visiblePostIds={pagina.posts.map((post) => post.id)} />
     </div>
   </div>
-
+  <CTABanner variant="dark" {...PRESET_CONTACTO} />
 </PageLayout>
 
 <style>
-  .post-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--gap-grid);
+  .cat-guia {
+    margin-top: clamp(2.2rem, 3.5vw, 3.2rem);
+    padding-top: clamp(1.8rem, 3vw, 2.6rem);
+    border-top: var(--border);
   }
-  .vacio { color: var(--color-gray); }
-  .cat-guia { margin-top: clamp(2.2rem, 3.5vw, 3.2rem); padding-top: clamp(1.8rem, 3vw, 2.6rem); border-top: var(--border); }
-  .cat-guia > p { max-width: 72ch; margin: 0 0 1rem; color: var(--color-gray); line-height: 1.7; }
-  .cat-guia__links { list-style: none; margin: 1.2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .cat-guia__links a { display: inline-block; padding: 0.45rem 0.8rem; border: var(--border); border-radius: var(--radius); background: var(--color-white); font-size: 0.86rem; font-weight: 700; text-decoration: none; color: var(--color-dark); }
-  .cat-guia__links a:hover { border-color: var(--color-primary); color: var(--color-primary); }
-  .volver { margin: 2.2rem 0 0; }
-  .volver a { font-weight: 800; text-decoration: none; }
-  .volver a:hover { text-decoration: underline; }
-  @media (max-width: 720px) { .post-grid { grid-template-columns: 1fr; } }
+  .cat-guia > p {
+    max-width: 72ch;
+    margin: 0 0 1rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+  }
+  .cat-guia__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.2rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .cat-guia__links a {
+    display: inline-block;
+    padding: 0.45rem 0.8rem;
+    border: var(--border);
+    border-radius: var(--radius);
+    background: var(--color-white);
+    color: var(--color-dark);
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .cat-guia__links a:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .volver {
+    margin: 2.2rem 0 0;
+  }
+  .volver a {
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .volver a:hover {
+    text-decoration: underline;
+  }
 </style>
