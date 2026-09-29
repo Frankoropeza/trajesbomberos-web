@@ -60,7 +60,7 @@ type Texto = {
   nombre: string;
   lead: string;
   referencia: string;
-  bloques: { h2: string; parrafos: string[] }[];
+  bloques: { h2: string; parrafos: string[]; lista?: string[] }[];
   errores: string[];
   faq: { q: string; a: string }[];
   resumen?: string[];
