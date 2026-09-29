@@ -50,7 +50,7 @@ La protección debe conservarse en la fibra y configuración declaradas por cada
 
 ## Componentes de una dotación forestal
 
-| Componente | Función en jornada exterior | Qué debe definirse al cotizar |
+| Componente | Función en jornada exterior | Qué debe definirse al cotizar | Las herramientas de la cuadrilla (Pulaski, McLeod, batefuego y rastrillo) están en [herramientas forestales](/blog/herramientas-forestales-pulaski-mcleod-batefuego/).
 | --- | --- | --- |
 | Camisola, pantalón u overol | Cobertura de torso y piernas con movilidad | Formato, material, talla, largos y refuerzos |
 | Casco forestal | Retención, sombra y protección de cabeza | Modelo, color, barbiquejo, clips, bandas y cubrenuca |

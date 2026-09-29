@@ -206,6 +206,30 @@ export interface BlogCategory {
 
 export const BLOG_CATEGORIES: BlogCategory[] = [
   {
+    slug: 'herramientas-rescate',
+    nombre: 'Herramientas y rescate',
+    desc: 'Herramientas, sistemas y criterios para equipar operaciones de rescate.',
+    h1: 'Herramientas y equipo de rescate para bomberos',
+    lead: 'Guías para elegir herramientas de entrada, rescate, líneas de agua y sus componentes por operación, compatibilidad y condición de servicio.',
+    seoTitle: 'Herramientas y rescate para bomberos | México',
+    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada, rescate técnico, mangueras y kits con datos comparables en México.',
+    keywords: ['herramientas y rescate para bomberos', 'equipo de rescate', 'México'],
+    guia: {
+      titulo: 'Cómo comprar herramientas y equipo de rescate',
+      parrafos: [
+        'La operación define la partida: una herramienta de entrada, un sistema hidráulico, una cuerda o una manguera no se eligen por apariencia. Antes de comparar opciones, identifica maniobra autorizada, personal capacitado, interfaces existentes, espacio de la unidad y método de resguardo.',
+        'Una requisición útil separa material, medida, peso cuando el fabricante lo publica, conexiones, accesorios y condición de entrega. Para componentes que se integran entre sí, la compatibilidad física debe confirmarse antes de asignarlos a una emergencia.',
+        'El criterio de compra incluye el ciclo completo: inspección, limpieza, registro, reemplazo y disponibilidad por unidad. Una pieza dañada o sin soporte puede fallar como recurso operativo aunque se haya adquirido correctamente.',
+      ],
+      enlaces: [
+        { label: 'Herramientas para bombero', href: '/herramientas/' },
+        { label: 'Equipo de rescate', href: '/rescate/' },
+        { label: 'Mangueras y accesorios contra incendio', href: '/mangueras-y-accesorios/' },
+        { label: 'Kits para bomberos', href: '/kits/' },
+      ],
+    },
+  },
+  {
     slug: 'especificacion',
     nombre: 'Cómo especificar equipo de bombero',
     desc: 'Qué datos debe traer una cotización para que sea comparable con otra.',

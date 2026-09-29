@@ -67,7 +67,7 @@ Confirma el material y alcance que declara el fabricante para cada artículo. La
 
 ## Rescate y extricación: protección más herramientas
 
-En rescate, el equipo personal se integra con casco, guantes, calzado, traje correspondiente, protección ocular y otros elementos definidos por la maniobra. Las [herramientas de rescate](/herramientas/) pueden ser compartidas por la unidad, pero no se compran como una lista desconectada: separador, cortador, combinada o cilindro requieren fuente de energía, acoples, transporte y procedimiento. El [traje de extricación para rescate vehicular](/blog/traje-de-extricacion-rescate-vehicular/) explica por qué no se usa el estructural en esa maniobra.
+En rescate, el equipo personal se integra con casco, guantes, calzado, traje correspondiente, protección ocular y otros elementos definidos por la maniobra. Las [herramientas de rescate](/herramientas/) pueden ser compartidas por la unidad, pero no se compran como una lista desconectada: separador, cortador, combinada o cilindro requieren fuente de energía, acoples, transporte y procedimiento. El [traje de extricación para rescate vehicular](/blog/traje-de-extricacion-rescate-vehicular/) explica por qué no se usa el estructural en esa maniobra. Las herramientas por operación se ordenan en la guía de [herramientas de un bombero](/blog/herramientas-de-un-bombero/).
 
 No atribuyas capacidades de una herramienta sin ficha del modelo. La compra debe describir escenario, número de operadores, componentes del sistema y mantenimiento. El equipo personal también se prueba con los movimientos y riesgos de la escena: cristal, metal, tráfico, energía y puntos de atrapamiento requieren controles que una prenda aislada no resuelve.
 

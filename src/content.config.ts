@@ -55,6 +55,7 @@ const blog = defineCollection({
       'comparativas',
       'mantenimiento',
       'licitacion',
+      'herramientas-rescate',
     ]),
     familia: z
       .enum([
