@@ -1,5 +1,6 @@
 ---
-title: "Vida útil del traje de bombero: los diez años y lo que pasa antes"
+title: "Vida útil del traje de bombero"
+titleAccent: "los diez años y lo que pasa antes"
 eyebrow: "Vida útil y servicio · NFPA 1850"
 lead: "El reloj no arranca cuando recibes el traje: arranca en la fecha de fabricación. Y entre esa fecha y el retiro hay un régimen de inspección, lavado y registro que casi ninguna estación mexicana lleva completo."
 descRight:

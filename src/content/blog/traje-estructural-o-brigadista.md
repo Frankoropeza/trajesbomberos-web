@@ -1,5 +1,6 @@
 ---
-title: "Traje estructural o traje de brigadista: cuál necesita tu operación"
+title: "Traje estructural o de brigadista"
+titleAccent: "cuál necesita tu operación"
 ancla: "Traje estructural o brigadista"
 eyebrow: "Comparativa · La confusión más cara del sector"
 lead: "Se parecen en la foto, cuestan muy distinto y protegen para escenarios que no tienen nada que ver. Aquí está la diferencia explicada con el criterio con el que se decide en un análisis de riesgo."

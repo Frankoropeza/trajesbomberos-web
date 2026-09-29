@@ -1,6 +1,6 @@
 ---
-title: "Cuánto cuesta un traje de bombero: qué determina el precio y cómo comparar cotizaciones"
-titleAccent: "sin confundir una oferta con otra"
+title: "Cuánto cuesta un traje de bombero"
+titleAccent: "qué determina el precio y cómo comparar"
 eyebrow: "Guía de compra · Cotizaciones técnicas"
 lead: "El costo de un traje de bombero depende de su familia, configuración, talla y volumen. Comparar cotizaciones exige leer la ficha antes que la fotografía."
 descRight:
