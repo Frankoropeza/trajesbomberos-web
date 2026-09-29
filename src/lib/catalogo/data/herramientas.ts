@@ -14,12 +14,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "eyebrow": "Catálogo de herramientas operativas",
     "lead": "La herramienta se selecciona por maniobra, material y compatibilidad con el equipo de protección; no por una silueta genérica.",
     "intro": [
-      "Una barra Halligan, un hacha, un gancho o una herramienta forestal cumplen funciones distintas. Antes de pedirlas, identifica la escena, el personal capacitado, el espacio disponible y el equipo que ya acompaña la respuesta. La compra debe distinguir entre entrada forzada, revisión desde una posición segura, construcción de línea y liquidación de puntos calientes.",
-      "En herramientas manuales no se publica una norma específica para sustituir la revisión del fabricante. Pide material de cabeza, tipo de mango, longitud, peso cuando esté declarado, protección de transporte y condiciones de garantía. También define dónde se guardarán: un mango expuesto a humedad, un filo sin funda o una cabeza floja cambian la disponibilidad del equipo.",
-      "La inspección inicia antes de cada guardia y continúa después de la intervención. Retira del servicio piezas deformadas, fisuradas, con uniones flojas o mangos astillados. La limpieza debe remover tierra, savia y residuos sin ocultar daño. Una herramienta no reemplaza el análisis de escena, el mando de la operación ni el EPP correspondiente.",
-      "Una partida bien definida incluye más que la herramienta. Asigna responsables, ubicación dentro de cada vehículo, protectores de punta o filo y una forma de registrar daño. Al recibir, compara material, configuración y accesorios contra la orden; el control inicial evita integrar piezas que no corresponden a la maniobra prevista.",
-      "Para sostener la disponibilidad, separa la inspección de la improvisación. Limpieza, secado y resguardo permiten observar la condición; no justifican enderezar, soldar o encintar una pieza comprometida. El reemplazo se decide por el estado físico, las instrucciones del fabricante y el criterio técnico establecido por la corporación.",
-      "La distribución por unidad debe reflejar los escenarios de respuesta y no una lista uniforme para todos los vehículos. Identifica qué herramientas viajan en acceso, cuáles se destinan a línea forestal y cuáles requieren fundas o compartimientos separados. Esta planeación permite realizar inventarios de inicio y cierre de turno sin confundir funciones ni dejar equipo expuesto."
+      "Surtimos herramientas para entrada forzada y combate forestal a brigadas y corporaciones que necesitan separar una Halligan de un Pulaski o un McLeod. La Halligan Romak Fire HAC1007 mide 91 cm y está declarada en acero inoxidable; esa geometría corresponde a rescate y entrada forzada, mientras las cabezas combinadas atienden línea y suelo forestal. Cotizamos tu dotación por maniobra.",
+      "Elegimos con tu brigada cabeza, mango, longitud y resguardo según la tarea. Hay cabezas de acero forjado, mangos de madera o fibra de vidrio, además de ganchos y puntas que exigen soporte propio; no publicamos una norma única para estos tipos. Mándanos por WhatsApp la maniobra, el vehículo y las herramientas que ya viajan en tu unidad.",
+      "Combinamos hacha, barra Halligan y gancho bichero para acceso, o Pulaski, McLeod, rastrillo, batefuego y bomba de mochila para vegetación. La bomba integra depósito, manguera, boquilla y arnés; el batefuego usa pala flexible y mango para llama baja. Pide la partida con fundas, protectores de filo o compartimientos separados según tu configuración.",
+      "Documentamos modelo, material, configuración, accesorios y ubicación por unidad antes de entregarte la partida. En la recepción cotejas la Halligan HAC1007 de 91 cm, los mangos y las piezas de resguardo contra tu orden; después registras condición física y responsable. Envíanos tu lista por WhatsApp para confirmar cada pieza y soporte."
     ],
     "grupos": [
       {
@@ -44,39 +42,39 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Qué herramienta cubre entrada forzada?",
-        "a": "La maniobra autorizada define si corresponde hacha, barra Halligan, gancho u otra herramienta; no son equivalentes."
+        "a": "La entrada forzada se cubre con hacha, barra Halligan o gancho bichero según la maniobra definida. La Halligan Romak Fire HAC1007 está declarada en acero inoxidable y 91 cm, mientras el gancho combina punta, gancho y asta para alcance. Mándanos por WhatsApp tu maniobra y el espacio disponible para cotizar la pieza y su soporte."
       },
       {
         "q": "¿Pulaski y McLeod hacen lo mismo?",
-        "a": "No. Sus cabezas y la relación con suelo o vegetación hacen que cubran trabajos distintos."
+        "a": "No, la Pulaski y el McLeod atienden acciones distintas en línea forestal. La Pulaski combina hacha y azadón en una cabeza de acero; el McLeod reúne dientes de rastrillo y hoja tipo azadón para combustible vegetal y suelo superficial. Pide ambos cuando tu cuadrilla requiere esas dos tareas, o mándanos tu maniobra para definir la partida."
       },
       {
         "q": "¿Se puede usar madera o fibra de vidrio?",
-        "a": "Ambos materiales se revisan y resguardan de acuerdo con su condición y las indicaciones del fabricante."
+        "a": "Sí, surtimos mangos de madera o fibra de vidrio según el modelo y la maniobra. La hacha puede llevar cabeza de acero forjado con cualquiera de esos mangos, pero humedad, astillas o daño físico cambian su condición de servicio. Pídenos el material de mango, la cabeza y el método de resguardo que requiere tu unidad."
       },
       {
         "q": "¿Qué debe revisarse antes de una guardia?",
-        "a": "Uniones, deformaciones, corrosión, filos, puntas, mango y el soporte de transporte."
+        "a": "Antes de guardia inspeccionas uniones, deformaciones, corrosión, filos, puntas, mango y soporte de transporte. Una Halligan de acero inoxidable, un gancho con asta y un batefuego de pala flexible requieren confirmar que su geometría y sujeción sigan íntegras. Mándanos por WhatsApp el modelo si necesitas cotizar su reemplazo o su protector."
       },
       {
         "q": "¿Cuándo se retira una herramienta?",
-        "a": "Ante fisura, holgura, deformación, corrosión relevante o daño que impida conservar su función."
+        "a": "Retira una herramienta ante fisura, holgura, deformación, corrosión relevante o daño que impida su función. En una Pulaski de cabeza de acero o un mango de madera y fibra de vidrio, esa condición afecta corte, remoción de suelo o control durante la maniobra. Pídenos por WhatsApp la pieza equivalente con material y resguardo definidos."
       },
       {
         "q": "¿Las herramientas manuales tienen una norma única?",
-        "a": "No se publica una norma específica común para estos tipos; solicita la especificación del fabricante."
+        "a": "No, el catálogo no publica una norma específica única para hacha, Halligan, gancho, Pulaski o McLeod. Por eso documentamos el material declarado, como acero inoxidable en la Halligan HAC1007 de 91 cm, y la configuración solicitada. Mándanos por WhatsApp tu pliego para cotizar el modelo y pedir la especificación del fabricante."
       },
       {
         "q": "¿Cómo se integra la bomba de mochila?",
-        "a": "Como apoyo definido por la estrategia forestal, con arnés, depósito, manguera y repuestos revisados."
+        "a": "La bomba de mochila forestal se integra como apoyo de agua puntual en vegetación, con depósito, bomba, manguera, boquilla y arnés. Esos cinco componentes se cotizan junto con la capacidad declarada, estanqueidad y repuestos para tu configuración forestal. Mándanos por WhatsApp la tarea de tu cuadrilla para incluir arnés y accesorios en la partida."
       },
       {
         "q": "¿Qué se registra en la recepción?",
-        "a": "Modelo, cantidad, ubicación, estado físico, accesorios y responsable de la inspección inicial."
+        "a": "En recepción registra modelo, cantidad, ubicación, estado físico, accesorios y responsable de inspección inicial. Para la Halligan HAC1007 confirma además sus 91 cm y acero inoxidable; para herramientas forestales coteja cabeza, mango, arnés o boquilla cuando corresponda. Pídenos la cotización con esa relación para recibir cada componente contra tu orden."
       },
       {
         "q": "¿Por qué incluir soporte en la compra?",
-        "a": "Porque una herramienta sin sujeción puede dañarse, dañar otros equipos o ser inaccesible en traslado."
+        "a": "Incluye soporte porque una Halligan de 91 cm, un gancho bichero o una Pulaski necesitan llegar sujetos y localizables. Fundas, protectores de filo y compartimientos separados evitan que punta, cabeza de acero o pala flexible queden expuestas durante traslado. Mándanos por WhatsApp la distribución de tu vehículo para cotizar cada herramienta con su resguardo."
       }
     ],
     "hero": {
@@ -85,8 +83,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     },
     "leyendaImagenIlustrativa": "Imagen ilustrativa. La configuración exacta se confirma por escrito en la cotización.",
     "resumenHero": [
-      "La compra de herramientas para bombero parte de una tarea delimitada. Entrada forzada, alcance controlado y trabajo de línea en vegetación demandan geometrías, longitudes y métodos de resguardo diferentes; una dotación útil evita duplicar piezas que no cubren la misma maniobra.",
-      "El inventario debe dialogar con el vehículo, el EPP, la capacitación y el programa de inspección. Acero forjado, fibra de vidrio y madera requieren cuidados distintos, pero toda herramienta necesita una revisión física, una sujeción de transporte y un criterio claro para retirarla de servicio. En LORICA cotizamos la dotación por maniobra, sin compra mínima."
+      "Herramientas para bombero son piezas de entrada forzada y combate forestal para brigadas, comandancias y unidades móviles. La Halligan Romak Fire HAC1007 de acero inoxidable mide 91 cm; Pulaski, McLeod, rastrillo y batefuego cubren tareas distintas en vegetación. Elegimos cada una según la maniobra y el resguardo de tu unidad.",
+      "Cotizamos por maniobra, material, soporte y accesorios: cabeza de acero forjado, mango de madera o fibra de vidrio, funda o protector. Nos mandas por WhatsApp tu lista, vehículo y tarea; te confirmamos la configuración por escrito para que cotejes modelo, cantidad y ubicación al recibir."
     ],
     "etiquetas": {
       "menuTipos": "Herramientas por maniobra",
