@@ -2,12 +2,12 @@
 // L2 · Contacto. WhatsApp-first (la conversión del sitio), con
 // teléfono y correo como alternativas. Los datos salen del SSoT
 // (CONTACT en site.ts): cuando Frank ponga los reales, esta
-// página se actualiza sola. CERO horarios ni direcciones
-// fabricadas.
+// página se actualiza sola. La dirección sale de DIRECCION (aprobada
+// por Frank el 2026-09-29); nada de datos fabricados.
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import { CONTACT, SEGMENTOS } from '@config/site';
+import { CONTACT, DIRECCION, SEGMENTOS } from '@config/site';
 import { waUrl } from '@lib/wa';
 import { HERO_GENERICO } from '@lib/imagenes';
 
@@ -19,6 +19,7 @@ const description =
 
 const menuItems = [
   { label: 'Cotizar trajes por WhatsApp', href: '#whatsapp' },
+  { label: 'Dirección de la empresa', href: '#direccion' },
   { label: 'Qué incluir en tu mensaje', href: '#mensaje' },
   { label: 'Formulario para cotizar trajes', href: '#formulario' },
   { label: 'Trajes para bomberos por familia', href: '/trajes/' },
@@ -96,6 +97,19 @@ const faqs = [
         </div>
       </section>
 
+      <section id="direccion" class="block">
+        <SectionHeading clave="direccion"
+          eyebrow="Dónde estamos"
+          title="Dirección de LORICA en la Ciudad de México"
+        />
+        <address class="contacto-dir">
+          <span class="contacto-dir__nombre">LORICA · Trajes para bomberos</span>
+          <span>{DIRECCION.linea1}</span>
+          <span>{DIRECCION.linea2}</span>
+          <a class="contacto-dir__mapa" href={DIRECCION.mapsUrl} target="_blank" rel="noopener">Cómo llegar a LORICA en Google Maps</a>
+        </address>
+      </section>
+
       <section id="mensaje" class="block">
         <SectionHeading clave="primer-mensaje"
           eyebrow="Para cotizar más rápido"
@@ -127,6 +141,10 @@ const faqs = [
   .contacto-vias { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
   .contacto-alt { font-weight: 800; color: var(--color-dark); text-decoration: none; }
   .contacto-alt:hover { text-decoration: underline; }
+
+  .contacto-dir { display: grid; gap: .35rem; font-style: normal; max-width: 40rem; padding: 1.5rem 1.75rem; border: var(--border); border-top: 3px solid var(--color-primary); background: var(--color-white); }
+  .contacto-dir__nombre { font-weight: 800; color: var(--color-dark); }
+  .contacto-dir__mapa { justify-self: start; margin-top: .75rem; font-weight: 800; color: var(--color-primary); }
 
   .contacto-steps {
     margin: 0;

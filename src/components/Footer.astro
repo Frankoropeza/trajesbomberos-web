@@ -2,7 +2,7 @@
 // Footer en seis zonas: CTA, catálogo, empresa y soporte, normas, legales y
 // acento. Las rutas internas se validan antes de renderizar; BaseLayout emite
 // el JSON-LD, por lo que este componente no añade datos estructurados.
-import { CONTACT, EMPRESA, FOOTER, SITE, WA_MESSAGES, type FooterColumn, type FooterLink } from '@config/site';
+import { CONTACT, EMPRESA, FOOTER, SITE, WA_MESSAGES, type FooterColumn, type FooterLink, DIRECCION } from '@config/site';
 import { rutaExiste } from '@lib/rutas';
 import { waUrl } from '@lib/wa';
 
@@ -80,6 +80,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
         <p class="fbrand__positioning">{CONTACT.posicionamiento}</p>
         <p class="fbrand__copy">Especialistas en trajes para bomberos con ficha técnica y CFDI 4.0, sin compra mínima y envío a los 32 estados.</p>
         <dl class="fnap">
+          <div class="fnap__dir"><dt>Dirección</dt><dd><a href={DIRECCION.mapsUrl} target="_blank" rel="noopener">{DIRECCION.linea1}<br />{DIRECCION.linea2}</a></dd></div>
           <div><dt>Teléfono</dt><dd><a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a></dd></div>
           <div><dt>WhatsApp</dt><dd><a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar trajes por WhatsApp</a></dd></div>
           <div><dt>Correo</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd></div>
@@ -384,6 +385,10 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: .8rem 1.25rem;
     margin: 0 0 1.25rem;
+  }
+
+  .fnap__dir {
+    grid-column: 1 / -1;
   }
 
   .fnap dt {

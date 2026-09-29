@@ -1,4 +1,4 @@
-import { SITE, CONTACT, KEYWORDS } from '@config/site';
+import { SITE, CONTACT, KEYWORDS, DIRECCION } from '@config/site';
 
 // ============================================================
 // SEO centralizado (regla B3: UN solo emisor de schema por
@@ -79,6 +79,15 @@ export function organizationSchema(): object {
     },
     telephone: CONTACT.telefonoHref,
     email: CONTACT.email,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: `${DIRECCION.calle}, Col. ${DIRECCION.colonia}`,
+      addressLocality: DIRECCION.alcaldia,
+      addressRegion: DIRECCION.ciudad,
+      postalCode: DIRECCION.cp,
+      addressCountry: DIRECCION.pais,
+    },
+    hasMap: DIRECCION.mapsUrl,
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',

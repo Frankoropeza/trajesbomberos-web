@@ -50,7 +50,24 @@ export const EMPRESA: {
   anioInicio?: number;
 } = {
   nombreComercial: 'LORICA · Trajes para bomberos',
+  domicilio: 'Manuel Caballero 161, Col. Obrera, Alcaldía Cuauhtémoc, C.P. 06800, Ciudad de México, CDMX',
+  ciudad: 'Ciudad de México',
 };
+
+// Dirección de la empresa (aprobada por Frank el 2026-09-29). Una sola fuente para
+// footer, /contacto/, /empresa/, legales y JSON-LD (PostalAddress).
+export const DIRECCION = {
+  calle: 'Manuel Caballero 161',
+  colonia: 'Obrera',
+  alcaldia: 'Cuauhtémoc',
+  cp: '06800',
+  ciudad: 'Ciudad de México',
+  estado: 'CDMX',
+  pais: 'MX',
+  linea1: 'Manuel Caballero 161, Col. Obrera',
+  linea2: 'Cuauhtémoc, 06800 Ciudad de México, CDMX',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Manuel+Caballero+161%2C+Obrera%2C+Cuauht%C3%A9moc%2C+06800+Ciudad+de+M%C3%A9xico%2C+CDMX',
+} as const;
 
 export const WA_MESSAGES = {
   cotizar: 'Hola, quiero cotizar trajes o equipo para bomberos.',

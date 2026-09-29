@@ -2,6 +2,10 @@ import type { Duo } from './index';
 
 export const DUO_P_B: Record<string, Record<string, Duo>> = {
   '/contacto/': {
+    direccion: [
+      'LORICA, proveedor de trajes para bomberos, tiene su domicilio en Manuel Caballero 161, colonia Obrera, alcaldía Cuauhtémoc, C.P. 06800, Ciudad de México. Es el domicilio del responsable que figura en el aviso de privacidad y en los términos y condiciones del sitio.',
+      'Desde la Ciudad de México cotizamos y enviamos trajes y equipo a los 32 estados. Si necesitas acudir en persona para revisar una partida o entregar documentación, confirma día y hora por WhatsApp antes de tu visita para que te atienda quien lleva tu cotización.',
+    ],
     faq: [
       'Para cotizar trajes para bomberos suelen surgir dudas sobre compra mínima, factura, envíos y licitación. Atendemos pedidos por pieza o conjunto, emitimos CFDI 4.0 y cotizamos entregas a los 32 estados; la documentación técnica se define según la partida y el expediente.',
       'Escribe por WhatsApp o correo si necesitas resolver una requisición antes de comprar. Indica si requieres factura, destino de envío o apoyo para pliego, y recibirás una respuesta en día hábil con los datos que faltan para integrar una propuesta por escrito.',
