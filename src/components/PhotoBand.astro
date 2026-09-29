@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // Banda de foto a todo lo ancho (full-bleed). Estática, sin
 // animación (regla del sitio). NO toca el hero: es una sección
 // independiente que se intercala entre bloques de contenido.
@@ -13,7 +14,7 @@ interface Props {
 const { src, alt, caption, position = 'center', height = 'band' } = Astro.props;
 ---
 <section class={`photoband photoband--${height}`}>
-  <img src={src} alt={alt} loading="lazy" decoding="async" style={`object-position:${position}`} />
+  <img src={src} {...responsive(src, SIZES.full)} alt={alt} loading="lazy" decoding="async" style={`object-position:${position}`} />
   {caption && <p class="photoband__cap"><span>{caption}</span></p>}
 </section>
 

@@ -86,11 +86,26 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   let closeTimer: number | undefined;
   let hoverOpenedAt = 0;
   // Borde inferior real del header (varía con la topbar visible): ancla del velo y del cajón.
-  const syncBottom = () => { if (header) root.style.setProperty('--hdr-bottom', `${Math.max(0, header.getBoundingClientRect().bottom)}px`); };
-  syncBottom();
-  window.addEventListener('scroll', syncBottom, { passive: true });
-  window.addEventListener('resize', syncBottom);
-  root.classList.add('js');
+  // Rendimiento (CWV): la variable vive en el <header>, no en :root —escribirla en :root
+  // invalidaba el estilo de TODO el documento— y solo se mide cuando hay un panel abierto.
+  // Antes se medía al cargar (reflow forzado de ~430 ms en PSI) y en cada evento de scroll.
+  // Siempre se LEE antes de ESCRIBIR (lectura → escritura) para no forzar layout.
+  let lastBottom = -1;
+  let frame = 0;
+  const syncBottom = () => {
+    if (!header) return;
+    const bottom = Math.max(0, Math.round(header.getBoundingClientRect().bottom));
+    if (bottom !== lastBottom) { lastBottom = bottom; header.style.setProperty('--hdr-bottom', `${bottom}px`); }
+  };
+  const menuAbierto = () => toggle?.getAttribute('aria-expanded') === 'true' || navItems.some((item) => item.classList.contains('is-open'));
+  const syncEnFrame = () => {
+    if (frame || !menuAbierto()) return;
+    frame = requestAnimationFrame(() => { frame = 0; syncBottom(); });
+  };
+  window.addEventListener('scroll', syncEnFrame, { passive: true });
+  window.addEventListener('resize', syncEnFrame);
+  // La clase «js» va en el header (solo invalida su subárbol), no en <html>.
+  header?.classList.add('js');
   const closeDesktop = () => {
     window.clearTimeout(closeTimer);
     navItems.forEach((item) => { item.classList.remove('is-open'); item.querySelector<HTMLButtonElement>('.nav-trigger')?.setAttribute('aria-expanded', 'false'); });
@@ -99,11 +114,11 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   const openDesktop = (item: HTMLElement) => {
     window.clearTimeout(closeTimer);
     const wasOpen = item.classList.contains('is-open');
+    if (!wasOpen) syncBottom(); // lectura antes de cualquier escritura
     closeDesktop();
     if (wasOpen) return;
     item.classList.add('is-open');
     item.querySelector<HTMLButtonElement>('.nav-trigger')?.setAttribute('aria-expanded', 'true');
-    syncBottom();
     if (scrim) scrim.hidden = false;
   };
   navItems.forEach((item) => {
@@ -130,7 +145,7 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
   };
   const openMobile = () => {
     if (!toggle || !mobileMenu) return;
-    closeDesktop(); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); syncBottom(); mobileMenu.hidden = false; root.classList.add('nav-open'); mobileTriggers[0]?.focus();
+    syncBottom(); closeDesktop(); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); mobileMenu.hidden = false; root.classList.add('nav-open'); mobileTriggers[0]?.focus();
   };
   toggle?.addEventListener('click', () => toggle.getAttribute('aria-expanded') === 'true' ? closeMobile() : openMobile());
   mobileTriggers.forEach((trigger) => trigger.addEventListener('click', () => {
@@ -501,11 +516,11 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
     display: none;
   }
 
-  :global(html:not(.js) .nav-item:hover .mega),:global(html:not(.js) .nav-item:focus-within .mega) {
+  .site-header:not(.js) .nav-item:hover .mega,.site-header:not(.js) .nav-item:focus-within .mega {
     display: block;
   }
 
-  :global(html.js .nav-item.is-open .mega) {
+  .site-header.js .nav-item.is-open .mega {
     display: block;
   }
 

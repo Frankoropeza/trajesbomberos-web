@@ -3236,7 +3236,7 @@
    "lng": -106.0889,
    "precision": "aproximada"
   },
-  "telefono": "(614) 200-4800 ext. 3179 ext. 3179",
+  "telefono": "(614) 200-4800 ext. 3179",
   "sitioWeb": "https://www.municipiochihuahua.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -7840,7 +7840,7 @@
   "telefono": "(55) 5116-4415",
   "telefonosAdicionales": [
    "(55) 5116-4416",
-   "(55) 5836-1500 ext. 1904 ext. 1904"
+   "(55) 5836-1500 ext. 1904"
   ],
   "sitioWeb": "https://ecatepec.gob.mx/direccion-de-proteccion-civil-y-bomberos/",
   "servicios": [
@@ -9629,7 +9629,7 @@
    "lng": -100.93355398,
    "precision": "exacta"
   },
-  "telefono": "(418) 1820-343",
+  "telefono": "(418) 182-0343",
   "servicios": [
    "incendios-estructurales",
    "atencion-prehospitalaria"
@@ -9642,6 +9642,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=1282525"
+   },
+   {
+    "nombre": "H. Cuerpo de Bomberos Dolores Hidalgo — publicación oficial en Facebook",
+    "url": "https://www.facebook.com/BomberosDH/posts/central-de-bomberos-tel%C3%A9fono-%EF%B8%8F-418-182-03-43-n%C3%BAmero-de-emergencias-911/1510716431064655/"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9665,12 +9669,7 @@
    "lng": -101.26538933,
    "precision": "exacta"
   },
-  "telefono": "(473) 734-5969",
-  "telefonosAdicionales": [
-   "(473) 118-9164"
-  ],
   "email": "bomberossimub@gmail.com",
-  "sitioWeb": "https://bomberossimub.org/",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -9711,7 +9710,6 @@
    "lng": -101.35576173,
    "precision": "exacta"
   },
-  "telefono": "(462) 660-2233",
   "email": "proteccioncivil@irapuato.gob.mx",
   "sitioWeb": "https://www.irapuato.gob.mx/",
   "servicios": [
@@ -9823,7 +9821,6 @@
    "lng": -101.71750918,
    "precision": "exacta"
   },
-  "telefono": "(477) 7738-124",
   "sitioWeb": "https://bomberosdeleon.org/",
   "servicios": [
    "incendios-estructurales",
@@ -9858,7 +9855,6 @@
    "lng": -101.58510752,
    "precision": "exacta"
   },
-  "telefono": "(477) 7735-313",
   "sitioWeb": "https://bomberosdeleon.org/",
   "servicios": [
    "incendios-estructurales",
@@ -9893,7 +9889,6 @@
    "lng": -101.67953975,
    "precision": "exacta"
   },
-  "telefono": "(477) 7175-916",
   "sitioWeb": "https://bomberosdeleon.org/",
   "servicios": [
    "incendios-estructurales",
@@ -10208,7 +10203,6 @@
    "lng": -101.4296,
    "precision": "exacta"
   },
-  "telefono": "(472) 722-0911",
   "email": "soporte@bomberosdesilao.com",
   "servicios": [
    "incendios-estructurales",
@@ -10307,13 +10301,12 @@
   "corporacion": "CREI — Cuerpo de Rescate y Extinción de Incendios del Aeropuerto Internacional Juan N. Álvarez",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Subestación Renacimiento",
-  "direccion": "Calle, Col. Renacimiento, C.P. 39715",
+  "direccion": "Col. Renacimiento, C.P. 39715",
   "coordenadas": {
    "lat": 16.89120004,
    "lng": -99.82486466,
    "precision": "exacta"
   },
-  "telefono": "(744) 4416-223",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -10377,7 +10370,7 @@
   "corporacion": "Coordinación General de Protección Civil y Bomberos de Acapulco",
   "rolEstacion": "central",
   "numeroEstacion": "Cuartel Central",
-  "direccion": "Calle Amates 274, Col. Farrallon del Ovispo, C.P. 39680",
+  "direccion": "Calle Amates 274, Col. Farallón del Obispo, C.P. 39680",
   "coordenadas": {
    "lat": 16.86376328,
    "lng": -99.86968954,
@@ -10421,7 +10414,7 @@
   "tipo": "Municipal",
   "corporacion": "H. Cuerpo de Bomberos de Chilpancingo de los Bravo",
   "rolEstacion": "unica",
-  "direccion": "Calle, Col. Villa Moderna, C.P. 39074",
+  "direccion": "Col. Villa Moderna, C.P. 39074",
   "coordenadas": {
    "lat": 17.53573831,
    "lng": -99.49916116,
@@ -10541,7 +10534,6 @@
    "lng": -101.54973835,
    "precision": "exacta"
   },
-  "telefono": "(755) 554-7551",
   "telefonosAdicionales": [
    "(755) 555-0700"
   ],
@@ -10645,7 +10637,6 @@
    "lng": -98.7591,
    "precision": "aproximada"
   },
-  "telefono": "(771) 714-1522",
   "sitioWeb": "https://www.pachuca.gob.mx/portal/",
   "servicios": [
    "incendios-estructurales",
@@ -10688,7 +10679,6 @@
   },
   "telefono": "(771) 714-8802",
   "email": "proteccioncivil@hidalgo.gob.mx",
-  "sitioWeb": "http://proteccioncivil.hidalgo.gob.mx/",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -13158,7 +13148,7 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación de Protección Civil y Bomberos de Zacapu",
   "rolEstacion": "unica",
-  "direccion": "Calle, Col. Centro, C.P. 58600",
+  "direccion": "Col. Centro, C.P. 58600",
   "coordenadas": {
    "lat": 19.81216578,
    "lng": -101.7956398,

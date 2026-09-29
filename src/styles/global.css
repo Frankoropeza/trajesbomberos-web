@@ -293,3 +293,14 @@ th { font-family: var(--font-display); }
   transition: none !important;
   scroll-behavior: auto;
 }
+
+/* Rendimiento (CWV, 2026-09-29): las secciones fuera de pantalla no se
+   estilan, maquetan ni pintan hasta acercarse al viewport. Recorta el
+   trabajo de «Style & Layout» del primer render (DOM de ~2 900 nodos).
+   contain-intrinsic-size «auto» recuerda el alto real una vez pintadas,
+   así que no hay saltos al volver a subir. */
+main > .section:not(:first-child),
+.site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}

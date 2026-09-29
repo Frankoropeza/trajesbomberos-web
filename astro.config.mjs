@@ -2,12 +2,14 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import rehypeExternalLinks from 'rehype-external-links';
+import cspHashes from './integrations/csp-hashes.mjs';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://trajesbomberos.com',
   trailingSlash: 'ignore',
-  integrations: [mdx(), sitemap()],
+  // cspHashes va al final: corre sobre el HTML ya escrito en dist/.
+  integrations: [mdx(), sitemap(), cspHashes()],
   markdown: {
     rehypePlugins: [
       // Fuentes citadas en el blog: se abren aparte y no reparten

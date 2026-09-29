@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // TileCard: card homologada de TODO el index (categorías, familias de
 // traje, complementos). Estructura fija: imagen 4:3 → título (2 líneas
 // reservadas) → texto (3 líneas) → 4 subcategorías → botón principal.
@@ -29,7 +30,7 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
 ---
 <li class="ct">
   <a class:list={['ct__media', { 'ct__media--contain': fit === 'contain' }]} href={href} tabindex="-1" aria-hidden="true" {...ext}>
-    <img src={img} alt={alt} style={pos ? `object-position:${pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
+    <img src={img} {...responsive(img, SIZES.tile)} alt={alt} style={pos ? `object-position:${pos}` : undefined} width="800" height="600" loading="lazy" decoding="async" />
     {estado && <span class={`ct__estado ct__estado--${estado.tone}`}>{estado.label}</span>}
     {nota && <span class="ct__nota">{nota}</span>}
     <span class="ct__code">{codigo}</span>
@@ -40,9 +41,8 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     <ul class="ct__subs" aria-label={`Subcategorías de ${titulo}`}>
       {subs.map((s) => (
         <li>
-          <a class="ct__sub" href={s.href} {...(s.external ? { target: '_blank', rel: 'noopener nofollow' } : {})}>
+          <a class="ct__sub" href={s.href} aria-label={`${s.label}, ${titulo}`} {...(s.external ? { target: '_blank', rel: 'noopener nofollow' } : {})}>
             <span>{s.label}</span>
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
           </a>
         </li>
       ))}
@@ -178,7 +178,17 @@ const ext = external ? { target: '_blank', rel: 'noopener nofollow' } : {};
     line-height: 1.25;
     text-decoration: none;
   }
-  .ct__sub svg { flex: none; color: var(--color-primary); }
+  /* Flecha en CSS (antes un <svg>+<path> por enlace: ~270 nodos menos en la home) */
+  .ct__sub::after {
+    content: '';
+    flex: none;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    border-top: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    transform: rotate(45deg);
+  }
   .ct__sub:hover { color: var(--color-primary); }
   .ct__sub:hover span { text-decoration: underline; text-underline-offset: 3px; }
   .ct__sub:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }

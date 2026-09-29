@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import SpecTable from '@components/SpecTable.astro';
@@ -118,13 +119,13 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
       <div class="producto__grid">
         <div class="producto__galeria">
           {image ? (
-            <figure class="producto__foto"><img src={image.src} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} loading="eager" fetchpriority="high" decoding="async" />
+            <figure class="producto__foto"><img src={image.src} {...responsive(image.src, SIZES.half)} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} loading="eager" fetchpriority="high" decoding="async" />
               <figcaption>{image.origen === 'proveedor' ? 'Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.' : (seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.')}</figcaption>
             </figure>
           ) : (
             <div class="producto__pendiente" role="img" aria-label={`Imagen pendiente de ${nombre}`}>Imagen pendiente</div>
           )}
-          {extras.length > 0 && <div class="producto__extras">{extras.map((extra) => <img src={extra.src} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" decoding="async" />)}</div>}
+          {extras.length > 0 && <div class="producto__extras">{extras.map((extra) => <img src={extra.src} {...responsive(extra.src, SIZES.tile)} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" decoding="async" />)}</div>}
         </div>
         <aside class="producto__panel" aria-label="Ficha rápida">
           <p class="eyebrow">Ficha rápida</p>
@@ -143,7 +144,7 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
   <div class="section"><div class="container layout"><main>
     <section class="block first" id="a-fondo"><div class:list={['detail', { 'detail--solo': !isTipo }]}>
       <div class="copy"><p class="eyebrow">{isTipo ? 'Qué es' : 'Modelo y configuración'}</p>{copy.slice(0, 1).map((block) => <><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</>)}</div>
-      {isTipo && image && <div class="gallery"><figure><img src={image.src} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} />{image.origen === 'proveedor' ? <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption> : <figcaption>{seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.'}</figcaption>}</figure>{extras.map((extra) => <figure><img src={extra.src} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" /><figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption></figure>)}</div>}
+      {isTipo && image && <div class="gallery"><figure><img src={image.src} {...responsive(image.src, SIZES.half)} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} />{image.origen === 'proveedor' ? <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption> : <figcaption>{seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.'}</figcaption>}</figure>{extras.map((extra) => <figure><img src={extra.src} {...responsive(extra.src, SIZES.tile)} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" /><figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption></figure>)}</div>}
     </div>{copy.slice(1).map((block) => <div class="prose"><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</div>)}</section>
     <section class="block" id="ficha"><SectionHeading clave="ficha" eyebrow="Ficha técnica" title={isTipo ? 'Datos para tu requisición' : 'Especificación disponible'} /><SpecTable grupos={[{ grupo: isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}</strong> — {norma.alcance}</p>)}</section>
     {!isTipo && <section class="block"><SectionHeading clave="caracteristicas" eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="features">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
