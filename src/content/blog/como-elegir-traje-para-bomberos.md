@@ -60,7 +60,7 @@ Con esas cuatro respuestas la familia se elige sola. Sin ellas, todo lo demás e
 | [Entrada](/trajes/entrada/) | Ingreso breve a la flama | Aluminizado multicapa, pesado | Maniobras de minutos con protocolo y equipo de aire |
 | [Extricación](/trajes/extricacion/) | Rescate vehicular y técnico | Ligero, resistente a corte y punción | La mayoría de tus salidas son accidentes viales |
 
-La confusión más cara del sector es entre **estructural y brigadista**, porque se parecen a la vista y el precio no. La confusión más peligrosa es entre **aproximación y entrada**: acercarse y entrar no son la misma maniobra, y un traje de aproximación usado para penetrar la flama no perdona el error.
+La confusión más cara del sector es entre **estructural y brigadista**, porque se parecen a la vista y el precio no. La confusión más peligrosa es entre **aproximación y entrada**: acercarse y entrar no son la misma maniobra, y un traje de aproximación usado para penetrar la flama no perdona el error. Esa diferencia se explica con detalle en [traje aluminizado: aproximación vs entrada al fuego](/blog/traje-aluminizado-aproximacion-vs-entrada/).
 
 Si tu operación es estructural, el siguiente paso es comparar modelos concretos: los [trajes estructurales Romak](/blog/trajes-estructurales-romak-comparativa/) y el [Sköld Hero Nomex frente al PBI Max](/blog/skold-hero-nomex-vs-pbi-max/). Antes de pedir tallas, repasa las [partes del traje de bombero](/blog/partes-del-traje-de-bombero/) que se cotizan por separado.
 

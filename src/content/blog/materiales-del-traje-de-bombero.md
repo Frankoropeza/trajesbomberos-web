@@ -81,7 +81,7 @@ Estos detalles ayudan a pedir una prenda usable: un refuerzo se inspecciona en l
 
 ## Qué cambia en un brigadista o forestal
 
-Un [traje brigadista](/trajes/brigadista/) y un [traje forestal](/trajes/forestal/) no deben describirse como versiones “simples” del estructural. En esas familias puede haber tela de una capa y fibras inherentes o tratadas, según modelo. La operación, duración de exposición, clima y procedimiento determinan qué se selecciona; no se debe inferir el alcance por el color ni por una fibra mencionada en una ficha.
+Un [traje brigadista](/trajes/brigadista/) y un [traje forestal](/trajes/forestal/) no deben describirse como versiones “simples” del estructural. En esas familias puede haber tela de una capa y fibras inherentes o tratadas, según modelo. La operación, duración de exposición, clima y procedimiento determinan qué se selecciona; no se debe inferir el alcance por el color ni por una fibra mencionada en una ficha. El conjunto completo para vegetación está en la guía de [equipo de protección para combatiente forestal](/blog/equipo-de-proteccion-combatiente-forestal/).
 
 En la práctica, pide tipo de prenda, construcción, composición declarada, talla, refuerzos y cuidado. Si una tela es tratada, sigue las instrucciones de su fabricante para lavado e inspección; si una propiedad es inherente a la fibra, tampoco elimina el daño por contaminación, costura abierta o desgaste. Cada familia requiere su propia especificación.
 

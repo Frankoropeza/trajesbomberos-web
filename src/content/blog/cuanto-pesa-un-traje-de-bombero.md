@@ -95,7 +95,7 @@ El [Sköld Hero PBI MAX](/trajes/estructural/modelos/skold-hero-pbimax/) publica
 
 ## Cómo bajar carga sin bajar protección
 
-Empieza por una talla tomada con la ropa y los complementos reales. Ajusta tirantes con pantalonera, bota y chaquetón puestos; así la cintura conserva solape sin que la pantalonera cuelgue o presione. Revisa que el cilindro de fibra de carbono sea el que corresponde al ERA y procedimiento autorizados, no una sustitución decidida sólo por su peso.
+Empieza por una talla tomada con la ropa y los complementos reales. Ajusta tirantes con pantalonera, bota y chaquetón puestos; así la cintura conserva solape sin que la pantalonera cuelgue o presione. Revisa que el cilindro de fibra de carbono sea el que corresponde al ERA y procedimiento autorizados, no una sustitución decidida sólo por su peso. La guía de [cómo tomar medidas para un traje de bombero](/blog/como-tomar-medidas-traje-de-bombero/) detalla cada medida y en qué pieza se usa.
 
 Ordena los accesorios. Una radio en una bolsa compatible, una lámpara prevista por el fabricante y un PASS colocado donde no choque con el arnés reducen movimientos innecesarios. Antes de agregar un refuerzo o una capa, define qué riesgo atiende. La guía de [cómo elegir traje para bomberos](/blog/como-elegir-traje-para-bomberos/) te ayuda a fijar la familia antes de entrar a estas decisiones.
 

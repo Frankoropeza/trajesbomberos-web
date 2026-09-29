@@ -97,7 +97,7 @@ Tres cosas que conviene dejar amarradas **antes** de emitir la orden, no despué
 - **Pregunta por el proceso de limpieza recomendado** y quién lo puede hacer en tu ciudad. Si la respuesta es "cualquiera", es mala señal.
 - **Confirma disponibilidad de refacciones y reparación** a cinco años. Un modelo huérfano se retira antes de tiempo por una pieza que no llegó.
 
-Y una recomendación que ahorra más dinero que cualquier negociación de precio: usa un [traje de extricación](/trajes/extricacion/) para el rescate vehicular. La mayoría de las salidas de un cuerpo de bomberos no son incendios, y cada extricación hecha con el estructural le resta vida útil al equipo más caro que tienes.
+Y una recomendación que ahorra más dinero que cualquier negociación de precio: usa un [traje de extricación](/trajes/extricacion/) para el rescate vehicular. La mayoría de las salidas de un cuerpo de bomberos no son incendios, y cada extricación hecha con el estructural le resta vida útil al equipo más caro que tienes. Te lo explicamos en la guía del [traje de extricación para rescate vehicular](/blog/traje-de-extricacion-rescate-vehicular/).
 
 ## Fuentes
 

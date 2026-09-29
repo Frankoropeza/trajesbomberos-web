@@ -52,7 +52,7 @@ Por eso, al pedir un [chaquetón estructural](/trajes/estructural/chaqueton/) o 
 
 El chaquetón tiene que conservar cobertura cuando la persona alcanza, carga una herramienta o trabaja sobre la cabeza. Revisa cuello, tapa boca, puños, cierre, solapa, bolsas, porta radio y cinta reflejante como componentes funcionales. En fichas de modelos Romak aparecen, según configuración, cuello de cuatro capas, DRD, bolsillos cargo, pozo de agua y refuerzos Ara-Shield; no deben extrapolarse a un modelo que no los declare.
 
-El largo se valida en movimiento. Un chaquetón que parece adecuado de pie puede subir al levantar los brazos y comprometer el solape con la pantalonera. Coloca radio y lámpara reales en sus ubicaciones antes de aceptar una talla: una bolsa inaccesible con guante o bloqueada por el arnés del ERA no aporta a la operación.
+El largo se valida en movimiento. Un chaquetón que parece adecuado de pie puede subir al levantar los brazos y comprometer el solape con la pantalonera. Coloca radio y lámpara reales en sus ubicaciones antes de aceptar una talla: una bolsa inaccesible con guante o bloqueada por el arnés del ERA no aporta a la operación. Para tomar esas medidas sin errores sigue la guía de [cómo tomar medidas para un traje de bombero](/blog/como-tomar-medidas-traje-de-bombero/).
 
 ## Pantalonera: cintura, rodilla y transición con la bota
 

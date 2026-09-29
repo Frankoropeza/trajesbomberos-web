@@ -43,7 +43,7 @@ La manera segura de comprar es separar lo que se asigna a cada persona de lo que
 
 ## Primero define la operación
 
-El [equipo de bombero](/trajes/) se selecciona desde la tarea: ataque interior, primera respuesta de brigada, trabajo prolongado en vegetación, extricación o rescate técnico. No uses la lista de otro escenario por costumbre. Cada familia de traje, casco, guante, bota y respiración tiene que responder al análisis de riesgo y al procedimiento que autoriza su uso.
+El [equipo de bombero](/trajes/) se selecciona desde la tarea: ataque interior, primera respuesta de brigada, trabajo prolongado en vegetación, extricación o rescate técnico. No uses la lista de otro escenario por costumbre. Cada familia de traje, casco, guante, bota y respiración tiene que responder al análisis de riesgo y al procedimiento que autoriza su uso. Para un evento químico, revisa los [niveles de protección hazmat](/blog/niveles-de-proteccion-hazmat/); para línea de fuego en vegetación, el [equipo de protección para combatiente forestal](/blog/equipo-de-proteccion-combatiente-forestal/).
 
 Para estructural, el conjunto debe revisarse como sistema con protección respiratoria cuando la atmósfera lo exige. Para forestal, la duración de la jornada, movilidad y riesgo de vegetación cambian la selección. Para brigada industrial, define qué controlará la brigada y cuándo se retira. La guía de [cómo elegir traje para bomberos](/blog/como-elegir-traje-para-bomberos/) ayuda a ordenar esas preguntas.
 
@@ -67,7 +67,7 @@ Confirma el material y alcance que declara el fabricante para cada artículo. La
 
 ## Rescate y extricación: protección más herramientas
 
-En rescate, el equipo personal se integra con casco, guantes, calzado, traje correspondiente, protección ocular y otros elementos definidos por la maniobra. Las [herramientas de rescate](/herramientas/) pueden ser compartidas por la unidad, pero no se compran como una lista desconectada: separador, cortador, combinada o cilindro requieren fuente de energía, acoples, transporte y procedimiento.
+En rescate, el equipo personal se integra con casco, guantes, calzado, traje correspondiente, protección ocular y otros elementos definidos por la maniobra. Las [herramientas de rescate](/herramientas/) pueden ser compartidas por la unidad, pero no se compran como una lista desconectada: separador, cortador, combinada o cilindro requieren fuente de energía, acoples, transporte y procedimiento. El [traje de extricación para rescate vehicular](/blog/traje-de-extricacion-rescate-vehicular/) explica por qué no se usa el estructural en esa maniobra.
 
 No atribuyas capacidades de una herramienta sin ficha del modelo. La compra debe describir escenario, número de operadores, componentes del sistema y mantenimiento. El equipo personal también se prueba con los movimientos y riesgos de la escena: cristal, metal, tráfico, energía y puntos de atrapamiento requieren controles que una prenda aislada no resuelve.
 
@@ -86,7 +86,7 @@ Herramientas, iluminación de escena, equipo de estabilización y ciertos recurs
 
 ## Kit o compra por pieza: cuándo conviene cada camino
 
-La sección de [kits de equipo para bombero](/kits/) ayuda cuando necesitas una base conocida para equipar a varias personas. Después debes confirmar qué incluye la configuración, las tallas y documentos. La compra por pieza resulta necesaria cuando repones una pantalonera, guante, bota, casco o capucha, o cuando la corporación ya tiene componentes compatibles que continuarán en servicio.
+La sección de [kits de equipo para bombero](/kits/) ayuda cuando necesitas una base conocida para equipar a varias personas. Después debes confirmar qué incluye la configuración, las tallas y documentos. La compra por pieza resulta necesaria cuando repones una pantalonera, guante, bota, casco o capucha, o cuando la corporación ya tiene componentes compatibles que continuarán en servicio. Si equipas a un cuerpo voluntario por etapas, la guía de [equipo para bomberos voluntarios](/blog/equipar-bomberos-voluntarios-compra-por-pieza/) ordena las prioridades.
 
 No combines piezas por apariencia. Una reposición debe cotejarse con prenda, talla, accesorios y operación existentes. La guía de [partes del traje de bombero](/blog/partes-del-traje-de-bombero/) detalla las interfaces que se deben volver a probar cuando cambia un componente.
 
