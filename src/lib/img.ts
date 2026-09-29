@@ -24,6 +24,8 @@ export const SIZES = {
   thumb: '72px',
   /** Ancho de contenido completo */
   full: '100vw',
+  /** Portada del artículo del blog: columna principal junto al sidebar (≈ 68 % del viewport ≥1024 px) */
+  cover: '(max-width: 1023px) calc(100vw - 2rem), 70vw',
 } as const;
 
 export function srcsetFor(src?: string): string | undefined {

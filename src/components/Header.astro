@@ -6,6 +6,7 @@ import { CONTACT, MENU, SITE, WA_MESSAGES, type MenuColumn, type MenuFeature, ty
 import { getCollection } from 'astro:content';
 import { rutaExiste } from '@lib/rutas';
 import { waUrl } from '@lib/wa';
+import { responsive } from '@lib/img';
 
 const path = Astro.url.pathname;
 const posts = await getCollection('blog');
@@ -50,11 +51,11 @@ const current = (href?: string) => href && href === path ? 'page' : undefined;
               <div class="mega__body"><div class="container mega__grid">
                 {item.columns.map((column) => (
                   <div class="mega__column">
-                    {column.href ? <a class="mega__heading mega__heading--link" href={column.href} aria-current={current(column.href)}>{column.img && <img src={column.img} width="48" height="48" loading="lazy" alt="" />}<span>{column.title}</span><span class="mega__arrow" aria-hidden="true">→</span></a> : <p class="mega__heading">{column.img && <img src={column.img} width="48" height="48" loading="lazy" alt="" />}<span>{column.title}</span></p>}
+                    {column.href ? <a class="mega__heading mega__heading--link" href={column.href} aria-current={current(column.href)}>{column.img && <img src={column.img} {...responsive(column.img, '48px')} width="48" height="48" loading="lazy" decoding="async" alt="" />}<span>{column.title}</span><span class="mega__arrow" aria-hidden="true">→</span></a> : <p class="mega__heading">{column.img && <img src={column.img} {...responsive(column.img, '48px')} width="48" height="48" loading="lazy" decoding="async" alt="" />}<span>{column.title}</span></p>}
                     <ul class="mega__links">{column.links.map((link) => <li>{link.href ? <a href={link.href} aria-current={current(link.href)}><span>{link.label}</span>{link.desc && <small>{link.desc}</small>}</a> : <span class="mega__plain">{link.label}</span>}</li>)}</ul>
                   </div>
                 ))}
-                {item.feature && <aside class="mega__feature">{item.feature.img && <img src={item.feature.img} width="640" height="400" loading="lazy" alt={item.feature.alt ?? ''} />}<p>{item.feature.eyebrow}</p><p class="mega__feature-title">{item.feature.title}</p><span>{item.feature.text}</span><a class="btn mega__feature-cta" href={item.feature.cta.href}>{item.feature.cta.label}</a></aside>}
+                {item.feature && <aside class="mega__feature">{item.feature.img && <img src={item.feature.img} {...responsive(item.feature.img, '340px')} width="640" height="400" loading="lazy" decoding="async" alt={item.feature.alt ?? ''} />}<p>{item.feature.eyebrow}</p><p class="mega__feature-title">{item.feature.title}</p><span>{item.feature.text}</span><a class="btn mega__feature-cta" href={item.feature.cta.href}>{item.feature.cta.label}</a></aside>}
               </div></div>
               <footer class="mega__footer"><div class="container mega__footer-inner"><a class="mega__overview" href={item.overview.href}>{item.overview.label} <span aria-hidden="true">→</span></a><span class="mega__contact"><a href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">Cotizar por WhatsApp</a><a href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a></span></div></footer>
             </section>
