@@ -1,0 +1,32 @@
+{
+ "lead": "En Tequila operan tres estaciones de bomberos: la corporación municipal y dos brigadas industriales de casas tequileras. Encontrarás qué atiende cada una, el domicilio de la base municipal y su teléfono oficial.",
+ "panorama": [
+  "El servicio público lo presta Protección Civil y Bomberos del Municipio de Tequila, con base en la calle J. Trinidad Cervantes. A su lado trabajan dos brigadas industriales: la de Casa Sauza, de Suntory Global Spirits, y la Brigada de Protección Civil e Incendios de La Rojeña, de Casa José Cuervo.",
+  "Si coordinas o capacitas en Tequila, la lectura es sencilla: la respuesta urbana depende de una sola corporación municipal, mientras que la atención a materiales peligrosos y fugas de gas recae en las brigadas de empresa. Vale la pena alinear protocolos y simulacros entre ambos frentes antes de que llegue una emergencia."
+ ],
+ "coberturaDuo": [
+  "Dos de las tres corporaciones son industriales y ambas declaran materiales peligrosos; La Rojeña añade fugas de gas. La municipal cubre incendio estructural, rescate vehicular, atención prehospitalaria y capacitación, el perfil propio del servicio que atiende a vecinos y visitantes."
+ ],
+ "equipoDuo": [
+  "Las tres estaciones combaten incendio estructural, de modo que la dotación arranca con un <a href=\"/trajes/estructural/\">traje estructural para bomberos</a>, casco, botas y guantes. Las brigadas que manejan químicos y fugas de gas requieren además <a href=\"/trajes/hazmat/\">trajes Hazmat</a> y respiración autónoma; la municipal, herramienta para rescate vehicular.",
+  "Si compras para el municipio o para una brigada de empresa en Tequila, LORICA te cotiza por partida con la ficha técnica de cada artículo, arma el expediente que pide una licitación y factura con CFDI 4.0. No manejamos compra mínima y enviamos el pedido hasta Tequila."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Tequila y dónde están?",
+   "a": "Hay tres. La base municipal se ubica en la calle J. Trinidad Cervantes, en Tequila, Jalisco. Las brigadas de Casa Sauza y de La Rojeña, de Casa José Cuervo, no tienen domicilio de atención al público publicado."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Tequila?",
+   "a": "El servicio público corresponde a Protección Civil y Bomberos del Municipio de Tequila. Las otras dos estaciones son brigadas industriales, de Casa Sauza y de Casa José Cuervo, enfocadas en incendio estructural y materiales peligrosos."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Tequila para un trámite o una capacitación?",
+   "a": "Para gestiones, visitas o cursos, llama al teléfono oficial de Protección Civil y Bomberos del Municipio de Tequila o acude a su base de la calle J. Trinidad Cervantes. Si hay fuego, humo o una fuga, marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Tequila?",
+   "a": "El municipio necesita un expediente para su proceso de adquisición; una brigada de empresa, una cotización para su área de compras. En LORICA preparamos ambas con ficha técnica por partida, CFDI 4.0 y envío, sin monto mínimo."
+  }
+ ]
+}

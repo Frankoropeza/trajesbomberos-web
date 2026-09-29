@@ -1,0 +1,252 @@
+---
+// L4 · Directorio de estaciones de bomberos por municipio (fase 2, ángulo B2B).
+// Solo municipios con 3+ estaciones y capitales con 2+ (MUNICIPIOS_PAGINA):
+// el resto sigue como sección de la página del estado.
+// Plantilla homologada con la página de estado: PageLayout (migas + Hero
+// sólido + SectionMenu) → aviso 911 → retícula con sidebar → secciones duo.
+// Textos editoriales propios: src/data/directorio-municipios/<estado>--<municipio>.json
+// (encargo D6 de Codex, revisado por Claude). Cero cifras escritas a mano.
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard from '@components/home/TileCard.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import Aviso911 from '@components/directorio/Aviso911.astro';
+import BotonesConteo from '@components/directorio/BotonesConteo.astro';
+import EstacionCard from '@components/directorio/EstacionCard.astro';
+import DirectorioSidebar from '@components/directorio/DirectorioSidebar.astro';
+import DataTable from '@components/directorio/DataTable.astro';
+import { tilesEquipo } from '@lib/directorio-equipo';
+import { waUrl } from '@lib/wa';
+import { SITE, CONTACT, MARCA } from '@config/site';
+import {
+  BASE_DIRECTORIO, ENTIDADES, TIPO_DESC, SERVICIO_LABEL, MUNICIPIOS_PAGINA,
+  municipiosDe, rutaEstado, rutaMunicipio, hrefMunicipio, telHref, telTexto, pct, nf, enEstado, deEstado, conArticulo, unidad, cuenta,
+  type Entidad, type MunicipioPagina,
+} from '@lib/directorio';
+
+export function getStaticPaths() {
+  return MUNICIPIOS_PAGINA.map((m) => ({
+    params: { estado: m.estado, municipio: m.slug },
+    props: { m, e: ENTIDADES.find((x) => x.slug === m.estado)! },
+  }));
+}
+
+interface Editorial { lead: string; panorama: string[]; coberturaDuo: string[]; equipoDuo: string[]; faqs: { q: string; a: string }[] }
+const EDITORIAL = import.meta.glob<Editorial>('../../../data/directorio-municipios/*.json', { eager: true, import: 'default' });
+
+const { m, e } = Astro.props as { m: MunicipioPagina; e: Entidad };
+const ed = EDITORIAL[`../../../data/directorio-municipios/${e.slug}--${m.slug}.json`];
+if (!ed) throw new Error(`[directorio] falta el editorial de ${e.slug}/${m.slug} (src/data/directorio-municipios/${e.slug}--${m.slug}.json)`);
+
+const REVISION = 'septiembre de 2026';
+const NOM = m.comun; // «Cancún», «Zapopan»
+const UNI = unidad(e.slug, 1); // «municipio» o «alcaldía»
+const UNIS = unidad(e.slug);
+const OFICIAL = m.comun !== m.nombre ? `${UNI} de ${m.nombre}` : null;
+const DE = deEstado(e);
+const path = rutaMunicipio(e.slug, m.slug);
+const est = (n: number) => `${nf(n)} ${n === 1 ? 'estación' : 'estaciones'}`;
+const n = m.estaciones.length;
+const conTel = m.estaciones.filter((s) => s.telefono);
+const porTipo = cuenta(m.estaciones, (s) => s.tipo);
+const servicios = cuenta(m.estaciones.flatMap((s) => s.servicios ?? []), (x) => x);
+
+// Metas (≤ 60 / ≤ 160): nombre común + estado; si no cabe, sin el estado.
+const t1 = `Bomberos en ${NOM}, ${e.nombre}: ${est(n)}`;
+const title = [t1, `Bomberos en ${NOM}: ${est(n)} y contacto oficial`, `Bomberos en ${NOM}: ${est(n)}`].find((x) => x.length <= 60) ?? `Bomberos en ${NOM}`;
+const d1 = `${est(n)} de bomberos en ${NOM}${OFICIAL ? ` (${OFICIAL})` : ''}, ${e.nombre}: quién opera cada una, teléfono oficial y ubicación. Equipo con CFDI 4.0.`;
+const description = d1.length <= 160 ? d1 : `${est(n)} de bomberos en ${NOM}, ${e.nombre}: quién opera cada una, teléfono oficial y ubicación.`;
+const keywords = [`bomberos en ${NOM}`, `estaciones de bomberos en ${NOM}`, `bomberos ${enEstado(e)}`] as const;
+
+const menuItems = [
+  { label: 'Estaciones', href: '#estaciones' },
+  ...(conTel.length ? [{ label: 'Teléfonos', href: '#telefonos' }] : []),
+  { label: 'Cobertura', href: '#cobertura' },
+  { label: 'Equipo para bomberos', href: '#equipo' },
+  { label: `Otros ${UNIS}`, href: '#municipios' },
+  { label: 'Preguntas', href: '#faq' },
+];
+
+// Equipo según los servicios declarados (estructural siempre)
+const nServ = (k: string) => servicios.find(([s]) => s === k)?.[1] ?? 0;
+const nTipo = (...ts: string[]) => porTipo.filter(([t]) => ts.includes(t)).reduce((a, [, x]) => a + x, 0);
+const candidatos = [
+  { slug: 'forestal', n: nServ('incendios-forestales') },
+  { slug: 'extricacion', n: nServ('rescate-vehicular') },
+  { slug: 'aproximacion', n: nServ('arff') },
+  { slug: 'hazmat', n: nServ('hazmat') },
+  { slug: 'brigadista', n: nTipo('Industrial', 'PEMEX', 'CFE') },
+].filter((c) => c.n > 0).sort((a, b) => b.n - a.n).slice(0, 2).map((c) => c.slug);
+for (const s of ['extricacion', 'forestal']) if (candidatos.length < 2 && !candidatos.includes(s)) candidatos.push(s);
+const equipo = tilesEquipo(['estructural', ...candidatos]);
+
+// Otros municipios del estado (página propia o ancla en el estado)
+const otros = municipiosDe(e.slug).filter((x) => x.slug !== m.slug);
+
+// Schema
+const estacionesSchema = m.estaciones.map((s) => ({
+  name: s.nombre,
+  url: `${SITE.url}${path}#${s.slug}`,
+  locality: s.ciudad || s.municipio,
+  region: e.nombre,
+  ...(s.coordenadas.precision === 'exacta' ? { lat: s.coordenadas.lat, lng: s.coordenadas.lng } : {}),
+  street: s.direccion,
+  telephone: s.telefono ? telHref(s.telefono) : undefined,
+  sameAs: s.sitioWeb,
+}));
+const collection = { name: `Estaciones de bomberos en ${NOM}`, description, url: `${SITE.url}${path}` };
+
+const ctaTitle = `¿Equipas a una corporación de bomberos en ${NOM}?`;
+const ctaText = `Con ${MARCA.experiencia} de experiencia, ${MARCA.nombre} cotiza trajes y equipo para bomberos en ${NOM} con ficha técnica por partida, expediente para licitación y factura CFDI 4.0. Sin compra mínima y con envío a ${NOM}.`;
+---
+<PageLayout
+  footerCta={{ title: ctaTitle, text: ctaText, secondary: { label: `Bomberos ${enEstado(e)}`, href: rutaEstado(e.slug) } }}
+  pageType="directorio"
+  path={path}
+  ogImage={`/images/og/dir-${e.slug}--${m.slug}.jpg`}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  parent={[{ name: 'Estaciones de bomberos', href: BASE_DIRECTORIO }, { name: e.nombre, href: rutaEstado(e.slug) }]}
+  crumbLabel={NOM}
+  eyebrow={`Bomberos ${enEstado(e)}${OFICIAL ? ` · ${OFICIAL}` : ''}`}
+  h1="Estaciones de bomberos"
+  h1Accent={`en ${NOM}`}
+  lead={ed.lead}
+  meta={[est(n), ...(conTel.length ? [`${nf(conTel.length)} con teléfono oficial`] : []), e.nombre, `Revisión: ${REVISION}`]}
+  descRight={[]}
+  faqs={ed.faqs}
+  collection={collection}
+  estaciones={estacionesSchema}
+>
+  <Aviso911 estado={conArticulo(e)} />
+
+  <div class="section" id="directorio">
+    <div class="container layout-grid">
+      <div class="layout-main dir-main">
+
+        <!-- 1 · Estaciones del municipio -->
+        <section class="dir-sub" id="estaciones">
+          <SectionHeading
+            eyebrow={`Estaciones de bomberos · ${NOM}`}
+            title={`Estaciones de bomberos en ${NOM}`}
+            duo={ed.panorama}
+          />
+          <ul class="muni__grid">
+            {m.estaciones.map((s) => <EstacionCard s={s} />)}
+          </ul>
+        </section>
+
+        <!-- 2 · Teléfonos oficiales -->
+        {conTel.length > 0 && (
+          <section class="dir-sub" id="telefonos">
+            <SectionHeading
+              eyebrow="Contacto oficial"
+              title={`Teléfonos de bomberos en ${NOM}`}
+              duo={[
+                `${conTel.length === n ? `Las ${nf(n)} estaciones tienen` : `${nf(conTel.length)} de las ${est(n)} tienen`} un teléfono publicado por la propia corporación o por una dependencia de gobierno. Úsalo para coordinar capacitaciones, dictámenes, donativos o compras.`,
+                `¿Buscas la información de consulta ciudadana? El directorio de <a href="https://bombero.mx/directorio/${e.slug}/">estaciones de bomberos ${enEstado(e)} en BOMBERO.MX</a> la reúne junto con la del resto del país.`,
+              ]}
+            />
+            <DataTable
+              caption={`Teléfonos de estaciones de bomberos en ${NOM}`}
+              cols={[{ label: 'Estación' }, { label: 'Teléfono', nowrap: true }, { label: 'Tipo', hideMobile: true }]}
+              rows={conTel.map((s) => [
+                { text: s.nombre, href: `#${s.slug}` },
+                { text: telTexto(s.telefono!), href: `tel:${telHref(s.telefono!)}` },
+                s.tipo,
+              ])}
+            />
+          </section>
+        )}
+
+        <!-- 3 · Quién opera y qué atiende -->
+        <section class="dir-sub" id="cobertura">
+          <SectionHeading
+            eyebrow={`Cobertura en ${NOM}`}
+            title={`Quién opera los bomberos en ${NOM}`}
+            duo={ed.coberturaDuo}
+          />
+          <div class="cif-tables">
+            <DataTable
+              caption={`Estaciones por tipo de corporación en ${NOM}`}
+              cols={[{ label: 'Tipo' }, { label: 'Estaciones', num: true }, { label: 'Part.', num: true }, { label: 'Quién la opera', hideMobile: true }]}
+              rows={porTipo.map(([t, x]) => [t, x, pct(x, n), TIPO_DESC[t] ?? ''])}
+            />
+            <DataTable
+              caption="Servicios que declaran las estaciones"
+              cols={[{ label: 'Servicio' }, { label: 'Estaciones', num: true }, { label: 'Part.', num: true }]}
+              rows={servicios.map(([s, x]) => [SERVICIO_LABEL[s] ?? s, x, pct(x, n)])}
+            />
+          </div>
+        </section>
+      </div>
+
+      <DirectorioSidebar e={e} pageIndex={menuItems} muniActual={m.slug} />
+    </div>
+  </div>
+
+  <!-- 4 · Equipo para corporaciones del municipio -->
+  <section class="section section--alt" id="equipo">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Equipo para cuerpos de bomberos"
+        title={`Trajes y equipo para bomberos en ${NOM}`}
+        duo={ed.equipoDuo}
+      />
+      <TileGrid>
+        {equipo.map((t) => <TileCard {...t} />)}
+      </TileGrid>
+    </div>
+  </section>
+
+  <!-- 5 · Otros municipios del estado -->
+  <section class="section" id="municipios">
+    <div class="container">
+      <SectionHeading
+        eyebrow={`${UNIS.charAt(0).toUpperCase() + UNIS.slice(1)} ${DE}`}
+        title={`Bomberos en otros ${UNIS} ${DE}`}
+        duo={[`${otros.length === 1 ? `Hay otro ${UNI}` : `Hay ${nf(otros.length)} ${UNIS} más`} ${DE} con estaciones de bomberos localizadas. Si tu corporación coordina apoyo regional o compras conjuntas, entra a la página de <a href="${rutaEstado(e.slug)}">bomberos ${enEstado(e)}</a> para ver el estado completo.`]}
+      />
+      <BotonesConteo
+        cols={4}
+        label={`${UNIS.charAt(0).toUpperCase() + UNIS.slice(1)} ${DE} con estaciones de bomberos`}
+        items={otros.map((x) => ({ label: x.nombre, href: hrefMunicipio(e.slug, x.slug), n: x.estaciones.length, title: `Bomberos en ${x.nombre}` }))}
+      />
+    </div>
+  </section>
+
+  <!-- 6 · Preguntas frecuentes -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Preguntas frecuentes"
+        title={`Bomberos en ${NOM}: preguntas frecuentes`}
+        duo={[`¿Tu corporación no aparece o cambió de teléfono o domicilio? Escríbenos por <a href="${waUrl(`Hola, quiero actualizar el dato de una estación de bomberos en ${NOM}.`)}" target="_blank" rel="noopener nofollow">WhatsApp</a> con el dato oficial y lo actualizamos en la siguiente revisión.`]}
+      />
+      <FAQWithContact items={ed.faqs} />
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .dir-main { gap: 0; }
+  .dir-sub { scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
+  .dir-sub + .dir-sub {
+    margin-top: clamp(3rem, 5vw, 4.5rem);
+    padding-top: clamp(3rem, 5vw, 4.5rem);
+    border-top: var(--border);
+  }
+  .muni__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20.5rem), 1fr));
+    gap: 1.1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .cif-tables { display: grid; grid-template-columns: 1fr; gap: 1.25rem; align-items: start; }
+  @media (min-width: 1440px) { .cif-tables { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } }
+</style>

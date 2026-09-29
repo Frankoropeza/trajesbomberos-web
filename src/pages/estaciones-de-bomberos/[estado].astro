@@ -25,7 +25,7 @@ import { waUrl } from '@lib/wa';
 import { SITE, CONTACT, MARCA, WA_MESSAGES } from '@config/site';
 import {
   BASE_DIRECTORIO, ENTIDADES, REGIONES, TIPO_DESC, SERVICIO_LABEL,
-  resumenEstado, municipiosDe, serviciosDe, estacionesDe, rutaEstado, telHref, telTexto, pct, nf, enEstado, deEstado, conArticulo, unidad,
+  resumenEstado, municipiosDe, serviciosDe, rutaEstado, hrefMunicipio, paginaMunicipio, rutaMunicipio, telHref, telTexto, pct, nf, enEstado, deEstado, conArticulo, unidad,
   type Entidad,
 } from '@lib/directorio';
 
@@ -128,6 +128,7 @@ const cta: CtaPreset = {
   footerCta={{ title: cta.title, text: cta.text, secondary: { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' } }}
   pageType="directorio"
   path={path}
+  ogImage={`/images/og/dir-${e.slug}.jpg`}
   title={title}
   description={description}
   keywords={keywords}
@@ -162,7 +163,7 @@ const cta: CtaPreset = {
           <BotonesConteo
             cols={4}
             label={`${UNIS.charAt(0).toUpperCase() + UNIS.slice(1)} ${DE} con estaciones de bomberos`}
-            items={municipios.map((m) => ({ label: m.nombre, href: `#${m.slug}`, n: m.estaciones.length, title: `Bomberos en ${m.nombre}` }))}
+            items={municipios.map((m) => ({ label: m.nombre, href: hrefMunicipio(e.slug, m.slug), n: m.estaciones.length, title: `Bomberos en ${m.nombre}` }))}
           />
         </section>
 
@@ -203,7 +204,9 @@ const cta: CtaPreset = {
             <div class:list={['muni', { 'muni--multi': m.estaciones.length > 1 }]} id={m.slug}>
               <header class="muni__head">
                 <span class="muni__code">{String(i + 1).padStart(2, '0')}</span>
-                <h3 class="muni__title">Estaciones de bomberos en {m.nombre}</h3>
+                <h3 class="muni__title">{paginaMunicipio(e.slug, m.slug)
+                  ? <a href={rutaMunicipio(e.slug, m.slug)}>Estaciones de bomberos en {m.nombre}</a>
+                  : `Estaciones de bomberos en ${m.nombre}`}</h3>
                 <p class="muni__meta">{est(m.estaciones.length)}</p>
               </header>
               <ul class="muni__grid">
@@ -337,6 +340,8 @@ const cta: CtaPreset = {
     letter-spacing: 0.08em;
   }
   .muni__title { margin: 0; font-size: clamp(1.15rem, 1.5vw, 1.4rem); }
+  .muni__title a { color: inherit; text-decoration: underline; text-decoration-color: var(--color-primary); text-underline-offset: 4px; }
+  .muni__title a:hover { color: var(--color-primary); }
   .muni__meta {
     margin: 0 0 0 auto;
     font-size: 0.8rem;

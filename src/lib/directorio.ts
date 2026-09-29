@@ -92,6 +92,7 @@ export const TIPO_PLURAL: Record<string, string> = {
   Federal: 'federales',
   Aeropuerto: 'de aeropuerto',
   Voluntarios: 'de voluntarios',
+  Patronato: 'de patronato',
   PEMEX: 'de PEMEX',
   Industrial: 'industriales',
   CFE: 'de CFE',
@@ -102,6 +103,7 @@ export const TIPO_DESC: Record<string, string> = {
   Federal: 'Brigada de una dependencia federal, como la Comisión Nacional Forestal (CONAFOR) en el combate de incendios forestales.',
   Aeropuerto: 'Servicio de salvamento y extinción de incendios (SEI) dentro de un aeropuerto.',
   Voluntarios: 'Patronato o asociación civil de bomberos voluntarios, con financiamiento propio.',
+  Patronato: 'Cuerpo de bomberos profesional operado por un patronato o asociación de beneficencia, con financiamiento público y privado.',
   PEMEX: 'Brigada contraincendio de refinería, terminal o complejo de Petróleos Mexicanos.',
   Industrial: 'Brigada o estación contraincendio de un parque o complejo industrial privado.',
   CFE: 'Brigada contraincendio de una central de generación de la Comisión Federal de Electricidad.',
@@ -143,10 +145,10 @@ export const unidad = (estado: string, n = 2) => {
 
 // ---------- Rutas ----------
 export const rutaEstado = (estado: string) => `${BASE_DIRECTORIO}${estado}/`;
-export const rutaMunicipio = (estado: string, municipioSlug: string) => `${rutaEstado(estado)}#${municipioSlug}`;
+export const anclaMunicipio = (estado: string, municipioSlug: string) => `${rutaEstado(estado)}#${municipioSlug}`;
 
 // ---------- Agregados ----------
-const cuenta = <T,>(xs: T[], key: (x: T) => string) => {
+export const cuenta = <T,>(xs: T[], key: (x: T) => string) => {
   const m = new Map<string, number>();
   for (const x of xs) m.set(key(x), (m.get(key(x)) ?? 0) + 1);
   return [...m.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'es'));
@@ -252,3 +254,25 @@ export const telHref = (t: string) => `+52${t.split(/ext/i)[0].replace(/\D/g, ''
 /** Texto del teléfono tal como la fuente lo publica, sin extensiones repetidas. */
 export const telTexto = (t: string) => t.replace(/(\s*ext\.?\s*\d+)(\1)+/gi, '$1').trim();
 export const dominio = (url: string) => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return url; } };
+
+// ── Páginas de municipio (fase 2 · decisión de Frank 2026-09-29) ──
+// Municipios con 3+ estaciones y capitales estatales con 2+. Un municipio con
+// una o dos estaciones sigue como sección de la página del estado (evita
+// páginas delgadas). Nombre común cuando la ciudad se busca por otro nombre.
+const NOMBRE_COMUN: Record<string, string> = {
+  'quintana-roo/benito-juarez': 'Cancún',
+  'tabasco/centro': 'Villahermosa',
+  'campeche/carmen': 'Ciudad del Carmen',
+  'chihuahua/juarez': 'Ciudad Juárez',
+  'sonora/cajeme': 'Ciudad Obregón',
+};
+export interface MunicipioPagina { estado: string; slug: string; nombre: string; comun: string; estaciones: Estacion[] }
+const esCapital = (e: Entidad, nombre: string) => !!e.capital && (e.capital.includes(nombre) || nombre.includes(e.capital));
+export const MUNICIPIOS_PAGINA: MunicipioPagina[] = ENTIDADES.flatMap((e) => municipiosDe(e.slug)
+  .filter((m) => m.estaciones.length >= 3 || (m.estaciones.length >= 2 && esCapital(e, m.nombre)))
+  .map((m) => ({ estado: e.slug, slug: m.slug, nombre: m.nombre, comun: NOMBRE_COMUN[`${e.slug}/${m.slug}`] ?? m.nombre, estaciones: m.estaciones })));
+export const rutaMunicipio = (estado: string, muni: string) => `${BASE_DIRECTORIO}${estado}/${muni}/`;
+export const paginaMunicipio = (estado: string, muni: string) => MUNICIPIOS_PAGINA.find((m) => m.estado === estado && m.slug === muni);
+/** Enlace de un municipio: su página propia si existe; si no, el ancla en la página del estado. */
+export const hrefMunicipio = (estado: string, muni: string) =>
+  paginaMunicipio(estado, muni) ? rutaMunicipio(estado, muni) : `${rutaEstado(estado)}#${muni}`;

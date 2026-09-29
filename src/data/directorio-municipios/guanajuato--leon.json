@@ -1,0 +1,32 @@
+{
+ "lead": "León tiene 8 estaciones de bomberos, todas del Heroico Cuerpo de Bomberos de León: la central y 7 subestaciones. Encuentras el domicilio y la ubicación exacta de cada una, además del teléfono oficial de la central.",
+ "panorama": [
+  "Los bomberos en León trabajan bajo un solo mando, el Heroico Cuerpo de Bomberos de León, cuya central está en la calle Apolo, colonia Obrera. Esa sede es la que declara materiales peligrosos y protección civil; las subestaciones, entre ellas la base Julián de Obregón y la de Santa Crocce, cubren incendio, rescate vehicular y atención prehospitalaria.",
+  "Para quien capacita brigadas o coordina con la corporación, conviene ubicar la base más cercana. Dos subestaciones están en colonias industriales, Julián de Obregón y Santa Crocce, y el resto se reparte entre Vibar, El Potrero, Deportiva I, Ermita Uno Dos y Villas de San Juan. Así la red alcanza tanto a la industria como a los barrios."
+ ],
+ "coberturaDuo": [
+  "Toda la red es municipal y las 8 bases comparten el trío de incendio estructural, rescate vehicular y atención prehospitalaria. La especialidad química se concentra en la central de la colonia Obrera, algo que conviene tener presente si tu planta maneja sustancias peligrosas."
+ ],
+ "equipoDuo": [
+  "Una corporación con tantas bases necesita homologar: el mismo <a href=\"/trajes/estructural/\">traje estructural NFPA 1970</a> en todas facilita tallas, refacciones y mantenimiento. Para la central, que atiende sustancias peligrosas, suma <a href=\"/trajes/hazmat/\">trajes para materiales peligrosos</a>; para rescate vehicular, herramienta de extricación.",
+  "LORICA cotiza al Heroico Cuerpo de Bomberos de León partida por partida, con ficha técnica de cada artículo y el expediente completo para licitación. Emitimos CFDI 4.0, no exigimos compra mínima y enviamos a León, ya sea para una sola subestación o para renovar la red entera."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en León y en qué colonias están?",
+   "a": "Hay 8: la central en la colonia Obrera y 7 subestaciones en Industrial Julián de Obregón, Deportiva I, Vibar, Villas de San Juan, El Potrero, Ermita Uno Dos e Industrial Santa Crocce. Todas pertenecen al mismo cuerpo municipal."
+  },
+  {
+   "q": "¿Quién opera el servicio de bomberos en León?",
+   "a": "Lo opera el Heroico Cuerpo de Bomberos de León, corporación municipal que dirige desde su central todas las subestaciones. Es la misma institución para incendios, rescate vehicular y atención prehospitalaria; la central suma materiales peligrosos y protección civil."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos de León para una gestión?",
+   "a": "Para trámites, visitas o capacitación, llama al teléfono oficial de la central, en la calle Apolo de la colonia Obrera; las subestaciones no publican número propio. Si se trata de una emergencia, marca directamente al 911."
+  },
+  {
+   "q": "¿Cómo adquiere equipo una corporación de bomberos en León?",
+   "a": "Por lo general, mediante licitación o adjudicación del municipio. LORICA prepara la cotización por partida con ficha técnica y documentación para el expediente, factura con CFDI 4.0 y vende sin compra mínima, también a brigadas industriales de León."
+  }
+ ]
+}

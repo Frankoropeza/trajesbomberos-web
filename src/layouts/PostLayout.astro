@@ -11,6 +11,7 @@ import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
+import EnlaceDirectorio from '@components/directorio/EnlaceDirectorio.astro';
 import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
 import { familiaPorSlug } from '@lib/familias';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
@@ -31,6 +32,8 @@ interface Props {
   post: Post;
 }
 const { post } = Astro.props;
+// Guías de compra institucional que cierran con el directorio de estaciones (B2B).
+const ENLACE_DIRECTORIO_POSTS = new Set(['licitacion-trajes-bomberos-expediente', 'equipar-bomberos-voluntarios-compra-por-pieza', 'equipo-de-bombero-completo', 'cuanto-cuesta-un-traje-de-bombero', 'vida-util-traje-bombero-nfpa-1850', 'nfpa-1970-que-cambio']);
 const d = post.data;
 
 const { Content, headings } = await render(post);
@@ -133,6 +136,8 @@ const article = {
           <div class="prose">
             <Content />
           </div>
+
+          {ENLACE_DIRECTORIO_POSTS.has(post.id) && <EnlaceDirectorio />}
 
           <!-- Cierre del artículo: a dónde va el lector que ya leyó
                (duda → WhatsApp) y quién responde por el contenido. -->

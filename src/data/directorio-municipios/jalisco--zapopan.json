@@ -1,0 +1,32 @@
+{
+ "lead": "En Zapopan, las seis estaciones de bomberos pertenecen a la misma dirección municipal: una central, tres bases urbanas y dos forestales. Consulta el domicilio, el teléfono oficial cuando lo hay y la ubicación de cada una.",
+ "panorama": [
+  "Toda la red depende de la Dirección de Protección Civil y Bomberos de Zapopan. La central está en Villas Belenes y la acompañan subestaciones urbanas en Los Molinos, Unidad Auditorio y Guadalupe Inn. Las otras dos son forestales: una en el poblado de La Primavera y otra en Mesa de San Juan.",
+  "Para quien equipa o capacita, Zapopan exige pensar en dos terrenos. Las bases urbanas combinan incendio estructural, rescate vehicular y atención prehospitalaria; las de La Primavera y Mesa de San Juan se dedican solo al incendio forestal, con necesidades de equipo y entrenamiento muy distintas."
+ ],
+ "coberturaDuo": [
+  "Es una red enteramente municipal donde el fuego forestal es el servicio común: lo declaran las seis estaciones. Cuatro de ellas suman incendio estructural, rescate vehicular y atención prehospitalaria, reflejo de un municipio que combina colonias urbanas con áreas forestales."
+ ],
+ "equipoDuo": [
+  "Como el incendio forestal es común a toda la red, cada estación necesita <a href=\"/trajes/forestal/\">trajes forestales</a> ligeros y transpirables, además de herramienta de brecha. Las estaciones urbanas suman el <a href=\"/trajes/estructural/\">traje estructural NFPA 1970</a> y equipo para rescate vehicular.",
+  "Para la dirección de Zapopan cotizamos por separado lo urbano y lo forestal, cada partida con su ficha técnica y todo integrado en un expediente listo para licitación. Emitimos CFDI 4.0, no exigimos compra mínima y hacemos el envío a Villas Belenes o a la estación que se indique."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Zapopan y en qué colonias están?",
+   "a": "Hay seis. La central está en Dr. Luis Farah, Villas Belenes; las urbanas, en Los Molinos, en Unidad Auditorio sobre Calzada Federalismo y en Guadalupe Inn. Las forestales se encuentran en el poblado de La Primavera y en Mesa de San Juan."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Zapopan?",
+   "a": "Una sola corporación: la Dirección de Protección Civil y Bomberos de Zapopan, que administra la central, las bases urbanas y las estaciones forestales. Todas responden a la misma cadena de mando municipal."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Zapopan fuera de una emergencia?",
+   "a": "La central de Villas Belenes y las bases de Los Molinos, Unidad Auditorio y Guadalupe Inn tienen teléfono oficial; úsalo para capacitaciones, visitas o gestiones. Las forestales de La Primavera y Mesa de San Juan no lo publican. En emergencia, marca 911."
+  },
+  {
+   "q": "¿Cómo compra equipo la corporación de bomberos de Zapopan?",
+   "a": "Lo habitual es un proceso de adquisición municipal con cotizaciones formales. LORICA separa las partidas urbanas de las forestales, entrega especificación técnica y expediente completo, factura con CFDI 4.0 y envía a la estación que indiques."
+  }
+ ]
+}

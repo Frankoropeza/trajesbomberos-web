@@ -1,0 +1,32 @@
+{
+ "lead": "Las estaciones de bomberos en Tijuana forman una red extensa: la Central en la Zona Norte, 18 subestaciones municipales y el cuerpo de rescate del aeropuerto. Casi todas tienen teléfono oficial y domicilio completo.",
+ "panorama": [
+  "El Heroico Cuerpo de Bomberos de Tijuana dirige la operación desde su Central en Av. Alberto Aldrete, que reúne las especialidades: incendio forestal, rescate acuático, materiales peligrosos y atención prehospitalaria. Las subestaciones cubren zonas como La Mesa, El Florido, Sánchez Taboada o Natura, y el CREI/SSEI protege el aeropuerto en Mesa de Otay.",
+  "Para quien coordina o equipa, destacan dos bases con perfil propio: la de Ciudad Industrial Mesa de Otay, que también atiende materiales peligrosos, y la Estación Salvavidas de Playas de Tijuana, sobre el Paseo Costero, dedicada además al rescate acuático. Conviene planear capacitación y dotación distintas para cada una."
+ ],
+ "coberturaDuo": [
+  "Casi todas las estaciones son municipales; solo el aeropuerto tiene cuerpo propio. Todas salen a incendio estructural, y el rescate acuático y los materiales peligrosos aparecen en dos bases cada uno, acordes con una ciudad que tiene litoral en Playas y zona industrial en Otay."
+ ],
+ "equipoDuo": [
+  "La dotación común es el <a href=\"/trajes/estructural/\">traje estructural NFPA 1970</a>, que usa toda la red. La Central suma necesidades forestales y químicas, la base de Mesa de Otay requiere <a href=\"/trajes/hazmat/\">trajes para materiales peligrosos</a>, y los salvavidas de Playas trabajan con equipo de rescate acuático y flotación.",
+  "Con una red de este tamaño, lo práctico es cotizar por estación y por partida: te preparamos ficha técnica de cada artículo, expediente para la licitación del ayuntamiento y factura CFDI 4.0. No hay compra mínima, así que también cubrimos reposiciones de una sola subestación."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Tijuana y en qué zonas están?",
+   "a": "Hay 20: la Central en la Zona Norte, 18 subestaciones municipales y la base del aeropuerto. Las subestaciones se reparten por zonas como Zona Centro, La Mesa, El Florido, Playas de Tijuana, La Presa, Altabrisa, Parajes del Valle y Hacienda Las Delicias."
+  },
+  {
+   "q": "¿Quién opera el servicio de bomberos en Tijuana?",
+   "a": "El Heroico Cuerpo de Bomberos de Tijuana, corporación municipal, opera la Central y todas las subestaciones, incluida la de salvavidas en Playas. El Aeropuerto Internacional Gral. Abelardo L. Rodríguez cuenta con su propio servicio de salvamento y extinción, el CREI/SSEI."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos de Tijuana si no es una emergencia?",
+   "a": "La Central y la mayoría de las subestaciones tienen teléfono oficial publicado; para gestiones, conviene llamar a la más cercana o a la Central de la Zona Norte. Natura, Hacienda Las Delicias y el aeropuerto no tienen línea publicada. Para emergencias, marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Tijuana?",
+   "a": "Por lo general mediante licitación o adjudicación del ayuntamiento. Te enviamos la propuesta desglosada por estación si lo necesitas, con especificaciones de cada prenda y documentos de proveedor, factura CFDI 4.0 y envío a la Central o a la subestación que indiques."
+  }
+ ]
+}

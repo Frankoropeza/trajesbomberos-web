@@ -1,0 +1,32 @@
+{
+ "lead": "Zacatecas, capital del estado, tiene dos estaciones de bomberos: la de la Coordinación Municipal de Protección Civil y Bomberos y la brigada contraincendio de PEMEX. Encuentra domicilio, ubicación y teléfono oficial.",
+ "panorama": [
+  "La respuesta urbana corre a cargo de la Coordinación Municipal de Protección Civil y Bomberos de Zacatecas, con base en la avenida la Plata, colonia Estrella de Oro. En paralelo trabaja la Brigada Contraincendio PEMEX TAD Zacatecas, una brigada industrial que protege la terminal de la empresa en la ciudad.",
+  "Para quien coordina o equipa, son dos mundos distintos: la corporación municipal compra por la vía del ayuntamiento, mientras la brigada responde a PEMEX. Ambas atienden materiales peligrosos, de modo que en la capital la protección química pesa tanto como el combate estructural a la hora de planear una dotación."
+ ],
+ "coberturaDuo": [
+  "La corporación municipal y la brigada de PEMEX reflejan dos frentes de riesgo: el urbano y el industrial. Ambas declaran incendio estructural, materiales peligrosos y atención prehospitalaria; el rescate vehicular corre por cuenta del municipio."
+ ],
+ "equipoDuo": [
+  "En Zacatecas, el equipo de base es el <a href=\"/trajes/estructural/\">traje estructural para bomberos</a> con casco y equipo de respiración autónoma, pero ambas estaciones atienden materiales peligrosos, así que conviene sumar <a href=\"/trajes/hazmat/\">trajes Hazmat</a> y guantes químicos. El rescate vehicular municipal pide herramientas de extricación.",
+  "Para la Coordinación Municipal, LORICA arma la cotización por partida, con ficha técnica y el expediente que requiera la licitación o la adjudicación. Facturamos con CFDI 4.0, no pedimos compra mínima y hacemos el envío hasta la colonia Estrella de Oro."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Zacatecas y dónde están?",
+   "a": "Hay dos. La Coordinación Municipal de Protección Civil y Bomberos está en la avenida la Plata, en la colonia Estrella de Oro. La brigada contraincendio de PEMEX opera en su terminal de la ciudad, sin domicilio publicado."
+  },
+  {
+   "q": "¿Quién opera los bomberos en Zacatecas?",
+   "a": "El servicio a la población lo presta la Coordinación Municipal de Protección Civil y Bomberos de Zacatecas. La Brigada Contraincendio PEMEX TAD Zacatecas es una brigada industrial que protege las instalaciones de la empresa y también atiende materiales peligrosos."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Zacatecas si no es una emergencia?",
+   "a": "La Coordinación Municipal tiene teléfono oficial publicado; es el canal para solicitar visitas, capacitación o pláticas de prevención. La brigada de PEMEX no publica número. Para cualquier emergencia, llama al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Zacatecas?",
+   "a": "Envíanos tu requerimiento y te cotizamos por partida, con la especificación técnica de cada producto. Si hay licitación, preparamos el expediente; facturamos con CFDI 4.0, sin compra mínima, y enviamos a Zacatecas. Las brigadas industriales también pueden cotizar."
+  }
+ ]
+}

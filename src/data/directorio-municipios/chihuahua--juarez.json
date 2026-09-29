@@ -1,0 +1,32 @@
+{
+ "lead": "Las estaciones de bomberos en Ciudad Juárez suman once: diez del Heroico Cuerpo de Bomberos de Ciudad Juárez y la del aeropuerto. Casi todas tienen domicilio y ubicación exacta en el mapa; ninguna publica teléfono propio.",
+ "panorama": [
+  "El municipio de Juárez concentra su servicio en el Heroico Cuerpo de Bomberos de Ciudad Juárez: una Estación Central en el Centro, sobre Bernardo Norzagaray, y nueve estaciones numeradas que llegan hasta el Ejido San Agustín, en el Valle de Juárez. El SSEI del Aeropuerto Internacional Abraham González opera por separado.",
+  "Si equipas o capacitas en la ciudad, piensa en frentes muy distintos: el Parque Industrial Juárez sobre la Perimetral Carlos Amaya, Waterfill en Río Bravo e Internacional, la Calzada Sanders, el Eje Vial Juan Gabriel y el Valle de Juárez. La Central es la única con materiales peligrosos y rescate vehicular, así que ahí conviene dirigir cualquier plan de equipo especializado."
+ ],
+ "coberturaDuo": [
+  "Los bomberos en Ciudad Juárez son, salvo la base aeroportuaria, una sola corporación municipal. Todas las estaciones combaten incendios estructurales y la Central suma materiales peligrosos, rescate vehicular y atención prehospitalaria, lo que responde a una ciudad fronteriza con vivienda y parques industriales."
+ ],
+ "equipoDuo": [
+  "Cualquier dotación parte del <a href=\"/trajes/estructural/\">traje estructural</a> con casco, botas y equipo de respiración autónoma. Para la Estación Central, que atiende materiales peligrosos y rescate vehicular, suma <a href=\"/trajes/hazmat/\">trajes hazmat</a> de protección química y herramientas de extricación.",
+  "LORICA cotiza a la corporación de Ciudad Juárez partida por partida, con ficha técnica de cada artículo y los documentos que exige un expediente de licitación. Facturamos con CFDI 4.0, sin compra mínima, y enviamos a la frontera lo mismo una reposición de guantes que la dotación de una estación."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos tiene Ciudad Juárez y dónde están?",
+   "a": "Son once. La Estación Central está en el Centro, sobre Bernardo Norzagaray; las demás se reparten por Waterfill, el Parque Industrial Juárez, la Calzada Sanders, Zaragoza y Sonora, el Eje Vial Juan Gabriel y el Ejido San Agustín. La del aeropuerto completa la cuenta."
+  },
+  {
+   "q": "¿Quién opera los bomberos en Ciudad Juárez?",
+   "a": "El Heroico Cuerpo de Bomberos de Ciudad Juárez, corporación del municipio de Juárez, opera la Estación Central y nueve estaciones más. En el Aeropuerto Internacional Abraham González el salvamento aeroportuario corresponde a su propio SSEI."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos de Ciudad Juárez para una gestión?",
+   "a": "Ninguna estación de Ciudad Juárez publica un teléfono oficial. Para cursos, visitas o dudas de prevención acude a protección civil municipal, o escríbenos por WhatsApp y te orientamos. Si se trata de una emergencia, llama al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Ciudad Juárez?",
+   "a": "Define las partidas que necesitas y mándanoslas. Recibes cotización con ficha técnica por artículo, documentación para licitación o adjudicación directa y factura CFDI 4.0. Aceptamos pedidos chicos y grandes, y el envío llega a Ciudad Juárez."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "lead": "Veracruz cuenta con cuatro estaciones de bomberos: la central y dos bases del Heroico y Benemérito Cuerpo de Bomberos, más el SSEI del aeropuerto. Encuentra domicilio, ubicación y el teléfono oficial de la central.",
+ "panorama": [
+  "La corporación municipal tiene su central en el Centro Histórico, en la esquina de la avenida 1° de Mayo y Rayón, y cuenta con dos bases más: la Base Poniente Domingo Bureau y la estación Los Pinos. En el aeropuerto General Heriberto Jara Corona trabaja un SSEI que no depende del municipio.",
+  "Quien coordina o equipa a esta corporación encontrará bases con un perfil común y una central que reúne lo especializado. Los domicilios ayudan a planear visitas y entregas: el Centro Histórico, la colonia Hacienda los Portales, sobre la calle Puesta del Sol, y la colonia Los Pinos, sobre Mariano Matamoros."
+ ],
+ "coberturaDuo": [
+  "Las tres estaciones municipales cubren incendio estructural, rescate vehicular y atención prehospitalaria; la central agrega rescate acuático y materiales peligrosos. Ese reparto indica que las emergencias en agua y los incidentes con sustancias se despachan desde el Centro Histórico."
+ ],
+ "equipoDuo": [
+  "Para las bases de Veracruz, el núcleo es el <a href=\"/trajes/estructural/\">traje estructural</a> con casco, botas y guantes, junto con herramienta para rescate vehicular. La central requiere además <a href=\"/rescate/\">equipo de rescate acuático</a> y protección química, porque atiende los servicios con materiales peligrosos.",
+  "LORICA prepara para el Heroico y Benemérito Cuerpo de Bomberos una cotización desglosada por partida, con la ficha técnica de cada producto y el expediente que exige una licitación. Facturamos con CFDI 4.0, surtimos pedidos pequeños sin compra mínima y enviamos a Veracruz."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Veracruz y dónde están?",
+   "a": "La ciudad tiene cuatro. La central está en el Centro Histórico, en la avenida 1° de Mayo esquina con Rayón; la Base Poniente Domingo Bureau, en Hacienda los Portales, y la estación Los Pinos, en la colonia del mismo nombre. El SSEI del aeropuerto no tiene domicilio publicado."
+  },
+  {
+   "q": "¿Quién opera los bomberos en Veracruz?",
+   "a": "El Heroico y Benemérito Cuerpo de Bomberos de Veracruz, corporación municipal, opera la central y sus dos bases. El aeropuerto internacional General Heriberto Jara Corona tiene un servicio de salvamento y extinción de incendios propio, enfocado en la operación aérea."
+  },
+  {
+   "q": "¿Cuál es el teléfono de los bomberos en Veracruz para trámites?",
+   "a": "La central del Centro Histórico tiene teléfono oficial publicado y es la vía para gestiones como visitas, pláticas o capacitación; las bases no publican número propio. En caso de emergencia, el número es el 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Veracruz?",
+   "a": "Nos compartes tu lista de necesidades y te cotizamos partida por partida, con especificación técnica. Armamos la documentación si se trata de licitación, facturamos con CFDI 4.0 y enviamos a Veracruz sin exigir compra mínima."
+  }
+ ]
+}
