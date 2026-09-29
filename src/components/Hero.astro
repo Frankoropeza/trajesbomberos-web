@@ -19,7 +19,7 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image } = Astro.
   {image && <img class="hero__bg" src={image.src} srcset={`${image.src.replace(/\.avif$/, '-800.avif')} 800w, ${image.src} 1600w`} sizes="100vw" alt={image.alt} width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" />}
   {image && <div class="hero__veil" aria-hidden="true"></div>}
   <div class="hero__stripes" aria-hidden="true"></div>
-  <div class="container hero-grid">
+  <div class:list={['container hero-grid', { 'hero-grid--single': descRight.length === 0 }]}>
     <div class="hero-left">
       {eyebrow && <p class="hero__eyebrow">{eyebrow}</p>}
       <h1>{title}{accent && <> <span class="hero-accent">{accent}</span></>}</h1>
@@ -31,11 +31,13 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image } = Astro.
         </ul>
       )}<slot name="actions" />
     </div>
-    <div class="hero-right">
-      <div class="hero-panel">
-        {descRight.map((p) => <p>{p}</p>)}
+    {descRight.length > 0 && (
+      <div class="hero-right">
+        <div class="hero-panel">
+          {descRight.map((p) => <p>{p}</p>)}
+        </div>
       </div>
-    </div>
+    )}
   </div>
 </section>
 
@@ -77,6 +79,7 @@ const { eyebrow, title, accent, subtitle, descRight, meta = [], image } = Astro.
     align-items: center;
     z-index: 1;
   }
+  .hero-grid--single { grid-template-columns: minmax(0, 1fr); max-width: 60rem; }
   .hero__eyebrow {
     display: inline-flex;
     align-items: center;
