@@ -1,6 +1,6 @@
 ---
 // L1 · Home — portada comercial con exploración por categorías.
-// Orden (rediseño 2026-09-28): hero con CTA → confianza → trajes
+// Orden (rediseño 2026-09-28): hero con CTA → botones de sección → trajes
 // (6 cards) → complementos del conjunto (6 cards) → cómo elegir
 // (guía + anatomía + ficha + errores) → quién compra → normas →
 // vida útil → marcas → empresa → proceso → FAQ → blog → CTA final.
@@ -28,7 +28,6 @@ import SpecChecklist from '@components/SpecChecklist.astro';
 import MistakeList from '@components/MistakeList.astro';
 import BrandGrid from '@components/BrandGrid.astro';
 import { PRESET_GENERAL, PRESET_LICITACION } from '@lib/cta-presets';
-import TrustBlock from '@components/home/TrustBlock.astro';
 import CatalogCard from '@components/home/CatalogCard.astro';
 import QuoteCTA from '@components/home/QuoteCTA.astro';
 import ModelosGrid from '@components/ModelosGrid.astro';
@@ -63,15 +62,6 @@ const hero = {
     'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y condiciones de entrega por escrito. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
   ],
 };
-
-// Bloque de confianza: compromisos reales, sin métricas inventadas.
-const confianza = [
-  { icon: 'doc' as const, title: 'Ficha técnica por partida', desc: 'Composite, TPP, THL y norma por escrito antes de que compres.' },
-  { icon: 'check' as const, title: 'Factura CFDI 4.0', desc: 'Cotización formal, factura y acta de entrega-recepción para compra pública.' },
-  { icon: 'pin' as const, title: 'Cobertura nacional', desc: 'Envíos a estación, base o domicilio en los 32 estados.' },
-  { icon: 'shield' as const, title: 'Especialistas en el traje', desc: 'Seis familias de traje por tipo de riesgo; el resto del conjunto se cotiza junto, compatible entre sí.' },
-  { icon: 'chat' as const, title: 'Normas aplicables', desc: 'NFPA 1970, 1950 y 1850 como referencia técnica; NOM-017-STPS-2024 y NOM-002-STPS-2010 como obligación en México.', href: '#normas', hrefLabel: 'Ver normas' },
-];
 
 const hechos = [
   { label: 'Especialidad', value: '6 familias de traje' },
@@ -329,7 +319,6 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
   <Hero {...hero} solid />
   <QuickNav />
-  <TrustBlock id="confianza" items={confianza} />
 
   <!-- 1 · Trajes: grid principal de categorías (TR-01…) -->
   <section class="section section--alt" id="catalogo">
