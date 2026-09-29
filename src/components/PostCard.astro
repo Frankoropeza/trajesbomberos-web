@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // PostCard: tarjeta de artículo. Mismo lenguaje que TileCard
 // (imagen 4:3 a sangre con código BL-NN, acento rojo superior,
 // título y resumen a 3 líneas, botón rojo al pie). Botón en una
@@ -51,6 +52,7 @@ const ctaCompleto = `Guía: ${ctaAncla}`;
       <img
         class="post-card__image"
         src={image}
+        {...responsive(image, SIZES.tile)}
         alt={imageAlt}
         width="800"
         height="600"

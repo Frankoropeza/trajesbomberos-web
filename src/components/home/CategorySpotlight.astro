@@ -1,4 +1,5 @@
 ---
+import { responsive, SIZES } from '@lib/img';
 // CategorySpotlight (home): módulo de dos columnas que promociona una
 // categoría del índice (CategoryTiles). Columna 1: texto SEO comercial
 // (eyebrow + H2 + párrafos con enlaces internos + 4 argumentos de compra
@@ -38,12 +39,12 @@ const [grande, ...chicas] = imagenes;
 
   <div class="spot__gallery">
     <figure class="spot__fig spot__fig--big">
-      <img src={grande.src} alt={grande.alt} width={grande.width} height={grande.height} loading="lazy" decoding="async" style={grande.pos ? `object-position:${grande.pos}` : undefined} />
+      <img src={grande.src} {...responsive(grande.src, SIZES.half)} alt={grande.alt} width={grande.width} height={grande.height} loading="lazy" decoding="async" style={grande.pos ? `object-position:${grande.pos}` : undefined} />
       <figcaption>{grande.caption}</figcaption>
     </figure>
     {chicas.map((im) => (
       <figure class="spot__fig">
-        <img src={im.src} alt={im.alt} width={im.width} height={im.height} loading="lazy" decoding="async" style={im.pos ? `object-position:${im.pos}` : undefined} />
+        <img src={im.src} {...responsive(im.src, SIZES.tile)} alt={im.alt} width={im.width} height={im.height} loading="lazy" decoding="async" style={im.pos ? `object-position:${im.pos}` : undefined} />
         <figcaption>{im.caption}</figcaption>
       </figure>
     ))}
