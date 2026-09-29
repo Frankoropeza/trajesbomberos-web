@@ -8,6 +8,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
   "tipos": [],
   "modelos": [
     {
+      // TODO FRANK: valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "romak-protector",
       "seccion": "trajes",
       "familia": "estructural",
@@ -105,6 +106,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ]
     },
     {
+      // TODO FRANK: número de certificado UL (el estatus es certificado-ul pero falta el número MH…); valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "romak-profesional",
       "seccion": "trajes",
       "familia": "estructural",
@@ -199,6 +201,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ]
     },
     {
+      // TODO FRANK: número de certificado UL (el estatus es certificado-ul pero falta el número MH…); valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "romak-defender",
       "seccion": "trajes",
       "familia": "estructural",
@@ -293,6 +296,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ]
     },
     {
+      // TODO FRANK: número de certificado UL (el estatus es certificado-ul pero falta el número MH…); valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "romak-vantage",
       "seccion": "trajes",
       "familia": "estructural",
@@ -387,6 +391,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ]
     },
     {
+      // TODO FRANK: valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "romak-maverick-ii",
       "seccion": "trajes",
       "familia": "estructural",
@@ -479,6 +484,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ]
     },
     {
+      // TODO FRANK: valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "skold-hero-pbimax",
       "seccion": "trajes",
       "familia": "estructural",
@@ -582,6 +588,7 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ]
     },
     {
+      // TODO FRANK: valores TPP y THL del composite certificado (pedir al fabricante; no publicar sin ficha). Encargo AEO ZeroRank 2026-09-29.
       "id": "skold-hero-nomex",
       "seccion": "trajes",
       "familia": "estructural",

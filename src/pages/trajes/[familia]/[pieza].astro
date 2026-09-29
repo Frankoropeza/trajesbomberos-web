@@ -21,6 +21,7 @@ import { waUrl } from '@lib/wa';
 import { heroDeFamilia } from '@lib/imagenes';
 import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
 import { temaEnFrase } from '@lib/blog-enlaces';
+import { propiedadesDeFicha } from '@lib/seo';
 
 export const getStaticPaths = (() => {
   return PIEZAS.map((p) => ({
@@ -81,6 +82,14 @@ const pageIndex = [
     imagen: pz.images[0].src,
     categoria: familia.nombreWa,
     url: path,
+  }}
+  producto={{
+    name: pz.nombre,
+    description: pz.seoDescription,
+    url: path,
+    image: pz.images[0]?.src,
+    category: familia.nombreWa,
+    propiedades: propiedadesDeFicha(pz.fichaTecnica.filter((g) => !/compra|cotiza/i.test(g.grupo)).flatMap((g) => g.filas)),
   }}
   footerCta={{ title: presetCategoria(pz.nombre).title, text: presetCategoria(pz.nombre).text, secondary: { label: 'Comparar familias de trajes para bomberos', href: '/trajes/' } }}
 >

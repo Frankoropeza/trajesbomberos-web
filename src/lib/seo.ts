@@ -97,6 +97,13 @@ export function organizationSchema(): object {
       email: CONTACT.email,
       areaServed: 'MX',
       availableLanguage: ['es'],
+      // Mismo horario que la barra superior (CONTACT.horario: Lun–Vie 9:00–18:00).
+      hoursAvailable: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
     },
     areaServed: [
       { '@type': 'Country', name: 'México' },
@@ -126,10 +133,12 @@ function webSiteSchema(): object {
 }
 
 // ItemList para grids/directorios (lo emite el padre, no las cards)
-export function directorySchema(items: { name: string; url: string }[]): object {
+export function directorySchema(items: { name: string; url: string }[], id?: string): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
+    ...(id ? { '@id': id } : {}),
+    numberOfItems: items.length,
     itemListElement: items.map((item, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -263,6 +272,62 @@ export function productSchema(p: {
   };
 }
 
+// Product (AEO ZeroRank, 2026-09-29). Describe la pieza o el modelo con los
+// datos que la ficha ya muestra. SIN offers, SIN precio, SIN aggregateRating
+// ni review: el sitio no publica precios y no hay reseñas reales (regla B4).
+// Google marca un Product sin offers/review/aggregateRating como no apto para
+// fragmento de producto; se acepta: el objetivo es la entidad legible por IA,
+// no el rich result. brand/manufacturer solo cuando la ficha es de un modelo
+// de marca (nunca LORICA sobre piezas genéricas).
+export interface ProductoInput {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  category: string;
+  brand?: string;
+  manufacturer?: string;
+  model?: string;
+  mpn?: string;
+  propiedades?: { name: string; value: string }[];
+  /** Kits: componentes de referencia con ficha propia. */
+  componentes?: { name: string; url: string }[];
+}
+
+export function productoSchema(p: ProductoInput): object {
+  const url = new URL(p.url, SITE.url).href;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    '@id': `${url}#product`,
+    url,
+    name: p.name,
+    description: p.description,
+    ...(p.image ? { image: new URL(p.image, SITE.url).href } : {}),
+    category: p.category,
+    ...(p.brand ? { brand: { '@type': 'Brand', name: p.brand } } : {}),
+    ...(p.manufacturer ? { manufacturer: { '@type': 'Organization', name: p.manufacturer } } : {}),
+    ...(p.model ? { model: p.model } : {}),
+    ...(p.mpn ? { mpn: p.mpn } : {}),
+    ...(p.propiedades?.length
+      ? { additionalProperty: p.propiedades.map((x) => ({ '@type': 'PropertyValue', name: x.name, value: x.value })) }
+      : {}),
+    ...(p.componentes?.length
+      ? { isRelatedTo: p.componentes.map((c) => ({ '@type': 'Product', name: c.name, url: new URL(c.url, SITE.url).href, '@id': `${new URL(c.url, SITE.url).href}#product` })) }
+      : {}),
+    mainEntityOfPage: { '@id': `${url}#webpage` },
+  };
+}
+
+// Filtra filas de ficha técnica a propiedades del producto (no datos de compra).
+const PROP_PRODUCTO = /\buso\b|norma|referencia|certific|estatus|capa|barrera|material|composite|tpp|thl|talla|peso|nivel|color|exterior|forro|suela|puntera|clase|protecci|cumplimiento|c[oó]digo|marca|fabricante|longitud|di[aá]metro|presi[oó]n|capacidad|duraci[oó]n|visor|cierre|conexi|rosca|largo|ancho/i;
+export function propiedadesDeFicha(filas: { campo: string; valor: string }[]): { name: string; value: string }[] {
+  const vistos = new Set<string>();
+  return filas
+    .filter((f) => PROP_PRODUCTO.test(f.campo) && f.valor && !vistos.has(f.campo) && vistos.add(f.campo))
+    .map((f) => ({ name: f.campo, value: f.valor }));
+}
+
 export function collectionPageSchema(c: { name: string; description: string; url: string }): object {
   const url = new URL(c.url, SITE.url).href;
   return {
@@ -305,19 +370,30 @@ export interface SchemaInput {
   product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };
   collection?: { name: string; description: string; url: string };
   item?: { name: string; description: string; image?: string; category: string; url: string };
+  producto?: ProductoInput;
   estaciones?: EstacionSchema[];
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
+// Grafo enlazado por @id: CollectionPage.mainEntity → ItemList;
+// ItemPage.mainEntity → Product (cuando la ficha declara producto).
 export function buildSchema(input: SchemaInput): object[] {
   const schemas: object[] = [organizationSchema()];
   if (input.pageType === 'home') schemas.push(webSiteSchema());
   if (input.breadcrumbs?.length) schemas.push(breadcrumbSchema(input.breadcrumbs));
-  if (input.directoryItems?.length) schemas.push(directorySchema(input.directoryItems));
+  const colUrl = input.collection ? new URL(input.collection.url, SITE.url).href : undefined;
+  const listId = colUrl && input.directoryItems?.length ? `${colUrl}#itemlist` : undefined;
+  if (input.directoryItems?.length) schemas.push(directorySchema(input.directoryItems, listId));
   if (input.article) schemas.push(articleSchema(input.article));
-  if (input.product) schemas.push(productSchema(input.product));
-  if (input.collection) schemas.push(collectionPageSchema(input.collection));
-  if (input.item) schemas.push(itemPageSchema(input.item));
+  const conProducto = (o: object): object =>
+    input.producto ? { ...o, mainEntity: { '@id': `${new URL(input.producto.url, SITE.url).href}#product` } } : o;
+  if (input.product) schemas.push(conProducto(productSchema(input.product)));
+  if (input.collection) {
+    const c = collectionPageSchema(input.collection);
+    schemas.push(listId ? { ...c, mainEntity: { '@id': listId } } : c);
+  }
+  if (input.item) schemas.push(conProducto(itemPageSchema(input.item)));
+  if (input.producto) schemas.push(productoSchema(input.producto));
   if (input.estaciones?.length) schemas.push(fireStationListSchema(input.estaciones));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;

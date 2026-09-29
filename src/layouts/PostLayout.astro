@@ -26,6 +26,7 @@ import {
   getPosts,
   readingTime,
   wordCount,
+  faqsDePost,
 } from '@lib/blog';
 
 interface Props {
@@ -82,6 +83,8 @@ const heroMeta = d.meta.length
   ? d.meta
   : [categoriaNombre(d.categoria), `${lectura} min de lectura`];
 
+const faqs = faqsDePost(post.body);
+
 const article = {
   headline: d.title,
   description: d.description,
@@ -108,6 +111,7 @@ const article = {
   descRight={d.descRight}
   meta={heroMeta}
   article={article}
+  faqs={faqs.length ? faqs : undefined}
   heroImage={d.imagen ? { src: d.imagen, alt: d.imagenAlt ?? '' } : HERO_GENERICO}
   ogImage={`/images/og/blog-${post.id}.jpg`}
   footerCta={{ title: PRESET_CONTACTO.title, text: PRESET_CONTACTO.text, secondary: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' } }}

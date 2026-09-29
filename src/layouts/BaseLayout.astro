@@ -50,6 +50,7 @@ const {
   collection,
   estaciones,
   item,
+  producto,
   title = buildKeywordTitle(),
   description = buildKeywordDescription(),
   path = '/',
@@ -63,7 +64,7 @@ const {
 const canonical = new URL(path, SITE.url).href;
 const ogImage = new URL(ogImagePath ?? '/images/og-trajes-para-bomberos.png', SITE.url).href;
 const ogImageType = ogImagePath ? 'image/jpeg' : 'image/png';
-const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product, collection, item, estaciones });
+const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product, collection, item, producto, estaciones });
 
 const ogType = pageType === 'articulo' ? 'article' : 'website';
 const ogAlt = ogImageAlt ?? (ogImagePath ? title : 'Trajes para bomberos y equipo contra incendios en México');
