@@ -1,14 +1,14 @@
 {
  "lead": "Las estaciones de bomberos en Ciudad del Carmen reúnen cuatro instancias: bomberos estatales, la brigada de PEMEX, el aeropuerto y Protección Civil del municipio de Carmen. Te decimos dónde está cada una y cómo contactarla.",
  "panorama": [
-  "El incendio urbano lo atiende la estación de los Bomberos del Estado, que además cubre incendios vehiculares y enjambres. Junto a ella opera el Cuerpo de Bomberos o Brigada Contra Incendios de PEMEX, con atención prehospitalaria, capacitación y salvamento aeroportuario, y el SSEI del Aeropuerto Internacional, en la Isla del Carmen.",
+  "El incendio urbano lo atiende la estación de los Bomberos del Estado, que además cubre incendios vehiculares y enjambres. Junto a ella operan la brigada contra incendios de PEMEX, dedicada a la respuesta a emergencias en sus instalaciones y a la capacitación, y el SSEI del Aeropuerto Internacional, en la Isla del Carmen.",
   "Para quien coordina o equipa, Ciudad del Carmen es un caso mixto: la respuesta pública convive con una brigada industrial de PEMEX que responde a su propia estructura. La Dirección de Protección Civil, en la colonia Solidaridad, es el enlace natural con el ayuntamiento para cursos y ejercicios conjuntos."
  ],
  "coberturaDuo": [
-  "Cada instancia es de un tipo distinto: estatal, PEMEX, municipal y aeroportuaria. El salvamento aeroportuario aparece dos veces, en el aeropuerto y en la brigada de PEMEX, lo que muestra el peso de la operación aérea y petrolera junto al incendio urbano."
+  "Cada instancia es de un tipo distinto: estatal, PEMEX, municipal y aeroportuaria. El SSEI cubre el salvamento aeroportuario y la brigada de PEMEX, el riesgo petrolero; ambos conviven con el incendio urbano que atiende el estado."
  ],
  "equipoDuo": [
-  "La estación estatal trabaja con <a href=\"/trajes/estructural/\">traje estructural para bomberos</a> y herramienta para incendios vehiculares. Para el salvamento aeroportuario del SSEI y de la brigada de PEMEX, la prenda clave es el <a href=\"/trajes/aproximacion/\">traje de aproximación aluminizado</a>, acompañado de respiración autónoma.",
+  "La estación estatal trabaja con <a href=\"/trajes/estructural/\">traje estructural para bomberos</a> y herramienta para incendios vehiculares. Para el salvamento aeroportuario del SSEI, la prenda clave es el <a href=\"/trajes/aproximacion/\">traje de aproximación aluminizado</a>, acompañado de respiración autónoma.",
   "Si compras para una corporación de Ciudad del Carmen, te cotizamos por partida con ficha técnica de cada artículo y el expediente que pida tu convocatoria, sea estatal, municipal o de empresa. Facturamos con CFDI 4.0, no exigimos compra mínima y enviamos a la isla."
  ],
  "faqs": [
@@ -18,7 +18,7 @@
   },
   {
    "q": "¿Quién opera los bomberos en Ciudad del Carmen?",
-   "a": "El combate de incendios urbanos corresponde a los Bomberos del Estado. PEMEX mantiene su propio cuerpo o brigada contra incendios, el aeropuerto tiene su SSEI y el municipio de Carmen participa con su Dirección de Protección Civil."
+   "a": "El combate de incendios urbanos corresponde a los Bomberos del Estado. PEMEX mantiene su propia brigada contra incendios, el aeropuerto tiene su SSEI y el municipio de Carmen participa con su Dirección de Protección Civil."
   },
   {
    "q": "¿Cómo contacto a los bomberos en Ciudad del Carmen para una gestión?",

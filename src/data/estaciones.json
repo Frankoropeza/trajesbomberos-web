@@ -2142,14 +2142,14 @@
  },
  {
   "id": "cam-04",
-  "nombre": "Cuerpo de Bomberos / Brigada Contra Incendios de PEMEX — Ciudad del Carmen",
+  "nombre": "Brigada contra incendios de PEMEX — Ciudad del Carmen",
   "slug": "cuerpo-de-bomberos-brigada-contra-incendios-de-pemex-ciudad-del-carmen",
   "estado": "campeche",
   "estadoNombre": "Campeche",
   "ciudad": "Ciudad del Carmen",
   "municipio": "Carmen",
   "tipo": "PEMEX",
-  "corporacion": "Cuerpo de Bomberos / Brigada Contra Incendios de PEMEX — Ciudad del Carmen",
+  "corporacion": "Petróleos Mexicanos (PEMEX)",
   "rolEstacion": "unica",
   "coordenadas": {
    "lat": 18.65,
@@ -2159,9 +2159,7 @@
   "sitioWeb": "https://www.pemex.com/",
   "servicios": [
    "incendios-estructurales",
-   "atencion-prehospitalaria",
-   "capacitacion",
-   "arff"
+   "capacitacion"
   ],
   "fuentes": [
    {
@@ -5025,7 +5023,7 @@
   "ciudad": "Monclova",
   "municipio": "Monclova",
   "tipo": "Municipal",
-  "corporacion": "Bomberos de Monclova",
+  "corporacion": "Heroico Cuerpo de Bomberos de Monclova",
   "rolEstacion": "unica",
   "direccion": "Avenida Sidermex, Col. Obrera 3er Sector, Monclova",
   "coordenadas": {
@@ -5258,7 +5256,11 @@
   ],
   "verificadoEl": "2026-06",
   "confianza": "media",
-  "municipioSlug": "nava"
+  "municipioSlug": "nava",
+  "servicios": [
+   "incendios-estructurales",
+   "hazmat"
+  ]
  },
  {
   "id": "coah-29",
@@ -5284,7 +5286,11 @@
   ],
   "verificadoEl": "2026-06",
   "confianza": "media",
-  "municipioSlug": "nava"
+  "municipioSlug": "nava",
+  "servicios": [
+   "incendios-estructurales",
+   "hazmat"
+  ]
  },
  {
   "id": "coah-27",
@@ -5520,7 +5526,7 @@
   "ciudad": "Saltillo",
   "municipio": "Saltillo",
   "tipo": "Municipal",
-  "corporacion": "Bomberos Saltillo",
+  "corporacion": "Heroico Cuerpo de Bomberos de Saltillo",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Oriente (Morelos)",
   "direccion": "Colonia Morelos, zona oriente, Saltillo",
@@ -5551,7 +5557,7 @@
   "ciudad": "Saltillo",
   "municipio": "Saltillo",
   "tipo": "Municipal",
-  "corporacion": "Bomberos Saltillo",
+  "corporacion": "Heroico Cuerpo de Bomberos de Saltillo",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Poniente (Guayulera)",
   "direccion": "Colonia Guayulera, poniente, Saltillo",
@@ -5582,7 +5588,7 @@
   "ciudad": "Saltillo",
   "municipio": "Saltillo",
   "tipo": "Municipal",
-  "corporacion": "Bomberos Saltillo",
+  "corporacion": "Heroico Cuerpo de Bomberos de Saltillo",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación Sur (26 de Marzo)",
   "direccion": "Calle Otilio Zurdo Galván, U.H. 26 de Marzo, C.P. 25086, Saltillo",
@@ -6791,9 +6797,8 @@
   },
   "sitioWeb": "https://www.gob.mx/conafor",
   "servicios": [
-   "incendios-estructurales",
    "incendios-forestales",
-   "atencion-prehospitalaria"
+   "capacitacion"
   ],
   "fuentes": [
    {
@@ -18321,7 +18326,7 @@
   "corporacion": "H. Cuerpo de Bomberos de Cajeme",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Estación USSI Sur",
-  "direccion": "Calle Michoacan, Col. Russo Voguel, C.P. 85199",
+  "direccion": "Calle Michoacán, Col. Russo Vogel, C.P. 85199",
   "coordenadas": {
    "lat": 27.45429879,
    "lng": -109.95325824,

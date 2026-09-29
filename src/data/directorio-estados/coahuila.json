@@ -5,10 +5,10 @@
   "Torreón reúne 9 estaciones, mientras Nava y Saltillo tienen 4 cada uno. Para quien gestiona equipo, la concentración urbana convive con atención industrial y minera en municipios concretos. Conviene separar las necesidades de los cuerpos municipales de las brigadas de planta, sin dejar fuera a las corporaciones voluntarias y a los servicios que declaran incendios forestales."
  ],
  "estacionesDuo": [
-  "Las estaciones de bomberos en Coahuila reúnen a Bomberos Torreón, Bomberos Saltillo y Bomberos de Monclova, además de corporaciones industriales y voluntarias. Se agrupan por municipio y muestran teléfono oficial cuando existe. Así se diferencia una estación pública de una brigada ligada a una instalación."
+  "Las estaciones de bomberos en Coahuila reúnen a Bomberos Torreón y a los Heroicos Cuerpos de Bomberos de Saltillo y Monclova, además de corporaciones industriales y voluntarias. Se agrupan por municipio y muestran teléfono oficial cuando existe. Así se diferencia una estación pública de una brigada ligada a una instalación."
  ],
  "coberturaDuo": [
-  "El incendio estructural aparece en 36 estaciones localizadas, pero Coahuila también declara materiales peligrosos en 4 y atención prehospitalaria en 9. Se agregan incendios forestales, rescate vehicular, espacios confinados y salvamento aeroportuario. La operación combina servicio urbano, industria e infraestructura."
+  "El incendio estructural aparece en 38 estaciones localizadas, pero Coahuila también declara materiales peligrosos en 6 y atención prehospitalaria en 9. Se agregan incendios forestales, rescate vehicular, espacios confinados y salvamento aeroportuario. La operación combina servicio urbano, industria e infraestructura."
  ],
  "equipoDuo": [
   "Los <a href=\"/trajes/estructural/\">trajes estructurales</a> responden a la cobertura base de los cuerpos de bomberos en Coahuila. Las brigadas con materiales peligrosos requieren <a href=\"/trajes/hazmat/\">trajes Hazmat</a> seleccionados para su escenario. En corporaciones que reportan incendios forestales, el equipo forestal es el indicado; para rescate vehicular se deben considerar partidas de extricación.",
@@ -21,7 +21,7 @@
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Coahuila?",
-   "a": "En Coahuila hay cuerpos municipales, brigadas industriales, servicios aeroportuarios, corporaciones voluntarias y unidades de CFE. Bomberos Torreón, Bomberos Saltillo y Bomberos de Monclova son parte de la cobertura municipal identificada en el estado."
+   "a": "En Coahuila hay cuerpos municipales, brigadas industriales, servicios aeroportuarios, corporaciones voluntarias y unidades de CFE. Bomberos Torreón y los Heroicos Cuerpos de Bomberos de Saltillo y Monclova son parte de la cobertura municipal identificada en el estado."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Coahuila para una gestión?",

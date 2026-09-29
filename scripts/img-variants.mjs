@@ -12,7 +12,12 @@
 // anchos disponibles). src/lib/img.ts lo lee para armar srcset; si una
 // imagen no está en el manifiesto se sirve igual que antes (sin srcset).
 //
-// Uso: node scripts/img-variants.mjs   (idempotente: no regenera lo que ya existe)
+// Uso: node scripts/img-variants.mjs           (idempotente: no regenera lo que ya existe)
+//      node scripts/img-variants.mjs --force   (regenera todas; úsalo si cambió un original)
+//
+// Codificación (2026-09-29, tanda de peso de imágenes): AVIF calidad 50, 4:2:0,
+// esfuerzo 8. Anchos 400/640/768/1024/1280 para que el escritorio (1x y 2x)
+// no descargue el original de 1600 px cuando pinta a 1024–1280 px.
 import { readdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -21,7 +26,8 @@ import sharp from 'sharp';
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const PUBLIC = path.join(ROOT, 'public');
 const DIRS = ['images'];
-const TARGETS = [400, 640, 768];
+const TARGETS = [400, 640, 768, 1024, 1280];
+const FORCE = process.argv.includes('--force');
 const VARIANT_RE = /-w\d+\.avif$/;
 
 async function* walk(dir) {
@@ -42,8 +48,8 @@ for (const d of DIRS) {
     for (const t of TARGETS) {
       if (t >= width * 0.9) continue;
       const out = file.replace(/\.avif$/, `-w${t}.avif`);
-      if (!existsSync(out)) {
-        await sharp(file).resize({ width: t }).avif({ quality: 55, effort: 6 }).toFile(out);
+      if (FORCE || !existsSync(out)) {
+        await sharp(file).resize({ width: t }).avif({ quality: 50, effort: 8, chromaSubsampling: '4:2:0' }).toFile(out);
         created++;
       }
       widths.push(t);
