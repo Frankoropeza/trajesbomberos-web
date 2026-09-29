@@ -16849,40 +16849,6 @@
   "municipioSlug": "el-marques"
  },
  {
-  "id": "qro-07",
-  "nombre": "CLAMAPIQ — Comité Local de Ayuda Mutua / Parque Industrial Querétaro",
-  "slug": "clamapiq-parque-industrial-queretaro",
-  "estado": "queretaro",
-  "estadoNombre": "Querétaro",
-  "ciudad": "Santa Rosa Jáuregui",
-  "municipio": "Querétaro",
-  "tipo": "Industrial",
-  "corporacion": "CLAMAPIQ — Comité Local de Ayuda Mutua / Parque Industrial Querétaro",
-  "rolEstacion": "unica",
-  "coordenadas": {
-   "lat": 20.7238,
-   "lng": -100.413,
-   "precision": "aproximada"
-  },
-  "telefono": "(442) 391-9308",
-  "sitioWeb": "https://piq.com.mx",
-  "servicios": [
-   "incendios-estructurales",
-   "hazmat",
-   "atencion-prehospitalaria",
-   "capacitacion"
-  ],
-  "fuentes": [
-   {
-    "nombre": "piq.com.mx",
-    "url": "https://piq.com.mx"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "queretaro"
- },
- {
   "id": "qro-01",
   "nombre": "Heroico Cuerpo de Bomberos Voluntarios de Querétaro",
   "slug": "heroico-cuerpo-bomberos-queretaro",
@@ -16962,7 +16928,6 @@
    "precision": "aproximada"
   },
   "email": "academiaaspirantes@bomberossanjuandelrio.com",
-  "sitioWeb": "https://www.bomberossanjuandelrio.org",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -16974,7 +16939,7 @@
   "fuentes": [
    {
     "nombre": "bomberossanjuandelrio.org",
-    "url": "https://www.bomberossanjuandelrio.org/blank-2"
+    "retirada": "https://www.bomberossanjuandelrio.org/blank-2"
    },
    {
     "nombre": "tramites.proteccioncivilqro.gob.mx",
