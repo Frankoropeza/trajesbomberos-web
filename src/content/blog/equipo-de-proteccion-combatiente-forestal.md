@@ -101,6 +101,20 @@ Ceniza, polvo y vegetación pueden ocultar cortes, desgaste o pérdida de ajuste
 
 Registra entrega por nombre, modelo, talla, accesorios y condición. Para brigadas de temporada, también define una lista de piezas de reserva por talla, método de recepción y quién autoriza retorno a servicio. Esa información permite reponer una sola pieza sin perder el material o formato del conjunto validado y facilita separar equipo que regresó contaminado o dañado.
 
+## Traje forestal NFPA 1977: qué pide la referencia y cómo leer la ficha
+
+Buena parte de las requisiciones en México todavía piden «traje forestal NFPA 1977». La referencia sigue siendo útil, con un matiz: desde la edición 2025, **la NFPA 1977 quedó integrada en la NFPA 1950**, el documento de la NFPA para equipo de rescate técnico, operaciones médicas y combate de incendios forestales y de interfaz urbano-forestal. Un modelo puede seguir declarando la NFPA 1977 con la edición con la que se certificó o declaró; lo que importa es que la ficha diga cuál y con qué estatus.
+
+| Pieza de la dotación | Qué se espera de ella | Qué revisar en la ficha | Ejemplo del catálogo |
+| --- | --- | --- | --- |
+| Camisola, pantalón u overol | Una capa de tela ignífuga inherente, ligera y transpirable | Fibra y gramaje (por ejemplo, Nomex IIIA de 6 oz/yd²), norma y edición, estatus | [Fire Ranger Explorer BOMW1001](/trajes/forestal/modelos/romak-fire-ranger-explorer/) |
+| Casco forestal | Carcasa ligera con ventilación y sujeción para goggles | Norma y edición declaradas, suspensión, accesorios | [Bullard Wildland FH911H](/cascos/bullard-fh911h/), que declara NFPA 1977 edición 1998 |
+| Goggles | Protección ocular frente a partículas y ceniza | Sujeción al casco y ventilación | [ESS Striketeam XTO](/accesorios/ess-striketeam-xto/) |
+| Guantes | Destreza para herramienta y marcha, resistencia a calor de contacto moderado | Talla probada con la herramienta real | [Guante forestal](/guantes/guante-forestal/) |
+| Botas | Marcha en pendiente y terreno suelto | Altura de caña, suela y talla mexicana | [Bota forestal](/botas/bota-forestal/) |
+
+Tres cosas que la tabla no cambia: el traje forestal **no tiene barrera de humedad ni barrera térmica**, así que no entra a un incendio estructural; una misma dotación se prueba completa, caminando y con la herramienta; y una ficha sin norma, edición o estatus no está completa, aunque la prenda sea amarilla y diga «forestal».
+
 ## Cómo lo cotizamos
 
 Nos indicas número de personas, tarea forestal, terreno, jornadas previstas, modelos de interés y tallas. Preparamos ficha técnica por partida para ropa, casco, goggles, guantes, bota y nuquera, indicando el estatus publicado de cada modelo. También apoyamos con compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México.
@@ -121,9 +135,14 @@ Para [cotizar equipo forestal para bomberos](/contacto/), incluye si requieres o
 
 **¿La bota forestal sirve para ataque interior?** No se debe asumir. Su selección corresponde a terreno y operación forestal, no al escenario estructural.
 
+**¿Qué es la NFPA 1977?** Es la norma de la NFPA para ropa y equipo de protección en incendios forestales. Desde la edición 2025 se integró en la NFPA 1950, junto con el equipo de rescate técnico y de operaciones médicas; muchos modelos todavía la declaran con su edición original.
+
+**¿Qué debe traer la ficha de un traje forestal?** Fibra y gramaje de la tela, construcción de una capa, norma y edición declaradas, estatus (certificado, declarado o solo materiales), tallas y configuración: overol o dos piezas.
+
 ## Fuentes
 
 - Fichas de [Fire Ranger Explorer](/trajes/forestal/modelos/romak-fire-ranger-explorer/), [Fire Ranger Scout](/trajes/forestal/modelos/romak-fire-ranger-scout/) y [BOMW1002](/trajes/forestal/modelos/romak-bomw1002/): formatos, materiales y estatus declarados.
 - Fichas de [Bullard FH911H](/cascos/bullard-fh911h/) y [ESS Striketeam XTO](/accesorios/ess-striketeam-xto/): componentes, códigos y referencias declaradas.
 - Fichas de [guante forestal](/guantes/guante-forestal/), [bota Fire Ranger](/botas/romak-fire-ranger-bota/) y [bota Strong Fire](/botas/strongfire-bota-forestal/): selección de manos y pies.
 - Guías de [materiales del traje de bombero](/blog/materiales-del-traje-de-bombero/) y [traje estructural o brigadista](/blog/traje-estructural-o-brigadista/): familias y límites operativos.
+- [NFPA 1950, equipo para rescate técnico, operaciones médicas y combate forestal (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1950-standard-development/1950): integra la antigua NFPA 1977.

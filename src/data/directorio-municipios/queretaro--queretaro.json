@@ -1,0 +1,32 @@
+{
+ "lead": "Querétaro tiene seis estaciones de bomberos, todas del Heroico Cuerpo de Bomberos Voluntarios de Querétaro: el cuartel del Centro Histórico y cinco subestaciones. Encuentra domicilios, ubicación y el teléfono oficial del cuartel.",
+ "panorama": [
+  "En la capital queretana, todo el servicio lo presta una sola institución de voluntarios. Su cuartel de Zaragoza y Ocampo, en el Centro Histórico, reúne rescate vehicular, rescate en altura, espacios confinados y atención prehospitalaria; subestaciones como Jurica, Vista Alegre o Mompaní atienden incendios y fugas de gas.",
+  "Si coordinas brigadas o compras para la zona, toma en cuenta que la red rebasa el casco urbano: la estación de Jurica opera junto al parque industrial del mismo nombre y la del Parque Bicentenario queda en la delegación Santa Rosa Jáuregui. Casi todas imparten capacitación, un canal útil para empresas que forman a su personal."
+ ],
+ "coberturaDuo": [
+  "Las seis estaciones son voluntarias y todas combaten incendios estructurales; en cinco de ellas se suman incendios vehiculares, fugas de gas y cursos de capacitación. Ese perfil habla de una ciudad donde el gas y los incendios de vehículos pesan tanto como el fuego en viviendas, comercios e industria."
+ ],
+ "equipoDuo": [
+  "Las subestaciones trabajan sobre todo con <a href=\"/trajes/estructural/\">trajes estructurales</a>, casco, capucha, guantes y respiración autónoma, útiles tanto en incendios de vivienda como en fugas de gas. El cuartel del Centro Histórico suma arneses y cuerdas para rescate en altura, equipo para espacios confinados y herramienta de extricación.",
+  "Para la corporación voluntaria o para una empresa que dona equipo en Querétaro, LORICA prepara la cotización por partida con ficha técnica y, si hay concurso, el expediente completo. Facturamos con CFDI 4.0 a nombre de quien paga, sin compra mínima, y enviamos también <a href=\"/kits/\">kits completos por bombero</a>."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Querétaro y en qué zonas se ubican?",
+   "a": "Son seis. El cuartel está en Zaragoza esquina Ocampo, Centro Histórico; las subestaciones se localizan en Ampliación Jurica, junto al parque industrial, en las colonias Vista Alegre y Ecológica, sobre la carretera a Mompaní y en el Parque Bicentenario de Santa Rosa Jáuregui."
+  },
+  {
+   "q": "¿Quién está a cargo de los bomberos en Querétaro?",
+   "a": "El Heroico Cuerpo de Bomberos Voluntarios de Querétaro opera las seis estaciones de la capital con personal voluntario. En el estado existen 14 estaciones repartidas en 7 municipios, y la capital concentra casi la mitad de ellas."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Querétaro para solicitar un curso o una visita?",
+   "a": "Llama al cuartel del Centro Histórico, la única estación con teléfono oficial publicado; el número aparece junto a su domicilio. Las subestaciones no difunden línea propia. Ante una emergencia, el número correcto es el 911."
+  },
+  {
+   "q": "¿Cómo adquiere equipo una corporación de bomberos en Querétaro?",
+   "a": "Con la lista de artículos o las bases del concurso, LORICA arma una cotización formal con ficha técnica por partida y factura CFDI 4.0. No hay monto mínimo, enviamos a Querétaro y atendemos igual a voluntarios, brigadas de parques industriales y áreas de protección civil."
+  }
+ ]
+}

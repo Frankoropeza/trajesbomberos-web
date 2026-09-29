@@ -1,39 +1,39 @@
 {
- "lead": "Por ahora tenemos localizada una estación de bomberos en Tlaxcala, en Apetatitlán de Antonio Carvajal. Encontrarás su dirección, teléfono oficial, ubicación y corporación operadora; si conoces una estación que falta, escríbenos para considerarla.",
+ "lead": "En Tlaxcala tenemos localizadas 5 estaciones de bomberos en 5 municipios, todas del cuerpo estatal: la sede de Apetatitlán de Antonio Carvajal y 4 subestaciones. Encontrarás ubicación, domicilio cuando se conoce y el teléfono oficial de la sede.",
  "panorama": [
-  "En Tlaxcala tenemos localizado al Heroico Cuerpo de Bomberos de Tlaxcala, corporación estatal con sede en Apetatitlán de Antonio Carvajal. Es el contacto de partida para coordinar capacitación, apoyo o dotación con los bomberos del estado, y su teléfono oficial aparece en esta página.",
-  "Por ahora la cobertura localizada se limita a un municipio, así que esta página todavía no describe la red municipal de bomberos en Tlaxcala. Si tu corporación opera en otro municipio del estado, escríbenos con su dato oficial y la agregamos. Si equipas al cuerpo estatal, la cotización se arma según los servicios que declara, del incendio estructural al rescate en altura."
+  "El servicio de bomberos en Tlaxcala tiene un solo mando: el Heroico Cuerpo de Bomberos de Tlaxcala, corporación estatal con sede en San Pablo Apetatitlán. De ella dependen 4 subestaciones, en Calpulalpan, Huamantla, Tlaxco y la Ciudad Industrial Xicohténcatl, en Tetla de la Solidaridad. Por ahora no tenemos localizados cuerpos municipales, voluntarios ni aeroportuarios en el estado.",
+  "Esa estructura simplifica la coordinación: una sola corporación decide capacitación y dotación para todas sus bases. Cada subestación ocupa un municipio distinto, y la de Tetla trabaja dentro de una zona industrial. Si equipas a los bomberos en Tlaxcala, piensa en lotes homogéneos que el cuerpo estatal pueda repartir entre la sede y sus subestaciones."
  ],
  "estacionesDuo": [
-  "El Heroico Cuerpo de Bomberos de Tlaxcala aparece agrupado en Apetatitlán de Antonio Carvajal, con su domicilio, sus dos teléfonos oficiales y la ubicación de la estación. Es la vía directa para una gestión institucional con los bomberos en Tlaxcala."
+  "Todas las estaciones pertenecen al Heroico Cuerpo de Bomberos de Tlaxcala. Las agrupamos por municipio: la sede de Apetatitlán, única con teléfono oficial, y las subestaciones de Calpulalpan, Huamantla, Tetla y Tlaxco. Cualquier gestión con estas bases se canaliza por la sede estatal."
  ],
  "coberturaDuo": [
-  "La estación localizada declara incendios estructurales, forestales, rescate vehicular, rescate en altura y materiales peligrosos. Ese conjunto cubre riesgos diversos desde una sola estación. Conviene distinguir la protección estructural de la forestal y reservar configuraciones especializadas para rescate o sustancias peligrosas."
+  "Las 5 estaciones declaran incendio estructural, incendio forestal, rescate vehicular y materiales peligrosos, y 4 atienden además enjambres y fauna. Es un perfil amplio y parejo: cada base responde igual a un fuego en inmueble, a un incendio en el campo o a un derrame."
  ],
  "equipoDuo": [
-  "Para fuego en inmuebles, la prioridad son <a href=\"/trajes/estructural/\">trajes estructurales</a>. La atención de incendios forestales requiere prendas distintas, y los materiales peligrosos demandan protección Hazmat específica. El rescate vehicular y en altura se beneficia de <a href=\"/rescate/\">equipo de rescate</a> seleccionado por actividad, sin asignar una misma prenda a riesgos incompatibles.",
-  "LORICA arma la cotización con especificación técnica por partida, útil para compra directa o licitación de una corporación en Tlaxcala. Se entrega CFDI 4.0, no existe compra mínima y se coordina el envío al estado. La propuesta puede sumar <a href=\"/guantes/\">guantes para bombero</a>, botas y protección respiratoria de acuerdo con la intervención prioritaria."
+  "Con ese perfil, cada base necesita <a href=\"/trajes/estructural/\">trajes estructurales</a> y, en paralelo, <a href=\"/trajes/forestal/\">trajes forestales</a> para el trabajo en campo, donde el calor y la caminata exigen prendas ligeras. Los materiales peligrosos piden protección Hazmat y el rescate vehicular, equipo de extricación. La sede, que declara rescate en altura, suma arneses y equipo de rescate.",
+  "Si el cuerpo estatal compra por licitación, LORICA arma el expediente con ficha técnica por partida; también atendemos compras directas. Facturamos con CFDI 4.0, no pedimos compra mínima y enviamos a Tlaxcala. Para operaciones con humo denso o sustancias tóxicas, completa la dotación con <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a>."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Tlaxcala y dónde están?",
-   "a": "Por ahora hay una estación de bomberos localizada en Tlaxcala: el Heroico Cuerpo de Bomberos de Tlaxcala, en Apetatitlán de Antonio Carvajal. Su información incluye ubicación, dirección y teléfono oficial. Si conoces otra estación de Tlaxcala que falte, escríbenos para considerarla."
+   "a": "Por ahora tenemos localizadas 5 estaciones de bomberos en Tlaxcala, una por municipio: la sede estatal en Apetatitlán de Antonio Carvajal y subestaciones en Calpulalpan, Huamantla, Tetla de la Solidaridad y Tlaxco. Si conoces otra estación en el estado, escríbenos."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Tlaxcala?",
-   "a": "La estación localizada de bomberos en Tlaxcala es operada por el Heroico Cuerpo de Bomberos de Tlaxcala y está clasificada como estatal. Con la información disponible no es posible describir una red completa de corporaciones municipales, voluntarias, industriales o aeroportuarias dentro del estado."
+   "a": "El servicio lo opera el Heroico Cuerpo de Bomberos de Tlaxcala, de carácter estatal, que coordina su sede en San Pablo Apetatitlán y 4 subestaciones. Hasta ahora no hemos localizado corporaciones municipales, voluntarias, aeroportuarias ni industriales dentro del estado."
   },
   {
-   "q": "¿Cómo contactar a una estación de bomberos en Tlaxcala para una gestión?",
-   "a": "Para una gestión en Tlaxcala, localiza el teléfono oficial del Heroico Cuerpo de Bomberos de Tlaxcala que aparece junto a su ubicación. Úsalo para solicitar capacitación, ofrecer una donación o pedir un dictamen. Ante una emergencia, llama al 911 y no dependas de contactos administrativos."
+   "q": "¿Cómo contactar a los bomberos en Tlaxcala para una gestión?",
+   "a": "Las subestaciones no tienen teléfono publicado, así que canaliza capacitación, donaciones o dictámenes por el teléfono oficial de la sede de Apetatitlán, aunque tu asunto sea con Huamantla o Tlaxco. Ante una emergencia en Tlaxcala, marca 911."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Tlaxcala?",
-   "a": "El cuerpo de bomberos localizado en Tlaxcala declara incendios estructurales y forestales, rescate vehicular, rescate en altura, materiales peligrosos y atención prehospitalaria. Son servicios que demandan protección distinta según la escena, el calor, la exposición y la maniobra requerida."
+   "a": "Todas las bases declaran incendios estructurales y forestales, rescate vehicular y materiales peligrosos; casi todas atienden también enjambres y fauna. La sede de Apetatitlán agrega rescate en altura y atención prehospitalaria, servicios que no aparecen en las subestaciones."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Tlaxcala?",
-   "a": "Una corporación de bomberos en Tlaxcala puede comprar por licitación o compra directa con LORICA. La cotización incorpora especificación técnica por partida y CFDI 4.0. No hay compra mínima y el envío se programa al estado conforme a la protección y cantidades que defina la corporación."
+   "a": "Arma tu solicitud por partidas y LORICA te devuelve la ficha técnica de cada una, lista para licitación o para compra directa. La factura sale en CFDI 4.0, no hay compra mínima y el envío llega a Tlaxcala. Si compras para varias subestaciones, cotiza todo en una sola solicitud."
   }
  ]
 }

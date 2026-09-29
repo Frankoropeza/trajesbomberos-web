@@ -1,39 +1,39 @@
 {
- "lead": "Por ahora tenemos localizadas 5 estaciones de bomberos en Tabasco, distribuidas entre Centro, Cárdenas y Paraíso. Encontrarás dirección, teléfono oficial cuando existe, ubicación y la corporación que opera cada estación; si falta una estación, escríbenos.",
+ "lead": "Por ahora tenemos localizadas 10 estaciones de bomberos en Tabasco, en 8 municipios. Centro, con Villahermosa, reúne 3, y el IPCET suma centros regionales en el interior. Verás dirección, teléfono oficial cuando existe y quién opera cada estación.",
  "panorama": [
-  "El servicio localizado en Tabasco combina protección civil municipal, una corporación estatal, la brigada contraincendio de la Refinería OLMECA / Terminal Marítima Dos Bocas y el SSEI del aeropuerto. Centro concentra tres de los cinco estaciones. No hay centrales ni subestaciones en esta página, lo que deja visibles corporaciones con alcances y entornos de trabajo distintos.",
-  "Centro reúne las estaciones localizadas de carácter municipal, estatal y aeroportuario, mientras Cárdenas y Paraíso aportan una estación cada uno. La presencia de una brigada de PEMEX en Paraíso modifica el perfil de compra frente a una corporación municipal. Para equipar bomberos en Tabasco, conviene definir el destino y la exposición antes de integrar partidas."
+  "El eje de los bomberos en Tabasco es estatal: el Departamento de Bomberos del IPCET opera desde Villahermosa y coordina 4 centros regionales en Comalcalco, Huimanguillo, Teapa y Tenosique. A esa red se suman Protección Civil y Bomberos de Centro, las unidades municipales de Cárdenas y Cunduacán, la brigada contraincendio de la Refinería OLMECA en Paraíso y el SSEI del aeropuerto.",
+  "Villahermosa concentra la operación urbana, con 3 corporaciones distintas en el municipio de Centro, mientras los centros regionales Costa, Sabana, Sierra y Frontera Sur llevan la presencia estatal al resto del territorio. Para quien equipa, eso implica dotaciones diferentes: urbanas en Centro, forestales y de protección civil en las regiones, industriales en Paraíso."
  ],
  "estacionesDuo": [
-  "El Departamento de Bomberos del IPCET — Tabasco y Protección Civil y Bomberos del Municipio de Centro comparten presencia en Centro. Se suman la Unidad de Bomberos del H. Ayuntamiento de Cárdenas y la brigada contraincendio de Dos Bocas. Esta página está ordenada por municipio e incorpora teléfono oficial cuando se cuenta con él."
+  "El Departamento de Bomberos del IPCET — Tabasco es la corporación con más presencia, entre su sede y los centros regionales. En Paraíso opera la brigada de la Refinería OLMECA / Terminal Marítima Dos Bocas, y en Cunduacán, la coordinación municipal. Todo se agrupa por municipio con su teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Cuatro estaciones declaran incendios estructurales, materiales peligrosos y atención prehospitalaria. También se reportan rescate vehicular, rescate acuático, fuego forestal y salvamento aeroportuario. El peso de las sustancias peligrosas pide separar la protección para estructura de la destinada a exposición química o aproximación."
+  "La atención prehospitalaria es el servicio más extendido, en 7 estaciones, y el rescate acuático aparece en 5, un riesgo que distingue a Tabasco. El incendio forestal se concentra en los centros regionales y los materiales peligrosos en Villahermosa, Cárdenas y la refinería de Paraíso."
  ],
  "equipoDuo": [
-  "Para incendios en edificios, los <a href=\"/trajes/estructural/\">trajes estructurales</a> cubren la necesidad básica. La brigada que declara materiales peligrosos requiere una selección Hazmat distinta, y los servicios aeroportuarios demandan protección de aproximación. El rescate vehicular se beneficia de prendas de extricación, mientras el rescate acuático debe equiparse para esa maniobra y no con protección contra fuego.",
-  "LORICA organiza cada cotización con especificación técnica por partida para licitación o compra directa. Entrega CFDI 4.0, no pide compra mínima y coordina envío a Tabasco. Una corporación puede completar su pedido con <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a>, cascos y guantes, definidos por los riesgos de la base que recibirá la dotación."
+  "La refinería de Paraíso y las corporaciones de Villahermosa y Cárdenas requieren <a href=\"/trajes/hazmat/\">trajes Hazmat</a> además de <a href=\"/trajes/estructural/\">trajes estructurales</a>. Los centros regionales de Huimanguillo, Teapa y Tenosique, con incendio forestal, necesitan prendas ligeras de campo; el rescate acuático pide equipo propio, y el SSEI, protección de aproximación.",
+  "LORICA cotiza por partida con ficha técnica para una licitación estatal o municipal, o para la compra directa de una brigada industrial. Facturamos con CFDI 4.0, sin compra mínima, y enviamos a Tabasco, incluida la dotación de un centro regional. Suma <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> para quienes atienden fugas y sustancias peligrosas."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Tabasco y dónde están?",
-   "a": "Por ahora tenemos localizadas 5 estaciones de bomberos en Tabasco. Tres se ubican en Centro y hay una en Cárdenas y otra en Paraíso. Incluyen corporaciones municipales, una estatal, una brigada de PEMEX y un servicio aeroportuario. Si conoces una estación faltante, escríbenos."
+   "a": "Tenemos localizadas 10 estaciones de bomberos en Tabasco, en 8 municipios. Centro reúne 3 y hay una en Cárdenas, Comalcalco, Cunduacán, Huimanguillo, Paraíso, Teapa y Tenosique. Si conoces una estación que falte, escríbenos para sumarla."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Tabasco?",
-   "a": "Los bomberos en Tabasco aparecen bajo operación municipal en Centro y Cárdenas, estatal mediante el IPCET, industrial por la brigada contraincendio de la Refinería OLMECA / Terminal Marítima Dos Bocas y aeroportuaria por el SSEI del Aeropuerto Internacional Carlos Rovirosa Pérez."
+   "a": "La mitad de las estaciones son estatales: el IPCET opera su sede en Villahermosa y 4 centros regionales. Los ayuntamientos de Centro, Cárdenas y Cunduacán tienen bomberos propios, y completan el mapa una brigada de PEMEX en Paraíso y el SSEI del aeropuerto Carlos Rovirosa Pérez."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Tabasco para una gestión?",
-   "a": "Localiza la corporación de Centro, Cárdenas o Paraíso que te corresponde y usa su teléfono oficial cuando esté publicado para capacitación, donaciones o dictámenes. Si tienes una emergencia en Tabasco, llama al 911. Los teléfonos de oficina sirven para coordinación institucional y no para atención urgente."
+   "a": "Tienen teléfono oficial publicado el IPCET, Protección Civil y Bomberos de Centro y la coordinación municipal de Cunduacán. Para un centro regional, gestiona por la sede del IPCET la capacitación, la donación o el dictamen. En una emergencia en Tabasco, marca 911."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Tabasco?",
-   "a": "Las corporaciones localizadas en Tabasco declaran incendios estructurales, materiales peligrosos, atención prehospitalaria y rescate vehicular. También aparecen rescate acuático, incendios forestales, fugas de gas y salvamento aeroportuario, según la corporación y el entorno donde opera."
+   "a": "Declaran sobre todo atención prehospitalaria, incendio estructural, rescate acuático y protección civil. Los centros regionales de Huimanguillo, Teapa y Tenosique suman incendio forestal; Villahermosa, Cárdenas y la refinería de Paraíso atienden materiales peligrosos, y la refinería agrega fugas de gas."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Tabasco?",
-   "a": "Una corporación de bomberos en Tabasco puede adquirir por licitación o compra directa. LORICA prepara especificación técnica por partida, emite CFDI 4.0 y no solicita compra mínima. El envío se coordina al estado con la protección que corresponda a la exposición y los servicios de la corporación."
+   "a": "Ya sea por licitación del IPCET o de un ayuntamiento, o por compra directa de una brigada, LORICA arma la cotización con ficha técnica por partida y CFDI 4.0. No pedimos compra mínima y enviamos a Tabasco, tanto a Villahermosa como a un centro regional."
   }
  ]
 }
