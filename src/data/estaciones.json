@@ -1736,7 +1736,7 @@
    "lng": -109.6975,
    "precision": "aproximada"
   },
-  "telefono": "(624) 142-2466",
+  "telefono": "(624) 189-1082",
   "telefonosAdicionales": [
    "(624) 189-1082"
   ],
@@ -1755,6 +1755,10 @@
    {
     "nombre": "loscabos.gob.mx",
     "url": "https://www.loscabos.gob.mx/atiende-bomberos-de-san-jose-del-cabo-866-emergencias-durante-primer-trimestre-de-2026/"
+   },
+   {
+    "nombre": "bomberossjc.com — sitio oficial",
+    "url": "https://bomberossjc.com/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2257,9 +2261,6 @@
    "precision": "aproximada"
   },
   "telefono": "(982) 828-0343",
-  "telefonosAdicionales": [
-   "(982) 828-0897"
-  ],
   "sitioWeb": "https://www.champoton.gob.mx",
   "servicios": [
    "proteccion-civil"
