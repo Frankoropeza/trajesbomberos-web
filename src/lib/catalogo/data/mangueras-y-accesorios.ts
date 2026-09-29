@@ -14,49 +14,47 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
     "eyebrow": "Catálogo de conducción y conexión",
     "lead": "Mangueras, pitones, llaves y adaptadores funcionan como un conjunto: diámetro, rosca, presión de trabajo declarada y método de operación se confirman antes de comprar.",
     "intro": [
-      "Una manguera de ataque, un pitón y sus conexiones se seleccionan por el sistema que ya opera la organización. Diámetros, roscas, acoples, caudal y maniobra deben coincidir. No es suficiente que dos piezas tengan apariencia similar; una conexión incompatible impide el uso cuando se necesita.",
-      "Para mangueras y accesorios se solicita la norma NFPA aplicable que declare el fabricante. Esta sección no atribuye números de norma a modelos sin ficha. La cotización debe dejar claros diámetro, longitud, tipo de chaqueta, acoples, rosca, boquilla y los elementos de mantenimiento requeridos.",
-      "Antes de poner equipo en servicio, realiza una revisión controlada de acoples, sellos, llaves y operación. Seca y guarda las mangueras conforme al procedimiento para evitar deterioro. Los accesorios se inventarían por tamaño y tipo de rosca; así la unidad puede verificar compatibilidad antes de una salida.",
-      "La recepción debe ser parte de la requisición. Antes de asignar equipo, coteja medidas, roscas, género, juntas y condición física con mangueras, hidrantes y accesorios reales. Registra la ubicación de cada componente por unidad para que las reducciones, siamesas y llaves estén disponibles sin depender de una memoria individual.",
-      "El cuidado conserva la capacidad de inspeccionar, no sustituye un componente comprometido. Tras prueba o servicio, drena, limpia y seca mangueras y accesorios; protege roscas y juntas y separa cualquier pieza con fuga, deformación o contaminación. El historial permite reponer la transición correcta antes de que haga falta.",
-      "Una configuración clara también facilita la capacitación operativa. El personal puede reconocer cuál accesorio corresponde a cada línea, dónde se resguarda y qué verificación requiere antes de una salida. Esta disciplina reduce decisiones improvisadas y permite que inventario, mantenimiento y adquisición usen la misma nomenclatura de diámetros, roscas y funciones."
+      "Surtimos líneas contra incendio para cuerpos de bomberos, brigadas y unidades que deben unir fuente, manguera, acople, rosca, adaptador y boquilla. La manguera de ataque se publica en 1 ½ o 2 ½ pulgadas con doble chaqueta; elige su diámetro y ambos extremos con el sistema instalado. Cotizamos la línea completa para tu maniobra.",
+      "Confirmamos diámetro, longitud, doble chaqueta, acoples, rosca, entrada y patrón de descarga antes de cotizar. NH/NST y NPSH no se tratan como equivalentes, y pitón, siamesa, reducción o llave deben corresponder a la geometría real. Mándanos por WhatsApp fotos y medidas de tu hidrante, bomba y líneas para cerrar la transición física.",
+      "Combinamos manguera de ataque, pitón de chorro, niebla o combinado, llave para hidrante o spanner, y conexiones con reducciones o siamesas. Solicitamos la norma NFPA aplicable que declare el fabricante para cada modelo, sin atribuir un código a una ficha que no lo publica. Pide tu partida con juntas y protectores de rosca definidos.",
+      "Documentamos por unidad diámetro, rosca, función, ubicación, condición inicial y responsable de verificación. Al recibir cotejas medidas, género, juntas y acoples contra los componentes reales; después inventarías cada llave y adaptador donde viaja. Envíanos tu pliego por WhatsApp para entregarte la configuración por escrito y facilitar la inspección."
     ],
     "faq": [
       {
         "q": "¿Por qué se valida la línea completa?",
-        "a": "Porque manguera, pitón, acoples y adaptadores deben coincidir para conducir y controlar agua."
+        "a": "Validamos la línea completa porque manguera, pitón, acoples y adaptadores deben coincidir para conducir y controlar agua. La manguera de ataque está publicada en 1 ½ o 2 ½ pulgadas con doble chaqueta, y el pitón requiere entrada y rosca compatibles. Mándanos por WhatsApp diámetro, rosca y fotos de tus extremos para cotizar la transición correcta."
       },
       {
         "q": "¿Qué diámetro contempla la manguera de ataque?",
-        "a": "1 ½ y 2 ½ pulgadas, definidos con el sistema y aplicación."
+        "a": "La manguera de ataque contempla 1 ½ y 2 ½ pulgadas, definidos con tu sistema y aplicación. Ambas medidas se publican con doble chaqueta, pero el acople, la rosca y el pitón deben cerrar con la red y bomba existentes. Pídenos por WhatsApp la partida con diámetro, longitud y ambos extremos escritos en tu cotización."
       },
       {
         "q": "¿NH/NST y NPSH son iguales?",
-        "a": "No se deben tratar como equivalentes; identifica la rosca y prueba el acople correcto."
+        "a": "No, NH/NST y NPSH no son equivalentes y se identifican por rosca antes de pedir una conexión. Las reducciones, siamesas y adaptadores se cotizan para unir diámetros, roscas y géneros definidos, no para corregir datos desconocidos. Mándanos por WhatsApp fotos y medidas de ambos extremos para confirmar el acople físico."
       },
       {
         "q": "¿Qué es una siamesa?",
-        "a": "Una conexión cuya configuración de entradas y salida debe describirse por escrito para la aplicación."
+        "a": "Una siamesa es una conexión cuya configuración de entradas y salida se describe por escrito para tu aplicación. Pertenece a las conexiones y adaptadores junto con reducciones y transiciones NH/NST o NPSH, por lo que depende de diámetro, rosca y género. Pídenos por WhatsApp la relación de entradas y salida para cotizar la pieza correcta."
       },
       {
         "q": "¿Qué se revisa después de uso?",
-        "a": "Chaqueta, forro, acoples, juntas, roscas, válvulas y presencia de suciedad o humedad."
+        "a": "Después de uso revisas chaqueta, forro, acoples, juntas, roscas, válvulas, suciedad y humedad. La manguera de doble chaqueta y el pitón de chorro, niebla o combinado conservan función solo si sus uniones y entrada siguen limpias e íntegras. Mándanos por WhatsApp la pieza afectada para cotizar su reemplazo con el mismo diámetro y rosca."
       },
       {
         "q": "¿Qué norma se pide?",
-        "a": "La norma NFPA aplicable que declare el fabricante para cada modelo."
+        "a": "Pide la norma NFPA aplicable que declare el fabricante para cada modelo de manguera, pitón, llave o adaptador. El catálogo no atribuye un código NFPA a una ficha sin esa declaración, aunque la manguera se publique en 1 ½ o 2 ½ pulgadas. Mándanos por WhatsApp tu pliego para solicitar el documento junto con la cotización."
       },
       {
         "q": "¿Cuándo se retira un componente?",
-        "a": "Ante fuga, corte, deformación, rosca dañada o condición que impida su inspección o acople seguro."
+        "a": "Retira un componente ante fuga, corte, deformación, rosca dañada o condición que impida su inspección o acople. En una línea de 1 ½ o 2 ½ pulgadas, una junta o acople comprometido afecta la conexión con pitón, adaptador o hidrante. Pídenos por WhatsApp el reemplazo indicando diámetro, rosca, función y ambos extremos."
       },
       {
         "q": "¿Qué se registra por unidad?",
-        "a": "Medidas, roscas, función, ubicación, condición inicial y responsable de verificación."
+        "a": "Por unidad registras medidas, roscas, función, ubicación, condición inicial y responsable de verificación. La relación distingue manguera de ataque de 1 ½ o 2 ½ pulgadas, pitón, llave para hidrante, spanner, reducción y siamesa para que cada transición sea localizable. Mándanos por WhatsApp tu inventario para cotizar los componentes que falten."
       },
       {
         "q": "¿Por qué se protegen roscas y juntas?",
-        "a": "Para evitar golpes, contaminación o daño que impida un asiento y sellado correctos."
+        "a": "Proteges roscas y juntas para evitar golpes, contaminación o daño que impida asiento y sellado. En conexiones NH/NST o NPSH, una rosca afectada compromete la transición entre manguera, pitón, reducción o siamesa aunque el diámetro parezca correcto. Pide por WhatsApp protectores y repuestos con la rosca que ya opera tu unidad."
       }
     ],
     "hero": {
@@ -65,8 +63,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
     },
     "leyendaImagenIlustrativa": "Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.",
     "resumenHero": [
-      "Una línea contra incendio solo funciona cuando cada transición está definida: fuente, manguera, acople, rosca, adaptador y boquilla. La selección empieza por el sistema instalado y la maniobra autorizada, para evitar que piezas nominalmente parecidas lleguen a una unidad sin poder conectarse.",
-      "La compra debe incluir recepción y conservación. Diámetro, longitud, doble chaqueta, patrón de descarga, juntas y herramientas de hidrante se revisan con los componentes reales; después se limpian, secan, inventarían y resguardan para conservar disponibilidad operativa. LORICA confirma por escrito diámetro, rosca y acople de cada partida antes de cotizar."
+      "Mangueras y accesorios forman la línea que conecta fuente, manguera, acople, rosca, adaptador y boquilla para brigadas y unidades contra incendio. La manguera de ataque se publica en 1 ½ o 2 ½ pulgadas con doble chaqueta; pitón, llave y conexión se eligen para que correspondan a tu sistema instalado.",
+      "Cotizamos diámetro, longitud, rosca, acoples, entrada, patrón de descarga y juntas por escrito. Mándanos por WhatsApp las medidas y fotos de tu hidrante, bomba y línea; te entregamos la configuración de manguera, pitón, reducción o siamesa para cotejarla contra tus componentes antes de recibirla."
     ],
     "etiquetas": {
       "menuTipos": "Conducción, descarga y conexión",

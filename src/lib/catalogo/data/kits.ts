@@ -14,9 +14,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "eyebrow": "Catálogo de protección personal",
     "lead": "Un kit ayuda a coordinar piezas que trabajan juntas, después de definir riesgo, operación autorizada y tallas de cada usuario.",
     "resumenHero": [
-      "Un kit de equipo para bombero organiza componentes que deben conservar cobertura y movilidad como conjunto. Traje, casco, capucha, guantes y botas se seleccionan por el escenario de respuesta y se validan con las maniobras que realizará cada persona; el ERA se revisa por separado cuando la atmósfera y la operación lo requieren.",
-      "La cotización en una sola partida facilita comparar modelos, tallas, accesorios y documentos aplicables sin convertir el kit en una promesa genérica de protección. La configuración final se confirma por componente, por usuario y por procedimiento operativo; en LORICA la armamos con más de 35 años de experiencia en equipo para bomberos.",
-      "La coordinación del kit continúa durante toda su vida en servicio: cualquier cambio de talla, accesorio o tarea exige revisar nuevamente la configuración antes de asignarla."
+      "Los kits reúnen traje, casco, capucha, guantes y botas para cuerpos de bomberos, brigadas de centro de trabajo y cuadrillas forestales. El estructural usa NFPA 1970 como referencia, el brigadista NOM-002-STPS-2010 y el forestal NFPA 1950 por modelo; el ERA se define aparte cuando la operación lo requiere.",
+      "Cotizamos tu kit por componente, talla, accesorio y documento aplicable, sin trasladar una declaración de una pieza a todo el conjunto. Mándanos por WhatsApp el tipo de operación, número de elementos y tallas; te entregamos una relación para cotejar códigos, ajuste y accesorios por persona."
     ],
     "etiquetas": {
       "menuTipos": "Kits de equipo para bomberos por operación",
@@ -29,11 +28,10 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "modelosDescripcion": "Consulta cada modelo para revisar su configuración y documentación aplicable."
     },
     "intro": [
-      "El equipo de bombero completo no se define por una lista genérica. Un conjunto estructural requiere traje, casco, capucha, guantes y botas que conserven cobertura al moverse; el ERA se evalúa por separado cuando la atmósfera y la operación lo requieren. Para brigadas y cuadrillas forestales, las piezas cambian de acuerdo con procedimiento, terreno y límite de intervención.",
-      "Cotizar por kit permite reunir modelos, tallas y accesorios en una sola partida. También facilita revisar la interfaz entre casco, capucha, cuello, puños, guantes, pantalón y botas antes de ordenar. Esa ventaja desaparece si se sustituyen componentes sin probarlos o si se asume que la declaración de una pieza representa todo el conjunto.",
-      "La selección inicia con una pregunta operativa: qué tareas están autorizadas y bajo qué condiciones. A partir de ahí se define si el usuario requiere protección estructural, equipo para una brigada de centro de trabajo o una combinación forestal para operación exterior. El nombre comercial del kit no reemplaza ese análisis.",
-      "Una requisición completa identifica componentes, códigos, tallas, colores, accesorios, cantidades y documentación aplicable. Al recibir, cada elemento se compara contra esa relación y se asigna a una persona. Este control facilita inspección, cuidado y reposición sin perder la configuración que ya fue probada.",
-      "Esta sección organiza kits estructurales, brigadistas y forestales. Usa cada página para describir la tarea real, confirmar configuraciones y pedir por escrito los documentos aplicables de cada componente. No publicamos precios: la cotización refleja tallas, número de elementos, accesorios y operación."
+      "Surtimos kits estructurales, brigadistas y forestales para la tarea que cubre tu corporación o centro de trabajo. El estructural reúne traje, casco, capucha, guantes y botas con NFPA 1970 como referencia; el brigadista parte de NOM-002-STPS-2010 y el forestal de NFPA 1950 por modelo. Definimos el ERA por separado cuando la atmósfera y operación lo requieren.",
+      "Elegimos con tu equipo la interfaz entre casco, capucha, cuello, puños, guantes, pantalón y botas. La talla se asigna por persona y los accesorios se fijan antes de ordenar; una declaración normativa se conserva como declaración de la pieza que la publica. Mándanos por WhatsApp tu operación y las tallas para cotizar una configuración que puedas comparar.",
+      "Combinamos los componentes publicados para el kit estructural, el kit brigadista o el kit forestal, en vez de mezclar alcances, y todo va en una sola partida con factura CFDI 4.0. El forestal integra ropa, casco, goggles, guantes, bota y nuquera; el estructural y brigadista organizan traje, casco, capucha, guantes y botas. Pide cada modelo, color y accesorio en la misma relación de compra.",
+      "Documentamos códigos, tallas, colores, accesorios, cantidades y documento aplicable por componente. Al recibir tu partida cotejas esa relación, revisas cierres y ajuste, y asignas cada elemento a su persona; así conservas la configuración solicitada para inspección y reposición. Envíanos tu pliego por WhatsApp y te entregamos la relación para recepción."
     ],
     "comparativa": {
       "columnas": [
@@ -109,31 +107,31 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
     "faq": [
       {
         "q": "¿Qué incluye un kit de bombero completo?",
-        "a": "Depende de la operación; puede integrar traje, casco, capucha, guantes y botas. El ERA se define aparte cuando el riesgo lo exige."
+        "a": "Un kit puede integrar traje, casco, capucha, guantes y botas; el ERA se define aparte según atmósfera y operación. El estructural usa NFPA 1970 como referencia, mientras el forestal incorpora ropa, goggles, bota y nuquera con NFPA 1950 por modelo. Mándanos por WhatsApp tu tarea y número de elementos para cotizar la configuración correspondiente."
       },
       {
         "q": "¿Por qué cotizar en kit?",
-        "a": "Para revisar compatibilidad, tallas y componentes de una misma partida."
+        "a": "Cotizar en kit reúne modelos, tallas y accesorios de una misma partida para revisar su interfaz. El conjunto estructural coordina casco, capucha, guantes, pantalón y botas, y el brigadista toma NOM-002-STPS-2010 como referencia de dotación. Pídenos por WhatsApp la relación por persona para recibir componentes y documentos aplicables en el mismo pedido."
       },
       {
         "q": "¿El mismo kit sirve para cualquier incendio?",
-        "a": "No. Estructural, brigadista y forestal responden a escenarios distintos."
+        "a": "No, los kits estructural, brigadista y forestal responden a operaciones distintas. El estructural usa NFPA 1970 como referencia, el brigadista NOM-002-STPS-2010 y el forestal NFPA 1950 por modelo; sus componentes cambian entre traje, goggles, bota y nuquera. Mándanos por WhatsApp tu procedimiento para cotizar el alcance que corresponde a tu brigada."
       },
       {
         "q": "¿Se puede cambiar una pieza?",
-        "a": "Sí, pero se debe revisar la interfaz y configuración final."
+        "a": "Sí, puedes cambiar una pieza si confirmamos la interfaz y configuración final del conjunto. Casco, capucha, cuello, puños, guantes, pantalón y botas deben conservar cobertura y ajuste con la talla asignada. Mándanos por WhatsApp el código, accesorio y modelo que quieres sustituir para cotizarlo con los componentes que ya tienes."
       },
       {
         "q": "¿El ERA siempre es parte del kit?",
-        "a": "No; se evalúa por atmósfera, duración y operación."
+        "a": "No, el ERA se evalúa por atmósfera y operación, separado del traje, casco, capucha, guantes y botas. En el kit estructural, NFPA 1970 queda como referencia de las piezas de protección publicadas, sin extenderse al equipo respiratorio. Mándanos por WhatsApp tu operación para cotizar el kit y dejar el ERA en la relación correspondiente."
       },
       {
         "q": "¿Qué se confirma antes de ordenar?",
-        "a": "Modelos, tallas, accesorios, alcance y documentación disponible de cada componente."
+        "a": "Antes de ordenar confirmamos modelos, tallas, accesorios, alcance y documentación disponible de cada componente. Para un kit forestal anotamos ropa, casco, goggles, guantes, bota y nuquera, con NFPA 1950 como referencia por modelo. Pídenos por WhatsApp la cotización con códigos, colores y cantidades para cotejarla contra tu pliego."
       },
       {
         "q": "¿Cómo se inspecciona una entrega?",
-        "a": "Por usuario y por pieza, comparando códigos, tallas, cierres, ajuste y accesorios contra la requisición."
+        "a": "Inspeccionas la entrega por persona y por pieza, comparando códigos, tallas, cierres, ajuste y accesorios contra tu requisición. Un kit estructural incluye traje, casco, capucha, guantes y botas; cada componente conserva su propio documento aplicable. Mándanos por WhatsApp tu relación de compra para entregarte el desglose que usarás durante la recepción."
       }
     ],
     "hero": {
