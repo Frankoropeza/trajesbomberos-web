@@ -1,5 +1,5 @@
 ---
-// CategoriaL2 — plantilla de categoría (L2) homologada con la home (L1), 2026-09-29.
+// CategoriaL2 — plantilla de categoría (L2) y de hub de sección (L3), homologada con la home (L1).
 // Hero sólido → franja de secciones → #tipos (TileGrid) → #elegir (L2Guia + cuerpo
 // Markdown con H3/H4 por <slot />) → #a-fondo (CategorySpotlight H3) → banda de foto →
 // #modelos (ModelosGrid) → #comparar (RiskGuide ×2) → #faq (FAQWithContact con asunto
@@ -32,11 +32,16 @@ interface Props {
   filasModelos: (string | { texto: string; href?: string })[][];
   directoryItems: { name: string; url: string }[];
   guias: Post[];
+  /** Solo L3: categoría L2 de la que cuelga el hub (migas y BreadcrumbList). */
+  parent?: { name: string; href: string };
 }
-const { d, tiles, spotlights, modelos, filasModelos, directoryItems, guias } = Astro.props;
-const menuItems = (['tipos', 'elegir', 'modulos', 'modelos', 'comparar', 'faq', 'guias'] as const).map((clave) => ({
-  label: d.menu[clave], href: ({ tipos: '#tipos', elegir: '#elegir', modulos: '#a-fondo', modelos: '#modelos', comparar: '#comparar', faq: '#faq', guias: '#guias' })[clave],
-}));
+const { d, tiles, spotlights, modelos, filasModelos, directoryItems, guias, parent } = Astro.props;
+// Hubs L3 sin modelos publicados (kits, rescate, mangueras): sin #modelos ni tabla de modelos.
+const conModelos = modelos.length > 0 && Boolean(d.secciones.modelos && d.menu.modelos && d.comparativaModelos);
+const ANCLAS = { tipos: '#tipos', elegir: '#elegir', modulos: '#a-fondo', modelos: '#modelos', comparar: '#comparar', faq: '#faq', guias: '#guias' } as const;
+const menuItems = (['tipos', 'elegir', 'modulos', 'modelos', 'comparar', 'faq', 'guias'] as const)
+  .filter((clave) => clave !== 'modelos' || conModelos)
+  .map((clave) => ({ label: d.menu[clave]!, href: ANCLAS[clave] }));
 // Cierre del bloque de guías: la categoría del blog de la L2 o el índice del blog.
 const blogCta = d.blogCategoria
   ? { href: categoriaUrl(d.blogCategoria), label: `Guías de ${categoriaNombre(d.blogCategoria).toLowerCase()} para bomberos: todas las guías →` }
@@ -52,6 +57,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
   description={d.seo.description}
   keywords={d.seo.keywords}
   menuItems={menuItems}
+  {parent}
   menuCta={d.cotizar.menu ? { label: d.cotizar.menu, mensaje: d.cotizar.mensaje } : undefined}
   crumbLabel={d.crumb}
   eyebrow={d.hero.eyebrow}
@@ -69,7 +75,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
   <section class="section" id="tipos">
     <div class="container">
       <SectionHeading eyebrow={d.secciones.tipos.eyebrow} title={d.secciones.tipos.titulo} duo={d.secciones.tipos.duo} />
-      <TileGrid>{tiles.map((tile) => <TileCard {...tile} />)}</TileGrid>
+      <TileGrid cols={tiles.length % 4 === 0 ? 4 : 3}>{tiles.map((tile) => <TileCard {...tile} />)}</TileGrid>
     </div>
   </section>
 
@@ -89,12 +95,14 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
 
   <PhotoBand src={d.fotoBanda.src} alt={d.fotoBanda.alt} width={d.fotoBanda.width} heightPx={d.fotoBanda.height} caption={d.fotoBanda.caption} />
 
+  {conModelos && d.secciones.modelos && (
   <section class="section" id="modelos">
     <div class="container">
       <SectionHeading eyebrow={d.secciones.modelos.eyebrow} title={d.secciones.modelos.titulo} duo={d.secciones.modelos.duo} />
-      <ModelosGrid {modelos} />
+      <ModelosGrid {modelos} cols={modelos.length % 3 === 0 && modelos.length % 4 !== 0 ? 3 : 4} />
     </div>
   </section>
+  )}
 
   <section class="section section--alt" id="comparar">
     <div class="container">
@@ -110,6 +118,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
           sinCta
         />
       </div>
+      {conModelos && d.comparativaModelos && (
       <div class="comparison-block comparison-block--modelos">
         <h3>{d.comparativaModelos.titulo}</h3>
         <RiskGuide
@@ -122,6 +131,7 @@ const filasTipos = d.comparativaTipos.filas.map((fila, i) => [
           waMensaje={d.comparativaModelos.wa.mensaje}
         />
       </div>
+      )}
     </div>
   </section>
 

@@ -20,32 +20,10 @@ export interface Bloque {
 export interface Seccion {
   slug: string;
   nombre: string;
-  h1: string;
-  title: string;
-  description: string;
-  eyebrow: string;
-  lead: string;
-  intro: string[];
-  grupos?: { titulo: string; tipos: string[] }[];
-  faq: { q: string; a: string }[];
+  /** Imagen de cabecera que heredan las fichas de tipo y modelo de la sección. */
   hero?: HeroImage;
-  checklistCompra?: { titulo: string; parrafos: string[] };
   leyendaImagenIlustrativa?: string;
-  /** Columna derecha del hero del hub (1–2 párrafos, distintos de `lead` e `intro`). */
-  resumenHero?: string[];
-  /** Encabezados propios del hub (sustituyen a los textos genéricos de la plantilla). */
-  etiquetas?: {
-    menuTipos?: string;
-    tiposEyebrow?: string; tiposTitulo?: string; tiposDescripcion?: string;
-    elegirTitulo?: string; elegirDescripcion?: string;
-    modelosTitulo?: string; modelosDescripcion?: string;
-  };
-  /** Tabla comparativa del hub: la primera columna es el nombre del tipo. */
-  comparativa?: { columnas: string[]; filas: string[][] };
-  /** Enlaces a fichas existentes fuera del catálogo (p. ej. capuchas de cada familia de traje). */
-  enlaces?: { label: string; href: string; descripcion: string }[];
-  /** Criterios de compra del hub. */
-  criterios?: { titulo: string; items: { termino: string; texto: string }[] };
+  // El texto del hub (metas, hero, secciones, tablas, FAQ) vive en src/content/categorias/<slug>.md.
 }
 
 export interface Tipo {

@@ -93,7 +93,8 @@ const legal = defineCollection({
 });
 
 // ============================================================
-// CATEGORÍAS (L2) — un .md por hub de categoría (/trajes/, …).
+// CATEGORÍAS (L2) y HUBS DE SECCIÓN (L3) — un .md por hub (/trajes/, /cascos/, …).
+// Mismo esquema y misma plantilla (CategoriaL2); en L3 el .md se llama como la sección.
 // Frontmatter = textos de la página (metas, hero, dúos de sección,
 // tablas, FAQ, CTA); cuerpo Markdown = guía «Cómo elegir» con H3/H4.
 // La plantilla toma los datos del catálogo (familias, modelos) de
@@ -115,8 +116,18 @@ const tabla = {
 };
 
 const claves = ['tipos', 'elegir', 'modulos', 'modelos', 'comparar', 'faq', 'guias'] as const;
+// «modelos» es opcional: hay hubs L3 sin modelos publicados (kits, rescate, mangueras).
 const porClave = <T extends z.ZodTypeAny>(t: T) =>
-  z.object(Object.fromEntries(claves.map((k) => [k, t])) as Record<(typeof claves)[number], T>).strict();
+  z.object({ ...Object.fromEntries(claves.map((k) => [k, t])), modelos: t.optional() } as Record<Exclude<(typeof claves)[number], 'modelos'>, T> & { modelos: z.ZodOptional<T> }).strict();
+const tarjeta = z.object({
+  titulo: z.string(),
+  desc: z.string().min(60),
+  href: ruta,
+  cta: z.string(),
+  img: z.string().startsWith('/images/'),
+  alt: z.string().min(10),
+  subs: z.array(enlace).min(2).max(4),
+}).strict();
 const imagen = z.object({ src: z.string().startsWith('/images/'), alt: z.string().min(10) }).strict();
 
 const categorias = defineCollection({
@@ -173,7 +184,7 @@ const categorias = defineCollection({
       filas: z.array(z.array(z.string()).min(3)).min(2),
       enlaces: z.array(ruta).optional(),     // href de la 1.ª celda de cada fila
     }).strict().refine((t) => !t.enlaces || t.enlaces.length === t.filas.length, 'enlaces debe tener una ruta por fila'),
-    comparativaModelos: z.object({ ...tabla, columnas: z.array(z.string()).min(3), wa }).strict(),
+    comparativaModelos: z.object({ ...tabla, columnas: z.array(z.string()).min(3), wa }).strict().optional(),  // sin modelos, se omite
     faqs: z.array(z.object({ q: z.string(), a: z.string().min(120) }).strict()).min(6),
     contacto: z.object({ asunto: z.string(), boton: z.string() }).strict(),
     cotizar: z.object({
@@ -186,15 +197,9 @@ const categorias = defineCollection({
     ogImagen: z.string().regex(/^\/images\/og\/[a-z0-9-]+\.jpg$/).optional(),  // 1200×630 JPEG
     blogCategoria: z.string().optional(),    // guías: categoría del blog; si falta, guiasParaRuta(ruta)
     // Cards propias de #tipos cuando la L2 no agrupa categorías del catálogo (p. ej. marcas).
-    tarjetas: z.array(z.object({
-      titulo: z.string(),
-      desc: z.string().min(60),
-      href: ruta,
-      cta: z.string(),
-      img: z.string().startsWith('/images/'),
-      alt: z.string().min(10),
-      subs: z.array(enlace).min(2).max(4),
-    }).strict()).min(2).optional(),
+    tarjetas: z.array(tarjeta).min(2).optional(),
+    // L3: cards de cierre tras las de tipo, para completar la fila (4 u 6 cards, sin huérfanas).
+    tarjetasExtra: z.array(tarjeta).min(1).max(3).optional(),
     // Selección para la retícula de #modelos (ids de MODELOS); la tabla lista todos.
     modelosDestacados: z.array(z.string()).min(4).optional(),
     // Guías fijas del bloque #guias (slugs del blog); tienen prioridad sobre blogCategoria.

@@ -11,7 +11,7 @@ const { familia: familiaSlug, modelo: modeloId } = Astro.params;
 const familia = FAMILIAS.find((item) => item.slug === familiaSlug);
 const entry = modelosDeFamilia(familiaSlug!).find((item) => item.id === modeloId);
 if (!familia || !entry) throw new Error('Modelo no encontrado');
-const seccion: Seccion = { slug: 'trajes', nombre: 'Trajes', h1: 'Trajes para bombero', title: 'Trajes para bombero', description: 'Trajes para bombero', eyebrow: 'Trajes', lead: '', intro: [], faq: [] };
+const seccion: Seccion = { slug: 'trajes', nombre: 'Trajes' };
 const path = `/trajes/${familia.slug}/modelos/${entry.id}/`;
 ---
 <ModeloFicha {seccion} entry={entry} kind="modelo" {path} parent={[{ name: 'Trajes', href: '/trajes/' }, { name: familia.nombreWa, href: `/trajes/${familia.slug}/` }]} heroImage={heroDeFamilia(familia.slug)} />

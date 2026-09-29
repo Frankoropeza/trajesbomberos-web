@@ -1,108 +1,47 @@
 ---
-import { metaSeo } from '@lib/metas-seo';
-import { responsive, SIZES } from '@lib/img';
+// L3 · hub de sección del catálogo (/cascos/, /botas/, …) con la plantilla CategoriaL2, igual que
+// las L2. Texto: src/content/categorias/<seccion>.md (Zod estricto; sin .md, el build falla).
+// Datos de catálogo: tipos (cards y enlaces), modelos (retícula, tabla e ItemList) y guías.
+// Migas: Inicio › L2 de la que cuelga (l2DeSeccion) › sección.
 import type { GetStaticPaths } from 'astro';
-import PageLayout from '@layouts/PageLayout.astro';
-import SectionHeading from '@components/SectionHeading.astro';
-import FAQWithContact from '@components/FAQWithContact.astro';
+import { getEntry, render } from 'astro:content';
+import CategoriaL2 from '@components/l2/CategoriaL2.astro';
+import { SITE } from '@config/site';
 import { SECCIONES } from '@lib/catalogo/secciones';
-import { duoSeccion } from '@lib/titulos';
-import ModelosGrid from '@components/ModelosGrid.astro';
-import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeSeccion, urlModelo } from '@lib/catalogo/modelos';
-import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
-import { etiquetaEquipo, temaEnFrase } from '@lib/blog-enlaces';
-import { l2DeSeccion } from '@lib/l2';
+import { l2DeSeccion, tilesTipos, tilesDeTarjetas, tilesExtra, spotlightDeModulo, filaModelo, guiasL2, modelosPorId } from '@lib/l2';
 
 export const getStaticPaths = (() => {
+  // trajes y marcas tienen su propia página L2 (src/pages/trajes/, src/pages/marcas/).
   const reserved = new Set(['trajes', 'marcas', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
   return SECCIONES
-  .filter((seccion) => !reserved.has(seccion.slug))
-  .map((seccion) => ({ params: { seccion: seccion.slug }, props: { seccion } }));
+    .filter((seccion) => !reserved.has(seccion.slug))
+    .map((seccion) => ({ params: { seccion: seccion.slug }, props: { seccion } }));
 }) satisfies GetStaticPaths;
 
 const { seccion } = Astro.props;
-const tipos = tiposDeSeccion(seccion.slug);
-const modelos = modelosDeSeccion(seccion.slug);
-const path = `/${seccion.slug}/`;
-const faqsSeccion = [...(metaSeo(path)?.faqsExtra ?? []), ...(seccion.faq ?? [])];
-const items = [
-  ...tipos.map((tipo) => ({ name: tipo.nombre, url: `/${seccion.slug}/${tipo.slug}/` })),
-  ...modelos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: urlModelo(modelo) })),
-];
-const etiquetas = seccion.etiquetas;
-const grupos = seccion.grupos?.map((grupo) => ({
-  ...grupo,
-  tipos: grupo.tipos.map((slug) => tipos.find((tipo) => tipo.slug === slug)).filter((tipo): tipo is typeof tipos[number] => Boolean(tipo)),
-})).filter((grupo) => grupo.tipos.length > 0);
-const tiposAgrupados = grupos && grupos.length > 0;
-const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || seccion.intro.length > 0);
----
-<PageLayout
-  pageType="directorio" path={path} title={metaSeo(path)?.title ?? seccion.title} description={metaSeo(path)?.description ?? seccion.description}
-  crumbLabel={seccion.nombre} eyebrow={seccion.eyebrow} h1={metaSeo(path)?.h1 ?? seccion.h1} lead={metaSeo(path)?.lead ?? seccion.lead}
-  descRight={seccion.resumenHero ?? []}
-  heroImage={seccion.hero} faqs={faqsSeccion} directoryItems={items}
-  collection={{ name: seccion.h1, description: seccion.description, url: path }}
-  parent={l2DeSeccion(seccion.slug)}
-  menuItems={[...(tipos.length > 0 ? [{ label: etiquetas?.menuTipos ?? `Tipos de ${seccion.nombre.toLowerCase()}`, href: '#tipos' }] : seccion.enlaces?.length ? [{ label: `Fichas de ${seccion.nombre.toLowerCase()}`, href: '#fichas' }] : []), ...(mostrarEleccion ? [{ label: `Cómo elegir ${seccion.nombre.toLowerCase()}`, href: '#elegir' }] : []), ...(modelos.length > 0 ? [{ label: `Modelos de ${seccion.nombre.toLowerCase()}`, href: '#modelos' }] : []), { label: `Preguntas de ${seccion.nombre.toLowerCase()}`, href: '#faq' }]}
->
-  <div class="section"><div class="container content">
-    {tipos.length > 0 && <section class="block" id="tipos">
-      <SectionHeading eyebrow={etiquetas?.tiposEyebrow ?? 'Por operación'} title={etiquetas?.tiposTitulo ?? `Tipos de ${seccion.nombre.toLowerCase()}`} description={etiquetas?.tiposDescripcion} duo={duoSeccion(seccion.slug, 'tipos')} />
-      {tiposAgrupados ? grupos!.map((grupo) => <section class="type-group"><h3 class="type-group__t">{grupo.titulo}</h3><div class="cards">{grupo.tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}>{tipo.imagen && <img src={tipo.imagen.src} {...responsive(tipo.imagen.src, SIZES.tile)} alt={tipo.imagen.alt} width={tipo.imagen.width} height={tipo.imagen.height} loading="lazy" decoding="async" />}<h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div></section>) : <div class="cards">{tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}>{tipo.imagen && <img src={tipo.imagen.src} {...responsive(tipo.imagen.src, SIZES.tile)} alt={tipo.imagen.alt} width={tipo.imagen.width} height={tipo.imagen.height} loading="lazy" decoding="async" />}<h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div>}
-    </section>}
-    {seccion.enlaces && seccion.enlaces.length > 0 && <section class="block" id="fichas"><SectionHeading eyebrow="Por tipo de traje" title={`Fichas de ${seccion.nombre.toLowerCase()} por familia`} description="Cada familia de traje tiene su propia ficha con la especificación completa." duo={duoSeccion(seccion.slug, 'fichas')} /><div class="cards">{seccion.enlaces.map((enlace) => <a class="card" href={enlace.href}><h3>{enlace.label}</h3><p>{enlace.descripcion}</p><span>Ficha técnica →</span></a>)}</div></section>}
-    {mostrarEleccion && <section class="block" id="elegir">
-      <SectionHeading eyebrow="Comparativa" title={etiquetas?.elegirTitulo ?? `Cómo elegir ${seccion.nombre.toLowerCase()}`} description={etiquetas?.elegirDescripcion} duo={duoSeccion(seccion.slug, 'elegir')} />
-      {seccion.intro.map((parrafo) => <p class="prose">{parrafo}</p>)}
-      {seccion.comparativa && <div class="scroll table-scroll" tabindex="0" role="region" aria-label={`Comparativa de ${seccion.nombre.toLowerCase()}`}><table><thead><tr>{seccion.comparativa.columnas.map((columna) => <th>{columna}</th>)}</tr></thead><tbody>{seccion.comparativa.filas.map((fila) => <tr>{fila.map((celda, i) => i === 0 ? <th scope="row">{celda}</th> : <td>{celda}</td>)}</tr>)}</tbody></table></div>}
-      {seccion.criterios && <div class="criteria"><h3 class="criteria__t">{seccion.criterios.titulo}</h3><ol>{seccion.criterios.items.map((item) => <li><strong>{item.termino}:</strong> {item.texto}</li>)}</ol></div>}
-      {seccion.checklistCompra && <div class="criteria" id="antes-de-ordenar"><h3 class="criteria__t">{seccion.checklistCompra.titulo}</h3>{seccion.checklistCompra.parrafos.map((parrafo) => <p>{parrafo}</p>)}</div>}
-    </section>}
-    {modelos.length > 0 && <section class="block" id="modelos">
-      <SectionHeading eyebrow="Disponibles para cotizar" title={etiquetas?.modelosTitulo ?? `Modelos de ${seccion.nombre.toLowerCase()} publicados`} description={etiquetas?.modelosDescripcion} duo={duoSeccion(seccion.slug, 'modelos')} />
-      <ModelosGrid modelos={modelos} />
-    </section>}
-    <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title="Respuestas antes de elegir" duo={duoSeccion(seccion.slug, 'faq')} /><FAQWithContact items={faqsSeccion} /></section>
-  </div></div>
-  <GuiasTecnicas ruta={path} tema={temaEnFrase(etiquetaEquipo(seccion.slug, seccion.nombre))} />
-</PageLayout>
+const entrada = await getEntry('categorias', seccion.slug);
+if (!entrada) throw new Error(`[L3] Falta src/content/categorias/${seccion.slug}.md para el hub /${seccion.slug}/.`);
+const d = entrada.data;
+const { Content } = await render(entrada);
 
-<style>
-  .block { padding-block: clamp(2.5rem, 5vw, 4rem); border-top: var(--border); }
-  .block:first-child { border-top: 0; padding-top: 0; }
-  .prose { max-width: 82ch; color: var(--color-gray); line-height: 1.72; }
-  .type-group + .type-group { margin-top: 2rem; }
-  .type-group > h3 { font-size: 1.25rem; }
-  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-  .card { overflow: hidden; display: flex; flex-direction: column; min-width: 0; background: var(--color-white); border: var(--border); border-radius: var(--radius-lg); color: var(--color-dark); text-decoration: none; }
-  .card img { aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-light); }
-  .card h2, .card h3, .card p, .card > span { margin-inline: 1.2rem; }
-  .card h2, .card h3 { margin-top: 1.15rem; margin-bottom: 0.45rem; font-size: 1.1rem; }
-  .card p { margin-top: 0; color: var(--color-gray); line-height: 1.55; font-size: 0.9rem; }
-  .card > span, .model a { margin-top: auto; padding-block: 1rem; color: var(--color-primary); font-size: 0.85rem; font-weight: 800; }
-  .cards--models { grid-template-columns: repeat(4, 1fr); }
-  .model > div { display: flex; flex-direction: column; flex: 1; padding-inline: 1.2rem; }
-  .model h2, .model p { margin-inline: 0; }
-  .model a { text-decoration: none; }
-  .scroll { overflow-x: auto; border: var(--border); border-radius: var(--radius-lg); }
-  table { min-width: 780px; width: 100%; border-collapse: collapse; }
-  th, td { padding: .9rem 1rem; border-bottom: var(--border); text-align: left; vertical-align: top; font-size: .86rem; }
-  thead { background: var(--color-ink); color: var(--color-white); }
-  tbody th { color: var(--color-dark); }
-  td { color: var(--color-gray); }
-  .criteria { margin-top: 2rem; padding: 1.4rem; background: var(--color-light); border-left: 3px solid var(--color-primary); }
-  .criteria h2 { margin-top: 0; }
-  .criteria li { margin-block: .6rem; color: var(--color-gray); }
-  @media (hover: hover) { .card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); } }
-  @media (max-width: 1023px) { .cards, .cards--models { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 767px) {
-    .cards, .cards--models { grid-template-columns: none; grid-auto-columns: 84%; grid-auto-flow: column; align-items: stretch; overflow-x: auto; overscroll-behavior-x: contain; scroll-padding-inline: var(--container-px); scroll-snap-type: x mandatory; margin-inline: calc(var(--container-px) * -1); padding-inline: var(--container-px); scrollbar-color: var(--color-primary) var(--color-gray-light); scrollbar-width: thin; }
-    .cards > .card { scroll-snap-align: start; }
-    .cards::-webkit-scrollbar { height: 4px; }
-    .cards::-webkit-scrollbar-thumb { background: var(--color-primary); }
-    .cards::-webkit-scrollbar-track { background: var(--color-gray-light); }
-  }
-  @media (max-width: 379px) { .cards, .cards--models { grid-auto-columns: 88%; } }
-</style>
+// Prefijo del código de card por sección (CA-01, BO-02…).
+const PREFIJO_L3: Record<string, string> = { cascos: 'CA-', 'equipo-de-respiracion-autonoma': 'ER-', botas: 'BO-', guantes: 'GU-', capuchas: 'CP-', kits: 'KI-', rescate: 'RE-', herramientas: 'HE-', 'mangueras-y-accesorios': 'MA-', accesorios: 'AC-' };
+const prefijo = PREFIJO_L3[seccion.slug] ?? 'SE-';
+// Cards: una por tipo de la sección (o las tarjetas del .md si la sección no tiene tipos) + cierre.
+const base = d.tarjetas ? tilesDeTarjetas(d, prefijo) : tilesTipos(seccion.slug, prefijo);
+const tiles = [...base, ...tilesExtra(d, prefijo, base.length)];
+const spotlights = d.modulos.map((modulo, index) => spotlightDeModulo(modulo, index));
+const todos = modelosDeSeccion(seccion.slug);
+// Retícula: modelosDestacados del .md si existen; tabla e ItemList: todos los modelos.
+const modelos = d.modelosDestacados ? modelosPorId(d.modelosDestacados) : todos;
+// Secciones sin tipos (capuchas): la tercera columna es el código del modelo.
+const columnas = ['modelo', 'marca', todos.some((m) => m.tipo) ? 'tipo' : 'codigo', 'material', 'norma', 'estatus'] as const;
+const filasModelos = todos.map((modelo) => filaModelo(modelo, columnas));
+const directoryItems = [
+  ...tiles.map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
+  ...todos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
+];
+const guias = await guiasL2(d);
+---
+<CategoriaL2 {d} {tiles} {spotlights} {modelos} {filasModelos} {directoryItems} {guias} parent={l2DeSeccion(seccion.slug)}><Content /></CategoriaL2>

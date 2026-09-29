@@ -5,6 +5,7 @@ import { MODELOS, urlModelo } from './catalogo/modelos';
 import type { TileProps } from '../components/home/TileCard.astro';
 import { estadoModelo } from './catalogo/tiles';
 import { SECCIONES, TIPOS } from './catalogo/data';
+import { WA_MESSAGES } from '../config/site';
 import { waUrl } from './wa';
 import type { Modelo } from './catalogo/types';
 import type { SpotProps } from './spotlights/types';
@@ -96,6 +97,34 @@ export async function guiasL2(d: CollectionEntry<'categorias'>['data']): Promise
 export function tilesDeTarjetas(d: CollectionEntry<'categorias'>['data'], prefijo: string): TileProps[] {
   if (!d.tarjetas) throw new Error(`[L2] ${d.ruta} no define tarjetas.`);
   return d.tarjetas.map((t, i) => ({ ...t, codigo: `${prefijo}${String(i + 1).padStart(2, '0')}`, fit: 'contain' as const }));
+}
+
+/** Cards de cierre de un hub L3 (tarjetasExtra), numeradas a continuación de las de tipo. */
+export function tilesExtra(d: CollectionEntry<'categorias'>['data'], prefijo: string, desde: number): TileProps[] {
+  return (d.tarjetasExtra ?? []).map((t, i) => ({ ...t, codigo: `${prefijo}${String(desde + i + 1).padStart(2, '0')}`, pos: 'center 35%' }));
+}
+
+/** Cards de #tipos de un hub L3: una por tipo de la sección, con sus modelos como enlaces. */
+export function tilesTipos(seccion: string, prefijo: string): TileProps[] {
+  const minuscula = (t: string) => t.charAt(0).toLowerCase() + t.slice(1);
+  return TIPOS.filter((t) => t.seccion === seccion).map((t, i) => {
+    if (!t.imagen) throw new Error(`[L3] el tipo ${seccion}/${t.slug} no tiene imagen para su card.`);
+    const modelos = MODELOS.filter((m) => m.seccion === seccion && m.tipo === t.slug)
+      .slice(0, 3)
+      .map((m) => ({ label: `${m.marca} ${m.nombre}`, href: urlModelo(m) }));
+    return {
+      codigo: `${prefijo}${String(i + 1).padStart(2, '0')}`,
+      titulo: t.nombreCard,
+      desc: t.lead,
+      href: `/${seccion}/${t.slug}/`,
+      cta: `Especificación de ${minuscula(t.nombreCard)}`,
+      img: t.imagen.src,
+      alt: t.imagen.alt,
+      pos: 'center 35%',
+      estado: t.chips?.length ? { label: t.chips.join(' · '), tone: 'neutral' as const } : undefined,
+      subs: [...modelos, { label: `Cotizar ${minuscula(t.nombreCard)}`, href: waUrl(WA_MESSAGES.categoria(t.nombreCard)), external: true }],
+    };
+  });
 }
 
 /** Modelos por id, en el orden dado (error de build si alguno no existe). */
