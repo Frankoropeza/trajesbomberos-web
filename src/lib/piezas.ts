@@ -62,7 +62,7 @@ export interface Pieza {
 const HAZMAT_PIEZAS: Pieza[] = [
   {
     slug: 'traje-encapsulado-nivel-a', familia: 'hazmat', nombreCard: 'Traje encapsulado nivel A', nombre: 'Traje encapsulado nivel A',
-    seoTitle: 'Traje encapsulado nivel A | Hazmat | México', seoDescription: 'Traje encapsulado nivel A para respuesta Hazmat: cuándo se requiere barrera hermética a vapor, qué revisar en sus interfaces y cómo especificarlo.', keywords: ['traje encapsulado', 'nivel A', 'Hazmat'],
+    seoTitle: 'Traje encapsulado nivel A hermético a vapor químico', seoDescription: 'Traje encapsulado nivel A para respuesta Hazmat: cuándo se requiere barrera hermética a vapor, qué revisar en sus interfaces y cómo especificarlo. Cotiza.', keywords: ['traje encapsulado nivel a', 'traje encapsulado', 'traje hazmat nivel a'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje encapsulado nivel A', h1Accent: 'para vapor químico', lead: 'Barrera encapsulada para incidentes donde la inhalación y el contacto con vapor químico exigen la máxima protección del conjunto.',
     descRight: ['Nivel A no significa simplemente ponerse más plástico. Es una configuración de protección respiratoria y cutánea en la que el traje encapsula el equipo de aire y evita que el vapor alcance la piel o el respirador durante la maniobra.', 'La sustancia, concentración, temperatura y tiempo previsto son datos de entrada. Sin ellos no se puede confirmar si el material, visor, guante y cierre ofrecen compatibilidad para la operación.'],
     meta: ['Nivel A', 'Encapsulado', 'Vapor químico', 'NFPA 1990'],
@@ -79,13 +79,13 @@ const HAZMAT_PIEZAS: Pieza[] = [
     relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Guantes químicos compatibles', href: '/trajes/hazmat/guantes-quimicos/' }, { label: 'Familia Hazmat', href: '/trajes/hazmat/' }],
   },
   {
-    slug: 'traje-nivel-b', familia: 'hazmat', nombreCard: 'Traje nivel B', nombre: 'Traje químico nivel B', seoTitle: 'Traje químico nivel B | Hazmat | México', seoDescription: 'Traje químico nivel B para salpicadura peligrosa: diferencias frente al encapsulado, compatibilidad de la barrera y configuración con ERA exterior.', keywords: ['traje químico nivel B', 'equipo Hazmat', 'protección química'], eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel B', h1Accent: 'para salpicadura peligrosa', lead: 'Protección respiratoria autónoma y barrera química para operaciones con salpicadura, seleccionadas contra el agente y no por apariencia.', descRight: ['El nivel B conserva una protección respiratoria alta mediante ERA, pero coloca ese equipo fuera del traje. La prenda se selecciona para el contacto esperado con líquido y sus uniones se construyen para impedir que la salpicadura llegue a la ropa o piel.', 'No es una versión económica de nivel A ni se decide por costumbre. Si existe riesgo de vapor que requiera encapsular el equipo de aire, nivel B deja de ser la respuesta adecuada.'], meta: ['Nivel B', 'Salpicadura química', 'ERA exterior', 'NFPA 1990'], resumen: ['Un traje químico nivel B combina prenda de barrera, guantes, botas y equipo de respiración autónoma cuando el peligro respiratorio exige aire independiente, pero la exposición cutánea evaluada corresponde principalmente a salpicadura líquida. Su utilidad está en equilibrar protección y movilidad sin convertir una tarea líquida en una especificación de vapor que no corresponde.', 'Antes de cotizar, describe el agente, concentración, volumen posible, presión, temperatura y tarea. Esa información permite revisar la tabla de compatibilidad, decidir si la prenda debe ser reutilizable o desechable y definir cómo se traslapa con guantes y botas. El nivel termina donde empieza la incompatibilidad: no se extrapola de una sustancia a otra.', 'Nivel B parte de una distinción operativa: el aire autónomo protege la respiración, mientras que la prenda corporal se elige por contacto líquido y salpicadura previstos. Por eso el ERA va exterior y debe quedar accesible a su usuario y compañero. Antes de entrar se revisan arnés, correas, válvulas y presión sin que el traje los cubra o impida la salida. Si la evaluación establece vapor peligroso para el conjunto completo, esta configuración deja de corresponder aunque el líquido sea la fuente visible del incidente.', 'Para definir la barrera, documenta altura de salpicadura, presión de una línea o recipiente, posibilidad de rociado, temperatura, volumen y duración de la maniobra. Revisa cierre, puños, guantes, botas y forma de traslape como una ruta continua: el traje puede resistir el agente y fallar por una manga mal unida. La talla tiene que permitir agacharse, subir escalones, mover herramientas y manipular el regulador sin tensar costuras. Ensaya estas acciones con el conjunto armado antes de liberar la compra.', 'La salida exige descontaminar el exterior sin contaminar arnés, máscara ni persona. Establece un área para retirar guantes, prenda y botas en el orden aplicable al agente, con apoyo de un observador. Después inspecciona la barrera y el equipo respiratorio por separado; no reutilices una pieza sólo porque no presenta manchas. El registro de sustancia, tiempo, condición y acción de limpieza permite decidir el retorno a servicio con un procedimiento controlado.'], puntosClave: ['ERA exterior con protección respiratoria autónoma', 'Barrera corporal elegida para salpicadura líquida', 'Sellado de manga, guante, bota y cierre definido en la orden', 'Compatibilidad por sustancia y condiciones de exposición', 'No es protección automática frente a vapor ni fuego', 'Retiro posterior a descontaminación'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con ERA exterior' }], fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel', valor: 'B conforme al análisis de riesgo', nota: 'Protección respiratoria alta y barrera para líquido' }, { campo: 'Respiración', valor: 'ERA exterior', nota: 'Se verifica la interfase con la prenda' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'La configuración concreta se declara por fabricante' }] }, { grupo: 'Compra', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración', nota: 'Base de compatibilidad' }, { campo: 'Exposición', valor: 'Salpicadura esperada', nota: 'Registrar presión, temperatura y duración' }, { campo: 'Barrera', valor: 'Material declarado', nota: 'No asumir equivalencias entre materiales' }] }], incluye: ['Prenda química en configuración nivel B', 'Especificación de interfaces solicitadas', 'Ficha técnica del material'], noIncluye: ['ERA', 'Cartuchos o respirador purificador', 'Descontaminación operativa'], errores: [{ error: 'Usar nivel B ante vapor sin evaluación', realidad: 'El ERA exterior no queda encapsulado; si el riesgo demanda esa barrera, corresponde otra configuración.' }, { error: 'Comprar sin concentración', realidad: 'Un mismo agente puede requerir una respuesta distinta según concentración y temperatura.' }, { error: 'Ignorar botas y guantes', realidad: 'Las extremidades son vías de entrada si sus uniones no son compatibles.' }], aplicaciones: [{ titulo: 'Control de derrame', desc: 'Tareas con posible salpicadura líquida y protección respiratoria autónoma.' }, { titulo: 'Descontaminación técnica', desc: 'Operaciones donde la barrera se selecciona por el agente identificado.' }, { titulo: 'Reconocimiento delimitado', desc: 'Ingreso con plan de salida y tiempo de aire controlado.' }], faqs: [{ q: '¿Qué diferencia hay con nivel A?', a: 'Nivel A encapsula el ERA para peligro de vapor; nivel B usa ERA exterior y se selecciona para salpicadura líquida.' }, { q: '¿Lleva respirador?', a: 'Puede requerir ERA cuando el ambiente no es respirable. La selección depende del análisis de riesgo.' }, { q: '¿Sirve ante cualquier líquido?', a: 'No; confirma compatibilidad para el agente y condiciones reales.' }, { q: '¿Protege contra fuego?', a: 'No se asume esa capacidad.' }, { q: '¿Cómo se limpia?', a: 'Con el procedimiento de descontaminación aplicable antes de retirarlo.' }], sinonimos: ['traje nivel B', 'traje contra salpicadura química', 'equipo Hazmat nivel B'], sinonimosNota: 'El nombre no sustituye la tabla de compatibilidad ni el análisis del incidente.', comparativa: { titulo: 'Nivel B o nivel C', intro: 'El respirador y la información disponible sobre el ambiente son la diferencia decisiva.', columnas: ['Criterio', 'Nivel B', 'Nivel C'], filas: [['Respiración', 'ERA', 'Purificadora cuando procede'], ['Ambiente', 'Puede ser peligroso para respirar', 'Contaminante conocido y controlado'], ['Barrera', 'Salpicadura', 'Según exposición'], ['Decisión', 'Mayor independencia', 'No usar si faltan condiciones']] }, relacionados: [{ label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }, { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }] },
+    slug: 'traje-nivel-b', familia: 'hazmat', nombreCard: 'Traje nivel B', nombre: 'Traje químico nivel B', seoTitle: 'Traje químico nivel B Hazmat para salpicadura peligrosa', seoDescription: 'Traje hazmat nivel B para salpicadura peligrosa: diferencias con el encapsulado, compatibilidad de la barrera y configuración con ERA exterior. Cotiza.', keywords: ['traje químico nivel B', 'traje hazmat nivel b', 'traje nivel b'], eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel B', h1Accent: 'para salpicadura peligrosa', lead: 'Protección respiratoria autónoma y barrera química para operaciones con salpicadura, seleccionadas contra el agente y no por apariencia.', descRight: ['El nivel B conserva una protección respiratoria alta mediante ERA, pero coloca ese equipo fuera del traje. La prenda se selecciona para el contacto esperado con líquido y sus uniones se construyen para impedir que la salpicadura llegue a la ropa o piel.', 'No es una versión económica de nivel A ni se decide por costumbre. Si existe riesgo de vapor que requiera encapsular el equipo de aire, nivel B deja de ser la respuesta adecuada.'], meta: ['Nivel B', 'Salpicadura química', 'ERA exterior', 'NFPA 1990'], resumen: ['Un traje químico nivel B combina prenda de barrera, guantes, botas y equipo de respiración autónoma cuando el peligro respiratorio exige aire independiente, pero la exposición cutánea evaluada corresponde principalmente a salpicadura líquida. Su utilidad está en equilibrar protección y movilidad sin convertir una tarea líquida en una especificación de vapor que no corresponde.', 'Antes de cotizar, describe el agente, concentración, volumen posible, presión, temperatura y tarea. Esa información permite revisar la tabla de compatibilidad, decidir si la prenda debe ser reutilizable o desechable y definir cómo se traslapa con guantes y botas. El nivel termina donde empieza la incompatibilidad: no se extrapola de una sustancia a otra.', 'Nivel B parte de una distinción operativa: el aire autónomo protege la respiración, mientras que la prenda corporal se elige por contacto líquido y salpicadura previstos. Por eso el ERA va exterior y debe quedar accesible a su usuario y compañero. Antes de entrar se revisan arnés, correas, válvulas y presión sin que el traje los cubra o impida la salida. Si la evaluación establece vapor peligroso para el conjunto completo, esta configuración deja de corresponder aunque el líquido sea la fuente visible del incidente.', 'Para definir la barrera, documenta altura de salpicadura, presión de una línea o recipiente, posibilidad de rociado, temperatura, volumen y duración de la maniobra. Revisa cierre, puños, guantes, botas y forma de traslape como una ruta continua: el traje puede resistir el agente y fallar por una manga mal unida. La talla tiene que permitir agacharse, subir escalones, mover herramientas y manipular el regulador sin tensar costuras. Ensaya estas acciones con el conjunto armado antes de liberar la compra.', 'La salida exige descontaminar el exterior sin contaminar arnés, máscara ni persona. Establece un área para retirar guantes, prenda y botas en el orden aplicable al agente, con apoyo de un observador. Después inspecciona la barrera y el equipo respiratorio por separado; no reutilices una pieza sólo porque no presenta manchas. El registro de sustancia, tiempo, condición y acción de limpieza permite decidir el retorno a servicio con un procedimiento controlado.'], puntosClave: ['ERA exterior con protección respiratoria autónoma', 'Barrera corporal elegida para salpicadura líquida', 'Sellado de manga, guante, bota y cierre definido en la orden', 'Compatibilidad por sustancia y condiciones de exposición', 'No es protección automática frente a vapor ni fuego', 'Retiro posterior a descontaminación'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con ERA exterior' }], fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel', valor: 'B conforme al análisis de riesgo', nota: 'Protección respiratoria alta y barrera para líquido' }, { campo: 'Respiración', valor: 'ERA exterior', nota: 'Se verifica la interfase con la prenda' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'La configuración concreta se declara por fabricante' }] }, { grupo: 'Compra', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración', nota: 'Base de compatibilidad' }, { campo: 'Exposición', valor: 'Salpicadura esperada', nota: 'Registrar presión, temperatura y duración' }, { campo: 'Barrera', valor: 'Material declarado', nota: 'No asumir equivalencias entre materiales' }] }], incluye: ['Prenda química en configuración nivel B', 'Especificación de interfaces solicitadas', 'Ficha técnica del material'], noIncluye: ['ERA', 'Cartuchos o respirador purificador', 'Descontaminación operativa'], errores: [{ error: 'Usar nivel B ante vapor sin evaluación', realidad: 'El ERA exterior no queda encapsulado; si el riesgo demanda esa barrera, corresponde otra configuración.' }, { error: 'Comprar sin concentración', realidad: 'Un mismo agente puede requerir una respuesta distinta según concentración y temperatura.' }, { error: 'Ignorar botas y guantes', realidad: 'Las extremidades son vías de entrada si sus uniones no son compatibles.' }], aplicaciones: [{ titulo: 'Control de derrame', desc: 'Tareas con posible salpicadura líquida y protección respiratoria autónoma.' }, { titulo: 'Descontaminación técnica', desc: 'Operaciones donde la barrera se selecciona por el agente identificado.' }, { titulo: 'Reconocimiento delimitado', desc: 'Ingreso con plan de salida y tiempo de aire controlado.' }], faqs: [{ q: '¿Qué diferencia hay con nivel A?', a: 'Nivel A encapsula el ERA para peligro de vapor; nivel B usa ERA exterior y se selecciona para salpicadura líquida.' }, { q: '¿Lleva respirador?', a: 'Puede requerir ERA cuando el ambiente no es respirable. La selección depende del análisis de riesgo.' }, { q: '¿Sirve ante cualquier líquido?', a: 'No; confirma compatibilidad para el agente y condiciones reales.' }, { q: '¿Protege contra fuego?', a: 'No se asume esa capacidad.' }, { q: '¿Cómo se limpia?', a: 'Con el procedimiento de descontaminación aplicable antes de retirarlo.' }], sinonimos: ['traje nivel B', 'traje contra salpicadura química', 'equipo Hazmat nivel B'], sinonimosNota: 'El nombre no sustituye la tabla de compatibilidad ni el análisis del incidente.', comparativa: { titulo: 'Nivel B o nivel C', intro: 'El respirador y la información disponible sobre el ambiente son la diferencia decisiva.', columnas: ['Criterio', 'Nivel B', 'Nivel C'], filas: [['Respiración', 'ERA', 'Purificadora cuando procede'], ['Ambiente', 'Puede ser peligroso para respirar', 'Contaminante conocido y controlado'], ['Barrera', 'Salpicadura', 'Según exposición'], ['Decisión', 'Mayor independencia', 'No usar si faltan condiciones']] }, relacionados: [{ label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }, { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }] },
 ];
 
 HAZMAT_PIEZAS.push(
   {
     slug: 'traje-nivel-c', familia: 'hazmat', nombreCard: 'Traje nivel C', nombre: 'Traje químico nivel C',
-    seoTitle: 'Traje químico nivel C | Hazmat | México', seoDescription: 'Traje químico nivel C para contaminante conocido: barrera corporal, respirador purificador, programa de cartuchos y criterios para abandonar el área.', keywords: ['traje químico nivel C', 'equipo Hazmat nivel C', 'respirador purificador químico'],
+    seoTitle: 'Traje químico nivel C Hazmat con respirador purificador', seoDescription: 'Traje hazmat nivel C para contaminante conocido: barrera corporal, respirador purificador, programa de cartuchos y cuándo abandonar el área. Cotiza.', keywords: ['traje químico nivel C', 'traje hazmat nivel c', 'traje nivel c'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel C', h1Accent: 'para contaminante conocido', lead: 'Barrera química con respiración purificadora únicamente cuando el agente, la concentración y la atmósfera permiten controlar el riesgo.',
     descRight: ['Nivel C no se usa por comodidad ni como primera entrada. Exige conocer el contaminante, su concentración y los límites del respirador seleccionado.', 'La ropa, cartuchos, guantes y botas se revisan como un sistema. Si falla el monitoreo, el ajuste facial o el programa de cambio, la configuración deja de ser válida.'], meta: ['Nivel C', 'Respirador purificador', 'Contaminante conocido', 'NOM-017-STPS-2008'],
     resumen: ['El traje químico nivel C se selecciona cuando el contaminante está identificado, la concentración medida está dentro del alcance del respirador purificador y la atmósfera permite esa forma de protección. No es una alternativa ligera de nivel B para ingresar primero: depende de información previa, monitoreo y un procedimiento que establezca cuándo abandonar el área. Si existe deficiencia de oxígeno, concentración desconocida, posibilidad de cambio rápido o una condición que rebasa el cartucho, la selección debe cambiar antes del ingreso.', 'El respirador es la decisión crítica. Identifica contaminante, cartucho compatible, programa de cambio, ajuste facial y limitaciones de uso. Una máscara bien elegida no compensa un cartucho incorrecto; tampoco un cartucho correcto compensa barba, sello deficiente o una atmósfera que no puede purificarse. La persona debe reconocer señales de salida y no esperar a percibir olor o irritación para concluir que la protección dejó de ser apropiada.', 'En la orden se definen prenda, respirador, cartuchos, guantes, botas y el método de unión entre cada pieza. Revisa movilidad de brazos, visibilidad, acceso a radio y comunicación en zona segura. La talla debe permitir agacharse y subir escalones sin abrir puños, tobillos o cierre. La barrera se escoge con la tabla de compatibilidad del fabricante para sustancia, concentración, temperatura y exposición; no se deduce por el color o por la etiqueta de nivel.', 'El programa de cambio de cartuchos se escribe antes de exponer al usuario. Se registra el cartucho instalado, fecha de apertura, agente para el que se autorizó y cualquier evento que obligue a desecharlo. Nivel C conserva su sentido mientras el monitoreo confirme que la concentración sigue dentro del alcance del respirador. Si cambian la lectura, el olor, la irritación o las condiciones del área, la persona sale y se reevalúa la protección.', 'La colocación debe practicarse con la misma protección ocular, casco y radio que acompañarán la tarea. Una capucha mal acomodada, patillas o vello facial pueden desplazar el sello. Antes de cruzar el límite, un compañero revisa cierre, capucha, puños y traslapes mientras el usuario flexiona codos, hombros y rodillas. Esa verificación convierte una lista de componentes en una configuración que no abre rutas de entrada al moverse.', 'El retiro inicia con descontaminación exterior y continúa con una secuencia que no lleve contaminante a la cara. Cartuchos usados se separan de los sellados y se etiquetan para evitar que un relevo reciba un componente abierto sin historial. Registra agente, condición de la prenda y acción aplicada; una barrera dañada, una exposición fuera de su alcance o un cartucho sin trazabilidad no regresan a servicio por apariencia.'],
@@ -98,7 +98,7 @@ HAZMAT_PIEZAS.push(
     sinonimos: ['traje nivel C', 'equipo Hazmat nivel C', 'traje químico con respirador purificador', 'protección química nivel C'], sinonimosNota: 'Nivel C describe una configuración condicionada por monitoreo y respiración; el sinónimo no sustituye esa evaluación.', comparativa: { titulo: 'Nivel C o nivel B', intro: 'La autonomía respiratoria y el conocimiento del ambiente determinan cuál configuración corresponde.', columnas: ['Criterio', 'Nivel C', 'Nivel B'], filas: [['Respiración', 'Purificadora cuando procede', 'ERA exterior'], ['Atmósfera', 'Conocida y dentro del alcance', 'Puede ser peligrosa para respirar'], ['Decisión', 'Depende de monitoreo continuo', 'Mayor independencia del aire ambiente'], ['No usar', 'Con oxígeno deficiente o concentración desconocida', 'Cuando el vapor exige encapsulado nivel A']] }, relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Overol químico desechable', href: '/trajes/hazmat/overol-quimico-desechable/' }, { label: 'Guantes químicos', href: '/trajes/hazmat/guantes-quimicos/' }],
   },
   {
-    slug: 'overol-quimico-desechable', familia: 'hazmat', nombreCard: 'Overol químico desechable', nombre: 'Overol químico desechable', seoTitle: 'Overol químico desechable | Protección química | México', seoDescription: 'Overol químico desechable para tareas delimitadas: diferencia entre polvo y salpicadura, costuras, talla, retiro y disposición controlada.', keywords: ['overol químico desechable', 'traje desechable químico', 'overol contra salpicadura'],
+    slug: 'overol-quimico-desechable', familia: 'hazmat', nombreCard: 'Overol químico desechable', nombre: 'Overol químico desechable', seoTitle: 'Overol desechable para protección química y salpicadura', seoDescription: 'Overol químico desechable para tareas delimitadas: polvo o salpicadura, costuras, talla, retiro y disposición controlada. Elige por barrera declarada.', keywords: ['overol desechable', 'overol químico desechable', 'overol contra salpicadura'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Overol químico desechable', h1Accent: 'para tareas delimitadas', lead: 'Prenda de un solo uso seleccionada por su barrera declarada, no por ser blanca, tener capucha o parecer impermeable.', descRight: ['Desechable describe el ciclo de uso, no una categoría de resistencia. El tipo de barrera sigue siendo la decisión central.', 'El modelo se especifica por agente, exposición, costura, talla e interfaces con guantes y botas; después se define cómo se retirará y dispondrá.'], meta: ['Un solo uso', 'Polvo o salpicadura', 'Costuras declaradas', 'EN 14605 / EN 13034'],
     resumen: ['Un overol químico desechable resuelve tareas delimitadas cuando su material y construcción corresponden a la exposición prevista. Desechable indica que se retira después del uso o al contaminarse; no indica resistencia uniforme a líquidos, polvos o aerosoles. Antes de asignarlo, define si habrá salpicadura, contacto incidental, partículas, limpieza de una zona o mantenimiento. Cada escenario exige revisar la declaración de barrera del modelo concreto.', 'La compra separa el overol que cubre polvo del que declara barrera frente a salpicadura. La apariencia blanca, una capucha o el cierre no explican ese alcance. EN 14605 y EN 13034 son referencias europeas frecuentes para tipos de protección frente a líquido, pero la selección real sigue dependiendo de la declaración del fabricante y del agente. Para compatibilidad química se revisa la tabla correspondiente a sustancia, concentración, temperatura y duración, sin asumir equivalencias entre laminados.', 'La colocación evita abrir rutas de entrada. La talla debe permitir estirar brazos, sentarse, arrodillarse y caminar sin tensar costuras ni dejar muñecas o tobillos descubiertos. Capucha, cierre, puños y traslapes se inspeccionan antes de entrar. Cinta de sellado, guantes y botas se agregan sólo cuando el procedimiento y los materiales lo requieren; colocar cinta sin considerar el retiro puede desgarrar la prenda o complicar la descontaminación.', 'Antes de distribuir existencias, abre una muestra en zona limpia para revisar el recorrido del cierre, espacio de hombros y largo de piernas con las botas previstas. Esa prueba permite detectar una talla que se rompe al arrodillarse o deja expuesto el tobillo al subir una escalera. No es una excusa para reutilizar una prenda abierta: el inventario debe conservar unidades por talla y tipo de exposición, secas, identificadas y protegidas de herramientas que perforen el empaque.', 'Al finalizar, el overol se trata como material potencialmente contaminado. No se sacude ni se reutiliza por apariencia. Antes de comenzar se define contenedor, ruta de salida y quién vigilará el retiro. Una prenda perforada, rasgada, mojada por un agente fuera de su alcance o contaminada sin método de limpieza se aparta de inmediato. La segregación y disposición se ajustan al contaminante y al procedimiento del sitio.', 'La NOM-017-STPS-2008 incorpora la selección de EPP dentro del análisis de riesgo del centro de trabajo; no convierte un overol en protección universal. La recepción debe verificar modelo, talla, costura, empaque íntegro e instrucciones de desecho. Registrar el lote, la tarea y cualquier daño encontrado permite corregir la especificación antes de que una prenda inadecuada se use como reserva para una contingencia.'],
     puntosClave: ['Un solo uso no significa compatibilidad universal', 'Separar protección contra partículas de barrera para salpicadura', 'Tipo de costura y cierre definidos para la tarea', 'Talla probada con guantes y botas del conjunto', 'Empaque íntegro y existencias por talla', 'Retiro y disposición definidos antes de entrar'], images: [{ src: '/images/catalogo/hazmat/tipo-overol-quimico-desechable.avif', alt: 'Overol químico desechable con capucha para tareas delimitadas' }],
@@ -110,7 +110,7 @@ HAZMAT_PIEZAS.push(
     sinonimos: ['overol químico desechable', 'traje desechable químico', 'coverall químico', 'overol contra salpicadura'], sinonimosNota: 'También se solicita como coverall; el nombre debe ir acompañado por el tipo de exposición y construcción requerida.', comparativa: { titulo: 'Overol desechable o traje reutilizable', intro: 'El ciclo de servicio se decide junto con la barrera y la descontaminación, no sólo por cantidad de usos.', columnas: ['Criterio', 'Desechable', 'Reutilizable'], filas: [['Ciclo', 'Se retira tras el uso o contaminación', 'Requiere inspección, limpieza y control de condición'], ['Tarea', 'Delimitada y con barrera declarada', 'Exposición que justifica programa de mantenimiento'], ['Recepción', 'Empaque y talla por unidad', 'Historial de servicio y descontaminación'], ['Decisión', 'No reutilizar por apariencia', 'Seguir estrictamente al fabricante']] }, relacionados: [{ label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }, { label: 'Guantes químicos', href: '/trajes/hazmat/guantes-quimicos/' }],
   },
   {
-    slug: 'botas-quimicas', familia: 'hazmat', nombreCard: 'Botas químicas', nombre: 'Botas químicas', seoTitle: 'Botas químicas | Protección de pie Hazmat | México', seoDescription: 'Botas químicas para completar la barrera de pie y tobillo: compatibilidad, suela, traslape con traje, inspección y descontaminación.', keywords: ['botas químicas', 'botas para Hazmat', 'calzado resistente a químicos'],
+    slug: 'botas-quimicas', familia: 'hazmat', nombreCard: 'Botas químicas', nombre: 'Botas químicas', seoTitle: 'Botas para químicos: calzado Hazmat de barrera y sellado', seoDescription: 'Botas para químicos que cierran la barrera de pie y tobillo en Hazmat: compatibilidad con el agente, suela, traslape con el traje y descontaminación.', keywords: ['botas para químicos', 'botas químicas', 'botas resistentes a químicos'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Botas químicas', h1Accent: 'para completar el sellado inferior', lead: 'Protección de pie y tobillo elegida por el agente, el piso y la interfaz con el traje, no por su apariencia robusta.', descRight: ['La bota debe ser compatible con el agente y con la forma en que el traje se traslapa o sella sobre ella.', 'Puntera, entresuela, altura de caña y suela responden a riesgos distintos; ninguna de esas características prueba resistencia química por sí sola.'], meta: ['Pie y tobillo', 'Traslape con traje', 'Suela y agarre', 'Compatibilidad química'],
     resumen: ['La protección de pie determina si el sistema conserva su barrera al caminar en una zona contaminada. La selección comienza por el agente, pero también considera piso, riesgo de resbalamiento, objetos que pueden perforar, altura de la bota y forma de traslape con el traje. Una bota de apariencia robusta no confirma resistencia al químico ni asegura que el líquido no llegue por el borde superior. La compatibilidad se consulta para sustancia, concentración, temperatura y duración esperada.', 'Define si el traje cubrirá la bota, entrará dentro de ella o usará otra interfaz indicada por la configuración. La respuesta cambia cómo escurre una salpicadura y cómo se inspecciona el conjunto. Prueba la combinación con movimientos reales: escalera, rodilla, giro y paso sobre obstáculos. Debe existir espacio para el pie sin que el talón se levante, y la suela debe conservar contacto estable. Una talla equivocada fatiga al usuario y puede romper el traslape al caminar.', 'La solicitud debe indicar si se requiere puntera, entresuela, tipo de suela o altura de caña, además de la compatibilidad química declarada. Una planta que necesita evitar perforación no confirma resistencia al agente, y una caña alta no resuelve un traslape mal armado. Recibe y prueba cada par con el pantalón o traje que usará la cuadrilla; así se comprueba que la movilidad del tobillo y el agarre no abran una vía para el contaminante.', 'En una zona con charcos o residuos, la inspección incluye el contorno de la suela y la unión entre suela y corte. Un desprendimiento pequeño puede abrir una ruta de entrada que no se ve sobre piso seco. Antes del uso revisa cortes, grietas, deformación, residuos atrapados en el dibujo y el estado del borde superior. Si la bota tiene agujetas, cierre o agarraderas, se confirma cómo quedarán cubiertos y accesibles para descontaminar sin tocar el exterior con la mano desnuda.', 'Al salir de la zona, suela y exterior se descontaminan antes de entrar a vehículo, vestidor o área limpia. No se guarda un par contaminado junto con calzado de servicio. Registra agente, condición y acción aplicada cuando hubo exposición; el historial ayuda a decidir si puede volver a operación conforme al procedimiento y a las indicaciones del fabricante. Una bota sin identificación de su material o sin evaluación posterior no se reasigna como calzado cotidiano.', 'Las botas químicas completan una configuración Hazmat, pero no sustituyen calzado estructural de bombero ni prometen protección térmica, de impacto o eléctrica si el fabricante no la declara. La NOM-017-STPS-2008 exige seleccionar EPP conforme al riesgo; en este caso el riesgo se concentra en el contacto inferior, la estabilidad y la ruta de contaminación durante el retiro.'],
     puntosClave: ['Compatibilidad confirmada por tabla del fabricante', 'Traslape con traje definido y probado en movimiento', 'Suela elegida por agarre y condición de piso', 'Puntera y entresuela son requisitos independientes', 'Inspección de caña, corte y unión de suela', 'Descontaminación antes de llegar a zona limpia'], images: [{ src: '/images/catalogo/hazmat/tipo-botas-quimicas.avif', alt: 'Botas químicas para protección de pie y tobillo Hazmat' }],
@@ -122,7 +122,7 @@ HAZMAT_PIEZAS.push(
     sinonimos: ['botas químicas', 'botas para Hazmat', 'calzado resistente a químicos', 'botas de protección química'], sinonimosNota: 'También se piden como calzado químico; la orden debe especificar el agente y la construcción necesaria.', comparativa: { titulo: 'Bota química o bota estructural de bombero', intro: 'Ambas protegen el pie, pero están diseñadas y se seleccionan frente a peligros distintos.', columnas: ['Criterio', 'Bota química', 'Bota estructural'], filas: [['Riesgo principal', 'Contacto químico evaluado', 'Calor, agua y operación de incendio'], ['Compatibilidad', 'Tabla por agente y condiciones', 'No se presume para químicos específicos'], ['Interfaz', 'Traslape con traje Hazmat', 'Conjunto estructural y pantalonera'], ['Decisión', 'Para respuesta química documentada', 'Para incendio estructural certificado']] }, relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Overol químico desechable', href: '/trajes/hazmat/overol-quimico-desechable/' }, { label: 'Guantes químicos', href: '/trajes/hazmat/guantes-quimicos/' }],
   },
   {
-    slug: 'guantes-quimicos', familia: 'hazmat', nombreCard: 'Guantes químicos', nombre: 'Guantes químicos', seoTitle: 'Guantes químicos | Barrera y destreza Hazmat | México', seoDescription: 'Guantes químicos para contacto manual evaluado: compatibilidad, permeación, longitud de puño, destreza e interfaz con la manga.', keywords: ['guantes químicos', 'guantes resistentes a químicos', 'guantes Hazmat'],
+    slug: 'guantes-quimicos', familia: 'hazmat', nombreCard: 'Guantes químicos', nombre: 'Guantes químicos', seoTitle: 'Guantes para químicos Hazmat: permeación, puño y destreza', seoDescription: 'Guantes para químicos en respuesta Hazmat: compatibilidad con el agente, permeación, largo de puño, destreza e interfaz con la manga. Cotiza con ficha.', keywords: ['guantes para químicos', 'guantes resistentes a químicos', 'guantes químicos'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Guantes químicos', h1Accent: 'para barrera de mano y destreza', lead: 'Protección manual elegida por agente y tarea: una barrera útil debe permitir manipular válvulas, muestras y herramientas sin perder control.', descRight: ['Permeación y destreza se revisan juntas; una barrera que impide realizar la maniobra real provoca errores durante la exposición.', 'Material, talla, longitud de puño y traslape con la manga se especifican como una interfaz continua, no como accesorios aislados.'], meta: ['EN ISO 374', 'Permeación y degradación', 'Puño y traslape', 'Destreza operativa'],
     resumen: ['Los guantes químicos se eligen por la sustancia y por lo que la mano debe hacer. Abrir una válvula, tomar una muestra, mover un contenedor o usar una herramienta exige una destreza distinta. Un guante grueso puede ofrecer una barrera relevante e impedir controlar una operación fina; uno flexible puede ser insuficiente para el tiempo o concentración definidos. La decisión se confirma con la tabla de compatibilidad y el escenario completo, no por color o grosor.', 'Permeación, degradación y penetración son preguntas separadas. El material puede no mostrar daño visible y aun así requerir un límite de uso frente a un agente. Por eso se documentan sustancia, concentración, temperatura, duración, parte de la mano expuesta y contacto con mezclas. EN ISO 374 es una referencia europea para guantes de protección química, pero no reemplaza la tabla del fabricante para la condición concreta de trabajo.', 'En la orden se separan longitud de puño, talla y material, porque esos datos determinan cómo se traslapa con la manga y qué tanta destreza conserva la persona. Una muestra permite comprobar si se puede cerrar una válvula, sostener una herramienta o manipular un radio sin descubrir muñeca. Si la tarea combina líquido y piezas abrasivas, la evaluación revisa ambas exposiciones; no se agrega un guante de trabajo sobre la barrera química sin confirmar ajuste y retiro controlado.', 'Antes de usar, inspecciona el guante conforme al método autorizado para detectar perforaciones, cortes, pegajosidad, decoloración o rigidez. Durante la tarea, cambia el par si se contamina más allá de lo previsto, se engancha o pierde ajuste. Después, descontamina el exterior antes de retirarlo y evita tocar cara, radio, volante o ropa con el guante puesto. Un daño pequeño puede convertirse en una vía de entrada si se ignora durante una manipulación larga.', 'En una configuración Hazmat puede haber guante interior y exterior. El objetivo es mantener barrera y permitir retirar el conjunto sin tocar superficies contaminadas, no acumular capas sin probar la destreza. Durante la preparación, el puño no debe enrollarse debajo de la manga ni formar una arruga que acumule líquido. Un compañero observa la unión mientras la persona flexiona dedos, codos y hombros; dos tallas correctas no siempre sellan entre sí.', 'Los pares de repuesto se conservan cerrados y separados por talla y material para que una sustitución urgente no introduzca una composición distinta. Se registra agente previsto y punto de la tarea para evitar que un guante destinado a muestreo termine en limpieza prolongada. La NOM-017-STPS-2008 requiere seleccionar el EPP con base en riesgo; en las manos, eso significa controlar tanto la química como la tarea y el retiro.'],
     puntosClave: ['Compatibilidad confirmada por agente y condiciones', 'Permeación, degradación y penetración evaluadas por separado', 'EN ISO 374 como referencia, no sustituto de la tabla', 'Longitud de puño y talla definidas con la manga', 'Destreza probada con la maniobra real', 'Inspección y descontaminación antes del retiro'], images: [{ src: '/images/catalogo/hazmat/tipo-guantes-quimicos.avif', alt: 'Guantes químicos para protección manual Hazmat' }],
@@ -143,10 +143,10 @@ export const PIEZAS: Pieza[] = [
     nombreCard: 'Chaquetón estructural de tres capas',
     nombre: 'Chaquetón estructural de tres capas',
 
-    seoTitle: 'Chaquetón estructural para bombero | tres capas | México',
+    seoTitle: 'Chaqueta de bombero estructural: chaquetón 3 capas con DRD',
     seoDescription:
-      'Chaquetón estructural para bombero de tres capas con DRD integrado: composite, TPP y THL, largos, tallas y qué exigir en la ficha antes de comprar.',
-    keywords: ['chaquetón estructural para bombero', 'tres capas', 'México'],
+      'Chaqueta de bombero estructural: chaquetón de tres capas con DRD integrado, largo de 28 a 35 pulgadas, composite declarado y referencia NFPA 1970.',
+    keywords: ['chaqueta de bombero', 'chaquetón de bombero', 'chaquetón estructural para bombero'],
 
     eyebrow: 'Pieza · Conjunto estructural',
     h1: 'Chaquetón estructural para bombero',
@@ -359,12 +359,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "estructural",
     "nombreCard": "Pantalonera estructural",
     "nombre": "Pantalonera estructural",
-    "seoTitle": "Pantalonera estructural para bombero | tres capas | México",
-    "seoDescription": "Pantalonera estructural para bombero de tres capas con rodilla articulada: ajustes, cintura, entrepierna y tipos de cierre. Qué exigir antes de comprar.",
+    "seoTitle": "Pantalón de bombero estructural: pantalonera de tres capas",
+    "seoDescription": "Pantalón de bombero estructural de tres capas con rodilla articulada: ajustes, cintura, entrepierna y tipos de cierre. Qué exigir antes de cotizar.",
     "keywords": [
+      "pantalón de bombero",
       "pantalonera estructural para bombero",
-      "tres capas",
-      "México"
+      "pantalonera de bombero"
     ],
     "eyebrow": "Pieza · Conjunto estructural",
     "h1": "Pantalonera estructural para bombero",
@@ -689,12 +689,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "estructural",
     "nombreCard": "Tirantes acolchados tipo H",
     "nombre": "Tirantes acolchados tipo H",
-    "seoTitle": "Tirantes para pantalonera de bombero | tipo H | México",
-    "seoDescription": "Tirantes para pantalonera de bombero tipo H: espalda acolchada, liberación rápida y sin herrajes metálicos bajo el arnés del equipo de respiración.",
+    "seoTitle": "Tirantes tipo H para pantalonera de bombero estructural",
+    "seoDescription": "Tirantes para pantalonera de bombero tipo H: espalda acolchada, liberación rápida y sin herrajes metálicos bajo el arnés del ERA. Cotiza con tu pantalonera.",
     "keywords": [
+      "tirantes tipo H para pantalonera de bombero",
       "tirantes para pantalonera de bombero",
-      "tipo H",
-      "México"
+      "tirantes de bombero"
     ],
     "eyebrow": "Pieza · Conjunto estructural",
     "h1": "Tirantes para pantalonera de bombero",
@@ -938,12 +938,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "estructural",
     "nombreCard": "Rodilleras de espuma para forro",
     "nombre": "Rodilleras de espuma para forro",
-    "seoTitle": "Rodilleras para pantalón de bombero | espuma | México",
-    "seoDescription": "Rodilleras para pantalón de bombero en espuma de célula cerrada: se montan sobre el forro, amortiguan el trabajo hincado y no absorben agua. Opción de fábrica.",
+    "seoTitle": "Rodilleras para pantalonera de bombero de célula cerrada",
+    "seoDescription": "Rodilleras para pantalón de bombero en espuma de célula cerrada: van sobre el forro, amortiguan el trabajo hincado y no absorben agua. Pídelas de fábrica.",
     "keywords": [
+      "rodilleras para pantalonera de bombero",
       "rodilleras para pantalón de bombero",
-      "espuma de célula cerrada",
-      "México"
+      "espuma de célula cerrada"
     ],
     "eyebrow": "Pieza · Conjunto estructural",
     "h1": "Rodilleras para pantalonera de bombero",
@@ -1180,12 +1180,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "estructural",
     "nombreCard": "Arnés interno de escape",
     "nombre": "Arnés interno de escape",
-    "seoTitle": "Arnés de escape para bombero | NFPA 2500 | México",
-    "seoDescription": "Arnés de escape para bombero cosido en la pantalonera, con perneras flotantes y hebilla de perfil bajo. Certificado aparte bajo NFPA 2500 (antes NFPA 1983).",
+    "seoTitle": "Arnés de escape para bombero integrado a la pantalonera",
+    "seoDescription": "Arnés de escape para bombero cosido en la pantalonera, con perneras flotantes y hebilla de perfil bajo. Certificado aparte bajo NFPA 2500 (antes 1983).",
     "keywords": [
       "arnés de escape para bombero",
-      "NFPA 2500",
-      "México"
+      "arnés interno de escape",
+      "NFPA 2500"
     ],
     "eyebrow": "Pieza · Conjunto estructural",
     "h1": "Arnés interno de escape para bombero",
@@ -1459,12 +1459,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "estructural",
     "nombreCard": "Capucha antipartículas (monja)",
     "nombre": "Capucha antipartículas (monja)",
-    "seoTitle": "Monja para bombero | capucha antipartículas | México",
+    "seoTitle": "Monja para bombero con barrera de partículas y sello al ERA",
     "seoDescription": "Monja para bombero con barrera de partículas: bloquea el hollín fino en cuello y mandíbula y sella la interfaz con casco, chaquetón y máscara del ERA.",
     "keywords": [
       "monja para bombero",
-      "capucha antipartículas",
-      "México"
+      "monja de bombero",
+      "capucha antipartículas"
     ],
     "eyebrow": "Pieza · Conjunto estructural",
     "h1": "Monja para bombero",
@@ -1742,12 +1742,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "brigadista",
     "nombreCard": "Conjunto de brigada contra fuego incipiente",
     "nombre": "Conjunto de brigada contra fuego incipiente",
-    "seoTitle": "Traje de brigada contra incendio | conjunto | México",
-    "seoDescription": "Traje de brigada contra incendio: chaquetón y pantalón con capa inherente y forro desmontable, para conato en industria. Cumple la dotación de la NOM-002-STPS.",
+    "seoTitle": "Traje de brigada contra incendio con chaquetón y pantalón",
+    "seoDescription": "Traje de brigada contra incendio: chaquetón y pantalón con capa inherente y forro desmontable para conato en industria. Dotación NOM-002-STPS. Cotiza.",
     "keywords": [
       "traje de brigada contra incendio",
-      "conjunto",
-      "México"
+      "equipo de brigada contra incendio",
+      "traje de brigadista"
     ],
     "eyebrow": "Pieza · Brigada industrial",
     "h1": "Traje de brigada contra incendio",
@@ -2041,12 +2041,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "brigadista",
     "nombreCard": "Overol ignífugo NFPA 2112",
     "nombre": "Overol ignífugo NFPA 2112",
-    "seoTitle": "Overol ignífugo NFPA 2112 | flash fire | México",
-    "seoDescription": "Overol ignífugo NFPA 2112 en aramida inherente antiestática: protección ante flamazo para planta, petroquímica y energía. Tallas CH a XG con cierre de dos vías.",
+    "seoTitle": "Overol ignífugo NFPA 2112 antiestático contra flamazo",
+    "seoDescription": "Overol ignífugo NFPA 2112 en aramida inherente antiestática: protección ante flamazo en planta, petroquímica y energía. Tallas CH a XG, cierre de dos vías.",
     "keywords": [
+      "overol ignífugo",
       "overol ignífugo NFPA 2112",
-      "flash fire",
-      "México"
+      "overol contra flamazo"
     ],
     "eyebrow": "Pieza · Brigada industrial",
     "h1": "Overol ignífugo NFPA 2112",
@@ -2324,12 +2324,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "brigadista",
     "nombreCard": "Chaquetón de brigadista (pieza suelta)",
     "nombre": "Chaquetón de brigadista (pieza suelta)",
-    "seoTitle": "Chaquetón de brigadista | pieza de reposición | México",
-    "seoDescription": "Chaquetón de brigadista suelto para reposición: capa externa inherente, forro desmontable y cinta reflejante. Se pide con la misma configuración de tu dotación.",
+    "seoTitle": "Chaquetón de brigadista contra incendio para reposición",
+    "seoDescription": "Chaquetón de brigadista suelto para reposición: capa externa inherente, forro desmontable y cinta reflejante, con la configuración de tu dotación. Cotiza.",
     "keywords": [
       "chaquetón de brigadista",
-      "pieza de reposición",
-      "México"
+      "chaquetón para brigada contra incendio",
+      "pieza de reposición"
     ],
     "eyebrow": "Pieza · Brigada industrial",
     "h1": "Chaquetón de brigadista",
@@ -2578,12 +2578,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "brigadista",
     "nombreCard": "Pantalonera de brigadista (pieza suelta)",
     "nombre": "Pantalonera de brigadista (pieza suelta)",
-    "seoTitle": "Pantalón de brigadista | pieza de reposición | México",
-    "seoDescription": "Pantalón de brigadista suelto para reposición: refuerzos en rodillas y valencianas y cinta reflejante. Es la pieza que más se gasta de la dotación.",
+    "seoTitle": "Pantalón de brigadista contra incendio para reposición",
+    "seoDescription": "Pantalón de brigadista suelto para reposición: refuerzos en rodillas y valencianas, tirantes y cinta reflejante. La pieza que más se gasta. Cotiza.",
     "keywords": [
       "pantalón de brigadista",
-      "pieza de reposición",
-      "México"
+      "pantalón para brigada contra incendio",
+      "pieza de reposición"
     ],
     "eyebrow": "Pieza · Brigada industrial",
     "h1": "Pantalón de brigadista",
@@ -2841,12 +2841,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "brigadista",
     "nombreCard": "Monja (capucha) de brigada",
     "nombre": "Monja (capucha) de brigada",
-    "seoTitle": "Monja de brigada | capucha contra incendio | México",
-    "seoDescription": "Monja de brigada en tejido aramídico elástico: cubre orejas, cuello y mandíbula, la zona que no protegen el casco ni el chaquetón de la brigada.",
+    "seoTitle": "Monja de brigada contra incendio en aramida elástica",
+    "seoDescription": "Monja de brigada en tejido aramídico elástico: cubre orejas, cuello y mandíbula, la zona que no protegen el casco ni el chaquetón. Cotiza con tu dotación.",
     "keywords": [
       "monja de brigada",
-      "capucha contra incendio",
-      "México"
+      "monja para brigadista",
+      "capucha contra incendio"
     ],
     "eyebrow": "Pieza · Brigada industrial",
     "h1": "Monja de brigada",
@@ -3117,12 +3117,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "brigadista",
     "nombreCard": "Tirantes tipo X de ocho puntos",
     "nombre": "Tirantes tipo X de ocho puntos",
-    "seoTitle": "Tirantes para pantalón de brigada | tipo X | México",
-    "seoDescription": "Tirantes para pantalón de brigada tipo X de ocho puntos: elástico de dos pulgadas con terminales de piel, para repartir el peso en uso prolongado.",
+    "seoTitle": "Tirantes tipo X para pantalón de brigada contra incendio",
+    "seoDescription": "Tirantes para pantalón de brigada tipo X de ocho puntos: elástico de dos pulgadas con terminales de piel para repartir el peso en uso prolongado.",
     "keywords": [
+      "tirantes tipo X para pantalón de brigada",
       "tirantes para pantalón de brigada",
-      "tipo X",
-      "México"
+      "tirantes de brigadista"
     ],
     "eyebrow": "Pieza · Brigada industrial",
     "h1": "Tirantes para pantalón de brigada",
@@ -3369,12 +3369,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "forestal",
     "nombreCard": "Camisola forestal",
     "nombre": "Camisola forestal",
-    "seoTitle": "Camisola forestal para bombero | fibra inherente | México",
-    "seoDescription": "Camisola forestal para bombero en fibra ignífuga inherente y construcción ventilada: la prenda que prefieren las cuadrillas de línea sobre la chamarra.",
+    "seoTitle": "Camisola forestal para bombero en fibra ignífuga inherente",
+    "seoDescription": "Camisola forestal para bombero en fibra ignífuga inherente y construcción ventilada: la prenda que prefieren las cuadrillas de línea. Cotiza con ficha.",
     "keywords": [
       "camisola forestal para bombero",
-      "fibra inherente",
-      "México"
+      "camisola forestal",
+      "camisola ignífuga"
     ],
     "eyebrow": "Pieza · Línea de fuego",
     "h1": "Camisola forestal para bombero",
@@ -3652,12 +3652,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "forestal",
     "nombreCard": "Pantalón cargo forestal",
     "nombre": "Pantalón cargo forestal",
-    "seoTitle": "Pantalón forestal para bombero | tipo cargo | México",
-    "seoDescription": "Pantalón forestal para bombero tipo cargo en fibra ignífuga inherente: bolsas de carga, refuerzo de rodilla y ajuste en valenciana para terreno agreste.",
+    "seoTitle": "Pantalón forestal para bombero tipo cargo ignífugo",
+    "seoDescription": "Pantalón forestal para bombero tipo cargo en fibra ignífuga inherente: bolsas de carga, refuerzo de rodilla y ajuste de valenciana para terreno agreste.",
     "keywords": [
       "pantalón forestal para bombero",
-      "tipo cargo",
-      "México"
+      "pantalón bombero forestal",
+      "pantalón tipo cargo ignífugo"
     ],
     "eyebrow": "Pieza · Línea de fuego",
     "h1": "Pantalón forestal para bombero",
@@ -3935,12 +3935,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "forestal",
     "nombreCard": "Chamarra forestal",
     "nombre": "Chamarra forestal",
-    "seoTitle": "Chamarra forestal para bombero | monocapa | México",
-    "seoDescription": "Chamarra forestal para bombero monocapa con largo extendido y cierre protegido: más cobertura que la camisola para interfaz urbano-rural y quema prescrita.",
+    "seoTitle": "Chamarra forestal para bombero monocapa de largo extendido",
+    "seoDescription": "Chamarra forestal para bombero monocapa con largo extendido y cierre protegido: más cobertura que la camisola en interfaz urbano-rural y quema prescrita.",
     "keywords": [
       "chamarra forestal para bombero",
-      "monocapa",
-      "México"
+      "chamarra forestal",
+      "chamarra ignífuga"
     ],
     "eyebrow": "Pieza · Línea de fuego",
     "h1": "Chamarra forestal para bombero",
@@ -4209,12 +4209,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "forestal",
     "nombreCard": "Overol forestal",
     "nombre": "Overol forestal",
-    "seoTitle": "Overol forestal para bombero | una pieza | México",
-    "seoDescription": "Overol forestal para bombero de una sola pieza en fibra ignífuga inherente: cobertura continua sin interfaz entre camisa y pantalón, para vestido rápido.",
+    "seoTitle": "Overol forestal para bombero de una pieza ignífugo",
+    "seoDescription": "Overol forestal para bombero de una pieza en fibra ignífuga inherente: cobertura continua sin interfaz en la cintura y vestido rápido. Cotiza con ficha.",
     "keywords": [
       "overol forestal para bombero",
-      "una pieza",
-      "México"
+      "overol ignífugo forestal",
+      "overol de una pieza"
     ],
     "eyebrow": "Pieza · Línea de fuego",
     "h1": "Overol forestal para bombero",
@@ -4483,12 +4483,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "forestal",
     "nombreCard": "Nuquera forestal",
     "nombre": "Nuquera forestal",
-    "seoTitle": "Nuquera forestal para casco de bombero | México",
-    "seoDescription": "Nuquera forestal para casco de bombero en tela ignífuga: cubre cuello y orejas de la lluvia de pavesas y del calor radiante en línea de fuego.",
+    "seoTitle": "Nuquera forestal para casco de bombero en tela ignífuga",
+    "seoDescription": "Nuquera forestal para casco de bombero en tela ignífuga: cubre cuello y orejas de la lluvia de pavesas y del calor radiante en línea de fuego. Cotiza.",
     "keywords": [
       "nuquera forestal para casco",
       "protector de nuca",
-      "México"
+      "nuquera para casco"
     ],
     "eyebrow": "Pieza · Línea de fuego",
     "h1": "Nuquera forestal para casco",
@@ -4746,12 +4746,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "forestal",
     "nombreCard": "Conjunto dual forestal y rescate",
     "nombre": "Conjunto dual forestal y rescate",
-    "seoTitle": "Conjunto dual forestal y rescate | doble norma | México",
+    "seoTitle": "Conjunto dual forestal y rescate técnico con doble norma",
     "seoDescription": "Conjunto dual forestal y rescate certificado para incendio de vegetación y rescate técnico: un solo equipo para cuerpos que atienden ambos escenarios.",
     "keywords": [
       "conjunto dual forestal y rescate",
-      "doble certificación",
-      "México"
+      "traje forestal y de rescate",
+      "doble certificación"
     ],
     "eyebrow": "Pieza · Línea de fuego",
     "h1": "Conjunto dual forestal y rescate",
@@ -5029,12 +5029,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "aproximacion",
     "nombreCard": "Chaquetón aluminizado de aproximación",
     "nombre": "Chaquetón aluminizado de aproximación",
-    "seoTitle": "Chaquetón aluminizado de aproximación | ARFF | México",
-    "seoDescription": "Chaquetón aluminizado de aproximación con exterior reflejante sobre forro ignífugo, para trabajo prolongado cerca de calor radiante en ARFF y fundición.",
+    "seoTitle": "Chaquetón aluminizado de aproximación para ARFF y fundición",
+    "seoDescription": "Chaquetón aluminizado de aproximación: exterior reflejante sobre forro ignífugo para trabajo prolongado cerca de calor radiante en ARFF y fundición.",
     "keywords": [
+      "chaquetón aluminizado",
       "chaquetón aluminizado de aproximación",
-      "calor radiante",
-      "México"
+      "traje aluminizado"
     ],
     "eyebrow": "Pieza · Calor radiante",
     "h1": "Chaquetón aluminizado de aproximación",
@@ -5313,12 +5313,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "aproximacion",
     "nombreCard": "Pantalón aluminizado de aproximación",
     "nombre": "Pantalón aluminizado de aproximación",
-    "seoTitle": "Pantalón aluminizado de aproximación | proximity | México",
-    "seoDescription": "Pantalón aluminizado de aproximación con tirantes de ajuste y puños regulables: complemento del chaquetón en el mismo nivel de protección radiante.",
+    "seoTitle": "Pantalón aluminizado de aproximación con tirantes de ajuste",
+    "seoDescription": "Pantalón aluminizado de aproximación con tirantes de ajuste y puños regulables: complemento del chaquetón con el mismo nivel de protección radiante.",
     "keywords": [
+      "pantalón aluminizado",
       "pantalón aluminizado de aproximación",
-      "proximity",
-      "México"
+      "traje aluminizado completo"
     ],
     "eyebrow": "Pieza · Calor radiante",
     "h1": "Pantalón aluminizado de aproximación",
@@ -5592,12 +5592,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "aproximacion",
     "nombreCard": "Capucha aluminizada con visor dorado",
     "nombre": "Capucha aluminizada con visor dorado",
-    "seoTitle": "Capucha aluminizada con visor dorado | proximity | México",
+    "seoTitle": "Capucha aluminizada con visor dorado para calor radiante",
     "seoDescription": "Capucha aluminizada con visor dorado y casco duro de ajuste dentado: protege cabeza, cara y cuello del calor radiante extremo en trabajo de proximidad.",
     "keywords": [
+      "capucha aluminizada",
       "capucha aluminizada con visor dorado",
-      "proximity",
-      "México"
+      "capucha de aproximación"
     ],
     "eyebrow": "Pieza · Calor radiante",
     "h1": "Capucha aluminizada con visor dorado",
@@ -5870,12 +5870,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "aproximacion",
     "nombreCard": "Guantes aluminizados de tres dedos",
     "nombre": "Guantes aluminizados de tres dedos",
-    "seoTitle": "Guantes aluminizados para calor radiante | manopla | México",
+    "seoTitle": "Guante aluminizado para calor radiante tipo manopla",
     "seoDescription": "Guantes aluminizados para calor radiante en manopla de tres dedos: dorso reflejante y palma aislante, máxima protección de la mano a costa de destreza.",
     "keywords": [
+      "guante aluminizado",
       "guantes aluminizados para calor radiante",
-      "manopla",
-      "México"
+      "manopla aluminizada"
     ],
     "eyebrow": "Pieza · Calor radiante",
     "h1": "Guantes aluminizados para calor radiante",
@@ -6147,12 +6147,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "aproximacion",
     "nombreCard": "Polainas aluminizadas para bota",
     "nombre": "Polainas aluminizadas para bota",
-    "seoTitle": "Polainas aluminizadas para bota | proximity | México",
-    "seoDescription": "Polainas aluminizadas para bota que se fijan con velcro sobre el calzado de trabajo: lo cubren del calor radiante sin sustituirlo, en conjuntos de proximidad.",
+    "seoTitle": "Polainas aluminizadas para bota contra calor radiante",
+    "seoDescription": "Polainas aluminizadas para bota que se fijan con velcro sobre el calzado de trabajo: lo protegen del calor radiante sin sustituirlo. Cotiza con tu conjunto.",
     "keywords": [
       "polainas aluminizadas para bota",
-      "cobertores de bota",
-      "México"
+      "cobertores de bota aluminizados",
+      "polainas aluminizadas"
     ],
     "eyebrow": "Pieza · Calor radiante",
     "h1": "Polainas aluminizadas para bota",
@@ -6423,12 +6423,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "aproximacion",
     "nombreCard": "Delantal aluminizado",
     "nombre": "Delantal aluminizado",
-    "seoTitle": "Delantal aluminizado para fundición | calor | México",
-    "seoDescription": "Delantal aluminizado para fundición: protección frontal contra calor radiante y salpicadura de metal, donde no se justifica un conjunto completo.",
+    "seoTitle": "Delantal aluminizado para fundición y calor radiante",
+    "seoDescription": "Delantal aluminizado para fundición: protección frontal contra calor radiante y salpicadura de metal donde no se justifica un conjunto completo. Cotiza.",
     "keywords": [
+      "delantal aluminizado",
       "delantal aluminizado para fundición",
-      "calor radiante",
-      "México"
+      "mandil aluminizado"
     ],
     "eyebrow": "Pieza · Calor radiante",
     "h1": "Delantal aluminizado para fundición",
@@ -6700,12 +6700,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "entrada",
     "nombreCard": "Conjunto de penetración de corta duración",
     "nombre": "Conjunto de penetración de corta duración",
-    "seoTitle": "Traje de penetración a la flama | corta duración | México",
-    "seoDescription": "Traje de penetración a la flama de corta duración: aluminizado multicapa para entrar, resolver y salir en minutos. Siempre con equipo de respiración.",
+    "seoTitle": "Traje de penetración a la flama de corta duración",
+    "seoDescription": "Traje de penetración a la flama de corta duración: aluminizado multicapa para entrar, resolver y salir en minutos, siempre con equipo de respiración.",
     "keywords": [
       "traje de penetración a la flama",
-      "corta duración",
-      "México"
+      "traje de penetración",
+      "traje de entrada a la flama"
     ],
     "eyebrow": "Pieza · Ingreso a la flama",
     "h1": "Traje de penetración a la flama",
@@ -6984,12 +6984,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "entrada",
     "nombreCard": "Conjunto de penetración avanzada",
     "nombre": "Conjunto de penetración avanzada",
-    "seoTitle": "Traje de entrada a fuego avanzado | engullimiento | México",
-    "seoDescription": "Traje de entrada a fuego avanzado con aislamiento reforzado para engullimiento total por flama: el nivel superior de la escala aluminizada.",
+    "seoTitle": "Traje de entrada a fuego avanzado para engullimiento total",
+    "seoDescription": "Traje de entrada a fuego avanzado con aislamiento reforzado para engullimiento total por flama: el nivel superior de la escala aluminizada. Cotiza.",
     "keywords": [
       "traje de entrada a fuego avanzado",
-      "engullimiento",
-      "México"
+      "traje de penetración avanzado",
+      "traje para engullimiento"
     ],
     "eyebrow": "Pieza · Ingreso a la flama",
     "h1": "Traje de entrada a fuego avanzado",
@@ -7263,12 +7263,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "entrada",
     "nombreCard": "Capucha de penetración con visor doble",
     "nombre": "Capucha de penetración con visor doble",
-    "seoTitle": "Capucha de entrada a la flama | visor doble | México",
-    "seoDescription": "Capucha de entrada a la flama con visor de doble capa y película dorada, casco duro de ajuste dentado y cobertor de hombro completo.",
+    "seoTitle": "Capucha de entrada a la flama con visor de doble capa",
+    "seoDescription": "Capucha de entrada a la flama con visor de doble capa y película dorada, casco duro de ajuste dentado y cobertor de hombro completo. Cotiza con el traje.",
     "keywords": [
       "capucha de entrada a la flama",
-      "visor doble",
-      "México"
+      "capucha de penetración",
+      "capucha aluminizada multicapa"
     ],
     "eyebrow": "Pieza · Ingreso a la flama",
     "h1": "Capucha de entrada a la flama",
@@ -7541,12 +7541,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "entrada",
     "nombreCard": "Guantes mitón de penetración",
     "nombre": "Guantes mitón de penetración",
-    "seoTitle": "Guantes mitón para entrada a la flama | México",
-    "seoDescription": "Guantes mitón para entrada a la flama con palma de alto aislamiento: el máximo nivel de protección de manos del conjunto, a costa de destreza.",
+    "seoTitle": "Guantes mitón aluminizados para entrada a la flama",
+    "seoDescription": "Guantes mitón para entrada a la flama con palma de alto aislamiento: la máxima protección de manos del conjunto, a costa de destreza. Cotiza con ficha.",
     "keywords": [
+      "guantes mitón aluminizados",
       "guantes mitón para entrada a la flama",
-      "aislamiento",
-      "México"
+      "guantes de penetración"
     ],
     "eyebrow": "Pieza · Ingreso a la flama",
     "h1": "Guantes mitón para entrada a la flama",
@@ -7823,12 +7823,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "entrada",
     "nombreCard": "Conjunto para mantenimiento de hornos",
     "nombre": "Conjunto para mantenimiento de hornos",
-    "seoTitle": "Traje para mantenimiento de hornos | en caliente | México",
-    "seoDescription": "Traje para mantenimiento de hornos con visor transparente de doble capa y parches de refuerzo en codos y rodillas: variante de entrada para trabajo en caliente.",
+    "seoTitle": "Traje para mantenimiento de hornos y trabajo en caliente",
+    "seoDescription": "Traje para mantenimiento de hornos con visor transparente de doble capa y refuerzos en codos y rodillas: variante de entrada para trabajo en caliente.",
     "keywords": [
       "traje para mantenimiento de hornos",
-      "trabajo en caliente",
-      "México"
+      "traje para trabajo en caliente",
+      "traje para hornos"
     ],
     "eyebrow": "Pieza · Ingreso a la flama",
     "h1": "Traje para mantenimiento de hornos",
@@ -8102,12 +8102,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "entrada",
     "nombreCard": "Pasamontañas y talega de conjunto",
     "nombre": "Pasamontañas y talega de conjunto",
-    "seoTitle": "Pasamontañas para traje de entrada | talega | México",
-    "seoDescription": "Pasamontañas para traje de entrada y talega de nailon balístico: la prenda que va bajo la capucha y el sistema que conserva el conjunto entre usos.",
+    "seoTitle": "Pasamontañas ignífugo y talega para traje de entrada",
+    "seoDescription": "Pasamontañas ignífugo para traje de entrada y talega de nailon balístico: la prenda que va bajo la capucha y el sistema que conserva el conjunto.",
     "keywords": [
+      "pasamontañas ignífugo",
       "pasamontañas para traje de entrada",
-      "talega de conjunto",
-      "México"
+      "talega de conjunto"
     ],
     "eyebrow": "Pieza · Ingreso a la flama",
     "h1": "Pasamontañas y talega para traje de entrada",
@@ -8373,12 +8373,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "extricacion",
     "nombreCard": "Chaqueta de rescate técnico",
     "nombre": "Chaqueta de rescate técnico",
-    "seoTitle": "Chaqueta de rescate técnico | extricación | México",
-    "seoDescription": "Chaqueta de rescate técnico monocapa para extricación y accidentes viales: resistencia a corte y punción con mucha menos carga térmica que un chaquetón.",
+    "seoTitle": "Chaqueta de rescate técnico para extricación vehicular",
+    "seoDescription": "Chaqueta de rescate técnico monocapa para extricación vehicular y accidentes viales: resiste corte y punción con menos carga térmica que un chaquetón.",
     "keywords": [
       "chaqueta de rescate técnico",
-      "extricación",
-      "México"
+      "chaqueta de extricación",
+      "extricación vehicular"
     ],
     "eyebrow": "Pieza · Rescate técnico",
     "h1": "Chaqueta de rescate técnico",
@@ -8656,12 +8656,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "extricacion",
     "nombreCard": "Pantalón de rescate técnico",
     "nombre": "Pantalón de rescate técnico",
-    "seoTitle": "Pantalón de rescate técnico | extricación | México",
-    "seoDescription": "Pantalón de rescate técnico monocapa con rodillas acolchadas y reforzadas, para trabajar hincado sobre vidrio y lámina en extricación vehicular.",
+    "seoTitle": "Pantalón de rescate técnico con rodilla acolchada reforzada",
+    "seoDescription": "Pantalón de rescate técnico monocapa con rodillas acolchadas y reforzadas para trabajar hincado sobre vidrio y lámina en extricación vehicular. Cotiza.",
     "keywords": [
       "pantalón de rescate técnico",
-      "extricación",
-      "México"
+      "pantalón de extricación",
+      "extricación vehicular"
     ],
     "eyebrow": "Pieza · Rescate técnico",
     "h1": "Pantalón de rescate técnico",
@@ -8934,12 +8934,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "extricacion",
     "nombreCard": "Conjunto de extricación",
     "nombre": "Conjunto de extricación",
-    "seoTitle": "Conjunto de extricación | chaqueta y pantalón | México",
-    "seoDescription": "Conjunto de extricación de dos piezas para rescate vehicular: evita rasgar y contaminar el traje estructural en las salidas que no son de incendio.",
+    "seoTitle": "Conjunto de extricación: chaqueta y pantalón de rescate",
+    "seoDescription": "Conjunto de extricación de dos piezas para rescate vehicular: evita rasgar y contaminar el traje estructural en salidas que no son de incendio. Cotiza.",
     "keywords": [
       "conjunto de extricación",
-      "rescate vehicular",
-      "México"
+      "traje de rescate vehicular",
+      "equipo de extricación"
     ],
     "eyebrow": "Pieza · Rescate técnico",
     "h1": "Conjunto de extricación",
@@ -9212,12 +9212,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "extricacion",
     "nombreCard": "Overol de rescate técnico",
     "nombre": "Overol de rescate técnico",
-    "seoTitle": "Overol de rescate técnico | vestido rápido | México",
-    "seoDescription": "Overol de rescate técnico de una pieza para vestido rápido y cobertura continua: alternativa al conjunto de dos piezas en salidas súbitas.",
+    "seoTitle": "Overol de rescate técnico de una pieza y vestido rápido",
+    "seoDescription": "Overol de rescate técnico de una pieza para vestido rápido y cobertura continua: alternativa al conjunto de dos piezas en salidas súbitas. Cotiza.",
     "keywords": [
       "overol de rescate técnico",
-      "vestido rápido",
-      "México"
+      "overol de rescate",
+      "vestido rápido"
     ],
     "eyebrow": "Pieza · Rescate técnico",
     "h1": "Overol de rescate técnico",
@@ -9490,12 +9490,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "extricacion",
     "nombreCard": "Conjunto dual rescate y forestal",
     "nombre": "Conjunto dual rescate y forestal",
-    "seoTitle": "Conjunto dual rescate y forestal | doble norma | México",
-    "seoDescription": "Conjunto dual rescate y forestal certificado para ambos escenarios: una sola dotación para cuerpos que atienden accidentes viales e incendios de vegetación.",
+    "seoTitle": "Traje dual para rescate vehicular e incendio forestal",
+    "seoDescription": "Traje dual de rescate y forestal certificado para ambos escenarios: una dotación para cuerpos que atienden accidentes viales e incendios de vegetación.",
     "keywords": [
+      "traje dual para rescate vehicular",
       "conjunto dual rescate y forestal",
-      "doble certificación",
-      "México"
+      "doble certificación"
     ],
     "eyebrow": "Pieza · Rescate técnico",
     "h1": "Conjunto dual rescate y forestal",
@@ -9773,12 +9773,12 @@ export const PIEZAS: Pieza[] = [
     "familia": "extricacion",
     "nombreCard": "Pantalón de cubierta para rescate",
     "nombre": "Pantalón de cubierta para rescate",
-    "seoTitle": "Pantalón de cubierta para rescate | sobre uniforme | México",
-    "seoDescription": "Pantalón de cubierta para rescate que se pone sobre el uniforme de estación: protege la ropa de trabajo sin vestir el conjunto estructural completo.",
+    "seoTitle": "Pantalón de cubierta para rescate sobre el uniforme",
+    "seoDescription": "Pantalón de cubierta para rescate que se pone sobre el uniforme de estación: protege la ropa de trabajo sin vestir el conjunto estructural. Cotiza.",
     "keywords": [
       "pantalón de cubierta para rescate",
-      "sobre uniforme",
-      "México"
+      "cubrepantalón de rescate",
+      "sobrepantalón de rescate"
     ],
     "eyebrow": "Pieza · Rescate técnico",
     "h1": "Pantalón de cubierta para rescate",

@@ -2,7 +2,7 @@
  "lead": "Esta guía reúne 7 estaciones de bomberos en Nayarit ubicadas en 5 municipios. Las fichas integran corporación, ubicación y fuente pública para facilitar la búsqueda de bomberos en Nayarit, sin presentar el registro como un inventario total.",
  "descRight": [
   "Nayarit combina 3 estaciones estatales, 3 municipales y una aeroportuaria. Tepic concentra 3 fichas, incluidas referencias estatal, municipal y de aeropuerto; Acaponeta, Bahía de Banderas, Compostela y San Blas aportan una cada uno. El registro también identifica 2 subestaciones, un dato útil para distinguir puntos regionales.",
-  "Elige un municipio en el índice para abrir su estación y revisar los campos disponibles. Hay teléfono en las 7 fichas, mientras que dirección y mapa dependen de la fuente de cada caso. El listado facilita contrastar esos datos antes de una gestión. Para una situación de emergencia marca 911, no los teléfonos de consulta publicados."
+  "Elige un municipio en el índice para abrir su estación y revisar los campos disponibles. Hay teléfono respaldado en 3 fichas, mientras que dirección y mapa dependen de la fuente de cada caso. El listado facilita contrastar esos datos antes de una gestión. Para una situación de emergencia marca 911, no los teléfonos de consulta publicados."
  ],
  "municipiosDuo": [
   "Tepic concentra 3 de las 7 estaciones registradas, por lo que es el principal punto de consulta para bomberos en Tepic. Ahí aparecen una referencia estatal, una municipal y el CREI Aeropuerto Internacional de Tepic-Riviera Nayarit, con su información separada dentro del listado.",
@@ -13,7 +13,7 @@
   "Al abrir una estación conviene confirmar primero municipio y corporación, y después los datos de localización disponibles. La Dirección General de Protección Ciudadana y Bomberos del Estado de Nayarit y el CREI Aeropuerto Internacional de Tepic-Riviera Nayarit responden a esquemas distintos, señalados expresamente en cada ficha."
  ],
  "coberturaDuo": [
-  "Incendios estructurales y atención prehospitalaria están declarados en las 7 fichas de Nayarit. Los incendios forestales aparecen en 6 y el rescate vehicular en 5, con menciones adicionales de materiales peligrosos. Las 7 estaciones tienen teléfono, 3 dirección y 2 ubicación exacta.",
+  "Incendios estructurales y atención prehospitalaria están declarados en las 7 fichas de Nayarit. Los incendios forestales aparecen en 6 y el rescate vehicular en 5, con menciones adicionales de materiales peligrosos. De las 7 estaciones, 3 tienen teléfono con fuente, 3 dirección y 2 ubicación exacta.",
   "El directorio también registra rescate acuático y atención a enjambres y fauna en 2 casos, además de salvamento aeroportuario, rescate en altura y fugas de gas en una ficha cada uno. Estas etiquetas describen servicios declarados, no una garantía de disponibilidad ante un evento específico."
  ],
  "equipoDuo": [
