@@ -296,7 +296,7 @@
   "coordenadas": {
    "lat": 21.85,
    "lng": -101.9333,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(496) 967-3389",
   "servicios": [
@@ -613,7 +613,7 @@
   "coordenadas": {
    "lat": 31.7167,
    "lng": -116.5667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales"
@@ -1927,7 +1927,7 @@
   "coordenadas": {
    "lat": 20.3667,
    "lng": -90.05,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "email": "proteccioncivil@calkini.gob.mx",
   "sitioWeb": "https://www.calkini.gob.mx",
@@ -2092,7 +2092,7 @@
   "coordenadas": {
    "lat": 18.1833,
    "lng": -91.05,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(982) 826-0138",
   "email": "presidencia@municipiodecandelaria.gob.mx",
@@ -2197,7 +2197,6 @@
    "(938) 384-1663"
   ],
   "email": "proteccioncivil.carmen@gmail.com",
-  "sitioWeb": "http://www.carmen.gob.mx/",
   "servicios": [
    "proteccion-civil"
   ],
@@ -2205,6 +2204,10 @@
    {
     "nombre": "carmen.gob.mx",
     "retirada": "http://www.carmen.gob.mx/home/proteccion-civil-carmen/"
+   },
+   {
+    "nombre": "facebook.com/proteccioncivilcarmen2021",
+    "url": "https://www.facebook.com/proteccioncivilcarmen2021/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2257,7 +2260,7 @@
   "coordenadas": {
    "lat": 19.35,
    "lng": -90.7167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(982) 828-0343",
   "telefonosAdicionales": [
@@ -2270,7 +2273,11 @@
   "fuentes": [
    {
     "nombre": "cotaipec.org.mx",
-    "url": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+    "retirada": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+   },
+   {
+    "nombre": "champoton.gob.mx",
+    "url": "https://www.champoton.gob.mx/inicio/index.php/component/sppagebuilder/page/10?Itemid=0"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2309,37 +2316,6 @@
   "municipioSlug": "dzitbalche"
  },
  {
-  "id": "cam-12",
-  "nombre": "Dirección de Protección Civil Municipal de Escárcega",
-  "slug": "direccion-de-proteccion-civil-municipal-de-escarcega",
-  "estado": "campeche",
-  "estadoNombre": "Campeche",
-  "ciudad": "Escárcega",
-  "municipio": "Escárcega",
-  "tipo": "Municipal",
-  "corporacion": "Dirección de Protección Civil Municipal de Escárcega",
-  "rolEstacion": "unica",
-  "direccion": "Av. Héctor Pérez Martínez S/N, entre 35 y 37, Col. Morelos, C.P. 24350, Escárcega",
-  "coordenadas": {
-   "lat": 18.61,
-   "lng": -90.74,
-   "precision": "exacta"
-  },
-  "sitioWeb": "https://www.escarcega.gob.mx",
-  "servicios": [
-   "proteccion-civil"
-  ],
-  "fuentes": [
-   {
-    "nombre": "cotaipec.org.mx",
-    "url": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "baja",
-  "municipioSlug": "escarcega"
- },
- {
   "id": "cam-11",
   "nombre": "Dirección de Protección Civil Municipal de Hecelchakán",
   "slug": "direccion-de-proteccion-civil-municipal-de-hecelchakan",
@@ -2350,7 +2326,6 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil Municipal de Hecelchakán",
   "rolEstacion": "unica",
-  "direccion": "Calle 20 S/N, Col. Centro, C.P. 24800, Hecelchakán",
   "coordenadas": {
    "lat": 20.1747,
    "lng": -90.1297,
@@ -2363,7 +2338,11 @@
   "fuentes": [
    {
     "nombre": "cotaipec.org.mx",
-    "url": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+    "retirada": "https://www.cotaipec.org.mx/pdf/entes_ayuntamientos.pdf"
+   },
+   {
+    "nombre": "hecelchakan.gob.mx — Reglamento de Protección Civil",
+    "url": "https://www.hecelchakan.gob.mx/hecelchakan/wp-content/uploads/2022/04/REGLAMENTO-DE-PROTECCION-CIVIL.pdf"
    }
   ],
   "verificadoEl": "2026-06",
@@ -2620,7 +2599,7 @@
   "coordenadas": {
    "lat": 16.7,
    "lng": -93.7167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(968) 107-3251",
   "servicios": [
@@ -2904,7 +2883,7 @@
   "coordenadas": {
    "lat": 16.35,
    "lng": -92.5667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(992) 108-2486",
   "servicios": [
@@ -2936,7 +2915,7 @@
   "coordenadas": {
    "lat": 16.2333,
    "lng": -93.2667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(965) 113-4493",
   "servicios": [
@@ -3435,7 +3414,7 @@
   "coordenadas": {
    "lat": 26.9333,
    "lng": -105.6667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "sitioWeb": "https://hidalgodelparral.chihuahua.gob.mx/",
   "servicios": [
@@ -3926,7 +3905,7 @@
   "coordenadas": {
    "lat": 30.4167,
    "lng": -107.9167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(636) 694-1529",
   "sitioWeb": "https://ncg.gob.mx/",
@@ -5568,7 +5547,7 @@
   "coordenadas": {
    "lat": 27.85,
    "lng": -101.1167,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(861) 612-3535",
   "servicios": [
@@ -6346,7 +6325,7 @@
   "coordenadas": {
    "lat": 19.33,
    "lng": -103.6,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(312) 328-0557",
   "telefonosAdicionales": [
@@ -6794,7 +6773,7 @@
   "coordenadas": {
    "lat": 24.5167,
    "lng": -104.7667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(677) 872-0225",
   "telefonosAdicionales": [
@@ -7207,7 +7186,7 @@
   "coordenadas": {
    "lat": 24.0667,
    "lng": -104.0833,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(675) 867-0402",
   "servicios": [
@@ -7238,7 +7217,7 @@
   "coordenadas": {
    "lat": 23.7833,
    "lng": -105.3667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(675) 876-0180",
   "servicios": [
@@ -7339,7 +7318,7 @@
   "coordenadas": {
    "lat": 23.95,
    "lng": -103.9833,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(675) 102-6691",
   "servicios": [
@@ -11489,7 +11468,7 @@
   "coordenadas": {
    "lat": 20.35,
    "lng": -102.7667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "servicios": [
    "incendios-estructurales",
@@ -19795,7 +19774,7 @@
   "coordenadas": {
    "lat": 22.7333,
    "lng": -98.9667,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
   "telefono": "(831) 232-3872",
   "servicios": [
