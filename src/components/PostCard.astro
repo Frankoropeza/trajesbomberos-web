@@ -40,7 +40,7 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </span>
   </div>
-  <span class="post-card__n" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+  <span class="post-card__n" aria-hidden="true" data-n={String(index + 1).padStart(2, '0')}></span>
 </a>
 
 <style>
@@ -134,6 +134,7 @@ const { href, title, resumen, categoria, fecha, lectura, image, imageAlt = '', d
     font-size: 0.83rem;
   }
 
+  .post-card__n::before { content: attr(data-n); }
   .post-card__n {
     position: absolute;
     right: 0.9rem;
