@@ -45,12 +45,6 @@ export const DUO_P_B: Record<string, Record<string, Duo>> = {
       'Explica quién entra a la maniobra, qué exposición tiene y qué piezas ya conserva tu equipo. Con esa base puedes solicitar una partida con composite y alcance claros, además de casco, botas, guantes, monja o ERA compatibles cuando el conjunto lo requiera.',
     ],
   },
-  '/trajes/brigadista/': {
-    completa: [
-      'El traje de brigadista se completa con casco, guantes, botas y monja; el ERA se considera cuando la operación y el análisis de riesgo lo indican. Cada complemento debe mantener cobertura y movilidad con el chaquetón, pantalonera u overol de la brigada industrial.',
-      'Antes de cerrar la compra, prueba casco, guantes y botas con la prenda que usarán los elementos durante primera respuesta y evacuación. Solicita que la cotización identifique las piezas del sistema para revisar compatibilidad, tallas y alcance sin confundirlas con ataque interior.',
-    ],
-  },
   '/trajes/brigadista/chaqueton/': {
     aplicaciones: [
       'Para reponer una prenda superior, el chaquetón de brigadista atiende daños puntuales, altas de integrantes y correcciones de talla sin recomprar un conjunto. Compras o seguridad industrial lo especifican para conservar la misma configuración cuando una pieza de primera respuesta deja de estar en servicio.',

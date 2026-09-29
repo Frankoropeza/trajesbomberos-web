@@ -1,12 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_G: Record<string, Record<string, Duo>> = {
-  '/trajes/hazmat/': {
-    completa: [
-      'El equipo Hazmat se cierra al definir la compatibilidad entre traje químico, casco, guantes, botas y respiración. No basta sumar piezas: las uniones de manga, puño, caña y protección respiratoria deben responder al agente y a la tarea evaluada.',
-      'Integra el conjunto con <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma</a> cuando el análisis lo requiera y confirma interfaces por escrito. Una cotización completa separa cada partida, talla y condición de uso para evitar vacíos entre componentes.',
-    ],
-  },
   '/trajes/hazmat/botas-quimicas/': {
     aplicaciones: [
       'Las botas químicas completan el sellado inferior en control de derrames, descontaminación técnica y reconocimiento delimitado. Quien diseña la respuesta debe definir agente, concentración, piso y traslape con el traje, porque la apariencia de una bota no establece compatibilidad.',

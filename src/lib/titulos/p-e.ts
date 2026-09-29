@@ -1,12 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_E: Record<string, Record<string, Duo>> = {
-  '/trajes/entrada/': {
-    completa: [
-      'El traje de entrada a la flama requiere que casco integrado, capucha, guantes mitón, botas aluminizadas y ERA funcionen como un sistema. La compatibilidad no termina al sumar piezas: visor, traslapes, respiración y movilidad se verifican con la maniobra de ingreso prevista.',
-      'Al cotizar el conjunto, separa cada complemento y confirma su interfaz con el equipo de respiración autónoma. Pide una propuesta escrita con configuración, tallas y condiciones; así la compra respalda un ingreso breve con protocolo, no una acumulación de piezas brillantes.',
-    ],
-  },
   '/trajes/entrada/accesorios/': {
     aplicaciones: [
       'Los pasamontañas y talega para traje de entrada se usan al preparar el conjunto, reponer piezas y conservarlo entre intervenciones. El pasamontañas cubre la interfaz de cabeza, cuello y rostro; la talega protege la superficie aluminizada durante traslado y almacenamiento.',

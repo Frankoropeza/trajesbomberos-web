@@ -37,12 +37,6 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Define exterior, accesorios y operación antes de solicitar partidas. El estatus normativo se conserva tal como lo publica cada ficha, de modo que compras puede distinguir una certificación UL de una equivalencia y pedir el documento aplicable a la configuración elegida.',
     ],
   },
-  '/trajes/aproximacion/': {
-    completa: [
-      'El Traje de aproximación aluminizado para calor radiante se completa revisando casco o capucha con visor, guantes, pantalón, polainas o bota y ERA cuando la atmósfera lo exige. La compatibilidad nace de probar traslapes y accesorios con la exposición real, no de comprar piezas aisladas.',
-      'Pide que cada complemento quede identificado por nivel, talla y función dentro de la cotización. Al ensayar visor, guante, manga, bota, máscara y radio antes de entregar, la organización puede detectar presión o aberturas que una ficha individual no revela.',
-    ],
-  },
   '/trajes/aproximacion/capucha/': {
     aplicaciones: [
       'Capucha aluminizada con visor dorado protege cara y cuello en ARFF, colada y fundición, hornos, vidrio y maniobras petroquímicas con radiación frontal. Quien especifica la pieza debe definir exposición, tiempo, casco y si existe equipo de respiración que deba conservar compatibilidad.',

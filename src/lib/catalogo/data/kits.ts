@@ -99,15 +99,15 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "normas": [
         {
           "norma": "NFPA 1970 (antes NFPA 1971)",
-          "alcance": "Referencia vigente del conjunto estructural; revisa la declaración de cada pieza."
+          "alcance": "Referencia vigente del conjunto estructural; se revisa la declaración de cada pieza."
         },
         {
-          "norma": "UL NFPA 2018",
-          "alcance": "Declaración de la ficha del guante Veridian Fire Pro II GIS1017 del ejemplo."
+          "norma": "UL, NFPA 1971-2018",
+          "alcance": "Certificación publicada del guante Veridian Fire Pro II GIS1017 y del traje Romak Fire Profesional."
         },
         {
-          "norma": "UL NFPA 1971 edición 2018",
-          "alcance": "Listado referido para la capucha Majestic PAC II del ejemplo."
+          "norma": "UL, NFPA 1971 edición 2018",
+          "alcance": "Listado publicado de la capucha Majestic PAC II."
         }
       ],
       "errores": [

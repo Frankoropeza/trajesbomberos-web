@@ -1,12 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_C: Record<string, Record<string, Duo>> = {
-  '/trajes/forestal/': {
-    completa: [
-      'El traje forestal para bombero se integra con casco forestal, goggles, guantes de piel ligeros, bota sin puntera de acero y nuquera. Cada interfaz responde a pavesas, terreno y jornada; el ERA solo se considera cuando el procedimiento y el riesgo respiratorio lo justifican.',
-      'Revisa la compatibilidad de casco, guantes y bota con la prenda monocapa, sin repetir la selección de piezas ya descrita para la familia. Al solicitar una dotación, detalla terreno, herramienta y uso de mochila para armar un sistema coherente.',
-    ],
-  },
   '/trajes/forestal/camisola/': {
     aplicaciones: [
       'La camisola forestal para bombero se usa en cuadrilla de línea, construcción de brecha, ataque directo, quemas prescritas e interfaz urbano-rural. Su construcción ventilada ayuda en jornadas extensas donde el calor corporal se acumula, por lo que la especifican responsables de brigada y manejo del fuego.',

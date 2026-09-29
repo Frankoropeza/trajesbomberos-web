@@ -1,12 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_A: Record<string, Record<string, Duo>> = {
-  '/trajes/estructural/': {
-    completa: [
-      'El equipo estructural se completa con casco, guantes, botas y ERA seleccionados para trabajar con las tres capas, la monja y el acceso al DRD. Cada interfaz importa: cuello con máscara, puño con guante, pantalonera con bota y arnés con equipo respiratorio deben conservar cobertura durante la maniobra.',
-      'Al solicitar un conjunto, anota qué casco, bota y equipo de respiración usa cada elemento para revisar compatibilidad antes de emitir partidas. Consulta los <a href="/guantes/">guantes de bombero</a> y las <a href="/botas/">botas de bombero</a>; por WhatsApp puedes pedir el desglose con ficha técnica y condiciones por escrito.',
-    ],
-  },
   '/trajes/estructural/arnes-escape/': {
     aplicaciones: [
       'Durante un descenso de emergencia en operación estructural, el arnés interno de escape para bombero permite que el elemento cuente con un sistema integrado en ataque interior, búsqueda y rescate o rutas de salida comprometidas. Cuerpos municipales, brigadas industriales con fuego declarado y protección civil lo definen según su procedimiento operativo.',
