@@ -245,7 +245,7 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Pide que esos límites aparezcan por separado en la cotización. Distinguir prenda, respiración y procedimiento permite comparar propuestas sin suponer que el encapsulado cubre todos los recursos necesarios para la entrada y salida controladas.',
     ],
     relacionados: [
-      'Antes de decidir una configuración encapsulada Hazmat revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/guantes-quimicos/">guantes químicos</a>. La comparación aclara qué exposición exige encapsular el ERA y qué material debe proteger las manos.',
+      'Antes de decidir una configuración encapsulada Hazmat revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/guantes-quimicos/">guantes químicos</a>. La comparación con ambos destinos aclara qué exposición exige encapsular el ERA y qué material debe proteger las manos.',
       'Reúne las fichas de ambos elementos con el análisis de atmósfera. Esa revisión conecta barrera corporal, respiración y destreza, y evita sustituir el criterio de vapor por una elección basada en el nombre del nivel.',
     ],
   },
@@ -309,7 +309,7 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Cotiza partes independientes o el <a href="/trajes/hazmat/">equipo Hazmat</a> completo después de compartir monitoreo y agente. Así el conjunto puede incluir cartuchos, puños y calzado con criterios compatibles para la entrada planeada y su retiro posterior.',
     ],
     incluye: [
-      'La configuración Hazmat incluye prenda de barrera, interfaces solicitadas y ficha del material para el escenario documentado. No incluye automáticamente respirador purificador, cartuchos, prueba de ajuste ni procedimiento de descontaminación operativa.',
+      'La configuración Hazmat incluye prenda de barrera, interfaces solicitadas y ficha del material para el escenario documentado en el análisis de riesgo. No incluye automáticamente respirador purificador, cartuchos, prueba de ajuste ni procedimiento de descontaminación operativa.',
       'Desglosa esos elementos en la cotización para comparar alcance y responsabilidades. Distinguir ropa, respiración y control de uso ayuda a evitar que una propuesta omita recursos indispensables para una tarea condicionada por monitoreo.',
     ],
     relacionados: [
