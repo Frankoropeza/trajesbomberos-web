@@ -1,4 +1,5 @@
 ---
+import { metaSeo } from '@lib/metas-seo';
 import { responsive, SIZES } from '@lib/img';
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
@@ -106,6 +107,9 @@ if (isTipo) {
     h1Accent = llevaKeyword(tipoNombre) ? tipoNombre : `${tipoNombre} para bombero`;
   }
 }
+// Metas por ruta (tanda de metas): title, description y H1 con prioridad sobre los datos.
+const metaRuta = metaSeo(path);
+if (metaRuta?.h1) { h1Ficha = metaRuta.h1; h1Accent = undefined; }
 const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
 const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
@@ -122,7 +126,7 @@ const rapida = isTipo ? [] : [
 ] as [string, string][];
 const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
 ---
-<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : tituloModelo} description={isTipo ? tipo.description : descripcionModelo} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
+<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   {!isTipo && (
     <div class="section producto"><div class="container">

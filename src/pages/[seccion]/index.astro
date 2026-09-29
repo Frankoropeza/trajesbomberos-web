@@ -1,4 +1,5 @@
 ---
+import { metaSeo } from '@lib/metas-seo';
 import { responsive, SIZES } from '@lib/img';
 import type { GetStaticPaths } from 'astro';
 import PageLayout from '@layouts/PageLayout.astro';
@@ -36,7 +37,7 @@ const tiposAgrupados = grupos && grupos.length > 0;
 const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || seccion.intro.length > 0);
 ---
 <PageLayout
-  pageType="directorio" path={path} title={seccion.title} description={seccion.description}
+  pageType="directorio" path={path} title={metaSeo(path)?.title ?? seccion.title} description={metaSeo(path)?.description ?? seccion.description}
   crumbLabel={seccion.nombre} eyebrow={seccion.eyebrow} h1={seccion.h1} lead={seccion.lead}
   descRight={seccion.resumenHero ?? []}
   heroImage={seccion.hero} faqs={seccion.faq} directoryItems={items}
