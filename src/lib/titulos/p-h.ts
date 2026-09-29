@@ -78,36 +78,36 @@ export const DUO_P_H: Record<string, Record<string, Duo>> = {
   '/botas/romak-fire-ranger-bota/': {
     caracteristicas: [
       'Romak Fire Fire Ranger es una bota forestal de piel negra con agujetas y caña alta, identificada dentro de la línea Fire Ranger. No hay código, altura, suela, puntera ni norma declarados; esos datos no deben completarse a partir de la fotografía o del nombre comercial.',
-      'Al solicitar Romak Fire Fire Ranger, pide por escrito ficha técnica, construcción final, tallas y alcance de uso. Describe terreno, marcha y exposición de la cuadrilla para que la cotización confirme lo que se entrega, sin convertir una bota forestal en equivalente estructural.',
+      'Al solicitar esta bota forestal, pide por escrito ficha técnica, construcción final, tallas y alcance de uso. Describe terreno, marcha y exposición de la cuadrilla para que la cotización confirme lo que se entrega, sin convertirla en equivalente estructural.',
     ],
     faq: [
-      'Romak Fire Fire Ranger aclara que el código debe confirmarse al cotizar, que el fabricante no declara una norma y que solo están identificadas piel negra, agujetas y caña alta. Las preguntas delimitan con honestidad la información disponible del modelo forestal.',
+      'La consulta aclara que el código debe confirmarse al cotizar, que el fabricante no declara una norma y que solo están identificadas piel negra, agujetas y caña alta. Así se delimita con honestidad la información disponible del modelo forestal.',
       'Manda por WhatsApp la actividad forestal, tallas, cantidad, terreno y tiempo de marcha. Pide la ficha técnica junto con la cotización para confirmar suela, componentes y configuración antes de asignar la bota a una cuadrilla.',
     ],
     ficha: [
-      'Romak Fire Fire Ranger se publica como bota forestal de piel negra, agujetas y caña alta, sin código ni norma declarados. La especificación disponible no permite afirmar altura, puntera, membrana o desempeño; esos campos deben llegar documentados con la cotización.',
+      'La ficha publicada describe una bota forestal de piel negra, agujetas y caña alta, sin código ni norma declarados. No permite afirmar altura, puntera, membrana o desempeño; esos campos deben llegar documentados con la cotización.',
       'Solicita por escrito ficha técnica, tallas y declaración de conformidad antes de comparar alternativas. Esta precaución mantiene la requisición dentro de los datos reales del modelo y evita asignarlo para una operación que la documentación no respalda.',
     ],
     otros: [
-      'Romak Fire Fire Ranger comparte tipo forestal con Strong Fire Bota brigadista forestal caña corta, pero su ficha publicada solo identifica piel negra, agujetas y caña alta. Strong Fire declara materiales, planta y suela adicionales; ningún modelo tiene norma declarada.',
+      'Frente a Strong Fire Bota brigadista forestal caña corta, esta alternativa comparte uso forestal, pero su ficha solo identifica piel negra, agujetas y caña alta. Strong Fire declara materiales, planta y suela adicionales; ningún modelo tiene norma declarada.',
       'Para compararlas, solicita en la misma cotización talla, altura, sistema de cierre, suela, planta y ficha técnica. Así la diferencia entre información publicada y configuración confirmada queda clara antes de decidir qué bota corresponde a la marcha de la cuadrilla.',
     ],
   },
   '/botas/romak-workman-fire/': {
     caracteristicas: [
       'Romak Fire Workman Fire declara 33 cm de altura, caucho natural vulcanizado en autoclave y espuma aislante de PU impermeable. La suela antiderrapante, puntera y entresuela de acero se leen como componentes distintos para revisar protección de planta, dedos y estabilidad.',
-      'Para cotizar Romak Fire Workman Fire, confirma código BOT1004, tallas mexicanas de 26 a 31 cm, altura y componentes por escrito. Una orden detallada permite comprobar que el par recibido conserva la configuración revisada con pantalón y calcetín de trabajo.',
+      'Para cotizar este modelo, confirma código BOT1004, tallas mexicanas de 26 a 31 cm, altura y componentes por escrito. Una orden detallada permite comprobar que el par recibido conserva la configuración revisada con pantalón y calcetín de trabajo.',
     ],
     faq: [
-      'Romak Fire Workman Fire responde el código BOT1004, el rango de 26 a 31 cm mexicanos y el peso promedio declarado de 3,520 g. Estos datos orientan la selección, mientras la prueba con el usuario determina que talón, puntera y caña funcionen juntos.',
+      'El código BOT1004, el rango de 26 a 31 cm mexicanos y el peso promedio declarado de 3,520 g orientan la selección. La prueba con el usuario determina que talón, puntera y caña funcionen juntos.',
       'Al consultar por WhatsApp, indica tallas, cantidad, operación y si requieres confirmar altura o peso. Solicita la declaración de norma del fabricante para que NFPA 1971, ASTM F903-10 e ISO 9001:2008 de proceso se registren con precisión.',
     ],
     ficha: [
-      'Romak Fire Workman Fire usa código BOT1004 y declara caucho natural vulcanizado, 33 cm de altura, espuma de PU, puntera y entresuela de acero. Sus tallas mexicanas van de 26 a 31 cm y el peso promedio publicado es 3,520 g.',
+      'La ficha de la bota usa código BOT1004 y declara caucho natural vulcanizado, 33 cm de altura, espuma de PU, puntera y entresuela de acero. Las tallas mexicanas van de 26 a 31 cm y el peso promedio publicado es 3,520 g.',
       'La norma se declara como NFPA 1971, ASTM F903-10 e ISO 9001:2008 para proceso, sin certificación verificada. Pide esa declaración y la talla por escrito para recibir una configuración que pueda inspeccionarse contra la orden.',
     ],
     otros: [
-      'Romak Fire Workman Fire puede compararse con Croydon Filtrex y Sköld Workman, las otras botas de hule estructural publicadas. Workman Fire declara 33 cm y espuma de PU; Filtrex informa 13 pulgadas, mientras Sköld publica forro de lana ignífuga y códigos FPBSK.',
+      'Entre las botas de hule estructural publicadas, este modelo se compara con Croydon Filtrex y Sköld Workman. Workman Fire declara 33 cm y espuma de PU; Filtrex informa 13 pulgadas, mientras Sköld publica forro de lana ignífuga y códigos FPBSK.',
       'Revisa tallas, peso, puntera, entresuela, forro y norma declarada de cada una en una sola matriz. Esa comparación evita decidir por bandas reflejantes o marca y permite solicitar una bota compatible con el conjunto estructural de la corporación.',
     ],
   },
@@ -132,18 +132,18 @@ export const DUO_P_H: Record<string, Record<string, Duo>> = {
   '/botas/strongfire-bota-forestal/': {
     caracteristicas: [
       'Strong Fire Bota brigadista forestal caña corta declara piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm según talla y planta de Kevlar antiperforación. También publica doble membrana, cierre YKK y suela de hule acrilonitrilo para altas temperaturas.',
-      'Al cotizar Strong Fire Bota brigadista forestal caña corta, confirma por escrito talla, código, cierre, planta y suela. La configuración debe relacionarse con terreno, marcha y cuidado de piel y membrana, pues no hay norma declarada para el modelo.',
+      'Al cotizar esta bota de caña corta, confirma por escrito talla, código, cierre, planta y suela. La configuración debe relacionarse con terreno, marcha y cuidado de piel y membrana, pues no hay norma declarada para el modelo.',
     ],
     faq: [
-      'Strong Fire Bota brigadista forestal caña corta responde qué material publica, qué planta declara y cuál es su estatus normativo. La ficha identifica piel hidrofugada y planta de Kevlar, pero confirma que no hay norma declarada para convertir esas características en certificación.',
+      'La ficha de la bota responde qué material publica, qué planta declara y cuál es su estatus normativo. Identifica piel hidrofugada y planta de Kevlar, pero confirma que no hay norma declarada para convertir esas características en certificación.',
       'Para solicitarla por WhatsApp, comparte tallas, cantidad, recorrido, terreno y necesidad de cierre o ajuste. Pide también código y ficha técnica para que piel, membrana, planta y suela de la partida queden definidos antes de la orden.',
     ],
     ficha: [
-      'Strong Fire Bota brigadista forestal caña corta declara piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm según talla, planta de Kevlar antiperforación y suela de hule acrilonitrilo. El código se confirma al cotizar y no hay norma declarada.',
+      'La bota declara piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm según talla, planta de Kevlar antiperforación y suela de hule acrilonitrilo. El código se confirma al cotizar y no hay norma declarada.',
       'Solicita por escrito cierre YKK, doble membrana, talla y alcance de la configuración propuesta. Dejar esos campos en la requisición permite comparar lo que se cotiza contra el uso forestal real, sin atribuir certificación a los materiales publicados.',
     ],
     otros: [
-      'Strong Fire Bota brigadista forestal caña corta se compara con Romak Fire Fire Ranger dentro del calzado forestal. Strong Fire publica piel hidrofugada, planta de Kevlar, cierre y suela; Fire Ranger solo identifica piel negra, agujetas y caña alta. Ninguna ficha declara norma.',
+      'Dentro del calzado forestal, esta bota se compara con Romak Fire Fire Ranger. Strong Fire publica piel hidrofugada, planta de Kevlar, cierre y suela; Fire Ranger solo identifica piel negra, agujetas y caña alta. Ninguna ficha declara norma.',
       'La comparación útil pide talla, cierre o agujetas, altura, suela, planta y documentación de ambos modelos. Así la cuadrilla puede evaluar movilidad y mantenimiento en su terreno sin suponer que dos botas forestales tienen el mismo alcance.',
     ],
   },
@@ -235,11 +235,11 @@ export const DUO_P_H: Record<string, Record<string, Duo>> = {
       'Asumir equivalencia entre EN 443:2008 y otra norma sin respaldo documental también compromete la licitación. Antes de instalar accesorios, evita perforaciones o adaptadores no previstos: lámpara y comunicación deben corresponder al modelo y mantenerse durante limpieza e inspección.',
     ],
     faq: [
-      'El casco estructural europeo tipo jet responde que no hay modelos publicados y que el visor no reemplaza una máscara de ERA. Las preguntas delimitan visor exterior, protección ocular y compatibilidad con comunicaciones para formular una solicitud real, sin inventar disponibilidad.',
+      'Sin modelos publicados, la consulta del casco aclara que el visor no reemplaza una máscara de ERA. Delimita visor exterior, protección ocular y compatibilidad con comunicaciones para formular una solicitud real, sin inventar disponibilidad.',
       'Manda por WhatsApp el uso estructural, ERA existente, color, visor, comunicación y cantidad. Solicita un modelo con documentación de fabricante y describe qué cobertura necesitas; así se puede evaluar una configuración concreta antes de comprometer una compra por volumen.',
     ],
     ficha: [
-      'El casco estructural europeo tipo jet se especifica para combate en edificios con perfil jet, cobertura lateral y de nuca, y visor integrado según configuración. EN 443:2008 es la referencia publicada; no hay modelo, código ni certificación declarados.',
+      'Para combate en edificios, el tipo jet se especifica con cobertura lateral y de nuca, y visor integrado según configuración. EN 443:2008 es la referencia publicada; no hay modelo, código ni certificación declarados.',
       'Pide por escrito retención, visor, cubrenuca, comunicación y compatibilidad con ERA. Esta información convierte el tipo de casco en una requisición comprobable y evita llamar equivalente a una opción que todavía no cuenta con documentación del fabricante.',
     ],
   },

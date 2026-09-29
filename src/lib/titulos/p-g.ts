@@ -60,14 +60,14 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
   '/guantes/romak-firemax-vi/': {
     caracteristicas: [
       'Romak Fire Firemax VI usa piel tratada color oro, corte gun, pulgar tipo ala y forro térmico de aramida. Sus refuerzos de palma y banda elástica se revisan con talla, puño y actividad de brigada, sin asumir equivalencia automática.',
-      'En la cotización confirma por escrito el código GIS1008, corte, refuerzos y tallas M/G estándar o XG. Ese detalle permite comparar el Romak Fire Firemax VI con el procedimiento de respuesta inicial y recibir la configuración solicitada.',
+      'En la cotización confirma por escrito el código GIS1008, corte, refuerzos y tallas M/G estándar o XG. Ese detalle permite comparar el guante con el procedimiento de respuesta inicial y recibir la configuración solicitada.',
     ],
     faq: [
-      'Las dudas sobre Romak Fire Firemax VI abordan su piel tratada, corte gun, pulgar tipo ala y forro térmico de aramida. También aclaran las tallas M/G estándar y XG, así como sus límites frente a otra operación.',
+      'Quien revisa este guante consulta su piel tratada, corte gun, pulgar tipo ala y forro térmico de aramida. También confirma las tallas M/G estándar y XG, así como sus límites frente a otra operación.',
       'Envía por WhatsApp el número de pares, tallas y actividad que cubrirá la brigada. Con esos elementos se prepara una cotización que identifique el Firemax VI por GIS1008, construcción y estatus sin norma declarada.',
     ],
     ficha: [
-      'La ficha de Romak Fire Firemax VI identifica código GIS1008, piel tratada color oro, corte gun, pulgar tipo ala, forro térmico de aramida y puño tejido de Kevlar. El fabricante declara el modelo sin norma.',
+      'El registro técnico del guante identifica código GIS1008, piel tratada color oro, corte gun, pulgar tipo ala, forro térmico de aramida y puño tejido de Kevlar. El fabricante declara el modelo sin norma.',
       'Pide la especificación por escrito con tallas M/G estándar o XG antes de emitir la requisición. Así se cotejan refuerzos, costuras y código al recibir, sin presentar el estatus sin norma declarada como certificación.',
     ],
   },
@@ -77,15 +77,15 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Solicita por escrito código FPGS, talla unitalla, carnaza, forro SEF y puño elástico de Kevlar. Confirmar esos rasgos evita que un cambio de construcción se oculte bajo el mismo nombre durante la recepción.',
     ],
     faq: [
-      'Las preguntas de Sköld Guante de bombero FPGS aclaran carnaza de res, forro de modacrílico SEF, puño de Kevlar y banda elástica en muñeca, además de la prueba necesaria con boquilla, radio y manga estructural.',
+      'Durante la prueba del guante se revisan carnaza de res, forro de modacrílico SEF, puño de Kevlar y banda elástica en muñeca, además del uso con boquilla, radio y manga estructural de servicio.',
       'Para recibir respuesta por WhatsApp comparte cantidad y herramientas habituales. Con ese contexto se revisa el ajuste unitalla, la compatibilidad de puño y chaquetón, y la declaración del FPGS sin atribuirle certificación publicada.',
     ],
     ficha: [
-      'La especificación de Sköld Guante de bombero FPGS debe incluir código, carnaza de res de 1.5–1.7 mm, forro SEF, puño Kevlar y talla unitalla. Declara NFPA 1971 ed. 2013, OSHA y Cal-OSHA como declaración del fabricante.',
+      'La especificación del guante estructural debe incluir código, carnaza de res de 1.5–1.7 mm, forro SEF, puño Kevlar y talla unitalla para compra. El fabricante declara NFPA 1971 ed. 2013, OSHA y Cal-OSHA.',
       'Antes de cerrar la partida, solicita el documento aplicable por escrito con su configuración. Mantener código y declaración normativa en la orden permite verificar el guante entregado sin llamar certificado a un estatus declarado.',
     ],
     otros: [
-      'Sköld Guante de bombero FPGS comparte tipo estructural con Veridian Fire Pro II, pero se compara por carnaza, forro SEF, puño Kevlar y talla unitalla, no por el nombre de la categoría ni por una imagen similar.',
+      'Dentro del uso estructural, este guante se compara con Veridian Fire Pro II por carnaza, forro SEF, puño Kevlar y talla unitalla, no por el nombre de la categoría ni por una imagen similar.',
       'Contrasta ambos modelos con la manga, boquilla y tallas reales de la corporación. Solicita sus fichas por separado para conservar el estatus normativo propio de cada uno y elegir el que se adapte a la maniobra documentada.',
     ],
   },
@@ -95,15 +95,15 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'En la propuesta pide código GIS1017, tallas, cuero tratado, Pyrotec y puño reforzado con Nomex. Tener esos elementos por escrito hace verificable la construcción solicitada entre la muestra de prueba y la entrega.',
     ],
     faq: [
-      'Las dudas sobre Veridian Fire Pro II cubren cuero tratado, capas FR-modacrílico, Pyrotec y barrera hidrófuga química, así como el ajuste al cerrar la mano, tomar una boquilla y solapar el chaquetón estructural.',
+      'Al cerrar la mano durante una maniobra estructural de respuesta, se revisan las capas del guante: cuero tratado, FR-modacrílico, Pyrotec y barrera hidrófuga química, junto con el solape del chaquetón en servicio.',
       'Escribe por WhatsApp tallas, número de usuarios y equipo habitual. Esos datos permiten solicitar el Fire Pro II con sus barreras declaradas, puño de dos pulgadas reforzado con Nomex y prueba operativa.',
     ],
     ficha: [
-      'La ficha de Veridian Fire Pro II debe señalar GIS1017, cuero tratado, FR-modacrílico, Pyrotec y barrera hidrófuga químico-biológica en tres capas interiores. El fabricante lo declara certificado UL, con NFPA 1971-2018 listada por UL.',
+      'La ficha del guante estructural debe señalar GIS1017, cuero tratado, FR-modacrílico, Pyrotec y barrera hidrófuga químico-biológica en tres capas interiores. El fabricante lo declara certificado UL, con NFPA 1971-2018 listada por UL.',
       'Solicita la ficha escrita junto con tallas y condiciones de la partida. Al recibir, ese documento permite revisar código, puño reforzado y capas declaradas sin extender la certificación a un guante distinto.',
     ],
     otros: [
-      'Veridian Fire Pro II se compara con Sköld FPGS dentro del guante estructural, revisando cuero tratado, barreras interiores, forro SEF y ajuste. La familia común no elimina diferencias de modelo, talla, construcción o documentación.',
+      'Frente a Sköld FPGS, el guante se revisa en prueba operativa por cuero tratado, barreras interiores, forro SEF y ajuste. La familia estructural común no elimina diferencias de talla, construcción o documentación.',
       'Pide cotizaciones separadas y prueba cada alternativa con manga, radio y herramienta. Así la corporación puede elegir con el mismo criterio funcional y mantener en el expediente la declaración normativa correspondiente a cada configuración.',
     ],
   },
@@ -187,31 +187,31 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Define con anticipación el agente, tipo de costura, cierre, talla y disposición posterior. Probar el overol con guantes y botas permite comprobar movilidad y evita que una prenda para polvo se interprete como barrera para salpicadura.',
     ],
     comparativa: [
-      'Un overol químico desechable se retira tras uso o contaminación y se recibe por unidad, empaque y talla. El traje reutilizable exige inspección, limpieza y control de condición, por lo que el ciclo de servicio forma parte de la decisión.',
+      'Tras el uso o la contaminación, esta prenda Hazmat se retira y se recibe por unidad, empaque y talla. El traje reutilizable exige inspección, limpieza y control de condición, por lo que el ciclo de servicio forma parte de la decisión.',
       'Elige con base en barrera declarada, tarea y proceso de descontaminación, no sólo cantidad de usos. Registra si habrá exposición delimitada o programa de mantenimiento; esa información separa una compra por unidades de una prenda con historial.',
     ],
     errores: [
-      'Confundir un overol químico desechable con compatibilidad universal expone la operación a una barrera no evaluada. Partículas, salpicadura y contacto requieren construcciones distintas, por lo que costura y cierre deben figurar desde la solicitud.',
+      'Confundir una prenda Hazmat de uso único con compatibilidad universal expone la operación a una barrera no evaluada. Partículas, salpicadura y contacto requieren construcciones distintas, por lo que costura y cierre deben figurar desde la solicitud.',
       'Reutilizar una prenda por apariencia o ignorar el empaque compromete el control de condición. Pide talla, cantidad, disposición y agente previsto en la cotización para que recepción y retiro sigan un alcance definido.',
     ],
     faq: [
-      'Las dudas del overol químico desechable explican la diferencia entre barrera contra partículas y salpicadura, además de la función de costuras, cierre y talla. También resuelven por qué se planea el retiro y disposición antes del ingreso.',
+      'Antes del ingreso, la consulta Hazmat debe distinguir barrera contra partículas y salpicadura, además de la función de costuras, cierre y talla. También define por qué se planean el retiro y la disposición.',
       'Al escribir por WhatsApp, comparte tipo de exposición, agente, número de usuarios, tallas y si habrá botas o guantes compatibles. Con esos datos se identifica una configuración útil sin tratar todos los overoles como equivalentes.',
     ],
     ficha: [
-      'La especificación de overol químico desechable debe nombrar material de barrera, tipo de costura, cierre, capucha y rango de tallas. Incluye exposición prevista y condición de empaque para trasladar a la requisición lo que realmente define la prenda.',
+      'La especificación de la prenda Hazmat debe nombrar material de barrera, tipo de costura, cierre, capucha y rango de tallas. Incluye exposición prevista y condición de empaque para trasladar a la requisición lo que realmente define la prenda.',
       'Solicita la ficha por escrito y agrega instrucciones de retiro y disposición a la partida. Ese anexo permite contrastar el modelo contra la tarea delimitada sin convertir una descripción de uso único en una declaración de protección universal.',
     ],
     hermanas: [
-      'El overol químico desechable forma parte de una familia con botas químicas, guantes químicos, encapsulado nivel A y configuraciones químicas nivel B o nivel C. La prenda corporal no sustituye la protección de manos, pie ni respiración.',
+      'Dentro de la familia Hazmat, la prenda de uso único convive con botas químicas, guantes químicos, encapsulado nivel A y configuraciones nivel B o nivel C. La barrera corporal no sustituye manos, pie ni respiración durante la operación prevista y definida.',
       'Cotiza por pieza o mediante <a href="/trajes/hazmat/">equipo Hazmat</a> completo según la maniobra. Compartir agente, condiciones y tallas deja que el conjunto se configure con interfaces consistentes en vez de acumular artículos independientes sin evaluación previa.',
     ],
     incluye: [
-      'La compra de un overol químico desechable incluye la prenda con talla, barrera, costuras y cierre solicitados, además del empaque que corresponda. No incluye automáticamente guantes, botas, respirador ni el procedimiento de descontaminación y disposición.',
+      'La compra Hazmat incluye la prenda con talla, barrera, costuras y cierre solicitados, además del empaque que corresponda. No incluye automáticamente guantes, botas, respirador ni el procedimiento de descontaminación y disposición operativa.',
       'Distingue cada rubro al comparar cotizaciones para evitar alcances aparentes. Cuando el retiro controlado es parte de la tarea, debe quedar asignado en la operación y no suponerse incluido por el carácter desechable del overol.',
     ],
     relacionados: [
-      'El overol químico desechable se revisa junto con <a href="/trajes/hazmat/traje-nivel-c/">traje químico nivel C</a> y <a href="/trajes/hazmat/botas-quimicas/">botas químicas</a> para diferenciar barrera corporal, respiración y protección inferior. Esa lectura evita elegir por ciclo de uso únicamente.',
+      'Para distinguir barrera corporal, respiración y protección inferior, revisa esta prenda Hazmat junto con <a href="/trajes/hazmat/traje-nivel-c/">traje químico nivel C</a> y <a href="/trajes/hazmat/botas-quimicas/">botas químicas</a>. Esa lectura conjunta y operativa evita elegir por ciclo de uso únicamente.',
       'Consulta las fichas relacionadas antes de formalizar la compra. Comparar exposición, material, talla y descontaminación ayuda a decidir si la tarea permite una prenda de uso único o exige otra configuración de protección.',
     ],
   },
@@ -221,31 +221,31 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Describe la tarea, tiempo de aire, temperatura, movilidad y plan de descontaminación antes de solicitarlo. Esa información permite revisar cierre, visor, guantes, botas e interfaces, en lugar de tratar nivel A como respuesta automática a cualquier derrame.',
     ],
     comparativa: [
-      'El traje encapsulado nivel A protege el conjunto cuando el peligro de vapor requiere que el ERA quede dentro de la envolvente. Nivel B conserva el equipo de aire exterior y corresponde a salpicadura líquida evaluada, no a una versión menor del mismo riesgo.',
+      'Cuando el peligro de vapor exige que el ERA quede dentro de la envolvente, la configuración encapsulada protege el conjunto. Nivel B conserva el equipo de aire exterior y corresponde a salpicadura líquida evaluada, no a una versión menor del mismo riesgo.',
       'La variable decisiva es la exposición de vapor y la necesidad de encapsular respiración y arnés. Documenta agente, concentración, presión, temperatura y duración para que la decisión entre nivel A o nivel B tenga respaldo técnico.',
     ],
     errores: [
-      'Comprar traje encapsulado nivel A sin definir agente, concentración o tabla de compatibilidad puede producir una barrera inadecuada. El encapsulado no elimina la necesidad de revisar visor, guantes, botas, cierres y tiempo de aire para la maniobra.',
+      'Comprar una configuración encapsulada sin definir agente, concentración o tabla de compatibilidad puede producir una barrera inadecuada. El encapsulado no elimina la necesidad de revisar visor, guantes, botas, cierres y tiempo de aire para la maniobra.',
       'Olvidar la descontaminación y el plan de salida convierte una compra en protección incompleta. Solicita interfaces, talla y secuencia de retiro por escrito para que el equipo se pueda usar sin contaminar ERA, usuario o zona limpia.',
     ],
     faq: [
-      'Las dudas sobre traje encapsulado nivel A explican cuándo el ERA va dentro de la prenda, cómo se distingue de nivel B y por qué la compatibilidad depende de agente y condiciones. También abordan talla, movilidad, descontaminación y retiro asistido.',
+      'La consulta técnica Hazmat explica cuándo el ERA va dentro de la prenda, cómo se distingue de nivel B y por qué la compatibilidad depende de agente y condiciones. También aborda talla, movilidad, descontaminación y retiro asistido.',
       'Manda por WhatsApp sustancia, concentración, tipo de vapor, tarea, tallas y equipo respiratorio disponible. Esos datos permiten discutir una configuración realista y documentar lo que debe confirmarse antes de ingresar a una zona peligrosa.',
     ],
     ficha: [
-      'La ficha de traje encapsulado nivel A debe registrar barrera declarada, nivel A según análisis de riesgo, visor, cierre, interfaces de guantes y botas, además de ERA interior. La referencia publicada es NFPA 1990, edición 2022.',
+      'La ficha Hazmat debe registrar barrera declarada, nivel A según análisis de riesgo, visor, cierre, interfaces de guantes y botas, además de ERA interior. La referencia publicada es NFPA 1990, edición 2022.',
       'Copia a la requisición sustancia, concentración, exposición y tallas, y pide el documento técnico por escrito. Así se valida la configuración concreta del fabricante sin asumir compatibilidad de un material frente a otro agente.',
     ],
     hermanas: [
-      'El traje encapsulado nivel A se complementa con botas químicas, guantes químicos, overol desechable y las soluciones nivel B o nivel C. Son piezas de la familia Hazmat, pero su selección cambia con vapor, salpicadura y respiración requerida.',
+      'La selección encapsulada se complementa con botas químicas, guantes químicos, overol desechable y soluciones nivel B o nivel C. Son piezas de la familia Hazmat que cambian con vapor, salpicadura y respiración requerida en cada maniobra planificada previamente.',
       'Solicita cada componente o el <a href="/trajes/hazmat/">equipo Hazmat</a> completo con el análisis de riesgo. La cotización puede entonces definir talla, material e interfaces sin confundir distintas categorías de protección química durante la selección operativa.',
     ],
     incluye: [
-      'La configuración de traje encapsulado nivel A incluye prenda química, visor, cierre e interfaces especificadas para guantes y botas. No comprende por defecto ERA, aire de reserva, descontaminación operativa ni una tabla de compatibilidad para un agente no declarado.',
+      'La configuración Hazmat incluye prenda química, visor, cierre e interfaces especificadas para guantes y botas. No comprende por defecto ERA, aire de reserva, descontaminación operativa ni una tabla de compatibilidad para un agente no declarado.',
       'Pide que esos límites aparezcan por separado en la cotización. Distinguir prenda, respiración y procedimiento permite comparar propuestas sin suponer que el encapsulado cubre todos los recursos necesarios para la entrada y salida controladas.',
     ],
     relacionados: [
-      'Antes de decidir un traje encapsulado nivel A revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/guantes-quimicos/">guantes químicos</a>. La comparación aclara qué exposición exige encapsular el ERA y qué material debe proteger las manos.',
+      'Antes de decidir una configuración encapsulada Hazmat revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/guantes-quimicos/">guantes químicos</a>. La comparación técnica de riesgo aclara qué exposición exige encapsular el ERA y qué material debe proteger las manos.',
       'Reúne las fichas de ambos elementos con el análisis de atmósfera. Esa revisión conecta barrera corporal, respiración y destreza, y evita sustituir el criterio de vapor por una elección basada en el nombre del nivel.',
     ],
   },
@@ -255,31 +255,31 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'Antes de solicitarlo, prueba el conjunto con arnés, válvulas, guantes y botas. Esa revisión operativa confirma que la persona puede moverse y retirar el equipo, sin asumir que una prenda resistente a líquido resolverá exposición a vapor.',
     ],
     comparativa: [
-      'El traje químico nivel B usa ERA exterior para una atmósfera que puede ser peligrosa al respirar y una barrera para salpicadura. Nivel C sólo procede con contaminante conocido, monitoreo y respirador purificador dentro de sus condiciones aplicables.',
+      'Con ERA exterior, esta configuración Hazmat atiende una atmósfera que puede ser peligrosa al respirar y una barrera para salpicadura. Nivel C sólo procede con contaminante conocido, monitoreo y respirador purificador dentro de sus condiciones aplicables.',
       'La autonomía respiratoria y la información sobre el ambiente deciden la elección. Registra monitoreo, agente, concentración y posibilidad de oxígeno deficiente; si faltan esas condiciones, no se debe reducir la configuración a nivel C.',
     ],
     errores: [
-      'Usar traje químico nivel B ante vapor sin evaluación deja el ERA fuera de la envolvente cuando el riesgo puede demandar encapsulado. Comprar sin concentración también falla, porque un mismo agente cambia su comportamiento con temperatura y condiciones de exposición.',
+      'Ante vapor sin evaluación, usar esta configuración Hazmat deja el ERA fuera de la envolvente cuando el riesgo puede demandar encapsulado. Comprar sin concentración también falla, porque un mismo agente cambia con temperatura y condiciones de exposición.',
       'No definir botas y guantes abre rutas de entrada en extremidades. Especifica traslapes, material, tallas y descontaminación junto con la prenda para que la partida responda a salpicadura líquida y no sólo a una categoría escrita.',
     ],
     faq: [
-      'Las dudas del traje químico nivel B explican la diferencia con nivel A, el uso de ERA exterior y la necesidad de confirmar compatibilidad por sustancia. También aclaran que no protege automáticamente contra fuego ni frente a cualquier líquido.',
+      'La revisión Hazmat de nivel B explica la diferencia con nivel A, el uso de ERA exterior y la necesidad de confirmar compatibilidad por sustancia. También aclara que no protege automáticamente contra fuego ni frente a cualquier líquido.',
       'Envía por WhatsApp el agente, concentración, presión, temperatura, tarea y equipo de aire. Con esos datos se puede revisar si la barrera, el traslape y la respiración propuestos corresponden a la exposición descrita.',
     ],
     ficha: [
-      'La ficha de traje químico nivel B consigna nivel B conforme al análisis de riesgo, ERA exterior y referencia NFPA 1990, edición 2022. Para compra se documentan sustancia, concentración, salpicadura, temperatura, duración y material de barrera declarado.',
+      'La ficha Hazmat consigna nivel B conforme al análisis de riesgo, ERA exterior y referencia NFPA 1990, edición 2022. Para compra se documentan sustancia, concentración, salpicadura, temperatura, duración y material de barrera declarado.',
       'Pide el anexo técnico por escrito y agrega interfaces solicitadas para guantes y botas. Esa información permite cotejar la configuración real del fabricante y no asumir equivalencias entre materiales o entre condiciones de contacto líquido.',
     ],
     hermanas: [
-      'El traje químico nivel B convive con encapsulado nivel A, traje nivel C, overol químico desechable, guantes químicos y botas químicas. La familia cubre distintos escenarios, y cada pieza se decide por atmósfera, agente y forma de exposición.',
+      'Dentro de Hazmat, nivel B convive con encapsulado nivel A, traje nivel C, overol químico desechable, guantes químicos y botas químicas. La familia cubre escenarios distintos y cada pieza se decide por atmósfera, agente y exposición.',
       'Se puede cotizar por componentes o como <a href="/trajes/hazmat/">equipo Hazmat</a>. Presenta el análisis de riesgo al pedir propuesta para que respiración, prenda y extremidades queden especificadas con una misma lógica operativa para el escenario previsto.',
     ],
     incluye: [
-      'La oferta de traje químico nivel B incluye prenda configurada para el nivel, interfaces solicitadas y ficha técnica de material. ERA, cartuchos o respirador purificador y descontaminación operativa se cotizan aparte, porque no forman parte automática de la prenda.',
+      'La oferta Hazmat incluye prenda configurada para el nivel, interfaces solicitadas y ficha técnica de material. ERA, cartuchos o respirador purificador y descontaminación operativa se cotizan aparte, porque no forman parte automática de la prenda.',
       'Identifica cada alcance en el cuadro de partidas antes de comparar proveedores. Esa separación muestra qué necesita adquirir la organización para montar el conjunto con aire autónomo y una salida de zona controlada.',
     ],
     relacionados: [
-      'Quien evalúa traje químico nivel B debe contrastarlo con <a href="/trajes/hazmat/traje-encapsulado-nivel-a/">traje encapsulado nivel A</a> y <a href="/trajes/hazmat/botas-quimicas/">botas químicas</a>. El primer destino aclara el umbral de vapor; el segundo completa la interfaz inferior frente a salpicadura.',
+      'Quien evalúa nivel B Hazmat debe contrastarlo con <a href="/trajes/hazmat/traje-encapsulado-nivel-a/">traje encapsulado nivel A</a> y <a href="/trajes/hazmat/botas-quimicas/">botas químicas</a>. El primer destino aclara el umbral de vapor; el segundo completa la interfaz inferior frente a salpicadura.',
       'Revisa esos documentos durante la preparación de la orden. La comparación relaciona respiración, barrera corporal y pie con las condiciones del agente, en vez de elegir cada rubro sin considerar el sistema completo.',
     ],
   },
@@ -289,31 +289,31 @@ export const DUO_P_G: Record<string, Record<string, Duo>> = {
       'La orden debe registrar agente, concentración, lectura ambiental, tarea y ajuste facial. Probar válvulas, herramientas y traslapes con guantes y botas permite comprobar la configuración antes de depender de una prenda durante la operación.',
     ],
     comparativa: [
-      'El traje químico nivel C depende de contaminante conocido, monitoreo continuo y respirador purificador compatible. Nivel B incorpora ERA exterior para una atmósfera que puede ser peligrosa al respirar, por lo que ofrece independencia del aire ambiente.',
+      'Con contaminante conocido, monitoreo continuo y respirador purificador compatible, nivel C Hazmat puede ser pertinente. Nivel B incorpora ERA exterior para una atmósfera peligrosa al respirar y ofrece independencia del aire ambiente.',
       'La elección se decide por información disponible, oxígeno y alcance del respirador. Si la concentración es desconocida, falta monitoreo o el ambiente es deficiente en oxígeno, nivel C deja de corresponder aunque la prenda parezca suficiente.',
     ],
     errores: [
-      'Pedir traje químico nivel C sin identificar contaminante o cartucho compatible elimina la base de la configuración. El respirador purificador no se selecciona por costumbre y requiere monitoreo continuo, ajuste facial y una condición definida para salir.',
+      'Pedir nivel C Hazmat sin identificar contaminante o cartucho compatible elimina la base de la configuración. El respirador purificador no se selecciona por costumbre y requiere monitoreo continuo, ajuste facial y una condición definida para salir.',
       'Ignorar la compatibilidad de guantes, botas y barrera corporal crea un conjunto discontinuo. Describe agente, concentración, movimiento y secuencia de descontaminación en la solicitud para que cada interfaz se revise antes de la compra.',
     ],
     faq: [
-      'Las preguntas de traje químico nivel C resuelven cuándo se permite respirador purificador, por qué el contaminante debe ser conocido y cómo se diferencia de nivel B. También cubren monitoreo, cartuchos, sello facial, retirada y descontaminación.',
+      'Antes de elegir respirador purificador, la consulta Hazmat aclara por qué el contaminante debe ser conocido y cómo se diferencia nivel C de nivel B. También cubre monitoreo, cartuchos, sello facial, retirada y descontaminación.',
       'Para consultar por WhatsApp comparte sustancia, concentración, medición ambiental, tarea, tallas y respirador disponible. Esa información permite valorar la configuración y no convertir una categoría condicionada en respuesta automática ante cualquier atmósfera.',
     ],
     ficha: [
-      'La ficha de traje químico nivel C debe señalar contaminante identificado, monitoreo continuo, respirador purificador con cartucho compatible y referencia NFPA 1990, edición 2022. Incluye material de barrera, talla, guantes, botas y criterio de salida.',
+      'La ficha Hazmat debe señalar contaminante identificado, monitoreo continuo, respirador purificador con cartucho compatible y referencia NFPA 1990, edición 2022. Incluye material de barrera, talla, guantes, botas y criterio de salida seguro.',
       'Pide la especificación escrita con las condiciones de atmósfera y ajuste facial. Llevar esos datos al anexo técnico evita que el modelo se compre sin la información que determina si el respirador puede operar dentro de su alcance.',
     ],
     hermanas: [
-      'El traje químico nivel C se relaciona con traje nivel B, encapsulado nivel A, overol desechable, botas químicas y guantes químicos. No son sustitutos directos: cada opción cambia de acuerdo con aire ambiente, barrera y tarea concreta.',
+      'Nivel C Hazmat se relaciona con traje nivel B, encapsulado nivel A, overol desechable, botas químicas y guantes químicos. No son sustitutos directos: cada opción cambia de acuerdo con aire ambiente, barrera y tarea concreta evaluada previamente.',
       'Cotiza partes independientes o el <a href="/trajes/hazmat/">equipo Hazmat</a> completo después de compartir monitoreo y agente. Así el conjunto puede incluir cartuchos, puños y calzado con criterios compatibles para la entrada planeada y su retiro posterior.',
     ],
     incluye: [
-      'La configuración de traje químico nivel C incluye prenda de barrera, interfaces solicitadas y ficha del material para el escenario documentado. No incluye automáticamente respirador purificador, cartuchos, prueba de ajuste ni procedimiento de descontaminación operativa.',
+      'La configuración Hazmat incluye prenda de barrera, interfaces solicitadas y ficha del material para el escenario documentado de la tarea. No incluye automáticamente respirador purificador, cartuchos, prueba de ajuste ni procedimiento de descontaminación operativa.',
       'Desglosa esos elementos en la cotización para comparar alcance y responsabilidades. Distinguir ropa, respiración y control de uso ayuda a evitar que una propuesta omita recursos indispensables para una tarea condicionada por monitoreo.',
     ],
     relacionados: [
-      'Al especificar traje químico nivel C revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/overol-quimico-desechable/">overol químico desechable</a>. La primera comparación define autonomía respiratoria; la segunda separa ciclo de uso y tipo de barrera corporal.',
+      'Al especificar nivel C Hazmat revisa <a href="/trajes/hazmat/traje-nivel-b/">traje químico nivel B</a> y <a href="/trajes/hazmat/overol-quimico-desechable/">overol químico desechable</a>. La primera comparación técnica define autonomía respiratoria; la segunda separa ciclo de uso y tipo de barrera corporal evaluada.',
       'Incluye esas referencias al preparar el expediente. Contrastar atmósfera, descontaminación y material permite justificar la categoría elegida con información de operación, no con una similitud visual entre prendas o con una costumbre de compra.',
     ],
   },
