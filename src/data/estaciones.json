@@ -7294,16 +7294,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación Municipal de Protección Civil y Bomberos de Amecameca",
   "rolEstacion": "unica",
-  "direccion": "Calle Ayapango, Col. Panohaya, C.P. 56900",
+  "direccion": "Paseo de los Volcanes s/n, Unidad Deportiva, Amecameca",
   "coordenadas": {
    "lat": 19.13146334,
    "lng": -98.77653069,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(597) 978-4099",
-  "telefonosAdicionales": [
-   "(597) 978-1793"
-  ],
+  "telefono": "(597) 978-1793",
   "sitioWeb": "https://amecameca.gob.mx/proteccion-civil/",
   "servicios": [
    "incendios-estructurales",
@@ -7322,6 +7319,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2127506"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7509,7 +7510,7 @@
    "lng": -98.7392,
    "precision": "aproximada"
   },
-  "telefono": "(597) 688-2442",
+  "telefono": "(597) 976-2417",
   "email": "dir.proteccioncivil@atlautla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -7519,11 +7520,16 @@
    {
     "nombre": "alertas.edomex.gob.mx — Atlautla",
     "url": "https://alertas.edomex.gob.mx/inicio/unidad-municipal-pc/coordinacion-de-proteccion-civil-atlautla/"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "alta",
-  "municipioSlug": "atlautla"
+  "municipioSlug": "atlautla",
+  "direccion": "Calle Veracruz s/n, Col. Centro, Barrio San Jacinto, Atlautla"
  },
  {
   "id": "mex-07",
@@ -7617,16 +7623,13 @@
   "tipo": "Municipal",
   "corporacion": "Dirección General de Protección Civil y Bomberos de Chimalhuacán",
   "rolEstacion": "unica",
-  "direccion": "Calle Malinalli, Col. Alfareros, C.P. 56363",
+  "direccion": "Calle Anáhuacatl No. 3, Barrio Alfarero, Chimalhuacán",
   "coordenadas": {
    "lat": 19.42696329,
    "lng": -98.96579073,
    "precision": "aproximada"
   },
-  "telefono": "(55) 9208-6317",
-  "telefonosAdicionales": [
-   "(55) 9208-6318"
-  ],
+  "telefono": "(55) 9208-6319",
   "sitioWeb": "https://chimalhuacan.gob.mx/proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -7645,6 +7648,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=11844661"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -7710,13 +7717,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación Municipal de Protección Civil y Bomberos de Cuautitlán Izcalli",
   "rolEstacion": "unica",
-  "direccion": "Calle Bosques de Bolognia, Col. Bosques del Lago Sector 1, C.P. 54766",
+  "direccion": "Av. Transformación esq. Calle Luis Pasteur, Parque Industrial Cuamatla, Cuautitlán Izcalli",
   "coordenadas": {
    "lat": 19.6187441,
    "lng": -99.23780264,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 2620-1909",
+  "telefono": "(55) 5870-1783",
   "sitioWeb": "https://cuautitlanizcalli.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -7736,6 +7743,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=1988591"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8158,10 +8169,7 @@
    "lng": -99.7641,
    "precision": "aproximada"
   },
-  "telefono": "(712) 283-0052",
-  "telefonosAdicionales": [
-   "(712) 283-3060"
-  ],
+  "telefono": "(712) 283-3060",
   "email": "proteccion_civil@ixtlahuaca.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8176,11 +8184,16 @@
    {
     "nombre": "Directorio CGPC EDOMEX 2024",
     "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "alta",
-  "municipioSlug": "ixtlahuaca"
+  "municipioSlug": "ixtlahuaca",
+  "direccion": "Avenida de la Mujer s/n, Ixtlahuaca"
  },
  {
   "id": "mex-41",
@@ -8198,7 +8211,7 @@
    "lng": -99.7286,
    "precision": "aproximada"
   },
-  "telefono": "(55) 4911-6262",
+  "telefono": "(761) 734-2360",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -8212,11 +8225,16 @@
    {
     "nombre": "Directorio CGPC EDOMEX 2024",
     "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-06",
   "confianza": "media",
-  "municipioSlug": "jilotepec"
+  "municipioSlug": "jilotepec",
+  "direccion": "Libramiento Antonio Huitrón s/n (atrás del Hospital General), Jilotepec"
  },
  {
   "id": "mex-20",
@@ -8232,9 +8250,9 @@
   "coordenadas": {
    "lat": 19.35520296,
    "lng": -98.96541791,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5857-2028",
+  "telefono": "(55) 5857-0990",
   "email": "proteccioncivil@losreyeslapaz.gob.mx",
   "sitioWeb": "https://lapaz.gob.mx",
   "servicios": [
@@ -8254,11 +8272,16 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2140593"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
   "confianza": "alta",
-  "municipioSlug": "la-paz"
+  "municipioSlug": "la-paz",
+  "direccion": "Carretera México–Texcoco km 19.5, Col. Coaxuaco, La Paz"
  },
  {
   "id": "mex-05",
@@ -8341,7 +8364,7 @@
    },
    {
     "nombre": "metepec.gob.mx — verificadores PC",
-    "url": "https://metepec.gob.mx/verificadores/protciv.php"
+    "retirada": "https://metepec.gob.mx/verificadores/protciv.php"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -8351,43 +8374,6 @@
   "verificadoEl": "2026-09",
   "confianza": "alta",
   "municipioSlug": "metepec"
- },
- {
-  "id": "mex-50",
-  "nombre": "Bomberos Naucalpan — Estación Los Arcos",
-  "slug": "bomberos-naucalpan-estacion-los-arcos",
-  "estado": "estado-de-mexico",
-  "estadoNombre": "Estado de México",
-  "ciudad": "Naucalpan de Juárez",
-  "municipio": "Naucalpan de Juárez",
-  "tipo": "Municipal",
-  "corporacion": "Coordinación Municipal de Gestión Integral de Riesgos, Protección Civil y Bomberos de Naucalpan de Juárez",
-  "rolEstacion": "subestacion",
-  "numeroEstacion": "Estación Los Arcos",
-  "direccion": "Av. los Arcos, Col. Padre Figueroa, C.P. 53410",
-  "coordenadas": {
-   "lat": 19.47323855,
-   "lng": -99.24343139,
-   "precision": "exacta"
-  },
-  "servicios": [
-   "incendios-estructurales",
-   "rescate-vehicular",
-   "atencion-prehospitalaria"
-  ],
-  "fuentes": [
-   {
-    "nombre": "naucalpan.gob.mx",
-    "url": "https://www.naucalpan.gob.mx/"
-   },
-   {
-    "nombre": "DENUE — INEGI",
-    "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2043211"
-   }
-  ],
-  "verificadoEl": "2026-09",
-  "confianza": "media",
-  "municipioSlug": "naucalpan-de-juarez"
  },
  {
   "id": "mex-48",
@@ -8476,17 +8462,13 @@
   "corporacion": "Coordinación Municipal de Gestión Integral de Riesgos, Protección Civil y Bomberos de Naucalpan de Juárez",
   "rolEstacion": "central",
   "numeroEstacion": "Cuartel Central",
-  "direccion": "Av. de las Granjas 243, Col. El Chamizal, C.P. 53770",
+  "direccion": "Av. de los Arcos No. 30, Col. Padre Figueroa, Naucalpan de Juárez",
   "coordenadas": {
    "lat": 19.44516217,
    "lng": -99.24831804,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5373-1122",
-  "telefonosAdicionales": [
-   "(55) 5560-3868",
-   "(55) 5560-5989"
-  ],
+  "telefono": "(55) 5560-5989",
   "sitioWeb": "https://naucalpan.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8508,6 +8490,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2081646"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8722,13 +8708,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación de Protección Civil y Bomberos de Tecámac",
   "rolEstacion": "unica",
-  "direccion": "Av. Mexiquense, Col. Los Héroes Sección Bosques, C.P. 55764",
+  "direccion": "Carretera Federal México–Pachuca km 36.5, Ex Hacienda La Joya, Tecámac",
   "coordenadas": {
    "lat": 19.63305709,
    "lng": -99.02959873,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5936-1060",
+  "telefono": "(55) 2120-2726",
   "email": "proteccioncivil@tecamac.gob.mx",
   "sitioWeb": "https://tecamac.gob.mx/",
   "servicios": [
@@ -8752,7 +8738,12 @@
   ],
   "verificadoEl": "2026-09",
   "confianza": "alta",
-  "municipioSlug": "tecamac"
+  "municipioSlug": "tecamac",
+  "telefonosAdicionales": [
+   "(55) 5938-8888",
+   "(55) 5936-4591",
+   "(55) 5936-1446"
+  ]
  },
  {
   "id": "mex-42",
@@ -8799,15 +8790,15 @@
   "tipo": "Municipal",
   "corporacion": "Dirección de Protección Civil y Bomberos de Tenancingo",
   "rolEstacion": "unica",
-  "direccion": "Calle Benito Juarez 211, Col. Tenancingo, C.P. 52400",
+  "direccion": "Calle Juárez Poniente No. 211, Tenancingo",
   "coordenadas": {
    "lat": 18.95776501,
    "lng": -99.59451756,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(719) 265-0384",
+  "telefono": "(714) 103-0877",
   "telefonosAdicionales": [
-   "(719) 261-6739"
+   "(714) 142-5732"
   ],
   "servicios": [
    "incendios-estructurales",
@@ -8826,6 +8817,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2550409"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -8843,13 +8838,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación de Protección Civil y Bomberos de Tepotzotlán",
   "rolEstacion": "unica",
-  "direccion": "Blvd. Libramiento Sur, Col. Texcacoac, C.P. 54605",
+  "direccion": "Avenida del Trabajo No. 2-A esq. Libramiento Sur, Barrio Texcacoa, Tepotzotlán",
   "coordenadas": {
    "lat": 19.70505922,
    "lng": -99.22086695,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 8764-8848",
+  "telefono": "(55) 5876-3838",
   "sitioWeb": "https://www.tepotzotlan.gob.mx/tramite-s-proteccioncivil",
   "servicios": [
    "incendios-estructurales",
@@ -8868,11 +8863,18 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2473190"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
   "confianza": "alta",
-  "municipioSlug": "tepotzotlan"
+  "municipioSlug": "tepotzotlan",
+  "telefonosAdicionales": [
+   "(55) 5876-0120"
+  ]
  },
  {
   "id": "mex-26",
@@ -8935,16 +8937,13 @@
   "tipo": "Municipal",
   "corporacion": "Dirección Municipal de Protección Civil, Bomberos y Gestión Integral de Riesgos de Tlalnepantla de Baz",
   "rolEstacion": "unica",
-  "direccion": "Andador Camilo Cienfuegos, Col. Unidad Habitacional el Rosario Ii, C.P. 54090",
+  "direccion": "Av. Hidalgo esq. Calle Zumpango s/n, Col. Centro, Tlalnepantla de Baz",
   "coordenadas": {
    "lat": 19.51114146,
    "lng": -99.1794126,
    "precision": "aproximada"
   },
-  "telefono": "(55) 5088-2725",
-  "telefonosAdicionales": [
-   "(55) 5366-4450"
-  ],
+  "telefono": "(55) 5390-6548",
   "sitioWeb": "https://portal.tlalnepantla.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -8965,6 +8964,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=10109559"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
@@ -9017,17 +9020,13 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación Municipal de Protección Civil y Bomberos de Toluca",
   "rolEstacion": "unica",
-  "direccion": "Calle 28 de Octubre, Col. San Sebastián y Vértice, C.P. 50150",
+  "direccion": "Av. Paseo Fidel Velázquez s/n, Toluca",
   "coordenadas": {
    "lat": 19.28725929,
    "lng": -99.63714314,
    "precision": "aproximada"
   },
-  "telefono": "(722) 217-8858",
-  "telefonosAdicionales": [
-   "(722) 217-8323",
-   "(722) 212-0909"
-  ],
+  "telefono": "(722) 212-0909",
   "email": "proteccion.civil@toluca.gob.mx",
   "sitioWeb": "https://www2.toluca.gob.mx",
   "servicios": [
@@ -9297,7 +9296,7 @@
    },
    {
     "nombre": "umamexico.com — incendios Valle de Bravo 2025",
-    "url": "https://umamexico.com/incendios-2025-en-valle-de-bravo-y-el-fondo-ciudadano-en-apoyo-a-brigadistas-forestales/"
+    "retirada": "https://umamexico.com/incendios-2025-en-valle-de-bravo-y-el-fondo-ciudadano-en-apoyo-a-brigadistas-forestales/"
    },
    {
     "nombre": "DENUE — INEGI",
@@ -9319,13 +9318,13 @@
   "tipo": "Municipal",
   "corporacion": "Protección Civil y H. Cuerpo de Bomberos de Valle de Chalco Solidaridad",
   "rolEstacion": "unica",
-  "direccion": "Av. Tezozomoc, Col. San Miguel Xico Segunda Sección, C.P. 56617",
+  "direccion": "Tezozómoc s/n casi esq. Av. López Mateos, Col. San Miguel Xico II, Valle de Chalco Solidaridad",
   "coordenadas": {
    "lat": 19.27622523,
    "lng": -98.93478259,
-   "precision": "exacta"
+   "precision": "aproximada"
   },
-  "telefono": "(55) 5971-1177",
+  "telefono": "(55) 5971-4060",
   "email": "bomberos@valledechalco.gob.mx",
   "sitioWeb": "https://valledechalco.gob.mx/dependencia.php?id_direccion=6",
   "servicios": [
@@ -9341,6 +9340,10 @@
    {
     "nombre": "DENUE — INEGI",
     "url": "https://www.inegi.org.mx/app/mapa/denue/default.aspx?id=2368041"
+   },
+   {
+    "nombre": "cgproteccioncivil.edomex.gob.mx — Directorio de Unidades Municipales de PC",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/Que%20ofrecemos%202025/DIR-U-MUNICPALES/DIRECTORIO-JUNIO2025.pdf"
    }
   ],
   "verificadoEl": "2026-09",
