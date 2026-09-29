@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio registra 5 estaciones de bomberos en San Luis Potosí, una por cada uno de 5 municipios. Sus fichas reúnen corporación, ubicación y fuente pública para consultar bomberos en San Luis Potosí con claridad sobre el alcance del registro.",
+ "descRight": [
+  "La relación publicada en San Luis Potosí reúne 4 corporaciones de voluntarios y una estación aeroportuaria. No hay centrales ni subestaciones identificadas. Ciudad Valles, Matehuala, Rioverde, San Luis Potosí y Soledad de Graciano Sánchez cuentan con una ficha cada uno, una cobertura registrada todavía acotada.",
+  "El directorio permite entrar por municipio y revisar la información de cada estación. Hay teléfono en 4 fichas, dirección en 4 y ubicación exacta en 4. La cifra puede crecer al confirmar nuevas estaciones con fuente pública; cada campo conserva la precisión que permite su respaldo. Ante cualquier urgencia, el número de atención es 911."
+ ],
+ "municipiosDuo": [
+  "No existe una concentración municipal dentro de este registro: Ciudad Valles, Matehuala, Rioverde, San Luis Potosí y Soledad de Graciano Sánchez tienen una estación cada uno. Para consultar bomberos en San Luis Potosí, el índice muestra la ficha metropolitana como una referencia individual del municipio.",
+  "La distribución de 5 fichas en 5 municipios refleja un alcance puntual, no un inventario exhaustivo de bomberos en San Luis Potosí. Cada localidad se presenta en el índice con su resultado propio, lo que facilita confirmar nombre de corporación y datos disponibles antes de realizar una consulta."
+ ],
+ "estacionesDuo": [
+  "Las fichas separan corporaciones de voluntarios y servicio aeroportuario, sin centrales ni subestaciones registradas. Incluyen dirección, teléfono con fuente y ubicación exacta o aproximada cuando existen. El Heroico Cuerpo de Bomberos de Ciudad Valles y el Cuerpo de Bomberos Voluntarios de Matehuala aparecen entre las referencias.",
+  "La lectura recomendada parte de municipio y corporación, y después continúa con los campos de contacto y mapa. El Honorable Cuerpo de Bomberos Metropolitanos de San Luis Potosí y el SSEI Aeropuerto Internacional Ponciano Arriaga responden a tipos de operación distintos, identificados en su ficha."
+ ],
+ "coberturaDuo": [
+  "Atención prehospitalaria aparece en las 5 estaciones registradas de San Luis Potosí. Incendios estructurales y rescate vehicular se declaran en 4 fichas cada uno. Hay 4 teléfonos con fuente, 4 direcciones y 4 ubicaciones exactas, una diferencia importante frente al total publicado.",
+  "Incendios forestales y rescate acuático se mencionan en 2 casos. Rescate en altura, espacios confinados, materiales peligrosos y salvamento aeroportuario aparecen en una ficha cada uno. Revisa el servicio declarado por estación, pues el directorio no asigna capacidades generales a toda la red."
+ ],
+ "equipoDuo": [
+  "La presencia de atención prehospitalaria, incendios estructurales y rescate vehicular en San Luis Potosí orienta el equipo hacia protección térmica y extricación. <a href=\"/trajes/estructural/\">Trajes estructurales para bomberos</a> son una referencia para incendios, mientras el trabajo forestal requiere prendas específicas.",
+  "Por los servicios de rescate acuático, materiales peligrosos y salvamento aeroportuario, cada compra debe partir del riesgo real y la labor prevista. Revisa también <a href=\"/trajes/forestal/\">trajes forestales</a>. Cotizamos con ficha técnica, factura CFDI 4.0, sin compra mínima y envío a San Luis Potosí."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en San Luis Potosí?",
+   "a": "El directorio registra 5 estaciones de bomberos en San Luis Potosí, ubicadas en 5 municipios. Es una cobertura limitada a fichas confirmadas con fuente pública, no una lista total del estado; aumentará conforme se validen nuevas estaciones y sus referencias."
+  },
+  {
+   "q": "¿En qué municipios hay bomberos en San Luis Potosí?",
+   "a": "El registro tiene una estación en Ciudad Valles, Matehuala, Rioverde, San Luis Potosí y Soledad de Graciano Sánchez. Para ubicar bomberos en San Luis Potosí, consulta la ficha del Honorable Cuerpo de Bomberos Metropolitanos y revisa los datos publicados para esa referencia."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en San Luis Potosí?",
+   "a": "La guía incluye 4 corporaciones de voluntarios y una estación aeroportuaria. No registra centrales ni subestaciones. Esta clasificación permite distinguir el carácter de cada ficha, como los cuerpos voluntarios municipales y el servicio especializado del aeropuerto."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en San Luis Potosí?",
+   "a": "Para pedir ayuda en una emergencia en San Luis Potosí, marca 911. Los números mostrados en fichas son para trámites, visitas, capacitación o donaciones cuando cuentan con fuente pública y no reemplazan la vía de atención urgente."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en San Luis Potosí?",
+   "a": "Para bomberos en San Luis Potosí cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Podemos orientar el equipo a incendios estructurales, rescate vehicular, incendios forestales, materiales peligrosos o actividad aeroportuaria."
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio registra 5 estaciones de bomberos en Zacatecas, distribuidas en 4 municipios. Cada ficha reúne ubicación, corporación, tipo de servicio y fuente disponible, para encontrar bomberos en Zacatecas con referencias verificables.",
+ "descRight": [
+  "Las fichas de Zacatecas reúnen 2 estaciones municipales, 1 aeroportuaria, 1 estatal y 1 de PEMEX. No hay centrales ni subestaciones clasificadas. Zacatecas concentra 2 registros, mientras Calera, Fresnillo y Guadalupe cuentan con 1 cada uno, todos como sedes únicas.",
+  "Usa el índice municipal y el mapa para distinguir cada ubicación. El teléfono aparece solo cuando la fuente lo permite. Si existe una emergencia, marca 911; los contactos de ficha están destinados a trámites, visitas, capacitación o donaciones y no reemplazan la solicitud de auxilio."
+ ],
+ "municipiosDuo": [
+  "Zacatecas es el municipio con mayor concentración: 2 estaciones registradas, una municipal y una de PEMEX. Para ubicar bomberos en Zacatecas, el índice permite separar ambas corporaciones y revisar cuál corresponde a la consulta que se necesita realizar.",
+  "Calera, Fresnillo y Guadalupe tienen 1 ficha cada uno. La cobertura publicada abarca 4 municipios con 5 referencias; nuevas estaciones pueden sumarse cuando sus datos sean confirmados con fuente pública. El directorio no afirma que esta relación agote los servicios del estado."
+ ],
+ "estacionesDuo": [
+  "Cada ficha señala si la corporación es municipal, estatal, aeroportuaria o de PEMEX y la identifica como sede única. Entre los registros están la Coordinación Municipal de Protección Civil y Bomberos de Fresnillo y la Coordinación Estatal de Protección Civil — Bomberos de Zacatecas.",
+  "Dirección, teléfono y ubicación exacta se muestran cuando existe soporte de fuente; de otro modo, la referencia puede ser aproximada. Esta distinción ayuda a organizar una visita o trámite con bomberos en Zacatecas y evita usar información administrativa para una emergencia."
+ ],
+ "coberturaDuo": [
+  "La atención prehospitalaria está declarada en 5 fichas. Incendios estructurales y materiales peligrosos aparecen en 4, mientras rescate vehicular figura en 3. También hay 1 referencia de salvamento aeroportuario y 1 de incendios forestales, vinculadas a servicios específicos.",
+  "De las 5 estaciones registradas, 3 tienen teléfono con fuente, 2 incluyen dirección y 2 muestran ubicación exacta. Estas cifras permiten anticipar qué tan completa es la consulta por ficha; no describen recursos, tiempos de respuesta ni cobertura territorial efectiva."
+ ],
+ "equipoDuo": [
+  "Los servicios de incendio estructural y materiales peligrosos sugieren valorar <a href=\"/trajes/estructural/\">trajes de bombero estructurales</a> y <a href=\"/trajes/hazmat/\">protección Hazmat</a>. Para rescate vehicular es pertinente considerar <a href=\"/trajes/extricacion/\">equipo para extricación</a>; el servicio aeroportuario puede requerir una evaluación de aproximación.",
+  "Cotizamos para bomberos en Zacatecas con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La propuesta se ajusta al riesgo declarado y a la tarea prevista, tanto para corporaciones municipales como para una dependencia estatal, PEMEX o estación aeroportuaria."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Zacatecas?",
+   "a": "El directorio registra 5 estaciones de bomberos en Zacatecas, distribuidas en 4 municipios. La cantidad se refiere a fichas verificadas con información pública y puede crecer cuando se confirmen nuevas estaciones con fuente. No equivale a un censo de todos los servicios que operan en el estado."
+  },
+  {
+   "q": "¿Qué municipios tienen más estaciones de bomberos en Zacatecas?",
+   "a": "Zacatecas concentra 2 estaciones registradas; Calera, Fresnillo y Guadalupe tienen 1 cada uno. Para localizar bomberos en Zacatecas, abre las fichas municipales y de PEMEX por separado, ya que corresponden a corporaciones distintas aunque estén en el mismo municipio."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Zacatecas?",
+   "a": "Las fichas de Zacatecas incluyen 2 estaciones municipales, 1 estatal, 1 aeroportuaria y 1 de PEMEX. Se encuentran, por ejemplo, la Coordinación Municipal de Protección Civil y Bomberos de Zacatecas y la Brigada Contraincendio PEMEX TAD Zacatecas, clasificadas como sedes únicas."
+  },
+  {
+   "q": "¿A qué número llamar en una emergencia en Zacatecas?",
+   "a": "Para una emergencia en Zacatecas llama al 911. Los teléfonos integrados en algunas fichas son para trámites, visitas, capacitación o donaciones y no sustituyen esa vía de auxilio. Ante una situación urgente usa el número nacional, incluso si ya identificaste una estación cercana en el directorio."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Zacatecas?",
+   "a": "Para bomberos en Zacatecas cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Indica si la necesidad se relaciona con incendio, rescate vehicular, materiales peligrosos o actividad aeroportuaria para orientar la selección de protección."
+  }
+ ]
+}

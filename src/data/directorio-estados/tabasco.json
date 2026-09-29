@@ -1,0 +1,45 @@
+{
+ "lead": "El directorio reúne 5 estaciones de bomberos en Tabasco, presentes en 3 municipios. En cada ficha encontrarás corporación, tipo, ubicación disponible y fuente consultable, además de teléfono cuando existe un contacto publicado.",
+ "descRight": [
+  "Las 5 fichas registradas muestran una operación diversa: 2 municipales, una estatal, una de aeropuerto y una de PEMEX. No hay centrales ni subestaciones identificadas. Centro concentra 3 estaciones, mientras Cárdenas y Paraíso tienen una referencia cada uno. Así se distingue el origen institucional de cada resultado disponible.",
+  "Explora la página por municipio para ubicar bomberos en Tabasco y abre el mapa donde la ficha tenga posición disponible. Hay 2 teléfonos, 2 direcciones y 2 ubicaciones exactas registradas. Los contactos son informativos; para una emergencia utiliza siempre el 911. Cada ficha conserva la fuente del dato para consulta posterior."
+ ],
+ "municipiosDuo": [
+  "Centro concentra 3 de las 5 estaciones registradas, por lo que ahí se encuentran las referencias para bomberos en Villahermosa. El municipio incorpora una opción estatal, una municipal y un servicio aeroportuario, distinguidos de forma individual dentro del listado.",
+  "Cárdenas y Paraíso aparecen con una estación cada uno. El directorio muestra la cobertura que ha podido documentarse con fuentes públicas, no un inventario total del estado; la relación se ampliará cuando haya nuevas estaciones confirmadas y datos consultables."
+ ],
+ "estacionesDuo": [
+  "Las fichas indican si la operación es municipal, estatal, aeroportuaria o de PEMEX, y las 5 se clasifican como estación única. Este criterio facilita separar el tipo de corporación antes de revisar los servicios y la información de localización disponible.",
+  "Puedes consultar, por ejemplo, el Departamento de Bomberos del IPCET — Tabasco y Protección Civil y Bomberos del Municipio de Centro. Las fichas presentan teléfono cuando tiene fuente, dirección cuando está publicada y ubicación exacta o aproximada conforme al registro."
+ ],
+ "coberturaDuo": [
+  "Incendios estructurales, materiales peligrosos y atención prehospitalaria se declaran en 4 fichas cada uno; el rescate vehicular figura en 3. También se registran rescate acuático, incendios forestales, salvamento aeroportuario y fugas de gas dentro de las estaciones de bomberos en Tabasco.",
+  "La disponibilidad de datos es acotada: 2 fichas tienen teléfono, 2 dirección y 2 ubicación exacta, de un total de 5. Estas referencias permiten saber qué contacto o punto en mapa puede consultarse directamente antes de hacer una gestión ordinaria."
+ ],
+ "equipoDuo": [
+  "Los registros de materiales peligrosos y fugas de gas justifican revisar <a href=\"/trajes/hazmat/\">protección Hazmat</a>, mientras el salvamento aeroportuario se relaciona con <a href=\"/trajes/aproximacion/\">equipo de aproximación</a>. Para incendios forestales puede requerirse protección de uso forestal y para rescate vehicular, herramientas de extricación.",
+  "Cotizamos para bomberos en Tabasco con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. La selección puede considerar incendios estructurales, rescate acuático, atención prehospitalaria o los riesgos específicos declarados por cada corporación."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Tabasco?",
+   "a": "El directorio registra 5 estaciones de bomberos en Tabasco en 3 municipios. Es una relación de fichas respaldadas por fuente pública y no afirma cubrir todas las estaciones del estado. La cifra aumentará si se confirman nuevas corporaciones con información que pueda consultarse."
+  },
+  {
+   "q": "¿Dónde hay más estaciones de bomberos en Tabasco y Villahermosa?",
+   "a": "Centro tiene 3 estaciones registradas y concentra las opciones para bomberos en Villahermosa. Cárdenas y Paraíso tienen una ficha cada uno. En Centro se distinguen corporaciones estatal, municipal y aeroportuaria para facilitar la consulta del tipo de servicio."
+  },
+  {
+   "q": "¿Quién opera las estaciones de bomberos en Tabasco?",
+   "a": "En Tabasco el listado contempla 2 estaciones municipales, una estatal, una de aeropuerto y una de PEMEX. Figuran el Departamento de Bomberos del IPCET — Tabasco, Protección Civil y Bomberos del Municipio de Centro y la Brigada Contraincendio Refinería OLMECA / Terminal Marítima Dos Bocas."
+  },
+  {
+   "q": "¿A qué número llamo en una emergencia en Tabasco?",
+   "a": "En una emergencia en Tabasco marca 911. Los teléfonos incluidos en fichas seleccionadas sirven para trámites, visitas, capacitación o donaciones, no para reemplazar la atención de emergencia. Revisa la fuente de cada estación antes de utilizar un contacto administrativo."
+  },
+  {
+   "q": "¿Dónde comprar trajes y equipo para bomberos en Tabasco?",
+   "a": "Para bomberos en Tabasco cotizamos trajes y equipo con ficha técnica, factura CFDI 4.0, sin compra mínima y envío al estado. Se puede solicitar una propuesta según incendios estructurales, materiales peligrosos, rescate vehicular, atención prehospitalaria o labores aeroportuarias."
+  }
+ ]
+}

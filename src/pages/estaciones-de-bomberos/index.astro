@@ -1,0 +1,275 @@
+---
+// L2 · Directorio nacional de estaciones de bomberos (hub).
+// Estructura homologada con la home y /trajes/: PageLayout (migas +
+// Hero sólido + SectionMenu) → secciones con SectionHeading «duo»
+// (eyebrow + título izquierda, 2 párrafos derecha) → cards de 4 por
+// fila con borde rojo, código, subenlaces y botón con palabra clave.
+// Orden: aviso 911 → índice por región → 32 cards de estado → cifras →
+// cómo se arma → equipo para corporaciones → FAQ → CTA.
+// Reglas: cero datos inventados (todo sale de lib/directorio), sin
+// fechas, sin precios, botones con palabra clave.
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard from '@components/home/TileCard.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import CTABanner from '@components/CTABanner.astro';
+import EstadoCard from '@components/directorio/EstadoCard.astro';
+import Aviso911 from '@components/directorio/Aviso911.astro';
+import RegionesIndex from '@components/directorio/RegionesIndex.astro';
+import CifrasDirectorio from '@components/directorio/CifrasDirectorio.astro';
+import { tilesEquipo } from '@lib/directorio-equipo';
+import type { CtaPreset } from '@lib/cta-presets';
+import { waUrl } from '@lib/wa';
+import { SITE, CONTACT, WA_MESSAGES } from '@config/site';
+import {
+  BASE_DIRECTORIO,
+  REGIONES,
+  RESUMEN_ESTADOS,
+  RESUMEN_NACIONAL as N,
+  rutaEstado,
+  enEstado,
+  pct,
+  nf,
+} from '@lib/directorio';
+
+const path = BASE_DIRECTORIO;
+
+// Regla de las 3 keywords
+const keywords = ['estaciones de bomberos', 'directorio por estado', 'México'] as const;
+const title = 'Estaciones de bomberos: directorio por estado | México';
+const description = `Estaciones de bomberos en México: directorio de ${nf(N.total)} estaciones en los 32 estados, con ubicación, corporación y fuente pública de cada dato.`;
+
+const menuItems = [
+  { label: 'Índice por región', href: '#estados' },
+  { label: 'Directorio por estado', href: '#directorio' },
+  { label: 'Cifras', href: '#cifras' },
+  { label: 'Cómo se arma', href: '#metodologia' },
+  { label: 'Equipo para bomberos', href: '#equipo' },
+  { label: 'Preguntas', href: '#faq' },
+];
+
+const estadosAZ = [...RESUMEN_ESTADOS].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+const regionNombre = (slug: string) => REGIONES.find((r) => r.slug === slug)?.nombre ?? '';
+
+const municipal = N.porTipo.find(([t]) => t === 'Municipal')?.[1] ?? 0;
+const WA_CORRECCION = 'Hola, quiero reportar una corrección o una estación nueva para el directorio de estaciones de bomberos.';
+
+// Módulo de cómo se arma el directorio (proceso real, sin promesas)
+const metodo = [
+  { t: 'Una ficha por estación física', d: 'Cada base operativa es un registro propio: la central, cada subestación y las estaciones de aeropuerto, PEMEX o industria. No se agrupan por corporación.' },
+  { t: 'Fuente pública en cada dato', d: 'Dirección, teléfono y coordenadas salen de fuentes localizables: DENUE del INEGI, portales .gob.mx y sitios de las corporaciones. Un campo sin fuente se omite.' },
+  { t: 'Confianza y ubicación declaradas', d: 'Cada ficha indica su nivel de confianza (alto, medio o bajo) y si la ubicación es exacta o aproximada, para que sepas cuánto pesa cada dato.' },
+  { t: 'Correcciones abiertas', d: 'Si una estación cambió de domicilio, de teléfono o falta en el directorio, escríbenos con la fuente y la actualizamos en la siguiente revisión.' },
+];
+
+// Equipo para corporaciones: familias con demanda municipal + conjunto completo
+const equipo = tilesEquipo(['estructural', 'forestal', 'extricacion']);
+
+const faqs = [
+  {
+    q: '¿Cuántas estaciones de bomberos hay en México?',
+    a: `No existe un censo nacional único y público de estaciones de bomberos. Este directorio registra ${nf(N.total)} estaciones en los 32 estados y ${nf(N.municipios)} municipios y alcaldías, todas con al menos una fuente pública localizable. La cifra crece conforme se confirman nuevas estaciones.`,
+  },
+  {
+    q: '¿A qué número llamo en una emergencia?',
+    a: 'Al 911, el número único de emergencias en todo México: la central canaliza la llamada a la estación de bomberos que corresponde. Los teléfonos de este directorio son los de cada estación y sirven para trámites, visitas, capacitación o donaciones, no para reportar un incendio.',
+  },
+  {
+    q: '¿Quién opera las estaciones de bomberos en México?',
+    a: `La mayoría son municipales: ${nf(municipal)} de las ${nf(N.total)} estaciones registradas (${pct(municipal, N.total)}) dependen del ayuntamiento, casi siempre dentro de la coordinación de protección civil. El resto son estatales, de aeropuerto, de patronatos de bomberos voluntarios, de PEMEX, de CFE o brigadas industriales.`,
+  },
+  {
+    q: '¿De dónde salen los datos del directorio?',
+    a: 'De fuentes públicas que se citan en cada ficha: el Directorio Estadístico Nacional de Unidades Económicas (DENUE) del INEGI, portales de gobiernos estatales y municipales, y los sitios y redes oficiales de las corporaciones. Cuando un dato no tiene fuente, no se publica.',
+  },
+  {
+    q: '¿Cómo reporto un error o agrego una estación?',
+    a: `Escríbenos por WhatsApp al ${CONTACT.telefono} con el nombre de la estación, el dato correcto y la fuente (página oficial, publicación de la corporación o fotografía de la fachada). Revisamos la fuente antes de actualizar la ficha.`,
+  },
+  {
+    q: '¿Venden equipo para cuerpos de bomberos municipales?',
+    a: 'Sí. Cotizamos trajes estructurales, forestales y de rescate, cascos, botas, guantes, monjas y equipo de respiración autónoma para corporaciones municipales y estatales, con ficha técnica por partida, expediente para licitación y factura CFDI 4.0. Sin compra mínima.',
+  },
+];
+
+// Schema: ItemList con las 32 páginas de estado + CollectionPage
+const directoryItems = RESUMEN_ESTADOS.map((e) => ({
+  name: `Estaciones de bomberos ${enEstado(e)}`,
+  url: `${SITE.url}${rutaEstado(e.slug)}`,
+}));
+const collection = {
+  name: 'Directorio de estaciones de bomberos en México',
+  description,
+  url: `${SITE.url}${path}`,
+};
+
+const cta: CtaPreset = {
+  title: '¿Tu corporación está renovando equipo?',
+  text: 'Cotizamos para cuerpos de bomberos municipales y estatales con ficha técnica por partida, expediente para licitación y factura CFDI 4.0. Sin compra mínima y con envío a los 32 estados.',
+  buttons: [
+    { label: 'Cotizar equipo por WhatsApp', href: waUrl(WA_MESSAGES.licitacion), icon: 'wa', primary: true, external: true },
+    { label: CONTACT.telefono, href: `tel:${CONTACT.telefonoHref}`, icon: 'phone' },
+    { label: 'Trajes para bomberos', href: '/trajes/', icon: 'catalog' },
+  ],
+};
+---
+<PageLayout
+  pageType="directorio"
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  crumbLabel="Estaciones de bomberos"
+  eyebrow="Directorio nacional de bomberos"
+  h1="Estaciones de bomberos"
+  h1Accent="en México"
+  lead={`Directorio de ${nf(N.total)} estaciones de bomberos en los 32 estados de la República, organizado por estado y municipio, con la ubicación, la corporación que la opera y la fuente pública de cada dato.`}
+  meta={[`${nf(N.total)} estaciones`, '32 estados', `${nf(N.municipios)} municipios y alcaldías`, 'Fuente pública por ficha']}
+  descRight={[
+    'Reunimos en un solo lugar las estaciones de bomberos municipales, estatales, de aeropuerto, de bomberos voluntarios, de PEMEX, de CFE y las brigadas industriales que operan en el país. Cada estación tiene su propia ficha: una base física, un registro.',
+    'Elige tu estado en el índice por región o en el directorio completo. Si ves un dato desactualizado o falta una estación, escríbenos con la fuente y la corregimos. En una emergencia no busques aquí: marca al 911.',
+  ]}
+  faqs={faqs}
+  directoryItems={directoryItems}
+  collection={collection}
+>
+  <Aviso911 />
+
+  <!-- 1 · Índice de los 32 estados agrupado por región (2 filas de 4) -->
+  <section class="section" id="estados">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Índice por región"
+        title="Estaciones de bomberos por estado y por región"
+        duo={[
+          'El directorio cubre las 32 entidades federativas, agrupadas en siete regiones para que ubiques rápido la cobertura de tu zona: del Noroeste y la península de Baja California a la península de Yucatán, pasando por el Bajío, el Centro y el Pacífico Sur.',
+          'El número junto a cada estado es el total de estaciones registradas. La cobertura no es igual en todo el país: depende de cuántas estaciones tienen una fuente pública localizable, y crece con cada revisión del directorio.',
+        ]}
+      />
+      <RegionesIndex />
+    </div>
+  </section>
+
+  <!-- 2 · Directorio completo: 32 cards de estado en orden alfabético (8 filas de 4) -->
+  <section class="section section--alt" id="directorio">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Directorio por estado"
+        title="Bomberos en los 32 estados de México"
+        duo={[
+          'Cada card resume un estado: cuántas estaciones de bomberos tiene registradas, en cuántos municipios, cuántas con ubicación exacta y qué corporaciones las operan. Los municipios con más estaciones tienen acceso directo a su listado.',
+          'Dentro de cada estado, las estaciones se ordenan por municipio, con la dirección, el teléfono cuando existe una fuente que lo respalde y la ubicación en mapa.',
+        ]}
+      />
+      <TileGrid>
+        {estadosAZ.map((e) => <EstadoCard e={e} regionNombre={regionNombre(e.region)} />)}
+      </TileGrid>
+    </div>
+  </section>
+
+  <!-- 3 · Cifras del directorio -->
+  <section class="section" id="cifras">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Cifras del directorio"
+        title="Quién opera las estaciones de bomberos en México"
+        duo={[
+          `De las ${nf(N.total)} estaciones registradas, ${pct(municipal, N.total)} son municipales: en México el servicio de bomberos es, sobre todo, una responsabilidad del ayuntamiento, que lo presta desde la coordinación de protección civil o desde un cuerpo de bomberos propio.`,
+          'Completan el mapa las corporaciones estatales, los servicios de salvamento de los aeropuertos, los patronatos de bomberos voluntarios y las brigadas de PEMEX, CFE y la industria. Todas las cifras de esta sección se calculan directamente de las fichas del directorio.',
+        ]}
+      />
+      <CifrasDirectorio />
+    </div>
+  </section>
+
+  <!-- 4 · Cómo se arma el directorio -->
+  <section class="section section--alt" id="metodologia">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Cómo se arma"
+        title="Un directorio de bomberos con fuente en cada dato"
+        duo={[
+          'Un directorio solo sirve si puedes confiar en él. Por eso cada ficha cita su fuente, declara su nivel de confianza y distingue entre ubicación exacta y aproximada, en lugar de rellenar con datos genéricos.',
+          `Si trabajas en una estación y ves un dato desactualizado, <a href="${waUrl(WA_CORRECCION)}" target="_blank" rel="noopener nofollow">envíanos la corrección por WhatsApp</a> con la fuente. Revisamos cada reporte antes de publicarlo.`,
+        ]}
+      />
+      <ol class="metodo">
+        {metodo.map((m, i) => (
+          <li class="metodo__item">
+            <span class="metodo__num">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{m.t}</h3>
+            <p>{m.d}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5 · Equipo para corporaciones (puente al catálogo, TileCard homologada) -->
+  <section class="section" id="equipo">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Equipo para cuerpos de bomberos"
+        title="Trajes para bomberos municipales, estatales y voluntarios"
+        duo={[
+          'Equipamos a corporaciones de todo el país: <a href="/trajes/estructural/">trajes estructurales</a> para incendio en edificaciones, <a href="/trajes/forestal/">trajes forestales</a> para temporada de incendios y <a href="/trajes/extricacion/">trajes de extricación</a> para rescate vehicular, más casco, monja, botas, guantes y equipo de respiración autónoma.',
+          'Cotizamos con ficha técnica por partida, sobre la norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y preparamos el expediente para licitación. Sin compra mínima: por pieza, por elemento o para toda la estación.',
+        ]}
+      />
+      <TileGrid>
+        {equipo.map((t) => <TileCard {...t} />)}
+      </TileGrid>
+    </div>
+  </section>
+
+  <!-- 6 · Preguntas frecuentes -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Preguntas frecuentes"
+        title="Lo que más se pregunta sobre las estaciones de bomberos"
+        duo={[
+          'Cuántas estaciones hay en México, a qué número llamar en una emergencia, quién opera cada estación y de dónde salen los datos del directorio.',
+          'Si tu pregunta es sobre equipo para tu corporación, escríbenos por WhatsApp con el número de elementos y la operación que cubren, y te respondemos en día hábil.',
+        ]}
+      />
+      <FAQWithContact items={faqs} />
+    </div>
+  </section>
+
+  <CTABanner variant="dark" {...cta} />
+</PageLayout>
+
+<style>
+  /* Cómo se arma: 4 pasos en cards homologadas */
+  .metodo {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .metodo__item {
+    padding: 1.4rem 1.3rem 1.3rem;
+    background: var(--color-white);
+    border: 1px solid rgb(20 22 26 / 0.14);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+  }
+  .metodo__num {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary);
+  }
+  .metodo__item h3 { margin: 0.8rem 0 0.5rem; font-size: 1.08rem; line-height: 1.25; }
+  .metodo__item p { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--color-gray); }
+
+  @media (max-width: 1023px) { .metodo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
+  @media (max-width: 559px) { .metodo { grid-template-columns: 1fr; } }
+</style>

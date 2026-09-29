@@ -1,0 +1,165 @@
+---
+// RegionesIndex: índice de los 32 estados agrupado en 7 regiones +
+// bloque de total nacional (8 bloques = 2 filas completas de 4).
+// Bloques homologados con TileCard: borde superior rojo, código en
+// franja roja, filas de enlace de 44px+ con conteo y chevron.
+import { REGIONES, RESUMEN_NACIONAL as N, estadosDeRegion, rutaEstado, nf, enEstado } from '@lib/directorio';
+---
+<ul class="ri">
+  {REGIONES.map((r, i) => {
+    const estados = [...estadosDeRegion(r.slug)].sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+    const total = estados.reduce((a, e) => a + e.total, 0);
+    return (
+      <li class="ri__card" id={`region-${r.slug}`}>
+        <div class="ri__head">
+          <span class="ri__code">R-{String(i + 1).padStart(2, '0')}</span>
+          <h3 class="ri__title">{r.nombre}</h3>
+          <p class="ri__meta">{estados.length} estados · {nf(total)} estaciones</p>
+        </div>
+        <ul class="ri__list" aria-label={`Estados de la región ${r.nombre}`}>
+          {estados.map((e) => (
+            <li>
+              <a class="ri__row" href={rutaEstado(e.slug)} title={`Estaciones de bomberos ${enEstado(e)}`}>
+                <span class="ri__name">{e.nombre}</span>
+                <span class="ri__n" aria-label={`${e.total} estaciones`}>{e.total}</span>
+                <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" /></svg>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </li>
+    );
+  })}
+  <li class="ri__card ri__card--total">
+    <div class="ri__head">
+      <span class="ri__code">MX</span>
+      <h3 class="ri__title">Total nacional</h3>
+    </div>
+    <p class="ri__big">{nf(N.total)}</p>
+    <p class="ri__big-label">estaciones de bomberos registradas</p>
+    <ul class="ri__facts">
+      <li><strong>{N.estados}</strong> entidades federativas</li>
+      <li><strong>{nf(N.municipios)}</strong> municipios y alcaldías</li>
+      <li><strong>{nf(N.conTelefono)}</strong> con teléfono con fuente</li>
+    </ul>
+    <a class="ri__cta" href="#directorio">Directorio completo por estado</a>
+  </li>
+</ul>
+
+<style>
+  .ri {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ri__card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgb(20 22 26 / 0.14);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    padding: 1.15rem 1.15rem 0.9rem;
+    scroll-margin-top: calc(var(--header-height) + 1rem);
+  }
+  .ri__head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.25rem 0.7rem;
+    padding-bottom: 0.85rem;
+  }
+  .ri__code {
+    grid-row: span 2;
+    align-self: start;
+    padding: 0.3rem 0.55rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+  .ri__title { margin: 0; font-size: 1.12rem; line-height: 1.2; }
+  .ri__meta {
+    margin: 0;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+  }
+  .ri__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgb(20 22 26 / 0.12); }
+  .ri__list li { border-bottom: 1px solid rgb(20 22 26 / 0.12); }
+  .ri__list li:last-child { border-bottom: 0; }
+  .ri__row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 44px;
+    padding: 0.3rem 0.1rem;
+    color: var(--color-dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .ri__name { flex: 1; min-width: 0; }
+  .ri__n {
+    flex: none;
+    min-width: 1.9rem;
+    padding: 0.1rem 0.35rem;
+    background: var(--color-light);
+    border-radius: var(--radius);
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .ri__row svg { flex: none; color: var(--color-primary); }
+  .ri__row:hover { color: var(--color-primary); }
+  .ri__row:hover .ri__name { text-decoration: underline; text-underline-offset: 3px; }
+  .ri__row:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+
+  /* Bloque de total nacional: tinta, como la cabecera de las cards de estado */
+  .ri__card--total { background: var(--color-ink); border-color: var(--color-ink); border-top-color: var(--color-primary); color: var(--color-white); padding-bottom: 1.15rem; }
+  .ri__card--total .ri__title { color: var(--color-white); }
+  .ri__big {
+    margin: 0.4rem 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 3.8vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .ri__big-label { margin: 0.35rem 0 0; font-weight: 700; color: #d6dae0; }
+  .ri__facts { list-style: none; margin: 1rem 0 1.2rem; padding: 0.9rem 0 0; border-top: 1px solid rgb(255 255 255 / 0.14); display: grid; gap: 0.45rem; }
+  .ri__facts li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.86rem; color: #c3c8cf; }
+  .ri__facts li::before { content: ''; width: 6px; height: 6px; background: var(--color-accent); flex: none; }
+  .ri__facts strong { color: var(--color-white); }
+  .ri__cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.55rem 0.9rem;
+    background: var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.86rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ri__cta:hover { background: var(--color-white); color: var(--color-dark); }
+  .ri__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  @media (max-width: 1279px) { .ri { gap: 1rem; } }
+  @media (max-width: 1023px) { .ri { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 559px) { .ri { grid-template-columns: 1fr; } }
+</style>

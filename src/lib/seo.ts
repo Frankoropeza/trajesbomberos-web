@@ -113,6 +113,39 @@ export function directorySchema(items: { name: string; url: string }[]): object 
   };
 }
 
+// Directorio: ItemList de estaciones como FireStation (solo campos con fuente)
+export interface EstacionSchema {
+  name: string; url: string; locality: string; region: string;
+  lat: number; lng: number; telephone?: string; street?: string; sameAs?: string;
+}
+export function fireStationListSchema(xs: EstacionSchema[]): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    numberOfItems: xs.length,
+    itemListElement: xs.map((x, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'FireStation',
+        '@id': x.url,
+        name: x.name,
+        url: x.url,
+        address: {
+          '@type': 'PostalAddress',
+          ...(x.street ? { streetAddress: x.street } : {}),
+          addressLocality: x.locality,
+          addressRegion: x.region,
+          addressCountry: 'MX',
+        },
+        geo: { '@type': 'GeoCoordinates', latitude: x.lat, longitude: x.lng },
+        ...(x.telephone ? { telephone: x.telephone } : {}),
+        ...(x.sameAs ? { sameAs: x.sameAs } : {}),
+      },
+    })),
+  };
+}
+
 // Migas: se generan desde la ruta, nunca se escriben a mano
 export function breadcrumbSchema(items: { name: string; href: string }[]): object {
   return {
@@ -246,6 +279,7 @@ export interface SchemaInput {
   product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };
   collection?: { name: string; description: string; url: string };
   item?: { name: string; description: string; image?: string; category: string; url: string };
+  estaciones?: EstacionSchema[];
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -258,6 +292,7 @@ export function buildSchema(input: SchemaInput): object[] {
   if (input.product) schemas.push(productSchema(input.product));
   if (input.collection) schemas.push(collectionPageSchema(input.collection));
   if (input.item) schemas.push(itemPageSchema(input.item));
+  if (input.estaciones?.length) schemas.push(fireStationListSchema(input.estaciones));
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;
 }

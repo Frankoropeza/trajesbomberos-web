@@ -1,0 +1,158 @@
+---
+// EstacionCard: ficha de una estación dentro de la página de estado.
+// Homologada con las cards del sitio (borde superior rojo, franja de
+// tipo en rojo, botón principal al fondo). Solo muestra campos con
+// dato; nunca un campo vacío ni un texto de relleno. Las fuentes y el
+// sitio de la corporación salen con rel="nofollow noopener".
+import {
+  type Estacion, ROL_LABEL, unidad, SERVICIO_LABEL, fuentesConUrl, mapsUrl, telHref, telTexto, dominio,
+} from '@lib/directorio';
+
+interface Props { s: Estacion }
+const { s } = Astro.props as Props;
+const telefonos = [s.telefono, ...(s.telefonosAdicionales ?? [])].filter((t): t is string => !!t);
+const servicios = (s.servicios ?? []).map((x) => SERVICIO_LABEL[x] ?? x);
+// Fuente: se muestra el dominio (atemporal, sin titulares ni fechas), sin repetir.
+const fuentes = [...new Map(fuentesConUrl(s).map((f) => [dominio(f.url!), f.url!])).entries()].slice(0, 3);
+const U = unidad(s.estado, 1);
+const localidad = s.ciudad && s.ciudad !== s.municipio ? `${s.ciudad}, ${U} ${s.municipio}` : `${U.charAt(0).toUpperCase() + U.slice(1)} ${s.municipio}`;
+const ext = { target: '_blank', rel: 'nofollow noopener' };
+---
+<li class="st" id={s.slug}>
+  <div class="st__top">
+    <span class="st__tipo">{s.tipo}</span>
+    <span class="st__rol">{ROL_LABEL[s.rolEstacion]}{s.numeroEstacion && s.rolEstacion !== 'unica' ? ` · ${s.numeroEstacion}` : ''}</span>
+  </div>
+  <div class="st__body">
+    <h4 class="st__name">{s.nombre}</h4>
+    {s.corporacion && s.corporacion !== s.nombre && <p class="st__corp">{s.corporacion}</p>}
+
+    <dl class="st__data">
+      {s.direccion && (<div><dt>Dirección</dt><dd>{s.direccion}</dd></div>)}
+      <div><dt>Localidad</dt><dd>{localidad}</dd></div>
+      {telefonos.length > 0 && (
+        <div>
+          <dt>{telefonos.length > 1 ? 'Teléfonos' : 'Teléfono'}</dt>
+          <dd class="st__tels">{telefonos.map((t) => <a href={`tel:${telHref(t)}`}>{telTexto(t)}</a>)}</dd>
+        </div>
+      )}
+      {s.sitioWeb && (<div><dt>Sitio oficial</dt><dd><a href={s.sitioWeb} {...ext}>{dominio(s.sitioWeb)}</a></dd></div>)}
+    </dl>
+
+    {servicios.length > 0 && (
+      <ul class="st__serv" aria-label="Servicios declarados">
+        {servicios.slice(0, 5).map((x) => <li>{x}</li>)}
+        {servicios.length > 5 && <li class="st__more">+{servicios.length - 5}</li>}
+      </ul>
+    )}
+
+    <p class="st__meta">
+      <span class={`st__conf st__conf--${s.confianza}`}>Confianza {s.confianza}</span>
+      <span>Ubicación {s.coordenadas.precision}</span>
+    </p>
+    {fuentes.length > 0 && (
+      <p class="st__src">
+        <span>Fuente:</span>
+        {fuentes.map(([d, url]) => <a href={url} {...ext}>{d} ↗</a>)}
+      </p>
+    )}
+
+    <a class="st__cta" href={mapsUrl(s)} {...ext}>
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor" /></svg>
+      Ubicación en Google Maps
+    </a>
+  </div>
+</li>
+
+<style>
+  .st {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgb(20 22 26 / 0.14);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    overflow: hidden;
+    scroll-margin-top: calc(var(--header-height) + 1rem);
+  }
+  .st__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.55rem 1.15rem 0 0;
+  }
+  .st__tipo {
+    padding: 0.28rem 0.65rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .st__rol { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-gray); text-align: right; }
+  .st__body { display: flex; flex-direction: column; flex: 1; padding: 0.95rem 1.15rem 1.2rem; }
+  .st__name { margin: 0; font-size: 1.05rem; line-height: 1.28; color: var(--color-dark); }
+  .st__corp { margin: 0.3rem 0 0; font-size: 0.84rem; color: var(--color-gray); line-height: 1.4; }
+
+  .st__data { margin: 0.9rem 0 0; border-top: 1px solid rgb(20 22 26 / 0.12); }
+  .st__data div {
+    display: grid;
+    grid-template-columns: 6.6rem minmax(0, 1fr);
+    gap: 0.6rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgb(20 22 26 / 0.12);
+  }
+  dt { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-gray); padding-top: 0.12rem; }
+  dd { margin: 0; font-size: 0.88rem; line-height: 1.45; color: var(--color-dark); overflow-wrap: anywhere; }
+  dd a { color: var(--color-primary); font-weight: 700; text-decoration: none; }
+  dd a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .st__tels { display: flex; flex-direction: column; gap: 0.2rem; }
+
+  .st__serv { display: flex; flex-wrap: wrap; gap: 0.35rem; list-style: none; margin: 0.85rem 0 0; padding: 0; }
+  .st__serv li {
+    padding: 0.2rem 0.5rem;
+    background: var(--color-light);
+    border: 1px solid rgb(20 22 26 / 0.1);
+    border-radius: var(--radius);
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--color-dark);
+  }
+  .st__serv .st__more { color: var(--color-gray); }
+
+  .st__meta { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; margin: 0.85rem 0 0; font-size: 0.76rem; font-weight: 700; color: var(--color-gray); }
+  .st__conf::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 0.4rem; border-radius: 50%; background: currentColor; vertical-align: 0.05em; }
+  .st__conf--alta { color: #176b3a; }
+  .st__conf--media { color: #805400; }
+  .st__conf--baja { color: var(--color-gray); }
+  .st__src { display: flex; flex-wrap: wrap; gap: 0.2rem 0.6rem; margin: 0.35rem 0 1.1rem; font-size: 0.76rem; color: var(--color-gray); }
+  .st__src a { color: var(--color-gray); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+  .st__src a:hover { color: var(--color-primary); }
+
+  .st__cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 48px;
+    padding: 0.5rem 0.9rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius);
+    color: var(--color-primary);
+    font-family: var(--font-display);
+    font-size: 0.86rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+  }
+  .st__cta:hover { background: var(--color-primary); color: var(--color-white); }
+  .st__cta:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  /* Móvil: los servicios se resumen en la tabla de cifras del estado */
+  @media (max-width: 559px) { .st__serv { display: none; } }
+  @media (max-width: 480px) { .st__data div { grid-template-columns: 5.6rem minmax(0, 1fr); } }
+</style>

@@ -406,10 +406,10 @@ export const MENU: MenuItem[] = [
     ], feature: { eyebrow: 'Marcas y modelos', title: 'Componentes documentados para tu operación', text: 'Compara modelo, talla y alcance antes de integrar el conjunto.', img: '/images/catalogo/marcas/hero-marcas.avif', alt: 'Marcas de equipo para bombero', cta: { label: 'Equipo Romak Fire y Sköld para bomberos', href: '/marcas/' } }, overview: { label: 'Marcas de equipo para bomberos', href: '/marcas/' },
   },
   {
-    label: 'Guías técnicas', href: '/blog/', match: ['/blog/'], columns: [
+    label: 'Guías técnicas', href: '/blog/', match: ['/blog/', '/estaciones-de-bomberos/'], columns: [
       { title: 'Temas del blog', href: '/blog/', links: BLOG_CATEGORIES.map((categoria) => ({ label: categoria.nombre, href: `/blog/categoria/${categoria.slug}/` })) },
       { title: 'Guías de trajes', links: [{ label: 'Cómo elegir traje para bomberos', href: '/blog/como-elegir-traje-para-bomberos/' }, { label: 'Cuánto cuesta un traje de bombero', href: '/blog/cuanto-cuesta-un-traje-de-bombero/' }, { label: 'Traje estructural o brigadista', href: '/blog/traje-estructural-o-brigadista/' }, { label: 'NFPA 1970: cambios para trajes de bombero', href: '/blog/nfpa-1970-que-cambio/' }, { label: 'TPP y THL del traje estructural', href: '/blog/tpp-y-thl-traje-estructural/' }, { label: 'Vida útil del traje de bombero', href: '/blog/vida-util-traje-bombero-nfpa-1850/' }] },
-      { title: 'Guías de equipo y compra', links: [{ label: 'Cómo elegir casco de bombero', href: '/blog/como-elegir-casco-de-bombero/' }, { label: 'Cómo elegir botas de bombero', href: '/blog/como-elegir-botas-de-bombero/' }, { label: 'Cómo elegir equipo de respiración autónoma', href: '/blog/como-elegir-equipo-de-respiracion-autonoma/' }, { label: 'NOM-002-STPS-2010 para brigadas', href: '/blog/nom-002-stps-2010-equipo-para-brigadas/' }, { label: 'Licitación de trajes de bomberos', href: '/blog/licitacion-trajes-bomberos-expediente/' }, { label: 'Nomex IIIA en trajes de bombero', href: '/blog/nomex-iiia-que-es/' }] },
+      { title: 'Guías de equipo y compra', links: [{ label: 'Cómo elegir casco de bombero', href: '/blog/como-elegir-casco-de-bombero/' }, { label: 'Cómo elegir botas de bombero', href: '/blog/como-elegir-botas-de-bombero/' }, { label: 'Cómo elegir equipo de respiración autónoma', href: '/blog/como-elegir-equipo-de-respiracion-autonoma/' }, { label: 'NOM-002-STPS-2010 para brigadas', href: '/blog/nom-002-stps-2010-equipo-para-brigadas/' }, { label: 'Licitación de trajes de bomberos', href: '/blog/licitacion-trajes-bomberos-expediente/' }, { label: 'Nomex IIIA en trajes de bombero', href: '/blog/nomex-iiia-que-es/' }, { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' }] },
     ], feature: { eyebrow: 'Compra informada', title: 'Preguntas frecuentes sobre trajes de bombero', text: 'Resuelve dudas sobre familia, piezas, tallas y documentación antes de cotizar.', cta: { label: 'Preguntas frecuentes sobre trajes de bombero', href: '/#faq' } }, overview: { label: 'Blog técnico de trajes para bomberos', href: '/blog/' },
   },
 ];
@@ -527,6 +527,7 @@ export const FOOTER = {
       links: [
         { label: 'Proveedor de trajes para bomberos', href: '/empresa/' },
         { label: 'Contacto para cotizar trajes', href: '/contacto/' },
+        { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' },
         { label: 'Aviso de privacidad', href: '/aviso-de-privacidad/' },
         { label: 'Términos y condiciones', href: '/terminos-y-condiciones/' },
       ],

@@ -18,6 +18,7 @@ export const RUTAS = new Set<string>([
   '/empresa/',
   '/contacto/',
   '/marcas/',
+  '/estaciones-de-bomberos/',
   '/aviso-de-privacidad/',
   '/terminos-y-condiciones/',
   '/trajes/#modelos',
