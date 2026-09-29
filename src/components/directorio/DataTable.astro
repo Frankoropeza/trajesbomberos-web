@@ -3,11 +3,11 @@
 // rojo, filas con borde gris). La primera celda de cada fila es <th>.
 // Celdas: texto o { text, href }. Columnas numéricas alineadas a la
 // derecha; `hideMobile` oculta la columna ≤640px.
-export interface Col { label: string; num?: boolean; hideMobile?: boolean; accent?: boolean }
+export interface Col { label: string; num?: boolean; hideMobile?: boolean; accent?: boolean; nowrap?: boolean }
 export type Cell = string | number | { text: string; href: string };
 interface Props { caption: string; cols: Col[]; rows: Cell[][] }
 const { caption, cols, rows } = Astro.props as Props;
-const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc'].filter(Boolean).join(' ') || undefined;
+const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc', c.nowrap && 'nw'].filter(Boolean).join(' ') || undefined;
 ---
 <figure class="dt">
   <figcaption>{caption}</figcaption>
@@ -75,6 +75,7 @@ const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc'
   .dt th.num, .dt td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .dt td.num { font-weight: 700; color: var(--color-dark); }
   .dt td.acc, .dt th.acc { color: var(--color-primary); font-family: var(--font-display); font-weight: 700; }
+  .dt .nw { white-space: nowrap; }
   @media (max-width: 640px) { .hm { display: none; } }
   @media (max-width: 480px) { tbody th, tbody td, thead th { padding-inline: 0.75rem; } }
 </style>

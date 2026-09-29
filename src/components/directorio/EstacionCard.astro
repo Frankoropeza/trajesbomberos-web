@@ -15,7 +15,7 @@ const servicios = (s.servicios ?? []).map((x) => SERVICIO_LABEL[x] ?? x);
 // Fuente: se muestra el dominio (atemporal, sin titulares ni fechas), sin repetir.
 const fuentes = [...new Map(fuentesConUrl(s).map((f) => [dominio(f.url!), f.url!])).entries()].slice(0, 3);
 const U = unidad(s.estado, 1);
-const localidad = s.ciudad && s.ciudad !== s.municipio ? `${s.ciudad}, ${U} ${s.municipio}` : `${U.charAt(0).toUpperCase() + U.slice(1)} ${s.municipio}`;
+const localidad = s.ciudad && s.ciudad !== s.municipio ? `${s.ciudad}, ${U} de ${s.municipio}` : `${U.charAt(0).toUpperCase() + U.slice(1)} ${s.municipio}`;
 const ext = { target: '_blank', rel: 'nofollow noopener' };
 ---
 <li class="st" id={s.slug}>
@@ -29,7 +29,7 @@ const ext = { target: '_blank', rel: 'nofollow noopener' };
 
     <dl class="st__data">
       {s.direccion && (<div><dt>Dirección</dt><dd>{s.direccion}</dd></div>)}
-      <div><dt>Localidad</dt><dd>{localidad}</dd></div>
+      {s.ciudad && s.ciudad !== s.municipio && (<div><dt>Localidad</dt><dd>{localidad}</dd></div>)}
       {telefonos.length > 0 && (
         <div>
           <dt>{telefonos.length > 1 ? 'Teléfonos' : 'Teléfono'}</dt>
