@@ -31,7 +31,7 @@ secciones:
     eyebrow: "Qué se cotiza"
     titulo: "Piezas del traje de bombero brigadista"
     duo:
-      - "El traje de brigadista se arma con seis piezas: el conjunto contra fuego incipiente, el overol ignífugo NFPA 2112, el chaquetón y la pantalonera sueltos para reponer, la monja de brigada y los tirantes tipo X. Se compran juntas en una sola partida o por separado."
+      - "Seis piezas forman el traje de brigadista. La base es el conjunto contra fuego incipiente o el overol ignífugo NFPA 2112; el chaquetón y la pantalonera se venden sueltos para reponer, y la monja de brigada y los tirantes tipo X cierran el equipo. Se compran juntas en una sola partida o por separado."
       - "La pantalonera se repone antes que el chaquetón, porque rodillas y valencianas se gastan más rápido. Entra a cada pieza para ver cómo se especifica y qué datos lleva el pedido."
   elegir:
     eyebrow: "Qué pedir"
@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "El traje de bombero brigadista, pieza por pieza"
     duo:
-      - "Tres módulos: el conjunto y el overol, que son la prenda base; el chaquetón y la pantalonera sueltos, para reponer sin cambiar la configuración; y la monja y los tirantes, que cierran el conjunto. En cada uno, cómo se especifica y qué revisamos."
+      - "Las prendas se agrupan por función. El conjunto y el overol son la prenda base; el chaquetón y la pantalonera sueltos sirven para reponer sin cambiar la configuración. La monja y los tirantes cierran el conjunto. Para cada grupo, cómo se especifica y qué revisamos."
       - "Cada módulo te lleva a la ficha de la pieza o a WhatsApp con tu mensaje listo. Te respondemos con talla, tela, alcance y documentos por escrito, con factura CFDI 4.0."
   modelos:
     eyebrow: "Modelos con ficha"
@@ -110,7 +110,7 @@ modulos:
   - slug: "reposicion"
     eyebrow: "Reposición"
     titulo: "Chaquetón y pantalonera sueltos: reponer sin cambiar el conjunto"
-    parrafo: "La brigada cambia de integrantes y las prendas se gastan distinto. El chaquetón suelto lleva barreras técnicas, bandas reflejantes de alta visibilidad y refuerzos en las zonas de desgaste; se pide con la misma configuración que el conjunto para que todo el equipo se vea y proteja igual. La pantalonera trae refuerzos en rodillas y valencianas, tirantes de alta resistencia y cinta reflejante."
+    parrafo: "La brigada cambia de integrantes y las prendas se gastan distinto. El chaquetón suelto lleva barreras técnicas, bandas reflejantes de alta visibilidad y refuerzos en las zonas de desgaste. Se pide con la misma configuración que el conjunto para que todo el equipo se vea y proteja igual. La pantalonera trae refuerzos en rodillas y valencianas, tirantes de alta resistencia y cinta reflejante."
     imagenes:
       - { src: "/images/escenas/estacion-bomberos-trajes-percha.avif", alt: "Trajes de protección colgados listos para asignarse" }
       - { src: "/images/piezas/chaqueton-de-brigadista-pieza-suelta.avif", alt: "Chaquetón de brigadista con bandas reflejantes, pieza suelta para reposición" }

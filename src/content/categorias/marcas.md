@@ -17,7 +17,7 @@ hero:
   lead: "Once marcas y 35 modelos publicados. De cada uno te decimos qué norma declara y si tiene certificado, para que compares modelos y no logotipos."
   descRight:
     - "Una marca no certifica un traje. Lo certifica el modelo, en una configuración concreta. Romak Fire tiene cinco modelos con certificado UL, entre ellos el Protector (MH14790) y el Mark One MPX-8 (MH48840); otros solo son declarados. En Sköld, el único con UL es el Hero Nomex IIIA (MH60435). Por eso aquí ordenamos todo por marca y, dentro de cada marca, por modelo."
-    - "En LORICA trabajamos 16 modelos de Romak Fire, 8 de Sköld y piezas de otras nueve marcas: cascos Bullard, traje Lakeland, ERA MSA, botas Croydon y Strong Fire, guante Veridian, monja Majestic, lámpara Streamlight y goggles ESS. No tenemos exclusividad con ninguna. Te decimos por escrito qué cumple cada renglón antes de que compres."
+    - "En LORICA trabajamos 16 modelos de Romak Fire, 8 de Sköld y piezas de otras nueve marcas. Son cascos Bullard, traje Lakeland, ERA MSA, botas Croydon y Strong Fire, guante Veridian, monja Majestic, lámpara Streamlight y goggles ESS. No tenemos exclusividad con ninguna. Te decimos por escrito qué cumple cada renglón antes de que compres."
   meta: ["11 marcas", "35 modelos con ficha", "Estatus normativo por modelo", "Envíos a los 32 estados"]
 menu:
   tipos: "Marcas"
@@ -50,7 +50,7 @@ secciones:
     eyebrow: "Modelos destacados"
     titulo: "Ocho modelos de seis marcas de equipo para bomberos"
     duo:
-      - "Una muestra del alcance de cada marca: los trajes Romak Fire Protector, Sköld Hero Nomex IIIA y Lakeland OSX A10 Attack, los cascos Bullard UST LW y Wildland FH911H, y las botas Croydon Filtrex, Sköld Workman y la forestal Strong Fire. Cada ficha trae materiales, código y estatus."
+      - "Una muestra del alcance de cada marca. En trajes, el Romak Fire Protector, el Sköld Hero Nomex IIIA y el Lakeland OSX A10 Attack; en cascos, los Bullard UST LW y Wildland FH911H. En botas, la Croydon Filtrex, la Sköld Workman y la forestal Strong Fire. Cada ficha trae materiales, código y estatus."
       - "Los 35 modelos, con marca, pieza, código y estatus normativo, están en la comparativa de abajo. Pide por WhatsApp la ficha técnica del que te interese y te la mandamos con la configuración por escrito."
   comparar:
     eyebrow: "Comparativa"
@@ -62,7 +62,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre marcas de equipo para bomberos"
     duo:
-      - "Lo que más nos preguntan antes de pedir por marca: si somos exclusivos de alguien, si toda una marca está certificada, qué modelo Sköld tiene UL, si conviene un conjunto de una sola marca y qué separa un certificado de una declaración."
+      - "Pedir por marca abre dudas concretas: si somos exclusivos de alguien, si toda una marca está certificada y qué modelo Sköld tiene UL. También si conviene un conjunto de una sola marca y qué separa un certificado de una declaración."
       - "¿Tu duda no aparece? Escríbela en el formulario. Se abre WhatsApp con tu consulta ya redactada y te contestamos en día hábil, con la ficha del modelo que menciones."
   guias:
     eyebrow: "Blog técnico"
@@ -154,7 +154,7 @@ modulos:
   - slug: "skold"
     eyebrow: "8 modelos"
     titulo: "Sköld: un conjunto completo de una sola marca, con estatus por pieza"
-    parrafo: "Con Sköld puedes vestir a una persona de pies a cabeza. Tiene los trajes estructurales Hero PBI MAX y Hero Nomex IIIA, el brigadista Defender, el casco Viking FPCM, el guante FPGS, la escafandra Nomex FPEN, las botas Workman FPBSK y el ERA Phantöm de 60 minutos. Ojo: solo el Hero Nomex IIIA tiene certificado UL (MH60435). El Hero PBI MAX y el Defender son equivalentes, y los componentes, declarados."
+    parrafo: "Con Sköld puedes vestir a una persona de pies a cabeza. Tiene los trajes estructurales Hero PBI MAX y Hero Nomex IIIA y el brigadista Defender. Completan la línea el casco Viking FPCM, el guante FPGS, la escafandra Nomex FPEN, las botas Workman FPBSK y el ERA Phantöm de 60 minutos. Ojo: solo el Hero Nomex IIIA tiene certificado UL (MH60435). El Hero PBI MAX y el Defender son equivalentes, y los componentes, declarados."
     imagenes:
       - { src: "/images/escenas/estacion-bomberos-trajes-percha.avif", alt: "Trajes estructurales en la percha de equipo de una estación de bomberos" }
       - { src: "/images/catalogo/trajes/skold-hero-nomex.avif", alt: "Traje estructural Sköld Hero Nomex IIIA amarillo" }

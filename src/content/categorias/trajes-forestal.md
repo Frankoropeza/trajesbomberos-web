@@ -31,7 +31,7 @@ secciones:
     eyebrow: "Qué se cotiza"
     titulo: "Piezas del traje forestal para bombero"
     duo:
-      - "El traje forestal se arma con seis piezas: camisola y pantalón cargo, que son la dotación base; chamarra y overol, para quien necesita más cobertura; nuquera, que se acopla al casco; y el conjunto dual, certificado para forestal y rescate técnico a la vez."
+      - "La línea forestal tiene seis piezas. Camisola y pantalón cargo son la dotación base, y chamarra y overol suman cobertura. La nuquera se acopla al casco y el conjunto dual está certificado para forestal y rescate técnico a la vez."
       - "Todo se compra por pieza y sin compra mínima. La camisola sufre más por mangas y hombros, así que lo normal es reponerla antes que el pantalón. Entra a cada pieza para ver cómo se especifica."
   elegir:
     eyebrow: "Qué pedir"
@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "El traje forestal para bombero, pieza por pieza"
     duo:
-      - "Tres módulos: camisola y pantalón, la dotación de todos los días; chamarra y overol, cuando se necesita más cobertura; y nuquera y conjunto dual, para proteger la nuca o cubrir dos escenarios con un solo equipo. En cada uno, cómo se especifica y qué revisamos."
+      - "La dotación forestal va por uso. Camisola y pantalón son la ropa de todos los días, y chamarra y overol dan más cobertura. La nuquera protege la nuca y el conjunto dual cubre dos escenarios con un solo equipo. Para cada prenda, cómo se especifica y qué revisamos."
       - "Cada módulo abre la ficha de la pieza o WhatsApp con tu mensaje escrito. Te respondemos con gramaje, talla, corte y norma por escrito, con factura CFDI 4.0."
   modelos:
     eyebrow: "Modelos con ficha"

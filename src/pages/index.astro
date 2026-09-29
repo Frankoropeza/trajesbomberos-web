@@ -41,7 +41,7 @@ import {
 const SEO_HOME = {
   title: 'Trajes para bomberos profesionales y equipo contra incendio',
   description:
-    'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados: Romak Fire, Sköld y Lakeland con ficha técnica. Cotiza en día hábil.',
+    'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados, con ficha técnica por pieza o conjunto completo. Cotiza en día hábil.',
   keywords: ['trajes para bomberos', 'traje de bombero profesional', 'traje contra incendio'],
 } as const;
 
@@ -50,10 +50,10 @@ const hero = {
   title: 'Trajes para bomberos',
   accent: 'profesionales con ficha técnica',
   subtitle:
-    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación —el traje contra incendio que corresponde a cada riesgo—, más el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
+    'Trajes estructurales, de brigadista, forestales, de aproximación, de entrada y de extricación: el traje contra incendio que corresponde a cada riesgo. Sumamos el casco, las botas, los guantes, la monja, los tirantes y el ERA que completan el conjunto. Ficha técnica y factura en cada cotización; envío a los 32 estados.',
   descRight: [
     'En LORICA somos especialistas en una sola línea desde hace más de 35 años: ropa de protección para combate de incendios. Equipamos brigadas industriales obligadas por la NOM-002-STPS-2010, cuerpos de bomberos municipales que compran por licitación y unidades de protección civil en los 32 estados de la República.',
-    'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente —NFPA 1970, la que sustituyó a la NFPA 1971— y condiciones de entrega por escrito. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
+    'Cotizamos con ficha técnica desde el primer mensaje: composite declarado capa por capa, norma vigente y condiciones de entrega por escrito. La referencia actual es la NFPA 1970, que sustituyó a la NFPA 1971. Y si tu operación necesita otra familia de traje, te lo decimos antes de venderte.',
   ],
 };
 
@@ -178,7 +178,7 @@ const faqs = [
   },
   {
     q: '¿Qué son TPP y THL, y por qué importan?',
-    a: 'TPP mide la protección térmica y THL la capacidad de disipar calor del cuerpo. Los mínimos de referencia NFPA son TPP 35 y THL 205. Buscar el TPP más alto posible es un error: si el THL queda bajo, aumenta el estrés térmico, que es la principal causa de lesión no traumática en incendio. Las licitaciones más exigentes fijan ambos valores como criterio de descalificación.',
+    a: 'TPP mide la protección térmica y THL la capacidad de disipar calor del cuerpo. Los mínimos de referencia NFPA son TPP 35 y THL 205. Buscar el TPP más alto posible es un error: si el THL queda bajo, aumenta el estrés térmico de quien trabaja dentro del traje. Por eso conviene fijar ambos valores en el pliego, medidos sobre el mismo composite.',
   },
   {
     q: '¿Cuánto dura un traje estructural?',
@@ -194,7 +194,7 @@ const faqs = [
   },
   {
     q: '¿Qué tipos de trajes para bomberos existen?',
-    a: 'Siete familias que no son intercambiables: estructural (ataque interior en edificaciones), brigadista (conato en industria), forestal (incendio de vegetación), de aproximación o aluminizado (calor radiante), de entrada a la flama (ingreso breve), de extricación (rescate vehicular) y Hazmat (protección química). Cada una se elige por el riesgo de tu operación, no por el precio.',
+    a: 'Hay siete familias y no son intercambiables. Estructural para ataque interior en edificaciones, brigadista para conato en industria y forestal para incendio de vegetación. De aproximación o aluminizado para calor radiante y de entrada para un ingreso breve a la flama. De extricación para rescate vehicular y Hazmat para protección química. Cada una se elige por el riesgo de tu operación, no por el precio.',
   },
   {
     q: '¿Cómo se llama el traje de los bomberos?',
@@ -239,7 +239,7 @@ const ultimosPosts = (await getPosts()).slice(0, 4);
         eyebrow="Categorías de equipo para bomberos"
         title="Equipo para bomberos: trajes, cascos, botas, guantes y más"
         duo={[
-          'Reunimos en un solo proveedor el equipo para bomberos completo: <a href="/trajes/">trajes para bomberos</a> por familia de riesgo, <a href="/equipo-de-proteccion/">equipo de protección</a> —<a href="/cascos/">cascos</a>, <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma</a>, <a href="/botas/">botas</a>, <a href="/guantes/">guantes</a> y monjas—, <a href="/rescate-y-herramientas/">herramientas, mangueras y equipo de rescate</a>.',
+          'Reunimos en un solo proveedor el equipo para bomberos completo. Empieza por los <a href="/trajes/">trajes para bomberos</a> por familia de riesgo y sigue con el <a href="/equipo-de-proteccion/">equipo de protección</a>: <a href="/cascos/">cascos</a>, <a href="/equipo-de-respiracion-autonoma/">equipo de respiración autónoma</a>, <a href="/botas/">botas</a>, <a href="/guantes/">guantes</a> y monjas. La unidad se completa con <a href="/rescate-y-herramientas/">herramientas, mangueras y equipo de rescate</a>.',
           'Elige la categoría y entra a sus tipos y modelos con ficha técnica. Cotizamos por pieza o conjunto completo, con factura CFDI 4.0, sin compra mínima y con envío a los 32 estados.',
         ]}
       />
@@ -257,8 +257,8 @@ const ultimosPosts = (await getPosts()).slice(0, 4);
         eyebrow="Trajes para bomberos"
         title="Siete familias de trajes para bomberos, una por tipo de riesgo"
         duo={[
-          'Los <a href="/trajes/">trajes para bomberos</a> no son un producto único: cada familia se construye para un riesgo distinto. Trajes estructurales para incendio en edificaciones, de brigadista para fuego incipiente en industria, forestales para línea de fuego, de aproximación y de entrada para calor radiante y flama, de extricación para rescate y Hazmat para materiales peligrosos. No son intercambiables.',
-          'Elige la categoría que corresponde a tu operación y consulta su ficha técnica: composite por capa, norma de referencia y compra por pieza o conjunto completo. Cotizamos trajes de bomberos con factura CFDI 4.0, sin compra mínima y con envío a los 32 estados.',
+          'Los <a href="/trajes/">trajes para bomberos</a> no son un producto único: cada familia se construye para un riesgo distinto. El estructural es para incendio en edificaciones y el de brigadista, para fuego incipiente en industria. El forestal trabaja en línea de fuego; los de aproximación y de entrada, frente a calor radiante y flama. El de extricación sirve para rescate y el Hazmat, para materiales peligrosos. No son intercambiables.',
+          'Elige la categoría que corresponde a tu operación y consulta su ficha técnica: composite por capa, norma de referencia y piezas que se pueden reponer por separado.',
         ]}
       />
       <TileGrid>
@@ -279,8 +279,8 @@ const ultimosPosts = (await getPosts()).slice(0, 4);
         eyebrow="Modelos disponibles"
         title="Trajes de bomberos Romak Fire, Sköld y Lakeland con ficha técnica"
         duo={[
-          'En LORICA cotizamos <a href="/trajes/">trajes de bombero profesional</a> de Romak Fire, Sköld y Lakeland: modelos estructurales, de brigadista, forestales y de aproximación, cada uno con su ficha técnica, foto del fabricante y configuración por escrito antes de cotizar.',
-          'Cada modelo muestra su estatus normativo tal como lo declara el fabricante —certificado UL con número, declarado, equivalente o solo materiales—, además de capa exterior, barreras y tallas, para que compares ofertas con el mismo criterio. Nunca presentamos como certificado un modelo que no lo está.',
+          'En LORICA cotizamos <a href="/trajes/">trajes de bombero profesional</a> de Romak Fire, Sköld y Lakeland en cuatro familias: estructural, brigadista, forestal y aproximación. Cada modelo tiene su ficha técnica, foto del fabricante y configuración por escrito antes de cotizar.',
+          'Cada modelo muestra su estatus normativo tal como lo declara el fabricante: certificado UL con número, declarado, equivalente o solo materiales. Sumamos capa exterior, barreras y tallas para que compares ofertas con el mismo criterio. Nunca presentamos como certificado un modelo que no lo está.',
         ]}
       />
       <ModelosGrid />
@@ -309,7 +309,7 @@ const ultimosPosts = (await getPosts()).slice(0, 4);
         eyebrow="Blog técnico"
         title="Lo que preguntan por teléfono, explicado a fondo"
         duo={[
-          'Guías de especificación, normas vigentes, comparativas entre familias y compra pública sobre trajes para bomberos, escritas por gente del ramo y sin copiar fichas de fabricante, para que decidas con información antes de emitir tu requisición.',
+          'Guías de especificación, normas vigentes, comparativas entre familias y compra pública sobre trajes para bomberos. Las escribe gente del ramo, sin copiar fichas de fabricante, para que decidas con información antes de emitir tu requisición.',
           'Empieza por <a href="/blog/como-elegir-traje-para-bomberos/">cómo elegir un traje para bomberos</a> o por <a href="/blog/nfpa-1970-que-cambio/">qué cambió con la NFPA 1970</a>. Cada guía enlaza al catálogo correspondiente y te lleva a cotizar por WhatsApp cuando ya sabes qué necesitas.',
         ]}
       />

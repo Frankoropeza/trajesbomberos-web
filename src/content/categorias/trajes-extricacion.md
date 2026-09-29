@@ -31,19 +31,19 @@ secciones:
     eyebrow: "Qué se cotiza"
     titulo: "Piezas del traje de extricación"
     duo:
-      - "El traje de extricación se arma con seis piezas: chaqueta y pantalón de rescate técnico, el conjunto de dos piezas que se cotiza como set, el overol de una pieza, el conjunto dual para rescate y forestal, y el pantalón de cubierta que se pone sobre el uniforme de estación."
+      - "Para extricación hay seis piezas. Chaqueta y pantalón de rescate técnico se venden sueltos o como conjunto de dos piezas, y el overol viste el cuerpo en una sola prenda. Completan la línea el conjunto dual para rescate y forestal y el pantalón de cubierta, que va sobre el uniforme de estación."
       - "Todas son monocapa y ligeras: dan más protección que el uniforme de estación con mucha menos carga térmica que el chaquetón. Entra a cada pieza para ver cómo se especifica y qué nivel pedir."
   elegir:
     eyebrow: "Qué pedir"
     titulo: "Qué pedir en la cotización de un traje de extricación"
     duo:
-      - "Un traje de extricación se compara por cuatro cosas: resistencia a corte y punción con el dato, no el adjetivo; barrera contra patógenos declarada; movilidad para trabajar hincado; y cinta reflejante para la carretera de noche."
+      - "Dos trajes de extricación se comparan en cuatro puntos: resistencia a corte y punción con el dato, no el adjetivo; barrera contra patógenos declarada; movilidad para trabajar hincado; y cinta reflejante para la carretera de noche."
       - "Descríbenos el tipo de llamado, las posturas y el horario antes de pedir. En la tarjeta de junto está el equipo que se usa con el traje de extricación."
   modulos:
     eyebrow: "A fondo"
     titulo: "El traje de extricación, pieza por pieza"
     duo:
-      - "Tres módulos: chaqueta y pantalón, que se piden por nivel de certificación; conjunto y overol, las dos formas de vestir el cuerpo completo; y conjunto dual y pantalón de cubierta, para dos escenarios o para salir rápido. En cada uno, cómo se especifica y qué revisamos."
+      - "Tres formas de armar el traje de rescate. Chaqueta y pantalón se piden por nivel de certificación; conjunto y overol visten el cuerpo completo. El conjunto dual y el pantalón de cubierta cubren dos escenarios o sirven para salir rápido. De cada una, cómo se especifica y qué revisamos."
       - "Cada módulo abre la ficha de la pieza o WhatsApp con el mensaje listo. Te respondemos con talla, nivel, tela exterior y norma por escrito, con factura CFDI 4.0."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje de extricación"
     duo:
-      - "Lo que más nos preguntan antes de pedir trajes de extricación: por qué no usar el estructural, si protege del fuego, para qué otros rescates sirve, cómo se descontamina y cuándo se retira."
+      - "Antes de pedir trajes de extricación surge la duda de por qué no usar el estructural y si protege del fuego. Aquí también: para qué otros rescates sirve, cómo se descontamina y cuándo se retira."
       - "Si nos escribes, dinos cuántas salidas a accidentes viales tienen y cuántos rescatistas son. El formulario abre WhatsApp con tu consulta y te contestamos en día hábil."
   otras:
     eyebrow: "Otras familias"

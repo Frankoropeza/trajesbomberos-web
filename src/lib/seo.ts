@@ -20,7 +20,7 @@ export function buildKeywordTitle(_kws: readonly string[] = KEYWORDS): string {
 
 // description abre con kw1 y teje las 3 sin sobreoptimizar, ≤160
 export function buildKeywordDescription(): string {
-  return 'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados: Romak Fire, Sköld y Lakeland con ficha técnica. Cotiza en día hábil.';
+  return 'Venta de trajes para bomberos estructurales, forestales, de brigadista y aluminizados, con ficha técnica por pieza o conjunto completo. Cotiza en día hábil.';
 }
 
 export interface MetaAuditResult {

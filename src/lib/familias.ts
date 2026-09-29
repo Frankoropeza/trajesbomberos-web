@@ -26,7 +26,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     eyebrow: 'Más solicitado · Trajes estructurales',
     title: 'Traje estructural para bombero: chaquetón y pantalonera de tres capas',
     description:
-      'Si tu gente entra a una edificación en llamas, esto es lo que se pone. Un traje estructural para bombero no es "ropa gruesa que no se quema": es un composite de tres capas —exterior, barrera de humedad y barrera térmica— trabajando juntas. Quita una y ya no es estructural, aunque en la foto se vea idéntico.',
+      'Si tu gente entra a una edificación en llamas, esto es lo que se pone. Un traje estructural para bombero no es "ropa gruesa que no se quema": es un composite de tres capas que trabajan juntas: exterior, barrera de humedad y barrera térmica. Quita una y ya no es estructural, aunque en la foto se vea idéntico.',
     images: [
       { src: '/images/productos/traje-estructural-bombero-conjunto-frente.avif', alt: 'Traje estructural para bombero con chaquetón y pantalón de tres capas' },
       { src: '/images/productos/chaqueton-estructural-bombero.avif', alt: 'Chaquetón estructural para bombero con DRD integrado' },
@@ -374,7 +374,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     eyebrow: 'Ingreso a la flama',
     title: 'Traje de entrada a la flama: minutos contados, nunca una jornada',
     description:
-      'Es el nivel más extremo del catálogo y el que menos gente necesita de verdad. Permite entrar a la flama —horno, incidente térmico severo, rescate industrial— por un rato muy corto. Pesa, estorba y limita la vista a propósito: no está hecho para trabajar, está hecho para meterse, sacar y salir.',
+      'Es el nivel más extremo del catálogo y el que menos gente necesita de verdad. Permite entrar a la flama por un rato muy corto, en un horno, un incidente térmico severo o un rescate industrial. Pesa, estorba y limita la vista a propósito: no está hecho para trabajar, está hecho para meterse, sacar y salir.',
     images: [
       { src: '/images/productos/traje-entrada-penetracion-flama.avif', alt: 'Traje de entrada aluminizado multicapa para ingreso a la flama' },
       { src: '/images/productos/capucha-entrada-aluminizada.avif', alt: 'Capucha aluminizada de traje de entrada a la flama' },
@@ -461,7 +461,7 @@ export const FAMILIAS: FamiliaDetalle[] = [
     eyebrow: 'Rescate técnico',
     title: 'Traje de extricación: el que evita que gastes tu estructural en un choque',
     description:
-      'La mayoría de las salidas de un cuerpo de bomberos no son incendios: son accidentes viales. Y cada vez que sales a extricación con el traje estructural puesto, lo llenas de aceite, vidrio y fluidos, y le restas vida a un equipo que ya trae fecha de retiro a los diez años. Un traje de extricación es más ligero, más barato de reponer y está hecho justo para eso.',
+      'La mayoría de las salidas de un cuerpo de bomberos no son incendios: son accidentes viales. Y cada vez que sales a extricación con el traje estructural puesto, lo llenas de aceite, vidrio y fluidos. Le restas vida a un equipo que ya trae fecha de retiro a los diez años. Un traje de extricación es más ligero, más barato de reponer y está hecho justo para eso.',
     images: [
       { src: '/images/productos/traje-extricacion-rescate-vehicular.avif', alt: 'Traje de extricación para rescate vehicular' },
       { src: '/images/productos/chaqueta-extricacion-rescate.avif', alt: 'Chaqueta de extricación para rescate técnico' },

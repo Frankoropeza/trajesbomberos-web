@@ -37,13 +37,13 @@ secciones:
     eyebrow: "Qué pedir"
     titulo: "Qué pedir en la cotización de un traje aluminizado"
     duo:
-      - "Un traje aluminizado se compara por cuatro cosas: la superficie reflejante y lo que lleva debajo, que el conjunto sea de la misma familia, la movilidad real con todo puesto y cómo aloja el ERA si tu operación lo necesita."
+      - "Para comparar aluminizados mira cuatro cosas. Primero, la superficie reflejante y lo que lleva debajo; después, que el conjunto sea de la misma familia. Cierra con la movilidad real con todo puesto y con cómo aloja el ERA, si tu operación lo necesita."
       - "Descríbenos la fuente de calor, la distancia y el tiempo de trabajo antes de pedir. En la tarjeta de junto está el equipo que se revisa con el traje aluminizado."
   modulos:
     eyebrow: "A fondo"
     titulo: "El traje de aproximación, pieza por pieza"
     duo:
-      - "Tres módulos: chaquetón y pantalón, que reflejan el calor sobre el cuerpo; capucha y guantes, las piezas que más se acercan a la fuente; y polainas y delantal, para proteger los pies o solo el frente. En cada uno, cómo se especifica y qué revisamos."
+      - "El aluminizado se revisa en tres pares. Chaquetón y pantalón reflejan el calor sobre el cuerpo, y capucha y guantes son las piezas que más se acercan a la fuente. Polainas y delantal protegen los pies o solo el frente. De cada par, cómo se especifica y qué revisamos."
       - "Cada módulo abre la ficha de la pieza o WhatsApp con el mensaje hecho. Te mandamos forro, visor, talla y norma por escrito, con factura CFDI 4.0."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje aluminizado de aproximación"
     duo:
-      - "Lo que más nos preguntan antes de pedir un aluminizado: en qué industrias se usa, qué ropa va debajo, cómo se elige el nivel del conjunto, si se pueden mezclar piezas y cómo se cuida la superficie reflejante."
+      - "Antes de pedir un aluminizado conviene saber en qué industrias se usa, qué ropa va debajo y cómo se elige el nivel del conjunto. Aquí también: si se pueden mezclar piezas y cómo se cuida la superficie reflejante."
       - "Si nos escribes, dinos qué fuente de calor es, a qué distancia trabajas y cuánto dura la maniobra. El formulario abre WhatsApp con tu consulta y te contestamos en día hábil."
   otras:
     eyebrow: "Otras familias"

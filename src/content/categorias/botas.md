@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre botas de bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir botas: qué cambia entre hule y piel, si la forestal sirve para entrar, cómo se mide la talla mexicana, para qué es la entresuela y cómo se secan sin dañarlas."
+      - "Con las botas, las dudas giran en torno al material y la talla: qué cambia entre hule y piel, si la forestal sirve para entrar y cómo se mide la talla mexicana. También para qué es la entresuela y cómo se secan sin dañarlas."
       - "Si nos escribes, incluye la talla mexicana de cada persona y el traje con el que se van a usar. El formulario abre WhatsApp con tu consulta de botas y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

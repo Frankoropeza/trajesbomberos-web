@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "Las herramientas de bombero, explicadas a fondo"
     duo:
-      - "Tres módulos: las herramientas de entrada forzada, las herramientas manuales forestales y la bomba de mochila con el resguardo en la unidad. En cada uno, qué hace cada pieza, qué datos lleva el pedido y qué revisamos antes de proponerla."
+      - "La sección se divide en tres bloques: herramientas de entrada forzada, herramientas manuales forestales y bomba de mochila con su resguardo en la unidad. Para cada pieza verás qué hace, qué datos lleva el pedido y qué revisamos antes de proponerla."
       - "De cada módulo pasas a la especificación de la herramienta o a WhatsApp con el mensaje hecho. Te mandamos material, configuración y soporte por escrito, con factura CFDI 4.0."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre herramientas de bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir herramientas: qué usa un bombero, si Pulaski y McLeod hacen lo mismo, madera o fibra de vidrio, si hay una norma, cómo se integra la bomba de mochila y por qué comprar el soporte."
+      - "Quien equipa herramientas pregunta qué usa un bombero, si Pulaski y McLeod hacen lo mismo y si conviene madera o fibra de vidrio. Respondemos también si hay una norma, cómo se integra la bomba de mochila y por qué comprar el soporte."
       - "Si nos mandas la lista de lo que ya viaja en tu unidad, te cotizamos solo lo que falta. El formulario abre WhatsApp con tu consulta de herramientas y te respondemos en día hábil."
   guias:
     eyebrow: "Blog técnico"

@@ -37,7 +37,7 @@ secciones:
     eyebrow: "Guía de compra"
     titulo: "Cómo elegir un traje de bombero profesional en siete criterios"
     duo:
-      - "Dos trajes amarillos con cinta reflejante pueden proteger para cosas muy distintas. Por eso, antes de hablar de precio, en LORICA revisamos siete cosas: la operación, el composite capa por capa, el TPP y el THL, la norma vigente, la talla, la vida útil y la documentación que pide tu compra."
+      - "Dos trajes amarillos con cinta reflejante pueden proteger para cosas muy distintas. Por eso, antes de hablar de precio, en LORICA revisamos siete cosas. Son la operación, el composite capa por capa, el TPP y el THL, la norma vigente, la talla, la vida útil y la documentación que pide tu compra."
       - "Tómalos como lista de verificación antes de mandar tu requisición. Si una oferta no responde a los siete, todavía no la puedes comparar con otra. En la tarjeta de junto está todo lo que lleva un traje de bombero completo, pieza por pieza."
   modulos:
     eyebrow: "A fondo"
@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje de bombero profesional"
     duo:
-      - "Estas son las dudas que más escuchamos antes de una compra de trajes: cuántos tipos hay, en qué se distingue un estructural de uno de brigadista, qué norma poner en el pliego, qué datos necesitamos para cotizar y qué marcas manejamos."
+      - "Antes de comprar trajes casi todos preguntan cuántos tipos hay y en qué se distingue un estructural de uno de brigadista. Después vienen la norma del pliego, los datos que necesitamos para cotizar y las marcas que manejamos."
       - "¿La tuya no está aquí? Escríbela en el formulario. Se abre WhatsApp con tu pregunta ya redactada y te contestamos en el día hábil; si hace falta, con la ficha técnica adjunta."
   guias:
     eyebrow: "Blog técnico"

@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre cascos de bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir cascos: cuánto duran, si uno industrial sirve para incendio, cómo se lleva con el ERA, qué significan los colores y qué debe traer una cotización para que puedas compararla."
+      - "Las dudas sobre cascos llegan casi en este orden: cuánto duran, si uno industrial sirve para incendio y cómo se lleva con el ERA. Cerramos con qué significan los colores y qué debe traer una cotización para que puedas compararla."
       - "Si tu pregunta es sobre un casco que ya tienes, mándanos una foto de la etiqueta interior por el formulario. Se abre WhatsApp con tu consulta de cascos lista y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

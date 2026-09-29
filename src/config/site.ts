@@ -296,7 +296,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     guia: {
       titulo: 'Qué hace comparable una cotización',
       parrafos: [
-        'Dos cotizaciones de traje estructural pueden decir «NFPA 1970» y aun así no ser comparables. Lo que las vuelve comparables es el detalle por partida: el nombre comercial de cada capa del composite —exterior, barrera de humedad y barrera térmica—, los valores de TPP y THL del conjunto terminado, la edición de la norma, el laboratorio que certifica y la corrida de tallas.',
+        'Dos cotizaciones de traje estructural pueden decir «NFPA 1970» y aun así no ser comparables. Lo que las vuelve comparables es el detalle por partida. Pide el nombre comercial de cada capa del composite (exterior, barrera de humedad y barrera térmica) y los valores de TPP y THL del conjunto terminado. Suma la edición de la norma, el laboratorio que certifica y la corrida de tallas.',
         'En brigadista y forestal la lógica es la misma aunque cambie la norma: tela, gramaje, si la resistencia a la flama es inherente o tratada y el alcance declarado de la certificación. Sin esos datos por escrito, el precio queda como único criterio, y es justo el que no debería decidir.',
         'Los artículos de esta categoría explican cada dato y dónde se lee en una ficha técnica; las fichas de cada pieza del catálogo los traen ya ordenados.',
       ],
@@ -396,7 +396,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
       titulo: 'Qué se revisa en una junta de aclaraciones',
       parrafos: [
         'En una compra pública el traje se evalúa primero en papel. Los pliegos suelen pedir la norma con su edición, el certificado del laboratorio que lista el producto, la carta del fabricante o del distribuidor, una ficha técnica por partida con valores mínimos de TPP y THL, y la corrida de tallas.',
-        'Una cita desactualizada —por ejemplo, pedir solo «NFPA 1971» cuando la vigente es la NFPA 1970— o una ficha sin los nombres comerciales de las capas bastan para descalificar una propuesta, o para que el área usuaria reciba un equipo distinto al que especificó.',
+        'Basta una cita desactualizada para descalificar una propuesta, como pedir solo «NFPA 1971» cuando la vigente es la NFPA 1970. Una ficha sin los nombres comerciales de las capas tiene el mismo efecto, o hace que el área usuaria reciba un equipo distinto al que especificó.',
         'En compras corporativas el proceso es más corto, pero conviene pedir lo mismo: especificación por escrito, factura CFDI 4.0 y fecha de entrega comprometida.',
       ],
       enlaces: [
@@ -529,14 +529,14 @@ export const MARCAS_TRAJE: Marca[] = [
   { nombre: 'INNOTEX', origen: 'Canadá', nota: 'Traje estructural a medida' },
   { nombre: 'Rosenbauer', origen: 'Austria', nota: 'Traje bajo referencia europea EN 469' },
   { nombre: 'Texport', origen: 'Austria', nota: 'Línea X-TREME, referencia europea' },
-  { nombre: 'Fire Equipment de México', origen: 'México', nota: 'Fabricante nacional con certificación UL verificable' },
+  { nombre: 'Fire Equipment de México', origen: 'México', nota: 'Fabricante nacional; su certificación se verifica por modelo' },
 ];
 
 // Materiales del composite: lo que realmente se especifica en un
 // pliego. Son marcas de material, no de traje terminado.
 export const MARCAS_MATERIAL: Marca[] = [
   { nombre: 'PBI', origen: 'Exterior', nota: 'PBI Matrix y PBI Max: referencia de gama alta' },
-  { nombre: 'Nomex · Kevlar (DuPont)', origen: 'Exterior', nota: 'Fibra ignífuga inherente, la más pedida en México' },
+  { nombre: 'Nomex · Kevlar (DuPont)', origen: 'Exterior', nota: 'Fibra ignífuga inherente, base de muchos composites estructurales' },
   { nombre: 'GORE CROSSTECH', origen: 'Barrera de humedad', nota: 'Membrana impermeable y transpirable' },
   { nombre: 'STEDAIR (Stedfast)', origen: 'Barrera de humedad', nota: 'Alternativa habitual a CROSSTECH' },
   { nombre: 'Caldura · Quantum3D', origen: 'Barrera térmica', nota: 'Donde se define la mayor parte del TPP' },

@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "El traje estructural para bombero, pieza por pieza"
     duo:
-      - "Tres módulos: chaquetón y pantalonera, que son el composite; tirantes y rodilleras, que dan soporte y comodidad; y arnés de escape y monja, que resuelven el rescate propio y la interfaz con el ERA. En cada uno, cómo se especifica y qué revisamos antes de proponerlo."
+      - "El estructural se entiende por pares. Chaquetón y pantalonera forman el composite; tirantes y rodilleras dan soporte y comodidad. El arnés de escape y la monja resuelven el rescate propio y la interfaz con el ERA. Para cada par, cómo se especifica y qué revisamos antes de proponerlo."
       - "Cada módulo te lleva a la ficha de la pieza o a WhatsApp con el mensaje escrito. Te mandamos talla, configuración, composite y norma por escrito, con factura CFDI 4.0."
   modelos:
     eyebrow: "Modelos con ficha"
@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje estructural para bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir trajes estructurales: cuántas capas lleva, qué es el DRD, si conviene talla de stock o a medida, qué norma aplica en México y cómo comparar dos propuestas."
+      - "Sobre el traje estructural nos preguntan cuántas capas lleva, qué es el DRD y si conviene talla de stock o a medida. Respondemos además qué norma aplica en México y cómo comparar dos propuestas."
       - "Si tu gente tiene tallas muy distintas, cuéntanos cuántas personas son en el formulario. Se abre WhatsApp con tu consulta sobre trajes estructurales y te contestamos en día hábil."
   otras:
     eyebrow: "Otras familias"

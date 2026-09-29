@@ -16,7 +16,7 @@ hero:
   h1Accent: "para bomberos"
   lead: "Extricación, rescate vertical, entrada forzada, combate forestal, línea de agua y accesorios. El equipo que viaja en la unidad se arma por maniobra, con modelo y medidas por escrito."
   descRight:
-    - "Una unidad no sale solo con trajes. Lleva la herramienta hidráulica para sacar a alguien de un auto, el sistema de cuerda para un rescate vertical, la Halligan y el hacha para abrir una puerta, la Pulaski y el McLeod para la brecha, la manguera con su pitón y la lámpara del casco. Cada pieza depende de otra, así que la cotizamos pensando en la maniobra completa."
+    - "Una unidad no sale solo con trajes. Lleva la herramienta hidráulica para sacar a alguien de un auto y el sistema de cuerda para un rescate vertical. Suma la Halligan y el hacha para abrir una puerta, la Pulaski y el McLeod para la brecha, la manguera con su pitón y la lámpara del casco. Cada pieza depende de otra, así que la cotizamos pensando en la maniobra completa."
     - "En LORICA te decimos por escrito el modelo, el material, las medidas y lo que declara el fabricante. La barra Halligan Romak Fire HAC1007, por ejemplo, mide 91 cm y es de acero inoxidable. Si el fabricante no publica fuerza, presión o norma, no la inventamos. Enviamos a los 32 estados."
   meta: ["4 categorías", "23 tipos de equipo", "Cotización por maniobra", "Envíos a los 32 estados"]
 menu:
@@ -38,7 +38,7 @@ secciones:
     eyebrow: "Guía de compra"
     titulo: "Cómo elegir herramientas y equipo de rescate en seis criterios"
     duo:
-      - "En rescate el error más común no es comprar algo malo, sino algo que no encaja: un mosquetón que no va con la cuerda, una conexión NPSH en una línea NH/NST o una Halligan que no cabe en el soporte de la unidad. Por eso revisamos seis cosas: maniobra, sistema, medidas, referencia, resguardo e inspección."
+      - "En rescate el error más común no es comprar algo malo, sino algo que no encaja. Pasa con un mosquetón que no va con la cuerda, con una conexión NPSH en una línea NH/NST o con una Halligan que no cabe en el soporte de la unidad. Por eso revisamos seis cosas: maniobra, sistema, medidas, referencia, resguardo e inspección."
       - "Úsalos antes de mandar tu requisición y otra vez al recibir el equipo. En la tarjeta de junto tienes lo que suele juntarse para entrada forzada y extricación, con enlace a cada ficha."
   modulos:
     eyebrow: "A fondo"
@@ -50,7 +50,7 @@ secciones:
     eyebrow: "Modelos disponibles"
     titulo: "Modelos de herramientas y accesorios para bomberos con ficha"
     duo:
-      - "Cuatro modelos tienen ficha propia: la barra Halligan Romak Fire HAC1007 de 91 cm en acero inoxidable, la lámpara de casco Streamlight Vantage de 115 lúmenes, los goggles ESS Striketeam XTO (kit BLL1006) y la maleta porta-equipo Romak Fire BPS1005."
+      - "Cuatro modelos tienen ficha propia. Dos son de Romak Fire: la barra Halligan HAC1007 de 91 cm en acero inoxidable y la maleta porta-equipo BPS1005. Los otros dos son la lámpara de casco Streamlight Vantage de 115 lúmenes y los goggles ESS Striketeam XTO (kit BLL1006)."
       - "Lo demás, como la herramienta hidráulica, la cuerda, el arnés, la manguera o la cámara térmica, lo armamos por tipo y configuración. Nos cuentas la maniobra y te proponemos el modelo con lo que declara su fabricante, por escrito."
   comparar:
     eyebrow: "Comparativa"
@@ -62,7 +62,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre herramientas y equipo de rescate para bomberos"
     duo:
-      - "Las dudas que más escuchamos antes de equipar una unidad: qué es comprar por sistema, qué son las «quijadas de la vida», qué norma aplica a arnés y cuerda, qué herramientas lleva una cuadrilla forestal, qué roscas usa una manguera y qué referencia tiene el PASS."
+      - "Antes de equipar una unidad nos preguntan qué es comprar por sistema, qué son las «quijadas de la vida» y qué norma aplica a arnés y cuerda. También qué herramientas lleva una cuadrilla forestal, qué roscas usa una manguera y qué referencia tiene el PASS."
       - "¿No está la tuya? Escríbela en el formulario. Se abre WhatsApp con tu consulta sobre herramientas y rescate y te contestamos en el día hábil."
   guias:
     eyebrow: "Blog técnico"

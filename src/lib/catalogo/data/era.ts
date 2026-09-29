@@ -135,7 +135,7 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           "Antes de asignar una unidad, haz la prueba funcional con presión, regulador, alarmas, capucha, casco y guantes de la cuadrilla."
         ],
         "modelos": [
-          "Para combate surtimos el Sköld Phantöm SCBA-P60FC: cilindro de fibra de carbono de 60 minutos a 4,500 psi, máscara panorámica de silicón con visión de 180° y doble sello, y reguladores de primera y segunda etapa.",
+          "Para combate surtimos el Sköld Phantöm SCBA-P60FC, con cilindro de fibra de carbono de 60 minutos a 4,500 psi. Trae máscara panorámica de silicón con visión de 180° y doble sello, y reguladores de primera y segunda etapa.",
           "Su ficha muestra la norma tal como la declara Sköld. Si tu requisito es NFPA 1970, lo revisamos contigo antes de cotizar para que la partida no quede corta."
         ],
         "faq": [

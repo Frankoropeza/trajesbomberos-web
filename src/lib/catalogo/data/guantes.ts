@@ -22,7 +22,7 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "nombreCard": "Guante estructural",
       "title": "Guantes de bombero estructural con barrera de humedad",
       "description": "Guantes de bombero estructural: capas, barreras, puño, ajuste y referencia NFPA 1970 para comparar una cotización institucional por operación.",
-      "lead": "El guante estructural es el que entra contigo a un incendio en edificación: cuero por fuera, barrera de humedad y forro térmico por dentro, y un puño que solapa con la manga del chaquetón sin soltar la boquilla.",
+      "lead": "El guante estructural es el que entra contigo a un incendio en edificación. Lleva cuero por fuera, barrera de humedad y forro térmico por dentro, y un puño que solapa con la manga del chaquetón sin soltar la boquilla.",
       "imagen": {
         "src": "/images/catalogo/guantes/tipo-guante-estructural.avif",
         "alt": "Guante estructural para bombero",

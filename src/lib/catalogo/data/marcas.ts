@@ -170,7 +170,7 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Selección por operación"
       ],
       "resumen": [
-        "Cotizamos 8 modelos Sköld: los trajes estructurales Hero PBI MAX y Hero Nomex IIIA, el Brigadista Defender, el casco Viking FPCM, el guante FPGS, la escafandra FPEN, las botas Workman FPBSK y el ERA Phantöm SCBA-P60FC.",
+        "Cotizamos 8 modelos Sköld. En trajes, los estructurales Hero PBI MAX y Hero Nomex IIIA y el Brigadista Defender; en complementos, el casco Viking FPCM, el guante FPGS, la escafandra FPEN, las botas Workman FPBSK y el ERA Phantöm SCBA-P60FC.",
         "Solo el Hero Nomex IIIA publica certificación UL, con el número MH60435. El Hero PBI MAX y el Brigadista Defender se presentan como equivalentes, y los componentes, con la declaración de su fabricante."
       ],
       "bloques": [

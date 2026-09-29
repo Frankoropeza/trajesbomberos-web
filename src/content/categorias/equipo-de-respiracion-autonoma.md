@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre equipos de respiración autónoma"
     duo:
-      - "Lo que más nos preguntan antes de pedir un ERA: cuánto dura el cilindro, cada cuándo se prueba, en qué se distingue de una mascarilla con filtro, qué es una atmósfera IDLH, qué partes tiene y si el PASS viene incluido."
+      - "Antes de pedir un ERA casi todos preguntan cuánto dura el cilindro y cada cuándo se prueba. Respondemos también en qué se distingue de una mascarilla con filtro, qué es una atmósfera IDLH, qué partes tiene y si el PASS viene incluido."
       - "Si vas a reponer cilindros o máscaras de un ERA que ya usas, dinos la marca y el modelo en el formulario. Se abre WhatsApp con la consulta armada y te respondemos en día hábil."
   guias:
     eyebrow: "Blog técnico"

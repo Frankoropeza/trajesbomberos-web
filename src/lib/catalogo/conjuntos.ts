@@ -23,7 +23,7 @@ export interface ConjuntoFamilia {
 export const CONJUNTOS: Record<string, ConjuntoFamilia> = {
   estructural: {
     duo: [
-      'El traje estructural trabaja en sistema: el casco tiene que asentar sobre la monja sin levantar el cuello del chaquetón, el guante solapa 5 cm con el puño y la bota recibe la pantalonera con el traslape completo al arrodillarse. Un componente fuera de norma o de talla rompe la cobertura aunque el traje esté certificado.',
+      'El traje estructural trabaja en sistema. El casco tiene que asentar sobre la monja sin levantar el cuello del chaquetón, el guante solapa 5 cm con el puño y la bota recibe la pantalonera con el traslape completo al arrodillarse. Un componente fuera de norma o de talla rompe la cobertura aunque el traje esté certificado.',
       'Cotizamos el conjunto completo con una sola ficha técnica por partida: casco, guante, bota, monja y ERA compatibles con el modelo de traje que elijas. Si ya tienes alguna pieza, dinos marca y modelo y te decimos por WhatsApp cuál de las nuestras embona sin cambiar lo que ya funciona.',
     ],
     piezas: [
@@ -53,7 +53,7 @@ export const CONJUNTOS: Record<string, ConjuntoFamilia> = {
   },
   forestal: {
     duo: [
-      'En línea de fuego el traje forestal se acompaña de casco forestal ventilado con nuquera, guante forestal de piel, bota de caña alta con suela de agarre y las herramientas manuales de la cuadrilla: Pulaski, McLeod, batefuego y bomba de mochila. El peso total del conjunto decide cuánto rinde la brigada en pendiente.',
+      'En línea de fuego el traje forestal se acompaña de casco forestal ventilado con nuquera, guante forestal de piel y bota de caña alta con suela de agarre. Suma las herramientas manuales de la cuadrilla: Pulaski, McLeod, batefuego y bomba de mochila. El peso total del conjunto decide cuánto rinde la brigada en pendiente.',
       'Cotizamos el conjunto forestal por cuadrilla, con herramientas y goggles incluidos si los necesitas, y con envío a cualquier estado de la República. Dinos cuántos elementos y en qué terreno trabajan y te proponemos el kit completo con ficha técnica.',
     ],
     piezas: [
@@ -95,7 +95,7 @@ export const CONJUNTOS: Record<string, ConjuntoFamilia> = {
   extricacion: {
     duo: [
       'En rescate vehicular el traje de extricación se combina con guante de rescate de alta destreza, casco de rescate técnico con barbiquejo, linterna y la herramienta hidráulica, cuerda, arnés y mosquetones certificados bajo NFPA 2500. El traje protege de vidrio y bordes; la herramienta define el tiempo de liberación.',
-      'Cotizamos el equipo de rescate vehicular completo —traje, guantes, casco y herramienta hidráulica— para cuerpos de bomberos y grupos de rescate, con ficha técnica por partida y capacitación de uso si la necesitas. Dinos qué unidad equipas y te armamos la propuesta.',
+      'Cotizamos el equipo de rescate vehicular completo, con traje, guantes, casco y herramienta hidráulica, para cuerpos de bomberos y grupos de rescate, con ficha técnica por partida y capacitación de uso si la necesitas. Dinos qué unidad equipas y te armamos la propuesta.',
     ],
     piezas: [
       { href: '/guantes/guante-rescate-extricacion/', nombre: 'Guante de rescate y extricación', porQue: 'Destreza para herramienta hidráulica con protección contra corte.' },
@@ -110,7 +110,7 @@ export const CONJUNTOS: Record<string, ConjuntoFamilia> = {
   hazmat: {
     duo: [
       'El traje Hazmat nivel A o B se usa con ERA de combate dentro o fuera del encapsulado, máscara con sello verificado, dispositivo PASS y guantes y botas químicas compatibles con la sustancia. La barrera del traje no sirve si el ERA o los guantes no resisten el mismo agente.',
-      'Cotizamos el conjunto Hazmat completo por nivel —traje, ERA, máscara, guantes y botas químicas— con la tabla de compatibilidad química de cada componente. Escríbenos con la sustancia y el nivel de protección que marca tu procedimiento.',
+      'Cotizamos el conjunto Hazmat completo por nivel (traje, ERA, máscara, guantes y botas químicas) con la tabla de compatibilidad química de cada componente. Escríbenos con la sustancia y el nivel de protección que marca tu procedimiento.',
     ],
     piezas: [
       { href: '/equipo-de-respiracion-autonoma/era-de-combate/', nombre: 'ERA de combate', porQue: 'Aire autónomo obligatorio en nivel A y B.' },

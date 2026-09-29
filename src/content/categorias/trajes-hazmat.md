@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "El equipo Hazmat, pieza por pieza"
     duo:
-      - "Tres módulos: los niveles A y B, para vapor y para salpicadura; el nivel C y el overol desechable, para contaminantes conocidos y tareas delimitadas; y botas y guantes químicos, las interfaces que cierran el sistema. En cada uno, qué protege y qué revisamos."
+      - "La protección química se ordena por nivel. Los niveles A y B son para vapor y salpicadura; el nivel C y el overol desechable, para contaminantes conocidos y tareas delimitadas. Botas y guantes químicos son las interfaces que cierran el sistema. De cada nivel, qué protege y qué revisamos."
       - "Cada módulo abre la ficha de la pieza o WhatsApp con tu mensaje escrito. Te respondemos con la compatibilidad del fabricante, la configuración y el método de retiro por escrito."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje Hazmat"
     duo:
-      - "Lo que más nos preguntan antes de pedir equipo Hazmat: qué separa el nivel A del B, si sirve para incendio, cómo saber si resiste una sustancia, qué norma aplica en México y qué pasa si no se identifica el agente."
+      - "En Hazmat, la primera pregunta es qué separa el nivel A del B y la segunda, si sirve para incendio. Respondemos también cómo saber si resiste una sustancia, qué norma aplica en México y qué pasa si no se identifica el agente."
       - "Si nos escribes, incluye la sustancia o el proceso, la concentración, la temperatura y el tiempo de la tarea. El formulario abre WhatsApp con tu consulta y te contestamos en día hábil."
   otras:
     eyebrow: "Otras familias"

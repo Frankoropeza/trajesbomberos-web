@@ -1,6 +1,6 @@
 ---
 title: "Aviso de privacidad"
-description: "Aviso de privacidad de LORICA Trajes para Bomberos: qué datos recabamos al cotizar trajes para bomberos, para qué los usamos y cómo ejercer tus derechos ARCO."
+description: "Aviso de privacidad: qué datos recabamos al cotizar trajes para bomberos, para qué los usamos y cómo ejercer tus derechos ARCO."
 actualizado: 2026-09-28
 ---
 

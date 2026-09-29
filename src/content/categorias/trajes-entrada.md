@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "El traje de entrada a la flama, pieza por pieza"
     duo:
-      - "Tres módulos: los dos conjuntos de penetración, la capucha y los guantes que protegen cara y manos, y la variante para hornos con sus accesorios. En cada uno, qué incluye, cómo se especifica y qué revisamos antes de proponerlo."
+      - "El equipo de entrada se ve en tres partes: los dos conjuntos de penetración, la capucha y los guantes que protegen cara y manos, y la variante para hornos con sus accesorios. En cada parte, qué incluye, cómo se especifica y qué revisamos antes de proponerlo."
       - "Cada módulo lleva a la ficha de la pieza o a WhatsApp con el mensaje escrito. Te respondemos con talla, configuración y la ficha del fabricante por escrito."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje de entrada a la flama"
     duo:
-      - "Lo que más nos preguntan antes de pedir un traje de entrada: cuánto tiempo se puede estar dentro, si hay norma NFPA, si se puede usar sin ERA, si de verdad lo necesitas y cuánto entrenamiento requiere."
+      - "Un traje de entrada genera preguntas serias: cuánto tiempo se puede estar dentro, si hay norma NFPA y si se puede usar sin ERA. También si de verdad lo necesitas y cuánto entrenamiento requiere."
       - "Si nos escribes, dinos la tarea, las condiciones de calor y qué equipo de respiración usa tu gente. El formulario abre WhatsApp con tu consulta y te contestamos en día hábil."
   otras:
     eyebrow: "Otras familias"
