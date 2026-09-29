@@ -16,7 +16,7 @@ interface Props {
 const { eyebrow, title, accent, subtitle, descRight, meta = [], image } = Astro.props;
 ---
 <section class="hero">
-  {image && <img class="hero__bg" src={image.src} alt={image.alt} width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" />}
+  {image && <img class="hero__bg" src={image.src} srcset={`${image.src.replace(/\.avif$/, '-800.avif')} 800w, ${image.src} 1600w`} sizes="100vw" alt={image.alt} width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" />}
   {image && <div class="hero__veil" aria-hidden="true"></div>}
   <div class="hero__stripes" aria-hidden="true"></div>
   <div class="container hero-grid">

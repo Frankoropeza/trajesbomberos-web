@@ -18,7 +18,8 @@ interface Props {
   index?: number;
 }
 const { nombre, desc, chips, spec, img, alt, index = 0 } = Astro.props;
-const eager = index < 3;
+// El hero ya lleva la imagen prioritaria (LCP): las tarjetas cargan diferidas.
+const eager = false;
 // Si la pieza tiene ficha L4 publicada, la tarjeta lleva a la ficha
 // y el CTA de WhatsApp pasa a segundo plano.
 const ficha = piezaPorNombreCard(nombre);

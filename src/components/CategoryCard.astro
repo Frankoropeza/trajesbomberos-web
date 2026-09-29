@@ -32,7 +32,8 @@ const {
   external = false,
   current = false,
 } = Astro.props;
-const eager = index < 4;
+// El hero ya lleva la imagen prioritaria (LCP): las tarjetas cargan diferidas.
+const eager = false;
 const Tag = current ? 'div' : 'a';
 ---
 <Tag
@@ -50,7 +51,6 @@ const Tag = current ? 'div' : 'a';
       height="400"
       loading={eager ? 'eager' : 'lazy'}
       decoding="async"
-      fetchpriority={index === 0 ? 'high' : undefined}
     />
     {current ? (
       <span class="cat-card__badge cat-card__badge--here">Estás aquí</span>

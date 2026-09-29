@@ -114,7 +114,7 @@ const article = {
 
           {d.imagen && (
             <figure class="post__cover">
-              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="800" height="450" loading="eager" decoding="async" />
+              <img src={d.imagen} alt={d.imagenAlt ?? ''} width="800" height="450" loading="lazy" decoding="async" />
               {d.imagenAlt && <figcaption>{d.imagenAlt}</figcaption>}
             </figure>
           )}

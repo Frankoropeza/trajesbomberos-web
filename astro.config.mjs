@@ -17,5 +17,7 @@ export default defineConfig({
   },
   build: {
     format: 'directory',
+    // CSS en línea: elimina las hojas que bloqueaban el primer render
+    inlineStylesheets: 'always',
   },
 });
