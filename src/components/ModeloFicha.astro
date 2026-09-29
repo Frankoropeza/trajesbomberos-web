@@ -7,6 +7,7 @@ import CTABanner from '@components/CTABanner.astro';
 import NormaBadge from '@components/NormaBadge.astro';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeSeccion, modelosDeTipo } from '@lib/catalogo/modelos';
+import { MODELOS } from '@lib/catalogo/data';
 import type { Modelo, Seccion, Tipo } from '@lib/catalogo/types';
 import { waUrl } from '@lib/wa';
 
@@ -27,6 +28,19 @@ const rows = isTipo ? (tipo.especificacion ?? []) : [
 const image = isTipo ? tipo.imagen : modelo.imagen;
 const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
 const related = !isTipo && modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : [];
+const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre) : [];
+const hrefModeloMarca = (item: Modelo) => item.seccion === 'trajes' ? `/trajes/${item.familia}/modelos/${item.id}/` : `/${item.seccion}/${item.id}/`;
+const componentesKit = isTipo && seccion.slug === 'kits' ? {
+  'kit-estructural': [
+    { nombre: 'Bullard LTX', href: '/cascos/bullard-ltx/' }, { nombre: 'Croydon Filtrex', href: '/botas/croydon-filtrex/' }, { nombre: 'Veridian Fire Pro II', href: '/guantes/veridian-fire-pro-ii/' }, { nombre: 'Majestic PAC II', href: '/capuchas/majestic-pac-ii/' },
+  ],
+  'kit-brigadista': [
+    { nombre: 'Bullard LTX', href: '/cascos/bullard-ltx/' }, { nombre: 'Romak CAP1005', href: '/capuchas/romak-cap1005/' }, { nombre: 'Romak Firemax VI', href: '/guantes/romak-firemax-vi/' }, { nombre: 'Romak Workman Fire', href: '/botas/romak-workman-fire/' },
+  ],
+  'kit-forestal': [
+    { nombre: 'Fire Ranger Explorer', href: '/trajes/forestal/modelos/romak-fire-ranger-explorer/' }, { nombre: 'Romak BOMW1002', href: '/trajes/forestal/modelos/romak-bomw1002/' }, { nombre: 'Bullard Wildland FH911H', href: '/cascos/bullard-fh911h/' }, { nombre: 'ESS Striketeam XTO', href: '/accesorios/ess-striketeam-xto/' },
+  ],
+}[tipo.slug] ?? [] : [];
 const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 ---
@@ -42,6 +56,8 @@ const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` 
     {isTipo && tipo.errores && <section class="block"><SectionHeading eyebrow="Antes de comprar" title="Errores que conviene evitar" /><ul class="features">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
     {!isTipo && seccion.checklistCompra && <section class="block"><SectionHeading eyebrow="Antes de ordenar" title={seccion.checklistCompra.titulo} />{seccion.checklistCompra.parrafos.map((paragraph) => <p class="text">{paragraph}</p>)}</section>}
     {related.length > 0 && <section class="block"><SectionHeading eyebrow="Mismo tipo" title="Otros modelos disponibles" /><div class="cards">{related.map((item) => <a href={`/${seccion.slug}/${item.id}/`}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
+    {modelosMarca.length > 0 && <section class="block"><SectionHeading eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><div class="cards">{modelosMarca.map((item) => <a href={hrefModeloMarca(item)}><img src={item.imagen?.src} alt={item.imagen?.alt} width={item.imagen?.width} height={item.imagen?.height} loading="lazy" /><h2>{item.marca} {item.nombre}</h2><NormaBadge estatus={item.estatusNorma} norma={item.norma} certificacion={item.certificacion} /></a>)}</div></section>}
+    {componentesKit.length > 0 && <section class="block"><SectionHeading eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
   </main><aside><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>Ver catálogo</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosDeSeccion(seccion.slug).map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={`/${seccion.slug}/${item.id}/`}>{item.marca} {item.nombre}</a>)}</nav></aside></div></div>
   <CTABanner variant="dark" title={`Cotiza ${nombre}`} text="Indica operación, número de elementos y accesorios para confirmar por escrito la configuración." buttons={[{ label: 'Cotizar por WhatsApp', href: waUrl(waMessage), icon: 'wa', primary: true, external: true }, { label: `Volver a ${seccion.nombre.toLowerCase()}`, href: `/${seccion.slug}/`, icon: 'catalog' }]} />
