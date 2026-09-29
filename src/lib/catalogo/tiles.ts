@@ -94,7 +94,7 @@ const SUBS_FAMILIA: Record<string, [string, string][]> = {
   aproximacion: [['Chaquetón aluminizado', 'chaqueton'], ['Pantalón aluminizado', 'pantalon'], ['Capucha aluminizada', 'capucha'], ['Guantes aluminizados', 'guantes']],
   entrada: [['Traje de penetración', 'conjunto-corta-duracion'], ['Penetración avanzada', 'conjunto-avanzado'], ['Capucha de penetración', 'capucha'], ['Traje para hornos', 'hornos']],
   extricacion: [['Chaqueta de rescate técnico', 'chaqueta'], ['Pantalón de rescate técnico', 'pantalon'], ['Conjunto de extricación', 'conjunto'], ['Overol de rescate técnico', 'overol']],
-  hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes químicos', 'guantes-quimicos']],
+  hazmat: [['Traje encapsulado nivel A', 'traje-encapsulado-nivel-a'], ['Traje químico nivel B', 'traje-nivel-b'], ['Botas químicas', 'botas-quimicas'], ['Guantes para químicos', 'guantes-quimicos']],
 };
 const RETRATO = new Set([
   '/images/productos/traje-estructural-chaqueton-pantalon-bombero.avif',

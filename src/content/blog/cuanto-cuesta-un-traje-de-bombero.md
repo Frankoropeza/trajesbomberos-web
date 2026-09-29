@@ -56,7 +56,7 @@ Tampoco la ley mexicana exige de forma automática una certificación NFPA para 
 
 ## Tallas, ajustes y configuración por usuario
 
-La talla estándar puede funcionar cuando el fabricante tiene una guía clara, pero el levantamiento de medidas, la prueba de movilidad y la configuración de cada usuario afectan la cotización. Chaquetón y pantalonera deben permitir moverse con las capas que se usarán realmente, además de trabajar con botas, guantes, monja y ERA. Una talla incorrecta no se corrige con una prenda más grande: puede abrir interfaces, estorbar controles o cansar al usuario.
+La talla estándar puede funcionar cuando el fabricante tiene una guía clara, pero el levantamiento de medidas, la prueba de movilidad y la configuración de cada usuario afectan la cotización. Chaquetón y pantalonera deben permitir moverse con las capas que se usarán realmente, además de trabajar con [botas](/botas/), guantes, monja y ERA. Una talla incorrecta no se corrige con una prenda más grande: puede abrir interfaces, estorbar controles o cansar al usuario.
 
 El ajuste a medida, cuando procede, requiere más información y coordinación que una entrega de tallas estándar. Conviene separar el levantamiento de tallas como actividad de la compra, definir quién valida la tabla y conservar la guía del fabricante. Una oferta que no aclara si considera talla estándar, ajuste especial o prueba física deja abierta una diferencia relevante para el costo y la entrega.
 

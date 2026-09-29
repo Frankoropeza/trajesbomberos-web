@@ -63,7 +63,7 @@ La tabla no convierte el tiempo de exposición en una cifra universal. Éste dep
 
 ## Qué integra un conjunto de aproximación
 
-Un [traje de aproximación](/trajes/aproximacion/) puede armarse con chaquetón, pantalón, capucha con visor, guantes, polainas, delantal u otros complementos que el riesgo requiera. El [chaquetón aluminizado](/trajes/aproximacion/chaqueton/) y el [pantalón aluminizado](/trajes/aproximacion/pantalon/) se prueban como piezas que conservan solape; no basta que cada una cubra por separado. La capucha protege cabeza y cuello, y su visor se revisa con casco, comunicación y, cuando corresponda, la interfaz respiratoria.
+Un [traje de aproximación](/trajes/aproximacion/) puede armarse con chaquetón, pantalón, capucha con visor, guantes, polainas, delantal u otros complementos que el riesgo requiera. El [chaquetón aluminizado](/trajes/aproximacion/chaqueton/) y el [pantalón aluminizado](/trajes/aproximacion/pantalon/) se prueban como piezas que conservan solape; no basta que cada una cubra por separado. La capucha protege cabeza y cuello, y su visor se revisa con [casco](/cascos/), comunicación y, cuando corresponda, la interfaz respiratoria.
 
 Los [guantes aluminizados de aproximación](/trajes/aproximacion/guantes/) deben permitir tomar una herramienta o control sin abrir la unión con manga. Polainas o delantal se agregan sólo cuando la exposición y posición de trabajo los justifican: un delantal cubre el frente, no espalda, brazos ni cabeza. Para una estación ARFF, fundición, refinería u horno, la orden debe decir qué tarea, dirección de radiación, movimientos y piezas se evaluaron, en lugar de nombrar un “traje aluminizado” genérico.
 

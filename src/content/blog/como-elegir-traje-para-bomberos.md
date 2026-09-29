@@ -74,7 +74,7 @@ Una oferta que no traiga esto no se puede comparar con otra. Ni siquiera es una 
 
 **3. A nombre de quién está la certificación.** La certificación es del **conjunto terminado y del fabricante listado ante el organismo certificador**, nunca de la tela suelta ni del distribuidor. Es la diferencia entre "usamos material certificado" y "el traje está certificado", que no son lo mismo.
 
-**4. El desglose por pieza.** Chaquetón, pantalonera, casco, monja, botas, guantes. Un precio global impide comparar y complica la reposición: cuando se te rompa una pieza vas a querer pedir esa pieza, no el conjunto.
+**4. El desglose por pieza.** Chaquetón, pantalonera, [casco](/cascos/), monja, [botas](/botas/), guantes. Un precio global impide comparar y complica la reposición: cuando se te rompa una pieza vas a querer pedir esa pieza, no el conjunto.
 
 **5. Tiempo de entrega y condiciones, por escrito.** Talla de stock y traje a medida no tienen el mismo plazo. Si tu compra depende de un cierre de ejercicio fiscal, esto no es un detalle: es el proyecto completo.
 

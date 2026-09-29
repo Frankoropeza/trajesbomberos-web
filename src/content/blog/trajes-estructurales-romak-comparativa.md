@@ -43,7 +43,7 @@ Romak Fire publica Protector, Profesional, Defender, Vantage y Maverick II. Esta
 
 ## Qué comparar antes del nombre de la línea
 
-La primera comparación es operación autorizada, talla y necesidad de interfaces con casco, guante, bota y ERA. Después vienen exterior, barrera de humedad, barrera térmica, refuerzos, tirantes, bolsillos y documentación. Un modelo con varias opciones no se especifica escribiendo únicamente su nombre; se detallan las capas y accesorios que fueron evaluados.
+La primera comparación es operación autorizada, talla y necesidad de interfaces con [casco](/cascos/), guante, bota y ERA. Después vienen exterior, barrera de humedad, barrera térmica, refuerzos, tirantes, bolsillos y documentación. Un modelo con varias opciones no se especifica escribiendo únicamente su nombre; se detallan las capas y accesorios que fueron evaluados.
 
 También distingue certificación, equivalencia y declaración. La [marca Romak Fire](/marcas/romak-fire/) reúne líneas y referencias, pero el documento aplicable siempre se revisa por modelo y configuración. Si el número no se publica, se pide al cotizar.
 

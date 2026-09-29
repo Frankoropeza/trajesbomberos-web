@@ -71,7 +71,7 @@ Para guantes, mide la circunferencia de la mano dominante alrededor de los nudil
 
 El pie se mide de talón a dedo más largo, con el calcetín de trabajo y ambos pies apoyados. Usa la lectura mayor y compárala únicamente con la tabla declarada por el modelo. No traslades un número de bota de otra marca: horma, forro, plantilla y sistema de talla pueden cambiar. Prueba las [botas para bombero](/botas/) con el pantalón y camina, sube un escalón y flexiona; talón que levanta, dedos que golpean la puntera o caña que limita el paso requieren corregir antes de liberar la partida.
 
-La medida de cuello confirma que cuello de prenda, casco, capucha y máscara, cuando aplica, trabajen sin presión ni huecos. La [capucha para bombero](/capuchas/) no se resuelve con una medida aislada: se valida con casco, cuello y el movimiento de mirar arriba o hacia los lados. Registra si la persona usa lentes, barba que afecte un respirador ajustado o accesorios que cambien la interfaz, sin sustituir la prueba específica que requiera el programa de protección respiratoria.
+La medida de cuello confirma que cuello de prenda, [casco](/cascos/), capucha y máscara, cuando aplica, trabajen sin presión ni huecos. La [capucha para bombero](/capuchas/) no se resuelve con una medida aislada: se valida con casco, cuello y el movimiento de mirar arriba o hacia los lados. Registra si la persona usa lentes, barba que afecte un respirador ajustado o accesorios que cambien la interfaz, sin sustituir la prueba específica que requiera el programa de protección respiratoria.
 
 ## Talla de stock, talla a medida y familia
 

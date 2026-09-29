@@ -37,7 +37,7 @@ productos:
   - "/kits/kit-estructural/"
 ---
 
-Cuando preguntas cuánto pesa un traje de bombero, la respuesta útil no es el peso de una prenda colgada. En una salida, la persona carga chaquetón y pantalonera, casco, monja, guantes, botas y, cuando corresponde, el equipo de respiración autónoma (ERA), además de radio, lámpara o herramientas.
+Cuando preguntas cuánto pesa un traje de bombero, la respuesta útil no es el peso de una prenda colgada. En una salida, la persona carga chaquetón y pantalonera, [casco](/cascos/), monja, guantes, [botas](/botas/) y, cuando corresponde, el equipo de respiración autónoma (ERA), además de radio, lámpara o herramientas.
 
 Como referencia orientativa, un equipo completo con ERA puede quedar entre 20 y 35 kg según configuración; un ERA con cilindro de fibra de carbono ronda de forma orientativa 10 a 15 kg. No son cifras de masa de un modelo específico ni sustituyen la ficha técnica: sirven para dimensionar la carga que se debe probar antes de comprar.
 
