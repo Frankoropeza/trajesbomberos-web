@@ -3329,40 +3329,7 @@
    },
    {
     "nombre": "patronatobomberoscuauhtemoc.org",
-    "url": "https://patronatobomberoscuauhtemoc.org/"
-   }
-  ],
-  "verificadoEl": "2026-06",
-  "confianza": "alta",
-  "municipioSlug": "cuauhtemoc"
- },
- {
-  "id": "chih-20",
-  "nombre": "Patronato del H. Cuerpo de Bomberos de Cuauhtémoc A.C.",
-  "slug": "patronato-del-h-cuerpo-de-bomberos-de-cuauhtemoc-a-c",
-  "estado": "chihuahua",
-  "estadoNombre": "Chihuahua",
-  "ciudad": "Ciudad Cuauhtémoc",
-  "municipio": "Cuauhtémoc",
-  "tipo": "Voluntarios",
-  "corporacion": "Patronato del H. Cuerpo de Bomberos de Cuauhtémoc A.C.",
-  "rolEstacion": "unica",
-  "direccion": "10 de Mayo #2210, Col. Progreso, Ciudad Cuauhtémoc",
-  "coordenadas": {
-   "lat": 28.4089,
-   "lng": -106.8667,
-   "precision": "exacta"
-  },
-  "telefono": "(614) 239-6563",
-  "email": "contacto@patronatobomberoscuauhtemoc.org",
-  "sitioWeb": "https://patronatobomberoscuauhtemoc.org/",
-  "servicios": [
-   "proteccion-civil"
-  ],
-  "fuentes": [
-   {
-    "nombre": "patronatobomberoscuauhtemoc.org",
-    "url": "https://patronatobomberoscuauhtemoc.org/"
+    "retirada": "https://patronatobomberoscuauhtemoc.org/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -3901,13 +3868,11 @@
   "tipo": "Municipal",
   "corporacion": "Cuerpo de Bomberos / Protección Civil de Nuevo Casas Grandes",
   "rolEstacion": "unica",
-  "direccion": "Calle Candameño No. 5709, Fracc. Aeropuerto, C.P. 31700, Nuevo Casas Grandes",
   "coordenadas": {
    "lat": 30.4167,
    "lng": -107.9167,
    "precision": "aproximada"
   },
-  "telefono": "(636) 694-1529",
   "sitioWeb": "https://ncg.gob.mx/",
   "servicios": [
    "incendios-estructurales",
@@ -3917,7 +3882,11 @@
   "fuentes": [
    {
     "nombre": "proteccioncivil.gob.mx",
-    "url": "https://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+    "retirada": "https://www.proteccioncivil.gob.mx/work/models/sismos/Resource/42/1/images/directorio_umpc.pdf"
+   },
+   {
+    "nombre": "facebook.com — Bomberos y Protección Civil NCG",
+    "url": "https://www.facebook.com/p/Bomberos-y-Protecci%C3%B3n-Civil-NCG-100066563768191/"
    }
   ],
   "verificadoEl": "2026-06",
