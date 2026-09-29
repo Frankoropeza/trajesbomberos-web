@@ -5,6 +5,7 @@ import SpecTable from '@components/SpecTable.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
 import NormaBadge from '@components/NormaBadge.astro';
 import ModelosGrid from '@components/ModelosGrid.astro';
+import CompletaElConjunto from '@components/CompletaElConjunto.astro';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeFamilia, modelosDeSeccion, modelosDeTipo, urlModelo } from '@lib/catalogo/modelos';
 import { MODELOS } from '@lib/catalogo/data';
@@ -31,6 +32,15 @@ const image = isTipo ? tipo.imagen : modelo.imagen;
 const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
 const related = !isTipo ? (modelo.familia ? modelosDeFamilia(modelo.familia).filter((item) => item.id !== modelo.id) : modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : []) : [];
 const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre) : [];
+// Modelos publicados de este tipo (enlazado tipo → modelo; auditoría 2026-09-29, E2)
+const modelosTipo = isTipo && seccion.slug !== 'marcas' ? modelosDeTipo(tipo.slug) : [];
+const listaModelos = modelosTipo.map((item) => `${item.marca} ${item.nombre}`);
+const nombresModelos = listaModelos.length > 1 ? `${listaModelos.slice(0, -1).join(', ')} y ${listaModelos.at(-1)}` : listaModelos[0] ?? '';
+const marcasTipo = [...new Set(modelosTipo.map((item) => item.marca))];
+const duoModelosTipo = isTipo ? [
+  `Para ${tipo.nombre.toLowerCase()} surtimos ${modelosTipo.length === 1 ? 'el modelo' : `${modelosTipo.length} modelos`} ${nombresModelos}, de ${marcasTipo.join(' y ')}, cada uno con su ficha técnica, el estatus normativo tal como lo declara el fabricante (certificado con número, declarado o solo materiales), tallas publicadas y las configuraciones que se pueden pedir por escrito.`,
+  `${tipo.lead} Dinos tu operación y cuántos elementos son: te decimos cuál de estos modelos conviene, te mandamos la ficha por WhatsApp y te confirmamos tiempo de entrega con factura CFDI 4.0.`,
+] : undefined;
 const familiaModelo = !isTipo && modelo.familia ? FAMILIAS.find((familia) => familia.slug === modelo.familia) : undefined;
 const piezasFamilia = familiaModelo ? piezasDeFamilia(familiaModelo.slug) : [];
 const modelosSidebar = familiaModelo ? modelosDeFamilia(familiaModelo.slug) : modelosDeSeccion(seccion.slug);
@@ -140,7 +150,9 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
     {isTipo && tipo.errores && <section class="block"><SectionHeading clave="errores" eyebrow="Antes de comprar" title="Errores que conviene evitar" /><ul class="features">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
     {!isTipo && seccion.checklistCompra && <p class="text">{modelo.notaCompra ?? <><strong>Antes de ordenar:</strong> revisa la lista de verificación de <a href={`/${seccion.slug}/#antes-de-ordenar`}>{seccion.nombre.toLowerCase()}</a> para que la cotización llegue completa.</>}</p>}
     {related.length > 0 && <section class="block"><SectionHeading clave="otros" eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title="Otros modelos disponibles" /><ModelosGrid modelos={related} cols={3} /></section>}
+    {familiaModelo && <section class="block" id="conjunto"><CompletaElConjunto familia={familiaModelo.slug} titulo={`Completa el conjunto con ${nombre}`} /></section>}
     {modelosMarca.length > 0 && <section class="block"><SectionHeading clave="marca" eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
+    {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${tipo.nombre.toLowerCase()} que surtimos`} duo={duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
     {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
     <section class="block" id="faq"><SectionHeading clave="faq" eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={isTipo ? tipo.faq : modelo.faq} /></section>
   </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Trajes {familiaModelo.nombreWa.toLowerCase()}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>

@@ -1,22 +1,37 @@
 ---
+// «Completa el conjunto»: complementos del traje. Con `familia`, las cards
+// son los tipos y modelos CONCRETOS compatibles con esa familia
+// (src/lib/catalogo/conjuntos.ts): enlaces contextuales hacia cascos,
+// guantes, botas, capuchas, ERA, herramientas y accesorios. Sin
+// `familia`, cards genéricas por sección (comportamiento anterior).
+// El título usa el dúo de la página (clave «completa») cuando existe;
+// si no, el dúo propio de la familia (fichas de modelo).
 import { SECCIONES } from '@lib/catalogo/secciones';
+import { conjuntoDeFamilia } from '@lib/catalogo/conjuntos';
+import { duoPagina } from '@lib/titulos/paginas';
 import SectionHeading from '@components/SectionHeading.astro';
 
+interface Props { familia?: string; titulo?: string }
+const { familia, titulo } = Astro.props;
+
+const conjunto = familia ? conjuntoDeFamilia(familia) : undefined;
 const disponibles = new Set(SECCIONES.map((seccion) => seccion.slug));
-const opciones = [
-  { slug: 'cascos', nombre: 'Casco', desc: 'Protección de cabeza según la operación.' },
-  { slug: 'guantes', nombre: 'Guantes', desc: 'Interfaz de mano con el riesgo específico.' },
-  { slug: 'botas', nombre: 'Botas', desc: 'Calzado para la familia de traje elegida.' },
-  { slug: 'era', nombre: 'ERA', desc: 'Equipo de respiración autónoma compatible.' },
-].filter((opcion) => disponibles.has(opcion.slug));
+const genericas = [
+  { href: '/cascos/', nombre: 'Casco', porQue: 'Protección de cabeza según la operación.' },
+  { href: '/guantes/', nombre: 'Guantes', porQue: 'Interfaz de mano con el riesgo específico.' },
+  { href: '/botas/', nombre: 'Botas', porQue: 'Calzado para la familia de traje elegida.' },
+  { href: '/equipo-de-respiracion-autonoma/', nombre: 'ERA', porQue: 'Equipo de respiración autónoma compatible.' },
+].filter((opcion) => disponibles.has(opcion.href.replaceAll('/', '')));
+const piezas = conjunto?.piezas ?? genericas;
+const duo = duoPagina(Astro.url.pathname, 'completa') ?? conjunto?.duo;
 ---
-{opciones.length > 0 && (
+{piezas.length > 0 && (
   <section class="conjunto" aria-label="Completa el conjunto">
-    <SectionHeading clave="completa" eyebrow="Equipo complementario" title="Completa el conjunto" description="Selecciona cada componente por el riesgo y confirma la compatibilidad del sistema completo." />
-    <div class="conjunto__grid">
-      {opciones.map((opcion) => (
-        <a href={`/${opcion.slug}/`} class="conjunto__card">
-          <strong>{opcion.nombre}</strong><span>{opcion.desc}</span><b>Cotizar {opcion.nombre.toLowerCase()} →</b>
+    <SectionHeading clave="completa" eyebrow="Equipo complementario" title={titulo ?? 'Completa el conjunto'} duo={duo} description="Selecciona cada componente por el riesgo y confirma la compatibilidad con el traje antes de cotizar." />
+    <div class:list={['conjunto__grid', { 'conjunto__grid--familia': !!conjunto }]}>
+      {piezas.map((pieza) => (
+        <a href={pieza.href} class="conjunto__card">
+          <strong>{pieza.nombre}</strong><span>{pieza.porQue}</span><b>Cotizar {pieza.nombre.toLowerCase()} →</b>
         </a>
       ))}
     </div>
@@ -26,6 +41,7 @@ const opciones = [
 <style>
   .conjunto { padding: 1.6rem; background: var(--color-light); border: var(--border); border-radius: var(--radius-lg); }
   .conjunto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+  .conjunto__grid--familia { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
   .conjunto__card { display: grid; gap: 0.35rem; padding: 1rem; background: var(--color-white); border: var(--border); border-radius: var(--radius); color: var(--color-dark); text-decoration: none; }
   .conjunto__card:hover { border-color: var(--color-primary); box-shadow: var(--shadow); }
   .conjunto__card span { color: var(--color-gray); font-size: 0.82rem; line-height: 1.4; }
