@@ -17,6 +17,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
 import QuickNav from '@components/home/QuickNav.astro';
 import CategoryTiles from '@components/home/CategoryTiles.astro';
+import CategorySpotlights from '@components/home/CategorySpotlights.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import TileGrid from '@components/home/TileGrid.astro';
 import TileCard, { type TileProps, type TileSub } from '@components/home/TileCard.astro';
@@ -214,6 +215,9 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
       <CategoryTiles />
     </div>
   </section>
+
+  <!-- 0b · Spotlights de categoría: texto comercial SEO + galería (uno por categoría) -->
+  <CategorySpotlights />
 
   <!-- 1 · Trajes: grid principal de categorías (TR-01…) -->
   <section class="section section--alt" id="catalogo">

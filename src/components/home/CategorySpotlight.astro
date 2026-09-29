@@ -1,0 +1,176 @@
+---
+// CategorySpotlight (home): módulo de dos columnas que promociona una
+// categoría del índice (CategoryTiles). Columna 1: texto SEO comercial
+// (eyebrow + H2 + párrafos con enlaces internos + 4 argumentos de compra
+// + botones con palabra clave). Columna 2: galería de 3 imágenes
+// (una grande arriba, dos chicas abajo) con pie de foto.
+// Un módulo por categoría; `flip` invierte columnas para dar ritmo.
+// Los párrafos admiten <a>/<strong>: texto propio del sitio, nunca
+// entrada de usuario. Regla del sitio: cero animaciones/transiciones.
+export interface SpotImg { src: string; alt: string; caption: string; width: number; height: number; pos?: string }
+export interface SpotPunto { titulo: string; texto: string }
+export interface SpotProps {
+  id: string;
+  numero: string;
+  eyebrow: string;
+  titulo: string;
+  parrafos: string[];
+  puntos: SpotPunto[];
+  cta: { label: string; href: string };
+  wa?: { label: string; href: string };
+  nota?: string;
+  imagenes: [SpotImg, SpotImg, SpotImg];
+  flip?: boolean;
+}
+const { id, numero, eyebrow, titulo, parrafos, puntos, cta, wa, nota, imagenes, flip = false } = Astro.props as SpotProps;
+const [grande, ...chicas] = imagenes;
+---
+<article class:list={['spot', { 'spot--flip': flip }]} id={id} aria-labelledby={`${id}-titulo`}>
+  <div class="spot__text">
+    <p class="eyebrow spot__eyebrow"><span class="spot__num">{numero}</span>{eyebrow}</p>
+    <h2 class="spot__title" id={`${id}-titulo`}>{titulo}</h2>
+    {parrafos.map((p, i) => <p class:list={['spot__p', { 'spot__p--lead': i === 0 }]} set:html={p} />)}
+
+    <ul class="spot__puntos">
+      {puntos.map((pt) => (
+        <li>
+          <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" /></svg>
+          <div>
+            <strong>{pt.titulo}</strong>
+            <span>{pt.texto}</span>
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    <div class="spot__ctas">
+      <a class="btn btn--lg" href={cta.href}>{cta.label}</a>
+      {wa && <a class="btn btn--lg btn--wa" href={wa.href} target="_blank" rel="noopener nofollow">{wa.label}</a>}
+    </div>
+    {nota && <p class="spot__nota">{nota}</p>}
+  </div>
+
+  <div class="spot__gallery">
+    <figure class="spot__fig spot__fig--big">
+      <img src={grande.src} alt={grande.alt} width={grande.width} height={grande.height} loading="lazy" decoding="async" style={grande.pos ? `object-position:${grande.pos}` : undefined} />
+      <figcaption>{grande.caption}</figcaption>
+    </figure>
+    {chicas.map((im) => (
+      <figure class="spot__fig">
+        <img src={im.src} alt={im.alt} width={im.width} height={im.height} loading="lazy" decoding="async" style={im.pos ? `object-position:${im.pos}` : undefined} />
+        <figcaption>{im.caption}</figcaption>
+      </figure>
+    ))}
+  </div>
+</article>
+
+<style>
+  .spot {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+    gap: clamp(2rem, 4.5vw, 4.5rem);
+    align-items: center;
+  }
+  .spot--flip .spot__text { order: 2; }
+  .spot--flip .spot__gallery { order: 1; }
+
+  /* --- Columna de texto ------------------------------------- */
+  .spot__eyebrow { display: flex; align-items: center; gap: 0.6rem; }
+  .spot__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.1rem;
+    padding: 0.2rem 0.45rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+  .spot__title { font-size: var(--fs-h2); margin: 0.2rem 0 1.1rem; text-wrap: balance; max-width: 22ch; }
+  .spot__p { margin: 0 0 1rem; color: var(--color-gray); line-height: 1.65; max-width: 68ch; }
+  .spot__p--lead { font-size: var(--fs-lead); color: var(--color-dark); }
+  .spot__p :global(a) { color: var(--color-primary); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+  .spot__p :global(strong) { color: var(--color-dark); }
+
+  .spot__puntos {
+    list-style: none;
+    margin: 1.6rem 0 1.8rem;
+    padding: 1.4rem 0 0;
+    border-top: 1px solid rgb(20 22 26 / 0.12);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem 1.6rem;
+  }
+  .spot__puntos li { display: flex; gap: 0.7rem; align-items: flex-start; }
+  .spot__puntos svg { flex: none; margin-top: 0.1rem; color: var(--color-primary); }
+  .spot__puntos strong {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+    color: var(--color-dark);
+  }
+  .spot__puntos span { display: block; font-size: 0.9rem; line-height: 1.5; color: var(--color-gray); }
+
+  .spot__ctas { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+  .spot__ctas .btn { transition: none; }
+  .spot__nota { margin: 0.9rem 0 0; font-size: var(--fs-xs); color: var(--color-gray-soft); }
+
+  /* --- Galería: 1 grande arriba + 2 chicas abajo ------------ */
+  .spot__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(0.6rem, 1vw, 1rem);
+  }
+  .spot__fig {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--color-light);
+    aspect-ratio: 4 / 3;
+  }
+  .spot__fig--big { grid-column: 1 / -1; aspect-ratio: 16 / 9; border-top: 3px solid var(--color-primary); }
+  .spot__fig img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Escritorio: la galería llena la altura del texto (sin huecos). */
+  @media (min-width: 1025px) {
+    .spot { align-items: stretch; }
+    .spot__gallery { grid-template-rows: minmax(0, 1.55fr) minmax(0, 1fr); min-height: 560px; }
+    .spot__fig, .spot__fig--big { aspect-ratio: auto; min-height: 200px; }
+  }
+  .spot__fig figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: calc(100% - 1.2rem);
+    padding: 0.4rem 0.75rem;
+    background: rgb(15 18 22 / 0.86);
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+  }
+  .spot__fig--big figcaption { font-size: 0.88rem; padding: 0.5rem 0.9rem; }
+
+  @media (max-width: 1024px) {
+    .spot { grid-template-columns: minmax(0, 1fr); }
+    .spot--flip .spot__text, .spot--flip .spot__gallery { order: initial; }
+    .spot__title { max-width: none; }
+  }
+  @media (max-width: 640px) {
+    .spot__puntos { grid-template-columns: 1fr; }
+    .spot__ctas .btn { width: 100%; }
+    .spot__fig figcaption { font-size: 0.74rem; padding: 0.3rem 0.55rem; }
+  }
+</style>
