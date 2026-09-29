@@ -116,7 +116,7 @@ export function directorySchema(items: { name: string; url: string }[]): object 
 // Directorio: ItemList de estaciones como FireStation (solo campos con fuente)
 export interface EstacionSchema {
   name: string; url: string; locality: string; region: string;
-  lat: number; lng: number; telephone?: string; street?: string; sameAs?: string;
+  lat?: number; lng?: number; telephone?: string; street?: string; sameAs?: string;
 }
 export function fireStationListSchema(xs: EstacionSchema[]): object {
   return {
@@ -138,7 +138,7 @@ export function fireStationListSchema(xs: EstacionSchema[]): object {
           addressRegion: x.region,
           addressCountry: 'MX',
         },
-        geo: { '@type': 'GeoCoordinates', latitude: x.lat, longitude: x.lng },
+        ...(x.lat != null && x.lng != null ? { geo: { '@type': 'GeoCoordinates', latitude: x.lat, longitude: x.lng } } : {}),
         ...(x.telephone ? { telephone: x.telephone } : {}),
         ...(x.sameAs ? { sameAs: x.sameAs } : {}),
       },
