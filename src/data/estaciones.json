@@ -13404,11 +13404,6 @@
    "precision": "aproximada"
   },
   "telefono": "(777) 100-0515",
-  "telefonosAdicionales": [
-   "(777) 100-0517",
-   "(777) 314-4186",
-   "(777) 312-1683"
-  ],
   "email": "proteccion.civil@morelos.gob.mx",
   "sitioWeb": "https://proteccioncivil.morelos.gob.mx",
   "servicios": [
@@ -13523,7 +13518,7 @@
    },
    {
     "nombre": "dir.morelos.gob.mx",
-    "url": "https://dir.morelos.gob.mx/iframe/funcionario/1435"
+    "url": "https://zapatamorelos.gob.mx/atencion-ciudadana/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13547,12 +13542,7 @@
    "lng": -99.1589,
    "precision": "exacta"
   },
-  "telefono": "(777) 320-5054",
-  "telefonosAdicionales": [
-   "(777) 319-3866",
-   "(777) 319-3746"
-  ],
-  "sitioWeb": "http://www.procivac.com",
+  "sitioWeb": "https://grupoprocivac.com/ccec/",
   "servicios": [
    "incendios-estructurales",
    "espacios-confinados",
@@ -13567,6 +13557,10 @@
    {
     "nombre": "expansion.mx",
     "url": "https://expansion.mx/empresas/2026/03/27/nissan-cierra-historica-planta-civac-en-morelos-tras-60-anos"
+   },
+   {
+    "nombre": "PROCIVAC — Centro Control de Emergencias CIVAC",
+    "url": "https://grupoprocivac.com/ccec/"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13598,7 +13592,7 @@
   "fuentes": [
    {
     "nombre": "marcojuridico.morelos.gob.mx",
-    "url": "http://marcojuridico.morelos.gob.mx/archivos/reglamentos_municipales/pdf/REGPCIVILBOMJIUTE24.pdf"
+    "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=4309"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13661,7 +13655,6 @@
    "lng": -99.1827,
    "precision": "aproximada"
   },
-  "telefono": "(734) 342-3400",
   "sitioWeb": "https://jojutla.gob.mx/specialists/proteccion-civil-y-bomberos/",
   "servicios": [
    "incendios-estructurales",
@@ -13764,7 +13757,7 @@
    },
    {
     "nombre": "marcojuridico.morelos.gob.mx",
-    "url": "http://marcojuridico.morelos.gob.mx/archivos/reglamentos_municipales/pdf/RINTDPTOBOMBEROSTEMIXMO.pdf"
+    "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=4105"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13787,7 +13780,6 @@
    "lng": -99.0968,
    "precision": "aproximada"
   },
-  "telefono": "(739) 395-2412",
   "servicios": [
    "incendios-estructurales",
    "incendios-forestales",
@@ -13797,7 +13789,7 @@
   "fuentes": [
    {
     "nombre": "marcojuridico.morelos.gob.mx",
-    "url": "http://marcojuridico.morelos.gob.mx/archivos/reglamentos_municipales/pdf/RPROTCIVTZMO.pdf"
+    "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=3824"
    },
    {
     "nombre": "jornada.com.mx",
@@ -13841,7 +13833,15 @@
    },
    {
     "nombre": "diariodemorelos.com",
-    "url": "https://diariodemorelos.com"
+    "retirada": "https://diariodemorelos.com"
+   },
+   {
+    "nombre": "Central Municipal — Xochitepec celebra a su cuerpo de bomberos",
+    "url": "https://centralmunicipal.mx/municipios/2026/08/26/xochitepec-celebra-a-su-cuerpo-de-bomberos-destaca-su-labor-24-7/"
+   },
+   {
+    "nombre": "Diario de Morelos — Xochitepec refuerza Protección Civil",
+    "url": "https://www.diariodemorelos.com/noticias/xochitepec-refuerza-proteccion-civil-albergues-temporada-lluvias"
    }
   ],
   "verificadoEl": "2026-06",
@@ -13865,10 +13865,7 @@
    "lng": -99.0716,
    "precision": "exacta"
   },
-  "telefono": "(735) 394-0088",
-  "telefonosAdicionales": [
-   "(735) 394-2832"
-  ],
+  "telefono": "(735) 394-2832",
   "email": "procivil.yautepec@gmail.com",
   "servicios": [
    "incendios-estructurales",
@@ -13885,6 +13882,10 @@
    {
     "nombre": "conurbados.com",
     "url": "https://conurbados.com/2023/08/24/reconocen-a-bomberos-yautepec-como-uno-de-los-mejores-de-morelos/"
+   },
+   {
+    "nombre": "Ayuntamiento de Yautepec — Directorio de servidores públicos (transparencia)",
+    "url": "https://transparenciamorelos.mx/sites/default/files/DIRECTORIO_PUBLICADO_0.pdf"
    }
   ],
   "verificadoEl": "2026-06",
