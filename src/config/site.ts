@@ -262,11 +262,11 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     slug: 'herramientas-rescate',
     nombre: 'Herramientas y rescate',
     desc: 'Herramientas, sistemas y criterios para equipar operaciones de rescate.',
-    h1: 'Herramientas y equipo de rescate para bomberos',
+    h1: 'Guías de herramientas y equipo de rescate para bomberos',
     lead: 'Guías para elegir herramientas de entrada, rescate, líneas de agua y sus componentes por operación, compatibilidad y condición de servicio.',
-    seoTitle: 'Herramientas y rescate para bomberos: guías de compra',
-    seoDescription: 'Herramientas y rescate para bomberos: criterios para elegir equipo de entrada forzada, rescate técnico, mangueras y kits con datos comparables.',
-    keywords: ['herramientas y rescate para bomberos', 'equipo de rescate', 'México'],
+    seoTitle: 'Guías de herramientas y rescate para bomberos',
+    seoDescription: 'Guías de herramientas y rescate para bomberos: cómo elegir equipo de entrada forzada, rescate técnico, mangueras y kits con datos comparables.',
+    keywords: ['guías de herramientas y rescate para bomberos', 'equipo de rescate', 'México'],
     guia: {
       titulo: 'Cómo comprar herramientas y equipo de rescate',
       parrafos: [
@@ -275,6 +275,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
         'El criterio de compra incluye el ciclo completo: inspección, limpieza, registro, reemplazo y disponibilidad por unidad. Una pieza dañada o sin soporte puede fallar como recurso operativo aunque se haya adquirido correctamente.',
       ],
       enlaces: [
+        { label: 'Herramientas y equipo de rescate para bomberos', href: '/rescate-y-herramientas/' },
         { label: 'Herramientas para bombero', href: '/herramientas/' },
         { label: 'Equipo de rescate', href: '/rescate/' },
         { label: 'Mangueras y accesorios contra incendio', href: '/mangueras-y-accesorios/' },
@@ -474,7 +475,7 @@ export const MENU: MenuItem[] = [
     overview: { label: 'Trajes para bomberos: las siete familias', href: '/trajes/' },
   },
   { label: 'Equipo de protección', href: '/equipo-de-proteccion/', match: ['/equipo-de-proteccion/', '/cascos/', '/equipo-de-respiracion-autonoma/', '/botas/', '/guantes/', '/capuchas/'], columns: equipo, overview: { label: 'Equipo de protección personal para bomberos', href: '/equipo-de-proteccion/' } },
-  { label: 'Rescate y herramientas', href: '/rescate/', match: ['/rescate/', '/herramientas/', '/mangueras-y-accesorios/', '/accesorios/', '/kits/'], columns: rescate, overview: { label: 'Equipo de rescate y herramientas para bomberos', href: '/rescate/' } },
+  { label: 'Rescate y herramientas', href: '/rescate-y-herramientas/', match: ['/rescate-y-herramientas/', '/rescate/', '/herramientas/', '/mangueras-y-accesorios/', '/accesorios/'], columns: rescate, overview: { label: 'Herramientas y equipo de rescate para bomberos', href: '/rescate-y-herramientas/' } },
   {
     label: 'Marcas de equipo', href: '/marcas/', match: ['/marcas/'], columns: [
       { title: 'Marcas que surtimos', links: [{ label: 'Romak Fire', href: '/marcas/romak-fire/', desc: chipsMarca('romak-fire') }, { label: 'Sköld', href: '/marcas/skold/', desc: chipsMarca('skold') }] },
@@ -570,7 +571,7 @@ export const FOOTER = {
     },
     {
       title: 'Rescate y herramientas',
-      links: [...MENU[2].columns.filter(({ title }) => title !== 'Kits para bomberos').map(({ title, href }) => ({ label: title, href: href! })), { label: 'Modelos de trajes de bomberos', href: '/trajes/#modelos' }],
+      links: [{ label: 'Herramientas y equipo de rescate para bomberos', href: '/rescate-y-herramientas/' }, ...MENU[2].columns.filter(({ title }) => title !== 'Kits para bomberos').map(({ title, href }) => ({ label: title, href: href! })), { label: 'Modelos de trajes de bomberos', href: '/trajes/#modelos' }],
     },
     {
       title: 'Marcas y modelos',

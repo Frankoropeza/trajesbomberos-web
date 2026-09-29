@@ -1,0 +1,31 @@
+---
+// L2 · /marcas/ — plantilla CategoriaL2 (ver src/components/l2/CategoriaL2.astro). Sustituye a la
+// plantilla genérica [seccion] para esta ruta (reservada en src/pages/[seccion]/index.astro); las
+// páginas de marca /marcas/<slug>/ siguen saliendo de [seccion]/[slug].astro.
+// Texto, tarjetas, modelos destacados y guías: src/content/categorias/marcas.md.
+import { getEntry, render } from 'astro:content';
+import CategoriaL2 from '@components/l2/CategoriaL2.astro';
+import { MODELOS, urlModelo } from '@lib/catalogo/modelos';
+import { SITE } from '@config/site';
+import { spotlightDeModulo, filaModelo, guiasL2, tilesDeTarjetas, modelosPorId } from '@lib/l2';
+
+const entrada = await getEntry('categorias', 'marcas');
+if (!entrada) throw new Error('Falta la entrada de contenido categorias/marcas.');
+const { Content } = await render(entrada);
+const d = entrada.data;
+const tiles = tilesDeTarjetas(d, 'MA-');
+const spotlights = d.modulos.map((modulo, index) => spotlightDeModulo(modulo, index));
+const modelos = modelosPorId(d.modelosDestacados ?? []);
+// Tabla: los 35 modelos agrupados por marca (Romak Fire y Sköld primero, después alfabético).
+const ORDEN_MARCA = ['Romak Fire', 'Sköld'];
+const rango = (marca: string) => (ORDEN_MARCA.includes(marca) ? ORDEN_MARCA.indexOf(marca) : ORDEN_MARCA.length);
+const todos = [...MODELOS].sort((a, b) => rango(a.marca) - rango(b.marca) || a.marca.localeCompare(b.marca, 'es'));
+const columnas = ['modelo', 'marca', 'seccion', 'codigo', 'norma', 'estatus'] as const;
+const filasModelos = todos.map((modelo) => filaModelo(modelo, columnas));
+const directoryItems = [
+  ...tiles.map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
+  ...todos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
+];
+const guias = await guiasL2(d);
+---
+<CategoriaL2 {d} {tiles} {spotlights} {modelos} {filasModelos} {directoryItems} {guias}><Content /></CategoriaL2>

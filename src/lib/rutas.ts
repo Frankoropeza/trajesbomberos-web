@@ -14,6 +14,7 @@ export const RUTAS = new Set<string>([
   '/',
   '/trajes/',
   '/equipo-de-proteccion/',
+  '/rescate-y-herramientas/',
   '/trajes/hazmat/',
   '/blog/',
   '/empresa/',

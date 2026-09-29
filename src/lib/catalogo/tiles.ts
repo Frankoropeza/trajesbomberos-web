@@ -20,6 +20,7 @@ export function estadoModelo(m: Modelo): Estado {
     case 'equivalente': return { label: m.norma ? `Equivalente a ${m.norma} · no certificado` : 'Equivalente · no certificado', tone: 'warn' };
     case 'materiales': return { label: m.norma ? `Materiales conforme a ${m.norma}` : 'Materiales con norma declarada', tone: 'neutral' };
     case 'niosh': return { label: 'Certificación NIOSH · uso industrial', tone: 'warn' };
+    case 'no-aplica': return { label: 'Norma de producto no aplica', tone: 'neutral' };
     default: return { label: 'Sin norma declarada', tone: 'neutral' };
   }
 }

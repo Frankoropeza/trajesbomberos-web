@@ -178,6 +178,20 @@ const categorias = defineCollection({
     contacto: z.object({ asunto: z.string(), boton: z.string() }).strict(),
     cotizar: z.object({ titulo: z.string(), boton: z.string(), mensaje: z.string().min(20) }).strict(),
     blogCategoria: z.string().optional(),    // guías: categoría del blog; si falta, guiasParaRuta(ruta)
+    // Cards propias de #tipos cuando la L2 no agrupa categorías del catálogo (p. ej. marcas).
+    tarjetas: z.array(z.object({
+      titulo: z.string(),
+      desc: z.string().min(60),
+      href: ruta,
+      cta: z.string(),
+      img: z.string().startsWith('/images/'),
+      alt: z.string().min(10),
+      subs: z.array(enlace).min(2).max(4),
+    }).strict()).min(2).optional(),
+    // Selección para la retícula de #modelos (ids de MODELOS); la tabla lista todos.
+    modelosDestacados: z.array(z.string()).min(4).optional(),
+    // Guías fijas del bloque #guias (slugs del blog); tienen prioridad sobre blogCategoria.
+    guiasDestacadas: z.array(z.string()).length(4).optional(),
   }).strict(),
 });
 

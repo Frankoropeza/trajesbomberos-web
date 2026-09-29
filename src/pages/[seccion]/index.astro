@@ -12,10 +12,10 @@ import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeSeccion, urlModelo } from '@lib/catalogo/modelos';
 import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
 import { etiquetaEquipo, temaEnFrase } from '@lib/blog-enlaces';
-import { L2_EPP, SECCIONES_EPP } from '@lib/l2';
+import { l2DeSeccion } from '@lib/l2';
 
 export const getStaticPaths = (() => {
-  const reserved = new Set(['trajes', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
+  const reserved = new Set(['trajes', 'marcas', 'blog', 'empresa', 'contacto', 'productos', 'aviso-de-privacidad', 'terminos-y-condiciones', '404']);
   return SECCIONES
   .filter((seccion) => !reserved.has(seccion.slug))
   .map((seccion) => ({ params: { seccion: seccion.slug }, props: { seccion } }));
@@ -44,7 +44,7 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
   descRight={seccion.resumenHero ?? []}
   heroImage={seccion.hero} faqs={faqsSeccion} directoryItems={items}
   collection={{ name: seccion.h1, description: seccion.description, url: path }}
-  parent={SECCIONES_EPP.includes(seccion.slug as typeof SECCIONES_EPP[number]) ? L2_EPP : undefined}
+  parent={l2DeSeccion(seccion.slug)}
   menuItems={[...(tipos.length > 0 ? [{ label: etiquetas?.menuTipos ?? `Tipos de ${seccion.nombre.toLowerCase()}`, href: '#tipos' }] : seccion.enlaces?.length ? [{ label: `Fichas de ${seccion.nombre.toLowerCase()}`, href: '#fichas' }] : []), ...(mostrarEleccion ? [{ label: `Cómo elegir ${seccion.nombre.toLowerCase()}`, href: '#elegir' }] : []), ...(modelos.length > 0 ? [{ label: `Modelos de ${seccion.nombre.toLowerCase()}`, href: '#modelos' }] : []), { label: `Preguntas de ${seccion.nombre.toLowerCase()}`, href: '#faq' }]}
 >
   <div class="section"><div class="container content">

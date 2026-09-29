@@ -1,0 +1,27 @@
+---
+// L2 · /rescate-y-herramientas/ — plantilla CategoriaL2 (ver src/components/l2/CategoriaL2.astro).
+// Texto completo, incluidos los módulos «a fondo»: src/content/categorias/rescate-y-herramientas.md.
+// Cards: índice de categorías de la home (lib/catalogo/categorias.ts); modelos: MODELOS de sus secciones.
+import { getEntry, render } from 'astro:content';
+import CategoriaL2 from '@components/l2/CategoriaL2.astro';
+import { MODELOS, urlModelo } from '@lib/catalogo/modelos';
+import { SITE } from '@config/site';
+import { SECCIONES_RH, spotlightDeModulo, filaModelo, guiasL2 } from '@lib/l2';
+import { tilesCategorias } from '@lib/catalogo/categorias';
+
+const entrada = await getEntry('categorias', 'rescate-y-herramientas');
+if (!entrada) throw new Error('Falta la entrada de contenido categorias/rescate-y-herramientas.');
+const { Content } = await render(entrada);
+const d = entrada.data;
+const tiles = tilesCategorias(SECCIONES_RH.map((slug) => `/${slug}/`), 'RH-');
+const spotlights = d.modulos.map((modulo, index) => spotlightDeModulo(modulo, index));
+const modelos = SECCIONES_RH.flatMap((seccion) => MODELOS.filter((modelo) => modelo.seccion === seccion));
+const columnas = ['modelo', 'seccion', 'tipo', 'material', 'norma', 'estatus'] as const;
+const filasModelos = modelos.map((modelo) => filaModelo(modelo, columnas));
+const directoryItems = [
+  ...tiles.map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
+  ...modelos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
+];
+const guias = await guiasL2(d);
+---
+<CategoriaL2 {d} {tiles} {spotlights} {modelos} {filasModelos} {directoryItems} {guias}><Content /></CategoriaL2>

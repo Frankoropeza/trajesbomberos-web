@@ -4,7 +4,7 @@ import ModeloFicha from '@components/ModeloFicha.astro';
 import { SECCIONES } from '@lib/catalogo/secciones';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeSeccion } from '@lib/catalogo/modelos';
-import { L2_EPP, SECCIONES_EPP } from '@lib/l2';
+import { l2DeSeccion } from '@lib/l2';
 
 export const getStaticPaths = (() => SECCIONES.flatMap((seccion) => [
   ...tiposDeSeccion(seccion.slug).map((entry) => ({ params: { seccion: seccion.slug, slug: entry.slug }, props: { seccion, entry, kind: 'tipo' as const } })),
@@ -14,4 +14,4 @@ export const getStaticPaths = (() => SECCIONES.flatMap((seccion) => [
 const { seccion, entry, kind } = Astro.props;
 const path = `/${seccion.slug}/${kind === 'tipo' ? entry.slug : entry.id}/`;
 ---
-<ModeloFicha {seccion} {entry} {kind} {path} parent={SECCIONES_EPP.includes(seccion.slug as typeof SECCIONES_EPP[number]) ? [L2_EPP, { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }] : undefined} />
+<ModeloFicha {seccion} {entry} {kind} {path} parent={l2DeSeccion(seccion.slug) ? [l2DeSeccion(seccion.slug)!, { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }] : undefined} />
