@@ -27,7 +27,7 @@ Empieza en [cascos para bombero](/cascos/), pero no por el color ni por la silue
 
 ## Empieza por la salida más exigente
 
-Un casco no se selecciona para la actividad cotidiana más sencilla, sino para la salida más exigente que el usuario atenderá dentro de su función. Un elemento que únicamente participa en evacuación o controla un conato necesita una configuración distinta de quien entra a una estructura con humo, trabaja en vegetación o realiza rescate técnico. El mismo casco no es una solución automática para cuatro escenarios porque cambian calor, impacto, penetración, visibilidad, duración y movilidad.
+Un casco no se selecciona para la actividad cotidiana más sencilla, sino para la salida más exigente que el usuario atenderá dentro de su función. Un elemento que únicamente participa en evacuación o controla un conato necesita una configuración distinta de quien entra a una estructura con humo, trabaja en vegetación o realiza rescate técnico. El mismo casco no es una solución automática para cuatro escenarios porque cambian calor, impacto, penetración, visibilidad, duración y movilidad. Las diferencias entre modelos tradicional, europeo, forestal, de rescate y de brigada están en [tipos de casco de bombero](/blog/tipos-de-casco-de-bombero/).
 
 Conviene separar los puestos antes de cotizar. Si una brigada industrial tiene roles de evacuación, primera respuesta e intervención, cada grupo puede requerir una partida diferente. Comprar un casco estructural para todos puede cargar presupuesto y peso donde no hacen falta; comprar un casco industrial para quien sí hace ataque interior deja una protección mal alineada. El análisis de riesgo y las tareas asignadas son el punto de partida.
 

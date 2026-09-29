@@ -61,7 +61,7 @@ Esto es lo que más confusión provoca en México, así que conviene decirlo cla
 
 ## Qué significa para tu cotización
 
-Tres consecuencias prácticas, en orden de importancia:
+Tres consecuencias prácticas, en orden de importancia: Lo que la norma exige ver impreso en la prenda se explica en [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
 
 **1. La cita cambia de forma.** Ya no basta con "cumple NFPA 1971". Hoy se escribe indicando el documento vigente y el capítulo aplicable al conjunto estructural. Un proveedor que en 2026 sigue citando exclusivamente la 1971 te está diciendo, sin querer, cuándo actualizó por última vez su catálogo.
 

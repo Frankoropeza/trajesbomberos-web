@@ -28,7 +28,7 @@ El [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) permite 
 
 ## El aire respirable es parte del sistema
 
-Un ERA no se decide sólo por el cilindro. Arnés, espalda, regulador, máscara, conexiones, cilindro, alarma, capacitación, limpieza y almacenamiento forman un conjunto que debe estar listo cuando el ambiente deja de ser respirable. Antes de comparar marcas o capacidades, define si se trata de combate contra incendio, respuesta industrial, materiales peligrosos o una aplicación de rescate. También define si el usuario entrará con [traje estructural](/trajes/estructural/), equipo químico u otra protección que cambie las interfaces.
+Un ERA no se decide sólo por el cilindro. Arnés, espalda, regulador, máscara, conexiones, cilindro, alarma, capacitación, limpieza y almacenamiento forman un conjunto que debe estar listo cuando el ambiente deja de ser respirable. Antes de comparar marcas o capacidades, define si se trata de combate contra incendio, respuesta industrial, materiales peligrosos o una aplicación de rescate. También define si el usuario entrará con [traje estructural](/trajes/estructural/), equipo químico u otra protección que cambie las interfaces. Si necesitas el panorama general primero, empieza por [SCBA: qué es y cómo funciona](/blog/scba-que-es-y-como-funciona/).
 
 La pregunta no es cuánto aire "trae" el equipo, sino cuánto tiempo de trabajo seguro puede planearse considerando ingreso, tarea, salida y reserva. Eso depende del esfuerzo, calor, carga, condición de la persona y condiciones de la emergencia. La duración nominal ayuda a organizar inventario; no reemplaza el control operativo ni convierte al cilindro en un cronómetro.
 
@@ -40,13 +40,13 @@ No conviertas un equipo industrial en ERA de ataque interior por agregarle una p
 
 ## Máscara: el sello manda
 
-La máscara es la interfaz entre el equipo y la persona. Debe sellar con el rostro, permanecer estable al mover cabeza y trabajar con casco, capucha y protección ocular. La prueba de ajuste y la capacitación de colocación son parte de la puesta en servicio; no son un extra para después de la compra. Vello facial, lentes incompatibles, correas mal ajustadas o una talla equivocada pueden impedir el sello aunque cilindro y regulador estén en perfecto estado.
+La máscara es la interfaz entre el equipo y la persona. Debe sellar con el rostro, permanecer estable al mover cabeza y trabajar con casco, capucha y protección ocular. La prueba de ajuste y la capacitación de colocación son parte de la puesta en servicio; no son un extra para después de la compra. Vello facial, lentes incompatibles, correas mal ajustadas o una talla equivocada pueden impedir el sello aunque cilindro y regulador estén en perfecto estado. Cada componente se detalla en [partes del equipo de respiración autónoma](/blog/partes-del-equipo-de-respiracion-autonoma/).
 
 Organiza pruebas por usuario y registra configuración. Pide que cada elemento practique ponerse y retirar el conjunto conforme al procedimiento de su organización, siempre fuera de una emergencia. Comprueba que pueda identificar controles con guantes y que el equipo no choque con casco o cuello del traje. Si se requieren lentes, usa la solución compatible declarada, no una adaptación dentro de la máscara.
 
 ## Cilindros y logística de recarga
 
-La compra de cilindros exige pensar en rotación. Mientras un elemento usa un equipo, otros cilindros pueden estar en reserva, en recarga, en inspección o fuera de servicio. La cantidad necesaria se calcula a partir de personal, roles, duración de las intervenciones y capacidad real de recarga, no por una regla universal. Revisa la familia de [cilindros de fibra de carbono](/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/) con el mismo criterio de compatibilidad y mantenimiento.
+La compra de cilindros exige pensar en rotación. Mientras un elemento usa un equipo, otros cilindros pueden estar en reserva, en recarga, en inspección o fuera de servicio. La cantidad necesaria se calcula a partir de personal, roles, duración de las intervenciones y capacidad real de recarga, no por una regla universal. Revisa la familia de [cilindros de fibra de carbono](/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/) con el mismo criterio de compatibilidad y mantenimiento. Presión, prueba hidrostática e inspección están en [cilindros de fibra de carbono para ERA](/blog/cilindros-de-fibra-de-carbono-era/).
 
 Documenta dónde se almacenarán protegidos, quién revisará presión y condición, cómo se separan cilindros llenos y vacíos, y qué ocurre después de una exposición. Un área de almacenamiento ordenada evita que se tome un cilindro sin verificar. La trazabilidad por número de serie y fecha de servicio permite detectar componentes que requieren atención antes de una salida.
 
