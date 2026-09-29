@@ -19,6 +19,8 @@ import '@fontsource/barlow/latin-600.css';
 import '@fontsource/barlow/latin-700.css';
 import '@fontsource/barlow-semi-condensed/latin-700.css';
 import barlowSemiCondensed700 from '@fontsource/barlow-semi-condensed/files/barlow-semi-condensed-latin-700-normal.woff2?url';
+import barlow400 from '@fontsource/barlow/files/barlow-latin-400-normal.woff2?url';
+import barlow700 from '@fontsource/barlow/files/barlow-latin-700-normal.woff2?url';
 import '@styles/global.css';
 import '@styles/mobile.css';
 
@@ -68,6 +70,8 @@ if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" as="font" type="font/woff2" href={barlowSemiCondensed700} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={barlow400} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={barlow700} crossorigin />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="theme-color" content="#c8102e" />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
