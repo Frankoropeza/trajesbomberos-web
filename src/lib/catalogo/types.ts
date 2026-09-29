@@ -31,6 +31,19 @@ export interface Seccion {
   hero?: HeroImage;
   checklistCompra?: { titulo: string; parrafos: string[] };
   leyendaImagenIlustrativa?: string;
+  /** Columna derecha del hero del hub (1–2 párrafos, distintos de `lead` e `intro`). */
+  resumenHero?: string[];
+  /** Encabezados propios del hub (sustituyen a los textos genéricos de la plantilla). */
+  etiquetas?: {
+    menuTipos?: string;
+    tiposEyebrow?: string; tiposTitulo?: string; tiposDescripcion?: string;
+    elegirTitulo?: string; elegirDescripcion?: string;
+    modelosTitulo?: string; modelosDescripcion?: string;
+  };
+  /** Tabla comparativa del hub: la primera columna es el nombre del tipo. */
+  comparativa?: { columnas: string[]; filas: string[][] };
+  /** Criterios de compra del hub. */
+  criterios?: { titulo: string; items: { termino: string; texto: string }[] };
 }
 
 export interface Tipo {
@@ -54,6 +67,9 @@ export interface Tipo {
 
 export interface Modelo {
   id: string;
+  /** SEO propio (≤ 60 / 130–160 car.). Si falta, la plantilla lo compone. */
+  title?: string;
+  description?: string;
   seccion: string;
   tipo?: string;
   familia?: string;
