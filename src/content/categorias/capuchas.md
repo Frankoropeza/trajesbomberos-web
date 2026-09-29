@@ -88,7 +88,7 @@ tarjetas:
     desc: "Monja con barrera contra partículas para ataque interior. Se prueba con la máscara del ERA, el casco y el cuello del chaquetón."
     href: "/trajes/estructural/monja/"
     cta: "Capucha antipartículas estructural"
-    img: "/images/piezas/capucha-antiparticulas-monja.avif"
+    img: "/images/piezas/capucha-antiparticulas-bombero.avif"
     alt: "Capucha antipartículas tipo monja para traje estructural de bombero"
     subs:
       - { label: "Majestic PAC II", href: "/capuchas/majestic-pac-ii/" }
@@ -161,7 +161,7 @@ modulos:
     parrafo: "En un incendio estructural, el humo carga partículas que se quedan en la piel del cuello y la cara. La capucha antipartículas agrega una barrera en las zonas que declara su ficha, y su referencia es NFPA 1970. Complementa el control de partículas, pero no sustituye el lavado ni la descontaminación después de cada incendio. Es la monja que corresponde al traje estructural."
     imagenes:
       - { src: "/images/escenas/spot-era.avif", alt: "Bombero con equipo de respiración autónoma avanzando por un pasillo con humo" }
-      - { src: "/images/piezas/capucha-antiparticulas-monja.avif", alt: "Capucha antipartículas tipo monja para traje estructural" }
+      - { src: "/images/piezas/capucha-antiparticulas-bombero.avif", alt: "Capucha antipartículas tipo monja para traje estructural" }
       - { src: "/images/productos/monja-capucha-barrera-particulas-bombero.avif", alt: "Monja con barrera contra partículas para bombero" }
     cta: { label: "Capucha antipartículas estructural", href: "/trajes/estructural/monja/" }
     wa: { label: "Cotizar capuchas antipartículas", mensaje: "Hola, quiero cotizar capuchas antipartículas para bombero." }
