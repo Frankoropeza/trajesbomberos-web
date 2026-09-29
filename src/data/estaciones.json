@@ -3236,7 +3236,7 @@
    "lng": -106.0889,
    "precision": "aproximada"
   },
-  "telefono": "(614) 200-4800 ext. 3179 ext. 3179",
+  "telefono": "(614) 200-4800 ext. 3179",
   "sitioWeb": "https://www.municipiochihuahua.gob.mx",
   "servicios": [
    "incendios-estructurales",
@@ -7840,7 +7840,7 @@
   "telefono": "(55) 5116-4415",
   "telefonosAdicionales": [
    "(55) 5116-4416",
-   "(55) 5836-1500 ext. 1904 ext. 1904"
+   "(55) 5836-1500 ext. 1904"
   ],
   "sitioWeb": "https://ecatepec.gob.mx/direccion-de-proteccion-civil-y-bomberos/",
   "servicios": [
@@ -10301,13 +10301,12 @@
   "corporacion": "CREI — Cuerpo de Rescate y Extinción de Incendios del Aeropuerto Internacional Juan N. Álvarez",
   "rolEstacion": "subestacion",
   "numeroEstacion": "Subestación Renacimiento",
-  "direccion": "Calle, Col. Renacimiento, C.P. 39715",
+  "direccion": "Col. Renacimiento, C.P. 39715",
   "coordenadas": {
    "lat": 16.89120004,
    "lng": -99.82486466,
    "precision": "exacta"
   },
-  "telefono": "(744) 4416-223",
   "servicios": [
    "incendios-estructurales",
    "rescate-vehicular",
@@ -10371,7 +10370,7 @@
   "corporacion": "Coordinación General de Protección Civil y Bomberos de Acapulco",
   "rolEstacion": "central",
   "numeroEstacion": "Cuartel Central",
-  "direccion": "Calle Amates 274, Col. Farrallon del Ovispo, C.P. 39680",
+  "direccion": "Calle Amates 274, Col. Farallón del Obispo, C.P. 39680",
   "coordenadas": {
    "lat": 16.86376328,
    "lng": -99.86968954,
@@ -10415,7 +10414,7 @@
   "tipo": "Municipal",
   "corporacion": "H. Cuerpo de Bomberos de Chilpancingo de los Bravo",
   "rolEstacion": "unica",
-  "direccion": "Calle, Col. Villa Moderna, C.P. 39074",
+  "direccion": "Col. Villa Moderna, C.P. 39074",
   "coordenadas": {
    "lat": 17.53573831,
    "lng": -99.49916116,
@@ -10535,7 +10534,6 @@
    "lng": -101.54973835,
    "precision": "exacta"
   },
-  "telefono": "(755) 554-7551",
   "telefonosAdicionales": [
    "(755) 555-0700"
   ],
@@ -13152,7 +13150,7 @@
   "tipo": "Municipal",
   "corporacion": "Coordinación de Protección Civil y Bomberos de Zacapu",
   "rolEstacion": "unica",
-  "direccion": "Calle, Col. Centro, C.P. 58600",
+  "direccion": "Col. Centro, C.P. 58600",
   "coordenadas": {
    "lat": 19.81216578,
    "lng": -101.7956398,
