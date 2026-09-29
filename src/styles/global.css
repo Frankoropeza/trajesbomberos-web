@@ -238,6 +238,21 @@ th { font-family: var(--font-display); }
   line-height: 1.95;
 }
 .prose li > ul, .prose li > ol { margin: 0.55rem 0 0; }
+/* Listas de verificación del blog (Markdown «- [ ]»): casilla imprimible en lugar de viñeta. */
+.prose ul.contains-task-list > li::before { content: none; }
+.prose .task-list-item { padding-left: 2rem; }
+.prose .task-list-item input[type='checkbox'] {
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  appearance: none;
+  border: 2px solid var(--color-primary);
+  border-radius: 3px;
+  background: var(--color-white, #fff);
+}
 
 .prose blockquote {
   margin: 2rem 0;
