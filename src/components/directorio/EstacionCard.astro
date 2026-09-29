@@ -13,7 +13,7 @@ import {
 // nivel: 4 bajo un H3 de municipio (página de estado); 3 directo bajo el H2 (página de municipio).
 interface Props { s: Estacion; nivel?: 3 | 4 }
 const { s, nivel = 4 } = Astro.props as Props;
-const Titulo = `h${nivel}`;
+const Titulo: 'h3' | 'h4' = nivel === 3 ? 'h3' : 'h4';
 const telefonos = [s.telefono, ...(s.telefonosAdicionales ?? [])].filter((t): t is string => !!t);
 const servicios = (s.servicios ?? []).map((x) => SERVICIO_LABEL[x] ?? x);
 // Fuente: se muestra el dominio (atemporal, sin titulares ni fechas), sin repetir.
