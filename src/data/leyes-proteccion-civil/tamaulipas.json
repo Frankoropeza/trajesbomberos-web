@@ -1,0 +1,116 @@
+{
+  "slug": "tamaulipas",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Tamaulipas",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Tamaulipas (Anexo al número 152)",
+    "fecha": "2025-12-18"
+  },
+  "ultimaReforma": null,
+  "urlOficial": "https://www.congresotamaulipas.gob.mx/Parlamentario/Archivos/Leyes/Ley%20de%20Proteccion%20Civil%20para%20el%20Edo%20Tam.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil (Secretaría General de Gobierno)",
+    "articulo": "Art. 2, fr. XVIII",
+    "cita": "Coordinación Estatal: A la Coordinación Estatal de Protección Civil de la Secretaría General de Gobierno, encargada de la organización, coordinación y operación del Sistema Estatal de Protección Civil"
+  },
+  "lead": "La Ley de Protección Civil para el Estado de Tamaulipas, expedida en diciembre de 2025, redefine los programas internos, dictámenes y seguros que deben cumplir los establecimientos. Esta guía resume sus obligaciones con artículo y cita, para responsables de seguridad y brigadas.",
+  "panorama": [
+    "La nueva ley, publicada el 18 de diciembre de 2025, abrogó la de 2001 y es de orden público e interés social. Establece la coordinación entre Estado y municipios, con participación de los sectores privado y social (Art. 1). Exige que todo inmueble público, privado o social tenga un Programa Interno dictaminado positivamente y vigente, que se somete a dictamen cada año (Art. 65).",
+    "Son autoridades el Ejecutivo, la Secretaría General de Gobierno, los presidentes municipales y los coordinadores estatal y municipales (Art. 8). La Coordinación Estatal inspecciona hoteles grandes, universidades, hospitales, estadios y establecimientos de 1,500 m² o más (Art. 32, fr. LV); las municipales vigilan escuelas básicas, guarderías, mercados y locales menores a esa superficie (Art. 51)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles públicos, privados y sociales",
+      "obligacion": "Tener un Programa Interno con dictamen positivo y vigente, y someterlo a dictaminación cada año; su vigencia es de un año.",
+      "articulo": "Art. 65",
+      "cita": "Todos los inmuebles públicos, privados o sociales deben contar con un Programa Interno de Protección Civil dictaminado positivamente y vigente, con el objeto de mitigar los riesgos previamente identificados y estar en condiciones de atender la eventualidad de alguna emergencia o desastre."
+    },
+    {
+      "sujeto": "Establecimientos e instalaciones fijas o móviles",
+      "obligacion": "Crear una Unidad Interna de Protección Civil que elabore, actualice, opere y vigile el programa en cada inmueble.",
+      "articulo": "Art. 66",
+      "cita": "Para la implementación del Programa Interno de Protección Civil, cada establecimiento, inmueble o instalación fija o móvil, deberá crear una estructura organizacional específica denominada Unidad Interna de Protección Civil"
+    },
+    {
+      "sujeto": "Establecimientos que tramitan su programa interno",
+      "obligacion": "Incluir una póliza de seguro de responsabilidad civil, ambiental y daños a terceros, además de dictámenes estructural, eléctrico y de gas vigentes.",
+      "articulo": "Art. 69",
+      "cita": "La póliza prevista en la fracción VIII de este artículo deberá amparar la eventualidad de un siniestro civil y/o ambiental y/o daños a terceros, de conformidad con las especificaciones previstas en el Reglamento."
+    },
+    {
+      "sujeto": "Organizadores de eventos masivos",
+      "obligacion": "Presentar un programa específico: hasta 3,000 asistentes ante la Coordinación Municipal con 15 días hábiles; con más de 3,000, ante la Estatal con 20.",
+      "articulo": "Art. 74",
+      "cita": "Ninguna persona deberá realizar eventos sin un programa específico que cuente con dictamen positivo emitido por la Coordinación Estatal o Municipal, según corresponda en razón de competencia."
+    },
+    {
+      "sujeto": "Establecimientos de competencia estatal",
+      "obligacion": "Contar con el dictamen de análisis de riesgo del entorno que emite la Coordinación Estatal, vigente por dos años.",
+      "articulo": "Art. 84",
+      "cita": "Todos los establecimientos cuya inspección, control y vigilancia sea competencia del Estado, deberán contar con el dictamen de análisis de riesgo del entorno emitido por la Coordinación Estatal."
+    },
+    {
+      "sujeto": "Cualquier establecimiento que realice simulacros",
+      "obligacion": "Avisar de cada simulacro a la coordinación de protección civil y a las autoridades de emergencias; omitir el aviso es infracción (Art. 163).",
+      "articulo": "Art. 142",
+      "cita": "La realización de simulacros en cualquier tipo de establecimiento público, social o privado, deberá ser notificada a la Coordinación de Protección Civil correspondiente, así como a las autoridades de emergencias."
+    },
+    {
+      "sujeto": "Patrones, propietarios y administradores",
+      "obligacion": "Capacitar a sus empleados y dotarlos del equipo necesario para responder a riesgos; pueden pedir asesoría oficial para conformar brigadas.",
+      "articulo": "Art. 143",
+      "cita": "Para los efectos del presente Capítulo, los patrones, propietarios o administradores de los establecimientos deberán capacitar a sus empleados y dotarlos del equipo necesario para responder ante situaciones de riesgo o emergencia."
+    },
+    {
+      "sujeto": "Casinos, centros de apuestas y casas de juego",
+      "obligacion": "Tener unidades internas propias, un plan de contingencia aprobado y al menos un simulacro de evacuación al año con personal de la Coordinación Estatal.",
+      "articulo": "Art. 142",
+      "cita": "Estos establecimientos deberán realizar, al menos una vez al año, con la asistencia de personal de la Coordinación Estatal, simulacros de evacuación para hacer frente a altos riesgos, emergencias o desastres."
+    }
+  ],
+  "brigadasDuo": [
+    "La ley define la brigada como el grupo organizado dentro de un inmueble, capacitado en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, y designado por la Unidad Interna conforme al Programa Interno (Art. 2, fr. VII). El programa debe incluir el plan operativo de esa unidad y un Programa Anual de Actividades (Art. 69), al que las empresas deben dar seguimiento (Art. 142).",
+    "Los patrones deben capacitar a su personal y pueden pedir asesoría a la Coordinación Estatal o Municipal para conformar brigadas (Art. 143). Todo simulacro se notifica a la autoridad (Art. 142), y la Coordinación Estatal puede evaluarlos a solicitud del interesado (Art. 32, fr. XXXIII). En edificios frecuentados por menores, el Protocolo Código Adam exige al menos dos simulacros anuales (Art. 139)."
+  ],
+  "equipoDuo": [
+    "Tamaulipas es explícita: patrones, propietarios y administradores deben dotar a sus empleados del equipo necesario para responder ante riesgos o emergencias (Art. 143). La ley no detalla qué equipo; para definirlo, la referencia técnica es la NOM-002-STPS-2010, norma federal sobre prevención y protección contra incendios en centros de trabajo, junto con el análisis de riesgos del inmueble.",
+    "En LORICA equipamos brigadas con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> para evacuación y primera respuesta. Para elegir casco, guantes, calzado y protección respiratoria por puesto, conviene apoyarse en la NOM-017-STPS-2024, norma federal de equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "El artículo 165 prevé amonestación, clausura temporal o definitiva, total o parcial, multa, suspensión de obras, instalaciones o servicios y cancelación de la acreditación de terceros, instructores, grupos voluntarios o brigadistas. La reincidencia puede llevar a la clausura definitiva; el plazo de prescripción es de dos años."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Tamaulipas y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil para el Estado de Tamaulipas, expedida por la Legislatura 66 y publicada en el Anexo al número 152 del Periódico Oficial del Estado el 18 de diciembre de 2025, sin reformas a la fecha. El texto está en la sección de legislación vigente del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Tamaulipas?",
+      "a": "Según el artículo 65, todos los inmuebles públicos, privados o sociales, con dictamen positivo y vigente. El programa se somete cada año a dictaminación y vale un año. Debe elaborarlo una persona física o moral acreditada y operarlo la Unidad Interna del establecimiento (Art. 67)."
+    },
+    {
+      "q": "¿Qué pide la ley sobre brigadas y simulacros?",
+      "a": "Cada establecimiento crea su Unidad Interna (Art. 66), capacita a su personal y lo dota de equipo (Art. 143). Los simulacros deben notificarse a la coordinación de protección civil y a las autoridades de emergencias; no hacerlo es una infracción (Arts. 142 y 163)."
+    },
+    {
+      "q": "¿Qué cambió con la nueva ley de 2025?",
+      "a": "Sustituye a la ley de 2001. Las direcciones municipales del ramo pasan a ser coordinaciones municipales, el reglamento debe emitirse en un plazo de 90 días (mientras tanto se aplican las disposiciones previas que no se opongan) y los terceros acreditados tienen un año para acreditar su capacitación."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Tamaulipas?",
+      "a": "La ley obliga a dotar al personal del equipo necesario, sin fijar una lista. Como referencia, una brigada de primera respuesta suele contar con casco, guantes, botas, prendas de alta visibilidad, botiquín, extintores y radios, ajustados a la NOM-002-STPS-2010 y al análisis de riesgos del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Tamaulipas · Ley de Protección Civil para el Estado de Tamaulipas (PDF)",
+      "url": "https://www.congresotamaulipas.gob.mx/Parlamentario/Archivos/Leyes/Ley%20de%20Proteccion%20Civil%20para%20el%20Edo%20Tam.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Tamaulipas · Legislación vigente",
+      "url": "https://www.congresotamaulipas.gob.mx/LegislacionEstatal/LegislacionVigente/Vigente.asp?idtipoArchivo=1"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

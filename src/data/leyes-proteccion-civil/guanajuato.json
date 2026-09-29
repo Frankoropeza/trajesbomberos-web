@@ -1,0 +1,114 @@
+{
+  "slug": "guanajuato",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Guanajuato",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado de Guanajuato, Tercera Parte",
+    "fecha": "1997-10-24"
+  },
+  "ultimaReforma": "2018-09-21",
+  "urlOficial": "https://congreso-gto.s3.amazonaws.com/uploads/reforma/pdf/1431/Ley_de_Protecci_n_Civil_para_el_Estado_de_Guanajuato_20181010.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 22",
+    "cita": "La coordinación estatal de protección civil, es responsable de elaborar, instrumentar y dirigir la ejecución de los programas de protección civil en el Estado, coordinando sus acciones con las dependencias y entidades del sector público"
+  },
+  "lead": "La Ley de Protección Civil para el Estado de Guanajuato, vigente desde 1997, obliga a empresas y a edificaciones de afluencia masiva a capacitar personal, integrar unidades internas y hacer simulacros. Aquí se resumen sus obligaciones con artículo y cita literal.",
+  "panorama": [
+    "Publicada el 24 de octubre de 1997 y con última reforma publicada el 21 de septiembre de 2018, la ley es de orden público e interés general (Art. 1o.). Sus deberes prácticos para particulares se concentran en el Título Tercero: señalización en toda edificación no unifamiliar (Art. 46), sistemas de prevención en empresas (Art. 47), capacitación y unidad interna (Art. 48) y programa específico (Art. 49).",
+    "El sistema estatal lo integran el consejo estatal, la coordinación estatal de protección civil, los grupos voluntarios y los sistemas, consejos y unidades municipales (Art. 11). La coordinación estatal depende administrativamente del Secretario de Seguridad Pública (Art. 23). Cada ayuntamiento define la estructura de su unidad municipal tomando como referencia las bases del sistema estatal (Art. 44)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Empresas industriales, comerciales y de servicio",
+      "obligacion": "Tener un sistema de prevención y protección para clientes, usuarios, bienes y entorno, y capacitar a quienes trabajan en ellas.",
+      "articulo": "Art. 47",
+      "cita": "Las empresas industriales, comerciales y de servicio, contarán con un sistema de prevención y protección para sus clientes y usuarios así como para sus propios bienes y entorno, adecuando a las actividades que realicen y capacitando en esta materia a las personas que laboren en ellas."
+    },
+    {
+      "sujeto": "Empresas industriales, comerciales y de servicio",
+      "obligacion": "Mantener un programa permanente de señalización e instructivos para emergencias o desastres.",
+      "articulo": "Art. 47",
+      "cita": "Asimismo, implementarán un programa permanente de señalización e instructivos para el caso de emergencia o desastre."
+    },
+    {
+      "sujeto": "Empresas en general",
+      "obligacion": "Capacitar a su personal en protección civil e implementar la unidad interna en los casos que determina la ley.",
+      "articulo": "Art. 48",
+      "cita": "Es obligación de las empresas, ya sean industriales, comerciales o de servicios, capacitar a su personal en materia de protección civil e implementar la unidad interna en los casos en que esta Ley lo determine"
+    },
+    {
+      "sujeto": "Edificaciones con afluencia masiva de personas",
+      "obligacion": "Elaborar un programa específico de protección civil, con asesoría técnica de la coordinación estatal o municipal.",
+      "articulo": "Art. 49",
+      "cita": "Los administradores, gerentes, poseedores, arrendatarios o propietarios de edificaciones que por su uso y destino reciban una afluencia masiva de personas, están obligados a elaborar un programa específico de protección civil"
+    },
+    {
+      "sujeto": "Fábricas, comercios, oficinas, escuelas y terminales",
+      "obligacion": "Practicar al menos un simulacro al año, en coordinación con las autoridades competentes.",
+      "articulo": "Art. 54",
+      "cita": "Se practicarán simulacros de protección civil, por lo menos una vez al año, en coordinación con las autoridades competentes, en todos aquellos edificios públicos, terminales aéreas y de transporte terrestre, escuelas, fábricas, industrias, comercios, oficinas, unidades habitacionales"
+    },
+    {
+      "sujeto": "Edificaciones distintas de casa habitación unifamiliar",
+      "obligacion": "Colocar a la vista señalización, equipo e instructivos de emergencia, y marcar zonas de seguridad y rutas de evacuación.",
+      "articulo": "Art. 46",
+      "cita": "En todas las edificaciones, excepto casas habitación unifamiliares, se deberá colocar en lugares visibles, la señalización y equipo adecuado, así como los instructivos para casos de emergencia"
+    },
+    {
+      "sujeto": "Personas que realizan labores de rescate y auxilio",
+      "obligacion": "Constituirse en un grupo voluntario organizado conforme a la ley, o sumarse a uno existente, y participar en su capacitación.",
+      "articulo": "Art. 33",
+      "cita": "Las personas que deseen desempeñar labores de rescate y auxilio, deberán constituirse en grupos voluntarios debidamente organizados conforme a las disposiciones establecidas en esta Ley o integrarse a un grupo ya existente"
+    }
+  ],
+  "brigadasDuo": [
+    "Para las empresas, la ley guanajuatense habla de unidad interna más que de brigada: las industriales, comerciales o de servicios deben implementarla en los casos que la ley determina y capacitar a su personal (Art. 48). La coordinación estatal y las unidades municipales asesoran gratis para integrarlas (Art. 50), y los programas específicos precisan las tareas a cargo de cada unidad interna (Art. 75).",
+    "Los simulacros son obligatorios al menos una vez al año en edificios públicos, escuelas, fábricas, industrias, comercios, oficinas y unidades habitacionales, en coordinación con las autoridades (Art. 54). La ley también reconoce las brigadas vecinales, coordinadas por las autoridades (Art. 2o., fr. XVI), y exige que quien haga rescate y auxilio pertenezca a un grupo voluntario (Art. 33)."
+  ],
+  "equipoDuo": [
+    "El Art. 46 exige señalización y equipo adecuado en toda edificación que no sea casa habitación unifamiliar, y la coordinación estatal debe capacitar en simulacros, señalización y uso de equipo de seguridad personal (Art. 24, fr. V). La NOM-002-STPS-2010, de alcance federal, es la referencia práctica para decidir extintores, detección y organización de la brigada contra incendio.",
+    "Para las unidades internas de fábricas y comercios de Guanajuato, en LORICA ofrecemos <a href=\"/equipo-de-proteccion/\">equipo de protección</a> y <a href=\"/blog/nom-002-stps-2010-equipo-para-brigadas/\">una guía sobre la NOM-002-STPS-2010</a> para dimensionarlo. La NOM-017-STPS-2024, norma federal de equipo de protección personal, completa la selección según el riesgo de cada puesto."
+  ],
+  "sancionesDuo": [
+    "La Secretaría, mediante la coordinación estatal, y los ayuntamientos verifican y sancionan (Art. 88). Las sanciones pueden ser apercibimiento, multa, clausura temporal o definitiva, parcial o total, y arresto administrativo en los casos de los reglamentos municipales (Art. 95); ante alto riesgo procede evacuar o suspender actividades (Art. 93)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Guanajuato y dónde se consulta?",
+      "a": "Es la Ley de Protección Civil para el Estado de Guanajuato, publicada el 24 de octubre de 1997 en el Periódico Oficial del Gobierno del Estado. Su última reforma publicada es del 21 de septiembre de 2018, con fe de erratas del 10 de octubre de 2018. El Congreso del Estado la ofrece en PDF y Word en su sección de leyes."
+    },
+    {
+      "q": "¿Quién está obligado a tener programa específico de protección civil?",
+      "a": "El Art. 49 obliga a administradores, gerentes, poseedores, arrendatarios o propietarios de edificaciones que reciben afluencia masiva de personas, con asesoría técnica de la coordinación estatal o municipal. La ley lo llama programa específico; el programa interno se define en el Art. 2o., fr. XXV."
+    },
+    {
+      "q": "¿Qué pide la ley sobre unidades internas y simulacros?",
+      "a": "Las empresas deben capacitar a su personal e implementar la unidad interna en los casos que la ley determina (Art. 48). En fábricas, comercios, oficinas, escuelas y otros inmuebles se practica al menos un simulacro al año con las autoridades competentes (Art. 54)."
+    },
+    {
+      "q": "¿Qué es la carta de corresponsabilidad en Guanajuato?",
+      "a": "Según el Art. 2o., fr. XXI, es el documento que expiden las empresas capacitadoras, de consultoría y estudio de riesgo o vulnerabilidad, y los instructores profesionales independientes inscritos ante la Secretaría, con el que se aprueban los programas internos o especiales que ellos elaboran."
+    },
+    {
+      "q": "¿Qué equipo necesita una unidad interna en Guanajuato?",
+      "a": "La ley pide señalización y equipo adecuado (Art. 46) sin detallarlo. En la práctica, una unidad interna suele contar con extintores, botiquín, casco, guantes, chalecos de alta visibilidad y lámparas, definidos con la NOM-002-STPS-2010 y el análisis de riesgo del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "H. Congreso del Estado de Guanajuato · Ley de Protección Civil para el Estado de Guanajuato (PDF)",
+      "url": "https://congreso-gto.s3.amazonaws.com/uploads/reforma/pdf/1431/Ley_de_Protecci_n_Civil_para_el_Estado_de_Guanajuato_20181010.pdf"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Guanajuato · Página de la ley y sus reformas",
+      "url": "https://www.congresogto.gob.mx/leyes/ley-de-proteccion-civil-para-el-estado-de-guanajuato"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Guanajuato · Leyes estatales",
+      "url": "https://www.congresogto.gob.mx/leyes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

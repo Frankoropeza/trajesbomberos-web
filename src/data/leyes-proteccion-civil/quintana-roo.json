@@ -1,0 +1,120 @@
+{
+  "slug": "quintana-roo",
+  "nombreOficial": "Ley de Protección Civil del Estado de Quintana Roo",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Quintana Roo",
+    "fecha": "2009-06-01"
+  },
+  "ultimaReforma": "2023-12-21",
+  "urlOficial": "https://documentos.congresoqroo.gob.mx/leyes/L100-XVII-20231221-L1720231221138.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil de Quintana Roo",
+    "articulo": "Art. 30",
+    "cita": "Para su funcionamiento, el Sistema será coordinado de manera directa por el Titular del Poder Ejecutivo del Estado y operativamente estará a cargo de la Coordinación Estatal, órgano desconcentrado de la Secretaría de Gobierno."
+  },
+  "lead": "Guía práctica de la Ley de Protección Civil del Estado de Quintana Roo para hoteles, plazas, escuelas, industrias y oficinas: qué programa interno, simulacros, señalización y seguros exige, con el artículo y la cita literal de cada obligación.",
+  "panorama": [
+    "Publicada el 1 de junio de 2009 y reformada por última vez el 21 de diciembre de 2023, la ley es de orden público y observancia obligatoria en todo Quintana Roo (Art. 1). Alcanza a personas físicas y jurídicas, públicas, privadas o sociales, vinculadas con la reducción de riesgos de desastre (Art. 70); en la práctica, pesa sobre todo en edificaciones con afluencia masiva o que representan un riesgo.",
+    "El sistema lo coordina directamente el Ejecutivo y lo opera la Coordinación Estatal, órgano desconcentrado de la Secretaría de Gobierno con sede en Chetumal (Art. 30 y 31). Cada ayuntamiento, por acuerdo de cabildo, crea su sistema, su consejo y su coordinación municipal, integrados también por las unidades internas y los grupos voluntarios (Art. 38), e informa cada año de sus programas (Art. 57)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles con afluencia masiva de personas",
+      "obligacion": "Contar con un Programa Interno de Protección Civil alineado con los lineamientos del Programa Especial.",
+      "articulo": "Art. 55",
+      "cita": "En los inmuebles que por su naturaleza o el uso al que se han destinado, reciban una afluencia masiva de personas, deberán contar con un Programa Interno de Protección Civil, acorde con los lineamientos que establezca el Programa Especial."
+    },
+    {
+      "sujeto": "Administradores y propietarios de edificaciones de riesgo",
+      "obligacion": "Elaborar el Programa Interno y capacitar al personal, bajo supervisión de la Coordinación Estatal o de la dependencia municipal.",
+      "articulo": "Art. 72",
+      "cita": "Los administradores, gerentes, poseedores, arrendatarios o propietarios de edificaciones, que por su uso y destino reciban una afluencia masiva de personas, o que por sus características representen algún riesgo para la población, están obligados a elaborar un Programa Interno de Protección Civil, así como capacitar a su personal en la materia"
+    },
+    {
+      "sujeto": "Organizadores de ferias y espectáculos",
+      "obligacion": "Pedir a la Coordinación Estatal, o a la instancia municipal, la verificación de instalaciones y sistemas de seguridad del evento.",
+      "articulo": "Art. 72",
+      "cita": "los organizadores de ferias y espectáculos de concentración de personas deberán solicitar a la Coordinación Estatal, la verificación de sus instalaciones y sistemas de seguridad, la que podrá realizarse por conducto de las instancias Municipales respectivas."
+    },
+    {
+      "sujeto": "Escuelas, fábricas, comercios y oficinas",
+      "obligacion": "Practicar simulacros de protección civil al menos una vez cada seis meses, en coordinación con las autoridades; se exceptúan casas unifamiliares.",
+      "articulo": "Art. 73",
+      "cita": "todas las escuelas de nivel básico, media superior y superior en sus modalidades pública o privada, fábricas, industrias, comercios, oficinas, unidades habitacionales u otros establecimientos en los que haya afluencia de público, en coordinación con las autoridades competentes, deberán practicar simulacros de protección civil, cuando menos una vez cada seis meses"
+    },
+    {
+      "sujeto": "Inmuebles obligados a programa interno",
+      "obligacion": "Colocar a la vista equipos de seguridad, señalización, luces de emergencia, instructivos y manuales que indiquen las zonas de seguridad.",
+      "articulo": "Art. 74",
+      "cita": "deberán colocarse en sitios visibles equipos de seguridad, señales informativas, preventivas, restrictivas y de obligación, avisos de protección civil, luces de emergencia, instructivos y manuales para situaciones de emergencia"
+    },
+    {
+      "sujeto": "Establecimientos con afluencia de público",
+      "obligacion": "Integrar una Unidad Interna de Protección Civil con el personal que requieran las características del sitio, según el Reglamento.",
+      "articulo": "Art. 75",
+      "cita": "Las Unidades Internas de Protección Civil, que se deberán integrar en los lugares a que hace mención el artículo 35 fracción VII de la presente Ley, deberán contar con el personal que según las características y condiciones del sitio se requieran"
+    },
+    {
+      "sujeto": "Empresas de riesgo y alto riesgo",
+      "obligacion": "Contratar póliza de seguro de responsabilidad civil y daños a terceros y disponer de fuente de energía alterna, según corresponda.",
+      "articulo": "Art. 76, fr. I",
+      "cita": "las empresas clasificadas por las autoridades normativas estatales y federales como de riesgo y alto riesgo, deberán contar con lo siguiente: I.- Póliza de seguros de cobertura amplia de responsabilidad civil y daños a terceros que ampare la eventualidad de un siniestro"
+    },
+    {
+      "sujeto": "Constructores de inmuebles de uso público",
+      "obligacion": "Solicitar a la Coordinación Estatal el diagnóstico de riesgo del inmueble, que solo ella aprueba y expide.",
+      "articulo": "Art. 77",
+      "cita": "Para la construcción de inmuebles destinados para uso público se deberá solicitar a la Coordinación Estatal, la formulación del diagnóstico de riesgo del inmueble"
+    }
+  ],
+  "brigadasDuo": [
+    "La pieza operativa en Quintana Roo es la Unidad Interna de Protección Civil, que debe integrarse con el personal que exijan las características de cada sitio (Art. 75). Quien administra un inmueble de afluencia masiva también debe capacitar a su personal (Art. 72) y organizar simulacros al menos cada seis meses, orientando a los usuarios sobre cómo reducir daños (Art. 73).",
+    "Si una emergencia rebasa la capacidad de la unidad interna, sus titulares deben pedir de inmediato apoyo a los cuerpos de emergencia del sistema estatal (Art. 79). Los consultores que elaboran, firman y evalúan programas internos o capacitan brigadas deben estar inscritos conforme al Reglamento (Art. 81 y 83), y quien no pueda cubrir el costo del programa puede pedir asesoría a la Coordinación Estatal (Art. 84)."
+  ],
+  "equipoDuo": [
+    "El artículo 74 es el más concreto en equipamiento: exige equipos de seguridad, luces de emergencia, señales e instructivos en sitios visibles. Para cuerpos de bomberos, la ley pide a los ayuntamientos impulsar su equipamiento y profesionalización (Art. 37, fr. XI) y deja a los reglamentos municipales sus uniformes e insignias (Art. 40 Bis). La NOM-002-STPS-2010 complementa como norma federal de incendios.",
+    "Para una brigada interna en clima cálido y húmedo conviene elegir prendas ligeras y de alta visibilidad. En LORICA ofrecemos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y, para cuerpos municipales, <a href=\"/trajes/estructural/\">trajes estructurales</a>. La NOM-017-STPS-2024, norma federal de equipo de protección personal, orienta la selección por puesto."
+  ],
+  "sancionesDuo": [
+    "La Coordinación Estatal sanciona a los infractores (Art. 121) con multas dentro de los límites del artículo 125, más altas en reincidencia, y con suspensión o cancelación de licencias y permisos. Como medidas de seguridad puede ordenar evacuación, suspensión de actividades o clausura temporal o definitiva (Art. 119)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Quintana Roo y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Quintana Roo, publicada el 1 de junio de 2009 en el Periódico Oficial del Estado. La última reforma anotada es del 21 de diciembre de 2023. El texto completo y su historial de decretos están en el portal de leyes del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe elaborar un Programa Interno de Protección Civil en Quintana Roo?",
+      "a": "Según los artículos 55 y 72, los inmuebles y edificaciones que reciben afluencia masiva de personas o que representan un riesgo para la población. Lo elaboran sus administradores, gerentes, poseedores, arrendatarios o propietarios, bajo la supervisión de la Coordinación Estatal o de la dependencia municipal."
+    },
+    {
+      "q": "¿Cada cuánto deben hacerse simulacros?",
+      "a": "El artículo 73 fija un mínimo de un simulacro cada seis meses para inmuebles con afluencia masiva, escuelas públicas y privadas, fábricas, industrias, comercios, oficinas y unidades habitacionales. Las casas habitación unifamiliares quedan exceptuadas."
+    },
+    {
+      "q": "¿Quién presta el servicio de bomberos en Quintana Roo?",
+      "a": "El artículo 40 Bis asigna a los ayuntamientos el servicio de bomberos, que pueden prestar directamente, mediante una entidad paramunicipal o por convenio con organizaciones sociales o privadas. Los cuerpos de bomberos forman parte del sistema municipal y, por esa vía, del estatal (Art. 40)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Quintana Roo?",
+      "a": "La ley exige equipos de seguridad, luces de emergencia y señalización visibles (Art. 74), sin detallar prendas. En la práctica, una brigada suele contar con casco, guantes, calzado de seguridad, chaleco de alta visibilidad, botiquín y extintores, dimensionados con la NOM-002-STPS-2010 y el análisis de riesgo del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Quintana Roo · Ley de Protección Civil del Estado de Quintana Roo (PDF)",
+      "url": "https://documentos.congresoqroo.gob.mx/leyes/L100-XVII-20231221-L1720231221138.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Quintana Roo · Página de la ley y decretos de reforma",
+      "url": "https://www.congresoqroo.gob.mx/leyes/100/"
+    },
+    {
+      "nombre": "Congreso del Estado de Quintana Roo · Leyes estatales",
+      "url": "https://www.congresoqroo.gob.mx/leyes/"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

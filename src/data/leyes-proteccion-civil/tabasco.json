@@ -1,0 +1,120 @@
+{
+  "slug": "tabasco",
+  "nombreOficial": "Ley de Protección Civil del Estado de Tabasco",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Tabasco",
+    "fecha": "2014-12-31"
+  },
+  "ultimaReforma": "2019-05-04",
+  "urlOficial": "https://congresotabasco.gob.mx/wp/wp-content/uploads/2019/07/Ley-de-Proteccion-Civil-del-Estado-de-Tabasco.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Instituto de Protección Civil del Estado de Tabasco",
+    "articulo": "Art. 21",
+    "cita": "El Instituto de Protección Civil del Estado de Tabasco es un organismo público descentralizado del Gobierno del Estado, con personalidad jurídica y patrimonio propio, domiciliado en la ciudad de Villahermosa, Tabasco"
+  },
+  "lead": "La Ley de Protección Civil del Estado de Tabasco regula cómo deben prepararse inmuebles, empresas e instituciones ante emergencias. Aquí resumimos, con artículo y cita literal, lo que exige en programas internos, unidades internas y brigadas.",
+  "panorama": [
+    "Expedida en diciembre de 2014 y reformada por última vez en 2019, la ley es de orden público y fija las bases de prevención, mitigación, auxilio y resiliencia en Tabasco. Obliga a los inmuebles e instalaciones de los sectores público, privado y social a implementar y presentar un Programa Interno de Protección Civil (Art. 41) y considera delito grave construir en zonas sin análisis de riesgos (Art. 45).",
+    "El Consejo Estatal es el órgano de consulta y coordinación, pero la operación corresponde al Instituto de Protección Civil del Estado de Tabasco, organismo público descentralizado con sede en Villahermosa (Art. 21). Cada municipio integra su sistema, su consejo y una Coordinación Municipal que actúa como primera instancia de vigilancia y auxilio e inspecciona los establecimientos de su competencia (Art. 76)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de los sectores público, privado y social",
+      "obligacion": "Implementar y presentar un Programa Interno de Protección Civil en cada inmueble, con asesoría técnica del Instituto o de la Coordinación Municipal.",
+      "articulo": "Art. 41",
+      "cita": "Los inmuebles e instalaciones fijas y móviles de las dependencias, entidades, instituciones, organismos, industrias o empresas pertenecientes a los sectores público, privado y social, estarán obligados a implementar y presentar un Programa Interno de Protección Civil"
+    },
+    {
+      "sujeto": "Empresas e instituciones obligadas al programa interno",
+      "obligacion": "Crear una Unidad Interna de Protección Civil que elabore, actualice, opere y vigile el programa de forma centralizada y en cada inmueble.",
+      "articulo": "Art. 41",
+      "cita": "Para la implementación del Programa Interno de Protección Civil cada instancia a la que se refiere el párrafo anterior, deberá crear una estructura organizacional específica denominada Unidad Interna de Protección Civil que elabore, actualice, opere y vigile este instrumento en forma centralizada y en cada uno de sus inmuebles."
+    },
+    {
+      "sujeto": "Hospitales y unidades hospitalarias",
+      "obligacion": "Elaborar su programa interno tomando en cuenta los lineamientos del Programa Hospital Seguro.",
+      "articulo": "Art. 41",
+      "cita": "Para el caso de las unidades hospitalarias, en la elaboración del programa interno se deberán tomar en consideración los lineamientos establecidos en el Programa Hospital Seguro."
+    },
+    {
+      "sujeto": "Establecimientos con afluencia masiva de personas",
+      "obligacion": "Contar con Unidad Interna y con un programa interno que el Instituto revisa y aprueba, conforme a la ley y su reglamento.",
+      "articulo": "Art. 49",
+      "cita": "Los responsables de establecimientos que por su uso y destino concentren o reciban una afluencia masiva de personas, están obligados a contar con una Unidad Interna de Protección Civil y elaborar un programa interno, en los términos que establezcan esta Ley y su reglamento, el que deberá ser revisado y aprobado por el Instituto."
+    },
+    {
+      "sujeto": "Administradores y operadores de esos establecimientos",
+      "obligacion": "Integrar las unidades internas con su propio personal, según los requisitos que fije el reglamento y sin perjuicio de otras leyes.",
+      "articulo": "Art. 50",
+      "cita": "Los responsables de la administración y operación de las actividades señaladas en el artículo anterior deberán integrar las unidades internas con su respectivo personal, de acuerdo con los requisitos que señale el reglamento interno de la presente Ley"
+    },
+    {
+      "sujeto": "Capacitadoras, instructores y consultoras de riesgo",
+      "obligacion": "Si están inscritas ante el Instituto, pueden emitir la carta de corresponsabilidad para aprobar los programas internos o especiales que elaboren.",
+      "articulo": "Art. 51",
+      "cita": "Las empresas capacitadoras e instructores independientes, así como las empresas de consultoría y estudio de riesgo-vulnerabilidad que se registren ante el instituto, podrán emitir la carta de corresponsabilidad que se requiera para la aprobación de los programas internos o especiales de protección civil que dichas empresas elaboren."
+    },
+    {
+      "sujeto": "Grupos voluntarios de rescate y combate a incendios",
+      "obligacion": "Tramitar su alta ante el Instituto para realizar rescate, combate a incendios, manejo de albergues o servicios médicos de urgencia.",
+      "articulo": "Art. 54",
+      "cita": "Para desarrollar actividades especializadas en materia de protección civil, tales como tareas de rescate y auxilio, combate a incendios, administración de albergues y centros de acopio, servicios médicos de urgencia, entre otros, los Grupos Voluntarios de carácter estatal y municipal deberán tramitar su registro ante el Instituto"
+    },
+    {
+      "sujeto": "Obras y asentamientos en zonas de riesgo",
+      "obligacion": "Elaborar un análisis de riesgos y obtener autorización antes de construir; hacerlo sin ellos se considera delito grave.",
+      "articulo": "Art. 45",
+      "cita": "Se consideran como delito grave y sancionarán en términos de la Ley, la construcción, edificación, realización de obras de infraestructura y los asentamientos humanos que se lleven a cabo en una zona determinada sin elaborar un análisis de riesgos"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley tabasqueña describe a los brigadistas como personas organizadas dentro de un inmueble, capacitadas en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, y designadas por la Unidad Interna con base en el Programa Interno (Art. 2, fr. VII). La Unidad Interna, también llamada Brigada Institucional, elabora, opera y vigila ese programa (Art. 41).",
+    "Para formarlas, el Instituto imparte cursos de primeros auxilios, prevención y control de incendios, simulacro de evacuación y brigadas internas, previo pago de derechos (Art. 23, fr. XXIII). También dictamina los programas internos y el establecimiento de unidades internas (Art. 23, fr. XXII), y coordina la Red Estatal de Brigadistas Comunitarios con apoyo de los municipios (Art. 59)."
+  ],
+  "equipoDuo": [
+    "La ley no detalla prendas ni herramientas, pero espera que las brigadas atiendan conatos de incendio, evacuación y rescate, y pide a los ayuntamientos presupuestar equipamiento de protección civil (Art. 70, fr. III). Para dotar a una brigada interna, la referencia técnica es la NOM-002-STPS-2010, norma federal de prevención y protección contra incendios en centros de trabajo.",
+    "En LORICA surtimos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y, para grupos voluntarios que combaten incendios, <a href=\"/trajes/estructural/\">trajes estructurales</a>. La NOM-017-STPS-2024, norma federal de equipo de protección personal, ayuda a seleccionar casco, guantes, calzado y protección respiratoria según el análisis de riesgos de cada puesto."
+  ],
+  "sancionesDuo": [
+    "Según el artículo 80, las sanciones administrativas pueden ser multa, clausura temporal o definitiva, total o parcial, y arresto administrativo; en reincidencia la multa se duplica. Responden propietarios, poseedores, administradores, representantes y organizadores (Art. 77), y la facultad de sancionar prescribe en cinco años (Art. 81)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Tabasco y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Tabasco, publicada el 31 de diciembre de 2014 en el Periódico Oficial del Estado. Su última reforma, el Decreto 083, se publicó el 4 de mayo de 2019. El texto completo está en la sección de leyes del sitio del Congreso del Estado de Tabasco."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Tabasco?",
+      "a": "El artículo 41 obliga a los inmuebles e instalaciones fijas y móviles de dependencias, instituciones, industrias o empresas de los sectores público, privado y social. Además, los establecimientos con afluencia masiva deben someter su programa a revisión y aprobación del Instituto (Art. 49)."
+    },
+    {
+      "q": "¿Qué exige la ley sobre brigadas en Tabasco?",
+      "a": "Cada inmueble obligado debe crear su Unidad Interna de Protección Civil, integrada con su propio personal (Arts. 41 y 50). Sus brigadistas se preparan en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, conforme al Programa Interno del inmueble (Art. 2)."
+    },
+    {
+      "q": "¿Puede una consultora firmar la corresponsabilidad de mi programa interno?",
+      "a": "Sí, siempre que esté inscrita ante el Instituto. El artículo 51 permite a empresas capacitadoras, instructores independientes y consultoras de riesgo-vulnerabilidad emitir la carta de corresponsabilidad que se requiere para aprobar los programas internos o especiales que elaboren."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Tabasco?",
+      "a": "La ley no fija una lista cerrada. En la práctica, una brigada que atiende conatos de incendio, evacuación y primeros auxilios suele requerir casco, guantes, botas, chaleco de alta visibilidad, botiquín y extintores, dimensionados con la NOM-002-STPS-2010 y el análisis de riesgos del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Tabasco · Ley de Protección Civil del Estado de Tabasco (PDF)",
+      "url": "https://congresotabasco.gob.mx/wp/wp-content/uploads/2019/07/Ley-de-Proteccion-Civil-del-Estado-de-Tabasco.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Tabasco · Leyes estatales",
+      "url": "https://congresotabasco.gob.mx/leyes/"
+    },
+    {
+      "nombre": "Gobierno de Tabasco · Programa Maestro del Instituto de Protección Civil 2025-2030 (fecha de publicación de la ley)",
+      "url": "https://tabasco.gob.mx/sites/default/files/users/userspftabasco/39-Programa-Maestro-instituto-Prote-%20Civil-Estado-Tabasco-2025-2030.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

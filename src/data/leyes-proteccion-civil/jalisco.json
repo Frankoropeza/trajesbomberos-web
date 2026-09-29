@@ -1,0 +1,116 @@
+{
+  "slug": "jalisco",
+  "nombreOficial": "Ley de Protección Civil del Estado de Jalisco",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial «El Estado de Jalisco»",
+    "fecha": "1993-07-10"
+  },
+  "ultimaReforma": "2024-10-31",
+  "urlOficial": "https://congresoweb.congresojal.gob.mx/BibliotecaVirtual/legislacion/Leyes/Documentos_PDF-Leyes/Ley%20de%20Protecci%C3%B3n%20Civil%20del%20Estado-091225.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Unidad Estatal de Protección Civil y Bomberos",
+    "articulo": "Art. 36",
+    "cita": "Se crea la Unidad Estatal de Protección Civil y Bomberos, como un organismo público descentralizado con personalidad jurídica y patrimonio propio, estará constituido por:"
+  },
+  "lead": "La Ley de Protección Civil del Estado de Jalisco fija qué deben hacer inmuebles, empresas y centros laborales para prevenir y responder a emergencias. Esta guía resume sus obligaciones con artículo y cita literal, pensada para responsables de seguridad y jefes de brigada.",
+  "panorama": [
+    "Vigente desde julio de 1993 y reformada por última vez en octubre de 2024, la ley regula las acciones de protección civil en Jalisco y es de orden público. Obliga a toda persona física o jurídica a informar de riesgos y colaborar con las autoridades (Art. 15), y exige a inmuebles de mediano y alto riesgo o de afluencia masiva un Programa Específico de Protección Civil con dictamen favorable antes de operar (Art. 5).",
+    "El sistema estatal lo encabeza el Consejo Estatal de Protección Civil, con un Comité Estatal de Emergencia como órgano ejecutivo. La operación recae en la Unidad Estatal de Protección Civil y Bomberos, organismo público descentralizado (Art. 36). Cada municipio debe tener su Sistema y su Unidad Municipal, con un director al frente, e informar cada seis meses a la Unidad Estatal (Art. 42)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de mediano y alto riesgo o afluencia masiva",
+      "obligacion": "Contar con Programa Específico de Protección Civil y obtener el dictamen favorable de la Unidad Estatal o Municipal antes de operar.",
+      "articulo": "Art. 5",
+      "cita": "los propietarios, arrendatarios, poseedores o representantes legales están obligados a cumplir y hacer cumplir el Programa Específico de Protección Civil para dicho inmueble, el cual deberá presentarse ante la Unidad Estatal o Municipal, para obtener, en caso de ser procedente, el dictamen favorable, sin el cual no se podrán realizar actividades."
+    },
+    {
+      "sujeto": "Inmuebles distintos a casa habitación unifamiliar",
+      "obligacion": "Colocar señalización e instructivos para casos de emergencia conforme al Reglamento; aplica a arrendatarios, propietarios y poseedores.",
+      "articulo": "Art. 6",
+      "cita": "los arrendatarios, propietarios y poseedores estarán obligados a colocar señalización e instructivos para casos de emergencia, conforme a lo que señale el Reglamento."
+    },
+    {
+      "sujeto": "Comercios, servicios, industrias y centros laborales",
+      "obligacion": "Capacitar cada año al personal en protección civil y crear una unidad interna de protección civil dada de alta ante la autoridad estatal o municipal.",
+      "articulo": "Art. 7, fr. I y II",
+      "cita": "Capacitar en materia de protección civil cada año a las personas que ahí laboren; II. Crear y registrar ante la Unidad Estatal o Municipal una unidad interna de protección civil."
+    },
+    {
+      "sujeto": "Manejo de materiales peligrosos o explosivos",
+      "obligacion": "Tramitar la autorización de la Unidad Estatal al menos cinco días naturales antes de manejar, almacenar, transportar o usar esos materiales.",
+      "articulo": "Art. 7, fr. III",
+      "cita": "Tramitar y obtener la autorización y registro ante la Unidad Estatal con cuando menos cinco días naturales antes de iniciar operaciones que involucren el manejar, almacenar, transportar y utilizar materiales tipificados como peligrosos y/o explosivos en la Entidad"
+    },
+    {
+      "sujeto": "Empresas industriales, de servicio y centros laborales",
+      "obligacion": "Contar con un sistema de prevención y protección para sus bienes y entorno, evaluado y aprobado por la Unidad Estatal o las municipales.",
+      "articulo": "Art. 46",
+      "cita": "Las empresas industriales, de servicio y centros laborales deberán contar con un sistema de prevención y protección para sus propios bienes y su entorno, conforme a las especificaciones que indique el Reglamento."
+    },
+    {
+      "sujeto": "Negociaciones y centros laborales",
+      "obligacion": "Realizar al menos tres simulacros de evacuación al año, en día hábil y con un intervalo de ciento veinte días naturales entre uno y otro.",
+      "articulo": "Art. 46",
+      "cita": "Dichas negociaciones y centros laborales realizarán, cuando menos, tres simulacros de evacuación por año, los cuales se llevarán a cabo cada ciento veinte días naturales"
+    },
+    {
+      "sujeto": "Particulares que realizan rescate y auxilio",
+      "obligacion": "Agruparse en brigadas comunitarias organizadas conforme a la ley y al Reglamento.",
+      "articulo": "Art. 52",
+      "cita": "Los particulares que desempeñen labores de rescate y auxilio, deberán agruparse en brigadas comunitarias, organizados conforme a las disposiciones de la Ley y el Reglamento."
+    },
+    {
+      "sujeto": "Consultores en protección civil",
+      "obligacion": "Obtener antes el permiso de la Unidad Estatal para ofrecer consultoría en materia de protección civil, según los requisitos del Reglamento.",
+      "articulo": "Art. 73 Bis",
+      "cita": "deberá obtenerse previamente el permiso correspondiente ante la Unidad Estatal conforme a los lineamientos y requisitos que determine el Reglamento, sin perjuicio de lo que establezcan otros ordenamientos en la materia."
+    }
+  ],
+  "brigadasDuo": [
+    "En Jalisco, la base de la respuesta interna es la unidad interna de protección civil que todo establecimiento comercial, industrial o de servicios debe crear y dar de alta ante la Unidad Estatal o Municipal, junto con la capacitación anual de su personal (Art. 7). Las empresas y centros laborales, además, deben hacer al menos tres simulacros de evacuación al año, uno cada ciento veinte días naturales (Art. 46).",
+    "La ley distingue las brigadas comunitarias, integradas por voluntarios certificados por la Unidad Estatal (Art. 48). Para certificarse piden constancia del curso para brigadistas comunitarios (Art. 53 Quinquies), y sus funciones van de la prevención y el alertamiento a la evacuación y el apoyo (Art. 53 Septies). La Unidad Estatal y las municipales asesoran gratis a las empresas para integrar sus unidades internas (Art. 47)."
+  ],
+  "equipoDuo": [
+    "La ley jalisciense no enumera prendas ni herramientas, pero encarga a la Unidad Estatal promover la capacitación en simulacros, señalización y uso de equipos de seguridad personal (Art. 38, fr. V). Para dimensionar el equipo de una brigada interna, la referencia técnica son normas federales como la NOM-002-STPS-2010, sobre prevención y protección contra incendios en centros de trabajo.",
+    "En LORICA acompañamos a las brigadas con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a>: casco, guantes, botas y prendas de alta visibilidad para evacuación y primera respuesta. La NOM-017-STPS-2024, norma federal de equipo de protección personal, ayuda a elegirlo según el riesgo de cada puesto."
+  ],
+  "sancionesDuo": [
+    "La Unidad Estatal o municipal puede imponer clausura temporal o definitiva, multa, arresto administrativo hasta por treinta y seis horas, decomiso, suspensión o revocación de permisos y negativa a renovarlos (Art. 81). Antes puede ordenar medidas precautorias como clausura o aseguramiento de materiales (Art. 80 Bis)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Jalisco y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Jalisco, publicada el 10 de julio de 1993 en el Periódico Oficial «El Estado de Jalisco». Su última reforma anotada en el texto es del 31 de octubre de 2024. El texto completo está en la Biblioteca Virtual del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Programa Específico de Protección Civil en Jalisco?",
+      "a": "Según el artículo 5, los inmuebles con actividades o servicios de mediano y alto riesgo y los que reciben afluencia masiva de personas. El programa se presenta ante la Unidad Estatal o Municipal y, sin dictamen favorable, no se pueden realizar actividades."
+    },
+    {
+      "q": "¿Qué pide la ley sobre brigadas y simulacros?",
+      "a": "Los establecimientos deben crear una unidad interna de protección civil y capacitar cada año a su personal (Art. 7). Empresas y centros laborales deben hacer al menos tres simulacros de evacuación por año, en día hábil y con ciento veinte días naturales entre uno y otro (Art. 46)."
+    },
+    {
+      "q": "¿Qué pasa si mi empresa cambia de actividad o modifica sus instalaciones?",
+      "a": "El artículo 5 indica que, si se modifican las actividades o las instalaciones del inmueble, debe llevarse de nuevo el trámite del Programa Específico. La autoridad tiene hasta veinte días hábiles para dictaminarlo y puede requerir información adicional."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Jalisco?",
+      "a": "La ley no fija una lista; habla de capacitación, señalización y uso de equipos de seguridad personal. Como referencia práctica, una brigada suele requerir casco, guantes, botas, prendas de alta visibilidad, botiquín y extintores conforme a la NOM-002-STPS-2010 y al análisis de riesgo del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Jalisco · Ley de Protección Civil del Estado de Jalisco (PDF)",
+      "url": "https://congresoweb.congresojal.gob.mx/BibliotecaVirtual/legislacion/Leyes/Documentos_PDF-Leyes/Ley%20de%20Protecci%C3%B3n%20Civil%20del%20Estado-091225.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Jalisco · Biblioteca Virtual, leyes estatales",
+      "url": "https://congresoweb.congresojal.gob.mx/BibliotecaVirtual/LeyesEstatales.cfm"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

@@ -1,10 +1,10 @@
 ---
 // DataTable: tabla de datos del directorio (cabecera tinta con filete
 // rojo, filas con borde gris). La primera celda de cada fila es <th>.
-// Celdas: texto o { text, href }. Columnas numéricas alineadas a la
+// Celdas: texto o { text, href, ext? } (ext: enlace externo en otra pestaña, nofollow). Columnas numéricas alineadas a la
 // derecha; `hideMobile` oculta la columna ≤640px.
 export interface Col { label: string; num?: boolean; hideMobile?: boolean; accent?: boolean; nowrap?: boolean }
-export type Cell = string | number | { text: string; href: string };
+export type Cell = string | number | { text: string; href: string; ext?: boolean };
 interface Props { caption: string; cols: Col[]; rows: Cell[][] }
 const { caption, cols, rows } = Astro.props as Props;
 const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc', c.nowrap && 'nw'].filter(Boolean).join(' ') || undefined;
@@ -18,7 +18,7 @@ const cls = (c: Col) => [c.num && 'num', c.hideMobile && 'hm', c.accent && 'acc'
         {rows.map((r) => (
           <tr>
             {r.map((cell, i) => {
-              const content = typeof cell === 'object' ? <a href={cell.href}>{cell.text}</a> : cell;
+              const content = typeof cell === 'object' ? (cell.ext ? <a href={cell.href} target="_blank" rel="noopener nofollow">{cell.text}</a> : <a href={cell.href}>{cell.text}</a>) : cell;
               return i === 0 && !cols[0].num
                 ? <th scope="row" class={cls(cols[i])}>{content}</th>
                 : <td class={cls(cols[i])}>{content}</td>;

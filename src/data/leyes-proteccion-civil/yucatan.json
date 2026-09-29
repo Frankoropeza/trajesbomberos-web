@@ -1,0 +1,116 @@
+{
+  "slug": "yucatan",
+  "nombreOficial": "Ley de Protección Civil del Estado de Yucatán",
+  "numero": null,
+  "publicacion": {
+    "medio": "Diario Oficial del Gobierno del Estado de Yucatán",
+    "fecha": "2017-10-20"
+  },
+  "ultimaReforma": "2024-03-15",
+  "urlOficial": "https://www.congresoyucatan.gob.mx/storage/legislacion/leyes/49a8befe6fb099b82f98a9d3dc3d85b2_2024-05-07.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil (órgano desconcentrado de la Secretaría General de Gobierno)",
+    "articulo": "Art. 18",
+    "cita": "La Coordinación Estatal de Protección Civil es un órgano desconcentrado de la Secretaría General de Gobierno, dotado de autonomía administrativa y de gestión, que tiene por objeto dirigir, supervisar y coordinar técnicamente las acciones"
+  },
+  "lead": "En Yucatán rige la Ley de Protección Civil del Estado de Yucatán, expedida en 2017. Esta página explica qué exige a inmuebles con más de veinticinco personas, escuelas, empresas con materiales peligrosos y organizadores de eventos, con artículo y cita del texto del Congreso.",
+  "panorama": [
+    "La ley vigente se publicó el 20 de octubre de 2017 en el Diario Oficial del Gobierno del Estado y sustituyó a la de 1999; su última modificación es del 15 de marzo de 2024. Su capítulo de obligaciones alcanza a inmuebles públicos o privados donde puedan coincidir más de veinticinco personas, a los que prestan servicios educativos y a los que manejan materiales peligrosos (Art. 37).",
+    "El Secretario General de Gobierno funge como secretario ejecutivo del consejo estatal (Art. 17), y la Coordinación Estatal de Protección Civil dirige y supervisa técnicamente la materia (Art. 18). Los ayuntamientos actúan mediante coordinaciones municipales (Art. 23). El artículo 24 reparte la inspección: escuelas, materiales peligrosos y oficinas estatales van con la estatal; el resto de inmuebles concurridos, con la municipal."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles concurridos, escuelas y con materiales peligrosos",
+      "obligacion": "Quedan sujetos al capítulo de obligaciones de la ley, cuenten o no esas personas como empleados; el primer requisito es tener programa interno.",
+      "articulo": "Art. 37",
+      "cita": "Los inmuebles públicos o privados que, por sus funciones o actividades, puedan contar con la presencia simultánea de más de veinticinco personas, independientemente de que sean o no empleados; o en los que se presten servicios educativos o se manejen materiales peligrosos; deberán cumplir con las siguientes disposiciones:"
+    },
+    {
+      "sujeto": "Inmuebles obligados del artículo 37",
+      "obligacion": "Hacer simulacros al menos cada seis meses y dejar constancia de cada uno con la acción realizada y los nombres de quienes participaron.",
+      "articulo": "Art. 37, fr. II",
+      "cita": "Realizar simulacros cuando menos una vez cada seis meses que permitan la prevención de riesgos, emergencias o desastres, así como orientar a la población sobre métodos y acciones para evitar o minimizar los daños en caso de que estos se presenten."
+    },
+    {
+      "sujeto": "Inmuebles obligados del artículo 37",
+      "obligacion": "Tener a la vista equipos de seguridad, señales, luces de emergencia, equipo de atención prehospitalaria e instructivos de emergencia.",
+      "articulo": "Art. 37, fr. III",
+      "cita": "Colocar, en sitios visibles y de fácil acceso, equipos de seguridad y señales preventivas, restrictivas e informativas y luces de emergencia; equipos de atención médica prehospitalaria; los instructivos y manuales para casos de emergencia"
+    },
+    {
+      "sujeto": "Inmuebles que buscan autorización de funcionamiento",
+      "obligacion": "Obtener el dictamen de riesgo de la coordinación estatal o municipal antes de que se autorice su funcionamiento.",
+      "articulo": "Art. 37, fr. IV",
+      "cita": "Obtener un dictamen de riesgo de la coordinación estatal o municipal en la que conste el cumplimiento de lo dispuesto en este artículo y en el 40 y 62, previo a su autorización de funcionamiento por parte del a autoridad competente."
+    },
+    {
+      "sujeto": "Inmuebles con más de cincuenta empleados",
+      "obligacion": "Contar con unidades internas de protección civil proporcionales al personal, la afluencia y los riesgos del inmueble.",
+      "articulo": "Art. 40",
+      "cita": "Los inmuebles públicos o privados que cuenten con más de cincuenta empleados, deberán contar con unidades internas de protección civil"
+    },
+    {
+      "sujeto": "Integrantes de las unidades internas",
+      "obligacion": "Estar capacitados y conocer el programa interno y las medidas internas ante emergencias; su número debe ser acorde a los riesgos.",
+      "articulo": "Art. 41",
+      "cita": "El personal que forme parte de las unidades internas de protección civil deberá estar capacitado y conocer el programa interno de protección civil así como las medidas internas en caso de emergencia o desastre"
+    },
+    {
+      "sujeto": "Organizadores de eventos de más de cien personas",
+      "obligacion": "Pedir autorización a la coordinación municipal para ferias, espectáculos o eventos con esa afluencia, en espacios públicos o privados.",
+      "articulo": "Art. 39",
+      "cita": "Los organizadores de ferias, de espectáculos o de eventos que tengan una afluencia mayor a cien personas y que se realicen en espacios públicos o privados, deberán solicitar a la coordinación municipal, la autorización correspondiente"
+    },
+    {
+      "sujeto": "Administradores o directivos del inmueble",
+      "obligacion": "Actualizar cada año el programa interno o, si nada cambió, avisar de ello a la coordinación que corresponda (hasta cinco veces).",
+      "articulo": "Art. 61",
+      "cita": "Los programas internos de protección civil deberán actualizarse anualmente; no obstante, cuando no hayan variado las condiciones del inmueble ni la normativa aplicable, bastará con que el administrador o quien ejerza funciones de dirección en el inmueble avise de esta circunstancia a la coordinación estatal o municipal"
+    }
+  ],
+  "brigadasDuo": [
+    "El artículo 61 fija cinco apartados mínimos del programa interno yucateco: diagnóstico del inmueble (capacidad, salidas, alarmas, extintores e hidrantes), integración y funciones de la unidad de protección civil, medidas de prevención con la periodicidad de capacitaciones, talleres, ejercicios y simulacros, protocolos de atención de emergencias y medidas de recuperación para volver a operar pronto.",
+    "Quien elabore programas internos o imparta capacitación debe estar certificado por la coordinación estatal (Art. 43), con autorización de tres años (Art. 44). Quien no pueda costear su programa puede recurrir a esa coordinación para recibir asesoría técnica (Art. 63). Aparte, la Red Estatal de Brigadistas agrupa a voluntarios para alerta, evacuación y refugios temporales (Art. 34)."
+  ],
+  "equipoDuo": [
+    "La ley yucateca pide colocar equipos de seguridad y de atención médica prehospitalaria en sitios visibles (Art. 37, fr. III), y el diagnóstico del programa interno debe ubicar alarmas, extintores e hidrantes (Art. 61). No contar con equipos de seguridad funcionales es infracción grave (Art. 87). La NOM-002-STPS-2010, de alcance federal, complementa esos requisitos para centros de trabajo.",
+    "Una unidad interna capacitada necesita equipo acorde a sus tareas de evacuación y combate a conatos. En LORICA ofrecemos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a>: cascos, guantes, botas y chalecos reflejantes. Para seleccionarlo según el riesgo del puesto, sirve la NOM-017-STPS-2024, norma federal de equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "La ley separa infracciones leves (Art. 86) y graves (Art. 87); entre las graves están no hacer simulacros con la periodicidad legal o no tener unidad o programa interno. Las leves se castigan con amonestación o multa, y las graves con multa y clausura temporal o definitiva, parcial o total del inmueble (Art. 90)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Yucatán y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Yucatán, expedida por el Decreto 525 y publicada el 20 de octubre de 2017 en el Diario Oficial del Gobierno del Estado. Su última modificación data del 15 de marzo de 2024. El Congreso del Estado ofrece el texto en PDF en su apartado de legislación."
+    },
+    {
+      "q": "¿Quién debe tener programa interno de protección civil en Yucatán?",
+      "a": "Según el artículo 37, todo inmueble público o privado donde puedan estar más de veinticinco personas a la vez, sean o no empleados, así como escuelas y lugares que manejan materiales peligrosos. El programa se actualiza cada año (Art. 61) y no debe tener más de un año de antigüedad al presentarse (Art. 62)."
+    },
+    {
+      "q": "¿Qué pide la ley yucateca sobre unidades internas y simulacros?",
+      "a": "Los inmuebles con más de cincuenta empleados deben formar unidades internas de protección civil (Art. 40), con personal capacitado que conozca el programa interno (Art. 41). Los simulacros son al menos semestrales y se documentan con la acción y los nombres de los participantes (Art. 37, fr. II)."
+    },
+    {
+      "q": "¿Me inspecciona la coordinación estatal o la municipal?",
+      "a": "El artículo 24 lo define: la coordinación estatal atiende escuelas, inmuebles con materiales peligrosos e inmuebles de dependencias estatales; la municipal, los demás inmuebles donde puedan coincidir más de veinticinco personas. Esa misma autoridad emite el dictamen de riesgo y aplica sanciones."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada o unidad interna en Yucatán?",
+      "a": "La ley no trae una lista cerrada, pero exige equipos de seguridad, señales, luces de emergencia y equipo de atención prehospitalaria. En la práctica, cada brigadista usa casco, guantes, botas y chaleco reflejante, y el inmueble dispone de extintores y botiquín conforme a la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Yucatán · Ley de Protección Civil del Estado de Yucatán (PDF)",
+      "url": "https://www.congresoyucatan.gob.mx/storage/legislacion/leyes/49a8befe6fb099b82f98a9d3dc3d85b2_2024-05-07.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Yucatán · Legislación, leyes estatales",
+      "url": "https://www.congresoyucatan.gob.mx/legislacion/leyes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

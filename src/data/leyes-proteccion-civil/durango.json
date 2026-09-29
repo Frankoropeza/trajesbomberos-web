@@ -1,0 +1,116 @@
+{
+  "slug": "durango",
+  "nombreOficial": "Ley de Protección Civil del Estado de Durango",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado de Durango, núm. 104",
+    "fecha": "2017-12-28"
+  },
+  "ultimaReforma": "2025-12-14",
+  "urlOficial": "https://congresodurango.gob.mx/Archivos/legislacion/LEY%20DE%20PROTECCION%20CIVIL.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 49",
+    "cita": "La Coordinación Estatal tendrá el nivel administrativo de Subsecretaria y su titular será nombrado o removido libremente por el Gobernador del Estado; y los funcionarios responsables de las distintas áreas que la integren, serán nombrados o removidos por el Coordinador."
+  },
+  "lead": "La Ley de Protección Civil del Estado de Durango clasifica a las empresas por su riesgo y les pide un programa interno validado cada año, y unidad interna si reciben más de 50 personas. Esta guía resume esas obligaciones con artículo y cita literal para brigadas y responsables de seguridad.",
+  "panorama": [
+    "Expedida por el Decreto 322 y publicada el 28 de diciembre de 2017, con última reforma del 14 de diciembre de 2025, la ley obliga a autoridades, instituciones y a todas las empresas, que deben clasificarse según su actividad económica, peligrosidad y exposición de los trabajadores (Art. 1). Esa clasificación define sus deberes: programa interno, capacitación del personal y aportación a los fondos de protección civil.",
+    "Son autoridades el Gobernador, el Secretario General de Gobierno, la Coordinación Estatal de Protección Civil, los presidentes municipales y las coordinaciones municipales (Art. 6). La Coordinación Estatal tiene rango de subsecretaría (Art. 49). Cada municipio opera un Sistema Municipal con consejo, coordinación, unidades internas y grupos voluntarios (Art. 51), y sus coordinaciones vigilan en primera instancia (Art. 159)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Empresas clasificadas por nivel de riesgo",
+      "obligacion": "Implementar programas internos adecuados a su nivel de riesgo, que la autoridad revisa y valida cada año.",
+      "articulo": "Art. 42",
+      "cita": "implementando programas internos de protección civil, los cuáles serán revisados, validados y registrados por la autoridad correspondiente de forma anual, mismos que estarán adecuados al nivel de riesgo conforme a su actividad económica, peligrosidad y exposición de los trabajadores."
+    },
+    {
+      "sujeto": "Establecimientos con licencia o permiso de operación",
+      "obligacion": "Mantener vigente la validación anual del programa interno, requisito para conservar autorizaciones, licencias y permisos de operación.",
+      "articulo": "Art. 42",
+      "cita": "La validación anual será requisito indispensable para la vigencia de autorizaciones, licencias o permisos vinculados a la operación del establecimiento, y su incumplimiento podrá ser causal de sanción conforme a lo dispuesto en el presente ordenamiento."
+    },
+    {
+      "sujeto": "Particulares con afluencia promedio mayor a 50 personas",
+      "obligacion": "Contar con Unidad Interna y Programa Interno; sin ellos no se expide, o se revoca, la licencia de funcionamiento.",
+      "articulo": "Art. 128",
+      "cita": "Los particulares que se dediquen a actividades en las que se concentre o se reciba una afluencia promedio mayor a 50 personas en sus instalaciones, entre empleados y usuarios, estarán obligados a contar con una Unidad Interna de Protección Civil y a elaborar su correspondiente Programa Interno"
+    },
+    {
+      "sujeto": "Inmuebles con afluencia menor a 50 personas",
+      "obligacion": "Cumplir un mínimo de seguridad: señalización, salida de emergencia, extintor, cinta antiderrapante, botiquín y un empleado capacitado.",
+      "articulo": "Art. 128",
+      "cita": "señalización informativa, preventiva y restrictiva, salida de emergencia, extintor contra fuego, cinta antiderrapante en escaleras, botiquín de primeros auxilios y al menos un empleado capacitado en esta materia."
+    },
+    {
+      "sujeto": "Manejo de materiales peligrosos e hidrocarburos",
+      "obligacion": "Presentar ante la autoridad estatal y municipal el Programa Interno y las autorizaciones federales que les correspondan.",
+      "articulo": "Art. 126",
+      "cita": "Las personas físicas o morales del sector privado cuya actividad sea el manejo, almacenamiento, distribución, transporte y utilización de materiales peligrosos, hidrocarburos y explosivos inflamables, corrosivos, reactivos, tóxicos, biológico infecciosos o cualquier otra sustancia equivalente"
+    },
+    {
+      "sujeto": "Organizadores de eventos de concentración masiva",
+      "obligacion": "Entregar un Programa Especial a la Coordinación Estatal con al menos cinco días de anticipación y difundir sus medidas al público.",
+      "articulo": "Art. 123",
+      "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse Programas Especiales de Protección Civil; los cuales serán entregados con mínimo cinco días a la Coordinación Estatal para su aprobación"
+    },
+    {
+      "sujeto": "Instalaciones con albercas o acceso a ríos y presas",
+      "obligacion": "Presentar para aprobación un programa de seguridad, salvamento y rescate acuático.",
+      "articulo": "Art. 141",
+      "cita": "deberán contar con un programa de seguridad, salvamento y rescate acuático para aguas cerradas, abiertas o confinadas, el cual deberá ser presentado ante la autoridad en materia de Protección Civil, para su revisión y aprobación"
+    },
+    {
+      "sujeto": "Consultores, capacitadores y elaboradores de programas",
+      "obligacion": "Obtener la acreditación de la Coordinación Estatal para asesorar, capacitar o elaborar programas internos y emitir cartas de corresponsabilidad.",
+      "articulo": "Art. 44",
+      "cita": "Para que los particulares o dependencias públicas puedan ejercer la actividad de asesoría, capacitación, evaluación, elaboración de programas internos de protección civil, de continuidad de operaciones y estudios de vulnerabilidad y riesgos en materia de protección civil"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley llama Unidad Interna de Protección Civil al órgano que elabora, actualiza, opera y vigila el Programa Interno de cada inmueble, también conocido como brigada institucional (Art. 3). Es obligatoria para particulares con más de 50 personas en promedio y se integra con personal capacitado del propio establecimiento (Art. 128). Ante una emergencia es la primera instancia de actuación (Art. 159).",
+    "Las brigadas son grupos organizados dentro del inmueble y adiestrados en primeros auxilios, combate de conatos de incendio, evacuación y búsqueda y rescate (Art. 3). La ley no fija un número de simulacros para empresas; encarga a las coordinaciones municipales organizar cursos, ejercicios y simulacros (Art. 66), y la capacitación externa exige acreditación ante la Coordinación Estatal (Art. 43 y 44)."
+  ],
+  "equipoDuo": [
+    "Para inmuebles con menos de 50 personas, el Art. 128 fija un mínimo concreto: señalización, salida de emergencia, extintor, cinta antiderrapante, botiquín y un empleado capacitado. Las brigadas de inmuebles mayores necesitan más; la NOM-002-STPS-2010, norma federal, orienta sobre extintores, detección de incendios y organización de la brigada contra incendio en centros de trabajo.",
+    "La ley reconoce a los cuerpos voluntarios de bomberos y deja a los reglamentos municipales sus uniformes y jerarquías (Art. 71 y 73). En LORICA equipamos a brigadas y corporaciones con <a href=\"/trajes/estructural/\">trajes estructurales</a> y <a href=\"/trajes/brigadista/\">trajes para brigadista</a>; la NOM-017-STPS-2024, norma federal, ayuda a elegir el equipo de protección personal por puesto."
+  ],
+  "sancionesDuo": [
+    "La Coordinación Estatal y las municipales pueden imponer apercibimiento, clausura o suspensión temporal o definitiva, multa y auxilio de la fuerza pública (Art. 165). El Art. 169 añade la suspensión de actividades o de eventos masivos, y el Art. 167 permite medidas cautelares como la clausura temporal."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Durango y dónde se consulta?",
+      "a": "Es la Ley de Protección Civil del Estado de Durango, expedida por el Decreto 322 y publicada en el Periódico Oficial núm. 104 del 28 de diciembre de 2017. Su última reforma (Decreto 302) se publicó el 14 de diciembre de 2025. El texto está en la sección de legislación vigente del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Durango?",
+      "a": "Las empresas y organismos públicos, sociales y privados, según su nivel de riesgo (Art. 42); los particulares que reciben en promedio más de 50 personas (Art. 128) y quienes manejan materiales peligrosos (Art. 126). El programa se valida cada año y esa validación condiciona licencias y permisos."
+    },
+    {
+      "q": "¿Qué pide la ley de Durango sobre brigadas?",
+      "a": "Que la unidad interna, también llamada brigada institucional, se integre con personal capacitado que labore en el propio establecimiento (Art. 128). Sus brigadas se preparan para primeros auxilios, combate de conatos de incendio, evacuación y búsqueda y rescate (Art. 3)."
+    },
+    {
+      "q": "¿Cómo afecta la clasificación por riesgo a mi empresa?",
+      "a": "Desde la reforma de diciembre de 2025, las empresas se clasifican por actividad, peligrosidad y exposición de los trabajadores. Esa clasificación define sus programas internos, la capacitación del personal y las cuotas para aprobar programas (Art. 1 y 42), conforme al catálogo que fije la legislación reglamentaria."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Durango?",
+      "a": "La ley solo enumera el mínimo para inmuebles pequeños (Art. 128). Una brigada completa suele requerir casco, guantes, botas, prendas de alta visibilidad, botiquín, extintores y radios, dimensionados conforme a la NOM-002-STPS-2010 y al análisis de riesgo del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "H. Congreso del Estado de Durango · Ley de Protección Civil del Estado de Durango (PDF)",
+      "url": "https://congresodurango.gob.mx/Archivos/legislacion/LEY%20DE%20PROTECCION%20CIVIL.pdf"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Durango · Legislación vigente",
+      "url": "https://congresodurango.gob.mx/trabajo-legislativo/legislacion-estatal/"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

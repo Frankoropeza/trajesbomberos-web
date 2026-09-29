@@ -28,6 +28,7 @@ import {
   resumenEstado, municipiosDe, serviciosDe, rutaEstado, hrefMunicipio, paginaMunicipio, rutaMunicipio, telHref, telTexto, pct, nf, enEstado, deEstado, conArticulo, unidad,
   type Entidad,
 } from '@lib/directorio';
+import { leyPC, rutaLeyPC } from '@lib/leyes-proteccion-civil';
 
 export function getStaticPaths() {
   return ENTIDADES.map((e) => ({ params: { estado: e.slug }, props: { e } }));
@@ -123,6 +124,7 @@ const cta: CtaPreset = {
     { label: 'Directorio nacional de bomberos', href: BASE_DIRECTORIO, icon: 'arrow' },
   ],
 };
+const ley = leyPC(e.slug);
 ---
 <PageLayout
   footerCta={{ title: cta.title, text: cta.text, secondary: { label: 'Directorio de estaciones de bomberos', href: '/estaciones-de-bomberos/' } }}
@@ -260,6 +262,12 @@ const cta: CtaPreset = {
       <TileGrid>
         {equipo.map((t) => <TileCard {...t} />)}
       </TileGrid>
+      {ley && (
+        <p class="ley-link">
+          <span>Normativa estatal</span>
+          <a href={rutaLeyPC(e.slug)}>Ley de Protección Civil {deEstado(e)}: qué exige a empresas y brigadas</a>
+        </p>
+      )}
     </div>
   </section>
 
@@ -298,6 +306,9 @@ const cta: CtaPreset = {
 </PageLayout>
 
 <style>
+  .ley-link { margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; align-items: baseline; }
+  .ley-link span { font-family: var(--font-display); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-primary); }
+  .ley-link a { font-weight: 600; }
   /* Bloque de municipio: barra con número, título y conteo */
   .muni { scroll-margin-top: calc(var(--sticky-offset) + 1rem); }
   .muni-list {
