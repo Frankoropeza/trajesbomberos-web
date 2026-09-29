@@ -1,7 +1,7 @@
 {
  "lead": "Nuevo León cuenta con 28 estaciones de bomberos en 13 municipios, concentradas en Monterrey, Apodaca y Guadalupe. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora para contactar o equipar la base que corresponde.",
  "panorama": [
-  "La atención de bomberos en Nuevo León se sostiene principalmente en corporaciones municipales, con Bomberos de Nuevo León, A.B.P. como una red que opera en varios municipios. El Patronato de Bomberos de Ciudad Guadalupe, A.C. mantiene su propia estructura, y se agregan brigada PEMEX y dos servicios aeroportuarios. Hay 2 centrales y 16 subestaciones para distribuir la operación.",
+  "En Nuevo León el grueso del servicio lo prestan dos patronatos: Bomberos de Nuevo León, A.B.P., con una red que cubre varios municipios del área metropolitana, y el Patronato de Bomberos de Ciudad Guadalupe, A.C. Los complementan cuerpos municipales en ciudades como San Nicolás o Linares, una brigada de PEMEX y dos servicios aeroportuarios. Hay 2 centrales y 16 subestaciones para distribuir la operación.",
   "Monterrey concentra 5 estaciones; Apodaca y Guadalupe reúnen 4 cada uno, con continuidad hacia San Pedro Garza García, García y General Escobedo. Esa densidad metropolitana facilita organizar dotaciones por corporación, aunque Linares, Sabinas Hidalgo y Santiago requieren una logística propia. Quien equipa bomberos en Nuevo León debe separar servicio urbano, industrial, forestal y aeroportuario."
  ],
  "estacionesDuo": [
@@ -21,7 +21,7 @@
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Nuevo León?",
-   "a": "Los bomberos en Nuevo León son atendidos por corporaciones municipales y por Bomberos de Nuevo León, A.B.P., con presencia en varios municipios. También opera el Patronato de Bomberos de Ciudad Guadalupe, A.C., una brigada PEMEX en Cadereyta Jiménez y cuerpos aeroportuarios en Apodaca."
+   "a": "Los bomberos en Nuevo León son, sobre todo, de patronato: Bomberos de Nuevo León, A.B.P., con presencia en varios municipios, y el Patronato de Bomberos de Ciudad Guadalupe, A.C. También hay cuerpos municipales, una brigada PEMEX en Cadereyta Jiménez y cuerpos aeroportuarios en Apodaca."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Nuevo León para una gestión?",

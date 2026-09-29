@@ -1,0 +1,32 @@
+{
+ "lead": "Celaya cuenta con 3 estaciones de bomberos, todas de Protección Civil y Bomberos de Celaya. Encuentras el domicilio de cada una, el teléfono oficial de las que lo publican y, en la mayoría, su ubicación exacta.",
+ "panorama": [
+  "Los bomberos en Celaya dependen de una sola corporación municipal, Protección Civil y Bomberos de Celaya, que trabaja con tres estaciones de igual rango y sin una central declarada. Cada base lleva el nombre de su zona: Centro, Zona Industrial y Galaxias del Parque, lo que ya dice bastante de cómo se reparte la ciudad.",
+  "Si coordinas una brigada de planta, la estación de Zona Industrial, sobre Poniente 2 Norte en Ciudad Industrial, es la vecina lógica para simulacros y enlaces. La del Centro queda en la calle Pípila y la de Galaxias del Parque, sobre Av. las Torres. Al compartir un mismo mando, las tres pueden equiparse con criterios homogéneos."
+ ],
+ "coberturaDuo": [
+  "Las tres estaciones son municipales y declaran el mismo núcleo de servicios: incendios estructurales, rescate vehicular y atención prehospitalaria. La base del Centro suma protección civil. Es un perfil urbano, pensado para siniestros en vivienda, comercio e industria y para accidentes en las vialidades."
+ ],
+ "equipoDuo": [
+  "Con ese perfil, la prioridad en Celaya es el <a href=\"/trajes/estructural/\">traje estructural para bomberos</a> bajo NFPA 1970, acompañado de casco, guantes y botas del mismo nivel. El rescate vehicular que declaran las tres estaciones pide además herramienta de corte y separación, y guantes que resistan filos y vidrio.",
+  "LORICA cotiza a la corporación de Celaya con ficha técnica por partida y arma el expediente que pide una licitación municipal. Facturamos con CFDI 4.0, no pedimos compra mínima y enviamos a Celaya, sea una reposición de guantes o un lote de <a href=\"/kits/\">kits de equipo para bomberos</a>."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Celaya y dónde están?",
+   "a": "Celaya tiene 3 estaciones de bomberos, todas municipales: la del Centro, en la calle Pípila; la de Zona Industrial, en Ciudad Industrial, y la de Galaxias del Parque, sobre Av. las Torres. Las tres atienden incendios, rescate vehicular y atención prehospitalaria."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Celaya?",
+   "a": "El servicio lo presta Protección Civil y Bomberos de Celaya, dependencia del municipio que reúne bajo un mismo mando las tres estaciones. Como protección civil y bomberos forman una sola área, las gestiones de prevención y las operativas pasan por la misma oficina."
+  },
+  {
+   "q": "¿Cómo me comunico con los bomberos de Celaya para un trámite?",
+   "a": "Las estaciones del Centro y de Zona Industrial publican teléfono oficial; úsalo para visitas, inspecciones o cursos para tu brigada. La de Galaxias del Parque no tiene número publicado. Ante una emergencia no llames a la estación: marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Celaya?",
+   "a": "Lo habitual es la licitación o la adjudicación municipal. LORICA entrega cotización por partida con ficha técnica, la documentación para el expediente y CFDI 4.0, sin compra mínima. También atendemos a brigadas industriales y patronatos de Celaya."
+  }
+ ]
+}

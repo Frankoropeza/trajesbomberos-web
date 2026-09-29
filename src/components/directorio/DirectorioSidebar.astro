@@ -13,14 +13,15 @@ import { waUrl } from '@lib/wa';
 import { rutaExiste } from '@lib/rutas';
 import { getPosts, postUrl, categoriaNombre } from '@lib/blog';
 import {
-  type Entidad, BASE_DIRECTORIO, ENTIDADES, REGIONES, resumenEstado, municipiosDe, rutaEstado, enEstado, deEstado, unidad,
+  type Entidad, BASE_DIRECTORIO, ENTIDADES, REGIONES, resumenEstado, municipiosDe, rutaEstado, enEstado, deEstado, unidad, hrefMunicipio,
 } from '@lib/directorio';
 
 interface Props {
   e: Entidad;
   pageIndex: { label: string; href: string }[];
+  muniActual?: string; // slug del municipio en su página propia (fase 2)
 }
-const { e, pageIndex } = Astro.props as Props;
+const { e, pageIndex, muniActual } = Astro.props as Props;
 const region = REGIONES.find((r) => r.slug === e.region)!;
 const municipios = municipiosDe(e.slug);
 const MAX_MUNI = 10;
@@ -59,7 +60,7 @@ const guias = (await getPosts())
       <ul class="sb-cats">
         {municipios.slice(0, MAX_MUNI).map((m) => (
           <li>
-            <a href={`#${m.slug}`}>
+            <a href={hrefMunicipio(e.slug, m.slug)} class:list={[{ 'is-active': m.slug === muniActual }]} aria-current={m.slug === muniActual ? 'page' : undefined}>
               <span>Bomberos en {m.nombre}</span>
               <span class="sb-cats__n">{m.estaciones.length}</span>
             </a>
@@ -67,7 +68,7 @@ const guias = (await getPosts())
         ))}
       </ul>
       {municipios.length > MAX_MUNI && (
-        <a class="sb-more" href="#municipios">Los {municipios.length} {UNIS} con estaciones →</a>
+        <a class="sb-more" href={`${rutaEstado(e.slug)}#municipios`}>Los {municipios.length} {UNIS} con estaciones →</a>
       )}
     </nav>
 
@@ -75,7 +76,7 @@ const guias = (await getPosts())
       <p class="sb-title">Región {region.nombre}</p>
       <ul class="sb-cats">
         <li>
-          <a class="is-active" aria-current="page" href={rutaEstado(e.slug)}>
+          <a class:list={[{ 'is-active': !muniActual }]} aria-current={muniActual ? undefined : 'page'} href={rutaEstado(e.slug)}>
             <span>Bomberos {enEstado(e)}</span>
           </a>
         </li>

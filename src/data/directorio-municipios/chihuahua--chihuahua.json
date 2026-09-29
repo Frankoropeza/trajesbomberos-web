@@ -1,0 +1,32 @@
+{
+ "lead": "En la ciudad de Chihuahua operan nueve estaciones de bomberos: ocho del Heroico Cuerpo de Bomberos y Rescate de Chihuahua y la del aeropuerto. Encuentras su domicilio, su ubicación y el teléfono oficial cuando existe.",
+ "panorama": [
+  "El servicio municipal se organiza desde el Centro de Mando del Heroico Cuerpo de Bomberos y Rescate de Chihuahua, sobre la avenida Homero, en la colonia Revolución, y siete subestaciones repartidas por la ciudad. Aparte trabaja el SSEI del Aeropuerto Internacional Gral. Roberto Fierro Villalobos, dedicado al salvamento aeroportuario.",
+  "Para quien coordina simulacros o planea capacitación, las subestaciones cubren zonas muy distintas: el Complejo Industrial Américas, Santa Rosa, Zarco, Lealtad II junto a la Comandancia Sur, Jardines de Oriente, el Reliz y el fraccionamiento Los Arroyos. Como el Centro de Mando concentra los servicios especializados y el único teléfono publicado, conviene iniciar ahí cualquier gestión."
+ ],
+ "coberturaDuo": [
+  "Casi todo el servicio de bomberos en Chihuahua es municipal; la excepción es el aeropuerto. Las subestaciones atienden incendios estructurales y el Centro de Mando suma incendios forestales, rescate vehicular, fugas de gas, atención prehospitalaria y enjambres: la respuesta especializada se concentra en una sola sede."
+ ],
+ "equipoDuo": [
+  "La base es el <a href=\"/trajes/estructural/\">traje estructural NFPA 1970</a> para las ocho estaciones municipales. Como el Centro de Mando también atiende incendios forestales y rescate vehicular, su dotación debe sumar <a href=\"/trajes/forestal/\">trajes forestales</a> ligeros, herramientas de extricación y guantes de rescate.",
+  "Para una corporación de Chihuahua, LORICA cotiza por partida con ficha técnica de cada prenda, arma el expediente que pide una licitación municipal o estatal y factura con CFDI 4.0. No pedimos compra mínima, así que puedes equipar una subestación completa o reponer piezas sueltas, con envío hasta la ciudad."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Chihuahua y dónde se ubican?",
+   "a": "Hay nueve. El Centro de Mando está en la avenida Homero, colonia Revolución, y las subestaciones se reparten entre Zarco, Santa Rosa, Lealtad II, Jardines de Oriente, el Reliz, Los Arroyos y el Complejo Industrial Américas. La novena es la base del aeropuerto."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Chihuahua?",
+   "a": "El Heroico Cuerpo de Bomberos y Rescate de Chihuahua, corporación municipal, opera el Centro de Mando y sus siete subestaciones. En el aeropuerto internacional el servicio corresponde al SSEI, que se ocupa del salvamento aeroportuario."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos de Chihuahua para una gestión?",
+   "a": "Para trámites, cursos o visitas, llama al Centro de Mando: es la única estación de la ciudad con teléfono oficial publicado y lo encuentras junto a su domicilio en el listado. Las subestaciones no publican línea propia. En una emergencia marca siempre al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Chihuahua?",
+   "a": "Escríbenos por WhatsApp con la lista de partidas y te devolvemos una cotización con ficha técnica por prenda, documentos para el expediente de compra y factura CFDI 4.0. Atendemos desde una sola pieza hasta la dotación completa de una subestación."
+  }
+ ]
+}

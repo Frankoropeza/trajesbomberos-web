@@ -17,6 +17,7 @@ import EstadoCard from '@components/directorio/EstadoCard.astro';
 import Aviso911 from '@components/directorio/Aviso911.astro';
 import RegionesIndex from '@components/directorio/RegionesIndex.astro';
 import CifrasDirectorio from '@components/directorio/CifrasDirectorio.astro';
+import BotonesConteo from '@components/directorio/BotonesConteo.astro';
 import { tilesEquipo } from '@lib/directorio-equipo';
 import type { CtaPreset } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
@@ -30,6 +31,7 @@ import {
   enEstado,
   pct,
   nf,
+  MUNICIPIOS_PAGINA, rutaMunicipio, ENTIDADES as ENT_CIUDADES,
 } from '@lib/directorio';
 
 const path = BASE_DIRECTORIO;
@@ -45,6 +47,7 @@ const REVISION = 'septiembre de 2026';
 const menuItems = [
   { label: 'Índice por región', href: '#estados' },
   { label: 'Directorio por estado', href: '#directorio' },
+  { label: 'Ciudades', href: '#ciudades' },
   { label: 'Cifras', href: '#cifras' },
   { label: 'Cómo verificamos', href: '#metodologia' },
   { label: 'Equipo para bomberos', href: '#equipo' },
@@ -169,8 +172,32 @@ const cta: CtaPreset = {
     </div>
   </section>
 
+  <!-- 2b · Ciudades con página propia (fase 2) -->
+  <section class="section" id="ciudades">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Ciudades con más estaciones"
+        title="Estaciones de bomberos por ciudad"
+        duo={[
+          `Las ${MUNICIPIOS_PAGINA.length} ciudades con más estaciones de bomberos, y las capitales con dos o más, tienen su propia página: quién opera cada estación, su teléfono oficial y el equipo que corresponde a sus riesgos.`,
+          'El resto de los municipios aparece dentro de la página de su estado, agrupado con sus estaciones.',
+        ]}
+      />
+      <BotonesConteo
+        cols={4}
+        label="Ciudades con página de estaciones de bomberos"
+        items={[...MUNICIPIOS_PAGINA].sort((a, b) => b.estaciones.length - a.estaciones.length || a.comun.localeCompare(b.comun, 'es')).map((m) => ({
+          label: `${m.comun}, ${ENT_CIUDADES.find((x) => x.slug === m.estado)!.nombre}`,
+          href: rutaMunicipio(m.estado, m.slug),
+          n: m.estaciones.length,
+          title: `Bomberos en ${m.comun}`,
+        }))}
+      />
+    </div>
+  </section>
+
   <!-- 3 · Cifras del directorio -->
-  <section class="section" id="cifras">
+  <section class="section section--alt" id="cifras">
     <div class="container">
       <SectionHeading
         eyebrow="Cifras del directorio"
@@ -185,7 +212,7 @@ const cta: CtaPreset = {
   </section>
 
   <!-- 4 · Cómo se arma el directorio -->
-  <section class="section section--alt" id="metodologia">
+  <section class="section" id="metodologia">
     <div class="container">
       <SectionHeading
         eyebrow="Cómo verificamos"
@@ -208,7 +235,7 @@ const cta: CtaPreset = {
   </section>
 
   <!-- 5 · Equipo para corporaciones (puente al catálogo, TileCard homologada) -->
-  <section class="section" id="equipo">
+  <section class="section section--alt" id="equipo">
     <div class="container">
       <SectionHeading
         eyebrow="Equipo para cuerpos de bomberos"
@@ -225,7 +252,7 @@ const cta: CtaPreset = {
   </section>
 
   <!-- 6 · Preguntas frecuentes -->
-  <section class="section section--alt" id="faq">
+  <section class="section" id="faq">
     <div class="container">
       <SectionHeading
         eyebrow="Preguntas frecuentes"

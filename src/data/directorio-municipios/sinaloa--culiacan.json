@@ -1,0 +1,32 @@
+{
+ "lead": "Las estaciones de bomberos en Culiacán son dos: la del Heroico Cuerpo de Bomberos de Culiacán, formado por voluntarios, en el Centro, y la del aeropuerto. Encuentra el domicilio y la ubicación de la estación urbana.",
+ "panorama": [
+  "El servicio urbano lo presta el Heroico Cuerpo de Bomberos de Culiacán, una corporación de voluntarios con una sola estación sobre el bulevar Gabriel Leyva Solano, en el Centro. En paralelo, el Aeropuerto Internacional de Culiacán, conocido como Bachigualato, mantiene su propio servicio de salvamento, el SSEI, dedicado a la operación aérea.",
+  "Para quien coordina brigadas, capacita personal o dona equipo, Culiacán tiene un interlocutor claro: el cuerpo de voluntarios del Centro concentra incendio, rescate y materiales peligrosos. Al depender del trabajo voluntario, el respaldo de empresas y particulares con equipo de protección personal tiene un peso especial."
+ ],
+ "coberturaDuo": [
+  "Una estación es de voluntarios y la otra pertenece al aeropuerto. Ambas dan atención prehospitalaria; la de voluntarios cubre además incendio estructural, rescate vehicular, rescate en altura y materiales peligrosos, mientras el SSEI se enfoca en el salvamento aeroportuario."
+ ],
+ "equipoDuo": [
+  "Un cuerpo de voluntarios que atiende tantos frentes necesita <a href=\"/trajes/estructural/\">trajes estructurales</a>, casco, botas y equipo de respiración autónoma, además de herramienta para rescate vehicular, arneses para rescate en altura y protección química. En el aeropuerto, el salvamento aeroportuario exige trajes de aproximación al fuego.",
+  "LORICA cotiza a voluntarios, al aeropuerto o a empresas que donan equipo en Culiacán, por partida y con ficha técnica de cada artículo; si hay licitación, preparamos el expediente. Facturamos con CFDI 4.0, sin compra mínima, y enviamos a Sinaloa, incluido el <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a>."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Culiacán y dónde están?",
+   "a": "Dos. La del Heroico Cuerpo de Bomberos de Culiacán está sobre el bulevar Gabriel Leyva Solano Oriente, en el Centro, con ubicación exacta en mapa. La segunda es la del SSEI del aeropuerto Bachigualato, que no tiene domicilio publicado."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Culiacán?",
+   "a": "El servicio urbano lo sostiene el Heroico Cuerpo de Bomberos de Culiacán, formado por voluntarios, y el aeropuerto cuenta con su propio servicio de salvamento. En Sinaloa hay 9 estaciones en 6 municipios, y la capital reúne dos de ellas."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en Culiacán para una gestión?",
+   "a": "Ninguna de las dos estaciones tiene teléfono oficial publicado. Puedes acudir a la estación del Centro, pedir apoyo a protección civil municipal o escribirnos por WhatsApp. Si hay una emergencia, marca al 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Culiacán?",
+   "a": "Un cuerpo de voluntarios puede comprar con recursos propios, donativos o apoyo de empresas; en todos los casos LORICA cotiza por partida, con ficha técnica y factura CFDI 4.0 a nombre de quien paga. No pedimos compra mínima y enviamos a Culiacán."
+  }
+ ]
+}

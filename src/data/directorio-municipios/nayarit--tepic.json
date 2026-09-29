@@ -1,0 +1,32 @@
+{
+ "lead": "En Tepic hay tres estaciones de bomberos: la del estado de Nayarit, la del municipio y la del aeropuerto. Conoce qué atiende cada una, dónde está la base estatal y cuál publica teléfono oficial.",
+ "panorama": [
+  "Tepic concentra el mando estatal: la Dirección General de Protección Ciudadana y Bomberos del Estado de Nayarit opera en Avenida Insurgentes, esquina con Paseo de Viena. Junto a ella trabajan la Dirección de Protección Civil y Bomberos del Municipio de Tepic y el CREI del Aeropuerto Internacional de Tepic-Riviera Nayarit.",
+  "Para quien planea capacitación o compras en Tepic, la corporación estatal es la que suma rescate en altura y materiales peligrosos. La municipal aporta la atención cotidiana de fugas de gas y enjambres, y el aeropuerto requiere un trato aparte por su operación aérea y su propia cadena de mando."
+ ],
+ "coberturaDuo": [
+  "Estado y municipio tienen cada uno su corporación, y el aeropuerto aporta la tercera estación; las tres atienden incendio estructural y atención prehospitalaria. Estado y municipio comparten incendio forestal y rescate vehicular, mientras los materiales peligrosos recaen en la corporación estatal y en el CREI."
+ ],
+ "equipoDuo": [
+  "Estructural y forestal son las líneas básicas en Tepic, así que la dotación arranca con <a href=\"/trajes/estructural/\">trajes estructurales</a> y equipo forestal. La corporación estatal y el CREI, que atienden materiales peligrosos, requieren además <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> y protección química.",
+  "Si compras para el estado, el municipio o el aeropuerto, LORICA te entrega la cotización desglosada por partida, con la ficha técnica de cada producto y los documentos que pide una licitación. Facturamos en CFDI 4.0, sin compra mínima, con envío a Tepic."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en Tepic y dónde están?",
+   "a": "Son tres. La estatal está en Avenida Insurgentes esquina Paseo de Viena, colonia Burócrata Federal. La municipal y el CREI del aeropuerto no tienen domicilio publicado, así que para ubicarlas conviene llamar a la corporación estatal."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en Tepic?",
+   "a": "La Dirección General de Protección Ciudadana y Bomberos del Estado de Nayarit y la Dirección de Protección Civil y Bomberos del Municipio de Tepic comparten la ciudad. El aeropuerto tiene su propio CREI para salvamento aeroportuario."
+  },
+  {
+   "q": "¿Cómo me comunico con los bomberos en Tepic para un trámite?",
+   "a": "La única que publica teléfono oficial es la corporación estatal de Burócrata Federal; úsalo para capacitaciones, visitas o gestiones. Para la municipal, que no lo publica, puedes escribirnos por WhatsApp y te orientamos. Para emergencias, 911."
+  },
+  {
+   "q": "¿Cómo compra equipo una corporación de bomberos en Tepic?",
+   "a": "Estado y municipio adquieren por procesos públicos, con cotización y expediente; el CREI, según las reglas del aeropuerto. En LORICA preparamos la propuesta por partida con especificación técnica y CFDI 4.0, y enviamos a Tepic sin pedido mínimo."
+  }
+ ]
+}
