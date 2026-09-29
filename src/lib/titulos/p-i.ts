@@ -109,7 +109,7 @@ export const DUO_P_I: Record<string, Record<string, Duo>> = {
       'Comparte la composición del kit, cantidad y espacio de traslado disponible. La cotización puede incluir material, asas, bolsas y carga prevista para BPS1005, sin asumir que una maleta descrita para «kit completo» resuelve cualquier talla, casco, bota o accesorio adicional.',
     ],
     ficha: [
-      'La ficha de Romak Fire BPS1005 especifica poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Su estatus normativo es no aplica para este modelo.',
+      'La ficha de Romak Fire BPS1005 especifica poliéster de alta resistencia repelente al agua, 25 × 13 × 14 pulgadas, asas de polipropileno de 1 ½ pulgadas y dos bolsas con zipper. Para este modelo no aplica una norma de producto.',
       'Solicita código y características por escrito para cotejar costuras, cierres y capacidad durante la recepción. El poliéster declarado no debe trasladarse como propiedad del EPP guardado ni describirse como barrera de descontaminación; confirma la carga con el conjunto real antes de liberar la partida.',
     ],
   },
@@ -347,7 +347,7 @@ export const DUO_P_I: Record<string, Record<string, Duo>> = {
       'Indica el compartimiento, cantidad, uso autorizado y funda de puntas requerida. Con esos datos cotizamos una barra identificada y dejamos previstos los puntos de recepción para revisar rectitud, corrosión, peso declarado y liberación correcta de la retención.',
     ],
     ficha: [
-      'La ficha de HAC1007 especifica acero inoxidable, extremos y pico, 91 cm de largo, 90 cm de extremo a extremo y 6 lb o 3.36 kg. Su estatus normativo es no aplica, por lo que estos datos describen el modelo sin atribuirle una certificación.',
+      'La ficha de HAC1007 especifica acero inoxidable, extremos y pico, 91 cm de largo, 90 cm de extremo a extremo y 6 lb o 3.36 kg. No le aplica una norma de producto, por lo que estos datos describen el modelo sin atribuirle una certificación.',
       'Solicita código, material, dimensiones, peso y método de resguardo por escrito. No aplica una norma publicada; estos campos dan criterio de recepción para revisar soporte, geometría y superficie, sin atribuir una certificación inexistente a la barra Halligan.',
     ],
   },
