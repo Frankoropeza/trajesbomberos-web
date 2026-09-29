@@ -7,15 +7,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Incluye tarea autorizada, talla por usuario, color, bandas e identificación en la solicitud. Así compras puede contrastar cada componente contra el análisis de riesgo y evitar accesorios añadidos después. Comparte por WhatsApp ubicación, actividad y límite de intervención para recibir una cotización formal por partida.',
     ],
     faq: [
-      'El Kit brigadista contra incendio responde dudas sobre ataque interior y sobre la composición Combate Básico: traje BOM1001, casco LTX, capucha CAP1005, guante Firemax VI y bota Workman Fire. La pregunta decisiva sigue siendo qué tarea tiene autorizada la brigada.',
+      'Antes de definir la dotación, conviene resolver las dudas sobre ataque interior y sobre la composición Combate Básico: traje BOM1001, casco LTX, capucha CAP1005, guante Firemax VI y bota Workman Fire. La pregunta decisiva sigue siendo qué tarea tiene autorizada la brigada.',
       'Para cotizar, manda por WhatsApp número de usuarios, tallas de traje y bota, actividad del centro de trabajo y si requieren identificación. Con esos datos se documentan configuración y alcance por escrito, sin confundir el kit con un conjunto estructural o ERA.',
     ],
     ficha: [
-      'El Kit brigadista contra incendio se requisita con uso conforme a análisis de riesgo, traje, casco, capucha, guantes y botas, además de la referencia Combate Básico Romak BOM1001. La NOM-002-STPS-2010 se consulta para la dotación de brigada según el riesgo del centro.',
+      'Para la requisición de brigada del equipo de bombero se define el uso conforme a análisis de riesgo, traje, casco, capucha, guantes y botas, además de la referencia Combate Básico Romak BOM1001. La NOM-002-STPS-2010 se consulta para la dotación de brigada según el riesgo del centro.',
       'Deja modelo, talla, accesorios y límite de intervención en el anexo técnico; una lista genérica impide cotejar la recepción. Pide la ficha técnica por escrito junto con la cotización formal para que seguridad, compras y usuarios comparen la misma configuración.',
     ],
     kit: [
-      'El Kit brigadista contra incendio puede integrar traje Combate Básico Romak BOM1001, casco Bullard LTX, capucha CAP1005, guante Firemax VI GIS1008 y bota Workman Fire BOT1004. Se cotizan juntos porque cuello, puños y pantalonera deben conservar cobertura durante la tarea definida.',
+      'La configuración Combate Básico del equipo de bombero puede integrar traje Romak BOM1001, casco Bullard LTX, capucha CAP1005, guante Firemax VI GIS1008 y bota Workman Fire BOT1004. Se cotizan juntos porque cuello, puños y pantalonera deben conservar cobertura durante la tarea definida.',
       'La partida reúne códigos, tallas y accesorios, pero cada pieza conserva su propia documentación. Solicita la configuración completa por WhatsApp y prueba movimientos con extintor o manguera antes de asignar equipo; así la recepción no depende de una foto ni de un nombre genérico.',
     ],
   },
@@ -25,15 +25,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Define primero atmósfera, entrada, humo y necesidad de ERA; este último se cotiza por separado y se prueba con máscara y arnés. Envía por WhatsApp usuarios, tallas y maniobras previstas para documentar una partida que soporte la licitación y la entrega.',
     ],
     faq: [
-      'El Kit estructural para bombero aclara si el ERA viene incluido y si una pieza puede cambiarse. El ERA depende de atmósfera, duración y compatibilidad, mientras que una sustitución exige volver a validar solape, movimiento y documento de la configuración final.',
+      'Al definir el conjunto estructural se aclara si el ERA viene incluido y si una pieza puede cambiarse. El ERA depende de atmósfera, duración y compatibilidad, mientras que una sustitución exige volver a validar solape, movimiento y documento de la configuración final.',
       'Manda por WhatsApp cantidad de usuarios, tallas de traje, casco y bota, además de la operación prevista. Con esa información se separan componentes, accesorios y necesidades de respiración en una cotización formal, en lugar de asumir que un conjunto ya está certificado como sistema.',
     ],
     ficha: [
-      'El Kit estructural para bombero especifica combate conforme al análisis de riesgo, traje, casco, capucha, guantes y botas; el ERA es opcional según operación. Como referencia, el armado Profesional Romak requiere validar por usuario tallas, solapes y accesorios antes de liberar la orden.',
+      'La especificación para combate reúne análisis de riesgo, traje, casco, capucha, guantes y botas; el ERA es opcional según operación. Como referencia, el armado Profesional Romak requiere validar por usuario tallas, solapes y accesorios antes de liberar la orden.',
       'La requisición debe identificar código, talla, color y declaración de cada componente. NFPA 1970 funciona como referencia del conjunto estructural, mientras el listado UL indicado para guante o capucha corresponde solo a esa pieza. Pide cada ficha técnica por escrito.',
     ],
     kit: [
-      'El Kit estructural para bombero toma como referencia chaquetón BOM1028, pantalonera BOM1040, casco Bullard LTX, bota Croydon Filtrex BOT1002, guante Veridian Fire Pro II GIS1017 y capucha Majestic PAC II. Sus interfaces se cotizan juntas para conservar solape al agacharse, cargar herramienta o elevar brazos.',
+      'Como referencia, el armado Profesional del equipo de bombero considera chaquetón BOM1028, pantalonera BOM1040, casco Bullard LTX, bota Croydon Filtrex BOT1002, guante Veridian Fire Pro II GIS1017 y capucha Majestic PAC II. Sus interfaces se cotizan juntas para conservar solape al agacharse, cargar herramienta o elevar brazos.',
       'La ficha del guante declara UL NFPA 2018 y la capucha aparece listada UL NFPA 1971 edición 2018; esas declaraciones se confirman por componente. Comparte configuración, tallas y uso previsto para recibir partidas separadas y una prueba de conjunto defendible.',
     ],
   },
@@ -43,15 +43,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Describe por WhatsApp terreno, jornada, herramientas y número de personas. Así se definen ropa, casco forestal, goggles, guantes, bota y nuquera por talla y tarea, evitando que una compra exterior se use indebidamente en estructura o atmósfera que requiera respiración autónoma.',
     ],
     faq: [
-      'El Kit forestal para brigada resuelve si corresponde a operación exterior y qué debe incluir: ropa, casco, goggles, guantes, bota y nuquera. También distingue entre overol y saco con pantalón, una decisión que depende de movimiento, ajuste y tarea de la cuadrilla.',
+      'La operación exterior del equipo de bombero define si corresponde ropa, casco, goggles, guantes, bota y nuquera. También distingue entre overol y saco con pantalón, una decisión que depende de movimiento, ajuste y tarea de la cuadrilla.',
       'Para una propuesta útil, comparte por WhatsApp tipo de terreno, exposición a ceniza, herramienta autorizada, tallas y configuración de casco. La cotización formal puede separar Fire Ranger Explorer, BOMW1002 y accesorios sin asumir que sirven para incendio estructural.',
     ],
     ficha: [
-      'El Kit forestal para brigada se documenta con ropa, casco forestal, goggles, guantes, bota y nuquera; la selección valida talla y estabilidad durante el recorrido. Fire Ranger Explorer o BOMW1002 son referencias de armado, no sustituyen la revisión de actividad, material y configuración.',
+      'La dotación forestal se documenta con ropa, casco forestal, goggles, guantes, bota y nuquera; la selección valida talla y estabilidad durante el recorrido. Fire Ranger Explorer o BOMW1002 son referencias de armado, no sustituyen la revisión de actividad, material y configuración.',
       'Escribe modelo, talla, casco, goggles, nuquera y tipo de bota en la requisición para comparar cada entrega. La referencia forestal vigente es NFPA 1950; solicita la ficha técnica y declaración aplicable por escrito antes de emitir una orden para cuadrilla.',
     ],
     kit: [
-      'El Kit forestal para brigada puede reunir Fire Ranger Explorer o BOMW1002, casco Bullard FH911H, goggle ESS Striketeam XTO y bota forestal. Las piezas se cotizan juntas para revisar que goggles y nuquera se mantengan con el casco, y que guante y bota funcionen sobre terreno irregular.',
+      'Para la línea de fuego pueden reunirse Fire Ranger Explorer o BOMW1002, casco Bullard FH911H, goggle ESS Striketeam XTO y bota forestal. Las piezas se cotizan juntas para revisar que goggles y nuquera se mantengan con el casco, y que guante y bota funcionen sobre terreno irregular.',
       'Cada referencia conserva talla y configuración propias, por lo que una partida debe identificar ropa y accesorios sin abreviaturas. Comparte número de usuarios, material preferido y condiciones de campo para contrastar el conjunto con la tarea exterior que realizará la brigada.',
     ],
   },
@@ -103,15 +103,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Describe la operación, distancia a la fuente y equipo que usa la persona por WhatsApp. Con esos datos se revisa visor, cobertor de hombros y nivel del conjunto para evitar una configuración que reduzca visión o deje una interfaz abierta durante la maniobra.',
     ],
     comparativa: [
-      'Capucha aluminizada con visor dorado se selecciona con visor de una capa o doble capa según el nivel de exposición. El policarbonato con película dorada reduce peso; el doble visor se reserva para exposición mayor. La elección depende de radiación, tiempo y nivel del conjunto.',
+      'Según el nivel de exposición, el visor puede ser de una capa o doble capa. El policarbonato con película dorada reduce peso; el doble visor se reserva para exposición mayor. La elección depende de radiación, tiempo y nivel del conjunto.',
       'Solicita que tipo de visor, casco, cobertor y compatibilidad con ERA aparezcan en la cotización. Comparar esas partidas antes de decidir evita sustituir una protección de mayor exposición por una opción ligera solo porque ambas muestran película dorada.',
     ],
     errores: [
-      'Capucha aluminizada con visor dorado queda incompleta si no se confirma si viene incluida en el conjunto; en algunos niveles es opcional. Limpiar su película dorada con solvente o abrasivo la daña permanentemente y un visor rayado difracta luz justo frente a la fuente.',
+      'Un error de configuración aparece si no se confirma que el visor viene incluido en el conjunto; en algunos niveles es opcional. Limpiar su película dorada con solvente o abrasivo la daña permanentemente y un visor rayado difracta luz justo frente a la fuente.',
       'Pide inclusión, tipo de visor y repuesto por escrito antes de ordenar. Para cotizar con precisión, manda nivel de exposición, casco y ERA si aplica; así se evita bajar el nivel de cara y cuello o descubrir un faltante al recibir.',
     ],
     faq: [
-      'Capucha aluminizada con visor dorado aclara por qué el visor es dorado y si se incluye en el conjunto. La película refleja parte de la radiación infrarroja y reduce deslumbramiento; la inclusión cambia según el nivel, por lo que debe confirmarse en cada configuración.',
+      'La película dorada del visor refleja parte de la radiación infrarroja y reduce deslumbramiento. Su inclusión cambia según el nivel, por lo que debe confirmarse en cada configuración y no asumirse al pedir la pieza.',
       'Al escribir por WhatsApp, indica operación, nivel de exposición, casco y si trabajará con ERA. También conviene pedir visor de repuesto, pues es consumible: una unidad opaca o rayada puede sacar de servicio al conjunto aunque la capucha siga entera.',
     ],
     ficha: [
@@ -119,15 +119,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Copia visor, inclusión, compatibilidad con respiración y cuidado sin abrasivos al anexo técnico. Pide la ficha por escrito para confirmar si el visor es de una o doble capa y para mantener el traslape de nuca, hombros y chaquetón en la partida.',
     ],
     hermanas: [
-      'Capucha aluminizada con visor dorado forma familia con chaquetón, pantalón, guantes, polainas y delantal aluminizados. Puede comprarse como pieza de reposición, pero su visor y cobertor deben corresponder al nivel del resto del equipo de aproximación y al casco en uso.',
+      'Como pieza de reposición, la protección de cabeza forma familia con chaquetón, pantalón, guantes, polainas y delantal aluminizados. Su visor y cobertor deben corresponder al nivel del resto del equipo de aproximación y al casco en uso.',
       'Revisa el <a href="/trajes/aproximacion/">traje de aproximación</a> si necesitas definir el conjunto completo. En la solicitud separa qué pieza se repone y qué accesorios se conservan, para probar otra vez visor, cuello, guantes y ERA antes de asignarla.',
     ],
     incluye: [
-      'Capucha aluminizada con visor dorado contempla casco duro, visor con película dorada, cobertor de hombros y exterior aluminizado del nivel definido. La inclusión puede ser opcional o parte del conjunto según configuración, por lo que dos cotizaciones requieren ese alcance claramente escrito.',
+      'La partida contempla casco duro, visor con película dorada, cobertor de hombros y exterior aluminizado del nivel definido. La inclusión puede ser opcional o parte del conjunto según configuración, por lo que dos cotizaciones requieren ese alcance claramente escrito.',
       'Confirma por partida si incorpora visor, casco y cobertor, y deja aparte los repuestos o el ERA que aplique. Esa separación evita recibir una capucha sin el elemento de cara esperado o comparar una oferta completa contra otra con accesorios excluidos.',
     ],
     relacionados: [
-      'Capucha aluminizada con visor dorado se revisa junto con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y los <a href="/trajes/aproximacion/guantes/">guantes aluminizados</a>, porque cuello, manga y puño deben proteger sin aberturas. La compatibilidad con casco, visor y ERA también se prueba durante la maniobra.',
+      'Durante la maniobra, conviene revisar la protección de cabeza junto con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y los <a href="/trajes/aproximacion/guantes/">guantes aluminizados</a>, porque cuello, manga y puño deben proteger sin aberturas. La compatibilidad con casco, visor y ERA también se prueba durante la maniobra.',
       'Incluye esos componentes y el nivel de exposición en la requisición. Una revisión conjunta permite detectar visor inadecuado, puño corto o interferencia con máscara antes de que la compra convierta una pieza correcta en un conjunto con puntos débiles.',
     ],
   },
@@ -137,15 +137,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Comparte por WhatsApp fuente de calor, distancia, tarea y duración para ubicar nivel y complementos. Esa información permite cotejar chaquetón, pantalón, capucha, guantes y protección respiratoria con el procedimiento de trabajo antes de presentar una partida.',
     ],
     comparativa: [
-      'Chaquetón aluminizado de aproximación refleja, no aísla, frente a calor radiante con movilidad sostenida; un traje de entrada atiende ingreso breve a flama y es multicapa. La decisión se define por exposición real, proximidad, tiempo y posibilidad de engullimiento, no por apariencia aluminizada.',
+      'Ante calor radiante con movilidad sostenida, la prenda aluminizada refleja y no aísla; un traje de entrada atiende ingreso breve a flama y es multicapa. La decisión se define por exposición real, proximidad, tiempo y posibilidad de engullimiento, no por apariencia aluminizada.',
       'Escribe esos datos en la consulta para recibir una comparación técnica. Pedir aproximación para flama puede dejar una operación sin el nivel requerido, mientras sobredimensionar a entrada cambia peso, movilidad y forma de trabajar durante la intervención.',
     ],
     errores: [
-      'Chaquetón aluminizado de aproximación refleja, no aísla: comprarlo para entrar a la flama confunde su función. También falla al mezclar un guante ligero o limpiar el exterior con abrasivo; el rayado reduce reflectancia y el punto débil queda en la mano.',
+      'Comprar esta prenda del traje de aproximación para entrar a la flama confunde su función: refleja y no aísla. También falla al mezclar un guante ligero o limpiar el exterior con abrasivo; el rayado reduce reflectancia y el punto débil queda en la mano.',
       'Define nivel de cada pieza y ropa de trabajo no inflamable antes de cotizar. Solicita el procedimiento de cuidado por escrito y reporta si habrá contacto con fuente, porque una superficie opaca o una configuración dispareja cambia la protección disponible en operación.',
     ],
     faq: [
-      'Chaquetón aluminizado de aproximación refleja, no aísla, por eso las dudas centrales comparan aproximación con entrada y preguntan qué ropa va debajo. La superficie devuelve radiación; debe usarse sobre ropa industrial de fibra no inflamable, no sobre fibras que se funden.',
+      'La comparación entre aproximación y entrada parte de una diferencia clave: la superficie devuelve radiación y no aísla. Debe usarse sobre ropa industrial de fibra no inflamable, no sobre fibras que se funden.',
       'Manda por WhatsApp operación, tiempo frente a la fuente y prendas debajo del equipo. Así se determina el nivel del conjunto y se evita combinar guantes estructurales o componentes incompatibles con una pieza diseñada para calor radiante.',
     ],
     ficha: [
@@ -153,15 +153,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Incluye talla, forro, bolsa para ERA si existe, nivel y complementos en el anexo técnico. Pide la ficha por escrito y conserva el cuidado de superficie, almacenamiento colgado y criterio de retiro por pérdida de reflectancia o daño.',
     ],
     hermanas: [
-      'Chaquetón aluminizado de aproximación refleja, no aísla, y se complementa con pantalón, capucha con visor dorado, guantes, polainas y delantal según la tarea. Comprar una pieza es posible, pero el nivel debe permanecer alineado con las demás superficies que enfrentan radiación.',
+      'Dentro de la familia aluminizada, esta pieza se complementa con pantalón, capucha con visor dorado, guantes, polainas y delantal según la tarea. Comprar una pieza es posible, pero el nivel debe permanecer alineado con las demás superficies que enfrentan radiación.',
       'Consulta el <a href="/trajes/aproximacion/">traje de aproximación</a> para definir la combinación. Al reponer el chaquetón, prueba otra vez manga, guante, cuello, visor y bota; una sustitución que ajusta sola puede abrir el sistema durante el movimiento.',
     ],
     incluye: [
-      'Chaquetón aluminizado de aproximación refleja, no aísla, e incorpora tejido exterior aluminizado, forro según exposición y cierre protegido. Capucha, guantes y polainas son complementos de la familia y la bolsa para ERA aparece integrada solo en varios modelos; deben cotizarse con alcance claro.',
+      'El cuerpo de la prenda incorpora tejido exterior aluminizado, forro según exposición y cierre protegido. Capucha, guantes y polainas son complementos de la familia y la bolsa para ERA aparece integrada solo en varios modelos; deben cotizarse con alcance claro.',
       'Separa en la orden chaquetón, nivel, talla, forro, bolsa para ERA y accesorios. Ese desglose permite comparar dos propuestas sin asumir que una incluye visor o guantes, y evita que el conjunto llegue con piezas esenciales pendientes.',
     ],
     relacionados: [
-      'Chaquetón aluminizado de aproximación refleja, no aísla, se revisa con el <a href="/trajes/aproximacion/pantalon/">pantalón aluminizado</a> y la <a href="/trajes/aproximacion/capucha/">capucha aluminizada</a>. La continuidad entre cintura, cuello y hombros importa tanto como el material individual cuando hay radiación sostenida.',
+      'Para radiación sostenida, se revisan el <a href="/trajes/aproximacion/pantalon/">pantalón aluminizado</a> y la <a href="/trajes/aproximacion/capucha/">capucha aluminizada</a> junto con la prenda superior del traje de aproximación. La continuidad entre cintura, cuello y hombros importa tanto como el material individual durante la exposición.',
       'Haz que la requisición describa esas interfaces, además de guantes y calzado. Probarlas con radio, máscara y movimientos previstos ayuda a descubrir enganches o franjas expuestas antes de liberar la configuración para campo, planta o aeropuerto.',
     ],
   },
@@ -171,15 +171,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Manda por WhatsApp puesto, alcance de radiación, altura de salpicadura y movimientos del operador. Así se determina si el frente basta o si se requiere protección integral, además de mangas, careta, guantes o polainas para cerrar la cobertura.',
     ],
     comparativa: [
-      'Delantal aluminizado para fundición protección frontal conviene ante exposición frontal acotada, con menor peso y alta movilidad. El conjunto completo cubre el cuerpo cuando hay radiación envolvente o desplazamiento alrededor de la fuente. La geometría del riesgo define la elección, nunca solo el presupuesto.',
+      'Ante exposición frontal acotada, esta cobertura del traje de aproximación conviene por su menor peso y alta movilidad. El conjunto completo cubre el cuerpo cuando hay radiación envolvente o desplazamiento alrededor de la fuente. La geometría del riesgo define la elección, nunca solo el presupuesto.',
       'Incluye orientación del operador, duración y zonas expuestas al solicitar cotización. Comparar cobertura, carga térmica y movilidad permite justificar si un delantal con complementos resuelve el puesto o si una configuración parcial dejaría espalda, brazos o cabeza sin protección.',
     ],
     errores: [
-      'Delantal aluminizado para fundición protección frontal no sirve donde la radiación envuelve al operador. Elegir largo por catálogo o pedirlo angosto deja muslos y costados expuestos; omitir careta ignora que una fuente frontal también alcanza la cara durante colada o forja.',
+      'Cuando la radiación envuelve al operador, la cobertura frontal no basta. Elegir largo por catálogo o pedirlo angosto deja muslos y costados expuestos; omitir careta ignora que una fuente frontal también alcanza la cara durante colada o forja.',
       'Especifica alcance, largo, ancho y complementos con la tarea real. Pide que se cotice el almacenamiento colgado y el procedimiento sin abrasivos, porque doblar o rayar el tejido aluminizado reduce reflectancia antes de que el desgaste sea evidente.',
     ],
     faq: [
-      'Delantal aluminizado para fundición protección frontal aclara cuándo basta y qué largo debe pedirse. Sirve con exposición frontal y acotada; el largo sigue hasta dónde llega el riesgo en el puesto, no la talla. No protege espalda ni sustituye una configuración envolvente.',
+      'La pregunta decisiva para el traje de aproximación es cuándo basta la cobertura frontal y qué largo debe pedirse. Sirve con exposición frontal y acotada; el largo sigue hasta dónde llega el riesgo en el puesto, no la talla. No protege espalda ni sustituye una configuración envolvente.',
       'Al consultar por WhatsApp, comparte operación, zona de salpicadura y protección facial disponible. Con ello se define si requiere mangas, careta y guantes, y se evita comprar un delantal para una maniobra donde el operador rodea la fuente de calor.',
     ],
     ficha: [
@@ -187,15 +187,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Copia largo, ancho, forro y complementos al anexo técnico. Pide la ficha por escrito para verificar la cobertura lateral requerida y el criterio de retiro por opacidad, perforación o quemadura, especialmente en puestos expuestos a salpicadura de metal.',
     ],
     hermanas: [
-      'Delantal aluminizado para fundición protección frontal comparte familia con chaquetón, pantalón, capucha, guantes y polainas. Se compra por pieza cuando el riesgo está limitado al frente, mientras el conjunto de aproximación responde a una cobertura más amplia alrededor de la persona usuaria.',
+      'La protección de frente comparte familia con chaquetón, pantalón, capucha, guantes y polainas. Se compra por pieza cuando el riesgo está limitado al frente, mientras el conjunto de aproximación responde a una cobertura más amplia alrededor de la persona usuaria.',
       'Revisa el <a href="/trajes/aproximacion/">traje de aproximación</a> antes de escalar el equipo. La requisición debe señalar qué zonas protege cada componente para que una combinación de delantal y mangas no se interprete como sustituto de cobertura integral.',
     ],
     incluye: [
-      'Delantal aluminizado para fundición protección frontal incluye la pieza con tirantes ajustables y largo, además de ancho, definidos en la orden. Mangas aluminizadas, careta, guantes y polainas se cotizan aparte, por lo que el alcance debe separarse para comparar propuestas equivalentes.',
+      'La partida del traje de aproximación incluye la pieza con tirantes ajustables y largo, además de ancho, definidos en la orden. Mangas aluminizadas, careta, guantes y polainas se cotizan aparte, por lo que el alcance debe separarse para comparar propuestas equivalentes.',
       'Solicita cada complemento como partida propia e indica el puesto de trabajo. Así se detecta si la oferta cubre solo torso o incorpora protección de cara y antebrazos, evitando que una cotización aparentemente menor o mayor mezcle equipos diferentes.',
     ],
     relacionados: [
-      'Delantal aluminizado para fundición protección frontal se complementa con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> cuando la cobertura frontal deja de bastar y con <a href="/trajes/aproximacion/guantes/">guantes aluminizados</a> para la manipulación. Ambos deben corresponder a la exposición concreta del puesto.',
+      'Si la cobertura frontal deja de bastar, el traje de aproximación se complementa con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y con <a href="/trajes/aproximacion/guantes/">guantes aluminizados</a> para la manipulación. Ambos deben corresponder a la exposición concreta del puesto durante cada movimiento.',
       'Contrasta dirección de radiación, manos expuestas y movimiento alrededor de la fuente antes de armar partidas. Esa revisión evita agregar accesorios sin resolver costados, espalda o rostro, que son precisamente los límites del delantal frente a un riesgo envolvente.',
     ],
   },
@@ -205,15 +205,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Envía por WhatsApp maniobra, herramienta, temperatura y nivel del conjunto. La cotización puede definir talla, palma, forro y traslape para comprobar que el guante permita sostener una lanza o válvula sin dejar una muñeca expuesta.',
     ],
     comparativa: [
-      'Guantes aluminizados para calor radiante manopla de tres dedos favorecen masa aislante y menos costuras en exposición alta; cinco dedos se reserva para niveles ligeros. La decisión depende de radiación y destreza indispensable: si hay manipulación fina, se rediseña la tarea en vez de bajar protección.',
+      'En el traje de aproximación, la manopla de tres dedos favorece masa aislante y menos costuras en exposición alta; cinco dedos se reserva para niveles ligeros. La decisión depende de radiación y destreza indispensable: si hay manipulación fina, se rediseña la tarea en vez de bajar protección.',
       'Comparte herramienta, agarre y tiempo de exposición antes de pedir precio. Probar ambas configuraciones con la maniobra evita adjudicar por comodidad un guante que no corresponde al nivel del chaquetón y deja la mano como eslabón débil.',
     ],
     errores: [
-      'Guantes aluminizados para calor radiante manopla de tres dedos no deben sustituirse por guante estructural, porque la mano queda como el punto más débil. Comprar sin probar maniobra o ignorar el traslape de manga puede volver inútil un guante correcto en papel.',
+      'La protección de manos no debe sustituirse por guante estructural, porque la mano queda como el punto más débil. Comprar sin probar maniobra o ignorar el traslape de manga puede volver inútil un guante correcto en papel.',
       'Solicita talla y prueba operativa con herramienta, manga y calor previstos. Inspecciona dorso, palma y costuras antes de usar; un forro comprimido pierde aislamiento aunque el exterior parezca entero y debe retirarse conforme al criterio publicado.',
     ],
     faq: [
-      'Guantes aluminizados para calor radiante manopla de tres dedos explican por qué hay tres dedos y cómo se elige talla. Menos separaciones reducen costuras y exposición; la talla se prueba ejecutando la maniobra, no con la mano quieta en almacén.',
+      'En el traje de aproximación, menos separaciones reducen costuras y exposición, por eso se usan tres dedos en este nivel. La talla se prueba ejecutando la maniobra, no con la mano quieta en almacén ni fuera de la configuración completa.',
       'Escribe por WhatsApp qué herramienta se operará, tipo de chaquetón y talla aproximada. Con esos datos se confirma nivel, puño largo y traslape, además de si el procedimiento debe modificarse porque exige una destreza que no corresponde a exposición alta.',
     ],
     ficha: [
@@ -221,15 +221,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Anota configuración, talla, nivel y puño en la requisición. Pide la ficha por escrito para mantener el mismo nivel que chaquetón y para documentar inspección antes de cada uso, reposición frecuente y retiro por dorso opaco, palma endurecida o costura abierta.',
     ],
     hermanas: [
-      'Guantes aluminizados para calor radiante manopla de tres dedos trabajan con capucha, chaquetón, pantalón, polainas y delantal aluminizados. La pieza se repone por separado, pero su puño debe traslapar con la manga y conservar el nivel de radiación del conjunto completo.',
+      'En una operación de calor radiante, la protección de manos trabaja con capucha, chaquetón, pantalón, polainas y delantal aluminizados. La pieza se repone por separado, pero su puño debe traslapar con la manga y conservar el nivel de radiación del conjunto completo.',
       'Consulta el <a href="/trajes/aproximacion/">traje de aproximación</a> para cruzar esas interfaces. Una prueba con herramienta, visor y chaquetón revela si cambiar solo el guante altera alcance, movilidad o cobertura, antes de que el equipo llegue a operación.',
     ],
     incluye: [
-      'Guantes aluminizados para calor radiante manopla de tres dedos incluyen dorso aluminizado, palma resistente al contacto, forro térmico y puño largo. Cinco dedos puede ser alternativa de nivel ligero; talla, nivel y traslape se confirman aparte para que las partidas sean comparables.',
+      'La manopla incluye dorso aluminizado, palma resistente al contacto, forro térmico y puño largo. Cinco dedos puede ser alternativa de nivel ligero; talla, nivel y traslape se confirman aparte para que las partidas sean comparables.',
       'Pide que cada oferta indique si incluye prueba de talla y qué configuración de puño propone. Separar esos datos evita comparar un guante sin forro o de otro nivel con una manopla diseñada para el calor radiante de la familia.',
     ],
     relacionados: [
-      'Guantes aluminizados para calor radiante manopla de tres dedos se validan junto con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y la <a href="/trajes/aproximacion/capucha/">capucha con visor</a>. El puño, la manga y la visibilidad deben mantenerse al operar herramienta frente a la fuente.',
+      'Antes de operar herramienta frente a la fuente, se valida la protección de manos junto con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y la <a href="/trajes/aproximacion/capucha/">capucha con visor</a>. El puño, la manga y la visibilidad deben mantenerse.',
       'Incluye maniobra, equipo de respiración y accesorios en la prueba de recepción. Esta revisión conjunta permite resolver un puño corto o una interferencia antes de asignar un guante que, aislado, cumple la ficha pero falla en el sistema real.',
     ],
   },
@@ -239,15 +239,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Comparte por WhatsApp postura de trabajo, bota, tiempo y fuente de calor. Esos datos permiten determinar tirantes, puños y refuerzo de rodillas, además de comprobar que la valenciana no arrastre ni abra una interfaz por debajo del chaquetón.',
     ],
     comparativa: [
-      'Pantalón aluminizado de aproximación mismo nivel que el chaquetón se pide con rodillas reforzadas cuando la operación exige hincarse frente al calor, como hornos o colada. Sin refuerzo conviene cuando esa postura no forma parte del procedimiento. La maniobra real define la opción de fábrica.',
+      'En el traje de aproximación, cuando la operación exige hincarse frente al calor, como hornos o colada, se piden rodillas reforzadas. Sin refuerzo conviene cuando esa postura no forma parte del procedimiento. La maniobra real define la opción de fábrica.',
       'Indica si la persona trabaja de rodillas, cuánto tiempo y con qué bota antes de cotizar. El refuerzo no se agrega después, por lo que dejarlo fuera de la orden puede desgastar primero la zona más expuesta y complicar una reposición equivalente.',
     ],
     errores: [
-      'Pantalón aluminizado de aproximación mismo nivel que el chaquetón pierde sentido si se combina con una prenda más ligera. Dejar tirantes sin ajustar hace que la valenciana arrastre y abra la unión con la bota; omitir rodillas reforzadas castiga el pantalón en trabajo hincado.',
+      'La protección de piernas del traje de aproximación pierde sentido si se combina con una prenda más ligera. Dejar tirantes sin ajustar hace que la valenciana arrastre y abra la unión con la bota; omitir rodillas reforzadas castiga el pantalón en trabajo hincado.',
       'Pide nivel, largo, bota y postura de trabajo por escrito. Al recibir, prueba cintura, tirantes y puño sobre el calzado para verificar que el conjunto conserva cobertura; guardar el pantalón doblado también quiebra la capa reflejante con el uso repetido.',
     ],
     faq: [
-      'Pantalón aluminizado de aproximación mismo nivel que el chaquetón responde si puede comprarse solo y para qué sirven los tirantes. Se repone por separado, pero debe igualar el nivel; los tirantes ajustan largo para que la valenciana caiga sobre bota sin arrastrar.',
+      'Una reposición de pantalonera del traje de aproximación plantea si puede comprarse sola y para qué sirven los tirantes. Se repone por separado, pero debe igualar el nivel; los tirantes ajustan largo para que la valenciana caiga sobre bota sin arrastrar.',
       'Manda por WhatsApp talla, tipo de bota, chaquetón existente y si la operación implica hincarse. Así se define rodilla reforzada, largo y puño regulable, sin convertir una reposición aislada en una interrupción del solape que requiere el conjunto.',
     ],
     ficha: [
@@ -255,15 +255,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Copia talla, largo, rodillas, nivel y bota al anexo técnico. Pide ficha por escrito para conservar almacenamiento colgado, limpieza del fabricante y retiro por pérdida de reflectancia o daño, datos necesarios al comparar una reposición con el modelo original.',
     ],
     hermanas: [
-      'Pantalón aluminizado de aproximación mismo nivel que el chaquetón pertenece con chaquetón, capucha, guantes, polainas y delantal. Se compra por pieza o conjunto, pero la protección final queda limitada por el componente de menor nivel y por las interfaces de cintura y bota.',
+      'Dentro de la familia aluminizada, la prenda inferior se combina con chaquetón, capucha, guantes, polainas y delantal. Se compra por pieza o conjunto, pero la protección final queda limitada por el componente de menor nivel y por las interfaces de cintura y bota.',
       'Consulta el <a href="/trajes/aproximacion/">traje de aproximación</a> para cerrar la familia. Al sustituir pantalonera, vuelve a probar traslape con chaquetón y calzado; la talla correcta no garantiza por sí sola una valenciana útil durante la tarea.',
     ],
     incluye: [
-      'Pantalón aluminizado de aproximación mismo nivel que el chaquetón incluye exterior reflejante, forro según exposición, tirantes de ajuste y puños regulables. Rodillas reforzadas se eligen como opción de fábrica; capucha, guantes, chaquetón y polainas se cotizan como elementos separados.',
+      'La partida del traje de aproximación incluye exterior reflejante, forro según exposición, tirantes de ajuste y puños regulables. Rodillas reforzadas se eligen como opción de fábrica; capucha, guantes, chaquetón y polainas se cotizan como elementos separados.',
       'Desglosa nivel, talla, largo, refuerzos y bota de prueba en la orden. Este alcance evita comparar una partida de pantalonera básica con otra reforzada, o recibir una pieza que no conserva las mismas condiciones del chaquetón instalado.',
     ],
     relacionados: [
-      'Pantalón aluminizado de aproximación mismo nivel que el chaquetón se revisa con el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y las <a href="/trajes/aproximacion/polainas/">polainas aluminizadas</a>. Cintura, valenciana y bota forman las zonas que deben cerrarse contra salpicadura y radiación.',
+      'Al revisar la prenda inferior del traje de aproximación, se comparan el <a href="/trajes/aproximacion/chaqueton/">chaquetón aluminizado</a> y las <a href="/trajes/aproximacion/polainas/">polainas aluminizadas</a>. Cintura, valenciana y bota forman las zonas que deben cerrarse contra salpicadura y radiación durante la maniobra.',
       'Pide una prueba con los tres componentes antes de entregar. Revisar solo el pantalón no detecta arrastre, una bota incompatible o una abertura al hincarse, situaciones que cambian el desempeño práctico sin alterar la apariencia de la prenda.',
     ],
   },
@@ -273,15 +273,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Envía por WhatsApp número de calzado, modelo de bota y operación. Con esa información se valida el cierre de velcro sobre la caña y la interfaz con valenciana, evitando que una salpicadura entre desde arriba o que la polaina se suelte durante la maniobra.',
     ],
     comparativa: [
-      'Polainas aluminizadas para bota van sobre el calzado existente y convienen en exposición ligera e industrial con inversión menor. La bota aluminizada integrada elimina la interfaz y corresponde a exposición alta y sostenida. Nivel de exposición y posibilidad de cambiar calzado definen la elección.',
+      'Sobre el calzado existente, esta cobertura conviene en exposición ligera e industrial con inversión menor. La bota aluminizada integrada elimina la interfaz y corresponde a exposición alta y sostenida. Nivel de exposición y posibilidad de cambiar calzado definen la elección.',
       'Describe operación, duración y bota disponible al pedir propuesta. Comparar flexibilidad, talla y cierre permite decidir entre una solución compartible y una bota personal, sin asumir que una polaina ofrece la misma continuidad que un diseño integrado.',
     ],
     errores: [
-      'Polainas aluminizadas para bota van sobre el calzado, no son botas. Pedir talla por número de pie deja una pieza chica sobre la caña; además, una valenciana abierta permite que brasa o salpicadura entren al pie y el velcro vencido crea exposición y tropiezo.',
+      'El error típico es tratar estos cobertores como botas. Pedir talla por número de pie deja una pieza chica sobre la caña; además, una valenciana abierta permite que brasa o salpicadura entren al pie y el velcro vencido crea exposición y tropiezo.',
       'Solicita talla con bota puesta y confirma qué prenda cierra sobre cuál. Guarda las polainas extendidas o colgadas, nunca dobladas, y retíralas si pierden reflectancia o sujeción; esas condiciones deben inspeccionarse antes de liberar el equipo.',
     ],
     faq: [
-      'Polainas aluminizadas para bota van sobre el calzado, por eso las preguntas aclaran que no tienen suela ni protección mecánica. Se ajustan con velcro posterior y se piden por número de calzado y tipo de bota, no por la medida del pie.',
+      'Al ir sobre el calzado, estos cobertores no tienen suela ni protección mecánica. Se ajustan con velcro posterior y se piden por número de calzado y tipo de bota, no por la medida del pie.',
       'Al consultar por WhatsApp, envía foto o descripción de bota, talla y pantalón. Así se define si la valenciana cae encima o la polaina cierra sobre ella, sin dejar la abertura superior que permitiría el ingreso de salpicadura.',
     ],
     ficha: [
@@ -289,15 +289,15 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
       'Incluye bota, número de calzado, interfaz con valenciana y nivel de exposición en el anexo. Pide ficha por escrito para documentar almacenamiento extendido, inspección de reflectancia y retiro por opacidad o velcro que ya no sostiene firmemente.',
     ],
     hermanas: [
-      'Polainas aluminizadas para bota van sobre el calzado y se coordinan con pantalón, chaquetón, capucha, guantes y delantal aluminizados. Son una pieza flexible de la familia, pero el conjunto exige que la valenciana y la caña de bota no formen una entrada hacia arriba.',
+      'La protección de tobillo se coordina con pantalón, chaquetón, capucha, guantes y delantal aluminizados. Es una pieza flexible de la familia, pero el conjunto exige que la valenciana y la caña de bota no formen una entrada hacia arriba.',
       'Revisa el <a href="/trajes/aproximacion/">traje de aproximación</a> para definir todas las interfaces. Si se compran por separado, prueba la colocación con pantalón real y bota asignada antes de distribuirlas por turno o considerar que son una sustitución automática.',
     ],
     incluye: [
-      'Polainas aluminizadas para bota van sobre el calzado e incluyen cobertor reflejante y tiras de velcro posteriores para cerrar alrededor de la caña. La bota de seguridad no está incluida y debe especificarse; pantalón, guantes y demás piezas pertenecen a partidas distintas.',
+      'La partida del traje de aproximación incluye cobertor reflejante y tiras de velcro posteriores para cerrar alrededor de la caña. La bota de seguridad no está incluida y debe especificarse; pantalón, guantes y demás piezas pertenecen a partidas distintas.',
       'Separa bota, talla, tipo de cierre y colocación en la requisición. Con ese alcance se comparan ofertas que cubren la misma interfaz y se evita recibir solo un cubrebotas cuando la operación también requiere definir calzado, valenciana o protección superior.',
     ],
     relacionados: [
-      'Polainas aluminizadas para bota van sobre el calzado y se revisan con el <a href="/trajes/aproximacion/pantalon/">pantalón aluminizado</a> para sellar la valenciana, además del <a href="/trajes/aproximacion/chaqueton/">chaquetón del conjunto</a>. La continuidad en tobillo cambia la protección frente a salpicadura.',
+      'Para sellar la valenciana del traje de aproximación, se revisan los cobertores con el <a href="/trajes/aproximacion/pantalon/">pantalón aluminizado</a>, además del <a href="/trajes/aproximacion/chaqueton/">chaquetón del conjunto</a>. La continuidad en tobillo cambia la protección frente a salpicadura durante la maniobra térmica.',
       'Incluye bota y pantalón reales en la prueba de recepción. De esa forma se corrige una abertura o velcro insuficiente antes de la maniobra, sin esperar a descubrir que la polaina se mueve o deja expuesto el calzado bajo calor.',
     ],
   },
