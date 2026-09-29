@@ -129,100 +129,100 @@ export const DUO_P_I: Record<string, Record<string, Duo>> = {
   },
   '/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/': {
     errores: [
-      'Los cilindros de fibra de carbono para ERA no son universales. Forzar válvula o conexión puede impedir montaje; tratar minutos nominales como duración garantizada, omitir prueba hidrostática o alterar etiqueta DOT compromete gestión de aire e inventario.',
-      'Pide presión, autonomía nominal, válvula, conexión, etiqueta y ERA compatible. Esos campos permiten cotejar recipientes y planear carga e identificación interna sin ocultar información del fabricante o mezclar configuraciones.',
+      'Los cilindros de fibra de carbono para ERA se seleccionan junto con la espaldera, porque la válvula y el acople determinan el montaje. La autonomía de 30, 45 o 60 minutos es nominal; además, la etiqueta DOT y la prueba hidrostática sostienen el control de servicio.',
+      'Solicita una propuesta con presión de 4,500 psi cuando corresponda, autonomía nominal, válvula, conexión, etiqueta DOT y modelo de ERA compatible. Así puedes cotejar cada recipiente, organizar la carga y mantener una identificación interna que no cubra los datos del fabricante.',
     ],
     faq: [
-      'Los cilindros de fibra de carbono para ERA generan dudas sobre autonomía, prueba hidrostática y compatibilidad. Duración cambia con consumo y escena; etiqueta DOT, válvula, conexión y número de serie se revisan antes de asignación.',
-      'Comparte presión requerida, modelo de ERA, cantidad y sistema de acople. Con esa información se define una partida que conserve montaje, acceso a válvula y trazabilidad de inspección, en vez de sustituir por tamaño parecido.',
+      'En cilindros de fibra de carbono para ERA, la duración real cambia con el consumo, el esfuerzo y la escena. Antes de asignarlos, revisa la etiqueta DOT, el número de serie, la válvula y la conexión, además de la fecha de prueba hidrostática aplicable.',
+      'Comparte la presión requerida, el modelo de ERA, la cantidad y el sistema de acople que usa tu corporación. Con esos datos se integra una partida que conserve el montaje y el acceso a la válvula, en lugar de sustituir cilindros solo por tamaño semejante.',
     ],
     ficha: [
-      'Para cilindros de fibra de carbono para ERA registra presión de servicio, autonomía nominal, etiqueta DOT, válvula, conexión, número de serie, montaje en espaldera y fecha de prueba. Cada campo determina compatibilidad y condición de servicio.',
-      'Solicita ficha por partida y coteja válvula, rosca y sujeción. Esto permite separar recipientes golpeados, con abrasión profunda o etiqueta ilegible, evitando reemplazos que cambian largo, acople o equilibrio del conjunto.',
+      'Al ordenar cilindros de fibra de carbono para ERA, registra presión de servicio, autonomía nominal, etiqueta DOT, válvula, conexión, número de serie, montaje en la espaldera y fecha de prueba. Cada dato confirma compatibilidad, trazabilidad y condición de servicio del recipiente.',
+      'Pide la ficha por cada partida y coteja físicamente válvula, rosca y sujeción antes de aceptarla. Este control permite separar recipientes golpeados, con abrasión profunda o etiqueta ilegible, y evita reemplazos que modifiquen largo, acople o equilibrio del conjunto.',
     ],
   },
   '/equipo-de-respiracion-autonoma/era-de-combate/': {
     errores: [
-      'Un ERA para combate de incendios no se compra por minutos nominales solamente. Mezclar conexiones o usar equipo industrial para ataque desconoce máscara, cilindro, arnés, PASS, alarmas y planeación de aire que exige una entrada.',
-      'Solicita autonomía, cilindro, máscara, arnés, PASS y prueba funcional. La propuesta debe permitir revisar presión, válvula, regulador, alarmas y sello con capucha, casco y guantes antes de que una unidad se asigne a combate.',
+      'Un ERA para combate de incendios requiere revisar más que sus minutos nominales: máscara, cilindro, arnés, PASS, alarmas y conexiones forman un solo conjunto. Usar una configuración industrial para ataque o mezclar componentes sin compatibilidad documentada compromete la planeación de aire de cada entrada.',
+      'Envía la autonomía requerida, cilindro, máscara, arnés y PASS que necesita tu operación para recibir una propuesta verificable. Antes de asignar la unidad, realiza la prueba funcional con presión, válvula, regulador, alarmas, capucha, casco y guantes de la cuadrilla.',
     ],
     faq: [
-      'ERA para combate de incendios plantea dudas sobre autonomía, revisión y PASS. El conjunto se valida con máscara, cilindro, arnés, casco, chaquetón y guantes; una alarma no reemplaza compañero, mando, comunicación ni control de aire.',
-      'Manda operación, usuarios, autonomía, modelo actual y accesorios. Con esos datos se cotiza una configuración de combate que diferencie conexiones y prueba funcional, sin asumir compatibilidad entre familias de respiración autónoma.',
+      'El ERA para combate de incendios se valida con máscara, cilindro, arnés, casco, chaquetón y guantes en la misma secuencia de uso. El PASS y la alarma de baja presión apoyan una emergencia, pero no reemplazan al compañero, el mando, la comunicación ni el control de aire.',
+      'Comparte la operación, número de usuarios, autonomía, modelo actual y accesorios para cotizar una configuración de combate completa. La información permite distinguir conexiones y definir una prueba funcional real, sin asumir que componentes de distintas familias de respiración autónoma son intercambiables.',
     ],
     ficha: [
-      'Para ERA para combate de incendios especifica cilindro, autonomía, máscara, regulador, arnés, PASS, alarmas, manómetro y conexiones. La compatibilidad con capucha, casco y chaquetón importa porque puede alterar sello, visión y acceso a válvula.',
-      'Pide documentación y aceptación por escrito. Así la recepción revisa presión, regulador, arnés y alarmas con guantes, y conserva trazabilidad de serie, mantenimiento y condición sin intercambiar componentes sin autorización técnica.',
+      'Una compra de ERA para combate de incendios debe especificar cilindro, autonomía, máscara, regulador, arnés, PASS, alarmas, manómetro y conexiones. También debe prever la prueba con capucha, casco y chaquetón, porque esas interfaces pueden alterar el sello, la visión o el acceso a la válvula.',
+      'Solicita documentación y criterios de aceptación por escrito antes de recibir la partida. Así, la corporación revisa presión, regulador, arnés y alarmas con guantes, conserva la trazabilidad de serie y mantenimiento, y evita intercambiar componentes sin autorización técnica.',
     ],
   },
   '/equipo-de-respiracion-autonoma/era-de-escape/': {
     errores: [
-      'ERA de escape sirve para evacuar, no para trabajar, atacar incendio o hacer rescate planificado. Usar su autonomía para otra actividad, ubicarlo fuera de la ruta o dejar un equipo abierto debilita el sistema de salida.',
-      'Define ruta, ocupación, ubicación, duración declarada y responsable de inspección. Comparte esos datos por WhatsApp para cotizar unidades accesibles antes de exposición, con práctica dirigida exclusivamente a colocación, activación y evacuación.',
+      'El ERA de escape está destinado a evacuar una atmósfera peligrosa, no a trabajar, atacar un incendio ni ejecutar un rescate planificado. Usar su autonomía para otra actividad, guardarlo fuera de la ruta o dejar disponible un equipo abierto debilita todo el sistema de salida.',
+      'Indica la ruta, ocupación, ubicación prevista, duración declarada y responsable de inspección para dimensionar las unidades. Con esa información se puede cotizar un equipo accesible antes de la exposición y programar práctica de colocación, activación y evacuación exclusivamente.',
     ],
     faq: [
-      'ERA de escape se consulta por duración, ubicación y límites. La referencia se compara contra la ruta más lenta, con escaleras, puertas, visibilidad y apoyo; no autoriza prolongar permanencia dentro de una atmósfera peligrosa.',
-      'Comparte análisis de ruta, personas, áreas de reunión y almacenamiento. Se puede definir cantidad y gabinete para evitar equipos inaccesibles, empaques abiertos o ubicaciones que ya no corresponden a una evacuación modificada.',
+      'La duración declarada del ERA de escape se compara con la ruta más lenta, considerando escaleras, puertas, visibilidad reducida y apoyo a personas con movilidad limitada. No autoriza prolongar la permanencia dentro de una atmósfera peligrosa ni reemplaza la decisión oportuna de evacuar.',
+      'Manda el análisis de ruta, cantidad de personas, áreas de reunión y condiciones de almacenamiento. Así se define la cantidad y el gabinete necesarios para evitar equipos inaccesibles, empaques abiertos o ubicaciones que dejaron de corresponder a una evacuación modificada.',
     ],
     ficha: [
-      'La requisición de ERA de escape incluye duración declarada, configuración, punto de ubicación, acceso de ruta, estado de empaque y procedimiento de activación. Cantidad y responsable por turno hacen que el equipo esté disponible antes de exposición.',
-      'Solicita esos datos por escrito y revisa gabinete, empaque y práctica de salida al recibir. Una ficha clara distingue evacuación de ataque o rescate y permite procesar para servicio una unidad activada.',
+      'Para solicitar un ERA de escape, incluye duración declarada, configuración, punto de ubicación, acceso a la ruta, estado del empaque y procedimiento de activación. Definir cantidad y responsable por turno ayuda a que el equipo esté disponible antes de que ocurra la exposición.',
+      'Pide estos datos por escrito y revisa gabinete, empaque y práctica de salida al recibir la unidad. Una ficha completa distingue evacuación de ataque o rescate, y establece el proceso para enviar a servicio una unidad que ya fue activada.',
     ],
   },
   '/equipo-de-respiracion-autonoma/era-industrial/': {
     errores: [
-      'ERA industrial para brigadas no se asigna a combate estructural ni sustituye permiso de entrada. Confinados requieren monitoreo, vigilancia, comunicación y rescate; no validar talla de máscara deja una interfaz crítica sin comprobar.',
-      'Pide proceso, espacio, máscara, cilindro, accesorios y plan de rescate. La cotización puede documentar configuración industrial probada con casco, línea de vida y acceso real, sin ampliar su alcance por costumbre.',
+      'El ERA industrial para brigadas no se asigna a combate estructural ni sustituye el permiso de entrada. En espacios confinados se integra con monitoreo, vigilancia, comunicación y rescate; además, la talla de la máscara debe verificarse con cada persona usuaria antes de autorizar la maniobra.',
+      'Describe el proceso, el espacio, la máscara, el cilindro, los accesorios y el plan de rescate para recibir una cotización pertinente. La propuesta puede documentar una configuración industrial probada con casco, línea de vida y acceso real, sin ampliar su alcance por costumbre.',
     ],
     faq: [
-      'ERA industrial para brigadas aclara uso en confinados, aire respirable y límite frente a combate. Puede integrar permiso y monitoreo; para ataque estructural se requiere ERA conforme a NFPA 1970, no una configuración industrial.',
-      'Envía tipo de brigada, espacio, usuarios, talla y carga. Con esa información se especifican inspecciones por turno, conexiones y caja rígida, manteniendo visible el procedimiento que acompaña al equipo.',
+      'El ERA industrial para brigadas puede integrarse al permiso de entrada y al monitoreo de espacios confinados, con carga de aire respirable grado D o superior. Para ataque estructural se requiere un ERA conforme a NFPA 1970; una configuración industrial no debe extenderse a ese escenario.',
+      'Comparte el tipo de brigada, espacio, usuarios, talla de máscara y plan de carga para definir la partida. Esos datos permiten especificar inspecciones por turno, conexiones y caja rígida, manteniendo visible el procedimiento operativo que acompaña al equipo.',
     ],
     ficha: [
-      'Para ERA industrial para brigadas identifica certificación aplicable, cilindro, máscara, regulador, arnés, manómetro, conexiones y talla. Registra operación, permiso, aire respirable grado D o superior y compatibilidad con la maniobra.',
-      'Solicita documentación por escrito para revisar servicio, limpieza, carga y refacciones. Eso permite aceptar un conjunto industrial en su contexto y evita reasignarlo a combate sin evaluar requisito de ERA conforme a NFPA 1970.',
+      'Para ERA industrial para brigadas, identifica la certificación aplicable, cilindro, máscara, regulador, arnés, manómetro, conexiones y talla. La requisición también debe registrar operación, permiso de entrada, aire respirable grado D o superior y compatibilidad con la maniobra autorizada.',
+      'Solicita la documentación de servicio, limpieza, carga y refacciones antes de cerrar la requisición. Esto permite aceptar el conjunto industrial dentro de su contexto y evita reasignarlo a combate sin evaluar primero el requisito de ERA conforme a NFPA 1970.',
     ],
   },
   '/equipo-de-respiracion-autonoma/mascaras-y-reguladores-era/': {
     errores: [
-      'Máscaras y reguladores para ERA no se combinan por apariencia. Omitir ajuste, usar accesorios que rompen sello, apretar correas por talla incorrecta o mezclar conexiones afecta respiración, visión y comunicación dentro del conjunto.',
-      'Solicita modelo, talla, conexión, capucha, casco y comunicación. Una prueba con la persona usuaria documenta sello, mica, regulador y recorrido de manguera antes de aceptar piezas o refacciones.',
+      'Las máscaras y reguladores para ERA no se combinan por apariencia ni por una conexión parecida. Omitir la prueba de ajuste, usar accesorios que rompen el sello o compensar una talla incorrecta con correas tensas afecta respiración, visión y comunicación dentro del conjunto.',
+      'Comparte modelo, talla, conexión, capucha, casco y sistema de comunicación para evaluar la interfaz completa. Una prueba con la persona usuaria documenta el sello, la mica, el regulador y el recorrido de la manguera antes de aceptar piezas o refacciones.',
     ],
     faq: [
-      'Máscaras y reguladores para ERA resuelven talla, secuencia y compatibilidad. La máscara no es universal: cara limpia, sello, copa nasal, correas, mica y conexión se validan con capucha, casco, regulador y movimiento.',
-      'Comparte modelo, talla, usuarios, accesorios de voz y condición de piezas. Con esos datos se cotiza una interfaz documentada, incluyendo prueba funcional posterior cuando se reemplaza mica, válvula o conexión.',
+      'Las dudas sobre máscaras y reguladores para ERA suelen centrarse en talla, secuencia de colocación y compatibilidad. La máscara no es universal: la cara limpia, el sello, la copa nasal, las correas, la mica y la conexión se validan con capucha, casco, regulador y movimiento.',
+      'Envía el modelo, las tallas, número de usuarios, accesorios de voz y condición de las piezas para integrar una propuesta documentada. La cotización puede incluir la prueba funcional que corresponde después de reemplazar una mica, válvula o conexión.',
     ],
     ficha: [
-      'La especificación de máscaras y reguladores para ERA incluye talla, sello facial, copa nasal, mica, correas, conexión, regulador de demanda y voz si aplica. Cada refacción debe corresponder a familia y servicio del fabricante.',
-      'Pide modelo, compatibilidad y criterios de prueba por escrito. Recepción puede revisar visión, válvula, retención y manguera sin tensión, registrando cada componente antes de reasignar el conjunto.',
+      'La especificación de máscaras y reguladores para ERA debe incluir talla, sello facial, copa nasal, mica, correas, conexión, regulador de demanda y comunicación cuando aplique. Cada refacción tiene que corresponder a la familia del fabricante y al procedimiento de servicio indicado para ese modelo.',
+      'Solicita el modelo, la compatibilidad documentada y los criterios de prueba por escrito. En la recepción se revisan visión, válvula, retención y manguera sin tensión, registrando cada componente antes de reasignar el conjunto a una persona usuaria.',
     ],
   },
   '/equipo-de-respiracion-autonoma/msa-g1-industrial/': {
     caracteristicas: [
-      'MSA G1 Industrial declara 60 minutos a 4,500 psi con cilindro de carbono y certificación DOT. Integra arnés de Kevlar de cinco puntos, regulador, manómetro y máscara G1 talla M con copa nasal y diafragma.',
-      'Confirma código 10217600, talla M, conexión roscada y opcionales como hombreras o soporte lumbar. La prueba corresponde a brigadas y confinados con casco y línea de vida, no a combate estructural.',
+      'MSA G1 Industrial declara 60 minutos nominales a 4,500 psi con cilindro de carbono y etiqueta DOT. La configuración integra arnés de Kevlar de cinco puntos, regulador, manómetro y máscara G1 talla M con copa nasal y diafragma para aplicaciones industriales.',
+      'Confirma el código 10217600, la talla M, la conexión roscada y los opcionales, como hombreras o soporte lumbar, antes de solicitar la partida. Prueba el conjunto para brigadas y espacios confinados con casco y línea de vida; no corresponde a combate estructural.',
     ],
     faq: [
-      'MSA G1 Industrial se consulta por uso industrial, máscara talla M y límite frente a combate. Declara certificación NIOSH conforme a 42 CFR Parte 84 para brigadas y espacios confinados dentro de su análisis de riesgo.',
-      'Indica actividad, usuarios, talla, cilindro y accesorios. Podemos desglosar conexión, arnés, caja rígida y documentación NIOSH, conservando los componentes que deben verificarse antes de entrada.',
+      'MSA G1 Industrial se revisa por su uso industrial, máscara G1 talla M y límite frente al combate. Declara NIOSH conforme a 42 CFR Parte 84 para brigadas y espacios confinados, siempre dentro del análisis de riesgo, permiso de entrada y plan de rescate aplicables.',
+      'Indica la actividad, número de usuarios, talla, cilindro y accesorios requeridos para estructurar la solicitud. Podemos desglosar conexión roscada, arnés, caja rígida y declaración NIOSH, conservando los componentes que deben comprobarse antes de una entrada industrial.',
     ],
     ficha: [
-      'MSA G1 Industrial, código 10217600, declara NIOSH 42 CFR Parte 84, cilindro de carbono a 4,500 psi y 60 minutos nominales. Incluye máscara G1 talla M, conexión roscada, regulador, manómetro y arnés Kevlar.',
-      'Solicita declaración NIOSH, certificación DOT y opcionales por escrito. Esta ficha confirma talla y compatibilidad; la certificación es industrial y no debe describirse como conformidad para combate estructural.',
+      'MSA G1 Industrial, código 10217600, declara NIOSH 42 CFR Parte 84, cilindro de carbono a 4,500 psi y 60 minutos nominales. Incluye máscara G1 talla M, conexión roscada, regulador, manómetro y arnés de Kevlar para una configuración de brigada industrial.',
+      'Pide por escrito la declaración NIOSH, la etiqueta DOT del cilindro y los opcionales solicitados. Esta ficha permite confirmar talla y compatibilidad; el alcance declarado es industrial y no debe describirse como conformidad para combate estructural.',
     ],
   },
   '/equipo-de-respiracion-autonoma/skold-phantom/': {
     caracteristicas: [
-      'Sköld Phantöm 60 min declara cilindro de carbono a 4,500 psi, máscara panorámica de silicón con visión de 180° y doble sello. Incluye reguladores de dos etapas, manómetro, prealarma, alarma y espaldera con carga a cadera.',
-      'Confirma SCBA-P60FC, máscara, conexión rápida, cilindro y valija ABS. Prueba sello con capucha y casco, regulador y alarmas; autonomía nominal se planea con consumo y tarea, nunca como tiempo garantizado.',
+      'Sköld Phantöm 60 min declara cilindro de carbono a 4,500 psi, máscara panorámica de silicón con visión de 180° y doble sello. Incluye reguladores de dos etapas, manómetro, prealarma, alarma y espaldera con carga a cadera para una configuración de aire autónomo.',
+      'Confirma SCBA-P60FC, máscara, conexión rápida, cilindro y valija ABS antes de integrar la solicitud. Prueba el sello con capucha y casco, además del regulador y las alarmas; la autonomía de 60 minutos es nominal y se planea según consumo y tarea.',
     ],
     faq: [
-      'Sköld Phantöm 60 min genera preguntas por sus 60 minutos nominales, 4,500 psi y SCBA-P60FC. Declara acorde a NFPA edición 1997 y CE EN 137:2006; la referencia NFPA es antigua y no certificación vigente.',
-      'Envía operación, cantidad, configuración facial y requerimiento documental. Se cotizan cilindro, reguladores, correas y valija con información declarada, solicitando declaración de conformidad antes de valorar el modelo para operación.',
+      'Sköld Phantöm 60 min se consulta por sus 60 minutos nominales, presión de 4,500 psi y código SCBA-P60FC. Declara acorde a NFPA edición 1997 y CE EN 137:2006; la referencia NFPA es antigua y no debe presentarse como certificación vigente.',
+      'Comparte la operación, cantidad, configuración facial y requerimiento documental para revisar la partida. Se pueden desglosar cilindro, reguladores, correas y valija con información declarada, solicitando la declaración de conformidad antes de valorar el modelo para la operación prevista.',
     ],
     ficha: [
-      'Sköld Phantöm 60 min, SCBA-P60FC, declara cilindro de carbono de 60 minutos a 4,500 psi, máscara panorámica, reguladores, manómetro y alarma. Declara acorde a NFPA edición 1997 y CE EN 137:2006.',
-      'Pide declaración de conformidad con máscara, cilindro y accesorios. Su estatus es declarado: NFPA edición 1997 no debe transformarse en certificación NFPA vigente dentro de requisición o evaluación.',
+      'Sköld Phantöm 60 min, código SCBA-P60FC, declara cilindro de carbono de 60 minutos nominales a 4,500 psi, máscara panorámica, reguladores, manómetro y alarma. También declara acorde a NFPA edición 1997 y CE EN 137:2006 para la configuración identificada.',
+      'Solicita la declaración de conformidad junto con máscara, cilindro y accesorios antes de evaluar la oferta. Su estatus es declarado: la referencia NFPA edición 1997 no debe transformarse en certificación NFPA vigente dentro de una requisición institucional.',
     ],
   },
   '/herramientas/barra-halligan/': {
