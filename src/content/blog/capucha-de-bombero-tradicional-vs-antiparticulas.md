@@ -22,7 +22,7 @@ Una capucha de bombero no debe cerrar el campo visual ni comprometer el sello de
 
 ## Capucha, máscara y casco como interfaz
 
-Coloca la [capucha de bombero](/capuchas/) con la máscara de ERA, casco y cuello del chaquetón conforme al procedimiento de tu corporación. Prueba giro, vista arriba y hombros: el babero debe conservar traslape y la tela no debe invadir el sello facial.
+Coloca la [capucha de bombero](/capuchas/) con la máscara de ERA, casco y cuello del chaquetón conforme al procedimiento de tu corporación. Prueba giro, vista arriba y hombros: el babero debe conservar traslape y la tela no debe invadir el sello facial. El procedimiento completo está en [lavado y descontaminación del traje de bombero](/blog/lavado-y-descontaminacion-traje-de-bombero/).
 
 La interfaz se evalúa con la persona usuaria y el modelo de máscara que se asignará. Primero se confirma sello facial; luego se acomoda la capucha sin jalar las correas, se ajusta casco y se extiende el babero bajo el cuello del chaquetón. Al hablar, girar, mirar arriba, agacharse o levantar brazos, la abertura no debe desplazarse hacia la zona de sellado ni formar un bulto que impida cerrar el conjunto. La [guía para elegir casco de bombero](/blog/como-elegir-casco-de-bombero/) ofrece los mismos criterios de prueba para la parte superior del conjunto.
 

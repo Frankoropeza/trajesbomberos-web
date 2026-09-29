@@ -26,7 +26,7 @@ Un casco es una interfaz del conjunto. Si su suspensión se desplaza, el visor b
 
 ## Qué comparar antes de elegir un casco Bullard
 
-Comienza por separar incendio forestal, ataque estructural y tareas de apoyo. El uso define el tipo de carcasa, cobertura, accesorios y referencia normativa que necesitas revisar. No transfieras la declaración de un casco estructural a un casco para línea de fuego ni uses el forestal como sustituto de equipo para ataque interior.
+Comienza por separar incendio forestal, ataque estructural y tareas de apoyo. El uso define el tipo de carcasa, cobertura, accesorios y referencia normativa que necesitas revisar. No transfieras la declaración de un casco estructural a un casco para línea de fuego ni uses el forestal como sustituto de equipo para ataque interior. Para ubicar estos modelos entre las demás familias, revisa los [tipos de casco de bombero](/blog/tipos-de-casco-de-bombero/).
 
 En una requisición escribe modelo, operación, color, visor o goggles, barbiquejo, soporte de lámpara y número de usuarios. También especifica la máscara de ERA existente. La [selección de cascos para bombero](/cascos/) puede comparar el modelo publicado, pero la compatibilidad final se verifica al montar el equipo real.
 

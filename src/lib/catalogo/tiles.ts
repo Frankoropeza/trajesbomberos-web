@@ -86,6 +86,10 @@ const CTA_FAMILIA: Record<string, string> = {
   extricacion: 'Trajes de extricación y rescate',
   hazmat: 'Trajes Hazmat nivel A, B y C',
 };
+
+export function ctaFamilia(slug: string): string {
+  return CTA_FAMILIA[slug];
+}
 // [etiqueta, slug de pieza] — se valida contra PIEZAS: nunca se enlaza una ficha inexistente.
 const SUBS_FAMILIA: Record<string, [string, string][]> = {
   estructural: [['Chaquetón estructural', 'chaqueton'], ['Pantalonera estructural', 'pantalonera'], ['Monja antipartículas', 'monja'], ['Arnés de escape', 'arnes-escape']],

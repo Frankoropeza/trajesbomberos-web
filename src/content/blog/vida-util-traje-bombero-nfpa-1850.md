@@ -37,7 +37,7 @@ La respuesta corta es diez años. La respuesta útil es más larga, y es la que 
 
 ## De dónde sale la regla de los diez años
 
-El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850** —el documento que consolidó las anteriores NFPA 1851 y NFPA 1852, y cuya primera edición consolidada es la de 2026.
+El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850** —el documento que consolidó las anteriores NFPA 1851 y NFPA 1852, y cuya primera edición consolidada es la de 2026. La fecha de fabricación se lee en la etiqueta: [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
 
 Dos precisiones que cambian decisiones de compra:
 
@@ -68,7 +68,7 @@ Por eso, al recibir un pedido, lo primero que hay que hacer no es probarse el ch
 
 ## Qué invalida un traje antes de tiempo
 
-Retíralo o mándalo a evaluación, sin discusión, si:
+Retíralo o mándalo a evaluación, sin discusión, si: El procedimiento paso a paso está en [lavado y descontaminación del traje de bombero](/blog/lavado-y-descontaminacion-traje-de-bombero/).
 
 - Hay **quemadura, carbonización o fusión** en cualquier capa.
 - La **cinta reflejante** está despegada, quemada o ya no responde a la luz.

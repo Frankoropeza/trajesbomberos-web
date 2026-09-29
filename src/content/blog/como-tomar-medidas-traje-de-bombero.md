@@ -43,7 +43,7 @@ Las medidas sirven para elegir una talla de stock o pedir una configuración a m
 
 ## Antes de empezar el tallaje
 
-Prepara una cinta métrica flexible, formato por persona, pluma y el calzado o calcetín que normalmente se usa en servicio. La persona debe estar de pie, relajada y con camiseta y pantalón de trabajo; ropa gruesa, cartera, llaves o chamarra de calle modifican pecho, cintura y largos. Otra persona toma las lecturas: medirse uno mismo suele inclinar el cuerpo y falsear cintura o entrepierna.
+Prepara una cinta métrica flexible, formato por persona, pluma y el calzado o calcetín que normalmente se usa en servicio. La persona debe estar de pie, relajada y con camiseta y pantalón de trabajo; ropa gruesa, cartera, llaves o chamarra de calle modifican pecho, cintura y largos. Otra persona toma las lecturas: medirse uno mismo suele inclinar el cuerpo y falsear cintura o entrepierna. Si la compra es de ropa de estación y no de equipo de protección, revisa primero [qué incluye el uniforme de bombero](/blog/uniforme-de-bombero-que-incluye/).
 
 Anota nombre, fecha de toma, función operativa y familia que se evaluará. No mezcles una medida tomada para un [chaquetón estructural](/trajes/estructural/chaqueton/) con una talla ya existente de uniforme; el corte, las capas y el espacio de movimiento son distintos. Si hay una prenda actual que seguirá en uso, registra su modelo, talla y condición para revisar la compatibilidad antes de proponer un reemplazo.
 

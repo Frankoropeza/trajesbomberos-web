@@ -26,7 +26,7 @@ Las [botas para bombero](/botas/) se seleccionan desde el terreno y la operació
 
 ## Primero define dónde caminará el usuario
 
-La bota acompaña cada maniobra y por eso se elige desde el terreno, no desde una fotografía. Un bombero estructural puede cruzar agua, vidrio, escombros, superficies calientes y residuos contaminados. Una brigada industrial puede transitar por pasillos, patios, áreas de proceso y un punto de reunión. En vegetación predominan pendiente, piedras, jornadas de marcha y calor ambiental. Ninguna de esas condiciones permite copiar una selección de otra sin revisarla.
+La bota acompaña cada maniobra y por eso se elige desde el terreno, no desde una fotografía. Un bombero estructural puede cruzar agua, vidrio, escombros, superficies calientes y residuos contaminados. Una brigada industrial puede transitar por pasillos, patios, áreas de proceso y un punto de reunión. En vegetación predominan pendiente, piedras, jornadas de marcha y calor ambiental. Ninguna de esas condiciones permite copiar una selección de otra sin revisarla. Si ya sabes qué tipo necesitas, compara los modelos en [botas de bombero: modelos comparados](/blog/botas-de-bombero-modelos-comparados/).
 
 Anota los riesgos reales de pie y tobillo: impacto, perforación, resbalamiento, agua, químicos, contacto térmico, objetos pesados y distancia recorrida. Después vincúlalos con el resto del EPP. Una bota para [traje estructural](/trajes/estructural/) debe formar una interfaz que cubra al usuario al agacharse; para brigada se revisa contra la función definida en el análisis de riesgo. El tipo de operación determina la prioridad antes que el material de la bota.
 

@@ -1,0 +1,55 @@
+---
+import { waUrl } from '@lib/wa';
+
+interface Props {
+  conjunto: {
+    titulo: string;
+    intro: string;
+    items: { label: string; href: string }[];
+    dato?: string;
+    cta: { label: string; href: string };
+    wa: { label: string; mensaje: string };
+  };
+}
+
+const { conjunto } = Astro.props;
+---
+<div class="l2-guia">
+  <aside class="l2-guia__card">
+    <h3>{conjunto.titulo}</h3>
+    <p>{conjunto.intro}</p>
+    <ul>
+      {conjunto.items.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+    </ul>
+    {conjunto.dato && <p class="l2-guia__dato">{conjunto.dato}</p>}
+    <div class="l2-guia__actions">
+      <a class="btn" href={conjunto.cta.href}>{conjunto.cta.label}</a>
+      <a class="btn btn--wa" href={waUrl(conjunto.wa.mensaje)} target="_blank" rel="noopener nofollow">{conjunto.wa.label}</a>
+    </div>
+  </aside>
+  <div class="l2-prose"><slot /></div>
+</div>
+
+<style>
+  .l2-guia { display: grid; grid-template-columns: minmax(16rem, .72fr) minmax(0, 1.28fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+  .l2-guia__card { position: sticky; top: calc(var(--sticky-offset) + 1.2rem); background: var(--color-white); border: var(--border); border-top: 3px solid var(--color-primary); border-radius: var(--radius); padding: 1.7rem; box-shadow: var(--shadow); }
+  .l2-guia__card h3 { margin: 0 0 .5rem; }
+  .l2-guia__card p { margin: 0; color: var(--color-gray); line-height: 1.6; }
+  .l2-guia__card ul { list-style: none; margin: 1.2rem 0; padding: 0; display: grid; gap: .65rem; }
+  .l2-guia__card li { display: flex; gap: .5rem; align-items: start; }
+  .l2-guia__card li::before { content: '✓'; color: var(--color-primary); font-weight: 800; }
+  .l2-guia__card a:not(.btn) { color: var(--color-dark); font-weight: 700; text-decoration: none; }
+  .l2-guia__dato { font-size: var(--fs-xs); }
+  .l2-guia__actions { display: grid; gap: .7rem; margin-top: 1.25rem; }
+  .l2-guia__actions .btn { width: 100%; }
+  .l2-prose :global(h3) { margin: 2.4rem 0 1rem; padding-top: 2.4rem; border-top: var(--border); font-family: var(--font-display); font-size: clamp(1.25rem, 1.6vw, 1.5rem); }
+  .l2-prose :global(h3:first-child) { margin-top: 0; padding-top: 0; border-top: 0; }
+  .l2-prose :global(h4) { margin: 1.5rem 0 .55rem; color: var(--color-primary); font-size: .78rem; font-weight: 800; letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+  .l2-prose :global(p) { max-width: 72ch; color: var(--color-gray); line-height: 1.7; }
+  .l2-prose :global(ul) { list-style: none; padding: 0; max-width: 72ch; }
+  .l2-prose :global(li) { position: relative; padding-left: 1rem; margin: .55rem 0; color: var(--color-gray); line-height: 1.6; }
+  .l2-prose :global(li)::before { content: '■'; position: absolute; left: 0; color: var(--color-primary); font-size: .62em; top: .45em; }
+  .l2-prose :global(strong) { color: var(--color-dark); }
+  .l2-prose :global(a) { color: var(--color-primary); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+  @media (max-width: 1023px) { .l2-guia { grid-template-columns: 1fr; } .l2-guia__card { position: static; order: 2; } }
+</style>

@@ -9,13 +9,13 @@ import { responsive, SIZES } from '@lib/img';
 // Los párrafos admiten <a>/<strong>: texto propio del sitio, nunca
 // entrada de usuario. Regla del sitio: cero animaciones/transiciones.
 import type { SpotProps } from '@lib/spotlights/types';
-const { id, numero, eyebrow, titulo, parrafos, puntos, cta, wa, nota, imagenes, flip = false } = Astro.props as SpotProps;
+const { id, numero, eyebrow, titulo, parrafos, puntos, cta, wa, nota, imagenes, flip = false, nivel = 2 } = Astro.props as SpotProps;
 const [grande, ...chicas] = imagenes;
 ---
 <article class:list={['spot', { 'spot--flip': flip }]} id={id} aria-labelledby={`${id}-titulo`}>
   <div class="spot__text">
     <p class="eyebrow spot__eyebrow"><span class="spot__num">{numero}</span>{eyebrow}</p>
-    <h2 class="spot__title" id={`${id}-titulo`}>{titulo}</h2>
+    {nivel === 2 ? <h2 class="spot__title" id={`${id}-titulo`}>{titulo}</h2> : <h3 class="spot__title" id={`${id}-titulo`}>{titulo}</h3>}
     {parrafos.map((p, i) => <p class:list={['spot__p', { 'spot__p--lead': i === 0 }]} set:html={p} />)}
 
     <ul class="spot__puntos">
@@ -40,12 +40,12 @@ const [grande, ...chicas] = imagenes;
   <div class="spot__gallery">
     <figure class="spot__fig spot__fig--big">
       <img src={grande.src} {...responsive(grande.src, SIZES.half)} alt={grande.alt} width={grande.width} height={grande.height} loading="lazy" decoding="async" style={grande.pos ? `object-position:${grande.pos}` : undefined} />
-      <figcaption>{grande.caption}</figcaption>
+      {grande.caption && <figcaption>{grande.caption}</figcaption>}
     </figure>
     {chicas.map((im) => (
       <figure class="spot__fig">
         <img src={im.src} {...responsive(im.src, SIZES.tile)} alt={im.alt} width={im.width} height={im.height} loading="lazy" decoding="async" style={im.pos ? `object-position:${im.pos}` : undefined} />
-        <figcaption>{im.caption}</figcaption>
+        {im.caption && <figcaption>{im.caption}</figcaption>}
       </figure>
     ))}
   </div>
