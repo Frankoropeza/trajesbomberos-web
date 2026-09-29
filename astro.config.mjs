@@ -17,7 +17,11 @@ export default defineConfig({
   },
   build: {
     format: 'directory',
-    // CSS en línea: elimina las hojas que bloqueaban el primer render
+    // CSS en línea en cada página (~55 KB sin comprimir). Medido el 2026-09-29
+    // contra 'auto' (CSS externo con hash): 'always' gana en primera visita
+    // (FCP 1.1 s vs 1.5 s móvil, Lighthouse 100 vs 99) porque GitHub Pages sirve
+    // todo con max-age=600 y la hoja externa bloquea el render. Revisar solo si
+    // el sitio migra a Cloudflare Pages (caché inmutable de /_astro/).
     inlineStylesheets: 'always',
   },
 });

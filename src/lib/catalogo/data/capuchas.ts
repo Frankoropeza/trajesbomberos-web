@@ -55,13 +55,6 @@ const seccion: Seccion = {
   },
 };
 
-const ia = (slug: string, alt: string) => ({
-  src: `/images/catalogo/capuchas/tipo-${slug}.avif`,
-  alt,
-  width: 1600,
-  height: 900,
-  origen: "ia" as const,
-});
 const tipos: Tipo[] = [];
 
 const modelos: Modelo[] = [

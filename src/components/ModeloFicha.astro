@@ -52,12 +52,40 @@ const componentesKit = isTipo && seccion.slug === 'kits' ? {
     { nombre: 'Fire Ranger Explorer', href: urlModelo(modeloPorId('romak-fire-ranger-explorer')) }, { nombre: 'Romak BOMW1002', href: urlModelo(modeloPorId('romak-bomw1002')) }, { nombre: 'Bullard Wildland FH911H', href: urlModelo(modeloPorId('bullard-fh911h')) }, { nombre: 'ESS Striketeam XTO', href: urlModelo(modeloPorId('ess-striketeam-xto')) },
   ],
 }[tipo.slug] ?? [] : [];
-// Keyword del clúster en eyebrow y H1 de los modelos de traje:
-// «Romak Fire Protector · traje de bombero estructural».
-const KW_FAMILIA: Record<string, string> = { estructural: 'traje de bombero estructural', brigadista: 'traje de bombero brigadista', forestal: 'traje de bombero forestal', aproximacion: 'traje de bombero de aproximación', entrada: 'traje de bombero de entrada', extricacion: 'traje de extricación y rescate', hazmat: 'traje hazmat' };
+// H1 con la palabra clave de la página (auditoría 2026-09-29, E3): el H1 se
+// compone desde el primer segmento del title SEO, que ya lleva la keyword
+// («Guante estructural para bombero», «Casco de bombero Bullard LTX estructural»).
+//  · tipo: nombre + accent con el resto del title («para bombero», «contra incendio»…)
+//  · modelo de traje: la keyword de familia primero y el modelo como accent
+//    («Traje de bombero estructural» + «Romak Fire Protector»); sin «·» dentro del H1
+//  · otro modelo: el segmento del title si trae keyword; si no, nombre + tipo «para bombero»
+const KW_FAMILIA: Record<string, string> = { estructural: 'traje de bombero estructural', brigadista: 'traje de bombero brigadista', forestal: 'traje de bombero forestal', aproximacion: 'traje de bombero de aproximación', entrada: 'traje de bombero de entrada', extricacion: 'traje de bombero de extricación', hazmat: 'traje hazmat para bombero' };
 const kwFamilia = familiaModelo ? KW_FAMILIA[familiaModelo.slug] : undefined;
-const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : kwFamilia ? `Modelo · ${kwFamilia}` : `Modelo · ${seccion.nombre}`;
-const h1Accent = !isTipo && kwFamilia ? `· ${kwFamilia}` : undefined;
+const tipoDeModelo = !isTipo && modelo.tipo ? tiposDeSeccion(seccion.slug).find((item) => item.slug === modelo.tipo) : undefined;
+const capitalizar = (texto: string) => texto.charAt(0).toUpperCase() + texto.slice(1);
+const segmentoTitle = (texto: string) => texto.split('|')[0].trim();
+const llevaKeyword = (texto: string) => /bombero|incendio|brigad|rescate|\bera\b|hazmat|quími/i.test(texto);
+let h1Ficha = nombre;
+let h1Accent: string | undefined;
+if (isTipo) {
+  const s1 = segmentoTitle(tipo.title);
+  if (s1.toLowerCase().startsWith(tipo.nombre.toLowerCase()) && s1.length > tipo.nombre.length + 1) {
+    h1Accent = s1.slice(tipo.nombre.length).trim().replace(/^[:–—-]\s*/, '');
+  } else if (!llevaKeyword(tipo.nombre)) {
+    h1Accent = 'para bombero';
+  }
+} else if (kwFamilia) {
+  h1Ficha = capitalizar(kwFamilia);
+  h1Accent = nombre;
+} else {
+  const s1 = segmentoTitle(tituloModelo);
+  if (llevaKeyword(s1)) h1Ficha = s1;
+  else {
+    const tipoNombre = (tipoDeModelo?.nombre ?? seccion.nombre).toLowerCase();
+    h1Accent = /bombero/.test(tipoNombre) ? tipoNombre : `${tipoNombre} para bombero`;
+  }
+}
+const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
 const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 const waFicha = `Hola, quiero la ficha técnica de ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
@@ -73,7 +101,7 @@ const rapida = isTipo ? [] : [
 ] as [string, string][];
 const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
 ---
-<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : tituloModelo} description={isTipo ? tipo.description : descripcionModelo} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={nombre} h1Accent={h1Accent} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
+<PageLayout pageType="producto" path={path} title={isTipo ? tipo.title : tituloModelo} description={isTipo ? tipo.description : descripcionModelo} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0]} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={isTipo ? tipo.faq : modelo.faq} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   {!isTipo && (
     <div class="section producto"><div class="container">

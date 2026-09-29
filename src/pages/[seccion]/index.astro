@@ -3,7 +3,6 @@ import type { GetStaticPaths } from 'astro';
 import PageLayout from '@layouts/PageLayout.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import FAQWithContact from '@components/FAQWithContact.astro';
-import NormaBadge from '@components/NormaBadge.astro';
 import { SECCIONES } from '@lib/catalogo/secciones';
 import { duoSeccion } from '@lib/titulos';
 import ModelosGrid from '@components/ModelosGrid.astro';
@@ -44,7 +43,7 @@ const mostrarEleccion = Boolean(seccion.comparativa || seccion.criterios || secc
   <div class="section"><div class="container content">
     {tipos.length > 0 && <section class="block" id="tipos">
       <SectionHeading eyebrow={etiquetas?.tiposEyebrow ?? 'Por operación'} title={etiquetas?.tiposTitulo ?? `Tipos de ${seccion.nombre.toLowerCase()}`} description={etiquetas?.tiposDescripcion} duo={duoSeccion(seccion.slug, 'tipos')} />
-      {tiposAgrupados ? grupos!.map((grupo) => <section class="type-group"><h3 class="type-group__t">{grupo.titulo}</h3><div class="cards">{grupo.tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div></section>) : <div class="cards">{tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}><img src={tipo.imagen?.src} alt={tipo.imagen?.alt} width={tipo.imagen?.width} height={tipo.imagen?.height} loading="lazy" /><h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div>}
+      {tiposAgrupados ? grupos!.map((grupo) => <section class="type-group"><h3 class="type-group__t">{grupo.titulo}</h3><div class="cards">{grupo.tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}>{tipo.imagen && <img src={tipo.imagen.src} alt={tipo.imagen.alt} width={tipo.imagen.width} height={tipo.imagen.height} loading="lazy" decoding="async" />}<h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div></section>) : <div class="cards">{tipos.map((tipo) => <a class="card" href={`/${seccion.slug}/${tipo.slug}/`}>{tipo.imagen && <img src={tipo.imagen.src} alt={tipo.imagen.alt} width={tipo.imagen.width} height={tipo.imagen.height} loading="lazy" decoding="async" />}<h3>{tipo.nombreCard}</h3><p>{tipo.lead}</p><span>Cotizar {tipo.nombreCard.toLowerCase()} →</span></a>)}</div>}
     </section>}
     {seccion.enlaces && seccion.enlaces.length > 0 && <section class="block" id="fichas"><SectionHeading eyebrow="Por tipo de traje" title={`Fichas de ${seccion.nombre.toLowerCase()} por familia`} description="Cada familia de traje tiene su propia ficha con la especificación completa." duo={duoSeccion(seccion.slug, 'fichas')} /><div class="cards">{seccion.enlaces.map((enlace) => <a class="card" href={enlace.href}><h3>{enlace.label}</h3><p>{enlace.descripcion}</p><span>Ver ficha →</span></a>)}</div></section>}
     {mostrarEleccion && <section class="block" id="elegir">
