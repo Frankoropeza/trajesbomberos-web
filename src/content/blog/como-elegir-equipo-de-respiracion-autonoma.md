@@ -1,5 +1,6 @@
 ---
 title: "Cómo elegir equipo de respiración autónoma para bombero"
+ancla: "Equipo de respiración autónoma"
 titleAccent: "por operación y ciclo de servicio"
 eyebrow: "Guía de compra · Protección respiratoria"
 lead: "Un ERA se elige por la atmósfera que enfrentará el usuario, la configuración completa del equipo y la capacidad de mantenerlo listo para el siguiente llamado."

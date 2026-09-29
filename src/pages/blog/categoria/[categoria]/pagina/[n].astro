@@ -1,0 +1,93 @@
+---
+// L2 · Categoría del blog, páginas ≥ 2 (solo si la categoría
+// tiene más de 9 artículos; hoy no se genera ninguna).
+import type { GetStaticPaths } from 'astro';
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import BlogListado from '@components/blog/BlogListado.astro';
+import BlogSidebar from '@components/BlogSidebar.astro';
+import CTABanner from '@components/CTABanner.astro';
+import { PRESET_CONTACTO } from '@lib/cta-presets';
+import { SITE, BLOG_CATEGORIES } from '@config/site';
+import {
+  getPosts,
+  getPostsByCategoria,
+  paginar,
+  postUrl,
+  categoriaUrl,
+  paginaUrl,
+  seoPagina,
+} from '@lib/blog';
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+  for (const cat of BLOG_CATEGORIES) {
+    const paginas = paginar(await getPostsByCategoria(cat.slug), 1).totalPaginas;
+    for (let n = 2; n <= paginas; n++)
+      paths.push({ params: { categoria: cat.slug, n: String(n) }, props: { cat } });
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+const { cat } = Astro.props;
+const n = Number(Astro.params.n);
+const todos = await getPosts();
+const categoriaPosts = await getPostsByCategoria(cat.slug);
+const pagina = paginar(categoriaPosts, n);
+const base = categoriaUrl(cat.slug);
+const path = paginaUrl(base, pagina.pagina);
+const seo = seoPagina(cat.seoTitle, cat.seoDescription, pagina.pagina);
+const directoryItems = pagina.posts.map((post) => ({
+  name: post.data.title,
+  url: new URL(postUrl(post), SITE.url).href,
+}));
+const menuItems = [
+  { label: 'Artículos sobre trajes para bomberos', href: '#articulos' },
+  { label: 'Blog de trajes para bomberos', href: '/blog/' },
+];
+---
+
+<PageLayout
+  pageType="directorio"
+  path={path}
+  title={seo.title}
+  description={seo.description}
+  keywords={cat.keywords}
+  menuItems={menuItems}
+  crumbLabel={`Página ${pagina.pagina}`}
+  parent={[
+    { name: 'Blog', href: '/blog/' },
+    { name: cat.nombre, href: base },
+  ]}
+  eyebrow={`Blog · ${cat.nombre}`}
+  h1={cat.h1}
+  h1Accent={`· página ${pagina.pagina}`}
+  lead={cat.lead}
+  meta={[`${pagina.total} artículos`, 'Norma vigente citada', 'Español de México', 'Sin relleno']}
+  descRight={[
+    cat.desc,
+    'Si después de leer sigues con la duda, escríbenos: contestamos con la ficha técnica en la mano y te decimos con franqueza si lo que necesitas es otra cosa.',
+  ]}
+  directoryItems={directoryItems}
+>
+  <div class="section section--alt" id="articulos">
+    <div class="container layout-grid">
+      <div class="layout-main">
+        <SectionHeading
+          eyebrow={`Página ${pagina.pagina}`}
+          title={`Artículos de ${cat.nombre.toLowerCase()}`}
+        />
+        <BlogListado
+          posts={pagina.posts}
+          todos={todos}
+          total={pagina.total}
+          pagina={pagina.pagina}
+          totalPaginas={pagina.totalPaginas}
+          base={base}
+          actualCategoria={cat.slug}
+        />
+      </div>
+      <BlogSidebar variant="categoria" visiblePostIds={pagina.posts.map((post) => post.id)} />
+    </div>
+  </div>
+  <CTABanner variant="dark" {...PRESET_CONTACTO} />
+</PageLayout>

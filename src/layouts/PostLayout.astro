@@ -11,7 +11,7 @@ import SectionHeading from '@components/SectionHeading.astro';
 import PostCard from '@components/PostCard.astro';
 import BlogSidebar from '@components/BlogSidebar.astro';
 import CTABanner from '@components/CTABanner.astro';
-import { SITE, WA_MESSAGES, blogCategoria } from '@config/site';
+import { SITE, WA_MESSAGES, PRODUCT_CATEGORIES, blogCategoria } from '@config/site';
 import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { waUrl } from '@lib/wa';
 import { HERO_GENERICO } from '@lib/imagenes';
@@ -39,13 +39,14 @@ const palabras = wordCount(post.body);
 const cat = blogCategoria(d.categoria);
 const relacionados = await relatedPosts(post, 3);
 const waMsg = WA_MESSAGES.articulo(d.title);
+const familiaNombre = PRODUCT_CATEGORIES.find((familia) => familia.slug === d.familia)?.nombre;
 
 const menuItems = [
   { label: 'El artículo', href: '#articulo' },
   { label: 'Relacionados', href: '#relacionados' },
   { label: categoriaNombre(d.categoria), href: categoriaUrl(d.categoria) },
-  ...(d.familia ? [{ label: 'Ver la familia', href: `/trajes/${d.familia}/` }] : []),
-  { label: 'Todos los artículos', href: '/blog/' },
+  ...(d.familia && familiaNombre ? [{ label: `Familia: ${familiaNombre}`, href: `/trajes/${d.familia}/` }] : []),
+  { label: 'Artículos sobre trajes para bomberos', href: '/blog/' },
 ];
 
 // Datos duros del hero: si el artículo no los declara, se arma
@@ -84,6 +85,7 @@ const article = {
   heroImage={d.imagen ? { src: d.imagen, alt: d.imagenAlt ?? '' } : HERO_GENERICO}
   ogImage={`/images/og/blog-${post.id}.jpg`}
 >
+  <div class="reading-progress-global" aria-hidden="true"><span data-reading-progress-global></span></div>
   <div class="section">
     <div class="container layout-grid layout-grid--post">
       <div class="layout-main">
@@ -119,11 +121,17 @@ const article = {
               <a class="btn btn--wa" href={waUrl(waMsg)} target="_blank" rel="noopener nofollow">
                 Preguntar por WhatsApp
               </a>
-              {d.familia && (
-                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>Ver la familia de traje</a>
+              {d.familia && familiaNombre && (
+                <a class="btn btn--ghost" href={`/trajes/${d.familia}/`}>{familiaNombre}</a>
               )}
             </div>
           </div>
+          <aside class="post__author" aria-label="Autoría">
+            <p class="post__author-name">Equipo técnico TrajesBombero</p>
+            <p>Especificamos y cotizamos equipo de protección contra incendio para cuerpos de bomberos, brigadas industriales y compras públicas en México.</p>
+            <p>Cada guía se contrasta con la norma citada y con la ficha técnica del fabricante.</p>
+            <a href="/empresa/">Empresa de trajes para bomberos →</a>
+          </aside>
         </article>
       </div>
 
@@ -145,7 +153,7 @@ const article = {
           title="Artículos relacionados"
           description={cat ? cat.desc : undefined}
         />
-        <div class="grid-cards grid-cards--3">
+        <div class="related-grid" data-post-grid>
           {relacionados.map((p, i) => (
             <PostCard
               href={postUrl(p)}
@@ -156,11 +164,12 @@ const article = {
               image={p.data.imagen}
               imageAlt={p.data.imagenAlt}
               destacado={p.data.destacado}
+              ancla={p.data.ancla}
               index={i}
             />
           ))}
         </div>
-        <p class="volver"><a href="/blog/">← Volver al blog</a></p>
+        <p class="volver"><a href="/blog/">← Blog de trajes para bomberos</a></p>
       </div>
     </section>
   )}
@@ -181,6 +190,8 @@ const article = {
   .post__cierre { max-width: none; }
 
   .post { min-width: 0; }
+  .reading-progress-global { position: fixed; z-index: 40; top: var(--header-height); left: 0; width: 100%; height: 3px; background: transparent; }
+  .reading-progress-global span { display: block; width: 0; height: 100%; background: var(--color-primary); }
 
   .post__bar {
     display: flex;
@@ -220,8 +231,35 @@ const article = {
   .post__cierre-t { margin: 0 0 0.4rem; font-weight: 800; font-size: 1.05rem; }
   .post__cierre-p { margin: 0 0 1.2rem; color: var(--color-gray); font-size: 0.92rem; }
   .post__cierre-cta { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .post__author { margin-top: 1rem; padding: 1.25rem 1.35rem; border: var(--border); border-left: 3px solid var(--color-primary); border-radius: var(--radius-lg); background: var(--color-white); color: var(--color-gray); font-size: var(--fs-sm); line-height: 1.55; }
+  .post__author p { margin: 0.35rem 0; }
+  .post__author-name { color: var(--color-dark); font-weight: 800; }
+  .post__author a { display: inline-block; margin-top: 0.35rem; color: var(--color-primary); font-weight: 800; text-decoration: none; }
+  .related-grid { display: grid; grid-template-columns: 1fr; gap: var(--gap-grid); }
+  @media (min-width: 600px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 960px) { .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }
   .volver a:hover { text-decoration: underline; }
 </style>
+
+<script>
+  const articleForProgress = document.getElementById('articulo');
+  const reduceProgressMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (articleForProgress && !reduceProgressMotion) {
+    const globalBar = document.querySelector<HTMLElement>('[data-reading-progress-global]');
+    let pending = false;
+    const updateProgress = () => {
+      pending = false;
+      const rect = articleForProgress.getBoundingClientRect();
+      const range = Math.max(1, articleForProgress.offsetHeight - window.innerHeight * 0.45);
+      const percent = Math.min(100, Math.max(0, (-rect.top + window.innerHeight * 0.2) / range * 100));
+      if (globalBar) globalBar.style.width = `${percent}%`;
+    };
+    const requestProgress = () => { if (!pending) { pending = true; requestAnimationFrame(updateProgress); } };
+    window.addEventListener('scroll', requestProgress, { passive: true });
+    window.addEventListener('resize', requestProgress, { passive: true });
+    requestProgress();
+  }
+</script>
