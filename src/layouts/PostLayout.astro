@@ -37,7 +37,7 @@ const url = new URL(path, SITE.url).href;
 const lectura = readingTime(post.body);
 const palabras = wordCount(post.body);
 const cat = blogCategoria(d.categoria);
-const relacionados = await relatedPosts(post, 3);
+const relacionados = await relatedPosts(post, 4);
 const waMsg = WA_MESSAGES.articulo(d.title);
 const familiaNombre = PRODUCT_CATEGORIES.find((familia) => familia.slug === d.familia)?.nombre;
 
@@ -302,7 +302,7 @@ const article = {
   .post__author a { display: inline-block; margin-top: 0.35rem; color: var(--color-primary); font-weight: 800; text-decoration: none; }
   .related-grid { display: grid; grid-template-columns: 1fr; gap: var(--gap-grid); }
   @media (min-width: 600px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 960px) { .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) { .related-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
   .volver { margin: 2.2rem 0 0; }
   .volver a { font-weight: 800; text-decoration: none; }

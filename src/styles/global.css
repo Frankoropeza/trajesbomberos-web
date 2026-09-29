@@ -127,6 +127,10 @@ th { font-family: var(--font-display); }
 }
 /* 6 tarjetas → 3 columnas: dos filas completas, sin huecos */
 .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
+/* Módulo de blog pre-footer: 4 fichas → 4 / 2 / 1, sin huérfanas */
+.grid-cards--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1023px) { .grid-cards--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 559px)  { .grid-cards--4 { grid-template-columns: 1fr; } }
 @media (max-width: 1200px) { .grid-cards { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 860px)  {
   .grid-cards, .grid-cards--3 { grid-template-columns: repeat(2, 1fr); }

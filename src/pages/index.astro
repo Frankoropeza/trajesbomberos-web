@@ -193,9 +193,9 @@ const directoryItems = [
   ...complementos.flatMap((c) => (c.href ? [{ name: c.titulo, url: `${SITE.url}${c.href}` }] : [])),
 ];
 
-// Últimos 3 artículos del blog: la home enlaza al contenido que
+// Últimos 4 artículos del blog: la home enlaza al contenido que
 // resuelve las dudas previas a la cotización.
-const ultimosPosts = (await getPosts()).slice(0, 3);
+const ultimosPosts = (await getPosts()).slice(0, 4);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
   <Hero {...hero} solid />
@@ -282,7 +282,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           'Empieza por <a href="/blog/como-elegir-traje-para-bomberos/">cómo elegir un traje para bomberos</a> o por <a href="/blog/nfpa-1970-que-cambio/">qué cambió con la NFPA 1970</a>. Cada guía enlaza al catálogo correspondiente y te lleva a cotizar por WhatsApp cuando ya sabes qué necesitas.',
         ]}
       />
-      <div class="grid-cards grid-cards--3">
+      <div class="grid-cards grid-cards--4">
         {ultimosPosts.map((a, i) => (
           <PostCard
             href={postUrl(a)}
@@ -297,7 +297,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
           />
         ))}
       </div>
-      <p class="blog-cta"><a href="/blog/">Ver todos los artículos del blog →</a></p>
+      <p class="blog-cta"><a href="/blog/">Blog técnico de trajes para bomberos: todas las guías →</a></p>
     </div>
   </section>
   <QuoteCTA id="cotizar" />
