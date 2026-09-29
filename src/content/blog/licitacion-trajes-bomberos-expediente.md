@@ -23,7 +23,7 @@ productos:
   - "/guantes/"
 fecha: 2026-06-09
 autor: "Equipo técnico LORICA"
-seoTitle: "Licitación de trajes para bomberos | expediente | México"
+seoTitle: "Licitación de trajes para bomberos: expediente y documentos"
 description: "Licitación de trajes para bomberos: qué documentos pide un pliego mexicano, qué descalifica una propuesta y cómo armar el expediente técnico completo."
 keywords:
   - "licitación de trajes para bomberos"

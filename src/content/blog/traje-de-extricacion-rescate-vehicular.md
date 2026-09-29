@@ -17,7 +17,7 @@ categoria: "comparativas"
 familia: "extricacion"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Traje de extricación para rescate vehicular | México"
+seoTitle: "Traje de extricación o estructural en rescate vehicular"
 description: "Traje de extricación para rescate vehicular: compara chaqueta, pantalón y overol frente al estructural por corte, punción, fluidos, movilidad y reposición."
 keywords:
   - "traje de extricación"

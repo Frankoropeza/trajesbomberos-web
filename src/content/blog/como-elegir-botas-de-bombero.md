@@ -15,7 +15,7 @@ productos:
   - "/trajes/hazmat/botas-quimicas/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "Cómo elegir botas de bombero | guía | México"
+seoTitle: "Cómo elegir botas de bombero: hule o piel y talla correcta"
 description: "Cómo elegir botas de bombero: hule o piel, talla mexicana, suela, puntera y qué revisar antes de pedir botas para estructura, bosque o brigada."
 keywords: ["cómo elegir botas de bombero", "botas de bombero", "México"]
 imagen: "/images/blog/como-elegir-botas-de-bombero.avif"

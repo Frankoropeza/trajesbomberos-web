@@ -24,8 +24,8 @@ productos:
   - "/cascos/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "Uniforme de bombero: ropa y protección | México"
-description: "Uniforme de bombero: qué incluye la ropa de estación, cómo se distingue del traje de protección y qué equipo corresponde a cada operación en México."
+seoTitle: "Uniforme de bombero: qué incluye y en qué difiere del traje"
+description: "Uniforme de bombero: qué incluye la ropa de estación, cómo se distingue del traje de protección y qué equipo corresponde a cada operación."
 keywords: ["uniforme de bombero", "ropa de bombero", "México"]
 imagen: "/images/escenas/estacion-bomberos-trajes-percha.avif"
 imagenAlt: "Uniformes y conjuntos de protección para bombero colgados en una estación"

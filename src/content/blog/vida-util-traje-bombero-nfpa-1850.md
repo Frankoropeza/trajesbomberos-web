@@ -21,7 +21,7 @@ productos:
   - "/trajes/extricacion/"
 fecha: 2026-06-16
 autor: "Equipo técnico LORICA"
-seoTitle: "Vida útil del traje de bombero | NFPA 1850 | México"
+seoTitle: "Vida útil del traje de bombero según la NFPA 1850"
 description: "Vida útil del traje de bombero: por qué se retira a los diez años de fabricado, qué exige la NFPA 1850 en inspección y lavado, y cómo llevar la bitácora."
 keywords:
   - "vida útil del traje de bombero"

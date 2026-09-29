@@ -17,7 +17,7 @@ categoria: "especificacion"
 familia: "estructural"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Cómo tomar medidas para un traje de bombero | México"
+seoTitle: "Cómo tomar medidas para un traje de bombero y elegir talla"
 description: "Cómo tomar medidas para un traje de bombero: pecho, cintura, largos, mano y pie para elegir tallas, probar movilidad y pedir cada pieza correctamente."
 keywords:
   - "cómo tomar medidas para un traje de bombero"

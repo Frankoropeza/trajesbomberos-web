@@ -54,7 +54,7 @@ export function paginaUrl(base: string, n: number): string {
 export function seoPagina(title: string, description: string, n: number) {
   if (n <= 1) return { title, description };
   const sufijo = ` · página ${n}`;
-  const preferido = title.split('|')[0]?.trim() || title;
+  const preferido = title.split(/[|:]/)[0]?.trim() || title;
   const base = preferido.slice(0, Math.max(0, 60 - sufijo.length)).trimEnd();
   const descripcionSufijo = ` · página ${n}`;
   const descripcionBase = description.slice(0, Math.max(0, 160 - descripcionSufijo.length)).trimEnd();

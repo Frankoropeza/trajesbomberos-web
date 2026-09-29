@@ -23,7 +23,7 @@ productos:
   - "/trajes/extricacion/"
 fecha: 2026-07-14
 autor: "Equipo técnico LORICA"
-seoTitle: "Cómo elegir traje para bomberos | guía de compra | México"
+seoTitle: "Cómo elegir traje para bomberos según tu operación"
 description: "Cómo elegir traje para bomberos sin equivocarte: qué familia corresponde a tu operación, qué datos pedir en la cotización y qué revisar antes de firmar."
 keywords:
   - "cómo elegir traje para bomberos"

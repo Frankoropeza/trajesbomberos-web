@@ -17,7 +17,7 @@ categoria: "especificacion"
 familia: "estructural"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "Cuánto pesa un traje de bombero | guía | México"
+seoTitle: "Cuánto pesa un traje de bombero con y sin ERA"
 description: "Cuánto pesa un traje de bombero: separa el traje, casco, botas, guantes y ERA para evaluar carga, movilidad y la configuración correcta."
 keywords:
   - "cuánto pesa un traje de bombero"

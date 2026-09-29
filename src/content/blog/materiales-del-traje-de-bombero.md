@@ -17,7 +17,7 @@ categoria: "especificacion"
 familia: "estructural"
 fecha: 2026-09-29
 autor: "Equipo técnico LORICA"
-seoTitle: "De qué está hecho un traje de bombero | México"
+seoTitle: "De qué está hecho un traje de bombero: capas y materiales"
 description: "De qué está hecho un traje de bombero: capa exterior, barrera de humedad, barrera térmica y materiales declarados para comparar composites."
 keywords:
   - "de qué está hecho un traje de bombero"

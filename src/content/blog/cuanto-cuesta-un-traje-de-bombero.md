@@ -23,7 +23,7 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 fecha: 2026-09-28
 autor: "Equipo técnico LORICA"
-seoTitle: "Cuánto cuesta un traje de bombero | México"
+seoTitle: "Cuánto cuesta un traje de bombero y qué cambia el precio"
 description: "Cuánto cuesta un traje de bombero: factores que cambian una cotización y cómo comparar configuración, certificación, tallas, entrega y vida útil."
 keywords: ["cuánto cuesta un traje de bombero", "traje de bombero precio", "México"]
 imagen: "/images/escenas/bomberos-ataque-incendio-manguera.avif"
