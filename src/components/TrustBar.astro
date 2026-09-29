@@ -27,7 +27,7 @@ const ICONS: Record<IconKey, string> = {
           </svg>
         </span>
         <div>
-          <h3>{p.title}</h3>
+          <p class="trustbar__title">{p.title}</p>
           <p>{p.desc}</p>
         </div>
       </div>
@@ -61,7 +61,7 @@ const ICONS: Record<IconKey, string> = {
     background: var(--color-primary-light);
     color: var(--color-primary);
   }
-  h3 { margin: 0 0 0.15rem; font-size: 0.95rem; font-weight: 800; }
+  .trustbar__title { margin: 0 0 0.15rem; font-size: 0.95rem; font-weight: 800; font-family: var(--font-display); color: var(--color-dark); }
   p { margin: 0; font-size: 0.83rem; color: var(--color-gray); line-height: 1.5; }
 
   @media (max-width: 1024px) {
