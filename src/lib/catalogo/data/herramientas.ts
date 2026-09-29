@@ -2,7 +2,7 @@ import type { Modelo, Seccion, Tipo } from '../types';
 
 const imagen = (slug: string, alt: string) => ({ src: `/images/catalogo/herramientas/tipo-${slug}.avif`, alt, width: 1600, height: 900, origen: 'ia' as const });
 const tipo = (slug: string, nombre: string, lead: string, bloques: Tipo['bloques'], especificacion: Tipo['especificacion'], relacionados: string[] = []): Tipo => ({
-  slug, seccion: 'herramientas', nombre, nombreCard: nombre, title: `${nombre} para bombero | México`, description: `${nombre} para bombero: uso operativo, selección, materiales, mantenimiento, resguardo y datos necesarios para cotizar una partida en México.`, lead, bloques, especificacion,
+  slug, seccion: 'herramientas', nombre, nombreCard: nombre, title: `${nombre}${nombre.length < 12 ? ': herramienta forestal' : ''} para bombero | México`, description: `${nombre} para bombero: uso operativo, selección, materiales, mantenimiento, resguardo y datos necesarios para cotizar una partida en México.`, lead, bloques, especificacion,
   normas: [{ norma: 'Herramientas manuales', alcance: 'No se publica una norma específica para este tipo; confirma las especificaciones del fabricante en la cotización.' }],
   errores: ['Elegir por apariencia sin definir la maniobra', 'Usar una herramienta dañada o con mango flojo', 'Modificar el mango o la cabeza sin indicación del fabricante', 'Omitir inspección, limpieza y resguardo después del servicio'],
   faq: [{ q: '¿Qué se debe indicar al cotizar?', a: 'Uso previsto, cantidad, material, longitud, peso cuando aplique y cualquier requisito de transporte o resguardo.' }, { q: '¿Hay una norma publicada para este tipo?', a: 'No se publica una norma específica para esta herramienta manual; pide la especificación que declare el fabricante.' }],
