@@ -1,0 +1,109 @@
+---
+// QuoteCTA (home): cierre de conversión. WhatsApp primario con la
+// lista de lo que acelera la cotización; teléfono como secundario.
+// Enlaces desde CONTACT/WA_MESSAGES vía waUrl (regla D4).
+import { CONTACT, WA_MESSAGES } from '@config/site';
+import { waUrl } from '@lib/wa';
+
+interface Props { id?: string; }
+const { id = 'cotizar' } = Astro.props as Props;
+
+const datos = [
+  'Tipo de operación (estructural, forestal, industrial, rescate…)',
+  'Número de elementos y tallas',
+  'Norma o pliego que debes cumplir, si aplica',
+  'Estado y lugar de entrega',
+];
+---
+<section class="quote" id={id} aria-labelledby="quote-title">
+  <div class="quote__stripes" aria-hidden="true"></div>
+  <div class="container quote__grid">
+    <div>
+      <p class="quote__eyebrow">Cotización con ficha técnica</p>
+      <h2 id="quote-title">Cotiza tu equipo con ficha técnica por WhatsApp</h2>
+      <p class="quote__text">
+        Respondemos en día hábil con cotización formal, ficha técnica por partida y condiciones de entrega por
+        escrito. Sin compra mínima: por pieza o conjunto completo.
+      </p>
+      <div class="quote__actions">
+        <a class="quote__wa" href={waUrl(WA_MESSAGES.cotizar)} target="_blank" rel="noopener nofollow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z" /></svg>
+          Cotizar por WhatsApp
+        </a>
+        <a class="quote__tel" href={`tel:${CONTACT.telefonoHref}`}>Llamar: {CONTACT.telefono}</a>
+      </div>
+    </div>
+    <div class="quote__panel">
+      <h3>Para cotizar más rápido, envíanos:</h3>
+      <ol>
+        {datos.map((d) => <li>{d}</li>)}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<style>
+  .quote {
+    position: relative;
+    background: var(--color-ink);
+    color: var(--color-light);
+    padding-block: var(--section-y);
+    overflow: hidden;
+  }
+  .quote__stripes {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 8px;
+    background: repeating-linear-gradient(115deg, var(--color-accent) 0 18px, var(--color-ink) 18px 36px);
+  }
+  .quote__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: clamp(1.8rem, 4vw, 4rem);
+    align-items: center;
+  }
+  .quote__eyebrow {
+    margin: 0 0 0.6rem;
+    color: var(--color-accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+  }
+  h2 { margin: 0; color: var(--color-white); font-size: var(--fs-h2); line-height: 1.08; }
+  .quote__text { margin: 1rem 0 0; max-width: 58ch; color: #d3d7dc; font-size: var(--fs-lead); }
+  .quote__actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.6rem; }
+  .quote__actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-height: 52px;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .quote__wa { background: var(--color-wa); color: #fff; }
+  .quote__wa:hover { background: var(--color-wa-dark); }
+  .quote__tel { border: 1px solid rgb(255 255 255 / 0.55); color: var(--color-white); }
+  .quote__tel:hover { background: rgb(255 255 255 / 0.08); }
+  .quote__panel {
+    padding: 1.5rem 1.6rem;
+    border: 1px solid rgb(255 255 255 / 0.14);
+    border-left: 4px solid var(--color-primary);
+    background: var(--color-ink-soft);
+  }
+  h3 { margin: 0 0 0.9rem; color: var(--color-white); font-size: 1.05rem; }
+  ol { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.55rem; }
+  li { color: #d3d7dc; font-size: 0.95rem; }
+  li::marker { color: var(--color-accent); font-weight: 800; }
+
+  @media (max-width: 899px) {
+    .quote__grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 639px) {
+    .quote__actions { display: grid; }
+    .quote__actions a { width: 100%; }
+  }
+</style>
