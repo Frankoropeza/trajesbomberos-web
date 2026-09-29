@@ -20,7 +20,7 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Hero from '@components/Hero.astro';
 import PhotoBand from '@components/PhotoBand.astro';
-import SectionMenu from '@components/SectionMenu.astro';
+import QuickNav from '@components/home/QuickNav.astro';
 import SectionHeading from '@components/SectionHeading.astro';
 import SegmentCards from '@components/SegmentCards.astro';
 import SuitAnatomy from '@components/SuitAnatomy.astro';
@@ -328,7 +328,7 @@ const ultimosPosts = (await getPosts()).slice(0, 3);
 ---
 <BaseLayout pageType="home" path="/" faqs={faqs} directoryItems={directoryItems}>
   <Hero {...hero} solid />
-  <SectionMenu />
+  <QuickNav />
   <TrustBlock id="confianza" items={confianza} />
 
   <!-- 1 · Trajes: grid principal de categorías (TR-01…) -->

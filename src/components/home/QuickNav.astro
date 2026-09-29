@@ -1,0 +1,82 @@
+---
+// QuickNav · franja de botones bajo el hero de la home.
+// Una sola línea de botones de texto (sin iconos), repartidos a
+// partes iguales en el 100 % del ancho del contenedor. Solo enlaza
+// secciones que existen en build (getSeccion): nunca genera un href
+// a una página inexistente.
+import { getSeccion } from '@lib/catalogo/secciones';
+
+const DEFS: { label: string; href: string; seccion?: string }[] = [
+  { label: 'Trajes para bomberos', href: '/trajes/' },
+  { label: 'Cascos', href: '/cascos/', seccion: 'cascos' },
+  { label: 'Equipo de respiración', href: '/equipo-de-respiracion-autonoma/', seccion: 'equipo-de-respiracion-autonoma' },
+  { label: 'Botas', href: '/botas/', seccion: 'botas' },
+  { label: 'Guantes', href: '/guantes/', seccion: 'guantes' },
+  { label: 'Kits completos', href: '/kits/', seccion: 'kits' },
+  { label: 'Marcas', href: '/marcas/', seccion: 'marcas' },
+  { label: 'Guías técnicas', href: '/blog/' },
+];
+
+const items = DEFS.filter((d) => !d.seccion || getSeccion(d.seccion));
+---
+<nav class="quicknav" aria-label="Secciones principales">
+  <div class="container">
+    <ul class="quicknav__list" style={`--qn-cols:${items.length}`}>
+      {items.map((item) => (
+        <li><a class="quicknav__btn" href={item.href}>{item.label}</a></li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .quicknav {
+    background: var(--color-light);
+    border-bottom: var(--border);
+    padding-block: 1rem;
+  }
+  .quicknav__list {
+    display: grid;
+    grid-template-columns: repeat(var(--qn-cols), minmax(0, 1fr));
+    gap: 0.6rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .quicknav__list li { display: flex; }
+  .quicknav__btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.55rem 0.75rem;
+    background: var(--color-white);
+    color: var(--color-dark);
+    border: 1px solid rgb(20 22 26 / 0.18);
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.15s linear, color 0.15s linear, border-color 0.15s linear;
+  }
+  .quicknav__btn:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+  }
+  .quicknav__btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  @media (max-width: 1024px) {
+    .quicknav__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) {
+    .quicknav { padding-block: 0.75rem; }
+    .quicknav__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+    .quicknav__btn { min-height: 48px; font-size: 0.86rem; }
+  }
+</style>
