@@ -4628,6 +4628,44 @@
   "municipioSlug": "benito-juarez"
  },
  {
+  "id": "cdmx-26",
+  "nombre": "H. Cuerpo de Bomberos UNAM — Ciudad Universitaria",
+  "ciudad": "Ciudad de México",
+  "municipio": "Coyoacán",
+  "tipo": "Industrial",
+  "corporacion": "Bomberos UNAM (Departamento de Prevención y Combate de Siniestros)",
+  "rolEstacion": "unica",
+  "direccion": "Ciudad Universitaria, a un costado del Estadio Olímpico Universitario",
+  "coordenadas": {
+   "lat": 19.332,
+   "lng": -99.192,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "incendios-forestales",
+   "hazmat",
+   "fugas-gas",
+   "rescate-vehicular",
+   "capacitacion"
+  ],
+  "fuentes": [
+   {
+    "nombre": "Gaceta UNAM — Multidisciplinario, el cuerpo de bomberos de la UNAM",
+    "url": "https://www.gaceta.unam.mx/multidisciplinario-el-cuerpo-de-bomberos-de-la-unam/"
+   },
+   {
+    "nombre": "UNAM DGCS — Bomberos de la UNAM: amplia formación profesional para cumplir con su deber (Boletín 595, 2024)",
+    "url": "https://www.dgcs.unam.mx/boletin/bdboletin/2024_595.html"
+   }
+  ],
+  "slug": "h-cuerpo-de-bomberos-unam-ciudad-universitaria",
+  "estado": "ciudad-de-mexico",
+  "estadoNombre": "Ciudad de México",
+  "municipioSlug": "coyoacan",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
+ },
+ {
   "id": "cdmx-18",
   "nombre": "HCBCDMX — Estación Coyoacán",
   "slug": "hcbcdmx-estacion-coyoacan",
@@ -5154,6 +5192,44 @@
   "verificadoEl": "2026-09",
   "confianza": "media",
   "municipioSlug": "milpa-alta"
+ },
+ {
+  "id": "cdmx-25",
+  "nombre": "Estación de Bomberos de los Pueblos (Topilejo)",
+  "ciudad": "San Miguel Topilejo",
+  "municipio": "Tlalpan",
+  "tipo": "Estatal",
+  "corporacion": "HCBCDMX",
+  "rolEstacion": "subestacion",
+  "coordenadas": {
+   "lat": 19.2,
+   "lng": -99.143,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "rescate-vehicular",
+   "fugas-gas"
+  ],
+  "fuentes": [
+   {
+    "nombre": "Excélsior — Inauguran estación de bomberos en Tlalpan (28-jul-2026)",
+    "url": "https://www.excelsior.com.mx/ciudad-de-mexico/inauguran-estacion-bomberos-tlalpan-reducira-tiempos-respuesta-emergencias"
+   },
+   {
+    "nombre": "Eje Central — Jefe Vulcano y Gaby Osorio inauguran la Estación de Bomberos de los Pueblos en Topilejo",
+    "url": "https://www.ejecentral.com.mx/nuestro-eje/jefe-vulcano-y-gaby-osorio-inauguran-la-estacion-de-bomberos-de-los-pueblos-en-topilejo-con-inversion-de-30-mdp-para-instalaciones-y-equipamiento"
+   },
+   {
+    "nombre": "SDP Noticias — Tlalpan inaugura la Estación de Bomberos de los Pueblos en Topilejo",
+    "url": "https://www.sdpnoticias.com/estados/cdmx/tlalpan-inaugura-la-estacion-de-bomberos-de-los-pueblos-en-topilejo/"
+   }
+  ],
+  "slug": "estacion-de-bomberos-de-los-pueblos-topilejo",
+  "estado": "ciudad-de-mexico",
+  "estadoNombre": "Ciudad de México",
+  "municipioSlug": "tlalpan",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
  },
  {
   "id": "cdmx-07",
@@ -7881,6 +7957,33 @@
   "municipioSlug": "vicente-guerrero"
  },
  {
+  "id": "mex-62",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Acolman",
+  "ciudad": "Acolman",
+  "municipio": "Acolman",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Acolman",
+  "rolEstacion": "unica",
+  "direccion": "Calzada de los Agustinos No. 28",
+  "coordenadas": {
+   "lat": 19.636,
+   "lng": -98.91,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-acolman",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "acolman",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "mex-24",
   "nombre": "Coordinación Municipal de Protección Civil y Bomberos de Amecameca",
   "slug": "coordinacion-municipal-proteccion-civil-bomberos-amecameca",
@@ -8314,6 +8417,33 @@
   "municipioSlug": "coacalco-de-berriozabal"
  },
  {
+  "id": "mex-56",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Cuautitlán",
+  "ciudad": "Cuautitlán",
+  "municipio": "Cuautitlán",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Cuautitlán",
+  "rolEstacion": "unica",
+  "direccion": "Carretera Cuautitlán–Tlalnepantla km 31.5, Col. Loma Bonita",
+  "coordenadas": {
+   "lat": 19.671,
+   "lng": -99.181,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-cuautitlan",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "cuautitlan",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "mex-16",
   "nombre": "Coordinación Municipal de Protección Civil y Bomberos de Cuautitlán Izcalli",
   "slug": "coordinacion-municipal-proteccion-civil-bomberos-cuautitlan-izcalli",
@@ -8674,7 +8804,35 @@
   ],
   "verificadoEl": "2026-09",
   "confianza": "media",
-  "municipioSlug": "el-oro"
+  "municipioSlug": "el-oro",
+  "direccion": "Calle Santillán s/n"
+ },
+ {
+  "id": "mex-61",
+  "nombre": "Coordinación de Protección Civil, Bomberos y Servicios Pre Hospitalarios de Huehuetoca",
+  "ciudad": "Huehuetoca",
+  "municipio": "Huehuetoca",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil, Bomberos y Servicios Pre Hospitalarios de Huehuetoca",
+  "rolEstacion": "unica",
+  "direccion": "Av. Cuauhtémoc s/n, Fracc. El Laurel, Barrio La Cañada",
+  "coordenadas": {
+   "lat": 19.832,
+   "lng": -99.201,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-bomberos-y-servicios-pre-hospitalarios-de-huehuetoca",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "huehuetoca",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
  },
  {
   "id": "mex-22",
@@ -8759,7 +8917,8 @@
   ],
   "verificadoEl": "2026-06",
   "confianza": "alta",
-  "municipioSlug": "ixtapan-de-la-sal"
+  "municipioSlug": "ixtapan-de-la-sal",
+  "direccion": "Boulevard Ixtapan–Tonatico s/n"
  },
  {
   "id": "mex-39",
@@ -9232,6 +9391,33 @@
   "municipioSlug": "nezahualcoyotl"
  },
  {
+  "id": "mex-55",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Nicolás Romero",
+  "ciudad": "Ciudad Nicolás Romero",
+  "municipio": "Nicolás Romero",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Nicolás Romero",
+  "rolEstacion": "unica",
+  "direccion": "Boulevard Arturo Montiel km 10.7, Col. Santa Anita la Bolsa",
+  "coordenadas": {
+   "lat": 19.622,
+   "lng": -99.309,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-nicolas-romero",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "nicolas-romero",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "mex-40",
   "nombre": "Dirección Municipal de Protección Civil y Bomberos de San Felipe del Progreso",
   "slug": "direccion-municipal-proteccion-civil-bomberos-san-felipe-del-progreso",
@@ -9398,6 +9584,33 @@
   "municipioSlug": "tejupilco"
  },
  {
+  "id": "mex-60",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Temoaya",
+  "ciudad": "Temoaya",
+  "municipio": "Temoaya",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Temoaya",
+  "rolEstacion": "unica",
+  "direccion": "Avenida del Canal No. 199",
+  "coordenadas": {
+   "lat": 19.468,
+   "lng": -99.594,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-temoaya",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "temoaya",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "mex-37",
   "nombre": "Dirección de Protección Civil y Bomberos de Tenancingo",
   "slug": "direccion-proteccion-civil-bomberos-tenancingo",
@@ -9444,6 +9657,33 @@
   "verificadoEl": "2026-09",
   "confianza": "alta",
   "municipioSlug": "tenancingo"
+ },
+ {
+  "id": "mex-57",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Teoloyucan",
+  "ciudad": "Teoloyucan",
+  "municipio": "Teoloyucan",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Teoloyucan",
+  "rolEstacion": "unica",
+  "direccion": "Avenida Gran Canal s/n, Barrio Tlatilco",
+  "coordenadas": {
+   "lat": 19.746,
+   "lng": -99.181,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-teoloyucan",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "teoloyucan",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
  },
  {
   "id": "mex-32",
@@ -9546,6 +9786,33 @@
   "verificadoEl": "2026-09",
   "confianza": "alta",
   "municipioSlug": "texcoco"
+ },
+ {
+  "id": "mex-58",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Tianguistenco",
+  "ciudad": "Santiago Tianguistenco",
+  "municipio": "Tianguistenco",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Tianguistenco",
+  "rolEstacion": "unica",
+  "direccion": "Avenida Paseo de los Frailes No. 100",
+  "coordenadas": {
+   "lat": 19.181,
+   "lng": -99.466,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-tianguistenco",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "tianguistenco",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
  },
  {
   "id": "mex-15",
@@ -9988,6 +10255,33 @@
   "municipioSlug": "valle-de-chalco-solidaridad"
  },
  {
+  "id": "mex-59",
+  "nombre": "Coordinación de Protección Civil y Bomberos de Villa Victoria",
+  "ciudad": "Villa Victoria",
+  "municipio": "Villa Victoria",
+  "tipo": "Municipal",
+  "corporacion": "Coordinación de Protección Civil y Bomberos de Villa Victoria",
+  "rolEstacion": "unica",
+  "direccion": "Carretera Federal Toluca–Zitácuaro s/n",
+  "coordenadas": {
+   "lat": 19.444,
+   "lng": -100.003,
+   "precision": "aproximada"
+  },
+  "fuentes": [
+   {
+    "nombre": "Directorio de Unidades Municipales de Protección Civil (Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México, act. 21-may-2024)",
+    "url": "https://cgproteccioncivil.edomex.gob.mx/sites/cgproteccioncivil.edomex.gob.mx/files/files/que%20ofrecemos_pdf/Directorio_U_M_2024/D_U_M_21-05-2024.pdf"
+   }
+  ],
+  "slug": "coordinacion-de-proteccion-civil-y-bomberos-de-villa-victoria",
+  "estado": "estado-de-mexico",
+  "estadoNombre": "Estado de México",
+  "municipioSlug": "villa-victoria",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "mex-01",
   "nombre": "Coordinación General de Protección Civil y Gestión Integral del Riesgo del Estado de México",
   "slug": "coordinacion-general-proteccion-civil-gestion-integral-riesgo-estado-de-mexico",
@@ -10354,7 +10648,7 @@
   "tipo": "Municipal",
   "corporacion": "H. Cuerpo de Bomberos de Irapuato",
   "rolEstacion": "unica",
-  "direccion": "Blvd. Juan Jose Torres Landa 375, Col. Alvaro Obregón, C.P. 36530",
+  "direccion": "Calle Del Bosque s/n, Col. Morelos (a un costado del DIF Vasco de Quiroga)",
   "coordenadas": {
    "lat": 20.67494943,
    "lng": -101.35576173,
@@ -10452,6 +10746,41 @@
   "verificadoEl": "2026-09",
   "confianza": "media",
   "municipioSlug": "leon"
+ },
+ {
+  "id": "gto-20",
+  "nombre": "Bomberos León — Estación 5",
+  "ciudad": "León",
+  "municipio": "León",
+  "tipo": "Municipal",
+  "corporacion": "Heroico Cuerpo de Bomberos de León",
+  "rolEstacion": "subestacion",
+  "direccion": "Calle Encuartadores, Col. Ciudad Industrial",
+  "coordenadas": {
+   "lat": 21.083,
+   "lng": -101.649,
+   "precision": "aproximada"
+  },
+  "servicios": [
+   "incendios-estructurales",
+   "atencion-prehospitalaria"
+  ],
+  "fuentes": [
+   {
+    "nombre": "Municipio de León — Nueva estación de bomberos fortalece la seguridad de las familias leonesas (7-mar-2025)",
+    "url": "https://enterate.leon.gob.mx/nueva-estacion-de-bomberos-fortalece-la-seguridad-de-las-familias-leonesas/"
+   },
+   {
+    "nombre": "Es Lo Cotidiano — Rehabilita León la estación 3 de Bomberos (15-may-2025), párrafo sobre la estación 5",
+    "url": "https://www.eslocotidiano.com/articulo/leon/rehabilita-leon-estacion-3-bomberos/20250515202318085207.html"
+   }
+  ],
+  "slug": "bomberos-leon-estacion-5",
+  "estado": "guanajuato",
+  "estadoNombre": "Guanajuato",
+  "municipioSlug": "leon",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
  },
  {
   "id": "guan-16",
@@ -14674,7 +15003,7 @@
   "tipo": "Municipal",
   "corporacion": "Heroico Cuerpo de Bomberos de Zitácuaro",
   "rolEstacion": "unica",
-  "direccion": "Blvd. Revolucion Sur 64, Col. Matamoros, C.P. 61506",
+  "direccion": "Av. Revolución Sur 58",
   "coordenadas": {
    "lat": 19.43323801,
    "lng": -100.35805445,
@@ -21323,6 +21652,34 @@
   "municipioSlug": "hermosillo"
  },
  {
+  "id": "son-33",
+  "nombre": "Cuerpo de Bomberos de Huatabampo y Protección Civil",
+  "ciudad": "Huatabampo",
+  "municipio": "Huatabampo",
+  "tipo": "Municipal",
+  "corporacion": "Cuerpo de Bomberos de Huatabampo y Protección Civil",
+  "rolEstacion": "unica",
+  "direccion": "Calle Francisco I. Madero entre Mónico Valenzuela y Cruz de las Ánimas, Huatabampo, Sonora",
+  "coordenadas": {
+   "lat": 26.827,
+   "lng": -109.643,
+   "precision": "aproximada"
+  },
+  "sitioWeb": "https://huatabampo.gob.mx",
+  "fuentes": [
+   {
+    "nombre": "Municipio de Huatabampo — Director de Bomberos y Protección Civil",
+    "url": "https://huatabampo.gob.mx/director-de-bomberos-y-proteccion-civil/"
+   }
+  ],
+  "slug": "cuerpo-de-bomberos-de-huatabampo-y-proteccion-civil",
+  "estado": "sonora",
+  "estadoNombre": "Sonora",
+  "municipioSlug": "huatabampo",
+  "verificadoEl": "2026-09",
+  "confianza": "alta"
+ },
+ {
   "id": "son-31",
   "nombre": "Bomberos Navojoa — Estación Aviación",
   "slug": "bomberos-navojoa-estacion-aviacion",
@@ -21541,6 +21898,38 @@
   "verificadoEl": "2026-06-25",
   "confianza": "alta",
   "municipioSlug": "nogales"
+ },
+ {
+  "id": "son-32",
+  "nombre": "Estación Central de Bomberos de Puerto Peñasco",
+  "ciudad": "Puerto Peñasco",
+  "municipio": "Puerto Peñasco",
+  "tipo": "Municipal",
+  "corporacion": "Departamento de Bomberos y Protección Civil de Puerto Peñasco",
+  "rolEstacion": "central",
+  "coordenadas": {
+   "lat": 31.317,
+   "lng": -113.535,
+   "precision": "aproximada"
+  },
+  "telefono": "(638) 383-2828",
+  "sitioWeb": "https://puertopenasco.gob.mx",
+  "fuentes": [
+   {
+    "nombre": "Gobierno de Puerto Peñasco — Recibe alcalde dos unidades de emergencia para el Departamento de Bomberos y Protección Civil",
+    "url": "https://puertopenasco.gob.mx/recibe-alcalde-jorge-pivac-dos-unidades-de-emergencia-para-el-departamento-de-bomberos-y-proteccion-civil-que-fueron-adquiridas-con-las-aportaciones-que-hace-la-agencia-fiscal-por-tramites-de-expedici/"
+   },
+   {
+    "nombre": "Gobierno de Puerto Peñasco — Inspección y Vigilancia (pie de página, Emergencias)",
+    "url": "https://puertopenasco.gob.mx/inspeccion-y-vigilancia/"
+   }
+  ],
+  "slug": "estacion-central-de-bomberos-de-puerto-penasco",
+  "estado": "sonora",
+  "estadoNombre": "Sonora",
+  "municipioSlug": "puerto-penasco",
+  "verificadoEl": "2026-09",
+  "confianza": "media"
  },
  {
   "id": "son-18",
@@ -24123,7 +24512,8 @@
   ],
   "verificadoEl": "2026-06-25",
   "confianza": "alta",
-  "municipioSlug": "merida"
+  "municipioSlug": "merida",
+  "direccion": "Avenida Reforma, Calle 72 núm. 414 x 39 y 41, Sector Centro"
  },
  {
   "id": "yuc-03",
