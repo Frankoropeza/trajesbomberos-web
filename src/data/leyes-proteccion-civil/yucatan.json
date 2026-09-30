@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2024-03-15",
   "urlOficial": "https://www.congresoyucatan.gob.mx/storage/legislacion/leyes/49a8befe6fb099b82f98a9d3dc3d85b2_2024-05-07.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Yucatán",
+    "url": "https://www.yucatan.gob.mx/docs/regulaciones/9c7e1409.pdf",
+    "ultimaReforma": "2021-09-02"
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil (órgano desconcentrado de la Secretaría General de Gobierno)",
     "articulo": "Art. 18",
@@ -57,10 +61,10 @@
       "cita": "El personal que forme parte de las unidades internas de protección civil deberá estar capacitado y conocer el programa interno de protección civil así como las medidas internas en caso de emergencia o desastre"
     },
     {
-      "sujeto": "Organizadores de eventos de más de cien personas",
-      "obligacion": "Pedir autorización a la coordinación municipal para ferias, espectáculos o eventos con esa afluencia, en espacios públicos o privados.",
-      "articulo": "Art. 39",
-      "cita": "Los organizadores de ferias, de espectáculos o de eventos que tengan una afluencia mayor a cien personas y que se realicen en espacios públicos o privados, deberán solicitar a la coordinación municipal, la autorización correspondiente"
+      "sujeto": "Programas internos: plan operativo",
+      "obligacion": "Según el Reglamento, el plan operativo del programa interno incluye medidas y equipo de seguridad, capacitación de las brigadas y ejercicios y simulacros.",
+      "articulo": "Art. 45 del Reglamento",
+      "cita": "h) Medidas y equipo de seguridad. i) Equipos de identificación. j) Capacitación de los integrantes de las brigadas. k) Difusión y concientización. l) Ejercicio y simulacros."
     },
     {
       "sujeto": "Administradores o directivos del inmueble",
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Yucatán y dónde consulto el texto?",
-      "a": "Es la Ley de Protección Civil del Estado de Yucatán, expedida por el Decreto 525 y publicada el 20 de octubre de 2017 en el Diario Oficial del Gobierno del Estado. Su última modificación data del 15 de marzo de 2024. El Congreso del Estado ofrece el texto en PDF en su apartado de legislación."
+      "a": "Es la Ley de Protección Civil del Estado de Yucatán (Decreto 525, Diario Oficial del 20 de octubre de 2017), modificada por última vez el 15 de marzo de 2024; el Congreso ofrece el PDF en su apartado de legislación. Su Reglamento (Decreto 644/2018, reformado el 2 de septiembre de 2021) está en el portal de regulaciones del Gobierno del Estado."
     },
     {
       "q": "¿Quién debe tener programa interno de protección civil en Yucatán?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Congreso del Estado de Yucatán · Legislación, leyes estatales",
       "url": "https://www.congresoyucatan.gob.mx/legislacion/leyes"
+    },
+    {
+      "nombre": "Gobierno del Estado de Yucatán · Reglamento de la Ley de Protección Civil del Estado de Yucatán (PDF)",
+      "url": "https://www.yucatan.gob.mx/docs/regulaciones/9c7e1409.pdf"
     }
   ],
   "verificadoEl": "2026-09"

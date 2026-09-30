@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2023-04-28",
   "urlOficial": "https://www.congresocdmx.gob.mx/archivo-a062bdbea11155fbb5aad9cf49120bb7056af51c.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México",
+    "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/2025/181225/RGTO_LEY_DE_GESTION_INTEGRAL_DE_RIESGOS_Y_PROTECCION_CIVIL_6.pdf",
+    "ultimaReforma": "2025-10-10"
+  },
   "autoridadEstatal": {
     "nombre": "Secretaría de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México",
     "articulo": "Art. 14, fr. II a V",
@@ -45,28 +49,28 @@
       "cita": "Toda brigada de Protección Civil contemplada en los Programas Internos, deberá integrar un registro del número, ubicación y características de los grupos de atención prioritaria y de escasos recursos que habiten, laboren o estudien en los inmuebles respectivos."
     },
     {
-      "sujeto": "Personas obligadas a tener Programa Interno",
-      "obligacion": "Acompañar el programa con su Carta de Responsabilidad y la Carta de Corresponsabilidad del Responsable Oficial de Protección Civil.",
-      "articulo": "Art. 71",
-      "cita": "El Programa Interno deberá ir acompañado de una Carta de Responsabilidad firmada por la persona obligada, así como la Carta de Corresponsabilidad firmada por el Responsable Oficial de Protección Civil que haya intervenido o lo haya elaborado."
-    },
-    {
       "sujeto": "Organizadores privados de eventos de 500 o más",
       "obligacion": "Capturar el Programa Especial en la plataforma digital al menos diez días hábiles antes del evento.",
       "articulo": "Art. 73",
       "cita": "deberán ser capturados en la plataforma digital con un mínimo de 10 días hábiles de anticipación y registrados por la Alcaldía, previo a la celebración de dicha actividad, evento o espectáculo de afluencia masiva."
     },
     {
-      "sujeto": "Promotores de espectáculos de afluencia masiva",
-      "obligacion": "Informar al público, antes, durante y al final, las medidas de protección civil, salidas de emergencia y zonas de menor riesgo.",
-      "articulo": "Art. 92",
-      "cita": "Previo al inicio, en el intermedio y al final de la celebración de eventos, actividades o espectáculos públicos de afluencia masiva, las y los promotores, organizadores o responsables del mismo, deberán informar a las y los asistentes a través de avisos sonoros y visuales"
-    },
-    {
       "sujeto": "Brigadistas de protección civil",
       "obligacion": "Tomar cursos aprobados por la Secretaría: primeros auxilios, combate de incendios, comunicación y evacuación, en nivel básico a avanzado.",
       "articulo": "Art. 190",
       "cita": "Los cursos de capacitación para los Brigadistas de Protección Civil y los que integran los Grupos Voluntarios son obligatorios y requieren aprobación y registro de la Secretaría, mismos que se enlistan a continuación: I. Básico, intermedio y/o avanzado de primeros auxilios; II. Básico, intermedio y/o avanzado de prevención, combate y extinción de incendios;"
+    },
+    {
+      "sujeto": "Comités Internos de inmuebles con Programa Interno",
+      "obligacion": "Implementar las cuatro brigadas básicas: primeros auxilios, prevención y combate de incendios, comunicación, y evacuación y repliegue.",
+      "articulo": "Art. 49 del Reglamento",
+      "cita": "El Comité Interno de Protección Civil de cada establecimiento mercantil, industria o inmueble que esté obligado a contar con Programa Interno deberá implementar las cuatro brigadas básicas:"
+    },
+    {
+      "sujeto": "Personas brigadistas",
+      "obligacion": "Contar con una constancia de capacitación vigente; el reglamento le da vigencia de un año, por lo que debe renovarse anualmente.",
+      "articulo": "Art. 49 del Reglamento",
+      "cita": "Las personas brigadistas que las integran deberán contar con una constancia de capacitación, la cual tendrá una vigencia anual."
     }
   ],
   "brigadasDuo": [
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en la Ciudad de México y dónde consulto el texto?",
-      "a": "Es la Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México, publicada en la Gaceta Oficial el 5 de junio de 2019; su última reforma se publicó el 28 de abril de 2023. El texto vigente está en la sección de marco legal del Congreso de la Ciudad de México."
+      "a": "Es la Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México, publicada en la Gaceta Oficial el 5 de junio de 2019 y reformada por última vez el 28 de abril de 2023; está en el marco legal del Congreso. Su reglamento, con reforma del 10 de octubre de 2025, se consulta en el portal de la Consejería Jurídica."
     },
     {
       "q": "¿Quién debe tener Programa Interno en la Ciudad de México?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Congreso de la Ciudad de México · Marco legal, leyes de la Ciudad de México",
       "url": "https://www.congresocdmx.gob.mx/marco-legal-cdmx-107-2.html"
+    },
+    {
+      "nombre": "Consejería Jurídica y de Servicios Legales de la Ciudad de México · Reglamento de la Ley de Gestión Integral de Riesgos y Protección Civil de la Ciudad de México (PDF)",
+      "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/2025/181225/RGTO_LEY_DE_GESTION_INTEGRAL_DE_RIESGOS_Y_PROTECCION_CIVIL_6.pdf"
     }
   ],
   "verificadoEl": "2026-09"

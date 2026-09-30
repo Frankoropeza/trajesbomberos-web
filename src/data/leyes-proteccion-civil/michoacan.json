@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2025-09-02",
   "urlOficial": "https://so.secoem.michoacan.gob.mx/wp-content/uploads/2026/01/Ley-de-Proteccion-Civil-del-Estado-de-Michoacan-de-Ocampo.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Michoacán de Ocampo",
+    "url": "https://pcivil.michoacan.gob.mx/wp-content/uploads/2026/05/reglamento_de_la_ley_proteccion_civil_michoacan_2026.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil (Secretaría de Gobierno)",
     "articulo": "Art. 30",
@@ -45,33 +49,33 @@
       "cita": "deberán cumplir con las medidas mínimas de Protección Civil y seguridad que señale el Reglamento de esta Ley, las normas oficiales mexicanas y las de la normatividad municipal, tales como: señalización informativa, preventiva y restrictiva, salida de emergencia, extintor contra fuego"
     },
     {
-      "sujeto": "Manejo de materiales peligrosos o inflamables",
-      "obligacion": "Presentar ante la autoridad estatal y municipal los Programas Internos que correspondan a su actividad.",
-      "articulo": "Art. 118",
-      "cita": "cuya actividad sea el manejo, almacenamiento, distribución, transporte, adquisición y/o utilización de materiales peligrosos, hidrocarburos, explosivos, inflamables, corrosivos, reactivos, tóxicos, biológico infecciosos o cualquier otra sustancia equivalente, dentro del territorio del Estado, deberán presentar ante la autoridad estatal y municipal competente, los Programas Internos de Protección Civil que correspondan."
-    },
-    {
       "sujeto": "Organizadores de eventos masivos",
       "obligacion": "Entregar un Programa Especial para aprobación y difundir al público sus medidas antes o al inicio del evento.",
       "articulo": "Art. 110 Bis",
       "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse Programas Especiales de Protección Civil, los cuales serán entregados oportunamente a las autoridades de Protección Civil para su aprobación y coordinación con otras instancias de seguridad."
     },
     {
-      "sujeto": "Locales cerrados de entretenimiento o servicios",
-      "obligacion": "No realizar actos que pongan en peligro a los asistentes, en especial con pirotecnia o fuego.",
-      "articulo": "Art. 110 Ter",
-      "cita": "destinados a la prestación de servicios o a la realización de actividades de entretenimiento, esparcimiento o de cualquier índole similar, quedará estrictamente prohibida la ejecución de actos que pongan en peligro a los asistentes, especialmente los que impliquen uso de pirotecnia o fuego."
-    },
-    {
       "sujeto": "Consultores, capacitadores y asesores",
       "obligacion": "Obtener de la Coordinación Estatal la autorización que los faculte antes de asesorar, capacitar o elaborar programas internos.",
       "articulo": "Art. 14",
       "cita": "Para que los particulares o las dependencias públicas puedan ejercer la actividad de asesoría, capacitación, evaluación, elaboración de programas internos, de continuidad de operaciones, estudios de vulnerabilidad y riesgos en materia de Protección Civil, deberán contar con el registro que los faculte, expedido por la Coordinación Estatal"
+    },
+    {
+      "sujeto": "Inmuebles con concentración de personas",
+      "obligacion": "Realizar al menos dos simulacros al año según sus riesgos específicos, documentarlos e informar a la coordinación de protección civil que corresponda.",
+      "articulo": "Art. 217 del Reglamento",
+      "cita": "Los administradores, gerentes, propietarios, arrendatarios, poseedores o encargados de inmuebles de uso público, privado, comercial, industrial, de servicios o de cualquier otro tipo de concentración de personas, están obligados a realizar simulacros para la atención de emergencias al menos dos veces al año"
+    },
+    {
+      "sujeto": "Unidades internas de protección civil",
+      "obligacion": "Establecer un programa de capacitación continua, teórica y práctica, para el personal del Programa Interno y comprobar lo aprendido.",
+      "articulo": "Art. 82 del Reglamento",
+      "cita": "Cada Unidad Interna de Protección Civil deberá establecer un programa de capacitación que asegure la formación continua, tanto teórica como práctica, del personal asignado al PIPC"
     }
   ],
   "brigadasDuo": [
     "El eje en Michoacán es la Unidad Interna de Protección Civil, la estructura que cada sujeto obligado crea para elaborar, actualizar y operar su Programa Interno (Art. 61). Si el negocio recibe en promedio más de 50 personas, debe integrarla con personal capacitado que labore ahí; de lo contrario, la licencia de funcionamiento no se expide o puede revocarse (Art. 117).",
-    "La ley no fija cuántos simulacros debe hacer una empresa: encarga a la Coordinación Estatal y a las municipales realizar simulacros preventivos para capacitar a la población (Arts. 30 y 43). Quien preste servicios de integración de brigadas, combate a incendios o primeros auxilios requiere acreditación de la Coordinación Estatal (Art. 34); sin ella, esos servicios quedan prohibidos."
+    "El reglamento publicado en 2026 precisa lo que la ley dejaba abierto: los inmuebles con concentración de personas deben realizar al menos dos simulacros al año, planearlos según sus riesgos y documentarlos (Art. 217 del Reglamento), y cada Unidad Interna debe sostener un programa de capacitación teórica y práctica (Art. 82). Integrar brigadas como servicio externo exige acreditación estatal (Art. 34 de la ley)."
   ],
   "equipoDuo": [
     "Para inmuebles pequeños, la ley michoacana baja a lo concreto: señalización, salida de emergencia, extintor, cinta antiderrapante en escaleras, botiquín y un empleado capacitado (Art. 117). También regula a los Bomberos del Estado, que atienden incendios industriales, fugas y rescates (Art. 81 Quater). La NOM-002-STPS-2010, norma federal, completa los criterios contra incendio en centros de trabajo.",
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Michoacán y dónde consulto el texto?",
-      "a": "Es la Ley de Protección Civil del Estado de Michoacán de Ocampo, publicada el 25 de noviembre de 2014, con última reforma del 2 de septiembre de 2025. La versión que integra esa reforma la difunde el Gobierno del Estado; la compilación del Congreso llega a la reforma de 2023."
+      "a": "Es la Ley de Protección Civil del Estado de Michoacán de Ocampo, publicada el 25 de noviembre de 2014, con última reforma del 2 de septiembre de 2025; la versión con esa reforma la difunde el Gobierno del Estado. Su reglamento vigente salió en el Periódico Oficial del 27 de marzo de 2026 y se descarga en el sitio de la Coordinación Estatal de Protección Civil."
     },
     {
       "q": "¿Quién está obligado a tener Programa Interno en Michoacán?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Congreso del Estado de Michoacán · Ley de Protección Civil, compilación con reforma de 2023 (PDF)",
       "url": "http://congresomich.gob.mx/file/LEY-DE-PROTECCI%C3%93N-CIVIL-DEL-ESTADO-13-JUNIO-DE-2023.pdf"
+    },
+    {
+      "nombre": "Coordinación Estatal de Protección Civil de Michoacán · Reglamento de la Ley de Protección Civil, Periódico Oficial del 27 de marzo de 2026 (PDF)",
+      "url": "https://pcivil.michoacan.gob.mx/wp-content/uploads/2026/05/reglamento_de_la_ley_proteccion_civil_michoacan_2026.pdf"
     }
   ],
   "verificadoEl": "2026-09"

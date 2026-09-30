@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2025-10-15",
   "urlOficial": "https://www.legisver.gob.mx/leyes/LeyesPDF/LEY_DE_PROTECCION_CIVIL_Y_LA_REDUCCION_DE_RIESGOS_DE_DESASTRES_15-10-2025.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil y la Reducción del Riesgo de Desastres para el Estado de Veracruz de Ignacio de la Llave",
+    "url": "https://www.veracruz.gob.mx/proteccioncivil/wp-content/uploads/sites/5/2024/05/Gac2014-044-Jueves-30-Ext-Reglamento-de-la-Ley-Numero-856.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Secretaría de Protección Civil del Gobierno del Estado",
     "articulo": "Art. 6",
@@ -51,16 +55,16 @@
       "cita": "Los administradores, gerentes, propietarios, arrendatarios o poseedores de inmuebles están obligados a realizar simulacros para atención de emergencias por lo menos una vez al año, debiendo informarlo a las autoridades de protección civil."
     },
     {
-      "sujeto": "Sujetos obligados del artículo 82",
-      "obligacion": "Mantener un seguro vigente que cubra los daños que su actividad cause a terceros, al medio ambiente, a vialidades y a servicios estratégicos.",
-      "articulo": "Art. 73",
-      "cita": "Los sujetos obligados a los que se refiere el artículo 82 de esta Ley deberán contar con un seguro vigente que ampare los daños que su actividad ocasione a terceros en sus bienes y personas, medio ambiente, vías de comunicación urbana y servicios estratégicos"
+      "sujeto": "Unidades internas de protección civil",
+      "obligacion": "Según el Reglamento, la unidad interna realiza simulacros al menos cada seis meses y procura la participación del personal y de las autoridades.",
+      "articulo": "Art. 31 del Reglamento",
+      "cita": "Llevar a cabo la realización de simulacros por lo menos cada seis meses; y asegurar el interés y la participación del personal y de las autoridades en los mismos."
     },
     {
-      "sujeto": "Organizadores de ferias, espectáculos y eventos masivos",
-      "obligacion": "Antes de la licencia, presentar un programa específico y pedir a la Secretaría o a la Unidad Municipal que verifique instalaciones y sistemas de seguridad.",
-      "articulo": "Art. 74",
-      "cita": "De manera previa a la autorización de licencia para la realización de ferias, espectáculos y eventos de concentración masiva de personas, los organizadores deberán presentar un programa específico y solicitar a la Secretaría o a la Unidad Municipal que corresponda la verificación de sus instalaciones y sistemas de seguridad."
+      "sujeto": "Unidades internas: organización de brigadas",
+      "obligacion": "La unidad interna se estructura con jefe de inmueble, jefes de piso y brigadistas, y forma brigadas de incendios, primeros auxilios, evacuación y rescate.",
+      "articulo": "Art. 31 del Reglamento",
+      "cita": "IV. Organización de brigadas: a). Prevención y combate de incendios; b). Primeros auxilios; c). Evacuación de inmuebles, y d). Búsqueda, rescate y salvamento, entre otras."
     },
     {
       "sujeto": "Establecimientos e inmuebles en general",
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Veracruz y dónde la consulto?",
-      "a": "Es la Ley Número 856 de Protección Civil y la Reducción del Riesgo de Desastres para el Estado de Veracruz de Ignacio de la Llave, publicada el 1 de agosto de 2013. El texto vigente, con decreto del 15 de octubre de 2025, se descarga en la sección de leyes del sitio de la Legislatura."
+      "a": "Es la Ley Número 856 de Protección Civil y la Reducción del Riesgo de Desastres para el Estado de Veracruz de Ignacio de la Llave, publicada el 1 de agosto de 2013; el texto vigente, con decreto del 15 de octubre de 2025, está en el sitio de la Legislatura. Su Reglamento (Gaceta Oficial del 30 de enero de 2014) se descarga en el portal de la Secretaría de Protección Civil."
     },
     {
       "q": "¿Quién debe tener Unidad Interna y Programa Interno en Veracruz?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Congreso del Estado de Veracruz · Leyes estatales vigentes",
       "url": "https://www.legisver.gob.mx/Inicio.php?p=le"
+    },
+    {
+      "nombre": "Secretaría de Protección Civil de Veracruz · Reglamento de la Ley 856, Gaceta Oficial Núm. Ext. 044 (PDF)",
+      "url": "https://www.veracruz.gob.mx/proteccioncivil/wp-content/uploads/sites/5/2024/05/Gac2014-044-Jueves-30-Ext-Reglamento-de-la-Ley-Numero-856.pdf"
     }
   ],
   "verificadoEl": "2026-09"

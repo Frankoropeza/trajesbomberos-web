@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2020-12-24",
   "urlOficial": "https://gestion.api.congresoson.gob.mx/assets/archivos/2024/08/T9Qos5asmWuWX6TIPxCtzZZhI4kKGq7.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Sonora",
+    "url": "https://proteccioncivil.sonora.gob.mx/images/2020CCV44I-1-41.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil",
     "articulo": "Art. 22",
@@ -31,12 +35,6 @@
       "obligacion": "Presentar ante la Coordinación Estatal su Programa Interno y la integración de su Unidad Interna.",
       "articulo": "Art. 65",
       "cita": "Las personas físicas, morales, dependencias de la administración pública estatal y municipal que por sus actividades o excepcionalmente manejen, almacenen, transporten, distribuyan y utilicen materiales peligrosos, hidrocarburos, combustibles y explosivos en la entidad, deberán de presentar ante la Coordinación Estatal el correspondiente Programa Interno de Protección Civil"
-    },
-    {
-      "sujeto": "Inmuebles posiblemente dañados por un fenómeno",
-      "obligacion": "Entregar un dictamen técnico o peritaje estructural cuando la autoridad considere que la estructura pudo verse afectada.",
-      "articulo": "Art. 65",
-      "cita": "están obligadas a presentar un dictamen técnico o peritaje estructural, cuando a consideración de las autoridades en materia de protección civil, se podrían haber afectado o dañado las condiciones estructurales de los establecimientos, edificaciones, inmuebles y sistemas de transporte por ductos"
     },
     {
       "sujeto": "Sujetos obligados a Programa Interno",
@@ -63,10 +61,16 @@
       "cita": "Las autoridades municipales competentes no podrán expedir la licencia de construcción sin que los solicitantes acrediten la autorización a que se refiere el primer párrafo de este artículo."
     },
     {
-      "sujeto": "Empresas de servicios en protección civil",
-      "obligacion": "Estar dadas de alta ante la Coordinación Estatal para prestar servicios como capacitación o elaboración de programas.",
-      "articulo": "Art. 72",
-      "cita": "Las empresas especializadas dedicadas a la prestación de servicios en materia de protección civil señalados en los numerales del uno al catorce, de la fracción XVIII del artículo 24 de esta Ley, deberán estar registradas ante la Coordinación Estatal de Protección Civil."
+      "sujeto": "Responsables de inmuebles del Art. 65 de la Ley",
+      "obligacion": "Apoyar a la Unidad Interna en la formación, organización, capacitación y equipamiento de las brigadas de emergencia y en la realización de simulacros.",
+      "articulo": "Art. 50, fr. II del Reglamento",
+      "cita": "Apoyar, en su caso, a la Unidad Interna de Protección Civil para la formación, organización, capacitación y equipamiento de las brigadas de emergencia, así como en la realización de simulacros"
+    },
+    {
+      "sujeto": "Empresas que capacitan a trabajadores y brigadistas",
+      "obligacion": "Cubrir como mínimo inducción a la protección civil, primeros auxilios y RCP, combate de incendios, evacuación y señalética, y búsqueda y rescate.",
+      "articulo": "Art. 99 del Reglamento",
+      "cita": "Las capacitaciones en materia de Protección Civil comprenderán por lo menos los siguientes temas: Inducción a la Protección Civil; primeros auxilios y reanimación cardiopulmonar (RCP); prevención y combate de incendios; evacuación de inmuebles y señalética; búsqueda y rescate"
     }
   ],
   "brigadasDuo": [
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Sonora y dónde consulto el texto?",
-      "a": "Es la Ley 282, Ley de Protección Civil para el Estado de Sonora, publicada el 11 de junio de 2018 en el Boletín Oficial del Gobierno del Estado. Su apéndice registra como última reforma el decreto publicado el 24 de diciembre de 2020. El PDF está en el portal de leyes del Congreso del Estado."
+      "a": "Es la Ley 282, Ley de Protección Civil para el Estado de Sonora, publicada el 11 de junio de 2018 en el Boletín Oficial; su última reforma se publicó el 24 de diciembre de 2020. El PDF está en el portal de leyes del Congreso, y su Reglamento, publicado en el Boletín Oficial del 1 de junio de 2020, en el sitio de la Coordinación Estatal de Protección Civil."
     },
     {
       "q": "¿Qué negocios de Sonora deben tener Unidad Interna y Programa Interno?",
@@ -114,6 +118,10 @@
     {
       "nombre": "Congreso del Estado de Sonora · Leyes estatales",
       "url": "https://congresoson.gob.mx/leyes"
+    },
+    {
+      "nombre": "Coordinación Estatal de Protección Civil de Sonora · Reglamento de la Ley de Protección Civil para el Estado de Sonora (PDF)",
+      "url": "https://proteccioncivil.sonora.gob.mx/images/2020CCV44I-1-41.pdf"
     }
   ],
   "verificadoEl": "2026-09"

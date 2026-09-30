@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2024-04-05",
   "urlOficial": "https://legislacion.edomex.gob.mx/sites/legislacion.edomex.gob.mx/files/files/pdf/cod/vig/codvig008.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento del Libro Sexto del Código Administrativo del Estado de México",
+    "url": "https://legislacion.edomex.gob.mx/sites/legislacion.edomex.gob.mx/files/files/pdf/rgl/vig/rglvig045.pdf",
+    "ultimaReforma": "2023-09-11"
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación General de Protección Civil y Gestión Integral del Riesgo (Secretaría General de Gobierno)",
     "articulo": "Art. 6.4",
@@ -51,16 +55,22 @@
       "cita": "Una vez concluidas las construcciones derivadas del uso del suelo a que se refiere el párrafo anterior, para el inicio de las operaciones se requerirá la autorización de la Secretaría General de Gobierno a través de la Coordinación General de Protección Civil y Gestión Integral del Riesgo."
     },
     {
-      "sujeto": "Actividades que pueden generar fenómenos perturbadores",
-      "obligacion": "Tramitar la autorización de protección civil estatal; el reglamento del Libro precisa qué actividades la requieren.",
-      "articulo": "Art. 6.25",
-      "cita": "Requieren autorización de protección civil de la Secretaría General de Gobierno las actividades que pudieran generar fenómenos perturbadores, quien la emitirá a través de la Coordinación General de Protección Civil y Gestión Integral del Riesgo."
-    },
-    {
       "sujeto": "Establecimientos de bajo riesgo",
       "obligacion": "Obtener el dictamen de protección civil del municipio, incluidos los comercios que venden bebidas alcohólicas.",
       "articulo": "Art. 6.25 Bis",
       "cita": "Corresponde a los Municipios emitir dictamen de protección civil de bajo riesgo, incluyendo a los establecimientos mercantiles que vendan bebidas alcohólicas para su consumo, en envase cerrado o al copeo."
+    },
+    {
+      "sujeto": "Generadores de mediano y alto riesgo abiertos al público",
+      "obligacion": "Coordinar con la Coordinación General al menos dos simulacros al año; los establecimientos de bajo riesgo los coordinan con la autoridad municipal.",
+      "articulo": "Art. 37 del Reglamento",
+      "cita": "deberán coordinarse con la Coordinación General, para realizar simulacros por lo menos dos veces al año, tratándose de generadores de alto y mediano riesgo, y en los casos de bajo riesgo, con la autoridad municipal en la materia"
+    },
+    {
+      "sujeto": "Inmuebles ocupados por varias dependencias o empresas",
+      "obligacion": "Constituir una sola unidad interna de protección civil para todo el inmueble, responsable de ejecutar el programa interno o específico.",
+      "articulo": "Art. 28 del Reglamento",
+      "cita": "En los inmuebles ocupados por varias dependencias y empresas, se deberá constituir una sola unidad interna de protección civil, que será la responsable de ejecutar las acciones contenidas en los programas específicos o internos de protección civil"
     }
   ],
   "brigadasDuo": [
@@ -77,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la norma de protección civil vigente en el Estado de México y dónde se consulta?",
-      "a": "No hay ley autónoma: rige el Libro Sexto del Código Administrativo del Estado de México, publicado en la Gaceta del Gobierno el 13 de diciembre de 2001. Su última modificación anotada es del 5 de abril de 2024; el Código completo se reformó por última vez el 25 de septiembre de 2026. El texto está en el portal Legistel del gobierno estatal."
+      "a": "No hay ley autónoma: rige el Libro Sexto del Código Administrativo del Estado de México (Gaceta del Gobierno, 13 de diciembre de 2001; última modificación anotada, 5 de abril de 2024). Lo desarrolla el Reglamento del Libro Sexto (Gaceta del 8 de enero de 2016, reformado el 11 de septiembre de 2023). Ambos están en el portal Legistel."
     },
     {
       "q": "¿Quién debe tener unidad interna y programa de protección civil?",
@@ -104,6 +114,14 @@
     {
       "nombre": "Legistel · Códigos vigentes del Estado de México",
       "url": "https://legislacion.edomex.gob.mx/codigos/vigentes"
+    },
+    {
+      "nombre": "Legistel · Reglamento del Libro Sexto del Código Administrativo del Estado de México (PDF)",
+      "url": "https://legislacion.edomex.gob.mx/sites/legislacion.edomex.gob.mx/files/files/pdf/rgl/vig/rglvig045.pdf"
+    },
+    {
+      "nombre": "Coordinación General de Protección Civil y Gestión Integral del Riesgo · Marco jurídico",
+      "url": "https://cgproteccioncivil.edomex.gob.mx/marco_juridico"
     }
   ],
   "verificadoEl": "2026-09"
