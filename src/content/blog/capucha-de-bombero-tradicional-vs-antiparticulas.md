@@ -61,7 +61,7 @@ La [Sköld FPEN](/capuchas/skold-fpen/) declara 100 % Nomex, dos capas en cabeza
 
 FPEN es tamaño universal y declara cabeza de 13 pulgadas, babero de cuatro pulgadas y total de 17 pulgadas. Sus costuras usan hilo 100 % Nomex. Elástico, abertura y babero se revisan con máscara de ERA y casco: el material debe quedar extendido en hombros, sin dejar canal hacia el cuello ni comprimir el sello facial. La talla universal describe una opción de catálogo; no elimina la comprobación individual de giro de cabeza, mirada hacia arriba, hombros y cierre de chaquetón.
 
-El fabricante declara TPP de 30.2 cal/cm², ATPV de 6.3 cal/cm² para una capa HRC 1 y 11.2 cal/cm² para dos capas HRC 2, resistencia al rasgado de 865 N, ruptura de costura de 1110 N y contracción de 0 % tras cinco lavadas. También declara referencias de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269. Se conservan como declaraciones del fabricante y se solicitan con la cotización; no sustituyen la confirmación de conformidad de la configuración que se entrega.
+El fabricante declara TPP de 30.2 cal/cm², ATPV de 6.3 cal/cm² para una capa HRC 1 y 11.2 cal/cm² para dos capas HRC 2. También publica resistencia al rasgado de 865 N, ruptura de costura de 1110 N y contracción de 0 % tras cinco lavadas. También declara referencias de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269. Se conservan como declaraciones del fabricante y se solicitan con la cotización; no sustituyen la confirmación de conformidad de la configuración que se entrega.
 
 ## Lavado después de exposición
 

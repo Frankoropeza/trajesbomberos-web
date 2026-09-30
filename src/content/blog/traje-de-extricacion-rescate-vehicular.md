@@ -94,7 +94,7 @@ Forma el inventario por función y persona: conjunto o piezas asignadas, tallas,
 
 ## Prueba de movilidad y recepción
 
-Antes de asignar la dotación, úsala sobre el uniforme de estación y ensaya arrodillarse, pasar de pie a posición baja, entrar y salir de un espacio simulado, girar torso, tomar herramienta, manipular radio y caminar con bota. Observa que guante y puño no se separen, que la rodilla no limite y que casco y goggles conserven visión. La prueba no es una demostración estética: detecta talla corta, cierre que no funciona con guantes o equipo que se engancha antes de una salida.
+Antes de asignar la dotación, úsala sobre el uniforme de estación. Ensaya arrodillarse, pasar de pie a posición baja, entrar y salir de un espacio simulado, girar torso, tomar herramienta, manipular radio y caminar con bota. Observa que guante y puño no se separen, que la rodilla no limite y que casco y goggles conserven visión. La prueba no es una demostración estética: detecta talla corta, cierre que no funciona con guantes o equipo que se engancha antes de una salida.
 
 En recepción coteja modelo, talla, tela, nivel o estatus documental declarado, accesorios y estado físico contra la orden. Registra quién recibe cada pieza y cuál es el protocolo para devolverla después de salida. Esa trazabilidad permite que el próximo reemplazo mantenga la configuración que ya fue ensayada y no reabra la selección completa por una sola prenda.
 

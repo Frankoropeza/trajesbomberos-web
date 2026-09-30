@@ -65,7 +65,7 @@ La [monja estructural](/trajes/estructural/monja/) y las [capuchas para bombero]
 
 No uses blanqueador ni suavizante: las fichas publicadas de prendas indican que deben evitarse. Tampoco sustituyas el método declarado por detergentes, quitamanchas, desengrasantes o mezclas domésticas sin autorización del fabricante. Un producto que elimina una marca puede afectar un material que no se aprecia a simple vista o dejar residuos que cambian la respuesta de una capa.
 
-Evita la secadora caliente y cualquier fuente de calor que no esté contemplada por la instrucción de cuidado. No lleves el traje a la lavadora doméstica junto con ropa personal: la práctica expone textiles y superficies ajenas a la operación y no da el control de carga, proceso y registro que requiere la prenda. El objetivo no es encontrar un atajo, sino conservar el conjunto y proteger a las personas que lo manipulan.
+Evita la secadora caliente y cualquier fuente de calor que no esté contemplada por la instrucción de cuidado. No lleves el traje a la lavadora doméstica junto con ropa personal. La práctica expone textiles y superficies ajenas a la operación y no da el control de carga, proceso y registro que requiere la prenda. El objetivo no es encontrar un atajo, sino conservar el conjunto y proteger a las personas que lo manipulan.
 
 | Práctica que se evita | Por qué | Qué hacer en su lugar |
 | --- | --- | --- |

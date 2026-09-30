@@ -120,7 +120,7 @@ Con la norma consolidada, la ficha técnica de un traje estructural debería tra
 
 ## Cómo lo resuelve LORICA
 
-En las fichas de LORICA cada modelo publica la norma tal como la declara el fabricante y su estatus: certificado con número, declarado o solo materiales. Seis de los siete modelos estructurales que publicamos declaran solo la NFPA 1971 edición 2018, y así lo verás escrito en las fichas de [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/); el [Romak Fire Maverick II](/trajes/estructural/modelos/romak-maverick-ii/) ya declara la NFPA 1970:2025 junto con la EN 469. Si tu pliego exige la edición 2025, te decimos qué modelos cumplen y cuáles no antes de cotizar.
+En las fichas de LORICA cada modelo publica la norma tal como la declara el fabricante y su estatus: certificado con número, declarado o solo materiales. Seis de los siete modelos estructurales que publicamos declaran solo la NFPA 1971 edición 2018, y así lo verás escrito en las fichas de [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/). En cambio, el [Romak Fire Maverick II](/trajes/estructural/modelos/romak-maverick-ii/) ya declara la NFPA 1970:2025 junto con la EN 469. Si tu pliego exige la edición 2025, te decimos qué modelos cumplen y cuáles no antes de cotizar.
 
 ## Qué revisar hoy en tu expediente
 

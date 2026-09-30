@@ -64,7 +64,7 @@ Esta es la carpeta que debería viajar con cualquier propuesta seria de trajes p
 
 Cinco reglas que hacen la diferencia entre un pliego que protege y uno que solo genera trabajo:
 
-**Especifica por desempeño, no por marca.** Salvo justificación documentada, un pliego que nombra una marca reduce la competencia y es impugnable. En vez de nombrar, describe: composite de tres capas con capa exterior, barrera de humedad y barrera térmica declaradas por nombre comercial, y valores mínimos de TPP y THL (35 y 205 como referencia) medidos sobre el composite completo.
+**Especifica por desempeño, no por marca.** Salvo justificación documentada, un pliego que nombra una marca reduce la competencia y es impugnable. En vez de nombrar, describe: composite de tres capas con capa exterior, barrera de humedad y barrera térmica declaradas por nombre comercial. Suma valores mínimos de TPP y THL (35 y 205 como referencia) medidos sobre el composite completo.
 
 **Cita la norma vigente y su edición.** Hoy la referencia para conjunto estructural es la **NFPA 1970**, que consolidó a la NFPA 1971. Escribe "edición vigente" para no tener que modificar el pliego cada revisión, y define explícitamente si aceptas equipo certificado bajo la edición anterior. Si no lo defines, lo vas a discutir en la junta de aclaraciones.
 

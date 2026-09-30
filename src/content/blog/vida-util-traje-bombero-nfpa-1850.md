@@ -33,7 +33,7 @@ imagenAlt: "Manos con guantes inspeccionando las costuras de un chaquetón estru
 
 Hay una pregunta que aparece siempre a la mitad de una cotización, casi como comentario al margen: *"¿y cada cuándo hay que cambiarlos?"*.
 
-La respuesta corta es diez años. La respuesta útil es más larga, y es la que decide si tu inversión te va a durar esos diez años o si a los cuatro vas a tener equipo que se ve bien y ya no protege.
+La respuesta corta es diez años. La respuesta útil es más larga. Es la que decide si tu inversión te va a durar esos diez años o si a los cuatro vas a tener equipo que se ve bien y ya no protege.
 
 ## De dónde sale la regla de los diez años
 
@@ -117,7 +117,7 @@ La lectura práctica: si hoy tu estación lava una vez al año, ya está por deb
 
 ## Cómo lo resuelve LORICA
 
-En cada cotización de LORICA la fecha de fabricación va por escrito, junto con el proceso de limpieza que indica el fabricante y la ficha técnica del modelo. Cuando un cuerpo de bomberos nos manda su inventario con fechas, le devolvemos el calendario de reposición por pieza: qué conjuntos cumplen diez años en el ejercicio, cuáles conviene inspeccionar primero y qué partidas se pueden comprar sueltas, como [chaquetón](/trajes/estructural/chaqueton/) o [pantalonera](/trajes/estructural/pantalonera/), sin reponer el conjunto completo.
+En cada cotización de LORICA la fecha de fabricación va por escrito, junto con el proceso de limpieza que indica el fabricante y la ficha técnica del modelo. Cuando un cuerpo de bomberos nos manda su inventario con fechas, le devolvemos el calendario de reposición por pieza. Marca qué conjuntos cumplen diez años en el ejercicio y cuáles conviene inspeccionar primero. También indica qué partidas se pueden comprar sueltas, como [chaquetón](/trajes/estructural/chaqueton/) o [pantalonera](/trajes/estructural/pantalonera/), sin reponer el conjunto completo.
 
 ## Preguntas frecuentes
 

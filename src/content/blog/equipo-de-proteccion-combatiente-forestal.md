@@ -67,13 +67,13 @@ El [Romak Fire Fire Ranger Explorer](/trajes/forestal/modelos/romak-fire-ranger-
 
 El [Fire Ranger Scout](/trajes/forestal/modelos/romak-fire-ranger-scout/) se publica como chaquetón amarillo y pantalón azul de dos piezas. La ficha menciona Nomex IIIA amarillo de 6 oz/yd² y también 100 % Nomex; incluye cinta 3M, bolsas parche, zipper YKK, cuello alto, puños de velcro y codos reforzados. El código no está publicado y material exacto se confirma al cotizar. Como Explorer, publica NFPA 1971:2018 con estatus declarado, no una certificación que se pueda trasladar a toda la familia.
 
-El [Romak BOMW1002](/trajes/forestal/modelos/romak-bomw1002/) es saco y pantalón. La ficha distingue BOMW1002 en Nomex IIIA de 6.0 oz y BOMW1002 FR en algodón 100 % ignífugo; señala saco con broche y solapa, porta radio, bolsas parche, cinta 3M y pantalón cargo con bolsas traseras. No declara norma ni certificación. La elección entre overol y dos piezas se toma por cobertura, velocidad de vestido y reposición: una rodilla o pantalón dañado puede sustituirse por pieza cuando la configuración lo permite.
+El [Romak BOMW1002](/trajes/forestal/modelos/romak-bomw1002/) es saco y pantalón. La ficha distingue BOMW1002 en Nomex IIIA de 6.0 oz y BOMW1002 FR en algodón 100 % ignífugo. Señala saco con broche y solapa, porta radio, bolsas parche, cinta 3M y pantalón cargo con bolsas traseras. No declara norma ni certificación. La elección entre overol y dos piezas se toma por cobertura, velocidad de vestido y reposición: una rodilla o pantalón dañado puede sustituirse por pieza cuando la configuración lo permite.
 
 ## Casco forestal y protección ocular
 
 El [Bullard Wildland FH911H](/cascos/bullard-fh911h/) declara carcasa de termoplástico Ultem, suspensión automática de seis puntos, clips de retención para goggles y bandas reflejantes, soportes para visera o pantalla facial y barbiquejo Nomex ajustable. Su código es FH911H y se publica en amarillo, rojo, blanco y negro. La ficha declara NFPA 1977 edición 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G con estatus declarado; reporta esas ediciones tal cual para contrastarlas con el requisito de la compra.
 
-El [ESS Striketeam XTO](/accesorios/ess-striketeam-xto/) integra acolchado facial de celda cerrada, correa envolvente con velcro, Speed-Clip para cascos forestales y de rescate, ventilación y filtración perimetral, además de lente intercambiable de policarbonato de 2.4 a 2.6 mm. El kit BLL1006, #740-0283, declara lente transparente y dos cubiertas desprendibles. Sus referencias NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA tienen estatus declarado para ese modelo; no se convierten en datos del casco o del resto del conjunto.
+El [ESS Striketeam XTO](/accesorios/ess-striketeam-xto/) integra acolchado facial de celda cerrada, correa envolvente con velcro, Speed-Clip para cascos forestales y de rescate, ventilación y filtración perimetral. Además trae lente intercambiable de policarbonato de 2.4 a 2.6 mm. El kit BLL1006, #740-0283, declara lente transparente y dos cubiertas desprendibles. Sus referencias NFPA 1500-2007, ANSI Z87.1-2010, CE EN 166 B y OSHA tienen estatus declarado para ese modelo; no se convierten en datos del casco o del resto del conjunto.
 
 Prueba FH911H y Striketeam juntos: mira arriba, abajo y lateralmente, agáchate y camina. El clip no debe desplazar el marco, la correa debe conservar tensión y la visión debe permitir seguir el terreno y a la cuadrilla. Goggles no sustituyen máscara de ERA ni autorizan entrar a una atmósfera que requiere protección respiratoria independiente.
 
@@ -103,7 +103,7 @@ Registra entrega por nombre, modelo, talla, accesorios y condición. Para brigad
 
 ## Traje forestal NFPA 1977: qué pide la referencia y cómo leer la ficha
 
-Buena parte de las requisiciones en México todavía piden «traje forestal NFPA 1977». La referencia sigue siendo útil, con un matiz: desde la edición 2025, **la NFPA 1977 quedó integrada en la NFPA 1950**, el documento de la NFPA para equipo de rescate técnico, operaciones médicas y combate de incendios forestales y de interfaz urbano-forestal. Un modelo puede seguir declarando la NFPA 1977 con la edición con la que se certificó o declaró; lo que importa es que la ficha diga cuál y con qué estatus.
+Buena parte de las requisiciones en México todavía piden «traje forestal NFPA 1977». La referencia sigue siendo útil, con un matiz: desde la edición 2025, **la NFPA 1977 quedó integrada en la NFPA 1950**. Esa norma reúne el equipo de rescate técnico, operaciones médicas y combate de incendios forestales y de interfaz urbano-forestal. Un modelo puede seguir declarando la NFPA 1977 con la edición con la que se certificó o declaró; lo que importa es que la ficha diga cuál y con qué estatus.
 
 | Pieza de la dotación | Qué se espera de ella | Qué revisar en la ficha | Ejemplo del catálogo |
 | --- | --- | --- | --- |

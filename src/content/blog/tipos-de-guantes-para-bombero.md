@@ -94,7 +94,7 @@ No dejes un par húmedo o contaminado dentro de una bolsa o compartimiento: la c
 
 Para [rescate y extricación](/guantes/guante-rescate-extricacion/) se valora destreza y protección específica de la maniobra; para [guante forestal](/guantes/guante-forestal/) se evalúa exterior, marcha y calor de línea. La guía de [traje de extricación](/blog/traje-de-extricacion-rescate-vehicular/) recuerda que cada operación cambia el conjunto.
 
-En extricación, una palma muy voluminosa puede impedir distinguir un control pequeño, liberar un conector o mantener sujeción con materiales propios de la escena; por eso se pide el modelo para esa maniobra, no un estructural “más resistente”. En trabajo forestal, ceniza, tierra, herramientas de línea y desplazamiento cambian dónde se desgasta el par y cómo se necesita mover los dedos. La [comparación de botas de bombero](/blog/botas-de-bombero-modelos-comparados/) sirve para revisar que guante, bota y ropa respondan a la misma operación exterior o estructural, sin transferir funciones entre familias.
+En extricación, una palma muy voluminosa puede impedir distinguir un control pequeño, liberar un conector o mantener sujeción con materiales propios de la escena. Por eso se pide el modelo para esa maniobra, no un estructural “más resistente”. En trabajo forestal, ceniza, tierra, herramientas de línea y desplazamiento cambian dónde se desgasta el par y cómo se necesita mover los dedos. La [comparación de botas de bombero](/blog/botas-de-bombero-modelos-comparados/) sirve para revisar que guante, bota y ropa respondan a la misma operación exterior o estructural, sin transferir funciones entre familias.
 
 ## Guantes químicos para hazmat y la comparativa completa
 

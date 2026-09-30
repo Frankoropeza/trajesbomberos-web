@@ -130,7 +130,7 @@ Y si la respuesta honesta resulta ser la más barata, en LORICA te la vamos a de
 
 ## Preguntas frecuentes
 
-**¿Cuál es la diferencia entre un traje estructural, uno forestal y uno de brigadista?** El escenario para el que están hechos. El estructural tiene tres capas y es para ataque interior en edificaciones; el forestal es de una sola capa ignífuga para jornadas largas en vegetación; el de brigadista cubre la primera respuesta en un centro de trabajo, sin ataque interior.
+**¿Cuál es la diferencia entre un traje estructural, uno forestal y uno de brigadista?** El escenario para el que están hechos. El estructural tiene tres capas y es para ataque interior en edificaciones. El forestal es de una sola capa ignífuga para jornadas largas en vegetación; el de brigadista cubre la primera respuesta en un centro de trabajo, sin ataque interior.
 
 **¿Puedo usar un traje estructural en un incendio forestal?** No es recomendable. Su composite de tres capas retiene el calor corporal y en una jornada de línea de fuego provoca estrés térmico. Para vegetación se usa ropa forestal de una capa bajo la referencia NFPA 1950, que absorbió a la antigua NFPA 1977.
 

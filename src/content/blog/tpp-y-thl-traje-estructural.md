@@ -38,7 +38,7 @@ Y porque hay una trampa: **el traje con el TPP más alto casi nunca es el mejor 
 
 **TPP** es *Thermal Protective Performance*: rendimiento de protección térmica.
 
-Se mide exponiendo una muestra del **composite completo** (las tres capas juntas, en el orden en que van en el traje) a una fuente combinada de calor por flama y por radiación, con un sensor detrás que simula la piel. El número que sale representa cuánta energía resiste el conjunto antes de que ocurra una quemadura de segundo grado.
+Se mide exponiendo una muestra del **composite completo** (las tres capas juntas, en el orden en que van en el traje) a una fuente combinada de calor por flama y por radiación. Detrás, un sensor simula la piel. El número que sale representa cuánta energía resiste el conjunto antes de que ocurra una quemadura de segundo grado.
 
 Traducido a operación: **cuántos segundos tienes antes de que el calor te alcance.** Más TPP, más margen.
 

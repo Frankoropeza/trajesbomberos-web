@@ -112,7 +112,7 @@ Para entender por qué la lista cambia tanto entre el nivel 2 y el 3, revisa la 
 
 **¿Cuál es el equipo indispensable de una brigada contra incendio?** Depende del nivel de actuación: identificación y casco para evacuación; traje de brigadista, casco con visor, capucha, guantes y botas para conato; conjunto estructural y equipo de respiración autónoma para intervención con ataque interior.
 
-**¿Qué dice la NOM-002-STPS-2010 sobre el equipo de los brigadistas?** Su numeral 5.9 obliga al patrón a dotar de equipo de protección personal a los integrantes de las brigadas contra incendio, considerando las funciones y riesgos a que estarán expuestos, conforme a la norma de equipo de protección personal de la STPS.
+**¿Qué dice la NOM-002-STPS-2010 sobre el equipo de los brigadistas?** Su numeral 5.9 obliga al patrón a dotar de equipo de protección personal a los integrantes de las brigadas contra incendio. Debe considerar las funciones y riesgos a que estarán expuestos, conforme a la norma de equipo de protección personal de la STPS.
 
 **¿Cada cuánto se revisa el equipo de la brigada?** Antes de cada simulacro y después de cada uso, además de la inspección periódica que marque el fabricante. Los simulacros son al menos uno al año con riesgo de incendio ordinario y dos con riesgo alto.
 
