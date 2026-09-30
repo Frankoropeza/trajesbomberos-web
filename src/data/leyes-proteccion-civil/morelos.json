@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2020-04-24",
   "urlOficial": "https://marcojuridico.morelos.gob.mx/documentos/2829/download",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley Estatal de Protección Civil",
+    "url": "https://marcojuridico.morelos.gob.mx/documentos/3069/download",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil Morelos",
     "articulo": "Art. 59",
@@ -45,10 +49,10 @@
       "cita": "Los establecimientos que realicen simulacros deberán presentar ante la Coordinación Estatal, dentro del primer trimestre del año fiscal, su programa de simulacros que incluya el escenario, guion y cronología, en su Programa Interno de Protección Civil."
     },
     {
-      "sujeto": "Discotecas, centros nocturnos y espectáculos",
-      "obligacion": "Construir con materiales que reduzcan el riesgo de incendio y contar con extintores, primeros auxilios, salidas y rutas de evacuación.",
-      "articulo": "Art. 90",
-      "cita": "Los lugares cerrados, destinados al esparcimiento, presentación de espectáculos, discotecas y los centros nocturnos deberán utilizar en su construcción materiales que disminuyan el riesgo de incendio, además de contar con extintores, servicios de primeros auxilios, salidas de emergencia, rutas de evacuación"
+      "sujeto": "Establecimientos sujetos a inspección",
+      "obligacion": "Tener equipo de protección personal, botiquines abastecidos y camilla rígida con inmovilización; su falta en una inspección es infracción.",
+      "articulo": "Art. 213, fr. X del Reglamento",
+      "cita": "Equipo de protección personal, cuya falta se detecte al momento de realizar una visita de inspección; XI. Botiquines de primeros auxilios suficientes y abastecidos, camilla rígida con equipo de inmovilización independientemente de que cuente con servicio médico fijo o móvil"
     },
     {
       "sujeto": "Empresas o establecimientos de riesgo alto",
@@ -57,10 +61,10 @@
       "cita": "solicitará a las empresas o establecimientos de riesgo alto, estudios y certificados que garanticen la salud cardiovascular de los Jefes de Brigadas, con el objetivo de desempeñar sus funciones de forma óptima"
     },
     {
-      "sujeto": "Establecimientos que cumplen la ley",
-      "obligacion": "Renovar cada año la licencia de protección civil, previa supervisión de la Coordinación Estatal.",
-      "articulo": "Art. 92",
-      "cita": "Los establecimientos que den cumplimiento a las disposiciones de la presente Ley y su Reglamento recibirán la licencia respectiva, la cual se renovará anualmente, previa supervisión de la Coordinación Estatal."
+      "sujeto": "Establecimientos con programa de simulacros",
+      "obligacion": "Calendarizar los seis simulacros anuales con intervalos de siete días a dos meses y cubrir todos los turnos de trabajo o de atención al público.",
+      "articulo": "Art. 46 del Reglamento",
+      "cita": "La programación de los seis simulacros que señala el artículo 81 de la Ley, se deberá calendarizar con una periodicidad no mayor de dos meses y no menor a siete días naturales, deberá de incluir en el transcurso del año fiscal en curso, a todos y cada uno de los turnos laborables o de atención al público"
     },
     {
       "sujeto": "Capacitadores en protección civil",
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Morelos y dónde consulto el texto?",
-      "a": "Es la Ley Estatal de Protección Civil de Morelos, publicada el 16 de enero de 2018 en el Periódico Oficial «Tierra y Libertad», con última reforma anotada del 24 de abril de 2020. El texto completo se descarga del Marco Jurídico Digital de la Consejería Jurídica del Estado."
+      "a": "Es la Ley Estatal de Protección Civil de Morelos, publicada el 16 de enero de 2018 en el Periódico Oficial «Tierra y Libertad», con última reforma anotada del 24 de abril de 2020. La ley y su Reglamento, publicado el 4 de marzo de 2020, se descargan completos del Marco Jurídico Digital de la Consejería Jurídica del Estado."
     },
     {
       "q": "¿Quién está obligado a tener Programa Interno de Protección Civil en Morelos?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Consejería Jurídica del Estado de Morelos · Marco Jurídico Digital, consulta del documento",
       "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=2829"
+    },
+    {
+      "nombre": "Consejería Jurídica del Estado de Morelos · Reglamento de la Ley Estatal de Protección Civil (PDF)",
+      "url": "https://marcojuridico.morelos.gob.mx/documentos/3069/download"
     }
   ],
   "verificadoEl": "2026-09"

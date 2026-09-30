@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2017-11-01",
   "urlOficial": "https://gaceta.congresosinaloa.gob.mx:3001/pdfs/leyes/Ley_72.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Sinaloa",
+    "url": "https://media.transparencia.sinaloa.gob.mx/uploads/files/29/13REGLAMENTODELALEYDEPROTECCIONCIVILDELESTADODESINALO.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Instituto Estatal de Protección Civil de Sinaloa",
     "articulo": "Art. 45",
@@ -31,12 +35,6 @@
       "obligacion": "Integrar un Comité de Seguridad y Emergencia Escolar y un programa interno escolar autorizado y revalidado por el Instituto.",
       "articulo": "Art. 88",
       "cita": "Las instituciones educativas públicas y privadas de todos los niveles, incluyendo las estancias infantiles de cualquier modalidad, deberán contar con un Comité de Seguridad y Emergencia Escolar y elaborar un Programa Interno de Seguridad y Emergencia Escolar que será autorizado, revalidado y supervisado por el Instituto."
-    },
-    {
-      "sujeto": "Hospitales, clínicas y sanatorios",
-      "obligacion": "Formar un Comité Hospitalario y elaborar un Plan Hospitalario para Emergencias y Desastres con revalidación anual.",
-      "articulo": "Art. 89",
-      "cita": "Los hospitales, clínicas y sanatorios deberán contar con un Comité Hospitalario para Emergencias y Desastres, que elaborará el Plan Hospitalario para Emergencias y Desastres, autorizado, supervisado y revalidado anualmente por el Instituto."
     },
     {
       "sujeto": "Propietarios y administradores de esos inmuebles",
@@ -63,10 +61,16 @@
       "cita": "Los inmuebles, establecimientos o edificaciones referidas en el artículo 130 de esta Ley, deberán contar con una póliza de seguro que ampare la responsabilidad civil y daños a terceros, por su actividad."
     },
     {
-      "sujeto": "Quienes construyan o remodelen inmuebles de riesgo",
-      "obligacion": "Presentar antes un diagnóstico de riesgo al Instituto o al ayuntamiento; sin esa autorización no se expide licencia de construcción.",
-      "articulo": "Art. 115",
-      "cita": "Las personas que pretendan construir, reconstruir, modificar o remodelar los establecimientos, edificaciones o inmuebles referidos en el artículo 89 de esta Ley, previamente deberán presentar un diagnóstico de riesgo en materia de protección civil al Instituto o al ayuntamiento"
+      "sujeto": "Comercios e industrias de bajo riesgo",
+      "obligacion": "Tener al menos un extintor ABC de 4.5 o 6 kg con mantenimiento vigente, instructivos de conducta a la vista y revisión anual de instalaciones.",
+      "articulo": "Art. 23 del Reglamento",
+      "cita": "Los establecimientos mercantiles e industriales no listados en el artículo anterior y que sean considerados de bajo riesgo, sólo deberán: I. Contar con un extintor tipo ABC de 4.5 o 6 kilogramos y respetar su vigencia de mantenimiento"
+    },
+    {
+      "sujeto": "Administradores, gerentes o propietarios de empresas",
+      "obligacion": "Capacitar a su personal en protección civil mediante programas de capacitación interna y las comisiones mixtas de seguridad e higiene.",
+      "articulo": "Art. 50 del Reglamento",
+      "cita": "Los administradores, gerentes o propietarios de empresas estarán obligados a capacitar y difundir la cultura de protección civil entre su personal para la salvaguarda de su integridad física, psicológica, así como de sus bienes y entorno"
     }
   ],
   "brigadasDuo": [
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Sinaloa y dónde consulto el texto?",
-      "a": "Es la Ley de Protección Civil para el Estado de Sinaloa, publicada el 25 de enero de 2013 en el Periódico Oficial «El Estado de Sinaloa». El texto vigente que compila el Congreso del Estado anota como última reforma la del 1 de noviembre de 2017 y se descarga desde su sección de leyes estatales."
+      "a": "Es la Ley de Protección Civil para el Estado de Sinaloa, publicada el 25 de enero de 2013 en el Periódico Oficial «El Estado de Sinaloa»; su última reforma anotada es del 1 de noviembre de 2017. El Reglamento vigente se publicó en 2005 bajo la ley anterior y, según el artículo tercero transitorio, sigue aplicándose en lo que no se oponga a la ley actual."
     },
     {
       "q": "¿Qué inmuebles de Sinaloa deben tener Unidad Interna y programa?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Congreso del Estado de Sinaloa · Leyes estatales",
       "url": "https://www.congresosinaloa.gob.mx/leyes-estatales/"
+    },
+    {
+      "nombre": "Gobierno del Estado de Sinaloa · Reglamento de la Ley de Protección Civil del Estado de Sinaloa (PDF, 2005)",
+      "url": "https://media.transparencia.sinaloa.gob.mx/uploads/files/29/13REGLAMENTODELALEYDEPROTECCIONCIVILDELESTADODESINALO.pdf"
     }
   ],
   "verificadoEl": "2026-09"

@@ -8,7 +8,11 @@
   },
   "ultimaReforma": null,
   "urlOficial": "https://congresodetlaxcala.gob.mx/archivo/leyes2020/pdf/68_Ley_de_protecci.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Tlaxcala",
+    "url": "https://cjuridica.tlaxcala.gob.mx/images/Reglamentos/Reglamentos/Reglamento%20de%20la%20Ley%20de%20Proteccion%20Civil%20para%20el%20Estado%20de%20Tlaxcala%2017.06.2002.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil (Secretaría de Gobierno)",
     "articulo": "Art. 12",
@@ -57,10 +61,16 @@
       "cita": "Asimismo como programar, en coordinación con las autoridades competentes, la práctica de simulacros de protección civil cuando menos dos veces al año."
     },
     {
-      "sujeto": "Consultoras y prestadores de servicios del ramo",
-      "obligacion": "Inscribirse ante la Coordinación Estatal antes de ofrecer servicios de protección civil; los peritajes requieren además autorización vigente.",
-      "articulo": "Art. 94",
-      "cita": "Las empresas, consultorías y personas físicas que se dediquen a prestar servicios en materia de protección civil, deberán obtener su registro ante la Coordinación Estatal."
+      "sujeto": "Establecimientos con programa interno",
+      "obligacion": "El Reglamento de 2002 pide que el programa interno incluya organización de brigadas, programa de capacitación, inventario de recursos y plan de simulacros.",
+      "articulo": "Art. 35 del Reglamento",
+      "cita": "VI.- Organización de brigadas y el papel de cada una de ellas; VII.- Programa de capacitación; VIII.- La capacidad de respuesta en función de los bienes y servicios con los que cuenten; IX.- Inventario de los recursos económicos, materiales y humanos disponibles; X.- Directorio de emergencia; XI.- Plan de realización de simulacros;"
+    },
+    {
+      "sujeto": "Establecimientos en general",
+      "obligacion": "Disponer de equipo contra incendio, sistema de alarma, salidas y escaleras de emergencia y señalización de rutas de evacuación, según el Reglamento.",
+      "articulo": "Art. 36 del Reglamento",
+      "cita": "Los establecimientos deberán disponer del equipamiento mínimo de prevención y auxilio, que se señala a continuación: I.- Equipo contra incendio; II.- Sistema de alarma; III.- Salidas, rampas y escaleras de emergencia; IV.- Señalamientos de rutas de evacuación por sismos e incendios;"
     }
   ],
   "brigadasDuo": [
@@ -77,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Tlaxcala y dónde consulto el texto?",
-      "a": "Es la Ley de Protección Civil para el Estado de Tlaxcala, expedida por Decreto 178 y publicada en el Periódico Oficial del Estado el 5 de julio de 2013. El Congreso la difunde como texto original, sin reformas anotadas, y puede consultarse en su portal de leyes."
+      "a": "Es la Ley de Protección Civil para el Estado de Tlaxcala (Decreto 178, Periódico Oficial del 5 de julio de 2013), que el Congreso difunde en su portal de leyes. Mientras no se emita un reglamento nuevo, su artículo quinto transitorio mantiene aplicables las disposiciones reglamentarias previas, como el Reglamento de 2002 que publica la Consejería Jurídica del Ejecutivo."
     },
     {
       "q": "¿Quién debe tener programa interno en Tlaxcala?",
@@ -108,6 +118,10 @@
     {
       "nombre": "Consejería Jurídica del Ejecutivo de Tlaxcala · Ley de Protección Civil para el Estado de Tlaxcala (PDF)",
       "url": "https://cjuridica.tlaxcala.gob.mx/images/leyes/Leyes%20Estatales/Ley%20de%20Proteccion%20Civil%20para%20el%20Estado%20de%20Tlaxcala%2005-07-2013.pdf"
+    },
+    {
+      "nombre": "Consejería Jurídica del Ejecutivo de Tlaxcala · Reglamento de la Ley de Protección Civil para el Estado de Tlaxcala (PDF)",
+      "url": "https://cjuridica.tlaxcala.gob.mx/images/Reglamentos/Reglamentos/Reglamento%20de%20la%20Ley%20de%20Proteccion%20Civil%20para%20el%20Estado%20de%20Tlaxcala%2017.06.2002.pdf"
     }
   ],
   "verificadoEl": "2026-09"

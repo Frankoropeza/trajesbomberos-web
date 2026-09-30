@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2026-05-18",
   "urlOficial": "https://congresoags.gob.mx/agenda_legislativa/leyes/descargarPdf/395",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Aguascalientes",
+    "url": "https://eservicios2.aguascalientes.gob.mx/NormatecaAdministrador/archivos/EDO-26-27.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil",
     "articulo": "Art. 35",
@@ -39,12 +43,6 @@
       "cita": "Todo ente público, privado o social tiene obligación de presentar anualmente ante las Coordinaciones de Protección Civil"
     },
     {
-      "sujeto": "Empresas industriales, comerciales, de servicios y escuelas",
-      "obligacion": "Contar con un sistema de prevención y protección acorde a su actividad y capacitar en la materia a quienes laboran en ellas.",
-      "articulo": "Art. 43",
-      "cita": "Los establecimientos, tales como empresas industriales, comerciales y de servicios, así como los centros educativos, contarán con un sistema de prevención y protección para sus propios bienes y su entorno, adecuado a las actividades que realicen y capacitando en esta materia a las personas que laboren en ellas."
-    },
-    {
       "sujeto": "Inmuebles con programa interno",
       "obligacion": "Realizar al menos dos simulacros al año conforme al atlas de riesgo, bajo supervisión de las Coordinaciones, y una práctica contra incendio anual.",
       "articulo": "Art. 92",
@@ -63,10 +61,16 @@
       "cita": "Todas aquellas empresas, dependencias e inmuebles públicos, sociales o privados, deberán de estar provistos de sistemas automáticos contra incendios, equipos de seguridad y equipos de protección personal, según lo que establece esta Ley y las demás disposiciones legales aplicables."
     },
     {
-      "sujeto": "Instituciones y entidades de todos los sectores",
-      "obligacion": "Tener extintores suficientes en sus instalaciones, conforme al Reglamento y a lo que determinen las Coordinaciones de Protección Civil.",
-      "articulo": "Art. 97",
-      "cita": "Todas las instituciones y entidades públicas, sociales o privadas, deberán estar provistas de suficiente número de extintores dentro de sus instalaciones de acuerdo a lo establecido en el Reglamento de esta Ley"
+      "sujeto": "Unidad Interna de Protección Civil",
+      "obligacion": "Integrarse con el responsable del inmueble y del Programa Interno, jefes de edificio y de piso, y brigadas de incendio, rescate, primeros auxilios y evacuación.",
+      "articulo": "Art. 54 del Reglamento",
+      "cita": "jefes de edificio, jefes de piso y brigadistas de prevención y combate de incendios, búsqueda y rescate, primeros auxilios y evacuación, y las que resulten necesarias considerando las características específicas de cada inmueble"
+    },
+    {
+      "sujeto": "Patrones, propietarios y titulares de establecimientos",
+      "obligacion": "Capacitar al personal y dotarlo del equipo de respuesta necesario; pueden pedir asesoría a la Coordinación para capacitación y logística ante contingencias.",
+      "articulo": "Art. 56 del Reglamento",
+      "cita": "los patrones, propietarios o titulares de los establecimientos, deberán capacitar a sus empleados y dotarlos del equipo necesario de respuesta, así como solicitar la asesoría de la Coordinación, tanto para su capacitación como para el desarrollo de la logística de respuesta a las contingencias."
     }
   ],
   "brigadasDuo": [
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Aguascalientes y dónde se consulta?",
-      "a": "Es la Ley de Protección Civil para el Estado de Aguascalientes, publicada el 8 de julio de 2013 en el Periódico Oficial del Estado. Su última reforma publicada es del 18 de mayo de 2026. El texto actualizado se descarga en PDF desde la sección de leyes del Congreso del Estado."
+      "a": "Es la Ley de Protección Civil para el Estado de Aguascalientes, publicada el 8 de julio de 2013 y reformada por última vez el 18 de mayo de 2026; el Congreso del Estado ofrece el PDF actualizado. Su reglamento, publicado en el Periódico Oficial el 4 de agosto de 2014, se consulta en la Normateca del Gobierno del Estado."
     },
     {
       "q": "¿Quién debe elaborar Programa Interno de Protección Civil en Aguascalientes?",
@@ -110,6 +114,10 @@
     {
       "nombre": "Congreso del Estado de Aguascalientes · Agenda legislativa, leyes estatales",
       "url": "https://congresoags.gob.mx/agenda_legislativa/leyes"
+    },
+    {
+      "nombre": "Gobierno del Estado de Aguascalientes · Normateca, Reglamento de la Ley de Protección Civil para el Estado de Aguascalientes (PDF)",
+      "url": "https://eservicios2.aguascalientes.gob.mx/NormatecaAdministrador/archivos/EDO-26-27.pdf"
     }
   ],
   "verificadoEl": "2026-09"

@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2026-06-24",
   "urlOficial": "https://www.congresochiapas.gob.mx/new/Info-Parlamentaria/LEY_0049.pdf?v=OQ==",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Chiapas",
+    "url": "https://institutodelaconsejeriajuridica.chiapas.gob.mx/MarcoJuridicoPDF/Reglamentos/REGLAMENTO%20DE%20LA%20LEY%20DE%20PROTECCI%C3%93N%20CIVIL%20DEL%20ESTADO%20DE%20CHIAPAS.pdf",
+    "ultimaReforma": "2015-09-09"
+  },
   "autoridadEstatal": {
     "nombre": "Instituto para la Gestión Integral de Riesgos de Desastres del Estado de Chiapas",
     "articulo": "Art. 24",
@@ -25,12 +29,6 @@
       "obligacion": "Tener Programa Interno elaborado por un Profesionista Acreditado, quien debe anexar una carta de corresponsabilidad sobre las medidas aplicadas.",
       "articulo": "Art. 111",
       "cita": "será obligatorio el Programa Interno para las dependencias de gobierno, establecimientos e instituciones educativas del sector privado, los cuales deberán ser elaborados por un Profesionista Acreditado, quienes estarán obligados a anexar una carta de corresponsabilidad"
-    },
-    {
-      "sujeto": "Propietarios o encargados de establecimientos",
-      "obligacion": "Vigilar, a través de su Unidad Interna, que no haya deterioro o alteración del inmueble que obligue a renovar el Programa Interno antes de tiempo.",
-      "articulo": "Art. 114",
-      "cita": "El propietario o encargado del establecimiento, mediante su unidad interna será el responsable de verificar que no exista ningún deterioro o alteración que amerite renovar el Programa Interno, y Planes de Prevención y Resiliencia"
     },
     {
       "sujeto": "Establecimientos obligados en general",
@@ -61,6 +59,18 @@
       "obligacion": "Tener combatientes capacitados, entrenados y con equipo de protección personal para prevenir y combatir incendios.",
       "articulo": "Art. 143",
       "cita": "Los Ayuntamientos deberán contar con combatientes capacitados, entrenados y equipados en su protección personal para realizar acciones preventivas y de combate a incendios."
+    },
+    {
+      "sujeto": "Unidades Internas de Protección Civil",
+      "obligacion": "Según el reglamento de 2015, aplicable en lo conducente, el plan operativo debe prever equipos de seguridad, capacitación con constancias y simulacros.",
+      "articulo": "Art. 32, fr. VIII a XII del Reglamento",
+      "cita": "VIII. Medidas y Equipos de Seguridad. IX. Equipo de Identificación. X. Capacitación; contener las constancias de capacitación de protección civil del personal de nuevo ingreso. XI. Difusión y Concientización. XII. Ejercicios y Simulacros."
+    },
+    {
+      "sujeto": "Administradores, gerentes o propietarios de empresas",
+      "obligacion": "Capacitar a su personal y difundir la cultura de protección civil mediante programas de capacitación interna, según el reglamento vigente en lo conducente.",
+      "articulo": "Art. 81 del Reglamento",
+      "cita": "Los administradores, gerentes o propietarios de empresas estarán obligados a capacitar y difundir la cultura de protección civil entre su personal para la salvaguardar de su integridad física, bienes y entorno, mediante los programas de capacitación interna"
     }
   ],
   "brigadasDuo": [
@@ -77,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Chiapas y dónde consulto el texto?",
-      "a": "Es la Ley para la Gestión Integral del Riesgo de Desastres y Protección Civil del Estado de Chiapas, publicada el 12 de noviembre de 2025 en el Periódico Oficial. Su última reforma es del 24 de junio de 2026. El texto completo está en la sección de legislación vigente del Congreso del Estado."
+      "a": "Es la Ley para la Gestión Integral del Riesgo de Desastres y Protección Civil del Estado de Chiapas, publicada el 12 de noviembre de 2025 y reformada el 24 de junio de 2026; el texto está en la legislación vigente del Congreso. Mientras se expide el nuevo reglamento, aplica en lo conducente el de 2015, publicado en el marco jurídico del Gobierno del Estado."
     },
     {
       "q": "¿Quién está obligado a tener Programa Interno en Chiapas?",
@@ -104,6 +114,10 @@
     {
       "nombre": "Congreso del Estado de Chiapas · Legislación vigente",
       "url": "https://web.congresochiapas.gob.mx/trabajo-legislativo/legislacion-vigente"
+    },
+    {
+      "nombre": "Gobierno del Estado de Chiapas · Marco jurídico · Reglamento de la Ley de Protección Civil del Estado de Chiapas (PDF, 2015)",
+      "url": "https://institutodelaconsejeriajuridica.chiapas.gob.mx/MarcoJuridicoPDF/Reglamentos/REGLAMENTO%20DE%20LA%20LEY%20DE%20PROTECCI%C3%93N%20CIVIL%20DEL%20ESTADO%20DE%20CHIAPAS.pdf"
     }
   ],
   "verificadoEl": "2026-09"

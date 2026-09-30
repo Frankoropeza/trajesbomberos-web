@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2026-01-20",
   "urlOficial": "https://ojp.puebla.gob.mx/media/k2/attachments/Ley_del_Sistema_Estatal_de_Proteccion_Civil_TEV_20012026.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley del Sistema Estatal de Protección Civil para el Estado Libre y Soberano de Puebla",
+    "url": "https://ojp.puebla.gob.mx/media/k2/attachments/Reglamento_de_la_Ley_del_Sistema_Estatal_de_Proteccion_Civil_para_el_Estado_Libre_y_Soberano_de_Puebla_01071998.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Unidad Estatal de Protección Civil",
     "articulo": "Art. 28",
@@ -61,6 +65,12 @@
       "obligacion": "Mantener capacitado al personal y cumplir la periodicidad de simulacros; omitirlo está tipificado como infracción.",
       "articulo": "Art. 136, fr. III",
       "cita": "No contar con Unidad Interna o Programa Interno o Especial de Protección Civil, de conformidad con lo dispuesto en esta Ley; III. No mantener debidamente capacitado al personal o no realizar simulacros con la periodicidad establecida en esta Ley y en su Reglamento"
+    },
+    {
+      "sujeto": "Establecimientos con afluencia de personas",
+      "obligacion": "Contar con responsivas o certificados de riesgos con sus medidas de protección, expedidos por peritos o unidades de verificación autorizados.",
+      "articulo": "Art. 48 del Reglamento",
+      "cita": "Además deberán de contar con responsivas o certificados de riesgos, en los cuales se contemplarán, las medidas de protección y seguridad; mismas que serán expedidas por peritos o unidades de verificación, autorizados por la Unidad Operativa Estatal y/o dependencias oficiales."
     }
   ],
   "brigadasDuo": [
@@ -77,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Puebla y dónde consulto el texto?",
-      "a": "Es la Ley del Sistema Estatal de Protección Civil, publicada en el Periódico Oficial del Estado el 20 de marzo de 2013. Su reforma más reciente anotada es del 20 de enero de 2026. El texto vigente actualizado lo publica el Orden Jurídico Poblano, portal normativo del Gobierno del Estado."
+      "a": "Es la Ley del Sistema Estatal de Protección Civil, publicada en el Periódico Oficial del Estado el 20 de marzo de 2013, con reforma más reciente del 20 de enero de 2026. El Orden Jurídico Poblano publica su texto vigente y también el Reglamento de 1998, que conforme al Transitorio Cuarto de la ley sigue aplicándose en lo conducente."
     },
     {
       "q": "¿Quién debe tener Programa Interno de Protección Civil en Puebla?",
@@ -104,6 +114,10 @@
     {
       "nombre": "Orden Jurídico Poblano · Legislación del Estado, Ley del Sistema Estatal de Protección Civil",
       "url": "https://ojp.puebla.gob.mx/legislacion-del-estado/item/246-ley-del-sistema-estatal-de-proteccion-civil"
+    },
+    {
+      "nombre": "Orden Jurídico Poblano · Reglamento de la Ley del Sistema Estatal de Protección Civil para el Estado Libre y Soberano de Puebla (PDF, 1998)",
+      "url": "https://ojp.puebla.gob.mx/media/k2/attachments/Reglamento_de_la_Ley_del_Sistema_Estatal_de_Proteccion_Civil_para_el_Estado_Libre_y_Soberano_de_Puebla_01071998.pdf"
     }
   ],
   "verificadoEl": "2026-09"

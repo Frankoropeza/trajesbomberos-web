@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2018-09-21",
   "urlOficial": "https://congreso-gto.s3.amazonaws.com/uploads/reforma/pdf/1431/Ley_de_Protecci_n_Civil_para_el_Estado_de_Guanajuato_20181010.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Guanajuato",
+    "url": "https://portalsocial.guanajuato.gob.mx/sites/default/files/documentos/2017_GOBIERNO_GTO_Reglamento_de_la_ley_de_proteccion_civil_para_el_estado_de_guanajuato.pdf",
+    "ultimaReforma": "2017-03-17"
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil",
     "articulo": "Art. 22",
@@ -61,6 +65,12 @@
       "obligacion": "Constituirse en un grupo voluntario organizado conforme a la ley, o sumarse a uno existente, y participar en su capacitación.",
       "articulo": "Art. 33",
       "cita": "Las personas que deseen desempeñar labores de rescate y auxilio, deberán constituirse en grupos voluntarios debidamente organizados conforme a las disposiciones establecidas en esta Ley o integrarse a un grupo ya existente"
+    },
+    {
+      "sujeto": "Centros con concentración de más de 50 personas",
+      "obligacion": "Tener brigadas capacitadas y equipadas para incendios, evacuación, salvamento, rescate y primeros auxilios, acordes con el personal y la afluencia.",
+      "articulo": "Art. 50, fr. III del Reglamento",
+      "cita": "Contar con brigadas capacitadas y con equipo apropiado para la atención de acciones de control de incendios, evacuación, salvamento, rescate y primeros auxilios, en número adecuado con el total de sus empleados y número de afluencia de personas"
     }
   ],
   "brigadasDuo": [
@@ -77,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Guanajuato y dónde se consulta?",
-      "a": "Es la Ley de Protección Civil para el Estado de Guanajuato, publicada el 24 de octubre de 1997 en el Periódico Oficial del Gobierno del Estado. Su última reforma publicada es del 21 de septiembre de 2018, con fe de erratas del 10 de octubre de 2018. El Congreso del Estado la ofrece en PDF y Word en su sección de leyes."
+      "a": "Es la Ley de Protección Civil para el Estado de Guanajuato, publicada el 24 de octubre de 1997 en el Periódico Oficial del Gobierno del Estado; su última reforma es del 21 de septiembre de 2018. El Congreso la ofrece en PDF y Word. Su reglamento, expedido en 2000 y reformado por última vez el 17 de marzo de 2017, está en el Portal Social del Gobierno del Estado."
     },
     {
       "q": "¿Quién está obligado a tener programa específico de protección civil?",
@@ -108,6 +118,14 @@
     {
       "nombre": "H. Congreso del Estado de Guanajuato · Leyes estatales",
       "url": "https://www.congresogto.gob.mx/leyes"
+    },
+    {
+      "nombre": "Gobierno del Estado de Guanajuato · Reglamento de la Ley de Protección Civil para el Estado de Guanajuato (PDF)",
+      "url": "https://portalsocial.guanajuato.gob.mx/sites/default/files/documentos/2017_GOBIERNO_GTO_Reglamento_de_la_ley_de_proteccion_civil_para_el_estado_de_guanajuato.pdf"
+    },
+    {
+      "nombre": "Coordinación Estatal de Protección Civil de Guanajuato · Normateca estatal",
+      "url": "https://seguridad.guanajuato.gob.mx/proteccion-civil/normatecacepc/normatividadestatal/"
     }
   ],
   "verificadoEl": "2026-09"

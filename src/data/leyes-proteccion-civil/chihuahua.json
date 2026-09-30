@@ -8,7 +8,11 @@
   },
   "ultimaReforma": "2026-04-18",
   "urlOficial": "https://www.congresochihuahua2.gob.mx/biblioteca/leyes/archivosLeyes/1174.pdf",
-  "reglamento": null,
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Chihuahua",
+    "url": "https://www.congresochihuahua2.gob.mx/biblioteca/reglamentos/archivosReglamentos/134.pdf",
+    "ultimaReforma": null
+  },
   "autoridadEstatal": {
     "nombre": "Coordinación Estatal de Protección Civil (Secretaría General de Gobierno)",
     "articulo": "Art. 26",
@@ -51,22 +55,22 @@
       "cita": "Los simulacros se deberán llevar a cabo con una periodicidad de dos veces al año y una vez concluidos deberán contar con una evaluación por escrito emitida por la Unidad Interna de Protección Civil."
     },
     {
-      "sujeto": "Organizadores de eventos de concentración masiva",
-      "obligacion": "Elaborar un programa especial de protección civil y entregarlo a la autoridad al menos quince días hábiles antes del evento.",
-      "articulo": "Art. 74",
-      "cita": "Previo a la realización de eventos de concentración masiva, el organizador deberá elaborar un programa especial de protección civil de acuerdo a las características del evento y el lugar donde se llevará a cabo"
-    },
-    {
-      "sujeto": "Seguridad privada y servicios médicos de eventos",
-      "obligacion": "Estar legalmente constituidos y tener la capacitación de las cuatro brigadas básicas, con recursos acordes al aforo máximo.",
-      "articulo": "Art. 76, fr. IV",
-      "cita": "Los cuerpos de seguridad privada y los servicios médicos de urgencia que sean contratados por el organizador para el evento, deberán estar legalmente constituidos, registrados ante las instancias correspondientes y tener la capacitación de las cuatro brigadas básicas de protección civil"
-    },
-    {
       "sujeto": "Empresas que representan riesgo para la población",
       "obligacion": "Presentar, además del Programa Interno, planes de contingencia específicos, inventario de recursos y programa anual de simulacros.",
       "articulo": "Art. 81",
       "cita": "Las empresas que por sus características específicas representen un riesgo para la población, deberán presentar adicionalmente al Programa Interno de Protección Civil, los planes de contingencia específicos al riesgo"
+    },
+    {
+      "sujeto": "Industria, comercio y servicios",
+      "obligacion": "Conformar, capacitar y equipar las brigadas de evacuación, primeros auxilios, combate de incendios y búsqueda y rescate, según las normas oficiales.",
+      "articulo": "Art. 53, fr. I del Reglamento",
+      "cita": "Conformar, organizar, capacitar y equipar sus brigadas internas de emergencia, siendo las de evacuación de inmuebles, de primeros auxilios, de combate de incendios y de búsqueda y rescate, de acuerdo a los requerimientos de las Normas Oficiales vigentes"
+    },
+    {
+      "sujeto": "Unidades Internas de Protección Civil",
+      "obligacion": "Establecer un programa de capacitación teórica y práctica para el personal del Programa Interno y comprobar que los conocimientos se adquirieron.",
+      "articulo": "Art. 35 del Reglamento",
+      "cita": "Cada Unidad Interna de Protección Civil establecerá un programa de capacitación para asegurar la continua formación teórica y práctica del personal asignado al Programa Interno de Protección Civil, estableciendo sistemas o formas de comprobación de que dichos conocimientos han sido adquiridos."
     }
   ],
   "brigadasDuo": [
@@ -83,7 +87,7 @@
   "faqs": [
     {
       "q": "¿Cuál es la ley de protección civil vigente en Chihuahua y dónde consulto el texto?",
-      "a": "Es la Ley de Protección Civil del Estado de Chihuahua, publicada en el Periódico Oficial del Estado el 26 de agosto de 2015, con última reforma del 18 de abril de 2026. El texto actualizado, en PDF y Word, está en la Biblioteca Legislativa del Congreso del Estado."
+      "a": "Es la Ley de Protección Civil del Estado de Chihuahua, publicada en el Periódico Oficial del Estado el 26 de agosto de 2015, con última reforma del 18 de abril de 2026. El texto actualizado y su reglamento, expedido el 29 de agosto de 2020, están en la Biblioteca Legislativa del Congreso del Estado."
     },
     {
       "q": "¿Quién debe tener Programa Interno de Protección Civil en Chihuahua?",
@@ -110,6 +114,10 @@
     {
       "nombre": "H. Congreso del Estado de Chihuahua · Biblioteca Legislativa, leyes vigentes",
       "url": "https://www.congresochihuahua.gob.mx/biblioteca/leyes/"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Chihuahua · Reglamento de la Ley de Protección Civil del Estado de Chihuahua (PDF)",
+      "url": "https://www.congresochihuahua2.gob.mx/biblioteca/reglamentos/archivosReglamentos/134.pdf"
     }
   ],
   "verificadoEl": "2026-09"
