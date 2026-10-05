@@ -39,6 +39,8 @@ La respuesta corta es diez años. La respuesta útil es más larga. Es la que de
 
 El retiro del conjunto estructural a los **diez años contados desde la fecha de fabricación** viene del cuerpo normativo de selección, cuidado y mantenimiento, que hoy vive en la **NFPA 1850**. Ese documento consolidó las anteriores NFPA 1851 y NFPA 1852, y su primera edición consolidada es la de 2026. La fecha de fabricación se lee en la etiqueta: [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
 
+La [calculadora de vida útil del equipo de bombero](/calculadora-vida-util-equipo-de-bombero/) convierte la fecha de etiqueta en un calendario por pieza.
+
 Dos precisiones que cambian decisiones de compra:
 
 1. **La fecha es de fabricación, no de entrega ni de puesta en servicio.** Un traje que estuvo dos años en bodega llega a tu estación con dos años ya consumidos.

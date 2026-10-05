@@ -93,6 +93,8 @@ Una inspección no autoriza reparaciones improvisadas. Si detectas daño o no pu
 
 Registra fecha, usuario o inventario, tipo de exposición reportada, limpieza realizada, condición encontrada y acción tomada. Conserva la lectura de etiqueta: fabricante, modelo, talla, fecha de fabricación, referencia declarada e instrucciones de cuidado conectan el historial con el equipo correcto. La guía sobre [cómo leer la etiqueta del traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/) explica qué datos deben verificarse al recibir, lavar, reparar o retirar.
 
+La [bitácora de EPP para bomberos](/calculadora-vida-util-equipo-de-bombero/) organiza las fechas de limpieza e inspección avanzada por pieza.
+
 El registro no es burocracia. Permite detectar repeticiones de daño, confirmar que una pieza recibió el servicio previsto y evitar que un chaquetón segregado regrese por error al inventario disponible. También facilita que la jefatura determine si falta una dotación de relevo mientras una pieza está en limpieza, inspección o evaluación.
 
 ## Capucha, guantes y otras interfaces

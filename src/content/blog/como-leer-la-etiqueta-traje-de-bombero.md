@@ -78,6 +78,8 @@ Esta tabla sirve como lista de recepción, no como sustituto del documento del f
 
 La fecha de fabricación permite organizar inventario, inspección y reemplazo. En la ficha del chaquetón estructural publicado se declara retiro obligatorio a los diez años desde esa fecha, aunque nunca se haya usado. La [guía de vida útil conforme a NFPA 1850](/blog/vida-util-traje-bombero-nfpa-1850/) precisa que el estado, las exposiciones y el mantenimiento pueden requerir una salida anterior. No debes usar el límite como promesa de que cualquier pieza llegará completa a esa edad.
 
+Con esa lectura, la [calculadora de retiro por pieza](/calculadora-vida-util-equipo-de-bombero/) te permite registrar el mes y planear el reemplazo.
+
 Al recibir, registra la fecha y el identificador de pieza antes de asignarla. No aceptes como solución que el proveedor diga que “es reciente” sin que la etiqueta lo demuestre. Esta práctica evita que se compre inventario con menos tiempo de servicio disponible y permite planear reposición sin perder trazabilidad entre usuario, inspección y prenda.
 
 ## Instrucciones de cuidado y mantenimiento

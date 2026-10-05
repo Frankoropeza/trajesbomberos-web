@@ -38,6 +38,8 @@ interface Props extends SchemaInput {
   ogImageAlt?: string;
   noindex?: boolean;
   footerCta?: FooterCta;
+  hideWhatsAppFloat?: boolean;
+  hideFooterCta?: boolean;
 }
 
 const {
@@ -51,6 +53,7 @@ const {
   estaciones,
   item,
   producto,
+  webApplication,
   title = buildKeywordTitle(),
   description = buildKeywordDescription(),
   path = '/',
@@ -59,12 +62,14 @@ const {
   ogImageAlt,
   noindex = false,
   footerCta,
+  hideWhatsAppFloat = false,
+  hideFooterCta = false,
 } = Astro.props;
 
 const canonical = new URL(path, SITE.url).href;
 const ogImage = new URL(ogImagePath ?? '/images/og-trajes-para-bomberos.png', SITE.url).href;
 const ogImageType = ogImagePath ? 'image/jpeg' : 'image/png';
-const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product, collection, item, producto, estaciones });
+const schemas = buildSchema({ pageType, faqs, directoryItems, breadcrumbs, article, product, collection, item, producto, estaciones, webApplication });
 
 const ogType = pageType === 'articulo' ? 'article' : 'website';
 const ogAlt = ogImageAlt ?? (ogImagePath ? title : 'Trajes para bomberos y equipo contra incendios en México');
@@ -118,7 +123,7 @@ if (!audit.ok) console.warn(`[metaAudit] ${path}:`, audit.problems.join(' '));
     <main id="main-content">
       <slot />
     </main>
-    <Footer cta={footerCta} />
-    <WhatsAppFloat />
+    <Footer cta={footerCta} showCta={!hideFooterCta} />
+    {!hideWhatsAppFloat && <WhatsAppFloat />}
   </body>
 </html>

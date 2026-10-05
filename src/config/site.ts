@@ -583,7 +583,7 @@ export const FOOTER = {
     },
     {
       title: 'Guías técnicas',
-      links: [...BLOG_CATEGORIES.map((categoria) => ({ label: categoria.nombre, href: `/blog/categoria/${categoria.slug}/` })), { label: 'Blog técnico de trajes para bomberos', href: '/blog/' }],
+      links: [...BLOG_CATEGORIES.map((categoria) => ({ label: categoria.nombre, href: `/blog/categoria/${categoria.slug}/` })), { label: 'Calculadora de vida útil del equipo', href: '/calculadora-vida-util-equipo-de-bombero/' }, { label: 'Blog técnico de trajes para bomberos', href: '/blog/' }],
     },
   ] satisfies FooterColumn[],
   soporte: [

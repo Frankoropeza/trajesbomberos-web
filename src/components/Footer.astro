@@ -14,9 +14,10 @@ interface FooterCta {
 
 interface Props {
   cta?: FooterCta;
+  showCta?: boolean;
 }
 
-const { cta } = Astro.props;
+const { cta, showCta = true } = Astro.props;
 const year = new Date().getFullYear();
 type FooterLinkValido = FooterLink & { href: string };
 const rutaValida = (link: FooterLink): link is FooterLinkValido => {
@@ -38,7 +39,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
 ---
 <footer class="site-footer">
   <!-- Zona 1 · CTA -->
-  <section class="fcta" aria-label="Cotización de trajes para bomberos">
+  {showCta && <section class="fcta" aria-label="Cotización de trajes para bomberos">
     <div class="container fcta__inner">
       <ul class="fcta__commitments" aria-label="Compromisos de compra">
         {[MARCA.experienciaCorta, 'Ficha técnica por partida', 'Factura CFDI 4.0', 'Envío a los 32 estados'].map((item) => <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>{item}</li>)}
@@ -53,7 +54,7 @@ const secondary = cta?.secondary && rutaExiste(cta.secondary.href) ? cta.seconda
         <a class="fcta__tel" href={`tel:${CONTACT.telefonoHref}`}>{CONTACT.telefono}</a>
       </div>
     </div>
-  </section>
+  </section>}
 
   <!-- Zona 2 · Piso 1: catálogo -->
   <section class="fcatalog">

@@ -72,6 +72,8 @@ Cinco reglas que hacen la diferencia entre un pliego que protege y uno que solo 
 
 **Pide fecha de fabricación como criterio de aceptación.** El reloj de la vida útil corre desde ahí. Sin esta cláusula puedes recibir, legalmente, equipo con dos años ya consumidos.
 
+Para anexar al expediente el calendario de reemplazo de cada pieza, puedes generarlo con nuestra [herramienta gratuita para calcular el retiro del EPP](/calculadora-vida-util-equipo-de-bombero/) y exportarlo en CSV.
+
 **Incluye el levantamiento de tallas en el calendario.** No en el contrato, en el **calendario**. Es la actividad que más retrasa entregas y la que nadie presupuesta en tiempo.
 
 ## La junta de aclaraciones: dónde se gana

@@ -28,6 +28,8 @@ interface Props extends SchemaInput {
   heroImage?: { src: string; alt: string };  // en desuso: el hero es de color sólido en todo el sitio (2026-09-29)
   ogImage?: string;
   footerCta?: { title: string; text?: string; secondary?: { label: string; href: string } };
+  hideWhatsAppFloat?: boolean;
+  hideFooterCta?: boolean;
 }
 
 const {
@@ -54,8 +56,11 @@ const {
   estaciones,
   item,
   producto,
+  webApplication,
   ogImage,
   footerCta,
+  hideWhatsAppFloat,
+  hideFooterCta,
 } = Astro.props;
 
 // Migas derivadas de la ruta: home (keyword) › [padre] › actual
@@ -81,8 +86,11 @@ const crumbs = [
   estaciones={estaciones}
   item={item}
   producto={producto}
+  webApplication={webApplication}
   ogImage={ogImage}
   footerCta={footerCta}
+  hideWhatsAppFloat={hideWhatsAppFloat}
+  hideFooterCta={hideFooterCta}
 >
   <Breadcrumbs items={crumbs} />
 

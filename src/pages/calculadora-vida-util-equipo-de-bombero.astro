@@ -1,0 +1,348 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+
+const path = '/calculadora-vida-util-equipo-de-bombero/';
+const title = 'Calculadora de vida útil del equipo de bombero';
+const description = 'Herramienta gratuita para calcular retiro por pieza, inspección y limpieza avanzadas, y exportar una bitácora de EPP bombero.';
+const keywords = ['calculadora vida útil equipo de bombero', 'retiro del traje de bombero', 'bitácora de EPP bomberos'] as const;
+const initialPieces = ['Chaquetón', 'Pantalonera', 'Capucha', 'Guantes', 'Botas', 'Casco'];
+const faqs = [
+  { q: '¿La fecha de retiro se cuenta desde la compra?', a: 'No. La herramienta cuenta diez años desde el mes de fabricación indicado en la etiqueta de cada pieza.' },
+  { q: '¿Una pieza puede retirarse antes de los diez años?', a: 'Sí. Daño, contaminación, una reparación no autorizada o una inspección fallida pueden exigir retiro o evaluación antes.' },
+  { q: '¿Qué pasa si no tengo la fecha de fabricación?', a: 'No inventes una fecha. Separa la pieza hasta localizar la etiqueta, el expediente de compra o la documentación del fabricante.' },
+  { q: '¿La calculadora sustituye la inspección del fabricante?', a: 'No. Ordena el calendario. La condición, el procedimiento de tu corporación y las indicaciones del fabricante deciden el servicio.' },
+  { q: '¿Puedo usar la bitácora en una licitación?', a: 'Sí. El CSV ayuda a ordenar inventario y fechas para anexar al expediente técnico de tu corporación o brigada.' },
+];
+---
+<PageLayout
+  pageType="generic"
+  path={path}
+  title={title}
+  description={description}
+  keywords={keywords}
+  crumbLabel="Calculadora de vida útil"
+  eyebrow="Herramienta gratuita"
+  h1="Calculadora de vida útil del"
+  h1Accent="equipo de bombero"
+  lead="Registra cada pieza, calcula su retiro y organiza inspecciones y limpiezas avanzadas en una bitácora descargable."
+  descRight={[
+    'La fecha de fabricación marca el límite máximo de diez años para el conjunto estructural. La condición real puede exigir retiro antes.',
+    'Los datos viven sólo en tu navegador. Exporta el resultado para integrarlo al control de tu corporación o brigada.',
+  ]}
+  faqs={faqs}
+  webApplication={{ name: title, url: path, description, inLanguage: 'es-MX' }}
+  hideWhatsAppFloat={true}
+  hideFooterCta={true}
+>
+  <div class="section">
+    <div class="container">
+      <section class="block calculator" aria-labelledby="herramienta-title">
+        <SectionHeading
+          eyebrow="Bitácora por pieza"
+          title="Registra el conjunto y revisa el calendario"
+          duo={[
+            'Usa la fecha de la etiqueta, no la fecha de compra. Puedes registrar una pieza adicional cuando tu inventario lo requiera.',
+            'El resumen cambia en cuanto completas un mes. La descarga conserva las fechas y resultados visibles en esta tabla.',
+          ]}
+        />
+        <h2 id="herramienta-title" class="sr-only">Calculadora y bitácora del equipo</h2>
+        <div class="calculator__identity">
+          <label for="equipment-reference">Elemento / número económico <span>(opcional)</span></label>
+          <input id="equipment-reference" name="equipment-reference" type="text" maxlength="120" autocomplete="off" />
+        </div>
+        <p id="calculator-summary" class="calculator__summary" aria-live="polite">Ingresa la fecha de fabricación de cada pieza para obtener el resumen.</p>
+        <div class="calculator__table-wrap" tabindex="0">
+          <table class="calculator__table">
+            <thead>
+              <tr>
+                <th scope="col">Pieza</th>
+                <th scope="col">Fecha de fabricación</th>
+                <th scope="col">Última inspección avanzada</th>
+                <th scope="col">Última limpieza avanzada</th>
+                <th scope="col">Resultado</th>
+                <th scope="col"><span class="sr-only">Acción</span></th>
+              </tr>
+            </thead>
+            <tbody id="equipment-rows">
+              {initialPieces.map((piece, index) => (
+                <tr class="calculator__row" data-row={index + 1}>
+                  <td data-label="Pieza">
+                    <label class="sr-only" for={`piece-${index + 1}`}>Pieza</label>
+                    <select id={`piece-${index + 1}`} class="piece-type" name="piece-type">
+                      <option selected={piece === 'Chaquetón'}>Chaquetón</option>
+                      <option selected={piece === 'Pantalonera'}>Pantalonera</option>
+                      <option selected={piece === 'Capucha'}>Capucha</option>
+                      <option selected={piece === 'Guantes'}>Guantes</option>
+                      <option selected={piece === 'Botas'}>Botas</option>
+                      <option selected={piece === 'Casco'}>Casco</option>
+                      <option value="Otra pieza">Otra pieza</option>
+                    </select>
+                    <label class="sr-only" for={`piece-other-${index + 1}`}>Nombre de otra pieza</label>
+                    <input id={`piece-other-${index + 1}`} class="piece-other" name="piece-other" type="text" maxlength="80" hidden />
+                  </td>
+                  <td data-label="Fecha de fabricación"><label class="sr-only" for={`manufactured-${index + 1}`}>Fecha de fabricación</label><input id={`manufactured-${index + 1}`} class="manufactured-at" name="manufactured-at" type="month" /></td>
+                  <td data-label="Última inspección avanzada"><label class="sr-only" for={`inspection-${index + 1}`}>Última inspección avanzada</label><input id={`inspection-${index + 1}`} class="inspection-at" name="inspection-at" type="month" /></td>
+                  <td data-label="Última limpieza avanzada"><label class="sr-only" for={`cleaning-${index + 1}`}>Última limpieza avanzada</label><input id={`cleaning-${index + 1}`} class="cleaning-at" name="cleaning-at" type="month" /></td>
+                  <td class="calculator__result" data-label="Resultado"><span class="result-empty">Ingresa fabricación</span></td>
+                  <td class="calculator__remove" data-label="Acción"><button class="button-text remove-piece" type="button" aria-label={`Quitar ${piece}`}>Quitar</button></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="calculator__actions" aria-label="Acciones de la bitácora">
+          <button id="add-piece" class="btn btn--outline" type="button">Agregar pieza del equipo</button>
+          <button id="export-csv" class="btn btn--primary" type="button">Exportar bitácora CSV</button>
+          <button id="print-log" class="btn btn--outline" type="button">Imprimir bitácora</button>
+        </div>
+      </section>
+
+      <section class="block" id="como-calcula">
+        <SectionHeading
+          eyebrow="Criterio de cálculo"
+          title="Cómo calcula la herramienta"
+          duo={[
+            'El retiro se calcula a los diez años desde la fabricación. No se cuenta desde la compra ni desde la primera puesta.',
+            'Aplicamos el mismo límite al conjunto: chaquetón, pantalonera, capucha, guantes, botas y casco. La inspección avanzada va al menos cada 12 meses. La limpieza avanzada va al menos dos veces al año, una junto con la inspección.',
+          ]}
+        />
+        <p>La referencia es NFPA 1851 edición 2020, hoy consolidada en NFPA 1850. Esta herramienta convierte esas frecuencias en un calendario por pieza.</p>
+      </section>
+
+      <section class="block" id="limites">
+        <SectionHeading
+          eyebrow="Límite del calendario"
+          title="Lo que la calculadora no ve"
+          duo={[
+            'Una pieza dañada, contaminada o que falla la inspección se retira antes de los diez años. La fecha calculada sólo marca el máximo.',
+            'Confirma el mes de fabricación al <a href="/blog/como-leer-la-etiqueta-traje-de-bombero/">leer la etiqueta del traje de bombero</a>. Si hubo exposición, sigue el proceso de <a href="/blog/lavado-y-descontaminacion-traje-de-bombero/">lavado y descontaminación del traje</a> antes de devolverla a servicio.',
+          ]}
+        />
+      </section>
+
+      <section class="block" id="reglas">
+        <SectionHeading eyebrow="Referencia rápida" title="Reglas que usa el cálculo" description="Estas frecuencias organizan el control. No sustituyen la evaluación de condición ni la instrucción del fabricante." />
+        <div class="rules-table-wrap" tabindex="0">
+          <table class="rules-table">
+            <thead><tr><th scope="col">Regla</th><th scope="col">Frecuencia</th><th scope="col">Fuente</th></tr></thead>
+            <tbody>
+              <tr><td>Retiro del conjunto estructural</td><td>10 años desde fabricación</td><td>NFPA 1851 (2020), consolidada en NFPA 1850</td></tr>
+              <tr><td>Inspección avanzada</td><td>Al menos cada 12 meses</td><td>NFPA 1851 (2020)</td></tr>
+              <tr><td>Limpieza avanzada</td><td>Al menos dos veces al año</td><td>NFPA 1851 (2020)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="block" id="bitacora">
+        <SectionHeading
+          eyebrow="Control interno"
+          title="Cómo usar la bitácora en tu corporación o brigada"
+          duo={[
+            'Asigna un registro por pieza. Conserva etiqueta, número económico, inspecciones, limpiezas, hallazgos y decisión de retiro.',
+            'El CSV sirve como base para un expediente ante Protección Civil, una aseguradora o una licitación. La guía de <a href="/blog/licitacion-trajes-bomberos-expediente/">expediente para licitación de trajes</a> explica qué documentos deben acompañarlo.',
+          ]}
+        />
+      </section>
+
+      <section class="block" id="preguntas">
+        <SectionHeading eyebrow="Preguntas frecuentes" title="Dudas sobre el retiro y la bitácora" description="La herramienta ordena fechas. La decisión de servicio exige revisar cada pieza y su historial." />
+        <div class="calculator-faq">
+          {faqs.map((faq, index) => (
+            <details open={index === 0}>
+              <summary>{faq.q}</summary>
+              <p>{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="calculator__byline">Publicado por LORICA · Trajes para bomberos. Fuente normativa: NFPA 1851 edición 2020, consolidada en NFPA 1850.</p>
+    </div>
+  </div>
+</PageLayout>
+
+<script>
+  import { calculatePiece } from '@lib/calculadora.js';
+
+  const rows = document.getElementById('equipment-rows');
+  const summary = document.getElementById('calculator-summary');
+  const reference = document.getElementById('equipment-reference');
+  const addPiece = document.getElementById('add-piece');
+  const exportCsv = document.getElementById('export-csv');
+  const printLog = document.getElementById('print-log');
+  let rowNumber = rows?.querySelectorAll('tr').length ?? 0;
+
+  const currentMonth = () => {
+    const date = new Date();
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+  };
+  const formatMonth = (value: string | null | undefined) => value
+    ? new Intl.DateTimeFormat('es-MX', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${value}-01T00:00:00Z`))
+    : 'Sin registro: programar';
+  const formatService = (label: string, dueAt: string | null, overdue: boolean) => {
+    const date = formatMonth(dueAt);
+    return overdue ? `${label} vencida desde ${date}` : `${label}: ${date}`;
+  };
+  const cleanValue = (field: Element | null) => field instanceof HTMLInputElement ? field.value : '';
+  const pieceName = (row: HTMLTableRowElement) => {
+    const select = row.querySelector<HTMLSelectElement>('.piece-type');
+    const other = row.querySelector<HTMLInputElement>('.piece-other');
+    return select?.value === 'Otra pieza' ? (cleanValue(other).trim() || 'Otra pieza') : (select?.value || 'Pieza');
+  };
+  const updateOtherField = (row: HTMLTableRowElement) => {
+    const select = row.querySelector<HTMLSelectElement>('.piece-type');
+    const other = row.querySelector<HTMLInputElement>('.piece-other');
+    if (!select || !other) return;
+    const isOther = select.value === 'Otra pieza';
+    other.hidden = !isOther;
+    other.required = isOther;
+    if (!isOther) other.value = '';
+  };
+  const updateRow = (row: HTMLTableRowElement) => {
+    const result = row.querySelector<HTMLElement>('.calculator__result');
+    const manufacturedAt = cleanValue(row.querySelector('.manufactured-at'));
+    const data = calculatePiece({
+      manufacturedAt,
+      advancedInspectionAt: cleanValue(row.querySelector('.inspection-at')),
+      advancedCleaningAt: cleanValue(row.querySelector('.cleaning-at')),
+    }, currentMonth());
+    row.dataset.retirementAt = data.retirementAt ?? '';
+    row.dataset.status = data.status ?? '';
+    if (!result) return data;
+    result.replaceChildren();
+    if (!data.retirementAt || !data.status) {
+      const empty = document.createElement('span');
+      empty.className = 'result-empty';
+      empty.textContent = 'Ingresa fabricación';
+      result.append(empty);
+      return data;
+    }
+    const status = document.createElement('strong');
+    status.className = `status status--${data.status.toLowerCase().replaceAll(' ', '-')}`;
+    status.textContent = data.status;
+    const detail = document.createElement('span');
+    const remaining = data.monthsRemaining === 1 ? '1 mes restante' : `${data.monthsRemaining} meses restantes`;
+    detail.textContent = `Retiro: ${formatMonth(data.retirementAt)} (${remaining}). ${formatService('Inspección', data.nextInspectionAt, data.inspectionOverdue)}. ${formatService('Limpieza', data.nextCleaningAt, data.cleaningOverdue)}.`;
+    result.append(status, detail);
+    return data;
+  };
+  const updateSummary = () => {
+    if (!rows || !summary) return;
+    const results = [...rows.querySelectorAll<HTMLTableRowElement>('tr')].map(updateRow).filter((item) => item.status);
+    const count = (status: string) => results.filter((item) => item.status === status).length;
+    const closest = results.map((item) => item.retirementAt).filter(Boolean).sort()[0];
+    const overdueServiceCount = results.reduce((total, item) => total + item.overdueServiceCount, 0);
+    if (!results.length) {
+      summary.textContent = 'Ingresa la fecha de fabricación de cada pieza para obtener el resumen.';
+      return;
+    }
+    const overdueSummary = overdueServiceCount === 1
+      ? ' · 1 inspección o limpieza vencida'
+      : ` · ${overdueServiceCount} inspecciones o limpiezas vencidas`;
+    const piezas = (n: number, sufijo: string) => `${n} ${n === 1 ? 'pieza' : 'piezas'} ${sufijo}`;
+    const vig = count('Vigente');
+    summary.textContent = `${piezas(vig, vig === 1 ? 'vigente' : 'vigentes')}, ${piezas(count('Planear reemplazo'), 'por reemplazar')} y ${piezas(count('Retirar'), 'a retirar')}. Retiro más próximo: ${formatMonth(closest)}${overdueServiceCount ? overdueSummary : ''}.`;
+  };
+  const bindRow = (row: HTMLTableRowElement) => {
+    row.querySelectorAll<HTMLInputElement | HTMLSelectElement>('input, select').forEach((field) => field.addEventListener('input', () => {
+      updateOtherField(row);
+      updateSummary();
+    }));
+    row.querySelector('.remove-piece')?.addEventListener('click', () => {
+      row.remove();
+      updateSummary();
+    });
+    updateOtherField(row);
+  };
+  const addRow = () => {
+    if (!rows) return;
+    rowNumber += 1;
+    const row = document.createElement('tr');
+    row.className = 'calculator__row';
+    row.dataset.row = String(rowNumber);
+    row.innerHTML = `<td data-label="Pieza"><label class="sr-only" for="piece-${rowNumber}">Pieza</label><select id="piece-${rowNumber}" class="piece-type" name="piece-type"><option>Chaquetón</option><option>Pantalonera</option><option>Capucha</option><option>Guantes</option><option>Botas</option><option>Casco</option><option value="Otra pieza">Otra pieza</option></select><label class="sr-only" for="piece-other-${rowNumber}">Nombre de otra pieza</label><input id="piece-other-${rowNumber}" class="piece-other" name="piece-other" type="text" maxlength="80" hidden /></td><td data-label="Fecha de fabricación"><label class="sr-only" for="manufactured-${rowNumber}">Fecha de fabricación</label><input id="manufactured-${rowNumber}" class="manufactured-at" name="manufactured-at" type="month" /></td><td data-label="Última inspección avanzada"><label class="sr-only" for="inspection-${rowNumber}">Última inspección avanzada</label><input id="inspection-${rowNumber}" class="inspection-at" name="inspection-at" type="month" /></td><td data-label="Última limpieza avanzada"><label class="sr-only" for="cleaning-${rowNumber}">Última limpieza avanzada</label><input id="cleaning-${rowNumber}" class="cleaning-at" name="cleaning-at" type="month" /></td><td class="calculator__result" data-label="Resultado"><span class="result-empty">Ingresa fabricación</span></td><td class="calculator__remove" data-label="Acción"><button class="button-text remove-piece" type="button" aria-label="Quitar pieza">Quitar</button></td>`;
+    rows.append(row);
+    bindRow(row);
+    row.querySelector<HTMLSelectElement>('.piece-type')?.focus();
+  };
+  const csvCell = (value: unknown) => `"${String(value ?? '').replaceAll('"', '""')}"`;
+  const exportLog = () => {
+    if (!rows) return;
+    const header = ['Elemento / número económico', 'Pieza', 'Fecha de fabricación', 'Fecha de retiro', 'Meses restantes', 'Estado', 'Última inspección avanzada', 'Próxima inspección avanzada', 'Última limpieza avanzada', 'Próxima limpieza avanzada'];
+    const body = [...rows.querySelectorAll<HTMLTableRowElement>('tr')].map((row) => {
+      const data = updateRow(row);
+      return [cleanValue(reference), pieceName(row), cleanValue(row.querySelector('.manufactured-at')), data.retirementAt, data.monthsRemaining, data.status, cleanValue(row.querySelector('.inspection-at')), data.nextInspectionAt, cleanValue(row.querySelector('.cleaning-at')), data.nextCleaningAt];
+    });
+    const csv = [header, ...body].map((line) => line.map(csvCell).join(',')).join('\r\n');
+    const blob = new Blob([`\uFEFF${csv}`], { type: 'text/csv;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'bitacora-equipo-bombero.csv';
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+
+  rows?.querySelectorAll<HTMLTableRowElement>('tr').forEach(bindRow);
+  updateSummary();
+  addPiece?.addEventListener('click', addRow);
+  exportCsv?.addEventListener('click', exportLog);
+  printLog?.addEventListener('click', () => window.print());
+</script>
+
+<style>
+  .block { margin-bottom: 4rem; }
+  .calculator { min-width: 0; padding: clamp(1rem, 2.5vw, 2rem); background: var(--color-light); border-top: 4px solid var(--color-primary); }
+  .calculator__identity { display: grid; gap: .35rem; max-width: 34rem; margin-bottom: 1.25rem; }
+  .calculator__identity label { color: var(--color-dark); font-weight: 700; }
+  .calculator__identity label span { color: var(--color-gray); font-weight: 400; }
+  .calculator input, .calculator select { width: 100%; min-height: 44px; padding: .55rem .65rem; border: var(--border); border-radius: var(--radius); background: var(--color-white); color: var(--color-dark); font: inherit; }
+  .calculator__summary { margin: 0 0 1rem; padding: .85rem 1rem; background: var(--color-ink); color: var(--color-white); font-weight: 700; }
+  .calculator__table-wrap, .rules-table-wrap { min-width: 0; overflow-x: auto; border: var(--border); background: var(--color-white); }
+  .calculator__table, .rules-table { width: 100%; min-width: 980px; border-collapse: collapse; }
+  th { background: var(--color-ink); color: var(--color-white); font-size: .78rem; letter-spacing: .04em; text-align: left; text-transform: uppercase; }
+  th, td { padding: .85rem; border-bottom: var(--border); vertical-align: top; }
+  .calculator__table tr:last-child td, .rules-table tr:last-child td { border-bottom: 0; }
+  .piece-other { margin-top: .5rem; }
+  .calculator__result { min-width: 20rem; color: var(--color-gray); font-size: .88rem; line-height: 1.45; }
+  .calculator__result strong, .calculator__result span:not(.result-empty) { display: block; }
+  .status { width: max-content; margin-bottom: .35rem; padding: .2rem .5rem; border-radius: 2px; font-size: .75rem; letter-spacing: .03em; text-transform: uppercase; }
+  .status--vigente { background: #d7f2df; color: #135d2b; }
+  .status--planear-reemplazo { background: #fff0bd; color: #6d4b00; }
+  .status--retirar { background: #fde0e5; color: #8a1028; }
+  .result-empty { color: var(--color-gray); }
+  .button-text { min-height: 44px; border: 0; background: transparent; color: var(--color-primary-dark); cursor: pointer; font: inherit; font-weight: 700; text-decoration: underline; }
+  .calculator__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+  .calculator__actions .btn { min-height: 44px; }
+  .rules-table { min-width: 660px; }
+  .calculator-faq { max-width: 70rem; }
+  .calculator-faq details { margin-bottom: .7rem; padding: 0 1.25rem; border: var(--border); border-left: 3px solid transparent; background: var(--color-white); }
+  .calculator-faq details[open] { border-left-color: var(--color-primary); }
+  .calculator-faq summary { padding: 1rem 0; color: var(--color-dark); cursor: pointer; font-weight: 700; }
+  .calculator-faq p { margin: 0 0 1rem; color: var(--color-gray); }
+  .calculator__byline { margin: 0; color: var(--color-gray); font-size: .9rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+  @media (max-width: 767px) {
+    .calculator { margin-inline: calc(var(--container-px) * -1); padding: 1rem var(--container-px); }
+    .calculator__actions .btn { width: 100%; }
+    .calculator__table-wrap { overflow: visible; border: 0; background: transparent; }
+    .calculator__table { display: block; min-width: 0; }
+    .calculator__table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .calculator__table tbody { display: grid; gap: .85rem; min-width: 0; }
+    .calculator__table tr { display: block; min-width: 0; padding: .9rem; border: var(--border); background: var(--color-white); }
+    .calculator__table td { display: grid; grid-template-columns: minmax(0, 1fr); gap: .35rem; min-width: 0; padding: .6rem 0; border: 0; }
+    .calculator__table td::before { content: attr(data-label); color: var(--color-dark); font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .calculator__table .calculator__result { min-width: 0; }
+    .calculator__table .calculator__remove { padding-bottom: 0; }
+    .calculator__table .calculator__remove .remove-piece { justify-self: start; }
+  }
+  @media print {
+    :global(.topbar), :global(.site-header), :global(.site-footer), :global(.wa-float), :global(.crumbs), :global(.section-menu), :global(.hero), :global(.skip-link), :global(.calculator__actions), :global(.block:not(.calculator)), :global(.calculator__byline) { display: none !important; }
+    :global(body) { background: #fff; }
+    .calculator { padding: 0; border: 0; background: #fff; }
+    .calculator__table-wrap { overflow: visible; border: 0; }
+    .calculator__table { min-width: 0; font-size: 9pt; }
+    .calculator input, .calculator select { min-height: 0; padding: 0; border: 0; appearance: none; }
+  }
+</style>

@@ -68,6 +68,8 @@ Después de un impacto no intentes deducir integridad por la ausencia de una gri
 
 Las fichas disponibles de casco no publican una vida de servicio general que pueda aplicarse a todos los modelos. Conserva asignación, fecha de fabricación cuando aparezca en etiqueta, inspecciones, limpieza, impactos, exposiciones y reparaciones autorizadas. El historial evita basar el retiro sólo en memoria y permite seguir el criterio particular del fabricante.
 
+La [bitácora para retiro del equipo de bombero](/calculadora-vida-util-equipo-de-bombero/) ayuda a ordenar esas fechas sin sustituir el criterio del fabricante.
+
 Una hoja o registro digital por casco debe relacionar número de inventario, modelo, código cuando exista, usuario, configuración de visor o goggles, cubrenuca, lámpara y refacciones instaladas. Al devolverlo de servicio, registra condición, inspección, limpieza y decisión: disponible, separado o enviado a evaluación. Las fichas de Bullard LTX, UST LW y FH911H publican materiales y componentes, pero no una cifra común de vida de servicio. Por eso el criterio es el fabricante y la condición documentada, no una regla de calendario inventada.
 
 ## Qué sí se repone

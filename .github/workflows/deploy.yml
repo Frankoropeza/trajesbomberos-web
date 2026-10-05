@@ -52,3 +52,25 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Aviso a IndexNow (Bing y compañía) con las URL que cambiaron en este push.
+  # Va después del deploy para que Bing encuentre ya la versión nueva.
+  # Si falla, no tumba el sitio: el deploy ya terminó.
+  indexnow:
+    needs: deploy
+    if: github.repository == 'Frankoropeza/trajesbomberos-web'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Esperar a que el CDN sirva la versión nueva
+        run: sleep 45
+      - name: Avisar a IndexNow
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: node scripts/indexnow.mjs

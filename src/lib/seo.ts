@@ -71,6 +71,12 @@ export function organizationSchema(): object {
     alternateName: SITE.name,
     slogan: MARCA.lema,
     url: SITE.url,
+    // Capa de entidad (Estrategia Tier v1.1 · O3): fichas de LORICA en directorios
+    // con el mismo NAP. Cuando existan GBP y redes, se añaden aquí (nota 52 del vault).
+    sameAs: [
+      'https://eurek.com.mx/equipo-contra-incendios/ciudad-de-mexico/lorica/',
+      'https://cdmx.site/categorias/proteccion-contra-incendios/lorica/',
+    ],
     description:
       'Venta de trajes para bomberos y equipo de protección contra incendios en México: estructural, brigadista, forestal, aproximación, entrada y extricación.',
     logo: {
@@ -386,6 +392,7 @@ export interface SchemaInput {
   item?: { name: string; description: string; image?: string; category: string; url: string };
   producto?: ProductoInput;
   estaciones?: EstacionSchema[];
+  webApplication?: { name: string; url: string; description: string; inLanguage?: string };
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -409,6 +416,22 @@ export function buildSchema(input: SchemaInput): object[] {
   if (input.item) schemas.push(conProducto(itemPageSchema(input.item)));
   if (input.producto) schemas.push(productoSchema(input.producto));
   if (input.estaciones?.length) schemas.push(fireStationListSchema(input.estaciones));
+  if (input.webApplication) {
+    const appUrl = new URL(input.webApplication.url, SITE.url).href;
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      '@id': `${appUrl}#webapplication`,
+      name: input.webApplication.name,
+      url: appUrl,
+      description: input.webApplication.description,
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Web',
+      isAccessibleForFree: true,
+      inLanguage: input.webApplication.inLanguage ?? SITE.lang,
+      publisher: { '@id': `${SITE.url}/#organization` },
+    });
+  }
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
   return schemas;
 }
