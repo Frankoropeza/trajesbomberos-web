@@ -89,7 +89,21 @@ export function organizationSchema(): object {
       postalCode: DIRECCION.cp,
       addressCountry: DIRECCION.pais,
     },
-    hasMap: DIRECCION.mapsUrl,
+    // hasMap no es propiedad de Organization (Ahrefs Site Audit: «Propiedad inesperada»);
+    // va dentro de un Place en `location`, que sí la admite.
+    location: {
+      '@type': 'Place',
+      name: SITE.legalName,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: `${DIRECCION.calle}, Col. ${DIRECCION.colonia}`,
+        addressLocality: DIRECCION.alcaldia,
+        addressRegion: DIRECCION.ciudad,
+        postalCode: DIRECCION.cp,
+        addressCountry: DIRECCION.pais,
+      },
+      hasMap: DIRECCION.mapsUrl,
+    },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
