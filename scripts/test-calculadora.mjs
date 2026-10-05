@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import {
   addMonths,
   calculatePiece,
@@ -47,4 +48,14 @@ const withoutRecords = calculatePiece({ manufacturedAt: '2020-01' }, '2026-10');
 assert.equal(withoutRecords.nextInspectionAt, null);
 assert.equal(withoutRecords.nextCleaningAt, null);
 
-console.log('Calculadora: 18 pruebas aprobadas.');
+const pageSource = readFileSync(new URL('../src/pages/calculadora-vida-util-equipo-de-bombero.astro', import.meta.url), 'utf8');
+assert.match(pageSource, /Publicado: octubre de 2026/);
+assert.match(pageSource, /Cómo usar la calculadora en 4 pasos/);
+assert.match(pageSource, /Qué hacer con cada resultado/);
+assert.match(pageSource, /calculadora-vida-util-equipo-de-bombero\.jpg/);
+
+const seoSource = readFileSync(new URL('../src/lib/seo.ts', import.meta.url), 'utf8');
+assert.match(seoSource, /datePublished: input\.webApplication\.datePublished/);
+assert.match(seoSource, /citation: input\.webApplication\.citation/);
+
+console.log('Calculadora: 24 pruebas aprobadas.');

@@ -74,7 +74,7 @@ secciones:
     titulo: "Guías sobre el traje estructural"
     duo:
       - "Cuatro guías para comprar con criterio: <a href=\"/blog/tpp-y-thl-traje-estructural/\">TPP y THL explicados</a>, <a href=\"/blog/trajes-estructurales-romak-comparativa/\">los trajes estructurales Romak Fire comparados</a>, <a href=\"/blog/vida-util-traje-bombero-nfpa-1850/\">la vida útil del traje según NFPA 1850</a> y cómo tomar medidas antes de pedir."
-      - "Si vas a licitar, léelas con quien arma el expediente. Y si todavía dudas entre estructural y brigadista, la guía <a href=\"/blog/traje-estructural-o-brigadista/\">traje estructural o brigadista</a> te ayuda a decidir."
+      - "Si vas a licitar, léelas con quien arma el expediente. Y si todavía dudas entre estructural y brigadista, la guía <a href=\"/blog/traje-estructural-o-brigadista/\">traje estructural o brigadista</a> te ayuda a decidir. Para programar reposiciones, la herramienta gratuita te ayuda a <a href=\"/calculadora-vida-util-equipo-de-bombero/\">calcular la fecha de retiro de cada pieza</a>."
 conjunto:
   titulo: "Lo que se pide junto con el traje estructural"
   intro: "El traje se completa con estas piezas. Si ya las tienes, dinos el modelo para revisar la interfaz."

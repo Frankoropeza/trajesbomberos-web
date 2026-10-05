@@ -392,7 +392,15 @@ export interface SchemaInput {
   item?: { name: string; description: string; image?: string; category: string; url: string };
   producto?: ProductoInput;
   estaciones?: EstacionSchema[];
-  webApplication?: { name: string; url: string; description: string; inLanguage?: string };
+  webApplication?: {
+    name: string;
+    url: string;
+    description: string;
+    inLanguage?: string;
+    datePublished?: string;
+    dateModified?: string;
+    citation?: object[];
+  };
 }
 
 // ÚNICO emisor (regla B3) — solo BaseLayout lo llama.
@@ -429,7 +437,11 @@ export function buildSchema(input: SchemaInput): object[] {
       operatingSystem: 'Web',
       isAccessibleForFree: true,
       inLanguage: input.webApplication.inLanguage ?? SITE.lang,
+      ...(input.webApplication.datePublished ? { datePublished: input.webApplication.datePublished } : {}),
+      ...(input.webApplication.dateModified ? { dateModified: input.webApplication.dateModified } : {}),
+      author: { '@id': `${SITE.url}/#organization` },
       publisher: { '@id': `${SITE.url}/#organization` },
+      ...(input.webApplication.citation?.length ? { citation: input.webApplication.citation } : {}),
     });
   }
   if (input.faqs?.length) schemas.push(faqSchema(input.faqs));
