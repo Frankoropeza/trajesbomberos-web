@@ -46,6 +46,8 @@ El guante estructural se selecciona para la operación declarada por el modelo, 
 
 El guante de rescate se elige para la maniobra autorizada y se prueba con la herramienta, conectores y controles que se usarán. La compra debe definir palma, dedos, agarre, talla y protección específica declarada, sin usar el nombre “rescate” como una promesa general contra cualquier exposición. Tras contacto con vidrio, combustibles, fluidos o polvo, separa el par hasta seguir el proceso de limpieza o evaluación que corresponda. La destreza se conserva cuando el guante ajusta y el usuario puede identificar, sujetar y liberar los elementos de su tarea.
 
+Los niveles de corte ANSI/ISEA 105 y EN 388, y la prueba de destreza con herramienta hidráulica, se detallan en [guantes de extricación: resistencia al corte y destreza](/blog/guantes-de-extricacion-resistencia-al-corte/).
+
 ## Guante forestal: movilidad de línea y revisión de desgaste
 
 Para trabajo exterior, el guante forestal acompaña marcha, herramienta de línea, ceniza, tierra y calor propio de la operación; no sustituye un guante estructural para ataque interior. Prueba palma, puño y talla con la herramienta predominante y revisa al final de jornada costuras de dedos, humedad interior y desgaste donde se concentra el agarre. Mantén pares forestales identificados y separados de los estructurales para no cambiar de familia por disponibilidad. La limpieza y el secado autorizados permiten revisar condición antes de la siguiente salida.

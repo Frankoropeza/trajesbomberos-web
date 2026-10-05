@@ -38,6 +38,8 @@ Para combate, el ERA se integra con [casco](/cascos/), capucha, máscara, regula
 
 No conviertas un equipo industrial en ERA de ataque interior por agregarle una prenda, ni des por hecho que un ERA de combate resuelve una operación química sin revisar compatibilidad. En [Hazmat](/trajes/hazmat/) la selección se une con el nivel de barrera y la vía de exposición. La configuración de un encapsulado, por ejemplo, requiere revisar dimensiones y uso del equipo de aire dentro del traje.
 
+Cuando el riesgo sólo exige evacuar, el equipo es otro: la guía de [ERA de escape (EEBD)](/blog/era-de-escape-eebd-que-es/) explica tipos, duración y ubicación.
+
 ## Máscara: el sello manda
 
 La máscara es la interfaz entre el equipo y la persona. Debe sellar con el rostro, permanecer estable al mover cabeza y trabajar con casco, capucha y protección ocular. La prueba de ajuste y la capacitación de colocación son parte de la puesta en servicio; no son un extra para después de la compra. Vello facial, lentes incompatibles, correas mal ajustadas o una talla equivocada pueden impedir el sello aunque cilindro y regulador estén en perfecto estado. Cada componente se detalla en [partes del equipo de respiración autónoma](/blog/partes-del-equipo-de-respiracion-autonoma/).

@@ -30,6 +30,8 @@ La bota acompaña cada maniobra y por eso se elige desde el terreno, no desde un
 
 Anota los riesgos reales de pie y tobillo: impacto, perforación, resbalamiento, agua, químicos, contacto térmico, objetos pesados y distancia recorrida. Después vincúlalos con el resto del EPP. Una bota para [traje estructural](/trajes/estructural/) debe formar una interfaz que cubra al usuario al agacharse; para brigada se revisa contra la función definida en el análisis de riesgo. El tipo de operación determina la prioridad antes que el material de la bota.
 
+Si el usuario trabaja en línea de fuego, la guía de [cómo elegir bota forestal](/blog/como-elegir-bota-forestal/) cubre caña, suela, talla en pendiente y domado de la piel.
+
 ## Hule: barrera continua y ajuste de pantorrilla
 
 Las botas de hule suelen elegirse cuando interesa una barrera continua frente a agua, lodo y contaminantes del piso. Esa construcción cambia la sensación de ajuste y el peso. Antes de decidir, el usuario debe caminar, subir y bajar escalones, ponerse de rodillas y flexionar con el pantalón de servicio. Si el borde superior roza, si el talón se levanta o si la bota no recibe correctamente la pantalonera, el problema aparecerá con mayor intensidad durante una emergencia.

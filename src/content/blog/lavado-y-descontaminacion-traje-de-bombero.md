@@ -55,6 +55,8 @@ La descontaminación en escena es la medida inmediata para reducir la carga supe
 
 El lavado avanzado es un proceso posterior de mayor control. La guía publicada de [NFPA 1850 y vida útil](/blog/vida-util-traje-bombero-nfpa-1850/) establece el marco para inspección, limpieza y retiro; las instrucciones del fabricante del composite determinan el método específico. En la ficha del chaquetón publicado se declara lavado avanzado dos veces cada doce meses con lavadora extractora, nunca de carga superior. Ante una exposición o daño fuera de lo previsto, no esperes al calendario: segrega la pieza y pide su evaluación.
 
+El contexto de salud ocupacional, con la clasificación de la IARC y las vías de exposición, está en la guía de [cáncer en bomberos y reducción de la exposición](/blog/cancer-en-bomberos-reducir-exposicion/).
+
 ## Separa piezas y conserva su identificación
 
 Cada componente requiere control propio. El chaquetón conserva capa exterior, barrera de humedad y barrera térmica; la pantalonera tiene sus propios cierres, refuerzos e interfaces. No los trates como si fueran una sola bolsa de ropa. Revisa bolsillos, retira objetos autorizados por el procedimiento y conserva identificador, talla y relación con su usuario o número de inventario.

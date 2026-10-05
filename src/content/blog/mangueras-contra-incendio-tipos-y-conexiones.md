@@ -63,6 +63,8 @@ Durante inspección, observa selector, válvula, cuerpo, sellos, empuñadura y e
 
 El patrón de chorro, niebla o combinado, el caudal que publique el fabricante y la entrada deben aparecer en la misma requisición que el tramo al cual se conectará. Una prueba controlada confirma que el pitón asienta, que el selector se reconoce con guantes y que el soporte permite retirarlo sin dañar la entrada. Estas comprobaciones se realizan antes de asignar la línea, nunca como sustituto de capacitación para su uso.
 
+La comparativa de [tipos de pitón contra incendio](/blog/tipos-de-piton-contra-incendio/) explica chorro sólido, niebla de caudal fijo, seleccionable y automático, y su relación con caudal, presión y reacción.
+
 ## Llave para hidrante y spanner
 
 La [llave para hidrante](/mangueras-y-accesorios/llave-para-hidrante/) se especifica para el elemento de operación de la instalación; la spanner atiende acoples. No son la misma herramienta. Antes de comprar, identifica hidrantes, tapas, tuercas y acoples que atiende la unidad, después pide tipo de llave, material declarado, medidas, cantidad por vehículo y soporte.

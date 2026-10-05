@@ -89,6 +89,8 @@ Una bota forestal acompaña pendiente, piedra, ceniza y desplazamiento continuo.
 
 Al regreso de campo, retira tierra y ceniza conforme a la indicación del fabricante y deja secar sin calor directo. Revisa suela, costuras, agujetas, cierre, lengüeta y unión con la prenda. Una bota con daño de planta o pérdida de tracción se aparta para evaluación; que el corte todavía luzca entero no restaura la función de apoyo.
 
+Para la selección detallada del calzado, consulta [cómo elegir bota forestal para combatiente](/blog/como-elegir-bota-forestal/).
+
 ## Lo que no sustituye al equipo estructural
 
 Ni ropa forestal monocapa, casco forestal, goggle o bota para terreno equivalen a un conjunto estructural para incendio en edificio. El estructural integra otras capas, casco, capucha, guantes, bota y la evaluación de ERA para su escenario. Usar el equipo forestal en ataque interior deja brechas de protección; usar el estructural de forma automática en una jornada forestal puede añadir carga térmica y fatiga sin resolver mejor la operación exterior.

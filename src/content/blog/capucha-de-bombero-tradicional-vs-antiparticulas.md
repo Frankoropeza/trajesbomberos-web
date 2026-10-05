@@ -71,6 +71,8 @@ La capucha se lava después de cada exposición a productos de combustión, no s
 
 La dotación debe prever al menos una pieza de reemplazo por el ciclo de lavado y evaluación que establezca la corporación. La capucha expuesta se segrega, identifica y procesa; la limpia se conserva protegida de polvo y contacto con EPP contaminado. Una reserva no es un lujo de almacén: evita que la prisa devuelva a servicio una pieza húmeda, sucia o aún pendiente de inspección.
 
+Por qué la capucha es la pieza más expuesta y cómo funciona un programa de dos capuchas se explica en [cáncer en bomberos: cómo reducir la exposición](/blog/cancer-en-bomberos-reducir-exposicion/).
+
 ## Cuándo se retira
 
 Retira por agujeros, costuras abiertas, pérdida de elasticidad, contaminación persistente o condición que afecte la interfaz. Inspecciona abertura, tela, babero y costuras antes de reasignar.
