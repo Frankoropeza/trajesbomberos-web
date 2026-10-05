@@ -46,6 +46,8 @@ Antes de usarla, el procedimiento de la corporación delimita espacio de giro y 
 
 En una brecha o en trabajo de remoción, la Pulaski aporta el filo y el azadón de su cabeza combinada; por eso se pide cuando ambas funciones están contempladas en el plan de la cuadrilla. El comprador no debe describirla como un rastrillo ni recibirla como sustituto de un McLeod. El rol asignado, el tipo de mango y la forma de resguardo hacen que una reposición conserve la misma función.
 
+El origen, las partes, la técnica en la línea de control y el afilado se explican en [qué es una Pulaski y cómo se usa](/blog/herramienta-pulaski-que-es-y-como-se-usa/).
+
 ## McLeod: rastrillo y azadón
 
 El McLeod combina dientes de rastrillo con hoja tipo azadón. Su selección pide ancho y condición de cabeza, cantidad de dientes si la ficha lo declara, mango y capacidad de resguardo. No reemplaza la Pulaski ni un rastrillo ligero: cambia el trabajo sobre suelo y combustible, así como la carga para la persona usuaria.

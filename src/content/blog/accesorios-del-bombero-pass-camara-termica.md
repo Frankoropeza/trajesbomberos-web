@@ -47,6 +47,8 @@ Una cámara reúne sensor infrarrojo, lente, pantalla, controles, batería y car
 
 La partida debe distinguir cámara, baterías, cargadores, base, funda y correa. Una base instalada en vehículo no es igual a un punto de carga de estación. La aceptación incluye portar el equipo con guante, identificar controles, observar objetos conocidos y practicar cómo se transmite el hallazgo; encender la pantalla no acredita interpretación. Revisa lente infrarrojo, pantalla, puerta de batería, contactos y correa. Un lente dañado, golpe, tapa floja o comportamiento irregular separa la unidad hasta evaluación; no se usan limpiadores o abrasivos no autorizados sobre la óptica.
 
+Resolución, frecuencia de imagen, modos de sensibilidad, norma y entrenamiento se comparan en la guía de [cámara térmica para bomberos: cómo funciona y cómo elegirla](/blog/camara-termica-para-bomberos-como-elegir/).
+
 ## Iluminación de casco y linterna
 
 Una [lámpara de casco](/accesorios/lampara-de-casco/) debe usar el punto de montaje previsto. La [Streamlight Vantage](/accesorios/streamlight-vantage/) se prueba con el visor, goggles y máscara para que el haz no bloquee visión ni agregue un punto de enganche. La [linterna de bombero](/accesorios/linterna-de-bombero/) se define por sujeción, controles y ubicación de transporte.

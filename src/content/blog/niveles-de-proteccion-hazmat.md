@@ -63,6 +63,8 @@ El [traje encapsulado nivel A](/trajes/hazmat/traje-encapsulado-nivel-a/) forma 
 
 Su ficha declara NFPA 1990, edición 2022, y aclara que no se presume protección contra fuego. Pide la compatibilidad para sustancia, concentración, temperatura y tiempo previsto; revisa dimensiones y acceso a controles del ERA antes de entrar. La colocación y el retiro se ensayan en zona limpia con apoyo de una persona observadora, porque abrir un cierre contaminado traslada el riesgo a piel, ropa y equipo limpio.
 
+La prueba de presión, la colocación asistida y el retiro en el corredor de descontaminación se detallan en la guía de [colocación y prueba del traje encapsulado nivel A](/blog/traje-encapsulado-nivel-a-colocacion-y-prueba/).
+
 ## Nivel B: salpicadura con ERA exterior
 
 El [traje químico nivel B](/trajes/hazmat/traje-nivel-b/) combina una barrera corporal elegida para líquido o salpicadura con ERA exterior cuando el ambiente exige aire independiente. La diferencia frente a nivel A es esencial: el ERA queda accesible, pero no encapsulado. Si existe vapor que requiere proteger también el equipo de respiración, B ya no corresponde aunque el origen visible sea un líquido.

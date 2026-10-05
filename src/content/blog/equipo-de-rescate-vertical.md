@@ -57,6 +57,8 @@ La construcción kernmantle organiza una funda exterior sobre un alma; durante l
 
 Las cuerdas estáticas y dinámicas no se reemplazan entre sí por conveniencia. Si el modelo las declara, conserva esa designación en la etiqueta de almacenamiento, el registro y la cotización; si el uso requiere una definición no publicada, debe confirmarse antes de la recepción. El almacenamiento se mantiene lejos de químicos, humedad persistente, radiación UV y herramientas con filo que puedan comprometer la funda o las terminaciones.
 
+Para comparar construcción, elongación y clases de uso NFPA, consulta [cuerda estática o dinámica para rescate](/blog/cuerda-estatica-o-dinamica-rescate/).
+
 ## Mosquetones y conectores
 
 El mosquetón se compra como conector específico, no como accesorio genérico. Confirma forma, sistema de cierre y compatibilidad física con arnés, cuerda y kit. No fuerces un cierre ni integres una pieza que no asiente con el componente real; haz comprobaciones controladas conforme a procedimiento.

@@ -90,6 +90,8 @@ La sección de [kits de equipo para bombero](/kits/) ayuda cuando necesitas una 
 
 No combines piezas por apariencia. Una reposición debe cotejarse con prenda, talla, accesorios y operación existentes. La guía de [partes del traje de bombero](/blog/partes-del-traje-de-bombero/) detalla las interfaces que se deben volver a probar cuando cambia un componente.
 
+La comparativa de [kit de bombero estructural, brigadista o forestal](/blog/kit-de-bombero-estructural-brigadista-forestal/) muestra qué incluye cada configuración de referencia y cómo elegirla.
+
 ## Documentos para una compra institucional
 
 La requisición debe identificar operación, partidas, modelos, configuraciones, tallas, cantidades, documentos exigidos y criterio de recepción. Solicita ficha técnica por partida y confirma el estatus de norma tal como está declarado para cada producto. No uses una certificación de una prenda para justificar casco, bota, guante o ERA distintos.
