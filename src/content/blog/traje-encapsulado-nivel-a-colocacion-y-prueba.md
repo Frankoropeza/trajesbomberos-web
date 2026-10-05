@@ -2,23 +2,23 @@
 title: "Traje encapsulado nivel A: colocación, prueba y retiro"
 titleAccent: "sin perder la hermeticidad"
 eyebrow: "Guía técnica · Materiales peligrosos"
-lead: "Un traje encapsulado nivel A protege sólo mientras su envolvente sigue cerrada: visor, cierre, válvulas, guantes y botas forman una sola barrera contra vapor. La compra correcta es apenas el principio; la protección real depende de cómo se prueba, se viste, se opera y se retira."
+lead: "Un traje encapsulado nivel A te protege mientras su envolvente siga cerrada. Visor, cierre, válvulas, guantes y botas forman una sola barrera contra vapor, y basta una falla en cualquiera para perderla. Por eso comprarlo es apenas el primer paso."
 descRight:
-  - "La prueba de presión, la colocación asistida y el retiro dentro del corredor de descontaminación son tan importantes como el material del traje."
-  - "LORICA cotiza trajes encapsulados con ficha técnica, tabla de compatibilidad química y la configuración de guantes y botas escrita por partida."
+  - "Te explicamos cómo se prueba, cómo se coloca con ayuda, qué limita el tiempo de trabajo y cómo se retira sin contaminar a quien lo usa."
+  - "En LORICA te entregamos el traje con su tabla de compatibilidad química, guantes y botas definidos y lo necesario para probarlo desde la recepción."
 meta:
   - "Nivel A"
   - "Prueba de presión"
   - "Colocación asistida"
   - "NFPA 1990"
-resumen: "Traje encapsulado nivel A: prueba de presión, colocación con ayudante, tiempo de trabajo, retiro en descontaminación, inspección y cuándo sacarlo de servicio."
+resumen: "Traje encapsulado nivel A: cómo se prueba a presión, cómo se coloca con ayudante, cuánto tiempo se puede trabajar, cómo se retira y cuándo sacarlo de servicio."
 ancla: "Traje encapsulado: colocación y prueba"
 categoria: "especificacion"
 familia: "hazmat"
 fecha: 2026-10-05
 autor: "Equipo técnico LORICA"
 seoTitle: "Traje encapsulado nivel A: colocación, prueba y retiro"
-description: "Cómo se coloca, se prueba y se retira un traje encapsulado nivel A: prueba de presión, ayudante, tiempo de aire, descontaminación e inspección."
+description: "Colocación del traje encapsulado nivel A paso a paso: prueba de presión, ayudante, tiempo de trabajo, retiro en descontaminación y cuándo sacarlo de servicio."
 keywords:
   - "colocación del traje encapsulado"
   - "prueba de presión traje encapsulado"
@@ -34,120 +34,122 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 ---
 
-El traje encapsulado nivel A es la configuración de mayor barrera en una respuesta con materiales peligrosos. Envuelve por completo al usuario y a su equipo de respiración autónoma para impedir que un vapor tóxico entre en contacto con la piel o con el sistema respiratorio. Esa protección no se compra cerrada en una caja; depende de que la envolvente siga hermética desde la prueba en estación hasta el último paso del retiro.
+Hay una fuga en una planta química y nadie sabe todavía qué sustancia es. Tu unidad Hazmat se prepara para entrar con la máxima protección disponible: el traje encapsulado nivel A. En ese momento no importa cuánto costó el traje ni qué marca es. Importa que pasó su última prueba de presión, que alguien sabe cerrarlo bien y que el corredor de descontaminación está listo para recibir a tu gente de regreso.
 
-Esta guía explica qué revisar antes de usar un [traje encapsulado nivel A](/trajes/hazmat/traje-encapsulado-nivel-a/), cómo se coloca con ayuda, qué limita el tiempo de trabajo y cómo se retira sin trasladar la contaminación al usuario. Si todavía estás definiendo qué nivel corresponde a tu escenario, empieza por los [niveles de protección Hazmat A, B, C y D](/blog/niveles-de-proteccion-hazmat/).
+La colocación del traje encapsulado, su prueba y su retiro son tan importantes como el material. En esta guía te explicamos qué revisar antes de usar un [traje encapsulado nivel A](/trajes/hazmat/traje-encapsulado-nivel-a/), cómo se viste con ayuda, qué limita el tiempo de trabajo y cómo quitárselo sin llevarse la contaminación. Si todavía no defines qué nivel necesitas, empieza por los [niveles de protección Hazmat A, B, C y D](/blog/niveles-de-proteccion-hazmat/).
 
-## Qué es un traje encapsulado nivel A
+## Qué es exactamente un traje encapsulado nivel A
 
-Un traje encapsulado, también llamado traje hermético a vapor, es una prenda de una sola pieza con visor integrado, guantes y botas unidos o acoplados, cierre hermético y válvulas de exhalación. El [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) va dentro del traje, por eso la silueta muestra un volumen en la espalda.
+Es una prenda de una sola pieza, también llamada traje hermético a vapor. Tiene visor integrado, guantes y botas unidos o acoplados, cierre hermético y válvulas de exhalación. El [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) va dentro del traje; por eso su silueta muestra un volumen en la espalda.
 
-La referencia vigente para este tipo de prenda es la NFPA 1990, que integró en un solo documento a las antiguas NFPA 1991, 1992 y 1994. Lo que certifica el fabricante es el modelo con su configuración declarada; cualquier cambio de guante, bota o accesorio fuera de esa configuración se revisa antes de usarlo.
+La referencia vigente es la NFPA 1990, que integró en un solo documento a las antiguas NFPA 1991, 1992 y 1994. Lo que certifica la marca es el modelo con su configuración declarada. Si cambias un guante, una bota o un accesorio fuera de esa configuración, tienes que revisarlo antes de usarlo.
 
-### Cuándo se justifica el nivel A
+### ¿Cuándo necesitas el nivel A?
 
-El nivel A corresponde cuando tu evaluación de riesgo indica que hay, o puede haber, un vapor o gas peligroso por contacto con la piel además del riesgo respiratorio. También se usa en una respuesta inicial con un agente todavía no identificado, mientras el monitoreo confirma qué hay en el ambiente.
+Cuando tu evaluación de riesgo indica que hay, o puede haber, un vapor o gas peligroso por contacto con la piel, además del riesgo respiratorio. También en la respuesta inicial con un agente todavía desconocido, mientras el monitoreo confirma qué hay en el ambiente.
 
-No es un nivel B «mejorado». Si el riesgo es salpicadura líquida con agente identificado, un [traje químico nivel B](/trajes/hazmat/traje-nivel-b/) con ERA exterior suele dar más movilidad y menos carga térmica para la misma tarea.
+No lo veas como un nivel B mejorado. Si el riesgo es salpicadura líquida de un agente identificado, un [traje químico nivel B](/trajes/hazmat/traje-nivel-b/) con ERA exterior te da más movilidad y menos calor para la misma tarea.
 
-## Componentes que forman la barrera
+## Las piezas que forman la barrera
 
-La hermeticidad de un traje nivel A se pierde por el punto más débil. Por eso cada componente se revisa y se registra por separado.
+La hermeticidad se pierde por el punto más débil. Por eso conviene que revises y registres cada componente por separado.
 
-| Componente | Función | Qué revisar antes de usar |
+| Componente | Qué hace | Qué revisar antes de usarlo |
 | --- | --- | --- |
 | Envolvente | Barrera química contra vapor y líquido | Cortes, abrasión, pliegues marcados, rigidez o decoloración |
 | Visor | Visión con barrera continua | Rayones, opacidad, grietas y estado del sello perimetral |
-| Cierre hermético | Entrada y salida del usuario | Dientes, deslizador, lubricación según fabricante y solapa protectora |
+| Cierre hermético | Entrada y salida del usuario | Dientes, deslizador, lubricación según la ficha y solapa protectora |
 | Válvulas de exhalación | Alivio del aire exhalado por el ERA | Diafragmas limpios, asentados y sin deformación |
 | Guantes | Barrera de manos, a menudo en capas | Compatibilidad con el agente, talla, anillos de acople y traslape |
 | Botas | Barrera de pie con suela y puntera | Unión con la pierna del traje, suela y caña sin cortes |
 
-Los [guantes para químicos](/trajes/hazmat/guantes-quimicos/) y las [botas químicas](/trajes/hazmat/botas-quimicas/) se especifican en la misma partida que el traje. Un guante resistente al agente que no acopla bien al puño deja abierta la vía de entrada más frecuente.
+Pide los [guantes para químicos](/trajes/hazmat/guantes-quimicos/) y las [botas químicas](/trajes/hazmat/botas-quimicas/) en la misma partida que el traje. Un guante que resiste el agente pero acopla mal al puño deja abierta la vía de entrada más frecuente.
 
-## La prueba de presión antes del servicio
+## La prueba de presión: tu seguro antes de cada servicio
 
-La prueba de presión confirma que la envolvente completa retiene aire: material, costuras, visor, cierre y uniones. El método de referencia es ASTM F1052: el traje se cierra, se infla a la presión que indica el fabricante y se mide si la caída en un tiempo determinado queda dentro del límite. La presión, el tiempo y la tolerancia los define el fabricante del modelo, no una cifra genérica.
+La prueba de presión confirma que la envolvente completa retiene aire: material, costuras, visor, cierre y uniones. El método de referencia es ASTM F1052. Cierras el traje, lo inflas a la presión que indica la marca y mides cuánto cae en un tiempo determinado. La presión, el tiempo y la tolerancia los define la ficha del modelo, no una cifra genérica.
 
-### Cuándo se prueba
+### ¿Cuándo hay que probarlo?
 
-Se prueba al recibir el traje, después de cada uso, después de cualquier reparación autorizada y en el intervalo periódico que fije el fabricante para trajes en resguardo. Un traje guardado varios meses sin prueba no se considera disponible por el solo hecho de estar en su empaque.
+Al recibirlo, después de cada uso, después de cualquier reparación autorizada y en el intervalo periódico que fije la marca para los trajes guardados. Un traje que lleva meses en su empaque sin prueba no está disponible sólo porque se ve nuevo.
 
-### Qué necesitas para probar
+### ¿Qué necesitas para probarlo?
 
-El fabricante suele ofrecer o especificar un kit de prueba: adaptadores para las válvulas, manómetro y fuente de aire. Registra fecha, presión inicial, presión final, resultado y responsable. Si el traje no pasa, se separa y se etiqueta como fuera de servicio hasta que el fabricante o un taller autorizado lo evalúe.
+Normalmente un kit de prueba: adaptadores para las válvulas, manómetro y fuente de aire. Anota fecha, presión inicial, presión final, resultado y responsable. Si el traje no pasa, sepáralo y etiquétalo fuera de servicio hasta que la marca o un taller autorizado lo evalúe.
 
-## Colocación asistida paso a paso
+> **Consejo de campo:** incluye el kit de prueba en la misma compra que el traje. Sin él no puedes recibir el equipo con evidencia ni devolverlo a servicio después de una emergencia.
 
-Un usuario no se coloca solo un traje encapsulado. Necesita un ayudante que conozca el modelo, revise cada interfaz y cierre el traje desde fuera. Antes de vestirse, el usuario se hidrata, retira objetos punzantes y se coloca la ropa interior que indique el procedimiento.
+## Cómo se coloca, paso a paso
 
-1. **Revisión previa.** Ayudante y usuario confirman la fecha de la última prueba de presión, la condición del visor y el funcionamiento del cierre.
-2. **Botas y piernas.** El usuario introduce los pies con las botas en la configuración del modelo, sin doblar el material del tobillo.
-3. **ERA.** Se coloca y se prueba el equipo de respiración autónoma fuera del traje: presión del cilindro, alarma, sello de la máscara y regulador.
-4. **Torso y brazos.** El usuario entra al traje con el ERA puesto; el ayudante guía las mangas para que los guantes interiores queden en posición.
-5. **Cierre.** El ayudante cierra completo, cubre con la solapa y confirma que ninguna correa quede atrapada.
-6. **Verificación final.** Comunicación por radio, visión por el visor, válvulas despejadas y movilidad básica: agacharse, girar y levantar los brazos.
+Nadie se pone solo un traje encapsulado. Necesitas un ayudante que conozca el modelo, revise cada unión y cierre el traje desde fuera. Antes de vestirse, el usuario se hidrata, se quita objetos punzantes y se pone la ropa interior que indique el procedimiento.
 
-Ensaya esta secuencia en entrenamiento con el mismo ERA y el mismo radio que usarás en el incidente. Una válvula que no alcanzas o una alarma que no escuchas dentro del traje se descubre en la práctica, no en la zona caliente.
+1. **Revisión previa.** Ayudante y usuario confirman la fecha de la última prueba de presión, el estado del visor y que el cierre corra bien.
+2. **Botas y piernas.** El usuario mete los pies en las botas según la configuración del modelo, sin doblar el material del tobillo.
+3. **ERA.** El usuario se lo coloca y lo prueba fuera del traje: presión del cilindro, alarma, sello de la máscara y regulador.
+4. **Torso y brazos.** Con el ERA puesto, el usuario entra al traje y el ayudante guía las mangas para que los guantes interiores queden en su lugar.
+5. **Cierre.** El ayudante cierra por completo, cubre con la solapa y confirma que ninguna correa quede atrapada.
+6. **Verificación final.** Radio, visión por el visor, válvulas despejadas y movilidad básica: agacharse, girar y levantar los brazos.
 
-## Tiempo de trabajo y carga térmica
+Ensaya esta secuencia en entrenamiento con el mismo ERA y el mismo radio que usarás en un incidente real. Una válvula que no alcanzas o una alarma que no escuchas se descubren en la práctica, nunca en la zona caliente.
 
-Dentro del traje encapsulado el usuario no intercambia calor con el ambiente. El esfuerzo físico eleva la temperatura corporal más rápido que con cualquier otra configuración, y el aire del cilindro se consume más deprisa con el esfuerzo.
+## Cuánto tiempo se puede trabajar dentro
 
-El tiempo de trabajo se planea con tres límites: el aire disponible, la carga térmica del usuario y el tiempo que necesita el corredor de descontaminación para recibirlo. El jefe de la operación fija el criterio de salida antes de entrar, y el equipo de respaldo permanece vestido y listo mientras haya personal en la zona caliente. El ERA y su [cilindro de fibra de carbono](/blog/cilindros-de-fibra-de-carbono-era/) determinan buena parte de esa autonomía.
+Dentro del traje no hay intercambio de calor con el ambiente. El esfuerzo sube la temperatura del cuerpo más rápido que con cualquier otra configuración, y el aire del cilindro se consume más deprisa.
 
-## Retiro dentro del corredor de descontaminación
+Planea el tiempo de trabajo con tres límites: el aire disponible, el calor que acumula el usuario y el tiempo que necesita el corredor de descontaminación para recibirlo. El jefe de la operación fija el criterio de salida antes de entrar. El equipo de respaldo permanece vestido y listo mientras haya personal en la zona caliente. El ERA y su [cilindro de fibra de carbono](/blog/cilindros-de-fibra-de-carbono-era/) determinan buena parte de esa autonomía.
 
-El retiro es el momento con más riesgo de contaminación cruzada. El exterior del traje se descontamina mientras el usuario sigue respirando del ERA, y sólo después se abre el cierre.
+## El retiro: el momento de mayor riesgo
 
-- El personal de descontaminación usa la protección que su propio análisis indica, normalmente un nivel inferior al del usuario.
-- El traje se abre y se enrolla hacia afuera, de modo que la cara exterior nunca toque la piel ni la ropa del usuario.
-- El usuario sale del traje sin apoyar las manos en el exterior y conserva la máscara hasta que el procedimiento lo permita.
-- El traje retirado se embolsa e identifica con el agente, el tiempo de exposición y el nombre del usuario.
+Quitarse el traje es cuando más fácil se contamina el usuario. Por eso tu equipo de descontaminación limpia el exterior mientras el usuario sigue respirando del ERA, y sólo después abre el cierre.
 
-Para entender cómo encaja esta etapa con el resto del equipo, revisa la guía de [lavado y descontaminación del traje de bombero](/blog/lavado-y-descontaminacion-traje-de-bombero/). Los principios de registro e inspección son los mismos, aunque los agentes químicos exigen el procedimiento específico del fabricante.
+- El personal de descontaminación usa la protección que indica su propio análisis, normalmente un nivel menor que el del usuario.
+- El traje se abre y se enrolla hacia afuera, para que su cara exterior nunca toque la piel ni la ropa.
+- El usuario sale sin apoyar las manos en el exterior y conserva la máscara hasta que el procedimiento lo permita.
+- El traje se embolsa e identifica con el agente, el tiempo de exposición y el nombre de quien lo usó.
 
-## Inspección y retiro definitivo del traje
+La guía de [lavado y descontaminación del traje de bombero](/blog/lavado-y-descontaminacion-traje-de-bombero/) sigue los mismos principios de registro e inspección. Con agentes químicos, eso sí, manda el procedimiento específico de la marca.
 
-Después de cada uso, y una vez descontaminado conforme al procedimiento, el traje se inspecciona y se vuelve a probar a presión. Sale de servicio cuando ocurre cualquiera de estas condiciones:
+## Cuándo el traje ya no debe volver a servicio
+
+Después de cada uso, una vez descontaminado, inspecciona el traje y vuelve a probarlo a presión. Retíralo cuando ocurra cualquiera de estas condiciones:
 
 - No pasa la prueba de presión.
-- Tuvo exposición a un agente para el que el fabricante no declara compatibilidad, o la descontaminación no puede confirmarse.
-- El visor muestra opacidad o grietas, o el cierre ya no corre completo.
+- Estuvo expuesto a un agente para el que la marca no declara compatibilidad, o no puedes confirmar la descontaminación.
+- El visor tiene opacidad o grietas, o el cierre ya no corre completo.
 - Hay cortes, perforaciones o zonas rígidas en la envolvente.
-- Se cumplió la vida útil o el número de usos que declare el fabricante.
+- Cumplió la vida útil o el número de usos que declara la ficha.
 
-Existen trajes encapsulados reutilizables y modelos de uso limitado. La decisión se toma por el tipo de respuesta de tu unidad y por tu capacidad real de descontaminar, probar y registrar. Un traje reutilizable sin programa de prueba no es más económico, es más riesgoso.
+Existen trajes reutilizables y modelos de uso limitado. Elige según el tipo de respuesta de tu unidad y tu capacidad real de descontaminar, probar y registrar. Un traje reutilizable sin programa de prueba no sale más barato: sale más riesgoso.
 
-## Errores frecuentes al adquirir un traje nivel A
+## Errores frecuentes al comprar un traje nivel A
 
-Los pliegos que sólo dicen «traje encapsulado nivel A» dejan sin definir lo que decide la protección. Estos son los errores que más vemos:
+Un pliego que sólo dice «traje encapsulado nivel A» deja fuera justo lo que decide la protección. Estos son los errores que más vemos:
 
 - **Comprar sin tabla de compatibilidad.** El material se elige contra los agentes que tu unidad espera encontrar.
-- **Separar guantes y botas del traje.** Las extremidades se especifican en la misma partida y se prueban acopladas.
-- **Ignorar el volumen del ERA.** El traje debe alojar el modelo de ERA que usa tu corporación; confírmalo antes de ordenar.
-- **No incluir el kit de prueba.** Sin él no puedes recibir ni devolver el traje a servicio con evidencia.
-- **Tallas genéricas.** Una talla corta limita el movimiento y tensa costuras; una grande enreda pies y manos.
+- **Separar guantes y botas del traje.** Las extremidades van en la misma partida y se prueban acopladas.
+- **Ignorar el volumen del ERA.** El traje tiene que alojar el modelo de ERA de tu corporación; confírmalo antes de ordenar.
+- **Olvidar el kit de prueba.** Sin él no recibes ni liberas el traje con evidencia.
+- **Pedir tallas genéricas.** Una talla corta limita el movimiento y tensa las costuras; una grande enreda pies y manos.
 
 ## Cómo lo cotizamos
 
-En LORICA cotizamos el traje encapsulado nivel A con su ficha técnica, la tabla de compatibilidad química del fabricante, la configuración de guantes y botas y los accesorios de prueba. Para proponerte el modelo necesitamos los agentes que esperas, el tipo de respuesta, el ERA que usa tu unidad y las tallas de los usuarios.
+Con más de 35 años equipando a bomberos y brigadas industriales en los 32 estados, en LORICA sabemos que un traje nivel A sólo protege si llega completo. Te lo proponemos con su ficha técnica, la tabla de compatibilidad química de la marca, la configuración de guantes y botas y los accesorios de prueba.
 
-Si tu equipo Hazmat se completa con otros niveles, armamos la partida con la [familia de trajes Hazmat](/trajes/hazmat/) completa. Para [cotizar un traje encapsulado](/contacto/) envíanos esos datos por WhatsApp o correo y te respondemos con la propuesta técnica.
+Para armar la propuesta necesitamos los agentes que esperas, el tipo de respuesta, el ERA de tu unidad y las tallas de quienes lo usarán. Si tu equipo Hazmat se completa con otros niveles, revisamos contigo la [familia de trajes Hazmat](/trajes/hazmat/) completa. Envíanos esos datos y [cotiza tu traje encapsulado](/contacto/); en un día hábil te respondemos con la propuesta técnica.
 
 ## Preguntas frecuentes
 
-**¿Qué diferencia hay entre un traje encapsulado y un traje nivel B?** En el encapsulado nivel A el ERA va dentro del traje y la envolvente es hermética a vapor; en el nivel B el ERA va por fuera y la prenda protege contra salpicadura líquida.
+**¿Qué diferencia hay entre un traje encapsulado y un traje nivel B?** En el nivel A el ERA va dentro y la envolvente es hermética a vapor. En el nivel B el ERA va por fuera y la prenda protege contra salpicadura líquida.
 
-**¿Cada cuánto se hace la prueba de presión?** Al recibirlo, después de cada uso o reparación y en el intervalo periódico que fije el fabricante para trajes en resguardo.
+**¿Cada cuánto se hace la prueba de presión?** Al recibirlo, después de cada uso o reparación y en el intervalo que fije la marca para los trajes guardados.
 
-**¿Puedo cambiar los guantes del traje por otros?** Sólo por guantes que el fabricante acepte para esa configuración y que sean compatibles con el agente; después se repite la prueba de presión.
+**¿Puedo cambiar los guantes del traje por otros?** Sólo por guantes que la marca acepte para esa configuración y que sean compatibles con el agente. Después repites la prueba de presión.
 
-**¿Un traje encapsulado protege contra fuego?** No se asume. Es una barrera química; la protección contra llama o calor radiante sólo existe si el fabricante la declara para el modelo.
+**¿Un traje encapsulado protege contra el fuego?** No lo asumas. Es una barrera química; protege contra llama o calor radiante sólo si la marca lo declara para ese modelo.
 
-**¿Cuánto tiempo se puede trabajar dentro del traje?** Lo limitan el aire del ERA, la carga térmica del usuario y la capacidad del corredor de descontaminación; el criterio de salida se fija antes de entrar.
+**¿Cuánto tiempo se puede trabajar dentro del traje?** Lo limitan el aire del ERA, el calor que acumula el usuario y la capacidad del corredor de descontaminación. El criterio de salida se fija antes de entrar.
 
-**¿Por qué el retiro necesita un procedimiento propio?** Porque el exterior está contaminado; el traje se abre y se enrolla hacia afuera para que su cara exterior nunca toque al usuario.
+**¿Por qué el retiro necesita su propio procedimiento?** Porque el exterior está contaminado. El traje se abre y se enrolla hacia afuera para que su cara exterior nunca toque al usuario.
 
 ## Fuentes
 
