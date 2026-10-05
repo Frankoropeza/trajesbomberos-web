@@ -34,7 +34,7 @@ productos:
   - "/equipo-de-respiracion-autonoma/"
 ---
 
-El traje encapsulado nivel A es la configuración de mayor barrera en una respuesta con materiales peligrosos: envuelve por completo al usuario y a su equipo de respiración autónoma para impedir que un vapor tóxico entre en contacto con la piel o con el sistema respiratorio. Esa protección no se compra cerrada en una caja; depende de que la envolvente siga hermética desde la prueba en estación hasta el último paso del retiro.
+El traje encapsulado nivel A es la configuración de mayor barrera en una respuesta con materiales peligrosos. Envuelve por completo al usuario y a su equipo de respiración autónoma para impedir que un vapor tóxico entre en contacto con la piel o con el sistema respiratorio. Esa protección no se compra cerrada en una caja; depende de que la envolvente siga hermética desde la prueba en estación hasta el último paso del retiro.
 
 Esta guía explica qué revisar antes de usar un [traje encapsulado nivel A](/trajes/hazmat/traje-encapsulado-nivel-a/), cómo se coloca con ayuda, qué limita el tiempo de trabajo y cómo se retira sin trasladar la contaminación al usuario. Si todavía estás definiendo qué nivel corresponde a tu escenario, empieza por los [niveles de protección Hazmat A, B, C y D](/blog/niveles-de-proteccion-hazmat/).
 
@@ -67,7 +67,7 @@ Los [guantes para químicos](/trajes/hazmat/guantes-quimicos/) y las [botas quí
 
 ## La prueba de presión antes del servicio
 
-La prueba de presión confirma que la envolvente completa —material, costuras, visor, cierre y uniones— retiene aire. El método de referencia es ASTM F1052: el traje se cierra, se infla a la presión que indica el fabricante y se mide si la caída en un tiempo determinado queda dentro del límite. La presión, el tiempo y la tolerancia los define el fabricante del modelo, no una cifra genérica.
+La prueba de presión confirma que la envolvente completa retiene aire: material, costuras, visor, cierre y uniones. El método de referencia es ASTM F1052: el traje se cierra, se infla a la presión que indica el fabricante y se mide si la caída en un tiempo determinado queda dentro del límite. La presión, el tiempo y la tolerancia los define el fabricante del modelo, no una cifra genérica.
 
 ### Cuándo se prueba
 
@@ -105,7 +105,7 @@ El retiro es el momento con más riesgo de contaminación cruzada. El exterior d
 - El usuario sale del traje sin apoyar las manos en el exterior y conserva la máscara hasta que el procedimiento lo permita.
 - El traje retirado se embolsa e identifica con el agente, el tiempo de exposición y el nombre del usuario.
 
-Para entender cómo encaja esta etapa con el resto del equipo, revisa la guía de [lavado y descontaminación del traje de bombero](/blog/lavado-y-descontaminacion-traje-de-bombero/); los principios de registro e inspección son los mismos, aunque los agentes químicos exigen el procedimiento específico del fabricante.
+Para entender cómo encaja esta etapa con el resto del equipo, revisa la guía de [lavado y descontaminación del traje de bombero](/blog/lavado-y-descontaminacion-traje-de-bombero/). Los principios de registro e inspección son los mismos, aunque los agentes químicos exigen el procedimiento específico del fabricante.
 
 ## Inspección y retiro definitivo del traje
 
@@ -117,7 +117,7 @@ Después de cada uso, y una vez descontaminado conforme al procedimiento, el tra
 - Hay cortes, perforaciones o zonas rígidas en la envolvente.
 - Se cumplió la vida útil o el número de usos que declare el fabricante.
 
-Existen trajes encapsulados reutilizables y modelos de uso limitado. La decisión se toma por el tipo de respuesta de tu unidad y por tu capacidad real de descontaminar, probar y registrar; un traje reutilizable sin programa de prueba no es más económico, es más riesgoso.
+Existen trajes encapsulados reutilizables y modelos de uso limitado. La decisión se toma por el tipo de respuesta de tu unidad y por tu capacidad real de descontaminar, probar y registrar. Un traje reutilizable sin programa de prueba no es más económico, es más riesgoso.
 
 ## Errores frecuentes al adquirir un traje nivel A
 

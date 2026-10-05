@@ -34,13 +34,13 @@ productos:
   - "/trajes/estructural/"
 ---
 
-La cámara térmica es una de las herramientas que más ha cambiado el trabajo interior de los bomberos. Dentro de un cuarto con humo denso, donde una linterna sólo ilumina una pared gris, la cámara muestra la silueta de una persona, el marco de una puerta o el calor que avanza por el plafón. Esa información permite buscar más rápido, orientarse mejor y decidir dónde aplicar agua.
+La cámara térmica es una de las herramientas que más ha cambiado el trabajo interior de los bomberos. En un cuarto con humo denso, una linterna sólo ilumina una pared gris. La cámara, en cambio, muestra la silueta de una persona, el marco de una puerta o el calor que avanza por el plafón. Esa información permite buscar más rápido, orientarse mejor y decidir dónde aplicar agua.
 
 Pero la cámara no ve a través de las paredes ni confirma por sí sola que un espacio es seguro. Esta guía explica cómo funciona, para qué se usa, qué especificaciones comparar al comprar una [cámara térmica para bombero](/accesorios/camara-termica/) y qué límites debe conocer quien la opera.
 
 ## Cómo funciona una cámara térmica
 
-Todo objeto emite radiación infrarroja en función de su temperatura. La cámara térmica capta esa radiación con un sensor —en los equipos de bomberos, por lo general un microbolómetro que trabaja en la banda infrarroja de onda larga— y la traduce en una imagen donde lo más caliente aparece más claro y lo más frío más oscuro.
+Todo objeto emite radiación infrarroja en función de su temperatura. La cámara térmica capta esa radiación con un sensor y la traduce en una imagen donde lo más caliente aparece más claro y lo más frío más oscuro. En los equipos de bomberos, ese sensor suele ser un microbolómetro que trabaja en la banda infrarroja de onda larga.
 
 El humo está formado por partículas que bloquean la luz visible, pero dejan pasar buena parte de esa radiación infrarroja de onda larga. Por eso la cámara «ve» a través del humo. En cambio, el vidrio, el agua y muchas superficies metálicas pulidas reflejan o bloquean el infrarrojo, y la imagen deja de representar lo que hay detrás.
 
@@ -126,9 +126,9 @@ Retira la cámara de servicio si la lente está rayada o agrietada, la pantalla 
 
 ## Cómo lo cotizamos
 
-En LORICA cotizamos la cámara térmica con su ficha técnica y, como partidas identificadas, baterías, cargador, base de estación o de vehículo, funda y correa. Para proponerte el modelo necesitamos el uso principal —búsqueda, ataque, revisión posterior o rescate—, el número de cámaras por unidad y si tu pliego exige certificación.
+En LORICA cotizamos la cámara térmica con su ficha técnica y, como partidas identificadas, baterías, cargador, base de estación o de vehículo, funda y correa. Para proponerte el modelo necesitamos el uso principal (búsqueda, ataque, revisión posterior o rescate), el número de cámaras por unidad y si tu pliego exige certificación.
 
-La cámara forma parte de los [accesorios para bomberos](/accesorios/) que completan al [traje estructural](/trajes/estructural/) y al ERA. Para [cotizar cámara térmica](/contacto/) escríbenos por WhatsApp con esos datos y te respondemos con la propuesta técnica.
+La cámara forma parte de los [accesorios para bomberos](/accesorios/) que completan al [traje estructural](/trajes/estructural/) y al ERA. Para [cotizar cámara térmica](/contacto/) envíanos el número de unidades y el uso previsto; te respondemos con modelos comparables y su ficha.
 
 ## Preguntas frecuentes
 

@@ -121,7 +121,7 @@ Si tu brigada se equipa desde cero, el [kit forestal](/kits/kit-forestal/) reún
 
 En LORICA cotizamos la Pulaski por cabeza de acero con filo y azadón, tipo de mango, largo y peso declarados, protector y cantidad por cuadrilla. Para proponerte la configuración nos sirve saber cuántos combatientes tiene la brigada, qué otras herramientas usan y cómo se transportan.
 
-Podemos armar la partida junto con McLeod, rastrillo, batefuego y [herramientas para bomberos](/herramientas/) de entrada forzada. Para [cotizar herramienta Pulaski](/contacto/) escríbenos por WhatsApp con esos datos.
+Podemos armar la partida junto con McLeod, rastrillo, batefuego y [herramientas para bomberos](/herramientas/) de entrada forzada. Para [cotizar herramienta Pulaski](/contacto/) indícanos por WhatsApp el tamaño de la brigada y el vehículo donde viajará la herramienta.
 
 ## Preguntas frecuentes
 

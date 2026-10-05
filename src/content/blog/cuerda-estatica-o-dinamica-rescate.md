@@ -34,13 +34,13 @@ productos:
   - "/guantes/guante-rescate-extricacion/"
 ---
 
-La pregunta «¿cuerda estática o dinámica?» aparece en casi todas las compras de equipo de rescate vertical, y la respuesta depende de una sola idea: cuánto debe estirarse la cuerda en la maniobra. Una cuerda dinámica está diseñada para alargarse y absorber la energía de una caída libre; una cuerda estática está diseñada para alargarse lo mínimo y mantener el control de una carga que sube, baja o se sostiene.
+La pregunta «¿cuerda estática o dinámica?» aparece en casi todas las compras de equipo de rescate vertical, y la respuesta depende de una sola idea: cuánto debe estirarse la cuerda en la maniobra. Una cuerda dinámica está diseñada para alargarse y absorber la energía de una caída libre. Una cuerda estática está diseñada para alargarse lo mínimo y mantener el control de una carga que sube, baja o se sostiene.
 
 En rescate de bomberos, la línea principal y la línea de respaldo son cuerdas estáticas de baja elongación. Esta guía explica por qué, en qué casos aparece una cuerda dinámica y qué datos debe llevar una requisición de [cuerda de rescate](/rescate/cuerda-de-rescate/) para que no llegue un rollo equivocado.
 
 ## La construcción kernmantle
 
-Ambas cuerdas suelen fabricarse con la construcción kernmantle: un alma o núcleo interior que soporta la mayor parte de la carga y una funda trenzada exterior que protege al núcleo de la abrasión, el polvo y la luz.
+Ambas cuerdas suelen fabricarse con la construcción kernmantle. Un alma o núcleo interior soporta la mayor parte de la carga, y una funda trenzada exterior que protege al núcleo de la abrasión, el polvo y la luz.
 
 La diferencia está en cómo se construye el núcleo. En la cuerda estática las fibras van casi paralelas y con poca torsión, así que el núcleo responde rígido ante la carga. En la cuerda dinámica las fibras se tuercen para que el núcleo funcione como un resorte que se alarga bajo impacto y recupera su forma.
 
@@ -78,7 +78,7 @@ En Europa la referencia para cuerdas de baja elongación es EN 1891, con tipo A 
 
 ## Cuándo sí se usa una cuerda dinámica
 
-La cuerda dinámica tiene un papel en rescate, pero acotado. Se usa cuando un rescatista avanza por encima de su último punto de anclaje y puede sufrir una caída libre: escalada de avance para instalar un sistema en una estructura, un risco o una torre sin acceso por arriba.
+La cuerda dinámica tiene un papel en rescate, pero acotado. Se usa cuando un rescatista avanza por encima de su último punto de anclaje y puede sufrir una caída libre. Es el caso de la escalada de avance para instalar un sistema en una estructura, un risco o una torre sin acceso por arriba.
 
 En esos casos la cuerda dinámica protege al rescatista que escala. En cuanto el anclaje superior queda instalado, la operación pasa a cuerda estática para descender, izar o mover a la víctima. Mezclar ambas cuerdas en un mismo sistema sin identificación clara es un error que se evita con colores distintos y registro por cuerda.
 
@@ -125,7 +125,7 @@ Registra cada cuerda con un identificador, fecha de ingreso, longitud, diámetro
 
 En LORICA cotizamos la cuerda estática kernmantle por diámetro, longitud, color, clase de uso, terminaciones y bolsa, y pedimos al fabricante la declaración NFPA 2500 o EN 1891 del modelo. Para proponerte la configuración necesitamos la maniobra principal, las alturas habituales y los descensores y bloqueadores que ya usa tu equipo.
 
-Si además necesitas arnés, conectores o herramienta hidráulica, armamos la partida completa de [equipo de rescate para bomberos](/rescate/). Para [cotizar cuerda de rescate](/contacto/) escríbenos por WhatsApp con esos datos.
+Si además necesitas arnés, conectores o herramienta hidráulica, armamos la partida completa de [equipo de rescate para bomberos](/rescate/). Para [cotizar cuerda de rescate](/contacto/) mándanos por WhatsApp las alturas y el equipo de descenso que usas.
 
 ## Preguntas frecuentes
 

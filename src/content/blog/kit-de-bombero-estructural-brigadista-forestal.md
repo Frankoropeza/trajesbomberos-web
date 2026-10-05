@@ -35,9 +35,9 @@ productos:
   - "/trajes/brigadista/modelos/romak-combate-basico/"
 ---
 
-Un kit de bombero es la forma ordenada de comprar el equipo de protección de un elemento: en lugar de adquirir piezas sueltas que después no coinciden, se cotiza un conjunto con traje, casco, capucha, guantes y botas probados entre sí. La ventaja no es el paquete; es que los solapes entre cuello, puño y tobillo se revisan antes de que el equipo llegue a la estación.
+Un kit de bombero es la forma ordenada de comprar el equipo de protección de un elemento. En lugar de adquirir piezas sueltas que después no coinciden, se cotiza un conjunto con traje, casco, capucha, guantes y botas probados entre sí. La ventaja no es el paquete; es que los solapes entre cuello, puño y tobillo se revisan antes de que el equipo llegue a la estación.
 
-Hay tres kits que cubren la mayoría de las operaciones en México: el [kit estructural](/kits/kit-estructural/) para combate de incendio en edificaciones, el [kit brigadista](/kits/kit-brigadista/) para brigadas de centros de trabajo y el [kit forestal](/kits/kit-forestal/) para línea de fuego en vegetación. Esta guía compara qué incluye cada uno, qué norma lo respalda y cómo decidir.
+Tres kits cubren la mayoría de las operaciones en México. El [kit estructural](/kits/kit-estructural/) es para combate de incendio en edificaciones; el [kit brigadista](/kits/kit-brigadista/), para brigadas de centros de trabajo, y el [kit forestal](/kits/kit-forestal/), para línea de fuego en vegetación. Esta guía compara qué incluye cada uno, qué norma lo respalda y cómo decidir.
 
 ## Por qué comprar por kit y no por pieza
 
@@ -135,7 +135,7 @@ Define antes de ordenar el color, las bandas reflejantes y cualquier identificac
 
 En LORICA cotizamos cada kit por usuario, con código, talla, color y declaración normativa de cada pieza, y probamos contigo los solapes de cuello, puño y tobillo antes de entregar. Para proponerte la configuración necesitamos la operación autorizada, el número de elementos, sus tallas y el equipo que ya conservas.
 
-Puedes revisar las opciones completas en [kits de equipo para bombero](/kits/). Para [cotizar un kit de bombero](/contacto/) escríbenos por WhatsApp con esos datos y te respondemos con la propuesta técnica.
+Puedes revisar las opciones completas en [kits de equipo para bombero](/kits/). Para [cotizar un kit de bombero](/contacto/) compártenos la relación de usuarios con sus medidas y te enviamos la propuesta por partida.
 
 ## Preguntas frecuentes
 
