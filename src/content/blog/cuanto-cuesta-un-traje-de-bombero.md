@@ -86,7 +86,7 @@ Un conjunto no es más seguro porque todas sus piezas tengan la misma marca o el
 
 ### Vida de servicio y costo por año
 
-La vida de un conjunto estructural no se calcula desde la fecha de entrega sino desde su fabricación. NFPA 1850, edición 2026, consolidó las referencias de selección, cuidado y mantenimiento y establece un límite de vida de servicio de diez años para el conjunto estructural, además de inspecciones, limpieza y retiro previo por daño o contaminación. Es un máximo, no una garantía de que cualquier pieza llegará a ese momento.
+La vida de un conjunto estructural no se calcula desde la fecha de entrega sino desde su fabricación. NFPA 1850, edición 2026, consolidó las referencias de selección, cuidado y mantenimiento. Establece un límite de vida de servicio de diez años para el conjunto estructural, además de inspecciones, limpieza y retiro previo por daño o contaminación. Es un máximo, no una garantía de que cualquier pieza llegará a ese momento.
 
 Para evaluar el costo por año de servicio, pregunta por fecha de fabricación, programa de limpieza, inspección, reparación autorizada y disponibilidad de refacciones. Un conjunto que no se cuida o que llega con tiempo de vida ya consumido cambia el cálculo aunque la cotización inicial parezca comparable. La guía sobre [vida útil del traje de bombero](/blog/vida-util-traje-bombero-nfpa-1850/) detalla qué registrar desde la recepción.
 

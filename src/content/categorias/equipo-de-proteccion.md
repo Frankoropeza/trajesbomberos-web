@@ -50,7 +50,7 @@ secciones:
     eyebrow: "Modelos destacados"
     titulo: "Modelos de equipo de protección para bomberos que cotizamos"
     duo:
-      - "Aquí tienes un modelo por pieza para que veas el alcance del catálogo: el casco Bullard LTX y el Sköld Viking, el ERA Sköld Phantöm de 60 minutos y el MSA G1 Industrial, las botas Romak Fire Workman Fire, los guantes Veridian Fire Pro II y Sköld y la monja Majestic PAC II."
+      - "Aquí tienes una muestra por pieza para que veas el alcance del catálogo. En cascos, el Bullard LTX y el Sköld Viking; en ERA, el Sköld Phantöm de 60 minutos y el MSA G1 Industrial. La completan las botas Romak Fire Workman Fire, los guantes Veridian Fire Pro II y Sköld, y la monja Majestic PAC II."
       - "Los 17 modelos publicados, con su material, norma y estatus, están en la comparativa de más abajo. Si un modelo tiene certificado UL, como el guante Veridian o la monja Majestic, lo verás; si solo está declarado, también. Pide la ficha del que te interese y te la mandamos."
   comparar:
     eyebrow: "Comparativa"
@@ -62,7 +62,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el equipo de protección para bomberos"
     duo:
-      - "Lo que más nos preguntan antes de comprar EPP: qué incluye, si un casco o una bota forestal sirven para un incendio estructural, en qué se distingue un ERA de combate de uno industrial, cómo se prueba la monja con la máscara y qué debe traer la cotización."
+      - "Antes de comprar EPP casi todos preguntan qué incluye y si un casco o una bota forestal sirven para un incendio estructural. También, en qué se distingue un ERA de combate de uno industrial, cómo se prueba la monja con la máscara y qué debe traer la cotización."
       - "¿No encuentras tu duda? Escríbela en el formulario. Se abre WhatsApp con tu consulta sobre equipo de protección y te contestamos en el día hábil, con la ficha del modelo cuando aplique."
   guias:
     eyebrow: "Blog técnico"

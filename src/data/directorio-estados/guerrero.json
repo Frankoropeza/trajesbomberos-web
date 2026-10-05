@@ -1,14 +1,14 @@
 {
- "lead": "Guerrero tiene 9 estaciones de bomberos en 3 municipios, con mayor concentración en Acapulco de Juárez. Consulta dirección, teléfono oficial cuando existe, ubicación y corporación operadora para localizar el servicio en Acapulco, Chilpancingo o Zihuatanejo.",
+ "lead": "Guerrero tiene 12 estaciones de bomberos en 5 municipios, con mayor concentración en Acapulco de Juárez. Encontrarás dirección, teléfono oficial cuando existe, ubicación y corporación operadora en Acapulco, Chilpancingo, Zihuatanejo, Iguala y Taxco.",
  "panorama": [
-  "En Guerrero predominan las corporaciones municipales, encabezadas por la Coordinación General de Protección Civil y Bomberos de Acapulco. El servicio se complementa con la Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero y dos cuerpos de rescate aeroportuario. Acapulco opera una central con subestaciones, mientras Chilpancingo y Zihuatanejo cuentan con sus propios cuerpos municipales.",
-  "Cinco de las estaciones se ubican en Acapulco de Juárez; Chilpancingo de los Bravo y Zihuatanejo de Azueta reúnen las demás. Para equipar bomberos en Guerrero, conviene separar las necesidades de las bases municipales de los servicios aeroportuarios. La presencia de rescate acuático en Acapulco y Zihuatanejo también cambia las prioridades de una corporación costera."
+  "En Guerrero predominan las corporaciones municipales, encabezadas por la Coordinación General de Protección Civil y Bomberos de Acapulco. El servicio se complementa con la Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero, en Chilpancingo, y dos cuerpos de rescate aeroportuario. Acapulco opera una central con 4 subestaciones; Chilpancingo, Zihuatanejo, Iguala y Taxco tienen cuerpos propios.",
+  "Acapulco de Juárez reúne 6 de las estaciones, entre ellas la subestación Mercado Central; Chilpancingo de los Bravo y Zihuatanejo de Azueta tienen 2 cada uno. Iguala y Taxco dan presencia en el norte del estado. Para equipar bomberos en Guerrero, separa las bases municipales de los servicios aeroportuarios; el rescate acuático en Acapulco y Zihuatanejo cambia las prioridades costeras."
  ],
  "estacionesDuo": [
-  "La Coordinación General de Protección Civil y Bomberos de Acapulco opera una central y varias subestaciones. Se suman el H. Cuerpo de Bomberos de Chilpancingo de los Bravo, el de Zihuatanejo de Azueta y los CREI aeroportuarios. El listado está ordenado por municipio e incorpora teléfono oficial cuando fue publicado."
+  "Bomberos Acapulco opera la Estación Central «Teniente Coronel José Saavedra del Razo» y 4 subestaciones. Se suman el H. Cuerpo de Bomberos de Chilpancingo de los Bravo, el de Zihuatanejo de Azueta, las corporaciones de Iguala y Taxco y los CREI aeroportuarios. El listado va por municipio, con teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Las 9 estaciones reportan incendios estructurales; 6 incluyen rescate vehicular y atención prehospitalaria. En Acapulco y Zihuatanejo aparecen también rescate acuático, mientras los dos CREI atienden salvamento aeroportuario y materiales peligrosos. Esa mezcla demanda una dotación diferenciada, no un solo paquete para toda la operación."
+  "Los incendios estructurales se declaran en 10 estaciones; el rescate vehicular y la atención prehospitalaria, en 6. En Acapulco y Zihuatanejo aparece también rescate acuático, mientras los dos CREI atienden salvamento aeroportuario y materiales peligrosos. Esa mezcla demanda una dotación diferenciada, no un solo paquete."
  ],
  "equipoDuo": [
   "Las corporaciones municipales requieren protección estructural para su respuesta cotidiana. Donde se declara fuego forestal son adecuados <a href=\"/trajes/forestal/\">trajes forestales</a>; para rescate vehicular hacen falta prendas de extricación. Los CREI deben valorar protección de aproximación y, cuando hay materiales peligrosos, <a href=\"/trajes/hazmat/\">trajes Hazmat</a> según la intervención prevista.",
@@ -17,15 +17,15 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Guerrero y dónde están?",
-   "a": "Hay 9 estaciones de bomberos localizadas en 3 municipios de Guerrero. Acapulco de Juárez concentra 5, y Chilpancingo de los Bravo y Zihuatanejo de Azueta cuentan con 2 estaciones cada uno. Operan corporaciones municipales, estatales y aeroportuarias."
+   "a": "Hay 12 estaciones de bomberos localizadas en 5 municipios de Guerrero. Acapulco de Juárez concentra 6, y Chilpancingo de los Bravo y Zihuatanejo de Azueta cuentan con 2 estaciones cada uno; Iguala y Taxco tienen una. Operan corporaciones municipales, una estatal y cuerpos aeroportuarios."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Guerrero?",
-   "a": "Los bomberos en Guerrero son atendidos principalmente por corporaciones municipales de Acapulco, Chilpancingo y Zihuatanejo. También participa la Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero, junto con los cuerpos de rescate y extinción de incendios aeroportuarios."
+   "a": "Los bomberos en Guerrero son atendidos principalmente por corporaciones municipales de Acapulco, Chilpancingo, Zihuatanejo, Iguala y Taxco. También participa la Secretaría de Gestión Integral de Riesgos y Protección Civil de Guerrero, junto con los cuerpos de rescate y extinción de incendios aeroportuarios."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Guerrero para una gestión?",
-   "a": "Busca la estación por municipio y consulta el teléfono oficial cuando se encuentre publicado para una capacitación, una donación o un dictamen. Dirige la solicitud a la corporación que opera la estación. Para una emergencia llama al 911, que es el canal de respuesta inmediata."
+   "a": "Busca la estación por municipio; 6 tienen teléfono oficial, entre ellas la Secretaría estatal de Gestión Integral de Riesgos, con domicilio y teléfono en Chilpancingo. Úsalo para una capacitación, una donación o un dictamen con la corporación que opera la estación. Para una emergencia llama al 911, que es el canal de respuesta inmediata."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Guerrero?",

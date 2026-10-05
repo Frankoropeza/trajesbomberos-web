@@ -1,0 +1,124 @@
+{
+  "slug": "chiapas",
+  "nombreOficial": "Ley para la Gestión Integral del Riesgo de Desastres y Protección Civil del Estado de Chiapas",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Chiapas",
+    "fecha": "2025-11-12"
+  },
+  "ultimaReforma": "2026-06-24",
+  "urlOficial": "https://www.congresochiapas.gob.mx/new/Info-Parlamentaria/LEY_0049.pdf?v=OQ==",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Chiapas",
+    "url": "https://institutodelaconsejeriajuridica.chiapas.gob.mx/MarcoJuridicoPDF/Reglamentos/REGLAMENTO%20DE%20LA%20LEY%20DE%20PROTECCI%C3%93N%20CIVIL%20DEL%20ESTADO%20DE%20CHIAPAS.pdf",
+    "ultimaReforma": "2015-09-09"
+  },
+  "autoridadEstatal": {
+    "nombre": "Instituto para la Gestión Integral de Riesgos de Desastres del Estado de Chiapas",
+    "articulo": "Art. 24",
+    "cita": "El Instituto para la Gestión Integral de Riesgos de Desastres del Estado de Chiapas, es un Organismo Descentralizado de la Administración Pública Estatal, sectorizado a la Secretaria General de Gobierno y Mediación, con personalidad jurídica y patrimonio propios"
+  },
+  "lead": "La Ley para la Gestión Integral del Riesgo de Desastres y Protección Civil del Estado de Chiapas, vigente desde noviembre de 2025, sustituyó a la ley de 2014. Esta guía resume lo que exige a empresas, inmuebles, obras y organizadores de eventos, con artículo y cita literal.",
+  "panorama": [
+    "Publicada el 12 de noviembre de 2025 y reformada por última vez el 24 de junio de 2026, la ley es de orden público y de observancia obligatoria en todo el estado y sus municipios (Art. 1). Exige a los establecimientos e inmuebles que reciben afluencia de personas o representan un riesgo contar con Programa Interno y Unidad Interna (Art. 110), y fija deberes para obras y eventos masivos.",
+    "La ley reparte funciones entre la Secretaría de Protección Civil y el Instituto para la Gestión Integral de Riesgos de Desastres, organismo descentralizado que inspecciona y valida los Programas Internos (Arts. 24 y 116). Cada municipio integra su Sistema Municipal, primer nivel de respuesta coordinado por el Presidente Municipal, que puede pedir apoyo al Sistema Estatal si se ve rebasado (Art. 79)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos y escuelas privadas, dependencias",
+      "obligacion": "Tener Programa Interno elaborado por un Profesionista Acreditado, quien debe anexar una carta de corresponsabilidad sobre las medidas aplicadas.",
+      "articulo": "Art. 111",
+      "cita": "será obligatorio el Programa Interno para las dependencias de gobierno, establecimientos e instituciones educativas del sector privado, los cuales deberán ser elaborados por un Profesionista Acreditado, quienes estarán obligados a anexar una carta de corresponsabilidad"
+    },
+    {
+      "sujeto": "Establecimientos obligados en general",
+      "obligacion": "Contar con Unidad Interna y Programa Interno o Específico, y mantener capacitado al personal con simulacros periódicos; omitirlo es infracción.",
+      "articulo": "Art. 209",
+      "cita": "No contar con la Unidad Interna, de conformidad con lo dispuesto en la presente Ley y el Reglamento. III. No contar con el Programa Interno, o Programa Específico de Protección Civil de conformidad con lo dispuesto en la presente Ley y el Reglamento. IV. No mantener debidamente capacitado al personal o no realizar Simulacros"
+    },
+    {
+      "sujeto": "Eventos y obras con Programa Específico",
+      "obligacion": "El Profesionista Acreditado sube el Programa Específico a la plataforma oficial con carta firmada por ambas partes y póliza de responsabilidad civil.",
+      "articulo": "Art. 124",
+      "cita": "adjuntando una carta de corresponsabilidad, en el que se manifieste su responsabilidad compartida con el contratante, en su elaboración y/o actualización, misma que deberá estar firmada por ambas partes, además de contar con una póliza de seguro de responsabilidad civil y daños a terceros aplicable a la realización del evento u obra."
+    },
+    {
+      "sujeto": "Organizadores de eventos masivos",
+      "obligacion": "Antes del evento, orientar a los asistentes sobre cómo evitar o reducir daños si ocurre un fenómeno perturbador.",
+      "articulo": "Art. 126",
+      "cita": "Antes de la realización de los eventos masivos, los organizadores están obligados a orientar a los asistentes sobre los métodos y las acciones para evitar o minimizar los daños, en caso de que se presente un fenómeno perturbador."
+    },
+    {
+      "sujeto": "Obras públicas y privadas",
+      "obligacion": "Aplicar el Atlas de Riesgos y obtener Dictamen de Riesgo favorable antes de elaborar el proyecto ejecutivo de la obra.",
+      "articulo": "Art. 135",
+      "cita": "es obligatorio aplicar los Atlas de Riesgos, contar con un Dictamen de Riesgo favorable y contemplar las medidas de reducción de riesgos que se deriven del mismo, previo a la elaboración del proyecto ejecutivo de obra."
+    },
+    {
+      "sujeto": "Ayuntamientos",
+      "obligacion": "Tener combatientes capacitados, entrenados y con equipo de protección personal para prevenir y combatir incendios.",
+      "articulo": "Art. 143",
+      "cita": "Los Ayuntamientos deberán contar con combatientes capacitados, entrenados y equipados en su protección personal para realizar acciones preventivas y de combate a incendios."
+    },
+    {
+      "sujeto": "Unidades Internas de Protección Civil",
+      "obligacion": "Según el reglamento de 2015, aplicable en lo conducente, el plan operativo debe prever equipos de seguridad, capacitación con constancias y simulacros.",
+      "articulo": "Art. 32, fr. VIII a XII del Reglamento",
+      "cita": "VIII. Medidas y Equipos de Seguridad. IX. Equipo de Identificación. X. Capacitación; contener las constancias de capacitación de protección civil del personal de nuevo ingreso. XI. Difusión y Concientización. XII. Ejercicios y Simulacros."
+    },
+    {
+      "sujeto": "Administradores, gerentes o propietarios de empresas",
+      "obligacion": "Capacitar a su personal y difundir la cultura de protección civil mediante programas de capacitación interna, según el reglamento vigente en lo conducente.",
+      "articulo": "Art. 81 del Reglamento",
+      "cita": "Los administradores, gerentes o propietarios de empresas estarán obligados a capacitar y difundir la cultura de protección civil entre su personal para la salvaguardar de su integridad física, bienes y entorno, mediante los programas de capacitación interna"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley define la brigada como el grupo de personas capacitadas en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, designadas dentro de la Unidad Interna (Art. 2, fr. IX). Las empresas con cinco o más empleados deben solicitar cursos de protección civil y hacer simulacros al menos dos veces al año por cada fenómeno al que estén expuestas (Art. 110).",
+    "Estancias, guarderías y escuelas de nivel básico y medio superior deben hacer al menos tres simulacros al año (Art. 110). El Instituto y las Secretarías Municipales evalúan esos ejercicios y la Unidad Interna debe corregir las fallas detectadas. Fuera de la empresa, la Red Estatal de Brigadistas Comunitarios reúne voluntarios que apoyan en alerta, evacuación y refugios temporales (Arts. 92 y 93)."
+  ],
+  "equipoDuo": [
+    "La ley chiapaneca no detalla prendas ni herramientas para brigadas internas, pero sí ordena a los ayuntamientos contar con combatientes capacitados, entrenados y equipados en su protección personal para prevenir y combatir incendios (Art. 143). Para la brigada de una empresa, la referencia técnica es la NOM-002-STPS-2010, norma federal sobre prevención y protección contra incendios en centros de trabajo.",
+    "En LORICA surtimos a brigadas y cuerpos municipales con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y, para incendios urbanos, <a href=\"/trajes/estructural/\">trajes estructurales</a>. La NOM-017-STPS-2024, norma federal de equipo de protección personal, sirve para definir casco, guantes, botas y protección respiratoria según el análisis de riesgo de cada puesto."
+  ],
+  "sancionesDuo": [
+    "La ley prevé amonestación, multa, arresto administrativo, suspensión de actividades hasta por treinta días naturales y clausura temporal o definitiva (Art. 212). Entre las infracciones figuran no tener Unidad Interna o Programa Interno y no hacer simulacros (Art. 209). El Instituto también puede pedir que se revoque la licencia del giro (Art. 220)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Chiapas y dónde consulto el texto?",
+      "a": "Es la Ley para la Gestión Integral del Riesgo de Desastres y Protección Civil del Estado de Chiapas, publicada el 12 de noviembre de 2025 y reformada el 24 de junio de 2026; el texto está en la legislación vigente del Congreso. Mientras se expide el nuevo reglamento, aplica en lo conducente el de 2015, publicado en el marco jurídico del Gobierno del Estado."
+    },
+    {
+      "q": "¿Quién está obligado a tener Programa Interno en Chiapas?",
+      "a": "Según el artículo 110, los propietarios, poseedores o encargados de establecimientos e inmuebles públicos o privados que concentren personas o representen un riesgo. Lo elabora un Profesionista Acreditado con carta de corresponsabilidad (Art. 111) y tiene vigencia de dos años (Art. 113)."
+    },
+    {
+      "q": "¿Qué pide la ley chiapaneca sobre brigadas y simulacros?",
+      "a": "Constituir una Unidad Interna con brigadas preparadas en primeros auxilios, conatos de incendio, evacuación y rescate. Las empresas con cinco o más empleados deben capacitarse y hacer por lo menos dos simulacros al año; escuelas y guarderías, tres (Art. 110)."
+    },
+    {
+      "q": "¿Qué pasó con la antigua Ley de Protección Civil del Estado de Chiapas?",
+      "a": "La nueva ley la abrogó; aquella se había publicado en septiembre de 2014. Su artículo tercero transitorio lo establece, y el cuarto indica que, mientras se expide el nuevo reglamento, sigue aplicándose en lo conducente el reglamento de la ley anterior."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Chiapas?",
+      "a": "El texto no trae un listado de equipo. En la práctica, una brigada que atiende primeros auxilios, conatos de incendio y evacuación suele trabajar con casco, guantes, botas, chaleco de alta visibilidad, botiquín y extintores, definidos con la NOM-002-STPS-2010 y el análisis de riesgo del inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Chiapas · Ley para la Gestión Integral del Riesgo de Desastres y Protección Civil del Estado de Chiapas (PDF)",
+      "url": "https://www.congresochiapas.gob.mx/new/Info-Parlamentaria/LEY_0049.pdf?v=OQ=="
+    },
+    {
+      "nombre": "Congreso del Estado de Chiapas · Legislación vigente",
+      "url": "https://web.congresochiapas.gob.mx/trabajo-legislativo/legislacion-vigente"
+    },
+    {
+      "nombre": "Gobierno del Estado de Chiapas · Marco jurídico · Reglamento de la Ley de Protección Civil del Estado de Chiapas (PDF, 2015)",
+      "url": "https://institutodelaconsejeriajuridica.chiapas.gob.mx/MarcoJuridicoPDF/Reglamentos/REGLAMENTO%20DE%20LA%20LEY%20DE%20PROTECCI%C3%93N%20CIVIL%20DEL%20ESTADO%20DE%20CHIAPAS.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "El equipo de rescate, explicado a fondo"
     duo:
-      - "Tres módulos: la herramienta hidráulica de extricación, el sistema de cuerda con arnés, cuerda y mosquetones, y el kit de rescate vertical. En cada uno, para qué sirve, qué datos lleva el pedido y qué revisamos antes de proponerlo."
+      - "Tres sistemas de rescate: la herramienta hidráulica de extricación, el trabajo con cuerda (arnés, cuerda y mosquetones) y el kit de rescate vertical. De cada uno explicamos para qué sirve, qué datos lleva el pedido y qué revisamos antes de proponerlo."
       - "Cada módulo abre la especificación completa o un mensaje de WhatsApp ya escrito. Te respondemos con cada componente y su declaración del fabricante, por escrito y con factura."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre equipo de rescate para bomberos"
     duo:
-      - "Lo que más nos preguntan antes de pedir equipo de rescate: cómo se elige un mosquetón, si un kit vertical sirve para todo, qué pasa después de una carga, con qué equipo personal se prueba y qué debe traer la entrega."
+      - "En rescate nos preguntan cómo se elige un mosquetón, si un kit vertical sirve para todo y qué pasa después de una carga. Respondemos además con qué equipo personal se prueba y qué debe traer la entrega."
       - "Si ya tienes parte del sistema, mándanos fotos del marcado de tus piezas por el formulario. Se abre WhatsApp con tu consulta de rescate y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

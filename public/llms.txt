@@ -1,29 +1,67 @@
-# LORICA · Trajes para bomberos
+# LORICA · Trajes para bomberos (trajesbomberos.com)
 
-> LORICA (trajesbomberos.com) es proveedor especializado en trajes para bomberos y equipo de protección contra incendio en México: trajes estructurales, de brigadista, forestales, aluminizados (aproximación y entrada), de extricación y Hazmat, más cascos, ERA, botas, guantes, monjas, herramientas y equipo de rescate. Atiende corporaciones de bomberos, brigadas industriales y compras públicas en los 32 estados, con cotización por escrito, ficha técnica y factura CFDI. No publica precios: cada cotización depende de modelo, talla y cantidad.
+> LORICA vende trajes para bomberos y equipo de protección contra incendio a cuerpos de bomberos municipales, unidades de protección civil, brigadas industriales y empresas en los 32 estados de México. Tiene más de 35 años de experiencia en el sector. Cotiza por escrito con ficha técnica capa por capa (norma declarada, estatus de certificación, composite, tallas), sin compra mínima, con factura CFDI 4.0 y soporte para expedientes de licitación. No publica precios: cada cotización se arma con la operación, el número de elementos y las tallas.
 
-Contacto: WhatsApp y teléfono +52 56 6480 4962 · trajes.bomberos@gmail.com · Manuel Caballero 161, Col. Obrera, Cuauhtémoc, 06800 Ciudad de México.
+- Contacto: teléfono y WhatsApp +52 56 6480 4962 · trajes.bomberos@gmail.com · Lun–Vie 9:00–18:00
+- Dirección: Manuel Caballero 161, Col. Obrera, Cuauhtémoc, 06800 Ciudad de México
+- Marcas con fichas publicadas: Romak Fire, Sköld, Lakeland, Bullard, MSA, Veridian, Croydon, Majestic y otras
+- Normas de referencia: NFPA 1970 (consolidó NFPA 1971, 1975, 1981 y 1982: traje estructural y de aproximación, ERA y PASS), NFPA 1950 (incluye la antigua NFPA 1977 de equipo forestal y el rescate técnico), NFPA 1850 (cuidado, inspección y retiro; consolidó NFPA 1851 y 1852), NOM-002-STPS-2010 (brigadas contra incendio) y NOM-017-STPS-2024 (equipo de protección personal)
 
-## Catálogo
+## Trajes para bomberos por familia
 
-- [Trajes para bomberos](https://trajesbomberos.com/trajes/): familias por tipo de riesgo, modelos comparados y piezas sueltas.
-- [Traje estructural](https://trajesbomberos.com/trajes/estructural/): chaquetón y pantalonera de tres capas para incendio urbano (NFPA 1970).
-- [Traje de brigadista](https://trajesbomberos.com/trajes/brigadista/): brigadas industriales y fuego incipiente (NOM-002-STPS-2010).
-- [Traje forestal](https://trajesbomberos.com/trajes/forestal/): combate de incendios forestales.
-- [Traje de aproximación](https://trajesbomberos.com/trajes/aproximacion/) y [traje de entrada](https://trajesbomberos.com/trajes/entrada/): aluminizados para calor radiante.
-- [Traje de extricación y rescate](https://trajesbomberos.com/trajes/extricacion/): rescate vehicular y técnico.
-- [Trajes Hazmat](https://trajesbomberos.com/trajes/hazmat/): protección química niveles A, B y C.
-- [Equipo de protección](https://trajesbomberos.com/equipo-de-proteccion/): [cascos](https://trajesbomberos.com/cascos/), [ERA](https://trajesbomberos.com/equipo-de-respiracion-autonoma/), [botas](https://trajesbomberos.com/botas/), [guantes](https://trajesbomberos.com/guantes/), [monjas](https://trajesbomberos.com/capuchas/), [accesorios](https://trajesbomberos.com/accesorios/) y [kits](https://trajesbomberos.com/kits/).
-- [Rescate y herramientas](https://trajesbomberos.com/rescate-y-herramientas/): [equipo de rescate](https://trajesbomberos.com/rescate/), [herramientas](https://trajesbomberos.com/herramientas/) y [mangueras y accesorios](https://trajesbomberos.com/mangueras-y-accesorios/).
-- [Marcas](https://trajesbomberos.com/marcas/): Romak Fire, Sköld, Bullard, Lakeland, MSA y más, con estatus normativo por modelo.
+- [Trajes para bomberos: tipos, modelos y ficha técnica](https://trajesbomberos.com/trajes/): comparativa de las 7 familias y de los modelos publicados
+- [Traje estructural](https://trajesbomberos.com/trajes/estructural/): chaquetón y pantalonera de tres capas para ataque interior, referencia NFPA 1970
+- [Traje de brigadista](https://trajesbomberos.com/trajes/brigadista/): brigada industrial y conato de incendio, NOM-002-STPS-2010
+- [Traje forestal](https://trajesbomberos.com/trajes/forestal/): una capa en fibra ignífuga inherente para incendio de vegetación
+- [Traje aluminizado de aproximación](https://trajesbomberos.com/trajes/aproximacion/): calor radiante en ARFF, refinería y fundición
+- [Traje de entrada a la flama](https://trajesbomberos.com/trajes/entrada/): ingreso breve en incidente térmico severo, siempre con ERA
+- [Traje de extricación](https://trajesbomberos.com/trajes/extricacion/): rescate vehicular y técnico, resistencia a corte y barrera contra patógenos
+- [Traje Hazmat](https://trajesbomberos.com/trajes/hazmat/): niveles A, B y C para protección química
 
-## Guías y datos
+## Modelos de traje con ficha técnica
 
-- [Blog técnico](https://trajesbomberos.com/blog/): cómo especificar un traje, norma NFPA 1970, comparativas, vida útil, tallas y expediente para licitación.
-- [Directorio de estaciones de bomberos](https://trajesbomberos.com/estaciones-de-bomberos/): estaciones de los 32 estados por municipio, con operador y fuente oficial.
+- [Romak Fire Protector](https://trajesbomberos.com/trajes/estructural/modelos/romak-protector/): traje estructural con certificación UL MH14790
+- [Sköld Hero PBI Max](https://trajesbomberos.com/trajes/estructural/modelos/skold-hero-pbimax/): traje estructural con exterior PBI Max
+- [Sköld Hero Nomex](https://trajesbomberos.com/trajes/estructural/modelos/skold-hero-nomex/): traje estructural con exterior Nomex
+- [Marcas y modelos](https://trajesbomberos.com/marcas/): 35 modelos comparados por estatus normativo (certificado, declarado o solo materiales)
 
-## Empresa
+## Equipo de protección, rescate y kits
 
-- [Quiénes somos](https://trajesbomberos.com/empresa/)
+- [Equipo de protección para bomberos](https://trajesbomberos.com/equipo-de-proteccion/): cascos, ERA, botas, guantes y monjas compatibles con el traje
+- [Cascos de bombero](https://trajesbomberos.com/cascos/): estructural, forestal, rescate y brigada
+- [Botas de bombero](https://trajesbomberos.com/botas/): hule o piel, puntera y entresuela antiperforación
+- [Guantes de bombero](https://trajesbomberos.com/guantes/): estructural, rescate, forestal y brigada
+- [Monjas y capuchas](https://trajesbomberos.com/capuchas/): Nomex y antipartículas
+- [Equipo de respiración autónoma (ERA)](https://trajesbomberos.com/equipo-de-respiracion-autonoma/): ERA de combate e industrial, cilindros y máscaras
+- [Accesorios](https://trajesbomberos.com/accesorios/): lámparas, goggles, cámara térmica y PASS
+- [Herramientas y equipo de rescate](https://trajesbomberos.com/rescate-y-herramientas/): extricación, rescate vertical, entrada forzada, forestal y mangueras
+- [Equipo de rescate](https://trajesbomberos.com/rescate/) · [Herramientas de bombero](https://trajesbomberos.com/herramientas/) · [Mangueras y accesorios](https://trajesbomberos.com/mangueras-y-accesorios/)
+- [Kits de equipo de bombero](https://trajesbomberos.com/kits/): conjuntos compatibles por operación
+- [Kit estructural](https://trajesbomberos.com/kits/kit-estructural/) · [Kit brigadista](https://trajesbomberos.com/kits/kit-brigadista/) · [Kit forestal](https://trajesbomberos.com/kits/kit-forestal/)
+
+## Guías técnicas
+
+- [Cómo elegir un traje para bomberos](https://trajesbomberos.com/blog/como-elegir-traje-para-bomberos/)
+- [Diferencias entre traje estructural, forestal y de brigadista](https://trajesbomberos.com/blog/traje-estructural-o-brigadista/)
+- [NFPA 1970: qué cambió respecto a NFPA 1971](https://trajesbomberos.com/blog/nfpa-1970-que-cambio/)
+- [NOM-002-STPS-2010: equipo para brigadas](https://trajesbomberos.com/blog/nom-002-stps-2010-equipo-para-brigadas/)
+- [Cómo cotizar equipo para un cuerpo de bomberos municipal y expediente de licitación](https://trajesbomberos.com/blog/licitacion-trajes-bomberos-expediente/)
+- [Vida útil del traje de bombero según NFPA 1850](https://trajesbomberos.com/blog/vida-util-traje-bombero-nfpa-1850/)
+- [TPP y THL en el traje estructural](https://trajesbomberos.com/blog/tpp-y-thl-traje-estructural/)
+- [Tipos de guantes para bombero](https://trajesbomberos.com/blog/tipos-de-guantes-para-bombero/)
+- [Equipo de bombero completo](https://trajesbomberos.com/blog/equipo-de-bombero-completo/)
+- [Partes del traje de bombero](https://trajesbomberos.com/blog/partes-del-traje-de-bombero/)
+- [Checklist de equipo para brigadas contra incendio](https://trajesbomberos.com/blog/checklist-equipo-brigada-contra-incendio/)
+- [Equipo de protección forestal y NFPA 1977](https://trajesbomberos.com/blog/equipo-de-proteccion-combatiente-forestal/)
+- [Blog técnico completo](https://trajesbomberos.com/blog/)
+
+## Empresa y directorio
+
+- [Empresa](https://trajesbomberos.com/empresa/): quién es LORICA y cómo cotiza
 - [Contacto y cotización](https://trajesbomberos.com/contacto/)
 - [Aviso de privacidad](https://trajesbomberos.com/aviso-de-privacidad/) · [Términos y condiciones](https://trajesbomberos.com/terminos-y-condiciones/)
+- [Directorio de estaciones de bomberos](https://trajesbomberos.com/estaciones-de-bomberos/): 572 estaciones en los 32 estados, por estado y municipio
+
+## Optional
+
+- [Mapa del sitio](https://trajesbomberos.com/sitemap-index.xml)

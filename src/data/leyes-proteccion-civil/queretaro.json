@@ -1,0 +1,116 @@
+{
+  "slug": "queretaro",
+  "nombreOficial": "Ley del Sistema Estatal de Protección Civil, Prevención y Mitigación de Desastres para el Estado de Querétaro",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado «La Sombra de Arteaga»",
+    "fecha": "2015-09-18"
+  },
+  "ultimaReforma": "2021-10-22",
+  "urlOficial": "https://site.legislaturaqueretaro.gob.mx/CloudPLQ/InvEst/Leyes/LEY-ID-074.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 17",
+    "cita": "La Coordinación Estatal de Protección Civil es un órgano público desconcentrado de la Secretaría de Gobierno, con autonomía técnica y de gestión."
+  },
+  "lead": "La Ley del Sistema Estatal de Protección Civil, Prevención y Mitigación de Desastres para el Estado de Querétaro detalla como pocas lo que deben tener brigadas e inmuebles. Esta guía resume, con artículo y cita literal, lo que exige a empresas y responsables de seguridad.",
+  "panorama": [
+    "Publicada en septiembre de 2015 en «La Sombra de Arteaga» y reformada por última vez en octubre de 2021, esta ley sustituyó a la anterior Ley de Protección Civil del Estado de Querétaro. Obliga a dependencias públicas, instituciones privadas y sociales e infraestructura a mantener una Unidad Interna de Protección Civil (Art. 35) y condiciona la licencia de funcionamiento a un Programa Interno aprobado (Art. 40).",
+    "El Sistema Estatal lo integran el Consejo Estatal, la Coordinación Estatal de Protección Civil, los sistemas municipales y los grupos especializados e instituciones coadyuvantes acreditados (Art. 7). La Coordinación Estatal es un órgano desconcentrado de la Secretaría de Gobierno (Art. 17). Las coordinaciones municipales aprueban los programas internos y vigilan su ejecución en su territorio (Arts. 33 y 38)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Dependencias e instituciones privadas y sociales",
+      "obligacion": "Conformar y mantener en operación una Unidad Interna de Protección Civil en cada inmueble que ocupen.",
+      "articulo": "Art. 35",
+      "cita": "están obligados a conformar y mantener en operación, dentro de los inmuebles que ocupen, una Unidad Interna de Protección Civil que ejecute las tareas de prevención, preparación, auxilio, continuidad de operaciones y restablecimiento que correspondan"
+    },
+    {
+      "sujeto": "Unidades internas de protección civil",
+      "obligacion": "Elaborar y actualizar cada año el Programa Interno, por escrito y firmado por personal competente y capacitado.",
+      "articulo": "Art. 37",
+      "cita": "Las unidades internas de protección civil, elaborarán y actualizarán cada año su Programa Interno de Protección Civil, el cual deberá constar por escrito, estar firmado por personal competente, facultado y capacitado"
+    },
+    {
+      "sujeto": "Titulares de inmuebles con programa interno",
+      "obligacion": "Enviar el Programa Interno a la Coordinación Municipal para su revisión y aprobación.",
+      "articulo": "Art. 38",
+      "cita": "Los programas internos de protección civil deberán remitirse a la Coordinación Municipal de Protección Civil respectiva para que sean registrados una vez que ésta apruebe su contenido"
+    },
+    {
+      "sujeto": "Negocios que tramitan licencia de funcionamiento",
+      "obligacion": "Tener el Programa Interno aprobado como requisito para obtener o refrendar la licencia municipal de funcionamiento.",
+      "articulo": "Art. 40",
+      "cita": "Para el otorgamiento o refrendo de Licencias de Funcionamiento Municipal, trámite o documento equivalente, será requisito indispensable contar con el respectivo Programa Interno de Protección Civil, debidamente aprobado"
+    },
+    {
+      "sujeto": "Inmuebles con brigadas de emergencia",
+      "obligacion": "Prever en el Programa Interno equipo de protección personal para brigadistas y distintivos de identificación.",
+      "articulo": "Art. 41",
+      "cita": "Equipo de identificación y accesorios para brigadistas: Adquisición de equipo para protección personal de brigadistas (casco, chaleco, botas), y/o distintivos de identificación (chaleco, gorra y silbato)."
+    },
+    {
+      "sujeto": "Empresas",
+      "obligacion": "Capacitar a sus empleados y dotarlos del equipo necesario en protección civil y prevención de riesgos.",
+      "articulo": "Art. 43",
+      "cita": "los responsables o los representantes legales de las empresas deberán capacitar a sus empleados y dotarlos del equipo necesario en materia de protección civil y prevención de riesgos."
+    },
+    {
+      "sujeto": "Industrias, comercios, oficinas y escuelas",
+      "obligacion": "Practicar al menos dos simulacros al año con aviso a la autoridad y colocar equipo, señalización e instructivos visibles.",
+      "articulo": "Art. 117",
+      "cita": "En los edificios públicos, escuelas, industrias, comercios, oficinas, unidades habitacionales, centros de espectáculos o diversiones, en todos los establecimientos abiertos al público y en vehículos de transporte escolar y de personal, deberán practicarse simulacros de protección civil, por lo menos dos veces al año"
+    },
+    {
+      "sujeto": "Organizadores de concentraciones masivas",
+      "obligacion": "Contar con atención prehospitalaria y bomberos acreditados, seguridad, programa específico aprobado y póliza de seguro vigente.",
+      "articulo": "Art. 84",
+      "cita": "exigirá a quienes la organicen, contar o presentar al menos con: I. Unidades y personal de atención médica prehospitalaria, con registro vigente en la Coordinación Estatal; II. Unidades y personal de bomberos, con registro vigente en la Coordinación Estatal"
+    }
+  ],
+  "brigadasDuo": [
+    "En Querétaro, cada dependencia e institución de los sectores privado y social debe conformar y mantener en operación una Unidad Interna de Protección Civil en sus inmuebles (Art. 35), constituida junto con las coordinaciones estatal y municipal (Art. 36). Esa unidad elabora y actualiza cada año el Programa Interno, por escrito y firmado por personal competente (Art. 37).",
+    "El artículo 41 fija el contenido mínimo del programa: acta constitutiva de la unidad y de las brigadas de emergencia, cursos de al menos ocho horas en primeros auxilios, contra incendio, evacuación y búsqueda y rescate impartidos por instructores acreditados, y mínimo dos simulacros de evacuación total. El artículo 117 reitera los dos simulacros anuales con aviso a la autoridad."
+  ],
+  "equipoDuo": [
+    "Querétaro es de los pocos estados cuya ley baja al detalle del equipo: el Programa Interno debe prever protección personal para brigadistas, como casco, chaleco y botas, además de distintivos, extintores, hidrantes, detectores y señalización conforme a la NOM-003-SEGOB-2011 (Art. 41). La NOM-002-STPS-2010, norma federal, complementa la dotación contra incendio del centro de trabajo.",
+    "El artículo 43 obliga a las empresas a dotar a su personal del equipo necesario, y no contar con equipo de seguridad o tenerlo en mal estado es infracción (Art. 143). En LORICA fabricamos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/trajes/estructural/\">trajes estructurales</a>; la NOM-017-STPS-2024 orienta la selección del equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "El artículo 145 permite imponer, solas o acumuladas, multa, clausura definitiva, temporal, parcial o total, suspensión de obras o actividades, suspensión de eventos y arresto administrativo hasta por 36 horas. El artículo 143 tipifica, entre otras, carecer de Programa Interno, no capacitar ni equipar al personal y no acreditar dos simulacros."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Querétaro y dónde consulto el texto?",
+      "a": "Es la Ley del Sistema Estatal de Protección Civil, Prevención y Mitigación de Desastres para el Estado de Querétaro, publicada el 18 de septiembre de 2015 en «La Sombra de Arteaga»; su última reforma es del 22 de octubre de 2021. La Legislatura del Estado la ofrece en su compilación de leyes."
+    },
+    {
+      "q": "¿Quién debe tener Unidad Interna y Programa Interno en Querétaro?",
+      "a": "Según el artículo 35, dependencias y entidades públicas, instituciones coadyuvantes de los sectores privado y social e infraestructura en general. La unidad elabora el Programa Interno cada año (Art. 37) y la Coordinación Municipal lo revisa y aprueba (Art. 38)."
+    },
+    {
+      "q": "¿Qué capacitación y simulacros exige la ley queretana a las brigadas?",
+      "a": "El artículo 41 pide cursos de al menos ocho horas para la Unidad Interna y los brigadistas en primeros auxilios, contra incendio, evacuación y búsqueda y rescate, con constancias de instructores acreditados, y mínimo dos simulacros de evacuación total; el artículo 117 exige dos simulacros al año."
+    },
+    {
+      "q": "¿Necesito Programa Interno aprobado para la licencia de funcionamiento en Querétaro?",
+      "a": "Sí. El artículo 40 establece que, para otorgar o refrendar la licencia de funcionamiento municipal o trámite equivalente, es requisito indispensable contar con el Programa Interno de Protección Civil debidamente aprobado, con carta de corresponsabilidad de un consultor acreditado (Art. 41)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Querétaro?",
+      "a": "La propia ley menciona casco, chaleco y botas como equipo de protección personal de brigadistas, y gorra, chaleco y silbato como distintivos (Art. 41). A eso se suman extintores, hidrantes y detectores según el análisis de riesgos, y la NOM-002-STPS-2010 para dimensionar la dotación contra incendio."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Legislatura del Estado de Querétaro · Ley del Sistema Estatal de Protección Civil, Prevención y Mitigación de Desastres (PDF)",
+      "url": "https://site.legislaturaqueretaro.gob.mx/CloudPLQ/InvEst/Leyes/LEY-ID-074.pdf"
+    },
+    {
+      "nombre": "Legislatura del Estado de Querétaro · Leyes estatales",
+      "url": "http://legislaturaqueretaro.gob.mx/leyes/"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

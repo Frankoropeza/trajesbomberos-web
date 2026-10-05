@@ -1,0 +1,116 @@
+{
+  "slug": "nuevo-leon",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Nuevo León",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Nuevo León",
+    "fecha": "1997-01-22"
+  },
+  "ultimaReforma": "2026-06-15",
+  "urlOficial": "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/pdf/LEY%20DE%20PROTECCION%20CIVIL%20PARA%20EL%20ESTADO%20DE%20NUEVO%20LEON.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Dirección de Protección Civil (Secretaría General de Gobierno)",
+    "articulo": "Art. 24",
+    "cita": "La Dirección de Protección Civil, dependiente de la Secretaría General de Gobierno del Estado, tendrá como función, proponer, dirigir, presupuestar, ejecutar y vigilar la protección civil en el Estado"
+  },
+  "lead": "Guía práctica de la Ley de Protección Civil para el Estado de Nuevo León: qué exige a escuelas, oficinas, fábricas, comercios y sitios con concurrencia masiva, con el artículo exacto y la cita del texto vigente para quien coordina seguridad o brigadas.",
+  "panorama": [
+    "Publicada el 22 de enero de 1997 y con última reforma del 15 de junio de 2026, la ley es de orden público y obliga a autoridades, instituciones públicas, sociales y privadas y a quien resida o transite en Nuevo León (Art. 1). Llama establecimientos a escuelas, oficinas, empresas, fábricas, industrias y comercios donde pueda existir riesgo, de competencia estatal o municipal (Art. 2).",
+    "El Sistema Estatal forma parte del Sistema Nacional (Art. 9) y lo orienta el Consejo de Protección Civil del Estado. La Dirección de Protección Civil, adscrita a la Secretaría General de Gobierno, dirige y vigila la materia (Art. 24). Cada municipio tiene un Sistema presidido por su Presidente Municipal (Art. 29) y, si una emergencia exige a ambos niveles, coordina la Dirección estatal (Art. 50)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos de competencia estatal o municipal",
+      "obligacion": "Mantener de forma permanente un programa específico de protección civil y plan de contingencias, autorizado y supervisado por la autoridad.",
+      "articulo": "Art. 45",
+      "cita": "tienen la obligación de contar permanentemente con un programa especifico de Protección Civil, Plan de Contingencias, el cual deberá estar autorizado y supervisado por la Dirección de Protección Civil o la unidad municipal según corresponda."
+    },
+    {
+      "sujeto": "Escuelas, oficinas, empresas y comercios",
+      "obligacion": "Contar con una unidad interna de respuesta inmediata ante altos riesgos, emergencias o desastres.",
+      "articulo": "Art. 47",
+      "cita": "Los establecimientos a que hace referencia la presente Ley, tienen la obligación de contar con una unidad interna de respuesta inmediata, ante los altos riesgos, emergencias o desastres, que potencialmente puedan ocurrir."
+    },
+    {
+      "sujeto": "Patrones, propietarios o titulares",
+      "obligacion": "Procurar capacitación y equipo de respuesta para su personal, y pedir asesoría a la Dirección de Protección Civil o a la unidad municipal.",
+      "articulo": "Art. 48",
+      "cita": "los patrones, propietarios o titulares de los establecimientos, procurarán capacitar a sus empleados y dotarlos del equipo necesario de respuesta, así como solicitar la asesoría de la Dirección de Protección Civil o de la unidad municipal que corresponda"
+    },
+    {
+      "sujeto": "Establecimientos en general",
+      "obligacion": "Realizar al menos dos simulacros al año, asistidos por la Dirección de Protección Civil o por la unidad municipal.",
+      "articulo": "Art. 27",
+      "cita": "Los establecimientos deberán realizar, asistidos por la Dirección de Protección Civil o de la unidad municipal, según corresponda, cuando menos dos veces al año, simulacros para hacer frente a altos riesgos, emergencias o desastres."
+    },
+    {
+      "sujeto": "Todo establecimiento",
+      "obligacion": "Colocar en sitios visibles equipos de seguridad, señales preventivas e informativas y el equipo reglamentario.",
+      "articulo": "Art. 46",
+      "cita": "En los establecimientos deberá colocarse en sitios visibles, equipos de seguridad, señales preventivas e informativas y equipo reglamentario."
+    },
+    {
+      "sujeto": "Eventos o espectáculos con afluencia masiva",
+      "obligacion": "Difundir contenido preventivo y de seguridad claro, accesible e inclusivo, supervisado por la unidad interna de respuesta inmediata.",
+      "articulo": "Art. 46 Bis",
+      "cita": "En los establecimientos donde se realicen eventos o espectáculos con afluencia masiva, públicos o privados, será obligatoria la difusión de contenido preventivo y de seguridad."
+    },
+    {
+      "sujeto": "Casinos, centros de apuestas y salas de sorteos",
+      "obligacion": "Tener unidades internas de respuesta propias y hacer simulacros de evacuación con asistencia de la autoridad estatal y municipal.",
+      "articulo": "Art. 27 Bis",
+      "cita": "En el caso de establecimientos como casinos, centros de apuestas, salas de sorteos, casas de juego y similares, deberán contar con sus propias unidades internas de respuesta."
+    },
+    {
+      "sujeto": "Edificios frecuentados por menores de edad",
+      "obligacion": "Ordenar al menos dos simulacros anuales para tener implementado el Protocolo de Seguridad Código Adam en el plan de contingencia.",
+      "articulo": "Art. 50 Bis 4",
+      "cita": "Los Administradores tendrán la obligación de ordenar la realización de por lo menos dos simulacros anuales, en los edificios Públicos o Privados frecuentados por menores de edad"
+    }
+  ],
+  "brigadasDuo": [
+    "En Nuevo León la ley no habla de brigadas internas sino de unidades internas de respuesta inmediata: todo establecimiento debe tener una (Art. 47) y sus titulares procurarán capacitar al personal y dotarlo del equipo necesario (Art. 48). La Dirección de Protección Civil puede hacer inspecciones aleatorias para verificar el grado de capacitación en primeros auxilios (Art. 26, fr. X).",
+    "Los simulacros son al menos dos por año, con asistencia de la autoridad estatal o municipal (Art. 27). Quien quiera hacer labores de rescate y auxilio debe constituirse en grupo voluntario o sumarse a uno ya reconocido (Art. 42), y la preparación de esos grupos se complementa con ejercicios y simulacros coordinados por la Dirección de Protección Civil (Art. 43)."
+  ],
+  "equipoDuo": [
+    "El artículo 46 pide equipos de seguridad y equipo reglamentario en sitios visibles, y el 48 habla de dotar al personal del equipo necesario de respuesta, sin detallar cuál. Para definirlo, las empresas suelen apoyarse en normas federales: la NOM-002-STPS-2010 para prevención y combate de incendios y la NOM-017-STPS-2024 para el equipo de protección personal de cada puesto.",
+    "Una unidad interna que atiende conatos y evacuaciones suele requerir protección de cabeza, manos y pies, además de prendas visibles para guiar al personal. En LORICA fabricamos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y, para cuerpos de bomberos industriales que hacen ataque interior, <a href=\"/trajes/estructural/\">trajes estructurales</a>."
+  ],
+  "sancionesDuo": [
+    "El artículo 87 prevé amonestación, clausura temporal o definitiva, total o parcial, multa, suspensión de obras, instalaciones o servicios y arresto administrativo hasta por 36 horas; la reincidencia puede llevar a clausura definitiva. Incumplir el artículo 27 Bis es infracción expresa (Art. 86, fr. V)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Nuevo León y dónde se consulta?",
+      "a": "Es la Ley de Protección Civil para el Estado de Nuevo León, publicada en el Periódico Oficial el 22 de enero de 1997. Su última reforma apareció en el Periódico Oficial #83-III del 15 de junio de 2026. El H. Congreso del Estado la ofrece completa en PDF y Word en su sección de Leyes."
+    },
+    {
+      "q": "¿Qué establecimientos deben tener programa específico y plan de contingencias?",
+      "a": "El artículo 45 lo exige a los establecimientos de competencia estatal o municipal: escuelas, oficinas, empresas, fábricas, industrias, comercios y cualquier instalación donde pueda existir riesgo por su naturaleza, uso o concurrencia masiva de personas (Art. 2, fr. VIII)."
+    },
+    {
+      "q": "¿Qué pide la ley sobre unidades internas de respuesta y simulacros?",
+      "a": "Cada establecimiento debe contar con una unidad interna de respuesta inmediata (Art. 47) y hacer cuando menos dos simulacros al año con asistencia de la autoridad (Art. 27). En edificios frecuentados por menores, el artículo 50 Bis 4 pide además dos simulacros anuales del Protocolo Código Adam."
+    },
+    {
+      "q": "¿Qué cambió con la reforma de junio de 2026?",
+      "a": "Se adicionó el artículo 46 Bis: en establecimientos donde se realicen eventos o espectáculos con afluencia masiva, públicos o privados, es obligatoria la difusión de contenido preventivo y de seguridad, clara, accesible e inclusiva, bajo la supervisión de la unidad interna de respuesta inmediata."
+    },
+    {
+      "q": "¿Qué equipo necesita una unidad interna de respuesta?",
+      "a": "La ley habla de equipo necesario de respuesta y equipo reglamentario sin listarlo. En la práctica se define con el análisis de riesgos del inmueble y con normas federales como la NOM-002-STPS-2010: extintores, casco, guantes, botas, lámparas, botiquín y prendas de alta visibilidad."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "H. Congreso del Estado de Nuevo León · Ley de Protección Civil para el Estado de Nuevo León (PDF)",
+      "url": "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/pdf/LEY%20DE%20PROTECCION%20CIVIL%20PARA%20EL%20ESTADO%20DE%20NUEVO%20LEON.pdf"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Nuevo León · Página de la ley en la sección Leyes",
+      "url": "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/leyes/ley_de_proteccion_civil_para_el_estado_de_nuevo_leon/"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

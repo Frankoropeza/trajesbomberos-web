@@ -1,0 +1,124 @@
+{
+  "slug": "chihuahua",
+  "nombreOficial": "Ley de Protección Civil del Estado de Chihuahua",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Chihuahua",
+    "fecha": "2015-08-26"
+  },
+  "ultimaReforma": "2026-04-18",
+  "urlOficial": "https://www.congresochihuahua2.gob.mx/biblioteca/leyes/archivosLeyes/1174.pdf",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Chihuahua",
+    "url": "https://www.congresochihuahua2.gob.mx/biblioteca/reglamentos/archivosReglamentos/134.pdf",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil (Secretaría General de Gobierno)",
+    "articulo": "Art. 26",
+    "cita": "La Secretaría General de Gobierno del Estado contará con una Coordinación Estatal de Protección Civil, la cual auxiliará a la elaboración e implementación de programas de la materia, y tendrá a su cargo la dirección, supervisión y control de los mismos"
+  },
+  "lead": "Guía práctica de la Ley de Protección Civil del Estado de Chihuahua para gerentes de planta, administradores de inmuebles y organizadores de eventos: programa interno, unidad interna, brigadas y simulacros, cada punto con su artículo y la cita literal.",
+  "panorama": [
+    "La ley vigente se publicó el 26 de agosto de 2015 y su reforma más reciente salió en el Periódico Oficial del 18 de abril de 2026. Pide Programa Interno a los inmuebles e instalaciones de dependencias, industrias y empresas de los sectores público, privado y social (Art. 52), y regula aparte simulacros, eventos de concentración masiva y empresas que representan un riesgo para la población.",
+    "La Coordinación Estatal de Protección Civil, adscrita a la Secretaría General de Gobierno, dirige y supervisa los programas (Art. 26). Cada presidente municipal debe instalar su Consejo Municipal dentro de los sesenta días siguientes a la toma de protesta y operar una Coordinación Municipal (Art. 31). Desde 2021 la ley asigna a los municipios el servicio de bomberos (Art. 38 Bis)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de los sectores público, privado y social",
+      "obligacion": "Contar con Programa Interno de Protección Civil en cada inmueble e instalación fija o móvil, conforme a la Ley General.",
+      "articulo": "Art. 52",
+      "cita": "Los inmuebles e instalaciones fijas y móviles de las dependencias, entidades, instituciones, organismos, industrias o empresas pertenecientes a los sectores público, privado y social, deberán contar con un Programa Interno de Protección Civil"
+    },
+    {
+      "sujeto": "Responsables de inmuebles con Programa Interno",
+      "obligacion": "Presentar el programa para revisión y autorización, y actualizarlo si cambia la estructura del inmueble o de la Unidad Interna.",
+      "articulo": "Art. 54",
+      "cita": "presentarán ante la autoridad de protección civil correspondiente, el Programa Interno para revisión y autorización. En caso de que se realicen modificaciones en cuanto a la estructura del inmueble o la estructura de la Unidad Interna de Protección Civil, dicho programa quedará sin validez"
+    },
+    {
+      "sujeto": "Instituciones, establecimientos y dependencias",
+      "obligacion": "Formar las brigadas con su propio personal, preparado en primeros auxilios, combate de incendios, evacuación o búsqueda y rescate.",
+      "articulo": "Art. 59",
+      "cita": "Los brigadistas se integrarán con personal que labore en la propia institución, establecimiento o dependencia, y será capacitado en una o varias funciones del Programa Interno de Protección Civil, sea primeros auxilios, prevención y combate de incendios, evacuación y búsqueda y rescate."
+    },
+    {
+      "sujeto": "Administradores y propietarios de edificios",
+      "obligacion": "Dotar a la Unidad Interna del equipo de respuesta necesario para proteger a los ocupantes, los bienes y el entorno.",
+      "articulo": "Art. 61, fr. II",
+      "cita": "Dotar a su Unidad Interna de Protección Civil del equipo de respuesta necesario para la salvaguarda de su integridad física y psicológica de los ocupantes, así como de los bienes y entorno."
+    },
+    {
+      "sujeto": "Establecimientos con Programa Interno",
+      "obligacion": "Hacer dos simulacros al año y documentar la evaluación por escrito de la Unidad Interna al concluir cada uno.",
+      "articulo": "Art. 71",
+      "cita": "Los simulacros se deberán llevar a cabo con una periodicidad de dos veces al año y una vez concluidos deberán contar con una evaluación por escrito emitida por la Unidad Interna de Protección Civil."
+    },
+    {
+      "sujeto": "Empresas que representan riesgo para la población",
+      "obligacion": "Presentar, además del Programa Interno, planes de contingencia específicos, inventario de recursos y programa anual de simulacros.",
+      "articulo": "Art. 81",
+      "cita": "Las empresas que por sus características específicas representen un riesgo para la población, deberán presentar adicionalmente al Programa Interno de Protección Civil, los planes de contingencia específicos al riesgo"
+    },
+    {
+      "sujeto": "Industria, comercio y servicios",
+      "obligacion": "Conformar, capacitar y equipar las brigadas de evacuación, primeros auxilios, combate de incendios y búsqueda y rescate, según las normas oficiales.",
+      "articulo": "Art. 53, fr. I del Reglamento",
+      "cita": "Conformar, organizar, capacitar y equipar sus brigadas internas de emergencia, siendo las de evacuación de inmuebles, de primeros auxilios, de combate de incendios y de búsqueda y rescate, de acuerdo a los requerimientos de las Normas Oficiales vigentes"
+    },
+    {
+      "sujeto": "Unidades Internas de Protección Civil",
+      "obligacion": "Establecer un programa de capacitación teórica y práctica para el personal del Programa Interno y comprobar que los conocimientos se adquirieron.",
+      "articulo": "Art. 35 del Reglamento",
+      "cita": "Cada Unidad Interna de Protección Civil establecerá un programa de capacitación para asegurar la continua formación teórica y práctica del personal asignado al Programa Interno de Protección Civil, estableciendo sistemas o formas de comprobación de que dichos conocimientos han sido adquiridos."
+    }
+  ],
+  "brigadasDuo": [
+    "Cada instancia obligada debe crear una Unidad Interna de Protección Civil que elabore, actualice y opere el Programa Interno (Art. 55); ante una emergencia, esa unidad es la primera en actuar mientras llega la autoridad (Art. 60). Los administradores y propietarios deben asegurar la capacitación y el adiestramiento de los brigadistas y supervisar los simulacros y su evaluación (Art. 61).",
+    "Los simulacros se hacen dos veces al año, con aviso por escrito a protección civil al menos quince días hábiles antes (Arts. 69 y 71). El escenario se elige a partir del análisis de riesgo del Programa Interno, y la Unidad Interna guarda fotos, oficios y un acta de resultados firmada por un representante de cada brigada (Arts. 70 y 73). La autoridad puede pedir un simulacro en cualquier momento (Art. 72)."
+  ],
+  "equipoDuo": [
+    "La ley de Chihuahua obliga expresamente a administradores y propietarios a dotar a la Unidad Interna del equipo de respuesta necesario (Art. 61, fr. II), y a colocar en sitios visibles equipos de seguridad y señalización (Art. 78). Para concretarlo en un centro de trabajo, la NOM-002-STPS-2010, norma federal, fija las condiciones de prevención y protección contra incendios.",
+    "En LORICA preparamos paquetes de <a href=\"/equipo-de-proteccion/\">equipo de protección</a> y <a href=\"/trajes/brigadista/\">trajes para brigadista</a> pensados para las cuatro brigadas básicas: primeros auxilios, combate de incendios, evacuación y búsqueda y rescate. La NOM-017-STPS-2024, norma federal de equipo de protección personal, orienta la selección según los riesgos de cada puesto."
+  ],
+  "sancionesDuo": [
+    "La Coordinación Estatal o la Municipal pueden imponer amonestación, multa, clausura o suspensión temporal, parcial o total de una obra o establecimiento por hasta treinta días naturales, suspensión de eventos de alto riesgo y suspensión o revocación de autorizaciones (Art. 117)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Chihuahua y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Chihuahua, publicada en el Periódico Oficial del Estado el 26 de agosto de 2015, con última reforma del 18 de abril de 2026. El texto actualizado y su reglamento, expedido el 29 de agosto de 2020, están en la Biblioteca Legislativa del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Chihuahua?",
+      "a": "El artículo 52 lo exige a inmuebles e instalaciones fijas y móviles de dependencias, instituciones, industrias y empresas de los sectores público, privado y social. El programa se presenta a la autoridad para revisión y autorización, y pierde validez si cambia la estructura del inmueble (Art. 54)."
+    },
+    {
+      "q": "¿Qué pide la ley de Chihuahua sobre brigadas y simulacros?",
+      "a": "Las brigadas se forman con personal propio, capacitado en primeros auxilios, combate de incendios, evacuación o búsqueda y rescate (Art. 59). Se exigen dos simulacros al año, avisados con quince días hábiles de anticipación y evaluados por escrito por la Unidad Interna (Arts. 69 y 71)."
+    },
+    {
+      "q": "¿Cuándo un inmueble o evento se considera de alto riesgo en Chihuahua?",
+      "a": "Según el artículo 75, cuando supera un aforo de 1,000 personas, o de 500 en espacio cerrado, cuando hay consumo de alcohol, cuando la construcción rebasa 3,000 metros cuadrados o cuando la actividad pone en peligro a las personas. En esos casos interviene la Coordinación Estatal."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Chihuahua?",
+      "a": "La ley habla de equipo de respuesta suficiente, sin detallarlo. Una brigada con las cuatro funciones básicas suele requerir casco, guantes, botas, chaleco o camisola de alta visibilidad, botiquín, camilla y extintores, dimensionados con la NOM-002-STPS-2010 y el análisis de riesgo del Programa Interno."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "H. Congreso del Estado de Chihuahua · Ley de Protección Civil del Estado de Chihuahua (PDF)",
+      "url": "https://www.congresochihuahua2.gob.mx/biblioteca/leyes/archivosLeyes/1174.pdf"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Chihuahua · Biblioteca Legislativa, leyes vigentes",
+      "url": "https://www.congresochihuahua.gob.mx/biblioteca/leyes/"
+    },
+    {
+      "nombre": "H. Congreso del Estado de Chihuahua · Reglamento de la Ley de Protección Civil del Estado de Chihuahua (PDF)",
+      "url": "https://www.congresochihuahua2.gob.mx/biblioteca/reglamentos/archivosReglamentos/134.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

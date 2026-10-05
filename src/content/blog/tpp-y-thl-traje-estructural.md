@@ -38,7 +38,7 @@ Y porque hay una trampa: **el traje con el TPP más alto casi nunca es el mejor 
 
 **TPP** es *Thermal Protective Performance*: rendimiento de protección térmica.
 
-Se mide exponiendo una muestra del **composite completo** —las tres capas juntas, en el orden en que van en el traje— a una fuente combinada de calor por flama y por radiación, con un sensor detrás que simula la piel. El número que sale representa cuánta energía resiste el conjunto antes de que ocurra una quemadura de segundo grado.
+Se mide exponiendo una muestra del **composite completo** (las tres capas juntas, en el orden en que van en el traje) a una fuente combinada de calor por flama y por radiación. Detrás, un sensor simula la piel. El número que sale representa cuánta energía resiste el conjunto antes de que ocurra una quemadura de segundo grado.
 
 Traducido a operación: **cuántos segundos tienes antes de que el calor te alcance.** Más TPP, más margen.
 
@@ -82,7 +82,7 @@ Depende de qué hace tu gente la mayor parte del tiempo:
 
 **2. Pedir los números de la tela y no del conjunto.** El TPP y el THL se miden sobre el **composite completo**, con las tres capas en su orden real. El dato de una capa suelta no es comparable ni sirve para nada.
 
-**3. Pedir valores altísimos "por si acaso".** Exigir un TPP muy por encima de la referencia sin justificarlo en el análisis de riesgo encarece la partida, reduce el número de licitantes que pueden cumplir y, de paso, te entrega trajes más pesados y menos transpirables. Más no siempre es mejor: es distinto. Para ver de dónde sale cada valor, revisa los [materiales del traje de bombero](/blog/materiales-del-traje-de-bombero/) capa por capa y [cuánto pesa un traje de bombero](/blog/cuanto-pesa-un-traje-de-bombero/) con cada configuración.
+**3. Pedir valores altísimos "por si acaso".** Exigir un TPP muy por encima de la referencia sin justificarlo en el análisis de riesgo encarece la partida y reduce el número de licitantes que pueden cumplir. De paso, te entrega trajes más pesados y menos transpirables. Más no siempre es mejor: es distinto. Para ver de dónde sale cada valor, revisa los [materiales del traje de bombero](/blog/materiales-del-traje-de-bombero/) capa por capa y [cuánto pesa un traje de bombero](/blog/cuanto-pesa-un-traje-de-bombero/) con cada configuración.
 
 ## Cómo pedirlo por escrito
 
@@ -112,3 +112,15 @@ Para cerrar con honestidad: estos dos números miden desempeño térmico del com
 - Si vas a conseguir refacciones en tres años.
 
 Son necesarios, no suficientes. Pídelos siempre, pero no compres solo con ellos. Si quieres el resto de la lista, está en la guía de [cómo elegir traje para bomberos](/blog/como-elegir-traje-para-bomberos/).
+
+## Preguntas frecuentes
+
+**¿Qué significa TPP en un traje de bombero?** Es el rendimiento de protección térmica (Thermal Protective Performance). Indica cuánta energía resiste el composite completo antes de una quemadura de segundo grado. La referencia mínima para conjunto estructural es TPP 35.
+
+**¿Qué significa THL en un traje estructural?** Es la pérdida total de calor (Total Heat Loss). Mide cuánto calor metabólico deja salir el traje hacia afuera. La referencia mínima para conjunto estructural es THL 205.
+
+**¿Conviene pedir el TPP más alto disponible?** No por sí solo. Un composite más aislante sube el TPP y baja el THL, así que el traje pesa más y respira menos. El valor se justifica con el análisis de riesgo de tu operación.
+
+**¿TPP y THL se miden en la tela o en el conjunto?** En el composite completo, con las tres capas en el orden real del traje. El dato de una capa suelta no sirve para comparar ofertas.
+
+**¿Qué hago si el proveedor no declara TPP ni THL?** Pide que lo solicite al fabricante con reporte de laboratorio de la configuración exacta ofertada. Si la respuesta evade el dato, tienes información suficiente sobre esa oferta.

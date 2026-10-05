@@ -1,14 +1,14 @@
 {
- "lead": "Doce estaciones dan presencia a los bomberos en Tamaulipas dentro de 8 municipios. Ciudad Madero, Nuevo Laredo, Reynosa y Tampico tienen dos sedes cada uno. Se incluyen dirección, ubicación, teléfono oficial cuando existe y la corporación que las opera.",
+ "lead": "Un total de 16 estaciones dan presencia a los bomberos en Tamaulipas dentro de 9 municipios. Matamoros, Altamira, Victoria y Tampico, entre otros, tienen dos sedes. Se incluyen dirección, ubicación, teléfono oficial cuando existe y la corporación operadora.",
  "panorama": [
-  "En Tamaulipas predominan los cuerpos municipales, junto con servicios aeroportuarios y la brigada contraincendio de PEMEX en Ciudad Madero. La operación abarca municipios fronterizos, industriales y costeros. Para coordinar protección o abastecimiento, conviene identificar el tipo de corporación antes de preparar una solicitud.",
-  "Cuatro municipios reúnen dos estaciones: Ciudad Madero, Nuevo Laredo, Reynosa y Tampico. Los materiales peligrosos aparecen tanto en corporaciones municipales como en la brigada de PEMEX, así que la dotación para bomberos en Tamaulipas debe contemplarlos por separado. Tampico declara rescate acuático; El Mante y Victoria incluyen incendios forestales."
+  "En Tamaulipas predominan los cuerpos municipales, junto con servicios aeroportuarios y la brigada contraincendio de PEMEX en Ciudad Madero. La operación abarca municipios fronterizos como Miguel Alemán, industriales y costeros; Altamira, Matamoros y Victoria ya suman subestaciones. Para coordinar protección o abastecimiento, identifica el tipo de corporación antes de preparar una solicitud.",
+  "Siete municipios reúnen dos estaciones cada uno, entre ellos Matamoros, Reynosa y Nuevo Laredo en la frontera y Tampico y Altamira en la costa. Los materiales peligrosos aparecen tanto en corporaciones municipales como en la brigada de PEMEX, así que la dotación para bomberos en Tamaulipas debe contemplarlos por separado. Tampico declara rescate acuático; El Mante, Victoria y Altamira incluyen incendios forestales."
  ],
  "estacionesDuo": [
   "Sobresalen el Heroico Cuerpo de Bomberos de Tampico, la Dirección de Protección Civil y Bomberos de Nuevo Laredo y la Brigada Contraincendio Refinería Francisco I. Madero de PEMEX. El listado está ordenado por municipio y conserva el teléfono oficial de las corporaciones que lo tienen."
  ],
  "coberturaDuo": [
-  "La atención prehospitalaria se declara en 11 estaciones y materiales peligrosos en 6. Incendios estructurales, rescate vehicular y fugas de gas conforman otro frente relevante. El servicio aeroportuario en Nuevo Laredo, Reynosa y Tampico añade requisitos de aproximación específicos."
+  "La atención prehospitalaria se declara en 13 estaciones y materiales peligrosos en 6. Incendios estructurales, rescate vehicular y fugas de gas conforman otro frente relevante. El servicio aeroportuario en Nuevo Laredo, Reynosa y Tampico añade requisitos de aproximación específicos."
  ],
  "equipoDuo": [
   "Los servicios estructurales requieren <a href=\"/trajes/estructural/\">trajes estructurales</a> y protección para rescate vehicular. Por los materiales peligrosos y fugas de gas, algunas partidas deben incluir <a href=\"/trajes/hazmat/\">trajes Hazmat</a> conforme al riesgo. Tampico también puede requerir accesorios para rescate acuático, y los aeropuertos protección de aproximación.",
@@ -17,7 +17,7 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Tamaulipas y dónde están?",
-   "a": "Hay 12 estaciones de bomberos en Tamaulipas en Altamira, Ciudad Madero, El Mante, Matamoros, Nuevo Laredo, Reynosa, Tampico y Victoria. Ciudad Madero, Nuevo Laredo, Reynosa y Tampico cuentan con dos sedes en el estado."
+   "a": "Hay 16 estaciones de bomberos en Tamaulipas, repartidas en Altamira, Ciudad Madero, El Mante, Matamoros, Miguel Alemán, Nuevo Laredo, Reynosa, Tampico y Victoria. Salvo El Mante y Miguel Alemán, cada uno de esos municipios cuenta con dos sedes en el estado."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Tamaulipas?",

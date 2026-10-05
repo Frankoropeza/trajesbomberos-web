@@ -1,39 +1,39 @@
 {
- "lead": "Las estaciones de bomberos en Sinaloa suman 9 en 6 municipios. Ahome, Culiacán y Mazatlán cuentan con dos sedes cada uno. Localiza dirección, ubicación, teléfono oficial cuando existe y la corporación que opera el servicio en el estado.",
+ "lead": "Tenemos localizadas 23 estaciones de bomberos en Sinaloa, repartidas en 11 municipios. Mazatlán y Culiacán concentran la mayoría, con 7 y 5 bases; en cada estación verás ubicación, domicilio cuando se conoce, teléfono oficial si existe y quién la opera.",
  "panorama": [
-  "En Sinaloa operan cuerpos voluntarios, departamentos municipales y servicios aeroportuarios. Los Mochis, Culiacán y Mazatlán reúnen una corporación de bomberos y un servicio de aeropuerto. Guasave, Navolato y Salvador Alvarado completan la cobertura municipal.",
-  "Ahome, Culiacán y Mazatlán concentran dos estaciones cada uno. Al definir equipo para bomberos en Sinaloa, conviene distinguir la protección estructural y de rescate vehicular de las partidas aeroportuarias. Mazatlán reporta rescate acuático, mientras Guasave y Guamúchil incluyen incendio forestal."
+  "Los bomberos en Sinaloa son mayoritariamente voluntarios. En Culiacán, Mazatlán y Los Mochis, los cuerpos voluntarios operan una estación central con sus subestaciones, y en Mazatlán conviven además los Bomberos Veteranos. Los ayuntamientos sostienen cuerpos propios en Guasave, Navolato, Guamúchil, Badiraguato, Eldorado y Juan José Ríos, y los 3 aeropuertos internacionales tienen su SSEI.",
+  "Las tres ciudades grandes reúnen casi dos tercios de las estaciones; fuera de ellas, municipios como Angostura, Choix o Badiraguato dependen de una sola base. Si equipas corporaciones en Sinaloa, piensa en dos escalas de compra: dotaciones que se reparten entre subestaciones urbanas y pedidos acotados para cuerpos de una estación."
  ],
  "estacionesDuo": [
-  "El Heroico Cuerpo de Bomberos de Culiacán, el Heroico Cuerpo de Bomberos de Los Mochis y el Cuerpo Voluntario de Bomberos de Mazatlán muestran la presencia voluntaria del estado. Las estaciones se agrupan por municipio y se incluye el teléfono oficial cuando está disponible."
+  "En Culiacán, el Heroico Cuerpo de Bomberos de Culiacán opera la Estación Central y las de Arboledas, La Conquista y Vallado; en Mazatlán, el H. Cuerpo Voluntario de Bomberos de Mazatlán comparte la ciudad con los Bomberos Veteranos. Las estaciones van por municipio, con teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Las 9 estaciones declaran atención prehospitalaria, y 6 atienden incendios estructurales y rescate vehicular. Materiales peligrosos y salvamento aeroportuario aparecen en 3 servicios cada uno. El conjunto refleja riesgos urbanos, de traslado y de terminal aérea que requieren protecciones diferenciadas."
+  "La atención prehospitalaria es el servicio más declarado, en 9 estaciones, seguida del incendio estructural y el rescate vehicular. Materiales peligrosos aparece en las centrales de Culiacán, Mazatlán y Los Mochis, y el salvamento aeroportuario en los 3 SSEI; Guasave y Guamúchil suman incendio forestal."
  ],
  "equipoDuo": [
-  "La base para estas corporaciones son <a href=\"/trajes/estructural/\">trajes estructurales</a> y equipo de rescate vehicular. Los servicios con materiales peligrosos requieren protección Hazmat según el producto involucrado. En Guasave y Salvador Alvarado, el incendio forestal justifica sumar prendas diseñadas para trabajo de campo.",
-  "LORICA puede ordenar una compra de Sinaloa por partidas y anexar la especificación técnica que pide una licitación o compra directa. Factura con CFDI 4.0, no solicita compra mínima y realiza envíos al estado. La solicitud admite <a href=\"/herramientas/\">herramientas para rescate</a> junto con protección personal."
+  "Las corporaciones urbanas necesitan <a href=\"/trajes/estructural/\">trajes estructurales</a> y equipo de extricación para el rescate vehicular. Las centrales que declaran materiales peligrosos requieren protección Hazmat, y los SSEI de los aeropuertos, <a href=\"/trajes/aproximacion/\">trajes de aproximación</a>. En Guasave y Guamúchil el incendio forestal pide prendas ligeras; en Mazatlán, el rescate acuático exige equipo propio.",
+  "Para las compras en Sinaloa, LORICA separa cada partida con su ficha técnica, de modo que el expediente sirva en una licitación municipal o en la compra directa de un cuerpo voluntario. Facturamos con CFDI 4.0, sin compra mínima, y enviamos al estado. Agrega <a href=\"/herramientas/\">herramientas de rescate</a> en la misma solicitud si tu base atiende choques."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Sinaloa y dónde están?",
-   "a": "Hay 9 estaciones de bomberos en Sinaloa distribuidas en Ahome, Culiacán, Guasave, Mazatlán, Navolato y Salvador Alvarado. Ahome, Culiacán y Mazatlán tienen dos sedes cada uno, incluyendo servicios aeroportuarios en esos municipios."
+   "a": "Tenemos localizadas 23 estaciones de bomberos en Sinaloa, en 11 municipios. Mazatlán suma 7, Culiacán 5 y Ahome 3, todas en Los Mochis. Angostura, Badiraguato, Choix, Eldorado, Guasave, Juan José Ríos, Navolato y Salvador Alvarado tienen una cada uno. Si falta alguna, escríbenos."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Sinaloa?",
-   "a": "Los bomberos en Sinaloa son operados por cuerpos voluntarios, departamentos municipales y servicios aeroportuarios. La forma de operación cambia por municipio: Los Mochis, Culiacán y Mazatlán tienen cuerpos voluntarios, mientras Guasave, Navolato y Salvador Alvarado cuentan con cuerpos municipales."
+   "a": "Predominan los cuerpos voluntarios, con 14 estaciones en Culiacán, Mazatlán, Los Mochis, Angostura y Choix. Otras 6 dependen de los ayuntamientos, como Guasave, Navolato o Badiraguato, y 3 corresponden a los SSEI de los aeropuertos de Culiacán, Mazatlán y Los Mochis."
   },
   {
    "q": "¿Cómo contacto una estación de bomberos en Sinaloa para una gestión?",
-   "a": "Cuando la sede tiene teléfono oficial, se incluye para comunicaciones institucionales o solicitudes de información. Para una emergencia en Sinaloa marca 911. Si no hay número publicado, el municipio y la corporación operadora sirven para localizar el contacto adecuado."
+   "a": "Solo Choix y Guasave tienen teléfono oficial publicado. Para las demás, dirígete a la corporación que opera la estación, por ejemplo la central de Culiacán o la de Mazatlán, cuando necesites capacitación, una donación o un dictamen. Si se trata de una emergencia en Sinaloa, marca 911."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Sinaloa?",
-   "a": "Los bomberos en Sinaloa reportan atención prehospitalaria, incendios estructurales y rescate vehicular. Algunas corporaciones también declaran materiales peligrosos, salvamento aeroportuario, incendios forestales, rescate en altura o rescate acuático, según los servicios propios de cada sede."
+   "a": "Los más comunes son atención prehospitalaria, incendio estructural y rescate vehicular. Las centrales de las 3 ciudades grandes declaran materiales peligrosos; los aeropuertos, salvamento aeroportuario; Guasave y Guamúchil, incendio forestal, y Mazatlán, rescate acuático. Culiacán agrega rescate en altura."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Sinaloa?",
-   "a": "Las corporaciones de bomberos en Sinaloa pueden comprar por licitación o de forma directa. LORICA acompaña la compra con especificación técnica por partida y CFDI 4.0; no exige compra mínima y despacha al estado lo incluido en la cotización."
+   "a": "Da igual si compra un ayuntamiento por licitación o un cuerpo voluntario de forma directa: LORICA entrega ficha técnica por partida y factura CFDI 4.0. No pedimos compra mínima y el pedido se envía a Sinaloa, tanto si equipas una sola base en Choix como varias subestaciones en Mazatlán."
   }
  ]
 }

@@ -12,6 +12,9 @@ export interface Imagen extends HeroImage {
 }
 
 export interface Bloque {
+  /** Eyebrow del título en dos columnas; ancla opcional para el menú de sección. */
+  eyebrow?: string;
+  id?: string;
   h2: string;
   parrafos: string[];
   lista?: string[];
@@ -43,6 +46,8 @@ export interface Tipo {
   relacionados?: string[];
   chips?: string[];
   resumen?: string[];
+  /** Dúos (dos párrafos a la derecha del título) de los módulos de la ficha de tipo. */
+  duos?: Partial<Record<'ficha' | 'errores' | 'modelos' | 'kit' | 'marca' | 'faq', [string, string]>>;
 }
 
 export interface Modelo {
@@ -78,4 +83,6 @@ export interface Modelo {
   notaCompra?: string;
   /** Enlaces contextuales a piezas de la familia (solo modelos de traje). */
   relacionados?: { label: string; href: string }[];
+  /** Dúos (dos párrafos junto al título) de los módulos de la ficha del modelo. */
+  duos?: Partial<Record<'ficha' | 'caracteristicas' | 'otros' | 'faq', [string, string]>>;
 }

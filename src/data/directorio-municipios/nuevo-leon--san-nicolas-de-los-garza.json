@@ -1,0 +1,32 @@
+{
+ "lead": "San Nicolás de los Garza tiene tres estaciones de bomberos a cargo de la Dirección de Bomberos y Protección Civil municipal. Encuentra en qué colonias se ubican y cómo acercarte a la corporación.",
+ "panorama": [
+  "En San Nicolás de los Garza el servicio es municipal: lo presta la Dirección de Bomberos y Protección Civil, cuya sede declara incendio estructural y forestal, rescate vehicular, materiales peligrosos y control de enjambres y fauna. Las estaciones Oriente y Residencial Santo Domingo se enfocan en atención prehospitalaria.",
+  "Al ser una dependencia del ayuntamiento, bomberos y protección civil funcionan bajo una misma dirección, lo que facilita coordinar simulacros, cursos o compras. La Estación 2 Oriente está en la colonia Miguel Alemán y otra base en Residencial Santo Domingo, entre las calles Girasol y Azalea."
+ ],
+ "coberturaDuo": [
+  "Las tres estaciones son municipales y todas brindan atención prehospitalaria, el servicio más extendido de la red. La sede de la Dirección concentra el resto, incluidos incendios forestales, materiales peligrosos y el retiro de enjambres y fauna, señal de riesgos que van de lo urbano a lo ambiental."
+ ],
+ "equipoDuo": [
+  "El equipo base es el traje estructural con casco, capucha y respiración autónoma, más material prehospitalario en las tres estaciones. Para incendios en vegetación conviene el <a href=\"/trajes/forestal/\">traje forestal</a>; para materiales peligrosos, protección química, y para el rescate vehicular, herramienta de extricación.",
+  "Como dependencia municipal, la Dirección suele comprar por licitación o adjudicación. LORICA prepara la cotización por partida, la ficha técnica de cada artículo y el expediente que pida el área de adquisiciones de San Nicolás, con CFDI 4.0, sin compra mínima y envío a la ciudad de <a href=\"/herramientas/\">herramientas de rescate</a>."
+ ],
+ "faqs": [
+  {
+   "q": "¿Cuántas estaciones de bomberos hay en San Nicolás de los Garza y dónde están?",
+   "a": "Tres. La Estación 2 Oriente se ubica en la colonia Miguel Alemán y otra base en Residencial Santo Domingo, en las calles Girasol y Azalea. La sede de la Dirección de Bomberos y Protección Civil no tiene domicilio publicado; protección civil municipal puede orientarte."
+  },
+  {
+   "q": "¿Quién opera a los bomberos en San Nicolás de los Garza?",
+   "a": "La Dirección de Bomberos y Protección Civil de San Nicolás de los Garza, una dependencia municipal que integra ambos servicios bajo un mismo mando. Nuevo León suma 31 estaciones en 14 municipios, y San Nicolás cuenta con red propia."
+  },
+  {
+   "q": "¿Cómo contacto a los bomberos en San Nicolás de los Garza para un trámite?",
+   "a": "Ninguna de las tres estaciones publica teléfono oficial. Para trámites, cursos o simulacros, acude a la oficina municipal de protección civil, que forma parte de la misma dirección, o escríbenos y te orientamos. En emergencias, llama al 911."
+  },
+  {
+   "q": "¿Cómo adquiere equipo el cuerpo de bomberos de San Nicolás de los Garza?",
+   "a": "Normalmente mediante los procesos de compra del municipio. Envíanos las bases o la lista de partidas: LORICA entrega ficha técnica por artículo, cotización formal y CFDI 4.0, sin monto mínimo y con envío a San Nicolás. También atendemos a brigadas de empresas locales."
+  }
+ ]
+}

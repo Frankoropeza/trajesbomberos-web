@@ -36,7 +36,7 @@ productos:
   - "/empresa/"
 ---
 
-Equipar a un cuerpo de bomberos voluntarios no exige esperar a tener una sola compra completa. La forma más controlable es priorizar por riesgo y por persona: identificar qué salidas atiende cada integrante, qué protección está completa, qué pieza ya no puede usarse y qué complemento falta para que un conjunto funcione. Compra por pieza no significa comprar sin criterio; significa mantener cada configuración verificable.
+Equipar a un cuerpo de bomberos voluntarios no exige esperar a tener una sola compra completa. La forma más controlable es priorizar por riesgo y por persona. Identifica qué salidas atiende cada integrante, qué protección está completa, qué pieza ya no puede usarse y qué complemento falta para que un conjunto funcione. Compra por pieza no significa comprar sin criterio; significa mantener cada configuración verificable.
 
 Los cuerpos voluntarios y particulares pueden armar conjunto completo o reponer sólo chaquetón, pantalonera, casco, guante o bota sin mínimo. La clave es no convertir una necesidad urgente en una mezcla de familias. Revisa primero el [equipo de bombero completo](/blog/equipo-de-bombero-completo/) y define si la respuesta autorizada es estructural, brigadista, forestal, rescate u otra especializada.
 
@@ -44,7 +44,7 @@ La lista inicial debe distinguir equipo asignado, equipo pendiente de evaluació
 
 ## Primero se prioriza el riesgo, no la apariencia
 
-Una corporación puede atender incendios estructurales, conatos industriales, vegetación, accidentes viales o apoyos. Cada tarea demanda una familia de protección distinta. Un [traje estructural](/trajes/estructural/) no se sustituye por una prenda brigadista para ataque interior; equipo forestal no reemplaza las capas de un estructural; y ropa de rescate técnico se integra para evitar contaminar el conjunto estructural en cada choque.
+Una corporación puede atender incendios estructurales, conatos industriales, vegetación, accidentes viales o apoyos. Cada tarea demanda una familia de protección distinta. Un [traje estructural](/trajes/estructural/) no se sustituye por una prenda brigadista para ataque interior, y el equipo forestal no reemplaza sus capas. La ropa de rescate técnico se integra para no contaminar el conjunto estructural en cada choque.
 
 La dotación se revisa por persona y función. Quien entra a una operación definida requiere un sistema completo compatible; quien apoya puede requerir otra configuración autorizada. Evita repartir piezas por disponibilidad sin talla o sin comprobar interfaz. Un casco sin retención, guante sin destreza o bota que no permite caminar deja un hueco aunque parezca que la lista está “completa”.
 

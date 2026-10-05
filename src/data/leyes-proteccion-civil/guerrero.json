@@ -1,0 +1,116 @@
+{
+  "slug": "guerrero",
+  "nombreOficial": "Ley Número 861 de Gestión Integral de Riesgos y Protección Civil del Estado de Guerrero",
+  "numero": "861",
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado de Guerrero",
+    "fecha": "2024-09-13"
+  },
+  "ultimaReforma": null,
+  "urlOficial": "https://congresogro.gob.mx/legislacion/ordinarias/ARCHI/ley-no-861-gestion-integral-riesgos-proteccion-civil-estado-2024-10-15.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Secretaría de Gestión Integral de Riesgos y Protección Civil del Estado de Guerrero",
+    "articulo": "Art. 3",
+    "cita": "La aplicación de la presente Ley compete al Poder Ejecutivo Estatal, por conducto de la Secretaría de Gestión Integral de Riesgos y Protección Civil del Estado de Guerrero, de las secretarías, dependencias y organismos que forman parte del Sistema Estatal"
+  },
+  "lead": "La Ley Número 861 de Gestión Integral de Riesgos y Protección Civil del Estado de Guerrero sustituyó a la antigua Ley 455. Aquí reunimos, con artículo y cita, lo que pide a establecimientos, organizadores de eventos y unidades internas de protección civil.",
+  "panorama": [
+    "Publicada el 13 de septiembre de 2024 y en vigor treinta días naturales después, la Ley 861 abrogó la Ley Número 455 de 2010. Regula la gestión integral de riesgos para proteger la vida, los bienes, la planta productiva y los servicios (Art. 1) y alcanza a dependencias y a establecimientos privados y sociales, que deben operar una Unidad Interna y un Programa Interno de Protección Civil (Arts. 42 y 48).",
+    "La conducción corresponde al Poder Ejecutivo mediante la Secretaría de Gestión Integral de Riesgos y Protección Civil (Art. 3), mientras el Consejo Estatal es la instancia superior de decisión del sistema (Art. 11). Cada municipio integra su propio sistema y consejo (Art. 18); el Sistema Municipal es el primer nivel de respuesta y su Unidad Municipal atiende de inmediato las emergencias locales (Arts. 21 y 31)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Dependencias y establecimientos",
+      "obligacion": "Contar con una Unidad Interna de Protección Civil con brigadas de primeros auxilios, incendios, búsqueda y rescate, comunicación y evacuación.",
+      "articulo": "Art. 42",
+      "cita": "contarán con una Unidad Interna de Protección Civil, que será la instancia de respuesta inmediata ante los riesgos, emergencias o desastres que pudieran ocurrir, las cuales contarán con las brigadas o personas capacitadas en"
+    },
+    {
+      "sujeto": "Propietarios y administradores de establecimientos",
+      "obligacion": "Tener un Programa Interno formulado por un tercero acreditado y autorizado por la Secretaría.",
+      "articulo": "Art. 45, fr. II",
+      "cita": "Contar con un Programa Interno de Protección Civil, mismo que deberá ser formulado por un tercero acreditado en gestión integral de riesgos y protección civil, debidamente registrado y autorizado por la Secretaría"
+    },
+    {
+      "sujeto": "Propietarios y administradores de establecimientos",
+      "obligacion": "Capacitar y equipar al personal y hacer al menos dos simulacros al año por cada fenómeno al que esté expuesto el inmueble.",
+      "articulo": "Art. 45, fr. V y VI",
+      "cita": "Capacitar a sus empleadas o empleados y dotarlos del equipo necesario de respuesta; VI. Realizar, al menos dos simulacros por año, por cada uno de los fenómenos perturbadores a los que está expuesto el inmueble"
+    },
+    {
+      "sujeto": "Establecimientos en general",
+      "obligacion": "Colocar a la vista señales, alarmas, equipos de mitigación, botiquines y el equipo reglamentario que corresponda a su actividad.",
+      "articulo": "Art. 45, fr. III",
+      "cita": "Colocar en sitios visibles, señales y avisos de protección civil, alarmas, equipos de mitigación, botiquines de primeros auxilios y equipo reglamentario de acuerdo a la actividad que se desarrolle"
+    },
+    {
+      "sujeto": "Titulares de programas internos aprobados",
+      "obligacion": "Actualizar el Programa Interno cada año y de inmediato si hay daños o cambios en la infraestructura.",
+      "articulo": "Art. 52",
+      "cita": "El Programa Interno de Protección Civil, una vez aprobado por la autoridad competente, deberá ser actualizado anualmente, y de forma inmediata en caso de daños, modificaciones en infraestructura."
+    },
+    {
+      "sujeto": "Inmuebles de mediano o alto riesgo",
+      "obligacion": "Contratar una póliza de responsabilidad civil no cancelable que cubra daños a terceros y anexarla al Programa Interno.",
+      "articulo": "Art. 53",
+      "cita": "Los establecimientos o inmuebles clasificados como de mediano o alto riesgo, deberán contar con una Póliza de Seguro de Responsabilidad Civil, no cancelable y que deberá cubrir la indemnización de daños a terceros en su integridad física o de salud"
+    },
+    {
+      "sujeto": "Edificaciones de riesgo o concurrencia masiva",
+      "obligacion": "Obtener un dictamen de seguridad estructural favorable y renovarlo cada tres años o tras un sismo de gran magnitud.",
+      "articulo": "Art. 96",
+      "cita": "deberán contar con un dictamen de seguridad estructural favorable, emitido por una directora o director responsable de obra o corresponsable estructural, el cual deberá ser actualizado cada tres años"
+    },
+    {
+      "sujeto": "Organizadores de eventos de afluencia masiva",
+      "obligacion": "Informar a los asistentes, con avisos sonoros o visuales, las medidas de prevención, rutas de evacuación y zonas de menor riesgo.",
+      "articulo": "Art. 84",
+      "cita": "las y los promotores, organizadores o responsables, deberán informar a las personas asistentes a través de avisos sonoros y/o visuales, las medidas de prevención en materia de protección civil, rutas de evacuación, zonas de menor riesgo"
+    }
+  ],
+  "brigadasDuo": [
+    "La Ley 861 detalla qué brigadas espera ver en la Unidad Interna: primeros auxilios; prevención, combate y extinción de incendios; búsqueda y rescate; comunicación y evacuación, más las que exija el giro (Art. 42). La capacitación puede darla la Unidad Municipal, la Secretaría o profesionistas acreditados (Art. 44), y la autoridad revisa que esas unidades estén capacitadas y equipadas (Art. 46).",
+    "En simulacros, Guerrero pide al menos dos por año por cada fenómeno perturbador al que esté expuesto el inmueble, lo que en la costa suele sumar sismo y huracán, e informar a la autoridad (Art. 45, fr. VI). Fuera de la empresa, los brigadistas comunitarios reciben capacitación obligatoria en primeros auxilios, incendios, comunicación y evacuación (Arts. 155 y 156)."
+  ],
+  "equipoDuo": [
+    "A diferencia de otras leyes estatales, la guerrerense sí obliga a dotar al personal del equipo necesario de respuesta (Art. 45, fr. V) y a tener a la vista alarmas, botiquines y equipo reglamentario según la actividad (fr. III). Para aterrizar esa obligación, la NOM-002-STPS-2010, norma federal sobre prevención y protección contra incendios, orienta el equipamiento de la brigada contra incendio.",
+    "En LORICA equipamos brigadas internas con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y cuerpos de respuesta con <a href=\"/trajes/estructural/\">trajes estructurales</a>, además de casco, guantes y botas. La NOM-017-STPS-2024, norma federal de equipo de protección personal, sirve para seleccionarlo según el riesgo que enfrenta cada integrante de la brigada."
+  ],
+  "sancionesDuo": [
+    "La Secretaría y las Unidades Municipales pueden sancionar (Art. 228). A propietarios o administradores que incumplan, la ley prevé multa, clausura temporal o definitiva, parcial o total, revocación del visto bueno de programas internos y la ejecución de obras para mitigar el riesgo (Art. 229), según la gravedad y la reincidencia (Art. 230)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Guerrero y dónde consulto el texto?",
+      "a": "Es la Ley Número 861 de Gestión Integral de Riesgos y Protección Civil del Estado de Guerrero, publicada el 13 de septiembre de 2024 en el Periódico Oficial. El texto que difunde el Congreso del Estado aparece como texto original, sin reformas anotadas, en su sección de leyes ordinarias."
+    },
+    {
+      "q": "¿Quién está obligado a tener Programa Interno de Protección Civil en Guerrero?",
+      "a": "El artículo 48 lo hace obligatorio para centros, establecimientos, inmuebles e instalaciones fijas y móviles de los sectores público, privado y social. Debe presentarse ante la Unidad Municipal o la Secretaría (Art. 51) y actualizarse cada año (Art. 52)."
+    },
+    {
+      "q": "¿Qué pide la Ley 861 sobre brigadas internas?",
+      "a": "Que cada establecimiento conforme y mantenga en operación su Unidad Interna con brigadas de primeros auxilios, incendios, búsqueda y rescate, comunicación y evacuación (Arts. 42 y 45), capacitadas por la autoridad o por profesionistas acreditados (Art. 44)."
+    },
+    {
+      "q": "¿Sigue vigente la Ley 455 de Protección Civil de Guerrero?",
+      "a": "No. El segundo transitorio de la Ley 861 abroga la Ley Número 455 de Protección Civil, publicada en noviembre de 2010. Documentos, programas o capacitaciones que citen la Ley 455 conviene revisarlos a la luz de la nueva ley y de la Secretaría de Gestión Integral de Riesgos."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Guerrero?",
+      "a": "La ley exige dotar al personal del equipo necesario de respuesta, sin enlistarlo. En la práctica, una brigada suele requerir casco, guantes, botas, prendas de alta visibilidad, botiquín y extintores, dimensionados con la NOM-002-STPS-2010 y con el análisis de riesgos de cada inmueble."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Guerrero · Ley Número 861 de Gestión Integral de Riesgos y Protección Civil (PDF)",
+      "url": "https://congresogro.gob.mx/legislacion/ordinarias/ARCHI/ley-no-861-gestion-integral-riesgos-proteccion-civil-estado-2024-10-15.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Guerrero · Legislación, leyes ordinarias",
+      "url": "https://congresogro.gob.mx/legislacion/leyes-ordinarias.php"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

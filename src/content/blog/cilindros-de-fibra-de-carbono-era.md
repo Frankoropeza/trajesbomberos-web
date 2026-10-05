@@ -41,7 +41,7 @@ La misma lógica aplica a un cilindro nuevo y a uno de reemplazo. Antes de incor
 
 ## Qué almacena y por qué no es universal
 
-El cilindro porta aire para que el ERA no dependa de la atmósfera. Se une a la placa dorsal y al circuito de reguladores mediante una válvula y conexión específicas. Dos cilindros de apariencia similar pueden diferir en longitud, masa, presión, rosca, retención o acople. Forzar una pieza o intercambiarla sin confirmación técnica puede impedir el cierre correcto y crear una condición insegura. El cilindro aporta la reserva de aire, pero el resultado depende de máscara, reguladores, arnés, indicadores y del programa de control de la corporación; el sistema completo se explica en [SCBA: qué es y cómo funciona](/blog/scba-que-es-y-como-funciona/).
+El cilindro porta aire para que el ERA no dependa de la atmósfera. Se une a la placa dorsal y al circuito de reguladores mediante una válvula y conexión específicas. Dos cilindros de apariencia similar pueden diferir en longitud, masa, presión, rosca, retención o acople. Forzar una pieza o intercambiarla sin confirmación técnica puede impedir el cierre correcto y crear una condición insegura. El cilindro aporta la reserva de aire, pero el resultado depende de máscara, reguladores, arnés, indicadores y del programa de control de la corporación. El sistema completo se explica en [SCBA: qué es y cómo funciona](/blog/scba-que-es-y-como-funciona/).
 
 El [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/) se cotiza como sistema. Antes de pedir repuestos, registra marca, modelo, tipo de montaje, válvula y número de serie de lo que ya usa la corporación. Una fotografía, el color del forro o la palabra “SCBA” no identifican una conexión. Pide confirmación escrita si el dato no aparece en la ficha o manual autorizado.
 
@@ -120,7 +120,7 @@ Para [cotizar cilindros para ERA](/contacto/), envía los datos de la etiqueta o
 
 **¿Qué presión tienen los cilindros del catálogo?** Las configuraciones publicadas señalan 4,500 psi.
 
-**¿Cuánto dura un cilindro?** 30, 45 o 60 minutos son valores nominales; la duración real cambia con consumo y escena.
+**¿Cuánto dura un cilindro de fibra de carbono de 60 minutos?** 30, 45 o 60 minutos son valores nominales; la duración real cambia con consumo y escena.
 
 **¿Cada cuándo se realiza la prueba hidrostática?** Cada cinco años para cilindros de compuesto, conforme a etiqueta DOT y programa aplicable.
 

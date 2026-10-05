@@ -43,7 +43,7 @@ secciones:
     eyebrow: "A fondo"
     titulo: "Manguera contra incendio y accesorios, explicados a fondo"
     duo:
-      - "Tres módulos: la manguera de ataque, el pitón o boquilla, y las llaves, conexiones y adaptadores. En cada uno, qué medidas lleva el pedido, qué no conviene asumir y qué revisamos antes de proponerlo."
+      - "La línea completa, en tres partes: la manguera de ataque, el pitón o boquilla, y las llaves, conexiones y adaptadores. Cada parte dice qué medidas lleva el pedido, qué no conviene asumir y qué revisamos antes de proponerlo."
       - "Cada módulo te lleva a la especificación del componente o a WhatsApp con el mensaje listo. Te contestamos con la configuración completa por escrito, con factura CFDI 4.0."
   comparar:
     eyebrow: "Comparativa"
@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre mangueras y accesorios contra incendio"
     duo:
-      - "Lo que más nos preguntan antes de pedir mangueras: por qué se valida la línea completa, si NH/NST y NPSH son iguales, qué es una siamesa, qué norma se pide y cómo se cuidan roscas y juntas."
+      - "Con las mangueras, las dudas empiezan por la línea: por qué se valida completa, si NH/NST y NPSH son iguales y qué es una siamesa. Cerramos con la norma que se pide y cómo se cuidan roscas y juntas."
       - "Si tu duda es sobre una rosca, adjunta en el formulario la foto y las medidas del extremo. Se abre WhatsApp con tu consulta de mangueras y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

@@ -1,0 +1,116 @@
+{
+  "slug": "hidalgo",
+  "nombreOficial": "Ley de Protección Civil del Estado de Hidalgo",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Hidalgo (Alcance)",
+    "fecha": "2011-12-05"
+  },
+  "ultimaReforma": "2026-08-28",
+  "urlOficial": "https://www.congreso-hidalgo.gob.mx/biblioteca_legislativa/leyes_cintillo/Ley%20de%20Proteccion%20Civil%20del%20Estado%20de%20Hgo.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Subsecretaría de Protección Civil y Gestión de Riesgos (Secretaría de Gobierno)",
+    "articulo": "Art. 14",
+    "cita": "La Coordinación Estatal de Protección Civil, es la Subsecretaría de Protección Civil y Gestión de Riesgos, que se encarga de la elaboración, ejecución y seguimiento de los programas de prevención y atención de riesgos"
+  },
+  "lead": "Resumen práctico de la Ley de Protección Civil del Estado de Hidalgo, reformada en agosto de 2026: qué exige a establecimientos con afluencia masiva, organizadores de eventos y consultores, con artículo y cita, para jefes de brigada y áreas de seguridad.",
+  "panorama": [
+    "Publicada el 5 de diciembre de 2011, esta ley abrogó la de 2001 y acumula reformas hasta el 28 de agosto de 2026. Busca proteger la vida, la salud, el patrimonio y el entorno (Art. 1) y pesa sobre todo en establecimientos comerciales, industriales y de servicio que reciben público o son de riesgo: programa, equipamiento, unidad interna y señalización (Arts. 80, 81 y 85).",
+    "El Sistema Estatal reúne a dependencias, municipios y sectores privado y social (Art. 4); el Consejo Estatal es su órgano consultivo (Art. 10) y la Subsecretaría de Protección Civil y Gestión de Riesgos opera como Coordinación Estatal (Art. 14). En lo local, el Sistema Municipal es el primer nivel de respuesta (Art. 21) y cada ayuntamiento expide sus propios reglamentos y bandos en la materia (Art. 29)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos de afluencia masiva o de riesgo",
+      "obligacion": "Tener de forma permanente un programa específico de protección civil y el equipamiento de seguridad, autorizados y supervisados por la Subsecretaría.",
+      "articulo": "Art. 80",
+      "cita": "tienen obligación de contar permanentemente con un programa específico de protección civil y el equipamiento de seguridad respectivo, el cual deberá ser autorizado y supervisado por la subsecretaría de protección civil y gestión de riesgos"
+    },
+    {
+      "sujeto": "Particulares con afluencia masiva de personas",
+      "obligacion": "Contar con una unidad interna de protección civil y elaborar un programa interno conforme a la ley y su reglamento.",
+      "articulo": "Art. 85",
+      "cita": "Los particulares que por su uso y destino concentren o reciban una afluencia masiva de personas, están obligadas a contar con una unidad interna de protección civil y elaborar un programa interno"
+    },
+    {
+      "sujeto": "Responsables de administración y operación",
+      "obligacion": "Integrar la unidad interna con su propio personal, según los requisitos que fije el reglamento.",
+      "articulo": "Art. 86",
+      "cita": "Los responsables de la administración y operación de las actividades señaladas en el artículo anterior deberán integrar las unidades internas con su respectivo personal, de acuerdo con los requisitos que señale el reglamento interno de la presente Ley."
+    },
+    {
+      "sujeto": "Propietarios, administradores y organizadores",
+      "obligacion": "Coordinarse con las autoridades para orientar y auxiliar al público ante cualquier contingencia.",
+      "articulo": "Art. 80",
+      "cita": "los propietarios, poseedores, administradores de establecimientos en los que haya afluencia de público y los organizadores o responsables de eventos, deberán en coordinación con las autoridades de protección civil, realizar acciones que permitan orientar y auxiliar a la población en caso de cualquier contingencia"
+    },
+    {
+      "sujeto": "Establecimientos de afluencia masiva o de riesgo",
+      "obligacion": "Colocar a la vista equipos de seguridad, señales, luces, instructivos y manuales de emergencia, además de marcar zonas de seguridad y rutas de evacuación.",
+      "articulo": "Art. 81",
+      "cita": "deberán colocarse en sitios visibles y accesibles, equipos de seguridad, señales preventivas, indicativas, prohibitivas, restrictivas e informativas, luces y equipo reglamentario según el caso, instructivos, manuales para situaciones de emergencia"
+    },
+    {
+      "sujeto": "Organizadores de eventos públicos",
+      "obligacion": "Entregar a tiempo un programa específico para revisión y difundir sus medidas al público antes, durante y al cierre del evento.",
+      "articulo": "Art. 78",
+      "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse programas específicos de protección civil, los cuales serán entregados oportunamente a las autoridades correspondientes, para su revisión y en su caso aprobación."
+    },
+    {
+      "sujeto": "Consultores y capacitadores",
+      "obligacion": "Darse de alta en el padrón de la Subsecretaría, cumpliendo sus requisitos, y renovar esa alta cada año.",
+      "articulo": "Art. 16, fr. XXV",
+      "cita": "Los consultores y capacitadores en materia de protección civil, tendrán que tramitar ante la Subsecretaria su registro correspondiente, quedando sujeta su alta al padrón respectivo, una vez cumplidos los requisitos previamente establecidos, y debiendo renovar el mismo anualmente."
+    },
+    {
+      "sujeto": "Particulares visitados por la autoridad",
+      "obligacion": "Permitir las inspecciones y supervisiones y entregar la información necesaria para realizarlas.",
+      "articulo": "Art. 83",
+      "cita": "Las inspecciones y supervisiones de protección civil tienen el carácter de visitas domiciliarias, administrativas y sanitarias, en términos del Artículo 16 de la constitución política de los estados unidos mexicanos, por lo que los particulares están obligados a permitirlas"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley hidalguense define la brigada como un grupo que se organiza, capacita y adiestra en primeros auxilios, combate a connatos de incendio, evacuación, búsqueda y rescate (Art. 2, fr. XIV). Los inmuebles con afluencia masiva deben integrar su unidad interna con personal propio (Arts. 85 y 86), y el detalle de requisitos queda en manos del reglamento de la ley.",
+    "No fija un número de simulacros por año; encarga a la Subsecretaría realizar cursos, ejercicios y simulacros de evacuación también en instituciones privadas y sociales (Art. 16, fr. XIX), y a las coordinaciones municipales promoverlos (Art. 35). Aparte existe la Red Estatal de Brigadistas, integrada por voluntarios que se capacitan y trabajan con la Subsecretaría (Arts. 42 a 44)."
+  ],
+  "equipoDuo": [
+    "Hidalgo sí menciona el equipo: los establecimientos de riesgo o afluencia masiva deben contar con el equipamiento de seguridad respectivo (Art. 80) y tener a la vista equipos de seguridad y equipo reglamentario (Art. 81). Para definirlo en una brigada contra incendio, la NOM-002-STPS-2010, norma federal, marca criterios de prevención y protección en centros de trabajo.",
+    "Para brigadas internas y cuerpos de bomberos, en LORICA ofrecemos <a href=\"/trajes/estructural/\">trajes estructurales</a> y surtimos <a href=\"/equipo-de-proteccion/\">equipo de protección</a> como casco, guantes, botas y monjas. La elección por puesto conviene hacerla con la NOM-017-STPS-2024, norma federal que regula el equipo de protección personal en el trabajo."
+  ],
+  "sancionesDuo": [
+    "La ley remite infracciones, sanciones y recursos al Reglamento (Art. 84). Aun así, la autoridad puede aplicar medidas como suspender trabajos, actividades y servicios o aislar el área de riesgo (Art. 77), y la Subsecretaría ordena visitas de supervisión a negocios e industrias (Art. 16, fr. XXVI) que el particular debe permitir (Art. 83)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Hidalgo y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil del Estado de Hidalgo, publicada en Alcance del Periódico Oficial el 5 de diciembre de 2011, con última reforma publicada el 28 de agosto de 2026. El texto actualizado se descarga en PDF o Word desde el acervo de leyes del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién está obligado a tener programa interno en Hidalgo?",
+      "a": "El artículo 85 obliga a los particulares que concentren o reciban afluencia masiva de personas a tener unidad interna y programa interno. Además, los establecimientos de riesgo o con afluencia masiva deben contar con un programa específico autorizado por la Subsecretaría (Art. 80)."
+    },
+    {
+      "q": "¿Qué dice la ley de Hidalgo sobre brigadas?",
+      "a": "Define la brigada por sus funciones básicas: primeros auxilios, connatos de incendio, evacuación, búsqueda y rescate (Art. 2). Pide integrar la unidad interna con personal propio (Art. 86) y deja al reglamento los requisitos concretos."
+    },
+    {
+      "q": "¿La señalización de protección civil debe incluir Braille en Hidalgo?",
+      "a": "Sí. El artículo 81 señala que la señalización de protección civil en los establecimientos obligados debe complementarse con el sistema de escritura Braille, conforme a las normas oficiales, además de indicar zonas de seguridad y rutas de evacuación."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Hidalgo?",
+      "a": "La ley habla de equipamiento de seguridad y equipo reglamentario sin enlistarlo. Como base, una brigada suele contar con casco, guantes, botas, chaleco o prenda de alta visibilidad, botiquín, extintores y radios, ajustados al análisis de riesgo y a la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Hidalgo · Ley de Protección Civil del Estado de Hidalgo (PDF)",
+      "url": "https://www.congreso-hidalgo.gob.mx/biblioteca_legislativa/leyes_cintillo/Ley%20de%20Proteccion%20Civil%20del%20Estado%20de%20Hgo.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Hidalgo · Acervo legislativo, leyes vigentes",
+      "url": "https://congresohidalgo.gob.mx/acervo/public/leyes"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

@@ -15,7 +15,7 @@ hero:
   h1Accent: "iluminación, protección ocular y transporte"
   lead: "Un accesorio vale lo que aguanta montado en tu equipo. Te ayudamos a elegir el que corresponde a tu maniobra y a tu casco, tu ERA o tu unidad."
   descRight:
-    - "Seis accesorios, seis trabajos: la lámpara de casco te deja las manos libres, la linterna dirige la luz, los goggles protegen la vista, la cámara térmica ayuda a buscar en el humo, el PASS avisa si alguien deja de moverse y la maleta lleva el equipo completo. Cada uno tiene que convivir con casco, guantes, ERA o vehículo."
+    - "Seis accesorios, seis trabajos. La lámpara de casco te deja las manos libres, la linterna dirige la luz y los goggles protegen la vista. La cámara térmica ayuda a buscar en el humo, el PASS avisa si alguien deja de moverse y la maleta lleva el equipo completo. Cada uno tiene que convivir con casco, guantes, ERA o vehículo."
     - "Manejamos tres modelos con ficha: la lámpara Streamlight Vantage, los goggles ESS Striketeam XTO y la maleta Romak Fire BPS1005. De cada uno te damos los datos que publica la marca y su norma declarada. Los demás accesorios los proponemos según tu maniobra, sin trasladar la norma de uno a otro."
   meta: ["6 tipos de accesorio", "3 modelos con ficha", "Prueba con tu equipo", "Envíos a los 32 estados"]
 menu:
@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre accesorios para bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir accesorios: cómo se elige una lámpara de casco, qué datos de la Vantage van en el pliego, cómo se identifican los goggles, qué revisamos en un PASS y qué debe traer la cotización."
+      - "Antes de pedir accesorios surgen casi siempre las mismas dudas: cómo se elige una lámpara de casco y qué datos de la Vantage van en el pliego. Aquí también respondemos cómo se identifican los goggles, qué revisamos en un PASS y qué debe traer la cotización."
       - "Si el accesorio va montado en un casco o un ERA que ya usas, dinos el modelo en el formulario. Se abre WhatsApp con tu consulta de accesorios y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

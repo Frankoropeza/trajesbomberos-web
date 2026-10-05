@@ -37,7 +37,7 @@ secciones:
     eyebrow: "Guía de compra"
     titulo: "Cómo elegir un traje de bombero profesional en siete criterios"
     duo:
-      - "Dos trajes amarillos con cinta reflejante pueden proteger para cosas muy distintas. Por eso, antes de hablar de precio, en LORICA revisamos siete cosas: la operación, el composite capa por capa, el TPP y el THL, la norma vigente, la talla, la vida útil y la documentación que pide tu compra."
+      - "Dos trajes amarillos con cinta reflejante pueden proteger para cosas muy distintas. Por eso, antes de hablar de precio, en LORICA revisamos siete cosas. Son la operación, el composite capa por capa, el TPP y el THL, la norma vigente, la talla, la vida útil y la documentación que pide tu compra."
       - "Tómalos como lista de verificación antes de mandar tu requisición. Si una oferta no responde a los siete, todavía no la puedes comparar con otra. En la tarjeta de junto está todo lo que lleva un traje de bombero completo, pieza por pieza."
   modulos:
     eyebrow: "A fondo"
@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre el traje de bombero profesional"
     duo:
-      - "Estas son las dudas que más escuchamos antes de una compra de trajes: cuántos tipos hay, en qué se distingue un estructural de uno de brigadista, qué norma poner en el pliego, qué datos necesitamos para cotizar y qué marcas manejamos."
+      - "Antes de comprar trajes casi todos preguntan cuántos tipos hay y en qué se distingue un estructural de uno de brigadista. Después vienen la norma del pliego, los datos que necesitamos para cotizar y las marcas que manejamos."
       - "¿La tuya no está aquí? Escríbela en el formulario. Se abre WhatsApp con tu pregunta ya redactada y te contestamos en el día hábil; si hace falta, con la ficha técnica adjunta."
   guias:
     eyebrow: "Blog técnico"
@@ -143,17 +143,17 @@ fotoBanda:
   height: 768
   caption: "Siete familias, siete operaciones distintas. Te ayudamos a elegir la tuya antes de cotizar."
 comparativaTipos:
-  titulo: "Trajes para bomberos por familia: operación, construcción y complementos"
-  caption: "Comparativa de las siete familias de trajes para bomberos por tipo de operación"
-  columnas: ["Familia", "Para qué operación", "Construcción", "Complementos"]
+  titulo: "Trajes para bomberos por familia: operación, construcción, norma y complementos"
+  caption: "Comparativa de las siete familias de trajes para bomberos por operación, construcción y norma de referencia"
+  columnas: ["Familia", "Para qué operación", "Construcción", "Norma de referencia", "Complementos"]
   filas:
-    - ["Estructural", "Incendio en edificaciones, ataque interior", "Tres capas: exterior, barrera de humedad y barrera térmica", "Casco, monja, botas, guantes y ERA"]
-    - ["Brigadista", "Conato de incendio en industria, primera respuesta", "Menor gramaje y alcance de protección que el estructural", "Casco, guantes, botas y escafandra"]
-    - ["Forestal", "Incendio de vegetación, jornadas largas en campo", "Una sola capa de tela ignífuga inherente, ligera y transpirable", "Casco forestal, goggles, guantes y botas sin puntera"]
-    - ["Aproximación", "Trabajo cerca de calor radiante: aeropuerto, refinería, colada", "Exterior aluminizado para uso prolongado, con movilidad", "Capucha aluminizada, guantes y botas"]
-    - ["Entrada", "Ingreso breve a la flama: horno o incidente térmico severo", "Aluminizado multicapa, pesado, de uso corto", "Conjunto completo con ERA"]
-    - ["Extricación", "Rescate vehicular y técnico", "Ligero, resistente a corte y punción, con barrera contra patógenos", "Guante de extricación, casco y goggles"]
-    - ["Hazmat", "Materiales peligrosos: derrame, fuga o salpicadura química", "Barrera química por nivel (A encapsulado, B o C) según la sustancia", "ERA, guantes y botas químicas compatibles"]
+    - ["Estructural", "Incendio en edificaciones, ataque interior", "Tres capas: exterior, barrera de humedad y barrera térmica", "NFPA 1970 (antes NFPA 1971)", "Casco, monja, botas, guantes y ERA"]
+    - ["Brigadista", "Conato de incendio en industria, primera respuesta", "Menor gramaje y alcance de protección que el estructural", "NOM-002-STPS-2010 y análisis de riesgo; el fabricante declara su norma", "Casco, guantes, botas y escafandra"]
+    - ["Forestal", "Incendio de vegetación, jornadas largas en campo", "Una sola capa de tela ignífuga inherente, ligera y transpirable", "NFPA 1950 (antes NFPA 1977)", "Casco forestal, goggles, guantes y botas sin puntera"]
+    - ["Aproximación", "Trabajo cerca de calor radiante: aeropuerto, refinería, colada", "Exterior aluminizado para uso prolongado, con movilidad", "NFPA 1970 (antes NFPA 1971, proximidad)", "Capucha aluminizada, guantes y botas"]
+    - ["Entrada", "Ingreso breve a la flama: horno o incidente térmico severo", "Aluminizado multicapa, pesado, de uso corto", "Sin norma NFPA de producto específica: ficha del fabricante", "Conjunto completo con ERA"]
+    - ["Extricación", "Rescate vehicular y técnico", "Ligero, resistente a corte y punción, con barrera contra patógenos", "NFPA 1950 (antes NFPA 1951, rescate técnico)", "Guante de extricación, casco y goggles"]
+    - ["Hazmat", "Materiales peligrosos: derrame, fuga o salpicadura química", "Barrera química por nivel (A encapsulado, B o C) según la sustancia", "NFPA 1990 y tabla de compatibilidad por sustancia", "ERA, guantes y botas químicas compatibles"]
   enlaces: ["/trajes/estructural/", "/trajes/brigadista/", "/trajes/forestal/", "/trajes/aproximacion/", "/trajes/entrada/", "/trajes/extricacion/", "/trajes/hazmat/"]
   nota: "Ojo con dos confusiones: el traje de aproximación no sirve para entrar a la flama, y el de entrada no aguanta una operación prolongada. Es el error más peligroso del sector. Si dudas entre familias, escríbenos antes de comprar."
 comparativaModelos:

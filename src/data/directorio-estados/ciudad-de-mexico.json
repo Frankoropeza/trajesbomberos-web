@@ -1,14 +1,14 @@
 {
- "lead": "La Ciudad de México cuenta con 24 estaciones de bomberos en 16 alcaldías, con mayor concentración en Iztapalapa y varias en Álvaro Obregón. Encontrarás dirección, teléfono oficial, ubicación y corporación operadora para localizar la estación que necesitas.",
+ "lead": "La Ciudad de México cuenta con 26 estaciones de bomberos en 16 alcaldías, con mayor concentración en Iztapalapa y varias en Álvaro Obregón. Encontrarás dirección, teléfono oficial, ubicación y corporación operadora para localizar la estación que necesitas.",
  "panorama": [
-  "El servicio de bomberos en la Ciudad de México se organiza principalmente bajo el Heroico Cuerpo de Bomberos de la Ciudad de México (HCBCDMX), con una estación central y 22 subestaciones distribuidas por las alcaldías. A esta red se suma el cuerpo de salvamento aeroportuario del AICM. La estructura acerca bases operativas a distintas zonas de la capital sin dejar toda la atención en un solo cuartel.",
-  "Iztapalapa reúne 3 estaciones, mientras Álvaro Obregón, Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo y Venustiano Carranza tienen más de una estación. Para equipar bomberos en la Ciudad de México, esta distribución permite planear entregas por alcaldía y definir tallas o partidas según el uso de cada base."
+  "El servicio de bomberos en la Ciudad de México se organiza principalmente bajo el Heroico Cuerpo de Bomberos de la Ciudad de México (HCBCDMX), con una estación central y 23 subestaciones distribuidas por las alcaldías. A esta red se suman el cuerpo de salvamento aeroportuario del AICM y el cuerpo de bomberos de la UNAM en Ciudad Universitaria. La estructura acerca bases operativas a distintas zonas de la capital sin dejar toda la atención en un solo cuartel.",
+  "Iztapalapa reúne 3 estaciones, mientras Álvaro Obregón, Coyoacán, Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Tlalpan y Venustiano Carranza tienen más de una estación. Para equipar bomberos en la Ciudad de México, esta distribución permite planear entregas por alcaldía y definir tallas o partidas según el uso de cada base."
  ],
  "estacionesDuo": [
   "El HCBCDMX da continuidad a la mayor parte de las estaciones, con módulos en Álvaro Obregón y Cuautepec, además de bases en otras alcaldías. El SSEI / CREI del AICM cubre el ámbito aeroportuario. Las estaciones de bomberos en la Ciudad de México están ordenadas por alcaldía y muestran teléfono oficial cuando está publicado."
  ],
  "coberturaDuo": [
-  "Las 24 estaciones declaran incendios estructurales, lo que define la necesidad principal de protección contra calor y llama. También aparecen incendios forestales, materiales peligrosos y salvamento aeroportuario. La dotación de cada base debe responder a sus riesgos declarados y no solamente a su ubicación dentro de la ciudad."
+  "24 de las 26 estaciones declaran incendios estructurales, lo que define la necesidad principal de protección contra calor y llama. También aparecen incendios forestales, materiales peligrosos y salvamento aeroportuario. La dotación de cada base debe responder a sus riesgos declarados y no solamente a su ubicación dentro de la ciudad."
  ],
  "equipoDuo": [
   "Los <a href=\"/trajes/estructural/\">trajes estructurales</a> son esenciales para la atención que declaran todas las estaciones. En las zonas con fuego forestal se requieren prendas forestales; para materiales peligrosos, protección Hazmat. El entorno aeroportuario requiere protección de aproximación, y los trabajos de altura se complementan con equipo de rescate definido para esa maniobra.",
@@ -17,7 +17,7 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en la Ciudad de México y dónde están?",
-   "a": "Hay 24 estaciones de bomberos localizadas en 16 alcaldías de la Ciudad de México. Iztapalapa concentra 3, y Álvaro Obregón, Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo y Venustiano Carranza tienen varias bases."
+   "a": "Hay 26 estaciones de bomberos localizadas en 16 alcaldías de la Ciudad de México. Iztapalapa concentra 3, y Álvaro Obregón, Coyoacán, Cuajimalpa de Morelos, Gustavo A. Madero, La Magdalena Contreras, Miguel Hidalgo, Tlalpan y Venustiano Carranza tienen varias bases."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en la Ciudad de México?",

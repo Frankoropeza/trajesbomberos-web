@@ -20,9 +20,9 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "seccion": "cascos",
       "nombre": "Casco estructural tradicional (estilo americano)",
       "nombreCard": "Casco estructural tradicional",
-      "title": "Casco estructural tradicional para bombero | México",
-      "description": "Casco estructural tradicional para bombero: componentes, norma de referencia, compatibilidad con ERA y qué pedir al cotizar.",
-      "lead": "El casco estructural tradicional combina ala trasera, cubrenuca de Nomex y retención para ataque en edificaciones bajo la referencia NFPA 1970.",
+      "title": "Casco estructural tradicional para bombero estilo americano",
+      "description": "Casco estructural tradicional para bombero: componentes, norma de referencia, compatibilidad con ERA y qué pedir al cotizar un casco de ataque interior.",
+      "lead": "El casco estructural tradicional, de estilo americano, es el del ataque interior: copa alta, ala trasera larga que desvía agua y escombro, y cubrenuca que cierra el hueco con el cuello del chaquetón.",
       "imagen": {
         "src": "/images/catalogo/cascos/tipo-casco-estructural-tradicional.avif",
         "alt": "Casco estructural tradicional estilo americano para bombero",
@@ -32,46 +32,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Casco tradicional para ataque estructural",
+          "eyebrow": "Qué es",
+          "h2": "Casco de copa alta para ataque interior",
           "parrafos": [
-            "Cotizamos casco estructural tradicional para cuerpos de bomberos y brigadas que entran a edificaciones con ERA. Elige Bullard LTX, Bullard UST LW o Sköld Viking cuando tu partida requiera ala trasera, cubrenuca de Nomex y la referencia NFPA 1970 o NFPA 1971 declarada por fabricante.",
-            "Surtimos este formato cuando la operación necesita desviar escurrimientos y conservar cobertura de nuca con máscara de ERA. Pide fibra de vidrio en UST LW si priorizas masa, o termoplástico de alto impacto en LTX y Viking si tu pliego ya define ese material, con cubrenuca de Nomex y retención documentada."
+            "El formato tradicional nació para el incendio estructural. La copa alta aleja los impactos del cráneo, el ala trasera desvía agua caliente y escombro lejos del cuello, y el cubrenuca de Nomex completa la protección donde termina la monja.",
+            "Está pensado para trabajar con equipo de respiración autónoma puesto. Por eso lo evaluamos como parte del conjunto: un casco que no asienta con la máscara se mueve al mirar hacia arriba y deja de proteger justo cuando más se necesita."
           ]
         },
         {
-          "h2": "Partida y configuración del casco",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Carcasa, ajuste y retención: lo que cambia entre modelos",
           "parrafos": [
-            "En cada cotización escribimos modelo, código, carcasa, suspensión, barbiquejo, visor y norma declarada. Para una compra comparable, elige una sola configuración por partida y pide que color amarillo o rojo, cubrenuca de Nomex y protección ocular queden asentados antes de ordenar, junto con máscara de ERA y chaquetón de la prueba.",
-            "Revisamos con tu brigada la interfaz entre máscara de ERA, monja, cuello del chaquetón y visor. Pide la opción ReTrack, careta o goggles en UST LW según esa prueba; para LTX solicita visor de policarbonato de 4 pulgadas si esa es la protección ocular requerida."
+            "La carcasa define peso y resistencia. La fibra de vidrio del UST LW es la opción más ligera del catálogo; el termoplástico del LTX y del Viking aguanta bien el uso diario. Si tu pliego ya fija un material, partimos de ahí.",
+            "Después viene la sujeción: matraca o perilla, suspensión de seis puntos o de red, barbiquejo de dos o de cuatro puntos. Conviene cerrar una sola configuración por partida para que todo el lote llegue igual y se inspeccione contra la misma ficha."
           ],
           "lista": [
             "Modelo: Bullard LTX, UST LW o Sköld Viking",
             "Carcasa: termoplástico o fibra de vidrio",
-            "Suspensión: 6 puntos, red o Sure-Lock",
-            "Retención: barbiquejo de 2 o 4 puntos",
+            "Suspensión: seis puntos, red o Sure-Lock",
+            "Retención: barbiquejo de dos o cuatro puntos",
             "Protección ocular: visor, careta o goggles",
-            "Norma: NFPA 1971 declarada por fabricante"
+            "Norma: la que declara cada fabricante"
           ]
         },
         {
-          "h2": "Modelos estructurales que surtimos",
-          "parrafos": [
-            "Surtimos Bullard LTX CBOM1007 con termoplástico, suspensión de 6 puntos, Nomex y NFPA 1971 ed. 2018 declarado. Elige LTX para una partida que también se integre al kit brigadista Romak BOM1001 o al kit estructural Profesional; pruébalo con ERA y chaquetón antes de liberar la orden.",
-            "Para una configuración ultraligera cotizamos Bullard UST LW con fibra de vidrio, ReTrack y NFPA 1971-2018 declarado; para barbiquejo de 4 puntos proponemos Sköld Viking FPCM, termoplástico y NFPA 1971 / EN 443:2009 declarado. Pide la máscara de ERA y monja de tu corporación en la prueba de uso."
-          ]
-        },
-        {
-          "h2": "Errores de pliego que evitamos",
-          "parrafos": [
-            "Vemos órdenes que piden solo casco NFPA 1971 sin modelo, edición ni visor. Escribe Bullard LTX CBOM1007 con suspensión de 6 puntos, o UST LW con ReTrack, para que cotizamos exactamente el casco que tu operación evaluó y no una imagen parecida, con cubrenuca de Nomex y barbiquejo definidos.",
-            "También llegan pliegos que mezclan goggles, careta y visor de policarbonato de 4 pulgadas sin definir la máscara de ERA. Pide una configuración de protección ocular y cubrenuca de Nomex por partida; así revisamos que el sello de la máscara y el cuello del chaquetón sigan funcionando."
-          ]
-        },
-        {
+          "eyebrow": "En servicio",
           "h2": "Inspección, limpieza y retiro",
           "parrafos": [
-            "Antes de guardia revisamos contigo carcasa, suspensión, matraca, barbiquejo, Nomex, visor y cintas 3M Scotchlite. Retira el casco con grieta, deformación, impacto o daño térmico, y registra el modelo Bullard o Sköld, NFPA 1971 declarado y color para pedir solo componentes compatibles.",
-            "Después de una intervención, pide desmontar los componentes removibles de UST LW según fabricante y revisa el visor de policarbonato del LTX o Viking. Si calor, químicos o golpe cambiaron carcasa, lente o retención, retiramos la pieza y registramos la inspección antes de devolverla al servicio."
+            "Antes de cada guardia se revisan carcasa, suspensión, barbiquejo, cubrenuca y visor. Una grieta, una deformación por calor o un golpe fuerte bastan para sacar el casco de servicio, aunque por fuera parezca en buen estado.",
+            "Después de una intervención, limpia según las instrucciones del fabricante; el UST LW permite desmontar componentes para descontaminarlos. Registra modelo, color y configuración de cada casco para que los repuestos que pidas después sean compatibles."
           ]
         }
       ],
@@ -100,19 +90,31 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar por color sin definir configuración",
-        "Asumir que visor y máscara son compatibles sin probarlos",
-        "Aceptar una norma sin edición ni modelo declarado",
-        "Usar accesorios no especificados para completar el pedido"
+        "Comprar por color sin definir la configuración completa",
+        "Dar por hecho que visor y máscara de ERA son compatibles sin probarlos",
+        "Aceptar «cumple NFPA» sin modelo ni edición declarada",
+        "Completar el pedido con accesorios que no estaban especificados"
       ],
       "faq": [
         {
-          "q": "¿El casco tradicional sirve para rescate técnico?",
-          "a": "Puede acompañar una operación, pero el rescate técnico suele pedir un perfil compacto y elementos propios. Selecciona por riesgo principal."
+          "q": "¿Cuál es el casco estructural tradicional más ligero?",
+          "a": "De los tres con ficha publicada, el Bullard UST LW: su fabricante declara menos de 1.54 kg con visor ReTrack. El LTX y el Viking son de termoplástico y no publican peso."
         },
         {
-          "q": "¿Qué modelo tradicional se cotiza?",
-          "a": "Hay fichas para Bullard LTX, Bullard UST LW y Sköld Viking; la configuración se confirma al cotizar."
+          "q": "¿Qué diferencia hay entre NFPA 1970 y NFPA 1971 en un casco de bombero?",
+          "a": "La NFPA 1970 es la edición vigente y absorbió a la NFPA 1971. Muchos modelos, incluidos los tres de este catálogo, siguen declarando la 1971 edición 2018; lo importante es que la cotización diga qué edición declara cada uno."
+        },
+        {
+          "q": "¿El casco estructural tradicional sirve para rescate técnico?",
+          "a": "Puede acompañar una intervención, pero el rescate vehicular o vertical suele pedir un casco compacto, sin ala y con barbiquejo de cuatro puntos. Conviene elegir por el riesgo principal de la operación."
+        },
+        {
+          "q": "¿Qué casco estructural trae protector facial?",
+          "a": "El Sköld Viking incluye protector facial de policarbonato antirrayas y antiempaño. El Bullard LTX lleva visor de policarbonato de cuatro pulgadas y el UST LW, visor integrado ReTrack con careta o goggles opcionales."
+        },
+        {
+          "q": "¿Cómo sé si el casco es compatible con nuestra máscara de ERA?",
+          "a": "Probándolo con la máscara, la monja y el chaquetón puestos: el casco debe asentar sin desplazar la máscara ni girar al mirar hacia arriba. Envíanos marca y modelo de tu ERA y te decimos qué revisar en esa prueba."
         }
       ],
       "relacionados": [
@@ -126,18 +128,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Compatible con ERA"
       ],
       "resumen": [
-        "El casco estructural tradicional protege en ataque de edificaciones con ala trasera, cubrenuca de Nomex y modelos Bullard LTX, Bullard UST LW o Sköld Viking, cada uno con su norma declarada.",
-        "Cotizamos por WhatsApp modelo, visor, retención, color y compatibilidad con ERA. Pide una prueba con máscara, monja y chaquetón para que tu partida llegue con la configuración que realmente usa tu brigada."
-      ]
+        "Es el casco que más se pide para incendio en edificaciones. Surtimos tres modelos con ficha publicada: Bullard LTX, Bullard UST LW y Sköld Viking, cada uno con la norma que declara su fabricante.",
+        "Entre ellos cambian la carcasa, el ajuste, la retención y la protección ocular. En LORICA te ayudamos a elegir probándolos con la máscara de ERA, la monja y el chaquetón que ya usa tu corporación."
+      ],
+      "duos": {
+        "ficha": [
+          "La tabla resume lo que debe decir una requisición de este tipo: uso en combate estructural, copa alta con ala trasera y referencia NFPA 1970, la edición vigente que absorbió a la 1971.",
+          "La compatibilidad no se decide en escritorio: se confirma con la máscara y el ERA de tu corporación. Si el modelo ya está elegido, pide que código, color y accesorios queden por escrito en la cotización."
+        ],
+        "errores": [
+          "Casi todos los problemas con cascos estructurales empiezan en la requisición: se pide un color o una norma genérica y llega un casco que no asienta con la máscara que usa el equipo.",
+          "Estos son los cuatro puntos que conviene revisar antes de cotizar. Evitarlos cuesta una prueba y una lista de accesorios bien escrita, no más presupuesto."
+        ],
+        "modelos": [
+          "Surtimos tres cascos estructurales tradicionales con ficha técnica publicada. El LTX forma parte de nuestros kits brigadista Romak BOM1001 y estructural Profesional; el UST LW destaca por su peso y el Viking por su barbiquejo de cuatro puntos.",
+          "Cada ficha muestra el estatus normativo tal como lo publica la marca. Si dudas entre dos, cuéntanos cómo trabaja tu brigada y te decimos cuál conviene probar primero."
+        ],
+        "faq": [
+          "Reunimos las dudas habituales sobre peso, norma, protección ocular y compatibilidad con ERA del casco estructural tradicional.",
+          "Si tu pregunta es sobre una licitación concreta, mándanos el texto de la partida por WhatsApp y te respondemos con lo que conviene ajustar."
+        ]
+      }
     },
     {
       "slug": "casco-estructural-europeo",
       "seccion": "cascos",
       "nombre": "Casco estructural europeo (tipo jet)",
       "nombreCard": "Casco estructural europeo",
-      "title": "Casco estructural europeo tipo jet para bombero | México",
-      "description": "Casco estructural europeo tipo jet: cobertura, visor integrado, ERA y referencia EN 443:2008 para evaluar una cotización.",
-      "lead": "El casco estructural europeo tipo jet concentra cobertura lateral, visor retráctil y coordinación con ERA bajo la referencia EN 443:2008.",
+      "title": "Casco estructural europeo tipo jet para bombero EN 443",
+      "description": "Casco estructural europeo tipo jet: cobertura, visor integrado, compatibilidad con ERA y referencia EN 443:2008 para evaluar una cotización de bomberos.",
+      "lead": "El casco estructural europeo, conocido como tipo jet, envuelve más la cabeza que el tradicional: cubre laterales y nuca, e integra un visor retráctil para trabajar con la máscara de ERA.",
       "imagen": {
         "src": "/images/catalogo/cascos/tipo-casco-estructural-europeo.avif",
         "alt": "Casco estructural europeo tipo jet para bombero",
@@ -147,17 +167,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Casco jet para operación estructural",
+          "eyebrow": "Qué es",
+          "h2": "Casco de perfil jet para incendio en edificios",
           "parrafos": [
-            "Cotizamos casco tipo jet para bomberos que requieren cobertura lateral, frontal y de nuca durante incendios en edificios. Elige este perfil si tu operación usa máscara de ERA, visor retráctil y comunicaciones; pide EN 443:2008 cuando esa referencia forme parte de tu pliego, con protector de nuca y retención declarados.",
-            "Surtimos el tipo europeo según la configuración real, porque no hay modelo publicado en este catálogo. Pide visor exterior, ocular interior y retención en la misma partida si tu brigada necesita coordinar casco, máscara y comunicación sin perforar la carcasa, bajo EN 443:2008 y con protector de nuca."
+            "El perfil jet baja por los costados y por la nuca, y deja el frente libre para la máscara. El visor se guarda dentro de la carcasa cuando no se usa, lo que reduce enganches al moverse entre escombro o por pasillos estrechos.",
+            "Es común en cuerpos que siguen referencias europeas o que ya trabajan con equipos de esa línea. Para ataque interior cumple la misma función que el casco tradicional; lo que cambia es cómo cubre la cabeza y cómo integra la protección ocular."
           ]
         },
         {
-          "h2": "Datos que ponemos en cotización",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Visor, nuca y comunicación desde el pliego",
           "parrafos": [
-            "En la cotización anotamos uso estructural, EN 443:2008, visor, protector de nuca, color, retención y comunicación. Elige visor exterior si tu prueba exige cobertura facial, u ocular interior si tu máscara de ERA requiere otra posición de protección ocular, con chaquetón y guantes puestos.",
-            "Revisamos el casco con máscara, regulador y micrófono antes de que ordenes un lote. Pide que el visor se guarde sin rozar ERA y que el cableado quede fuera de enganches; esa configuración define si el tipo jet funciona con tu chaquetón, guantes, protector de nuca y retención bajo EN 443:2008."
+            "La primera decisión es la protección ocular: visor exterior retráctil, ocular interior o ambos. Depende de cómo se acomoda la máscara de ERA de tu equipo, y conviene probarlo con guantes y chaquetón puestos.",
+            "Si la brigada usa radio con micrófono, inclúyelo desde el principio. Agregar comunicación a un casco ya comprado suele terminar en adaptadores o perforaciones que el fabricante no contempla."
           ],
           "lista": [
             "Uso: incendios en edificios y estructuras",
@@ -169,24 +192,11 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           ]
         },
         {
-          "h2": "Modelo según tu operación",
+          "eyebrow": "En servicio",
+          "h2": "Revisión y retiro del casco tipo jet",
           "parrafos": [
-            "No publicamos un modelo tipo jet todavía; proponemos el casco cuando nos compartes operación, ERA, visor y comunicación requeridos. Elige una familia de traje estructural con chaquetón, monja y guantes que se pruebe junto con EN 443:2008, protector de nuca y el casco propuesto por fabricante.",
-            "Surtimos la configuración documentada por fabricante, no una equivalencia supuesta. Pide un modelo con visor retráctil, retención y protector de nuca declarados si tu brigada trabaja con máscara de ERA; así la ficha de casco coincide con el conjunto estructural EN 443:2008 que vas a recibir con chaquetón y guantes."
-          ]
-        },
-        {
-          "h2": "Errores de compra del tipo jet",
-          "parrafos": [
-            "Vemos requisiciones que dicen visor dorado y omiten EN 443:2008, modelo y retención. Escribe la referencia, visor exterior u ocular interior, protector de nuca y compatibilidad con ERA para que cotizamos una configuración verificable de casco y retención para tu brigada.",
-            "Otro error es agregar comunicación después de elegir el casco tipo jet. Pide micrófono, fijaciones y protector de nuca desde el pliego; revisamos que no haya presión sobre la cabeza ni interferencia con máscara, visor, chaquetón, guantes o retención EN 443:2008."
-          ]
-        },
-        {
-          "h2": "Revisión y retiro en servicio",
-          "parrafos": [
-            "Antes de cada guardia revisamos visor retráctil, ocular interior, retención, carcasa y fijaciones de comunicación. Retira el equipo si visor, soporte o carcasa pierden función, y registra EN 443:2008 junto con el modelo, protector de nuca y configuración para solicitar el repuesto correcto.",
-            "Tras una intervención, pide limpieza conforme al fabricante y desmonta solo los accesorios previstos para el casco tipo jet. Si calor, impacto o contaminantes afectan visor, cableado o protector de nuca, retiramos esa configuración hasta que tu brigada vuelva a probarla con máscara de ERA."
+            "Antes de cada guardia revisa que el visor suba y baje sin atorarse, que la retención ajuste y que la carcasa no tenga grietas. Un visor que ya no se guarda completo es motivo para sacar el casco de servicio hasta repararlo.",
+            "Limpia solo con lo que indica el fabricante y desmonta únicamente los accesorios previstos. Si el calor o un impacto afectaron visor, cableado o protector de nuca, el casco vuelve a probarse con la máscara antes de regresar a guardia."
           ]
         }
       ],
@@ -215,19 +225,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Pedir solo “visor dorado” sin modelo ni alcance",
+        "Pedir solo «visor dorado» sin modelo ni alcance",
         "No probar el casco con máscara y comunicaciones",
-        "Asumir equivalencia de normas sin documento",
-        "Modificar la carcasa para instalar accesorios"
+        "Dar por equivalentes dos normas sin documento del fabricante",
+        "Perforar la carcasa para instalar accesorios"
       ],
       "faq": [
         {
-          "q": "¿Hay modelos tipo jet publicados?",
-          "a": "No por ahora. La página explica cómo especificarlos sin asumir una marca o disponibilidad."
+          "q": "¿Tienen modelos de casco tipo jet publicados?",
+          "a": "Por ahora no hay un modelo tipo jet en el catálogo. Lo cotizamos por configuración y te presentamos la ficha del fabricante antes de que decidas."
         },
         {
-          "q": "¿El visor reemplaza la máscara de ERA?",
-          "a": "No. El visor y la máscara cumplen funciones distintas y deben revisarse juntos."
+          "q": "¿El visor del casco sustituye a la máscara de ERA?",
+          "a": "No. El visor protege contra partículas y calor radiante; la máscara es parte del sistema respiratorio. Trabajan juntos y deben probarse juntos."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el casco tipo jet y el tradicional?",
+          "a": "Los dos son para incendio estructural. El jet cubre más laterales y nuca e integra el visor; el tradicional usa ala trasera y cubrenuca de tela. La elección suele depender del ERA y de la costumbre operativa del cuerpo."
+        },
+        {
+          "q": "¿Qué norma aplica al casco europeo de bombero?",
+          "a": "La referencia es EN 443:2008, para cascos de combate de incendios en edificios y estructuras. Si tu pliego pide además NFPA, dilo desde el inicio: no todos los modelos declaran ambas."
         }
       ],
       "chips": [
@@ -236,18 +254,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Perfil jet"
       ],
       "resumen": [
-        "El casco europeo tipo jet es una opción estructural con cobertura lateral, visor retráctil, protector de nuca y referencia EN 443:2008 para integrarse con máscara de ERA, chaquetón, guantes y comunicaciones.",
-        "Cotizamos por WhatsApp la operación, visor, retención, protector de nuca y accesorios. Pide la prueba con tu máscara, micrófono, guantes y chaquetón EN 443:2008 antes de definir el modelo que surtiremos."
-      ]
+        "Es la opción estructural de referencia europea, EN 443:2008. Todavía no publicamos un modelo tipo jet en el catálogo, así que lo cotizamos a partir de la configuración que necesita tu operación.",
+        "Visor, protector de nuca, retención y comunicación se definen juntos. Con esos datos buscamos un modelo con documentación del fabricante y lo revisamos contigo antes de comprometer una compra."
+      ],
+      "duos": {
+        "ficha": [
+          "Para combate en edificios, el tipo jet se especifica con cobertura lateral y de nuca, visor integrado según configuración y referencia EN 443:2008.",
+          "Como aún no publicamos modelo, la tabla no muestra código ni certificación. Esos datos llegan en la cotización, con la ficha del fabricante del casco que te propongamos."
+        ],
+        "errores": [
+          "Un casco tipo jet no queda definido con la frase «visor dorado». Sin modelo, retención y protección ocular por escrito, la compra puede recibir un casco que no se integra con la máscara ni con la radio.",
+          "Estos cuatro errores son los que más conviene revisar antes de publicar una partida o de pedir cotización."
+        ],
+        "faq": [
+          "Resolvemos las dudas habituales sobre visor, norma y diferencias con el casco tradicional.",
+          "Si ya tienes el texto de la partida, mándalo por WhatsApp junto con la marca de tu ERA y te decimos qué falta especificar."
+        ]
+      }
     },
     {
       "slug": "casco-forestal",
       "seccion": "cascos",
       "nombre": "Casco forestal",
       "nombreCard": "Casco forestal",
-      "title": "Casco forestal para bombero | línea de fuego | México",
-      "description": "Casco forestal para bombero: peso, ala completa, ventilación, goggles y norma de referencia para trabajo prolongado en línea de fuego.",
-      "lead": "El casco forestal usa ala completa, goggles y suspensión de 6 puntos para línea de fuego y operación exterior bajo NFPA 1950.",
+      "title": "Casco forestal para bombero ligero y de ala completa",
+      "description": "Casco forestal para bombero: peso, ala completa, ventilación, clips para goggles y norma de referencia para trabajo prolongado en línea de fuego. Cotiza.",
+      "lead": "El casco forestal está hecho para jornadas largas en línea de fuego: ligero, con ala completa que da sombra y protege del material que cae, y con clips para sujetar los goggles.",
       "imagen": {
         "src": "/images/catalogo/cascos/tipo-casco-forestal.avif",
         "alt": "Casco forestal para bombero en operación de línea de fuego",
@@ -257,46 +289,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Casco forestal para línea de fuego",
+          "eyebrow": "Qué es",
+          "h2": "Casco de ala completa para incendio forestal",
           "parrafos": [
-            "Cotizamos casco forestal para cuadrillas que caminan en pendiente, trabajan con vegetación y enfrentan ceniza al aire libre. Elige Bullard Wildland FH911H si tu operación necesita termoplástico Ultem, ala completa y suspensión automática de 6 puntos, clips para goggles y barbiquejo Nomex, no ataque interior estructural.",
-            "Surtimos este casco cuando el pliego define línea de fuego, goggles y cubrenuca según la tarea. Pide NFPA 1950 como referencia vigente del catálogo o NFPA 1977 ed. 1998 declarado para FH911H, termoplástico Ultem y suspensión de 6 puntos, y separa esa partida del casco estructural con ERA."
+            "El ala completa protege frente, laterales y nuca de ramas, brasas y sol. La carcasa tiene que ser ligera, porque la cuadrilla la lleva durante horas mientras camina, carga herramienta y trabaja con la cabeza inclinada.",
+            "La sujeción importa tanto como la carcasa. Una suspensión que se ajusta sola y un barbiquejo firme evitan que el casco se mueva con el viento o al agacharse, y los clips mantienen los goggles en su sitio cuando no se usan."
           ]
         },
         {
-          "h2": "Configuración forestal en la orden",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Qué definir antes de pedir casco forestal",
           "parrafos": [
-            "Escribimos código FH911H, termoplástico Ultem, suspensión de 6 puntos, barbiquejo Nomex y clips para goggles. Elige amarillo, rojo, blanco o negro antes de ordenar, y pide bandas reflejantes, visera o pantalla facial solo si tu cuadrilla las prueba en pendiente, viento y línea de fuego.",
-            "Revisamos goggles, cierres de velcro y sombra interior con tu protección ocular antes de cotizar. Pide soportes para viseras y pantallas faciales en la partida si los usarás; así verificamos que ala completa, cubrenuca, clips y barbiquejo Nomex no se levanten con viento durante la línea de fuego."
+            "Define color, protección ocular y si llevará cubrenuca. El FH911H acepta soportes para viseras y pantallas faciales; conviene pedirlos solo si la cuadrilla los va a usar, para no sumar peso.",
+            "Revisa también la norma que declara el modelo. La referencia vigente para equipo forestal es NFPA 1950, que sustituyó a la 1977; el FH911H declara NFPA 1977 edición 1998, y así debe quedar escrito en la cotización."
           ],
           "lista": [
             "Modelo: Bullard Wildland FH911H",
             "Carcasa: termoplástico Ultem",
-            "Suspensión: automática de 6 puntos",
+            "Suspensión: automática de seis puntos",
             "Retención: barbiquejo Nomex ajustable",
             "Accesorios: clips para goggles y bandas",
             "Colores: amarillo, rojo, blanco o negro"
           ]
         },
         {
-          "h2": "Modelo forestal que surtimos",
+          "eyebrow": "En servicio",
+          "h2": "Limpieza y retiro durante la temporada",
           "parrafos": [
-            "Surtimos Bullard Wildland FH911H con código FH911H, termoplástico Ultem y clips de retención para goggles. Elige este modelo para línea de fuego con goggles, cubrenuca, barbiquejo Nomex y ropa forestal; no lo combines como sustituto de casco estructural durante ataque interior con ERA.",
-            "El fabricante declara NFPA 1977 ed. 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G. Pide esos datos tal como están declarados y prueba el barbiquejo Nomex con goggles, ala completa y protección ocular; nosotros confirmamos accesorios, color y suspensión automática de 6 puntos antes de liberar la orden."
-          ]
-        },
-        {
-          "h2": "Errores que frenan una partida forestal",
-          "parrafos": [
-            "Vemos compras que piden casco ligero sin nombrar FH911H, goggles ni barbiquejo Nomex. Escribe termoplástico Ultem, suspensión automática de 6 puntos, clips de retención y color para que cotizamos una configuración que tu cuadrilla pueda repetir durante la temporada de línea de fuego.",
-            "También se confunde ANSI Z89.1-1997 Tipo 1 Clase C, E y G con casco para ataque interior. Pide casco estructural cuando uses ERA y fuego en edificios; deja NFPA 1977 ed. 1998 declarado, termoplástico Ultem y ala completa para la operación forestal que el FH911H sí cubre."
-          ]
-        },
-        {
-          "h2": "Limpieza y retiro forestal",
-          "parrafos": [
-            "Antes de salir revisamos ala completa, clips para goggles, velcro, suspensión de 6 puntos y barbiquejo Nomex. Retira FH911H con carcasa Ultem deformada, clip roto o retención sin ajuste, y registra color, código, NFPA 1977 ed. 1998 declarado y accesorios para que el repuesto conserve la partida.",
-            "Después de línea de fuego, pide limpieza según fabricante y revisa ceniza, calor y contaminantes en visera, pantalla facial y bandas reflejantes del Bullard FH911H. Si una intervención altera la suspensión automática o los cierres de velcro, retiramos el casco hasta que tu cuadrilla vuelva a probar goggles y retención."
+            "Después de cada salida quita ceniza y hollín, y revisa clips, velcro, suspensión y barbiquejo. Un clip roto o una suspensión que ya no ajusta son motivo suficiente para cambiar el casco antes de la siguiente jornada.",
+            "El calor y el sol envejecen la carcasa aunque no haya golpes visibles. Registra código, color y accesorios de cada casco: al reponer, la cuadrilla conserva la misma configuración toda la temporada."
           ]
         }
       ],
@@ -329,19 +351,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Usarlo para ataque interior estructural",
-        "Confundir clase industrial con protección forestal completa",
-        "No definir goggles y cubrenuca",
-        "Ignorar la edición declarada por el modelo"
+        "Usar el casco forestal para ataque interior estructural",
+        "Confundir una clase industrial con protección forestal completa",
+        "Omitir goggles y cubrenuca en la partida",
+        "Ignorar la edición de norma que declara el modelo"
       ],
       "faq": [
         {
-          "q": "¿El casco forestal sirve para combate estructural?",
-          "a": "No se selecciona para ataque interior. Elige casco estructural cuando ese es el riesgo."
+          "q": "¿El casco forestal sirve para incendio estructural?",
+          "a": "No. No está pensado para ataque interior con ERA; para ese riesgo se usa casco estructural. En una misma corporación suelen convivir las dos partidas."
         },
         {
-          "q": "¿Qué goggles se mencionan?",
-          "a": "ESS Striketeam XTO se menciona como complemento sin enlace, porque esa sección aún no está publicada."
+          "q": "¿Qué norma declara el casco forestal Bullard FH911H?",
+          "a": "El fabricante declara NFPA 1977 edición 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G. La referencia vigente para equipo forestal es NFPA 1950."
+        },
+        {
+          "q": "¿Qué goggles se usan con el casco forestal?",
+          "a": "Unos que se sujeten bien en los clips del casco y sellen con la cara del usuario. En nuestro kit forestal cotizamos los ESS Striketeam XTO como referencia."
+        },
+        {
+          "q": "¿En qué colores hay casco forestal?",
+          "a": "El Bullard Wildland FH911H se ofrece en amarillo, rojo, blanco y negro. Muchas corporaciones usan el color para distinguir funciones dentro de la cuadrilla."
         }
       ],
       "relacionados": [
@@ -353,18 +383,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Operación exterior"
       ],
       "resumen": [
-        "El casco forestal Bullard Wildland FH911H combina termoplástico Ultem, ala completa, suspensión automática de 6 puntos, clips para goggles y barbiquejo Nomex en operación exterior de línea de fuego.",
-        "Cotizamos por WhatsApp color, goggles, visera, pantalla, clips y barbiquejo Nomex. Pide la prueba de pendiente y línea de fuego con suspensión de 6 puntos; para ataque interior surtimos casco estructural con ERA."
-      ]
+        "Es otro casco y otro riesgo que el estructural: se trabaja al aire libre, en pendiente, con calor y ceniza. Surtimos el Bullard Wildland FH911H, con carcasa de termoplástico Ultem y suspensión automática de seis puntos.",
+        "Lo cotizamos con color, goggles, cubrenuca y accesorios definidos para toda la cuadrilla. Para ataque interior con ERA la partida es otra: casco estructural."
+      ],
+      "duos": {
+        "ficha": [
+          "Un casco forestal se requisita para incendio forestal y operación exterior, con ala completa, goggles, cubrenuca y accesorios según configuración. La referencia publicada es NFPA 1950, antes NFPA 1977.",
+          "ANSI/ISEA Z89.1 aparece solo cuando el modelo la declara y no sustituye el análisis del riesgo forestal. Por eso la anotamos tal como la publica cada fabricante."
+        ],
+        "errores": [
+          "El error más costoso es tratar al casco forestal como si fuera estructural, o al revés. Cada uno responde a un riesgo distinto y no se sustituyen entre sí.",
+          "Estos son los puntos que conviene cerrar en la partida para que la cuadrilla reciba el mismo casco, con los mismos accesorios, durante toda la temporada."
+        ],
+        "modelos": [
+          "Para línea de fuego surtimos el Bullard Wildland FH911H: termoplástico Ultem, suspensión automática de seis puntos, clips para goggles y barbiquejo Nomex ajustable.",
+          "Su ficha muestra la norma tal como la declara Bullard. Si lo necesitas dentro de un conjunto completo, también forma parte de nuestro kit forestal."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del casco forestal: uso, norma, goggles y colores.",
+          "Si vas a equipar a una cuadrilla completa, dinos cuántas personas son y qué accesorios usan, y te mandamos la cotización con la configuración cerrada."
+        ]
+      }
     },
     {
       "slug": "casco-rescate-tecnico",
       "seccion": "cascos",
       "nombre": "Casco de rescate técnico",
       "nombreCard": "Casco de rescate técnico",
-      "title": "Casco de rescate técnico para bombero | México",
-      "description": "Casco de rescate técnico: perfil compacto, retención de cuatro puntos, lámpara y referencias para rescate vehicular, vertical y espacios confinados.",
-      "lead": "El casco de rescate técnico combina perfil compacto y barbiquejo de 4 puntos para maniobras vehiculares, verticales y espacios confinados bajo NFPA 2500.",
+      "title": "Casco de rescate técnico para bombero y rescate vertical",
+      "description": "Casco de rescate técnico: perfil compacto, retención de cuatro puntos y lámpara para rescate vehicular, vertical y espacios confinados. Cotiza con ficha.",
+      "lead": "El casco de rescate técnico es compacto y sin ala, con barbiquejo de cuatro puntos, para trabajar dentro de vehículos, colgado de una cuerda o en espacios confinados.",
       "imagen": {
         "src": "/images/catalogo/cascos/tipo-casco-rescate-tecnico.avif",
         "alt": "Casco compacto para rescate técnico de bombero",
@@ -374,46 +422,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Casco compacto para rescate técnico",
+          "eyebrow": "Qué es",
+          "h2": "Casco compacto para rescate vehicular, vertical y confinado",
           "parrafos": [
-            "Cotizamos casco de rescate técnico para equipos que entran a vehículo, ascienden con arnés o trabajan bajo tablero. Elige perfil compacto y barbiquejo de 4 puntos si tu maniobra prioriza reducir enganches; pide NFPA 2500, portalámpara, visor o goggles cuando esa referencia corresponde al riesgo documentado.",
-            "Surtimos el tipo según rescate vehicular, vertical o espacios confinados, porque no hay modelo publicado todavía. Pide lámpara, goggles y visor desde el pliego si tu equipo los usa, y combínalo con traje de rescate, arnés, barbiquejo de 4 puntos y herramienta que probarás en acceso real."
+            "En un rescate vehicular se trabaja bajo tableros y entre metal cortado; en rescate vertical, colgado de una cuerda; en espacios confinados, entre tuberías. En los tres casos un ala larga estorba y puede engancharse.",
+            "Por eso el casco de rescate se parece más a uno de montaña que a uno estructural. Retención de cuatro puntos, portalámpara y compatibilidad con visor o goggles son sus rasgos principales."
           ]
         },
         {
-          "h2": "Campos de la cotización técnica",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Maniobra, lámpara y protección ocular",
           "parrafos": [
-            "En la cotización escribimos NFPA 2500, perfil sin ala, retención de 4 puntos, portalámpara y protección ocular. Elige visor para partículas o goggles para tu maniobra, y pide compatibilidad con arnés, lámpara y herramienta para que el casco no cree enganches al entrar a vehículo o descender.",
-            "Revisamos con tu equipo lámpara, cuerda, arnés y protección ocular durante una práctica. Pide EN 12492 o EN 16471-16473 solo si tu requisito las solicita; así proponemos un modelo con el estatus declarado, barbiquejo de 4 puntos y perfil compacto que corresponde a rescate técnico y no a incendio estructural."
+            "Empieza por la maniobra principal. En vertical importa la compatibilidad con arnés y cuerda; en vehicular, el visor y el acceso bajo tablero; en confinados, cómo convive el casco con la protección respiratoria del procedimiento.",
+            "Pide lámpara y protección ocular dentro de la misma partida. Si tu requisito menciona normas europeas como EN 12492, indícalo: no todos los modelos las declaran y ese dato cambia las opciones disponibles."
           ],
           "lista": [
             "Uso: vehicular, vertical o confinados",
             "Referencia: NFPA 2500",
             "Perfil: compacto sin ala",
-            "Retención: barbiquejo de 4 puntos",
+            "Retención: barbiquejo de cuatro puntos",
             "Accesorios: lámpara, visor o goggles",
             "Interfaz: arnés y herramienta de rescate"
           ]
         },
         {
-          "h2": "Modelo para cada maniobra",
+          "eyebrow": "En servicio",
+          "h2": "Inspección después de cada maniobra",
           "parrafos": [
-            "No surtimos un modelo publicado de rescate técnico en este catálogo; proponemos el modelo después de revisar NFPA 2500, arnés y lámpara de tu operación. Elige traje de rescate y protección ocular para la misma maniobra, no un casco estructural solo porque comparte color institucional.",
-            "Para rescate vertical pedimos prueba con cuerda y arnés; para vehicular, visor y acceso bajo tablero; para confinados, el procedimiento respiratorio. Pide perfil compacto y barbiquejo de 4 puntos según la familia de traje que usará tu equipo, y cotizamos la configuración declarada por fabricante."
-          ]
-        },
-        {
-          "h2": "Fallas de pliego que corregimos",
-          "parrafos": [
-            "Vemos pliegos que solicitan casco de rescate sin decir NFPA 2500, vehículo, arnés o lámpara. Escribe la maniobra y protección ocular para que proponemos un modelo con perfil compacto, retención de 4 puntos, visor o goggles y accesorios que tu personal pueda usar.",
-            "Otro error es pedir soporte de lámpara sin probarlo con cuerda o visor. Pide portalámpara, goggles, perfil compacto y compatibilidad con arnés en la orden; revisamos enganches y campo visual antes de que tu brigada acepte una partida de rescate técnico con retención de 4 puntos."
-          ]
-        },
-        {
-          "h2": "Inspección después de la maniobra",
-          "parrafos": [
-            "Antes de practicar revisamos carcasa, barbiquejo de 4 puntos, portalámpara, visor y goggles. Retira el casco si golpe, cuerda o herramienta dañan retención o perfil compacto, y registra NFPA 2500, modelo, arnés y configuración de lámpara para mantener trazabilidad de cada equipo.",
-            "Después de rescate vehicular o vertical, pide limpieza según fabricante y verifica fijaciones de lámpara, visor y arnés. Si contaminantes, impacto o desgaste cambian el ajuste de 4 puntos, retiramos el casco hasta que tu equipo complete una prueba de acceso con la configuración correcta."
+            "Revisa carcasa, barbiquejo, portalámpara y visor antes de cada práctica. Un golpe contra metal o roca puede dañar la carcasa sin que se note, y un barbiquejo deshilachado deja de sujetar cuando más se necesita.",
+            "Nunca perfores la carcasa para instalar accesorios. Si la lámpara o el visor no encajan con los soportes del fabricante, es señal de que el modelo no corresponde a la operación."
           ]
         }
       ],
@@ -446,19 +484,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Usar casco estructural como sustituto por costumbre",
+        "Usar casco estructural en rescate técnico por costumbre",
         "Instalar lámparas perforando la carcasa",
-        "No definir operación principal",
-        "No probar con arnés y protección ocular"
+        "No definir cuál es la operación principal",
+        "No probar el casco con arnés y protección ocular"
       ],
       "faq": [
         {
-          "q": "¿Hay modelos publicados?",
-          "a": "No por ahora; solicita cotización con la operación y accesorios requeridos."
+          "q": "¿Tienen modelos de casco de rescate técnico publicados?",
+          "a": "Todavía no. Cotizamos el casco según tu maniobra y accesorios, y te presentamos la ficha del fabricante antes de que decidas."
         },
         {
-          "q": "¿Sirve para espacios confinados?",
-          "a": "Puede formar parte del EPP, pero el procedimiento define además requisitos respiratorios y de rescate."
+          "q": "¿El casco de rescate técnico sirve para espacios confinados?",
+          "a": "Puede formar parte del equipo, pero el procedimiento de espacios confinados define además requisitos respiratorios, de comunicación y de rescate que van más allá del casco."
+        },
+        {
+          "q": "¿Puedo usar mi casco estructural para rescate vehicular?",
+          "a": "Se hace por costumbre, pero el ala trasera estorba dentro del vehículo y un barbiquejo de dos puntos sujeta menos. Si el rescate es frecuente, conviene un casco propio para esa tarea."
+        },
+        {
+          "q": "¿Qué norma aplica a un casco de rescate técnico?",
+          "a": "La referencia es NFPA 2500. Algunos modelos declaran también normas europeas como EN 12492 o la serie EN 16471 a 16473; lo que importa es que la cotización diga cuál declara el modelo."
         }
       ],
       "chips": [
@@ -467,18 +513,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Barbiquejo 4 puntos"
       ],
       "resumen": [
-        "El casco de rescate técnico usa perfil compacto, barbiquejo de 4 puntos, portalámpara y referencia NFPA 2500 para maniobras vehiculares, verticales y espacios confinados con arnés, visor o goggles.",
-        "Cotizamos por WhatsApp la maniobra, lámpara, goggles, visor, arnés y retención de 4 puntos. Pide una prueba de acceso con tu traje de rescate y NFPA 2500 antes de elegir el modelo que propondremos."
-      ]
+        "Aquí el riesgo principal no es el calor sino el golpe y el enganche. Un perfil compacto pasa por huecos estrechos y la retención de cuatro puntos mantiene el casco firme boca abajo o en suspensión.",
+        "Todavía no publicamos un modelo de rescate técnico. Lo cotizamos según la maniobra de tu equipo, con lámpara, protección ocular y referencia NFPA 2500 definidas desde el inicio."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar casco de rescate técnico define primero la operación: vehicular, vertical o espacios confinados. El perfil es compacto y sin ala, con barbiquejo de cuatro puntos y referencia NFPA 2500.",
+          "EN 12492 y EN 16471-16473 aparecen como referencias europeas según el equipo. Como no hay modelo publicado, la tabla no muestra código ni certificación; llegan con la ficha del modelo propuesto."
+        ],
+        "errores": [
+          "Un casco de rescate mal especificado se nota en la primera práctica: se engancha, se mueve o no admite la lámpara que usa el equipo.",
+          "Estos cuatro errores conviene resolverlos antes de pedir cotización, porque corregirlos después suele significar comprar otra vez."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre modelos, norma y uso del casco de rescate en distintas maniobras.",
+          "Si nos dices qué tipo de rescate hace tu equipo y con qué arnés trabaja, te proponemos una configuración concreta por WhatsApp."
+        ]
+      }
     },
     {
       "slug": "casco-brigada-industrial",
       "seccion": "cascos",
       "nombre": "Casco para brigada industrial",
       "nombreCard": "Casco para brigada industrial",
-      "title": "Casco para brigada industrial contra incendio | México",
-      "description": "Casco para brigada industrial: cuándo basta un casco industrial y cuándo el riesgo exige casco estructural para combate interior.",
-      "lead": "El casco para brigada industrial se elige por análisis de riesgo: casco industrial para conatos o casco estructural con ERA para ataque interior.",
+      "title": "Casco para brigada industrial contra incendio",
+      "description": "Casco para brigada industrial contra incendio: cuándo basta un casco industrial y cuándo el riesgo exige casco estructural para combate interior. Cotiza.",
+      "lead": "El casco para brigada industrial depende de hasta dónde llega tu brigada: casco industrial con careta si solo atiende conatos, o casco estructural con ERA si su procedimiento incluye ataque interior.",
       "imagen": {
         "src": "/images/catalogo/cascos/tipo-casco-brigada-industrial.avif",
         "alt": "Casco para brigada industrial contra incendio",
@@ -488,46 +548,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Casco según tarea de brigada",
+          "eyebrow": "Qué es",
+          "h2": "Casco según lo que hace tu brigada",
           "parrafos": [
-            "Cotizamos casco para brigada industrial a partir de NOM-002-STPS-2010 y de la tarea autorizada. Elige casco industrial con careta para conatos definidos, o casco estructural con ERA si tu procedimiento contempla incendio en edificio, Bullard LTX CBOM1007 y suspensión de 6 puntos, porque ambas partidas responden a riesgos distintos.",
-            "Surtimos Bullard LTX cuando tu análisis justifica casco estructural dentro del kit brigadista Romak BOM1001. Pide casco industrial bajo NOM-115-STPS-2009 o ANSI/ISEA Z89.1 solo si tu brigada controla conatos sin ataque interior y prueba lentes, careta, guantes, ropa y barbiquejo juntos."
+            "Una brigada que usa extintores y evacúa trabaja lejos del fuego, y ahí un casco industrial con careta cubre el riesgo. Una brigada que entra con ERA a un edificio en llamas enfrenta calor y caída de objetos que solo un casco estructural resiste.",
+            "La diferencia no es de precio ni de apariencia, es de alcance. Por eso preguntamos primero qué autoriza el procedimiento de tu brigada y después proponemos el casco que corresponde a ese nivel."
           ]
         },
         {
-          "h2": "Cómo redactamos la partida industrial",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Cómo se escribe la partida para no dejar dudas",
           "parrafos": [
-            "En cada cotización escribimos conato o ataque interior, NOM-002-STPS-2010, casco industrial o estructural, careta, color y marcaje. Elige la clase industrial aplicable antes de ordenar, y pide barbiquejo, protección ocular y NOM-115-STPS-2009 o ANSI/ISEA Z89.1 si tu brigada los requiere durante evacuación o respuesta inicial.",
-            "Revisamos la interfaz con lentes, careta y guantes para conatos, o con ERA, monja y chaquetón para casco estructural. Pide Bullard LTX CBOM1007 con suspensión de 6 puntos si tu partida requiere el kit Romak BOM1001; así la orden deja claro el nivel de operación."
+            "La requisición debe decir si la brigada atiende conatos o hace ataque interior, qué norma aplica y qué accesorios necesita: careta, color y marcaje. Con esos datos la cotización se puede comparar y la recepción, revisar.",
+            "Para casco industrial, las referencias son NOM-115-STPS-2009 o ANSI/ISEA Z89.1 según el requisito. Para ataque interior, el casco se prueba con ERA, monja y chaquetón, igual que en un cuerpo de bomberos."
           ],
           "lista": [
             "Escenario: conato o ataque interior",
-            "Referencia: NOM-002-STPS-2010",
-            "Industrial: NOM-115-STPS-2009",
-            "Industrial: ANSI/ISEA Z89.1",
-            "Estructural: Bullard LTX CBOM1007",
+            "Referencia de brigada: NOM-002-STPS-2010",
+            "Casco industrial: NOM-115-STPS-2009",
+            "Casco industrial: ANSI/ISEA Z89.1",
+            "Casco estructural: Bullard LTX CBOM1007",
             "Accesorios: careta, color y marcaje"
           ]
         },
         {
-          "h2": "Modelo y conjunto que surtimos",
+          "eyebrow": "En servicio",
+          "h2": "Inspección y límites de uso",
           "parrafos": [
-            "Surtimos Bullard LTX CBOM1007 para brigada que requiere casco estructural, termoplástico de alto impacto, Nomex y NFPA 1971 ed. 2018 declarado. Elige LTX con ERA, monja, chaquetón, guantes, visor de policarbonato de 4 pulgadas y suspensión de 6 puntos si tu análisis de riesgo permite ataque interior y el conjunto se prueba completo.",
-            "Para conatos proponemos casco industrial con careta conforme a NOM-115-STPS-2009 o ANSI/ISEA Z89.1 según el requisito. Pide que el modelo industrial se combine con ropa de brigadista, lentes, guantes y barbiquejo; no lo presentes como sustituto de LTX CBOM1007 cuando la escena exige máscara de ERA y NFPA 1971 ed. 2018 declarado."
-          ]
-        },
-        {
-          "h2": "Errores que vemos en órdenes",
-          "parrafos": [
-            "Vemos compras que nombran NOM-002-STPS-2010 y omiten conato o ataque interior. Escribe la tarea, careta, límite de uso, NOM-115-STPS-2009 o ANSI/ISEA Z89.1 para que cotizamos casco industrial o Bullard LTX CBOM1007 sin dejar que tu brigada reciba una partida ambigua.",
-            "Otro error es agregar careta a casco industrial para resolver ERA y fuego en edificio. Pide casco estructural LTX CBOM1007, Nomex, visor de policarbonato de 4 pulgadas y suspensión de 6 puntos si corresponde; revisamos máscara, monja y chaquetón para que el conjunto tenga la configuración solicitada."
-          ]
-        },
-        {
-          "h2": "Inspección y límites de retiro",
-          "parrafos": [
-            "Antes de turno revisamos casco industrial, careta, barbiquejo, lentes y marcado, o Bullard LTX, Nomex y visor de 4 pulgadas para ataque interior. Retira piezas con grietas, daño térmico o retención sin función y registra NOM-002-STPS-2010, LTX CBOM1007 y suspensión de 6 puntos junto con la asignación.",
-            "Después de respuesta a conato o incendio, pide limpieza conforme al fabricante y verifica careta, carcasa, visor y suspensión de 6 puntos. Si la operación rebasó el alcance industrial o dañó el LTX, retiramos el casco y pedimos evaluación del conjunto con ERA antes de devolverlo a tu brigada."
+            "Antes de cada turno revisa carcasa, careta, barbiquejo y marcado. Un casco con grietas, daño por calor o retención floja sale de servicio, sea industrial o estructural.",
+            "Si una respuesta rebasó el alcance del casco industrial, por ejemplo un conato que creció, retíralo y revísalo antes de volver a asignarlo. Documentar esos límites también protege a la empresa en una auditoría."
           ]
         }
       ],
@@ -561,18 +611,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "errores": [
         "Equipar por uniforme y no por riesgo",
-        "Usar casco industrial para ataque interior",
-        "Añadir careta como supuesto equivalente estructural",
-        "No documentar límites de respuesta de la brigada"
+        "Usar casco industrial en ataque interior",
+        "Agregar careta a un casco industrial como supuesto equivalente estructural",
+        "No documentar los límites de respuesta de la brigada"
       ],
       "faq": [
         {
           "q": "¿Un casco industrial puede entrar a un incendio?",
-          "a": "Solo dentro del alcance definido por análisis de riesgo y procedimiento de conato; no sustituye casco estructural en ataque interior."
+          "a": "Solo dentro del alcance que define el análisis de riesgo y el procedimiento de conato. No sustituye al casco estructural en ataque interior."
         },
         {
-          "q": "¿Qué modelo se relaciona con kit brigadista?",
-          "a": "Bullard LTX, incluido en el kit Romak BOM1001; su configuración se confirma al cotizar."
+          "q": "¿Qué casco trae el kit brigadista?",
+          "a": "El kit brigadista Romak BOM1001 incluye el Bullard LTX, un casco estructural. Lo proponemos cuando la brigada tiene autorizado el ataque interior; su configuración se confirma al cotizar."
+        },
+        {
+          "q": "¿Qué norma de la STPS aplica al casco de brigada?",
+          "a": "La NOM-002-STPS-2010 pide dotar a la brigada del equipo que corresponda al riesgo, sin fijar un modelo. Para casco industrial la referencia es NOM-115-STPS-2009; para ataque interior, un casco estructural con su norma declarada."
+        },
+        {
+          "q": "¿La brigada debe usar el mismo casco que los bomberos?",
+          "a": "Solo si hace el mismo trabajo. Si entra a combatir con ERA, necesita casco estructural; si atiende conatos y evacuación, un casco industrial con careta suele bastar según el análisis de riesgo."
         }
       ],
       "relacionados": [
@@ -584,9 +642,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Según riesgo"
       ],
       "resumen": [
-        "La brigada industrial usa casco industrial con careta para conatos definidos bajo NOM-115-STPS-2009 o ANSI/ISEA Z89.1, o casco estructural Bullard LTX CBOM1007 con ERA para ataque interior, según NOM-002-STPS-2010.",
-        "Cotizamos por WhatsApp la tarea, careta, color, marcaje, límite de uso y LTX CBOM1007. Pide que tu brigada pruebe el conjunto completo con ERA, monja, chaquetón y suspensión de 6 puntos antes de ordenar una partida industrial o estructural."
-      ]
+        "No hay un casco único para brigadas. La NOM-002-STPS-2010 pide dotar el equipo conforme al riesgo, y ese análisis define si basta un casco industrial o se necesita uno estructural.",
+        "Cuando la brigada entra a combatir, surtimos el Bullard LTX, el mismo casco de nuestro kit brigadista Romak BOM1001. Para conatos cotizamos casco industrial con careta y lo dejamos claro en la partida."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar casco para brigada industrial indica el uso según análisis de riesgo, la NOM-002-STPS-2010 y si la partida es casco industrial, bajo NOM-115-STPS-2009 o ANSI Z89.1.",
+          "Si habrá ataque interior, la tabla cambia: se especifica casco estructural y un conjunto compatible con ERA. Esa decisión no la toma el proveedor, la define el procedimiento de tu brigada."
+        ],
+        "errores": [
+          "La mayoría de estos errores tiene el mismo origen: comprar el casco antes de definir qué hará la brigada.",
+          "Revísalos contra tu procedimiento de respuesta. Si alguno aplica, conviene corregir la partida antes de pedir cotización."
+        ],
+        "modelos": [
+          "Cuando la brigada hace ataque interior, surtimos el Bullard LTX: termoplástico de alto impacto, suspensión de seis puntos, cubrenuca de Nomex y visor de policarbonato de cuatro pulgadas.",
+          "Es el mismo casco que integra nuestro kit brigadista Romak BOM1001. Para brigadas de conato, el casco industrial se cotiza aparte, con su propia ficha."
+        ],
+        "faq": [
+          "Aclaramos lo que más se pregunta sobre cascos para brigada: normas de la STPS, kit brigadista y diferencias con el casco de bombero.",
+          "Si tu brigada está por definir su equipo, mándanos su nivel de respuesta y número de integrantes; te decimos qué casco corresponde."
+        ]
+      }
     }
   ],
   "modelos": [
@@ -611,24 +687,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Incluido en kit brigadista Romak BOM1001 y kit estructural Profesional"
       ],
       "descripcion": [
-        "Elige Bullard LTX CBOM1007 si tu partida estructural requiere carcasa de termoplástico de alto impacto, ajuste ratchet y suspensión de 6 puntos. En la orden escribimos CBOM1007, amarillo o rojo, visor de policarbonato de 4 pulgadas y cubrenuca de Nomex para que recibas exactamente la versión que evaluó tu brigada, con cintas 3M Scotchlite, barbiquejo de 2 puntos, monja y máscara de ERA.",
-        "La construcción declara forro interior, cintas 3M Scotchlite, contorno recubierto en cuero, termoplástico de alto impacto y suspensión de 6 puntos. En la prueba de talla revisamos ratchet, estabilidad y la posición del visor de 4 pulgadas; pide que el casco no gire al mirar arriba con máscara de ERA puesta, monja, chaquetón y barbiquejo Nomex de 2 puntos ajustados.",
-        "El LTX incorpora protector de cuello y nuca de Nomex, barbiquejo Nomex de 2 puntos con desenganche rápido metálico y colgador metálico. Elige este conjunto con monja y chaquetón para trabajo estructural, o pídelo dentro de Romak BOM1001 si tu brigada usa ese kit; confirmamos color, visor de policarbonato de 4 pulgadas, ERA, suspensión de 6 puntos y accesorios antes de surtir.",
-        "En operación estructural probamos LTX CBOM1007 con ERA, monja, chaquetón y guantes antes de aceptar un lote. Pide que cada usuario ajuste el ratchet, despliegue el visor de policarbonato de 4 pulgadas y haga movimientos de escalera; así revisamos retención, campo visual, cobertura de Nomex, cintas 3M Scotchlite, barbiquejo de 2 puntos y termoplástico de alto impacto.",
-        "El fabricante declara NFPA 1971 ed. 2018; no publicamos número UL ni la presentamos como certificación. Antes de servicio revisamos termoplástico, suspensión de 6 puntos, Nomex y visor; retira LTX con impacto, deformación, daño térmico o retención sin función y registra CBOM1007, color, visor de policarbonato de 4 pulgadas, barbiquejo de 2 puntos, cintas 3M Scotchlite y fecha de inspección."
+        "El LTX es un casco de trabajo diario: carcasa de termoplástico resistente a químicos y altas temperaturas, forro interior y un ajuste ratchet que se aprieta con una perilla, incluso con guantes. La suspensión de seis puntos reparte el peso y lo mantiene estable al moverse.",
+        "Trae de serie cubrenuca de Nomex, barbiquejo Nomex de dos puntos con desenganche rápido metálico y visor de policarbonato de cuatro pulgadas con colgador metálico. Es una configuración completa para ataque interior que no obliga a comprar accesorios por separado.",
+        "En la prueba de talla, el usuario ajusta el ratchet con la máscara puesta, despliega el visor y mira hacia arriba. Si el casco gira o el visor empuja la máscara, se corrige antes de cerrar el lote."
       ],
       "faq": [
         {
-          "q": "¿Qué código tiene el Bullard LTX?",
-          "a": "CBOM1007."
+          "q": "¿Qué incluye el casco Bullard LTX?",
+          "a": "Cubrenuca de Nomex, barbiquejo Nomex de dos puntos con desenganche rápido, visor de policarbonato de cuatro pulgadas, cintas 3M Scotchlite y colgador metálico."
         },
         {
-          "q": "¿La norma está verificada como certificación?",
-          "a": "La ficha disponible declara NFPA 1971 ed. 2018, sin número de certificación; por eso se comunica como declaración del fabricante."
+          "q": "¿En qué colores se consigue el Bullard LTX?",
+          "a": "En amarillo o rojo, según la configuración que se confirme en la cotización."
         },
         {
-          "q": "¿Qué colores se mencionan?",
-          "a": "Amarillo o rojo, sujetos a la configuración confirmada en cotización."
+          "q": "¿El Bullard LTX está certificado?",
+          "a": "Su fabricante declara NFPA 1971 edición 2018, sin número de certificación publicado. Lo presentamos como declaración del fabricante."
+        },
+        {
+          "q": "¿En qué kits viene el Bullard LTX?",
+          "a": "En el kit brigadista Romak BOM1001 y en el kit estructural Profesional."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el Bullard LTX y el UST LW?",
+          "a": "El LTX es de termoplástico con visor de cuatro pulgadas; el UST LW es de fibra de vidrio, más ligero, con visor integrado ReTrack y ajuste Sure-Lock."
         }
       ],
       "imagen": {
@@ -659,9 +741,28 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Visor de 4 pulgadas"
       ],
       "resumen": [
-        "Cotizamos Bullard LTX CBOM1007 para brigadas y bomberos que requieren termoplástico de alto impacto, ajuste ratchet y suspensión de 6 puntos. Elige amarillo o rojo según tu identificación, y pide visor de policarbonato de 4 pulgadas junto con cubrenuca de Nomex, cintas 3M Scotchlite y la configuración que evaluará tu brigada.",
-        "Surtimos LTX dentro del kit brigadista Romak BOM1001 o del kit estructural Profesional cuando tu operación lo justifica. Antes de ordenar, pide que tu personal pruebe barbiquejo Nomex de 2 puntos, máscara de ERA, monja y cuello del chaquetón con la misma configuración, visor de policarbonato de 4 pulgadas y ajuste ratchet."
-      ]
+        "El Bullard LTX CBOM1007 es un casco estructural tradicional de termoplástico de alto impacto, con ajuste ratchet, suspensión de seis puntos y visor de policarbonato de cuatro pulgadas.",
+        "Es el casco de nuestros kits brigadista Romak BOM1001 y estructural Profesional. Se ofrece en amarillo o rojo, con cubrenuca de Nomex, cintas 3M Scotchlite y contorno recubierto en cuero.",
+        "Su fabricante declara NFPA 1971 edición 2018. Lo cotizamos con la configuración escrita y te ayudamos a probarlo con la máscara de ERA, la monja y el chaquetón de tu equipo."
+      ],
+      "duos": {
+        "ficha": [
+          "El Bullard LTX se identifica con el código CBOM1007. La tabla reúne material, colores y norma tal como los publica la ficha del modelo.",
+          "La norma aparece como declaración del fabricante porque no hay número de certificación publicado. Pide que código, color y visor queden escritos en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del LTX. Todas vienen en la configuración estándar del casco, salvo el color, que se elige.",
+          "Si tu corporación ya usa otro casco, compara estos puntos uno por uno: carcasa, ajuste, retención y protección ocular."
+        ],
+        "otros": [
+          "El LTX comparte tipo con el Bullard UST LW y el Sköld Viking. El UST LW es más ligero y el Viking trae barbiquejo de cuatro puntos.",
+          "Si dudas entre ellos, cuéntanos cómo trabaja tu brigada y te decimos cuál conviene probar primero con su máscara de ERA."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Bullard LTX: qué incluye, colores, norma, kits y diferencias con el UST LW.",
+          "Si necesitas cotizar un lote, mándanos cantidad y color por WhatsApp y te enviamos la ficha con la configuración cerrada."
+        ]
+      }
     },
     {
       "id": "bullard-ust-lw",
@@ -685,24 +786,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Protección ocular conforme a ANSI/ISEA Z87.1"
       ],
       "descripcion": [
-        "Elige Bullard UST LW si buscas estilo Nueva York con fibra de vidrio, resina ignífuga termoestable y ajuste Sure-Lock. En la orden pedimos código según configuración, visor ReTrack, careta o goggles y NFPA 1971-2018 declarado, para que tu brigada no reciba una protección ocular distinta de la que probó, con nuquera Nomex de 6 oz y barbiquejo de 2 piezas.",
-        "La carcasa de fibra de vidrio incorpora resina ignífuga termoestable y Sure-Lock con perilla, 6 combinaciones de inclinación y altura. En prueba de talla revisamos cada ajuste con máscara de ERA y campo visual; pide la posición que mantenga el casco estable al agacharte, mirar arriba y mover la cabeza, con nuquera Nomex de 6 oz, chaquetón y barbiquejo de 2 piezas.",
-        "UST LW acepta visor integrado ReTrack, careta o goggles, y usa barbiquejo de 2 piezas de Nomex negro con hebilla de liberación rápida. Elige ReTrack para tu protección ocular si la prueba lo confirma, y pide la nuquera Nomex de 6 oz con 3 capas de algodón FR junto con chaquetón, monja, máscara de ERA y Sure-Lock durante la prueba.",
-        "El fabricante declara masa menor a 1.54 kg con ReTrack y menor a 1.77 kg con careta. Antes de aceptar un lote, revisamos Sure-Lock, ReTrack, barbiquejo Nomex y componentes removibles con ERA; pide que el equipo haga movimientos de escalera y no pierda sellado ni equilibrio, con las 6 combinaciones de inclinación, altura, monja, chaquetón y nuquera Nomex de 6 oz.",
-        "Bullard declara NFPA 1971-2018 y protección ocular conforme a ANSI/ISEA Z87.1; no publicamos número UL ni la presentamos como certificación. Antes de guardia revisamos fibra de vidrio, perilla, 6 ajustes y retención; retira UST LW tras impacto, calor o daño que afecte carcasa o visor, y registra ReTrack, careta o goggles, nuquera Nomex de 6 oz y barbiquejo de 2 piezas."
+        "La carcasa de fibra de vidrio con resina ignífuga termoestable es la razón de su poco peso, algo que se nota en una guardia larga. El ajuste Sure-Lock se gradúa con una perilla y permite acomodar el casco a cada usuario y a su máscara.",
+        "La protección ocular define la configuración: el visor ReTrack va integrado y se guarda dentro del casco; la careta cubre más superficie y sube el peso a menos de 1.77 kg. Los goggles son otra opción para quien los prefiera.",
+        "La nuquera tiene cubierta exterior de Nomex de 6 oz y tres capas de algodón FR, y el barbiquejo es de dos piezas de Nomex negro con hebilla de liberación rápida."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código del UST LW?",
-          "a": "Depende de la configuración; confírmalo al cotizar."
+          "q": "¿Cuánto pesa el casco Bullard UST LW?",
+          "a": "Menos de 1.54 kg con visor ReTrack y menos de 1.77 kg con careta, según su fabricante."
         },
         {
-          "q": "¿Qué peso declara?",
-          "a": "Menor a 1.54 kg con ReTrack y menor a 1.77 kg con careta."
+          "q": "¿Qué es el visor ReTrack del UST LW?",
+          "a": "Un visor integrado que se guarda dentro del casco cuando no se usa. Como alternativa, el UST LW admite careta o goggles."
         },
         {
-          "q": "¿Tiene foto propia?",
-          "a": "No en este catálogo; se muestra una imagen ilustrativa del tipo de casco."
+          "q": "¿Cuál es el código del Bullard UST LW?",
+          "a": "Depende de la configuración de protección ocular. Lo confirmamos al cotizar, una vez definida."
+        },
+        {
+          "q": "¿Se puede descontaminar el Bullard UST LW?",
+          "a": "Sí. Sus componentes son removibles para limpiarlos por separado, siguiendo el método del fabricante."
         }
       ],
       "imagen": {
@@ -722,9 +825,28 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "ReTrack"
       ],
       "resumen": [
-        "Cotizamos Bullard UST LW cuando tu brigada pide fibra de vidrio con resina ignífuga termoestable, ajuste Sure-Lock y visor ReTrack. Elige careta o goggles y confirma el código según configuración; revisamos las 6 combinaciones de inclinación y altura con tu máscara de ERA, nuquera Nomex de 6 oz y barbiquejo de 2 piezas.",
-        "Surtimos UST LW con componentes removibles para descontaminación, nuquera Nomex de 6 oz y protección ocular ANSI/ISEA Z87.1 declarada. Pide ReTrack si tu operación requiere esa configuración, o careta si tu prueba de uso conserva ajuste, visibilidad y retención con el chaquetón, monja y máscara de ERA."
-      ]
+        "El Bullard UST LW es un casco estructural estilo Nueva York de fibra de vidrio, el más ligero de nuestro catálogo: menos de 1.54 kg con visor ReTrack, según su fabricante.",
+        "Su ajuste Sure-Lock ofrece seis combinaciones de inclinación y altura, y sus componentes se desmontan para descontaminarlos. Admite visor ReTrack, careta o goggles.",
+        "Bullard declara NFPA 1971-2018 y protección ocular ANSI/ISEA Z87.1. El código se confirma al cotizar, según la configuración de protección ocular que elijas."
+      ],
+      "duos": {
+        "ficha": [
+          "El UST LW no tiene un código único publicado: se asigna según la protección ocular elegida. La tabla muestra material, peso y norma de su ficha.",
+          "Bullard declara NFPA 1971-2018. Lo presentamos como declaración del fabricante, sin número de certificación publicado."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del UST LW. La protección ocular es la única que cambia según la configuración.",
+          "Si el peso es tu prioridad, compara la versión con ReTrack y la versión con careta antes de decidir."
+        ],
+        "otros": [
+          "El UST LW comparte tipo con el Bullard LTX y el Sköld Viking. Los dos son de termoplástico; el UST LW destaca por su fibra de vidrio y su poco peso.",
+          "Si tu brigada trabaja turnos largos, el peso puede inclinar la balanza; si prefiere un visor de cuatro pulgadas, el LTX es la opción."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Bullard UST LW: peso, visor ReTrack, código y limpieza.",
+          "Si nos dices qué protección ocular usa tu equipo, te cotizamos la configuración exacta con su código."
+        ]
+      }
     },
     {
       "id": "skold-viking",
@@ -747,24 +869,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Compatible con ERA y color amarillo"
       ],
       "descripcion": [
-        "Elige Sköld Viking FPCM si tu orden requiere termoplástico de alta densidad, costilla central, frente triangular y retención de 4 puntos. Nosotros escribimos FPCM, color amarillo y protector facial de policarbonato para que tu brigada reciba la configuración Viking que puede probar con máscara de ERA, faldón Nomex, nuquera aluminizada, matraca y suspensión de red.",
-        "Viking declara faldón con forro interno de Nomex, nuquera aluminizada con forro Nomex, acolchado frontal, matraca y suspensión de red. En la prueba de talla revisamos mentonera, ajuste y cobertura de nuca; pide que casco y máscara de ERA se mantengan en posición al mirar arriba y bajar la cabeza, con protector facial de policarbonato desplegado, barbiquejo de 4 puntos y chaquetón.",
-        "El modelo integra barbiquejo de 4 puntos con mentonera y retiro rápido, bisel protector y soporte trasero para colgar. Elige protector facial antirrayas y antiempaño si tu maniobra lo requiere, y combínalo con monja, chaquetón, guantes estructurales, máscara de ERA, faldón Nomex y nuquera aluminizada; confirmamos accesorios antes de surtir Viking FPCM.",
-        "Durante la prueba de operación revisamos Viking FPCM con arnés de ERA, visor y movimientos de escalera. El fabricante menciona película térmica para 800 °C; pide verificar carcasa, matraca, suspensión de red, faldón Nomex, nuquera aluminizada y protector facial antes de aceptar un lote, sin convertir ese dato en sustituto del conjunto estructural.",
-        "Sköld declara NFPA 1971 / EN 443:2009 y compatibilidad con ERA; no publicamos número UL ni la presentamos como certificación. Antes y después de intervención revisamos termoplástico, Nomex, nuquera aluminizada y barbiquejo; retira FPCM si impacto, calor o daño afectan retención, visor, carcasa, protector facial de policarbonato, matraca o suspensión de red."
+        "El Viking tiene una carcasa con costilla central y frente triangular, bisel protector y acolchado frontal. La matraca y la suspensión de red lo ajustan a la cabeza, y el barbiquejo de cuatro puntos con mentonera lo mantiene firme en cualquier posición.",
+        "El protector facial viene integrado y su fabricante menciona una película térmica para 800 °C. Ese dato describe el protector; la protección del conjunto se sigue evaluando con el resto del equipo.",
+        "Es buena opción cuando la corporación sigue referencias europeas y americanas a la vez, porque declara las dos normas."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código del Sköld Viking?",
-          "a": "FPCM."
+          "q": "¿Qué normas declara el casco Sköld Viking?",
+          "a": "NFPA 1971 y EN 443:2009, según su fabricante. Son declaraciones, sin número de certificación publicado."
         },
         {
-          "q": "¿Es compatible con ERA?",
-          "a": "El fabricante lo declara compatible; confirma físicamente la interfaz con el ERA de tu corporación."
+          "q": "¿El Sköld Viking es compatible con ERA?",
+          "a": "Su fabricante lo declara compatible. Aun así, conviene confirmarlo con la máscara de ERA de tu corporación en una prueba física."
         },
         {
-          "q": "¿Qué protección facial declara?",
-          "a": "Protector de policarbonato antirrayas y antiempaño con película térmica para 800 °C, según fabricante."
+          "q": "¿Qué retención tiene el Sköld Viking?",
+          "a": "Barbiquejo de cuatro puntos con mentonera y retiro rápido, más ajuste de matraca y suspensión de red."
+        },
+        {
+          "q": "¿En qué color viene el Sköld Viking?",
+          "a": "En amarillo, según su ficha."
         }
       ],
       "imagen": {
@@ -795,9 +919,28 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Compatible con ERA"
       ],
       "resumen": [
-        "Cotizamos Sköld Viking FPCM para una partida estructural que requiere termoplástico de alta densidad, matraca y barbiquejo de 4 puntos. Elige color amarillo, protector facial de policarbonato y compatibilidad con ERA declarada; pide prueba con máscara, arnés, monja, chaquetón, faldón Nomex, nuquera aluminizada y película térmica para 800 °C.",
-        "Surtimos Viking con faldón Nomex, nuquera aluminizada y película térmica para 800 °C según fabricante. Para tu orden escribe FPCM, protector facial antirrayas y antiempaño, suspensión de red y retiro rápido; revisamos que esa configuración conserve cobertura, campo visual, barbiquejo de 4 puntos y posición con máscara de ERA."
-      ]
+        "El Sköld Viking FPCM es un casco estructural de termoplástico de alta densidad con barbiquejo de cuatro puntos, ajuste de matraca y protector facial de policarbonato antirrayas y antiempaño.",
+        "Su faldón lleva forro interno de Nomex y su nuquera es aluminizada. Se ofrece en amarillo y su fabricante lo declara compatible con ERA.",
+        "Sköld declara NFPA 1971 y EN 443:2009. Lo cotizamos con esa declaración escrita y te ayudamos a confirmar la compatibilidad con tu máscara en una prueba real."
+      ],
+      "duos": {
+        "ficha": [
+          "El Sköld Viking se identifica con el código FPCM. La tabla reúne material, color y normas tal como los publica su ficha.",
+          "NFPA 1971 y EN 443:2009 aparecen como declaración del fabricante. Pide que queden escritas así en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del Viking, desde la carcasa hasta el protector facial.",
+          "El barbiquejo de cuatro puntos es su rasgo más distintivo frente a los otros cascos estructurales del catálogo."
+        ],
+        "otros": [
+          "El Viking comparte tipo con el Bullard LTX y el Bullard UST LW. Los dos Bullard usan barbiquejo de dos puntos; el Viking, de cuatro.",
+          "Si tu equipo también hace rescate, una retención de cuatro puntos puede ser un argumento para elegirlo."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Sköld Viking: normas, compatibilidad con ERA, retención y color.",
+          "Si nos compartes el modelo de tu ERA, te decimos qué revisar en la prueba antes de cotizar."
+        ]
+      }
     },
     {
       "id": "bullard-fh911h",
@@ -819,24 +962,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Colores amarillo, rojo, blanco y negro"
       ],
       "descripcion": [
-        "Elige Bullard Wildland FH911H para operación forestal si tu partida requiere termoplástico Ultem, ala completa y suspensión automática de 6 puntos. En la orden escribimos FH911H, amarillo, rojo, blanco o negro, y clips para goggles para que tu cuadrilla reciba una configuración de línea de fuego verificable, con barbiquejo Nomex ajustable, bandas reflejantes, sombra interior y velcro.",
-        "FH911H declara carcasa Ultem, suspensión automática de 6 puntos, sombra interior, cierres de velcro y clips de retención para goggles y bandas reflejantes. En prueba de talla revisamos ala completa, velcro y ajuste con goggles; pide que el casco conserve posición al caminar en pendiente, agacharte y mirar la línea de fuego, con barbiquejo Nomex ajustable, visera o pantalla facial.",
-        "El modelo acepta soportes para viseras y pantallas faciales, e incorpora barbiquejo Nomex ajustable. Elige visera, pantalla, bandas o goggles según tu protección ocular, y pídelo con cubrenuca si corresponde a tu equipo forestal; confirmamos color, clips de retención, suspensión automática de 6 puntos y accesorios antes de surtir Bullard FH911H para operación forestal.",
-        "En operación exterior probamos FH911H con goggles, barbiquejo Nomex y movimientos de pendiente antes de aceptar un lote. Pide revisar clips, suspensión de 6 puntos, velcro, ala completa, sombra interior y pantalla facial después de ceniza o viento con tu brigada; el casco forestal no sustituye casco estructural con ERA para incendio interior.",
-        "El fabricante declara NFPA 1977 ed. 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G; no publicamos número UL ni la presentamos como certificación. Antes y después de guardia revisamos Ultem, suspensión, clips, velcro y barbiquejo Nomex; retira FH911H por impacto, calor, deformación o retención sin función y registra inspección."
+        "El FH911H está pensado para jornadas largas: carcasa ligera de Ultem, ala completa que da sombra y protege del material que cae, y una suspensión que se ajusta sola a la cabeza.",
+        "La sombra interior, los cierres de velcro y el barbiquejo Nomex ajustable lo mantienen en su lugar al caminar en pendiente o con viento. Los clips sujetan los goggles cuando no se usan.",
+        "Es un casco para operación exterior. Para ataque interior con ERA se necesita un casco estructural, y así lo separamos en la cotización."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "FH911H."
-        },
-        {
-          "q": "¿Qué colores reporta el proveedor?",
+          "q": "¿En qué colores viene el Bullard FH911H?",
           "a": "Amarillo, rojo, blanco y negro."
         },
         {
-          "q": "¿Por qué se menciona una edición antigua?",
-          "a": "La ficha declara NFPA 1977 ed. 1998 y ANSI Z89.1-1997; se reporta tal cual para compararla con el requisito vigente."
+          "q": "¿Por qué el FH911H declara una norma de 1998?",
+          "a": "Porque así lo publica su fabricante: NFPA 1977 edición 1998 y ANSI Z89.1-1997. Lo reportamos tal cual para que puedas compararlo con el requisito vigente, NFPA 1950."
+        },
+        {
+          "q": "¿Qué accesorios acepta el casco FH911H?",
+          "a": "Goggles y bandas reflejantes en sus clips, además de soportes para viseras y pantallas faciales."
+        },
+        {
+          "q": "¿El Bullard FH911H forma parte de algún kit?",
+          "a": "Sí, es el casco de nuestro kit forestal, junto con la ropa Fire Ranger y los goggles ESS Striketeam XTO."
         }
       ],
       "imagen": {
@@ -857,9 +1002,24 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Suspensión 6 puntos"
       ],
       "resumen": [
-        "Cotizamos Bullard Wildland FH911H para línea de fuego con termoplástico Ultem, ala completa y suspensión automática de 6 puntos. Elige amarillo, rojo, blanco o negro y pide clips para goggles, bandas reflejantes, visera o pantalla según la prueba de tu cuadrilla, con barbiquejo Nomex ajustable y cubrenuca si aplica.",
-        "Surtimos FH911H con barbiquejo Nomex ajustable, sombra interior y velcro para operación exterior. Pide goggles y cubrenuca si tu jornada los requiere, y separa esta partida de casco estructural con ERA; revisamos ajuste en pendiente, viento, contacto con vegetación, clips de retención y suspensión automática de 6 puntos."
-      ]
+        "El Bullard Wildland FH911H es un casco forestal de termoplástico Ultem con ala completa, suspensión automática de seis puntos y clips para sujetar goggles y bandas reflejantes.",
+        "Se ofrece en amarillo, rojo, blanco y negro, y acepta soportes para viseras y pantallas faciales. Es el casco de nuestro kit forestal.",
+        "Su fabricante declara NFPA 1977 edición 1998 y ANSI Z89.1-1997 Tipo 1 Clase C, E y G. La referencia vigente para equipo forestal es NFPA 1950."
+      ],
+      "duos": {
+        "ficha": [
+          "El Bullard Wildland FH911H se identifica con el código FH911H. La tabla reúne material, colores y normas tal como los publica su ficha.",
+          "Las normas aparecen como declaración del fabricante y con su edición original, para compararlas con el requisito vigente de tu partida."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del FH911H, pensadas para trabajo exterior y jornadas largas.",
+          "Los accesorios, como visera o pantalla facial, se eligen según la protección ocular que use tu cuadrilla."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Bullard FH911H: colores, norma, accesorios y kit forestal.",
+          "Si vas a equipar una cuadrilla, dinos cuántas personas son y qué color usan, y te mandamos la cotización."
+        ]
+      }
     }
   ]
 };

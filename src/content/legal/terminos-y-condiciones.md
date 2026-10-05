@@ -1,6 +1,6 @@
 ---
 title: "Términos y condiciones"
-description: "Términos y condiciones de LORICA Trajes para Bomberos: cotizaciones, pedidos, entregas, garantías y facturación de trajes para bomberos y equipo de protección."
+description: "Términos y condiciones para comprar trajes para bomberos y equipo de protección: cotizaciones, pedidos, entregas, garantías y facturación."
 actualizado: 2026-09-28
 ---
 
@@ -21,7 +21,7 @@ Las fichas, tablas y artículos de este sitio tienen fines informativos y de ori
 ## Pedidos y pagos
 
 - Un pedido se considera confirmado cuando ambas partes lo aceptan por escrito, con la cotización vigente como referencia.
-- Las condiciones de pago —anticipo, contra entrega o crédito— se establecen en la cotización o en el contrato correspondiente.
+- Las condiciones de pago (anticipo, contra entrega o crédito) se establecen en la cotización o en el contrato correspondiente.
 - En compras de gobierno y licitaciones rigen, además, las bases del procedimiento y el contrato adjudicado.
 
 ## Tallas y fabricación
@@ -31,7 +31,7 @@ Las prendas se suministran según la corrida de tallas que confirmes por escrito
 ## Entregas
 
 - El tiempo de entrega se compromete por escrito en la cotización y se cuenta a partir de la confirmación del pedido y, en su caso, del anticipo.
-- Realizamos envíos a los 32 estados de la República. El lugar de entrega —estación, base o domicilio— se acuerda en el pedido.
+- Realizamos envíos a los 32 estados de la República. El lugar de entrega, sea estación, base o domicilio, se acuerda en el pedido.
 - Al recibir, revisa que las piezas, cantidades y tallas correspondan a lo pedido y reporta cualquier diferencia en el plazo que indique la cotización.
 
 ## Garantía y devoluciones

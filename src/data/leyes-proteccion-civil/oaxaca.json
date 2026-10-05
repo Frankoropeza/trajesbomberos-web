@@ -1,0 +1,116 @@
+{
+  "slug": "oaxaca",
+  "nombreOficial": "Ley de Protección Civil y Gestión Integral de Riesgos de Desastres para el Estado de Oaxaca",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado de Oaxaca",
+    "fecha": "2015-01-02"
+  },
+  "ultimaReforma": "2026-08-01",
+  "urlOficial": "https://www.congresooaxaca.gob.mx/docs66.congresooaxaca.gob.mx/legislacion_estatal/Ley_de_Proteccion_Civil_y_Gestion_Integral_de_Riesgos_de_Desastres_pare_el_Edo_de_Oaxaca_(Ref_dto_1582_aprob_LXVI_Legis_7_julio_2026_PO_31_10a_secc_1_agosto_2026).pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil y Gestión de Riesgos",
+    "articulo": "Art. 33",
+    "cita": "Se crea la Coordinación Estatal de Protección Civil y Gestión de Riesgos, como un organismo público descentralizado, con personalidad jurídica y patrimonio propios, sectorizado a la Secretaría de Seguridad y Protección Ciudadana"
+  },
+  "lead": "En Oaxaca rige la Ley de Protección Civil y Gestión Integral de Riesgos de Desastres, que pide unidad interna, programa interno, simulacros y seguro a inmuebles y empresas. Esta página ordena esas obligaciones por artículo, con cita literal, para brigadas y áreas de seguridad.",
+  "panorama": [
+    "Aprobada a finales de 2014 y con su reforma más reciente publicada el 1 de agosto de 2026, la ley es de orden público y de observancia general en Oaxaca (Art. 1). Sus obligaciones alcanzan a inmuebles industriales, de servicios y sociales considerados de riesgo, a quienes manejan sustancias peligrosas y a todo inmueble que concentre afluencia masiva de personas (Art. 68).",
+    "El Sistema Estatal reúne al Consejo Estatal, la Coordinación Estatal de Protección Civil y Gestión de Riesgos, las delegaciones regionales y los sistemas, consejos y coordinaciones municipales, junto con cuerpos de bomberos y grupos voluntarios (Art. 19). Las autoridades municipales son el primer nivel de respuesta en su jurisdicción (Art. 16), y la Coordinación Estatal es un organismo descentralizado (Art. 33)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de riesgo o con afluencia masiva",
+      "obligacion": "Integrar Unidad Interna y elaborar Programa Interno o especial; incluye giros de riesgo y a quien maneje sustancias peligrosas.",
+      "articulo": "Art. 68",
+      "cita": "en general, de todos los inmuebles que por su uso y destino concentren o reciban afluencia masiva de personas, están obligados a contar con una Unidad Interna y a elaborar un Programa Interno o especial, según corresponda."
+    },
+    {
+      "sujeto": "Inmuebles con programa interno, escolar u hospitalario",
+      "obligacion": "Hacer al menos tres simulacros al año, supervisados por la coordinación estatal o municipal competente.",
+      "articulo": "Art. 75",
+      "cita": "Los administradores, gerentes, poseedores, arrendatarios o propietarios de inmuebles señalados en los artículos 68, 69 y 71 de esta Ley, están obligados a realizar simulacros por lo menos tres veces al año con la supervisión de las Coordinaciones Estatal y Municipales competentes."
+    },
+    {
+      "sujeto": "Propietarios y administradores de esos inmuebles",
+      "obligacion": "Tener salidas de emergencia y colocar en sitios visibles equipos de seguridad y señales conforme a las Normas Oficiales Mexicanas.",
+      "articulo": "Art. 70",
+      "cita": "Todos los inmuebles que se mencionan en los dos artículos anteriores deberán contar con salidas de emergencia, a su vez, los propietarios, administradores, arrendatarios o poseedores de dichas edificaciones deberán colocar en sitios visibles equipos de seguridad, señales informativas, preventivas, restrictivas y de obligación"
+    },
+    {
+      "sujeto": "Empresas de bajo, mediano o alto riesgo",
+      "obligacion": "Contratar una póliza de seguro de responsabilidad civil y daños a terceros, según la clasificación del Reglamento.",
+      "articulo": "Art. 76",
+      "cita": "Las empresas clasificadas en el Reglamento de esta Ley como de bajo, mediano o alto riesgo deberán contar, con una póliza de seguro que ampare la responsabilidad civil y daños a terceros."
+    },
+    {
+      "sujeto": "Inmuebles que tramitan su programa interno",
+      "obligacion": "Acreditar con documentos vigentes las condiciones estructurales, eléctricas y de gas, validadas por un Director Responsable de Obra o una Unidad Verificadora.",
+      "articulo": "Art. 77",
+      "cita": "Para la autorización de dichos programas es necesario acreditar con documentación vigente las condiciones estructurales y no estructurales de los inmuebles, así como la relacionada a las instalaciones eléctricas y de gas, validadas por un Director Responsable de Obra o por una Unidad Verificadora"
+    },
+    {
+      "sujeto": "Organizadores de eventos y espectáculos masivos",
+      "obligacion": "Presentar un Programa Especial para su aprobación ante la coordinación estatal o municipal antes de obtener la licencia del evento.",
+      "articulo": "Art. 72",
+      "cita": "los organizadores, encargados, interesados, o quien haga las veces de éstos, deberán contar con un Programa Especial que se presentará para su aprobación ante la Coordinación Estatal o la Coordinación Municipal correspondiente"
+    },
+    {
+      "sujeto": "Escuelas públicas y privadas de todos los niveles",
+      "obligacion": "Contar con un Comité Escolar y un Plan Escolar de Gestión de Desastres autorizado por la Coordinación Estatal y revalidado cada año.",
+      "articulo": "Art. 69",
+      "cita": "Las instituciones educativas públicas y privadas de todos los niveles deberán contar con un Comité Escolar y elaborar un Plan Escolar de Gestión de Desastres, que será autorizado y supervisado por la Coordinación Estatal, así como revalidarlo anualmente"
+    },
+    {
+      "sujeto": "Hospitales, clínicas y sanatorios",
+      "obligacion": "Integrar un Comité Hospitalario que elabore el Plan de Hospitales Seguros, autorizado y supervisado por la Coordinación Estatal.",
+      "articulo": "Art. 71",
+      "cita": "Los hospitales, clínicas y sanatorios deberán contar con un Comité Hospitalario, quien será el órgano encargado de elaborar el Plan de Hospitales Seguros, autorizado y supervisado por la Coordinación Estatal"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley oaxaqueña identifica a la Unidad Interna de Protección Civil como el órgano que elabora, opera y vigila el Programa Interno, y aclara que también se le conoce como Brigadas Institucionales (Art. 4, fr. LXXIX). Ese programa se compone del plan operativo de la unidad, el plan de continuidad de operaciones y el plan de contingencias (Art. 4, fr. LVI).",
+    "Los inmuebles obligados deben practicar simulacros al menos tres veces al año, con supervisión de las coordinaciones (Art. 75). Las Unidades Internas y los Comités de Seguridad y Emergencia Escolar se conforman con los lineamientos del Sistema Nacional y el Reglamento (Art. 68). La Coordinación Estatal asesora su conformación y atiende la práctica de simulacros (Art. 35, fr. XL y XLII)."
+  ],
+  "equipoDuo": [
+    "A diferencia de otras leyes estatales, la de Oaxaca pide expresamente que los inmuebles obligados coloquen equipos de seguridad en sitios visibles, además de salidas de emergencia y señalización conforme a las Normas Oficiales Mexicanas (Art. 70). Para definir extintores, hidrantes y equipo de brigada, la NOM-002-STPS-2010 es la referencia federal sobre prevención de incendios en centros de trabajo.",
+    "Los cuerpos de bomberos forman parte del Sistema Estatal (Art. 19), y sus integrantes necesitan protección certificada para fuego estructural. En LORICA fabricamos <a href=\"/trajes/estructural/\">trajes estructurales</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> para bomberos y brigadas; la NOM-017-STPS-2024 ayuda a elegir el equipo de protección personal por riesgo."
+  ],
+  "sancionesDuo": [
+    "Según el artículo 119, las sanciones van de la amonestación con apercibimiento a la multa, una multa adicional por cada día que persista la infracción y la clausura temporal o permanente, parcial o total, además de turnar el caso para responsabilidad civil o penal. La reincidencia duplica la multa (Art. 120)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Oaxaca y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil y Gestión Integral de Riesgos de Desastres para el Estado de Oaxaca. Su última reforma, el decreto 1582, se publicó en el Periódico Oficial el 1 de agosto de 2026. La versión actualizada está en la sección de legislación estatal del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién está obligado a tener Unidad Interna y Programa Interno en Oaxaca?",
+      "a": "El artículo 68 incluye a dependencias públicas, inmuebles industriales, de servicios y sociales considerados de riesgo, a quienes manejan o almacenan sustancias peligrosas y a todo inmueble con afluencia masiva de personas. Escuelas y hospitales tienen planes propios (Arts. 69 y 71)."
+    },
+    {
+      "q": "¿Cuántos simulacros exige la ley de Oaxaca?",
+      "a": "El artículo 75 obliga a administradores, gerentes, poseedores, arrendatarios o propietarios de los inmuebles de los artículos 68, 69 y 71 a realizar simulacros por lo menos tres veces al año, con supervisión de las coordinaciones estatal y municipales competentes."
+    },
+    {
+      "q": "¿Mi empresa necesita seguro de responsabilidad civil en Oaxaca?",
+      "a": "Sí, si el Reglamento la clasifica como de bajo, mediano o alto riesgo: el artículo 76 exige una póliza de seguro que ampare la responsabilidad civil y daños a terceros. Conviene revisar la clasificación del giro con la Coordinación Estatal antes de tramitar el Programa Interno."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Oaxaca?",
+      "a": "La ley pide colocar equipos de seguridad visibles y señalización conforme a las NOM (Art. 70), sin listar prendas. Para brigadistas de evacuación, primeros auxilios y conato de incendio es habitual contar con casco, guantes, botas, chaleco reflejante, lámpara y extintores, según el análisis de riesgo y la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Oaxaca · Ley de Protección Civil y Gestión Integral de Riesgos de Desastres (PDF, reforma dto. 1582)",
+      "url": "https://www.congresooaxaca.gob.mx/docs66.congresooaxaca.gob.mx/legislacion_estatal/Ley_de_Proteccion_Civil_y_Gestion_Integral_de_Riesgos_de_Desastres_pare_el_Edo_de_Oaxaca_(Ref_dto_1582_aprob_LXVI_Legis_7_julio_2026_PO_31_10a_secc_1_agosto_2026).pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Oaxaca · Legislación estatal",
+      "url": "https://www.congresooaxaca.gob.mx/legislaciones/legislacion_estatal.html"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

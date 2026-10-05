@@ -1,28 +1,28 @@
 {
- "lead": "Los bomberos en Los Cabos son, sobre todo, voluntarios: un cuerpo en San José del Cabo, otro en Cabo San Lucas y el servicio de rescate del aeropuerto. Te damos el domicilio de cada base y el teléfono de los voluntarios.",
+ "lead": "Los Cabos suma 7 estaciones de bomberos, casi todas de voluntarios: los cuerpos de San José del Cabo y Cabo San Lucas con sus subestaciones, la base municipal de La Ribera y el rescate del aeropuerto. Incluimos domicilios y teléfonos oficiales.",
  "panorama": [
-  "Cada una de las dos ciudades con estación tiene su propia corporación de voluntarios. En Cabo San Lucas, el H. Cuerpo de Bomberos opera desde la Estación Central Gildardo Payán Azcárraga, en la colonia El Médano; en San José del Cabo, el Departamento de Bomberos está sobre el Boulevard Antonio Mijares, en la Colonia Centro.",
-  "Para quien coordina, capacita o dona equipo, esto significa tratar con dos corporaciones independientes, no con un mando único. Cabo San Lucas declara además rescate acuático, rescate vehicular y capacitación, mientras que el SSEI protege el aeropuerto sobre la Carretera Transpeninsular, del lado de San José del Cabo."
+  "Los bomberos en Los Cabos se organizan en dos corporaciones de voluntarios, una por ciudad. En Cabo San Lucas, el H. Cuerpo de Bomberos opera desde la Estación Central Gildardo Payán Azcárraga, en El Médano, con subestaciones en Lomas del Sol y Cabo del Sol; en San José del Cabo, el Departamento de Bomberos está sobre el Boulevard Antonio Mijares y extiende su red hasta Santiago.",
+  "Para quien coordina, capacita o dona equipo, esto significa tratar con dos corporaciones independientes, no con un mando único. El ayuntamiento opera aparte la estación de bomberos y protección civil de La Ribera, y el SSEI protege el aeropuerto sobre la Carretera Transpeninsular, del lado de San José del Cabo."
  ],
  "coberturaDuo": [
-  "Dos corporaciones voluntarias y una aeroportuaria sostienen el servicio, y las tres dan atención prehospitalaria además del combate de incendios. Cabo San Lucas añade rescate acuático y vehicular, y el aeropuerto el salvamento aéreo: un municipio donde el bombero es también paramédico."
+  "Cinco de las 7 estaciones son de voluntarios, y la atención prehospitalaria es el servicio más declarado, junto al combate de incendios. Cabo San Lucas añade rescate acuático y vehicular, Santiago el incendio forestal y el aeropuerto el salvamento aéreo: un municipio donde el bombero es también paramédico."
  ],
  "equipoDuo": [
-  "Además del <a href=\"/trajes/estructural/\">traje estructural para bomberos</a>, el perfil de Los Cabos pide insumos de atención prehospitalaria en las tres bases, <a href=\"/rescate/\">equipo de rescate</a> y extricación para los accidentes viales que atiende Cabo San Lucas, y traje de aproximación para el SSEI del aeropuerto.",
-  "Los cuerpos voluntarios suelen comprar con donativos o apoyos municipales, y por eso armamos cotizaciones claras por partida, con ficha técnica de cada artículo. Si hay licitación, entregamos expediente; facturamos con CFDI 4.0, sin compra mínima, y enviamos a San José del Cabo o a Cabo San Lucas."
+  "Además del <a href=\"/trajes/estructural/\">traje estructural para bomberos</a>, el perfil de Los Cabos pide insumos de atención prehospitalaria, <a href=\"/rescate/\">equipo de rescate</a> y extricación para los accidentes viales que atiende Cabo San Lucas, ropa forestal para la subestación de Santiago y traje de aproximación para el SSEI del aeropuerto.",
+  "Los cuerpos voluntarios suelen comprar con donativos o apoyos municipales, y por eso armamos cotizaciones claras por partida, con ficha técnica de cada artículo. Si hay licitación, entregamos expediente; facturamos con CFDI 4.0, sin compra mínima, y enviamos a cualquier base del municipio."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Los Cabos y dónde están?",
-   "a": "Son tres. El H. Cuerpo de Bomberos de Cabo San Lucas está en la colonia El Médano; el Departamento de Bomberos de San José del Cabo, en Boulevard Antonio Mijares esquina Benito Juárez, y el SSEI, en el Aeropuerto Internacional de Los Cabos, sobre la Transpeninsular."
+   "a": "Son 7. El H. Cuerpo de Bomberos de Cabo San Lucas tiene su central en El Médano y subestaciones en Lomas del Sol y Cabo del Sol; el Departamento de Bomberos de San José del Cabo está en Boulevard Antonio Mijares y opera otra en Santiago. Completan La Ribera y el SSEI del aeropuerto."
   },
   {
    "q": "¿Quién opera los bomberos en Los Cabos?",
-   "a": "Dos corporaciones de voluntarios: el Departamento de Bomberos de San José del Cabo y el H. Cuerpo de Bomberos de Cabo San Lucas, cada uno con su propia base. El aeropuerto tiene su servicio de salvamento y extinción, el SSEI, dedicado a la operación aérea."
+   "a": "Principalmente dos corporaciones de voluntarios: el Departamento de Bomberos de San José del Cabo y el H. Cuerpo de Bomberos de Cabo San Lucas, cada uno con sus subestaciones. El H. Ayuntamiento de Los Cabos opera la estación de La Ribera y el aeropuerto tiene su propio SSEI."
   },
   {
    "q": "¿Cómo contacto a los bomberos de Los Cabos para una gestión?",
-   "a": "Ambas corporaciones voluntarias publican teléfono oficial: llama a la de tu ciudad para cursos, donativos o visitas. El SSEI del aeropuerto no tiene línea publicada. Si la situación es una emergencia, marca al 911."
+   "a": "Las centrales de ambas corporaciones voluntarias publican teléfono oficial: llama a la de tu ciudad para cursos, donativos o visitas. Las subestaciones, La Ribera y el SSEI del aeropuerto no tienen línea publicada. Si la situación es una emergencia, marca al 911."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Los Cabos?",

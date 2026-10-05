@@ -119,12 +119,6 @@ export const DUO_P_F: Record<string, Record<string, Duo>> = {
       'Revisa <a href="/blog/nfpa-1970-que-cambio/">NFPA 1970</a> y <a href="/blog/tpp-y-thl-traje-estructural/">TPP y THL del traje estructural</a> para completar la evaluación. Al recibir una partida, anota fecha y configuración de cada pieza antes de ponerla formalmente en servicio operativo.',
     ],
   },
-  '/trajes/extricacion/': {
-    completa: [
-      'El traje de extricación para rescate vehicular funciona con casco, guantes, botas y, cuando la atmósfera lo exige, ERA seleccionados para la maniobra. La compatibilidad se revisa en movimiento: rodillas sobre asfalto, protección ocular, agarre de herramienta y visibilidad en carretera.',
-      'Integra los complementos con el mismo escenario de extricación, no como compras aisladas. Revisa <a href="/cascos/">cascos para bombero</a> y <a href="/guantes/">guantes para bombero</a> al preparar la cotización; describe operación nocturna, riesgo biológico y tallas para cerrar un conjunto coherente.',
-    ],
-  },
   '/trajes/extricacion/chaqueta/': {
     aplicaciones: [
       'La chaqueta de rescate técnico se usa en extricación vehicular, rescate técnico en estructuras colapsadas y apoyo prehospitalario con exposición biológica. La especifican mandos de rescate que necesitan movilidad, codos reforzados y visibilidad sin cargar el chaquetón estructural en cada salida.',

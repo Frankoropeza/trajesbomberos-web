@@ -11,13 +11,14 @@ import CompletaElConjunto from '@components/CompletaElConjunto.astro';
 import { tiposDeSeccion } from '@lib/catalogo/tipos';
 import { modelosDeFamilia, modelosDeSeccion, modelosDeTipo, urlModelo } from '@lib/catalogo/modelos';
 import { MODELOS } from '@lib/catalogo/data';
-import type { Modelo, Seccion, Tipo } from '@lib/catalogo/types';
+import type { Bloque, Modelo, Seccion, Tipo } from '@lib/catalogo/types';
 import { waUrl } from '@lib/wa';
 import { FAMILIAS } from '@lib/familias';
 import { piezasDeFamilia } from '@lib/piezas';
 import GuiasTecnicas from '@components/blog/GuiasTecnicas.astro';
 import { temaEnFrase } from '@lib/blog-enlaces';
 import { MARCA } from '@config/site';
+import { propiedadesDeFicha, type ProductoInput } from '@lib/seo';
 
 interface Props { seccion: Seccion; entry: Tipo | Modelo; kind: 'tipo' | 'modelo'; path: string; parent?: { name: string; href: string } | { name: string; href: string }[]; heroImage?: { src: string; alt: string }; }
 const { seccion, entry, kind, path, parent, heroImage = seccion.hero } = Astro.props;
@@ -25,9 +26,24 @@ const isTipo = kind === 'tipo';
 const tipo = entry as Tipo;
 const modelo = entry as Modelo;
 const nombre = isTipo ? tipo.nombre : `${modelo.marca} ${modelo.nombre}`;
+// Nombre en minúscula para títulos de sección del tipo («Dudas sobre casco forestal»).
+// Las fichas de marca (/marcas/<marca>/) conservan su nombre propio en los títulos de sección.
+const esMarca = seccion.slug === 'marcas';
+const nombreFrase = isTipo && !esMarca ? tipo.nombreCard.replace(/^([A-ZÁÉÍÓÚÑ])(?=[a-záéíóúñ])/, (l) => l.toLowerCase()) : nombre;
+// Uso recomendado por familia de traje (ficha técnica estandarizada, AEO 2026-09-29, 2.1).
+const USO_FAMILIA: Record<string, string> = {
+  estructural: 'Ataque interior en incendio estructural',
+  brigadista: 'Brigada contra incendio en centro de trabajo y conato (NOM-002-STPS-2010); no sustituye al estructural en ataque interior',
+  forestal: 'Incendio forestal y de vegetación, jornadas largas en línea de fuego',
+  aproximacion: 'Aproximación a calor radiante: ARFF, refinería, fundición y hornos',
+  entrada: 'Entrada breve a la flama con ERA, en incidente térmico severo',
+  extricacion: 'Rescate vehicular y técnico con riesgo de corte y punción',
+  hazmat: 'Respuesta a materiales peligrosos según el agente identificado',
+};
 const rows = isTipo ? (tipo.especificacion ?? []) : [
   { campo: 'Marca', valor: modelo.marca }, { campo: 'Fabricante', valor: modelo.fabricante },
   ...(modelo.codigo ? [{ campo: 'Código', valor: modelo.codigo }] : []), ...(modelo.codigoNota ? [{ campo: 'Código', valor: modelo.codigoNota }] : []),
+  ...(modelo.familia && USO_FAMILIA[modelo.familia] ? [{ campo: 'Uso recomendado', valor: USO_FAMILIA[modelo.familia] }] : []),
   ...(modelo.tipo ? [{ campo: 'Tipo', valor: tiposDeSeccion(seccion.slug).find((item) => item.slug === modelo.tipo)?.nombre ?? modelo.tipo }] : []),
   ...(modelo.material || modelo.capaExterior ? [{ campo: 'Material / capa exterior', valor: modelo.material ?? modelo.capaExterior! }] : []), ...(modelo.barreras ? [{ campo: 'Barreras', valor: modelo.barreras }] : []),
   ...(modelo.colores ? [{ campo: 'Colores', valor: modelo.colores }] : []), ...(modelo.tallas ? [{ campo: 'Tallas', valor: modelo.tallas }] : []), ...(modelo.peso ? [{ campo: 'Peso', valor: modelo.peso }] : []),
@@ -36,7 +52,8 @@ const rows = isTipo ? (tipo.especificacion ?? []) : [
 const image = isTipo ? tipo.imagen : modelo.imagen;
 const extras = isTipo ? [] : modelo.imagenesExtra ?? [];
 const related = !isTipo ? (modelo.familia ? modelosDeFamilia(modelo.familia).filter((item) => item.id !== modelo.id) : modelo.tipo ? modelosDeTipo(modelo.tipo).filter((item) => item.id !== modelo.id) : []) : [];
-const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre) : [];
+// Ficha de marca: primero los trajes, después los complementos.
+const modelosMarca = isTipo && seccion.slug === 'marcas' ? MODELOS.filter((item) => item.marca === tipo.nombre).sort((a, b) => Number(b.seccion === 'trajes') - Number(a.seccion === 'trajes')) : [];
 // Modelos publicados de este tipo (enlazado tipo → modelo; auditoría 2026-09-29, E2)
 const modelosTipo = isTipo && seccion.slug !== 'marcas' ? modelosDeTipo(tipo.slug) : [];
 const listaModelos = modelosTipo.map((item) => `${item.marca} ${item.nombre}`);
@@ -56,15 +73,17 @@ const tituloModelo = isTipo ? '' : modelo.title ?? (tituloModeloBase.length <= 6
 const llamadaCotizacion = `Cotiza con ${MARCA.nombre} por WhatsApp: entrega en ${MARCA.cobertura}.`;
 const descripcionModelo = isTipo ? '' : modelo.description ?? recortarPalabras(`${recortarPalabras(primeraFrase(modelo.resumen?.[0] ?? modelo.descripcion[0]), 160 - llamadaCotizacion.length - 1)} ${llamadaCotizacion}`, 160);
 const modeloPorId = (id: string) => MODELOS.find((item) => item.id === id)!;
+// Kits: cada componente con su función en el conjunto y enlace a su ficha (AEO 2026-09-29, 2.5).
+const componenteKit = (rol: string, id: string, nombre?: string) => { const m = modeloPorId(id); return { rol, nombre: nombre ?? `${m.marca} ${m.nombre}`, href: urlModelo(m) }; };
 const componentesKit = isTipo && seccion.slug === 'kits' ? {
   'kit-estructural': [
-    { nombre: 'Bullard LTX', href: urlModelo(modeloPorId('bullard-ltx')) }, { nombre: 'Croydon Filtrex', href: urlModelo(modeloPorId('croydon-filtrex')) }, { nombre: 'Veridian Fire Pro II', href: urlModelo(modeloPorId('veridian-fire-pro-ii')) }, { nombre: 'Majestic PAC II', href: urlModelo(modeloPorId('majestic-pac-ii')) },
+    componenteKit('Traje', 'romak-profesional'), componenteKit('Casco', 'bullard-ltx', 'Bullard LTX'), componenteKit('Capucha', 'majestic-pac-ii', 'Majestic PAC II'), componenteKit('Guantes', 'veridian-fire-pro-ii', 'Veridian Fire Pro II'), componenteKit('Botas', 'croydon-filtrex', 'Croydon Filtrex'),
   ],
   'kit-brigadista': [
-    { nombre: 'Bullard LTX', href: urlModelo(modeloPorId('bullard-ltx')) }, { nombre: 'Romak CAP1005', href: urlModelo(modeloPorId('romak-cap1005')) }, { nombre: 'Romak Firemax VI', href: urlModelo(modeloPorId('romak-firemax-vi')) }, { nombre: 'Romak Workman Fire', href: urlModelo(modeloPorId('romak-workman-fire')) },
+    componenteKit('Traje', 'romak-combate-basico'), componenteKit('Casco', 'bullard-ltx', 'Bullard LTX'), componenteKit('Capucha', 'romak-cap1005', 'Romak CAP1005'), componenteKit('Guantes', 'romak-firemax-vi', 'Romak Firemax VI'), componenteKit('Botas', 'romak-workman-fire', 'Romak Workman Fire'),
   ],
   'kit-forestal': [
-    { nombre: 'Fire Ranger Explorer', href: urlModelo(modeloPorId('romak-fire-ranger-explorer')) }, { nombre: 'Romak BOMW1002', href: urlModelo(modeloPorId('romak-bomw1002')) }, { nombre: 'Bullard Wildland FH911H', href: urlModelo(modeloPorId('bullard-fh911h')) }, { nombre: 'ESS Striketeam XTO', href: urlModelo(modeloPorId('ess-striketeam-xto')) },
+    componenteKit('Traje', 'romak-fire-ranger-explorer', 'Fire Ranger Explorer'), componenteKit('Traje de saco y pantalón (alternativa)', 'romak-bomw1002', 'Romak BOMW1002'), componenteKit('Casco', 'bullard-fh911h', 'Bullard Wildland FH911H'), componenteKit('Goggles', 'ess-striketeam-xto', 'ESS Striketeam XTO'),
   ],
 }[tipo.slug] ?? [] : [];
 // H1 con la palabra clave de la página (auditoría 2026-09-29, E3): el H1 se
@@ -86,6 +105,10 @@ if (isTipo) {
   const s1 = segmentoTitle(tipo.title);
   if (s1.toLowerCase().startsWith(tipo.nombre.toLowerCase()) && s1.length > tipo.nombre.length + 1) {
     h1Accent = s1.slice(tipo.nombre.length).trim().replace(/^[:–—-]\s*/, '');
+  } else if (s1.toLowerCase().startsWith(tipo.nombreCard.toLowerCase()) && s1.length > tipo.nombreCard.length + 1) {
+    // «Casco estructural tradicional» + «para bombero estilo americano» (sin paréntesis en el H1)
+    h1Ficha = tipo.nombreCard;
+    h1Accent = s1.slice(tipo.nombreCard.length).trim().replace(/^[:–—-]\s*/, '');
   } else if (!llevaKeyword(tipo.nombre)) {
     h1Accent = 'para bombero';
   }
@@ -113,8 +136,8 @@ const metaRuta = metaSeo(path);
 // FAQ extra por ruta (preguntas de la SERP, Ahrefs) antes de las FAQ de los datos.
 const faqsFicha = [...(metaRuta?.faqsExtra ?? []), ...((isTipo ? tipo.faq : modelo.faq) ?? [])];
 if (metaRuta?.h1) { h1Ficha = metaRuta.h1; h1Accent = undefined; }
-const eyebrowFicha = isTipo ? `Tipo · ${seccion.nombre}` : `Modelo · ${modelo.marca}`;
-const copy = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: modelo.caracteristicas }];
+const eyebrowFicha = isTipo ? (esMarca ? 'Marca de equipo para bombero' : `Tipo · ${seccion.nombre}`) : `Modelo · ${modelo.marca}`;
+const copy: Bloque[] = isTipo ? tipo.bloques : [{ h2: `Acerca de ${nombre}`, parrafos: modelo.descripcion, lista: undefined }];
 const waMessage = `Hola, quiero cotizar ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 const waFicha = `Hola, quiero la ficha técnica de ${nombre}${!isTipo && modelo.codigo ? ` ${modelo.codigo}` : ''}.`;
 // Ficha rápida del modelo (arriba, junto a la foto): lo que el comprador compara primero.
@@ -127,9 +150,31 @@ const rapida = isTipo ? [] : [
   ...(modelo.tallas ? [['Tallas', modelo.tallas]] : []),
   ...(modelo.peso ? [['Peso', modelo.peso]] : []),
 ] as [string, string][];
-const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
+// Product (AEO ZeroRank 2026-09-29): datos que la ficha ya muestra; sin offers ni precio.
+// Las fichas de marca (/marcas/<marca>/) no son producto: no emiten Product.
+const producto: ProductoInput | undefined = seccion.slug === 'marcas' ? undefined : {
+  name: nombre,
+  description: isTipo ? tipo.description : descripcionModelo,
+  url: path,
+  image: image?.src,
+  category: isTipo ? `${seccion.nombre} para bomberos` : (tipoDeModelo?.nombre ?? familiaModelo?.nombreWa ?? seccion.nombre),
+  ...(!isTipo ? { brand: modelo.marca, manufacturer: modelo.fabricante, model: modelo.nombre, ...(modelo.codigo ? { mpn: modelo.codigo } : {}) } : {}),
+  propiedades: propiedadesDeFicha(isTipo ? (tipo.especificacion ?? []) : rows.filter((r) => !/^(Marca|Fabricante|Código)$/.test(r.campo))),
+  ...(componentesKit.length ? { componentes: componentesKit.map((c) => ({ name: c.nombre, url: c.href })) } : {}),
+};
+
+// Dúos de la ficha (tipo o modelo): viven en el propio dato (fuente única); si faltan, SectionHeading busca por `clave`.
+const duosTipo: Partial<Record<string, [string, string]>> = (isTipo ? tipo.duos : modelo.duos) ?? {};
+const bloqueElegir = copy.slice(1).find((block) => block.id);
+const menuFicha = [
+  { label: 'A fondo', href: '#a-fondo' },
+  ...(bloqueElegir ? [{ label: 'Cómo elegir', href: `#${bloqueElegir.id}` }] : []),
+  { label: 'Especificación', href: '#ficha' },
+  ...(modelosTipo.length > 0 || modelosMarca.length > 0 ? [{ label: 'Modelos', href: '#modelos' }] : []),
+  { label: 'Preguntas frecuentes', href: '#faq' },
+];
 ---
-<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} menuItems={[{ label: 'A fondo', href: '#a-fondo' }, { label: 'Especificación', href: '#ficha' }, { label: 'Preguntas frecuentes', href: '#faq' }]} footerCta={{ title: `Cotiza ${nombre}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
+<PageLayout pageType="producto" path={path} title={metaRuta?.title ?? (isTipo ? tipo.title : tituloModelo)} description={metaRuta?.description ?? (isTipo ? tipo.description : descripcionModelo)} crumbLabel={nombre} parent={parent ?? { name: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` }} eyebrow={eyebrowFicha} h1={h1Ficha} h1Accent={h1Accent} lead={metaRuta?.lead ?? (isTipo ? tipo.lead : modelo.resumen?.[0] ?? modelo.descripcion[0])} descRight={isTipo ? tipo.resumen ?? [] : modelo.resumen?.slice(1) ?? []} heroImage={heroImage} faqs={faqsFicha} item={{ name: nombre, description: isTipo ? tipo.description : descripcionModelo, image: image?.src, category: seccion.nombre, url: path }} producto={producto} menuItems={menuFicha} footerCta={{ title: `Cotiza ${nombreFrase}`, text: 'Indica operación, número de elementos y accesorios para confirmar por escrito la configuración.', secondary: { label: `${seccion.nombre} para bomberos`, href: `/${seccion.slug}/` } }}>
   {!isTipo && <Fragment slot="hero-badge"><NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} /></Fragment>}
   {!isTipo && (
     <div class="section producto"><div class="container">
@@ -148,7 +193,6 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
           <p class="eyebrow">Ficha rápida</p>
           <NormaBadge estatus={modelo.estatusNorma} norma={modelo.norma} certificacion={modelo.certificacion} />
           <dl class="producto__datos">{rapida.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
-          {resumenExtra.map((p) => <p class="producto__nota">{p}</p>)}
           <div class="producto__cta">
             <a class="producto__wa" href={waUrl(waMessage)} target="_blank" rel="noopener nofollow"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z" /></svg>Cotizar {nombre} por WhatsApp</a>
             <a class="producto__ficha" href={waUrl(waFicha)} target="_blank" rel="noopener nofollow">Pedir ficha técnica</a>
@@ -159,23 +203,24 @@ const resumenExtra = !isTipo && modelo.resumen ? modelo.resumen.slice(1) : [];
     </div></div>
   )}
   <div class="section"><div class="container layout"><main>
-    <section class="block first" id="a-fondo"><div class:list={['detail', { 'detail--solo': !isTipo }]}>
-      <div class="copy"><p class="eyebrow">{isTipo ? 'Qué es' : 'Modelo y configuración'}</p>{copy.slice(0, 1).map((block) => <><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</>)}</div>
+    {isTipo && !image ? <section class="block first" id="a-fondo"><SectionHeading eyebrow={copy[0]?.eyebrow ?? 'Qué es'} title={copy[0]?.h2 ?? nombre} duo={copy[0]?.parrafos} />{copy[0]?.lista && <ul class="checks">{copy[0].lista.map((item) => <li>{item}</li>)}</ul>}</section> : <section class="block first" id="a-fondo"><div class:list={['detail', { 'detail--solo': !isTipo }]}>
+      <div class="copy"><p class="eyebrow">{copy[0]?.eyebrow ?? (isTipo ? 'Qué es' : 'Modelo y configuración')}</p>{copy.slice(0, 1).map((block) => <><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</>)}</div>
       {isTipo && image && <div class="gallery"><figure><img src={image.src} {...responsive(image.src, SIZES.half)} alt={image.alt} width={'width' in image ? image.width : undefined} height={'height' in image ? image.height : undefined} />{image.origen === 'proveedor' ? <figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption> : <figcaption>{seccion.leyendaImagenIlustrativa ?? 'Imagen ilustrativa. Marca, modelo y configuración exactos se confirman por escrito en la cotización.'}</figcaption>}</figure>{extras.map((extra) => <figure><img src={extra.src} {...responsive(extra.src, SIZES.tile)} alt={extra.alt} width={extra.width} height={extra.height} loading="lazy" /><figcaption>Imagen del fabricante. La configuración exacta se confirma por escrito en la cotización.</figcaption></figure>)}</div>}
-    </div>{copy.slice(1).map((block) => <div class="prose"><h2>{block.h2}</h2>{block.parrafos.map((paragraph) => <p>{paragraph}</p>)}{block.lista && <ul>{block.lista.map((item) => <li>{item}</li>)}</ul>}</div>)}</section>
-    <section class="block" id="ficha"><SectionHeading clave="ficha" eyebrow="Ficha técnica" title={isTipo ? 'Datos para tu requisición' : 'Especificación disponible'} /><SpecTable grupos={[{ grupo: isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}</strong> — {norma.alcance}</p>)}</section>
-    {!isTipo && <section class="block"><SectionHeading clave="caracteristicas" eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="features">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
-    {isTipo && tipo.errores && <section class="block"><SectionHeading clave="errores" eyebrow="Antes de comprar" title="Errores que conviene evitar" /><ul class="features">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
+    </div></section>}
+    {copy.slice(1).map((block) => <section class="block" id={block.id}><SectionHeading eyebrow={block.eyebrow ?? 'Cómo elegir'} title={block.h2} duo={block.parrafos} />{block.lista && <ul class="checks">{block.lista.map((item) => <li>{item}</li>)}</ul>}</section>)}
+    <section class="block" id="ficha"><SectionHeading clave="ficha" duo={duosTipo.ficha} eyebrow="Ficha técnica" title={isTipo ? (esMarca ? `Ficha de la marca ${nombre}` : `Datos para requisitar ${nombreFrase}`) : `Ficha técnica de ${nombre}`} /><SpecTable grupos={[{ grupo: esMarca ? 'Marca' : isTipo ? 'Tipo' : 'Modelo', filas: rows }]} />{isTipo && tipo.normas?.map((norma) => <p class="norma"><strong>{norma.norma}:</strong> {norma.alcance}</p>)}</section>
+    {!isTipo && <section class="block"><SectionHeading clave="caracteristicas" duo={duosTipo.caracteristicas} eyebrow="Configuración" title={`Características de ${nombre}`} /><ul class="checks">{modelo.caracteristicas.map((item) => <li>{item}</li>)}</ul></section>}
+    {isTipo && tipo.errores && <section class="block"><SectionHeading clave="errores" duo={duosTipo.errores} eyebrow="Antes de comprar" title={`Errores al comprar ${nombreFrase}`} /><ul class="checks">{tipo.errores.map((item) => <li>{item}</li>)}</ul></section>}
     {!isTipo && seccion.slug !== 'trajes' && <p class="text">{modelo.notaCompra ?? <><strong>Antes de ordenar:</strong> revisa la guía de compra de <a href={`/${seccion.slug}/#elegir`}>{seccion.nombre.toLowerCase()}</a> para que la cotización llegue completa.</>}</p>}
-    {related.length > 0 && <section class="block"><SectionHeading clave="otros" eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title="Otros modelos disponibles" /><ModelosGrid modelos={related} cols={3} /></section>}
+    {related.length > 0 && <section class="block"><SectionHeading clave="otros" duo={duosTipo.otros} eyebrow={modelo.familia ? 'Misma familia' : 'Mismo tipo'} title={`Alternativas a ${nombre}`} /><ModelosGrid modelos={related} cols={3} /></section>}
     {familiaModelo && <section class="block" id="conjunto"><CompletaElConjunto familia={familiaModelo.slug} titulo={`Completa el conjunto con ${nombre}`} /></section>}
-    {modelosMarca.length > 0 && <section class="block"><SectionHeading clave="marca" eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} disponibles`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
-    {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${tipo.nombre.toLowerCase()} que surtimos`} duo={duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
-    {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
-    <section class="block" id="faq"><SectionHeading clave="faq" eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombre}`} /><FAQWithContact items={faqsFicha} /></section>
-  </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>Trajes {familiaModelo.nombreWa.toLowerCase()}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
-  <GuiasTecnicas ruta={path} tema={temaEnFrase(nombre)} />
+    {modelosMarca.length > 0 && <section class="block" id="modelos"><SectionHeading clave="marca" duo={duosTipo.marca} eyebrow="Modelos publicados" title={`Modelos ${tipo.nombre} en nuestro catálogo`} /><ModelosGrid modelos={modelosMarca} cols={3} /></section>}
+    {modelosTipo.length > 0 && <section class="block" id="modelos"><SectionHeading eyebrow="Modelos publicados" title={`Modelos de ${nombreFrase} que surtimos`} duo={duosTipo.modelos ?? duoModelosTipo} /><ModelosGrid modelos={modelosTipo} cols={3} /></section>}
+    {componentesKit.length > 0 && <section class="block"><SectionHeading clave="kit" duo={duosTipo.kit} eyebrow="Componentes de referencia" title="Modelos que integran este kit" /><ul class="features">{componentesKit.map((item) => <li><strong>{item.rol}:</strong> <a href={item.href}>{item.nombre}</a></li>)}</ul></section>}
+    <section class="block" id="faq"><SectionHeading clave="faq" duo={duosTipo.faq} eyebrow="Preguntas frecuentes" title={`Dudas sobre ${nombreFrase}`} /><FAQWithContact items={faqsFicha} /></section>
+  </main><aside>{familiaModelo ? <><p class="side-title">{familiaModelo.nombreWa}</p><nav><a href={`/trajes/${familiaModelo.slug}/`}>{familiaModelo.nombreWa}</a>{piezasFamilia.map((pieza) => <a href={`/trajes/${familiaModelo.slug}/${pieza.slug}/`}>{pieza.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></> : <><p class="side-title">{seccion.nombre}</p><nav><a href={`/${seccion.slug}/`}>{seccion.nombre} para bomberos</a>{tiposDeSeccion(seccion.slug).map((item) => <a class:list={{ active: isTipo ? item.slug === tipo.slug : item.slug === modelo.tipo }} href={`/${seccion.slug}/${item.slug}/`}>{item.nombreCard}</a>)}{modelosSidebar.map((item) => <a class:list={{ active: !isTipo && item.id === modelo.id }} href={urlModelo(item)}>{item.marca} {item.nombre}</a>)}</nav></>}</aside></div></div>
+  <GuiasTecnicas ruta={path} tema={temaEnFrase(nombreFrase)} />
 </PageLayout>
 <style>
- .producto{padding-block:clamp(1.6rem,3vw,2.6rem) 0}.producto__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:clamp(1.5rem,3vw,3rem);align-items:start}.producto__foto{margin:0;background:var(--color-light);border:var(--border);border-radius:var(--radius-lg);overflow:hidden}.producto__foto img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#fff}.producto__foto figcaption{padding:.6rem .9rem;font-size:.78rem;color:var(--color-gray);border-top:var(--border)}.producto__pendiente{display:grid;place-content:center;aspect-ratio:4/5;border:1px dashed var(--color-gray-soft);color:var(--color-gray);font-weight:700}.producto__extras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin-top:.6rem}.producto__extras img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border:var(--border);border-radius:var(--radius)}.producto__panel{position:sticky;top:calc(var(--sticky-offset) + 1rem);padding:1.3rem 1.4rem 1.4rem;background:var(--color-white);border:var(--border);border-top:4px solid var(--color-primary);border-radius:var(--radius-lg)}.producto__panel .norma-badge{margin-top:.4rem}.producto__datos{display:grid;margin:1rem 0 0;border-top:var(--border)}.producto__datos div{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:.8rem;padding:.55rem 0;border-bottom:var(--border)}.producto__datos dt{margin:0;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--color-gray)}.producto__datos dd{margin:0;font-size:.9rem;color:var(--color-dark)}.producto__nota{margin:.9rem 0 0;font-size:.86rem;color:var(--color-gray);line-height:1.55}.producto__cta{display:grid;gap:.6rem;margin-top:1.1rem}.producto__cta a{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;padding:.7rem 1.2rem;border-radius:var(--radius);font-weight:800;text-decoration:none}.producto__cta .producto__wa{background:var(--color-wa);color:#fff}.producto__cta .producto__wa:hover{background:var(--color-wa-dark)}.producto__cta .producto__ficha{border:2px solid var(--color-primary);color:var(--color-primary)}.producto__ficha:hover{background:var(--color-primary-light)}.producto__aviso{margin:.8rem 0 0;font-size:.76rem;color:var(--color-gray);text-align:center}.detail--solo{grid-template-columns:1fr}.detail--solo .copy p{max-width:78ch}@media (max-width: 1023px){.producto__grid{grid-template-columns:1fr}.producto__panel{position:static}}.layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:clamp(2rem,4vw,4rem)}.block{padding-block:2.8rem;border-top:var(--border)}.first{padding-top:0;border-top:0}.detail{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:2rem}.copy p,.prose p,.text{color:var(--color-gray);line-height:1.72}.copy li,.prose li,.features li{color:var(--color-gray);line-height:1.6;margin-block:.55rem}.eyebrow,.side-title{font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:var(--tracking-wide);color:var(--color-primary)}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;align-content:start}.gallery figure:first-child{grid-column:1/-1}.gallery figure+figure figcaption{display:none}.gallery figure+figure img{aspect-ratio:1/1;border:var(--border)}.gallery figure{margin:0}.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--color-light);border-radius:var(--radius)}figcaption,.norma{font-size:.8rem;color:var(--color-gray);line-height:1.45}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.cards a{border:var(--border);border-radius:var(--radius);overflow:hidden;color:var(--color-dark);text-decoration:none;padding-bottom:1rem}.cards img{width:100%;aspect-ratio:4/3;object-fit:cover}.cards h2,.cards .norma-badge{margin-inline:1rem}.cards h2{font-size:1rem}aside{position:sticky;top:calc(var(--sticky-offset) + 1rem);height:max-content}aside nav{display:grid;border-top:var(--border)}aside a{padding:.6rem .7rem;color:var(--color-dark);text-decoration:none;border-bottom:var(--border);font-size:.88rem}aside a.active{border-left:3px solid var(--color-primary);color:var(--color-primary);font-weight:800;background:var(--color-primary-light)}.layout>*,.detail>*,.gallery,.gallery figure{min-width:0}.gallery img,.cards img{max-width:100%;height:auto}@media (max-width: 1023px){.layout{grid-template-columns:1fr}.detail{grid-template-columns:1fr}.gallery{order:-1}.cards{grid-template-columns:1fr}aside{position:static;order:2}}
+ .producto{padding-block:clamp(1.6rem,3vw,2.6rem) 0}.producto__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:clamp(1.5rem,3vw,3rem);align-items:start}.producto__foto{margin:0;background:var(--color-light);border:var(--border);border-radius:var(--radius-lg);overflow:hidden}.producto__foto img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#fff}.producto__foto figcaption{padding:.6rem .9rem;font-size:.78rem;color:var(--color-gray);border-top:var(--border)}.producto__pendiente{display:grid;place-content:center;aspect-ratio:4/5;border:1px dashed var(--color-gray-soft);color:var(--color-gray);font-weight:700}.producto__extras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin-top:.6rem}.producto__extras img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border:var(--border);border-radius:var(--radius)}.producto__panel{position:sticky;top:calc(var(--sticky-offset) + 1rem);padding:1.3rem 1.4rem 1.4rem;background:var(--color-white);border:var(--border);border-top:4px solid var(--color-primary);border-radius:var(--radius-lg)}.producto__panel .norma-badge{margin-top:.4rem}.producto__datos{display:grid;margin:1rem 0 0;border-top:var(--border)}.producto__datos div{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:.8rem;padding:.55rem 0;border-bottom:var(--border)}.producto__datos dt{margin:0;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--color-gray)}.producto__datos dd{margin:0;font-size:.9rem;color:var(--color-dark)}.producto__nota{margin:.9rem 0 0;font-size:.86rem;color:var(--color-gray);line-height:1.55}.producto__cta{display:grid;gap:.6rem;margin-top:1.1rem}.producto__cta a{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;padding:.7rem 1.2rem;border-radius:var(--radius);font-weight:800;text-decoration:none}.producto__cta .producto__wa{background:var(--color-wa);color:#fff}.producto__cta .producto__wa:hover{background:var(--color-wa-dark)}.producto__cta .producto__ficha{border:2px solid var(--color-primary);color:var(--color-primary)}.producto__ficha:hover{background:var(--color-primary-light)}.producto__aviso{margin:.8rem 0 0;font-size:.76rem;color:var(--color-gray);text-align:center}.copy h2{font-size:var(--fs-h2);text-wrap:balance}.checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.2rem 2rem;margin:0;padding:0;list-style:none}.checks li{position:relative;padding:.55rem 0 .55rem 1.3rem;border-bottom:var(--border);color:var(--color-gray);line-height:1.5}.checks li::before{content:"";position:absolute;left:0;top:1.05rem;width:.5rem;height:.5rem;background:var(--color-primary)}.detail--solo{grid-template-columns:1fr}.detail--solo .copy p{max-width:78ch}@media (max-width: 1023px){.producto__grid{grid-template-columns:1fr}.producto__panel{position:static}}.layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:clamp(2rem,4vw,4rem)}.block{padding-block:2.8rem;border-top:var(--border)}.first{padding-top:0;border-top:0}.detail{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:2rem}.copy p,.prose p,.text{color:var(--color-gray);line-height:1.72}.copy li,.prose li,.features li{color:var(--color-gray);line-height:1.6;margin-block:.55rem}.eyebrow,.side-title{font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:var(--tracking-wide);color:var(--color-primary)}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;align-content:start}.gallery figure:first-child{grid-column:1/-1}.gallery figure+figure figcaption{display:none}.gallery figure+figure img{aspect-ratio:1/1;border:var(--border)}.gallery figure{margin:0}.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--color-light);border-radius:var(--radius)}figcaption,.norma{font-size:.8rem;color:var(--color-gray);line-height:1.45}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.cards a{border:var(--border);border-radius:var(--radius);overflow:hidden;color:var(--color-dark);text-decoration:none;padding-bottom:1rem}.cards img{width:100%;aspect-ratio:4/3;object-fit:cover}.cards h2,.cards .norma-badge{margin-inline:1rem}.cards h2{font-size:1rem}aside{position:sticky;top:calc(var(--sticky-offset) + 1rem);height:max-content}aside nav{display:grid;border-top:var(--border)}aside a{padding:.6rem .7rem;color:var(--color-dark);text-decoration:none;border-bottom:var(--border);font-size:.88rem}aside a.active{border-left:3px solid var(--color-primary);color:var(--color-primary);font-weight:800;background:var(--color-primary-light)}.layout>*,.detail>*,.gallery,.gallery figure{min-width:0}.gallery img,.cards img{max-width:100%;height:auto}@media (max-width: 1023px){.layout{grid-template-columns:1fr}.detail{grid-template-columns:1fr}.gallery{order:-1}.cards{grid-template-columns:1fr}aside{position:static;order:2}}
 </style>

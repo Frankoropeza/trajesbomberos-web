@@ -1,0 +1,124 @@
+{
+  "slug": "morelos",
+  "nombreOficial": "Ley Estatal de Protección Civil de Morelos",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial «Tierra y Libertad» núm. 5569",
+    "fecha": "2018-01-16"
+  },
+  "ultimaReforma": "2020-04-24",
+  "urlOficial": "https://marcojuridico.morelos.gob.mx/documentos/2829/download",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley Estatal de Protección Civil",
+    "url": "https://marcojuridico.morelos.gob.mx/documentos/3069/download",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil Morelos",
+    "articulo": "Art. 59",
+    "cita": "La Coordinación Estatal es un Organismo Público Descentralizado de la Administración Pública, con personalidad jurídica y patrimonio propios, así como con autonomía técnica, ejecutiva, administrativa, presupuestal y de gestión"
+  },
+  "lead": "La Ley Estatal de Protección Civil de Morelos es de las más exigentes en simulacros: seis al año en muchos inmuebles. Esta guía ordena, con artículo y cita, lo que pide a empresas, escuelas, centros nocturnos y brigadas internas.",
+  "panorama": [
+    "Aprobada por la LIII Legislatura y publicada el 16 de enero de 2018, abrogó la ley de 2014; su única reforma anotada es de abril de 2020. Regula las acciones de protección civil en Morelos con participación de los sectores público, privado y social (Art. 1) y exige Programa de Protección Civil a establecimientos industriales, comerciales, escuelas y con afluencia de público (Art. 134).",
+    "La Coordinación Estatal de Protección Civil Morelos es un organismo público descentralizado con autonomía técnica y de gestión (Art. 59), y el Consejo Estatal funciona como órgano consultivo máximo (Art. 27). La ley coloca la primera instancia de actuación en las unidades internas de cada instalación y en la autoridad municipal (Art. 16); los presidentes municipales responden por sus sistemas locales (Art. 20)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles de los sectores público, privado y social",
+      "obligacion": "Contar con Programa Interno de Protección Civil en cada inmueble o instalación fija o móvil que señale el Reglamento.",
+      "articulo": "Art. 139",
+      "cita": "Los inmuebles e instalaciones fijas y móviles de las dependencias, entidades, instituciones, organismos, industrias o empresas pertenecientes a los sectores público, privado y social, a que se refiere el Reglamento, deberán contar con un Programa Interno de Protección Civil."
+    },
+    {
+      "sujeto": "Instancias obligadas a Programa Interno",
+      "obligacion": "Crear una Unidad Interna que elabore, actualice, opere y vigile el programa en cada uno de sus inmuebles.",
+      "articulo": "Art. 138",
+      "cita": "deberá crear una estructura organizacional específica denominada Unidad Interna de Protección Civil que elabore, actualice, opere y vigile este instrumento en forma centralizada y en cada uno de sus inmuebles."
+    },
+    {
+      "sujeto": "Escuelas, industrias, plazas y lugares con público",
+      "obligacion": "Practicar seis simulacros al año, dos de ellos de evacuación por sismo, en coordinación con la Coordinación Estatal.",
+      "articulo": "Art. 81",
+      "cita": "lugares con afluencia de público y las que determine la Coordinación Estatal de acuerdo a riesgos internos y externos, deberán practicar seis simulacros al año, de los cuales dos deberán ser por evacuación de sismo"
+    },
+    {
+      "sujeto": "Establecimientos que realizan simulacros",
+      "obligacion": "Entregar en el primer trimestre el programa anual de simulacros con escenario, guion y cronología, dentro del Programa Interno.",
+      "articulo": "Art. 85",
+      "cita": "Los establecimientos que realicen simulacros deberán presentar ante la Coordinación Estatal, dentro del primer trimestre del año fiscal, su programa de simulacros que incluya el escenario, guion y cronología, en su Programa Interno de Protección Civil."
+    },
+    {
+      "sujeto": "Establecimientos sujetos a inspección",
+      "obligacion": "Tener equipo de protección personal, botiquines abastecidos y camilla rígida con inmovilización; su falta en una inspección es infracción.",
+      "articulo": "Art. 213, fr. X del Reglamento",
+      "cita": "Equipo de protección personal, cuya falta se detecte al momento de realizar una visita de inspección; XI. Botiquines de primeros auxilios suficientes y abastecidos, camilla rígida con equipo de inmovilización independientemente de que cuente con servicio médico fijo o móvil"
+    },
+    {
+      "sujeto": "Empresas o establecimientos de riesgo alto",
+      "obligacion": "Acreditar, dentro del Programa Interno, estudios y certificados de salud cardiovascular de los jefes de brigada.",
+      "articulo": "Art. 141",
+      "cita": "solicitará a las empresas o establecimientos de riesgo alto, estudios y certificados que garanticen la salud cardiovascular de los Jefes de Brigadas, con el objetivo de desempeñar sus funciones de forma óptima"
+    },
+    {
+      "sujeto": "Establecimientos con programa de simulacros",
+      "obligacion": "Calendarizar los seis simulacros anuales con intervalos de siete días a dos meses y cubrir todos los turnos de trabajo o de atención al público.",
+      "articulo": "Art. 46 del Reglamento",
+      "cita": "La programación de los seis simulacros que señala el artículo 81 de la Ley, se deberá calendarizar con una periodicidad no mayor de dos meses y no menor a siete días naturales, deberá de incluir en el transcurso del año fiscal en curso, a todos y cada uno de los turnos laborables o de atención al público"
+    },
+    {
+      "sujeto": "Capacitadores en protección civil",
+      "obligacion": "Solo pueden capacitar quienes estén evaluados, acreditados y certificados por la Coordinación Estatal a través de la Escuela Estatal.",
+      "articulo": "Art. 164",
+      "cita": "Únicamente podrán impartir capacitación en materia de Protección Civil en el Estado, las personas físicas o morales evaluadas acreditadas y certificadas por la Coordinación Estatal, por conducto de la Escuela Estatal."
+    }
+  ],
+  "brigadasDuo": [
+    "Morelos lleva a la práctica programas y brigadas mediante simulacros evaluados con acta (Art. 80): seis por año en escuelas, industrias, plazas y lugares con público, dos de ellos por sismo (Art. 81). Si hay varios turnos, deben repartirse para que participen todas las brigadas internas (Art. 82), y el calendario con escenario y guion se entrega en el primer trimestre (Art. 85).",
+    "Los guiones deben prever la evacuación prioritaria de adultos mayores, personas con discapacidad y niños, y registrarse en una bitácora autorizada (Art. 85). La Coordinación Estatal puede evaluar simulacros sin aviso en otras fechas (Art. 86). En inmuebles de riesgo alto pide además certificados de salud cardiovascular de los jefes de brigada (Art. 141)."
+  ],
+  "equipoDuo": [
+    "La ley morelense detalla equipo en los lugares cerrados de espectáculos y centros nocturnos: extintores, primeros auxilios, salidas y rutas de evacuación, lámparas de emergencia o plantas de luz (Art. 90), e instalaciones eléctricas y de gas dictaminadas (Art. 91). Para la brigada contra incendio, la NOM-002-STPS-2010, norma federal, fija criterios de prevención en centros de trabajo.",
+    "Seis simulacros al año desgastan el equipo de la brigada. En LORICA surtimos <a href=\"/equipo-de-proteccion/\">equipo de protección</a> y <a href=\"/trajes/brigadista/\">trajes para brigadista</a>: casco, guantes, botas y prendas visibles para evacuación. La NOM-017-STPS-2024, norma federal de equipo de protección personal, ayuda a asignarlo según el riesgo de cada puesto."
+  ],
+  "sancionesDuo": [
+    "Según el caso y su gravedad, las infracciones se castigan con amonestación, multa, clausura temporal o suspensión temporal, parcial o total, de obra o establecimiento (Art. 203). Si se afecta la vida o integridad de alguien procede la clausura inmediata (Art. 94); el nivel de riesgo define si sanciona el estado o el municipio (Art. 201)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Morelos y dónde consulto el texto?",
+      "a": "Es la Ley Estatal de Protección Civil de Morelos, publicada el 16 de enero de 2018 en el Periódico Oficial «Tierra y Libertad», con última reforma anotada del 24 de abril de 2020. La ley y su Reglamento, publicado el 4 de marzo de 2020, se descargan completos del Marco Jurídico Digital de la Consejería Jurídica del Estado."
+    },
+    {
+      "q": "¿Quién está obligado a tener Programa Interno de Protección Civil en Morelos?",
+      "a": "Los inmuebles e instalaciones de dependencias, industrias y empresas de los sectores público, privado y social que indique el Reglamento (Art. 139), y quienes reciben afluencia masiva de personas, que además deben contar con unidad interna (Art. 128)."
+    },
+    {
+      "q": "¿Qué pide la ley de Morelos sobre brigadas internas?",
+      "a": "Que cada instancia obligada cree su Unidad Interna de Protección Civil (Art. 138) y que todas sus brigadas participen en los simulacros, repartidos entre turnos cuando existan varios (Art. 82). Los responsables deben integrar esas unidades con su propio personal (Art. 95)."
+    },
+    {
+      "q": "¿Cuántos simulacros al año exige Morelos y cómo deben hacerse en cines o teatros?",
+      "a": "Seis por año en los establecimientos del artículo 81, dos de ellos por sismo. En cines, teatros, foros y auditorios deben realizarse en días y horas de función; si se hacen sin público, el artículo 83 los tiene por no válidos y deben reprogramarse."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Morelos?",
+      "a": "La ley no fija una lista para la brigada, pero sí exige extintores, primeros auxilios y lámparas de emergencia en sitios de espectáculos. Una brigada suele sumar casco, guantes, botas, chaleco visible y radios, definidos con la NOM-002-STPS-2010 y el análisis de riesgos."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Consejería Jurídica del Estado de Morelos · Ley Estatal de Protección Civil de Morelos (PDF)",
+      "url": "https://marcojuridico.morelos.gob.mx/documentos/2829/download"
+    },
+    {
+      "nombre": "Consejería Jurídica del Estado de Morelos · Marco Jurídico Digital, consulta del documento",
+      "url": "https://marcojuridico.morelos.gob.mx/buscar/resultados?documento=2829"
+    },
+    {
+      "nombre": "Consejería Jurídica del Estado de Morelos · Reglamento de la Ley Estatal de Protección Civil (PDF)",
+      "url": "https://marcojuridico.morelos.gob.mx/documentos/3069/download"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

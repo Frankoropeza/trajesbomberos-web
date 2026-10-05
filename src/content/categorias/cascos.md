@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre cascos de bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir cascos: cuánto duran, si uno industrial sirve para incendio, cómo se lleva con el ERA, qué significan los colores y qué debe traer una cotización para que puedas compararla."
+      - "Las dudas sobre cascos llegan casi en este orden: cuánto duran, si uno industrial sirve para incendio y cómo se lleva con el ERA. Cerramos con qué significan los colores y qué debe traer una cotización para que puedas compararla."
       - "Si tu pregunta es sobre un casco que ya tienes, mándanos una foto de la etiqueta interior por el formulario. Se abre WhatsApp con tu consulta de cascos lista y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"
@@ -208,7 +208,7 @@ faqs:
     a: "No hay un plazo único. La vida del casco depende de su fecha de fabricación, de los golpes que reciba y del calor al que se exponga. Por eso conviene registrarlo desde que llega, revisarlo después de cada incendio y retirarlo cuando la marca o la inspección lo indiquen."
   - q: "¿En qué se distingue un casco estructural de uno forestal?"
     a: "En el trabajo para el que existen. El estructural protege en ataque interior y se refiere a NFPA 1970; tiene ala trasera y trabaja con el ERA. El forestal es más ligero, tiene ala completa y se refiere a NFPA 1950. Nuestro Wildland FH911H declara NFPA 1977 ed. 1998."
-  - q: "¿Un casco industrial sirve para incendio?"
+  - q: "¿Puede una brigada usar casco industrial en un incendio?"
     a: "Sirve para conatos, si tu análisis de riesgo así lo define, pero no para ataque interior. La brigada industrial se rige por NOM-002-STPS-2010. Si tu gente entra a combatir dentro de una nave, necesita un casco estructural con ERA, como el Bullard LTX."
   - q: "¿Cómo sé si el casco es compatible con mi ERA?"
     a: "Probándolos juntos. Dinos la marca y el modelo de tu máscara y revisamos que selle bien, que el visor no la empuje y que la monja y el cuello del chaquetón cierren. El Sköld Viking declara compatibilidad con ERA, pero aun así lo probamos con tu equipo."

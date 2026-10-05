@@ -39,7 +39,7 @@ De esa respuesta depende una diferencia de precio que puede ser de tres a cinco 
 
 **El traje estructural está hecho para entrar; el de brigadista, para controlar y salir.**
 
-Todo lo demás —capas, telas, certificaciones, precio— se desprende de ahí.
+Todo lo demás (capas, telas, certificaciones y presupuesto) se desprende de ahí.
 
 ## Comparación directa
 
@@ -67,7 +67,7 @@ Quita una y ya no es un traje estructural, aunque en la foto se vea idéntico. U
 Aquí hay que separar dos cosas que se confunden todo el tiempo:
 
 - La **NOM-002-STPS-2010** te obliga, como patrón, a dotar de equipo de protección personal a los integrantes de tu brigada contra incendio (cláusula 5.9), conforme a la **NOM-017-STPS-2024** vigente.
-- Ninguna de las dos te dice **qué modelo comprar**. Te dicen que el equipo debe corresponder al riesgo identificado en tu análisis. Ese análisis es tuyo, y es el documento que va a revisar la autoridad —y tu aseguradora— si algo sale mal.
+- Ninguna de las dos te dice **qué modelo comprar**. Te dicen que el equipo debe corresponder al riesgo identificado en tu análisis. Ese análisis es tuyo, y es el documento que van a revisar la autoridad y tu aseguradora si algo sale mal.
 
 Traducción práctica: si tu análisis de riesgo dice que la brigada solo controla conatos y evacúa, un equipo de brigadista es congruente. Si tu análisis contempla que la brigada entre a un espacio con fuego declarado, el equipo de brigadista **no es congruente** y ningún proveedor honesto te lo debería vender para eso.
 
@@ -87,7 +87,7 @@ El patrón que vemos: alguien compara una cotización de estructural certificado
 
 No está inflada. Está cotizando otra cosa.
 
-Un conjunto estructural carga con un composite de tres capas, un proceso de certificación del conjunto terminado ante un organismo acreditado y requisitos de interfaz entre piezas. Eso cuesta. Cuando el precio te parezca alto, la pregunta correcta no es *"¿por qué tan caro?"*, sino **"¿qué trae esta cotización que la otra no?"** — y esa se contesta pidiendo el composite capa por capa, con nombre comercial.
+Un conjunto estructural carga con un composite de tres capas, un proceso de certificación del conjunto terminado ante un organismo acreditado y requisitos de interfaz entre piezas. Eso cuesta. Cuando el precio te parezca alto, la pregunta correcta no es *"¿por qué tan caro?"*, sino **"¿qué trae esta cotización que la otra no?"**. Esa se contesta pidiendo el composite capa por capa, con nombre comercial.
 
 ## Un punto intermedio que casi nadie considera
 
@@ -95,8 +95,53 @@ Muchas plantas resuelven mejor con una **combinación**: equipo de brigadista pa
 
 Cuesta menos que estructurar a toda la brigada, protege de verdad a quien sí va a entrar, y es defendible frente a una auditoría porque corresponde con lo que hace cada rol. Si tu operación se parece a eso, pídelo cotizado en las dos partidas por separado: te va a servir para el presupuesto y para el expediente.
 
+## Y el traje forestal: las tres familias comparadas
+
+La pregunta completa casi nunca es de dos opciones. Un cuerpo municipal con zona serrana, o una planta con predio arbolado, también necesita saber dónde entra el **traje forestal**. La respuesta corta: **el estructural protege del calor de un interior, el forestal protege durante horas de trabajo físico al aire libre y el de brigadista cubre la primera respuesta en un centro de trabajo.** Son tres riesgos distintos, con tres construcciones distintas.
+
+| Criterio | [Estructural](/trajes/estructural/) | [Forestal](/trajes/forestal/) | [Brigadista (industrial)](/trajes/brigadista/) |
+| --- | --- | --- | --- |
+| Escenario | Incendio en edificación, ataque interior con ERA | Incendio de vegetación, línea de fuego, brecha | Conato en planta, almacén u oficina; control y evacuación |
+| Construcción | Tres capas: exterior, barrera de humedad y barrera térmica | Una capa de tela ignífuga inherente, ligera y transpirable | Menor alcance que el estructural; forro y gramaje según el modelo |
+| Exposición típica | Calor intenso y vapor, minutos | Calor radiante moderado y esfuerzo físico, horas | Exposición breve, sin ataque interior |
+| Norma de referencia | NFPA 1970 (antes NFPA 1971) | NFPA 1950 (antes NFPA 1977) | NOM-002-STPS-2010 y el análisis de riesgo del centro de trabajo |
+| Riesgo si se usa fuera de su escenario | En la línea forestal, golpe de calor en pocas horas | En un interior, sin barrera de humedad ni térmica | En ataque interior, protección insuficiente |
+| Modelos de referencia | [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/), [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/) | [Fire Ranger Explorer](/trajes/forestal/modelos/romak-fire-ranger-explorer/), [Fire Ranger Scout](/trajes/forestal/modelos/romak-fire-ranger-scout/) | [Romak Fire Combate Básico](/trajes/brigadista/modelos/romak-combate-basico/), [Lakeland OSX A10 Attack](/trajes/brigadista/modelos/lakeland-a10-attack/) |
+
+Dos reglas prácticas salen de la tabla. Primera: **el traje forestal no es un estructural ligero**; no tiene barrera de humedad ni barrera térmica y no debe entrar a una edificación. Segunda: **el estructural tampoco es un forestal reforzado**; su composite de tres capas retiene el calor del cuerpo y en una jornada de brecha agota a quien lo usa. Si tu corporación atiende los dos escenarios, necesita las dos dotaciones, no una intermedia.
+
+La mayoría de los modelos forestales se fabrican en Nomex IIIA de alrededor de 6 oz/yd²: el Fire Ranger Explorer (código BOMW1001) y el Scout declaran esa tela en su ficha. En brigada industrial, el Combate Básico BOM1001 declara Nomex IIIA de 7.5 oz/yd² con forro FR desmontable. Son datos del fabricante, y los encuentras completos en cada ficha técnica.
+
+## Cómo lo resuelve LORICA
+
+En LORICA cotizamos las tres familias por separado y, cuando la operación lo pide, en la misma propuesta con partidas distintas por rol:
+
+- **Ataque interior:** conjunto estructural con el composite declarado capa por capa y el estatus de certificación de cada modelo (por ejemplo, el Romak Fire Protector trae certificado UL MH14790). Revisa los [siete modelos estructurales](/trajes/estructural/).
+- **Línea forestal:** ropa de una capa con casco forestal, goggles y guantes de línea; el [kit forestal](/kits/kit-forestal/) reúne las piezas que se prueban juntas.
+- **Brigada industrial:** el [kit brigadista](/kits/kit-brigadista/) con traje, casco, capucha, guantes y botas, dimensionado al análisis de riesgo que exige la NOM-002-STPS-2010.
+
+Con más de 35 años en el sector, lo que más nos piden los compradores institucionales es justo esta separación: que cada partida diga para qué escenario es, qué norma declara y qué no cubre.
+
 ## Qué hacer ahora
 
-Mándanos dos datos —**qué dice tu análisis de riesgo** y **cuántos elementos por rol**— y te devolvemos las dos cotizaciones, la de brigadista y la de estructural, desglosadas por pieza. Con eso puedes decidir con números reales en lugar de con una foto.
+Mándanos dos datos, **qué dice tu análisis de riesgo** y **cuántos elementos por rol**, y te devolvemos las dos cotizaciones, la de brigadista y la de estructural, desglosadas por pieza. Con eso puedes decidir con números reales en lugar de con una foto.
 
 Y si la respuesta honesta resulta ser la más barata, en LORICA te la vamos a decir igual. Es la única forma de que la siguiente compra también nos la pidas a nosotros.
+
+## Preguntas frecuentes
+
+**¿Cuál es la diferencia entre un traje estructural, uno forestal y uno de brigadista?** El escenario para el que están hechos. El estructural tiene tres capas y es para ataque interior en edificaciones. El forestal es de una sola capa ignífuga para jornadas largas en vegetación; el de brigadista cubre la primera respuesta en un centro de trabajo, sin ataque interior.
+
+**¿Puedo usar un traje estructural en un incendio forestal?** No es recomendable. Su composite de tres capas retiene el calor corporal y en una jornada de línea de fuego provoca estrés térmico. Para vegetación se usa ropa forestal de una capa bajo la referencia NFPA 1950, que absorbió a la antigua NFPA 1977.
+
+**¿El traje de brigadista sirve para entrar a un incendio?** No. Está pensado para conato, control con extintor o hidrante y evacuación. Si el análisis de riesgo de tu centro de trabajo contempla ataque interior, la brigada de intervención necesita conjunto estructural y equipo de respiración autónoma.
+
+**¿Qué norma aplica a cada traje en México?** El estructural se especifica contra la NFPA 1970 (antes NFPA 1971); el forestal, contra la NFPA 1950 (antes NFPA 1977). La brigada industrial se dota conforme a la NOM-002-STPS-2010, numeral 5.9, y a la norma vigente de equipo de protección personal de la STPS.
+
+**¿Conviene comprar un solo tipo de traje para toda la corporación?** Solo si todos atienden el mismo escenario. Un cuerpo municipal con zona urbana y serrana necesita dotación estructural y forestal; una planta suele resolver con brigadista para el grueso de la brigada y algunos conjuntos estructurales para el equipo de intervención.
+
+## Fuentes
+
+- [NOM-002-STPS-2010, Condiciones de seguridad — Prevención y protección contra incendios en los centros de trabajo (DOF)](https://dof.gob.mx/normasOficiales/4228/stps/stps.htm): numerales 5.6 (brigadas en riesgo alto) y 5.9 (equipo de protección personal de los brigadistas).
+- [NFPA 1970, Standard on Protective Ensembles for Structural and Proximity Firefighting](https://www.nfpa.org/codes-and-standards/nfpa-1970-standard-development/1970) y [NFPA 1950, equipo para rescate técnico, operaciones médicas y combate forestal](https://www.nfpa.org/codes-and-standards/nfpa-1950-standard-development/1950).
+- Fichas de [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/), [Fire Ranger Explorer](/trajes/forestal/modelos/romak-fire-ranger-explorer/) y [Romak Fire Combate Básico](/trajes/brigadista/modelos/romak-combate-basico/): datos declarados por el fabricante.

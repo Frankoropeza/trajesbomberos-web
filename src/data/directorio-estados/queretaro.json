@@ -1,39 +1,39 @@
 {
- "lead": "En Querétaro hay 6 estaciones de bomberos en 6 municipios, con presencia en Querétaro, San Juan del Río y El Marqués. Se muestran dirección, teléfono oficial cuando existe, ubicación y la corporación que opera cada estación.",
+ "lead": "En Querétaro tenemos localizadas 14 estaciones de bomberos en 7 municipios. La capital reúne 6 bases de los Bomberos Voluntarios y San Juan del Río suma 3; en cada una verás dirección, ubicación, teléfono oficial cuando existe y la corporación que la opera.",
  "panorama": [
-  "El servicio de bomberos en Querétaro reúne cuerpos voluntarios, una dirección municipal y una estación aeroportuaria. Los voluntarios sostienen buena parte de la atención local, mientras Corregidora integra bomberos y protección civil. En El Marqués opera el servicio especializado del Aeropuerto Intercontinental de Querétaro.",
-  "Las estaciones están distribuidas entre municipios con operación propia, en lugar de concentrarse en una sola ciudad. Para quien coordina bomberos en Querétaro, esa dispersión pide compras compatibles entre cuerpos distintos. Querétaro y San Juan del Río aportan corporaciones con atención a rescate, y El Marqués suma el componente aeroportuario."
+  "Los bomberos en Querétaro son, sobre todo, voluntarios. El Heroico Cuerpo de Bomberos Voluntarios de Querétaro opera su sede y 5 estaciones en la capital, y el de San Juan del Río, su base principal con 2 estaciones más. Completan el mapa los voluntarios de Cadereyta de Montes y Tequisquiapan, la dirección municipal de Corregidora, el patronato de Pedro Escobedo y el SSEI del aeropuerto, en Colón.",
+  "La operación se concentra entre la capital y San Juan del Río, donde están casi dos tercios de las estaciones. Para quien equipa o capacita, eso significa tratar con corporaciones voluntarias que reparten equipo entre varias bases, mientras en el resto del estado cada municipio se atiende desde una sola estación, con su propio perfil de riesgo."
  ],
  "estacionesDuo": [
-  "En esta red destacan el Heroico Cuerpo de Bomberos Voluntarios de Querétaro, Bomberos de Cadereyta de Montes y la Dirección Municipal de Protección Civil y Bomberos de Corregidora. Las estaciones se ordenan por municipio; cuando la corporación cuenta con teléfono oficial, se muestra junto a sus datos."
+  "En la capital, las estaciones de Jurica, Vista Alegre, Eurípides, Mompaní y Parque Bicentenario dependen de los Bomberos Voluntarios de Querétaro; en San Juan del Río, Paseo Central y la Estación 2 responden a su Heroico Cuerpo de Bomberos. Todo va por municipio, con teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Los 6 cuerpos reportan incendios estructurales y atención prehospitalaria, con rescate vehicular presente en 5. El trabajo también contempla altura, espacios confinados y materiales peligrosos en casos puntuales. La presencia de salvamento aeroportuario obliga a considerar protección específica para ese entorno."
+  "El incendio estructural es el servicio más declarado, en 11 estaciones, y la capacitación aparece en 8, todas voluntarias. Le siguen atención prehospitalaria, incendios vehiculares y fugas de gas. El salvamento aeroportuario figura en Colón y San Juan del Río; altura y espacios confinados son casos aislados."
  ],
  "equipoDuo": [
-  "La atención estructural requiere <a href=\"/trajes/estructural/\">trajes estructurales</a> para el incendio cotidiano. El rescate vehicular pide prendas de maniobra, guantes y herramientas de extricación. Para El Marqués, el salvamento aeroportuario demanda equipo de aproximación; los materiales peligrosos requieren protección Hazmat según el riesgo identificado.",
-  "LORICA cotiza por partida con especificación técnica útil para comparar productos y armar el expediente de licitación. También atiende compra directa, emite factura CFDI 4.0, no exige compra mínima y envía al estado. Puedes integrar <a href=\"/trajes/extricacion/\">trajes de extricación</a> y accesorios en una misma solicitud."
+  "La base de cualquier dotación son <a href=\"/trajes/estructural/\">trajes estructurales</a>, porque el incendio en inmuebles domina entre las corporaciones. Las fugas de gas y los incendios vehiculares de la capital piden guantes y capuchas de buena barrera. El SSEI de Colón necesita <a href=\"/trajes/aproximacion/\">trajes de aproximación</a> y protección Hazmat para los materiales peligrosos que declara.",
+  "Si coordinas compras para varias estaciones voluntarias, LORICA cotiza por partida con ficha técnica, útil tanto para licitación como para compra directa. Emitimos CFDI 4.0, no hay compra mínima y enviamos a Querétaro. Para las bases con rescate vehicular, suma <a href=\"/trajes/extricacion/\">trajes de extricación</a> en la misma solicitud."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Querétaro y dónde están?",
-   "a": "Hay 6 estaciones de bomberos en Querétaro localizadas en Cadereyta de Montes, Corregidora, El Marqués, Querétaro, San Juan del Río y Tequisquiapan. La página reúne los datos de contacto y ubicación disponibles para ubicar a la corporación que corresponde a cada municipio."
+   "a": "Tenemos localizadas 14 estaciones de bomberos en Querétaro, repartidas en 7 municipios. La capital tiene 6 y San Juan del Río 3; Cadereyta de Montes, Colón, Corregidora, Pedro Escobedo y Tequisquiapan cuentan con una cada uno. Si falta alguna, escríbenos."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Querétaro?",
-   "a": "Los bomberos en Querétaro son operados principalmente por cuerpos voluntarios, además de una dirección municipal en Corregidora y el servicio aeroportuario de El Marqués. Cada corporación tiene una función propia dentro de su municipio o instalación, por eso conviene contactar a la que corresponda."
+   "a": "Predominan los voluntarios: 11 estaciones pertenecen a cuerpos voluntarios de la capital, San Juan del Río, Cadereyta de Montes y Tequisquiapan. Corregidora tiene dirección municipal, Pedro Escobedo opera mediante un patronato y el aeropuerto, en Colón, cuenta con su propio SSEI."
   },
   {
-   "q": "¿Cómo contacto una estación de bomberos en Querétaro para una gestión?",
-   "a": "Usa el teléfono oficial mostrado cuando esté disponible para asuntos como una solicitud de información, coordinación institucional o entrega de apoyo. Para una emergencia en Querétaro marca 911. Los datos de ubicación ayudan a identificar la estación adecuada antes de comunicarte."
+   "q": "¿Cómo contacto a los bomberos en Querétaro para una gestión?",
+   "a": "Hay 4 estaciones con teléfono oficial: la sede de los voluntarios de la capital, Cadereyta de Montes, Tequisquiapan y el SSEI del aeropuerto. Úsalo para capacitación, donaciones o dictámenes; si la base no tiene número, acude a su corporación. En emergencia, marca 911."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Querétaro?",
-   "a": "Los bomberos en Querétaro reportan atención de incendios estructurales, rescate vehicular y atención prehospitalaria. Algunas corporaciones también incluyen protección civil, rescate en altura, espacios confinados, materiales peligrosos y salvamento aeroportuario, según el servicio declarado por cada una."
+   "a": "Sobre todo incendios estructurales, seguidos de atención prehospitalaria, rescate vehicular, incendios vehiculares y fugas de gas. El salvamento aeroportuario aparece en Colón y San Juan del Río, y la sede voluntaria de la capital suma rescate en altura y espacios confinados."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Querétaro?",
-   "a": "Una corporación de bomberos en Querétaro puede solicitar cotización para licitación o compra directa. LORICA prepara especificación técnica por partida, emite factura CFDI 4.0, no establece compra mínima y coordina el envío al estado para integrar el equipo requerido."
+   "a": "Con LORICA puedes comprar por licitación o de forma directa. Cada partida lleva su ficha técnica, la factura es CFDI 4.0 y no hay compra mínima, así que un cuerpo de una sola estación cotiza igual que uno con varias bases. El envío se hace a Querétaro."
   }
  ]
 }

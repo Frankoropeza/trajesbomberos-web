@@ -1,0 +1,128 @@
+{
+  "slug": "tlaxcala",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Tlaxcala",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado de Tlaxcala (extraordinario)",
+    "fecha": "2013-07-05"
+  },
+  "ultimaReforma": null,
+  "urlOficial": "https://congresodetlaxcala.gob.mx/archivo/leyes2020/pdf/68_Ley_de_protecci.pdf",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Tlaxcala",
+    "url": "https://cjuridica.tlaxcala.gob.mx/images/Reglamentos/Reglamentos/Reglamento%20de%20la%20Ley%20de%20Proteccion%20Civil%20para%20el%20Estado%20de%20Tlaxcala%2017.06.2002.pdf",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil (Secretaría de Gobierno)",
+    "articulo": "Art. 12",
+    "cita": "Se crea la Coordinación Estatal de Protección Civil como un organismo con autonomía administrativa, financiera, de operación y gestión, dependiente de la Secretaría, que tendrá a su cargo las siguientes atribuciones:"
+  },
+  "lead": "La Ley de Protección Civil para el Estado de Tlaxcala establece qué deben hacer establecimientos, lugares de trabajo y edificaciones para prevenir emergencias. Esta página resume, artículo por artículo y con cita textual, lo que pide a empresas, brigadas y administradores.",
+  "panorama": [
+    "Publicada el 5 de julio de 2013, la ley es de orden público, interés social y observancia obligatoria en Tlaxcala (Art. 1). Pide a los poderes, municipios, sectores privado y social y a la población coadyuvar en la protección civil (Art. 2), y obliga a todo establecimiento, sea de competencia estatal o municipal, a mantener un programa interno autorizado por la Coordinación Estatal (Art. 42).",
+    "La coordinación ejecutiva del Sistema Estatal recae en la Secretaría de Gobierno por conducto de la Coordinación Estatal de Protección Civil (Art. 34); el sistema incluye de forma expresa a los cuerpos de bomberos y a las unidades internas. Cada municipio debe tener una Coordinación Municipal que atiende en primera instancia las emergencias de su territorio (Art. 16) y un sistema municipal propio (Art. 39)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Establecimientos de competencia estatal o municipal",
+      "obligacion": "Mantener de forma permanente un programa interno de emergencias estudiado, analizado y autorizado por la Coordinación Estatal.",
+      "articulo": "Art. 42",
+      "cita": "Los establecimientos a que se refiere este ordenamiento, sean de competencia estatal o municipal, tienen la obligación de contar permanentemente con un programa interno de emergencias, el cual deberá ser estudiado, analizado y autorizado por la Coordinación Estatal"
+    },
+    {
+      "sujeto": "Lugares de trabajo y de concentración masiva",
+      "obligacion": "Colocar en sitios visibles los equipos de seguridad y las señales preventivas e informativas que se requieran.",
+      "articulo": "Art. 43",
+      "cita": "En los establecimientos, lugares de trabajo y concentración masiva, deberán colocarse en lugares visibles, equipos de seguridad, señales preventivas e informativas que sean necesarias para el desempeño eficaz de las funciones que requieran."
+    },
+    {
+      "sujeto": "Patrones, propietarios o titulares de establecimientos",
+      "obligacion": "Procurar capacitar a sus empleados, dotarlos del equipo de respuesta y pedir asesoría oficial para su logística ante contingencias.",
+      "articulo": "Art. 44",
+      "cita": "Los patrones, propietarios o titulares de los establecimientos, procurarán capacitar a sus empleados y dotarlos del equipo necesario de respuesta, así como solicitar la asesoría de la Coordinación Estatal o municipal que corresponda"
+    },
+    {
+      "sujeto": "Vivienda plurifamiliar y conjuntos habitacionales",
+      "obligacion": "Elaborar e implementar un programa interno y señalizar zonas de seguridad y rutas de evacuación en lugares visibles.",
+      "articulo": "Art. 58",
+      "cita": "La vivienda plurifamiliar, conjuntos habitacionales y demás edificaciones, excepto casas habitación unifamiliares, están obligados a elaborar e implementar un programa interno de protección civil."
+    },
+    {
+      "sujeto": "Particulares con afluencia constante de personas",
+      "obligacion": "Contar con una unidad interna con personal propio y elaborar un programa interno conforme a la ley y su reglamento.",
+      "articulo": "Art. 92",
+      "cita": "Los particulares que por su uso y destino concentren o reciban una afluencia constante de personas, están obligadas a contar con una unidad interna de protección civil con su respectivo personal y elaborar un programa interno, en los términos que establezca esta Ley y su reglamento"
+    },
+    {
+      "sujeto": "Inmuebles con afluencia constante",
+      "obligacion": "Programar con las autoridades competentes al menos dos simulacros de protección civil al año.",
+      "articulo": "Art. 92",
+      "cita": "Asimismo como programar, en coordinación con las autoridades competentes, la práctica de simulacros de protección civil cuando menos dos veces al año."
+    },
+    {
+      "sujeto": "Establecimientos con programa interno",
+      "obligacion": "El Reglamento de 2002 pide que el programa interno incluya organización de brigadas, programa de capacitación, inventario de recursos y plan de simulacros.",
+      "articulo": "Art. 35 del Reglamento",
+      "cita": "VI.- Organización de brigadas y el papel de cada una de ellas; VII.- Programa de capacitación; VIII.- La capacidad de respuesta en función de los bienes y servicios con los que cuenten; IX.- Inventario de los recursos económicos, materiales y humanos disponibles; X.- Directorio de emergencia; XI.- Plan de realización de simulacros;"
+    },
+    {
+      "sujeto": "Establecimientos en general",
+      "obligacion": "Disponer de equipo contra incendio, sistema de alarma, salidas y escaleras de emergencia y señalización de rutas de evacuación, según el Reglamento.",
+      "articulo": "Art. 36 del Reglamento",
+      "cita": "Los establecimientos deberán disponer del equipamiento mínimo de prevención y auxilio, que se señala a continuación: I.- Equipo contra incendio; II.- Sistema de alarma; III.- Salidas, rampas y escaleras de emergencia; IV.- Señalamientos de rutas de evacuación por sismos e incendios;"
+    }
+  ],
+  "brigadasDuo": [
+    "En Tlaxcala, las unidades internas tienen por objeto elaborar, instrumentar y operar el programa interno en inmuebles públicos, privados y sociales (Art. 42). Ese programa se compone del plan operativo de la unidad interna, el plan de continuidad de operaciones y el plan de contingencias (Art. 57). La unidad puede ser asesorada por una persona física o moral acreditada, según el reglamento (Art. 59).",
+    "Quienes reciben afluencia constante de personas deben programar, con las autoridades, al menos dos simulacros al año (Art. 92). Los patrones procurarán capacitar a sus empleados y pueden pedir asesoría a la Coordinación Estatal o municipal (Art. 44); ambas asesoran a empresas y asociaciones para integrar sus unidades internas y organizar grupos voluntarios (Art. 95)."
+  ],
+  "equipoDuo": [
+    "La ley tlaxcalteca pide colocar equipos de seguridad y señalización visibles en establecimientos y lugares de trabajo (Art. 43) y dotar a los empleados del equipo necesario de respuesta (Art. 44), sin enlistarlo. Además reconoce a los cuerpos de bomberos como integrantes del Sistema Estatal (Art. 34). Para brigadas internas, la NOM-002-STPS-2010 es la norma federal de referencia contra incendios.",
+    "En LORICA ofrecemos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/trajes/estructural/\">trajes estructurales</a> para cuerpos de bomberos. La NOM-017-STPS-2024, norma federal de equipo de protección personal, orienta la selección de casco, guantes, botas y protección respiratoria según los riesgos que identifique el programa interno."
+  ],
+  "sancionesDuo": [
+    "El artículo 112 contempla amonestación, cancelación de permisos o autorizaciones, suspensión o cancelación de obras, actividades o servicios, multa, clausura temporal o definitiva, parcial o total, y arresto administrativo. La autoridad puede imponer varias a la vez, sin perjuicio de otras responsabilidades (Art. 113)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Tlaxcala y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil para el Estado de Tlaxcala (Decreto 178, Periódico Oficial del 5 de julio de 2013), que el Congreso difunde en su portal de leyes. Mientras no se emita un reglamento nuevo, su artículo quinto transitorio mantiene aplicables las disposiciones reglamentarias previas, como el Reglamento de 2002 que publica la Consejería Jurídica del Ejecutivo."
+    },
+    {
+      "q": "¿Quién debe tener programa interno en Tlaxcala?",
+      "a": "Todos los establecimientos, sean de competencia estatal o municipal, con un programa autorizado por la Coordinación Estatal (Art. 42). También la vivienda plurifamiliar y las edificaciones distintas a casa habitación unifamiliar (Art. 58), y quienes reciben afluencia constante de personas (Art. 92)."
+    },
+    {
+      "q": "¿Qué pide la ley sobre unidades internas y simulacros?",
+      "a": "El artículo 92 pide a los particulares con afluencia constante de personas contar con una unidad interna integrada por su propio personal y programar, en coordinación con las autoridades, simulacros de protección civil cuando menos dos veces al año."
+    },
+    {
+      "q": "¿Qué autorización necesita una obra nueva antes de operar en Tlaxcala?",
+      "a": "Para usos de suelo de impacto regional, la Coordinación Estatal emite un dictamen de protección civil, y al concluir la construcción se requiere autorización de la Secretaría para iniciar operaciones (Art. 96). Las actividades estatales que puedan generar fenómenos perturbadores también requieren autorización (Art. 97)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Tlaxcala?",
+      "a": "La ley solo habla de equipo necesario de respuesta y de equipos de seguridad visibles. En la práctica, una brigada suele necesitar casco, guantes, botas, chaleco de alta visibilidad, botiquín, extintores y lámparas, definidos con la NOM-002-STPS-2010 y el análisis de riesgos del establecimiento."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Tlaxcala · Ley de Protección Civil para el Estado de Tlaxcala (PDF)",
+      "url": "https://congresodetlaxcala.gob.mx/archivo/leyes2020/pdf/68_Ley_de_protecci.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Tlaxcala · Leyes del Estado",
+      "url": "https://congresodetlaxcala.gob.mx/leyes-del-estado-tlaxcala/"
+    },
+    {
+      "nombre": "Consejería Jurídica del Ejecutivo de Tlaxcala · Ley de Protección Civil para el Estado de Tlaxcala (PDF)",
+      "url": "https://cjuridica.tlaxcala.gob.mx/images/leyes/Leyes%20Estatales/Ley%20de%20Proteccion%20Civil%20para%20el%20Estado%20de%20Tlaxcala%2005-07-2013.pdf"
+    },
+    {
+      "nombre": "Consejería Jurídica del Ejecutivo de Tlaxcala · Reglamento de la Ley de Protección Civil para el Estado de Tlaxcala (PDF)",
+      "url": "https://cjuridica.tlaxcala.gob.mx/images/Reglamentos/Reglamentos/Reglamento%20de%20la%20Ley%20de%20Proteccion%20Civil%20para%20el%20Estado%20de%20Tlaxcala%2017.06.2002.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

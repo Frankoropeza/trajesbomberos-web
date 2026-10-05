@@ -1,0 +1,124 @@
+{
+  "slug": "veracruz",
+  "nombreOficial": "Ley de Protección Civil y la Reducción del Riesgo de Desastres para el Estado de Veracruz de Ignacio de la Llave",
+  "numero": "856",
+  "publicacion": {
+    "medio": "Gaceta Oficial, Órgano del Gobierno Constitucional del Estado de Veracruz de Ignacio de la Llave",
+    "fecha": "2013-08-01"
+  },
+  "ultimaReforma": "2025-10-15",
+  "urlOficial": "https://www.legisver.gob.mx/leyes/LeyesPDF/LEY_DE_PROTECCION_CIVIL_Y_LA_REDUCCION_DE_RIESGOS_DE_DESASTRES_15-10-2025.pdf",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil y la Reducción del Riesgo de Desastres para el Estado de Veracruz de Ignacio de la Llave",
+    "url": "https://www.veracruz.gob.mx/proteccioncivil/wp-content/uploads/sites/5/2024/05/Gac2014-044-Jueves-30-Ext-Reglamento-de-la-Ley-Numero-856.pdf",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Secretaría de Protección Civil del Gobierno del Estado",
+    "articulo": "Art. 6",
+    "cita": "La aplicación de la presente Ley corresponde al Gobernador del Estado, por conducto de la Secretaría, y a las dependencias, entidades y organismos que forman parte del Sistema Estatal, así como a los Ayuntamientos."
+  },
+  "lead": "La Ley 856 de Protección Civil y la Reducción del Riesgo de Desastres rige en Veracruz desde 2013. Aquí se explica, artículo por artículo, qué pide a empresas, inmuebles concurridos y organizadores de eventos, con citas del texto oficial para quien coordina brigadas.",
+  "panorama": [
+    "Publicada en la Gaceta Oficial el 1 de agosto de 2013, con su decreto más reciente del 15 de octubre de 2025, la ley es de observancia obligatoria en todo el territorio veracruzano. Sus sujetos obligados son propietarios, poseedores, representantes legales y administradores de establecimientos e instalaciones fijas y móviles de los sectores público, privado o social (Art. 82).",
+    "El Gobernador aplica la ley por conducto de la Secretaría de Protección Civil, que organiza y opera el Sistema Estatal (Arts. 6 y 29). Cada municipio integra su propio sistema, coordinado por el Presidente Municipal (Art. 33), y cada ayuntamiento establece una Unidad Municipal (Art. 47), que es la que revisa y autoriza los Programas Internos de los inmuebles de su territorio (Art. 65)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Fábricas, comercios, hospitales y sitios de afluencia masiva",
+      "obligacion": "Integrar una Unidad Interna que formule y opere el Programa Interno del inmueble, conforme a la ley, su Reglamento y los lineamientos de la Secretaría.",
+      "articulo": "Art. 62",
+      "cita": "o concentración masiva de personas deberán contar con una Unidad Interna que formulará y operará el Programa Interno respectivo. Lo anterior deberá realizarse de conformidad con lo dispuesto en esta Ley, su Reglamento y los lineamientos establecidos por la Secretaría."
+    },
+    {
+      "sujeto": "Inmuebles con Unidad y Programa Internos",
+      "obligacion": "Tener salidas de emergencia, escaleras de emergencia si hay tres o más niveles, y colocar a la vista equipos de seguridad, señales y luces de emergencia.",
+      "articulo": "Art. 63",
+      "cita": "deberán contar con salidas de emergencia y, en el caso de aquellos con tres o más niveles, con escaleras de emergencia; a su vez, los propietarios o poseedores de dichas edificaciones deberán colocar en sitios visibles equipos de seguridad, señales informativas, preventivas, restrictivas y de obligación y luces de emergencia"
+    },
+    {
+      "sujeto": "Empresas de mediano o alto riesgo",
+      "obligacion": "Incluir en su Programa Interno un análisis de riesgo y un plan de emergencia externo para cuando el evento rebase los límites del inmueble.",
+      "articulo": "Art. 64",
+      "cita": "Las empresas clasificadas como de mediano o de alto riesgo, de acuerdo con el Reglamento de esta Ley, las Normas Oficiales Mexicanas y los Tratados Internacionales aplicables, al elaborar su Programa Interno, deberán contar con el análisis de riesgo e incluir un plan de emergencia externo"
+    },
+    {
+      "sujeto": "Propietarios o poseedores de inmuebles",
+      "obligacion": "Someter el Programa Interno a revisión y autorización de la Unidad Municipal; puede elaborarlo un Tercero Acreditado.",
+      "articulo": "Art. 65",
+      "cita": "Los Programas Internos serán revisados, analizados y, en su caso, autorizados por la Unidad Municipal correspondiente. Podrán ser elaborados por una persona física o moral que cuente con registro como Tercero Acreditado"
+    },
+    {
+      "sujeto": "Administradores, gerentes y arrendatarios de inmuebles",
+      "obligacion": "Efectuar como mínimo un simulacro de emergencia al año, planeado según los riesgos del inmueble, y dar aviso a las autoridades de protección civil.",
+      "articulo": "Art. 72",
+      "cita": "Los administradores, gerentes, propietarios, arrendatarios o poseedores de inmuebles están obligados a realizar simulacros para atención de emergencias por lo menos una vez al año, debiendo informarlo a las autoridades de protección civil."
+    },
+    {
+      "sujeto": "Unidades internas de protección civil",
+      "obligacion": "Según el Reglamento, la unidad interna realiza simulacros al menos cada seis meses y procura la participación del personal y de las autoridades.",
+      "articulo": "Art. 31 del Reglamento",
+      "cita": "Llevar a cabo la realización de simulacros por lo menos cada seis meses; y asegurar el interés y la participación del personal y de las autoridades en los mismos."
+    },
+    {
+      "sujeto": "Unidades internas: organización de brigadas",
+      "obligacion": "La unidad interna se estructura con jefe de inmueble, jefes de piso y brigadistas, y forma brigadas de incendios, primeros auxilios, evacuación y rescate.",
+      "articulo": "Art. 31 del Reglamento",
+      "cita": "IV. Organización de brigadas: a). Prevención y combate de incendios; b). Primeros auxilios; c). Evacuación de inmuebles, y d). Búsqueda, rescate y salvamento, entre otras."
+    },
+    {
+      "sujeto": "Establecimientos e inmuebles en general",
+      "obligacion": "Disponer de extintores y detectores de humo en lugares despejados y señalizados, para que puedan localizarse y usarse de inmediato.",
+      "articulo": "Art. 83, fr. II",
+      "cita": "Tener extintores y detectores de humo, conforme a las disposiciones normativas aplicables, establecidos en lugares despejados de obstáculos que impidan o dificulten su uso y señalizados para permitir su rápida localización"
+    }
+  ],
+  "brigadasDuo": [
+    "El artículo 66 detalla el contenido mínimo del Programa Interno veracruzano: instalación de la Unidad Interna, análisis de riesgos y formación de brigadas; inventario de recursos; equipos de seguridad; programa de adiestramiento y capacitación, y programa de talleres, ejercicios y simulacros. También pide convenios de colaboración con los cuerpos de bomberos y autoridades de emergencia externos.",
+    "La ley define la brigada como un grupo organizado y capacitado para alertamiento, primeros auxilios, combate a conatos de incendio, evacuación y rescate, y admite brigadas comunitarias, de unidades internas o de grupos voluntarios (Art. 5, fr. VII). Los inmuebles deben simular al menos una vez al año (Art. 72); en los Centros de Atención Infantil, al menos cada dos meses (Art. 84, fr. VI)."
+  ],
+  "equipoDuo": [
+    "La ley veracruzana nombra equipo concreto: rutas de evacuación, alarmas, equipo contra incendios, extintores, detectores de humo e iluminación de emergencia (Art. 83), además de un apartado de equipos de seguridad dentro del Programa Interno (Art. 66). La NOM-002-STPS-2010, norma federal, ayuda a definir cuántos extintores y qué brigadas requiere cada centro de trabajo.",
+    "Para la brigada que combate conatos o evacúa, en LORICA surtimos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> como cascos, guantes, botas y chalecos reflejantes. La NOM-017-STPS-2024, también federal, orienta la selección del equipo de protección personal de acuerdo con el riesgo que enfrenta cada integrante."
+  ],
+  "sancionesDuo": [
+    "Según el artículo 104, las infracciones pueden castigarse con suspensión de actividades o de eventos masivos, clausura temporal o definitiva, total o parcial, y multa. Antes, la autoridad puede apercibir o amonestar (Art. 101) y dictar suspensión o clausura temporal como medidas cautelares (Art. 102)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Veracruz y dónde la consulto?",
+      "a": "Es la Ley Número 856 de Protección Civil y la Reducción del Riesgo de Desastres para el Estado de Veracruz de Ignacio de la Llave, publicada el 1 de agosto de 2013; el texto vigente, con decreto del 15 de octubre de 2025, está en el sitio de la Legislatura. Su Reglamento (Gaceta Oficial del 30 de enero de 2014) se descarga en el portal de la Secretaría de Protección Civil."
+    },
+    {
+      "q": "¿Quién debe tener Unidad Interna y Programa Interno en Veracruz?",
+      "a": "El artículo 62 incluye a fábricas, industrias, comercios, oficinas, escuelas, hospitales, cines, gasolineras, plazas comerciales y, en general, inmuebles con afluencia masiva, además de oficinas públicas. La Unidad Municipal revisa y autoriza cada Programa Interno (Art. 65)."
+    },
+    {
+      "q": "¿Cada cuándo hay que hacer simulacros y qué debe incluir la parte de brigadas?",
+      "a": "La regla general es un simulacro al año como mínimo, informado a la autoridad (Art. 72). El Programa Interno debe prever la formación de brigadas, un programa de adiestramiento y capacitación y otro de talleres, ejercicios y simulacros (Art. 66, fr. IV)."
+    },
+    {
+      "q": "¿Qué necesita un organizador de eventos masivos en Veracruz?",
+      "a": "Presentar un programa específico con rutas de evacuación, procedimientos de alertamiento, evacuación y solicitud de auxilio, y pedir la verificación de sus instalaciones antes de la licencia. Las ferias y espectáculos requieren además una póliza de responsabilidad civil y daños a terceros (Art. 74)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Veracruz?",
+      "a": "La ley exige al inmueble equipo contra incendios, extintores, detectores de humo, alarmas e iluminación de emergencia (Art. 83). Para las personas brigadistas, lo usual es casco, guantes, botas, chaleco de alta visibilidad y botiquín, elegidos con la NOM-002-STPS-2010 y el análisis de riesgo."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Veracruz · Ley de Protección Civil y la Reducción del Riesgo de Desastres (PDF)",
+      "url": "https://www.legisver.gob.mx/leyes/LeyesPDF/LEY_DE_PROTECCION_CIVIL_Y_LA_REDUCCION_DE_RIESGOS_DE_DESASTRES_15-10-2025.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Veracruz · Leyes estatales vigentes",
+      "url": "https://www.legisver.gob.mx/Inicio.php?p=le"
+    },
+    {
+      "nombre": "Secretaría de Protección Civil de Veracruz · Reglamento de la Ley 856, Gaceta Oficial Núm. Ext. 044 (PDF)",
+      "url": "https://www.veracruz.gob.mx/proteccioncivil/wp-content/uploads/sites/5/2024/05/Gac2014-044-Jueves-30-Ext-Reglamento-de-la-Ley-Numero-856.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

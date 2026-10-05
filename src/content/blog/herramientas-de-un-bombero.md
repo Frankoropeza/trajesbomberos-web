@@ -65,7 +65,7 @@ La tabla no prescribe una maniobra. Sirve para que inventario, capacitación y r
 
 La [hacha de bombero](/herramientas/hacha-de-bombero/) combina corte y golpe según su cabeza y mango; la [barra Halligan](/herramientas/barra-halligan/) aporta extremos para apalancamiento; el [gancho bichero](/herramientas/gancho-bichero/) permite alcance, jalado o revisión desde una posición definida. El juego no convierte estas operaciones en seguras por sí mismo: se emplea únicamente bajo los procedimientos de entrada forzada y con la capacitación de la corporación. La guía de [entrada forzada con hacha, barra Halligan y gancho](/blog/entrada-forzada-hacha-halligan-gancho/) compara las tres herramientas con los datos de ficha.
 
-Compara cada una por la tarea, espacio de giro, distancia posible, material, longitud y método de sujeción. La ficha de la Halligan Romak HAC1007 declara acero inoxidable, 91 cm de largo, 90 cm de extremo a extremo y 6 lb (3.36 kg); esos datos sirven para comprobar el soporte de la unidad, no para afirmar que toda barra tiene esa medida. Las fichas de herramienta manual no publican una norma específica general; se conserva la especificación declarada por modelo.
+Compara cada una por la tarea, espacio de giro, distancia posible, material, longitud y método de sujeción. La ficha de la Halligan Romak HAC1007 declara acero inoxidable, 91 cm de largo, 90 cm de extremo a extremo y 6 lb (3.36 kg). Esos datos sirven para comprobar el soporte de la unidad, no para afirmar que toda barra tiene esa medida. Las fichas de herramienta manual no publican una norma específica general; se conserva la especificación declarada por modelo.
 
 ## Ventilación, revisión e iluminación
 

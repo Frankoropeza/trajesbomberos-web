@@ -36,7 +36,7 @@ imagenAlt: "Trajes estructurales, de brigadista, forestales y aluminizados colga
 
 Cada semana entra el mismo mensaje: *"Buenas tardes, necesito cotización de trajes para bomberos, ¿cuánto cuesta el traje completo?"*. Y cada semana la respuesta empieza con una pregunta, no con un precio: **¿para qué operación?**
 
-No es evasiva comercial. Es que en el mercado mexicano conviven seis familias de traje que se ven parecidas en una foto, cuestan hasta cinco veces distinto entre sí y protegen frente a riesgos que no tienen nada que ver. Si mandamos un precio antes de saber cuál te toca, lo más probable es que te mandemos el número equivocado.
+No es evasiva comercial. Es que en el mercado mexicano conviven seis familias de traje que se ven parecidas en una foto y protegen frente a riesgos que no tienen nada que ver. Si mandamos un precio antes de saber cuál te toca, lo más probable es que te mandemos el número equivocado.
 
 ## Primero la operación, después el catálogo
 
@@ -80,7 +80,7 @@ Una oferta que no traiga esto no se puede comparar con otra. Ni siquiera es una 
 
 ## Tallas: donde se pierde más dinero del que crees
 
-Un traje mal tallado se usa mal, se rompe antes y —en el caso estructural— deja abierta la zona crítica.
+Un traje mal tallado se usa mal, se rompe antes y, en el caso estructural, deja abierta la zona crítica.
 
 - La **interfaz entre chaquetón y pantalonera** es donde entra el calor. Mezclar piezas de cortes distintos porque salían más baratas es la forma más silenciosa de degradar un conjunto.
 - El **largo de chaquetón** va típicamente de 28" a 35". Corto da movilidad, largo da cobertura. Se decide por operación, no por costumbre.
@@ -100,11 +100,23 @@ Si vas a equipar más de diez elementos, pide guía de tallas del fabricante ant
 
 1. **Comparar precios entre familias distintas.** Un brigadista siempre le va a ganar a un estructural en precio; nunca en protección. No están compitiendo.
 2. **Comprar por foto.** Un aluminizado se ve impresionante. Eso no lo hace el equipo correcto para tu riesgo.
-3. **Pedir "lo que exige la norma" sin decir cuál.** Las NOM de la STPS te obligan a dotar de equipo conforme a tu análisis de riesgo; no te dictan un modelo. La norma de producto —NFPA— es otra cosa. Ambas te van a hacer falta.
+3. **Pedir "lo que exige la norma" sin decir cuál.** Las NOM de la STPS te obligan a dotar de equipo conforme a tu análisis de riesgo; no te dictan un modelo. La norma de producto, NFPA, es otra cosa. Ambas te van a hacer falta.
 4. **Usar el traje estructural para todo.** Cada extricación hecha con el estructural te contamina y desgasta el equipo más caro de la estación. Para eso existe el [traje de extricación](/trajes/extricacion/).
 
 ## Qué hacer ahora
 
-Si ya tienes claras las cuatro respuestas del principio, entra directo a la ficha de tu familia y pide la cotización con los cinco datos de arriba. Si todavía no, mándanos las cuatro respuestas en un mensaje y en LORICA te decimos qué familia corresponde —incluso cuando la respuesta honesta sea la más barata.
+Si ya tienes claras las cuatro respuestas del principio, entra directo a la ficha de tu familia y pide la cotización con los cinco datos de arriba. Si todavía no, mándanos las cuatro respuestas en un mensaje y en LORICA te decimos qué familia corresponde, aunque la respuesta sea la opción más sencilla.
 
 Preferimos perder el margen que venderte el traje equivocado. En este sector, una compra mal hecha no se paga con dinero.
+
+## Preguntas frecuentes
+
+**¿Cómo sé qué familia de traje necesita mi operación?** Responde cuatro preguntas: qué hace tu gente al sonar la alarma, cuánto dura la exposición, bajo qué reglas se compra y cuántos elementos equipas. Con esas respuestas la familia se define sola.
+
+**¿En qué se diferencian el traje estructural y el de brigadista?** El estructural lleva tres capas para ataque interior en edificación. El de brigadista tiene menor gramaje y otro alcance, pensado para controlar conatos y evacuar. Se parecen a la vista, no en protección.
+
+**¿Qué datos debe traer una cotización de traje para bomberos?** Composite capa por capa, norma y edición, titular de la certificación, desglose por pieza y plazo de entrega por escrito. Sin esos cinco datos dos ofertas no se pueden comparar.
+
+**¿Qué norma de producto aplica hoy al traje estructural?** La NFPA 1970, que absorbió a la NFPA 1971. Las NOM de la STPS obligan a dotar equipo conforme al análisis de riesgo, pero no dictan un modelo.
+
+**¿Qué costos no aparecen en la cotización del traje?** Lavado y mantenimiento conforme a la NFPA 1850, reposición por pieza, fecha de fabricación del lote y capacitación de uso. Conviene presupuestarlos desde la compra.

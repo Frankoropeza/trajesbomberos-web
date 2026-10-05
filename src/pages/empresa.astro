@@ -16,7 +16,7 @@ const path = '/empresa/';
 const keywords = ['proveedor de trajes para bomberos', 'empresa', 'México'] as const;
 const title = 'Proveedor de trajes para bomberos y equipo contra incendio';
 const description =
-  'Proveedor de trajes para bomberos en México: una sola especialidad, cotización por escrito con ficha técnica, factura CFDI y soporte para licitación.';
+  'Proveedor de trajes para bomberos con una sola especialidad: cotización por escrito con ficha técnica, factura CFDI y soporte para licitación.';
 
 const menuItems = [
   { label: 'Proveedor de trajes para bomberos', href: '#que-hacemos' },
@@ -76,8 +76,8 @@ const entregables = [
   h1Accent="trajes para bomberos"
   lead={`${MARCA.completo}: una sola línea de producto, atendida con profundidad técnica desde hace ${MARCA.experiencia}. Cotizamos para cuerpos de bomberos, brigadas industriales, dependencias de gobierno y voluntarios en ${MARCA.cobertura}.`}
   descRight={[
-    'La mayoría de los proveedores de seguridad industrial venden el traje como una partida más del catálogo. En LORICA lo trabajamos al revés: el traje es la especialidad, y todo lo demás —casco, botas, guantes— es complemento del conjunto.',
-    'Eso cambia la conversación. En lugar de mandarte una lista de precios, te ayudamos a especificar: qué familia corresponde a tu operación, qué composite pedir, qué exigir en la ficha técnica y cómo comparar dos cotizaciones que dicen lo mismo y no son lo mismo.',
+    'La mayoría de los proveedores de seguridad industrial venden el traje como una partida más del catálogo. En LORICA lo trabajamos al revés: el traje es la especialidad, y el casco, las botas y los guantes son complementos del conjunto.',
+    'Eso cambia la conversación. En lugar de mandarte una lista de precios, te ayudamos a especificar: qué familia corresponde a tu operación, qué composite pedir y qué exigir en la ficha técnica. También te mostramos cómo comparar dos cotizaciones que dicen lo mismo y no son lo mismo.',
   ]}
   meta={[MARCA.experienciaCorta, 'Presencia en los 32 estados', 'Cotización por escrito con ficha técnica', 'Factura CFDI']}
   heroImage={HERO_GENERICO}
@@ -122,7 +122,7 @@ const entregables = [
         />
         <ul class="empresa-list empresa-list--compact">
           {entregables.map((e) => (
-            <li><strong>{e.nombre}</strong> — {e.nota}</li>
+            <li><strong>{e.nombre}</strong>: {e.nota}</li>
           ))}
         </ul>
       </section>
@@ -138,7 +138,7 @@ const entregables = [
             <h3>Fabricantes de traje</h3>
             <ul class="empresa-list empresa-list--compact">
               {MARCAS_TRAJE.map((m) => (
-                <li><strong>{m.nombre}</strong> — {m.nota}</li>
+                <li><strong>{m.nombre}</strong>: {m.nota}</li>
               ))}
             </ul>
           </div>
@@ -146,7 +146,7 @@ const entregables = [
             <h3>Materiales del composite</h3>
             <ul class="empresa-list empresa-list--compact">
               {MARCAS_MATERIAL.map((m) => (
-                <li><strong>{m.nombre}</strong> — {m.nota}</li>
+                <li><strong>{m.nombre}</strong>: {m.nota}</li>
               ))}
             </ul>
           </div>

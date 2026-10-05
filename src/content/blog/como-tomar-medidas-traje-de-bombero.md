@@ -69,7 +69,7 @@ El largo de chaquetón no se decide sólo por estatura. La persona debe levantar
 
 Para guantes, mide la circunferencia de la mano dominante alrededor de los nudillos, sin incluir el pulgar, y el largo desde la muñeca hasta la punta del dedo medio. Anota también si la tarea exige abrir una válvula, operar radio o trabajar con herramienta. Los [guantes para bombero](/guantes/) se prueban con el puño de la prenda: un guante que ajusta bien solo puede perder cobertura o destreza cuando se integra al conjunto.
 
-El pie se mide de talón a dedo más largo, con el calcetín de trabajo y ambos pies apoyados. Usa la lectura mayor y compárala únicamente con la tabla declarada por el modelo. No traslades un número de bota de otra marca: horma, forro, plantilla y sistema de talla pueden cambiar. Prueba las [botas para bombero](/botas/) con el pantalón y camina, sube un escalón y flexiona; talón que levanta, dedos que golpean la puntera o caña que limita el paso requieren corregir antes de liberar la partida.
+El pie se mide de talón a dedo más largo, con el calcetín de trabajo y ambos pies apoyados. Usa la lectura mayor y compárala únicamente con la tabla declarada por el modelo. No traslades un número de bota de otra marca: horma, forro, plantilla y sistema de talla pueden cambiar. Prueba las [botas para bombero](/botas/) con el pantalón y camina, sube un escalón y flexiona. Si el talón levanta, los dedos golpean la puntera o la caña limita el paso, corrige antes de liberar la partida.
 
 La medida de cuello confirma que cuello de prenda, [casco](/cascos/), capucha y máscara, cuando aplica, trabajen sin presión ni huecos. La [capucha para bombero](/capuchas/) no se resuelve con una medida aislada: se valida con casco, cuello y el movimiento de mirar arriba o hacia los lados. Registra si la persona usa lentes, barba que afecte un respirador ajustado o accesorios que cambien la interfaz, sin sustituir la prueba específica que requiera el programa de protección respiratoria.
 
@@ -95,7 +95,7 @@ El registro por elemento resuelve estas fallas. Conserva medidas, talla aceptada
 
 ## Servicio de tallas para dotaciones
 
-Para una dotación de varios turnos, agrupa la toma en un formato con tallas por persona, pero no conviertas la sesión en una talla única. Se puede tomar una muestra física para validar cortes, registrar ajustes y detectar quién requiere otra combinación. Para asesoría remota, solicitamos las medidas con el método anterior, fotografías de la etiqueta de la prenda vigente cuando exista y la descripción de operación; la aceptación final conserva una prueba de movilidad antes de asignar el conjunto.
+Para una dotación de varios turnos, agrupa la toma en un formato con tallas por persona, pero no conviertas la sesión en una talla única. Se puede tomar una muestra física para validar cortes, registrar ajustes y detectar quién requiere otra combinación. Para asesoría remota, solicitamos las medidas con el método anterior, fotografías de la etiqueta de la prenda vigente cuando exista y la descripción de operación. La aceptación final conserva una prueba de movilidad antes de asignar el conjunto.
 
 La reposición se solicita con el registro anterior y se verifica contra la pieza que continúa en servicio. Si se dañó sólo guante, bota, chaquetón o pantalonera, podemos cotizarlo por separado sin mínimo, cuidando talla e interfaz. Esto evita cambiar todo un conjunto por una sola pieza y mantiene trazabilidad cuando la corporación distribuye equipo entre distintos usuarios.
 

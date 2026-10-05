@@ -117,7 +117,7 @@ Antes de asignar el equipo, verifica que la persona usuaria conozca el orden de 
 
 ## Cómo lo cotizamos
 
-Cotizamos el conjunto completo o cualquier componente por pieza, sin mínimo de compra. Nos indicas operación, usuarios, tallas, equipo que ya tienen y si se trata de reposición; entregamos ficha técnica por partida para que chaquetón, pantalonera, tirantes, capucha, casco, guantes, botas, ERA y PASS queden identificados por separado. Ofrecemos asesoría de tallas, expediente para licitación y envío a todo México.
+Cotizamos el conjunto completo o cualquier componente por pieza, sin mínimo de compra. Nos indicas operación, usuarios, tallas, equipo que ya tienen y si se trata de reposición. Entregamos ficha técnica por partida para que chaquetón, pantalonera, tirantes, capucha, casco, guantes, botas, ERA y PASS queden identificados por separado. Ofrecemos asesoría de tallas, expediente para licitación y envío a todo México.
 
 Para [cotizar trajes para bomberos](/contacto/), comparte la operación, la configuración que debe permanecer en servicio y la función requerida del componente nuevo.
 

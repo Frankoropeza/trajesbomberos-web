@@ -55,7 +55,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre kits de equipo para bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir un kit: qué incluye, qué modelos forman el estructural, si sirve para cualquier incendio, si se puede cambiar una pieza y si el ERA viene dentro."
+      - "Sobre kits nos preguntan qué incluyen, qué modelos forman el estructural y si un kit sirve para cualquier incendio. También si se puede cambiar una pieza y si el ERA viene dentro."
       - "Si tu operación mezcla tareas, cuéntanos cuáles en el formulario y te decimos si conviene uno o dos kits. Se abre WhatsApp con tu consulta y te respondemos en día hábil."
   guias:
     eyebrow: "Blog técnico"

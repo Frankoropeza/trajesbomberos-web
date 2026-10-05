@@ -62,7 +62,7 @@ El UST LW declara fibra de vidrio con resina ignífuga termoestable, ajuste Sure
 
 El peso publicado es menor a 1.54 kg con ReTrack y menor a 1.77 kg con careta. Ese valor describe configuraciones concretas y no elimina la prueba de balance. Coloca la máscara, el visor seleccionado y una [lámpara para casco](/accesorios/lampara-de-casco/) para confirmar que el campo visual, el ajuste y el centro de gravedad sirven a la tarea.
 
-La ficha también describe acabado mate, componentes removibles para descontaminación y protección ocular conforme a ANSI/ISEA Z87.1. En ReTrack y careta, el material ocular declarado es poliarilato de alta temperatura con recubrimiento resistente a rayas; para goggles se declara policarbonato de 2.8 mm con recubrimiento antivaho y antirrayas, y correas de ajuste rápido de longitud y tensión. Estas opciones no se intercambian sin revisar la configuración: define cuál se recibe, comprueba su recorrido con la máscara y conserva las piezas removibles identificadas para no mezclar sistemas entre cascos.
+La ficha también describe acabado mate, componentes removibles para descontaminación y protección ocular conforme a ANSI/ISEA Z87.1. En ReTrack y careta, el material ocular declarado es poliarilato de alta temperatura con recubrimiento resistente a rayas. Para goggles se declara policarbonato de 2.8 mm con recubrimiento antivaho y antirrayas, y correas de ajuste rápido de longitud y tensión. Estas opciones no se intercambian sin revisar la configuración: define cuál se recibe, comprueba su recorrido con la máscara y conserva las piezas removibles identificadas para no mezclar sistemas entre cascos.
 
 ## Capucha y máscara de ERA: la prueba necesaria
 

@@ -64,9 +64,9 @@ const HAZMAT_PIEZAS: Pieza[] = [
     slug: 'traje-encapsulado-nivel-a', familia: 'hazmat', nombreCard: 'Traje encapsulado nivel A', nombre: 'Traje encapsulado nivel A',
     seoTitle: 'Traje encapsulado nivel A hermético a vapor químico', seoDescription: 'Traje encapsulado nivel A para respuesta Hazmat: cuándo se requiere barrera hermética a vapor, qué revisar en sus interfaces y cómo especificarlo. Cotiza.', keywords: ['traje encapsulado nivel a', 'traje encapsulado', 'traje hazmat nivel a'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje encapsulado nivel A', h1Accent: 'para vapor químico', lead: 'Barrera encapsulada para incidentes donde la inhalación y el contacto con vapor químico exigen la máxima protección del conjunto.',
-    descRight: ["Nivel A no es «más plástico»: es un encapsulado que protege piel y respiración con el ERA adentro. Lo cotizamos solo cuando tu análisis de riesgo lo pide, con la compatibilidad química del material, el visor, los guantes y las botas confirmada por escrito para tu sustancia.", "Antes de pedirlo, mándanos agente, concentración, temperatura y tiempo previsto de la maniobra: con esos cuatro datos te decimos si el nivel A es lo que necesitas o si te alcanza un nivel B, y te entregamos la ficha conforme a la NFPA 1990, edición 2022."],
+    descRight: ["Nivel A no es «más plástico»: es un encapsulado que protege piel y respiración con el ERA adentro. Lo cotizamos solo cuando tu análisis de riesgo lo pide, con la compatibilidad química del material, el visor, los guantes y las botas confirmada por escrito para tu sustancia.", "Antes de pedirlo, mándanos agente, concentración, temperatura y tiempo previsto de la maniobra. Con esos cuatro datos te decimos si necesitas nivel A o si te alcanza un nivel B, y te entregamos la ficha conforme a la NFPA 1990, edición 2022."],
     meta: ['Nivel A', 'Encapsulado', 'Vapor químico', 'NFPA 1990'],
-    resumen: ["El traje encapsulado nivel A se usa cuando el riesgo combina una atmósfera peligrosa para respirar con contacto cutáneo por vapor. Es una envolvente continua con visor, cierre y uniones, y el equipo de respiración autónoma va dentro, para que ningún componente quede expuesto al ambiente contaminado. Lo cotizamos a cuerpos de bomberos con unidad Hazmat y a brigadas industriales de plantas químicas.", "Se elige por el agente, no por el nivel escrito en la requisición: un material se comporta distinto según concentración, temperatura y duración de la exposición. Pide la tabla de compatibilidad del fabricante para tu escenario —o pídenosla a nosotros— y toma en cuenta el tiempo de colocación, la comunicación, la movilidad y la ruta de salida hacia descontaminación.", "Antes de decidir reúne agente, concentración posible, estado físico, presión, temperatura, volumen y tarea: reconocimiento, control, rescate y descontaminación exigen posturas y tiempos distintos. Con eso revisamos contigo la compatibilidad de traje, visor, cierre, guantes y botas; un resultado favorable para una sustancia no se extiende a mezclas ni a exposiciones más largas. Define también zona caliente, apoyo exterior, tiempo de aire y criterio de salida.", "La integridad depende de las interfaces: cierre completo, visor sin rayas ni opacidad, guantes probados por talla y botas con el traslape previsto. Ensaya colocación y retiro en zona limpia con el mismo ERA que usarás; en el incidente no debes descubrir que no alcanzas una válvula, no oyes la alarma o no puedes caminar con seguridad.", "La descontaminación se decide antes de entrar: con qué se controla el contaminante, dónde se retira el traje y quién ayuda. Después de cada uso inspecciona material, visor, cierre y uniones y registra agente, tiempo y condición; un daño, una exposición no evaluada o una contaminación que no se resuelva conforme al procedimiento lo dejan fuera de servicio."],
+    resumen: ["El traje encapsulado nivel A se usa cuando el riesgo combina una atmósfera peligrosa para respirar con contacto cutáneo por vapor. Es una envolvente continua con visor, cierre y uniones, y el equipo de respiración autónoma va dentro, para que ningún componente quede expuesto al ambiente contaminado. Lo cotizamos a cuerpos de bomberos con unidad Hazmat y a brigadas industriales de plantas químicas.", "Se elige por el agente, no por el nivel escrito en la requisición: un material se comporta distinto según concentración, temperatura y duración de la exposición. Pide la tabla de compatibilidad del fabricante para tu escenario, o pídenosla a nosotros, y toma en cuenta el tiempo de colocación, la comunicación, la movilidad y la ruta de salida hacia descontaminación.", "Antes de decidir reúne agente, concentración posible, estado físico, presión, temperatura, volumen y tarea: reconocimiento, control, rescate y descontaminación exigen posturas y tiempos distintos. Con eso revisamos contigo la compatibilidad de traje, visor, cierre, guantes y botas; un resultado favorable para una sustancia no se extiende a mezclas ni a exposiciones más largas. Define también zona caliente, apoyo exterior, tiempo de aire y criterio de salida.", "La integridad depende de las interfaces: cierre completo, visor sin rayas ni opacidad, guantes probados por talla y botas con el traslape previsto. Ensaya colocación y retiro en zona limpia con el mismo ERA que usarás; en el incidente no debes descubrir que no alcanzas una válvula, no oyes la alarma o no puedes caminar con seguridad.", "La descontaminación se decide antes de entrar: con qué se controla el contaminante, dónde se retira el traje y quién ayuda. Después de cada uso inspecciona material, visor, cierre y uniones, y registra agente, tiempo y condición. Un daño, una exposición no evaluada o una contaminación sin resolver lo dejan fuera de servicio."],
     puntosClave: ['Encapsulado hermético a vapor para protección de piel y vías respiratorias', 'Equipo de respiración autónoma dentro de la envolvente', 'Compatibilidad confirmada por sustancia, concentración y tiempo', 'Visor, cierre, guantes y botas son interfaces críticas', 'No equivale a protección contra fuego salvo declaración expresa', 'Requiere procedimiento de colocación, descontaminación y retiro'],
     images: [{ src: '/images/catalogo/hazmat/tipo-traje-encapsulado-nivel-a.avif', alt: 'Traje encapsulado nivel A para Hazmat' }],
     fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel de protección', valor: 'A, conforme al análisis de riesgo', nota: 'Máxima protección respiratoria y cutánea del conjunto' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'Consolidó referencias para trajes herméticos a vapor' }, { campo: 'Protección contra fuego', valor: 'No se asume', nota: 'Solo aplica si el fabricante declara protección flash' }] }, { grupo: 'Especificación', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración identificadas', nota: 'Dato indispensable para revisar compatibilidad' }, { campo: 'Respiración', valor: 'ERA dentro del encapsulado', nota: 'Se confirma compatibilidad dimensional y de uso' }, { campo: 'Interfaz', valor: 'Guantes, botas, visor y cierre', nota: 'Debe definirse el sellado y su inspección' }] }, { grupo: 'Servicio', filas: [{ campo: 'Inspección', valor: 'Antes y después de cada uso', nota: 'Revisar material, visor, cierre y uniones' }, { campo: 'Descontaminación', valor: 'Antes del retiro', nota: 'La secuencia depende del contaminante' }, { campo: 'Reutilización', valor: 'Según fabricante y condición', nota: 'No se reutiliza una barrera dañada o contaminada' }] }],
@@ -79,7 +79,7 @@ const HAZMAT_PIEZAS: Pieza[] = [
     relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Guantes para químicos compatibles', href: '/trajes/hazmat/guantes-quimicos/' }, { label: 'Familia Hazmat', href: '/trajes/hazmat/' }],
   },
   {
-    slug: 'traje-nivel-b', familia: 'hazmat', nombreCard: 'Traje nivel B', nombre: 'Traje químico nivel B', seoTitle: 'Traje químico nivel B Hazmat para salpicadura peligrosa', seoDescription: 'Traje hazmat nivel B para salpicadura peligrosa: diferencias con el encapsulado, compatibilidad de la barrera y configuración con ERA exterior. Cotiza.', keywords: ['traje químico nivel B', 'traje hazmat nivel b', 'traje nivel b'], eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel B', h1Accent: 'para salpicadura peligrosa', lead: 'Protección respiratoria autónoma y barrera química para operaciones con salpicadura, seleccionadas contra el agente y no por apariencia.', descRight: ["El nivel B protege la respiración con ERA exterior y la piel con una prenda elegida para salpicadura líquida. Lo cotizamos para tareas con contacto líquido esperado y agente identificado, con los guantes y las botas que sellan la manga y el tobillo.", "No es un nivel A económico: si tu evaluación dice que hay vapor que obliga a encapsular el ERA, el nivel B deja de ser la respuesta. Mándanos agente, concentración y tarea y te decimos cuál nivel corresponde antes de cotizar."], meta: ['Nivel B', 'Salpicadura química', 'ERA exterior', 'NFPA 1990'], resumen: ["Un traje químico nivel B combina prenda de barrera, guantes, botas y equipo de respiración autónoma cuando el aire necesita ser independiente pero la exposición de la piel es sobre todo salpicadura líquida. Equilibra protección y movilidad sin convertir una tarea líquida en una especificación de vapor que no corresponde.", "Para cotizar necesitamos agente, concentración, volumen posible, presión, temperatura y tarea. Con eso revisamos la tabla de compatibilidad, decidimos contigo si la prenda debe ser reutilizable o desechable y definimos el traslape con guantes y botas. El nivel termina donde empieza la incompatibilidad: no se extrapola de una sustancia a otra.", "En nivel B el aire autónomo protege la respiración y la prenda se elige por el contacto líquido previsto; por eso el ERA va por fuera y debe quedar accesible para su usuario y su compañero. Antes de entrar revisa arnés, correas, válvulas y presión sin que el traje los cubra. Si la evaluación marca vapor peligroso para todo el conjunto, esta configuración ya no aplica aunque el líquido sea lo visible.", "Para definir la barrera anota altura de salpicadura, presión de la línea o recipiente, posibilidad de rociado, temperatura, volumen y duración. Revisa cierre, puños, guantes y botas como una ruta continua: el traje puede resistir el agente y fallar por una manga mal unida. La talla debe permitirte agacharte, subir escalones y manipular el regulador sin tensar costuras; ensáyalo con el conjunto armado antes de firmar la compra.", "La salida exige descontaminar el exterior sin contaminar arnés, máscara ni persona: un área para retirar guantes, prenda y botas en el orden que aplique al agente, con un observador. Después inspecciona la barrera y el ERA por separado y no reutilices una pieza solo porque no se ve manchada; registra sustancia, tiempo, condición y limpieza para decidir el regreso a servicio."], puntosClave: ['ERA exterior con protección respiratoria autónoma', 'Barrera corporal elegida para salpicadura líquida', 'Sellado de manga, guante, bota y cierre definido en la orden', 'Compatibilidad por sustancia y condiciones de exposición', 'No es protección automática frente a vapor ni fuego', 'Retiro posterior a descontaminación'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con ERA exterior' }], fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel', valor: 'B conforme al análisis de riesgo', nota: 'Protección respiratoria alta y barrera para líquido' }, { campo: 'Respiración', valor: 'ERA exterior', nota: 'Se verifica la interfase con la prenda' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'La configuración concreta se declara por fabricante' }] }, { grupo: 'Compra', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración', nota: 'Base de compatibilidad' }, { campo: 'Exposición', valor: 'Salpicadura esperada', nota: 'Registrar presión, temperatura y duración' }, { campo: 'Barrera', valor: 'Material declarado', nota: 'No asumir equivalencias entre materiales' }] }], incluye: ['Prenda química en configuración nivel B', 'Especificación de interfaces solicitadas', 'Ficha técnica del material'], noIncluye: ['ERA', 'Cartuchos o respirador purificador', 'Descontaminación operativa'], errores: [{"error": "Usar nivel B ante vapor sin evaluación", "realidad": "El ERA exterior no queda encapsulado: si tu evaluación marca vapor que exige esa barrera, corresponde nivel A. Antes de pedir nivel B, confirma por escrito la vía de exposición dominante."}, {"error": "Comprar sin concentración", "realidad": "Un mismo agente puede exigir respuestas distintas según concentración y temperatura. Sin esos datos no podemos confirmarte compatibilidad ni proponerte prenda; mándalos junto con la tarea."}, {"error": "Ignorar botas y guantes", "realidad": "Las extremidades son una vía de entrada frecuente si sus uniones no son compatibles con el agente. Especifica guantes y botas en la misma orden y prueba el traslape con manga y tobillo."}], aplicaciones: [{"titulo": "Control de derrame", "desc": "Tareas con posible salpicadura líquida donde el aire necesita ser independiente y el agente ya está identificado."}, {"titulo": "Descontaminación técnica", "desc": "Operaciones con la barrera seleccionada contra el agente identificado y un procedimiento de retiro definido."}, {"titulo": "Reconocimiento delimitado", "desc": "Ingreso con plan de salida y tiempo de aire controlado, en zona delimitada y bajo supervisión."}], faqs: [{"q": "¿Qué diferencia hay con nivel A?", "a": "Nivel A encapsula el ERA dentro del traje para peligro de vapor; en nivel B el ERA va por fuera y la prenda se elige para salpicadura líquida. Lo que decide es la vía de exposición: vapor con contacto cutáneo, nivel A; líquido con riesgo respiratorio, nivel B. Consúltanos con tus datos y te confirmamos cuál corresponde."}, {"q": "¿Lleva respirador?", "a": "Lleva ERA cuando el ambiente no es respirable; la selección depende de tu análisis de riesgo, no del traje. El ERA no viene en la cotización del traje salvo que lo pidas: dinos qué equipo usa tu corporación y verificamos que sus correas y válvulas queden accesibles sin que la prenda las cubra."}, {"q": "¿Sirve ante cualquier líquido?", "a": "No. Confirma compatibilidad para el agente y las condiciones reales —concentración, temperatura, duración— en la tabla del fabricante, porque un material que resiste un líquido puede degradarse con otro. Mándanos la sustancia por WhatsApp y te entregamos la ficha de compatibilidad del modelo antes de que ordenes."}, {"q": "¿Protege contra fuego?", "a": "No se asume esa capacidad: el nivel B es barrera química y solo se considera protección contra fuego si el fabricante la declara de forma expresa. Si tu operación mezcla químico y llama, dínoslo desde la primera consulta y lo revisamos antes de proponerte un modelo."}, {"q": "¿Cómo se limpia?", "a": "Con el procedimiento de descontaminación aplicable al agente y antes de retirarlo: se limpia el exterior sin contaminar arnés, máscara ni persona, y se retira en el orden que corresponde, con un observador. Después se inspecciona la barrera y el ERA por separado y se registra sustancia, tiempo y condición."}], sinonimos: ['traje nivel B', 'traje contra salpicadura química', 'equipo Hazmat nivel B'], sinonimosNota: 'El nombre no sustituye la tabla de compatibilidad ni el análisis del incidente.', comparativa: { titulo: 'Nivel B o nivel C', intro: 'El respirador y la información disponible sobre el ambiente son la diferencia decisiva.', columnas: ['Criterio', 'Nivel B', 'Nivel C'], filas: [['Respiración', 'ERA', 'Purificadora cuando procede'], ['Ambiente', 'Puede ser peligroso para respirar', 'Contaminante conocido y controlado'], ['Barrera', 'Salpicadura', 'Según exposición'], ['Decisión', 'Mayor independencia', 'No usar si faltan condiciones']] }, relacionados: [{ label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }, { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }] },
+    slug: 'traje-nivel-b', familia: 'hazmat', nombreCard: 'Traje nivel B', nombre: 'Traje químico nivel B', seoTitle: 'Traje químico nivel B Hazmat para salpicadura peligrosa', seoDescription: 'Traje hazmat nivel B para salpicadura peligrosa: diferencias con el encapsulado, compatibilidad de la barrera y configuración con ERA exterior. Cotiza.', keywords: ['traje químico nivel B', 'traje hazmat nivel b', 'traje nivel b'], eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel B', h1Accent: 'para salpicadura peligrosa', lead: 'Protección respiratoria autónoma y barrera química para operaciones con salpicadura, seleccionadas contra el agente y no por apariencia.', descRight: ["El nivel B protege la respiración con ERA exterior y la piel con una prenda elegida para salpicadura líquida. Lo cotizamos para tareas con contacto líquido esperado y agente identificado, con los guantes y las botas que sellan la manga y el tobillo.", "No es un nivel A económico: si tu evaluación dice que hay vapor que obliga a encapsular el ERA, el nivel B deja de ser la respuesta. Mándanos agente, concentración y tarea y te decimos cuál nivel corresponde antes de cotizar."], meta: ['Nivel B', 'Salpicadura química', 'ERA exterior', 'NFPA 1990'], resumen: ["Un traje químico nivel B combina prenda de barrera, guantes, botas y equipo de respiración autónoma cuando el aire necesita ser independiente pero la exposición de la piel es sobre todo salpicadura líquida. Equilibra protección y movilidad sin convertir una tarea líquida en una especificación de vapor que no corresponde.", "Para cotizar necesitamos agente, concentración, volumen posible, presión, temperatura y tarea. Con eso revisamos la tabla de compatibilidad, decidimos contigo si la prenda debe ser reutilizable o desechable y definimos el traslape con guantes y botas. El nivel termina donde empieza la incompatibilidad: no se extrapola de una sustancia a otra.", "En nivel B el aire autónomo protege la respiración y la prenda se elige por el contacto líquido previsto. Por eso el ERA va por fuera y debe quedar accesible para su usuario y su compañero. Antes de entrar revisa arnés, correas, válvulas y presión sin que el traje los cubra. Si la evaluación marca vapor peligroso para todo el conjunto, esta configuración ya no aplica aunque el líquido sea lo visible.", "Para definir la barrera anota altura de salpicadura, presión de la línea o recipiente, posibilidad de rociado, temperatura, volumen y duración. Revisa cierre, puños, guantes y botas como una ruta continua: el traje puede resistir el agente y fallar por una manga mal unida. La talla debe permitirte agacharte, subir escalones y manipular el regulador sin tensar costuras; ensáyalo con el conjunto armado antes de firmar la compra.", "La salida exige descontaminar el exterior sin contaminar arnés, máscara ni persona: un área para retirar guantes, prenda y botas en el orden que aplique al agente, con un observador. Después inspecciona la barrera y el ERA por separado y no reutilices una pieza solo porque no se ve manchada; registra sustancia, tiempo, condición y limpieza para decidir el regreso a servicio."], puntosClave: ['ERA exterior con protección respiratoria autónoma', 'Barrera corporal elegida para salpicadura líquida', 'Sellado de manga, guante, bota y cierre definido en la orden', 'Compatibilidad por sustancia y condiciones de exposición', 'No es protección automática frente a vapor ni fuego', 'Retiro posterior a descontaminación'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-b.avif', alt: 'Traje químico nivel B con ERA exterior' }], fichaTecnica: [{ grupo: 'Alcance', filas: [{ campo: 'Nivel', valor: 'B conforme al análisis de riesgo', nota: 'Protección respiratoria alta y barrera para líquido' }, { campo: 'Respiración', valor: 'ERA exterior', nota: 'Se verifica la interfase con la prenda' }, { campo: 'Referencia', valor: 'NFPA 1990, edición 2022', nota: 'La configuración concreta se declara por fabricante' }] }, { grupo: 'Compra', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración', nota: 'Base de compatibilidad' }, { campo: 'Exposición', valor: 'Salpicadura esperada', nota: 'Registrar presión, temperatura y duración' }, { campo: 'Barrera', valor: 'Material declarado', nota: 'No asumir equivalencias entre materiales' }] }], incluye: ['Prenda química en configuración nivel B', 'Especificación de interfaces solicitadas', 'Ficha técnica del material'], noIncluye: ['ERA', 'Cartuchos o respirador purificador', 'Descontaminación operativa'], errores: [{"error": "Usar nivel B ante vapor sin evaluación", "realidad": "El ERA exterior no queda encapsulado: si tu evaluación marca vapor que exige esa barrera, corresponde nivel A. Antes de pedir nivel B, confirma por escrito la vía de exposición dominante."}, {"error": "Comprar sin concentración", "realidad": "Un mismo agente puede exigir respuestas distintas según concentración y temperatura. Sin esos datos no podemos confirmarte compatibilidad ni proponerte prenda; mándalos junto con la tarea."}, {"error": "Ignorar botas y guantes", "realidad": "Las extremidades son una vía de entrada frecuente si sus uniones no son compatibles con el agente. Especifica guantes y botas en la misma orden y prueba el traslape con manga y tobillo."}], aplicaciones: [{"titulo": "Control de derrame", "desc": "Tareas con posible salpicadura líquida donde el aire necesita ser independiente y el agente ya está identificado."}, {"titulo": "Descontaminación técnica", "desc": "Operaciones con la barrera seleccionada contra el agente identificado y un procedimiento de retiro definido."}, {"titulo": "Reconocimiento delimitado", "desc": "Ingreso con plan de salida y tiempo de aire controlado, en zona delimitada y bajo supervisión."}], faqs: [{"q": "¿Qué diferencia hay con nivel A?", "a": "Nivel A encapsula el ERA dentro del traje para peligro de vapor; en nivel B el ERA va por fuera y la prenda se elige para salpicadura líquida. Lo que decide es la vía de exposición: vapor con contacto cutáneo, nivel A; líquido con riesgo respiratorio, nivel B. Consúltanos con tus datos y te confirmamos cuál corresponde."}, {"q": "¿Lleva respirador?", "a": "Lleva ERA cuando el ambiente no es respirable; la selección depende de tu análisis de riesgo, no del traje. El ERA no viene en la cotización del traje salvo que lo pidas: dinos qué equipo usa tu corporación y verificamos que sus correas y válvulas queden accesibles sin que la prenda las cubra."}, {"q": "¿Sirve ante cualquier líquido?", "a": "No. Confirma compatibilidad para el agente y las condiciones reales (concentración, temperatura y duración) en la tabla del fabricante, porque un material que resiste un líquido puede degradarse con otro. Mándanos la sustancia por WhatsApp y te entregamos la ficha de compatibilidad del modelo antes de que ordenes."}, {"q": "¿Protege contra fuego?", "a": "No se asume esa capacidad: el nivel B es barrera química y solo se considera protección contra fuego si el fabricante la declara de forma expresa. Si tu operación mezcla químico y llama, dínoslo desde la primera consulta y lo revisamos antes de proponerte un modelo."}, {"q": "¿Cómo se limpia un traje químico nivel B?", "a": "Con el procedimiento de descontaminación aplicable al agente y antes de retirarlo: se limpia el exterior sin contaminar arnés, máscara ni persona, y se retira en el orden que corresponde, con un observador. Después se inspecciona la barrera y el ERA por separado y se registra sustancia, tiempo y condición."}], sinonimos: ['traje nivel B', 'traje contra salpicadura química', 'equipo Hazmat nivel B'], sinonimosNota: 'El nombre no sustituye la tabla de compatibilidad ni el análisis del incidente.', comparativa: { titulo: 'Nivel B o nivel C', intro: 'El respirador y la información disponible sobre el ambiente son la diferencia decisiva.', columnas: ['Criterio', 'Nivel B', 'Nivel C'], filas: [['Respiración', 'ERA', 'Purificadora cuando procede'], ['Ambiente', 'Puede ser peligroso para respirar', 'Contaminante conocido y controlado'], ['Barrera', 'Salpicadura', 'Según exposición'], ['Decisión', 'Mayor independencia', 'No usar si faltan condiciones']] }, relacionados: [{ label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }, { label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }] },
 ];
 
 HAZMAT_PIEZAS.push(
@@ -88,49 +88,49 @@ HAZMAT_PIEZAS.push(
     seoTitle: 'Traje químico nivel C Hazmat con respirador purificador', seoDescription: 'Traje hazmat nivel C para contaminante conocido: barrera corporal, respirador purificador, programa de cartuchos y cuándo abandonar el área. Cotiza.', keywords: ['traje químico nivel C', 'traje hazmat nivel c', 'traje nivel c'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Traje químico nivel C', h1Accent: 'para contaminante conocido', lead: 'Barrera química con respiración purificadora únicamente cuando el agente, la concentración y la atmósfera permiten controlar el riesgo.',
     descRight: ["El nivel C no es la primera entrada ni la opción cómoda: exige conocer el contaminante, medir su concentración y confirmar que el respirador purificador cubre esa exposición. Lo cotizamos solo cuando tu monitoreo lo respalda.", "Ropa, cartuchos, guantes y botas se revisan como un sistema; si falla el monitoreo, el ajuste facial o el programa de cambio, la configuración deja de ser válida. Mándanos agente y concentración y te decimos si te corresponde nivel C o nivel B."], meta: ['Nivel C', 'Respirador purificador', 'Contaminante conocido', 'NOM-017-STPS-2024'],
-    resumen: ["El traje químico nivel C se elige cuando el contaminante está identificado, la concentración medida cae dentro del alcance del respirador purificador y la atmósfera permite esa protección. No es un nivel B ligero para entrar primero: depende de información previa, monitoreo y un procedimiento que diga cuándo salir. Con deficiencia de oxígeno, concentración desconocida o una condición que rebase el cartucho, la selección cambia antes de ingresar.", "El respirador es la decisión crítica: identifica contaminante, cartucho compatible, programa de cambio, ajuste facial y límites de uso. Una máscara bien elegida no compensa un cartucho incorrecto, ni un cartucho correcto compensa barba o un sello deficiente. Enseña a tu personal a reconocer las señales de salida y a no esperar a percibir olor o irritación para concluir que la protección ya no sirve.", "En la orden definimos contigo prenda, respirador, cartuchos, guantes, botas y el método de unión entre cada pieza. Revisa movilidad de brazos, visibilidad y acceso a la radio; la talla debe permitir agacharte y subir escalones sin abrir puños, tobillos ni cierre. La barrera se escoge con la tabla de compatibilidad del fabricante para tu sustancia, concentración, temperatura y exposición, no por color ni por la etiqueta de nivel.", "Escribe el programa de cambio de cartuchos antes de exponer a tu personal: qué cartucho se instaló, cuándo se abrió, para qué agente se autorizó y qué evento obliga a desecharlo. El nivel C conserva su sentido mientras el monitoreo confirme que la concentración sigue dentro del alcance del respirador; si cambian la lectura, el olor o las condiciones del área, la persona sale y se reevalúa.", "Practica la colocación con la misma protección ocular, casco y radio que usarás en la tarea: una capucha mal acomodada, patillas o vello facial desplazan el sello. Antes de cruzar el límite, un compañero revisa cierre, capucha, puños y traslapes mientras el usuario flexiona codos, hombros y rodillas; así la lista de componentes se convierte en una configuración que no abre rutas de entrada al moverse.", "El retiro empieza con la descontaminación exterior y sigue una secuencia que no lleve contaminante a la cara. Separa y etiqueta los cartuchos usados de los sellados para que un relevo no reciba uno abierto sin historial, y registra agente, condición de la prenda y acción aplicada; una barrera dañada, una exposición fuera de alcance o un cartucho sin trazabilidad no regresan a servicio por apariencia."],
+    resumen: ["El traje químico nivel C se elige cuando el contaminante está identificado, la concentración medida cae dentro del alcance del respirador purificador y la atmósfera permite esa protección. No es un nivel B ligero para entrar primero: depende de información previa, monitoreo y un procedimiento que diga cuándo salir. Con deficiencia de oxígeno, concentración desconocida o una condición que rebase el cartucho, la selección cambia antes de ingresar.", "El respirador es la decisión crítica: identifica contaminante, cartucho compatible, programa de cambio, ajuste facial y límites de uso. Una máscara bien elegida no compensa un cartucho incorrecto, ni un cartucho correcto compensa barba o un sello deficiente. Enseña a tu personal a reconocer las señales de salida y a no esperar a percibir olor o irritación para concluir que la protección ya no sirve.", "En la orden definimos contigo prenda, respirador, cartuchos, guantes, botas y el método de unión entre cada pieza. Revisa movilidad de brazos, visibilidad y acceso a la radio; la talla debe permitir agacharte y subir escalones sin abrir puños, tobillos ni cierre. La barrera se escoge con la tabla de compatibilidad del fabricante para tu sustancia, concentración, temperatura y exposición, no por color ni por la etiqueta de nivel.", "Escribe el programa de cambio de cartuchos antes de exponer a tu personal: qué cartucho se instaló, cuándo se abrió, para qué agente se autorizó y qué evento obliga a desecharlo. El nivel C conserva su sentido mientras el monitoreo confirme que la concentración sigue dentro del alcance del respirador. Si cambian la lectura, el olor o las condiciones del área, la persona sale y se reevalúa.", "Practica la colocación con la misma protección ocular, casco y radio que usarás en la tarea: una capucha mal acomodada, patillas o vello facial desplazan el sello. Antes de cruzar el límite, un compañero revisa cierre, capucha, puños y traslapes mientras el usuario flexiona codos, hombros y rodillas. Así se comprueba que el conjunto no abre rutas de entrada al moverse.", "El retiro empieza con la descontaminación exterior y sigue una secuencia que no lleve contaminante a la cara. Separa y etiqueta los cartuchos usados de los sellados, para que un relevo no reciba uno abierto sin historial, y registra agente, condición de la prenda y acción aplicada. Una barrera dañada, una exposición fuera de alcance o un cartucho sin trazabilidad no regresan a servicio por apariencia."],
     puntosClave: ['Sólo para atmósfera evaluada y contaminante identificado', 'Respirador purificador con cartucho compatible y programa de cambio', 'Monitoreo continuo con criterio de salida definido', 'Barrera, guantes y botas confirmados por tabla del fabricante', 'Ajuste facial y sello verificados antes del ingreso', 'Descontaminación y segregación de cartuchos antes del retiro'], images: [{ src: '/images/catalogo/hazmat/tipo-traje-nivel-c.avif', alt: 'Traje químico nivel C con respirador purificador' }],
     fichaTecnica: [{ grupo: 'Alcance operativo', filas: [{ campo: 'Nivel', valor: 'C conforme al análisis de riesgo', nota: 'No se usa para atmósfera desconocida o deficiente en oxígeno' }, { campo: 'Respiración', valor: 'Respirador purificador aprobado', nota: 'Cartucho y ajuste facial definidos para el agente' }, { campo: 'Referencia', valor: 'EPA/OSHA 29 CFR 1910.120, apéndice B', nota: 'La selección parte de la evaluación documentada' }] }, { grupo: 'Barrera corporal', filas: [{ campo: 'Prenda', valor: 'Material compatible con el agente', nota: 'Consultar tabla del fabricante por concentración y temperatura' }, { campo: 'Uniones', valor: 'Puños, tobillos, cierre y capucha', nota: 'Se revisan con el conjunto armado' }, { campo: 'Normas de prenda', valor: 'EN 14605 o EN 13034, cuando aplique', nota: 'El tipo de exposición declarado importa más que la apariencia' }] }, { grupo: 'Control de uso', filas: [{ campo: 'Monitoreo', valor: 'Previo y durante la tarea', nota: 'La lectura debe permanecer dentro del alcance del respirador' }, { campo: 'Cartuchos', valor: 'Programa de cambio por escrito', nota: 'No se espera olor o irritación para cambiarlos' }, { campo: 'Retiro', valor: 'Después de descontaminación', nota: 'Separar filtros usados de existencias selladas' }] }],
     incluye: ['Prenda química nivel C en talla solicitada', 'Configuración de capucha, cierre y puños especificada', 'Ficha técnica y alcance declarado del material'], noIncluye: ['Respirador purificador y cartuchos salvo solicitud expresa', 'Monitoreo atmosférico', 'Programa de protección respiratoria y descontaminación'],
-    errores: [{"error": "Usarlo ante concentración desconocida", "realidad": "Sin una lectura confiable no puedes demostrar que el cartucho está dentro de su alcance. Mide antes de entrar y sigue monitoreando durante la tarea; si no hay lectura, no es nivel C."}, {"error": "Elegir cartucho por olor", "realidad": "El olor no es una alarma de vida útil. El programa de cambio se escribe antes de la exposición, con fecha de apertura y agente autorizado para cada cartucho."}, {"error": "Confiar en una máscara sobre barba", "realidad": "El vello facial impide el sello que exige un respirador ajustado, y sin sello el cartucho no protege. Haz prueba de ajuste a cada persona y no asignes el equipo a quien no logre el sello."}, {"error": "Llevar filtros abiertos sin registro", "realidad": "Un cartucho sin agente ni fecha identificados no debe asignarse a otra persona. Etiquétalo al abrirlo y separa los usados de los sellados para que el relevo no reciba uno sin historial."}, {"error": "Ignorar la barrera corporal", "realidad": "El respirador no corrige una prenda, un guante o una bota incompatibles. Confirma en la tabla del fabricante la compatibilidad de cada pieza con tu agente, no solo la de la máscara."}, {"error": "Permanecer cuando cambia el monitoreo", "realidad": "Si cambia la condición autorizada —lectura, olor, irritación o el área—, la persona sale y se reevalúa la protección antes de continuar; nadie decide quedarse «un minuto más»."}],
+    errores: [{"error": "Usarlo ante concentración desconocida", "realidad": "Sin una lectura confiable no puedes demostrar que el cartucho está dentro de su alcance. Mide antes de entrar y sigue monitoreando durante la tarea; si no hay lectura, no es nivel C."}, {"error": "Elegir cartucho por olor", "realidad": "El olor no es una alarma de vida útil. El programa de cambio se escribe antes de la exposición, con fecha de apertura y agente autorizado para cada cartucho."}, {"error": "Confiar en una máscara sobre barba", "realidad": "El vello facial impide el sello que exige un respirador ajustado, y sin sello el cartucho no protege. Haz prueba de ajuste a cada persona y no asignes el equipo a quien no logre el sello."}, {"error": "Llevar filtros abiertos sin registro", "realidad": "Un cartucho sin agente ni fecha identificados no debe asignarse a otra persona. Etiquétalo al abrirlo y separa los usados de los sellados para que el relevo no reciba uno sin historial."}, {"error": "Ignorar la barrera corporal", "realidad": "El respirador no corrige una prenda, un guante o una bota incompatibles. Confirma en la tabla del fabricante la compatibilidad de cada pieza con tu agente, no solo la de la máscara."}, {"error": "Permanecer cuando cambia el monitoreo", "realidad": "Si cambia la condición autorizada, sea la lectura, el olor, una irritación o el área, la persona sale y se reevalúa la protección antes de continuar; nadie decide quedarse «un minuto más»."}],
     aplicaciones: [{"titulo": "Mantenimiento con agente identificado", "desc": "Trabajo delimitado donde tu monitoreo confirma una atmósfera compatible con protección purificadora y los cartuchos son trazables."}, {"titulo": "Limpieza técnica controlada", "desc": "Descontaminación o saneamiento con una barrera definida para el agente y para el contacto esperado, con retiro planeado."}, {"titulo": "Inspección de proceso", "desc": "Ingreso breve con plan de salida, cartuchos trazables y supervisión de las condiciones durante toda la tarea."}, {"titulo": "Muestreo bajo procedimiento", "desc": "Operación con concentración conocida que exige destreza con manos protegidas, guantes compatibles y pares de repuesto por talla."}],
-    faqs: [{"q": "¿Cuándo procede nivel C?", "a": "Cuando el contaminante y su concentración están identificados, el oxígeno es suficiente y el respirador purificador seleccionado cubre la exposición. Si falta alguno de esos tres datos, no es nivel C. Mándanos agente y lectura por WhatsApp y te decimos si te corresponde o si conviene subir a nivel B con ERA exterior."}, {"q": "¿Qué diferencia hay con nivel B?", "a": "El nivel B usa ERA y no depende de que el aire pueda purificarse; el nivel C sí depende de esa condición y de un monitoreo continuo. Por eso el C exige más información previa: cuanto menos sabes del ambiente, más te acercas a un B. Te ayudamos a decidirlo con tus datos antes de cotizar."}, {"q": "¿Cualquier cartucho sirve para vapores?", "a": "No. El cartucho se elige para el agente específico y se administra con un programa de cambio escrito antes de la exposición: fecha de apertura, agente autorizado y evento que obliga a desecharlo. Dinos tu respirador y tu sustancia y te cotizamos el cartucho compatible con su ficha."}, {"q": "¿Puede usarse con barba?", "a": "No, si el respirador requiere sello facial: el vello que interfiere con el sello anula la protección. Cada persona necesita prueba de ajuste con el modelo y la talla de máscara que usará; si no logra el sello se le asigna otra protección, no se «aprieta más» la máscara."}, {"q": "¿La prenda protege cualquier salpicadura?", "a": "No. Confirma material, concentración, temperatura y forma de exposición en la tabla del fabricante; una prenda compatible con un agente puede no serlo con otro. Al cotizar te pedimos esos datos y te entregamos la referencia del modelo, incluida la norma de prenda que declare —EN 14605 o EN 13034, cuando aplique—."}, {"q": "¿Cuándo se retira el conjunto?", "a": "Después de descontaminar el exterior, con una secuencia que mantenga los cartuchos y la cara fuera de contacto con la superficie contaminada. Los cartuchos usados se separan y se etiquetan, y la prenda se inspecciona y se registra antes de decidir si vuelve a servicio."}, {"q": "¿Qué pasa si cambia la lectura ambiental?", "a": "Se abandona el área de inmediato y se reevalúa el nivel de protección antes de continuar; nadie sigue trabajando con una lectura distinta a la autorizada. Deja escrito ese criterio de salida en tu procedimiento, con el valor límite que corresponde a tu cartucho, para que la decisión no dependa del momento."}],
+    faqs: [{"q": "¿Cuándo procede nivel C?", "a": "Cuando el contaminante y su concentración están identificados, el oxígeno es suficiente y el respirador purificador seleccionado cubre la exposición. Si falta alguno de esos tres datos, no es nivel C. Mándanos agente y lectura por WhatsApp y te decimos si te corresponde o si conviene subir a nivel B con ERA exterior."}, {"q": "¿Qué diferencia hay con nivel B?", "a": "El nivel B usa ERA y no depende de que el aire pueda purificarse; el nivel C sí depende de esa condición y de un monitoreo continuo. Por eso el C exige más información previa: cuanto menos sabes del ambiente, más te acercas a un B. Te ayudamos a decidirlo con tus datos antes de cotizar."}, {"q": "¿Cualquier cartucho sirve para vapores?", "a": "No. El cartucho se elige para el agente específico y se administra con un programa de cambio escrito antes de la exposición: fecha de apertura, agente autorizado y evento que obliga a desecharlo. Dinos tu respirador y tu sustancia y te cotizamos el cartucho compatible con su ficha."}, {"q": "¿Puede usarse con barba?", "a": "No, si el respirador requiere sello facial: el vello que interfiere con el sello anula la protección. Cada persona necesita prueba de ajuste con el modelo y la talla de máscara que usará; si no logra el sello se le asigna otra protección, no se «aprieta más» la máscara."}, {"q": "¿La prenda protege cualquier salpicadura?", "a": "No. Confirma material, concentración, temperatura y forma de exposición en la tabla del fabricante; una prenda compatible con un agente puede no serlo con otro. Al cotizar te pedimos esos datos y te entregamos la referencia del modelo, incluida la norma de prenda que declare (EN 14605 o EN 13034, cuando aplique)."}, {"q": "¿Cuándo se retira el conjunto?", "a": "Después de descontaminar el exterior, con una secuencia que mantenga los cartuchos y la cara fuera de contacto con la superficie contaminada. Los cartuchos usados se separan y se etiquetan, y la prenda se inspecciona y se registra antes de decidir si vuelve a servicio."}, {"q": "¿Qué pasa si cambia la lectura ambiental?", "a": "Se abandona el área de inmediato y se reevalúa el nivel de protección antes de continuar; nadie sigue trabajando con una lectura distinta a la autorizada. Deja escrito ese criterio de salida en tu procedimiento, con el valor límite que corresponde a tu cartucho, para que la decisión no dependa del momento."}],
     sinonimos: ['traje nivel C', 'equipo Hazmat nivel C', 'traje químico con respirador purificador', 'protección química nivel C'], sinonimosNota: 'Nivel C describe una configuración condicionada por monitoreo y respiración; el sinónimo no sustituye esa evaluación.', comparativa: { titulo: 'Nivel C o nivel B', intro: 'La autonomía respiratoria y el conocimiento del ambiente determinan cuál configuración corresponde.', columnas: ['Criterio', 'Nivel C', 'Nivel B'], filas: [['Respiración', 'Purificadora cuando procede', 'ERA exterior'], ['Atmósfera', 'Conocida y dentro del alcance', 'Puede ser peligrosa para respirar'], ['Decisión', 'Depende de monitoreo continuo', 'Mayor independencia del aire ambiente'], ['No usar', 'Con oxígeno deficiente o concentración desconocida', 'Cuando el vapor exige encapsulado nivel A']] }, relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Overol desechable', href: '/trajes/hazmat/overol-quimico-desechable/' }, { label: 'Guantes para químicos', href: '/trajes/hazmat/guantes-quimicos/' }],
   },
   {
     slug: 'overol-quimico-desechable', familia: 'hazmat', nombreCard: 'Overol desechable', nombre: 'Overol químico desechable', seoTitle: 'Overol desechable para protección química y salpicadura', seoDescription: 'Overol químico desechable para tareas delimitadas: polvo o salpicadura, costuras, talla, retiro y disposición controlada. Elige por barrera declarada.', keywords: ['overol desechable', 'overol químico desechable', 'overol contra salpicadura'],
-    eyebrow: 'Pieza · Materiales peligrosos', h1: 'Overol desechable', h1Accent: 'para protección química', lead: 'Overol desechable de un solo uso, seleccionado por su barrera declarada y no por ser blanco, tener capucha o parecer impermeable.', descRight: ["«Desechable» describe el ciclo de uso, no la resistencia: el tipo de barrera sigue siendo la decisión central. Te cotizamos el overol por su barrera declarada —EN 14605 o EN 13034, cuando aplique—, no por ser blanco, traer capucha o parecer impermeable.", "Lo especificamos por agente, exposición, costuras, talla e interfaz con guantes y botas, y contigo definimos cómo se retira y se desecha. Mándanos por WhatsApp agente, tipo de exposición y cantidad por talla y te cotizamos el modelo con su ficha."], meta: ['Un solo uso', 'Polvo o salpicadura', 'Costuras declaradas', 'EN 14605 / EN 13034'],
-    resumen: ["Un overol químico desechable resuelve tareas delimitadas cuando su material y su construcción corresponden a la exposición prevista. «Desechable» significa que se retira después del uso o al contaminarse; no significa resistencia uniforme a líquidos, polvos o aerosoles. Antes de asignarlo define si habrá salpicadura, contacto incidental, partículas, limpieza de una zona o mantenimiento, porque cada escenario pide revisar la declaración de barrera del modelo concreto.", "Al comprar, separa el overol que cubre polvo del que declara barrera frente a salpicadura: el color blanco, la capucha o el cierre no explican ese alcance. EN 14605 y EN 13034 son referencias europeas frecuentes para protección frente a líquido, pero la selección real depende de la declaración del fabricante y de tu agente. Para compatibilidad química revisa la tabla por sustancia, concentración, temperatura y duración, sin asumir equivalencias entre laminados.", "La colocación no debe abrir rutas de entrada. La talla tiene que permitirte estirar los brazos, sentarte, arrodillarte y caminar sin tensar costuras ni dejar muñecas o tobillos descubiertos; revisa capucha, cierre, puños y traslapes antes de entrar. Agrega cinta de sellado, guantes y botas solo cuando el procedimiento lo pida, y piensa antes en el retiro: una cinta mal puesta desgarra la prenda o complica la descontaminación.", "Antes de distribuir existencias, abre una muestra en zona limpia y revisa el recorrido del cierre, el espacio de hombros y el largo de piernas con las botas previstas; así detectas una talla que se rompe al arrodillarse o deja el tobillo expuesto al subir una escalera. No es pretexto para reutilizar una prenda abierta: guarda unidades por talla y tipo de exposición, secas, identificadas y lejos de herramientas que perforen el empaque.", "Al terminar, trata el overol como material potencialmente contaminado: no lo sacudas ni lo reutilices por apariencia. Define antes de empezar el contenedor, la ruta de salida y quién vigilará el retiro. Una prenda perforada, rasgada, mojada por un agente fuera de su alcance o contaminada sin método de limpieza se aparta de inmediato, y su segregación y disposición se ajustan al contaminante y al procedimiento del sitio.", "La NOM-017-STPS-2024 pone la selección del EPP dentro del análisis de riesgo de tu centro de trabajo; no convierte un overol en protección universal. En la recepción verifica modelo, talla, costura, empaque íntegro e instrucciones de desecho, y registra lote, tarea y cualquier daño encontrado: así corriges la especificación antes de que una prenda inadecuada se use como reserva en una contingencia."],
+    eyebrow: 'Pieza · Materiales peligrosos', h1: 'Overol desechable', h1Accent: 'para protección química', lead: 'Overol desechable de un solo uso, seleccionado por su barrera declarada y no por ser blanco, tener capucha o parecer impermeable.', descRight: ["«Desechable» describe el ciclo de uso, no la resistencia: el tipo de barrera sigue siendo la decisión central. Te cotizamos el overol por su barrera declarada (EN 14605 o EN 13034, cuando aplique), no por ser blanco, traer capucha o parecer impermeable.", "Lo especificamos por agente, exposición, costuras, talla e interfaz con guantes y botas, y contigo definimos cómo se retira y se desecha. Mándanos por WhatsApp agente, tipo de exposición y cantidad por talla y te cotizamos el modelo con su ficha."], meta: ['Un solo uso', 'Polvo o salpicadura', 'Costuras declaradas', 'EN 14605 / EN 13034'],
+    resumen: ["Un overol químico desechable resuelve tareas delimitadas cuando su material y su construcción corresponden a la exposición prevista. «Desechable» significa que se retira después del uso o al contaminarse; no significa resistencia uniforme a líquidos, polvos o aerosoles. Antes de asignarlo define si habrá salpicadura, contacto incidental, partículas, limpieza de una zona o mantenimiento, porque cada escenario pide revisar la declaración de barrera del modelo concreto.", "Al comprar, separa el overol que cubre polvo del que declara barrera frente a salpicadura: el color blanco, la capucha o el cierre no explican ese alcance. EN 14605 y EN 13034 son referencias europeas frecuentes para protección frente a líquido, pero la selección real depende de la declaración del fabricante y de tu agente. Para compatibilidad química revisa la tabla por sustancia, concentración, temperatura y duración, sin asumir equivalencias entre laminados.", "La colocación no debe abrir rutas de entrada. La talla tiene que permitirte estirar los brazos, sentarte, arrodillarte y caminar sin tensar costuras ni dejar muñecas o tobillos descubiertos; revisa capucha, cierre, puños y traslapes antes de entrar. Agrega cinta de sellado, guantes y botas solo cuando el procedimiento lo pida, y piensa antes en el retiro: una cinta mal puesta desgarra la prenda o complica la descontaminación.", "Antes de distribuir existencias, abre una muestra en zona limpia y revisa el cierre, el espacio de hombros y el largo de piernas con las botas previstas. Así detectas una talla que se rompe al arrodillarse o deja el tobillo expuesto al subir una escalera. No es pretexto para reutilizar una prenda abierta: guarda unidades por talla y tipo de exposición, secas, identificadas y lejos de herramientas que perforen el empaque.", "Al terminar, trata el overol como material potencialmente contaminado: no lo sacudas ni lo reutilices por apariencia. Define antes de empezar el contenedor, la ruta de salida y quién vigilará el retiro. Una prenda perforada, rasgada, mojada por un agente fuera de su alcance o contaminada sin método de limpieza se aparta de inmediato. Su segregación y disposición siguen el contaminante y el procedimiento del sitio.", "La NOM-017-STPS-2024 pone la selección del EPP dentro del análisis de riesgo de tu centro de trabajo; no convierte un overol en protección universal. En la recepción verifica modelo, talla, costura, empaque íntegro e instrucciones de desecho, y registra lote, tarea y cualquier daño. Así corriges la especificación antes de que una prenda inadecuada quede como reserva para una contingencia."],
     puntosClave: ['Un solo uso no significa compatibilidad universal', 'Separar protección contra partículas de barrera para salpicadura', 'Tipo de costura y cierre definidos para la tarea', 'Talla probada con guantes y botas del conjunto', 'Empaque íntegro y existencias por talla', 'Retiro y disposición definidos antes de entrar'], images: [{ src: '/images/catalogo/hazmat/tipo-overol-quimico-desechable.avif', alt: 'Overol químico desechable con capucha para tareas delimitadas' }],
     fichaTecnica: [{ grupo: 'Barrera declarada', filas: [{ campo: 'Uso', valor: 'Un solo uso o hasta contaminación', nota: 'No se reutiliza por apariencia' }, { campo: 'Líquido', valor: 'EN 14605, cuando aplique', nota: 'Referencia para protección declarada frente a líquido' }, { campo: 'Salpicadura limitada', valor: 'EN 13034, cuando aplique', nota: 'No equivale a protección para toda exposición líquida' }] }, { grupo: 'Construcción', filas: [{ campo: 'Costuras', valor: 'Tipo declarado por fabricante', nota: 'La costura define rutas de entrada además del material' }, { campo: 'Cierre y capucha', valor: 'Configuración del modelo', nota: 'Se inspeccionan antes de la entrada' }, { campo: 'Talla', valor: 'Compatible con movimientos y botas', nota: 'Se prueba en zona limpia' }] }, { grupo: 'Gestión', filas: [{ campo: 'Compatibilidad', valor: 'Tabla del fabricante', nota: 'Por agente, concentración, temperatura y exposición' }, { campo: 'Selección', valor: 'NOM-017-STPS-2024', nota: 'Parte de la evaluación del riesgo laboral' }, { campo: 'Disposición', valor: 'Según contaminante y procedimiento', nota: 'Definida antes de la tarea' }] }],
     incluye: ['Overol desechable en talla solicitada', 'Capucha y cierre según modelo especificado', 'Instrucciones de uso, retiro y disposición del fabricante'], noIncluye: ['Guantes, botas o respirador', 'Cinta de sellado', 'Contenedor y gestión de residuo contaminado'],
-    errores: [{"error": "Comprar por color o grosor aparente", "realidad": "La barrera se confirma en la ficha y en la declaración del modelo, no a simple vista. Pídenos la referencia —EN 14605 o EN 13034— del modelo que te propongamos y compárala con tu exposición."}, {"error": "Confundir polvo con salpicadura", "realidad": "Una prenda para partículas no necesariamente cubre la exposición líquida que esperas. Escribe en tu orden si la tarea es de polvo, salpicadura o contacto incidental para que coticemos el modelo que sí lo declara."}, {"error": "Reutilizar una pieza abierta", "realidad": "El ciclo de un solo uso y la integridad del empaque forman parte del control. Una prenda abierta o contaminada no vuelve a inventario por «verse limpia»."}, {"error": "Elegir una talla que limita movimiento", "realidad": "Costuras y traslapes se abren al arrodillarte o alcanzar una herramienta. Prueba una muestra en zona limpia con botas y guantes, y pide tallas por persona, no una talla única para la cuadrilla."}, {"error": "Aplicar cinta sin plan de retiro", "realidad": "La cinta puede romper la prenda o transferir contaminación al desvestir. Úsala solo si tu procedimiento la contempla y define quién retira el conjunto y cómo."}, {"error": "Decidir el desecho al terminar", "realidad": "Contenedor y ruta de salida se establecen antes de que exista contaminación. Si esperas al final, el overol contaminado se acumula donde no debe y nadie sabe por dónde sacarlo."}],
+    errores: [{"error": "Comprar por color o grosor aparente", "realidad": "La barrera se confirma en la ficha y en la declaración del modelo, no a simple vista. Pídenos la referencia EN 14605 o EN 13034 del modelo que te propongamos y compárala con tu exposición."}, {"error": "Confundir polvo con salpicadura", "realidad": "Una prenda para partículas no necesariamente cubre la exposición líquida que esperas. Escribe en tu orden si la tarea es de polvo, salpicadura o contacto incidental para que coticemos el modelo que sí lo declara."}, {"error": "Reutilizar una pieza abierta", "realidad": "El ciclo de un solo uso y la integridad del empaque forman parte del control. Una prenda abierta o contaminada no vuelve a inventario por «verse limpia»."}, {"error": "Elegir una talla que limita movimiento", "realidad": "Costuras y traslapes se abren al arrodillarte o alcanzar una herramienta. Prueba una muestra en zona limpia con botas y guantes, y pide tallas por persona, no una talla única para la cuadrilla."}, {"error": "Aplicar cinta sin plan de retiro", "realidad": "La cinta puede romper la prenda o transferir contaminación al desvestir. Úsala solo si tu procedimiento la contempla y define quién retira el conjunto y cómo."}, {"error": "Decidir el desecho al terminar", "realidad": "Contenedor y ruta de salida se establecen antes de que exista contaminación. Si esperas al final, el overol contaminado se acumula donde no debe y nadie sabe por dónde sacarlo."}],
     aplicaciones: [{"titulo": "Limpieza de área delimitada", "desc": "Trabajo con exposición definida y una prenda seleccionada por su alcance declarado, con el contenedor de desecho listo."}, {"titulo": "Mantenimiento industrial", "desc": "Intervenciones breves donde se protege ropa y piel frente a un contacto evaluado, con guantes y botas compatibles."}, {"titulo": "Manejo de partículas", "desc": "Control de polvo o partículas con un modelo especificado para ese riesgo, no uno de barrera líquida por costumbre."}, {"titulo": "Apoyo a descontaminación", "desc": "Operación exterior con secuencia de retiro y disposición ya establecida y una persona que vigile el desvestido."}],
-    faqs: [{"q": "¿Dónde comprar overol desechable para protección química?", "a": "Te lo cotizamos por modelo y talla con la ficha de barrera declarada (EN 14605 o EN 13034 cuando aplique), factura CFDI y envío a los 32 estados. Indica agente, tipo de exposición y cantidad por talla; escríbenos por WhatsApp y te respondemos con la ficha en el día hábil."}, {"q": "¿Desechable significa impermeable?", "a": "No. «Desechable» solo indica el ciclo de uso: se retira después de usarlo o al contaminarse. La barrera —salpicadura, polvo o aerosol— depende del tipo de laminado y de lo que declare el modelo, así que revisa la ficha y su compatibilidad con tu agente antes de asumir que protege."}, {"q": "¿Sirve para cualquier químico?", "a": "No. Consulta la tabla del fabricante por sustancia, concentración, temperatura y tiempo de contacto; un laminado que resiste un agente puede permear con otro, y no hay equivalencias entre laminados. Mándanos tu sustancia por WhatsApp y te decimos si el modelo que cotizamos la cubre o si necesitas otro."}, {"q": "¿Qué diferencia hay entre EN 14605 y EN 13034?", "a": "Son referencias europeas para tipos de protección frente a líquido: la EN 14605 para protección contra líquido y la EN 13034 para protección limitada contra salpicadura. Confirma cuál declara el modelo y si corresponde a tu exposición; la ficha que te entregamos trae la referencia declarada."}, {"q": "¿Se puede usar más de una vez?", "a": "No reutilices una prenda abierta o contaminada. Sigue la instrucción del fabricante y el procedimiento del sitio: el overol se retira después del uso o al contaminarse, y las unidades sin abrir se guardan secas, por talla y con el empaque íntegro, lejos de herramientas que puedan perforarlo."}, {"q": "¿Cómo elijo talla?", "a": "Pruébala en zona limpia con las botas y los guantes previstos, haciendo los movimientos de la tarea: estirar brazos, sentarte, arrodillarte y subir un escalón. Si el cierre o las costuras se tensan, sube de talla. Pídenos las tallas por persona y te cotizamos el desglose para tu cuadrilla."}, {"q": "¿La cinta siempre mejora la protección?", "a": "No. Solo ayuda si tu procedimiento la contempla y permite retirar el conjunto sin crear otra vía de contaminación. Antes de sellar puños y tobillos con cinta, define cómo se retira y quién lo hace; una cinta mal puesta desgarra la prenda o complica la descontaminación."}, {"q": "¿Dónde se desecha?", "a": "En el contenedor y por la ruta definidos según el agente que contaminó la prenda; no se sacude ni se reutiliza. Deja escrito antes de la tarea dónde se segrega y quién vigila el retiro, y recuerda que la disposición se ajusta al contaminante y al procedimiento de tu sitio."}],
+    faqs: [{"q": "¿Dónde comprar overol desechable para protección química?", "a": "Te lo cotizamos por modelo y talla con la ficha de barrera declarada (EN 14605 o EN 13034 cuando aplique), factura CFDI y envío a los 32 estados. Indica agente, tipo de exposición y cantidad por talla; escríbenos por WhatsApp y te respondemos con la ficha en el día hábil."}, {"q": "¿Desechable significa impermeable?", "a": "No. «Desechable» solo indica el ciclo de uso: se retira después de usarlo o al contaminarse. La barrera contra salpicadura, polvo o aerosol depende del tipo de laminado y de lo que declare el modelo, así que revisa la ficha y su compatibilidad con tu agente antes de asumir que protege."}, {"q": "¿Sirve para cualquier químico?", "a": "No. Consulta la tabla del fabricante por sustancia, concentración, temperatura y tiempo de contacto; un laminado que resiste un agente puede permear con otro, y no hay equivalencias entre laminados. Mándanos tu sustancia por WhatsApp y te decimos si el modelo que cotizamos la cubre o si necesitas otro."}, {"q": "¿Qué diferencia hay entre EN 14605 y EN 13034?", "a": "Son referencias europeas para tipos de protección frente a líquido: la EN 14605 para protección contra líquido y la EN 13034 para protección limitada contra salpicadura. Confirma cuál declara el modelo y si corresponde a tu exposición; la ficha que te entregamos trae la referencia declarada."}, {"q": "¿Se puede usar más de una vez?", "a": "No reutilices una prenda abierta o contaminada. Sigue la instrucción del fabricante y el procedimiento del sitio: el overol se retira después del uso o al contaminarse. Las unidades sin abrir se guardan secas, por talla y con el empaque íntegro, lejos de herramientas que puedan perforarlo."}, {"q": "¿Cómo elijo talla?", "a": "Pruébala en zona limpia con las botas y los guantes previstos, haciendo los movimientos de la tarea: estirar brazos, sentarte, arrodillarte y subir un escalón. Si el cierre o las costuras se tensan, sube de talla. Pídenos las tallas por persona y te cotizamos el desglose para tu cuadrilla."}, {"q": "¿La cinta siempre mejora la protección?", "a": "No. Solo ayuda si tu procedimiento la contempla y permite retirar el conjunto sin crear otra vía de contaminación. Antes de sellar puños y tobillos con cinta, define cómo se retira y quién lo hace; una cinta mal puesta desgarra la prenda o complica la descontaminación."}, {"q": "¿Dónde se desecha?", "a": "En el contenedor y por la ruta definidos según el agente que contaminó la prenda; no se sacude ni se reutiliza. Deja escrito antes de la tarea dónde se segrega y quién vigila el retiro, y recuerda que la disposición se ajusta al contaminante y al procedimiento de tu sitio."}],
     sinonimos: ['overol desechable', 'overol desechable con capucha', 'overol químico desechable', 'traje desechable químico', 'coverall químico', 'overol contra salpicadura'], sinonimosNota: 'También se solicita como coverall; el nombre debe ir acompañado por el tipo de exposición y construcción requerida.', comparativa: { titulo: 'Overol desechable o traje reutilizable', intro: 'El ciclo de servicio se decide junto con la barrera y la descontaminación, no sólo por cantidad de usos.', columnas: ['Criterio', 'Desechable', 'Reutilizable'], filas: [['Ciclo', 'Se retira tras el uso o contaminación', 'Requiere inspección, limpieza y control de condición'], ['Tarea', 'Delimitada y con barrera declarada', 'Exposición que justifica programa de mantenimiento'], ['Recepción', 'Empaque y talla por unidad', 'Historial de servicio y descontaminación'], ['Decisión', 'No reutilizar por apariencia', 'Seguir estrictamente al fabricante']] }, relacionados: [{ label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }, { label: 'Guantes para químicos', href: '/trajes/hazmat/guantes-quimicos/' }],
   },
   {
     slug: 'botas-quimicas', familia: 'hazmat', nombreCard: 'Botas químicas', nombre: 'Botas químicas', seoTitle: 'Botas para químicos: calzado Hazmat de barrera y sellado', seoDescription: 'Botas para químicos que cierran la barrera de pie y tobillo en Hazmat: compatibilidad con el agente, suela, traslape con el traje y descontaminación.', keywords: ['botas para químicos', 'botas químicas', 'botas resistentes a químicos'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Botas químicas', h1Accent: 'para completar el sellado inferior', lead: 'Protección de pie y tobillo elegida por el agente, el piso y la interfaz con el traje, no por su apariencia robusta.', descRight: ["La bota debe ser compatible con el agente y con la forma en que tu traje se traslapa o se sella sobre ella. Te la cotizamos con la ficha de compatibilidad del fabricante, no por parecer robusta.", "Puntera, entresuela, altura de caña y suela responden a riesgos distintos, y ninguna prueba resistencia química por sí sola. Mándanos agente, tipo de piso, talla e interfaz con el traje y te proponemos el par."], meta: ['Pie y tobillo', 'Traslape con traje', 'Suela y agarre', 'Compatibilidad química'],
-    resumen: ["La protección del pie decide si el sistema conserva su barrera al caminar en una zona contaminada. La selección empieza por el agente, pero también cuentan el piso, el riesgo de resbalamiento, los objetos que perforan, la altura de la bota y la forma de traslape con el traje. Una bota de apariencia robusta no confirma resistencia al químico ni impide que el líquido entre por el borde superior; la compatibilidad se consulta por sustancia, concentración, temperatura y duración esperada.", "Define si el traje cubrirá la bota, entrará dentro de ella o usará otra interfaz indicada por la configuración: cambia cómo escurre una salpicadura y cómo se inspecciona el conjunto. Prueba la combinación con movimientos reales —escalera, rodilla, giro, paso sobre obstáculos—. Debe haber espacio para el pie sin que el talón se levante y la suela debe mantener contacto estable; una talla equivocada fatiga y puede romper el traslape al caminar.", "En tu solicitud indica si necesitas puntera, entresuela, tipo de suela o altura de caña, además de la compatibilidad química declarada. Una planta que evita la perforación no confirma resistencia al agente, y una caña alta no resuelve un traslape mal armado. Prueba cada par con el pantalón o el traje que usará tu cuadrilla para comprobar que la movilidad del tobillo y el agarre no abren una vía al contaminante.", "En una zona con charcos o residuos, la inspección incluye el contorno de la suela y la unión entre suela y corte: un desprendimiento pequeño abre una ruta de entrada que no se ve sobre piso seco. Antes de usarlas revisa cortes, grietas, deformación, residuos atrapados en el dibujo y el estado del borde superior; si hay agujetas, cierre o agarraderas, confirma cómo quedarán cubiertos y accesibles para descontaminar sin tocar el exterior con la mano desnuda.", "Al salir de la zona, descontamina suela y exterior antes de entrar al vehículo, al vestidor o al área limpia, y no guardes un par contaminado junto con calzado de servicio. Registra agente, condición y acción aplicada cuando hubo exposición: ese historial decide si el par vuelve a operación conforme al procedimiento y a las indicaciones del fabricante. Una bota sin identificación de su material o sin evaluación posterior no se reasigna como calzado cotidiano.", "Las botas químicas completan una configuración Hazmat, pero no sustituyen el calzado estructural de bombero ni prometen protección térmica, de impacto o eléctrica si el fabricante no la declara. La NOM-017-STPS-2024 exige seleccionar el EPP conforme al riesgo; aquí el riesgo se concentra en el contacto inferior, la estabilidad y la ruta de contaminación durante el retiro."],
+    resumen: ["La protección del pie decide si el sistema conserva su barrera al caminar en una zona contaminada. La selección empieza por el agente, pero también cuentan el piso, el riesgo de resbalamiento, los objetos que perforan, la altura de la bota y la forma de traslape con el traje. Una bota de apariencia robusta no confirma resistencia al químico ni impide que el líquido entre por el borde superior; la compatibilidad se consulta por sustancia, concentración, temperatura y duración esperada.", "Define si el traje cubrirá la bota, entrará dentro de ella o usará otra interfaz indicada por la configuración: cambia cómo escurre una salpicadura y cómo se inspecciona el conjunto. Prueba la combinación con movimientos reales: escalera, rodilla, giro y paso sobre obstáculos. Debe haber espacio para el pie sin que el talón se levante y la suela debe mantener contacto estable; una talla equivocada fatiga y puede romper el traslape al caminar.", "En tu solicitud indica si necesitas puntera, entresuela, tipo de suela o altura de caña, además de la compatibilidad química declarada. Una planta que evita la perforación no confirma resistencia al agente, y una caña alta no resuelve un traslape mal armado. Prueba cada par con el pantalón o el traje que usará tu cuadrilla para comprobar que la movilidad del tobillo y el agarre no abren una vía al contaminante.", "En una zona con charcos o residuos, la inspección incluye el contorno de la suela y la unión entre suela y corte. Un desprendimiento pequeño abre una ruta de entrada que no se ve sobre piso seco. Antes de usarlas revisa cortes, grietas, deformación, residuos atrapados en el dibujo y el borde superior. Si hay agujetas, cierre o agarraderas, confirma cómo quedarán cubiertos y accesibles para descontaminar sin tocar el exterior con la mano desnuda.", "Al salir de la zona, descontamina suela y exterior antes de entrar al vehículo, al vestidor o al área limpia, y no guardes un par contaminado junto con calzado de servicio. Registra agente, condición y acción aplicada cuando hubo exposición: ese historial decide si el par vuelve a operación conforme al procedimiento y a las indicaciones del fabricante. Una bota sin identificación de su material o sin evaluación posterior no se reasigna como calzado cotidiano.", "Las botas químicas completan una configuración Hazmat, pero no sustituyen el calzado estructural de bombero ni prometen protección térmica, de impacto o eléctrica si el fabricante no la declara. La NOM-017-STPS-2024 exige seleccionar el EPP conforme al riesgo; aquí el riesgo se concentra en el contacto inferior, la estabilidad y la ruta de contaminación durante el retiro."],
     puntosClave: ['Compatibilidad confirmada por tabla del fabricante', 'Traslape con traje definido y probado en movimiento', 'Suela elegida por agarre y condición de piso', 'Puntera y entresuela son requisitos independientes', 'Inspección de caña, corte y unión de suela', 'Descontaminación antes de llegar a zona limpia'], images: [{ src: '/images/catalogo/hazmat/tipo-botas-quimicas.avif', alt: 'Botas químicas para protección de pie y tobillo Hazmat' }],
     fichaTecnica: [{ grupo: 'Selección química', filas: [{ campo: 'Agente', valor: 'Sustancia y concentración identificadas', nota: 'Base para consultar compatibilidad' }, { campo: 'Exposición', valor: 'Charco, salpicadura o contacto incidental', nota: 'Registrar temperatura y duración prevista' }, { campo: 'Material', valor: 'Declarado por fabricante', nota: 'No asumir equivalencia por color o espesor' }] }, { grupo: 'Construcción', filas: [{ campo: 'Caña', valor: 'Altura definida por interfaz', nota: 'Debe cubrir la zona prevista sin impedir movilidad' }, { campo: 'Suela', valor: 'Agarre para piso evaluado', nota: 'Revisar residuos y unión con el corte' }, { campo: 'Puntera / entresuela', valor: 'Cuando el riesgo lo requiera', nota: 'No sustituyen compatibilidad química' }] }, { grupo: 'Sistema', filas: [{ campo: 'Traslape', valor: 'Traje sobre, dentro o interfaz definida', nota: 'Se ensaya con movimientos reales' }, { campo: 'Inspección', valor: 'Antes y después de exposición', nota: 'Buscar grieta, corte, separación o residuo' }, { campo: 'Selección', valor: 'NOM-017-STPS-2024', nota: 'Integra el calzado al análisis de riesgo' }] }],
     incluye: ['Par de botas químicas en talla solicitada', 'Construcción de caña y suela especificada', 'Instrucciones de inspección y cuidado del fabricante'], noIncluye: ['Traje químico o pantalón de barrera', 'Plantillas o calcetines especializados', 'Proceso de descontaminación y registro de exposición'],
     errores: [{"error": "Comprar sólo por caña alta", "realidad": "La altura no demuestra compatibilidad ni corrige un traslape incorrecto. Compara la ficha de compatibilidad con tu agente y prueba el traslape con tu traje antes de decidir por la caña."}, {"error": "Confundir puntera con resistencia química", "realidad": "La protección contra impacto y la barrera ante un agente son propiedades distintas. Pide por separado la puntera o entresuela que necesites y la compatibilidad química declarada."}, {"error": "No probar con el traje", "realidad": "Caminar, subir escaleras y arrodillarte pueden abrir la interfaz inferior. Prueba el par con el traje armado y los movimientos de la tarea antes de aceptar el lote."}, {"error": "Ignorar la unión de suela", "realidad": "Una separación pequeña deja entrar contaminante sin que se vea a distancia. Revisa el contorno de la suela antes y después de cada exposición, sobre todo si hubo charcos."}, {"error": "Entrar a vehículo sin descontaminar", "realidad": "La suela transfiere residuos a cabina, vestidor y áreas limpias. Define dónde se descontamina el calzado antes de que la cuadrilla salga de la zona."}, {"error": "Reasignar un par expuesto como calzado diario", "realidad": "Sin historial ni evaluación posterior no conoces su condición de servicio. Registra agente, condición y acción aplicada, y no reasignes un par expuesto como calzado cotidiano."}],
     aplicaciones: [{"titulo": "Control de derrame", "desc": "Desplazamiento sobre superficie con contacto químico evaluado, con el traslape de tu traje ya definido y probado."}, {"titulo": "Descontaminación de zona", "desc": "Protección inferior mientras lavas, recolectas o segregas residuos, con suela de agarre para piso mojado."}, {"titulo": "Mantenimiento de proceso", "desc": "Trabajo alrededor de recipientes o líneas con riesgo de salpicadura a pie y tobillo, con caña compatible con la interfaz."}, {"titulo": "Apoyo Hazmat", "desc": "Complemento de tu traje y tus guantes dentro de una configuración que revisas como sistema y pruebas en movimiento."}],
-    faqs: [{"q": "¿Toda bota de hule sirve para químicos?", "a": "No. El material debe ser compatible con el agente y las condiciones de exposición: concentración, temperatura y duración. Un hule que resiste un agente puede degradarse con otro, así que compara la ficha del fabricante con tu sustancia. Mándanos tu agente por WhatsApp y te proponemos el par con su tabla de compatibilidad."}, {"q": "¿El traje va dentro o fuera de la bota?", "a": "Depende de la configuración que indique el fabricante del traje y de tu procedimiento, y se prueba para controlar cómo escurre la salpicadura: con el traje sobre la bota el líquido escurre hacia afuera; con el traje dentro, puede entrar por la caña. Dinos qué traje usas y te confirmamos el traslape."}, {"q": "¿La puntera sustituye la compatibilidad?", "a": "No. La puntera y la entresuela atienden impacto o perforación, no necesariamente el contacto con un químico. Pídelas cuando tu riesgo mecánico lo justifique y exige aparte la compatibilidad química declarada por el fabricante; nosotros te cotizamos ambos datos en la misma ficha para que no queden implícitos."}, {"q": "¿Cómo reviso la suela?", "a": "Busca cortes, grietas, desprendimiento entre suela y corte y residuos atrapados en el dibujo, antes y después de cada exposición, con especial atención al contorno si hubo charcos. Un desprendimiento pequeño abre una ruta de entrada que no se ve sobre piso seco; ante la duda, aparta el par y regístralo."}, {"q": "¿Se usan para incendio estructural?", "a": "No asumas esa capacidad: una bota química no sustituye una bota estructural certificada ni promete protección térmica, de impacto o eléctrica si el fabricante no la declara. Para incendio cotizamos la bota de hule o de piel estructural; para Hazmat, esta. Dinos tu operación y te decimos cuál va."}, {"q": "¿Cómo se guardan tras una salida?", "a": "Después de descontaminar e inspeccionar, separadas del calzado limpio y con su condición registrada: agente, exposición y acción aplicada. No las guardes junto con calzado de servicio; ese historial es lo que decide si el par vuelve a operación o se retira."}, {"q": "¿Qué datos se requieren para pedirlas?", "a": "Agente, concentración, temperatura, tipo de exposición, tipo de piso, talla e interfaz con el traje. Con esos siete datos te cotizamos el par con su ficha de compatibilidad y confirmamos el traslape. Mándalos por WhatsApp o por correo y te respondemos en el día hábil."}],
+    faqs: [{"q": "¿Toda bota de hule sirve para químicos?", "a": "No. El material debe ser compatible con el agente y las condiciones de exposición: concentración, temperatura y duración. Un hule que resiste un agente puede degradarse con otro, así que compara la ficha del fabricante con tu sustancia. Mándanos tu agente por WhatsApp y te proponemos el par con su tabla de compatibilidad."}, {"q": "¿El traje va dentro o fuera de la bota?", "a": "Depende de la configuración que indique el fabricante del traje y de tu procedimiento, y se prueba para ver cómo escurre la salpicadura. Con el traje sobre la bota el líquido escurre hacia afuera; con el traje dentro, puede entrar por la caña. Dinos qué traje usas y te confirmamos el traslape."}, {"q": "¿La puntera sustituye la compatibilidad?", "a": "No. La puntera y la entresuela atienden impacto o perforación, no necesariamente el contacto con un químico. Pídelas cuando tu riesgo mecánico lo justifique y exige aparte la compatibilidad química declarada por el fabricante; nosotros te cotizamos ambos datos en la misma ficha para que no queden implícitos."}, {"q": "¿Cómo reviso la suela?", "a": "Busca cortes, grietas, desprendimiento entre suela y corte y residuos atrapados en el dibujo, antes y después de cada exposición, con especial atención al contorno si hubo charcos. Un desprendimiento pequeño abre una ruta de entrada que no se ve sobre piso seco; ante la duda, aparta el par y regístralo."}, {"q": "¿Se usan para incendio estructural?", "a": "No asumas esa capacidad: una bota química no sustituye una bota estructural certificada ni promete protección térmica, de impacto o eléctrica si el fabricante no la declara. Para incendio cotizamos la bota de hule o de piel estructural; para Hazmat, esta. Dinos tu operación y te decimos cuál va."}, {"q": "¿Cómo se guardan tras una salida?", "a": "Después de descontaminar e inspeccionar, separadas del calzado limpio y con su condición registrada: agente, exposición y acción aplicada. No las guardes junto con calzado de servicio; ese historial es lo que decide si el par vuelve a operación o se retira."}, {"q": "¿Qué datos se requieren para pedirlas?", "a": "Agente, concentración, temperatura, tipo de exposición, tipo de piso, talla e interfaz con el traje. Con esos siete datos te cotizamos el par con su ficha de compatibilidad y confirmamos el traslape. Mándalos por WhatsApp o por correo y te respondemos en el día hábil."}],
     sinonimos: ['botas químicas', 'botas para Hazmat', 'calzado resistente a químicos', 'botas de protección química'], sinonimosNota: 'También se piden como calzado químico; la orden debe especificar el agente y la construcción necesaria.', comparativa: { titulo: 'Bota química o bota estructural de bombero', intro: 'Ambas protegen el pie, pero están diseñadas y se seleccionan frente a peligros distintos.', columnas: ['Criterio', 'Bota química', 'Bota estructural'], filas: [['Riesgo principal', 'Contacto químico evaluado', 'Calor, agua y operación de incendio'], ['Compatibilidad', 'Tabla por agente y condiciones', 'No se presume para químicos específicos'], ['Interfaz', 'Traslape con traje Hazmat', 'Conjunto estructural y pantalonera'], ['Decisión', 'Para respuesta química documentada', 'Para incendio estructural certificado']] }, relacionados: [{ label: 'Traje químico nivel B', href: '/trajes/hazmat/traje-nivel-b/' }, { label: 'Overol desechable', href: '/trajes/hazmat/overol-quimico-desechable/' }, { label: 'Guantes para químicos', href: '/trajes/hazmat/guantes-quimicos/' }],
   },
   {
     slug: 'guantes-quimicos', familia: 'hazmat', nombreCard: 'Guantes para químicos', nombre: 'Guantes químicos', seoTitle: 'Guantes para químicos Hazmat: permeación, puño y destreza', seoDescription: 'Guantes para químicos en respuesta Hazmat: compatibilidad con el agente, permeación, largo de puño, destreza e interfaz con la manga. Cotiza con ficha.', keywords: ['guantes para químicos', 'guantes resistentes a químicos', 'guantes químicos'],
     eyebrow: 'Pieza · Materiales peligrosos', h1: 'Guantes para químicos', h1Accent: 'con barrera y destreza', lead: 'Guantes para químicos elegidos por agente y tarea: una barrera útil debe permitir manipular válvulas, muestras y herramientas sin perder control.', descRight: ["Permeación y destreza se revisan juntas: una barrera que te impide cerrar una válvula o tomar una muestra provoca errores justo durante la exposición. Cotizamos el guante por tu agente y por la tarea que hará la mano.", "Material, talla, longitud de puño y traslape con la manga se especifican como una interfaz continua, no como accesorios sueltos. Mándanos agente, tarea y talla y te proponemos el par con la ficha de compatibilidad."], meta: ['EN ISO 374', 'Permeación y degradación', 'Puño y traslape', 'Destreza operativa'],
-    resumen: ["Los guantes químicos se eligen por la sustancia y por lo que la mano debe hacer: abrir una válvula, tomar una muestra, mover un contenedor o usar una herramienta piden destrezas distintas. Un guante grueso puede dar buena barrera e impedir una maniobra fina; uno flexible puede ser insuficiente para el tiempo o la concentración definidos. La decisión se confirma con la tabla de compatibilidad y el escenario completo, no por color ni grosor.", "Permeación, degradación y penetración son preguntas separadas: el material puede no mostrar daño visible y aun así tener un límite de uso frente a un agente. Por eso documenta sustancia, concentración, temperatura, duración, parte de la mano expuesta y contacto con mezclas. EN ISO 374 es una referencia europea para guantes de protección química, pero no reemplaza la tabla del fabricante para tu condición de trabajo.", "En la orden separamos longitud de puño, talla y material, porque de ellos depende cómo se traslapa el guante con la manga y cuánta destreza conservas. Pide una muestra y comprueba que puedes cerrar una válvula, sostener una herramienta o manipular una radio sin descubrir la muñeca. Si la tarea mezcla líquido y piezas abrasivas, evalúa ambas exposiciones; no pongas un guante de trabajo sobre la barrera química sin confirmar ajuste y retiro controlado.", "Antes de usarlo, inspecciona el guante con el método autorizado: perforaciones, cortes, pegajosidad, decoloración o rigidez. Durante la tarea, cambia el par si se contamina más de lo previsto, se engancha o pierde ajuste. Al terminar, descontamina el exterior antes de quitártelo y no toques cara, radio, volante ni ropa con el guante puesto: un daño pequeño ignorado en una manipulación larga se vuelve una vía de entrada.", "En una configuración Hazmat puede haber guante interior y exterior. El objetivo es mantener la barrera y poder retirar el conjunto sin tocar superficies contaminadas, no acumular capas sin probar la destreza. El puño no debe enrollarse bajo la manga ni formar una arruga que acumule líquido; un compañero observa la unión mientras flexionas dedos, codos y hombros, porque dos tallas correctas no siempre sellan entre sí.", "Guarda los pares de repuesto cerrados y separados por talla y material, para que una sustitución urgente no introduzca una composición distinta, y registra el agente previsto y el punto de la tarea para que un guante de muestreo no termine en una limpieza prolongada. La NOM-017-STPS-2024 pide seleccionar el EPP según el riesgo; en las manos eso significa controlar la química, la tarea y el retiro."],
+    resumen: ["Los guantes químicos se eligen por la sustancia y por lo que la mano debe hacer: abrir una válvula, tomar una muestra, mover un contenedor o usar una herramienta piden destrezas distintas. Un guante grueso puede dar buena barrera e impedir una maniobra fina; uno flexible puede ser insuficiente para el tiempo o la concentración definidos. La decisión se confirma con la tabla de compatibilidad y el escenario completo, no por color ni grosor.", "Permeación, degradación y penetración son preguntas separadas: el material puede no mostrar daño visible y aun así tener un límite de uso frente a un agente. Por eso documenta sustancia, concentración, temperatura, duración, parte de la mano expuesta y contacto con mezclas. EN ISO 374 es una referencia europea para guantes de protección química, pero no reemplaza la tabla del fabricante para tu condición de trabajo.", "En la orden separamos longitud de puño, talla y material, porque de ellos depende cómo se traslapa el guante con la manga y cuánta destreza conservas. Pide una muestra y comprueba que puedes cerrar una válvula, sostener una herramienta o manipular una radio sin descubrir la muñeca. Si la tarea mezcla líquido y piezas abrasivas, evalúa ambas exposiciones; no pongas un guante de trabajo sobre la barrera química sin confirmar ajuste y retiro controlado.", "Antes de usarlo, inspecciona el guante con el método autorizado: perforaciones, cortes, pegajosidad, decoloración o rigidez. Durante la tarea, cambia el par si se contamina más de lo previsto, se engancha o pierde ajuste. Al terminar, descontamina el exterior antes de quitártelo y no toques cara, radio, volante ni ropa con el guante puesto: un daño pequeño ignorado en una manipulación larga se vuelve una vía de entrada.", "En una configuración Hazmat puede haber guante interior y exterior. El objetivo es mantener la barrera y poder retirar el conjunto sin tocar superficies contaminadas, no acumular capas sin probar la destreza. El puño no debe enrollarse bajo la manga ni formar una arruga que acumule líquido; un compañero observa la unión mientras flexionas dedos, codos y hombros, porque dos tallas correctas no siempre sellan entre sí.", "Guarda los pares de repuesto cerrados y separados por talla y material, para que una sustitución urgente no introduzca una composición distinta. Registra también el agente y la tarea previstos, para que un guante de muestreo no termine en una limpieza prolongada. La NOM-017-STPS-2024 pide seleccionar el EPP según el riesgo; en las manos eso significa controlar la química, la tarea y el retiro."],
     puntosClave: ['Compatibilidad confirmada por agente y condiciones', 'Permeación, degradación y penetración evaluadas por separado', 'EN ISO 374 como referencia, no sustituto de la tabla', 'Longitud de puño y talla definidas con la manga', 'Destreza probada con la maniobra real', 'Inspección y descontaminación antes del retiro'], images: [{ src: '/images/catalogo/hazmat/tipo-guantes-quimicos.avif', alt: 'Guantes químicos para protección manual Hazmat' }],
     fichaTecnica: [{ grupo: 'Selección química', filas: [{ campo: 'Agente', valor: 'Sustancia, concentración y mezcla', nota: 'Base de la tabla de compatibilidad' }, { campo: 'Exposición', valor: 'Contacto, salpicadura y duración', nota: 'No se inventa un tiempo de permeación' }, { campo: 'Referencia', valor: 'EN ISO 374, cuando aplique', nota: 'La clasificación se interpreta con la ficha del fabricante' }] }, { grupo: 'Interfaz y tarea', filas: [{ campo: 'Material', valor: 'Declarado para el agente', nota: 'No elegir por color o espesor' }, { campo: 'Puño', valor: 'Longitud compatible con manga', nota: 'Evita muñeca expuesta y arrugas' }, { campo: 'Destreza', valor: 'Probada con tarea real', nota: 'Válvula, muestra, herramienta o radio' }] }, { grupo: 'Control de uso', filas: [{ campo: 'Inspección', valor: 'Antes, durante y después', nota: 'Buscar corte, perforación, rigidez o degradación' }, { campo: 'Reemplazo', valor: 'Ante daño o contaminación no prevista', nota: 'Mantener pares de repuesto identificados' }, { campo: 'Retiro', valor: 'Después de descontaminar exterior', nota: 'No tocar cara ni objetos limpios con el guante puesto' }] }],
     incluye: ['Par de guantes químicos en material y talla solicitados', 'Longitud de puño especificada', 'Ficha de compatibilidad y cuidado del fabricante'], noIncluye: ['Guante interior o exterior adicional', 'Prueba de ajuste de respirador', 'Procedimiento de descontaminación y retiro'],
-    errores: [{"error": "Elegir por grosor o color", "realidad": "La compatibilidad depende del material y del agente, no de la apariencia. Mándanos la sustancia y te proponemos el material con su ficha; no compares guantes por lo gruesos que se ven."}, {"error": "Usar un tiempo de permeación genérico", "realidad": "Consulta la tabla del fabricante para tu concentración, temperatura y exposición reales; un valor genérico puede sobreestimar el tiempo de uso frente a tu agente."}, {"error": "No probar destreza", "realidad": "Un guante que te impide controlar una válvula aumenta el riesgo de la maniobra. Prueba una muestra con la tarea real —válvula, muestra, herramienta— antes de comprar el lote."}, {"error": "Dejar el puño enrollado", "realidad": "La arruga puede acumular líquido y abrir la interfaz con la manga. Define la longitud de puño con la manga de tu traje y pruébala flexionando codos y hombros."}, {"error": "Tocar radio o cara con el guante contaminado", "realidad": "La barrera puede transferir el contaminante fuera de la tarea. Descontamina el exterior antes de quitarte el guante y define dónde se deja la radio mientras dure la exposición."}, {"error": "Reponer con un material similar", "realidad": "Una composición que se ve parecida puede comportarse distinto frente al mismo agente. Repón con el mismo material y modelo, y guarda los pares de repuesto separados por talla y material."}],
+    errores: [{"error": "Elegir por grosor o color", "realidad": "La compatibilidad depende del material y del agente, no de la apariencia. Mándanos la sustancia y te proponemos el material con su ficha; no compares guantes por lo gruesos que se ven."}, {"error": "Usar un tiempo de permeación genérico", "realidad": "Consulta la tabla del fabricante para tu concentración, temperatura y exposición reales; un valor genérico puede sobreestimar el tiempo de uso frente a tu agente."}, {"error": "No probar destreza", "realidad": "Un guante que te impide controlar una válvula aumenta el riesgo de la maniobra. Prueba una muestra con la tarea real (válvula, muestra o herramienta) antes de comprar el lote."}, {"error": "Dejar el puño enrollado", "realidad": "La arruga puede acumular líquido y abrir la interfaz con la manga. Define la longitud de puño con la manga de tu traje y pruébala flexionando codos y hombros."}, {"error": "Tocar radio o cara con el guante contaminado", "realidad": "La barrera puede transferir el contaminante fuera de la tarea. Descontamina el exterior antes de quitarte el guante y define dónde se deja la radio mientras dure la exposición."}, {"error": "Reponer con un material similar", "realidad": "Una composición que se ve parecida puede comportarse distinto frente al mismo agente. Repón con el mismo material y modelo, y guarda los pares de repuesto separados por talla y material."}],
     aplicaciones: [{"titulo": "Muestreo técnico", "desc": "Manipulación de recipientes y herramientas con material compatible con tu agente y destreza verificada con una muestra."}, {"titulo": "Control de válvulas", "desc": "Operación manual de proceso bajo exposición química evaluada, con puño que traslapa con la manga sin enrollarse."}, {"titulo": "Descontaminación", "desc": "Contacto con superficies o equipo mientras se mantiene una secuencia de retiro controlada y el exterior no toca piel ni radio."}, {"titulo": "Mantenimiento delimitado", "desc": "Trabajo con agente identificado, pares de repuesto por talla y material y compatibilidad documentada."}],
-    faqs: [{"q": "¿Todo guante de nitrilo sirve para químicos?", "a": "No. La compatibilidad depende del agente, la concentración, la temperatura y el tiempo de exposición: un nitrilo que resiste un agente puede degradarse con otro. Mándanos tu sustancia por WhatsApp y te proponemos el material con la tabla del fabricante, en lugar de elegir por el nombre del material."}, {"q": "¿Qué es permeación?", "a": "Es el paso del agente a través del material; puede ocurrir sin daño visible, y por eso el guante se elige con la información del fabricante y no revisándolo a simple vista. Para tu tarea, pide el tiempo de permeación con tu concentración y temperatura; nosotros lo solicitamos al proveedor con la cotización."}, {"q": "¿Qué referencia europea aplica?", "a": "EN ISO 374 es la referencia común para guantes de protección química, y se lee junto con la información específica del modelo y del agente. La norma por sí sola no confirma que un guante resista tu sustancia: la ficha que te entregamos trae la referencia declarada y la tabla de compatibilidad del fabricante."}, {"q": "¿Cómo elijo la longitud del puño?", "a": "Con la manga de tu traje y el movimiento de la tarea: el puño debe traslapar con la manga sin enrollarse ni dejar la muñeca descubierta al levantar los brazos. Pruébalo con la muñeca flexionada y con el traje armado, y pídenos la longitud por escrito en la cotización."}, {"q": "¿Puedo poner un guante de trabajo encima?", "a": "Solo después de confirmar con la muestra que el conjunto mantiene talla, ajuste, destreza y retiro controlado. Si la tarea combina líquido y piezas abrasivas, evalúa las dos exposiciones y prueba el par armado con una muestra; una capa extra sin probar puede quitarte el control de la herramienta o dificultar el retiro."}, {"q": "¿Cuándo cambio el par?", "a": "Ante corte, perforación, degradación, pérdida de ajuste o contaminación fuera de lo previsto; y siempre que el guante se enganche o quede pegajoso, rígido o decolorado. Ten pares de repuesto cerrados, por talla y material, para no improvisar con uno distinto en plena tarea."}, {"q": "¿Cómo se retiran?", "a": "Después de descontaminar el exterior, evitando tocar piel, cara, radio o ropa limpia con el guante contaminado. Define la secuencia antes de la tarea y ensáyala con un compañero que observe; en configuraciones con guante interior y exterior, retira el exterior sin tocar el interior con la superficie contaminada."}],
+    faqs: [{"q": "¿Todo guante de nitrilo sirve para químicos?", "a": "No. La compatibilidad depende del agente, la concentración, la temperatura y el tiempo de exposición: un nitrilo que resiste un agente puede degradarse con otro. Mándanos tu sustancia por WhatsApp y te proponemos el material con la tabla del fabricante, en lugar de elegir por el nombre del material."}, {"q": "¿Qué es permeación?", "a": "Es el paso del agente a través del material; puede ocurrir sin daño visible, y por eso el guante se elige con la información del fabricante y no revisándolo a simple vista. Para tu tarea, pide el tiempo de permeación con tu concentración y temperatura; nosotros lo solicitamos al proveedor con la cotización."}, {"q": "¿Qué referencia europea aplica?", "a": "EN ISO 374 es la referencia común para guantes de protección química, y se lee junto con la información específica del modelo y del agente. La norma por sí sola no confirma que un guante resista tu sustancia: la ficha que te entregamos trae la referencia declarada y la tabla de compatibilidad del fabricante."}, {"q": "¿Cómo elijo la longitud del puño?", "a": "Con la manga de tu traje y el movimiento de la tarea: el puño debe traslapar con la manga sin enrollarse ni dejar la muñeca descubierta al levantar los brazos. Pruébalo con la muñeca flexionada y con el traje armado, y pídenos la longitud por escrito en la cotización."}, {"q": "¿Puedo poner un guante de trabajo encima?", "a": "Solo después de confirmar con la muestra que el conjunto mantiene talla, ajuste, destreza y retiro controlado. Si la tarea combina líquido y piezas abrasivas, evalúa las dos exposiciones y prueba el par armado con una muestra. Una capa extra sin probar puede quitarte el control de la herramienta o dificultar el retiro."}, {"q": "¿Cuándo cambio el par?", "a": "Ante corte, perforación, degradación, pérdida de ajuste o contaminación fuera de lo previsto; y siempre que el guante se enganche o quede pegajoso, rígido o decolorado. Ten pares de repuesto cerrados, por talla y material, para no improvisar con uno distinto en plena tarea."}, {"q": "¿Cómo se retiran?", "a": "Después de descontaminar el exterior, evitando tocar piel, cara, radio o ropa limpia con el guante contaminado. Define la secuencia antes de la tarea y ensáyala con un compañero que observe; en configuraciones con guante interior y exterior, retira el exterior sin tocar el interior con la superficie contaminada."}],
     sinonimos: ['guantes químicos', 'guantes resistentes a químicos', 'guantes Hazmat', 'guantes de protección química'], sinonimosNota: 'El sinónimo comercial no identifica el material ni el agente; ambos deben quedar escritos en la solicitud.', comparativa: { titulo: 'Guante químico o guante estructural', intro: 'La resistencia térmica y la barrera frente a un agente químico son requisitos distintos.', columnas: ['Criterio', 'Guante químico', 'Guante estructural'], filas: [['Riesgo principal', 'Contacto con agente identificado', 'Calor, abrasión y operación de incendio'], ['Selección', 'Tabla de compatibilidad y tarea', 'Certificación del conjunto estructural'], ['Destreza', 'Probada con válvula o muestra', 'Orientada a herramientas de bombero'], ['Decisión', 'Para exposición química evaluada', 'No se presume compatible con químicos específicos']] }, relacionados: [{ label: 'Traje químico nivel C', href: '/trajes/hazmat/traje-nivel-c/' }, { label: 'Botas químicas', href: '/trajes/hazmat/botas-quimicas/' }, { label: 'Traje encapsulado nivel A', href: '/trajes/hazmat/traje-encapsulado-nivel-a/' }],
   }
 );
@@ -155,7 +155,7 @@ export const PIEZAS: Pieza[] = [
       'La prenda superior del conjunto de ataque interior: capa exterior, barrera de humedad y barrera térmica trabajando juntas, con DRD integrado para arrastre de rescate.',
     descRight: [
       'Es la pieza más cara del equipamiento y la que más se especifica mal. Se cotiza independiente de la pantalonera, y cada una de sus tres capas se declara por nombre comercial: sin ese dato, dos ofertas no son comparables por más que ambas digan "certificado".',
-      'Aquí está la ficha completa —construcción, valores de referencia, largos, tallas y opciones de configuración— más lo que conviene exigir por escrito antes de firmar una orden de compra o cerrar una partida de licitación.',
+      'Aquí está la ficha completa, con construcción, valores de referencia, largos, tallas y opciones, más lo que conviene exigir por escrito antes de firmar una orden de compra o cerrar una partida de licitación.',
     ],
     meta: ['NFPA 1970 · cap. 5–9', 'Tres capas', 'DRD integrado', 'Se cotiza por pieza'],
 
@@ -372,7 +372,7 @@ export const PIEZAS: Pieza[] = [
     "lead": "La mitad inferior del conjunto de ataque interior: mismo composite de tres capas que el chaquetón, con rodilla articulada, refuerzos y cuatro tipos de ajuste.",
     "descRight": [
       "Se cotiza independiente del chaquetón, y ahí empieza el problema más común: se compra una pieza de un corte y la otra de otro, y la interfaz de la cintura queda abierta. Esa unión es justo por donde entra el calor en ataque interior.",
-      "La pantalonera además concentra las decisiones que más se pasan por alto: tipo de cierre de cintura, si lleva arnés interno de escape, si el forro trae rodilleras y qué refuerzo va en rodilla y valenciana. Todo eso se define en la orden, no después."
+      "La pantalonera concentra además decisiones que se pasan por alto: el cierre de cintura, el arnés interno de escape, las rodilleras del forro y el refuerzo en rodilla y valenciana. Todo eso se define en la orden, no después."
     ],
     "meta": [
       "NFPA 1970 · cap. 5–9",
@@ -382,7 +382,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "La pantalonera estructural comparte con el chaquetón la misma lógica: capa exterior, barrera de humedad y barrera térmica ensambladas y certificadas como conjunto. Lo que cambia es la exigencia mecánica. Aquí el desgaste no viene del calor sino del movimiento: subir, bajar, hincarse, arrastrarse. Por eso la rodilla va articulada y reforzada, y la valenciana lleva protección extra.",
-      "Es también la pieza que más opciones esconde. El cierre de cintura puede ser de medio cinturón, cinturón completo o cinturón de escape; el forro puede traer rodilleras de fábrica; y el arnés interno de escape, si lo necesitas, se cose aquí y se certifica bajo una norma distinta a la del conjunto."
+      "Es también la pieza que más opciones esconde. El cierre de cintura puede ser de medio cinturón, cinturón completo o cinturón de escape, y el forro puede traer rodilleras de fábrica. Si necesitas arnés interno de escape, se cose aquí y se certifica bajo una norma distinta a la del conjunto."
     ],
     "puntosClave": [
       "Mismo composite de tres capas que el chaquetón, declarado por nombre comercial",
@@ -621,7 +621,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Técnicamente sí, pero no es recomendable. La certificación es del conjunto y la interfaz de cintura está diseñada para funcionar con su par. Si vas a mezclar, revísalo con nosotros antes de comprar."
       },
       {
-        "q": "¿Cuánto dura?",
+        "q": "¿Cuánto dura una pantalonera estructural?",
         "a": "El retiro es a los diez años desde la fecha de fabricación, igual que el chaquetón, aunque en la práctica la pantalonera suele necesitar reparación o reemplazo antes por desgaste mecánico en rodilla y valenciana."
       }
     ],
@@ -854,7 +854,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Porque la espalda del tirante queda debajo de la placa del arnés del ERA. Una hebilla metálica ahí se convierte en un punto de presión constante que se siente a los veinte minutos y que en jornadas largas produce lesión por compresión."
       },
       {
-        "q": "¿Cómo se especifican?",
+        "q": "¿Cómo se especifican los tirantes tipo H?",
         "a": "Por estatura del elemento, no por talla de pantalón. Si estás equipando una dotación, conviene levantar estaturas junto con las medidas de cintura y entrepierna de la pantalonera."
       },
       {
@@ -870,7 +870,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, acompañan a la pantalonera en el lavado avanzado, pero se retiran para la inspección avanzada porque hay que revisar costuras y elásticos por separado."
       },
       {
-        "q": "¿Cada cuánto se reponen?",
+        "q": "¿Cada cuánto se reponen los tirantes de la pantalonera estructural?",
         "a": "Antes que la pantalonera. El elástico pierde recuperación con los ciclos de lavado y el acolchado se comprime. No hay un plazo normativo específico: se reponen cuando dejan de sostener con el traje mojado."
       },
       {
@@ -1380,7 +1380,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "q": "¿Incluye la cuerda y el descensor?",
-        "a": "No. El arnés es el punto de conexión al cuerpo; el sistema de descenso —cuerda, gancho y descensor— se cotiza aparte y suele guardarse en una bolsa integrada al pantalón. Se pueden comprar juntos o por etapas."
+        "a": "No. El arnés es el punto de conexión al cuerpo; el sistema de descenso (cuerda, gancho y descensor) se cotiza aparte y suele guardarse en una bolsa integrada al pantalón. Se pueden comprar juntos o por etapas."
       },
       {
         "q": "¿Estorba con el equipo de respiración?",
@@ -1395,7 +1395,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Si soportó carga en una caída o descenso real, se retira de servicio. La deformación de la fibra no siempre es visible y la norma no permite reinspeccionar y devolver a servicio un elemento que ya trabajó bajo carga."
       },
       {
-        "q": "¿Se necesita capacitación?",
+        "q": "¿Se necesita capacitación para usar el arnés interno de escape?",
         "a": "Sí, y es la parte que más se omite. El autorrescate se ejecuta bajo estrés extremo, con humo y sin visibilidad. Un arnés sin entrenamiento previo es equipo que no se va a usar bien. Podemos cotizar la capacitación junto con el equipo."
       }
     ],
@@ -1661,7 +1661,7 @@ export const PIEZAS: Pieza[] = [
         "a": "En la edición 2018 de la antigua NFPA 1971 era opcional. Fuentes de la industria reportan que la NFPA 1970 la vuelve obligatoria, pero conviene confirmarlo contra la ficha técnica del fabricante y contra el texto de la norma antes de afirmarlo en un pliego."
       },
       {
-        "q": "¿Sirve con cualquier máscara de equipo de respiración?",
+        "q": "¿La monja estructural sirve con cualquier máscara de ERA?",
         "a": "No necesariamente. El sellado se logra en la interfaz con la máscara, y esa geometría cambia entre fabricantes. Al cotizar hay que decir qué modelo de ERA usa tu gente: es un dato tan importante como la talla."
       },
       {
@@ -1669,11 +1669,11 @@ export const PIEZAS: Pieza[] = [
         "a": "Debajo. Colocada por encima deja un canal directo hacia el cuello, justo lo contrario de lo que se busca. Es un error de uso frecuente que anula el beneficio de la pieza."
       },
       {
-        "q": "¿Cada cuánto se lava?",
+        "q": "¿Cada cuánto se lava la monja estructural?",
         "a": "Después de cada exposición a productos de combustión, no cuando se ve sucia. El hollín fino no siempre es visible y es el que queda en contacto con la piel durante horas si la capucha se guarda sin lavar."
       },
       {
-        "q": "¿Cada cuánto se repone?",
+        "q": "¿Cada cuánto se repone la monja antipartículas?",
         "a": "Más seguido que el resto del conjunto. Aunque el retiro máximo es a los diez años como el traje, en la práctica pierde elasticidad y capacidad de sellado mucho antes. Cuando deja de ajustar contra la máscara, deja de proteger."
       },
       {
@@ -1764,7 +1764,7 @@ export const PIEZAS: Pieza[] = [
       "Desglose por pieza"
     ],
     "resumen": [
-      "El conjunto de brigada se construye distinto al estructural. La capa externa es inherentemente resistente a la flama —la protección está en la fibra, no en un acabado que se lava— y el forro va desmontable, con barrera de humedad y barrera térmica que se separan para lavado e inspección. Eso baja el costo y facilita el mantenimiento en una planta que no tiene taller de EPP.",
+      "El conjunto de brigada se construye distinto al estructural. La capa externa es inherentemente resistente a la flama: la protección está en la fibra, no en un acabado que se lava. El forro es desmontable, con barrera de humedad y barrera térmica que se separan para lavado e inspección. Eso baja el costo y facilita el mantenimiento en una planta que no tiene taller de EPP.",
       "Los refuerzos van donde realmente se gasta: rodillas y valencianas. La cinta reflejante se coloca en mangas, pecho, faldón y pierna, porque buena parte de los conatos ocurren de noche o en zonas con poca luz. Los tirantes tipo X reparten el peso del pantalón sin herrajes que estorben."
     ],
     "puntosClave": [
@@ -2244,11 +2244,11 @@ export const PIEZAS: Pieza[] = [
         "a": "Significa que la tela disipa la carga estática en vez de acumularla. Importa donde hay atmósferas inflamables: una chispa por descarga estática es una fuente de ignición como cualquier otra. Se logra sumando un porcentaje de fibra de carbono a la aramida."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava el overol ignífugo NFPA 2112?",
         "a": "Lavado industrial sin suavizante ni blanqueador. Esos aditivos dejan residuo sobre la fibra y el residuo sí arde. Es el error de mantenimiento más común y anula parte de la protección sin que se note a simple vista."
       },
       {
-        "q": "¿Cuánto dura?",
+        "q": "¿Cuánto dura un overol ignífugo de brigada?",
         "a": "No tiene fecha de retiro como el traje estructural. Se retira por condición: daño mecánico, contaminación con hidrocarburo o pérdida de integridad de la tela. Un overol impregnado de combustible se retira aunque se vea nuevo."
       },
       {
@@ -2256,7 +2256,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Algunos modelos tienen valor de protección ante arco declarado, pero no todos. Si tu instalación tiene riesgo de arco, el nivel se define con el estudio de arco eléctrico de tu planta y no con el catálogo del proveedor."
       },
       {
-        "q": "¿Se puede bordar el logotipo?",
+        "q": "¿Se puede bordar el logotipo en el overol ignífugo?",
         "a": "Sí, con hilo y método compatibles con tela resistente a la flama. Un bordado con hilo convencional introduce material combustible sobre la prenda: hay que especificarlo en la orden."
       },
       {
@@ -2346,7 +2346,7 @@ export const PIEZAS: Pieza[] = [
       "Sin compra mínima"
     ],
     "resumen": [
-      "El chaquetón de brigadista comparte construcción con el del conjunto: capa externa inherentemente resistente a la flama, forro desmontable con barrera de humedad y barrera térmica, refuerzos en zonas de desgaste y cinta reflejante de alta visibilidad.",
+      "El chaquetón de brigadista comparte construcción con el del conjunto. Lleva capa externa inherentemente resistente a la flama, forro desmontable con barreras de humedad y térmica, refuerzos en zonas de desgaste y cinta reflejante de alta visibilidad.",
       "Comprado suelto sirve para tres cosas: reponer una prenda dañada, incorporar a un integrante nuevo o corregir una talla mal estimada en la compra original. En los tres casos conviene pedirlo con la misma configuración que el resto de la dotación."
     ],
     "puntosClave": [
@@ -2494,11 +2494,11 @@ export const PIEZAS: Pieza[] = [
         "a": "Con la ficha técnica de esa compra: ahí viene el gramaje, la disposición de cinta reflejante, el color y el tipo de forro. Si no la conservas, mándanos fotos de la prenda actual y te ayudamos a identificar la configuración."
       },
       {
-        "q": "¿Sirve para ataque interior?",
+        "q": "¿El chaquetón de brigadista sirve para ataque interior?",
         "a": "No. Es prenda de brigada, pensada para conato y primera respuesta. Si tu operación cambió y ahora entran a fuego declarado, lo correcto es migrar a conjunto estructural, no reponer más chaquetones de brigada."
       },
       {
-        "q": "¿Cómo tomo la talla?",
+        "q": "¿Cómo tomo la talla del chaquetón de brigadista?",
         "a": "Por medida de pecho y largo de manga del elemento. Te compartimos la guía del fabricante antes de pedir. Para altas de personal conviene medir en el momento y no estimar por la talla de camisa."
       },
       {
@@ -2506,7 +2506,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Técnicamente se puede, pero la interfaz entre las dos prendas deja de estar diseñada como conjunto. Si vas a mezclar, revísalo con nosotros antes de comprar."
       },
       {
-        "q": "¿Se puede bordar el logotipo?",
+        "q": "¿Se puede bordar el logotipo en el chaquetón de brigadista?",
         "a": "Sí, y conviene replicar exactamente el de la dotación existente: mismo tipo de letra, misma posición. Se define en la orden porque se aplica durante la confección."
       },
       {
@@ -2600,8 +2600,8 @@ export const PIEZAS: Pieza[] = [
       "Sin compra mínima"
     ],
     "resumen": [
-      "La pantalonera de brigadista lleva la misma construcción que el chaquetón —capa externa inherente y forro desmontable— pero con refuerzos adicionales donde el desgaste es mecánico y no térmico: rodilla y valenciana. Ahí es donde se decide cuánto dura la prenda.",
-      "La cinta reflejante en la pierna no es adorno: buena parte de las emergencias industriales ocurre de noche o en zonas con iluminación pobre, y la banda inferior es la que hace visible al elemento cuando está agachado o parcialmente cubierto por equipo."
+      "La pantalonera de brigadista lleva la misma construcción que el chaquetón, con capa externa inherente y forro desmontable, pero con refuerzos adicionales donde el desgaste es mecánico y no térmico: rodilla y valenciana. Ahí es donde se decide cuánto dura la prenda.",
+      "La cinta reflejante en la pierna no es adorno: muchas emergencias industriales ocurren de noche o con poca iluminación. La banda inferior es la que hace visible al elemento cuando está agachado o cubierto por equipo."
     ],
     "puntosClave": [
       "Es la pieza del conjunto que más rápido se desgasta",
@@ -2753,7 +2753,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Porque su desgaste es mecánico, no térmico. Rodillas y valencianas rozan contra suelo, escaleras y equipo en cada intervención y en cada simulacro. El chaquetón sufre menos abrasión y por eso aguanta más ciclos."
       },
       {
-        "q": "¿Puedo comprar solo el pantalón?",
+        "q": "¿Puedo comprar solo la pantalonera de brigadista?",
         "a": "Sí, sin compra mínima. Es la petición más frecuente de reposición en brigada industrial. Solo necesitamos la configuración de tu dotación para que la pieza nueva llegue igual que las que ya tienes."
       },
       {
@@ -2765,7 +2765,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Cuando el refuerzo de rodilla o valenciana está abierto, cuando hay quemadura o rasgadura en la capa externa, o cuando el forro presenta daño. Una prenda con el refuerzo abierto se degrada muy rápido: conviene reponerla antes de que llegue a la capa externa."
       },
       {
-        "q": "¿Cómo tomo la talla?",
+        "q": "¿Cómo tomo la talla de la pantalonera de brigadista?",
         "a": "Por cintura y largo, con la ropa que se usa debajo. No sirve la talla del pantalón de vestir: el corte es distinto y va sobre otra prenda. Te compartimos la guía del fabricante antes de pedir."
       },
       {
@@ -2863,7 +2863,7 @@ export const PIEZAS: Pieza[] = [
       "Pieza de reposición"
     ],
     "resumen": [
-      "La monja de brigada es un capuchón elástico de fibra aramídica que cubre cabeza, orejas, cuello y mandíbula. Se coloca bajo el casco y por debajo del cuello del chaquetón —nunca encima— para que no quede un canal abierto hacia el cuello.",
+      "La monja de brigada es un capuchón elástico de fibra aramídica que cubre cabeza, orejas, cuello y mandíbula. Se coloca bajo el casco y por debajo del cuello del chaquetón, nunca encima, para que no quede un canal abierto hacia el cuello.",
       "En brigada industrial cumple dos funciones: protección térmica de la zona descubierta y sellado alrededor de la máscara del equipo de respiración cuando se usa. Es también la prenda que más contaminante retiene, así que entra al lavado con más frecuencia que el resto."
     ],
     "puntosClave": [
@@ -3037,15 +3037,15 @@ export const PIEZAS: Pieza[] = [
         "a": "No. La de brigada es un capuchón aramídico que protege del calor. La capucha con barrera de partículas incorpora una capa filtrante que bloquea el hollín fino, y se usa en operación estructural con exposición prolongada a humo. Si tu brigada entra a ambientes con humo, conviene revisar esa opción."
       },
       {
-        "q": "¿Sirve con cualquier máscara de equipo de respiración?",
+        "q": "¿La monja de brigada sirve con cualquier máscara de ERA?",
         "a": "No necesariamente. El sello se logra en la interfaz con la máscara y esa geometría cambia entre fabricantes. Al cotizar dinos qué modelo de ERA usa tu brigada: es un dato tan importante como la talla."
       },
       {
-        "q": "¿Cada cuánto se lava?",
+        "q": "¿Cada cuánto se lava la monja de brigada?",
         "a": "Después de cada exposición a humo, no cuando se ve sucia. Es la prenda del combo que más contaminante retiene y queda en contacto directo con la piel de la cara y el cuello durante toda la intervención."
       },
       {
-        "q": "¿Cada cuánto se repone?",
+        "q": "¿Cada cuánto se repone la monja de brigada?",
         "a": "Cuando pierde elasticidad y deja de ajustar, que suele ser bastante antes de que la tela se vea dañada. Una monja floja no sella, y una que no sella no protege. Es de las refacciones más económicas del programa de EPP."
       },
       {
@@ -3053,7 +3053,7 @@ export const PIEZAS: Pieza[] = [
         "a": "No conviene. Es prenda personal por higiene y porque el ajuste importa. Compartir capuchas es la forma más rápida de que el personal deje de usarlas."
       },
       {
-        "q": "¿Viene en tallas?",
+        "q": "¿La monja de brigada viene en tallas?",
         "a": "La mayoría de los modelos es talla única, con tejido elástico que se adapta. Algunos fabricantes manejan talla extendida para personas con cabeza más grande o para uso sobre lentes."
       }
     ],
@@ -3140,7 +3140,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "Los tirantes tipo X reparten el peso del pantalón sobre ambos hombros y la espalda, con ocho puntos de sujeción que evitan que la carga se concentre en un solo lugar. Las terminales de piel resisten el roce constante contra las presillas mejor que las de material sintético.",
-      "El elástico de dos pulgadas es el estándar del sector porque distribuye la presión sobre una superficie mayor: un tirante angosto se clava en el hombro cuando el pantalón está mojado, y eso hace que la gente termine ajustándolo mal o quitándoselo."
+      "El elástico de dos pulgadas es el estándar del sector porque reparte la presión en más superficie. Un tirante angosto se clava en el hombro cuando el pantalón está mojado, y la gente termina ajustándolo mal o quitándoselo."
     ],
     "puntosClave": [
       "Configuración X: reparte carga sobre hombros y espalda",
@@ -3278,10 +3278,10 @@ export const PIEZAS: Pieza[] = [
     "faqs": [
       {
         "q": "¿Por qué tipo X y no otro?",
-        "a": "La configuración en X reparte la carga sobre ambos hombros y la espalda, con ocho puntos de sujeción. Con el pantalón mojado —que es cuando pesa— evita que todo el peso quede colgando de la cintura o concentrado en un solo punto del hombro."
+        "a": "La configuración en X reparte la carga sobre ambos hombros y la espalda, con ocho puntos de sujeción. Con el pantalón mojado, que es cuando más pesa, evita que todo el peso quede colgando de la cintura o concentrado en un solo punto del hombro."
       },
       {
-        "q": "¿Cómo se especifican?",
+        "q": "¿Cómo se especifican los tirantes tipo X?",
         "a": "Por estatura del elemento, no por talla de pantalón. Si estás equipando una brigada, conviene levantar estaturas junto con las medidas de cintura. Un tirante mal medido termina mal ajustado y deja de cumplir su función."
       },
       {
@@ -3293,7 +3293,7 @@ export const PIEZAS: Pieza[] = [
         "a": "No necesariamente. La sujeción es a presillas y su número y disposición cambian entre fabricantes. Si vas a comprar tirantes para un pantalón que ya tienes, dinos marca y modelo y confirmamos compatibilidad antes de cotizar."
       },
       {
-        "q": "¿Cada cuánto se reponen?",
+        "q": "¿Cada cuánto se reponen los tirantes de brigadista?",
         "a": "Antes que el pantalón. El elástico pierde recuperación con los ciclos de lavado y la piel de las terminales se reseca. No hay un plazo normativo: se cambian cuando dejan de sostener con la prenda mojada."
       },
       {
@@ -3572,15 +3572,15 @@ export const PIEZAS: Pieza[] = [
         "a": "Que la resistencia a la flama es una propiedad de la fibra misma, no un tratamiento aplicado encima. La diferencia práctica se ve con el tiempo: una tela tratada pierde desempeño con los lavados y una inherente protege igual el primer día que el último."
       },
       {
-        "q": "¿Sirve para incendio estructural?",
+        "q": "¿La camisola forestal sirve para incendio estructural?",
         "a": "No. La camisola es monocapa y no tiene barrera de humedad ni barrera térmica. En un interior con calor y vapor no protege. Para eso se necesita un conjunto estructural de tres capas."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava la camisola forestal?",
         "a": "Sin suavizante y sin blanqueador. Esos productos dejan residuo sobre la fibra y el residuo es combustible. Es el error más frecuente en el mantenimiento de ropa forestal y anula parte de la protección sin que se vea."
       },
       {
-        "q": "¿Cuándo se retira de servicio?",
+        "q": "¿Cuándo se retira de servicio una camisola forestal?",
         "a": "Por condición, no por fecha: cuando hay quemadura, rasgadura, adelgazamiento de la tela o contaminación que no sale con el lavado. En brigada de temporada conviene revisar todo el uniforme al cierre del periodo de incendios."
       },
       {
@@ -3863,16 +3863,16 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, varios fabricantes la manejan. El corte cambia en cadera y entrepierna, y con mochila y cinturón puesto la diferencia se nota en movilidad y en dónde rozan las costuras."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava el pantalón forestal?",
         "a": "Con detergente neutro, sin suavizante ni blanqueador. El hollín es parte del trabajo y no hay que perseguirlo con químicos agresivos: dañan la fibra y dejan residuo que sí es combustible."
       },
       {
-        "q": "¿Cuándo se retira de servicio?",
+        "q": "¿Cuándo se retira de servicio un pantalón forestal?",
         "a": "Cuando el refuerzo de rodilla está abierto, cuando hay quemadura o rasgadura en la tela, o cuando el tejido se ve adelgazado por abrasión. En brigada de temporada conviene revisar todo al cierre del periodo."
       },
       {
         "q": "¿Se puede comprar solo el pantalón?",
-        "a": "Sí, sin compra mínima. De hecho camisola y pantalón se gastan a ritmos distintos —la camisola sufre más por el matorral en mangas y hombros— así que reponerlos por separado es lo normal."
+        "a": "Sí, sin compra mínima. De hecho camisola y pantalón se gastan a ritmos distintos: la camisola sufre más por el matorral en mangas y hombros, así que reponerlos por separado es lo normal."
       }
     ],
     "sinonimos": [
@@ -3957,7 +3957,7 @@ export const PIEZAS: Pieza[] = [
       "NFPA 1950 (ex 1977)"
     ],
     "resumen": [
-      "La chamarra forestal mantiene la construcción de una sola capa —sin barrera de humedad ni térmica— pero con más largo y más cobertura de torso que la camisola. Da protección adicional donde el calor radiante es mayor sin convertirse en la carga térmica de un traje estructural.",
+      "La chamarra forestal mantiene la construcción de una sola capa, sin barrera de humedad ni térmica, pero con más largo y más cobertura de torso que la camisola. Da protección adicional donde el calor radiante es mayor sin convertirse en la carga térmica de un traje estructural.",
       "Los detalles de la prenda están pensados para trabajo con herramienta: presillas de utilidad en las bolsas, velcro en pecho para identificación y puños ajustables que cierran contra el guante."
     ],
     "puntosClave": [
@@ -4133,11 +4133,11 @@ export const PIEZAS: Pieza[] = [
         "a": "Los modelos de mercado rondan las 32 pulgadas, aunque varía según fabricante y talla. Lo importante es que cubra la cadera al agacharse, que es cuando se descubre la zona lumbar."
       },
       {
-        "q": "¿Sirve para incendio estructural?",
+        "q": "¿La chamarra forestal sirve para incendio estructural?",
         "a": "No. Es monocapa. En un interior el calor y el vapor pasan sin resistencia. Para eso se necesita un conjunto estructural certificado de tres capas."
       },
       {
-        "q": "¿Cómo elijo la talla?",
+        "q": "¿Cómo elijo la talla de la chamarra forestal?",
         "a": "Considerando lo que va debajo y el movimiento con mochila y herramienta. Conviene una talla que permita levantar los brazos completamente sin que la prenda se suba: si se sube, deja expuesta la cintura."
       },
       {
@@ -4399,7 +4399,7 @@ export const PIEZAS: Pieza[] = [
         "a": "El overol conviene si tu prioridad es cobertura continua y vestido rápido. El conjunto de dos piezas conviene si el desgaste es alto y quieres reponer solo la prenda dañada, o si necesitas ajustar tallas distintas de torso y pierna."
       },
       {
-        "q": "¿Cómo se toma la talla?",
+        "q": "¿Cómo se toma la talla del overol forestal?",
         "a": "Por estatura y torso, y es más crítico que en dos piezas. Un overol corto de torso se sube al agacharse y limita el movimiento de brazos; uno largo hace bolsa y estorba con el cinturón."
       },
       {
@@ -4411,7 +4411,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Depende del ajuste y del clima. El personal suele reportar dos temas: que hay que abrirlo completo para usar el sanitario y que ventila un poco menos que un conjunto de dos piezas con la camisola por fuera."
       },
       {
-        "q": "¿Sirve para incendio estructural?",
+        "q": "¿El overol forestal sirve para incendio estructural?",
         "a": "No. Es monocapa, sin barrera de humedad ni barrera térmica. En interior con calor y vapor no protege. Para eso se necesita conjunto estructural de tres capas."
       },
       {
@@ -4419,7 +4419,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Depende del modelo. Es un dato que conviene confirmar en la ficha, porque en terreno rocoso la rodilla es la primera zona que se abre y en un overol eso implica reponer la prenda entera."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava el overol forestal?",
         "a": "Igual que el resto de la línea forestal: detergente neutro, sin suavizante y sin blanqueador. Al ser una prenda grande conviene asegurarse de que seque completamente antes de guardarla."
       }
     ],
@@ -4505,7 +4505,7 @@ export const PIEZAS: Pieza[] = [
       "Pieza económica"
     ],
     "resumen": [
-      "La nuquera se acopla al casco forestal —normalmente por el sistema de ajuste o por velcro— y cae sobre nuca, cuello y orejas. Está hecha de la misma fibra ignífuga inherente que el resto de la línea, así que soporta la pavesa que la ropa común no aguantaría.",
+      "La nuquera se acopla al casco forestal, normalmente por el sistema de ajuste o por velcro, y cae sobre nuca, cuello y orejas. Está hecha de la misma fibra ignífuga inherente que el resto de la línea, así que soporta la pavesa que la ropa común no aguantaría.",
       "Además del riesgo térmico, resuelve algo que el personal reporta constantemente: la exposición solar prolongada. Una brigada que trabaja jornadas largas en monte abierto acumula daño solar en cuello y orejas que se evita con esta pieza."
     ],
     "puntosClave": [
@@ -4655,7 +4655,7 @@ export const PIEZAS: Pieza[] = [
     "faqs": [
       {
         "q": "¿Para qué sirve exactamente?",
-        "a": "Para cubrir nuca, cuello y orejas, que es la zona que el casco forestal deja descubierta. Protege de la caída de pavesas —material incandescente que arrastra el viento— y del calor radiante, además de reducir la exposición solar en jornadas largas."
+        "a": "Para cubrir nuca, cuello y orejas, que es la zona que el casco forestal deja descubierta. Protege de la caída de pavesas, el material incandescente que arrastra el viento, y del calor radiante, además de reducir la exposición solar en jornadas largas."
       },
       {
         "q": "¿Sirve con cualquier casco?",
@@ -4670,11 +4670,11 @@ export const PIEZAS: Pieza[] = [
         "a": "No debería. Pesa muy poco y no altera el balance del casco. Si el personal la reporta incómoda, normalmente es porque el sistema de sujeción no es el adecuado para ese casco."
       },
       {
-        "q": "¿Cada cuánto se repone?",
+        "q": "¿Cada cuánto se repone la nuquera forestal?",
         "a": "Con más frecuencia que el resto del uniforme, porque se pierde y se daña con facilidad. Es una refacción económica: conviene tener repuestos en almacén para que nadie salga sin ella."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava la nuquera forestal?",
         "a": "Con el resto del uniforme forestal: detergente neutro, sin suavizante ni blanqueador. Al ser una pieza chica se extravía fácil en la lavandería, así que conviene marcarla."
       },
       {
@@ -4682,7 +4682,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, y es una de las razones por las que el personal la agradece. Una brigada que trabaja jornadas largas en monte abierto acumula daño solar en cuello y orejas que esta pieza evita."
       },
       {
-        "q": "¿Viene en tallas?",
+        "q": "¿La nuquera forestal viene en tallas?",
         "a": "La mayoría de los modelos es talla única porque el ajuste lo da el casco. Lo que sí varía es el largo de la caída sobre el cuello, y ese dato conviene revisarlo si tu personal usa mochila con arnés alto."
       }
     ],
@@ -4937,23 +4937,23 @@ export const PIEZAS: Pieza[] = [
     ],
     "faqs": [
       {
-        "q": "¿Realmente cumple las dos normas?",
+        "q": "¿El conjunto dual forestal realmente cumple las dos normas?",
         "a": "Sí, cuando la doble certificación viene declarada en la etiqueta del producto. Eso es lo que hay que exigir: no basta con que el catálogo diga 'dual'. En una licitación se revisa la etiqueta y el listado del fabricante ante el organismo certificador."
       },
       {
-        "q": "¿Sirve para incendio estructural?",
+        "q": "¿El conjunto dual forestal sirve para incendio estructural?",
         "a": "No. Es una prenda monocapa: no tiene barrera de humedad ni barrera térmica. Cubre incendio de vegetación y rescate técnico, que son escenarios de riesgo mecánico y térmico moderado, no de ataque interior."
       },
       {
-        "q": "¿Conviene económicamente?",
+        "q": "¿Conviene un conjunto dual para una brigada forestal?",
         "a": "Si tu cuerpo atiende los dos escenarios, sí: una dotación en vez de dos, con un solo ciclo de lavado, inspección y almacenamiento. Si solo haces forestal, un conjunto forestal simple es más ligero y más barato."
       },
       {
-        "q": "¿Qué son las telas sin PFAS?",
+        "q": "¿Qué son las telas sin PFAS del conjunto dual forestal?",
         "a": "Son telas fabricadas sin compuestos perfluorados, que son persistentes en el ambiente y objeto de creciente atención por su relación con la exposición ocupacional. Varios fabricantes ya ofrecen alternativas: si es un criterio para tu institución, pídelo explícitamente."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava el conjunto dual forestal?",
         "a": "Depende del uso: tras incendio de vegetación, con detergente neutro sin suavizante; tras rescate con exposición a fluidos, con protocolo de descontaminación biológica. Es un punto que conviene tener escrito en el procedimiento interno."
       },
       {
@@ -5051,7 +5051,7 @@ export const PIEZAS: Pieza[] = [
       "ISO 11612"
     ],
     "resumen": [
-      "El chaquetón de aproximación lleva una capa exterior aluminizada que devuelve la mayor parte de la radiación térmica que recibe, montada sobre un forro ignífugo cuya composición cambia según el nivel del conjunto: desde algodón tratado o neopreno en los niveles ligeros hasta aramida acolchada o fibra de vidrio en los industriales.",
+      "El chaquetón de aproximación lleva una capa exterior aluminizada que devuelve la mayor parte de la radiación térmica que recibe. Va montada sobre un forro ignífugo que cambia según el nivel del conjunto: algodón tratado o neopreno en los niveles ligeros, y aramida acolchada o fibra de vidrio en los industriales.",
       "La diferencia con un traje de entrada es de propósito. Aproximación es para operar cerca; entrada es para meterse. Comprar uno creyendo que hace lo del otro es el error más peligroso de esta familia, y ocurre con más frecuencia de la que debería."
     ],
     "puntosClave": [
@@ -5229,7 +5229,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Que la superficie aluminizada devuelve la radiación térmica en lugar de absorberla y frenarla con masa. Por eso funciona tan bien frente a una fuente muy caliente a distancia y por eso pierde eficacia si la superficie se raya u opaca."
       },
       {
-        "q": "¿Qué llevo debajo?",
+        "q": "¿Qué se lleva debajo del chaquetón aluminizado?",
         "a": "Ropa de trabajo de fibra no inflamable. El conjunto está diseñado para usarse sobre ropa industrial, no sobre ropa común. Si lo que va debajo es de fibra sintética que se funde, el chaquetón deja de cumplir su propósito."
       },
       {
@@ -5241,15 +5241,15 @@ export const PIEZAS: Pieza[] = [
         "a": "No es recomendable. Un chaquetón aluminizado con guante estructural deja el eslabón débil justo en la mano, que es lo que más se acerca a la fuente. El conjunto se arma con piezas del mismo nivel."
       },
       {
-        "q": "¿Cómo se limpia?",
+        "q": "¿Cómo se limpia el chaquetón aluminizado?",
         "a": "Con el procedimiento del fabricante y nunca con abrasivos. La superficie aluminizada se daña con el frote y una vez rayada pierde reflectancia de forma permanente. Es el error de mantenimiento más costoso de esta familia."
       },
       {
-        "q": "¿Cómo se almacena?",
+        "q": "¿Cómo se almacena el chaquetón aluminizado?",
         "a": "Colgado, no doblado. El doblez repetido en el mismo punto quiebra la capa reflejante y crea una línea que ya no refleja. En una estación con espacio limitado vale la pena resolver el perchero antes de comprar el equipo."
       },
       {
-        "q": "¿Cuándo se retira de servicio?",
+        "q": "¿Cuándo se retira de servicio un chaquetón aluminizado?",
         "a": "Cuando la superficie perdió reflectancia por rayado, opacidad o quemadura, o cuando hay daño en el forro. Un aluminizado opaco se ve entero pero ya no hace su trabajo, y eso es más peligroso que una prenda visiblemente rota."
       }
     ],
@@ -5336,7 +5336,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "El pantalón de aproximación repite la construcción del chaquetón: exterior aluminizado reflejante sobre forro ignífugo del nivel correspondiente. Los tirantes permiten ajustar el largo para que la valenciana caiga sobre la bota sin arrastrar.",
-      "En modelos pensados para trabajo de rodillas —mantenimiento de horno, colada— existe la opción de rodillas reforzadas. Conviene definirlo desde la orden porque, igual que en estructural, no es algo que se agregue después."
+      "En modelos pensados para trabajo de rodillas, como mantenimiento de horno o colada, existe la opción de rodillas reforzadas. Conviene definirlo desde la orden porque, igual que en estructural, no es algo que se agregue después."
     ],
     "puntosClave": [
       "Mismo nivel de conjunto que el chaquetón: no se mezclan",
@@ -5500,7 +5500,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "faqs": [
       {
-        "q": "¿Puedo comprar solo el pantalón?",
+        "q": "¿Puedo comprar solo el pantalón aluminizado?",
         "a": "Sí, se cotiza por separado y es común reponer una pieza sin la otra. Lo que no conviene es comprarlo de un nivel distinto al del chaquetón: el conjunto protege al nivel de su pieza más débil."
       },
       {
@@ -5512,7 +5512,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Cuando la operación implica hincarse frente a la fuente de calor: mantenimiento de horno, trabajos de colada, reparación en caliente. Es opción de fábrica y hay que definirla en la orden."
       },
       {
-        "q": "¿Qué llevo debajo?",
+        "q": "¿Qué se lleva debajo del pantalón aluminizado?",
         "a": "Ropa de trabajo de fibra no inflamable, igual que con el chaquetón. El conjunto de proximidad está diseñado para usarse encima de ropa industrial, nunca sobre fibras que se funden."
       },
       {
@@ -5524,11 +5524,11 @@ export const PIEZAS: Pieza[] = [
         "a": "No sin confirmar el procedimiento del fabricante. La superficie aluminizada se daña con el frote mecánico. Cada fabricante indica su método y conviene tenerlo escrito en el procedimiento interno."
       },
       {
-        "q": "¿Cómo se guarda?",
+        "q": "¿Cómo se guarda el pantalón aluminizado?",
         "a": "Colgado. El doblez repetido en el mismo punto quiebra la capa reflejante. Si tu estación guarda el equipo en bolsa o en locker cerrado, vale la pena resolver el almacenamiento antes de comprar."
       },
       {
-        "q": "¿Cuándo se retira?",
+        "q": "¿Cuándo se retira un pantalón aluminizado?",
         "a": "Cuando la superficie está opaca, rayada o quemada, o cuando hay daño en el forro. Una prenda que perdió reflectancia se ve completa pero ya no cumple, y esa falsa sensación de protección es el riesgo."
       }
     ],
@@ -5782,7 +5782,7 @@ export const PIEZAS: Pieza[] = [
         "a": "La película dorada refleja parte de la radiación infrarroja y reduce el deslumbramiento sin cortar demasiado la visión. Es el equilibrio que hace posible trabajar mirando de frente a una fuente muy caliente."
       },
       {
-        "q": "¿Viene incluida en el conjunto?",
+        "q": "¿La capucha aluminizada viene incluida en el conjunto de aproximación?",
         "a": "Depende del nivel. En los conjuntos ligeros suele ser opcional y en los industriales viene incluida. Es un dato que aclaramos siempre en la cotización, porque cambia bastante el total y deja el conjunto incompleto si se pasa por alto."
       },
       {
@@ -5790,11 +5790,11 @@ export const PIEZAS: Pieza[] = [
         "a": "El vidrio laminado multicapa se usa en conjuntos de control de incendios; el policarbonato con película dorada es más ligero; el de doble capa se reserva para exposiciones mayores. La elección va con el nivel del conjunto, no por gusto."
       },
       {
-        "q": "¿Cómo se limpia?",
+        "q": "¿Cómo se limpia la capucha aluminizada?",
         "a": "Con el método que indica el fabricante y jamás con solventes ni abrasivos. La película dorada es una capa muy delgada: un limpiador agresivo la retira y el visor queda inservible aunque el vidrio esté entero."
       },
       {
-        "q": "¿El visor se reemplaza?",
+        "q": "¿El visor dorado de la capucha aluminizada se reemplaza?",
         "a": "Sí, es consumible. Se cambia cuando se raya, se opaca o presenta daño. Conviene tener repuestos en almacén: sin visor en condiciones, el conjunto completo sale de servicio."
       },
       {
@@ -5802,11 +5802,11 @@ export const PIEZAS: Pieza[] = [
         "a": "Para sellar la unión entre la capucha y el chaquetón. Sin él queda una franja descubierta en nuca y hombros, que es donde más se siente el calor cuando trabajas de espaldas a la fuente."
       },
       {
-        "q": "¿Es compatible con equipo de respiración?",
+        "q": "¿La capucha aluminizada es compatible con ERA?",
         "a": "Depende del modelo y del ERA. Algunos conjuntos están diseñados para alojar el equipo bajo el chaquetón con la capucha encima; otros no. Hay que verificarlo antes de comprar, no después."
       },
       {
-        "q": "¿Cómo se almacena?",
+        "q": "¿Cómo se almacena la capucha aluminizada?",
         "a": "Sin apoyar el visor sobre ninguna superficie y sin objetos encima. El visor se raya con el simple contacto y el rayado no se quita. Lo ideal es colgarla o guardarla en su funda si el fabricante la provee."
       }
     ],
@@ -5893,7 +5893,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "El guante de aproximación combina un dorso aluminizado que refleja la radiación con una palma de material resistente al calor por contacto, porque la mano no solo recibe radiación: también toca superficies calientes. Debajo lleva forro térmico.",
-      "La configuración de tres dedos —índice separado y los otros tres juntos— es un compromiso entre la manopla total, que aísla más pero no permite agarrar nada, y el guante de cinco dedos, que da destreza pero multiplica las costuras y la superficie expuesta."
+      "La configuración de tres dedos, con el índice separado y los otros tres juntos, es un punto medio. La manopla aísla más pero no permite agarrar nada; el guante de cinco dedos da destreza pero multiplica las costuras y la superficie expuesta."
     ],
     "puntosClave": [
       "Dorso aluminizado que refleja radiación",
@@ -6067,23 +6067,23 @@ export const PIEZAS: Pieza[] = [
         "a": "No es recomendable. Un guante estructural con traje aluminizado deja el punto débil en la mano, que es justo lo que más se acerca a la fuente en casi toda maniobra de proximidad."
       },
       {
-        "q": "¿Cómo elijo la talla?",
+        "q": "¿Cómo elijo la talla de los guantes aluminizados?",
         "a": "Probando con la maniobra real, no con la mano en reposo. Un guante que ajusta bien parado en el almacén puede resultar imposible para operar una válvula o sostener una lanza. Pide muestra antes de comprar el lote."
       },
       {
-        "q": "¿Cada cuánto se reponen?",
+        "q": "¿Cada cuánto se reponen los guantes aluminizados?",
         "a": "Más seguido que el resto del conjunto: es la pieza que más se maltrata. Se retiran cuando el dorso se opaca, la palma se endurece o alguna costura se abre. No se reparan."
       },
       {
-        "q": "¿Por qué importa el largo del puño?",
+        "q": "¿Por qué importa el largo del puño en un guante aluminizado?",
         "a": "Porque tiene que traslapar con la manga del chaquetón. Si queda corto, expone la muñeca, que es una de las zonas de quemadura más frecuentes en trabajo de proximidad."
       },
       {
-        "q": "¿Se usan con guante interior?",
+        "q": "¿Los guantes aluminizados se usan con guante interior?",
         "a": "Algunos fabricantes lo manejan y otros lo integran como forro. Si tu operación implica sudoración alta, un guante interior de contacto facilita quitarse el aluminizado sin pelear con él."
       },
       {
-        "q": "¿Cómo sé que ya no protegen?",
+        "q": "¿Cómo sé que los guantes aluminizados ya no protegen?",
         "a": "Dorso opaco o rayado, palma endurecida o vitrificada, forro comprimido, costura abierta. Cualquiera de esas condiciones es motivo de retiro aunque el guante se vea completo por fuera."
       }
     ],
@@ -6624,11 +6624,11 @@ export const PIEZAS: Pieza[] = [
         "a": "Casi nunca va solo. Si el frente está expuesto, la cara también, así que normalmente se combina con careta y guantes. Algunos puestos suman mangas aluminizadas para cubrir el antebrazo."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava el delantal aluminizado?",
         "a": "Con el procedimiento del fabricante y sin abrasivos. La superficie aluminizada se raya con el frote y una vez rayada pierde reflectancia de manera permanente."
       },
       {
-        "q": "¿Cuándo se retira?",
+        "q": "¿Cuándo se retira un delantal aluminizado?",
         "a": "Cuando la superficie está opaca, cuando hay perforación por salpicadura o cuando presenta quemadura. En fundición la perforación suele aparecer antes que el desgaste general."
       },
       {
@@ -6636,7 +6636,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, a diferencia de la ropa personal el delantal se comparte con frecuencia porque el ajuste es amplio. Lo que hay que cuidar es la inspección entre turnos, porque el daño se acumula sin que nadie lo reporte."
       },
       {
-        "q": "¿Cómo se almacena?",
+        "q": "¿Cómo se almacena el delantal aluminizado?",
         "a": "Colgado y extendido. Guardarlo doblado en un cajón es la forma más rápida de arruinar la capa reflejante en el pliegue, y esa línea ya no recupera su función."
       }
     ],
@@ -6912,15 +6912,15 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí. A diferencia de los conjuntos ligeros de aproximación, donde la capucha suele ser opcional, en entrada viene incluida junto con guantes y talega. Es parte del conjunto por definición."
       },
       {
-        "q": "¿Qué llevo debajo?",
+        "q": "¿Qué se lleva debajo del conjunto de penetración?",
         "a": "Ropa de trabajo de fibra no inflamable. El conjunto está diseñado para vestirse encima de ropa industrial, nunca sobre fibras sintéticas que se funden con el calor."
       },
       {
-        "q": "¿Se necesita capacitación?",
+        "q": "¿Se necesita capacitación para usar un conjunto de penetración?",
         "a": "Sí, y es la parte que más se omite. Vestirse toma tiempo, la visión es reducida y la movilidad limitada. Un equipo sin práctica previa termina usado mal o no usado. Podemos cotizar la capacitación junto con el conjunto."
       },
       {
-        "q": "¿Cómo se almacena?",
+        "q": "¿Cómo se almacena el conjunto de penetración de corta duración?",
         "a": "Colgado y dentro de su talega, protegido de la abrasión. El doblez repetido quiebra la capa reflejante y la deja inservible en esa línea. Si tu estación no tiene espacio para colgarlo, conviene resolverlo antes de la compra."
       }
     ],
@@ -7195,11 +7195,11 @@ export const PIEZAS: Pieza[] = [
         "a": "No necesariamente. El conjunto debe alojar el ERA y permitir su revisión sin desarmar todo. Hay que verificarlo con el modelo específico que usa tu estación antes de comprar, no después."
       },
       {
-        "q": "¿Cómo se almacena?",
+        "q": "¿Cómo se almacena el conjunto de penetración avanzada?",
         "a": "Colgado, dentro de su talega y protegido de la luz y la abrasión. La talega no es un accesorio: es parte del sistema de conservación de la superficie reflejante."
       },
       {
-        "q": "¿Cuándo se retira de servicio?",
+        "q": "¿Cuándo se retira de servicio un conjunto de penetración avanzada?",
         "a": "Cuando la superficie perdió reflectancia, cuando hay perforación o quemadura, o cuando el fabricante lo indica tras una exposición real. Un conjunto que ya trabajó en un evento severo se evalúa antes de volver a considerarlo disponible."
       }
     ],
@@ -7286,7 +7286,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "El visor de doble capa reduce la transmisión de calor hacia la cara y mantiene visión útil en condiciones de radiación extrema. La película dorada refleja parte del infrarrojo y controla el deslumbramiento, que en una maniobra de ingreso es tan limitante como el calor.",
-      "El casco duro con sistema de ajuste dentado sostiene el conjunto sobre la cabeza sin que se desplace al moverse, y las tiras reforzadas en axilas evitan que la capucha se levante al elevar los brazos, que es cuando queda expuesto el cuello."
+      "El casco duro con ajuste dentado sostiene el conjunto sobre la cabeza sin que se desplace. Las tiras reforzadas en axilas evitan que la capucha se levante al elevar los brazos, que es cuando queda expuesto el cuello."
     ],
     "puntosClave": [
       "Visor de doble capa para exposición extrema",
@@ -7453,15 +7453,15 @@ export const PIEZAS: Pieza[] = [
         "a": "Porque en ingreso la radiación llega desde todos los ángulos y de forma mucho más intensa que en aproximación. La doble capa reduce la transmisión de calor hacia la cara y mantiene visión útil, que es lo que permite completar la maniobra."
       },
       {
-        "q": "¿Viene incluida en el conjunto?",
+        "q": "¿La capucha de penetración viene incluida en el conjunto?",
         "a": "Sí. A diferencia de los conjuntos ligeros de aproximación, donde suele ser opcional, en entrada la capucha forma parte del conjunto junto con guantes y talega. Se cotiza suelta únicamente para reposición."
       },
       {
-        "q": "¿El visor se reemplaza?",
+        "q": "¿El visor doble de la capucha de penetración se reemplaza?",
         "a": "Sí, es consumible. Se cambia cuando se raya, se opaca o presenta daño. Conviene tener repuesto en almacén, porque sin visor en condiciones el conjunto completo queda fuera de servicio."
       },
       {
-        "q": "¿Cómo se limpia?",
+        "q": "¿Cómo se limpia la capucha de penetración?",
         "a": "Solo con el método que indica el fabricante y jamás con solventes ni abrasivos. La película dorada se retira con facilidad y una vez perdida el visor deja de cumplir su función aunque el vidrio esté intacto."
       },
       {
@@ -7469,7 +7469,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Para que la capucha no se levante al elevar los brazos. Sin ellas, en el momento de estirar el cuerpo queda expuesta la nuca, que es una de las zonas más difíciles de proteger en esta operación."
       },
       {
-        "q": "¿Es compatible con equipo de respiración?",
+        "q": "¿La capucha de penetración es compatible con ERA?",
         "a": "Depende del modelo y del ERA. Los conjuntos de entrada suelen diseñarse para alojar el equipo bajo el chaquetón con la capucha encima, pero hay que confirmarlo con el modelo específico de tu estación antes de comprar."
       },
       {
@@ -7477,7 +7477,7 @@ export const PIEZAS: Pieza[] = [
         "a": "No para ingreso. La de aproximación está pensada para radiación frontal en trabajo prolongado; la de entrada, para exposición envolvente breve. Cambian el visor, el cobertor y el nivel de aislamiento."
       },
       {
-        "q": "¿Cómo se guarda?",
+        "q": "¿Cómo se guarda la capucha de penetración?",
         "a": "Sin apoyar el visor sobre ninguna superficie y sin objetos encima. El visor se raya con el simple contacto y ese rayado no se quita. Lo ideal es guardarla en la talega del conjunto o colgada."
       }
     ],
@@ -7747,19 +7747,19 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, junto con la capucha y la talega. Se cotizan sueltos para reposición, que es frecuente porque son de las piezas que más se degradan del conjunto."
       },
       {
-        "q": "¿Cómo sé que ya no protegen?",
+        "q": "¿Cómo sé que los guantes mitón de penetración ya no protegen?",
         "a": "Palma vitrificada o endurecida, forro comprimido, costura abierta o dorso opaco. Cualquiera de esas condiciones es motivo de retiro aunque el guante se vea completo por fuera. No se reparan."
       },
       {
-        "q": "¿Por qué importa el largo del puño?",
+        "q": "¿Por qué importa el largo del puño en un guante de penetración?",
         "a": "Porque tiene que traslapar con la manga del chaquetón. Una muñeca expuesta en un ingreso produce quemaduras graves, y es una de las fallas de interfaz más comunes de todo el conjunto."
       },
       {
-        "q": "¿Se usan con guante interior?",
+        "q": "¿Los guantes mitón de penetración se usan con guante interior?",
         "a": "Algunos fabricantes lo manejan y otros integran un forro más grueso. Un guante interior facilita quitarse el mitón sin pelear con él y ayuda con la sudoración, que en este nivel es considerable."
       },
       {
-        "q": "¿Cada cuánto se reponen?",
+        "q": "¿Cada cuánto se reponen los guantes de penetración?",
         "a": "Con más frecuencia que el traje. Junto con el visor son las piezas que concentran el contacto real con el entorno. Conviene tener al menos un par de repuesto por conjunto en servicio."
       }
     ],
@@ -7845,7 +7845,7 @@ export const PIEZAS: Pieza[] = [
       "Suela especial"
     ],
     "resumen": [
-      "El conjunto para hornos parte del nivel de corta duración y le cambia tres cosas: el visor pasa de película dorada a doble capa transparente, se añaden parches de material resistente en codos y rodillas, y el calzado incorpora suela apta para superficie caliente.",
+      "El conjunto para hornos parte del nivel de corta duración y le cambia tres cosas. El visor pasa de película dorada a doble capa transparente, se añaden parches resistentes en codos y rodillas, y el calzado incorpora suela apta para superficie caliente.",
       "La razón del visor transparente es práctica: en mantenimiento hay que distinguir el estado real del refractario y del material, y una película dorada altera la percepción de color. Se sacrifica algo de control del deslumbramiento a cambio de ver bien."
     ],
     "puntosClave": [
@@ -8038,7 +8038,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Cuando se raya u opaca, igual que el dorado. En mantenimiento la visión es el recurso central de la tarea, así que conviene ser estricto con el criterio de reemplazo y tener repuesto."
       },
       {
-        "q": "¿Cómo se almacena?",
+        "q": "¿Cómo se almacena el conjunto para mantenimiento de hornos?",
         "a": "Colgado y dentro de su talega, sin apoyar el visor. El conjunto de mantenimiento se usa con más frecuencia que uno de rescate, así que la disciplina de guardado importa todavía más."
       }
     ],
@@ -8115,7 +8115,7 @@ export const PIEZAS: Pieza[] = [
     "lead": "El pasamontañas ignífugo que va bajo la capucha y la talega de nailon balístico que conserva el conjunto entre usos.",
     "descRight": [
       "Son las dos piezas que vienen incluidas y que nadie recuerda hasta que faltan. El pasamontañas cierra la interfaz entre la capucha y la cara; la talega es lo que evita que la superficie aluminizada se raye guardada en un locker.",
-      "Ambas se reponen por separado y conviene tenerlo previsto: un conjunto sin talega termina dañado por abrasión, y un conjunto sin pasamontañas se usa igual pero con una franja de piel expuesta que no debería estarlo."
+      "Ambas se reponen por separado, y conviene tenerlo previsto. Un conjunto sin talega termina dañado por abrasión; uno sin pasamontañas se usa igual, pero con una franja de piel expuesta."
     ],
     "meta": [
       "Pasamontañas ignífugo",
@@ -8282,7 +8282,7 @@ export const PIEZAS: Pieza[] = [
     "faqs": [
       {
         "q": "¿El pasamontañas protege del calor?",
-        "a": "No es su función principal. El aislamiento lo dan la capucha y el conjunto; el pasamontañas cierra la interfaz entre la capucha y el rostro, y actúa como barrera de higiene entre la piel y un equipo que suele ser compartido."
+        "a": "No es su función principal. El aislamiento lo dan la capucha y el conjunto. El pasamontañas cierra la interfaz entre la capucha y el rostro, y sirve de barrera de higiene con un equipo que suele ser compartido."
       },
       {
         "q": "¿Por qué importa tanto la talega?",
@@ -8301,7 +8301,7 @@ export const PIEZAS: Pieza[] = [
         "a": "No conviene. Va en contacto directo con la piel del rostro y del cuello. Es prenda personal por higiene, aunque el resto del conjunto se comparta entre operadores."
       },
       {
-        "q": "¿Cada cuánto se lava?",
+        "q": "¿Cada cuánto se lava el pasamontañas del conjunto de penetración?",
         "a": "Después de cada uso. Es la única pieza del conjunto que toca la piel de forma directa y prolongada, así que acumula sudor y contaminante."
       },
       {
@@ -8580,7 +8580,7 @@ export const PIEZAS: Pieza[] = [
         "a": "La resistencia a corte y punción, la barrera contra patógenos y la certificación. Una chamarra de trabajo se rasga con la lámina cortada y no ofrece barrera biológica frente a sangre."
       },
       {
-        "q": "¿Cómo se descontamina?",
+        "q": "¿Cómo se descontamina la chaqueta de rescate técnico?",
         "a": "Con protocolo biológico cuando hubo contacto con fluidos, no con un lavado por suciedad visible. Conviene tenerlo escrito en el procedimiento de la estación, porque es lo que más se improvisa."
       },
       {
@@ -8593,7 +8593,7 @@ export const PIEZAS: Pieza[] = [
       },
       {
         "q": "¿Conviene comprarla si mi presupuesto es limitado?",
-        "a": "Si tu cuerpo sale con frecuencia a accidentes viales, es de las inversiones que más rápido se pagan: cada salida que no gasta el traje estructural es vida útil conservada de un equipo mucho más caro."
+        "a": "Si tu cuerpo sale con frecuencia a accidentes viales, suele pagarse pronto. Cada salida que no gasta el traje estructural es vida útil conservada de un equipo más caro."
       }
     ],
     "sinonimos": [
@@ -8858,7 +8858,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, sin compra mínima. De hecho es la pieza del conjunto de extricación que primero se repone, porque la rodilla concentra todo el desgaste."
       },
       {
-        "q": "¿Cómo se descontamina?",
+        "q": "¿Cómo se descontamina el pantalón de rescate técnico?",
         "a": "Con protocolo biológico cuando hubo contacto con fluidos. La rodilla es la zona de mayor contacto en una extricación, así que es donde hay que ser más estricto."
       },
       {
@@ -8870,7 +8870,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Sí, está pensado para vestido rápido sobre la ropa de trabajo. Es la ventaja principal frente al conjunto estructural cuando el llamado no es de incendio."
       },
       {
-        "q": "¿Cuándo se retira?",
+        "q": "¿Cuándo se retira un pantalón de rescate técnico?",
         "a": "Por condición, no por fecha: perforación en rodilla, cortes que comprometen la barrera, contaminación que no se remueve o pérdida de reflectancia de la cinta."
       }
     ],
@@ -8957,7 +8957,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "El conjunto de extricación agrupa chaqueta y pantalón con la misma tela exterior, el mismo nivel de certificación y una interfaz pensada como sistema. Eso evita el problema típico de mezclar piezas de distintos modelos: cintura abierta, cintas que no coinciden y niveles distintos de protección.",
-      "En términos operativos, su valor es simple de calcular: cada salida que se atiende con este conjunto es una salida en la que el traje estructural no se contaminó, no se rasgó y no consumió vida útil."
+      "Su valor operativo es fácil de ver: cada salida atendida con este conjunto es una salida en la que el traje estructural no se contaminó, no se rasgó ni consumió vida útil."
     ],
     "puntosClave": [
       "Chaqueta y pantalón del mismo corte, tela y nivel",
@@ -9128,7 +9128,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Cada salida atendida con este conjunto es una en la que el traje estructural no se contaminó ni se rasgó. Considerando que el estructural se retira a los diez años de fabricado y cuesta varias veces más, la cuenta sale rápido."
       },
       {
-        "q": "¿Sirve para incendio?",
+        "q": "¿El conjunto de extricación sirve para incendio?",
         "a": "No. Es monocapa con protección limitada frente a flash. Está pensado para riesgo mecánico y biológico. Para incendio se usa el conjunto estructural."
       },
       {
@@ -9140,7 +9140,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Conviene establecerlo en el procedimiento de la estación: qué tipo de salida activa el conjunto de rescate y cuál el estructural. Si queda a criterio del momento, se termina usando el que esté más a la mano."
       },
       {
-        "q": "¿Cómo se descontamina?",
+        "q": "¿Cómo se descontamina el conjunto de extricación?",
         "a": "Con protocolo biológico cuando hubo contacto con fluidos, y con lavado normal cuando solo hay suciedad mecánica. La diferencia debe estar escrita, porque el riesgo biológico no se ve."
       },
       {
@@ -9234,7 +9234,7 @@ export const PIEZAS: Pieza[] = [
       "NFPA 1950 (ex 1951)"
     ],
     "resumen": [
-      "El overol de rescate mantiene los requisitos de la familia —resistencia a corte y punción, barrera contra patógenos, carga térmica baja— en formato de una sola pieza. Elimina la interfaz de cintura, que es donde se abre el conjunto de dos piezas al agacharse dentro de un vehículo.",
+      "El overol de rescate mantiene los requisitos de la familia (resistencia a corte y punción, barrera contra patógenos y carga térmica baja) en formato de una sola pieza. Elimina la interfaz de cintura, que es donde se abre el conjunto de dos piezas al agacharse dentro de un vehículo.",
       "Algunos modelos son dual certificados, es decir cumplen a la vez rescate técnico y combate forestal. Para un cuerpo rural que atiende ambas cosas, esa combinación resuelve dos necesidades con una prenda."
     ],
     "puntosClave": [
@@ -9406,19 +9406,19 @@ export const PIEZAS: Pieza[] = [
         "a": "Algunos modelos cumplen a la vez los requisitos de rescate técnico y de combate forestal. Para un cuerpo rural que atiende ambas cosas con la misma gente, esa combinación resuelve dos necesidades con una sola prenda."
       },
       {
-        "q": "¿Se puede poner con las botas puestas?",
+        "q": "¿El overol de rescate técnico se puede poner con las botas puestas?",
         "a": "Depende del modelo. Es una pregunta clave, porque si hay que descalzarse se pierde justo la ventaja de velocidad. Conviene confirmarlo antes de comprar, sobre todo si tu estación usa bota de caña alta."
       },
       {
-        "q": "¿Sirve para incendio?",
+        "q": "¿El overol de rescate técnico sirve para incendio?",
         "a": "No. Es monocapa con protección limitada frente a flash, igual que el resto de la familia de rescate. Para incendio se usa el conjunto estructural."
       },
       {
-        "q": "¿Cómo se toma la talla?",
+        "q": "¿Cómo se toma la talla del overol de rescate técnico?",
         "a": "Por estatura y torso, y es más crítico que en dos piezas: un overol corto de torso se sube al agacharse y limita el movimiento de brazos justo cuando hay que trabajar dentro del vehículo."
       },
       {
-        "q": "¿Cómo se descontamina?",
+        "q": "¿Cómo se descontamina el overol de rescate técnico?",
         "a": "Con protocolo biológico tras contacto con fluidos. Al ser una prenda grande conviene verificar que seque por completo antes de guardarla, sobre todo en la zona de rodillas."
       },
       {
@@ -9426,7 +9426,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Idealmente uno por elemento que sale a rescate, en su talla. Un overol compartido nunca está donde debe cuando entra el llamado, y entonces la gente sale con lo que tenga puesto."
       },
       {
-        "q": "¿Cuándo se retira?",
+        "q": "¿Cuándo se retira un overol de rescate técnico?",
         "a": "Por condición: perforaciones, cortes que comprometen la barrera, contaminación no removible o falla del cierre. Como es una sola pieza, cualquiera de esos daños saca de servicio la prenda completa."
       }
     ],
@@ -9681,23 +9681,23 @@ export const PIEZAS: Pieza[] = [
     ],
     "faqs": [
       {
-        "q": "¿Realmente cumple las dos normas?",
+        "q": "¿El conjunto dual de rescate realmente cumple las dos normas?",
         "a": "Sí, cuando la doble certificación viene declarada en la etiqueta del producto. Eso es lo que hay que exigir: no basta con que el catálogo diga dual. En licitación se revisa la etiqueta y el listado del fabricante ante el organismo certificador."
       },
       {
-        "q": "¿Sirve para incendio estructural?",
+        "q": "¿El conjunto dual de rescate sirve para incendio estructural?",
         "a": "No. Es monocapa: no tiene barrera de humedad ni barrera térmica. Cubre rescate técnico y combate forestal, que son escenarios de riesgo mecánico, biológico y térmico moderado, no de ataque interior."
       },
       {
-        "q": "¿Conviene económicamente?",
+        "q": "¿Conviene un conjunto dual para un equipo de rescate?",
         "a": "Si tu cuerpo atiende los dos escenarios, sí: una dotación en vez de dos, con un solo ciclo de lavado, inspección y almacenamiento. Si solo haces rescate, un conjunto dedicado puede resultar más ligero y económico."
       },
       {
-        "q": "¿Qué son las telas sin PFAS?",
+        "q": "¿Qué son las telas sin PFAS del conjunto dual de rescate?",
         "a": "Telas fabricadas sin compuestos perfluorados, que son persistentes en el ambiente y objeto de atención creciente por su relación con la exposición ocupacional. Varios fabricantes ya ofrecen alternativas: si es criterio para tu institución, hay que pedirlo explícitamente."
       },
       {
-        "q": "¿Cómo se lava?",
+        "q": "¿Cómo se lava el conjunto dual de rescate?",
         "a": "Depende del uso. Tras incendio de vegetación, con detergente neutro sin suavizante; tras rescate con contacto de fluidos, con protocolo de descontaminación biológica. Conviene tener ambos procedimientos escritos."
       },
       {
@@ -9796,7 +9796,7 @@ export const PIEZAS: Pieza[] = [
     ],
     "resumen": [
       "El pantalón de cubierta es la prenda más ligera de la familia de rescate. Su función no es sustituir al pantalón de extricación en una maniobra pesada, sino proteger el uniforme de estación en salidas donde el riesgo es de suciedad, abrasión y contacto puntual.",
-      "En estaciones con alto volumen de apoyos y llamados menores, es la prenda que evita que el uniforme se convierta en un gasto recurrente y que el personal salga con ropa manchada o rota a la vista del público."
+      "En estaciones con muchos apoyos y llamados menores, evita que el uniforme se convierta en un gasto recurrente. También evita que el personal salga con ropa manchada o rota a la vista del público."
     ],
     "puntosClave": [
       "Se calza sobre el uniforme de estación, sin cambiarse",
@@ -9959,14 +9959,14 @@ export const PIEZAS: Pieza[] = [
     "faqs": [
       {
         "q": "¿En qué se diferencia del pantalón de extricación?",
-        "a": "En el propósito y en la resistencia. El de extricación está certificado y construido para maniobra pesada con vidrio y lámina; el de cubierta es una prenda ligera que protege el uniforme en salidas donde el riesgo es suciedad, abrasión y contacto puntual."
+        "a": "En el propósito y en la resistencia. El de extricación está certificado y construido para maniobra pesada con vidrio y lámina. El de cubierta es una prenda ligera que protege el uniforme cuando el riesgo es suciedad, abrasión y contacto puntual."
       },
       {
         "q": "¿Está certificado?",
         "a": "Depende del modelo: algunos sí y otros no. Si necesitas certificación de rescate técnico hay que verificarlo en la ficha antes de comprar. Muchos cover pants se venden como prenda de protección de uniforme, sin certificación de producto."
       },
       {
-        "q": "¿Se puede poner con las botas puestas?",
+        "q": "¿El pantalón de cubierta se puede poner con las botas puestas?",
         "a": "Es su razón de ser. Un cover pants que obliga a descalzarse pierde toda su ventaja. Al cotizar conviene confirmarlo, sobre todo si tu estación usa bota de caña alta."
       },
       {
@@ -9974,7 +9974,7 @@ export const PIEZAS: Pieza[] = [
         "a": "Apoyos médicos, derrames, retiro de árbol caído, incidentes menores en vía pública. Todo aquello donde el uniforme se va a ensuciar o a romper pero donde vestir el conjunto completo sería lento y desproporcionado."
       },
       {
-        "q": "¿Cada cuánto se repone?",
+        "q": "¿Cada cuánto se repone el pantalón de cubierta para rescate?",
         "a": "Con frecuencia alta: es prenda de sacrificio y de bajo costo. Conviene tener repuestos en la unidad, no solo en el almacén de la estación."
       },
       {

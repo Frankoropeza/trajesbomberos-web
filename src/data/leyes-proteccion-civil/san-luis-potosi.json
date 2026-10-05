@@ -1,0 +1,124 @@
+{
+  "slug": "san-luis-potosi",
+  "nombreOficial": "Ley del Sistema de Protección Civil del Estado de San Luis Potosí",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de San Luis Potosí",
+    "fecha": "2013-07-06"
+  },
+  "ultimaReforma": "2025-07-11",
+  "urlOficial": "https://congresosanluis.gob.mx/sites/default/files/unpload/legislacion/leyes/2025/08/Ley%20del%20Sistema%20de%20Proteccion%20Civil%20%28al%2011%20%20Julio%202025%29.pdf",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley del Sistema de Protección Civil del Estado de San Luis Potosí",
+    "url": "https://periodicooficial.slp.gob.mx/api/publicacion/descargar/guest/7962/documento",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 21",
+    "cita": "La Coordinación Estatal es un organismo desconcentrado con autonomía administrativa, financiera, de operación y gestión; que depende de la Secretaría General de Gobierno, y es responsable de elaborar, instrumentar y dirigir la ejecución de los programas en la materia"
+  },
+  "lead": "En San Luis Potosí rige la Ley del Sistema de Protección Civil del Estado. Aquí se explica, con artículo y cita literal, qué deben cumplir inmuebles con afluencia de público, brigadas internas, organizadores de eventos y consultores capacitadores.",
+  "panorama": [
+    "Expedida por el Decreto 0176 y publicada el 6 de julio de 2013, con última reforma del 11 de julio de 2025, la ley regula cómo se integra y funciona el sistema de protección civil del estado y sus municipios, y fija derechos y obligaciones de particulares y organizaciones sociales (Art. 1º). Sus exigencias se concentran en inmuebles con afluencia constante o masiva y en eventos de concentración masiva.",
+    "El Sistema Estatal reúne al Consejo Estatal, la Coordinación Estatal, el Centro Estatal de Comando de Operaciones, los sistemas municipales, las brigadas internas y los grupos voluntarios (Art. 9º). Cada presidente municipal debe instalar su sistema, consejo y coordinación, con un coordinador certificado (Art. 24), y el municipio es el primer nivel de respuesta ante un desastre (Art. 27)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles e instalaciones con afluencia constante o masiva",
+      "obligacion": "Tener un Programa Interno de Protección Civil, sean del sector público, privado o social, fijos o móviles.",
+      "articulo": "Art. 15",
+      "cita": "Los inmuebles o instalaciones, fijas y móviles, de los sectores público, privado y social que, por su naturaleza o uso, reciban una afluencia constante o masiva de personas, deberán contar con un Programa Interno de Protección Civil."
+    },
+    {
+      "sujeto": "Inmuebles con Programa Interno",
+      "obligacion": "Mostrar en el exterior, de forma visible, una leyenda con la capacidad máxima de aforo autorizada (adición de julio de 2025).",
+      "articulo": "Art. 15",
+      "cita": "deberán exhibir de manera visible en el exterior una leyenda que indique la capacidad máxima de aforo autorizada, conforme al reglamento y los lineamientos establecidos por el Programa Estatal y el Sistema Nacional de Protección Civil."
+    },
+    {
+      "sujeto": "Entidades de los sectores público, privado y social",
+      "obligacion": "Formar y capacitar a sus brigadas internas de protección civil.",
+      "articulo": "Art. 16",
+      "cita": "Las entidades de los sectores público, privado y social, deberán constituir y capacitar a sus Brigadas Internas."
+    },
+    {
+      "sujeto": "Organizadores de eventos públicos y masivos",
+      "obligacion": "Elaborar un programa especial o específico ajustado al aforo, entregarlo con anticipación a la autoridad y difundir sus medidas al público.",
+      "articulo": "Art. 65",
+      "cita": "Previo a la realización de eventos públicos y de concentración masiva, deberán elaborarse programas especiales o específicos de protección civil, sujetos al aforo del evento. Mismos que deberán ser entregados con la antelación debida a las autoridades en materia de protección civil, para su aprobación"
+    },
+    {
+      "sujeto": "Responsables de inmuebles con eventos masivos",
+      "obligacion": "Realizar prácticas o simulacros con las autoridades para orientar a los asistentes; omitirlos es conducta sancionable.",
+      "articulo": "Art. 66, fr. II",
+      "cita": "Omitir, los propietarios o responsables de inmuebles en donde se realicen eventos masivos, en coordinación con las autoridades de protección civil, prácticas o simulacros que permitan orientar y auxiliar a los asistentes en casos de emergencia"
+    },
+    {
+      "sujeto": "Bomberos, paramédicos y grupos voluntarios",
+      "obligacion": "Inscribirse ante la Coordinación Estatal, obtener su certificado de autorización y renovarlo cada año en enero.",
+      "articulo": "Art. 51, fr. I",
+      "cita": "Registrarse en la Coordinación Estatal y obtener un certificado de autorización para su funcionamiento, que expedirá dicho organismo, en el que se indicará el número de inscripción, actividades a las que se dedica y adscripción autorizada."
+    },
+    {
+      "sujeto": "Inmuebles con Unidad Interna de Protección Civil",
+      "obligacion": "Acreditar la capacitación de los brigadistas con documentos oficiales de vigencia no mayor a dos años; al menos uno de cada diez trabajadores por turno.",
+      "articulo": "Art. 36 del Reglamento",
+      "cita": "El personal que integre las brigadas deberá contar con documentos oficiales que avalen su capacitación y que mencionen la vigencia, misma que no deberá exceder de dos años, además, deberá estar capacitado el personal que integre las brigadas o cuando menos un trabajador de cada diez por turno"
+    },
+    {
+      "sujeto": "Inmuebles según su número de trabajadores",
+      "obligacion": "Con más de cuatro trabajadores, presentar Programa Interno; con menos, contar con Plan de Emergencia y una brigada multifuncional.",
+      "articulo": "Art. 39 del Reglamento",
+      "cita": "Todos los inmuebles que cuenten con más de cuatro trabajadores aun considerando todos los turnos de operación deberán presentar su Programa Interno de Protección Civil y cuando sean menos de cuatro, deberán contarán con un Plan de Emergencia así como la conformación de su brigada multifuncional"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley potosina define la brigada interna como el órgano normativo y operativo que dirige las acciones de protección civil y elabora, actualiza, opera y vigila el programa interno del inmueble (Art. 6º, fr. IX). Toda entidad pública, privada o social debe constituirla y capacitarla (Art. 16), y la Coordinación Estatal promueve cursos y simulacros en oficinas, escuelas, industrias y comercios (Art. 23).",
+    "Los simulacros aparecen sobre todo ligados a eventos masivos: no realizarlos con las autoridades es conducta sancionable (Art. 66). Quien asesore, capacite o elabore programas internos debe estar autorizado por la Coordinación Estatal y puede emitir la carta de corresponsabilidad para su aprobación (Art. 52). Los brigadistas comunitarios se coordinan con la autoridad estatal o municipal (Art. 49)."
+  ],
+  "equipoDuo": [
+    "La ley no fija un inventario de equipo; su énfasis está en verificar las condiciones de seguridad de inmuebles, instalaciones y equipos, desde hoteles y escuelas hasta centros comerciales y estacionamientos (Art. 62). Para armar el equipo de una brigada interna, la referencia técnica son normas federales como la <a href=\"/blog/nom-002-stps-2010-equipo-para-brigadas/\">NOM-002-STPS-2010</a>, de prevención de incendios.",
+    "Bomberos y grupos voluntarios deben inscribir ante la Coordinación Estatal su inventario de vehículos (Art. 51), lo que obliga a mantener su dotación en orden. En LORICA ayudamos a completar esa dotación con <a href=\"/equipo-de-proteccion/\">equipo de protección</a> elegido con la NOM-017-STPS-2024, norma federal de equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "Son sancionables omitir el programa específico, no realizar simulacros en eventos masivos, impedir la verificación o incumplir disposiciones de la autoridad (Art. 66). Las sanciones van de amonestación y multa a clausura temporal o definitiva, suspensión de obras y arresto administrativo; la reincidencia amerita clausura definitiva (Art. 67)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en San Luis Potosí y dónde consulto el texto?",
+      "a": "Es la Ley del Sistema de Protección Civil del Estado de San Luis Potosí, publicada el 6 de julio de 2013 y reformada por última vez el 11 de julio de 2025; el PDF está en la sección de leyes del Congreso del Estado. Su reglamento, publicado el 24 de mayo de 2019, se descarga desde el portal del Periódico Oficial del Estado."
+    },
+    {
+      "q": "¿Quién debe contar con Programa Interno de Protección Civil en San Luis Potosí?",
+      "a": "El artículo 15 obliga a inmuebles e instalaciones, fijas o móviles, de los sectores público, privado y social que reciben una afluencia constante o masiva de personas. Desde julio de 2025 también deben exhibir en el exterior una leyenda con su aforo máximo autorizado."
+    },
+    {
+      "q": "¿Qué dice la ley sobre las brigadas internas?",
+      "a": "Las entidades públicas, privadas y sociales deben constituir y capacitar a sus brigadas internas (Art. 16). La brigada es responsable de elaborar, actualizar, operar y vigilar el programa interno del inmueble (Art. 6º, fr. IX), y forma parte del Sistema Estatal (Art. 9º)."
+    },
+    {
+      "q": "¿Qué pide la ley a quien organiza un concierto o evento masivo en San Luis Potosí?",
+      "a": "Según el artículo 65, un programa especial o específico sujeto al aforo, entregado con anticipación para su aprobación. El organizador debe difundir las medidas preventivas en dos fases: tres días antes del evento y al inicio del mismo, por los medios de mayor alcance."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en San Luis Potosí?",
+      "a": "La ley no lo enumera. Como práctica, una brigada suele contar con casco, guantes, calzado de seguridad, chaleco reflejante, lámparas, botiquín y extintores. La cantidad y el tipo se definen con la NOM-002-STPS-2010 y el análisis de riesgo del programa interno."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de San Luis Potosí · Ley del Sistema de Protección Civil del Estado (PDF, al 11 de julio de 2025)",
+      "url": "https://congresosanluis.gob.mx/sites/default/files/unpload/legislacion/leyes/2025/08/Ley%20del%20Sistema%20de%20Proteccion%20Civil%20%28al%2011%20%20Julio%202025%29.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de San Luis Potosí · Leyes estatales",
+      "url": "https://congresosanluis.gob.mx/legislacion/leyes"
+    },
+    {
+      "nombre": "Periódico Oficial del Estado de San Luis Potosí · Reglamento de la Ley del Sistema de Protección Civil del Estado (PDF, 24 de mayo de 2019)",
+      "url": "https://periodicooficial.slp.gob.mx/api/publicacion/descargar/guest/7962/documento"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

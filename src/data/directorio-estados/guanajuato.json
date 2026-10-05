@@ -1,14 +1,14 @@
 {
- "lead": "Guanajuato concentra 19 estaciones de bomberos en 8 municipios, con mayor presencia en León y Celaya. Encontrarás dirección, teléfono oficial cuando está publicado, ubicación y la corporación que opera cada estación para coordinar una gestión o equipamiento.",
+ "lead": "Guanajuato concentra 20 estaciones de bomberos en 8 municipios, con mayor presencia en León y Celaya. Encontrarás dirección, teléfono oficial cuando está publicado, ubicación y la corporación que opera cada estación para coordinar una gestión o equipamiento.",
  "panorama": [
   "El servicio de bomberos en Guanajuato se sostiene sobre todo con corporaciones municipales. León y Celaya cuentan con central y subestaciones, mientras Dolores Hidalgo, Guanajuato y San Miguel de Allende aportan cuerpos voluntarios. También hay atención especializada en el aeropuerto y en Guanajuato Puerto Interior, por lo que la operación reúne mandos públicos, voluntariado e instalaciones de actividad industrial.",
-  "León reúne 8 estaciones; Celaya y Silao de la Victoria agrupan 3 cada uno. Para quien coordina una compra, esa concentración pide distinguir la dotación de las bases con varios turnos de la que requiere una corporación única. En Silao conviven servicio municipal, aeropuerto e industria; el alcance del equipo debe responder a esa diferencia."
+  "León reúne 9 estaciones; Celaya y Silao de la Victoria agrupan 3 cada uno. Para quien coordina una compra, esa concentración pide distinguir la dotación de las bases con varios turnos de la que requiere una corporación única. En Silao conviven servicio municipal, aeropuerto e industria; el alcance del equipo debe responder a esa diferencia."
  ],
  "estacionesDuo": [
   "El Heroico Cuerpo de Bomberos de León concentra central y subestaciones, y Protección Civil y Bomberos de Celaya mantiene sus bases. En Salamanca opera la Dirección Municipal de Protección Civil y Bomberos. Las estaciones se presentan por municipio y muestran teléfono oficial cuando fue publicado."
  ],
  "coberturaDuo": [
-  "Las 19 estaciones declaran atención de incendios estructurales y 15 incluyen rescate vehicular. Es una combinación que exige protección para fuego urbano y maniobras en incidentes de tránsito. Materiales peligrosos aparece en León y Salamanca, mientras el salvamento aeroportuario suma un frente distinto en Silao de la Victoria."
+  "Las 20 estaciones declaran atención de incendios estructurales y 15 incluyen rescate vehicular. Es una combinación que exige protección para fuego urbano y maniobras en incidentes de tránsito. Materiales peligrosos aparece en León y Salamanca, mientras el salvamento aeroportuario suma un frente distinto en Silao de la Victoria."
  ],
  "equipoDuo": [
   "La base de cualquier dotación es la protección para incendio estructural. El rescate vehicular requiere <a href=\"/trajes/extricacion/\">trajes de extricación</a> y herramientas compatibles con esa labor. En León y Salamanca, los servicios de materiales peligrosos justifican <a href=\"/trajes/hazmat/\">equipo Hazmat</a>; la operación aeroportuaria requiere prendas de aproximación para su riesgo específico.",
@@ -17,7 +17,7 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Guanajuato y dónde están?",
-   "a": "Hay 19 estaciones de bomberos en 8 municipios de Guanajuato. León concentra 8, mientras Celaya y Silao de la Victoria tienen 3 cada uno. También hay estaciones en Dolores Hidalgo Cuna de la Independencia Nacional, Guanajuato, Irapuato, Salamanca y San Miguel de Allende."
+   "a": "Hay 20 estaciones de bomberos en 8 municipios de Guanajuato. León concentra 9, mientras Celaya y Silao de la Victoria tienen 3 cada uno. También hay estaciones en Dolores Hidalgo Cuna de la Independencia Nacional, Guanajuato, Irapuato, Salamanca y San Miguel de Allende."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Guanajuato?",

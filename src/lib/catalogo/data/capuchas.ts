@@ -33,36 +33,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Disponible en natural y negro"
       ],
       "resumen": [
-        "La Romak Fire CAP1005 es una capucha over-face de 100 % Nomex con círculo facial descubierto para ERA. Si tu corporación requiere que la máscara ocupe esa abertura, cotizamos CAP1005 en natural o negro y probamos el borde con casco, chaquetón y la máscara que ya usan.",
-        "Para reponer una capucha Romak Fire, pídenos CAP1005, color natural o negro y la combinación de máscara aprobada. Te entregamos una configuración over-face para zonas de alta temperatura, pero la ficha publica el estatus sin norma y así debe quedar escrito en tu orden."
+        "La Romak Fire CAP1005 es una monja over-face de 100 % Nomex, con círculo facial descubierto para trabajar con la máscara de ERA en zonas de alta temperatura.",
+        "Se ofrece en color natural y negro, y es la capucha de nuestro kit brigadista.",
+        "Su fabricante no declara norma, y así la presentamos. Si tu pliego exige certificación, te cotizamos la Majestic PAC II."
       ],
       "descripcion": [
-        "Elige Romak Fire CAP1005 si tu máscara de ERA debe ocupar un círculo facial descubierto; el 100 % Nomex queda alrededor del sello, no encima. En la orden escribimos CAP1005, construcción over-face, color natural o negro y la máscara con la que tu brigada aprobó el ajuste, para que una reposición conserve la misma geometría.",
-        "La CAP1005 usa 100 % Nomex y deja el círculo facial abierto para ERA. En la prueba de talla te pedimos colocar máscara, casco y chaquetón, girar la cabeza, mirar arriba y bajar el mentón; elige esta configuración si el borde rodea la máscara sin invadir el sello y el babero permanece extendido.",
-        "Puedes pedir CAP1005 en natural o negro, y nosotros registramos ese color junto con la construcción over-face. Combínala con la máscara de ERA, el casco y el cuello del chaquetón que usa tu equipo; si cambias cualquiera de esas piezas, mándanos la combinación para repetir la prueba antes de surtir una reposición.",
-        "La Romak Fire CAP1005 se indica para zonas de alta temperatura. Antes de recibir un lote, te pedimos montar ERA, casco y chaquetón, mover cabeza y hombros, y revisar que el 100 % Nomex no forme pliegues en el sello; escribe esa prueba de interfaz en la orden para cotejar la partida.",
-        "El fabricante publica CAP1005 sin norma declarada, por lo que nosotros la cotizamos como sin norma y no como certificada. Antes de guardia revisamos círculo facial, tela de 100 % Nomex, costuras y babero; retira la pieza si el borde pierde forma, hay hilos sueltos o la tela se adelgaza, y registra código y color."
+        "La monja cubre cabeza, cuello y hombros, y cierra el hueco entre el casco, la máscara y el cuello del chaquetón, por donde entraría el calor.",
+        "El círculo facial queda descubierto para que la máscara selle directo sobre la piel. La capucha no debe quedar entre la cara y el sello, y eso se revisa en la prueba con el ERA puesto."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "CAP1005."
+          "q": "¿En qué colores viene la monja Romak Fire CAP1005?",
+          "a": "En natural y negro."
         },
         {
-          "q": "¿Qué colores hay?",
-          "a": "Natural y negro."
+          "q": "¿La monja CAP1005 está certificada?",
+          "a": "No. Su fabricante no declara norma y así la presentamos. Para una capucha certificada, la Majestic PAC II está listada por UL."
         },
         {
-          "q": "¿Tiene norma declarada?",
-          "a": "No tiene norma declarada."
+          "q": "¿Por qué la CAP1005 tiene el círculo facial descubierto?",
+          "a": "Para que la máscara de ERA selle directo sobre la cara, sin tela de por medio."
         },
         {
-          "q": "¿Por qué el círculo facial queda descubierto?",
-          "a": "Porque la construcción over-face deja espacio para la máscara de ERA. La prueba debe confirmar que el borde no invada el sello facial ni se desplace al mover la cabeza."
-        },
-        {
-          "q": "¿Qué debe coincidir al reordenar?",
-          "a": "Código CAP1005, color requerido, construcción over-face y compatibilidad comprobada con la máscara y el casco que usa la corporación."
+          "q": "¿En qué kit viene la monja CAP1005?",
+          "a": "En nuestro kit brigadista, con el traje Combate Básico, el casco Bullard LTX, el guante Firemax VI y la bota Workman Fire."
         }
       ],
       "imagen": {
@@ -72,6 +66,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "height": 1250,
         "origen": "proveedor",
         "credito": "Romak Fire"
+      },
+      "duos": {
+        "ficha": [
+          "La monja Romak Fire se identifica con el código CAP1005. La tabla reúne material, colores y estatus normativo tal como los publica su ficha.",
+          "No declara norma. Pide que así quede escrito en la cotización, sobre todo si la partida forma parte de una licitación."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la CAP1005, pensada para uso con ERA.",
+          "Al reponer, pide el mismo código y color para que el lote de tu brigada quede uniforme."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la CAP1005: colores, certificación, diseño facial y kit.",
+          "Si nos compartes el modelo de máscara de tu equipo, te decimos qué revisar en la prueba."
+        ]
       }
     },
     {
@@ -97,36 +105,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Lavar con agua tibia, sin suavizante ni cloro"
       ],
       "resumen": [
-        "La Sköld FPEN es una escafandra de 100 % Nomex, tamaño universal, con dos capas en cabeza y una en hombros. La cotizamos para tu operación con apertura de 120–145 mm, elástico de al menos 31 pulgadas y la declaración de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269.",
-        "Pídenos FPEN cuando necesitas dos capas en cabeza, no una doble capa completa. Te entregamos la configuración con hilo 100 % Nomex, cabeza de 13 pulgadas y babero de 4 pulgadas; antes de cerrar tu partida, prueba máscara de ERA, casco y chaquetón para confirmar que el elástico de 800 mm recupera posición."
+        "La escafandra Nomex Sköld FPEN es una monja de 100 % Nomex con dos capas en la cabeza y una en los hombros, en tamaño universal.",
+        "Su cabeza mide 13 pulgadas, su babero 4 pulgadas y su apertura facial va de 120 a 145 mm. El elástico estira al menos a 31 pulgadas.",
+        "Sköld declara valores de tela de referencia NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269, con TPP de 30.2 cal/cm²."
       ],
       "descripcion": [
-        "Elige Sköld FPEN si tu partida requiere tamaño universal con dos capas en cabeza y una en hombros, no doble capa en todo el contorno. En tu orden escribimos FPEN, 100 % Nomex, hilo 100 % Nomex, cabeza de 13 pulgadas y babero de 4 pulgadas, para que recibas la distribución de capas que comparaste.",
-        "La FPEN combina 100 % Nomex, apertura facial de 120–145 mm y elástico que estira al menos 31 pulgadas, equivalentes a 800 mm. Durante la prueba de uso te pedimos ponértela con máscara de ERA y casco, mirar una escalera y girar la cabeza; elige este modelo si el babero de 4 pulgadas sigue extendido y el elástico vuelve a su lugar.",
-        "Cotizamos Sköld FPEN con tamaño universal y su construcción de dos capas en cabeza, una en hombros. Para combinarla con tu traje, casco y máscara de ERA, revisamos la apertura de 120–145 mm y el solape antes de surtir; pídela con el conjunto que ya usa tu brigada, no como una escafandra intercambiable por material.",
-        "En operación, la FPEN declara TPP de 30.2 cal/cm² y ATPV de 6.3/11.2 cal/cm² para una o dos capas. Antes de aceptar un lote, te proponemos probar máscara, casco y chaquetón, luego comparar apertura, capas y costuras de hilo 100 % Nomex contra la orden; así la talla universal no sustituye la prueba física.",
-        "Sköld declara valores de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269; nosotros los comunicamos como declarado, no como certificación. Antes de guardia revisamos elástico, costuras y apertura de 120–145 mm; retira FPEN si el elástico no recupera, hay ruptura de costura o daño en Nomex, y registra el lavado con agua tibia sin cloro."
+        "Las dos capas en la cabeza protegen donde más calor recibe el bombero, y la capa sencilla en hombros reduce volumen bajo el cuello del chaquetón.",
+        "Se lava con agua tibia, sin suavizante ni cloro. Si el elástico de la apertura facial ya no recupera su forma, la monja deja de ajustar alrededor de la máscara y conviene reponerla."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "FPEN."
+          "q": "¿Cuántas capas tiene la escafandra Sköld FPEN?",
+          "a": "Dos capas en la cabeza y una en los hombros, de 100 % Nomex."
         },
         {
-          "q": "¿Cuántas capas tiene?",
-          "a": "Dos en cabeza y una en hombros."
+          "q": "¿Cómo se lava la escafandra Nomex Sköld?",
+          "a": "Con agua tibia, sin suavizante ni cloro, según su fabricante."
         },
         {
-          "q": "¿Cómo se lava?",
-          "a": "Con agua tibia, sin suavizante, cloro ni lavado en seco."
+          "q": "¿Qué TPP declara la Sköld FPEN?",
+          "a": "TPP de 30.2 cal/cm² y ATPV declarado de 6.3/11.2 cal/cm², como valores de tela de referencia."
         },
         {
-          "q": "¿Dónde están las dos capas de FPEN?",
-          "a": "En la cabeza; los hombros tienen una capa. La orden debe conservar esa distribución y no describirla como doble capa completa."
-        },
-        {
-          "q": "¿Qué hago si el elástico no recupera posición?",
-          "a": "Sepárala de servicio para evaluación conforme al programa de EPP, pues la apertura declarada depende de que el elástico mantenga su ajuste."
+          "q": "¿Qué talla tiene la escafandra Sköld FPEN?",
+          "a": "Tamaño universal, con apertura facial de 120 a 145 mm y elástico que estira al menos a 31 pulgadas."
         }
       ],
       "imagen": {
@@ -136,6 +138,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "height": 1250,
         "origen": "proveedor",
         "credito": "Sköld"
+      },
+      "duos": {
+        "ficha": [
+          "La escafandra Sköld se identifica con el código FPEN. La tabla reúne material, talla y valores declarados tal como los publica su ficha.",
+          "Las referencias son valores de tela declarados por el fabricante, no una certificación del producto terminado."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la FPEN, incluidos sus valores de protección térmica.",
+          "El cuidado importa: suavizante y cloro dañan el Nomex y el elástico."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Sköld FPEN: capas, lavado, valores térmicos y talla.",
+          "Si nos dices cuántas monjas necesitas, te mandamos la cotización con ficha técnica."
+        ]
       }
     },
     {
@@ -161,36 +177,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Incluida en el kit estructural Profesional"
       ],
       "resumen": [
-        "La Majestic PAC II CAP1001 es una capucha tejida de cara completa en Nomex blanco 100 %, con doble capa en cabeza y pechera. La surtimos para máscara de ERA con apertura de 120–145 mm, elástico encapsulado de media pulgada y babero de 8 pulgadas, incluida en el kit estructural Profesional.",
-        "Si tu compra requiere el mismo modelo del kit estructural Profesional, pide CAP1001 y no solo una capucha blanca. Cotizamos la PAC II con cabeza de 13 pulgadas, total de 21 pulgadas y estatus certificado UL bajo NFPA 1971 ed. 2018, después de revisar solape con tu casco, máscara y chaquetón."
+        "La Majestic PAC II es una monja de Nomex blanco 100 %, tejida de cara completa, con doble capa en cabeza y pechera y aberturas diseñadas para la máscara de ERA.",
+        "Mide 13 pulgadas de cabeza y 8 de babero, con apertura facial de 120 a 145 mm y elástico encapsulado de media pulgada. Es la capucha de nuestro kit estructural Profesional.",
+        "Está listada por UL bajo NFPA 1971 edición 2018. La cotizamos con su código CAP1001 y ficha técnica."
       ],
       "descripcion": [
-        "Elige Majestic PAC II cuando tu orden requiere doble capa en cabeza y pechera, cara completa y la capucha del kit estructural Profesional. Nosotros escribimos CAP1001, Nomex blanco 100 %, cabeza de 13 pulgadas y babero de 8 pulgadas; así tu área de compras no sustituye esta construcción por una capucha blanca de otro modelo.",
-        "La PAC II está tejida de cara completa con aberturas para ojos y nariz diseñadas para máscara de ERA, apertura facial de 120–145 mm y elástico encapsulado de media pulgada que estira al menos 31 pulgadas, o 800 mm. En la prueba te pedimos montar máscara, casco y chaquetón; elige PAC II si conserva el sello y la pechera queda extendida.",
-        "Surtimos Majestic PAC II con doble capa en cabeza y pechera, incluida en el kit estructural Profesional. Pídela con tu máscara de ERA, casco y chaquetón, porque las aberturas para ojos y nariz se deben probar con ese conjunto; si repones piezas, mándanos CAP1001 y confirma que buscas la misma configuración de 21 pulgadas.",
-        "Para uso operativo, la PAC II tiene cabeza de 13 pulgadas, babero de 8 pulgadas y apertura de 120–145 mm. Antes de aceptar un lote, te pedimos elevar brazos, mirar a los lados y agacharte con ERA y casco; compara que el elástico de media pulgada, las aberturas y la doble capa sigan la orden CAP1001.",
-        "Majestic publica PAC II como certificado UL bajo NFPA 1971 ed. 2018, y nosotros conservamos ese estatus en la cotización. Antes de guardia revisamos Nomex blanco 100 %, doble capa, aberturas y elástico de 800 mm; retira CAP1001 si las aberturas se deforman, el elástico no recupera o la pechera se engancha, y registra la condición."
+        "La doble capa en cabeza y pechera da protección extra en las zonas que más calor reciben, y el babero de 8 pulgadas queda bien metido bajo el cuello del chaquetón.",
+        "El elástico encapsulado de media pulgada mantiene la apertura facial ajustada a la máscara y estira al menos a 31 pulgadas para ponérsela con facilidad."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "CAP1001."
+          "q": "¿La monja Majestic PAC II está certificada?",
+          "a": "Sí, está listada por UL bajo NFPA 1971 edición 2018, según su ficha."
         },
         {
-          "q": "¿Está incluida en un kit?",
-          "a": "En el kit estructural Profesional."
+          "q": "¿En qué kit viene la Majestic PAC II?",
+          "a": "En nuestro kit estructural Profesional, con el traje Romak Fire Profesional, el casco Bullard LTX, el guante Veridian Fire Pro II y la bota Croydon Filtrex."
         },
         {
-          "q": "¿Cómo se usa con ERA?",
-          "a": "Sus aberturas se diseñaron para máscara de ERA; confirma físicamente sello y cobertura."
+          "q": "¿Dónde tiene doble capa la Majestic PAC II?",
+          "a": "En la cabeza y en la pechera."
         },
         {
-          "q": "¿En qué zonas tiene doble capa PAC II?",
-          "a": "En cabeza y pechera. Esa construcción se distingue del modelo FPEN, que declara dos capas en cabeza y una capa en hombros."
-        },
-        {
-          "q": "¿Qué confirma que es la capucha del kit?",
-          "a": "El código CAP1001, la construcción declarada, las medidas publicadas y la documentación de la partida; el color blanco por sí solo no identifica el modelo."
+          "q": "¿Qué medidas tiene la Majestic PAC II?",
+          "a": "Cabeza de 13 pulgadas, babero de 8 pulgadas y apertura facial de 120 a 145 mm."
         }
       ],
       "imagen": {
@@ -200,6 +210,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "height": 1250,
         "origen": "proveedor",
         "credito": "Majestic"
+      },
+      "duos": {
+        "ficha": [
+          "La Majestic PAC II se identifica con el código CAP1001. La tabla reúne material, medidas y certificación tal como los publica su ficha.",
+          "Es la capucha del catálogo listada por UL. Pide que ese estatus quede escrito en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la PAC II, con la doble capa en cabeza y pechera como rasgo distintivo.",
+          "Su babero largo facilita el solape con el cuello del chaquetón."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Majestic PAC II: certificación, kit, capas y medidas.",
+          "Si nos compartes cuántas monjas necesitas, te cotizamos con ficha técnica."
+        ]
       }
     }
   ]

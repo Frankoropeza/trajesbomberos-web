@@ -1,11 +1,11 @@
 {
- "lead": "Acapulco de Juárez tiene 5 estaciones de bomberos: la central municipal, 3 subestaciones y la base del aeropuerto. Encuentras domicilio y ubicación de las bases municipales, además del teléfono oficial de la central.",
+ "lead": "Acapulco de Juárez tiene 6 estaciones de bomberos: la central municipal, 4 subestaciones y la base del aeropuerto. Encuentras domicilio y ubicación de las bases municipales, además del teléfono oficial de la central y de varias subestaciones.",
  "panorama": [
-  "Los bomberos en Acapulco de Juárez se organizan alrededor de la Coordinación General de Protección Civil y Bomberos de Acapulco, con su central en la calle Amates, colonia Farallón del Obispo. Completan la red municipal las subestaciones de Coloso, Pie de la Cuesta y Renacimiento; aparte opera el CREI del Aeropuerto Internacional Juan N. Álvarez.",
-  "Para quien coordina o capacita, la red se reparte a lo largo del municipio: la central en Farallón del Obispo, Coloso sobre Paseo de los Europeos, Pie de la Cuesta junto a la carretera Acapulco–Zihuatanejo y Renacimiento en su propia colonia. El aeropuerto responde a su lógica de salvamento y no a la del servicio urbano."
+  "Los bomberos en Acapulco de Juárez se organizan alrededor de la Coordinación General de Protección Civil y Bomberos de Acapulco, con su Estación Central «Teniente Coronel José Saavedra del Razo» en Farallón del Obispo. Completan la red municipal las subestaciones de Coloso, Mercado Central, Pie de la Cuesta y Renacimiento; aparte opera el CREI del Aeropuerto Internacional Juan N. Álvarez.",
+  "Para quien coordina o capacita, la red se reparte a lo largo del municipio: la central en Farallón del Obispo, Coloso sobre Paseo de los Europeos, Mercado Central en Av. Constituyentes, Pie de la Cuesta junto a la carretera Acapulco–Zihuatanejo y Renacimiento en su propia colonia. El aeropuerto responde a su lógica de salvamento."
  ],
  "coberturaDuo": [
-  "De las 5 estaciones, 4 son municipales y comparten incendio, rescate vehicular y atención prehospitalaria. La central es la única que declara incendios forestales y rescate acuático, y el CREI aporta materiales peligrosos y salvamento aeroportuario: riesgos urbanos, forestales, acuáticos y de pista."
+  "De las 6 estaciones, 5 son municipales; todas atienden incendio estructural y casi todas las municipales suman rescate vehicular y atención prehospitalaria. Solo la central declara incendio forestal y rescate acuático, y el CREI aporta materiales peligrosos y salvamento aeroportuario."
  ],
  "equipoDuo": [
   "Además del traje estructural, Acapulco de Juárez pide equipo para escenarios variados: <a href=\"/trajes/forestal/\">trajes forestales ligeros</a> para los incendios de vegetación que atiende la central, chalecos y cuerdas de <a href=\"/rescate/\">equipo de rescate acuático</a>, y protección aluminizada para el CREI del aeropuerto.",
@@ -14,7 +14,7 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Acapulco de Juárez y dónde están?",
-   "a": "Son 5. La central está en Farallón del Obispo; las subestaciones, en Coloso, Pie de la Cuesta y Renacimiento, y la quinta es la base del CREI dentro del Aeropuerto Internacional Juan N. Álvarez, que no publica un domicilio aparte."
+   "a": "Son 6. La central está en Farallón del Obispo; las subestaciones, en Coloso, Mercado Central, Pie de la Cuesta y Renacimiento, y la sexta es la base del CREI dentro del Aeropuerto Internacional Juan N. Álvarez, que no publica un domicilio aparte."
   },
   {
    "q": "¿Quién opera los bomberos en Acapulco de Juárez?",
@@ -22,7 +22,7 @@
   },
   {
    "q": "¿Cómo contacto a los bomberos de Acapulco de Juárez para una gestión?",
-   "a": "La central de la Coordinación, en Farallón del Obispo, tiene teléfono oficial y es la vía para solicitar visitas, cursos o apoyo a eventos; las subestaciones no publican número propio. En cualquier emergencia, marca al 911."
+   "a": "La central de la Coordinación, en Farallón del Obispo, y las subestaciones de Coloso, Pie de la Cuesta y Renacimiento tienen teléfono oficial; úsalos para solicitar visitas, cursos o apoyo a eventos. Mercado Central y el CREI no publican número propio. En cualquier emergencia, marca al 911."
   },
   {
    "q": "¿Qué necesita una corporación de bomberos de Acapulco de Juárez para comprar equipo?",

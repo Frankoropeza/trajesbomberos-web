@@ -1,102 +1,6 @@
 import type { Duo } from './index';
 
 export const DUO_P_D: Record<string, Record<string, Duo>> = {
-  '/kits/kit-brigadista/': {
-    errores: [
-      'El Kit brigadista contra incendio falla cuando se compra por apariencia o con talla única: casco, capucha, guante y bota dejan de acompañar la maniobra autorizada. Tampoco debe tomarse como permiso para ataque interior; esa confusión altera la partida, el procedimiento y la recepción.',
-      'Incluye tarea autorizada, talla por usuario, color, bandas e identificación en la solicitud. Así compras puede contrastar cada componente contra el análisis de riesgo y evitar accesorios añadidos después. Comparte por WhatsApp ubicación, actividad y límite de intervención para recibir una cotización formal por partida.',
-    ],
-    faq: [
-      'Antes de definir la dotación, conviene resolver las dudas sobre ataque interior y sobre la composición Combate Básico: traje BOM1001, casco LTX, capucha CAP1005, guante Firemax VI y bota Workman Fire. La pregunta decisiva sigue siendo qué tarea tiene autorizada la brigada.',
-      'Para cotizar, manda por WhatsApp número de usuarios, tallas de traje y bota, actividad del centro de trabajo y si requieren identificación. Con esos datos se documentan configuración y alcance por escrito, sin confundir el kit con un conjunto estructural o ERA.',
-    ],
-    ficha: [
-      'Para la requisición de brigada del equipo de bombero se define el uso conforme a análisis de riesgo, traje, casco, capucha, guantes y botas, además de la referencia Combate Básico Romak BOM1001. La NOM-002-STPS-2010 se consulta para la dotación de brigada según el riesgo del centro.',
-      'Deja modelo, talla, accesorios y límite de intervención en el anexo técnico; una lista genérica impide cotejar la recepción. Pide la ficha técnica por escrito junto con la cotización formal para que seguridad, compras y usuarios comparen la misma configuración.',
-    ],
-    kit: [
-      'La configuración Combate Básico del equipo de bombero puede integrar traje Romak BOM1001, casco Bullard LTX, capucha CAP1005, guante Firemax VI GIS1008 y bota Workman Fire BOT1004. Se cotizan juntos porque cuello, puños y pantalonera deben conservar cobertura durante la tarea definida.',
-      'La partida reúne códigos, tallas y accesorios, pero cada pieza conserva su propia documentación. Solicita la configuración completa por WhatsApp y prueba movimientos con extintor o manguera antes de asignar equipo; así la recepción no depende de una foto ni de un nombre genérico.',
-    ],
-  },
-  '/kits/kit-estructural/': {
-    errores: [
-      'El Kit estructural para bombero no debe armarse sin probar solapes entre capucha, cuello, guantes, mangas y botas. Otro error es trasladar la declaración de un componente a todo el conjunto; al cambiar una pieza, cobertura y documentación pueden modificarse.',
-      'Define primero atmósfera, entrada, humo y necesidad de ERA; este último se cotiza por separado y se prueba con máscara y arnés. Envía por WhatsApp usuarios, tallas y maniobras previstas para documentar una partida que soporte la licitación y la entrega.',
-    ],
-    faq: [
-      'Al definir el conjunto estructural se aclara si el ERA viene incluido y si una pieza puede cambiarse. El ERA depende de atmósfera, duración y compatibilidad, mientras que una sustitución exige volver a validar solape, movimiento y documento de la configuración final.',
-      'Manda por WhatsApp cantidad de usuarios, tallas de traje, casco y bota, además de la operación prevista. Con esa información se separan componentes, accesorios y necesidades de respiración en una cotización formal, en lugar de asumir que un conjunto ya está certificado como sistema.',
-    ],
-    ficha: [
-      'La especificación para combate reúne análisis de riesgo, traje, casco, capucha, guantes y botas; el ERA es opcional según operación. Como referencia, el armado Profesional Romak requiere validar por usuario tallas, solapes y accesorios antes de liberar la orden.',
-      'La requisición debe identificar código, talla, color y declaración de cada componente. NFPA 1970 funciona como referencia del conjunto estructural, mientras el listado UL indicado para guante o capucha corresponde solo a esa pieza. Pide cada ficha técnica por escrito.',
-    ],
-    kit: [
-      'Como referencia, el armado Profesional del equipo de bombero considera chaquetón BOM1028, pantalonera BOM1040, casco Bullard LTX, bota Croydon Filtrex BOT1002, guante Veridian Fire Pro II GIS1017 y capucha Majestic PAC II. Sus interfaces se cotizan juntas para conservar solape al agacharse, cargar herramienta o elevar brazos.',
-      'La ficha del guante declara UL NFPA 2018 y la capucha aparece listada UL NFPA 1971 edición 2018; esas declaraciones se confirman por componente. Comparte configuración, tallas y uso previsto para recibir partidas separadas y una prueba de conjunto defendible.',
-    ],
-  },
-  '/kits/kit-forestal/': {
-    errores: [
-      'El Kit forestal para brigada se equivoca cuando se trata como una versión ligera del estructural: línea de fuego, terreno, ceniza y desplazamiento exigen otra configuración. Omitir la estabilidad de goggles y nuquera o elegir bota sin revisar recorrido genera fatiga, tropiezos y cobertura incompleta.',
-      'Describe por WhatsApp terreno, jornada, herramientas y número de personas. Así se definen ropa, casco forestal, goggles, guantes, bota y nuquera por talla y tarea, evitando que una compra exterior se use indebidamente en estructura o atmósfera que requiera respiración autónoma.',
-    ],
-    faq: [
-      'La operación exterior del equipo de bombero define si corresponde ropa, casco, goggles, guantes, bota y nuquera. También distingue entre overol y saco con pantalón, una decisión que depende de movimiento, ajuste y tarea de la cuadrilla.',
-      'Para una propuesta útil, comparte por WhatsApp tipo de terreno, exposición a ceniza, herramienta autorizada, tallas y configuración de casco. La cotización formal puede separar Fire Ranger Explorer, BOMW1002 y accesorios sin asumir que sirven para incendio estructural.',
-    ],
-    ficha: [
-      'La dotación forestal se documenta con ropa, casco forestal, goggles, guantes, bota y nuquera; la selección valida talla y estabilidad durante el recorrido. Fire Ranger Explorer o BOMW1002 son referencias de armado, no sustituyen la revisión de actividad, material y configuración.',
-      'Escribe modelo, talla, casco, goggles, nuquera y tipo de bota en la requisición para comparar cada entrega. La referencia forestal vigente es NFPA 1950; solicita la ficha técnica y declaración aplicable por escrito antes de emitir una orden para cuadrilla.',
-    ],
-    kit: [
-      'Para la línea de fuego pueden reunirse Fire Ranger Explorer o BOMW1002, casco Bullard FH911H, goggle ESS Striketeam XTO y bota forestal. Las piezas se cotizan juntas para revisar que goggles y nuquera se mantengan con el casco, y que guante y bota funcionen sobre terreno irregular.',
-      'Cada referencia conserva talla y configuración propias, por lo que una partida debe identificar ropa y accesorios sin abreviaturas. Comparte número de usuarios, material preferido y condiciones de campo para contrastar el conjunto con la tarea exterior que realizará la brigada.',
-    ],
-  },
-  '/marcas/romak-fire/': {
-    errores: [
-      'Romak Fire se compra por modelo, operación y declaración publicada, no por el nombre de la marca. Confundir un traje de proximidad con uno estructural, o dar por certificado un modelo que solo se declara, como Maverick II o Fire Ranger Explorer, compromete el anexo técnico y la selección.',
-      'Incluye modelo, código, talla, capa y norma declarada en la solicitud. Con la tarea, cantidad y configuración por WhatsApp se prepara una cotización con partidas rastreables, útil para comparar Romak Fire Protector, Fire Ranger o Combate Básico sin mezclar su alcance.',
-    ],
-    faq: [
-      'Romak Fire aclara qué modelo corresponde a estructural, brigada, forestal o aproximación, y cuál es su estatus normativo. Protector, Profesional, Defender, Vantage y Mark One MPX-8 se publican con certificación UL; Maverick II y los Fire Ranger, como declarados; Combate Básico, por materiales, y BOMW1002, sin norma.',
-      'Envía por WhatsApp operación, modelo de interés, tallas y cantidad para cotejar código, materiales y accesorios. Esa información permite pedir documentación por partida y evita que una foto o una familia de producto sustituya la configuración que necesita tu requisición.',
-    ],
-    ficha: [
-      'Romak Fire se especifica por código, familia de uso, talla y materiales o barreras indicados en cada modelo. Mark One MPX-8 usa BOM1046, Nor-Fab MPX-8 aluminizada, Omni Synergy y Stedair 3000; Combate Básico BOM1001 declara Nomex IIIA y Neo-Guard.',
-      'La norma y el estatus se transcriben exactamente desde la ficha del modelo, sin generalizarlos a la marca. Pide por escrito la ficha técnica de cada partida y confirma composición, accesorios y documentación antes de comparar ofertas o recibir el suministro.',
-    ],
-    marca: [
-      'Romak Fire publica Protector, Profesional, Defender, Vantage, Maverick II, Combate Básico, Fire Ranger Explorer, Fire Ranger Scout, BOMW1002 y Mark One MPX-8. Protector, Profesional, Defender y Vantage se publican con certificación UL para estructural, y Mark One MPX-8 para proximidad; el resto se revisa por el estatus de su ficha.',
-      'Selecciona el modelo a partir de la operación y solicita código, talla, capas y declaración correspondiente. Una cotización por partidas permite conservar la diferencia entre certificado UL, declarado, materiales o sin norma, en vez de atribuir a toda la marca una condición que no publica.',
-    ],
-  },
-  '/marcas/skold/': {
-    errores: [
-      'Sköld no se debe pedir solo por la prenda: Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender tienen exterior, accesorios y estatus distintos. También es riesgoso llamar certificado a un modelo equivalente; ese término solo corresponde a la certificación UL que declara Hero Nomex IIIA.',
-      'Anota modelo, exterior elegido, talla, radio, DRD y documentos requeridos antes de cotizar. Por WhatsApp comparte la tarea y configuración para que la partida mantenga claro si el fabricante publica certificado UL, equivalente u otra declaración de la ficha.',
-    ],
-    faq: [
-      'Sköld responde dudas sobre el exterior de Hero Nomex IIIA y el estatus de sus modelos. Hero Nomex IIIA permite cinco opciones de exterior y declara certificación UL MH60435; Hero PBI MAX se publica como equivalente, por lo que sus documentos no se expresan igual.',
-      'Para cotizar, envía por WhatsApp actividad, tallas, configuración de radio o lámpara y exterior deseado. Así se confirma con precisión qué debe llevar la orden y qué documento aplica, incluido el uso de SköldTracker para fichas, mantenimiento y caducidad cuando corresponda.',
-    ],
-    ficha: [
-      'Sköld se requisita con modelo, talla, exterior y configuración. Hero PBI MAX declara PBI MAX, cuello escudo 360°, DRD y estatus equivalente; Hero Nomex IIIA identifica certificación UL MH60435 y opciones Advance, Kombat Flex, PBI MAX 7.0, Pioneer o Defender 750.',
-      'No basta escribir el nombre comercial: puño Kevlar, refuerzos Stedshield, tirantes, radio y accesorios deben quedar en la partida. Pide la ficha técnica y declaración por escrito para que el estatus publicado de cada modelo acompañe la recepción y la licitación.',
-    ],
-    marca: [
-      'Sköld publica Hero PBI MAX, Hero Nomex IIIA y Brigadista Defender. Hero Nomex IIIA declara certificación UL MH60435 para NFPA 1971 ed. 2018; Hero PBI MAX se presenta como equivalente y Brigadista Defender como equivalente con referencias NFPA 1971 ed. 1991 y NOM-002-STPS-2010.',
-      'Define exterior, accesorios y operación antes de solicitar partidas. El estatus normativo se conserva tal como lo publica cada ficha, de modo que compras puede distinguir una certificación UL de una equivalencia y pedir el documento aplicable a la configuración elegida.',
-    ],
-  },
-  '/trajes/aproximacion/': {
-    completa: [
-      'El Traje de aproximación aluminizado para calor radiante se completa revisando casco o capucha con visor, guantes, pantalón, polainas o bota y ERA cuando la atmósfera lo exige. La compatibilidad nace de probar traslapes y accesorios con la exposición real, no de comprar piezas aisladas.',
-      'Pide que cada complemento quede identificado por nivel, talla y función dentro de la cotización. Al ensayar visor, guante, manga, bota, máscara y radio antes de entregar, la organización puede detectar presión o aberturas que una ficha individual no revela.',
-    ],
-  },
   '/trajes/aproximacion/capucha/': {
     aplicaciones: [
       'Capucha aluminizada con visor dorado protege cara y cuello en ARFF, colada y fundición, hornos, vidrio y maniobras petroquímicas con radiación frontal. Quien especifica la pieza debe definir exposición, tiempo, casco y si existe equipo de respiración que deba conservar compatibilidad.',
@@ -299,20 +203,6 @@ export const DUO_P_D: Record<string, Record<string, Duo>> = {
     relacionados: [
       'Para sellar la valenciana del traje de aproximación, se revisan los cobertores con el <a href="/trajes/aproximacion/pantalon/">pantalón aluminizado</a>, además del <a href="/trajes/aproximacion/chaqueton/">chaquetón del conjunto</a>. La continuidad en tobillo cambia la protección frente a salpicadura durante la maniobra térmica.',
       'Incluye bota y pantalón reales en la prueba de recepción. De esa forma se corrige una abertura o velcro insuficiente antes de la maniobra, sin esperar a descubrir que la polaina se mueve o deja expuesto el calzado bajo calor.',
-    ],
-  },
-  '/trajes/aproximacion/modelos/romak-mark-one/': {
-    caracteristicas: [
-      'El traje de aproximación Romak Fire Mark One MPX-8 declara un sistema de cuatro capas, exterior Nor-Fab MPX-8 aluminizada, Omni Synergy y Stedair 3000. También integra DRD, porta micrófono, porta radio, tirantes H y rodilleras ortopédicas que deben confirmarse en la configuración ofertada.',
-      'Pide que BOM1046, capas, opción de tirantes y accesorios queden escritos en la cotización. Ensayar radio, máscara, ERA, casco y guantes con el traje revela enganches o presión antes de recibir una configuración que no coincide con las maniobras aeroportuarias o industriales previstas.',
-    ],
-    faq: [
-      'Las dudas sobre el traje de aproximación Mark One MPX-8 se concentran en la operación y la certificación. Se publica para proximidad aeroportuaria e industrial, con certificación UL MH48840; además aclara exterior Nor-Fab MPX-8 aluminizada y código BOM1046.',
-      'Envía por WhatsApp cantidad, tallas, operación y accesorios de comunicación o ERA. Con esos datos se prepara una partida que identifica el modelo y su configuración, y se solicita la declaración de conformidad sin trasladar su condición a otros trajes de Romak Fire.',
-    ],
-    ficha: [
-      'El traje de aproximación Romak Fire Mark One MPX-8 se identifica como BOM1046, con exterior Nor-Fab MPX-8 aluminizada de 17 % Basofil y 83 % para-aramida, barrera Omni Synergy y Stedair 3000. Declara certificación UL MH48840 para NFPA 1971:2018 proximidad.',
-      'Copia código, cuatro capas, talla, tirantes H y accesorios al anexo técnico. Pide por escrito la declaración de conformidad para la configuración elegida: la certificación UL publicada pertenece a este modelo y debe acompañar la partida, no asumirse para otra variante.',
     ],
   },
 };

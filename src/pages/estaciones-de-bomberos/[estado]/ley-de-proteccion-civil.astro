@@ -1,0 +1,189 @@
+---
+// Fase 4 del directorio · Ley de Protección Civil por estado (ángulo B2B).
+// Resumen práctico de lo que la ley estatal exige a empresas, inmuebles y
+// brigadas, con artículo y cita literal verificada contra el texto oficial
+// (compuerta gate_g.py). Solo se genera para los estados con archivo en
+// src/data/leyes-proteccion-civil/<estado>.json (encargo G).
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionHeading from '@components/SectionHeading.astro';
+import TileGrid from '@components/home/TileGrid.astro';
+import TileCard from '@components/home/TileCard.astro';
+import FAQWithContact from '@components/FAQWithContact.astro';
+import DataTable, { type Cell } from '@components/directorio/DataTable.astro';
+import BotonesConteo from '@components/directorio/BotonesConteo.astro';
+import { tilesEquipo } from '@lib/directorio-equipo';
+import { SITE, MARCA } from '@config/site';
+import {
+  BASE_DIRECTORIO, ENTIDADES, RESUMEN_ESTADOS, municipiosDe, rutaEstado, hrefMunicipio, nf, enEstado, deEstado, unidad,
+  type Entidad,
+} from '@lib/directorio';
+import { LEYES_PC, rutaLeyPC, fechaLarga, type LeyPC } from '@lib/leyes-proteccion-civil';
+
+export function getStaticPaths() {
+  return LEYES_PC.map((ley) => ({
+    params: { estado: ley.slug },
+    props: { ley, e: ENTIDADES.find((x) => x.slug === ley.slug)! },
+  }));
+}
+
+const { ley, e } = Astro.props as { ley: LeyPC; e: Entidad };
+const REVISION = fechaLarga(`${ley.verificadoEl}-01`).replace(/^1 de /, ''); // «septiembre de 2026»
+const DE = deEstado(e); // «de Jalisco», «del Estado de México», «de la Ciudad de México»
+const path = rutaLeyPC(e.slug);
+const r = RESUMEN_ESTADOS.find((x) => x.slug === e.slug)!;
+const UNIS = unidad(e.slug);
+
+// Metas (≤ 60 / ≤ 160)
+const title = [
+  `Ley de Protección Civil ${DE}: qué exige a empresas`,
+  `Ley de Protección Civil ${DE}: obligaciones`,
+  `Ley de Protección Civil ${DE}`,
+].find((x) => x.length <= 60) ?? `Ley de Protección Civil ${DE}`;
+const d1 = `${ley.nombreOficial}: qué exige a empresas, inmuebles y brigadas, con artículo y enlace al texto vigente. Equipo para brigadas con CFDI 4.0.`;
+const description = d1.length <= 160 ? d1 : `Ley de Protección Civil ${DE}: qué exige a empresas, inmuebles y brigadas, con artículo y enlace al texto vigente.`;
+const keywords = [`ley de protección civil ${DE.replace(/^del? (la )?/, '')}`, `ley de protección civil del estado ${DE}`, `protección civil ${enEstado(e)}`] as const;
+
+const menuItems = [
+  { label: 'Qué regula', href: '#ficha' },
+  { label: 'Obligaciones', href: '#obligaciones' },
+  { label: 'Brigadas', href: '#brigadas' },
+  { label: 'Equipo', href: '#equipo' },
+  { label: 'Bomberos', href: '#bomberos' },
+  { label: 'Preguntas', href: '#faq' },
+];
+
+const ficha = [
+  ['Nombre oficial', ley.numero && !ley.nombreOficial.includes(ley.numero) ? `${ley.nombreOficial} (Ley Número ${ley.numero})` : ley.nombreOficial],
+  ['Publicación', `${ley.publicacion.medio}, ${fechaLarga(ley.publicacion.fecha)}`],
+  ['Última reforma', ley.ultimaReforma ? fechaLarga(ley.ultimaReforma) : 'Sin reforma registrada en la fuente oficial'],
+  ['Texto vigente', { text: 'Consultar en la fuente oficial', href: ley.urlOficial, ext: true }],
+  ...(ley.reglamento ? [['Reglamento', { text: ley.reglamento.nombre, href: ley.reglamento.url, ext: true }]] : []),
+  ['Autoridad estatal', `${ley.autoridadEstatal.nombre} (${ley.autoridadEstatal.articulo})`],
+] as const;
+
+const ciudades = municipiosDe(e.slug).slice(0, 8).map((m) => ({ label: m.nombre, href: hrefMunicipio(e.slug, m.slug), n: m.estaciones.length, title: `Bomberos en ${m.nombre}` }));
+const equipo = tilesEquipo(['brigadista', 'estructural', 'hazmat']);
+const article = { headline: title, description, url: `${SITE.url}${path}`, section: 'Normativa de protección civil', keywords: [...keywords], dateModified: ley.verificadoEl };
+
+const ctaTitle = `¿Tu brigada necesita equipo ${enEstado(e)}?`;
+const ctaText = `Con ${MARCA.experiencia} de experiencia, ${MARCA.nombre} cotiza equipo para brigadas y cuerpos de bomberos con ficha técnica por partida, expediente para licitación y factura CFDI 4.0. Sin compra mínima.`;
+---
+<PageLayout
+  footerCta={{ title: ctaTitle, text: ctaText, secondary: { label: `Bomberos ${enEstado(e)}`, href: rutaEstado(e.slug) } }}
+  pageType="articulo"
+  path={path}
+  ogImage={`/images/og/ley-pc-${e.slug}.jpg`}
+  title={title}
+  description={description}
+  keywords={keywords}
+  menuItems={menuItems}
+  parent={[{ name: 'Estaciones de bomberos', href: BASE_DIRECTORIO }, { name: e.nombre, href: rutaEstado(e.slug) }]}
+  crumbLabel="Ley de Protección Civil"
+  eyebrow={`Normativa de protección civil · ${e.nombre}`}
+  h1="Ley de Protección Civil"
+  h1Accent={DE}
+  lead={ley.lead}
+  meta={[
+    ...(ley.ultimaReforma ? [`Última reforma: ${fechaLarga(ley.ultimaReforma)}`] : []),
+    `Publicada: ${ley.publicacion.fecha.slice(0, 4)}`,
+    `Revisión: ${REVISION}`,
+  ]}
+  descRight={[]}
+  faqs={ley.faqs}
+  article={article}
+>
+  <aside class="aviso-ley container" aria-label="Aviso">
+    <p>
+      Resumen informativo, no es asesoría legal. El texto con validez es el publicado en
+      {ley.publicacion.medio}; consulta la <a href={ley.urlOficial} target="_blank" rel="noopener nofollow">versión vigente
+      de la {ley.nombreOficial}</a> antes de tomar decisiones.
+    </p>
+  </aside>
+
+  <section class="section" id="ficha">
+    <div class="container">
+      <SectionHeading eyebrow="Qué regula" title={`Qué regula la Ley de Protección Civil ${DE}`} duo={ley.panorama} />
+      <DataTable
+        caption={`Datos generales de la ${ley.nombreOficial}`}
+        cols={[{ label: 'Dato' }, { label: 'Detalle' }]}
+        rows={ficha.map(([k, v]) => [k, v] as Cell[])}
+      />
+    </div>
+  </section>
+
+  <section class="section section--alt" id="obligaciones">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Obligaciones"
+        title={`Qué exige la ley a empresas, inmuebles y brigadas ${enEstado(e)}`}
+        duo={[`Cada obligación lleva el artículo de la ley que la establece. Revisa también el reglamento y las disposiciones de tu municipio: pueden sumar requisitos para ciertos giros o aforos.`]}
+      />
+      <DataTable
+        caption={`Obligaciones de la ${ley.nombreOficial}`}
+        cols={[{ label: 'Quién' }, { label: 'Qué exige' }, { label: 'Artículo', nowrap: true }]}
+        rows={ley.obligaciones.map((o) => [o.sujeto, o.obligacion, o.articulo])}
+      />
+    </div>
+  </section>
+
+  <section class="section" id="brigadas">
+    <div class="container">
+      <SectionHeading eyebrow="Programa interno y brigadas" title={`Brigadas de protección civil ${enEstado(e)}`} duo={ley.brigadasDuo} />
+      {ley.sancionesDuo?.length ? (
+        <div class="ley-sanciones">
+          <SectionHeading eyebrow="Sanciones" title="Qué pasa si no se cumple" duo={ley.sancionesDuo} />
+        </div>
+      ) : null}
+    </div>
+  </section>
+
+  <section class="section section--alt" id="equipo">
+    <div class="container">
+      <SectionHeading eyebrow="Equipo para brigadas" title={`Equipo de protección para brigadas ${enEstado(e)}`} duo={ley.equipoDuo} />
+      <TileGrid>
+        {equipo.map((t) => <TileCard {...t} />)}
+      </TileGrid>
+    </div>
+  </section>
+
+  <section class="section" id="bomberos">
+    <div class="container">
+      <SectionHeading
+        eyebrow={`Estaciones de bomberos · ${e.nombre}`}
+        title={`Cuerpos de bomberos ${enEstado(e)}`}
+        duo={[`Hay ${nf(r.total)} ${r.total === 1 ? 'estación localizada' : 'estaciones localizadas'} en ${nf(r.municipios)} ${r.municipios === 1 ? unidad(e.slug, 1) : UNIS} ${DE}, con la corporación que opera cada una. Consulta el directorio de <a href="${rutaEstado(e.slug)}">bomberos ${enEstado(e)}</a> para coordinar simulacros, capacitación o apoyo con la corporación de tu zona.`]}
+      />
+      <BotonesConteo cols={4} label={`${UNIS} ${DE} con estaciones de bomberos`} items={ciudades} />
+    </div>
+  </section>
+
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <SectionHeading eyebrow="Preguntas frecuentes" title={`Ley de Protección Civil ${DE}: preguntas frecuentes`} />
+      <FAQWithContact items={ley.faqs} />
+      <div class="ley-fuentes">
+        <p class="ley-fuentes__t">Fuentes</p>
+        <ul>
+          {ley.fuentes.map((f) => <li><a href={f.url} target="_blank" rel="noopener nofollow">{f.nombre}</a></li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .aviso-ley { margin-top: 1.25rem; }
+  .aviso-ley p {
+    margin: 0;
+    padding: 0.9rem 1.1rem;
+    border-left: 4px solid var(--color-accent);
+    background: var(--color-light);
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .ley-sanciones { margin-top: clamp(2rem, 4vw, 3rem); }
+  .ley-fuentes { margin-top: 2rem; font-size: 0.92rem; color: var(--color-gray); }
+  .ley-fuentes__t { font-family: var(--font-display); font-weight: 600; margin: 0 0 0.4rem; color: var(--color-dark); }
+  .ley-fuentes ul { margin: 0; padding-left: 1.1rem; }
+</style>

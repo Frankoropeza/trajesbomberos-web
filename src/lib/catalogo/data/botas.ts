@@ -20,9 +20,9 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "seccion": "botas",
       "nombre": "Bota de hule estructural",
       "nombreCard": "Bota de hule estructural",
-      "title": "Bota de hule estructural para bombero | México",
-      "description": "Bota de hule estructural para bombero: caucho vulcanizado, puntera, entresuela antiperforación, forro aislante y revisión de talla.",
-      "lead": "La bota de hule estructural combina caucho vulcanizado, puntera y entresuela según modelo para combate estructural; cotizamos talla, conjunto y la referencia NFPA 1970 declarada.",
+      "title": "Bota de hule estructural para bombero con puntera",
+      "description": "Bota de hule estructural para bombero: caucho vulcanizado, puntera, entresuela antiperforación, forro aislante y revisión de talla. Cotiza con ficha técnica.",
+      "lead": "La bota de hule estructural es la bota clásica de bombero: caucho vulcanizado de una pieza, puntera y entresuela de acero, y una caña alta que recibe la pantalonera sin dejar pasar agua.",
       "imagen": {
         "src": "/images/catalogo/botas/tipo-bota-de-hule-estructural.avif",
         "alt": "Bota de hule para combate estructural",
@@ -32,46 +32,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Bota de hule estructural para guardia",
+          "eyebrow": "Qué es",
+          "h2": "Bota de caucho para agua, escombro y calor",
           "parrafos": [
-            "Cotizamos hule estructural para cuerpos de bomberos, brigadas y compras municipales que operan con agua, calor y objetos punzantes. Elige caucho natural vulcanizado si tu partida busca barrera continua; pide piel si tu operación requiere otro ajuste. Romak Fire, Croydon y Sköld declaran NFPA 1971, mientras NFPA 1970 es la referencia vigente que contrastamos con tu pliego.",
-            "Para tu guardia, selecciona Workman Fire, Filtrex o Workman por talla, forro y planta declarados, no por bandas amarillas. Probamos pantalón, casco y máscara durante marcha; si el talón levanta o los dedos tocan puntera de acero, cambiamos talla antes de surtir. Así tu cuadrilla recibe un par que conserva control en escalera y posición baja."
+            "El caucho vulcanizado forma una barrera continua contra agua, lodo y químicos de la escena, y se limpia con facilidad después de cada servicio. La puntera y la entresuela de acero protegen contra golpes y contra clavos o lámina en el piso.",
+            "Su punto débil es el peso y la sujeción del tobillo: los modelos que surtimos publican entre 3,150 y 3,520 g. Por eso importa que la talla sea exacta y que la caña quede bien cubierta por la pantalonera."
           ]
         },
         {
-          "h2": "Cotización de bota de hule estructural",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Altura, forro y talla",
           "parrafos": [
-            "En cada partida escribimos marca, código, talla, altura, caucho, forro, puntera, entresuela, peso y norma. Pide BOT1004 con 33 cm y tallas 26 a 31 cm; elige BOT1002 con 13 pulgadas y tallas 25 a 31 cm. Para Sköld registra FPBSK con equivalencia mexicana y estadounidense antes de emitir tu orden y distribuir pares por usuario.",
-            "Separamos caucho vulcanizado, espuma aislante de PU, forro de lana ignífuga, puntera y entresuela de acero para comparar propuestas reales. Si tu pliego pide ASTM F903-10, ASTM F2413-05 o CSA Z195-02, anota la edición declarada y solicita su documento. Pide esta lista completa para evitar recibir una construcción distinta bajo un nombre comercial similar."
+            "La Workman Fire mide 33 cm de altura y se ofrece de la talla 26 a la 31 mexicana; la Filtrex mide 13 pulgadas y va de 25 a 31 cm. La Sköld Workman agrega forro de lana ignífuga y es la más ligera de las tres, con 3,150 g.",
+            "Pide la talla por usuario, no por promedio del lote. La prueba se hace con la pantalonera puesta, subiendo una escalera y arrodillándose, para confirmar que la caña no se abre y que el pie no se desliza dentro de la bota."
           ],
           "lista": [
-            "Romak Fire Workman Fire · BOT1004 · 33 cm",
-            "Caucho natural vulcanizado en autoclave",
-            "Croydon Filtrex · BOT1002 · 13 pulgadas",
-            "Tallas 25 a 31 cm o 26 a 31 cm",
-            "Puntera y entresuela de acero",
-            "NFPA 1971 · ASTM F903-10 · declarado"
+            "Romak Fire Workman Fire: BOT1004, 33 cm",
+            "Croydon Filtrex: BOT1002, 13 pulgadas",
+            "Sköld Workman: FPBSK, forro de lana ignífuga",
+            "Construcción: caucho vulcanizado",
+            "Protección: puntera y entresuela de acero",
+            "Norma: NFPA 1971 declarada por cada fabricante"
           ]
         },
         {
-          "h2": "Modelos de bota de hule estructural",
+          "eyebrow": "En servicio",
+          "h2": "Limpieza e inspección de la bota de hule",
           "parrafos": [
-            "Surtimos Romak Fire Workman Fire BOT1004, caucho natural vulcanizado, espuma de PU y NFPA 1971 · ASTM F903-10 · ISO 9001:2008 declarados. Combínala con pantalón estructural, casco y máscara; revisamos solape de su caña de 33 cm. Elige BOT1004 cuando tu usuario requiere tallas mexicanas de 26 a 31 cm y esa construcción publicada.",
-            "También surtimos Croydon Filtrex BOT1002, caucho vulcanizado de 13 pulgadas con puntera y entresuela de acero, y Sköld Workman FPBSK, caucho natural con lana ignífuga. Filtrex declara NFPA 1971 · ASTM F903-10; Sköld declara NFPA 1971-2007 · NFPA 1992-2005 · ASTM F2413-05 · CSA Z195-02. Pide prueba con pantalón y máscara antes de aceptar el lote."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de bota estructural",
-          "parrafos": [
-            "Vemos órdenes que solo dicen bota negra y omiten BOT1004, BOT1002 o FPBSK; escribe código, caucho y rango de talla para impedir sustituciones. También se pide NFPA 1971 sin decir que es declaración del fabricante; solicita edición y documento de configuración. Por último, no autorices una talla sin prueba con pantalón, calcetín y escalera antes de asignarla.",
-            "Otro error es pedir puntera sin entresuela y suponer que ambas piezas de acero cubren el mismo riesgo. En tu pliego, separa puntera, entresuela, suela antiderrapante y forro de lana ignífuga o espuma de PU. Nosotros cotejamos cada campo; si el lote integra kit Profesional, revisamos la bota por usuario y no dejamos que el nombre del kit cierre la decisión."
-          ]
-        },
-        {
-          "h2": "Inspección de bota de hule estructural",
-          "parrafos": [
-            "Antes de guardia, revisamos caucho, agarraderas, bandas, forro, unión caña-planta y suela antiderrapante. Retira ante corte, grieta, deformación, desprendimiento o pérdida de tracción; tras golpe, registra posible afectación de puntera y entresuela de acero aunque el exterior se vea entero. Conserva talla, código y fecha de entrega para reponer el par correcto.",
-            "Después de intervención, limpia caucho vulcanizado conforme al fabricante y seca sin calor directo para no afectar forro, adhesivos o suela. Separa el par con contaminación persistente, daño de planta o condición no evaluable. Al reponer, te surtimos mismo código, talla y componentes aprobados, y volvemos a probar el solape con pantalón antes de devolverlo a guardia."
+            "Después de cada servicio lava la bota por dentro y por fuera y déjala secar lejos del calor directo. Revisa grietas en el caucho, desprendimiento de la suela y daños en la zona del tobillo.",
+            "Un corte que atraviesa el caucho o una suela despegada sacan la bota de servicio: ya no protege contra agua ni contra perforación. Registra código y talla de cada par para reponerlo con el mismo modelo."
           ]
         }
       ],
@@ -100,9 +90,29 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Comprar talla sin prueba"
+        "Comprar la talla sin prueba con pantalonera",
+        "Mezclar modelos distintos en una misma partida sin anotarlo",
+        "Aceptar «cumple NFPA» sin modelo ni edición declarada",
+        "Secar la bota junto a una fuente de calor"
       ],
-      "faq": [],
+      "faq": [
+        {
+          "q": "¿Cuál es la bota de hule de bombero más ligera?",
+          "a": "De los tres modelos con ficha publicada, la Sköld Workman FPBSK, con 3,150 g declarados. La Workman Fire y la Filtrex publican 3,520 g promedio."
+        },
+        {
+          "q": "¿Qué altura debe tener una bota estructural de hule?",
+          "a": "La suficiente para que la pantalonera la cubra al flexionar la rodilla. Los modelos que surtimos van de 13 pulgadas a 33 cm; se confirma probándola con la pantalonera puesta."
+        },
+        {
+          "q": "¿Qué bota de hule trae el kit estructural?",
+          "a": "El kit estructural Profesional incluye la Croydon Filtrex BOT1002, con puntera y entresuela de acero."
+        },
+        {
+          "q": "¿Qué norma declaran las botas de hule para bombero?",
+          "a": "La Workman Fire y la Filtrex declaran NFPA 1971 y ASTM F903-10; la Sköld Workman, NFPA 1971-2007, NFPA 1992-2005, ASTM F2413-05 y CSA Z195-02. La referencia vigente para el conjunto estructural es NFPA 1970."
+        }
+      ],
       "relacionados": [
         "romak-workman-fire",
         "croydon-filtrex",
@@ -114,18 +124,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Entresuela"
       ],
       "resumen": [
-        "La bota de hule estructural reúne caucho vulcanizado, planta, puntera y ajuste para combate estructural; surtimos Workman Fire BOT1004, Filtrex BOT1002 y Workman FPBSK con sus referencias NFPA 1971 declaradas por fabricante.",
-        "Cotizamos código, talla, altura, forro, puntera y entresuela de acero por cada par. Mándanos tu cuadro de tallas por WhatsApp y programamos prueba con pantalón, calcetín y escalera antes de entregar la partida estructural."
-      ]
+        "Surtimos tres modelos con ficha publicada: Romak Fire Workman Fire BOT1004, Croydon Filtrex BOT1002 y Sköld Workman FPBSK. Los tres declaran NFPA 1971 según su fabricante.",
+        "La bota se elige por talla, altura de caña y forro, y se prueba con la pantalonera y el calcetín de trabajo. Te cotizamos cada par con su código y su talla escrita."
+      ],
+      "duos": {
+        "ficha": [
+          "La ficha de este tipo resume lo que debe decir una requisición: uso en combate estructural, caucho vulcanizado según modelo y referencia NFPA 1970, la edición que absorbió a la 1971.",
+          "La talla se confirma en centímetros o con la equivalencia que declare el fabricante. Si ya elegiste modelo, pide que código y talla queden escritos por cada par."
+        ],
+        "errores": [
+          "Con botas, casi todos los problemas llegan después de la entrega: tallas que no ajustan, cañas que no solapan o modelos mezclados en un mismo lote.",
+          "Estos cuatro errores se evitan con una prueba y una partida bien escrita."
+        ],
+        "modelos": [
+          "Surtimos tres botas de hule estructurales con ficha publicada. La Filtrex forma parte de nuestro kit estructural Profesional y la Workman Fire del kit brigadista; la Sköld Workman destaca por su forro de lana ignífuga.",
+          "Cada ficha muestra la norma tal como la declara su fabricante, con peso, altura y tallas disponibles."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre peso, altura, normas y kits de la bota de hule estructural.",
+          "Si nos mandas el cuadro de tallas de tu personal, te decimos qué modelo conviene y cuántos pares de cada talla pedir."
+        ]
+      }
     },
     {
       "slug": "bota-de-piel-estructural",
       "seccion": "botas",
       "nombre": "Bota de piel estructural",
       "nombreCard": "Bota de piel estructural",
-      "title": "Bota de piel estructural para bombero | México",
-      "description": "Bota de piel estructural para bombero: ajuste, membrana, protección térmica, suela y criterios para comparar una configuración de ataque.",
-      "lead": "La bota de piel estructural combina piel, forro, membrana, puntera y suela según configuración; la cotizamos para operación estructural con NFPA 1970 como referencia.",
+      "title": "Bota de piel estructural para bombero con membrana",
+      "description": "Bota de piel estructural para bombero: ajuste, membrana, protección térmica, suela y criterios para comparar una configuración de ataque interior. Cotiza.",
+      "lead": "La bota de piel estructural cambia el caucho por piel con forro y membrana: pesa menos, sujeta mejor el tobillo y resulta más cómoda en turnos largos, a cambio de más cuidado.",
       "imagen": {
         "src": "/images/catalogo/botas/tipo-bota-de-piel-estructural.avif",
         "alt": "Bota de piel para bombero estructural",
@@ -135,46 +163,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Bota de piel estructural para operación",
+          "eyebrow": "Qué es",
+          "h2": "Bota de piel para combate estructural",
           "parrafos": [
-            "Cotizamos piel estructural para corporaciones que requieren comparar ajuste, membrana y planta en operación estructural. Elige piel, forro y suela documentados si tu pliego solicita movilidad con pantalón; pide hule si necesitas caucho vulcanizado según modelo. NFPA 1970, antes NFPA 1971, es la referencia que revisamos contra tu requisito y la ficha del proveedor.",
-            "No hay modelo publicado de piel estructural en esta sección, por eso proponemos configuración según tu operación y no una marca inventada. Dinos si necesitas puntera, entresuela, membrana, cierre o agujetas. Probamos con casco, máscara y pantalón; si la piel presiona empeine, talón o dedos, ajustamos talla antes de surtir tu lote."
+            "La piel se adapta al pie y el sistema de cierre sujeta el tobillo mejor que una bota de hule. Para que proteja en un incendio, lleva forro térmico y una membrana que impide el paso del agua sin cerrar la transpiración.",
+            "La contraparte es el mantenimiento: la piel necesita limpieza, secado lento y cuidado para no endurecerse ni agrietarse. Una bota de piel mal cuidada pierde protección antes que una de hule."
           ]
         },
         {
-          "h2": "Cotización de bota de piel estructural",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Construcción, cierre y talla",
           "parrafos": [
-            "Anotamos uso, piel resistente a la flama según modelo, forro, membrana, puntera, entresuela, suela, ajuste y talla. Elige membrana si el proveedor la declara; pide cierre o agujetas según la colocación de tu brigada. Si necesitas NFPA 1970, escribe que solicitas declaración documental del modelo y no una referencia genérica de catálogo.",
-            "No dejes la orden como bota de piel con suela. Pedimos talla por usuario, pantalón compatible y prueba de escalera, marcha y postura baja para conservar solape. Si el proveedor publica componentes reemplazables, solicita cuidado junto con propuesta. Así comparas piel, membrana y forro sin prometer una característica que el modelo no declare."
+            "Pide que la cotización nombre la piel, el forro, la membrana, la puntera y la entresuela, y que indique si el fabricante declara norma. Sin esos datos no es posible comparar dos ofertas de bota de piel.",
+            "Define también el cierre: agujetas, cremallera lateral o ambos. La prueba con escalera y arrastre muestra si talón, empeine y dedos quedan estables con la pantalonera puesta."
           ],
           "lista": [
-            "Operación estructural · según modelo",
-            "Piel, forro y membrana · según configuración",
-            "Puntera y entresuela · cuando se declaren",
-            "Suela compatible · según modelo",
-            "NFPA 1970 · referencia solicitada",
-            "Talla con pantalón y calcetín · prueba física"
+            "Operación: combate estructural",
+            "Construcción: piel, forro y membrana",
+            "Protección: puntera y entresuela declaradas",
+            "Cierre: agujetas o cremallera",
+            "Referencia: NFPA 1970",
+            "Talla: prueba con pantalonera y calcetín"
           ]
         },
         {
-          "h2": "Configuración de bota de piel estructural",
+          "eyebrow": "En servicio",
+          "h2": "Cuidado de la piel después de cada servicio",
           "parrafos": [
-            "No publicamos modelo de piel estructural en este arreglo. Cotizamos piel, forro, membrana, puntera y entresuela solamente cuando tu operación y fabricante lo documenten; no atribuimos código o certificación sin ficha. Pide la familia de traje estructural y probamos bota con pantalón, casco y máscara antes de cerrar tallas y cantidades.",
-            "Si tu conjunto usa cierre, escribe tipo de cierre y cuidado; si usa agujetas, pide ojillos y largo del modelo. Elegimos propuesta que mantiene talón, empeine y dedos estables en escalera y arrastre. Para compra municipal, anexa número de pares, tallaje y responsable de recepción, y pide evidencia de la referencia NFPA 1970 que incluyas en la solicitud."
-          ]
-        },
-        {
-          "h2": "Errores al pedir bota de piel estructural",
-          "parrafos": [
-            "Los pliegos que piden bota cómoda omiten piel, forro, membrana, puntera y entresuela. Escribe cada componente y NFPA 1970 para comparar construcciones reales. Evita pedir certificación por apariencia del corte; solicita documento del modelo ofertado. Si cambias cierre por agujetas, vuelve a probar pantalón y calcetín antes de autorizar la nueva configuración.",
-            "Tampoco compres por talla impresa sin subir escalones o arrodillarte con el conjunto. Te pedimos probar ambos pies, sujetar talón y comprobar espacio ante dedos. No añadas adhesivos, perforaciones o refacciones genéricas a la orden; exige método autorizado del modelo para preservar piel, membrana y uniones durante servicio y después de exposición."
-          ]
-        },
-        {
-          "h2": "Cuidado de bota de piel estructural",
-          "parrafos": [
-            "Antes de guardia, revisa piel, costuras, ojillos, cierre, suela, borde de puntera y membrana según configuración. Retira ante piel endurecida, costura abierta, suela desprendida, pérdida de cierre o contaminación persistente; registra talla y usuario. Tras golpe, pide evaluación porque puntera y entresuela no se validan solo desde exterior.",
-            "Después de intervención, quita suciedad con método del fabricante y seca con ventilación, nunca con calor directo que afecte piel, membrana o adhesivos. Reponemos la construcción aprobada: operación, talla, ajuste, puntera, entresuela y documento. Si daño exige reparación, pide método autorizado y no reincorpores la bota a guardia hasta cerrar tu registro."
+            "Limpia el hollín y la suciedad con el método del fabricante y deja secar a temperatura ambiente, nunca junto al calor. La piel reseca se agrieta y deja de proteger aunque la bota se vea completa.",
+            "Revisa costuras, cierre, suela y la zona donde se dobla el pie. Si la membrana ya deja pasar agua o la suela se separa, la bota sale de servicio."
           ]
         }
       ],
@@ -202,26 +220,62 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           "alcance": "Referencia para calzado estructural; solicita documentación del modelo."
         }
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Comprar sin nombrar piel, forro y membrana",
+        "Dar por hecho una norma que el fabricante no declara",
+        "Elegir la talla sin prueba con pantalonera",
+        "Secar la piel con calor directo"
+      ],
+      "faq": [
+        {
+          "q": "¿Tienen modelos de bota de piel estructural publicados?",
+          "a": "Por ahora no. La cotizamos por construcción y te presentamos la ficha del fabricante antes de que decidas."
+        },
+        {
+          "q": "¿Qué es mejor para bombero, bota de piel o de hule?",
+          "a": "Depende del uso. La de hule es más impermeable y fácil de limpiar; la de piel es más ligera y sujeta mejor el tobillo en turnos largos, pero exige más cuidado."
+        },
+        {
+          "q": "¿Qué norma aplica a una bota de piel para bombero?",
+          "a": "La referencia del conjunto estructural es NFPA 1970, que absorbió a la 1971. Pide que la cotización indique qué declara el modelo ofertado."
+        },
+        {
+          "q": "¿Cómo se limpia una bota de piel de bombero?",
+          "a": "Con el método que indique el fabricante, sin solventes agresivos y con secado a temperatura ambiente. El calor directo reseca la piel y la agrieta."
+        }
+      ],
       "chips": [
         "Piel",
         "Membrana",
         "Ajuste"
       ],
       "resumen": [
-        "La bota de piel estructural se define por piel, forro, membrana, planta, puntera y ajuste; no hay modelo publicado en esta sección, por lo que cotizamos la construcción documentada para tu operación estructural.",
-        "Escríbenos por WhatsApp con tallas, puntera, entresuela, membrana, ajuste y referencia NFPA 1970. Probamos con pantalón, calcetín y escalera antes de ordenar, y solicitamos al proveedor la documentación del modelo ofertado."
-      ]
+        "Es una opción para combate estructural cuando el personal camina y sube escaleras durante horas. Todavía no publicamos un modelo de piel, así que la cotizamos por construcción documentada del fabricante.",
+        "Piel, forro, membrana, puntera y cierre se definen en la partida. La referencia del conjunto es NFPA 1970, y la bota se prueba con pantalonera y calcetín antes de cerrar tallas."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar bota de piel estructural define el uso, la construcción de piel, forro y membrana, y la referencia NFPA 1970.",
+          "Como aún no publicamos modelo, la tabla no muestra código ni certificación. Esos datos llegan con la ficha del fabricante de la bota que te propongamos."
+        ],
+        "errores": [
+          "Una bota de piel mal especificada no se nota en la entrega, sino semanas después: en la primera guardia larga o en la primera limpieza.",
+          "Estos cuatro errores conviene cerrarlos en la partida para comparar ofertas con el mismo criterio."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre modelos, diferencias con la bota de hule, norma y cuidado.",
+          "Si tu corporación está evaluando cambiar de hule a piel, cuéntanos cómo trabaja y te ayudamos a decidir."
+        ]
+      }
     },
     {
       "slug": "bota-forestal",
       "seccion": "botas",
       "nombre": "Bota forestal para brigadista",
       "nombreCard": "Bota forestal",
-      "title": "Bota forestal para brigadista | México",
-      "description": "Bota forestal para brigadista: piel, agujetas, caña, suela de alta temperatura y selección segura para desplazamiento en línea de fuego.",
-      "lead": "La bota forestal de piel, agujetas y caña acompaña marcha exterior; cotizamos Fire Ranger y Strong Fire con NFPA 1950 como referencia y prueba en pendiente.",
+      "title": "Bota forestal para bombero y brigadista de línea de fuego",
+      "description": "Bota forestal para bombero y brigadista: piel, agujetas, caña, suela de alta temperatura y selección segura para caminar en línea de fuego. Cotiza.",
+      "lead": "La bota forestal es una bota de piel con agujetas pensada para caminar horas en terreno irregular: sujeta el tobillo, protege de brasas y ramas, y deja trabajar en pendiente sin resbalar.",
       "imagen": {
         "src": "/images/catalogo/botas/tipo-bota-forestal.avif",
         "alt": "Bota forestal de piel con agujetas para brigadista",
@@ -231,53 +285,65 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Bota forestal para línea de fuego",
+          "eyebrow": "Qué es",
+          "h2": "Bota de marcha para línea de fuego",
           "parrafos": [
-            "Cotizamos bota forestal para brigadistas que caminan en pendiente, ceniza y vegetación. Elige piel con agujetas y caña si tu cuadrilla necesita ajuste durante marcha; no la uses como sustituto automático de bota estructural. NFPA 1950, antes NFPA 1977, es referencia para contrastar el requisito de tu operación exterior.",
-            "Selecciona Fire Ranger si buscas piel negra, agujetas y caña alta, o Strong Fire si necesitas piel hidrofugada de 2.0 a 2.4 mm y planta de Kevlar. Prueba calcetín, pantalón, casco y máscara en pendiente. Si el talón se mueve al bajar, cambiamos talla o ajuste antes de surtir tus pares."
+            "En incendio forestal la bota se usa todo el día, caminando en pendiente, sobre ceniza caliente y entre raíces. La sujeción del tobillo y el agarre de la suela importan tanto como la protección térmica.",
+            "Por eso no se usa una bota estructural de hule en el monte: es pesada, suelta en el tobillo y poco estable en pendiente. La forestal es de piel y se ajusta con agujetas o con agujetas y cierre."
           ]
         },
         {
-          "h2": "Cotización de bota forestal",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Caña, cierre y suela según el terreno",
           "parrafos": [
-            "Escribimos marca, código si existe, talla, piel, caña, agujetas, cierre, suela, planta y estatus. Pide Fire Ranger con ficha técnica y código por confirmar; elige Strong Fire con tubo de 24 cm según talla, cierre YKK y suela de hule acrilonitrilo. Para ambas, anota NFPA 1950 solo como referencia de operación exterior. Así una fotografía no completa datos que el fabricante no publicó.",
-            "Para Strong Fire anota nueve pares de ojillos, forros bondeados de 4.0 a 5.0 mm, doble membrana y casco de poliamida dieléctrico cuando tu proveedor confirme configuración. Para Fire Ranger, pide ficha técnica antes de añadir puntera, membrana o altura. Cotizamos marcha exterior y línea de fuego, no autorización para ataque interior."
+            "La Fire Ranger es de caña alta y se ajusta con agujetas; su ficha completa se confirma al cotizar. La Strong Fire es de caña corta, con tubo de 24 cm según talla, nueve pares de ojillos y cierre YKK para quitarla rápido.",
+            "Pruébala con el pantalón forestal y el calcetín de trabajo, caminando en pendiente. El pie no debe moverse dentro de la bota al bajar, que es cuando aparecen las ampollas y las torceduras."
           ],
           "lista": [
-            "Fire Ranger · piel negra · agujetas y caña alta",
-            "Código Fire Ranger · por confirmar",
-            "Strong Fire · piel hidrofugada de 2.0 a 2.4 mm",
-            "Tubo Strong Fire · 24 cm según talla",
-            "Cierre YKK · nueve pares de ojillos",
-            "Planta de Kevlar · suela de hule acrilonitrilo"
+            "Fire Ranger: piel negra, agujetas y caña alta",
+            "Strong Fire: piel hidrofugada de 2.0 a 2.4 mm",
+            "Strong Fire: tubo de 24 cm según talla",
+            "Cierre: agujetas o cierre YKK",
+            "Planta: Kevlar antiperforación",
+            "Suela: hule acrilonitrilo"
           ]
         },
         {
-          "h2": "Modelos de bota forestal publicados",
+          "eyebrow": "En servicio",
+          "h2": "Inspección de la bota forestal",
           "parrafos": [
-            "Surtimos Fire Ranger, piel negra, agujetas y caña alta, con código y ficha por confirmar. Elige este modelo después de pedir construcción, talla y cuidados; combínalo con pantalón forestal, casco y máscara. Como NFPA 1950 es solo referencia y Fire Ranger tiene estatus sin norma, no añadimos suela, puntera, membrana o altura que la ficha no declare.",
-            "También surtimos Strong Fire caña corta, piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm, cierre YKK, planta de Kevlar y suela de hule acrilonitrilo. Tiene estatus sin norma y no lo presentamos como certificación. Prueba agujetas, cierre y pantalón antes de aceptar lote."
-          ]
-        },
-        {
-          "h2": "Errores al comprar bota forestal",
-          "parrafos": [
-            "No llames forestal a cualquier bota de piel. Escribe modelo, talla, caña, planta y uso exterior para evitar sustituciones. Tampoco presentes NFPA 1950 como certificación de Fire Ranger o Strong Fire; pide referencia para tu análisis y conserva ambos con estatus sin norma declarada del fabricante.",
-            "No compres sin prueba en pendiente. Pide caminata con calcetín, pantalón forestal y carga, y registra talón, empeine, dedos y tracción. No agregues Gore-Tex a Fire Ranger sin ficha. Para Strong Fire escribe piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm y planta de Kevlar según configuración."
-          ]
-        },
-        {
-          "h2": "Inspección de bota forestal",
-          "parrafos": [
-            "Antes de salida revisa piel, agujetas, ojillos, lengüeta, cierre, costuras, suela y unión de caña. En Strong Fire añade forros, doble membrana y planta de Kevlar. Retira ante perforación, pérdida de planta o desprendimiento. En Fire Ranger registra que faltan ficha, código y norma antes de ampliar su uso.",
-            "Después de jornada quitamos ceniza y tierra sin calor directo y secamos con ventilación. Registra daño de suela, tracción y cierre YKK para decidir retiro. Al reponer conservamos talla probada y construcción Fire Ranger o Strong Fire de 2.0 a 2.4 mm; una apariencia similar no equivale a la orden aprobada."
+            "Después de cada jornada retira ceniza y tierra, revisa agujetas, ojillos, cierre y costuras, y deja secar la piel a la sombra. La suela se desgasta rápido en terreno rocoso y en pendiente.",
+            "Una suela que ya no agarra o una costura abierta en la caña son motivo de cambio antes de la siguiente salida. Anota modelo y talla de cada par para reponer sin volver a probar todo el lote."
           ]
         }
       ],
       "especificacion": [],
       "normas": [],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Usar bota estructural de hule en línea de fuego",
+        "Presentar como certificada una bota sin norma declarada",
+        "Elegir la talla sin caminar en pendiente",
+        "Ignorar el tipo de terreno al elegir la suela"
+      ],
+      "faq": [
+        {
+          "q": "¿Las botas forestales que surtimos están certificadas?",
+          "a": "No. La Fire Ranger y la Strong Fire no declaran norma, y así lo indicamos en sus fichas. La referencia vigente del equipo forestal es NFPA 1950."
+        },
+        {
+          "q": "¿Qué diferencia hay entre bota forestal y bota estructural?",
+          "a": "La forestal es de piel, más ligera y con mejor sujeción del tobillo para caminar horas. La estructural protege contra agua, calor intenso y perforación en un incendio de edificio."
+        },
+        {
+          "q": "¿Qué bota forestal tiene cierre rápido?",
+          "a": "La Strong Fire de caña corta, con cierre metálico YKK además de nueve pares de ojillos."
+        },
+        {
+          "q": "¿Cada cuánto se cambia una bota forestal?",
+          "a": "Cuando la suela pierde agarre, la piel se abre o una costura se rompe. En temporadas intensas el desgaste puede llegar antes de lo que parece."
+        }
+      ],
       "relacionados": [
         "romak-fire-ranger-bota",
         "strongfire-bota-forestal"
@@ -288,18 +354,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Línea de fuego"
       ],
       "resumen": [
-        "La bota forestal acompaña marcha exterior con piel, agujetas y caña; surtimos Fire Ranger y Strong Fire, cuya piel hidrofugada de 2.0 a 2.4 mm, planta de Kevlar y estatus sin norma revisamos por separado.",
-        "Cotizamos talla, cierre, planta, suela y caña por modelo. Envíanos por WhatsApp operación, terreno y tallaje para una prueba en pendiente con pantalón forestal, calcetín de trabajo y el ajuste de agujetas o cierre YKK."
-      ]
+        "Surtimos dos modelos: la Romak Fire Ranger, de piel negra con agujetas y caña alta, y la Strong Fire de caña corta, con piel hidrofugada, cierre YKK y planta de Kevlar.",
+        "Ninguno de los dos declara norma; así lo indican sus fichas. Los cotizamos por talla y terreno, con NFPA 1950 como referencia del equipo forestal."
+      ],
+      "duos": {
+        "ficha": [
+          "La bota forestal se requisita por construcción, cierre, caña y suela. La referencia del equipo forestal es NFPA 1950, antes NFPA 1977.",
+          "Los modelos que surtimos no declaran norma. Por eso la cotización los presenta tal como los publica su fabricante, sin atribuirles una certificación."
+        ],
+        "errores": [
+          "Una bota forestal mal elegida se paga en la primera jornada: ampollas, torceduras o suelas que no agarran en pendiente.",
+          "Estos cuatro errores conviene revisarlos antes de equipar a una cuadrilla completa."
+        ],
+        "modelos": [
+          "Surtimos la Romak Fire Ranger, de piel negra con agujetas y caña alta, y la Strong Fire de caña corta, con piel hidrofugada, cierre YKK, planta de Kevlar y suela de hule acrilonitrilo.",
+          "Las dos se publican sin norma declarada. La Fire Ranger confirma su ficha técnica completa al cotizar."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre certificación, diferencias con la bota estructural y cuidado.",
+          "Si nos dices en qué terreno trabaja tu cuadrilla y cuántas personas son, te decimos qué modelo conviene probar."
+        ]
+      }
     },
     {
       "slug": "bota-de-brigada-industrial",
       "seccion": "botas",
       "nombre": "Bota para brigada industrial",
       "nombreCard": "Bota de brigada industrial",
-      "title": "Bota para brigada industrial | México",
-      "description": "Bota para brigada industrial: calzado de seguridad, riesgo de conato, NOM-113-STPS-2009 y cuándo se requiere una bota de bombero adecuada.",
-      "lead": "La bota para brigada industrial responde a tareas autorizadas y riesgos definidos; cotizamos calzado con NOM-113-STPS-2009 como referencia, sin sustituir bota estructural.",
+      "title": "Bota para brigada industrial contra incendio",
+      "description": "Bota para brigada industrial contra incendio: calzado de seguridad, riesgo de conato, NOM-113-STPS-2009 y cuándo se requiere bota de bombero. Cotiza.",
+      "lead": "La bota para brigada industrial es calzado de seguridad para las tareas que tu brigada tiene autorizadas: inspección, evacuación, apoyo o conato. Si hay ataque interior, la bota tiene que ser estructural.",
       "imagen": {
         "src": "/images/catalogo/botas/tipo-bota-de-brigada-industrial.avif",
         "alt": "Bota para brigada industrial contra incendio",
@@ -309,45 +393,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Bota para brigada industrial y conato",
+          "eyebrow": "Qué es",
+          "h2": "Calzado según lo que hace tu brigada",
           "parrafos": [
-            "Cotizamos calzado para inspección, evacuación, apoyo exterior o control de conato definido por análisis de riesgo. Elige calzado de seguridad si tu procedimiento limita exposición industrial; pide bota estructural si incluye ataque interior, humo o calor de estructura. NOM-113-STPS-2009 es referencia para tu partida de centro de trabajo.",
-            "Una puntera dieléctrica no autoriza incendio bajo NOM-113-STPS-2009. Describe actividad máxima, uniforme, casco, guantes y protección respiratoria antes de proponer calzado. Si el procedimiento escala, cambiamos a bota de bombero compatible con pantalón y máscara, en lugar de compensar límite con accesorios improvisados durante la intervención."
+            "La mayoría de las brigadas industriales trabaja en inspección, evacuación y control de conatos. Para esas tareas basta un calzado de seguridad adecuado al riesgo del centro de trabajo, con puntera, suela y cierre definidos.",
+            "Cuando la brigada puede enfrentar un incendio interior, la bota de seguridad industrial ya no alcanza: se necesita bota estructural, probada con pantalonera, casco y guantes del conjunto."
           ]
         },
         {
-          "h2": "Cotización de bota para brigada industrial",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Tarea autorizada, norma y talla",
           "parrafos": [
-            "Anotamos tarea, riesgo, talla, puntera, suela, plantilla, cierre y NOM-113-STPS-2009. Elige calzado dieléctrico solo cuando tu análisis lo incluya; pide bota estructural cuando el límite de respuesta requiera conjunto completo. Ligamos cada par con ropa, casco y guantes para describir maniobra real y registrar su compatibilidad en la orden.",
-            "Escribe modelo, construcción, pares, responsable y prueba de talla con uniforme bajo NOM-113-STPS-2009. Si el proveedor ofrece resistencia al deslizamiento, solicita su declaración para modelo. Si cambia análisis de riesgo, reevalúa lote antes de ampliar actividades. Tu compra conserva así el límite que definiste en procedimiento y en la recepción de cada par."
+            "Parte del análisis de riesgo: qué hace la brigada, dónde y hasta qué punto. Con eso se define el calzado y se evita comprar de más o de menos.",
+            "Pide la talla por usuario y pruébala con el uniforme de brigada. Puntera, suela, plantilla y cierre deben quedar escritos para que la recepción pueda revisarlos."
           ],
           "lista": [
-            "Tarea autorizada · inspección, evacuación, apoyo o conato",
-            "NOM-113-STPS-2009 · referencia industrial",
-            "Talla por usuario · prueba con uniforme",
-            "Puntera, suela, plantilla y cierre · según modelo",
-            "Límite de actuación · no ataque interior"
+            "Tarea: inspección, evacuación, apoyo o conato",
+            "Referencia: NOM-113-STPS-2009",
+            "Talla: por usuario, con prueba",
+            "Construcción: puntera, suela, plantilla y cierre",
+            "Límite: no para ataque interior",
+            "Escalamiento: bota estructural si el riesgo lo pide"
           ]
         },
         {
-          "h2": "Modelo para brigada industrial",
+          "eyebrow": "En servicio",
+          "h2": "Revisión del calzado de brigada",
           "parrafos": [
-            "No hay modelo publicado de brigada industrial. Proponemos modelo según operación, análisis y componentes documentados bajo NOM-113-STPS-2009; no inventamos marca, código o certificación. Pide talla, puntera, suela, cierre y límite antes de combinar calzado con casco, guantes y ropa de brigada en cada partida de tu centro de trabajo.",
-            "Si tu brigada cubre inspección o evacuación, cotizamos seguridad industrial con NOM-113-STPS-2009 y probamos uniforme. Si puede enfrentar incendio estructural, solicitamos bota estructural y familia de traje compatible. Esa separación permite comparar opciones sin asumir que suela industrial y bota de bombero comparten alcance durante una intervención."
-          ]
-        },
-        {
-          "h2": "Errores en órdenes de brigada industrial",
-          "parrafos": [
-            "No escribas bota dieléctrica sin tarea, límite y NOM-113-STPS-2009. Corrige con actividad máxima, riesgos, talla, puntera, suela y cierre. También evita calzado industrial para ataque interior; expresa ese límite y pide bota estructural si análisis cambia o la maniobra exige pantalón, casco y máscara de protección.",
-            "No elijas por puntera o apariencia bajo NOM-113-STPS-2009. Pide suela, plantilla, cierre, prueba con uniforme y registro de usuario. Cotejamos lote y orden antes de entrega. Si recibes modelo distinto, no lo asignes por similitud; solicita confirmación de construcción y compatibilidad con procedimiento de tu brigada."
-          ]
-        },
-        {
-          "h2": "Inspección de bota para brigada industrial",
-          "parrafos": [
-            "Antes de turno revisa suela, puntera, costuras, cierre, plantilla y contaminación conforme a NOM-113-STPS-2009. Retira ante daño de suela, pérdida de corte o contaminación; registra usuario, talla, recepción e inspección. Si brigada cambia de apoyo exterior, vuelve a pedir evaluación de riesgo antes de servicio y de asignar el mismo par.",
-            "Después de exposición, limpia conforme al fabricante y registra condición con NOM-113-STPS-2009, talla, puntera, suela y componentes de orden. Reponemos mismo modelo y límite documentado; no ampliamos su uso por conservar inventario. Si evaluación exige bota estructural, cotizamos conjunto con pantalón, casco, guantes y máscara."
+            "Revisa suela, puntera y costuras de forma periódica y después de cada simulacro o respuesta real. Un calzado con suela gastada o puntera expuesta sale de servicio.",
+            "Si la brigada cambia de alcance, por ejemplo al incorporar ataque interior, el calzado se revisa junto con todo el equipo. No basta con agregar una pieza al conjunto anterior."
           ]
         }
       ],
@@ -358,17 +433,53 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           "alcance": "Referencia de calzado de protección en centros de trabajo."
         }
       ],
-      "errores": [],
-      "faq": [],
+      "errores": [
+        "Equipar por uniforme y no por la tarea autorizada",
+        "Usar calzado industrial en ataque interior",
+        "Pedir sin talla por usuario",
+        "No documentar el límite de actuación de la brigada"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué norma aplica a la bota de brigada industrial?",
+          "a": "La NOM-113-STPS-2009, de calzado de protección en centros de trabajo. La dotación de la brigada, en conjunto, se define con la NOM-002-STPS-2010 según el riesgo."
+        },
+        {
+          "q": "¿La brigada necesita bota de bombero?",
+          "a": "Solo si su procedimiento incluye ataque interior. Para inspección, evacuación y conato suele bastar calzado de seguridad industrial."
+        },
+        {
+          "q": "¿Tienen modelos de bota de brigada publicados?",
+          "a": "Todavía no. La cotizamos según tu análisis de riesgo y te presentamos la ficha del modelo antes de que decidas."
+        },
+        {
+          "q": "¿Qué bota lleva el kit brigadista?",
+          "a": "El kit brigadista incluye la Romak Fire Workman Fire BOT1004, una bota de hule estructural; su configuración se confirma al cotizar."
+        }
+      ],
       "chips": [
         "Brigada",
         "NOM-113",
         "Según riesgo"
       ],
       "resumen": [
-        "La bota para brigada industrial cubre riesgos y tareas autorizadas con NOM-113-STPS-2009 como referencia; no hay modelo publicado, así que definimos puntera, suela, cierre, talla y límite de actuación según tu análisis de riesgo.",
-        "Mándanos por WhatsApp análisis de riesgo, límite, uniforme y tallas. Cotizamos calzado compatible con NOM-113-STPS-2009 o escalamos a bota estructural con pantalón, casco, guantes y máscara cuando la maniobra excede el apoyo exterior."
-      ]
+        "La referencia para calzado de protección en centros de trabajo es la NOM-113-STPS-2009. Todavía no publicamos un modelo; lo definimos según el análisis de riesgo y el límite de actuación de tu brigada.",
+        "Puntera, suela, plantilla y cierre se escriben en la partida. Si el procedimiento incluye entrar a combatir, cotizamos bota estructural dentro del conjunto completo."
+      ],
+      "duos": {
+        "ficha": [
+          "Para requisitar bota de brigada industrial indica la tarea autorizada, la referencia NOM-113-STPS-2009 y la talla de cada usuario.",
+          "La tabla deja escrito el límite: no es calzado para ataque interior. Si tu brigada llega a ese nivel, la partida cambia a bota estructural."
+        ],
+        "errores": [
+          "Los errores con calzado de brigada casi siempre vienen de no definir antes qué hace la brigada.",
+          "Revisa estos cuatro puntos contra tu procedimiento de respuesta antes de pedir cotización."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre normas de la STPS, alcance de la brigada y kit brigadista.",
+          "Si nos compartes el nivel de respuesta de tu brigada y cuántas personas son, te decimos qué calzado corresponde."
+        ]
+      }
     }
   ],
   "modelos": [
@@ -394,28 +505,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Suela antiderrapante, puntera y entresuela de acero antiperforación"
       ],
       "resumen": [
-        "La Romak Fire Workman Fire BOT1004 declara caucho natural vulcanizado en autoclave, caña de 33 cm, espuma aislante de PU, puntera y entresuela de acero. La cotizamos para operación estructural con tallas mexicanas de 26 a 31 cm y prueba con pantalón antes de asignar cada par.",
-        "En tu orden escribimos BOT1004, talla por usuario, caucho, espuma de PU, puntera y entresuela de acero. Pídenos la declaración NFPA 1971 · ASTM F903-10 · ISO 9001:2008 de proceso y mándanos tu tallaje por WhatsApp para revisar ajuste y solape."
+        "La Romak Fire Workman Fire BOT1004 es una bota de hule estructural de 33 cm, de caucho natural hecho a mano y vulcanizado en autoclave, con puntera y entresuela de acero antiperforación.",
+        "Se ofrece en tallas mexicanas de la 26 a la 31, negra con bandas amarillas, y pesa 3,520 g en promedio. Es la bota de nuestro kit brigadista.",
+        "Su fabricante declara NFPA 1971 y ASTM F903-10, además de ISO 9001:2008 para su proceso. La cotizamos por par y por talla, con prueba de ajuste."
       ],
       "descripcion": [
-        "Elige la Workman Fire BOT1004 si tu partida requiere caucho natural vulcanizado en autoclave, caña de 33 cm y tallas mexicanas de 26 a 31 cm; si buscas otra construcción, cotizamos la opción documentada para tu operación. En la orden escribe código BOT1004, talla, caucho, espuma aislante de PU, puntera y entresuela de acero para que el lote no llegue definido solo por color negro y bandas amarillas.",
-        "La BOT1004 declara construcción hecha a mano, capellada de caucho resistente a flama y calor según fabricante, espuma aislante de PU impermeable y suela antiderrapante. En la prueba de talla revisamos ambos pies con calcetín y pantalón estructural: el talón debe conservar control, los dedos espacio frente a la puntera de acero y la caña no debe presionar al subir escalera o trabajar en posición baja.",
-        "La configuramos con pantalón estructural, casco y máscara para comprobar el solape de los 33 cm de caña durante marcha y agachamiento. Pide que el par conserve bandas amarillas, suela antiderrapante y entresuela de acero antiperforación; si tu compra requiere un kit, anota BOT1004 por separado porque la asignación individual no se sustituye con el nombre del conjunto.",
-        "Para uso estructural, antes de aceptar el lote cotejamos BOT1004, talla 26 a 31 cm, caña de 33 cm, caucho, espuma de PU, suela, puntera y entresuela contra la orden. Pedimos que cada usuario camine, suba escalones y adopte posición baja con el pantalón; si el par levanta talón, roza o pierde estabilidad, corregimos talla antes de registrar su entrega.",
-        "Romak Fire declara NFPA 1971 · ASTM F903-10 · ISO 9001:2008 para proceso; lo comunicamos como declarado, no como certificación verificada. Antes y después de guardia revisamos caucho, bandas, unión caña-planta, forro y suela; retiramos el par ante corte, grieta, deformación, pérdida de tracción o golpe que comprometa puntera o entresuela, y registramos código, talla y condición."
+        "Su caña de 33 cm es de las más altas del catálogo, lo que da buen margen para que la pantalonera la cubra al arrodillarse. La capellada de caucho resiste flama y calor, según su fabricante.",
+        "Por dentro lleva espuma aislante de PU, impermeable, que protege del agua y del calor del piso. La suela es antiderrapante y la puntera y la entresuela de acero protegen contra golpes y clavos."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "BOT1004."
+          "q": "¿Qué tallas maneja la bota Workman Fire?",
+          "a": "Tallas mexicanas de la 26 a la 31, según su fabricante."
         },
         {
-          "q": "¿Qué tallas maneja?",
-          "a": "De 26 a 31 cm mexicanos."
+          "q": "¿Cuánto pesa la bota Romak Fire Workman Fire?",
+          "a": "3,520 g en promedio, según su ficha."
         },
         {
-          "q": "¿Cuál es el peso declarado?",
-          "a": "3,520 g promedio."
+          "q": "¿Qué altura tiene la Workman Fire BOT1004?",
+          "a": "33 cm de caña, lo que facilita el solape con la pantalonera."
+        },
+        {
+          "q": "¿En qué kit viene la bota Workman Fire?",
+          "a": "En nuestro kit brigadista, junto con el traje Combate Básico, el casco Bullard LTX, la capucha CAP1005 y el guante Firemax VI."
         }
       ],
       "imagen": {
@@ -430,7 +543,25 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "33 cm",
         "Puntera",
         "26–31 cm"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La Workman Fire se identifica con el código BOT1004. La tabla reúne material, tallas, peso y norma tal como los publica su ficha.",
+          "La norma aparece como declaración del fabricante. Pide que código y talla queden escritos por cada par en la cotización."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la Workman Fire, desde el caucho hasta la protección antiperforación.",
+          "La altura de 33 cm es su rasgo más distintivo frente a las otras botas de hule del catálogo."
+        ],
+        "otros": [
+          "La Workman Fire comparte tipo con la Croydon Filtrex y la Sköld Workman. Cambian en altura, peso y forro interior.",
+          "Si tu personal pide una bota más ligera, la Sköld Workman pesa menos; si el kit estructural es la referencia, la Filtrex es la bota de ese kit."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Workman Fire: tallas, peso, altura y kit.",
+          "Si nos mandas el cuadro de tallas de tu brigada, te cotizamos el lote completo por par."
+        ]
+      }
     },
     {
       "id": "croydon-filtrex",
@@ -454,28 +585,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Incluida en el kit estructural Profesional"
       ],
       "resumen": [
-        "La Croydon Filtrex BOT1002 declara hule estructural de 13 pulgadas, caucho vulcanizado, puntera y entresuela de acero, con tallas de 25 a 31 cm. La surtimos por usuario y probamos con pantalón de protección, aunque tu compra la integre al kit estructural Profesional.",
-        "Para comprar Filtrex anotamos BOT1002, talla 25 a 31 cm, altura de 13 pulgadas, caucho, puntera y entresuela de acero. Solicita por WhatsApp la declaración NFPA 1971 · ASTM F903-10 y confirma la prueba individual antes de liberar la recepción del lote."
+        "La Croydon Filtrex BOT1002 es una bota de hule estructural de 13 pulgadas, de caucho vulcanizado, con puntera y entresuela de acero.",
+        "Se ofrece en tallas de 25 a 31 cm, negra con bandas amarillas, y pesa 3,520 g en promedio. Es la bota de nuestro kit estructural Profesional.",
+        "Su fabricante declara NFPA 1971 y ASTM F903-10. La cotizamos por par, con talla escrita y prueba con la pantalonera puesta."
       ],
       "descripcion": [
-        "Elige Croydon Filtrex BOT1002 si tu orden requiere una bota de hule estructural de 13 pulgadas con tallas declaradas de 25 a 31 cm; si el usuario necesita otra talla o construcción, lo revisamos antes de cotizar. Escribe BOT1002, altura, caucho vulcanizado, puntera y entresuela de acero para evitar que una bota negra con bandas amarillas sustituya la configuración solicitada.",
-        "La Filtrex declara caucho vulcanizado, peso promedio de 3,520 g, puntera y entresuela de acero. Durante la prueba colocamos calcetín y pantalón de protección, caminamos y subimos escalera: elegimos la talla que deje espacio a los dedos, mantenga el talón y permita posición baja sin que la caña de 13 pulgadas interfiera con el movimiento de tu usuario.",
-        "Puede incluirse en el kit estructural Profesional, pero la configuramos con pantalón, casco y máscara de cada usuario antes de recibirla. Pide BOT1002, bandas amarillas, caucho, suela, puntera y entresuela en la orden; si el kit trae otro código o talla, pedimos corrección antes de aceptar pares que no correspondan a la partida especificada.",
-        "En guardia estructural revisamos el lote comparando código BOT1002, talla 25 a 31 cm, altura de 13 pulgadas, peso promedio de 3,520 g y componentes de acero contra la orden. Antes de aceptarlo, cada usuario debe caminar, bajar escalones y comprobar el solape con pantalón; apartamos pares con presión en dedos, levantamiento de talón, corte, deformación o pérdida de tracción.",
-        "Croydon declara NFPA 1971 · ASTM F903-10 y lo presentamos como declaración del fabricante, no como certificación verificada. Después de una intervención inspeccionamos caña, planta, forro, bandas y unión de caucho; limpiamos según fabricante y secamos sin calor directo. Retiramos cualquier Filtrex con daño, contaminación persistente o condición no evaluable y registramos BOT1002, talla y motivo."
+        "La Filtrex es una bota de hule clásica para ataque interior: caucho vulcanizado de una pieza, fácil de lavar después de cada servicio, con protección de acero en la punta y en la planta.",
+        "Su rango de tallas empieza en 25 cm, una talla menos que otras botas del catálogo, lo que ayuda a equipar a personal con pie pequeño sin recurrir a otro modelo."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "BOT1002."
+          "q": "¿Qué altura tiene la bota Croydon Filtrex?",
+          "a": "13 pulgadas de caña, según su ficha."
         },
         {
-          "q": "¿Qué altura declara?",
-          "a": "13 pulgadas."
+          "q": "¿Qué tallas maneja la Croydon Filtrex?",
+          "a": "De 25 a 31 cm."
         },
         {
-          "q": "¿En qué kit se incluye?",
-          "a": "En el kit estructural Profesional."
+          "q": "¿En qué kit viene la bota Croydon Filtrex?",
+          "a": "En nuestro kit estructural Profesional, junto con el traje Romak Fire Profesional, el casco Bullard LTX, la capucha Majestic PAC II y el guante Veridian Fire Pro II."
+        },
+        {
+          "q": "¿Qué norma declara la Croydon Filtrex?",
+          "a": "NFPA 1971 y ASTM F903-10, como declaración del fabricante, sin número de certificación publicado."
         }
       ],
       "imagen": {
@@ -490,7 +623,25 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "13 pulgadas",
         "Puntera",
         "25–31 cm"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La Croydon Filtrex se identifica con el código BOT1002. La tabla reúne material, tallas, peso y norma tal como los publica su ficha.",
+          "La norma aparece como declaración del fabricante. Pide que código y talla queden escritos por cada par."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la Filtrex. Todas vienen en su configuración estándar.",
+          "Su inclusión en el kit estructural Profesional la hace la opción natural si equipas con ese kit."
+        ],
+        "otros": [
+          "La Filtrex comparte tipo con la Romak Fire Workman Fire y la Sköld Workman. La Workman Fire es más alta y la Sköld, más ligera.",
+          "Compáralas por altura, peso, forro y tallas disponibles, no por el color."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Croydon Filtrex: altura, tallas, kit y norma.",
+          "Si nos compartes las tallas de tu personal, te cotizamos el lote por par."
+        ]
+      }
     },
     {
       "id": "skold-workman",
@@ -513,28 +664,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Cinta reflejante lateral, agarraderas y cargas eléctricas ESR declaradas"
       ],
       "resumen": [
-        "La Sköld Workman FPBSK declara caucho natural vulcanizado, forro de lana ignífuga, puntera y entresuela de acero, 3,150 g y caña de 13 pulgadas. La cotizamos por código FPBSK y verificamos la equivalencia mexicana 5 a 11 con prueba real de cada usuario.",
-        "Tu orden debe indicar FPBSK, talla mexicana o estadounidense, caucho, forro de lana ignífuga, suela antideslizante y acero en puntera y entresuela. Pídenos por WhatsApp la declaración NFPA 1971-2007 · NFPA 1992-2005 · ASTM F2413-05 · CSA Z195-02 y agendamos la prueba."
+        "La Sköld Workman FPBSK es una bota de hule estructural de caucho natural vulcanizado en autoclave, con forro de lana ignífuga y protector de tobillo.",
+        "Pesa 3,150 g, la más ligera de nuestras botas de hule, y se ofrece de la talla 5 a la 11 mexicana, equivalentes a la 6 a la 12 americana.",
+        "Sköld declara NFPA 1971-2007, NFPA 1992-2005, ASTM F2413-05 y CSA Z195-02. La cotizamos por par, con su código de talla."
       ],
       "descripcion": [
-        "Elige Sköld Workman FPBSK si tu control de inventario puede registrar la equivalencia FPBSK-05 a FPBSK-11, mexicano 5 a 11 y americano 6 a 12; si no, cotizamos el tallaje ya validado por usuario. En la orden escribe FPBSK, equivalencia, caña de 13 pulgadas, peso de 3,150 g, caucho natural y los componentes de acero para no recibir un par solo parecido.",
-        "La Workman declara caucho natural hecho a mano y vulcanizado en autoclave, forro de lana ignífuga con espuma insulada y PU expandido, protector de tobillo y plantilla de caucho acolchada 100 % algodón. En la prueba revisamos con calcetín y pantalón que el empeine no reciba presión, el talón se mantenga estable y los dedos no alcancen la puntera al subir escalera o adoptar posición baja.",
-        "La combinamos con pantalón estructural, casco y máscara, verificando agarraderas de caucho, cinta reflejante lateral, cambrión metálico, tacón moldeado y suela antideslizante. Pide esa configuración junto con puntera y entresuela de acero; si tu requerimiento incluye cargas eléctricas ESR, escríbelo como declarado y solicita la documentación del modelo antes de relacionarlo con una maniobra concreta.",
-        "Para operación estructural aceptamos un lote FPBSK después de cotejar código, equivalencia, caña de 13 pulgadas, 3,150 g y planta contra la orden. Hacemos una prueba de caminata, escalera y posición baja con pantalón; corregimos el par si falla talón, espacio de dedos o estabilidad. Tras calor, golpe o contaminantes, inspeccionamos suela, tacón, cambrión, forro y cinta lateral.",
-        "Sköld declara NFPA 1971-2007 · NFPA 1992-2005 · ASTM F2413-05 · CSA Z195-02; son referencias declaradas y no las presentamos como certificación vigente. Retiramos la FPBSK ante grieta, corte, deformación, pérdida de tracción o condición que afecte puntera, entresuela o forro. Registramos talla, código y resultado de inspección antes de devolver cualquier par a guardia."
+        "El forro de lana ignífuga con espuma insulada y PU expandido aísla del calor y del frío, y la plantilla de caucho acolchada de algodón hace más cómodas las guardias largas.",
+        "Lleva puntera y entresuela de acero, cambrión metálico, tacón moldeado y suela antideslizante. La cinta reflejante lateral y las agarraderas completan una bota pensada para trabajo diario."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "FPBSK."
+          "q": "¿Cuánto pesa la bota Sköld Workman?",
+          "a": "3,150 g, según su fabricante. Es la más ligera de las botas de hule estructurales del catálogo."
         },
         {
-          "q": "¿Qué peso declara?",
-          "a": "3,150 g."
+          "q": "¿Cómo se piden las tallas de la Sköld Workman?",
+          "a": "Por código, de FPBSK-05 a FPBSK-11, que corresponden a las tallas mexicanas 5 a 11 y americanas 6 a 12."
         },
         {
-          "q": "¿Cómo se expresan las tallas?",
-          "a": "FPBSK-05 a FPBSK-11, equivalentes a mexicano 5 a 11 y americano 6 a 12."
+          "q": "¿Qué forro tiene la Sköld Workman?",
+          "a": "Lana ignífuga con espuma insulada y PU expandido, más plantilla de caucho acolchada de algodón."
+        },
+        {
+          "q": "¿Qué normas declara la Sköld Workman?",
+          "a": "NFPA 1971-2007, NFPA 1992-2005, ASTM F2413-05 y CSA Z195-02, como declaración del fabricante."
         }
       ],
       "imagen": {
@@ -549,7 +702,25 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "3,150 g",
         "Puntera de acero",
         "FPBSK"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La Sköld Workman se identifica con el código FPBSK, más el número de talla. La tabla reúne material, peso, tallas y normas tal como las publica su ficha.",
+          "Las normas aparecen como declaración del fabricante. Pide que el código de talla quede escrito por cada par."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de la Workman de Sköld, con el forro de lana como rasgo distintivo.",
+          "Si tu personal trabaja en clima frío o hace guardias largas, el forro y la plantilla acolchada marcan la diferencia."
+        ],
+        "otros": [
+          "La Sköld Workman comparte tipo con la Romak Fire Workman Fire y la Croydon Filtrex, que publican 3,520 g de peso promedio.",
+          "Compáralas por peso, forro, altura y tallas. La prueba con la pantalonera puesta decide la talla correcta."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Sköld Workman: peso, tallas, forro y normas.",
+          "Si nos mandas las tallas de tu personal en sistema mexicano o americano, te las traducimos a código FPBSK."
+        ]
+      }
     },
     {
       "id": "romak-fire-ranger-bota",
@@ -565,31 +736,33 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Bota forestal de piel negra",
         "Agujetas y caña alta",
         "Línea Fire Ranger",
-        "Solicita ficha técnica para confirmar especificaciones"
+        "Ficha técnica completa al cotizar"
       ],
       "resumen": [
-        "La Romak Fire Fire Ranger es una bota forestal de piel negra, agujetas y caña alta de la línea Fire Ranger. La cotizamos para marcha exterior solo con los datos publicados; pedimos ficha técnica, código y tabla de tallas antes de asignarla a tu cuadrilla.",
-        "Tu orden puede indicar Fire Ranger, piel negra, agujetas y caña alta, pero no suela, puntera, membrana o altura sin ficha técnica. Escríbenos por WhatsApp con terreno y tallas para pedir la configuración documentada y probar estabilidad en caminata y pendiente."
+        "La Romak Fire Ranger es una bota forestal de piel negra, con agujetas y caña alta, de la línea Fire Ranger pensada para brigadistas.",
+        "Su ficha técnica completa se confirma al cotizar: por ahora el fabricante publica material, cierre y altura de caña, sin código ni norma declarada.",
+        "La presentamos tal como la publica Romak Fire. Si necesitas una bota forestal con construcción detallada, la Strong Fire publica más datos."
       ],
       "descripcion": [
-        "Elige Fire Ranger solo si tu compra puede condicionarse a ficha técnica, código por confirmar y talla probada; si necesitas puntera, membrana, suela o altura definida, pedimos esa documentación antes de cotizar. En la orden escribe Romak Fire Fire Ranger, piel negra, agujetas, caña alta y uso forestal, sin agregar componentes que el fabricante no haya publicado.",
-        "La construcción conocida es piel negra, agujetas y caña alta dentro de la línea Fire Ranger. En la prueba de talla usamos calcetín de trabajo y hacemos caminata, escalera y pendiente para revisar talón, empeine, dedos y ajuste de agujetas. Si la caña presiona o el talón se mueve, cambiamos talla o detenemos la asignación hasta recibir la tabla y configuración del fabricante.",
-        "La proponemos con pantalón forestal, casco y máscara según tu operación, pero no atribuimos compatibilidad técnica sin ficha. Pide que la cotización identifique agujetas, piel negra, caña alta y cuidados; si la cuadrilla requiere cierre, planta antiperforación o membrana, solicita esos campos por escrito en vez de usar una imagen de Fire Ranger como sustituto de la configuración real.",
-        "Para marcha forestal, antes de aceptar una partida revisamos piel, agujetas, caña y talla contra la ficha técnica solicitada. Probamos cada par en caminata y pendiente con pantalón; retiramos de recepción cualquier unidad con costuras abiertas, suela desprendida, agujetas dañadas o inestabilidad. La Fire Ranger no se usa como equivalente automático de una bota estructural ni se amplía su alcance por apariencia.",
-        "Fire Ranger tiene estatus sin norma y código por confirmar al cotizar; lo comunicamos como sin norma, nunca como certificación. Antes y después de jornada revisamos piel, costuras, agujetas, planta y condición de la caña; apartamos el par ante perforación, pérdida de suela, desprendimiento o contaminación persistente. Registramos talla, configuración aprobada y condición para que la reposición no se base en una fotografía."
+        "Es una bota de marcha para línea de fuego: la piel se adapta al pie y la caña alta con agujetas sujeta el tobillo en terreno irregular.",
+        "Antes de ordenarla pedimos al fabricante la ficha técnica con código, suela y construcción, para que la cotización no deje dudas sobre lo que vas a recibir."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "Debe confirmarse al cotizar."
+          "q": "¿Cuál es el código de la bota Romak Fire Ranger?",
+          "a": "Se confirma al cotizar, junto con la ficha técnica completa del fabricante."
         },
         {
-          "q": "¿Qué norma declara?",
-          "a": "El fabricante no declara una norma para este modelo; solicita su declaración por escrito con la cotización."
+          "q": "¿La bota Fire Ranger declara alguna norma?",
+          "a": "No. Su fabricante no publica norma para esta bota y así la presentamos."
         },
         {
-          "q": "¿Qué se conoce de la construcción?",
-          "a": "Piel negra, agujetas y caña alta de la línea Fire Ranger."
+          "q": "¿Qué se sabe de la construcción de la Fire Ranger?",
+          "a": "Que es de piel negra, con agujetas y caña alta. Suela, forro y protección se confirman en la ficha técnica al cotizar."
+        },
+        {
+          "q": "¿Para qué uso está pensada la bota Fire Ranger?",
+          "a": "Para incendio forestal y trabajo en línea de fuego, no para ataque interior estructural."
         }
       ],
       "imagen": {
@@ -603,7 +776,25 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Forestal",
         "Piel negra",
         "Ficha técnica pendiente"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La tabla muestra lo que publica hoy la ficha de la Fire Ranger: material y estatus normativo. El código se confirma al cotizar.",
+          "No declara norma. La referencia vigente del equipo forestal es NFPA 1950, y así lo dejamos escrito."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica el fabricante. Son pocas, y por eso pedimos la ficha completa antes de cerrar una partida.",
+          "Si necesitas comparar construcción, la Strong Fire publica suela, planta, forro y cierre."
+        ],
+        "otros": [
+          "La Fire Ranger comparte tipo con la Strong Fire de caña corta, que publica piel hidrofugada, planta de Kevlar y cierre YKK.",
+          "Las dos se publican sin norma declarada. Elige por altura de caña, cierre y terreno."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la bota Fire Ranger: código, norma, construcción y uso.",
+          "Si te interesa, te pedimos la ficha técnica completa y te la mandamos por WhatsApp junto con la cotización."
+        ]
+      }
     },
     {
       "id": "strongfire-bota-forestal",
@@ -624,28 +815,30 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Casco de poliamida dieléctrico, planta de Kevlar antiperforación y suela de hule acrilonitrilo"
       ],
       "resumen": [
-        "La Strong Fire caña corta declara piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm según talla, planta de Kevlar y suela de hule acrilonitrilo. La surtimos para brigada forestal con prueba de ajuste, cierre YKK y caminata en el terreno de tu cuadrilla.",
-        "Al cotizar anotamos piel de 2.0 a 2.4 mm, tubo de 24 cm según talla, nueve pares de ojillos, cierre YKK, planta de Kevlar y suela de hule acrilonitrilo. Tiene estatus sin norma; envíanos por WhatsApp tallas y uso para confirmar código y configuración."
+        "La bota brigadista forestal de caña corta Strong Fire es de piel hidrofugada de 2.0 a 2.4 mm, con planta de Kevlar antiperforación y suela de hule acrilonitrilo.",
+        "Se ajusta con nueve pares de ojillos metálicos y cierre metálico YKK, y su tubo mide 24 cm según talla. Lleva doble membrana y casco de poliamida dieléctrico.",
+        "Su fabricante no declara norma, y así la presentamos. La cotizamos por talla, con prueba en pendiente y con el pantalón forestal puesto."
       ],
       "descripcion": [
-        "Elige Strong Fire si tu operación forestal requiere piel hidrofugada de 2.0 a 2.4 mm, tubo de 24 cm según talla, planta de Kevlar antiperforación y suela de hule acrilonitrilo; si esos campos no corresponden a tu partida, cotizamos otra configuración documentada. En la orden escribe bota brigadista forestal caña corta, tallas, piel, tubo, planta y suela, además de código por confirmar al cotizar.",
-        "La bota declara bumper de hule de 3 mm, bies reflejante verde neón, bullón acojinado, jareta de talón, nueve pares de ojillos metálicos y forros bondeados de 4.0 a 5.0 mm. Durante la prueba con calcetín y pantalón forestal revisamos que el talón no se mueva, el bullón no presione y los ojillos, lengüeta y cierre YKK permitan ajuste estable durante caminata y pendiente.",
-        "La configuramos con pantalón forestal, casco y máscara conforme a tu operación y escribimos cierre metálico YKK, doble membrana, casco de poliamida dieléctrico, plantilla de poliuretano y planta de Kevlar solo porque el modelo los declara. Pide que esos componentes se confirmen por escrito; si tu cuadrilla usa otra herramienta o conjunto, comprobamos que la caña corta y el pantalón mantengan movilidad sin inferir una protección no publicada.",
-        "Antes de aceptar el lote para brigada forestal verificamos piel de 2.0 a 2.4 mm, tubo de 24 cm según talla, nueve pares de ojillos, cierre YKK, planta de Kevlar y suela de hule acrilonitrilo contra la orden. Hacemos caminata con el pantalón y pendiente; apartamos pares con presión, movimiento de talón, cierre irregular, pérdida de suela o daño de ojillos antes de asignarlos.",
-        "Strong Fire tiene estatus sin norma y no la presentamos como certificación, aunque declare casco de poliamida dieléctrico, Kevlar y hule acrilonitrilo. Después de uso inspeccionamos piel, cierre YKK, forros, doble membrana, ojillos, planta y unión de suela; retiramos el par ante perforación, desprendimiento, contaminación persistente o condición que afecte ajuste, y registramos talla, código confirmado y resultado."
+        "Es una bota con mucha información publicada: bumper de hule de 3 mm en la punta, bies reflejante verde neón, bullón acojinado y jareta de talón para que el pie no se mueva al bajar.",
+        "El cierre YKK permite quitarla rápido sin desatar las agujetas, y los forros bondeados de 4.0 a 5.0 mm con doble membrana la hacen cómoda en jornadas largas."
       ],
       "faq": [
         {
-          "q": "¿Qué material declara?",
-          "a": "Piel hidrofugada de 2.0 a 2.4 mm."
+          "q": "¿De qué material es la bota forestal Strong Fire?",
+          "a": "De piel hidrofugada de 2.0 a 2.4 mm, con bumper de hule de 3 mm y forros bondeados de 4.0 a 5.0 mm."
         },
         {
-          "q": "¿Tiene norma declarada?",
-          "a": "No hay norma declarada para este modelo."
+          "q": "¿La bota Strong Fire tiene planta antiperforación?",
+          "a": "Sí, planta de Kevlar antiperforación y casco de poliamida dieléctrico, según su fabricante."
         },
         {
-          "q": "¿Qué planta declara?",
-          "a": "Planta de Kevlar antiperforación."
+          "q": "¿La bota Strong Fire declara norma?",
+          "a": "No. Su fabricante no publica norma, y así lo indicamos en la ficha."
+        },
+        {
+          "q": "¿Qué cierre tiene la bota Strong Fire?",
+          "a": "Nueve pares de ojillos metálicos con agujetas, más cierre metálico YKK para ponerla y quitarla rápido."
         }
       ],
       "imagen": {
@@ -659,7 +852,25 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Piel hidrofugada",
         "Planta de Kevlar",
         "Sin norma declarada"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "La tabla reúne material, tallas y estatus normativo tal como los publica la ficha de Strong Fire. El código se confirma al cotizar.",
+          "No declara norma. La referencia vigente del equipo forestal es NFPA 1950."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha de Strong Fire, una de las más completas del catálogo forestal.",
+          "La planta de Kevlar y el cierre YKK son los dos rasgos que más la distinguen."
+        ],
+        "otros": [
+          "La Strong Fire comparte tipo con la Romak Fire Ranger, de caña alta y agujetas, que confirma su ficha completa al cotizar.",
+          "Elige por altura de caña, cierre y terreno. Las dos se publican sin norma declarada."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta de la Strong Fire: material, planta, norma y cierre.",
+          "Si nos dices cuántos brigadistas son y sus tallas, te mandamos la cotización del lote."
+        ]
+      }
     }
   ]
 };

@@ -48,13 +48,13 @@ La NFPA 1970 agrupó cuatro estándares que antes se compraban, se citaban y se 
 
 La consolidación entró en vigor en **septiembre de 2024**, y la primera edición del documento consolidado es la de **2025**.
 
-La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el mismo cuerpo y sus requisitos de interfaz se contradecían con cierta frecuencia cuando vivían en documentos distintos con ciclos de revisión distintos. Un solo documento obliga a que las interfaces sean coherentes.
+La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el mismo cuerpo. Cuando vivían en documentos distintos, con ciclos de revisión distintos, sus requisitos de interfaz a veces se contradecían. Un solo documento obliga a que las interfaces sean coherentes.
 
 ## Qué NO entró en la consolidación
 
 Esto es lo que más confusión provoca en México, así que conviene decirlo claro:
 
-- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 —rescate técnico—, NFPA 1977 —forestal— y NFPA 1999 —operaciones médicas—. En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
+- El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 (rescate técnico), NFPA 1977 (forestal) y NFPA 1999 (operaciones médicas). En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
 - La misma NFPA 1950 rige el **rescate técnico y la extricación**, que tampoco están en la 1970. Trae un periodo de gracia de 18 meses para producto certificado bajo las ediciones anteriores.
 - Los **trajes de entrada a la flama** siguen sin tener una norma NFPA de producto específica. Se especifican contra la ficha técnica del fabricante, como explicamos en la ficha de [trajes de entrada](/trajes/entrada/).
 - La **selección, cuidado y mantenimiento** del equipo tampoco está aquí: eso vive en la NFPA 1850, que a su vez consolidó las viejas 1851 y 1852. Son documentos hermanos con funciones distintas: **1970 dice cómo debe ser el equipo; 1850 dice cómo debes cuidarlo.**
@@ -86,9 +86,41 @@ Tres detalles de esa redacción que valen dinero:
 No se sustituyen entre sí: cubren cosas distintas.
 
 - La **NFPA** es una norma de **producto**: define cómo debe estar hecho y probado el equipo. En México no es obligatoria por sí misma; se vuelve exigible cuando tu pliego o tu contrato la invocan.
-- Las **NOM de la STPS** son obligaciones **patronales**: la NOM-002-STPS-2010 te obliga a dotar de equipo de protección a los integrantes de la brigada contra incendio, y la NOM-017-STPS-2024 rige la selección y uso del equipo de protección personal conforme al análisis de riesgo de tu centro de trabajo.
+- Las **NOM de la STPS** son obligaciones **patronales**: la NOM-002-STPS-2010 te obliga a dotar de equipo de protección a los integrantes de la brigada contra incendio. La NOM-017-STPS-2024 rige la selección y uso del equipo de protección personal conforme al análisis de riesgo de tu centro de trabajo.
 
 Dicho corto: **la NOM te dice que tienes que proteger a tu gente; la NFPA te da el criterio técnico para saber si el equipo que compraste realmente protege.** En una compra seria se citan las dos.
+
+## Antes y después: de la NFPA 1971 a la NFPA 1970
+
+La forma más rápida de actualizar una requisición es poner lado a lado lo que se citaba y lo que se cita ahora:
+
+| Equipo | Antes se citaba | Ahora se cita | Qué no cambió |
+| --- | --- | --- | --- |
+| Conjunto estructural completo | NFPA 1971, edición 2018 | NFPA 1970, edición 2025, capítulo del conjunto estructural | La certificación es del conjunto terminado, a nombre del fabricante |
+| Traje de aproximación (proximidad) | NFPA 1971, edición 2018 | NFPA 1970, edición 2025 | Sigue siendo para calor radiante, no para entrar a la flama |
+| Equipo de respiración autónoma (ERA / SCBA) | NFPA 1981 | NFPA 1970, edición 2025 | Sigue siendo ERA de circuito abierto para servicios de emergencia |
+| PASS (alarma por inmovilidad) | NFPA 1982 | NFPA 1970, edición 2025 | Sigue siendo la alarma por inmovilidad del bombero |
+| Uniforme de estación | NFPA 1975 | NFPA 1970, edición 2025 | No sustituye al traje de combate |
+| Traje forestal y equipo de rescate técnico | NFPA 1977 y NFPA 1951 | NFPA 1950, edición 2025 | No forman parte de la NFPA 1970 |
+| Cuidado, inspección y retiro | NFPA 1851 y NFPA 1852 | NFPA 1850 | Retiro del estructural a diez años de fabricado |
+
+## Qué pedir en la ficha técnica
+
+Con la norma consolidada, la ficha técnica de un traje estructural debería traer estos datos. Si falta uno, pídelo por escrito antes de comparar precios:
+
+| Dato | Por qué importa |
+| --- | --- |
+| Norma y edición declaradas (NFPA 1970:2025 o NFPA 1971:2018) | Define contra qué se probó y si tu pliego acepta esa edición |
+| Organismo certificador y número de certificado | Permite verificar el listado; por ejemplo, UL MH14790 en el Romak Fire Protector |
+| Fabricante del conjunto terminado | El certificado debe estar a su nombre, no al del proveedor de tela |
+| Composite capa por capa | Capa exterior, barrera de humedad y barrera térmica por nombre comercial |
+| TPP y THL del composite completo | Son del conjunto de capas, no de la tela exterior sola |
+| Fecha de fabricación | Desde ahí corren los diez años de vida útil |
+| Tallas disponibles | Base del levantamiento por elemento |
+
+## Cómo lo resuelve LORICA
+
+En las fichas de LORICA cada modelo publica la norma tal como la declara el fabricante y su estatus: certificado con número, declarado o solo materiales. Seis de los siete modelos estructurales que publicamos declaran solo la NFPA 1971 edición 2018, y así lo verás escrito en las fichas de [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/). En cambio, el [Romak Fire Maverick II](/trajes/estructural/modelos/romak-maverick-ii/) ya declara la NFPA 1970:2025 junto con la EN 469. Si tu pliego exige la edición 2025, te decimos qué modelos cumplen y cuáles no antes de cotizar.
 
 ## Qué revisar hoy en tu expediente
 
@@ -99,8 +131,21 @@ Dicho corto: **la NOM te dice que tienes que proteger a tu gente; la NFPA te da 
 
 Si contestaste que no a alguna, no es urgencia pero sí es pendiente. Mándanos tu especificación y te decimos qué línea conviene ajustar antes de publicar. Va sin costo, aunque acabes comprándole a alguien más.
 
+## Preguntas frecuentes
+
+**¿Qué es la NFPA 1970?** Es la norma de la NFPA que, desde su edición 2025, reúne en un solo documento las antiguas NFPA 1971 (traje estructural y de aproximación), NFPA 1975 (uniforme de estación), NFPA 1981 (ERA) y NFPA 1982 (PASS).
+
+**¿La NFPA 1971 sigue siendo válida?** Un traje certificado bajo la NFPA 1971 edición 2018 no se vuelve inseguro por la consolidación. Lo que cambia es la referencia vigente: tu pliego debe decir si acepta equipo certificado bajo la edición anterior o solo bajo la NFPA 1970.
+
+**¿El traje forestal entra en la NFPA 1970?** No. El equipo forestal pasó a la NFPA 1950 edición 2025, junto con el rescate técnico y las operaciones médicas. En una requisición de equipo forestal se cita la NFPA 1950, no la 1970.
+
+**¿Qué debo pedir en la ficha técnica de un traje estructural?** Norma y edición, organismo certificador y número de certificado, fabricante del conjunto terminado, composite capa por capa, TPP y THL del composite, fecha de fabricación y tallas disponibles.
+
+**¿La NFPA es obligatoria en México?** No por sí misma. Se vuelve exigible cuando un pliego o un contrato la invoca. Las obligaciones del patrón vienen de la NOM-002-STPS-2010 y de la norma de equipo de protección personal de la STPS.
+
 ## Fuentes
 
 - [UL Solutions — NFPA Consolidates Firefighter PPE Standards into New NFPA 1970](https://www.ul.com/news/nfpa-consolidates-firefighter-ppe-standards-new-nfpa-1970)
 - [FireRescue1 — What you need to know now about the NFPA 1970 consolidations](https://www.firerescue1.com/nfpa/what-you-need-to-know-now-about-the-nfpa-1970-consolidations)
 - [FireRescue1 — The new NFPA 1950: consolidating tech rescue, EMS and wildland PPE](https://www.firerescue1.com/fire-products/Personal-protective-equipment-ppe/the-new-nfpa-1950-consolidating-tech-rescue-ems-and-wildland-ppe)
+- [NFPA 1970 (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1970-standard-development/1970) y [NFPA 1950 (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1950-standard-development/1950)

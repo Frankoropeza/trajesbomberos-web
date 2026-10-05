@@ -1,15 +1,38 @@
 ---
-// L3 · Ficha de familia: /trajes/<slug>/
-// La página solo resuelve la ruta; toda la secuencia de módulos
-// vive en ProductLayout para que las seis queden homologadas.
+// L3 · familia de traje (/trajes/<slug>/) con la plantilla CategoriaL2, igual que las L2 y los
+// hubs de sección. Texto: src/content/categorias/trajes-<slug>.md (Zod estricto; sin .md, el
+// build falla). Datos de catálogo: piezas de la familia (cards), modelos de la familia
+// (retícula, tabla e ItemList), familias hermanas (#otras) y guías del blog.
 import type { GetStaticPaths } from 'astro';
-import ProductLayout from '@layouts/ProductLayout.astro';
+import { getEntry, render } from 'astro:content';
+import CategoriaL2 from '@components/l2/CategoriaL2.astro';
+import { SITE } from '@config/site';
 import { FAMILIAS } from '@lib/familias';
+import { modelosDeFamilia, urlModelo } from '@lib/catalogo/modelos';
+import { tilesFamilias, tilesPiezas } from '@lib/catalogo/tiles';
+import { tilesExtra, spotlightDeModulo, filaModelo, guiasL2, modelosPorId } from '@lib/l2';
 
-export const getStaticPaths = (() => {
-  return FAMILIAS.map((f) => ({ params: { slug: f.slug }, props: { familia: f } }));
-}) satisfies GetStaticPaths;
+export const getStaticPaths = (() => FAMILIAS.map((f) => ({ params: { slug: f.slug }, props: { familia: f } }))) satisfies GetStaticPaths;
 
-const { familia } = Astro.props;
+const { familia: f } = Astro.props;
+const entrada = await getEntry('categorias', `trajes-${f.slug}`);
+if (!entrada) throw new Error(`[L3] Falta src/content/categorias/trajes-${f.slug}.md para /trajes/${f.slug}/.`);
+const d = entrada.data;
+const { Content } = await render(entrada);
+
+const base = tilesPiezas(f);
+const tiles = [...base, ...tilesExtra(d, base[0]?.codigo.split('-')[0] + '-', base.length)];
+const spotlights = d.modulos.map((modulo, index) => spotlightDeModulo(modulo, index));
+const todos = modelosDeFamilia(f.slug);
+// Retícula: modelosDestacados del .md si existen; tabla e ItemList: todos los modelos de la familia.
+const modelos = d.modelosDestacados ? modelosPorId(d.modelosDestacados) : todos;
+const columnas = ['modelo', 'marca', 'capa', 'barreras', 'norma', 'estatus'] as const;
+const filasModelos = todos.map((modelo) => filaModelo(modelo, columnas));
+const directoryItems = [
+  // Solo productos: fuera enlaces externos y tarjetas que remiten a otro hub.
+  ...tiles.filter((tile) => !tile.external && tile.href.split('/').filter(Boolean).length > 1).map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
+  ...todos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
+];
+const guias = await guiasL2(d);
 ---
-<ProductLayout familia={familia} />
+<CategoriaL2 {d} {tiles} {spotlights} {modelos} {filasModelos} {directoryItems} {guias} parent={{ name: 'Trajes', href: '/trajes/' }} hermanas={tilesFamilias(f.slug)}><Content /></CategoriaL2>

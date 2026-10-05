@@ -76,7 +76,7 @@ Esta tabla sirve como lista de recepción, no como sustituto del documento del f
 
 ## Fecha de fabricación y ciclo de servicio
 
-La fecha de fabricación permite organizar inventario, inspección y reemplazo. En la ficha del chaquetón estructural publicado se declara retiro obligatorio a los diez años desde esa fecha, aunque nunca se haya usado. La [guía de vida útil conforme a NFPA 1850](/blog/vida-util-traje-bombero-nfpa-1850/) precisa que el estado, las exposiciones y el mantenimiento pueden requerir una salida anterior; no debes usar el límite como promesa de que cualquier pieza llegará completa a esa edad.
+La fecha de fabricación permite organizar inventario, inspección y reemplazo. En la ficha del chaquetón estructural publicado se declara retiro obligatorio a los diez años desde esa fecha, aunque nunca se haya usado. La [guía de vida útil conforme a NFPA 1850](/blog/vida-util-traje-bombero-nfpa-1850/) precisa que el estado, las exposiciones y el mantenimiento pueden requerir una salida anterior. No debes usar el límite como promesa de que cualquier pieza llegará completa a esa edad.
 
 Al recibir, registra la fecha y el identificador de pieza antes de asignarla. No aceptes como solución que el proveedor diga que “es reciente” sin que la etiqueta lo demuestre. Esta práctica evita que se compre inventario con menos tiempo de servicio disponible y permite planear reposición sin perder trazabilidad entre usuario, inspección y prenda.
 

@@ -1,0 +1,112 @@
+{
+  "slug": "coahuila",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Coahuila de Zaragoza",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Gobierno del Estado de Coahuila de Zaragoza",
+    "fecha": "2010-05-14"
+  },
+  "ultimaReforma": "2025-12-19",
+  "urlOficial": "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa34.pdf",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Subsecretaría de Protección Civil de la Secretaría de Gobierno",
+    "articulo": "Art. 12",
+    "cita": "Corresponde al Subsecretario de Protección Civil el ejercicio de las siguientes atribuciones: I. Proponer la adopción de medidas tendientes a la prevención y reparación de daños por desastres; II. Elaborar y ejecutar, en su caso, los planes y programas de protección civil que sean necesarios;"
+  },
+  "lead": "La Ley de Protección Civil para el Estado de Coahuila de Zaragoza concentra en un solo artículo las obligaciones de comercios, industrias e inmuebles con afluencia de personas. Esta guía las explica con su cita literal para jefes de seguridad y brigadas.",
+  "panorama": [
+    "Expedida mediante el Decreto 242 y publicada el 14 de mayo de 2010, la ley suma reformas hasta el 19 de diciembre de 2025, la más reciente sobre inmuebles con elevadores. Su artículo 26 obliga a quienes operan establecimientos con concentración masiva de personas o actividades riesgosas a capacitar, hacer simulacros, asegurar daños a terceros y tener unidad interna y Programa Interno.",
+    "En el ámbito estatal, la Subsecretaría de Protección Civil de la Secretaría de Gobierno elabora el Plan y el Programa Estatal y ejecuta los programas de la materia (Art. 12). Cada municipio debe establecer una unidad municipal de protección civil para enfrentar en primera instancia las emergencias (Art. 66) y un consejo municipal de apoyo y asesoría (Art. 68)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles con concentración masiva o actividad de riesgo",
+      "obligacion": "Tener unidad interna y Programa Interno, y presentarlo para revisión dentro de los quince días posteriores al inicio de operaciones.",
+      "articulo": "Art. 26, fr. VI",
+      "cita": "Contar con una unidad interna de protección civil y a elaborar un Programa Interno de Protección Civil, en los términos de esta ley y su reglamento. Dicho programa deberá ser presentado ante las autoridades de protección civil que corresponda, para su revisión y aprobación"
+    },
+    {
+      "sujeto": "Inmuebles con concentración masiva o actividad de riesgo",
+      "obligacion": "Capacitar al personal en protección civil y primeros auxilios (anual para quien los presta) y hacer un simulacro al menos cada seis meses.",
+      "articulo": "Art. 26, fr. I y II",
+      "cita": "Capacitar a su personal en materia de protección civil y primeros auxilios. El personal que esté a cargo de proveer primeros auxilios deberá recibir capacitación al menos de forma anual. II. Practicar simulacros cuando menos una vez cada seis meses."
+    },
+    {
+      "sujeto": "Establecimientos con afluencia de usuarios",
+      "obligacion": "Orientar a los usuarios sobre cómo actuar ante emergencias y contar con seguro de responsabilidad civil por daños a terceros.",
+      "articulo": "Art. 26, fr. IV y V",
+      "cita": "Orientar a los usuarios del establecimiento, edificación o inmueble sobre los métodos y las acciones para evitar o minimizar los daños, en caso de que se presenten riesgos, emergencias, siniestros o desastres; V. Contar con un seguro de responsabilidad civil por daños a terceros;"
+    },
+    {
+      "sujeto": "Establecimientos obligados por el artículo 26",
+      "obligacion": "Presentar cada año la autodeclaratoria de cumplimiento; su visto bueno tiene vigencia de un año.",
+      "articulo": "Art. 26, fr. VII",
+      "cita": "Elaborar y presentar anualmente ante las autoridades de protección civil que corresponda, la autodeclaratoria de cumplimiento de obligaciones en materia de protección civil, para su revisión y aprobación. El visto bueno o aprobación de la autodeclaratoria tendrá una vigencia de un año a partir de la fecha de su emisión"
+    },
+    {
+      "sujeto": "Empresas industriales, comerciales y de servicios",
+      "obligacion": "Capacitar al personal, dotarlo del equipo de respuesta necesario y mantener sistemas contra incendios en óptimas condiciones.",
+      "articulo": "Art. 34",
+      "cita": "Las empresas, sean industriales, comerciales o de servicios deberán dar capacitación a su personal en materia de protección civil y primeros auxilios, dotarlos del equipo de respuesta necesario, y estar provistas de sistemas contra incendios en óptimas condiciones para su uso."
+    },
+    {
+      "sujeto": "Vivienda plurifamiliar y edificaciones no unifamiliares",
+      "obligacion": "Elaborar e implementar un programa interno y colocar señalización visible de zonas de seguridad y rutas de evacuación.",
+      "articulo": "Art. 33",
+      "cita": "La vivienda plurifamiliar, conjuntos habitacionales y demás edificaciones, excepto casas habitación unifamiliares, están obligados a elaborar e implementar un programa interno de protección civil."
+    },
+    {
+      "sujeto": "Quienes construyen o remodelan inmuebles y estructuras",
+      "obligacion": "Presentar un diagnóstico de riesgo para obtener la constancia de factibilidad, sin la cual no se expide licencia de construcción.",
+      "articulo": "Art. 32",
+      "cita": "deberán presentar un diagnóstico de riesgo en materia de protección civil a la Subsecretaria o al ayuntamiento según las atribuciones contempladas en los artículos 12 y 13 de esta ley, para la expedición de la constancia de factibilidad en materia de protección civil."
+    },
+    {
+      "sujeto": "Promotores de eventos de afluencia masiva",
+      "obligacion": "Presentar al municipio un programa especial de protección civil antes del evento, avisar a la Subsecretaría y orientar al público.",
+      "articulo": "Art. 36",
+      "cita": "Los promotores, organizadores o responsables de la realización de eventos o espectáculos públicos de afluencia masiva, en áreas o inmuebles diferentes a su uso habitual deberán, previa a su realización, presentar a la autoridad municipal correspondiente un programa especial de protección civil"
+    }
+  ],
+  "brigadasDuo": [
+    "En Coahuila la unidad interna de protección civil, también conocida como brigada institucional, elabora, actualiza y opera el Programa Interno (Art. 5, fr. LXII). Los establecimientos del artículo 26 deben hacer simulacros al menos cada seis meses y avisar a la autoridad las fallas detectadas; los que reciben público los coordinan con las autoridades y notifican fecha y hora a la Subsecretaría (Art. 31).",
+    "Estancias, guarderías y escuelas de nivel básico y medio superior practican al menos tres simulacros al año, en condiciones que repliquen su operación diaria y con participación de madres y padres de familia (Art. 26). Quien brinda primeros auxilios debe capacitarse cada año. La Subsecretaría y las unidades municipales asesoran, previa solicitud, para integrar unidades internas (Art. 39)."
+  ],
+  "equipoDuo": [
+    "El artículo 34 pide a las empresas industriales, comerciales y de servicios dotar a su personal del equipo de respuesta necesario y mantener sistemas contra incendios en óptimas condiciones. La ley no enumera el equipo, así que el punto de partida técnico es la NOM-002-STPS-2010, norma federal de prevención y protección contra incendios, junto con el análisis de riesgo del Programa Interno.",
+    "Para brigadas de plantas y maquiladoras de la región, en LORICA ofrecemos <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y, donde se forma una brigada de ataque a incendios, <a href=\"/trajes/estructural/\">trajes estructurales</a>. La NOM-017-STPS-2024, norma federal de equipo de protección personal, guía la selección de casco, guantes, botas y protección respiratoria."
+  ],
+  "sancionesDuo": [
+    "Las infracciones se sancionan con amonestación, cancelación de permisos o autorizaciones, suspensión o cancelación de obras, actividades o servicios, multa, clausura temporal o definitiva, parcial o total del establecimiento y arresto administrativo; pueden imponerse en forma acumulativa (Arts. 93 y 94)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Coahuila y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil para el Estado de Coahuila de Zaragoza, expedida por el Decreto 242 y publicada en el Periódico Oficial el 14 de mayo de 2010. La última reforma que anota el texto es del 19 de diciembre de 2025. El Congreso del Estado publica la versión actualizada en PDF."
+    },
+    {
+      "q": "¿Quién debe tener Programa Interno de Protección Civil en Coahuila?",
+      "a": "Los establecimientos e inmuebles con concentración masiva de personas y quienes realizan actividades de riesgo (Art. 26, fr. VI), además de la vivienda plurifamiliar y las edificaciones que no son casa unifamiliar (Art. 33). El programa se presenta dentro de los quince días posteriores al inicio de operaciones."
+    },
+    {
+      "q": "¿Cada cuándo hay que hacer simulacros en Coahuila?",
+      "a": "El artículo 26 exige al menos un simulacro cada seis meses a los establecimientos obligados, y tres al año en guarderías y escuelas de nivel básico y medio superior. El artículo 31 pide a los establecimientos con afluencia de público coordinarlos con la autoridad y avisar fecha y hora a la Subsecretaría."
+    },
+    {
+      "q": "¿Qué es la autodeclaratoria anual de cumplimiento en Coahuila?",
+      "a": "Es el documento que los establecimientos obligados presentan cada año ante la autoridad de protección civil para acreditar que cumplen sus obligaciones (Art. 26, fr. VII). Su visto bueno vale un año; si se omite, debe presentarse de nuevo el Programa Interno."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Coahuila?",
+      "a": "La ley habla de equipo de respuesta y sistemas contra incendios, sin listarlos. Una brigada industrial suele contar con casco, guantes, botas de seguridad, ropa de alta visibilidad, botiquín, camilla y extintores, y su dotación se ajusta a la NOM-002-STPS-2010 y al análisis de riesgo de la planta."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Coahuila de Zaragoza · Ley de Protección Civil para el Estado de Coahuila de Zaragoza (PDF)",
+      "url": "https://www.congresocoahuila.gob.mx/transparencia/03/Leyes_Coahuila/coa34.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

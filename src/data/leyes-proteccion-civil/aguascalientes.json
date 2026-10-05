@@ -1,0 +1,124 @@
+{
+  "slug": "aguascalientes",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Aguascalientes",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Aguascalientes",
+    "fecha": "2013-07-08"
+  },
+  "ultimaReforma": "2026-05-18",
+  "urlOficial": "https://congresoags.gob.mx/agenda_legislativa/leyes/descargarPdf/395",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Aguascalientes",
+    "url": "https://eservicios2.aguascalientes.gob.mx/NormatecaAdministrador/archivos/EDO-26-27.pdf",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 35",
+    "cita": "La Coordinación es un órgano desconcentrado de la Secretaría de Gobierno, para su debido funcionamiento podrá utilizar y establecer un Centro Estatal de Operaciones y en su caso, Bases Regionales que deberán ser establecidas conforme al Programa Estatal."
+  },
+  "lead": "La Ley de Protección Civil para el Estado de Aguascalientes define qué deben cumplir empresas, inmuebles con afluencia de personas y organizadores de eventos. Aquí se resumen sus obligaciones con artículo y cita literal, para responsables de seguridad y jefes de brigada.",
+  "panorama": [
+    "Publicada el 8 de julio de 2013 y reformada por última vez el 18 de mayo de 2026, la ley es de interés público y busca fomentar la prevención con participación de los sectores privado y social (Art. 1). Su eje para particulares es el Programa Interno: quien administre o posea un inmueble que reciba afluencia de personas debe elaborarlo y organizar su Unidad Interna de Protección Civil (Art. 5).",
+    "El Sistema Estatal lo forman el Consejo Estatal, la Coordinación, el Centro Estatal de Operaciones, las coordinaciones municipales, las unidades internas de empresas y dependencias y los grupos voluntarios (Art. 19). La Coordinación Estatal es órgano desconcentrado de la Secretaría de Gobierno (Art. 35). Cada municipio integra su propio sistema y reporta cada trimestre sus actividades (Art. 39)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles e instalaciones con afluencia de personas",
+      "obligacion": "Elaborar y cumplir un Programa Interno de Protección Civil y organizar su Unidad Interna; administradores, poseedores, arrendatarios y propietarios responden.",
+      "articulo": "Art. 5",
+      "cita": "están obligados a elaborar y cumplir con un Programa Interno de Protección Civil, donde regularán las acciones de prevención y organizarán su Unidad Interna de Protección Civil."
+    },
+    {
+      "sujeto": "Organizadores de eventos públicos y masivos",
+      "obligacion": "Entregar un programa específico de protección civil al menos 15 días naturales antes del evento y difundir sus medidas entre los asistentes.",
+      "articulo": "Art. 6",
+      "cita": "Previo a la realización de eventos públicos y en espacios de concentración masiva, deberán elaborarse programas específicos de protección civil, los cuales serán entregados por lo menos con 15 días naturales de anticipación a las autoridades de protección civil para su aprobación"
+    },
+    {
+      "sujeto": "Entes públicos, privados y sociales",
+      "obligacion": "Presentar cada año ante las Coordinaciones de Protección Civil la conformación de su Unidad Interna y su programa interno para análisis y aprobación.",
+      "articulo": "Art. 69",
+      "cita": "Todo ente público, privado o social tiene obligación de presentar anualmente ante las Coordinaciones de Protección Civil"
+    },
+    {
+      "sujeto": "Inmuebles con programa interno",
+      "obligacion": "Realizar al menos dos simulacros al año conforme al atlas de riesgo, bajo supervisión de las Coordinaciones, y una práctica contra incendio anual.",
+      "articulo": "Art. 92",
+      "cita": "Los simulacros deberán realizarse por lo menos dos veces al año, de acuerdo al atlas de riesgo que corresponda a las (sic) centros de población, mismos que serán supervisados por las Coordinaciones de Protección Civil"
+    },
+    {
+      "sujeto": "Brigadas de la Unidad Interna",
+      "obligacion": "Tomar cursos según la especialidad de cada brigada, incluida la capacitación para apoyar a personas con discapacidad en una evacuación.",
+      "articulo": "Art. 95",
+      "cita": "Todas las brigadas que conforman la Unidad Interna de Protección Civil en un inmueble, deberán de tomar cursos de acuerdo a la especialización de cada una de ellas, asimismo, dicha brigada será capacitada acerca de los diferentes tipos de discapacidad"
+    },
+    {
+      "sujeto": "Empresas, dependencias e inmuebles",
+      "obligacion": "Estar provistos de sistemas automáticos contra incendios, equipos de seguridad y equipo de protección personal según la ley y demás normas.",
+      "articulo": "Art. 98",
+      "cita": "Todas aquellas empresas, dependencias e inmuebles públicos, sociales o privados, deberán de estar provistos de sistemas automáticos contra incendios, equipos de seguridad y equipos de protección personal, según lo que establece esta Ley y las demás disposiciones legales aplicables."
+    },
+    {
+      "sujeto": "Unidad Interna de Protección Civil",
+      "obligacion": "Integrarse con el responsable del inmueble y del Programa Interno, jefes de edificio y de piso, y brigadas de incendio, rescate, primeros auxilios y evacuación.",
+      "articulo": "Art. 54 del Reglamento",
+      "cita": "jefes de edificio, jefes de piso y brigadistas de prevención y combate de incendios, búsqueda y rescate, primeros auxilios y evacuación, y las que resulten necesarias considerando las características específicas de cada inmueble"
+    },
+    {
+      "sujeto": "Patrones, propietarios y titulares de establecimientos",
+      "obligacion": "Capacitar al personal y dotarlo del equipo de respuesta necesario; pueden pedir asesoría a la Coordinación para capacitación y logística ante contingencias.",
+      "articulo": "Art. 56 del Reglamento",
+      "cita": "los patrones, propietarios o titulares de los establecimientos, deberán capacitar a sus empleados y dotarlos del equipo necesario de respuesta, así como solicitar la asesoría de la Coordinación, tanto para su capacitación como para el desarrollo de la logística de respuesta a las contingencias."
+    }
+  ],
+  "brigadasDuo": [
+    "El Programa Interno se elabora con la guía técnica correspondiente y puede prepararse con asesoría de las Coordinaciones de Protección Civil o de un tercero acreditado, que debe emitir carta de corresponsabilidad (Art. 5). Cada año, los entes públicos, privados y sociales presentan la conformación de su Unidad Interna y su programa (Art. 69); la autoridad responde en 60 días naturales (Art. 70).",
+    "Las brigadas se integran con personal capacitado y adiestrado del propio inmueble (Art. 94) y deben tomar cursos según su especialidad, incluida la atención a personas con discapacidad (Art. 95). Los simulacros van al menos dos veces al año y las prácticas contra incendio una vez al año (Art. 92); para que asista la autoridad se pide por escrito con dos semanas de anticipación (Art. 90)."
+  ],
+  "equipoDuo": [
+    "La ley de Aguascalientes dedica un capítulo completo a los equipos contra incendio: exige extintores suficientes (Art. 97), sistemas automáticos, equipos de seguridad y de protección personal (Art. 98), y pide que las brigadas tengan el equipo adecuado para su objetivo (Art. 96). Para dimensionarlo, la NOM-002-STPS-2010, norma federal de prevención de incendios, es la referencia técnica habitual.",
+    "En LORICA equipamos brigadas internas con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> pensado para evacuación, primeros auxilios y control de conatos. Para elegir casco, guantes, calzado y prendas de cada puesto, conviene apoyarse en la NOM-017-STPS-2024, que regula a nivel federal el equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "La ley prevé clausura temporal o definitiva, parcial o total, y multa, con un monto mayor en caso de reincidencia (Art. 148). Incumplir lo relativo al Programa Interno, a los eventos masivos o a la señalización puede sumar la clausura a la multa (Art. 149), y las multas se cobran como créditos fiscales (Art. 150)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Aguascalientes y dónde se consulta?",
+      "a": "Es la Ley de Protección Civil para el Estado de Aguascalientes, publicada el 8 de julio de 2013 y reformada por última vez el 18 de mayo de 2026; el Congreso del Estado ofrece el PDF actualizado. Su reglamento, publicado en el Periódico Oficial el 4 de agosto de 2014, se consulta en la Normateca del Gobierno del Estado."
+    },
+    {
+      "q": "¿Quién debe elaborar Programa Interno de Protección Civil en Aguascalientes?",
+      "a": "El artículo 5 obliga a administradores, gerentes, poseedores, arrendatarios o propietarios de inmuebles e instalaciones fijas y móviles que reciben afluencia de personas. Si la autoridad lo solicita, el programa se entrega en un plazo no mayor a 45 días hábiles."
+    },
+    {
+      "q": "¿Qué dice la ley sobre brigadas y simulacros?",
+      "a": "Las brigadas de la Unidad Interna se forman con personal capacitado (Art. 94) y toman cursos según su especialidad (Art. 95). Se exigen al menos dos simulacros al año y una práctica contra incendio anual (Art. 92), con una bitácora de las acciones realizadas (Art. 91)."
+    },
+    {
+      "q": "¿Qué exige la ley de Aguascalientes sobre el mantenimiento de extintores?",
+      "a": "El mantenimiento no puede espaciarse más de un año (Art. 102), la recarga procede tras cada uso o en la fecha que indique la etiqueta (Art. 103) y la prueba hidrostática de los extintores portátiles se practica al menos cada cinco años (Art. 105)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Aguascalientes?",
+      "a": "La ley pide que las brigadas tengan el equipo adecuado y necesario para su objetivo (Art. 96), sin fijar una lista. En la práctica suele incluir casco, guantes, calzado de seguridad, prenda de alta visibilidad, botiquín y extintores, definidos con el análisis de riesgo del inmueble y la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Aguascalientes · Ley de Protección Civil para el Estado de Aguascalientes (PDF)",
+      "url": "https://congresoags.gob.mx/agenda_legislativa/leyes/descargarPdf/395"
+    },
+    {
+      "nombre": "Congreso del Estado de Aguascalientes · Agenda legislativa, leyes estatales",
+      "url": "https://congresoags.gob.mx/agenda_legislativa/leyes"
+    },
+    {
+      "nombre": "Gobierno del Estado de Aguascalientes · Normateca, Reglamento de la Ley de Protección Civil para el Estado de Aguascalientes (PDF)",
+      "url": "https://eservicios2.aguascalientes.gob.mx/NormatecaAdministrador/archivos/EDO-26-27.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

@@ -62,7 +62,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre monjas y capuchas para bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir monjas: si reemplazan al cubrenuca, qué cambia entre una y dos capas, qué significa estar listada por UL, cómo se lavan y por qué conviene una por persona."
+      - "Sobre monjas nos preguntan si reemplazan al cubrenuca y qué cambia entre una y dos capas. Aquí respondemos eso, qué significa estar listada por UL, cómo se lavan y por qué conviene una por persona."
       - "Si necesitas reponer monjas de un modelo que ya usas, dinos cuál en el formulario y cuántas. Se abre WhatsApp con tu consulta sobre monjas y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

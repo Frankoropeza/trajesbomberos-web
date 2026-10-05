@@ -39,7 +39,8 @@ const modelos = d.modelosDestacados ? modelosPorId(d.modelosDestacados) : todos;
 const columnas = ['modelo', 'marca', todos.some((m) => m.tipo) ? 'tipo' : 'codigo', 'material', 'norma', 'estatus'] as const;
 const filasModelos = todos.map((modelo) => filaModelo(modelo, columnas));
 const directoryItems = [
-  ...tiles.map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
+  // Solo productos: fuera las tarjetas que remiten a otro hub (/accesorios/, /equipo-de-proteccion/…).
+  ...tiles.filter((tile) => tile.href.split('/').filter(Boolean).length > 1).map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
   ...todos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
 ];
 const guias = await guiasL2(d);

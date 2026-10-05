@@ -54,7 +54,7 @@ Esta es la carpeta que debería viajar con cualquier propuesta seria de trajes p
 
 ## Los tres motivos de descalificación más comunes
 
-**1. Certificado a nombre de quien no fabrica.** El clásico: se presenta un certificado del **material** —la tela exterior o la barrera— como si acreditara el traje. No lo acredita. La certificación del conjunto estructural es del **fabricante del conjunto terminado**, listado ante el organismo certificador. Si el nombre del certificado y el del fabricante ofertado no coinciden, es descalificación directa en casi cualquier comité que sepa lo que está leyendo.
+**1. Certificado a nombre de quien no fabrica.** El clásico: se presenta un certificado del **material** (la tela exterior o la barrera) como si acreditara el traje. No lo acredita. La certificación del conjunto estructural es del **fabricante del conjunto terminado**, listado ante el organismo certificador. Si el nombre del certificado y el del fabricante ofertado no coinciden, es descalificación directa en casi cualquier comité que sepa lo que está leyendo.
 
 **2. Falta de carta de distribuidor.** Es el documento que impide que cualquiera oferte una marca que no representa. Cuesta cero pesos y se pide con anticipación; se olvida con una frecuencia sorprendente.
 
@@ -64,7 +64,7 @@ Esta es la carpeta que debería viajar con cualquier propuesta seria de trajes p
 
 Cinco reglas que hacen la diferencia entre un pliego que protege y uno que solo genera trabajo:
 
-**Especifica por desempeño, no por marca.** Salvo justificación documentada, un pliego que nombra una marca reduce la competencia y es impugnable. En vez de nombrar, describe: composite de tres capas con capa exterior, barrera de humedad y barrera térmica declaradas por nombre comercial, y valores mínimos de TPP y THL —35 y 205 como referencia— medidos sobre el composite completo.
+**Especifica por desempeño, no por marca.** Salvo justificación documentada, un pliego que nombra una marca reduce la competencia y es impugnable. En vez de nombrar, describe: composite de tres capas con capa exterior, barrera de humedad y barrera térmica declaradas por nombre comercial. Suma valores mínimos de TPP y THL (35 y 205 como referencia) medidos sobre el composite completo.
 
 **Cita la norma vigente y su edición.** Hoy la referencia para conjunto estructural es la **NFPA 1970**, que consolidó a la NFPA 1971. Escribe "edición vigente" para no tener que modificar el pliego cada revisión, y define explícitamente si aceptas equipo certificado bajo la edición anterior. Si no lo defines, lo vas a discutir en la junta de aclaraciones.
 
@@ -91,8 +91,48 @@ No todo es responsabilidad del licitante. Los que más nos tocan ver:
 - **No presupuestar el mantenimiento.** El equipo requiere limpieza avanzada e inspección conforme a la **NFPA 1850**. Si compras cincuenta conjuntos y no contemplas su cuidado, en tres años tendrás cincuenta conjuntos en peor estado del que la norma acepta.
 - **Adjudicar sin verificar la muestra física.** Cuando el pliego lo permite, pedir muestra evita sorpresas que ningún PDF revela.
 
+## Cómo cotizar equipo para un cuerpo de bomberos municipal
+
+Antes del expediente hay una etapa que decide casi todo y que en muchos municipios se hace al revés: **cotizar para armar el presupuesto**. Un cuerpo de bomberos municipal que pide «precio de 20 trajes» sin más datos recibe cotizaciones que no se pueden comparar, y el techo presupuestal queda mal desde el principio. Este es el orden que funciona:
+
+1. **Inventario y fecha de fabricación del equipo actual.** Cuenta los conjuntos por elemento y anota la fecha de fabricación de cada etiqueta: el conjunto estructural se retira a los diez años de fabricado según la NFPA 1850. Lo que vence en el ejercicio es tu partida de reposición obligada.
+2. **Operación por elemento.** Separa quién hace ataque interior, quién atiende incendio forestal y quién rescate vehicular. Cada escenario es una familia de traje distinta ([estructural](/trajes/estructural/), [forestal](/trajes/forestal/), [extricación](/trajes/extricacion/)) y una partida distinta.
+3. **Levantamiento de tallas.** Por elemento, no por promedio. Sin tallas, el proveedor cotiza tallas estándar y el ajuste se paga después.
+4. **Partidas por pieza.** Chaquetón, pantalonera, casco, monja, guantes, botas y, si aplica, equipo de respiración autónoma. Así puedes comparar y reponer sin volver a licitar el conjunto.
+5. **Investigación de mercado con la misma solicitud.** Manda el mismo documento a por lo menos tres proveedores: operación, cantidades, tallas, norma y edición, lugar de entrega. Pide ficha técnica y estatus de certificación de cada modelo, no solo precio.
+6. **Procedimiento según monto y origen del recurso.** La ley de adquisiciones que aplica depende de dónde venga el recurso: federal, estatal o municipal. Junto con el monto, define si es adjudicación directa, invitación a cuando menos tres personas o licitación pública.
+7. **Calendario real.** Suma levantamiento de tallas, fabricación o importación, entrega y recepción con revisión de etiquetas. El equipo certificado de importación rara vez está en existencia para decenas de elementos.
+
+| Etapa | Qué pide el municipio | Qué debe entregar el proveedor |
+| --- | --- | --- |
+| Presupuesto | Cotización por partida con la misma solicitud a varios proveedores | Precio por pieza, ficha técnica, estatus normativo y tiempo de entrega por escrito |
+| Anexo técnico | Especificación por desempeño y norma con edición | Comentarios al anexo antes de publicarlo, si se los pides |
+| Procedimiento | Convocatoria o invitación según monto y ley aplicable | Expediente completo: certificado, carta de distribuidor, fichas y guía de tallas |
+| Recepción | Revisión de etiquetas, fecha de fabricación y tallas contra el contrato | Conjuntos con etiqueta legible, CFDI 4.0 y garantía por escrito |
+
+## Cómo lo resuelve LORICA
+
+Para un cuerpo de bomberos municipal, en LORICA armamos la cotización de presupuesto con la misma estructura que después pedirá el pliego. Lleva una partida por pieza, la ficha técnica del modelo, el estatus normativo tal como lo declara el fabricante (certificado con número, declarado o solo materiales) y el tiempo de entrega por escrito. Si todavía no tienes tallas, te mandamos la guía para levantarlas; y si el recurso alcanza para una parte, te proponemos el orden de reposición empezando por los conjuntos más próximos a los diez años. Los modelos con certificado UL publicado, como el [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o el [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/), llevan el número en su ficha.
+
 ## Qué te podemos mandar
 
-Si estás armando una compra —pública o corporativa— pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. En LORICA lo mandamos por escrito, aunque todavía no haya orden de compra.
+Si estás armando una compra, pública o corporativa, pide el expediente completo desde el primer mensaje: ficha técnica en formato de pliego, certificado, carta de distribuidor, reporte de laboratorio y guía de tallas. En LORICA lo mandamos por escrito, aunque todavía no haya orden de compra.
 
 Y si lo que tienes es un anexo técnico a medio redactar, mándalo: te decimos qué líneas conviene ajustar antes de publicar. Un pliego bien escrito nos conviene a todos, incluso cuando lo gane otro.
+
+## Preguntas frecuentes
+
+**¿Cómo cotiza equipo un cuerpo de bomberos municipal?** Con la misma solicitud a varios proveedores: operación de cada elemento, cantidades, tallas, norma con su edición y lugar de entrega, separada por pieza. Así las cotizaciones sirven para el presupuesto y para la investigación de mercado del procedimiento.
+
+**¿Qué documentos debe traer una propuesta de trajes para bomberos?** Ficha técnica por partida, certificado de conformidad del conjunto terminado, carta de distribuidor, reporte de laboratorio con TPP y THL, catálogo oficial, guía de tallas, carta de tiempo de entrega y datos fiscales para CFDI 4.0.
+
+**¿Qué norma se cita en una licitación de trajes estructurales?** La NFPA 1970, que consolidó a la NFPA 1971, con su edición. Conviene definir en el anexo si se acepta equipo certificado bajo la edición anterior para no discutirlo en la junta de aclaraciones.
+
+**¿Se puede nombrar una marca en el anexo técnico?** Salvo justificación documentada, no conviene: reduce la competencia y vuelve impugnable el procedimiento. Se especifica por desempeño: composite de tres capas declarado, valores de TPP y THL del conjunto y norma con edición.
+
+**¿Cuánto tarda la entrega de trajes certificados?** Depende del modelo, de las tallas y de si se fabrica o importa. Pide el plazo por escrito en la cotización e incluye en el calendario el levantamiento de tallas, que es la actividad que más retrasa las entregas.
+
+## Fuentes
+
+- [NFPA 1970, conjuntos de protección para combate estructural y de proximidad](https://www.nfpa.org/codes-and-standards/nfpa-1970-standard-development/1970) y [NFPA 1850, selección, cuidado y mantenimiento](https://www.nfpa.org/codes-and-standards/nfpa-1850-standard-development/1850).
+- Fichas de [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) y [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/): número de certificado UL declarado por el fabricante.

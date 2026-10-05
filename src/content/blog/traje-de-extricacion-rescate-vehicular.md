@@ -43,7 +43,7 @@ La pregunta no es cuál prenda “aguanta más”, sino cuál responde al riesgo
 
 ## Riesgos que definen la extricación
 
-En una colisión hay corte y punción por vidrio laminado, lámina cortada y piezas deformadas; abrasión por asfalto y habitáculo; fluidos que demandan una barrera biológica; y trabajo físico repetido, muchas veces en vía pública o bajo sol. La prenda debe permitir arrodillarse, entrar al vehículo, alcanzar controles y trabajar con guante sin acumular el calor propio de un conjunto estructural de tres capas.
+En una colisión hay corte y punción por vidrio laminado, lámina cortada y piezas deformadas, y abrasión por asfalto y habitáculo. También hay fluidos que demandan una barrera biológica y trabajo físico repetido, muchas veces en vía pública o bajo el sol. La prenda debe permitir arrodillarse, entrar al vehículo, alcanzar controles y trabajar con guante sin acumular el calor propio de un conjunto estructural de tres capas.
 
 El riesgo térmico no desaparece, pero no se debe resolver aplicando automáticamente un chaquetón estructural. La ficha de rescate técnico indica protección limitada frente a flash según modelo, no capacidad para entrar a incendio. Cuando la escena cambia a fuego estructural o atmósfera no respirable, la evaluación y el conjunto cambian antes de ingresar.
 
@@ -94,13 +94,13 @@ Forma el inventario por función y persona: conjunto o piezas asignadas, tallas,
 
 ## Prueba de movilidad y recepción
 
-Antes de asignar la dotación, úsala sobre el uniforme de estación y ensaya arrodillarse, pasar de pie a posición baja, entrar y salir de un espacio simulado, girar torso, tomar herramienta, manipular radio y caminar con bota. Observa que guante y puño no se separen, que la rodilla no limite y que casco y goggles conserven visión. La prueba no es una demostración estética: detecta talla corta, cierre que no funciona con guantes o equipo que se engancha antes de una salida.
+Antes de asignar la dotación, úsala sobre el uniforme de estación. Ensaya arrodillarse, pasar de pie a posición baja, entrar y salir de un espacio simulado, girar torso, tomar herramienta, manipular radio y caminar con bota. Observa que guante y puño no se separen, que la rodilla no limite y que casco y goggles conserven visión. La prueba no es una demostración estética: detecta talla corta, cierre que no funciona con guantes o equipo que se engancha antes de una salida.
 
 En recepción coteja modelo, talla, tela, nivel o estatus documental declarado, accesorios y estado físico contra la orden. Registra quién recibe cada pieza y cuál es el protocolo para devolverla después de salida. Esa trazabilidad permite que el próximo reemplazo mantenga la configuración que ya fue ensayada y no reabra la selección completa por una sola prenda.
 
 ## Cómo lo cotizamos
 
-Nos compartes tipo de rescate, vehículos o escenarios previstos, número de usuarios, tallas, frecuencia de salidas y equipo existente. Entregamos ficha técnica por partida para chaqueta, pantalón, overol, guantes, casco y herramienta, con el estatus que publica cada modelo. También ofrecemos compra por pieza sin mínimo, asesoría de tallas, expediente para licitación y envío a todo México.
+Nos compartes tipo de rescate, vehículos o escenarios previstos, número de usuarios, tallas, frecuencia de salidas y equipo existente. Entregamos ficha técnica por partida para chaqueta, pantalón, overol, guantes, casco y herramienta, con el estatus que publica cada modelo. Puedes pedir solo la pieza que falta, sin mínimo; revisamos tallas contigo y enviamos a todo el país.
 
 Para [cotizar trajes de extricación](/contacto/), indica si buscas dotación inicial, relevo de turno o reposición tras desgaste. Si la ficha no publica peso, código, nivel o compatibilidad que necesitas, lo señalamos para confirmarlo antes de integrar la propuesta.
 

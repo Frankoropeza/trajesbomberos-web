@@ -1,0 +1,124 @@
+{
+  "slug": "sinaloa",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Sinaloa",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial «El Estado de Sinaloa»",
+    "fecha": "2013-01-25"
+  },
+  "ultimaReforma": "2017-11-01",
+  "urlOficial": "https://gaceta.congresosinaloa.gob.mx:3001/pdfs/leyes/Ley_72.pdf",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil del Estado de Sinaloa",
+    "url": "https://media.transparencia.sinaloa.gob.mx/uploads/files/29/13REGLAMENTODELALEYDEPROTECCIONCIVILDELESTADODESINALO.pdf",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Instituto Estatal de Protección Civil de Sinaloa",
+    "articulo": "Art. 45",
+    "cita": "El Instituto tendrá a su cargo la organización, coordinación y operación del Sistema Estatal, con facultades normativas, ejecutivas, de coordinación y sancionatorias en materia de protección civil."
+  },
+  "lead": "Resumen de la Ley de Protección Civil para el Estado de Sinaloa para gerentes de planta, administradores de plazas, escuelas y hospitales: unidad interna, planes por tipo de inmueble, simulacros, seguro y diagnóstico de riesgo, con artículo y cita literal.",
+  "panorama": [
+    "Expedida por el Decreto 666 y publicada el 25 de enero de 2013, con última reforma del 1 de noviembre de 2017, la ley fija normas y bases para prevenir, mitigar, auxiliar y recuperar ante fenómenos perturbadores (Art. 1). Sus programas y actividades son obligatorios para autoridades, organizaciones y, en general, para todos los habitantes del estado (Art. 3).",
+    "La rectoría la tiene el Instituto Estatal de Protección Civil de Sinaloa, organismo descentralizado con sede en Culiacán que organiza, coordina y opera el Sistema Estatal, con facultades para sancionar (Art. 45). Cada municipio integra un sistema y un Consejo Municipal (Art. 35 y 36), y las autoridades municipales son el primer nivel de respuesta ante una emergencia."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Industrias, comercios, gasolineras y sitios de concentración",
+      "obligacion": "Constituir una Unidad Interna que ponga en marcha el programa de protección civil del inmueble.",
+      "articulo": "Art. 87",
+      "cita": "gaseras, gasolineras, almacenes, bodegas y talleres que manejen o almacenen sustancias peligrosas, y los inmuebles que por su uso y destino reciban afluencia de personas o concentraciones masivas, deberán contar con una Unidad Interna que implementará el programa correspondiente."
+    },
+    {
+      "sujeto": "Escuelas y estancias infantiles públicas y privadas",
+      "obligacion": "Integrar un Comité de Seguridad y Emergencia Escolar y un programa interno escolar autorizado y revalidado por el Instituto.",
+      "articulo": "Art. 88",
+      "cita": "Las instituciones educativas públicas y privadas de todos los niveles, incluyendo las estancias infantiles de cualquier modalidad, deberán contar con un Comité de Seguridad y Emergencia Escolar y elaborar un Programa Interno de Seguridad y Emergencia Escolar que será autorizado, revalidado y supervisado por el Instituto."
+    },
+    {
+      "sujeto": "Propietarios y administradores de esos inmuebles",
+      "obligacion": "Tener salidas de emergencia y colocar a la vista equipos de seguridad y señales informativas, preventivas, restrictivas y de obligación.",
+      "articulo": "Art. 90",
+      "cita": "Todos los inmuebles que se mencionan en los tres artículos anteriores deberán contar con salidas de emergencia; a su vez, los propietarios, administradores, arrendatarios o poseedores de dichas edificaciones, deberán colocar en sitios visibles equipos de seguridad, señales informativas, preventivas, restrictivas y de obligación."
+    },
+    {
+      "sujeto": "Sedes de espectáculos y eventos masivos",
+      "obligacion": "Presentar a la unidad municipal un Programa Específico cuando el inmueble se use para un evento distinto a su uso habitual.",
+      "articulo": "Art. 92",
+      "cita": "deberán contar con un Programa Específico que se presentará para su aprobación ante la Unidad Municipal correspondiente para eventos o espectáculos públicos, funciones y diversiones de tipo cultural, artístico, deportivo, recreativo y otros, donde se lleve a cabo la afluencia o concentración masiva de personas"
+    },
+    {
+      "sujeto": "Inmuebles de mediano o alto riesgo",
+      "obligacion": "Realizar al menos un simulacro al año en coordinación con las autoridades de protección civil.",
+      "articulo": "Art. 95",
+      "cita": "Los administradores, gerentes, poseedores, arrendatarios o propietarios de inmuebles que de acuerdo a su actividad representen mediano o alto riesgo, están obligados a realizar simulacros por lo menos una vez al año, en coordinación con las autoridades competentes."
+    },
+    {
+      "sujeto": "Establecimientos obligados a inspección estatal",
+      "obligacion": "Contratar una póliza de seguro de responsabilidad civil y daños a terceros acorde con su actividad.",
+      "articulo": "Art. 96",
+      "cita": "Los inmuebles, establecimientos o edificaciones referidas en el artículo 130 de esta Ley, deberán contar con una póliza de seguro que ampare la responsabilidad civil y daños a terceros, por su actividad."
+    },
+    {
+      "sujeto": "Comercios e industrias de bajo riesgo",
+      "obligacion": "Tener al menos un extintor ABC de 4.5 o 6 kg con mantenimiento vigente, instructivos de conducta a la vista y revisión anual de instalaciones.",
+      "articulo": "Art. 23 del Reglamento",
+      "cita": "Los establecimientos mercantiles e industriales no listados en el artículo anterior y que sean considerados de bajo riesgo, sólo deberán: I. Contar con un extintor tipo ABC de 4.5 o 6 kilogramos y respetar su vigencia de mantenimiento"
+    },
+    {
+      "sujeto": "Administradores, gerentes o propietarios de empresas",
+      "obligacion": "Capacitar a su personal en protección civil mediante programas de capacitación interna y las comisiones mixtas de seguridad e higiene.",
+      "articulo": "Art. 50 del Reglamento",
+      "cita": "Los administradores, gerentes o propietarios de empresas estarán obligados a capacitar y difundir la cultura de protección civil entre su personal para la salvaguarda de su integridad física, psicológica, así como de sus bienes y entorno"
+    }
+  ],
+  "brigadasDuo": [
+    "La ley sinaloense encarga a la Unidad Interna operar el programa de cada inmueble (Art. 87) y, en su capítulo de obligaciones de los particulares, pide capacitar al personal, practicar simulacros cada seis meses, avisar a la autoridad de las fallas detectadas y orientar a los usuarios (Art. 113). En guarderías y escuelas de nivel básico y medio superior los simulacros son al menos tres al año, con participación de padres.",
+    "Además del simulacro semestral, los inmuebles de mediano o alto riesgo deben coordinar con las autoridades al menos un ejercicio anual (Art. 95). Escuelas y hospitales trabajan con comités propios, el escolar y el hospitalario (Art. 88 y 89). No revalidar cada año el Programa Interno o no practicar los simulacros son infracciones expresas (Art. 139)."
+  ],
+  "equipoDuo": [
+    "El artículo 114 es la guía más útil para equipar: el Programa Interno debe referirse a equipos de seguridad, luces de emergencia, ubicación de extintores, rutas de evacuación, salidas de emergencia y señalización. Para calor extremo y trabajo en planta, la NOM-002-STPS-2010, norma federal, ayuda a dimensionar extintores y brigadas contra incendio.",
+    "Los Cuerpos Voluntarios de Bomberos son organismos públicos del sistema estatal (Art. 107) y reciben subsidio a través de sus patronatos (Art. 108). En LORICA equipamos a brigadas y bomberos con <a href=\"/trajes/estructural/\">trajes estructurales</a> y <a href=\"/trajes/brigadista/\">trajes para brigadista</a>, elegidos con la NOM-017-STPS-2024, norma federal de equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "El artículo 139 tipifica como infracciones no constituir unidades internas, no presentar o revalidar el Programa Interno, omitir simulacros, impedir inspecciones o no tener seguro; el Instituto y los ayuntamientos las sancionan con multa. En reincidencia la sanción pecuniaria se duplica y puede darse vista al Ministerio Público (Art. 141)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Sinaloa y dónde consulto el texto?",
+      "a": "Es la Ley de Protección Civil para el Estado de Sinaloa, publicada el 25 de enero de 2013 en el Periódico Oficial «El Estado de Sinaloa»; su última reforma anotada es del 1 de noviembre de 2017. El Reglamento vigente se publicó en 2005 bajo la ley anterior y, según el artículo tercero transitorio, sigue aplicándose en lo que no se oponga a la ley actual."
+    },
+    {
+      "q": "¿Qué inmuebles de Sinaloa deben tener Unidad Interna y programa?",
+      "a": "El artículo 87 enumera fábricas, industrias, comercios, oficinas, hoteles, cines, discotecas, terminales, plazas comerciales, gaseras, gasolineras, bodegas con sustancias peligrosas y todo inmueble con afluencia o concentración masiva de personas. Escuelas y hospitales tienen comités y planes propios (Art. 88 y 89)."
+    },
+    {
+      "q": "¿Cada cuánto se hacen simulacros en Sinaloa?",
+      "a": "El artículo 113 fija un simulacro cuando menos cada seis meses para los establecimientos sujetos a inspección, y tres al año en guarderías y escuelas de nivel básico y medio superior. Los inmuebles de mediano o alto riesgo deben coordinar al menos uno anual con las autoridades (Art. 95)."
+    },
+    {
+      "q": "¿Cómo se organizan los Cuerpos Voluntarios de Bomberos en Sinaloa?",
+      "a": "La ley los reconoce como organismos públicos integrantes de los sistemas estatal y municipales (Art. 107). El Instituto los certifica y, con esa validación, reciben subsidio estatal y municipal, que se entrega por conducto del Patronato de Administración de cada municipio (Art. 108)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Sinaloa?",
+      "a": "La ley pide que el Programa Interno considere equipos de seguridad, extintores, luces de emergencia y señalización (Art. 114). Para el personal, lo habitual es casco, guantes, calzado de seguridad, prendas de alta visibilidad y botiquín, definidos según la NOM-002-STPS-2010 y el análisis de riesgo."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Sinaloa · Ley de Protección Civil para el Estado de Sinaloa (PDF)",
+      "url": "https://gaceta.congresosinaloa.gob.mx:3001/pdfs/leyes/Ley_72.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Sinaloa · Leyes estatales",
+      "url": "https://www.congresosinaloa.gob.mx/leyes-estatales/"
+    },
+    {
+      "nombre": "Gobierno del Estado de Sinaloa · Reglamento de la Ley de Protección Civil del Estado de Sinaloa (PDF, 2005)",
+      "url": "https://media.transparencia.sinaloa.gob.mx/uploads/files/29/13REGLAMENTODELALEYDEPROTECCIONCIVILDELESTADODESINALO.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

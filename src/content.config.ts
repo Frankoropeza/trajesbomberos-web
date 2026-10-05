@@ -149,7 +149,7 @@ const categorias = defineCollection({
       meta: z.array(z.string()).max(4).default([]),
     }).strict(),
     menu: porClave(z.string()),              // etiquetas de la franja de secciones
-    secciones: porClave(duoSeccion),         // eyebrow + H2 + dúo de cada sección
+    secciones: porClave(duoSeccion).extend({ otras: duoSeccion.optional() }).strict(),  // + «otras» (familias hermanas, L3 de trajes)
     conjunto: z.object({
       titulo: z.string(),
       intro: z.string(),

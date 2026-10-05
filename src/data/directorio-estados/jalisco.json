@@ -1,14 +1,14 @@
 {
- "lead": "Jalisco reúne 42 estaciones de bomberos en 27 municipios, con mayor presencia en Zapopan y Tlajomulco de Zúñiga. Encontrarás dirección, teléfono oficial cuando existe, localización y la corporación que opera cada estación para coordinar equipo o gestiones.",
+ "lead": "Jalisco reúne 55 estaciones de bomberos en 32 municipios, con mayor presencia en Guadalajara, Zapopan y Tlajomulco de Zúñiga. Encontrarás dirección, teléfono oficial cuando existe, localización y la corporación que opera cada estación.",
  "panorama": [
-  "El servicio de bomberos en Jalisco se sustenta principalmente en corporaciones municipales, desde Ameca hasta Zapotlán el Grande. La red también incluye una unidad estatal, brigadas de PEMEX y brigadas industriales en Tequila, además de cuerpos aeroportuarios. Hay 3 centrales y 8 subestaciones, una distribución que combina mandos locales con bases para atender zonas de mayor actividad.",
-  "Zapopan concentra 6 estaciones y Tlajomulco de Zúñiga 4; junto con Guadalajara, Tonalá y San Pedro Tlaquepaque forman un bloque importante para la coordinación metropolitana. Puerto Vallarta y Tequila aportan otra concentración útil al planear dotación. Si equipas bomberos en Jalisco, conviene separar necesidades de bases urbanas, instalaciones industriales y operación aeroportuaria."
+  "El servicio de bomberos en Jalisco se sustenta en corporaciones municipales, con la Unidad Estatal de Protección Civil y Bomberos como segundo eje: además de su sede en Guadalajara, opera comandancias regionales en Puerto Vallarta, Ciudad Guzmán, San Juan de los Lagos y otros municipios. Completan la red brigadas de PEMEX, brigadas industriales en Tequila y cuerpos aeroportuarios, con 5 centrales y 21 subestaciones.",
+  "Guadalajara y Zapopan reúnen 6 estaciones cada uno y Tlajomulco de Zúñiga 5; con Tonalá y San Pedro Tlaquepaque forman el bloque de coordinación metropolitana. Puerto Vallarta y Tequila aportan otra concentración útil al planear dotación. Si equipas bomberos en Jalisco, separa necesidades de bases urbanas, comandancias regionales, instalaciones industriales y operación aeroportuaria."
  ],
  "estacionesDuo": [
-  "La Dirección de Protección Civil y Bomberos de Zapopan opera varias estaciones, mientras Tlajomulco de Zúñiga mantiene base central y subestaciones. También aparece la Unidad Estatal de Protección Civil y Bomberos de Jalisco. El listado ordena las corporaciones por municipio e indica su teléfono oficial cuando fue publicado."
+  "Bomberos Guadalajara suma bases en Jardines Alcalde, San Andrés y otras colonias; Zapopan opera estaciones urbanas y forestales, y Tlajomulco mantiene base central con subestaciones. La Unidad Estatal aparece con sus comandancias regionales. El listado ordena las corporaciones por municipio e indica su teléfono oficial cuando existe."
  ],
  "coberturaDuo": [
-  "Los incendios estructurales están declarados en 40 estaciones y el rescate vehicular en 27. Esa combinación apunta a una operación de ciudad y carretera. Los servicios forestales, materiales peligrosos y salvamento aeroportuario amplían el perfil de riesgo. El equipo debe definirse para cada intervención y no como una compra uniforme."
+  "Los incendios estructurales están declarados en 42 estaciones y el rescate vehicular en 27. Esa combinación apunta a una operación de ciudad y carretera. Los servicios forestales, materiales peligrosos y salvamento aeroportuario amplían el perfil de riesgo. El equipo debe definirse para cada intervención y no como una compra uniforme."
  ],
  "equipoDuo": [
   "La atención estructural pide protección adecuada para el fuego y el calor. Donde hay incendios forestales convienen <a href=\"/trajes/forestal/\">trajes forestales</a>; las brigadas con materiales peligrosos requieren <a href=\"/trajes/hazmat/\">equipo Hazmat</a>. Las bases aeroportuarias necesitan protección de aproximación y el rescate vehicular demanda prendas y herramientas de extricación acordes con esa labor.",
@@ -17,11 +17,11 @@
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Jalisco y dónde están?",
-   "a": "Hay 42 estaciones de bomberos localizadas en 27 municipios de Jalisco. Zapopan reúne 6 y Tlajomulco de Zúñiga 4, mientras Guadalajara, Puerto Vallarta, Tequila y otros municipios cuentan con estaciones operadas por corporaciones municipales, estatales, industriales, PEMEX o aeroportuarias."
+   "a": "Hay 55 estaciones de bomberos localizadas en 32 municipios de Jalisco. Guadalajara y Zapopan reúnen 6 cada uno y Tlajomulco de Zúñiga 5, mientras Puerto Vallarta, Tequila y otros municipios cuentan con estaciones operadas por corporaciones municipales, estatales, industriales, PEMEX o aeroportuarias."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Jalisco?",
-   "a": "Los bomberos en Jalisco son operados sobre todo por áreas municipales de protección civil y bomberos. También intervienen la Unidad Estatal de Protección Civil y Bomberos de Jalisco, brigadas de PEMEX, brigadas industriales en Tequila y cuerpos de rescate y extinción de los aeropuertos."
+   "a": "Los bomberos en Jalisco son operados sobre todo por áreas municipales de protección civil y bomberos. También intervienen la Unidad Estatal de Protección Civil y Bomberos de Jalisco, con comandancias regionales, brigadas de PEMEX, brigadas industriales en Tequila y cuerpos de rescate y extinción de los aeropuertos."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Jalisco para una gestión?",

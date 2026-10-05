@@ -1,0 +1,128 @@
+{
+  "slug": "sonora",
+  "nombreOficial": "Ley de Protección Civil para el Estado de Sonora",
+  "numero": "282",
+  "publicacion": {
+    "medio": "Boletín Oficial del Gobierno del Estado de Sonora",
+    "fecha": "2018-06-11"
+  },
+  "ultimaReforma": "2020-12-24",
+  "urlOficial": "https://gestion.api.congresoson.gob.mx/assets/archivos/2024/08/T9Qos5asmWuWX6TIPxCtzZZhI4kKGq7.pdf",
+  "reglamento": {
+    "nombre": "Reglamento de la Ley de Protección Civil para el Estado de Sonora",
+    "url": "https://proteccioncivil.sonora.gob.mx/images/2020CCV44I-1-41.pdf",
+    "ultimaReforma": null
+  },
+  "autoridadEstatal": {
+    "nombre": "Coordinación Estatal de Protección Civil",
+    "articulo": "Art. 22",
+    "cita": "La Coordinación Estatal de Protección Civil, es un organismo público descentralizado, con personalidad jurídica y patrimonio propio, sectorizado a la Secretaría de Gobierno. Tiene funciones de autoridad administrativa"
+  },
+  "lead": "La Ley 282, Ley de Protección Civil para el Estado de Sonora, obliga a negocios con afluencia masiva, manejo de combustibles o eventos al aire libre. Esta página traduce sus exigencias a tareas concretas, con artículo y cita literal de cada una.",
+  "panorama": [
+    "Publicada en el Boletín Oficial el 11 de junio de 2018, la Ley 282 sustituyó a la de 2005 y su última reforma es del 24 de diciembre de 2020. Para efectos prácticos, un lugar tiene afluencia masiva cuando puede reunir cincuenta o más personas, contando a quienes trabajan ahí (Art. 2, fr. I); a esos inmuebles y a los de riesgo se dirigen casi todas las obligaciones.",
+    "La autoridad estatal es la Coordinación Estatal de Protección Civil, organismo descentralizado sectorizado a la Secretaría de Gobierno (Art. 22). En cada municipio opera un sistema municipal integrado al estatal (Art. 43); los ayuntamientos dictaminan programas internos en su ámbito (Art. 8) y tienen a su cargo el servicio de bomberos (Art. 48)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Inmuebles con afluencia masiva o de riesgo",
+      "obligacion": "Contar con Unidad Interna y Programa Interno, someterlo a dictamen de la autoridad y revalidarlo cada año.",
+      "articulo": "Art. 65",
+      "cita": "están obligados a contar con una Unidad Interna y a elaborar un Programa Interno, en los términos de esta Ley y su Reglamento. Dicho Programa Interno deberá ser presentado ante las autoridades de protección civil competentes para su dictamen y, en su caso, aprobación y deberá revalidarse anualmente."
+    },
+    {
+      "sujeto": "Quienes manejan hidrocarburos, combustibles o explosivos",
+      "obligacion": "Presentar ante la Coordinación Estatal su Programa Interno y la integración de su Unidad Interna.",
+      "articulo": "Art. 65",
+      "cita": "Las personas físicas, morales, dependencias de la administración pública estatal y municipal que por sus actividades o excepcionalmente manejen, almacenen, transporten, distribuyan y utilicen materiales peligrosos, hidrocarburos, combustibles y explosivos en la entidad, deberán de presentar ante la Coordinación Estatal el correspondiente Programa Interno de Protección Civil"
+    },
+    {
+      "sujeto": "Sujetos obligados a Programa Interno",
+      "obligacion": "Incluir en el programa la capacitación del personal y simulacros por lo menos cada seis meses.",
+      "articulo": "Art. 67, fr. I y II",
+      "cita": "Los sujetos obligados a que se refiere el artículo 65, en su Programa Interno de Protección Civil, además, deberán contemplar: I.- Capacitar a su personal en materia de protección civil; II.- Practicar simulacros cuando menos una vez cada seis meses"
+    },
+    {
+      "sujeto": "Sujetos obligados a Programa Interno",
+      "obligacion": "Mantener un seguro de responsabilidad civil por daños a terceros, con los importes que fije el Reglamento.",
+      "articulo": "Art. 67, fr. V",
+      "cita": "Contar con un seguro de responsabilidad civil por daños a terceros, por los importes que fije el Reglamento."
+    },
+    {
+      "sujeto": "Organizadores de espectáculos al aire libre",
+      "obligacion": "Presentar a la Coordinación Estatal un Programa Especial al menos cinco días hábiles antes del espectáculo.",
+      "articulo": "Art. 68",
+      "cita": "Los organizadores de espectáculos públicos de concentración masiva de personas en lugares abiertos y de duración temporal, deberán presentar ante la Coordinación Estatal para su aprobación un Programa Especial de Protección Civil, por lo menos con cinco días hábiles de anticipación al inicio del espectáculo."
+    },
+    {
+      "sujeto": "Promotores de obras en inmuebles obligados",
+      "obligacion": "Obtener la autorización del diagnóstico de riesgo antes de construir o remodelar; sin ella no hay licencia de construcción.",
+      "articulo": "Art. 71",
+      "cita": "Las autoridades municipales competentes no podrán expedir la licencia de construcción sin que los solicitantes acrediten la autorización a que se refiere el primer párrafo de este artículo."
+    },
+    {
+      "sujeto": "Responsables de inmuebles del Art. 65 de la Ley",
+      "obligacion": "Apoyar a la Unidad Interna en la formación, organización, capacitación y equipamiento de las brigadas de emergencia y en la realización de simulacros.",
+      "articulo": "Art. 50, fr. II del Reglamento",
+      "cita": "Apoyar, en su caso, a la Unidad Interna de Protección Civil para la formación, organización, capacitación y equipamiento de las brigadas de emergencia, así como en la realización de simulacros"
+    },
+    {
+      "sujeto": "Empresas que capacitan a trabajadores y brigadistas",
+      "obligacion": "Cubrir como mínimo inducción a la protección civil, primeros auxilios y RCP, combate de incendios, evacuación y señalética, y búsqueda y rescate.",
+      "articulo": "Art. 99 del Reglamento",
+      "cita": "Las capacitaciones en materia de Protección Civil comprenderán por lo menos los siguientes temas: Inducción a la Protección Civil; primeros auxilios y reanimación cardiopulmonar (RCP); prevención y combate de incendios; evacuación de inmuebles y señalética; búsqueda y rescate"
+    }
+  ],
+  "brigadasDuo": [
+    "Sonora define con precisión qué es una brigada: personas capacitadas y adiestradas en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, designadas dentro de la Unidad Interna para ejecutar lo que marca el Programa Interno (Art. 2, fr. XIV). El programa debe prever su capacitación y un simulacro al menos cada seis meses (Art. 67).",
+    "Tras cada simulacro hay que avisar a la autoridad de las fallas u omisiones detectadas, y en escuelas de nivel básico y medio superior se exigen tres ejercicios al año (Art. 67). La capacitación puede darla personal propio o una empresa dada de alta ante la Coordinación Estatal (Art. 72). No constituir o no capacitar la Unidad Interna es infracción (Art. 93)."
+  ],
+  "equipoDuo": [
+    "Según el artículo 66, el Programa Interno debe describir equipos de seguridad, luces de emergencia, ubicación de extintores, rutas y salidas de emergencia, señalización y zonas de seguridad. Para brigadas que operan con temperaturas altas buena parte del año, la NOM-002-STPS-2010 es la norma federal que ordena extintores y equipo contra incendio.",
+    "El servicio de bomberos es municipal y sus uniformes e insignias los fijan los reglamentos de cada ayuntamiento (Art. 48 y 50). En LORICA fabricamos <a href=\"/trajes/estructural/\">trajes estructurales</a> para cuerpos municipales y <a href=\"/trajes/brigadista/\">trajes para brigadista</a> para unidades internas, conforme a la NOM-017-STPS-2024, norma federal de equipo de protección personal."
+  ],
+  "sancionesDuo": [
+    "El artículo 93 lista las infracciones, entre ellas no revalidar el Programa Interno, omitir simulacros, carecer de seguro, no informar al público en espectáculos o violar una suspensión; la Coordinación Estatal y los ayuntamientos las castigan con multa, graduada por gravedad y reincidencia (Art. 94)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Sonora y dónde consulto el texto?",
+      "a": "Es la Ley 282, Ley de Protección Civil para el Estado de Sonora, publicada el 11 de junio de 2018 en el Boletín Oficial; su última reforma se publicó el 24 de diciembre de 2020. El PDF está en el portal de leyes del Congreso, y su Reglamento, publicado en el Boletín Oficial del 1 de junio de 2020, en el sitio de la Coordinación Estatal de Protección Civil."
+    },
+    {
+      "q": "¿Qué negocios de Sonora deben tener Unidad Interna y Programa Interno?",
+      "a": "El artículo 65 obliga a establecimientos que concentren afluencia masiva de personas o representen un riesgo, y a quienes manejen materiales peligrosos, hidrocarburos, combustibles o explosivos. El programa se somete a dictamen y se revalida cada año."
+    },
+    {
+      "q": "¿Qué dice la ley sobre brigadas y simulacros?",
+      "a": "La brigada forma parte de la Unidad Interna y se capacita en primeros auxilios, conatos de incendio, evacuación y rescate (Art. 2). El Programa Interno debe prever capacitación del personal y simulacros por lo menos cada seis meses, con aviso a la autoridad de las fallas detectadas (Art. 67)."
+    },
+    {
+      "q": "¿Desde cuántas personas se considera afluencia masiva en Sonora?",
+      "a": "El artículo 2, fracción I, la define como la concurrencia de cincuenta o más personas en un establecimiento, inmueble o edificación, incluyendo a quienes trabajan ahí. La capacidad se calcula con base en la superficie del lugar, así que conviene revisarla también en locales medianos."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Sonora?",
+      "a": "La ley no enumera prendas; pide que el Programa Interno ubique extintores, equipos de seguridad y luces de emergencia (Art. 66). Por sus funciones, una brigada suele requerir casco, guantes, calzado de seguridad, prendas de alta visibilidad, botiquín y extintores, según la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Sonora · Ley de Protección Civil para el Estado de Sonora (PDF)",
+      "url": "https://gestion.api.congresoson.gob.mx/assets/archivos/2024/08/T9Qos5asmWuWX6TIPxCtzZZhI4kKGq7.pdf"
+    },
+    {
+      "nombre": "Congreso del Estado de Sonora · Publicación de la ley",
+      "url": "https://congresoson.gob.mx/publicacion-leyes?id=145"
+    },
+    {
+      "nombre": "Congreso del Estado de Sonora · Leyes estatales",
+      "url": "https://congresoson.gob.mx/leyes"
+    },
+    {
+      "nombre": "Coordinación Estatal de Protección Civil de Sonora · Reglamento de la Ley de Protección Civil para el Estado de Sonora (PDF)",
+      "url": "https://proteccioncivil.sonora.gob.mx/images/2020CCV44I-1-41.pdf"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

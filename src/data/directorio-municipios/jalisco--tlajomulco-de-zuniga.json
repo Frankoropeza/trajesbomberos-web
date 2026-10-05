@@ -1,28 +1,28 @@
 {
- "lead": "Las estaciones de bomberos en Tlajomulco de Zúñiga son cuatro: la base central y dos subestaciones municipales, más el cuerpo de rescate del aeropuerto internacional. Revisa domicilios, teléfonos oficiales y ubicación de cada una.",
+ "lead": "Las estaciones de bomberos en Tlajomulco de Zúñiga son cinco: la base central y tres subestaciones municipales, más el cuerpo de rescate del aeropuerto internacional. Revisa domicilios, teléfonos oficiales y ubicación de cada una.",
  "panorama": [
-  "La Dirección de Protección Civil y Bomberos de Tlajomulco de Zúñiga opera desde su Base Central en Mirador del Valle, sobre el Circuito Metropolitano, con subestaciones en Rancho Alegre y Hacienda Santa Fe. Dentro del municipio trabaja también el CREI del Aeropuerto Internacional Miguel Hidalgo y Costilla, dedicado al salvamento aeroportuario.",
-  "Si coordinas capacitación o compras, piensa en dos lógicas distintas. Las bases municipales se reparten entre colonias como Rancho Alegre y Hacienda Santa Fe, mientras que el CREI responde a la operación del aeropuerto, con su propia cadena de mando y sus propios requisitos de equipo."
+  "La Dirección de Protección Civil y Bomberos de Tlajomulco de Zúñiga opera desde su Base Central en Mirador del Valle, sobre el Circuito Metropolitano, con subestaciones en Rancho Alegre, Hacienda Santa Fe y San Sebastián El Grande. Dentro del municipio trabaja también el CREI del Aeropuerto Internacional Miguel Hidalgo y Costilla, dedicado al salvamento aeroportuario.",
+  "Si coordinas capacitación o compras, piensa en dos lógicas distintas. Las bases municipales se reparten entre colonias como Rancho Alegre y Hacienda Santa Fe y llegan hasta San Sebastián El Grande, junto a la presa El Guayabo; el CREI responde a la operación del aeropuerto, con su propia cadena de mando y sus propios requisitos de equipo."
  ],
  "coberturaDuo": [
-  "Tres de las cuatro estaciones son municipales y todas atienden incendio estructural. Las bases de la dirección municipal suman rescate vehicular y atención prehospitalaria; la central agrega combate forestal y capacitación, y el aeropuerto aporta la única respuesta a materiales peligrosos."
+  "Cuatro de las 5 estaciones son municipales y el incendio estructural es el servicio más declarado. Rancho Alegre y Hacienda Santa Fe suman rescate vehicular y atención prehospitalaria; la central agrega combate forestal y capacitación, que también ofrece San Sebastián El Grande, y el CREI cubre materiales peligrosos."
  ],
  "equipoDuo": [
-  "Con incendio estructural en toda la red, la dotación empieza por el <a href=\"/trajes/estructural/\">traje estructural</a>. La Base Central, que también combate incendio forestal, necesita <a href=\"/trajes/forestal/\">trajes forestales</a> ligeros para trabajo en brecha, y el rescate vehicular de las bases pide herramientas de corte y separación.",
+  "Con incendio estructural en casi toda la red, la dotación empieza por el <a href=\"/trajes/estructural/\">traje estructural</a>. La Base Central, que también combate incendio forestal, necesita <a href=\"/trajes/forestal/\">trajes forestales</a> ligeros para trabajo en brecha, y el rescate vehicular de las bases pide herramientas de corte y separación.",
   "LORICA arma la cotización de Tlajomulco de Zúñiga partida por partida, con especificación técnica de cada prenda y el expediente documental que exige una licitación municipal. Facturamos con CFDI 4.0, no pedimos compra mínima y enviamos a la base que indiques."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Tlajomulco de Zúñiga y dónde se ubican?",
-   "a": "Son cuatro. La Base Central está en Mirador del Valle, sobre el Circuito Metropolitano Vicente Fernández Gómez; las subestaciones, en Paseo Rancho Alegre y en Boulevard Tegucigalpa, colonia Hacienda Santa Fe. El CREI opera en el aeropuerto."
+   "a": "Son cinco. La Base Central está en Mirador del Valle, sobre el Circuito Metropolitano Vicente Fernández Gómez; las subestaciones, en Paseo Rancho Alegre, en Boulevard Tegucigalpa (Hacienda Santa Fe) y en San Sebastián El Grande, junto a la presa El Guayabo. El CREI opera en el aeropuerto."
   },
   {
    "q": "¿Quién está a cargo de los bomberos en Tlajomulco de Zúñiga?",
-   "a": "Las tres bases urbanas dependen de la Dirección de Protección Civil y Bomberos de Tlajomulco de Zúñiga. El CREI es un cuerpo aparte, del Aeropuerto Internacional Miguel Hidalgo y Costilla, y atiende la operación aérea."
+   "a": "Las cuatro bases municipales dependen de la Dirección de Protección Civil y Bomberos de Tlajomulco de Zúñiga. El CREI es un cuerpo aparte, del Aeropuerto Internacional Miguel Hidalgo y Costilla, y atiende la operación aérea."
   },
   {
    "q": "¿Cómo me comunico con los bomberos en Tlajomulco de Zúñiga para una gestión?",
-   "a": "La Base Central de Mirador del Valle y la de Hacienda Santa Fe tienen teléfono oficial publicado; úsalos para capacitaciones, visitas o trámites. La de Rancho Alegre no lo publica. Ante cualquier emergencia, llama al 911."
+   "a": "La Base Central de Mirador del Valle y la de Hacienda Santa Fe tienen teléfono oficial publicado; úsalos para capacitaciones, visitas o trámites. Las de Rancho Alegre y San Sebastián El Grande no lo publican. Ante cualquier emergencia, llama al 911."
   },
   {
    "q": "¿Cómo adquiere equipo la corporación de bomberos de Tlajomulco de Zúñiga?",

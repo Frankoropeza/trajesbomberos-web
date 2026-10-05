@@ -94,7 +94,21 @@ No dejes un par húmedo o contaminado dentro de una bolsa o compartimiento: la c
 
 Para [rescate y extricación](/guantes/guante-rescate-extricacion/) se valora destreza y protección específica de la maniobra; para [guante forestal](/guantes/guante-forestal/) se evalúa exterior, marcha y calor de línea. La guía de [traje de extricación](/blog/traje-de-extricacion-rescate-vehicular/) recuerda que cada operación cambia el conjunto.
 
-En extricación, una palma muy voluminosa puede impedir distinguir un control pequeño, liberar un conector o mantener sujeción con materiales propios de la escena; por eso se pide el modelo para esa maniobra, no un estructural “más resistente”. En trabajo forestal, ceniza, tierra, herramientas de línea y desplazamiento cambian dónde se desgasta el par y cómo se necesita mover los dedos. La [comparación de botas de bombero](/blog/botas-de-bombero-modelos-comparados/) sirve para revisar que guante, bota y ropa respondan a la misma operación exterior o estructural, sin transferir funciones entre familias.
+En extricación, una palma muy voluminosa puede impedir distinguir un control pequeño, liberar un conector o mantener sujeción con materiales propios de la escena. Por eso se pide el modelo para esa maniobra, no un estructural “más resistente”. En trabajo forestal, ceniza, tierra, herramientas de línea y desplazamiento cambian dónde se desgasta el par y cómo se necesita mover los dedos. La [comparación de botas de bombero](/blog/botas-de-bombero-modelos-comparados/) sirve para revisar que guante, bota y ropa respondan a la misma operación exterior o estructural, sin transferir funciones entre familias.
+
+## Guantes químicos para hazmat y la comparativa completa
+
+Hay una quinta familia que no se parece a las otras cuatro: el **guante químico** para materiales peligrosos. No se elige por calor ni por corte, sino por la sustancia: permeación, degradación y penetración frente a un agente concreto, con su concentración, temperatura y tiempo de contacto. Un guante estructural de cuero con barrera no es un guante químico, y un guante químico no protege de la flama. Si tu corporación atiende fugas o derrames, la selección empieza en la [ficha de guantes químicos](/trajes/hazmat/guantes-quimicos/) y en la tabla de compatibilidad del fabricante.
+
+| Guante | Para qué operación | Qué lo define | Referencia normativa | Qué no hace |
+| --- | --- | --- | --- | --- |
+| [Estructural](/guantes/guante-estructural/) | Ataque interior en edificaciones | Capas, barrera de humedad, puño y estatus declarado | NFPA 1970 (antes NFPA 1971) | No da destreza fina para rescate |
+| [Forestal](/guantes/guante-forestal/) | Línea de fuego y brecha | Movilidad, palma y puño para herramienta de campo | NFPA 1950 (antes NFPA 1977) | No es para ataque interior |
+| [Rescate y extricación](/guantes/guante-rescate-extricacion/) | Rescate vehicular y técnico | Agarre, resistencia a corte y destreza | NFPA 1950 (antes NFPA 1951) para rescate técnico | No presume protección térmica estructural |
+| [Químico (hazmat)](/trajes/hazmat/guantes-quimicos/) | Fuga, derrame o salpicadura química | Compatibilidad del material con el agente | Tabla de compatibilidad del fabricante y EN ISO 374 como referencia | No protege de calor ni de corte por sí solo |
+| [Brigada](/guantes/guante-brigadista/) | Conato en centro de trabajo | Material, refuerzos y talla | NOM-002-STPS-2010, numeral 5.9, conforme al análisis de riesgo | No autoriza ataque interior |
+
+La regla de compra que sale de la tabla: **un guante por operación, no un guante para todo**. Una corporación que hace ataque interior, rescate vehicular y atiende derrames necesita al menos tres pares por elemento, cada uno con su ficha.
 
 ## Cómo lo cotizamos
 
@@ -116,7 +130,10 @@ Para [cotizar guantes de protección](/contacto/), incluye el requisito técnico
 
 **¿Cuándo se retira?** Ante daño, contaminación persistente o pérdida de función.
 
+**¿Qué diferencia hay entre un guante estructural, uno forestal, uno de extricación y uno para hazmat?** La operación. El estructural tiene capas y barrera para ataque interior; el forestal prioriza movilidad para línea de fuego; el de extricación da agarre y resistencia a corte; el químico se elige por compatibilidad con la sustancia.
+
 ## Fuentes
 
 - [Firemax VI](/guantes/romak-firemax-vi/), [FPGS](/guantes/skold-fpgs/) y [Fire Pro II](/guantes/veridian-fire-pro-ii/): `src/lib/catalogo/data/guantes.ts`.
 - [Capucha de bombero](/blog/capucha-de-bombero-tradicional-vs-antiparticulas/): integración de interfaces del conjunto.
+- [NFPA 1970](https://www.nfpa.org/codes-and-standards/nfpa-1970-standard-development/1970) y [NFPA 1950](https://www.nfpa.org/codes-and-standards/nfpa-1950-standard-development/1950) (nfpa.org); [NOM-002-STPS-2010 (DOF)](https://dof.gob.mx/normasOficiales/4228/stps/stps.htm), numeral 5.9.

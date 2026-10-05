@@ -20,9 +20,9 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "seccion": "equipo-de-respiracion-autonoma",
       "nombre": "ERA para combate de incendios",
       "nombreCard": "ERA de combate",
-      "title": "ERA para combate de incendios | México",
-      "description": "ERA para combate de incendios: autonomía nominal, PASS, alarmas, máscara y referencia NFPA 1970 para revisar una cotización institucional.",
-      "lead": "Cotizamos ERA de circuito abierto para ataque interior con máscara, cilindro, reguladores y PASS; para combate estructural tomamos NFPA 1970 como referencia y definimos contigo la autonomía nominal de la guardia.",
+      "title": "ERA para combate de incendios con PASS y alarmas",
+      "description": "ERA para combate de incendios: autonomía nominal, PASS, alarmas, máscara y referencia NFPA 1970 para revisar una cotización institucional de bomberos.",
+      "lead": "El ERA de combate es el equipo de respiración autónoma de circuito abierto con el que se entra a humo y gases: máscara de cara completa, reguladores, cilindro y alarmas trabajando como un solo sistema.",
       "imagen": {
         "src": "/images/catalogo/era/tipo-era-de-combate.avif",
         "alt": "Equipo de respiración autónoma para combate de incendios",
@@ -32,46 +32,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "ERA de combate para ataque interior",
+          "eyebrow": "Qué es",
+          "h2": "Aire propio para entrar a una atmósfera peligrosa",
           "parrafos": [
-            "Cotizamos ERA de combate para tu corporación cuando la entrada enfrenta humo, gases o atmósferas IDLH. Elegimos circuito abierto con máscara de cara completa, cilindro, reguladores y PASS según la maniobra; para ataque interior pedimos como referencia NFPA 1970, que absorbió NFPA 1981 y NFPA 1982. Define desde tu pliego si la partida será para ataque, rescate o relevo y no mezcles ese alcance con un ERA industrial.",
-            "Surtimos configuraciones con 30, 45 o 60 minutos nominales y verificamos que tu operación pueda recargar aire respirable grado D o superior. Si tus relevos son cortos, elige la autonomía que permita movilidad y cambio ordenado; si la ruta consume más aire, pide cilindro de fibra de carbono a 4,500 psi y planea la reserva. La marca en minutos sirve para organizar aire, no para prometer tiempo dentro de una estructura."
+            "El ERA de combate da aire respirable cuando el entorno no lo tiene: humo, gases tóxicos o falta de oxígeno. El usuario respira desde el cilindro a través de reguladores, y la máscara sella la cara para que no entre nada del exterior.",
+            "Cilindro, reguladores, máscara, arnés y alarmas se diseñan para funcionar juntos. Por eso un ERA se cotiza como conjunto: cambiar una pieza por otra de distinta familia puede afectar el sello, la conexión o la lectura de presión."
           ]
         },
         {
-          "h2": "Partida de ERA de combate",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Autonomía, conexión y relevos",
           "parrafos": [
-            "En la cotización escribimos cada componente del conjunto, porque PASS, manómetro y válvula cambian la partida aunque el cilindro diga 60 minutos. Pídenos el modelo completo y la documentación declarada; nosotros cotejamos máscara, regulador y espaldera antes de entregar. Elige un segundo cilindro por usuario si tu guardia necesita relevo, o concentra la compra en la configuración básica cuando tu programa ya cuenta con reserva compatible.",
-            "Para evitar una orden ambigua, deja estos datos por partida y confirma la conexión con la espaldera que ya usa tu estación. Si compras el Phantöm, escribe SCBA-P60FC y no solo ERA de 60 minutos; así cotizamos el mismo conjunto de Sköld y no una combinación ajena."
+            "Los 30, 45 o 60 minutos son nominales: sirven para planear el aire, no para prometer tiempo dentro de una estructura, porque el consumo real cambia con el esfuerzo. Un cilindro mayor da más margen, pero también pesa más durante toda la maniobra.",
+            "Decide también si cada usuario tendrá un cilindro de relevo y cómo vas a recargar. La estación necesita aire respirable grado D o superior; sin esa capacidad, un segundo cilindro por usuario resuelve menos de lo que parece."
           ],
           "lista": [
-            "Modelo Sköld Phantöm SCBA-P60FC",
-            "Cilindro de fibra de carbono a 4,500 psi",
-            "Autonomía nominal de 60 minutos",
-            "Máscara panorámica de silicón",
-            "Reguladores de primera y segunda etapa",
-            "PASS, prealarma y alarma de baja presión"
+            "Referencia: NFPA 1970",
+            "Autonomía: 30, 45 o 60 minutos nominales",
+            "Cilindro: fibra de carbono a 4,500 psi",
+            "Máscara: cara completa con prueba de ajuste",
+            "Alarmas: prealarma y baja presión",
+            "Recarga: aire respirable grado D o superior"
           ]
         },
         {
-          "h2": "Modelo Sköld para tu conjunto",
+          "eyebrow": "En servicio",
+          "h2": "Revisión antes de cada guardia",
           "parrafos": [
-            "Surtimos el Sköld Phantöm, código SCBA-P60FC, con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi. Su máscara panorámica de silicón hipoalergénico declara visión de 180° y doble sello; pruébala con casco, capucha y chaquetón antes de fijar tallas. Elige este modelo si tu orden requiere regulador de demanda con conexión rápida, manómetro análogo y una espaldera que carga en la cadera.",
-            "El Phantöm integra malla y correas de Nomex/Kevlar de cinco puntos, mica de policarbonato antirrayas y antiempaño, manija de arrastre y valija de ABS. Para tu brigada, pide la prueba de colocación con guantes y revisa que la banda de cilindro no altere el cuello del traje. La referencia del fabricante es NFPA edición 1997 y CE EN 137:2006; trátala como declarada y solicita su documento de conformidad."
-          ]
-        },
-        {
-          "h2": "Pliegos claros para ERA de combate",
-          "parrafos": [
-            "Vemos tres fallas repetidas: pedir solo 60 minutos, omitir la conexión y llamar NFPA vigente a una referencia NFPA edición 1997. En tu pliego escribe SCBA-P60FC, 4,500 psi, cilindro de fibra de carbono y estatus declarado acorde a NFPA edición 1997 y CE EN 137:2006. Así te cotizamos el Phantöm publicado y evitas recibir un conjunto con otra válvula o alcance documental.",
-            "También llegan órdenes que separan máscara de silicón, regulador de demanda y PASS sin confirmar que formen el mismo sistema. Escríbenos la partida como conjunto Sköld con máscara panorámica, reguladores de dos etapas, prealarma y alarma de baja presión; nosotros revisamos compatibilidad con casco y capucha. Si tu requisito es NFPA 1970, dilo en el pliego y pide el respaldo aplicable, pues una declaración antigua no resuelve ese requisito."
-          ]
-        },
-        {
-          "h2": "Inspección y servicio del ERA",
-          "parrafos": [
-            "Antes de guardia revisamos con tu personal presión, válvula, acople del regulador, manómetro, PASS y alarmas de baja presión del SCBA-P60FC. Ponte máscara, casco y capucha, mueve cuello y brazos, y retira el conjunto si el doble sello de silicón pierde ajuste o la mica de policarbonato impide visión. Anota presión inicial, número de serie y anomalías para que la siguiente guardia reciba una unidad identificada.",
-            "Después de una intervención, limpia máscara, válvula de exhalación, correas Nomex/Kevlar y banda de cilindro con el método del fabricante. Aparta el Phantöm que reciba golpe, calor, contaminación, fuga o alarma anormal, y controla el cilindro de 4,500 psi por su etiqueta DOT y prueba hidrostática. No reincorpores componentes intercambiados sin confirmar el acople; te ayudamos a pedir el repuesto compatible con la configuración autorizada."
+            "Antes de la guardia se revisan presión, válvula, acople del regulador, manómetro y alarmas. Después, el usuario se pone máscara, casco y capucha, mueve cuello y brazos, y confirma que el sello se mantiene y que la mica permite ver bien.",
+            "Tras una intervención, limpia máscara y correas con el método del fabricante y aparta cualquier unidad con golpe, calor, fuga o alarma anormal. El cilindro se controla por su etiqueta DOT y su fecha de prueba hidrostática."
           ]
         }
       ],
@@ -107,12 +97,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "faq": [
         {
-          "q": "¿Qué autonomía conviene?",
-          "a": "Se define por evaluación de riesgo, consumo esperado, peso y capacidad de recarga; 30, 45 y 60 minutos son valores nominales."
+          "q": "¿Qué autonomía de ERA conviene para combate?",
+          "a": "Depende del riesgo, del consumo esperado, del peso que puede cargar el personal y de tu capacidad de recarga. Los 30, 45 y 60 minutos son valores nominales, no tiempos garantizados."
         },
         {
-          "q": "¿El PASS reemplaza al compañero?",
-          "a": "No. Es una alarma; la entrada, comunicación y rescate siguen requiriendo procedimiento y supervisión."
+          "q": "¿El PASS reemplaza al compañero de entrada?",
+          "a": "No. El PASS es una alarma que avisa si el usuario deja de moverse; la entrada en pareja, la comunicación y el rescate siguen dependiendo del procedimiento y del mando."
+        },
+        {
+          "q": "¿Qué norma declara el Sköld Phantöm?",
+          "a": "Sköld lo declara acorde a NFPA edición 1997 y CE EN 137:2006. Si tu pliego exige NFPA 1970, dilo desde el inicio y pide el respaldo correspondiente, porque una declaración anterior no cubre ese requisito."
+        },
+        {
+          "q": "¿Puedo usar un ERA industrial para ataque interior?",
+          "a": "No. Un ERA con certificación NIOSH para uso industrial no sustituye a uno de combate estructural. Para fuego interior la referencia es NFPA 1970."
         }
       ],
       "relacionados": [
@@ -124,18 +122,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "30–60 min"
       ],
       "resumen": [
-        "El ERA de combate reúne máscara, reguladores, PASS y cilindro de fibra de carbono para entradas en atmósferas IDLH; surtimos el Sköld Phantöm SCBA-P60FC de 60 minutos nominales a 4,500 psi.",
-        "Cotizamos el conjunto con conexión, máscara panorámica y documentación declarada. Mándanos por WhatsApp tu requisito NFPA 1970, casco, capucha y esquema de relevos para revisar si la configuración responde a tu guardia."
-      ]
+        "Para ataque interior la referencia es NFPA 1970, que absorbió a las NFPA 1981 y 1982. Surtimos el Sköld Phantöm SCBA-P60FC, con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi.",
+        "La compra se decide por conjunto, no por minutos. Revisamos contigo relevos, capacidad de recarga y compatibilidad con casco, capucha y chaquetón antes de cerrar la configuración."
+      ],
+      "duos": {
+        "ficha": [
+          "Una compra de ERA de combate debe especificar cilindro, autonomía, máscara, regulador, arnés, alarmas, manómetro y conexiones. La referencia vigente es NFPA 1970, que absorbió a las normas 1981 y 1982.",
+          "También conviene prever la prueba con capucha, casco y chaquetón, porque esas interfaces pueden alterar el sello, la visión o el acceso a la válvula. Pide los criterios de aceptación por escrito antes de recibir la partida."
+        ],
+        "errores": [
+          "Casi todos los errores con ERA vienen de tratarlo como una suma de piezas y no como un sistema. Minutos, conexión y alcance normativo se deciden juntos.",
+          "Antes de asignar una unidad, haz la prueba funcional con presión, regulador, alarmas, capucha, casco y guantes de la cuadrilla."
+        ],
+        "modelos": [
+          "Para combate surtimos el Sköld Phantöm SCBA-P60FC, con cilindro de fibra de carbono de 60 minutos a 4,500 psi. Trae máscara panorámica de silicón con visión de 180° y doble sello, y reguladores de primera y segunda etapa.",
+          "Su ficha muestra la norma tal como la declara Sköld. Si tu requisito es NFPA 1970, lo revisamos contigo antes de cotizar para que la partida no quede corta."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre autonomía, PASS, normas y diferencias con el ERA industrial.",
+          "Si nos compartes cuántos usuarios son, qué ERA usan hoy y cómo recargan, te decimos qué configuración conviene revisar."
+        ]
+      }
     },
     {
       "slug": "cilindros-de-fibra-de-carbono",
       "seccion": "equipo-de-respiracion-autonoma",
       "nombre": "Cilindros de fibra de carbono para ERA",
       "nombreCard": "Cilindros de fibra de carbono",
-      "title": "Cilindros de fibra de carbono para ERA | México",
-      "description": "Cilindros de fibra de carbono para ERA: presión de 4,500 psi, duración nominal, etiqueta DOT, válvulas, conexiones y prueba hidrostática.",
-      "lead": "Cotizamos cilindros de fibra de carbono a 4,500 psi como parte del ERA: definimos contigo la autonomía nominal, la válvula y el acople que acepta tu espaldera antes de surtir la partida.",
+      "title": "Cilindros de fibra de carbono para ERA de 4,500 psi",
+      "description": "Cilindros de fibra de carbono para ERA: 4,500 psi, duración nominal, etiqueta DOT, válvula, conexión y prueba hidrostática. Cotiza con ficha técnica.",
+      "lead": "El cilindro de fibra de carbono guarda el aire del ERA a 4,500 psi. Pesa menos que uno metálico de la misma capacidad, y su válvula y conexión tienen que coincidir con la espaldera que ya usa tu equipo.",
       "imagen": {
         "src": "/images/catalogo/era/tipo-cilindros-de-fibra-de-carbono.avif",
         "alt": "Cilindro de fibra de carbono para equipo de respiración autónoma",
@@ -145,17 +161,20 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Cilindros de fibra de carbono para ERA",
+          "eyebrow": "Qué es",
+          "h2": "Aire de reserva que se monta en el ERA",
           "parrafos": [
-            "Cotizamos cilindros de fibra de carbono para corporaciones, brigadas industriales y espacios confinados cuando necesitan aire de reserva compatible con su ERA. Trabajamos configuraciones de 4,500 psi con 30, 45 o 60 minutos nominales y conservamos la etiqueta DOT como referencia de servicio. Elige la autonomía por tu ruta, relevo y capacidad de carga; si el conjunto es para combate, pide que se pruebe con el arnés, casco y traje de esa guardia.",
-            "Antes de incluir un cilindro en tu partida, revisamos válvula, conexión roscada o rápida y el cierre en la espaldera del ERA existente. Si tu programa ya maneja un acople autorizado, pídelo igual; si vas a renovar el conjunto, cotizamos la interfaz completa en lugar de suponer compatibilidad por la fibra de carbono. La etiqueta DOT, la presión de 4,500 psi y la autonomía nominal deben quedar visibles y coincidir con el uso que definiste."
+            "La fibra de carbono permite almacenar aire a 4,500 psi con menos peso, algo que se agradece en cada relevo. Aun así, el cilindro es solo una parte del ERA: la válvula, la rosca o el acople rápido y la banda de sujeción deciden si entra en tu espaldera.",
+            "Por eso no hay un cilindro universal. Cuando un cuerpo renueva todo su equipo cotizamos el conjunto completo; cuando solo necesita reserva, partimos del modelo de ERA que ya tiene."
           ]
         },
         {
-          "h2": "Cotización de cilindros de fibra de carbono",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Autonomía, válvula y conexión",
           "parrafos": [
-            "En nuestra cotización escribimos los datos de cada cilindro porque 60 minutos nominales no identifican por sí solos una válvula ni un montaje. Pídenos la presión, el acople y la autonomía que requiere tu operación; nosotros cotejamos esos datos con la espaldera antes de surtir. Elige cilindros de reemplazo si tu inventario ya tiene una familia compatible, o pide conjunto ERA cuando aún no está definida la conexión.",
-            "Para que tu orden corresponda al cilindro que recibes, registra por partida los campos siguientes y comparte la información de tu ERA. Si el destino es una entrada de combate, agrega la referencia NFPA 1970 aplicable; si es brigada industrial, conserva NIOSH 42 CFR Parte 84 solo cuando corresponda al modelo. Así cotizamos con datos verificables y no con una descripción genérica de cilindro."
+            "Elige la autonomía nominal por tu ruta y tus relevos, sin tomarla como duración garantizada. Después confirma válvula y conexión: roscada en equipos como el MSA G1 Industrial, o la que acepte el ERA de combate de tu corporación.",
+            "Si el cilindro es para combate, anota la referencia NFPA 1970 que aplique a tu ERA. Si es para una brigada industrial, conserva la certificación NIOSH solo cuando el modelo la declare."
           ],
           "lista": [
             "Construcción: fibra de carbono",
@@ -167,24 +186,11 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
           ]
         },
         {
-          "h2": "Cilindros que configuramos con tu ERA",
+          "eyebrow": "En servicio",
+          "h2": "Inspección y prueba hidrostática",
           "parrafos": [
-            "No hay un modelo de cilindro publicado por separado en este catálogo; lo proponemos según tu operación y la conexión que ya usa tu equipo. Para ERA de combate lo configuramos con el Sköld Phantöm SCBA-P60FC, cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi y referencia declarada NFPA edición 1997 con CE EN 137:2006. Elige esa partida cuando requieras el conjunto Sköld completo y valida su compatibilidad con casco, capucha y traje.",
-            "Para brigada industrial podemos configurarlo con MSA G1 Industrial 10217600, con cilindro de fibra de carbono, conexión roscada, 60 minutos nominales a 4,500 psi y certificación NIOSH 42 CFR Parte 84. Pide esa familia si tu operación es industrial o de espacios confinados; para combate estructural, define el ERA conforme a NFPA 1970 y no conviertas una certificación industrial en alcance de ataque."
-          ]
-        },
-        {
-          "h2": "Errores al pedir cilindros de carbono",
-          "parrafos": [
-            "Vemos órdenes que piden solo cilindro de 60 minutos, omiten la válvula y después intentan montarlo en una espaldera ajena. Escribe fibra de carbono, 4,500 psi, autonomía nominal, etiqueta DOT y conexión compatible; nosotros revisamos el acople antes de surtir. También llegan partidas que toman los minutos nominales como duración garantizada: define relevo y reserva para la tarea, porque el consumo cambia durante la intervención.",
-            "Otro error es copiar NIOSH 42 CFR Parte 84 o NFPA edición 1997 sin identificar el ERA y el estatus que los declara. En tu pliego escribe Sköld Phantöm SCBA-P60FC con referencia declarada NFPA edición 1997 y CE EN 137:2006, o MSA G1 Industrial 10217600 con certificación NIOSH 42 CFR Parte 84, según corresponda. Así evitamos una orden con cilindro, válvula o alcance documental distinto."
-          ]
-        },
-        {
-          "h2": "Inspección de cilindros de fibra de carbono",
-          "parrafos": [
-            "Antes de la guardia revisamos contigo etiqueta DOT, presión de 4,500 psi, válvula, roscas, abrasión y montaje en la espaldera. Elige otro cilindro si hay golpe, contaminación, daño visible, fuga, rosca comprometida o etiqueta ilegible; registra número de serie, fecha de prueba e inspección para que tu relevo conozca la condición. Confirma también que la válvula cierre y que la lectura alcance la presión indicada para esa configuración.",
-            "Después de una intervención, separa el cilindro de fibra de carbono que recibió calor, golpe, fuga o contaminación y llévalo al proceso autorizado. La prueba hidrostática se realiza cada cinco años según la etiqueta DOT; pide carga con aire respirable grado D o superior y no cubras datos con pintura o cintas. Nosotros te ayudamos a cotejar el reemplazo con válvula, conexión y ERA compatibles antes de reincorporarlo."
+            "Antes de cada guardia revisa etiqueta, presión, válvula, roscas y superficie. Un golpe, una abrasión profunda, una fuga o una etiqueta ilegible sacan al cilindro de servicio hasta que se evalúe.",
+            "La prueba hidrostática de los cilindros de compuesto se hace cada cinco años, según indica la etiqueta DOT. Carga siempre con aire respirable grado D o superior y no cubras los datos del fabricante con pintura o cinta."
           ]
         }
       ],
@@ -213,19 +219,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Confundir minutos nominales con duración garantizada",
-        "Forzar una válvula o conexión distinta",
+        "Confundir los minutos nominales con duración garantizada",
+        "Forzar una válvula o conexión distinta a la del ERA",
         "Cargar con aire sin control de calidad",
-        "Omitir fecha de prueba hidrostática"
+        "Omitir la fecha de prueba hidrostática"
       ],
       "faq": [
         {
-          "q": "¿Cuánto dura un cilindro?",
-          "a": "Su autonomía es nominal; cambia con consumo, esfuerzo y escena."
+          "q": "¿Cuánto dura un cilindro de ERA de 60 minutos?",
+          "a": "Los 60 minutos son nominales. El tiempo real cambia con el esfuerzo, la respiración de cada usuario y la escena, así que el aire se planea con margen de reserva."
         },
         {
-          "q": "¿Cada cuándo se prueba?",
-          "a": "Cada cinco años en cilindros de compuesto, según la etiqueta DOT."
+          "q": "¿Cada cuándo se hace la prueba hidrostática de un cilindro de fibra de carbono?",
+          "a": "Cada cinco años en cilindros de compuesto, según lo que indica su etiqueta DOT. La fecha de la última prueba debe quedar visible."
+        },
+        {
+          "q": "¿Un cilindro de fibra de carbono sirve en cualquier ERA?",
+          "a": "No. Válvula, rosca o acople y banda de sujeción dependen del fabricante y del modelo. Antes de cotizar confirmamos la conexión con tu espaldera."
+        },
+        {
+          "q": "¿Qué aire se usa para recargar el cilindro?",
+          "a": "Aire respirable grado D o superior, cargado con un compresor y un proceso controlados. Un aire sin control de calidad compromete todo el equipo, aunque el cilindro esté en perfecto estado."
         }
       ],
       "chips": [
@@ -234,18 +248,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Etiqueta DOT"
       ],
       "resumen": [
-        "Los cilindros de fibra de carbono almacenan aire para ERA; cotizamos la configuración de 4,500 psi, 30, 45 o 60 minutos nominales y conexión que corresponde a tu espaldera.",
-        "Envíanos por WhatsApp el modelo de ERA, válvula, autonomía y etiqueta DOT que requiere tu guardia. Revisamos compatibilidad, carga con aire respirable grado D o superior y presión de 4,500 psi antes de cotizar."
-      ]
+        "Cotizamos cilindros de 30, 45 o 60 minutos nominales, como reserva o como reemplazo, siempre a partir del ERA en el que se van a montar. La fibra de carbono no garantiza por sí sola que un cilindro sea compatible.",
+        "Cada cilindro lleva etiqueta DOT con sus datos de servicio y fecha de prueba hidrostática. Te ayudamos a dejarlos por escrito en la partida para que tu inventario quede identificado."
+      ],
+      "duos": {
+        "ficha": [
+          "Al ordenar cilindros de fibra de carbono registra presión de servicio, autonomía nominal, etiqueta DOT, válvula, conexión y montaje en la espaldera. Cada dato confirma compatibilidad y condición de servicio.",
+          "No publicamos un cilindro por separado: lo configuramos con el ERA que usa tu equipo. Por eso la tabla muestra campos a definir y no un código de modelo."
+        ],
+        "errores": [
+          "El error más común es comprar cilindros por capacidad y descubrir al recibirlos que la válvula no corresponde a la espaldera.",
+          "Estos cuatro puntos evitan ese problema y mantienen el control de servicio de cada cilindro desde el primer día."
+        ],
+        "faq": [
+          "Resolvemos las dudas habituales sobre duración, prueba hidrostática, compatibilidad y recarga.",
+          "Si nos mandas el modelo de tu ERA y cuántos cilindros necesitas, te confirmamos la conexión correcta antes de cotizar."
+        ]
+      }
     },
     {
       "slug": "mascaras-y-reguladores-era",
       "seccion": "equipo-de-respiracion-autonoma",
       "nombre": "Máscaras y reguladores para ERA",
       "nombreCard": "Máscaras y reguladores ERA",
-      "title": "Máscaras y reguladores para ERA | México",
-      "description": "Máscaras y reguladores para ERA: sello facial, copa nasal, tallas, prueba de ajuste, regulador de demanda e interfaz con casco y capucha.",
-      "lead": "Cotizamos máscara y regulador como la interfaz respiratoria del ERA: probamos el sello, la conexión y la entrega a demanda con casco, capucha y traje antes de definir tu partida.",
+      "title": "Máscara y regulador para equipo de respiración autónoma",
+      "description": "Máscaras y reguladores para ERA: sello facial, copa nasal, tallas, prueba de ajuste, regulador de demanda e interfaz con casco y capucha. Cotiza con ficha.",
+      "lead": "La máscara y el regulador son la parte del ERA que toca al usuario: la máscara sella la cara y el regulador entrega aire a demanda. Si el sello falla, el resto del equipo deja de proteger.",
       "imagen": {
         "src": "/images/catalogo/era/tipo-mascaras-y-reguladores-era.avif",
         "alt": "Máscara y regulador para equipo de respiración autónoma",
@@ -255,46 +283,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "Máscaras y reguladores ERA para guardia",
+          "eyebrow": "Qué es",
+          "h2": "La interfaz entre el usuario y el aire",
           "parrafos": [
-            "Cotizamos máscaras y reguladores para bomberos, brigadas industriales y equipos de espacios confinados que necesitan conservar sello facial y aire a demanda durante la maniobra. Una máscara de cara completa combina mica, copa nasal, arnés y válvula de exhalación; el regulador de primera y segunda etapa entrega aire desde un cilindro de 4,500 psi. Elige la talla y familia de conexión con tu ERA, y pruébala con casco, capucha y traje antes de cerrar la compra.",
-            "En la prueba de uso revisamos cara limpia, campo de visión de 180°, arnés y recorrido de la manguera con guantes y movimiento. Si usas diafragma de voz o comunicación, pídelo con la máscara y confirma que hablar no afloje el sello ni gire el regulador. La mica de policarbonato y el silicón requieren la limpieza indicada por el fabricante; elige otra configuración si lentes, patillas, vello facial o accesorios interfieren con la pieza facial."
+            "Una máscara de cara completa combina mica, copa nasal, arnés de sujeción y válvula de exhalación. El regulador de primera etapa reduce la presión del cilindro y el de segunda entrega el aire cuando el usuario inhala.",
+            "Todo eso tiene que funcionar con casco, capucha y chaquetón puestos, con guantes y en movimiento. Una máscara que sella bien sentada puede abrirse al girar la cabeza si la capucha o el casco la empujan."
           ]
         },
         {
-          "h2": "Cotización de máscaras y reguladores ERA",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Talla, conexión y comunicación",
           "parrafos": [
-            "En nuestra cotización anotamos modelo de ERA, talla, copa nasal, mica de policarbonato, regulador, conexión y accesorios porque una máscara panorámica no identifica un acople compatible. Pídenos el conjunto que utiliza tu brigada y nosotros cotejamos la primera y segunda etapa con la máscara antes de surtir. Elige una partida individual si necesitas conservar talla e historial de limpieza por usuario, o define un proceso de desinfección si la máscara se compartirá.",
-            "Para que la orden llegue completa, escribe por partida los campos siguientes y envíanos la referencia de tu ERA. Si la operación es de combate, incluye NFPA 1970 como requisito aplicable; si es industrial, conserva NIOSH 42 CFR Parte 84 solo para el modelo que lo declara. Así probamos la interfaz real y evitamos mezclar máscaras, reguladores o conexiones sin respaldo."
+            "La talla se elige con prueba de ajuste, no por estatura ni por costumbre. Si el equipo usa comunicación, pide diafragma de voz o accesorios desde el inicio y confirma que hablar no afloje el sello.",
+            "La conexión del regulador tiene que corresponder a la familia del ERA. Mezclar máscaras y reguladores de distintos fabricantes es un riesgo aunque las piezas parezcan encajar."
           ],
           "lista": [
-            "Máscara: cara completa y mica de policarbonato",
+            "Máscara: cara completa con mica de policarbonato",
             "Ajuste: talla, copa nasal y arnés",
             "Regulador: primera y segunda etapa",
             "Entrega: aire a demanda",
-            "Conexión: compatible con el ERA",
+            "Conexión: de la misma familia del ERA",
             "Accesorios: diafragma de voz o comunicación"
           ]
         },
         {
-          "h2": "Máscaras y reguladores que configuramos",
+          "eyebrow": "En servicio",
+          "h2": "Limpieza, inspección y reemplazo de piezas",
           "parrafos": [
-            "No hay un modelo publicado por separado para este tipo; lo configuramos con el ERA que corresponde a tu operación. Para combate surtimos el Sköld Phantöm SCBA-P60FC con máscara panorámica de silicón hipoalergénico, visión de 180°, doble sello, mica de policarbonato antirrayas y antiempaño, además de reguladores de primera y segunda etapa. Elige esa combinación cuando requieras conexión rápida y valida el sello con casco, capucha y chaquetón.",
-            "Para brigada industrial configuramos MSA G1 Industrial 10217600 con máscara G1 talla M, copa nasal, diafragma para hablar y regulador de segunda etapa de cubierta dura. Pide esa familia cuando el alcance sea NIOSH 42 CFR Parte 84 y confirma la talla M con tu personal; para combate estructural, define un ERA conforme a NFPA 1970 y no presentes una certificación industrial como protección de ataque."
-          ]
-        },
-        {
-          "h2": "Errores al pedir máscaras y reguladores",
-          "parrafos": [
-            "Vemos tres errores en pliegos: pedir máscara sin talla, nombrar regulador sin conexión y dejar la prueba de ajuste para después de recibir el lote. Escribe modelo de ERA, copa nasal, talla, regulador de primera y segunda etapa y acople compatible; nosotros verificamos la prueba con casco y capucha. También pide la mica de policarbonato y el silicón por su nombre si necesitas conservar la misma interfaz en una reposición.",
-            "Otro error es juntar el Phantöm SCBA-P60FC y la máscara G1 talla M como si fueran piezas intercambiables. En tu orden escribe Sköld Phantöm con referencia declarada NFPA edición 1997 y CE EN 137:2006, o MSA G1 Industrial con certificación NIOSH 42 CFR Parte 84, según el alcance. Así evitamos una mezcla de conexiones, un sello sin prueba o un estatus normativo ajeno al conjunto."
-          ]
-        },
-        {
-          "h2": "Inspección de máscaras y reguladores ERA",
-          "parrafos": [
-            "Antes de la guardia revisamos contigo mica de policarbonato, silicón, copa nasal, válvula de exhalación, correas, conector y respuesta del regulador. Ponte máscara, casco y capucha, mueve cuello y brazos, y separa el componente si el sello falla, la mica limita la visión, la manguera se atrapa o el acople no asegura. Registra talla, número de serie, limpieza e inspección para que el siguiente usuario reciba una interfaz identificada.",
-            "Después de una intervención, limpia máscara, válvula, arnés y regulador con el método del fabricante; retira de servicio la pieza con rayas, sello deformado, válvula anormal, correa dañada o conexión comprometida. Si reemplazas una refacción, pídela para la misma familia y realiza la prueba funcional indicada antes de reasignarla. Nosotros cotejamos la compatibilidad con tu ERA para evitar adaptaciones sobre silicón, policarbonato o elastómeros."
+            "Antes de cada guardia revisa mica, silicón, copa nasal, válvula de exhalación, correas y conector. Una mica rayada que limita la visión o un sello deformado son motivo para retirar la máscara.",
+            "Limpia y desinfecta solo con lo que indica el fabricante; algunos productos dañan el silicón o el policarbonato. Si una máscara se comparte entre turnos, define quién la limpia y cómo queda registrado."
           ]
         }
       ],
@@ -317,19 +335,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         }
       ],
       "errores": [
-        "Omitir prueba de ajuste",
-        "Mezclar conexiones sin confirmar",
+        "Omitir la prueba de ajuste",
+        "Mezclar conexiones sin confirmarlas",
         "Usar accesorios que rompen el sello",
-        "Desinfectar con productos no indicados"
+        "Desinfectar con productos no indicados por el fabricante"
       ],
       "faq": [
         {
-          "q": "¿La máscara es universal?",
-          "a": "No. Talla, conexión y compatibilidad se revisan con el modelo de ERA."
+          "q": "¿La máscara de ERA es universal?",
+          "a": "No. Talla, conexión y compatibilidad dependen del modelo de ERA, y el sello se confirma con una prueba de ajuste de cada usuario."
         },
         {
-          "q": "¿La capucha debe ir antes?",
-          "a": "La secuencia depende del procedimiento y debe conservar el sello de la máscara."
+          "q": "¿La capucha de bombero va antes o después de la máscara?",
+          "a": "Depende del procedimiento de tu corporación. Lo importante es que la capucha no quede entre la cara y el sello de la máscara."
+        },
+        {
+          "q": "¿Qué máscara trae el Sköld Phantöm?",
+          "a": "Una máscara panorámica de silicón hipoalergénico con visión de 180°, doble sello y mica de policarbonato antirrayas y antiempaño."
+        },
+        {
+          "q": "¿Se puede usar máscara de ERA con barba o con lentes?",
+          "a": "El vello facial y las patillas de los lentes pueden impedir que la máscara selle. Si alguien del equipo necesita corrección visual, conviene revisarlo en la prueba de ajuste antes de cerrar la compra."
         }
       ],
       "chips": [
@@ -338,18 +364,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Regulador de demanda"
       ],
       "resumen": [
-        "Máscara y regulador forman la interfaz respiratoria del ERA; cotizamos talla, copa nasal, silicón, policarbonato y conexión con el modelo que utiliza tu equipo, incluida la visión de 180° del Phantöm.",
-        "Mándanos por WhatsApp tu ERA, casco, capucha y necesidad de voz o comunicación. Probamos sello, regulador de demanda, compatibilidad y la conexión rápida del Sköld Phantöm SCBA-P60FC antes de definir la partida."
-      ]
+        "No hay máscaras universales. Talla, copa nasal, conexión del regulador y compatibilidad con casco y capucha se definen para el modelo de ERA que usa tu equipo.",
+        "Configuramos esta interfaz con el Sköld Phantöm para combate o con el MSA G1 Industrial para brigadas, y la probamos con la persona que la va a usar."
+      ],
+      "duos": {
+        "ficha": [
+          "La especificación de máscaras y reguladores para ERA incluye talla, sello facial, copa nasal, mica, correas, conexión, regulador de demanda y comunicación cuando aplique.",
+          "Cada refacción debe corresponder a la familia del fabricante. No publicamos este tipo como modelo aparte: lo configuramos con el ERA completo que usa tu equipo."
+        ],
+        "errores": [
+          "La mayoría de los problemas con máscaras aparece cuando el ERA ya está en servicio: un sello que se abre al moverse o una conexión que no asegura.",
+          "Estos cuatro errores se evitan en la cotización, con prueba de ajuste y piezas de la misma familia."
+        ],
+        "faq": [
+          "Respondemos las dudas habituales sobre talla, capucha, lentes y compatibilidad de máscaras y reguladores.",
+          "Si nos compartes el modelo de tu ERA y cuántos usuarios son, te decimos qué tallas y accesorios conviene probar."
+        ]
+      }
     },
     {
       "slug": "era-de-escape",
       "seccion": "equipo-de-respiracion-autonoma",
       "nombre": "ERA de escape",
       "nombreCard": "ERA de escape",
-      "title": "ERA de escape para evacuación | México",
-      "description": "ERA de escape para evacuación: equipos EEBD de corta duración, ruta de salida, entrenamiento y límites frente a un ERA de combate.",
-      "lead": "El ERA de escape o EEBD de 5 minutos permite evacuar una atmósfera peligrosa; lo cotizamos para una ruta real de salida, no para ataque, rescate planificado ni ingreso de trabajo.",
+      "title": "ERA de escape EEBD para evacuación de corta duración",
+      "description": "ERA de escape para evacuación: equipos EEBD de corta duración, ruta de salida, entrenamiento y límites frente a un ERA de combate. Cotiza con ficha técnica.",
+      "lead": "El ERA de escape, también llamado EEBD, da unos minutos de aire para salir de una atmósfera peligrosa. Es un equipo de evacuación: no sirve para entrar, atacar un incendio ni hacer un rescate planeado.",
       "imagen": {
         "src": "/images/catalogo/era/tipo-era-de-escape.avif",
         "alt": "Equipo de respiración autónoma de escape para evacuación",
@@ -359,46 +399,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "ERA de escape para evacuación de personal",
+          "eyebrow": "Qué es",
+          "h2": "Aire para salir, no para quedarse",
           "parrafos": [
-            "Cotizamos ERA de escape o EEBD de 5 minutos para plantas, almacenes y brigadas que necesitan abandonar una atmósfera peligrosa por su ruta de evacuación. La referencia disponible llega a 15 minutos según configuración; elige esa opción cuando el tiempo alcance para salir, y pide un ERA de combate o de trabajo IDLH si tu operación exige entrar, atacar incendio o ejecutar rescate planificado.",
-            "Con tu responsable de seguridad recorremos escaleras, puertas, pasillos y punto de reunión para ubicar el EEBD de 5 minutos antes de la zona de riesgo. Si visitantes, contratistas o personal de turno transitan el proceso, pídelo en puntos visibles y accesibles; si la salida cambia por obra o maquinaria, reubica el equipo y repite la práctica de colocación y evacuación."
+            "Un EEBD se activa en segundos y permite respirar mientras la persona evacúa. Su valor está en estar donde se necesita: antes de la zona de riesgo, en la ruta de salida y a la vista de quien lo va a usar.",
+            "Si tu análisis incluye trabajo o rescate dentro de una atmósfera peligrosa, el equipo es otro: un ERA de combate o de trabajo, con plan de rescate y entrenamiento. Extender el uso del escape a esas tareas es uno de los errores más peligrosos."
           ]
         },
         {
-          "h2": "Cómo cotizamos ERA de escape EEBD",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Ruta, duración y ubicación",
           "parrafos": [
-            "En nuestra cotización dejamos escrita la configuración EEBD de 5 minutos, la duración referida de 15 minutos, la ruta, el punto de almacenamiento y el responsable de inspección. Elige unidades para evacuación y no para intervención; cuando tu análisis incluya una atmósfera IDLH, pide que la partida señale un ERA adecuado, el plan de rescate y el entrenamiento que acompañarán al equipo.",
-            "También registramos si el diseño usa cilindro o cartucho de 5 minutos, el estado de empaque y la fecha de servicio declarada por el fabricante. Pídenos que esa información aparezca por partida, porque un EEBD abierto, sin señalización o fuera de la ruta no resuelve una evacuación aunque conserve su indicador."
+            "Recorre la ruta real: escaleras, puertas, pasillos y punto de reunión, con visibilidad reducida y personas con movilidad limitada. La duración del equipo tiene que alcanzar para la ruta más lenta, no para la más corta.",
+            "Define dónde se guardará cada unidad y quién la revisa por turno. Si la ruta cambia por obra o por maquinaria nueva, los equipos se reubican y la práctica de salida se repite."
           ],
           "lista": [
             "Equipo: ERA de escape o EEBD",
             "Uso: evacuación desde atmósfera peligrosa",
-            "Duración referida: 5 a 15 minutos según configuración",
-            "Ruta: escaleras, pasillos, puertas y punto de reunión",
-            "Ubicación: visible y accesible antes de la zona de riesgo",
+            "Duración: 5 a 15 minutos según configuración",
+            "Ruta: escaleras, pasillos, puertas y reunión",
+            "Ubicación: visible y antes de la zona de riesgo",
             "Control: responsable, empaque y fecha de servicio"
           ]
         },
         {
-          "h2": "Modelos y combinación del ERA de escape",
+          "eyebrow": "En servicio",
+          "h2": "Inspección y reposición",
           "parrafos": [
-            "No tenemos un modelo EEBD de 5 minutos publicado en este arreglo; proponemos el modelo de ERA de escape según la ruta, ocupación y riesgo que nos compartas. Para una evacuación, elige una configuración que no retrase la salida con casco, protección ocular o ropa; si tu escenario requiere trabajo IDLH, pídela junto con la familia de ERA de combate correspondiente.",
-            "Al definir el conjunto EEBD de 5 minutos, revisamos contigo cilindro o cartucho, sello, indicador y la forma de colocarlo con el equipo que ya usa tu brigada. Pide una prueba de recorrido con casco y protección ocular cuando esos elementos formen parte de la salida; si afectan acceso, visibilidad o ajuste del EEBD, cambia la configuración antes de emitir la orden."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos de ERA de escape",
-          "parrafos": [
-            "Vemos tres errores recurrentes: pedir un EEBD de 5 minutos para ataque a incendio, copiar 15 minutos sin medir la ruta y dejar el punto de guarda fuera de la salida. En tu pliego escribe «evacuación», la ruta real y la duración según configuración; si habrá ingreso a una atmósfera IDLH, pide un ERA adecuado y un plan de rescate en vez de extender el alcance del escape.",
-            "También recibimos órdenes que omiten empaque, fecha de servicio, señalización y responsable por turno del EEBD de 5 minutos. Pide esos campos con el EEBD y especifica que una unidad usada o abierta sale de disponibilidad para servicio o reposición; así evitamos entregar una partida que parece completa, pero no permite confirmar quién la revisa ni dónde se toma."
-          ]
-        },
-        {
-          "h2": "Inspección, limpieza y retiro de EEBD",
-          "parrafos": [
-            "Antes de la guardia, revisamos contigo sello, indicador, empaque, cilindro o cartucho de 5 minutos y fecha de servicio declarada por el fabricante. Elige retiro inmediato si hay empaque abierto, sello comprometido, golpe, humedad, calor u obstrucción en el acceso; registra ubicación, responsable y condición para que tu siguiente turno no cuente una unidad que ya no está disponible.",
-            "Después de una evacuación, separa el EEBD de 5 minutos activado y anota usuario, condición y reposición o servicio según su diseño. Pide limpieza solo conforme al fabricante cuando aplique y no regreses un equipo abierto al gabinete; si la ruta cambió durante la intervención, actualizamos contigo señalización, ubicación y ejercicio de salida antes de reincorporar la partida."
+            "La revisión es visual y periódica: sello, indicador, empaque y fecha de servicio. Un empaque abierto, un golpe, humedad o calor sacan la unidad de disponibilidad aunque parezca intacta.",
+            "Un EEBD activado no regresa al gabinete. Se registra quién lo usó y se envía a servicio o se repone según su diseño, para que el siguiente turno no cuente con un equipo que ya no está."
           ]
         }
       ],
@@ -422,18 +452,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "errores": [
         "Usarlo para ingresar a trabajar",
-        "Tomar la autonomía para actividades ajenas a evacuar",
+        "Emplear su autonomía en tareas ajenas a evacuar",
         "Guardar el equipo sin acceso inmediato",
-        "Omitir entrenamiento"
+        "Omitir el entrenamiento de colocación y salida"
       ],
       "faq": [
         {
-          "q": "¿Sirve para atacar un incendio?",
-          "a": "No. Está diseñado para evacuación de corta duración."
+          "q": "¿El ERA de escape sirve para atacar un incendio?",
+          "a": "No. Está diseñado solo para evacuación de corta duración. Para entrar a combatir se necesita un ERA de combate."
         },
         {
-          "q": "¿Cuánto dura?",
-          "a": "Depende de la configuración; se usan referencias de 5 a 15 minutos para escape."
+          "q": "¿Cuánto dura un ERA de escape EEBD?",
+          "a": "Depende de la configuración; las referencias habituales van de 5 a 15 minutos. Esa duración se compara con la ruta de salida más lenta de tu instalación."
+        },
+        {
+          "q": "¿Dónde se debe colocar un EEBD?",
+          "a": "En la ruta de evacuación, antes de la zona de riesgo, visible y accesible para todo el personal que transita el área, incluidos visitantes y contratistas."
+        },
+        {
+          "q": "¿Qué se hace con un EEBD después de usarlo?",
+          "a": "Se retira de disponibilidad y se envía a servicio o se repone según su diseño. Nunca se devuelve abierto al gabinete."
         }
       ],
       "chips": [
@@ -442,18 +480,32 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Corta duración"
       ],
       "resumen": [
-        "El ERA de escape o EEBD de 5 minutos da aire para evacuar una atmósfera peligrosa; no hay modelo publicado en este arreglo y proponemos la configuración según tu ruta, ocupación y riesgo.",
-        "Cotizamos por partida la duración de 5 a 15 minutos, ubicación, empaque y responsable de inspección. Mándanos por WhatsApp tu ruta de salida y el equipo que usa tu brigada para revisar la interfaz."
-      ]
+        "Se coloca en la ruta de salida de plantas, almacenes o embarcaciones, visible y al alcance del personal que puede quedar expuesto. Su duración, de 5 a 15 minutos según configuración, se compara con la ruta más lenta.",
+        "Todavía no publicamos un modelo de escape. Lo cotizamos a partir de tu ruta, el número de personas y el riesgo, con ubicación y responsable de inspección definidos."
+      ],
+      "duos": {
+        "ficha": [
+          "Para solicitar un ERA de escape incluye duración declarada, configuración, ubicación, acceso a la ruta, estado del empaque y procedimiento de activación.",
+          "La tabla distingue evacuación de ataque o rescate a propósito: un EEBD no sustituye a un ERA de combate ni a uno de trabajo en atmósfera peligrosa."
+        ],
+        "errores": [
+          "Un equipo de escape falla cuando no está donde se necesita o cuando se usa para algo que no es salir.",
+          "Estos cuatro errores son los que conviene revisar en tu plan de evacuación antes de definir cuántas unidades comprar."
+        ],
+        "faq": [
+          "Resolvemos las dudas habituales sobre uso, duración, ubicación y reposición del ERA de escape.",
+          "Si nos compartes tu ruta de evacuación y cuántas personas pueden quedar expuestas, te ayudamos a dimensionar las unidades."
+        ]
+      }
     },
     {
       "slug": "era-industrial",
       "seccion": "equipo-de-respiracion-autonoma",
       "nombre": "ERA industrial para brigadas",
       "nombreCard": "ERA industrial",
-      "title": "ERA industrial para brigadas y confinados | México",
-      "description": "ERA industrial para brigadas y espacios confinados: certificación NIOSH, cilindro, máscara, arnés y límites frente al combate estructural.",
-      "lead": "El ERA industrial con certificación NIOSH 42 CFR Parte 84 protege a tu brigada en industria y espacios confinados; cotizamos el conjunto para esa operación, nunca como sustituto de un ERA conforme a NFPA 1970.",
+      "title": "ERA industrial NIOSH para brigadas y espacios confinados",
+      "description": "ERA industrial para brigadas y espacios confinados: certificación NIOSH, cilindro, máscara, arnés y límites frente al combate estructural. Cotiza con ficha.",
+      "lead": "El ERA industrial protege a brigadas y trabajadores en procesos y espacios confinados. Lleva certificación NIOSH para uso industrial y no sustituye a un ERA de combate en fuego interior.",
       "imagen": {
         "src": "/images/catalogo/era/tipo-era-industrial.avif",
         "alt": "Equipo de respiración autónoma industrial para brigadas",
@@ -463,47 +515,36 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       },
       "bloques": [
         {
-          "h2": "ERA industrial para brigadas y confinados",
+          "eyebrow": "Qué es",
+          "h2": "Respiración autónoma para industria y confinados",
           "parrafos": [
-            "Cotizamos ERA industrial para brigadas, industria y espacios confinados donde tu análisis exige aire independiente. El MSA G1 Industrial declara certificación NIOSH 42 CFR Parte 84; elígelo para ese alcance con permiso, monitoreo, vigilancia, comunicación y rescate, y pide un ERA conforme a NFPA 1970 si tu escenario incluye combate estructural, fuego interior o humo denso.",
-            "Antes de proponer la partida, revisamos contigo contaminantes, deficiencia de oxígeno, acceso, ruta de extracción y maniobra autorizada. Si el arnés de Kevlar, la máscara G1 talla M o la conexión roscada estorban escalera, línea de vida o herramienta, cambia la configuración durante la prueba; si pasan con casco y protección ocular, conservamos esa interfaz por escrito."
+            "En la industria el ERA se usa para entrar a tanques, fosas o áreas con contaminantes o falta de oxígeno, y para que la brigada responda a fugas. El riesgo es distinto al de un incendio estructural, y la certificación también.",
+            "Por eso tiene sentido un equipo industrial: se integra al permiso de entrada, al monitoreo de la atmósfera y al plan de rescate. Lo que no puede es entrar a un incendio interior como si fuera de combate."
           ]
         },
         {
-          "h2": "Cómo especificamos un ERA industrial",
+          "eyebrow": "Cómo elegir",
+          "id": "elegir",
+          "h2": "Talla, conexión y opcionales",
           "parrafos": [
-            "En cada cotización escribimos MSA G1 Industrial código 10217600, certificación NIOSH 42 CFR Parte 84, cilindro de fibra de carbono con certificación DOT, 4,500 psi y 60 minutos nominales. Elige máscara G1 talla M solo después de probar sello y movilidad; si tu brigada requiere hombreras o soporte lumbar, pídelos como opcionales y no los des por incluidos.",
-            "También anotamos conexión roscada, arnés de Kevlar de cinco puntos, banda metálica, regulador de segunda etapa de cubierta dura, manómetro análogo y caja rígida. Pide esos datos por partida junto con aire respirable grado D o superior para carga, porque una cotización sin conexión, talla y accesorios no permite revisar la compatibilidad de la unidad con tu procedimiento."
+            "La máscara G1 del modelo que surtimos es talla M. Antes de cerrar la compra conviene probar sello y movilidad con cada usuario, con casco y protección ocular puestos.",
+            "Hombreras y soporte lumbar son opcionales, no vienen incluidos; pídelos si la prueba de uso los justifica. La conexión roscada y la caja rígida quedan escritas en la partida para cotejarlas al recibir."
           ],
           "lista": [
-            "Modelo y código: MSA G1 Industrial 10217600",
-            "Estatus normativo: certificación NIOSH 42 CFR Parte 84",
+            "Modelo: MSA G1 Industrial 10217600",
+            "Estatus: certificación NIOSH 42 CFR Parte 84",
             "Cilindro: fibra de carbono con certificación DOT",
-            "Presión y autonomía: 4,500 psi y 60 minutos nominales",
-            "Máscara y conexión: G1 talla M y conexión roscada",
-            "Arnés: Kevlar de cinco puntos con banda metálica",
+            "Presión y autonomía: 4,500 psi y 60 minutos",
+            "Máscara y conexión: G1 talla M, roscada",
             "Opcionales: hombreras y soporte lumbar"
           ]
         },
         {
-          "h2": "MSA G1 Industrial y equipo compatible",
+          "eyebrow": "En servicio",
+          "h2": "Disponibilidad, limpieza y servicio",
           "parrafos": [
-            "Surtimos el MSA G1 Industrial 10217600 con cilindro de fibra de carbono, máscara G1 talla M, arnés de Kevlar de cinco puntos y estatus de certificación NIOSH 42 CFR Parte 84. Pídelo para brigada industrial o entrada a confinados; para tu traje, casco, protección ocular o línea de vida, probamos sello, acceso al manómetro y recorrido del arnés antes de cerrar tallas.",
-            "La unidad incorpora cinta fotoluminiscente verde que indica presión, regulador de cubierta dura y diafragma para hablar en la máscara G1. Elige hombreras y soporte lumbar cuando tu prueba de uso los requiera, y conserva la caja rígida para traslado; si la operación cambia a combate estructural, no combines este modelo con una familia de traje para extender su alcance industrial declarado."
-          ]
-        },
-        {
-          "h2": "Errores en pliegos y órdenes industriales",
-          "parrafos": [
-            "Vemos tres fallas en pliegos: nombrar NIOSH 42 CFR Parte 84 y pedir combate estructural, omitir la talla M de máscara y dejar la conexión roscada fuera de la orden. Escribe MSA G1 Industrial 10217600, alcance industrial, máscara G1 talla M y conexión roscada; para fuego interior, pide un ERA conforme a NFPA 1970 en lugar de reinterpretar la certificación NIOSH.",
-            "También aparecen partidas sin permiso de entrada, plan de rescate ni aire respirable grado D o superior para carga. Pide que tu orden identifique la maniobra de brigada o espacio confinado, cilindro DOT de 4,500 psi, 60 minutos nominales y los opcionales; así cotejamos al recibir que arnés, regulador, caja rígida y accesorios corresponden al conjunto que aprobaste."
-          ]
-        },
-        {
-          "h2": "Inspección, limpieza y retiro industrial",
-          "parrafos": [
-            "Antes de la guardia revisamos con tu brigada conexión roscada, arnés de Kevlar, banda metálica, regulador, válvulas, manómetro análogo, máscara G1 talla M y presión de 4,500 psi. Retira la unidad si hay daño, desempeño irregular, conexión insegura o falla de sello, y registra número de serie, condición, limpieza y carga con aire respirable grado D o superior.",
-            "Después de una intervención o exposición, limpia la interfaz facial del MSA G1 Industrial conforme al fabricante, revisa cubierta dura, cinta fotoluminiscente, cilindro DOT y caja rígida antes de trasladar el conjunto. Pide servicio y separa el componente con anomalía; si cambias hombreras, soporte lumbar o cualquier accesorio, repetimos la prueba con casco, protección ocular y línea de vida antes de devolverlo a disponibilidad."
+            "Antes de cada turno revisa conexión, arnés, regulador, manómetro, máscara y presión del cilindro. La cinta fotoluminiscente verde del G1 ayuda a leer la presión con poca luz.",
+            "Después de una exposición limpia la máscara según el fabricante y separa cualquier componente con daño o desempeño irregular. Si cambias un accesorio, repite la prueba con casco y línea de vida antes de devolver el equipo a disponibilidad."
           ]
         }
       ],
@@ -533,18 +574,26 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "errores": [
         "Asignarlo a combate estructural",
-        "Entrar a confinados sin plan de rescate",
-        "No validar talla de máscara",
-        "Cargar con aire no controlado"
+        "Entrar a espacios confinados sin plan de rescate",
+        "No validar la talla de la máscara",
+        "Cargar el cilindro con aire no controlado"
       ],
       "faq": [
         {
-          "q": "¿Sirve en espacios confinados?",
-          "a": "Puede formar parte del sistema cuando la evaluación, permiso y plan de rescate lo definan."
+          "q": "¿El ERA industrial sirve en espacios confinados?",
+          "a": "Sí, cuando la evaluación, el permiso de entrada y el plan de rescate lo definen. El equipo es una parte del sistema, no lo sustituye."
         },
         {
-          "q": "¿Sirve para ataque interior?",
-          "a": "No; para combate estructural se requiere ERA conforme a NFPA 1970."
+          "q": "¿El ERA industrial sirve para ataque interior?",
+          "a": "No. Para combate estructural se requiere un ERA conforme a NFPA 1970; la certificación NIOSH industrial no cubre ese escenario."
+        },
+        {
+          "q": "¿Qué incluye el MSA G1 Industrial?",
+          "a": "Cilindro de fibra de carbono DOT de 60 minutos a 4,500 psi, conexión roscada, arnés de Kevlar de cinco puntos, regulador de cubierta dura, manómetro análogo, máscara G1 talla M y caja rígida. Hombreras y soporte lumbar son opcionales."
+        },
+        {
+          "q": "¿Qué significa la certificación NIOSH 42 CFR Parte 84?",
+          "a": "Es la certificación de respiradores para uso industrial en Estados Unidos. Indica el alcance del equipo, y ese alcance no incluye el combate de incendios estructurales."
         }
       ],
       "relacionados": [
@@ -556,9 +605,27 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "Espacios confinados"
       ],
       "resumen": [
-        "El ERA industrial MSA G1 Industrial 10217600 declara NIOSH 42 CFR Parte 84, cilindro de fibra de carbono DOT a 4,500 psi y 60 minutos nominales para brigadas y espacios confinados.",
-        "Cotizamos talla M, conexión roscada, arnés de Kevlar y opcionales por partida. Mándanos por WhatsApp tu permiso de entrada, casco y protección ocular para probar la interfaz sin asignarlo a combate estructural."
-      ]
+        "Surtimos el MSA G1 Industrial 10217600: cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi, conexión roscada, máscara G1 y arnés de Kevlar de cinco puntos.",
+        "Lo cotizamos dentro de su alcance, con permiso de entrada, monitoreo y plan de rescate a la vista. Si la brigada hace ataque interior, la partida pasa a un ERA conforme a NFPA 1970."
+      ],
+      "duos": {
+        "ficha": [
+          "Para ERA industrial identifica la certificación aplicable, cilindro, máscara, regulador, arnés, manómetro, conexión y talla, junto con la operación y el permiso de entrada.",
+          "La fila de límite no es un detalle: deja escrito que el equipo no es para combate estructural, y evita que alguien lo reasigne por costumbre."
+        ],
+        "errores": [
+          "Los errores con ERA industrial casi siempre tienen que ver con su alcance: se usa donde no corresponde o sin el sistema que lo acompaña.",
+          "Revisa estos cuatro puntos contra tu procedimiento de entrada antes de pedir cotización."
+        ],
+        "modelos": [
+          "Surtimos el MSA G1 Industrial 10217600, con certificación NIOSH 42 CFR Parte 84, cilindro de fibra de carbono DOT y máscara G1 con diafragma para hablar.",
+          "Su ficha detalla componentes y opcionales. Si tu brigada también hace ataque interior, te cotizamos por separado un ERA de combate."
+        ],
+        "faq": [
+          "Resolvemos las dudas habituales sobre espacios confinados, alcance de la certificación y contenido del MSA G1 Industrial.",
+          "Si nos compartes el tipo de brigada, el espacio y cuántos usuarios son, te decimos qué configuración conviene."
+        ]
+      }
     }
   ],
   "modelos": [
@@ -578,51 +645,46 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "peso": "No especificado",
       "caracteristicas": [
         "Cilindro de fibra de carbono de 60 minutos a 4,500 psi",
-        "Máscara panorámica de silicón hipoalergénico con visión de 180° y doble sello",
-        "Malla de Nomex/Kevlar de cinco puntos, mica de policarbonato antirrayas y antiempaño",
-        "Regulador de primera etapa con reductor y alarma audible; segunda etapa de demanda con conexión rápida",
-        "Espaldera ligera con carga a cadera, manija de arrastre y correas revestidas de Nomex/Kevlar",
+        "Máscara panorámica de silicón con visión de 180° y doble sello",
+        "Malla de Nomex y Kevlar de cinco puntos",
+        "Mica de policarbonato antirrayas y antiempaño",
+        "Regulador de primera etapa con reductor y alarma audible",
+        "Segunda etapa de demanda con conexión rápida",
+        "Espaldera con carga a la cadera y manija de arrastre",
         "Manómetro análogo, prealarma y alarma de baja presión",
-        "Valija de ABS",
-        "Selección y servicio: prueba máscara, casco, capucha, reguladores y arnés como conjunto; conserva el control de cilindro por etiqueta y separa la unidad ante daño o funcionamiento anormal.",
-        "Control posterior a la intervención: documenta presión remanente, condición de la máscara, estado de correas, funcionamiento de prealarma y alarma de baja presión, además de cualquier golpe o contaminación. La limpieza debe respetar materiales y piezas del modelo. Antes de volver a montarlo, confirma que cilindro, válvula y acople coincidan con la configuración SCBA-P60FC autorizada; una adaptación improvisada invalida la revisión de compatibilidad que requiere una entrada segura."
+        "Valija de ABS"
       ],
       "notaCompra": "Antes de ordenar el Phantöm, solicita SCBA-P60FC con cilindro de 4,500 psi, máscara, reguladores, alarmas y la declaración de conformidad correspondiente a la configuración ofrecida; la referencia NFPA de 1997 no sustituye esa verificación.",
       "resumen": [
-        "Cotizamos el Sköld Phantöm SCBA-P60FC para una configuración de aire autónomo con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi, máscara panorámica y reguladores de dos etapas. Elige esta partida si tu operación requiere revisar el conjunto completo con casco, capucha y chaquetón antes de asignar tallas.",
-        "Te entregamos la referencia declarada acorde a NFPA edición 1997 y CE EN 137:2006, no una certificación NFPA vigente. Pídenos la declaración de conformidad y confirma tu requisito de operación; si necesitas una configuración distinta, cotizamos el modelo con sus componentes, conexión rápida y programa de servicio por escrito."
+        "El Sköld Phantöm SCBA-P60FC es un equipo de respiración autónoma para combate, con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi y máscara panorámica de silicón.",
+        "Incluye reguladores de primera y segunda etapa con conexión rápida, manómetro análogo, prealarma y alarma de baja presión, espaldera con carga a la cadera y valija de ABS.",
+        "Sköld lo declara acorde a NFPA edición 1997 y CE EN 137:2006. Si tu pliego exige NFPA 1970, lo revisamos contigo antes de cotizar para que la partida no quede corta."
       ],
       "descripcion": [
-        "Elige el Sköld Phantöm SCBA-P60FC si tu orden requiere un ERA de circuito abierto con cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi para atmósferas IDLH, rescate o ataque a incendio. En la orden escribe código, presión, cilindro, máscara panorámica, reguladores y alarmas; nosotros cotejamos esa configuración con casco, capucha y chaquetón antes de surtirla.",
-        "La construcción reúne máscara panorámica de silicón hipoalergénico con visión de 180°, doble sello, copa nasal removible y mica de policarbonato antirrayas y antiempaño. Su malla de Nomex/Kevlar tiene cinco puntos y válvula de exhalación. En tu prueba de talla, ponte casco y capucha, mueve cuello y brazos, y elige otra talla si el sello cambia, la mica limita la visión o el conjunto se desplaza.",
-        "El Phantöm integra regulador de primera etapa con reductor y alarma audible, regulador de demanda de segunda etapa con conexión rápida y manómetro análogo en la correa derecha. La espaldera con carga a cadera, manija de arrastre, banda de cilindro tipo malla y correas Nomex/Kevlar se combina con traje, casco y capucha. Pídelo con valija de ABS, prealarma y alarma de baja presión si esos componentes deben venir en tu partida.",
-        "Para entrada, revisamos presión, válvula, acople del regulador, manómetro, prealarma y alarma de baja presión antes de que tu brigada use el SCBA-P60FC. Haz la prueba con guantes, casco y capucha, y anota presión inicial y número de serie al recibir el lote. Si la conexión rápida no asegura o el arnés altera el cuello del traje, sepáralo y pide el ajuste antes de aceptar la entrega.",
-        "El fabricante lo declara acorde a NFPA edición 1997 y CE EN 137:2006; no lo presentamos como certificación NFPA vigente. Pídenos la declaración de conformidad con la cotización. Después de uso, retira el Phantöm con golpe, calor, contaminación, fuga, alarma anormal, doble sello sin ajuste o mica dañada, limpia sus piezas conforme al fabricante y registra cilindro, válvula y acople autorizados."
+        "La máscara es de silicón hipoalergénico, con visión de 180°, doble sello y mica de policarbonato antirrayas y antiempaño. Se sujeta con una malla de Nomex y Kevlar de cinco puntos que reparte la presión en la cabeza.",
+        "La espaldera es ligera y lleva la carga a la cadera, no a los hombros, lo que se agradece en entradas largas. Sus correas están revestidas de Nomex y Kevlar, y tiene manija de arrastre para mover a un compañero.",
+        "Los 60 minutos son nominales: el tiempo real depende del esfuerzo y de la respiración de cada usuario. El aire se planea con reserva, no con el número del cilindro."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código?",
-          "a": "SCBA-P60FC."
+          "q": "¿Qué norma declara el ERA Sköld Phantöm?",
+          "a": "Sköld lo declara acorde a NFPA edición 1997 y CE EN 137:2006. Es una declaración anterior a la NFPA 1970 vigente, y así lo indicamos en su ficha."
         },
         {
-          "q": "¿Declara NFPA vigente?",
-          "a": "No: declara una referencia NFPA edición 1997, que es antigua."
+          "q": "¿Cuánto aire tiene el Sköld Phantöm?",
+          "a": "Un cilindro de fibra de carbono de 60 minutos nominales a 4,500 psi. El tiempo real depende del esfuerzo y de cada usuario."
         },
         {
-          "q": "¿Cuánto aire declara?",
-          "a": "60 minutos nominales a 4,500 psi."
+          "q": "¿Qué máscara trae el Phantöm?",
+          "a": "Una máscara panorámica de silicón hipoalergénico con visión de 180°, doble sello y mica antirrayas y antiempaño, sujeta con malla de Nomex y Kevlar."
         },
         {
-          "q": "¿Qué debe probarse con la máscara?",
-          "a": "Sello facial, capucha, casco, acceso al regulador y visibilidad durante movimiento."
+          "q": "¿Qué alarmas tiene el Sköld Phantöm?",
+          "a": "Prealarma y alarma de baja presión, además de la alarma audible del regulador de primera etapa. Su ficha no declara un PASS integrado."
         },
         {
-          "q": "¿Qué se inspecciona tras uso?",
-          "a": "Máscara, mica, válvulas, correas, acoples, cilindro e indicadores."
-        },
-        {
-          "q": "¿La autonomía es tiempo garantizado?",
-          "a": "No; cambia con el consumo y las condiciones de la intervención."
+          "q": "¿Cómo se prueba el Phantöm antes de comprarlo?",
+          "a": "Con casco, capucha y chaquetón puestos: el usuario se coloca la máscara, mueve cuello y brazos y confirma que el sello se mantiene y que alcanza la válvula."
         }
       ],
       "imagen": {
@@ -647,7 +709,21 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "60 min nominales",
         "4,500 psi",
         "NFPA 1997 declarada"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "El Sköld Phantöm se identifica con el código SCBA-P60FC. La tabla reúne cilindro, presión y norma tal como los publica su ficha.",
+          "La norma aparece como declaración del fabricante y con su edición original. Si tu requisito es NFPA 1970, pide el respaldo aplicable antes de ordenar."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del Phantöm: cilindro, máscara, reguladores, espaldera y alarmas.",
+          "Todo se cotiza como un solo conjunto. Mezclar piezas con otros equipos cambia la conexión y deja sin validez la prueba de compatibilidad."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del Sköld Phantöm: norma, aire, máscara, alarmas y prueba de uso.",
+          "Si nos dices cuántos usuarios son y cómo recargan, te mandamos la cotización con la configuración completa."
+        ]
+      }
     },
     {
       "id": "msa-g1-industrial",
@@ -664,52 +740,43 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "material": "Cilindro de fibra de carbono",
       "tallas": "Máscara G1 talla M",
       "caracteristicas": [
-        "60 minutos nominales a 4,500 psi con cilindro de fibra de carbono y certificación DOT",
-        "Conexión roscada y cinta fotoluminiscente verde que indica presión",
-        "Arnés de Kevlar de cinco puntos con pad, correa al pecho y banda metálica de cilindro",
-        "Regulador de segunda etapa de cubierta dura y manómetro análogo",
+        "Cilindro de fibra de carbono DOT de 60 minutos a 4,500 psi",
+        "Conexión roscada",
+        "Cinta fotoluminiscente verde que indica presión",
+        "Arnés de Kevlar de cinco puntos con banda metálica",
+        "Regulador de segunda etapa de cubierta dura",
+        "Manómetro análogo",
         "Máscara G1 talla M con copa nasal y diafragma para hablar",
-        "Cintas con recubrimiento de nanoesferas; hombreras y soporte lumbar opcionales",
-        "Caja rígida",
-        "Aplicación industrial: integra permiso, monitoreo, vigilancia, comunicación y rescate; confirma la talla M de máscara y los accesorios opcionales antes de cerrar la configuración.",
-        "Preparación de disponibilidad: conserva la unidad en su caja rígida cuando se traslade, registra la inspección de arnés, regulador, manómetro, conexión roscada y máscara, y separa cualquier componente con daño o desempeño irregular. La carga con aire respirable y el control de la etiqueta del cilindro se coordinan con el permiso de entrada. Esta disciplina permite que la brigada conozca qué equipo está disponible antes de recibir una emergencia industrial."
+        "Hombreras y soporte lumbar opcionales",
+        "Caja rígida"
       ],
       "notaCompra": "Antes de ordenar el MSA G1 Industrial, confirma máscara G1 talla M, conexión roscada, cilindro DOT de 4,500 psi y los accesorios opcionales requeridos; la partida debe conservar el alcance industrial NIOSH declarado.",
       "resumen": [
-        "Surtimos el MSA G1 Industrial 10217600 para brigadas, industria y espacios confinados con cilindro de fibra de carbono DOT a 4,500 psi, 60 minutos nominales y máscara G1 talla M. Elige este ERA cuando tu entrada esté definida por permiso, monitoreo, vigilancia, comunicación y rescate, no para combate estructural.",
-        "Cotizamos conexión roscada, arnés de Kevlar de cinco puntos, regulador de cubierta dura y los opcionales que requiera tu brigada. Envíanos por WhatsApp tu casco, protección ocular, línea de vida y maniobra para probar la talla M y confirmar que el conjunto certificado NIOSH 42 CFR Parte 84 responde a tu operación industrial."
+        "El MSA G1 Industrial 10217600 es un equipo de respiración autónoma para brigadas industriales y espacios confinados, con certificación NIOSH 42 CFR Parte 84.",
+        "Lleva cilindro de fibra de carbono con certificación DOT, de 60 minutos nominales a 4,500 psi, conexión roscada, arnés de Kevlar de cinco puntos y máscara G1 talla M.",
+        "Es un equipo de alcance industrial: no se asigna a combate estructural. Para ataque interior te cotizamos un ERA conforme a NFPA 1970."
       ],
       "descripcion": [
-        "Elige el MSA G1 Industrial 10217600 para brigadas, industria o espacios confinados cuando tu orden requiera certificación NIOSH 42 CFR Parte 84, cilindro de fibra de carbono DOT a 4,500 psi y 60 minutos nominales. Escríbenos código, alcance industrial, conexión roscada y máscara G1 talla M; si tu tarea es combate estructural, pide un ERA conforme a NFPA 1970 en vez de extender esta configuración.",
-        "Su cilindro usa conexión roscada y cinta fotoluminiscente verde que indica presión, con arnés de Kevlar de cinco puntos, pad, correa al pecho y banda metálica. El regulador de segunda etapa tiene cubierta dura y el manómetro es análogo. En la prueba de uso, ajusta el arnés con casco, protección ocular y línea de vida; si el acceso, la extracción o la lectura de presión se dificultan, pide otra configuración antes de ordenar.",
-        "La máscara G1 talla M incorpora copa nasal y diafragma para hablar; las cintas tienen recubrimiento de nanoesferas con resistencia declarada al agua y químicos. Surtimos caja rígida para traslado y confirmamos hombreras y soporte lumbar solo como opcionales. Pídelos si tu prueba con traje, casco o herramienta los requiere, y conserva conexión roscada, regulador y cilindro como la misma familia de ERA.",
-        "Para una entrada industrial, verificamos contigo permiso, ruta de extracción, vigilancia, comunicación, conexión roscada, banda metálica, arnés de Kevlar, regulador y manómetro antes de aceptar un lote. Haz la prueba con la máscara G1 talla M y comunica presión y salida conforme a tu procedimiento. Si la cinta fotoluminiscente, el sello o el acceso al regulador fallan, separa la unidad y solicita servicio antes de asignarla.",
-        "MSA declara certificación NIOSH 42 CFR Parte 84 para esta configuración industrial; no la presentamos como certificación para combate estructural. Pide su declaración de conformidad con la cotización. Después de una exposición, limpia la interfaz facial conforme al fabricante, inspecciona cubierta dura, arnés, cilindro DOT y caja rígida, y retira cualquier componente con daño, sello comprometido o desempeño irregular."
+        "El G1 se integra al permiso de entrada, al monitoreo de la atmósfera y al plan de rescate de la planta. Su cinta fotoluminiscente verde indica la presión y facilita la lectura con poca luz.",
+        "El arnés de Kevlar de cinco puntos lleva pad, correa al pecho y banda metálica de cilindro. El regulador de segunda etapa tiene cubierta dura y la máscara G1 incluye copa nasal y diafragma para hablar.",
+        "Hombreras y soporte lumbar son opcionales, no vienen incluidos. Se piden si la prueba de uso los justifica, y se traslada en su caja rígida."
       ],
       "faq": [
         {
-          "q": "¿Para qué operación se usa?",
-          "a": "Para brigadas, industria y espacios confinados dentro del análisis de riesgo y procedimiento aplicable."
+          "q": "¿Para qué se usa el MSA G1 Industrial?",
+          "a": "Para brigadas industriales y entrada a espacios confinados, dentro del permiso, el monitoreo y el plan de rescate de la instalación."
         },
         {
-          "q": "¿Sirve para combate estructural?",
-          "a": "No. La ficha comunica una certificación industrial NIOSH; combate requiere ERA conforme a NFPA 1970."
+          "q": "¿El MSA G1 Industrial sirve para combate estructural?",
+          "a": "No. Su certificación NIOSH 42 CFR Parte 84 es de uso industrial. Para fuego interior se requiere un ERA conforme a NFPA 1970."
         },
         {
-          "q": "¿Qué talla de máscara incluye?",
-          "a": "Máscara G1 talla M."
+          "q": "¿Qué talla de máscara trae el MSA G1 Industrial?",
+          "a": "La máscara G1 talla M. Conviene confirmar el sello con cada usuario antes de cerrar la compra."
         },
         {
-          "q": "¿Qué certificación declara?",
-          "a": "NIOSH 42 CFR Parte 84."
-        },
-        {
-          "q": "¿Qué se verifica antes de entrar?",
-          "a": "Permiso, presión, conexión, arnés, máscara, comunicación y plan de salida."
-        },
-        {
-          "q": "¿Qué accesorios son opcionales?",
-          "a": "Hombreras y soporte lumbar, sujetos a confirmación de la configuración."
+          "q": "¿Qué accesorios son opcionales en el G1 Industrial?",
+          "a": "Las hombreras y el soporte lumbar. Se cotizan aparte si la prueba de uso los justifica."
         }
       ],
       "imagen": {
@@ -734,7 +801,21 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
         "NIOSH",
         "60 min nominales",
         "Uso industrial"
-      ]
+      ],
+      "duos": {
+        "ficha": [
+          "El MSA G1 Industrial se identifica con el código 10217600. La tabla reúne cilindro, máscara y certificación tal como los publica su ficha.",
+          "La certificación NIOSH define su alcance industrial. Pide que quede escrita así en la cotización para que nadie lo reasigne a combate."
+        ],
+        "caracteristicas": [
+          "Estas son las características que publica la ficha del G1 Industrial, con los opcionales marcados como tales.",
+          "La conexión roscada y la talla M de máscara son los dos datos que más conviene confirmar antes de ordenar."
+        ],
+        "faq": [
+          "Respondemos lo que más se pregunta del MSA G1 Industrial: uso, alcance, máscara y opcionales.",
+          "Si nos compartes el tipo de espacio y cuántos usuarios son, te decimos qué configuración cotizar."
+        ]
+      }
     }
   ]
 };

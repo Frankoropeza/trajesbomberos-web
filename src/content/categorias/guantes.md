@@ -61,7 +61,7 @@ secciones:
     eyebrow: "Preguntas frecuentes"
     titulo: "Preguntas sobre guantes de bombero"
     duo:
-      - "Lo que más nos preguntan antes de pedir guantes: si el estructural sirve para rescate, qué talla pedir, qué son las barreras en todo el guante, cómo se limpian y cuándo toca retirarlos."
+      - "En guantes, la primera duda es si el estructural sirve para rescate; la segunda, qué talla pedir. Después vienen las barreras en todo el guante, cómo se limpian y cuándo toca retirarlos."
       - "Para reponer un guante que ya usas, mándanos el modelo y una foto del par por el formulario. Se abre WhatsApp con tu pregunta de guantes lista y te contestamos en día hábil."
   guias:
     eyebrow: "Blog técnico"

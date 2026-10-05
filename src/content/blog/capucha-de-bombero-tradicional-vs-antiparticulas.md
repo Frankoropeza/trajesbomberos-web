@@ -61,7 +61,7 @@ La [Sköld FPEN](/capuchas/skold-fpen/) declara 100 % Nomex, dos capas en cabeza
 
 FPEN es tamaño universal y declara cabeza de 13 pulgadas, babero de cuatro pulgadas y total de 17 pulgadas. Sus costuras usan hilo 100 % Nomex. Elástico, abertura y babero se revisan con máscara de ERA y casco: el material debe quedar extendido en hombros, sin dejar canal hacia el cuello ni comprimir el sello facial. La talla universal describe una opción de catálogo; no elimina la comprobación individual de giro de cabeza, mirada hacia arriba, hombros y cierre de chaquetón.
 
-El fabricante declara TPP de 30.2 cal/cm², ATPV de 6.3 cal/cm² para una capa HRC 1 y 11.2 cal/cm² para dos capas HRC 2, resistencia al rasgado de 865 N, ruptura de costura de 1110 N y contracción de 0 % tras cinco lavadas. También declara referencias de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269. Se conservan como declaraciones del fabricante y se solicitan con la cotización; no sustituyen la confirmación de conformidad de la configuración que se entrega.
+El fabricante declara TPP de 30.2 cal/cm², ATPV de 6.3 cal/cm² para una capa HRC 1 y 11.2 cal/cm² para dos capas HRC 2. También publica resistencia al rasgado de 865 N, ruptura de costura de 1110 N y contracción de 0 % tras cinco lavadas. También declara referencias de tela NFPA 1971-2013, ASTM F1959, Cal-OSHA y OSHA 29 CFR 1910.269. Se conservan como declaraciones del fabricante y se solicitan con la cotización; no sustituyen la confirmación de conformidad de la configuración que se entrega.
 
 ## Lavado después de exposición
 
@@ -75,7 +75,7 @@ La dotación debe prever al menos una pieza de reemplazo por el ciclo de lavado 
 
 Retira por agujeros, costuras abiertas, pérdida de elasticidad, contaminación persistente o condición que afecte la interfaz. Inspecciona abertura, tela, babero y costuras antes de reasignar.
 
-Revisa antes y después de uso el tejido contra luz, uniones, elástico, abertura facial y borde del babero. Un agujero pequeño, fibra carbonizada, costura abierta, pérdida de recuperación, estiramiento permanente, olor o contaminación que no se resuelve son motivos para separarla. El lavado permite inspeccionar, no vuelve a servicio una capucha que ya no conserva cobertura. Para la capucha antipartículas publicada, la ficha señala retiro máximo de diez años desde fabricación y que la reposición suele ser más frecuente por elasticidad y sello; se mantiene ese criterio como información de esa configuración, no como fecha atribuida a PAC II, CAP1005 o FPEN.
+Revisa antes y después de uso el tejido contra luz, uniones, elástico, abertura facial y borde del babero. Un agujero pequeño, fibra carbonizada, costura abierta, pérdida de recuperación, estiramiento permanente, olor o contaminación que no se resuelve son motivos para separarla. El lavado permite inspeccionar, no vuelve a servicio una capucha que ya no conserva cobertura. Para la capucha antipartículas publicada, la ficha señala retiro máximo de diez años desde fabricación y una reposición más frecuente por elasticidad y sello. Ese criterio es de esa configuración; no es una fecha atribuida a PAC II, CAP1005 o FPEN.
 
 ## Relación con el traje
 

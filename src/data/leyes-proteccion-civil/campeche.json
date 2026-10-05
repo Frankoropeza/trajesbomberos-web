@@ -1,0 +1,116 @@
+{
+  "slug": "campeche",
+  "nombreOficial": "Ley de Protección Civil, Prevención y Atención de Desastres del Estado de Campeche",
+  "numero": null,
+  "publicacion": {
+    "medio": "Periódico Oficial del Estado de Campeche",
+    "fecha": "2011-11-18"
+  },
+  "ultimaReforma": "2024-10-09",
+  "urlOficial": "https://legislacion.congresocam.gob.mx/index.php/etiquetas-x-materia/71-ley-de-proteccion-civil-prevencion-y-atencion-de-desastres-del-estado-de-campeche/file",
+  "reglamento": null,
+  "autoridadEstatal": {
+    "nombre": "Secretaría de Protección Civil del Estado de Campeche",
+    "articulo": "Art. 34",
+    "cita": "La Secretaría, es la estructura técnico-operativa del Sistema Estatal de Protección Civil. Es un Organismo Centralizado del Poder Ejecutivo del Estado de Campeche."
+  },
+  "lead": "La Ley de Protección Civil, Prevención y Atención de Desastres del Estado de Campeche establece qué inmuebles necesitan unidad interna, programa interno y medidas de seguridad. Esta guía resume sus obligaciones con artículo y cita literal para empresas y brigadas.",
+  "panorama": [
+    "Expedida por el Decreto 163 y publicada el 18 de noviembre de 2011, con última reforma del 9 de octubre de 2024, la ley regula las acciones de protección civil y el funcionamiento de los sistemas estatal y municipales (Art. 1). Su Art. 60 enumera a quienes deben tener Unidad Interna: fábricas, comercios, oficinas, hospitales, cines, gasolineras y todo inmueble con afluencia de personas.",
+    "La Secretaría de Protección Civil es la estructura técnico-operativa del sistema estatal y un organismo centralizado del Ejecutivo (Art. 34); el Cuerpo de Bomberos del Estado forma parte de ella (Art. 39). Cada ayuntamiento cuenta con una Dirección Municipal de Protección Civil (Art. 40), que revisa y autoriza los programas internos de las empresas de su jurisdicción (Art. 56)."
+  ],
+  "obligaciones": [
+    {
+      "sujeto": "Fábricas, comercios, hospitales, escuelas y gasolineras",
+      "obligacion": "Contar con una Unidad Interna que implemente el programa de protección civil; aplica también a todo inmueble con afluencia de personas.",
+      "articulo": "Art. 60",
+      "cita": "y los inmuebles que por su uso y destino reciban afluencia de personas o concentraciones masivas, deberán contar con una Unidad Interna que implementará el Programa correspondiente"
+    },
+    {
+      "sujeto": "Empresas de bienes y servicios",
+      "obligacion": "Tener el programa interno autorizado por la autoridad municipal; sin él no se otorga la licencia de funcionamiento.",
+      "articulo": "Art. 56",
+      "cita": "No podrán otorgarse licencias de funcionamiento a las personas físicas o morales que no cuenten con su programa interno de protección civil autorizado por la instancia correspondiente."
+    },
+    {
+      "sujeto": "Propietarios o poseedores de inmuebles del Art. 60",
+      "obligacion": "Contar con salidas de emergencia, escaleras de emergencia si hay tres o más niveles, y equipos de seguridad y señales en sitios visibles.",
+      "articulo": "Art. 61",
+      "cita": "deberán contar con salidas de emergencia y, en el caso de los inmuebles de tres o más niveles, deberán contar con escaleras de emergencia; a su vez, los propietarios o poseedores de dichas edificaciones, deberán colocar en sitios visibles equipos de seguridad"
+    },
+    {
+      "sujeto": "Empresas de riesgo y de alto riesgo",
+      "obligacion": "Contar con análisis de riesgo, un Programa Externo para emergencias mayores y póliza de seguro de responsabilidad civil y daños a terceros.",
+      "articulo": "Art. 63",
+      "cita": "Además, deberán contar con una póliza de seguros de cobertura amplia de responsabilidad civil y daños a terceros que ampare la eventualidad de un siniestro."
+    },
+    {
+      "sujeto": "Empresas que usan materiales o residuos peligrosos",
+      "obligacion": "Informar cada semestre a la Dirección Municipal sobre productos, contenedores, capacitación y equipo para fugas, derrames e incendios.",
+      "articulo": "Art. 64",
+      "cita": "En caso de que las empresas señaladas en el artículo anterior usen materiales o residuos peligrosos, deberán informar semestralmente a la Dirección Municipal de Protección Civil"
+    },
+    {
+      "sujeto": "Organizadores de eventos públicos masivos",
+      "obligacion": "Acreditar la participación de bomberos, servicios médicos prehospitalarios y seguridad, además de presentar el programa de seguridad del evento.",
+      "articulo": "Art. 71, fr. II",
+      "cita": "Presentar los documentos que avalen la participación de, cuando menos, los Cuerpos de Bomberos, de servicios médicos pre hospitalarios, y de la participación de empresas de seguridad pública o privada;"
+    },
+    {
+      "sujeto": "Entes obligados a tener Unidad Interna",
+      "obligacion": "Integrarse en Comités Locales de Ayuda Mutua y darse de alta ante la Dirección Municipal de Protección Civil que corresponda.",
+      "articulo": "Art. 62",
+      "cita": "Todos los Entes a que se refiere el artículo 60 de esta Ley, deberán constituirse o integrarse en Comités Locales de Ayuda Mutua, y deberán registrarse ante la Dirección Municipal de Protección Civil correspondiente"
+    },
+    {
+      "sujeto": "Quienes contratan consultores o capacitadores",
+      "obligacion": "Verificar que el tercero esté autorizado por la Secretaría; sin esa autorización, programas y cursos carecen de valor jurídico (Art. 91).",
+      "articulo": "Art. 92",
+      "cita": "Las personas físicas o morales que contraten a terceros para que elaboren los cursos o Programas Internos deben corroborar que tengan el registro referido en el artículo 90 de esta Ley."
+    }
+  ],
+  "brigadasDuo": [
+    "La ley define la Unidad Interna como el órgano que elabora, actualiza, opera y vigila el Programa Interno, y aclara que también se le conoce como brigada institucional (Art. 4). El programa debe incluir objetivos, antecedentes de desastres en la región y subprogramas de prevención, auxilio y recuperación (Art. 54); las Direcciones Municipales asesoran gratis para elaborarlo (Art. 55).",
+    "Una brigada, según la ley, es un grupo capacitado en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate (Art. 4). La ley no fija cuántos simulacros hacer, pero la base de datos estatal de empresas anota los simulacros y cursos realizados (Art. 99), y los cursos o programas de quien no esté autorizado carecen de valor jurídico (Art. 91)."
+  ],
+  "equipoDuo": [
+    "En Campeche, los inmuebles del Art. 60 deben colocar en sitios visibles equipos de seguridad, señalización y luces de emergencia (Art. 61), y las empresas que manejan materiales peligrosos informan cada semestre qué equipo tienen para fugas, derrames, incendios y explosiones (Art. 64). La NOM-002-STPS-2010, norma federal, ayuda a definir extintores y equipo de brigada.",
+    "En LORICA surtimos a brigadas institucionales con <a href=\"/trajes/brigadista/\">trajes para brigadista</a> y <a href=\"/equipo-de-proteccion/\">equipo de protección</a> para evacuación, rescate y primeros auxilios. Cuando la operación incluye materiales peligrosos o combate a conatos, la NOM-017-STPS-2024 sirve para seleccionar el equipo de protección personal según cada puesto."
+  ],
+  "sancionesDuo": [
+    "La Secretaría o las Direcciones Municipales pueden aplicar amonestación, clausura temporal o definitiva, total o parcial, multa, suspensión de obras, instalaciones o servicios y arresto administrativo hasta por 36 horas (Art. 155). Entre las causas están impedir inspecciones o desatender medidas de seguridad (Art. 153)."
+  ],
+  "faqs": [
+    {
+      "q": "¿Cuál es la ley de protección civil vigente en Campeche y dónde se consulta?",
+      "a": "Es la Ley de Protección Civil, Prevención y Atención de Desastres del Estado de Campeche, publicada el 18 de noviembre de 2011 en el Periódico Oficial del Estado. Su última reforma, el Decreto 413, se publicó el 9 de octubre de 2024. El texto está en el portal de legislación del Congreso del Estado."
+    },
+    {
+      "q": "¿Quién debe tener Unidad Interna y programa interno en Campeche?",
+      "a": "El Art. 60 incluye a dependencias públicas, fábricas, industrias, comercios, oficinas, centros educativos, hospitales, cines, mercados, gaseras, gasolineras y todo inmueble con afluencia de personas. Sin programa interno autorizado no se otorga licencia de funcionamiento (Art. 56)."
+    },
+    {
+      "q": "¿Qué dice la ley de Campeche sobre brigadas?",
+      "a": "Define la brigada como un grupo capacitado en primeros auxilios, combate a conatos de incendio, evacuación, búsqueda y rescate, designado en la Unidad Interna (Art. 4). También llama brigadas institucionales a las Unidades Internas que operan el Programa Interno."
+    },
+    {
+      "q": "¿Qué deben hacer las empresas de alto riesgo en Campeche?",
+      "a": "Según el Art. 63, deben contar con análisis de riesgo y vulnerabilidad, un Programa Externo para emergencias que rebasen su capacidad interna y una póliza de seguro de responsabilidad civil y daños a terceros. Si usan materiales peligrosos, informan cada semestre a la Dirección Municipal (Art. 64)."
+    },
+    {
+      "q": "¿Qué equipo necesita una brigada interna en Campeche?",
+      "a": "La ley no da una lista, pero exige equipos de seguridad visibles, señalización y luces de emergencia en los inmuebles obligados (Art. 61). En la práctica, una brigada suele usar casco, guantes, calzado de seguridad, chaleco de alta visibilidad, botiquín y extintores, según su análisis de riesgo y la NOM-002-STPS-2010."
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "Congreso del Estado de Campeche · Ley de Protección Civil, Prevención y Atención de Desastres (PDF)",
+      "url": "https://legislacion.congresocam.gob.mx/index.php/etiquetas-x-materia/71-ley-de-proteccion-civil-prevencion-y-atencion-de-desastres-del-estado-de-campeche/file"
+    },
+    {
+      "nombre": "Congreso del Estado de Campeche · Legislación estatal por orden alfabético",
+      "url": "https://legislacion.congresocam.gob.mx/index.php/leyes-estatales/por-orden-alfabetico"
+    }
+  ],
+  "verificadoEl": "2026-09"
+}

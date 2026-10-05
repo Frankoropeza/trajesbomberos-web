@@ -1,39 +1,39 @@
 {
- "lead": "Por ahora tenemos localizadas 7 estaciones de bomberos en 5 municipios de Hidalgo, con presencia doble en Pachuca de Soto y Tula de Allende. Encontrarás dirección cuando está publicada, teléfono oficial, ubicación y quién opera cada corporación.",
+ "lead": "Tenemos localizadas 13 estaciones de bomberos en 11 municipios de Hidalgo; Pachuca de Soto y Tula de Allende tienen 2 cada uno. Encontrarás teléfono oficial en más de un tercio, ubicación, domicilio cuando se conoce y la corporación que opera cada estación.",
  "panorama": [
-  "El servicio de bomberos en Hidalgo combina corporaciones municipales con cuerpos voluntarios, una instancia estatal y una brigada de emergencias PEMEX en Tula de Allende. Pachuca de Soto reúne la Dirección municipal y la Subsecretaría estatal; en Huejutla de Reyes y Tulancingo de Bravo participan organizaciones voluntarias. Esta composición requiere que cada compra parta del riesgo y función de la corporación.",
-  "Pachuca de Soto y Tula de Allende concentran 2 estaciones cada uno; las demás están en Huejutla de Reyes, Ixmiquilpan y Tulancingo de Bravo. Para una coordinación estatal, la dispersión vuelve relevante planear entregas por corporación. En Tula coinciden atención municipal y una brigada PEMEX, con requerimientos que no son equivalentes."
+  "Los bomberos en Hidalgo dependen sobre todo de los ayuntamientos: 9 de las estaciones son corporaciones municipales de protección civil y bomberos. Completan el mapa la Subsecretaría estatal de Protección Civil, en Pachuca, la brigada PEMEX de la Refinería Miguel Hidalgo, en Tula, y dos cuerpos voluntarios: Pro Bomberos Huejutla de Reyes y el Heroico Cuerpo de Bomberos Voluntarios del Estado de Hidalgo, con base en Mineral de la Reforma.",
+  "Pachuca de Soto y Tula de Allende son los municipios con más operación, y Mineral de la Reforma suma un cuerpo voluntario junto a la capital. El sur del estado agrega corporaciones municipales en Tizayuca, Tepeji del Río de Ocampo, Apan y Tepeapulco. Para quien equipa corporaciones en Hidalgo, casi todo el trato es con ayuntamientos, y en Tula conviven necesidades urbanas e industriales."
  ],
  "estacionesDuo": [
-  "La Dirección de Protección Civil, Bomberos y Gestión Integral de Riesgos de Pachuca de Soto convive con la Subsecretaría estatal. En Tula de Allende están la Dirección municipal y la Brigada de Emergencias PEMEX Refinería Miguel Hidalgo. Las estaciones se agrupan por municipio y muestran teléfono oficial cuando fue publicado."
+  "Entre las corporaciones destacan la Dirección de Protección Civil, Bomberos y Gestión Integral de Riesgos de Pachuca de Soto y la CREI — Brigada de Emergencias PEMEX Refinería Miguel Hidalgo, en Tula de Allende. Las estaciones se agrupan por municipio, con teléfono oficial en 5 de ellas."
  ],
  "coberturaDuo": [
-  "El incendio estructural está declarado en las 7 estaciones, mientras 5 incluyen rescate vehicular y atención prehospitalaria. Pachuca y la brigada PEMEX de Tula reportan materiales peligrosos; esta última contempla fugas de gas. Hay espacios confinados y fuego forestal, riesgos que requieren protección por tarea."
+  "El incendio estructural es el servicio más común, declarado en 9 estaciones, seguido de la atención prehospitalaria y el rescate vehicular. Materiales peligrosos aparece en Pachuca y la refinería de Tula; las fugas de gas, en Tizayuca y la brigada PEMEX, y el fuego forestal lo atiende la Subsecretaría estatal."
  ],
  "equipoDuo": [
-  "La protección para incendio estructural debe cubrir a toda corporación. El rescate vehicular pide <a href=\"/trajes/extricacion/\">ropa de extricación</a>, y las intervenciones de fuego forestal justifican <a href=\"/trajes/forestal/\">trajes forestales</a>. Para materiales peligrosos, fugas de gas o espacios confinados, la selección debe incluir protección Hazmat y respiratoria adecuada al procedimiento de la brigada.",
-  "LORICA entrega una especificación técnica por partida para integrar licitación o compra directa y respalda el expediente solicitado. La corporación recibe CFDI 4.0, sin compra mínima, con envío a Hidalgo. También puede solicitar <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> y complementos definidos para su riesgo operativo."
+  "Las direcciones municipales parten de <a href=\"/trajes/estructural/\">trajes estructurales</a> y de <a href=\"/trajes/extricacion/\">trajes de extricación</a> para el rescate vehicular. Pachuca, con espacios confinados y materiales peligrosos, y la brigada de Tula necesitan protección Hazmat y respiratoria; la Subsecretaría, prendas forestales para incendios en campo.",
+  "LORICA cotiza por partida y entrega la ficha técnica que pide una licitación municipal, además de atender compras directas. Facturamos con CFDI 4.0, no hay compra mínima y enviamos a Hidalgo. Suma <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> si tu corporación atiende fugas de gas o trabaja en espacios confinados."
  ],
  "faqs": [
   {
    "q": "¿Cuántas estaciones de bomberos hay en Hidalgo y dónde están?",
-   "a": "Por ahora están localizadas 7 estaciones de bomberos en 5 municipios de Hidalgo. Pachuca de Soto y Tula de Allende concentran 2 cada uno; también hay corporaciones en Huejutla de Reyes, Ixmiquilpan y Tulancingo de Bravo. Si conoces una estación que falta, escríbenos."
+   "a": "Tenemos localizadas 13 estaciones de bomberos en Hidalgo, en 11 municipios. Pachuca de Soto y Tula de Allende tienen 2; Actopan, Apan, Huejutla de Reyes, Ixmiquilpan, Mineral de la Reforma, Tepeapulco, Tepeji del Río de Ocampo, Tizayuca y Tulancingo de Bravo, una cada uno. Si falta alguna, escríbenos."
   },
   {
    "q": "¿Quién opera los cuerpos de bomberos en Hidalgo?",
-   "a": "Los bomberos en Hidalgo incluyen corporaciones municipales de Pachuca, Tula e Ixmiquilpan, cuerpos voluntarios en Huejutla de Reyes y Tulancingo de Bravo, una instancia estatal y una brigada de emergencias PEMEX en Tula de Allende."
+   "a": "Predominan las corporaciones municipales: 9 de las 13 estaciones dependen de ayuntamientos, entre ellas Pachuca, Tula, Tepeapulco y Tulancingo de Bravo. También operan la Subsecretaría estatal de Protección Civil, la brigada PEMEX de Tula y dos cuerpos voluntarios, en Huejutla de Reyes y Mineral de la Reforma."
   },
   {
    "q": "¿Cómo contactar a una estación de bomberos en Hidalgo para una gestión?",
-   "a": "Localiza la estación por municipio y usa su teléfono oficial cuando esté publicado para solicitar capacitación, presentar una donación o consultar un dictamen. El contacto debe dirigirse a la corporación operadora. Para reportar una emergencia llama al 911, no a un teléfono administrativo."
+   "a": "Tienen teléfono oficial publicado las corporaciones de Actopan, Ixmiquilpan, Tepeji del Río y Tulancingo de Bravo, además de la Subsecretaría estatal. Úsalo para capacitación, donaciones o dictámenes con la corporación de tu municipio. En una emergencia en Hidalgo, llama al 911."
   },
   {
    "q": "¿Qué riesgos atienden los bomberos en Hidalgo?",
-   "a": "Los bomberos en Hidalgo declaran incendios estructurales, rescate vehicular y atención prehospitalaria como servicios comunes. También se reportan materiales peligrosos, fugas de gas, espacios confinados, incendios forestales y protección civil, con presencia particular de estos riesgos en Pachuca y Tula."
+   "a": "Sobre todo incendio estructural, atención prehospitalaria y rescate vehicular. Pachuca suma espacios confinados y materiales peligrosos; la brigada PEMEX de Tula, materiales peligrosos y fugas de gas, y Tizayuca también declara fugas. La Subsecretaría estatal atiende incendio forestal."
   },
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Hidalgo?",
-   "a": "Una corporación de bomberos en Hidalgo puede optar por licitación o compra directa. LORICA prepara especificación técnica por partida, integra el expediente requerido y emite CFDI 4.0. No hay compra mínima y el envío se coordina al estado según la dotación elegida."
+   "a": "Si tu ayuntamiento compra por licitación, LORICA prepara la ficha técnica de cada partida para el expediente; si es compra directa, cotizamos igual. Facturamos con CFDI 4.0, sin compra mínima, y enviamos a cualquier municipio de Hidalgo."
   }
  ]
 }
