@@ -15,8 +15,8 @@ hero:
   h1Accent: "por tipo de riesgo"
   lead: "Estructural, brigadista, forestal, aproximación, entrada, extricación y Hazmat. Son siete trajes para siete riesgos distintos, y ninguno sustituye a otro."
   descRight:
-    - "Casi todas las compras que salen mal empiezan igual: se comparan precios de trajes que no protegen para lo mismo. Uno de brigadista y uno estructural se ven parecidos en la foto, pero solo el segundo está hecho para entrar a una casa en llamas. Aquí te explicamos cada familia como la especificamos en una requisición: para qué sirve, cómo está construida y cuándo te conviene otra."
-    - "En LORICA llevamos más de 35 años equipando bomberos. Te mandamos la ficha técnica desde el primer mensaje, con la norma vigente (NFPA 1970, la que sustituyó a la NFPA 1971) y factura CFDI. Puedes pedir una sola pieza o el conjunto completo, y enviamos a los 32 estados."
+    - "Casi todas las compras que salen mal empiezan igual: se comparan precios de trajes que no protegen para lo mismo. Uno de brigadista y uno estructural se ven parecidos en la foto, pero solo el segundo está hecho para entrar a una casa en llamas. Aquí te explicamos cada familia como la especificamos en una requisición: para qué tipo de combate contra incendios sirve, cómo está diseñada, qué características revisa el usuario y cuándo te conviene otra."
+    - "En LORICA llevamos más de 35 años equipando bomberos. Te mandamos la ficha técnica del fabricante desde el primer mensaje, con el estándar vigente (NFPA 1970, la que sustituyó a la NFPA 1971) y factura CFDI. Puedes pedir una sola pieza o el conjunto completo, y enviamos a los 32 estados."
   meta: ["7 familias de traje", "14 modelos con ficha", "Sin compra mínima", "Envíos a los 32 estados"]
 menu:
   tipos: "Tipos de traje"
@@ -165,7 +165,7 @@ comparativaModelos:
     label: "Preguntar qué traje de bombero me corresponde"
     mensaje: "Hola, necesito ayuda para elegir el traje de bombero que corresponde a mi operación."
 faqs:
-  - q: "¿Cuántos tipos de trajes para bomberos hay?"
+  - q: "¿Cuáles son los tipos de trajes de bombero?"
     a: "En México se manejan siete familias: estructural, brigadista, forestal, aproximación, entrada, extricación y Hazmat. No son intercambiables, porque cada una responde a un riesgo distinto. La mayoría de los problemas que vemos vienen de elegir por precio y no por la operación que hace tu gente."
   - q: "¿Cuál es la diferencia entre un traje estructural y uno de brigadista?"
     a: "El alcance de protección. El estructural lleva tres capas y está hecho para el ataque interior en una edificación en llamas. El de brigadista es para el conato en una planta: primera respuesta, control con extintor y evacuación. Se ven parecidos, pero protegen para cosas distintas y cuestan muy distinto."

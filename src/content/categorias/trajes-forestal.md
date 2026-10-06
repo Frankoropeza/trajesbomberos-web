@@ -11,7 +11,7 @@ seo:
   keywords: ["traje forestal para bombero", "traje de bombero forestal", "traje forestal"]
 hero:
   eyebrow: "Línea de fuego"
-  h1: "Traje forestal para bombero"
+  h1: "Traje de bombero forestal"
   h1Accent: "de una sola capa"
   lead: "Camisola y pantalón en fibra ignífuga inherente para incendios forestales: ligeros y transpirables para turnos de muchas horas en la línea de fuego."
   descRight:

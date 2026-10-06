@@ -7,13 +7,13 @@ ruta: "/trajes/entrada/"
 crumb: "Trajes de entrada"
 ogImagen: "/images/og/trajes-entrada.jpg"
 seo:
-  title: "Traje de entrada a la flama y penetración aluminizado"
-  description: "Traje de entrada a la flama aluminizado multicapa para ingreso breve en horno, incidente térmico severo o rescate industrial, siempre con ERA. Cotízalo."
+  title: "Traje aluminizado de entrada a la flama y penetración"
+  description: "Traje aluminizado de entrada a la flama para altas temperaturas: ingreso breve en horno o incidente térmico severo, siempre con ERA. Cotiza con ficha técnica."
   keywords: ["traje de entrada a la flama", "traje de penetración", "traje aluminizado multicapa"]
 hero:
   eyebrow: "Ingreso a la flama"
-  h1: "Traje de entrada a la flama"
-  h1Accent: "aluminizado multicapa"
+  h1: "Traje aluminizado de entrada"
+  h1Accent: "a la flama"
   lead: "El nivel más extremo del catálogo: ingreso breve a la flama en un horno, un incidente térmico severo o un rescate industrial, siempre con ERA y con protocolo."
   descRight:
     - "Pocas operaciones lo necesitan de verdad. Sirve para cruzar la flama durante un tiempo muy corto, y a cambio es pesado, rígido y reduce la visión por diseño: su objetivo es entrar, rescatar o cerrar y volver a salir. No hay norma NFPA de producto para este traje, así que se evalúa contra la ficha técnica del fabricante."
@@ -164,6 +164,10 @@ faqs:
     a: "Sí, y es la parte que más se omite. Vestirse toma tiempo, la visión es reducida y la movilidad está limitada a propósito. Un conjunto guardado sin práctica periódica da falsa seguridad. Podemos cotizar la capacitación junto con el equipo."
   - q: "¿Los conjuntos de penetración se hacen a medida?"
     a: "Vienen en talla única hasta XG. En pedidos de cinco o más conjuntos de corta duración se pueden hacer a medida. Si tu gente tiene tallas fuera de ese rango, dínoslo antes de cotizar para confirmar la opción con el fabricante."
+  - q: "¿De qué material es un traje de entrada a la flama?"
+    a: "De varias capas: una exterior con revestimiento de aluminio que refleja la radiación de calor, y debajo capas aislantes y un forro interior que frenan el calor que pasa hacia la piel. Esa construcción multicapa lo hace pesado y rígido. El número de capas y sus materiales los declara la ficha técnica del fabricante, que es contra lo que se evalúa."
+  - q: "¿Qué piezas forman un conjunto de penetración?"
+    a: "El conjunto de penetración de corta duración o avanzado, la capucha de penetración con visor doble, los guantes mitón y el pasamontañas con su talega. Para hornos hay un conjunto de mantenimiento específico. Todas las piezas deben ser del mismo nivel, porque cuello, manos y cara son los puntos donde el calor encuentra el camino más corto."
 contacto:
   asunto: "trajes de entrada a la flama"
   boton: "Enviar consulta de traje de entrada por WhatsApp"

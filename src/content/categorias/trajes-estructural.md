@@ -6,16 +6,16 @@ ruta: "/trajes/estructural/"
 crumb: "Trajes estructurales"
 ogImagen: "/images/og/trajes-estructural.jpg"
 seo:
-  title: "Equipo estructural de bomberos: traje de 3 capas NFPA 1970"
-  description: "Equipo estructural de bomberos: traje de tres capas con chaquetón, pantalonera y DRD, composite declarado y referencia NFPA 1970. Cotiza por pieza o completo."
+  title: "Traje de bombero estructural: equipo de tres capas NFPA 1970"
+  description: "Traje de bombero estructural para combate de incendios: chaquetón y pantalonera de tres capas con DRD, composite declarado y NFPA 1970. Cotiza por pieza."
   keywords: ["equipo estructural de bomberos", "traje de bombero estructural", "traje estructural para bombero"]
 hero:
   eyebrow: "Más solicitado · Trajes estructurales"
-  h1: "Traje estructural para bombero"
-  h1Accent: "de tres capas"
+  h1: "Traje de bombero estructural"
+  h1Accent: "para ataque interior"
   lead: "Chaquetón y pantalonera para ataque interior, con DRD integrado y el composite declarado capa por capa en la propuesta."
   descRight:
-    - "Es el equipo de quien entra a una edificación con fuego. Lo que protege no es una tela gruesa, sino tres capas que trabajan juntas: la exterior, la barrera de humedad y la barrera térmica. Basta que falte una para que deje de ser estructural, aunque por fuera parezca el mismo traje. Su referencia es NFPA 1970, que absorbió a NFPA 1971."
+    - "Es el equipo de quien entra a una edificación con fuego. Lo que protege no es una tela gruesa, sino tres capas que trabajan juntas: la capa externa, la barrera de humedad y la barrera térmica. Basta que falte una para que deje de ser estructural, aunque por fuera parezca el mismo traje. Su referencia es NFPA 1970, que absorbió a NFPA 1971. Esa norma de protección personal exige que un laboratorio certificador pruebe la resistencia térmica, la barrera de humedad y la durabilidad del conjunto frente a las altas temperaturas de los incendios estructurales."
     - "Es la partida más cara del equipo y la que más se especifica mal. En LORICA te damos por escrito el composite completo, con el nombre comercial de cada capa, la guía de tallas antes de pedir y la ficha técnica para tu expediente o tu licitación. Por pieza o completo, a los 32 estados."
   meta: ["NFPA 1970", "Tres capas", "DRD integrado", "7 modelos con ficha"]
 menu:
@@ -184,6 +184,10 @@ faqs:
     a: "Se toma la medida de cada persona y se combinan tallas de stock con piezas a medida donde haga falta. Calcular por promedio es el error que más devoluciones genera: un traje que no ajusta se deja de usar, y eso es peor que no tenerlo."
   - q: "¿Cómo se compara una propuesta de traje estructural con otra?"
     a: "Por el composite declarado capa por capa, por el TPP y el THL leídos juntos, por el largo y el corte, y por la certificación del conjunto con el fabricante listado. Dos ofertas que solo dicen «cumple NFPA» no son comparables por más que ambas lo digan."
+  - q: "¿Cuánto cuesta el EPP estructural de bomberos?"
+    a: "Depende del composite de cada capa, de la norma que pida tu pliego y de cuántas piezas lleva el equipo de protección personal: chaquetón, pantalonera, casco, monja, guantes, botas y ERA. No publicamos precios porque cada configuración cambia el costo. Cotizamos en día hábil con precio por partida, ficha técnica del fabricante y certificado del laboratorio, para que compares propuestas equivalentes."
+  - q: "¿Cuánto pesa un traje estructural de bombero?"
+    a: "Para el Romak Fire Protector, la ficha declara 2.5 kg de chaquetón y 1.88 kg de pantalón, unos 4.4 kg sin tirantes. Otros modelos cambian según la capa externa, la barrera de humedad y la barrera térmica que usen. El conjunto completo, con casco, botas, guantes y ERA, pesa varias veces eso; el dato de cada modelo viene en su ficha."
 contacto:
   asunto: "trajes estructurales para bombero"
   boton: "Enviar consulta de traje estructural por WhatsApp"

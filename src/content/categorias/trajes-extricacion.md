@@ -7,8 +7,8 @@ ruta: "/trajes/extricacion/"
 crumb: "Extricación y rescate"
 ogImagen: "/images/og/trajes-extricacion.jpg"
 seo:
-  title: "Traje de extricación para rescate vehicular y técnico"
-  description: "Traje de extricación para rescate vehicular y técnico: resiste corte y punción, con barrera contra patógenos. Protege tu traje estructural. Cotiza con ficha."
+  title: "Traje de extricación para bombero en rescate vehicular"
+  description: "Traje de extricación para bombero en rescate vehicular y técnico: resiste corte y punción, con barrera contra patógenos y cuida tu estructural. Cotiza."
   keywords: ["traje de extricación", "extricación vehicular", "rescate técnico"]
 hero:
   eyebrow: "Rescate técnico"
@@ -169,6 +169,10 @@ faqs:
     a: "Por su condición, no por fecha: perforaciones, cortes que comprometen la barrera, contaminación que no se quita o cinta reflejante que perdió brillo. A diferencia del estructural, aquí no hay un plazo fijo de diez años."
   - q: "¿Conviene si mi presupuesto es limitado?"
     a: "Si tu cuerpo sale seguido a accidentes viales, es de las compras que más rápido se pagan. Cada salida atendida con equipo de rescate es vida útil que conservas de un traje estructural que cuesta varias veces más y se retira a los diez años."
+  - q: "¿Qué quiere decir extricación?"
+    a: "Es la maniobra de liberar a una persona atrapada, casi siempre dentro de un vehículo después de un choque. Implica cortar, separar o retirar partes de la carrocería con herramienta hidráulica, y por eso el traje de bombero que se usa debe resistir corte, punción y fluidos. En otros países se le llama excarcelación."
+  - q: "¿Qué es el chaleco de extricación?"
+    a: "Es un dispositivo de inmovilización, no una prenda del traje. Se coloca al paciente sentado para proteger la columna y el cuello mientras se le saca del vehículo, y también se le conoce como KED. Lo usa el personal de atención prehospitalaria junto con el equipo de rescate. Nosotros cotizamos el traje y el guante del rescatista; el chaleco lo surte un proveedor de equipo médico."
 contacto:
   asunto: "trajes de extricación y rescate"
   boton: "Enviar consulta de extricación por WhatsApp"

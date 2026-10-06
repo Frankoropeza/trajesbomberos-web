@@ -181,6 +181,12 @@ faqs:
     a: "Sí, en bordado o serigrafía con material compatible con tela resistente a la flama. Hay que definirlo en la orden, porque se aplica al confeccionar. Un bordado con hilo convencional mete material combustible sobre la prenda."
   - q: "¿Cada cuánto se repone el equipo de brigada?"
     a: "No hay un plazo normativo como en el estructural. Se repone por su condición: daño mecánico, quemadura, contaminación o pérdida de integridad. En la práctica, la pantalonera se cambia antes que el chaquetón, porque rodillas y valencianas se gastan más rápido."
+  - q: "¿Cómo se viste un brigadista?"
+    a: "Con un traje de bombero brigadista completo: chaquetón y pantalonera de brigadista, o un overol ignífugo NFPA 2112, más monja y tirantes. Para salir al conato se suman casco, guantes y botas de seguridad, que cotizamos en el kit de brigadista. Su protección térmica es menor que la de un estructural, a cambio de más comodidad y movilidad para contener y evacuar."
+  - q: "¿Qué piezas incluye un traje de bombero brigadista completo?"
+    a: "El conjunto de brigada contra fuego incipiente lleva chaquetón y pantalonera; también se piden sueltos. Se completa con monja de brigada y tirantes tipo X de ocho puntos, o se sustituye por un overol ignífugo. Te enviamos el combo desglosado por pieza, con la ficha técnica de cada una y el documento que pide la auditoría de la NOM-002-STPS-2010."
+  - q: "¿Cuál es la norma para los trajes de bomberos brigadistas?"
+    a: "En México, la NOM-002-STPS-2010 obliga a dar a la brigada equipo de protección acorde a su análisis de riesgo, pero no fija una norma de producto. Como referencia técnica se usan NFPA 1970 para el conjunto contra fuego y NFPA 2112 para el overol ignífugo. Dinos qué pide tu procedimiento y lo declaramos por escrito en la cotización."
 contacto:
   asunto: "trajes de brigadista"
   boton: "Enviar consulta de brigada por WhatsApp"

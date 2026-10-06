@@ -8,7 +8,7 @@ crumb: "Trajes de aproximación"
 ogImagen: "/images/og/trajes-aproximacion.jpg"
 seo:
   title: "Traje aluminizado de aproximación para altas temperaturas"
-  description: "Traje aluminizado de aproximación para calor radiante: ARFF, refinería, fundición y hornos. Chaquetón, pantalón, capucha y guantes con ficha técnica. Cotiza."
+  description: "Traje aluminizado de aproximación para altas temperaturas y radiación de calor: protección en ARFF, refinería, fundición y hornos, con ficha técnica. Cotiza."
   keywords: ["traje aluminizado", "traje de aproximación", "traje aluminizado para altas temperaturas"]
 hero:
   eyebrow: "Calor radiante"
@@ -164,6 +164,12 @@ faqs:
     a: "Sin abrasivos, sin solventes y guardada colgada. La superficie reflejante se raya con facilidad y, una vez opaca, pierde reflectancia para siempre. Un aluminizado guardado doblado en un casillero se arruina antes por almacenamiento que por uso."
   - q: "¿Qué modelo de traje aluminizado tienen con ficha?"
     a: "El Romak Fire Mark One MPX-8, código BOM1046: un traje de cuatro capas para proximidad aeroportuaria e industrial, con certificado UL MH48840. Lleva exterior Nor-Fab MPX-8 de Basofil y para-aramida, y barreras Omni Synergy y Stedair 3000."
+  - q: "¿Qué es un traje aluminizado para altas temperaturas?"
+    a: "Es un traje con capa exterior recubierta de aluminio que refleja la mayor parte de la radiación de calor. Sirve para trabajar cerca de una fuente de altas temperaturas, como un incendio de aeronave, un horno o una fuga en refinería. Reduce el riesgo de quemadura en la piel sin quitarte toda la libertad de movimiento. No está hecho para entrar a la flama: para eso existe el traje de entrada."
+  - q: "¿Qué quiere decir que una prenda esté aluminizada?"
+    a: "Que su tela exterior lleva un revestimiento de aluminio laminado sobre una base resistente al calor. Ese acabado brillante devuelve el calor radiante en lugar de absorberlo. Pierde eficacia si se raya, se dobla con fuerza o se ensucia con grasa, y por eso el cuidado del material es parte de la seguridad del equipo."
+  - q: "¿Para qué se utilizan los guantes aluminizados?"
+    a: "Para proteger las manos del calor radiante al mismo nivel que el resto del traje. Un guante estructural refleja menos y deja el punto débil justo en la mano. En nuestro catálogo son de tres dedos, y los cotizamos de la misma familia y nivel que el chaquetón, con la talla de cada usuario."
 contacto:
   asunto: "trajes aluminizados de aproximación"
   boton: "Enviar consulta de aluminizados por WhatsApp"

@@ -7,13 +7,13 @@ ruta: "/trajes/hazmat/"
 crumb: "Equipo Hazmat"
 ogImagen: "/images/og/trajes-hazmat.jpg"
 seo:
-  title: "Traje Hazmat nivel A, B y C para protección química"
-  description: "Trajes Hazmat y protección química para bomberos: niveles A, B y C, encapsulados, guantes y botas químicas. Elige la barrera según el riesgo y cotiza."
+  title: "Traje Hazmat para materiales peligrosos: niveles A, B y C"
+  description: "Trajes Hazmat para materiales peligrosos y productos químicos: niveles A, B y C, encapsulados, guantes y botas. Elige la barrera según el riesgo y cotiza."
   keywords: ["traje hazmat", "traje hazmat nivel a", "equipo hazmat"]
 hero:
   eyebrow: "Materiales peligrosos"
   h1: "Traje Hazmat"
-  h1Accent: "y equipo de protección química"
+  h1Accent: "para materiales peligrosos"
   lead: "Trajes, botas y guantes para materiales peligrosos. La barrera se elige por la sustancia y la tarea, con la compatibilidad química documentada antes de cotizar."
   descRight:
     - "Ante una fuga química, el traje no se escoge por su color ni por el nombre del nivel. Lo primero es saber qué agente es, en qué concentración, en qué estado y qué tarea se va a hacer; con eso se define la barrera, la respiración y los guantes. Un traje encapsulado puede ser obligatorio frente a un vapor tóxico y sobrar para una salpicadura controlada."
@@ -170,6 +170,10 @@ faqs:
     a: "Antes y después de cada uso, revisa material, visor, cierre, costuras, guantes, botas e interfaces. Tras una exposición, registra el agente y sigue el procedimiento de descontaminación antes de devolver el equipo a servicio. Una pieza dañada o con contaminación no controlable se retira, aunque se vea limpia."
   - q: "¿Qué hago si no se identifica la sustancia?"
     a: "No bajes la protección por conveniencia. Mantén la selección dentro del procedimiento de respuesta hasta confirmar agente, concentración y vía de exposición. Con un vapor desconocido, la respuesta inicial corresponde a la máxima barrera que tu análisis de riesgo justifique."
+  - q: "¿Qué significa Hazmat?"
+    a: "Es la abreviatura en inglés de hazardous materials, es decir, materiales peligrosos. En bomberos nombra tanto la respuesta a incidentes con sustancias químicas como el equipo que se usa en ella: traje de protección química, respiración, guantes, botas y descontaminación."
+  - q: "¿Cómo se llama el traje para productos químicos?"
+    a: "Traje de protección química o traje para materiales peligrosos; en la calle se le dice traje Hazmat. Va desde el overol desechable para salpicaduras ligeras hasta el traje encapsulado nivel A, hermético a gases y vapores. El nombre importa menos que la barrera de la ropa de protección química: se elige por la sustancia, la concentración y la tarea."
 contacto:
   asunto: "equipo Hazmat y protección química"
   boton: "Enviar consulta Hazmat por WhatsApp"
