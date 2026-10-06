@@ -120,3 +120,9 @@ Para [cotizar herramientas de entrada](/contacto/), comparte la ficha requerida,
 
 - Fichas de [hacha](/herramientas/hacha-de-bombero/), [Halligan](/herramientas/barra-halligan/) y [gancho](/herramientas/gancho-bichero/): función, materiales por tipo, inspección y resguardo.
 - `src/lib/catalogo/data/herramientas.ts`, modelo Romak HAC1007: material, medidas, peso y estatus de norma.
+
+## Hacha para bombero y control de la maniobra
+
+Un hacha para bombero se inspecciona por mango, hoja, pico y cuerpo antes de una emergencia. El mango de madera o de otro material debe estar íntegro y permitir control durante corte o palanca.
+
+La entrada forzada requiere equipo, protección y guía operativa. Evita usar el hacha como herramienta improvisada entre humo, incendio u obstáculos; conserva una ruta de escape y comunica cada movimiento al equipo.

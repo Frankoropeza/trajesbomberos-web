@@ -168,6 +168,8 @@ faqs:
     a: "El acero de la cabeza, forjado y templado; el mango, de madera o de fibra de vidrio, con buen agarre aun con guante; el peso y el largo adecuados para el operador; y la funda o el soporte para llevarla en la unidad. En las herramientas de acceso importa además que la punta y la uña resistan la perforación y la palanca sin doblarse. Todo eso va por escrito en la especificación."
   - q: "¿Qué herramientas sirven para sofocar un incendio forestal?"
     a: "El batefuego sofoca fuego de pasto y material ligero, y la bomba de mochila aplica agua portátil en puntos calientes. La Pulaski, el McLeod y el rastrillo forestal abren la línea de control quitando combustible. Ninguna apaga sola un frente: trabajan con la cuadrilla y su equipo de protección, con casco forestal, guantes y goggles."
+  - q: "¿Qué herramientas sirven para llegar a personas atrapadas?"
+    a: "En entrada forzada, el hacha y la barra Halligan abren puertas y ventanas para llegar a personas atrapadas en una vivienda o un comercio. En accidentes de vehículo se usa equipo hidráulico de extracción. En incendio forestal, la Pulaski y el McLeod sirven para cavar y abrir líneas de defensa. Todas se usan con casco de bombero, guantes y, si hay humo, SCBA."
 contacto:
   asunto: "herramientas para bombero"
   boton: "Enviar consulta de herramientas por WhatsApp"

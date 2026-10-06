@@ -123,3 +123,9 @@ Para [cotizar manguera contra incendio](/contacto/), comparte medidas de ambos e
 
 - `src/lib/catalogo/data/mangueras-y-accesorios.ts`: especificación, componentes, inspección, secado, roscas y género.
 - Fichas de [manguera](/mangueras-y-accesorios/manguera-de-ataque/), [pitón](/mangueras-y-accesorios/piton-boquilla/) y [llave](/mangueras-y-accesorios/llave-para-hidrante/): interfaces y cuidado.
+
+## Selección de conexiones y presión
+
+Una manguera contra incendio se especifica por diámetro, longitud, tubo interior, presiones y conexiones. Confirma psi, rosca IPT o NST y material de acople, como bronce, antes de unir una línea a hidrante, pitón o gabinete.
+
+Las mangueras de incendio para carrete, ataque o uso industrial no comparten siempre el mismo acople. Elige longitud y tipo según suministro, aplicación y personal que la operará; la compatibilidad se comprueba antes de una emergencia.

@@ -134,3 +134,9 @@ Para [cotizar equipo de bomberos](/contacto/), incluye fotos o medidas del compa
 - Fichas de [herramientas manuales](/herramientas/): función, materiales por tipo, inspección y ausencia de norma específica publicada.
 - Ficha Romak HAC1007 en `src/lib/catalogo/data/herramientas.ts`: acero inoxidable, 91 cm, 90 cm de extremo a extremo y 6 lb (3.36 kg).
 - Fichas de [rescate](/rescate/) y [mangueras y accesorios](/mangueras-y-accesorios/): componentes, interfaces e inspección.
+
+## Herramientas de bomberos por función
+
+Las herramientas de bomberos se organizan por función: herramientas de entrada forzada, líneas de agua, rescate y operación forestal. Una barra Halligan, hacha de bombero, gancho o herramienta de entrada se entrega con inspección y capacitación para la maniobra autorizada.
+
+El equipo contra incendios también incluye manguera, boquilla, casco de bombero y guante. Para una emergencia, registra estado, agarre, mango, filo y accesorios; no uses una herramienta portátil de rescate como sustituto de equipo para apagar o ventilar.

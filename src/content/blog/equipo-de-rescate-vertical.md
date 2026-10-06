@@ -127,3 +127,9 @@ Para [cotizar rescate vertical](/contacto/), indica la configuración requerida 
 
 - `src/lib/catalogo/data/rescate.ts`: categorías de arnés, cuerda, mosquetones, kit, inspección y resguardo.
 - Fichas de [rescate](/rescate/) y [casco técnico](/cascos/casco-rescate-tecnico/): integración por operación.
+
+## Técnicas de rescate y acceso vertical
+
+El rescate vertical combina cuerda, anclajes, arnés, conectores y técnicas de rescate vertical. Cada maniobra de acceso vertical se prepara para un escenario concreto y se ejecuta con personal capacitado.
+
+La seguridad depende de revisar equipo, nudo, control y margen de error antes de cargar el sistema. Un kit no sustituye la técnica ni convierte una práctica aislada en una operación autorizada.

@@ -125,3 +125,13 @@ Cuando una planta nos manda su análisis de riesgo, devolvemos la cotización ya
 
 - [NOM-002-STPS-2010, Condiciones de seguridad — Prevención y protección contra incendios en los centros de trabajo (DOF, 9 de diciembre de 2010)](https://dof.gob.mx/normasOficiales/4228/stps/stps.htm): numerales 5.1, 5.2 f), 5.6, 5.7, 5.8 y 5.9; Apéndice A y Guía de Referencia III.
 - Fichas del [kit brigadista](/kits/kit-brigadista/) y de los [trajes de brigadista](/trajes/brigadista/): componentes y normas declaradas por cada fabricante.
+
+## Documentos que sostienen la prevención
+
+La Norma Oficial Mexicana NOM-002-STPS-2010 establece condiciones de seguridad para prevención y protección contra incendios en el centro de trabajo. La empresa debe clasificar el riesgo de incendio y contar con instrucciones de seguridad aplicables a cada área.
+
+El programa interno puede incluir croquis o plano, rutas de evacuación, medios de detección, alarmas de incendio y revisión mensual de extintores. La brigada contra incendio requiere personas organizadas y capacitadas, además del equipo contra incendio definido por el riesgo.
+
+Los sistemas fijos contra incendio y el equipo de protección personal se revisan como partidas separadas. La Secretaría del Trabajo y Previsión Social no sustituye el análisis del centro de trabajo con una lista genérica de compras.
+
+Cada centro de trabajo debe tener el control documental que corresponda a su riesgo.

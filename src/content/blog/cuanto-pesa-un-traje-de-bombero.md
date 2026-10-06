@@ -140,3 +140,9 @@ Para [cotizar trajes para bomberos](/contacto/), indica si requieres conjunto co
 - Ficha de [Sköld Hero PBI MAX](/trajes/estructural/modelos/skold-hero-pbimax/): exterior y refuerzos declarados.
 - Ficha de [bota Sköld Workman](/botas/skold-workman/): peso declarado de 3,150 g.
 - Guía de [equipo de respiración autónoma](/blog/como-elegir-equipo-de-respiracion-autonoma/): selección e interfaz del ERA.
+
+## Peso, incendio y movilidad
+
+Un kilogramo adicional puede cambiar la movilidad durante un incendio. La carga se evalúa con botas, casco, guante y equipo autónomo, porque el conjunto protege frente a llamas y también debe permitir trabajar sin interfaces abiertas.
+
+El peso puede variar según talla, humedad y accesorios. Registra cada configuración en vez de usar un peso de otra corporación como si fuera la especificación de tu equipo.

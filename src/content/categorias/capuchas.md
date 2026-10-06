@@ -235,6 +235,8 @@ faqs:
     a: "Casi siempre es tejido de punto de fibras ignífugas como Nomex, solo o mezclado con otras fibras resistentes a la flama, en una o dos capas para ganar protección térmica. Las de barrera contra partículas suman una membrana que filtra el hollín fino y deja respirar la piel. La densidad del tejido, la longitud del babero y el tipo de costura cambian el confort y la durabilidad."
   - q: "¿Por qué la monja debe cubrir cabeza, cuello y orejas?"
     a: "Porque ahí queda piel expuesta entre la máscara del SCBA, el casco y el cuello del chaquetón. Una monja que sella bien alrededor de la mascarilla y con babero largo actúa como barrera cuando giras o bajas la cabeza. Si queda corta, la quemadura aparece justo en ese punto, aunque el resto del EPP sea el correcto."
+  - q: "¿Qué es el TPP de una monja de bombero?"
+    a: "TPP es el índice de protección térmica: indica cuánto calor resiste la tela antes de que se produzca una quemadura de segundo grado. En una monja, más capas o una barrera contra partículas suelen subir ese valor, a cambio de un poco de confort. Pide el TPP declarado en la ficha cuando compares dos modelos para tu equipo."
 contacto:
   asunto: "monjas y capuchas para bombero"
   boton: "Enviar consulta de monjas por WhatsApp"

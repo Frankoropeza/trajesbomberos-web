@@ -107,3 +107,9 @@ Para [cotizar botas](/contacto/), incluye prueba de talla o equivalencia requeri
 ## Fuentes
 
 - Modelos y criterios: `src/lib/catalogo/data/botas.ts`.
+
+## Calzado de protección por escenario
+
+Las botas de bombero son calzado de protección para incendio, rescate o brigada. Compara suela, puntera, agarre, tracción y resistencia al calor con el escenario, no con una fotografía.
+
+En incendios estructurales, forestales o situaciones de rescate, revisa impermeable, abrasión, penetración y tobillo. Una suela de caucho vulcanizado puede ayudar en ciertos entornos, pero no sustituye la talla correcta, ergonomía y ajuste para largas jornadas.

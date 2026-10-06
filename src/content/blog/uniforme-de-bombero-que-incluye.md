@@ -111,3 +111,9 @@ Por último, evita elegir con base exclusiva en color, parches o fotografía. La
 **¿La ropa forestal sirve para incendios estructurales?** No se debe asumir. Está concebida para otro escenario y debe seleccionarse conforme al riesgo de vegetación, no como sustituto de un conjunto estructural.
 
 **¿Cómo sé qué talla comprar?** Solicita la guía del fabricante y realiza levantamiento de tallas con prueba de movilidad. La talla correcta debe funcionar con las capas y piezas que se usarán en operación.
+
+## Características que se especifican por uso
+
+Las características del uniforme deben responder al usuario y a su jornada. La vestimenta de estación puede incluir camisa, pantalón y tirante, mientras que el traje de protección integra piezas distintas para incendio, rescate o brigada.
+
+Una norma o estándar se revisa contra el modelo completo. Si se pide tela Nomex, confirma su alcance documental y no la presentes como sustituto de una prenda para combate de incendios.

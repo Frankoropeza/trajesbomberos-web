@@ -226,6 +226,8 @@ faqs:
     a: "Contra impacto y caída de objetos, contra llamas y calor radiante, y protección ocular con visor o goggles. Se suma una retención que no deje moverse el casco en la emergencia, una suspensión ergonómica que reparte el peso y, en forestal, un diseño ligero con ventilación para jornadas largas de extinción de incendios forestales. Cada dato se confirma en la ficha del fabricante."
   - q: "¿Se puede personalizar un casco de bombero?"
     a: "Sí, dentro de lo que aprueba el fabricante: color, insignia o emblema frontal, cintas de alta visibilidad, lámpara o linterna con su soporte y número de unidad. Lo que no se hace es perforar el casco o pegarle accesorios no aprobados, porque se pierde la certificación. Te dejamos por escrito qué personalización es válida para cada modelo."
+  - q: "¿De qué material es un casco de bombero?"
+    a: "La carcasa suele ser de termoplástico de alto impacto, de fibra de vidrio o de material compuesto, y cada uno cambia el peso y la resistencia térmica. Por dentro lleva suspensión ergonómica, forro y barbiquejo; por fuera, visor o goggles. El diseño moderno busca ligereza sin perder protección. La ficha de cada modelo declara su material."
 contacto:
   asunto: "cascos para bombero"
   boton: "Enviar consulta de cascos por WhatsApp"

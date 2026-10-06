@@ -122,3 +122,9 @@ Para [cotizar herramientas forestales](/contacto/), indica función, cantidad po
 
 - `src/lib/catalogo/data/herramientas.ts`: funciones, materiales por tipo, componentes, inspección y resguardo de Pulaski, McLeod, batefuego, rastrillo y bomba de mochila.
 - Fichas de [traje forestal](/trajes/forestal/) y [guante forestal](/guantes/guante-forestal/): integración del EPP por operación.
+
+## Rastrillo McLeod para línea de control
+
+El rastrillo McLeod es una herramienta forestal para raspar combustible ligero, mover tierra y mantener una línea de control. Se complementa con Pulaski y batefuego según la tarea, el terreno y el procedimiento de la brigada.
+
+El equipo requiere inspección de mango, cabeza y uniones antes de trabajo. Su beneficio depende de capacitación, coordinación y resguardo, no de usar una sola herramienta para todas las funciones.

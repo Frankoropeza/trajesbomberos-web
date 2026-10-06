@@ -113,3 +113,11 @@ Para [cotizar equipo de protección](/contacto/), incluye el requisito técnico 
 - [Bullard FH911H](/cascos/bullard-fh911h/): `src/lib/catalogo/data/cascos.ts`, material, suspensión, accesorios y normas declaradas.
 - [Bullard LTX](/cascos/bullard-ltx/) y [Bullard UST LW](/cascos/bullard-ust-lw/): `src/lib/catalogo/data/cascos.ts`, construcción, visor, ajuste, peso y norma declarada.
 - [Capuchas para bombero](/capuchas/) y [kit estructural](/kits/kit-estructural/): datos de integración publicados en el catálogo.
+
+## Centro de gravedad, ajuste y protección
+
+Un casco Bullard se revisa por seguridad, ajuste, cabeza y centro de gravedad bajo. La suspensión y el sistema de retención deben conservar confort sin perder estabilidad al usar protección facial, lámpara o máscara.
+
+La carcasa puede ser de fibra de vidrio o termoplástico según el modelo. Para rescate o combate de incendios estructurales, confirma la ficha del producto, la protección térmica declarada y la compatibilidad con el resto del equipo antes de comprar.
+
+La búsqueda de un casco empieza por la operación y no por el color.

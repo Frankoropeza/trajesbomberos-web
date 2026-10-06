@@ -124,3 +124,9 @@ Para [cotizar trajes de extricación](/contacto/), indica si buscas dotación in
 - Ficha de [conjunto dual de rescate y forestal](/trajes/extricacion/conjunto-dual/): doble alcance documentado y límites frente a estructural.
 - Fichas de [guante de rescate](/guantes/guante-rescate-extricacion/) y [herramienta hidráulica](/rescate/herramienta-hidraulica-de-rescate/): maniobra, destreza y compatibilidad del sistema.
 - Guías de [vida útil del traje de bombero](/blog/vida-util-traje-bombero-nfpa-1850/) y [cuánto pesa un traje de bombero](/blog/cuanto-pesa-un-traje-de-bombero/): ciclo de servicio y carga del equipo estructural.
+
+## Especificación del traje de extricación
+
+La especificación debe identificar el traje, uso técnico, talla y conjunto para rescate vehicular. Pide ficha, fabricante, certificación o estatus declarado, además de mantenimiento, inspección y cuidado de la prenda.
+
+Un traje de extricación no se vuelve estructural por incluir casco, guante o botas. Si el expediente cita NFPA 1971, confirma su relación con el modelo, sin usarla como sustituto de requisitos para incendio o barrera de humedad.

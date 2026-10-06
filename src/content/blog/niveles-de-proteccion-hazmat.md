@@ -127,3 +127,9 @@ Para [cotizar equipo Hazmat](/contacto/), incluye la ficha de seguridad disponib
 - Fichas de [traje nivel C](/trajes/hazmat/traje-nivel-c/) y [overol químico desechable](/trajes/hazmat/overol-quimico-desechable/): límites de selección y control de uso.
 - Fichas de [botas químicas](/trajes/hazmat/botas-quimicas/) y [guantes químicos](/trajes/hazmat/guantes-quimicos/): compatibilidad, interfaces e inspección.
 - Guías de [equipo de respiración autónoma](/blog/como-elegir-equipo-de-respiracion-autonoma/) y [equipo de bombero completo](/blog/equipo-de-bombero-completo/): integración de protección respiratoria y familias de EPP.
+
+## Compatibilidad química antes de elegir el traje
+
+Los trajes para materiales peligrosos se seleccionan por sustancia, concentración, estado físico y tarea. Un traje protector o ropa de protección química debe cubrir el cuerpo completo y conservar costura, cierre, capucha, guante y botas como un sistema.
+
+Para manipulación de productos químicos, consulta la tabla de compatibilidad del fabricante. Productos químicos peligrosos, líquidos y partículas pueden requerir una prenda encapsulada, respirador o protección personal adicional; un traje desechable no es automáticamente confiable para todo agente.

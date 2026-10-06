@@ -137,3 +137,13 @@ Para [cotizar trajes para bomberos](/contacto/), indica si requieres equipo de b
 - Fichas de [kits para bomberos](/kits/), [trajes](/trajes/), [cascos](/cascos/), [capuchas](/capuchas/), [guantes](/guantes/) y [botas](/botas/).
 - Ficha de [equipo de respiración autónoma](/equipo-de-respiracion-autonoma/): selección por operación y configuración.
 - Guías de [compra de trajes](/blog/cuanto-cuesta-un-traje-de-bombero/) y [expediente de licitación](/blog/licitacion-trajes-bomberos-expediente/).
+
+## Equipo contra incendios como sistema
+
+El equipo de bombero completo reúne traje estructural, casco, guante, botas y, cuando el riesgo lo exige, SCBA o respiración autónoma. Es equipo de protección personal, no una lista intercambiable de accesorios.
+
+Para incendios forestales, rescate vehicular o materiales peligrosos se selecciona otra configuración. NFPA 1970 sustituyó la referencia NFPA 1971 para estructural; NFPA 1950 cubre otras familias. La ficha debe declarar el alcance, barrera de humedad, protección térmica y mantenimiento aplicables.
+
+Revisa cada conjunto antes de asignarlo. Una inspección visual identifica desgaste, contaminación o incompatibilidad con el equipo de rescate, sin afirmar una certificación que el fabricante no publicó.
+
+El desempeño térmico y la respuesta a una emergencia se verifican con entrenamiento, inspección y mantenimiento. No se debe fabricar una solución con piezas de distintas familias sin revisar su compatibilidad.

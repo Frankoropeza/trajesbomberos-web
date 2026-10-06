@@ -129,3 +129,11 @@ Para [cotizar equipo de aire autónomo](/contacto/), comparte la referencia que 
 - `src/lib/catalogo/data/era.ts`: circuito abierto, configuraciones, presión, autonomía, aire de carga y referencias declaradas.
 - [Cómo elegir equipo de respiración autónoma](/blog/como-elegir-equipo-de-respiracion-autonoma/): criterios de selección.
 - Ficha OCR de Sköld Phantöm: configuración de 60 minutos, 4,500 psi, CE EN 137:2006 y referencia NFPA declarada.
+
+## Suministro de aire en atmósferas peligrosas
+
+El equipo de respiración autónoma lleva una botella de aire comprimido, máscara, regulador de presión y circuito de suministro de aire. Se usa cuando la atmósfera puede ser tóxica, nociva o peligrosa para respirar, como durante extinción de incendios o en espacios confinados.
+
+La inspección incluye tanque, válvula, manómetro, alarma y conexiones. No confundas un aparato de circuito cerrado, una línea de aire o un equipo de escape con el SCBA de presión positiva que exige tu procedimiento operativo.
+
+Si el entorno es peligroso, retira el equipo de servicio ante una falla o lectura anormal.

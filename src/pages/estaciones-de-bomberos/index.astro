@@ -54,6 +54,7 @@ const menuItems = [
   { label: 'Cifras', href: '#cifras' },
   { label: 'Cómo verificamos', href: '#metodologia' },
   { label: 'Equipo para bomberos', href: '#equipo' },
+  { label: 'Compras institucionales', href: '#licitacion' },
   { label: 'Preguntas', href: '#faq' },
 ];
 
@@ -273,6 +274,20 @@ const cta: CtaPreset = {
     </div>
   </section>
 
+  <section class="section" id="licitacion">
+    <div class="container">
+      <SectionHeading
+        eyebrow="Compras para corporaciones"
+        title="Equipo y expediente para una estación de bomberos"
+        duo={[
+          `El directorio reúne ${nf(N.total)} estaciones de bomberos como referencia para corporaciones que preparan una licitación, reposición o dotación. La información de cada sede ayuda a identificar autoridad, municipio, tipo de cuerpo de bomberos y canal oficial para una gestión institucional.`,
+          'Para una compra, separa el equipamiento por unidad, riesgo y operación. Trajes, protección contra incendios, herramientas hidráulicas, mangueras y rescate requieren una ficha técnica por partida, una recepción documentada y compatibilidad con la unidad que los usará.',
+        ]}
+      />
+      <p class="directorio__nota">Este sitio no sustituye al 911. Para reportar una emergencia usa el sistema público; para teléfonos, ubicaciones y trámites ciudadanos consulta <a href="https://bombero.mx/" rel="external">BOMBERO.MX</a>. Aquí concentramos el directorio y recursos para corporaciones, gobiernos y responsables de equipamiento.</p>
+    </div>
+  </section>
+
   <!-- 6 · Preguntas frecuentes -->
   <section class="section" id="faq">
     <div class="container">
@@ -323,6 +338,7 @@ const cta: CtaPreset = {
   }
   .metodo__item h3 { margin: 0.8rem 0 0.5rem; font-size: 1.08rem; line-height: 1.25; }
   .metodo__item p { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--color-gray); }
+  .directorio__nota { max-width: 72ch; margin: 1.5rem 0 0; color: var(--color-gray); }
 
   @media (max-width: 1023px) { .metodo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
   @media (max-width: 639px) { .metodo { grid-template-columns: 1fr; } }

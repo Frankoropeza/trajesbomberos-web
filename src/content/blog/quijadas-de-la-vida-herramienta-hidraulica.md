@@ -119,3 +119,13 @@ Para [cotizar herramienta de rescate](/contacto/), incluye la función esperada,
 
 - `src/lib/catalogo/data/rescate.ts`: familias de rescate, criterios de selección, inspección e integración de equipo.
 - Fichas de [herramienta hidráulica](/rescate/herramienta-hidraulica-de-rescate/), [extricación](/trajes/extricacion/) y [casco técnico](/cascos/casco-rescate-tecnico/): configuración e interfaces.
+
+## Rescate de personas atrapadas
+
+Las quijadas de la vida son un equipo hidráulico para rescate de personas atrapadas en un vehículo. El separador puede abrir, cortar o mover elementos del automóvil, pero sólo dentro de una maniobra dirigida por personal capacitado.
+
+Antes de utilizar la herramienta, estabiliza el escenario y controla riesgos de incendio. Protección Civil, rescatistas y la corporación deben trabajar con comunicación, práctica y equipo de protección; liberar a una persona no justifica actuar sin un plan seguro.
+
+En accidentes, confirma que nadie permanezca atrapado antes de iniciar el movimiento del vehículo.
+
+No intentes atrapar o sostener una pieza con el cuerpo durante la maniobra.

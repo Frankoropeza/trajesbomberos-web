@@ -197,6 +197,10 @@ faqs:
     a: "Puntera contra impacto y compresión, entresuela contra punción, suela resistente al calor y con buen agarre, aislamiento térmico, barrera contra agua y una caña que traslape con la pantalonera. En rescates y escombro cuentan además la estabilidad del tobillo y la resistencia a la abrasión. La ficha del fabricante declara cada dato y la norma que cumple, y eso es lo que comparamos al cotizar."
   - q: "¿Qué botas usan los rescatistas y las brigadas de materiales peligrosos?"
     a: "Para rescates en escombro y extricación se usa una bota estructural o de rescate con puntera, entresuela y buen soporte de tobillo. Para materiales peligrosos se usa una bota química de hule resistente a la sustancia, que forma parte del sistema Hazmat. Ninguna sustituye a la otra: cada emergencia pide su propio calzado de protección."
+  - q: "¿Qué hace a una bota de bombero resistente al calor y a las llamas?"
+    a: "La combinación de materiales: hule vulcanizado o piel tratada por fuera, forro aislante por dentro y una suela de compuesto resistente al calor que no se derrite al pisar brasas. A eso se suma la entresuela contra la penetración de objetos afilados y la tracción de la suela en piso mojado. La ficha del fabricante declara los ensayos que respaldan cada dato."
+  - q: "¿Las botas de bombero protegen contra químicos o descargas eléctricas?"
+    a: "Solo si el fabricante lo declara. Una bota estructural está hecha para calor, agua y objetos afilados. La protección contra sustancias químicas pide una bota química del sistema Hazmat, y la protección contra descargas eléctricas pide calzado con esa certificación. Antes de asignarla te decimos qué declara cada modelo."
 contacto:
   asunto: "botas para bombero"
   boton: "Enviar consulta de botas por WhatsApp"

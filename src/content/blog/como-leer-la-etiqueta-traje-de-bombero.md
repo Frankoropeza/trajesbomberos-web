@@ -137,3 +137,15 @@ Para [cotizar una partida con expediente técnico](/contacto/), incluye el texto
 - [NFPA 1970: qué cambió](/blog/nfpa-1970-que-cambio/): transición desde NFPA 1971 y lectura de alcance.
 - [Vida útil del traje conforme a NFPA 1850](/blog/vida-util-traje-bombero-nfpa-1850/): fecha de fabricación, inspección y retiro.
 - `src/lib/piezas.ts`: ficha de chaquetón estructural, NFPA 1970 edición 2025, certificación del conjunto y cuidado.
+
+## Etiqueta, alcance y sistema de protección
+
+La etiqueta debe permitir distinguir la referencia anterior NFPA 1971 de la NFPA 1970 vigente. NFPA 1971 aparece en equipos para incendios estructurales y de proximidad fabricados bajo esa edición; no significa que siga siendo la norma vigente.
+
+Lee el conjunto completo: prenda, casco, guante, calzado, capucha y componentes de interfaz. La protección térmica y los requisitos mínimos se relacionan con incendios estructurales y con el riesgo de quemadura, no con una tela aislada.
+
+Para una operación forestal o de rescate, la referencia puede ser NFPA 1950. La etiqueta sirve para verificar fabricante, certificación y uso declarado; no autoriza usar un overol o EPP fuera de su alcance.
+
+Una norma NFPA 1971 previa puede mostrar *structural* y requisitos para patógenos transmitidos por la sangre. Busca la norma NFPA declarada para el conjunto de protección y sus niveles mínimos de protección, sin inferirlos de una etiqueta incompleta.
+
+El equipo de protección se identifica por su modelo y alcance declarado.

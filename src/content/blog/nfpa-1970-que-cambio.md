@@ -149,3 +149,13 @@ Si contestaste que no a alguna, no es urgencia pero sí es pendiente. Mándanos 
 - [FireRescue1 — What you need to know now about the NFPA 1970 consolidations](https://www.firerescue1.com/nfpa/what-you-need-to-know-now-about-the-nfpa-1970-consolidations)
 - [FireRescue1 — The new NFPA 1950: consolidating tech rescue, EMS and wildland PPE](https://www.firerescue1.com/fire-products/Personal-protective-equipment-ppe/the-new-nfpa-1950-consolidating-tech-rescue-ems-and-wildland-ppe)
 - [NFPA 1970 (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1970-standard-development/1970) y [NFPA 1950 (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1950-standard-development/1950)
+
+## Cómo interpretar la referencia anterior
+
+NFPA 1970 es la referencia vigente para conjuntos de protección de bombero estructural y de proximidad. NFPA 1971 fue la referencia anterior para esos incendios estructurales y de proximidad; por eso aparece en certificados, etiquetas y expedientes previos.
+
+La consolidación no convierte una certificación previa en una promesa nueva. El fabricante debe declarar qué requisitos mínimos aplican al conjunto completo, incluidos casco, guante, calzado, capucha y componentes de interfaz. La protección térmica se evalúa como sistema frente a peligros térmicos y riesgo de quemadura.
+
+También separa alcances. NFPA 1950 cubre familias distintas, como rescate técnico y forestal. Un overol o conjunto de protección personal no se clasifica por semejanza visual, sino por la operación y la declaración verificable.
+
+En una Norma NFPA 1971 histórica pueden aparecer las palabras *structural* y EPP. También puede incluir requisitos para patógenos transmitidos por la sangre, pero eso no elimina los niveles mínimos de protección ni el mantenimiento que corresponde al conjunto.

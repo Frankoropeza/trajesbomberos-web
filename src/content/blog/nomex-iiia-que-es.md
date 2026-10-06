@@ -91,3 +91,11 @@ Una requisición que sólo dice "Nomex" deja abiertas demasiadas decisiones. Una
 **¿Se puede reparar una prenda de Nomex IIIA?** Depende del daño, del método autorizado y del uso de la prenda. Una reparación improvisada puede crear una zona con comportamiento distinto al textil original; evalúala antes de devolverla a servicio.
 
 **¿Qué debo pedir si quiero cotizar ropa para brigada?** Describe la tarea de la brigada, la exposición, el número de usuarios, tallas, colores permitidos y el método de lavado. Después compara la composición y construcción de prendas propuestas para ese mismo alcance.
+
+## Propiedades de la fibra y límites de la prenda
+
+Nomex® es una fibra de aramida usada en tela para ropa de trabajo y prendas de protección. Su resistencia al calor y a las llamas es inherente al material, pero no vuelve seguro cualquier producto hecho con esa fibra.
+
+La protección térmica depende de la prenda terminada, sus capas, su ajuste y el escenario. En una exposición a fuego o arco eléctrico, revisa la aplicación declarada, el aislamiento y las instrucciones del fabricante antes de asignarla.
+
+La tecnología textil no reemplaza esa revisión del conjunto.

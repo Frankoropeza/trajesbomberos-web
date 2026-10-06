@@ -164,6 +164,12 @@ faqs:
     a: "En ataque, las más comunes son de 1 ½ y 2 ½ pulgadas de diámetro, en tramos de 15 o 30 metros (50 o 100 pies). Las de suministro van de 3 a 5 pulgadas o más. Además del diámetro y el largo cuentan la presión de trabajo en psi, el tipo de rosca y la chaqueta de poliéster con tubo interior de caucho o EPDM. Con esos datos te cotizamos."
   - q: "¿Cuánto cuesta una manguera contra incendio de 30 metros?"
     a: "Depende del diámetro, de si es de una o doble chaqueta, del material del tubo interior, de la presión de trabajo y de los coples de bronce o aluminio. Por eso no publicamos un precio único. Con el diámetro, la rosca y el uso te mandamos la cotización por tramo, con la norma que declara el fabricante, como NFPA 1961 cuando aplica."
+  - q: "¿De qué está hecha una manguera contra incendio?"
+    a: "De una chaqueta textil tejida, casi siempre de poliéster, que soporta la presión, y de un forro interior de elastómero, como caucho sintético o EPDM, que contiene el agua. Algunas llevan recubrimiento exterior que las hace más resistentes a la abrasión, al ozono y a los hidrocarburos. Lo flexible de la chaqueta y el tipo de forro definen para qué se usa cada una."
+  - q: "¿Qué presión debe soportar una manguera de bombero?"
+    a: "Cada manguera declara su presión de trabajo y su presión de prueba en psi. En mangueras de ataque es común una presión de prueba de servicio de 300 psi, pero el dato válido es el de su ficha. En operación se trabaja por debajo de esa presión, y cada tramo se vuelve a probar según el programa del cuerpo de bomberos. Para comparar, pide la norma de fabricación declarada, como NFPA 1961."
+  - q: "¿Qué diferencia hay entre la manguera de gabinete y la de bombero?"
+    a: "La de gabinete se instala en un edificio o planta industrial, en carrete o plegada, para que la brigada combata un conato mientras llega el cuerpo de bomberos. La de bombero viaja en la unidad, se tiende en cada emergencia y está hecha para uso rudo, altas presiones y lavado frecuente. Ambas deben cumplir la norma que declare su fabricante y revisarse con regularidad."
 contacto:
   asunto: "mangueras y accesorios contra incendio"
   boton: "Enviar consulta de mangueras por WhatsApp"
