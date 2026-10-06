@@ -8,13 +8,13 @@ crumb: "Rescate"
 ogImagen: "/images/og/og-l3-rescate.jpg"
 seo:
   title: "Equipo de rescate para bomberos: extricación y vertical"
-  description: "Equipo de rescate para bomberos: herramienta hidráulica de extricación, arneses, cuerdas, mosquetones y kits de rescate vertical según la maniobra. Cotiza."
+  description: "Equipo de rescate para bomberos en emergencias: herramienta hidráulica de extricación, arneses, cuerdas, mosquetones y kits de rescate vertical. Cotiza."
   keywords: ["equipo de rescate para bomberos", "equipo de rescate vertical", "herramienta hidráulica de rescate"]
 hero:
   eyebrow: "Rescate para bomberos"
   h1: "Equipo de rescate para bomberos"
   h1Accent: "extricación, cuerdas y arneses"
-  lead: "El equipo de rescate se compra como sistema: cada pieza tiene que embonar con las demás y con la maniobra que va a hacer tu unidad. Te ayudamos a armarlo renglón por renglón."
+  lead: "El equipo de rescate se compra como sistema: cada pieza tiene que embonar con las demás y con la maniobra que va a hacer tu unidad en la emergencia. Te ayudamos a armarlo renglón por renglón."
   descRight:
     - "Hay dos mundos. En la extricación vehicular trabajas con herramienta hidráulica: separador, cortador, combinada o cilindro, con su fuente, mangueras y acoples. En el rescate con cuerda trabajas con arnés, cuerda estática kernmantle, mosquetones y dispositivos. Para cuerda y arnés, la referencia es NFPA 2500, que sustituyó a NFPA 1983."
     - "No tenemos modelos publicados en esta sección, y por eso no te damos fuerzas, aperturas ni pesos que la marca no publique. Te proponemos cada componente según tu maniobra y te pasamos la declaración del fabricante por escrito. Así puedes revisar el marcado de cada pieza al recibirla."
@@ -170,6 +170,8 @@ faqs:
     a: "La función que necesitas, separador, cortador, combinada o cilindro, y la fuente: hidráulica o batería. Si ya tienes equipo, dinos la marca de la bomba, las mangueras y los acoples, para que lo nuevo conecte con lo que ya usas. Con eso te proponemos el renglón completo."
   - q: "¿Qué debe acompañar la entrega del equipo de rescate?"
     a: "Identificación, estado inicial, accesorios, documentación y forma de guardar cada componente. En la herramienta hidráulica, coteja la función con su fuente, batería, mangueras y acoples. En la cuerda, el marcado y las terminaciones. Todo contra la requisición, renglón por renglón."
+  - q: "¿Cuál es el equipo de rescate?"
+    a: "Es el conjunto de herramientas y dispositivos para sacar a una persona atrapada o en riesgo: equipo hidráulico de extricación para accidentes de vehículo, y arnés, cuerda, mosquetones, poleas y descensores para rescate vertical. Se completa con el equipo de protección del rescatista: casco de rescate, guantes y traje de extricación. Lo usan bomberos, protección civil y brigadas de salvamento."
 contacto:
   asunto: "equipo de rescate para bomberos"
   boton: "Enviar consulta de rescate por WhatsApp"

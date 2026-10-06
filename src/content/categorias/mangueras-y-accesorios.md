@@ -158,6 +158,12 @@ faqs:
     a: "Porque un golpe o suciedad en la rosca impide que asiente y selle. En una conexión NH/NST o NPSH, una rosca dañada echa abajo la transición entre manguera, pitón o adaptador, aunque el diámetro sea correcto. Pide protectores y repuestos con la rosca que ya usa tu unidad."
   - q: "¿Qué se registra de cada línea por unidad?"
     a: "Medidas, roscas, función, ubicación, estado inicial y quién la revisa. Así distingues cada manguera, pitón, llave, reducción y siamesa, y sabes dónde está. Si nos mandas tu inventario, te cotizamos solo lo que falta, con las medidas que ya usas."
+  - q: "¿Cómo se llaman las mangueras contra incendios?"
+    a: "Por su uso. La manguera de ataque es la que lleva el bombero hasta el fuego. La de suministro, de mayor diámetro, lleva el agua desde el hidrante o la bomba. Y la manguera de gabinete o de carrete se queda instalada en un edificio o una planta industrial. También se les dice mangueras de incendio o líneas."
+  - q: "¿Cuáles son las medidas de una manguera contra incendios?"
+    a: "En ataque, las más comunes son de 1 ½ y 2 ½ pulgadas de diámetro, en tramos de 15 o 30 metros (50 o 100 pies). Las de suministro van de 3 a 5 pulgadas o más. Además del diámetro y el largo cuentan la presión de trabajo en psi, el tipo de rosca y la chaqueta de poliéster con tubo interior de caucho o EPDM. Con esos datos te cotizamos."
+  - q: "¿Cuánto cuesta una manguera contra incendio de 30 metros?"
+    a: "Depende del diámetro, de si es de una o doble chaqueta, del material del tubo interior, de la presión de trabajo y de los coples de bronce o aluminio. Por eso no publicamos un precio único. Con el diámetro, la rosca y el uso te mandamos la cotización por tramo, con la norma que declara el fabricante, como NFPA 1961 cuando aplica."
 contacto:
   asunto: "mangueras y accesorios contra incendio"
   boton: "Enviar consulta de mangueras por WhatsApp"

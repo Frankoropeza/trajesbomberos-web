@@ -218,6 +218,10 @@ faqs:
     a: "Depende del tipo, del modelo y de su configuración: visor, goggles, cubrenuca, lámpara y color. No publicamos precios. Te mandamos la propuesta en día hábil, con la ficha técnica y la configuración por escrito, para que compares ofertas con el mismo criterio."
   - q: "¿Qué debe traer la cotización de un casco?"
     a: "Modelo y código cuando exista, color, protección ocular, cubrenuca, accesorios, cantidad y lugar de entrega. También la norma que declara la marca, sin adornos. Con eso puedes revisar la partida al recibirla y comparar propuestas de distintos proveedores."
+  - q: "¿Cómo se llama el casco de los bomberos?"
+    a: "Casco de bombero o casco estructural. Por su forma, el tradicional se conoce como estilo americano y el de visor integrado como tipo jet o europeo. Para monte se usa el casco forestal, más ligero, y para rescate técnico un casco compacto. Todos protegen contra impacto y calor, y se eligen por diseño, accesorios y compatibilidad con la máscara del ERA."
+  - q: "¿Qué accesorios lleva un casco de bombero?"
+    a: "Visor o goggles, cubrenuca de tela ignífuga, lámpara con su soporte, barbiquejo y, en algunos modelos, sistemas de comunicación. Cada accesorio debe ser del mismo fabricante o aprobado por él, porque un añadido sin aprobar puede invalidar la certificación del casco. Te dejamos la configuración por escrito."
 contacto:
   asunto: "cascos para bombero"
   boton: "Enviar consulta de cascos por WhatsApp"

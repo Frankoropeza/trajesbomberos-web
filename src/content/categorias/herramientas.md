@@ -8,7 +8,7 @@ crumb: "Herramientas"
 ogImagen: "/images/og/og-l3-herramientas.jpg"
 seo:
   title: "Herramientas de bombero: entrada forzada y forestal"
-  description: "Herramientas de bombero para entrada forzada y combate forestal: hacha, barra Halligan, Pulaski, McLeod, batefuego y bomba de mochila. Cotiza con ficha."
+  description: "Herramientas de bombero para entrada forzada y combate forestal en incendio: hacha, barra Halligan, Pulaski, McLeod, batefuego y bomba de mochila. Cotiza."
   keywords: ["herramientas de bombero", "barra Halligan", "herramientas forestales"]
 hero:
   eyebrow: "Herramientas para bombero"
@@ -146,7 +146,7 @@ comparativaTipos:
   enlaces: ["/herramientas/hacha-de-bombero/", "/herramientas/barra-halligan/", "/herramientas/gancho-bichero/", "/herramientas/pulaski/", "/herramientas/bomba-de-mochila-forestal/"]
   nota: "La Halligan HAC1007 es el único modelo con ficha; su estatus es «norma de producto no aplica». Largo y peso de las demás van en la propuesta cuando la marca los declara."
 faqs:
-  - q: "¿Qué herramientas usa un bombero?"
+  - q: "¿Cuáles son las herramientas de los bomberos?"
     a: "Depende de la maniobra. Para entrada forzada, hacha, barra Halligan y gancho bichero. Para combate forestal, Pulaski, McLeod, rastrillo, batefuego y bomba de mochila. Para rescate, herramienta hidráulica, arnés, cuerda y mosquetones. Cada una se elige por lo que tu procedimiento autoriza."
   - q: "¿Pulaski y McLeod hacen lo mismo?"
     a: "No. La Pulaski une hacha y azadón en una cabeza de acero: corta y cava. El McLeod combina dientes de rastrillo y hoja tipo azadón: ordena combustible y raspa suelo superficial. En la línea se complementan: si tu cuadrilla hace las dos tareas, conviene llevar ambas."
@@ -160,6 +160,10 @@ faqs:
     a: "Uniones, deformaciones, corrosión, filos, puntas, mango y soporte. En la Halligan, que la geometría y las puntas sigan íntegras; en el batefuego, que la pala y su fijación estén firmes. Si una pieza tiene fisura, holgura o deformación, sale de servicio hasta reponerla."
   - q: "¿Por qué comprar el soporte junto con la herramienta?"
     a: "Porque una Halligan de 91 cm, un gancho o una Pulaski tienen que viajar sujetos y encontrarse rápido. Las fundas, los protectores de filo y los compartimientos separados evitan que una punta o una cabeza lastimen a alguien o dañen otro equipo en el traslado."
+  - q: "¿Cómo se llama la herramienta que usan los bomberos?"
+    a: "No hay una sola. La más conocida es la barra Halligan, que junto con el hacha forma el juego que en inglés se llama irons y abre puertas y ventanas en una entrada forzada. En incendio forestal, la Pulaski combina hacha y azadón, y el McLeod raspa la línea de control. Cada herramienta tiene nombre propio según la maniobra."
+  - q: "¿Cómo se clasifican las herramientas de los bomberos?"
+    a: "Por la maniobra. Para entrada forzada y acceso: hacha, Halligan, gancho bichero y, según la unidad, ariete. Para incendio forestal: Pulaski, McLeod, rastrillo, batefuego y bomba de mochila. Para rescate: equipo hidráulico de extricación y sistemas de cuerda. Y para la línea de agua: manguera, pitón y llaves. Brigadas y protección civil arman una dotación más corta, según su análisis de riesgo."
 contacto:
   asunto: "herramientas para bombero"
   boton: "Enviar consulta de herramientas por WhatsApp"

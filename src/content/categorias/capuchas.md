@@ -8,12 +8,12 @@ crumb: "Monjas y capuchas"
 ogImagen: "/images/og/og-l3-capuchas.jpg"
 seo:
   title: "Monja para bombero: capuchas Nomex y antipartículas"
-  description: "Monjas y capuchas para bombero de Nomex, de una o dos capas y con barrera contra partículas: revisa apertura facial y ajuste con ERA antes de cotizar."
+  description: "Monja para bombero de Nomex, de una o dos capas y con barrera contra partículas: revisa apertura facial, longitud y ajuste con la máscara del ERA. Cotiza."
   keywords: ["monja para bombero", "capucha para bombero", "capucha antipartículas"]
 hero:
   eyebrow: "Monjas para bombero"
-  h1: "Monjas y capuchas"
-  h1Accent: "para bombero"
+  h1: "Monja para bombero"
+  h1Accent: "y capuchas de protección"
   lead: "La monja cierra el hueco entre el casco, la máscara del ERA y el cuello del chaquetón. Es la pieza más pequeña del conjunto y la que más fácil deja piel al aire si no se prueba."
   descRight:
     - "Una monja se elige por tres cosas: cuántas capas tiene, qué tan grande es la apertura facial y si lleva barrera contra partículas. Las tres cambian cómo sella la máscara y cuánto cubre el babero cuando mueves la cabeza. Por eso la probamos con tu ERA, tu casco y tu chaquetón puestos."
@@ -227,6 +227,10 @@ faqs:
     a: "Por higiene, por ajuste y para llevar su historial. La monja está en contacto con la piel y con lo que deja el humo. Asignarla a una persona permite saber cuántas veces se lavó, cómo está el elástico y cuándo reponerla con el mismo modelo."
   - q: "¿Qué reviso al recibir las monjas?"
     a: "Modelo, capas, color, costuras, elástico, apertura facial, babero y documentación contra la requisición. En la PAC II, por ejemplo, confirma el código CAP1001, Nomex blanco 100 %, doble capa en cabeza y pechera y la apertura de 120 a 145 mm."
+  - q: "¿Qué es una monja para bombero y qué función cumple?"
+    a: "Es la capucha de tela ignífuga que cubre cabeza, cuello y orejas debajo del casco. Cierra el hueco entre la máscara del ERA, el casco y el cuello del chaquetón, que es donde suele ocurrir una quemadura cuando el bombero gira la cabeza. Se le dice monja por su forma; también capucha o escafandra."
+  - q: "¿Qué norma aplica a la monja de bombero?"
+    a: "La capucha estructural se evalúa como parte del conjunto bajo NFPA 1970, que absorbió a la NFPA 1971. Esa norma pide pruebas de protección térmica, resistencia de costuras y conservación de la apertura facial después del lavado. La Majestic PAC II está listada por UL bajo NFPA 1971 ed. 2018; de las demás te pasamos la norma que declara cada fabricante."
 contacto:
   asunto: "monjas y capuchas para bombero"
   boton: "Enviar consulta de monjas por WhatsApp"

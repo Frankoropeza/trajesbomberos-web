@@ -7,12 +7,12 @@ ruta: "/kits/"
 crumb: "Kits"
 ogImagen: "/images/og/og-l3-kits.jpg"
 seo:
-  title: "Kit de equipo de bombero completo por operación"
-  description: "Kit de equipo de bombero completo: estructural, brigadista y forestal, con traje, casco, monja, guantes y botas compatibles en una sola cotización."
+  title: "Equipo de bombero completo: kit con traje, casco y botas"
+  description: "Equipo de bombero completo en kit: traje de bombero, casco, monja, guantes y botas compatibles, estructural, brigadista o forestal, en una sola cotización."
   keywords: ["kit de equipo de bombero", "equipo de bombero completo", "kit forestal para brigada"]
 hero:
   eyebrow: "Kits para bombero"
-  h1: "Kits de equipo para bombero"
+  h1: "Equipo de bombero completo"
   h1Accent: "estructural, brigadista y forestal"
   lead: "Un kit junta las piezas que trabajan juntas, con la talla de cada persona. Te lo armamos después de saber qué operación tiene autorizada tu gente."
   descRight:
@@ -156,7 +156,7 @@ comparativaTipos:
   enlaces: ["/kits/kit-estructural/", "/kits/kit-brigadista/", "/kits/kit-forestal/"]
   nota: "La norma de un kit no existe como tal: cada pieza conserva la que declara su marca. Te damos la relación pieza por pieza."
 faqs:
-  - q: "¿Qué incluye un kit de bombero completo?"
+  - q: "¿Qué incluye un equipo de bombero completo?"
     a: "Depende de la operación. El estructural y el brigadista llevan traje, casco, monja, guantes y botas. El forestal cambia a ropa ligera, casco con goggles, guantes, bota y nuquera. El ERA no viene incluido por nombre: se define aparte, según la atmósfera en la que va a trabajar tu gente."
   - q: "¿Qué modelos forman el kit estructural?"
     a: "Tomamos como base el kit Profesional de Romak Fire. Sus fichas incluyen el casco Bullard LTX, la bota Croydon Filtrex, la monja Majestic PAC II y el guante Veridian Fire Pro II. Si tu corporación ya usa otras piezas, armamos el kit con ellas y revisamos el traslape de cada una."
@@ -170,6 +170,12 @@ faqs:
     a: "Modelos, tallas, accesorios, alcance y la documentación de cada pieza. En un kit forestal, por ejemplo, anotamos ropa, casco, goggles, guantes, bota y nuquera con su referencia por modelo. Todo va con códigos, colores y cantidades para que lo cotejes contra tu pliego."
   - q: "¿Cómo reviso la entrega de un kit?"
     a: "Por persona y por pieza. Compara códigos, tallas, cierres, ajuste y accesorios contra la requisición, y asigna cada conjunto a su usuario. Cada pieza conserva su propio documento. Si algo no coincide, apártalo antes de ponerlo en servicio y avísanos."
+  - q: "¿Cuánto pesa el equipo de los bomberos?"
+    a: "El kit estructural con traje de tres capas, casco, monja, guantes, botas y ERA con cilindro queda como referencia entre 20 y 35 kg, según la configuración. Sin el ERA, el resto del conjunto pesa bastante menos. El kit forestal es el más ligero porque su traje es de una sola capa. El peso de cada pieza viene en la ficha de su fabricante."
+  - q: "¿Cuánto cuesta un uniforme de bomberos?"
+    a: "Si hablas del equipo para la emergencia, el costo depende de la operación. Un kit de brigadista cuesta bastante menos que uno estructural certificado, y el ERA se cotiza aparte. No publicamos precios porque cambian con el modelo, la talla y la norma; te mandamos la cotización por persona y por pieza, con factura. El uniforme de estación del turno es otra compra, distinta del equipo de protección."
+  - q: "¿De qué materiales está hecho el equipo de bomberos?"
+    a: "El traje estructural combina una capa exterior de fibras resistentes a la flama, como Nomex o PBI, una barrera de humedad y una barrera térmica. Guantes y monja usan fibras ignífugas similares; las botas, hule vulcanizado o piel; el casco, termoplástico o material compuesto. Cada pieza declara su composite en la ficha técnica del fabricante, y eso es lo que revisamos contigo."
 contacto:
   asunto: "kits de equipo para bombero"
   boton: "Enviar consulta de kits por WhatsApp"

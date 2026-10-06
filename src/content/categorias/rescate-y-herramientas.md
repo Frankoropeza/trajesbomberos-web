@@ -8,7 +8,7 @@ crumb: "Rescate y herramientas"
 ogImagen: "/images/og/og-l2-rescate-y-herramientas.jpg"
 seo:
   title: "Herramientas y equipo de rescate para bomberos"
-  description: "Herramientas y equipo de rescate para bomberos: extricación, rescate vertical, entrada forzada, forestal, mangueras y accesorios. Cotiza por maniobra."
+  description: "Herramientas y equipo de rescate para bomberos en emergencias: extricación, rescate vertical, entrada forzada, forestal, mangueras y accesorios. Cotiza."
   keywords: ["herramientas y equipo de rescate para bomberos", "equipo de rescate para bomberos", "herramientas para bomberos"]
 hero:
   eyebrow: "Rescate y herramientas"
@@ -198,6 +198,10 @@ faqs:
     a: "Cuando tiene una fisura, holgura, deformación, corrosión o un daño que le impide trabajar. En cuerda, arnés o mosquetones, después de una carga, un impacto o una contaminación se apartan hasta que se evalúen como indica el fabricante. En mangueras, una fuga, un corte o una rosca dañada la sacan de servicio."
   - q: "¿Qué debe traer la cotización de herramientas y equipo de rescate?"
     a: "Por renglón: modelo o tipo, material, medidas, configuración, accesorios y lo que declara el fabricante. En mangueras, diámetro y rosca de cada extremo; en la hidráulica, función y fuente. En LORICA te la mandamos por escrito en el día hábil, con factura CFDI 4.0 y sin compra mínima."
+  - q: "¿Cuáles son los tipos de rescate?"
+    a: "En bomberos se agrupan por escenario: rescate vehicular o extricación en accidentes, rescate con cuerda en altura, rescate en estructuras colapsadas, en espacios confinados y rescate acuático. Cada tipo pide su propio equipo y su capacitación. Nosotros cotizamos el equipo de extricación y de rescate vertical; el salvamento acuático lleva equipo que no manejamos."
+  - q: "¿Qué equipo utilizan los bomberos?"
+    a: "Para el incendio, traje de bombero, casco, monja, guantes, botas y ERA. Para las operaciones de rescate, herramienta hidráulica, arneses, cuerdas y mosquetones. Para abrir paso, hacha y barra Halligan; para la línea de agua, manguera, pitón y llaves; y para el monte, herramientas forestales. Una unidad de emergencia lleva varias de estas dotaciones a la vez."
 contacto:
   asunto: "herramientas y equipo de rescate"
   boton: "Enviar consulta de rescate por WhatsApp"

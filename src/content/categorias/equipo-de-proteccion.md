@@ -8,7 +8,7 @@ crumb: "Equipo de protección"
 ogImagen: "/images/og/og-l2-equipo-de-proteccion.jpg"
 seo:
   title: "Equipo de protección para bomberos: cascos, ERA y botas"
-  description: "Equipo de protección para bomberos: cascos, ERA, botas, guantes y monjas compatibles con tu traje. Compara 17 modelos y cotiza por pieza o en kit."
+  description: "Equipo de protección para bomberos: casco, ERA, botas, guantes y monjas compatibles con tu traje de bombero. Compara 17 modelos y cotiza por pieza o en kit."
   keywords: ["equipo de protección para bomberos", "equipo de protección personal para bomberos", "EPP para bomberos"]
 hero:
   eyebrow: "EPP para bomberos"
@@ -231,6 +231,8 @@ faqs:
     a: "Las dos formas funcionan. El kit junta modelos, tallas y accesorios en una partida y te deja revisar todas las interfaces antes de ordenar. Por pieza te sirve para reponer o completar lo que ya tienes. Si cambias una pieza del conjunto, vuelve a revisar cómo se traslapa con las demás."
   - q: "¿Qué debe traer una cotización de equipo de protección?"
     a: "Modelo, código si existe, talla por persona, configuración y accesorios, norma declarada y cantidad. En LORICA te la mandamos por escrito en el día hábil, con ficha técnica por partida y factura CFDI 4.0. No pedimos compra mínima y entregamos en los 32 estados."
+  - q: "¿Cómo se llama el EPP de los bomberos?"
+    a: "En México se le dice equipo de protección personal, EPP o equipo de protección estructural. Incluye el traje de bombero, casco, monja, guantes, botas y el equipo de respiración autónoma. En inglés se le llama turnout gear o bunker gear. Es la ropa de protección para la extinción de incendios y para la seguridad del bombero frente al calor extremo, no el uniforme de diario."
 contacto:
   asunto: "equipo de protección para bomberos"
   boton: "Enviar consulta de EPP por WhatsApp"

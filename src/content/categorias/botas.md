@@ -7,7 +7,7 @@ crumb: "Botas"
 ogImagen: "/images/og/og-l3-botas.jpg"
 seo:
   title: "Botas de bombero estructurales, forestales y de brigada"
-  description: "Botas de bombero estructurales, forestales y para brigada: hule o piel, puntera, entresuela antiperforación y tallas mexicanas. Cotiza con ficha técnica."
+  description: "Botas de bombero estructurales, forestales y para brigada: calzado de protección resistente en hule o piel, con puntera y entresuela. Cotiza con ficha."
   keywords: ["botas de bombero", "botas para bomberos", "botas forestales"]
 hero:
   eyebrow: "Botas para bombero"
@@ -189,6 +189,12 @@ faqs:
     a: "Depende del tipo, del material, de la puntera, de la entresuela y de la talla. No publicamos precios. Te cotizamos por talla mexicana, con la ficha técnica y la bota que corresponde a tu operación, para que compares propuestas con el mismo criterio."
   - q: "¿Qué debe traer la cotización de botas?"
     a: "Modelo, código, talla de cada persona, color cuando aplique, configuración, norma declarada y cantidad. Así revisas los pares al recibirlos. En la Croydon Filtrex, por ejemplo, anotamos BOT1002 y sus referencias NFPA 1971 y ASTM F903-10 tal como las declara."
+  - q: "¿Qué tipo de botas usan los bomberos?"
+    a: "Depende del incendio. En incendio estructural se usa bota de hule vulcanizado o de piel estructural, con puntera y entresuela antiperforación. En incendio forestal, bota de piel con agujetas y caña alta, sin puntera de acero, pensada para largas jornadas en pendiente. Las brigadas industriales usan calzado de seguridad o bota de brigada, según su análisis de riesgo."
+  - q: "¿Qué materiales se usan para fabricar las botas de bombero?"
+    a: "Hule o caucho vulcanizado en las estructurales de una pieza, y piel en las estructurales de cordón y en las forestales. Por dentro llevan forro aislante y, en algunos modelos, membrana impermeable y transpirable. Puntera y entresuela pueden ser de acero o de material compuesto, y la suela debe ser resistente al calor, a la abrasión y antideslizante para dar agarre en piso mojado."
+  - q: "¿Qué características de seguridad debe tener una bota de bombero?"
+    a: "Puntera contra impacto y compresión, entresuela contra punción, suela resistente al calor y con buen agarre, aislamiento térmico, barrera contra agua y una caña que traslape con la pantalonera. En rescates y escombro cuentan además la estabilidad del tobillo y la resistencia a la abrasión. La ficha del fabricante declara cada dato y la norma que cumple, y eso es lo que comparamos al cotizar."
 contacto:
   asunto: "botas para bombero"
   boton: "Enviar consulta de botas por WhatsApp"

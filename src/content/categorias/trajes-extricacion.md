@@ -16,7 +16,7 @@ hero:
   h1Accent: "para rescate vehicular"
   lead: "Resistente a corte y punción, con barrera contra patógenos, para las salidas de todos los días que no deberían desgastar tu traje estructural."
   descRight:
-    - "La mayoría de las salidas de un cuerpo de bomberos no son incendios: son accidentes viales. Cada extricación hecha con el traje estructural lo llena de aceite, vidrio y fluidos, y le resta vida a un equipo que se retira a los diez años de fabricado. El traje de extricación es más ligero, te deja trabajar hincado dentro del vehículo y cuesta bastante menos de reponer."
+    - "La mayoría de las salidas de un cuerpo de bomberos no son incendios: son accidentes viales. Cada extricación hecha con el traje estructural lo llena de aceite, vidrio y fluidos, y le resta vida a un equipo que se retira a los diez años de fabricado. El traje de extricación es el traje de bombero para rescate: más ligero, te deja trabajar hincado dentro del vehículo y cuesta bastante menos de reponer."
     - "En LORICA lo cotizamos con la cinta reflejante que pide el trabajo nocturno en carretera y con el guante de extricación a juego. Por pieza o en conjunto, con la talla de cada rescatista y envío a los 32 estados."
   meta: ["Corte y punción", "Barrera contra patógenos", "Alta visibilidad", "NFPA 1950"]
 menu:
@@ -53,7 +53,7 @@ secciones:
       - "La referencia es NFPA 1950, que absorbió a la antigua NFPA 1951, y tiene distintos niveles de certificación. Si no declaras cuál necesitas, llega el más básico."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre el traje de extricación"
+    titulo: "Preguntas frecuentes sobre el traje de extricación"
     duo:
       - "Antes de pedir trajes de extricación surge la duda de por qué no usar el estructural y si protege del fuego. Aquí también: para qué otros rescates sirve, cómo se descontamina y cuándo se retira."
       - "Si nos escribes, dinos cuántas salidas a accidentes viales tienen y cuántos rescatistas son. El formulario abre WhatsApp con tu consulta y te contestamos en día hábil."
