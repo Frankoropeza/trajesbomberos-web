@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Chiapas?",
    "a": "Una corporación de Chiapas puede adquirir equipo por licitación o compra directa con LORICA. Se entregan especificaciones técnicas por partida y CFDI 4.0, no hay compra mínima y el envío se coordina al municipio o instalación indicada."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Chiapas?",
+   "a": "En este directorio, Instituto de Bomberos del Estado de Chiapas (IBECH) suma 7 estaciones. Por tipo de operador, Chiapas tiene 8 estaciones estatales, 2 estaciones municipales, 2 estaciones aeroportuarias y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Chiapas atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 13 estaciones registradas en Chiapas, 1 declaran rescate vehicular y 5 incendios forestales; ninguna declara materiales peligrosos; 2 prestan salvamento aeroportuario. En Chiapas, ese perfil orienta la dotación: trajes de extricación, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

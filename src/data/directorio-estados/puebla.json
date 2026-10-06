@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Puebla?",
    "a": "Una corporación de bomberos en Puebla puede adquirir equipo por licitación o compra directa. LORICA entrega especificación técnica por partida, expediente de soporte y CFDI 4.0. No solicita compra mínima y coordina el envío al estado con la protección requerida para sus servicios."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Puebla?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos y Bomberas del Estado de Puebla suma 7 estaciones; le siguen HCBP, con 3. Por tipo de operador, Puebla tiene 10 estaciones estatales, 8 estaciones municipales, 1 estación aeroportuaria y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Puebla atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 20 estaciones registradas en Puebla, 18 declaran rescate vehicular, 5 materiales peligrosos y 2 incendios forestales; 3 prestan salvamento aeroportuario. En Puebla, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

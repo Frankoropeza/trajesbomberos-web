@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Guerrero?",
    "a": "Una corporación de bomberos en Guerrero puede comprar mediante licitación o compra directa. LORICA entrega especificación técnica por partida y el expediente de soporte, emite CFDI 4.0, no establece compra mínima y coordina el envío al estado conforme a sus riesgos."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Guerrero?",
+   "a": "En este directorio, Coordinación General de Protección Civil y Bomberos de Acapulco suma 5 estaciones. Por tipo de operador, Guerrero tiene 9 estaciones municipales, 2 estaciones aeroportuarias y 1 estación estatal. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Guerrero atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 12 estaciones registradas en Guerrero, 6 declaran rescate vehicular, 2 materiales peligrosos y 2 incendios forestales; 2 prestan salvamento aeroportuario. En Guerrero, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Michoacán?",
    "a": "Una corporación de bomberos en Michoacán puede adquirir equipo mediante licitación o compra directa. LORICA aporta especificación técnica por partida, emite CFDI 4.0, no solicita compra mínima y organiza el envío al estado con la protección requerida."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Michoacán?",
+   "a": "En este directorio, Coordinación Municipal de Protección Civil y Bomberos de Morelia suma 3 estaciones; le siguen Coordinación Municipal de Protección Civil y Bomberos de Zamora, con 2. Por tipo de operador, Michoacán tiene 14 estaciones municipales, 4 estaciones de voluntarios, 2 estaciones industriales, 2 estaciones de PEMEX, 1 estación aeroportuaria y 1 estación estatal. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Michoacán atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 24 estaciones registradas en Michoacán, 17 declaran rescate vehicular, 5 materiales peligrosos y 6 incendios forestales; 1 presta salvamento aeroportuario. En Michoacán, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

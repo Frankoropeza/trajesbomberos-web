@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en la Ciudad de México?",
    "a": "Una corporación de bomberos en la Ciudad de México puede comprar por licitación o compra directa. LORICA prepara especificación técnica por partida, proporciona CFDI 4.0 y no exige compra mínima. El envío se coordina a la alcaldía o base que indique la corporación, conforme a los riesgos que cubre."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Ciudad de México?",
+   "a": "En este directorio, HCBCDMX suma 22 estaciones. Por tipo de operador, Ciudad de México tiene 24 estaciones estatales, 1 estación industrial y 1 estación aeroportuaria. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Ciudad de México atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 26 estaciones registradas en Ciudad de México, 2 declaran rescate vehicular, 3 materiales peligrosos y 5 incendios forestales; 1 presta salvamento aeroportuario. En Ciudad de México, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

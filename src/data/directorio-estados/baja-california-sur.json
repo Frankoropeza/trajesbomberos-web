@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Baja California Sur?",
    "a": "Una corporación de Baja California Sur puede comprar por licitación o compra directa. LORICA entrega especificaciones técnicas por partida, factura CFDI 4.0, no exige compra mínima y coordina el envío al estado conforme a los productos seleccionados."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Baja California Sur?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos de La Paz suma 5 estaciones; le siguen H. Cuerpo de Bomberos de Cabo San Lucas, con 3, y Heroico Cuerpo de Bomberos de Loreto, con 2. Por tipo de operador, Baja California Sur tiene 10 estaciones municipales, 6 estaciones de voluntarios y 1 estación aeroportuaria. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Baja California Sur atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 17 estaciones registradas en Baja California Sur, 4 declaran rescate vehicular y 4 incendios forestales; ninguna declara materiales peligrosos; 1 presta salvamento aeroportuario. En Baja California Sur, ese perfil orienta la dotación: trajes de extricación, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

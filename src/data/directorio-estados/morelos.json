@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Morelos?",
    "a": "Una corporación de bomberos en Morelos puede comprar equipo por licitación o compra directa. LORICA integra la especificación técnica por partida, emite CFDI 4.0, no impone compra mínima y coordina el envío al estado de la dotación solicitada."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Morelos?",
+   "a": "En este directorio, Bomberos de Ayala (Ciudad Ayala) suma 1 estación. Por tipo de operador, Morelos tiene 11 estaciones municipales, 1 estación estatal, 1 estación industrial, 1 estación de voluntarios y 1 estación aeroportuaria. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Morelos atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 15 estaciones registradas en Morelos, 10 declaran rescate vehicular, 1 materiales peligrosos y 8 incendios forestales; 1 presta salvamento aeroportuario. En Morelos, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Aguascalientes?",
    "a": "Una corporación de Aguascalientes puede solicitar una cotización para licitación o compra directa. LORICA integra especificación técnica por partida, emite CFDI 4.0 y no solicita compra mínima. El envío se coordina al estado para que la corporación reciba la protección definida por sus servicios."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Aguascalientes?",
+   "a": "En este directorio, CREI — Aeropuerto Internacional de Aguascalientes suma 1 estación. Por tipo de operador, Aguascalientes tiene 11 estaciones municipales, 1 estación aeroportuaria y 1 estación estatal. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Aguascalientes atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 13 estaciones registradas en Aguascalientes, 10 declaran rescate vehicular, 7 materiales peligrosos y 7 incendios forestales; 1 presta salvamento aeroportuario. En Aguascalientes, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

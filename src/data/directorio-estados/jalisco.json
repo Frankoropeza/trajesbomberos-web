@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Jalisco?",
    "a": "Una corporación de Jalisco puede comprar por licitación o compra directa. LORICA entrega especificación técnica por partida, documentación para integrar el expediente y CFDI 4.0. No exige compra mínima y coordina el envío al estado, con la dotación definida según los riesgos que atiende la corporación."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Jalisco?",
+   "a": "En este directorio, Unidad Estatal de Protección Civil y Bomberos de Jalisco (UEPCBJ) suma 9 estaciones; le siguen Dirección de Protección Civil y Bomberos de Zapopan, con 6, y Coordinación Municipal de Gestión Integral de Riesgos, Protección Civil y Bomberos de Guadalajara, con 5. Por tipo de operador, Jalisco tiene 40 estaciones municipales, 9 estaciones estatales, 2 estaciones de PEMEX, 2 estaciones aeroportuarias y 2 estaciones industriales. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Jalisco atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 55 estaciones registradas en Jalisco, 27 declaran rescate vehicular, 8 materiales peligrosos y 15 incendios forestales; 2 prestan salvamento aeroportuario. En Jalisco, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

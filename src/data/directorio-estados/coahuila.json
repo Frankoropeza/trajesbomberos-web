@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Coahuila?",
    "a": "Una corporación de Coahuila puede adquirir equipo mediante licitación o compra directa. LORICA entrega especificaciones técnicas por partida, factura CFDI 4.0, no fija compra mínima y organiza el envío al estado para la corporación solicitante."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Coahuila?",
+   "a": "En este directorio, Bomberos Torreón suma 6 estaciones; le siguen Heroico Cuerpo de Bomberos de Saltillo, con 4, y Heroico Cuerpo de Bomberos de Monclova, con 2. Por tipo de operador, Coahuila tiene 28 estaciones municipales, 4 estaciones industriales, 3 estaciones aeroportuarias, 2 estaciones de voluntarios y 2 estaciones de CFE. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Coahuila atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 39 estaciones registradas en Coahuila, 3 declaran rescate vehicular, 6 materiales peligrosos y 4 incendios forestales; 3 prestan salvamento aeroportuario. En Coahuila, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

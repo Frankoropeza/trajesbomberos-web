@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Nuevo León?",
    "a": "Una corporación de Nuevo León puede adquirir equipo por licitación o compra directa. LORICA entrega especificación técnica por partida y CFDI 4.0, sin requerir compra mínima. El envío se coordina al estado, con las prendas y accesorios definidos por los riesgos que atiende cada base."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Nuevo León?",
+   "a": "En este directorio, Bomberos de Nuevo León, A.B.P. suma 14 estaciones; le siguen Patronato de Bomberos de Ciudad Guadalupe, A.C., con 4, y Dirección de Bomberos y Protección Civil de San Nicolás de los Garza, con 3. Por tipo de operador, Nuevo León tiene 18 estaciones de patronato, 10 estaciones municipales, 2 estaciones aeroportuarias y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Nuevo León atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 31 estaciones registradas en Nuevo León, 22 declaran rescate vehicular, 9 materiales peligrosos y 4 incendios forestales; 2 prestan salvamento aeroportuario. En Nuevo León, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Baja California?",
    "a": "Una corporación de Baja California puede solicitar cotización para licitación o compra directa. LORICA desarrolla especificación técnica por partida, entrega CFDI 4.0 y no exige compra mínima. El envío llega al estado y la configuración se adapta a los riesgos declarados por cada corporación."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Baja California?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos de Tijuana suma 19 estaciones; le siguen Heroico Cuerpo de Bomberos de Mexicali, con 11, y Heroico Cuerpo de Bomberos de Ensenada, con 6. Por tipo de operador, Baja California tiene 40 estaciones municipales y 2 estaciones aeroportuarias. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Baja California atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 42 estaciones registradas en Baja California, 3 declaran materiales peligrosos y 1 incendios forestales; ninguna declara rescate vehicular; 2 prestan salvamento aeroportuario. En Baja California, ese perfil orienta la dotación: equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

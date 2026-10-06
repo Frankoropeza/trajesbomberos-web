@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Oaxaca?",
    "a": "Una corporación de bomberos en Oaxaca puede comprar por licitación o compra directa. LORICA prepara especificación técnica por partida, respalda el expediente requerido y emite CFDI 4.0. No requiere compra mínima y coordina el envío al estado según el equipo que necesita la corporación."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Oaxaca?",
+   "a": "En este directorio, HCBO suma 4 estaciones; le siguen Heroico Cuerpo de Bomberos de Oaxaca, con 3. Por tipo de operador, Oaxaca tiene 7 estaciones estatales, 5 estaciones municipales, 2 estaciones aeroportuarias y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Oaxaca atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 15 estaciones registradas en Oaxaca, 12 declaran rescate vehicular, 4 materiales peligrosos y 2 incendios forestales; 2 prestan salvamento aeroportuario. En Oaxaca, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

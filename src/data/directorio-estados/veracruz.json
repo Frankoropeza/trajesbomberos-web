@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Veracruz?",
    "a": "Una corporación de bomberos en Veracruz puede comprar mediante licitación o compra directa. LORICA arma especificación técnica por partida, emite CFDI 4.0 y no requiere compra mínima. El envío se organiza al estado con protección, tallas y accesorios adecuados para los servicios definidos por la corporación."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Veracruz?",
+   "a": "En este directorio, Heroico y Benemérito Cuerpo de Bomberos de Veracruz suma 3 estaciones; le siguen Patronato del H. Cuerpo de Bomberos Conurbados Veracruz–Boca del Río, A.C., con 2. Por tipo de operador, Veracruz tiene 12 estaciones municipales, 3 estaciones de voluntarios, 2 estaciones aeroportuarias, 1 estación de PEMEX y 1 estación de patronato. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Veracruz atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 19 estaciones registradas en Veracruz, 13 declaran rescate vehicular, 3 materiales peligrosos y 1 incendios forestales; 2 prestan salvamento aeroportuario. En Veracruz, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

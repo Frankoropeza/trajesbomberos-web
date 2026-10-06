@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Campeche?",
    "a": "Una corporación de bomberos en Campeche puede solicitar una cotización para compra directa o licitación. LORICA entrega especificaciones por partida, factura CFDI 4.0, atiende pedidos sin compra mínima y coordina el envío hasta el estado."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Campeche?",
+   "a": "En este directorio, Bomberos del Estado suma 2 estaciones. Por tipo de operador, Campeche tiene 12 estaciones municipales, 3 estaciones estatales, 2 estaciones aeroportuarias y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Campeche atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 18 estaciones registradas en Campeche, 1 declaran materiales peligrosos y 1 incendios forestales; ninguna declara rescate vehicular; 2 prestan salvamento aeroportuario. En Campeche, ese perfil orienta la dotación: equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

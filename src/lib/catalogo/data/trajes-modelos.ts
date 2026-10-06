@@ -4,7 +4,7 @@
 // (2026-09-29) a partir del contenido vigente; desde aquí se edita a mano o con Codex.
 import type { Modelo, Seccion, Tipo } from '../types';
 
-export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
+const DATA_BASE: { tipos: Tipo[]; modelos: Modelo[] } = {
   "tipos": [],
   "modelos": [
     {
@@ -1146,7 +1146,8 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       "descripcion": [
         "Un overol cubre el cuerpo sin hueco en la cintura, algo útil al agacharse y trabajar cerca del suelo. Cierra con zipper Nomex YKK y broches de acero inoxidable, con cuello alto, puños con velcro y cintura elástica.",
         "Codos y rodillas van reforzados, y las piernas se ajustan con velcro sobre la bota. El pozo de agua y el porta micrófono completan un overol pensado para cuadrillas que trabajan con radio.",
-        "Es la ropa de nuestro kit forestal, junto con el casco Bullard FH911H y los goggles ESS Striketeam XTO."
+        "Es la ropa de nuestro kit forestal, junto con el casco Bullard FH911H y los goggles ESS Striketeam XTO.",
+        "Al recibir el Fire Ranger Explorer, pruébalo con botas, guantes, casco y radio. Revisa zipper, puños, rodillas y ajuste de piernas mientras te agachas. Su ficha describe un traje forestal para bombero; al diseñar la asignación, confirma el material y la configuración antes de usarlo en incendio."
       ],
       "faq": [
         {
@@ -1164,6 +1165,10 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
         {
           "q": "¿El Fire Ranger Explorer forma parte de algún kit?",
           "a": "Sí, del kit forestal, con el casco Bullard FH911H y los goggles ESS Striketeam XTO."
+        },
+        {
+          "q": "¿Cómo reviso el ajuste del Fire Ranger Explorer?",
+          "a": "Pruébalo con botas, guantes, casco y radio. Agáchate y sube un escalón para confirmar que el torso, puños y piernas conservan movilidad sin tensar el cierre."
         }
       ],
       "imagen": {
@@ -1247,7 +1252,8 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "descripcion": [
         "Dos piezas permiten quitarse el chaquetón en los descansos sin desvestirse por completo, algo que se agradece en temporadas de calor. El pantalón azul lleva bolsas en costados y espalda, cinta 3M de tres pulgadas, refuerzos y cintura con presillas.",
-        "Su ficha menciona Nomex IIIA de 6 oz/yd² para el chaquetón y, en el póster del modelo, tela 100 % Nomex. Confirmamos cuál aplica a tu partida antes de cotizar."
+        "Su ficha menciona Nomex IIIA de 6 oz/yd² para el chaquetón y, en el póster del modelo, tela 100 % Nomex. Confirmamos cuál aplica a tu partida antes de cotizar.",
+        "Antes de recibir el Fire Ranger Scout, define tallas de chaquetón y pantalón por separado. En la prueba, úsalo con bota, guante y casco, y revisa cierres, puños y refuerzos. El traje forestal del bombero debe conservar protección y movilidad durante un incendio de vegetación."
       ],
       "faq": [
         {
@@ -1265,6 +1271,10 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
         {
           "q": "¿Qué diferencia hay entre el Scout y el Explorer?",
           "a": "El Explorer es un overol de una pieza; el Scout, chaquetón y pantalón separados."
+        },
+        {
+          "q": "¿Cómo compruebo la talla del Fire Ranger Scout?",
+          "a": "Pruébalo con bota, guante y casco. Flexiona hombros y rodillas para confirmar que chaquetón y pantalón conservan traslape y no tensan cierres o costuras."
         }
       ],
       "imagen": {
@@ -1346,7 +1356,8 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "descripcion": [
         "La diferencia entre las dos versiones está en el material, y por eso se piden con código distinto: BOMW1002 para Nomex IIIA y BOMW1002 FR para algodón ignífugo. Para reponer una pieza, conviene cotejar la etiqueta de la que sigue en servicio.",
-        "El pantalón amarillo lleva presillas, bolsas cargo con fuelle de 10 por 10 pulgadas, bolsillos traseros y cintas reflejantes. Las mangas ergonómicas del saco facilitan el trabajo con herramienta manual."
+        "El pantalón amarillo lleva presillas, bolsas cargo con fuelle de 10 por 10 pulgadas, bolsillos traseros y cintas reflejantes. Las mangas ergonómicas del saco facilitan el trabajo con herramienta manual.",
+        "Al recibir el BOMW1002, coteja el código de etiqueta con la versión solicitada y prueba saco y pantalón con botas, guantes y casco. En la reposición, conserva esa identificación. Es un traje forestal para bombero sin norma declarada; no se le atribuye protección distinta de la ficha."
       ],
       "faq": [
         {
@@ -1364,6 +1375,10 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
         {
           "q": "¿Qué lleva el pantalón forestal BOMW1002?",
           "a": "Presillas, bolsas cargo con fuelle, bolsillos traseros y cintas reflejantes."
+        },
+        {
+          "q": "¿Qué verifico al recibir un BOMW1002?",
+          "a": "Coteja código, material y talla con la orden. Después revisa broches, solapa, costuras y ajuste con botas y guantes antes de asignarlo."
         }
       ],
       "imagen": {
@@ -1449,7 +1464,8 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       "descripcion": [
         "La superficie aluminizada refleja el calor radiante, el riesgo principal cuando se trabaja cerca de un incendio de aeronave, un horno o una fuga en refinería. Los refuerzos también son aluminizados.",
         "El chaquetón lleva DRD con letras de alta visibilidad, porta micrófono, extensión de manga, porta radio bilateral, mangas curvas y hombros acolchados con ocho puntos de anclaje. La pantalonera usa tirantes H de cuatro u ocho puntos, cierre doble con zipper Nomex, refuerzo diamante, rodilleras y talón Ara-Shield.",
-        "La certificación cubre la configuración fabricada. La abrasión en la superficie aluminizada reduce su capacidad de reflejar el calor, así que se inspecciona después de cada uso."
+        "La certificación cubre la configuración fabricada. La abrasión en la superficie aluminizada reduce su capacidad de reflejar el calor, así que se inspecciona después de cada uso.",
+        "Antes de recibir el Mark One MPX-8, arma el traje aluminizado con guantes, capucha y botas. En la inspección, revisa superficie exterior, visor, cierres y costuras. Confirma la ficha de esta configuración para temperatura alta y aproximación; no se asigna como traje de entrada a la flama. La descripción del producto debe incluir pantalón, forro, broche, cuello, capa térmica y barrera de humedad para confirmar resistencia, contacto y protección del sistema."
       ],
       "faq": [
         {
@@ -1467,6 +1483,10 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
         {
           "q": "¿Qué tirantes lleva el Mark One?",
           "a": "Tirantes H de cuatro u ocho puntos, según configuración."
+        },
+        {
+          "q": "¿Qué reviso al recibir un Mark One MPX-8?",
+          "a": "Revisa exterior aluminizado, visor, cierres, costuras y la interfaz con guantes, capucha y botas. Cualquier abrasión o daño se evalúa antes de usarlo."
         }
       ],
       "imagen": {
@@ -1513,4 +1533,25 @@ export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
       }
     }
   ]
+};
+
+const MEJORAS_4A1: Record<string, { parrafo: string; faq: { q: string; a: string } }> = {
+  'romak-protector': { parrafo: 'Al recibir el Romak Fire Protector, un bombero profesional debe probar chaquetón, pantalonera, tirante, casco para bomberos y guante estructural como un solo equipo de protección. Revisa la capa externa, barreras de humedad, barrera térmica, cierres y costuras después de flexionar hombros y rodillas. Esta inspección apoya la movilidad del usuario, transpiración y vida útil durante combate de incendios, calor radiante y altas temperaturas. La certificación UL, NFPA 1971 y la norma NFPA se validan contra la etiqueta; no se infieren de colores, Nomex o Kevlar.', faq: { q: '¿Qué configuración del Protector debo registrar al recibirlo?', a: 'Registra exterior, barreras, color, talla y etiqueta de certificación. Esos datos permiten pedir una reposición compatible con el conjunto que ya usa el bombero.' } },
+  'romak-profesional': { parrafo: 'Para poner en servicio el Romak Fire Profesional, verifica el traje estructural con ERA, monja, bota y guante estructural. Examina capa externa, barreras de humedad, barrera térmica, cierres y costuras, y haz una prueba de movilidad del usuario al subir, arrodillarse y alcanzar. El equipo de protección para bomberos trabaja ante combate de incendios, calor radiante y altas temperaturas como conjunto. Conserva la etiqueta de certificación UL y NFPA 1971; una referencia de Nomex, Kevlar o norma NFPA debe coincidir con la configuración entregada.', faq: { q: '¿Qué prueba de movilidad conviene hacer con el Romak Fire Profesional?', a: 'Pruébalo con el ERA y calzado reales. El usuario debe poder subir escalones, arrodillarse y alcanzar por arriba sin abrir puños, cuello o cintura.' } },
+  'romak-defender': { parrafo: 'El Romak Fire Defender se inspecciona como traje de bombero completo antes de asignarlo a un bombero estructural. Revisa capa externa, barreras de humedad, barrera térmica, DRD, cierre, tirante y costuras con casco para bomberos, guante estructural y ERA. La protección para bomberos ante calor radiante, altas temperaturas y combate de incendios depende de esa interfaz y de la movilidad del usuario. Confirma en etiqueta cualquier certificación UL, NFPA 1971, norma NFPA, Nomex o Kevlar; la apariencia no acredita protección personal ni vida útil.', faq: { q: '¿Qué parte del Defender reviso junto con el ERA?', a: 'Revisa cuello, DRD, hombros y acceso a controles con el ERA colocado. La prueba debe confirmar que el conjunto no obstruye máscara, arnés ni maniobras de rescate.' } },
+  'romak-vantage': { parrafo: 'Antes de asignar el Romak Fire Vantage, revisa el traje estructural con el casco para bomberos, bota, guante estructural y ERA que usa la corporación. Inspecciona capa externa, barreras de humedad, barrera térmica, cierres, costuras y puntos de alta visibilidad al flexionar. El conjunto aporta protección para bomberos durante combate de incendios, calor radiante y altas temperaturas, pero su durabilidad y movilidad del usuario dependen de inspección y mantenimiento. Contrasta certificación UL, NFPA 1971, norma NFPA, Nomex y Kevlar solo con los documentos de esa configuración.', faq: { q: '¿Cómo reviso los refuerzos del Romak Fire Vantage?', a: 'Con el traje puesto, arrodíllate y apoya codos y talones. Busca desgaste, desprendimientos o rigidez que cambie la movilidad antes de dejarlo en servicio.' } },
+  'romak-maverick-ii': { parrafo: 'El Romak Fire Maverick II se recibe como equipo de protección para bomberos y se prueba con casco para bomberos, guante estructural, bota y ERA. Revisa capa externa, barreras de humedad, barrera térmica, cierres, costuras y tirante antes de exponerlo a combate de incendios, calor radiante o altas temperaturas. La movilidad del usuario, transpiración y vida útil se observan con el conjunto armado. Certificación UL, NFPA 1971, norma NFPA, Nomex y Kevlar solo se anotan cuando corresponden a la etiqueta y configuración entregadas.', faq: { q: '¿Qué debo inspeccionar en las costuras del Maverick II?', a: 'Busca hilo roto, abrasión, costuras abiertas y zonas endurecidas, sobre todo en hombros, rodillas y entrepierna. Registra cualquier hallazgo antes de usarlo.' } },
+  'skold-hero-pbimax': { parrafo: 'Para recibir el Sköld Hero PBI MAX, arma el traje de bombero con casco para bomberos, guante estructural, bota y equipo respiratorio. Verifica capa externa, barreras de humedad, barrera térmica, cuello, cierres y costuras mientras pruebas la movilidad del usuario. El traje estructural se conserva para combate de incendios, calor radiante y altas temperaturas mediante inspección de su equipo de protección, no por una apariencia de durabilidad. Comprueba certificación UL, NFPA 1971, norma NFPA, Nomex o Kevlar contra la documentación del modelo, pues los materiales cambian por configuración.', faq: { q: '¿Qué recibo junto con un Sköld Hero PBI MAX?', a: 'Pide la etiqueta, ficha y documentos que correspondan a la configuración cotizada. Confirma además talla y compatibilidad con las piezas que ya usa tu corporación.' } },
+  'skold-hero-nomex': { parrafo: 'El Sköld Hero Nomex IIIA debe probarse con el equipo de protección que acompaña al bombero: casco para bomberos, guante estructural, bota, monja y ERA. Inspecciona capa externa, barreras de humedad, barrera térmica, costuras, cierre y tirante antes de combate de incendios. La movilidad del usuario frente a calor radiante y altas temperaturas se evalúa vestido, no desde una fotografía. Confirma la certificación UL, NFPA 1971 y norma NFPA en la etiqueta; Nomex o Kevlar se registran solo en la composición declarada para ese traje estructural.', faq: { q: '¿Por qué probar el Hero Nomex IIIA con la monja?', a: 'Porque cuello, máscara y monja forman una interfaz. La prueba permite detectar si alguna pieza desplaza otra o deja piel expuesta al mover la cabeza.' } },
+  'romak-combate-basico': { parrafo: 'El Romak Fire Combate Básico se entrega como producto para brigadista y se debe probar con casco, bota, guante y usuario asignado. Revisa material, cierre, tela, forro, capa exterior y costuras al realizar movimientos de primera respuesta, rescate y combate autorizado. La seguridad del traje de bombero brigadista depende del riesgo de la brigada y de su equipo completo. No se debe diseñar una compra por apariencia: confirma norma NFPA declarada, talla y compatibilidad antes de ponerlo en servicio.', faq: { q: '¿Qué identifico al recibir un Combate Básico por primera vez?', a: 'Identifica talla, etiqueta, piezas entregadas y la configuración de chaquetón y pantalón. Pruébalo con el equipo real de la brigada antes de asignarlo.' } },
+  'skold-brigadista-defender': { parrafo: 'Antes de distribuir el Sköld Brigadista Defender, cada usuario prueba el traje de bombero brigadista con casco, bota, guante y el resto del equipo. Revisa material, tela, forro, cierre, capa exterior y costuras mientras simula primera respuesta, rescate y combate autorizado. La seguridad y comodidad de la brigada dependen de ese ajuste, no solo del producto. Para diseñar la dotación, conserva la norma NFPA declarada y confirma que la talla permita movilidad sin abrir la cintura o limitar brazos.', faq: { q: '¿Cómo compruebo que el Brigadista Defender no limita movilidad?', a: 'Con el conjunto armado, alcanza arriba, arrodíllate y camina con botas. Chaquetón y pantalón deben mantener traslape sin tensar hombros o cintura.' } },
+  'lakeland-a10-attack': { parrafo: 'El Lakeland OSX A10 Attack se revisa por separado en chaquetón y pantalón, y después como traje de bombero brigadista completo. El usuario debe probar material, tela, forro, cierre, capa exterior, casco, guante y bota durante movimientos de primera respuesta, rescate y combate autorizado. La seguridad de la brigada depende de talla, movilidad y compatibilidad del equipo, no de una foto del producto. En la orden, escribe los códigos de ambas prendas y conserva la norma NFPA declarada.', faq: { q: '¿Por qué conviene anotar los dos códigos del A10 Attack?', a: 'Porque chaquetón y pantalón tienen códigos distintos. Registrarlos juntos evita recibir una sola pieza o reemplazarla con una configuración que no corresponde.' } },
+};
+
+export const data: { tipos: Tipo[]; modelos: Modelo[] } = {
+  ...DATA_BASE,
+  modelos: DATA_BASE.modelos.map((modelo) => {
+    const mejora = MEJORAS_4A1[modelo.id];
+    return mejora ? { ...modelo, descripcion: [...modelo.descripcion, mejora.parrafo], faq: [...modelo.faq, mejora.faq] } : modelo;
+  }),
 };

@@ -143,6 +143,10 @@ Si contestaste que no a alguna, no es urgencia pero sí es pendiente. Mándanos 
 
 **¿La NFPA es obligatoria en México?** No por sí misma. Se vuelve exigible cuando un pliego o un contrato la invoca. Las obligaciones del patrón vienen de la NOM-002-STPS-2010 y de la norma de equipo de protección personal de la STPS.
 
+**¿Qué es la norma NFPA 1971?** Fue la norma de la NFPA para conjuntos de protección en combate de incendios estructurales y de proximidad: definía los requisitos de diseño, desempeño y certificación del traje de bombero, la capucha, los guantes, las botas y el casco. Su última edición fue la de 2018. Desde la edición 2025, su contenido vive dentro de la NFPA 1970.
+
+**¿Qué es la norma NFPA 1970 en español?** Es la norma que reúne los requisitos para los conjuntos de protección de bomberos en incendios estructurales y de proximidad, el uniforme de estación, el equipo de respiración autónoma y el dispositivo PASS. Pide pruebas de protección térmica, barrera contra líquidos y patógenos, y certificación por un laboratorio independiente. La NFPA publica su texto oficial en inglés.
+
 ## Fuentes
 
 - [UL Solutions — NFPA Consolidates Firefighter PPE Standards into New NFPA 1970](https://www.ul.com/news/nfpa-consolidates-firefighter-ppe-standards-new-nfpa-1970)

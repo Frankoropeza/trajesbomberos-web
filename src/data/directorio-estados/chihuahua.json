@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Chihuahua?",
    "a": "Una corporación de Chihuahua puede cotizar equipo para licitación o compra directa. LORICA prepara especificaciones técnicas por partida, factura CFDI 4.0, atiende sin compra mínima y organiza el envío al estado con los productos solicitados."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Chihuahua?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos de Ciudad Juárez suma 10 estaciones; le siguen Heroico Cuerpo de Bomberos y Rescate de Chihuahua, con 8. Por tipo de operador, Chihuahua tiene 27 estaciones municipales, 2 estaciones aeroportuarias y 1 estación de voluntarios. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Chihuahua atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 30 estaciones registradas en Chihuahua, 3 declaran rescate vehicular, 1 materiales peligrosos y 6 incendios forestales; 2 prestan salvamento aeroportuario. En Chihuahua, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

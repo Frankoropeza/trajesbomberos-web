@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Hidalgo?",
    "a": "Si tu ayuntamiento compra por licitación, LORICA prepara la ficha técnica de cada partida para el expediente; si es compra directa, cotizamos igual. Facturamos con CFDI 4.0, sin compra mínima, y enviamos a cualquier municipio de Hidalgo."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Hidalgo?",
+   "a": "En este directorio, Protección Civil y Bomberos de Actopan suma 1 estación. Por tipo de operador, Hidalgo tiene 9 estaciones municipales, 2 estaciones de voluntarios, 1 estación estatal y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Hidalgo atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 13 estaciones registradas en Hidalgo, 5 declaran rescate vehicular, 2 materiales peligrosos y 1 incendios forestales. En Hidalgo, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat y trajes forestales, además del equipo estructural."
   }
  ]
 }

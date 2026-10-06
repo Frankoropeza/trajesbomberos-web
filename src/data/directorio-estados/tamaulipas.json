@@ -34,6 +34,14 @@
   {
    "q": "¿De qué forma compra equipo una corporación de bomberos en Tamaulipas?",
    "a": "Una corporación de bomberos en Tamaulipas puede solicitar equipo por licitación o mediante compra directa. LORICA entrega la especificación técnica de cada partida, expide CFDI 4.0, no exige compra mínima y despacha al estado los productos incluidos en la cotización."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Tamaulipas?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos de Altamira suma 2 estaciones; le siguen Bomberos de Matamoros, con 2, y Protección Civil y Bomberos de Ciudad Victoria, con 2. Por tipo de operador, Tamaulipas tiene 12 estaciones municipales, 3 estaciones aeroportuarias y 1 estación de PEMEX. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Tamaulipas atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 16 estaciones registradas en Tamaulipas, 10 declaran rescate vehicular, 6 materiales peligrosos y 3 incendios forestales; 3 prestan salvamento aeroportuario. En Tamaulipas, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

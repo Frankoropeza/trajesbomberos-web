@@ -121,6 +121,10 @@ Cuando una planta nos manda su análisis de riesgo, devolvemos la cotización ya
 
 **¿Cada cuánto hay que hacer simulacros de incendio según la NOM-002-STPS-2010?** Al menos una vez al año en centros de trabajo con riesgo de incendio ordinario y al menos dos veces al año en los de riesgo alto, según el numeral 5.7 de la norma.
 
+**¿A qué altura se colocan los extintores según la NOM-002-STPS-2010?** La norma pide colocarlos a una altura no mayor de 1.50 m, medida del nivel del piso a la parte más alta del extintor, en lugares visibles, de fácil acceso y libres de obstáculos. También pide señalizarlos y revisarlos de forma periódica. Confirma la redacción vigente en el texto oficial publicado en el DOF.
+
+**¿Qué relación hay entre la NOM-002 y el programa interno de protección civil?** Son obligaciones distintas que se complementan. La NOM-002-STPS-2010 fija las condiciones de seguridad para la prevención y protección contra incendios en el centro de trabajo, incluida la brigada. El programa interno de protección civil, que exige la ley de protección civil, organiza la prevención, el auxilio y la recuperación ante cualquier emergencia del inmueble.
+
 ## Fuentes
 
 - [NOM-002-STPS-2010, Condiciones de seguridad — Prevención y protección contra incendios en los centros de trabajo (DOF, 9 de diciembre de 2010)](https://dof.gob.mx/normasOficiales/4228/stps/stps.htm): numerales 5.1, 5.2 f), 5.6, 5.7, 5.8 y 5.9; Apéndice A y Guía de Referencia III.

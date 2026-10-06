@@ -92,6 +92,10 @@ Una requisición que sólo dice "Nomex" deja abiertas demasiadas decisiones. Una
 
 **¿Qué debo pedir si quiero cotizar ropa para brigada?** Describe la tarea de la brigada, la exposición, el número de usuarios, tallas, colores permitidos y el método de lavado. Después compara la composición y construcción de prendas propuestas para ese mismo alcance.
 
+**¿Qué es el Nomex y para qué sirve?** Nomex es una marca registrada de DuPont para una fibra de meta-aramida resistente al calor y a la flama. Sirve para fabricar ropa de protección: trajes y overoles de bombero, capuchas, guantes y prendas para riesgo de arco eléctrico en la industria. No se derrite ni gotea, y su resistencia es inherente a la fibra, no a un acabado que se pierda con el lavado.
+
+**¿En qué se diferencia el Nomex del Kevlar?** Ambos son aramidas de DuPont, pero cumplen funciones distintas. El Nomex resiste el calor y la flama y se usa en la capa que protege de la temperatura. El Kevlar aporta resistencia mecánica al corte y a la abrasión. Por eso muchas telas de bombero los mezclan, como el Nomex IIIA, que combina Nomex con una proporción de Kevlar.
+
 ## Propiedades de la fibra y límites de la prenda
 
 Nomex® es una fibra de aramida usada en tela para ropa de trabajo y prendas de protección. Su resistencia al calor y a las llamas es inherente al material, pero no vuelve seguro cualquier producto hecho con esa fibra.

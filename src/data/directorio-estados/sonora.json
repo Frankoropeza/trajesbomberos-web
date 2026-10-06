@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Sonora?",
    "a": "Para comprar equipo, una corporación de bomberos en Sonora puede abrir una licitación o hacer compra directa. LORICA entrega la especificación técnica por partida, expide CFDI 4.0, no pide compra mínima y coordina el envío al estado conforme a la selección."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Sonora?",
+   "a": "En este directorio, Departamento de Bomberos de Hermosillo suma 6 estaciones; le siguen H. Cuerpo de Bomberos de Cajeme, con 5, y Dirección de Protección Civil y Bomberos de San Luis Río Colorado, con 5. Por tipo de operador, Sonora tiene 22 estaciones municipales, 8 estaciones de voluntarios y 3 estaciones aeroportuarias. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Sonora atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 33 estaciones registradas en Sonora, 28 declaran rescate vehicular, 7 materiales peligrosos y 1 incendios forestales; 3 prestan salvamento aeroportuario. En Sonora, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

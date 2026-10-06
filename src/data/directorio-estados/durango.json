@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Durango?",
    "a": "Una corporación de Durango puede adquirir equipo mediante licitación o compra directa. LORICA proporciona especificaciones técnicas por partida, CFDI 4.0, atención sin compra mínima y envío al estado para cubrir el requerimiento solicitado."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Durango?",
+   "a": "En este directorio, Protección Civil y Bomberos de Canatlán suma 1 estación. Por tipo de operador, Durango tiene 13 estaciones municipales, 1 estación federal, 1 estación aeroportuaria y 1 estación de voluntarios. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Durango atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 16 estaciones registradas en Durango, 1 declaran rescate vehicular y 3 incendios forestales; ninguna declara materiales peligrosos; 1 presta salvamento aeroportuario. En Durango, ese perfil orienta la dotación: trajes de extricación, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

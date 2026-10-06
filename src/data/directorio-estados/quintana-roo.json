@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Quintana Roo?",
    "a": "Para adquirir equipo, una corporación de bomberos en Quintana Roo puede tramitar licitación o compra directa. LORICA entrega la especificación técnica de cada partida, emite CFDI 4.0, no pide compra mínima y coordina el envío al estado según los productos elegidos."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Quintana Roo?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos de Cancún suma 5 estaciones. Por tipo de operador, Quintana Roo tiene 13 estaciones municipales y 3 estaciones aeroportuarias. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Quintana Roo atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 16 estaciones registradas en Quintana Roo, 8 declaran rescate vehicular, 2 materiales peligrosos y 3 incendios forestales; 3 prestan salvamento aeroportuario. En Quintana Roo, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

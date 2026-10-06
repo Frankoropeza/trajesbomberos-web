@@ -231,6 +231,10 @@ faqs:
     a: "Es el nombre común del PASS, la alarma personal que suena si el bombero deja de moverse unos segundos, para que su equipo lo localice. Muchos ERA de combate lo traen integrado y se enciende al abrir la válvula de la botella. En equipos industriales puede ir aparte. Confirma en la ficha si viene incluido."
   - q: "¿Dónde se usa un equipo de respiración autónoma en la industria?"
     a: "En instalaciones industriales con riesgo de atmósfera nociva u hostil: espacios confinados, tanques, alcantarillas, plantas químicas y rescates en áreas con gas. La brigada lo usa para aislar su respiración del ambiente, con un tamaño de cilindro acorde a la tarea. Si el trabajo es largo y en un punto fijo, a veces conviene una línea de aire externa con botella de escape."
+  - q: "¿Qué normativa deben cumplir los equipos de protección respiratoria para bomberos?"
+    a: "Para combate de incendios, la referencia es NFPA 1970, que desde su edición 2025 absorbió a la NFPA 1981 de equipos de respiración autónoma. En equipos industriales se usa la certificación NIOSH 42 CFR Parte 84. Un ERA solo cumple los requisitos de su norma si todas sus partes son de la misma aprobación: mezclar máscaras o reguladores incompatibles la invalida."
+  - q: "¿Qué se revisa en un ERA antes de cada guardia?"
+    a: "La presión de la botella, que no haya fugas al abrir la válvula, que el pulmoautomático entregue aire al inhalar y que la alarma de baja presión y el PASS funcionen. También se revisan la máscara, el visor y el estado del arnés. Esa revisión operativa se registra; un equipo que falla cualquier punto queda fuera de servicio hasta su reparación."
 contacto:
   asunto: "equipo de respiración autónoma"
   boton: "Enviar consulta de ERA por WhatsApp"

@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Querétaro?",
    "a": "Con LORICA puedes comprar por licitación o de forma directa. Cada partida lleva su ficha técnica, la factura es CFDI 4.0 y no hay compra mínima, así que un cuerpo de una sola estación cotiza igual que uno con varias bases. El envío se hace a Querétaro."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Querétaro?",
+   "a": "En este directorio, Heroico Cuerpo de Bomberos Voluntarios de Querétaro suma 6 estaciones; le siguen Heroico Cuerpo de Bomberos de San Juan del Río, con 3. Por tipo de operador, Querétaro tiene 11 estaciones de voluntarios, 1 estación aeroportuaria, 1 estación municipal y 1 estación de patronato. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Querétaro atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 14 estaciones registradas en Querétaro, 5 declaran rescate vehicular y 1 materiales peligrosos; ninguna declara incendios forestales; 2 prestan salvamento aeroportuario. En Querétaro, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat y trajes de aproximación, además del equipo estructural."
   }
  ]
 }

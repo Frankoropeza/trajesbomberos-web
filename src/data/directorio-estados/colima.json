@@ -34,6 +34,14 @@
   {
    "q": "¿Cómo compra equipo una corporación de bomberos en Colima?",
    "a": "Una corporación de Colima puede comprar por licitación o compra directa con LORICA. Se preparan especificaciones técnicas por partida y CFDI 4.0, no hay compra mínima y el envío se programa al estado para el equipo elegido."
+  },
+  {
+   "q": "¿Qué corporaciones de bomberos tienen más estaciones en Colima?",
+   "a": "En este directorio, H. Cuerpo de Bomberos Voluntarios de Colima suma 2 estaciones. Por tipo de operador, Colima tiene 9 estaciones municipales, 4 estaciones de voluntarios, 1 estación estatal, 1 estación de PEMEX, 1 estación de CFE, 1 estación industrial y 1 estación aeroportuaria. Cada corporación define su propio proceso de compra."
+  },
+  {
+   "q": "¿Cuántas estaciones de Colima atienden rescate vehicular, materiales peligrosos o incendios forestales?",
+   "a": "De las 18 estaciones registradas en Colima, 5 declaran rescate vehicular, 4 materiales peligrosos y 4 incendios forestales; 1 presta salvamento aeroportuario. En Colima, ese perfil orienta la dotación: trajes de extricación, equipo Hazmat, trajes forestales y trajes de aproximación, además del equipo estructural."
   }
  ]
 }
