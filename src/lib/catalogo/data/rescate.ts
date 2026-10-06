@@ -109,7 +109,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "resumen": [
         "En extricación vehicular cada herramienta tiene su papel: el separador crea espacio, el cortador corta postes y perfiles, la combinada hace las dos cosas y el cilindro empuja entre dos puntos.",
-        "Todavía no publicamos un modelo. Cotizamos cada función con su fuente de energía, hidráulica o batería, y con los datos que declare el fabricante, sin atribuir fuerzas ni aperturas que no estén en su ficha."
+        "Todavía no publicamos un modelo. Cotizamos cada función con su fuente de energía, hidráulica o batería, y con los datos que declare el fabricante, sin atribuir fuerzas ni aperturas que no estén en su ficha.",
+        "En accidentes con personas atrapadas, el bombero estabiliza el vehículo y protege la escena antes de utilizar el equipo hidráulico. La práctica y el entrenamiento determinan cada maniobra de rescate de personas, sin atrapar al paciente ni al rescatista."
       ],
       "duos": {
         "ficha": [
@@ -226,7 +227,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       ],
       "resumen": [
         "La referencia para equipo de rescate con cuerda es NFPA 2500, que absorbió a la NFPA 1983. Define las clases de arnés según la carga y el tipo de maniobra.",
-        "Todavía no publicamos un modelo. Lo cotizamos por clase, talla y conexiones, con la declaración del fabricante y compatibilidad con la cuerda y los conectores de tu equipo."
+        "Todavía no publicamos un modelo. Lo cotizamos por clase, talla y conexiones, con la declaración del fabricante y compatibilidad con la cuerda y los conectores de tu equipo.",
+        "Un arnés de seguridad para trabajos en altura distribuye carga alrededor del torso, cintura y perneras. Revisa cinta, costuras, herrajes, anclaje y línea de vida antes de cada uso. Un arnés de cuerpo completo requiere mantenimiento, trazabilidad y retiro tras una caída."
       ],
       "duos": {
         "ficha": [

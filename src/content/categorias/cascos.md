@@ -16,7 +16,7 @@ hero:
   lead: "Cinco tipos de casco para cinco trabajos distintos. Te ayudamos a elegir el que corresponde a tu operación y lo probamos con la máscara de tu ERA antes de que lo pidas."
   descRight:
     - "Un casco no se elige por la silueta. Se elige por lo que va a hacer quien lo lleva: entrar a una edificación, caminar la línea de fuego, sacar a alguien de un vehículo o atender un conato en planta. Cada escenario tiene su referencia: NFPA 1970 en estructural, NFPA 1950 en forestal, NFPA 2500 en rescate y NOM-002-STPS-2010 en brigada."
-    - "Manejamos cuatro modelos con ficha: Bullard LTX, Bullard UST LW, Sköld Viking y Bullard Wildland FH911H. De cada uno te damos material, accesorios y la norma que declara, tal como la publica la marca. Tú defines color, visor, cubrenuca y marcaje; nosotros lo dejamos por escrito."
+    - "Manejamos cuatro modelos con ficha: Bullard LTX, Bullard UST LW, Sköld Viking y Bullard Wildland FH911H. De cada uno te damos material, accesorios y la norma que declara, tal como la publica la marca. Tú defines color, visor, cubrenuca y marcaje; nosotros lo dejamos por escrito. Confirma suspensión, barbiquejo y protección ocular antes de asignarlo."
   meta: ["5 tipos por operación", "4 modelos con ficha", "Norma declarada por modelo", "Envíos a los 32 estados"]
 menu:
   tipos: "Tipos de casco"

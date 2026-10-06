@@ -80,7 +80,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "resumen": [
         "Es de las herramientas más antiguas del oficio y sigue en todas las unidades. Se elige por la forma de la cabeza, el material del mango y cómo va a viajar en el vehículo.",
-        "Todavía no publicamos un modelo, y no hay una norma específica para hachas de bombero. La cotizamos con la especificación que declare el fabricante, con funda y soporte definidos."
+        "Todavía no publicamos un modelo, y no hay una norma específica para hachas de bombero. La cotizamos con la especificación que declare el fabricante, con funda y soporte definidos.",
+        "Antes de una maniobra de rescate o entrada forzada, revisa hoja, pico, mango y resguardo del hacha de bombero. La herramienta se usa bajo guía, con equipo de protección, en una escena de incendio o humo ya controlada por el cuerpo operativo."
       ],
       "errores": [
         "Comprar sin definir la forma de la cabeza",
@@ -199,7 +200,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "resumen": [
         "Surtimos la Romak Fire HAC1007, de acero inoxidable, con 91 cm de largo, 90 cm de extremo a extremo y 6 lb, equivalentes a 3.36 kg, según su fabricante.",
-        "Se publica sin norma aplicable, porque no existe una específica para esta herramienta. La cotizamos con funda para las puntas y soporte para tu unidad."
+        "Se publica sin norma aplicable, porque no existe una específica para esta herramienta. La cotizamos con funda para las puntas y soporte para tu unidad.",
+        "La barra Halligan es una herramienta de bombero diseñada para entrada forzada y rescate. Antes de una emergencia, revisa cuerpo, garra, horquilla y pico; el acero no debe presentar deformación, corrosión ni daño que afecte el apalancamiento."
       ],
       "errores": [
         "Aceptar una Halligan sin longitud ni perfil de extremos",
@@ -562,7 +564,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       ],
       "resumen": [
         "Es la herramienta de acabado de la línea de control: después de que la Pulaski corta y abre, el McLeod limpia y deja el suelo sin combustible.",
-        "Aún no tenemos modelo en catálogo, y esta herramienta no tiene una norma propia. Lo cotizamos por ancho de cabeza, dientes, mango y soporte."
+        "Aún no tenemos modelo en catálogo, y esta herramienta no tiene una norma propia. Lo cotizamos por ancho de cabeza, dientes, mango y soporte.",
+        "El rastrillo McLeod ayuda a controlar combustible fino durante trabajo forestal. Limpia tierra y ceniza al terminar, revisa dientes y mango, y resguarda la herramienta en la base o vehículo para conservar sus funciones."
       ],
       "errores": [
         "Usar el McLeod para cortar raíces o ramas",

@@ -743,7 +743,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "resumen": [
         "El Bullard LTX CBOM1007 es un casco estructural tradicional de termoplástico de alto impacto, con ajuste ratchet, suspensión de seis puntos y visor de policarbonato de cuatro pulgadas.",
         "Es el casco de nuestros kits brigadista Romak BOM1001 y estructural Profesional. Se ofrece en amarillo o rojo, con cubrenuca de Nomex, cintas 3M Scotchlite y contorno recubierto en cuero.",
-        "Su fabricante declara NFPA 1971 edición 2018. Lo cotizamos con la configuración escrita y te ayudamos a probarlo con la máscara de ERA, la monja y el chaquetón de tu equipo."
+        "Su fabricante declara NFPA 1971 edición 2018. Lo cotizamos con la configuración escrita y te ayudamos a probarlo con la máscara de ERA, la monja y el chaquetón de tu equipo.",
+        "Antes de asignar este casco Bullard a un bombero, revisa ajuste, barbiquejo, visor y suspensión. El sistema debe quedar estable sobre la cabeza, conservar seguridad y confort y no interferir con la máscara durante búsqueda o rescate. Confirma también el centro de gravedad bajo con el ajuste real."
       ],
       "duos": {
         "ficha": [
@@ -827,7 +828,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[]; modelos: Modelo[] } = {
       "resumen": [
         "El Bullard UST LW es un casco estructural estilo Nueva York de fibra de vidrio, el más ligero de nuestro catálogo: menos de 1.54 kg con visor ReTrack, según su fabricante.",
         "Su ajuste Sure-Lock ofrece seis combinaciones de inclinación y altura, y sus componentes se desmontan para descontaminarlos. Admite visor ReTrack, careta o goggles.",
-        "Bullard declara NFPA 1971-2018 y protección ocular ANSI/ISEA Z87.1. El código se confirma al cotizar, según la configuración de protección ocular que elijas."
+        "Bullard declara NFPA 1971-2018 y protección ocular ANSI/ISEA Z87.1. El código se confirma al cotizar, según la configuración de protección ocular que elijas.",
+        "Para rescate o combate de incendios estructurales, prueba el casco Bullard con máscara y capucha. El sistema de seguridad debe dar confort al bombero y servir en búsqueda. El centro de gravedad bajo se confirma con el ajuste del usuario, no sólo por el diseño o el material de fibra de vidrio."
       ],
       "duos": {
         "ficha": [

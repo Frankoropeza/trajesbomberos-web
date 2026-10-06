@@ -16,7 +16,7 @@ hero:
   lead: "La bota te conecta con el piso de la escena: agua, brasas, vidrio, lodo o pendiente. Te ayudamos a elegir la construcción que corresponde a tu operación y la probamos con tu pantalonera."
   descRight:
     - "Una bota de hule vulcanizado, una de piel negra y una de piel hidrofugada resuelven trabajos distintos. La estructural protege del calor y de lo que pisas dentro de una edificación. La forestal te sostiene en una marcha larga por terreno irregular. La de brigada cubre los riesgos de una planta, dentro del límite que marca tu análisis."
-    - "Manejamos cinco modelos con ficha: Romak Fire Workman Fire, Croydon Filtrex y Sköld Workman en hule, y Romak Fire Fire Ranger y Strong Fire en piel para forestal. De cada uno te damos altura, material, tallas y la norma que declara. Cotizamos por talla mexicana y por persona."
+    - "Manejamos cinco modelos con ficha: Romak Fire Workman Fire, Croydon Filtrex y Sköld Workman en hule, y Romak Fire Fire Ranger y Strong Fire en piel para forestal. De cada uno te damos altura, material, tallas y la norma que declara. Cotizamos por talla mexicana y por persona. Prueba la bota con pantalonera y calcetín de servicio."
   meta: ["4 tipos por operación", "5 modelos con ficha", "Tallas mexicanas por persona", "Envíos a los 32 estados"]
 menu:
   tipos: "Tipos de bota"

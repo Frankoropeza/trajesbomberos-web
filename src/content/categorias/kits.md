@@ -17,7 +17,7 @@ hero:
   lead: "Un kit junta las piezas que trabajan juntas, con la talla de cada persona. Te lo armamos después de saber qué operación tiene autorizada tu gente."
   descRight:
     - "Comprar por separado suele dejar huecos: un casco que no deja sellar la máscara, un guante que no traslapa con la manga, una bota que choca con la pantalonera. El kit resuelve eso porque todas las piezas se eligen y se prueban juntas. El estructural se refiere a NFPA 1970, el brigadista a NOM-002-STPS-2010 y el forestal a NFPA 1950."
-    - "Armamos tres kits: estructural, brigadista y forestal. Cada pieza conserva su propia norma declarada; el nombre del kit no la extiende a las demás. El ERA se define aparte, según la atmósfera y la operación. En LORICA lo entregamos en una sola partida, con factura CFDI 4.0 y relación por persona."
+    - "Armamos tres kits: estructural, brigadista y forestal. Cada pieza conserva su propia norma declarada; el nombre del kit no la extiende a las demás. El ERA se define aparte, según la atmósfera y la operación. En LORICA lo entregamos en una sola partida, con factura CFDI 4.0 y relación por persona. Antes de entregarlo, verificamos talla, cierre, guante, casco y bota como conjunto. El equipo térmico o químico se fabrica y certifica para un riesgo específico; la norma de cada pieza se revisa en su ficha, por ejemplo NFPA 1970, que absorbió a la NFPA 1971."
   meta: ["3 kits por operación", "Talla por persona", "Una sola partida", "Envíos a los 32 estados"]
 menu:
   tipos: "Kits por operación"

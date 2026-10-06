@@ -17,7 +17,7 @@ hero:
   lead: "La monja cierra el hueco entre el casco, la máscara del ERA y el cuello del chaquetón. Es la pieza más pequeña del conjunto y la que más fácil deja piel al aire si no se prueba."
   descRight:
     - "Una monja se elige por tres cosas: cuántas capas tiene, qué tan grande es la apertura facial y si lleva barrera contra partículas. Las tres cambian cómo sella la máscara y cuánto cubre el babero cuando mueves la cabeza. Por eso la probamos con tu ERA, tu casco y tu chaquetón puestos."
-    - "Manejamos tres modelos con ficha: la Romak Fire CAP1005 de una capa, la Sköld FPEN con dos capas en cabeza y la Majestic PAC II, listada por UL bajo NFPA 1971 ed. 2018. También las capuchas propias de cada familia de traje: antipartículas, de brigada, aluminizada y de penetración."
+    - "Manejamos tres modelos con ficha: la Romak Fire CAP1005 de una capa, la Sköld FPEN con dos capas en cabeza y la Majestic PAC II, listada por UL bajo NFPA 1971 ed. 2018. También las capuchas propias de cada familia de traje: antipartículas, de brigada, aluminizada y de penetración. Revisa costura, longitud y ajuste antes de asignar una capucha. La ficha declara el estándar aplicable."
   meta: ["4 capuchas por familia", "3 modelos con ficha", "1 modelo listado por UL", "Envíos a los 32 estados"]
 menu:
   tipos: "Capuchas por traje"

@@ -25,7 +25,8 @@ export const data: { seccion?: Seccion; tipos: Tipo[] } = {
       "lead": "La manguera de ataque lleva el agua desde la bomba hasta el pitón. Se usa en diámetros de 1 ½ y 2 ½ pulgadas, con doble chaqueta según configuración y acoples en ambos extremos.",
       "resumen": [
         "El diámetro decide el caudal y el manejo: 1 ½ pulgadas es más ágil para ataque interior; 2 ½ pulgadas mueve más agua, pero pesa más y exige más personal.",
-        "Todavía no publicamos un modelo. La cotizamos por diámetro, longitud, acoples y rosca, con la norma NFPA aplicable que declare el fabricante."
+        "Todavía no publicamos un modelo. La cotizamos por diámetro, longitud, acoples y rosca, con la norma NFPA aplicable que declare el fabricante.",
+        "Antes de desplegar una manguera de bombero, confirma agua disponible, conexión y boquilla de manguera. La línea debe quedar compatible con bomba, pitón y acoples; no se asume presión, material o rosca sin ficha del fabricante."
       ],
       "bloques": [
         {

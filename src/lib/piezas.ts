@@ -156,6 +156,7 @@ export const PIEZAS: Pieza[] = [
     descRight: [
       'Es la pieza más cara del equipamiento y la que más se especifica mal. Se cotiza independiente de la pantalonera, y cada una de sus tres capas se declara por nombre comercial: sin ese dato, dos ofertas no son comparables por más que ambas digan "certificado".',
       'Aquí está la ficha completa, con construcción, valores de referencia, largos, tallas y opciones, más lo que conviene exigir por escrito antes de firmar una orden de compra o cerrar una partida de licitación.',
+      'Antes de usar el chaquetón, revisa cierre, costura, cinta reflectante y la interfaz con pantalonera, capucha y guante. Está diseñado como una prenda resistente a llamas, altas temperaturas y humedad durante incendio. El mantenimiento conserva la protección, visibilidad y estándar declarado del traje de bombero.',
     ],
     meta: ['NFPA 1970 · cap. 5–9', 'Tres capas', 'DRD integrado', 'Se cotiza por pieza'],
 
@@ -372,7 +373,7 @@ export const PIEZAS: Pieza[] = [
     "lead": "La mitad inferior del conjunto de ataque interior: mismo composite de tres capas que el chaquetón, con rodilla articulada, refuerzos y cuatro tipos de ajuste.",
     "descRight": [
       "Se cotiza independiente del chaquetón, y ahí empieza el problema más común: se compra una pieza de un corte y la otra de otro, y la interfaz de la cintura queda abierta. Esa unión es justo por donde entra el calor en ataque interior.",
-      "La pantalonera concentra además decisiones que se pasan por alto: el cierre de cintura, el arnés interno de escape, las rodilleras del forro y el refuerzo en rodilla y valenciana. Todo eso se define en la orden, no después."
+      "La pantalonera concentra además decisiones que se pasan por alto: el cierre de cintura, el arnés interno de escape, las rodilleras del forro y el refuerzo en rodilla y valenciana. Todo eso se define en la orden, no después. Antes de usarla, revisa tirante, cierre lateral, cremallera, bolsa, cinta y ajuste con el chaquetón. El fabricante debe declarar cómo cumple la norma NFPA en combate de incendios y con qué materiales resistentes se fabrica."
     ],
     "meta": [
       "NFPA 1970 · cap. 5–9",

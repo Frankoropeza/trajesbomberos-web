@@ -17,7 +17,7 @@ hero:
   lead: "Una herramienta se elige por la maniobra, no por la silueta. Te ayudamos a armar la dotación de tu unidad, con el soporte para que cada pieza viaje sujeta y a la mano."
   descRight:
     - "Hay dos familias. Para entrada forzada, el hacha, la barra Halligan y el gancho bichero abren puertas, ventanas y techos. Para combate forestal, la Pulaski, el McLeod, el rastrillo, el batefuego y la bomba de mochila trabajan la vegetación y el suelo. Ninguna tiene una norma única publicada: se compran por especificación."
-    - "Tenemos con ficha la barra Halligan Romak Fire HAC1007, de acero inoxidable y 91 cm de largo. Las demás las proponemos según tu maniobra: cabeza de acero forjado, mango de madera o fibra de vidrio, funda y soporte. Te damos la configuración por escrito para que revises cada pieza al recibirla."
+    - "Tenemos con ficha la barra Halligan Romak Fire HAC1007, de acero inoxidable y 91 cm de largo. Las demás las proponemos según tu maniobra: cabeza de acero forjado, mango de madera o fibra de vidrio, funda y soporte. Te damos la configuración por escrito para que revises filo, mango, agarre y soporte antes de una emergencia."
   meta: ["8 tipos de herramienta", "Entrada forzada y forestal", "Soporte y funda incluidos", "Envíos a los 32 estados"]
 menu:
   tipos: "Tipos de herramienta"

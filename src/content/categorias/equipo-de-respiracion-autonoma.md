@@ -16,7 +16,7 @@ hero:
   lead: "El ERA te da aire propio cuando el de afuera no se puede respirar. Te ayudamos a elegir el que corresponde a tu operación: combate, industria, espacio confinado o escape."
   descRight:
     - "Un ERA no es una sola pieza. Es un sistema: máscara, reguladores, cilindro, válvula, arnés, manómetro y alarmas. Si una parte no es compatible con las demás, el equipo no está aprobado aunque funcione. Por eso lo armamos completo y con la misma marca en cada conexión."
-    - "Manejamos dos modelos con ficha: el Sköld Phantöm de 60 minutos para combate y el MSA G1 Industrial para brigadas y espacios confinados. También cilindros de fibra de carbono de 4,500 psi, máscaras y reguladores. Te decimos por escrito qué norma declara cada uno y para qué trabajo sirve."
+    - "Manejamos dos modelos con ficha: el Sköld Phantöm de 60 minutos para combate y el MSA G1 Industrial para brigadas y espacios confinados. También cilindros de fibra de carbono de 4,500 psi, máscaras y reguladores. Te decimos por escrito qué norma declara cada uno y para qué trabajo sirve. Antes de usarlo, el usuario revisa máscara, válvula, manómetro, alarma y conexiones. El regulador debe suministrar aire respirable sin fuga en un entorno peligroso."
   meta: ["5 tipos y componentes", "2 modelos con ficha", "Cilindros de 4,500 psi", "Envíos a los 32 estados"]
 menu:
   tipos: "Tipos de ERA"

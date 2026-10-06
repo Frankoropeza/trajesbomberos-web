@@ -17,7 +17,7 @@ hero:
   lead: "Manguera, pitón, llave y adaptador trabajan como una sola línea. Si una rosca o un diámetro no coincide, el agua no llega. Te ayudamos a armarla con las medidas reales de tu equipo."
   descRight:
     - "La línea va de la fuente a la boquilla: hidrante o bomba, manguera, acoples, roscas, adaptadores y pitón. La manguera de ataque se maneja en 1 ½ o 2 ½ pulgadas, con doble chaqueta. El pitón se elige por patrón: chorro, niebla o combinado. Y las roscas NH/NST y NPSH no son iguales, aunque se parezcan."
-    - "No tenemos modelos publicados en esta sección. Te proponemos cada pieza a partir de las medidas y las fotos de tu hidrante, tu bomba y tus líneas. Pedimos al fabricante la norma NFPA que declare para cada modelo, y no te asignamos una norma que la ficha no publique."
+    - "No tenemos modelos publicados en esta sección. Te proponemos cada pieza a partir de las medidas y las fotos de tu hidrante, tu bomba y tus líneas. Pedimos al fabricante la norma NFPA que declare para cada modelo, y no te asignamos una norma que la ficha no publique. Antes de instalarla, confirma diámetro, longitud, conexiones y rosca IPT."
   meta: ["4 tipos de componente", "Mangueras de 1 ½ y 2 ½ in", "Roscas NH/NST y NPSH", "Envíos a los 32 estados"]
 menu:
   tipos: "Componentes de la línea"
