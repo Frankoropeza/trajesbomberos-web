@@ -8,7 +8,7 @@ crumb: "Extricación y rescate"
 ogImagen: "/images/og/trajes-extricacion.jpg"
 seo:
   title: "Traje de extricación para bombero en rescate vehicular"
-  description: "Traje de extricación para bombero en rescate vehicular y técnico: resiste corte y punción, con barrera contra patógenos y cuida tu estructural. Cotiza."
+  description: "Traje de extricación para bombero en rescate vehicular: equipo de rescate técnico NFPA 1950 que resiste corte y punción, con barrera contra patógenos. Cotiza."
   keywords: ["traje de extricación", "extricación vehicular", "rescate técnico"]
 hero:
   eyebrow: "Rescate técnico"
@@ -173,6 +173,8 @@ faqs:
     a: "Es la maniobra de liberar a una persona atrapada, casi siempre dentro de un vehículo después de un choque. Implica cortar, separar o retirar partes de la carrocería con herramienta hidráulica, y por eso el traje de bombero que se usa debe resistir corte, punción y fluidos. En otros países se le llama excarcelación."
   - q: "¿Qué es el chaleco de extricación?"
     a: "Es un dispositivo de inmovilización, no una prenda del traje. Se coloca al paciente sentado para proteger la columna y el cuello mientras se le saca del vehículo, y también se le conoce como KED. Lo usa el personal de atención prehospitalaria junto con el equipo de rescate. Nosotros cotizamos el traje y el guante del rescatista; el chaleco lo surte un proveedor de equipo médico."
+  - q: "¿Qué pedir en la licitación de trajes de extricación?"
+    a: "El nivel de certificación NFPA 1950 que corresponde a tu escenario, la configuración de refuerzos y cinta reflejante, las tallas estándar o a medida y la fecha de fabricación en la etiqueta. Pide también la ficha del fabricante, el certificado del laboratorio y el manual de cuidado y mantenimiento para el expediente. En la recepción, verifica que cada etiqueta coincida con la propuesta antes de firmar."
 contacto:
   asunto: "trajes de extricación y rescate"
   boton: "Enviar consulta de extricación por WhatsApp"

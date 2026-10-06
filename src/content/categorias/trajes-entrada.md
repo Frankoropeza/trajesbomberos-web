@@ -8,7 +8,7 @@ crumb: "Trajes de entrada"
 ogImagen: "/images/og/trajes-entrada.jpg"
 seo:
   title: "Traje aluminizado de entrada a la flama y penetración"
-  description: "Traje aluminizado de entrada a la flama para altas temperaturas: ingreso breve en horno o incidente térmico severo, siempre con ERA. Cotiza con ficha técnica."
+  description: "Traje aluminizado de entrada a la flama: protección contra calor radiante y altas temperaturas en ingreso breve a horno o incidente térmico. Cotiza."
   keywords: ["traje de entrada a la flama", "traje de penetración", "traje aluminizado multicapa"]
 hero:
   eyebrow: "Ingreso a la flama"
@@ -16,7 +16,7 @@ hero:
   h1Accent: "a la flama"
   lead: "El nivel más extremo del catálogo: ingreso breve a la flama en un horno, un incidente térmico severo o un rescate industrial, siempre con ERA y con protocolo."
   descRight:
-    - "Pocas operaciones lo necesitan de verdad. Sirve para cruzar la flama durante un tiempo muy corto, y a cambio es pesado, rígido y reduce la visión por diseño: su objetivo es entrar, rescatar o cerrar y volver a salir. No hay norma NFPA de producto para este traje, así que se evalúa contra la ficha técnica del fabricante."
+    - "Pocas operaciones lo necesitan de verdad. Sirve para cruzar la flama durante un tiempo muy corto, y a cambio es pesado, rígido y reduce la visión por diseño: su objetivo es entrar, rescatar o cerrar y volver a salir. Está diseñado para el contacto breve con la flama y las altas temperaturas de la industria: hornos, fundición y procesos térmicos. No hay norma NFPA de producto para este traje, así que se evalúa contra la ficha técnica del fabricante."
     - "En LORICA te ayudamos a leer esa ficha y a comparar antes de comprometer presupuesto. Cotizamos el conjunto completo, revisamos cómo se integra con tu equipo de respiración autónoma y te decimos con franqueza si tu operación lo necesita o si un traje de aproximación la resuelve."
   meta: ["Aluminizado multicapa", "Ingreso breve", "Requiere ERA", "Ficha del fabricante"]
 menu:
@@ -168,6 +168,8 @@ faqs:
     a: "De varias capas: una exterior con revestimiento de aluminio que refleja la radiación de calor, y debajo capas aislantes y un forro interior que frenan el calor que pasa hacia la piel. Esa construcción multicapa lo hace pesado y rígido. El número de capas y sus materiales los declara la ficha técnica del fabricante, que es contra lo que se evalúa."
   - q: "¿Qué piezas forman un conjunto de penetración?"
     a: "El conjunto de penetración de corta duración o avanzado, la capucha de penetración con visor doble, los guantes mitón y el pasamontañas con su talega. Para hornos hay un conjunto de mantenimiento específico. Todas las piezas deben ser del mismo nivel, porque cuello, manos y cara son los puntos donde el calor encuentra el camino más corto."
+  - q: "¿Qué diferencia hay entre un traje de entrada y la ropa ignífuga común?"
+    a: "La ropa ignífuga no se quema ni gotea, pero no refleja la radiación de calor: frente a un horno abierto, la quemadura llega a través de la tela. El traje de entrada suma una capa exterior aluminizada y varias capas aislantes para protegerte durante segundos de contacto con la flama. A cambio, sacrifica confort y libertad de movimiento, y cada guante y cada cierre deben ser del mismo nivel."
 contacto:
   asunto: "trajes de entrada a la flama"
   boton: "Enviar consulta de traje de entrada por WhatsApp"

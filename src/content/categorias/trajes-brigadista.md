@@ -11,7 +11,7 @@ seo:
   keywords: ["traje de bombero brigadista", "traje de brigadista", "equipo para brigadista contra incendio"]
 hero:
   eyebrow: "Brigada industrial"
-  h1: "Traje de bombero brigadista"
+  h1: "Traje de bombero brigadista completo"
   h1Accent: "para brigada industrial"
   lead: "El equipo con el que tu empresa cumple la NOM-002-STPS-2010 para su brigada: conato, primera respuesta y evacuación, sin pagar de más por protección que no vas a usar."
   descRight:
@@ -187,6 +187,8 @@ faqs:
     a: "El conjunto de brigada contra fuego incipiente lleva chaquetón y pantalonera; también se piden sueltos. Se completa con monja de brigada y tirantes tipo X de ocho puntos, o se sustituye por un overol ignífugo. Te enviamos el combo desglosado por pieza, con la ficha técnica de cada una y el documento que pide la auditoría de la NOM-002-STPS-2010."
   - q: "¿Cuál es la norma para los trajes de bomberos brigadistas?"
     a: "En México, la NOM-002-STPS-2010 obliga a dar a la brigada equipo de protección acorde a su análisis de riesgo, pero no fija una norma de producto. Como referencia técnica se usan NFPA 1970 para el conjunto contra fuego y NFPA 2112 para el overol ignífugo. Dinos qué pide tu procedimiento y lo declaramos por escrito en la cotización."
+  - q: "¿Cómo se lava un traje de brigadista?"
+    a: "Según la etiqueta del fabricante: separado de la ropa de diario, sin cloro ni suavizante y secado a la sombra. Antes y después del lavado conviene una inspección visual de costuras, cierres y cinta reflejante; esas pruebas sencillas alargan la vida de servicio. Como estándar de cuidado se usa NFPA 1850, que absorbió a la NFPA 1851. Lavar igual la bota, el guante y la monja de cada usuario evita que el conjunto se deteriore por partes."
 contacto:
   asunto: "trajes de brigadista"
   boton: "Enviar consulta de brigada por WhatsApp"
