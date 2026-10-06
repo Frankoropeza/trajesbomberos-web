@@ -222,6 +222,10 @@ faqs:
     a: "Casco de bombero o casco estructural. Por su forma, el tradicional se conoce como estilo americano y el de visor integrado como tipo jet o europeo. Para monte se usa el casco forestal, más ligero, y para rescate técnico un casco compacto. Todos protegen contra impacto y calor, y se eligen por diseño, accesorios y compatibilidad con la máscara del ERA."
   - q: "¿Qué accesorios lleva un casco de bombero?"
     a: "Visor o goggles, cubrenuca de tela ignífuga, lámpara con su soporte, barbiquejo y, en algunos modelos, sistemas de comunicación. Cada accesorio debe ser del mismo fabricante o aprobado por él, porque un añadido sin aprobar puede invalidar la certificación del casco. Te dejamos la configuración por escrito."
+  - q: "¿Qué protección debe dar un casco de bombero?"
+    a: "Contra impacto y caída de objetos, contra llamas y calor radiante, y protección ocular con visor o goggles. Se suma una retención que no deje moverse el casco en la emergencia, una suspensión ergonómica que reparte el peso y, en forestal, un diseño ligero con ventilación para jornadas largas de extinción de incendios forestales. Cada dato se confirma en la ficha del fabricante."
+  - q: "¿Se puede personalizar un casco de bombero?"
+    a: "Sí, dentro de lo que aprueba el fabricante: color, insignia o emblema frontal, cintas de alta visibilidad, lámpara o linterna con su soporte y número de unidad. Lo que no se hace es perforar el casco o pegarle accesorios no aprobados, porque se pierde la certificación. Te dejamos por escrito qué personalización es válida para cada modelo."
 contacto:
   asunto: "cascos para bombero"
   boton: "Enviar consulta de cascos por WhatsApp"

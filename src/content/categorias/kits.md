@@ -176,6 +176,8 @@ faqs:
     a: "Si hablas del equipo para la emergencia, el costo depende de la operación. Un kit de brigadista cuesta bastante menos que uno estructural certificado, y el ERA se cotiza aparte. No publicamos precios porque cambian con el modelo, la talla y la norma; te mandamos la cotización por persona y por pieza, con factura. El uniforme de estación del turno es otra compra, distinta del equipo de protección."
   - q: "¿De qué materiales está hecho el equipo de bomberos?"
     a: "El traje estructural combina una capa exterior de fibras resistentes a la flama, como Nomex o PBI, una barrera de humedad y una barrera térmica. Guantes y monja usan fibras ignífugas similares; las botas, hule vulcanizado o piel; el casco, termoplástico o material compuesto. Cada pieza declara su composite en la ficha técnica del fabricante, y eso es lo que revisamos contigo."
+  - q: "¿Qué kit necesita una brigada industrial o de protección civil?"
+    a: "Para brigadas industriales de primera respuesta, el kit de brigadista con traje, casco, monja, guantes y botas, elegido según la NOM-002-STPS-2010 y el análisis de riesgo. Para protección civil que apoya en incendios forestales, el kit forestal. Para cuerpos de bomberos con ataque interior, el kit estructural, con traje de tres capas y barrera de humedad. El ERA se suma cuando la atmósfera lo exige."
 contacto:
   asunto: "kits de equipo para bombero"
   boton: "Enviar consulta de kits por WhatsApp"

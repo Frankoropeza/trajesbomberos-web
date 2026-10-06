@@ -195,6 +195,8 @@ faqs:
     a: "Hule o caucho vulcanizado en las estructurales de una pieza, y piel en las estructurales de cordón y en las forestales. Por dentro llevan forro aislante y, en algunos modelos, membrana impermeable y transpirable. Puntera y entresuela pueden ser de acero o de material compuesto, y la suela debe ser resistente al calor, a la abrasión y antideslizante para dar agarre en piso mojado."
   - q: "¿Qué características de seguridad debe tener una bota de bombero?"
     a: "Puntera contra impacto y compresión, entresuela contra punción, suela resistente al calor y con buen agarre, aislamiento térmico, barrera contra agua y una caña que traslape con la pantalonera. En rescates y escombro cuentan además la estabilidad del tobillo y la resistencia a la abrasión. La ficha del fabricante declara cada dato y la norma que cumple, y eso es lo que comparamos al cotizar."
+  - q: "¿Qué botas usan los rescatistas y las brigadas de materiales peligrosos?"
+    a: "Para rescates en escombro y extricación se usa una bota estructural o de rescate con puntera, entresuela y buen soporte de tobillo. Para materiales peligrosos se usa una bota química de hule resistente a la sustancia, que forma parte del sistema Hazmat. Ninguna sustituye a la otra: cada emergencia pide su propio calzado de protección."
 contacto:
   asunto: "botas para bombero"
   boton: "Enviar consulta de botas por WhatsApp"

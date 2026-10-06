@@ -223,6 +223,10 @@ faqs:
     a: "Siempre que la atmósfera no se pueda respirar o no se conozca: humo de incendio, fuga de gas o de un químico tóxico, falta de oxígeno en un espacio confinado, un túnel o una mina. Una mascarilla con filtro no sirve en esos casos porque no suministra aire, solo limpia el que hay. Si hay duda sobre la atmósfera, se trata como peligrosa y se entra con ERA."
   - q: "¿Qué tipos de equipos de respiración autónoma existen?"
     a: "De circuito abierto, que exhalan al ambiente y son los que usan bomberos y brigadas; de circuito cerrado, que reciclan el aire y dan más autonomía en minería o rescate prolongado; y de escape, de corta duración, solo para salir. En circuito abierto se distinguen el ERA de combate, certificado para incendio, y el industrial."
+  - q: "¿Cómo funciona un equipo de respiración autónoma?"
+    a: "El aire comprimido sale de la botella a alta presión y llega al regulador de presión de la espalda, que la reduce. De ahí pasa al pulmoautomático, montado en la máscara, que entrega aire cada vez que inhalas y mantiene presión positiva: si hay una fuga, el aire sale y el humo no entra. Al exhalar, el aire se va al entorno por la válvula de exhalación."
+  - q: "¿De qué material es el cilindro de un ERA y cuánto aire guarda?"
+    a: "Los cilindros pueden ser de acero, de aluminio o de composite de fibra de carbono, que es el más ligero. Se especifican por presión de servicio, como 4,500 psi, y por los litros de aire que contienen, que definen la duración nominal. La duración real depende del consumo de aire de quien lo usa: con esfuerzo intenso, un cilindro nominal rinde menos minutos."
 contacto:
   asunto: "equipo de respiración autónoma"
   boton: "Enviar consulta de ERA por WhatsApp"

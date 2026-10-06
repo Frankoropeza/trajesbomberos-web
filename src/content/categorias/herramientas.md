@@ -164,6 +164,10 @@ faqs:
     a: "No hay una sola. La más conocida es la barra Halligan, que junto con el hacha forma el juego que en inglés se llama irons y abre puertas y ventanas en una entrada forzada. En incendio forestal, la Pulaski combina hacha y azadón, y el McLeod raspa la línea de control. Cada herramienta tiene nombre propio según la maniobra."
   - q: "¿Cómo se clasifican las herramientas de los bomberos?"
     a: "Por la maniobra. Para entrada forzada y acceso: hacha, Halligan, gancho bichero y, según la unidad, ariete. Para incendio forestal: Pulaski, McLeod, rastrillo, batefuego y bomba de mochila. Para rescate: equipo hidráulico de extricación y sistemas de cuerda. Y para la línea de agua: manguera, pitón y llaves. Brigadas y protección civil arman una dotación más corta, según su análisis de riesgo."
+  - q: "¿Qué se revisa al comprar herramientas para bomberos?"
+    a: "El acero de la cabeza, forjado y templado; el mango, de madera o de fibra de vidrio, con buen agarre aun con guante; el peso y el largo adecuados para el operador; y la funda o el soporte para llevarla en la unidad. En las herramientas de acceso importa además que la punta y la uña resistan la perforación y la palanca sin doblarse. Todo eso va por escrito en la especificación."
+  - q: "¿Qué herramientas sirven para sofocar un incendio forestal?"
+    a: "El batefuego sofoca fuego de pasto y material ligero, y la bomba de mochila aplica agua portátil en puntos calientes. La Pulaski, el McLeod y el rastrillo forestal abren la línea de control quitando combustible. Ninguna apaga sola un frente: trabajan con la cuadrilla y su equipo de protección, con casco forestal, guantes y goggles."
 contacto:
   asunto: "herramientas para bombero"
   boton: "Enviar consulta de herramientas por WhatsApp"

@@ -231,6 +231,10 @@ faqs:
     a: "Es la capucha de tela ignífuga que cubre cabeza, cuello y orejas debajo del casco. Cierra el hueco entre la máscara del ERA, el casco y el cuello del chaquetón, que es donde suele ocurrir una quemadura cuando el bombero gira la cabeza. Se le dice monja por su forma; también capucha o escafandra."
   - q: "¿Qué norma aplica a la monja de bombero?"
     a: "La capucha estructural se evalúa como parte del conjunto bajo NFPA 1970, que absorbió a la NFPA 1971. Esa norma pide pruebas de protección térmica, resistencia de costuras y conservación de la apertura facial después del lavado. La Majestic PAC II está listada por UL bajo NFPA 1971 ed. 2018; de las demás te pasamos la norma que declara cada fabricante."
+  - q: "¿Qué material tiene una monja de bombero?"
+    a: "Casi siempre es tejido de punto de fibras ignífugas como Nomex, solo o mezclado con otras fibras resistentes a la flama, en una o dos capas para ganar protección térmica. Las de barrera contra partículas suman una membrana que filtra el hollín fino y deja respirar la piel. La densidad del tejido, la longitud del babero y el tipo de costura cambian el confort y la durabilidad."
+  - q: "¿Por qué la monja debe cubrir cabeza, cuello y orejas?"
+    a: "Porque ahí queda piel expuesta entre la máscara del SCBA, el casco y el cuello del chaquetón. Una monja que sella bien alrededor de la mascarilla y con babero largo actúa como barrera cuando giras o bajas la cabeza. Si queda corta, la quemadura aparece justo en ese punto, aunque el resto del EPP sea el correcto."
 contacto:
   asunto: "monjas y capuchas para bombero"
   boton: "Enviar consulta de monjas por WhatsApp"
