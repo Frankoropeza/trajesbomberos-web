@@ -36,7 +36,7 @@ export function policyFor(html) {
     hashes.add(`'sha256-${createHash('sha256').update(body, 'utf8').digest('base64')}'`);
   }
   return [
-    `script-src 'self' ${[...hashes].join(' ')}`.trim(),
+    `script-src 'self' https://analytics.ahrefs.com ${[...hashes].join(' ')}`.trim(),
     "object-src 'none'",
     "base-uri 'self'",
     "require-trusted-types-for 'script'",
