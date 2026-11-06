@@ -1,17 +1,17 @@
 ---
-title: "NFPA 1970: qué cambió y cómo afecta tu compra"
-titleAccent: "cuatro normas en una"
+title: "NFPA 1971 explicada"
+titleAccent: "vigencia y transición a NFPA 1970"
 eyebrow: "Normas · Referencia estructural"
 lead: "La NFPA 1971 ya no existe como documento independiente. Desde la consolidación, el traje estructural, el uniforme de trabajo, el equipo de respiración y el PASS viven en un solo estándar: la NFPA 1970."
 descRight:
   - "Si tu pliego, tu requisición o tu cotización siguen citando únicamente la NFPA 1971, no están mal en el fondo, pero sí están desactualizados en la forma. Y en una licitación la forma es exactamente lo que se revisa en la junta de aclaraciones."
-  - "Aquí está qué se consolidó, qué NO entró en la consolidación —el forestal, por ejemplo, sigue por su cuenta— y cómo se redacta hoy la referencia normativa para que tu expediente no se caiga por una cita vieja."
+  - "Aquí explicamos qué cubría la NFPA 1971, qué normas se consolidaron con ella, qué se quedó fuera (el forestal, por ejemplo) y cómo se redacta hoy la referencia para que tu expediente no se caiga por una cita vieja."
 meta:
   - "4 normas en 1 documento"
   - "Vigente desde sep-2024"
   - "Edición 2025"
   - "Forestal queda fuera"
-resumen: "La NFPA 1970 consolidó cuatro normas —1971, 1975, 1981 y 1982— en un solo documento. Qué entró, qué se quedó fuera y cómo citarla en un pliego sin que te tumben la propuesta."
+resumen: "NFPA 1971 explicada: qué cubría, cómo quedó dentro de la NFPA 1970 junto con las 1975, 1981 y 1982, qué pasa con los certificados anteriores y cómo citarla en un pliego."
 categoria: "normas"
 familia: "estructural"
 productos:
@@ -21,21 +21,29 @@ productos:
   - "/trajes/entrada/"
 fecha: 2026-07-07
 autor: "Equipo técnico LORICA"
-seoTitle: "NFPA 1970: qué cambió frente a la NFPA 1971 en trajes"
-description: "NFPA 1970 sustituyó a la NFPA 1971: qué normas consolidó, qué quedó fuera y cómo citar hoy la referencia en una requisición o en un pliego de licitación."
+seoTitle: "NFPA 1971 explicada: qué cubría y su paso a NFPA 1970"
+description: "NFPA 1971 explicada: qué cubría, por qué hoy vive dentro de la NFPA 1970, si siguen valiendo sus certificados y cómo citarla en una requisición o pliego."
 keywords:
+  - "NFPA 1971"
   - "NFPA 1970"
-  - "certificación de trajes"
-  - "México"
+  - "norma NFPA 1971 traje de bombero"
 imagen: "/images/blog/nfpa-1970-que-cambio.avif"
 imagenAlt: "Traje estructural, equipo de respiración y casco sobre una mesa de acero en una estación de bomberos"
 ---
 
-Durante décadas, en México pedir un traje estructural certificado significaba escribir tres palabras y un número: **NFPA 1971**. Estaba en los pliegos, en las requisiciones, en las fichas de los distribuidores y en la etiqueta cosida dentro del chaquetón.
+La **NFPA 1971** fue la norma de la NFPA que fijaba cómo debe diseñarse, probarse y certificarse el conjunto de protección para incendio estructural y de proximidad: chaquetón, pantalonera, capucha, guantes, botas y casco. Su última edición fue la de 2018. Desde la edición 2025 ya no existe como documento aparte: su contenido pasó a la **NFPA 1970**, junto con las normas del uniforme de estación, del equipo de respiración autónoma y del PASS. Un traje certificado bajo la 1971 no se volvió inseguro; lo que cambió es cómo se cita.
 
-Eso cambió. La NFPA consolidó cuatro normas de equipo en un solo documento, la **NFPA 1970**, y el traje estructural pasó a ser uno de sus capítulos. No es un cambio cosmético: modifica cómo se redacta una especificación y cómo se lee un certificado.
+Durante décadas, en México pedir un traje estructural certificado significaba escribir tres palabras y un número: NFPA 1971. Estaba en los pliegos, en las requisiciones, en las fichas de los distribuidores y en la etiqueta cosida dentro del chaquetón. Por eso todavía aparece en casi todos los expedientes que nos llegan.
 
-## Qué se consolidó exactamente
+## ¿Qué cubría la NFPA 1971?
+
+La 1971 no era una norma de tela. Era una norma de conjunto. Pedía que el traje terminado pasara pruebas de protección térmica (el TPP), de pérdida de calor total (el THL), de barrera contra líquidos y patógenos de la sangre, de resistencia de costuras y de desempeño de cierres, cintas reflejantes y etiquetas. Y pedía que todo eso lo certificara un organismo independiente, a nombre del fabricante del conjunto.
+
+Las referencias mínimas que más se citan en México vienen de ahí: **TPP 35** y **THL 205** para el composite del traje estructural. Las explicamos en la guía de [TPP y THL del traje estructural](/blog/tpp-y-thl-traje-estructural/).
+
+También cubría el traje de aproximación, el aluminizado que se usa cerca de calor radiante en aeropuertos, refinerías o fundiciones. No cubría el traje de entrada a la flama, que nunca tuvo norma NFPA de producto propia.
+
+## ¿Qué normas se consolidaron en la NFPA 1970?
 
 La NFPA 1970 agrupó cuatro estándares que antes se compraban, se citaban y se actualizaban por separado:
 
@@ -50,18 +58,18 @@ La consolidación entró en vigor en **septiembre de 2024**, y la primera edici�
 
 La lógica del cambio es razonable: esas cuatro piezas se usan juntas sobre el mismo cuerpo. Cuando vivían en documentos distintos, con ciclos de revisión distintos, sus requisitos de interfaz a veces se contradecían. Un solo documento obliga a que las interfaces sean coherentes.
 
-## Qué NO entró en la consolidación
+## ¿Qué se quedó fuera de la NFPA 1970?
 
-Esto es lo que más confusión provoca en México, así que conviene decirlo claro:
+Esto es lo que más confusión provoca en México:
 
 - El **traje forestal** no forma parte de la NFPA 1970. El equipo de vegetación se fue a otra consolidación paralela, la **NFPA 1950** (ed. 2025), que agrupó las antiguas NFPA 1951 (rescate técnico), NFPA 1977 (forestal) y NFPA 1999 (operaciones médicas). En la etiqueta lo vas a ver como `NFPA 1950 [1977]`, donde el número entre corchetes indica la sección que aplica. Si estás comprando [equipo forestal](/trajes/forestal/) o de [extricación](/trajes/extricacion/), esa es tu referencia, no la 1970.
 - La misma NFPA 1950 rige el **rescate técnico y la extricación**, que tampoco están en la 1970. Trae un periodo de gracia de 18 meses para producto certificado bajo las ediciones anteriores.
 - Los **trajes de entrada a la flama** siguen sin tener una norma NFPA de producto específica. Se especifican contra la ficha técnica del fabricante, como explicamos en la ficha de [trajes de entrada](/trajes/entrada/).
 - La **selección, cuidado y mantenimiento** del equipo tampoco está aquí: eso vive en la NFPA 1850, que a su vez consolidó las viejas 1851 y 1852. Son documentos hermanos con funciones distintas: **1970 dice cómo debe ser el equipo; 1850 dice cómo debes cuidarlo.**
 
-## Qué significa para tu cotización
+## ¿Siguen valiendo los certificados bajo NFPA 1971?
 
-Tres consecuencias prácticas, en orden de importancia: Lo que la norma exige ver impreso en la prenda se explica en [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
+Sí, con matices. Hay tres consecuencias prácticas, en orden de importancia. Lo que la norma exige ver impreso en la prenda se explica en [cómo leer la etiqueta de un traje de bombero](/blog/como-leer-la-etiqueta-traje-de-bombero/).
 
 **1. La cita cambia de forma.** Ya no basta con "cumple NFPA 1971". Hoy se escribe indicando el documento vigente y el capítulo aplicable al conjunto estructural. Un proveedor que en 2026 sigue citando exclusivamente la 1971 te está diciendo, sin querer, cuándo actualizó por última vez su catálogo.
 
@@ -69,7 +77,7 @@ Tres consecuencias prácticas, en orden de importancia: Lo que la norma exige ve
 
 **3. Los periodos de transición existen.** Cuando entra una edición nueva, el mercado convive un tiempo con equipo certificado bajo la edición anterior. Eso no lo vuelve inseguro ni ilegal, pero sí es algo que tu pliego debe resolver explícitamente: o aceptas ediciones anteriores, o no. Si no lo dices, lo vas a discutir en la junta de aclaraciones.
 
-## Cómo redactar la referencia sin equivocarte
+## ¿Cómo se cita la norma en un pliego?
 
 Una redacción que funciona en un pliego mexicano y que no se cae a la primera aclaración:
 
@@ -81,7 +89,7 @@ Tres detalles de esa redacción que valen dinero:
 - Dice **"a nombre del fabricante del conjunto terminado"**: cierra la puerta al certificado de la tela.
 - Pide **certificado y carta de distribuidor**: sin la carta, cualquiera puede ofertar la marca de alguien más.
 
-## Y las NOM mexicanas, ¿dónde quedan?
+## ¿Dónde quedan las NOM mexicanas?
 
 No se sustituyen entre sí: cubren cosas distintas.
 
@@ -90,7 +98,7 @@ No se sustituyen entre sí: cubren cosas distintas.
 
 Dicho corto: **la NOM te dice que tienes que proteger a tu gente; la NFPA te da el criterio técnico para saber si el equipo que compraste realmente protege.** En una compra seria se citan las dos.
 
-## Antes y después: de la NFPA 1971 a la NFPA 1970
+## ¿Qué se citaba antes y qué se cita ahora?
 
 La forma más rápida de actualizar una requisición es poner lado a lado lo que se citaba y lo que se cita ahora:
 
@@ -104,7 +112,7 @@ La forma más rápida de actualizar una requisición es poner lado a lado lo que
 | Traje forestal y equipo de rescate técnico | NFPA 1977 y NFPA 1951 | NFPA 1950, edición 2025 | No forman parte de la NFPA 1970 |
 | Cuidado, inspección y retiro | NFPA 1851 y NFPA 1852 | NFPA 1850 | Retiro del estructural a diez años de fabricado |
 
-## Qué pedir en la ficha técnica
+## ¿Qué debe traer la ficha técnica?
 
 Con la norma consolidada, la ficha técnica de un traje estructural debería traer estos datos. Si falta uno, pídelo por escrito antes de comparar precios:
 
@@ -118,11 +126,21 @@ Con la norma consolidada, la ficha técnica de un traje estructural debería tra
 | Fecha de fabricación | Desde ahí corren los diez años de vida útil |
 | Tallas disponibles | Base del levantamiento por elemento |
 
-## Cómo lo resuelve LORICA
+## ¿Qué declaran los modelos que cotizamos?
 
 En las fichas de LORICA cada modelo publica la norma tal como la declara el fabricante y su estatus: certificado con número, declarado o solo materiales. Seis de los siete modelos estructurales que publicamos declaran solo la NFPA 1971 edición 2018, y así lo verás escrito en las fichas de [Romak Fire Protector](/trajes/estructural/modelos/romak-protector/) o [Sköld Hero Nomex IIIA](/trajes/estructural/modelos/skold-hero-nomex/). En cambio, el [Romak Fire Maverick II](/trajes/estructural/modelos/romak-maverick-ii/) ya declara la NFPA 1970:2025 junto con la EN 469. Si tu pliego exige la edición 2025, te decimos qué modelos cumplen y cuáles no antes de cotizar.
 
-## Qué revisar hoy en tu expediente
+## ¿Cómo se aplica en la compra de tu corporación?
+
+Tres casos que vemos seguido y cómo se resuelven:
+
+**Un cuerpo de bomberos municipal que repone trajes para incendio estructural.** Su pliego de hace cinco años decía "NFPA 1971 edición 2013". Hoy conviene escribir NFPA 1970 en su edición vigente y decir en el mismo párrafo si se acepta equipo certificado bajo la NFPA 1971 edición 2018. Si no lo dice, en la junta de aclaraciones cada licitante lo interpreta a su favor.
+
+**Una brigada industrial de una planta que compra trajes de brigadista.** Muchas veces el pliego copia "NFPA 1971" porque es la norma que todos conocen. Si la brigada solo atiende el conato y no hace ataque interior, esa cita puede dejar fuera a trajes adecuados para su operación o encarecer la compra sin necesidad. La obligación de dotar equipo viene de la NOM-002-STPS-2010; la norma de producto se elige según lo que hace la brigada.
+
+**Un cuerpo que también combate incendio forestal en temporada de estiaje.** El equipo forestal no se cita con la 1971 ni con la 1970, sino con la NFPA 1950. Mezclar las dos referencias en una sola partida es una de las causas más comunes de propuestas descalificadas.
+
+## ¿Qué revisar hoy en tu expediente?
 
 1. ¿Tu formato de requisición todavía dice "NFPA 1971" y nada más?
 2. ¿Tus certificados están a nombre del fabricante del conjunto o del proveedor de tela?
@@ -153,13 +171,3 @@ Si contestaste que no a alguna, no es urgencia pero sí es pendiente. Mándanos 
 - [FireRescue1 — What you need to know now about the NFPA 1970 consolidations](https://www.firerescue1.com/nfpa/what-you-need-to-know-now-about-the-nfpa-1970-consolidations)
 - [FireRescue1 — The new NFPA 1950: consolidating tech rescue, EMS and wildland PPE](https://www.firerescue1.com/fire-products/Personal-protective-equipment-ppe/the-new-nfpa-1950-consolidating-tech-rescue-ems-and-wildland-ppe)
 - [NFPA 1970 (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1970-standard-development/1970) y [NFPA 1950 (nfpa.org)](https://www.nfpa.org/codes-and-standards/nfpa-1950-standard-development/1950)
-
-## Cómo interpretar la referencia anterior
-
-NFPA 1970 es la referencia vigente para conjuntos de protección de bombero estructural y de proximidad. NFPA 1971 fue la referencia anterior para esos incendios estructurales y de proximidad; por eso aparece en certificados, etiquetas y expedientes previos.
-
-La consolidación no convierte una certificación previa en una promesa nueva. El fabricante debe declarar qué requisitos mínimos aplican al conjunto completo, incluidos casco, guante, calzado, capucha y componentes de interfaz. La protección térmica se evalúa como sistema frente a peligros térmicos y riesgo de quemadura.
-
-También separa alcances. NFPA 1950 cubre familias distintas, como rescate técnico y forestal. Un overol o conjunto de protección personal no se clasifica por semejanza visual, sino por la operación y la declaración verificable.
-
-En una Norma NFPA 1971 histórica pueden aparecer las palabras *structural* y EPP. También puede incluir requisitos para patógenos transmitidos por la sangre, pero eso no elimina los niveles mínimos de protección ni el mantenimiento que corresponde al conjunto.

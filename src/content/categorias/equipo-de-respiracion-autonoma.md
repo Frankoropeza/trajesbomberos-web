@@ -29,13 +29,13 @@ menu:
 secciones:
   tipos:
     eyebrow: "Por aplicación y componente"
-    titulo: "Tipos de equipo de respiración autónoma y sus componentes"
+    titulo: "¿Qué tipos de equipo de respiración autónoma hay?"
     duo:
       - "Hay tres tipos de ERA según el trabajo: de combate para ataque y rescate en humo, industrial para brigadas y espacios confinados, y de escape para salir de una atmósfera peligrosa. Aparte están los componentes que se reponen por separado: cilindros de fibra de carbono, máscaras y reguladores."
       - "Cada tipo tiene un límite claro. Un ERA de escape no sirve para entrar, y uno industrial no se asigna a combate estructural. Entra al tipo que necesitas y verás su especificación, su norma y lo que revisamos antes de cotizar."
   elegir:
     eyebrow: "Guía de compra"
-    titulo: "Cómo elegir un equipo de respiración autónoma en cinco pasos"
+    titulo: "¿Cómo elegir un equipo de respiración autónoma?"
     duo:
       - "Comprar un ERA por la marca o por los minutos del cilindro es el error más común. Nosotros lo elegimos con cinco criterios: escenario, autonomía, interfaz, compatibilidad y servicio. El último suele olvidarse, y es el que mantiene el equipo en uso."
       - "Revísalos con quien da mantenimiento a tus equipos, no solo con quien los compra. En la tarjeta de junto está lo que conviene definir con el ERA, con enlace a cada pieza para pedirla junto o aparte."
@@ -53,13 +53,13 @@ secciones:
       - "El Phantöm declara acuerdo con NFPA edición 1997 y CE EN 137:2006. El G1 tiene certificación NIOSH 42 CFR Parte 84 para uso industrial. Así los publicamos, sin mezclar un alcance con otro."
   comparar:
     eyebrow: "Comparativa"
-    titulo: "Comparativa de equipos de respiración autónoma por tipo y por modelo"
+    titulo: "¿En qué se diferencia un ERA de combate de uno industrial?"
     duo:
       - "La primera tabla pone lado a lado los cinco tipos y componentes: para qué sirven, qué referencia o límite tienen, cómo están armados, qué ventaja dan y dónde no aplican. La segunda compara los dos modelos por material, norma y estatus."
       - "La columna de límite es la más importante. Ahí ves qué no puede hacer cada equipo. Si una celda dice «se confirma al cotizar», es un dato que la marca no publica; va por escrito en la propuesta."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre equipos de respiración autónoma"
+    titulo: "Preguntas frecuentes sobre el equipo de respiración autónoma"
     duo:
       - "Antes de pedir un ERA casi todos preguntan cuánto dura el cilindro y cada cuándo se prueba. Respondemos también en qué se distingue de una mascarilla con filtro, qué es una atmósfera IDLH, qué partes tiene y si el PASS viene incluido."
       - "Si vas a reponer cilindros o máscaras de un ERA que ya usas, dinos la marca y el modelo en el formulario. Se abre WhatsApp con la consulta armada y te respondemos en día hábil."
@@ -281,3 +281,23 @@ La [máscara y el regulador](/equipo-de-respiracion-autonoma/mascaras-y-regulado
 ### 5. Organiza el servicio antes de comprar
 
 Define quién da mantenimiento, dónde se carga el aire y cómo se registra cada unidad. El aire debe ser respirable grado D o superior. Al recibir, coteja cilindro, válvula, máscara, reguladores, arnés, manómetro y alarmas contra la partida, y anota número de serie y etiqueta. La guía [partes del equipo de respiración autónoma](/blog/partes-del-equipo-de-respiracion-autonoma/) te ayuda a revisarlo pieza por pieza.
+
+### ¿Qué ERA necesita tu cuerpo de bomberos?
+
+Depende de la atmósfera a la que entra tu gente y de cuánto dura la intervención. Así se resuelven los casos más comunes.
+
+#### Incendio estructural en una bodega
+
+Humo denso y visibilidad casi nula: es una atmósfera IDLH. Va el [ERA de combate](/equipo-de-respiracion-autonoma/era-de-combate/), como el Sköld Phantöm de 60 minutos, con máscara probada junto con casco y monja. El plan de aire cuenta la entrada, el trabajo, la salida y un margen, no los minutos impresos.
+
+#### Incendio forestal en temporada de estiaje
+
+En la línea de fuego casi no se trabaja con ERA: el peso y la autonomía no aguantan una jornada de horas en el monte. Si tu cuerpo también atiende incendios de pastizal que alcanzan viviendas o bodegas, el ERA de combate viaja en la unidad para esa parte del trabajo.
+
+#### Brigada industrial de una planta
+
+Espacios confinados, tanques o una fuga de gas. Corresponde el [ERA industrial](/equipo-de-respiracion-autonoma/era-industrial/), como el MSA G1 Industrial, con certificación NIOSH 42 CFR Parte 84. El [ERA de escape](/equipo-de-respiracion-autonoma/era-de-escape/) se ubica en la ruta de salida y nunca habilita el ingreso.
+
+#### Relevo con ERA en una intervención larga
+
+Aquí se agota primero el aire, no la gente. Cuenta cuántos [cilindros](/equipo-de-respiracion-autonoma/cilindros-de-fibra-de-carbono/) estarán puestos, cuántos en reserva y cuántos en recarga con aire grado D o superior. Si te faltan cilindros de reserva, el relevo se detiene aunque tengas personal.

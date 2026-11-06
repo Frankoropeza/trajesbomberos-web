@@ -21,8 +21,20 @@ const columnas = ['modelo', 'seccion', 'tipo', 'material', 'norma', 'estatus'] a
 const modelos = d.modelosDestacados ? modelosPorId(d.modelosDestacados) : todos;
 const filasModelos = todos.map((modelo) => filaModelo(modelo, columnas));
 const directoryItems = [
-  ...tiles.map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
-  ...todos.map((modelo) => ({ name: `${modelo.marca} ${modelo.nombre}`, url: `${SITE.url}${urlModelo(modelo)}` })),
+  ...tiles.map((tile) => ({
+    name: tile.titulo,
+    url: `${SITE.url}${tile.href}`,
+    product: { description: tile.desc, category: 'Equipo de protección para bomberos', image: tile.img },
+  })),
+  ...todos.map((modelo) => ({
+    name: `${modelo.marca} ${modelo.nombre}`,
+    url: `${SITE.url}${urlModelo(modelo)}`,
+    product: {
+      description: modelo.descripcion.join(' '),
+      category: 'Equipo de protección para bomberos',
+      image: modelo.imagen?.src ?? d.ogImagen,
+    },
+  })),
 ];
 const guias = await guiasL2(d);
 ---

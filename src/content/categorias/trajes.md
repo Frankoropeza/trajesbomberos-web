@@ -6,12 +6,12 @@ ruta: "/trajes/"
 crumb: "Trajes"
 ogImagen: "/images/og/og-l2-trajes.jpg"
 seo:
-  title: "Traje de bombero profesional: tipos, modelos y ficha técnica"
-  description: "Traje de bombero profesional por tipo de riesgo: estructural, brigadista, forestal, aluminizado y Hazmat. Compara modelos y cotiza completo o por pieza."
-  keywords: ["traje de bombero profesional", "traje de bombero completo", "trajes de bomberos"]
+  title: "Trajes de bombero: tipos, modelos y ficha técnica"
+  description: "Traje de bombero por tipo de riesgo: estructural, brigadista, forestal, aproximación, entrada, extricación y Hazmat. Compara 14 modelos y cotiza por pieza."
+  keywords: ["traje de bombero", "trajes de bomberos", "traje de bombero profesional"]
 hero:
   eyebrow: "Trajes por tipo de riesgo"
-  h1: "Traje de bombero profesional"
+  h1: "Trajes de bombero"
   h1Accent: "por tipo de riesgo"
   lead: "Estructural, brigadista, forestal, aproximación, entrada, extricación y Hazmat. Son siete trajes para siete riesgos distintos, y ninguno sustituye a otro."
   descRight:
@@ -29,13 +29,13 @@ menu:
 secciones:
   tipos:
     eyebrow: "Las siete familias"
-    titulo: "Tipos de traje de bombero según tu operación"
+    titulo: "¿Qué tipos de traje de bombero hay?"
     duo:
       - "El <a href=\"/trajes/estructural/\">traje estructural</a> lleva tres capas y es el que usa quien entra a una edificación en llamas. El <a href=\"/trajes/brigadista/\">traje de brigadista</a> es para la brigada de una planta que atiende el conato, como pide la NOM-002-STPS-2010. El <a href=\"/trajes/forestal/\">traje forestal</a> tiene una sola capa porque en la línea de fuego el enemigo es el calor acumulado de la jornada."
       - "Aluminizado, entrada, extricación y Hazmat completan las siete familias. Entra a la que coincide con lo que hace tu gente: cada ficha separa chaquetón, pantalonera y complementos, y puedes pedir cualquier pieza suelta. Si todavía no lo tienes claro, mándanos tu operación por WhatsApp y te decimos qué familia te toca."
   elegir:
     eyebrow: "Guía de compra"
-    titulo: "Cómo elegir un traje de bombero profesional en siete criterios"
+    titulo: "¿Cómo elegir un traje de bombero? Siete criterios"
     duo:
       - "Dos trajes amarillos con cinta reflejante pueden proteger para cosas muy distintas. Por eso, antes de hablar de precio, en LORICA revisamos siete cosas. Son la operación, el composite capa por capa, el TPP y el THL, la norma vigente, la talla, la vida útil y la documentación que pide tu compra."
       - "Tómalos como lista de verificación antes de mandar tu requisición. Si una oferta no responde a los siete, todavía no la puedes comparar con otra. En la tarjeta de junto está todo lo que lleva un traje de bombero completo, pieza por pieza."
@@ -53,13 +53,13 @@ secciones:
       - "En cada ficha ves la capa exterior, las barreras, las tallas y el estatus normativo tal como lo publica el fabricante. Si un modelo no está certificado, lo decimos. Pide la ficha técnica del que te interese y te la mandamos con la configuración por escrito."
   comparar:
     eyebrow: "Comparativa"
-    titulo: "Comparativa de trajes de bomberos por familia y por modelo"
+    titulo: "¿En qué se diferencian los trajes de bomberos?"
     duo:
       - "La primera tabla pone las siete familias lado a lado: para qué operación sirve cada una, cómo está construida y qué complementos lleva. Sirve para descartar rápido lo que no cubre tu riesgo. La segunda compara los 14 modelos por capa exterior, barreras, norma y estatus."
       - "Con las dos tablas llegas a la cotización comparando trajes equivalentes, no fotos. Si ves «se confirma al cotizar» en una celda, es que el fabricante no publica ese dato y te lo damos por escrito en la propuesta."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre el traje de bombero profesional"
+    titulo: "Preguntas frecuentes sobre el traje de bombero"
     duo:
       - "Antes de comprar trajes casi todos preguntan cuántos tipos hay y en qué se distingue un estructural de uno de brigadista. Después vienen la norma del pliego, los datos que necesitamos para cotizar y las marcas que manejamos."
       - "¿La tuya no está aquí? Escríbela en el formulario. Se abre WhatsApp con tu pregunta ya redactada y te contestamos en el día hábil; si hace falta, con la ficha técnica adjunta."
@@ -191,7 +191,7 @@ contacto:
   asunto: "trajes para bomberos"
   boton: "Enviar consulta de trajes por WhatsApp"
 cotizar:
-  titulo: "Cotiza tu traje de bombero profesional por WhatsApp"
+  titulo: "Cotiza tu traje de bombero por WhatsApp"
   menu: "Cotizar trajes"
   boton: "Cotizar trajes para bomberos por WhatsApp"
   mensaje: "Hola, quiero cotizar trajes para bomberos. Operación: ___. Elementos y tallas: ___. Norma o pliego: ___. Estado de entrega: ___."
@@ -264,3 +264,25 @@ Según la NFPA 1850, el traje estructural se retira a los 10 años de su fecha d
 ### 7. Prepara la documentación de compra
 
 Para una compra de gobierno o una licitación normalmente te piden ficha técnica en formato de pliego, certificado de laboratorio del conjunto, carta de distribuidor, CFDI 4.0 con las partidas correctas y acta de entrega-recepción. Nosotros armamos el expediente y te acompañamos a la junta de aclaraciones. El paso a paso está en la guía del [expediente de licitación de trajes de bomberos](/blog/licitacion-trajes-bomberos-expediente/).
+
+### ¿Qué equipo necesita tu cuerpo de bomberos?
+
+Depende de las salidas que de verdad atiende tu gente, no del catálogo. Estos son los escenarios que más nos describen por WhatsApp y el traje que corresponde a cada uno.
+
+#### Incendio estructural en una bodega
+
+Humo denso, calor acumulado bajo la lámina y una cuadrilla que entra con línea de ataque. Aquí va el [traje estructural](/trajes/estructural/) de tres capas con DRD, completo con casco, monja, guantes, botas estructurales y [ERA de combate](/equipo-de-respiracion-autonoma/era-de-combate/). Si tu gente entra, este conjunto no se recorta por presupuesto.
+
+#### Incendio forestal en temporada de estiaje
+
+Jornadas de muchas horas caminando brecha, con herramienta manual y poco relevo. El [traje forestal](/trajes/forestal/) de una capa deja salir el calor del cuerpo; un estructural en la línea de fuego lleva al golpe de calor antes de que llegue la flama. Súmale casco forestal, goggles y bota sin puntera de acero.
+
+#### Brigada industrial de una planta
+
+La brigada que controla el conato con extintor mientras llega el cuerpo de bomberos usa [traje de brigadista](/trajes/brigadista/), dentro de lo que fijan la NOM-002-STPS-2010 y tu análisis de riesgo. Si el procedimiento de la planta manda a la brigada a entrar al humo, lo que le toca es el estructural, y conviene decirlo en la requisición.
+
+#### Relevo con ERA en una intervención larga
+
+En un incendio que dura horas entra una cuadrilla y sale otra. Cada elemento del relevo debe llegar con su propio traje a su talla, no con el chaquetón del compañero que acaba de salir mojado. Cuenta trajes por persona y no por turno, y cotiza los cilindros de reserva en la misma propuesta.
+
+Si tu corporación cubre varios de estos escenarios, mándanos por WhatsApp cuántos elementos atienden cada uno y te armamos la propuesta por partida.

@@ -29,13 +29,13 @@ menu:
 secciones:
   tipos:
     eyebrow: "Por tarea"
-    titulo: "Cuatro tipos de guantes de bombero"
+    titulo: "¿Qué tipos de guantes de bombero hay?"
     duo:
       - "El estructural es el que entra contigo a un incendio: cuero por fuera, barrera de humedad y forro térmico por dentro. El de rescate y extricación prioriza destreza y agarre. El forestal aguanta jornadas largas con Pulaski o batefuego. El de brigadista cubre la respuesta inicial y el conato."
       - "Cada uno resuelve un riesgo distinto. Un guante estructural es torpe para maniobras finas, y uno de rescate no protege del calor de un ataque interior. Entra al tipo que te toca y verás su construcción, sus modelos y cómo se prueba la talla."
   elegir:
     eyebrow: "Guía de compra"
-    titulo: "Cómo elegir guantes de bombero en cinco pasos"
+    titulo: "¿Cómo elegir guantes de bombero? Cinco pasos"
     duo:
       - "El guante que no deja cerrar la mano termina fuera, en el bolsillo del chaquetón. Por eso lo elegimos con cinco criterios: operación, talla, interfaz con la manga, construcción y conservación. La talla y el puño son los que más conviene probar."
       - "Haz la prueba con la herramienta que tu gente usa de verdad, no con una genérica. En la tarjeta de junto están las piezas que se prueban con el guante puesto, con enlace a cada una."
@@ -53,13 +53,13 @@ secciones:
       - "El Fire Pro II tiene certificado UL; el número se confirma al cotizar. El FPGS declara NFPA 1971 ed. 2013. El Firemax VI no declara norma. Así los publicamos, para que compares con el mismo criterio."
   comparar:
     eyebrow: "Comparativa"
-    titulo: "Comparativa de guantes de bombero por tipo y por modelo"
+    titulo: "¿En qué se diferencian los guantes de bombero?"
     duo:
       - "La primera tabla pone los cuatro tipos lado a lado: para qué sirven, qué referencia tienen, cómo están hechos, qué ventaja dan y dónde no aplican. La segunda compara los tres modelos por material, norma y estatus."
       - "Úsalas para pedir por tarea y no por color. Si una celda dice «se confirma al cotizar», es un dato que la marca no publica; va por escrito en la propuesta."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre guantes de bombero"
+    titulo: "Preguntas frecuentes sobre guantes de bombero"
     duo:
       - "En guantes, la primera duda es si el estructural sirve para rescate; la segunda, qué talla pedir. Después vienen las barreras en todo el guante, cómo se limpian y cuándo toca retirarlos."
       - "Para reponer un guante que ya usas, mándanos el modelo y una foto del par por el formulario. Se abre WhatsApp con tu pregunta de guantes lista y te contestamos en día hábil."
@@ -235,3 +235,23 @@ El Fire Pro II lleva barreras en todo el guante, incluido el puño de 2 pulgadas
 ### 5. Planea la conservación
 
 Incluye en la partida cómo se inspeccionan, se limpian, se secan y se reponen. Al recibir, coteja cada par contra la orden: talla, costuras, refuerzos, barreras y documentación. La guía [tipos de guantes para bombero](/blog/tipos-de-guantes-para-bombero/) te ayuda a explicarlo a tu equipo.
+
+### ¿Qué guantes necesita tu cuerpo de bomberos?
+
+Se eligen por lo que hace la mano en cada llamado. Estos cuatro casos son los que más nos consultan.
+
+#### Incendio estructural en una bodega
+
+La mano sostiene la boquilla, abre puertas calientes y busca a gatas. Corresponde el [guante estructural](/guantes/guante-estructural/), como el Veridian Fire Pro II con certificado UL y barreras en todo el guante. Revisa que el puño quede debajo de la manga del chaquetón con los brazos arriba.
+
+#### Incendio forestal en temporada de estiaje
+
+Horas de Pulaski, pala y batefuego. El [guante forestal](/guantes/guante-forestal/) prioriza agarre y destreza; un estructural, con sus barreras, calienta la mano y quita tacto en una jornada larga.
+
+#### Brigada industrial de una planta
+
+Para el conato con extintor y la evacuación, el [guante para brigadista](/guantes/guante-brigadista/), como el Romak Fire Firemax VI, con refuerzos de piel en palma. Si tu análisis de riesgo pide más, el guante sube a estructural junto con el resto del equipo.
+
+#### Relevo con ERA
+
+Antes de entrar, el elemento del relevo tiene que poder abrir la válvula del cilindro y manejar el regulador sin quitarse el guante. Haz esa prueba al recibir cada par. Si no puede, la talla o el modelo no le sirven.

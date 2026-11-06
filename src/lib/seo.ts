@@ -153,18 +153,50 @@ function webSiteSchema(): object {
 }
 
 // ItemList para grids/directorios (lo emite el padre, no las cards)
-export function directorySchema(items: { name: string; url: string }[], id?: string): object {
+export interface DirectoryItem {
+  name: string;
+  url: string;
+  /**
+   * Las colecciones comerciales pueden describir cada entrada como Product.
+   * Nunca se agregan offers, precio, reseñas ni calificaciones: esos datos no
+   * se publican en el catálogo.
+   */
+  product?: {
+    description: string;
+    category: string;
+    /** Google pide name + image en cada Product; sin imagen propia se usa la OG de la página. */
+    image?: string;
+  };
+}
+
+export function directorySchema(items: DirectoryItem[], id?: string): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     ...(id ? { '@id': id } : {}),
     numberOfItems: items.length,
-    itemListElement: items.map((item, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      name: item.name,
-      url: item.url,
-    })),
+    itemListElement: items.map((item, i) => {
+      const url = new URL(item.url, SITE.url).href;
+      return {
+        '@type': 'ListItem',
+        position: i + 1,
+        name: item.name,
+        url,
+        ...(item.product
+          ? {
+              item: {
+                '@type': 'Product',
+                '@id': `${url}#product`,
+                name: item.name,
+                url,
+                description: item.product.description,
+                category: item.product.category,
+                image: new URL(item.product.image ?? '/images/og-trajes-para-bomberos.png', SITE.url).href,
+              },
+            }
+          : {}),
+      };
+    }),
   };
 }
 
@@ -384,7 +416,7 @@ export function itemPageSchema(i: { name: string; description: string; image?: s
 export interface SchemaInput {
   pageType: PageType;
   faqs?: { q: string; a: string }[];
-  directoryItems?: { name: string; url: string }[];
+  directoryItems?: DirectoryItem[];
   breadcrumbs?: { name: string; href: string }[];
   article?: ArticleInput;
   product?: { nombre: string; descripcion: string; imagen: string; categoria: string; url: string };

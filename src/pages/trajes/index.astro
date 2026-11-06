@@ -37,8 +37,20 @@ const spotlights = FAMILIAS.map((f, index) => {
 const columnas = ['modelo', 'familia', 'capa', 'barreras', 'norma', 'estatus'] as const;
 const filasModelos = modelos.map((modelo) => filaModelo(modelo, columnas));
 const directoryItems = [
-  ...tilesFamilias().map((tile) => ({ name: tile.titulo, url: `${SITE.url}${tile.href}` })),
-  ...modelos.map((m) => ({ name: `${m.marca} ${m.nombre}`, url: `${SITE.url}${urlModelo(m)}` })),
+  ...tilesFamilias().map((tile) => ({
+    name: tile.titulo,
+    url: `${SITE.url}${tile.href}`,
+    product: { description: tile.desc, category: 'Trajes para bomberos', image: tile.img },
+  })),
+  ...modelos.map((m) => ({
+    name: `${m.marca} ${m.nombre}`,
+    url: `${SITE.url}${urlModelo(m)}`,
+    product: {
+      description: m.descripcion.join(' '),
+      category: 'Trajes para bomberos',
+      image: m.imagen?.src ?? d.ogImagen,
+    },
+  })),
 ];
 const guias = await guiasL2(d);
 ---

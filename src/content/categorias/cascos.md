@@ -29,13 +29,13 @@ menu:
 secciones:
   tipos:
     eyebrow: "Por operación"
-    titulo: "Cinco tipos de casco de bombero"
+    titulo: "¿Qué tipos de casco de bombero hay?"
     duo:
       - "Dos son para combate estructural: el tradicional, con ala trasera larga, y el europeo tipo jet, con visor retráctil. Los otros tres son para trabajos especiales: el forestal para la línea de fuego, el de rescate técnico para maniobras con cuerda o en vehículos, y el de brigada para conatos en planta."
       - "No se intercambian. Un casco forestal pesa menos, pero no protege en un ataque interior; uno estructural es demasiado para una jornada de doce horas en el monte. Entra al tipo que te toca y verás su especificación, sus modelos y los errores que más vemos al pedirlo."
   elegir:
     eyebrow: "Guía de compra"
-    titulo: "Cómo elegir un casco de bombero en cinco pasos"
+    titulo: "¿Cómo elegir un casco de bombero? Cinco pasos"
     duo:
       - "El casco trabaja pegado a otras tres piezas: la máscara del ERA, la monja y el cuello del chaquetón. Si una de ellas choca con el casco, el conjunto falla aunque cada pieza sea buena. Por eso elegimos el casco con cinco pasos: escenario, interfaz, ajuste, accesorios y documento."
       - "Antes de mandar tu requisición, repasa los cinco con alguien que use casco todos los días. En la tarjeta de junto están las piezas que siempre probamos con el casco puesto, con enlace a cada una."
@@ -53,13 +53,13 @@ secciones:
       - "Todos aparecen con la norma que declara su marca. Ninguno tiene certificado publicado, y así te lo decimos. Pide la ficha del que te interese y te la mandamos con código, color y accesorios."
   comparar:
     eyebrow: "Comparativa"
-    titulo: "Comparativa de cascos de bombero por tipo y por modelo"
+    titulo: "¿En qué se diferencian los cascos de bombero?"
     duo:
       - "La primera tabla pone los cinco tipos lado a lado: para qué sirven, qué norma los respalda, qué forma tienen, cuánto pesan en relación con los demás y cómo se llevan con el ERA. La segunda compara los cuatro modelos por material, norma y estatus."
       - "Úsalas para escribir tu pliego por tipo y no por marca. Si una celda dice «se confirma al cotizar», es un dato que la marca no publica; te lo damos por escrito en la propuesta."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre cascos de bombero"
+    titulo: "Preguntas frecuentes sobre el casco de bombero"
     duo:
       - "Las dudas sobre cascos llegan casi en este orden: cuánto duran, si uno industrial sirve para incendio y cómo se lleva con el ERA. Cerramos con qué significan los colores y qué debe traer una cotización para que puedas compararla."
       - "Si tu pregunta es sobre un casco que ya tienes, mándanos una foto de la etiqueta interior por el formulario. Se abre WhatsApp con tu consulta de cascos lista y te contestamos en día hábil."
@@ -275,3 +275,23 @@ Visor, goggles, [lámpara de casco](/accesorios/lampara-de-casco/), bandas refle
 ### 5. Pide el documento y revisa al recibir
 
 Pide por escrito el modelo, la edición de norma que declara y la configuración exacta. Al recibir, coteja carcasa, suspensión, barbiquejo, protector ocular y accesorios contra la partida. Después registra la fecha de fabricación, a quién se asignó cada casco y sus inspecciones. La guía [cuándo reemplazar el casco de bombero](/blog/cuando-reemplazar-el-casco-de-bombero/) te dice qué revisar después.
+
+### ¿Qué casco necesita tu cuerpo de bomberos?
+
+Sale del tipo de llamado que más atiende tu estación. Estos cuatro casos cubren casi todas las consultas que recibimos.
+
+#### Incendio estructural en una bodega
+
+Ataque interior con caída de material y calor desde el techo. Corresponde un [casco estructural tradicional](/cascos/casco-estructural-tradicional/) o un [europeo tipo jet](/cascos/casco-estructural-europeo/), probado con la máscara del ERA y la monja de cada persona. El visor no debe empujar la máscara cuando el bombero mira hacia arriba.
+
+#### Incendio forestal en temporada de estiaje
+
+En la línea de fuego el casco se lleva todo el día. El [casco forestal](/cascos/casco-forestal/), como el Bullard Wildland FH911H, pesa menos y se combina con goggles. Un estructural en una jornada de monte cansa el cuello y no aporta lo que pide ese trabajo.
+
+#### Brigada industrial de una planta
+
+El [casco para brigada industrial](/cascos/casco-brigada-industrial/) se elige según el límite que marque tu análisis de riesgo. Si la brigada solo atiende el conato con extintor, basta ese casco; si entra al humo, necesita uno estructural y el resto del conjunto.
+
+#### Relevo con ERA
+
+Cuando entra el relevo, cada elemento debe llevar su casco con la suspensión ya ajustada a su cabeza y probado con su máscara. Un casco prestado obliga a ajustar suspensión y barbiquejo en plena escena. El color y el marcaje que definas en la requisición ayudan a identificar quién entró.

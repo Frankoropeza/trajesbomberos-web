@@ -29,13 +29,13 @@ menu:
 secciones:
   tipos:
     eyebrow: "Por operación y construcción"
-    titulo: "Cuatro tipos de botas de bombero"
+    titulo: "¿Qué tipos de botas de bombero hay?"
     duo:
       - "Dos son estructurales y se distinguen por el material: la de hule vulcanizado y la de piel con membrana. La forestal es de piel, con agujetas y caña, para caminar horas en el monte. La de brigada industrial es calzado de seguridad para las tareas que tu brigada tiene autorizadas."
       - "No se intercambian. Una bota forestal no protege en un ataque interior, y una estructural de hule pesa demasiado para una jornada en la línea de fuego. Entra al tipo que necesitas y verás su construcción, sus modelos y lo que revisamos en la prueba de talla."
   elegir:
     eyebrow: "Guía de compra"
-    titulo: "Cómo elegir botas de bombero en cinco pasos"
+    titulo: "¿Cómo elegir botas de bombero? Cinco pasos"
     duo:
       - "La bota más cara no sirve si aprieta al subir una escalera o si deja un hueco con la pantalonera. Nosotros la elegimos con cinco criterios: operación, talla, planta, interfaz y servicio. La talla merece la prueba más cuidadosa."
       - "Junta primero las tallas de toda la guardia y después repasa los cinco criterios. En la tarjeta de junto están las piezas que se prueban con la bota puesta, con enlace a cada una."
@@ -53,13 +53,13 @@ secciones:
       - "Las tres de hule declaran NFPA 1971 en distintas ediciones. Las dos forestales no declaran norma, y así te lo decimos. Aquí ves cuatro; la Fire Ranger está en la tabla de abajo. Pide la ficha de cualquiera y te la mandamos con su tabla de tallas."
   comparar:
     eyebrow: "Comparativa"
-    titulo: "Comparativa de botas de bombero por tipo y por modelo"
+    titulo: "¿En qué se diferencian las botas de bombero?"
     duo:
       - "La primera tabla pone los cuatro tipos lado a lado: para qué sirven, qué referencia tienen, de qué están hechos, qué ventaja dan y dónde no aplican. La segunda compara los cinco modelos por material, norma y estatus."
       - "Úsalas para pedir por tipo y no por foto. Si una celda dice «se confirma al cotizar», es un dato que la marca no publica; va por escrito en la propuesta."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre botas de bombero"
+    titulo: "Preguntas frecuentes sobre botas de bombero"
     duo:
       - "Con las botas, las dudas giran en torno al material y la talla: qué cambia entre hule y piel, si la forestal sirve para entrar y cómo se mide la talla mexicana. También para qué es la entresuela y cómo se secan sin dañarlas."
       - "Si nos escribes, incluye la talla mexicana de cada persona y el traje con el que se van a usar. El formulario abre WhatsApp con tu consulta de botas y te contestamos en día hábil."
@@ -247,3 +247,23 @@ Camina, sube y baja una escalera y arrodíllate con el [traje](/trajes/) complet
 ### 5. Organiza el servicio
 
 Define cómo se limpian, cómo se secan y cuándo se retiran. Al recibir, coteja pares, tallas, suela, puntera, plantilla, costuras, agarraderas y reflejantes contra la orden. Inspecciónalas antes y después de cada exposición a calor, químicos, golpes o perforación. La guía [cómo elegir botas de bombero](/blog/como-elegir-botas-de-bombero/) tiene la lista completa.
+
+### ¿Qué botas necesita tu cuerpo de bomberos?
+
+La respuesta está en el piso que pisa tu gente. Cuatro escenarios lo resuelven casi siempre.
+
+#### Incendio estructural en una bodega
+
+Agua acumulada, escombro, clavos y lámina caliente. Va la [bota de hule estructural](/botas/bota-de-hule-estructural/), con puntera y entresuela de acero, como la Romak Fire Workman Fire, la Croydon Filtrex o la Sköld Workman. Pruébala con la pantalonera puesta: el bajo debe cubrir la caña cuando el bombero se arrodilla.
+
+#### Incendio forestal en temporada de estiaje
+
+Horas de marcha en pendiente, piedra suelta y ceniza. La [bota forestal](/botas/bota-forestal/) de piel con agujetas sostiene el tobillo, y conviene sin puntera de acero porque el metal conduce el calor al pie. La Fire Ranger y la Strong Fire se publican sin norma declarada, y así te lo decimos en la ficha.
+
+#### Brigada industrial de una planta
+
+La [bota de brigada industrial](/botas/bota-de-brigada-industrial/) cubre los riesgos de la planta dentro del límite de tu análisis. La NOM-113-STPS-2009 es la referencia del calzado de seguridad; si la brigada entra al humo, el calzado que toca es estructural.
+
+#### Relevo con ERA en una intervención larga
+
+Una bota a la talla de otro roza el talón a la media hora. Cada elemento del relevo necesita su par, medido con calcetín de trabajo, y la bota mojada no se seca con calor directo entre turnos.

@@ -23,6 +23,7 @@ import { PRESET_CONTACTO } from '@lib/cta-presets';
 import { categoriaNombre, categoriaUrl, postUrl, readingTime, type Post } from '@lib/blog';
 import type { SpotProps } from '@lib/spotlights/types';
 import type { Modelo } from '@lib/catalogo/types';
+import type { DirectoryItem } from '@lib/seo';
 
 interface Props {
   d: CollectionEntry<'categorias'>['data'];
@@ -30,7 +31,7 @@ interface Props {
   spotlights: SpotProps[];
   modelos: Modelo[];
   filasModelos: (string | { texto: string; href?: string })[][];
-  directoryItems: { name: string; url: string }[];
+  directoryItems: DirectoryItem[];
   guias: Post[];
   /** Solo L3: categoría L2 de la que cuelga el hub (migas y BreadcrumbList). */
   parent?: { name: string; href: string };

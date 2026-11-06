@@ -8,7 +8,7 @@ crumb: "Equipo de protección"
 ogImagen: "/images/og/og-l2-equipo-de-proteccion.jpg"
 seo:
   title: "Equipo de protección para bomberos: cascos, ERA y botas"
-  description: "Equipo de protección para bomberos: casco, ERA, botas, guantes y monjas compatibles con tu traje de bombero. Compara 17 modelos y cotiza por pieza o en kit."
+  description: "Equipo de protección para bomberos: casco, ERA, botas, guantes y monjas compatibles con tu traje. Compara 17 modelos y cotiza por pieza o en kit completo."
   keywords: ["equipo de protección para bomberos", "equipo de protección personal para bomberos", "EPP para bomberos"]
 hero:
   eyebrow: "EPP para bomberos"
@@ -30,13 +30,13 @@ menu:
 secciones:
   tipos:
     eyebrow: "Categorías de EPP"
-    titulo: "Equipo de protección personal para bomberos por categoría"
+    titulo: "¿Qué equipo de protección personal usa un bombero?"
     duo:
       - "El equipo de protección personal de un bombero se divide en seis frentes. Los <a href=\"/cascos/\">cascos</a> estructurales, forestales y de rescate. El <a href=\"/equipo-de-respiracion-autonoma/\">equipo de respiración autónoma</a> de combate, industrial y de escape. Las <a href=\"/botas/\">botas</a> de hule, piel y forestales, los <a href=\"/guantes/\">guantes</a> por tarea, las <a href=\"/capuchas/\">monjas</a> de Nomex y los <a href=\"/kits/\">kits</a> que juntan todo en una partida."
       - "Entra a la pieza que necesitas: cada categoría separa sus tipos por operación y te lleva a los modelos con ficha técnica. Si vas a equipar a una persona completa, empieza por el kit de tu operación y luego ajusta pieza por pieza con su talla."
   elegir:
     eyebrow: "Guía de compra"
-    titulo: "Cómo elegir equipo de protección para bomberos en seis criterios"
+    titulo: "¿Cómo elegir equipo de protección para bomberos? Seis criterios"
     duo:
       - "El EPP de un bombero funciona como sistema. El casco trabaja con la máscara del ERA; la monja cierra el hueco entre los dos y el cuello del chaquetón; los guantes se traslapan con la manga y las botas con la pantalonera. En LORICA lo especificamos con seis criterios: operación, interfaz, talla, norma, cotización comparable y servicio."
       - "Úsalos como lista antes de mandar tu requisición. En la tarjeta de junto está el EPP completo de un bombero estructural, pieza por pieza, con enlace a cada categoría para que lo pidas por separado o en kit."
@@ -54,13 +54,13 @@ secciones:
       - "Los 17 modelos publicados, con su material, norma y estatus, están en la comparativa de más abajo. Si un modelo tiene certificado UL, como el guante Veridian o la monja Majestic, lo verás; si solo está declarado, también. Pide la ficha del que te interese y te la mandamos."
   comparar:
     eyebrow: "Comparativa"
-    titulo: "Comparativa de equipo de protección para bomberos por pieza y por modelo"
+    titulo: "¿Qué protege cada pieza del equipo para bomberos?"
     duo:
       - "La primera tabla ordena las seis categorías por lo que protegen, sus tipos, su referencia normativa y la interfaz que hay que probar. Con ella armas el conjunto sin huecos. La segunda compara los 17 modelos por material, norma declarada y estatus."
       - "Te sirve para pedir piezas equivalentes y no comparar fotos. Cuando una celda dice «se confirma al cotizar», el fabricante no publica ese dato; nosotros te lo damos por escrito en la propuesta."
   faq:
     eyebrow: "Preguntas frecuentes"
-    titulo: "Preguntas sobre el equipo de protección para bomberos"
+    titulo: "Preguntas frecuentes sobre el equipo de protección para bomberos"
     duo:
       - "Antes de comprar EPP casi todos preguntan qué incluye y si un casco o una bota forestal sirven para un incendio estructural. También, en qué se distingue un ERA de combate de uno industrial, cómo se prueba la monja con la máscara y qué debe traer la cotización."
       - "¿No encuentras tu duda? Escríbela en el formulario. Se abre WhatsApp con tu consulta sobre equipo de protección y te contestamos en el día hábil, con la ficha del modelo cuando aplique."
@@ -311,3 +311,23 @@ Una buena cotización separa, pieza por pieza, modelo, código si existe, talla,
 - **ERA:** inspección, prueba hidrostática del cilindro cada cinco años y carga con aire grado D o superior.
 
 Para el equipo respiratorio, revisa la guía de [partes del equipo de respiración autónoma](/blog/partes-del-equipo-de-respiracion-autonoma/).
+
+### ¿Qué equipo necesita tu cuerpo de bomberos?
+
+Una misma estación suele necesitar más de una combinación. Estos cuatro escenarios te ayudan a contar piezas antes de pedir la cotización.
+
+#### Incendio estructural en una bodega
+
+Ataque interior con humo y calor. Cada elemento que entra lleva [traje estructural](/trajes/estructural/), [casco estructural](/cascos/casco-estructural-tradicional/), monja, [guante estructural](/guantes/guante-estructural/), [bota de hule estructural](/botas/bota-de-hule-estructural/) y [ERA de combate](/equipo-de-respiracion-autonoma/era-de-combate/). Todo se prueba junto, con la máscara puesta.
+
+#### Incendio forestal en temporada de estiaje
+
+Jornadas largas con herramienta manual y poco relevo: [traje forestal](/trajes/forestal/), [casco forestal](/cascos/casco-forestal/), goggles, [guante forestal](/guantes/guante-forestal/) y [bota forestal](/botas/bota-forestal/). Es un conjunto más ligero porque aquí el riesgo es el calor acumulado del cuerpo.
+
+#### Brigada industrial de una planta
+
+Para el conato y la evacuación: [traje de brigadista](/trajes/brigadista/), [casco para brigada](/cascos/casco-brigada-industrial/), [guante para brigadista](/guantes/guante-brigadista/) y [bota de brigada](/botas/bota-de-brigada-industrial/). El [ERA industrial](/equipo-de-respiracion-autonoma/era-industrial/) entra solo si tu análisis de riesgo lo pide.
+
+#### Relevo con ERA en una intervención larga
+
+El relevo necesita su propio equipo a su talla y cilindros de reserva listos. Cuenta EPP por persona y no por turno: compartir casco, guantes o máscara entre guardias complica el ajuste, la higiene y el registro de cada pieza.
