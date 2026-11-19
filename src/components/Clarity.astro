@@ -1,0 +1,24 @@
+---
+// Microsoft Clarity — proyecto trajesbomberos.com (cuenta Clarity frankoropeza840).
+// Snippet oficial; sólo se renderiza en el build de producción.
+// La CSP del sitio exige Trusted Types: la política 'default' solo acepta URLs de script
+// de clarity.ms (el tag y el clarity.js que éste carga). Cualquier otro sink sigue bloqueado.
+---
+{import.meta.env.PROD && (
+  <script is:inline>
+    if (window.trustedTypes && !window.trustedTypes.defaultPolicy) {
+      window.trustedTypes.createPolicy('default', {
+        createScriptURL: function (u) {
+          var h = new URL(u, location.href).hostname;
+          if (h === 'clarity.ms' || h.slice(-11) === '.clarity.ms') return u;
+          throw new TypeError('Trusted Types: URL de script no permitida: ' + u);
+        }
+      });
+    }
+    (function(c,l,a,r,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/zg7o6ju27y";
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script");
+  </script>
+)}
